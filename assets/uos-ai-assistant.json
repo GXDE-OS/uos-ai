@@ -1,0 +1,86 @@
+[
+    {
+        "name": "libical-dev",
+        "version": "",
+        "copyright": "",
+        "license": "MPL-2.0"
+    },
+    {
+        "name": "libical-dev",
+        "version": "",
+        "copyright": "",
+        "license": "LGPL-2.1-only"
+    },
+    {
+        "name": "libgtest-dev",
+        "version": "",
+        "copyright": "",
+        "license": "BSD-3-Clause"
+    },
+    {
+        "name": "debhelper",
+        "version": "",
+        "copyright": "",
+        "license": "GPL-2.0-or-later"
+    },
+    {
+        "name": "libleveldb-dev",
+        "version": "",
+        "copyright": "",
+        "license": "BSD-3-Clause"
+    },
+    {
+        "name": "qtbase5-dev",
+        "version": "",
+        "copyright": "",
+        "license": "LGPL-2.1-only"
+    },
+    {
+        "name": "qtbase5-dev",
+        "version": "",
+        "copyright": "",
+        "license": "GPL-3.0-only"
+    },
+    {
+        "name": "libkf5i18n-dev",
+        "version": "",
+        "copyright": "",
+        "license": "LGPL-2.0-or-later"
+    },
+    {
+        "name": "libpoppler-qt5-dev",
+        "version": "",
+        "copyright": "",
+        "license": "GPL-2.0-only"
+    },
+    {
+        "name": "libpoppler-qt5-dev",
+        "version": "",
+        "copyright": "",
+        "license": "GPL-3.0-only"
+    },
+    {
+        "name": "libkf5globalaccel-dev",
+        "version": "",
+        "copyright": "",
+        "license": "LGPL-2.0-or-later"
+    },
+    {
+        "name": "qtwebengine5-dev",
+        "version": "",
+        "copyright": "",
+        "license": "LGPL-3.0-only"
+    },
+    {
+        "name": "qtwebengine5-dev",
+        "version": "",
+        "copyright": "",
+        "license": "GPL-2.0-only"
+    },
+    {
+        "name": "pkg-config",
+        "version": "",
+        "copyright": "",
+        "license": "MIT"
+    }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="v1.1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="数字形象" transform="translate(-1135.000000, -1051.000000)" fill="#FFFFFF">
+            <g id="编组-5" transform="translate(943.000000, 174.000000)">
+                <g id="编组-2" transform="translate(165.000000, 845.000000)">
+                    <g id="编组-22" transform="translate(0.000000, 5.000000)">
+                        <path d="M29.2857143,27 L40.7142857,27 C41.9766509,27 43,28.0233491 43,29.2857143 L43,40.7142857 C43,41.9766509 41.9766509,43 40.7142857,43 L29.2857143,43 C28.0233491,43 27,41.9766509 27,40.7142857 L27,29.2857143 C27,28.0233491 28.0233491,27 29.2857143,27 Z" id="矩形"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

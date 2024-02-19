@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+if pidof uos-ai-assistant; then
+   killall uos-ai-assistant
+fi
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ] ; then
+string=`who -q`
+array=(${string// / })  
+rm -fr  /home/${array[0]}/.local/share/deepin/uos-ai-assistant  
+fi

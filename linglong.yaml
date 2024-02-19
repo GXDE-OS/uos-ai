@@ -1,0 +1,42 @@
+package:
+  id: org.deepin.uos-ai-assistant
+  name: uos-ai-assistant
+  version: 1.0.0
+  kind: app
+  description: |
+    an intelligent uos ai.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+depends:
+  - id: dde-qt-dbus-factory
+    version: 5.5.12
+  - id: ki18n
+    version: 5.90.0
+    type: runtime
+  - id: xcb-util
+    version: 0.3.8.1
+    type: runtime
+  - id: qtdbusextended
+    version: 0.0.3
+    type: runtime
+  - id: qtwebengine
+    version: 5.15.7
+    type: runtime
+  - id: kglobalaccel
+    version: 5.90.0
+    type: runtime
+  - id: dde-dock
+    version: 6.0.8.1
+    type: runtime
+
+source:
+  kind: local
+  url: "http://gerrit.uniontech.com/uos-ai"
+  version: develop/eagle
+  patch: patches/fix-dde-dock-build-error.patch
+
+build:
+  kind: cmake

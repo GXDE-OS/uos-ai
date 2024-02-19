@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+html {
+    /* ChatTop */
+    --uosai-color-title: #000;
+    --uosai-color-svgbtn: rgba(0, 0, 0, .7);
+    --uosai-color-svgbtn-hover: rgba(0, 0, 0, 1);
+    --uosai-color-svgbtn-bg: rgba(0, 0, 0, .05);
+    /* welcomePage */
+    --uosai-color-tip-welcome: rgba(0, 0, 0, 0.7);
+    --uosai-color-shortcut: rgba(0, 0, 0, 0.9);
+    --uosai-color-shortcut-border: rgba(0, 0, 0, 0.05);
+    --uosai-color-shortcut-shadow: rgba(0, 0, 0, 0.08);
+    --uosai-color-shortcut-bg: rgba(255, 255, 255, 0.9);
+    --uosai-color-shortcut-hover: rgba(243, 243, 243, 0.8);
+    --uosai-color-shortcut-active: rgba(226, 226, 226, 0.8);
+    /* clear-btn */
+    --uosai-color-clear: rgba(0, 0, 0, 0.70);
+    --uosai-color-clear-hover: rgba(0, 0, 0, 1);
+    --uosai-color-clear-bg: rgba(0, 0, 0, 0.05);
+    --uosai-color-clear-hover-bg: rgba(0, 0, 0, 0.1);
+    /* SwitchModel */
+    --uosai-color-modelbtn-bg: rgba(0, 0, 0, 0.05);
+    --uosai-color-modelbtn-hover: rgba(0, 0, 0, 0.1);
+    --uosai-color-modelbtn-active: rgba(0, 0, 0, 0.2);
+    --uosai-color-modelbtn: rgba(0, 0, 0, 0.7);
+    --uosai-color-modelbtn-hover-color: rgba(0, 0, 0, 1);
+    --uosai-color-switchmenu-bg: #fff;
+    /* input-content */
+    --uosai-color-inputcontent-bg: rgba(0, 0, 0, 0.08);
+    --uosai-color-inputcontent-placeholder: rgba(0, 0, 0, 0.4);
+    --uosai-color-inputcontent: rgba(0, 0, 0, 0.9);
+    --uosai-color-voicebtn-bg: #fff;
+    --uosai-color-voicebtn-bg-hover: #f2f2f2;
+    --uosai-color-voicebtn-bg-active: #E6E6E6;
+
+    /* ChatBubble */
+    --uosai-color-assistant-bg: rgba(255, 255, 255, 0.8);
+    --uosai-color-imgbubble-bg: rgba(0, 0, 0, 0.1);
+    --uosai-color-imgbubble-hover: rgba(0, 0, 0, 0.2);
+    --uosai-color-stop-bg: rgba(255, 255, 255, 0.8);
+    --uosai-color-tip-bg: #fafafa;
+    --uosai-color-tip: rgba(0, 0, 0, 0.9);
+    --uosai-color-model-name: rgba(0, 0, 0, 0.4);
+    /* retry */
+    --uosai-bg-retry: #cccccc;
+    --uosai-border-color-retry: #E0E0E0;
+    /* scroll */
+    --uosai-color-scroll-bg: rgba(0,0,0,0.2);
+    --uosai-color-scroll-bg-hover: rgba(0,0,0,0.35);
+    
+    --uosai-color-scroll-bg-press: rgba(0,0,0,0.45);
+    --uosai-color-border:  rgba(0,0,0,0.05);
+}
+
+html.dark {
+    /* ChatTop */
+    --uosai-color-title: #fff;
+    --uosai-color-svgbtn: rgba(255, 255, 255, .8);
+    --uosai-color-svgbtn-hover: rgba(255, 255, 255, 1);
+    --uosai-color-svgbtn-bg: rgba(255, 255, 255, .05);
+    /* welcomePage */
+    --uosai-color-tip-welcome: rgba(255, 255, 255, 0.7);
+    --uosai-color-shortcut: rgba(255, 255, 255, 0.90);
+    --uosai-color-shortcut-border: rgba(255, 255, 255, 0.05);
+    --uosai-color-shortcut-shadow: rgba(0, 0, 0, 0.08);
+    --uosai-color-shortcut-bg: rgba(255, 255, 255, 0.10);
+    --uosai-color-shortcut-hover: rgba(255, 255, 255, 0.20);
+    --uosai-color-shortcut-active: rgba(0, 0, 0, 0.1);
+    /* clear-btn */
+    --uosai-color-clear: rgba(255, 255, 255, 0.70);
+    --uosai-color-clear-hover: rgba(255, 255, 255, 1);
+    --uosai-color-clear-bg: rgba(255, 255, 255, 0.10);
+    --uosai-color-clear-hover-bg: rgba(255, 255, 255, 0.1);
+
+    /* SwitchModel */
+    --uosai-color-modelbtn-bg: rgba(255, 255, 255, 0.05);
+    --uosai-color-modelbtn-hover: rgba(255, 255, 255, 0.1);
+    --uosai-color-modelbtn-active: rgba(0, 0, 0, 0.1);
+    --uosai-color-modelbtn: rgba(255, 255, 255, 0.70);
+    --uosai-color-modelbtn-hover-color: rgba(255, 255, 255, 1);
+
+    --uosai-color-switchmenu-bg: rgba(27, 27, 27, 1);
+    /* input-content */
+    --uosai-color-inputcontent-bg: rgba(255, 255, 255, 0.08);
+    --uosai-color-inputcontent-placeholder: rgba(255, 255, 255, 0.40);
+    --uosai-color-inputcontent: #fff;
+    --uosai-color-voicebtn-bg: rgba(255, 255, 255, 0.10);
+
+    --uosai-color-voicebtn-bg-hover: rgba(255, 255, 255, 0.20);
+    --uosai-color-voicebtn-bg-active: rgba(0, 0, 0, 0.1);
+    /* ChatBubble */
+    --uosai-color-assistant-bg: rgba(176, 176, 176, 0.20);
+    --uosai-color-imgbubble-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-imgbubble-hover: rgba(255, 255, 255, 0.2);
+    --uosai-color-stop-bg: rgba(255, 255, 255, 0.10);
+    --uosai-color-tip-bg: #2c2c2c;
+    --uosai-color-tip: #C0C6D4;
+    --uosai-color-model-name: rgba(255, 255, 255, 0.50);
+    /* retry */
+    --uosai-bg-retry: #252525;
+    --uosai-border-color-retry: #2a2a2a;
+    /* scroll */
+    --uosai-color-scroll-bg: rgba(255,255,255,0.15);
+    --uosai-color-scroll-bg-hover: rgba(255,255,255,0.2);
+
+    --uosai-color-border:  rgba(255,255,255,0.05);
+
+}

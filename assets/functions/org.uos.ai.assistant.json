@@ -1,0 +1,257 @@
+{
+	"appid": "uos-ai-assistant",
+	"exec": "/usr/bin/uos-ai-assistant",
+	"functions": [
+		{
+			"name": "sendMail",
+			"description": "发送邮件",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"subject": {
+						"type": "string",
+						"description": "邮件主题"
+					},
+					"content": {
+						"type": "string",
+						"description": "邮件正文"
+					},
+					"to": {
+						"type": "string",
+						"description": "收件人"
+					},
+					"cc": {
+						"type": "string",
+						"description": "抄送人"
+					},
+					"bcc": {
+						"type": "string",
+						"description": "密送人"
+					}					
+				},
+				"required": ["subject","content"]
+			}
+		},
+		{
+			"name": "drawPicture",
+			"description": "画幅图",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"desc": {
+						"type": "string",
+						"description": "图片内容的描述并拆分成多个单词或者短语以逗号分隔"
+					}
+				},
+				"required": ["desc"]
+			}
+		},
+		{
+			"name": "imageGeneration",
+			"description": "生成图片",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"desc": {
+						"type": "string",
+						"description": "图片内容的描述并拆分成多个单词或者短语以逗号分隔"
+					}
+				},
+				"required": ["desc"]
+			}
+		},
+		{
+			"name": "createSchedule",
+			"description": "创建日程,当前时间%1",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"subject": {
+						"type": "string",
+						"description": "主题"
+					},
+					"startTime": {
+						"type": "string",
+						"description": "日程起始时间,格式为yyyy-MM-ddThh:mm:ss"
+					},
+					"endTime": {
+						"type": "string",
+						"description": "日程结束时间,格式为yyyy-MM-ddThh:mm:ss"
+					}
+				},
+				"required": ["subject", "startTime", "endTime"]
+			}
+		},
+		{
+			"name": "openBluetooth",
+			"description": "连接打开无线或者蓝牙设备，如无线鼠标，蓝牙耳机，蓝牙音响",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+			"name": "openScreenMirroring",
+			"description": "连接打开投屏页面",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+			"name": "switchNoDisturbMode",
+			"description": "设置系统勿扰模式开关",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"switch": {
+						"type": "boolean",
+						"description": "true开启,false关闭"
+					}
+				},
+				"required": ["switch"]
+			}
+		},
+		{
+			"name": "switchWallpaper",
+			"description": "切换系统桌面背景或壁纸",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+			"name": "clearDesktop",
+			"description": "桌面自动整理",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"switch": {
+						"type": "boolean",
+						"description": "true开启,false关闭"
+					}
+				},
+				"required": ["switch"]
+			}
+		},
+		{
+			"name": "switchDockMode",
+			"description": "切换系统任务栏模式",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"mode": {
+						"type": "string",
+						"description": "Fashion时尚模式,Efficent高效模式",
+						"enum": ["Fashion", "Efficent"]
+					}
+				},
+				"required": ["mode"]
+			}
+		},
+		{
+			"name": "switchSystemTheme",
+			"description": "切换设置系统主题",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"theme": {
+						"type": "string",
+						"description": "Light浅色,Dark暗色,Auto跟随系统",
+						"enum": ["Light", "Dark", "Auto"]
+					}
+				},
+				"required": ["theme"]
+			}
+		},
+		{
+			"name": "switchEyesProtection",
+			"description": "调整屏幕为护眼模式",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"switch": {
+						"type": "boolean",
+						"description": "true开启,false关闭"
+					}
+				},
+				"required": ["switch"]
+			}
+		},
+		{
+			"name": "displayBrightness",
+			"description": "调节屏幕亮度",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"percent": {
+						"type": "integer",
+						"description": "百分比,值范围0到100"
+					}
+				},
+				"required": ["percent"]
+			}
+		},
+		{
+			"name":"launchApplication",
+			"description": "打开或者启动应用",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"appid": {
+						"type": "string",
+						"enum": [
+							"musicPlayer",
+							"imageViewer",
+							"fileManager",
+							"bootMaker",
+							"controlCenter",
+							"systemMonitor",
+							"appstore",
+							"devicemanager",
+							"logViewer",
+							"fontManager",
+							"manual",
+							"moviePlayer",
+							"screenRecorder",
+							"terminal",
+							"calendar",
+							"computer",
+							"trash",
+							"diskmanager",
+							"browser",
+							"mail",
+							"defender",
+							"printerManager",
+							"deepinCompressor",
+							"uosActivator",
+							"calculator",
+							"packageInstaller",
+							"deepinEditor",
+							"deepinReader",
+							"deepinAlbum",
+							"wps",
+							"excel",
+							"word",
+							"ppt",
+							"pdf",
+							"dingtalk",
+							"qq",
+							"weichat",
+							"WeChatWork"
+						],
+						"description": "musicPlayer音乐播放器,imageViewer看图,fileManager文件管理器,bootMaker启动盘制作工具,controlCenter控制中心,systemMonitor系统监视器,appstore应用商店,devicemanager设备管理器,logViewer日志收集工具,fontManager字体管理器,manual帮助手册,moviePlayer影院,screenRecorder截图录屏,terminal终端,calendar日历,computer我的电脑,trash回收站,diskmanager磁盘管理器,browser浏览器,mail邮箱,defender安全中心,printerManager打印管理器,deepinCompressor归档管理器,uosActivator系统激活,calculator计算器,packageInstaller软件包安装器,deepinEditor文本编辑器,deepinReader文档查看器,deepinAlbum相册,wps,excel表格,word文字,ppt演示,pdf文档,dingtalk钉钉,qq,weichat微信,WeChatWork企业微信"
+					},
+					"switch": {
+						"type": "boolean",
+						"description": "true开启,false关闭"
+					}
+				},
+				"required": ["appid", "switch"]
+			}
+		}
+	]
+}

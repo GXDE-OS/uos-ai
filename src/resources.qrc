@@ -1,0 +1,79 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../assets/images/ok_info.svg</file>
+        <file>../assets/images/uos-ai-assistant.svg</file>
+        <file>../assets/images/warning.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agreement_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agreement_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agreement_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agreement_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_model_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_model_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_model_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_model_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_agency_128px.svg/selected.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_agency_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_agency_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_agency_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_agreement_128px.svg/selected.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_agreement_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_agreement_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_agreement_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_model_128px.svg/selected.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_model_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_model_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_model_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_info_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_info_128px.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_info_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_info_128px.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_128px.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_128px.svg</file>
+        <file>../assets/images/gift.svg</file>
+        <file>../assets/images/spirite/sleep/1.png</file>
+        <file>../assets/images/spirite/active/1.png</file>
+        <file>../assets/images/light/change-normal.svg</file>
+        <file>../assets/images/light/close.svg</file>
+        <file>../assets/images/book.svg</file>
+        <file>../assets/useragreement/chinese.txt</file>
+        <file>../assets/useragreement/english.txt</file>
+        <file>../assets/web/1.html</file>
+        <file>../assets/web/front/dist/index.html</file>
+        <file>../assets/web/front/dist/assets/index-legacy.js</file>
+        <file>../assets/web/front/dist/assets/index-legacy2.js</file>
+        <file>../assets/web/front/dist/assets/index-legacy3.js</file>
+        <file>../assets/web/front/dist/assets/global-legacy.js</file>
+        <file>../assets/web/front/dist/assets/global.js</file>
+        <file>../assets/web/front/dist/assets/index.css</file>
+        <file>../assets/web/front/dist/assets/index.js</file>
+        <file>../assets/web/front/dist/assets/index2.js</file>
+        <file>../assets/web/front/dist/assets/index3.js</file>
+        <file>../assets/web/front/dist/assets/polyfills-legacy.js</file>
+        <file>../assets/faq/AI-FAQ-zh_CN.json</file>
+        <file>../assets/web/front/dist/assets/1-loading.svg</file>
+        <file>../assets/web/front/dist/assets/2-loading.svg</file>
+        <file>../assets/web/front/dist/assets/3-loading.svg</file>
+        <file>../assets/web/front/dist/assets/logo.svg</file>
+        <file>../assets/web/front/dist/assets/vue.svg</file>
+        <file>../assets/app/deepin-app-infos.json</file>
+        <file>../assets/web/front/dist/assets/DigitalImage-legacy.js</file>
+        <file>../assets/web/front/dist/assets/DigitalImage.css</file>
+        <file>../assets/web/front/dist/assets/DigitalImage.js</file>
+        <file>../assets/web/front/dist/assets/ChatTop-legacy.js</file>
+        <file>../assets/web/front/dist/assets/ChatTop.css</file>
+        <file>../assets/web/front/dist/assets/ChatTop.js</file>
+        <file>../assets/web/front/dist/assets/silence.webm</file>
+        <file>../assets/web/front/dist/assets/listen.webm</file>
+        <file>../assets/web/front/dist/assets/listen1.png</file>
+        <file>../assets/web/front/dist/assets/listen2.png</file>
+        <file>../assets/web/front/dist/assets/thinking.webm</file>
+        <file>../assets/web/front/dist/assets/play.webm</file>
+        <file>../assets/web/front/dist/assets/error.webm</file>
+        <file>../assets/web/front/dist/assets/icon.svg</file>
+        <file>../assets/web/front/dist/assets/1-loading-dark.svg</file>
+        <file>../assets/web/front/dist/assets/2-loading-dark.svg</file>
+        <file>../assets/web/front/dist/assets/3-loading-dark.svg</file>
+        <file>../assets/faq/AI-FAQ-en_US.json</file>
+        <file>../assets/images/360.svg</file>
+        <file>../assets/images/baidu.svg</file>
+        <file>../assets/images/iflytek.svg</file>
+        <file>../assets/images/zhipu.svg</file>
+        <file>../assets/images/openai.svg</file>
+        <file>../assets/images/default.svg</file>
+        <file>../assets/images/textimage.svg</file>
+    </qresource>
+</RCC>

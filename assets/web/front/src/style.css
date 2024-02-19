@@ -1,0 +1,151 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-position: inside;
+}
+
+body ::selection {
+	background-color: var(--activityColor);
+	color: #fff;
+}
+
+.disabled {
+	opacity: 0.4 !important;
+	cursor: not-allowed !important;
+}
+
+.uos-tooltip {
+	border-radius: 8px !important;
+	border: 1px solid rgba(0, 0, 0, 0.05) !important;
+	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2) !important;
+	background: rgba(247, 247, 247, 1) !important;
+	padding: 2px 5px 5px 6px !important;
+	color: rgba(0, 0, 0, 1) !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	line-height: inherit !important;
+	min-width: 0px !important;
+}
+
+.dark .uos-tooltip {
+	background: #2c2c2c !important;
+	border: 1px solid rgba(0, 0, 0, 0.3) !important;
+	box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2) !important;
+	color: #C0C6D4 !important;
+}
+
+html,
+body {
+	overflow: hidden;
+}
+
+body #drop-mask {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+	z-index: 99999;
+}
+
+.dark #drop-mask {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.scrollbar__wrapper:hover>.scrollbar__thumbPlaceholder {
+	opacity: 0 !important;
+}
+
+.scrollbar__wrapper>.scrollbar__thumbPlaceholder--scrolling.scrollbar__thumbPlaceholder {
+	opacity: 1 !important;
+	border-radius: 10px;
+}
+
+.scrollbar__content--vertical {
+	padding-right: 20px;
+}
+
+.scrollbar__thumb {
+	background: var(--uosai-color-scroll-bg) !important;
+	border: 1px solid var(--uosai-color-border);
+	border-radius: 4px !important;
+}
+.scrollbar__thumbPlaceholder--autoExpand:hover>.scrollbar__thumb--vertical{
+	background-color: var(--uosai-color-scroll-bg-hover);
+}

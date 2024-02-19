@@ -1,0 +1,70 @@
+[
+    {
+        "iconName": "1-question",
+        "Question": "Help me draft an outline of meeting minutes"
+    },
+    {
+        "iconName": "2-question",
+        "Question": "I’m thinking about the functional design of AI products. Give me 3 ideas."
+    },
+    {
+        "iconName": "3-question",
+        "Question": "How to write the summation formula in Excel?"
+    },
+    {
+        "iconName": "4-question",
+        "Question": "Help me write a work daily report template"
+    },
+    {
+        "iconName": "5-question",
+        "Question": "Help me write a meeting minutes template"
+    },
+    {
+        "iconName": "6-question",
+        "Question": "What methods can help improve work efficiency?"
+    },
+    {
+        "iconName": "7-question",
+        "Question": "Please tell me how to communicate with colleagues most efficiently?"
+    },
+    {
+        "iconName": "8-question",
+        "Question": "Help me change my desktop background"
+    },
+    {
+        "iconName": "9-question",
+        "Question": "Adjust computer screen brightness to 70%"
+    },
+    {
+        "iconName": "10-question",
+        "Question": "Send me a leave request email to Zhang San. Please polish the content of the email before sending it out."
+    },
+    {
+        "iconName": "11-question",
+        "Question": "Help me turn on Do Not Disturb mode"
+    },
+    {
+        "iconName": "12-question",
+        "Question": "Open system applications such as Mailbox"
+    },
+    {
+        "iconName": "13-question",
+        "Question": "Open the browser for me"
+    },
+    {
+        "iconName": "14-question",
+        "Question": "Open the theater for me"
+    },
+    {
+        "iconName": "15-question",
+        "Question": "Open the music player for me"
+    },
+    {
+        "iconName": "16-question",
+        "Question": "Help me create a meeting schedule for tomorrow at 3 p.m."
+    },
+    {
+        "iconName": "17-question",
+        "Question": "Help me generate 4 landscape pictures"
+    }
+]

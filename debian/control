@@ -1,0 +1,13 @@
+Source: uos-ai
+Section: non-free/copilot
+Priority: optional
+Maintainer: deepin <packages@deepin.com>
+Build-Depends:
+ debhelper (>= 9), cmake, pkg-config, qtbase5-dev, libqt5websockets5-dev, qttools5-dev-tools, libdtkwidget-dev, libssl-dev,dde-dock-dev,libdframeworkdbus-dev, qtwebengine5-dev, qtmultimedia5-dev,libkf5globalaccel-dev
+Standards-Version: 4.5.0
+
+Package: uos-ai
+Architecture: any
+Depends:
+ ${shlibs:Depends},${misc:Depends}
+Description: As a useful and efficient assistant, an AI-powered assistant simplifies our office efficiency and provides valuable support in a wide range of domains.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close-hover-dark</title>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+        <filter x="-5.0%" y="-3.6%" width="110.0%" height="110.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.742215806   0 0 0 0 0.0223598169   0 0 0 0 0.0223598169  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="close-hover-dark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DTK/Button/Action/Clear/Light" transform="translate(5.000000, 5.000000)">
+            <g id="形状结合">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <circle stroke-opacity="0.1" stroke="#A10000" stroke-width="1" stroke-linejoin="square" fill="#B43232" fill-rule="evenodd" cx="35" cy="35" r="34.5"></circle>
+            </g>
+            <path d="M25.4881554,25.4881554 C26.1390292,24.8372815 27.1943041,24.8372815 27.845178,25.4881554 L35,32.643 L42.154822,25.4881554 C42.8056959,24.8372815 43.8609708,24.8372815 44.5118446,25.4881554 C45.0976311,26.0739418 45.1562097,26.9872932 44.6875806,27.6385926 L44.5118446,27.845178 L37.357,35 L44.5118446,42.154822 L44.6875806,42.3614074 C45.1562097,43.0127068 45.0976311,43.9260582 44.5118446,44.5118446 C43.8609708,45.1627185 42.8056959,45.1627185 42.154822,44.5118446 L35,37.357 L27.845178,44.5118446 C27.1943041,45.1627185 26.1390292,45.1627185 25.4881554,44.5118446 C24.9023689,43.9260582 24.8437903,43.0127068 25.3124194,42.3614074 L25.4881554,42.154822 L32.643,35 L25.4881554,27.845178 L25.3124194,27.6385926 C24.8437903,26.9872932 24.9023689,26.0739418 25.4881554,25.4881554 Z" id="形状结合" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+[
+    {
+        "iconName": "1-question",
+        "Question": "帮我起草个会议纪要大纲"
+    },
+    {
+        "iconName": "2-question",
+        "Question": "我在想AI产品的功能设计，给我3个点子。"
+    },
+    {
+        "iconName": "3-question",
+        "Question": "Excel中的求和公式如何写？"
+    },
+    {
+        "iconName": "4-question",
+        "Question": "帮我写个工作日报模板"
+    },
+    {
+        "iconName": "5-question",
+        "Question": "帮我写个会议纪要模板"
+    },
+    {
+        "iconName": "5-question",
+        "Question": "请问什么方法有助于提高工作效率？"
+    },
+    {
+        "iconName": "7-question",
+        "Question": "请告诉我怎么与同事沟通最高效？"
+    },
+    {
+        "iconName": "8-question",
+        "Question": "帮我重新换一个桌面背景"
+    },
+    {
+        "iconName": "9-question",
+        "Question": "将电脑屏幕亮度调整到70%"
+    },
+    {
+        "iconName": "10-question",
+        "Question": "帮我给张三发一封请假邮件，邮件内容润色下再发出。"
+    },
+    {
+        "iconName": "11-question",
+        "Question": "帮我打开勿扰模式"
+    },
+    {
+        "iconName": "12-question",
+        "Question": "打开系统应用，如邮箱"
+    },
+    {
+        "iconName": "13-question",
+        "Question": "帮我打开浏览器"
+    },
+    {
+        "iconName": "14-question",
+        "Question": "帮我打开影院"
+    },
+    {
+        "iconName": "15-question",
+        "Question": "帮我打开音乐播放器"
+    },
+    {
+        "iconName": "16-question",
+        "Question": "帮我建一个明天下午3点的会议日程"
+    },
+    {
+        "iconName": "17-question",
+        "Question": "帮我生成4张风景图"
+    }
+]

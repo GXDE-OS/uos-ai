@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons"/>
+    <qresource prefix="/">
+        <file>../assets/images/uos-ai-assistant.svg</file>
+    </qresource>
+</RCC>

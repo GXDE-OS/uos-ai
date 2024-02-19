@@ -1,0 +1,296 @@
+{
+    "desktopPaths": [
+        "/usr/share/applications",
+        "/persistent/linglong/entries/share/applications"
+    ],
+    "appInfos": [
+        {
+            "appId": "musicPlayer",
+            "desktopFile":[
+                "deepin-music.desktop"
+            ],
+            "appName": "Deepin Music",
+            "appIcon": "deepin-music"
+        },
+        {
+            "appId": "imageViewer",
+            "desktopFile": [
+                "deepin-image-viewer.desktop"
+            ],
+            "appName": "Deepin Image Viewer",
+            "appIcon": "deepin-image-viewer"
+        },
+        {
+            "appId": "fileManager",
+            "desktopFile": [
+                "dde-file-manager.desktop"
+            ],
+            "appName": "Deepin File Manager",
+            "appIcon": "dde-file-manager"
+        },
+        {
+            "appId": "bootMaker",
+            "desktopFile": [
+                "deepin-boot-maker.desktop"
+            ],
+            "appName": "Deepin Boot Maker",
+            "appIcon": "deepin-boot-maker"
+        },
+        {
+            "appId": "controlCenter",
+            "desktopFile": [
+                "dde-control-center.desktop"
+            ],
+            "appName": "Deepin Control Center",
+            "appIcon": "preferences-system"
+        },
+        {
+            "appId": "systemMonitor",
+            "desktopFile": [
+                "deepin-system-monitor.desktop"
+            ],
+            "appName": "deepin System Monitor",
+            "appIcon": "deepin-system-monitor"
+        },
+        {
+            "appId": "appstore",
+            "desktopFile": ["deepin-app-store.desktop"],
+            "appName": "App Store",
+            "appIcon": "deepin-app-store"
+        },
+        {
+            "appId": "devicemanager",
+            "desktopFile": ["deepin-devicemanager.desktop"],
+            "appName": "Device Manager",
+            "appIcon": "deepin-devicemanager"
+        },
+        {
+            "appId": "logViewer",
+            "desktopFile": [
+                "deepin-log-viewer.desktop"
+            ],
+            "appName": "Deepin Log Viewer",
+            "appIcon": "deepin-log-viewer"
+        },
+        {
+            "appId": "fontManager",
+            "desktopFile": [
+                "deepin-font-manager.desktop"
+            ],
+            "appName": "Deepin Font Manager",
+            "appIcon": "deepin-font-manager"
+        },
+        {
+            "appId": "manual",
+            "desktopFile": [
+                "deepin-manual.desktop"
+            ],
+            "appName": "Deepin Manual",
+            "appIcon": "deepin-manual"
+        },
+        {
+            "appId": "moviePlayer",
+            "desktopFile": [
+                "deepin-movie.desktop"
+            ],
+            "appName": "Deepin Movie",
+            "appIcon": "deepin-movie"
+        },
+        {
+            "appId": "screenRecorder",
+            "desktopFile": [
+                "deepin-screen-recorder.desktop"
+            ],
+            "appName": "Deepin Screen Capture",
+            "appIcon": "deepin-screen-recorder"
+        },
+        {
+            "appId": "terminal",
+            "desktopFile": [
+                "deepin-terminal.desktop"
+            ],
+            "appName": "Deepin Terminal",
+            "appIcon": "deepin-terminal"
+        },
+        {
+            "appId": "calendar",
+            "desktopFile": [
+                "dde-calendar.desktop"
+            ],
+            "appName": "Deepin Calendar",
+            "appIcon": "dde-calendar"
+        },
+        {
+            "appId": "computer",
+            "desktopFile": [
+                "dde-computer.desktop"
+            ],
+            "appName": "Computer",
+            "appIcon": "computer"
+        },
+        {
+            "appId": "trash",
+            "desktopFile": [
+                "dde-trash.desktop"
+            ],
+            "appName": "Trash",
+            "appIcon": "user-trash"
+        },
+        {
+            "appId": "diskmanager",
+            "desktopFile": [
+                "deepin-diskmanager.desktop"
+            ],
+            "appName": "Deepin Disk Utility",
+            "appIcon": "deepin-diskmanager"
+        },
+        {
+            "appId": "defender",
+            "desktopFile": [
+                "deepin-defender.desktop"
+            ],
+            "appName": "Deepin Security Center",
+            "appIcon": "deepin-defender"
+        },
+        {
+            "appId": "printerManager",
+            "desktopFile": [
+                "dde-printer.desktop"
+            ],
+            "appName": "Print Manager",
+            "appIcon": "dde-printer"
+        },
+        {
+            "appId": "deepinCompressor",
+            "desktopFile": [
+                "deepin-compressor.desktop"
+            ],
+            "appName": "Deepin Archive Manager",
+            "appIcon": "deepin-compressor"
+        },
+        {
+            "appId": "uosActivator",
+            "desktopFile": [
+                "uos-activator.desktop"
+            ],
+            "appName": "uos-activator",
+            "appIcon": "uos-activator"
+        },
+        {
+            "appId": "calculator",
+            "desktopFile": [
+                "deepin-calculator.desktop"
+            ],
+            "appName": "Deepin Calculator",
+            "appIcon": "deepin-calculator"
+        },
+        {
+            "appId": "packageInstaller",
+            "desktopFile": [
+                "deepin-deb-installer.desktop"
+            ],
+            "appName": "Package Installer",
+            "appIcon": "deepin-deb-installer"
+        },
+        {
+            "appId": "deepinEditor",
+            "desktopFile": [
+                "deepin-editor.desktop"
+            ],
+            "appName": "Text Editor",
+            "appIcon": "deepin-editor"
+        },
+        {
+            "appId": "deepinReader",
+            "desktopFile": [
+                "deepin-reader.desktop"
+            ],
+            "appName": "Document Viewer",
+            "appIcon": "deepin-reader"
+        },
+        {
+            "appId": "deepinAlbum",
+            "desktopFile": [
+                "deepin-album.desktop"
+            ],
+            "appName": "Deepin Album",
+            "appIcon": "deepin-album"
+        },
+        {
+            "appId": "wps",
+            "desktopFile": [
+                "wps-office-prometheus.desktop"
+            ],
+            "appName": "WPS 2019",
+            "appIcon": "wps-office2019-kprometheus"
+        },
+        {
+            "appId": "excel",
+            "desktopFile": [
+                "wps-office-et.desktop"
+            ],
+            "appName": "WPS 表格",
+            "appIcon": "wps-office2019-etmain"
+        },
+        {
+            "appId": "word",
+            "desktopFile": [
+                "wps-office-wps.desktop"
+            ],
+            "appName": "WPS 文字",
+            "appIcon": "wps-office2019-wpsmain"
+        },
+        {
+            "appId": "ppt",
+            "desktopFile": [
+                "wps-office-wpp.desktop"
+            ],
+            "appName": "WPS 演示",
+            "appIcon": "wps-office2019-wppmain"
+        },
+        {
+            "appId": "pdf",
+            "desktopFile": [
+                "wps-office-pdf.desktop"
+            ],
+            "appName": "WPS PDF阅读器",
+            "appIcon": "wps-office2019-pdfmain"
+        },
+        {
+            "appId": "dingtalk",
+            "desktopFile": [
+                "com.alibabainc.dingtalk.desktop",
+                "com.dingdingtalk.deepin.desktop"
+            ],
+            "appName": "钉钉",
+            "appIcon": "dingtalk"
+        },
+        {
+            "appId": "qq",
+            "desktopFile": [
+                "qq.desktop",
+                "com.qq.im.deepin.desktop",
+                "uengine.com.tencent.mobileqq.desktop"
+            ],
+            "appName": "QQ",
+            "appIcon": "QQ"
+        },
+        {
+            "appId": "weichat",
+            "desktopFile": [
+                "com.qq.weixin.deepin.desktop",
+                "weixin.desktop"
+            ],
+            "appName": "WeChat",
+            "appIcon": "weixin"
+        },
+        {
+            "appId": "WeChatWork",
+            "desktopFile": [
+                "com.qq.weixin.work.deepin.desktop"
+            ],
+            "appName": "企业微信",
+            "appIcon": "WeChat Work"
+        }
+    ]
+}

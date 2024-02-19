@@ -1,0 +1,11 @@
+uos-ai (1.1.6-1) unstable; urgency=medium
+
+  * update
+
+ -- deepin <packages@deepin.com>  Wed, 17 Jan 2024 09:02:14 +0800
+
+uos-ai (5.4.0) unstable; urgency=medium
+
+  * Initial Release.
+
+ -- Deepin Packages Builder <packages@deepin.com>  Wed, 12 Jul 2023 17:38:35 +0800
