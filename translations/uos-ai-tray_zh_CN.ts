@@ -4,8 +4,8 @@
 <context>
     <name>UosAiPlugin</name>
     <message>
-        <location filename="../plugin-tray/uosaiplugin.cpp" line="45"/>
-        <location filename="../plugin-tray/uosaiplugin.cpp" line="59"/>
+        <location filename="../plugin-tray/uosaiplugin.cpp" line="46"/>
+        <location filename="../plugin-tray/uosaiplugin.cpp" line="60"/>
         <source>UOS AI</source>
         <translation type="unfinished"></translation>
     </message>

@@ -16,6 +16,9 @@
 #include <DGuiApplicationHelper>
 #include <DStyle>
 
+#define PLUGIN_BACKGROUND_MIN_SIZE 16
+#define PLUGIN_BACKGROUND_MAX_SIZE 1024
+
 DGUI_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
 

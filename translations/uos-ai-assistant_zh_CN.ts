@@ -4,95 +4,95 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="32"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="37"/>
         <source>Add model</source>
         <translation>添加模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="34"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="39"/>
         <source>LLM</source>
         <translation>模型类型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="68"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="73"/>
         <source>APPID</source>
         <translation>APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="81"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="89"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="78"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="86"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="94"/>
         <source>Required, please input</source>
         <translation>必填，请输入</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="76"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="81"/>
         <source>APIKey</source>
         <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="84"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="89"/>
         <source>APISecret</source>
         <translation>APISecret</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="92"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="97"/>
         <source>Account</source>
         <translation>账号名称</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="102"/>
         <source>Required, to distinguish multiple models</source>
         <translation>必填，便于区分多个模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="526"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="532"/>
         <source>For proxy settings, please go to system proxy settings</source>
         <translation>代理设置请去系统代理设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="529"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="535"/>
         <source>Go to settings</source>
         <translation>去设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="176"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="181"/>
         <source>Cancel</source>
         <translation>取 消</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="178"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="183"/>
         <source>Confirm</source>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="369"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="418"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="374"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="423"/>
         <source>Save failed, please try again later</source>
         <translation>保存失败，请稍后重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="381"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="386"/>
         <source>Network exception, please try again later.</source>
         <translation>网络异常，请稍后重试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="498"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="504"/>
         <source>The account name already exists, please change it</source>
         <translation>账户名称已存在，请更改</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="267"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="272"/>
         <source>No more than 20 characters</source>
         <translation>不能超过20个字符</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
         <translation>为测试模型是否可用，系统会发送测试信息给大模型，会消耗少量token。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="316"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="321"/>
         <source>This LLM already exists, please do not add it again.</source>
         <translation>模型已经存在，请勿重复添加。</translation>
     </message>
@@ -121,7 +121,7 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="36"/>
+        <location filename="../src/application.cpp" line="34"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
@@ -137,27 +137,27 @@
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="155"/>
+        <location filename="../src/tools/functionhandler.cpp" line="156"/>
         <source>function parsing failed</source>
         <translation>function解析失败</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="176"/>
+        <location filename="../src/tools/functionhandler.cpp" line="177"/>
         <source>Application file does not exist</source>
         <translation>应用文件不存在</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="192"/>
+        <location filename="../src/tools/functionhandler.cpp" line="194"/>
         <source>Started successfully</source>
         <translation>启动成功</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="194"/>
+        <location filename="../src/tools/functionhandler.cpp" line="196"/>
         <source>Startup failed</source>
         <translation>启动失败</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="198"/>
+        <location filename="../src/tools/functionhandler.cpp" line="200"/>
         <source>The execution output content is </source>
         <translation>执行输出内容是</translation>
     </message>
@@ -210,7 +210,7 @@
 <context>
     <name>CopilotApplication</name>
     <message>
-        <location filename="../src/application.cpp" line="38"/>
+        <location filename="../src/application.cpp" line="36"/>
         <source>An intelligent UOS AI</source>
         <translation>一个智能好用的AI小助手</translation>
     </message>
@@ -648,34 +648,33 @@
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="134"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="197"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="144"/>
         <source>Successfully connected</source>
         <translation>成功接入</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="228"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="227"/>
         <source>User Agreement</source>
         <translation>使用协议</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="235"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="234"/>
         <source>UOS AI User Agreement</source>
         <translation>UOS AI 用户使用协议</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="236"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="235"/>
         <source>Read and agreed</source>
         <translation>已阅读并同意</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="263"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="270"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="262"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="269"/>
         <source>Proxy Settings</source>
         <translation>代理设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="271"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="270"/>
         <source>Go to settings</source>
         <translation>去设置</translation>
     </message>
@@ -850,7 +849,7 @@
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="66"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="67"/>
         <source>Feedback</source>
         <translation>反馈</translation>
     </message>
@@ -946,27 +945,27 @@
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="411"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="413"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>我还没有实现此功能。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="415"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="417"/>
         <source>service is not available!</source>
         <translation>服务不可用!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="420"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="422"/>
         <source>Invalid parameter!</source>
         <translation>无效的参数!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="425"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="427"/>
         <source>This app cannot be found!</source>
         <translation>找不到此应用！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="430"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="432"/>
         <source>Failed to start application!</source>
         <translation>启动应用失败!</translation>
     </message>
@@ -979,17 +978,17 @@
         <translation>UOS AI 用户使用协议</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="74"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
         <translation>我确认我已满十八周岁；我知悉并同意，我通过本应用发送与接收的内容均是直接与大模型服务商进行数据交换，与统信软件无关。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="84"/>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="85"/>
         <source>I agree to participate in the user experience plan of the Application</source>
         <translation>我同意参与本应用的用户体验计划</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="141"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
         <translation>我同意参与本应用的用户体验计划，授权统信软件收集我使用本应用发送的内容、发送内容的时间、请求大模型的类型、所在的应用和文生图是否成功，以改善服务质量、提升操作体验。（若您拒绝提供前述信息，也不会影响本应用的正常使用。）</translation>
     </message>
@@ -1197,72 +1196,72 @@
         <translation>UOS AI，您的智能助手，旨在提高您的工作效率，享受高品质的工作体验。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="92"/>
         <source>Get a free trial account</source>
         <translation>免费领取试用账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="109"/>
         <source>Configure the model account</source>
         <translation>配置模型账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="152"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="154"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="159"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="161"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
         <translation>我确认我已满十八周岁；我知悉并同意&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;《UOS AI 用户使用协议》&lt;/a&gt;，且我通过本应用发送与接收的内容均是直接与大模型服务商进行数据交换，与统信软件无关。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="163"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
         <translation>领取账号，则表示知晓并同意活动条款，&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;活动详情&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="188"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="195"/>
         <source>Trial Account</source>
         <translation>试用账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="199"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="206"/>
         <source>Save failed, please try again later</source>
         <translation>保存失败，请稍后重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="208"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="215"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
         <translation>试用账号使用次数和使用时长有限，请及时配置个人专属模型账号！详见活动详情。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="209"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="216"/>
         <source>Start trial</source>
         <comment>button</comment>
         <translation>开始试用</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="215"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="222"/>
         <source>The free account activity ends.</source>
         <translation>免费账号活动结束。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="230"/>
         <source>Network exception, please try again later.</source>
         <translation>网络异常，请稍后重试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="240"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="247"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
         <translation>我同意参与本应用的用户体验计划，授权统信软件收集我使用本应用发送的内容、发送内容的时间、请求大模型的类型、所在的应用和文生图是否成功，以改善服务质量、提升操作体验。（若您拒绝提供前述信息，也不会影响本应用的正常使用。）</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="200"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="216"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="224"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="207"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="68"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
         <source>I agree to participate in the user experience plan of the Application</source>
         <translation>我同意参与本应用的用户体验计划</translation>
     </message>
