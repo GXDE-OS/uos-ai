@@ -95,7 +95,7 @@ signals:
      * @brief Launch the UI page.
      * @param showAddllmPage: true，Display the add model account page.
      */
-    void launchUI(bool showAddllmPage);
+    void launchUI(bool showAddllmPage, bool onlyUseAgreement = false);
 
 protected:
     Session *m_chatSession = nullptr;

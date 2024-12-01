@@ -53,6 +53,10 @@ private:
     DLabel *m_pAppIdLabel = nullptr;
     DLabel *m_pApiKeyLabel = nullptr;
     DLabel *m_pApiSecretLabel = nullptr;
+    DLabel *m_pRequestAddressLabel = nullptr;
+
+    DLabel *m_pApiModelLabel = nullptr;
+    DLabel *m_pApiUrlLabel = nullptr;
 
     DLineEdit *m_pNameLineEdit = nullptr;
 
@@ -64,6 +68,8 @@ private:
     QString m_apiKey;
     QString m_apiSecret;
     QString m_name;
+    QString m_requestAddress;
+    ModelType m_modelType = USER;
 
     QSet<LLMChatModel> m_threeKeyComboxIndex;
 };

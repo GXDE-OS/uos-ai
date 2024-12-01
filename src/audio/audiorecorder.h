@@ -7,6 +7,9 @@
 #include <QTimer>
 #include <QMutex>
 #include <QPropertyAnimation>
+#include <QFile>
+
+//#define SAVE_AUDIO_DATA
 
 class AudioInfo : public QIODevice
 {
@@ -19,6 +22,14 @@ public:
 
     qint64 readData(char *data, qint64 maxlen) override;
     qint64 writeData(const char *data, qint64 len) override;
+
+#ifdef SAVE_AUDIO_DATA
+    // 保存录制的音频数据，测试用
+    // 写文件头
+    void initFileFormat(const QString &fileName, quint16 numChannels, quint16 sampleRate);
+    // 写数据
+    bool appendAudioDataToFile(const QString &filePath, const QByteArray &audioData);
+#endif
 
 signals:
     void audioWrite(const QByteArray &data);

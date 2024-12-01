@@ -9,7 +9,7 @@ class WXQFChatCompletion : public WXQFNetWork
 public:
     explicit WXQFChatCompletion(const AccountProxy &account);
 
-    QPair<int, QString> create(int model, WXQFConversation &conversation, qreal temperature = 1.0);
+    QPair<int, QString> create(int model, const QString &url, WXQFConversation &conversation, qreal temperature = 1.0);
 };
 
 #endif // WXQFCHATCOMPLETION_H

@@ -12,6 +12,11 @@ LLM::~LLM()
 
 }
 
+void LLM::updateAccount(const LLMServerProxy &serverproxy)
+{
+    m_accountProxy = serverproxy;
+}
+
 void LLM::cancel()
 {
     emit aborted();

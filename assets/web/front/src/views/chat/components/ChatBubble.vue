@@ -17,8 +17,8 @@
             <div class="loading" v-if="content === '' && showStop && isLast"></div>
             <ImgBubble @handleShowTip="emit('handleShowTip', store.loadTranslations['Copied successfully'])" :disabled="recording || !!playAudioID"
                 :content="content" v-else-if="Array.isArray(content)" />
-            <pre v-else
-                ref="target">{{ content }}<span v-show="showCopy" :class="{ disabled: recording }" class="go-config" @click="!recording && Qrequest(chatQWeb.launchLLMConfigWindow, true)"> {{store.loadTranslations['Go to configuration']}} ></span></pre>
+                <pre v-else ref="target">{{ content }}<span v-show="showCopy" :class="{ disabled: recording }" class="go-config" 
+                @click="!recording && Qrequest(chatQWeb.launchLLMConfigWindow, props.item.status != -9100)"> {{store.loadTranslations['Go to configuration']}} ></span></pre>
             <div class="play-audio" v-show="item.role !== 'user' && content !== ''">
                 <div class="model" v-if="item.anwsers && item.anwsers[activeIndex] && item.anwsers[activeIndex].llmName">
                     <img :src="`file://${item.anwsers[activeIndex].llmIcon}`" alt="">
@@ -72,11 +72,11 @@ import _ from "lodash";
 
 const { chatQWeb } = useGlobalStore();
 const store = useGlobalStore()
-const props = defineProps(['item', 'isLast', 'showStop', 'playAudioID', 'recording', 'netState','hasOutput'])
+const props = defineProps(['item', 'isLast', 'showStop', 'playAudioID', 'recording', 'netState','hasOutput', 'currentAssistant'])
 const emit = defineEmits(['handleShowTip', 'retryRequest', 'update:playAudioID'])
 const activeIndex = ref(0)
 const disabledRetry = computed(() => props.item.anwsers && props.item.anwsers.length === 5)
-const errcodeArr = [-9000, -9001, -9003, -9002]
+const errcodeArr = [-9000, -9001, -9003, -9002, -9004, -9100]
 const showCopy = computed(() => {
     if (props.item.role !== 'user') {
         return errcodeArr.includes(props.item.anwsers[activeIndex.value].status)
@@ -87,7 +87,8 @@ const showCopy = computed(() => {
 const content = computed(() => {
     if (props.item.role !== 'user') {
         const { content, type, status } = props.item.anwsers[activeIndex.value]
-        if (status >= 0 && type === 2 && content) return JSON.parse(content)
+        if (status >= 0 && type === 2 && content) 
+            return JSON.parse(content)
         return content
     }
     return props.item.content
@@ -148,13 +149,18 @@ watch(() => props.playAudioID, (newValue) => {
     const { talkID } = props.item.anwsers[activeIndex.value]
     if (newValue !== talkID) pause()
 })
+watch(() => props.currentAssistant, (newValue) => {
+    //console.log("props.currentAssistant changed: ", newValue);
+
+    stopPlayTextAudio();
+});
 </script>
 
 <style lang="scss" scoped>
 .chat-bubble {
     .item {
         padding: 10px 15px;
-        font-size: 13px;
+        font-size: 0.93rem;
         font-weight: 500;
         font-style: normal;
         max-width: 87.5%;
@@ -166,6 +172,10 @@ watch(() => props.playAudioID, (newValue) => {
             word-break: break-all;
             white-space: pre-wrap;
             line-height: 25px;
+            font-size: 0.93rem;
+            font-weight: 500;
+            font-style: normal;
+            font-family: var(--font-family);
         }
 
         // .copy-btn {
@@ -244,7 +254,7 @@ watch(() => props.playAudioID, (newValue) => {
 
             .model {
                 color: var(--uosai-color-model-name);
-                font-size: 12px;
+                font-size: 0.85rem;
                 font-weight: 500;
                 font-style: normal;
                 user-select: none;
@@ -284,7 +294,7 @@ watch(() => props.playAudioID, (newValue) => {
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
         background-color: var(--uosai-color-assistant-bg);
         color: var(--uosai-color-shortcut);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-right: auto;
         min-width: 200px;
     }
@@ -298,7 +308,7 @@ watch(() => props.playAudioID, (newValue) => {
     }
 
     .go-config {
-        font-size: 13px;
+        font-size: 0.93rem;
         color: var(--activityColor);
         cursor: pointer;
     }
@@ -340,27 +350,27 @@ watch(() => props.playAudioID, (newValue) => {
         border-radius: 8px;
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
         // border: 1px solid rgba(0, 0, 0, 0.05);
-        background-color: var(--uosai-color-shortcut-bg);
+        background-color: var(--uosai-bg-retry);
         width: fit-content;
         color: var(--activityColor);
-        font-size: 13px;
+        font-size: 0.93rem;
         font-weight: 500;
         font-style: normal;
         cursor: pointer;
         user-select: none;
-        margin-top: -10px;
+        // margin-top: -10px;
         display: flex;
         align-items: center;
         margin-left: 1px;
         margin-bottom: 5px;
         &:not(.disabledbtn):hover {
             // border: 1px solid rgba(0, 0, 0, 0.05);
-            background-color: var(--uosai-color-shortcut-hover);
+            background-color: var(--uosai-bg-retry-hover);
         }
 
         &:not(.disabledbtn):active {
             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-            background-color: var(--uosai-color-shortcut-active);
+            background-color: var(--uosai-bg-retry-active);
         }
 
         svg {
@@ -377,7 +387,7 @@ watch(() => props.playAudioID, (newValue) => {
             opacity: 0.4;
         }
         &.disabledbtn {
-            background-color: var(--uosai-bg-retry);
+            background-color: var(--uosai-bg-retry-disable);
             border-color: var(--uosai-border-color-retry);
             cursor: not-allowed;
         }
@@ -388,7 +398,7 @@ watch(() => props.playAudioID, (newValue) => {
         align-items: center;
         justify-content: flex-end;
         color: var(--uosai-color-shortcut);
-        font-size: 12px;
+        font-size: 0.85rem;
         margin-bottom: 9px;
         height: 16px;
         letter-spacing: 2px;

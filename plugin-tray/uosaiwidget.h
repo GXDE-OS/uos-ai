@@ -3,10 +3,19 @@
 
 #include <constants.h>
 
+#include <DLabel>
+
 #include <QWidget>
 #include <QIcon>
 
+#ifdef DOCK_MIN_SIZE
+#define USE_V23_DOCK
+#endif
+
 class QLabel;
+
+namespace uos_ai {
+
 class UosAiWidget: public QWidget
 {
     Q_OBJECT
@@ -31,4 +40,15 @@ private:
     QPixmap m_pixmap;
 };
 
+class QuickPanel : public QWidget
+{
+    Q_OBJECT
+public:
+    explicit QuickPanel(const QString &desc, QWidget *parent = nullptr);
+public slots:
+    void updateIcon();
+private:
+    DTK_WIDGET_NAMESPACE::DLabel *iconLabel = nullptr;
+};
+}
 #endif // UOSAIWIDGET_H

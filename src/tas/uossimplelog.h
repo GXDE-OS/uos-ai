@@ -30,6 +30,8 @@ private:
 
     QString hostUrl(UosLogType type = UosLogType::UserInput) const;
 
+    void initServerAddress();
+
 private:
     TLockFreeQueue<UosLogObject> m_preLogObjectQueue;
 
@@ -38,6 +40,8 @@ private:
     QWaitCondition m_condition;
 
     std::atomic<bool> m_stopLogging;
+
+    QMap<UosLogType, QString> serverUrls;
 };
 
 #endif // UOSSIMPLELOG_H

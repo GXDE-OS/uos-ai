@@ -41,7 +41,8 @@ int BrowsweNativeDbusObject::isFreeAccountValid(const QString &llmId)
     }
 
     int available;
-    if (QNetworkReply::NoError != UosFreeAccounts::instance().getDeterAccountLegal(aacount.account.apiKey, available)) {
+    QString modelUrl;
+    if (QNetworkReply::NoError != UosFreeAccounts::instance().getDeterAccountLegal(aacount.account.apiKey, available, modelUrl)) {
         return 9999;
     }
 
@@ -58,5 +59,5 @@ void BrowsweNativeDbusObject::incrementUsageCount(const QString &llmId)
     if (aacount.type == ModelType::USER) {
         return;
     }
-    UosFreeAccounts::instance().increaseUse(aacount.account.apiKey);
+    UosFreeAccounts::instance().increaseUse(aacount.account.apiKey, 0);
 }

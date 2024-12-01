@@ -15,7 +15,7 @@ public:
      * @brief rootUrlPath
      * @return
      */
-    QString rootUrlPath() const;
+    virtual QString rootUrlPath() const;
 
     /**
      * @brief request

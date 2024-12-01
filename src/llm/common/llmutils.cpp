@@ -6,6 +6,7 @@
 #include "zhipu.h"
 #include "wxqf.h"
 #include "localtext2image.h"
+#include "universalapi.h"
 
 #include <QRegExp>
 #include <QFile>
@@ -45,6 +46,8 @@ QSharedPointer<LLM> LLMUtils::getCopilot(const LLMServerProxy &serverproxy)
         break;
     case LLMChatModel::LOCAL_TEXT2IMAGE:
         copilot.reset(new LocalText2Image(serverproxy));
+    case LLMChatModel::OPENAI_API_COMPATIBLE:
+        copilot.reset(new uos_ai::UniversalAPI(serverproxy));
         break;
     }
 

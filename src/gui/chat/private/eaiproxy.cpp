@@ -5,6 +5,9 @@
 
 #include <QScopedPointer>
 #include <QDebug>
+#include <QApplication>
+
+#include <DApplicationHelper>
 
 EAiProxy::EAiProxy(QObject *parent)
     : QObject{parent}
@@ -61,6 +64,7 @@ EAiProxy::EAiProxy(QObject *parent)
             emit sigActiveColorChanged(m_activeColor);
         }
     });
+    connect(QApplication::instance(), SIGNAL(fontChanged(const QFont &)), this, SLOT(onUpdateSystemFont(const QFont &)));
 
     m_themeType = DGuiApplicationHelper::instance()->themeType();
 
@@ -86,6 +90,27 @@ EAiProxy::EAiProxy(QObject *parent)
             }
         }
     });
+
+    connect(EAiExec(), &EAiExecutor::assistantChanged, this, &EAiProxy::sigAssistantChanged);
+    connect(EAiExec(), &EAiExecutor::knowledgeBaseExistChanged, this, &EAiProxy::sigKnowledgeBaseStatusChanged);
+    connect(EAiExec(), &EAiExecutor::knowledgeBaseFAQGenFinished, this, &EAiProxy::sigKnowledgeBaseFAQGenFinished);
+}
+
+void EAiProxy::onUpdateSystemFont(const QFont &font)
+{
+    QFontInfo fontInfo(font);
+    setFontInfo(fontInfo.family(), fontInfo.pixelSize());
+    emit sigFontChanged(fontInfo.family(), fontInfo.pixelSize());
+}
+
+bool EAiProxy::isKnowledgeBaseExist()
+{
+    return EAiExec()->isKnowledgeBaseExist();
+}
+
+void EAiProxy::configureKnowledgeBase()
+{
+    return EAiExec()->launchLLMConfigWindow(false);
 }
 
 QString EAiProxy::getNotifierName(AiAction act, int mode)
@@ -166,6 +191,21 @@ bool EAiProxy::setCurrentLLMAccountId(const QString &id)
     return EAiExec()->setCurrentLLMAccountId(id);
 }
 
+QString EAiProxy::currentAssistantId()
+{
+    return EAiExec()->currentAssistantId();
+}
+
+QString EAiProxy::queryAssistantList()
+{
+    return EAiExec()->queryAssistantList();
+}
+
+bool EAiProxy::setCurrentAssistantId(const QString &id)
+{
+    return EAiExec()->setCurrentAssistantId(id);
+}
+
 QString EAiProxy::getAiFAQ()
 {
     return EAiExec()->getRandomAiFAQ();
@@ -180,6 +220,28 @@ void EAiProxy::launchAboutWindow()
 {
     return EAiExec()->launchAboutWindow();
 }
+
+void EAiProxy::setFontInfo(const QString &fontFamily, int pixelSize)
+{
+    m_fontFamily = fontFamily;
+    m_fontPixelSize = pixelSize;
+}
+
+QString EAiProxy::fontInfo()
+{
+    return m_fontFamily + "#" + QString::number(m_fontPixelSize);
+}
+
+void EAiProxy::setWindowMode(bool isWindowMode)
+{
+    m_isWindowMode = isWindowMode;
+}
+
+bool EAiProxy::isWindowMode()
+{
+    return m_isWindowMode;
+}
+
 
 void EAiProxy::showToast(int type)
 {
@@ -205,7 +267,7 @@ bool EAiProxy::isAudioOutputAvailable()
     return EAiExec()->isAudioOutputAvailable();
 }
 
-bool EAiProxy::startRecorder()
+bool EAiProxy::startRecorder(int mode)
 {
     //Reset audio limit at start.
     m_audioLenLimit = AUDIO_LENGTH;
@@ -214,7 +276,7 @@ bool EAiProxy::startRecorder()
     m_audioRecCounter->stop();
     m_audioRecCounter->start(1000);
 
-    return EAiExec()->startRecorder();
+    return EAiExec()->startRecorder(mode);
 }
 
 bool EAiProxy::stopRecorder()
@@ -329,7 +391,7 @@ QJsonObject EAiProxy::loadTranslations()
     translations["Connection failed, click to try again"] = tr("Connection failed, click to try again");
     translations["Click on the animation or Ctrl+Super+C to activate"] = tr("Click on the animation or Ctrl+Super+C to activate");
     translations["Voice input is temporarily unavailable, please check the network!"] = tr("Voice input is temporarily unavailable, please check the network!");
-    translations["Connection failed, please check the network."] = tr("Connection failed, please check the network.");
+    translations["Unable to connect to the server, please check your network or try again later."] = tr("Unable to connect to the server, please check your network or try again later.");
     translations["Voice conversation"] = tr("Voice conversation");
     translations["Click the animation or press Enter to send"] = tr("Click the animation or press Enter to send");
     translations["Stop recording after %1 seconds"] = tr("Stop recording after %1 seconds");
@@ -351,6 +413,18 @@ QJsonObject EAiProxy::loadTranslations()
     translations["The sound output device is not detected, please check and try again!"] = tr("The sound output device is not detected, please check and try again!");
     translations["Settings"] = tr("Settings");
     translations["About"] = tr("About");
+    translations["Mode"] = tr("Mode");
+    translations["Window Mode"] = tr("Window Mode");
+    translations["Sidebar Mode"] = tr("Sidebar Mode");
+    translations["Assistant List"] = tr("Assistant List");
+    translations["UOS System Assistant"] = tr("UOS System Assistant");
+    translations["Deepin System Assistant"] = tr("Deepin System Assistant");
+    translations["Personal Knowledge Assistant"] = tr("Personal Knowledge Assistant");
+    translations["Please configure the knowledge base"] = tr("Please configure the knowledge base");
+    translations["knowledge base configure content"] = tr("Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.");
+    translations["Please configure the large model"] = tr("Please configure the large model");
+    translations["The personal knowledge assistant can only be used after configuring a large model."] = tr("The personal knowledge assistant can only be used after configuring a large model.");
+    translations["To configure"] = tr("To configure");
 
     return translations;
 }

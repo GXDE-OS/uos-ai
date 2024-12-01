@@ -9,10 +9,28 @@
 #include <QJsonObject>
 #include <QNetworkInterface>
 #include <QRegularExpression>
+#include <QStandardPaths>
 
 UosFreeAccounts::UosFreeAccounts()
 {
+    initServerAddress();
+}
 
+void UosFreeAccounts::initServerAddress()
+{
+    QString testServerJsonPath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/TestServer.json";
+    if (QFileInfo::exists(testServerJsonPath)) {
+        QFile dataInfoFile(testServerJsonPath);
+        if (dataInfoFile.open(QIODevice::ReadOnly)) {
+            QByteArray jsonData = dataInfoFile.readAll();
+            QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonData);
+            QJsonObject jsonObj = jsonDoc.object();
+            m_serverAddress = jsonObj["TestServer"].toString();
+            qInfo() << "API Server Address is Test.";
+            return;
+        }
+    }
+    m_serverAddress = AIServer::ServerAPIAddress;
 }
 
 UosFreeAccounts::~UosFreeAccounts()
@@ -28,7 +46,7 @@ UosFreeAccounts &UosFreeAccounts::instance()
 
 QNetworkReply::NetworkError UosFreeAccounts::freeAccountButtonDisplay(const QString &type, UosFreeAccountActivity &freeAccountActivity)
 {
-    QString url = QString("https://uosai.uniontech.com/api/getButtonDisplay?type=%1").arg(type);
+    QString url = m_serverAddress + QString("/getButtonDisplay?type=%1").arg(type);
     QNetworkReply::NetworkError error = QNetworkReply::NetworkError::NoError;
 
     QSharedPointer<HttpAccessmanager> httpAccessManager
@@ -116,7 +134,7 @@ QNetworkReply::NetworkError UosFreeAccounts::getFreeAccount(const ModelType type
     document.setObject(sendJson);
     const QByteArray &sendData = document.toJson(QJsonDocument::Compact);
 
-    QString url = "https://uosai.uniontech.com/api/getFreeAccount";
+    QString url = m_serverAddress + "/getFreeAccount";
     QNetworkReply::NetworkError error = QNetworkReply::NetworkError::NoError;
 
     QSharedPointer<HttpAccessmanager> httpAccessManager
@@ -157,6 +175,8 @@ QNetworkReply::NetworkError UosFreeAccounts::getFreeAccount(const ModelType type
                 freeAccount.hasUsed = obj["has_used"].toInt();
             if (obj.contains("model"))
                 freeAccount.llmModel = obj["model"].toInt();
+            if (obj.contains("modelAddress"))
+                freeAccount.modelUrl = obj["modelAddress"].toString();
         } else {
             if (obj.contains("status"))
                 m_status = obj["status"].toInt();
@@ -176,7 +196,7 @@ QNetworkReply::NetworkError UosFreeAccounts::getFreeAccount(const ModelType type
 }
 
 
-QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString &appkey, int &available)
+QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl)
 {
     QJsonDocument document;
     QJsonObject sendJson;
@@ -184,7 +204,7 @@ QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString 
     document.setObject(sendJson);
     const QByteArray &sendData = document.toJson(QJsonDocument::Compact);
 
-    QString url = "https://uosai.uniontech.com/api/deterAccountLegal";
+    QString url = m_serverAddress + "/deterAccountLegal";
     QNetworkReply::NetworkError error = QNetworkReply::NetworkError::NoError;
 
     QSharedPointer<HttpAccessmanager> httpAccessManager
@@ -205,6 +225,8 @@ QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString 
         if (resp.first == QNetworkReply::NetworkError::NoError) {
             if (obj.contains("datas"))
                 available = obj["datas"].toInt();
+            if (obj.contains("remark"))
+                modelUrl = obj["remark"].toString();
         } else {
             if (obj.contains("status"))
                 m_status = obj["status"].toInt();
@@ -219,15 +241,16 @@ QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString 
     return error;
 }
 
-QNetworkReply::NetworkError UosFreeAccounts::increaseUse(const QString &appkey)
+QNetworkReply::NetworkError UosFreeAccounts::increaseUse(const QString &appkey, int chatAction)
 {
     QJsonDocument document;
     QJsonObject sendJson;
     sendJson["appkey"] = appkey;
+    sendJson["useType"] = chatAction & ChatText2Image ? 1 : 0;
     document.setObject(sendJson);
     const QByteArray &sendData = document.toJson(QJsonDocument::Compact);
 
-    QString url = "https://uosai.uniontech.com/api/increaseUse";
+    QString url = m_serverAddress + "/increaseUse";
     QNetworkReply::NetworkError error = QNetworkReply::NetworkError::NoError;
 
     QSharedPointer<HttpAccessmanager> httpAccessManager

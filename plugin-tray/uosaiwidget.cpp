@@ -4,6 +4,10 @@
 
 #include "uosaiwidget.h"
 
+#include <DGuiApplicationHelper>
+#include <DStyle>
+#include <DFontSizeManager>
+
 #include <QSvgRenderer>
 #include <QPainter>
 #include <QMouseEvent>
@@ -13,14 +17,11 @@
 #include <QLabel>
 #include <QVBoxLayout>
 
-#include <DGuiApplicationHelper>
-#include <DStyle>
-
-#define PLUGIN_BACKGROUND_MIN_SIZE 16
-#define PLUGIN_BACKGROUND_MAX_SIZE 1024
-
 DGUI_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
+
+#define PANEL_ICON_SIZE  20
 
 UosAiWidget::UosAiWidget(QWidget *parent)
     : QWidget(parent)
@@ -42,6 +43,9 @@ void UosAiWidget::paintEvent(QPaintEvent *e)
     const QRectF &rf = QRectF(rect());
     const QRectF &rfp = QRectF(m_pixmap.rect());
     QPointF center = rf.center() - rfp.center() / ratio;
+
+    loadSvg();
+
     painter.drawPixmap(center, m_pixmap);
 }
 
@@ -118,9 +122,20 @@ void UosAiWidget::loadSvg()
 
     const int maxPixSize = qMin(maxWidth, maxHeight);
 
+    QString icon = ":/assets/icons/deepin/builtin/uosai.svg";
+    if(DGuiApplicationHelper::instance()->themeType() == DGuiApplicationHelper::DarkType)
+        icon = ":/assets/icons/deepin/builtin/uosai_dark.svg";
+
     QSize iconSize(maxPixSize, maxPixSize);
+#ifdef PLUGIN_ICON_MAX_SIZE
+    iconSize = QSize(PLUGIN_ICON_MAX_SIZE, PLUGIN_ICON_MAX_SIZE);
+#endif
+//#ifdef USE_V23_DOCK
+    iconSize = QSize(16, 16);
+//#endif
+
     m_pixmap = QPixmap(int(iconSize.width() * ratio), int(iconSize.height() * ratio));
-    QSvgRenderer renderer(QString(":/images/uos-ai-assistant.svg"));
+    QSvgRenderer renderer(icon);
     m_pixmap.fill(Qt::transparent);
 
     QPainter painter;
@@ -128,4 +143,39 @@ void UosAiWidget::loadSvg()
     renderer.render(&painter);
     painter.end();
     m_pixmap.setDevicePixelRatio(ratio);
+}
+
+QuickPanel::QuickPanel(const QString &desc, QWidget *parent)
+{
+    QVBoxLayout *lay = new QVBoxLayout;
+    lay->setMargin(10);
+    lay->setSpacing(0);
+    lay->addStretch(1);
+
+    iconLabel = new DLabel;
+    iconLabel->setFixedSize(PANEL_ICON_SIZE, PANEL_ICON_SIZE);
+    iconLabel->setAlignment(Qt::AlignCenter);
+    lay->addWidget(iconLabel, 0, Qt::AlignHCenter);
+
+    DLabel *textLabel = new DLabel;
+    textLabel->setText(desc);
+    textLabel->setElideMode(Qt::ElideRight);
+    textLabel->setAlignment(Qt::AlignCenter);
+    DFontSizeManager::instance()->bind(textLabel, DFontSizeManager::T10);
+    lay->addSpacing(15);
+    lay->addWidget(textLabel, 0, Qt::AlignHCenter);
+    lay->addStretch(1);
+
+    setLayout(lay);
+
+    updateIcon();
+
+    connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &QuickPanel::updateIcon);
+}
+
+void QuickPanel::updateIcon()
+{
+    auto icon = QIcon(QString(":/images/uos-ai-assistant.svg"));
+    iconLabel->setPixmap(icon.pixmap(PANEL_ICON_SIZE, PANEL_ICON_SIZE));
+    update();
 }

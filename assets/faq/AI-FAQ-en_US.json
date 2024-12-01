@@ -1,70 +1,87 @@
 [
     {
-        "iconName": "1-question",
+        "iconName": "1-question-ai-ai",
+        "type": "Content Generation",
         "Question": "Help me draft an outline of meeting minutes"
     },
     {
-        "iconName": "2-question",
+        "iconName": "2-question-ai",
+        "type": "Content Generation",
         "Question": "I’m thinking about the functional design of AI products. Give me 3 ideas."
     },
     {
-        "iconName": "3-question",
+        "iconName": "3-question-ai",
+        "type": "Content Generation",
         "Question": "How to write the summation formula in Excel?"
     },
     {
-        "iconName": "4-question",
+        "iconName": "4-question-ai",
+        "type": "Content Generation",
         "Question": "Help me write a work daily report template"
     },
     {
-        "iconName": "5-question",
+        "iconName": "5-question-ai",
+        "type": "Content Generation",
         "Question": "Help me write a meeting minutes template"
     },
     {
-        "iconName": "6-question",
+        "iconName": "6-question-ai",
+        "type": "Content Generation",
         "Question": "What methods can help improve work efficiency?"
     },
     {
-        "iconName": "7-question",
+        "iconName": "7-question-ai",
+        "type": "Content Generation",
         "Question": "Please tell me how to communicate with colleagues most efficiently?"
     },
     {
-        "iconName": "8-question",
+        "iconName": "8-question-ai",
+        "type": "Application Interaction",
         "Question": "Help me change my desktop background"
     },
     {
-        "iconName": "9-question",
+        "iconName": "9-question-ai",
+        "type": "Application Interaction",
         "Question": "Adjust computer screen brightness to 70%"
     },
     {
-        "iconName": "10-question",
+        "iconName": "10-question-ai",
+        "type": "Application Interaction",
         "Question": "Send me a leave request email to Zhang San. Please polish the content of the email before sending it out."
     },
     {
-        "iconName": "11-question",
+        "iconName": "11-question-ai",
+        "type": "Application Interaction",
         "Question": "Help me turn on Do Not Disturb mode"
     },
     {
-        "iconName": "12-question",
+        "iconName": "12-question-ai",
+        "type": "Application Interaction",
         "Question": "Open system applications such as Mailbox"
     },
     {
-        "iconName": "13-question",
+        "iconName": "13-question-ai",
+        "type": "Application Interaction",
         "Question": "Open the browser for me"
     },
     {
-        "iconName": "14-question",
+        "iconName": "14-question-ai",
+        "type": "Application Interaction",
         "Question": "Open the theater for me"
     },
     {
-        "iconName": "15-question",
+        "iconName": "15-question-ai",
+        "type": "Application Interaction",
         "Question": "Open the music player for me"
     },
     {
-        "iconName": "16-question",
+        "iconName": "16-question-ai",
+        "type": "Application Interaction",
         "Question": "Help me create a meeting schedule for tomorrow at 3 p.m."
     },
     {
-        "iconName": "17-question",
-        "Question": "Help me generate 4 landscape pictures"
+        "iconName": "17-question-ai",
+        "type": "Image Generation",
+        "Question": "Help me generate landscape pictures"
     }
 ]

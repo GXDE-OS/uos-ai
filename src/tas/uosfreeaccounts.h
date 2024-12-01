@@ -24,10 +24,10 @@ public:
     QNetworkReply::NetworkError getFreeAccount(const ModelType type, UosFreeAccount &freeAccount, int &status);
 
     // 判断账号是否可用
-    QNetworkReply::NetworkError getDeterAccountLegal(const QString &appkey, int &available);
+    QNetworkReply::NetworkError getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl);
 
     // 增加账号使用次数
-    QNetworkReply::NetworkError increaseUse(const QString &appkey);
+    QNetworkReply::NetworkError increaseUse(const QString &appkey, int chatAction);
 
     QString getLastError() const;
 
@@ -36,12 +36,16 @@ public:
 private:
     UosFreeAccounts();
 
+    void initServerAddress();
+
     QPair<QNetworkReply::NetworkError, QJsonObject> getHttpResponse(const QSharedPointer<HttpAccessmanager> hacc, const HttpEventLoop *loop);
 
 private:
     QString m_lastError;
 
     unsigned int m_status;
+
+    QString m_serverAddress;
 };
 
 #endif // UOSFREEACCOUNTS_H

@@ -18,6 +18,10 @@
 #include <com_deepin_daemon_display.h>
 #include <com_deepin_dde_controlcenter.h>
 #include <com_deepin_dde_notification.h>
+#include <com_deepin_wm.h>
+#include <com_deepin_daemon_bluetooth.h>
+#include <com_deepin_daemon_network.h>
+#include <com_deepin_system_systempower.h>
 
 
 class UOSAbilityManager : public QObject
@@ -34,7 +38,7 @@ public:
      * @return Do bluetooth config,
      *      show bluetooth config UI
      */
-    OSCallContext doBluetoothConfig();
+    OSCallContext doBluetoothConfig(bool on);
     /**
      * @brief doScreenMirroring
      * @return Do screen mirror
@@ -54,10 +58,10 @@ public:
      */
     OSCallContext doWallpaperSwitch();
     /**
-     * @brief doDesktopClearing
-     * @return Clear desktop
+     * @brief doDesktopOrganize
+     * @return Organize desktop
      */
-    OSCallContext doDesktopClearing(bool state = true);
+    OSCallContext doDesktopOrganize(bool state = true);
     /**
      * @brief doDockModeSwitch
      * @param mode  0 Fashion mode; 1 Efficent mode
@@ -100,6 +104,18 @@ public:
     OSCallContext doCreateSchedule(const QString &title
                                    , const QString &startTime
                                    , const QString &endTime);
+
+    OSCallContext switchWifi(bool on);
+    OSCallContext getSystemMemory();
+    OSCallContext doSystemLanguageSetting();
+    OSCallContext doPerformanceModeSwitch(const QString &mode);
+    OSCallContext openShutdownFront();
+    OSCallContext openScreenShot();
+    OSCallContext doDisplayModeSwitch(int mode);
+    OSCallContext openGrandSearch();
+    OSCallContext switchScreen();
+public:
+    QString textForCommnand();
 signals:
 
 protected:
@@ -115,16 +131,27 @@ protected:
     using UosDisplay = com::deepin::daemon::Display;
     using UosControlCenter = com::deepin::dde::ControlCenter;
     using UosNotification = com::deepin::dde::Notification;
+    using UosWM = com::deepin::wm;
+    using UosBluetooth = com::deepin::daemon::Bluetooth;
+    using UosNetwork = com::deepin::daemon::Network;
+    using UosPower = com::deepin::system::Power;
 
     QScopedPointer<UosDock> m_uosDockProxy;
     QScopedPointer<UosAppearance> m_uosAppearanceProxy;
     QScopedPointer<UosDisplay> m_uosDisplayProxy;
+    QScopedPointer<UosWM> m_uosWM;
+    QScopedPointer<UosBluetooth> m_bluetooth;
+    QScopedPointer<UosNetwork> m_network;
+    QScopedPointer<UosPower> m_power;
+
     //Control center isn't a resident service
     //so don't need to check if the dbus is valid
     //when call it.
     QScopedPointer<IControlCenter> m_uosControlCenterProxy;
     QScopedPointer<INotification> m_uosNotificationProxy;
     QScopedPointer<QDBusInterface> m_uosDesktopProxy;
+    QScopedPointer<QDBusInterface> m_shutdownFrontProxy;
+    QScopedPointer<QDBusInterface> m_screenShotProxy;
 
     QScopedPointer<ILauncher> m_uosAppLauncher;
     QScopedPointer<ISchedule> m_uosCalendarScheduler;

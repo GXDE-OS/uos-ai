@@ -24,6 +24,8 @@ public:
      */
     QString outputString();
 
+    QString directOutput() const;
+
 private:
     /**
      * @brief sendMailFunction
@@ -53,6 +55,7 @@ protected:
 private:
     int m_exitCode = 0;
     QString m_outputString;
+    QString m_directOutput;
     QJsonObject m_function;
 };
 

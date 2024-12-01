@@ -20,6 +20,7 @@ OsInfo::OsInfo(QObject *parent)
             << ", minor=" << DSysInfo::minorVersion()
             << " ]"
             << "}";
+    qInfo() << "cache system environment" << m_pureEnvironment.toStringList();
 }
 
 bool OsInfo::isLingLong() const

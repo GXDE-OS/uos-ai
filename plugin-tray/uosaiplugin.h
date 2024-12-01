@@ -7,6 +7,18 @@
 
 #include "uosaiwidget.h"
 
+#ifdef DOCK_API_VERSION
+#if (DOCK_API_VERSION >= DOCK_API_VERSION_CHECK(2, 0, 0))
+    #define  USE_DOCK_API_V2
+#endif
+#endif
+
+#ifdef USE_DOCK_API_V2
+#include <dde-dock/pluginsiteminterface_v2.h>
+#else
+#include <pluginsiteminterface.h>
+#endif
+
 #include <QApplication>
 #include <QDBusInterface>
 #include <QLabel>
@@ -14,18 +26,21 @@
 #include <QMap>
 #include <QVariant>
 #include <QJsonDocument>
-#include <pluginsiteminterface.h>
 
 #define DOCK_DEFAULT_POS    9
 #define KEY_DNDMODE         0
 #define KEY_SHOWICON        5
 
-#ifdef DOCK_MIN_SIZE
-#define USE_V23_DOCK
+#ifdef USE_DOCK_API_V2
+#define PLUGIN_INTERDACE  PluginsItemInterfaceV2
+#else
+#define PLUGIN_INTERDACE  PluginsItemInterface
 #endif
 
 class QGSettings;
-class UosAiPlugin : public QObject, PluginsItemInterface
+namespace uos_ai {
+
+class UosAiPlugin : public QObject, PLUGIN_INTERDACE
 {
     Q_OBJECT
     Q_INTERFACES(PluginsItemInterface)
@@ -49,19 +64,31 @@ public:
 #ifdef USE_V23_DOCK
     QIcon icon(const DockPart &dockPart, DGuiApplicationHelper::ColorType themeType) override;
 #endif
+#ifdef USE_DOCK_API_V2
+    Dock::PluginFlags flags() const override { return Dock::Type_System | Dock::Attribute_Normal; }
+    void setMessageCallback(MessageCallbackFunc cb) override { m_messageCallback = cb; }
+#endif
 
 private:
-    const QPixmap loadSvg(const QString &iconName, const QSize size, const qreal ratio = qApp->devicePixelRatio());
+    QPixmap loadSvg(QString &iconName, const QSize size, const qreal ratio = qApp->devicePixelRatio());
+    void loadPlugin();
 
 private slots:
     void changeTheme();
-private:
-    void loadPlugin();
+#ifdef USE_DOCK_API_V2
+    void onUosAiVisibleChanged(bool);
+#endif
 
 private:
     bool m_pluginLoaded = false;
     UosAiWidget *m_itemWidget = nullptr;
     QLabel *m_tipsLabel;
+    QScopedPointer<QWidget> m_quickWidget;
+#ifdef USE_DOCK_API_V2
+    MessageCallbackFunc m_messageCallback;
+#endif
 };
+
+}
 
 #endif // UOSAIPLUGIN_H

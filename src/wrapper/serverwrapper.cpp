@@ -8,6 +8,8 @@
 
 #include <QtDBus>
 
+UOSAI_USE_NAMESPACE
+
 ServerWrapper::ServerWrapper()
 {
 
@@ -40,10 +42,10 @@ bool ServerWrapper::initialization()
     QDBusConnection connection = QDBusConnection::sessionBus();
     DbWrapper::localDbWrapper().initialization(DbWrapper::getDatabaseDir());
 
-    m_copilotDbusObject.reset(new DBusInterface());
+    m_copilotDbusObject.reset(new DBusInterface(this));
 
     //Register the dbus object used for registration
-    if (!connection.registerObject(DBUS_SERVER_PATH, m_copilotDbusObject.data(), QDBusConnection::ExportScriptableSlots)) {
+    if (!connection.registerObject(DBUS_SERVER_PATH, m_copilotDbusObject.data(), QDBusConnection::ExportScriptableSlots | QDBusConnection::ExportScriptableSignals)) {
         QDBusError error = connection.lastError();
         qCritical() << "Failed to register DBus path:" << error.message();
         return false;
@@ -52,6 +54,15 @@ bool ServerWrapper::initialization()
     connect(m_copilotDbusObject.data(), &DBusInterface::sigToLaunchMgmt, this, &ServerWrapper::sigToLaunchMgmt, Qt::QueuedConnection);
     connect(m_copilotDbusObject.data(), &DBusInterface::sigToLaunchChat, this, &ServerWrapper::sigToLaunchChat, Qt::QueuedConnection);
 
+
+    // 先屏蔽助手的兼容接口
+#if 0
+    m_aiassistant  = new AiassistantSubstitute(this);
+    if (m_aiassistant->registerInterface())
+        qInfo() << "Aiassistant register successfully.";
+    else
+        qWarning() << "Fail to register aiassistant.";
+#endif
     return true;
 }
 
@@ -83,6 +94,16 @@ void ServerWrapper::addAppFunction(const QString &appId, const QJsonObject &func
     m_copilotDbusObject->addAppFunction(appId, funciton);
 }
 
+void ServerWrapper::updateVisibleState(bool visible)
+{
+    m_copilotDbusObject->updateVisibleState(visible);
+}
+
+void ServerWrapper::updateActiveState(bool active)
+{
+    m_copilotDbusObject->updateActiveState(active);
+}
+
 QPair<int, QString> ServerWrapper::verify(const LLMServerProxy &serverProxy)
 {
     QSharedPointer<LLM> copilot = LLMUtils::getCopilot(serverProxy);
@@ -91,9 +112,6 @@ QPair<int, QString> ServerWrapper::verify(const LLMServerProxy &serverProxy)
     }
 
     const QPair<int, QString> &result = copilot->verify();
-    if (result.first != AIServer::NoError && !NetworkMonitor::getInstance().isOnline()) {
-        return qMakePair(AIServer::NetworkError, QCoreApplication::translate("ServerWrapper", "Connection failed, please check the network."));
-    }
 
     return result;
 }

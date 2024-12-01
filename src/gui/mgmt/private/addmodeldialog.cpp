@@ -8,11 +8,15 @@
 #include "uosfreeaccounts.h"
 #include "gui/gutils.h"
 #include "private/echatwndmanager.h"
+#include "utils/util.h"
 
 #include <QUuid>
 
 #include <DMessageManager>
 #include <DApplicationHelper>
+
+UOSAI_USE_NAMESPACE
+DCORE_USE_NAMESPACE
 
 AddModelDialog::AddModelDialog(DWidget *parent)
     : DAbstractDialog(parent)
@@ -43,7 +47,7 @@ void AddModelDialog::initUI()
 
     m_pModelComboBox = new DComboBox();
 #ifndef QT_DEBUG
-    if (QLocale::Chinese != QLocale::system().language() || QLocale::SimplifiedChineseScript != QLocale::system().script()) {
+    if (Util::isGPTEnable()) {
         m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_3_5_16K);
         m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_4);
     }
@@ -52,23 +56,18 @@ void AddModelDialog::initUI()
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_4);
 #endif
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::WXQF_ERNIE_Bot);
-    m_modelMap.insert(m_modelMap.size(), LLMChatModel::WXQF_ERNIE_Bot_turbo);
-    m_modelMap.insert(m_modelMap.size(), LLMChatModel::WXQF_ERNIE_Bot_4);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::SPARKDESK);
-    m_modelMap.insert(m_modelMap.size(), LLMChatModel::SPARKDESK_2);
-    m_modelMap.insert(m_modelMap.size(), LLMChatModel::SPARKDESK_3);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::GPT360_S2_V9);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::ChatZHIPUGLM_PRO);
+    // custom model
+    m_modelMap.insert(m_modelMap.size(), LLMChatModel::OPENAI_API_COMPATIBLE);
+
     for (int i = 0; i < m_modelMap.size(); i++) {
-        m_pModelComboBox->addItem(LLMServerProxy::llmName(m_modelMap.value(i)));
+        m_pModelComboBox->addItem(LLMServerProxy::llmName(m_modelMap.value(i), true));
     }
     m_pModelComboBox->setFixedWidth(381);
     m_threeKeyComboxIndex.insert(WXQF_ERNIE_Bot);
-    m_threeKeyComboxIndex.insert(WXQF_ERNIE_Bot_turbo);
-    m_threeKeyComboxIndex.insert(WXQF_ERNIE_Bot_4);
     m_threeKeyComboxIndex.insert(SPARKDESK);
-    m_threeKeyComboxIndex.insert(SPARKDESK_2);
-    m_threeKeyComboxIndex.insert(SPARKDESK_3);
 
     DLabel *appIdLabel = new DLabel(tr("APPID"));
     appIdLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
@@ -105,6 +104,34 @@ void AddModelDialog::initUI()
     m_pNameLineEdit->lineEdit()->installEventFilter(this);
     m_pNameLineEdit->lineEdit()->setProperty("_d_dtk_lineedit_opacity", false);
 
+    DLabel *apiModelName = new DLabel(tr("Model Name"));
+    apiModelName->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    apiModelName->setToolTip(apiModelName->text());
+    DFontSizeManager::instance()->bind(apiModelName, DFontSizeManager::T6, QFont::Medium);
+    m_pCustomModelName = new DLineEdit();
+    m_pCustomModelName->setPlaceholderText(tr("Optional"));
+    m_pCustomModelName->lineEdit()->setMaxLength(64);
+
+    DLabel *apiAddr = new DLabel(tr("Domain"));
+    apiAddr->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    apiAddr->setToolTip(apiAddr->text());
+    DFontSizeManager::instance()->bind(apiAddr, DFontSizeManager::T6, QFont::Medium);
+    m_pCustomModelUrl = new DLineEdit();
+    m_pCustomModelUrl->setPlaceholderText(tr("Required, please input"));
+    m_pCustomModelUrl->lineEdit()->setMaxLength(512);
+
+    DLabel *requestAddressLabel = new DLabel(tr("Domain"));
+    requestAddressLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    requestAddressLabel->setToolTip(requestAddressLabel->text());
+    DFontSizeManager::instance()->bind(requestAddressLabel, DFontSizeManager::T6, QFont::Medium);
+    m_pAddressLineEdit = new DLineEdit();
+    m_pAddressLineEdit->setPlaceholderText(tr("Required, please input"));
+    m_pAddressLineEdit->setFixedWidth(381);
+    m_pAddressLineEdit->lineEdit()->setMaxLength(256);
+    m_pAddressLineEdit->lineEdit()->installEventFilter(this);
+    m_pAddressLineEdit->lineEdit()->setProperty("_d_dtk_lineedit_opacity", false);
+
+
     m_pGridLayout = new QGridLayout();
     m_pGridLayout->setContentsMargins(0, 0, 0, 0);
     m_pGridLayout->setHorizontalSpacing(20);
@@ -119,6 +146,15 @@ void AddModelDialog::initUI()
     m_pGridLayout->addWidget(m_pApiKeyLineEdit, 3, 1);
     m_pGridLayout->addWidget(apiSecretLabel, 4, 0);
     m_pGridLayout->addWidget(m_pApiSecretLineEdit, 4, 1);
+
+    m_pGridLayout->addWidget(apiModelName, 5, 0);
+    m_pGridLayout->addWidget(m_pCustomModelName, 5, 1);
+    m_pGridLayout->addWidget(apiAddr, 6, 0);
+    m_pGridLayout->addWidget(m_pCustomModelUrl, 6, 1);
+
+    m_pGridLayout->addWidget(requestAddressLabel, 7, 0);
+    m_pGridLayout->addWidget(m_pAddressLineEdit, 7, 1);
+
     QHBoxLayout *gridLayout = new QHBoxLayout();
     gridLayout->setContentsMargins(0, 0, 0, 0);
     gridLayout->addStretch();
@@ -218,6 +254,7 @@ void AddModelDialog::initUI()
     m_widgetSet.insert(apiKeyLabel);
     m_widgetSet.insert(apiSecretLabel);
     m_widgetSet.insert(accountNameLabel);
+    m_widgetSet.insert(requestAddressLabel);
 
     m_widgetSet.insert(m_pModelComboBox);
     m_widgetSet.insert(m_pAppIdLineEdit);
@@ -226,6 +263,7 @@ void AddModelDialog::initUI()
     m_widgetSet.insert(m_pNameLineEdit);
     m_widgetSet.insert(m_pCancelButton);
     m_widgetSet.insert(m_pSubmitButton);
+    m_widgetSet.insert(m_pAddressLineEdit);
 
     updateProxyLabel();
     onCompactModeChanged();
@@ -239,8 +277,15 @@ void AddModelDialog::initConnect()
     connect(m_pAppIdLineEdit, &DPasswordEdit::textChanged, this, &AddModelDialog::onUpdateSubmitButtonStatus);
     connect(m_pApiKeyLineEdit, &DPasswordEdit::textChanged, this, &AddModelDialog::onUpdateSubmitButtonStatus);
     connect(m_pApiSecretLineEdit, &DPasswordEdit::textChanged, this, &AddModelDialog::onUpdateSubmitButtonStatus);
+
+    connect(m_pCustomModelName, &DPasswordEdit::textChanged, this, &AddModelDialog::onUpdateSubmitButtonStatus);
+    connect(m_pCustomModelUrl, &DPasswordEdit::textChanged, this, &AddModelDialog::onUpdateSubmitButtonStatus);
+
     connect(m_pNameLineEdit, &DLineEdit::textChanged, this, &AddModelDialog::onNameTextChanged);
     connect(m_pNameLineEdit, &DLineEdit::alertChanged, this, &AddModelDialog::onNameAlertChanged);
+    connect(m_pAddressLineEdit, &DLineEdit::textChanged, this, &AddModelDialog::onAddressTextChanged);
+    connect(m_pAddressLineEdit, &DLineEdit::alertChanged, this, &AddModelDialog::onAddressAlertChanged);
+
     GUtils::connection(DGuiApplicationHelper::instance(), "sizeModeChanged(DGuiApplicationHelper::SizeMode)", this, "onCompactModeChanged()");
     connect(QApplication::instance(), SIGNAL(fontChanged(const QFont &)), this, SLOT(onUpdateSystemFont(const QFont &)));
     connect(m_pProxyLabel, &DLabel::linkActivated, this, []() {
@@ -282,6 +327,16 @@ void AddModelDialog::onNameAlertChanged(bool alert)
         m_pSubmitButton->setDisabled(true);
 }
 
+void AddModelDialog::onAddressTextChanged(const QString &)
+{
+    onUpdateSubmitButtonStatus();
+}
+
+void AddModelDialog::onAddressAlertChanged(bool alert)
+{
+
+}
+
 void AddModelDialog::onSubmitButtonClicked()
 {
     auto llmList = DbWrapper::localDbWrapper().queryLlmList(true);
@@ -293,6 +348,16 @@ void AddModelDialog::onSubmitButtonClicked()
     QString apiKey = m_pApiKeyLineEdit->text().trimmed();
     QString appId = m_pAppIdLineEdit->text().trimmed();
     QString apiSecret = m_pApiSecretLineEdit->text().trimmed();
+    QString requestAddress = m_pAddressLineEdit->text().trimmed();
+
+    bool isKol = false;
+    if (m_threeKeyComboxIndex.contains(model)) {
+        //解密成功才可能是kol账号
+        UosAccountEncoder encoder;
+        isKol = !std::get<0>(encoder.decrypt(appId)).isEmpty()
+                        && !std::get<0>(encoder.decrypt(apiKey)).isEmpty()
+                        && !std::get<0>(encoder.decrypt(apiSecret)).isEmpty();
+    }
 
     bool exist = false;
     for (auto llm : llmList) {
@@ -311,8 +376,13 @@ void AddModelDialog::onSubmitButtonClicked()
         // 讯飞、百度，判断key id secret重复
         if (m_threeKeyComboxIndex.contains(llm.model)
                 && llm.account.appId == appId && llm.account.apiKey == apiKey && llm.account.apiSecret == apiSecret) {
-            exist = true;
-            break;
+            if (isKol) { // kol账号不检查 requestAddress
+                exist = true;
+                break;
+            } else if (llm.url == requestAddress){
+                exist = true;
+                break;
+            }
         }
     }
 
@@ -324,77 +394,73 @@ void AddModelDialog::onSubmitButtonClicked()
     }
 
     //验证KOL账号
-    if (m_threeKeyComboxIndex.contains(model)) {
-        //解密成功才可能是kol账号，不成功走直接模型服务器验证逻辑
-        UosAccountEncoder encoder;
-        if (!std::get<0>(encoder.decrypt(appId)).isEmpty()
-                && !std::get<0>(encoder.decrypt(apiKey)).isEmpty()
-                && !std::get<0>(encoder.decrypt(apiSecret)).isEmpty()) {
-            UosFreeAccount freeAccount;
-            freeAccount.appid = appId;
-            freeAccount.appkey = apiKey;
-            freeAccount.appsecret = apiSecret;
-            int status;
+    if (isKol) {
+        UosFreeAccount freeAccount;
+        freeAccount.appid = appId;
+        freeAccount.appkey = apiKey;
+        freeAccount.appsecret = apiSecret;
+        int status;
 
-            setAllWidgetEnabled(false);
-            QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_KOL, freeAccount, status);
-            setAllWidgetEnabled(true);
+        setAllWidgetEnabled(false);
+        QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_KOL, freeAccount, status);
+        setAllWidgetEnabled(true);
 
-            if (QNetworkReply::NoError == error) {
-                LLMChatModel m = static_cast<LLMChatModel>(freeAccount.llmModel);
-                bool typeError = false; //模型错误，百度两种模型账号可以混用，但是百度和讯飞不能混用
-                // 选择正确的时候
-                if (m != model) {
-                    if (m == LLMChatModel::WXQF_ERNIE_Bot || m == LLMChatModel::WXQF_ERNIE_Bot_turbo || m == LLMChatModel::WXQF_ERNIE_Bot_4) {
-                        m = model;
-                    } else {
-                        typeError = true;
-                    }
+        if (QNetworkReply::NoError == error) {
+            LLMChatModel m = static_cast<LLMChatModel>(freeAccount.llmModel);
+            bool typeError = false; //模型错误，百度两种模型账号可以混用，但是百度和讯飞不能混用
+            // 选择正确的时候
+            if (m != model) {
+                if (m == LLMChatModel::WXQF_ERNIE_Bot) {
+                    m = model;
+                } else {
+                    typeError = true;
                 }
+            }
 
-                if (!typeError) {
-                    //是kol账号添加到界面去
-                    LLMServerProxy llm;
-                    llm.type = ModelType::FREE_KOL;
-                    llm.name = m_pNameLineEdit->text();
-                    llm.id = freeAccount.appkey + "_" + model;
-                    llm.model = m;
-                    AccountProxy accountProxy;
-                    SocketProxy socketProxy;
-                    socketProxy.socketProxyType = SocketProxyType::SYSTEM_PROXY;
-                    accountProxy.socketProxy = socketProxy;
-                    accountProxy.appId = freeAccount.appid;
-                    accountProxy.apiKey = freeAccount.appkey;
-                    accountProxy.apiSecret = freeAccount.appsecret;
-                    llm.account = accountProxy;
-                    m_data = llm;
+            if (!typeError) {
+                //是kol账号添加到界面去
+                LLMServerProxy llm;
+                llm.type = ModelType::FREE_KOL;
+                llm.name = m_pNameLineEdit->text();
+                llm.id = freeAccount.appkey + "_" + model;
+                llm.model = m;
+                llm.url = freeAccount.modelUrl;
+                AccountProxy accountProxy;
+                SocketProxy socketProxy;
+                socketProxy.socketProxyType = SocketProxyType::SYSTEM_PROXY;
+                accountProxy.socketProxy = socketProxy;
+                accountProxy.appId = freeAccount.appid;
+                accountProxy.apiKey = freeAccount.appkey;
+                accountProxy.apiSecret = freeAccount.appsecret;
+                llm.account = accountProxy;
+                m_data = llm;
 
-                    if (!DbWrapper::localDbWrapper().appendLlm(llm)) {
-                        CommonFailDialog dlg(this);
-                        dlg.setFailMsg(tr("Save failed, please try again later"));
-                        dlg.exec();
-                        return;
-                    }
-
-                    ServerWrapper::instance()->updateLLMAccount();
-                    this->accept();
+                if (!DbWrapper::localDbWrapper().appendLlm(llm)) {
+                    CommonFailDialog dlg(this);
+                    dlg.setFailMsg(tr("Save failed, please try again later"));
+                    dlg.exec();
                     return;
                 }
-            } else if (1 != status && 3 != status) {
-                //其他错误，但不是1和3，说明是网络或者服务器异常了
-                CommonFailDialog dlg(this);
-                dlg.setFailMsg(tr("Network exception, please try again later."));
-                dlg.exec();
+
+                ServerWrapper::instance()->updateLLMAccount();
+                this->accept();
                 return;
             }
-            // 其他场景，说明不是kol账号，走正常添加流程
+        } else if (1 != status && 3 != status) {
+            //其他错误，但不是1和3，说明是网络或者服务器异常了
+            CommonFailDialog dlg(this);
+            dlg.setFailMsg(tr("Unable to connect to the server, please check your network or try again later."));
+            dlg.exec();
+            return;
         }
+        // 其他场景，说明不是kol账号，走正常添加流程
     }
 
     LLMServerProxy serverProxy;
     serverProxy.name = m_pNameLineEdit->text();
     serverProxy.id = QUuid::createUuid().toString(QUuid::Id128);
     serverProxy.model = model;
+    serverProxy.url = requestAddress;
 
     AccountProxy accountProxy;
     SocketProxy socketProxy;
@@ -405,6 +471,11 @@ void AddModelDialog::onSubmitButtonClicked()
     accountProxy.apiSecret = apiSecret;
     serverProxy.account = accountProxy;
     serverProxy.type = ModelType::USER; //设置默认类型，防止未初始化就使用
+
+    if (model == LLMChatModel::OPENAI_API_COMPATIBLE) {
+        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_MODEL, m_pCustomModelName->text().trimmed());
+        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_URL, m_pCustomModelUrl->text().trimmed());
+    }
     m_data = serverProxy;
 
     setAllWidgetEnabled(false);
@@ -449,24 +520,68 @@ void AddModelDialog::onComboBoxIndexChanged(int index)
         m_pGridLayout->itemAtPosition(4, 1)->widget()->show();
     }
 
-    m_pAppIdLineEdit->clear();
-    m_pApiKeyLineEdit->clear();
-    m_pApiSecretLineEdit->clear();
-    m_pNameLineEdit->clear();
+    // custom model
+    if (model == OPENAI_API_COMPATIBLE) {
+        m_pGridLayout->itemAtPosition(5, 0)->widget()->show();
+        m_pGridLayout->itemAtPosition(5, 1)->widget()->show();
+        m_pGridLayout->itemAtPosition(6, 0)->widget()->show();
+        m_pGridLayout->itemAtPosition(6, 1)->widget()->show();
+        m_pApiKeyLineEdit->setPlaceholderText(tr("Optional"));
+    } else {
+        m_pGridLayout->itemAtPosition(5, 0)->widget()->hide();
+        m_pGridLayout->itemAtPosition(5, 1)->widget()->hide();
+        m_pGridLayout->itemAtPosition(6, 0)->widget()->hide();
+        m_pGridLayout->itemAtPosition(6, 1)->widget()->hide();
+        m_pApiKeyLineEdit->setPlaceholderText(tr("Required, please input"));
+    }
+
+    if (m_lastModelIndex >= 0) {
+        if (LLMServerProxy::llmManufacturer(m_modelMap.value(index)) !=
+                LLMServerProxy::llmManufacturer(m_modelMap.value(m_lastModelIndex))) {
+            m_pAppIdLineEdit->clear();
+            m_pApiKeyLineEdit->clear();
+            m_pApiSecretLineEdit->clear();
+            m_pNameLineEdit->clear();
+            m_pAddressLineEdit->clear();
+        }
+
+        m_pCustomModelName->clear();
+        m_pCustomModelUrl->clear();
+    }
+
+    if (model == LLMChatModel::WXQF_ERNIE_Bot || model == LLMChatModel::SPARKDESK) {
+        m_pGridLayout->itemAtPosition(7, 0)->widget()->show();
+        m_pGridLayout->itemAtPosition(7, 1)->widget()->show();
+    } else {
+        m_pGridLayout->itemAtPosition(7, 0)->widget()->hide();
+        m_pGridLayout->itemAtPosition(7, 1)->widget()->hide();
+    }
 
     onUpdateSubmitButtonStatus();
-    if (!isHidden()) adjustSize();
+    if (!isHidden()) {
+        m_pGridLayout->activate();
+        adjustSize();
+    }
+
+    m_lastModelIndex = index;
 }
 
 void AddModelDialog::onUpdateSubmitButtonStatus()
 {
-    LLMChatModel model = m_modelMap.value(m_pModelComboBox->currentIndex()) ;
+    LLMChatModel model = m_modelMap.value(m_pModelComboBox->currentIndex());
+    bool disable = true;
+
     if (!m_threeKeyComboxIndex.contains(model)) {
-        m_pSubmitButton->setDisabled(m_pApiKeyLineEdit->text().isEmpty() || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert());
+        disable = m_pApiKeyLineEdit->text().isEmpty() || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert();
     } else {
-        m_pSubmitButton->setDisabled(m_pAppIdLineEdit->text().isEmpty() || m_pApiKeyLineEdit->text().isEmpty() || m_pApiSecretLineEdit->text().isEmpty()
-                                     || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert());
+        disable = m_pAppIdLineEdit->text().isEmpty() || m_pApiKeyLineEdit->text().isEmpty() || m_pApiSecretLineEdit->text().isEmpty()
+                || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert() || m_pAddressLineEdit->text().isEmpty();
     }
+
+    if (model == LLMChatModel::OPENAI_API_COMPATIBLE)
+        disable = m_pNameLineEdit->text().isEmpty() || m_pCustomModelUrl->text().isEmpty();
+
+    m_pSubmitButton->setDisabled(disable);
 }
 
 bool AddModelDialog::event(QEvent *event)
@@ -483,6 +598,8 @@ bool AddModelDialog::event(QEvent *event)
             event->ignore();
             return true;
         }
+    } else if (event->type() == QEvent::PaletteChange) {
+        QMetaObject::invokeMethod(this, "updateProxyLabel", Qt::QueuedConnection);
     }
 
     return DAbstractDialog::event(event);
@@ -544,5 +661,8 @@ void AddModelDialog::resetDialog()
     m_pApiKeyLineEdit->clear();
     m_pApiSecretLineEdit->clear();
     m_pNameLineEdit->clear();
+    m_pAddressLineEdit->clear();
     m_pRaidersButton->resetUrl();
+    m_pCustomModelName->clear();
+    m_pCustomModelUrl->clear();
 }

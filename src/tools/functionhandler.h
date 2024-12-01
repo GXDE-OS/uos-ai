@@ -29,7 +29,7 @@ public:
      * @param fun
      * @return
      */
-    static QJsonArray functionCall(const QJsonObject &response, const QString &conversation);
+    static QJsonArray functionCall(const QJsonObject &response, const QString &conversation, QString *directReply = nullptr);
 
     /**
      * @brief chatAction
@@ -45,7 +45,7 @@ private:
      * @param fun
      * @return
      */
-    static QJsonObject functionProcess(const QJsonObject &appFunctions, QJsonObject fun);
+    static QJsonObject functionProcess(const QJsonObject &appFunctions, QJsonObject fun, QString *directReply);
 };
 
 #endif // FUNCTIONHANDLER_H

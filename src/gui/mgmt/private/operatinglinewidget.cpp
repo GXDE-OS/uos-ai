@@ -37,6 +37,12 @@ void OperatingLineWidget::initUI()
     DFontSizeManager::instance()->bind(m_pName, DFontSizeManager::T6, QFont::Medium);
     m_pName->setElideMode(Qt::ElideRight);
 
+    m_pFileSize = new DLabel;
+    m_pFileSize->setTextFormat(Qt::PlainText);
+    DFontSizeManager::instance()->bind(m_pFileSize, DFontSizeManager::T8, QFont::Normal);
+    m_pFileSize->setElideMode(Qt::ElideRight);
+    m_pFileSize->setForegroundRole(DPalette::TextTips);
+
     m_pEditbutton = new IconButtonEx(this);
     m_pEditbutton->setInterruptFilter(true);
 
@@ -46,11 +52,12 @@ void OperatingLineWidget::initUI()
     layout->addWidget(m_pDeleteButton);
     layout->addWidget(m_pModelButton);
     layout->addWidget(m_pName);
+    layout->addWidget(m_pFileSize);
     layout->addStretch();
     layout->addWidget(m_pEditbutton);
     setLayout(layout);
 
-    this->setFixedHeight(36);
+    setFixedSize(620, 36);
 }
 
 void OperatingLineWidget::initConnect()
@@ -117,4 +124,85 @@ bool OperatingLineWidget::eventFilter(QObject *obj, QEvent *event)
 void OperatingLineWidget::setInterruptFilter(bool interrupt)
 {
     m_bInterrupt = interrupt;
+}
+
+void OperatingLineWidget::setStatusIcon(const QString &iconName)
+{
+    m_pEditbutton->setStatusIcon(iconName);
+}
+
+void OperatingLineWidget::setTipsIcon(const QString &iconName)
+{
+    m_pEditbutton->setTipsIcon(iconName);
+}
+
+void OperatingLineWidget::setFileSize(qint64 bytes)
+{
+    m_fileSize = bytes;
+
+    QString str = "";
+
+    if (bytes < 1024)
+        str = QString("%1B").arg(bytes);
+    else if (bytes < 1024 * 1024)
+        str =  QString("%1KB").arg(bytes / 1024.0, 0, 'f', 1);
+    else if (bytes < 1024 * 1024 * 1024)
+        str =  QString("%1MB").arg(bytes / (1024.0 * 1024.0), 0, 'f', 1);
+    else
+        str =  QString("%1GB").arg(bytes / (1024.0 * 1024.0 * 1024.0), 0, 'f', 1);
+
+    m_pFileSize->setText(str);
+}
+
+void OperatingLineWidget::setSpinnerVisible(bool visible)
+{
+    m_pEditbutton->setSpinnerVisible(visible);
+}
+
+
+void OperatingLineWidget::setStatus(KnowledgeBaseProcessStatus status)
+{
+    m_pEditbutton->setStatus(status);
+
+    switch (status) {
+    case Processing: {
+        setEditText(tr("In data processing"));
+        setStatusIcon("");
+        setSpinnerVisible(true);
+        QString icon = QString(":/icons/deepin/builtin/%1/icons/tip.svg");
+        if (DGuiApplicationHelper::instance()->themeType() == DGuiApplicationHelper::LightType)
+            icon = icon.arg("light");
+        else
+            icon = icon.arg("dark");
+        setTipsIcon(icon);
+        break;
+    }
+    case ProcessingError: {
+        setEditText(tr("Data processing error"));
+        setStatusIcon(":/icons/deepin/builtin/warning.svg");
+        setSpinnerVisible(false);
+        QString icon = QString(":/icons/deepin/builtin/%1/icons/retry.svg");
+        if (DGuiApplicationHelper::instance()->themeType() == DGuiApplicationHelper::LightType)
+            icon = icon.arg("light");
+        else
+            icon = icon.arg("dark");
+        setTipsIcon(icon);
+        break;
+    }
+    case FileError:{
+        setEditText(tr("File error, unable to process, please delete."));
+        setStatusIcon(":/icons/deepin/builtin/warning.svg");
+        setSpinnerVisible(false);
+        setTipsIcon("");
+        break;
+    }
+    case Succeed:
+    default: {
+        setEditText(tr(""));
+        setStatusIcon("");
+        setTipsIcon("");
+        setSpinnerVisible(false);
+        break;
+    }
+    }
 }

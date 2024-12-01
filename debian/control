@@ -3,7 +3,7 @@ Section: non-free/copilot
 Priority: optional
 Maintainer: deepin <packages@deepin.com>
 Build-Depends:
- debhelper (>= 9), cmake, pkg-config, qtbase5-dev, libqt5websockets5-dev, qttools5-dev-tools, libdtkwidget-dev, libssl-dev,dde-dock-dev,libdframeworkdbus-dev, qtwebengine5-dev, qtmultimedia5-dev,libkf5globalaccel-dev
+ debhelper (>= 9), cmake, pkg-config, qtbase5-dev, libqt5websockets5-dev, qttools5-dev-tools, libdtkwidget-dev, libssl-dev,dde-dock-dev,libdframeworkdbus-dev, qtwebengine5-dev, qtmultimedia5-dev,libkf5globalaccel-dev,libgsettings-qt-dev,libatspi2.0-dev,libdtkcore-dev,libdtkcore5-bin
 Standards-Version: 4.5.0
 
 Package: uos-ai

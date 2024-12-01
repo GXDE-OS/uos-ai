@@ -17,6 +17,8 @@ public:
         CopilotTheme    = 3,    // 主题(Light、Mirage、Dark)
         CopilotUserExp  = 4,    // 小助手用户体验计划状态
         CopilotLocalSpeech = 5, // 本地语音模型
+        WindowDisplayMode = 6,  // 窗口模式
+        WindowSize = 7   // 窗口大小
     };
 
     ConfigTable();

@@ -20,6 +20,14 @@
             "appName": "Deepin Image Viewer",
             "appIcon": "deepin-image-viewer"
         },
+	    {
+            "appId": "draw",
+            "desktopFile": [
+                "deepin-draw.desktop"
+            ],
+            "appName": "Deepin Draw",
+            "appIcon": "deepin-draw"
+        },
         {
             "appId": "fileManager",
             "desktopFile": [
@@ -216,6 +224,134 @@
             "appName": "Deepin Album",
             "appIcon": "deepin-album"
         },
+        {
+            "appId": "serviceSupport",
+            "desktopFile": [
+                "uos-service-support.desktop"
+            ],
+            "appName": "Support",
+            "appIcon": "uos-service-support"
+        },
+        {
+            "appId": "introduction",
+            "desktopFile": [
+                "dde-introduction.desktop"
+            ],
+            "appName": "deepin Welcome",
+            "appIcon": "dde-introduction"
+        },
+        {
+            "appId": "deepinTooltips",
+            "desktopFile": [
+                "deepin-tooltips.desktop"
+            ],
+            "appName": "Get started with UOS",
+            "appIcon": "deepin-tooltips"
+        },
+        {
+            "appId": "recovery",
+            "desktopFile": [
+                "uos-recovery-gui.desktop"
+            ],
+            "appName": "Backup and Restore",
+            "appIcon": "uos-recovery"
+        },
+        {
+            "appId": "deepinLianliankan",
+            "desktopFile": [
+                "deepin-lianliankan.desktop"
+            ],
+            "appName": "LianLianKan",
+            "appIcon": "com.deepin.lianliankan"
+        },
+        {
+            "appId": "deepinScanner",
+            "desktopFile": [
+                "org.deepin.scanner.desktop"
+            ],
+            "appName": "Scan Assistant",
+            "appIcon": "org.deepin.scanner"
+        },
+        {
+            "appId": "deepinGomoku",
+            "desktopFile": [
+                "deepin-gomoku.desktop"
+            ],
+            "appName": "Gomoku",
+            "appIcon": "com.deepin.gomoku"
+        },
+        {
+            "appId": "downloader",
+            "desktopFile": [
+                "downloader.desktop"
+            ],
+            "appName": "Deepin Downloader",
+            "appIcon": "downloader"
+        },
+        {
+            "appId": "deepinCamera",
+            "desktopFile": [
+                "deepin-camera.desktop"
+            ],
+            "appName": "Deepin Camera",
+            "appIcon": "deepin-camera"
+        },
+        {
+            "appId": "deepinVoiceNote",
+            "desktopFile": [
+                "deepin-voice-note.desktop"
+            ],
+            "appName": "Voice Notes",
+            "appIcon": "deepin-voice-note"
+        },
+        {
+            "appId": "remoteAssistant",
+            "desktopFile": [
+                "uos-remote-assistance.desktop"
+            ],
+            "appName": "Remote Assistance",
+            "appIcon": "uos-remote-assistance"
+        },
+        {
+            "appId": "chineseimeSetting",
+            "desktopFile": [
+                "chineseime-setting.desktop"
+            ],
+            "appName": "Chinese IME Settings",
+            "appIcon": "/opt/apps/org.deepin.chineseime/entries/icons/chineseime-logo.png"
+        },
+        {
+            "appId": "cooperation",
+            "desktopFile": [
+                "dde-cooperation.desktop"
+            ],
+            "appName": "Deepin Cooperation",
+            "appIcon": "dde-cooperation"
+        },
+        {
+            "appId": "deepinDataTransfer",
+            "desktopFile": [
+                "deepin-data-transfer.desktop"
+            ],
+            "appName": "Deepin Data Transfer",
+            "appIcon": "deepin-data-transfer"
+        },
+        {
+            "appId": "mobileAssistant",
+            "desktopFile": [
+                "deepin-mobile-assistant.desktop"
+            ],
+            "appName": "deepin-mobile-assistant",
+            "appIcon": "/usr/share/icons/hicolor/scalable/apps/mobileassistant.svg"
+        },  
+        {
+            "appId": "remmina",
+            "desktopFile": [
+                "remmina-file.desktop"
+            ],
+            "appName": "Remmina Connect",
+            "appIcon": "org.remmina.Remmina"
+        },        
         {
             "appId": "wps",
             "desktopFile": [

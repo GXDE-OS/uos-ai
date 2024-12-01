@@ -1,0 +1,26 @@
+[
+    {
+        "iconName": "1-question-deepin",
+        "Question": "What is the default keyboard shortcut for taking screenshots in deepin?"
+    },
+    {
+        "iconName": "2-question-deepin",
+        "Question": "How to copy and paste content in the terminal?"
+    },
+    {
+        "iconName": "3-question-deepin",
+        "Question": "How to start the slideshow feature in the image viewer?"
+    },
+    {
+        "iconName": "4-question-deepin",
+        "Question": "In the music application, if a song is deleted from the playlist, will the local file be deleted as well?"
+    },
+    {
+        "iconName": "5-question-deepin",
+        "Question": "How to view the shortcut key preview interface in the cinema application?"
+    },
+    {
+        "iconName": "6-question-deepin",
+	 "Question": "How to implement fast-forward/rewind playback in the cinema application?"
+    }
+]

@@ -6,31 +6,19 @@
       '--scale1': animateScale1,
     }"
   >
-    <ChatTop
-      :historyLength="history.length"
-      v-model:playAudioID="playAudioID"
-      :recording="recording"
-      :showStop="showStop"
-      :videoStatus="videoStatus"
-      :localmodel="currentAccount.model === 1000"
-      @sigAudioASRError="sigAudioASRError"
-      @routeJump="handelModel"
-    />
+    <ChatTop/>
     <div class="" style="position: relative; flex: 1 1 0">
       <div class="logo">
-        <img src="../../../svg/logo.svg" class="" />
-        <div>UOS AI</div>
+        <img :src='currentAssistant.iconPrefix + currentAssistant.icon + "-110.svg"' class="" />
+        <div> {{ currentAssistant.displayname }} </div>
       </div>
       <div
         class="animate-box"
         @click="activeFun(true)"
         :class="{ disabledDig: playStatus }"
       >
-        <video
-          autoplay
-          loop
-          muted
-          class="video1"
+        <video class="video1" 
+          autoplay loop muted
           v-show="videoStatus == 1"
           @play="onPlay == 1 && !ChatWindowState"
           @pause="onPlay !== 1 || ChatWindowState"
@@ -52,11 +40,8 @@
             />
           </div>
         </div>
-        <video
-          autoplay
-          loop
-          muted
-          class="video2"
+        <video class="video2"
+          autoplay loop muted
           v-show="videoStatus == 2 || videoStatus == 7"
           @play="!ChatWindowState && (onPlay == 2 || onPlay == 7)"
           @pause="(onPlay !== 2 && onPlay !== 7) || ChatWindowState"
@@ -64,11 +49,8 @@
         >
           <source src="../../../assets/video/listen.webm" type="video/webm" />
         </video>
-        <video
-          autoplay
-          loop
-          muted
-          class="video3"
+        <video class="video3" 
+          autoplay loop muted
           v-show="videoStatus == 3"
           @play="onPlay == 3 && !ChatWindowState"
           @pause="onPlay !== 3 || ChatWindowState"
@@ -76,11 +58,8 @@
         >
           <source src="../../../assets/video/thinking.webm" type="video/webm" />
         </video>
-        <video
-          autoplay
-          loop
-          muted
-          class="video4"
+        <video class="video4"
+          autoplay loop muted 
           v-show="videoStatus == 4"
           @play="onPlay == 4 && !ChatWindowState"
           @pause="onPlay !== 4 || ChatWindowState"
@@ -88,10 +67,8 @@
         >
           <source src="../../../assets/video/play.webm" type="video/webm" />
         </video>
-        <video
-          autoplay
-          muted
-          class="video5"
+        <video class="video5"
+          autoplay muted
           v-show="
             videoStatus == 5 ||
             videoStatus == 6 ||
@@ -183,7 +160,7 @@
 </template>
 <script setup>
 import { useGlobalStore } from "@/store/global";
-const { chatQWeb, updateActivityColor, updateTheme } = useGlobalStore();
+const { chatQWeb, updateActivityColor, updateTheme, updateFont} = useGlobalStore();
 const store = useGlobalStore();
 import { Qrequest } from "@/utils";
 import _ from "lodash";
@@ -246,7 +223,7 @@ const statusLabel = computed(() => {
       ];
     case 5:
       return useGlobalStore().loadTranslations[
-        "Connection failed, please check the network."
+        "Unable to connect to the server, please check your network or try again later."
       ]; //播放按钮不可点击直到接收到信号满足激活条件
     case 6:
       return useGlobalStore().loadTranslations["Microphone not detected"]; //播放按钮不可点击直到接收到信号满足激活条件
@@ -274,6 +251,7 @@ const statusLabel = computed(() => {
 const history = ref([]);
 const accountList = ref([]);
 const currentAccount = ref("");
+const currentAssistant = ref('')
 const errorCon = ref("");
 const showStop = ref(false); //思考回答为true
 const isTipsVisible = ref(false); //tips是否显示
@@ -294,15 +272,26 @@ const handleMouseOut = () => {
 const initChat = async () => {
   const _history = await Qrequest(chatQWeb.getAiChatRecords, false);
   const resAccount = await Qrequest(chatQWeb.queryLLMAccountList);
-  const resID = await Qrequest(chatQWeb.currentLLMAccountId);
+  const resCurAccountID = await Qrequest(chatQWeb.currentLLMAccountId);
+  const resAssistant = await Qrequest(chatQWeb.queryAssistantList)
+  const resCurAssistantID = await Qrequest(chatQWeb.currentAssistantId)
   isAudioInput.value = await Qrequest(chatQWeb.isAudioInputAvailable);
   isAudioOutput.value = await Qrequest(chatQWeb.isAudioOutputAvailable);
   history.value = JSON.parse(_history);
   const isNetworkAvailable = await Qrequest(chatQWeb.isNetworkAvailable);
+  if (resAssistant) {
+        const list = JSON.parse(resAssistant);
+        list.forEach(element => {
+            if (element.id === resCurAssistantID) {
+                element.active = true
+                currentAssistant.value = element
+            }
+        });
+    }
   if (resAccount) {
     const list = JSON.parse(resAccount);
     list.forEach((element) => {
-      if (element.id === resID) {
+      if (element.id === resCurAccountID) {
         element.active = true;
         currentAccount.value = element;
       }
@@ -314,7 +303,7 @@ const initChat = async () => {
     return;
   }
   if (!isAudioInput.value) {
-    videoStatus.value = 6;
+    videoStatus.value = 6; 
   } else if (!isAudioOutput.value) {
     videoStatus.value = 10;
   } else {
@@ -322,6 +311,7 @@ const initChat = async () => {
     handleRecorder();
     startCounter();
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 //10s没有声音自动进入休眠
 let count = 0; // 计数器的初始值
@@ -339,6 +329,7 @@ const startCounter = () => {
       console.log("10count", count);
       sigAudioASRError();
       videoStatus.value = 1;
+      Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
     }
   }, 1000); // 每秒更新一次计数器的值
 };
@@ -357,6 +348,7 @@ const sigAudioCountDown = (res) => {
   countDown.value = res;
   if (countDown.value > 0) {
     videoStatus.value = 7;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
   } else {
     sigAudioASRError();
   }
@@ -378,7 +370,7 @@ const handleRecorder = async () => {
     await Qrequest(chatQWeb.stopPlayTextAudio);
     if (isAudioInput.value) {
       console.log("startRecorder-------");
-      await Qrequest(chatQWeb.startRecorder);
+      await Qrequest(chatQWeb.startRecorder, 1);
       recording.value = true;
       playAudioID.value = "";
     }
@@ -452,6 +444,7 @@ const sendQuestion = async () => {
   question.value = "";
   if (videoStatus.value !== 6 && videoStatus.value !== 10) {
     videoStatus.value = 3;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
   }
 };
 // 接受AI文本信息
@@ -475,7 +468,7 @@ const sigAiReplyStream = (type, value, status) => {
     const _question = history.value[history.value.length - 2].content;
     const { type, content } = _.last(_.last(history.value).anwsers);
     if (status < 0) {
-      if (status === -9002 || status === -9000 || status === -9001) {
+      if (status === -9002 || status === -9000 || status === -9001 || status === -9003 || status === -9004) {
         errorCon.value = content;
         videoStatus.value = 8;
       } else {
@@ -498,6 +491,7 @@ const sigAiReplyStream = (type, value, status) => {
       displayname ? displayname : ""
     );
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 /**激活静置状态切换 */
 const activeFun = (res) => {
@@ -526,6 +520,7 @@ const activeFun = (res) => {
     videoStatus.value = 2;
     recording.value = false;
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 /**数字形象自然语音状态切换 */
 const handelModel = () => {
@@ -558,6 +553,7 @@ const sigAudioInputDevChange = (res) => {
   } else {
     videoStatus.value = 1;
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 /**监听输出设备状态 */
 const sigAudioOutputDevChanged = async (res) => {
@@ -578,6 +574,7 @@ const sigAudioOutputDevChanged = async (res) => {
   } else {
     videoStatus.value = 1;
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 /**快捷键开启录音 */
 // const sigAudioRecShortcutPressed = () => {
@@ -606,6 +603,7 @@ const sigAudioASRError = async (err, text) => {
   }
   if (err && videoStatus.value !== 6) {
     videoStatus.value = 9;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
     errorCon.value = text;
   }
 };
@@ -622,6 +620,7 @@ const sigPlayTTSFinished = (res) => {
     videoStatus.value !== 9
   ) {
     videoStatus.value = 1;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
   }
   showStop.value = false;
 };
@@ -660,6 +659,7 @@ const llmAccountLstChanged = (id, list) => {
     videoStatus.value !== 6
   ) {
     videoStatus.value = 1;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
   }
   if (!id) currentAccount.value = {};
   if (index > -1) {
@@ -699,6 +699,7 @@ const sigNetStateChanged = (res) => {
   } else {
     videoStatus.value = 1;
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 // 接受AI图片信息
 const sigText2PicFinish = (id, paths) => {
@@ -729,6 +730,7 @@ const sigText2PicFinish = (id, paths) => {
     );
     if (videoStatus.value !== 6 && videoStatus.value !== 10) {
       videoStatus.value = 4;
+      Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
     }
   }
 };
@@ -780,14 +782,19 @@ watch(
 );
 /** */
 const sigChatConversationType = (id, type) => {
+  if (_.last(history.value) === undefined)
+    return;
+
   _.last(_.last(history.value).anwsers).type = type;
 };
 /** 窗口关闭*/
 const sigWebchat2BeHiden = () => {
+  // console.log("sigWebchat2BeHiden...... videoStatus: ", videoStatus);
   ChatWindowState.value = true;
   if (videoStatus.value == 2) {
     sigAudioASRError();
     videoStatus.value = 1;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
   }
   if (videoStatus.value == 4) {
     stopPlayTextAudio();
@@ -795,6 +802,7 @@ const sigWebchat2BeHiden = () => {
 };
 /** 窗口打开*/
 const sigWebchat2BeShowed = async () => {
+  // console.log("sigWebchat2BeShowed...... videoStatus: ", videoStatus);
   ChatWindowState.value = false;
   if (videoStatus.value == 1) {
     videoStatus.value = 2;
@@ -803,16 +811,24 @@ const sigWebchat2BeShowed = async () => {
     sigPlayTTSFinished();
     videoStatus.value = 2;
   }
+  Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
 };
 const sigThemeChanged = (res) => {
   updateTheme(res);
+};
+const sigFontChanged = (family, pixelSize) => {
+  updateFont(family, pixelSize);
 };
 /** ctrl+super+c激活*/
 const sigDigitalModeActive = () => {
   if (videoStatus.value == 1) {
     videoStatus.value = 2;
+    Qrequest(chatQWeb.updateVoiceConversationStatus, videoStatus.value);
   }
 };
+const sigChatModeActive = () => {
+  handelModel();
+}
 // 活动色改变
 const sigActiveColorChanged = (res) => updateActivityColor(res);
 
@@ -845,8 +861,10 @@ const responseAIFunObj = {
   sigWebchat2BeHiden,
   sigWebchat2BeShowed,
   sigThemeChanged,
+  sigFontChanged,
   llmAccountLstChanged,
   sigDigitalModeActive,
+  sigChatModeActive,
   sigAudioOutputDevChanged,
   sigWebchatModalityChanged
 };
@@ -896,20 +914,22 @@ video ::selection {
   width: 100vw;
   overflow: hidden;
   color: var(--uosai-color-shortcut);
-  font-family: "SourceHanSansSC-Medium";
-  font-size: 16px;
+  font-size: 1.14rem;
   .logo {
-    margin: 5px auto 0;
+    width: 100%;
+    height: 155px;
     text-align: center;
-    width: 110px;
+    margin-top: 35px;
     img {
-      width: 100%;
+      width: 96px;
+      height: 96px;
     }
     div {
-      font-size: 20px;
-      font-family: "Source Han Sans SC";
-      font-weight: 700;
-      margin-top: 7px;
+      font-size: 1.42rem;
+      font-weight: 600;
+      font-style: normal;
+      margin-top: 10px;
+      color: var(--uosai-color-title);
     }
   }
   .close {
@@ -1003,13 +1023,15 @@ video ::selection {
     margin: 0 auto 6.12vh;
     left: 0;
     text-align: center;
-    font-family: "Source Han Sans SC";
-    font-size: 20px;
+    font-size: 1.42rem;
     z-index: 10;
     .pr {
       position: relative;
     }
     .active-con {
+      width: calc(100% - 60px);
+      margin-left: 30px;
+
       .dian {
         letter-spacing: 1.5px;
         margin-left: 0px;
@@ -1021,10 +1043,10 @@ video ::selection {
         line-height: 25px;
         width: 80vw;
         margin: auto;
-        font-size: 14px;
+        font-size: 1rem;
       }
       .go-config {
-        font-size: 14px;
+        font-size: 1rem;
         color: var(--activityColor);
         cursor: pointer;
         text-decoration: none;
@@ -1035,7 +1057,7 @@ video ::selection {
         margin-right: 8px;
       }
       .fz-14 {
-        font-size: 14px;
+        font-size: 1rem;
         margin-top: 5px;
       }
     }

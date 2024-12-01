@@ -4,95 +4,115 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="37"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="41"/>
         <source>Add model</source>
         <translation>添加模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="39"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="43"/>
         <source>LLM</source>
         <translation>模型类型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="72"/>
         <source>APPID</source>
         <translation>APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="78"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="86"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="94"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="77"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="539"/>
         <source>Required, please input</source>
         <translation>必填，请输入</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="81"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="80"/>
         <source>APIKey</source>
         <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="89"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="88"/>
         <source>APISecret</source>
         <translation>APISecret</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="96"/>
         <source>Account</source>
         <translation>账号名称</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="101"/>
         <source>Required, to distinguish multiple models</source>
         <translation>必填，便于区分多个模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="532"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="533"/>
+        <source>Optional</source>
+        <translation>选填</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="456"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="651"/>
         <source>For proxy settings, please go to system proxy settings</source>
         <translation>代理设置请去系统代理设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="535"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="654"/>
         <source>Go to settings</source>
         <translation>去设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="181"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="217"/>
         <source>Cancel</source>
         <translation>取 消</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="183"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="107"/>
+        <source>Model Name</source>
+        <translation>模型名</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="115"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
+        <source>Domain</source>
+        <translation>请求地址</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="219"/>
         <source>Confirm</source>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="423"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="444"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="498"/>
         <source>Save failed, please try again later</source>
         <translation>保存失败，请稍后重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="386"/>
-        <source>Network exception, please try again later.</source>
-        <translation>网络异常，请稍后重试。</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="504"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="623"/>
         <source>The account name already exists, please change it</source>
         <translation>账户名称已存在，请更改</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="272"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="321"/>
         <source>No more than 20 characters</source>
         <translation>不能超过20个字符</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="164"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
         <translation>为测试模型是否可用，系统会发送测试信息给大模型，会消耗少量token。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="321"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="395"/>
         <source>This LLM already exists, please do not add it again.</source>
         <translation>模型已经存在，请勿重复添加。</translation>
     </message>
@@ -108,12 +128,12 @@
 <context>
     <name>AiToastMessage</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="73"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="77"/>
         <source>Chat history cleared</source>
         <translation>历史聊天已清除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="74"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="78"/>
         <source>Copied successfully</source>
         <translation>复制成功</translation>
     </message>
@@ -125,13 +145,18 @@
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
+    <message>
+        <location filename="../src/application.cpp" line="36"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation>UOS AI是一款桌面智能助手，是您的私人助理！您可以用文字或语音与它交流，它可以帮助回答问题、提供有用的信息、也可根据您的描述生成图片等。</translation>
+    </message>
 </context>
 <context>
     <name>AudioControler</name>
     <message>
         <location filename="../src/audio/audiocontroler.cpp" line="144"/>
-        <source>Connection failed, please check the network.</source>
-        <translation>连接失败，请检查网络。</translation>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
     </message>
 </context>
 <context>
@@ -142,30 +167,55 @@
         <translation>function解析失败</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="177"/>
+        <location filename="../src/tools/functionhandler.cpp" line="179"/>
         <source>Application file does not exist</source>
         <translation>应用文件不存在</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="194"/>
+        <location filename="../src/tools/functionhandler.cpp" line="201"/>
         <source>Started successfully</source>
         <translation>启动成功</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="196"/>
+        <location filename="../src/tools/functionhandler.cpp" line="203"/>
         <source>Startup failed</source>
         <translation>启动失败</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="200"/>
-        <source>The execution output content is </source>
+        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <source> The execution output content is </source>
         <translation>执行输出内容是</translation>
     </message>
 </context>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="425"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="172"/>
+        <source>Mode</source>
+        <translation>模式</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="174"/>
+        <source>Window Mode</source>
+        <translation>窗口模式</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="179"/>
+        <source>Sidebar Mode</source>
+        <translation>侧边栏模式</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="184"/>
+        <source>Settings</source>
+        <translation>设置</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="202"/>
+        <source>Voice conversation</source>
+        <translation>语音对话</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="736"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AI是一款桌面智能助手，是您的私人助理！您可以用文字或语音与它交流，它可以帮助回答问题、提供有用的信息、也可根据您的描述生成图片等。</translation>
     </message>
@@ -208,17 +258,14 @@
     </message>
 </context>
 <context>
-    <name>CopilotApplication</name>
-    <message>
-        <location filename="../src/application.cpp" line="36"/>
-        <source>An intelligent UOS AI</source>
-        <translation>一个智能好用的AI小助手</translation>
-    </message>
-</context>
-<context>
     <name>EAiExecutor</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="598"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="118"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
+        <translation>请配置知识库。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="831"/>
         <source>Export Image As</source>
         <translation>将图像导出为</translation>
     </message>
@@ -226,211 +273,284 @@
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="313"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="375"/>
         <source>Go to configuration</source>
         <translation>去配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="314"/>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="324"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="376"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="386"/>
         <source>No account</source>
         <translation>无账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="315"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="377"/>
         <source>Input question</source>
         <translation>输入问题</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="316"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="378"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AI生成的内容仅供参考，请注意甄别信息准确性。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="317"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="379"/>
         <source>Welcome to UOS AI</source>
         <translation>欢迎使用UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="318"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="380"/>
         <source>Here are some of the things UOS AI can help you do</source>
         <translation>下面是UOS AI可以帮助您做的一些事</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="319"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="381"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="320"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="382"/>
         <source>Regenerate</source>
         <translation>重新生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="321"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="383"/>
         <source>Clear conversation history</source>
         <translation>清除对话记录</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="322"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="384"/>
         <source>Please connect the microphone and try again</source>
         <translation>请接入麦克风后再试</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="323"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="385"/>
         <source>Chat history cleared</source>
         <translation>历史聊天已清除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="325"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="387"/>
         <source>Click to start/stop recording</source>
         <translation>点击可开始/停止录音</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="326"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="388"/>
         <source>Listening</source>
         <translation>聆听中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="327"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="389"/>
         <source>Sleeping</source>
         <translation>休眠中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="328"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="390"/>
         <source>Microphone not detected</source>
         <translation>未检测到麦克风</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="329"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="391"/>
         <source>Connection failed, click to try again</source>
         <translation>连接失败，点击可重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="330"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="392"/>
         <source>Click on the animation or Ctrl+Super+C to activate</source>
         <translation>点击动画或Ctrl+Super+C可激活</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="331"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="393"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
         <translation>语音输入暂不可用，请检查网络！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="332"/>
-        <source>Connection failed, please check the network.</source>
-        <translation>连接失败，请检查网络。</translation>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="394"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="333"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="395"/>
         <source>Voice conversation</source>
         <translation>语音对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="334"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="396"/>
         <source>Click the animation or press Enter to send</source>
         <translation>点击动画或回车可发送</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="335"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="397"/>
         <source>Stop recording after %1 seconds</source>
         <translation>%1s后停止录音</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="336"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="398"/>
         <source>Thinking</source>
         <translation>思考中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="337"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="399"/>
         <source>Click animation to interrupt</source>
         <translation>点击动画 可打断</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="338"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="400"/>
         <source>Answering</source>
         <translation>回答中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="339"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="401"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>您的免费账号额度已用完，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="340"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="402"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>您的免费账号已过期，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="341"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="403"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI需要配置AI模型账号才可使用，请先配置模型账号。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="342"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="404"/>
         <source>Activate</source>
         <translation>激活</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="343"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="405"/>
         <source>Voice input</source>
         <translation>语音输入</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="344"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="406"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
         <translation>语音播报暂不可用，请检查网络！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="345"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="407"/>
         <source>Turn off voice conversation</source>
         <translation>关闭语音对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="346"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="408"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
         <translation>图片已生成，请切换到聊天界面查看</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="347"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="409"/>
         <source>No account, please configure an account</source>
         <translation>无账号，请配置账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="348"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="410"/>
         <source>Answer each question up to 5 times</source>
         <translation>每个问题最多回答5次</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="349"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="411"/>
         <source>Copied successfully</source>
         <translation>复制成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="350"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="412"/>
         <source>Sound output device not detected</source>
         <translation>未检测到声音输出设备</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="351"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="413"/>
         <source>The sound output device is not detected, please check and try again!</source>
         <translation>未检测到声音输出设备，请检查后重试！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="352"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="414"/>
         <source>Settings</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="353"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="415"/>
         <source>About</source>
         <translation>关于</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="416"/>
+        <source>Mode</source>
+        <translation>模式</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="417"/>
+        <source>Window Mode</source>
+        <translation>窗口模式</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="418"/>
+        <source>Sidebar Mode</source>
+        <translation>侧边栏模式</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="419"/>
+        <source>Assistant List</source>
+        <translation>助手列表</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="420"/>
+        <source>UOS System Assistant</source>
+        <translation>UOS 玩机助手</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="421"/>
+        <source>Deepin System Assistant</source>
+        <translation>Deepin 玩机助手</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation>个人知识助手</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="423"/>
+        <source>Please configure the knowledge base</source>
+        <translation>请配置知识库</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="424"/>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>使用【个人知识助手】前，需要配置知识库，配置好知识库后，AI将根据您在知识库中配置的内容，回答问题或做内容生成。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="425"/>
+        <source>Please configure the large model</source>
+        <translation>请配置大模型</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="426"/>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>个人知识助手需配置大模型后才可使用。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="427"/>
+        <source>To configure</source>
+        <translation>去配置</translation>
+    </message>
+</context>
+<context>
+    <name>EChatButton</name>
+    <message>
+        <location filename="../src/gui/chat/private/echatbutton.cpp" line="145"/>
+        <source>Turn off voice conversation</source>
+        <translation>关闭语音对话</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/echatbutton.cpp" line="147"/>
+        <source>Voice conversation</source>
+        <translation>语音对话</translation>
     </message>
 </context>
 <context>
     <name>FunctionsParser</name>
     <message>
-        <location filename="../src/tools/functionsparser.cpp" line="204"/>
+        <location filename="../src/tools/functionsparser.cpp" line="244"/>
         <source>Function not available</source>
         <translation>功能不可用</translation>
     </message>
@@ -531,9 +651,102 @@
     </message>
 </context>
 <context>
+    <name>IconButtonEx</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="199"/>
+        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
+        <translation>新添加文件需要预处理后才能使用，数据处理过程中，可能会消耗较多计算和储存资源。删除数据后将停止数据处理。</translation>
+    </message>
+</context>
+<context>
+    <name>KnowledgeBaseItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="53"/>
+        <source>Are you sure you want to delete this knowledge base file?</source>
+        <translation>确定要删除此知识库文件吗？</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="54"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation>取 消</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="55"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation>确 定</translation>
+    </message>
+</context>
+<context>
+    <name>KnowledgeBaseListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="60"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="150"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="248"/>
+        <source>Delete</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="64"/>
+        <source>Add</source>
+        <translation>添加</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="72"/>
+        <source>Knowledge Base Management</source>
+        <translation>知识库管理</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="100"/>
+        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
+        <translation>此处可定义【个人知识助理】的知识库，【个人知识助理】将根据下面添加的文件来回答问题。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="150"/>
+        <source>Done</source>
+        <translation>完成</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="163"/>
+        <source>None</source>
+        <translation>暂无</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="268"/>
+        <source>File already exist</source>
+        <translation>文件已存在</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="269"/>
+        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
+        <translation>%1文件已存在，无法再添加，请修改文件名或删除已存在的文件后再添加。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="287"/>
+        <source>All files</source>
+        <translation>所有文件</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="323"/>
+        <source>Not enough disk space</source>
+        <translation>硬盘空间不足</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="324"/>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>为储存新增的文件，至少需要%1的磁盘空间，当前剩余空间为%2，请清理出足够硬盘空间后再试。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="496"/>
+        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
+        <translation>该功能对硬件资源要求较高，参考对标配置为：CPU intel 11代i7以上；内存16GB以上；有N卡，且10系以上最佳。如果配置过低，可能出现卡顿、回答结果不准等问题。</translation>
+    </message>
+</context>
+<context>
     <name>LLM</name>
     <message>
-        <location filename="../src/llm/common/llm.cpp" line="63"/>
+        <location filename="../src/llm/common/llm.cpp" line="68"/>
         <source>Vincent picture service is not supported</source>
         <translation>文生图服务不支持</translation>
     </message>
@@ -541,62 +754,77 @@
 <context>
     <name>LLMServerProxy</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="195"/>
+        <location filename="../src/wrapper/serverdefs.h" line="241"/>
         <source>GPT3.5（OpenAI）</source>
         <translation>GPT3.5（OpenAI）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="198"/>
+        <location filename="../src/wrapper/serverdefs.h" line="244"/>
         <source>GPT4（OpenAI）</source>
         <translation>GPT4（OpenAI）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="200"/>
+        <location filename="../src/wrapper/serverdefs.h" line="246"/>
         <source>360智脑</source>
         <translation>360智脑（360）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="202"/>
+        <location filename="../src/wrapper/serverdefs.h" line="251"/>
         <source>星火大模型1.5（讯飞）</source>
         <translation>星火大模型1.5（讯飞）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="204"/>
+        <location filename="../src/wrapper/serverdefs.h" line="254"/>
         <source>星火大模型2.0（讯飞）</source>
         <translation>星火大模型2.0（讯飞）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="206"/>
+        <location filename="../src/wrapper/serverdefs.h" line="256"/>
         <source>星火大模型3.0（讯飞）</source>
         <translation>星火大模型3.0（讯飞）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="208"/>
-        <source>ERNIE-Bot</source>
-        <translation>ERNIE-Bot（百度千帆）</translation>
+        <location filename="../src/wrapper/serverdefs.h" line="249"/>
+        <source>讯飞星火</source>
+        <translation>讯飞星火</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="210"/>
+        <location filename="../src/wrapper/serverdefs.h" line="261"/>
+        <source>ERNIE 3.5</source>
+        <translation>ERNIE 3.5（百度千帆）</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="264"/>
         <source>ERNIE-Bot-turbo</source>
         <translation>ERNIE-Bot-turbo（百度千帆）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="212"/>
+        <location filename="../src/wrapper/serverdefs.h" line="266"/>
         <source>ERNIE-Bot-4</source>
         <translation>ERNIE-Bot-4（百度千帆）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="216"/>
+        <location filename="../src/wrapper/serverdefs.h" line="259"/>
+        <source>百度千帆</source>
+        <translation>百度千帆</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="270"/>
         <source>ChatGLM-turbo（智谱）</source>
         <translation>ChatGLM-turbo（智谱）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="218"/>
+        <location filename="../src/wrapper/serverdefs.h" line="272"/>
         <source>TextToImage(Local)</source>
         <translation>文生图模型（本地）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="221"/>
+        <location filename="../src/wrapper/serverdefs.h" line="274"/>
+        <source>Custom</source>
+        <translation>自定义</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="277"/>
         <source>unknown model</source>
         <translation>未知模型</translation>
     </message>
@@ -604,7 +832,7 @@
 <context>
     <name>LLMUtils</name>
     <message>
-        <location filename="../src/llm/common/llmutils.cpp" line="85"/>
+        <location filename="../src/llm/common/llmutils.cpp" line="88"/>
         <source>Your system environment is Linux, and the user home path is</source>
         <translation>你的系统环境是Linux,用户Home路径是</translation>
     </message>
@@ -648,33 +876,33 @@
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="144"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="148"/>
         <source>Successfully connected</source>
         <translation>成功接入</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="227"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="237"/>
         <source>User Agreement</source>
         <translation>使用协议</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="234"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="244"/>
         <source>UOS AI User Agreement</source>
         <translation>UOS AI 用户使用协议</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="235"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="245"/>
         <source>Read and agreed</source>
         <translation>已阅读并同意</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="262"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="269"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="272"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="279"/>
         <source>Proxy Settings</source>
         <translation>代理设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="270"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="280"/>
         <source>Go to settings</source>
         <translation>去设置</translation>
     </message>
@@ -757,91 +985,205 @@
         <translation>账号名称</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="70"/>
+        <source>Model Name</source>
+        <translation>模型名</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="80"/>
+        <source>API Address</source>
+        <translation>API地址</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="93"/>
         <source>Required, to distinguish multiple models</source>
         <translation>必填，便于区分多个模型</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="97"/>
+        <source>Domain</source>
+        <translation>请求地址</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="133"/>
         <source>Cancel</source>
         <translation>取 消</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="135"/>
         <source>Confirm</source>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="215"/>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="284"/>
         <source>No more than 20 characters</source>
         <translation>不能超过20个字符</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="252"/>
+        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="321"/>
         <source>The account name already exists, please change it</source>
         <translation>账户名称已存在，请更改</translation>
     </message>
 </context>
 <context>
-    <name>ServerCodeTranslation</name>
+    <name>OperatingLineWidget</name>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="12"/>
-        <source>Connection exception, please try again later.</source>
-        <translation>连接异常，请稍后重试。</translation>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="169"/>
+        <source>In data processing</source>
+        <translation>数据处理中</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="15"/>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="181"/>
+        <source>Data processing error</source>
+        <translation>数据处理出错</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="193"/>
+        <source>File error, unable to process, please delete.</source>
+        <translation>文件错误，无法处理，请删除。</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="424"/>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="427"/>
+        <source>UOS System Assistant</source>
+        <translation>UOS玩机助手</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="430"/>
+        <source>Deepin System Assistant</source>
+        <translation>Deepin玩机助手</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="433"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation>个人知识助手</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="446"/>
+        <source>Welcome to UOS AI, the comprehensive assistant of UOS AI system.</source>
+        <translation>欢迎使用UOS AI，UOS系统的综合助手。</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="449"/>
+        <source>UOS System Assistant, answers questions related to using the UOS operating system.</source>
+        <translation>UOS玩机助手，为您解答UOS操作系统使用相关的问题。</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="452"/>
+        <source>Deepin System Assistant, answering questions related to using the Deepin operating system.</source>
+        <translation>Deepin玩机助手，为您解答Deepin操作系统使用相关的问题。</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/serverdefs.h" line="455"/>
+        <source>A personal knowledge assistant who can answer questions and generate content based on your personal file data. You can add or delete knowledge on the Settings - Knowledge Base Management page.</source>
+        <translation>私人知识助理，可以基于您的个人文件数据进行问答和内容生成。您可在设置-知识管理页面增删知识。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="309"/>
+        <source>Insufficient knowledge base capacity</source>
+        <translation>知识库容量不足</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
+        <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
+        <translation>知识库总容量为%1M，剩余%2，本次添加文件总量为%3。无法完成添加到知识库操作。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="272"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="327"/>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>确 定</translation>
+    </message>
+</context>
+<context>
+    <name>ServerCodeTranslation</name>
+    <message>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="14"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
+    </message>
+    <message>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="17"/>
         <source>Connection failed, please check the fill in information.</source>
         <translation>连接失败，请检查填写信息。</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="18"/>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="20"/>
         <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
         <translation>抱歉，根据相关法律法规和政策，结果暂不予显示。</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="21"/>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="23"/>
         <source>Operation canceled.</source>
         <translation>操作取消。</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="24"/>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="26"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>您的免费账号已过期，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="27"/>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="29"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>您的免费账号额度已用完，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="30"/>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="32"/>
+        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
+        <translation>您的免费账号的文本生成额度已用完，请配置自己的模型账号以继续使用。</translation>
+    </message>
+    <message>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="35"/>
+        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
+        <translation>您的免费账号的文生图额度已用完，请配置自己的模型账号以继续使用。</translation>
+    </message>
+    <message>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="38"/>
         <source>Invalid input device</source>
         <translation>输入设备无效</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="33"/>
+        <location filename="../src/llm/common/servercodetranslation.cpp" line="41"/>
         <source>Invalid output device</source>
         <translation>输出设备无效</translation>
     </message>
 </context>
 <context>
-    <name>ServerWrapper</name>
+    <name>Session</name>
     <message>
-        <location filename="../src/wrapper/serverwrapper.cpp" line="95"/>
-        <source>Connection failed, please check the network.</source>
-        <translation>连接失败，请检查网络。</translation>
+        <location filename="../src/wrapper/session.cpp" line="140"/>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/session.cpp" line="142"/>
+        <source>UOS System Assistant</source>
+        <translation>UOS玩机助手</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/session.cpp" line="144"/>
+        <source>Deepin System Assistant</source>
+        <translation>Deepin玩机助手</translation>
+    </message>
+    <message>
+        <location filename="../src/wrapper/session.cpp" line="146"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation>个人知识助手</translation>
     </message>
 </context>
 <context>
     <name>SessionPrivate</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="59"/>
-        <source>Connection failed, please check the network.</source>
-        <translation>连接失败，请检查网络。</translation>
-    </message>
-    <message>
-        <location filename="../src/wrapper/session_p.cpp" line="214"/>
+        <location filename="../src/wrapper/session_p.cpp" line="232"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI需要配置AI模型账号才可使用，请先配置模型账号。</translation>
     </message>
@@ -849,7 +1191,7 @@
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="67"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="68"/>
         <source>Feedback</source>
         <translation>反馈</translation>
     </message>
@@ -943,31 +1285,82 @@
     </message>
 </context>
 <context>
+    <name>TtsCompositeWidget</name>
+    <message>
+        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
+        <source>The text you have selected has exceeded the 5000 character limit.</source>
+        <translation>您选择的文本超出了5000个字符的限制</translation>
+    </message>
+</context>
+<context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="413"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="741"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>我还没有实现此功能。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="417"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="745"/>
         <source>service is not available!</source>
         <translation>服务不可用!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="422"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="750"/>
         <source>Invalid parameter!</source>
         <translation>无效的参数!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="427"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="755"/>
         <source>This app cannot be found!</source>
         <translation>找不到此应用！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="432"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="760"/>
         <source>Failed to start application!</source>
         <translation>启动应用失败!</translation>
+    </message>
+</context>
+<context>
+    <name>UOSAbilityManager</name>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="569"/>
+        <source>Your system memory is %0.</source>
+        <translation>您的系统内存为%0。</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="590"/>
+        <source>The language setting interface has been opened. Please set it in this interface.</source>
+        <translation>已打开语言设置界面，请在该界面设置。</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="626"/>
+        <source>The lock screen has been opened for you</source>
+        <translation>已为您打开锁屏界面</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="642"/>
+        <source>Screen shotting or recording has been completed</source>
+        <translation>截图录屏已完成！</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="660"/>
+        <source>Only one screen, can&apos;t switch screen mode.</source>
+        <translation>当前仅一个屏幕，不可切换投屏模式。</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="666"/>
+        <source>It is the same as the current display mode. Please try again.</source>
+        <translation>投屏模式设置重复，请重试。</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="711"/>
+        <source>Only one screen, can&apos;t switch screen.</source>
+        <translation>当前仅一个屏幕，不可切换屏幕。</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="734"/>
+        <source>Your command has been issued.</source>
+        <translation>您的命令已执行。</translation>
     </message>
 </context>
 <context>
@@ -1012,15 +1405,15 @@
         <translation>调用的API不存在，请检查请求URL后重新尝试，一般为URL中有非英文字符，如\&quot;-\，可手动输入重试。</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation>当前访问人数过多，请稍后再试。</translation>
-    </message>
-    <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="13"/>
         <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
         <translation>无接口调用权限，创建应用时未勾选相关千帆接口</translation>
+    </message>
+    <message>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
+        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
+        <translation>模型调用错误，模型请求达到上限，或模型已下线，建议：重新添加模型，或联系大模型服务提供厂商的客服，以解决该问题。</translation>
     </message>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="14"/>
@@ -1186,82 +1579,87 @@
 <context>
     <name>WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="44"/>
         <source>Welcome to UOS AI</source>
         <translation>欢迎使用UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="49"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="50"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
         <translation>UOS AI，您的智能助手，旨在提高您的工作效率，享受高品质的工作体验。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="92"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="93"/>
         <source>Get a free trial account</source>
         <translation>免费领取试用账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="109"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="110"/>
         <source>Configure the model account</source>
         <translation>配置模型账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="159"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="161"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="115"/>
+        <source>Start using</source>
+        <translation>开始使用</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="167"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="169"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
         <translation>我确认我已满十八周岁；我知悉并同意&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;《UOS AI 用户使用协议》&lt;/a&gt;，且我通过本应用发送与接收的内容均是直接与大模型服务商进行数据交换，与统信软件无关。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="163"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="171"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
         <translation>领取账号，则表示知晓并同意活动条款，&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;活动详情&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="195"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="204"/>
         <source>Trial Account</source>
         <translation>试用账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="206"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="215"/>
         <source>Save failed, please try again later</source>
         <translation>保存失败，请稍后重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="215"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="224"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
         <translation>试用账号使用次数和使用时长有限，请及时配置个人专属模型账号！详见活动详情。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="216"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="225"/>
         <source>Start trial</source>
         <comment>button</comment>
         <translation>开始试用</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="222"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>The free account activity ends.</source>
         <translation>免费账号活动结束。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="230"/>
-        <source>Network exception, please try again later.</source>
-        <translation>网络异常，请稍后重试。</translation>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="239"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="247"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="256"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
         <translation>我同意参与本应用的用户体验计划，授权统信软件收集我使用本应用发送的内容、发送内容的时间、请求大模型的类型、所在的应用和文生图是否成功，以改善服务质量、提升操作体验。（若您拒绝提供前述信息，也不会影响本应用的正常使用。）</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="207"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="223"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="216"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="232"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="240"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="70"/>
         <source>I agree to participate in the user experience plan of the Application</source>
         <translation>我同意参与本应用的用户体验计划</translation>
     </message>

@@ -11,8 +11,39 @@
 #include <QDBusPendingReply>
 
 #include <DDesktopEntry>
+#include <DSysInfo>
 
 DCORE_USE_NAMESPACE
+
+static QString formatCap(qulonglong cap, const int size = 1024, quint8 precision = 1)
+{
+    QStringList type { " B", " KB", " MB", " GB", " TB" };
+
+    qulonglong lc = cap;
+    double dc = cap;
+    double ds = size;
+
+    for (int p = 0; p < type.size(); ++p) {
+        if (cap < pow(size, p + 1) || p == (type.size() - 1)) {
+            if (!precision) {
+                //! 内存总大小只能是整数所以当内存大小有小数时，就需要向上取整
+                int mem = static_cast<int>(ceil(lc / pow(size, p)));
+#ifdef __sw_64__
+                return QString::number(mem) + type[p];
+#else
+                //! 如果向上取整后内存大小不为偶数，就向下取整
+                if (mem % 2 > 0)
+                    mem = static_cast<int>(floor(lc / pow(size, p)));
+                return QString::number(mem) + type[p];
+#endif
+            }
+
+            return QString::number(dc / pow(ds, p), 'f', precision) + type[p];
+        }
+    }
+
+    return "";
+}
 
 UOSAbilityManager::UOSAbilityManager(QObject *parent)
     : QObject{parent}
@@ -26,21 +57,44 @@ UOSAbilityManager::UOSAbilityManager(QObject *parent)
     initUosProxys();
 }
 
-OSCallContext UOSAbilityManager::doBluetoothConfig()
+OSCallContext UOSAbilityManager::doBluetoothConfig(bool on)
 {
     OSCallContext ctx;
-    int errCode;
-
-    if (!m_fIsLinglong) {
-        errCode = m_uosControlCenterProxy->ShowModule("bluetooth");
-    } else {
-        //V23 call V6.x api
-        errCode = m_uosControlCenterProxy->ShowPage("bluetooth");
+    QStringList adpters;
+    {
+        QString reply = m_bluetooth->GetAdapters();
+        QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
+        QJsonArray arr = doc.array();
+        for (int index = 0; index < arr.size(); index++)
+            adpters.append(arr[index].toObject()["Path"].toString());
     }
 
-    ctx.error = OSCallContext::CallError(errCode);
-    ctx.errorInfo = m_errMap[ctx.error];
+    if (adpters.isEmpty()) {
+        qInfo() << "there is no bluetooth adpater.";
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+        return ctx;
+    }
 
+    for (auto adpter : adpters) {
+        QDBusObjectPath dPath(adpter);
+        m_bluetooth->SetAdapterPowered(dPath, on);
+    }
+
+    int errCode = 0;
+    if (on) {
+        if (!m_fIsLinglong) {
+            errCode = m_uosControlCenterProxy->ShowModule("bluetooth");
+        } else {
+            //V23 call V6.x api
+            errCode = m_uosControlCenterProxy->ShowPage("bluetooth");
+        }
+    } else {
+        m_bluetooth->ClearUnpairedDevice();
+    }
+
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = "";
     return ctx;
 }
 
@@ -109,12 +163,51 @@ OSCallContext UOSAbilityManager::doWallpaperSwitch()
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
     ctx.errorInfo = m_errMap[ctx.error];
+    bool err = false;
+    if (m_uosAppearanceProxy->isValid()
+            && m_uosDisplayProxy->isValid()
+            && m_uosWM->isValid()) {
 
-    if (m_uosDesktopProxy->isValid()) {
-        QList<QVariant> argumentList;;
-        m_uosDesktopProxy->asyncCallWithArgumentList(
-            QStringLiteral("ShowWallpaperChooser"), argumentList);
+        auto covertUrlToLocalPath = [](const QString &url) {
+            if (url.startsWith("/"))
+                return url;
+            else
+                return QUrl(QUrl::fromPercentEncoding(url.toUtf8())).toLocalFile();
+        };
+
+        QString reply = m_uosAppearanceProxy->List("background");
+        QString screen = m_uosDisplayProxy->primary();
+        QString current = covertUrlToLocalPath(m_uosWM->GetCurrentWorkspaceBackgroundForMonitor(screen));
+        QList<QString> wallpapers;
+        QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
+        if (doc.isArray()) {
+            QJsonArray arr = doc.array();
+            foreach (QJsonValue val, arr) {
+                QJsonObject obj = val.toObject();
+                QString id = covertUrlToLocalPath(obj["Id"].toString());
+                wallpapers.append(id);
+            }
+        }
+
+        if (wallpapers.isEmpty() || screen.isEmpty()) {
+            err = true;
+        } else {
+            int idx = wallpapers.indexOf(current);
+            if (idx < 0 || idx >= wallpapers.size() - 1)
+                idx = 0;
+            else
+                idx++;
+
+            QString next = wallpapers.at(idx);
+            QList<QVariant> argumentList;
+            argumentList << QVariant::fromValue(screen) << QVariant::fromValue(next);
+            m_uosAppearanceProxy->asyncCallWithArgumentList(QStringLiteral("SetMonitorBackground"), argumentList);
+        }
     } else {
+       err = true;
+    }
+
+    if (err) {
         ctx.error = OSCallContext::NonService;
         ctx.errorInfo = m_errMap[ctx.error];
     }
@@ -122,11 +215,18 @@ OSCallContext UOSAbilityManager::doWallpaperSwitch()
     return ctx;
 }
 
-OSCallContext UOSAbilityManager::doDesktopClearing(bool state)
+OSCallContext UOSAbilityManager::doDesktopOrganize(bool state)
 {
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
     ctx.errorInfo = m_errMap[ctx.error];
+
+    if (!m_fIsLinglong) {
+        //V20 屏蔽桌面自动整理
+        ctx.error = OSCallContext::NotImpl;
+        ctx.errorInfo = m_errMap[ctx.error];
+        return ctx;
+    }
 
     QProcess process;
     QStringList args;
@@ -228,6 +328,13 @@ OSCallContext UOSAbilityManager::doDiplayEyesProtection(bool on)
     //      int kelvin = pos > 50 ? (6500 - (pos - 50) * 100) : (6500 + (50 - pos) * 300);
     //   May need adjust other display parameter.
     if (m_uosDisplayProxy->isValid()) {
+        bool isSupEyesProtection = m_uosDisplayProxy->call("SupportSetColorTemperature").arguments().at(0).toBool();
+        if (!isSupEyesProtection) {
+            ctx.error = OSCallContext::NonService;
+            ctx.errorInfo = m_errMap[ctx.error];
+            return ctx;
+        }
+
         if (on) {
             auto reply = m_uosDisplayProxy->SetMethodAdjustCCT(2);
             reply.waitForFinished();
@@ -345,7 +452,6 @@ OSCallContext UOSAbilityManager::doAppLaunch(const QString &appId, bool on)
             FIND_DESKTOP_END:
 
                 qInfo() << "UOSAbilityManager::doAppLaunch->" << appDesktopFile;
-
                 int retCode = m_uosAppLauncher->launchDesktop(appDesktopFile);
                 ctx.error = OSCallContext::CallError(retCode);
 
@@ -404,6 +510,228 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
     ctx.errorInfo = m_errMap[ctx.error];
 
     return ctx;
+}
+
+OSCallContext UOSAbilityManager::switchWifi(bool on)
+{
+    OSCallContext ctx;
+    QStringList adpters;
+    {
+        QString reply = m_network->devices();
+        QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
+        QJsonArray arr = doc["wireless"].toArray();
+        for (int index = 0; index < arr.size(); index++)
+            adpters.append(arr[index].toObject()["Path"].toString());
+    }
+
+    if (adpters.isEmpty()) {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+        return ctx;
+    }
+
+    for (auto adpter : adpters) {
+        QDBusObjectPath dPath(adpter);
+        m_network->EnableDevice(dPath, on);
+    }
+
+    int errCode = 0;
+    if (on) {
+        if (!m_fIsLinglong) {
+            errCode = m_uosControlCenterProxy->ShowPage("network", "WirelessPage");
+        } else {
+            //V23 call V6.x api
+            errCode = m_uosControlCenterProxy->ShowPage("network/WirelessPage");
+        }
+    }
+
+    ctx.error = OSCallContext::CallError(errCode);
+
+    if (errCode == 0)
+        ctx.output = textForCommnand();
+    else
+        ctx.errorInfo = m_errMap[ctx.error];
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::getSystemMemory()
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    qint64 mem = DSysInfo::memoryInstalledSize();
+
+    if (mem < 1) {
+        ctx.error = OSCallContext::InvalidArgs;
+        ctx.errorInfo = m_errMap[ctx.error];
+    } else {
+        QString strMem = formatCap(mem, 1024, 0);
+        ctx.output = tr("Your system memory is %0.") .arg(strMem);
+    }
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doSystemLanguageSetting()
+{
+    OSCallContext ctx;
+    int errCode = 0;
+
+    if (!m_fIsLinglong) {
+        errCode = m_uosControlCenterProxy->ShowPage("keyboard", "System Language");
+    } else {
+        //V23 call V6.x api
+        errCode = m_uosControlCenterProxy->ShowPage("keyboard/keyboardLanguage");
+    }
+
+    ctx.error = OSCallContext::CallError(errCode);
+
+    if (errCode == 0)
+        ctx.output = tr("The language setting interface has been opened. Please set it in this interface.");
+    else
+        ctx.errorInfo = m_errMap[ctx.error];
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doPerformanceModeSwitch(const QString &mode)
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = m_errMap[ctx.error];
+
+    if (m_power->isValid()) {
+        QDBusPendingReply<QString> reply = m_power->SetMode(mode);
+
+        if (!reply.value().isNull()) {
+            ctx.error = OSCallContext::InvalidArgs;
+            ctx.errorInfo = reply.value();
+        }
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+    }
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::openShutdownFront()
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = m_errMap[ctx.error];
+
+    if (m_shutdownFrontProxy->isValid()) {
+        m_shutdownFrontProxy->call("Show");
+        ctx.output = tr("The lock screen has been opened for you");
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+    }
+
+    return ctx;
+}
+OSCallContext UOSAbilityManager::openScreenShot()
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = m_errMap[ctx.error];
+
+    if (m_screenShotProxy->isValid()) {
+        m_screenShotProxy->call("StartScreenshot");
+        ctx.output = tr("Screen shotting or recording has been completed");
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+    }
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doDisplayModeSwitch(int mode)
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = m_errMap[ctx.error];
+
+    if (m_uosDisplayProxy->isValid()) {
+        QStringList screenList = m_uosDisplayProxy->ListOutputNames();
+        if (screenList.count() <= 1) {
+            ctx.output = tr("Only one screen, can't switch screen mode.");
+            return ctx;
+        }
+
+        int currentMode = m_uosDisplayProxy->displayMode();
+        if (mode == currentMode) {
+            ctx.output = tr("It is the same as the current display mode. Please try again.");
+            return ctx;
+        }
+
+        m_uosDisplayProxy->SwitchMode(mode, m_uosDisplayProxy->primary());
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+    }
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::openGrandSearch()
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = m_errMap[ctx.error];
+
+    QDBusInterface *grandSearch = new QDBusInterface(
+                "com.deepin.dde.GrandSearch",
+                "/com/deepin/dde/GrandSearch",
+                "com.deepin.dde.GrandSearch",
+                QDBusConnection::sessionBus(), this);
+
+    if (!grandSearch->isValid()) {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+    }
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::switchScreen()
+{
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.errorInfo = m_errMap[ctx.error];
+
+    if (m_uosDisplayProxy->isValid()) {
+        uchar singleMode = 3;
+        uchar currentMode = m_uosDisplayProxy->displayMode();
+        QString primaryScreen = m_uosDisplayProxy->primary();
+        QStringList screenList = m_uosDisplayProxy->ListOutputNames();
+        if (screenList.count() <= 1) {
+            ctx.output = tr("Only one screen, can't switch screen.");
+            return ctx;
+        }
+
+        if (singleMode == currentMode) {
+            int screenIdx = screenList.indexOf(primaryScreen);
+            if (screenList.endsWith(primaryScreen))
+                m_uosDisplayProxy->SwitchMode(singleMode, screenList.first());
+            else
+                m_uosDisplayProxy->SwitchMode(singleMode, screenList[screenIdx + 1]);
+        }
+        else
+            m_uosDisplayProxy->SwitchMode(singleMode, primaryScreen);
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = m_errMap[ctx.error];
+    }
+
+    return ctx;
+}
+
+QString UOSAbilityManager::textForCommnand()
+{
+    return tr("Your command has been issued.");
 }
 
 void UOSAbilityManager::loadErrMap()
@@ -525,6 +853,47 @@ void UOSAbilityManager::initUosProxys()
             "com.deepin.dde.desktop",
             "/com/deepin/dde/desktop",
             "com.deepin.dde.desktop",
+            QDBusConnection::sessionBus(), this));
+
+    m_uosWM.reset(
+                new UosWM(
+                    UosWM::staticInterfaceName(),
+                    "/com/deepin/wm",
+                    QDBusConnection::sessionBus(), this));
+
+    m_bluetooth.reset(
+                new UosBluetooth(
+                    UosBluetooth::staticInterfaceName(),
+                    "/com/deepin/daemon/Bluetooth",
+                    QDBusConnection::sessionBus(), this));
+    m_bluetooth->setTimeout(5000);
+
+    m_network.reset(
+                new UosNetwork(
+                    UosNetwork::staticInterfaceName(),
+                    "/com/deepin/daemon/Network",
+                    QDBusConnection::sessionBus(), this));
+    m_network->setTimeout(5000);
+
+    m_power.reset(
+                new UosPower(
+                    UosPower::staticInterfaceName(),
+                    "/com/deepin/system/Power",
+                    QDBusConnection::systemBus(), this));
+    m_power->setTimeout(5000);
+
+    m_shutdownFrontProxy.reset(
+        new QDBusInterface(
+            "com.deepin.dde.shutdownFront",
+            "/com/deepin/dde/shutdownFront",
+            "com.deepin.dde.shutdownFront",
+            QDBusConnection::sessionBus(), this));
+
+    m_screenShotProxy.reset(
+        new QDBusInterface(
+            "com.deepin.Screenshot",
+            "/com/deepin/Screenshot",
+            "com.deepin.Screenshot",
             QDBusConnection::sessionBus(), this));
 
     m_uosControlCenterProxy.reset(new DeepinControlCenter(m_fIsLinglong, this));

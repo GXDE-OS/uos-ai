@@ -39,6 +39,14 @@ IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
 
     m_processTimer.setInterval(payloadInterval);
     connect(&m_processTimer, &QTimer::timeout, this, &IatSocketServer::processData);
+
+    m_abnormalExitTimer.setSingleShot(true);
+    connect(&m_abnormalExitTimer, &QTimer::timeout, this, [=](){
+        if (m_error == AIServer::OperationCanceledError) {
+            qDebug() << __func__ << "time out, server exit...";
+            normalExitServer();
+        }
+    });
 }
 
 void IatSocketServer::cancel()
@@ -61,9 +69,12 @@ void IatSocketServer::onTextMessageReceived(const QString &message)
         int status = dataObj.value("status").toInt();
         m_pgsParser.appendResult(dataObj.value("result").toObject());
         emit textReceived(m_pgsParser.getText(), status == STATUS_LAST_FRAME);
+        //qDebug() << __func__ << "received message: " << m_pgsParser.getText() << "    is last frame: " << (status == STATUS_LAST_FRAME);
 
         if (status == STATUS_LAST_FRAME) {
-            normalExitServer();
+            if (m_abnormalExitTimer.isActive())
+                m_abnormalExitTimer.stop();
+            normalExitServer(); // 收到最后一帧数据后再退出
         }
     } else {
         qWarning() << "IatSocketServer code = " << code << " message = " << errorMessage;
@@ -80,8 +91,8 @@ void IatSocketServer::processData()
 {
     if (m_data.isEmpty() && m_error == AIServer::OperationCanceledError) {
         m_processTimer.stop();
-        emit textReceived(m_pgsParser.getText(), true);
-        normalExitServer();
+        //emit textReceived(m_pgsParser.getText(), true);
+        m_abnormalExitTimer.start(3 * 1000);
         return;
     }
 
@@ -150,12 +161,21 @@ void IatSocketServer::processData()
         QJsonObject jsonObject;
         jsonObject["data"] = data;
 
+        //qDebug() << __func__ << "sendTextMessage last frame.";
         m_web->sendTextMessage(QJsonDocument(jsonObject).toJson());
     }
 }
 
 void IatSocketServer::openServer()
 {
+    if (m_abnormalExitTimer.isActive()) {
+        m_abnormalExitTimer.stop();
+    }
+
+    if (m_web->state() == QAbstractSocket::ConnectedState) {
+        normalExitServer();
+    }
+
     if (m_web->state() != QAbstractSocket::ConnectedState) {
         const QUrl &url = AuthWebUrl::createUrl("GET", "wss://iat-api.xfyun.cn/v2/iat", m_account.apiKey, m_account.apiSecret);
         m_web->open(url);

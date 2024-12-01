@@ -45,7 +45,7 @@ public Q_SLOTS:
      * @param stream: Conversation flow switch.
      * @param temperature: A parameter that returns randomness, where a higher value indicates higher randomness.
      */
-    QPair<AIServer::ErrorType, QStringList> requestChatText(const QString &llmId, const QString &conversation, qreal temperature, bool stream = false);
+    QPair<AIServer::ErrorType, QStringList> requestChatText(const QString &llmId, const QString &conversation, qreal temperature, bool stream = false, bool isFAQGeneration = false);
 
     /**
      * @brief Set the current model ID.
@@ -58,6 +58,13 @@ public Q_SLOTS:
      * @return
      */
     QString currentLLMAccountId();
+    LLMChatModel currentLLMModel();
+    ModelType currentModelType();
+
+    bool setCurrentAssistantId(const QString &id);
+    QString currentAssistantId();
+    QString currentAssistantDisplayName();
+    AssistantType currentAssistantType();
 
     /**
      * @brief Get the list of all LLM model accounts.
@@ -65,13 +72,20 @@ public Q_SLOTS:
      * type -> 0:GPT3.5, 1:GPT_3_5_16, 2:GPT_4, 3:GPT_4_32K, 10:SPARKDESK
      */
     QString queryLLMAccountList(const QList<LLMChatModel> &excludes = {});
+    QString queryLLMAccountListWithRole(const QList<LLMChatModel> &excludes = {});
+
+    QString queryAssistantList();
+    QString queryAssistantIdByType(AssistantType type);
 
     /**
      * @brief Launch LLM UI page.
      */
-    void launchLLMUiPage(bool showAddllmPage);
+    void launchLLMUiPage(bool showAddllmPage, bool onlyUseAgreement = false);
 
     void launchAboutWindow();
+
+    QVariant getFAQ();
+
 signals:
     /**
      * @brief Return the error message for the request interface.

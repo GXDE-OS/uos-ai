@@ -20,7 +20,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 .uos-tips {
   position: absolute;
-  font-size: 12px;
+  font-size: 0.85rem;
   padding: 4px 5px;
   opacity: 1;
   background: #fafafa;

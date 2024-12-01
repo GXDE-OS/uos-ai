@@ -28,8 +28,11 @@ public:
 
     int initialization(const QString &dir);
 
-    // 大模型表操作
+    bool addColumnIfNotExists(const QString &tableName, const QString &columnName, const QString &dataType);
 
+    bool initAssistant();
+
+    // 大模型表操作
     bool appendLlm(const LLMServerProxy &llmServerProxy);
 
     bool deleteLlm(const QString &lmid);
@@ -40,8 +43,27 @@ public:
 
     QList<LLMServerProxy> queryLlmList(bool all = false);
 
-    // App表的操作
+    // 助手角色表
+    bool appendAssistant(const AssistantProxy &assistantProxy);
 
+    bool deleteAssistant(const QString &assistantId);
+
+    bool updateAssistant(const AssistantProxy &assistantProxy);
+
+    AssistantProxy queryAssistantByid(const QString &assistantId);
+
+    QList<AssistantProxy> queryAssistantList(bool all = false);
+
+    // 助手当前选择的模型
+    bool appendAssistantLlm(const QString &assistantId, const QString &llmId);
+
+    bool deleteAssistantLlm(const QString &assistantId);
+
+    bool updateAssistantLlm(const QString &assistantId, const QString &llmId);
+
+    QString queryLlmIdByAssistantId(const QString &assistantId);
+
+    // App表的操作
     bool appendApp(const AppDbusPathObject &appObject);
 
     bool deleteApp(const QString &appid);
@@ -50,9 +72,13 @@ public:
 
     bool updateAppCurllmId(const QString &appid, const QString &llmId);
 
+    bool updateAppCurAssistantId(const QString &appid, const QString &assistantId);
+
     AppDbusPathObject queryAppByAppId(const QString &appid);
 
     QString queryCurLlmIdByAppId(const QString &appid);
+
+    QString queryCurAssistantIdByAppId(const QString &appid);
 
     QMap<QString, AppDbusPathObject> queryAppList();
 
@@ -85,6 +111,14 @@ public:
 
     // 更新本地语音模型开关
     bool updateLocalSpeech(bool isOpen);
+
+    // 窗口模式
+    int getDisplayMode();
+    bool updateDisplayMode(int );
+
+    // 窗口尺寸
+    QString getWindowSize();
+    bool updateWindowSize(QString size);
 
     // 其他操作
 

@@ -2,6 +2,7 @@
 #include "serverwrapper.h"
 #include "dbwrapper.h"
 #include "dbuscontrolcenterrequest.h"
+#include "embeddingserver.h"
 
 #include "private/useragreementdialog.h"
 #include "private/modellistwidget.h"
@@ -11,6 +12,7 @@
 #include "private/themedlable.h"
 #include "private/localmodellistwidget.h"
 #include "private/echatwndmanager.h"
+#include "private/knowledgebaselistwidget.h"
 
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -60,7 +62,6 @@ MgmtWindow::~MgmtWindow()
 void MgmtWindow::initUI()
 {
     DTitlebar *mainTitlebar = titlebar();
-//    mainTitlebar->setIcon(QIcon::fromTheme(QApplication::instance()->applicationName()));
     mainTitlebar->setQuitMenuVisible(false);
 
     for (auto action : mainTitlebar->menu()->actions()) {
@@ -71,6 +72,7 @@ void MgmtWindow::initUI()
     }
     // 隐藏标题栏中的menu
     titlebar()->setMenuVisible(false);
+
     DWidget *mainWidget = new DWidget(this);
     QHBoxLayout *mainLayout = new QHBoxLayout(mainWidget);
     mainLayout->setContentsMargins(0, 0, 0, 0);
@@ -81,10 +83,11 @@ void MgmtWindow::initUI()
 
     DFrame *frame = new DFrame(this);
     QVBoxLayout *frameLayout = new QVBoxLayout(frame);
-    frameLayout->setContentsMargins(20, 10, 20, 10);
+    frameLayout->setContentsMargins(0, 0, 0, 0);
     frame->setLineWidth(0);
 
     DWidget *scrollWidget = new DWidget(this);
+    scrollWidget->setContentsMargins(20, 10, 20, 10);
     QVBoxLayout *scrollLayout = new QVBoxLayout(scrollWidget);
 
     m_pScrollArea = new QScrollArea();
@@ -100,6 +103,7 @@ void MgmtWindow::initUI()
     m_pScrollArea->installEventFilter(this);
 
     m_pModelListWidget = initModelListWidget();
+    m_pKnowledgeBaseListWidget = initKnowledgeBaseWidget();
 
     scrollLayout->setContentsMargins(0, 0, 0, 0);
     scrollLayout->setSpacing(30);
@@ -107,6 +111,7 @@ void MgmtWindow::initUI()
     scrollLayout->addWidget(initLocalModelListWidget());
     scrollLayout->addWidget(initProxyWidget());
     scrollLayout->addWidget(initAgreementWidget());
+    scrollLayout->addWidget(m_pKnowledgeBaseListWidget);
     scrollLayout->addStretch();
 
     frameLayout->addWidget(m_pScrollArea);
@@ -114,8 +119,9 @@ void MgmtWindow::initUI()
 
     mainLayout->addLayout(rightLayout);
 
-    onThemeTypeChanged();
     setCentralWidget(mainWidget);
+
+    onThemeTypeChanged();
 }
 
 void MgmtWindow::initConnect()
@@ -123,11 +129,9 @@ void MgmtWindow::initConnect()
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &MgmtWindow::onThemeTypeChanged);
     connect(m_pWelcomeDlg, &WelcomeDialog::signalAppendModel, m_pModelListWidget, &ModelListWidget::onAppendModel);
     connect(m_pWelcomeDlg, &WelcomeDialog::accepted, [this] {
-        if (!m_pWelcomeDlg->isFreeAccount())
-        {
+        if (!m_pWelcomeDlg->isFreeAccount()) {
             showAddModelDialog(true);
-        } else
-        {
+        } else {
             DbWrapper::localDbWrapper().updateAICopilot(true);
             DbWrapper::localDbWrapper().updateUserExpState(m_pWelcomeDlg->getUserExpState() == Qt::Unchecked ? -1 : 1);
             ServerWrapper::instance()->updateUserExpState(m_pWelcomeDlg->getUserExpState() == Qt::Unchecked ? -1 : 1);
@@ -158,6 +162,7 @@ void MgmtWindow::initConnect()
             ServerWrapper::instance()->updateUserExpState(m_pWelcomeDlg->getUserExpState() == Qt::Unchecked ? -1 : 1);
         }
     });
+    connect(m_pKnowledgeBaseListWidget, &KnowledgeBaseListWidget::sigGenPersonalFAQ, this, &MgmtWindow::sigGenPersonalFAQ);
 }
 
 bool MgmtWindow::eventFilter(QObject *watched, QEvent *event)
@@ -173,7 +178,12 @@ void MgmtWindow::closeEvent(QCloseEvent *event)
     if (m_pModelListWidget)
         m_pModelListWidget->resetEditButton();
 
+    if (m_pKnowledgeBaseListWidget)
+        m_pKnowledgeBaseListWidget->resetEditButton();
+
     emit signalCloseWindow();
+
+    EmbeddingServer::getInstance().saveAllIndex();
 
     DMainWindow::closeEvent(event);
 }
@@ -272,7 +282,11 @@ DWidget *MgmtWindow::initProxyWidget()
 
     connect(oper, &OperatingLineWidget::signalNotDeleteButtonClicked, this, []() {
         DbusControlCenterRequest dbus;
+#ifdef COMPILE_ON_V23
+        dbus.showPage("network/systemProxy");
+#else
         dbus.showPage("network", "System Proxy");
+#endif
     });
 
     hLayout->addWidget(oper);
@@ -287,7 +301,15 @@ DWidget *MgmtWindow::initProxyWidget()
     return widget;
 }
 
-void MgmtWindow::showEx(bool showAddllmPage)
+KnowledgeBaseListWidget *MgmtWindow::initKnowledgeBaseWidget()
+{
+    KnowledgeBaseListWidget *widget = new KnowledgeBaseListWidget(this);
+//    widget->setKnowledgeBaseList();
+//    connect(widget, &KnowledgeBaseListWidget::signalAddKnowledgeBase, this, &MgmtWindow::onAddKnowledgeBase);
+    return widget;
+}
+
+void MgmtWindow::showEx(bool showAddllmPage, bool onlyUseAgreement)
 {
     //已经存在模态框，激活模态框继续操作
     auto addDlg = this->findChild<QDialog *>();
@@ -299,14 +321,16 @@ void MgmtWindow::showEx(bool showAddllmPage)
 
     if (!DbWrapper::localDbWrapper().getAICopilotIsOpen() || (showAddllmPage && DbWrapper::localDbWrapper().queryLlmList().isEmpty())) {
         this->hide();
+        m_pWelcomeDlg->setOnlyUseAgreement(onlyUseAgreement);
+        m_pWelcomeDlg->resetDialog();
         if (m_pWelcomeDlg->isHidden()) {
-            m_pWelcomeDlg->resetDialog();
             m_pWelcomeDlg->show();
         } else {
             m_pWelcomeDlg->activateWindow();
         }
     } else {
-        if (m_pLocalModelListWidget) m_pLocalModelListWidget->updateLocalModelList();
+        if (m_pLocalModelListWidget)
+            m_pLocalModelListWidget->updateLocalModelList();
         this->activateWindow();
         this->show();
         if (showAddllmPage) {

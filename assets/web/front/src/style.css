@@ -94,9 +94,9 @@ body ::selection {
 	background: rgba(247, 247, 247, 1) !important;
 	padding: 2px 5px 5px 6px !important;
 	color: rgba(0, 0, 0, 1) !important;
-	font-size: 12px !important;
+	font-size: 0.85rem !important;
 	font-weight: 400 !important;
-	line-height: inherit !important;
+        line-height: inherit !important;
 	min-width: 0px !important;
 }
 

@@ -7,17 +7,14 @@
 #include <QNetworkRequest>
 #include <QJsonDocument>
 #include <QJsonObject>
-
-QMap<UosLogType, QString> gServerUrls = {
-    {UosLogType::UserInput, "https://uosai.uniontech.com/api/saveAiModel"},
-    {UosLogType::FailedRetry, "https://uosai.uniontech.com/api/saveRetryRecord"},
-    {UosLogType::TextToImageResult, "https://uosai.uniontech.com/api/saveModelResult"}
-};
+#include <QStandardPaths>
+#include <QFileInfo>
 
 UosSimpleLog::UosSimpleLog(QObject *parent)
     : QThread(parent)
     , m_stopLogging(false)
 {
+    initServerAddress();
     start();
 }
 
@@ -80,6 +77,7 @@ int UosSimpleLog::pushLog(const UosLogObject &logObj)
         logTextJson["content"] = logObj.content;
         logTextJson["datetime"] = logObj.time.toString("yyyy-MM-dd hh:mm:ss");;
         logTextJson["modelType"] = logObj.ModelType;
+        logTextJson["assistantName"] = logObj.assistant;
     }
 
     if (logObj.type == UosLogType::TextToImageResult) {
@@ -158,7 +156,31 @@ QString UosSimpleLog::simplifiedText(const QString &content)
 
 QString UosSimpleLog::hostUrl(UosLogType type) const
 {
-    if (gServerUrls.contains(type))
-        return gServerUrls[type];
+    if (serverUrls.contains(type))
+        return serverUrls[type];
     return "";
+}
+
+void UosSimpleLog::initServerAddress()
+{
+    QString testServerJsonPath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/TestServer.json";
+    QString apiAddress;
+    if (QFileInfo::exists(testServerJsonPath)) {
+        QFile dataInfoFile(testServerJsonPath);
+        if (dataInfoFile.open(QIODevice::ReadOnly)) {
+            QByteArray jsonData = dataInfoFile.readAll();
+            QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonData);
+            QJsonObject jsonObj = jsonDoc.object();
+            apiAddress = jsonObj["TestServer"].toString();
+            qInfo() << "API Server Address is Test.";
+        }
+    } else {
+        apiAddress = AIServer::ServerAPIAddress;
+    }
+
+    serverUrls = {
+        {UosLogType::UserInput, apiAddress + "/saveAiModel"},
+        {UosLogType::FailedRetry, apiAddress + "/saveRetryRecord"},
+        {UosLogType::TextToImageResult, apiAddress + "/saveModelResult"}
+    };
 }

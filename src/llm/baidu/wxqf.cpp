@@ -23,7 +23,7 @@ QJsonObject WXQFAI::predict(const QString &content, const QJsonArray &functions,
     connect(this, &WXQFAI::aborted, &chatCompletion, &WXQFChatCompletion::requestAborted);
     connect(&chatCompletion, &WXQFChatCompletion::readyReadDeltaContent, this, &WXQFAI::onReadyReadChatDeltaContent);
 
-    QPair<int, QString> errorpair = chatCompletion.create(m_accountProxy.model, conversion, temperature);
+    QPair<int, QString> errorpair = chatCompletion.create(m_accountProxy.model, m_accountProxy.url, conversion, temperature);
     setLastError(errorpair.first);
     setLastErrorString(errorpair.second);
 
@@ -58,7 +58,7 @@ QPair<int, QString> WXQFAI::verify()
     WXQFChatCompletion chatCompletion(m_accountProxy.account);
     connect(this, &WXQFAI::aborted, &chatCompletion, &WXQFChatCompletion::requestAborted);
 
-    QPair<int, QString> errorpair = chatCompletion.create(m_accountProxy.model, conversion);
+    QPair<int, QString> errorpair = chatCompletion.create(m_accountProxy.model, m_accountProxy.url, conversion);
     setLastError(errorpair.first);
     setLastErrorString(errorpair.second);
 

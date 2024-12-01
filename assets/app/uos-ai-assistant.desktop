@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Qt;
+Comment=uos-ai
+Exec=/usr/bin/uos-ai-assistant --chat
+GenericName=Uos ai assistant
+Icon=UosAiAssistant
+Name=UOS AI
+StartupNotify=false
+Type=Application
+NoDisplay=true
+X-Deepin-ManualID=uos-ai-assistant
+X-Deepin-TurboType=dtkwidget
+X-Deepin-Vendor=user-custom
+X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
+X-Deepin-AppID=uos-ai

@@ -16,6 +16,8 @@ public:
 
     QString ext;
 
+    QString assistantid;
+
     QString tableName() const { return QStringLiteral("app"); }
 };
 

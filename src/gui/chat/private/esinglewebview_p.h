@@ -43,7 +43,13 @@ signals:
     void sigWebchatActiveChanged(bool isActive);
     //Signal to active digital window
     void sigDigitalModeActive();
+    void sigChatModeActive();
+    void sigWindowModeChanged(bool isWindowMode);
+
+    void sigVoiceConversationStatusChanged(int status);
+
 public slots:
+    void updateVoiceConversationStatus(int status);
 
 private:
     QString m_sceneType;

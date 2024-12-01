@@ -6,7 +6,7 @@
 ModifyModelDialog::ModifyModelDialog(const LLMServerProxy &data, DWidget *parent)
     : DAbstractDialog(parent)
 {
-    setFixedSize(528, 343);
+    setFixedSize(528, 410);
 
     DTitlebar *titleBar = new DTitlebar(this);
     titleBar->setMenuVisible(false);
@@ -67,12 +67,42 @@ ModifyModelDialog::ModifyModelDialog(const LLMServerProxy &data, DWidget *parent
     accountNameLabel->setFixedHeight(36);
     accountNameLabel->setToolTip(accountNameLabel->text());
 
+    DLabel *apiModelLabel = new DLabel(tr("Model Name"));
+    apiModelLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    DFontSizeManager::instance()->bind(apiModelLabel, DFontSizeManager::T6, QFont::Medium);
+    apiModelLabel->setFixedHeight(36);
+    apiModelLabel->setToolTip(apiModelLabel->text());
+
+    m_pApiModelLabel = new DLabel;
+    m_pApiModelLabel->setFixedSize(381, 36);
+    DFontSizeManager::instance()->bind(m_pApiModelLabel, DFontSizeManager::T6, QFont::Medium);
+
+    DLabel *apiUrlLabel = new DLabel(tr("API Address"));
+    apiUrlLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    DFontSizeManager::instance()->bind(apiUrlLabel, DFontSizeManager::T6, QFont::Medium);
+    apiUrlLabel->setFixedHeight(36);
+    apiUrlLabel->setToolTip(apiUrlLabel->text());
+
+    m_pApiUrlLabel = new DLabel;
+    m_pApiUrlLabel->setFixedSize(381, 36);
+    DFontSizeManager::instance()->bind(m_pApiUrlLabel, DFontSizeManager::T6, QFont::Medium);
+
     m_pNameLineEdit = new DLineEdit();
     m_pNameLineEdit->setFixedSize(381, 36);
     m_pNameLineEdit->lineEdit()->setMaxLength(21);
     m_pNameLineEdit->setPlaceholderText(tr("Required, to distinguish multiple models"));
     m_pNameLineEdit->lineEdit()->installEventFilter(this);
     m_pNameLineEdit->lineEdit()->setProperty("_d_dtk_lineedit_opacity", false);
+
+    DLabel *requestAddressLabel = new DLabel(tr("Domain"));
+    requestAddressLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    DFontSizeManager::instance()->bind(requestAddressLabel, DFontSizeManager::T6, QFont::Medium);
+    requestAddressLabel->setFixedHeight(36);
+    requestAddressLabel->setToolTip(requestAddressLabel->text());
+    m_pRequestAddressLabel = new DLabel;
+    m_pRequestAddressLabel->setFixedWidth(381);
+    m_pRequestAddressLabel->setWordWrap(true);
+    DFontSizeManager::instance()->bind(m_pRequestAddressLabel, DFontSizeManager::T6, QFont::Medium);
 
     m_pContextLayout = new QGridLayout();
     m_pContextLayout->setContentsMargins(20, 6, 20, 0);
@@ -88,6 +118,12 @@ ModifyModelDialog::ModifyModelDialog(const LLMServerProxy &data, DWidget *parent
     m_pContextLayout->addWidget(m_pApiKeyLabel, 3, 1);
     m_pContextLayout->addWidget(apiSecretLabel, 4, 0);
     m_pContextLayout->addWidget(m_pApiSecretLabel, 4, 1);
+    m_pContextLayout->addWidget(apiModelLabel, 5, 0);
+    m_pContextLayout->addWidget(m_pApiModelLabel, 5, 1);
+    m_pContextLayout->addWidget(apiUrlLabel, 6, 0);
+    m_pContextLayout->addWidget(m_pApiUrlLabel, 6, 1);
+    m_pContextLayout->addWidget(requestAddressLabel, 7, 0);
+    m_pContextLayout->addWidget(m_pRequestAddressLabel, 7, 1);
     QHBoxLayout *gridLayout = new QHBoxLayout();
     gridLayout->setContentsMargins(0, 0, 0, 0);
     gridLayout->addStretch();
@@ -131,12 +167,12 @@ ModifyModelDialog::ModifyModelDialog(const LLMServerProxy &data, DWidget *parent
     connect(m_pNameLineEdit, &DLineEdit::alertChanged, this, &ModifyModelDialog::onNameAlertChanged);
     connect(QApplication::instance(), SIGNAL(fontChanged(const QFont &)), this, SLOT(onUpdateSystemFont(const QFont &)));
 
-    m_threeKeyComboxIndex.insert(LLMChatModel::WXQF_ERNIE_Bot);
-    m_threeKeyComboxIndex.insert(LLMChatModel::WXQF_ERNIE_Bot_turbo);
-    m_threeKeyComboxIndex.insert(LLMChatModel::WXQF_ERNIE_Bot_4);
     m_threeKeyComboxIndex.insert(LLMChatModel::SPARKDESK);
     m_threeKeyComboxIndex.insert(LLMChatModel::SPARKDESK_2);
     m_threeKeyComboxIndex.insert(LLMChatModel::SPARKDESK_3);
+    m_threeKeyComboxIndex.insert(LLMChatModel::WXQF_ERNIE_Bot);
+    m_threeKeyComboxIndex.insert(LLMChatModel::WXQF_ERNIE_Bot_turbo);
+    m_threeKeyComboxIndex.insert(LLMChatModel::WXQF_ERNIE_Bot_4);
 
     setData(data);
     if (data.name.isEmpty())
@@ -156,19 +192,52 @@ void ModifyModelDialog::updateContexts(const LLMChatModel &model)
         m_pContextLayout->itemAtPosition(4, 0)->widget()->show();
         m_pContextLayout->itemAtPosition(4, 1)->widget()->show();
     }
+
+    // custom model
+    if (model == OPENAI_API_COMPATIBLE) {
+        m_pContextLayout->itemAtPosition(5, 0)->widget()->show();
+        m_pContextLayout->itemAtPosition(5, 1)->widget()->show();
+        m_pContextLayout->itemAtPosition(6, 0)->widget()->show();
+        m_pContextLayout->itemAtPosition(6, 1)->widget()->show();
+    } else {
+        m_pContextLayout->itemAtPosition(5, 0)->widget()->hide();
+        m_pContextLayout->itemAtPosition(5, 1)->widget()->hide();
+        m_pContextLayout->itemAtPosition(6, 0)->widget()->hide();
+        m_pContextLayout->itemAtPosition(6, 1)->widget()->hide();
+    }
+
+    if (!m_requestAddress.isEmpty() && m_modelType != FREE_NORMAL && m_modelType != FREE_KOL
+            && (model == LLMChatModel::WXQF_ERNIE_Bot || model == LLMChatModel::SPARKDESK)) {
+        m_pContextLayout->itemAtPosition(7, 0)->widget()->show();
+        m_pContextLayout->itemAtPosition(7, 1)->widget()->show();
+    } else {
+        m_pContextLayout->itemAtPosition(7, 0)->widget()->hide();
+        m_pContextLayout->itemAtPosition(7, 1)->widget()->hide();
+    }
 }
 
 void ModifyModelDialog::setData(const LLMServerProxy &data)
 {
-    m_pModelLabel->setText(LLMServerProxy::llmName(data.model));
+    m_pModelLabel->setText(LLMServerProxy::llmName(data.model, !data.url.isEmpty()));
     if (m_threeKeyComboxIndex.contains(data.model)) {
         m_pAppIdLabel->setText(getDesensitivity(data.account.appId));
         m_pApiSecretLabel->setText(getDesensitivity(data.account.apiSecret));
     }
 
+    if (data.model == LLMChatModel::OPENAI_API_COMPATIBLE) {
+        m_pApiModelLabel->setText(data.ext.value(LLM_EXTKEY_VENDOR_MODEL).toString());
+        m_pApiUrlLabel->setText(data.ext.value(LLM_EXTKEY_VENDOR_URL).toString());
+    }
+
+    if (data.model == LLMChatModel::WXQF_ERNIE_Bot || data.model == LLMChatModel::SPARKDESK) {
+        m_pRequestAddressLabel->setText(data.url);
+    }
+
     m_appId = data.account.appId;
     m_apiKey = data.account.apiKey;
     m_apiSecret = data.account.apiSecret;
+    m_requestAddress = data.url;
+    m_modelType = data.type;
 
     QFontMetrics fm = m_pAppIdLabel->fontMetrics();
     m_pAppIdLabel->setText(fm.elidedText(getDesensitivity(m_appId), Qt::ElideMiddle, m_pAppIdLabel->width()));

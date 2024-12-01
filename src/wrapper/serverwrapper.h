@@ -2,6 +2,7 @@
 #define SERVERWRAPPER_H
 
 #include "serverdefs.h"
+#include "compliance/aiassistantsubstitute.h"
 
 #include <QSharedPointer>
 #include <QJsonArray>
@@ -16,7 +17,7 @@ public:
     static ServerWrapper *instance();
 
 signals:
-    void sigToLaunchMgmt(bool showAddllmPage);
+    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false);
 
     void sigToLaunchChat(int);
 
@@ -57,16 +58,19 @@ public:
      */
     void addAppFunction(const QString &appId, const QJsonObject &funciton);
 
+    void updateVisibleState(bool visible);
+    void updateActiveState(bool active);
+
 public:
     /**
      * @brief LLM model account validity verification.
      * @return
      */
     static QPair<int, QString> verify(const LLMServerProxy &serverProxy);
-
 private:
     QSharedPointer<DBusInterface> m_copilotDbusObject;
     QSharedPointer<Session> m_copilotSeesion;
+    UOSAI_NAMESPACE::AiassistantSubstitute *m_aiassistant = nullptr;
 };
 
 #endif // SERVERWRAPPER_H

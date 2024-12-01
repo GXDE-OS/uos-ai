@@ -79,13 +79,16 @@ signals:
     //Ai Conversation type
     void sigChatConversationType(const QString &id, int action);
 
-signals:
     //Account change signal
     void llmAccountLstChanged(const QString &currentAccountId,
                               const QString &accountLst);
     void sigThemeChanged(int value);
     void sigActiveColorChanged(QString color);
     void sigNetStateChanged(bool isOnline);
+    void sigFontChanged(const QString &fontFamily, int pixelSize);
+    void sigAssistantChanged(int id);
+    void sigKnowledgeBaseStatusChanged( bool exist);
+    void sigKnowledgeBaseFAQGenFinished();
 
 public slots:
     //Js Call this method to notify C++
@@ -136,24 +139,13 @@ public slots:
      */
     bool setCurrentLLMAccountId(const QString &id);
 
+    QString currentAssistantId();
+    QString queryAssistantList();
+    bool setCurrentAssistantId(const QString &id);
+
     /**
      * @brief getAiFAQ
      * @return Return limited count ai FAQ
-     *
-     * [
-     *   {
-     *   "iconName": "meeting",
-     *   "Question": "帮我起草个会议纪要大纲。"
-     *  },
-     *  {
-     *   "iconName": "naobao",
-     *   "Question": "我在想AI产品的功能设计，给我3个点子。"
-     *  },
-     *   {
-     *   "iconName": "xiangmu",
-     *   "Question": "Execl中的求和公式如何写？"
-     *   }
-     * ]
      */
     QString getAiFAQ();
     /**
@@ -185,8 +177,9 @@ public slots:
     /**
      * @brief startRecorder
      *     Start audio record
+     * @param 0:chat  1:digital
      */
-    bool startRecorder();
+    bool startRecorder(int mode);
     /**
      * @brief stopRecorder
      *
@@ -301,10 +294,23 @@ public slots:
 
     void launchAboutWindow();
 
+    void setFontInfo(const QString &fontFamily, int pixelSize);
+    QString fontInfo();
+
+    void setWindowMode(bool isWindowMode);
+    bool isWindowMode();
+
+    void onUpdateSystemFont(const QFont &);
+
+    bool isKnowledgeBaseExist();
+
+    void configureKnowledgeBase();
+
 protected:
     //Property Get methods
     int getThemeType() { return m_themeType;}
     QString getActiveColor() { return m_activeColor;}
+
 protected:
     int m_themeType {DGuiApplicationHelper::ColorType::LightType};
 
@@ -319,6 +325,11 @@ protected:
 
     int m_audioLenLimit {AUDIO_LENGTH}; //60s
     QScopedPointer<QTimer> m_audioRecCounter;
+
+    QString m_fontFamily = "Source Han Sans SC";
+    int m_fontPixelSize = 14;
+
+    bool m_isWindowMode = false;
 };
 
 #endif // EAIPROXY_H

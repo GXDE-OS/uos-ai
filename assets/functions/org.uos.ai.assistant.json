@@ -83,8 +83,8 @@
 			}
 		},
 		{
-			"name": "openBluetooth",
-			"description": "连接打开无线或者蓝牙设备，如无线鼠标，蓝牙耳机，蓝牙音响",
+			"name": "openScreenMirroring",
+			"description": "连接打开无线投屏页面",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -92,17 +92,36 @@
 			}
 		},
 		{
-			"name": "openScreenMirroring",
-			"description": "连接打开投屏页面",
+			"name": "openBluetooth",
+			"description": "连接打开查看无线或蓝牙设备，如无线鼠标，蓝牙耳机，蓝牙音响。",
 			"parameters": {
 				"type": "object",
-				"properties": {
-				}
+				"properties": {                    
+                    "switch": {
+					"type": "boolean",
+					"description": "true开启,false关闭"
+					}
+				},
+				"required": ["switch"]
+			}
+		},
+		{
+			"name": "switchWifi",
+			"description": "连接打开查看无线网络或wifi。",
+			"parameters": {
+				"type": "object",
+				"properties": {                    
+                    "switch": {
+					"type": "boolean",
+					"description": "true开启,false关闭"
+					}
+				},
+				"required": ["switch"]
 			}
 		},
 		{
 			"name": "switchNoDisturbMode",
-			"description": "设置系统勿扰模式开关",
+			"description": "设置勿扰模式开关",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -116,7 +135,7 @@
 		},
 		{
 			"name": "switchWallpaper",
-			"description": "切换系统桌面背景或壁纸",
+			"description": "切换或更新背景、桌面图片、壁纸，更新桌面图片",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -124,8 +143,8 @@
 			}
 		},
 		{
-			"name": "clearDesktop",
-			"description": "桌面自动整理",
+			"name": "organizeDesktop",
+			"description": "开启或关闭桌面自动整理",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -139,7 +158,7 @@
 		},
 		{
 			"name": "switchDockMode",
-			"description": "切换系统任务栏模式",
+			"description": "切换任务栏模式",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -154,7 +173,7 @@
 		},
 		{
 			"name": "switchSystemTheme",
-			"description": "切换设置系统主题",
+			"description": "切换或设置系统主题，如：浅色，暗色",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -169,7 +188,7 @@
 		},
 		{
 			"name": "switchEyesProtection",
-			"description": "调整屏幕为护眼模式",
+			"description": "调整屏幕为护眼模式或阅读模式",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -196,8 +215,92 @@
 			}
 		},
 		{
+            "name": "systemTotalMemory",
+			"description": "获取系统内存或查看内存",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+			"name": "switchPerformanceMode",
+			"description": "调整性能模式",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"mode": {
+						"type": "string",
+						"description": "balance平衡,performance高性能,powersave节能、低功耗、省电",
+						"enum": ["balance", "performance", "powersave"]
+					}
+				},
+				"required": ["mode"]
+			}
+		},
+		{
+            "name": "systemLanguageSetting",
+			"description": "设置系统的语言，如：中文，英文",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+            "name": "shutdownFront",
+			"description": "关机、重启、待机、屏幕锁定、注销、睡眠、深度睡眠",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+            "name": "screenShot",
+			"description": "截图或录屏",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+			"name": "switchDisplayMode",
+			"description": "切换屏幕模式",
+			"parameters": {
+				"type": "object",
+				"properties": {
+					"mode": {
+						"type": "string",
+						"description": "Copy复制模式,Extend扩展模式",
+						"enum": ["Copy", "Extend"]
+					}
+				},
+				"required": ["mode"]
+			}
+		},
+		{
+            "name": "switchScreen",
+			"description": "切换、换个或下一个屏幕、显示屏",
+			"parameters": {
+				"type": "object",
+				"properties": {
+				}
+			}
+		},
+		{
+			"name": "grandSearch",
+			"description": "打开或启动全局搜索",
+			"parameters": {
+			"type": "object",
+			"properties": {
+				}
+			}
+		},
+		{
 			"name":"launchApplication",
-			"description": "打开或者启动应用",
+			"description": "打开、启动、运行某个应用，关闭、退出、结束某个应用",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -206,6 +309,7 @@
 						"enum": [
 							"musicPlayer",
 							"imageViewer",
+							"draw",
 							"fileManager",
 							"bootMaker",
 							"controlCenter",
@@ -233,6 +337,22 @@
 							"deepinEditor",
 							"deepinReader",
 							"deepinAlbum",
+							"serviceSupport",
+							"introduction",
+							"deepinTooltips",
+							"recovery",
+							"deepinLianliankan",
+							"deepinScanner",
+							"deepinGomoku",
+							"downloader",
+							"deepinCamera",
+							"deepinVoiceNote",
+							"remoteAssistant",
+							"chineseimeSetting",
+							"cooperation",
+							"deepinDataTransfer",
+							"mobileAssistant",
+							"remmina",							
 							"wps",
 							"excel",
 							"word",
@@ -243,11 +363,11 @@
 							"weichat",
 							"WeChatWork"
 						],
-						"description": "musicPlayer音乐播放器,imageViewer看图,fileManager文件管理器,bootMaker启动盘制作工具,controlCenter控制中心,systemMonitor系统监视器,appstore应用商店,devicemanager设备管理器,logViewer日志收集工具,fontManager字体管理器,manual帮助手册,moviePlayer影院,screenRecorder截图录屏,terminal终端,calendar日历,computer我的电脑,trash回收站,diskmanager磁盘管理器,browser浏览器,mail邮箱,defender安全中心,printerManager打印管理器,deepinCompressor归档管理器,uosActivator系统激活,calculator计算器,packageInstaller软件包安装器,deepinEditor文本编辑器,deepinReader文档查看器,deepinAlbum相册,wps,excel表格,word文字,ppt演示,pdf文档,dingtalk钉钉,qq,weichat微信,WeChatWork企业微信"
+						"description": "应用名称，包含：musicPlayer音乐播放器,imageViewer看图,draw画板,fileManager文件管理器,bootMaker启动盘制作工具,controlCenter控制中心,systemMonitor系统监视器,appstore应用商店,devicemanager设备管理器,logViewer日志收集工具,fontManager字体管理器,manual帮助手册,moviePlayer影院,screenRecorder截图录屏,terminal终端,calendar日历,computer我的电脑,trash回收站,diskmanager磁盘管理器,browser浏览器,mail邮箱,defender安全中心,printerManager打印管理器,deepinCompressor归档管理器,uosActivator系统激活,calculator计算器,packageInstaller软件包安装器,deepinEditor文本编辑器,deepinReader文档查看器,deepinAlbum相册,serviceSupport服务与支持,introduction欢迎,deepinTooltipsUOS快速上手文档,recovery备份与还原,deepinLianliankan连连看,deepinScanner扫描管理器,deepinGomoku五子棋,downloader下载器,deepinCamera相机,deepinVoiceNote语音记事本,remoteAssistant远程协助,chineseimeSetting中文输入法设置,cooperation跨端协同,deepinDataTransfer数据迁移,mobileAssistant统信UOS助手,remmina,wps,excel表格,word文字,ppt演示,pdf文档,dingtalk钉钉,qq,weichat微信,WeChatWork企业微信"
 					},
 					"switch": {
 						"type": "boolean",
-						"description": "true开启,false关闭"
+						"description": "true打开,false关闭"
 					}
 				},
 				"required": ["appid", "switch"]

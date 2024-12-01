@@ -1,26 +1,14 @@
-<template>
-    <div class="chat-top">
+<!-- <template> -->
+    <!-- <div class="chat-top">
         <div class="logo"
             :style="`opacity:${historyLength === 0 || router.currentRoute.value.name == 'DigitalImage' ? 0 : 1} ;`">
             <img draggable="false" style="user-select: none;" src="../../../svg/icon.svg" alt="">
         </div>
         <div class="title"
-            :style="`opacity:${historyLength === 0 || router.currentRoute.value.name == 'DigitalImage' ? 0 : 1} ;`">UOS AI
+            :style="`opacity:${historyLength === 0 || router.currentRoute.value.name == 'DigitalImage' ? 0 : 1} ;`">UOS
+            AI
         </div>
         <div class="right-btn">
-            <div class="btn" v-on-click-outside.bubble="handelOutside" :class="{ disabledTop: recording,showSeting}"
-                @click="!recording && (showSeting = !showSeting)">
-                <svgIcon icon="seting-normal" style="width: 18px;height: 18px;" />
-                <div class="seting-pop" v-show="showSeting">
-                    <div class="seting-item" @click="Qrequest(chatQWeb.launchLLMConfigWindow, false)">
-                        {{useGlobalStore().loadTranslations['Settings']}}
-                    </div>
-                    <div class="seting-item" @click="Qrequest(chatQWeb.launchAboutWindow)">
-                        {{useGlobalStore().loadTranslations['About']}}
-                    </div>
-                </div>
-            </div>
-
             <div class="btn"
                 :class="{ disabledTop: (recording || localmodel) && router.currentRoute.value.name == 'Chat' || (showStop && videoStatus !== 5 && videoStatus !== 10) }"
                 @click="!((recording || localmodel) && router.currentRoute.value.name == 'Chat') && !(showStop && videoStatus !== 5 && videoStatus !== 10) && handelModel()"
@@ -28,13 +16,41 @@
                 <svgIcon icon="change-normal" />
                 <Tips :tip="tipCon" :class="className" v-show="isTipsVisible"> </Tips>
             </div>
+
+            <div class="btn" v-on-click-outside.bubble="handelOutside" :class="{ disabledTop: recording, showSeting }"
+                @click="!recording && (showSeting = !showSeting)">
+                <svgIcon icon="seting-normal" style="width: 18px;height: 18px;" />
+                <div class="seting-pop" v-show="showSeting">
+                    <div class="seting-item" @mouseover="showMode = true" @mouseout="showMode = false">
+                        {{ useGlobalStore().loadTranslations['Mode'] }}
+                        <svgIcon icon="arrow_right"  style="width: 8px;height: 8px;" />
+                    </div>
+                    <div class="seting-item" @click="Qrequest(chatQWeb.launchLLMConfigWindow, false)">
+                        {{ useGlobalStore().loadTranslations['Settings'] }}
+                    </div>
+                    <div class="separator"></div>
+                    <div class="seting-item" @click="Qrequest(chatQWeb.launchAboutWindow)">
+                        {{ useGlobalStore().loadTranslations['About'] }}
+                    </div>
+                </div>
+                <div class="mode-pop" v-show="showMode" @mouseover="showMode = true">
+                    <div class="mode-item" @click="Qrequest(chatQWeb.setDisplayMode, 0)">
+                        <SvgIcon icon="ok-acitve" style="width: 10px;height: 10px;" />
+                        {{ useGlobalStore().loadTranslations['Window Mode'] }}
+                    </div>
+                    <div class="mode-item" @click="Qrequest(chatQWeb.setDisplayMode, 1)">
+                        <SvgIcon icon="ok-acitve" style="width: 10px;height: 10px;" />
+                        {{ useGlobalStore().loadTranslations['Sidebar Mode'] }}
+                    </div>
+                </div>
+            </div>
             <div class="close btn" @click="handleClose">
                 <svgIcon icon="close" style="width: 12px;" />
             </div>
         </div>
-    </div>
-</template>
-<script setup>
+    </div> -->
+<!-- </template> -->
+<!-- <script setup>
 import { useGlobalStore } from "@/store/global";
 import { Qrequest } from "@/utils";
 import { useRouter } from "vue-router";
@@ -47,9 +63,7 @@ const props = defineProps(['historyLength', 'recording', 'showStop', 'localmodel
 const emit = defineEmits(['update:playAudioID', 'sigAudioASRError', 'routeJump'])
 
 const tipCon = computed(() => {
-    if (
-        router.currentRoute.value.name == 'Chat'
-    ) {
+    if ( router.currentRoute.value.name == 'Chat' ) {
         return useGlobalStore().loadTranslations['Voice conversation'];
     } else {
         return useGlobalStore().loadTranslations['Turn off voice conversation'];
@@ -88,8 +102,12 @@ const handleClose = async () => {
     await Qrequest(chatQWeb.closeChatWindow)
 }
 const showSeting = ref(false)
-const handelOutside = () => setTimeout(() => showSeting.value = false, 0)
-defineExpose({ handelModel,showSeting })
+const showMode = ref(false)
+const handelOutside = () => {
+    setTimeout(() => showSeting.value = false, 0)
+    setTimeout(() => showMode.value = false, 0)
+}
+defineExpose({ handelModel, showSeting, showMode })
 </script>
 
 <style lang="scss" scoped>
@@ -106,7 +124,6 @@ defineExpose({ handelModel,showSeting })
     .logo {
         width: 30px;
         height: 30px;
-
         img {
             width: 30px;
             height: 30px;
@@ -115,7 +132,7 @@ defineExpose({ handelModel,showSeting })
 
     .title {
         color: var(--uosai-color-title);
-        font-size: 17px;
+        font-size: 1.21rem;
         font-weight: 600;
         position: absolute;
         top: 50%;
@@ -133,8 +150,6 @@ defineExpose({ handelModel,showSeting })
         align-items: center;
         justify-content: center;
     }
-
-
 
     .btn {
         position: relative;
@@ -186,19 +201,21 @@ defineExpose({ handelModel,showSeting })
         .seting-pop {
             position: absolute;
             top: 50px;
-            left: 0px;
+            left: -55px;
             // border: 1px solid rgba(0, 0, 0, 0.05);
             box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
             opacity: 1;
             background-color: rgba(255, 255, 255, 1);
             width: 150px;
+            height: 112px;
             border-radius: 8px;
-            height: 76px;
             padding-top: 8px;
             overflow: hidden;
 
-            .seting-item:first-child {
-                border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            .separator {
+                width: 150px;
+                height: 2px;
+                background-color: rgba(0, 0, 0, 0.1);
             }
 
             .seting-item {
@@ -207,7 +224,35 @@ defineExpose({ handelModel,showSeting })
                 line-height: 34px;
                 color: #000;
                 user-select: none;
-                font-size: 14px;
+                font-size: 1rem;
+
+                &:hover {
+                    background-color: var(--activityColor);
+                    color: #fff;
+                }
+            }
+        }
+
+        .mode-pop {
+            position: absolute;
+            top: 50px;
+            left: -205px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 1);
+            width: 150px;
+            height: 76px;
+            border-radius: 8px;
+            padding-top: 8px;
+            overflow: hidden;
+
+            .mode-item {
+                padding-left: 32px;
+                height: 34px;
+                line-height: 34px;
+                color: #000;
+                user-select: none;
+                font-size: 1rem;
 
                 &:hover {
                     background-color: var(--activityColor);
@@ -223,12 +268,13 @@ defineExpose({ handelModel,showSeting })
     .seting-pop {
         background-color: rgba(27, 27, 27, 1) !important;
 
-        .seting-item:first-child {
-            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+        .separator {
+            background-color: rgba(255, 255, 255, 0.05);
         }
 
         .seting-item {
             color: #fff !important;
         }
     }
-}</style>
+}
+</style> -->

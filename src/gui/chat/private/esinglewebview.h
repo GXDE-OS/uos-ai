@@ -32,12 +32,20 @@ public:
     void setToShowedState();
 
     void setToDigitalMode();
+    void setToChatMode();
 
     void addPendingTask(Task task);
 
     void setModalState(bool isModal);
 
     void setWindowActiveState(bool isActive);
+
+    void updateFont(const QString &fontFamily, int pixelSize);
+
+    void setWindowMode(bool isWindowMode = false);
+
+signals:
+    void voiceConversationStatusChanged(int status);
 
 private slots:
     void onLoadFinished(bool ok);

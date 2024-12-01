@@ -9,6 +9,7 @@ html {
     /* welcomePage */
     --uosai-color-tip-welcome: rgba(0, 0, 0, 0.7);
     --uosai-color-shortcut: rgba(0, 0, 0, 0.9);
+    --uosai-color-shortcut-title: rgba(0, 0, 0, 0.7);
     --uosai-color-shortcut-border: rgba(0, 0, 0, 0.05);
     --uosai-color-shortcut-shadow: rgba(0, 0, 0, 0.08);
     --uosai-color-shortcut-bg: rgba(255, 255, 255, 0.9);
@@ -19,6 +20,7 @@ html {
     --uosai-color-clear-hover: rgba(0, 0, 0, 1);
     --uosai-color-clear-bg: rgba(0, 0, 0, 0.05);
     --uosai-color-clear-hover-bg: rgba(0, 0, 0, 0.1);
+    --uosai-color-clear-press-bg: rgba(0, 0, 0, 0.2);
     /* SwitchModel */
     --uosai-color-modelbtn-bg: rgba(0, 0, 0, 0.05);
     --uosai-color-modelbtn-hover: rgba(0, 0, 0, 0.1);
@@ -26,6 +28,10 @@ html {
     --uosai-color-modelbtn: rgba(0, 0, 0, 0.7);
     --uosai-color-modelbtn-hover-color: rgba(0, 0, 0, 1);
     --uosai-color-switchmenu-bg: #fff;
+
+    /* AssistantModel */
+    --uosai-color-assistantmenu-bg: rgb(235, 235, 235);
+
     /* input-content */
     --uosai-color-inputcontent-bg: rgba(0, 0, 0, 0.08);
     --uosai-color-inputcontent-placeholder: rgba(0, 0, 0, 0.4);
@@ -43,7 +49,10 @@ html {
     --uosai-color-tip: rgba(0, 0, 0, 0.9);
     --uosai-color-model-name: rgba(0, 0, 0, 0.4);
     /* retry */
-    --uosai-bg-retry: #cccccc;
+    --uosai-bg-retry: rgba(255, 255, 255, 0.9);
+    --uosai-bg-retry-hover: rgba(243, 243, 243, 0.8);
+    --uosai-bg-retry-active: rgba(226, 226, 226, 0.8);
+    --uosai-bg-retry-disable: #cccccc;
     --uosai-border-color-retry: #E0E0E0;
     /* scroll */
     --uosai-color-scroll-bg: rgba(0,0,0,0.2);
@@ -51,6 +60,8 @@ html {
     
     --uosai-color-scroll-bg-press: rgba(0,0,0,0.45);
     --uosai-color-border:  rgba(0,0,0,0.05);
+
+    --uosai-bottom-tip-color: rgba(0, 0, 0, 0.4);
 }
 
 html.dark {
@@ -60,50 +71,61 @@ html.dark {
     --uosai-color-svgbtn-hover: rgba(255, 255, 255, 1);
     --uosai-color-svgbtn-bg: rgba(255, 255, 255, .05);
     /* welcomePage */
-    --uosai-color-tip-welcome: rgba(255, 255, 255, 0.7);
-    --uosai-color-shortcut: rgba(255, 255, 255, 0.90);
+    --uosai-color-tip-welcome: #fff;
+    --uosai-color-shortcut: #fff;
+    --uosai-color-shortcut-title: rgba(255, 255, 255, 0.7);
     --uosai-color-shortcut-border: rgba(255, 255, 255, 0.05);
     --uosai-color-shortcut-shadow: rgba(0, 0, 0, 0.08);
-    --uosai-color-shortcut-bg: rgba(255, 255, 255, 0.10);
-    --uosai-color-shortcut-hover: rgba(255, 255, 255, 0.20);
-    --uosai-color-shortcut-active: rgba(0, 0, 0, 0.1);
+    --uosai-color-shortcut-bg: #343638;
+    --uosai-color-shortcut-hover: #5c5c5c;
+    --uosai-color-shortcut-active: #3a3a3a;
     /* clear-btn */
     --uosai-color-clear: rgba(255, 255, 255, 0.70);
     --uosai-color-clear-hover: rgba(255, 255, 255, 1);
-    --uosai-color-clear-bg: rgba(255, 255, 255, 0.10);
-    --uosai-color-clear-hover-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-clear-bg: #3d3d3d;
+    --uosai-color-clear-hover-bg: #474747;
+    --uosai-color-clear-press-bg: #2e2e2e;
 
     /* SwitchModel */
-    --uosai-color-modelbtn-bg: rgba(255, 255, 255, 0.05);
-    --uosai-color-modelbtn-hover: rgba(255, 255, 255, 0.1);
-    --uosai-color-modelbtn-active: rgba(0, 0, 0, 0.1);
+    --uosai-color-modelbtn-bg: #3d3d3d;
+    --uosai-color-modelbtn-hover: #474747;
+    --uosai-color-modelbtn-active: #2e2e2e;
     --uosai-color-modelbtn: rgba(255, 255, 255, 0.70);
     --uosai-color-modelbtn-hover-color: rgba(255, 255, 255, 1);
 
     --uosai-color-switchmenu-bg: rgba(27, 27, 27, 1);
-    /* input-content */
-    --uosai-color-inputcontent-bg: rgba(255, 255, 255, 0.08);
-    --uosai-color-inputcontent-placeholder: rgba(255, 255, 255, 0.40);
-    --uosai-color-inputcontent: #fff;
-    --uosai-color-voicebtn-bg: rgba(255, 255, 255, 0.10);
 
+    /* AssistantModel */
+    --uosai-color-assistantmenu-bg: rgb(43, 43, 43);
+
+    /* input-content */
+    --uosai-color-inputcontent-bg: #434343;
+    --uosai-color-inputcontent-placeholder: rgba(255, 255, 255, 0.4);
+    --uosai-color-inputcontent: #fff;
+    /* voice btn */
+    --uosai-color-voicebtn-bg: #555555;
     --uosai-color-voicebtn-bg-hover: rgba(255, 255, 255, 0.20);
     --uosai-color-voicebtn-bg-active: rgba(0, 0, 0, 0.1);
     /* ChatBubble */
-    --uosai-color-assistant-bg: rgba(176, 176, 176, 0.20);
+    --uosai-color-assistant-bg: #515151;
     --uosai-color-imgbubble-bg: rgba(255, 255, 255, 0.1);
     --uosai-color-imgbubble-hover: rgba(255, 255, 255, 0.2);
-    --uosai-color-stop-bg: rgba(255, 255, 255, 0.10);
+    --uosai-color-stop-bg: #343638;
     --uosai-color-tip-bg: #2c2c2c;
     --uosai-color-tip: #C0C6D4;
     --uosai-color-model-name: rgba(255, 255, 255, 0.50);
     /* retry */
-    --uosai-bg-retry: #252525;
-    --uosai-border-color-retry: #2a2a2a;
+    --uosai-bg-retry: #474747;
+    --uosai-bg-retry-hover: #525252;
+    --uosai-bg-retry-active: #2e2e2e;
+    --uosai-bg-retry-disable: #3b3b3b;
+    --uosai-border-color-retry: #525252;
     /* scroll */
     --uosai-color-scroll-bg: rgba(255,255,255,0.15);
     --uosai-color-scroll-bg-hover: rgba(255,255,255,0.2);
 
     --uosai-color-border:  rgba(255,255,255,0.05);
+
+    --uosai-bottom-tip-color: #fff;
 
 }

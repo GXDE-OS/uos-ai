@@ -467,13 +467,21 @@ QString DeepinLauncher::getAppIdFromAbsolutePath(const QString &path)
     }
 
     auto tmp = path.chopped(desktopSuffix.size());
+#if QT_VERSION < QT_VERSION_CHECK(5,14,0)
+    auto components = tmp.split(QDir::separator(), QString::SkipEmptyParts);
+#else
     auto components = tmp.split(QDir::separator(), Qt::SkipEmptyParts);
+#endif
     auto location = std::find(components.cbegin(), components.cend(), "applications");
     if (location == components.cend()) {
         return {};
     }
 
-    auto appId = QStringList{location + 1, components.cend()}.join('-');
+    QStringList tmpLocation;
+    for (auto it = location + 1; it != components.cend(); ++it)
+        tmpLocation << *it;
+
+    auto appId = tmpLocation.join('-');
     return appId;
 }
 

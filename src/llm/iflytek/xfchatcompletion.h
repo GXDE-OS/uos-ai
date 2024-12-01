@@ -9,7 +9,7 @@ class XFChatCompletion : public XFNetWork
 public:
     explicit XFChatCompletion(const AccountProxy &account, QObject *parent = nullptr);
 
-    QPair<int, QString> create(int model, XFConversation &conversation, qreal temperature = 1.0);
+    QPair<int, QString> create(int model, const QString &url, XFConversation &conversation, qreal temperature = 1.0);
 };
 
 #endif // XFCHATCOMPLETION_H

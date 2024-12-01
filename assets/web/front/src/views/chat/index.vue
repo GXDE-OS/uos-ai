@@ -1,14 +1,32 @@
 <template>
     <div class="main-content">
-        <ChatTop ref="chatTopRef" :historyLength="history.length" v-model:playAudioID="playAudioID" :recording="recording"
-            :showStop="showStop" :localmodel="currentAccount.model === 1000" @sigAudioASRError="sigAudioASRError" />
-        <WelcomePage ref="welcomePageRef" v-model:question="question" :recording="recording" :historyLength="history.length"
+        <ChatTop />
+        <WelcomePage ref="welcomePageRef" 
+            v-model:question="question" 
+            :recording="recording" 
+            :historyLength="history.length"
+            :currentAssistant="currentAssistant"
+            :isKnowledgeBaseExist="isKnowledgeBaseExist"
+            :isLLMExist="isLLMExist"
+            :currentAccount="currentAccount"
             v-show="history.length === 0" />
         <div class="chat-history" v-show="history.length > 0">
-            <custom-scrollbar :autoHideDelay="2000" :thumbWidth="10" :wrapperStyle="{height: '100%'}" class="history-scrollbar" id="chatHistory" :style="{ width: '100%', height: '100%' ,paddingRight: '20px'}">
-                <ChatBubble v-for="(item, index) in history" v-model:playAudioID="playAudioID" :item="item" :showStop="showStop"
-                :isLast="history.length === index + 1" :recording="recording" :netState="netState" :hasOutput="hasOutput"
-                @handleShowTip="handleShowTip" @retryRequest="retryRequest" />
+            <custom-scrollbar class="history-scrollbar" id="chatHistory" 
+                :autoHideDelay="2000" :thumbWidth="6" 
+                :wrapperStyle="{height: '100%'}" :style="{ width: '100%', height: '100%'}" >
+                <div class="bubble-div">
+                    <ChatBubble v-for="(item, index) in history" :key="index"
+                        v-model:playAudioID="playAudioID" 
+                        :item="item" :showStop="showStop"
+                        :isLast="history.length === index + 1" 
+                        :recording="recording" 
+                        :netState="netState" 
+                        :hasOutput="hasOutput"
+                        @handleShowTip="handleShowTip" 
+                        @retryRequest="retryRequest" 
+                        :currentAssistant="currentAssistant"
+                    />
+                </div>
             </custom-scrollbar>
         </div>
         <div class="chat-bottom">
@@ -17,8 +35,6 @@
                     {{ topTipMsg }}
                 </div>
                 <div class="tip-item" v-show="showCount" v-if="store.loadTranslations['Stop recording after %1 seconds']">
-                    <!-- {{ countDown }}S后停止录音 -->
-
                     {{ store.loadTranslations['Stop recording after %1 seconds'].replace('%1', countDown) }}
                 </div>
                 <div class="top-stop tip-item" v-show="showStop"  @click="stopRequest">
@@ -33,26 +49,36 @@
                         <SvgIcon icon="clear" />
                     </div>
                 </el-tooltip>
-                <SwitchModel ref="switchModel" v-model:currentAccount="currentAccount" v-model:accountList="accountList"
-                    :disabled="disabled || recording" />
+                <SwitchModel ref="switchModel" v-model:currentAccount="currentAccount" v-model:accountList="accountList" 
+                    v-model:assistantList="assistantList" v-model:currentAssistant="currentAssistant"
+                    :disabled="disabled || recording"  @update:currentAssistant="updateCurAssistant"/>
             </div>
-            <div class="input-content" :class="{ 'foucs': isFocus }">
-                <el-input style="display: none;"></el-input>
-                <el-input v-model="question" ref="questionInput" resize="none" :autosize="{ minRows: 4, maxRows: 10 }"
-                    type="textarea" :placeholder="store.loadTranslations['Input question']" @focus="isFocus = true"
-                    @blur="isFocus = false" @keydown.enter.native="handeleEnter" :disabled="recording" />
+            <div class="input-content" :class="{ 'foucs': isFocus}">
+                <!-- <el-input style="display: none;"></el-input> -->
+                <el-input v-model="question" 
+                    ref="questionInput" 
+                    resize="none"
+                    :autosize="{ minRows: 4, maxRows: 10 }"
+                    type="textarea" 
+                    :placeholder="store.loadTranslations['Input question']" 
+                    @focus="isFocus = true"
+                    @blur="isFocus = false" 
+                    @keydown.enter.native="handeleEnter" 
+                    :disabled="recording || (currentAssistant.type === store.AssistantType.PERSONAL_KNOWLEDGE_ASSISTANT && !isKnowledgeBaseExist)" />
                 <div class="send-btn">
-
                     <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                         :show-after="1000" :offset="2"
                         :content="netState ? !isAudioInput ? store.loadTranslations['Please connect the microphone and try again'] : store.loadTranslations['Voice input'] : store.loadTranslations['Voice input is temporarily unavailable, please check the network!']">
                         <div class="voice-btn btn"
-                            :class="{ recording, disabled: !isAudioInput || showStop || !netState, notalking: audioLevel === 0 }"
+                            :class="{ recording, disabled: !isAudioInput || showStop || !netState || 
+                                (currentAssistant.type === store.AssistantType.PERSONAL_KNOWLEDGE_ASSISTANT && !isKnowledgeBaseExist)
+                                , notalking: audioLevel === 0 }"
                             @click="handleRecorder">
                             <SvgIcon icon="voice" />
                         </div>
                     </el-tooltip>
-                    <div class="send btn" :class="{ 'disabled': question.trim().length === 0 || disabled }"
+                    <div class="send btn" :class="{ 'disabled': question.trim().length === 0 || disabled 
+                        || (currentAssistant.type === store.AssistantType.PERSONAL_KNOWLEDGE_ASSISTANT && !isKnowledgeBaseExist)}"
                         @click="sendQuestion">
                         <SvgIcon icon="send" />
                     </div>
@@ -64,6 +90,7 @@
         </div>
     </div>
 </template>
+
 <script setup>
 import { useGlobalStore } from "@/store/global";
 import { Qrequest } from "@/utils";
@@ -75,11 +102,12 @@ import ChatTop from "./components/ChatTop.vue";
 import CustomScrollbar from 'custom-vue-scrollbar';
 import 'custom-vue-scrollbar/dist/style.css';
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
-const { chatQWeb, updateActivityColor, updateTheme } = useGlobalStore()
+const router = useRouter();
+const { chatQWeb, updateActivityColor, updateTheme, updateFont } = useGlobalStore()
 const store = useGlobalStore()
 const instance = getCurrentInstance()
-console.log(chatQWeb)
 const question = ref('')
 const isFocus = ref(false)
 const showTopTip = ref(false)
@@ -88,8 +116,12 @@ const showStop = ref(false)
 const topTipMsg = ref('')
 const history = ref([])
 const accountList = ref([])
+const assistantList = ref([])
 const currentAccount = ref('')
+const currentAssistant = ref('')
 const playAudioID = ref('')
+const isKnowledgeBaseExist = ref(false)
+const isLLMExist = ref(false)
 const disabled = computed(() => {
     return showStop.value
 })
@@ -97,21 +129,39 @@ const isAudioInput = ref(false)
 const initChat = async () => {
     const _history = await Qrequest(chatQWeb.getAiChatRecords, false)
     const resAccount = await Qrequest(chatQWeb.queryLLMAccountList)
-    const resID = await Qrequest(chatQWeb.currentLLMAccountId)
+    const resCurAccountID = await Qrequest(chatQWeb.currentLLMAccountId)
+    const resAssistant = await Qrequest(chatQWeb.queryAssistantList)
+    const resCurAssistantID = await Qrequest(chatQWeb.currentAssistantId)
     isAudioInput.value = await Qrequest(chatQWeb.isAudioInputAvailable)
-    hasOutput.value =  await Qrequest(chatQWeb.isAudioOutputAvailable)
-    netState.value =  await Qrequest(chatQWeb.isNetworkAvailable)
+    hasOutput.value = await Qrequest(chatQWeb.isAudioOutputAvailable)
+    netState.value = await Qrequest(chatQWeb.isNetworkAvailable)
+    isKnowledgeBaseExist.value = await Qrequest(chatQWeb.isKnowledgeBaseExist)
+
     history.value = JSON.parse(_history)
     console.log(history.value)
+
+    console.log("assistant list: ", resAssistant);
+    console.log("current assistant id: ", resCurAssistantID);
+    if (resAssistant) {
+        const list = JSON.parse(resAssistant);
+        assistantList.value = list;
+        list.forEach(element => {
+            if (element.id === resCurAssistantID) {
+                element.active = true
+                currentAssistant.value = element
+            }
+        });
+    }
     if (resAccount) {
         const list = JSON.parse(resAccount)
+        isLLMExist.value = list.length > 0;
         list.forEach(element => {
-            if (element.id === resID) {
+            if (element.id === resCurAccountID) {
                 element.active = true
                 currentAccount.value = element
             }
         });
-        accountList.value = list
+        accountList.value = list;
     }
     nextTick(() => handelScrol())
 }
@@ -129,12 +179,17 @@ const sendQuestion = async () => {
     await Qrequest(chatQWeb.stopPlayTextAudio)
     playAudioID.value = ''
     if (recording.value) sigAudioASRError()
+    
+    const { id, model, icon, displayname } = currentAccount.value
+    const res = await Qrequest(chatQWeb.sendAiRequest, id ? id : '', model ? model : '', 1, question.value, 2)
+    if (res.length <= 0)
+        return;
+
     history.value.push({
         role: 'user',
         content: question.value
     })
-    const { id, model, icon, displayname } = currentAccount.value
-    const res = await Qrequest(chatQWeb.sendAiRequest, id ? id : '', model ? model : '', 1, question.value, 2)
+
     history.value.push({
         role: 'assistant',
         anwsers: [
@@ -181,9 +236,14 @@ const handleShowTip = (msg) => {
     }, 3000)
 }
 
+const updateCurAssistant = async (assistant) => {
+    console.log("current assistant id changed: ", assistant.id);
+    const _history = await Qrequest(chatQWeb.getAiChatRecords, false)
+    history.value = JSON.parse(_history)
+}
 // 接受AI文本信息
 const sigAiReplyStream = (type, value, status) => {
-    console.log({ type, value, status })
+    console.log("sigAiReplyStream: ", { type, value, status })
     if (status === 0) {
         _.last(_.last(history.value).anwsers).content = _.last(_.last(history.value).anwsers).content + value
     } else if (status === 200) {
@@ -259,7 +319,7 @@ const handleRecorder = async () => {
         isAudioInput.value = await Qrequest(chatQWeb.isAudioInputAvailable)
         await Qrequest(chatQWeb.stopPlayTextAudio)
         if (isAudioInput.value) {
-            await Qrequest(chatQWeb.startRecorder)
+            await Qrequest(chatQWeb.startRecorder, 0)
             const insert = questionInput.value.textarea.selectionStart;
             startQus.value = questionInput.value.textarea.value.substr(0, insert)
             endQus.value = questionInput.value.textarea.value.substr(insert)
@@ -270,8 +330,23 @@ const handleRecorder = async () => {
 }
 
 // AI模型列表更新
-const llmAccountLstChanged = (id, list) => instance.proxy.$Bus.emit("llmAccountLstChanged", { id, list })
-
+const llmAccountLstChanged = (id, list) => {
+    isLLMExist.value = id.trim().length > 0;
+    console.log("index.vue: llmAccountLstChanged.........  id: ", id);
+    console.log("index.vue: llmAccountLstChanged.........  list: ", list);
+    if (list) {
+        const accounts = JSON.parse(list)
+        isLLMExist.value = accounts.length > 0;
+        accounts.forEach(element => {
+            if (element.id === id) {
+                element.active = true
+                currentAccount.value = element
+            }
+        });
+        accountList.value = list;
+    }
+    instance.proxy.$Bus.emit("llmAccountLstChanged", { id, list });
+}
 
 const questionInput = ref()
 const sigAudioASRStream = (res, isEnd) => {
@@ -291,9 +366,9 @@ const countDown = ref(0)
 const showCount = ref(false)
 const sigAudioCountDown = (res) => {
     countDown.value = res
-    if(res>0) showCount.value = true
-    if(res===0) {
-        setTimeout(()=>showCount.value = false,1000)
+    if (res > 0) showCount.value = true
+    if (res === 0) {
+        setTimeout(() => showCount.value = false, 1000)
     }
 }
 
@@ -318,13 +393,15 @@ const sigAudioInputDevChange = (res) => {
     if (!res) recording.value = false
 }
 const hasOutput = ref(true)
-const sigAudioOutputDevChanged = (res) => { 
+const sigAudioOutputDevChanged = (res) => {
     if (!res) playAudioID.value = ''
     hasOutput.value = res
 }
 
 const sigChatConversationType = (id, type) => {
     // console.log(id, action)
+    if (_.last(history.value) === undefined)
+        return;
     _.last(_.last(history.value).anwsers).type = type
 }
 // 接受AI图片信息
@@ -346,7 +423,7 @@ const sigWebchat2BeHiden = () => {
     playAudioID.value = ''
     welcomePageRef.value.getAiFAQ()
     sigAudioASRError()
-}
+    }
 // 监听AI进程被杀
 // const connectStateChanged = (status) => instance.proxy.$Bus.emit("connectStateChanged", status)
 // 活动色改变
@@ -354,15 +431,31 @@ const sigActiveColorChanged = (res) => updateActivityColor(res)
 const audioLevel = ref(0)
 const sigAudioSampleLevel = (res) => audioLevel.value = res
 const sigThemeChanged = (res) => updateTheme(res)
+const sigFontChanged = (family, pixelSize) => updateFont(family, pixelSize)
 const netState = ref(true)
-const sigNetStateChanged = (res) => netState.value = res
+const sigNetStateChanged = (res) => {
+    netState.value = res;
+    if (recording.value) {
+        recording.value = false;
+        Qrequest(chatQWeb.stopRecorder)
+    }
+}
 //ctrl+super+c跳转到数字人
-const chatTopRef = ref()
+// const chatTopRef = ref()
 const sigDigitalModeActive = () => {
-    if (currentAccount.value.model === 1000|| showStop.value|| recording.value) return;
-    chatTopRef.value.handelModel();
+    if (router.currentRoute.value.name == "DigitalImage") {
+
+    } else {
+        Qrequest(chatQWeb.stopPlayTextAudio)
+        router.push("/DigitalImage");
+    }
 };
-const handleActive = (res) =>{
+
+const sigChatModeActive = () => {
+    
+}
+
+const handleActive = (res) => {
     let maskDom = document.querySelector('#drop-mask');
     if (!maskDom) {
         maskDom = document.createElement("div");
@@ -374,15 +467,32 @@ const handleActive = (res) =>{
     maskDom.style.display = res ? 'flex' : 'none'
 }
 const switchModel = ref()
-const sigWebchatActiveChanged = (res)=> {
-    
-    if(!res) {
+const sigWebchatActiveChanged = (res) => {
+    if (!res) {
         switchModel.value.showSwitchMenu = false
-        chatTopRef.value.showSeting = false
+        // chatTopRef.value.showSeting = false
     }
     // handleActive(res)
 }
 const sigWebchatModalityChanged = (res) => handleActive(res)
+
+const sigKnowledgeBaseStatusChanged = (status) => {
+    console.log("knowledge base status changed: ", status);
+    isKnowledgeBaseExist.value = status;
+}
+// const sigKnowledgeBaseFAQGenFinished = () => {
+
+// }
+
+function handleKeyDown(event) {
+    if (event.key === "Enter") {
+        event.stopPropagation()
+        event.preventDefault()
+        console.log('chat')
+        sendQuestion()
+    }
+}
+
 const responseAIFunObj = {
     sigAiReplyStream,
     llmAccountLstChanged,
@@ -398,22 +508,18 @@ const responseAIFunObj = {
     sigChatConversationType,
     sigText2PicFinish,
     sigThemeChanged,
+    sigFontChanged,
     sigWebchat2BeHiden,
     sigAudioSampleLevel,
     sigNetStateChanged,
     sigDigitalModeActive,
+    sigChatModeActive,
     sigWebchatActiveChanged,
-    sigWebchatModalityChanged
-    // connectStateChanged
+    sigWebchatModalityChanged,
+    sigKnowledgeBaseStatusChanged
+    // sigKnowledgeBaseFAQGenFinished
 }
-function handleKeyDown(event) {
-    if (event.key === "Enter") {
-        event.stopPropagation()
-        event.preventDefault()
-        console.log('chat')
-        sendQuestion()
-    }
-}
+
 onMounted(async () => {
     for (const key in responseAIFunObj) {
         if (Object.hasOwnProperty.call(responseAIFunObj, key)) {
@@ -425,6 +531,11 @@ onMounted(async () => {
 
     useGlobalStore().loadTranslations = await Qrequest(chatQWeb.loadTranslations)
     console.log(useGlobalStore().loadTranslations)
+
+    var fontInfo = await Qrequest(chatQWeb.fontInfo);
+    var fontInfoList = fontInfo.split('#');
+    document.documentElement.style.fontFamily = fontInfoList[0];
+    document.documentElement.style.fontSize = fontInfoList[1] + 'px';
 })
 onBeforeUnmount(() => {
     for (const key in responseAIFunObj) {
@@ -439,29 +550,40 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .main-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* 垂直方向顺序布局 */  
+    align-items: center; /* 水平方向居中 */  
+    justify-content: center; /* 垂直方向居中 */
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 
     .chat-history {
-        padding: 15px 0px 15px 20px;
+        width: calc(100% - 8px);
+        padding: 15px 0;
+        max-width: 1020px;
         flex: 1 1 0;
-        margin-right: 3px;
-        margin-top: -25px;
         overflow: hidden;
-        .history-scrollbar{
+        // background-color: aquamarine;
+
+        .history-scrollbar {
             overflow-y: overlay;
             overflow-x: hidden;
             height: 100%;
+
+            .bubble-div {
+                width: calc(100% - 12px);
+                margin-left: 16px;
+            }
         }
     }
 
     .chat-bottom {
-        padding: 0 10px;
+        padding: 0;
         margin-top: auto;
         margin-bottom: 10px;
         position: relative;
+        max-width: 1000px;
+        width: calc(100% - 20px);
 
         .handle-tip {
             position: absolute;
@@ -471,7 +593,7 @@ onBeforeUnmount(() => {
 
             .tip-item {
                 color: var(--uosai-color-tip);
-                font-size: 13px;
+                font-size: 0.93rem;
                 font-weight: 500;
                 font-style: normal;
                 padding: 6px 15px;
@@ -490,21 +612,23 @@ onBeforeUnmount(() => {
                 color: var(--activityColor);
                 background-color: var(--uosai-color-stop-bg);
                 border-radius: 8px;
+                display: flex;
+                align-items: center;
 
                 cursor: pointer;
                 box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
                 border: none;
+
                 svg {
                     width: 15px;
                     height: 15px;
-                    margin-bottom: -3px;
+                    margin-right: 4px;
                 }
             }
         }
 
-
-
         .top {
+            position: relative;
             margin-bottom: 10px;
             padding-left: 5px;
             display: flex;
@@ -513,7 +637,7 @@ onBeforeUnmount(() => {
             .clear {
                 width: 36px;
                 height: 36px;
-                background-color: var(--uosai-color-shortcut-bg);
+                background-color: var(--uosai-color-clear-bg);
                 border-radius: 8px;
                 display: flex;
                 align-items: center;
@@ -522,7 +646,7 @@ onBeforeUnmount(() => {
                 margin-right: auto;
 
                 &:not(.disabled):hover {
-                    background-color: var(--uosai-color-shortcut-hover);
+                    background-color: var(--uosai-color-clear-hover-bg);
 
                     svg {
                         fill: var(--uosai-color-clear-hover);
@@ -530,7 +654,7 @@ onBeforeUnmount(() => {
                 }
 
                 &:not(.disabled):active {
-                    background-color: var(--uosai-color-shortcut-active);
+                    background-color: var(--uosai-color-clear-press-bg);
 
                     svg {
                         fill: var(--activityColor);
@@ -543,12 +667,10 @@ onBeforeUnmount(() => {
                     fill: var(--uosai-color-clear);
                 }
             }
-
         }
 
         .input-content {
             min-height: 120px;
-            height: auto;
             border-radius: 8px;
             opacity: 1;
             background-color: var(--uosai-color-inputcontent-bg);
@@ -556,22 +678,24 @@ onBeforeUnmount(() => {
             padding-bottom: 8px;
             border: 2px solid rgba(0, 0, 0, 0);
 
-
             &.foucs {
                 border: 2px solid var(--activityColor);
             }
 
             :deep(.el-textarea) {
                 padding-top: 10px;
+                max-height: 185px;
+
                 .el-textarea__inner {
                     box-shadow: none;
                     background: none;
                     color: var(--uosai-color-inputcontent);
-                    font-size: 13px;
+                    max-height: 185px;
+                    // font-size: 0.93rem;  // 会影响高度
 
                     &::placeholder {
                         color: var(--uosai-color-inputcontent-placeholder);
-                        font-size: 13px;
+                        font-size: 0.93rem;
                         font-weight: 500;
                         user-select: none;
                     }
@@ -580,6 +704,7 @@ onBeforeUnmount(() => {
                         background: none;
                         width: 6px;
                         height: 6px;
+
                         &:hover {
                             width: 8px;
                             height: 8px;
@@ -605,6 +730,7 @@ onBeforeUnmount(() => {
                 display: flex;
                 justify-content: flex-end;
                 margin-top: 6px;
+                // background-color: violet;
 
                 .btn {
                     // box-shadow: 0px 4px 6px rgba(44, 167, 248, 0.4);
@@ -765,14 +891,13 @@ onBeforeUnmount(() => {
                     &.notalking::after {
                         animation: notalking2 0.8s ease-in-out infinite;
                         animation-direction: alternate-reverse;
-
                     }
                 }
             }
         }
 
         .tip {
-            color: var(--uosai-color-inputcontent-placeholder);
+            color: var(--uosai-bottom-tip-color);
             font-size: 12px;
             font-weight: 500;
             font-style: normal;
@@ -782,8 +907,9 @@ onBeforeUnmount(() => {
         }
     }
 }
+
 .dark {
-    .top-stop{
+    .top-stop {
         box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
     }
 }

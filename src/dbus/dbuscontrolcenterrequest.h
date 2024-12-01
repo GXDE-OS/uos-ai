@@ -11,6 +11,7 @@ public:
     explicit DbusControlCenterRequest(QObject *parent = nullptr);
 
     void showPage(const QString &module, const QString &page);
+    void showPage(const QString &page);
 
 public slots:
     void slotCallFinished(CDBusPendingCallWatcher *) override;

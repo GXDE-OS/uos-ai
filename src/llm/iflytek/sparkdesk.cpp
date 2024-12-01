@@ -21,7 +21,7 @@ QJsonObject SparkDesk::predict(const QString &conversation, const QJsonArray &fu
     connect(this, &SparkDesk::aborted, &chatCompletion, &XFChatCompletion::requestAborted);
     connect(&chatCompletion, &XFChatCompletion::readyReadDeltaContent, this, &SparkDesk::onReadyReadChatDeltaContent);
 
-    QPair<int, QString> errorPair = chatCompletion.create(m_accountProxy.model, conversion, temperature);
+    QPair<int, QString> errorPair = chatCompletion.create(m_accountProxy.model, m_accountProxy.url, conversion, temperature);
     setLastError(errorPair.first);
     setLastErrorString(errorPair.second);
 
@@ -64,7 +64,7 @@ QPair<int, QString> SparkDesk::verify()
     XFChatCompletion chatCompletion(m_accountProxy.account);
     connect(this, &SparkDesk::aborted, &chatCompletion, &XFChatCompletion::requestAborted);
 
-    QPair<int, QString> errorPair = chatCompletion.create(m_accountProxy.model, conversion);
+    QPair<int, QString> errorPair = chatCompletion.create(m_accountProxy.model, m_accountProxy.url, conversion);
     setLastError(errorPair.first);
     setLastErrorString(errorPair.second);
 

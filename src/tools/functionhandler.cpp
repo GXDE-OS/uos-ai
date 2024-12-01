@@ -146,7 +146,7 @@ QString FunctionHandler::functionPluginPath()
     return pluginPath;
 }
 
-QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJsonObject fun)
+QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJsonObject fun, QString *directReply)
 {
     const QString &name = fun.value("name").toString();
     const QStringList &funName = name.split(function_split);
@@ -154,7 +154,6 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
 
     bool execResult = false;
     QString outputString = QCoreApplication::translate("ChatSeesion", "function parsing failed");
-
     const QJsonObject &appFunctionObj = appFunctions.value(funName.value(0)).toObject();
     QString appId = appFunctionObj.value("appid").toString();
     if (qApp->applicationName()  == appId) {
@@ -169,6 +168,9 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
 
         execResult = funParser.exitCode() == 0 ? true : false;
         outputString = funParser.outputString();
+
+        if (directReply)
+            *directReply = funParser.directOutput();
     } else {
         ServerWrapper::instance()->addAppFunction(appId, fun);
         QString exec = appFunctionObj.value("exec").toString();
@@ -179,13 +181,18 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
         } else {
             QProcess process;
             process.setProcessEnvironment(UosInfo()->pureEnvironment());
-            execResult = process.startDetached(exec, QStringList() << "--functioncall");
+            process.setArguments(QStringList() << "--functioncall");
+            process.setProgram(exec);
+            qint64 pid = 0;
+            execResult = process.startDetached(&pid);
             if (!execResult)
                 outputString = process.errorString();
             else
                 outputString.clear();
 
-            qInfo() << "start process " << exec << process.exitStatus() << outputString;
+            qInfo() << "start process " << exec  << "pid" << pid << process.exitStatus()
+                    << outputString;
+            qDebug() << "with environment" << UosInfo()->pureEnvironment().toStringList();
         }
     }
 
@@ -197,13 +204,13 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
     }
 
     if (!outputString.isEmpty()) {
-        resArguments["description"] = resArguments["description"].toString() + QCoreApplication::translate("ChatSeesion", "The execution output content is ") + outputString ;
+        resArguments["description"] = resArguments["description"].toString() + QCoreApplication::translate("ChatSeesion", " The execution output content is ") + outputString ;
     }
 
     return resArguments;
 }
 
-QJsonArray FunctionHandler::functionCall(const QJsonObject &response, const QString &conversation)
+QJsonArray FunctionHandler::functionCall(const QJsonObject &response, const QString &conversation, QString *directReply)
 {
     bool query = false;
     QJsonObject appFunctions = FunctionHandler::queryAppFunctions(query);
@@ -229,7 +236,7 @@ QJsonArray FunctionHandler::functionCall(const QJsonObject &response, const QStr
             {"content", QJsonValue::Null}
         });
 
-        const QJsonObject &resArguments = functionProcess(appFunctions, fun);
+        const QJsonObject &resArguments = functionProcess(appFunctions, fun, directReply);
 
         functionCalls << QJsonObject({
             {"role", "function"},
@@ -251,7 +258,7 @@ QJsonArray FunctionHandler::functionCall(const QJsonObject &response, const QStr
 
         for (const QJsonValue &tool_call : tool_calls) {
             const QJsonObject &fun = tool_call["function"].toObject();
-            const QJsonObject &resArguments = functionProcess(appFunctions, fun);
+            const QJsonObject &resArguments = functionProcess(appFunctions, fun, directReply);
 
             functionCalls << QJsonObject({
                 {"role", "tool"},

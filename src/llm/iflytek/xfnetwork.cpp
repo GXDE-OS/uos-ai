@@ -11,6 +11,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QUrlQuery>
+#include <QRegularExpression>
 
 XFNetWork::XFNetWork(const AccountProxy &account, QObject *parent)
     : QObject(parent)
@@ -40,13 +41,25 @@ QJsonObject XFNetWork::header() const
     };
 }
 
-QJsonObject XFNetWork::parameter(int model, qreal temperature) const
+QJsonObject XFNetWork::parameter(int model, qreal temperature, const QString &url) const
 {
     QString domain;
     if (model == LLMChatModel::SPARKDESK_2) {
         domain = "generalv2";
     } else if (model == LLMChatModel::SPARKDESK_3) {
         domain = "generalv3";
+    } else if (model == LLMChatModel::SPARKDESK && !url.isEmpty()) {
+        QRegularExpression regex("v(\\d+\\.\\d+)");
+        QRegularExpressionMatch match = regex.match(url);
+        if(match.hasMatch()){
+            QString version = match.captured(1);
+            if (version == "1.1")
+                domain = "general";
+            else if (version == "2.1")
+                domain = "generalv2";
+            else if (version == "3.1")
+                domain = "generalv3";
+        }
     } else {
         domain = "general";
     }
@@ -90,11 +103,8 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
     connect(websocket.data(), &QWebSocket::connected, [websocket, sendData]() {
         websocket->sendTextMessage(sendData);
     });
-
     connect(websocket.data(), QOverload<QAbstractSocket::SocketError>::of(&QWebSocket::error), [ &loop, &retError, websocket](QAbstractSocket::SocketError error) {
-        if (error != QAbstractSocket::RemoteHostClosedError)
-            retError = error;
-
+        retError = error;
         qWarning() << websocket->errorString();
         loop.quit();
     });
@@ -109,10 +119,15 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
     });
 
     QByteArray responseData;
-    connect(websocket.data(), &QWebSocket::textMessageReceived, [&loop, &responseData, this](const QString & message) {
+    bool wssSuccess = false;
+    connect(websocket.data(), &QWebSocket::textMessageReceived, [&loop, &responseData, &wssSuccess, this](const QString & message) {
         loop.resetTime();
 
         responseData += message.toUtf8();
+
+        QJsonObject msgHeaderObj = QJsonDocument::fromJson(message.toUtf8()).object().value("header").toObject();
+        wssSuccess = msgHeaderObj["code"].toInt() ? false : true;
+
         emit readyReadDeltaContent(message.toUtf8());
     });
 
@@ -130,6 +145,9 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
         serverError = AIServer::OperationCanceledError;
 
     const QJsonObject &headerobject = QJsonDocument::fromJson(responseData).object().value("header").toObject();
+    if (wssSuccess)
+        serverError = AIServer::NoError;
+
     if (headerobject.contains("code") && headerobject.value("code").toInt() > 0) {
         int code = headerobject.value("code").toInt();
         QString message = headerobject.value("message").toString();

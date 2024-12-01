@@ -141,7 +141,7 @@ QPair<int, QString> AudioControler::formatError(int code, QString errorMessage)
 {
     if (!NetworkMonitor::getInstance().isOnline() && Local != m_audioModel) {
         code = AIServer::NetworkError;
-        errorMessage = QCoreApplication::translate("AudioControler", "Connection failed, please check the network.");;
+        errorMessage = QCoreApplication::translate("AudioControler", "Unable to connect to the server, please check your network or try again later.");
     }
 
     return qMakePair(code, errorMessage);

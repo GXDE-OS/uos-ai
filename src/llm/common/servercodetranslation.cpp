@@ -7,9 +7,11 @@ QString ServerCodeTranslation::serverCodeTranslation(int code, const QString &me
 {
     QString msg;
     switch (code) {
+    case AIServer::RemoteHostClosedError:
     case AIServer::TimeoutError:
     case AIServer::NetworkError:
-        msg = QCoreApplication::translate("ServerCodeTranslation", "Connection exception, please try again later.");
+    case AIServer::UnknownNetworkError:
+        msg = QCoreApplication::translate("ServerCodeTranslation", "Unable to connect to the server, please check your network or try again later.");
         break;
     case AIServer::AuthenticationRequiredError:
         msg = QCoreApplication::translate("ServerCodeTranslation", "Connection failed, please check the fill in information.");
@@ -25,6 +27,12 @@ QString ServerCodeTranslation::serverCodeTranslation(int code, const QString &me
         break;
     case AIServer::FREEACCOUNTUSAGELIMIT:
         msg = QCoreApplication::translate("ServerCodeTranslation", "Your free account quota has been exhausted, please configure your model account to continue using it.");
+        break;
+    case AIServer::FREEACCOUNTCHATUSAGELIMIT:
+        msg = QCoreApplication::translate("ServerCodeTranslation", "Your free account quota has been exhausted for chat, please configure your model account to continue using it.");
+        break;
+    case AIServer::FREEACCOUNTTEXT2IMAGEUSAGELIMIT:
+        msg = QCoreApplication::translate("ServerCodeTranslation", "Your free account quota has been exhausted for text2image, please configure your model account to continue using it.");
         break;
     case AIServer::AudioInputDeviceInvalid:
         msg = QCoreApplication::translate("ServerCodeTranslation", "Invalid input device");

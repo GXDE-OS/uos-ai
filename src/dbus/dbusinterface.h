@@ -28,6 +28,10 @@ signals:
      */
     Q_SCRIPTABLE void userExpStateChanged(bool);
 
+    Q_SCRIPTABLE void windowVisibleChanged(bool);
+
+    Q_SCRIPTABLE void windowActiveChanged(bool);
+
 public Q_SLOTS:
     /**
      * @brief specify the version of the current interface, because the LLM is updated very quickly, and a number of old interfaces will be eliminated in the future;
@@ -106,6 +110,8 @@ public:
      */
     void updateUserExpState(int state);
 
+    void updateVisibleState(bool visible);
+    void updateActiveState(bool active);
     /**
      * @brief addAppFunction
      * @param appId
@@ -118,7 +124,7 @@ public:
 signals:
     void sigTask(TaskType type);
 
-    void sigToLaunchMgmt(bool showAddllmPage);
+    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false);
 
     void sigToLaunchChat(int index);
 

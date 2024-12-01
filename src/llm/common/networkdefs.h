@@ -5,6 +5,9 @@
 #include <QNetworkReply>
 
 namespace AIServer {
+
+static constexpr char ServerAPIAddress[] { "https://uosai.uniontech.com/api" };
+
 enum ErrorType {
     NoError = 0,
 
@@ -76,7 +79,12 @@ enum ErrorType {
     // 免费账号异常
     FREEACCOUNTEXPIRED = 9000,
     FREEACCOUNTUSAGELIMIT = 9001,
-    AccountInvalid = 9002
+    FREEACCOUNTCHATUSAGELIMIT = 9002,
+    FREEACCOUNTTEXT2IMAGEUSAGELIMIT = 9003,
+    AccountInvalid = 9004,
+
+    // 知识库异常
+    PersonalBaseNotExist = 9100
 };
 
 inline AIServer::ErrorType networkReplyErrorToAiServerError(QNetworkReply::NetworkError type)

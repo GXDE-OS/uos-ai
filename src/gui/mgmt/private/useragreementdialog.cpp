@@ -129,7 +129,7 @@ void UserAgreementDialog::initConnect()
 
 DArrowRectangle *UserAgreementDialog::showArrowRectangle(DArrowRectangle::ArrowDirection direction)
 {
-    auto pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWindow, this);
+    auto pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWidget, this);
     pExpTips->setRadiusArrowStyleEnable(true);
     pExpTips->setRadius(16);
     QColor color = DGuiApplicationHelper::instance()->applicationPalette().color(QPalette::Base);

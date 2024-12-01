@@ -1,6 +1,8 @@
 #ifndef OPERATINGLINEWIDGET_H
 #define OPERATINGLINEWIDGET_H
 
+#include "mgmtdefs.h"
+
 #include <DWidget>
 #include <DLabel>
 #include <DIconButton>
@@ -30,6 +32,17 @@ public:
     void setModelShow(bool);
 
     void setInterruptFilter(bool interrupt);
+
+    void setStatusIcon(const QString &iconName);
+    void setTipsIcon(const QString &iconName);
+
+    void setFileSize(qint64 bytes);
+    qint64 fileSize() { return m_fileSize; }
+
+    void setSpinnerVisible(bool visible);
+
+    void setStatus(KnowledgeBaseProcessStatus status);
+
 signals:
     void signalDeleteButtonClicked();
     void signalNotDeleteButtonClicked();
@@ -47,7 +60,9 @@ private:
     IconButtonEx *m_pEditbutton = nullptr;
 
     DLabel *m_pName = nullptr;
+    DLabel *m_pFileSize = nullptr;
     bool m_bInterrupt = false;
+    qint64 m_fileSize = 0;
 };
 
 #endif // OPERATINGLINEWIDGET_H

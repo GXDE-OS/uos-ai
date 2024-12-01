@@ -55,6 +55,7 @@ struct UosLogObject {
     QDateTime time;
     QString llm;
     QString ModelType;
+    QString assistant;
     int t2iResult; // 0成功 1失败
 } ;
 
@@ -76,6 +77,7 @@ struct UosFreeAccount {
     int useLimit; // 最大使用限制
     bool hasUsed; // 已经使用次数
     int llmModel; // 大模型类型
+    QString modelUrl; // 大模型接口地址
     QDateTime expTime; // 失效时间
     QDateTime startTime; // 开始时间
     QDateTime endTime; // 结束时间

@@ -16,7 +16,7 @@ public:
 
     QJsonObject header() const;
 
-    QJsonObject parameter(int model, qreal temperature) const;
+    QJsonObject parameter(int model, qreal temperature, const QString &url = "") const;
 
     QJsonObject payloadMessage(const XFConversation &conversation) const;
 

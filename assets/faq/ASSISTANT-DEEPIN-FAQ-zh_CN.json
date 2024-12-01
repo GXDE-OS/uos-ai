@@ -1,0 +1,26 @@
+[
+    {
+        "iconName": "1-question-deepin",
+        "Question": "深度截图的默认键盘快捷键是什么？"
+    },
+    {
+        "iconName": "2-question-deepin",
+        "Question": "如何在终端中复制和粘贴内容？"
+    },
+    {
+        "iconName": "3-question-deepin",
+        "Question": "如何启动看图的幻灯片放映功能？"
+    },
+    {
+        "iconName": "4-question-deepin",
+        "Question": "在音乐应用中，如果音乐在播放列表中被删除，本地文件会被删除吗？"
+    },
+    {
+        "iconName": "5-question-deepin",
+        "Question": "如何查看影院应用的快捷键预览界面?"
+    },
+    {
+        "iconName": "6-question-deepin",
+        "Question": "在影院应用中，如何实现加速/减速播放?"
+    }
+]

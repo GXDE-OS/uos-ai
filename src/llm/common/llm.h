@@ -15,6 +15,8 @@ public:
 
     virtual ~LLM();
 
+    virtual void updateAccount(const LLMServerProxy &serverproxy);
+
     /**
      * @brief cancel the currently executing predict
      */

@@ -47,14 +47,12 @@
         <file>../assets/web/front/dist/assets/1-loading.svg</file>
         <file>../assets/web/front/dist/assets/2-loading.svg</file>
         <file>../assets/web/front/dist/assets/3-loading.svg</file>
-        <file>../assets/web/front/dist/assets/logo.svg</file>
         <file>../assets/web/front/dist/assets/vue.svg</file>
         <file>../assets/app/deepin-app-infos.json</file>
         <file>../assets/web/front/dist/assets/DigitalImage-legacy.js</file>
         <file>../assets/web/front/dist/assets/DigitalImage.css</file>
         <file>../assets/web/front/dist/assets/DigitalImage.js</file>
         <file>../assets/web/front/dist/assets/ChatTop-legacy.js</file>
-        <file>../assets/web/front/dist/assets/ChatTop.css</file>
         <file>../assets/web/front/dist/assets/ChatTop.js</file>
         <file>../assets/web/front/dist/assets/silence.webm</file>
         <file>../assets/web/front/dist/assets/listen.webm</file>
@@ -63,7 +61,6 @@
         <file>../assets/web/front/dist/assets/thinking.webm</file>
         <file>../assets/web/front/dist/assets/play.webm</file>
         <file>../assets/web/front/dist/assets/error.webm</file>
-        <file>../assets/web/front/dist/assets/icon.svg</file>
         <file>../assets/web/front/dist/assets/1-loading-dark.svg</file>
         <file>../assets/web/front/dist/assets/2-loading-dark.svg</file>
         <file>../assets/web/front/dist/assets/3-loading-dark.svg</file>
@@ -75,5 +72,70 @@
         <file>../assets/images/openai.svg</file>
         <file>../assets/images/default.svg</file>
         <file>../assets/images/textimage.svg</file>
+        <file>../assets/icons/ttscomposite/reading1.svg</file>
+        <file>../assets/icons/ttscomposite/reading2.svg</file>
+        <file>../assets/icons/ttscomposite/reading3.svg</file>
+        <file>../assets/icons/ttscomposite/reading4.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/chat.svg">../assets/icons/deepin/builtin/dark/icons/chat.svg</file>
+        <file>../assets/faq/ASSISTANT-DEEPIN-FAQ-en_US.json</file>
+        <file>../assets/faq/ASSISTANT-DEEPIN-FAQ-zh_CN.json</file>
+        <file>../assets/faq/ASSISTANT-UOS-FAQ-en_US.json</file>
+        <file>../assets/faq/ASSISTANT-UOS-FAQ-zh_CN.json</file>
+        <file>../assets/web/front/dist/icons/1-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/1-question-deepin.png</file>
+        <file>../assets/web/front/dist/icons/1-question-uos.png</file>
+        <file>../assets/web/front/dist/icons/2-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/2-question-deepin.png</file>
+        <file>../assets/web/front/dist/icons/2-question-uos.png</file>
+        <file>../assets/web/front/dist/icons/3-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/3-question-deepin.png</file>
+        <file>../assets/web/front/dist/icons/3-question-uos.png</file>
+        <file>../assets/web/front/dist/icons/4-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/4-question-deepin.png</file>
+        <file>../assets/web/front/dist/icons/4-question-uos.png</file>
+        <file>../assets/web/front/dist/icons/5-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/5-question-deepin.png</file>
+        <file>../assets/web/front/dist/icons/5-question-uos.png</file>
+        <file>../assets/web/front/dist/icons/6-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/6-question-deepin.png</file>
+        <file>../assets/web/front/dist/icons/6-question-uos.png</file>
+        <file>../assets/web/front/dist/icons/7-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/8-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/9-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/10-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/11-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/12-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/13-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/14-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/15-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/16-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/17-question-ai.png</file>
+        <file>../assets/web/front/dist/icons/1-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/2-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/3-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/4-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/5-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/6-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/7-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/8-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/9-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/10-question-personal.png</file>
+        <file alias="icons/deepin/builtin/warning.svg">../assets/icons/deepin/builtin/warning.svg</file>
+        <file alias="icons/deepin/builtin/loading.svg">../assets/icons/deepin/builtin/loading.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/book.svg">../assets/icons/deepin/builtin/dark/icons/book.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/retry.svg">../assets/icons/deepin/builtin/dark/icons/retry.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/tip.svg">../assets/icons/deepin/builtin/dark/icons/tip.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/book.svg">../assets/icons/deepin/builtin/light/icons/book.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/retry.svg">../assets/icons/deepin/builtin/light/icons/retry.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/tip.svg">../assets/icons/deepin/builtin/light/icons/tip.svg</file>
+        <file>../assets/web/front/dist/icons/personal-assistant-16.svg</file>
+        <file>../assets/web/front/dist/icons/personal-assistant-32.svg</file>
+        <file>../assets/web/front/dist/icons/system-assistant-16.svg</file>
+        <file>../assets/web/front/dist/icons/system-assistant-32.svg</file>
+        <file>../assets/web/front/dist/icons/uos-ai-16.svg</file>
+        <file>../assets/web/front/dist/icons/uos-ai-32.svg</file>
+        <file>../assets/web/front/dist/icons/personal-assistant-110.svg</file>
+        <file>../assets/web/front/dist/icons/system-assistant-110.svg</file>
+        <file>../assets/web/front/dist/icons/uos-ai-110.svg</file>
     </qresource>
 </RCC>

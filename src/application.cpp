@@ -32,11 +32,11 @@ Application::Application(int &argc, char **argv)
     loadTranslator();
     setApplicationVersion(DApplication::buildVersion(APP_VERSION));
     setProductName(tr("UOS AI"));
-    setProductIcon(QIcon::fromTheme(APP_NAME_KEY));
-    setApplicationDescription(QCoreApplication::translate("CopilotApplication", "An intelligent UOS AI"));
+    setProductIcon(QIcon::fromTheme("UosAiAssistant"));
+    setApplicationDescription(tr("UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions."));
     setAttribute(Qt::AA_UseHighDpiPixmaps);
     setQuitOnLastWindowClosed(false);
-    setWindowIcon(QIcon::fromTheme(APP_NAME_KEY));
+    setWindowIcon(QIcon::fromTheme("UosAiAssistant"));
 
     connect(ServerWrapper::instance(), &ServerWrapper::sigToLaunchMgmt, this, &Application::onLaunchMgmt) ;
     connect(ServerWrapper::instance(), &ServerWrapper::sigToLaunchChat, this, &Application::onLaunchChat) ;
@@ -64,19 +64,21 @@ void Application::initialization()
     handleArgumentsParser(arguments());
 }
 
-void Application::launchMgmtWindow(bool showAddllmPage)
+void Application::launchMgmtWindow(bool showAddllmPage, bool onlyUseAgreement)
 {
     if (!m_mgmtWindow) {
         m_mgmtWindow = new MgmtWindow();
+        connect(m_mgmtWindow, &MgmtWindow::sigGenPersonalFAQ, this, &Application::sigGenPersonalFAQ, Qt::UniqueConnection);
     }
 
-    m_mgmtWindow->showEx(showAddllmPage);
+    m_mgmtWindow->showEx(showAddllmPage, onlyUseAgreement);
 }
 
 void Application::launchChatWindow(int index)
 {
     if (!m_chatWindow) {
         m_chatWindow = new ChatWindow();
+        connect(this, &Application::sigGenPersonalFAQ, m_chatWindow, &ChatWindow::onGenPersonalFAQ, Qt::UniqueConnection);
     }
 
     m_chatWindow->showWindow(static_cast<ChatIndex>(index));
@@ -121,9 +123,9 @@ int Application::handleExistingArgument(int argc, char *argv[])
     return 0;
 }
 
-void Application::onLaunchMgmt(bool showAddllmPage)
+void Application::onLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement)
 {
-    launchMgmtWindow(showAddllmPage);
+    launchMgmtWindow(showAddllmPage, onlyUseAgreement);
 }
 
 void Application::onLaunchChat(int index)

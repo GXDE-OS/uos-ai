@@ -1,0 +1,10 @@
+#ifndef UOSAI_GLOBAL_H
+#define UOSAI_GLOBAL_H
+
+#define UOSAI_NAMESPACE uos_ai
+
+#define UOSAI_BEGIN_NAMESPACE namespace UOSAI_NAMESPACE {
+#define UOSAI_END_NAMESPACE }
+#define UOSAI_USE_NAMESPACE using namespace UOSAI_NAMESPACE;
+
+#endif // UOSAI_GLOBAL_H

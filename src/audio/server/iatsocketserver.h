@@ -70,6 +70,7 @@ private:
 
     QByteArray m_data;
     QTimer m_processTimer;
+    QTimer m_abnormalExitTimer;
 
     PgsParser m_pgsParser;
 };

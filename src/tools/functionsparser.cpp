@@ -34,6 +34,11 @@ QString FunctionsParser::outputString()
     return m_outputString;
 }
 
+QString FunctionsParser::directOutput() const
+{
+    return m_directOutput;
+}
+
 void FunctionsParser::sendMailFunction(const QJsonObject &argumentsObj)
 {
     QString subject = argumentsObj.value("subject").toString();
@@ -152,15 +157,15 @@ void FunctionsParser::run()
     if (funName == "sendMail") {
         sendMailFunction(argumentsObj);
     } else if (funName == "openBluetooth") {
-        content = UosAbility()->doBluetoothConfig();
+        content = UosAbility()->doBluetoothConfig(argumentsObj.value("switch").toBool());
     } else if (funName == "openScreenMirroring") {
         content = UosAbility()->doScreenMirroring();
     } else if (funName == "switchNoDisturbMode") {
         content = UosAbility()->doNoDisturb(argumentsObj.value("switch").toBool());
     } else if (funName == "switchWallpaper") {
         content = UosAbility()->doWallpaperSwitch();
-    } else if (funName == "clearDesktop") {
-        content = UosAbility()->doDesktopClearing(argumentsObj.value("switch").toBool());
+    } else if (funName == "organizeDesktop") {
+        content = UosAbility()->doDesktopOrganize(argumentsObj.value("switch").toBool());
     } else if (funName == "switchDockMode") {
         QString modestr = argumentsObj.value("mode").toString();
         int mode = -1;
@@ -192,13 +197,48 @@ void FunctionsParser::run()
         content = UosAbility()->doDiplayBrightness(percent);
     } else if (funName == "launchApplication") {
         QString appId = argumentsObj.value("appid").toString();
-        bool on = argumentsObj.value("switch").toBool();
+        // 由于目前function call太多，执行打开应用指令时模型推理会导致混淆，从而导致
+        // switch参数丢失或者识别为非function call而直接输出问答。
+        // 经过测试在执行关闭应用命令时,switch参数有效存在且为false。
+        // 因此这里使用规避方案，让switch默认为true，以解决模型推理导致的参数丢失问题。
+        bool on = true;
+        if (argumentsObj.contains("switch"))
+            on = argumentsObj.value("switch").toBool();
         content = UosAbility()->doAppLaunch(appId, on);
     } else if (funName == "createSchedule") {
         QString subject   = argumentsObj.value("subject").toString();
         QString startTime = argumentsObj.value("startTime").toString();
         QString endTime   = argumentsObj.value("endTime").toString();
         content = UosAbility()->doCreateSchedule(subject, startTime, endTime);
+    } else if (funName == "systemTotalMemory") {
+        content = UosAbility()->getSystemMemory();
+    } else if (funName == "switchWifi") {
+        content = UosAbility()->switchWifi(argumentsObj.value("switch").toBool());
+    } else if (funName == "systemLanguageSetting") {
+        content = UosAbility()->doSystemLanguageSetting();
+    } else if (funName == "switchPerformanceMode") {
+        QString mode = argumentsObj.value("mode").toString();
+        content = UosAbility()->doPerformanceModeSwitch(mode);
+    } else if (funName == "shutdownFront") {
+        content = UosAbility()->openShutdownFront();
+    } else if (funName == "screenShot") {
+        content = UosAbility()->openScreenShot();
+    } else if (funName == "switchDisplayMode") {
+        QString modestr = argumentsObj.value("mode").toString();
+
+        int mode = -1;
+        if (modestr == "Copy")
+            mode = 1;
+        else if (modestr == "Extend")
+            mode = 2;
+        else
+            qWarning() << "function args error = " << argumentsObj;
+
+        content = UosAbility()->doDisplayModeSwitch(mode);
+    } else if (funName == "switchScreen") {
+        content = UosAbility()->switchScreen();
+    } else if (funName == "grandSearch") {
+        content = UosAbility()->openGrandSearch();
     } else {
         content.error = OSCallContext::NotImpl;
         content.errorInfo = funName + QCoreApplication::translate("FunctionsParser", "Function not available");
@@ -210,4 +250,6 @@ void FunctionsParser::run()
         m_exitCode = content.error;
         m_outputString = content.errorInfo;
     }
+
+    m_directOutput = content.output;
 }

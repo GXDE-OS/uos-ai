@@ -44,7 +44,6 @@ private:
      */
     bool isNameDuplicate(const QList<LLMServerProxy> &) const;
 
-    void updateProxyLabel();
 protected:
     bool event(QEvent *event) override;
     bool eventFilter(QObject *watched, QEvent *event) override;
@@ -55,15 +54,23 @@ private slots:
     void onUpdateSubmitButtonStatus();
     void onNameTextChanged(const QString &);
     void onNameAlertChanged(bool alert);
+    void onAddressTextChanged(const QString &);
+    void onAddressAlertChanged(bool alert);
     void onCompactModeChanged();
     void onUpdateSystemFont(const QFont &);
 
+    void updateProxyLabel();
 private:
     DComboBox *m_pModelComboBox = nullptr;
     DPasswordEdit *m_pAppIdLineEdit = nullptr;
     DPasswordEdit *m_pApiKeyLineEdit = nullptr;
     DPasswordEdit *m_pApiSecretLineEdit = nullptr;
     DLineEdit *m_pNameLineEdit = nullptr;
+    DLineEdit *m_pAddressLineEdit = nullptr;
+
+    DLineEdit *m_pCustomModelName = nullptr;
+    DLineEdit *m_pCustomModelUrl = nullptr;
+
     DPushButton *m_pCancelButton = nullptr;
     DSuggestButton *m_pSubmitButton = nullptr;
     QGridLayout *m_pGridLayout = nullptr;
@@ -76,6 +83,7 @@ private:
     QSet<QWidget *> m_widgetSet;
     QMap<int, LLMChatModel> m_modelMap;
     QSet<LLMChatModel> m_threeKeyComboxIndex; //拥有3个字段的combox索引
+    int m_lastModelIndex = -1;
 };
 
 #endif // ADDMODELDIALOG_H

@@ -2,10 +2,10 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
-    <name>UosAiPlugin</name>
+    <name>uos_ai::UosAiPlugin</name>
     <message>
-        <location filename="../plugin-tray/uosaiplugin.cpp" line="46"/>
-        <location filename="../plugin-tray/uosaiplugin.cpp" line="60"/>
+        <location filename="../plugin-tray/uosaiplugin.cpp" line="55"/>
+        <location filename="../plugin-tray/uosaiplugin.cpp" line="72"/>
         <source>UOS AI</source>
         <translation type="unfinished"></translation>
     </message>

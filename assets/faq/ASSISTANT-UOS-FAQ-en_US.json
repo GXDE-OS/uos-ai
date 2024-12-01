@@ -1,0 +1,26 @@
+[
+    {
+        "iconName": "1-question-uos",
+        "Question": "How to set up [Printer Sharing] in the UOS Desktop Professional Edition?"
+    },
+    {
+        "iconName": "2-question-uos",
+        "Question": "What are the differences between the UOS [Home Edition, Professional Edition,Education Edition,and Community Edition]?"
+    },
+    {
+        "iconName": "3-question-uos",
+        "Question": "How to implement a dual-boot system with Windows and UOS on the UOS Desktop Professional Edition?"
+    },
+    {
+        "iconName": "4-question-uos",
+        "Question": "How long does it take to install the UOS system?"
+    },
+    {
+        "iconName": "5-question-uos",
+        "Question": "What to do if you forget the boot password?"
+    },
+    {
+        "iconName": "6-question-uos",
+        "Question": "How to perform a full disk installation of the UOS system?"
+    }
+]

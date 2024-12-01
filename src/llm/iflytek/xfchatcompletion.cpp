@@ -11,11 +11,11 @@ XFChatCompletion::XFChatCompletion(const AccountProxy &account, QObject *parent)
 
 }
 
-QPair<int, QString> XFChatCompletion::create(int model, XFConversation &conversation, qreal temperature)
+QPair<int, QString> XFChatCompletion::create(int model, const QString &url, XFConversation &conversation, qreal temperature)
 {
     QJsonObject data;
     data["header"] = header();
-    data["parameter"] = parameter(model, temperature);
+    data["parameter"] = parameter(model, temperature, url);
 
     QJsonObject payloadObj;
     payloadObj["message"] = payloadMessage(conversation);
@@ -27,7 +27,11 @@ QPair<int, QString> XFChatCompletion::create(int model, XFConversation &conversa
 
     data["payload"] = payloadObj;
 
-    QString path = "wss://spark-api.xf-yun.com/" + version(model) + "/chat";
+    QString path = url;
+    if (path.isEmpty())
+        path = "wss://spark-api.xf-yun.com/" + version(model) + "/chat";
+
+    qInfo() << "xunfei request url:" << path;
     const QPair<int, QByteArray> &resultPairs = wssRequest(QJsonDocument(data).toJson(QJsonDocument::Compact), path);
 
     if (resultPairs.first != 0)

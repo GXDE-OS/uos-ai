@@ -14,6 +14,7 @@ class ModelListWidget;
 class LocalModelListWidget;
 class WelcomeDialog;
 class AddModelDialog;
+class KnowledgeBaseListWidget;
 
 class MgmtWindow : public DMainWindow
 {
@@ -23,7 +24,7 @@ public:
     explicit MgmtWindow(DWidget *parent = nullptr);
     ~MgmtWindow();
 
-    void showEx(bool);
+    void showEx(bool, bool onlyUseAgreement = false);
 
 private slots:
     void onAddModel();
@@ -39,6 +40,7 @@ private:
     LocalModelListWidget *initLocalModelListWidget();
     DWidget *initAgreementWidget();
     DWidget *initProxyWidget();
+    KnowledgeBaseListWidget *initKnowledgeBaseWidget();
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
@@ -46,6 +48,7 @@ protected:
 
 signals:
     void signalCloseWindow();
+    void sigGenPersonalFAQ();
 
 private:
     QWidget *m_pToastContent = nullptr;
@@ -53,6 +56,7 @@ private:
 
     ModelListWidget *m_pModelListWidget = nullptr;
     LocalModelListWidget *m_pLocalModelListWidget = nullptr;
+    KnowledgeBaseListWidget *m_pKnowledgeBaseListWidget = nullptr;
 
     QSet<QWidget *> m_widgets;
     WelcomeDialog *m_pWelcomeDlg = nullptr;

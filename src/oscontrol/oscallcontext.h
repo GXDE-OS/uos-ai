@@ -10,11 +10,11 @@ struct OSCallContext {
         NonService,
         InvalidArgs,
         AppNotFound,
-        AppStartFailed,
-
+        AppStartFailed
     } error;
 
     QString errorInfo;
+    QString output;
 };
 
 

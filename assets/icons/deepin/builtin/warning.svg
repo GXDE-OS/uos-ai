@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>warning</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF674A" offset="0%"></stop>
+            <stop stop-color="#EC5783" offset="100%"></stop>
+        </linearGradient>
+        <path d="M6.9935,0 C10.8630596,0 14,3.13477549 14,7 C14,10.8652245 10.8630596,14 6.9935,14 C3.13044175,14 0,10.8652285 0,7 C0,3.13477155 3.13044175,0 6.9935,0 Z" id="path-2"></path>
+        <filter x="-25.0%" y="-17.9%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.443137255   0 0 0 0 0.443137255  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 1.000000)">
+            <g transform="translate(0.000000, 0.000000)">
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <path d="M6.3,3.5 L7.7,3.5 L7.7,7.7 L6.3,7.7 L6.3,3.5 Z M6.3,9.1 L7.7,9.1 L7.7,10.5 L6.3,10.5 L6.3,9.1 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" opacity="0.900000036"></path>
+            </g>
+        </g>
+    </g>
+</svg>

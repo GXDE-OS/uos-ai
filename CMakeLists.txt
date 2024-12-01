@@ -20,6 +20,37 @@ if (NOT (${CMAKE_BUILD_TYPE} MATCHES "Debug"))
     execute_process(COMMAND bash "${CMAKE_SOURCE_DIR}/translate_generation.sh" WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 endif ()
 
+set(LIB_PLATFORM_DIR "${CMAKE_INSTALL_PREFIX}/lib/${CMAKE_LIBRARY_ARCHITECTURE}")
+add_definitions(-DLIB_PLATFORM_DIR="${LIB_PLATFORM_DIR}")
+
+set(EXTERNAL_LLM_DIR "${LIB_PLATFORM_DIR}/uos-ai-assistant/llm")
+
+if (CMAKE_BUILD_TYPE MATCHES Debug)
+    add_definitions(-DEXTERNAL_LLM_DIR="${CMAKE_BINARY_DIR}/plugin-model")
+else()
+    add_definitions(-DEXTERNAL_LLM_DIR="${EXTERNAL_LLM_DIR}")
+endif()
+
+include_directories("${CMAKE_SOURCE_DIR}/include")
+
+find_package(DtkCMake REQUIRED)
+
+#Indentify the version
+if (1 OR ${DEEPIN_OS_VERSION} MATCHES "23")
+    add_definitions(-DCOMPILE_ON_V23)
+    set(COMPILE_ON_V23 TRUE)
+    message("COMPILE ON v23")
+else()
+    add_definitions(-DCOMPILE_ON_V20)
+    set(COMPILE_ON_V20 TRUE)
+    message("COMPILE ON v20")
+
+    set(ENABLE_MODEL_PLUGIN TRUE)
+    add_definitions(-DENABLE_MODEL_PLUGIN)
+endif()
+
+add_subdirectory(plugin-model)
+
 #add_definitions(-DDEBUG_LOG)
 
 # Find the library
@@ -39,6 +70,9 @@ find_package(KF5GlobalAccel COMPONENTS KF5GlobalAccel REQUIRED)
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(DFrameworkDBus REQUIRED dframeworkdbus)
+pkg_check_modules(QGsettings REQUIRED gsettings-qt)
+pkg_check_modules(AtSpi REQUIRED atspi-2)
+pkg_check_modules(Gobject REQUIRED gobject-2.0)
 
 #-------------------------EXE------------------------
 SET(EXENAME uos-ai-assistant)
@@ -63,6 +97,7 @@ target_include_directories(${EXENAME} PUBLIC
     src/dbus
     src/gui/mgmt
     src/gui/chat
+    src/gui/screen
     src/http
     src/llm
     src/llm/360
@@ -83,6 +118,9 @@ target_include_directories(${EXENAME} PUBLIC
     src/oscontrol/ability
     src/tools
     ${DFrameworkDBus_INCLUDE_DIRS}
+    ${QGsettings_INCLUDE_DIRS}
+    ${AtSpi_INCLUDE_DIRS}
+    ${Gobject_INCLUDE_DIRS}
 )
 
 target_link_libraries(${EXENAME}
@@ -98,6 +136,9 @@ target_link_libraries(${EXENAME}
     ${Qt5Svg_LIBRARIES}
     ${Qt5Multimedia_LIBRARIES}
     ${DFrameworkDBus_LIBRARIES}
+    ${QGsettings_LIBRARIES}
+    ${AtSpi_LIBRARIES}
+    ${Gobject_LIBRARIES}
     Qt5::WebEngineWidgets
     KF5::GlobalAccel
     crypto
@@ -133,6 +174,11 @@ add_definitions(-DAUDIOPATH="${AUDIO_DESTINATION}")
 file(GLOB AUDIO_FILES "assets/audio/*")
 install(FILES ${AUDIO_FILES} DESTINATION ${AUDIO_DESTINATION})
 
+# install desktop
+message(${PROJECT_SOURCE_DIR})
+install(FILES ${PROJECT_SOURCE_DIR}/assets/app/uos-ai-assistant.desktop
+    DESTINATION share/applications)
+
 #-------------------------plugin-tray------------------------
 SET(TRAYPLUGINNAME uos-ai-tray)
 
@@ -146,7 +192,6 @@ endforeach(filepath)
 
 add_library(${TRAYPLUGINNAME} MODULE
     ${RELATIVE_PLUGIN_TRAY_FILES}
-    ${CMAKE_SOURCE_DIR}/assets/plugin-tray.qrc
 )
 
 target_include_directories(${TRAYPLUGINNAME} PUBLIC
@@ -171,7 +216,7 @@ file(GLOB PLUGIN_TRAY_QMFILES "${CMAKE_SOURCE_DIR}/translations/uos-ai-tray*.qm"
 install(FILES ${PLUGIN_TRAY_QMFILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${TRAYPLUGINNAME}/translations/)
 
 # Install icon
-install(FILES ${CMAKE_SOURCE_DIR}/assets/images/uosai.svg DESTINATION ${CMAKE_INSTALL_PREFIX}/share/dde-dock/icons/dcc-setting/)
+install(FILES ${CMAKE_SOURCE_DIR}/plugin-tray/assets/icons/deepin/builtin/uosai.svg DESTINATION ${CMAKE_INSTALL_PREFIX}/share/dde-dock/icons/dcc-setting/)
 install(FILES ${CMAKE_SOURCE_DIR}/assets/images/UosAiAssistant.svg DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps/)
 
 #-------------------------plugin-settings------------------------

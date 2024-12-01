@@ -27,11 +27,12 @@ class WelcomeDialog : public DAbstractDialog
 {
     Q_OBJECT
 public:
-    explicit WelcomeDialog(DWidget *parent = nullptr);
+    explicit WelcomeDialog(DWidget *parent = nullptr, bool onlyUseAgreement = false);
 
     bool isFreeAccount();
     Qt::CheckState getUserExpState();
     void resetDialog();
+    void setOnlyUseAgreement(bool onlyUseAgreement) { m_onlyUseAgreement = onlyUseAgreement; }
 
 private:
     void initUI();
@@ -60,6 +61,7 @@ private:
     DIconButton *m_pExpIcon{nullptr};
 
     DSuggestButton *m_pFreeAccount{nullptr};
+    DSuggestButton *m_pStartUsing{nullptr};
     DPushButton *m_pAddModel{nullptr};
 
     ThemedLable *m_pActivity{nullptr};
@@ -70,6 +72,8 @@ private:
     QString m_activityUrl;
     UosFreeAccountActivity m_hasActivity;
     QSharedPointer<QFutureWatcher<QNetworkReply::NetworkError>> m_watcher;
+
+    bool m_onlyUseAgreement = false;
 };
 
 #endif // WELCOMEDIALOG_H

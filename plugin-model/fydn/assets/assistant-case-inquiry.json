@@ -1,0 +1,26 @@
+[
+    {
+        "iconName": "1-question-case-inquiry",
+        "Question": "查找一些属于被判定为正当防卫的案例。"
+    },
+    {
+        "iconName": "2-question-case-inquiry",
+        "Question": "查找类似案例：医生在手术中由于疏忽导致患者严重并发症。"
+    },
+    {
+        "iconName": "3-question-case-inquiry",
+        "Question": "搜寻案例，涉及多车连环相撞事故，法院如何判定各方责任？"
+    },
+    {
+        "iconName": "4-question-case-inquiry",
+        "Question": "寻找案例，保险公司以投保人未如实告知健康状况为由拒绝支付重大疾病保险金。"
+    },
+    {
+        "iconName": "5-question-case-inquiry",
+        "Question": "检索案例，一家出口商因国际买家未按合同支付货款，导致财务危机。"
+    },
+    {
+        "iconName": "6-question-case-inquiry",
+        "Question": "检索案例，一家化工厂非法排放有毒废物，对当地环境和居民健康造成严重影响。"
+    }
+]

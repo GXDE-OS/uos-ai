@@ -12,6 +12,9 @@ AudioInfo::AudioInfo()
 
 void AudioInfo::start()
 {
+#ifdef SAVE_AUDIO_DATA
+    initFileFormat("./audio", 1, 16000);
+#endif
     open(QIODevice::WriteOnly);
 }
 
@@ -31,8 +34,80 @@ qint64 AudioInfo::writeData(const char *data, qint64 len)
 {
     QByteArray audioData(data, len);
     emit audioWrite(audioData);
+
+#ifdef SAVE_AUDIO_DATA
+    appendAudioDataToFile("./audio", audioData);
+#endif
+
     return len;
 }
+
+#ifdef SAVE_AUDIO_DATA
+void AudioInfo::initFileFormat(const QString &fileName, quint16 numChannels, quint16 sampleRate)
+{
+    QFile file(fileName);
+    if (!file.open(QIODevice::WriteOnly)) {
+        qDebug() << "open file failed.";
+    }
+
+    // 写入RIFF头
+    file.write("RIFF", 4);
+    quint32 fileSize = 36;
+    file.write(reinterpret_cast<const char*>(&fileSize), 4);
+    file.write("WAVE", 4);
+    file.write("fmt ", 4);
+
+    // 写入格式块的大小（通常为16）
+    quint32 formatSize = 16;
+    file.write(reinterpret_cast<const char*>(&formatSize), 4);
+
+    // 写入格式标识符（通常为1）1表示pcm
+    quint16 formatTag = 1;
+    file.write(reinterpret_cast<const char*>(&formatTag), 2);
+
+    // 写入通道数和采样率
+    quint16 numChannelsToWrite = numChannels;
+    file.write(reinterpret_cast<const char*>(&numChannelsToWrite), 2);
+    quint32 sampleRateToWrite = sampleRate;
+    file.write(reinterpret_cast<const char*>(&sampleRateToWrite), 4);
+
+    // 写入比特率
+    quint32 byteRate = sampleRate * numChannels * 2; // 2字节/采样
+    file.write(reinterpret_cast<const char*>(&byteRate), 4);
+
+    // 写入块对齐
+    quint16 blockAlign = numChannels * 2;
+    file.write(reinterpret_cast<const char*>(&blockAlign), 2);
+
+    // 位深度（通常为16）
+    quint16 bitsPerSample = 16;
+    file.write(reinterpret_cast<const char*>(&bitsPerSample), 2);
+
+    // "data" 块标识符
+    file.write("data", 4);
+
+    file.close();
+}
+bool AudioInfo::appendAudioDataToFile(const QString &filePath, const QByteArray &audioData)
+{
+    QFile file(filePath);
+    if (!file.open(QIODevice::Append)) {
+        return false;
+    }
+    // 获取文件大小，并计算需要跳过的字节数
+    qint64 bytesToSkip = file.size();
+    if (bytesToSkip > 0) {
+        file.seek(bytesToSkip);
+    }
+
+    qint64 bytesWritten = file.write(audioData);
+    // 检查是否写入完成
+    if (bytesWritten != audioData.size()) {
+        return false;
+    }
+    return true;
+}
+#endif
 
 AudioLocalInputDevice::AudioLocalInputDevice()
 {

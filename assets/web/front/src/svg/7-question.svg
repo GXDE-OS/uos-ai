@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="7" stroke="none" stroke-width="1" fill-rule="evenodd" fill-opacity="0.7">
-        <path d="M2,8.47674118 C2,5.15890157 5.14834473,2.5 9,2.5 C12.8521383,2.5 16,5.1586977 16,8.47674118 C16,11.7940677 12.8521479,14.4520398 9,14.4520398 C8.1701124,14.4520398 7.35870225,14.3277601 6.59327021,14.0884734 L4.17500944,15.5039851 C3.82250911,15.7103187 3.40023795,15.3731888 3.52921313,14.9883988 L4.24259849,12.860055 C2.82894195,11.7425495 2,10.1696955 2,8.47674118 Z M6.11702606,8.12593216 C6.11702606,7.52078575 5.62095434,7.02965243 5.00972311,7.02965243 C4.39849189,7.02965243 3.90242017,7.52078575 3.90242017,8.12593216 C3.90242017,8.73107857 4.39849189,9.22221189 5.00972311,9.22221189 C5.62095434,9.22221189 6.11702606,8.73107857 6.11702606,8.12593216 Z M10.1076573,8.12593216 C10.1076573,7.52078575 9.61158557,7.02965243 9.00035434,7.02965243 C8.38912312,7.02965243 7.8930514,7.52078575 7.8930514,8.12593216 C7.8930514,8.73107857 8.38912312,9.22221189 9.00035434,9.22221189 C9.61158557,9.22221189 10.1076573,8.73107857 10.1076573,8.12593216 Z M14.107767,8.12593216 C14.107767,7.52078575 13.6116953,7.02965243 13.0004641,7.02965243 C12.3892329,7.02965243 11.8931611,7.52078575 11.8931611,8.12593216 C11.8931611,8.73107857 12.3892329,9.22221189 13.0004641,9.22221189 C13.6116953,9.22221189 14.107767,8.73107857 14.107767,8.12593216 Z" id="Shape"></path>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+        <filter x="-12.2%" y="-6.6%" width="124.3%" height="125.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.196570763 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="60.6205864%" x2="13.9249167%" y2="42.8544648%" id="linearGradient-4">
+            <stop stop-color="#A4C8E0" offset="0%"></stop>
+            <stop stop-color="#BEDAEE" offset="57.3768309%"></stop>
+            <stop stop-color="#A8CBE2" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="41.2295123%" fx="50%" fy="41.2295123%" r="64.0986241%" gradientTransform="translate(0.500000,0.412295),scale(0.851685,1.000000),rotate(180.000000),scale(1.000000,0.916355),translate(-0.500000,-0.412295)" id="radialGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FBFCFD" offset="5.99161808%"></stop>
+            <stop stop-color="#F7FAFC" offset="13.0962099%"></stop>
+            <stop stop-color="#F3F7FA" offset="21.0798105%"></stop>
+            <stop stop-color="#EEF4F9" offset="29.7084548%"></stop>
+            <stop stop-color="#EAF1F7" offset="38.7481778%"></stop>
+            <stop stop-color="#E5EEF5" offset="47.9650146%"></stop>
+            <stop stop-color="#E0EAF3" offset="57.125%"></stop>
+            <stop stop-color="#DAE7F1" offset="65.9941691%"></stop>
+            <stop stop-color="#D3E3EF" offset="74.3385569%"></stop>
+            <stop stop-color="#CCDEEC" offset="81.9241983%"></stop>
+            <stop stop-color="#C4D9E9" offset="88.5171283%"></stop>
+            <stop stop-color="#BAD3E6" offset="93.8833819%"></stop>
+            <stop stop-color="#B0CDE3" offset="97.7889942%"></stop>
+            <stop stop-color="#A3C6DF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="蒙版"></g>
+            <g id="编组" filter="url(#filter-3)" mask="url(#mask-2)">
+                <g transform="translate(3.782609, 4.504348)">
+                    <path d="M2.36288917,12.2379239 L5.57666895,13.5976604 C4.71690097,13.9962917 3.44338014,14.4437331 1.75669545,14.9407846 C1.77489781,13.4554412 2.09101539,12.678548 2.36288917,12.2379239 Z" id="路径-66" stroke="#A3C7E0" stroke-width="0.183130435" fill="url(#linearGradient-4)"></path>
+                    <rect id="矩形-🌈cubic-bezier(0.25,-0.25,-0.94,-0.46);lrgb;15" stroke="#A3C7E0" stroke-width="0.183130435" fill="url(#radialGradient-5)" x="0.0915652174" y="0.0915652174" width="16.2516522" height="13.8141205" rx="6.90706026"></rect>
+                    <ellipse id="椭圆形" stroke="none" fill="#6E8089" cx="3.82073579" cy="7.02659176" rx="1" ry="1"></ellipse>
+                    <ellipse id="椭圆形备份" stroke="none" fill="#6E8089" cx="8.24548495" cy="7.02659176" rx="1" ry="1"></ellipse>
+                    <ellipse id="椭圆形备份-2" stroke="none" fill="#6E8089" cx="12.6702341" cy="7.02659176" rx="1" ry="1"></ellipse>
+                </g>
+            </g>
+        </g>
     </g>
 </svg>

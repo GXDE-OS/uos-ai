@@ -68,6 +68,16 @@ void DBusInterface::updateUserExpState(int state)
     emit userExpStateChanged(state > 0);
 }
 
+void DBusInterface::updateVisibleState(bool visible)
+{
+    emit windowVisibleChanged(visible);
+}
+
+void DBusInterface::updateActiveState(bool active)
+{
+    emit windowActiveChanged(active);
+}
+
 void DBusInterface::addAppFunction(const QString &appId, const QJsonObject &funciton)
 {
     m_appFunctions[appId] << funciton;

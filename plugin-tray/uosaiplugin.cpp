@@ -12,12 +12,17 @@
 
 DGUI_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
+#define QUICK_ITEM_KEY QStringLiteral("quick_item_key")
 #define PLUGIN_STATE_KEY "enable"
 
 UosAiPlugin::UosAiPlugin(QObject *parent)
     : QObject(parent)
     , m_tipsLabel(new QLabel)
+#ifdef USE_DOCK_API_V2
+    , m_messageCallback(nullptr)
+#endif
 {
     m_tipsLabel->setVisible(false);
     m_tipsLabel->setObjectName("uosai");
@@ -27,6 +32,10 @@ UosAiPlugin::UosAiPlugin(QObject *parent)
     changeTheme();
 
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &UosAiPlugin::changeTheme);
+#ifdef USE_DOCK_API_V2
+    QDBusConnection::sessionBus().connect("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", "windowVisibleChanged", this, SLOT(onUosAiVisibleChanged(bool)));
+    QDBusConnection::sessionBus().connect("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", "windowActiveChanged", this, SLOT(onUosAiVisibleChanged(bool)));
+#endif
 }
 
 void UosAiPlugin::changeTheme()
@@ -48,7 +57,10 @@ const QString UosAiPlugin::pluginDisplayName() const
 
 QWidget *UosAiPlugin::itemWidget(const QString &itemKey)
 {
-    Q_UNUSED(itemKey);
+#ifdef USE_V23_DOCK
+    if (itemKey == QUICK_ITEM_KEY)
+        return m_quickWidget.data();
+#endif
 
     return m_itemWidget;
 }
@@ -78,6 +90,11 @@ void UosAiPlugin::init(PluginProxyInterface *proxyInter)
     m_itemWidget = new UosAiWidget;
     m_itemWidget->setAccessibleName("ItemWidget");
 
+#ifdef USE_V23_DOCK
+    if (m_quickWidget.isNull())
+        m_quickWidget.reset(new QuickPanel(pluginDisplayName()));
+#endif
+
     if (!pluginIsDisable()) {
         m_proxyInter->itemAdded(this, pluginName());
     }
@@ -96,8 +113,11 @@ const QString UosAiPlugin::itemCommand(const QString &itemKey)
             return "";
         }
     }
-
+#ifdef COMPILE_ON_V23
+    return "dde-am uos-ai-assistant";
+#else
     return "uos-ai-assistant --chat";
+#endif
 }
 
 int UosAiPlugin::itemSortKey(const QString &itemKey)
@@ -133,8 +153,9 @@ bool UosAiPlugin::pluginIsDisable()
 #ifdef USE_V23_DOCK
 QIcon UosAiPlugin::icon(const DockPart &dockPart, DGuiApplicationHelper::ColorType themeType)
 {
+    QString iconName = "UosAiAssistant";
     if (dockPart == DockPart::DCCSetting) {
-        QPixmap pixmap = loadSvg("UosAiAssistant", QSize(18, 18));
+        QPixmap pixmap = loadSvg(iconName, QSize(18, 18));
         if (themeType == DGuiApplicationHelper::ColorType::LightType) {
             return pixmap;
         } else {
@@ -148,7 +169,24 @@ QIcon UosAiPlugin::icon(const DockPart &dockPart, DGuiApplicationHelper::ColorTy
 }
 #endif
 
-const QPixmap UosAiPlugin::loadSvg(const QString &iconName, const QSize size, const qreal ratio)
+#ifdef USE_DOCK_API_V2
+void UosAiPlugin::onUosAiVisibleChanged(bool visible)
+{
+    qDebug() << "onUosAiVisibleChanged, visible: " << visible;
+    if (!m_messageCallback) {
+            qWarning() << "Message callback function is nullptr";
+            return;
+        }
+        QJsonObject msg;
+        msg[Dock::MSG_TYPE] = Dock::MSG_ITEM_ACTIVE_STATE;
+        msg[Dock::MSG_DATA] = visible;
+        QJsonDocument doc;
+        doc.setObject(msg);
+        m_messageCallback(this, doc.toJson());
+}
+#endif
+
+QPixmap UosAiPlugin::loadSvg (QString &iconName, const QSize size, const qreal ratio)
 {
     QIcon icon = QIcon::fromTheme(iconName);
     if (!icon.isNull()) {

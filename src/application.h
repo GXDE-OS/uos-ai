@@ -20,7 +20,7 @@ public:
 public:
     void initialization();
 
-    void launchMgmtWindow(bool);
+    void launchMgmtWindow(bool, bool onlyUseAgreement = false);
 
     void launchChatWindow(int index);
 
@@ -29,11 +29,15 @@ public:
     void launchAboutWindow();
 
 private slots:
-    void onLaunchMgmt(bool);
+    void onLaunchMgmt(bool, bool onlyUseAgreement = false);
 
     void onLaunchChat(int index);
 
     void onLaunchAbout();
+
+signals:
+    void sigGenPersonalFAQ();
+
 private:
     MgmtWindow *m_mgmtWindow = nullptr;
     ChatWindow *m_chatWindow = nullptr;

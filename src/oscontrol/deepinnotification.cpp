@@ -54,6 +54,7 @@ int DeepinNotification::SetSystemInfo(int param, QVariant data)
 
         auto reply = m_uosNotificationProxy->asyncCallWithArgumentList(
                          QStringLiteral("SetSystemInfo"), argumentList);
+        reply.waitForFinished();
 
         if (reply.isError()) {
             qInfo() << "SetSystemInfo call failed:"

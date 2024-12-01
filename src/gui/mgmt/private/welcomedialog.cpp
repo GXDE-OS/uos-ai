@@ -21,8 +21,9 @@
 static constexpr char info[] = "uos-ai-assistant_info";
 static constexpr char WARNING_ICON[] = ":/assets/images/warning.svg";
 
-WelcomeDialog::WelcomeDialog(DWidget *parent) : DAbstractDialog(parent)
-    , m_freeAccount(false)
+WelcomeDialog::WelcomeDialog(DWidget *parent, bool onlyUseAgreement) : DAbstractDialog(parent)
+  , m_freeAccount(false)
+  , m_onlyUseAgreement(onlyUseAgreement)
 {
     EWndManager()->registeWindow(this);
 
@@ -110,6 +111,10 @@ void WelcomeDialog::initUI()
     m_pFreeAccount->setDisabled(true);
     m_pAddModel->setDisabled(true);
 
+    m_pStartUsing = new DSuggestButton();
+    m_pStartUsing->setText(tr("Start using"));
+    m_pStartUsing->setDisabled(true);
+
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->setContentsMargins(0, 0, 0, 20);
     mainLayout->setSpacing(0);
@@ -122,6 +127,7 @@ void WelcomeDialog::initUI()
     mainLayout->addSpacing(10);
     mainLayout->addLayout(expLayout);
     mainLayout->addSpacing(20);
+    mainLayout->addWidget(m_pStartUsing, 0, Qt::AlignHCenter);
     mainLayout->addWidget(m_pFreeWidget);
     mainLayout->addWidget(m_pAddModel, 0, Qt::AlignHCenter);
     mainLayout->addStretch();
@@ -135,8 +141,10 @@ void WelcomeDialog::initConnect()
     connect(m_pAgrCheckbox, &WrapCheckBox::stateChanged, this, [this ](int state) {
         m_pFreeAccount->setDisabled(state == Qt::Unchecked);
         m_pAddModel->setDisabled(state == Qt::Unchecked);
+        m_pStartUsing->setDisabled(state == Qt::Unchecked);
     });
     connect(m_pAddModel, &DPushButton::clicked, this, &WelcomeDialog::accept);
+    connect(m_pStartUsing, &DPushButton::clicked, this, &WelcomeDialog::accept);
     connect(m_pFreeAccount, &DPushButton::clicked, this, &WelcomeDialog::onGetFreeAccount);
     connect(QApplication::instance(), SIGNAL(fontChanged(const QFont &)), this, SLOT(onUpdateSystemFont(const QFont &)));
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &WelcomeDialog::onUpdateSystemTheme);
@@ -192,7 +200,8 @@ void WelcomeDialog::onGetFreeAccount()
         llm.type = ModelType::FREE_NORMAL;
         llm.id = freeAccount.appkey;
         llm.model = static_cast<LLMChatModel>(freeAccount.llmModel);
-        llm.name = LLMServerProxy::llmName(llm.model) + "-" + tr("Trial Account");
+        llm.url = freeAccount.modelUrl;
+        llm.name = LLMServerProxy::llmName(llm.model, !llm.url.isEmpty()) + "-" + tr("Trial Account");
         AccountProxy accountProxy;
         SocketProxy socketProxy;
         socketProxy.socketProxyType = SocketProxyType::SYSTEM_PROXY;
@@ -227,7 +236,7 @@ void WelcomeDialog::onGetFreeAccount()
         m_pFreeWidget->hide();
         this->adjustSize();
     } else {
-        dlg.setMessage(tr("Network exception, please try again later."));
+        dlg.setMessage(tr("Unable to connect to the server, please check your network or try again later."));
         dlg.addButton(tr("Confirm", "button"), true, DDialog::ButtonNormal);
         dlg.exec();
     }
@@ -235,7 +244,7 @@ void WelcomeDialog::onGetFreeAccount()
 
 DArrowRectangle *WelcomeDialog::showArrowRectangle(DArrowRectangle::ArrowDirection direction)
 {
-    auto pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWindow, this);
+    auto pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWidget, this);
     pExpTips->setRadiusArrowStyleEnable(true);
     pExpTips->setRadius(16);
     QColor color = DGuiApplicationHelper::instance()->applicationPalette().color(QPalette::Base);
@@ -294,8 +303,9 @@ void WelcomeDialog::resetDialog()
     } else {
         m_pExpCheckbox->setCheckState(DbWrapper::localDbWrapper().getUserExpState() > 0 ? Qt::Checked : Qt::Unchecked);
     }
-    m_pAgrCheckbox->setCheckState(DbWrapper::localDbWrapper().getAICopilotIsOpen() ? Qt::Checked : Qt::Unchecked);
-    if (DbWrapper::localDbWrapper().getAICopilotIsOpen()) m_pAgrCheckbox->setDisabled(true);
+     m_pAgrCheckbox->setCheckState(DbWrapper::localDbWrapper().getAICopilotIsOpen() ? Qt::Checked : Qt::Unchecked);
+     if (DbWrapper::localDbWrapper().getAICopilotIsOpen())
+         m_pAgrCheckbox->setDisabled(true);
 
     //中文环境下检测免费账号活动
     if (QLocale::Chinese == QLocale::system().language() && QLocale::SimplifiedChineseScript == QLocale::system().script()) {
@@ -315,5 +325,25 @@ void WelcomeDialog::resetDialog()
                 }
             });
         });
+    }
+
+    if (m_onlyUseAgreement) {
+        m_pExpCheckbox->hide();
+        m_pExpIcon->hide();
+        m_pFreeWidget->hide();
+        m_pFreeAccount->hide();
+        m_pActivity->hide();
+        m_pAddModel->hide();
+
+        m_pStartUsing->show();
+    } else {
+        m_pStartUsing->hide();
+
+        m_pExpCheckbox->show();
+        m_pExpIcon->show();
+        m_pFreeAccount->show();
+        m_pActivity->show();
+        m_pFreeWidget->show();
+        m_pAddModel->show();
     }
 }

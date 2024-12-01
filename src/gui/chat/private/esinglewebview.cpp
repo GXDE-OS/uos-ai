@@ -19,6 +19,8 @@ ESingleWebView::ESingleWebView(QWidget *parent)
     m_page->setWebChannel(new QWebChannel(m_page));
     setPage(m_page);
     m_chat = new ESingleWebChat("", this);
+
+    connect(m_chat, &ESingleWebChat::sigVoiceConversationStatusChanged, this, &ESingleWebView::voiceConversationStatusChanged);
 }
 
 ESingleWebView::~ESingleWebView()
@@ -60,6 +62,12 @@ void ESingleWebView::setToDigitalMode()
         addPendingTask(SwitchDigitalMode);
 }
 
+void ESingleWebView::setToChatMode()
+{
+    if (m_loadFinished)
+        emit m_chat->sigChatModeActive();
+}
+
 void ESingleWebView::addPendingTask(Task task)
 {
     m_tasks << task;
@@ -73,6 +81,21 @@ void ESingleWebView::setModalState(bool isModal)
 void ESingleWebView::setWindowActiveState(bool isActive)
 {
     emit m_chat->sigWebchatActiveChanged(isActive);
+}
+
+void ESingleWebView::updateFont(const QString &fontFamily, int pixelSize)
+{
+    if (this->m_chat) {
+        m_chat->setFontInfo(fontFamily, pixelSize);
+    }
+}
+
+void ESingleWebView::setWindowMode(bool isWindowMode)
+{
+    if (this->m_chat) {
+        m_chat->setWindowMode(isWindowMode);
+        emit m_chat->sigWindowModeChanged(isWindowMode);
+    }
 }
 
 void ESingleWebView::onLoadFinished(bool)
@@ -121,6 +144,7 @@ bool ESingleWebView::eventFilter(QObject *obj, QEvent *ev)
     return QWebEngineView::eventFilter(obj, ev);
 }
 
+
 ESingleWebPage::ESingleWebPage(QObject *parent): QWebEnginePage(parent)
 {
 
@@ -137,9 +161,16 @@ bool ESingleWebPage::acceptNavigationRequest(const QUrl &url, NavigationType typ
     return QWebEnginePage::acceptNavigationRequest(url, type, isMainFrame);
 }
 
+
 ESingleWebChat::ESingleWebChat(const QString &scene, ESingleWebView *view)
     : EAiProxy(view), m_sceneType(scene), m_view(view)
 {
     m_view->page()->webChannel()->registerObject("chatObject", this);
     m_view->installEventFilter(this);
+}
+
+void ESingleWebChat::updateVoiceConversationStatus(int status)
+{
+    qDebug() << "update voice conversation status, status: " << status;
+    emit sigVoiceConversationStatusChanged(status);
 }

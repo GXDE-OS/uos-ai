@@ -30,7 +30,7 @@ class EAiExecutor : public QObject
 public:
     bool initAiSession();
 
-    QString sendAiRequst(const QString &llmId, const QString &prompt, QSharedPointer<EAiCallback> callback);
+    QString sendAiRequst(const QString &llmId, const QString &prompt, QSharedPointer<EAiCallback> callback, bool isFAQGeneration = false);
     void clearAiRequest(const QObject *aiProxy);
     void cancelAiRequst(const QString &id);
 
@@ -39,8 +39,14 @@ public:
     QString queryLLMAccountList();
     bool setCurrentLLMAccountId(const QString &id);
 
+    QString currentAssistantId();
+    QString queryAssistantList();
+    bool setCurrentAssistantId(const QString &id);
+    QString currentAssistantName();
+    AssistantType currentAssistantType();
+
     //Config ai account
-    void launchLLMConfigWindow(bool showAddllmPage = false);
+    void launchLLMConfigWindow(bool showAddllmPage = false, bool onlyUseAgreement = false);
 
     void launchAboutWindow();
 
@@ -55,7 +61,7 @@ public:
     void closeChatWindow();
 
     //Record api
-    bool startRecorder();
+    bool startRecorder(int mode);
     bool stopRecorder();
     bool isRecording();
     bool isAudioInputAvailable();
@@ -86,6 +92,10 @@ public:
 
     //Network state check
     bool isNetworkAvailable();
+    bool isKnowledgeBaseExist() { return m_knowledgeBaseExist; }
+
+    void personalFAQGenerate();
+
 signals:
     void llmAccountLstChanged(const QString &currentAccountId,
                               const QString &accountLst);
@@ -107,11 +117,20 @@ signals:
 
     //Network state changed
     void netStateChanged(bool isOnline);
+
+    void assistantChanged(int id);
+    void knowledgeBaseExistChanged( bool exist);
+    void knowledgeBaseFAQGenFinished();
+
 protected slots:
     void onCommandsReceived(const QVariantMap &commands);
     void onChatTextReceived(const QString &callId, const QString &chatText);
     void onChatError(const QString &id, int code, const QString &errorString);
     void onTextToPictureData(const QString &id, const QList<QByteArray> &imageData);
+
+    void onAddToServerStatusChanged(const QStringList &files, int status);
+    void onIndexDeleted(const QStringList &files);
+
 protected:
     //Private methods
     void loadAiFAQ();
@@ -121,6 +140,7 @@ protected:
 
     //Init network monitor
     void initNetworkMonitor();
+
 protected:
     QSharedPointer<Session> m_aiProxy;
 
@@ -133,8 +153,11 @@ protected:
     //Ai temperature
     qreal m_temperature {1.0};
 
-    const int   m_limitAQCount {3};
+    const int   m_limitAQCount {6};
     QVector<QJsonObject> m_aiFAQ;
+    QVector<QJsonObject> m_assistantFAQ;
+    QVector<QJsonObject> m_persKnowledgeBaseFAQ;
+    QString m_faqId = "";   //生成问题的ID
 
     QLocale m_sysLang;
 
@@ -161,21 +184,23 @@ protected:
 
     friend QDebug &operator<<(QDebug &debug, const AiChatRecord &r);
 
-    static bool makeJsonFromChatRecord(
-        const AiChatRecord &rec /*in*/,
-        QJsonArray &historyArray /*out*/
-    );
+    static bool makeJsonFromChatRecord(const AiChatRecord &rec /*in*/, QJsonArray &historyArray /*out*/);
 
-    QVector<AiChatRecord> m_chatHistories;
+    QMap<QString, QVector<AiChatRecord>> m_assistantChatHistories;
 
     //Temporary directory to save TTP
     QTemporaryDir m_ttpDir;
+
+    bool m_isAnswering = false;
+    bool m_knowledgeBaseExist = false;
+    bool m_isFAQGenerating = false;
+
 private:
     //Make ai request context
-    QString makeAiReqContext(const QString &question);
-    void processAiRecord(
-        const AiChatRecord &rec /*in*/,
-        QJsonArray &ctxArray/*out*/);
+    QString makeAiReqContext(const QString &question, bool isFAQGeneration = false);
+    void processAiRecord(const AiChatRecord &rec /*in*/, QJsonArray &ctxArray/*out*/);
+
+    bool isKnowAssistantType();
 };
 
 #define EAiExec() (ESingleton<EAiExecutor>::getInstance())

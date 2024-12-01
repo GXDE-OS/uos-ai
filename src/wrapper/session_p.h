@@ -4,6 +4,8 @@
 #include "serverdefs.h"
 #include "networkdefs.h"
 
+#include "llmservicevendor.h"
+
 class LLM;
 class Session;
 class SessionPrivate : public QObject
@@ -22,21 +24,21 @@ public:
 private:
     /**
      * @brief Request the chat session function interface.
-     * @param llmId: LLM Account Id
+     * @param tmpLLMAccount: LLM Account
      * @param conversation: A description of a paragraph.
      * @param functionName: Request Function Name
      * @param stream: Conversation flow switch.
      * @param temperature: A parameter that returns randomness, where a higher value indicates higher randomness.
      */
-    QPair<AIServer::ErrorType, QStringList> requestChatFunctionText(const QString &llmId, const QString &conversation
+    QPair<AIServer::ErrorType, QStringList> requestChatFunctionText(LLMServerProxy tmpLLMAccount, const QString &conversation
+                                                                    , bool stream = false
+                                                                    , qreal temperature = 1.0
+                                                                    , bool isFAQGeneration = false);
+    QPair<AIServer::ErrorType, QStringList> requestPlugin(LLMServerProxy tmpLLMAccount, const QString &conversation
                                                                     , bool stream = false
                                                                     , qreal temperature = 1.0);
 
-    /**
-     * @brief checkUpdateLLmAccount
-     * @param llmId
-     */
-    void checkUpdateLLmAccount(const QString &llmId);
+    void checkUpdateAssistantAccount(const QString &assistantId);
 
     /**
      * @brief handleRequestError
@@ -59,7 +61,7 @@ private:
      */
     bool handleAiServerRequest(QSharedPointer<LLM> copilot, const QString &uuid
                                , QJsonObject &response, const QString &conversation
-                               , const QJsonArray &functions, qreal temperature, LLMChatModel model, const QString &userName);
+                               , const QJsonArray &functions, qreal temperature, const LLMServerProxy &llmAccount);
 
     /**
      * @brief queryValidServerAccount
@@ -72,7 +74,7 @@ private:
      * @param llmAccount
      * @return
      */
-    bool checkLLMAccountStatus(const QString &uuid, const LLMServerProxy &llmAccount);
+    bool checkLLMAccountStatus(const QString &uuid, LLMServerProxy &llmAccount, int &errorType);
 
     /**
      * @brief ChatSeesionPrivate::handleLocalModel
@@ -82,6 +84,8 @@ private:
      * @return
      */
     QString handleLocalModel(QSharedPointer<LLM> copilot, const QString &uuid, const QString &conversation, const LLMServerProxy &llmAccount);
+
+    QVariant getFAQ();
 
 private slots:
     /**
@@ -94,8 +98,11 @@ private:
 
     QString m_appId;
     LLMServerProxy m_appServerProxy;
+    AssistantProxy m_assistantProxy;
 
     QList<QString> m_runTaskIds;
+
+    uos_ai::LLMServiceVendor m_llmVendor;
 
 private:
     Session *m_q;

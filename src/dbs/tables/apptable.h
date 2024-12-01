@@ -39,6 +39,9 @@ public:
     QString ext() const;
     void setExt(const QString &ext);
 
+    QString assistantid() const;
+    void setAssistantid(const QString &assistantid);
+
     virtual bool save() override ;
     virtual bool update() override ;
     virtual bool remove() override ;
@@ -46,7 +49,7 @@ public:
     static AppTable  create();
 
     static AppTable  create(const QString &uuid, const QString &name
-                            , const QString &desc, const QString &llmid, const QString &cmd, const QString &ext);
+                            , const QString &desc, const QString &llmid, const QString &cmd, const QString &ext, const QString &assistantid = "");
 
     static AppTable  get(const QString &uuid);
 

@@ -23,8 +23,8 @@ ModelListItem::ModelListItem(const LLMServerProxy &data, DWidget *parent)
 void ModelListItem::initUI()
 {
     m_pWidget = new OperatingLineWidget(this);
-    m_pWidget->setName(m_data.name.isEmpty() ? LLMServerProxy::llmName(m_data.model) : m_data.name);
-    m_pWidget->setEditText(LLMServerProxy::llmName(m_data.model));
+    m_pWidget->setName(m_data.name.isEmpty() ? LLMServerProxy::llmName(m_data.model, !m_data.url.isEmpty()) : m_data.name);
+    m_pWidget->setEditText(LLMServerProxy::llmName(m_data.model, !m_data.url.isEmpty()));
     m_pWidget->setModelShow(true);
 
     QHBoxLayout *layout = new QHBoxLayout(this);
@@ -62,7 +62,7 @@ void ModelListItem::onEditButtonClicked()
     if (QDialog::Accepted == dlg.exec()) {
         if (dlg.getModelName() != m_data.name) {
             m_data.name = dlg.getModelName();
-            m_pWidget->setName(m_data.name.isEmpty() ? LLMServerProxy::llmName(m_data.model) : m_data.name);
+            m_pWidget->setName(m_data.name.isEmpty() ? LLMServerProxy::llmName(m_data.model, !m_data.url.isEmpty()) : m_data.name);
             DbWrapper::localDbWrapper().updateLlm(m_data);
             ServerWrapper::instance()->updateLLMAccount();
         }
