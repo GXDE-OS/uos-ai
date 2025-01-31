@@ -36,18 +36,18 @@ include_directories("${CMAKE_SOURCE_DIR}/include")
 find_package(DtkCMake REQUIRED)
 
 #Indentify the version
-if (1 OR ${DEEPIN_OS_VERSION} MATCHES "23")
-    add_definitions(-DCOMPILE_ON_V23)
-    set(COMPILE_ON_V23 TRUE)
-    message("COMPILE ON v23")
-else()
+#if (1 OR ${DEEPIN_OS_VERSION} MATCHES "23")
+#    add_definitions(-DCOMPILE_ON_V23)
+#    set(COMPILE_ON_V23 TRUE)
+#    message("COMPILE ON v23")
+#else()
     add_definitions(-DCOMPILE_ON_V20)
     set(COMPILE_ON_V20 TRUE)
     message("COMPILE ON v20")
 
     set(ENABLE_MODEL_PLUGIN TRUE)
     add_definitions(-DENABLE_MODEL_PLUGIN)
-endif()
+#endif()
 
 add_subdirectory(plugin-model)
 
