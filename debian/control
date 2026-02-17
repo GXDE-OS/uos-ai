@@ -25,7 +25,7 @@ Build-Depends:
  qt6-wayland-private-dev,
  libdtk6widget-dev (>= 6.0.24),
  libdtk6declarative-dev (>= 6.0.19),
- libdde-shell-dev (>= 0.0.10),
+# libdde-shell-dev (>= 0.0.10),
  treeland-protocols (>= 0.4.4),
  wlr-protocols,
  wayland-protocols,
