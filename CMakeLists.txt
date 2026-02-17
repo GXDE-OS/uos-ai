@@ -53,7 +53,7 @@ option(ENABLE_MODEL_PLUGINS "Enable Model Plugins" OFF)
 option(ENABLE_ASSISTANT "Enable AI Assistant" ON)
 option(ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT "Enable Personal Knowledge Assistant" OFF)
 option(ENABLE_AI_BAR "Enable AI Bar" OFF)
-option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" OFF)
+option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" ON)
 option(ENABLE_MCP "Enable MCP Server" ON)
 
 # 模型插件

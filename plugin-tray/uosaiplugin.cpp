@@ -115,13 +115,9 @@ const QString UosAiPlugin::itemCommand(const QString &itemKey)
             qCWarning(logTray) << "Failed to launch chat page via DBus, error:" << error;
         }
     }
-#ifdef COMPILE_ON_V23
-    qCDebug(logTray) << "Returning fallback command: dde-am uos-ai-assistant";
-    return "dde-am uos-ai-assistant";
-#else
+
     qCDebug(logTray) << "Returning fallback command: uos-ai-assistant --chat";
     return "uos-ai-assistant --chat";
-#endif
 }
 
 int UosAiPlugin::itemSortKey(const QString &itemKey)
