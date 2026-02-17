@@ -3,11 +3,18 @@
 
 #include <QObject>
 #include <QAudioInput>
+#include <QAudioFormat>
 #include <QByteArray>
 #include <QTimer>
 #include <QMutex>
 #include <QPropertyAnimation>
 #include <QFile>
+
+#ifdef COMPILE_ON_QT6
+#include <QMediaDevices>
+#include <QAudioDevice>
+#include <QAudioSource>
+#endif
 
 //#define SAVE_AUDIO_DATA
 
@@ -62,7 +69,12 @@ private:
 private:
     QScopedPointer<AudioInfo>   m_audioInfo;
     QAudioFormat                m_audioFormat;
+
+#ifdef COMPILE_ON_QT6
+    QScopedPointer<QAudioSource> m_audioInput;
+#else
     QScopedPointer<QAudioInput> m_audioInput;
+#endif
 
 private:
     friend class AudioRecorder;
@@ -78,7 +90,11 @@ public:
     explicit AudioRecorder();
     virtual ~AudioRecorder() override;
 
-    static QAudioDeviceInfo findAudioInputDevice();
+#ifdef COMPILE_ON_QT6
+   static QAudioDevice findAudioInputDevice();
+#else
+   static QAudioDeviceInfo findAudioInputDevice();
+#endif
 
     bool start();
     bool stop();

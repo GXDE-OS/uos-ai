@@ -4,7 +4,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-find_package(Qt5Gui REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui)
 
 FILE(GLOB_RECURSE SRCS
     "${CMAKE_CURRENT_SOURCE_DIR}/*.h"
@@ -12,7 +12,7 @@ FILE(GLOB_RECURSE SRCS
     "${CMAKE_CURRENT_SOURCE_DIR}/*.json"
 )
 
-set(ASSETS_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}/share/uos-ai-assistant/llm/assets/")
+set(ASSETS_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}/share/uos-ai-assistant/llm/${PROJECT_NAME}/assets/")
 if (CMAKE_BUILD_TYPE MATCHES Debug)
     add_definitions(-DASSETS_INSTALL_DIR="${CMAKE_CURRENT_SOURCE_DIR}/assets/")
 else()
@@ -25,12 +25,12 @@ add_library(${PROJECT_NAME}
     )
 
 target_link_libraries(${PROJECT_NAME}
-    Qt5::Gui
+    Qt${QT_VERSION_MAJOR}::Gui
     )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../)
 
-if (ENABLE_MODEL_PLUGIN)
+if (ENABLE_MODEL_FYDN)
     message("install fydn plugin...")
     install(TARGETS ${PROJECT_NAME} DESTINATION ${EXTERNAL_LLM_DIR})
 

@@ -89,14 +89,14 @@ void WrapCheckBox::onUpdateSystemFont(const QFont &)
     int maxWidth = m_maxWidth - 10;
     QFontMetrics fontMetrics(m_label->font());
 
-    if (fontMetrics.width(m_text) > maxWidth) {
+    if (fontMetrics.horizontalAdvance(m_text) > maxWidth) {
         QString wrappedText;
         int startPos = 0;
         int endPos = 0;
 
         while (endPos < m_text.length()) {
             endPos = startPos + 1;
-            while (fontMetrics.width(m_text.mid(startPos, endPos - startPos)) <= maxWidth && endPos < m_text.length()) {
+            while (fontMetrics.horizontalAdvance(m_text.mid(startPos, endPos - startPos)) <= maxWidth && endPos < m_text.length()) {
                 endPos++;
             }
             wrappedText += m_text.mid(startPos, endPos - startPos).trimmed();
@@ -166,4 +166,11 @@ void WrapCheckBox::setDisabled(bool b)
 {
     if (m_checkBox)
         m_checkBox->setDisabled(b);
+}
+
+void WrapCheckBox::setFontSize(int type, int weight)
+{
+    if (m_label) {
+        DFontSizeManager::instance()->bind(m_label, static_cast<DFontSizeManager::SizeType>(type), weight);
+    }
 }

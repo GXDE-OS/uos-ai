@@ -12,6 +12,9 @@
 #include <QJsonObject>
 #include <QUrlQuery>
 #include <QRegularExpression>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logLLM)
 
 XFNetWork::XFNetWork(const AccountProxy &account, QObject *parent)
     : QObject(parent)
@@ -49,17 +52,20 @@ QJsonObject XFNetWork::parameter(int model, qreal temperature, const QString &ur
     } else if (model == LLMChatModel::SPARKDESK_3) {
         domain = "generalv3";
     } else if (model == LLMChatModel::SPARKDESK && !url.isEmpty()) {
-        QRegularExpression regex("v(\\d+\\.\\d+)");
-        QRegularExpressionMatch match = regex.match(url);
-        if(match.hasMatch()){
-            QString version = match.captured(1);
-            if (version == "1.1")
-                domain = "general";
-            else if (version == "2.1")
-                domain = "generalv2";
-            else if (version == "3.1")
-                domain = "generalv3";
-        }
+        if (url.contains("v4.0"))
+            domain = "4.0Ultra";
+        else if (url.contains("max-32k"))
+            domain = "max-32k";
+        else if (url.contains("v3.5"))
+            domain = "generalv3.5";
+        else if (url.contains("pro-128k"))
+            domain = "pro-128k";
+        else if (url.contains("v3.1"))
+            domain = "generalv3";
+        else if (url.contains("v1.1"))
+            domain = "lite";
+        else if (url.contains("kjwx"))
+            domain = "kjwx";
     } else {
         domain = "general";
     }
@@ -96,16 +102,18 @@ QJsonObject XFNetWork::payloadFunctions(const QJsonArray &functions) const
 
 QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const QString &path)
 {
+    qCDebug(logLLM) << "XFNetWork Starting WebSocket request to path:" << path;
     TimerEventLoop loop;
     int retError = -1;
 
     QSharedPointer<QWebSocket> websocket = AuthWebUrl::webSocket(m_accountProxy.socketProxy);
     connect(websocket.data(), &QWebSocket::connected, [websocket, sendData]() {
+        qCDebug(logLLM) << "XFNetWork WebSocket connected, sending data";
         websocket->sendTextMessage(sendData);
     });
     connect(websocket.data(), QOverload<QAbstractSocket::SocketError>::of(&QWebSocket::error), [ &loop, &retError, websocket](QAbstractSocket::SocketError error) {
         retError = error;
-        qWarning() << websocket->errorString();
+        qCWarning(logLLM) << "XFNetWork WebSocket error:" << websocket->errorString();
         loop.quit();
     });
 
@@ -138,6 +146,7 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
 
     if (loopRet == TimerEventLoop::EVENTLOOP_TIME_OUT) {
         retError = QAbstractSocket::SocketTimeoutError;
+        qCWarning(logLLM) << "XFNetWork WebSocket request timed out after 15 seconds";
     }
 
     AIServer::ErrorType serverError = AIServer::socketErrorToAiServerError(static_cast<QAbstractSocket::SocketError>(retError));
@@ -153,10 +162,16 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
         QString message = headerobject.value("message").toString();
         if (code == 11202 || code == 11203) {
             serverError = AIServer::ServerRateLimitError;
+            qCWarning(logLLM) << "XFNetWork Server rate limit error occurred";
         } else if (code == 10005 && message.contains("app_id")) {
             serverError = AIServer::AuthenticationRequiredError;
+            qCWarning(logLLM) << "XFNetWork Authentication error occurred - invalid app_id";
+        } else if (code == 10163) {
+            serverError = AIServer::ContentExceededError;
+            qCWarning(logLLM) << "XFNetWork Content exceeded error occurred";
         } else {
             serverError = AIServer::ContentAccessDenied;
+            qCWarning(logLLM) << "XFNetWork Content access denied with code:" << code;
         }
 
         QString errorMessage = ServerCodeTranslation::serverCodeTranslation(serverError, QString());
@@ -165,13 +180,15 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
         else
             responseData = errorMessage.toUtf8();
 
-        qWarning() << "XFNetWork::request error " << code << responseData.data();
+        qCWarning(logLLM) << "XFNetWork::request error " << code << responseData.data();
     } else if (serverError != AIServer::NoError) {
         if (websocket->errorString().contains("Unauthorized")) {
             serverError = AIServer::AuthenticationRequiredError;
+            qCWarning(logLLM) << "XFNetWork Unauthorized access attempt";
         }
 
-        qWarning() << "XFNetWork::request error " << serverError << websocket->errorString() << responseData.data();
+        qCWarning(logLLM) << "Request failed with error:" << serverError 
+                         << "Details:" << websocket->errorString();
         responseData = ServerCodeTranslation::serverCodeTranslation(serverError, websocket->errorString()).toUtf8();
 
         // Qt组装的，去掉Qt起始信息
@@ -179,6 +196,7 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
             responseData = responseData.mid(QString("QWebSocketPrivate::processHandshake:").length()).trimmed();
     }
 
+    qCDebug(logLLM) << "WXFNetWork ebSocket request completed with status:" << serverError;
     websocket->disconnect();
 
     return qMakePair(serverError, responseData);
@@ -186,6 +204,7 @@ QPair<int, QByteArray> XFNetWork::wssRequest(const QByteArray &sendData, const Q
 
 QPair<int, QByteArray> XFNetWork::httpRequest(const QJsonObject &data, const QString &path)
 {
+    qCDebug(logLLM) << "XFNetWork Starting HTTP request to path:" << path;
     QUrl url = AuthWebUrl::createUrl("POST", path, m_accountProxy.apiKey, m_accountProxy.apiSecret);
 
     BaseNetWork httpNetwork(m_accountProxy);
@@ -200,10 +219,13 @@ QPair<int, QByteArray> XFNetWork::httpRequest(const QJsonObject &data, const QSt
         QString message = headerobject.value("message").toString();
         if (code == 11202 || code == 11203) {
             baseresult.error = AIServer::ServerRateLimitError;
+            qCWarning(logLLM) << "XFNetWork Server rate limit error occurred";
         } else if (code == 10005 && message.contains("app_id")) {
             baseresult.error = AIServer::AuthenticationRequiredError;
+            qCWarning(logLLM) << "XFNetWork Authentication error occurred - invalid app_id";
         } else {
             baseresult.error = AIServer::ContentAccessDenied;
+            qCWarning(logLLM) << "XFNetWork Content access denied with code:" << code;
         }
 
         QString errorMessage = ServerCodeTranslation::serverCodeTranslation(baseresult.error, QString());
@@ -222,6 +244,9 @@ QPair<int, QByteArray> XFNetWork::httpRequest(const QJsonObject &data, const QSt
         // Qt组装的，去掉Qt起始信息
         if (baseresult.data.startsWith("QWebSocketPrivate::processHandshake:"))
             baseresult.data = baseresult.data.mid(QString("QWebSocketPrivate::processHandshake:").length()).trimmed();
+
+        qCWarning(logLLM) << "XFNetWork HTTP request failed with error:" << baseresult.error 
+                << "Details:" << baseresult.errorString;
     }
 
     return qMakePair(baseresult.error, baseresult.data);

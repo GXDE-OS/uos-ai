@@ -1,0 +1,52 @@
+[
+    {
+        "version": "V2.12",
+        "date-for-v20": "2025-10-16",
+        "date-for-v25": "2025-11-25",
+        "items": [
+            {
+                "type": "improvement",
+                "description": "Built-in selected MCP Servers, covering practical needs across multiple scenarios including system control, file management, application management, network protocols, and document office."
+            },
+            {
+                "type": "improvement",
+                "description": "MCP Server is upgraded to auto-mode. Once the MCP Server is activated, it automatically matches appropriate tools, eliminating the need for manual selection."
+            },
+            {
+                "type": "improvement",
+                "description": "The MCP Server supports intelligent parsing of dragged files and file paths."
+            },
+            {
+                "type": "improvement",
+                "description": "The MCP Server supports intelligent parsing of dragged files and file paths."
+            }
+        ]
+    },
+    {
+        "version": "V2.11",
+        "date-for-v20": "2025-10-16",
+        "date-for-v25": "2025-9-29",
+        "items": [
+            {
+                "type": "new",
+                "description": "Adjustment of personal knowledge base access point: The knowledge base access point has been integrated into the UOS AI agent to facilitate usage."
+            },
+            {
+                "type": "new",
+                "description": "Increased methods for adding files to the knowledge base: A new \"Add to AI Knowledge Base\" entry has been added in the onboard and right-click menus of files."
+            },
+            {
+                "type": "improvement",
+                "description": "New support formats for file upload and knowledge base: Markdown and common code formats have been added."
+            },
+            {
+                "type": "improvement",
+                "description": "The shortcut for FollowAlong has been changed to [Super+R]."
+            },
+            {
+                "type": "improvement",
+                "description": "FollowAlong toolbar now includes [Ask AI], allowing quick queries about selected content."
+            }
+        ]
+    }
+]

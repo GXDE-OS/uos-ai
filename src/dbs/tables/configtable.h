@@ -18,7 +18,11 @@ public:
         CopilotUserExp  = 4,    // 小助手用户体验计划状态
         CopilotLocalSpeech = 5, // 本地语音模型
         WindowDisplayMode = 6,  // 窗口模式
-        WindowSize = 7   // 窗口大小
+        WindowSize = 7, // 窗口大小
+        CopilotGuide = 8, //v2.7 Deepseek领取引导
+        CopilotUpdatePrompt = 9, //v2.8更新提示
+        CopilotThirdPartyMcp = 10, // 第三方MCP协议同意状态
+        ShownUpdateLogVersion = 11  //展示更新日志记录
     };
 
     ConfigTable();

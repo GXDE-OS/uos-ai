@@ -1,0 +1,52 @@
+[
+    {
+        "version": "V2.12",
+        "date-for-v20": "2025-10-16",
+        "date-for-v25": "2025-11-25",
+        "items": [
+            {
+                "type": "improvement",
+                "description": "内置精选 MCP 服务，覆盖系统控制、文件管理、应用管理、联网协议、文档办公等多场景实用需求。"
+            },
+            {
+                "type": "improvement",
+                "description": "MCP服务升级为自动模式，开启MCP服务后自动匹配合适工具，无需手动选择。"
+            },
+            {
+                "type": "improvement",
+                "description": "MCP服务支持智能解析拖拽文件及文件路径。"
+            },
+            {
+                "type": "improvement",
+                "description": "UOS AI应用默认窗口模式。"
+            }
+        ]
+    },
+    {
+        "version": "V2.11",
+        "date-for-v20": "2025-10-16",
+        "date-for-v25": "2025-9-29",
+        "items": [
+            {
+                "type": "new",
+                "description": "个人知识库使用入口调整：将知识库使用入口加入到UOS AI智能体，方便使用。"
+            },
+            {
+                "type": "new",
+                "description": "添加文件到知识库方式增多：在随航、文件右键中新增【添加到AI知识库】入口。"
+            },
+            {
+                "type": "improvement",
+                "description": "文件上传和知识库支持格式改进：新增了Markdown、常见代码格式。"
+            },
+            {
+                "type": "improvement",
+                "description": "随航的快捷键变更为【Super+R】。"
+            },
+            {
+                "type": "improvement",
+                "description": "随航工具栏新增【问问AI】，支持针对选中内容进行快捷提问。"
+            }
+        ]
+    }
+]

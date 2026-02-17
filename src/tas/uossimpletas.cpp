@@ -6,11 +6,13 @@
 #include <QNetworkRequest>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logTAS)
 
 UosSimpleTas::UosSimpleTas()
     : TAS()
 {
-
 }
 
 QString UosSimpleTas::hostUrl() const
@@ -34,14 +36,14 @@ TextAuditResult UosSimpleTas::doTextAuditing(const QByteArray &data)
     QNetworkRequest req = httpAccessManager->baseNetWorkRequest(QUrl(hostUrl()), false);
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
-    qDebug() << "Tas Request: " << QString(sendData);
+    qCInfo(logTAS) << "Sending audit request, data length:" << data.length();
     QNetworkReply *reply = httpAccessManager->post(req, sendData);
 
     HttpEventLoop loop(reply, "UosSimpleTas::doTextAuditing");
     loop.setHttpOutTime(15000);
     loop.exec();
 
-    TextAuditResult txtResult;
+    TextAuditResult txtResult{};
     QNetworkReply::NetworkError netReplyError;
     bool isAuthError = httpAccessManager->isAuthenticationRequiredError();
     if (isAuthError)
@@ -52,7 +54,7 @@ TextAuditResult UosSimpleTas::doTextAuditing(const QByteArray &data)
         netReplyError = loop.getNetWorkError();
 
     if (netReplyError == QNetworkReply::NetworkError::NoError) {
-        qDebug() << "Tas Result: " << loop.getHttpResult().toStdString().c_str();
+        qCDebug(logTAS) << "Audit response received, length:" << loop.getHttpResult().length();
         QJsonDocument respJson = QJsonDocument::fromJson(loop.getHttpResult());
         if (respJson.isObject()) {
             auto resultObj = respJson.object();
@@ -61,16 +63,20 @@ TextAuditResult UosSimpleTas::doTextAuditing(const QByteArray &data)
                 if (datasObj.contains("suggestion")) {
                     if (datasObj["suggestion"].toString() == "pass") {
                         txtResult.code = None;
+                        qCInfo(logTAS) << "Audit passed";
                     } else {
                         txtResult.code = Contraband;
+                        qCWarning(logTAS) << "Audit failed, contraband detected";
                     }
                 } else {
                     txtResult.code = NetError;
+                    qCWarning(logTAS) << "Audit response missing suggestion field";
                 }
             }
         }
     } else {
         txtResult.code = NetError;
+        qCCritical(logTAS) << "Audit request failed, network error:" << netReplyError;
     }
 
     return txtResult;

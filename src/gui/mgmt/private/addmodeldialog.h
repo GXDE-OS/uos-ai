@@ -44,6 +44,12 @@ private:
      */
     bool isNameDuplicate(const QList<LLMServerProxy> &) const;
 
+    /**
+     * @brief 获取OpenRouter上的模型列表
+     * @return void
+     */
+    void getOpenRouterModelList();
+
 protected:
     bool event(QEvent *event) override;
     bool eventFilter(QObject *watched, QEvent *event) override;
@@ -58,6 +64,7 @@ private slots:
     void onAddressAlertChanged(bool alert);
     void onCompactModeChanged();
     void onUpdateSystemFont(const QFont &);
+    void onOpenRouterIndexChanged(int index);
 
     void updateProxyLabel();
 private:
@@ -67,6 +74,7 @@ private:
     DPasswordEdit *m_pApiSecretLineEdit = nullptr;
     DLineEdit *m_pNameLineEdit = nullptr;
     DLineEdit *m_pAddressLineEdit = nullptr;
+    DComboBox *m_modelLstComboBox = nullptr;
 
     DLineEdit *m_pCustomModelName = nullptr;
     DLineEdit *m_pCustomModelUrl = nullptr;
@@ -74,6 +82,7 @@ private:
     DPushButton *m_pCancelButton = nullptr;
     DSuggestButton *m_pSubmitButton = nullptr;
     QGridLayout *m_pGridLayout = nullptr;
+    DLabel *m_warningLabel = nullptr;
     DSpinner *m_pSpinner = nullptr;
     DLabel *m_pProxyLabel = nullptr;
     QWidget *m_pWidget = nullptr;
@@ -83,6 +92,8 @@ private:
     QSet<QWidget *> m_widgetSet;
     QMap<int, LLMChatModel> m_modelMap;
     QSet<LLMChatModel> m_threeKeyComboxIndex; //拥有3个字段的combox索引
+    QStringList m_openrouterModelNameLst; //OpenRouter上的模型名称列表
+    QStringList m_openrouterModelIDLst;  //OpenRouter上的模型ID列表
     int m_lastModelIndex = -1;
 };
 

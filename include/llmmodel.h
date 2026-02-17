@@ -17,6 +17,7 @@ namespace uos_ai {
 #define GENERATE_RESPONSE_CODE "code"
 #define GENERATE_RESPONSE_ERRORMSG "errorMsg"
 #define GENERATE_RESPONSE_CONTENT "content"
+#define GENERATE_RESPONSE_REFERENCES  "references"
 
 class LLMModel
 {
@@ -27,7 +28,7 @@ public:
     virtual ~LLMModel() {}
     virtual QString model() const = 0;
     virtual QJsonObject generate(const QString &content, const QVariantHash &params, streamFuncion stream = nullptr, void *user = nullptr) = 0;
-
+    virtual void setAbort() = 0;
 };
 
 }

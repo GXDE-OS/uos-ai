@@ -3,9 +3,11 @@
 #include <QDBusMessage>
 #include <QDBusReply>
 #include <QDBusConnection>
-#include <QDebug>
 #include <QJsonArray>
 #include <QJsonObject>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 static constexpr char kSystemAssistantEmbedding[] { "SystemAssistant" };
 static constexpr char kPersonlAssistantEmbedding[] { "uos-ai" };
@@ -35,6 +37,15 @@ EmbeddingServer::EmbeddingServer(QObject *parent) : QObject(parent)
     appid = QCoreApplication::applicationName();
 }
 
+QJsonObject EmbeddingServer::getDocList()
+{    
+    QDBusPendingCall pendingCall = embedInterface->asyncCall("DocFiles", QVariant(appid));
+    pendingCall.waitForFinished();
+    QDBusMessage reply = pendingCall.reply();
+    QString result = reply.arguments().at(0).toString();
+    return QJsonDocument::fromJson(result.toUtf8()).object();
+}
+
 EmbeddingServer::~EmbeddingServer()
 {
     QDBusConnection::sessionBus().disconnect(NM_SERVICE,
@@ -51,145 +62,165 @@ EmbeddingServer::~EmbeddingServer()
 
 bool EmbeddingServer::createVectorIndex(const QStringList &files)
 {
-    qInfo() << "update";
-    if (!embedInterface->isValid()) {
-        qWarning() << "Failed to create remote interface!";
-        return false;
-    }
     QDBusPendingCall pendingCall = embedInterface->asyncCall("Create", QVariant(appid), QVariant(files));
     pendingCall.waitForFinished();
     QDBusMessage reply = pendingCall.reply();
     bool result = reply.arguments().at(0).toBool();
+    
     if (pendingCall.isValid()) {
-        qDebug() << "Method call successful.";
+        qCDebug(logDBus) << "Vector index creation succeeded";
     } else {
-        qDebug() << "Method call failed. Error:" << reply.errorMessage();
+        qCWarning(logDBus) << "Vector index creation failed:" << reply.errorMessage();
     }
     return result;
 }
 
 bool EmbeddingServer::deleteVectorIndex(const QStringList &files)
 {
-    qInfo() << "delete";
-    if (!embedInterface->isValid()) {
-        qWarning() << "Failed to create remote interface!";
-        return false;
-    }
+    qCDebug(logDBus) << "Deleting vector index for files:" << files;
+    
     QDBusPendingCall pendingCall = embedInterface->asyncCall("Delete", QVariant(appid), QVariant(files));
     pendingCall.waitForFinished();
     QDBusMessage reply = pendingCall.reply();
     bool result = reply.arguments().at(0).toBool();
+    
     if (pendingCall.isValid()) {
-        qDebug() << "Method call successful.";
+        qCDebug(logDBus) << "Vector index deletion succeeded";
     } else {
-        qDebug() << "Method call failed. Error:" << reply.errorMessage();
+        qCWarning(logDBus) << "Vector index deletion failed:" << reply.errorMessage();
     }
     return result;
 }
 
 QStringList EmbeddingServer::searchVecor(const QString &query, int topK, AssistantType type)
 {
-    if (!embedInterface->isValid()) {
-        qWarning() << "Failed to create remote interface!";
-        return {};
+    QString result = embeddingSearch(query, topK, type);
+    QStringList contents;
+    QJsonObject resultObj = QJsonDocument::fromJson(result.toUtf8()).object();
+    for (auto res : resultObj["result"].toArray()) {
+        contents += res.toObject()["content"].toString();
     }
+    qCDebug(logDBus) << "Search completed, found" << contents.size() << "results";
+    return contents;
+}
+
+QString EmbeddingServer::embeddingSearch(const QString &query, int topK, AssistantType type)
+{
     QDBusMessage reply;
     bool callOk = false;
-    if (AssistantType::PERSONAL_KNOWLEDGE_ASSISTANT == type) {
-        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(appid), QVariant(query), QVariant(topK));
+    if (AssistantType::UOS_SYSTEM_ASSISTANT == type || AssistantType::DEEPIN_SYSTEM_ASSISTANT == type) {
+        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(kSystemAssistantEmbedding), QVariant(query), QVariant(topK));
         pendingCall.waitForFinished();
         reply = pendingCall.reply();
         callOk = pendingCall.isValid();
-    } else if (AssistantType::UOS_SYSTEM_ASSISTANT == type || AssistantType::DEEPIN_SYSTEM_ASSISTANT == type) {
-        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(kSystemAssistantEmbedding), QVariant(query), QVariant(topK));
+    } else {
+        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(appid), QVariant(query), QVariant(topK));
         pendingCall.waitForFinished();
         reply = pendingCall.reply();
         callOk = pendingCall.isValid();
     }
 
     if (callOk) {
-        qDebug() << "Method call successful.";
+        qCDebug(logDBus) << "Embedding search completed successfully";
     } else {
-        qDebug() << "Method call failed. Error:" << reply.errorMessage();
+        qCWarning(logDBus) << "Embedding search failed:" << reply.errorMessage();
     }
 
     //json格式检索结果
-    QString result = reply.arguments().at(0).toString();
-    QStringList contents;
-    QJsonObject resultObj = QJsonDocument::fromJson(result.toUtf8()).object();
-    for (auto res : resultObj["result"].toArray()) {
-        contents += res.toObject()["content"].toString();
-    }
-    return contents;
+    return reply.arguments().at(0).toString();
 }
 
-QStringList EmbeddingServer::getDocFiles()
+QVector<QPair<int, QString>> EmbeddingServer::getDocFiles()
 {
-    if (!embedInterface->isValid()) {
-        qWarning() << "Failed to create remote interface!";
+    qCDebug(logDBus) << "Getting document files";
+    
+    QVector<QPair<int, QString>> docs;
+
+    QJsonObject resultObj = getDocList();
+    int version = resultObj["version"].toInt();
+
+    if (version == 1) {
+        for (auto res : resultObj["result"].toArray()) {
+            docs.push_back(qMakePair(-1, res.toObject()["doc"].toString()));
+        }
+    } else if (version == 2) {
+        for (auto res : resultObj["result"].toArray()) {
+            docs.push_back(qMakePair(res.toObject()["status"].toInt(), res.toObject()["doc"].toString()));
+        }
+    } else {
+        qCWarning(logDBus) << "Invalid document list version:" << version;
         return {};
     }
-    QDBusPendingCall pendingCall = embedInterface->asyncCall("DocFiles", QVariant(appid));
+
+    qCDebug(logDBus) << "Retrieved" << docs.size() << "document files";
+    return docs;
+}
+
+QVector<QVector<float>> EmbeddingServer::embeddingTexts(const QStringList &texts)
+{
+    QDBusPendingCall pendingCall = embedInterface->asyncCall("embeddingTexts", QVariant(appid), QVariant(texts));
     pendingCall.waitForFinished();
     QDBusMessage reply = pendingCall.reply();
+    
     if (pendingCall.isValid()) {
-        qDebug() << "Method call successful";
+        qCDebug(logDBus) << "Text embedding completed successfully";
     } else {
-        qDebug() << "Method call failed. Error:" << reply.errorMessage();
+        qCWarning(logDBus) << "Text embedding failed:" << reply.errorMessage();
     }
 
     QString result = reply.arguments().at(0).toString();
-
-    QStringList docs;
     QJsonObject resultObj = QJsonDocument::fromJson(result.toUtf8()).object();
-    if (resultObj["version"].toInt() != 1)
-        return {};
 
-    for (auto res : resultObj["result"].toArray()) {
-        docs += res.toObject()["doc"].toString();
+    QJsonArray embeddingsArray;
+    QVector<QVector<float>> vectors;
+
+    if (resultObj.contains("data"))
+        embeddingsArray = resultObj["data"].toArray();
+
+    for(auto embeddingObject : embeddingsArray) {
+        QVector<float> tmpVectors;
+        QJsonArray vectorArray = embeddingObject.toObject()["embedding"].toArray();
+        for (auto value : vectorArray) {
+            tmpVectors << static_cast<float>(value.toDouble());
+        }
+        vectors << tmpVectors;
     }
 
-    return docs;
+    return vectors;
 }
 
 QStringList EmbeddingServer::getDocContent()
 {
+    QJsonObject resultObj = getDocList();
+
+    int version = resultObj["version"].toInt();
+    
+    if (version != 1 && version != 2) {
+        qCWarning(logDBus) << "Invalid document list version:" << version;
+        return {};
+    }
+
     QStringList docContents;
-    if (!embedInterface->isValid()) {
-        qWarning() << "Failed to create remote interface!";
-        return {};
-    }
-    QDBusPendingCall pendingCall = embedInterface->asyncCall("DocFiles", QVariant(appid));
-    pendingCall.waitForFinished();
-    QDBusMessage reply = pendingCall.reply();
-    if (pendingCall.isValid()) {
-        qDebug() << "Method call successful";
-    } else {
-        qDebug() << "Method call failed. Error:" << reply.errorMessage();
-    }
-
-    QString result = reply.arguments().at(0).toString();
-    QJsonObject resultObj = QJsonDocument::fromJson(result.toUtf8()).object();
-    if (resultObj["version"].toInt() != 1)
-        return {};
-
     QJsonArray resultArray = resultObj["result"].toArray();
     int arraySize = resultArray.size();
     int startIndex = qMax(0, arraySize - 5);
-    for (int i = startIndex; i < arraySize; ++i) {
-        QJsonObject obj = resultArray.at(i).toObject();
+    while (startIndex < arraySize) {
+        QJsonObject obj = resultArray.at(startIndex).toObject();
+        startIndex++;
+
+        if (!obj.contains("content"))
+            continue;
+
         docContents.append(obj["content"].toString());
     }
 
+    qCDebug(logDBus) << "Retrieved" << docContents.size() << "document contents";
     return docContents;
 }
 
 void EmbeddingServer::saveAllIndex()
 {
-    if (!embedInterface->isValid()) {
-        qWarning() << "Failed to create remote interface!";
-        return;
-    }
+    qCDebug(logDBus) << "Saving all indexes";
     QDBusPendingCall pendingCall = embedInterface->asyncCall("saveAllIndex", QVariant(appid));
     pendingCall.waitForFinished();
 }
@@ -202,12 +233,16 @@ EmbeddingServer &EmbeddingServer::getInstance()
 
 void EmbeddingServer::onEmbedStatusChanged(const QString &app, const QStringList &files, int status)
 {
-    if (app == appid)
+    if (app == appid) {
+        qCDebug(logDBus) << "Embed status changed for files:" << files << "status:" << status;
         emit addToServerStatusChanged(files, status);
+    }
 }
 
 void EmbeddingServer::onIndexDeleteFinished(const QString &app, const QStringList &files)
 {
-    if (app == appid)
+    if (app == appid) {
+        qCDebug(logDBus) << "Index deletion finished for files:" << files;
         emit indexDeleted(files);
+    }
 }

@@ -24,7 +24,11 @@ protected:
     void paintEvent(QPaintEvent* e) Q_DECL_OVERRIDE;
     void mousePressEvent(QMouseEvent *e) override;
     void mouseReleaseEvent(QMouseEvent *e) override;
+#ifdef COMPILE_ON_QT6
+    void enterEvent(QEnterEvent *event) override;
+#else
     void enterEvent(QEvent *event) override;
+#endif
     void leaveEvent(QEvent *event) override;
 
     QPixmap getIcon();

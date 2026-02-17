@@ -3,18 +3,42 @@
 
 #include <QString>
 #include <QLocale>
-
+#include <QJsonArray>
 
 class EAiPrompt
 {
 public:
-    explicit EAiPrompt(const QString &userData, const QString &cond = QString(""), int llmType = 1);
+    enum RequstType {
+        General       = 0,      // 通用 - 文本、Fc、文生图(旧接口)
+
+        TextPlain     = 1,      // 纯文本聊天
+        FunctionCall  = 2,      // FunctionCall
+        Text2Image    = 3,       // 文生图
+        Search        = 4,
+        McpAgent      = 5,
+        Rag           = 6,
+    };
+
+    explicit EAiPrompt(const QString &userData = QString(""), const QString &aiData = QString(""), int llmType = 1);
 
     virtual ~EAiPrompt();
 
     virtual QString getAiPrompt() = 0;
+    virtual QString getUserParam() const;
 
     void setLLM(int llm);
+
+    void setSingleReqCtx(bool enable);
+    bool singleReqCtx();
+
+    void setReqType(RequstType type);
+    RequstType reqType();
+
+    void setFunctions(const QJsonArray &functions);
+    QJsonArray functions();
+
+    void setInstType(int type);
+    int instType();
 
 protected:
     enum LLMChatModel {
@@ -31,13 +55,20 @@ protected:
         ChatZHIPUGLM_LITE    = 52,  // 智谱AIpLITE
     };
 
+    QString lengthValid(const QString &prompt);
+
 protected:
     QString m_userParam;
-    QString m_userCond;
+    QString m_aiParam;
 
     LLMChatModel m_llm;
 
     QLocale m_sysLang;
+
+    bool m_singleReqCtx {false};
+    RequstType m_reqType {RequstType::General};
+    QJsonArray m_funcs;
+    int m_instType {-1};
 };
 
 #endif // EAIPROMPT_H

@@ -23,7 +23,11 @@ QVector<UosFreeAccount> UosAccountEncoder::makeUosFreeAccount(const UosFreeAccou
 {
     QVector<UosFreeAccount> uosFreeAccount;
     for (int i = 1; i <= count; i++) {
-        UosFreeAccount ufa;
+        UosFreeAccount ufa{};
+        ufa.type = seed.type;
+        ufa.useLimit = seed.useLimit;
+        ufa.hasUsed = seed.hasUsed;
+        ufa.llmModel = seed.llmModel;
         ufa.appid = encrypt(seed.appid, QString::number(i), seed.type);
         ufa.appkey = encrypt(seed.appkey, QString::number(i), seed.type);
         ufa.appsecret = encrypt(seed.appsecret, QString::number(i), seed.type);

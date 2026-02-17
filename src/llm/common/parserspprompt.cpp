@@ -5,7 +5,7 @@
 
 QString ParseRspPrompt::perfectString(QString data)
 {
-    return data.remove(QRegExp("[\"]"));
+    return data.remove(QRegularExpression("[\"]"));
 }
 
 QMap<QString, QVariantMap> ParseRspPrompt::chatCmdPromptResponse(const QString &response, const QMap<QString, QVariantMap> &srcAppCmdPrompts)
@@ -29,10 +29,6 @@ QMap<QString, QVariantMap> ParseRspPrompt::chatCmdPromptResponse(const QString &
             items.removeFirst();
             appCmdPrompts[appId][cmd] = items.join(",").trimmed();
         }
-    }
-
-    if (appCmdPrompts.isEmpty()) {
-        qWarning() << "ResponseParser::parseChatCmdPromptResponse error = " << response;
     }
 
     return appCmdPrompts;

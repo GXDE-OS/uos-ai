@@ -2,6 +2,7 @@
 
 #include <QJsonDocument>
 #include <QVariant>
+#include <QRegularExpressionMatchIterator>
 
 Conversation::Conversation()
 {
@@ -54,6 +55,7 @@ bool Conversation::addUserData(const QString &data)
         } else {
             m_conversion.push_back(QJsonObject({ { "role", "user" }, {"content", data} }));
         }
+
         return true;
     }
     return false;
@@ -138,4 +140,21 @@ QJsonArray Conversation::getFunctionTools() const
     }
 
     return tools;
+}
+
+void Conversation::filterThink()
+{
+    for (int i = 0; i < m_conversion.size(); i++) {
+        QJsonObject convObj = m_conversion.at(i).toObject();
+        if (convObj.value("role").toString() == "assistant") {
+            QString content = convObj.value("content").toString();
+            QRegularExpression regex("<think>.*?</think>", QRegularExpression::DotMatchesEverythingOption);
+            QRegularExpressionMatch match = regex.match(content);
+
+            if (match.hasMatch()) {
+                convObj.insert("content", content.replace(regex, ""));
+                m_conversion.replace(i, convObj);
+            }
+        }
+    }
 }

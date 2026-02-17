@@ -4,8 +4,10 @@
 #include <QDir>
 #include <QApplication>
 #include <QStandardPaths>
-#include <QDebug>
 #include <QTimer>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 DaoClient::DaoClient(QObject *parent)
     : QObject(parent)
@@ -26,6 +28,7 @@ void DaoClient::add(const QString &dir, const QString &path, const QString &data
 {
     QMutexLocker locker(&m_mutex);
     if (m_dbConnectToUtil.contains(databaseName)) {
+        qCDebug(logDBS) << "Database connection already exists:" << databaseName;
         return;
     }
 
@@ -59,6 +62,7 @@ bool DaoClient::execSync(const QString &sql, DaoResultListPtr &result, QString &
     auto iterUtil = m_dbConnectToUtil.find(databaseName);
     if (iterUtil == m_dbConnectToUtil.end()) {
         msg = "sql run env not init";
+        qCWarning(logDBS) << "Database not initialized:" << databaseName;
         result = nullptr;
         return execSucces;
     }

@@ -5,13 +5,17 @@
 
 #include <QTimer>
 #include <QRegularExpression>
+#include <QLoggingCategory>
 
 const int STATUS_LAST_FRAME     = 2;
+
+Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
 TtsSocketServer::TtsSocketServer(const QString &id, const AccountProxy &account, QObject *parent)
     : TtsServer(id, parent)
     , m_account(account)
 {
+    qCDebug(logAudio) << "Initializing TTS socket server with ID:" << id;
     m_account.socketProxy.socketProxyType = SocketProxyType::NO_PROXY;
     m_web = AuthWebUrl::webSocket(m_account.socketProxy);
 
@@ -22,7 +26,7 @@ TtsSocketServer::TtsSocketServer(const QString &id, const AccountProxy &account,
             return;
         }
 
-        qWarning() << "TtsSocketServer::request error " << errorCode << m_web->errorString();
+        qCWarning(logAudio) << "WebSocket error:" << errorCode << m_web->errorString();
         AIServer::ErrorType serverError = AIServer::socketErrorToAiServerError(static_cast<QAbstractSocket::SocketError>(errorCode));
         QString errorMessage = TtsCodeTranslation::serverCodeTranslation(serverError, m_web->errorString());
 
@@ -49,23 +53,26 @@ void TtsSocketServer::openServer()
 {
     if (m_web->state() != QAbstractSocket::ConnectedState) {
         const QUrl &url = AuthWebUrl::createUrl("GET", "wss://tts-api.xfyun.cn/v2/tts", m_account.apiKey, m_account.apiSecret);
+        qCDebug(logAudio) << "Opening connection to:" << url.toString();
         m_web->open(url);
     }
 }
 
 void TtsSocketServer::sendText(const QString &text, bool isStart, bool isEnd)
 {
+    qCDebug(logAudio) << "Sending text for TTS, length:" << text.length() 
+                              << "isStart:" << isStart << "isEnd:" << isEnd;
     if (isStart) {
         clear();
     }
 
-    m_text  += text;
+    m_text += text;
     m_isEnd = isEnd;
 
     if (m_web->state() == QAbstractSocket::UnconnectedState) {
         const QUrl &url = AuthWebUrl::createUrl("GET", "wss://tts-api.xfyun.cn/v2/tts", m_account.apiKey, m_account.apiSecret);
+        qCWarning(logAudio) << "WebSocket disconnected, attempting to reconnect to:" << url.toString();
         m_web->open(url);
-        qWarning() << "Attempting to connect to the TTS server again";
     }
 
     sendServer();
@@ -153,6 +160,10 @@ void TtsSocketServer::onTextMessageReceived(const QString &message)
 
         if (!audio.isEmpty()) {
             emit appendAudioData(m_id, audio, finished);
+        }
+
+        if (audio.isEmpty() && finished) {
+            emit audioNullFinished(m_id);
         }
 
         if (finished) {

@@ -1,15 +1,17 @@
 #include "httpeventloop.h"
+
 #include <QThread>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logHttp)
 
 HttpEventLoop::HttpEventLoop(QNetworkReply *pReply, const QString &requestFunName)
     : m_pReply(pReply)
     , m_error(QNetworkReply::NoError)
     , m_requestFunName(requestFunName)
 {
-    //qDebug() << requestFunName + " start";
     m_result.clear();
     m_timer.setSingleShot(true);
-    m_pReply->ignoreSslErrors();
 
     connect(&m_timer, &QTimer::timeout,                 this, &HttpEventLoop::onHttpTimeout);
     connect(pReply,   &QNetworkReply::finished,         this, &HttpEventLoop::onHttpReplyFinished);
@@ -65,11 +67,13 @@ void HttpEventLoop::onHttpReplyFinished()
 
     m_httpStatusCode = m_pReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
     if (m_error != QNetworkReply::NoError && m_error != QNetworkReply::OperationCanceledError) {
-        qWarning() << QString("url=%1, error=%2, httpstatus=%3;").arg(m_pReply->url().toString()).arg(m_pReply->errorString()).arg(m_httpStatusCode);
+        QUrl url = m_pReply->url();
+        qCWarning(logHttp) << "HTTP request failed - URL:" << url.toString()
+                          << "Error:" << m_errorString
+                          << "Status code:" << m_httpStatusCode;
     }
 
     emit sigFinished();
-
     quit();
 }
 
@@ -97,7 +101,7 @@ QByteArray HttpEventLoop::getHttpResult() const
 void HttpEventLoop::onHttpTimeout()
 {
     m_isTimeout = true;
-    qWarning() << QString("url=%1, error=TimeOutError").arg(m_pReply->url().toString());
+    qCWarning(logHttp) << "HTTP request timed out - URL:" << m_pReply->url().toString();
     m_timer.stop();
     m_pReply->abort();
     quit();
@@ -117,6 +121,7 @@ int HttpEventLoop::exec(QEventLoop::ProcessEventsFlags flags)
 {
     m_isTimeout = false;
     m_timer.start(m_httpOutTime);
+    qCDebug(logHttp) << "Starting HTTP event loop for" << m_requestFunName;
     return QEventLoop::exec(flags);
 }
 

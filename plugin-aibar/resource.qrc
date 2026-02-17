@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/icons/deepin">
+        <file>builtin/icons/ai-meeting-assistant.svg</file>
+        <file>builtin/icons/knowledge-base.png</file>
+        <file>builtin/icons/summary.png</file>
+        <file>builtin/icons/translate.png</file>
+        <file>builtin/icons/wrong-spelling.png</file>
+        <file>builtin/icons/UosAiAssistant.svg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>package/DocDroparea.qml</file>
+    </qresource>
+    <qresource prefix="/dsg">
+        <file alias="built-in-icons/file_import.dci">builtin/icons/file_import.dci</file>
+        <file alias="built-in-icons/summary.dci">builtin/icons/summary.dci</file>
+        <file alias="built-in-icons/translate.dci">builtin/icons/translate.dci</file>
+        <file alias="built-in-icons/knowledgeBase.dci">builtin/icons/knowledgeBase.dci</file>
+        <file alias="built-in-icons/checkForTypos.dci">builtin/icons/checkForTypos.dci</file>
+    </qresource>
+</RCC>

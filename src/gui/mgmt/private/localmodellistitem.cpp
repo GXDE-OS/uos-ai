@@ -3,6 +3,9 @@
 
 #include <QHBoxLayout>
 #include <QVBoxLayout>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 LocalModelListItem::LocalModelListItem(DWidget *parent)
     : DWidget(parent)
@@ -52,7 +55,7 @@ void LocalModelListItem::initConnect()
     connect(m_pBtnUninstall, &IconButtonEx::clicked, this, &LocalModelListItem::onUninstall);
     connect(m_pBtnSwitch, &DSwitchButton::checkedChanged, this, &LocalModelListItem::signalSwitchChanged);
     connect(m_pProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus exitStatus) {
-        qInfo() << "onUninstall " << m_appName << " code=" << exitCode << " status=" << exitStatus;
+        qCInfo(logAIGUI) << "Uninstall process finished. AppName:" << m_appName << ", ExitCode:" << exitCode << ", ExitStatus:" << exitStatus;
         if (exitCode == 0 && exitStatus == QProcess::ExitStatus::NormalExit) {
             emit this->signalUninstall();
         }
@@ -67,25 +70,34 @@ void LocalModelListItem::setText(const QString &theme, const QString &summary)
 
 void LocalModelListItem::setSwitchChecked(bool b)
 {
+    qCDebug(logAIGUI) << "Setting switch checked for LocalModelListItem. Checked:" << b;
     m_pBtnSwitch->setChecked(b);
 }
 
 void LocalModelListItem::setAppName(const QString &appName)
 {
+    qCDebug(logAIGUI) << "Setting app name for LocalModelListItem. AppName:" << appName;
     m_appName = appName;
 }
 
 void LocalModelListItem::onUninstall()
 {
-    if (m_appName.isEmpty()) return;
-    if (!m_pProcess->atEnd()) return;
-
+    qCInfo(logAIGUI) << "Uninstall button clicked. AppName:" << m_appName;
+    if (m_appName.isEmpty()) {
+        qCWarning(logAIGUI) << "App name is empty, cannot uninstall.";
+        return;
+    }
+    if (!m_pProcess->atEnd()) {
+        qCWarning(logAIGUI) << "Previous uninstall process not finished, skipping.";
+        return;
+    }
     m_pProcess->start("pgrep", QStringList() << m_appName);
     m_pProcess->waitForFinished();
-
     if (m_pProcess->exitCode() == 0) {
+        qCDebug(logAIGUI) << "App is running, will kill and uninstall. AppName:" << m_appName;
         m_pProcess->start("pkexec", QStringList() << "sh" << "-c" << QString("killall %1 && apt remove %1").arg(m_appName));
     } else {
+        qCDebug(logAIGUI) << "App is not running, uninstalling directly. AppName:" << m_appName;
         m_pProcess->start("pkexec", QStringList() << "sh" << "-c" << QString("apt remove %1").arg(m_appName));
     }
     m_pProcess->write("Y\n");

@@ -1,0 +1,197 @@
+[
+    {
+        "name": "supplyBusinessTrip",
+        "description": "出差申请，当前日期%0",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "StartDate": {
+                    "type": "string",
+                    "description": "出差开始日期,格式为yyyy-MM-dd"
+                },
+                "EndDate": {
+                    "type": "string",
+                    "description": "出差结束日期,格式为yyyy-MM-dd"
+                },
+                "departure": {
+                    "type": "string",
+                    "description": "出发城市"
+                },
+                "destination": {
+                    "type": "string",
+                    "description": "到达城市"
+                },
+                "transportation": {
+                    "type": "string",
+                    "enum": ["飞机（携程预订）", "飞机（自行预订）", "火车", "大巴", "自驾车", "其他交通工具"],
+                    "description": "交通方式"
+                },
+                "HotelReservationMethod": {
+                    "type": "string",
+                    "enum": ["携程预订", "自行预订", "行政代订", "统一安排", "无需预订"],
+                    "description": "预定酒店的方式，是通过携程预定还是自行预定，或行政代订，也可能是统一安排，无需预定"
+                },
+                "PurposeOfTrip": {
+                    "type": "string",
+                    "description": "出差原因"
+                },
+                "ProjectName": {
+                    "type": "string",
+                    "description": "项目名称"
+                }
+            },
+            "required": ["StartDate", "EndDate", "departure", "destination", "transportation", "HotelReservationMethod", "PurposeOfTrip", "ProjectName"]
+        }
+    },
+    {
+        "name": "applyMeeting",
+        "description": "定会议申请，当前日期%0",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "StartTime": {
+                    "type": "string",
+                    "description": "会议开始时间,格式为yyyy-MM-dd hh::mm"
+                },
+                "EndTime": {
+                    "type": "string",
+                    "description": "会议结束时间,格式为yyyy-MM-dd hh::mm"
+                },
+                "MeetingName": {
+                    "type": "string",
+                    "description": "会议名称"
+                },
+                "MeetingRoom": {
+                    "type": "string",
+                    "description": "使用的会议室名称"
+                },
+                "Contents": {
+                    "type": "string",
+                    "description": "会议内容"
+                },
+                "IsNetMeeting": {
+                    "type": "string",
+                    "description": "是否为视频会议",
+                    "enum": ["是", "否"]
+                },
+                "NeedMaxhub": {
+                    "type": "string",
+                    "description": "是否需要maxhub",
+                    "enum": ["是", "否"]
+                },
+                "Participants": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "description": "参会人员"
+                    },
+                    "description": "参会人员 list"
+                }
+            },
+            "required": ["StartTime", "EndTime", "MeetingName", "MeetingRoom", "Contents"]
+        }
+    },
+    {
+        "name": "applyLeave",
+        "description": "请假申请，当前日期%0",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "LeaveType": {
+                    "type": "string",
+                    "description": "请假类型",
+                    "enum": ["事假", "病假", "婚假", "产假", "丧假", "法定年假", "福利年假", "加班调休假", "陪产假", "产检假", "育儿假", "少数民族假期", "子女护理假"]
+                },
+                "StartDate": {
+                    "type": "string",
+                    "description": "假期开始日期,格式为yyyy-MM-dd"
+                },
+                "StartTime": {
+                    "type": "string",
+                    "enum": ["上午", "下午"],
+                    "description": "假期开始时间，如果是具体时间，转换成：上午或下午"
+                },
+                "EndDate": {
+                    "type": "string",
+                    "description": "假期结束时间,格式为yyyy-MM-dd"
+                },
+                "EndTime": {
+                    "type": "string",
+                    "enum": ["上午", "下午"],
+                    "description": "假期结束时间,如果是具体时间，转换成：上午或下午"
+                },
+                "LeaveReason": {
+                    "type": "string",
+                    "description": "请假原因"
+                }
+            },
+            "required": ["LeaveType", "StartDate", "EndDate", "StartTime", "EndTime", "LeaveReason"]
+        }
+    },
+    {
+        "name": "applyOvertime",
+        "description": "加班申请，当前日期%0",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "StartTime": {
+                    "type": "string",
+                    "description": "加班开始时间,时间格式为yyyy-MM-dd hh::mm::ss"
+                },
+                "EndTime": {
+                    "type": "string",
+                    "description": "加班结束时间,时间格式为yyyy-MM-dd hh::mm::ss"
+                },
+                "Addrs": {
+                    "type": "string",
+                    "enum": ["公司内", "公司外"],
+                    "description": "加班地点"
+                },
+                "OvertimeReason": {
+                    "type": "string",
+                    "description": "加班原因"
+                },
+                "ProjectName": {
+                    "type": "string",
+                    "description": "项目名称，工时项目"
+                }
+            },
+            "required": ["StartTime", "EndTime", "Addrs", "OvertimeReason", "ProjectName"]
+        }
+    },
+    {
+        "name": "applyReimbursement",
+        "description": "报销申请，当前日期%0",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "StartDate": {
+                    "type": "string",
+                    "description": "出差开始日期,格式为yyyy-MM-dd"
+                },
+                "EndDate": {
+                    "type": "string",
+                    "description": "出差结束日期,格式为yyyy-MM-dd"
+                },
+                "departure": {
+                    "type": "string",
+                    "description": "出发城市"
+                },
+                "destination": {
+                    "type": "string",
+                    "description": "到达城市"
+                },
+                "HaveBorrowing": {
+                    "type": "string",
+                    "enum": ["是", "否"],
+                    "description": "是否有借支"
+                },
+                "ProjectName": {
+                    "type": "string",
+                    "description": "项目名称"
+                }
+            },
+            "required": ["StartDate", "EndDate", "departure", "destination", "HaveBorrowing", "ProjectName"]
+        }
+    }
+]

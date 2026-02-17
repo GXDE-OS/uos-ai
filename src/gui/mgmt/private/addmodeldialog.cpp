@@ -9,14 +9,25 @@
 #include "gui/gutils.h"
 #include "private/echatwndmanager.h"
 #include "utils/util.h"
+#include "utils/esystemcontext.h"
+
+#include <DPaletteHelper>
+#include <DMessageManager>
 
 #include <QUuid>
-
-#include <DMessageManager>
-#include <DApplicationHelper>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
+#include <QUrl>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QLoggingCategory>
 
 UOSAI_USE_NAMESPACE
 DCORE_USE_NAMESPACE
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 AddModelDialog::AddModelDialog(DWidget *parent)
     : DAbstractDialog(parent)
@@ -27,6 +38,10 @@ AddModelDialog::AddModelDialog(DWidget *parent)
     initConnect();
 
     setModal(true);
+    if (ESystemContext::isWayland()) {
+        //wayland环境模态dialog需要手动置顶
+        setWindowFlags(windowFlags() | Qt::Dialog |  Qt::WindowStaysOnTopHint);
+    }
 }
 
 void AddModelDialog::initUI()
@@ -45,20 +60,32 @@ void AddModelDialog::initUI()
     modelLabel->setToolTip(modelLabel->text());
     DFontSizeManager::instance()->bind(modelLabel, DFontSizeManager::T6, QFont::Medium);
 
+    m_openrouterModelNameLst.clear();
+    m_openrouterModelIDLst.clear();
+
     m_pModelComboBox = new DComboBox();
 #ifndef QT_DEBUG
     if (Util::isGPTEnable()) {
         m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_3_5_16K);
         m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_4);
+        m_modelMap.insert(m_modelMap.size(), LLMChatModel::GEMINI_1_5_FLASH);
+        m_modelMap.insert(m_modelMap.size(), LLMChatModel::GEMINI_1_5_PRO);
+        // openrouter model
+        m_modelMap.insert(m_modelMap.size(), LLMChatModel::OPENROUTER_MODEL);
     }
 #else
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_3_5_16K);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::CHATGPT_4);
+    m_modelMap.insert(m_modelMap.size(), LLMChatModel::GEMINI_1_5_FLASH);
+    m_modelMap.insert(m_modelMap.size(), LLMChatModel::GEMINI_1_5_PRO);
+    // openrouter model
+    m_modelMap.insert(m_modelMap.size(), LLMChatModel::OPENROUTER_MODEL);
 #endif
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::WXQF_ERNIE_Bot);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::SPARKDESK);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::GPT360_S2_V9);
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::ChatZHIPUGLM_PRO);
+    m_modelMap.insert(m_modelMap.size(), LLMChatModel::DeepSeek_R1);
     // custom model
     m_modelMap.insert(m_modelMap.size(), LLMChatModel::OPENAI_API_COMPATIBLE);
 
@@ -125,12 +152,20 @@ void AddModelDialog::initUI()
     requestAddressLabel->setToolTip(requestAddressLabel->text());
     DFontSizeManager::instance()->bind(requestAddressLabel, DFontSizeManager::T6, QFont::Medium);
     m_pAddressLineEdit = new DLineEdit();
-    m_pAddressLineEdit->setPlaceholderText(tr("Required, please input"));
+    m_pAddressLineEdit->setPlaceholderText(tr("Optional. The default address will be used if not filled in.")); // 非必填，未填写时将使用默认地址
     m_pAddressLineEdit->setFixedWidth(381);
     m_pAddressLineEdit->lineEdit()->setMaxLength(256);
     m_pAddressLineEdit->lineEdit()->installEventFilter(this);
     m_pAddressLineEdit->lineEdit()->setProperty("_d_dtk_lineedit_opacity", false);
 
+    DLabel *modelLstLabel = new DLabel(tr("Models List"));
+    modelLstLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    modelLstLabel->setToolTip(requestAddressLabel->text());
+    DFontSizeManager::instance()->bind(modelLstLabel, DFontSizeManager::T6, QFont::Medium);
+
+    m_modelLstComboBox = new DComboBox();
+    m_modelLstComboBox->setFixedWidth(381);
+    m_modelLstComboBox->addItem(tr("Custom"));
 
     m_pGridLayout = new QGridLayout();
     m_pGridLayout->setContentsMargins(0, 0, 0, 0);
@@ -155,33 +190,36 @@ void AddModelDialog::initUI()
     m_pGridLayout->addWidget(requestAddressLabel, 7, 0);
     m_pGridLayout->addWidget(m_pAddressLineEdit, 7, 1);
 
+    m_pGridLayout->addWidget(modelLstLabel, 8, 0);
+    m_pGridLayout->addWidget(m_modelLstComboBox, 8, 1);
+
     QHBoxLayout *gridLayout = new QHBoxLayout();
     gridLayout->setContentsMargins(0, 0, 0, 0);
     gridLayout->addStretch();
     gridLayout->addLayout(m_pGridLayout);
     gridLayout->addStretch();
 
-    DLabel *warningLabel = new DLabel(tr("To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens."));
-    warningLabel->setAlignment(Qt::AlignCenter);
-    warningLabel->setFixedWidth(488);
-    warningLabel->setWordWrap(true);
-    DPalette pl = warningLabel->palette();
+    m_warningLabel = new DLabel(tr("To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens."));
+    m_warningLabel->setAlignment(Qt::AlignCenter);
+    m_warningLabel->setFixedWidth(488);
+    m_warningLabel->setWordWrap(true);
+    DPalette pl = m_warningLabel->palette();
     QColor color = DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::BrightText);
     color.setAlphaF(0.5);
     pl.setColor(QPalette::Text, color);
-    warningLabel->setPalette(pl);
-    warningLabel->setForegroundRole(QPalette::Text);
-    DFontSizeManager::instance()->bind(warningLabel, DFontSizeManager::T10, QFont::Medium);
+    m_warningLabel->setPalette(pl);
+    m_warningLabel->setForegroundRole(QPalette::Text);
+    DFontSizeManager::instance()->bind(m_warningLabel, DFontSizeManager::T10, QFont::Medium);
     QHBoxLayout *warningLayout = new QHBoxLayout();
     warningLayout->addStretch();
-    warningLayout->addWidget(warningLabel);
+    warningLayout->addWidget(m_warningLabel);
     warningLayout->addStretch();
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, [ = ]() {
-        DPalette pl = warningLabel->palette();
+        DPalette pl = m_warningLabel->palette();
         QColor color = DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::BrightText);
         color.setAlphaF(0.5);
         pl.setColor(QPalette::Text, color);
-        warningLabel->setPalette(pl);
+        m_warningLabel->setPalette(pl);
     });
 
     m_pWidget = new QWidget(this);
@@ -203,8 +241,7 @@ void AddModelDialog::initUI()
 
     // 代理区域
     QHBoxLayout *proxyLayout = new QHBoxLayout();
-    proxyLayout->setContentsMargins(20, 0, 20, 0);
-    proxyLayout->setMargin(0);
+    proxyLayout->setContentsMargins(0, 0, 0, 0);
     proxyLayout->setSpacing(5);
     m_pProxyLabel = new DLabel();
     m_pProxyLabel->setFixedWidth(488);
@@ -222,7 +259,6 @@ void AddModelDialog::initUI()
 
     QHBoxLayout *buttonLayout = new QHBoxLayout();
     buttonLayout->setContentsMargins(0, 0, 0, 0);
-    buttonLayout->setMargin(0);
     buttonLayout->setSpacing(10);
     buttonLayout->addStretch();
     buttonLayout->addWidget(m_pCancelButton);
@@ -245,7 +281,7 @@ void AddModelDialog::initUI()
     m_pSpinner = new DSpinner(this);
     m_pSpinner->setFixedSize(32, 32);
     m_pSpinner->hide();
-    m_pSpinner->move(243, GUtils::isCompactMode() ? 120 : 156);
+    //m_pSpinner->move(243, GUtils::isCompactMode() ? 120 : 156);
 
     onComboBoxIndexChanged(m_pModelComboBox->currentIndex());
 
@@ -285,12 +321,17 @@ void AddModelDialog::initConnect()
     connect(m_pNameLineEdit, &DLineEdit::alertChanged, this, &AddModelDialog::onNameAlertChanged);
     connect(m_pAddressLineEdit, &DLineEdit::textChanged, this, &AddModelDialog::onAddressTextChanged);
     connect(m_pAddressLineEdit, &DLineEdit::alertChanged, this, &AddModelDialog::onAddressAlertChanged);
+    connect(m_modelLstComboBox, QOverload<int>::of(&DComboBox::currentIndexChanged), this, &AddModelDialog::onOpenRouterIndexChanged);
 
     GUtils::connection(DGuiApplicationHelper::instance(), "sizeModeChanged(DGuiApplicationHelper::SizeMode)", this, "onCompactModeChanged()");
     connect(QApplication::instance(), SIGNAL(fontChanged(const QFont &)), this, SLOT(onUpdateSystemFont(const QFont &)));
     connect(m_pProxyLabel, &DLabel::linkActivated, this, []() {
         DbusControlCenterRequest dbus;
+#ifdef COMPILE_ON_V23
+        dbus.showPage("network/systemProxy");
+#else
         dbus.showPage("network", "System Proxy");
+#endif
     });
 }
 
@@ -300,6 +341,8 @@ void AddModelDialog::setAllWidgetEnabled(bool enable)
         m_pSpinner->hide();
         m_pSpinner->stop();
     } else {
+        int y = (m_pWidget->y() + m_warningLabel->y() + m_warningLabel->height() + m_pProxyLabel->y()) / 2 - m_pSpinner->height() / 2;
+        m_pSpinner->move(243, y);
         m_pSpinner->start();
         m_pSpinner->show();
     }
@@ -309,13 +352,20 @@ void AddModelDialog::setAllWidgetEnabled(bool enable)
 
 void AddModelDialog::onNameTextChanged(const QString &str)
 {
+    QString noEnterText = str;
+    if (noEnterText.contains("\n")) {
+        noEnterText.replace("\n", " ");
+        int cursorPos = m_pNameLineEdit->lineEdit()->cursorPosition();
+        m_pNameLineEdit->setText(noEnterText);
+        m_pNameLineEdit->lineEdit()->setCursorPosition(cursorPos);
+    }
     m_pNameLineEdit->setAlert(false);
     m_pNameLineEdit->hideAlertMessage();
 
-    if (str.length() > 20) {
+    if (noEnterText.length() > 20) {
         m_pNameLineEdit->blockSignals(true);
         m_pNameLineEdit->showAlertMessage(tr("No more than 20 characters"));
-        m_pNameLineEdit->setText(str.left(20));
+        m_pNameLineEdit->setText(noEnterText.left(20));
         m_pNameLineEdit->blockSignals(false);
     }
     onUpdateSubmitButtonStatus();
@@ -339,8 +389,10 @@ void AddModelDialog::onAddressAlertChanged(bool alert)
 
 void AddModelDialog::onSubmitButtonClicked()
 {
+    qCInfo(logAIGUI) << "Submit button clicked";
     auto llmList = DbWrapper::localDbWrapper().queryLlmList(true);
     if (isNameDuplicate(llmList)) {
+        qCWarning(logAIGUI) << "Duplicate model name detected:" << m_pNameLineEdit->text();
         return;
     }
 
@@ -349,6 +401,8 @@ void AddModelDialog::onSubmitButtonClicked()
     QString appId = m_pAppIdLineEdit->text().trimmed();
     QString apiSecret = m_pApiSecretLineEdit->text().trimmed();
     QString requestAddress = m_pAddressLineEdit->text().trimmed();
+    QString modelName = m_pCustomModelName->text().trimmed();
+    QString url = m_pCustomModelUrl->text().trimmed();
 
     bool isKol = false;
     if (m_threeKeyComboxIndex.contains(model)) {
@@ -357,6 +411,9 @@ void AddModelDialog::onSubmitButtonClicked()
         isKol = !std::get<0>(encoder.decrypt(appId)).isEmpty()
                         && !std::get<0>(encoder.decrypt(apiKey)).isEmpty()
                         && !std::get<0>(encoder.decrypt(apiSecret)).isEmpty();
+    } else if (model == DeepSeek_R1){
+        UosAccountEncoder encoder;
+        isKol = !std::get<0>(encoder.decrypt(apiKey)).isEmpty();
     }
 
     bool exist = false;
@@ -365,10 +422,13 @@ void AddModelDialog::onSubmitButtonClicked()
             continue;
 
         // gpt 360 zhipu，只判断key重复
-        if ((llm.model == LLMChatModel::CHATGPT_3_5_16K || llm.model == LLMChatModel::CHATGPT_4
-                || llm.model == LLMChatModel::GPT360_S2_V9
-                || llm.model == LLMChatModel::ChatZHIPUGLM_PRO)
-                && llm.account.apiKey == apiKey) {
+        if ((
+                (llm.model >= CHATGPT_3_5 && llm.model <= CHATGPT_4_32K)
+                || (llm.model == GPT360_S2_V9)
+                || (llm.model >= ChatZHIPUGLM_PRO && llm.model <= ChatZHIPUGLM_LITE)
+                || (llm.model >= GEMINI_1_5_FLASH && llm.model <= GEMINI_1_5_PRO)
+                || (llm.model == DeepSeek_R1)
+             ) && (llm.account.apiKey == apiKey)) {
             exist = true;
             break;
         }
@@ -384,9 +444,18 @@ void AddModelDialog::onSubmitButtonClicked()
                 break;
             }
         }
+
+        // 自定义模型判断apikey 模型名 请求地址重复
+        if (llm.model == LLMChatModel::OPENAI_API_COMPATIBLE && llm.account.apiKey == apiKey && llm.ext.value(LLM_EXTKEY_VENDOR_MODEL) == modelName) {
+            if (llm.ext.value(LLM_EXTKEY_VENDOR_URL) == url){
+                exist = true;
+                break;
+            }
+        }
     }
 
     if (exist) {
+        qCWarning(logAIGUI) << "LLM already exists, aborting add. Model:" << model << ", Name:" << m_pNameLineEdit->text();
         CommonFailDialog dlg(this);
         dlg.setFailMsg(tr("This LLM already exists, please do not add it again."));
         dlg.exec();
@@ -395,6 +464,7 @@ void AddModelDialog::onSubmitButtonClicked()
 
     //验证KOL账号
     if (isKol) {
+        qCInfo(logAIGUI) << "Verifying KOL account for model:" << model;
         UosFreeAccount freeAccount;
         freeAccount.appid = appId;
         freeAccount.appkey = apiKey;
@@ -402,18 +472,23 @@ void AddModelDialog::onSubmitButtonClicked()
         int status;
 
         setAllWidgetEnabled(false);
-        QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_KOL, freeAccount, status);
+        QNetworkReply::NetworkError error = UosFreeAccounts::instance().
+                getFreeAccount(ModelType::FREE_KOL, model == DeepSeek_R1 ? DeepSeek_Uos_Free : NoModel, freeAccount, status);
         setAllWidgetEnabled(true);
 
         if (QNetworkReply::NoError == error) {
+            qCInfo(logAIGUI) << "KOL account verified successfully.";
             LLMChatModel m = static_cast<LLMChatModel>(freeAccount.llmModel);
             bool typeError = false; //模型错误，百度两种模型账号可以混用，但是百度和讯飞不能混用
             // 选择正确的时候
             if (m != model) {
                 if (m == LLMChatModel::WXQF_ERNIE_Bot) {
                     m = model;
+                } else if (m == DeepSeek_Uos_Free && model == DeepSeek_R1) {
+                    model = DeepSeek_Uos_Free;
                 } else {
                     typeError = true;
+                    qCWarning(logAIGUI) << "KOL account type mismatch. Expected:" << model << ", Got:" << m;
                 }
             }
 
@@ -422,7 +497,7 @@ void AddModelDialog::onSubmitButtonClicked()
                 LLMServerProxy llm;
                 llm.type = ModelType::FREE_KOL;
                 llm.name = m_pNameLineEdit->text();
-                llm.id = freeAccount.appkey + "_" + model;
+                llm.id = freeAccount.appkey + "_" + QChar(model);
                 llm.model = m;
                 llm.url = freeAccount.modelUrl;
                 AccountProxy accountProxy;
@@ -436,18 +511,20 @@ void AddModelDialog::onSubmitButtonClicked()
                 m_data = llm;
 
                 if (!DbWrapper::localDbWrapper().appendLlm(llm)) {
+                    qCCritical(logAIGUI) << "Failed to save KOL LLM to database.";
                     CommonFailDialog dlg(this);
                     dlg.setFailMsg(tr("Save failed, please try again later"));
                     dlg.exec();
                     return;
                 }
 
+                qCInfo(logAIGUI) << "KOL LLM added successfully.";
                 ServerWrapper::instance()->updateLLMAccount();
                 this->accept();
                 return;
             }
         } else if (1 != status && 3 != status) {
-            //其他错误，但不是1和3，说明是网络或者服务器异常了
+            qCCritical(logAIGUI) << "Network/server error when verifying KOL account. Status:" << status;
             CommonFailDialog dlg(this);
             dlg.setFailMsg(tr("Unable to connect to the server, please check your network or try again later."));
             dlg.exec();
@@ -473,16 +550,24 @@ void AddModelDialog::onSubmitButtonClicked()
     serverProxy.type = ModelType::USER; //设置默认类型，防止未初始化就使用
 
     if (model == LLMChatModel::OPENAI_API_COMPATIBLE) {
-        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_MODEL, m_pCustomModelName->text().trimmed());
-        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_URL, m_pCustomModelUrl->text().trimmed());
+        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_MODEL, modelName);
+        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_URL, url);
     }
+
+    else if (model == LLMChatModel::OPENROUTER_MODEL) {
+        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_MODEL, modelName);
+        serverProxy.ext.insert(LLM_EXTKEY_VENDOR_URL, "https://openrouter.ai/api/v1");
+    }
+
     m_data = serverProxy;
 
     setAllWidgetEnabled(false);
+    qCInfo(logAIGUI) << "Verifying LLM server proxy before saving. Model:" << model;
     QPair<int, QString> pair = ServerWrapper::instance()->verify(serverProxy);
     setAllWidgetEnabled(true);
 
     if (0 != pair.first) {
+        qCCritical(logAIGUI) << "LLM server proxy verification failed. Error:" << pair.second;
         CommonFailDialog dlg(this);
         dlg.setFailMsg(pair.second);
         dlg.exec();
@@ -490,12 +575,14 @@ void AddModelDialog::onSubmitButtonClicked()
     }
 
     if (!DbWrapper::localDbWrapper().appendLlm(serverProxy)) {
+        qCCritical(logAIGUI) << "Failed to save LLM to database.";
         CommonFailDialog dlg(this);
         dlg.setFailMsg(tr("Save failed, please try again later"));
         dlg.exec();
         return;
     }
 
+    qCInfo(logAIGUI) << "LLM added successfully.";
     ServerWrapper::instance()->updateLLMAccount();
     this->accept();
 }
@@ -507,6 +594,9 @@ LLMServerProxy AddModelDialog::getModelData()
 
 void AddModelDialog::onComboBoxIndexChanged(int index)
 {
+    m_pGridLayout->itemAtPosition(8, 0)->widget()->hide();
+    m_pGridLayout->itemAtPosition(8, 1)->widget()->hide();
+
     LLMChatModel model = m_modelMap.value(index);
     if (!m_threeKeyComboxIndex.contains(model)) {
         m_pGridLayout->itemAtPosition(2, 0)->widget()->hide();
@@ -527,7 +617,17 @@ void AddModelDialog::onComboBoxIndexChanged(int index)
         m_pGridLayout->itemAtPosition(6, 0)->widget()->show();
         m_pGridLayout->itemAtPosition(6, 1)->widget()->show();
         m_pApiKeyLineEdit->setPlaceholderText(tr("Optional"));
-    } else {
+    } else if (model == OPENROUTER_MODEL) {
+        m_pGridLayout->itemAtPosition(5, 0)->widget()->show();
+        m_pGridLayout->itemAtPosition(5, 1)->widget()->show();
+        m_pGridLayout->itemAtPosition(6, 0)->widget()->hide();
+        m_pGridLayout->itemAtPosition(6, 1)->widget()->hide();
+        m_pGridLayout->itemAtPosition(8, 0)->widget()->show();
+        m_pGridLayout->itemAtPosition(8, 1)->widget()->show();
+        m_pCustomModelName->setPlaceholderText(tr("Required, please input"));
+        m_pApiKeyLineEdit->setPlaceholderText(tr("Required, please input"));
+        getOpenRouterModelList();
+    }else {
         m_pGridLayout->itemAtPosition(5, 0)->widget()->hide();
         m_pGridLayout->itemAtPosition(5, 1)->widget()->hide();
         m_pGridLayout->itemAtPosition(6, 0)->widget()->hide();
@@ -541,7 +641,6 @@ void AddModelDialog::onComboBoxIndexChanged(int index)
             m_pAppIdLineEdit->clear();
             m_pApiKeyLineEdit->clear();
             m_pApiSecretLineEdit->clear();
-            m_pNameLineEdit->clear();
             m_pAddressLineEdit->clear();
         }
 
@@ -575,11 +674,16 @@ void AddModelDialog::onUpdateSubmitButtonStatus()
         disable = m_pApiKeyLineEdit->text().isEmpty() || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert();
     } else {
         disable = m_pAppIdLineEdit->text().isEmpty() || m_pApiKeyLineEdit->text().isEmpty() || m_pApiSecretLineEdit->text().isEmpty()
-                || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert() || m_pAddressLineEdit->text().isEmpty();
+                || m_pNameLineEdit->text().isEmpty() || m_pNameLineEdit->isAlert();
     }
 
-    if (model == LLMChatModel::OPENAI_API_COMPATIBLE)
+    if (model == LLMChatModel::OPENAI_API_COMPATIBLE) {
         disable = m_pNameLineEdit->text().isEmpty() || m_pCustomModelUrl->text().isEmpty();
+    }
+    else if(model == LLMChatModel::OPENROUTER_MODEL) {
+        disable = m_pNameLineEdit->text().isEmpty() || m_pCustomModelName->text().isEmpty() || m_pApiKeyLineEdit->text().isEmpty();
+    }
+
 
     m_pSubmitButton->setDisabled(disable);
 }
@@ -625,6 +729,59 @@ bool AddModelDialog::isNameDuplicate(const QList<LLMServerProxy> &llmList) const
     return false;
 }
 
+void AddModelDialog::getOpenRouterModelList()
+{
+    qCInfo(logAIGUI) << "Requesting OpenRouter model list.";
+    if(m_openrouterModelIDLst.isEmpty() || m_openrouterModelNameLst.isEmpty())
+    {
+        QNetworkAccessManager manager;
+
+        QNetworkRequest request;
+        request.setUrl(QUrl("https://openrouter.ai/api/v1/models"));
+
+        QNetworkReply *reply = manager.get(request);
+
+        QEventLoop loop;
+        QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        loop.exec();
+
+        if (reply->error() == QNetworkReply::NoError) {
+            QString response = reply->readAll();
+            QJsonDocument jsonDoc = QJsonDocument::fromJson(response.toUtf8());
+
+            if (!jsonDoc.isNull()) {
+                if (jsonDoc.isNull()) {
+                    qCCritical(logAIGUI) << "Failed to parse JSON from OpenRouter response.";
+                    return;
+                }
+
+                QJsonObject jsonObj = jsonDoc.object();
+                QJsonArray dataArray = jsonObj["data"].toArray();
+
+                for (const QJsonValue &value : dataArray) {
+                    QJsonObject obj = value.toObject();
+                    QString id = obj["id"].toString();
+                    QString name = obj["name"].toString();
+                    qCDebug(logAIGUI) << "OpenRouter Model ID:" << id << ", Name:" << name;
+
+                    m_openrouterModelIDLst.append(id);
+                    m_openrouterModelNameLst.append(name);
+                }
+            } else {
+                qCCritical(logAIGUI) << "Failed to parse JSON response from OpenRouter.";
+            }
+        } else {
+            qCCritical(logAIGUI) << "Network request to OpenRouter failed:" << reply->errorString();
+        }
+        reply->deleteLater();
+    }
+
+    for(const QString modelName : m_openrouterModelNameLst) {
+        m_modelLstComboBox->addItem(modelName);
+    }
+    qCInfo(logAIGUI) << "OpenRouter model list loaded. Count:" << m_openrouterModelNameLst.size();
+}
+
 void AddModelDialog::onCompactModeChanged()
 {
     int height = GUtils::isCompactMode() ? 24 : 36;
@@ -633,7 +790,7 @@ void AddModelDialog::onCompactModeChanged()
     }
 
     m_pWidget->setMinimumHeight(GUtils::isCompactMode() ? 190 : 250);
-    m_pSpinner->move(243, GUtils::isCompactMode() ? 120 : 156);
+    //m_pSpinner->move(243, GUtils::isCompactMode() ? 120 : 156);
     this->adjustSize();
 }
 
@@ -643,14 +800,27 @@ void AddModelDialog::onUpdateSystemFont(const QFont &)
     this->adjustSize();
 }
 
+void AddModelDialog::onOpenRouterIndexChanged(int index)
+{
+    if (index > 0 && !m_openrouterModelIDLst.isEmpty()){
+        QString modelID = m_openrouterModelIDLst.value(index - 1);
+        m_pCustomModelName->setText(modelID);
+    }
+    else if(index == 0) {
+        m_pCustomModelName->setText("");
+    }
+}
+
 void AddModelDialog::updateProxyLabel()
 {
-    const QColor &color = DApplicationHelper::instance()->palette(m_pProxyLabel).color(DPalette::Normal, DPalette::Highlight);
+    const QColor &color = DPaletteHelper::instance()->palette(m_pProxyLabel).color(DPalette::Normal, DPalette::Highlight);
+    int width = static_cast<int>((m_pProxyLabel->font().pixelSize() - 4) * QGuiApplication::primaryScreen()->devicePixelRatio());
     m_pProxyLabel->setText(tr("For proxy settings, please go to system proxy settings")
-                           + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2<img src=\"%3\"></a>")
+                           + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2<img src=\"%3\" width=\"%4\" height=\"%4\"></a>")
                            .arg(color.name())
                            .arg(tr("Go to settings"))
-                           .arg(GUtils::generateImage(m_pProxyLabel, color, QSize(m_pProxyLabel->font().pixelSize() - 4, m_pProxyLabel->font().pixelSize() - 4), QStyle::PE_IndicatorArrowRight))
+                           .arg(GUtils::generateImage(m_pProxyLabel, color, QSize(width, width), QStyle::PE_IndicatorArrowRight))
+                           .arg(m_pProxyLabel->font().pixelSize() - 4)
                           );
 }
 
@@ -665,4 +835,5 @@ void AddModelDialog::resetDialog()
     m_pRaidersButton->resetUrl();
     m_pCustomModelName->clear();
     m_pCustomModelUrl->clear();
+    m_modelLstComboBox->setCurrentIndex(0);
 }

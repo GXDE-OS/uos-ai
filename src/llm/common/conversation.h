@@ -36,7 +36,7 @@ public:
     QJsonArray getFunctionTools() const;
 
     QJsonArray getConversions() const;
-
+    void filterThink();
 protected:
     QJsonArray m_conversion;
     QJsonArray m_functions;

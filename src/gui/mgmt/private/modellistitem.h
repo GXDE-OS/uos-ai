@@ -17,7 +17,9 @@ public:
     explicit ModelListItem(const LLMServerProxy &data, DWidget *parent = nullptr);
     // 其他成员函数和数据成员
     void setEditMode(bool);
-
+    inline const LLMServerProxy& getData() const {
+        return m_data;
+    }
 signals:
     void signalDeleteItem(const LLMServerProxy &data);
 

@@ -4,6 +4,7 @@
 #include "functionsparser.h"
 #include "serverwrapper.h"
 #include "osinfo.h"
+#include "deepinabilitymanager.h"
 
 #include <QDebug>
 #include <QDir>
@@ -13,6 +14,9 @@
 #include <QCoreApplication>
 #include <QProcess>
 #include <QDateTime>
+
+#include <QLoggingCategory>
+Q_DECLARE_LOGGING_CATEGORY(logTools)
 
 #ifdef FUNCTIONPATH
 static const QString &pluginPath = FUNCTIONPATH;
@@ -31,13 +35,28 @@ bool isValidString(const QString &input)
     return regex.match(input).hasMatch();
 }
 
+QJsonArray FunctionHandler::functions(const QJsonObject &appFunctions)
+{
+    QJsonArray func;
+    for (const auto &functionObject : appFunctions) {
+        const QJsonArray &fs = functionObject.toObject().value("functions").toArray();
+        for (const QJsonValue &functionValue : fs) {
+            func << functionValue;
+        }
+    }
+
+    return func;
+}
+
 QJsonObject FunctionHandler::queryAppFunctions(bool &notYetQueried)
 {
     static QJsonObject appFunctions;
     static StringGenerator stringGenerator;
 
-    if (!notYetQueried && !appFunctions.isEmpty())
+    if (!notYetQueried && !appFunctions.isEmpty()) {
+        qCInfo(logTools) << "Returning cached app functions";
         return appFunctions;
+    }
 
     notYetQueried = false;
 
@@ -50,7 +69,7 @@ QJsonObject FunctionHandler::queryAppFunctions(bool &notYetQueried)
         QFile file(filePath);
 
         if (!file.open(QIODevice::ReadOnly)) {
-            qWarning() << "Failed to open file:" << filePath << file.errorString();
+            qCWarning(logTools) << "Failed to open file:" << filePath << file.errorString();
             continue;
         }
 
@@ -60,12 +79,12 @@ QJsonObject FunctionHandler::queryAppFunctions(bool &notYetQueried)
         QJsonDocument document = QJsonDocument::fromJson(fileData, &jsonError);
 
         if (jsonError.error != QJsonParseError::NoError) {
-            qWarning() << "JSON parse error:" << filePath << jsonError.errorString();
+            qCWarning(logTools) << "JSON parse error:" << filePath << jsonError.errorString();
             continue;
         }
 
         if (!document.isObject()) {
-            qWarning() << "JSON document is not an object:" << fileData;
+            qCWarning(logTools) << "JSON document is not an object:" << fileData;
             continue;
         }
 
@@ -74,17 +93,17 @@ QJsonObject FunctionHandler::queryAppFunctions(bool &notYetQueried)
         const QJsonArray functions = rootObject.value("functions").toArray();
 
         if (!rootObject.contains("appid")) {
-            qWarning() << "Invalid appid:" << rootObject;
+            //qCWarning(logTools) << "Invalid appid:" << rootObject;
             continue;
         }
 
         if (!rootObject.contains("exec")) {
-            qWarning() << "Invalid exec:" << rootObject;
+            qCWarning(logTools) << "Invalid exec:" << rootObject;
             continue;
         }
 
         if (!QFile::exists(rootObject.value("exec").toString())) {
-            qWarning() << "exec path invalid: " << rootObject.value("exec");
+            qCWarning(logTools) << "exec path invalid: " << rootObject.value("exec");
             continue;
         }
 
@@ -98,17 +117,17 @@ QJsonObject FunctionHandler::queryAppFunctions(bool &notYetQueried)
             QJsonObject function = functions.at(i).toObject();
 
             if (!function.contains("name") || !function.contains("description") || !function.contains("parameters")) {
-                qWarning() << "Invalid function:" << function;
+                qCWarning(logTools) << "Invalid function:" << function;
                 continue;
             }
 
             if (!isValidString(function.value("name").toString())) {
-                qWarning() << "function name match error [a-zA-Z0-9_-]{1,32} :" << function;
+                qCWarning(logTools) << "function name match error [a-zA-Z0-9_-]{1,32} :" << function;
                 continue;
             }
 
-            if (function.value("description").toString().length() > 30) {
-                qWarning() << "function description maximum length reached 30 :" << function.value("description");
+            if (function.value("description").toString().length() > 100) {
+                qCWarning(logTools) << "function description maximum length reached 100 :" << function.value("description");
                 continue;
             }
 
@@ -128,17 +147,71 @@ QJsonObject FunctionHandler::queryAppFunctions(bool &notYetQueried)
     return appFunctions;
 }
 
-QJsonArray FunctionHandler::functions(const QJsonObject &appFunctions)
+QJsonArray FunctionHandler::queryInstFunctions(const QString &inst)
 {
-    QJsonArray functions;
-    for (const auto &functionObject : appFunctions) {
-        const QJsonArray &fs = functionObject.toObject().value("functions").toArray();
-        for (const QJsonValue &functionValue : fs) {
-            functions << functionValue;
-        }
+    QString filePath = pluginPath + "/org.uos.ai.instruction.json";
+    QFile file(filePath);
+
+    if (!file.open(QIODevice::ReadOnly)) {
+        qCWarning(logTools) << "Failed to open file:" << filePath << file.errorString();
+        return QJsonArray();
     }
 
-    return functions;
+    QJsonParseError jsonError;
+    QByteArray fileData = file.readAll();
+    file.close();
+    QJsonDocument document = QJsonDocument::fromJson(fileData, &jsonError);
+
+    if (jsonError.error != QJsonParseError::NoError) {
+        qCWarning(logTools) << "JSON parse error:" << filePath << jsonError.errorString();
+        return QJsonArray();
+    }
+
+    if (!document.isObject()) {
+        qCWarning(logTools) << "JSON document is not an object:" << fileData;
+        return QJsonArray();
+    }
+
+    QJsonArray newFunctions;
+    QJsonObject rootObject = document.object();
+
+    QJsonArray funcs = rootObject.value(inst).toArray();
+    newFunctions = processFuncs(funcs);
+
+    return newFunctions;
+}
+
+QJsonObject FunctionHandler::instFuncProcess(QJsonObject func, QString *directReply)
+{
+    bool execResult = false;
+
+    QEventLoop oneloop;
+//   oneloop.setTimeout(5000);
+
+    FunctionsParser funParser(func);
+    QObject::connect(&funParser, &FunctionsParser::finished, &oneloop, &QEventLoop::quit);
+    funParser.start();
+
+    oneloop.exec();
+
+    execResult = funParser.exitCode() == 0 ? true : false;
+    QString outputString = funParser.outputString();
+
+    if (directReply)
+        *directReply = funParser.directOutput();
+
+    QJsonObject resArguments;
+    if (execResult) {
+        resArguments["description"] = QCoreApplication::translate("ChatSeesion", "Started successfully");
+    } else {
+        resArguments["description"] = QCoreApplication::translate("ChatSeesion", "Startup failed");
+    }
+
+    if (!outputString.isEmpty()) {
+        resArguments["description"] = resArguments["description"].toString() + QCoreApplication::translate("ChatSeesion", " The execution output content is ") + outputString ;
+    }
+
+    return resArguments;
 }
 
 QString FunctionHandler::functionPluginPath()
@@ -177,7 +250,7 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
 
         if (!QFile::exists(exec)) {
             outputString = QCoreApplication::translate("ChatSeesion", "Application file does not exist");
-            qWarning() << "exec path invalid: " << exec;
+            qCWarning(logTools) << "exec path invalid: " << exec;
         } else {
             QProcess process;
             process.setProcessEnvironment(UosInfo()->pureEnvironment());
@@ -190,9 +263,9 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
             else
                 outputString.clear();
 
-            qInfo() << "start process " << exec  << "pid" << pid << process.exitStatus()
+            qCInfo(logTools) << "start process " << exec  << "pid" << pid << process.exitStatus()
                     << outputString;
-            qDebug() << "with environment" << UosInfo()->pureEnvironment().toStringList();
+            qCDebug(logTools) << "Process environment:" << UosInfo()->pureEnvironment().toStringList();
         }
     }
 
@@ -210,8 +283,40 @@ QJsonObject FunctionHandler::functionProcess(const QJsonObject &appFunctions, QJ
     return resArguments;
 }
 
+QJsonArray FunctionHandler::processFuncs(const QJsonArray &funcs)
+{
+    QJsonArray newFunctions;
+    for (int i = 0; i < funcs.size(); i++) {
+        QJsonObject function = funcs.at(i).toObject();
+        if (!function.contains("name") || !function.contains("description") || !function.contains("parameters")) {
+            qCWarning(logTools) << "Invalid function:" << function;
+            continue;
+        }
+
+        if (!isValidString(function.value("name").toString())) {
+            qCWarning(logTools) << "function name match error [a-zA-Z0-9_-]{1,32} :" << function;
+            continue;
+        }
+
+        if (function.value("description").toString().length() > 100) {
+            qCWarning(logTools) << "function description maximum length reached 100 :" << function.value("description");
+            continue;
+        }
+
+        QString funName = function["name"].toString();
+        if (funName == "createSchedule") {
+            function["description"] = function["description"].toString().arg(QDateTime::currentDateTime().toString("yyyy-MM-ddThh:mm:ss"));
+        }
+
+        newFunctions << function;
+    }
+
+    return newFunctions;
+}
+
 QJsonArray FunctionHandler::functionCall(const QJsonObject &response, const QString &conversation, QString *directReply)
 {
+    qCDebug(logTools) << "Processing function call";
     bool query = false;
     QJsonObject appFunctions = FunctionHandler::queryAppFunctions(query);
 
@@ -271,7 +376,69 @@ QJsonArray FunctionHandler::functionCall(const QJsonObject &response, const QStr
         return functionCalls;
     }
 
-    qWarning() << "functionCall error = " << response;
+    qCWarning(logTools) << "functionCall error = " << response;
+    return QJsonArray();
+}
+
+QJsonArray FunctionHandler::instFuncCall(const QJsonObject &response, const QString &conversation, QString *directReply)
+{
+    QJsonArray functionCalls;
+    QJsonArray tmpconversion =  QJsonDocument::fromJson(conversation.toUtf8()).array();
+    if (!tmpconversion.isEmpty()) {
+        functionCalls = tmpconversion;
+    } else {
+        functionCalls << QJsonObject({
+            {"role", "user"},
+            {"content", conversation}
+        });
+    }
+
+    const QJsonObject &tools = response.value("tools").toObject();
+    if (tools.contains("function_call")) {
+        const QJsonObject &fun = tools.value("function_call").toObject();
+
+        functionCalls << QJsonObject({
+            {"role", "assistant"},
+            {"function_call", fun},
+            {"content", QJsonValue::Null}
+        });
+
+        const QJsonObject &resArguments = instFuncProcess(fun, directReply);
+
+        functionCalls << QJsonObject({
+            {"role", "function"},
+            {"name", fun.value("name")},
+            {"content", QString(QJsonDocument(resArguments).toJson(QJsonDocument::Compact))}
+        });
+
+        return functionCalls;
+    }
+
+    if (tools.contains("tool_calls")) {
+        functionCalls << QJsonObject({
+            {"role", "assistant"},
+            {"content", response.value("content")},
+            {"tool_calls", tools.value("tool_calls")},
+        });
+
+        const QJsonArray &tool_calls = tools.value("tool_calls").toArray();
+
+        for (const QJsonValue &tool_call : tool_calls) {
+            const QJsonObject &fun = tool_call["function"].toObject();
+            const QJsonObject &resArguments = instFuncProcess(fun, directReply);
+
+            functionCalls << QJsonObject({
+                {"role", "tool"},
+                {"tool_call_id", tool_call["id"]},
+                {"name", fun.value("name")},
+                {"content", resArguments.value("description")}
+            });
+        }
+
+        return functionCalls;
+    }
+
+    qCWarning(logTools) << "functionCall error = " << response;
     return QJsonArray();
 }
 

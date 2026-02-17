@@ -11,6 +11,7 @@ public:
      * @return
      */
     static QJsonObject queryAppFunctions(bool &notYetQueried);
+    static QJsonArray queryInstFunctions(const QString &inst);
 
     /**
      * @brief functions
@@ -30,6 +31,8 @@ public:
      * @return
      */
     static QJsonArray functionCall(const QJsonObject &response, const QString &conversation, QString *directReply = nullptr);
+    static QJsonArray instFuncCall(const QJsonObject &response, const QString &conversation, QString *directReply = nullptr);
+    static QJsonObject instFuncProcess(QJsonObject fun, QString *directReply);
 
     /**
      * @brief chatAction
@@ -46,6 +49,8 @@ private:
      * @return
      */
     static QJsonObject functionProcess(const QJsonObject &appFunctions, QJsonObject fun, QString *directReply);
+
+    static QJsonArray processFuncs(const QJsonArray &funcs);
 };
 
 #endif // FUNCTIONHANDLER_H

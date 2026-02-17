@@ -10,7 +10,6 @@
 #include <QBuffer>
 
 #include <DGuiApplicationHelper>
-#include <DApplicationHelper>
 
 DGUI_USE_NAMESPACE
 

@@ -7,8 +7,13 @@
 #include "wxqf.h"
 #include "localtext2image.h"
 #include "universalapi.h"
+#include "openrouterapi.h"
+#include "gemini/gemini_1_5.h"
+#include "universalagentapi.h"
+#include "coze/cozeagent.h"
+#include "deepseek/deepseekai.h"
+#include "deepseek/deepseekfree.h"
 
-#include <QRegExp>
 #include <QFile>
 #include <QtDBus>
 #include <QJsonDocument>
@@ -44,10 +49,31 @@ QSharedPointer<LLM> LLMUtils::getCopilot(const LLMServerProxy &serverproxy)
     case LLMChatModel::WXQF_ERNIE_Bot_4:
         copilot.reset(new WXQFAI(serverproxy));
         break;
+    case LLMChatModel::GEMINI_1_5_FLASH:
+    case LLMChatModel::GEMINI_1_5_PRO:
+        copilot.reset(new uos_ai::Gemini_1_5(serverproxy));
+        break;
+    case LLMChatModel::COZE_AGENT:
+        copilot.reset(new uos_ai::CozeAgent(serverproxy));
+        break;
     case LLMChatModel::LOCAL_TEXT2IMAGE:
         copilot.reset(new LocalText2Image(serverproxy));
+        break;
     case LLMChatModel::OPENAI_API_COMPATIBLE:
+    case LLMChatModel::PRIVATE_MODEL:
         copilot.reset(new uos_ai::UniversalAPI(serverproxy));
+        break;
+    case LLMChatModel::OPENAI_API_WITH_AGENT:
+        copilot.reset(new uos_ai::UniversalAgentAPI(serverproxy));
+        break;
+    case LLMChatModel::OPENROUTER_MODEL:
+        copilot.reset(new uos_ai::OpenRouterAPI(serverproxy));
+        break;
+    case LLMChatModel::DeepSeek_R1:
+        copilot.reset(new uos_ai::DeepSeekAI(serverproxy));
+        break;
+    case::LLMChatModel::DeepSeek_Uos_Free:
+        copilot.reset(new uos_ai::DeepSeekFree(serverproxy));
         break;
     }
 
@@ -56,7 +82,7 @@ QSharedPointer<LLM> LLMUtils::getCopilot(const LLMServerProxy &serverproxy)
 
 QString LLMUtils::adjustDbusPath(QString appId)
 {
-    return DBUS_SERVER_PATH + QString("/") + "a_" + appId.replace(QRegExp("[^A-Za-z]"), "_");
+    return DBUS_SERVER_PATH + QString("/") + "a_" + appId.replace(QRegularExpression("[^A-Za-z]"), "_");
 }
 
 QString LLMUtils::queryAppId(const uint &pid)

@@ -1,13 +1,19 @@
 #include "raidersbutton.h"
 #include "uosfreeaccounts.h"
+#include "utils/util.h"
+
+#include <DSysInfo>
 
 #include <QPainter>
 #include <QPainterPath>
-
 #include <QApplication>
 #include <QDesktopServices>
 #include <QUrl>
 #include <QTimer>
+
+UOSAI_USE_NAMESPACE
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 static constexpr char GIFT[] = ":/assets/images/book.svg";
 
@@ -34,7 +40,7 @@ void RaidersButton::setUrl(const QString &url)
 void RaidersButton::onUpdateSystemFont(const QFont &)
 {
     QFontMetrics fm(font());
-    setFixedWidth(30 + 6 + fm.width(m_text) + 20);
+    setFixedWidth(30 + 6 + fm.horizontalAdvance(m_text) + 20);
 }
 
 void RaidersButton::paintEvent(QPaintEvent *)
@@ -48,7 +54,7 @@ void RaidersButton::paintEvent(QPaintEvent *)
     textColor.setAlphaF(0.7);
 
     QPainter painter(this);
-    painter.setRenderHints(QPainter::SmoothPixmapTransform | QPainter::Antialiasing | QPainter::HighQualityAntialiasing);
+    painter.setRenderHints(QPainter::SmoothPixmapTransform | QPainter::Antialiasing);
 
     int radius = 15;
     QRect rect = this->rect();
@@ -80,6 +86,7 @@ void RaidersButton::mousePressEvent(QMouseEvent *event)
     QDateTime currentTime = QDateTime::currentDateTime();
     if (!m_lastDateTime.isValid() || m_lastDateTime.msecsTo(currentTime) >= 1000) { // 限制点击频率为1秒
         m_lastDateTime = currentTime;
+        qCInfo(logAIGUI) << "Opening raiders URL:" << m_url;
         QDesktopServices::openUrl(QUrl(m_url));
     }
 
@@ -88,6 +95,10 @@ void RaidersButton::mousePressEvent(QMouseEvent *event)
 
 void RaidersButton::resetUrl()
 {
+    qCDebug(logAIGUI) << QString("Resetting URL - productType(%1) language(%2) script(%3)")
+                         .arg(Dtk::Core::DSysInfo::productType())
+                         .arg(QLocale::system().language())
+                         .arg(QLocale::system().script());
     m_watcher.reset(new QFutureWatcher<QNetworkReply::NetworkError>);
     QFuture<QNetworkReply::NetworkError> future = QtConcurrent::run([ = ] {
         return UosFreeAccounts::instance().freeAccountButtonDisplay("detail", m_hasActivity);
@@ -95,9 +106,23 @@ void RaidersButton::resetUrl()
     m_watcher->setFuture(future);
     connect(m_watcher.data(), &QFutureWatcher<QNetworkReply::NetworkError>::finished, this, [ = ]() {
         if (QNetworkReply::NoError == m_watcher.data()->future().result() && 0 != m_hasActivity.display) {
+            qCInfo(logAIGUI) << "Successfully retrieved button display info, showing button";
             this->show();
+            // 社区版+英文环境，获取账号的网址不同，此处写死
+            if (Dtk::Core::DSysInfo::productType() == Dtk::Core::DSysInfo::Deepin && QLocale::English == QLocale::system().language()) {
+                static const QString URL("https://www.deepin.org/en/uos-ai-model-configuration-guide/");
+                setUrl(URL);
+                setText(m_hasActivity.buttonNameEnglish);
+                qCDebug(logAIGUI) << "Set English community URL:" << URL;
+                return;
+            }
+
             setUrl(m_hasActivity.url);
             setText(QLocale::Chinese == QLocale::system().language() && QLocale::SimplifiedChineseScript == QLocale::system().script() ? m_hasActivity.buttonNameChina : m_hasActivity.buttonNameEnglish);
+            qCDebug(logAIGUI) << "Set URL:" << m_hasActivity.url;
+        } else {
+            qCWarning(logAIGUI) << "Failed to retrieve button display info or display flag is 0, hiding button";
+            this->hide();
         }
     });
 }

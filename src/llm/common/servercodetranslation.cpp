@@ -11,6 +11,8 @@ QString ServerCodeTranslation::serverCodeTranslation(int code, const QString &me
     case AIServer::TimeoutError:
     case AIServer::NetworkError:
     case AIServer::UnknownNetworkError:
+    case AIServer::HostNotFoundError:
+    case AIServer::SslHandshakeFailedError:
         msg = QCoreApplication::translate("ServerCodeTranslation", "Unable to connect to the server, please check your network or try again later.");
         break;
     case AIServer::AuthenticationRequiredError:
@@ -39,6 +41,12 @@ QString ServerCodeTranslation::serverCodeTranslation(int code, const QString &me
         break;
     case AIServer::AudioOutputDeviceInvalid:
         msg = QCoreApplication::translate("ServerCodeTranslation", "Invalid output device");
+        break;
+    case AIServer::InstFunctionCallingInvalid:
+        msg = QCoreApplication::translate("ServerCodeTranslation", "Sorry, no matching operations were found.");
+        break;
+    case AIServer::ContentExceededError:  //对话总字数超出限制，请清除对话记录后再试。
+        msg = QCoreApplication::translate("ServerCodeTranslation", "The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.");
         break;
     default:
         break;

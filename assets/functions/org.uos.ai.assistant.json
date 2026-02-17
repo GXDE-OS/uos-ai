@@ -202,7 +202,7 @@
 		},
 		{
 			"name": "displayBrightness",
-			"description": "调节屏幕亮度",
+			"description": "屏幕亮度",
 			"parameters": {
 				"type": "object",
 				"properties": {
@@ -223,21 +223,25 @@
 				}
 			}
 		},
-		{
-			"name": "switchPerformanceMode",
-			"description": "调整性能模式",
-			"parameters": {
-				"type": "object",
-				"properties": {
-					"mode": {
-						"type": "string",
-						"description": "balance平衡,performance高性能,powersave节能、低功耗、省电",
-						"enum": ["balance", "performance", "powersave"]
+        {
+            "name": "switchPerformanceMode",
+            "description": "打开、切换和关闭电源的性能模式，例如：高性能模式、平衡模式、电源节能模式。只对描述的模式进行开启关闭操作。",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "mode": {
+                        "type": "string",
+                        "description": "模式的名称：performance是高性能模式，balance是平衡模式，powersave是节能、低功耗、省电模式。",
+                        "enum": ["performance", "balance", "powersave"]
+                    },
+					"switch": {
+						"type": "boolean",
+						"description": "true切换、打开；false关闭"
 					}
-				},
-				"required": ["mode"]
-			}
-		},
+                },
+                "required": ["mode", "switch"]
+            }
+        },
 		{
             "name": "systemLanguageSetting",
 			"description": "设置系统的语言，如：中文，英文",
@@ -289,6 +293,28 @@
 				}
 			}
 		},
+		{
+            "name": "volumeAdjustment",
+            "description": "音量调整；声音大一点、声音小一点属于模糊调整。",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "volume": {
+                        "type": "integer",
+                        "description": "准确音量值调整，音量大小，百分比,值范围0到100。"
+                    },
+                    "approximate": {
+                        "type": "string",
+                        "description": "模糊调整；增大音量、声音大一点为Add；减小音量、声音小一点为Reduce",
+                        "enum": ["Add", "Reduce"]
+                    },
+                    "mute": {
+                        "type": "boolean",
+                        "description": "true静音、关闭声音，false打开声音、开启声音。"
+                    }
+                }
+            }
+        },
 		{
 			"name": "grandSearch",
 			"description": "打开或启动全局搜索",

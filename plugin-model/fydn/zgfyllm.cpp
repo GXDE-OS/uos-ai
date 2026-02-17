@@ -35,7 +35,7 @@ QJsonObject ZgfyLLM::generate(const QString &content, const QVariantHash &params
     sendObj.insert("messages", conversions);
     sendObj.insert("stream", true);
 
-    QString url = "https://api.cjbdi.com:8443/354347/v1/chat/completions";
+    QString url = "https://api.cjbdi.com:8443/354347/defg/web/openapis/template/netSearch";
     if (role == roleFlfg()) {
         url = "https://api.cjbdi.com:8443/354347/llm/flfg/v1/chat/completions";
         sendObj.insert("top_k", 5);
@@ -44,16 +44,16 @@ QJsonObject ZgfyLLM::generate(const QString &content, const QVariantHash &params
 
     FydnNetwork *fydnNetwork = new FydnNetwork();
     QString responseContent;
-    connect(fydnNetwork, &FydnNetwork::sigReadStream, [=, &responseContent](const QString &data){
-        if (!stream(data, user)) {
-            responseContent = "task cancel";
-            fydnNetwork->setAbortRequest();
-        }
-        else
-            responseContent += data;
+    connect(this, &ZgfyLLM::sigAbort, this, [=, &responseContent](){
+        fydnNetwork->setAbortRequest();
+        responseContent = "task cancel";
+    });
+    connect(fydnNetwork, &FydnNetwork::sigReadStream, this, [=, &responseContent](const QString &data){
+        stream(data, user);
+        responseContent += data;
     });
 
-    QPair<int, QString> errorPair = fydnNetwork->request(sendObj, url);
+    QPair<int, QString> errorPair = fydnNetwork->request(sendObj, url, role);
 
     if (errorPair.first == FydnNetwork::ErrorType::NetWorkError)
         errorPair.second = QCoreApplication::translate("ErrorCodeTranslation", "Connection exception, please try again later.");
@@ -67,4 +67,9 @@ QJsonObject ZgfyLLM::generate(const QString &content, const QVariantHash &params
     response.insert(GENERATE_RESPONSE_ERRORMSG, errorPair.second);
 
     return response;
+}
+
+void ZgfyLLM::setAbort()
+{
+    emit sigAbort();
 }

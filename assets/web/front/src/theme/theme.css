@@ -15,22 +15,42 @@ html {
     --uosai-color-shortcut-bg: rgba(255, 255, 255, 0.9);
     --uosai-color-shortcut-hover: rgba(243, 243, 243, 0.8);
     --uosai-color-shortcut-active: rgba(226, 226, 226, 0.8);
-    /* clear-btn */
-    --uosai-color-clear: rgba(0, 0, 0, 0.70);
+    /* clear-btn (deprecated) */
+    --uosai-color-clear: rgba(0, 0, 0, 0.7);
     --uosai-color-clear-hover: rgba(0, 0, 0, 1);
     --uosai-color-clear-bg: rgba(0, 0, 0, 0.05);
     --uosai-color-clear-hover-bg: rgba(0, 0, 0, 0.1);
     --uosai-color-clear-press-bg: rgba(0, 0, 0, 0.2);
+
+    /* flat-btn */
+    --uosai-color-flat-btn-bg: rgba(0, 0, 0, 0.05);
+    --uosai-color-flat-btn-bg-hover: rgba(0, 0, 0, 0.1);
+    --uosai-color-flat-btn-bg-press: rgba(0, 0, 0, 0.2);
+    --uosai-color-flat-btn-icon: rgba(0, 0, 0, 0.7);
+
     /* SwitchModel */
     --uosai-color-modelbtn-bg: rgba(0, 0, 0, 0.05);
     --uosai-color-modelbtn-hover: rgba(0, 0, 0, 0.1);
     --uosai-color-modelbtn-active: rgba(0, 0, 0, 0.2);
     --uosai-color-modelbtn: rgba(0, 0, 0, 0.7);
-    --uosai-color-modelbtn-hover-color: rgba(0, 0, 0, 1);
+    --uosai-color-modelbtn-active-color: rgba(0, 0, 0, 0.7);
     --uosai-color-switchmenu-bg: #fff;
 
+    /* PromptList */
+    --uosai-color-activeItem-bg: rgba(0, 0, 0, 0.05);
+    --uosai-color-normalItem-bg: rgba(0, 0, 0, 0);
+    /* --uosai-color-normal-bg: rgba(255, 255, 255, 0.2); */
+    --uosai-color-normal-bg: #F2F2F2;
+    --uosai-color-prompt-item: rgb(0, 0, 0, 1);
+    --uosai-color-prompt-tag: rgb(0, 0, 0, 0.6);
+    --uosai-color-prompt-icon: rgba(0, 0, 0, 0.70);
+    --uosai-color-prompt-icon-hover: rgba(0, 0, 0, 1);
+    
     /* AssistantModel */
     --uosai-color-assistantmenu-bg: rgb(235, 235, 235);
+    --uosai-color-assistantmenu-name: rgba(0, 0, 0, 0.9);
+    --uosai-color-assistantmenu-description: rgba(0, 0, 0, 0.6);
+    --uosai-color-modelbtn-splitline: rgba(0, 0, 0, 0.1);
 
     /* input-content */
     --uosai-color-inputcontent-bg: rgba(0, 0, 0, 0.08);
@@ -38,22 +58,41 @@ html {
     --uosai-color-inputcontent: rgba(0, 0, 0, 0.9);
     --uosai-color-voicebtn-bg: #fff;
     --uosai-color-voicebtn-bg-hover: #f2f2f2;
-    --uosai-color-voicebtn-bg-active: #E6E6E6;
+    --uosai-color-voicebtn-bg-active: rgba(0, 0, 0, 0.2);
+    --uosai-color-voicebtn-bg-active-color: rgba(0, 0, 0, 0.7);
+    --uosai-color-function-button-text-color: rgba(0, 0, 0, 0.7);
+    --uosai-color-function-separator: rgba(0, 0, 0, 0.05);
 
     /* ChatBubble */
     --uosai-color-assistant-bg: rgba(255, 255, 255, 0.8);
-    --uosai-color-imgbubble-bg: rgba(0, 0, 0, 0.1);
-    --uosai-color-imgbubble-hover: rgba(0, 0, 0, 0.2);
-    --uosai-color-stop-bg: rgba(255, 255, 255, 0.8);
+    --uosai-color-imgbubble-bg: rgba(0, 0, 0, 0.5);
+    --uosai-color-imgbubble-hover: rgba(0, 0, 0, 0.6);
+    --uosai-color-imgbubble-active: rgba(0, 0, 0, 0.7);
+    --uosai-color-stop-bg: rgba(255, 255, 255, 1);
     --uosai-color-tip-bg: #fafafa;
     --uosai-color-tip: rgba(0, 0, 0, 0.9);
     --uosai-color-model-name: rgba(0, 0, 0, 0.4);
+    --uosai-color-think:#8B8B8B;
+    --uosai-color-split-Icon-bg:rgba(0, 0, 0, 0.1);
+    --uosai-color-tool-use-bg:rgba(0, 0, 0, 0.05);
+    --uosai-color-tool-use-header:rgba(0, 0, 0, 0.6); /*工具使用标题*/
+    /* question-action-btn */
+    --uosai-color-question-action-divider: rgba(0, 0, 0, 0.1);
+    --uosai-color-question-action-svg: rgba(0, 0, 0, 0.7);
+    --uosai-color-question-action-btn-hover: rgba(0, 0, 0, 0.05);
+
+    /* PreView */
+    --uosai-color-Reference:rgba(0, 0, 0, 0.85);
+    --uosai-color-PreView-hover-bg:rgba(0, 0, 0, 0.05);
+    --uosai-color-PreView-font:rgba(0, 0, 0, 0.5);
+
     /* retry */
     --uosai-bg-retry: rgba(255, 255, 255, 0.9);
     --uosai-bg-retry-hover: rgba(243, 243, 243, 0.8);
     --uosai-bg-retry-active: rgba(226, 226, 226, 0.8);
     --uosai-bg-retry-disable: #cccccc;
     --uosai-border-color-retry: #E0E0E0;
+    --uosai-color-retry-text: rgba(0, 0, 0, 0.7);
     /* scroll */
     --uosai-color-scroll-bg: rgba(0,0,0,0.2);
     --uosai-color-scroll-bg-hover: rgba(0,0,0,0.35);
@@ -62,6 +101,70 @@ html {
     --uosai-color-border:  rgba(0,0,0,0.05);
 
     --uosai-bottom-tip-color: rgba(0, 0, 0, 0.4);
+
+    /* DeepThink & SearchOnline */
+    --uosai-think-search-normal-bg: rgba(255, 255, 255, 0.6);   /*正常状态背景色*/
+    --uosai-think-search-normal-hover-bg: rgba(0, 0, 0, 0.1);      /*正常状态hover背景色*/
+    --uosai-think-search-cative-bg: rgba(255, 255, 255, 0.9);
+    --uosai-think-search-cative-hover-bg: rgba(0, 0, 0, 0.1);
+    --uosai-think-search-color: rgba(0, 0, 0, 0.7);  /*文字颜色*/
+
+    /* think */
+    --uosai-think-title-color: rgba(0, 0, 0, 0.85);  /*标题文字颜色*/
+    --uosai-think-title-svg-color: rgba(0, 0, 0, 0.5);  /*标题图标颜色*/
+    --uosai-think-content-color: rgba(0, 0, 0, 0.5);  /*内容文字颜色*/
+    --uosai-think-content-side-color-bg: rgba(0, 0, 0, 0.1);  /*边线颜色*/
+
+    /* return bottom */
+    --uosai-color-return-bottom-bg:rgba(0, 0, 0, 0.2);
+
+    /* 历史记录列表 */
+    --uosai-chat-bg: rgba(255, 255, 255, 1);
+    --uosai-history-list-mask-bg: rgba(255, 255, 255, 0.7);
+    --uosai-history-list-item-hover-bg: rgba(0, 0, 0, 0.05);
+    --uosai-history-list-item-active-bg: rgba(0, 0, 0, 0.2);
+    --uosai-history-list-box-shadow: rgba(0, 0, 0, 0.1);
+    --uosai-history-date-color: rgba(0, 0, 0, 0.6);
+
+    /* 引导界面 */
+    --uosai-guide-popup-bg: rgba(255, 252, 252, 1);
+    --uosai-guide-popup-font-color: rgba(0, 0, 0, 0.85);
+    --uosai-guide-popup-contentText-color: rgba(0, 0, 0, 0.6);
+    --uosai-guide-popup-trylater-color: rgba(0, 0, 0, 0.7);
+
+    --uosai-color-split-line: rgba(0, 0, 0, 0.1);
+    /* ConversionMode */
+    --uosai-color-conversion-mode-text: rgba(0, 0, 0, 1);
+    --uosai-color-conversion-mode-bg: rgba(235, 235, 235, 1);
+    --uosai-color-conversion-mode-icon: rgba(0, 0, 0, 0.7);
+
+    /* PrivateWelcomePage */
+    --uosai-color-private-welcome-page-icon: rgba(0, 0, 0, 0.7);
+    --uosai-color-private-welcome-page-icon-bg: rgba(0, 0, 0, 0.05);
+    --uosai-color-private-welcome-page-title: rgba(0, 0, 0, 0.85);
+    --uosai-color-private-welcome-page-description: rgba(0, 0, 0, 0.7);
+
+    /* DocumentParsing */
+    --uosai-color-document-parsing-bg: rgba(0, 0, 0, 0.1);
+    --uosai-color-document-file-name-text: rgba(0, 0, 0, 1);
+    --uosai-color-document-parsing-text: rgba(0, 0, 0, 0.6);
+
+    /* ShortcutTip */
+    --uosai-color-shortcut-color: rgba(0, 0, 0, 0.4);
+    --uosai-color-shortcut-tip-bg: rgba(0, 0, 0, 0.05);
+
+    /* 以下为qt6专用背景色 */
+    /* retry */
+    --uosai-bg-retry-qt6: rgba(255, 255, 255, 0.8);
+    --uosai-bg-retry-hover-qt6: rgba(243, 243, 243, 0.8);
+    --uosai-bg-retry-active-qt6: rgba(226, 226, 226, 0.8);
+    --uosai-bg-retry-disable-qt6: #cccccc;
+    --uosai-border-color-retry-qt6: #E0E0E0;
+    /* 历史记录列表 */
+    --uosai-chat-bg-qt6: rgba(255, 255, 255, 0.6);
+    /* PromptList */
+    --uosai-color-normal-bg-qt6: rgba(255, 255, 255, 0.4);
+
 }
 
 html.dark {
@@ -76,56 +179,159 @@ html.dark {
     --uosai-color-shortcut-title: rgba(255, 255, 255, 0.7);
     --uosai-color-shortcut-border: rgba(255, 255, 255, 0.05);
     --uosai-color-shortcut-shadow: rgba(0, 0, 0, 0.08);
-    --uosai-color-shortcut-bg: #343638;
-    --uosai-color-shortcut-hover: #5c5c5c;
-    --uosai-color-shortcut-active: #3a3a3a;
-    /* clear-btn */
+    --uosai-color-shortcut-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-shortcut-hover: rgba(255, 255, 255, 0.15);
+    --uosai-color-shortcut-active: rgba(255, 255, 255, 0.2);
+    /* clear-btn (deprecated) */
     --uosai-color-clear: rgba(255, 255, 255, 0.70);
     --uosai-color-clear-hover: rgba(255, 255, 255, 1);
     --uosai-color-clear-bg: #3d3d3d;
-    --uosai-color-clear-hover-bg: #474747;
-    --uosai-color-clear-press-bg: #2e2e2e;
+    --uosai-color-clear-hover-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-clear-press-bg: #010101;
+
+    /* flat-btn */
+    --uosai-color-flat-btn-bg: rgba(255, 255, 255, 0.05);
+    --uosai-color-flat-btn-bg-hover: rgba(255, 255, 255, 0.1);
+    --uosai-color-flat-btn-bg-press: rgba(255, 255, 255, 0.2);
+    --uosai-color-flat-btn-icon: rgba(255, 255, 255, 0.7);
 
     /* SwitchModel */
-    --uosai-color-modelbtn-bg: #3d3d3d;
-    --uosai-color-modelbtn-hover: #474747;
-    --uosai-color-modelbtn-active: #2e2e2e;
+    --uosai-color-modelbtn-bg: rgba(255, 255, 255, 0.05);
+    --uosai-color-modelbtn-hover: rgba(255, 255, 255, 0.1);
+    --uosai-color-modelbtn-active: rgba(255, 255, 255, 0.2);
     --uosai-color-modelbtn: rgba(255, 255, 255, 0.70);
-    --uosai-color-modelbtn-hover-color: rgba(255, 255, 255, 1);
+    --uosai-color-modelbtn-active-color: rgba(255, 255, 255, 1);
+    
 
     --uosai-color-switchmenu-bg: rgba(27, 27, 27, 1);
 
     /* AssistantModel */
     --uosai-color-assistantmenu-bg: rgb(43, 43, 43);
+    --uosai-color-assistantmenu-name: rgba(255, 255, 255, 0.9);
+    --uosai-color-assistantmenu-description: rgba(255, 255, 255, 0.6);
+    --uosai-color-modelbtn-splitline: rgba(255, 255, 255, 0.1);
+
+    /* PromptList */
+    --uosai-color-activeItem-bg: rgb(255, 255, 255, 0.1);
+    /* --uosai-color-normal-bg: rgba(0, 0, 0, 0.1); */
+    --uosai-color-normal-bg: #353535;
+    --uosai-color-prompt-item: rgb(255, 255, 255, 0.7);
+    --uosai-color-prompt-tag: rgb(255, 255, 255, 0.6);
+    --uosai-color-prompt-icon: rgba(255, 255, 255, 0.7);
+    --uosai-color-prompt-icon-hover: rgba(255, 255, 255, 1);
 
     /* input-content */
-    --uosai-color-inputcontent-bg: #434343;
+    --uosai-color-inputcontent-bg: rgba(255, 255, 255, 0);
     --uosai-color-inputcontent-placeholder: rgba(255, 255, 255, 0.4);
     --uosai-color-inputcontent: #fff;
+    --uosai-color-function-button-text-color: rgba(255, 255, 255, 0.7);
+    --uosai-color-function-separator: rgba(255, 255, 255, 0.05);
     /* voice btn */
-    --uosai-color-voicebtn-bg: #555555;
-    --uosai-color-voicebtn-bg-hover: rgba(255, 255, 255, 0.20);
-    --uosai-color-voicebtn-bg-active: rgba(0, 0, 0, 0.1);
+    --uosai-color-voicebtn-bg: rgba(255, 255, 255, 0.05);
+    --uosai-color-voicebtn-bg-hover: rgba(255, 255, 255, 0.1);
+    --uosai-color-voicebtn-bg-active: rgba(255, 255, 255, 0.2);
+    --uosai-color-voicebtn-bg-active-color: rgba(255, 255, 255, 1);
     /* ChatBubble */
     --uosai-color-assistant-bg: #515151;
-    --uosai-color-imgbubble-bg: rgba(255, 255, 255, 0.1);
-    --uosai-color-imgbubble-hover: rgba(255, 255, 255, 0.2);
+    --uosai-color-imgbubble-bg: rgba(0, 0, 0, 0.5);
+    --uosai-color-imgbubble-hover: rgba(0, 0, 0, 0.6);
+    --uosai-color-imgbubble-active: rgba(0, 0, 0, 0.7);
     --uosai-color-stop-bg: #343638;
     --uosai-color-tip-bg: #2c2c2c;
     --uosai-color-tip: #C0C6D4;
     --uosai-color-model-name: rgba(255, 255, 255, 0.50);
+    --uosai-color-think:#A6A6A6;
+    --uosai-color-split-Icon-bg:rgba(255, 255, 255, 0.1);
+    --uosai-color-tool-use-bg:rgba(255, 255, 255, 0.05);
+    --uosai-color-tool-use-header:rgba(255, 255, 255, 0.6); /*工具使用标题*/
+    /* question-action-btn */
+    --uosai-color-question-action-divider: rgba(255, 255, 255, 0.1);
+    --uosai-color-question-action-svg: rgba(255, 255, 255, 0.7);
+    --uosai-color-question-action-btn-hover: rgba(255, 255, 255, 0.05);
+
+    /* PreView */
+    --uosai-color-Reference:rgba(255, 255, 255, 0.85);
+    --uosai-color-PreView-hover-bg:rgba(255, 255, 255, 0.05);
+    --uosai-color-PreView-font:rgba(255, 255, 255, 0.5);
+
     /* retry */
     --uosai-bg-retry: #474747;
     --uosai-bg-retry-hover: #525252;
     --uosai-bg-retry-active: #2e2e2e;
     --uosai-bg-retry-disable: #3b3b3b;
     --uosai-border-color-retry: #525252;
+    --uosai-color-retry-text: rgba(255, 255, 255, 0.7);
     /* scroll */
-    --uosai-color-scroll-bg: rgba(255,255,255,0.15);
-    --uosai-color-scroll-bg-hover: rgba(255,255,255,0.2);
+    --uosai-color-scroll-bg: rgba(255,255,255,0.9);
+    --uosai-color-scroll-bg-hover: rgba(255,255,255,0.6);
 
     --uosai-color-border:  rgba(255,255,255,0.05);
 
-    --uosai-bottom-tip-color: #fff;
+    --uosai-bottom-tip-color: rgba(255, 255, 255, 0.4);
+
+    /* DeepThink & SearchOnline */
+    --uosai-think-search-normal-bg: rgba(255, 255, 255, 0.05);   /*正常状态背景色*/
+    --uosai-think-search-normal-hover-bg: rgba(0, 0, 0, 0.1);      /*正常状态hover背景色*/
+    --uosai-think-search-cative-bg: rgba(255, 255, 255, 0.9);
+    --uosai-think-search-cative-hover-bg: rgba(0, 0, 0, 0.1);
+    --uosai-think-search-color: rgba(255, 255, 255, 0.7);  /*文字颜色*/
+
+    /* think */
+    --uosai-think-title-color: rgba(255, 255, 255, 0.85);  /*标题文字颜色*/
+    --uosai-think-title-svg-color: rgba(255, 255, 255, 0.5);  /*标题图标颜色*/
+    --uosai-think-content-color: rgba(255, 255, 255, 0.5);  /*内容文字颜色*/
+    --uosai-think-content-side-color-bg: rgba(255, 255, 255, 0.1);  /*边线颜色*/
+
+    /* return bottom */
+    --uosai-color-return-bottom-bg:rgba(0, 0, 0, 0.2);
+
+    
+    /* 历史记录列表 */
+    --uosai-chat-bg: rgba(0, 0, 0,1);
+    --uosai-history-list-mask-bg: rgba(0, 0, 0, 0.6);
+    --uosai-history-list-item-hover-bg: rgba(255, 255, 255, 0.05);
+    --uosai-history-list-item-active-bg: rgba(255, 255, 255, 0.2);
+    --uosai-history-list-box-shadow: rgba(0, 0, 0, 0.2);
+    --uosai-history-date-color: rgba(255, 255, 255, 0.6);
+
+    /* 引导界面 */
+    --uosai-guide-popup-bg: rgba(25, 25, 25, 1);
+    --uosai-guide-popup-font-color: rgba(255, 255, 255, 0.85);
+    --uosai-guide-popup-contentText-color: rgba(255, 255, 255, 0.6);
+    --uosai-guide-popup-trylater-color: rgba(255, 255, 255, 0.7);
+
+    --uosai-color-split-line: rgba(255, 255, 255, 0.1);
+
+    /* ConversionMode */
+    --uosai-color-conversion-mode-text: rgba(255, 255, 255, 1);
+    --uosai-color-conversion-mode-bg: rgba(0, 0, 0, 1);
+    --uosai-color-conversion-mode-icon: rgba(255, 255, 255, 0.7);
+
+    /* PrivateWelcomePage */
+    --uosai-color-private-welcome-page-icon: rgba(255, 255, 255, 0.7);
+    --uosai-color-private-welcome-page-icon-bg: rgba(255, 255, 255, 0.05);
+    --uosai-color-private-welcome-page-title: rgba(255, 255, 255, 0.85);
+    --uosai-color-private-welcome-page-description: rgba(255, 255, 255, 0.7);
+
+    /* DocumentParsing */
+    --uosai-color-document-parsing-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-document-file-name-text: rgba(255, 255, 255, 1);
+    --uosai-color-document-parsing-text: rgba(255, 255, 255, 0.6);
+
+    /* ShortcutTip */
+    --uosai-color-shortcut-color: rgba(251, 251, 251, 0.4);
+    --uosai-color-shortcut-tip-bg: rgba(255, 255, 255, 0.05);
+
+    /* 以下为qt6专用背景色 */
+    /* retry */
+    --uosai-bg-retry-qt6: rgba(255, 255, 255, 0.1);
+    --uosai-bg-retry-hover-qt6: rgba(255, 255, 255, 0.15);
+    --uosai-bg-retry-active-qt6: rgba(255, 255, 255, 0.2);
+    --uosai-bg-retry-disable-qt6: #3b3b3b;
+    --uosai-border-color-retry-qt6: #525252;
+    /* 历史记录列表 */
+    --uosai-chat-bg-qt6: rgba(25, 25, 25, 0.6);
+    /* PromptList */
+    --uosai-color-normal-bg-qt6: rgba(0, 0, 0, 0.4);
 
 }

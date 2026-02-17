@@ -1,12 +1,14 @@
 #include "dbuslocaltexttoimagerequest.h"
 
-#include <QDebug>
 #include <QFile>
 #include <QBuffer>
+#include <QLoggingCategory>
 
 #define LOCAL_TEXT2IMAGE_SERVICE      "com.deepin.texttoimage"
 #define LOCAL_TEXT2IMAGE_PATH         "/com/deepin/texttoimage"
 #define LOCAL_TEXT2IMAGE_INTERFACE    "com.deepin.texttoimage"
+
+Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 DbusLocalTextToImageRequest::DbusLocalTextToImageRequest(QObject *parent)
     : QDBusInterface(LOCAL_TEXT2IMAGE_SERVICE, LOCAL_TEXT2IMAGE_PATH, LOCAL_TEXT2IMAGE_INTERFACE, QDBusConnection::systemBus(), parent)
@@ -21,39 +23,45 @@ DbusLocalTextToImageRequest::DbusLocalTextToImageRequest(QObject *parent)
 
 QByteArray DbusLocalTextToImageRequest::textToImage(const QString &prompt, const QString &negativePrompt, bool isChinese)
 {
+    qCDebug(logDBus) << "Converting text to image - prompt:" << prompt << "isChinese:" << isChinese;
+    
     QDBusMessage msg = call(QDBus::Block, "textToImage", prompt, "dog", isChinese);
     if (!msg.errorMessage().isEmpty()) {
-        qInfo() << "DbusLocalTextToImageRequest::textToImage=" << prompt << ",error=" << msg;
+        qCWarning(logDBus) << "Text to image conversion failed:" << msg.errorMessage();
         return m_image;
     }
 
     m_event.exec();
+    qCDebug(logDBus) << "Text to image conversion completed";
     return m_image;
 }
 
 void DbusLocalTextToImageRequest::finished(const QString &path)
 {
-    qInfo() << "DbusLocalTextToImageRequest::finished=" << path;
+    qCDebug(logDBus) << "Text to image conversion finished, path:" << path;
+    
     QFile file(path);
     if (!file.exists()) {
-        qInfo() << "文件不存在" << path;
+        qCWarning(logDBus) << "Image file does not exist:" << path;
         m_event.quit();
         return;
     }
 
     if (!file.open(QIODevice::ReadOnly)) {
-        qInfo() << "无法打开文件" << path;
+        qCWarning(logDBus) << "Failed to open image file:" << path;
         m_event.quit();
         return;
     }
 
     m_image = file.readAll();
     file.close();
+    qCDebug(logDBus) << "Image file read successfully, size:" << m_image.size();
 
     m_event.quit();
 }
 
 void DbusLocalTextToImageRequest::requestAborted()
 {
+    qCDebug(logDBus) << "Text to image request aborted";
     m_event.quit();
 }

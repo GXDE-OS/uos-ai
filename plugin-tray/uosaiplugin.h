@@ -61,9 +61,6 @@ public:
     void pluginStateSwitched() override;
     bool pluginIsAllowDisable() override { return true; }
     bool pluginIsDisable() override;
-#ifdef USE_V23_DOCK
-    QIcon icon(const DockPart &dockPart, DGuiApplicationHelper::ColorType themeType) override;
-#endif
 #ifdef USE_DOCK_API_V2
     Dock::PluginFlags flags() const override { return Dock::Type_System | Dock::Attribute_Normal; }
     void setMessageCallback(MessageCallbackFunc cb) override { m_messageCallback = cb; }

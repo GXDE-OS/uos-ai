@@ -16,7 +16,7 @@ class UniversalChatCompletion : public AINetWork
 public:
     UniversalChatCompletion(const QString &url, const AccountProxy &account);
     QString rootUrlPath() const override;
-    QPair<int, QString> create(const QString &model, AIConversation &conversation, qreal temperature = 1.0);
+    QPair<int, QString> create(const QString &model, AIConversation &conversation, const QVariantHash &params);
 private:
     QString rootUrl;
 };

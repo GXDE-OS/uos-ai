@@ -9,7 +9,7 @@ class ChatCompletion360 : public NetWork360
 public:
     explicit ChatCompletion360(const AccountProxy &account);
 
-    QPair<int, QString> create(const QString &model, Conversation360 &conversation, qreal temperature = 1.0);
+    QPair<int, QString> create(const QString &model, Conversation360 &conversation, const QVariantHash &params);
 };
 
 #endif // CHATCOMPLETION360_H

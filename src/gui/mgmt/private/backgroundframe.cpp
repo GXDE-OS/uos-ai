@@ -3,6 +3,9 @@
 #include <DGuiApplicationHelper>
 
 #include <QPainter>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 BackgroundFrame::BackgroundFrame(QWidget *parent)
     : DFrame(parent)
@@ -20,8 +23,10 @@ void BackgroundFrame::updateSystemTheme(const DGuiApplicationHelper::ColorType &
 {
     if (themeType == DGuiApplicationHelper::DarkType) {
         m_isDarkTheme = true;
+        qCInfo(logAIGUI) << "System theme updated to Dark.";
     } else {
         m_isDarkTheme = false;
+        qCInfo(logAIGUI) << "System theme updated to Light.";
     }
 }
 

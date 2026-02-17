@@ -1,0 +1,5 @@
+if (COMPILE_ON_V20)
+    add_subdirectory(fcitx4)
+elseif(COMPILE_ON_V23)
+    add_subdirectory(fcitx5)
+endif()

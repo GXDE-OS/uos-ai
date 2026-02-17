@@ -44,19 +44,28 @@ public:
 
     void setWindowMode(bool isWindowMode = false);
 
+    bool chatInitFinished();
+
 signals:
     void voiceConversationStatusChanged(int status);
+    void docSummaryDragInView(const QStringList &docPaths);
+
+    void sigChatInitFinished();
 
 private slots:
     void onLoadFinished(bool ok);
+    void onChatInitFinished();
 
 protected:
     bool event(QEvent *e) override;
 
     bool eventFilter(QObject *obj, QEvent *ev) override;
 
+    void dropEvent(QDropEvent *event) override;
+
 private:
     bool m_loadFinished = false;
+    bool m_chatInitFinished = false;
     QList<int> m_tasks;
 
     ESingleWebPage *m_page = nullptr;

@@ -1,18 +1,18 @@
 [
     {
-        "iconName": "1-question-ai-ai",
+        "iconName": "1-question-ai",
         "type": "Content Generation",
         "Question": "Help me draft an outline of meeting minutes"
     },
     {
         "iconName": "2-question-ai",
         "type": "Content Generation",
-        "Question": "I’m thinking about the functional design of AI products. Give me 3 ideas."
+        "Question": "I'm thinking about the functional design of AI products. Give me 3 ideas."
     },
     {
         "iconName": "3-question-ai",
         "type": "Content Generation",
-        "Question": "How to write the summation formula in Excel?"
+        "Question": "Write a summary of this month's work for a sales position."
     },
     {
         "iconName": "4-question-ai",

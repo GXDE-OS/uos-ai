@@ -9,6 +9,9 @@
 #include <QJsonObject>
 #include <QStandardPaths>
 #include <QFileInfo>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logTAS)
 
 UosSimpleLog::UosSimpleLog(QObject *parent)
     : QThread(parent)
@@ -40,26 +43,72 @@ void UosSimpleLog::addLog(const UosLogObject &logObj)
         m_mutex.lock();
         m_condition.wakeAll();
         m_mutex.unlock();
+        qCDebug(logTAS) << "Log object enqueued, type:" << logObj.type;
     }
+}
+
+void UosSimpleLog::addRateLog(const UosRateLog &logObj)
+{
+    if (!m_stopLogging.load()) {
+        m_preRateLogQueue.enqueue(logObj);
+        m_mutex.lock();
+        m_condition.wakeAll();
+        m_mutex.unlock();
+        qCDebug(logTAS) << "Rate log enqueued";
+    }
+}
+
+QJsonObject UosSimpleLog::toJson(const UosRateLog &logObj)
+{
+    QJsonObject logTextJson;
+    logTextJson["app"] = logObj.app;
+    logTextJson["llm"] = logObj.llm;
+    logTextJson["question"] = logObj.question;
+    logTextJson["answer"] = logObj.answer;
+    logTextJson["questionTime"] = logObj.questionTime;
+    logTextJson["answerTime"] = logObj.answerTime;
+    logTextJson["modelType"] = logObj.modelType;
+    logTextJson["assistantName"] = logObj.assistantName;
+
+    if (logObj.likeOrNot != UosRateLog::None)
+        logTextJson["likeOrNot"] = logObj.likeOrNot;
+
+    return logTextJson;
 }
 
 void UosSimpleLog::run()
 {
     while (!m_stopLogging.load()) {
         m_mutex.lock();
-        if (m_preLogObjectQueue.isEmpty()) {
+        if (m_preLogObjectQueue.isEmpty() && m_preRateLogQueue.isEmpty()) {
             m_condition.wait(&m_mutex, 1000);
         }
         m_mutex.unlock();
 
-        UosLogObject logObj;
-        while (m_preLogObjectQueue.dequeue(logObj) && !m_stopLogging.load()) {
-            int nCount = 3;
-            while (nCount-- > 0) {
-                if (QNetworkReply::NetworkError::NoError != pushLog(logObj)) {
-                    qWarning() << "Try push log again.";
-                } else {
-                    break;
+        {
+            UosLogObject logObj;
+            while (m_preLogObjectQueue.dequeue(logObj) && !m_stopLogging.load()) {
+                int nCount = 3;
+                while (nCount-- > 0) {
+                    if (QNetworkReply::NetworkError::NoError != pushLog(logObj)) {
+                        qCWarning(logTAS) << "Try push log again, type:" << logObj.type << ", left retry:" << nCount;
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+
+        {
+            UosRateLog logObj;
+            while (m_preRateLogQueue.dequeue(logObj) && !m_stopLogging.load()) {
+                int nCount = 3;
+                while (nCount-- > 0) {
+                    if (QNetworkReply::NetworkError::NoError != pushLog(logObj)) {
+                        qCWarning(logTAS) << "Try push rate log again, left retry:" << nCount;
+                    } else {
+                        break;
+                    }
                 }
             }
         }
@@ -87,10 +136,23 @@ int UosSimpleLog::pushLog(const UosLogObject &logObj)
     document.setObject(logTextJson);
 
     const QByteArray &sendData = document.toJson(QJsonDocument::Compact);
+    return sendLog(sendData, logObj.type);
+}
 
+int UosSimpleLog::pushLog(const UosRateLog &logObj)
+{
+    QJsonDocument document;
+    document.setObject(toJson(logObj));
+
+    const QByteArray &sendData = document.toJson(QJsonDocument::Compact);
+    return sendLog(sendData, logObj.type);
+}
+
+int UosSimpleLog::sendLog(const QByteArray &sendData, UosLogType logType)
+{
     QSharedPointer<HttpAccessmanager> httpAccessManager
         = QSharedPointer<HttpAccessmanager>(new HttpAccessmanager(""));
-    QNetworkRequest req = httpAccessManager->baseNetWorkRequest(QUrl(hostUrl(logObj.type)));
+    QNetworkRequest req = httpAccessManager->baseNetWorkRequest(QUrl(hostUrl(logType)));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
     QNetworkReply *reply = httpAccessManager->post(req, sendData);
 
@@ -135,8 +197,7 @@ int UosSimpleLog::pushLog(const UosLogObject &logObj)
         }
     }
     if (netReplyError != QNetworkReply::NetworkError::NoError) {
-        qWarning() << "push log failed: \n\tReq: " << sendData.toStdString().c_str()
-                   << " \n\tResp: " << loop.getHttpResult().toStdString().c_str();
+        qCWarning(logTAS) << "Push log failed, type:" << logType << ", req size:" << sendData.size() << ", resp:" << loop.getHttpResult();
     }
 
     return netReplyError;
@@ -181,6 +242,7 @@ void UosSimpleLog::initServerAddress()
     serverUrls = {
         {UosLogType::UserInput, apiAddress + "/saveAiModel"},
         {UosLogType::FailedRetry, apiAddress + "/saveRetryRecord"},
-        {UosLogType::TextToImageResult, apiAddress + "/saveModelResult"}
+        {UosLogType::TextToImageResult, apiAddress + "/saveModelResult"},
+        {UosLogType::AnwserRate, apiAddress + "/saveAiModelLikes"}
     };
 }

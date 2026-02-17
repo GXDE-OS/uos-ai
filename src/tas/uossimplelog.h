@@ -18,6 +18,9 @@ public:
 
     void addLog(const UosLogObject &logObj);
 
+    void addRateLog(const UosRateLog &logObj);
+    static QJsonObject toJson(const UosRateLog &logObj);
+
 protected:
     void run() override ;
 
@@ -25,7 +28,9 @@ private:
     UosSimpleLog(QObject *parent = nullptr);
 
     int pushLog(const UosLogObject &logObj);
+    int pushLog(const UosRateLog &logObj);
 
+    int sendLog(const QByteArray &sendData, UosLogType logType);
     QString simplifiedText(const QString &content);
 
     QString hostUrl(UosLogType type = UosLogType::UserInput) const;
@@ -34,6 +39,7 @@ private:
 
 private:
     TLockFreeQueue<UosLogObject> m_preLogObjectQueue;
+    TLockFreeQueue<UosRateLog> m_preRateLogQueue;
 
     QMutex m_mutex;
 

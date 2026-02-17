@@ -8,7 +8,7 @@ class AppSocketServer : public QObject
 {
     Q_OBJECT
 public:
-    explicit AppSocketServer(const QString &id, QObject *parent = nullptr);
+    explicit AppSocketServer(const QString &id, bool noJson = false, QObject *parent = nullptr);
     ~AppSocketServer();
 
 public:
@@ -23,6 +23,10 @@ public:
      * @return
      */
     qint64 sendWrittenBytes();
+
+    inline bool outputWithJson() const {
+        return !m_noJson;
+    }
 
 public slots:
     /**
@@ -51,6 +55,7 @@ private:
     qint64 m_bytesWritten = 0;
     QLocalServer *m_localServer = nullptr;
     QString m_serverName;
+    bool m_noJson = false;
 };
 
 #endif // APPSOCKETSERVER_H

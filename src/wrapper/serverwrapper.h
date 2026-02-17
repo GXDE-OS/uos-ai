@@ -2,13 +2,18 @@
 #define SERVERWRAPPER_H
 
 #include "serverdefs.h"
-#include "compliance/aiassistantsubstitute.h"
+#include "audioaiassistant.h"
 
 #include <QSharedPointer>
 #include <QJsonArray>
 
 class Session;
 class DBusInterface;
+
+UOSAI_BEGIN_NAMESPACE
+class ChatDBusInterface;
+UOSAI_END_NAMESPACE
+
 class ServerWrapper : public QObject
 {
     Q_OBJECT
@@ -17,11 +22,30 @@ public:
     static ServerWrapper *instance();
 
 signals:
-    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false);
+    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString & locateTitle = "");
 
     void sigToLaunchChat(int);
 
     void sigToLaunchAbout();
+
+    void sigToLaunchWordWizard();
+
+    void sigInputPrompt(const QString &question, const QMap<QString, QString> &params);
+
+    void sigAppendPrompt(const QString &question);
+
+    void sigAddKnowledgeBase(const QStringList &file);
+
+    void sigToTranslate();
+
+    void sigToStartScreenshot();
+
+    void sigToLaunchAiQuickOCR(int type, QString query, QPoint pos, bool isCustom, const QString &imagePath);
+
+    void sigToUploadImage(const QString &imagePath);
+
+    void sigToLaunchGetFreeAccountDlg();
+
 public:
     /**
      * @brief registerService
@@ -69,8 +93,9 @@ public:
     static QPair<int, QString> verify(const LLMServerProxy &serverProxy);
 private:
     QSharedPointer<DBusInterface> m_copilotDbusObject;
+    QSharedPointer<UOSAI_NAMESPACE::ChatDBusInterface> m_chatDbusObject;
     QSharedPointer<Session> m_copilotSeesion;
-    UOSAI_NAMESPACE::AiassistantSubstitute *m_aiassistant = nullptr;
+    UOSAI_NAMESPACE::AudioAiassistant *m_audioAiassistant = nullptr;
 };
 
 #endif // SERVERWRAPPER_H

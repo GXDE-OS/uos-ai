@@ -48,8 +48,11 @@ signals:
 
     void sigVoiceConversationStatusChanged(int status);
 
+    void sigChatInitFinished();
+
 public slots:
     void updateVoiceConversationStatus(int status);
+    void chatInitFinished();
 
 private:
     QString m_sceneType;

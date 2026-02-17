@@ -97,7 +97,12 @@ void EChatButton::mouseReleaseEvent(QMouseEvent *e)
     update();
     return DIconButton::mouseReleaseEvent(e);
 }
+
+#ifdef COMPILE_ON_QT6
+void EChatButton::enterEvent(QEnterEvent *event)
+#else
 void EChatButton::enterEvent(QEvent *event)
+#endif
 {
     m_isHover = true;
     update();

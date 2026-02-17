@@ -6,12 +6,10 @@ TtsServer::TtsServer(const QString &id, QObject *parent)
     : QObject(parent)
     , m_id(id)
 {
-
 }
 
 TtsServer::~TtsServer()
 {
-
 }
 
 QString TtsServer::id() const
@@ -55,6 +53,5 @@ QStringList TtsServer::splitString(const QString &inputString)
     if (!chunk.isEmpty()) {
         results << chunk;
     }
-
     return results;
 }

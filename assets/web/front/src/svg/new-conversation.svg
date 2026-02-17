@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="v2.7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-126, -30)">
+            <g id="编组-4备份-2" transform="translate(118, 22)">
+                <g id="编组-3备份" transform="translate(8, 8)">
+                    <rect id="矩形备份-4" x="0" y="0" width="20" height="20"></rect>
+                    <g id="chat-new-line" transform="translate(3, 2.5)" fill-rule="nonzero">
+                        <path d="M8.5,1.5 L8.5,2.5 L1,2.5 L1,11.631 L2.4452998,10.6679497 L2.69722436,10.5 L12,10.5 L12,5.5 L13,5.5 L13,10.5 C13,11.0522847 12.5522847,11.5 12,11.5 L3,11.5 L0,13.5 L0,2.5 C0,1.94771525 0.44771525,1.5 1,1.5 L8.5,1.5 Z M12.5,0 L12.5,1.5 L14,1.5 L14,2.5 L12.5,2.5 L12.5,4 L11.5,4 L11.5,2.5 L10,2.5 L10,1.5 L11.5,1.5 L11.5,0 L12.5,0 Z" id="形状结合" fill="currentColor"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

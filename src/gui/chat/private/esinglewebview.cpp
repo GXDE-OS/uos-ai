@@ -1,17 +1,39 @@
 #include "esinglewebview.h"
 #include "esinglewebview_p.h"
 
+#include <DGuiApplicationHelper>
+#include <DPalette>
+#include <DFileIconProvider>
+
 #include <QProcess>
 #include <QDesktopServices>
 #include <QJsonDocument>
 #include <QWheelEvent>
 #include <QWebChannel>
-#include <DGuiApplicationHelper>
-#include <DPalette>
+#include <QDropEvent>
+#include <QMimeData>
+#include <QBuffer>
+#include <QLoggingCategory>
+
+#ifdef COMPILE_ON_QT6
+#include <QWebEngineUrlScheme>
+#endif
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
+
+DWIDGET_USE_NAMESPACE
 
 ESingleWebView::ESingleWebView(QWidget *parent)
     : QWebEngineView(parent)
 {
+#ifdef COMPILE_ON_QT6
+    //解决qt6浏览器跨域问题
+    QWebEngineUrlScheme qrcSchema(QByteArrayLiteral("qrc"));
+    qrcSchema.setFlags(QWebEngineUrlScheme::ViewSourceAllowed|QWebEngineUrlScheme::LocalAccessAllowed);
+    QWebEngineUrlScheme::registerScheme(qrcSchema);
+    qCDebug(logAIGUI) << "Registered QRC URL scheme for Qt6";
+#endif
+
     setContextMenuPolicy(Qt::NoContextMenu);
     connect(this, &QWebEngineView::loadFinished, this, &ESingleWebView::onLoadFinished);
 
@@ -21,6 +43,7 @@ ESingleWebView::ESingleWebView(QWidget *parent)
     m_chat = new ESingleWebChat("", this);
 
     connect(m_chat, &ESingleWebChat::sigVoiceConversationStatusChanged, this, &ESingleWebView::voiceConversationStatusChanged);
+    connect(m_chat, &ESingleWebChat::sigChatInitFinished, this, &ESingleWebView::onChatInitFinished);
 }
 
 ESingleWebView::~ESingleWebView()
@@ -64,8 +87,11 @@ void ESingleWebView::setToDigitalMode()
 
 void ESingleWebView::setToChatMode()
 {
-    if (m_loadFinished)
+    if (m_loadFinished) {
+        qCDebug(logAIGUI) << "Switching to chat mode";
+        m_chatInitFinished = false;
         emit m_chat->sigChatModeActive();
+    }
 }
 
 void ESingleWebView::addPendingTask(Task task)
@@ -85,6 +111,7 @@ void ESingleWebView::setWindowActiveState(bool isActive)
 
 void ESingleWebView::updateFont(const QString &fontFamily, int pixelSize)
 {
+    qCDebug(logAIGUI) << "Updating font - family:" << fontFamily << "size:" << pixelSize;
     if (this->m_chat) {
         m_chat->setFontInfo(fontFamily, pixelSize);
     }
@@ -92,27 +119,42 @@ void ESingleWebView::updateFont(const QString &fontFamily, int pixelSize)
 
 void ESingleWebView::setWindowMode(bool isWindowMode)
 {
+    qCDebug(logAIGUI) << "Setting window mode:" << isWindowMode;
     if (this->m_chat) {
         m_chat->setWindowMode(isWindowMode);
         emit m_chat->sigWindowModeChanged(isWindowMode);
     }
 }
 
+bool ESingleWebView::chatInitFinished()
+{
+    return m_chatInitFinished;
+}
+
 void ESingleWebView::onLoadFinished(bool)
 {
+    qCInfo(logAIGUI) << "Web page load finished";
     m_loadFinished = true;
 
     for (int task : m_tasks) {
         switch (task) {
         case SwitchDigitalMode:
+            qCDebug(logAIGUI) << "Executing pending digital mode switch";
             setToDigitalMode();
             break;
         default:
+            qCDebug(logAIGUI) << "Unknown pending task:" << task;
             break;
         }
     }
 
     m_tasks.clear();
+}
+
+void ESingleWebView::onChatInitFinished()
+{
+    m_chatInitFinished = true;
+    emit sigChatInitFinished();
 }
 
 bool ESingleWebView::event(QEvent *e)
@@ -138,12 +180,31 @@ bool ESingleWebView::eventFilter(QObject *obj, QEvent *ev)
     case QEvent::FocusOut:
         setWebViewFocusOut();
         break;
+    case QEvent::Wheel: {
+        QWheelEvent* wheelEvent = static_cast<QWheelEvent*>(ev);
+        if (wheelEvent->modifiers() & Qt::ControlModifier) {
+            // 拦截Ctrl+滚轮事件，阻止缩放
+            return true;
+        }
+        break;
+    }
     default:
         break;
     }
     return QWebEngineView::eventFilter(obj, ev);
 }
 
+void ESingleWebView::dropEvent(QDropEvent *event)
+{
+    QList<QUrl> urls = event->mimeData()->urls();
+
+    QStringList dragInPaths;
+    for (auto url : urls) {
+        dragInPaths << url.path();
+    }
+
+    emit docSummaryDragInView(dragInPaths);
+}
 
 ESingleWebPage::ESingleWebPage(QObject *parent): QWebEnginePage(parent)
 {
@@ -171,6 +232,12 @@ ESingleWebChat::ESingleWebChat(const QString &scene, ESingleWebView *view)
 
 void ESingleWebChat::updateVoiceConversationStatus(int status)
 {
-    qDebug() << "update voice conversation status, status: " << status;
+    qCDebug(logAIGUI) << "Updating voice conversation status:" << status;
     emit sigVoiceConversationStatusChanged(status);
+}
+
+void ESingleWebChat::chatInitFinished()
+{
+    qCInfo(logAIGUI) << "Chat initialization completed";
+    emit sigChatInitFinished();
 }

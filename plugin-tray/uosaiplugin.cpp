@@ -9,10 +9,13 @@
 #include <QIcon>
 #include <QtDBus>
 #include <QPainter>
+#include <QLoggingCategory>
 
 DGUI_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
 using namespace uos_ai;
+
+Q_LOGGING_CATEGORY(logTray, "uosai.tray")
 
 #define QUICK_ITEM_KEY QStringLiteral("quick_item_key")
 #define PLUGIN_STATE_KEY "enable"
@@ -40,6 +43,7 @@ UosAiPlugin::UosAiPlugin(QObject *parent)
 
 void UosAiPlugin::changeTheme()
 {
+    qCDebug(logTray) << "Theme changed, updating tips label palette";
     QPalette pa = m_tipsLabel->palette();
     pa.setBrush(QPalette::WindowText, pa.brightText());
     m_tipsLabel->setPalette(pa);
@@ -57,11 +61,7 @@ const QString UosAiPlugin::pluginDisplayName() const
 
 QWidget *UosAiPlugin::itemWidget(const QString &itemKey)
 {
-#ifdef USE_V23_DOCK
-    if (itemKey == QUICK_ITEM_KEY)
-        return m_quickWidget.data();
-#endif
-
+    Q_UNUSED(itemKey);
     return m_itemWidget;
 }
 
@@ -73,13 +73,14 @@ QWidget *UosAiPlugin::itemTipsWidget(const QString &itemKey)
 
     m_tipsLabel->setText(text);
     const QFontMetrics &metrics = m_tipsLabel->fontMetrics();
-    m_tipsLabel->setFixedSize(metrics.width(text) + 20, metrics.boundingRect(text).height());
+    m_tipsLabel->setFixedSize(metrics.horizontalAdvance(text) + 20, metrics.boundingRect(text).height());
 
     return m_tipsLabel;
 }
 
 void UosAiPlugin::init(PluginProxyInterface *proxyInter)
 {
+    qCInfo(logTray) << "Initializing UosAiPlugin";
     QString applicationName = qApp->applicationName();
     qApp->setApplicationName("uos-ai");
     qApp->loadTranslator();
@@ -90,13 +91,11 @@ void UosAiPlugin::init(PluginProxyInterface *proxyInter)
     m_itemWidget = new UosAiWidget;
     m_itemWidget->setAccessibleName("ItemWidget");
 
-#ifdef USE_V23_DOCK
-    if (m_quickWidget.isNull())
-        m_quickWidget.reset(new QuickPanel(pluginDisplayName()));
-#endif
-
     if (!pluginIsDisable()) {
         m_proxyInter->itemAdded(this, pluginName());
+        qCInfo(logTray) << "Plugin item added to dock";
+    } else {
+        qCInfo(logTray) << "Plugin is disabled, not adding to dock";
     }
 }
 
@@ -110,12 +109,17 @@ const QString UosAiPlugin::itemCommand(const QString &itemKey)
         QDBusInterface notification("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", QDBusConnection::sessionBus());
         QString error = notification.call(QDBus::Block, "launchChatPage").errorMessage();
         if (error.isEmpty()) {
+            qCInfo(logTray) << "Launched chat page via DBus";
             return "";
+        } else {
+            qCWarning(logTray) << "Failed to launch chat page via DBus, error:" << error;
         }
     }
 #ifdef COMPILE_ON_V23
+    qCDebug(logTray) << "Returning fallback command: dde-am uos-ai-assistant";
     return "dde-am uos-ai-assistant";
 #else
+    qCDebug(logTray) << "Returning fallback command: uos-ai-assistant --chat";
     return "uos-ai-assistant --chat";
 #endif
 }
@@ -124,13 +128,16 @@ int UosAiPlugin::itemSortKey(const QString &itemKey)
 {
     Dock::DisplayMode mode = displayMode();
     const QString key = QString("pos_%1_%2").arg(itemKey).arg(mode);
-    return m_proxyInter->getValue(this, key, DOCK_DEFAULT_POS).toInt();
+    int sortKey = m_proxyInter->getValue(this, key, DOCK_DEFAULT_POS).toInt();
+    qCDebug(logTray) << "Get item sort key:" << sortKey << ", key:" << key;
+    return sortKey;
 }
 
 void UosAiPlugin::setSortKey(const QString &itemKey, const int order)
 {
     const QString key = QString("pos_%1_%2").arg(itemKey).arg(displayMode());
     m_proxyInter->saveValue(this, key, order);
+    qCDebug(logTray) << "Set item sort key, key:" << key << ", order:" << order;
 }
 
 void UosAiPlugin::pluginStateSwitched()
@@ -140,49 +147,33 @@ void UosAiPlugin::pluginStateSwitched()
 
     if (pluginIsDisable()) {
         m_proxyInter->itemRemoved(this, pluginName());
+        qCInfo(logTray) << "Plugin disabled, item removed from dock";
     } else {
         m_proxyInter->itemAdded(this, pluginName());
+        qCInfo(logTray) << "Plugin enabled, item added to dock";
     }
 }
 
 bool UosAiPlugin::pluginIsDisable()
 {
-    return !m_proxyInter->getValue(this, PLUGIN_STATE_KEY, true).toBool();
+    bool disabled = !m_proxyInter->getValue(this, PLUGIN_STATE_KEY, true).toBool();
+    return disabled;
 }
-
-#ifdef USE_V23_DOCK
-QIcon UosAiPlugin::icon(const DockPart &dockPart, DGuiApplicationHelper::ColorType themeType)
-{
-    QString iconName = "UosAiAssistant";
-    if (dockPart == DockPart::DCCSetting) {
-        QPixmap pixmap = loadSvg(iconName, QSize(18, 18));
-        if (themeType == DGuiApplicationHelper::ColorType::LightType) {
-            return pixmap;
-        } else {
-            QPainter pa(&pixmap);
-            pa.setCompositionMode(QPainter::CompositionMode_SourceIn);
-            pa.fillRect(pixmap.rect(), Qt::white);
-            return pixmap;
-        }
-    }
-    return QIcon();
-}
-#endif
 
 #ifdef USE_DOCK_API_V2
 void UosAiPlugin::onUosAiVisibleChanged(bool visible)
 {
-    qDebug() << "onUosAiVisibleChanged, visible: " << visible;
+    qCInfo(logTray) << "onUosAiVisibleChanged, visible:" << visible;
     if (!m_messageCallback) {
-            qWarning() << "Message callback function is nullptr";
-            return;
-        }
-        QJsonObject msg;
-        msg[Dock::MSG_TYPE] = Dock::MSG_ITEM_ACTIVE_STATE;
-        msg[Dock::MSG_DATA] = visible;
-        QJsonDocument doc;
-        doc.setObject(msg);
-        m_messageCallback(this, doc.toJson());
+        qCWarning(logTray) << "Message callback function is nullptr";
+        return;
+    }
+    QJsonObject msg;
+    msg[Dock::MSG_TYPE] = Dock::MSG_ITEM_ACTIVE_STATE;
+    msg[Dock::MSG_DATA] = visible;
+    QJsonDocument doc;
+    doc.setObject(msg);
+    m_messageCallback(this, doc.toJson());
 }
 #endif
 
@@ -198,7 +189,9 @@ QPixmap UosAiPlugin::loadSvg (QString &iconName, const QSize size, const qreal r
             pixmap = pixmap.scaledToWidth(size.width() * ratio);
         if (pixmap.size().height() > size.height() * ratio)
             pixmap = pixmap.scaledToHeight(size.height() * ratio);
+        qCDebug(logTray) << "Loaded SVG icon:" << iconName;
         return pixmap;
     }
+    qCWarning(logTray) << "Failed to load SVG icon:" << iconName;
     return QPixmap();
 }

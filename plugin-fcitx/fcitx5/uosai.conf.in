@@ -1,0 +1,10 @@
+[Addon]
+Name=uosai plugin
+Type=SharedLibrary
+Library=libuosai
+Category=Frontend
+Version=
+
+[Addon/Dependencies]
+0=dbus
+

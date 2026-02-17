@@ -34,8 +34,9 @@ QString TtsCodeTranslation::serverCodeTranslation(int code, const QString &messa
         return QCoreApplication::translate("TtsCodeTranslation", "Connection failed, please check the fill in information.");
     }
 
-    if (errorMessages().contains(code))
+    if (errorMessages().contains(code)) {
         return errorMessages()[code] + QString("(%1)").arg(message);
+    }
 
     return ServerCodeTranslation::serverCodeTranslation(code, message);
 }

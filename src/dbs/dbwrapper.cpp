@@ -8,16 +8,25 @@
 #include "llmutils.h"
 #include "utils/util.h"
 
-#include <QDebug>
 #include <QJsonDocument>
+#include <QLoggingCategory>
 
 UOSAI_USE_NAMESPACE
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 static QString gVersion = "Version_1_0";
 
 QMap<CopilotDbType, QString> DbWrapper::m_qMapDatabases = {
     {CopilotDbType::COPILOT_BASIC,       QString("basic")},
     {CopilotDbType::COPILOT_CHATINFO,    QString("chatinfo")}
+};
+
+const QSet<AssistantType> DbWrapper::m_allowedTypes = {
+    UOS_AI,
+    AI_WRITING,
+    AI_TEXT_PROCESSING,
+    AI_TRANSLATION
 };
 
 QString DbWrapper::getDatabaseDir()
@@ -60,6 +69,7 @@ int DbWrapper::initialization(const QString &dir)
 
     m_daoClient = &DaoClient::getInstance();
     if (m_daoClient == nullptr) {
+        qCCritical(logDBS) << "Failed to get DaoClient instance";
         return -1;
     }
 
@@ -113,35 +123,41 @@ int DbWrapper::initialization(const QString &dir)
     QString message;
 
     if (!m_daoClient->execSync(strAppInfo, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-        qInfo() << message;
+        qCWarning(logDBS) << "Failed to create app table:" << message;
     }
     if (!m_daoClient->execSync(strLlmInfo, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-        qInfo() << message;
+        qCWarning(logDBS) << "Failed to create llm table:" << message;
     }
     if (!m_daoClient->execSync(strConfigInfo, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-        qInfo() << message;
+        qCWarning(logDBS) << "Failed to create config table:" << message;
     }
     if (!m_daoClient->execSync(strAssistantInfo, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-        qInfo() << message;
+        qCWarning(logDBS) << "Failed to create assistant table:" << message;
     }
-
     if (!m_daoClient->execSync(strAssistantLlmInfo, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-        qInfo() << message;
+        qCWarning(logDBS) << "Failed to create curllm table:" << message;
     }
 
     addColumnIfNotExists("app", "assistantid", "INTEGER"); //添加新列，记录助手id
 
     if (queryAssistantList().isEmpty()) {
+        qCInfo(logDBS) << "Initializing default assistants...";
         initAssistant(); //初始化固定角色信息
+    } else {
+        qCInfo(logDBS) << "Updating existing assistant IDs...";
+        updateOldAssistantId();
+        checkAndAddMissingAssistants();
     }
 
     const auto &version = getVersion();
     if (version.isEmpty()) {
+        qCInfo(logDBS) << "Setting initial version:" << gVersion;
         updateVersion(gVersion);
         updateCopilotTheme("Light");
         updateAICopilot(false);
-        updateUserExpState(0);
-        updateDisplayMode(0); //0:侧边栏模式 1：窗口模式
+        updateThirdPartyMcpAgreement(false);  // 默认不同意使用第三方MCP协议
+        //0:侧边栏模式 1：窗口模式
+        updateDisplayMode(1);
     }
 
     return 0;
@@ -156,7 +172,7 @@ bool DbWrapper::addColumnIfNotExists(const QString &tableName, const QString &co
 
     QString pragma = "PRAGMA table_info(" + tableName + ");";
     if (!m_daoClient->execSync(pragma, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-        qInfo() << message;
+        qCWarning(logDBS) << "Failed to check column existence:" << message;
     } else {
         for (int i = 0; i < result->length(); i++) {
             if (columnName == result->value(i).value("name").toString()) {
@@ -169,8 +185,9 @@ bool DbWrapper::addColumnIfNotExists(const QString &tableName, const QString &co
     if (!columnExists) {
         QString addColumn = "ALTER TABLE " + tableName + " ADD COLUMN " + columnName + " " + dataType + ";";
         if (!m_daoClient->execSync(addColumn, result, message,  m_qMapDatabases[COPILOT_BASIC])) {
-            qInfo() << message;
+            qCWarning(logDBS) << "Failed to add column:" << message;
         } else {
+            qCDebug(logDBS) << "Added column" << columnName << "to table" << tableName;
             success = true;
         }
     }
@@ -180,40 +197,154 @@ bool DbWrapper::addColumnIfNotExists(const QString &tableName, const QString &co
 
 bool DbWrapper::initAssistant()
 {
-    AssistantProxy proxyUosAI, proxySystemAssistant, proxyPerKnowAssistant;
+    AssistantProxy proxyUosAI, proxySystemAssistant, proxyAIWrite, proxyAITextProcessing, proxyAITranslation;
     proxyUosAI.displayName = "UOS AI";
     proxyUosAI.id = Util::generateAssistantUuid(proxyUosAI.displayName);
     proxyUosAI.type = UOS_AI;
-    proxyUosAI.description = "Welcome to UOS AI, the comprehensive assistant of UOS system.";
+    proxyUosAI.description = "System's Comprehensive AI Assistant.";
+
+    // Add AI WordWizard assistant
+    proxyAIWrite.displayName = "AI Writing";
+    proxyAIWrite.id = Util::generateAssistantUuid(proxyAIWrite.displayName);
+    proxyAIWrite.type = AI_WRITING;
+    proxyAIWrite.description = "Write Based on Your Topic and Requirements.";
+
+    proxyAITextProcessing.displayName = "AI Text Processing";
+    proxyAITextProcessing.id = Util::generateAssistantUuid(proxyAITextProcessing.displayName);
+    proxyAITextProcessing.type = AI_TEXT_PROCESSING;
+    proxyAITextProcessing.description = "Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.";
+
+    proxyAITranslation.displayName = "AI Translation";
+    proxyAITranslation.id = Util::generateAssistantUuid(proxyAITranslation.displayName);
+    proxyAITranslation.type = AI_TRANSLATION;
+    proxyAITranslation.description = "Your Translation Assistant, Mastering Multiple Languages.";
 
     if (Util::isCommunity()) {
         proxySystemAssistant.displayName = "Deepin System Assistant";
         proxySystemAssistant.id = Util::generateAssistantUuid(proxySystemAssistant.displayName);
         proxySystemAssistant.type = DEEPIN_SYSTEM_ASSISTANT;
-        proxySystemAssistant.description = "Deepin System Assistant, answering questions related to using the Deepin operating system.";
+        proxySystemAssistant.description = "Assists you with Deepin system-related inquiries";
     } else {
         proxySystemAssistant.displayName = "UOS System Assistant";
         proxySystemAssistant.id = Util::generateAssistantUuid(proxySystemAssistant.displayName);
         proxySystemAssistant.type = UOS_SYSTEM_ASSISTANT;
-        proxySystemAssistant.description = "UOS System Assistant, answering questions related to using the UOS operating system.";
+        proxySystemAssistant.description = "Assists you with UOS system-related inquiries.";
     }
-
+#ifdef ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT
+    AssistantProxy proxyPerKnowAssistant;
     proxyPerKnowAssistant.displayName = "Personal Knowledge Assistant";
     proxyPerKnowAssistant.id = Util::generateAssistantUuid(proxyPerKnowAssistant.displayName);
     proxyPerKnowAssistant.type = PERSONAL_KNOWLEDGE_ASSISTANT;
-    proxyPerKnowAssistant.description = "A personal knowledge assistant who can answer questions and generate content based on your personal file data."
-                                        " You can add or delete knowledge on the Settings - Knowledge Base Management page.";
+    proxyPerKnowAssistant.description = "Answers questions based on your personal knowledge base.";
+#endif
 
     bool ret = appendAssistant(proxyUosAI);
     ret = appendAssistant(proxySystemAssistant);
+#ifdef ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT
     ret = appendAssistant(proxyPerKnowAssistant);
+#endif
+    ret = appendAssistant(proxyAIWrite);
+    ret = appendAssistant(proxyAITextProcessing);
+    ret = appendAssistant(proxyAITranslation);
+
+    if (ret) {
+        qCInfo(logDBS) << "Default assistants initialized successfully";
+    } else {
+        qCWarning(logDBS) << "Failed to initialize some default assistants";
+    }
+    return ret;
+}
+
+bool DbWrapper::updateOldAssistantId()
+{
+    QList<AssistantProxy> assistantList = queryAssistantList();
+    bool ret = true;
+
+    QString uosAiPrefix = Util::generateAssistantUuid("UOS AI") + "_";
+    QString deepinPrefix = Util::generateAssistantUuid("Deepin System Assistant") + "_";
+    QString uosSystemPrefix = Util::generateAssistantUuid("UOS System Assistant") + "_";
+    QString personalPrefix = Util::generateAssistantUuid("Personal Knowledge Assistant") + "_";
+    QString aiWritePrefix = Util::generateAssistantUuid("AI Write") + "_";
+    QString aiTextProcessingPrefix = Util::generateAssistantUuid("AI Text Processing") + "_";
+    QString aiTranslatePrefix = Util::generateAssistantUuid("AI Translate") + "_";
+
+    for (const auto &assistant : assistantList) {
+        QString id = assistant.id;
+        QString newId;
+        
+        if (id.startsWith(uosAiPrefix)) {
+            newId = Util::generateAssistantUuid("UOS AI");
+        } else if (id.startsWith(deepinPrefix)) {
+            newId = Util::generateAssistantUuid("Deepin System Assistant");
+        } else if (id.startsWith(uosSystemPrefix)) {
+            newId = Util::generateAssistantUuid("UOS System Assistant");
+        } else if (id.startsWith(personalPrefix)) {
+            newId = Util::generateAssistantUuid("Personal Knowledge Assistant");
+        } else if (id.startsWith(aiWritePrefix)) {
+            newId = Util::generateAssistantUuid("AI Write");
+        } else if (id.startsWith(aiTextProcessingPrefix)) {
+            newId = Util::generateAssistantUuid("AI Text Processing");
+        } else if (id.startsWith(aiTranslatePrefix)) {
+            newId = Util::generateAssistantUuid("AI Translate");
+        }
+
+        if (!newId.isEmpty()) {
+            AssistantProxy updatedAssistant = assistant;
+            ret = ret && updateAssistantId(updatedAssistant, newId);
+            qCInfo(logDBS) << "Updated assistant ID from" << id << "to" << newId;
+        }
+    }
 
     return ret;
+}
+
+void DbWrapper::checkAndAddMissingAssistants()
+{
+    QList<AssistantProxy> assistantList = queryAssistantList();
+    QSet<AssistantType> existingTypes;
+    for (const auto &assistant : assistantList) {
+        existingTypes.insert(assistant.type);
+    }
+
+    // Define all assistant types in order of their enum values
+    struct AssistantInfo {
+        AssistantType type;
+        QString displayName;
+        QString description;
+    };
+
+    QList<AssistantInfo> allAssistants = {
+        {UOS_AI, "UOS AI", "System's Comprehensive AI Assistant."},
+        {UOS_SYSTEM_ASSISTANT, "UOS System Assistant", "Assists you with UOS system-related inquiries"},
+        {DEEPIN_SYSTEM_ASSISTANT, "Deepin System Assistant", "Assists you with Deepin system-related inquiries"},
+        {PERSONAL_KNOWLEDGE_ASSISTANT, "Personal Knowledge Assistant", "Answers questions based on your personal knowledge base."},
+        {AI_WRITING, "AI Writing", "Write Based on Your Topic and Requirements."},
+        {AI_TEXT_PROCESSING, "AI Text Processing", "Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting."},
+        {AI_TRANSLATION, "AI Translation", "Your Translation Assistant, Mastering Multiple Languages."}
+    };
+
+    for (const auto &info : allAssistants) {
+        // Skip system assistant if it's not the correct type for the current environment
+        if ((info.type == UOS_SYSTEM_ASSISTANT && Util::isCommunity()) ||
+            (info.type == DEEPIN_SYSTEM_ASSISTANT && !Util::isCommunity())) {
+            continue;
+        }
+
+        if (!existingTypes.contains(info.type)) {
+            AssistantProxy proxy;
+            proxy.displayName = info.displayName;
+            proxy.id = Util::generateAssistantUuid(proxy.displayName);
+            proxy.type = info.type;
+            proxy.description = info.description;
+            appendAssistant(proxy);
+        }
+    }
 }
 
 // 大模型表操作
 bool DbWrapper::appendLlm(const LLMServerProxy &llmServerProxy)
 {
+    qCDebug(logDBS) << "Appending new LLM:" << llmServerProxy.name << "id:" << llmServerProxy.id;
     auto llmTable = LlmTable::create(
                         llmServerProxy.id, llmServerProxy.name
                         , static_cast<int>(llmServerProxy.model), "大型语言模型（LLM）"
@@ -224,12 +355,14 @@ bool DbWrapper::appendLlm(const LLMServerProxy &llmServerProxy)
 
 bool DbWrapper::deleteLlm(const QString &lmid)
 {
+    qCDebug(logDBS) << "Deleting LLM:" << lmid;
     auto llmTable = LlmTable::get(lmid);
     return llmTable.remove();
 }
 
 bool DbWrapper::updateLlm(const LLMServerProxy &llmServerProxy)
 {
+    qCDebug(logDBS) << "Updating LLM:" << llmServerProxy.name << "id:" << llmServerProxy.id;
     auto llmObject = LlmTable::get(llmServerProxy.id);
 
     llmObject.setName(llmServerProxy.name);
@@ -259,12 +392,10 @@ QList<LLMServerProxy> DbWrapper::queryLlmList(bool all)
 {
     QList<LLMServerProxy> llmsvList;
     const auto &llmTableList = LlmTable::getAll();
-
     for (const auto &llm : llmTableList) {
         LLMChatModel model = static_cast<LLMChatModel>(llm.type());
 #ifndef QT_DEBUG
-        if (model < LLMChatModel::SPARKDESK && !Util::isGPTEnable()
-                  && !all)
+        if (!all && Util::isGPTSeries(model) && !Util::isGPTEnable())
             continue;
 #endif
 
@@ -308,11 +439,40 @@ bool DbWrapper::updateAssistant(const AssistantProxy &assistantProxy)
     return assistantObject.update();
 }
 
+bool DbWrapper::updateAssistantId(const AssistantProxy &assistantProxy, const QString &newId)
+{
+    // 1. 先删除旧记录
+    if (!deleteAssistant(assistantProxy.id)) {
+        qCWarning(logDBS) << "Failed to delete old assistant record:" << assistantProxy.id;
+        return false;
+    }
+
+    // 2. 创建新记录
+    AssistantProxy newAssistant = assistantProxy;
+    newAssistant.id = newId;
+    
+    if (!appendAssistant(newAssistant)) {
+        qCWarning(logDBS) << "Failed to create new assistant record:" << newId;
+        // 如果创建失败，恢复旧记录
+        appendAssistant(assistantProxy);
+        return false;
+    }
+
+    return true;
+}
+
 AssistantProxy DbWrapper::queryAssistantByid(const QString &assistantId)
 {
     AssistantProxy  assistantProxy;
     auto assistantTable = AssistantTable::get(assistantId);
-
+#ifndef ENABLE_ASSISTANT
+    if (!m_allowedTypes.contains(static_cast<AssistantType>(assistantTable.type())))
+        return assistantProxy;
+#endif
+#ifndef ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT
+    if (assistantTable.type() == AssistantType::PERSONAL_KNOWLEDGE_ASSISTANT)
+        return assistantProxy;
+#endif
     assistantProxy.id = assistantTable.id();
     assistantProxy.displayName = assistantTable.displayName();
     assistantProxy.type = static_cast<AssistantType>(assistantTable.type());
@@ -327,6 +487,14 @@ QList<AssistantProxy> DbWrapper::queryAssistantList(bool all)
     const auto &assistantTableList = AssistantTable::getAll();
 
     for (const auto &assistant : assistantTableList) {
+#ifndef ENABLE_ASSISTANT
+        if (!m_allowedTypes.contains(static_cast<AssistantType>(assistant.type())))
+            continue;
+#endif
+#ifndef ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT
+        if (assistant.type() == AssistantType::PERSONAL_KNOWLEDGE_ASSISTANT)
+            continue;
+#endif
         AssistantProxy  assistantProxy;
         assistantProxy.id = assistant.id();
         assistantProxy.displayName = assistant.displayName();
@@ -335,6 +503,13 @@ QList<AssistantProxy> DbWrapper::queryAssistantList(bool all)
 
         assistantList.append(assistantProxy);
     }
+
+    // Sort the list by assistant type
+    std::sort(assistantList.begin(), assistantList.end(),
+        [](const AssistantProxy &a, const AssistantProxy &b) {
+            return static_cast<int>(a.type) < static_cast<int>(b.type);
+        });
+
     return assistantList;
 }
 
@@ -544,6 +719,27 @@ bool DbWrapper::updateAICopilot(bool isOpen)
     }
 }
 
+bool DbWrapper::getThirdPartyMcpAgreement()
+{
+    auto swit = ConfigTable::get(ConfigTable::CopilotThirdPartyMcp);
+    return (swit.value().toInt() == 1 ? true : false);
+}
+
+bool DbWrapper::updateThirdPartyMcpAgreement(bool isAgree)
+{
+    auto swit = ConfigTable::get(ConfigTable::CopilotThirdPartyMcp);
+    if (swit.id() <= 0) {
+        swit.setName("ThirdPartyMcp");
+        swit.setDesc("");
+        swit.setType(ConfigTable::CopilotThirdPartyMcp);
+        swit.setValue(isAgree ? "1" : "0");
+        return swit.save();
+    } else {
+        swit.setValue(isAgree ? "1" : "0");
+        return swit.update();
+    }
+}
+
 int DbWrapper::getUserExpState()
 {
     auto swit = ConfigTable::get(ConfigTable::CopilotUserExp);
@@ -628,4 +824,91 @@ bool DbWrapper::updateWindowSize(QString size)
         return windowSize.update();
     }
     return true;
+}
+
+QString DbWrapper::getGuideKey()
+{
+    auto guide = ConfigTable::get(ConfigTable::CopilotGuide);
+    return guide.value();
+}
+
+bool DbWrapper::updateGuideKey(const QString &key)
+{
+    auto guide = ConfigTable::get(ConfigTable::CopilotGuide);
+    auto strMode = guide.value();
+    if (guide.id() <= 0) {
+        guide.setName("CopilotGuide");
+        guide.setDesc("");
+        guide.setType(ConfigTable::CopilotGuide);
+        guide.setValue(key);
+        return guide.save();
+    } else if (strMode != key) {
+        guide.setValue(key);
+        return guide.update();
+    }
+
+    return true;
+}
+
+int DbWrapper::getUpdatePromptBits(int startBit, int length)
+{
+    auto guide = ConfigTable::get(ConfigTable::CopilotUpdatePrompt);
+    QString value = guide.value();
+    
+    if (value.isEmpty()) {
+        return 0;
+    }
+
+    bool ok;
+    int binaryData = value.toInt(&ok, 2);
+    if (!ok) {
+        return 0;
+    }
+    
+    int mask = (1 << length) - 1;
+    int result = (binaryData >> startBit) & mask;
+    
+    return result;
+}
+
+bool DbWrapper::updateUpdatePromptBits(int startBit, int length, int value)
+{
+    // 0-1位 快捷键更新弹窗
+    // 2位 智能体更新弹窗
+    // 3位 MCP更新弹窗
+    // 4位 隐私对话更新弹窗
+    auto guide = ConfigTable::get(ConfigTable::CopilotUpdatePrompt);
+    QString currentValue = guide.value();
+    
+    bool ok = false;
+    int binaryData = currentValue.isEmpty() ? 0 : currentValue.toInt(&ok, 2);
+    if (!ok) {
+        binaryData = 0;
+    }
+    int mask = (1 << length) - 1;
+    int clearMask = ~(mask << startBit);
+
+    binaryData = (binaryData & clearMask) | ((value & mask) << startBit);
+
+    QString newValue = QString::number(binaryData, 2);
+    if (guide.id() <= 0) {
+        guide.setName("CopilotUpdatePrompt");
+        guide.setDesc("");
+        guide.setType(ConfigTable::CopilotUpdatePrompt);
+        guide.setValue(newValue);
+        return guide.save();
+    } else {
+        guide.setValue(newValue);
+        return guide.update();
+    }
+}
+
+int DbWrapper::getUpdatePromptBits(UpdatePromptBitType type)
+{
+    return getUpdatePromptBits(getStartBit(type), getLength(type));
+}
+
+bool DbWrapper::updateUpdatePromptBits(UpdatePromptBitType type, int value)
+{
+    return updateUpdatePromptBits(getStartBit(type), getLength(type), value);
 }

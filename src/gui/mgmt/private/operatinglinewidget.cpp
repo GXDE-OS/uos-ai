@@ -1,12 +1,12 @@
 #include "operatinglinewidget.h"
 #include "iconbuttonex.h"
 
-#include <QHBoxLayout>
-#include <QMouseEvent>
-
 #include <DLabel>
 #include <DDialog>
 #include <DGuiApplicationHelper>
+
+#include <QHBoxLayout>
+#include <QMouseEvent>
 
 static constexpr char BIGMODEL[] = "uos-ai-assistant_bigmodel";
 
@@ -36,6 +36,7 @@ void OperatingLineWidget::initUI()
     m_pName->setTextFormat(Qt::PlainText);
     DFontSizeManager::instance()->bind(m_pName, DFontSizeManager::T6, QFont::Medium);
     m_pName->setElideMode(Qt::ElideRight);
+    m_pName->setMinimumWidth(20);
 
     m_pFileSize = new DLabel;
     m_pFileSize->setTextFormat(Qt::PlainText);
@@ -45,6 +46,7 @@ void OperatingLineWidget::initUI()
 
     m_pEditbutton = new IconButtonEx(this);
     m_pEditbutton->setInterruptFilter(true);
+
 
     QHBoxLayout *layout = new QHBoxLayout();
     layout->setContentsMargins(10, 0, 10, 0);
@@ -57,13 +59,15 @@ void OperatingLineWidget::initUI()
     layout->addWidget(m_pEditbutton);
     setLayout(layout);
 
-    setFixedSize(620, 36);
+    setFixedSize(560, 36);
 }
 
 void OperatingLineWidget::initConnect()
 {
     connect(m_pDeleteButton, &DIconButton::clicked, this, &OperatingLineWidget::signalDeleteButtonClicked);
-    connect(m_pEditbutton, &IconButtonEx::clicked, this, &OperatingLineWidget::signalNotDeleteButtonClicked);
+    connect(m_pEditbutton, &IconButtonEx::clicked, this, [=](){
+        emit signalNotDeleteButtonClicked("");
+    });
 }
 
 void OperatingLineWidget::setEditMode(bool edit)
@@ -114,12 +118,21 @@ bool OperatingLineWidget::eventFilter(QObject *obj, QEvent *event)
     if (event->type() == QEvent::MouseButtonPress && !m_bInterrupt) {
         auto mouseEvent = dynamic_cast<QMouseEvent *>(event);
         if (mouseEvent->button() == Qt::LeftButton) {
-            emit signalNotDeleteButtonClicked();
+            QString btn;
+            if (auto self = dynamic_cast<OperatingLineWidget *>(obj)) {
+                QRect retryRect = m_pEditbutton->getTipsIcon()->geometry();
+                QPoint pressPos = m_pEditbutton->mapFrom(self, mouseEvent->pos());
+                if (retryRect.contains(pressPos))
+                    btn = "tipsIcon";
+            }
+
+            emit signalNotDeleteButtonClicked(btn);
         }
     }
 
     return DWidget::eventFilter(obj, event);
 }
+
 
 void OperatingLineWidget::setInterruptFilter(bool interrupt)
 {
@@ -136,20 +149,30 @@ void OperatingLineWidget::setTipsIcon(const QString &iconName)
     m_pEditbutton->setTipsIcon(iconName);
 }
 
+void OperatingLineWidget::setBookIcon()
+{
+    m_pModelButton->setIcon(QIcon::fromTheme("book"));
+    m_pModelButton->setIconSize(QSize(16, 16));
+}
+
 void OperatingLineWidget::setFileSize(qint64 bytes)
 {
     m_fileSize = bytes;
 
     QString str = "";
-
-    if (bytes < 1024)
-        str = QString("%1B").arg(bytes);
-    else if (bytes < 1024 * 1024)
+    if (bytes < 1024 * 1024)
         str =  QString("%1KB").arg(bytes / 1024.0, 0, 'f', 1);
     else if (bytes < 1024 * 1024 * 1024)
         str =  QString("%1MB").arg(bytes / (1024.0 * 1024.0), 0, 'f', 1);
-    else
-        str =  QString("%1GB").arg(bytes / (1024.0 * 1024.0 * 1024.0), 0, 'f', 1);
+
+    //正则表达去掉小数点后为.0的情况
+    QRegularExpression regExp(R"(\.0(?=[kmBKMG]))");
+    QRegularExpressionMatch match = regExp.match(str);
+
+    if (match.hasMatch()) {
+        // 替换掉匹配的 ".0" 部分
+        str.replace(match.captured(0), "");
+    }
 
     m_pFileSize->setText(str);
 }

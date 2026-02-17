@@ -2,7 +2,9 @@
 #include "objects/curllmobject.h"
 #include "daoclient.h"
 
-#include <QDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 CurLlmTable::CurLlmTable()
     : d(new CurLlmObject())
@@ -61,7 +63,7 @@ bool CurLlmTable::save()
     , {}, { {"assistantid", assistantTd()}, {"llmid", llmId()} }, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to save current LLM:" << "assistantId:" << assistantTd() << "llmId:" << llmId() << "error:" << msg;
     }
     return false;
 }
@@ -75,7 +77,7 @@ bool CurLlmTable::update()
     , {{"llmid", llmId()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to update current LLM:" << "assistantId:" << assistantTd() << "llmId:" << llmId() << "error:" << msg;
     }
     return false;
 }
@@ -88,7 +90,7 @@ bool CurLlmTable::remove()
     "DELETE FROM curllm WHERE assistantid=:assistantid ;", {{"assistantid", assistantTd()}}, {}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to remove current LLM:" << "assistantId:" << assistantTd() << "error:" << msg;
     }
     return false;
 }
@@ -117,9 +119,11 @@ CurLlmTable CurLlmTable::get(const QString &assistantId)
             auto obj = CurLlmTable::create(
                            item.value("assistantid").toString(), item.value("llmid").toString());
             return obj;
+        } else {
+            qCDebug(logDBS) << "Current LLM not found:" << "assistantId:" << assistantId;
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get current LLM:" << "assistantId:" << assistantId << "error:" << msg;
     }
     return CurLlmTable {};
 }
@@ -140,9 +144,10 @@ QList<CurLlmTable> CurLlmTable::getAll()
                 auto obj = CurLlmTable::create(iter.value("assistantid").toString(), iter.value("llmid").toString());
                 llmList.append(obj);
             }
+            qCDebug(logDBS) << "Retrieved" << llmList.size() << "current LLMs successfully";
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get all current LLMs, error:" << msg;
     }
     return llmList;
 }

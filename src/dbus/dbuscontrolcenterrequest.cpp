@@ -1,5 +1,6 @@
 #include "dbuscontrolcenterrequest.h"
-#include <QDebug>
+
+#include <QLoggingCategory>
 
 #ifdef COMPILE_ON_V23
 #define CONTROL_CENTER_SERVICE      "org.deepin.dde.ControlCenter1"
@@ -10,6 +11,8 @@
 #define CONTROL_CENTER_PATH         "/com/deepin/dde/ControlCenter"
 #define CONTROL_CENTER_INTERFACE    "com.deepin.dde.ControlCenter"
 #endif
+
+Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 DbusControlCenterRequest::DbusControlCenterRequest(QObject *parent)
     : DbusRequestBase(CONTROL_CENTER_SERVICE, CONTROL_CENTER_PATH, CONTROL_CENTER_INTERFACE, QDBusConnection::sessionBus(), parent)
@@ -30,7 +33,8 @@ void DbusControlCenterRequest::showPage(const QString &page)
 void DbusControlCenterRequest::slotCallFinished(CDBusPendingCallWatcher *call)
 {
     if (call->isError()) {
-        qWarning() << call->reply().member() << call->error().message();
+        qCWarning(logDBus) << "Control center call failed - method:" << call->reply().member() 
+                          << "error:" << call->error().message();
     }
 
     call->deleteLater();

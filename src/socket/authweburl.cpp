@@ -1,10 +1,14 @@
 #include "authweburl.h"
 
+#include <QLoggingCategory>
 #include <QWebSocket>
 #include <QUrlQuery>
 #include <QMessageAuthenticationCode>
 
-QString generateRFC1123Timestamp()
+
+Q_DECLARE_LOGGING_CATEGORY(logHttp)
+
+static QString generateRFC1123Timestamp()
 {
     const QString weekdayName[] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
     const QString monthName[] = {"", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
@@ -36,6 +40,7 @@ QSharedPointer<QWebSocket> AuthWebUrl::webSocket(const SocketProxy &socketProxy)
     websocket->ignoreSslErrors(); // Ignore SSL errors, use with caution
 
     if (socketProxy.socketProxyType == SocketProxyType::HTTP_PROXY || socketProxy.socketProxyType == SocketProxyType::SOCKET_PROXY) {
+        qCDebug(logHttp) << "Setting up explicit proxy configuration" << socketProxy.socketProxyType;
         static const QMap<SocketProxyType, QNetworkProxy::ProxyType> proxyType = {
             {SocketProxyType::HTTP_PROXY, QNetworkProxy::HttpProxy},
             {SocketProxyType::SOCKET_PROXY, QNetworkProxy::Socks5Proxy}
@@ -48,14 +53,16 @@ QSharedPointer<QWebSocket> AuthWebUrl::webSocket(const SocketProxy &socketProxy)
         proxy.setUser(socketProxy.user);
         proxy.setPassword(socketProxy.pass);
         websocket->setProxy(proxy);
+        qCInfo(logHttp) << "Configured proxy:" << socketProxy.host << ":" << socketProxy.port;
     } else if (socketProxy.socketProxyType == SocketProxyType::SYSTEM_PROXY) {
+        qCDebug(logHttp) << "Using system proxy settings";
         QNetworkProxyQuery query = QNetworkProxyQuery(socketProxy.host, socketProxy.port, "socket", QNetworkProxyQuery::TcpSocket);
         QList<QNetworkProxy> proxySettingsList = QNetworkProxyFactory::systemProxyForQuery(query);
 
         QNetworkProxy setting;
         Q_FOREACH (setting, proxySettingsList) {
             if (!setting.hostName().isEmpty() && setting.capabilities().testFlag(QNetworkProxy::TunnelingCapability)) {
-                qInfo() << "system proxy = " << setting.type() << setting.hostName() << setting.port();
+                qCInfo(logHttp) << "Using system proxy:" << setting.type() << setting.hostName() << setting.port();
                 websocket->setProxy(setting);
                 break;
             }

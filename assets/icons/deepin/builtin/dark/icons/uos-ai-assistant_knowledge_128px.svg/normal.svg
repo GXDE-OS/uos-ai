@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="AI随航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-34, -204)">
+            <g id="编组" transform="translate(26, 196)">
+                <rect id="矩形" opacity="0.45421782" x="8" y="8" width="20" height="20"></rect>
+                <g transform="translate(11, 12)" fill="#FFFFFF" fill-opacity="0.7" fill-rule="nonzero" id="形状结合">
+                    <path d="M5,0 C5.59757013,0 6.13392965,0.262073767 6.50041196,0.677554691 C6.86607035,0.262073767 7.40242987,0 8,0 L12,0 C12.5522847,0 13,0.44771525 13,1 L13,11 C13,11.5522847 12.5522847,12 12,12 L7,12 L7,13 L6,13 L6,12 L1,12 C0.44771525,12 0,11.5522847 0,11 L0,1 C0,0.44771525 0.44771525,0 1,0 L5,0 Z M5,1 L1,1 L1,11 L6,11 L6,2 C6,1.44771525 5.55228475,1 5,1 Z M12,1 L8,1 C7.44771525,1 7,1.44771525 7,2 L7,11 L12,11 L12,1 Z M11,5 L11,6 L8,6 L8,5 L11,5 Z M11,3 L11,4 L8,4 L8,3 L11,3 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

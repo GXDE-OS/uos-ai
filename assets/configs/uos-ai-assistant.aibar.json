@@ -1,0 +1,28 @@
+{
+    "magic":"dsg.config.meta",
+    "version":"1.0",
+    "contents":{
+        "enableFileDrag": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"Enable file drag",
+            "name[zh_CN]":"使能文件拖拽",
+            "description":"Enable file drag",
+            "description[zh_CN]":"使能文件拖拽",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "isRecommendShow": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"Recommend show",
+            "name[zh_CN]":"是否显示推荐",
+            "description":"Recommend show",
+            "description[zh_CN]":"是否显示推荐",
+            "permissions":"readwrite",
+            "visibility":"private"
+        }
+    }
+}

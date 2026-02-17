@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="24" viewBox="0 0 48 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Hello按钮深色</title>
+    <rect x="0" y="0" width="48" height="24" rx="4" fill="#0059D2" fill-opacity="0.2"/>
+    <text x="24" y="17" font-family="sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.85">Hello</text>
+</svg>

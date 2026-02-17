@@ -5,7 +5,9 @@
 #include <QMap>
 #include <QRegularExpression>
 #include <QDebug>
+#include <QLoggingCategory>
 
+Q_DECLARE_LOGGING_CATEGORY(logLLM)
 XFConversation::XFConversation()
 {
 
@@ -42,14 +44,13 @@ QPair<int, QJsonObject> XFConversation::parseContentString(const QString &conten
     for (const QString &jsonStr : jsonStringList) {
         QJsonParseError error;
         QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonStr.toUtf8(), &error);
-
         if (error.error != QJsonParseError::NoError) {
-            qWarning() << "XFConversation JSON parsing error:" << jsonStr;
+            qCWarning(logLLM) << "XFConversation JSON parsing error:" << error.errorString();
             return QPair<int, QJsonObject>(0, QJsonObject());
         }
 
         if (!jsonDoc.isObject()) {
-            qWarning() << "XFConversation JSON is not an object." << jsonStr;
+            qCWarning(logLLM) << "XFConversation JSON is not an object." << jsonStr;
             return QPair<int, QJsonObject>(0, QJsonObject());
         }
 
@@ -57,7 +58,7 @@ QPair<int, QJsonObject> XFConversation::parseContentString(const QString &conten
         QJsonObject header = jsonObject["header"].toObject();
         int code = header["code"].toInt();
         if (code != 0) {
-            qWarning() << "请求错误:" << code << "," << jsonObject;
+            qCWarning(logLLM) << "XFConversation Request error:" << code << header["message"].toString();
             QString errorMessage = jsonStr;
             if (header.contains("message")) {
                 errorMessage = XFCodeTranslation::serverCodeTranslation(code, header.value("message").toString());

@@ -11,6 +11,7 @@ class LLMThreadTaskMana : public QObject
     Q_OBJECT
 public:
     LLMThreadTaskMana();
+    ~LLMThreadTaskMana();
     static LLMThreadTaskMana *instance();
 
 public:

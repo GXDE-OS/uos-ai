@@ -2,6 +2,9 @@
 #include "dbwrapper.h"
 
 #include <QApplication>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 ModifyModelDialog::ModifyModelDialog(const LLMServerProxy &data, DWidget *parent)
     : DAbstractDialog(parent)
@@ -153,16 +156,19 @@ ModifyModelDialog::ModifyModelDialog(const LLMServerProxy &data, DWidget *parent
     setLayout(mainLayout);
 
     connect(cancelButton, &DPushButton::clicked, this, [this]() {
+        qCInfo(logAIGUI) << "User canceled model modification";
         this->reject();
     });
 
     connect(m_pSubmitButton, &DPushButton::clicked, this, [this]() {
         if (isNameDuplicate(DbWrapper::localDbWrapper().queryLlmList(true))) {
+            qCWarning(logAIGUI) << "Duplicate model name detected:" << m_pNameLineEdit->text();
             return;
         }
-
+        qCInfo(logAIGUI) << "User confirmed model modification with name:" << m_pNameLineEdit->text();
         this->accept();
     });
+
     connect(m_pNameLineEdit, &DLineEdit::textChanged, this, &ModifyModelDialog::onNameTextChanged);
     connect(m_pNameLineEdit, &DLineEdit::alertChanged, this, &ModifyModelDialog::onNameAlertChanged);
     connect(QApplication::instance(), SIGNAL(fontChanged(const QFont &)), this, SLOT(onUpdateSystemFont(const QFont &)));
@@ -194,7 +200,7 @@ void ModifyModelDialog::updateContexts(const LLMChatModel &model)
     }
 
     // custom model
-    if (model == OPENAI_API_COMPATIBLE) {
+    if (model == OPENAI_API_COMPATIBLE || model == PRIVATE_MODEL || model == OPENROUTER_MODEL) {
         m_pContextLayout->itemAtPosition(5, 0)->widget()->show();
         m_pContextLayout->itemAtPosition(5, 1)->widget()->show();
         m_pContextLayout->itemAtPosition(6, 0)->widget()->show();
@@ -218,13 +224,14 @@ void ModifyModelDialog::updateContexts(const LLMChatModel &model)
 
 void ModifyModelDialog::setData(const LLMServerProxy &data)
 {
+    qCDebug(logAIGUI) << "Setting model data for:" << data.name << "type:" << data.model;
     m_pModelLabel->setText(LLMServerProxy::llmName(data.model, !data.url.isEmpty()));
     if (m_threeKeyComboxIndex.contains(data.model)) {
         m_pAppIdLabel->setText(getDesensitivity(data.account.appId));
         m_pApiSecretLabel->setText(getDesensitivity(data.account.apiSecret));
     }
 
-    if (data.model == LLMChatModel::OPENAI_API_COMPATIBLE) {
+    if (data.model == LLMChatModel::OPENAI_API_COMPATIBLE || data.model == LLMChatModel::PRIVATE_MODEL || data.model == LLMChatModel::OPENROUTER_MODEL) {
         m_pApiModelLabel->setText(data.ext.value(LLM_EXTKEY_VENDOR_MODEL).toString());
         m_pApiUrlLabel->setText(data.ext.value(LLM_EXTKEY_VENDOR_URL).toString());
     }
@@ -276,13 +283,20 @@ QString ModifyModelDialog::getDesensitivity(const QString &input)
 
 void ModifyModelDialog::onNameTextChanged(const QString &str)
 {
+    QString noEnterText = str;
+    if (noEnterText.contains("\n")) {
+        noEnterText.replace("\n", " ");
+        int cursorPos = m_pNameLineEdit->lineEdit()->cursorPosition();
+        m_pNameLineEdit->setText(noEnterText);
+        m_pNameLineEdit->lineEdit()->setCursorPosition(cursorPos);
+    }
     m_pNameLineEdit->setAlert(false);
     m_pNameLineEdit->hideAlertMessage();
 
-    if (str.length() > 20) {
+    if (noEnterText.length() > 20) {
         m_pNameLineEdit->blockSignals(true);
         m_pNameLineEdit->showAlertMessage(tr("No more than 20 characters"));
-        m_pNameLineEdit->setText(str.left(20));
+        m_pNameLineEdit->setText(noEnterText.left(20));
         m_pNameLineEdit->blockSignals(false);
     }
 
@@ -317,6 +331,8 @@ bool ModifyModelDialog::isNameDuplicate(const QList<LLMServerProxy> &llmList) co
 {
     for (auto llm : llmList) {
         if (llm.name.trimmed() == m_pNameLineEdit->text().trimmed() && m_name != m_pNameLineEdit->text().trimmed()) {
+            qCWarning(logAIGUI) << "Duplicate model name detected:" << m_pNameLineEdit->text() 
+                              << "existing name:" << llm.name;
             m_pNameLineEdit->setAlert(true);
             m_pNameLineEdit->showAlertMessage(tr("The account name already exists, please change it"), -1);
             return true;

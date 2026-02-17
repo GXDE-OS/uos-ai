@@ -45,7 +45,8 @@ struct TADetails {
 enum UosLogType {
     UserInput = 1,
     FailedRetry,
-    TextToImageResult
+    TextToImageResult,
+    AnwserRate
 };
 
 struct UosLogObject {
@@ -59,12 +60,39 @@ struct UosLogObject {
     int t2iResult; // 0成功 1失败
 } ;
 
+struct UosRateLog {
+    enum Rate{
+        None = -1,
+        Like = 1,
+        Dislike = 2,
+        Cancle = 3
+    };
+
+    UosLogType type;  // 日志类型
+    QString question;
+    QString answer;
+    QString questionTime;
+    QString answerTime;
+    QString llm;
+    QString app;
+    QString modelType;
+    QString assistantName;
+    Rate likeOrNot = None;
+};
+
 struct UosFreeAccountActivity {
     QString buttonNameChina;  // 按钮名称中文
     QString buttonNameEnglish; // 按钮名称英文
     QString url; // 跳转的url地址
     int display; // 是否显示 0:隐藏，1:显示
     QString type; // 类型，根据类型判断哪个页面
+    QDateTime startTime; // 开始时间
+    QDateTime endTime; // 结束时间
+};
+
+struct UosFreeModelActivity {
+    int type; // 模型类型：deepseek 81, 百度千帆 20
+    bool inActivityPeriod; // 账号是否免费发放活动期间 true：该大模型免费账号发放中；false：该大模型免费账号活动结束
     QDateTime startTime; // 开始时间
     QDateTime endTime; // 结束时间
 };

@@ -2,7 +2,9 @@
 #include "objects/configobject.h"
 #include "daoclient.h"
 
-#include <QDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 ConfigTable::ConfigTable()
     : DbBase()
@@ -93,7 +95,7 @@ bool ConfigTable::save()
     , {{"name", name()}, {"type", type()}, {"desc", desc()}, {"value", value()}}, result, msg, "basic")) {
         return true;
     } else {
-        qWarning() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to save config:" << name() << "type:" << type() << "error:" << msg;
     }
     return false;
 }
@@ -107,7 +109,7 @@ bool ConfigTable::update()
     , {{"name", name()}, {"desc", desc()}, {"value", value()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to update config:" << name() << "type:" << type() << "error:" << msg;
     }
     return false;
 }
@@ -120,7 +122,7 @@ bool ConfigTable::remove()
     "DELETE FROM config WHERE type=:type;", {{"type", type()}}, {}, result, msg, "basic")) {
         return true;
     } else {
-        qWarning() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to remove config:" << name() << "type:" << type() << "error:" << msg;
     }
     return false;
 }
@@ -141,7 +143,7 @@ ConfigTable  ConfigTable::create(int id, const QString &name, int type, const QS
     return ConfigTable(obj);
 }
 
-ConfigTable  ConfigTable::get(int type)
+ConfigTable ConfigTable::get(int type)
 {
     DaoResultListPtr result = nullptr;
     QString msg;
@@ -153,16 +155,17 @@ ConfigTable  ConfigTable::get(int type)
                            item.value("id").toInt(), item.value("name").toString(), item.value("type").toInt(), item.value("desc").toString()
                            , item.value("value").toString());
             return obj;
+        } else {
+            qCDebug(logDBS) << "Config not found for type:" << type;
         }
     } else {
-        qWarning() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get config for type:" << type << "error:" << msg;
     }
     return ConfigTable {};
 }
 
 QList<ConfigTable> ConfigTable::getAll()
 {
-
     QList<ConfigTable> confgList;
     DaoResultListPtr result = nullptr;
     QString msg;
@@ -176,7 +179,7 @@ QList<ConfigTable> ConfigTable::getAll()
             }
         }
     } else {
-        qWarning() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get all configs, error:" << msg;
     }
     return confgList;
 }

@@ -1,14 +1,17 @@
+#include <unistd.h>
+#include <glib.h>
+#include <gio/gio.h>
+
 #include "atspidesktop.h"
 #include "util.h"
 
 #include <QDebug>
-#include <QTextCodec>
 #include <QMutexLocker>
 #include <QApplication>
 #include <QtConcurrent>
 
-#include <unistd.h>
-#include <glib/garray.h>
+#include <QLoggingCategory>
+Q_DECLARE_LOGGING_CATEGORY(logUtils)
 
 UOSAI_USE_NAMESPACE
 
@@ -66,6 +69,7 @@ bool AtspiDesktop::atspiInsertText(const QString &textContext, const int &pgstyp
     Q_UNUSED(finish);
     if(!m_AtspiEditableText || !m_AtspiText)
     {
+        qCWarning(logUtils) << "Text interface not available";
         return false;
     }
 
@@ -73,7 +77,7 @@ bool AtspiDesktop::atspiInsertText(const QString &textContext, const int &pgstyp
 
     if(atspiSelectRange->start_offset != atspiSelectRange->end_offset)
     {
-        qDebug() << "iat delete pos:" << atspiSelectRange->start_offset << atspiSelectRange->end_offset;
+        qCDebug(logUtils) << "Deleting selected text from" << atspiSelectRange->start_offset << "to" << atspiSelectRange->end_offset;
         atspi_editable_text_delete_text(m_AtspiEditableText, atspiSelectRange->start_offset, atspiSelectRange->end_offset, nullptr);
     }
 
@@ -93,7 +97,7 @@ bool AtspiDesktop::atspiInsertText(const QString &textContext, const int &pgstyp
         atspi_editable_text_delete_text (m_AtspiEditableText, m_insertCaretOffset, currCaretOffset ,nullptr);
         atspi_text_set_caret_offset(m_AtspiText,m_insertCaretOffset,nullptr);
         doInsertText(textContext);
-        if(ENABLE_ATSPI_DEBUG) qDebug() << "eIatResultType_PgsRpl pgs:" << textContext;
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "eIatResultType_PgsRpl pgs:" << textContext;
     }
 
     return true;
@@ -117,7 +121,7 @@ void AtspiDesktop::onEvent (AtspiEvent *event,void *data)
     int selectedPid = static_cast<int>(atspi_accessible_get_process_id(event->source,nullptr));
 
     if(selectedPid == static_cast<int>(getpid())) {
-        if(ENABLE_ATSPI_DEBUG) qDebug() << "-------AT-SPI  DeepinAIAssistant return ------";
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "AT-SPI DeepinAIAssistant returned";
         atspiEventFree(event);
         return;
     }
@@ -149,7 +153,7 @@ void AtspiDesktop::processEvent(const AtspiEvent *event)
     // 1.当消息为window:deactivate或window:destroy，但上次没有缓存句柄时，不做处理；在一定程度上规避检测进城被关闭偶现异常崩溃问题
     if((strcmp(event->type,"window:deactivate") == 0 ||  strcmp(event->type,"window:destroy") == 0) && m_app_name.isEmpty())
     {
-        if(ENABLE_ATSPI_DEBUG) qDebug() << "----" << event->type << "-----" << __FUNCTION__ << __LINE__;
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "Event type:" << event->type << "Function:" << __FUNCTION__ << __LINE__;
         return;
     }
     // 2.获取当前选中进城句柄
@@ -157,12 +161,12 @@ void AtspiDesktop::processEvent(const AtspiEvent *event)
     gchar* appNameTmp = atspi_accessible_get_name (application, nullptr);
     appName = appNameTmp;
     g_free(appNameTmp);
-    if(ENABLE_ATSPI_DEBUG) qDebug() << "---Enter " + QString(__FUNCTION__) + "---" + \
-       QString(event->type) + "---app(" + appName + ")---m_app(" + m_app_name +")---";
+    if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "Function:" << __FUNCTION__ << "Event type:" << event->type 
+            << "app:" << appName << "m_app:" << m_app_name;
     // 3.失焦或者释放消息事件时，释放上次缓存的选中句柄
     if((strcmp(event->type,"window:deactivate") == 0 ||  strcmp(event->type,"window:destroy") == 0) && appName == m_app_name)
     {
-        if(ENABLE_ATSPI_DEBUG) qDebug() << "---release " + appName + "---";
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "release:" + appName;
         ATSPIFREE(m_AtspiText);
         ATSPIFREE(m_AtspiEditableText);
         m_app_name.clear();
@@ -182,11 +186,11 @@ void AtspiDesktop::processEvent(const AtspiEvent *event)
 
     /* We only care about focus/selection gain */
     if (!event->detail1) {
-        if(ENABLE_ATSPI_DEBUG) qDebug() << " ***[event->detail1 = nullptr]";
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "event->detail1 = nullptr";
         return;
     }
 
-    if(ENABLE_ATSPI_DEBUG) qDebug() << "---type:" << event->type << " app:" << appName  << " appRolename:" << appRoleName << "---";
+    if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "Event type:" << event->type << "app:" << appName << "appRolename:" << appRoleName;
 
     m_lastError.clear();
     m_atspiDebugInfo.clear();
@@ -202,7 +206,7 @@ void AtspiDesktop::processEvent(const AtspiEvent *event)
     if(!m_AtspiText)
     {
         m_lastError = "---init m_AtspiText failed---";
-        if(ENABLE_ATSPI_DEBUG) qDebug() << m_lastError;
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << m_lastError;
         goto end ;
     }
 
@@ -210,14 +214,14 @@ void AtspiDesktop::processEvent(const AtspiEvent *event)
     if(!m_AtspiEditableText)
     {
         m_lastError = "---init m_AtspiEditableText failed---";
-        if(ENABLE_ATSPI_DEBUG) qDebug() << m_lastError;
+        if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << m_lastError;
         goto end ;
     }
 
     widgetRoleNameTmp = atspi_accessible_get_localized_role_name (event->source,nullptr);
     widgetRoleName = widgetRoleNameTmp;
     g_free(widgetRoleNameTmp);
-    if(ENABLE_ATSPI_DEBUG) qDebug() << " ---toolkit_name:" << widgetToolkitName << " windgetRoleName:"<< widgetRoleName ;
+    if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "toolkit_name:" << widgetToolkitName << "windgetRoleName:" << widgetRoleName;
 
     // 6.区分gtk框架程序，动态修正时处理不同
     if(widgetToolkitName.compare("gtk") == 0)
@@ -229,39 +233,45 @@ void AtspiDesktop::processEvent(const AtspiEvent *event)
 
 end:
     m_atspiDebugInfo += "app(" + QString(appName) + ") toolkit(" + widgetToolkitName + ") roleName(" + widgetRoleName + ")";
-    if(ENABLE_ATSPI_DEBUG) qDebug() << " ---------   End init --------- ";
+    if(ENABLE_ATSPI_DEBUG) qCDebug(logUtils) << "End init";
 }
 
 
 void AtspiDesktop::listenerRegister()
 {
-    qDebug() << "enter listener_register";
-    int atspi_status = atspi_init ();
-    qDebug() << "Starting [atspi status " + QString::number(atspi_status) + "]";
-    AtspiEventListener *listener = atspi_event_listener_new (onEvent, this,nullptr);
-    if(listener)
-    {
-        qDebug() << "enter focused:" << atspi_event_listener_register (listener, "object:state-changed:focused", nullptr);
-        qDebug() << "enter deactive:" << atspi_event_listener_register (listener, "window:", nullptr);
-    }
-    else
-    {
-        qDebug() << "enter focused is nullptr";
+    qCInfo(logUtils) << "Registering AT-SPI event listener";
+    int atspi_status = atspi_init();
+
+    if (atspi_status != 0) {
+        qCWarning(logUtils) << "Failed to initialize AT-SPI, status code:" << atspi_status;
+        return;
     }
 
-    atspi_event_main ();
-    qDebug() << "end listener_register atspi_event_main";
+    AtspiEventListener *listener = atspi_event_listener_new(onEvent, this,nullptr);
+    if (listener) {
+        bool ok = atspi_event_listener_register(listener, "object:state-changed:focused", nullptr);
+        if (!ok) {
+            qCWarning(logUtils) << "Failed to register focus change listener";
+        }
+
+        ok = atspi_event_listener_register(listener, "window:", nullptr);
+        if (!ok) {
+            qCWarning(logUtils) << "Failed to register window event listener";
+        }
+
+        atspi_event_main ();
+    } else {
+        qCWarning(logUtils) << "Failed to create AT-SPI event listener";
+    }
 }
 
 void AtspiDesktop::listenerUnRegister()
 {
-    qDebug() << "enter atspi_event_quit atspi_exit ";
+    qCInfo(logUtils) << "Unregistering AT-SPI event listener";
 
     atspi_event_quit ();
 
     atspi_exit ();
-
-    qDebug() << "end  atspi_event_quit atspi_exit ";
 }
 
 void AtspiDesktop::run()
@@ -270,14 +280,28 @@ void AtspiDesktop::run()
     char cmdGsettings[128] = "gsettings set org.gnome.desktop.interface toolkit-accessibility true";
     if(0 == system(cmdGsettings))
     {
-        qDebug() << "exec:[gsettings set org.gnome.desktop.interface toolkit-accessibility true]success";
+        qCDebug(logUtils) << "exec:[gsettings set org.gnome.desktop.interface toolkit-accessibility true]success";
     }
     else
     {
-        qDebug() << "exec gsettings failed";
+        qCDebug(logUtils) << "exec gsettings failed";
     }
 #endif
-    if (Util::isAccessibleEnable())
+
+    const char *schemaid = "org.gnome.desktop.interface";
+    GSettingsSchemaSource *source = g_settings_schema_source_get_default();
+    GSettingsSchema *schema = g_settings_schema_source_lookup(source, schemaid, TRUE);
+    if (!schema)
+        return;
+    g_settings_schema_unref(schema);
+
+    auto settings = g_settings_new(schemaid);
+    GVariant *value = g_settings_get_value(settings, "toolkit-accessibility");
+    bool on = g_variant_get_boolean(value);
+    g_variant_unref(value);
+    g_object_unref(settings);
+
+    if (on)
         listenerRegister();
 }
 
@@ -291,7 +315,8 @@ bool AtspiDesktop::isCaptureTextSuccess()
 {
     if(!m_AtspiText || m_seletedProgramPid != m_textFouceSuccessPid)
     {
-        qDebug() << "m_AtspiText is nullptr or pid error:" << m_seletedProgramPid << m_textFouceSuccessPid;
+        qCWarning(logUtils) << "Text capture failed - selected PID:" << m_seletedProgramPid 
+                            << "focused PID:" << m_textFouceSuccessPid;
         return false;
     }
     return true;
@@ -300,12 +325,12 @@ QString AtspiDesktop::getSelectedContext()
 {
     if(!m_AtspiText || m_seletedProgramPid != m_textFouceSuccessPid)
     {
-        qDebug() << "m_AtspiText is nullptr or pid error:" << m_seletedProgramPid << m_textFouceSuccessPid;
+        qCDebug(logUtils) << "m_AtspiText is nullptr or pid error:" << m_seletedProgramPid << m_textFouceSuccessPid;
         return nullptr;
     }
 
     AtspiRange *atspiSelectRange = atspi_text_get_selection(m_AtspiText, 0, nullptr);
-    qDebug() << "select pos:" << atspiSelectRange->start_offset << atspiSelectRange->end_offset;
+    qCDebug(logUtils) << "Select pos:" << atspiSelectRange->start_offset << "to" << atspiSelectRange->end_offset;
     if(atspiSelectRange->start_offset == atspiSelectRange->end_offset)
     {
         return nullptr;
@@ -320,7 +345,6 @@ int AtspiDesktop::getSelectedProgramPId()
 
 void AtspiDesktop::processVectorAtspiEvent(AtspiDesktop * thisObj)
 {
-    qDebug() << "~~~enter" << __FUNCTION__;
     AtspiEvent *tmpEvent = nullptr;
     while(thisObj->m_loop)
     {
@@ -352,5 +376,4 @@ void AtspiDesktop::processVectorAtspiEvent(AtspiDesktop * thisObj)
             tmpEvent = nullptr;
         }
     }
-    qDebug() << "~~~end" << __FUNCTION__;
 }

@@ -2,14 +2,17 @@
 #include "networkdefs.h"
 #include "backgroundframe.h"
 
-#include <QHBoxLayout>
-
 #include <DFontSizeManager>
 #include <DPushButton>
 #include <DTitlebar>
 #include <DLabel>
 
+#include <QHBoxLayout>
+#include <QLoggingCategory>
+
 static constexpr char WARNING_ICON[] = ":/assets/images/warning.svg";
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 CommonFailDialog::CommonFailDialog(DWidget *parent)
     : DAbstractDialog(parent)
@@ -62,5 +65,6 @@ void CommonFailDialog::initUI()
 
 void CommonFailDialog::setFailMsg(const QString &msg)
 {
+    qCInfo(logAIGUI) << "Set fail message:" << msg;
     m_pPlainTextEdit->setPlainText(msg);
 }

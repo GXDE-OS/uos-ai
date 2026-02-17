@@ -3,6 +3,9 @@
 #include <QDebug>
 #include <QtDBus>
 #include <QMutexLocker>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 #define NM_SERVICE      "org.freedesktop.NetworkManager"
 #define NM_PATH         "/org/freedesktop/NetworkManager"
@@ -20,7 +23,7 @@ enum NMState {
 };
 
 NetworkMonitor::NetworkMonitor()
-{
+{    
     QDBusMessage msg = QDBusMessage::createMethodCall(NM_SERVICE,
                                                       NM_PATH,
                                                       NM_INTERFACE,
@@ -28,11 +31,11 @@ NetworkMonitor::NetworkMonitor()
 
     QDBusReply<quint32> ret = QDBusConnection::systemBus().call(msg);
     if (!ret.isValid()) {
-        qCritical() << "dbus call network manager state failed";
+        qCCritical(logDBus) << "Failed to get network manager";
     } else {
         m_online = (ret.value() == NM_STATE_CONNECTED_GLOBAL);
         m_state = ret.value();
-        qDebug() << "network status:" << (m_online ? "online" : "offline");
+        qCDebug(logDBus) << "Initial network status:" << (m_online ? "online" : "offline");
     }
 
     QDBusConnection::systemBus().connect(NM_SERVICE,
@@ -65,6 +68,8 @@ bool NetworkMonitor::isOnline()
 
 void NetworkMonitor::onNMStateChanged(quint32 state)
 {
+    qCInfo(logDBus) << "Network status:" << (m_online ? "online " : "offline ") << state;
+
     bool online = false;
 
     if (state == NM_STATE_CONNECTED_GLOBAL) {
@@ -87,9 +92,10 @@ quint32 NetworkMonitor::checkNetworkState()
     QDBusReply<quint32> ret = QDBusConnection::systemBus().call(msg);
     quint32 retValue = 0;
     if (!ret.isValid()) {
-        qCritical() << "dbus call network manager state failed";
+        qCCritical(logDBus) << "Failed to get network manager";
     } else {
         retValue = ret.value();
+        qCDebug(logDBus) << "Current network state:" << retValue;
     }
     return retValue;  //70连接成功 40正在连接  其他网络断开连接
 }

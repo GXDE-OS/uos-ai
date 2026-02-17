@@ -45,6 +45,8 @@ signals:
      */
     void appendAudioData(const QString &id, const QByteArray &data, bool isLast);
 
+    void audioNullFinished(const QString &id);
+
 public:
 
     /**

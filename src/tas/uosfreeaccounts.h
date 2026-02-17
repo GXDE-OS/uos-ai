@@ -21,10 +21,14 @@ public:
     QNetworkReply::NetworkError freeAccountButtonDisplay(const QString &type, UosFreeAccountActivity &freeAccountActivity);
 
     // 获取免费账号接口
-    QNetworkReply::NetworkError getFreeAccount(const ModelType type, UosFreeAccount &freeAccount, int &status);
+    QNetworkReply::NetworkError getFreeAccount(const ModelType type, const LLMChatModel &llm, UosFreeAccount &freeAccount, int &status);
 
     // 判断账号是否可用
-    QNetworkReply::NetworkError getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl);
+    QNetworkReply::NetworkError getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl, bool &claimAgain);
+
+    QNetworkReply::NetworkError claimAccountUsage(const QString &appkey, int &result, QString &msg);
+
+    QNetworkReply::NetworkError checkFreeModelActivity(const LLMChatModel type, int &result, UosFreeModelActivity &freeModelActivity);
 
     // 增加账号使用次数
     QNetworkReply::NetworkError increaseUse(const QString &appkey, int chatAction);

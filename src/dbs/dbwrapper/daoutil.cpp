@@ -9,7 +9,9 @@
 #include <QDateTime>
 #include <QMap>
 #include <QUuid>
-#include <QDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 class DaoUtilHelper
 {
@@ -63,22 +65,23 @@ void DaoUtil::initDb(const QString &dbDir, const QString &dbPath, const QString 
 
     QString sqlError = query.lastError().text();
     if (!flag && sqlError.contains("database disk image is malformed")) {
+        qCWarning(logDBS) << "Database is corrupted, attempting to backup and recreate:" << dbPath;
         dataBase.close();
         QFile file(dbDir + QString("/") + dbPath);
         bool flag = file.rename(dbDir + QString("/bak_%1").arg(QDateTime::currentDateTime().toString("yyyyMMddhhmmss")) + dbPath);
         if (flag) {
+            qCInfo(logDBS) << "Database backup created successfully";
             dataBase = QSqlDatabase::cloneDatabase(dataBase, dbDir + QString("/") + dbDriveName);
             dataBase.setDatabaseName(dbDir + QString("/") + dbPath);
             dataBase.setUserName(user);
             dataBase.setPassword(passwd);
+        } else {
+            qCCritical(logDBS) << "Failed to backup corrupted database:" << dbPath;
         }
     }
 
     clearSqlQuery(dataBase);
-
     m_helper->m_dbMap.insert(dbDriveName, dataBase);
-
-    return;
 }
 
 DaoResultListPtr DaoUtil::execSql(const QString &dbUnique, const QString &sql, bool &isSuccess, QString &errorStr)
@@ -87,12 +90,14 @@ DaoResultListPtr DaoUtil::execSql(const QString &dbUnique, const QString &sql, b
     isSuccess = false;
     if (m_helper == nullptr) {
         errorStr = "not initDb, please initDb first";
+        qCWarning(logDBS) << "Database helper not initialized";
         return listPtr;
     }
 
     auto iterDb = m_helper->m_dbMap.find(dbUnique);
     if (iterDb == m_helper->m_dbMap.end()) {
         errorStr = "not found sql database unique";
+        qCWarning(logDBS) << "Database not found:" << dbUnique;
         return listPtr;
     }
 
@@ -113,10 +118,10 @@ DaoResultListPtr DaoUtil::execSql(const QString &dbUnique, const QString &sql, b
         isSuccess = true;
     } else {
         errorStr = query.lastError().text();
+        qCWarning(logDBS) << "SQL execution failed:" << errorStr << "SQL:" << sql;
     }
 
     clearSqlQuery(dbBase);
-
     return listPtr;
 }
 
@@ -203,13 +208,13 @@ inline QSqlQuery DaoUtil::makeSqlQuery(QSqlDatabase &dataBase)
 {
     if (!dataBase.isOpen()) {
         if (!dataBase.open()) {
-            qWarning() << "open database err: " << dataBase.lastError().text();
+            qCWarning(logDBS) << "open database err: " << dataBase.lastError().text();
             return QSqlQuery();
         }
         auto query = QSqlQuery(dataBase);
         if (m_keepOpenning) {
             if (!query.exec("PRAGMA key='DSQLITECIPHER';")) {
-                qWarning() << "open database err: " << dataBase.lastError().text();
+                qCWarning(logDBS) << "open database err: " << dataBase.lastError().text();
                 return QSqlQuery();
             }
         }

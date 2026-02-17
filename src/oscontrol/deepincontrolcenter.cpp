@@ -1,47 +1,26 @@
 #include "deepincontrolcenter.h"
 #include "oscallcontext.h"
 
-#include <QDebug>
 #include <QDBusPendingCall>
+#include <QLoggingCategory>
 
-DeepinControlCenter::DeepinControlCenter(bool isLinglong, QObject *parent)
-    : QObject{parent}
-    , m_fIsLinglong(isLinglong)
+Q_DECLARE_LOGGING_CATEGORY(logOsControl)
+
+UOSAI_USE_NAMESPACE
+
+DeepinControlCenter::DeepinControlCenter(QObject *parent) : QObject{parent}
 {
-    QString deepinNotifyService;
-    QString deepinNotifyPath;
-    QString deepinNotifyInterface;
-
-    /*V23
-     * ControlCenter version:6.0.28
-     *     only have ShowPage(url) to show modules
-     *
-     * qdbus --literal
-     *      org.deepin.dde.ControlCenter1
-     *      /org/deepin/dde/ControlCenter1
-     *      org.deepin.dde.ControlCenter1.ShowPage "network"
-     *
-     * */
-    if (isLinglong) {
-        deepinNotifyService = QString("org.deepin.dde.ControlCenter1");
-        deepinNotifyPath = QString("/org/deepin/dde/ControlCenter1");
-        deepinNotifyInterface = deepinNotifyService;
-    } else {
-        deepinNotifyService = QString("com.deepin.dde.ControlCenter");
-        deepinNotifyPath = QString("/com/deepin/dde/ControlCenter");
-        deepinNotifyInterface = deepinNotifyService;
-    }
-
     m_controlCenterProxy.reset(
         new QDBusInterface(
-            deepinNotifyService,
-            deepinNotifyPath,
-            deepinNotifyInterface,
+            osCallDbusCtrCenterService,
+            osCallDbusCtrCentertPath,
+            osCallDbusCtrCenterInterface,
             QDBusConnection::sessionBus(), this));
 }
 
 int DeepinControlCenter::ShowModule(const QString &module)
 {
+    qCDebug(logOsControl) << "Showing control center module:" << module;
     int errorCode = OSCallContext::NonError;
 
     if (!m_controlCenterProxy.isNull()) {
@@ -61,8 +40,8 @@ int DeepinControlCenter::ShowModule(const QString &module)
                          QStringLiteral("ShowModule"), argumentList);
         reply.waitForFinished();
         if (reply.isError()) {
-            qInfo() << QString("ShowModule(QString module=%1) call failed:").arg(module)
-                    << reply.error().errorString(reply.error().type());
+            qCWarning(logOsControl) << "ShowModule failed - module:" << module
+                                  << "error:" << reply.error().errorString(reply.error().type());
 
             if (QDBusError::UnknownMethod == reply.error().type()
                     || QDBusError::InvalidArgs == reply.error().type()) {
@@ -72,6 +51,7 @@ int DeepinControlCenter::ShowModule(const QString &module)
             }
         }
     } else {
+        qCWarning(logOsControl) << "Control center proxy is null";
         errorCode = OSCallContext::NonService;
     }
 
@@ -80,6 +60,7 @@ int DeepinControlCenter::ShowModule(const QString &module)
 
 int DeepinControlCenter::ShowPage(const QString &module, const QString &page)
 {
+    qCDebug(logOsControl) << "Showing control center page - module:" << module << "page:" << page;
     int errorCode = OSCallContext::NonError;
 
     if (!m_controlCenterProxy.isNull()) {
@@ -100,10 +81,9 @@ int DeepinControlCenter::ShowPage(const QString &module, const QString &page)
                          QStringLiteral("ShowPage"), argumentList);
         reply.waitForFinished();
         if (reply.isError()) {
-
-            qInfo() << QString("ShowPage(QString module=%1, QString page=%2) call failed:")
-                    .arg(module).arg(page)
-                    << reply.error().errorString(reply.error().type());
+            qCWarning(logOsControl) << "ShowPage failed - module:" << module
+                                  << "page:" << page
+                                  << "error:" << reply.error().errorString(reply.error().type());
 
             if (QDBusError::UnknownMethod == reply.error().type()
                     || QDBusError::InvalidArgs == reply.error().type()) {
@@ -113,6 +93,7 @@ int DeepinControlCenter::ShowPage(const QString &module, const QString &page)
             }
         }
     } else {
+        qCWarning(logOsControl) << "Control center proxy is null";
         errorCode = OSCallContext::NonService;
     }
 
@@ -121,6 +102,7 @@ int DeepinControlCenter::ShowPage(const QString &module, const QString &page)
 
 int DeepinControlCenter::ShowPage(const QString &url)
 {
+    qCDebug(logOsControl) << "Showing control center page with URL:" << url;
     int errorCode = OSCallContext::NonError;
 
     if (!m_controlCenterProxy.isNull()) {
@@ -140,8 +122,8 @@ int DeepinControlCenter::ShowPage(const QString &url)
                          QStringLiteral("ShowPage"), argumentList);
         reply.waitForFinished();
         if (reply.isError()) {
-            qInfo() << "ShowPage(QString url) call failed:"
-                    << reply.error().errorString(reply.error().type());
+            qCWarning(logOsControl) << "ShowPage failed - URL:" << url
+                                  << "error:" << reply.error().errorString(reply.error().type());
 
             if (QDBusError::UnknownMethod == reply.error().type()
                     || QDBusError::InvalidArgs == reply.error().type()) {
@@ -151,8 +133,8 @@ int DeepinControlCenter::ShowPage(const QString &url)
             }
         }
     } else {
+        qCWarning(logOsControl) << "Control center proxy is null";
         errorCode = OSCallContext::NonService;
     }
-
     return errorCode;
 }

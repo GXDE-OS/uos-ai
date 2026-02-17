@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>写作</title>
+    <defs>
+        <filter x="-15.0%" y="-7.5%" width="130.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="3.58929639%" x2="50%" y2="97.2180704%" id="linearGradient-2">
+            <stop stop-color="#EFF5FF" offset="0%"></stop>
+            <stop stop-color="#E1EEFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="64.1867976%" y1="11.4861714%" x2="92.7708671%" y2="91.4090245%" id="linearGradient-3">
+            <stop stop-color="#00E0E3" offset="0%"></stop>
+            <stop stop-color="#0D94EC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M2.94294294,0 L10.3903904,0 C12.0157329,0 13.3333333,1.31760044 13.3333333,2.94294294 L13.3333333,10.3903904 C13.3333333,12.0157329 12.0157329,13.3333333 10.3903904,13.3333333 L2.94294294,13.3333333 C1.31760044,13.3333333 0,12.0157329 0,10.3903904 L0,2.94294294 C0,1.31760044 1.31760044,0 2.94294294,0 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="3.58929639%" x2="50%" y2="97.2180704%" id="linearGradient-5">
+            <stop stop-color="#EFF5FF" offset="0%"></stop>
+            <stop stop-color="#E1EEFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="2.77777778" y="2.77777778" width="7.5" height="8.05555556" rx="1.11111111"></rect>
+        <path d="M0.555555556,0 C0.862380417,-5.63628126e-17 1.11111111,0.248730695 1.11111111,0.555555556 L1.11111111,5 L1.11111111,5 L0.555555556,5.83333333 L0,5 L0,0.555555556 C-3.75752084e-17,0.248730695 0.248730695,5.63628126e-17 0.555555556,0 Z" id="path-7"></path>
+    </defs>
+    <g id="v2.8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-397, -479)">
+            <g id="写作" transform="translate(397, 479)">
+                <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                <g id="编组-6备份" filter="url(#filter-1)" transform="translate(1.3333, 1.3333)">
+                    <g id="编组-4备份">
+                        <g id="蒙版备份-2">
+                            <use fill="url(#linearGradient-2)" xlink:href="#path-4"></use>
+                            <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                        </g>
+                        <g id="message-fill" transform="translate(1.8056, 2.7778)"></g>
+                    </g>
+                    <g id="矩形">
+                        <use fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                        <use fill="#C4F8FE" xlink:href="#path-6"></use>
+                    </g>
+                    <rect id="矩形" fill="#21B8FC" x="4.16666667" y="4.44444444" width="4.72222222" height="1" rx="0.416666667"></rect>
+                    <rect id="矩形备份-2" fill="#21B8FC" x="4.16666667" y="5.83333333" width="4.72222222" height="1" rx="0.416666667"></rect>
+                    <rect id="矩形备份-3" fill="#21B8FC" x="4.16666667" y="7.22222222" width="2.77777778" height="1" rx="0.416666667"></rect>
+                    <rect id="矩形备份-4" fill="#21B8FC" x="4.16666667" y="8.61111111" width="2.36111111" height="1" rx="0.416666667"></rect>
+                    <g id="编组-5" transform="translate(9.1667, 6.9444) rotate(-315) translate(-9.1667, -6.9444)translate(8.6111, 4.0278)">
+                        <g id="椭圆形" transform="translate(-0, 0)">
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="蒙版" fill="#FFD05C" xlink:href="#path-7"></use>
+                            <path d="M0.555555556,6.38888889 C1.01579285,6.38888889 1.38888889,6.01579285 1.38888889,5.55555556 C1.38888889,5.09531826 1.01579285,4.72222222 0.555555556,4.72222222 C0.0953182641,4.72222222 -0.277777778,5.09531826 -0.277777778,5.55555556 C-0.277777778,6.01579285 0.0953182641,6.38888889 0.555555556,6.38888889 Z" fill="#565F85" mask="url(#mask-8)"></path>
+                        </g>
+                        <rect id="矩形" fill="#1689FC" x="0" y="0.972222222" width="1.11111111" height="1"></rect>
+                        <path d="M0.555555556,0 C0.862380417,-5.63628126e-17 1.11111111,0.248730695 1.11111111,0.555555556 L1.11111111,0.972222222 L1.11111111,0.972222222 L-9.09494702e-13,0.972222222 L-9.09494702e-13,0.555555556 C-9.09532277e-13,0.248730695 0.248730695,5.63628126e-17 0.555555556,0 Z" id="矩形备份-5" fill="#FD5E5E"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

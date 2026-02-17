@@ -23,17 +23,14 @@ QPair<int, QString> ZhiPuConversation::parseContentString(const QString &content
         QString data = match.captured("data");
 
         if (content.contains("event:error")) {
-            QRegExp regex("\\[([^\\[\\]]*)\\]\\[([^\\[\\]]*)\\]"); // 正则表达式用于匹配连续的两个中括号及其内容
+            QRegularExpression regex("\\[([^\\[\\]]*)\\]\\[([^\\[\\]]*)\\]");
+            QRegularExpressionMatchIterator matchIterator = regex.globalMatch(data);
 
-            int pos = 0;
-            while ((pos = regex.indexIn(data, pos)) != -1) {
-                QString matchedText = regex.cap(0);
-
+           while (matchIterator.hasNext()) {
+                QRegularExpressionMatch subMatch = matchIterator.next();
                 bool ok = false;
-                int code = regex.cap(1).toInt(&ok);
-                QString errorMessage = regex.cap(2);
-                pos += matchedText.length();
-
+                int code = subMatch.captured(1).toInt(&ok);
+                QString errorMessage = subMatch.captured(2);
                 if (ok && code > 0) {
                     AIServer::ErrorType errorType = AIServer::NoError;
                     if (code == 1302 || code == 1303 || code == 1305) {

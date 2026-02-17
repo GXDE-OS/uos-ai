@@ -1,1 +1,10 @@
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 add_subdirectory(fydn)
+add_subdirectory(ppt)
+add_subdirectory(rpa)
+add_subdirectory(poster)
+add_subdirectory(ztbbd)
+add_subdirectory(xxzsk)
+add_subdirectory(yzsbs)
+add_subdirectory(tzdl)

@@ -11,8 +11,7 @@ class DeepinLauncher : public QObject,  public ILauncher
 {
     Q_OBJECT
 public:
-    explicit DeepinLauncher(bool isLinglong,
-                            const QStringList &deskPaths = QStringList(),
+    explicit DeepinLauncher(const QStringList &deskPaths = QStringList(),
                             QObject *parent = nullptr);
     virtual ~DeepinLauncher() override;
 
@@ -26,20 +25,14 @@ protected:
     QString unescapeFromObjectPath(const QString &str);
     QString getAppIdFromAbsolutePath(const QString &path);
 
-    int launchDesktopWithV23AM(const QString &pathApp, bool isAppPath = false);
-
 private:
     QString getAppDesktopFile(const QString &DesktopName);
 
     QScopedPointer<QDBusInterface> m_osMime;
     QScopedPointer<QDBusInterface> m_oslauncher;
     QScopedPointer<QDBusInterface> m_osStartManager;
-    QScopedPointer<QDBusInterface> m_v23NewAM;
-    QScopedPointer<QDBusInterface> m_v23NewMIME;
 
-    bool m_fIsLinglong;
     QStringList m_defaultDesktopPaths;
-
     int m_callTimeout {5000}; //5s
 };
 

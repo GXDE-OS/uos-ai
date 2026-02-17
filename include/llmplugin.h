@@ -16,6 +16,7 @@ namespace uos_ai {
 #define QUERY_ICON_PREFIX "iconprefix"
 #define QUERY_DESCRIPTION  "description"
 #define QUERY_QUESTIONS  "questions"
+#define QUERY_INSTLIST  "instlist"
 
 class LLMModel;
 class LLMPlugin

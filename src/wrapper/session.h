@@ -45,26 +45,38 @@ public Q_SLOTS:
      * @param stream: Conversation flow switch.
      * @param temperature: A parameter that returns randomness, where a higher value indicates higher randomness.
      */
-    QPair<AIServer::ErrorType, QStringList> requestChatText(const QString &llmId, const QString &conversation, qreal temperature, bool stream = false, bool isFAQGeneration = false);
+    QPair<AIServer::ErrorType, QStringList> requestChatText(const QString &llmId, const QString &conversation, const QVariantHash &params = {});
+    QPair<AIServer::ErrorType, QStringList> requestFunction(const QString &llmId, const QString &conversation, const QJsonArray &funcs, const QVariantHash &params = {});
+    QPair<AIServer::ErrorType, QStringList> requestMcpAgent(const QString &llmId, const QString &conversation, const QVariantHash &params = {});
+    QPair<AIServer::ErrorType, QStringList> requestRag(const QString &llmId, const QString &conversation, const QVariantHash &params = {});
+    QString chatRequest(const QString &llmId, const QString &ctx, const QVariantHash &params = {});
+    QString searchRequest(const QString &llmId, const QString &ctx);
+    QString requestGenImage(const QString &llmId, const QString &imageDesc);
+
+    void claimUsageRequest(const QString &llmId);
 
     /**
      * @brief Set the current model ID.
      * @param id: LLM model ID
      */
     bool setCurrentLLMAccountId(const QString &id);
+    bool setUosAiLLMAccountId(const QString &id);
 
     /**
      * @brief Get the current LLM model ID.
      * @return
      */
     QString currentLLMAccountId();
+    QString uosAiLLMAccountId();
     LLMChatModel currentLLMModel();
     ModelType currentModelType();
 
     bool setCurrentAssistantId(const QString &id);
     QString currentAssistantId();
     QString currentAssistantDisplayName();
+    QString currentAssistantDisplayNameEn(); // 埋点专用
     AssistantType currentAssistantType();
+    QString currentAssistantInstList();
 
     /**
      * @brief Get the list of all LLM model accounts.
@@ -73,18 +85,28 @@ public Q_SLOTS:
      */
     QString queryLLMAccountList(const QList<LLMChatModel> &excludes = {});
     QString queryLLMAccountListWithRole(const QList<LLMChatModel> &excludes = {});
+    QString queryUosAiLLMAccountList();
 
     QString queryAssistantList();
     QString queryAssistantIdByType(AssistantType type);
+    QString queryDisplayNameByType(AssistantType type);
+    AssistantType queryAssistantTypeById(const QString &id);
+    QString queryIconById(const QString &assistantId, const QString &modelId);
+    QString queryDisplayNameById(const QString &assistantId);
 
     /**
      * @brief Launch LLM UI page.
      */
-    void launchLLMUiPage(bool showAddllmPage, bool onlyUseAgreement = false);
+    void launchLLMUiPage(bool showAddllmPage, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString &locateTitle = "");
+    void launchGetFreeAccountDlg();
+
+    void launchKnowledgeBaseUiPage(const QString & locateTitle = "");
 
     void launchAboutWindow();
 
     QVariant getFAQ();
+
+    LLMServerProxy queryValidServerAccount(const QString &llmId);
 
 signals:
     /**
@@ -121,14 +143,23 @@ signals:
      * type -> 0:GPT3.5, 1:GPT_3_5_16, 2:GPT_4, 3:GPT_4_32K, 10:SPARKDESK
      */
     void llmAccountLstChanged(const QString &currentAccountId, const QString &accountLst);
+    void uosAiLlmAccountLstChanged();
 
     /**
      * @brief Interrupt the task.
      */
     void executionAborted();
 
+    void assistantListChanged();
+
+    void previewReference(const QString &reference);
+
+    void sigClaimAccountUsageFinished(bool ret, const QString &msg);
+    void sigClaimAgain(bool claimAgain);
+
 private:
     QScopedPointer<SessionPrivate> m_private;
+    QString m_uosaiTopAccountId;
 };
 
 #endif // SESSION_H

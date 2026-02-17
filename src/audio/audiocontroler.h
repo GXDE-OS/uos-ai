@@ -5,6 +5,8 @@
 #include <QSharedPointer>
 #include <QTemporaryDir>
 
+class QSoundEffect;
+
 class IatServer;
 class TtsServer;
 
@@ -67,6 +69,13 @@ public:
      * @return
      */
     bool startAppendPlayText(const QString &id, const QString &text, bool isEnd);
+
+    /**
+     * @brief filterMarkdown
+     * @param markdownText
+     * @return
+     */
+    QString filterMarkdown(const QString &markdownText);
 
     /**
      * @brief stopPlayTextAudio
@@ -213,6 +222,7 @@ private:
     QTemporaryDir m_tempDir;
 
     AudioModel m_audioModel = AudioModel::NetWork;
+    QSharedPointer<QSoundEffect> m_sound;
 };
 
 #endif // AUDIOCONTROLER_H

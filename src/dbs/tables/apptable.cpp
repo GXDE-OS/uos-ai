@@ -1,7 +1,10 @@
 #include "apptable.h"
 #include "objects/appobject.h"
 #include "daoclient.h"
-#include <QDebug>
+
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 AppTable::AppTable()
     : DbBase()
@@ -111,7 +114,7 @@ bool AppTable::save()
                 , {{"uuid", uuid()}, {"name", name()}, {"desc", desc()}, {"llmid", llmid()}, {"cmd", cmd()}, {"assistantid", assistantid()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to save app:" << name() << "uuid:" << uuid() << "error:" << msg;
     }
     return false;
 }
@@ -125,7 +128,7 @@ bool AppTable::update()
     , {{"name", name()}, {"desc", desc()}, {"llmid", llmid()}, {"cmd", cmd()}, {"cmd", ext()}, {"assistantid", assistantid()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to update app:" << name() << "uuid:" << uuid() << "error:" << msg;
     }
     return false;
 }
@@ -139,7 +142,7 @@ bool AppTable::remove()
     "DELETE FROM app WHERE uuid=:uuid ;", {{"uuid", uuid()}}, {}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to remove app:" << name() << "uuid:" << uuid() << "error:" << msg;
     }
     return false;
 }
@@ -162,7 +165,7 @@ AppTable  AppTable::create(const QString &uuid, const QString &name, const QStri
     return AppTable(obj);
 }
 
-AppTable  AppTable::get(const QString &uuid)
+AppTable AppTable::get(const QString &uuid)
 {
     DaoResultListPtr result = nullptr;
     QString msg;
@@ -174,9 +177,11 @@ AppTable  AppTable::get(const QString &uuid)
                            item.value("uuid").toString(), item.value("name").toString(), item.value("desc").toString()
                            , item.value("llmid").toString(), item.value("cmd").toString(), item.value("ext").toString(), item.value("assistantid").toString());
             return obj;
+        } else {
+            qCDebug(logDBS) << "App not found:" << uuid;
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get app:" << uuid << "error:" << msg;
     }
     return AppTable {};
 }
@@ -203,7 +208,7 @@ QList<AppTable> AppTable::getAll()
             }
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get all apps, error:" << msg;
     }
     return appList;
 }

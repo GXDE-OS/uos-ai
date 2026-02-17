@@ -1,0 +1,5 @@
+[Aiassistant/Incomplete]
+Description=Use Incomplete pinyin
+Type=Boolean
+DefaultValue=True
+

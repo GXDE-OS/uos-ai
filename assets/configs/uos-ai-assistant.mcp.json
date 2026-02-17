@@ -1,0 +1,17 @@
+{
+    "magic":"dsg.config.meta",
+    "version":"1.0",
+    "contents":{
+        "enabledList": {
+            "value":["uos-mcp"],
+            "serial":0,
+            "flags":[],
+            "name":"Enabled MCP List",
+            "name[zh_CN]":"启用MCP列表",
+            "description":"Record enabled MCP server list",
+            "description[zh_CN]":"记录启用的MCP服务",
+            "permissions":"readwrite",
+            "visibility":"private"
+        }
+    }
+}

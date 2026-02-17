@@ -35,6 +35,7 @@ public:
 
     void setStatusIcon(const QString &iconName);
     void setTipsIcon(const QString &iconName);
+    void setBookIcon();
 
     void setFileSize(qint64 bytes);
     qint64 fileSize() { return m_fileSize; }
@@ -43,9 +44,10 @@ public:
 
     void setStatus(KnowledgeBaseProcessStatus status);
 
+
 signals:
     void signalDeleteButtonClicked();
-    void signalNotDeleteButtonClicked();
+    void signalNotDeleteButtonClicked(QString objectname);
 
 private:
     void initUI();

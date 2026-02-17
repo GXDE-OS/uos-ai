@@ -3,6 +3,81 @@
         <file>../assets/images/ok_info.svg</file>
         <file>../assets/images/uos-ai-assistant.svg</file>
         <file>../assets/images/warning.svg</file>
+        <file>../assets/images/ppt.svg</file>
+        <file>../assets/images/tips.svg</file>
+        <file>../assets/images/free_account.svg</file>
+        <file>../assets/images/light/more.svg</file>
+        <file>../assets/images/light/close-wordwizard.svg</file>
+        <file>../assets/images/dark/close-wordwizard.svg</file>
+        <file>../assets/images/dark/more.svg</file>
+        <file>../assets/images/light/light-loading.gif</file>
+        <file>../assets/images/dark/dark-loading.gif</file>
+        <file>../assets/images/text-html.png</file>
+        <file>../assets/images/warning.png</file>
+        <file>../assets/images/redpoint.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_article_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_article_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_notify_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_notify_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_official_accounts_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_official_accounts_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_outline_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_outline_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_report_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_report_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_speech_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_speech_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_worksummary_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_worksummary_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_article_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_article_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_notify_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_notify_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_official_accounts_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_official_accounts_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_outline_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_outline_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_report_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_report_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_speech_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_speech_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_worksummary_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_worksummary_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_ai_search_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_ai_search_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_explain_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_explain_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_summarize_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_summarize_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_translation_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_translation_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_ai_search_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_ai_search_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_explain_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_explain_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_summarize_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_summarize_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_translation_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_translation_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_intro_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_intro_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_intro_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_intro_en_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_shortcut_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_shortcut_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_more_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_more_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_close_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_close_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_disabled_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_disabled_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_disabled_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_disabled_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hide_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hide_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hide_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hide_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_checkmark_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_checkmark_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_checkmark_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_checkmark_128px.svg/selected.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_intro_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_intro_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_intro_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_intro_en_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_shortcut_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_shortcut_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_close_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_close_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_disabled_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_disabled_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_hide_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_hide_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_checkmark_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_checkmark_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_more_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_more_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_longarrow_6px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_longarrow_6px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_copy_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_copy_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_insert_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_insert_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_replace_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_replace_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_again_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_again_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_read_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_read_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_modelbt_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_modelbt_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_aidropdown_7px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_aidropdown_7px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_fcitxrestart_160px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_fcitxrestart_160px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_fcitxrestart_en_160px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_fcitxrestart_en_160px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_aisend_12px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_aisend_12px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_longarrow_6px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_longarrow_6px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_copy_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_copy_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_insert_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_insert_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_replace_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_replace_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_again_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_again_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_read_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_read_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_modelbt_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_modelbt_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_aidropdown_7px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_aidropdown_7px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_fcitxrestart_160px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_fcitxrestart_160px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_fcitxrestart_en_160px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_fcitxrestart_en_160px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_aisend_12px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_aisend_12px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agency_128px.svg/selected.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_agreement_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_agreement_128px.svg/normal.svg</file>
@@ -23,6 +98,32 @@
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_info_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_info_128px.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_128px.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_128px.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_tips_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_tips_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_tips_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_tips_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_tooltips_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_tooltips_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_tooltips_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_tooltips_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_app_32px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_app_32px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_app_32px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_app_32px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_correct_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_correct_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_correct_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_correct_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_custom_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_custom_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_custom_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_custom_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_polish_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_polish_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_polish_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_polish_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_extend_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_extend_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_extend_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_extend_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_renew_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_renew_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_renew_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_renew_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_knowledge_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_knowledge_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_knowledge_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_knowledge_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_edit_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_edit_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_edit_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_edit_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_delete_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_delete_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_delete_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_delete_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hello_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hello_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg</file>
         <file>../assets/images/gift.svg</file>
         <file>../assets/images/spirite/sleep/1.png</file>
         <file>../assets/images/spirite/active/1.png</file>
@@ -44,6 +145,7 @@
         <file>../assets/web/front/dist/assets/index3.js</file>
         <file>../assets/web/front/dist/assets/polyfills-legacy.js</file>
         <file>../assets/faq/AI-FAQ-zh_CN.json</file>
+        <file>../assets/faq/AI-FAQ-en_US.json</file>
         <file>../assets/web/front/dist/assets/1-loading.svg</file>
         <file>../assets/web/front/dist/assets/2-loading.svg</file>
         <file>../assets/web/front/dist/assets/3-loading.svg</file>
@@ -64,7 +166,6 @@
         <file>../assets/web/front/dist/assets/1-loading-dark.svg</file>
         <file>../assets/web/front/dist/assets/2-loading-dark.svg</file>
         <file>../assets/web/front/dist/assets/3-loading-dark.svg</file>
-        <file>../assets/faq/AI-FAQ-en_US.json</file>
         <file>../assets/images/360.svg</file>
         <file>../assets/images/baidu.svg</file>
         <file>../assets/images/iflytek.svg</file>
@@ -72,6 +173,7 @@
         <file>../assets/images/openai.svg</file>
         <file>../assets/images/default.svg</file>
         <file>../assets/images/textimage.svg</file>
+        <file>../assets/images/uoslm.svg</file>
         <file>../assets/icons/ttscomposite/reading1.svg</file>
         <file>../assets/icons/ttscomposite/reading2.svg</file>
         <file>../assets/icons/ttscomposite/reading3.svg</file>
@@ -120,14 +222,34 @@
         <file>../assets/web/front/dist/icons/8-question-personal.png</file>
         <file>../assets/web/front/dist/icons/9-question-personal.png</file>
         <file>../assets/web/front/dist/icons/10-question-personal.png</file>
+        <file>../assets/web/front/dist/icons/1-question-general.png</file>
+        <file>../assets/web/front/dist/icons/2-question-general.png</file>
+        <file>../assets/web/front/dist/icons/3-question-general.png</file>
+        <file>../assets/web/front/dist/icons/4-question-general.png</file>
+        <file>../assets/web/front/dist/icons/5-question-general.png</file>
+        <file>../assets/web/front/dist/icons/6-question-general.png</file>
+        <file>../assets/web/front/dist/icons/7-question-general.png</file>
+        <file>../assets/web/front/dist/icons/8-question-general.png</file>
+        <file>../assets/web/front/dist/icons/9-question-general.png</file>
+        <file>../assets/web/front/dist/icons/10-question-general.png</file>
+        <file>../assets/web/front/dist/icons/11-question-general.png</file>
+        <file>../assets/web/front/dist/icons/12-question-general.png</file>
         <file alias="icons/deepin/builtin/warning.svg">../assets/icons/deepin/builtin/warning.svg</file>
         <file alias="icons/deepin/builtin/loading.svg">../assets/icons/deepin/builtin/loading.svg</file>
-        <file alias="icons/deepin/builtin/dark/icons/book.svg">../assets/icons/deepin/builtin/dark/icons/book.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/book_16px.svg">../assets/icons/deepin/builtin/dark/icons/book.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/retry.svg">../assets/icons/deepin/builtin/dark/icons/retry.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/tip.svg">../assets/icons/deepin/builtin/dark/icons/tip.svg</file>
-        <file alias="icons/deepin/builtin/light/icons/book.svg">../assets/icons/deepin/builtin/light/icons/book.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/display.svg">../assets/icons/deepin/builtin/dark/icons/display.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/display_en.svg">../assets/icons/deepin/builtin/dark/icons/display_en.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/shortcut.svg">../assets/icons/deepin/builtin/dark/icons/shortcut.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/shortcut_en.svg">../assets/icons/deepin/builtin/dark/icons/shortcut_en.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/book_16px.svg">../assets/icons/deepin/builtin/light/icons/book.svg</file>
         <file alias="icons/deepin/builtin/light/icons/retry.svg">../assets/icons/deepin/builtin/light/icons/retry.svg</file>
         <file alias="icons/deepin/builtin/light/icons/tip.svg">../assets/icons/deepin/builtin/light/icons/tip.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/display.svg">../assets/icons/deepin/builtin/light/icons/display.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/display_en.svg">../assets/icons/deepin/builtin/light/icons/display_en.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/shortcut.svg">../assets/icons/deepin/builtin/light/icons/shortcut.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/shortcut_en.svg">../assets/icons/deepin/builtin/light/icons/shortcut_en.svg</file>
         <file>../assets/web/front/dist/icons/personal-assistant-16.svg</file>
         <file>../assets/web/front/dist/icons/personal-assistant-32.svg</file>
         <file>../assets/web/front/dist/icons/system-assistant-16.svg</file>
@@ -137,5 +259,45 @@
         <file>../assets/web/front/dist/icons/personal-assistant-110.svg</file>
         <file>../assets/web/front/dist/icons/system-assistant-110.svg</file>
         <file>../assets/web/front/dist/icons/uos-ai-110.svg</file>
+        <file>../assets/web/front/dist/icons/ai-writing-16.svg</file>
+        <file>../assets/web/front/dist/icons/ai-text-processing-16.svg</file>
+        <file>../assets/web/front/dist/icons/ai-translation-16.svg</file>
+        <file>../assets/web/front/dist/icons/ai-writing-32.svg</file>
+        <file>../assets/web/front/dist/icons/ai-text-processing-32.svg</file>
+        <file>../assets/web/front/dist/icons/ai-translation-32.svg</file>
+        <file>../assets/web/front/dist/icons/ai-writing-110.svg</file>
+        <file>../assets/web/front/dist/icons/ai-text-processing-110.svg</file>
+        <file>../assets/web/front/dist/icons/ai-translation-110.svg</file>
+        <file>../assets/web/front/dist/icons/icon-file-dark.svg</file>
+        <file>../assets/web/front/dist/icons/icon-file-light.svg</file>
+        <file>../assets/web/front/dist/icons/loading.svg</file>
+        <file>../assets/web/front/dist/icons/warning.svg</file>
+        <file>../assets/web/front/dist/icons/warning-yellow.svg</file>
+        <file>../assets/web/front/dist/icons/upload-light.svg</file>
+        <file>../assets/web/front/dist/icons/upload-dark.svg</file>
+        <file>../assets/web/front/dist/icons/file.svg</file>
+        <file>../assets/web/front/dist/icons/file-delete-dark.svg</file>
+        <file>../assets/web/front/dist/icons/file-delete-light.svg</file>
+        <file>../assets/web/front/dist/icons/file-dark.svg</file>
+        <file>../assets/web/front/dist/icons/no-history-light.png</file>
+        <file>../assets/web/front/dist/icons/no-history-dark.png</file>
+        <file>../assets/web/front/dist/icons/mcp-completed.png</file>
+        <file>../assets/web/front/dist/icons/mcp-cancal.png</file>
+        <file>../assets/web/front/dist/icons/mcp-loading.png</file>
+        <file>../assets/web/front/dist/icons/mcp-warning.png</file>
+        <file>../assets/web/front/dist/icons/private-welcome-light.png</file>
+        <file>../assets/web/front/dist/icons/private-wlecome-dark.png</file>
+        <file>../assets/web/front/dist/icons/icon-image-lost-dark.svg</file>
+        <file>../assets/web/front/dist/icons/icon-image-lost-light.svg</file>
+        <file>../assets/images/poster.svg</file>
+        <file>../assets/images/UosAiAssistantLogo.svg</file>
+        <file>../assets/pinyin/pinyin.dict</file>
+        <file>../assets/icons/tts/play-04.svg</file>
+        <file>../assets/icons/tts/play-03.svg</file>
+        <file>../assets/icons/tts/play-02.svg</file>
+        <file>../assets/icons/tts/play-01.svg</file>
+        <file>../assets/images/text-plain.png</file>
+        <file>../assets/updatelog/updatelog-zh_CN.json</file>
+        <file>../assets/updatelog/updatelog-en_US.json</file>
     </qresource>
 </RCC>

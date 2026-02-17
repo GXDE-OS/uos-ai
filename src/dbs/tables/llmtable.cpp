@@ -1,6 +1,11 @@
 #include "llmtable.h"
 #include "objects/llmobject.h"
 #include "daoclient.h"
+#include <util.h>
+
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 #include <QDebug>
 
@@ -103,7 +108,7 @@ bool LlmTable::save()
     }, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to save LLM:" << name() << "uuid:" << uuid() << "error:" << msg;
     }
     return false;
 }
@@ -117,7 +122,7 @@ bool LlmTable::update()
     , {{"uuid", uuid()}, {"name", name()}, {"type", type()}, {"desc", desc()}, {"account_proxy", accountProxy()}, {"ext", ext()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to update LLM:" << name() << "uuid:" << uuid() << "error:" << msg;
     }
     return false;
 }
@@ -130,7 +135,7 @@ bool LlmTable::remove()
     "DELETE FROM llm WHERE uuid=:uuid ;", {{"uuid", uuid()}}, {}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to remove LLM:" << name() << "uuid:" << uuid() << "error:" << msg;
     }
     return false;
 }
@@ -145,6 +150,15 @@ LlmTable LlmTable::create(const QString &uuid, const QString &name, int type, co
     obj.desc = desc;
     obj.account_proxy = accountProxy;
     obj.ext = ext;
+    if (uos_ai::Util::checkLanguage()) {
+        if (obj.name == "Baidu-Ernie-Trial Account") {
+            obj.name = "百度千帆-试用账号";
+        }
+    } else {
+        if (obj.name == "百度千帆-试用账号") {
+            obj.name = "Baidu-Ernie-Trial Account";
+        }
+    }
     return LlmTable(obj);
 }
 
@@ -165,9 +179,11 @@ LlmTable LlmTable::get(const QString &uuid)
                            item.value("uuid").toString(), item.value("name").toString(), item.value("type").toInt(), item.value("desc").toString()
                            , item.value("account_proxy").toString(), item.value("ext").toString());
             return obj;
+        } else {
+            qCDebug(logDBS) << "LLM not found:" << uuid;
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get LLM:" << uuid << "error:" << msg;
     }
     return LlmTable {};
 }
@@ -191,7 +207,7 @@ QList<LlmTable> LlmTable::getAll()
             }
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get all LLMs, error:" << msg;
     }
     return appList;
 }

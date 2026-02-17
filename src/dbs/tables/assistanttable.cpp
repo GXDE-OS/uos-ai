@@ -2,7 +2,9 @@
 #include "objects/assistantobject.h"
 #include "daoclient.h"
 
-#include <QDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBS)
 
 AssistantTable::AssistantTable()
     : d(new AssistantObject())
@@ -82,7 +84,7 @@ bool AssistantTable::save()
     , {}, {{"id", id()}, {"display_name", displayName()}, {"type", type()}, {"description", description()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to save assistant:" << displayName() << "id:" << id() << "error:" << msg;
     }
     return false;
 }
@@ -96,7 +98,7 @@ bool AssistantTable::update()
     , {{"id", id()}, {"display_name", displayName()}, {"type", type()}, {"description", description()}}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to update assistant:" << displayName() << "id:" << id() << "error:" << msg;
     }
     return false;
 }
@@ -109,7 +111,7 @@ bool AssistantTable::remove()
     "DELETE FROM assistant WHERE id=:id ;", {{"id", id()}}, {}, result, msg, "basic")) {
         return true;
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to remove assistant:" << displayName() << "id:" << id() << "error:" << msg;
     }
     return false;
 }
@@ -141,9 +143,11 @@ AssistantTable AssistantTable::get(const QString &id)
             auto obj = AssistantTable::create(
                            item.value("id").toString(), item.value("display_name").toString(), item.value("type").toInt(), item.value("description").toString());
             return obj;
+        } else {
+            qCDebug(logDBS) << "Assistant not found:" << id;
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get assistant:" << id << "error:" << msg;
     }
     return AssistantTable {};
 }
@@ -166,7 +170,7 @@ QList<AssistantTable> AssistantTable::getAll()
             }
         }
     } else {
-        qInfo() << "sql error: " << msg;
+        qCWarning(logDBS) << "Failed to get all assistants, error:" << msg;
     }
     return assistantList;
 }

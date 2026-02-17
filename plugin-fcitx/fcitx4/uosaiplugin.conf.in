@@ -1,0 +1,7 @@
+[Addon]
+UniqueName=uos-ai-assistant
+_Name=AI助手插件
+IconName=uos-ai
+Priority=1
+LangCode=zh_CN
+Parent=fcitx-uosai

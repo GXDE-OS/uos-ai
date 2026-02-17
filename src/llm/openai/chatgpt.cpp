@@ -6,6 +6,9 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logLLM)
 
 ChatGpt::ChatGpt(const LLMServerProxy &serverproxy)
     : LLM(serverproxy)
@@ -25,14 +28,21 @@ QString ChatGpt::modelId()
     return modelIds.value(m_accountProxy.model);
 }
 
-QJsonObject ChatGpt::predict(const QString &content, const QJsonArray &functions, const QString &systemRole, qreal temperature)
+QJsonObject ChatGpt::predict(const QString &content, const QJsonArray &functions)
 {
+    qCInfo(logLLM) << "ChatGpt Starting prediction with content length:" << content.length() 
+                   << "and" << functions.size() << "functions";
+    
     AIConversation conversion;
     conversion.addUserData(content);
     conversion.setFunctions(functions);
 
-    if (!systemRole.isEmpty())
+    QString systemRole = m_params.value(PREDICT_PARAM_SYSTEMROLE).toString();
+
+    if (!systemRole.isEmpty()) {
+        qCDebug(logLLM) << "ChatGpt Setting system role for prediction";
         conversion.setSystemData(systemRole);
+    }
 
     AIChatCompletion chatCompletion(m_accountProxy.account);
     connect(this, &ChatGpt::aborted, &chatCompletion, &AIChatCompletion::requestAborted);
@@ -41,7 +51,7 @@ QJsonObject ChatGpt::predict(const QString &content, const QJsonArray &functions
 #ifdef OpenTextAuditService
     connect(m_tasMgr.data(), &TasManager::sigAuditContentResult, this, [&](QSharedPointer<TextAuditResult> result) {
         if (result && result->code == TextAuditEnum::None) {
-            emit readyReadChatDeltaContent(result->content);
+            textChainContent(result->content);
         } else if (result->code == TextAuditEnum::NetError) {
             setLastError(AIServer::ErrorType::NetworkError);
             setLastErrorString(ServerCodeTranslation::serverCodeTranslation(lastError(), ""));
@@ -57,7 +67,7 @@ QJsonObject ChatGpt::predict(const QString &content, const QJsonArray &functions
     });
 #endif
 
-    QPair<int, QString> errorpair = chatCompletion.create(modelId(), conversion, temperature);
+    QPair<int, QString> errorpair = chatCompletion.create(modelId(), conversion, m_params);
 
 #ifdef OpenTextAuditService
     do {
@@ -80,6 +90,7 @@ QJsonObject ChatGpt::predict(const QString &content, const QJsonArray &functions
 
     QJsonObject tools = conversion.getLastTools();
     if (!tools.isEmpty()) {
+        qCDebug(logLLM) << "ChatGpt Prediction returned tools response";
         response["tools"] = tools;
     }
     return response;
@@ -87,11 +98,23 @@ QJsonObject ChatGpt::predict(const QString &content, const QJsonArray &functions
 
 QList<QByteArray> ChatGpt::text2Image(const QString &prompt, int number)
 {
+    qCDebug(logLLM) << "Starting text2image with prompt length:" << prompt.length()
+                   << "and image count:" << number;
+
     AIImages textToImage(m_accountProxy.account);
     connect(this, &ChatGpt::aborted, &textToImage, &AIImages::requestAborted);
 
     QList<QByteArray> imageData;
     QPair<int, QString> errorpair = textToImage.create(prompt, imageData, number);
+    
+    if (errorpair.first != 0) {
+        qCWarning(logLLM) << "Text2Image failed with error:" << errorpair.first
+                         << "-" << errorpair.second;
+    } else {
+        qCDebug(logLLM) << "Text2Image completed successfully, generated" 
+                       << imageData.size() << "images";
+    }
+
     setLastError(errorpair.first);
     setLastErrorString(errorpair.second);
 
@@ -100,13 +123,23 @@ QList<QByteArray> ChatGpt::text2Image(const QString &prompt, int number)
 
 QPair<int, QString> ChatGpt::verify()
 {
+    qCDebug(logLLM) << "Starting account verification";
+
     AIConversation conversion;
     conversion.addUserData("Account verification only, no need for any response.");
 
     AIChatCompletion chatCompletion(m_accountProxy.account);
     connect(this, &ChatGpt::aborted, &chatCompletion, &AIChatCompletion::requestAborted);
 
-    QPair<int, QString> errorpair = chatCompletion.create(modelId(), conversion);
+    QPair<int, QString> errorpair = chatCompletion.create(modelId(), conversion, m_params);
+    
+    if (errorpair.first != 0) {
+        qCWarning(logLLM) << "Account verification failed with error:" << errorpair.first
+                         << "-" << errorpair.second;
+    } else {
+        qCDebug(logLLM) << "Account verification successful";
+    }
+
     setLastError(errorpair.first);
     setLastErrorString(errorpair.second);
 
@@ -115,8 +148,14 @@ QPair<int, QString> ChatGpt::verify()
 
 void ChatGpt::onReadyReadChatDeltaContent(const QByteArray &content)
 {
-    if (content.isEmpty() || !stream())
+    if (content.isEmpty())
         return;
+
+    m_replied = true;
+
+    if (!stream())
+        return;
+
     const QJsonObject &deltacontent = AIConversation::parseContentString(content);
 
 #ifdef OpenTextAuditService
@@ -125,6 +164,6 @@ void ChatGpt::onReadyReadChatDeltaContent(const QByteArray &content)
     }
 #else
     if (deltacontent.contains("content"))
-        emit readyReadChatDeltaContent(deltacontent.value("content").toString());
+        textChainContent(deltacontent.value("content").toString());
 #endif
 }

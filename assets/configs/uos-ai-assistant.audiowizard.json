@@ -1,0 +1,17 @@
+{
+    "magic":"dsg.config.meta",
+    "version":"1.0",
+    "contents":{
+        "iatNoSpeakDelayMs": {
+            "value":5000,
+            "serial":0,
+            "flags":[],
+            "name":"IAT no speek delay(ms)",
+            "name[zh_CN]":"语音听写未说话提醒延时(ms)",
+            "description":"IAT no speek delay(ms)",
+            "description[zh_CN]":"语音听写未说话提醒延时(ms)",
+            "permissions":"readwrite",
+            "visibility":"private"
+        }
+    }
+}

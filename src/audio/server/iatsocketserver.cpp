@@ -2,6 +2,9 @@
 #include "authweburl.h"
 #include "networkdefs.h"
 #include "iatcodetranslation.h"
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
 const int STATUS_FIRST_FRAME    = 0;
 const int STATUS_CONTINUE_FRAME = 1;
@@ -24,7 +27,7 @@ IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
             return;
         }
 
-        qWarning() << "IatSocketServer::request error " << errorCode << m_web->errorString();
+        qCWarning(logAudio) << "WebSocket error:" << errorCode << m_web->errorString();
         AIServer::ErrorType serverError = AIServer::socketErrorToAiServerError(static_cast<QAbstractSocket::SocketError>(errorCode));
         QString errorMessage = IatCodeTranslation::serverCodeTranslation(serverError, m_web->errorString());
 
@@ -34,6 +37,7 @@ IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
 
         emit error(serverError, errorMessage);
     });
+
     connect(m_web.data(), &QWebSocket::textMessageReceived, this, &IatSocketServer::onTextMessageReceived);
     connect(m_web.data(), &QWebSocket::disconnected, this, &IatSocketServer::onDisconnected);
 
@@ -43,7 +47,7 @@ IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
     m_abnormalExitTimer.setSingleShot(true);
     connect(&m_abnormalExitTimer, &QTimer::timeout, this, [=](){
         if (m_error == AIServer::OperationCanceledError) {
-            qDebug() << __func__ << "time out, server exit...";
+            qCDebug(logAudio) << "Abnormal exit timeout triggered";
             normalExitServer();
         }
     });
@@ -64,20 +68,22 @@ void IatSocketServer::onTextMessageReceived(const QString &message)
     QJsonObject msgObj = QJsonDocument::fromJson(message.toUtf8()).object();
     int code = msgObj.value("code").toInt();
     QString errorMessage = msgObj.value("message").toString();
+    
     if (code == 0) {
         QJsonObject dataObj = msgObj.value("data").toObject();
         int status = dataObj.value("status").toInt();
         m_pgsParser.appendResult(dataObj.value("result").toObject());
+        qCDebug(logAudio) << "Received text message, status:" << status << "length:" << m_pgsParser.getText().length();
         emit textReceived(m_pgsParser.getText(), status == STATUS_LAST_FRAME);
-        //qDebug() << __func__ << "received message: " << m_pgsParser.getText() << "    is last frame: " << (status == STATUS_LAST_FRAME);
 
         if (status == STATUS_LAST_FRAME) {
             if (m_abnormalExitTimer.isActive())
                 m_abnormalExitTimer.stop();
-            normalExitServer(); // 收到最后一帧数据后再退出
+            qCDebug(logAudio) << "Received last frame, exiting normally";
+            normalExitServer();
         }
     } else {
-        qWarning() << "IatSocketServer code = " << code << " message = " << errorMessage;
+        qCWarning(logAudio) << "Server error - code:" << code << "message:" << errorMessage;
         emit error(AIServer::ContentAccessDenied, IatCodeTranslation::serverCodeTranslation(code, errorMessage));
     }
 }
@@ -90,22 +96,25 @@ void IatSocketServer::onDisconnected()
 void IatSocketServer::processData()
 {
     if (m_data.isEmpty() && m_error == AIServer::OperationCanceledError) {
+        qCDebug(logAudio) << "No data to process with cancel error, starting abnormal exit timer";
         m_processTimer.stop();
-        //emit textReceived(m_pgsParser.getText(), true);
         m_abnormalExitTimer.start(3 * 1000);
         return;
     }
 
     if (m_data.isEmpty()) {
+        qCDebug(logAudio) << "No data to process, stopping timer";
         m_processTimer.stop();
         return;
     }
 
     if (m_web->state() != QAbstractSocket::ConnectedState) {
+        qCDebug(logAudio) << "WebSocket not connected, skipping data processing";
         return;
     }
 
     QByteArray extractedData = m_data.left(payloadSize);
+    
     if (extractedData.size() < payloadSize && m_error == AIServer::OperationCanceledError) {
         m_readStatus = STATUS_LAST_FRAME;
     } else if (extractedData.size() < payloadSize) {

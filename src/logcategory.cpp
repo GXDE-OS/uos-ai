@@ -1,0 +1,22 @@
+#include <QLoggingCategory>
+
+// Define logging category
+Q_LOGGING_CATEGORY(logMain, "uosai.main")
+Q_LOGGING_CATEGORY(logHttp, "uosai.http")
+Q_LOGGING_CATEGORY(logOsControl, "uosai.oscontrol")
+Q_LOGGING_CATEGORY(logExternalLLM, "uosai.externalllm")
+Q_LOGGING_CATEGORY(logLLM, "uosai.llm")
+Q_LOGGING_CATEGORY(logTreeland, "uosai.treeland")
+Q_LOGGING_CATEGORY(logWayland, "uosai.wayland")
+Q_LOGGING_CATEGORY(logAudio, "uosai.audio")
+Q_LOGGING_CATEGORY(logAudioWizard, "uosai.audiowizard")
+Q_LOGGING_CATEGORY(logDBS, "uosai.dbs")
+Q_LOGGING_CATEGORY(logAIGUI, "uosai.gui")
+Q_LOGGING_CATEGORY(logAIVUE, "uosai.vue")
+Q_LOGGING_CATEGORY(logWrapper, "uosai.wrapper")
+Q_LOGGING_CATEGORY(logDBus, "uosai.dbus")
+Q_LOGGING_CATEGORY(logTools, "uosai.tools")
+Q_LOGGING_CATEGORY(logUtils, "uosai.utils")
+Q_LOGGING_CATEGORY(logWordWizard, "uosai.wordwizard")
+Q_LOGGING_CATEGORY(logTAS, "uosai.tas")
+Q_LOGGING_CATEGORY(logAgent, "uosai.agent")

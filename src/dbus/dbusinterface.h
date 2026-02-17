@@ -9,7 +9,7 @@
 #include <QDBusContext>
 
 class AppDbusObject;
-class DBusInterface : public QThread, protected QDBusContext
+class DBusInterface : public QObject, protected QDBusContext
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "com.deepin.copilot")
@@ -82,7 +82,32 @@ public Q_SLOTS:
      */
     Q_SCRIPTABLE void launchLLMUiPage(bool openAddAccountDialog);
 
+    /**
+     * @brief raise the wordwizard widget
+     * This function was added in v1.4
+     */
+    Q_SCRIPTABLE void launchWordWizard();
 
+    /**
+     * @brief ctrl + Alt + U Translate the selected text
+     * This function was added in v2.7
+     */
+    Q_SCRIPTABLE void textTranslation();
+
+    /**
+     * @brief ctrl + Alt + Q Start screenshot for AI analysis
+     * This function was added in v2.10
+     */
+    Q_SCRIPTABLE void startScreenshot();
+
+    Q_SCRIPTABLE bool isCopilotEnabled();
+
+    /**
+     * @brief for screenshot to upload picture
+     * This function was added in v2.12
+     */
+    Q_SCRIPTABLE void launchAiQuickOCR(int type, QString query, QPoint pos, bool isCustom, const QString &imagePath);
+    Q_SCRIPTABLE void launchChatUploadImage(const QString &imagePath);
 //to be removed in the future
 public Q_SLOTS:
     /**
@@ -124,9 +149,19 @@ public:
 signals:
     void sigTask(TaskType type);
 
-    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false);
+    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString &locateTitle = "");
 
     void sigToLaunchChat(int index);
+
+    void sigToLaunchWordWizard();
+
+    void sigToTranslate();
+
+    void sigToStartScreenshot();
+
+    void sigToLaunchAiQuickOCR(int type, QString query, QPoint pos, bool isCustom, const QString &imagePath);
+
+    void sigToUploadImage(const QString &imagePath);
 
 private slots:
     /**

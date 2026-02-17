@@ -7,6 +7,9 @@
 #include <QOpenGLContext>
 #include <QDebug>
 
+#include <QLoggingCategory>
+Q_DECLARE_LOGGING_CATEGORY(logUtils)
+
 bool ESystemContext::isWayland()
 {
     static bool hasChecked = false;
@@ -25,6 +28,15 @@ bool ESystemContext::isWayland()
 
     hasChecked = true;
     return wayland;
+}
+
+bool ESystemContext::isTreeland()
+{
+#ifdef COMPILE_ON_V25
+    return ESystemContext::isWayland();
+#else
+    return false;
+#endif
 }
 
 bool ESystemContext::needToDoneCurrentForOpenGL()
@@ -101,7 +113,7 @@ bool ESystemContext::isSupportOpenGLES()
 void ESystemContext::configOpenGL()
 {
     if (!isSupportOpenGL()) {
-        qWarning() << "OpenGL is not supported!!!";
+        qCWarning(logUtils) << "OpenGL is not supported!!!";
 
         if (isSupportOpenGLES()) {
             QSurfaceFormat format;
@@ -109,7 +121,7 @@ void ESystemContext::configOpenGL()
             format.setRenderableType(QSurfaceFormat::OpenGLES);
             format.setDefaultFormat(format);
         } else {
-            qWarning() << "OpenGLES is not supported!!!";
+            qCWarning(logUtils) << "OpenGLES is not supported!!!";
         }
     }
 }

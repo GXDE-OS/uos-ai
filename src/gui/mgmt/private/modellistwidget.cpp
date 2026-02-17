@@ -2,11 +2,17 @@
 #include "modellistitem.h"
 #include "addmodeldialog.h"
 #include "themedlable.h"
+#include "uosfreeaccounts.h"
+#include "utils/util.h"
+
+#include <DLabel>
 
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QLoggingCategory>
 
-#include <DLabel>
+using namespace uos_ai;
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 ModelListWidget::ModelListWidget(DWidget *parent)
     : DWidget(parent)
@@ -20,8 +26,13 @@ void ModelListWidget::initUI()
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
-    layout->setMargin(0);
     layout->setSpacing(10);
+
+    m_pGetFreeAccountButton = new IconCommandLinkButton(tr("Get a free account"), IconPosition::Left, this);//Claim a free account
+    m_pGetFreeAccountButton->setIcon(QIcon::fromTheme(":/assets/images/free_account.svg").pixmap(QSize(16, 16)));
+    DFontSizeManager::instance()->bind(m_pGetFreeAccountButton, DFontSizeManager::T8, QFont::Normal);
+    m_pGetFreeAccountButton->setProperty("editMode", false);
+    m_pGetFreeAccountButton->hide();
 
     m_pEditButton = new DCommandLinkButton(tr("Delete"), this);
     DFontSizeManager::instance()->bind(m_pEditButton, DFontSizeManager::T8, QFont::Normal);
@@ -32,15 +43,15 @@ void ModelListWidget::initUI()
 
     QHBoxLayout *modelLayout = new QHBoxLayout;
     modelLayout->setContentsMargins(0, 0, 0, 0);
-    modelLayout->setMargin(0);
     modelLayout->setSpacing(0);
 
-    ThemedLable *label = new ThemedLable(tr("Online model"));
-    label->setPaletteColor(QPalette::Text, DPalette::TextTitle);
-    DFontSizeManager::instance()->bind(label, DFontSizeManager::T5, QFont::Medium);
-    modelLayout->addWidget(label);
+    m_pWidgetLabel = new ThemedLable(tr("Online model"));
+    m_pWidgetLabel->setPaletteColor(QPalette::WindowText, DPalette::TextTitle);
+    DFontSizeManager::instance()->bind(m_pWidgetLabel, DFontSizeManager::T6, QFont::Medium);
+    modelLayout->addWidget(m_pWidgetLabel);
 
     modelLayout->addStretch();
+    modelLayout->addWidget(m_pGetFreeAccountButton);
     modelLayout->addWidget(m_pEditButton);
     modelLayout->addWidget(m_pAddButton);
 
@@ -51,6 +62,7 @@ void ModelListWidget::initUI()
 
 void ModelListWidget::initConnect()
 {
+    connect(m_pGetFreeAccountButton, &IconCommandLinkButton::clicked, this, &ModelListWidget::onGetFreeAccount);
     connect(m_pEditButton, &DCommandLinkButton::clicked, this, &ModelListWidget::onEditButtonClicked);
     connect(m_pAddButton, &DCommandLinkButton::clicked, this, &ModelListWidget::signalAddModel);
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &ModelListWidget::onThemeTypeChanged);
@@ -65,6 +77,8 @@ void ModelListWidget::onThemeTypeChanged()
     DPalette pl1 = m_pNoModelWidget->palette();
     pl1.setBrush(DPalette::Base, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::ItemBackground));
     m_pNoModelWidget->setPalette(pl1);
+
+    qCDebug(logAIGUI) << "Theme type changed for ModelListWidget.";
 }
 
 void ModelListWidget::onEditButtonClicked()
@@ -80,6 +94,8 @@ void ModelListWidget::onEditButtonClicked()
 
     editMode ? m_pEditButton->setText(tr("Done")) : m_pEditButton->setText(tr("Delete"));
     m_pAddButton->setEnabled(!editMode);
+    m_pGetFreeAccountButton->setEnabled(!editMode);
+    qCInfo(logAIGUI) << "Edit button clicked. editMode:" << editMode;
 }
 
 DWidget *ModelListWidget::noModelWidget()
@@ -107,7 +123,6 @@ DWidget *ModelListWidget::hasModelWidget()
     DWidget *widget = new DWidget(this);
     auto layout = new QVBoxLayout(widget);
     layout->setContentsMargins(0, 0, 0, 0);
-    layout->setMargin(0);
 
     m_pHasModelWidget = new DBackgroundGroup(layout, this);
     m_pHasModelWidget->setContentsMargins(0, 0, 0, 0);
@@ -124,11 +139,12 @@ void ModelListWidget::setModelList(const QList<LLMServerProxy> &llmList)
     }
 
     for (auto llm : llmList) {
-        if (llm.model == LLMChatModel::LOCAL_TEXT2IMAGE) continue;
+        if (llm.model == LLMChatModel::LOCAL_TEXT2IMAGE || llm.model == LLMChatModel::PRIVATE_MODEL) continue;
         onAppendModel(llm);
     }
 
     adjustWidgetSize();
+    qCInfo(logAIGUI) << "Model list set. count:" << llmList.size();
 }
 
 void ModelListWidget::onAppendModel(const LLMServerProxy &llmServerProxy)
@@ -144,6 +160,12 @@ void ModelListWidget::onAppendModel(const LLMServerProxy &llmServerProxy)
     m_pEditButton->setText(tr("Delete"));
 }
 
+void ModelListWidget::onGetFreeAccount()
+{
+    qCInfo(logAIGUI) << "Get free account button clicked.";
+    emit signalGetFreeAccountClicked();
+}
+
 void ModelListWidget::removeModel(const LLMServerProxy &llmServerProxy)
 {
     auto item = m_pHasModelWidget->findChild<ModelListItem *>("ModelListItem_" + llmServerProxy.id);
@@ -154,6 +176,7 @@ void ModelListWidget::removeModel(const LLMServerProxy &llmServerProxy)
     delete item;
 
     adjustWidgetSize();
+    qCInfo(logAIGUI) << "Model removed. id:" << llmServerProxy.id;
 }
 
 void ModelListWidget::adjustWidgetSize()
@@ -164,17 +187,76 @@ void ModelListWidget::adjustWidgetSize()
         m_pEditButton->hide();
         m_pEditButton->setProperty("editMode", false);
         m_pAddButton->setEnabled(true);
-    } else {
+        m_pGetFreeAccountButton->setEnabled(true);
+    }
+    else {
         m_pNoModelWidget->hide();
         m_pHasModelWidget->show();
         m_pEditButton->show();
     }
-    adjustSize();
+
+    checkActivityExists();//判断免费活动是否超时
+    //adjustSize();//屏蔽防止重新布局条目过小的问题
 }
 
 void ModelListWidget::resetEditButton()
 {
     if (m_pEditButton->property("editMode").toBool()) {
         onEditButtonClicked();
+        qCDebug(logAIGUI) << "Reset edit button.";
     }
 }
+
+QString ModelListWidget::getTitleName()
+{
+    return m_pWidgetLabel->text();
+}
+
+void ModelListWidget::checkActivityExists()
+{
+    if (m_pHasModelWidget->layout()->count() > 0) {
+        auto items = m_pHasModelWidget->findChildren<ModelListItem *>();
+        for (auto item : items) {
+            if (item->getData().type == FREE_NORMAL) {  // 普通免费账号
+                m_pGetFreeAccountButton->hide();
+                return;
+            }
+        }
+    }
+
+    if (m_watcher && m_watcher->isRunning())
+            return;
+    m_watcher.reset(new QFutureWatcher<QNetworkReply::NetworkError>);
+#ifdef ENABLE_FREEACCOUNT
+    {
+#else
+    if (UOSAI_NAMESPACE::Util::checkLanguage()) {
+#endif
+        QFuture<QNetworkReply::NetworkError> future = QtConcurrent::run([ = ] {
+            return UosFreeAccounts::instance().freeAccountButtonDisplay("account", m_hasActivity);
+        });
+        m_watcher->setFuture(future);
+        connect(m_watcher.data(), &QFutureWatcher<QNetworkReply::NetworkError>::finished, this, [ = ]() {
+            if( m_pHasModelWidget->layout()->count() > 0) {
+                auto items = m_pHasModelWidget->findChildren<ModelListItem *>();
+                for (auto item : items) {
+                    if (item->getData().type == FREE_NORMAL) {  // 普通免费账号
+                        m_pGetFreeAccountButton->hide();
+                        return;
+                    }
+                }
+            }
+
+            if (QNetworkReply::NoError == m_watcher.data()->future().result() && m_hasActivity.display) {
+                m_pGetFreeAccountButton->show();
+            } else
+                m_pGetFreeAccountButton->hide();
+        });
+    }
+}
+
+void ModelListWidget::hiddenGetFreeAccountButton()
+{
+    m_pGetFreeAccountButton->hide();
+}
+

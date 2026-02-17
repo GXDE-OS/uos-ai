@@ -8,6 +8,8 @@
 #include <DLabel>
 #include <DSpinner>
 #include <DGuiApplicationHelper>
+#include <DTipLabel>
+#include <QScreen>
 
 DWIDGET_USE_NAMESPACE
 DGUI_USE_NAMESPACE
@@ -37,6 +39,8 @@ public:
 
     void setStatus(KnowledgeBaseProcessStatus status);
 
+    DLabel *getTipsIcon();
+
 signals:
     void clicked();
 
@@ -57,7 +61,7 @@ private:
     DLabel *m_pTipsIcon = nullptr;
     DSpinner *m_spinner = nullptr;
 
-    DLabel *m_tips = nullptr;
+    DTipLabel *m_tips = nullptr;
 
     bool m_bHighlight = false;
     bool m_bInterrupt = false;

@@ -16,10 +16,13 @@
 #include <QPainterPath>
 #include <QLabel>
 #include <QVBoxLayout>
+#include <QLoggingCategory>
 
 DGUI_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
 using namespace uos_ai;
+
+Q_DECLARE_LOGGING_CATEGORY(logTray)
 
 #define PANEL_ICON_SIZE  20
 
@@ -36,7 +39,6 @@ UosAiWidget::UosAiWidget(QWidget *parent)
 void UosAiWidget::paintEvent(QPaintEvent *e)
 {
     Q_UNUSED(e);
-
     QPainter painter(this);
 
     const auto ratio = devicePixelRatioF();
@@ -109,7 +111,9 @@ bool UosAiWidget::containCursorPos()
 
     rect = rect.adjusted(w, h, -w, -h);
 
-    return rect.contains(cursorPos);
+    bool contains = rect.contains(cursorPos);
+    qCDebug(logTray) << "UosAiWidget containCursorPos?" << contains;
+    return contains;
 }
 
 void UosAiWidget::loadSvg()
@@ -130,7 +134,7 @@ void UosAiWidget::loadSvg()
 #ifdef PLUGIN_ICON_MAX_SIZE
     iconSize = QSize(PLUGIN_ICON_MAX_SIZE, PLUGIN_ICON_MAX_SIZE);
 #endif
-//#ifdef USE_V23_DOCK
+//#ifdef 0
     iconSize = QSize(16, 16);
 //#endif
 
@@ -143,12 +147,13 @@ void UosAiWidget::loadSvg()
     renderer.render(&painter);
     painter.end();
     m_pixmap.setDevicePixelRatio(ratio);
+    qCDebug(logTray) << "UosAiWidget loaded SVG icon:" << icon << ", size:" << iconSize;
 }
 
 QuickPanel::QuickPanel(const QString &desc, QWidget *parent)
 {
     QVBoxLayout *lay = new QVBoxLayout;
-    lay->setMargin(10);
+    lay->setContentsMargins(10, 10, 10, 10);
     lay->setSpacing(0);
     lay->addStretch(1);
 

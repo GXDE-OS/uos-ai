@@ -1,11 +1,14 @@
 #include "httpaccessmanager.h"
 #include "httpeventloop.h"
 
+#include <QLoggingCategory>
 #include <QNetworkReply>
 #include <QAuthenticator>
 #include <QNetworkProxy>
 
-const int tryLoginCount = 2;
+Q_DECLARE_LOGGING_CATEGORY(logHttp)
+
+static const int tryLoginCount = 2;
 HttpAccessmanager::HttpAccessmanager(const std::string &user, const std::string &password)
     : m_user(QString::fromStdString(user))
     , m_passwd(QString::fromStdString(password))
@@ -32,6 +35,12 @@ QNetworkReply *HttpAccessmanager::get(const QNetworkRequest &request)
     return m_manager->get(request);
 }
 
+QNetworkReply *HttpAccessmanager::put(const QNetworkRequest &request, const QByteArray &data)
+{
+    m_retries = 0;
+    return m_manager->put(request, data);
+}
+
 QNetworkReply *HttpAccessmanager::post(const QNetworkRequest &request, const QByteArray &data)
 {
     m_retries = 0;
@@ -56,7 +65,7 @@ QNetworkRequest HttpAccessmanager::baseNetWorkRequest(const QUrl &url, bool useS
 #ifndef QT_NO_SSL
     if (useSsl) {
         QSslConfiguration sslConfig = req.sslConfiguration();
-        sslConfig.setPeerVerifyMode(QSslSocket::VerifyNone);
+        sslConfig.setPeerVerifyMode(QSslSocket::AutoVerifyPeer);
         req.setSslConfiguration(sslConfig);
     }
 #endif
@@ -76,6 +85,7 @@ void HttpAccessmanager::onAuthorizeResponse(QNetworkReply *reply, QAuthenticator
     Q_UNUSED(reply);
 
     if (m_user.isEmpty() && m_passwd.isEmpty()) {
+        qCWarning(logHttp) << "Authentication required but no credentials provided";
         m_retries = tryLoginCount;
         reply->abort();
         return;
@@ -85,11 +95,15 @@ void HttpAccessmanager::onAuthorizeResponse(QNetworkReply *reply, QAuthenticator
     authenticator->setPassword(m_passwd);
 
     m_retries++;
-    if (m_retries >= tryLoginCount) reply->abort();
+    if (m_retries >= tryLoginCount) {
+        qCWarning(logHttp) << "Authentication failed after" << tryLoginCount << "attempts";
+        reply->abort();
+    }
 }
 
 int HttpAccessmanager::verify(const QString &url)
 {
+    qCDebug(logHttp) << "Verifying URL:" << url;
     QNetworkRequest req;
 #ifndef QT_NO_SSL
     QSslConfiguration sslConfig = req.sslConfiguration();
@@ -103,10 +117,16 @@ int HttpAccessmanager::verify(const QString &url)
     loop.setHttpOutTime(10000);
     loop.exec();
 
-    if (m_retries >= tryLoginCount)
+    if (m_retries >= tryLoginCount) {
+        qCWarning(logHttp) << "Authentication required for URL:" << url;
         return QNetworkReply::NetworkError::AuthenticationRequiredError;
+    }
 
-    return loop.getNetWorkError();
+    int error = loop.getNetWorkError();
+    if (error != QNetworkReply::NoError) {
+        qCWarning(logHttp) << "Network error while verifying URL:" << url << "Error:" << error;
+    }
+    return error;
 }
 
 bool HttpAccessmanager::isAuthenticationRequiredError() const
@@ -119,6 +139,7 @@ bool HttpAccessmanager::isAuthenticationRequiredError() const
 
 void HttpAccessmanager::setHttpProxy(const QString &host, quint16 port, const QString &user, const QString &pass)
 {
+    qCInfo(logHttp) << "Setting HTTP proxy:" << host << ":" << port;
     QNetworkProxy proxy;
     proxy.setType(QNetworkProxy::HttpProxy);
     proxy.setHostName(host);
@@ -130,6 +151,7 @@ void HttpAccessmanager::setHttpProxy(const QString &host, quint16 port, const QS
 
 void HttpAccessmanager::setSocketProxy(const QString &host, quint16 port, const QString &user, const QString &pass)
 {
+    qCInfo(logHttp) << "Setting SOCKS5 proxy:" << host << ":" << port;
     QNetworkProxy proxy;
     proxy.setType(QNetworkProxy::Socks5Proxy);
     proxy.setHostName(host);
@@ -147,7 +169,7 @@ void HttpAccessmanager::setSystemProxy(const QString &host, quint16 port)
     QNetworkProxy setting;
     Q_FOREACH (setting, proxySettingsList) {
         if (!setting.hostName().isEmpty() && setting.capabilities().testFlag(QNetworkProxy::TunnelingCapability)) {
-            qInfo() << "system proxy = " << setting.type() << setting.hostName() << setting.port();
+            qCInfo(logHttp) << "system proxy = " << setting.type() << setting.hostName() << setting.port();
             m_manager->setProxy(setting);
             break;
         }

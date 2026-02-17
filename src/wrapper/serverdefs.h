@@ -8,7 +8,7 @@
 #include <QDebug>
 #include <QObject>
 
-#include "uosaccountencoder.h"
+#include "tas/uosaccountencoder.h"
 
 enum SocketProxyType {
     SYSTEM_PROXY  = 0,  // 系统代理
@@ -18,10 +18,11 @@ enum SocketProxyType {
 };
 
 enum LLMChatModel {
-    CHATGPT_3_5          = 0,   // GPT3.5
-    CHATGPT_3_5_16K      = 1,   // GPT3.5 16k
-    CHATGPT_4            = 2,   // GPT4
-    CHATGPT_4_32K        = 3,   // GPT4 32k
+    NoModel              = 0,
+    CHATGPT_3_5          = 1,   // GPT3.5
+    CHATGPT_3_5_16K      = 2,   // GPT3.5 16k
+    CHATGPT_4            = 3,   // GPT4
+    CHATGPT_4_32K        = 4,   // GPT4 32k
 
     SPARKDESK            = 10,  // 迅飞星火1.5
     SPARKDESK_2          = 11,  // 迅飞星火2.0
@@ -37,9 +38,24 @@ enum LLMChatModel {
     ChatZHIPUGLM_STD     = 51,  // 智谱AISTD
     ChatZHIPUGLM_LITE    = 52,  // 智谱AIpLITE
 
+    GEMINI_1_5_FLASH = 60, // gemini
+    GEMINI_1_5_PRO = 61,
+
+    COZE_AGENT = 70,
+
+    DeepSeek_R1 = 80,
+    DeepSeek_Uos_Free = 81, // 免费账号，v3和r1双模
+
     LOCAL_TEXT2IMAGE     = 1000,// 本地文本转图片模型
+    LOCAL_YOURONG_1_5B = 1200,
+    LOCAL_YOURONG_7B = 1201,
+    LOCAL_OTHER_MODEL = 1202,
     OPENAI_API_COMPATIBLE = 2000, // OPENAI API兼容模型
-    PLUGIN_MODEL = 3000
+    OPENAI_API_WITH_AGENT = 2001, // OPENAI API，智能体插件使用
+    PLUGIN_MODEL = 3000,
+
+    PRIVATE_MODEL = 4000, //私有化部署模型
+    OPENROUTER_MODEL = 5000 // OPENROUTER 代理模型
 };
 
 enum ModelManufacturer {
@@ -49,8 +65,13 @@ enum ModelManufacturer {
     BAIDU_WXQF = 3,
     GPT360 = 4,
     ZHIPUGLM = 5,
+    DEEPSEEK = 6,
+    GEMINI = 20,
     MODEL_LOCAL = 100,
-    OPENAI_API = 200
+    MODELHUB = 130,
+    OPENAI_API = 200,
+    OPENROUTER_API = 300,
+    PRIVATE = 400,
 };
 
 enum ModelType {
@@ -63,7 +84,9 @@ enum ModelType {
 enum ChatAction {
     ChatTextPlain     = 0,      // 纯文本聊天
     ChatFunctionCall  = 1,      // FunctionCall
-    ChatText2Image    = 2       // 文生图
+    ChatText2Image    = 2,       // 文生图
+    ChatTextThink     = 3,       // 思考内容
+    ChatToolUse       = 4        // 智能体工具调用
 };
 
 enum AssistantType {
@@ -71,6 +94,9 @@ enum AssistantType {
     UOS_SYSTEM_ASSISTANT = 0x0002,
     DEEPIN_SYSTEM_ASSISTANT = 0x0003,
     PERSONAL_KNOWLEDGE_ASSISTANT = 0x0004,
+    AI_WRITING = 0x0005,
+    AI_TEXT_PROCESSING = 0x0006,
+    AI_TRANSLATION = 0x0007,
 
     PLUGIN_ASSISTANT = 0x0100
 };
@@ -154,6 +180,7 @@ struct AccountProxy {
 
 
 #define LLM_EXTKEY_VENDOR_MODEL "vendor_model"
+#define LLM_EXTKEY_VENDOR_PARAMS "vendor_params"
 #define LLM_EXTKEY_VENDOR_URL "vendor_url"
 
 struct LLMServerProxy {
@@ -168,6 +195,8 @@ struct LLMServerProxy {
 
     bool isValid() const
     {
+        if (model == OPENAI_API_COMPATIBLE || model == PRIVATE_MODEL || model == OPENROUTER_MODEL)
+            return !id.isEmpty() && ext.value(LLM_EXTKEY_VENDOR_URL).isValid();
         return !id.isEmpty() && !account.apiKey.isEmpty();
     }
 
@@ -243,10 +272,10 @@ struct LLMServerProxy {
         case LLMChatModel::CHATGPT_4_32K:
             return QCoreApplication::translate("LLMServerProxy", "GPT4（OpenAI）");
         case LLMChatModel::GPT360_S2_V9:
-            return QCoreApplication::translate("LLMServerProxy", "360智脑");
+            return QCoreApplication::translate("LLMServerProxy", "360 AI"); // 360智脑
         case LLMChatModel::SPARKDESK:
             if (hasUrl) {
-                return QCoreApplication::translate("LLMServerProxy", "讯飞星火");
+                return QCoreApplication::translate("LLMServerProxy", "iFLYTEK-Spark"); // 讯飞星火
             } else {
                 return QCoreApplication::translate("LLMServerProxy", "星火大模型1.5（讯飞）");
             }
@@ -256,7 +285,7 @@ struct LLMServerProxy {
             return QCoreApplication::translate("LLMServerProxy", "星火大模型3.0（讯飞）");
         case LLMChatModel::WXQF_ERNIE_Bot:
             if (hasUrl) {
-                return QCoreApplication::translate("LLMServerProxy", "百度千帆");
+                return QCoreApplication::translate("LLMServerProxy", "Baidu-Ernie"); // 百度千帆
             } else {
                 return QCoreApplication::translate("LLMServerProxy", "ERNIE 3.5");
             }
@@ -267,11 +296,27 @@ struct LLMServerProxy {
         case LLMChatModel::ChatZHIPUGLM_PRO:
         case LLMChatModel::ChatZHIPUGLM_STD:
         case LLMChatModel::ChatZHIPUGLM_LITE:
-            return QCoreApplication::translate("LLMServerProxy", "ChatGLM-turbo（智谱）");
+            return QCoreApplication::translate("LLMServerProxy", "ChatGLM-turbo"); // ChatGLM-turbo（智谱）
+        case GEMINI_1_5_FLASH:
+            return QCoreApplication::translate("LLMServerProxy", "Gemini 1.5 Flash");
+        case GEMINI_1_5_PRO:
+            return QCoreApplication::translate("LLMServerProxy", "Gemini 1.5 Pro");
         case LLMChatModel::LOCAL_TEXT2IMAGE:
             return QCoreApplication::translate("LLMServerProxy", "TextToImage(Local)");
+        case LLMChatModel::LOCAL_YOURONG_1_5B:
+            return QCoreApplication::translate("LLMServerProxy", "YouRong 1.5B");
+        case LLMChatModel::LOCAL_YOURONG_7B:
+            return QCoreApplication::translate("LLMServerProxy", "YouRong 7B");
         case LLMChatModel::OPENAI_API_COMPATIBLE:
             return QCoreApplication::translate("LLMServerProxy", "Custom");
+        case LLMChatModel::PRIVATE_MODEL:
+            return QCoreApplication::translate("LLMServerProxy", "Private deployment model");
+        case LLMChatModel::OPENROUTER_MODEL:
+            return QCoreApplication::translate("LLMServerProxy", "OpenRouter");
+        case LLMChatModel::DeepSeek_R1:
+            return QCoreApplication::translate("LLMServerProxy", "DeepSeek-R1");
+        case LLMChatModel::DeepSeek_Uos_Free:
+            return QCoreApplication::translate("LLMServerProxy", "DeepSeek");
         }
 
         return QCoreApplication::translate("LLMServerProxy", "unknown model");
@@ -322,6 +367,12 @@ struct LLMServerProxy {
             name = "textimage.svg";
             break;
         }
+        case LLMChatModel::LOCAL_YOURONG_1_5B:
+        case LLMChatModel::LOCAL_YOURONG_7B:{
+            icon = ":/assets/images/uoslm.svg";
+            name = "uoslm.svg";
+            break;
+        }
         default:
             break;
         }
@@ -367,11 +418,28 @@ struct LLMServerProxy {
         case LLMChatModel::ChatZHIPUGLM_LITE: {
             return ModelManufacturer::ZHIPUGLM;
         }
+        case LLMChatModel::GEMINI_1_5_FLASH:
+        case LLMChatModel::GEMINI_1_5_PRO:
+            return ModelManufacturer::GEMINI;
         case LLMChatModel::LOCAL_TEXT2IMAGE: {
             return ModelManufacturer::MODEL_LOCAL;
         }
+        case LLMChatModel::LOCAL_YOURONG_1_5B:
+        case LLMChatModel::LOCAL_YOURONG_7B: 
+        case LLMChatModel::LOCAL_OTHER_MODEL:{
+            return ModelManufacturer::MODELHUB;
+        }
         case LLMChatModel::OPENAI_API_COMPATIBLE: {
             return ModelManufacturer::OPENAI_API;
+        }
+        case LLMChatModel::OPENROUTER_MODEL: {
+            return ModelManufacturer::OPENROUTER_API;
+        }
+        case LLMChatModel::PRIVATE_MODEL: {
+            return ModelManufacturer::PRIVATE;
+        }
+        case LLMChatModel::DeepSeek_R1: {
+            return ModelManufacturer::DEEPSEEK;
         }
         default:
             return ModelManufacturer::UNKNOWN_VENDOR;
@@ -388,6 +456,8 @@ struct AssistantProxy {
 
     QString icon = "uos-ai";
     QString iconPrefix = "icons/";
+
+    QString instList = "";
 
     bool isValid() const
     {
@@ -409,6 +479,15 @@ struct AssistantProxy {
             break;
         case PERSONAL_KNOWLEDGE_ASSISTANT:
             name = "Personal Knowledge Assistant";
+            break;
+        case AI_WRITING:
+            name = "AI Writing";
+            break;
+        case AI_TEXT_PROCESSING:
+            name = "AI Text Processing";
+            break;
+        case AI_TRANSLATION:
+            name = "AI Translation";
             break;
         default:
             break;
@@ -432,6 +511,15 @@ struct AssistantProxy {
         case PERSONAL_KNOWLEDGE_ASSISTANT:
             name = QObject::tr("Personal Knowledge Assistant");
             break;
+        case AI_WRITING:
+            name = QObject::tr("AI Writing");
+            break;
+        case AI_TEXT_PROCESSING:
+            name = QObject::tr("AI Text Processing");
+            break;
+        case AI_TRANSLATION:
+            name = QObject::tr("AI Translation");
+            break;
         default:
             break;
         }
@@ -443,16 +531,25 @@ struct AssistantProxy {
 
         switch (type) {
         case UOS_AI:
-            desc = QObject::tr("Welcome to UOS AI, the comprehensive assistant of UOS AI system.");
+            desc = QObject::tr("System's Comprehensive AI Assistant.");
             break;
         case UOS_SYSTEM_ASSISTANT:
-            desc = QObject::tr("UOS System Assistant, answers questions related to using the UOS operating system.");
+            desc = QObject::tr("Assists you with UOS system-related inquiries.");
             break;
         case DEEPIN_SYSTEM_ASSISTANT:
-            desc = QObject::tr("Deepin System Assistant, answering questions related to using the Deepin operating system.");
+            desc = QObject::tr("Assists you with Deepin system-related inquiries.");
             break;
         case PERSONAL_KNOWLEDGE_ASSISTANT:
-            desc = QObject::tr("A personal knowledge assistant who can answer questions and generate content based on your personal file data. You can add or delete knowledge on the Settings - Knowledge Base Management page.");
+            desc = QObject::tr("Answers questions based on your personal knowledge base.");
+            break;
+        case AI_WRITING:
+            desc = QObject::tr("Write Based on Your Topic and Requirements.");
+            break;
+        case AI_TEXT_PROCESSING:
+            desc = QObject::tr("Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.");
+            break;
+        case AI_TRANSLATION:
+            desc = QObject::tr("Your Translation Assistant, Mastering Multiple Languages.");
             break;
         default:
             break;
@@ -476,10 +573,41 @@ struct AssistantProxy {
         case PERSONAL_KNOWLEDGE_ASSISTANT:
             iconName = "personal-assistant";
             break;
+        case AI_WRITING:
+            iconName = "ai-writing";
+            break;
+        case AI_TEXT_PROCESSING:
+            iconName = "ai-text-processing";
+            break;
+        case AI_TRANSLATION:
+            iconName = "ai-translation";
+            break;
         default:
             break;
         }
         return iconName;
+    }
+};
+
+struct ToolUse
+{
+    enum Staus { Calling = 0, Completed, Failed, Canceled };
+    QString name;
+    QString params;
+    QString result;
+    QString content;
+    Staus status = Calling;
+    int index;
+
+   inline QJsonObject toJson() const {
+        QJsonObject obj;
+        obj.insert("name", name);
+        obj.insert("params", params);
+        obj.insert("result", result);
+        obj.insert("content", content);
+        obj.insert("status", static_cast<int>(status));
+        obj.insert("index", index);
+        return  obj;
     }
 };
 

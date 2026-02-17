@@ -12,7 +12,8 @@
 #include "dbwrapper.h"
 
 #include <QDebug>
-#include <QSound>
+#include <QSoundEffect>
+#include <QLoggingCategory>
 
 #ifdef AUDIOPATH
 static const QString &audioPath = AUDIOPATH;
@@ -20,18 +21,23 @@ static const QString &audioPath = AUDIOPATH;
 static const QString &audioPath = "/usr/lib/uos-ai-assistant/audio";
 #endif
 
+Q_DECLARE_LOGGING_CATEGORY(logAudio)
+
 AudioControler::AudioControler(QObject *parent)
     : QThread(parent)
 {
     connect(AudioDbusInterface::instance(), &AudioDbusInterface::defaultOutputChanged, this, [this]() {
+        qCDebug(logAudio) << "Audio output device changed";
         emit playDeviceChanged(audioOutputDeviceValid());
     });
 
     connect(AudioDbusInterface::instance(), &AudioDbusInterface::defaultInputChanged, this, [this]() {
+        qCDebug(logAudio) << "Audio input device changed";
         emit recordDeviceChange(audioInputDeviceValid());
     });
 
     m_audioModel = DbWrapper::localDbWrapper().getLocalSpeech() ? Local : NetWork;
+    qCDebug(logAudio) << "Initial audio model:" << m_audioModel;
 
     moveToThread(this);
     start();
@@ -63,6 +69,7 @@ bool AudioControler::audioOutputDeviceValid()
 
 bool AudioControler::switchModel(AudioModel model)
 {
+    qCDebug(logAudio) << "Switching audio model from" << m_audioModel << "to" << model;
     m_audioModel = model;
     return true;
 }
@@ -134,6 +141,7 @@ void AudioControler::resetTtsServer(const QString &id)
         m_ttsServer->setModel(m_audioModel);
         connect(m_ttsServer.data(), &TtsServer::error, this, &AudioControler::ttsServerError, Qt::QueuedConnection);
         connect(m_ttsServer.data(), &TtsServer::appendAudioData, this, &AudioControler::ttsAudioData, Qt::QueuedConnection);
+        connect(m_ttsServer.data(), &TtsServer::audioNullFinished, this, &AudioControler::playTextFinished, Qt::QueuedConnection);
     }
 }
 
@@ -177,6 +185,7 @@ void AudioControler::iatserverError(int code, const QString &errorString)
 bool AudioControler::startRecorder()
 {
     if (!audioInputDeviceValid()) {
+        qCWarning(logAudio) << "Invalid audio input device";
         emit playerError(AIServer::AudioInputDeviceInvalid
                          , ServerCodeTranslation::serverCodeTranslation(AIServer::AudioInputDeviceInvalid
                                                                         , "invalid input device"));
@@ -216,11 +225,15 @@ void AudioControler::playSystemSound(AudioSystemEffect effect)
     if (path.isEmpty())
         return;
 
-    QSound::play(path);
+    m_sound.reset(new QSoundEffect);
+    m_sound->setSource(QUrl::fromLocalFile(path));
+    m_sound->play();
 }
 
 bool AudioControler::startAppendPlayText(const QString &id, const QString &text, bool isEnd)
 {
+    qCDebug(logAudio) << "Starting to play text, ID:" << id << "Length:" << text.length() << "isEnd:" << isEnd;
+    
     if (!audioOutputDeviceValid()) {
         emit playerError(AIServer::AudioOutputDeviceInvalid
                          , ServerCodeTranslation::serverCodeTranslation(AIServer::AudioOutputDeviceInvalid
@@ -228,17 +241,24 @@ bool AudioControler::startAppendPlayText(const QString &id, const QString &text,
         return false;
     }
 
+    //特殊字符过滤 * # \ _
+    QString filterResult = filterMarkdown(text);
+    qCDebug(logAudio) << "Filtered text length:" << filterResult.length();
+
     if (m_tempDir.isValid()) {
         QString tempFile = m_tempDir.path() + "/" + id;
         if (QFile::exists(tempFile)) {
+            qCDebug(logAudio) << "Playing from existing audio file:" << tempFile;
             return m_audioPlayer->playFileSync(id, tempFile);
         } else {
             if (m_audioPlayer->id() == id && m_audioPlayer->isStreamPlaying()) {
-                emit m_audioPlayer->appendPlayText(id, text, false, isEnd);
+                qCDebug(logAudio) << "Appending to existing stream";
+                emit m_audioPlayer->appendPlayText(id, filterResult, false, isEnd);
             } else {
+                qCDebug(logAudio) << "Appending to existing stream";
                 m_audioData.clear();
                 bool ret = m_audioPlayer->startStream(id);
-                if (ret) emit m_audioPlayer->appendPlayText(id, text, true, isEnd);
+                if (ret) emit m_audioPlayer->appendPlayText(id, filterResult, true, isEnd);
                 return ret;
             }
         }
@@ -248,6 +268,18 @@ bool AudioControler::startAppendPlayText(const QString &id, const QString &text,
     }
 
     return true;
+}
+
+QString AudioControler::filterMarkdown(const QString &markdownText)
+{
+    QRegularExpression filterRegex("[*#\\\\_]");
+
+    QString filteredText = markdownText;
+    filteredText.replace(filterRegex, "");
+
+    filteredText = filteredText.simplified();
+
+    return filteredText;
 }
 
 void AudioControler::onAudioRecorded(QByteArray data)
@@ -280,7 +312,7 @@ void AudioControler::onRecordStarted()
 void AudioControler::ttsAudioData(const QString &id, const QByteArray &data, bool isLast)
 {
     if (m_audioPlayer->id() != id) {
-        qWarning() << "AppendAudioData Error " << id;
+        qCWarning(logAudio) << "ID mismatch, expected:" << m_audioPlayer->id() << "got:" << id;
         return;
     }
 
@@ -292,10 +324,11 @@ void AudioControler::ttsAudioData(const QString &id, const QByteArray &data, boo
         QString tempFile = m_tempDir.path() + "/" + m_audioPlayer->id();
         QFile file(tempFile);
         if (!file.open(QIODevice::WriteOnly)) {
-            qWarning() << "write audio file error = " << file.errorString() << tempFile;
+            qCWarning(logAudio) << "Failed to write audio file:" << file.errorString() << tempFile;
         } else {
             file.write(m_audioData);
             file.close();
+            qCDebug(logAudio) << "Saved audio data to:" << tempFile;
         }
 
         clearTtsData();

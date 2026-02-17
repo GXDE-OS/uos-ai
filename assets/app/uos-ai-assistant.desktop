@@ -2,8 +2,8 @@
 Categories=Qt;
 Comment=uos-ai
 Exec=/usr/bin/uos-ai-assistant --chat
-GenericName=Uos ai assistant
-Icon=UosAiAssistant
+GenericName=UOS AI
+Icon=UosAiAssistantLogo
 Name=UOS AI
 StartupNotify=false
 Type=Application

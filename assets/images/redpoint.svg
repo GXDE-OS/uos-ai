@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>list_delete</title>
+    <defs>
+        <circle id="path-1" cx="8" cy="8.5" r="5"></circle>
+        <filter x="-35.0%" y="-25.0%" width="170.0%" height="170.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="v2.7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="本地模型在线更新-设置" transform="translate(-569, -616)">
+            <g id="编组-4" transform="translate(215, 201)">
+                <g id="编组-5" transform="translate(210, 105)">
+                    <g id="选项-copy-6" transform="translate(0, 157)">
+                        <g id="编组-14备份-2" transform="translate(0, 140)">
+                            <g id="编组-2" transform="translate(16, 11)">
+                                <g id="list_delete" transform="translate(128, 2)">
+                                    <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                                    <g id="Oval-359">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#FF6A6A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>文本处理</title>
+    <defs>
+        <filter x="-15.0%" y="-7.5%" width="130.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="3.58929639%" x2="50%" y2="98.2364023%" id="linearGradient-2">
+            <stop stop-color="#4D97F2" offset="0%"></stop>
+            <stop stop-color="#4A69F4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="v2.8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-431, -479)">
+            <g id="文本处理" transform="translate(431, 479)">
+                <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                <g id="编组-3" filter="url(#filter-1)" transform="translate(1.3333, 1.3333)">
+                    <g id="编组-7" fill="url(#linearGradient-2)">
+                        <path d="M2.94294294,0 L10.3903904,0 C12.0157329,0 13.3333333,1.31760044 13.3333333,2.94294294 L13.3333333,10.3903904 C13.3333333,12.0157329 12.0157329,13.3333333 10.3903904,13.3333333 L2.94294294,13.3333333 C1.31760044,13.3333333 0,12.0157329 0,10.3903904 L0,2.94294294 C0,1.31760044 1.31760044,0 2.94294294,0 Z" id="蒙版备份-4"></path>
+                    </g>
+                    <path d="M9.18986494,5.7255461 L9.27548968,5.52923712 C9.42809337,5.1792069 9.70295362,4.90051949 10.0459387,4.74805798 L10.3096878,4.6308098 C10.4523263,4.56741054 10.4523263,4.35998266 10.3096878,4.29658341 L10.0606956,4.18588718 C9.7088911,4.02950421 9.42910031,3.74050302 9.27910078,3.37858349 L9.19118439,3.16644291 C9.12993458,3.0185931 8.92562966,3.0185931 8.86434513,3.16644291 L8.77642874,3.37858349 C8.62646393,3.74050302 8.34667314,4.02950421 7.99486868,4.18588718 L7.74584168,4.29658341 C7.60323796,4.35998266 7.60323796,4.56741054 7.74584168,4.6308098 L8.00962558,4.74805798 C8.35261062,4.90051949 8.62747087,5.1792069 8.78007456,5.52923712 L8.86566457,5.7255461 C8.92833798,5.86926241 9.12722625,5.86926241 9.18986494,5.7255461 Z" id="路径" fill="#F1FFCB" fill-rule="nonzero"></path>
+                    <rect id="矩形" fill="#F1FFCB" fill-rule="nonzero" x="2.77777778" y="8.05555556" width="7.77777778" height="1"></rect>
+                    <rect id="矩形" fill="#F1FFCB" fill-rule="nonzero" x="2.77777778" y="9.44444444" width="7.77777778" height="1"></rect>
+                    <rect id="矩形" fill="#F1FFCB" fill-rule="nonzero" x="7.36111111" y="6.66666667" width="3.19444444" height="1"></rect>
+                    <polygon id="路径" fill="#2CF2FF" fill-rule="nonzero" points="2.91666667 3.19444444 6.52777778 3.19444444 6.52777778 4.27203065 5.80555556 4.27203065 5.80555556 3.91283525 5.08333333 3.91283525 5.08333333 6.64272031 5.625 6.64272031 5.625 7.36111111 3.81944444 7.36111111 3.81944444 6.64272031 4.36111111 6.64272031 4.36111111 3.91283525 3.63888889 3.91283525 3.63888889 4.27203065 2.91666667 4.27203065"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

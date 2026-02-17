@@ -8,10 +8,6 @@
 #include <QWidget>
 #include <QIcon>
 
-#ifdef DOCK_MIN_SIZE
-#define USE_V23_DOCK
-#endif
-
 class QLabel;
 
 namespace uos_ai {

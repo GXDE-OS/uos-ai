@@ -53,7 +53,7 @@ QMap<int, QString> WXQFCodeTranslation::errorMessages()
 QString WXQFCodeTranslation::serverCodeTranlation(int code, const QString &message)
 {
     if (errorMessages().contains(code))
-        return errorMessages()[code] + QString("(%1)").arg(message);
+        return errorMessages()[code];
 
     return message;
 }

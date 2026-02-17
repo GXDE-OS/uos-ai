@@ -5,13 +5,16 @@
 #include "operatinglinewidget.h"
 #include "embeddingserver.h"
 
-#include <QHBoxLayout>
-#include <QUrl>
-#include <QDesktopServices>
-
 #include <DDialog>
 #include <DDesktopServices>
 #include <DSpinner>
+
+#include <QHBoxLayout>
+#include <QUrl>
+#include <QDesktopServices>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 KnowledgeBaseItem::KnowledgeBaseItem(const QString &name, const QString &filePath, DWidget *parent)
     : DWidget(parent)
@@ -29,6 +32,7 @@ void KnowledgeBaseItem::initUI()
 {
     m_pWidget = new OperatingLineWidget(this);
     m_pWidget->setName(m_name);
+    m_pWidget->setBookIcon();
     m_pWidget->setModelShow(true);
 
     QHBoxLayout *layout = new QHBoxLayout(this);
@@ -55,20 +59,25 @@ void KnowledgeBaseItem::onDeleteButtonClicked()
     dlg.addButton(tr("Confirm", "button"), true, DDialog::ButtonRecommend);
 
     if (DDialog::Accepted == dlg.exec()) {
+        qCInfo(logAIGUI) << "Confirmed deletion of KnowledgeBaseItem. Name:" << m_name;
         emit signalDeleteItem(m_name);
+    } else {
+        qCDebug(logAIGUI) << "Cancelled deletion of KnowledgeBaseItem. Name:" << m_name;
     }
 }
 
-void KnowledgeBaseItem::onEditButtonClicked()
+void KnowledgeBaseItem::onEditButtonClicked(const QString &objectname)
 {
-    if (m_status == ProcessingError) {
-        //创建失败，重试
+    if (m_status == ProcessingError && objectname == "tipsIcon") {
+        qCWarning(logAIGUI) << "Processing error, retrying createVectorIndex. FilePath:" << m_filePath;
         QStringList list;
         list << m_filePath;
-        if (!EmbeddingServer::getInstance().createVectorIndex(list))
+        if (!EmbeddingServer::getInstance().createVectorIndex(list)) {
+            qCCritical(logAIGUI) << "Failed to create vector index for file:" << m_filePath;
             return;
+        }
         setStatus(Processing);
-    } else if (m_status == Processing || m_status == Succeed) {
+    } else {
         // QUrl dirUrl = QUrl::fromLocalFile(m_name);
         // Dtk::Widget::DDesktopServices::showFileItem(dirUrl);
 
@@ -78,19 +87,17 @@ void KnowledgeBaseItem::onEditButtonClicked()
 
         if (fileInfo.exists()) {
             openOK = QDesktopServices::openUrl(QUrl::fromLocalFile(m_filePath));
+            qCInfo(logAIGUI) << "Open file result for KnowledgeBaseItem. FilePath:" << m_filePath << ", Success:" << openOK;
         } else {
-            qWarning() << __FUNCTION__
-                       << " file can't find:" << m_filePath;
+            qCWarning(logAIGUI) << " file can't find:" << m_filePath;
         }
-    } else {
-
     }
-
 }
 
 
 void KnowledgeBaseItem::onThemeTypeChanged(DGuiApplicationHelper::ColorType themeType)
 {
+    qCDebug(logAIGUI) << "Theme type changed for KnowledgeBaseItem. Name:" << m_name << ", Status:" << m_status;
     switch (m_status) {
     case Processing: {
         QString icon = QString(":/icons/deepin/builtin/%1/icons/tip.svg");

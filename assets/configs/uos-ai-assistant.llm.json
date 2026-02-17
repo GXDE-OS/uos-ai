@@ -1,0 +1,17 @@
+{
+    "magic":"dsg.config.meta",
+    "version":"1.0",
+    "contents":{
+        "aiRagVersion": {
+            "value":"0.0",
+            "serial":0,
+            "flags":[],
+            "name":"uos-ai-rag version",
+            "name[zh_CN]":"向量化插件版本",
+            "description":"uos-ai-rag version",
+            "description[zh_CN]":"向量化插件版本",
+            "permissions":"readwrite",
+            "visibility":"private"
+        }
+    }
+}

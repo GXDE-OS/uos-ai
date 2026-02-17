@@ -7,56 +7,32 @@
 #include <QBuffer>
 #include <QWaitCondition>
 #include <QAudioOutput>
+#include <QAudioFormat>
 #include <QMutex>
 #include <QReadWriteLock>
 #include <QQueue>
 #include <QDebug>
+
+#ifdef COMPILE_ON_QT6
+#include <QMediaDevices>
+#include <QAudioDevice>
+#include <QAudioSink>
+#endif
 
 class AudioPlayer;
 class AudioPlayDevice : public QIODevice
 {
 public:
     AudioPlayDevice(const QByteArray &data = QByteArray(),
-                    QObject *parent = nullptr)
-        : QIODevice(parent)
-        , m_data(data)
-    {
-    }
+                    QObject *parent = nullptr);
+    ~AudioPlayDevice() override;
 
-    ~AudioPlayDevice() override
-    {
-
-    }
-
-    void setData(QByteArray data)
-    {
-        m_data = data;
-        m_written = 0;
-    }
-
-    void close() override
-    {
-        m_written = 0;
-        QIODevice::close();
-    }
+    void setData(QByteArray data);
+    void close() override;
 
 protected:
-    qint64 readData(char *data, qint64 maxSize) override
-    {
-        if (m_written >= m_data.size())
-            return 0;
-        qint64 len = (m_written + maxSize) > m_data.size() ? (m_data.size() - m_written) : maxSize;
-        memcpy(data, m_data.data() + m_written, len);
-        m_written += len;
-        return len;
-    }
-
-    qint64 writeData(const char *data, qint64 maxSize) override
-    {
-        Q_UNUSED(data);
-        Q_UNUSED(maxSize);
-        return -1;
-    }
+    qint64 readData(char *data, qint64 maxSize) override;
+    qint64 writeData(const char *data, qint64 maxSize) override;
 
 private:
     QByteArray m_data;
@@ -67,15 +43,8 @@ class PlayerThread : public QThread
 {
     Q_OBJECT
 public:
-    PlayerThread(AudioPlayer *player)
-        : m_player(player)
-    {
-
-    }
-    ~PlayerThread()
-    {
-
-    }
+    PlayerThread(AudioPlayer *player);
+    ~PlayerThread() override;
 
 public:
     bool isPlaying() const;
@@ -84,13 +53,7 @@ public:
 
     void appendAudio(const QString &id, QByteArray data, bool isLast);
 
-    void stop()
-    {
-        m_id.clear();
-        m_isLast = false;
-        m_stop = true;
-        m_dataList.clear();
-    }
+    void stop();
 
 protected:
     virtual void run() override;
@@ -112,9 +75,11 @@ class AudioPlayer : public QObject
 public:
     AudioPlayer();
     virtual ~AudioPlayer() override;
-
+#ifdef COMPILE_ON_QT6
+    static QAudioDevice findSupportedDevice();
+#else
     static QAudioDeviceInfo findSupportedDevice();
-
+#endif
     bool isStreamPlaying() const;
     bool startStream(const QString &id);
     void appendStreamAudio(const QString &id, QByteArray data, bool isLast);
@@ -145,11 +110,16 @@ private:
     friend class PlayerThread;
 
     QAudioFormat                     m_audioFormat;
-    QScopedPointer<QAudioOutput>     m_audioOutput;
     QScopedPointer<PlayerThread>     m_playerThread;
 
     QString m_id;
+#ifdef COMPILE_ON_QT6
+    QScopedPointer<QAudioSink>     m_audioOutput;
+    QList<QAudioSink *> m_audioFileOutputs;
+#else
+    QScopedPointer<QAudioOutput>     m_audioOutput;
     QList<QAudioOutput *> m_audioFileOutputs;
+#endif
 };
 
 #endif // AUDIOPLAYERSTREAM_H

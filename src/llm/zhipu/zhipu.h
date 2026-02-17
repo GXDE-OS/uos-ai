@@ -16,7 +16,7 @@ public:
      * @param temperature
      * @return
      */
-    QJsonObject predict(const QString &content, const QJsonArray &functions, const QString &systemRole = "", qreal temperature = 1.0) override;
+    QJsonObject predict(const QString &content, const QJsonArray &functions) override;
 
     /**
      * @brief verify

@@ -1,5 +1,9 @@
 #include "cdbuspendingcallwatcher.h"
 
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logDBus)
+
 CDBusPendingCallWatcher::CDBusPendingCallWatcher(const QDBusPendingCall &call, QString member, QObject *parent)
     : QDBusPendingCallWatcher(call, parent)
     , m_member(member)
@@ -17,6 +21,7 @@ CDBusPendingCallWatcher::CDBusPendingCallWatcher(const QDBusPendingCall &call, Q
  */
 void CDBusPendingCallWatcher::setCallbackFunc(CallbackFunc func)
 {
+    qCDebug(logDBus) << "Setting callback function for member:" << m_member;
     m_func = func;
 }
 

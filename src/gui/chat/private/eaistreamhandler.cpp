@@ -1,6 +1,11 @@
 #include "eaistreamhandler.h"
+#include "mcpconfigsyncer.h"
 
-#include <QDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
+
+using namespace uos_ai;
 
 EAiStreamHandler::EAiStreamHandler(
     QString pipe,
@@ -29,7 +34,7 @@ EAiStreamHandler::EAiStreamHandler(
      */
     if (!m_cb.isNull()) {
         connect(m_cb->getOwner(), &QObject::destroyed, this, [this]() {
-            qWarning() << "JS proxy is released before request finish:" << m_cb->getOwner()
+            qCWarning(logAIGUI) << "JS proxy is released before request finish:" << m_cb->getOwner()
                        << "\n1.Prepare to Close stream."
                        << "\n2.Set callback owner to null.";
             m_socket.close();
@@ -41,6 +46,7 @@ EAiStreamHandler::EAiStreamHandler(
 
 void EAiStreamHandler::process()
 {
+    qCDebug(logAIGUI) << "Connecting to server:" << m_pipeName;
     m_socket.connectToServer(m_pipeName);
 }
 
@@ -51,7 +57,7 @@ void EAiStreamHandler::onDataReady()
     if (!m_cb.isNull()) {
         m_cb->notify(QString(data), 0);
     } else {
-        qWarning() << "Stream callback is null!";
+        qCWarning(logAIGUI) << "Stream callback is null!";
     }
 }
 
@@ -59,11 +65,12 @@ void EAiStreamHandler::onError(QLocalSocket::LocalSocketError err)
 {
     if (!m_cb.isNull()) {
         if (QLocalSocket::LocalSocketError::PeerClosedError != err) {
-            qInfo() << " error=" << err;
+            qCWarning(logAIGUI) << "Socket error occurred:" << err;
 
             switch (err) {
             //Skip unnecessary error code
             case QLocalSocket::LocalSocketError::ServerNotFoundError:
+                qCDebug(logAIGUI) << "Server not found error, skipping notification";
                 break;
             default:
                 m_cb->notify(m_socket.errorString(), -1);
@@ -71,7 +78,7 @@ void EAiStreamHandler::onError(QLocalSocket::LocalSocketError err)
             }
         }
     } else {
-        qWarning() << "Stream callback is null!";
+        qCWarning(logAIGUI) << "Stream callback is null!";
     }
 
     releaseStreamHandler();
@@ -79,6 +86,7 @@ void EAiStreamHandler::onError(QLocalSocket::LocalSocketError err)
 
 void EAiStreamHandler::onDisconnected()
 {
+    qCDebug(logAIGUI) << "Socket disconnected, releasing handler";
     //Release the EAiStreamHandler after
     //connection is closed
     releaseStreamHandler();
@@ -90,6 +98,6 @@ void EAiStreamHandler::releaseStreamHandler()
         m_fReleased = true;
         deleteLater();
     } else {
-        qWarning() << "EAiStreamHandler already released.";
+        qCWarning(logAIGUI) << "EAiStreamHandler already released.";
     }
 }

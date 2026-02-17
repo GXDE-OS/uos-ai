@@ -10,12 +10,13 @@ AIChatCompletion::AIChatCompletion(const AccountProxy &account)
 
 }
 
-QPair<int, QString> AIChatCompletion::create(const QString &model, AIConversation &conversation, qreal temperature)
+QPair<int, QString> AIChatCompletion::create(const QString &model, AIConversation &conversation, const QVariantHash &params)
 {
     QJsonObject dataObject;
     dataObject.insert("model", model);
     dataObject.insert("messages", conversation.getConversions());
-    dataObject.insert("temperature", qBound(0.0, temperature, 2.0));
+    if (params.contains("temperature"))
+        dataObject.insert("temperature", qBound(0.0, params.value("temperature").toDouble(), 2.0));
     dataObject.insert("stream", true);
 
     if (!conversation.getFunctions().isEmpty()) {

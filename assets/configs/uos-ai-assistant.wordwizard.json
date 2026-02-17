@@ -1,0 +1,72 @@
+{
+    "magic":"dsg.config.meta",
+    "version":"1.0",
+    "contents":{
+        "isFirstClose": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"First close",
+            "name[zh_CN]":"是否为首次关闭",
+            "description":"First close",
+            "description[zh_CN]":"是否为首次关闭",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "isHidden": {
+            "value":false,
+            "serial":0,
+            "flags":[],
+            "name":"Hidden",
+            "name[zh_CN]":"是否已隐藏",
+            "description":"Hidden",
+            "description[zh_CN]":"是否已隐藏",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "disabledApps": {
+            "value":[],
+            "serial":0,
+            "flags":[],
+            "name":"Disabled Applications",
+            "name[zh_CN]":"禁用的应用列表",
+            "description":"List of applications where FollowAlong is disabled",
+            "description[zh_CN]":"划词工具栏禁用的应用程序列表",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "customFunctions": {
+            "value":[],
+            "serial":0,
+            "flags":[],
+            "name":"Custom functions",
+            "name[zh_CN]":"自定义功能列表",
+            "description":"List of custom functions",
+            "description[zh_CN]":"自定义功能列表",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "isTooltipFirstShow": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"Is tooltip first show",
+            "name[zh_CN]":"是否为首次删除随航技能标签",
+            "description":"Whether to show the label tooltip for the first time",
+            "description[zh_CN]":"是否为首次删除随航技能标签",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "isFirstClickAskAI": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"Is first click Ask AI",
+            "name[zh_CN]":"是否为首次点击Ask AI",
+            "description":"Whether to show the red dot for the first time",
+            "description[zh_CN]":"是否为首次点击Ask AI显示红点",
+            "permissions":"readwrite",
+            "visibility":"private"
+        }
+    }
+}

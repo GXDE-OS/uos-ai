@@ -27,11 +27,10 @@ public:
     explicit FydnNetwork();
 
 public:
-    QPair<int, QString> request(const QJsonObject &data, const QString &urlPath);
+    QPair<int, QString> request(const QJsonObject &data, const QString &urlPath, const QString &role);
 
 public slots:
     void setAbortRequest();
-    QString parseResultString(const QByteArray &result);
 
 private slots:
     void onReadyRead();
@@ -43,6 +42,8 @@ signals:
 private:
     QPair<int, QString> generateAccessToken() const;
     QString generateSignature(const QString &jsonStr, const QString &appKey);
+    QString parseQaResultString(const QByteArray &result);
+    QString parseFlfgResultString(const QByteArray &result);
 };
 
 }}

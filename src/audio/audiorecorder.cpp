@@ -5,6 +5,9 @@
 #include <QDebug>
 #include <QtEndian>
 #include <QMutexLocker>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
 AudioInfo::AudioInfo()
 {
@@ -13,6 +16,7 @@ AudioInfo::AudioInfo()
 void AudioInfo::start()
 {
 #ifdef SAVE_AUDIO_DATA
+    qCDebug(logAudio) << "Initializing audio file format";
     initFileFormat("./audio", 1, 16000);
 #endif
     open(QIODevice::WriteOnly);
@@ -115,10 +119,14 @@ AudioLocalInputDevice::AudioLocalInputDevice()
 
     m_audioFormat.setSampleRate(16000);
     m_audioFormat.setChannelCount(1);
+#ifdef COMPILE_ON_QT6
+    m_audioFormat.setSampleFormat(QAudioFormat::SampleFormat::Int16);
+#else
     m_audioFormat.setSampleSize(16);
     m_audioFormat.setCodec("audio/pcm");
     m_audioFormat.setByteOrder(QAudioFormat::LittleEndian);
     m_audioFormat.setSampleType(QAudioFormat::SignedInt);
+#endif
     m_audioInfo.reset(new AudioInfo());
     connect(m_audioInfo.get(), &AudioInfo::audioWrite, this, &AudioLocalInputDevice::audioRecorded);
 }
@@ -131,19 +139,26 @@ AudioLocalInputDevice::~AudioLocalInputDevice()
 bool AudioLocalInputDevice::start()
 {
     if (m_isRecording) {
-        qWarning() << "recorder already started";
+        qCWarning(logAudio) << "Recording already in progress";
         return true;
     }
 
     if (!checkDevice()) {
-        qWarning() << "audio recorder device may not be valid";
+        qCWarning(logAudio) << "Invalid audio input device";
         return false;
     }
-
+#ifdef COMPILE_ON_QT6
+    qCDebug(logAudio) << "Creating QAudioSource with default input device";
+    m_audioInput.reset(new QAudioSource(QMediaDevices::defaultAudioInput(), m_audioFormat));
+#else
+    qCDebug(logAudio) << "Creating QAudioInput with default input device";
     m_audioInput.reset(new QAudioInput(QAudioDeviceInfo::defaultInputDevice(), m_audioFormat));
+#endif
+
     m_audioInfo->start();
     m_audioInput->start(m_audioInfo.data());
     m_isRecording = true;
+    qCDebug(logAudio) << "Audio recording started successfully";
     emit recordStarted();
     return true;
 }
@@ -151,9 +166,11 @@ bool AudioLocalInputDevice::start()
 bool AudioLocalInputDevice::stop()
 {
     if (!m_isRecording) {
+        qCDebug(logAudio) << "No active recording to stop";
         return true;
     }
 
+    qCDebug(logAudio) << "Stopping audio recording";
     if (QObject *obj = m_audioInput.take()) {
         obj->deleteLater();
     }
@@ -165,9 +182,15 @@ bool AudioLocalInputDevice::stop()
 
 bool AudioLocalInputDevice::checkDevice()
 {
+#ifdef COMPILE_ON_QT6
+    if (AudioDbusInterface::instance()->isDefaultInputDeviceValid()
+            && QMediaDevices::defaultAudioInput().isFormatSupported(m_audioFormat))
+        return true;
+#else
     if (AudioDbusInterface::instance()->isDefaultInputDeviceValid()
             && QAudioDeviceInfo::defaultInputDevice().isFormatSupported(m_audioFormat))
         return true;
+#endif
 
     if (m_isRecording) {
         stop();
@@ -219,11 +242,21 @@ AudioRecorder::~AudioRecorder()
 qint16 AudioRecorder::calcAudioMaxAmplitude(const QAudioFormat &format)
 {
     qint16 maxValue;
+#ifdef COMPILE_ON_QT6
+    if (format.sampleFormat() == QAudioFormat::SampleFormat::Int16) {
+        maxValue = 32767;  // 2^15 - 1，对应16位有符号整数的最大值
+    } else if (format.sampleFormat() == QAudioFormat::SampleFormat::UInt8) {
+        maxValue = 255;    // 2^8 - 1，对应8位无符号整数的最大值
+    } else {
+        maxValue = 0;      // 不支持的格式
+    }
+#else
     if (format.sampleType() == QAudioFormat::SignedInt) {
         maxValue = qPow(2, format.sampleSize() - 1) - 1;
     } else {
         maxValue = qPow(2, format.sampleSize()) - 1;
     }
+#endif
     return maxValue;
 }
 
@@ -238,6 +271,33 @@ int AudioRecorder::level() const
     return m_curLevel;
 }
 
+#ifdef COMPILE_ON_QT6
+QAudioDevice AudioRecorder::findAudioInputDevice()
+{
+    // 设置所需的音频格式
+    QAudioFormat audioFormat;
+    audioFormat.setSampleRate(16000);
+    audioFormat.setChannelCount(1);
+    audioFormat.setSampleFormat(QAudioFormat::Int16); // 替代 setSampleSize 和 setSampleType
+
+    // 获取默认音频输入设备
+    QAudioDevice defaultDevice = QMediaDevices::defaultAudioInput();
+    if (defaultDevice.isFormatSupported(audioFormat)) {
+        return defaultDevice;
+    }
+
+    // 遍历所有可用的音频输入设备，寻找支持所需格式的设备
+    const auto allDevices = QMediaDevices::audioInputs();
+    for (const auto &device : allDevices) {
+        if (device.isFormatSupported(audioFormat)) {
+            return device;
+        }
+    }
+
+    // 如果没有找到合适的设备，返回默认设备，或可以返回一个无效的 QAudioDevice
+    return QAudioDevice();
+}
+#else
 QAudioDeviceInfo AudioRecorder::findAudioInputDevice()
 {
     QAudioFormat audioFormat;
@@ -262,9 +322,11 @@ QAudioDeviceInfo AudioRecorder::findAudioInputDevice()
 
     return QAudioDeviceInfo();
 }
+#endif
 
 bool AudioRecorder::start()
 {
+    qCDebug(logAudio) << "Starting audio recorder";
     m_lastLevel = 0;
     m_curLevel = 0;
     return m_defaultDevice->start();
@@ -272,6 +334,7 @@ bool AudioRecorder::start()
 
 bool AudioRecorder::stop()
 {
+    qCDebug(logAudio) << "Stopping audio recorder";
     m_lastLevel = 0;
     m_curLevel = 0;
     return m_defaultDevice->stop();

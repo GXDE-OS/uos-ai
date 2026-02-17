@@ -31,7 +31,7 @@ signals:
     void signalDeleteItem(const QString &name);
 
 private slots:
-    void onEditButtonClicked();
+    void onEditButtonClicked(const QString &objectname);
     void onDeleteButtonClicked();
     void onThemeTypeChanged(DGuiApplicationHelper::ColorType themeType);
 

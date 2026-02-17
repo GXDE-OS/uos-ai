@@ -30,13 +30,18 @@ private:
      * @param stream: Conversation flow switch.
      * @param temperature: A parameter that returns randomness, where a higher value indicates higher randomness.
      */
-    QPair<AIServer::ErrorType, QStringList> requestChatFunctionText(LLMServerProxy tmpLLMAccount, const QString &conversation
-                                                                    , bool stream = false
-                                                                    , qreal temperature = 1.0
-                                                                    , bool isFAQGeneration = false);
-    QPair<AIServer::ErrorType, QStringList> requestPlugin(LLMServerProxy tmpLLMAccount, const QString &conversation
-                                                                    , bool stream = false
-                                                                    , qreal temperature = 1.0);
+    QPair<AIServer::ErrorType, QStringList> requestChatFunctionText(LLMServerProxy tmpLLMAccount, const QString &conversation, const QVariantHash &params);
+    QPair<AIServer::ErrorType, QStringList> requestInstFunction(LLMServerProxy tmpLLMAccount, const QString &conversation, const QJsonArray &funcs, const QVariantHash &params);
+    QPair<AIServer::ErrorType, QStringList> requestPlugin(LLMServerProxy tmpLLMAccount, const QString &conversation, const QVariantHash &params);
+    QPair<AIServer::ErrorType, QStringList> requestAgent(LLMServerProxy tmpLLMAccount, const QString &conversation, const QVariantHash &params);
+    QPair<AIServer::ErrorType, QStringList> requestRag(LLMServerProxy tmpLLMAccount, const QString &conversation, const QVariantHash &params);
+
+    // 只返回reqID，error统一通过信号发送
+    QString chatRequest(LLMServerProxy llmAccount, const QString &ctx, const QVariantHash &params);
+    QString genImageRequest(LLMServerProxy tmpLLMAccount, const QString &imageDesc);
+    QString searchRequest(LLMServerProxy llmAccount, const QString &ctx);
+
+    void claimUsageRequest(LLMServerProxy llmAccount);
 
     void checkUpdateAssistantAccount(const QString &assistantId);
 
@@ -47,6 +52,8 @@ private:
      * @return
      */
     bool handleRequestError(QSharedPointer<LLM> copilot, const QString &uuid);
+
+    bool supportFunctionCall(const LLMServerProxy &account);
 
     /**
      * @brief handleAiServerRequest
@@ -61,7 +68,7 @@ private:
      */
     bool handleAiServerRequest(QSharedPointer<LLM> copilot, const QString &uuid
                                , QJsonObject &response, const QString &conversation
-                               , const QJsonArray &functions, qreal temperature, const LLMServerProxy &llmAccount);
+                               , const QJsonArray &functions, const LLMServerProxy &llmAccount);
 
     /**
      * @brief queryValidServerAccount
@@ -87,6 +94,10 @@ private:
 
     QVariant getFAQ();
 
+    void increaseAccountUsage(const LLMServerProxy &llmAccount, int chatAction) const;
+
+    QString ragPromptBuild(const QString &conversation);
+
 private slots:
     /**
      * @brief Task request has ended.
@@ -94,6 +105,8 @@ private slots:
     void onRequestTaskFinished();
 
 private:
+    void onError(const QString &uuid, int errCode, const QString &errInfo);
+
     bool m_needQueryFunctions = true;
 
     QString m_appId;
@@ -102,7 +115,7 @@ private:
 
     QList<QString> m_runTaskIds;
 
-    uos_ai::LLMServiceVendor m_llmVendor;
+
 
 private:
     Session *m_q;

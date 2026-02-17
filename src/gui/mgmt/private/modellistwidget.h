@@ -1,9 +1,17 @@
 #ifndef MODELLISTWIDGET_H
 #define MODELLISTWIDGET_H
 
+#include <QFutureWatcher>
+#include <QtConcurrent>
+
 #include <DWidget>
 #include <DCommandLinkButton>
 #include <DBackgroundGroup>
+
+#include "themedlable.h"
+#include "tasdef.h"
+#include "networkdefs.h"
+#include "iconcommandlinkbutton.h"
 
 DWIDGET_USE_NAMESPACE
 
@@ -20,6 +28,10 @@ public:
     void removeModel(const LLMServerProxy &);
 
     void resetEditButton();
+    QString getTitleName();
+    void checkActivityExists();
+
+    void hiddenGetFreeAccountButton();
 
 private slots:
     void onEditButtonClicked();
@@ -27,9 +39,11 @@ private slots:
 
 public slots:
     void onAppendModel(const LLMServerProxy &);
+    void onGetFreeAccount(); //领取免费账户
 
 signals:
     void signalAddModel();
+    void signalGetFreeAccountClicked();//免费获取账号按键被点击
 
 private:
     void initUI();
@@ -41,10 +55,15 @@ private:
     DWidget *hasModelWidget();
 
 private:
+    ThemedLable *m_pWidgetLabel = nullptr;
     DBackgroundGroup *m_pNoModelWidget = nullptr;
     DBackgroundGroup *m_pHasModelWidget = nullptr;
     DCommandLinkButton *m_pEditButton = nullptr;
     DCommandLinkButton *m_pAddButton = nullptr;
+    uos_ai::IconCommandLinkButton *m_pGetFreeAccountButton = nullptr;//领取免费账号按钮
+
+    UosFreeAccountActivity m_hasActivity;
+    QSharedPointer<QFutureWatcher<QNetworkReply::NetworkError>> m_watcher;
 };
 
 #endif // MODELLISTWIDGET_H

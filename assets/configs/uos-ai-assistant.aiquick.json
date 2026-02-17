@@ -1,0 +1,39 @@
+{
+    "magic":"dsg.config.meta",
+    "version":"1.0",
+    "contents":{
+        "isFirstFill": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"First fill",
+            "name[zh_CN]":"是否首次填充",
+            "description":"First fill",
+            "description[zh_CN]":"是否首次填充",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "translateTargetLanguage": {
+            "value":0,
+            "serial":0,
+            "flags":[],
+            "name":"Translate target language",
+            "name[zh_CN]":"翻译功能目标语言",
+            "description":"Translate target language",
+            "description[zh_CN]":"翻译功能目标语言",
+            "permissions":"readwrite",
+            "visibility":"private"
+        },
+        "isFirstTranslate": {
+            "value":true,
+            "serial":0,
+            "flags":[],
+            "name":"First translate",
+            "name[zh_CN]":"是否首次非中英文翻译",
+            "description":"First translate",
+            "description[zh_CN]":"是否首次非中英文翻译",
+            "permissions":"readwrite",
+            "visibility":"private"
+        }
+    }
+}

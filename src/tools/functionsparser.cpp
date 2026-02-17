@@ -1,6 +1,8 @@
 #include "functionsparser.h"
 #include "deepinabilitymanager.h"
+#include "deepinmultimedia.h"
 
+#include <QCoreApplication>
 #include <QTimer>
 #include <QDebug>
 #include <QUrl>
@@ -11,6 +13,9 @@
 #include <QDesktopServices>
 #include <QProcess>
 #include <QDBusInterface>
+
+#include <QLoggingCategory>
+Q_DECLARE_LOGGING_CATEGORY(logTools)
 
 FunctionsParser::FunctionsParser(const QJsonObject &function)
     : QThread(nullptr)
@@ -41,6 +46,7 @@ QString FunctionsParser::directOutput() const
 
 void FunctionsParser::sendMailFunction(const QJsonObject &argumentsObj)
 {
+    qCDebug(logTools) << "Preparing to send email:" << argumentsObj;
     QString subject = argumentsObj.value("subject").toString();
     QString content = argumentsObj.value("content").toString();
     QStringList toList = argumentsObj.value("to").toString().split(",");
@@ -85,9 +91,11 @@ void FunctionsParser::sendMailFunction(const QJsonObject &argumentsObj)
 
 void FunctionsParser::openUrl(const QString &url)
 {
+    qCDebug(logTools) << "Attempting to open URL:" << url;
     QProcess process;
-    QString command = QString("xdg-open \"%1\"").arg(url);
-    process.start(command);
+    process.setProgram("xdg-open");
+    process.setArguments({url});
+    process.start();
     process.waitForFinished(5000);
     int exitCode = process.exitCode();
 
@@ -104,11 +112,12 @@ void FunctionsParser::openUrl(const QString &url)
     m_outputString = outputString;
 
     if (exitCode != 0)
-        qWarning() << url << "Exit code: " << exitCode << "Standard Output: " << outputString;
+        qCWarning(logTools) << "Failed to open URL:" << url << "Exit code:" << exitCode << "Standard Output:" << outputString;
 }
 
 void FunctionsParser::openExec(const QString &mimeType)
 {
+    qCDebug(logTools) << "Looking up default application for MIME type:" << mimeType;
     QProcess process;
     QString command = QString("xdg-mime query default %1").arg(mimeType);
     process.start(command);
@@ -121,15 +130,19 @@ void FunctionsParser::openExec(const QString &mimeType)
         outputString = outLst.last();
 
     m_outputString = outputString;
-    qWarning() << "Exit code: " << m_exitCode << "Standard Output: " << outputString;
-
-    if (m_exitCode != 0)
+    
+    if (m_exitCode != 0) {
+        qCWarning(logTools) << "Failed to query default application for MIME type:" << mimeType
+                           << "Exit code:" << m_exitCode
+                           << "Error output:" << outputString;
         return;
+    }
+    qCInfo(logTools) << "Exit code:" << m_exitCode << "Standard Output:" << outputString;
 
     outputString = outputString.trimmed();
     if (!outputString.endsWith(".desktop")) {
         m_exitCode = 1;
-        qWarning() << "FunctionsParser::openExec " << outputString;
+        qCWarning(logTools) << "FunctionsParser::openExec " << outputString;
         return;
     }
 
@@ -140,12 +153,13 @@ void FunctionsParser::openExec(const QString &mimeType)
     if (!error.isEmpty()) {
         m_exitCode = 1;
         m_outputString = error;
-        qCritical() << error;
+        qCCritical(logTools) << "Failed to launch application:" << error;
     }
 }
 
 void FunctionsParser::run()
 {
+    qCDebug(logTools) << "Starting function execution";
     m_exitCode = 0;
     m_outputString.clear();
 
@@ -154,6 +168,7 @@ void FunctionsParser::run()
 
     const QString &funName = m_function.value("name").toString();
     const QJsonObject &argumentsObj = QJsonDocument::fromJson(m_function.value("arguments").toString().toUtf8()).object();
+    qCInfo(logTools) << QString("FunctionCalling-functionName:%1  arguments:%2").arg(funName).arg(m_function.value("arguments").toString());
     if (funName == "sendMail") {
         sendMailFunction(argumentsObj);
     } else if (funName == "openBluetooth") {
@@ -174,7 +189,7 @@ void FunctionsParser::run()
         else if (modestr == "Efficent")
             mode = 1;
         else
-            qWarning() << "function args error = " << argumentsObj;
+            qCWarning(logTools) << "Function name:" << funName << "function args error:" << argumentsObj;
 
         content = UosAbility()->doDockModeSwitch(mode);
     } else if (funName == "switchSystemTheme") {
@@ -187,14 +202,15 @@ void FunctionsParser::run()
         else if (modestr == "Auto")
             mode = 2;
         else
-            qWarning() << "function args error = " << argumentsObj;
+            qCWarning(logTools) << "Function name:" << funName << "function args error:" << argumentsObj;
 
         content = UosAbility()->doSystemThemeSwitch(mode);
     } else if (funName == "switchEyesProtection") {
         content = UosAbility()->doDiplayEyesProtection(argumentsObj.value("switch").toBool());
     } else if (funName == "displayBrightness") {
         int percent = argumentsObj.value("percent").toInt();
-        content = UosAbility()->doDiplayBrightness(percent);
+        int adjustment = argumentsObj.value("adjustment").toInt();
+        content = UosAbility()->doDiplayBrightness(percent, adjustment);
     } else if (funName == "launchApplication") {
         QString appId = argumentsObj.value("appid").toString();
         // 由于目前function call太多，执行打开应用指令时模型推理会导致混淆，从而导致
@@ -218,7 +234,8 @@ void FunctionsParser::run()
         content = UosAbility()->doSystemLanguageSetting();
     } else if (funName == "switchPerformanceMode") {
         QString mode = argumentsObj.value("mode").toString();
-        content = UosAbility()->doPerformanceModeSwitch(mode);
+        bool isOpen = argumentsObj.value("switch").toBool();
+        content = UosAbility()->doPerformanceModeSwitch(mode, isOpen);
     } else if (funName == "shutdownFront") {
         content = UosAbility()->openShutdownFront();
     } else if (funName == "screenShot") {
@@ -232,21 +249,29 @@ void FunctionsParser::run()
         else if (modestr == "Extend")
             mode = 2;
         else
-            qWarning() << "function args error = " << argumentsObj;
+            qCWarning(logTools) << "Function name:" << funName << "function args error:" << argumentsObj;
 
         content = UosAbility()->doDisplayModeSwitch(mode);
     } else if (funName == "switchScreen") {
         content = UosAbility()->switchScreen();
     } else if (funName == "grandSearch") {
         content = UosAbility()->openGrandSearch();
+    } else if (funName == "volumeAdjustment") {
+        content = UosAbility()->volumeAdjustment(argumentsObj);
+    } else if (funName == "stateControl") {
+        content = UosAbility()->doStateControl(argumentsObj.value("control").toString());
+    } else if (funName == "seek") {
+        content = UosAbility()->doSeek(argumentsObj.value("offset").toInt());
     } else {
         content.error = OSCallContext::NotImpl;
         content.errorInfo = funName + QCoreApplication::translate("FunctionsParser", "Function not available");
-
-        qWarning() << "function name error = " << m_function;
     }
 
     if (content.error != OSCallContext::NonError) {
+        qCWarning(logTools) << "Function execution failed:" << funName 
+                           << "Error code:" << content.error
+                           << "Error info:" << content.errorInfo
+                           << "Function:" << m_function;
         m_exitCode = content.error;
         m_outputString = content.errorInfo;
     }

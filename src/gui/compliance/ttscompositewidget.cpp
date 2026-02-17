@@ -11,7 +11,6 @@
 
 #include <DPlatformWindowHandle>
 
-#include <QDesktopWidget>
 #include <QApplication>
 #include <QScreen>
 #include <QUuid>

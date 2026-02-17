@@ -4,13 +4,13 @@
 #include <QObject>
 #include <QSharedPointer>
 
-#include <com_deepin_daemon_audio.h>
-#include <com_deepin_daemon_audio_sink.h>
-#include <com_deepin_daemon_audio_source.h>
+#include "dbus/3rdparty/com_deepin_daemon_audio.h"
+#include "dbus/3rdparty/com_deepin_daemon_audio_sink.h"
+#include "dbus/3rdparty/com_deepin_daemon_audio_source.h"
 
-using com::deepin::daemon::Audio;
-using com::deepin::daemon::audio::Sink;
-using com::deepin::daemon::audio::Source;
+using uos_ai::Audio;
+using uos_ai::audio::Sink;
+using uos_ai::audio::Source;
 
 class AudioDbusInterface : public QObject
 {

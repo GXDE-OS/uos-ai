@@ -3,21 +3,37 @@
 #include "deepincalendar.h"
 #include "deepinnotification.h"
 #include "deepincontrolcenter.h"
+#include "deepinmultimedia.h"
 #include "osinfo.h"
-
-#include <QApplication>
-#include <QDBusVariant>
-#include <QDesktopServices>
-#include <QDBusPendingReply>
 
 #include <DDesktopEntry>
 #include <DSysInfo>
+
+#include <QApplication>
+#include <QDBusVariant>
+#include <QDBusArgument>
+#include <QDateTime>
+#include <QDesktopServices>
+#include <QDBusPendingReply>
+#include <QDBusReply>
+#include <QFile>
+#include <QFileInfo>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QUrl>
+#include <QProcess>
+#include <QThread>
+#include <QLoggingCategory>
+
+#include <math.h>
+
+Q_DECLARE_LOGGING_CATEGORY(logOsControl)
 
 DCORE_USE_NAMESPACE
 
 static QString formatCap(qulonglong cap, const int size = 1024, quint8 precision = 1)
 {
-    QStringList type { " B", " KB", " MB", " GB", " TB" };
+    QStringList type { "B", "KB", "MB", "GB", "TB" };
 
     qulonglong lc = cap;
     double dc = cap;
@@ -59,47 +75,47 @@ UOSAbilityManager::UOSAbilityManager(QObject *parent)
 
 OSCallContext UOSAbilityManager::doBluetoothConfig(bool on)
 {
-    OSCallContext ctx;
+    qCDebug(logOsControl) << "Configuring bluetooth, state:" << on;
     QStringList adpters;
     {
-        QString reply = m_bluetooth->GetAdapters();
-        QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
+        QVariant adptersResult;
+        if (!osCtrCallDbus(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface,
+                           QString("GetAdapters"), adptersResult)) {
+            qCWarning(logOsControl) << "Failed to get bluetooth adapters";
+            return ctxByError(OSCallContext::NonError);
+        }
+        QJsonDocument doc = QJsonDocument::fromJson(adptersResult.toString().toUtf8());
         QJsonArray arr = doc.array();
         for (int index = 0; index < arr.size(); index++)
             adpters.append(arr[index].toObject()["Path"].toString());
     }
 
     if (adpters.isEmpty()) {
-        qInfo() << "there is no bluetooth adpater.";
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
-        return ctx;
+        qCInfo(logOsControl) << "No bluetooth adapter found";
+        return ctxByError(OSCallContext::NonService);
     }
 
     for (auto adpter : adpters) {
         QDBusObjectPath dPath(adpter);
-        m_bluetooth->SetAdapterPowered(dPath, on);
+        QVariantList args;
+        args << QVariant::fromValue(dPath)
+             << QVariant::fromValue(on);
+        osCtrCallDbusNoResult(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface, QString("SetAdapterPowered"), args);
     }
 
-    int errCode = 0;
     if (on) {
-        if (!m_fIsLinglong) {
-            errCode = m_uosControlCenterProxy->ShowModule("bluetooth");
-        } else {
-            //V23 call V6.x api
-            errCode = m_uosControlCenterProxy->ShowPage("bluetooth");
-        }
+        m_uosControlCenterProxy->ShowPage("bluetooth");
     } else {
-        m_bluetooth->ClearUnpairedDevice();
+        osCtrCallDbusNoResult(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface, QString("ClearUnpairedDevice"));
     }
 
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = "";
-    return ctx;
+    qCInfo(logOsControl) << "Bluetooth configuration completed successfully";
+    return ctxByError(OSCallContext::NonError);
 }
 
 OSCallContext UOSAbilityManager::doScreenMirroring(bool state)
 {
+    qCDebug(logOsControl) << "Configuring screen mirroring, state:" << state;
     Q_UNUSED(state);
 
     // display:Casting
@@ -110,16 +126,14 @@ OSCallContext UOSAbilityManager::doScreenMirroring(bool state)
     OSCallContext ctx;
     int errCode;
 
-    if (!m_fIsLinglong) {
-        errCode = m_uosControlCenterProxy->ShowPage("display", "Casting");
-    } else {
-        //V23 call V6.x api
-        errCode = m_uosControlCenterProxy->ShowPage("display/Casting");
-    }
+#ifdef COMPILE_ON_V23
+    errCode = m_uosControlCenterProxy->ShowPage("display/Casting");
+#else
+    errCode = m_uosControlCenterProxy->ShowPage("display", "Casting");
+#endif
 
     ctx.error = OSCallContext::CallError(errCode);
     ctx.errorInfo = m_errMap[ctx.error];
-
     return ctx;
 }
 
@@ -139,6 +153,7 @@ OSCallContext UOSAbilityManager::doScreenMirroring(bool state)
  */
 OSCallContext UOSAbilityManager::doNoDisturb(bool state)
 {
+    qCDebug(logOsControl) << "Configuring do not disturb mode, state:" << state;
     OSCallContext ctx;
 
     typedef enum {
@@ -159,92 +174,146 @@ OSCallContext UOSAbilityManager::doNoDisturb(bool state)
 }
 
 OSCallContext UOSAbilityManager::doWallpaperSwitch()
-{
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
-    bool err = false;
-    if (m_uosAppearanceProxy->isValid()
-            && m_uosDisplayProxy->isValid()
-            && m_uosWM->isValid()) {
+{    
+    qCDebug(logOsControl) << "Switching wallpaper";
+    auto covertUrlToLocalPath = [](const QString &url) {
+        if (url.startsWith("/"))
+            return url;
+        else
+            return QUrl(QUrl::fromPercentEncoding(url.toUtf8())).toLocalFile();
+    };
 
-        auto covertUrlToLocalPath = [](const QString &url) {
-            if (url.startsWith("/"))
-                return url;
-            else
-                return QUrl(QUrl::fromPercentEncoding(url.toUtf8())).toLocalFile();
-        };
+    QVariantList listArg {QVariant::fromValue(QString("background"))};
+    QVariant list;
+    if (!osCtrCallDbus(osCallDbusAppearanceService, osCallDbusAppearancePath, osCallDbusAppearanceInterface,
+                       QString("List"), list, listArg)) {
+        qCWarning(logOsControl) << "Failed to get wallpaper list";
+        return ctxByError(OSCallContext::NonService);
+    }
 
-        QString reply = m_uosAppearanceProxy->List("background");
-        QString screen = m_uosDisplayProxy->primary();
-        QString current = covertUrlToLocalPath(m_uosWM->GetCurrentWorkspaceBackgroundForMonitor(screen));
-        QList<QString> wallpapers;
-        QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
-        if (doc.isArray()) {
-            QJsonArray arr = doc.array();
-            foreach (QJsonValue val, arr) {
-                QJsonObject obj = val.toObject();
-                QString id = covertUrlToLocalPath(obj["Id"].toString());
-                wallpapers.append(id);
-            }
+    QVariant screen;
+    if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("Primary"), screen)) {
+        qCWarning(logOsControl) << "Failed to get primary screen";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    QVariantList resultArg {screen};
+    QVariant result;
+    if (!osCtrCallDbus(osCallDbusWmService, osCallDbusWmPath, osCallDbusWmInterface,
+                       "GetCurrentWorkspaceBackgroundForMonitor", result, resultArg)) {
+        qCWarning(logOsControl) << "Failed to get current workspace background";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QString current = covertUrlToLocalPath(result.toString());
+
+    QList<QString> wallpapers;
+    QJsonDocument doc = QJsonDocument::fromJson(list.toString().toUtf8());
+    if (doc.isArray()) {
+        QJsonArray arr = doc.array();
+        foreach (QJsonValue val, arr) {
+            QJsonObject obj = val.toObject();
+            QString id = covertUrlToLocalPath(obj["Id"].toString());
+            wallpapers.append(id);
         }
+    }
 
-        if (wallpapers.isEmpty() || screen.isEmpty()) {
-            err = true;
-        } else {
-            int idx = wallpapers.indexOf(current);
-            if (idx < 0 || idx >= wallpapers.size() - 1)
-                idx = 0;
-            else
-                idx++;
-
-            QString next = wallpapers.at(idx);
-            QList<QVariant> argumentList;
-            argumentList << QVariant::fromValue(screen) << QVariant::fromValue(next);
-            m_uosAppearanceProxy->asyncCallWithArgumentList(QStringLiteral("SetMonitorBackground"), argumentList);
-        }
+    if (wallpapers.isEmpty() || screen.isNull()) {
+        qCWarning(logOsControl) << "No wallpapers found or invalid screen";
+        return ctxByError(OSCallContext::NonService);
     } else {
-       err = true;
+        int idx = wallpapers.indexOf(current);
+        if (idx < 0 || idx >= wallpapers.size() - 1)
+            idx = 0;
+        else
+            idx++;
+
+        QString next = wallpapers.at(idx);
+        QList<QVariant> argumentList;
+        argumentList << screen << QVariant::fromValue(next);
+        if (!osCtrCallDbusNoResult(osCallDbusAppearanceService, osCallDbusAppearancePath, osCallDbusAppearanceInterface,
+                           "SetMonitorBackground", argumentList)) {
+            qCWarning(logOsControl) << "Failed to set monitor background";
+            return ctxByError(OSCallContext::NonService);
+        }
+        qCInfo(logOsControl) << "Wallpaper switched successfully to:" << next;
     }
 
-    if (err) {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
-    }
-
-    return ctx;
+    return ctxByError(OSCallContext::NonError);
 }
 
 OSCallContext UOSAbilityManager::doDesktopOrganize(bool state)
 {
+    qCDebug(logOsControl) << "Configuring desktop organization, state:" << state;
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
     ctx.errorInfo = m_errMap[ctx.error];
-
-    if (!m_fIsLinglong) {
-        //V20 屏蔽桌面自动整理
-        ctx.error = OSCallContext::NotImpl;
-        ctx.errorInfo = m_errMap[ctx.error];
-        return ctx;
-    }
 
     QProcess process;
     QStringList args;
     args << "--set" << "-a" << "org.deepin.dde.file-manager"
          << "-r" << "org.deepin.dde.file-manager.desktop.organizer"
-         << "-k" << "enableOrganizer"
-         << "-v" << QString("%1").arg(static_cast<int>(state));
+         << "-k" << "enableOrganizer" << "-v";
+    int exitCode = 0;
+    if (state) {
+        // 先开
+        {
+            args << QString("1");
+            process.start("dde-dconfig", args);
+            process.waitForFinished();
+            exitCode = process.exitCode();
+        }
 
-    process.start("dde-dconfig", args);
+        QStringList queryArgs;
+        queryArgs << "--get" << "-a" << "org.deepin.dde.file-manager"
+             << "-r" << "org.deepin.dde.file-manager.desktop.organizer"
+             << "-k" << "organizeAction";
 
-    // Wait for the process to finish
-    process.waitForFinished();
+        QStringList setArgs;
+        setArgs << "--set" << "-a" << "org.deepin.dde.file-manager"
+             << "-r" << "org.deepin.dde.file-manager.desktop.organizer"
+             << "-k" << "organizeAction" << "-v";
+        if (exitCode == 0) {
+            //查询集合action
+            process.start("dde-dconfig", queryArgs);
+            process.waitForFinished();
+            exitCode = process.exitCode();
+            if (exitCode == 0) {
+               QString out = QString::fromUtf8(process.readAllStandardOutput());
+               out = out.replace("\n", "");
+               out = out.replace("\"","");
+               int action = out.toInt();
+               if (action == 0) {
+                   QStringList setArgsTmp = setArgs;
+                   setArgsTmp << QString("1");
+                   process.start("dde-dconfig", setArgsTmp);
+                   process.waitForFinished();
+                   exitCode = process.exitCode();
 
-    // Get the exit code of the process
-    int exitCode = process.exitCode();
+                   QThread::sleep(1);
+
+                   setArgsTmp = setArgs;
+                   setArgsTmp << QString("0");
+                   process.start("dde-dconfig", setArgsTmp);
+                   process.waitForFinished();
+                   exitCode = process.exitCode();
+               }
+            }
+        }
+    } else {
+        args << QString("0");
+
+        process.start("dde-dconfig", args);
+
+        // Wait for the process to finish
+        process.waitForFinished();
+
+        // Get the exit code of the process
+        exitCode = process.exitCode();
+    }
 
     if (exitCode != 0) {
         if (process.error() == QProcess::ProcessError::FailedToStart) {
+            qCWarning(logOsControl) << "Failed to start dde-dconfig process";
             ctx.error = OSCallContext::NotImpl;
             ctx.errorInfo = m_errMap[ctx.error];
         } else {
@@ -252,10 +321,10 @@ OSCallContext UOSAbilityManager::doDesktopOrganize(bool state)
             ctx.errorInfo = m_errMap[ctx.error];
         }
 
-        qWarning() << "Failed to execute dde-dconfig: state=" << state
-                   << " exitCode=" << exitCode
-                   << " stdout=" << QString::fromLocal8Bit(process.readAllStandardOutput())
-                   << " stderr=" << QString::fromLocal8Bit(process.readAllStandardError());
+        qCWarning(logOsControl) << "Failed to execute dde-dconfig: state=" << state
+               << " exitCode=" << exitCode
+               << " stdout=" << QString::fromLocal8Bit(process.readAllStandardOutput())
+               << " stderr=" << QString::fromLocal8Bit(process.readAllStandardError());
     }
 
     return ctx;
@@ -263,144 +332,264 @@ OSCallContext UOSAbilityManager::doDesktopOrganize(bool state)
 
 OSCallContext UOSAbilityManager::doDockModeSwitch(int mode)
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
-
-    if (m_uosDockProxy->isValid()) {
-        if (mode >= 0 && mode < 2) {
-            m_uosDockProxy->setDisplayMode(mode);
-        } else {
-            ctx.error = OSCallContext::InvalidArgs;
-            ctx.errorInfo = m_errMap[ctx.error];
-        }
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    qCDebug(logOsControl) << "Switching dock mode to:" << mode;
+    if (mode < 0 || mode >= 2) {
+        qCWarning(logOsControl) << "Invalid dock mode:" << mode;
+        return ctxByError(OSCallContext::InvalidArgs);
     }
 
-    return ctx;
+    if (!propertiesSet(osCallDbusDockService, osCallDbusDockPath, osCallDbusDockInterface,
+                       QString("DisplayMode"), QVariant::fromValue(mode))) {
+        qCWarning(logOsControl) << "Failed to set dock display mode";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    qCInfo(logOsControl) << "Dock mode switched successfully to:" << mode;
+    return ctxByError(OSCallContext::NonError);
 }
 
 OSCallContext UOSAbilityManager::doSystemThemeSwitch(int theme)
 {
+    qCDebug(logOsControl) << "Switching system theme to:" << theme;
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
     ctx.errorInfo = m_errMap[ctx.error];
 
-    if (m_uosAppearanceProxy->isValid()) {
-        if (theme >= 0 && theme < 3) {
-            switch (theme) {
-            case 0:
-                m_uosAppearanceProxy->Set("gtk", "deepin");
-                break;
-            case 1:
-                m_uosAppearanceProxy->Set("gtk", "deepin-dark");
-                break;
-            case 2:
-                m_uosAppearanceProxy->Set("gtk", "deepin-auto");
-                break;
-            default:
-                break;
-            }
-        } else {
-            ctx.error = OSCallContext::InvalidArgs;
-            ctx.errorInfo = m_errMap[ctx.error];
-        }
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    if (theme < 0 || theme >= 3) {
+        qCWarning(logOsControl) << "Invalid theme value:" << theme;
+        return ctxByError(OSCallContext::InvalidArgs);
     }
 
-    return ctx;
+#ifdef COMPILE_ON_V23
+    QVariant globalTheme;
+    if (!propertiesGet(osCallDbusAppearanceService, osCallDbusAppearancePath, osCallDbusAppearanceInterface, QString("GlobalTheme"), globalTheme)) {
+        qCWarning(logOsControl) << "Failed to get global theme";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QString globalThemeStr = globalTheme.toString();
+    if (globalThemeStr.isEmpty()) {
+        qCWarning(logOsControl) << "Global theme is empty";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QString themeName;
+    if (globalThemeStr.contains(".")) {
+        themeName = globalThemeStr.split(".").at(0);
+    } else {
+        themeName = globalThemeStr;
+    }
+
+    QVariantList args;
+    args << QVariant::fromValue(QString("GlobalTheme"));
+    switch (theme) {
+    case 0:
+        args << QVariant::fromValue(themeName + ".light");
+        break;
+    case 1:
+        args << QVariant::fromValue(themeName + ".dark");
+        break;
+    case 2:
+        args << QVariant::fromValue(themeName);
+        break;
+    default:
+        break;
+    }
+
+    if (!osCtrCallDbusNoResult(osCallDbusAppearanceService, osCallDbusAppearancePath, osCallDbusAppearanceInterface, QString("Set"), args)) {
+        qCWarning(logOsControl) << "Failed to set global theme";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return ctxByError(OSCallContext::NonError);
+#else
+    QVariantList args;
+    args << QVariant::fromValue(QString("gtk"));
+
+    switch (theme) {
+    case 0:
+        args << QVariant::fromValue(QString("deepin"));
+        break;
+    case 1:
+        args << QVariant::fromValue(QString("deepin-dark"));
+        break;
+    case 2:
+        args << QVariant::fromValue(QString("deepin-auto"));
+        break;
+    default:
+        break;
+    }
+
+    if (!osCtrCallDbusNoResult(osCallDbusAppearanceService, osCallDbusAppearancePath, osCallDbusAppearanceInterface, QString("Set"), args)) {
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return ctxByError(OSCallContext::NonError);
+#endif
 }
 
 OSCallContext UOSAbilityManager::doDiplayEyesProtection(bool on)
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
-
     //Eyes Protection
     //TODO:
     //   Brightness:70%
     //   Temperatrue: pos [0-100] 20%
     //      int kelvin = pos > 50 ? (6500 - (pos - 50) * 100) : (6500 + (50 - pos) * 300);
     //   May need adjust other display parameter.
-    if (m_uosDisplayProxy->isValid()) {
-        bool isSupEyesProtection = m_uosDisplayProxy->call("SupportSetColorTemperature").arguments().at(0).toBool();
-        if (!isSupEyesProtection) {
-            ctx.error = OSCallContext::NonService;
-            ctx.errorInfo = m_errMap[ctx.error];
-            return ctx;
-        }
-
-        if (on) {
-            auto reply = m_uosDisplayProxy->SetMethodAdjustCCT(2);
-            reply.waitForFinished();
-
-            if (!reply.isError()) {
-                int pos = 80;
-                int kelvin = pos > 50 ? (6500 - (pos - 50) * 100) : (6500 + (50 - pos) * 300);
-                m_uosDisplayProxy->SetColorTemperature(kelvin);
-                reply.waitForFinished();
-
-                if (reply.isError()) {
-                    qWarning() << "doDiplayEyesProtection->SetColorTemperature failed:"
-                               << reply.error();
-                }
-            } else {
-                qWarning() << "doDiplayEyesProtection->Enble Temperatrue set failed:"
-                           << reply.error();
-            }
-        } else {
-            //Close the eyes protection mode
-            // Brightness:80%
-            // Temperatrue: disable
-            auto reply = m_uosDisplayProxy->SetMethodAdjustCCT(0);
-            reply.waitForFinished();
-
-            if (reply.isError()) {
-                qWarning() << "doDiplayEyesProtection->Disable Temperatrue set failed:"
-                           << reply.error();
-            }
-        }
-
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    QVariant result;
+    if (!osCtrCallDbus(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("SupportSetColorTemperature"), result)) {
+        qCWarning(logOsControl) << "Failed to check color temperature support";
+        return ctxByError(OSCallContext::NonService);
     }
 
-    return ctx;
+    bool isSupEyesProtection = result.toBool();
+    if (!isSupEyesProtection) {
+        qCWarning(logOsControl) << "Color temperature adjustment not supported";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    if (on) {
+        QVariantList argCCT {QVariant::fromValue(2)};
+        if (!osCtrCallDbusNoResult(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface,
+                                   QString("SetMethodAdjustCCT"), argCCT)) {
+            qCWarning(logOsControl) << "Failed to set color temperature adjustment method";
+            return ctxByError(OSCallContext::NonService);
+        }
+
+        int pos = 80;
+        int kelvin = pos > 50 ? (6500 - (pos - 50) * 100) : (6500 + (50 - pos) * 300);
+        QVariantList argTem {QVariant::fromValue(kelvin)};
+        if (!osCtrCallDbusNoResult(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface,
+                                   QString("SetColorTemperature"), argTem)) {
+            qCWarning(logOsControl) << "Failed to set color temperature";
+            return ctxByError(OSCallContext::NonService);
+        }
+    } else {
+        //Close the eyes protection mode
+        // Brightness:80%
+        // Temperatrue: disable
+        QVariantList argCCT {QVariant::fromValue(0)};
+        if (!osCtrCallDbusNoResult(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface,
+                                   QString("SetMethodAdjustCCT"), argCCT)) {
+            qCWarning(logOsControl) << "Failed to disable color temperature adjustment";
+            return ctxByError(OSCallContext::NonService);
+        }
+    }
+
+    qCInfo(logOsControl) << "Eye protection mode configured successfully, state:" << on;
+    return ctxByError(OSCallContext::NonError);
 }
 
-OSCallContext UOSAbilityManager::doDiplayBrightness(int value)
-{
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
+OSCallContext UOSAbilityManager::doDiplayBrightness(int value, int adjustment)
+{    
+    qCDebug(logOsControl) << "Adjusting display brightness - value:" << value << "adjustment:" << adjustment;
+    
+    // Get primary screen first
+    QVariant screen;
+    if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("Primary"), screen)) {
+        qCWarning(logOsControl) << "Failed to get primary screen";
+        return ctxByError(OSCallContext::NonService);
+    }
+    
+    QString primaryScreen = screen.toString();
 
-    if (m_uosDisplayProxy->isValid()) {
-        if (value >= 0 && value <= 100) {
-            QString primaryDisplay = m_uosDisplayProxy->primary();
-            m_uosDisplayProxy->SetAndSaveBrightness(
-                primaryDisplay, value / 100.0);
+    // For relative adjustments, get current brightness first
+    if (adjustment != 0) {
+        // Get brightness for all screens
+        QVariant brightnessResult;
+        if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, 
+                          QString("Brightness"), brightnessResult)) {
+            qCWarning(logOsControl) << "Failed to get brightness";
+            return ctxByError(OSCallContext::NonService);
+        }
+
+        // Handle DBus return value safely
+        double currentBrightness = 0.0;
+        QVariantMap brightnessMap;        
+        // Since we know the return type is QDBusArgument containing a Dict of {String, Double}
+        if (brightnessResult.canConvert<QDBusArgument>()) {
+            const QDBusArgument &dbusArg = brightnessResult.value<QDBusArgument>();
+            if (dbusArg.currentType() == QDBusArgument::MapType) {
+                dbusArg.beginMap();
+                while (!dbusArg.atEnd()) {
+                    QString key;
+                    double value;
+                    dbusArg.beginMapEntry();
+                    dbusArg >> key >> value;
+                    dbusArg.endMapEntry();
+                    brightnessMap[key] = value;
+                }
+                dbusArg.endMap();
+            }
+        }
+
+        // Check if we got any data
+        if (brightnessMap.isEmpty()) {
+            qCWarning(logOsControl) << "Failed to get brightness map from DBus result";
+            return ctxByError(OSCallContext::NonService);
+        }
+
+        // Get brightness for primary screen
+        QVariant primaryBrightness = brightnessMap.value(primaryScreen);
+        if (!primaryBrightness.isValid()) {
+            qCWarning(logOsControl) << "No brightness value found for primary screen";
+            return ctxByError(OSCallContext::NonService);
+        }
+
+        bool ok = false;
+        currentBrightness = primaryBrightness.toDouble(&ok);
+        if (!ok || currentBrightness < 0.0) {
+            qCWarning(logOsControl) << "Invalid brightness value for primary screen:" << primaryBrightness;
+            return ctxByError(OSCallContext::NonService);
+        }
+
+        // Convert current brightness to percentage
+        int currentValue = qRound(currentBrightness * 100);
+
+        // Check boundary conditions for relative adjustments
+        if (adjustment == 1) {
+            // Trying to increase brightness
+            if (currentValue >= 100) {
+                qCInfo(logOsControl) << "Brightness is already at maximum (100%), cannot increase further";
+                OSCallContext ctx;
+                ctx.error = OSCallContext::NonError;
+                ctx.output = tr("Brightness is already at maximum and cannot be increased further.");
+                return ctx;
+            }
+            value = qMin(100, currentValue + 10);
         } else {
-            ctx.error = OSCallContext::InvalidArgs;
-            ctx.errorInfo = m_errMap[ctx.error];
+            // Trying to decrease brightness
+            if (currentValue <= 0) {
+                qCInfo(logOsControl) << "Brightness is already at minimum (0%), cannot decrease further";
+                OSCallContext ctx;
+                ctx.error = OSCallContext::NonError;
+                ctx.output = tr("Brightness is already at minimum and cannot be decreased further.");
+                return ctx;
+            }
+            value = qMax(0, currentValue - 10);
         }
     } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+        // Validate absolute value
+        if (value < 0 || value > 100) {
+            qCWarning(logOsControl) << "Invalid brightness value:" << value;
+            return ctxByError(OSCallContext::InvalidArgs);
+        }
     }
 
-    return ctx;
+    // Set new brightness
+    QVariantList args;
+    args << screen
+         << QVariant::fromValue(value / 100.0);
+    if (!osCtrCallDbusNoResult(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface,
+                               QString("SetAndSaveBrightness"), args)) {
+        qCWarning(logOsControl) << "Failed to set display brightness";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return ctxByError(OSCallContext::NonError);
 }
 
 OSCallContext UOSAbilityManager::doAppLaunch(const QString &appId, bool on)
 {
-    qInfo() << "UOSAbilityManager::doAppLaunch->" << appId;
-
+    qCDebug(logOsControl) << "Launching application:" << appId << "state:" << on;
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
 
@@ -424,9 +613,11 @@ OSCallContext UOSAbilityManager::doAppLaunch(const QString &appId, bool on)
 
                 if (defApps != 0) {
                     if (!QDesktopServices::openUrl(QUrl("https://"))) {
+                        qCWarning(logOsControl) << "Failed to open default browser";
                         ctx.error = OSCallContext::AppStartFailed;
                     }
                 } else {
+                    qCWarning(logOsControl) << "No default browser found";
                     ctx.error = OSCallContext::AppStartFailed;
                 }
             }
@@ -450,17 +641,35 @@ OSCallContext UOSAbilityManager::doAppLaunch(const QString &appId, bool on)
 
                 //Find the proper desktop file end, or not find
             FIND_DESKTOP_END:
-
-                qInfo() << "UOSAbilityManager::doAppLaunch->" << appDesktopFile;
+                qCDebug(logOsControl) << "Found desktop file:" << appDesktopFile;
                 int retCode = m_uosAppLauncher->launchDesktop(appDesktopFile);
                 ctx.error = OSCallContext::CallError(retCode);
 
             } else {
+                qCWarning(logOsControl) << "Application not found:" << appId;
                 ctx.error = OSCallContext::AppNotFound;
             }
         }
     } else { //off
-        ctx.error = OSCallContext::NotImpl;
+        // 关闭的应用范围为：应用商店、音乐、影院、语音记事本、计算器
+        static QMap<QString, QString> appMap = {
+            {"appstore", "deepin-home-appstore-client"},
+            {"musicPlayer", "deepin-music"},
+            {"moviePlayer", "deepin-movie"},
+            {"deepinVoiceNote", "deepin-voice-note"},
+            {"calculator", "deepin-calculator"}};
+
+        qCDebug(logOsControl) << "Preparing to close application:" << appId;
+        if (appMap.contains(appId)) {
+            QString bin = appMap[appId];
+            qCDebug(logOsControl) << "Executing killall for:" << bin;
+            QStringList argvList;
+            argvList.append(bin);
+            QProcess::execute("killall", argvList);
+        } else {
+            qCWarning(logOsControl) << "Application not in closeable list:" << appId;
+            ctx.error = OSCallContext::NotImpl;
+        }
     }
 
     ctx.errorInfo = m_errMap[ctx.error];
@@ -472,6 +681,9 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
                                                   const QString &startTime,
                                                   const QString &endTime)
 {
+    qCDebug(logOsControl) << "Creating schedule - title:" << title
+                         << "start:" << startTime 
+                         << "end:" << endTime;
     OSCallContext ctx;
 
     auto st = QDateTime::fromString(startTime, "yyyy-MM-ddThh:mm:ss");
@@ -491,20 +703,19 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
         schedObj["End"] = endTime;
         schedObj["Remind"] = "15";
 
-        qInfo() << "UOSAbilityManager::doCreateSchedule->" << schedObj;
+        qCDebug(logOsControl) << "Schedule object created:" << schedObj;
 
         if (0 == m_uosCalendarScheduler->createSchedule(schedObj)) {
+            qCInfo(logOsControl) << "Schedule created successfully";
             ctx.error = OSCallContext::NonError;
         } else {
+            qCWarning(logOsControl) << "Failed to create schedule";
             ctx.error = OSCallContext::NonService;
         }
     } else {
+        qCWarning(logOsControl) << "Invalid time format - start:" << startTime
+                               << "end:" << endTime;
         ctx.error = OSCallContext::InvalidArgs;
-
-        qWarning() << "UOSAbilityManager::doCreateSchedule->"
-                   << " title=" << title
-                   << " start=" << startTime
-                   << " endTime" << endTime;
     }
 
     ctx.errorInfo = m_errMap[ctx.error];
@@ -514,10 +725,12 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
 
 OSCallContext UOSAbilityManager::switchWifi(bool on)
 {
-    OSCallContext ctx;
+    qCDebug(logOsControl) << "Switching WiFi, state:" << on;
     QStringList adpters;
     {
-        QString reply = m_network->devices();
+        QVariant deviceRes;
+        propertiesGet(osCallDbusNetworkService, osCallDbusNetworkPath, osCallDbusNetworkInterface, QString("Devices"), deviceRes);
+        QString reply = deviceRes.toString();
         QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
         QJsonArray arr = doc["wireless"].toArray();
         for (int index = 0; index < arr.size(); index++)
@@ -525,26 +738,33 @@ OSCallContext UOSAbilityManager::switchWifi(bool on)
     }
 
     if (adpters.isEmpty()) {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
-        return ctx;
+        qCWarning(logOsControl) << "No wireless adapters found";
+        return ctxByError(OSCallContext::NonService);
     }
 
     for (auto adpter : adpters) {
         QDBusObjectPath dPath(adpter);
-        m_network->EnableDevice(dPath, on);
+        QVariantList args;
+        args << QVariant::fromValue(dPath)
+             << QVariant::fromValue(on);
+        osCtrCallDbusNoResult(osCallDbusNetworkService, osCallDbusNetworkPath, osCallDbusNetworkInterface, QString("EnableDevice"), args);
     }
 
     int errCode = 0;
     if (on) {
-        if (!m_fIsLinglong) {
-            errCode = m_uosControlCenterProxy->ShowPage("network", "WirelessPage");
-        } else {
-            //V23 call V6.x api
-            errCode = m_uosControlCenterProxy->ShowPage("network/WirelessPage");
-        }
+#ifdef COMPILE_ON_V23
+#ifdef COMPILE_ON_V25
+        QString firstAdpterNum = adpters.at(0).section('/', -1);
+        errCode = m_uosControlCenterProxy->ShowPage(QString("network/wireless%1").arg(firstAdpterNum));
+#else
+        errCode = m_uosControlCenterProxy->ShowPage(QString("network/WirelessPage"));
+#endif
+#else
+        errCode = m_uosControlCenterProxy->ShowPage("network", "WirelessPage");
+#endif
     }
 
+    OSCallContext ctx;
     ctx.error = OSCallContext::CallError(errCode);
 
     if (errCode == 0)
@@ -557,11 +777,13 @@ OSCallContext UOSAbilityManager::switchWifi(bool on)
 
 OSCallContext UOSAbilityManager::getSystemMemory()
 {
+    qCDebug(logOsControl) << "Getting system memory information";
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
     qint64 mem = DSysInfo::memoryInstalledSize();
 
     if (mem < 1) {
+        qCWarning(logOsControl) << "Invalid memory size:" << mem;
         ctx.error = OSCallContext::InvalidArgs;
         ctx.errorInfo = m_errMap[ctx.error];
     } else {
@@ -574,16 +796,15 @@ OSCallContext UOSAbilityManager::getSystemMemory()
 
 OSCallContext UOSAbilityManager::doSystemLanguageSetting()
 {
+    qCDebug(logOsControl) << "Opening system language settings";
     OSCallContext ctx;
     int errCode = 0;
 
-    if (!m_fIsLinglong) {
-        errCode = m_uosControlCenterProxy->ShowPage("keyboard", "System Language");
-    } else {
-        //V23 call V6.x api
-        errCode = m_uosControlCenterProxy->ShowPage("keyboard/keyboardLanguage");
-    }
-
+#ifdef COMPILE_ON_V23
+    errCode = m_uosControlCenterProxy->ShowPage("keyboard/keyboardLanguage");
+#else
+    errCode = m_uosControlCenterProxy->ShowPage("keyboard", "System Language");
+#endif
     ctx.error = OSCallContext::CallError(errCode);
 
     if (errCode == 0)
@@ -594,90 +815,156 @@ OSCallContext UOSAbilityManager::doSystemLanguageSetting()
     return ctx;
 }
 
-OSCallContext UOSAbilityManager::doPerformanceModeSwitch(const QString &mode)
+OSCallContext UOSAbilityManager::doPerformanceModeSwitch(const QString &mode, bool isOpen)
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
+    qCDebug(logOsControl) << "Switching performance mode - mode:" << mode << "isOpen:" << isOpen;
+    const QString performanceStr = "performance";
+    const QString balanceStr = "balance";
+    const QString powersaveStr = "powersave";
 
-    if (m_power->isValid()) {
-        QDBusPendingReply<QString> reply = m_power->SetMode(mode);
+    auto conn = QDBusConnection::systemBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(osCallDbusPowerService, osCallDbusPowerPath, QString("org.freedesktop.DBus.Properties"),
+                                                      QString("Get"));
+    QVariantList args;
+    args << QVariant::fromValue(QString(osCallDbusPowerInterface))
+         << QVariant::fromValue(QString("Mode"));
+    msg.setArguments(args);
+    QDBusReply<QVariant> reply = conn.call(msg);
+    QString currentMode = reply.value().toString();
 
-        if (!reply.value().isNull()) {
-            ctx.error = OSCallContext::InvalidArgs;
-            ctx.errorInfo = reply.value();
+    // set mode
+    auto setMode = [](const QString &mode){
+        auto conn = QDBusConnection::systemBus();
+        QDBusMessage setMsg = QDBusMessage::createMethodCall(osCallDbusPowerService, osCallDbusPowerPath, osCallDbusPowerInterface,
+                                                          QString("SetMode"));
+        QVariantList setArgs {QVariant::fromValue(mode)};
+        setMsg.setArguments(setArgs);
+        QDBusMessage setReply = conn.call(setMsg);
+        if (setReply.type() != QDBusMessage::ReplyMessage) {
+            qCWarning(logOsControl) << "Failed to set power mode:" << mode;
+            return false;
+        }
+
+        return true;
+    };
+
+    if (isOpen) {
+        // 切换
+        if (mode == currentMode) {
+            OSCallContext ctx;
+            ctx.output = tr("The current mode is already %1 mode.").arg(mode);
+            return ctx;
+        }
+
+        bool res = setMode(mode);
+        if (!res) {
+            qCWarning(logOsControl) << "Failed to switch to mode:" << mode;
+            return ctxByError(OSCallContext::NonService);
         }
     } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+        // 关闭
+        if (mode != currentMode) {
+            qCWarning(logOsControl) << "Current mode" << currentMode << "does not match target mode" << mode;
+            OSCallContext ctx;
+            ctx.output = tr("Unable to close because the current mode %1 does not match the target mode.").arg(mode);
+            return ctx;
+        }
+
+        if (mode == performanceStr || mode == powersaveStr) {
+            bool res = setMode(balanceStr);
+            if (!res) {
+                qCWarning(logOsControl) << "Failed to switch to balance mode";
+                return ctxByError(OSCallContext::NonService);
+            }
+        } else if (mode == balanceStr) {
+            qCWarning(logOsControl) << "Cannot turn off balance mode";
+            OSCallContext ctx;
+            ctx.output = tr("Balance mode cannot be turned off.");
+            return ctx;
+        }
     }
 
-    return ctx;
+    return ctxByError(OSCallContext::NonError);
 }
 
 OSCallContext UOSAbilityManager::openShutdownFront()
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
-
-    if (m_shutdownFrontProxy->isValid()) {
-        m_shutdownFrontProxy->call("Show");
-        ctx.output = tr("The lock screen has been opened for you");
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    qCDebug(logOsControl) << "Opening shutdown interface";
+    if (!osCtrCallDbusNoResult(osCallDbusShutDownService, osCallDbusShutDownPath, osCallDbusShutDownInterface, QString("Show"))) {
+        qCWarning(logOsControl) << "Failed to open shutdown interface";
+        return ctxByError(OSCallContext::NonService);
     }
 
+    qCInfo(logOsControl) << "Shutdown interface opened successfully";
+    OSCallContext ctx;
+    ctx.output = tr("The lock screen has been opened for you");
     return ctx;
 }
+
 OSCallContext UOSAbilityManager::openScreenShot()
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
-
-    if (m_screenShotProxy->isValid()) {
-        m_screenShotProxy->call("StartScreenshot");
-        ctx.output = tr("Screen shotting or recording has been completed");
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    qCDebug(logOsControl) << "Opening screenshot interface";
+    if (!osCtrCallDbusNoResult(osCallDbusScreenshotService, osCallDbusScreenshotPath, osCallDbusScreenshotInterface, QString("StartScreenshot"))) {
+        qCWarning(logOsControl) << "Failed to open screenshot interface";
+        return ctxByError(OSCallContext::NonService);
     }
 
+    qCInfo(logOsControl) << "Screenshot interface opened successfully";
+    OSCallContext ctx;
+    ctx.output = tr("Screen shotting or recording has been completed");
     return ctx;
 }
 
 OSCallContext UOSAbilityManager::doDisplayModeSwitch(int mode)
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
+    qCDebug(logOsControl) << "Switching display mode to:" << mode;
+    QVariant result;
+    if (!osCtrCallDbus(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("ListOutputNames"), result)) {
+        qCWarning(logOsControl) << "Failed to get output names";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QStringList screenList = result.toStringList();
 
-    if (m_uosDisplayProxy->isValid()) {
-        QStringList screenList = m_uosDisplayProxy->ListOutputNames();
-        if (screenList.count() <= 1) {
-            ctx.output = tr("Only one screen, can't switch screen mode.");
-            return ctx;
-        }
-
-        int currentMode = m_uosDisplayProxy->displayMode();
-        if (mode == currentMode) {
-            ctx.output = tr("It is the same as the current display mode. Please try again.");
-            return ctx;
-        }
-
-        m_uosDisplayProxy->SwitchMode(mode, m_uosDisplayProxy->primary());
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    if (screenList.count() <= 1) {
+        qCWarning(logOsControl) << "Only one screen available, cannot switch display mode";
+        OSCallContext ctx;
+        ctx.output = tr("Only one screen, can't switch screen mode.");
+        return ctx;
     }
 
-    return ctx;
+    QVariant currentMode;
+    if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("DisplayMode"), currentMode)) {
+        qCWarning(logOsControl) << "Failed to get current display mode";
+        return ctxByError(OSCallContext::NonService);
+    }
+    if (mode == currentMode.toInt()) {
+        qCInfo(logOsControl) << "Already in requested display mode:" << mode;
+        OSCallContext ctx;
+        ctx.output = tr("It is the same as the current display mode. Please try again.");
+        return ctx;
+    }
+
+    QVariant primary;
+    if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("Primary"), primary)) {
+        qCWarning(logOsControl) << "Failed to get primary display";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    QVariantList args;
+    args << QVariant::fromValue(mode)
+         << primary;
+    if (!osCtrCallDbusNoResult(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("SwitchMode"), args)) {
+        qCWarning(logOsControl) << "Failed to switch display mode";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    qCInfo(logOsControl) << "Display mode switched successfully to:" << mode;
+    return ctxByError(OSCallContext::NonError);
 }
 
 OSCallContext UOSAbilityManager::openGrandSearch()
 {
+    qCDebug(logOsControl) << "Opening grand search interface";
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
     ctx.errorInfo = m_errMap[ctx.error];
@@ -689,8 +976,11 @@ OSCallContext UOSAbilityManager::openGrandSearch()
                 QDBusConnection::sessionBus(), this);
 
     if (!grandSearch->isValid()) {
+        qCWarning(logOsControl) << "Failed to connect to grand search service";
         ctx.error = OSCallContext::NonService;
         ctx.errorInfo = m_errMap[ctx.error];
+    } else {
+        qCInfo(logOsControl) << "Grand search interface opened successfully";
     }
 
     return ctx;
@@ -698,40 +988,150 @@ OSCallContext UOSAbilityManager::openGrandSearch()
 
 OSCallContext UOSAbilityManager::switchScreen()
 {
-    OSCallContext ctx;
-    ctx.error = OSCallContext::NonError;
-    ctx.errorInfo = m_errMap[ctx.error];
-
-    if (m_uosDisplayProxy->isValid()) {
-        uchar singleMode = 3;
-        uchar currentMode = m_uosDisplayProxy->displayMode();
-        QString primaryScreen = m_uosDisplayProxy->primary();
-        QStringList screenList = m_uosDisplayProxy->ListOutputNames();
-        if (screenList.count() <= 1) {
-            ctx.output = tr("Only one screen, can't switch screen.");
-            return ctx;
-        }
-
-        if (singleMode == currentMode) {
-            int screenIdx = screenList.indexOf(primaryScreen);
-            if (screenList.endsWith(primaryScreen))
-                m_uosDisplayProxy->SwitchMode(singleMode, screenList.first());
-            else
-                m_uosDisplayProxy->SwitchMode(singleMode, screenList[screenIdx + 1]);
-        }
-        else
-            m_uosDisplayProxy->SwitchMode(singleMode, primaryScreen);
-    } else {
-        ctx.error = OSCallContext::NonService;
-        ctx.errorInfo = m_errMap[ctx.error];
+    qCDebug(logOsControl) << "Switching screen";
+    uchar singleMode = 3;
+    QVariant currentMode;
+    if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("DisplayMode"), currentMode)) {
+        qCWarning(logOsControl) << "Failed to get current display mode";
+        return ctxByError(OSCallContext::NonService);
     }
 
-    return ctx;
+    QVariant primaryScreen;
+    if (!propertiesGet(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("Primary"), primaryScreen)) {
+        qCWarning(logOsControl) << "Failed to get primary screen";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QString primary = primaryScreen.toString();
+
+    QVariant screenList;
+    if (!osCtrCallDbus(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("ListOutputNames"), screenList)) {
+        qCWarning(logOsControl) << "Failed to get screen list";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QStringList screens = screenList.toStringList();
+
+    if (screens.length() <= 1) {
+        qCWarning(logOsControl) << "Only one screen available, cannot switch";
+        OSCallContext ctx;
+        ctx.output = tr("Only one screen, can't switch screen.");
+        return ctx;
+    }
+
+    QVariantList switchArgs;
+    switchArgs << QVariant::fromValue(singleMode);
+    if (singleMode == currentMode) {
+        int screenIdx = screens.indexOf(primary);
+        if (screens.endsWith(primary))
+            switchArgs << QVariant::fromValue(screens.first());
+        else
+            switchArgs << QVariant::fromValue(screens[screenIdx + 1]);
+    }
+    else
+        switchArgs << primaryScreen;
+
+    if (!osCtrCallDbusNoResult(osCallDbusDisplayService, osCallDbusDisplayPath, osCallDbusDisplayInterface, QString("SwitchMode"), switchArgs)) {
+        qCWarning(logOsControl) << "Failed to switch screen mode";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    qCInfo(logOsControl) << "Screen switched successfully";
+    return ctxByError(OSCallContext::NonError);
+}
+
+OSCallContext UOSAbilityManager::volumeAdjustment(const QJsonObject &argsObj)
+{
+    qCDebug(logOsControl) << "Adjusting volume with args:" << argsObj;
+    QVariant audioSink;
+    if (!propertiesGet(osCallDbusAudioService, osCallDbusAudioPath, osCallDbusAudioInterface, QString("DefaultSink"), audioSink)) {
+        qCWarning(logOsControl) << "Failed to get default audio sink";
+        return ctxByError(OSCallContext::NonService);
+    }
+    QString audioPath = audioSink.value<QDBusObjectPath>().path();
+
+    if (audioPath.isEmpty()) {
+        qCWarning(logOsControl) << "Audio path is empty";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    if (argsObj.contains("mute")) {
+        // 静音
+        bool isMute = argsObj.value("mute").toBool();
+        qCDebug(logOsControl) << "Setting mute state to:" << isMute;
+        QVariantList muteArgs;
+        muteArgs << QVariant::fromValue(isMute);
+        if (!osCtrCallDbusNoResult(osCallDbusAudioService, audioPath, osCallDbusAudioInterface + QString(".Sink"), QString("SetMute"), muteArgs)) {
+            qCWarning(logOsControl) << "Failed to set mute state";
+            return ctxByError(OSCallContext::NonService);
+        }
+        qCInfo(logOsControl) << "Mute state set successfully to:" << isMute;
+        return ctxByError(OSCallContext::NonError);
+    }
+
+    if (argsObj.contains("approximate")) {
+        // 模糊调节
+        QString approximate = argsObj.value("approximate").toString();
+        QVariant volVariant;
+        if (!propertiesGet(osCallDbusAudioService, audioPath, osCallDbusAudioInterface + QString(".Sink"), QString("Volume"), volVariant)) {
+            qCWarning(logOsControl) << "Failed to get current volume";
+            return ctxByError(OSCallContext::NonService);
+        }
+        double vol = volVariant.toDouble();
+        if (approximate == "Add") {
+            vol += 0.1;
+        } else if (approximate == "Reduce") {
+            vol -= 0.1;
+        } else {
+            qCWarning(logOsControl) << "Invalid approximate value:" << approximate;
+            return ctxByError(OSCallContext::InvalidArgs);
+        }
+        vol = qBound(0.0, vol, 1.0);
+        QVariantList volArgs;
+        volArgs << QVariant::fromValue(vol);
+        volArgs << QVariant::fromValue(true);
+        if (!osCtrCallDbusNoResult(osCallDbusAudioService, audioPath, osCallDbusAudioInterface + QString(".Sink"), QString("SetVolume"), volArgs)) {
+            qCWarning(logOsControl) << "Failed to set volume";
+            return ctxByError(OSCallContext::NonService);
+        }
+        qCInfo(logOsControl) << "Volume adjusted successfully to:" << vol;
+        return ctxByError(OSCallContext::NonError);
+    }
+
+    if (argsObj.contains("volume")) {
+        double vol = argsObj.value("volume").toInt() / 100.0;
+        if (vol < 0 || vol > 100) {
+            qCWarning(logOsControl) << "Invalid volume value:" << vol;
+            return ctxByError(OSCallContext::InvalidArgs);
+        }
+
+        QVariantList volArgs;
+        volArgs << QVariant::fromValue(vol);
+        volArgs << QVariant::fromValue(true);
+        if (!osCtrCallDbusNoResult(osCallDbusAudioService, audioPath, osCallDbusAudioInterface + QString(".Sink"), QString("SetVolume"), volArgs)) {
+            qCWarning(logOsControl) << "Failed to set volume";
+            return ctxByError(OSCallContext::NonService);
+        }
+        qCInfo(logOsControl) << "Volume set successfully to:" << vol;
+    }
+
+    return ctxByError(OSCallContext::NonError);
 }
 
 QString UOSAbilityManager::textForCommnand()
 {
     return tr("Your command has been issued.");
+}
+
+QStringList UOSAbilityManager::getAppsDesc()
+{
+    if (m_app2Desktop.isEmpty())
+        return {};
+
+    QStringList appsDesc;
+    for (auto iter = m_app2Desktop.begin(); iter != m_app2Desktop.end(); iter++) {
+        appsDesc << iter.value().appDesc;
+    }
+
+    return appsDesc;
 }
 
 void UOSAbilityManager::loadErrMap()
@@ -765,11 +1165,12 @@ void UOSAbilityManager::loadErrMap()
 
 void UOSAbilityManager::loadApp2Desktop()
 {
+    qCDebug(logOsControl) << "Loading app to desktop mappings";
     // 读取JSON文件
     QFile file(":/assets/app/deepin-app-infos.json");
 
     if (!file.open(QIODevice::ReadOnly)) {
-        qWarning() << "Failed to load uos app infos.";
+        qCWarning(logOsControl) << "Failed to load uos app infos";
         return;
     }
 
@@ -779,7 +1180,7 @@ void UOSAbilityManager::loadApp2Desktop()
     QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonData);
 
     if (!jsonDoc.isObject()) {
-        qWarning() << "Uos app infos file format error!";
+        qCWarning(logOsControl) << "Uos app infos file format error";
         return;
     }
 
@@ -809,6 +1210,7 @@ void UOSAbilityManager::loadApp2Desktop()
             appInfo.appId = app["appId"].toString();
             appInfo.appName = app["appName"].toString();
             appInfo.appIcon = app["appIcon"].toString();
+            appInfo.appDesc = app["appDesc"].toString();
 
             foreach (auto desktopFile, app["desktopFile"].toArray()) {
                 appInfo.desktopFiles << desktopFile.toString();
@@ -818,88 +1220,17 @@ void UOSAbilityManager::loadApp2Desktop()
         }
     }
 
-    qInfo() << "loadApp2Desktop->" << m_app2Desktop.size() << m_defaultDesktopPaths;
+    qCInfo(logOsControl) << "Loaded" << m_app2Desktop.size() << "app mappings from" << m_defaultDesktopPaths.size() << "desktop paths";
 }
 
 void UOSAbilityManager::initUosProxys()
 {
-    //Check the OS type
-    //TODO:
-    //   Now only have two type, linglong and
-    //Deepin/UOS. Deepin/UOS use the same interface.
-    //May be deepin will change the interface
-    //to org.deepin.dde.xxx
-    m_fIsLinglong = UosInfo()->isLingLong();
-
-    m_uosDockProxy.reset(
-        new UosDock(
-            UosDock::staticInterfaceName(),
-            "/com/deepin/dde/daemon/Dock",
-            QDBusConnection::sessionBus(), this));
-    m_uosAppearanceProxy.reset(
-        new UosAppearance(
-            UosAppearance::staticInterfaceName(),
-            "/com/deepin/daemon/Appearance",
-            QDBusConnection::sessionBus(), this));
-
-    m_uosDisplayProxy.reset(
-        new UosDisplay(
-            UosDisplay::staticInterfaceName(),
-            "/com/deepin/daemon/Display",
-            QDBusConnection::sessionBus(), this));
-
-    m_uosDesktopProxy.reset(
-        new QDBusInterface(
-            "com.deepin.dde.desktop",
-            "/com/deepin/dde/desktop",
-            "com.deepin.dde.desktop",
-            QDBusConnection::sessionBus(), this));
-
-    m_uosWM.reset(
-                new UosWM(
-                    UosWM::staticInterfaceName(),
-                    "/com/deepin/wm",
-                    QDBusConnection::sessionBus(), this));
-
-    m_bluetooth.reset(
-                new UosBluetooth(
-                    UosBluetooth::staticInterfaceName(),
-                    "/com/deepin/daemon/Bluetooth",
-                    QDBusConnection::sessionBus(), this));
-    m_bluetooth->setTimeout(5000);
-
-    m_network.reset(
-                new UosNetwork(
-                    UosNetwork::staticInterfaceName(),
-                    "/com/deepin/daemon/Network",
-                    QDBusConnection::sessionBus(), this));
-    m_network->setTimeout(5000);
-
-    m_power.reset(
-                new UosPower(
-                    UosPower::staticInterfaceName(),
-                    "/com/deepin/system/Power",
-                    QDBusConnection::systemBus(), this));
-    m_power->setTimeout(5000);
-
-    m_shutdownFrontProxy.reset(
-        new QDBusInterface(
-            "com.deepin.dde.shutdownFront",
-            "/com/deepin/dde/shutdownFront",
-            "com.deepin.dde.shutdownFront",
-            QDBusConnection::sessionBus(), this));
-
-    m_screenShotProxy.reset(
-        new QDBusInterface(
-            "com.deepin.Screenshot",
-            "/com/deepin/Screenshot",
-            "com.deepin.Screenshot",
-            QDBusConnection::sessionBus(), this));
-
-    m_uosControlCenterProxy.reset(new DeepinControlCenter(m_fIsLinglong, this));
-    m_uosNotificationProxy.reset(new DeepinNotification(m_fIsLinglong, this));
-    m_uosAppLauncher.reset(new DeepinLauncher(m_fIsLinglong, m_defaultDesktopPaths, this));
+    m_uosControlCenterProxy.reset(new DeepinControlCenter(this));
+    m_uosNotificationProxy.reset(new DeepinNotification(this));
+    m_uosAppLauncher.reset(new DeepinLauncher(m_defaultDesktopPaths, this));
     m_uosCalendarScheduler.reset(new DeepinCalendar(this));
+    m_uosMultimediaProxy.reset(new DeepinMultimedia(this));
+    qCInfo(logOsControl) << "UOS proxies initialized successfully";
 }
 
 void UOSAbilityManager::initDesktopPaths()
@@ -913,6 +1244,173 @@ void UOSAbilityManager::initDesktopPaths()
 #endif
 
     foreach (auto p, systemDataPaths) {
+        if (p.endsWith('/')) {
+            p.chop(1);
+        }
         m_defaultDesktopPaths << (p + QString("/applications"));
     }
+    qCInfo(logOsControl) << "Initialized" << m_defaultDesktopPaths.size() << "desktop paths";
+}
+
+bool UOSAbilityManager::osCtrCallDbus(const QString &service, const QString &path, const QString &interface, const QString &method,
+                                 QVariant &result, const QVariantList &arguments)
+{
+    qCDebug(logOsControl) << "Calling DBus method:" << method << "on service:" << service;
+    auto conn = QDBusConnection::sessionBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(service, path, interface,  method);
+
+    if (!arguments.isEmpty())
+        msg.setArguments(arguments);
+
+    // sync
+    QDBusMessage reply = conn.call(msg);
+
+    if (reply.type() != QDBusMessage::ReplyMessage) {
+        qCWarning(logOsControl) << "DBus call failed - service:" << service
+                               << "path:" << path 
+                               << "interface:" << interface 
+                               << "method:" << method 
+                               << "error:" << reply.errorMessage();
+        return false;
+    }
+
+    if (reply.arguments().isEmpty()) {
+        qCWarning(logOsControl) << "DBus call returned empty result";
+        return false;
+    }
+
+    result = reply.arguments().at(0);
+    qCDebug(logOsControl) << "DBus call completed successfully";
+    return true;
+}
+
+bool UOSAbilityManager::osCtrCallDbusNoResult(const QString &service, const QString &path, const QString &interface, const QString &method, const QVariantList &arguments)
+{
+    qCDebug(logOsControl) << "Calling DBus method (no result):" << method << "on service:" << service;
+    auto conn = QDBusConnection::sessionBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(service, path, interface,  method);
+
+    if (!arguments.isEmpty())
+        msg.setArguments(arguments);
+
+    // sync
+    QDBusMessage reply = conn.call(msg);
+
+    if (reply.type() != QDBusMessage::ReplyMessage) {
+        qCWarning(logOsControl) << "DBus call failed - service:" << service
+                               << "path:" << path 
+                               << "interface:" << interface 
+                               << "method:" << method 
+                               << "error:" << reply.errorMessage();
+        return false;
+    }
+
+    qCDebug(logOsControl) << "DBus call completed successfully";
+    return true;
+}
+
+bool UOSAbilityManager::propertiesGet(const QString &service, const QString &path, const QString &interface, const QString &propertyName, QVariant &value)
+{
+    qCDebug(logOsControl) << "Getting property:" << propertyName << "from service:" << service;
+    auto conn = QDBusConnection::sessionBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(service, path, QString("org.freedesktop.DBus.Properties"), QString("Get"));
+
+    QVariantList args;
+    args << QVariant::fromValue(interface)
+         << QVariant::fromValue(propertyName);
+    msg.setArguments(args);
+
+    QDBusMessage reply = conn.call(msg);
+    if (reply.type() != QDBusMessage::ReplyMessage) {
+        qCWarning(logOsControl) << "Failed to get property:" << propertyName
+                               << "error:" << reply.errorMessage();
+        return false;
+    }
+
+    if (reply.arguments().isEmpty()) {
+        qCWarning(logOsControl) << "Property get returned empty result";
+        return false;
+    }
+
+    if (reply.arguments().at(0).canConvert<QDBusVariant>()) {
+        value = QDBusReply<QVariant>(reply);
+        qCDebug(logOsControl) << "Property get completed successfully";
+        return true;
+    }
+
+    qCWarning(logOsControl) << "Property value cannot be converted to QDBusVariant";
+    return false;
+}
+
+bool UOSAbilityManager::propertiesGetAll(const QString &interface, QVariantMap &values)
+{
+    //TODO
+    return true;
+}
+
+bool UOSAbilityManager::propertiesSet(const QString &service, const QString &path, const QString &interface, const QString &propertyName, const QVariant &value)
+{
+    qCDebug(logOsControl) << "Setting property:" << propertyName << "on service:" << service;
+    auto conn = QDBusConnection::sessionBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(service, path, QString("org.freedesktop.DBus.Properties"), QString("Set"));
+
+    QVariantList args;
+    args << QVariant::fromValue(interface)
+         << QVariant::fromValue(propertyName)
+         << QVariant::fromValue(QDBusVariant(QVariant::fromValue(value)));
+    msg.setArguments(args);
+
+    QDBusMessage reply = conn.call(msg);
+
+    if (reply.type() != QDBusMessage::ReplyMessage) {
+        qCWarning(logOsControl) << "Failed to set property:" << propertyName
+                               << "error:" << reply.errorMessage();
+        return false;
+    }
+
+    qCDebug(logOsControl) << "Property set completed successfully";
+    return true;
+}
+
+// 音乐播放器功能实现
+OSCallContext UOSAbilityManager::doStateControl(const QString &control)
+{
+    qCDebug(logOsControl) << "Controlling playback state:" << control;
+    
+    if (!m_uosMultimediaProxy) {
+        return ctxByError(OSCallContext::NonService);
+    }
+    
+    QString errorInfo;
+    bool success = m_uosMultimediaProxy->stateControl(control, errorInfo);
+    
+    OSCallContext ctx;
+    if (success) {
+        ctx.error = OSCallContext::NonError;
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = errorInfo;
+    }
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doSeek(int offset)
+{
+    qCDebug(logOsControl) << "Seeking to position:" << offset;
+    
+    if (!m_uosMultimediaProxy) {
+        return ctxByError(OSCallContext::NonService);
+    }
+    
+    QString errorInfo;
+    bool success = m_uosMultimediaProxy->seek(offset, errorInfo);
+    
+    OSCallContext ctx;
+    if (success) {
+        ctx.error = OSCallContext::NonError;
+    } else {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = errorInfo;
+    }
+    return ctx;
 }

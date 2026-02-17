@@ -9,7 +9,7 @@
 #include <DLabel>
 #include <DPushButton>
 #include <DSuggestButton>
-#include <DApplicationHelper>
+#include <DGuiApplicationHelper>
 
 #include <QFutureWatcher>
 #include <QtConcurrent>
@@ -27,12 +27,13 @@ class WelcomeDialog : public DAbstractDialog
 {
     Q_OBJECT
 public:
-    explicit WelcomeDialog(DWidget *parent = nullptr, bool onlyUseAgreement = false);
+    static WelcomeDialog *instance(bool onlyUseAgreement = false);
 
     bool isFreeAccount();
-    Qt::CheckState getUserExpState();
     void resetDialog();
-    void setOnlyUseAgreement(bool onlyUseAgreement) { m_onlyUseAgreement = onlyUseAgreement; }
+    static bool isAgreed();
+    inline void setOnlyUseAgreement(bool onlyUseAgreement) { m_onlyUseAgreement = onlyUseAgreement; }
+    inline bool isOnlyUseAgreement() { return m_onlyUseAgreement; }
 
 private:
     void initUI();
@@ -41,12 +42,13 @@ private:
     DArrowRectangle *showArrowRectangle(DArrowRectangle::ArrowDirection);
 
     void resetLinkColor();
-
-protected:
-    bool eventFilter(QObject *watched, QEvent *event) override;
+    void updateAgree();
 
 signals:
     void signalAppendModel(const LLMServerProxy &);
+    //当用户选择添加模型时，需要先拉起chatwindow，在chatwindow绘制完成后在拉起设置界面。
+    //否则会导致设置界面被覆盖在chatwindow下面且无法激活。
+    void signalShowMgmtWindowAfterChatInitFinished();
 
 public slots:
     void onGetFreeAccount();
@@ -55,16 +57,20 @@ private slots:
     void onUpdateSystemFont(const QFont &);
     void onUpdateSystemTheme(const DGuiApplicationHelper::ColorType &);
 
+protected:
+    void showEvent(QShowEvent *event) override;
+
 private:
+    WelcomeDialog(DWidget *parent = nullptr, bool onlyUseAgreement = false);
     WrapCheckBox *m_pAgrCheckbox{nullptr};
-    WrapCheckBox *m_pExpCheckbox{nullptr};
-    DIconButton *m_pExpIcon{nullptr};
 
     DSuggestButton *m_pFreeAccount{nullptr};
     DSuggestButton *m_pStartUsing{nullptr};
     DPushButton *m_pAddModel{nullptr};
 
     ThemedLable *m_pActivity{nullptr};
+    ThemedLable *m_pIntroduce{nullptr};
+    QSpacerItem *m_pVerticalSpacer{nullptr};
 
     DWidget *m_pFreeWidget{nullptr};
 

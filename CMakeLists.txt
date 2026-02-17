@@ -1,230 +1,193 @@
 cmake_minimum_required(VERSION 3.10)
-
 project(uos-ai VERSION 0.1 LANGUAGES CXX)
-
 add_compile_definitions(APP_VERSION="${APP_VERSION}")
 
-set(CMAKE_CXX_STANDARD 11)
+# 全局配置
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
-set(CMAKE_CXX_FLAGS "-g -Wall")
-
-# 增加安全编译参数
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fstack-protector-all -fPIC")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fstack-protector-all -fPIC")
-set(CMAKE_EXE_LINKER_FLAGS  "-z relro -z now -z noexecstack -pie")
 
 # generate qm files
 if (NOT (${CMAKE_BUILD_TYPE} MATCHES "Debug"))
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
     execute_process(COMMAND bash "${CMAKE_SOURCE_DIR}/translate_generation.sh" WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
-endif ()
+endif()
 
+# 库目录
 set(LIB_PLATFORM_DIR "${CMAKE_INSTALL_PREFIX}/lib/${CMAKE_LIBRARY_ARCHITECTURE}")
 add_definitions(-DLIB_PLATFORM_DIR="${LIB_PLATFORM_DIR}")
 
+# 插件
 set(EXTERNAL_LLM_DIR "${LIB_PLATFORM_DIR}/uos-ai-assistant/llm")
 
-if (CMAKE_BUILD_TYPE MATCHES Debug)
-    add_definitions(-DEXTERNAL_LLM_DIR="${CMAKE_BINARY_DIR}/plugin-model")
+# 获取系统版本
+if (NOT DEFINED BUILD_OS_VERSION OR BUILD_OS_VERSION STREQUAL "")
+    # 读取文件并提取Version值
+    file(STRINGS "/etc/deepin-version" FILE_CONTENTS REGEX "^Version=")
+
+    # 遍历文件内容，查找Version行
+    foreach(LINE ${FILE_CONTENTS})
+        # 检查是否是Version行
+        if(LINE MATCHES "Version=([0-9]+)")
+            # 提取版本号
+            set(BUILD_OS_VERSION "${CMAKE_MATCH_1}")
+        endif()
+    endforeach()
+
+    message("Get BUILD_OS_VERSION from deepin-version ${BUILD_OS_VERSION}")
 else()
-    add_definitions(-DEXTERNAL_LLM_DIR="${EXTERNAL_LLM_DIR}")
+    message("catch BUILD_OS_VERSION ${BUILD_OS_VERSION}")
 endif()
 
-include_directories("${CMAKE_SOURCE_DIR}/include")
+# Qt
+if (${BUILD_OS_VERSION} MATCHES "25")
+    find_package(QT NAMES Qt6)
+else()
+    find_package(QT NAMES Qt5)
+endif()
 
-find_package(DtkCMake REQUIRED)
+# 配置选项
+option(ENABLE_AGENT_PLUGIN "Enable Agent Plugin" ON)
+option(ENABLE_MODEL_PLUGINS "Enable Model Plugins" OFF)
+option(ENABLE_ASSISTANT "Enable AI Assistant" ON)
+option(ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT "Enable Personal Knowledge Assistant" OFF)
+option(ENABLE_AI_BAR "Enable AI Bar" OFF)
+option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" ON)
+option(ENABLE_MCP "Enable MCP Server" ON)
 
-#Indentify the version
-#if (1 OR ${DEEPIN_OS_VERSION} MATCHES "23")
-#    add_definitions(-DCOMPILE_ON_V23)
-#    set(COMPILE_ON_V23 TRUE)
-#    message("COMPILE ON v23")
-#else()
+# 模型插件
+option(ENABLE_MODEL_FYDN "Enable FYDN Plugin" OFF)
+option(ENABLE_MODEL_PPT "Enable PPT Plugin" OFF)
+option(ENABLE_MODEL_POSTER "Enable POSTER Plugin" OFF)
+option(ENABLE_MODEL_RPA "Enable RPA Plugin" OFF)
+option(ENABLE_MODEL_ZTBBD "Enable ZTBBD Plugin" OFF)
+option(ENABLE_MODEL_XXZSK "Enable XXZSK Plugin" OFF)
+option(ENABLE_MODEL_YZSBS "Enable YZSBS Plugin" OFF)
+option(ENABLE_MODEL_TZDL "Enable TZDL Plugin" OFF)
+
+if (NOT ${BUILD_OS_VERSION} MATCHES "25")
+    # 增加安全编译参数
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fstack-protector-all -fPIC")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fstack-protector-all -fPIC")
+    set(CMAKE_EXE_LINKER_FLAGS  "-z relro -z now -z noexecstack -pie")
+    message("20 applying security hardening options")
+endif()
+
+# 系统判断
+if (${BUILD_OS_VERSION} MATCHES "25")
+    message("COMPILE ON v25")
+
+    set(COMPILE_ON_V25 TRUE)
+    add_definitions(-DCOMPILE_ON_V25)
+
+    add_definitions(-DCOMPILE_ON_V23)
+    set(COMPILE_ON_V23 TRUE)
+
+    #先默认打开ppt助手
+#    set(ENABLE_MODEL_PPT ON)
+#    set(ENABLE_MODEL_POSTER ON)
+    set(ENABLE_AI_BAR ON)
+
+    if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
+        set(ENABLE_ASSISTANT OFF)
+        set(ENABLE_MCP OFF)
+#    else()
+#        set(ENABLE_MODEL_RPA ON)
+    endif()
+    message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
+elseif (${BUILD_OS_VERSION} MATCHES "23")
+    add_definitions(-DCOMPILE_ON_V23)
+    set(COMPILE_ON_V23 TRUE)
+    message("COMPILE ON v23")
+
+#    set(ENABLE_MODEL_PPT ON)
+#    set(ENABLE_MODEL_POSTER ON)
+
+    if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
+        set(ENABLE_ASSISTANT OFF)
+        set(ENABLE_MCP OFF)
+#    else()
+#        set(ENABLE_MODEL_RPA ON)
+    endif()
+    message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
+else()
     add_definitions(-DCOMPILE_ON_V20)
     set(COMPILE_ON_V20 TRUE)
     message("COMPILE ON v20")
 
-    set(ENABLE_MODEL_PLUGIN TRUE)
+    if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
+        set(ENABLE_ASSISTANT OFF)
+        set(ENABLE_MCP OFF)
+#    else()
+#        set(ENABLE_MODEL_RPA ON)
+    endif()
+    if (${CMAKE_SYSTEM_PROCESSOR} MATCHES "sw_64")
+        set(COMPILE_ON_SW_20 TRUE)
+    endif()
+    message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
+endif()
+
+# Debug Or Release
+if (CMAKE_BUILD_TYPE MATCHES Debug)
+    add_definitions(-DEXTERNAL_LLM_DIR="${CMAKE_BINARY_DIR}/plugin-model")
+    set(ENABLE_MODEL_PLUGINS ON)
+else()
+    add_definitions(-DEXTERNAL_LLM_DIR="${EXTERNAL_LLM_DIR}")
+endif()
+
+# Qt Version
+if (${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    message("COMPILE ON QT6")
+    add_definitions(-DCOMPILE_ON_QT6)
+    set(DTK_VERSION_MAJOR 6)
+else()
+    message("COMPILE ON QT5")
+    set(DTK_VERSION_MAJOR "")
+endif()
+
+if (ENABLE_MODEL_FYDN OR ENABLE_MODEL_PPT OR ENABLE_MODEL_POSTER OR ENABLE_MODEL_RPA OR ENABLE_MODEL_ZTBBD OR ENABLE_MODEL_XXZSK OR ENABLE_MODEL_YZSBS OR ENABLE_MODEL_TZDL)
+    set(ENABLE_MODEL_PLUGINS ON)
+endif()
+
+if (ENABLE_AGENT_PLUGIN)
+    add_definitions(-DENABLE_AGENT_PLUGIN)
+    install(FILES ${PROJECT_SOURCE_DIR}/assets/agent/.readme DESTINATION share/uos-ai-assistant/agent)
+endif()
+
+if (ENABLE_MODEL_PLUGINS)
     add_definitions(-DENABLE_MODEL_PLUGIN)
-#endif()
+endif()
 
+if (ENABLE_ASSISTANT)
+    add_definitions(-DENABLE_ASSISTANT)
+endif()
+
+if (ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT)
+    add_definitions(-DENABLE_PERSONAL_KNOWLEDGE_ASSISTANT)
+endif()
+
+if (ENABLE_MCP)
+    add_definitions(-DENABLE_MCP)
+endif()
+
+if (ENABLE_AI_BAR)
+    add_subdirectory(plugin-aibar)
+    set(ENABLE_TRAY_PLUGIN OFF)
+    add_definitions(-DENABLE_AI_BAR)
+endif()
+
+if (ENABLE_TRAY_PLUGIN)
+    add_subdirectory(plugin-tray)
+endif()
+
+add_subdirectory(3rdparty)
+add_subdirectory(src)
+add_subdirectory(ocr)
 add_subdirectory(plugin-model)
+add_subdirectory(plugin-fcitx)
+add_subdirectory(plugin-settings)
 
-#add_definitions(-DDEBUG_LOG)
-
-# Find the library
-find_package(DtkCore REQUIRED)
-find_package(DtkWidget REQUIRED)
-find_package(Qt5Svg REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5DBus REQUIRED)
-find_package(Qt5Concurrent REQUIRED)
-find_package(Qt5Sql REQUIRED)
-find_package(Qt5WebSockets REQUIRED)
-find_package(Qt5WebEngineWidgets REQUIRED)
-find_package(Qt5Multimedia REQUIRED)
-find_package(KF5GlobalAccel COMPONENTS KF5GlobalAccel REQUIRED)
-
-find_package(PkgConfig REQUIRED)
-
-pkg_check_modules(DFrameworkDBus REQUIRED dframeworkdbus)
-pkg_check_modules(QGsettings REQUIRED gsettings-qt)
-pkg_check_modules(AtSpi REQUIRED atspi-2)
-pkg_check_modules(Gobject REQUIRED gobject-2.0)
-
-#-------------------------EXE------------------------
-SET(EXENAME uos-ai-assistant)
-
-#遍历所有Cpp文件
-file(GLOB_RECURSE EXE_FILES src/*.h src/*.cpp src/*.qrc)
-foreach(filepath ${EXE_FILES})
-    string(REPLACE "${CMAKE_CURRENT_SOURCE_DIR}/" "" filename ${filepath})
-    list(APPEND RELATIVE_EXE_FILES ${filename})
-endforeach(filepath)
-
-add_executable(${EXENAME}
-    ${RELATIVE_EXE_FILES}
-)
-
-target_include_directories(${EXENAME} PUBLIC
-    src
-    src/dbs
-    src/dbs/dbwrapper
-    src/dbs/tables
-    src/tables
-    src/dbus
-    src/gui/mgmt
-    src/gui/chat
-    src/gui/screen
-    src/http
-    src/llm
-    src/llm/360
-    src/llm/zhipu
-    src/llm/openai
-    src/llm/iflytek
-    src/llm/baidu
-    src/llm/localtext2image
-    src/llm/common
-    src/socket
-    src/wrapper
-    src/tas
-    src/utils
-    src/audio
-    src/audio/server
-    src/audio/trans
-    src/oscontrol
-    src/oscontrol/ability
-    src/tools
-    ${DFrameworkDBus_INCLUDE_DIRS}
-    ${QGsettings_INCLUDE_DIRS}
-    ${AtSpi_INCLUDE_DIRS}
-    ${Gobject_INCLUDE_DIRS}
-)
-
-target_link_libraries(${EXENAME}
-    ${DtkWidget_LIBRARIES}
-    ${DtkCore_LIBRARIES}
-    ${Qt5Core_LIBRARIES}
-    ${Qt5Gui_LIBRARIES}
-    ${Qt5Widgets_LIBRARIES}
-    ${Qt5DBus_LIBRARIES}
-    ${Qt5Concurrent_LIBRARIES}
-    ${Qt5Sql_LIBRARIES}
-    ${Qt5WebSockets_LIBRARIES}
-    ${Qt5Svg_LIBRARIES}
-    ${Qt5Multimedia_LIBRARIES}
-    ${DFrameworkDBus_LIBRARIES}
-    ${QGsettings_LIBRARIES}
-    ${AtSpi_LIBRARIES}
-    ${Gobject_LIBRARIES}
-    Qt5::WebEngineWidgets
-    KF5::GlobalAccel
-    crypto
-)
-
-# Install settings
-set(CMAKE_INSTALL_PREFIX /usr)
-
-# Install bin
-install(TARGETS ${EXENAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-
-# Install qm files
-file(GLOB EXE_QM_FILES "${CMAKE_SOURCE_DIR}/translations/uos-ai-assistant*.qm")
-install(FILES ${EXE_QM_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${EXENAME}/translations/)
-
-# Install service
-file(GLOB SERVICE_FILES "assets/*.service")
-install(FILES ${SERVICE_FILES} DESTINATION share/dbus-1/services)
-
-# Install credits
-file(GLOB CREDITS_FILES "assets/${EXENAME}.json")
-install(FILES ${CREDITS_FILES} DESTINATION share/deepin/credits)
-
-# Install functions
-set(FUNCTIONS_DESTINATION "/usr/lib/${EXENAME}/functions")
-add_definitions(-DFUNCTIONPATH="${FUNCTIONS_DESTINATION}")
-file(GLOB FUNCTIONS_FILES "assets/functions/*")
-install(FILES ${FUNCTIONS_FILES} DESTINATION ${FUNCTIONS_DESTINATION})
-
-# Install audio
-set(AUDIO_DESTINATION "/usr/lib/${EXENAME}/audio")
-add_definitions(-DAUDIOPATH="${AUDIO_DESTINATION}")
-file(GLOB AUDIO_FILES "assets/audio/*")
-install(FILES ${AUDIO_FILES} DESTINATION ${AUDIO_DESTINATION})
-
-# install desktop
-message(${PROJECT_SOURCE_DIR})
-install(FILES ${PROJECT_SOURCE_DIR}/assets/app/uos-ai-assistant.desktop
-    DESTINATION share/applications)
-
-#-------------------------plugin-tray------------------------
-SET(TRAYPLUGINNAME uos-ai-tray)
-
-#遍历所有文件
-file(GLOB_RECURSE PLUGIN_TRAY_FILES plugin-tray/*.h plugin-tray/*.cpp plugin-tray/*.qrc)
-
-foreach(filepath ${PLUGIN_TRAY_FILES})
-    string(REPLACE "${CMAKE_CURRENT_SOURCE_DIR}/" "" filename ${filepath})
-    list(APPEND RELATIVE_PLUGIN_TRAY_FILES ${filename})
-endforeach(filepath)
-
-add_library(${TRAYPLUGINNAME} MODULE
-    ${RELATIVE_PLUGIN_TRAY_FILES}
-)
-
-target_include_directories(${TRAYPLUGINNAME} PUBLIC
-    plugin-tray
-    ${Qt5Widgets_INCLUDE_DIRS}
-    ${DtkWidget_INCLUDE_DIRS}
-    /usr/include/dde-dock   #${DdeDockInterface_INCLUDE_DIRS} 1030 not support
-)
-
-target_link_libraries(${TRAYPLUGINNAME} PRIVATE
-    ${DtkWidget_LIBRARIES}
-    ${Qt5Core_LIBRARIES}
-    ${Qt5Svg_LIBRARIES}
-    ${Qt5DBus_LIBRARIES}
-)
-
-# Install bin
-install(TARGETS ${TRAYPLUGINNAME} LIBRARY DESTINATION lib/dde-dock/plugins)
-
-# Install qm files
-file(GLOB PLUGIN_TRAY_QMFILES "${CMAKE_SOURCE_DIR}/translations/uos-ai-tray*.qm")
-install(FILES ${PLUGIN_TRAY_QMFILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${TRAYPLUGINNAME}/translations/)
-
-# Install icon
-install(FILES ${CMAKE_SOURCE_DIR}/plugin-tray/assets/icons/deepin/builtin/uosai.svg DESTINATION ${CMAKE_INSTALL_PREFIX}/share/dde-dock/icons/dcc-setting/)
-install(FILES ${CMAKE_SOURCE_DIR}/assets/images/UosAiAssistant.svg DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps/)
-
-#-------------------------plugin-settings------------------------
-SET(SETTINGSPLUGINNAME uos-ai-settings)
-
-#遍历所有文件
-file(GLOB_RECURSE PLUGIN_SETTINGS_FILES plugin-settings/*.h plugin-settings/*.cpp plugin-settings/*.qrc)
-
-# Install qm files
-file(GLOB PLUGIN_SETTINGS_QMFILES "${CMAKE_SOURCE_DIR}/translations/uos-ai-settings*.qm")
-install(FILES ${PLUGIN_SETTINGS_QMFILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${SETTINGSPLUGINNAME}/translations/)
+# 安装帮助文档
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/docs/uos-ai-assistant
+    DESTINATION share/deepin-manual/manual-assets/application)

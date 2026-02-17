@@ -3,13 +3,8 @@
 #include "serverwrapper.h"
 #include "themedlable.h"
 #include "wrapcheckbox.h"
-
-#include <QVBoxLayout>
-#include <QTimer>
-#include <QTextEdit>
-#include <QScrollArea>
-#include <QApplication>
-#include <QDesktopWidget>
+#include "utils/esystemcontext.h"
+#include "private/echatwndmanager.h"
 
 #include <DTitlebar>
 #include <DFontSizeManager>
@@ -21,13 +16,24 @@
 #include <DArrowRectangle>
 #include <DPalette>
 
+#include <QVBoxLayout>
+#include <QTimer>
+#include <QTextEdit>
+#include <QScrollArea>
+#include <QApplication>
+#include <QLoggingCategory>
+
+UOSAI_USE_NAMESPACE
+
+Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
+
 static constexpr char info[] = "uos-ai-assistant_info";
 
 UserAgreementDialog::UserAgreementDialog(DWidget *parent):
     DAbstractDialog(parent)
 {
+    EWndManager()->registeWindow(this);
     initUI();
-    initConnect();
 }
 
 void UserAgreementDialog::initUI()
@@ -62,7 +68,7 @@ void UserAgreementDialog::initUI()
     scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAsNeeded);
     scrollArea->setLineWidth(0);
     DPalette pl2 = scrollArea->palette();
-    pl2.setColor(QPalette::Background, Qt::transparent);
+    pl2.setColor(QPalette::Window, Qt::transparent);
     scrollArea->setPalette(pl2);
     auto scrollLayout = new QHBoxLayout;
     scrollLayout->setContentsMargins(1, 0, 1, 0);
@@ -80,30 +86,6 @@ void UserAgreementDialog::initUI()
     agrLayout->addWidget(pAgrCheckbox, 0, Qt::AlignTop | Qt::AlignLeft);
     agrLayout->addStretch();
 
-    m_pExpCheckbox = new WrapCheckBox;
-    m_pExpCheckbox->setTextMaxWidth(410);
-    m_pExpCheckbox->setText(tr("I agree to participate in the user experience plan of the Application"));
-    m_pExpCheckbox->setCheckState(DbWrapper::localDbWrapper().getUserExpState() > 0 ? Qt::Checked : Qt::Unchecked);
-
-    m_pExpIcon = new DIconButton(static_cast<QStyle::StandardPixmap>(-1), this);
-    m_pExpIcon->setFixedSize(QSize(20, 20));
-    m_pExpIcon->setIcon(QIcon::fromTheme(info));
-    m_pExpIcon->setIconSize(QSize(20, 20));
-    m_pExpIcon->installEventFilter(this);
-
-    auto iconLayout = new QVBoxLayout;
-    iconLayout->setContentsMargins(0, 2, 0, 0);
-    iconLayout->addWidget(m_pExpIcon);
-    iconLayout->addStretch();
-
-    QHBoxLayout *expLayout = new QHBoxLayout();
-    expLayout->setContentsMargins(20, 0, 20, 0);
-    expLayout->setSpacing(5);
-    expLayout->addWidget(m_pExpCheckbox);
-    expLayout->addLayout(iconLayout);
-    expLayout->addStretch();
-    expLayout->addStretch();
-
     QVBoxLayout *layout = new QVBoxLayout();
     layout->setContentsMargins(0, 0, 0, 10);
     layout->setSpacing(0);
@@ -113,27 +95,28 @@ void UserAgreementDialog::initUI()
     layout->addSpacing(10);
     layout->addLayout(agrLayout);
     layout->addSpacing(10);
-    layout->addLayout(expLayout);
-    layout->addSpacing(10);
 
     this->setLayout(layout);
 }
 
-void UserAgreementDialog::initConnect()
-{
-    connect(m_pExpCheckbox, &WrapCheckBox::stateChanged, this, [](int state) {
-        DbWrapper::localDbWrapper().updateUserExpState(state == Qt::Unchecked ? -1 : 1);
-        ServerWrapper::instance()->updateUserExpState(state == Qt::Unchecked ? -1 : 1);
-    });
-}
 
 DArrowRectangle *UserAgreementDialog::showArrowRectangle(DArrowRectangle::ArrowDirection direction)
 {
-    auto pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWidget, this);
+    qCDebug(logAIGUI) << "Creating arrow rectangle with direction:" << direction;
+    DArrowRectangle *pExpTips = nullptr;
+    if (ESystemContext::isWayland())
+        pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWidget, this);
+    else
+        pExpTips = new DArrowRectangle(direction, DArrowRectangle::FloatWindow, this);
     pExpTips->setRadiusArrowStyleEnable(true);
     pExpTips->setRadius(16);
-    QColor color = DGuiApplicationHelper::instance()->applicationPalette().color(QPalette::Base);
-    color.setAlphaF(0.3);
+    QColor color;
+    if (DGuiApplicationHelper::instance()->themeType() == DGuiApplicationHelper::LightType)
+        color = QColor(255,255,255);
+    else {
+        color = QColor(0,0,0);
+        color.setAlphaF(0.3);
+    }
     pExpTips->setBackgroundColor(color);
     pExpTips->setMargin(15);
 
@@ -152,33 +135,6 @@ DArrowRectangle *UserAgreementDialog::showArrowRectangle(DArrowRectangle::ArrowD
     return pExpTips;
 }
 
-bool UserAgreementDialog::eventFilter(QObject *watched, QEvent *event)
-{
-    if (watched == m_pExpIcon) {
-        if (event->type() == QEvent::Enter) {
-            //获取当前鼠标位置
-            QPoint curPos = QCursor::pos();
-            //获取屏幕大小
-            QRect desktopRect = QApplication::desktop()->rect();
-            //根据提示框在屏幕的位置设置箭头方向
-            QPoint p = mapToGlobal(m_pExpIcon->pos());
-            if (curPos.x() + 300 > desktopRect.width()) {
-                auto tips = showArrowRectangle(DArrowRectangle::ArrowRight);
-                tips->show(p.x(), p.y() + 10);
-            } else {
-                auto tips = showArrowRectangle(DArrowRectangle::ArrowLeft);
-                tips->show(p.x() + 20, p.y() + 10);
-            }
-        } else if (event->type() == QEvent::Leave) {
-            auto tips = this->findChild<DArrowRectangle *>();
-            if (tips) tips->deleteLater();
-        } else if (event->type() == QEvent::MouseButtonPress || event->type() == QEvent::MouseButtonDblClick) {
-            return true;
-        }
-    }
-    return DAbstractDialog::eventFilter(watched, event);
-}
-
 QString UserAgreementDialog::getAgreementText()
 {
     QString content;
@@ -188,6 +144,9 @@ QString UserAgreementDialog::getAgreementText()
         // 读取文本内容
         content = file.readAll();
         file.close();
+        qCDebug(logAIGUI) << "Agreement text loaded successfully";
+    } else {
+        qCWarning(logAIGUI) << "Failed to open agreement file:" << file.fileName();
     }
     return content;
 }

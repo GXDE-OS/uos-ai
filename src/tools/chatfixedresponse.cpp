@@ -36,7 +36,7 @@ QString ChatFixedResponse::checkRequestText(const QString &text)
     if (detectedText.length() >= 30)
         return QString();
 
-    detectedText = detectedText.remove(QRegExp("[^\u4e00-\u9fa5a-zA-Z]+"));
+    detectedText = detectedText.remove(QRegularExpression("[^\u4e00-\u9fa5a-zA-Z]+"));
     if (filterWords.contains(detectedText.simplified().toLower())) {
         if (QLocale::Chinese != QLocale::system().language() || QLocale::SimplifiedChineseScript != QLocale::system().script()) {
             return "Hello, I am your personal assistant UOS AI, a desktop intelligent assistant developed by Tongxin Software."

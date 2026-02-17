@@ -1,40 +1,34 @@
 #include "osinfo.h"
 #include "functionhandler.h"
 
-#include <QDebug>
-
+#include <QLoggingCategory>
 #include <DSysInfo>
 
 DCORE_USE_NAMESPACE
 
+Q_DECLARE_LOGGING_CATEGORY(logOsControl)
+
 OsInfo::OsInfo(QObject *parent)
     : QObject{parent}
 {
+    qCDebug(logOsControl) << "Initializing OsInfo with system environment";
     m_pureEnvironment = QProcessEnvironment::systemEnvironment();
-
-    qInfo() << "{"
-            << DSysInfo::uosEditionName() << ","
-            << DSysInfo::productTypeString() << ","
-            << DSysInfo::productVersion()
-            << " [ major=" << DSysInfo::majorVersion()
-            << ", minor=" << DSysInfo::minorVersion()
-            << " ]"
-            << "}";
-    qInfo() << "cache system environment" << m_pureEnvironment.toStringList();
-}
-
-bool OsInfo::isLingLong() const
-{
-    //TODO:
-    //   Now only Deepin Community have linglong ISO
-    //UOS don't have linglong edtion,maybe need change
-    //the conditon in future.
-    bool isLingLong = (DSysInfo::ProductType::Deepin == DSysInfo::productType())
-                      && DSysInfo::productVersion() == QString("23");
-    return isLingLong;
 }
 
 QProcessEnvironment OsInfo::pureEnvironment()
 {
     return m_pureEnvironment;
+}
+
+void OsInfo::printInfo()
+{
+    qCInfo(logOsControl) << "System information: {"
+                         << DSysInfo::uosEditionName() << ","
+                         << DSysInfo::productTypeString() << ","
+                         << DSysInfo::productVersion()
+                         << " [ major=" << DSysInfo::majorVersion()
+                         << ", minor=" << DSysInfo::minorVersion()
+                         << " ]"
+                         << "}";
+    qCInfo(logOsControl) << "Cached system environment:" << m_pureEnvironment.toStringList();
 }

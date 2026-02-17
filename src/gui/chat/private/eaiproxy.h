@@ -7,6 +7,7 @@
 #include <QString>
 #include <QTimer>
 #include <QScopedPointer>
+#include <util.h>
 
 #include <DGuiApplicationHelper>
 
@@ -37,6 +38,7 @@ public:
     enum AiAction {
         None,
         Conversation = 1, //对话模式
+        DocumentSummary, //文档总结
         MaxAiAction,
     };
 
@@ -49,6 +51,8 @@ public:
     using Mode = EAiCallback::DataMode;
 
     QString getNotifierName(AiAction act, int mode);
+
+    void initAsyncWorkerConn();
 
 signals:
     /**
@@ -86,10 +90,49 @@ signals:
     void sigActiveColorChanged(QString color);
     void sigNetStateChanged(bool isOnline);
     void sigFontChanged(const QString &fontFamily, int pixelSize);
-    void sigAssistantChanged(int id);
     void sigKnowledgeBaseStatusChanged( bool exist);
     void sigKnowledgeBaseFAQGenFinished();
 
+    void sigLocalLLMStatusChanged(bool exist);
+    void sigEmbeddingPluginsStatusChanged(bool exist);
+
+    void sigDocSummaryParsingStart(const QString &docPath, const QString &iconData, const QString &defaultPrompt, int error);
+    void sigDocSummaryParserResult(const QString &id, int error, const QString &docPath, const QString &docContent);
+    void sigOpenFileFromPathResult(bool ok);
+
+    void sigOCRResult(int error, const QString &OCRContent);
+
+    void sigAppendWordWizardConv(int type);
+
+    void sigPreviewReference(const QString &reference);
+    void sigPPTCreateSuccess(const QString &id, const QStringList &paths);
+    void sigPPTChangeSuccess(const QString &id, const QStringList &paths);
+    void sigPosterCreateSuccess(const QStringList &id, const QStringList &paths);
+
+    void sigOverrideQues(const QString &question);
+
+    void sigAssistantListChanged();
+
+    void sigAsyncWorker(int type);
+
+    void sigMainContentBackgroundColor(QString color);
+
+    void sigGetNewHistoryList(QString currentConversationId);
+
+    void sigHideHistoryList();
+
+    void sigToShowPromptWindow(int titleBarBtnWidth);
+
+    void sigToChangeFreeAccountGuide(bool isShowFreeAccountGuide, bool isPreShow);
+
+    void sigInputFocus();
+
+    void sigShowTip(const QString &msg);
+
+    void sigWordWizardAsk(const QString &askQuestion);
+
+    void sigIsGotFreeCredits(bool isGotFreeCredits);
+    void sigGetFreeCreditsResult(bool success, const QString &msg);  // 免费额度获取结果
 public slots:
     //Js Call this method to notify C++
     //error
@@ -110,11 +153,13 @@ public slots:
      *      Mode::CacheMode Return complete result in notifier
      *      Mode::StreamMode Return char squence by stream notifier
      */
-    QString sendAiRequest(const QString &llmId,
+    Q_DECL_DEPRECATED QString sendAiRequest(const QString &llmId,
                           int llmType,
                           int act,
                           const QString &param,
                           int mode);
+
+    QString sendRequest(const QString &llmId, const QString &chatChunkData);
     /**
      * @brief cancelAiRequest
      * @param id Call id return from sendAiRequest
@@ -149,10 +194,33 @@ public slots:
      */
     QString getAiFAQ();
     /**
+     * @brief getAiFAQByFunction
+     * @return Return limited count ai FAQ by function
+     */
+    QString getAiFAQByFunction(int type, const QString &function);
+    /**
+     * @brief getAssistantFunctions
+     * @return Return functions by assistantType
+     */
+    QString getAssistantFunctions(int type);
+    /**
+     * @brief getFunctionTemplate
+     * @return Return template by function and contain
+     */
+    QString getFunctionTemplate(int type, const QString &function, const QString &contain);
+    /**
      * @brief launchLLMConfigWindow Show ai config window
      * @param showAddllmPage Show account add dialog if true
      */
     void launchLLMConfigWindow(bool showAddllmPage = false);
+
+    /**
+     * @brief launchKnowledgeBaseConfigWindow Show ai config window and locate the knowledgeBase
+     */
+    void launchKnowledgeBaseConfigWindow();
+
+    void launchMcpConfigWindow();
+
     /**
      * @brief showToast
      * @param type AiToast
@@ -214,6 +282,12 @@ public slots:
      *   }
      */
     void playSystemSound(int effId);
+    /**
+     * @brief copyReplyText
+     *      Copy the text of the reply.
+     * @param reply text
+     */
+    void copyReplyText(const QString &reply);
 
     //Chat history apis
     /**
@@ -234,23 +308,26 @@ public slots:
     *           ChatText2Image    = 2       // 文生图
     *       };
     */
-    void logAiChatRecord(const QString &reqId,
+    Q_DECL_DEPRECATED void logAiChatRecord(const QString &reqId,
                          const QString &question,
                          const QString &anwser,
                          bool isRetry,
                          int err, const QString &errorInfo,
                          int actionType,
                          const QString &llmIcon,
-                         const QString &llmName);
+                         const QString &llmName,
+                         const QString &docSummaryParam);
 
-    void logAiChatRecord(const QString &reqId,
+    Q_DECL_DEPRECATED void logAiChatRecord(const QString &reqId,
                          const QString &question,
                          const QStringList &anwser,
                          bool isRetry,
                          int err, const QString &errorInfo,
                          int actionType,
                          const QString &llmIcon,
-                         const QString &llmName);
+                         const QString &llmName,
+                         const QString &docSummaryParam);
+
     /**
      * @brief getAiRecord
      * @param lastRec
@@ -263,18 +340,29 @@ public slots:
      * @brief clearAiChatRecord
      */
     void clearAiChatRecords();
+
+    void logCurrentConversations(const QString &assistantId, const QString &conversationId, const QString &assistantDisplayName, const QString &conversationsData);
+    QString getConversations();
+    QString createNewConversation();
+    void removeConversation(const QString &assistantId, const QString &conversationId);
+    void removeAllConversation();
+
+    QString getConversationHistoryList();
+    bool setCurrentConversationId(const QString &assistantId, const QString &conversationId);
+    QString getLastConversation(const QString &assistantId);
     /**
      * @brief saveImageAsFile
      * @param filePath
      * @return
      */
-    bool saveImageAs(const QString &filePath);
+    QString saveImageAs(const QString &imageData, bool saveAs = true);
     /**
      * @brief previewImage
      * @param filePath
      * @return
      */
-    bool previewImage(const QString &filePath);
+    bool previewImage(const QString &imageData);
+    bool previewImageForPath(const QString &imagePath);
     /**
      * @brief copyImage2Clipboard
      * @param filePath
@@ -303,12 +391,103 @@ public slots:
     void onUpdateSystemFont(const QFont &);
 
     bool isKnowledgeBaseExist();
+    bool isEmbeddingPluginsExist();
 
     void configureKnowledgeBase();
+    void installEmbeddingPlugins();
 
+    void onDocSummarySelect();
+    QString processClipboardData();
+    void onDocSummaryParsing(const QString &id, const QString &docPath);
+    void openFile(const QString &filePath);
+    void openUrl(const QString &url);
+
+    void appendWordWizardConv(int type);
+    void appendWordWizardQuestion(int type);
+    void webViewLoadFinished();
+
+    void previewRefDoc(const QString &docPath, const QStringList &docContents);
+    int getThemeType() { return m_themeType;}
+
+    // Instruction
+    QString getInstList();
+
+    void sendPPTOutline(const QString &content);
+    void editPPT(const QString &content);
+    void downloadPPT(const QString &id);
+
+    void genePoster(const QString &content);
+    void editPoster(const QString &content);
+    void downloadPoster(const QString &id);
+
+    bool isAgentSupported();
+    void openAppstore(const QString &id);
+
+    void onAsyncWorkerFinished(int type);
+
+    void rateAnwser(const int questionIdx, const int answerIdx, int rate, const QString &extJson);
+
+    QString getMainContentbackgroundColor(){return m_backgroundColor;}
+
+    bool isChineseLanguage() {return uos_ai::Util::checkLanguage();}
+
+    void setTitleBarMaskStatus(bool status);
+
+    void setTitleBarMaskBgColorAndShow(int r, int g, int b, int a);
+
+    bool showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete);
+
+    void updateUpdatePromptDB(bool isClicked);
+    void updateUpdateFreeAccountGuideDB(bool isClicked);
+    // 0:Debug 1:Info 2:Warning 3:Critical
+    void writeVueLog(int level, const QString &msg);
+
+    // Agent
+    void installUosAiAgent();
+    bool isEnableMcp();
+    bool getThirdPartyMcpAgreement();
+    bool isInstallUosAiAgent(const QString &agentName);// mcp环境检查
+
+    // Screenshot
+    void startScreenshot();
+    int isEnableScreenshot();
+    void setInputFileSize(int inputFileSize);
+
+    //Private chat
+    void setConversationMode(int mode);
+
+    // 判断文件是否存在
+    bool isFileExist(QString filePath);
+
+    // 是否支持知识库
+    bool isEnableKnowledgebase();
+
+    // 知识库异常弹窗
+    void showKnowledgeBaseErrorDialog(const int type);   // 0:插件异常 1:知识库异常
+
+    // 重新编辑用户输入，文件重新走文档解析流程
+    void editQuestionToFileSummary(const QStringList fileLists);
+    bool showLostFileWarningDlg(const QString lostFileList);
+
+    // mcp环境缺失弹窗
+    bool showInstallUosAIAgentDlg();
+
+    void mcpDataUpload(const QString &mcpToUse);
+
+    void launchLLMConfigWindowAndGetFreeDialog();
+    bool getFreeCredits(bool isShowDlg);  // 领取免费额度
+
+    // 查询当前快捷键设置
+    QString getCurrentShortcut();
+
+    // 是否启用高级CSS特性（如backdrop-filter等）
+    bool isEnableAdvancedCssFeatures();
+
+    // 当前是否为简体中文
+    bool isSimplifiedChinese();
 protected:
     //Property Get methods
-    int getThemeType() { return m_themeType;}
+//    int getThemeType() { return m_themeType;}
     QString getActiveColor() { return m_activeColor;}
 
 protected:
@@ -329,7 +508,9 @@ protected:
     QString m_fontFamily = "Source Han Sans SC";
     int m_fontPixelSize = 14;
 
-    bool m_isWindowMode = false;
+    bool m_isWindowMode = true;
+
+    QString m_backgroundColor;
 };
 
 #endif // EAIPROXY_H

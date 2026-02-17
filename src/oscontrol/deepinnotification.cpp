@@ -1,17 +1,15 @@
 #include "deepinnotification.h"
 #include "oscallcontext.h"
 
-#include <QDebug>
 #include <QDBusPendingCall>
+#include <QLoggingCategory>
 
-DeepinNotification::DeepinNotification(bool isLinglong, QObject *parent)
-    : QObject{parent}
-    , m_fIsLinglong(isLinglong)
+Q_DECLARE_LOGGING_CATEGORY(logOsControl)
+
+UOSAI_USE_NAMESPACE
+
+DeepinNotification::DeepinNotification(QObject *parent) : QObject{parent}
 {
-    QString deepinNotifyService;
-    QString deepinNotifyPath;
-    QString deepinNotifyInterface;
-
     /*V23
      * qdbus --literal
      *      org.deepin.dde.Notification1
@@ -19,26 +17,17 @@ DeepinNotification::DeepinNotification(bool isLinglong, QObject *parent)
      *      org.deepin.dde.Notification1.SetSystemInfo 0 true
      *
      * */
-    if (isLinglong) {
-        deepinNotifyService = QString("org.deepin.dde.Notification1");
-        deepinNotifyPath = QString("/org/deepin/dde/Notification1");
-        deepinNotifyInterface = deepinNotifyService;
-    } else {
-        deepinNotifyService = QString("com.deepin.dde.Notification");
-        deepinNotifyPath = QString("/com/deepin/dde/Notification");
-        deepinNotifyInterface = deepinNotifyService;
-    }
-
     m_uosNotificationProxy.reset(
         new QDBusInterface(
-            deepinNotifyService,
-            deepinNotifyPath,
-            deepinNotifyInterface,
+            osCallDbusNotifyService,
+            osCallDbusNotifyPath,
+            osCallDbusNotifyInterface,
             QDBusConnection::sessionBus(), this));
 }
 
 int DeepinNotification::SetSystemInfo(int param, QVariant data)
 {
+    qCDebug(logOsControl) << "Setting system info - param:" << param << "data:" << data;
     int errorCode = OSCallContext::NonError;
 
     if (m_uosNotificationProxy->isValid()) {
@@ -57,8 +46,8 @@ int DeepinNotification::SetSystemInfo(int param, QVariant data)
         reply.waitForFinished();
 
         if (reply.isError()) {
-            qInfo() << "SetSystemInfo call failed:"
-                    << reply.error().errorString(reply.error().type());
+            qCWarning(logOsControl) << "SetSystemInfo failed - param:" << param
+                                  << "error:" << reply.error().errorString(reply.error().type());
 
             if (QDBusError::UnknownMethod == reply.error().type()) {
                 errorCode = OSCallContext::NotImpl;
@@ -67,6 +56,7 @@ int DeepinNotification::SetSystemInfo(int param, QVariant data)
             }
         }
     } else {
+        qCWarning(logOsControl) << "Notification proxy interface is invalid";
         errorCode = OSCallContext::NonService;
     }
 

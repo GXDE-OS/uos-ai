@@ -12,7 +12,7 @@ class DeepinNotification : public QObject,  public INotification
 {
     Q_OBJECT
 public:
-    explicit DeepinNotification(bool isLinglong, QObject *parent = nullptr);
+    explicit DeepinNotification(QObject *parent = nullptr);
 
     int SetSystemInfo(int param, QVariant data) override;
 signals:

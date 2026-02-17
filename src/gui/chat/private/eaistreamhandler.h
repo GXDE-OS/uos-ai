@@ -21,7 +21,6 @@ public:
     enum {
         StreamEnd = 200,
     };
-signals:
 
 protected slots:
     void onDataReady();

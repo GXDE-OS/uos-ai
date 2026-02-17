@@ -18,7 +18,7 @@ void StringGenerator::incrementString()
         if (currentChar == 'z') {
             nextChar = 'a';
         } else {
-            nextChar = currentChar.unicode() + 1;
+            nextChar = QChar(currentChar.unicode() + 1);
             carry = false;
         }
 

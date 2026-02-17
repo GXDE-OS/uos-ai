@@ -6,6 +6,9 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QMessageAuthenticationCode>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logLLM)
 
 ZhiPuNetWork::ZhiPuNetWork(const AccountProxy &account)
     : BaseNetWork(account)
@@ -54,13 +57,24 @@ QByteArray generateJwtToken(const QString &apiKey)
 
 QPair<int, QByteArray> ZhiPuNetWork::request(const QJsonObject &data, const QString &path, QHttpMultiPart *multipart)
 {
+    qCDebug(logLLM) << "Preparing ZhiPu network request to path:" << path;
+    
     QString token = generateJwtToken(m_accountProxy.apiKey);
+    if (token.isEmpty()) {
+        qCWarning(logLLM) << "ZhiPu Failed to generate JWT token for API key";
+    }
+
     NetWorkResponse baseresult = BaseNetWork::request(rootUrlPath() + path, data, multipart, token);
     QJsonObject resultObject = QJsonDocument::fromJson(baseresult.data).object();
+    
     if (resultObject.contains("success") && !resultObject.value("success").toBool()) {
         int code = resultObject.value("code").toInt();
+        qCWarning(logLLM) << "ZhiPu API returned error code:" << code 
+                         << "Message:" << resultObject.value("msg").toString();
+        
         if (code == 1302 || code == 1303 || code == 1305) {
             baseresult.error = AIServer::ServerRateLimitError;
+            qCWarning(logLLM) << "ZhiPu Rate limit error occurred";
         } else {
             baseresult.error = AIServer::ContentAccessDenied;
         }
@@ -70,7 +84,8 @@ QPair<int, QByteArray> ZhiPuNetWork::request(const QJsonObject &data, const QStr
         baseresult.data.clear();
     }
 
-    if (baseresult.error != AIServer::NoError && baseresult.data.isEmpty()) {
+    if ((baseresult.error != AIServer::NoError && baseresult.data.isEmpty()) || baseresult.error == AIServer::ContentExceededError) {
+        qCWarning(logLLM) << "ZhiPu Using server code translation for error:" << baseresult.error;
         baseresult.data = ServerCodeTranslation::serverCodeTranslation(baseresult.error, baseresult.errorString).toUtf8();
     }
 

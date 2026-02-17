@@ -1,12 +1,46 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-
+export DH_VERBOSE = 1
 include /usr/share/dpkg/default.mk
 
 export QT_SELECT := 5
 
+# 检查 BUILD_OS_VERSION 是否为 25
+ifneq (,$(filter 25,$(BUILD_OS_VERSION)))
+$(info BUILD_OS_VERSION is 25, applying security hardening options)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND = -Wall -Wl,-E
+export DEB_CXXFLAGS_MAINT_APPEND = -Wall -Wl,-E
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+endif
+
 override_dh_auto_configure:
-	dh_auto_configure -- -DAPP_VERSION=$(DEB_VERSION_UPSTREAM) DEFINES+="VERSION=$(DEB_VERSION_UPSTREAM)" LIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH)
+	dh_auto_configure -- -DAPP_VERSION=$(DEB_VERSION_UPSTREAM) DEFINES+="VERSION=$(DEB_VERSION_UPSTREAM)" LIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
+	-DBUILD_OS_VERSION=$(BUILD_OS_VERSION) -DENABLE_MODEL_FYDN=${ENABLE_MODEL_FYDN}
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/tmp
+
+override_dh_install:
+	# 创建model-plugin包的安装目录
+	mkdir -p debian/uos-ai-model-plugin/usr/share/uos-ai-assistant/llm
+	mkdir -p debian/uos-ai-model-plugin/usr/lib
+
+	# 移动llm目录下的所有文件到model-plugin包
+	mv debian/tmp/usr/share/uos-ai-assistant/llm/* debian/uos-ai-model-plugin/usr/share/uos-ai-assistant/llm/ 2>/dev/null || true
+
+	# 移动所有架构目录下的llm相关so文件到model-plugin包
+	for arch_dir in debian/tmp/usr/lib/*; do \
+		if [ -d "$$arch_dir/uos-ai-assistant/llm" ]; then \
+			mkdir -p debian/uos-ai-model-plugin/usr/lib/$$(basename $$arch_dir)/uos-ai-assistant/llm; \
+			mv $$arch_dir/uos-ai-assistant/llm/*.so debian/uos-ai-model-plugin/usr/lib/$$(basename $$arch_dir)/uos-ai-assistant/llm/ 2>/dev/null || true; \
+		fi \
+	done
+
+	# 将剩余文件移动到uos-ai包
+	mv debian/tmp/* debian/uos-ai/ 2>/dev/null || true
+
+	dh_install
 
 %:
 	dh $@ --parallel

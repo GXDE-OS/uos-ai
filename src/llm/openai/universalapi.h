@@ -16,7 +16,7 @@ class UniversalAPI : public LLM
 public:
     UniversalAPI(const LLMServerProxy &serverproxy);
     QPair<int, QString> verify() override;
-    QJsonObject predict(const QString &content, const QJsonArray &functions, const QString &systemRole = "", qreal temperature = 1.0) override;
+    QJsonObject predict(const QString &content, const QJsonArray &functions) override;
     virtual QList<QByteArray> text2Image(const QString &prompt, int number) override;
 protected slots:
     void onReadyReadChatDeltaContent(const QByteArray &content);

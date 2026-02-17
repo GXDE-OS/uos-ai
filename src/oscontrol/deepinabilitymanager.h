@@ -6,23 +6,14 @@
 #include "ability/scheduleability.h"
 #include "ability/notificationability.h"
 #include "ability/controlcenterability.h"
+#include "deepinmultimedia.h"
 
 #include <QObject>
 #include <QMap>
 #include <QDBusInterface>
 #include <QScopedPointer>
 
-//From dframeworkdbus2
-#include <com_deepin_dde_daemon_dock.h>
-#include <com_deepin_daemon_appearance.h>
-#include <com_deepin_daemon_display.h>
-#include <com_deepin_dde_controlcenter.h>
-#include <com_deepin_dde_notification.h>
-#include <com_deepin_wm.h>
-#include <com_deepin_daemon_bluetooth.h>
-#include <com_deepin_daemon_network.h>
-#include <com_deepin_system_systempower.h>
-
+UOSAI_USE_NAMESPACE
 
 class UOSAbilityManager : public QObject
 {
@@ -85,9 +76,10 @@ public:
     /**
      * @brief doDiplayBrightness
      * @param value 0-100
+     * @param adjustment 0 = absolute, 1 = increase, 2 = decrease
      * @return
      */
-    OSCallContext doDiplayBrightness(int value);
+    OSCallContext doDiplayBrightness(int value, int adjustment=0);
     /**
      * @brief doAppLaunch
      * @param appId application id Ai supplied
@@ -108,15 +100,30 @@ public:
     OSCallContext switchWifi(bool on);
     OSCallContext getSystemMemory();
     OSCallContext doSystemLanguageSetting();
-    OSCallContext doPerformanceModeSwitch(const QString &mode);
+    OSCallContext doPerformanceModeSwitch(const QString &mode, bool isOpen);
     OSCallContext openShutdownFront();
     OSCallContext openScreenShot();
     OSCallContext doDisplayModeSwitch(int mode);
     OSCallContext openGrandSearch();
     OSCallContext switchScreen();
+    OSCallContext volumeAdjustment(const QJsonObject &argsObj);
+
+    // 音乐播放器功能
+    OSCallContext doStateControl(const QString &control);
+    OSCallContext doSeek(int offset);
+
 public:
     QString textForCommnand();
+    QStringList getAppsDesc();
 signals:
+
+public:
+    static bool osCtrCallDbus(const QString &service, const QString &path, const QString &interface, const QString &method,
+                      QVariant &result, const QVariantList &arguments = QVariantList());
+    static bool osCtrCallDbusNoResult(const QString &service, const QString &path, const QString &interface, const QString &method, const QVariantList &arguments = QVariantList());
+    static bool propertiesGet(const QString &service, const QString &path, const QString &interface, const QString &propertyName, QVariant &value);
+    static bool propertiesGetAll(const QString &interface, QVariantMap &values);
+    static bool propertiesSet(const QString &service, const QString &path, const QString &interface, const QString &propertyName, const QVariant &value);
 
 protected:
     void loadErrMap();
@@ -126,40 +133,17 @@ protected:
 protected:
     QMap<OSCallContext::CallError, QString> m_errMap;
 
-    using UosDock = com::deepin::dde::daemon::Dock;
-    using UosAppearance = com::deepin::daemon::Appearance;
-    using UosDisplay = com::deepin::daemon::Display;
-    using UosControlCenter = com::deepin::dde::ControlCenter;
-    using UosNotification = com::deepin::dde::Notification;
-    using UosWM = com::deepin::wm;
-    using UosBluetooth = com::deepin::daemon::Bluetooth;
-    using UosNetwork = com::deepin::daemon::Network;
-    using UosPower = com::deepin::system::Power;
-
-    QScopedPointer<UosDock> m_uosDockProxy;
-    QScopedPointer<UosAppearance> m_uosAppearanceProxy;
-    QScopedPointer<UosDisplay> m_uosDisplayProxy;
-    QScopedPointer<UosWM> m_uosWM;
-    QScopedPointer<UosBluetooth> m_bluetooth;
-    QScopedPointer<UosNetwork> m_network;
-    QScopedPointer<UosPower> m_power;
-
-    //Control center isn't a resident service
-    //so don't need to check if the dbus is valid
-    //when call it.
     QScopedPointer<IControlCenter> m_uosControlCenterProxy;
     QScopedPointer<INotification> m_uosNotificationProxy;
-    QScopedPointer<QDBusInterface> m_uosDesktopProxy;
-    QScopedPointer<QDBusInterface> m_shutdownFrontProxy;
-    QScopedPointer<QDBusInterface> m_screenShotProxy;
-
     QScopedPointer<ILauncher> m_uosAppLauncher;
     QScopedPointer<ISchedule> m_uosCalendarScheduler;
+    QScopedPointer<DeepinMultimedia> m_uosMultimediaProxy;
 
     struct UosAppInfo {
         QString appId;
         QString appName;
         QString appIcon;
+        QString appDesc;
         //App may have different versions
         //Uos,WINE,or andorid.
         QStringList desktopFiles;
@@ -167,8 +151,13 @@ protected:
 
     QStringList m_defaultDesktopPaths;
     QMap<QString, UosAppInfo> m_app2Desktop;
-
-    bool m_fIsLinglong;
+private:
+    inline OSCallContext ctxByError(OSCallContext::CallError error) {
+        OSCallContext ctx;
+        ctx.error = error;
+        ctx.errorInfo = m_errMap[error];
+        return ctx;
+    }
 };
 
 #define UosAbility() (ESingleton<UOSAbilityManager>::getInstance())

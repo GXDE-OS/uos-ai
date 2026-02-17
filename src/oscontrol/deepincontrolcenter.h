@@ -10,7 +10,7 @@ class DeepinControlCenter : public QObject, public IControlCenter
 {
     Q_OBJECT
 public:
-    explicit DeepinControlCenter(bool isLinglong, QObject *parent = nullptr);
+    explicit DeepinControlCenter(QObject *parent = nullptr);
 
 signals:
 
@@ -22,8 +22,6 @@ public:
 
 protected:
     QScopedPointer<QDBusInterface> m_controlCenterProxy;
-
-    bool m_fIsLinglong;
 };
 
 #endif // DEEPINCONTROLCENTER_H

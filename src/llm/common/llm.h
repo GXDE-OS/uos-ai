@@ -6,6 +6,18 @@
 #include <QMap>
 #include <QObject>
 
+#define PREDICT_PARAM_STREAM "stream"            // enable stream        default:true
+#define PREDICT_PARAM_TEMPERATURE "temperature"  // predict temperature  default:1.0
+#define PREDICT_PARAM_SYSTEMROLE "system"        // prompt system role   default:""
+#define PREDICT_PARAM_THINKCHAIN "thinkChain"    // enable llm think     default:true
+#define PREDICT_PARAM_ONLINESEARCH "OnlineSearch"    // enable Online search     default:false
+
+#define PREDICT_PARAM_INCREASEUSE "increaseUse"    // free account add use  default:false
+
+#define PREDICT_PARAM_NOJSONOUTPUT "onJsonOutput"  // only send content not json format in dbus session
+
+#define PREDICT_PARAM_MCPSERVERS "mcpServers"  // what mcp servers need to use.
+
 class LLM : public QObject
 {
     Q_OBJECT
@@ -16,6 +28,8 @@ public:
     virtual ~LLM();
 
     virtual void updateAccount(const LLMServerProxy &serverproxy);
+
+    void loadParams(const QVariantHash &params);
 
     /**
      * @brief cancel the currently executing predict
@@ -49,6 +63,7 @@ public:
     QString lastErrorString();
     void setLastErrorString(const QString &errorMessage);
 
+    virtual bool isReplied() const;
 signals:
     /**
      * @brief This signal is emitted when the task has been cancelled.
@@ -70,7 +85,7 @@ public:
      *
      * @return
      */
-    virtual QJsonObject predict(const QString &content, const QJsonArray &functions, const QString &systemRole = "", qreal temperature = 1.0) = 0;
+    virtual QJsonObject predict(const QString &content, const QJsonArray &functions) = 0;
 
     /**
      * @brief text2Image
@@ -85,7 +100,16 @@ public:
      */
     virtual QPair<int, QString> verify() = 0;
 
+    void textChainContent(const QString &content);
+
+    LLMServerProxy account() const;
 protected:
+    void readyThinkChainContent(const QJsonObject &content);
+
+protected:
+    bool m_replied = false;
+    QVariantHash m_params;
+
     LLMServerProxy m_accountProxy;
 
 private:

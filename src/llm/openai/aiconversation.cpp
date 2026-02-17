@@ -11,6 +11,7 @@ AIConversation::AIConversation()
 QJsonObject AIConversation::parseContentString(const QString &content)
 {
     QString deltacontent;
+    QString thinkContent;
 
     QRegularExpression regex(R"(data:\s*\{(.*)\})");
     QRegularExpressionMatchIterator iter = regex.globalMatch(content);
@@ -38,6 +39,10 @@ QJsonObject AIConversation::parseContentString(const QString &content)
                         if (delta.contains("content")) {
                             const QString &deltaData = delta["content"].toString();
                             deltacontent += deltaData;
+                        }
+                        if (delta.contains("reasoning_content")) {
+                            const QString &deltaThinkData = delta.value("reasoning_content").toString();
+                            thinkContent += deltaThinkData;
                         }
 
                         if (delta.contains("function_call")) {
@@ -95,6 +100,9 @@ QJsonObject AIConversation::parseContentString(const QString &content)
     QJsonObject response;
     if (!deltacontent.isEmpty()) {
         response["content"] = deltacontent;
+    }
+    if (!thinkContent.isEmpty()) {
+        response["reasoningContent"] = thinkContent;
     }
 
     QJsonObject tools;

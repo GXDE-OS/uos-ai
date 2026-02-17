@@ -1,0 +1,16 @@
+[Desktop Entry]
+Comment=uos-ai
+Exec=/usr/bin/uos-ai-assistant
+GenericName=UOS AI
+Icon=UosAiAssistantLogo
+Name=UOS AI
+StartupNotify=false
+Type=Application
+NoDisplay=true
+X-Deepin-ManualID=uos-ai-assistant
+X-Deepin-TurboType=dtkwidget
+X-Deepin-Vendor=user-custom
+X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
+X-Deepin-AppID=uos-ai
+X-GNOME-Autostart-Delay=3
+X-GNOME-Autostart-Notify=false

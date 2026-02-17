@@ -13,9 +13,8 @@ class OsInfo : public QObject
 
     explicit OsInfo(QObject *parent = nullptr);
 public:
-    bool isLingLong() const;
-
     QProcessEnvironment pureEnvironment();
+    void printInfo();
 
 private:
     QProcessEnvironment m_pureEnvironment;

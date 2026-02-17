@@ -6,6 +6,13 @@ LLMThreadTaskMana::LLMThreadTaskMana()
 
 }
 
+LLMThreadTaskMana::~LLMThreadTaskMana()
+{
+    for (auto i : m_runingRequestTask) {
+        i.toStrongRef()->cancel();
+    }
+}
+
 LLMThreadTaskMana *LLMThreadTaskMana::instance()
 {
     static LLMThreadTaskMana manager;

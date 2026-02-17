@@ -41,6 +41,9 @@ enum ErrorType {
     ContentReSendError,
     ContentConflictError,
     ContentGoneError,
+    GenerateImagePromptExceedError,
+    ContentExceededError,
+    ContentRequestManualStop = 298,  //手动停止请求
     UnknownContentError = 299,
 
     // protocol errors
@@ -73,6 +76,8 @@ enum ErrorType {
     AudioInputDeviceInvalid = 800,
     AudioOutputDeviceInvalid = 801,
 
+    InstFunctionCallingInvalid = 900,
+
     // 敏感词错误
     SenSitiveInfoError = 8000,
     ServerRateLimitError = 8001,
@@ -84,7 +89,13 @@ enum ErrorType {
     AccountInvalid = 9004,
 
     // 知识库异常
-    PersonalBaseNotExist = 9100
+    PersonalBaseNotExist = 9100,
+
+    // MCP智能体异常
+    AgentServerUnavailable = 11000,
+    AgentServerInvaildContent = 11001,
+    MCPSeverUnavailable= 11100,
+    MCPToolError = 11101
 };
 
 inline AIServer::ErrorType networkReplyErrorToAiServerError(QNetworkReply::NetworkError type)

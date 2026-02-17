@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include "fydnnetwork.h"
+#include "zgfyllm.h"
 
 #include <QUrl>
 #include <QUrlQuery>
@@ -30,7 +31,7 @@ FydnNetwork::FydnNetwork()
 
 }
 
-QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString &urlPath)
+QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString &urlPath, const QString &role)
 {
     const QPair<int, QString> accessData = generateAccessToken();
     if (accessData.first != ErrorType::NoError)
@@ -63,7 +64,13 @@ QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString 
             requestMsg = qMakePair(ErrorType::ModelError, obj["msg"].toString());
         } else {
             requestMsg = qMakePair(ErrorType::NoError, QString());
-            emit FydnNetwork::sigReadStream(this->parseResultString(data));
+            QString dataStr;
+            if (role == uos_ai::fydn::ZgfyLLM::roleFlfg())
+                dataStr = this->parseFlfgResultString(data);
+            else if (role == uos_ai::fydn::ZgfyLLM::roleQa())
+                dataStr = this->parseQaResultString(data);
+
+            emit FydnNetwork::sigReadStream(dataStr);
         }
     });
 
@@ -95,43 +102,6 @@ QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString 
 void FydnNetwork::setAbortRequest()
 {
     emit FydnNetwork::sigAbort();
-}
-
-QString FydnNetwork::parseResultString(const QByteArray &result)
-{
-    QString parseRes;
-
-    QRegularExpression regex(R"(data:\s*\{(.*)\})");
-    QRegularExpressionMatchIterator iter = regex.globalMatch(result);
-
-    while (iter.hasNext()) {
-        QRegularExpressionMatch match = iter.next();
-        QString matchStr = match.captured(0);
-
-        int startIndex = matchStr.indexOf('{');
-        int endIndex = matchStr.lastIndexOf('}');
-
-        if (startIndex < 0 || endIndex < startIndex)
-            continue;
-
-        QString resultContent = matchStr.mid(startIndex, endIndex - startIndex + 1);
-        QJsonObject obj = QJsonDocument::fromJson(resultContent.toUtf8()).object();
-        if (obj.isEmpty())
-            continue;
-
-        if (obj.contains("choices")) {
-            QJsonObject choiceObj = obj["choices"].toArray()[0].toObject();
-            if (choiceObj.contains("delta")) {
-                QJsonObject deltaObj = choiceObj["delta"].toObject();
-                if (deltaObj.contains("content")) {
-                    QString content = deltaObj["content"].toString();
-                    parseRes += content;
-                }
-            }
-        }
-    }
-
-    return parseRes;
 }
 
 void FydnNetwork::onReadyRead()
@@ -182,4 +152,78 @@ QString FydnNetwork::generateSignature(const QString &jsonStr, const QString &ap
     QString signature = jsonStr;
     QByteArray signatureData = QCryptographicHash::hash((signature + appKey).toUtf8(), QCryptographicHash::Md5);
     return signatureData.toHex();
+}
+
+QString FydnNetwork::parseQaResultString(const QByteArray &result)
+{
+    QString parseRes;
+
+    QRegularExpression regex(R"(data:\s*\{(.*)\})");
+    QRegularExpressionMatchIterator iter = regex.globalMatch(result);
+
+    while (iter.hasNext()) {
+        QRegularExpressionMatch match = iter.next();
+        QString matchStr = match.captured(0);
+
+        int startIndex = matchStr.indexOf('{');
+        int endIndex = matchStr.lastIndexOf('}');
+
+        if (startIndex < 0 || endIndex < startIndex)
+            continue;
+
+        QString resultContent = matchStr.mid(startIndex, endIndex - startIndex + 1);
+        QJsonObject obj = QJsonDocument::fromJson(resultContent.toUtf8()).object();
+        if (obj.isEmpty())
+            continue;
+
+        if (obj.contains("data")) {
+            QJsonObject resultObj = obj["data"].toObject();
+            if (resultObj.contains("answerInfoList")) {
+                QJsonObject answerObj = resultObj["answerInfoList"].toArray()[0].toObject();
+                if (answerObj.contains("answerTextData")) {
+                    QString content = answerObj["answerTextData"].toString();
+                    if (content == "DONE")
+                        continue;
+                    parseRes += content;
+                }
+            }
+        }
+    }
+    return parseRes;
+}
+
+QString FydnNetwork::parseFlfgResultString(const QByteArray &result)
+{
+    QString parseRes;
+
+    QRegularExpression regex(R"(data:\s*\{(.*)\})");
+    QRegularExpressionMatchIterator iter = regex.globalMatch(result);
+
+    while (iter.hasNext()) {
+        QRegularExpressionMatch match = iter.next();
+        QString matchStr = match.captured(0);
+
+        int startIndex = matchStr.indexOf('{');
+        int endIndex = matchStr.lastIndexOf('}');
+
+        if (startIndex < 0 || endIndex < startIndex)
+            continue;
+
+        QString resultContent = matchStr.mid(startIndex, endIndex - startIndex + 1);
+        QJsonObject obj = QJsonDocument::fromJson(resultContent.toUtf8()).object();
+        if (obj.isEmpty())
+            continue;
+
+        if (obj.contains("choices")) {
+            QJsonObject choiceObj = obj["choices"].toArray()[0].toObject();
+            if (choiceObj.contains("delta")) {
+                QJsonObject deltaObj = choiceObj["delta"].toObject();
+                if (deltaObj.contains("content")) {
+                    QString content = deltaObj["content"].toString();
+                    parseRes += content;
+                }
+            }
+        }
+    }
+    return parseRes;
 }

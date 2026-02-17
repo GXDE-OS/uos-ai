@@ -3,7 +3,21 @@
 
 #include <QSharedPointer>
 #include <QDBusArgument>
+#include <QRect>
 
+struct DockRect {
+    int x;
+    int y;
+    int w;
+    int h;
+
+    QRect rect() const
+    {
+        return QRect(x, y, w, h);
+    };
+};
+
+Q_DECLARE_METATYPE(DockRect)
 class QDBusInterface;
 class DDeDockObject : public QObject
 {
@@ -23,6 +37,7 @@ signals:
 
 private slots:
     void propertiesChanged(QString, QVariantMap, QStringList);
+    void onFrontendWindowRectChanged(DockRect rect);
 
 private:
     QSharedPointer<QDBusInterface> m_dbus;

@@ -50,6 +50,16 @@ playground
 client/build
 build
 *.log
+3rdparty/qmarkdowntextedit
 
 # project
 docs/doxy
+.unioncode
+
+.vscode
+.cursorindexingignore
+.specstory
+
+.cursorignore
+
+.cursorrules

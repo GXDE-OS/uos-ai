@@ -95,8 +95,9 @@ signals:
      * @brief Launch the UI page.
      * @param showAddllmPage: true，Display the add model account page.
      */
-    void launchUI(bool showAddllmPage, bool onlyUseAgreement = false);
-
+    void launchUI(bool showAddllmPage, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString &locateTitle = "");
+private:
+    bool checkAgreement();
 protected:
     Session *m_chatSession = nullptr;
 };

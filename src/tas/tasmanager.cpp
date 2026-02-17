@@ -4,7 +4,10 @@
 
 #include <QDebug>
 #include <QVector>
-#include <QRegExp>
+#include <QRegularExpression>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logTAS)
 
 const static QVector<QByteArray> gTasPuncts = {
     {"，"},
@@ -30,6 +33,7 @@ TasManager::TasManager()
         m_auditBuffQueue.append(content);
         m_condition.wakeAll(); // Notify waiting consumers
         m_mutex.unlock();
+        qCDebug(logTAS) << "New content queued for auditing, length:" << content.length();
     });
     start();
 }
@@ -46,6 +50,7 @@ void TasManager::setTas(QSharedPointer<TAS> tas)
 
 void TasManager::auditText(const QByteArray &text)
 {
+    qCDebug(logTAS) << "Processing text for audit, length:" << text.length();
     for (const auto &ch : text) {
         m_auditingBuff.append(ch);
         if (matchPunct(ch)) {
@@ -58,6 +63,7 @@ void TasManager::auditText(const QByteArray &text)
 void TasManager::endAuditText()
 {
     if (!m_auditingBuff.isEmpty()) {
+        qCDebug(logTAS) << "Processing remaining text buffer, length:" << m_auditingBuff.length();
         emit sigReadyAuditContent(m_auditingBuff);
         m_auditingBuff.clear();
     }
@@ -81,25 +87,29 @@ bool TasManager::matchPunct(const QChar &ch)
             }
         }
     }
-    return result ;
+    return result;
 }
 
 QString TasManager::clearPunct(const QByteArray &buff)
 {
-    auto newContent = QString(buff).replace(QRegExp("[,\\.;!\\?]"), "");
+    qCDebug(logTAS) << "Cleaning punctuation from text, original length:" << buff.length();
+    auto newContent = QString(buff).replace(QRegularExpression("[,\\.;!\\?]"), "");
     for (const auto &pnt : gTasPuncts) {
         newContent.replace(pnt, "");
     }
+    qCDebug(logTAS) << "Text cleaned, new length:" << newContent.length();
     return newContent;
 }
 
 void TasManager::stopAuditing()
 {
+    qCInfo(logTAS) << "Request to stop auditing process";
     m_stopAuditing.store(true);
     while (QThread::isRunning()) {
         m_condition.wakeAll();
         QThread::msleep(200);
     }
+    qCInfo(logTAS) << "Auditing process stopped";
 }
 
 bool TasManager::auditFinished()
@@ -126,7 +136,12 @@ void TasManager::run()
             auto preAuditText = m_auditBuffQueue.dequeue();
             const auto &auditText = clearPunct(preAuditText);
             (*result.data()) = m_tas->doTextAuditing(auditText.toLocal8Bit().simplified());
-            result->content =  preAuditText;
+            result->content = preAuditText;
+            
+            if (result->code != TextAuditEnum::None) {
+                qCWarning(logTAS) << "Audit detected issue with code:" << static_cast<int>(result->code);
+            }
+            
             emit sigAuditContentResult(result);
         }
         m_result = result;

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 6备份</title>
+    <defs>
+        <filter x="-7.3%" y="-5.2%" width="114.6%" height="114.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="3.58929639%" x2="50%" y2="97.2180704%" id="linearGradient-2">
+            <stop stop-color="#EFF5FF" offset="0%"></stop>
+            <stop stop-color="#E1EEFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="64.1867976%" y1="11.4861714%" x2="92.7708671%" y2="91.4090245%" id="linearGradient-3">
+            <stop stop-color="#00E0E3" offset="0%"></stop>
+            <stop stop-color="#0D94EC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M21.1891892,0 L74.8108108,0 C86.5132769,0 96,9.48672314 96,21.1891892 L96,74.8108108 C96,86.5132769 86.5132769,96 74.8108108,96 L21.1891892,96 C9.48672314,96 0,86.5132769 0,74.8108108 L0,21.1891892 C0,9.48672314 9.48672314,0 21.1891892,0 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="3.58929639%" x2="50%" y2="97.2180704%" id="linearGradient-5">
+            <stop stop-color="#EFF5FF" offset="0%"></stop>
+            <stop stop-color="#E1EEFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="20" y="20" width="54" height="58" rx="8"></rect>
+        <path d="M4,0 C6.209139,-4.05812251e-16 8,1.790861 8,4 L8,36 L8,36 L4,42 L0,36 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-7"></path>
+    </defs>
+    <g id="v2.8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-109, -310)">
+            <g id="编组-6备份" filter="url(#filter-1)" transform="translate(113, 312)">
+                <g id="编组-4备份">
+                    <g id="蒙版备份-2">
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-4"></use>
+                        <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                    </g>
+                    <g id="message-fill" transform="translate(13, 20)"></g>
+                </g>
+                <g id="矩形">
+                    <use fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                    <use fill="#C4F8FE" xlink:href="#path-6"></use>
+                </g>
+                <rect id="矩形" fill="#21B8FC" x="30" y="32" width="34" height="4" rx="2"></rect>
+                <rect id="矩形备份-2" fill="#21B8FC" x="30" y="42" width="34" height="4" rx="2"></rect>
+                <rect id="矩形备份-3" fill="#21B8FC" x="30" y="52" width="20" height="4" rx="2"></rect>
+                <rect id="矩形备份-4" fill="#21B8FC" x="30" y="62" width="17" height="4" rx="2"></rect>
+                <g id="编组-5" transform="translate(66, 50) rotate(-315) translate(-66, -50)translate(62, 29)">
+                    <g id="椭圆形" transform="translate(0, 0)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="蒙版" fill="#FFD05C" xlink:href="#path-7"></use>
+                        <path d="M4,46 C7.3137085,46 10,43.3137085 10,40 C10,36.6862915 7.3137085,34 4,34 C0.686291501,34 -2,36.6862915 -2,40 C-2,43.3137085 0.686291501,46 4,46 Z" fill="#565F85" mask="url(#mask-8)"></path>
+                    </g>
+                    <rect id="矩形" fill="#1689FC" x="0" y="7" width="8" height="5"></rect>
+                    <path d="M4,5.68434189e-13 C6.209139,5.68028376e-13 8,1.790861 8,4 L8,7 L8,7 L1.8189894e-12,7 L1.8189894e-12,4 C1.81871886e-12,1.790861 1.790861,5.68840001e-13 4,5.68434189e-13 Z" id="矩形备份-5" fill="#FD5E5E"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

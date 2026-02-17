@@ -14,6 +14,7 @@ public:
 
 public:
     QNetworkReply *get(const QNetworkRequest &request);
+    QNetworkReply *put(const QNetworkRequest &request, const QByteArray &data);
     QNetworkReply *post(const QNetworkRequest &request, const QByteArray &data);
     QNetworkReply *post(const QNetworkRequest &request, QHttpMultiPart *multiPart);
     QNetworkReply *sendCustomRequest(const QNetworkRequest &request, const QByteArray &verb, const QByteArray &data);

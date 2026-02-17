@@ -3,6 +3,9 @@
 #include "servercodetranslation.h"
 
 #include <QJsonDocument>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logLLM)
 
 NetWork360::NetWork360(const AccountProxy &account)
     : BaseNetWork(account)
@@ -16,7 +19,8 @@ QString NetWork360::rootUrlPath() const
 }
 
 QPair<int, QByteArray> NetWork360::request(const QJsonObject &data, const QString &path, QHttpMultiPart *multipart)
-{
+{ 
+    qCDebug(logLLM) << "360 Making request to path:" << path << "with data size:" << data.size();
     NetWorkResponse baseresult = BaseNetWork::request(rootUrlPath() + path, data, multipart);
     if (baseresult.error != AIServer::NoError && !baseresult.data.isEmpty()) {
         QJsonObject dataObj = QJsonDocument::fromJson(baseresult.data).object();
@@ -24,10 +28,13 @@ QPair<int, QByteArray> NetWork360::request(const QJsonObject &data, const QStrin
             QJsonObject errorObj = dataObj.value("error").toObject();
             int code = errorObj.value("code").toVariant().toInt();
             QString messgae = errorObj.value("message").toString();
+            qCWarning(logLLM) << "360 Server returned error code:" << code << "message:" << messgae;
             if (code == 1005) {
                 baseresult.error = AIServer::ServerRateLimitError;
             } else if (code == 1002) {
                 baseresult.error = AIServer::AuthenticationRequiredError;
+            } else if (code == 1001) {
+                baseresult.error = AIServer::ContentExceededError;
             } else {
                 baseresult.error = AIServer::ContentAccessDenied;
             }
@@ -43,7 +50,8 @@ QPair<int, QByteArray> NetWork360::request(const QJsonObject &data, const QStrin
         }
     }
 
-    if (baseresult.error != AIServer::NoError && baseresult.data.isEmpty()) {
+    if ((baseresult.error != AIServer::NoError && baseresult.data.isEmpty()) || baseresult.error == AIServer::ContentExceededError) {
+        qCWarning(logLLM) << "360 Final error handling - error:" << baseresult.error;
         baseresult.data = ServerCodeTranslation::serverCodeTranslation(baseresult.error, baseresult.errorString).toUtf8();
     }
 

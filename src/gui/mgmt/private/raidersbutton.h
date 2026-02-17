@@ -8,7 +8,6 @@
 #include <QNetworkRequest>
 #include <QNetworkReply>
 #include <QTimer>
-#include <QTextCodec>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QLocale>

@@ -3,6 +3,9 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logLLM)
 
 AIEdits::AIEdits(const AccountProxy &account)
     : AINetWork(account)
@@ -12,6 +15,9 @@ AIEdits::AIEdits(const AccountProxy &account)
 
 QPair<int, QString> AIEdits::create(const QString &modelId, QString input, QString instruction, uint16_t n)
 {
+    qCDebug(logLLM) << "AIEdits Creating edit with model:" << modelId << "input length:" << input.length() 
+                   << "instruction length:" << instruction.length() << "n:" << n;
+
     QJsonObject dataObject;
     dataObject.insert("model", modelId);
     dataObject.insert("input", input);

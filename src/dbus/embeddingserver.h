@@ -18,13 +18,18 @@ public:
     bool deleteVectorIndex(const QStringList &files);
 
     QStringList searchVecor(const QString &query, int topK, AssistantType type);
-    QStringList getDocFiles();
+    QString embeddingSearch(const QString &query, int topK, AssistantType type);
+    QVector<QPair<int, QString>> getDocFiles();
     QStringList getDocContent();
     void saveAllIndex();
+
+    // Embedding Text
+    QVector<QVector<float>> embeddingTexts(const QStringList &texts);
 
 private:
     explicit EmbeddingServer(QObject *parent = nullptr);
     QDBusInterface *embedInterface = nullptr;
+    QJsonObject getDocList();
 
     QString appid;
 

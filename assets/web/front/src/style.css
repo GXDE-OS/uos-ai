@@ -69,13 +69,13 @@ video {
 	padding: 0;
 }
 
-ul,
+/* ul,
 ol {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	list-style-position: inside;
-}
+} */
 
 body ::selection {
 	background-color: var(--activityColor);
@@ -90,14 +90,32 @@ body ::selection {
 .uos-tooltip {
 	border-radius: 8px !important;
 	border: 1px solid rgba(0, 0, 0, 0.05) !important;
-	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2) !important;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.2) !important;
 	background: rgba(247, 247, 247, 1) !important;
 	padding: 2px 5px 5px 6px !important;
 	color: rgba(0, 0, 0, 1) !important;
 	font-size: 0.85rem !important;
 	font-weight: 400 !important;
-        line-height: inherit !important;
+    line-height: 1.2 !important;
 	min-width: 0px !important;
+
+}
+
+.clear-history-list-tooltip {
+    padding: 4px 5px 4px 6px !important;
+	line-height: 1.08 !important;
+}
+
+.mcp-server-list-tooltip, .knowledge-base-switch-tooltip, .pre-view-tooltip {
+    max-width: 80% !important;
+    word-break: break-all !important;
+    white-space: normal !important;
+}
+
+.document-parsing-tooltip {
+    max-width: 80% !important;
+    word-break: break-all !important;
+    white-space: normal !important;
 }
 
 .dark .uos-tooltip {
@@ -141,11 +159,35 @@ body #drop-mask {
 	padding-right: 20px;
 }
 
+.propmpt-list .scrollbar__content--vertical {
+	padding-right: 0px;
+}
+
+.mcp-server-list .scrollbar__content--vertical {
+	padding-right: 0px;
+}
+
+.history-list-container .scrollbar__content--vertical {
+	padding-right: 0px;
+}
+
 .scrollbar__thumb {
-	background: var(--uosai-color-scroll-bg) !important;
+	background-color: var(--uosai-color-scroll-bg) !important;
 	border: 1px solid var(--uosai-color-border);
 	border-radius: 4px !important;
 }
+.scrollbar__thumb:hover  {
+	background-color: var(--uosai-color-scroll-bg-hover) !important;
+	border: 1px solid var(--uosai-color-border);
+	border-radius: 4px !important;
+}
+.scrollbar__thumb--vertical{
+	transition: none!important;
+}
 .scrollbar__thumbPlaceholder--autoExpand:hover>.scrollbar__thumb--vertical{
 	background-color: var(--uosai-color-scroll-bg-hover);
+}
+
+img {
+    -webkit-user-drag: none;
 }
