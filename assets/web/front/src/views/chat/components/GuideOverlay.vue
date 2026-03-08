@@ -47,7 +47,8 @@ const props = defineProps({
         default: 'independent',
         validator: (value) => ['independent', 'sequential'].includes(value)
     },
-    isWindowMode: Boolean
+    isWindowMode: Boolean,
+    isDarkMode: Boolean
 })
 
 const emit = defineEmits(['close'])
@@ -56,6 +57,9 @@ const popupStyle = ref({})
 const arrayStyle = ref({})
 
 const currentStepIndex = ref(props.startStep)
+
+// 存储克隆的目标元素
+let clonedTarget = null
 
 const totalSteps = computed(() => props.steps.length)
 const currentStep = computed(() => {
@@ -66,11 +70,28 @@ const currentStep = computed(() => {
 })
 
 let resizeObserver = null
+let themeObserver = null
+
+const updateClonedTargetPosition = () => {
+    if (!clonedTarget || !currentStep.value || !currentStep.value.targetRef) return
+
+    const el = currentStep.value.targetRef
+    if (!el || typeof el.getBoundingClientRect !== 'function') return
+
+    const rect = el.getBoundingClientRect()
+    clonedTarget.style.left = `${rect.left}px`
+    clonedTarget.style.top = `${rect.top}px`
+    clonedTarget.style.width = `${rect.width}px`
+    clonedTarget.style.height = `${rect.height}px`
+}
 
 const updatePosition = () => {
     console.log('updatePosition')
 
     if (!currentStep.value) return
+
+    // 更新克隆元素的位置
+    updateClonedTargetPosition()
     
     if (currentStep.value.targetRef === "none") {
         // 根据 relativePosition 计算弹窗位置
@@ -96,8 +117,6 @@ const updatePosition = () => {
                         mainContentWidth = mainContentDom.offsetWidth
                         mainContentHeight = mainContentDom.offsetHeight
                     }
-
-                    
 
                     const right_ = right.replace('px', '')
                     const top_ = top.replace('px', '')
@@ -232,12 +251,24 @@ const updatePosition = () => {
             popupHeight = popupDom.offsetHeight
         }
 
+        // 获取窗口宽度
+        const windowWidth = window.innerWidth
+        const margin = 4 // 距离边缘的最小间距
+
         // 计算去除padding后的内容宽度
         const contentWidth = rect.width - paddingLeft - paddingRight
         let left = rect.left + (contentWidth - popupWidth) / 2
-        if (left < 0) {
-            left = 4
+
+        // 检查左边界
+        if (left < margin) {
+            left = margin
         }
+
+        // 检查右边界
+        if (left + popupWidth > windowWidth - margin) {
+            left = windowWidth - popupWidth - margin
+        }
+
         popupStyle.value = {
             position: 'fixed',
             left: `${left}px`,
@@ -251,13 +282,13 @@ const updatePosition = () => {
         const popupLeft = left
         // 计算箭头应该在弹出框中的位置（减去箭头宽度的一半：8px）
         const arrowPosition = targetCenter - popupLeft - 8
-        
+
         // 确保箭头不会太靠近弹出框边缘
         const minArrowPosition = 10 // 距离左边至少10px
         const maxArrowPosition = popupWidth - 10 // 距离右边至少10px
-        
+
         const finalArrowPosition = Math.min(Math.max(arrowPosition, minArrowPosition), maxArrowPosition)
-        
+
         arrayStyle.value = {
             left: `${finalArrowPosition}px`,
             right: 'auto'
@@ -266,9 +297,17 @@ const updatePosition = () => {
 }
 
 const resetTargetStyle = (targetRef) => {
+    // 移除克隆的目标元素
+    if (clonedTarget && clonedTarget.parentNode) {
+        clonedTarget.parentNode.removeChild(clonedTarget)
+        clonedTarget = null
+    }
+
+    // 恢复原始元素的样式
     if (targetRef && targetRef.style) {
         targetRef.style.zIndex = ''
         targetRef.style.pointerEvents = ''
+        targetRef.style.opacity = ''
     }
 }
 
@@ -279,6 +318,54 @@ const closeGuide = (isActive) => {
     }
 }
 
+// 递归复制元素及其子元素的计算样式
+const copyComputedStyles = (sourceElement, targetElement) => {
+    if (!sourceElement || !targetElement) return
+
+    const computedStyle = window.getComputedStyle(sourceElement)
+
+    // 复制所有计算样式
+    for (let i = 0; i < computedStyle.length; i++) {
+        const property = computedStyle[i]
+        const value = computedStyle.getPropertyValue(property)
+        try {
+            targetElement.style.setProperty(property, value)
+        } catch (e) {
+            // 某些属性可能无法设置,忽略错误
+        }
+    }
+
+    // 递归处理子元素
+    const sourceChildren = sourceElement.children
+    const targetChildren = targetElement.children
+    for (let i = 0; i < sourceChildren.length && i < targetChildren.length; i++) {
+        copyComputedStyles(sourceChildren[i], targetChildren[i])
+    }
+}
+
+// 刷新克隆元素的样式(用于主题变化时更新)
+const refreshClonedTargetStyles = () => {
+    if (!clonedTarget || !currentStep.value || !currentStep.value.targetRef) return
+
+    const el = currentStep.value.targetRef
+    if (!el || typeof el.getBoundingClientRect !== 'function') return
+
+    // 重新复制样式
+    copyComputedStyles(el, clonedTarget)
+
+    // 恢复必要的定位样式
+    const rect = el.getBoundingClientRect()
+    clonedTarget.style.position = 'fixed'
+    clonedTarget.style.left = `${rect.left}px`
+    clonedTarget.style.top = `${rect.top}px`
+    clonedTarget.style.width = `${rect.width}px`
+    clonedTarget.style.height = `${rect.height}px`
+    clonedTarget.style.pointerEvents = currentStep.value.isAllowClickOnTarget ? 'pointer' : 'none'
+    clonedTarget.style.zIndex = currentStep.value.isAllowClickOnTarget ? '10001' : '10000'
+    clonedTarget.style.margin = '0'
+    clonedTarget.style.opacity = '1'
+}
+
 const highlightTarget = () => {
     if (!currentStep.value || !currentStep.value.targetRef) return
 
@@ -287,8 +374,48 @@ const highlightTarget = () => {
         return
     }
 
-    el.style.pointerEvents = currentStep.value.isAllowClickOnTarget ? 'auto' : 'none'
-    el.style.zIndex = 10001
+    // 移除之前的克隆元素
+    if (clonedTarget && clonedTarget.parentNode) {
+        clonedTarget.parentNode.removeChild(clonedTarget)
+        clonedTarget = null
+    }
+
+    // 隐藏原始元素,避免与克隆元素产生视觉叠加
+    el.style.opacity = '0'
+
+    // 获取目标元素的位置
+    const rect = el.getBoundingClientRect()
+
+    // 克隆目标元素
+    clonedTarget = el.cloneNode(true)
+
+    // 递归复制所有计算样式(包括子元素和SVG)
+    copyComputedStyles(el, clonedTarget)
+
+    // 确保克隆元素的基本定位样式不被覆盖
+    clonedTarget.style.position = 'fixed'
+    clonedTarget.style.left = `${rect.left}px`
+    clonedTarget.style.top = `${rect.top}px`
+    clonedTarget.style.width = `${rect.width}px`
+    clonedTarget.style.height = `${rect.height}px`
+    clonedTarget.style.pointerEvents = currentStep.value.isAllowClickOnTarget ? 'pointer' : 'none'
+    clonedTarget.style.zIndex = currentStep.value.isAllowClickOnTarget ? '10001' : '10000'
+    clonedTarget.style.margin = '0'
+    clonedTarget.style.opacity = '1'
+
+    // 添加一个标识class
+    clonedTarget.classList.add('guide-cloned-target')
+
+    // 将克隆元素添加到body,确保不受父级disabled影响
+    document.body.appendChild(clonedTarget)
+
+    // 如果允许点击,需要将点击事件代理到原始元素
+    if (currentStep.value.isAllowClickOnTarget) {
+        clonedTarget.addEventListener('click', (e) => {
+            e.stopPropagation()
+            el.click()
+        })
+    }
 }
 
 const activeBtn = () => {
@@ -307,14 +434,52 @@ const activeBtn = () => {
 onMounted(() => {
     window.addEventListener('resize', updatePosition)
     window.addEventListener('scroll', updatePosition, true)
+
+    // 使用 MutationObserver 监听主题变化
+    // 监听 HTML 元素的 class 或 data-theme 属性变化
+    themeObserver = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            // 检查是否是 class 或相关属性的变化
+            if (mutation.type === 'attributes' &&
+                (mutation.attributeName === 'class' ||
+                 mutation.attributeName === 'data-theme' ||
+                 mutation.attributeName === 'style')) {
+                // 主题变化时刷新克隆元素样式
+                if (props.visible && clonedTarget) {
+                    nextTick(() => {
+                        refreshClonedTargetStyles()
+                    })
+                }
+                break
+            }
+        }
+    })
+
+    // 监听 document.documentElement (html 标签) 的属性变化
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class', 'data-theme', 'style']
+    })
+
+    // 也监听 body 元素的变化
+    themeObserver.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class', 'data-theme', 'style']
+    })
 })
 
 onUnmounted(() => {
     window.removeEventListener('resize', updatePosition)
     window.removeEventListener('scroll', updatePosition, true)
+
     if (resizeObserver) {
         resizeObserver.disconnect()
         resizeObserver = null
+    }
+
+    if (themeObserver) {
+        themeObserver.disconnect()
+        themeObserver = null
     }
 })
 
@@ -370,7 +535,7 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
 .guide-mask {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: var(--uosai-history-list-mask-bg); 
+    background-color: rgba(0, 0, 0, 0); // var(--uosai-history-list-mask-bg); 
     z-index: 10000;
 }
 .guide-popup {
@@ -379,7 +544,7 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
     background-color: var(--uosai-guide-popup-bg);
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -460,6 +625,24 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
         border-top: 10px solid var(--uosai-guide-popup-bg);
         left: -8px;
         top: -11px;
+    }
+}
+
+// 克隆的目标元素样式
+:deep(.guide-cloned-target) {
+    // 确保克隆元素具有完整的视觉效果
+    box-sizing: border-box;
+
+    // 添加高亮效果,使其更加醒目
+    outline: 2px solid var(--activityColor, #0081FF);
+    outline-offset: 2px;
+
+    // 可以添加一些过渡效果
+    transition: outline 0.3s ease;
+
+    // 禁用所有子元素的交互(除非特别允许)
+    * {
+        pointer-events: none;
     }
 }
 </style> 

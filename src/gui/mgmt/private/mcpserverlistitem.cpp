@@ -1,6 +1,8 @@
 #include "mcpserverlistitem.h"
 #include "dconfigmanager.h"
 #include "mcpserverlistitemtooltip.h"
+#include "dbwrapper.h"
+#include "../common/echeckagreementdialog.h"
 
 #include <DFontSizeManager>
 #include <DGuiApplicationHelper>
@@ -121,6 +123,8 @@ void McpServerListItem::initUI()
 
     // 右侧区域：开关按钮
     m_pBtnSwitch = new DSwitchButton(this);
+    // 安装事件过滤器用于拦截开关点击
+    m_pBtnSwitch->installEventFilter(this);
 
     // 将左右区域添加到主布局
     mainLayout->addLayout(leftLayout);
@@ -197,6 +201,27 @@ bool McpServerListItem::eventFilter(QObject *obj, QEvent *event)
         } else if (event->type() == QEvent::MouseButtonPress) {
             hideCustomToolTip(0);
         }
+
+        if (event->type() == QEvent::Wheel) {
+            hideCustomToolTip(0);
+        }
+    }
+
+    if (obj == m_pBtnSwitch) {
+        if (!m_pBtnSwitch->isChecked() && event->type() == QEvent::MouseButtonPress) {
+            // 在开关状态启动之前检查协议
+            bool agreed = getThirdPartyMcpAgreement();
+            if (!agreed) {
+                // 如果用户未同意协议，阻止事件继续传播
+                return true;
+            } else {
+                // 用户已同意协议，手动设置开关为开启状态并触发状态改变
+                m_pBtnSwitch->setChecked(true);
+                onSwitchChanged(true);
+                // 阻止事件继续传播，避免重复触发
+                return true;
+            }
+        }
     }
 
     if (m_pCustomToolTip && obj == m_pCustomToolTip) {
@@ -227,7 +252,7 @@ void McpServerListItem::setServerId(const QString &serverId)
 {
     m_serverId = serverId;
 
-    if (m_pBtnSwitch) {
+    if (m_pBtnSwitch && DbWrapper::localDbWrapper().getThirdPartyMcpAgreement()) {
         auto enabledList = DConfigManager::instance()->value(MCP_GROUP, MCP_ENABLED_LIST).toStringList();
         m_pBtnSwitch->setChecked(enabledList.contains(serverId));
     }
@@ -286,6 +311,24 @@ void McpServerListItem::onDelete()
     qCInfo(logAIGUI) << "Delete button clicked. ServerId:" << m_serverId;
     emit signalDelete(m_serverId);
 }
+
+bool McpServerListItem::getThirdPartyMcpAgreement()
+{
+    //先查询数据库，没同意就弹窗
+    if(DbWrapper::localDbWrapper().getThirdPartyMcpAgreement())
+        return true;
+
+    ECheckAgreementDialog dlg;
+    dlg.exec();
+
+    bool agreed = DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
+    if (agreed) {
+        // 同意协议时，通知刷新所有McpServerListItem的check状态
+        emit signalAgreementAccepted();
+    }
+    return agreed;
+}
+
 
 void McpServerListItem::onSwitchChanged(bool checked)
 {

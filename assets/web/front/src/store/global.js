@@ -135,9 +135,11 @@ export const useGlobalStore = defineStore({
             // 更新标签活动色
             const rgb = hexToRgb(this.activityColor).rgbStr;
             if (res == 2) {
-            document.body.style.setProperty('--activityColorPromptTag', `rgba(${rgb},0.12)`);
+                document.body.style.setProperty('--activityColorPromptTag', `rgba(${rgb},0.12)`);
+                document.body.style.setProperty('--globalScrollbar-boxShadow', `rgba(0, 0, 0, 0.2) 0 0 0 0.5px, rgba(0, 0, 0, 0.2) 0 0 0 0.5px, rgba(255, 255, 255, 0.05) 0 0 0 0.5px inset, rgba(255, 255, 255, 0.05) 0 0 0 0.5px`);
             }else{
-            document.body.style.setProperty('--activityColorPromptTag', `rgba(${rgb},0.15)`);
+                document.body.style.setProperty('--activityColorPromptTag', `rgba(${rgb},0.15)`);
+                document.body.style.setProperty('--globalScrollbar-boxShadow', `rgba(0, 0, 0, 0.05) 0 0 0 1px, rgba(0, 0, 0, 0.05) 0 0 10px 0`);
             }
         },
         updateFont(family, pixelSize) {

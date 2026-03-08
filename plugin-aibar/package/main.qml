@@ -78,29 +78,29 @@ AppletItem {
                     sourceSize: Qt.size(Panel.rootObject.dockItemMaxSize * 9 / 14 , Panel.rootObject.dockItemMaxSize * 9 / 14)
                     retainWhileLoading: true
 
-                    DropArea {
-                        anchors.fill: parent
-                        onDropped: function(drop) {
-                            if (docToast.visible)
-                                return;
+                    // DropArea {
+                    //     anchors.fill: parent
+                    //     onDropped: function(drop) {
+                    //         if (docToast.visible)
+                    //             return;
 
-                            var urls = drop.urls
-                            if (urls.length !== 1) {
-                                return
-                            }
-                            Applet.handleDrop(urls[0].toString());
-                        }
+                    //         var urls = drop.urls
+                    //         if (urls.length !== 1) {
+                    //             return
+                    //         }
+                    //         Applet.handleDrop(urls[0].toString());
+                    //     }
 
-                        onEntered: function(drag) {
-                            if (docToast.popupVisible || drag.urls.length !== 1 ||
-                                    !Applet.isSupportDrop(drag.urls[0].toString())) {
-                                drag.accepted = false
-                                return false;
-                            }
-                            // for test
-                            //dragCon.onDragActivated(drag.urls)
-                        }
-                    }
+                    //     onEntered: function(drag) {
+                    //         if (docToast.popupVisible || drag.urls.length !== 1 ||
+                    //                 !Applet.isSupportDrop(drag.urls[0].toString())) {
+                    //             drag.accepted = false
+                    //             return false;
+                    //         }
+                    //         // for test
+                    //         //dragCon.onDragActivated(drag.urls)
+                    //     }
+                    // }
 
                     Connections {
                            target: Panel.rootObject
@@ -177,33 +177,33 @@ AppletItem {
                     name: "qrc:/icons/deepin/builtin/icons/UosAiAssistant.svg"
                     sourceSize: Qt.size(Panel.rootObject.dockItemMaxSize * 9 / 14 , Panel.rootObject.dockItemMaxSize * 9 / 14)
 
-                    DropArea {
-                        anchors.fill: parent
-                        onDropped: function(drop) {
-                            if (docToast.visible) {
-                                console.info("Drop ignored - doc toast already visible")
-                                return;
-                            }
+                    // DropArea {
+                    //     anchors.fill: parent
+                    //     onDropped: function(drop) {
+                    //         if (docToast.visible) {
+                    //             console.info("Drop ignored - doc toast already visible")
+                    //             return;
+                    //         }
 
-                            var urls = drop.urls
-                            if (urls.length !== 1) {
-                                console.warn(`Invalid drop - expected 1 URL, got ${urls.length}`)
-                                return
-                            }
-                            console.info(`Processing dropped file: ${urls[0].toString()}`)
-                            Applet.handleDrop(urls[0].toString());
-                        }
+                    //         var urls = drop.urls
+                    //         if (urls.length !== 1) {
+                    //             console.warn(`Invalid drop - expected 1 URL, got ${urls.length}`)
+                    //             return
+                    //         }
+                    //         console.info(`Processing dropped file: ${urls[0].toString()}`)
+                    //         Applet.handleDrop(urls[0].toString());
+                    //     }
 
-                        onEntered: function(drag) {
-                            if (docToast.popupVisible || drag.urls.length !== 1 ||
-                                    !Applet.isSupportDrop(drag.urls[0].toString())) {
-                                drag.accepted = false
-                                return false;
-                            }
-                            // for test
-                            //dragCon.onDragActivated(drag.urls)
-                        }
-                    }
+                    //     onEntered: function(drag) {
+                    //         if (docToast.popupVisible || drag.urls.length !== 1 ||
+                    //                 !Applet.isSupportDrop(drag.urls[0].toString())) {
+                    //             drag.accepted = false
+                    //             return false;
+                    //         }
+                    //         // for test
+                    //         //dragCon.onDragActivated(drag.urls)
+                    //     }
+                    // }
                     Connections {
                         target: Panel.rootObject
                         function onDockCenterPartPosChanged()

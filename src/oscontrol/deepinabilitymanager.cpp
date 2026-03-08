@@ -104,7 +104,11 @@ OSCallContext UOSAbilityManager::doBluetoothConfig(bool on)
     }
 
     if (on) {
-        m_uosControlCenterProxy->ShowPage("bluetooth");
+#ifdef COMPILE_ON_V20
+        m_uosControlCenterProxy->ShowModule("bluetooth");
+#elif COMPILE_ON_V25
+        m_uosControlCenterProxy->ShowPage("device/bluetooth");
+#endif
     } else {
         osCtrCallDbusNoResult(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface, QString("ClearUnpairedDevice"));
     }
@@ -726,35 +730,81 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
 OSCallContext UOSAbilityManager::switchWifi(bool on)
 {
     qCDebug(logOsControl) << "Switching WiFi, state:" << on;
-    QStringList adpters;
-    {
-        QVariant deviceRes;
-        propertiesGet(osCallDbusNetworkService, osCallDbusNetworkPath, osCallDbusNetworkInterface, QString("Devices"), deviceRes);
-        QString reply = deviceRes.toString();
-        QJsonDocument doc = QJsonDocument::fromJson(reply.toUtf8());
-        QJsonArray arr = doc["wireless"].toArray();
-        for (int index = 0; index < arr.size(); index++)
-            adpters.append(arr[index].toObject()["Path"].toString());
+    QString systemBusNetworkService = "org.freedesktop.NetworkManager";
+    QString systemBusNetworkPath = "/org/freedesktop/NetworkManager";
+    QString systemBusNetworkInterface = "org.freedesktop.NetworkManager";
+
+    auto conn = QDBusConnection::systemBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(systemBusNetworkService, systemBusNetworkPath, systemBusNetworkInterface, "GetDevices");
+    QDBusMessage reply = conn.call(msg);
+    if (reply.type() != QDBusMessage::ReplyMessage || reply.arguments().isEmpty()) {
+        return ctxByError(OSCallContext::NonService);
+    }
+    qCInfo(logOsControl) << "Devices fetched successfully.";
+
+    QList<QDBusObjectPath> allPaths;
+    const QVariant &deviceRes = reply.arguments().at(0);
+    if (deviceRes.canConvert<QDBusArgument>()) {
+        deviceRes.value<QDBusArgument>() >> allPaths;
     }
 
-    if (adpters.isEmpty()) {
+    if (allPaths.isEmpty()) {
+        qCWarning(logOsControl) << "No device paths found";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    QList<QDBusObjectPath> wirelessPaths;
+    for (const auto &p : allPaths) {
+        QString path = p.path();
+        QDBusMessage propMsg = QDBusMessage::createMethodCall(systemBusNetworkService, path, "org.freedesktop.DBus.Properties", "Get");
+        propMsg << "org.freedesktop.NetworkManager.Device" << "DeviceType";
+
+        QDBusMessage propReply = conn.call(propMsg);
+        if (propReply.type() != QDBusMessage::ReplyMessage) {
+            continue;
+        }
+
+        // 提取 DeviceType
+        QVariant propVal = propReply.arguments().value(0).value<QDBusVariant>().variant();
+        if (propVal.toUInt() == 2) {
+            qCInfo(logOsControl) << "Found Wi-Fi device:" << path;
+            wirelessPaths << p;
+        }
+    }
+
+    if (wirelessPaths.isEmpty()) {
         qCWarning(logOsControl) << "No wireless adapters found";
         return ctxByError(OSCallContext::NonService);
     }
 
-    for (auto adpter : adpters) {
-        QDBusObjectPath dPath(adpter);
+    for (const auto &path : wirelessPaths) {
+#ifdef COMPILE_ON_V25
         QVariantList args;
-        args << QVariant::fromValue(dPath)
-             << QVariant::fromValue(on);
-        osCtrCallDbusNoResult(osCallDbusNetworkService, osCallDbusNetworkPath, osCallDbusNetworkInterface, QString("EnableDevice"), args);
+        args << QVariant::fromValue(path.path()) << QVariant::fromValue(on);
+        QDBusMessage message = QDBusMessage::createMethodCall(osCallDbusNetworkService, osCallDbusNetworkPath, osCallDbusNetworkInterface, "EnableDevice");
+        message.setArguments(args);
+        QDBusMessage callReply = conn.call(message);
+        if (callReply.type() != QDBusMessage::ReplyMessage) {
+            return ctxByError(OSCallContext::NonService);
+        }
+#else
+        QVariantList args;
+        args << QVariant::fromValue(path) << QVariant::fromValue(on);
+        osCtrCallDbusNoResult(
+            osCallDbusNetworkService,
+            osCallDbusNetworkPath,
+            osCallDbusNetworkInterface,
+            "EnableDevice",
+            args
+        );
+#endif
     }
 
     int errCode = 0;
     if (on) {
 #ifdef COMPILE_ON_V23
 #ifdef COMPILE_ON_V25
-        QString firstAdpterNum = adpters.at(0).section('/', -1);
+        QString firstAdpterNum = wirelessPaths.at(0).path().section('/', -1);
         errCode = m_uosControlCenterProxy->ShowPage(QString("network/wireless%1").arg(firstAdpterNum));
 #else
         errCode = m_uosControlCenterProxy->ShowPage(QString("network/WirelessPage"));

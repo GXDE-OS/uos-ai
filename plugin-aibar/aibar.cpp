@@ -25,8 +25,8 @@ AiBar::AiBar(QObject *parent) : DApplet(parent)
 {
     ConfigerIns();
 
-    connect(&drag, &DragMonitor::dragEnter, this, &AiBar::dragActivated);
-    connect(&meetingAssistant, &MeetingAssistant::sigMeetAssistantStatusChanged, this, &AiBar::sigMeetAssistantStatusChanged);
+    // connect(&drag, &DragMonitor::dragEnter, this, &AiBar::dragActivated);
+    // connect(&meetingAssistant, &MeetingAssistant::sigMeetAssistantStatusChanged, this, &AiBar::sigMeetAssistantStatusChanged);
     updateItemList();
 }
 

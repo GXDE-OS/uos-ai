@@ -1,13 +1,13 @@
 <template>
-  <div class="conversion-list-container" v-show="show">
-    <!-- 原有列表容器保持不变 -->
-    <div class="history-list-container">
-      <div class="mask"></div>
-      <div class="conversion-list-wrapper">
-        <transition name="slide-up">
-          <div class="conversion-list" v-show="showContent" :class="{ 'advanced-features': store.IsEnableAdvancedCssFeatures }">
-            <!-- 新增标题栏 -->
-            <div class="header">
+  <div class="history-list-container" v-show="show">
+    <transition name="slide-up">
+      <div class="conversion-list-wrapper" v-show="showContent">
+        <!-- 背景遮罩层 -->
+        <div class="background-mask"></div>
+        <!-- 内容层 -->
+        <div class="conversion-list" :class="{ 'advanced-features': store.IsEnableAdvancedCssFeatures }">
+          <!-- 新增标题栏 -->
+          <div class="header">
               <div class="header-left">
                 <span class="title">{{ store.loadTranslations['History'] }}</span>
                 <el-tooltip popper-class="uos-tooltip clear-history-list-tooltip" effect="light" placement="top" :show-arrow="false" :enterable="false"
@@ -21,39 +21,39 @@
                 <SvgIcon icon="close"/>
               </div>
             </div>
-            <custom-scrollbar class="history-list-scrollbar" id="historyListScroll" :autoHideDelay="2000" :thumbWidth="6"
-              :wrapperStyle="{height: 'calc(100% - 54px) !important'}" :style="{ width: '100%', height: '100%'}" v-show="history.length > 0">
-              <div v-for="item in history"
-                :key="item.conversationId"
-                class="history-item"
-                @click="selectItem(item)"
-                @mouseenter="handleHover(item, true)"
-                @mouseleave="handleHover(item, false)">
-                <span class="title-text">{{ item.conversationTitle }}</span>
-                <div class="right-content">
-                  <div
-                    class="date-label"
-                    v-show="!itemHoverStates[item.conversationId]">
-                    {{ formatDate(item.conversationTimestamp) }}
-                  </div>
-                  <div
-                    class="delete-btn"
-                    v-show="itemHoverStates[item.conversationId]"
-                    @click.stop="handleDelete(item)">
-                    <SvgIcon icon="trash"/>
+            <div style="width: calc(100% - 2px);height: 100%;">
+              <custom-scrollbar class="history-list-scrollbar" id="historyListScroll" :autoHideDelay="2000" :thumbWidth="6"
+                :wrapperStyle="{height: 'calc(100% - 54px) !important'}" :style="{ width: '100%', height: '100%'}" v-show="history.length > 0">
+                <div v-for="item in history"
+                  :key="item.conversationId"
+                  class="history-item"
+                  @click="selectItem(item)"
+                  @mouseenter="handleHover(item, true)"
+                  @mouseleave="handleHover(item, false)">
+                  <span class="title-text">{{ item.conversationTitle }}</span>
+                  <div class="right-content">
+                    <div
+                      class="date-label"
+                      v-show="!itemHoverStates[item.conversationId]">
+                      {{ formatDate(item.conversationTimestamp) }}
+                    </div>
+                    <div
+                      class="delete-btn"
+                      v-show="itemHoverStates[item.conversationId]"
+                      @click.stop="handleDelete(item)">
+                      <SvgIcon icon="trash"/>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-            </custom-scrollbar>
+              </custom-scrollbar>
+            </div>
             <div class="empty-history" v-show="history.length === 0">
               <img :src="isDarkMode? 'icons/no-history-dark.png':'icons/no-history-light.png'" alt="" class="empty-icon"/>
               <p class="empty-text">{{ store.loadTranslations['No History Records'] }}</p>
             </div>
-          </div>
-        </transition>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -171,28 +171,39 @@ const handleClearHistory = async () => {
 .conversion-list-wrapper {
   position: absolute;
   width: 100%;
-  height: 70vh;
+  height: calc(70vh + 30px); /* 额外30px空间用于阴影绘制 */
   bottom: 0;
   left: 0;
-  overflow: hidden;
+  overflow: visible; /* 允许阴影溢出 */
   z-index: 10;
   perspective: 1000px;
 }
 
+.background-mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70vh; /* 与conversion-list高度一致 */
+  background-color: var(--uosai-history-list-mask-bg);
+  border-radius: 18px 18px 0px 0px;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
 .conversion-list {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 90%;
-  z-index: 2;
+  height: 70vh; /* 明确设置高度 */
   background-color: var(--uosai-chat-bg);
   border-radius: 18px 18px 0px 0px;
   backface-visibility: hidden;
   border: 1px solid var(--uosai-color-shortcut-border);
   box-shadow: 0px -6px 20px 0 var(--uosai-history-list-box-shadow);
-  
+  z-index: 1;
+
   &.advanced-features {
     background-color: var(--uosai-chat-bg-qt6);
     backdrop-filter: blur(20px);
@@ -209,19 +220,19 @@ const handleClearHistory = async () => {
 
 @keyframes slideUp {
   from {
-    transform: translate(-50%, 100%);
+    transform: translateY(100%);
   }
   to {
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slideDown {
   from {
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
   to {
-    transform: translate(-50%, 100%);
+    transform: translateY(100%);
   }
 }
 
@@ -312,28 +323,14 @@ const handleClearHistory = async () => {
 
 }
 
-.mask {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--uosai-history-list-mask-bg);
-  position: fixed;
-  z-index: 1;
-  cursor: pointer; /* 指示可点击关闭 */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.conversion-list-container:not([style*="display:none"]):not([style*="display: none"]) .mask {
-  opacity: 1;
-}
-
 .history-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 30px;
 	padding-left: 8px;
-	margin: 0px 10px;
+	margin-left: 10px;
+  margin-right: 8px;
 	cursor: pointer;
 	font-size: 0.9rem;
 	font-weight: 400;
@@ -402,6 +399,7 @@ const handleClearHistory = async () => {
 	}
 }
 
+/* 历史记录列表滚动条基础样式 */
 .history-list-scrollbar {
     height: calc(100% - 54px) !important; // 减去标题栏高度
     overflow-y: auto !important;
@@ -409,7 +407,7 @@ const handleClearHistory = async () => {
 }
 
 .scrollbar__wrapper {
-  	padding: 0px !important;
+    padding: 0px !important;
 }
 
 .empty-history {

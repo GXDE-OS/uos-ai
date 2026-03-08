@@ -462,12 +462,13 @@ AiBarWidget *MgmtWindow::initAiBarWidget()
 DWidget *MgmtWindow::initMcpServerWidget()
 {
     m_pMcpServerWidget = new McpServerWidget(this);
+
     m_pMcpServerWidget->setFixedWidth(560);
     m_pMcpServerWidget->setProperty("title", m_pMcpServerWidget->getTitleName());
     m_pMcpServerWidget->setProperty("level", 1);
     titles.insert(m_pMcpServerWidget->getTitleName(), m_pMcpServerWidget);
     widgetList.push_back(m_pMcpServerWidget);
-
+    connect(this, &MgmtWindow::sigThirdPartyMcpAgree, m_pMcpServerWidget, &McpServerWidget::sigThirdPartyMcpAgree);
     return m_pMcpServerWidget;
 }
 

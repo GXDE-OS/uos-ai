@@ -31,6 +31,7 @@ public:
 signals:
     void signalEdit(const QString &name);
     void signalDelete(const QString &name);
+    void signalAgreementAccepted();
 
 private slots:
     void onEdit();
@@ -52,6 +53,7 @@ private:
     void updateButtonVisibility();
     void showCustomToolTip();
     void hideCustomToolTip(int delay = 0);
+    bool getThirdPartyMcpAgreement();
 
 private:
     DLabel *m_pNameLabel = nullptr;

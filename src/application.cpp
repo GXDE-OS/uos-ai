@@ -12,6 +12,7 @@
 #include "esystemcontext.h"
 #include "gui/upgrade/deepseekinfo.h"
 #include "mcpconfigsyncer.h"
+#include "global_define.h"
 #include <report/chatwindowpoint.h>
 #include <report/eventlogutil.h>
 
@@ -59,12 +60,11 @@ Application::Application(int &argc, char **argv)
     setApplicationDisplayName(tr("UOS AI"));
     setApplicationVersion(DApplication::buildVersion(APP_VERSION));
     setProductName(tr("UOS AI"));
-    setProductIcon(QIcon::fromTheme("uos-ai-assistant"));
+    setProductIcon(QIcon::fromTheme(kApplicationIconName));
     setApplicationDescription(tr("UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions."));
     setAttribute(Qt::AA_UseHighDpiPixmaps);
     setQuitOnLastWindowClosed(false);
-    setWindowIcon(QIcon::fromTheme("uos-ai-assistant"));
-
+    setWindowIcon(QIcon::fromTheme(kApplicationIconName));
 
     connect(ServerWrapper::instance(), &ServerWrapper::sigToLaunchMgmt, this, &Application::onLaunchMgmt);
     connect(ServerWrapper::instance(), &ServerWrapper::sigToLaunchGetFreeAccountDlg, this, &Application::onLaunchGetFreeAccountDlg);
@@ -226,6 +226,7 @@ void Application::launchMgmtWindowNoShow()
             connect(m_mgmtWindow, &MgmtWindow::signalWordWizardStatusChanged, m_wordWizard, &WordWizard::onChangeHiddenStatus, Qt::UniqueConnection);
             connect(m_mgmtWindow, &MgmtWindow::signalDisabledAppsUpdated, m_wordWizard, &WordWizard::updateDisabledApps, Qt::UniqueConnection);
         }
+        connect(m_chatWindow, &ChatWindow::sigThirdPartyMcpAgree, m_mgmtWindow, &MgmtWindow::sigThirdPartyMcpAgree);
     }
 }
 

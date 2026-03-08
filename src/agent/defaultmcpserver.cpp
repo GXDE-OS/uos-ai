@@ -12,12 +12,7 @@ DefaultMcpServer::DefaultMcpServer(const QString &agentName, QObject *parent) : 
 
 void DefaultMcpServer::scanServers()
 {
-    if (DbWrapper::localDbWrapper().getThirdPartyMcpAgreement()) {
-        MCPServer::scanServers();
-        qCDebug(logAgent) << "Enable third party mcp server. ";
-    } else {
-        qInfo(logAgent) << "User disable third party mcp server.";
-    }
+    MCPServer::scanServers();
 
     // add fixed mcp server name.
     QVariantHash info;

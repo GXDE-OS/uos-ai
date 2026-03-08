@@ -2012,7 +2012,7 @@ QString EAiExecutor::getConversationHistoryList()
 
     QJsonDocument doc(rootObject);
 
-    setTitleBarMaskStatus(true);
+    setTitleBarStatus(true);
 
     return doc.toJson(QJsonDocument::Indented);  // 使用格式化输出
 }
@@ -2845,14 +2845,9 @@ void EAiExecutor::rateAnwser(const int questionIdx, const int answerIdx, int rat
     }
 }
 
-void EAiExecutor::setTitleBarMaskStatus(bool status)
+void EAiExecutor::setTitleBarStatus(bool status)
 {
-    m_chatWindow->setTitleBarMaskStatus(status);
-}
-
-void EAiExecutor::setTitleBarMaskBgColorAndShow(int r, int g, int b, int a)
-{
-    m_chatWindow->setTitleBarMaskBgColorAndShow(r, g, b, a);
+    m_chatWindow->setTitleBarStatus(status);
 }
 
 bool EAiExecutor::showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete)

@@ -38,10 +38,11 @@
             :shortcutList="shortcutList"
             @update:currentAssistant="updateCurrentAssistant"
             @showAssistantList="showAssistantList"
-            v-show="history.length === 0 && store.ConversationModeStatus === store.ConversionMode.Normal" />
+            v-show="history.length === 0 && store.ConversationModeStatus === store.ConversionMode.Normal"
+            :class="{'disabled': isUIDisabledForPopup}" />
         <!-- 隐私会话欢迎页 -->
-        <PrivateWelcomePage v-show="history.length === 0 && store.ConversationModeStatus === store.ConversionMode.Private" :isDarkMode="isDarkMode" />
-        <div class="chat-history" v-show="history.length > 0" @mousewheel="handleHistoryScroll">
+        <PrivateWelcomePage :class="{'disabled': isUIDisabledForPopup}" v-show="history.length === 0 && store.ConversationModeStatus === store.ConversionMode.Private" :isDarkMode="isDarkMode" />
+        <div class="chat-history" :class="{'disabled': isUIDisabledForPopup}" v-show="history.length > 0" @mousewheel="handleHistoryScroll">
             <custom-scrollbar class="history-scrollbar" id="chatHistory" ref="chatHistoryScrollbarRef"
                 :autoHideDelay="2000" :thumbWidth="6"
                 :wrapperStyle="{height: '100%'}" :style="{ width: '100%', height: '100%'}" >
@@ -71,9 +72,9 @@
                 </div>
             </custom-scrollbar>
         </div>
-        <div class="chat-bottom">
+        <div class="chat-bottom" :class="{'disabled': isUIDisabledForPopup}">
             <div class="handle-tip">
-                <div class="tip-item-msg" v-show="showTopTip">
+                <div class="tip-item-msg" v-show="showTopTip" :class="{ 'advanced-features': store.IsEnableAdvancedCssFeatures }" :style="{'backdrop-filter': store.IsEnableAdvancedCssFeatures  ? isDarkMode ? 'blur(30px) ': 'blur(20px) '  : 'none'}">
                     {{ topTipMsg }}
                 </div>
                 <div class="tip-item" v-show="showCount" v-if="store.loadTranslations['Stop recording after %1 seconds']">
@@ -170,14 +171,6 @@
                     v-model:assistantList="assistantList" v-model:currentAssistant="currentAssistant"
                     :showGuide="showGuide"
                     :disabled="disabled || recording"  @update:currentAssistant="updateCurAssistant" @update:currentAccountChanged="currentAccountChanged"/>
-                <!-- 引导界面 -->
-                <GuideOverlay
-                    :steps="guideConfig.steps"
-                    :guide-type="guideConfig.guideType"
-                    :visible="showGuide"
-                    :isWindowMode="isWindowMode"
-                    @close="onGuideClose"
-                    />
             </div>
             <div class="input-content" @mouseup="handleMouseUp" :class="{ 'foucs': isFocus, 'private-mode': store.ConversationModeStatus === store.ConversionMode.Private }" :style="{'background-color': store.ConversationModeStatus === store.ConversionMode.Private ? 'var(--activityColorPrivateModeInputBackgroundColor)' : 'var(--uosai-color-inputcontent-bg)'}">
                 <!-- 指令列表 -->
@@ -292,7 +285,8 @@
                                 v-show="(currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT || currentAssistant.id == 'PPT Assistant')"
                                 :class="{ 'disabled': (inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant')) }"
                                 :style="{'margin-right': isWindowMode ? '15px' : '10px'}"
-                                    @click="selectFile">
+                                @click="selectFile"
+                                ref="docUploadIconRef">
                                     <SvgIcon icon="file" />
                                 </div>
                             </el-tooltip>
@@ -338,6 +332,15 @@
              </div>
             
         </div>
+        <!-- 引导界面 -->
+        <GuideOverlay
+            :steps="guideConfig.steps"
+            :guide-type="guideConfig.guideType"
+            :visible="showGuide"
+            :isWindowMode="isWindowMode"
+            :isDarkMode="isDarkMode"
+            @close="onGuideClose"
+            />
     </div>
 </template>
 
@@ -589,6 +592,10 @@ const initChat = async () => {
         question.value = ""
     }, 5);
 }
+
+const isUIDisabledForPopup = computed(() => {
+  return showConversionList.value || showGuide.value
+})
 
 const currentTime = () => {
     //获取当前年月日时分秒
@@ -1771,7 +1778,7 @@ const getNowConversationInfo = async (assistantId) => {
 
 const closeHistoryList = () => {
     showConversionList.value = false
-    Qrequest(chatQWeb.setTitleBarMaskStatus, false)  //设置当前助手的最后一个会话信息
+    Qrequest(chatQWeb.setTitleBarStatus, false)  //设置当前助手的最后一个会话信息
 }
 
 const selectHistoryItem = async (item) => {        // 新增助手存在性检查
@@ -1849,7 +1856,7 @@ const selectHistoryItem = async (item) => {        // 新增助手存在性检�
         }
         return
     }
-    Qrequest(chatQWeb.setTitleBarMaskStatus, false)  //设置当前助手的最后一个会话信息
+    Qrequest(chatQWeb.setTitleBarStatus, false)  //设置当前助手的最后一个会话信息
     showConversionList.value = false
 
 }
@@ -1904,6 +1911,7 @@ const handleFunctionClear = async () => {
     welcomePageRef.value.getAiFAQ()
 }
 
+const docUploadIconRef = ref(null)
 // 是否领取过免费模型
 const isGotDeepSeekUosFree = ref(false)
 const guideConfigStack = [
@@ -2067,7 +2075,7 @@ const onGuideClose = (isTryClicked) => {
     // 因为具体行为已移入 onActiveClick。
     // 这里我们只负责关闭。
     showGuide.value = false
-    Qrequest(chatQWeb.setTitleBarMaskStatus, false)  //关闭标题栏遮罩
+    Qrequest(chatQWeb.setTitleBarStatus, false)  //关闭标题栏遮罩
     //记数据库，不再弹起引导界面
     Qrequest(chatQWeb.updateUpdatePromptDB, true)
 
@@ -3296,7 +3304,7 @@ const sigToShowPromptWindow = async (width) => {
         showGuide.value = true;
         isFocus.value = false;
         questionInput.value.blur();
-        Qrequest(chatQWeb.setTitleBarMaskStatus, true); //打开标题栏遮罩
+        Qrequest(chatQWeb.setTitleBarStatus, true); //打开标题栏遮罩
     }
 }
 
@@ -3322,7 +3330,7 @@ const sigToChangeFreeAccountGuide = async (isShowFreeAccountGuide, isPreShow) =>
                 showGuide.value = true;
                 isFocus.value = false;
                 questionInput.value.blur();
-                Qrequest(chatQWeb.setTitleBarMaskStatus, true); //打开标题栏遮罩
+                Qrequest(chatQWeb.setTitleBarStatus, true); //打开标题栏遮罩
             }
         }
     }
@@ -3503,9 +3511,9 @@ const handlePaste = async (event) => {
     }
 
     .chat-history {
-        width: calc(100% - 8px);
-        padding: 15px 0;
-        max-width: 1020px;
+        width: calc(100% - 4px);
+        padding-bottom: 15px;
+        max-width: 1004px;
         flex: 1 1 0;
         overflow: hidden;
         // background-color: aquamarine;
@@ -3575,6 +3583,10 @@ const handlePaste = async (event) => {
                 white-space: normal; /* 允许换行 */
                 word-wrap: break-word; /* 长单词换行 */
                 line-height: 1.2;
+
+                &.advanced-features {
+                    background-color: var(--uosai-color-tip-bg-qt6);
+                }
             }
 
             .top-stop {
@@ -3600,9 +3612,10 @@ const handlePaste = async (event) => {
 
         .top-returnBtnOut {
             position: absolute;
-            left: 98%;
-            transform: translateX(-50%);
-            top: -50px;
+            // left: calc(98% - 10px);
+            // transform: translateX(-50%);
+            top: -57px;
+            right: 0px;
             cursor: pointer;
             z-index: 999;
 
@@ -3612,7 +3625,7 @@ const handlePaste = async (event) => {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transform: translateX(-50%);
+                // transform: translateX(-50%);
                 // border: 1px solid rgba(0, 0, 0, 0.05);
                 box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
                 background-color: var(--uosai-color-tip-bg);

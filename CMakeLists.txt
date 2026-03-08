@@ -72,32 +72,60 @@ if (NOT ${BUILD_OS_VERSION} MATCHES "25")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fstack-protector-all -fPIC")
     set(CMAKE_EXE_LINKER_FLAGS  "-z relro -z now -z noexecstack -pie")
     message("20 applying security hardening options")
+else()
+    set(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} -pie")
 endif()
-
-# GXDE 的会比较特殊
 
 # 系统判断
+if (${BUILD_OS_VERSION} MATCHES "25")
+    message("COMPILE ON v25")
 
-message("COMPILE ON GXDE ${BUILD_OS_VERSION}")
+    set(COMPILE_ON_V25 TRUE)
+    add_definitions(-DCOMPILE_ON_V25)
 
-#set(COMPILE_ON_V25 TRUE)
-#add_definitions(-DCOMPILE_ON_V25)
+    add_definitions(-DCOMPILE_ON_V23)
+    set(COMPILE_ON_V23 TRUE)
 
-add_definitions(-DCOMPILE_ON_V23)
-set(COMPILE_ON_V23 TRUE)
+    set(ENABLE_AI_BAR ON)
 
-#先默认打开ppt助手
-#set(ENABLE_MODEL_PPT ON)
-#set(ENABLE_MODEL_POSTER ON)
-#set(ENABLE_AI_BAR ON)  # GXDE 不支持 deepin shell
+    if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
+        set(ENABLE_ASSISTANT OFF)
+        set(ENABLE_MCP OFF)
+#    else()
+#        set(ENABLE_MODEL_RPA ON)
+    endif()
+    message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
+elseif (${BUILD_OS_VERSION} MATCHES "23")
+    add_definitions(-DCOMPILE_ON_V23)
+    set(COMPILE_ON_V23 TRUE)
+    message("COMPILE ON v23")
 
-if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
-    set(ENABLE_ASSISTANT OFF)
-    set(ENABLE_MCP OFF)
-#else()
-#    set(ENABLE_MODEL_RPA ON)
+#    set(ENABLE_MODEL_PPT ON)
+#    set(ENABLE_MODEL_POSTER ON)
+
+    if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
+        set(ENABLE_ASSISTANT OFF)
+        set(ENABLE_MCP OFF)
+#    else()
+#        set(ENABLE_MODEL_RPA ON)
+    endif()
+    message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
+else()
+    add_definitions(-DCOMPILE_ON_V20)
+    set(COMPILE_ON_V20 TRUE)
+    message("COMPILE ON v20")
+
+    if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
+        set(ENABLE_ASSISTANT OFF)
+        set(ENABLE_MCP OFF)
+#    else()
+#        set(ENABLE_MODEL_RPA ON)
+    endif()
+    if (${CMAKE_SYSTEM_PROCESSOR} MATCHES "sw_64")
+        set(COMPILE_ON_SW_20 TRUE)
+    endif()
+    message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
 endif()
-message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
 
 # Debug Or Release
 if (CMAKE_BUILD_TYPE MATCHES Debug)

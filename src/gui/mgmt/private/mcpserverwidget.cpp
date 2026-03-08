@@ -74,6 +74,7 @@ void McpServerWidget::changeInstallStatus()
     if (m_isInstalled) {
         if (!m_pServersListWidget) {
             m_pServersListWidget = new McpServerListWidget(this);
+            connect(this, &McpServerWidget::sigThirdPartyMcpAgree, m_pServersListWidget, &McpServerListWidget::refreshAllItemsCheckState);
             m_mainLayout->addWidget(m_pServersListWidget);
         }
 

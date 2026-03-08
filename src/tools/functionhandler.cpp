@@ -202,9 +202,9 @@ QJsonObject FunctionHandler::instFuncProcess(QJsonObject func, QString *directRe
 
     QJsonObject resArguments;
     if (execResult) {
-        resArguments["description"] = QCoreApplication::translate("ChatSeesion", "Started successfully");
+        resArguments["description"] = QCoreApplication::translate("ChatSeesion", "The command was executed successfully.");
     } else {
-        resArguments["description"] = QCoreApplication::translate("ChatSeesion", "Startup failed");
+        resArguments["description"] = QCoreApplication::translate("ChatSeesion", "Command execution failed.");
     }
 
     if (!outputString.isEmpty()) {

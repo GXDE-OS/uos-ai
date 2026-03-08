@@ -332,14 +332,9 @@ void EAiProxy::rateAnwser(const int questionIdx, const int answerIdx, int rate, 
     EAiExec()->rateAnwser(questionIdx, answerIdx, rate, extJson);
 }
 
-void EAiProxy::setTitleBarMaskStatus(bool status)
+void EAiProxy::setTitleBarStatus(bool status)
 {
-    EAiExec()->setTitleBarMaskStatus(status);
-}
-
-void EAiProxy::setTitleBarMaskBgColorAndShow(int r, int g, int b, int a)
-{
-    EAiExec()->setTitleBarMaskBgColorAndShow(r, g, b, a);
+    EAiExec()->setTitleBarStatus(status);
 }
 
 bool EAiProxy::showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete ,bool isAllConvDelete)

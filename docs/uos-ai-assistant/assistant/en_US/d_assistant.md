@@ -19,7 +19,7 @@ The personal knowledge base allows users to add their own materials to the [Pers
 
 **AI FollowAlong**
 
-You can activate the AI FollowAlong on any screen of Tongxin UOS (including most third-party applications) by selecting words or paragraphs. The AI FollowAlong offers features like AI search, AI explanation, AI summarization, AI translation, as well as continuation, expansion, error correction, and polishing.
+You can activate the AI FollowAlong on any screen of the system (including most third-party applications) by selecting words or paragraphs. The AI FollowAlong offers features like AI search, AI explanation, AI summarization, AI translation, as well as continuation, expansion, error correction, and polishing.
 
 ## Quick Start
 ### Understanding the Interface
@@ -98,12 +98,12 @@ Note: System control and AI image generation rely on specific models and do not 
 ![Image](fig/2.1.png)
 
 
-### UOS Play Assistant
+### Deepin Play Assistant
 
-This assistant includes the user manual and solutions for UOS systems and related applications. It can help you answer questions about UOS systems and related applications.  
-It will be your 7x24h customer service. Any questions about UOS systems and applications can be consulted with it.
+This assistant includes the user manual and solutions for deepin systems and related applications. It can help you answer questions about deepin systems and related applications.  
+It will be your 7x24h customer service. Any questions about deepin systems and applications can be consulted with it.
 
-![Image](fig/2.2.png)
+![Image](fig/d_2.2.png)
 
 
 ### Personal Knowledge Assistant

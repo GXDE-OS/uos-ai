@@ -171,21 +171,38 @@ body #drop-mask {
 	padding-right: 0px;
 }
 
+/* 这两个是内层的元素，需要设置为0，否则会遮挡住外部滚动条 */
 .scrollbar__thumb {
-	background-color: var(--uosai-color-scroll-bg) !important;
-	border: 1px solid var(--uosai-color-border);
-	border-radius: 4px !important;
+    opacity: 0 !important;
 }
-.scrollbar__thumb:hover  {
-	background-color: var(--uosai-color-scroll-bg-hover) !important;
-	border: 1px solid var(--uosai-color-border);
-	border-radius: 4px !important;
+
+.scrollbar__thumb--vertical {
+    opacity: 0 !important;
 }
-.scrollbar__thumb--vertical{
-	transition: none!important;
+
+/* 外层滚动条，滚动条由此生效 */
+.scrollbar__thumbPlaceholder--vertical {
+    background-color: var(--uosai-color-scroll-bg) !important;
+    border:1px solid var(--uosai-color-scroll-border) !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+	box-shadow: var(--globalScrollbar-boxShadow) !important;
 }
-.scrollbar__thumbPlaceholder--autoExpand:hover>.scrollbar__thumb--vertical{
-	background-color: var(--uosai-color-scroll-bg-hover);
+
+.scrollbar__thumbPlaceholder--vertical:hover {
+    background-color: var(--uosai-color-scroll-bg-hover) !important;
+    border: 1px solid var(--uosai-color-scroll-border) !important;
+    border-radius: 4px !important;
+    overflow: hidden;
+    box-shadow: var(--globalScrollbar-boxShadow) !important;
+}
+
+.scrollbar__thumbPlaceholder--vertical:active {
+    background-color: var(--uosai-color-scroll-bg-press) !important;
+    border: 1px solid var(--uosai-color-scroll-border) !important;
+    border-radius: 4px !important;
+    overflow: hidden;
+    box-shadow: var(--globalScrollbar-boxShadow) !important;
 }
 
 img {

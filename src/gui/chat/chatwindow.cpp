@@ -12,6 +12,7 @@
 #include "ddedockobject.h"
 #include "tables/configtable.h"
 #include "util.h"
+#include "global_define.h"
 #ifdef COMPILE_ON_V25
 #include "dlayershellwindow.h"
 #include <ddeshellwayland.h>
@@ -77,8 +78,6 @@ ChatWindow::ChatWindow(QWidget *parent)
     : DMainWindow(parent)
     , m_webView(new ESingleWebView(this))
 {
-    m_mask = new EMaskWidget(this);
-
     m_wWindowFlags = windowFlags();
     // BUG-322453：为解决遮挡问题，将Qt::Tool换为Qt::Dialog，保持与mgmt相同
     m_sWindowFlags = Qt::Dialog | Qt::MSWindowsFixedSizeDialogHint;
@@ -217,7 +216,7 @@ void ChatWindow::initTitlebar()
         m_sidebarModeAction->setChecked(true);
     }
 
-    titlebar()->setIcon(QIcon::fromTheme("uos-ai-assistant")); //relate to setWindowIconVisible
+    titlebar()->setIcon(QIcon::fromTheme(kApplicationIconName)); //relate to setWindowIconVisible
     titlebar()->setMenu(titleMenu);
     titlebar()->setSwitchThemeMenuVisible(false);
     titlebar()->setQuitMenuVisible(false);
@@ -319,10 +318,7 @@ void ChatWindow::setX(int x)
 
 void ChatWindow::activeShowWindow()
 {
-    int changeTime = 0;
-#ifdef Q_PROCESSOR_ARM
-    changeTime = 100;
-#endif
+    int changeTime = 100;
 #ifdef Q_PROCESSOR_LOONGARCH_64
     changeTime = 500;
 #endif
@@ -423,7 +419,6 @@ void ChatWindow::checkForUpdateLogs()
 void ChatWindow::onModalStateChanged(bool modal)
 {
     qCInfo(logAIGUI) << "Modal state changed:" << modal;
-    m_modalState = modal;
     updateSystemTheme();
 
     m_webView->setModalState(modal);
@@ -719,34 +714,9 @@ void ChatWindow::addKnowledgeBase(const QStringList &knowledgeBasefile)
     }
 }
 
-void ChatWindow::setTitleBarMaskStatus(bool status)
+void ChatWindow::setTitleBarStatus(bool status)
 {
-    m_modalState = status;
-    DGuiApplicationHelper::ColorType themeType = DGuiApplicationHelper::instance()->themeType();
-    if (themeType == DGuiApplicationHelper::DarkType) {
-        if (m_modalState){
-            m_mask->setBackGroundColor(QColor(0, 0, 0, 153));
-            m_mask->resize(titlebar()->size());
-            m_mask->show();
-        }else {
-            m_mask->hide();
-        }
-    } else {
-        if (m_modalState){
-            m_mask->setBackGroundColor(QColor(255, 255, 255, 179));
-            m_mask->resize(titlebar()->size());
-            m_mask->show();
-        }else {
-            m_mask->hide();
-        }
-    }
-}
-
-void ChatWindow::setTitleBarMaskBgColorAndShow(int r, int g, int b, int a)
-{
-    m_mask->setBackGroundColor(QColor(r, g, b, a));
-    m_mask->resize(titlebar()->size());
-    m_mask->show();
+    titlebar()->setDisabled(status);
 }
 
 bool ChatWindow::showWarningDialog(const QString assistantId, const QString conversationId,  const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete)
@@ -775,7 +745,7 @@ bool ChatWindow::showWarningDialog(const QString assistantId, const QString conv
     {
         if(isLlmDelete){
             emit EAiExec()->sigHideHistoryList();
-            setTitleBarMaskStatus(false);
+            setTitleBarStatus(false);
         }
         return false;
     }
@@ -784,7 +754,7 @@ bool ChatWindow::showWarningDialog(const QString assistantId, const QString conv
     {
         if(isLlmDelete){
             emit EAiExec()->sigHideHistoryList();
-            setTitleBarMaskStatus(false);
+            setTitleBarStatus(false);
         }
         return false;
     }
@@ -841,7 +811,7 @@ void ChatWindow::startScreenshot()
 }
 
 bool ChatWindow::getThirdPartyMcpAgreement()
-{   
+{
     //先查询数据库，没同意就弹窗
     if(DbWrapper::localDbWrapper().getThirdPartyMcpAgreement()){
         qCDebug(logAIGUI) << "The tripartite MCP server agreement is now agreed upon." ;
@@ -850,8 +820,13 @@ bool ChatWindow::getThirdPartyMcpAgreement()
 
     ECheckAgreementDialog dlg;
     dlg.exec();
+    bool agreed = DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
 
-    return DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
+    if (agreed) {
+        emit sigThirdPartyMcpAgree();
+    }
+
+    return agreed;
 }
 
 void ChatWindow::setNeedShowLLMConfigWindow(bool isNeedShowLLMConfigWindow)
@@ -933,7 +908,20 @@ bool ChatWindow::showLostFileWarningDlg(const QString lostFileList)
             QByteArray imageData = QByteArray::fromBase64(imgBase64.toUtf8());
             QPixmap pixmap;
             if (pixmap.loadFromData(imageData)) {
-                iconLabel->setPixmap(pixmap.scaled(16, 16, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+                // 获取设备像素比
+                qreal devicePixelRatio = qApp->devicePixelRatio();
+                
+                // 计算缩放后的尺寸，考虑设备像素比
+                int scaledSize = static_cast<int>(16 * devicePixelRatio);
+                
+                // 先对pixmap进行缩放
+                QPixmap scaledPixmap = pixmap.scaled(scaledSize, scaledSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+                
+                // 设置缩放系数
+                scaledPixmap.setDevicePixelRatio(devicePixelRatio);
+                
+                // 设置到label中
+                iconLabel->setPixmap(scaledPixmap);
             } else {
                 // No valid image data, keep as empty placeholder
                 qCWarning(logAIGUI) << "Failed to load image from base64 data from file:" << fileNameText;
@@ -1359,16 +1347,6 @@ void ChatWindow::updateSystemTheme()
         }
 
         pa.setColor(QPalette::Base, m_backgroundColor);
-
-        if (m_modalState){
-//            pa.setColor(QPalette::Base, QColor(0, 0, 0, 102));
-            m_mask->setBackGroundColor(QColor(0, 0, 0, 153));
-            m_mask->resize(titlebar()->size());
-//            m_mask->move(this->pos());
-            m_mask->show();
-        }else {
-            m_mask->hide();
-        }
     } else {
         m_backgroundColor = QColor(248, 248, 248, alpha);
 
@@ -1377,16 +1355,6 @@ void ChatWindow::updateSystemTheme()
         }
 
         pa.setColor(QPalette::Base, m_backgroundColor);
-
-        if (m_modalState){
-//            pa.setColor(QPalette::Base, QColor(255, 255, 255, 102));
-            m_mask->setBackGroundColor(QColor(255, 255, 255, 179));
-            m_mask->resize(titlebar()->size());
-//            m_mask->move(this->pos());
-            m_mask->show();
-        }else {
-            m_mask->hide();
-        }
     }
 
     QString backgroundColor = QString("rgba(%1, %2, %3, %4)")
@@ -1653,14 +1621,14 @@ void ChatWindow::setWindowIconVisible(bool visible)
     if (btn && btn->accessibleName() == "DTitlebarIconLabel") {
         qCDebug(logAIGUI) << "found DTitlebar icon btn.";
         if (visible)
-            btn->setIcon(QIcon::fromTheme("uos-ai-assistant"));
+            btn->setIcon(QIcon::fromTheme(kApplicationIconName));
         else
             btn->setIcon(QIcon());
         return;
     }
 
     if (visible)
-        titlebar()->setIcon(QIcon::fromTheme("uos-ai-assistant"));
+        titlebar()->setIcon(QIcon::fromTheme(kApplicationIconName));
     else
         titlebar()->setIcon(QIcon());
 }

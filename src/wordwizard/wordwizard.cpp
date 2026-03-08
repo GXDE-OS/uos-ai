@@ -654,6 +654,7 @@ void WordWizard::onFunctionTriggered(int wizardtype, const QPoint &cursorPos, bo
             QString locateTitle(tr("UOS AI FollowAlong"));
             emit sigToLaunchMgmt(false, false, false, locateTitle);
             m_selectwid->close();
+            m_inputWindow->close();
             m_selectwid->setWidgetVisible(false);
         } else if (wizardtype == WIZARD_TYPE_SEARCH) {
             if(onSearchBtnClicked(m_selectclip->getClipText())) {

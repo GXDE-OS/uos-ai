@@ -135,6 +135,8 @@ void WizardWrapper::initUI()
     m_settingLabel->setTextFormat(Qt::RichText);
     m_settingLabel->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);
     m_settingLabel->setFixedHeight(34);
+    if (ESystemContext::isWayland())
+        m_settingLabel->installEventFilter(this);
     DFontSizeManager::instance()->bind(m_settingLabel, DFontSizeManager::T9, QFont::Normal);
 
     QWidget *m_settingWidget = new QWidget(this);
@@ -204,7 +206,7 @@ bool WizardWrapper::eventFilter(QObject *watched, QEvent *event)
                 expandWrapper();
             });
         }
-    } else if (event->type() == QEvent::Leave && watched != m_iconBtn && watched != m_inputArea) {
+    } else if (event->type() == QEvent::Leave && watched != m_iconBtn && watched != m_inputArea && watched != m_settingLabel) {
         m_mouseInside = false;
     }
 

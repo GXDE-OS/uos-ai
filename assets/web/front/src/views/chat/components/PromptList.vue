@@ -3,8 +3,8 @@
         v-show="showPropmptList">
         <div class="top">
             <div style="margin-left: 12px;align-items: center;display: flex;">
-                <div  class="icon">
-                    <SvgIcon icon="prompt" style="width: 16px; height: 16px;"/>
+                <div  class="prompt-icon">
+                    <SvgIcon icon="prompt"/>
                 </div>
                 <span style="margin-left: 8px" class="instruction">{{ store.loadTranslations['Instruction'] }}</span>
             </div>
@@ -176,7 +176,23 @@ defineExpose({highlightPrevious, highlightNext, handleEnterKeyDown,highlightedIn
         margin-left: 6px;
         justify-content: space-between;
 
+        .prompt-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            // margin-top: 2px;
+
+            svg{
+                fill: var(--uosai-color-prompt-icon);
+                width: 20px;
+                height: 20px;
+            }
+        }
+
         .instruction{
+            line-height: 1.2;
             color: var(--uosai-color-assistantmenu-name);
         }
 

@@ -85,9 +85,40 @@ const updatePosition = async () => {
     }
     
     if (targetElement) {
+        // 获取目标元素相对于视口的位置
         const targetRect = targetElement.getBoundingClientRect();
+        
+        // 查找目标元素的定位父元素
+        let targetPositionedParent = targetElement;
+        while (targetPositionedParent && targetPositionedParent !== document.body) {
+            const style = window.getComputedStyle(targetPositionedParent);
+            if (style.position !== 'static') {
+                break;
+            }
+            targetPositionedParent = targetPositionedParent.parentElement;
+        }
+        
+        // 查找McpSetting组件的定位父元素（通常是body或最近的positioned元素）
+        let componentPositionedParent = document.body;
+        let currentElement = targetElement;
+        while (currentElement && currentElement !== document.body) {
+            const style = window.getComputedStyle(currentElement);
+            if (style.position !== 'static') {
+                componentPositionedParent = currentElement;
+                break;
+            }
+            currentElement = currentElement.parentElement;
+        }
+        
+        // 获取两个定位父元素相对于视口的位置
+        const targetParentRect = targetPositionedParent.getBoundingClientRect();
+        const componentParentRect = componentPositionedParent.getBoundingClientRect();
+        
+        // 计算坐标换算：目标元素相对于其定位父元素的位置 + 两个定位父元素之间的偏移
+        const leftPosition = (targetRect.left - targetParentRect.left) + (targetParentRect.left - componentParentRect.left);
+        
         conversionModeStyle.value = {
-            left: targetRect.left - 10 + 'px'
+            left: leftPosition - 10 + 'px'
         };
     } else {
         console.log("未找到target元素");
@@ -102,6 +133,16 @@ watch(() => props.show, (newVal) => {
     if (newVal) {
         updatePosition();
     }
+});
+
+// 监听窗口大小变化，重新计算位置
+onMounted(() => {
+    window.addEventListener('resize', updatePosition);
+});
+
+// 组件卸载时移除事件监听器
+onUnmounted(() => {
+    window.removeEventListener('resize', updatePosition);
 });
 </script>
 

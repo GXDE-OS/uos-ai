@@ -81,6 +81,7 @@ signals:
     void signalWordWizardStatusChanged(bool isHidden);
     void sigSetRedPointVisible(bool);
     void signalDisabledAppsUpdated(const QStringList &appList);
+    void sigThirdPartyMcpAgree();
 
 private:
     QMap<QString, DWidget *> titles = {};

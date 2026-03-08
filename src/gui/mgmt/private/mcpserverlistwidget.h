@@ -46,7 +46,8 @@ public Q_SLOTS:
     void onAddServerClicked();
     void onEditServerClicked(const QString &name);
     void removeCustomMcpServer(const QString &name);
-    void onFontChanged();
+    void onFontChanged();    
+    void refreshAllItemsCheckState();
 
 private:
     void initUI();

@@ -106,8 +106,7 @@ public:
     void appendAskQuestion(int assistantType);
     void addKnowledgeBase(const QStringList &knowledgeBasefile);
 
-    void setTitleBarMaskStatus(bool status);
-    void setTitleBarMaskBgColorAndShow(int r, int g, int b, int a);
+    void setTitleBarStatus(bool status);
 
     bool showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete);
     bool showRmMcpServerDlg(const QString &name);
@@ -177,6 +176,7 @@ signals:
     void sigToLaunchChat(int);
     void sigToLaunchAbout();
     void sigToAddKnowledgeBase(const QStringList &knowledgeBasefile);
+    void sigThirdPartyMcpAgree();
 
 private:
     ESingleWebView *m_webView = nullptr;
@@ -219,13 +219,10 @@ private:
     double m_minAlpha = 0.6;
 
     QColor m_backgroundColor;
-    bool m_modalState = false;
 
     // chat init async task
     using AiTask = QPair<int, QVariantList>;
     QList<AiTask> m_pendingTasks;
-
-    EMaskWidget * m_mask;
 
     mutable std::once_flag m_shortcutUpdateDialogOnceFlag;
 

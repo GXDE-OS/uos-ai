@@ -19,7 +19,7 @@ The personal knowledge base allows users to add their own materials to the [Pers
 
 **AI FollowAlong**
 
-You can activate the AI FollowAlong on any screen of Tongxin UOS (including most third-party applications) by selecting words or paragraphs. The AI FollowAlong offers features like AI search, AI explanation, AI summarization, AI translation, as well as continuation, expansion, error correction, and polishing.
+You can activate the AI FollowAlong on any screen of the system (including most third-party applications) by selecting words or paragraphs. The AI FollowAlong offers features like AI search, AI explanation, AI summarization, AI translation, as well as continuation, expansion, error correction, and polishing.
 
 ## Quick Start
 ### Understanding the Interface

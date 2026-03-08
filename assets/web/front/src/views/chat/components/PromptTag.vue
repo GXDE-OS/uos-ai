@@ -1,16 +1,24 @@
 <template>
-    <pre class="prompt-tag"><span class="prompt-tag-text" :class="{'mcp-tag': isMcpTag}" style="text-align: center;line-height: 1.2;"
-        :style="{'padding-top': isMcpTag ? '2px' : '0', 'padding-bottom': isMcpTag ? '3px' : '0', 'padding-left': isMcpTag ? '5px' : '10px', 'padding-right': isMcpTag ? '5px' : '10px'}">{{ promptTag }}</span></pre>
+    <pre class="prompt-tag"><span class="prompt-tag-text" :class="{'mcp-tag': isMcpTag}" style="text-align: center;"
+        :style="{'line-height': dynamicLineHeight, 'padding-top': isMcpTag ? '2px' : '0', 'padding-bottom': isMcpTag ? '3px' : '0', 'padding-left': isMcpTag ? '5px' : '10px', 'padding-right': isMcpTag ? '5px' : '10px'}">{{ promptTag }}</span></pre>
 </template>
 
 <script setup>
-import { ref, watchEffect } from "vue";
+import { ref, computed, onMounted } from "vue";
 import { useGlobalStore } from "@/store/global";
 import _, { compact } from "lodash";
 const { chatQWeb, updateActivityColor, updateTheme, updateFont } = useGlobalStore()
 
+// 获取系统缩放比
+const deviceScale = ref(1)
+
 const promptTag = computed ( () => {
     return props.promptTag
+})
+
+// 计算动态行高
+const dynamicLineHeight = computed(() => {
+    return deviceScale.value > 1 ? 1.0 : 1.2
 })
 
 const props = defineProps({
@@ -23,7 +31,20 @@ const props = defineProps({
         default: ''
     }
 })
+
 const emit = defineEmits([''])
+
+// 获取系统缩放比
+const getDeviceScale = () => {
+    if (window.devicePixelRatio) {
+        deviceScale.value = window.devicePixelRatio
+    }
+}
+
+onMounted(() => {
+    getDeviceScale()
+})
+
 defineExpose({})
 </script>
 

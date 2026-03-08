@@ -1,6 +1,7 @@
 #include "mcpserverlistwidget.h"
 #include "mcpserverlistitem.h"
 #include "custommcpservereditor.h"
+#include "dconfigmanager.h"
 #include "dbwrapper.h"
 #include "../common/echeckagreementdialog.h"
 #include "global_define.h"
@@ -39,6 +40,8 @@ void McpFilterComboBox::showPopup()
             if (index >= 0 && index < count())
                 setCurrentIndex(index);
         });
+        // 连接菜单隐藏信号，用于更新组合框状态
+        connect(m_pMenu, &DMenu::aboutToHide, this, static_cast<void (QWidget::*)()>(&QWidget::update));
     }
 
     for (auto action : m_pMenu->actions()) {
@@ -310,6 +313,7 @@ DBackgroundGroup *McpServerListWidget::creatServerItem(const QJsonValue &info)
     // 连接信号槽
     connect(listItem, &McpServerListItem::signalEdit, this, &McpServerListWidget::onEditServerClicked);
     connect(listItem, &McpServerListItem::signalDelete, this, &McpServerListWidget::removeCustomMcpServer);
+    connect(listItem, &McpServerListItem::signalAgreementAccepted, this, &McpServerListWidget::refreshAllItemsCheckState);
 
     return backgroundGroup;
 }
@@ -338,7 +342,12 @@ bool McpServerListWidget::getThirdPartyMcpAgreement()
     ECheckAgreementDialog dlg;
     dlg.exec();
 
-    return DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
+    bool agreed = DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
+    if (agreed) {
+        // 同意协议时，刷新所有McpServerListItem的check状态
+        refreshAllItemsCheckState();
+    }
+    return agreed;
 }
 
 void McpServerListWidget::updateFilterWidth()
@@ -372,4 +381,37 @@ void McpServerListWidget::showItemsByFilter()
     // 自定义三方服务器显示
     for (auto item : m_customItem)
         item->setVisible(!m_customItem.isEmpty() && m_currentFilter != 1);
+}
+
+void McpServerListWidget::refreshAllItemsCheckState()
+{
+    // 获取当前启用的MCP服务器列表
+    auto enabledList = DConfigManager::instance()->value(MCP_GROUP, MCP_ENABLED_LIST).toStringList();
+
+    // 刷新所有内置服务器项的check状态
+    for (auto it = m_builtInItem.begin(); it != m_builtInItem.end(); ++it) {
+        DBackgroundGroup *bgGroup = it.value();
+        McpServerListItem *listItem = qobject_cast<McpServerListItem*>(bgGroup->layout()->itemAt(0)->widget());
+        if (listItem) {
+            listItem->setSwitchChecked(enabledList.contains(it.key()));
+        }
+    }
+
+    // 刷新所有内置三方服务器项的check状态
+    for (auto it = m_thirdBuiltInItem.begin(); it != m_thirdBuiltInItem.end(); ++it) {
+        DBackgroundGroup *bgGroup = it.value();
+        McpServerListItem *listItem = qobject_cast<McpServerListItem*>(bgGroup->layout()->itemAt(0)->widget());
+        if (listItem) {
+            listItem->setSwitchChecked(enabledList.contains(it.key()));
+        }
+    }
+
+    // 刷新所有自定义服务器项的check状态
+    for (auto it = m_customItem.begin(); it != m_customItem.end(); ++it) {
+        DBackgroundGroup *bgGroup = it.value();
+        McpServerListItem *listItem = qobject_cast<McpServerListItem*>(bgGroup->layout()->itemAt(0)->widget());
+        if (listItem) {
+            listItem->setSwitchChecked(enabledList.contains(it.key()));
+        }
+    }
 }

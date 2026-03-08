@@ -135,6 +135,8 @@ void InputWindow::initUI()
     m_settingLabel->setTextFormat(Qt::RichText);
     m_settingLabel->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);
     m_settingLabel->setFixedHeight(34);
+    if (ESystemContext::isWayland())
+        m_settingLabel->installEventFilter(this);
     DFontSizeManager::instance()->bind(m_settingLabel, DFontSizeManager::T9, QFont::Normal);
 
     QWidget *m_settingWidget = new QWidget(this);
@@ -215,7 +217,7 @@ bool InputWindow::eventFilter(QObject *watched, QEvent *event)
     // 显示工具栏逻辑
     if (event->type() == QEvent::Enter) {
         m_mouseInside = true;
-    } else if (event->type() == QEvent::Leave && watched != m_closeBtn && watched != m_sendBtn && watched != m_inputEdit) {
+    } else if (event->type() == QEvent::Leave && watched != m_closeBtn && watched != m_sendBtn && watched != m_inputEdit && watched != m_settingLabel) {
         m_mouseInside = false;
     }
 

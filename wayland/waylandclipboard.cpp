@@ -70,7 +70,8 @@ void WaylandClipboard::setupRegistry(Registry *registry)
                 return;
             }
 
-            qCDebug(logWayland) << "Available MIME types:" << m_copyControlOffer->offeredMimeTypes();
+            QStringList mimeTypes = m_copyControlOffer->offeredMimeTypes();
+            qCDebug(logWayland) << "==============Available MIME types:" << mimeTypes;
             clipText.clear();
 
             int pipeFds[2];
@@ -79,8 +80,10 @@ void WaylandClipboard::setupRegistry(Registry *registry)
                 return;
             }
 
-            //根据mime类取数据，"text/plain" 是你需要的类型。
-            m_copyControlOffer->receive("text/plain", pipeFds[1]);
+            QString mime = "text/plain";
+            if (mimeTypes.contains("text/plain;charset=utf-8"))
+                mime = "text/plain;charset=utf-8";
+            m_copyControlOffer->receive(mime, pipeFds[1]);
             close(pipeFds[1]);
 
             QThreadPool *pool = QThreadPool::globalInstance();
@@ -98,7 +101,7 @@ void WaylandClipboard::setupRegistry(Registry *registry)
                     clipText = QString(readPipe.readAll());
                     qCDebug(logWayland) << "Retrieved clipboard text, length:" << clipText.length();
                     emit selectWords();
-//                    qWarning() << "Pasted: " << clipText << clipText.length();
+                    //qWarning() << "Pasted: " << clipText << clipText.length();
                 }
                 close(pipeFds[0]);
             });

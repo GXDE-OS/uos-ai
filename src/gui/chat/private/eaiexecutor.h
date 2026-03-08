@@ -190,8 +190,7 @@ public:
 
     void rateAnwser(const int questionIdx, const int answerIdx, int rate, const QString &extJson);
 
-    void setTitleBarMaskStatus(bool status);
-    void setTitleBarMaskBgColorAndShow(int r, int g, int b, int a);
+    void setTitleBarStatus(bool status);
 
     bool showWarningDialog(const QString assistantId , const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete);
     bool showRmMcpServerDlg(const QString &name);

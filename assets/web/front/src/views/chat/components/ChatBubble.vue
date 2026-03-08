@@ -1,7 +1,7 @@
 <template>
     <div class="chat-bubble" v-if="item">
         <!-- 用户侧气泡 -->
-        <div :class="`question item`" v-show="showQuestion" :style="{ minWidth: 'auto'}">
+        <div :class="`question item`" v-show="showQuestion" :style="{'min-width': 'auto', 'margin-top' : props.historyIndex === 0 ? '15px' : '0'}">
             <pre><PromptTag v-show="showPromptTag" class="prompt-tag"
                 :promptTag="promptTag" 
                 />{{ questionDisplayContent }}</pre>             

@@ -21,7 +21,7 @@
                 <el-tooltip  popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                         :show-after="1000" :offset="2" :content="store.loadTranslations['copy']">
                     <div class="tool-copy" v-show="toolUseItem.status != store.ToolUseStatus.Calling && toolUseItem.status != store.ToolUseStatus.Canceled" >
-                        <SvgIcon icon="copy-bubble" @click.stop="copyToolUseItem(toolUseItem)" />
+                        <SvgIcon icon="tool-use-copy" @click.stop="copyToolUseItem(toolUseItem)" />
                     </div>
                 </el-tooltip>
             </div>
@@ -258,8 +258,8 @@ const formatParams = (params) => {
 
                 svg {
                     fill: var(--uosai-color-clear);
-                    width: 13.1px;
-                    height: 13.1px;
+                    width: 16px;
+                    height: 16px;
                     cursor: pointer;
 
                     &:not(.disabled):hover {

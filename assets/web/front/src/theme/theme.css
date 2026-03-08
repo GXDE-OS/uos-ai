@@ -94,10 +94,11 @@ html {
     --uosai-border-color-retry: #E0E0E0;
     --uosai-color-retry-text: rgba(0, 0, 0, 0.7);
     /* scroll */
-    --uosai-color-scroll-bg: rgba(0,0,0,0.2);
-    --uosai-color-scroll-bg-hover: rgba(0,0,0,0.35);
-    
-    --uosai-color-scroll-bg-press: rgba(0,0,0,0.45);
+    --uosai-color-scroll-bg: rgba(83, 96, 118, 0.4);
+    --uosai-color-scroll-bg-hover: rgba(83, 96, 118, 0.5);
+    --uosai-color-scroll-bg-press: rgba(83, 96, 118, 0.6);
+    --uosai-color-scroll-border: rgba(0,0,0,0.05);
+
     --uosai-color-border:  rgba(0,0,0,0.05);
 
     --uosai-bottom-tip-color: rgba(0, 0, 0, 0.4);
@@ -164,6 +165,8 @@ html {
     --uosai-chat-bg-qt6: rgba(255, 255, 255, 0.6);
     /* PromptList */
     --uosai-color-normal-bg-qt6: rgba(255, 255, 255, 0.4);
+    /* 提示信息背景 */
+    --uosai-color-tip-bg-qt6: rgba(247, 247, 247, 0.6);
 
 }
 
@@ -232,7 +235,7 @@ html.dark {
     --uosai-color-voicebtn-bg-active: rgba(255, 255, 255, 0.2);
     --uosai-color-voicebtn-bg-active-color: rgba(255, 255, 255, 1);
     /* ChatBubble */
-    --uosai-color-assistant-bg: #515151;
+    --uosai-color-assistant-bg: rgba(255, 255, 255, 0.15);
     --uosai-color-imgbubble-bg: rgba(0, 0, 0, 0.5);
     --uosai-color-imgbubble-hover: rgba(0, 0, 0, 0.6);
     --uosai-color-imgbubble-active: rgba(0, 0, 0, 0.7);
@@ -255,15 +258,17 @@ html.dark {
     --uosai-color-PreView-font:rgba(255, 255, 255, 0.5);
 
     /* retry */
-    --uosai-bg-retry: #474747;
-    --uosai-bg-retry-hover: #525252;
-    --uosai-bg-retry-active: #2e2e2e;
+    --uosai-bg-retry: rgba(255, 255, 255, 0.1);
+    --uosai-bg-retry-hover: rgba(255, 255, 255, 0.15);
+    --uosai-bg-retry-active: rgba(255, 255, 255, 0.2);
     --uosai-bg-retry-disable: #3b3b3b;
     --uosai-border-color-retry: #525252;
     --uosai-color-retry-text: rgba(255, 255, 255, 0.7);
     /* scroll */
-    --uosai-color-scroll-bg: rgba(255,255,255,0.9);
-    --uosai-color-scroll-bg-hover: rgba(255,255,255,0.6);
+    --uosai-color-scroll-bg: rgba(96, 96, 96, 0.7);
+    --uosai-color-scroll-bg-hover: rgba(96, 96, 96, 0.8);
+    --uosai-color-scroll-bg-press: rgba(112, 112, 112, 0.8);
+    --uosai-color-scroll-border: rgba(0,0,0,0.05);
 
     --uosai-color-border:  rgba(255,255,255,0.05);
 
@@ -333,5 +338,7 @@ html.dark {
     --uosai-chat-bg-qt6: rgba(25, 25, 25, 0.6);
     /* PromptList */
     --uosai-color-normal-bg-qt6: rgba(0, 0, 0, 0.4);
+    /* 提示信息背景 */
+    --uosai-color-tip-bg-qt6: rgba(42, 42, 42, 0.8);
 
 }

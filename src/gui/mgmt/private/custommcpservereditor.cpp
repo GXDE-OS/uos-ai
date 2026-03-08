@@ -74,7 +74,7 @@ void CustomMcpServerEditor::initUI()
     titleBar->setMenuVisible(false);
     titleBar->setBackgroundTransparent(true);
     titleBar->setFixedWidth(600);
-    titleBar->setIcon(QIcon(":/assets/images/uos-ai-assistant.svg"));
+    titleBar->setIcon(QIcon::fromTheme(kApplicationIconName));
 
     // 主布局
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -84,9 +84,7 @@ void CustomMcpServerEditor::initUI()
     // 标题
     m_titleLabel = new DLabel(tr("Add MCP Server"), this);
     m_titleLabel->setAlignment(Qt::AlignCenter);
-    auto titleLabelPa = m_titleLabel->palette();
-    titleLabelPa.setColor(QPalette::WindowText, titleLabelPa.color(QPalette::BrightText));
-    m_titleLabel->setPalette(titleLabelPa);
+    m_titleLabel->setForegroundRole(QPalette::BrightText);
     DFontSizeManager::instance()->bind(m_titleLabel, DFontSizeManager::T5, QFont::DemiBold);
     mainLayout->addWidget(m_titleLabel, Qt::AlignHCenter);
     

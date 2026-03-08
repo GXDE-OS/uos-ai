@@ -1,5 +1,6 @@
 #include "updatelogdialog.h"
 #include "utils/util.h"
+#include "global_define.h"
 
 #include <DFontSizeManager>
 #include <DTitlebar>
@@ -33,16 +34,13 @@ void UpdateLogDialog::initUI()
 {
     setFixedSize(700, 540);
     setDisplayPosition(DisplayPosition::Center);
-    setAttribute(Qt::WA_TranslucentBackground, true);
-    QIcon titleIcon(":/assets/images/uos-ai-assistant.svg");
+    QIcon titleIcon(QIcon::fromTheme(kApplicationIconName));
     setIcon(titleIcon);
 
     DLabel *titleLabel = new DLabel(tr("UOS AI Assistant Update Log"), this);
     titleLabel->setContentsMargins(0, 0, 0, 10);
     titleLabel->setAlignment(Qt::AlignCenter);
-    QPalette titleLabelPa = titleLabel->palette();
-    titleLabelPa.setColor(QPalette::WindowText, titleLabelPa.color(QPalette::BrightText));
-    titleLabel->setPalette(titleLabelPa);
+    titleLabel->setForegroundRole(QPalette::BrightText);
     DFontSizeManager::instance()->bind(titleLabel, DFontSizeManager::T6, QFont::DemiBold);
 
     addContent(titleLabel, Qt::AlignTop);
@@ -50,7 +48,6 @@ void UpdateLogDialog::initUI()
     m_contentWidget = new DWidget(this);
     m_contentWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
     m_contentWidget->setAutoFillBackground(false);
-    m_contentWidget->setAttribute(Qt::WA_TranslucentBackground, true);
 
     m_contentLayout = new QVBoxLayout;
     m_contentLayout->setContentsMargins(0, 0, 0, 0);
@@ -61,6 +58,11 @@ void UpdateLogDialog::initUI()
     m_scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     m_scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     m_scrollArea->setFrameShape(QFrame::NoFrame);
+
+    QPalette pal = m_scrollArea->palette();
+    pal.setColor(QPalette::Window, Qt::transparent);
+    m_scrollArea->setPalette(pal);
+    m_scrollArea->viewport()->setPalette(pal);
 
     // Add update logs
     for (const auto &version : m_updateLogs) {
@@ -155,9 +157,7 @@ QHBoxLayout* UpdateLogDialog::createVersionWidget(const UpdateLogVersion &versio
     DLabel *versionLabel = new DLabel(version.version);
     versionLabel->setContentsMargins(60, 8, 5, 8);
     versionLabel->setObjectName("VersionLabel");
-    QPalette versionLabelPa = versionLabel->palette();
-    versionLabelPa.setColor(QPalette::WindowText, versionLabelPa.color(QPalette::BrightText));
-    versionLabel->setPalette(versionLabelPa);
+    versionLabel->setForegroundRole(QPalette::BrightText);
     DFontSizeManager::instance()->bind(versionLabel, DFontSizeManager::T6, QFont::DemiBold);
 
     DLabel *dateLabel = new DLabel(version.date);

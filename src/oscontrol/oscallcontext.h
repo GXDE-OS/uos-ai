@@ -21,7 +21,6 @@ struct OSCallContext {
 
     OSCallContext() : error(CallError::NonError), errorInfo(""), output("") {}
 };
-
 inline constexpr char osCallDbusWmService[] = "com.deepin.wm";
 inline constexpr char osCallDbusWmPath[] = "/com/deepin/wm";
 inline constexpr char osCallDbusWmInterface[] = "com.deepin.wm";
@@ -29,10 +28,6 @@ inline constexpr char osCallDbusWmInterface[] = "com.deepin.wm";
 inline constexpr char osCallDbusBtService[] = "com.deepin.daemon.Bluetooth";
 inline constexpr char osCallDbusBtPath[] = "/com/deepin/daemon/Bluetooth";
 inline constexpr char osCallDbusBtInterface[] = "com.deepin.daemon.Bluetooth";
-
-inline constexpr char osCallDbusNetworkService[] = "com.deepin.daemon.Network";
-inline constexpr char osCallDbusNetworkPath[] = "/com/deepin/daemon/Network";
-inline constexpr char osCallDbusNetworkInterface[] = "com.deepin.daemon.Network";
 
 inline constexpr char osCallDbusPowerService[] = "com.deepin.system.Power";
 inline constexpr char osCallDbusPowerPath[] = "/com/deepin/system/Power";
@@ -46,6 +41,52 @@ inline constexpr char osCallDbusScreenshotService[] = "com.deepin.Screenshot";
 inline constexpr char osCallDbusScreenshotPath[] = "/com/deepin/Screenshot";
 inline constexpr char osCallDbusScreenshotInterface[] = "com.deepin.Screenshot";
 
+#ifdef COMPILE_ON_V23
+inline constexpr char osCallDbusDockService[] = "org.deepin.dde.Dock1";
+inline constexpr char osCallDbusDockPath[] = "/org/deepin/dde/Dock1";
+inline constexpr char osCallDbusDockInterface[] = "org.deepin.dde.daemon.Dock1";
+
+inline constexpr char osCallDbusAppearanceService[] = "org.deepin.dde.Appearance1";
+inline constexpr char osCallDbusAppearancePath[] = "/org/deepin/dde/Appearance1";
+inline constexpr char osCallDbusAppearanceInterface[] = "org.deepin.dde.Appearance1";
+
+inline constexpr char osCallDbusDisplayService[] = "org.deepin.dde.Display1";
+inline constexpr char osCallDbusDisplayPath[] = "/org/deepin/dde/Display1";
+inline constexpr char osCallDbusDisplayInterface[] = "org.deepin.dde.Display1";
+
+inline constexpr char osCallDbusCtrCenterService[] = "org.deepin.dde.ControlCenter1";
+inline constexpr char osCallDbusCtrCentertPath[] = "/org/deepin/dde/ControlCenter1";
+inline constexpr char osCallDbusCtrCenterInterface[] = "org.deepin.dde.ControlCenter1";
+
+inline constexpr char osCallDbusNotifyService[] = "org.deepin.dde.Notification1";
+inline constexpr char osCallDbusNotifyPath[] = "/org/deepin/dde/Notification1";
+inline constexpr char osCallDbusNotifyInterface[] = "org.deepin.dde.Notification1";
+// Launcher
+inline constexpr char deepinLancherService[] = "org.deepin.dde.Launcher1";
+inline constexpr char deepinLancherPath[] = "/org/deepin/dde/Launcher1";
+inline constexpr char deepinLancherInterface[] = "org.deepin.dde.Launcher1";
+
+inline constexpr char deepinStartManagerService[] = "org.desktopspec.ApplicationManager1";
+inline constexpr char deepinStartManagerPath[] = "/org/desktopspec/ApplicationManager1";
+inline constexpr char deepinStartManagerInterface[] = "org.desktopspec.ApplicationManager1.Application";
+inline constexpr char deepinNewAppManagerInterface[] = "org.desktopspec.ApplicationManager1";
+
+inline constexpr char deepinMimeService[] = "org.deepin.dde.Mime1";
+inline constexpr char deepinMimePath[] = "/org/deepin/dde/Mime1";
+inline constexpr char deepinMimeInterface[] = "org.deepin.dde.Mime1";
+
+inline constexpr char deepinNewMimeService[] = "org.desktopspec.ApplicationManager1";
+inline constexpr char deepinNewMimePath[] = "/org/desktopspec/ApplicationManager1/MimeManager1";
+inline constexpr char deepinNewMimeInterface[] = "org.desktopspec.MimeManager1";
+
+inline constexpr char osCallDbusAudioService[] = "org.deepin.dde.Audio1";
+inline constexpr char osCallDbusAudioPath[] = "/org/deepin/dde/Audio1";
+inline constexpr char osCallDbusAudioInterface[] = "org.deepin.dde.Audio1";
+
+inline constexpr char osCallDbusNetworkService[] = "org.deepin.dde.Network1";
+inline constexpr char osCallDbusNetworkPath[] = "/org/deepin/dde/Network1";
+inline constexpr char osCallDbusNetworkInterface[] = "org.deepin.dde.Network1";
+#else
 inline constexpr char osCallDbusDockService[] = "com.deepin.dde.daemon.Dock";
 inline constexpr char osCallDbusDockPath[] = "/com/deepin/dde/daemon/Dock";
 inline constexpr char osCallDbusDockInterface[] = "com.deepin.dde.daemon.Dock";
@@ -81,6 +122,11 @@ inline constexpr char deepinMimeInterface[] = "com.deepin.daemon.Mime";
 inline constexpr char osCallDbusAudioService[] = "com.deepin.daemon.Audio";
 inline constexpr char osCallDbusAudioPath[] = "/com/deepin/daemon/Audio";
 inline constexpr char osCallDbusAudioInterface[] = "com.deepin.daemon.Audio";
+
+inline constexpr char osCallDbusNetworkService[] = "com.deepin.daemon.Network";
+inline constexpr char osCallDbusNetworkPath[] = "/com/deepin/daemon/Network";
+inline constexpr char osCallDbusNetworkInterface[] = "com.deepin.daemon.Network";
+#endif
 
 UOSAI_END_NAMESPACE
 #endif // OSCALLCONTEXT_H

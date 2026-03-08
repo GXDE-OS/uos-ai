@@ -52,6 +52,8 @@ private:
     QTimer *m_timer = nullptr;
     int m_timerCount = 0;
     bool m_isInstalled = false;
+signals:
+    void sigThirdPartyMcpAgree();
 
 };
 }

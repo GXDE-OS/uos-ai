@@ -380,9 +380,9 @@ watch(() => props.isKnowledgeBaseExist, (newValue) => {
     align-items: center;
     padding: 0;
     margin-bottom: 20px;
-    width: calc(100% - 8px);
+    width: calc(100% - 4px);
     height: 100%;
-    max-width: 1000px;
+    max-width: 1004px;
     overflow: hidden;
     // background-color: aquamarine;
 

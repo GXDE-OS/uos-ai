@@ -46,6 +46,7 @@ void ECheckAgreementDialog::initUI()
 {
     setFixedWidth(380);
     setMinimumHeight(250);
+    this->setWindowFlags(this->windowFlags() | Qt::Tool | Qt::X11BypassWindowManagerHint | Qt::WindowStaysOnTopHint);
 
     //标题栏
     DTitlebar *titleBar = new DTitlebar(this);

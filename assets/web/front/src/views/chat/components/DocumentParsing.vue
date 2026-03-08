@@ -411,6 +411,7 @@ onBeforeUnmount(() => {
             right: 0; /* 将按钮右侧对齐到容器的右侧 */
             cursor: pointer; /* 鼠标悬停时显示指针 */
             transform: translate(50%, -50%); /* 使用transform将子div的中心点移动到右上角 */
+            padding: 3px; /* 添加2px的缓冲区域，防止误触 */
 
         }
     }
