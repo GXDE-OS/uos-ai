@@ -23,6 +23,26 @@ find_package(PkgConfig REQUIRED)
 
 add_definitions(-DENABLE_FREEACCOUNT)
 
+if (COMPILE_ON_V25)
+    # Standard installation paths
+    include(GNUInstallDirs)
+    # Macros
+    include(FeatureSummary)
+
+    qt_standard_project_setup(REQUIRES 6.8)
+
+    find_package(Qt6 REQUIRED COMPONENTS WaylandClient)
+    find_package(TreelandProtocols REQUIRED)
+    pkg_check_modules(WLR_PROTOCOLS REQUIRED IMPORTED_TARGET wlr-protocols)
+    pkg_get_variable(WLR_PROTOCOLS_DATADIR wlr-protocols pkgdatadir)
+    pkg_check_modules(POPPLER REQUIRED IMPORTED_TARGET poppler-qt6)
+
+elseif(COMPILE_ON_V20)
+    pkg_check_modules(POPPLER REQUIRED IMPORTED_TARGET poppler-qt5)
+    find_package(Qt5 REQUIRED COMPONENTS WaylandClient)
+    find_package(KF5Wayland REQUIRED)
+endif()
+
 pkg_check_modules(AtSpi REQUIRED atspi-2)
 pkg_check_modules(Gobject REQUIRED gobject-2.0)
 pkg_check_modules(Docparser REQUIRED IMPORTED_TARGET docparser)
@@ -57,6 +77,7 @@ if (COMPILE_ON_V25)
     )
 
     qt_generate_wayland_protocol_client_sources(${PROJECT_NAME}
+        NO_INCLUDE_CORE_ONLY
         FILES
         ${TREELAND_PROTOCOLS_DATA_DIR}/treeland-dde-shell-v1.xml
         ${WLR_PROTOCOLS_DATADIR}/unstable/wlr-data-control-unstable-v1.xml
@@ -113,6 +134,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     ${AtSpi_INCLUDE_DIRS}
     ${Gobject_INCLUDE_DIRS}
     ${GIO_LIB_INCLUDE_DIRS}
+    ${POPPLER_INCLUDE_DIRS}
     ${CMAKE_SOURCE_DIR}/3rdparty/qmarkdowntextedit
 )
 
@@ -127,6 +149,18 @@ endif()
 
 # Include agent directory
 include(${CMAKE_CURRENT_SOURCE_DIR}/agent/CMakeLists.txt)
+
+if (COMPILE_ON_V25)
+    target_include_directories(${PROJECT_NAME} PUBLIC
+        ${CMAKE_SOURCE_DIR}/treeland
+        ${CMAKE_SOURCE_DIR}/layershell
+        ${CMAKE_SOURCE_DIR}/layershell/protocol
+        )
+elseif(COMPILE_ON_V20)
+    target_include_directories(${PROJECT_NAME} PUBLIC
+        ${CMAKE_SOURCE_DIR}/wayland
+        )
+endif()
 
 target_link_libraries(${PROJECT_NAME}
     Qt${QT_VERSION_MAJOR}::Core
@@ -151,8 +185,21 @@ target_link_libraries(${PROJECT_NAME}
     ${GIO_LIB_LIBRARIES}
     qmarkdowntextedit
     ${JWT_LIBRARIES}
+    PkgConfig::POPPLER
     pthread
 )
+
+if (COMPILE_ON_V25)
+    target_link_libraries(${PROJECT_NAME}
+        Qt6::WaylandClient
+        Qt6::WaylandClientPrivate
+    )
+elseif(COMPILE_ON_V20)
+    target_link_libraries(${PROJECT_NAME}
+        Qt5::WaylandClient
+        KF5::WaylandClient
+        )
+endif()
 
 # Install bin
 install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)

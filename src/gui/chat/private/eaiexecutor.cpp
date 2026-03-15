@@ -21,6 +21,9 @@
 #include "mcpconfigsyncer.h"
 #include "dconfigmanager.h"
 #include "global_define.h"
+#include "research/tools/researchtools.h"
+#include "research/writingstate.h"
+#include "pdfprintpreviewdialog.h"
 
 #include <report/assistantchatpoint.h>
 #include <report/digitalchatpoint.h>
@@ -34,6 +37,7 @@
 #include <QDBusReply>
 #include <QRegularExpression>
 #include <QApplication>
+#include <QWidget>
 #include <QFile>
 #include <QDateTime>
 #include <QRandomGenerator>
@@ -44,22 +48,35 @@
 #include <QUuid>
 #include <QCryptographicHash>
 #include <QDesktopServices>
+#include <QUrl>
 #include <QStandardPaths>
+#include <QDir>
 #include <QImage>
 #include <QImageReader>
 #include <QImageWriter>
 #include <QClipboard>
 #include <QLoggingCategory>
+#include <QWebEnginePage>
+#include <QPageLayout>
+#include <QPageSize>
 
 #include <DFileDialog>
+#include <DWidget>
+#include <DDialog>
+#include <DFileIconProvider>
+#include <QBuffer>
 #include <docparser.h>
 
 #include <chrono>
+#include <unistd.h>
 
 //Comment the following line
 #define AI_DEBUG
 
 UOSAI_USE_NAMESPACE
+DWIDGET_USE_NAMESPACE
+DGUI_USE_NAMESPACE
+DCORE_USE_NAMESPACE
 
 //Qt::SkipEmptyParts was introduced
 // or modified in Qt 5.14.
@@ -94,6 +111,7 @@ EAiExecutor::EAiExecutor(QObject *parent)
 
     connect(EParserDocument::instance(), &EParserDocument::sigParserStart, this, &EAiExecutor::docSummaryParsingStart);
     connect(EParserDocument::instance(), &EParserDocument::sigParserResult, this, &EAiExecutor::docDragInViewParserResult);
+    connect(EParserDocument::instance(), &EParserDocument::sigSelectFilesForOffice, this, &EAiExecutor::docSummaryForOffice);
 }
 
 bool EAiExecutor::initAiSession()
@@ -135,10 +153,7 @@ bool EAiExecutor::initAiSession()
 
 void EAiExecutor::sendRequest(const QString &llmId, ChatChunk &chatChunk, QObject *caller, const QString &notifier)
 {
-    QJsonArray extentions = QJsonDocument::fromJson(chatChunk.extention.toUtf8()).array();
-    QString userQuestion = appendDocContent(extentions, chatChunk.displayContent);
-
-    QSharedPointer<EAiPrompt> aiPrompt = initPrompt(userQuestion, extentions);
+    QSharedPointer<EAiPrompt> aiPrompt = initPrompt(chatChunk);
     QSharedPointer<EAiCallback> aiCallback = initCallback(caller, notifier, aiPrompt);
     QString reqId = processRequest(aiPrompt, aiCallback, llmId, chatChunk);
 
@@ -539,12 +554,15 @@ QString EAiExecutor::getRandomAiFAQ()
         return QString::fromUtf8(QJsonDocument(faqArray).toJson());
     }
     case AI_WRITING: {
-        if (m_aiWritingFAQ.isEmpty())
+        if (m_aiWritingFAQ.size() < 2)
             return "";
-        int startPos =  m_aiWritingFAQ.size() > m_limitAQCount ?
-                    randomGenerator.bounded(m_aiWritingFAQ.size() - m_limitAQCount) : 0;
+        //固定第一个和第二个随机问题内容，其他的随机加载
+        faqArray.append(m_aiWritingFAQ[0]);
+        faqArray.append(m_aiWritingFAQ[1]);
+        int startPos =  m_aiWritingFAQ.size() - 2 > m_limitAQCount ?
+                    randomGenerator.bounded(m_aiWritingFAQ.size() - 2  - m_limitAQCount) : 0;
 
-        for (int i = 0; i < m_limitAQCount; i++) {
+        for (int i = 2; i < m_limitAQCount; i++) {
             faqArray.append(m_aiWritingFAQ[i + startPos]);
         }
         faqArray = m_faqInitTool.assignRandomIcons(faqArray);
@@ -591,9 +609,9 @@ QString EAiExecutor::getRandomAiFAQByFunction(int type, const QString &function)
     // 根据助手类型选择对应的FAQ容器
     QVector<QJsonObject> faqContainer;
     switch (type) {
-    case AssistantType::AI_WRITING:
-        faqContainer = m_aiWritingFAQ;
-        break;
+//    case AssistantType::AI_WRITING:
+//        faqContainer = m_aiWritingFAQ;
+//        break;
     case AssistantType::AI_TEXT_PROCESSING:
         faqContainer = m_aiTextProcessingFAQ;
         break;
@@ -718,9 +736,9 @@ bool EAiExecutor::isAudioOutputAvailable()
     return AudioControler::audioOutputDeviceValid();
 }
 
-bool EAiExecutor::playTextAudio(const QString &id, const QString &text, bool isEnd)
+bool EAiExecutor::playTextAudio(const QString &id, const QString &text, bool isEnd, bool isPlayOutline)
 {
-    return AudioControler::instance()->startAppendPlayText(id, text, isEnd);
+    return AudioControler::instance()->startAppendPlayText(id, text, isEnd, isPlayOutline);
 }
 
 bool EAiExecutor::stopPlayTextAudio()
@@ -886,7 +904,7 @@ QString EAiExecutor::makeAiReqContext(QSharedPointer<EAiPrompt> prompt, bool isF
                                      "助手答案：";
             context = promptTemplate.arg(knowleadge).arg(question);
             qCInfo(logAIGUI) << context;
-        } else if (m_aiProxy->currentAssistantType() == AssistantType::AI_WRITING) {
+        } /*else if (m_aiProxy->currentAssistantType() == AssistantType::AI_WRITING) {
             QString promptTemplate = "---角色---\n" \
                                      "你是一位专业的写作助手，擅长各种写作风格和格式。\n" \
                                      "---目标---\n" \
@@ -907,7 +925,7 @@ QString EAiExecutor::makeAiReqContext(QSharedPointer<EAiPrompt> prompt, bool isF
                                      "内容：";
             context = promptTemplate.arg(question);
             qCInfo(logAIGUI) << context;
-        } else if (m_aiProxy->currentAssistantType() == AssistantType::AI_TEXT_PROCESSING) {
+        } */else if (m_aiProxy->currentAssistantType() == AssistantType::AI_TEXT_PROCESSING) {
             QString promptTemplate = "---角色---\n" \
                                      "你是一位文本处理专家，在语言分析、写作技巧和文本优化方面具有深厚的专业能力。\n" \
                                      "---目标---\n" \
@@ -1102,6 +1120,24 @@ void EAiExecutor::processConversations(const Conversations &convs, QJsonArray &c
                     if (!obj.contains("chatType"))
                         continue;
                     int chatType = obj["chatType"].toInt();
+                    if (chatType == ChatAction::ChatDocCard) {
+                        // 文章卡片转为文本内容插入上下文
+                        contents = obj["content"].toObject()["content"].toString();
+                        continue;
+                    } else if (chatType == ChatAction::ChatOutline) {
+                        // AI写作 - 上下文 - 转换大纲JSON为MD格式
+                        QJsonObject outlineObj = QJsonDocument::fromJson(obj["content"].toString().toUtf8()).object();
+                        QString outline;
+                        ResearchTools::outlineJson2Md(outlineObj, 1, outline);
+                        if (Util::checkLanguage()) {
+                            contents = QString("让我先为你生成大纲：\n") + outline;
+                        } else {
+                            contents = QString("Let me generate an outline for you first:\n") + outline;
+                        }
+
+                        continue;
+                    }
+
                     if ((chatType == ChatAction::ChatTextPlain || chatType ==  ChatAction::ChatToolUse) && obj.contains("content")) {
                         contents += obj["content"].toString();
                     }
@@ -1451,9 +1487,12 @@ QString EAiExecutor::wordWizardRequest(const QString &llmId, const QString &aiCt
     return reqId;
 }
 
-QSharedPointer<EAiPrompt> EAiExecutor::initPrompt(const QString &userQuestion, const QJsonArray &extention)
+QSharedPointer<EAiPrompt> EAiExecutor::initPrompt(const uos_ai::ChatChunk &chatChunk)
 {
     QSharedPointer<EAiPrompt> aiPrompt;
+
+    QJsonArray extention = QJsonDocument::fromJson(chatChunk.extention.toUtf8()).array();
+    QString userQuestion = appendDocContent(extention, chatChunk.displayContent);
 
     QString functionButton = "";
     int extType = ExtentionType::None;
@@ -1477,10 +1516,14 @@ QSharedPointer<EAiPrompt> EAiExecutor::initPrompt(const QString &userQuestion, c
         aiPrompt.reset(new EConversationPrompt(userQuestion));
         aiPrompt->setReqType(EAiPrompt::RequstType::Rag);
         break;
-    case AssistantType::AI_WRITING:
-        aiPrompt.reset(new EAiWritingPrompt(functionButton + userQuestion));
-        aiPrompt->setReqType(EAiPrompt::RequstType::TextPlain);
+    case AssistantType::AI_WRITING: {
+        QVariantHash params = initAiWritingParams(chatChunk);
+        aiPrompt.reset(new EConversationPrompt(userQuestion));
+        aiPrompt->setParams(params);
+        // 统一交给 WritingMasterAgent 根据 WritingState 内部决策
+        aiPrompt->setReqType(EAiPrompt::RequstType::AIWriting);
         break;
+    }
     case AssistantType::AI_TEXT_PROCESSING:
         aiPrompt.reset(new EAiTextProcessingPrompt(functionButton + userQuestion));
         aiPrompt->setReqType(EAiPrompt::RequstType::TextPlain);
@@ -1614,6 +1657,129 @@ QSharedPointer<EAiCallback> EAiExecutor::initDefaultCallback(QObject *caller, co
     return aiCallback;
 }
 
+QVariantHash EAiExecutor::initAiWritingParams(const ChatChunk &chatChunk)
+{
+    QVariantHash params;
+
+    QJsonArray extention = QJsonDocument::fromJson(chatChunk.extention.toUtf8()).array();
+
+    // 通用 ext 提取 helper
+    auto processExt = [](const QJsonArray &extetion, int extType) {
+        for (const auto &ext : extetion) {
+            QJsonObject extObj = ext.toObject();
+            if (extObj.value("type").toInt() == extType)
+                return extObj;
+        }
+        return QJsonObject();
+    };
+
+    auto findOutline = [](const QVector<ChatChunk> &answers) -> QJsonObject {
+        for (auto rIter = answers.crbegin(); rIter != answers.crend(); ++rIter) {
+            if (rIter->displayContent.isEmpty() || rIter->errCode < 0)
+                continue;
+            QJsonParseError error;
+            QJsonDocument doc = QJsonDocument::fromJson(rIter->displayContent.toUtf8(), &error);
+            if (error.error != QJsonParseError::NoError || !doc.isArray())
+                continue;
+            for (const QJsonValue &value : doc.array()) {
+                if (!value.isObject()) continue;
+                QJsonObject obj = value.toObject();
+                if (obj.value("chatType").toInt() == ChatAction::ChatOutline && obj.contains("content"))
+                    return QJsonDocument::fromJson(obj["content"].toString().toUtf8()).object();
+            }
+        }
+        return QJsonObject();
+    };
+
+    // 从 answers 列表中逆序查找最近的文章卡片（ChatDocCard）
+    auto findArticle = [](const QVector<ChatChunk> &answers) -> QJsonObject {
+        for (auto rIter = answers.crbegin(); rIter != answers.crend(); ++rIter) {
+            if (rIter->displayContent.isEmpty() || rIter->errCode < 0)
+                continue;
+            QJsonParseError error;
+            QJsonDocument doc = QJsonDocument::fromJson(rIter->displayContent.toUtf8(), &error);
+            if (error.error != QJsonParseError::NoError || !doc.isArray())
+                continue;
+            for (const QJsonValue &value : doc.array()) {
+                if (!value.isObject()) continue;
+                QJsonObject obj = value.toObject();
+                if (obj.value("chatType").toInt() == ChatAction::ChatDocCard && obj.contains("content"))
+                    return obj.value("content").toObject();
+            }
+        }
+        return QJsonObject();
+    };
+
+    // -----------------------------------------------------------------------
+    // 构建 WritingState：从历史对话中提取大纲和文章，确定当前阶段
+    // -----------------------------------------------------------------------
+    WritingState state;
+
+    int convsCount = (m_conversionMode == ConversionMode::Normal)
+                         ? m_currnetConvs.size()
+                         : m_currnetPrivateConvs.size();
+    if (chatChunk.isRetry)
+        convsCount--;
+
+    QJsonObject outlineCard;
+    QJsonObject articleCard;
+    for (int index = convsCount - 1; index >= 0; index--) {
+        const QVector<ChatChunk> &answers = (m_conversionMode == ConversionMode::Normal)
+                                                ? m_currnetConvs.at(index).answers
+                                                : m_currnetPrivateConvs.at(index).answers;
+        if (articleCard.isEmpty())
+            articleCard = findArticle(answers);
+        if (outlineCard.isEmpty())
+            outlineCard = findOutline(answers);
+        if (!articleCard.isEmpty() && !outlineCard.isEmpty())
+            break;
+    }
+
+    if (articleCard.contains("content")) {
+        // 优先级 1：历史中存在文章卡片 → 进入"修改文章"阶段
+        state.setStage(WritingState::Stage::AdjustArticle);
+        state.setArticleContent(articleCard.value("content").toString());
+        if (!outlineCard.isEmpty())
+            state.setOutline(outlineCard);
+    } else if (!outlineCard.isEmpty()) {
+        // 优先级 2：历史中存在大纲卡片 → 进入"生成文章"阶段
+        state.setStage(WritingState::Stage::GenerateArticle);
+        state.setOutline(outlineCard);
+    }
+    // 优先级 3（默认）：GenerateOutline，state 保持默认值
+
+    // 将结构化状态序列化放入 params，供 WritingMasterAgent 读取
+    params.insert("writing_state_json", state.toJsonString());
+
+    // -----------------------------------------------------------------------
+    // 上传文件资源（前端特有信息，直接透传）
+    // -----------------------------------------------------------------------
+    QJsonObject writingResourceObj = processExt(extention, ExtentionType::WritingResource);
+    if (!writingResourceObj.isEmpty()) {
+        params.insert("outline_path", writingResourceObj.value("template_path").toString());
+        params.insert("upload_files", writingResourceObj.value("file_paths").toArray().toVariantList());
+    }
+
+    // 从首条对话的 ext 中补充 upload_files（深度研究阶段需要）
+    QJsonArray firstQuesExt;
+    if (m_conversionMode == ConversionMode::Normal && !m_currnetConvs.isEmpty()) {
+        firstQuesExt = QJsonDocument::fromJson(
+                           m_currnetConvs.first().question.extention.toUtf8()).array();
+    } else if (m_conversionMode == ConversionMode::Private && !m_currnetPrivateConvs.isEmpty()) {
+        firstQuesExt = QJsonDocument::fromJson(
+                           m_currnetPrivateConvs.first().question.extention.toUtf8()).array();
+    }
+    QJsonObject firstWritingResourceObj = processExt(firstQuesExt, ExtentionType::WritingResource);
+    if (!firstWritingResourceObj.isEmpty()) {
+        params.insert("upload_files", firstWritingResourceObj.value("file_paths").toArray().toVariantList());
+    }
+
+    // 联网搜索开关
+    params.insert("web_search", chatChunk.onlineSearch);
+
+    return params;
+}
+
 void EAiExecutor::parseReceivedFaq(const QString &faqContent)
 {
     m_isFAQGenerating = false;
@@ -1690,7 +1856,7 @@ QString EAiExecutor::appendDocContent(const QJsonArray &exts, const QString &use
 {
     ConversionType currentConversionType = ConversionType::Text;
     QJsonArray files;
-    
+
     // 首先遍历所有扩展项，检查是否存在MCPStatus
     bool isOpenMcp = false;
     for (auto ext : exts) {
@@ -1700,7 +1866,7 @@ QString EAiExecutor::appendDocContent(const QJsonArray &exts, const QString &use
             break;
         }
     }
-    
+
     for (auto ext : exts) {
         QJsonObject extObj = ext.toObject();
         if (extObj.value(kExtentionType).toInt() == ExtentionType::DocSummary) {
@@ -1719,7 +1885,7 @@ QString EAiExecutor::appendDocContent(const QJsonArray &exts, const QString &use
     QString docPaths;
     bool hasDocument = false;
     bool hasImage = false;
-    
+
     for (auto file : files) {
         QJsonObject fileDoc = file.toObject();
         if (isOpenMcp){
@@ -1763,14 +1929,17 @@ QString EAiExecutor::processRequest(QSharedPointer<EAiPrompt> prompt, QSharedPoi
     qCInfo(logAIGUI) << "Request Context:" << aiCtx << " Request model:" << tmpLLMAccount.name;
 
     ReportIns()->writeEvent(report::ModelPoint(tmpLLMAccount).assemblingData());
-
-    QStringList mcpServers;
     QJsonArray extentions = QJsonDocument::fromJson(chatChunk.extention.toUtf8()).array();
+
+    QVariantHash params;
+    params = prompt->getParams();
+
     for (auto ext : extentions) {
         QJsonObject extObj = ext.toObject();
         int extType = extObj.value("type").toInt();
         if (extType == ExtentionType::MCPStatus) {
-            mcpServers = getMcpServers(kDefaultAgentName);
+            QStringList mcpServers = getMcpServers(kDefaultAgentName);
+            params.insert(PREDICT_PARAM_MCPSERVERS, QVariant(mcpServers));
             break;
         }
     }
@@ -1780,12 +1949,13 @@ QString EAiExecutor::processRequest(QSharedPointer<EAiPrompt> prompt, QSharedPoi
         ReportIns()->writeEvent(report::PrivateChatPoint().assemblingData());
     }
 
-    QVariantHash params = {
-        {PREDICT_PARAM_STREAM, QVariant(callback->isStreamMode())},
-        {PREDICT_PARAM_THINKCHAIN, QVariant(chatChunk.openThink)},
-        {PREDICT_PARAM_ONLINESEARCH, QVariant(chatChunk.onlineSearch)},
-        {PREDICT_PARAM_MCPSERVERS, QVariant(mcpServers)}
-    };
+    params.insert(PREDICT_PARAM_STREAM, QVariant(callback->isStreamMode()));
+    params.insert(PREDICT_PARAM_THINKCHAIN, QVariant(chatChunk.openThink));
+
+    if (currentAssistantType() != AssistantType::AI_WRITING) {
+        // AI写作不需要DeepSeek的联网搜索模型
+        params.insert(PREDICT_PARAM_ONLINESEARCH, QVariant(chatChunk.onlineSearch));
+    }
 
     // tid:1001600011 event:DigitalChat
     if (m_chatWindow->isDigitalMode()) {
@@ -1810,6 +1980,13 @@ QString EAiExecutor::processRequest(QSharedPointer<EAiPrompt> prompt, QSharedPoi
         reqId = searchRequest(llmId, aiCtx, callback);
         break;
     case EAiPrompt::RequstType::McpAgent:
+        params.insert(PREDICT_PARAM_MCPAGENT, QString(kDefaultAgentName));
+        reqId = requestMcpAgent(llmId, aiCtx, params, callback);
+        break;
+    case EAiPrompt::RequstType::AIWriting:
+        // 统一入口：WritingMasterAgent 根据 WritingState 内部决策路由到
+        // OutlineAgent / ResearchAgent / ArticleAdjustAgent
+        params.insert(PREDICT_PARAM_MCPAGENT, QString(kAIWritingMasterAgentName));
         reqId = requestMcpAgent(llmId, aiCtx, params, callback);
         break;
     default:
@@ -2202,7 +2379,7 @@ void EAiExecutor::onChatTextReceived(const QString &callId, const QString &chatT
 void EAiExecutor::onChatError(const QString &id, int code, const QString &errorString)
 {
     qCWarning(logAIGUI) << "Chat error occurred:"
-                        << "id=" << id 
+                        << "id=" << id
                         << "code=" << code
                         << "error=" << errorString;
 
@@ -2210,7 +2387,7 @@ void EAiExecutor::onChatError(const QString &id, int code, const QString &errorS
         qCWarning(logAIGUI) << "Network error detected";
         emit netStateChanged(false);
     }
-    
+
     //Reverse the error code if positive
     if (code > 0) {
         code = -code;
@@ -2425,7 +2602,7 @@ void EAiExecutor::createPosterHistory(const QString &idList, const QString &disp
     QVector<uos_ai::Conversations> convs;
     EaiChatInfoJsonControl::localChatInfoJsonControl().getConvsInfo("Poster Assistant", conversationId, convs);
     convs.push_back(conv);
-    
+
     if (!conversationId.isEmpty()) {
         EaiChatInfoJsonControl::localChatInfoJsonControl().updateConvsInfo(
             "Poster Assistant",
@@ -2507,25 +2684,25 @@ bool EAiExecutor::getFreeCredits(bool isShowDlg)
 
         QJsonParseError parseError;
         QJsonDocument jsonDoc = QJsonDocument::fromJson(listJson.toUtf8(), &parseError);
-        
+
         if (parseError.error != QJsonParseError::NoError) {
             qCWarning(logAIGUI) << "Failed to parse LLM account list JSON:" << parseError.errorString();
             return false;
         }
-        
+
         if (!jsonDoc.isArray()) {
             qCWarning(logAIGUI) << "LLM account list is not a JSON array";
             return false;
         }
-        
+
         QJsonArray accountArray = jsonDoc.array();
         QString modelIdForFreeAccount;
-        
+
         for (const QJsonValue &accountValue : accountArray) {
             if (!accountValue.isObject()) {
                 continue;
             }
-            
+
             QJsonObject accountObj = accountValue.toObject();
             if (accountObj.contains("model") && accountObj["model"].isDouble()) {
                 int modelType = accountObj["model"].toInt();
@@ -2536,12 +2713,12 @@ bool EAiExecutor::getFreeCredits(bool isShowDlg)
                 }
             }
         }
-        
+
         if (modelIdForFreeAccount.isEmpty()) {
             qCWarning(logAIGUI) << "No model found with type DeepSeek_Uos_Free";
             return false;
         }
-        
+
         m_aiProxy->claimUsageRequest(modelIdForFreeAccount);
         return true;
     }
@@ -2564,6 +2741,176 @@ bool EAiExecutor::isSimplifiedChinese()
         return false;
     }
 
+}
+
+bool EAiExecutor::isDeleteOutlineTitle()
+{
+    return m_chatWindow->isDeleteOutlineTitle();
+}
+
+QString EAiExecutor::getDownloadListIcon(QString fileSuffix)
+{
+    QStringList suffixReplace;
+    suffixReplace << "docx" << "xlsx" << "pptx";
+
+    DFileIconProvider docIcon;
+
+    // 文档后缀带x会获取到压缩包图标，需要去掉x: *.docx -> *.doc
+    if (suffixReplace.contains(fileSuffix)) {
+        fileSuffix.chop(1); // 去掉最后一个字符
+    }
+
+    // 创建虚拟文件路径用于获取图标 (仅用于QFileInfo解析，不会创建实际文件)
+    QString dummyFilePath = QString("dummy.%1").arg(fileSuffix);
+    QFileInfo dummyFileInfo(dummyFilePath); // QFileInfo不会创建实际文件，仅解析路径信息
+
+    QIcon icon = docIcon.icon(dummyFileInfo);
+    int size = static_cast<int>(qApp->devicePixelRatio() * 16);
+    QImage image = icon.pixmap(size, size).toImage();
+
+    QByteArray data;
+    QBuffer buffer(&data);
+    buffer.open(QIODevice::WriteOnly);
+    image.save(&buffer, "PNG");
+    buffer.close();
+
+    QString base64Icon = QString::fromLatin1(data.toBase64());
+    return base64Icon;
+}
+
+bool EAiExecutor::downloadFile(const QString &id, const QString &title, const QString &content, const QString &suffix)
+{
+    if (suffix == "docx" || suffix == "pdf") {
+        if (!ResearchTools::checkAgentInstalled()) {
+            return false;
+        }
+    }
+
+    QString selectedDir = QFileDialog::getExistingDirectory(
+        m_chatWindow,
+        "选择文件保存目录",
+        QStandardPaths::writableLocation(QStandardPaths::DownloadLocation),
+        QFileDialog::DontResolveSymlinks
+    );
+
+    if (selectedDir.isEmpty()) {
+        return false;
+    }
+
+    // 使用QtConcurrent在子线程中执行文件保存操作
+    QtConcurrent::run([this, id, title, content, suffix, selectedDir]() {
+        bool result = false;
+        QString aiGenTag = content + "\n\n" + tr("Note: Part of the document content may be generated by AI");
+
+        QString safeTitle = title;
+        safeTitle.replace(QRegularExpression("[\\\\/:*?\"<>|\\s]+"), "_");
+        QString filePath = selectedDir + QDir::separator() + safeTitle + "." + suffix;
+
+        if (suffix == "md") {
+            QFile file(filePath);
+            if (file.open(QIODevice::WriteOnly)) {
+                file.write(aiGenTag.toUtf8());
+                file.close();
+                result = true;
+            }
+        } else if (suffix == "docx") {
+            result = ResearchTools::md2Word(aiGenTag, filePath);
+        } else if (suffix == "pdf") {
+            result = ResearchTools::md2Pdf(aiGenTag, filePath);
+        }
+
+        qCInfo(logAIGUI) << "Deep Research result saveas path: " << filePath << ", saved result: " << result;
+        emit sigDownloadFileFinished(id, result);
+    });
+
+    return true;
+}
+
+void EAiExecutor::printDocument(const QString &html, const QString &title)
+{
+    if (html.isEmpty()) {
+        qCWarning(logAIGUI) << "Print document html is empty";
+        return;
+    }
+
+    QString outputDir = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
+    if (outputDir.isEmpty()) {
+        outputDir = QStringLiteral("/tmp");
+    }
+    QDir(outputDir).mkpath(".");
+
+    QString safeTitle = title.isEmpty() ? QStringLiteral("document") : title;
+    safeTitle.replace(QRegularExpression("[\\\\/:*?\"<>|\\s]+"), "_");
+    const QString docName = title.isEmpty() ? safeTitle : title;
+
+    const QString pdfPath = QDir(outputDir).filePath(
+            QStringLiteral("uos-ai-print-%1_%2.pdf").arg(safeTitle, QDateTime::currentDateTime().toString(QStringLiteral("yyyyMMddHHmmss"))));
+
+    QWebEnginePage *page = new QWebEnginePage(this);
+    page->setBackgroundColor(Qt::white);
+
+    connect(page, &QWebEnginePage::pdfPrintingFinished, this,
+            [this, page, docName](const QString &path, bool ok) {
+                if (!ok) {
+                    qCWarning(logAIGUI) << "Failed to generate PDF:" << path;
+                    page->deleteLater();
+                    return;
+                }
+
+                QFileInfo pdfInfo(path);
+                if (!pdfInfo.exists() || pdfInfo.size() <= 0) {
+                    qCWarning(logAIGUI) << "PDF file missing or empty:" << path;
+                    page->deleteLater();
+                    return;
+                }
+
+                qCInfo(logAIGUI) << "PDF generated at" << path;
+
+                QWidget *parentWidget = m_chatWindow ? static_cast<QWidget *>(m_chatWindow) : qApp->activeWindow();
+                auto *previewDialog = new PDFPrintPreviewDialog(pdfInfo.absoluteFilePath(), docName, parentWidget);
+
+                if (!previewDialog->isValid()) {
+                    qCWarning(logAIGUI) << "Failed to load PDF into preview dialog:" << pdfInfo.absoluteFilePath();
+                    previewDialog->deleteLater();
+                } else {
+                    previewDialog->exec();
+                    previewDialog->deleteLater();
+                }
+
+                page->deleteLater();
+            });
+
+    connect(page, &QWebEnginePage::loadFinished, this,
+            [page, pdfPath](bool ok) {
+                if (!ok) {
+                    qCWarning(logAIGUI) << "Failed to load HTML for printing";
+                    page->deleteLater();
+                    return;
+                }
+
+                QPageLayout layout(QPageSize(QPageSize::A4),
+                                   QPageLayout::Portrait,
+                                   QMarginsF(20, 20, 20, 20));
+                page->printToPdf(pdfPath, layout);
+            });
+
+    // baseUrl 的设置使得 page 可以渲染本地图片。
+    page->setHtml(html, QUrl("qrc://"));
+}
+
+void EAiExecutor::updateAnswresActiveIndex(int activeIndex)
+{
+    m_answerActiveIndex = activeIndex;
+}
+
+void EAiExecutor::setDigitalImageDisable(bool disable)
+{
+    m_chatWindow->setDigitalImageDisable(disable);
+}
+
+bool EAiExecutor::isActiveChatFromDigitalImage()
+{
+    return m_chatWindow->isActiveChatFromDigitalImage();
 }
 
 void EAiExecutor::onAddToServerStatusChanged(const QStringList &files, int status)
@@ -2648,30 +2995,44 @@ void EAiExecutor::onScreenshotCustomDone(const QString &imagePath)
 void EAiExecutor::onScreenshotCallFinished(QDBusPendingCallWatcher *watcher)
 {
     QDBusPendingReply<void> reply = *watcher;
-    
+
     if (reply.isError()) {
         qCWarning(logAIGUI) << "Screenshot async call failed:" << reply.error().message();
     } else {
         qCInfo(logAIGUI) << "Screenshot async call completed successfully";
     }
-    
+
     // 清理 watcher
     watcher->deleteLater();
 }
 
 void EAiExecutor::onAccountUsageClaimed(bool ret, const QString &msg)
 {
-    if (m_chatWindow->isDigitalMode()) {
-        // show dialog
-        m_chatWindow->showGetFreeCreditsResultDlg(ret);
-    }
-
+    showGetFreeCreditsResultDlg(ret);
     Q_EMIT sigClaimUsageResult(ret, msg);
+}
+
+
+void EAiExecutor::showGetFreeCreditsResultDlg(bool isSuccess)
+{
+    // show dialog
+    DDialog dlg;
+    dlg.setWindowFlags(dlg.windowFlags() | Qt::Tool | Qt::X11BypassWindowManagerHint | Qt::WindowStaysOnTopHint);
+    dlg.setMinimumWidth(380);
+    dlg.setIcon(QIcon(":/assets/images/uos-ai-assistant.svg"));
+    dlg.addButton(QString(isSuccess ? tr("Use it now") : tr("Retry")), true, DDialog::ButtonNormal);
+    dlg.setTitle(QString(isSuccess ? tr("Successfully Claimed") : tr("Failed to Claim. Please Try Again.")));
+    dlg.exec();
 }
 
 void EAiExecutor::documentSummarySelect()
 {
-    EParserDocument::instance()->selectDocument(m_aiProxy->currentAssistantType());
+    EParserDocument::instance()->selectDocument(m_aiProxy->currentAssistantType(), m_chatWindow);
+}
+
+void EAiExecutor::documentSummaryForOfficeSelect(int category)
+{
+    EParserDocument::instance()->selectDocumentForOffice(static_cast<EParserDocument::FileCategory>(category), m_chatWindow);
 }
 
 QString EAiExecutor::processClipboardData()
@@ -2712,7 +3073,43 @@ QString EAiExecutor::processClipboardData()
 
 void EAiExecutor::onDocSummaryDragInView(const QStringList &docPaths, const QString &defaultPrompt)
 {
-    EParserDocument::instance()->dragInViewDocument(docPaths, defaultPrompt, m_aiProxy->currentAssistantType());
+    if (m_aiProxy->currentAssistantType() == AssistantType::AI_WRITING) {
+        if (m_isAnswering)
+            return;
+
+        // 检查displayContent是否为JSON字符串且包含chatType == ChatAction::ChatOutline的JSON对象
+        QString displayContent;
+        if (m_conversionMode == ConversionMode::Normal) {
+            if (!m_currnetConvs.isEmpty() && !m_currnetConvs.last().answers.isEmpty() && m_currnetConvs.last().answers.length() > m_answerActiveIndex) {
+                displayContent = m_currnetConvs.last().answers[m_answerActiveIndex].displayContent;
+            }
+        } else if (m_conversionMode == ConversionMode::Private) {
+            if (!m_currnetPrivateConvs.isEmpty() && !m_currnetPrivateConvs.last().answers.isEmpty() && m_currnetPrivateConvs.last().answers.length() > m_answerActiveIndex) {
+                displayContent = m_currnetPrivateConvs.last().answers[m_answerActiveIndex].displayContent;
+            }
+        }
+
+        // 检查displayContent是否为JSON字符串
+        if (!displayContent.isEmpty()) {
+            QJsonDocument doc = QJsonDocument::fromJson(displayContent.toUtf8());
+            if (!doc.isNull() && doc.isArray()) {
+                QJsonArray jsonArray = doc.array();
+                // 检查是否存在chatType == ChatAction::ChatOutline的JSON对象
+                for (const QJsonValue &value : jsonArray) {
+                    if (value.isObject()) {
+                        QJsonObject obj = value.toObject();
+                        if (obj.contains("chatType") && obj["chatType"].toInt() == ChatAction::ChatOutline) {
+                            // 存在chatType == ChatAction::ChatOutline的对象，直接return
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+        EParserDocument::instance()->dragInViewDocForWriting(docPaths);
+    } else {
+        EParserDocument::instance()->dragInViewDocument(docPaths, defaultPrompt, m_aiProxy->currentAssistantType());
+    }
 }
 
 void EAiExecutor::documentSummaryParsing(const QString &id, const QString &docPath)
@@ -2865,6 +3262,16 @@ void EAiExecutor::showUpdateDialog(const QString &msg, const QString &appName)
     return m_chatWindow->showUpdateDialog(msg, appName);
 }
 
+bool EAiExecutor::showRemoveFileDialog(const QString &message)
+{
+    return m_chatWindow->showRemoveFileDialog(message);
+}
+
+bool EAiExecutor::showAllowUploadFilesAlert(int modelType, const QString &modelDisplayName, bool searchOnline)
+{
+    return m_chatWindow->showAllowUploadFilesAlert(modelType, modelDisplayName, searchOnline);
+}
+
 void EAiExecutor::showPromptWindow()
 {
     qCInfo(logAIGUI) << "Show prompt window, PRIVACY_UPDATE";
@@ -2881,7 +3288,7 @@ void EAiExecutor::updateUpdatePromptDB(bool isClicked)
 {
     qCInfo(logAIGUI) << "Update prompt window, PRIVACY_UPDATE:" << isClicked;
     // 使用枚举更新智能体控制位
-    DbWrapper::localDbWrapper().updateUpdatePromptBits(UpdatePromptBitType::AUTO_MCP, isClicked ? 1 : 0);
+    DbWrapper::localDbWrapper().updateUpdatePromptBits(UpdatePromptBitType::NEW_WRITING, isClicked ? 1 : 0);
 }
 
 void EAiExecutor::updateUpdateFreeAccountGuideDB(bool isClicked)
@@ -3083,7 +3490,7 @@ void EAiExecutor::loadAiFAQ()
             m_assistantFAQ.append(faqObject);
         }
     }
-    
+
     // 写作助手
     jsonArray = m_faqInitTool.createWritingFAQArray();
     foreach (const QJsonValue &value, jsonArray) {
@@ -3178,9 +3585,9 @@ QString EAiExecutor::getAssistantFunctions(int type)
     QJsonArray functions;
     // 根据助手类型选择对应的函数定义文件
     switch (type) {
-    case AssistantType::AI_WRITING:
-        functions = m_faqInitTool.createWritingFunctionArray();
-        break;
+//    case AssistantType::AI_WRITING:
+//        functions = m_faqInitTool.createWritingFunctionArray();
+//        break;
     case AssistantType::AI_TEXT_PROCESSING:
         functions = m_faqInitTool.createTextProcessingFunctionArray();
         break;
@@ -3196,36 +3603,36 @@ QString EAiExecutor::getAssistantFunctions(int type)
 QString EAiExecutor::getFunctionTemplate(int type, const QString &function, const QString &contain)
 {
     QByteArray jsonData;
-    
+
     // 根据助手类型选择对应的模板文件
     switch (type) {
-    case AssistantType::AI_WRITING:
-        jsonData = m_faqInitTool.createWritingFunctionTemplate();
-        break;
+//    case AssistantType::AI_WRITING:
+//        jsonData = m_faqInitTool.createWritingFunctionTemplate();
+//        break;
     default:
         return "";
     }
-    
+
     QJsonDocument doc = QJsonDocument::fromJson(jsonData);
     if (!doc.isObject()) {
         qCWarning(logAIGUI) << "Invalid function template file format";
         return "";
     }
-    
+
     QJsonObject templates = doc.object();
     if (!templates.contains(function)) {
         qCWarning(logAIGUI) << "Function template not found:" << function;
         return "";
     }
-    
+
     QJsonObject functionTemplate = templates[function].toObject();
     QString templateStr = functionTemplate["Template"].toString();
     QString defaultStr = functionTemplate["Default"].toString();
-    
+
     // 如果contain为空，使用default值
     if (contain.isEmpty()) {
         return templateStr.arg(defaultStr);
     }
-    
+
     return templateStr.arg(contain);
 }

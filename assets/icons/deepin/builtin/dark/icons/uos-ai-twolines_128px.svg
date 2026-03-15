@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="12px" viewBox="0 0 5 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合</title>
+    <g id="v1.8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.2">
+        <g id="dark" transform="translate(-167, -114)" fill="#FFFFFF">
+            <g id="随航2" transform="translate(158, 104.5)">
+                <path d="M9,9.5 L10,9.5 L10,21.5 L9,21.5 Z M13,9.5 L14,9.5 L14,21.5 L13,21.5 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -176,10 +176,10 @@ void AiQuickDialog::initUi()
         m_closeBt->setPalette(closePalette);
     }
 
-    m_logoBt = new TransButton(this);
-    m_logoBt->setIcon(QIcon::fromTheme("uos-ai-assistant"));
+    m_logoBt = new DPushButton(this);
+    m_logoBt->setIcon(QIcon::fromTheme("UosAiAssistant"));
     m_logoBt->setIconSize(QSize(25, 25));
-    dynamic_cast<TransButton *>(m_logoBt)->setIconNoPressColor();
+    m_logoBt->setFixedSize(QSize(25, 25));
 
     m_titleBt = new TransButton(tr("type"), this);
     m_titleBt->setIcon(QIcon::fromTheme("uos-ai-assistant_aidropdown"));
@@ -278,6 +278,7 @@ void AiQuickDialog::initUi()
     DPalette errorPalette = m_errorInfoLabel->palette();
     errorPalette.setColor(DPalette::WindowText, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::Normal, DPalette::Text));
     m_errorInfoLabel->setPalette(errorPalette);
+    DFontSizeManager::instance()->bind(m_errorInfoLabel, DFontSizeManager::T7, QFont::Normal);
     m_errorInfoLabel->setVisible(false);
 
     m_cancelBt = new DPushButton(tr("Cancel"), this);
@@ -404,7 +405,8 @@ void AiQuickDialog::initUi()
     m_autoComboBox->setFixedWidth(180);
     m_autoComboBox->setCurrentIndex(0);
     m_autoComboBox->setVisible(false);
-    m_autoComboBox->setEnabled(false);
+    //隐藏下拉箭头
+    m_autoComboBox->setStyleSheet("QComboBox::drop-down { border: none; width: 0px; } QComboBox::down-arrow { width: 0px; height: 0px; border: none; }");
     m_autoComboBox->installEventFilter(this);
 
     // 语言选择下拉框
@@ -638,6 +640,12 @@ void AiQuickDialog::initConnect()
     connect(EAiExec(), &EAiExecutor::llmAccountLstChanged, this, &AiQuickDialog::onLlmAccountLstChanged);
     connect(EAiExec(), &EAiExecutor::netStateChanged, this, &AiQuickDialog::onNetworkStateChanged);
     connect(EAiExec(), &EAiExecutor::sigWebViewLoadFinished, this, &AiQuickDialog::onWebViewLoadFinished);
+    connect(EAiExec(), &EAiExecutor::sigClaimUsageResult,this, [&] (bool ret, const QString &msg) {
+        if (ret) {
+            m_errorInfoLabel->setVisible(false);
+            this->sendAiRequst();
+        }
+    });
 
     // 依赖fcitx：当前可写状态
     connect(&FcitxInputServer::getInstance(), &FcitxInputServer::signalFocusIn, this, &AiQuickDialog::onFocusIn);
@@ -788,19 +796,8 @@ bool AiQuickDialog::eventFilter(QObject *watched, QEvent *event)
             return true;
         }
     } else if (watched == m_autoComboBox) {
-        static bool isNeedShowTip = true;
-        if (event->type() == QEvent::Enter) { // 配置了nofocus窗口属性后，需要手动弹出tooltip
-            isNeedShowTip = true;
-            QTimer::singleShot(1000, this, [&] {
-                if (!isNeedShowTip && m_autoComboBox) {
-                    return;
-                }
-
-                QToolTip::showText(QCursor::pos(), tr("Not clickable"), m_autoComboBox);
-            });
-            return true;
-        } else if (event->type() == QEvent::Leave) {
-            isNeedShowTip = false;
+        if (event->type() == QEvent::MouseButtonPress || event->type() == QEvent::MouseButtonDblClick) {
+            //不使用enable，直接拦截点击事件，保证两个combobox的颜色一致
             return true;
         }
     } else if (watched == m_titleBar) {
@@ -1097,6 +1094,13 @@ void AiQuickDialog::onModelReply(int op, QString reply, int err)
 
 void AiQuickDialog::onUpdateSystemTheme()
 {
+    QString activeColor = DGuiApplicationHelper::instance()->applicationPalette()
+                          .color(DPalette::Normal, DPalette::Highlight)
+                          .name(QColor::HexRgb);
+    if (m_activeColor != activeColor) {
+        m_activeColor = activeColor;
+        handleError();
+    }
     DGuiApplicationHelper::ColorType themeType = DGuiApplicationHelper::instance()->themeType();
     if (m_themeType == themeType) {
         return;
@@ -1228,6 +1232,7 @@ void AiQuickDialog::onUpdateSystemTheme()
 void AiQuickDialog::onFontChanged(const QFont &font)
 {
     this->asyncAdjustSize();
+    handleError();
 }
 
 void AiQuickDialog::onUosAiLlmAccountLstChanged()
@@ -1255,9 +1260,15 @@ void AiQuickDialog::onLlmAccountLstChanged(const QString &currentAccountId, cons
 
 void AiQuickDialog::onOpenConfigDialog(const QString& link)
 {
-    EAiExec()->launchLLMConfigWindow(false, false, false, tr("Model Configuration"));
-    // BUG-292967（面板脱离窗管置顶，遮住了设置窗口）  打开设置窗口后，关闭面板
-    this->close();
+    if (link.contains("javascript:void(0)")) {
+        qCInfo(logWordWizard) << "Go to configure button clicked";
+        EAiExec()->launchLLMConfigWindow(false, false, false, tr("Model Configuration"));
+        // BUG-292967（面板脱离窗管置顶，遮住了设置窗口）  打开设置窗口后，关闭面板
+        this->close();
+    } else if (link.contains("javascript:void(1)")) {
+        qCInfo(logWordWizard) << "Claim Free Credits button clicked";
+        EAiExec()->getFreeCredits(true);
+    }
 }
 
 void AiQuickDialog::onNetworkStateChanged(bool isOnline)
@@ -1680,15 +1691,18 @@ void AiQuickDialog::handleError()
 {
     if (m_curErr == AiQuickDialog::ERROR_TYPE_NO_MODEL || m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_LIMIT || m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_EXPIRED || m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_INVALID) {
         this->enableReplyFunBt(false);
-        if (!m_replyBak.isEmpty()) {
+        if (!m_replyBak.isEmpty() && m_curErr != AiQuickDialog::ERROR_TYPE_ACCOUNT_LIMIT) {
             m_cancelBt->setVisible(true);
         }
-        const QColor &color = DPaletteHelper::instance()->palette(m_errorInfoLabel).color(DPalette::Normal, DPalette::Highlight);
+        const QColor &color(m_activeColor);
         m_errorInfoLabel->setText(m_curErrInfo
-                                  + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2<img src=\"%3\"></a>")
-                                        .arg(color.name())
-                                        .arg(tr("Go to configure  "))
-                                        .arg(GUtils::generateImage(m_errorInfoLabel, color, QSize(QFontMetrics(m_errorInfoLabel->font()).height() / 2, QFontMetrics(m_errorInfoLabel->font()).height() / 2), QStyle::PE_IndicatorArrowRight)));
+                                  + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2></a>")
+                                  .arg(color.name())
+                                  .arg(tr("Go to configure"))
+                                  + QString("<a href=\"javascript:void(1)\" style=\"color:%1; text-decoration: none;\"> %2></a>")
+                                  .arg(color.name())
+                                  .arg(tr("Claim Free Credits")));
+
         m_errorInfoLabel->setFixedHeight(m_errorInfoLabel->sizeHint().height());
         m_replyTextEdit->setVisible(false);
         m_errorInfoLabel->setVisible(true);

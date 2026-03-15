@@ -196,6 +196,8 @@ protected:
 private:
     QObject *m_parent = nullptr;
 
+    QString m_activeColor {""};
+
     DGuiApplicationHelper::ColorType m_themeType = DGuiApplicationHelper::LightType;
 
     int m_queryType    = 0;

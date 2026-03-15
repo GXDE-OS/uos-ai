@@ -3,6 +3,7 @@
 
 #include "mcpagent.h"
 #include "toolparser.h"
+#include "tooluse.h"
 
 #include <QObject>
 #include <QString>
@@ -45,20 +46,6 @@ public:
     QJsonObject processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params = {}) override;
 
 protected:
-    /**
-     * 发送文本链式内容
-     * 将文本内容以流式方式发送给客户端
-     * @param {QString} content - 要发送的文本内容
-     */
-    void textChainContent(const QString &content);
-
-    /**
-     * 发送工具调用内容
-     * 将工具调用信息发送给客户端
-     * @param {ToolUse} tool - 要发送的工具调用对象，包含工具名称和参数
-     */
-    void toolUseContent(const ToolUse &tool);
-
     /**
      * 处理模型流式输出的内容
      * 解析模型的流式输出，识别文本内容和工具调用

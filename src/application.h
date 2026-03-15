@@ -84,6 +84,8 @@ private slots:
 
     void onUploadImage(const QString &imagePath);
 
+    void onIconThemeChanged();  // 图标主题变化
+
 private:
     bool checkAgreement();
 

@@ -129,7 +129,7 @@ public:
     bool isAudioOutputAvailable();
 
     //TTS api
-    bool playTextAudio(const QString &id, const QString &text, bool isEnd);
+    bool playTextAudio(const QString &id, const QString &text, bool isEnd, bool isPlayOutline);
     bool stopPlayTextAudio();
 
     //Sound effect
@@ -172,6 +172,7 @@ public:
     void openInstallWidget(const QString &appname);
 
     void documentSummarySelect();
+    void documentSummaryForOfficeSelect(int category);
     QString processClipboardData();
     void onDocSummaryDragInView(const QStringList &docPaths, const QString &defaultPrompt);
     void documentSummaryParsing(const QString &id, const QString &docPath);
@@ -195,6 +196,8 @@ public:
     bool showWarningDialog(const QString assistantId , const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete);
     bool showRmMcpServerDlg(const QString &name);
     void showUpdateDialog(const QString &msg, const QString &appName);
+    bool showRemoveFileDialog(const QString &message);
+    bool showAllowUploadFilesAlert(int modelType, const QString &modelDisplayName, bool searchOnline);
 
     void showPromptWindow();
     void changeFreeAccountGuide(bool isShowFreeAccountGuide, bool isPreShow = false);
@@ -232,6 +235,26 @@ public:
 
     // 当前是否为简体中文
     bool isSimplifiedChinese();
+    void showGetFreeCreditsResultDlg(bool isSuccess);
+
+    // 大纲删除确认框
+    bool isDeleteOutlineTitle();
+
+    // 获取下载列表图标
+    QString getDownloadListIcon(QString fileSuffix);
+    bool downloadFile(const QString &id, const QString &title, const QString &content, const QString &suffix);
+
+    // 打印文档
+    void printDocument(const QString &html, const QString &title);
+
+    // 更新当前应答侧index
+    void updateAnswresActiveIndex(int activeIndex);
+
+    // 禁止切换数字形象
+    void setDigitalImageDisable(bool disable);
+
+    // 是否从数字形象强制切换为聊天
+    bool isActiveChatFromDigitalImage();
 
 private:
     void startScreenshotInternal();
@@ -267,6 +290,7 @@ signals:
     void sigAiReplyNone(int act, QString reply, int err);
 
     void docSummaryParsingStart(const QString &docPath, const QString &iconData, const QString &defaultPrompt, int error);
+    void docSummaryForOffice(const QString filesDataJson, int error, int category);
     void docDragInViewParserResult(const QString &id, int error, const QString &docPath, const QString &docContent);
     void openFileFromPathResult(bool ok);
 
@@ -304,6 +328,12 @@ signals:
 
     void sigClaimUsageResult(bool ret, const QString &msg);
     void sigClaimAgain(bool claimAgain);
+
+    void sigIconThemeChanged();
+
+    void sigDownloadFileFinished(const QString &id, bool result);
+
+    void sigActiveChatFromDigitalImage();
 public slots:
     void onPPTCreated(const QString &id, const QList<QByteArray> &imageData);
     void onPPTChanged(const QString &id, const QList<QByteArray> &imageData);
@@ -381,6 +411,7 @@ protected:
     QMap<QString, QJsonDocument> m_convsHistory;
     QVector<uos_ai::Conversations> m_currnetConvs;
     QVector<uos_ai::Conversations> m_currnetPrivateConvs;
+    int m_answerActiveIndex; // 当前应答侧展示的第几次回答
 
     friend QDebug &operator<<(QDebug &debug, const AiChatRecord &r);
 
@@ -425,11 +456,13 @@ private:
     
     QString wordWizardRequest(const QString &llmId, const QString &aiCtx, QSharedPointer<EAiCallback> callback);
 
-    QSharedPointer<EAiPrompt> initPrompt(const QString &userQuestion, const QJsonArray &extention);
+    QSharedPointer<EAiPrompt> initPrompt(const uos_ai::ChatChunk &chatChunk);
     QSharedPointer<EAiPrompt> initDefaultPrompt(const QString &userQuestion, const QJsonArray &extetion);
 
     QSharedPointer<EAiCallback> initCallback(QObject *caller, const QString &notifier, QSharedPointer<EAiPrompt> prompt);
     QSharedPointer<EAiCallback> initDefaultCallback(QObject *caller, const QString &notifier);
+
+    QVariantHash initAiWritingParams(const uos_ai::ChatChunk &chatChunk);
 
     void parseReceivedFaq(const QString &faqContent);
     void updateFaqList(const QStringList &faqList, const QString &lang, const QString &currentLang);

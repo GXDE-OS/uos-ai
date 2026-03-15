@@ -1,17 +1,12 @@
 <template></template>
 <script setup>
-import Qt from "../../common/QWebChannel";
-import { useRouter } from "vue-router";
-import { useGlobalStore } from "../../store/global";
+// 后端调试模式，编译进Qt
+//import initialize from './mockmode.ts';
+// 前端调试模式
+//import initialize from './devfront.ts';
+// 产品模式
+import initialize from './prodmode.ts';
 
-const router = useRouter();
-const store = useGlobalStore();
-
-new Qt(qt.webChannelTransport, function (channel) {
-  store.chatQWeb = channel.objects.chatObject;
-  store.updateActivityColor(store.chatQWeb.activeColor);
-  store.updateTheme(store.chatQWeb.themeType)
-  router.replace({ name: "Chat" });
-});
+initialize();
 
 </script>

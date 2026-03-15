@@ -46,6 +46,9 @@ public:
      */
     QJsonObject processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params = {}) override;
 
+    virtual int lastError() const;
+    virtual QString lastErrorString() const;
+
 Q_SIGNALS:
     /**
      * 当有新的聊天增量内容可读时发出此信号

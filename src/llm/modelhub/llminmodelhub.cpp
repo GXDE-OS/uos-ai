@@ -40,6 +40,9 @@ QPair<int, QString> LLMinModelHub::verify()
     AIConversation conversion;
     conversion.addUserData("Account verification only, no need for any response.");
     UniversalChatCompletion chatCompletion(apiUrl(), m_accountProxy.account);
+#ifdef Q_PROCESSOR_SW_64
+    chatCompletion.setTimeOut(60 * 60 * 1000);
+#endif
     connect(this, &UniversalAPI::aborted, &chatCompletion, &UniversalChatCompletion::requestAborted);
 
     QPair<int, QString> errorpair = chatCompletion.create(modelId(), conversion, m_params);
@@ -78,6 +81,9 @@ QJsonObject LLMinModelHub::predict(const QString &content, const QJsonArray &fun
         conversion.setSystemData(systemRole);
 
     UniversalChatCompletion chatCompletion(apiUrl(), m_accountProxy.account);
+#ifdef Q_PROCESSOR_SW_64
+    chatCompletion.setTimeOut(60 * 60 * 1000);
+#endif
     connect(this, &LLMinModelHub::aborted, &chatCompletion, &UniversalChatCompletion::requestAborted);
     connect(&chatCompletion, &UniversalChatCompletion::readyReadDeltaContent, this, &LLMinModelHub::onReadyReadChatDeltaContent);
 

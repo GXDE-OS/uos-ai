@@ -29,6 +29,9 @@ export const useGlobalStore = defineStore({
         AI_TRANSLATION_ASSISTANT: 0x0007, // 翻译助手
         PLUGIN_ASSISTANT:0x0100,
     },
+    SendArg : {
+        SendDocFileOutline : 0x0001, // 发送文档大纲
+    },
     ChatAction:{
         ChatNone                : -1,     // 无
         ChatTextPlain           : 0,      // 纯文本聊天
@@ -36,6 +39,13 @@ export const useGlobalStore = defineStore({
         ChatText2Image          : 2,      // 文生图
         ChatTextThink           : 3,      // 思考内容
         ChatToolUse             : 4,      // 工具调用
+        AgentReasonTitle        : 5,      // 任务进度的标题、状态
+        AgentReasoning          : 6,      // 任务进度
+        AgentAction             : 7,      // 任务进度中的工具调用
+        ChatOutline             : 8,      // 大纲
+        ChatDocCard             : 9,      // 文档卡片
+        ChatGuessYouWant        : 10,     // 猜你想要
+        ChatReference           : 11,     // 引用卡片  暂时没用
     },
     ExtentionType:{
         None: 0,
@@ -49,10 +59,16 @@ export const useGlobalStore = defineStore({
         FunctionButton:8, //功能按钮
         McpBtnStatus:9, //MCP开关
         KnowledgeBaseBtnStatus:10, //知识库开关
+        Outline:11, //大纲
+        WritingResource:12, //写作助手
     },
     DocParsingFileType:{
         Doc:0, //文档
         Image:1, //图片
+    },
+    DocFileCategory:{
+        LocalMaterial:0, //本地素材
+        FileOutline:1, //文件大纲
     },
     ToolUseStatus:{
         Calling : 0,  //调用中
@@ -77,6 +93,7 @@ export const useGlobalStore = defineStore({
     IsGotFreeCredits: true,  // 是否领取过免费额度
     IsEnableAdvancedCssFeatures: false,  // 是否启用高级CSS特性（如backdrop-filter等）
     IsSimplifiedChinese: true,  // 是否为简体中文
+    FontSize: 14, // 字体大小
     DocParsingStatusType:{
         Success:0x00,
         FileCountError:0x01,
@@ -106,6 +123,12 @@ export const useGlobalStore = defineStore({
         WARN:2,
         CRITICAL:3,
     },
+    //任务标题状态
+    TitleStatus: {
+        InProgress:0,
+        Completed:1,
+        Failed:2,
+    },
     }),
     getters: {},
     actions: {
@@ -126,6 +149,9 @@ export const useGlobalStore = defineStore({
             document.body.style.setProperty('--activityAddNewConversationBtnBgActive', `rgba(${rgb},0.2)`);
             document.body.style.setProperty('--activityMcpserverAddConfirmbtnBg', `linear-gradient(rgba(${rgb}, 1) 0%, rgba(${rgb}, 1) 100%)`);
             document.body.style.setProperty('--activityColorPrivateModeInputBackgroundColor', `rgba(${rgb},0.08)`);
+            document.body.style.setProperty('--baseOutlineGenContentboxShadow', `rgba(${rgb},0.4)`);
+            document.body.style.setProperty('--outlineDraggingItemBg', `rgba(${rgb},0.15)`);
+            document.body.style.setProperty('--outlineDraggingItemShadow', `rgba(${rgb},0.3)`);
         },
         updateTheme(res) {
             // 浅色1  深色2
@@ -144,6 +170,7 @@ export const useGlobalStore = defineStore({
         },
         updateFont(family, pixelSize) {
             console.log("pixelSize : ", pixelSize)
+            this.FontSize = pixelSize;
             document.documentElement.style.fontSize = pixelSize + 'px';  
             document.documentElement.style.fontFamily = family;
             document.body.style.setProperty('--font-family', family);

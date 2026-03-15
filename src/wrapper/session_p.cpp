@@ -550,7 +550,12 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestRag(LLMServerProx
         // 更新llm的账号
         copilot->updateAccount(tmpLLMAccountDecrypt);
 
-        QJsonObject response = copilot->predict(ragPromptBuild(conversation), QJsonArray());
+        QString ragPrompt = ragPromptBuild(conversation);
+        if (ragPrompt.isEmpty()) {
+            QMetaObject::invokeMethod(m_q, "error", Qt::QueuedConnection, Q_ARG(QString, uuid), Q_ARG(int, AIServer::UnknownContentError), Q_ARG(QString, tr("Something's wrong. Please try again later.")));
+            return uuid;
+        }
+        QJsonObject response = copilot->predict(ragPrompt, QJsonArray());
 
         if (LLMThreadTaskMana::instance()->isFinished(uuid))
             return uuid;
@@ -795,7 +800,6 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestPlugin(LLMServerP
         QString role = m_assistantProxy.id;
         qCDebug(logWrapper) << "Preparing request with role:" << role << " - uuid:" << uuid;
 
-        QDateTime requestTime = QDateTime::currentDateTime();
         QJsonObject response = copilot->predict(conversation, functions);
 
         // 如果结束了，只有一种可能，此对象被销毁了，销毁了就不要继续下面的流程了
@@ -868,7 +872,8 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
         LLMServerProxy tmpLLMAccountDecrypt = tmpLLMAccountLocal.decryptAccount();
 
         QSharedPointer<LLM> copilot = LLMVendor()->getCopilot(tmpLLMAccountDecrypt);
-        if (copilot.isNull()) {
+        QSharedPointer<LlmAgent> agent = AgentFactory::instance()->getAgent(params.value(PREDICT_PARAM_MCPAGENT).toString());
+        if (copilot.isNull() || agent.isNull()) {
             eventloop.quit();
             isLoopQuit = true;
 
@@ -876,18 +881,17 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
             oneloop.setTimeout(100);
             oneloop.exec();
 
+            QString msg = copilot.isNull() ? "Invalid LLM Account." : "Invalid Agent.";
             QMetaObject::invokeMethod(m_q, "error", Qt::QueuedConnection, Q_ARG(QString, uuid), Q_ARG(int, AIServer::ContentAccessDenied), Q_ARG(QString, "Invalid LLM Account."));
             return uuid;
         }
 
-        QSharedPointer<LlmAgent> agent = AgentFactory::instance()->getAgent(kDefaultAgentName);
         copilot->loadParams(params);
         copilot->setCreatedId(uuid);
         // must be stream
         copilot->switchStream(true);
 
-        connect(m_q, &Session::executionAborted, copilot.data(), &LLM::aborted);
-        connect(copilot.data(), &LLM::aborted, agent.data(), &LlmAgent::cancel);
+        connect(m_q, &Session::executionAborted, copilot.data(), &LLM::aborted, Qt::DirectConnection);
 
         m_runTaskIds << uuid;
         LLMThreadTaskMana::instance()->addRequestTask(uuid, copilot.toWeakRef());
@@ -930,6 +934,14 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
             auto ary = QJsonDocument::fromJson(conversation.toUtf8()).array();
             auto question = ary.last();
             ary.pop_back();
+
+            // 给点时间，等待流式输出socket建立连接
+            {
+                TimerEventLoop oneloop;
+                oneloop.setTimeout(500);
+                oneloop.exec();
+            }
+
             response = agent->processRequest(question.toObject(), ary, params);
 
             // 如果结束了，只有一种可能，此对象被销毁了，销毁了就不要继续下面的流程了
@@ -937,6 +949,8 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
                 return uuid;
 
             if (copilot->lastError() != AIServer::NoError) {
+                // 给点时间，等待流式输出完成
+                QThread::msleep(500);
                 if (copilot->isReplied() && (copilot->lastError() == AIServer::OperationCanceledError))
                     increaseAccountUsage(tmpLLMAccountDecrypt, ChatTextPlain);
 
@@ -966,6 +980,7 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
     QObject::connect(futureWatcher, &QFutureWatcher<QString>::finished, this, [ = ]{
         McpConfigSyncer::instance()->fetchConfigFromServerAsync();
     });
+
     futureWatcher->setFuture(future);
 
     QStringList reply;
@@ -1397,16 +1412,33 @@ QString SessionPrivate::ragPromptBuild(const QString &conversation)
     timer.start();
     QString resultData = EmbeddingServer::getInstance().embeddingSearch(ragQuery, 10, m_assistantProxy.type);
     qint64 elapsed = timer.elapsed();
+    if (resultData.isEmpty()) {
+        QJsonObject reference;
+        reference.insert("type", ExtentionType::KnowledgeBase);
+        reference.insert("searchTime", elapsed / 1000.0);
+        QString referensStr = QJsonDocument(reference).toJson(QJsonDocument::Compact);
+        QMetaObject::invokeMethod(m_q, "previewReference", Qt::QueuedConnection, Q_ARG(QString, referensStr));
+
+        return QString();
+    }
 
     QJsonObject resultObj = QJsonDocument::fromJson(resultData.toUtf8()).object();
     QString knowleadge;
     QHash<QString, QVector<QString>> references;
+    int index = 1;
     for (auto res : resultObj["result"].toArray()) {
         QString docPath = res.toObject().value("source").toString();
         QString docContent = res.toObject().value("content").toString();
 
         references[docPath].push_back(docContent);
+
+        // 添加明确的片段标识符，帮助模型区分上下文
+        QFileInfo docFile(docPath);
+        knowleadge += QString("--- [Source %1: %2] ---\n").arg(QString::number(index), docFile.fileName());
         knowleadge += docContent;
+        knowleadge += "\n\n";
+
+        index++;
     }
 
     {

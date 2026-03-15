@@ -147,6 +147,16 @@ bool ShortcutUpdateDialog::checkAndShow(QWidget *parent)
         return false;
     }
 
+    // v2.13 新版写作助手
+    {
+        int value = DbWrapper::localDbWrapper().getUpdatePromptBits(UpdatePromptBitType::NEW_WRITING);
+        qCInfo(logAIGUI) << "NEW_WRITING db value:" << value;
+        if (value == 0) {
+            EAiExec()->showPromptWindow();
+        }
+        return true;
+    }
+
     // v2.12 MCP自动模式
     {
         int value = DbWrapper::localDbWrapper().getUpdatePromptBits(UpdatePromptBitType::AUTO_MCP);

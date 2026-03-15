@@ -97,6 +97,7 @@ signals:
     void sigEmbeddingPluginsStatusChanged(bool exist);
 
     void sigDocSummaryParsingStart(const QString &docPath, const QString &iconData, const QString &defaultPrompt, int error);
+    void sigDocSummaryForOffice(const QString filesDataJson, int error, int category);
     void sigDocSummaryParserResult(const QString &id, int error, const QString &docPath, const QString &docContent);
     void sigOpenFileFromPathResult(bool ok);
 
@@ -133,6 +134,16 @@ signals:
 
     void sigIsGotFreeCredits(bool isGotFreeCredits);
     void sigGetFreeCreditsResult(bool success, const QString &msg);  // 免费额度获取结果
+
+    void sigIconThemeChanged();
+
+    void sigDownloadFileFinished(const QString &id, bool result);
+
+    // System event signal: triggered when shutdown/restart/lock/quit occurs
+    void sigSystemEvent(const QString &eventType);
+
+    void sigActiveChatFromDigitalImage();
+
 public slots:
     //Js Call this method to notify C++
     //error
@@ -266,7 +277,7 @@ public slots:
      * @param isEnd is all the text transfered.
      *      true if the end.
      */
-    bool playTextAudio(const QString &id, const QString &text, bool isEnd);
+    bool playTextAudio(const QString &id, const QString &text, bool isEnd, bool isPlayOutline);
     /**
      * @brief stopPlayTextAudio
      *      Stop to play TTS.
@@ -397,6 +408,7 @@ public slots:
     void installEmbeddingPlugins();
 
     void onDocSummarySelect();
+    void onDocSummaryForOfficeSelect(int category);
     QString processClipboardData();
     void onDocSummaryParsing(const QString &id, const QString &docPath);
     void openFile(const QString &filePath);
@@ -434,6 +446,8 @@ public slots:
     void setTitleBarStatus(bool status);
 
     bool showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete);
+    bool showRemoveFileDialog(const QString &message);
+    bool showAllowUploadFilesAlert(int modelType, const QString &modelDisplayName, bool searchOnline);
 
     void updateUpdatePromptDB(bool isClicked);
     void updateUpdateFreeAccountGuideDB(bool isClicked);
@@ -483,6 +497,35 @@ public slots:
 
     // 当前是否为简体中文
     bool isSimplifiedChinese();
+
+    // 大纲删除确认框
+    bool isDeleteOutlineTitle();
+
+    // 或者下载列表图标
+    QString getDownloadListIcon(const QString &fileSuffix);
+
+    // 下载文件
+    bool downloadFile(const QString &id, const QString &title, const QString &content, const QString &suffix);
+
+    // 打印文档
+    void printDocument(const QString &html, const QString &title);
+
+    // 更新当前应答侧index
+    void updateAnswresActiveIndex(int activeIndex);
+
+    /**
+     * @brief 前端确认数据已保存
+     * 当系统准备关机/重启/休眠时，前端完成数据保存后调用此方法
+     * 告知系统可以继续关机流程
+     */
+    Q_INVOKABLE void confirmDataSaved();
+
+    // 禁止切换数字形象
+    void setDigitalImageDisable(bool disable);
+
+    // 是否从数字形象强制切换为聊天
+    bool isActiveChatFromDigitalImage();
+
 protected:
     //Property Get methods
 //    int getThemeType() { return m_themeType;}

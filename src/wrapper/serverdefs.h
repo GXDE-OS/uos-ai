@@ -86,7 +86,14 @@ enum ChatAction {
     ChatFunctionCall  = 1,      // FunctionCall
     ChatText2Image    = 2,       // 文生图
     ChatTextThink     = 3,       // 思考内容
-    ChatToolUse       = 4        // 智能体工具调用
+    ChatToolUse       = 4,      // 智能体工具调用
+    AgentReasonTitle  = 5,      // 任务进度的标题、状态
+    AgentReasoning    = 6,      // 任务进度详细内容
+    AgentAction       = 7,      // 任务进度中的工具调用
+    ChatOutline       = 8,      // 大纲
+    ChatDocCard       = 9,      // 写作助手-报告卡片
+    ChatGuessYouWant  = 10,     // AI写作-预测用户下一步问题
+    AIWritingReference= 11,     // AI写作-生成文章的引用内容
 };
 
 enum AssistantType {
@@ -463,6 +470,7 @@ struct AssistantProxy {
     {
         return !id.isEmpty();
     }
+
     static QString assistantName(AssistantType type)
     {
         QString name = "Unknown";
@@ -494,6 +502,7 @@ struct AssistantProxy {
         }
         return name;
     }
+
     QString assistantDisplayName(AssistantType type) const
     {
         QString name = displayName;
@@ -525,6 +534,7 @@ struct AssistantProxy {
         }
         return name;
     }
+
     QString assistantDescrption(AssistantType type) const
     {
         QString desc = description;
@@ -556,6 +566,7 @@ struct AssistantProxy {
         }
         return desc;
     }
+
     QString assistantIcon(AssistantType type) const
     {
         QString iconName = icon;
@@ -586,28 +597,6 @@ struct AssistantProxy {
             break;
         }
         return iconName;
-    }
-};
-
-struct ToolUse
-{
-    enum Staus { Calling = 0, Completed, Failed, Canceled };
-    QString name;
-    QString params;
-    QString result;
-    QString content;
-    Staus status = Calling;
-    int index;
-
-   inline QJsonObject toJson() const {
-        QJsonObject obj;
-        obj.insert("name", name);
-        obj.insert("params", params);
-        obj.insert("result", result);
-        obj.insert("content", content);
-        obj.insert("status", static_cast<int>(status));
-        obj.insert("index", index);
-        return  obj;
     }
 };
 

@@ -135,7 +135,7 @@ void UosAiWidget::loadSvg()
     iconSize = QSize(PLUGIN_ICON_MAX_SIZE, PLUGIN_ICON_MAX_SIZE);
 #endif
 //#ifdef 0
-    iconSize = QSize(width() * 0.7, width() * 0.7);
+    iconSize = QSize(16, 16);
 //#endif
 
     m_pixmap = QPixmap(int(iconSize.width() * ratio), int(iconSize.height() * ratio));

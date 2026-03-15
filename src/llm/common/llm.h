@@ -17,6 +17,7 @@
 #define PREDICT_PARAM_NOJSONOUTPUT "onJsonOutput"  // only send content not json format in dbus session
 
 #define PREDICT_PARAM_MCPSERVERS "mcpServers"  // what mcp servers need to use.
+#define PREDICT_PARAM_MCPAGENT "mcpAgentId"
 
 class LLM : public QObject
 {

@@ -17,6 +17,7 @@ public:
         Search        = 4,
         McpAgent      = 5,
         Rag           = 6,
+        AIWriting     = 7,
     };
 
     explicit EAiPrompt(const QString &userData = QString(""), const QString &aiData = QString(""), int llmType = 1);
@@ -39,6 +40,9 @@ public:
 
     void setInstType(int type);
     int instType();
+
+    void setParams(const QVariantHash &params);
+    QVariantHash getParams();
 
 protected:
     enum LLMChatModel {
@@ -69,6 +73,8 @@ protected:
     RequstType m_reqType {RequstType::General};
     QJsonArray m_funcs;
     int m_instType {-1};
+
+    QVariantHash m_params;
 };
 
 #endif // EAIPROMPT_H

@@ -40,43 +40,50 @@ DCORE_USE_NAMESPACE
 using namespace uos_ai;
 
 int IatWidget::getRecoderVolume() {
+#ifdef COMPILE_ON_V25
+    QString dbusAudioService = "org.deepin.dde.Audio1";
+    QString dbusAudioPath = "/org/deepin/dde/Audio1";
+#else
+    QString dbusAudioService = "com.deepin.daemon.Audio";
+    QString dbusAudioPath = "/com/deepin/daemon/Audio";
+#endif
     // 获取麦克风设备
-    QDBusInterface interface("com.deepin.daemon.Audio",
-                              "/com/deepin/daemon/Audio",
+    QDBusInterface interface( dbusAudioService,
+                              dbusAudioPath,
                               "org.freedesktop.DBus.Properties");
-    QDBusReply<QDBusVariant> reply = interface.call("Get", "com.deepin.daemon.Audio", "DefaultSource");
+    QDBusReply<QDBusVariant> reply = interface.call("Get", dbusAudioService, "DefaultSource");
     if (!reply.isValid()) {
-        qCritical() << "dbus call com.deepin.daemon.Audio DefaultSource FAILED:" << reply.error().name();
+        qCritical() << "dbus call "<<dbusAudioService<<" DefaultSource FAILED:" << reply.error().name();
         return -1;
     }
 
     QString defaultSource = reply.value().variant().value<QDBusObjectPath>().path();
-    qInfo() << "dbus call com.deepin.daemon.Audio DefaultSource:" << defaultSource;
+    qInfo() << "dbus call "<<dbusAudioService<<" DefaultSource:" << defaultSource;
     if (defaultSource.isEmpty()) {
-        qWarning() << "dbus call com.deepin.daemon.Audio DefaultSource EMPTY";
+        qWarning() << "dbus call "<<dbusAudioService<<" DefaultSource EMPTY";
         return -1;
     }
 
     // 判断是否静音
-    QDBusInterface interface1("com.deepin.daemon.Audio",
+    QDBusInterface interface1( dbusAudioService,
                                defaultSource,
                                "org.freedesktop.DBus.Properties");
-    reply = interface1.call("Get", "com.deepin.daemon.Audio.Source", "Name");
+    reply = interface1.call("Get", dbusAudioService + ".Source", "Name");
     if(!reply.isValid()){
-        qWarning() << "dbus call com.deepin.daemon.Audio Name FAILED:" << reply.error().name();
+        qWarning() << "dbus call "<<dbusAudioService<<" Name FAILED:" << reply.error().name();
         return -1;
     }
 
     QString name = reply.value().variant().toString();
-    qInfo() << "dbus call com.deepin.daemon.Audio Name:" << name;
+    qInfo() << "dbus call "<<dbusAudioService<<" Name:" << name;
     if (name.endsWith("monitor")) {
-        qWarning() << "dbus call com.deepin.daemon.Audio Name INVALID";
+        qWarning() << "dbus call "<<dbusAudioService<<" Name INVALID";
         return -1;
     }
 
-    reply = interface1.call("Get", "com.deepin.daemon.Audio.Source", "Mute");
+    reply = interface1.call("Get", dbusAudioService + ".Source", "Mute");
     if(!reply.isValid()){
-        qWarning() << "dbus call com.deepin.daemon.Audio Mute FAILED:" << reply.error().name();
+        qWarning() << "dbus call "<<dbusAudioService<<" Mute FAILED:" << reply.error().name();
         return -1;
     }
 
@@ -87,12 +94,12 @@ int IatWidget::getRecoderVolume() {
     }
 
     // 获取麦克风音量
-    QDBusInterface interface2("com.deepin.daemon.Audio",
+    QDBusInterface interface2( dbusAudioService,
                                defaultSource,
                                "org.freedesktop.DBus.Properties");
-    reply = interface2.call("Get", "com.deepin.daemon.Audio.Source", "Volume");
+    reply = interface2.call("Get", dbusAudioService + ".Source", "Volume");
     if(!reply.isValid()){
-        qWarning() << "dbus call com.deepin.daemon.Audio Volume FAILED:" << reply.error().name();
+        qWarning() << "dbus call "<<dbusAudioService<<" Volume FAILED:" << reply.error().name();
         return -1;
     }
 
@@ -116,12 +123,28 @@ IatWidget::~IatWidget() {
 }
 
 void IatWidget::initUi() {
-    QScreen *desktopWidget = QGuiApplication::primaryScreen();
-    QRect availableRect = desktopWidget->availableGeometry();
+    // Get the screen where the mouse cursor is located
+    QPoint cursorPos = QCursor::pos();
+    QScreen *cursorScreen = nullptr;
+    
+    // Find the screen that contains the cursor position
+    for (QScreen *screen : QGuiApplication::screens()) {
+        if (screen->geometry().contains(cursorPos)) {
+            cursorScreen = screen;
+            break;
+        }
+    }
+    
+    // Fallback to primary screen if cursor screen not found
+    if (!cursorScreen) {
+        cursorScreen = QGuiApplication::primaryScreen();
+    }
+    
+    QRect availableRect = cursorScreen->availableGeometry();
 
     this->setFixedSize(QSize(WIDGET_WIDTH, WIDGET_HEIGHT));
     QPoint pos((availableRect.width() - this->width()) / 2, availableRect.height() - this->height());
-    this->move(pos - QPoint(0, 10));
+    this->move(cursorScreen->geometry().topLeft() + pos - QPoint(0, 10));
     this->installEventFilter(this);
 #ifdef COMPILE_ON_V20
     if (ESystemContext::isWayland()) {

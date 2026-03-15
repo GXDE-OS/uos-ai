@@ -7,6 +7,7 @@
         :style="{ maxWidth: '100%' }">
         <!-- 内容区域 -->
         <div class="documentParsingContent" ref="documentParsingContentRef">
+            <div class="fileTitle" v-show="isShowTitle">{{ store.loadTranslations['Outline:'] }}</div> 
             <div class="fileIcon" ref="fileIconRef">
                 <img :src="imageUrl" alt="" :imgBase64="imgBase64">
             </div>
@@ -40,7 +41,7 @@ import { Qrequest } from "@/utils";
 import _ from "lodash";
 
 const { chatQWeb, updateActivityColor, updateTheme, updateFont } = useGlobalStore()
-
+const store = useGlobalStore()
 const props = defineProps({
     fileInfo: Object,
     isWindowMode: Boolean,
@@ -88,6 +89,10 @@ const setFileIcon = (imgBase64_) =>{
     const blob = base64ToBlob(imgBase64_);
     imageUrl.value = createObjectURL(blob);
 }
+
+const isShowTitle = computed(() => {
+    return props.fileInfo.fileCategory === store.DocFileCategory.FileOutline
+})                          
 
 // 将Base64字符串转换为Blob
 function base64ToBlob(base64) {
@@ -267,6 +272,7 @@ onBeforeUnmount(() => {
         align-items: center; /* 水平方向居中 */  
         border-radius: 8px;  /* 圆角 */
         cursor: pointer;
+        user-select: none;
 
         /* 添加伪元素用于扩大hover区域 */
         &::before {
@@ -291,6 +297,20 @@ onBeforeUnmount(() => {
             min-width: none;
             text-overflow: ellipsis;/* 超出部分显示省略号 */
             overflow: hidden;/* 超出部分不显示 */
+            
+            .fileTitle{
+                display: flex;
+                height: 30px;
+                align-items: center; /* 水平方向居中 */  
+                font-size: 1rem;
+                font-family: var(--font-family);
+                font-weight: 400;
+                white-space: nowrap; /* 不换行 */
+                text-overflow: ellipsis;/* 超出部分显示省略号 */
+                overflow: hidden;/* 超出部分不显示 */
+                margin-left: 7px;
+                color: var(--uosai-color-document-file-name-text);
+            }
             
             .fileIcon{
                 display: grid;

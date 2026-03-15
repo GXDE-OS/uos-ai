@@ -57,6 +57,13 @@ enum ChatInitAsyncTask {
     AddAskQuestion,
 };
 
+// 红点来源枚举
+enum RedPointSource {
+    UpdateLogSource = 0x01,   // 更新日志
+    SettingsSource = 0x02,    // 设置
+    AllSources = 0xFF         // 所有来源
+};
+
 class ChatWindow : public DMainWindow
 {
     Q_OBJECT
@@ -111,6 +118,8 @@ public:
     bool showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete, bool isAllConvDelete);
     bool showRmMcpServerDlg(const QString &name);
     void showUpdateDialog(const QString &msg, const QString &appName);
+    bool showRemoveFileDialog(const QString &message);
+    bool showAllowUploadFilesAlert(int modelType, const QString &modelDisplayName, bool searchOnline);
 
     void startScreenshot();
 
@@ -132,7 +141,18 @@ public:
 
     // 查询当前快捷键设置
     QString getCurrentShortcut();
-    void showGetFreeCreditsResultDlg(bool isSuccess);
+
+    // 大纲删除确认框
+    bool isDeleteOutlineTitle();
+
+    // 图标主题变化
+    void iconThemeChanged();
+
+    // 禁止切换数字形象
+    void setDigitalImageDisable(bool disable);
+
+    // 是否从数字形象强制切换为聊天
+    bool isActiveChatFromDigitalImage();
 protected:
     //rewrite mouseMoveEvent to block the mouse move event.
     void mouseMoveEvent(QMouseEvent *event) override;
@@ -156,6 +176,10 @@ private:
     void activeShowWindow();
     QString getLatestUpdateLogVersion();
     void checkForUpdateLogs();
+
+    // 统一的红点管理方法
+    void updateOptionButtonRedPoint();
+    void setRedPointSource(RedPointSource source, bool visible);
 
 public Q_SLOTS:
     void onSystemThemeChanged();
@@ -228,6 +252,15 @@ private:
 
     bool m_needActiveWindow { true };
     QString m_currentShortcut;
+
+    // 红点状态追踪（使用位掩码）
+    int m_redPointSources = 0;  // 当前启用红点的来源组合
+
+    // 当前是否禁用数字形象
+    bool m_isDigitalImageDisable = false;
+
+    // 是否从数字形象强制切换为聊天
+    bool m_isActiveChatFromDigitalImage = false;
 };
 
 #endif // CHATWINDOW_H

@@ -1,10 +1,4 @@
-uos-ai (2.12.522-1) unstable; urgency=medium
-
-  * update
-
- -- deepin <packages@deepin.com>  Tue, 06 Jan 2026 17:34:31 +0800
-
-uos-ai (1.3.5) unstable; urgency=medium
+uos-ai (2.12.529) unstable; urgency=medium
 
   * update uos ai baseline version to V1.3.5
 

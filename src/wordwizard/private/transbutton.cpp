@@ -64,6 +64,9 @@ void TransButton::paintEvent(QPaintEvent* e)
 {
     QRectF rect = this->rect();
     QPainter pa(this);
+    // Enable anti-aliasing for smooth edges
+    pa.setRenderHint(QPainter::Antialiasing, true);
+    pa.setRenderHint(QPainter::SmoothPixmapTransform, true);
     DPalette palette = this->palette();
     DPalette parentPb = DGuiApplicationHelper::instance()->applicationPalette();
     QColor backgroundColor = QColor(0, 0, 0, 0);

@@ -10,7 +10,7 @@
 Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 static constexpr char kSystemAssistantEmbedding[] { "SystemAssistant" };
-static constexpr char kPersonlAssistantEmbedding[] { "uos-ai" };
+static constexpr char kPersonlAssistantEmbedding[] { "uos-ai-assistant" };
 
 #define NM_SERVICE      "org.deepin.ai.daemon.VectorIndex"
 #define NM_PATH         "/org/deepin/ai/daemon/VectorIndex"
@@ -34,7 +34,7 @@ EmbeddingServer::EmbeddingServer(QObject *parent) : QObject(parent)
                                          "IndexDeleted",
                                          this, SIGNAL(onIndexDeleteFinished(const QString &, const QStringList &)));
 
-    appid = QCoreApplication::applicationName();
+    appid = kPersonlAssistantEmbedding;
 }
 
 QJsonObject EmbeddingServer::getDocList()
@@ -107,26 +107,17 @@ QStringList EmbeddingServer::searchVecor(const QString &query, int topK, Assista
 QString EmbeddingServer::embeddingSearch(const QString &query, int topK, AssistantType type)
 {
     QDBusMessage reply;
-    bool callOk = false;
+    embedInterface->setTimeout(60000);
     if (AssistantType::UOS_SYSTEM_ASSISTANT == type || AssistantType::DEEPIN_SYSTEM_ASSISTANT == type) {
-        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(kSystemAssistantEmbedding), QVariant(query), QVariant(topK));
-        pendingCall.waitForFinished();
-        reply = pendingCall.reply();
-        callOk = pendingCall.isValid();
+        reply = embedInterface->call("Search", QVariant(kSystemAssistantEmbedding), QVariant(query), QVariant(topK));
     } else {
-        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(appid), QVariant(query), QVariant(topK));
-        pendingCall.waitForFinished();
-        reply = pendingCall.reply();
-        callOk = pendingCall.isValid();
+        reply = embedInterface->call("Search", QVariant(appid), QVariant(query), QVariant(topK));
     }
 
-    if (callOk) {
-        qCDebug(logDBus) << "Embedding search completed successfully";
-    } else {
-        qCWarning(logDBus) << "Embedding search failed:" << reply.errorMessage();
+    if (reply.type() == QDBusMessage::MessageType::ErrorMessage) {
+        return QString();
     }
 
-    //json格式检索结果
     return reply.arguments().at(0).toString();
 }
 

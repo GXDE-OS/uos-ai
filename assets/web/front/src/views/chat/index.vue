@@ -1,6 +1,6 @@
 <template>
     <div class="main-content"
-
+        v-show="!showMarkdownEditor"
         @dragstart="handleDragStart"
         @dragenter.prevent="handleDragEnter"
         @dragover.prevent="handleDragOver"
@@ -24,7 +24,6 @@
             @selectHistoryItem="selectHistoryItem"
             @showAlertDialog="showAlertDialog"
             @showClearHistoryAlertDialog="showClearHistoryAlertDialog"/>
-        <ChatTop />
         <WelcomePage ref="welcomePageRef"
             v-model:question="question"
             :recording="recording"
@@ -64,6 +63,11 @@
                         @retryRequest="retryRequest"
                         @updateLikeOrDislike="updateLikeOrDislike"
                         @questionAction="questionAction"
+                        @updateOutline="updateOutline"
+                        @updateActiveIndex="updateActiveIndex"
+                        @guessYouWantClick="handleGuessYouWantClick"
+                        @genContentFromOutline="clickBaseOutlineGenContent"
+                        @openMarkdownEditor="openMarkdownEditor"
                         :currentAssistant="currentAssistant"
                         :isLLMExist="isLLMExist"
                         :isDarkMode="isDarkMode"
@@ -72,8 +76,8 @@
                 </div>
             </custom-scrollbar>
         </div>
-        <div class="chat-bottom" :class="{'disabled': isUIDisabledForPopup}">
-            <div class="handle-tip">
+        <div class="chat-bottom">
+            <div class="handle-tip" :class="{'disabled': isUIDisabledForPopup}">
                 <div class="tip-item-msg" v-show="showTopTip" :class="{ 'advanced-features': store.IsEnableAdvancedCssFeatures }" :style="{'backdrop-filter': store.IsEnableAdvancedCssFeatures  ? isDarkMode ? 'blur(30px) ': 'blur(20px) '  : 'none'}">
                     {{ topTipMsg }}
                 </div>
@@ -84,7 +88,7 @@
                     <svgIcon icon="stop" /> {{ store.loadTranslations['Stop'] }}
                 </div>
             </div>
-            <div class="top-returnBtnOut">
+            <div class="top-returnBtnOut" :class="{'disabled': isUIDisabledForPopup}">
                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                     :show-after="1000" :offset="2" :content="store.loadTranslations['Back to bottom']">
                     <div class="top-returnBtn" @click="returnBottom" v-show="showReturnBottom && history.length > 0">
@@ -97,7 +101,7 @@
                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                     :show-after="1000" :offset="2" :content="store.loadTranslations['New Conversation']">
                     <div class="add-new-conversation" ref="conversationModeIconRef"
-                        :class="{'disabled': disabled || recording}"
+                        :class="{'disabled': disabled || recording || isUIDisabledForPopup}"
                         :style="{ 'margin-right': '6px'}"
                         @click="selectConversionMode(store.ConversionMode.Normal)">
                         <SvgIcon icon="new-conversation" style="width: 20px;height: 20px;"/>
@@ -107,7 +111,7 @@
                     </div>
                 </el-tooltip>
                 <!-- 会话模式选择组件 -->
-                <ConversionMode
+                <ConversionMode :class="{'disabled': isUIDisabledForPopup}"
                     :show="showConversionMode"
                     @close="closeConversionMode"
                     @selectMode="selectConversionMode"
@@ -115,7 +119,7 @@
                 <!-- 历史记录按钮 -->
                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                     :show-after="1000" :offset="2" :content="store.loadTranslations['History']">
-                    <div class="prompt-btn" :class="{'disabled': (recording || disabled)}"
+                    <div class="prompt-btn" :class="{'disabled': (recording || disabled || isUIDisabledForPopup)}"
                          :style="{ 'margin-right': ((currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && (isShowPromptBtn || isEnableMcp)) ? '6px' : 'auto' }"
                         @click="openHistoryList">
                         <SvgIcon icon="open-history" />
@@ -124,10 +128,10 @@
                 <!-- 知识库开关按钮 -->
                 <el-tooltip popper-class="uos-tooltip knowledge-base-switch-tooltip" effect="light" :show-arrow="false" :enterable="false"
                     :show-after="1000" :offset="2" :content="knowledgeBaseSwitchHoverContent"
-                    :class="{ 'disabled': !(recording || disabled) }">
+                    :class="{ 'disabled': !(recording || disabled || isUIDisabledForPopup) }">
                     <div class="prompt-btn" @click="clickKnowledgeBaseIcon"
                        :style="{ 'margin-right': ((currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && (isShowPromptBtn || isEnableMcp)) ? '6px' : 'auto' }"
-                        :class="{ 'disabled': (recording || disabled) }"
+                        :class="{ 'disabled': (recording || disabled || isUIDisabledForPopup) }"
                         v-show="(currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && isEnableKnowledgeBase">
                         <SvgIcon icon="personal-knowledge-icon" :style="{'margin-left': '1px', 'fill': store.IsOpenKnowledgeBase ?  'var(--activityColor)' : 'var(--uosai-color-flat-btn-icon)'}"/>
                     </div>
@@ -135,10 +139,10 @@
                 <!-- 指令按钮 -->
                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                     :show-after="1000" :offset="2" :content="instructionHoverContent"
-                    :class="{ 'disabled': !(recording || disabled) }">
+                    :class="{ 'disabled': !(recording || disabled || isUIDisabledForPopup) }">
                     <div class="prompt-btn" @click="selectPrompt"
                         :style="{ 'margin-right': ((currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && isShowPromptBtn && isEnableMcp) ? '6px' : 'auto' }"
-                        :class="{ 'disabled': (recording || disabled) }"
+                        :class="{ 'disabled': (recording || disabled || isUIDisabledForPopup) }"
                         v-show="(currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && isShowPromptBtn">
                         <SvgIcon icon="prompt"/>
                     </div>
@@ -146,11 +150,11 @@
                 <!-- mcp开关按钮 -->
                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                     :show-after="1000" :offset="2" :content="mcpHoverContent"
-                    :class="{ 'disabled': !(recording || disabled) }">
+                    :class="{ 'disabled': !(recording || disabled || isUIDisabledForPopup) }">
                     <div class="prompt-btn mcp-switch" @click="clickMcpServerIcon"
                         ref="mcpServerIconRef"
                         style="margin-right: auto;"
-                        :class="{ 'disabled': (recording || disabled) }"
+                        :class="{ 'disabled': (recording || disabled || isUIDisabledForPopup) }"
                         v-show="(currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && isEnableMcp">
                         <SvgIcon icon="mcp-switch" :style="{'fill': store.IsOpenMcpServer && store.IsInstallUOSAiAgent?  'var(--activityColor)' : 'var(--uosai-color-flat-btn-icon)', 'width': '20px', 'height': '20px'}"/>
                         <div class="setmcp-icon" @click="clickMcpSetting">
@@ -159,7 +163,7 @@
                     </div>
                 </el-tooltip>
                 <!-- mcp设置组件 -->
-                <McpSetting
+                <McpSetting :class="{'disabled': isUIDisabledForPopup}"
                     :target="mcpServerIconRef"
                     :show="showMcpSetting"
                     @clickMcpIcon="clickMcpServerIcon"
@@ -170,9 +174,10 @@
                     v-model:currentAccount="currentAccount" v-model:accountList="accountList"
                     v-model:assistantList="assistantList" v-model:currentAssistant="currentAssistant"
                     :showGuide="showGuide"
+                    :guideActiveItemId="guideActiveAssistantId"
                     :disabled="disabled || recording"  @update:currentAssistant="updateCurAssistant" @update:currentAccountChanged="currentAccountChanged"/>
             </div>
-            <div class="input-content" @mouseup="handleMouseUp" :class="{ 'foucs': isFocus, 'private-mode': store.ConversationModeStatus === store.ConversionMode.Private }" :style="{'background-color': store.ConversationModeStatus === store.ConversionMode.Private ? 'var(--activityColorPrivateModeInputBackgroundColor)' : 'var(--uosai-color-inputcontent-bg)'}">
+            <div class="input-content" @mouseup="handleMouseUp" :class="{ 'foucs': isFocus, 'private-mode': store.ConversationModeStatus === store.ConversionMode.Private, 'disabled': isUIDisabledForPopup }" :style="{'background-color': store.ConversationModeStatus === store.ConversionMode.Private ? 'var(--activityColorPrivateModeInputBackgroundColor)' : 'var(--uosai-color-inputcontent-bg)'}">
                 <!-- 指令列表 -->
                 <PromptList ref="promptListRef" class="propmpt-list"
                     :showPropmptList="showPropmptList"
@@ -187,7 +192,7 @@
                         :functionList="functionList"
                         :isWindowMode="isWindowMode"
                         :currentAssistant="currentAssistant"
-                        v-show="currentAssistant.type === store.AssistantType.AI_WRITING_ASSISTANT||currentAssistant.type === store.AssistantType.AI_TEXT_PROCESSING_ASSISTANT"
+                        v-show="currentAssistant.type === store.AssistantType.AI_TEXT_PROCESSING_ASSISTANT"
                         @selectFunction="handleFunctionSelect"
                         @clearFunction="handleFunctionClear"
                     />
@@ -195,10 +200,41 @@
                     <div class="input-tag">
                         <!-- 文档总结 -->
                          <div class="document-parsing" :style="{'display': isWindowMode ? 'flex' : 'block'}">
-                            <div v-for="file in inputFileList" :key="file.index" >
-                                <DocumentParsing class="document-parsing-item" :style="{'max-width': isWindowMode ? '317px' : 'calc(100% - 20px)'}"
-                                    @sigDeleteFile="sigDeleteFile" :fileInfo="file" :isWindowMode="isWindowMode" :isDarkMode="isDarkMode"/>
-                            </div>
+                            <!-- AI写作助手场景下的特殊处理 -->
+                            <template v-if="currentAssistant.type === store.AssistantType.AI_WRITING_ASSISTANT">
+                                <!-- 本地素材按钮 -->
+                                <div v-if="materialFiles.length > 0" class="local-material-btn-wrapper">
+                                    <div class="local-material-btn" @click="showLocalMaterialsList = !showLocalMaterialsList" ref="localMaterialBtnRef">
+                                        <SvgIcon icon="local-materials" />
+                                        <span class="local-material-text">{{ store.loadTranslations['Local Materials'] }} ({{ materialFiles.length }})</span>
+                                        <SvgIcon icon="arrow_down" style="width: 8px; height: 8px; margin-left: 8px; margin-right: 8px;"/>
+                                    </div>
+
+                                    <!-- 本地素材列表 - 确保 localMaterialBtnRef 存在后再显示 -->
+                                    <LocalMaterialsList
+                                        v-if="showLocalMaterialsList && localMaterialBtnRef"
+                                        ref="localMaterialsListRef"
+                                        :materialList="materialFiles"
+                                        :isDarkMode="isDarkMode"
+                                        :targetBtnRef="localMaterialBtnRef"
+                                        @close="showLocalMaterialsList = false"
+                                        @delete="handleDeleteMaterialFile"
+                                    />
+                                </div>
+                                <!-- 仅显示大纲文件 -->
+                                <div v-for="file in outlineFiles" :key="file.index">
+                                    <DocumentParsing class="document-parsing-item" :style="{'max-width': isWindowMode ? '317px' : 'calc(100% - 20px)'}"
+                                        @sigDeleteFile="sigDeleteFile" :fileInfo="file" :isWindowMode="isWindowMode" :isDarkMode="isDarkMode"/>
+                                </div>
+                            </template>
+                            
+                            <!-- 其他助手类型的原有逻辑 -->
+                            <template v-else>
+                                <div v-for="file in inputFileList" :key="file.index">
+                                    <DocumentParsing class="document-parsing-item" :style="{'max-width': isWindowMode ? '317px' : 'calc(100% - 20px)'}"
+                                        @sigDeleteFile="sigDeleteFile" :fileInfo="file" :isWindowMode="isWindowMode" :isDarkMode="isDarkMode"/>
+                                </div>
+                            </template>
                          </div>
                         <!-- 指令标签 -->
                         <PromptTag v-show="showPromptTag" :promptTag="promptTag"
@@ -240,19 +276,22 @@
                                     :isWindowMode="isWindowMode"
                                     @update:currentAccountChanged="currentAccountChanged"
                                     :style="{'margin-right': isWindowMode ? '10px' : '6px'}"/>
-                            <div v-show="showDeepThinkAndSearchOnline"  style="display: flex;">
+                            <!-- 深度思考和联网搜索 -->
+                            <div style="display: flex;">
+                                <!-- 深度思考开关 -->
                                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                                 :show-after="1000" :offset="2"
                                 :content="store.loadTranslations['DeepThink(R1)']">
-                                    <div class="deep-think-btn" @click="deepThinkClick" :style="{'color': store.IsDeepThink ? 'var(--activityColor)' : 'var(--uosai-think-search-color)', 'width' : deepThinkWidth}">
+                                    <div v-show="showDeepThink" class="deep-think-btn" @click="deepThinkClick" :style="{'color': store.IsDeepThink ? 'var(--activityColor)' : 'var(--uosai-think-search-color)', 'width' : deepThinkWidth}">
                                         <SvgIcon icon="deep-think" :style="{'fill': store.IsDeepThink ?  'var(--activityColor)' : 'var(--uosai-think-search-color)', 'margin-right': isWindowMode ? '5px' : '0px'}"/>
                                         <span v-show="isWindowMode">{{ store.loadTranslations['DeepThink(R1)'] }}</span>
                                     </div>
                                 </el-tooltip>
+                                <!-- 联网搜索开关 -->
                                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                                 :show-after="1000" :offset="2"
                                 :content="store.loadTranslations['Search']">
-                                    <div class="deep-think-btn" @click="searchOnlineClick" :style="{'color': store.IsSearchOnline? 'var(--activityColor)' : 'var(--uosai-think-search-color)', 'width' : onlineSearchWidth, 'margin-left': isWindowMode ? '10px' : '6px'}">
+                                    <div v-show="showSearchOnline" class="deep-think-btn" @click="searchOnlineClick" :style="{'color': store.IsSearchOnline? 'var(--activityColor)' : 'var(--uosai-think-search-color)', 'width' : onlineSearchWidth, 'margin-left': (showDeepThink && isWindowMode) ? '10px' : (showDeepThink ? '6px' : '0px')}">
                                         <SvgIcon icon="search-online" :style="{'fill': store.IsSearchOnline ?  'var(--activityColor)' : 'var(--uosai-think-search-color)', 'margin-right': isWindowMode ? '5px' : '0px'}"/>
                                         <span v-show="isWindowMode">{{ store.loadTranslations['Search'] }}</span>
                                     </div>
@@ -264,11 +303,11 @@
                             <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                                 :show-after="1000" :offset="2"
                                 :content="screenShotTooltipContent"
-                                :class="{ 'disabled': !(inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT))}">
+                                :class="{ 'disabled': !(inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT)) && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT}">
                                 <div class="file-btn btn"
                                     ref="screenShotIconRef"
-                                    v-show="(currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT) && isEnableScreenshot > -1"
-                                    :class="{ 'disabled': (inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT) || screenShotToolDisable) }"
+                                    v-show="currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT && isEnableScreenshot > -1"
+                                    :class="{ 'disabled': (inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT) || screenShotToolDisable) && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT}"
                                 :style="{'margin-right': isWindowMode ? '15px' : '10px'}"
                                     @click="screenshot"
                                     @mouseenter="handleScreenShotIconHover"
@@ -280,16 +319,23 @@
                             <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                                 :show-after="1000" :offset="2"
                                 :content="inputFileList.length === 3 ? store.loadTranslations['You can upload up to 3 files or image'] : store.loadTranslations['Upload Files']"
-                                :class="{ 'disabled': !(inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant'))}">
+                                :class="{ 'disabled': (!((inputFileList.length === 3 && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT ) || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant'))|| (currentAssistant.type === store.AssistantType.AI_WRITING_ASSISTANT && isShowGenContentBtn))}">
                                 <div class="file-btn btn"
-                                v-show="(currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT || currentAssistant.id == 'PPT Assistant')"
-                                :class="{ 'disabled': (inputFileList.length === 3 || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant')) }"
-                                :style="{'margin-right': isWindowMode ? '15px' : '10px'}"
-                                @click="selectFile"
-                                ref="docUploadIconRef">
+                                    ref="inputFilesIconRef"
+                                    v-show="(currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT || currentAssistant.id == 'PPT Assistant')"
+                                    :class="{ 'disabled': (((inputFileList.length === 3  && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT )|| recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant'))) || (currentAssistant.type === store.AssistantType.AI_WRITING_ASSISTANT && isShowGenContentBtn)}"
+                                    :style="{'margin-right': isWindowMode ? '15px' : '10px'}"
+                                    @mousedown="isClickingFileBtn = true"
+                                    @click="selectFile">
                                     <SvgIcon icon="file" />
                                 </div>
                             </el-tooltip>
+                            <InputFilesMenu
+                                ref="inputFilesMenuElRef"
+                                :target="inputFilesIconRef"
+                                :show="showInputFilesMenu"
+                                @select="handleSelectFiles"
+                            />
                             <!-- 语音输入按钮 -->
                             <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                                 :show-after="1000" :offset="2"
@@ -342,6 +388,16 @@
             @close="onGuideClose"
             />
     </div>
+    <div class="markdown-editor-container" v-show="showMarkdownEditor">
+        <!-- Typora编辑器 -->
+        <MarkdownEditor
+            v-model="mdEditorContent"
+            :isWindowMode="isWindowMode"
+            :isDarkMode="isDarkMode"
+            :currentShortcutList="currentShortcutList"
+            @closeMarkdownEditor="closeMarkdownEditor"
+            @save="saveMarkdownContent"/>
+    </div>
 </template>
 
 <script setup>
@@ -352,20 +408,22 @@ import ModelSwitch from "./components/ModelSwitch.vue";
 import SwitchModel from "./components/SwitchModel.vue";
 import WelcomePage from "./components/welcomePage.vue";
 import ChatBubble from "./components/ChatBubble.vue";
-import ChatTop from "./components/ChatTop.vue";
 import PromptList from "./components/PromptList.vue";
 import PromptTag from "./components/PromptTag.vue";
 import GuideOverlay from "./components/GuideOverlay.vue";
 import ConversionList from "./components/ConversionList.vue"
 import ConversionMode from "./components/ConversionMode.vue"
 import McpSetting from "./components/McpSetting.vue";
+import InputFilesMenu from "./components/InputFilesMenu.vue";
 import PrivateWelcomePage from "./components/PrivateWelcomePage.vue";
 import FunctionButtons from "./components/FunctionButtons.vue";
 import ShortcutTip from "./components/ShortcutTip.vue";
 import CustomScrollbar from 'custom-vue-scrollbar';
 import 'custom-vue-scrollbar/dist/style.css';
-import { ref, computed } from "vue";
+import { ref, computed, nextTick } from "vue";
 import { useRouter } from "vue-router";
+import LocalMaterialsList from "./components/LocalMaterialsList.vue";   
+import MarkdownEditor from "./components/Outline/MarkdownEditor.vue";
 
 //*******************************************************************************
 /**
@@ -380,6 +438,29 @@ const isAllParsingStatusEnd = ref(false)  //所有文件解析状态结束
 const isDarkMode = ref(false)  //是否为深色主题
 const inputFileList = ref([]) // 输入框中文件列表
 const extensionFileList = ref([]) // 扩展文件列表,解析成功待发送
+const isClickingFileBtn = ref(false) // 标记是否正在点击文件上传按钮
+
+// 文件索引计数器，用于生成唯一的文件标识
+let fileIndexCounter = 0
+
+// 生成唯一文件索引
+const generateFileIndex = () => {
+    return (++fileIndexCounter).toString()
+}
+
+// 素材文件列表 - 返回完整的文件对象数组，而不只是 filePath
+const materialFiles = computed(() => {
+    return inputFileList.value
+        .filter(f => f.fileCategory === store.DocFileCategory.LocalMaterial)
+})
+
+// 文件大纲
+const fileOutline = computed(() => {
+    const outline = inputFileList.value
+        .find(f => f.fileCategory === store.DocFileCategory.FileOutline)
+    return outline?.filePath || ""
+})
+
 
 function handleDragEnter(event) {
     event.preventDefault(); // 阻止默认事件
@@ -388,6 +469,7 @@ function handleDragEnter(event) {
     if(disabled.value) return  //回答中
     if(recording.value) return  //录音中
     if(showGuide.value) return  //引导页不处理拖拽
+    if(isShowGenContentBtn.value) return  //如果当前是生成内容按钮，不允许选择文件
     // if(isFileInInput.value) return  //文件存在
     if(currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant') return  //非UOS AI助手
     const messageElement = document.getElementById('innerDropzoneTextSuffix');
@@ -406,6 +488,7 @@ function handleDragOver(event) {
     if(disabled.value) return  //回答中
     if(recording.value) return  //录音中
     if(showGuide.value) return  //引导页不处理拖拽
+    if(isShowGenContentBtn.value) return  //如果当前是生成内容按钮，不允许选择文件
     // if(isFileInInput.value) return  //文件存在
     if(currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant') return  //非UOS AI助手
     const messageElement = document.getElementById('innerDropzoneTextSuffix');
@@ -487,6 +570,17 @@ const initChat = async () => {
     //新版查询历史记录
     const _history = await Qrequest(chatQWeb.getConversations)
     history.value = JSON.parse(_history)
+
+    // 判断选中的历史记录最后一条是否有大纲
+    if (history.value.length > 0) {
+        const displayContentLast = JSON.parse(_.last(_.last(history.value).answers).displayContent)
+        if (displayContentLast.find(item => item.chatType === store.ChatAction.ChatOutline)) {
+            isLastHasOutline.value = true
+        } else {
+            isLastHasOutline.value = false
+        }
+    }
+    
 
     //查询当前系统主题
     const theme = await Qrequest(chatQWeb.getThemeType)
@@ -587,10 +681,22 @@ const initChat = async () => {
     instructionHoverContent.value = store.loadTranslations["Instruction"]
 
     // 解决输入框重新计算行高导致页面跳动问题
-    question.value = " "
+    question.value = ""
     setTimeout(() => {
         question.value = ""
+        if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
+            question.value = store.loadTranslations["I am [Enter Identity/Position]. Please help me write a [Report/Article/Outline/WeChat Official Account Post/Notice/Research Report/Work Summary/Speech] on [Enter Theme], with a length of about [1000 words]. The content requirements are [Enter Requirements/Content Focus/Content Style, etc.]."];
+            Qrequest(chatQWeb.setDigitalImageDisable, true);  // 禁用数字形象
+        } else {
+            Qrequest(chatQWeb.setDigitalImageDisable, false);  // 启用数字形象
+        }
     }, 5);
+
+    // 判断数字形象是否被禁用
+    const isActiveChatFromDigitalImage = await Qrequest(chatQWeb.isActiveChatFromDigitalImage);
+    if (isActiveChatFromDigitalImage) {
+        handleShowTip(store.loadTranslations['Digital Human Unavailable'])
+    }
 }
 
 const isUIDisabledForPopup = computed(() => {
@@ -657,7 +763,7 @@ const sendBtnContent = computed(() => {
     }
     return ''
 })
-const sendQuestion = async () => {
+const sendQuestion = async (status) => {
 //*****************************************************************************************************************
     if ((question.value.trim().length === 0 && !isFileInInput.value) || disabled.value) return
     if (currentAssistant.value.type == store.AssistantType.PERSONAL_KNOWLEDGE_ASSISTANT && (!isEmbeddingPluginsExist.value || !isKnowledgeBaseExist.value) && history.value.length === 0) return
@@ -720,8 +826,9 @@ const sendQuestion = async () => {
                     break
             }
         }
-     }
-    // const { id, model, icon, displayname } = currentAccount.value
+    }
+    let sendQuestionAccount = currentAccount.value
+    const { id, model, icon, displayname } = sendQuestionAccount
     const extention = []
     const ques = {
         displayContent:question.value,
@@ -731,27 +838,61 @@ const sendQuestion = async () => {
         onlineSearch: store.IsSearchOnline,
 	    extention:JSON.stringify(extention)
     }
-    // ques添加openThink字段
-    if (showDeepThinkAndSearchOnline.value) {
+    // ques添加openThink字段和onlineSearch字段
+    // 深度思考开关显示时才添加openThink字段
+    if (showDeepThink.value) {
         ques.openThink = store.IsDeepThink
-        ques.onlineSearch = store.IsSearchOnline
-    }else{
+    } else {
         ques.openThink = false
+    }
+
+    // 联网搜索开关显示时才添加onlineSearch字段
+    if (showSearchOnline.value) {
+        ques.onlineSearch = store.IsSearchOnline
+    } else {
         ques.onlineSearch = false
     }
 
-    //文档存在
-    if(isFileInInput.value && isFileParsingSuccess.value){
+    if(currentAssistant.value.type == store.AssistantType.AI_WRITING_ASSISTANT && (fileOutline.value !== "" || materialFiles.value.length > 0)) {
+        isShowFile.value = false 
+        isFileInInput.value = false
+        isFileParsingSuccess.value = false
+        isAllParsingStatusEnd.value = false
+
+        let ret = await Qrequest(chatQWeb.showAllowUploadFilesAlert, model, displayname, showSearchOnline.value && store.IsSearchOnline)
+        if (!ret) {
+            return
+        }
+
+        // 合并大纲文件和素材文件到一个扁平数组
+        let writingFiles = [
+            ...outlineFiles.value,
+            ...materialFiles.value
+        ]
+
+        // 如果有文件，添加到扩展信息中
+        extention.push({
+            type: store.ExtentionType.WritingResource,
+            template_path: fileOutline.value,
+            file_paths: materialFiles.value.map(f => f.filePath),
+            files: writingFiles
+        })
+
+        ques.extention = JSON.stringify(extention)
+    } else if(isFileInInput.value && isFileParsingSuccess.value){
         isShowFile.value = false
         isFileInInput.value = false
         isFileParsingSuccess.value = false
         isAllParsingStatusEnd.value = false
+
         extention.push({
             type: store.ExtentionType.DocSummary,
-        	files: extensionFileList.value
+            files: extensionFileList.value
         })
+        
         ques.extention = JSON.stringify(extention)
     }
+    
     //标签存在
     if(showPromptTag.value){
         extention.push({
@@ -810,6 +951,14 @@ const sendQuestion = async () => {
             functionButtonsRef.value.resetActiveIndex()
         }
 
+        // 扩展添加大纲
+        if (isShowGenContentBtn.value && status === store.SendArg.SendDocFileOutline) {
+            extention.push({
+                type: store.ExtentionType.Outline,
+                Outline: OutlineContentEx.value  
+            })
+            ques.extention = JSON.stringify(extention)
+        }
     }
 
     // 文本处理智能体
@@ -823,9 +972,6 @@ const sendQuestion = async () => {
             }
         }
     }
-
-    let sendQuestionAccount = currentAccount.value
-    const { id, model, icon, displayname } = sendQuestionAccount
 
     history.value.push({
         question:ques,
@@ -881,6 +1027,8 @@ const sendQuestion = async () => {
     showReturnBottom.value = false  //初始化返回底部按钮状态
     handelScrol()
 
+    answerDisplayMsg.value = []  // 初始化answerDisplayMsg
+
     Qrequest(chatQWeb.logCurrentConversations, currentAssistant.value.id, lastConversationInfo.value.conversationId, currentAssistant.value.displayname,  JSON.stringify(history.value))
 
 
@@ -888,6 +1036,8 @@ const sendQuestion = async () => {
     inputFileList.value = []
     extensionFileList.value = []
     await Qrequest(chatQWeb.setInputFileSize, inputFileList.value.length)  // 同步更新当前输入框中存在的文件
+
+    isLastHasOutline.value = false
 
 }
 
@@ -916,12 +1066,18 @@ const sigWordWizardAsk = async (askQuestion) => {
         onlineSearch: store.IsSearchOnline,
 	    extention:JSON.stringify(extention)
     }
-    // ques添加openThink字段
-    if (showDeepThinkAndSearchOnline.value) {
+    // ques添加openThink字段和onlineSearch字段
+    // 深度思考开关显示时才添加openThink字段
+    if (showDeepThink.value) {
         ques.openThink = store.IsDeepThink
-        ques.onlineSearch = store.IsSearchOnline
-    }else{
+    } else {
         ques.openThink = false
+    }
+
+    // 联网搜索开关显示时才添加onlineSearch字段
+    if (showSearchOnline.value) {
+        ques.onlineSearch = store.IsSearchOnline
+    } else {
         ques.onlineSearch = false
     }
 
@@ -985,11 +1141,14 @@ const sigWordWizardAsk = async (askQuestion) => {
 
 const sigGetFreeCreditsResult = (isSuccess, msg) => {
     store.IsGotFreeCredits = isSuccess
-    handleShowTip(msg)
 }
 
 const sigIsGotFreeCredits = (isGot) => {
     store.IsGotFreeCredits = isGot
+}
+
+const sigActiveChatFromDigitalImage = () => {
+    handleShowTip(store.loadTranslations['Digital Human Unavailable'])
 }
 
 const sendEmptyAnswers = async () => {
@@ -1066,13 +1225,26 @@ const handleScreenShotIconLeave = async () => {
     screenShotToolDisable.value = false
 }
 
-const selectFile = async () => {
+const selectFile = async (event) => {
     if(disabled.value) return  //回答中
     if(recording.value) return  //录音中
     if(currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant') return  //非UOS AI助手
+    if(isShowGenContentBtn.value) return  //如果当前是生成内容按钮，不允许选择文件
+
+    // 如果当前是writing assistant，显示InputFilesMenu组件
+    if(currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
+        if (showInputFilesMenu.value) {
+            closeInputFilesMenu();
+        } else {
+            showInputFilesMenu.value = true;
+        }
+        // 重置标记
+        isClickingFileBtn.value = false
+        return;
+    }
+
     if(inputFileList.value.length === 3) return  //最多支持3个文件
     await Qrequest(chatQWeb.onDocSummarySelect)
-
 }
 
 const handeleEnter = (event) => {
@@ -1133,6 +1305,25 @@ const updateCurAssistant = async (assistant) => {
     history.value = JSON.parse(_history)
     question.value = ''
 
+    if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
+        question.value = store.loadTranslations["I am [Enter Identity/Position]. Please help me write a [Report/Article/Outline/WeChat Official Account Post/Notice/Research Report/Work Summary/Speech] on [Enter Theme], with a length of about [1000 words]. The content requirements are [Enter Requirements/Content Focus/Content Style, etc.]."];
+        Qrequest(chatQWeb.setDigitalImageDisable, true);  // 禁用数字形象
+    } else {
+        Qrequest(chatQWeb.setDigitalImageDisable, false);  // 启用数字形象
+    }
+
+    // 判断选中的历史记录最后一条是否有大纲
+    try {
+        const displayContentLast = JSON.parse(_.last(_.last(history.value).answers).displayContent)
+        if (displayContentLast.find(item => item.chatType === store.ChatAction.ChatOutline)) {
+            isLastHasOutline.value = true
+        } else {
+            isLastHasOutline.value = false
+        }
+    } catch (error) {
+        
+    }
+
     //切换助手，聊天窗口存在文件则删除
     if(isFileInInput.value){
         isShowFile.value = false
@@ -1173,10 +1364,23 @@ const updateCurAssistant = async (assistant) => {
         questionInput.value.focus()  //页面加载完成，自动聚焦到输入框
     }, 5)
 
+    answerDisplayMsg.value = []  // 初始化answerDisplayMsg
+
 }
 
 const isShowPromptBtn = ref(false)
 const currentAccountChanged  = async (accent) => {
+    // mcp开启下切换到非官方模型，tips提示.
+    // 开启mcp状态下或当前为运维智能体，模型变化，上一个模型为官方模型，当前不为官方模型
+    if (store.IsOpenMcpServer && accent && accent.model != store.DeepSeek_Uos_Free && store.LastModel == store.DeepSeek_Uos_Free) {
+        handleShowTip(store.loadTranslations["It is recommended to use the official model \"DeepSeek-Trial Account\""])
+    }
+
+    // 切换完成，更新上一个模型
+    if (accent) {
+        store.LastModel = accent.model
+    }
+
     /**
      * TODO:
      * 查询当前助手指令列表
@@ -1207,17 +1411,6 @@ const currentAccountChanged  = async (accent) => {
 
     if (showPromptTag.value && !promptNameLists.includes(promptTag.value)) {
         showPromptTag.value = false
-    }
-
-    // mcp开启下切换到非官方模型，tips提示.
-    // 开启mcp状态下，模型变化，上一个模型为官方模型，当前不为官方模型
-    if (store.IsOpenMcpServer && accent && accent.model != store.DeepSeek_Uos_Free && store.LastModel == store.DeepSeek_Uos_Free) {
-        handleShowTip(store.loadTranslations["It is recommended to use the official model \"DeepSeek-Trial Account\""])
-    }
-
-    // 切换完成，更新上一个模型
-    if (accent) {
-        store.LastModel = accent.model
     }
 
     
@@ -1365,6 +1558,11 @@ const handleInputMouseUp = (event) => {
     }
     event.preventDefault(); // 阻止默认事件
     event.stopPropagation();
+
+    // 如果正在点击文件上传按钮，不要关闭菜单
+    if (!isClickingFileBtn.value && showInputFilesMenu.value) {
+        closeInputFilesMenu()
+    }
 }
 
 const handleMouseUp = (event) => {
@@ -1396,6 +1594,10 @@ const handleMainMouseUp = (event) => {
     if (showMcpSetting.value && !isFocus.value) {
         closeMcpSetting()
     }
+
+    if (showInputFilesMenu.value && !isFocus.value) {
+        closeInputFilesMenu()
+    }
 };
 
 const handleDragStart = (event) => {
@@ -1422,6 +1624,11 @@ const handleInputFocus = (event) => {
 
     if (showMcpSetting.value) {
         closeMcpSetting()
+    }
+
+    // 如果正在点击文件上传按钮，不要关闭菜单
+    if (!isClickingFileBtn.value && showInputFilesMenu.value) {
+        closeInputFilesMenu()
     }
 };
 const handleInputNoFocus = (event) => {
@@ -1605,6 +1812,10 @@ const placeHolder = computed(() => {
             return '请输入PPT主题或者内容；'
         }
         if (currentAssistant.value.id === 'ai-writing') {
+            // 写作助手：已发送提示词进入内容生成环节
+            if (history.value.length > 0) {
+                return store.loadTranslations['You can continue to input more requests to optimize or adjust the already generated content.']
+            }
             return store.loadTranslations["Please Describe the Content Theme and Requirements for Your Creation."]
         }
         if (currentAssistant.value.id === 'ai-text-processing') {
@@ -1613,6 +1824,7 @@ const placeHolder = computed(() => {
         if (currentAssistant.value.id === 'ai-translation') {
             return store.loadTranslations["Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese."]
         }
+
         return store.loadTranslations["Enter your question, or enter \"/\" to select a command\n\"Ctrl+Enter\"  to start a new line"]
     }
 
@@ -1679,10 +1891,34 @@ const questionAction = async (userInput, type) => {
         showPromptTag.value = false
 
         // 文件还原
-        let existFileLists = userInput.fileList.map(item => item.filePath)
-        if (existFileLists.length > 0) {
-            // 还原文件
-            Qrequest(chatQWeb.editQuestionToFileSummary, existFileLists)
+        if (userInput.fileList.length > 0) {
+            if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
+                // AI写作助手：根据fileCategory分类还原
+                const outlineFilesToRestore = userInput.fileList.filter(f => f.fileCategory === store.DocFileCategory.FileOutline)
+                const materialFilesToRestore = userInput.fileList.filter(f => f.fileCategory === store.DocFileCategory.LocalMaterial)
+
+                // 还原大纲文件
+                outlineFilesToRestore.forEach(file => {
+                    const filesData = JSON.stringify([{
+                        filePath: file.filePath,
+                        fileIcon: file.imgBase64
+                    }])
+                    sigDocSummaryForOffice(filesData, store.DocParsingStatusType.Success, store.DocFileCategory.FileOutline)
+                })
+
+                // 还原本地素材文件
+                if (materialFilesToRestore.length > 0) {
+                    const filesData = JSON.stringify(materialFilesToRestore.map(f => ({
+                        filePath: f.filePath,
+                        fileIcon: f.imgBase64
+                    })))
+                    sigDocSummaryForOffice(filesData, store.DocParsingStatusType.Success, store.DocFileCategory.LocalMaterial)
+                }
+            } else {
+                // 其他助手：使用原有逻辑
+                let existFileLists = userInput.fileList.map(item => item.filePath)
+                Qrequest(chatQWeb.editQuestionToFileSummary, existFileLists)
+            }
         }
 
         // 指令还原
@@ -1703,6 +1939,136 @@ const questionAction = async (userInput, type) => {
         question.value = userInput.questionDisplayContent
     }
 }
+
+// 更新大纲
+const OutlineContentEx = ref("")  // 大纲内容扩展， 包含标题和段落
+const isLastHasOutline = ref(false)  //是否显示生成内容按钮
+const isShowGenContentBtn = computed (() => {
+    if (!(isLastHasOutline.value && currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT && history.value.length > 0)) {
+        OutlineContentEx.value = ""
+    }
+    return isLastHasOutline.value && currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT && history.value.length > 0
+})
+
+const clickBaseOutlineGenContent = async () => {
+    question.value = store.loadTranslations['Outline to Docs']
+    await sendQuestion(store.SendArg.SendDocFileOutline)
+    isLastHasOutline.value = false
+    OutlineContentEx.value = ""
+}
+
+const updateOutline = (historyActiveIndex, newTitle, newParagraph) => {
+    let answerDisplayMsg = JSON.parse(_.last(history.value).answers[historyActiveIndex].displayContent)
+    // 找到answerDisplayMsg中chatType == sotre.ChatType.Outline的元素
+    let outlineItem = answerDisplayMsg.find(item => item.chatType === store.ChatAction.ChatOutline)
+    
+    if (outlineItem) {
+        let outlineItemIndex = answerDisplayMsg.indexOf(outlineItem)
+        let outlineItemObj = JSON.parse(outlineItem.content)
+        
+        // 更新标题
+        outlineItemObj.title = newTitle
+        // 更新段落内容
+        outlineItemObj.content = newParagraph
+        // 更新大纲内容
+        OutlineContentEx.value = JSON.stringify({title: newTitle, content: newParagraph})
+        // 最后一个有大纲
+        isLastHasOutline.value = true
+
+        // 更新displayContent
+        outlineItem.content = JSON.stringify(outlineItemObj)
+        
+        answerDisplayMsg[outlineItemIndex] = outlineItem
+    }
+    _.last(history.value).answers[historyActiveIndex].displayContent = JSON.stringify(answerDisplayMsg)
+    // 存历史记录
+    Qrequest(chatQWeb.logCurrentConversations, currentAssistant.value.id, lastConversationInfo.value.conversationId, currentAssistant.value.displayname,  JSON.stringify(history.value))
+}
+
+// 更新activeIndex
+const activeIndex = ref(0)
+const updateActiveIndex = (newActiveIndex) => {
+    activeIndex.value = newActiveIndex
+    try {
+        const displayContentLast = JSON.parse(_.last(history.value).answers[newActiveIndex].displayContent)
+        if (displayContentLast.find(item => item.chatType === store.ChatAction.ChatOutline)) {
+            isLastHasOutline.value = true
+        } else {
+            isLastHasOutline.value = false
+        }
+    } catch (error) {
+        
+    }
+}
+
+const handleGuessYouWantClick = (item) => {
+    question.value = item
+    sendQuestion()
+}
+
+// ===============================================================================================
+// markdown编辑器
+const showMarkdownEditor = ref(false)
+const mdEditorContent = ref({})
+const openMarkdownEditor = (content) => {
+    mdEditorContent.value = content
+    showMarkdownEditor.value = true
+}
+
+const closeMarkdownEditor = () => {
+    showMarkdownEditor.value = false
+}
+
+const markdownContent = ref('')
+const saveMarkdownContent = async (saveData) => {
+    // 保存 markdown 内容到历史记录
+    console.log('保存 markdown 内容:', saveData)
+    
+    const { id, title, content } = saveData
+    
+    // 遍历历史记录，找到包含该文档的记录并更新
+    for (let i = 0; i < history.value.length; i++) {
+        const historyItem = history.value[i]
+        
+        for (let j = 0; j < historyItem.answers.length; j++) {
+            const answer = historyItem.answers[j]
+            
+            try {
+                const displayContent = JSON.parse(answer.displayContent)
+                
+                // 查找 ChatDocCard 类型的内容
+                for (let k = 0; k < displayContent.length; k++) {
+                    const item = displayContent[k]
+                    
+                    if (item.chatType === store.ChatAction.ChatDocCard && item.content?.id === id) {
+                        // 找到了，更新内容
+                        item.content.content = content
+                        
+                        // 更新 displayContent
+                        answer.displayContent = JSON.stringify(displayContent)
+                        
+                        // 保存到后端
+                        await Qrequest(
+                            chatQWeb.logCurrentConversations,
+                            currentAssistant.value.id,
+                            lastConversationInfo.value.conversationId,
+                            currentAssistant.value.displayname,
+                            JSON.stringify(history.value)
+                        )
+                        
+                        console.log('保存成功:', title)
+                        return
+                    }
+                }
+            } catch (error) {
+                console.warn('解析 displayContent 失败:', error)
+            }
+        }
+    }
+    
+    console.warn('未找到对应的文档记录:', id)
+}
+// ===============================================================================================
 
 // 会话记录添加状态控制
 const showConversionList = ref(false);
@@ -1725,6 +2091,13 @@ const createNewConversation= async () => {
     if (found) {
         found.index = -1
         functionButtonsRef.value.resetActiveIndex()
+    }
+
+    if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT && question.value === '') {
+        question.value = store.loadTranslations["I am [Enter Identity/Position]. Please help me write a [Report/Article/Outline/WeChat Official Account Post/Notice/Research Report/Work Summary/Speech] on [Enter Theme], with a length of about [1000 words]. The content requirements are [Enter Requirements/Content Focus/Content Style, etc.]."]
+        Qrequest(chatQWeb.setDigitalImageDisable, true);  // 禁用数字形象
+    } else {
+        Qrequest(chatQWeb.setDigitalImageDisable, false);  // 启用数字形象
     }
 }
 
@@ -1830,6 +2203,25 @@ const selectHistoryItem = async (item) => {        // 新增助手存在性检�
     history.value = JSON.parse(_history)
     lastConversationInfo.value = item
 
+
+    // 判断选中的历史记录最后一条是否有大纲
+    try {
+        const displayContentLast = JSON.parse(_.last(_.last(history.value).answers).displayContent)
+        if (displayContentLast.find(item => item.chatType === store.ChatAction.ChatOutline)) {
+            isLastHasOutline.value = true
+        } else {
+            isLastHasOutline.value = false
+        }
+    } catch (error) {
+        
+    }
+
+    if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
+        Qrequest(chatQWeb.setDigitalImageDisable, true);  // 禁用数字形象
+    } else {
+        Qrequest(chatQWeb.setDigitalImageDisable, false);  // 启用数字形象
+    }
+
     if (accountList.value.some(a => a.id === _.last(_.last(history.value).answers).llmId)) {
         accountList.value.forEach(element => {
             if (element.id === _.last(_.last(history.value).answers).llmId) {
@@ -1858,7 +2250,6 @@ const selectHistoryItem = async (item) => {        // 新增助手存在性检�
     }
     Qrequest(chatQWeb.setTitleBarStatus, false)  //设置当前助手的最后一个会话信息
     showConversionList.value = false
-
 }
 
 const updateCurrentAssistant = (item) => {
@@ -1911,10 +2302,88 @@ const handleFunctionClear = async () => {
     welcomePageRef.value.getAiFAQ()
 }
 
-const docUploadIconRef = ref(null)
 // 是否领取过免费模型
 const isGotDeepSeekUosFree = ref(false)
 const guideConfigStack = [
+    {
+        id: 'new-ai-writing-guide', // Unique ID for the new sequential guide.
+        factory: () => {
+            let firstStepContent = store.loadTranslations['1.Reference local materials and outlines for more accurate content.'] + '\n' + store.loadTranslations['2.Supports local models, ensuring security and peace of mind.'] + '\n' + store.loadTranslations['3.Traceable sources, reliable data.'] + '\n' + store.loadTranslations['4.Edit while writing, export when satisfied.'];
+            const steps = [
+                {
+                    title: store.loadTranslations['AI Writing Agent Fully Upgraded'],
+                    content: firstStepContent,
+                    useLaterText: store.loadTranslations['Try Later'],
+                    activeText: store.loadTranslations['Try Now'],
+                    targetRef: 'none',
+                    targets: [],  // Will be set dynamically
+                    primaryTarget: null,  // Will be set dynamically
+                    isAllowClickOnTarget: false,
+                    relativePosition: isWindowMode.value ? { // 窗口模式左边，侧边栏模式上边
+                        position: 'none',
+                        arrowDirect: 'right',
+                        offset: 25
+                    } : {},
+                    width: 320,
+                    onActiveClick: async () => {
+                        // 1. 关闭助手列表
+                        switchModel.value.showAssistantMenu = false
+
+                        // 2. 切换到写作助手
+                        const writingAssistant = assistantList.value.find(
+                            item => item.type === store.AssistantType.AI_WRITING_ASSISTANT
+                        )
+                        if (writingAssistant) {
+                            await switchModel.value.clickAssistantItem(writingAssistant)
+                            await Qrequest(chatQWeb.setCurrentAssistantId, writingAssistant.id)
+                        }
+
+                        // 3. 等待DOM更新
+                        await nextTick()
+
+                        // 4. 打开inputFilesMenu
+                        showInputFilesMenu.value = true
+
+                        // 5. 等待菜单渲染完成
+                        await nextTick()
+
+                        // 6. 获取第二步的目标元素
+                        const inputFilesIconElement = inputFilesIconRef.value
+                        const inputFilesMenuElement = inputFilesMenuElRef.value?.$el ||
+                            (inputFilesMenuElRef.value && inputFilesMenuElRef.value.querySelector('.input-files-menu'))
+
+                        // 7. 更新第二步的targets
+                        if (guideConfig.value.steps[1]) {
+                            guideConfig.value.steps[1].targets = [inputFilesIconElement, inputFilesMenuElement].filter(Boolean)
+                            guideConfig.value.steps[1].primaryTarget = inputFilesMenuElement
+                        }
+
+                        // 8. 清理guideActiveAssistantId，恢复助手列表交互
+                        guideActiveAssistantId.value = null
+                    }
+                },
+                {
+                    title: store.loadTranslations['AI Writing Agent Fully Upgraded'],
+                    content: store.loadTranslations['Generate reports based or outline files for greater accuracy'],
+                    activeText: store.loadTranslations['Start Now'],
+                    targetRef: 'none',
+                    targets: [],  // Will be set dynamically
+                    primaryTarget: null,  // Will be set dynamically
+                    arrowDisplay: 'none',
+                    isAllowClickOnTarget: false,
+                    onActiveClick: () => {
+                        showInputFilesMenu.value = false
+                        onGuideClose()
+                    }
+                }
+            ]
+
+            return {
+                guideType: 'independent',
+                steps
+            };
+        }
+    },
     {
         id: 'auto-mcp-guide', // Unique ID for the new sequential guide.
         factory: () => {
@@ -1940,7 +2409,7 @@ const guideConfigStack = [
                     targetRef: "none",
                     isAllowClickOnTarget: false,
                     relativePosition: {
-                        arrayDirect: "top",  // 指定箭头方向
+                        arrowDirect: "top",  // 指定箭头方向
                         left: 'auto',
                         right: '10px',
                         top: '10px',
@@ -1959,7 +2428,7 @@ const guideConfigStack = [
                     isAllowClickOnTarget: false,
                     relativePosition: {
                         position: 'center',  // 是否居中显示
-                        arrayDisplay: 'none',  // 隐藏箭头
+                        arrowDisplay: 'none',  // 隐藏箭头
                     },
                     onActiveClick: async () => {
                         onGuideClose()
@@ -2070,6 +2539,10 @@ const guideConfig = ref({
     guideType: 'independent'
 })
 
+// Guide control state variables
+const guideActiveAssistantId = ref(null)
+const inputFilesMenuElRef = ref(null)
+
 const onGuideClose = (isTryClicked) => {
     // isTryClicked 在新逻辑中不再由 GuideOverlay 直接提供，
     // 因为具体行为已移入 onActiveClick。
@@ -2079,10 +2552,18 @@ const onGuideClose = (isTryClicked) => {
     //记数据库，不再弹起引导界面
     Qrequest(chatQWeb.updateUpdatePromptDB, true)
 
+    // 清理助手引导相关状态
+    if (guideActiveAssistantId.value) {
+        guideActiveAssistantId.value = null
+    }
+
+    // 关闭inputFilesMenu
+    showInputFilesMenu.value = false
+
     // 把目标元素的层级设置为1
-    mcpServerIconRef.value.style.zIndex = 1
+    mcpServerIconRef.value?.style.setProperty('z-index', '1')
     // 把目标元素的pointerEvents属性设置为auto
-    mcpServerIconRef.value.style.pointerEvents = 'auto'
+    mcpServerIconRef.value?.style.setProperty('pointer-events', 'auto')
 
     nextTick(() => {
         questionInput.value.focus();
@@ -2109,7 +2590,10 @@ const processSingleMessage = (msgValue, errCode) => {
         replyMsg.value = JSON.parse(msgValue);
 
         // 如果answerDisplayMsg为空，且当前chatType为工具调用且status不为调用中，则直接返回
-        if (answerDisplayMsg.value.length == 0 && replyMsg.value.message.chatType == store.ChatAction.ChatToolUse && replyMsg.value.message.status != store.ToolUseStatus.Calling) {
+        if (answerDisplayMsg.value.length == 0 && 
+            (replyMsg.value.message.chatType == store.ChatAction.ChatToolUse || 
+             replyMsg.value.message.chatType == store.ChatAction.AgentAction) && 
+            replyMsg.value.message.status != store.ToolUseStatus.Calling) {
             return true;
         }
 
@@ -2132,8 +2616,15 @@ const processSingleMessage = (msgValue, errCode) => {
          * 1.上一个chatType不等于当前chatType且当前chatType不为工具调用
          * 2.当前chatType为工具调用且status为调用中
          */
-        if((lastMsg.value.chatType !== replyMsg.value.message.chatType && replyMsg.value.message.chatType !== store.ChatAction.ChatToolUse)
-        || (replyMsg.value.message.chatType  === store.ChatAction.ChatToolUse && replyMsg.value.message.status === store.ToolUseStatus.Calling)){
+        if((lastMsg.value.chatType !== replyMsg.value.message.chatType && 
+            replyMsg.value.message.chatType !== store.ChatAction.ChatToolUse &&
+            replyMsg.value.message.chatType !== store.ChatAction.AgentAction &&
+            replyMsg.value.message.chatType !== store.ChatAction.AgentReasonTitle)
+        || (replyMsg.value.message.chatType  === store.ChatAction.ChatToolUse && replyMsg.value.message.status === store.ToolUseStatus.Calling)
+        || (replyMsg.value.message.chatType  === store.ChatAction.AgentAction && replyMsg.value.message.status === store.ToolUseStatus.Calling)
+        || (replyMsg.value.message.chatType  === store.ChatAction.ChatOutline)
+        || (replyMsg.value.message.chatType  === store.ChatAction.ChatDocCard)
+        ){
             switch (errCode) {
                 case -11000:  //智能体服务不可用
                     replyMsg.value.message.content = store.loadTranslations['Agent server is not available']
@@ -2147,6 +2638,14 @@ const processSingleMessage = (msgValue, errCode) => {
                 default:
             }
             answerDisplayMsg.value.push(replyMsg.value.message)
+            if (replyMsg.value.message.chatType  === store.ChatAction.ChatOutline) {
+                OutlineContentEx.value = replyMsg.value.message.content
+            }
+        }
+
+        // 如果发送完成后，有大纲，则显示根据大纲生成内容的按钮
+        if (errCode !== 0 && answerDisplayMsg.value.find((item) => item.chatType === store.ChatAction.ChatOutline)){
+            isLastHasOutline.value = true
         }
 
         /**
@@ -2154,7 +2653,10 @@ const processSingleMessage = (msgValue, errCode) => {
          * 思考内容，上一个也是思考内容
          * 正文内容，上一个也是正文内容
          */
-        if (replyMsg.value.message.chatType === lastMsg.value.chatType && replyMsg.value.message.chatType !== store.ChatAction.ChatToolUse) {
+        if (replyMsg.value.message.chatType === lastMsg.value.chatType && 
+            replyMsg.value.message.chatType !== store.ChatAction.ChatToolUse &&
+            replyMsg.value.message.chatType !== store.ChatAction.AgentAction&&
+            replyMsg.value.message.chatType !== store.ChatAction.AgentReasonTitle) {
             // 在answerDisplayMsg数组中找到最后一个chatType为replyMsg.value.message.chatType的元素
             for (let index = answerDisplayMsg.value.length - 1; index >= 0; index--) {
                 const element = answerDisplayMsg.value[index];
@@ -2163,6 +2665,30 @@ const processSingleMessage = (msgValue, errCode) => {
                     break
                 }
             }
+        }
+
+        /**
+         * 替换的情况 - AgentReasonTitle
+         * 当answerDisplayMsg中不存在chatType === store.ChatAction.AgentReasonTitle的message时，
+         * 将该message push进answerDisplayMsg，若存在，则替换成replyMsg
+         */
+        if (replyMsg.value.message.chatType === store.ChatAction.AgentReasonTitle) {
+            const existingIndex = answerDisplayMsg.value.findIndex(item =>
+                item.chatType === store.ChatAction.AgentReasonTitle
+            );
+            
+            if (existingIndex === -1) {
+                // 不存在，push进answerDisplayMsg
+                answerDisplayMsg.value.push(replyMsg.value.message);
+            } else {
+                // 存在，替换成replyMsg
+                if (replyMsg.value.message.content !== "") {
+                    answerDisplayMsg.value[existingIndex] = replyMsg.value.message;
+                } else {
+                    answerDisplayMsg.value[existingIndex].status = replyMsg.value.message.status;
+                }
+            }
+            
         }
 
         /**
@@ -2177,6 +2703,17 @@ const processSingleMessage = (msgValue, errCode) => {
             }
         }
 
+        /**
+         * 修改AgentAction状态的情况
+         */
+        if (replyMsg.value.message.chatType === store.ChatAction.AgentAction ) {
+            for (let index = 0; index < answerDisplayMsg.value.length; index++) {
+                // 根据index和name更新AgentAction状态
+                if (answerDisplayMsg.value[index].index === replyMsg.value.message.index && answerDisplayMsg.value[index].name === replyMsg.value.message.name) {
+                    answerDisplayMsg.value[index] = replyMsg.value.message
+                }
+            }
+        }
 
         _.last(_.last(history.value).answers).displayContent = JSON.stringify(answerDisplayMsg.value)
 
@@ -2190,6 +2727,10 @@ const processSingleMessage = (msgValue, errCode) => {
 };
 
 const sigAiReplyStream = async (type, value, status) => {
+    if (showStop.value === false) 
+        return
+    // 初始化大纲状态
+    isLastHasOutline.value = false
     // 尝试处理原始value
     if (!processSingleMessage(value, status)) {
 
@@ -2367,6 +2908,20 @@ const stopRequest = async () => {
 
     _.last(_.last(history.value).answers).errCode = 298  //请求被取消
 
+    //点击停止时，任务状态置为failed
+    try{
+        let displayContent = JSON.parse(_.last(_.last(history.value).answers).displayContent)
+        let agentReasonTitleItem  = displayContent.find(item => item.chatType == store.ChatAction.AgentReasonTitle)
+        if (agentReasonTitleItem && agentReasonTitleItem.status == store.TitleStatus.InProgress){
+            agentReasonTitleItem.status = store.TitleStatus.Failed
+        }
+        _.last(_.last(history.value).answers).displayContent = JSON.stringify(displayContent)
+        }
+    catch(e){
+        
+    }
+    
+
     //存日志
     // Qrequest(chatQWeb.logConversations, JSON.stringify(history.value))
     Qrequest(chatQWeb.logCurrentConversations, currentAssistant.value.id, lastConversationInfo.value.conversationId, currentAssistant.value.displayname,  JSON.stringify(history.value))
@@ -2415,12 +2970,18 @@ const retryRequest = async () => {
     }catch(e) {
 
     }
-    // ques添加openThink字段
-    if (showDeepThinkAndSearchOnline.value) {
+    // ques添加openThink字段和onlineSearch字段
+    // 深度思考开关显示时才添加openThink字段
+    if (showDeepThink.value) {
         _question.openThink = store.IsDeepThink
-        _question.onlineSearch = store.IsSearchOnline
-    }else{
+    } else {
         _question.openThink = false
+    }
+
+    // 联网搜索开关显示时才添加onlineSearch字段
+    if (showSearchOnline.value) {
+        _question.onlineSearch = store.IsSearchOnline
+    } else {
         _question.onlineSearch = false
     }
 
@@ -2474,8 +3035,18 @@ const retryRequest = async () => {
     // question.value = ''
 }
 
-// 是否显示深度思考和联网搜索
-const showDeepThinkAndSearchOnline = computed(() => {
+// 是否显示深度思考开关
+const showDeepThink = computed(() => {
+    return currentAccount.value.model == store.DeepSeek_Uos_Free && (!store.IsOpenMcpServer || !store.IsInstallUOSAiAgent) && (currentAssistant.value.type !== store.AssistantType.AI_WRITING_ASSISTANT)
+})
+
+// 是否显示联网搜索开关
+const showSearchOnline = computed(() => {
+    // 写作助手下需要单独显示联网搜索开关
+    if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
+        return true
+    }
+
     return currentAccount.value.model == store.DeepSeek_Uos_Free && (!store.IsOpenMcpServer || !store.IsInstallUOSAiAgent)
 })
 // 深度思考
@@ -2762,8 +3333,11 @@ const switchModel = ref()
 const switchModelRoot = ref(null)
 const sigWebchatActiveChanged = (res) => {
     if (!res) {
-        switchModel.value.showSwitchMenu = false
-        switchModel.value.showAssistantMenu = false
+        // 如果正在进行引导(有 showGuide 或 guideActiveAssistantId)，不关闭菜单
+        if (!showGuide.value && !guideActiveAssistantId.value) {
+            switchModel.value.showSwitchMenu = false
+            switchModel.value.showAssistantMenu = false
+        }
         // chatTopRef.value.showSeting = false
     }
     // handleActive(res)
@@ -2788,37 +3362,142 @@ const sigWindowModeChanged = (res) => {
     console.log("onWindowModeChanged, is window mode: ", res);
     isWindowMode.value = res;
 }
+// 添加按钮引用
+const localMaterialBtnRef = ref(null);
+const localMaterialsListRef = ref(null);
+// 添加本地素材列表显示状态
+const showLocalMaterialsList = ref(false)
+// 计算属性：区分大纲文件和本地素材文件
+const outlineFiles = computed(() => {
+    if (currentAssistant.value.type !== store.AssistantType.AI_WRITING_ASSISTANT) {
+        return []
+    }
+    return inputFileList.value.filter(file => {
+        // 大纲文件
+        return file.fileCategory === store.DocFileCategory.FileOutline
+    })
+})
 
-const sigDocSummaryParsingStart = async (filePath_, iconPath, defaultPrompt, status) => {
-    isDragging.value = false;
-    // if(disabled.value) return  //回答中
-    // if(recording.value) return  //录音中
-    if(showGuide.value) return  //引导页不处理拖拽
-    if(inputFileList.value.length >= 3) { //文件数量超过3个
+// 处理删除本地素材文件
+const handleDeleteMaterialFile = async (index) => {
+    const materialFile = materialFiles.value.find(item => item.index === index)
+    if (materialFile) {
+        const msg = store.loadTranslations['Confirm deletion of this reference material?']
+        let ret = await Qrequest(chatQWeb.showRemoveFileDialog, msg)
+        if (!ret)
+            return
+
+        // 使用文件的唯一index作为删除key
+        deleteMaterialFile(materialFile.index)
+
+        // 获取LocalMaterialsList组件引用并更新位置
+        nextTick(() => {
+            localMaterialsListRef.value?.refreshPosition()
+        });
+    }
+}
+
+const checkStatusBeforeParse = (status) => {
+    if(disabled.value) return false  //回答中
+    if(recording.value) return false  //录音中
+    if(showGuide.value) return false  //引导页不处理拖拽
+    if(currentAssistant.value.type != store.AssistantType.AI_WRITING_ASSISTANT && inputFileList.value.length >= 3) { //文件数量超过3个
         handleShowTip(store.loadTranslations['You can upload up to 3 files or image'])
-        return
+        return false
     }
 
-    if(currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT) return  //非UOS AI助手 非PPT助手
+    if(currentAssistant.value.type == store.AssistantType.PLUGIN_ASSISTANT) return false  //非UOS AI助手 非PPT助手
     switch (status) {
         case store.DocParsingStatusType.Success:
             break
         case store.DocParsingStatusType.FileCountError:
             handleShowTip(store.loadTranslations['You can upload up to 3 files or image'])
-            return
+            return false
         case store.DocParsingStatusType.SuffixError:
             handleShowTip(store.loadTranslations['The file format is not supported.'])
-            return
+            return false
         case store.DocParsingStatusType.NoDocError:
             handleShowTip(store.loadTranslations['The file format is not supported.'])
-            return
+            return false
         case store.DocParsingStatusType.ExceedSize:
             handleShowTip(store.loadTranslations['The file size exceeds the 100MB limit.'])
-            return
+            return false
         case store.DocParsingStatusType.ImageExceedSize:
             handleShowTip(store.loadTranslations['Image size exceeds 15 MB'])
-            return
+            return false
     }
+
+    return true
+}
+
+const sigDocSummaryForOffice = async (filesData_, status, category) => {
+    isDragging.value = false
+    if (!checkStatusBeforeParse(status)) return
+
+    try {
+        // 解析JSON格式的文件数据
+        const filesData = JSON.parse(filesData_)
+        
+        // 检查是否是数组格式
+        if (!Array.isArray(filesData)) {
+            console.error("Invalid files data format, expected array")
+            return
+        }
+        
+        // 处理每个文件
+        for (const fileData of filesData) {
+            if (category == store.DocFileCategory.LocalMaterial && materialFiles.value.length >= 10) {
+                handleShowTip(store.loadTranslations['Supports uploading up to 10 local materials'])
+                break
+            }
+
+            if (category == store.DocFileCategory.FileOutline && outlineFiles.value.length >= 1) {
+                handleShowTip(store.loadTranslations['Only supports uploading 1 outline file'])
+                break
+            }
+
+            const index = generateFileIndex()
+            let file = {
+                type: store.DocParsingFileType.Doc,  // 文件类型
+                index: index,
+                filePath: fileData.filePath,  // 文件路径
+                fileNameText: fileData.filePath.substring(fileData.filePath.lastIndexOf('/') + 1), // 文件名
+                imgBase64: fileData.fileIcon,  // 文件图标
+                docContent: "",  // 文件内容
+                isEnabledMouthOver: true,  // 是否启用hover事件
+                isShowParsingStatus: false,  // 是否显示解析状态
+                isParsingStatusEnd: true,  // 是否解析结束
+                parsingStatusText: "",  // 解析状态文本
+                isFileParsingSuccess: true,  // 是否解析成功
+                fileCategory: category  // 文件分类 0:素材文件 1:模板文件
+            }
+            
+            // 根据文件后缀名判断文件类型
+            const suffix = fileData.filePath.substring(fileData.filePath.lastIndexOf('.') + 1)
+            if(suffix == 'jpg' || suffix == 'png' || suffix == 'jpeg'){
+                file.type = store.DocParsingFileType.Image
+            } else {
+                file.type = store.DocParsingFileType.Doc
+            }
+
+            inputFileList.value.push(file)
+            // 设置文件输入状态
+            isFileInInput.value = true
+        }
+
+        await Qrequest(chatQWeb.setInputFileSize, inputFileList.value.length)
+        docParsingPlaceHolder.value = store.loadTranslations['Summarize the key content of the file.']
+        isAllParsingStatusEnd.value = true
+        isFileParsingSuccess.value = true
+    } catch (error) {
+        console.error("Failed to parse files data:", error)
+        console.error("Raw files data:", filesData_)
+    }
+}
+
+const sigDocSummaryParsingStart = async (filePath_, iconPath, defaultPrompt, status) => {
+    isDragging.value = false;
+    if (!checkStatusBeforeParse(status)) return
 
     // 输入框中文件列表
     const index = Date.now().toString()
@@ -2874,7 +3553,6 @@ const sigDocSummaryParsingStart = async (filePath_, iconPath, defaultPrompt, sta
     }
 
 }
-
 
 const sigDocSummaryParserResult = (index, status, fileName, docContent_) => {
     // 新的文件解析逻辑
@@ -2977,8 +3655,6 @@ const sigAppendWordWizardConv = async (type) => {
             break
         }
     }
-
-
 
     //通知后端添加划词对话历史记录到当前助手历史记录
     Qrequest(chatQWeb.appendWordWizardConv, type)
@@ -3256,9 +3932,49 @@ const sigToShowPromptWindow = async (width) => {
         return;
     }
 
-    // Get the latest guide configuration from the top of the stack.
     const latestGuide = guideConfigStack[0];
     guideConfig.value = latestGuide.factory();
+
+    // Handle new-ai-writing-guide specifically
+    if (latestGuide.id === 'new-ai-writing-guide') {
+        // 1. Find writing assistant
+        const writingAssistant = assistantList.value.find(
+            item => item.type === store.AssistantType.AI_WRITING_ASSISTANT
+        )
+
+        if (!writingAssistant) {
+            console.warn('Writing assistant not found')
+            return
+        }
+
+        // 2. Set guide state and expand assistant list
+        guideActiveAssistantId.value = writingAssistant.id
+
+        // 3. Ensure assistant list is expanded
+        await nextTick()
+        await switchModel.value?.clickAssistantSwitch()
+
+        // 4. Wait for DOM to render and get target element
+        await nextTick()
+        await nextTick()  // Extra wait for animation
+
+        // 5. Get assistant item element
+        const assistantItem = await switchModel.value?.getItemElementById(writingAssistant?.id)
+
+        // 6. Set step 1 targets
+        if (assistantItem && guideConfig.value.steps[0]) {
+            guideConfig.value.steps[0].targets = [assistantItem]
+            guideConfig.value.steps[0].primaryTarget = assistantItem
+        }
+
+        // 7. Show guide
+        showGuide.value = true
+        isFocus.value = false
+        questionInput.value.blur()
+        Qrequest(chatQWeb.setTitleBarStatus, true)
+
+        return
+    }
 
     // ********************************************************************************
     // 2.12需求
@@ -3336,7 +4052,31 @@ const sigToChangeFreeAccountGuide = async (isShowFreeAccountGuide, isPreShow) =>
     }
 }
 
+const deleteMaterialFile = async (index) => {
+    // 根据index删除inputFileList中匹配的素材文件
+    // 保留：1. index不匹配的文件
+    inputFileList.value = inputFileList.value.filter(item => item.index !== index)
+
+    if(inputFileList.value.length === 0){
+        isFileInInput.value = false
+    }
+
+    // 如果删除后没有剩余的素材文件，关闭素材列表
+    if(materialFiles.value.length === 0){
+        showLocalMaterialsList.value = false
+    }
+
+    await Qrequest(chatQWeb.setInputFileSize, inputFileList.value.length)  // 同步更新当前输入框中存在的文件
+}
+
 const sigDeleteFile = async (index) => {
+    // 如果删除的文件是文件大纲，需要清空fileOutline
+    if (currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT && inputFileList.value.find(item => item.index === index).filePath === fileOutline.value) {
+        const msg = store.loadTranslations['Confirm deletion of this outline file?']
+        let ret = await Qrequest(chatQWeb.showRemoveFileDialog, msg)
+        if (!ret)
+            return
+    }
     // 根据index删除inputFileList和extensionFileList中index字段相同的文件
     inputFileList.value = inputFileList.value.filter(item => item.index !== index)
     extensionFileList.value = extensionFileList.value.filter(item => item.index !== index)
@@ -3367,14 +4107,44 @@ const sigShowTip = async (tip) => {
 
 // }
 
+const inputFilesIconRef = ref(null)
+const showInputFilesMenu = ref(false);
+const closeInputFilesMenu = () => {
+    showInputFilesMenu.value = false
+}
+const handleSelectFiles = (category) => {
+    // 根据category处理选择逻辑
+    if (category === store.DocFileCategory.LocalMaterial) {
+        if (materialFiles.value.length >= 10) {
+            handleShowTip(store.loadTranslations['Supports uploading up to 10 local materials'])
+            return
+        }
+        // 处理本地材料选择
+        Qrequest(chatQWeb.onDocSummaryForOfficeSelect, store.DocFileCategory.LocalMaterial)
+    } else if (category === store.DocFileCategory.FileOutline) {
+        if (fileOutline.value !== "") {
+            handleShowTip(store.loadTranslations['Only supports uploading 1 outline file'])
+            return
+        }
+        // 处理文件大纲选择
+        Qrequest(chatQWeb.onDocSummaryForOfficeSelect, store.DocFileCategory.FileOutline)
+    }
+    showInputFilesMenu.value = false
+}
+
 function handleKeyDown(event) {
+    // 新手引导期间，禁用所有 Enter 键操作
+    if (showGuide.value) {
+        return
+    }
+
     if (event.key === "Enter" && showPropmptList.value) {
         event.stopPropagation()
         event.preventDefault()
         showPropmptList.value = false
         return
     }
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && !showMarkdownEditor.value) {
         event.stopPropagation()
         event.preventDefault()
         console.log('chat ')
@@ -3414,6 +4184,7 @@ const responseAIFunObj = {
     // sigKnowledgeBaseFAQGenFinished,
     sigWindowModeChanged,
     sigDocSummaryParsingStart,  //拖入文档
+    sigDocSummaryForOffice,     //拖入Office文档解析开始
     sigDocSummaryParserResult,  //文档解析结果
     sigOpenFileFromPathResult,  //文档打开结果
     sigAppendWordWizardConv,  //随航继续对话接口 : 停止当前对话,获取随航历史记录
@@ -3430,7 +4201,20 @@ const responseAIFunObj = {
     sigWordWizardAsk,
     sigGetFreeCreditsResult,  // 领取免费额度结果
     sigIsGotFreeCredits,  // 是否领取过免费额度
+    sigActiveChatFromDigitalImage, // 是否从数字形象强制切换为聊天
 }
+
+// 窗口失去焦点时，关闭所有弹窗
+const handleWindowBlur = () => {
+    showLocalMaterialsList.value = false;
+    showInputFilesMenu.value = false;
+    if (showMcpSetting.value) {
+        showMcpSetting.value = false;
+    }
+    if (showConversionMode.value) {
+        showConversionMode.value = false;
+    }
+};
 
 const chatHistoryScrollbarRef = ref(null);
 onMounted(async () => {
@@ -3440,6 +4224,7 @@ onMounted(async () => {
         }
     }
     document.addEventListener("keydown", handleKeyDown);
+    window.addEventListener('blur', handleWindowBlur);
     initChat()
 
     useGlobalStore().loadTranslations = await Qrequest(chatQWeb.loadTranslations)
@@ -3449,6 +4234,7 @@ onMounted(async () => {
     var fontInfoList = fontInfo.split('#');
     document.documentElement.style.fontFamily = fontInfoList[0];
     document.documentElement.style.fontSize = fontInfoList[1] + 'px';
+    updateFont(fontInfoList[0], fontInfoList[1])
 
     if (chatHistoryScrollbarRef.value) {
         document.getElementById('chatHistory').addEventListener('scroll', handleHistoryScroll);
@@ -3468,6 +4254,7 @@ onBeforeUnmount(() => {
         }
     }
     document.removeEventListener("keydown", handleKeyDown);
+    window.removeEventListener('blur', handleWindowBlur);
 
     if (chatHistoryScrollbarRef.value) {
         document.getElementById('chatHistory').removeEventListener('scroll', handleHistoryScroll);
@@ -3738,6 +4525,56 @@ const handlePaste = async (event) => {
                     height: 20px;
                 }
             }
+
+            .base-outline-gen-content-btn{
+                height: 36px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow:0 4px 6px 0 var(--baseOutlineGenContentboxShadow);
+                background-color: var(--activityColor);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 10px;
+                    margin-right: 5px;
+                    fill: var(--uosai-color-baseOutlineGenContentBtn-icon);
+                }
+
+                .base-outline-gen-content-btn-text {
+                    margin: 7px 17px 9px 0px;
+                    font-size: 1rem;
+                    line-height: 1.2;
+                    color: var(--uosai-color-baseOutlineGenContentBtn-text);
+                    font-weight: 500;
+                }
+
+                &:not(.disabled):hover {
+                    background-color: var(--activityColorHover);
+                }
+
+                &:not(.disabled):active {
+                    background-color: var(--activityColor);
+                }
+            }
+
+            .base-outline-gen-content-btn2{
+                height: 36px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow:0 4px 6px 0 var(--baseOutlineGenContentboxShadow);
+                background-color: var(--activityColor);
+                white-space: nowrap;
+            }
         }
 
         .input-content {
@@ -3771,6 +4608,50 @@ const handlePaste = async (event) => {
                             margin-top: 8px;
                             margin-left: 10px;
                         }
+                    }
+
+                    /* 本地素材按钮样式 */
+                    .local-material-btn-wrapper {
+                        position: relative;
+                        left: 10px;
+                        top: 8px;
+                        width: fit-content;
+                        height: 38px;
+                        margin-right: 10px;
+                        align-items: center; /* 水平方向居中 */  
+                        cursor: pointer;
+                    }
+
+                    .local-material-btn {
+                        display: flex;
+                        align-items: center; /* 水平方向居中 */  
+                        height: 30px;
+                        max-width: 100%;
+                        min-width: none;
+                        text-overflow: ellipsis;/* 超出部分显示省略号 */
+                        overflow: hidden;/* 超出部分不显示 */
+                        background-color: var(--uosai-color-document-parsing-bg);
+                        border-radius: 8px;  /* 圆角 */
+                        
+                        .svg-icon {
+                            width: 12px;
+                            height: 14px;
+                            margin-left: 10px;
+                            margin-right: 6px;
+                            fill: var(--uosai-color-conversion-mode-icon);
+                        }
+                    }
+
+                    .local-material-text {
+                        display: flex;
+                        height: 30px;
+                        align-items: center; /* 水平方向居中 */  
+                        font-size: 1rem;
+                        margin-bottom: 3px;
+                        flex: 1; /* 占据剩余空间 */
+                        min-width: 0; /* 允许收缩 */
+                        color: var(--uosai-color-document-file-name-text);
+                        user-select: none;
                     }
                 }
             }
@@ -4205,6 +5086,18 @@ const handlePaste = async (event) => {
     }
 }
 
+.markdown-editor-container{
+    display: flex;
+    flex-direction: column; /* 垂直方向顺序布局 */
+    align-items: center; /* 水平方向居中 */
+    justify-content: center; /* 垂直方向居中 */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--main-content-background-color);
+    position: relative; /* 为蒙版层定位 */
+
+}
 
 .dark {
     .top-stop {

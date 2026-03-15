@@ -1,6 +1,7 @@
 #include "llmagent.h"
 #include "llm.h"
 #include "oaifunctionparser.h"
+#include "networkdefs.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -29,6 +30,7 @@ bool LlmAgent::initialize()
 void LlmAgent::setModel(QSharedPointer<LLM> llm)
 {
     m_llm = llm;
+    connect(llm.data(), &LLM::aborted, this, &LlmAgent::cancel, Qt::DirectConnection);
 }
 
 QJsonObject LlmAgent::processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params)
@@ -37,7 +39,8 @@ QJsonObject LlmAgent::processRequest(const QJsonObject &question, const QJsonArr
     
     if (!m_llm) {
         qCWarning(logAgent) << "No model set for LlmAgent";
-        response["error"] = "No model set";
+        m_llm->setLastError(AIServer::ContentAccessDenied);
+        m_llm->setLastErrorString("Invalid LLM Account.");
         return response;
     }
     
@@ -67,6 +70,11 @@ QJsonObject LlmAgent::processRequest(const QJsonObject &question, const QJsonArr
         QJsonObject output = m_llm->predict(QJsonDocument(messages).toJson(), m_tools);
         disconnect(m_llm.data(), &LLM::readyReadChatDeltaContent, this, nullptr);
 
+        if (m_llm->lastError() != AIServer::NoError) {
+            response["context"] = context;
+            return response;
+        }
+
         OAIFunctionParser parser;
         if (parser.hasToolCalls(output)) {
             auto tools = parser.parseResponse(output);
@@ -81,12 +89,15 @@ QJsonObject LlmAgent::processRequest(const QJsonObject &question, const QJsonArr
             bool isAbort = false;
             // 调用callTool接口并添加tool结果到聊天记录
             for (const auto &toolCall : tools) {
+                if (canceled)
+                    break;
+
                 qCInfo(logAgent) << "Agent" << name() << "calling tool:" << toolCall.name << toolCall.arguments;
                 auto result = callTool(toolCall.name, toolCall.arguments);
                 if (result.first < 0)
                     isAbort = true;
 
-                qCDebug(logAgent) << "Agent" << name() << "tool" << toolCall.name << "output:" << result.second << result.first;
+                qCInfo(logAgent) << "Agent" << name() << "tool" << toolCall.name << "output:" << result.second << result.first;
                 // 使用OAIFunctionParser创建tool消息
                 QJsonObject toolMsg = OAIFunctionParser::createToolMessage(toolCall, result.second);
                 context.append(toolMsg);
@@ -109,6 +120,21 @@ QJsonObject LlmAgent::processRequest(const QJsonObject &question, const QJsonArr
 
     response["context"] = context;
     return response;
+}
+
+int LlmAgent::lastError() const
+{
+    if (m_llm.isNull())
+        return AIServer::ContentAccessDenied;
+
+    return m_llm->lastError();
+}
+
+QString LlmAgent::lastErrorString() const
+{
+    if (m_llm.isNull())
+        return "Invalid LLM Account.";
+    return  m_llm->lastErrorString();
 }
 
 void LlmAgent::cancel()

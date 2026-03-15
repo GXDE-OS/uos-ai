@@ -113,32 +113,6 @@ QJsonObject MCPChatAgent::processRequest(const QJsonObject &question, const QJso
     return response;
 }
 
-void MCPChatAgent::textChainContent(const QString &content)
-{
-    QJsonObject message;
-
-    message.insert("content", content);
-    message.insert("chatType", ChatAction::ChatTextPlain);  // 普通文本类型
-
-    QJsonObject wrapper;
-    wrapper.insert("message", message);
-    wrapper.insert("stream", true);
-
-    emit readyReadChatDeltaContent(QJsonDocument(wrapper).toJson());
-}
-
-void MCPChatAgent::toolUseContent(const ToolUse &tool)
-{
-    QJsonObject message = tool.toJson();
-    message.insert("chatType", ChatAction::ChatToolUse);
-
-    QJsonObject wrapper;
-    wrapper.insert("message", message);
-    wrapper.insert("stream", true);
-
-    emit readyReadChatDeltaContent(QJsonDocument(wrapper).toJson());
-}
-
 bool MCPChatAgent::handleStreamOutput(OutputCtx *ctx)
 {
     auto mctx = dynamic_cast<MCPChatCtx *>(ctx);
@@ -183,8 +157,8 @@ bool MCPChatAgent::handleStreamOutput(OutputCtx *ctx)
                         tool.content = ToolParser::restoreFunction(func_content);
                         tool.name = toolName;
                         tool.params = QString::fromUtf8(QJsonDocument(args).toJson());
-                        tool.index = m_usedTool.size();
-                        this->toolUseContent(tool);
+                        tool.index = QUuid::createUuid().toString(QUuid::WithoutBraces);
+                        ToolUse::toolUseContent(this, tool);
 
                         auto result = callTool(toolName, args);
                         tool.result = result.second;
@@ -192,7 +166,7 @@ bool MCPChatAgent::handleStreamOutput(OutputCtx *ctx)
                                      && (result.first != AIServer::ErrorType::MCPToolError);
                         tool.status = !result.first ? ToolUse::Completed : ToolUse::Failed;
                         m_usedTool.append(tool);
-                        this->toolUseContent(tool);
+                        ToolUse::toolUseContent(this, tool);
 
                         if (!isAbort) {
                             if (result.first) {

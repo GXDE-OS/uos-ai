@@ -1,7 +1,7 @@
 <template>
     <div  ref="rootEl" class="switch-assistant">
         <template v-if="assistantList.length > 0">
-            <div :class="disabled ? 'disabled assistant' : 'assistant'" style="display: flex;" @click="clickAssistantSwitch">
+            <div :class="(disabled || showGuide) ? 'disabled assistant' : 'assistant'" style="display: flex;" @click="clickAssistantSwitch">
                 <img :src='currentAssistant.iconPrefix + currentAssistant.icon + "-16.svg"' alt="" style="margin-left: 10px;">
                 <el-tooltip v-if="currentAssistant" popper-class="uos-tooltip" effect="light" :show-arrow="false"
                     :enterable="false" :show-after="1000" :offset="2" :content="currentAssistant.displayname">
@@ -11,10 +11,13 @@
                 </el-tooltip>
                 <SvgIcon icon="combobox-arrow" style="margin-right: 10px;"/>
             </div>
-            <div class="assistant-menu" id="assistantMenu" v-on-click-outside.bubble="() => showAssistantMenu = false" 
+            <div class="assistant-menu-backdrop" id="assistantMenuBackdrop" :class="{ 'advanced-features': store.IsEnableAdvancedCssFeatures }"
+                :style="{'height':assistantList.length > 3 ? '380px' : '345px', 'max-height':assistantList.length > 3 ? '380px' : '345px'}"
+                v-show="showAssistantMenu"></div>
+            <div class="assistant-menu" id="assistantMenu" :class="{'disabled': disabled || showGuide}" v-on-click-outside.bubble="() => { if (!showGuide) showAssistantMenu = false }"
                 :style="{'height':assistantList.length > 3 ? '380px' : '345px', 'max-height':assistantList.length > 3 ? '380px' : '345px'}"
                 v-show="showAssistantMenu">
-                <div class="assistant-menu-title">
+                <div class="assistant-menu-title" :class="{'disabled': disabled || showGuide}" :style="{'opacity': showGuide ? '0.3 !important' : opacity}">
                     {{store.loadTranslations['Agent List']}}
                     <div v-show="isAgentSupported" class="add-agent" @click="addAgent">
                         <SvgIcon icon="add"/>
@@ -23,7 +26,7 @@
                 </div>
                 <custom-scrollbar class="scrollbar" id="page-scroll" :autoHideDelay="2000" :thumbWidth="6"
                 :wrapperStyle="{ width: '100%', height: 'calc(100% - 44px)' }" :style="{ height: '100%' }" :contentStyle="{'padding-right': '0'}">
-                    <div class="assistant-menu-item" v-for="item in assistantList" :key="item.index" @click="clickAssistantItem(item)">
+                    <div class="assistant-menu-item" :class="{ 'disabled': isItemDisabled(item) }" :style="{'opacity': (showGuide && isItemDisabled(item)) ? '0.3 !important' : opacity }" :data-item-id="item.id" v-for="item in assistantList" :key="item.index" @click="isItemDisabled(item) ? null : clickAssistantItem(item)">
                         <div class="icon">
                             <img :src='item.iconPrefix + item.icon + "-32.svg"' alt="">
                         </div>
@@ -82,10 +85,11 @@ import { vOnClickOutside } from '@/utils/VonClickOutside'
 import { useGlobalStore } from "@/store/global";
 import { Qrequest } from "@/utils";
 import CustomScrollbar from 'custom-vue-scrollbar';
+import { nextTick } from 'vue';
 
 const { chatQWeb } = useGlobalStore();
 const store = useGlobalStore();
-const props = defineProps(['currentAccount', 'accountList', 'disabled', 'assistantList', 'currentAssistant', 'showGuide'])
+const props = defineProps(['currentAccount', 'accountList', 'disabled', 'assistantList', 'currentAssistant', 'showGuide', 'guideActiveItemId'])
 const emit = defineEmits(['update:currentAccount', 'update:accountList', 'update:assistantList', 'update:currentAssistant', 'update:currentAccountChanged'])
 const instance = getCurrentInstance()
 
@@ -108,13 +112,15 @@ const clickModelSwitch = async (e) => {
 }
 
 const clickAssistantSwitch = async (e) => {
+    console.log('clickAssistantSwitch', props.guideActiveItemId)
     if (!showAssistantMenu.value && !props.disabled) {
         const resAssistant = await Qrequest(chatQWeb.queryAssistantList)
         showAssistantMenu.value = !showAssistantMenu.value
-        
         nextTick(() => {
             const assistantMenu = document.querySelector('#assistantMenu');
             assistantMenu.style.top = `-${assistantMenu.clientHeight + 10}px`;
+            const assistantMenuBackdrop = document.querySelector('#assistantMenuBackdrop');
+            assistantMenuBackdrop.style.top = `-${assistantMenuBackdrop.clientHeight + 10}px`;
         })
     }
 
@@ -181,8 +187,29 @@ onBeforeUnmount(() => {
 const showGuide = computed (() => {
     return props.showGuide
 })
+
+const isItemDisabled = (item) => {
+    // 有guideActiveItemId时，只有对应的item可交互
+    return props.guideActiveItemId && item.id !== props.guideActiveItemId
+}
+
+const getItemElementById = (itemId) => {
+    // 等待DOM更新后查找
+    return nextTick(() => {
+        // return nextTick (() => {
+            const items = document.querySelectorAll('.assistant-menu-item')
+            for (const item of items) {
+                if (item.dataset.itemId === itemId) {
+                    return item
+                }
+            }
+            return null
+        // })
+    })
+}
+
 const rootEl = ref(null)
-defineExpose({ showSwitchMenu, showAssistantMenu,clickAssistantItem, clickAssistantSwitch , rootEl})
+defineExpose({ showSwitchMenu, showAssistantMenu, clickAssistantItem, clickAssistantSwitch, rootEl, getItemElementById })
 
 </script>
 <style lang="scss" scoped>
@@ -371,6 +398,23 @@ defineExpose({ showSwitchMenu, showAssistantMenu,clickAssistantItem, clickAssist
     }
 }
 
+.assistant-menu-backdrop {
+    border-radius: 18px;
+    background-color: var(--uosai-color-assistantmenu-backdrop);
+    position: absolute;
+    width: 330px;
+    height: 345px;
+    max-height: 345px;
+    z-index: 9999;
+    right: 0;
+    padding: 0 4px 10px 4px;
+
+    &.advanced-features {
+        background-color: var(--uosai-color-assistantmenu-backdrop-qt6);
+        backdrop-filter: blur(20px);
+    }
+}
+
 .assistant-menu {
     // height: fit-content;
     border-radius: 18px;
@@ -433,7 +477,11 @@ defineExpose({ showSwitchMenu, showAssistantMenu,clickAssistantItem, clickAssist
         overflow-x: hidden;
         height: 100%;
         width: 100%;
+        position: relative;
+
         .assistant-menu-item {
+            position: relative;
+            z-index: 1;
             opacity: 1;
             color: var(--uosai-color-title);
             cursor: pointer;
@@ -507,7 +555,7 @@ defineExpose({ showSwitchMenu, showAssistantMenu,clickAssistantItem, clickAssist
                 }
             }
         }
-        .assistant-menu-item:not(:last-child) {  
+        .assistant-menu-item:not(:last-child) {
             margin-bottom: 10px;
         }
     }

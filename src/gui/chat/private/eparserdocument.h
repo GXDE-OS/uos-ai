@@ -4,6 +4,7 @@
 #include "serverdefs.h"
 #include <QObject>
 #include <QProcess>
+#include <QFileDialog>
 
 namespace uos_ai {
 class EParserDocument : public QObject
@@ -33,12 +34,21 @@ public:
         Image    = 1,
     };
 
+    enum FileCategory {
+        LocalMaterial = 0,
+        FileOutline = 1
+    };
+
     void parser(const QString &id, const QString &docPath);
-    void selectDocument(AssistantType type);
+    QString parserSync(const QString &docPath);
+    void selectDocument(AssistantType type, QWidget *parent);
+    void selectDocumentForOffice(FileCategory category, QWidget *parent);
     void dragInViewDocument(const QStringList &docPaths, const QString &defaultPrompt, AssistantType type);
+    void dragInViewDocForWriting(const QStringList &docPaths);
     void handleScreenshotImage(const QString &imagePath, AssistantType type);
     void handleCopyFile(const QStringList &filePaths, AssistantType type);
 signals:
+    void sigSelectFilesForOffice(const QString filesDataJson, int error, FileCategory category);
     void sigParserStart(const QString &docPath, const QString &iconData, const QString &defaultPrompt, int error);
     void sigParserResult(const QString &id, int error, const QString &docPath, const QString &docContent);
 
@@ -50,6 +60,7 @@ private:
 
     bool validSize(const QString &docPath);
     QString getFileIconData(const QString &docPath);
+    QIcon getFileIcon(const QString &docPath);
     void updateSupSuffix(AssistantType type);
 
     QString runOCRProcessByPath(QStringList imagePathList);
@@ -58,6 +69,7 @@ private:
 
     FileType getFileType(const QString &filePath);
 
+    bool execFileSelect(QStringList &paths, QFileDialog::FileMode mode = QFileDialog::ExistingFile, QWidget *parent = nullptr);
 private:
     QString m_lastImportPath;
     QStringList m_supSuffix;

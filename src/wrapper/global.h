@@ -31,6 +31,8 @@ enum ExtentionType {
     FunctionButton,
     MCPStatus,
     KnowledgeBaseBtnStatus,  // 知识库开关
+    Outline,
+    WritingResource,  // 写作资料
 };
 inline constexpr char kExtentionType[] = "type";
 

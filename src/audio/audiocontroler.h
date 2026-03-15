@@ -68,7 +68,7 @@ public:
      * @param text
      * @return
      */
-    bool startAppendPlayText(const QString &id, const QString &text, bool isEnd);
+    bool startAppendPlayText(const QString &id, const QString &text, bool isEnd, bool isPlayOutline);
 
     /**
      * @brief filterMarkdown

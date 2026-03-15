@@ -230,6 +230,7 @@ bool DbWrapper::initAssistant()
         proxySystemAssistant.type = UOS_SYSTEM_ASSISTANT;
         proxySystemAssistant.description = "Assists you with UOS system-related inquiries.";
     }
+
 #ifdef ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT
     AssistantProxy proxyPerKnowAssistant;
     proxyPerKnowAssistant.displayName = "Personal Knowledge Assistant";
@@ -504,13 +505,34 @@ QList<AssistantProxy> DbWrapper::queryAssistantList(bool all)
         assistantList.append(assistantProxy);
     }
 
-    // Sort the list by assistant type
-    std::sort(assistantList.begin(), assistantList.end(),
-        [](const AssistantProxy &a, const AssistantProxy &b) {
-            return static_cast<int>(a.type) < static_cast<int>(b.type);
-        });
+    sortAssistantList(assistantList);
 
     return assistantList;
+}
+
+void DbWrapper::sortAssistantList(QList<AssistantProxy> &lists)
+{
+    const QList<AssistantType> assistantOrder = {
+        UOS_AI,
+        UOS_SYSTEM_ASSISTANT,
+        DEEPIN_SYSTEM_ASSISTANT,
+        PERSONAL_KNOWLEDGE_ASSISTANT,
+        AI_WRITING,
+        AI_TEXT_PROCESSING,
+        AI_TRANSLATION,
+        PLUGIN_ASSISTANT
+    };
+
+    // Sort the list by assistant type
+    std::stable_sort(lists.begin(), lists.end(),
+        [&assistantOrder](const AssistantProxy &a, const AssistantProxy &b) {
+            int ia = assistantOrder.indexOf(a.type);
+            int ib = assistantOrder.indexOf(b.type);
+            ia = ia < 0 ? PLUGIN_ASSISTANT : ia;
+            ib = ib < 0 ? PLUGIN_ASSISTANT : ib;
+
+            return ia < ib;
+        });
 }
 
 // 助手当前模型

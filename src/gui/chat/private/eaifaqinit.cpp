@@ -504,14 +504,14 @@ QJsonArray EAiFAQInit::createWritingFAQArray() const
     // Articles 类别
     QJsonObject question1;
     question1["iconName"] = "17-question-ai";
-    question1["Function"] = "Articles";
-    question1["Question"] = tr("Please summarize the key points of this document");
+    question1["Function"] = "Research Report";
+    question1["Question"] = tr("Write a report on the development history of domestic operating systems, focusing on rapid development in the past 5 years, using only my local content as reference");
     faqArray.append(question1);
 
     QJsonObject question2;
     question2["iconName"] = "17-question-ai";
-    question2["Function"] = "Articles";
-    question2["Question"] = tr("List the main ideas of this file for me");
+    question2["Function"] = "Research Report";
+    question2["Question"] = tr("Write a report on the development history of domestic operating systems, using my local materials and internet content as sources");
     faqArray.append(question2);
 
     QJsonObject question3;
@@ -910,6 +910,18 @@ QJsonArray EAiFAQInit::createWritingFAQArray() const
     question67["Question"] = tr("Please write a market opportunity analysis report based on the provided file");
     faqArray.append(question67);
 
+    QJsonObject question68;
+    question68["iconName"] = "17-question-ai";
+    question68["Function"] = "Articles";
+    question1["Question"] = tr("Please summarize the key points of this document");
+    faqArray.append(question68);
+
+    QJsonObject question69;
+    question69["iconName"] = "17-question-ai";
+    question69["Function"] = "Articles";
+    question69["Question"] = tr("List the main ideas of this file for me");
+    faqArray.append(question69);
+
     return faqArray;
 }
 
@@ -956,11 +968,19 @@ QByteArray EAiFAQInit::createWritingFunctionTemplate() const
     return doc.toJson();
 }
 
-QJsonArray EAiFAQInit::assignRandomIcons(QJsonArray jsonArray) const
+QJsonArray EAiFAQInit::assignRandomIcons(QJsonArray jsonArray, const QString iconName) const
 {
-    // Create a list of available icon numbers (1-12)
+    // Create a list of available icon numbers
     QList<int> availableIcons;
-    for (int i = 1; i <= 12; ++i) {
+    int iconSize = jsonArray.size();
+
+    if (iconName == "general") {
+        iconSize = 12;
+    } else if (iconName == "operations") {
+        iconSize = 18;
+    }
+
+    for (int i = 1; i <= iconSize; ++i) {
         availableIcons.append(i);
     }
 
@@ -974,7 +994,7 @@ QJsonArray EAiFAQInit::assignRandomIcons(QJsonArray jsonArray) const
         QJsonObject obj = jsonArray[i].toObject();
         // Get next available icon number
         int iconNumber = availableIcons[i % availableIcons.size()];
-        obj["iconName"] = QString("%1-question-general").arg(iconNumber);
+        obj["iconName"] = QString("%1-question-%2").arg(iconNumber).arg(iconName);
         jsonArray[i] = obj;
     }
 

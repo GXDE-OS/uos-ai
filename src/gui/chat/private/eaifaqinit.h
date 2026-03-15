@@ -15,7 +15,7 @@ public:
     QJsonArray createWritingFunctionArray() const;
     QByteArray createWritingFunctionTemplate() const;
     QJsonArray createTextProcessingFunctionArray() const;
-    QJsonArray assignRandomIcons(QJsonArray jsonArray) const;
+    QJsonArray assignRandomIcons(QJsonArray jsonArray, const QString iconName = "general") const;
 
 private:
     // ... existing code ...

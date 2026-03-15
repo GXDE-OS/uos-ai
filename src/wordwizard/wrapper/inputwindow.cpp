@@ -41,7 +41,7 @@ InputWindow &InputWindow::instance() {
 
 void InputWindow::initUI()
 {
-    this->setFixedHeight(32);  // 与WizardWrapper的默认高度保持一致
+    this->setFixedHeight(36);  // 与WizardWrapper的默认高度保持一致
     this->setMinimumWidth(300);
     this->setMaximumWidth(600);
     this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
@@ -64,18 +64,8 @@ void InputWindow::initUI()
     layout->setSpacing(1);  // 与WizardWrapper保持一致
     layout->setContentsMargins(9, 0, 6, 0);  // 与WizardWrapper保持一致
     
-    m_lineSep1 = new DWidget(this);
-    m_lineSep1->setFixedSize(1, 12);
-    m_lineSep1->setAutoFillBackground(true);
-
-    m_lineSep2 = new DWidget(this);
-    m_lineSep2->setFixedSize(1, 12);
-    m_lineSep2->setAutoFillBackground(true);
-
-    DPalette sepPalette = m_lineSep1->palette();
-    sepPalette.setColor(DPalette::Window, QColor(0, 0, 0, int(255 * 0.2)));
-    m_lineSep1->setPalette(sepPalette);
-    m_lineSep2->setPalette(sepPalette);
+    m_twoLineSep = new QLabel(this);
+    m_twoLineSep->setFixedSize(5, 12);
 
     // 创建输入框
     m_inputEdit = new DLineEdit(this);
@@ -152,8 +142,7 @@ void InputWindow::initUI()
 
     // 添加到布局，与WizardWrapper的布局结构保持一致
     layout->setSpacing(2);
-    layout->addWidget(m_lineSep1);
-    layout->addWidget(m_lineSep2);
+    layout->addWidget(m_twoLineSep);
     layout->addSpacing(6);
     layout->addWidget(m_inputEdit,1);  // 输入框占据大部分空间
     layout->addWidget(m_closeBtn);
@@ -424,25 +413,23 @@ void InputWindow::adjustPosition(const QRect &screenRect)
 
 void InputWindow::updateTheme(const DGuiApplicationHelper::ColorType &themeType)
 {
+    // update two line sep.
+    {
+        qreal ratio = this->devicePixelRatioF();
+        int w = static_cast<int>(std::ceil(5 * ratio + 0.5) - 1); // for 1.5 scaled
+        int h = static_cast<int>(12 * ratio);
+        auto pix = QIcon::fromTheme("uos-ai-twolines").pixmap(QSize(5, 12));
+        if (pix.width() != w)
+            pix = pix.scaled(w, h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+        m_twoLineSep->setPixmap(pix);
+    }
     // 主题更新逻辑可以在这里添加
     DPalette parentPb = DGuiApplicationHelper::instance()->applicationPalette();
     if (themeType == DGuiApplicationHelper::LightType) {
-        if(m_lineSep1) {
-            DPalette sepPalette = m_lineSep1->palette();
-            sepPalette.setColor(DPalette::Window, QColor(0, 0, 0, int(255 * 0.2)));
-            m_lineSep1->setPalette(sepPalette);
-            m_lineSep2->setPalette(sepPalette);
-        }
         QColor backgroundColor = parentPb.color(DPalette::Normal, DPalette::NColorTypes);
         setMaskColor(backgroundColor);
         setMaskAlpha(255);
     } else {
-        if(m_lineSep1) {
-            DPalette sepPalette = m_lineSep1->palette();
-            sepPalette.setColor(DPalette::Window, QColor(255, 255, 255, int(255 * 0.2)));
-            m_lineSep1->setPalette(sepPalette);
-            m_lineSep2->setPalette(sepPalette);
-        }
         QColor backgroundColor(32, 32, 32);
         setMaskColor(backgroundColor);
         setMaskAlpha(0.8 * 255);

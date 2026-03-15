@@ -35,6 +35,11 @@ void WizardDPushButton::paintEvent(QPaintEvent* e)
 {
     QRectF rect = this->rect();
     QPainter pa(this);
+
+    // Enable anti-aliasing for smooth edges
+    pa.setRenderHint(QPainter::Antialiasing, true);
+    pa.setRenderHint(QPainter::SmoothPixmapTransform, true);
+
     DPalette parentPb = DGuiApplicationHelper::instance()->applicationPalette();
     QColor backgroundColor = parentPb.color(DPalette::Normal, DPalette::NColorTypes);
     QColor highlightColor = parentPb.color(DPalette::Normal, DPalette::Highlight);
@@ -42,9 +47,11 @@ void WizardDPushButton::paintEvent(QPaintEvent* e)
 
     QColor iconColor = textColor;
 
-    QPixmap pixmap = this->icon().pixmap(QSize(64, 64));
+    QSize iconSize = this->iconSize();
+    QPixmap pixmap = this->icon().pixmap(iconSize);
     QPainter iconPainter(&pixmap);
     iconPainter.setCompositionMode(QPainter::CompositionMode_SourceIn);
+    iconPainter.setRenderHint(QPainter::Antialiasing, true);
 
     if (isEnabled() && m_isPress) {
         backgroundColor.setAlphaF(0.9);
@@ -87,29 +94,33 @@ void WizardDPushButton::paintEvent(QPaintEvent* e)
     pa.setBrush(QBrush(backgroundColor));
     pa.drawPath(path);
 
-    if (text().isNull())
-        pa.drawPixmap(2, (this->height() - this->iconSize().height()) / 2, coloredIcon.pixmap(this->iconSize()));
-    else {
-        pa.drawPixmap(6, (this->height() - this->iconSize().height()) / 2, coloredIcon.pixmap(this->iconSize()));
-    }
+    QFont font = this->font();
+    QFontMetrics fm(font);
+    int leading = fm.leading();
 
-    pa.setPen(textColor);
-    QTextOption textOption = Qt::AlignVCenter | Qt::AlignLeft;
-    textOption.setWrapMode(QTextOption::NoWrap);
-    textOption.setAlignment(Qt::AlignCenter);
-    rect.setX(this->iconSize().width() + 2);
-    int offset = this->rect().height() < 26 ? 1 : 2;
-    rect.setY(-offset);
+    int textWidth = fm.horizontalAdvance(text());
+    int totalContentWidth = iconSize.width() + (text().isNull() ? 0 : textWidth + 8);
 
-    QString displayText = text();
-    if (!displayText.isNull()) {
-        QFont font = this->font();
-        QFontMetrics fm(font);
-        int availableWidth = rect.width() - 12;
+    int startX = (this->width() - totalContentWidth) / 2;
+    int iconY = (this->height() - iconSize.height()) / 2;
+
+    if (text().isNull()) {
+        // Only icon - center it
+        pa.drawPixmap(startX, iconY, coloredIcon.pixmap(iconSize));
+    } else {
+        // Icon + text - center both vertically
+        QRect iconRect(startX, iconY, iconSize.width(), iconSize.height());
+        pa.drawPixmap(startX, iconY, coloredIcon.pixmap(iconSize));
+
+        QRect textRect(startX + iconSize.width() + 4, (this->height()-fm.height())/2 + leading, textWidth, fm.height());
+        QString displayText = text();
+        int availableWidth = textRect.width();
         displayText = fm.elidedText(text(), Qt::ElideRight, availableWidth);
+        pa.setPen(textColor);
+        QTextOption textOption = Qt::AlignVCenter | Qt::AlignLeft;
+        textOption.setWrapMode(QTextOption::NoWrap);
+        pa.drawText(textRect, displayText, textOption);
     }
-    
-    pa.drawText(rect, displayText, textOption);
 }
 
 void WizardDPushButton::mousePressEvent(QMouseEvent *e)
@@ -166,14 +177,18 @@ void WizardDPushButton::updateRectSize()
         QFontMetrics fm(font);
         int textWidth = fm.horizontalAdvance(text());
         int buttonWidth = textWidth + 32;
-        
+
         // 限制最大宽度
         if (buttonWidth > m_maxWidth) {
             buttonWidth = m_maxWidth;
         }
-        
+
         this->setFixedWidth(buttonWidth);
-        this->setFixedHeight(fm.height() + 6);
+        if (fm.height()%2 == 1) {
+            this->setFixedHeight(fm.height() + 5);
+        } else {
+            this->setFixedHeight(fm.height() + 6);
+        }
     } else {
         this->setFixedWidth(24);//图标
         this->setFixedHeight(24);
@@ -186,7 +201,3 @@ void WizardDPushButton::setHoverStatus(bool isHover)
     m_isHover = isHover;
     update();
 }
-
-
-
-

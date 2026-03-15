@@ -30,7 +30,13 @@ int main(int argc, char *argv[])
     qputenv("QTWEBENGINE_REMOTE_DEBUGGING", "10777");
     qCDebug(logMain) << "Enabled remote debugging for WebEngine";
 #endif
+#if defined(COMPILE_ON_V25) && defined(Q_PROCESSOR_SW_64)
+    qputenv("QTWEBENGINE_CHROMIUM_FLAGS",
+            "--js-flags=--jitless --enable-logging --log-level=2 --no-sandbox");
+    qCDebug(logMain) << "Use it for SW QWebEngine in V25";
+#else
     qputenv("QTWEBENGINE_CHROMIUM_FLAGS", "--enable-logging --log-level=2 --no-sandbox");
+#endif
 
     Application a(argc, argv);
 

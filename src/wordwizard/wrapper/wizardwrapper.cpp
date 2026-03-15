@@ -23,7 +23,6 @@
 
 #include <DStyle>
 #include <DDialog>
-#include <DPlatformWindowHandle>
 #include <DFontSizeManager>
 
 #include <QLoggingCategory>
@@ -33,6 +32,8 @@ Q_DECLARE_LOGGING_CATEGORY(logWordWizard)
 #include <DIconButton>
 #include <DGuiApplicationHelper>
 #include <QLabel>
+
+#define  INIT_MODE_HEIGHT 24
 
 DGUI_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
@@ -54,7 +55,7 @@ WizardWrapper &WizardWrapper::instance() {
 
 void WizardWrapper::initUI()
 {
-    this->setFixedSize(32, 32);
+    this->setFixedSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT);
     this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
 #ifdef COMPILE_ON_V20
     if (ESystemContext::isWayland())
@@ -64,6 +65,7 @@ void WizardWrapper::initUI()
     this->setAttribute(Qt::WA_TranslucentBackground);
     DPlatformWindowHandle handle(this, this);
     handle.setWindowRadius(8);
+    m_effectScene = handle.windowEffect();
     this->setObjectName("selectionwidget");
     this->setBlurEnabled(true);
     this->setBlurRectXRadius(8);
@@ -78,7 +80,7 @@ void WizardWrapper::initUI()
     // 创建图标按钮
     m_iconBtn = new DIconButton(this);
     m_iconBtn->setFixedSize(QSize(20, 20));
-    m_iconBtn->setIcon(QIcon::fromTheme("uos-ai-assistant"));
+    m_iconBtn->setIcon(QIcon::fromTheme("UosAiAssistant"));
     m_iconBtn->setIconSize(QSize(20, 20));
     m_iconBtn->installEventFilter(this);
     
@@ -86,19 +88,14 @@ void WizardWrapper::initUI()
     m_lineSep->setFixedSize(1, 15);
     m_lineSep->setAutoFillBackground(true);
 
-    m_lineSep1 = new DWidget(this);
-    m_lineSep1->setFixedSize(1, 12);
-    m_lineSep1->setAutoFillBackground(true);
-
-    m_lineSep2 = new DWidget(this);
-    m_lineSep2->setFixedSize(1, 12);
-    m_lineSep2->setAutoFillBackground(true);
+    m_twoLineSep = new QLabel(this);
+    m_twoLineSep->setFixedSize(5, 12);
 
     m_moreBtn = new WizardDPushButton(this);
     m_moreBtn->setFlat(true);
-    m_moreBtn->setIcon(QIcon::fromTheme("uos-ai-assistant_more"));
-    m_moreBtn->setIconSize(QSize(20, 20));
-    m_moreBtn->setFixedHeight(24);
+    m_moreBtn->setIcon(QIcon::fromTheme("uos-ai-assistant_downarrow"));
+    m_moreBtn->setIconSize(QSize(12, 12));
+    m_moreBtn->setFixedSize(26,26);
     m_moreBtn->installEventFilter(this);
 
     m_closeBtn = new WizardDPushButton(this);
@@ -314,14 +311,23 @@ void WizardWrapper::leaveEvent(QEvent *event)
 
 void WizardWrapper::onUpdateSystemTheme(const DGuiApplicationHelper::ColorType &themeType)
 {
+    // update two line sep.
+    {
+        qreal ratio = this->devicePixelRatioF();
+        int w = static_cast<int>(std::ceil(5 * ratio + 0.5) - 1); // for 1.5 scaled
+        int h = static_cast<int>(12 * ratio);
+        auto pix = QIcon::fromTheme("uos-ai-twolines").pixmap(QSize(5, 12));
+        if (pix.width() != w)
+            pix = pix.scaled(w, h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+        m_twoLineSep->setPixmap(pix);
+    }
+
     DPalette parentPb = DGuiApplicationHelper::instance()->applicationPalette();
     if (themeType == DGuiApplicationHelper::LightType) {
         if(m_lineSep) {
             DPalette sepPalette = m_lineSep->palette();
             sepPalette.setColor(DPalette::Window, QColor(0, 0, 0, int(255 * 0.2)));
             m_lineSep->setPalette(sepPalette);
-            m_lineSep1->setPalette(sepPalette);
-            m_lineSep2->setPalette(sepPalette);
         }
         QColor backgroundColor = parentPb.color(DPalette::Normal, DPalette::NColorTypes);
         setMaskColor(backgroundColor);
@@ -331,8 +337,6 @@ void WizardWrapper::onUpdateSystemTheme(const DGuiApplicationHelper::ColorType &
             DPalette sepPalette = m_lineSep->palette();
             sepPalette.setColor(DPalette::Window, QColor(255, 255, 255, int(255 * 0.2)));
             m_lineSep->setPalette(sepPalette);
-            m_lineSep1->setPalette(sepPalette);
-            m_lineSep2->setPalette(sepPalette);
         }
         QColor backgroundColor(32, 32, 32);
         setMaskColor(backgroundColor);
@@ -575,7 +579,7 @@ void WizardWrapper::onInputAreaClicked()
 {
 
     int wizardWidth = this->width();
-    int wizardHeight = 32;
+    int wizardHeight = 36;
 
     // 获取当前窗口的位置
     QPoint currentPos = QPoint(this->x()+(this->width()-wizardWidth)/2, this->y()+(this->height()-wizardHeight)/2);
@@ -624,6 +628,7 @@ bool WizardWrapper::isFirstClose()
 void WizardWrapper::expandWrapper()
 {
     if (!m_isExtend && this->geometry().contains(QCursor::pos())) {
+        this->hide();
         switchToExpandedMode();
         adjustShowPos(m_screenRect, m_cursorPos);
         move(m_cursorPos);
@@ -650,10 +655,12 @@ void WizardWrapper::switchToInitMode()
 {
     // 初始化模式：仅显示图标按钮
     m_isExtend = false;
-    
-    // 设置窗口大小为32x32
-    this->setFixedSize(32, 32);
+    this->setFixedSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT);
 
+    // 设置窗口为完全透明和无阴影
+    this->setBlurEnabled(false);
+    DPlatformWindowHandle handle(this, this);
+    handle.setWindowEffect(m_effectScene | DPlatformWindowHandle::EffectScene::EffectNoShadow);
     // 隐藏所有功能按钮和输入相关组件
     for (WizardDPushButton *btn : m_functionButtons) {
         btn->hide();
@@ -662,12 +669,15 @@ void WizardWrapper::switchToInitMode()
     m_closeBtn->hide();
     m_inputArea->hide();
     m_lineSep->hide();
-    m_lineSep1->hide();
-    m_lineSep2->hide();
+    m_twoLineSep->hide();
     
-    // 显示并设置图标按钮
-    m_iconBtn->setFixedSize(QSize(20, 20));
-    m_iconBtn->setIconSize(QSize(20, 20));
+    // 显示并设置图标按钮为透明背景
+    m_iconBtn->setFixedSize(QSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT));
+    m_iconBtn->setIcon(QIcon::fromTheme("uos-ai-assistant-wordwizard"));
+    m_iconBtn->setIconSize(QSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT));
+    m_iconBtn->setFlat(true);
+    m_iconBtn->setBackgroundRole(QPalette::NoRole);
+    m_iconBtn->setAutoFillBackground(false);
     
     // 重新布局以确保图标居中
     clearLayout();
@@ -676,7 +686,7 @@ void WizardWrapper::switchToInitMode()
         layout->addStretch();
         layout->addWidget(m_iconBtn);
         layout->addStretch();
-        layout->setContentsMargins(6, 0, 6, 0);
+        layout->setContentsMargins(0, 0, 0, 0);
     }
     
     adjustSize();
@@ -686,6 +696,12 @@ void WizardWrapper::switchToExpandedMode()
 {
     // 展开模式：显示功能按钮和输入区域示意
     m_isExtend = true;
+    
+    // 恢复背景透明度和模糊效果，去掉noshadow
+    this->setBlurEnabled(true);
+    DPlatformWindowHandle handle(this, this);
+    handle.setWindowEffect(m_effectScene);
+    onUpdateSystemTheme(DGuiApplicationHelper::instance()->themeType());
     
     // 显示所有功能按钮
     for (WizardDPushButton *btn : m_functionButtons) {
@@ -698,27 +714,28 @@ void WizardWrapper::switchToExpandedMode()
     m_closeBtn->show();
     m_inputArea->show();
     m_lineSep->show();
-    m_lineSep1->show();
-    m_lineSep2->show();
+    m_twoLineSep->show();
     
     // 重新构建展开模式的布局
     clearLayout();
     QHBoxLayout *layout = this->findChild<QHBoxLayout *>();
     if (layout) {
         // 添加展开模式的所有组件
-        layout->addWidget(m_lineSep1);
-        layout->addWidget(m_lineSep2);
+        layout->addWidget(m_twoLineSep, Qt::AlignVCenter);
         layout->addSpacing(5);
-        layout->addWidget(m_iconBtn);
+        m_iconBtn->setFixedSize(QSize(20, 20));
+        m_iconBtn->setIcon(QIcon::fromTheme("UosAiAssistant"));
+        m_iconBtn->setIconSize(QSize(20, 20));
+        layout->addWidget(m_iconBtn, Qt::AlignVCenter);
         
         for (WizardDPushButton *btn : m_functionButtons) {
-            layout->addWidget(btn);
+            layout->addWidget(btn, Qt::AlignVCenter);
         }
         
-        layout->addWidget(m_lineSep);
-        layout->addWidget(m_moreBtn);
-        layout->addWidget(m_inputArea);
-        layout->addWidget(m_closeBtn);
+        layout->addWidget(m_lineSep, Qt::AlignVCenter);
+        layout->addWidget(m_moreBtn, Qt::AlignVCenter);
+        layout->addWidget(m_inputArea, Qt::AlignVCenter);
+        layout->addWidget(m_closeBtn, Qt::AlignVCenter);
         layout->addStretch();
         
         // 设置展开模式的布局参数
@@ -726,10 +743,10 @@ void WizardWrapper::switchToExpandedMode()
     }
     
     // 设置窗口大小
-    if (!m_functionButtons.isEmpty() && (m_functionButtons.first()->height() + 6) > 32) {
+    if (!m_functionButtons.isEmpty() && (m_functionButtons.first()->height() + 6) > 36) {
         this->setFixedHeight(m_functionButtons.first()->height() + 6);
     } else {
-        this->setFixedHeight(32);
+        this->setFixedHeight(36);
     }
     this->setFixedWidth(calculateWidth());
     this->setMaximumWidth(QWIDGETSIZE_MAX);
@@ -872,7 +889,7 @@ void WizardWrapper::createDynamicButtons()
 
         WizardDPushButton *btn = new WizardDPushButton(buttonText, this);
         btn->setIcon(QIcon::fromTheme(iconName));
-        btn->setIconSize(QSize(16, 16));
+        btn->setIconSize(QSize(20, 20));
         btn->setFlat(true);
         DFontSizeManager::instance()->bind(btn, DFontSizeManager::T7, QFont::Normal);
         btn->installEventFilter(this);
@@ -1010,8 +1027,7 @@ int WizardWrapper::calculateWidth()
     // 布局margins: 展开状态是 (9, 0, 6, 0)
     totalWidth += 9 + 6;
 
-    totalWidth += 2;  // m_lineSep1
-    totalWidth += 2;  // m_lineSep2
+    totalWidth += 5;  // m_twoLineSep
     totalWidth += 5;  // m_lineSepSpace
     totalWidth += 75; // m_inputArea
 

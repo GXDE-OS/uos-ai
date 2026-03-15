@@ -25,6 +25,7 @@ enum UpdatePromptBitType {
     PRIVACY_UPDATE = (4 << 8) | 1,      // 隐私对话更新弹窗控制位（第4位开始，1位长度）
     AUTO_MCP = (5 << 8) | 1,      // MCP升级为自动模式（第5位开始，1位长度）
     FREE_CREDITS = (6 << 8) | 1,      // 免费额度（第6位开始，1位长度）
+    NEW_WRITING = (7 << 8) | 1,      // 新写作助手（第7位开始，1位长度）
 };
 
 // 辅助函数来提取位配置
@@ -77,6 +78,7 @@ public:
     AssistantProxy queryAssistantByid(const QString &assistantId);
 
     QList<AssistantProxy> queryAssistantList(bool all = false);
+    void sortAssistantList(QList<AssistantProxy> &lists);
 
     // 助手当前选择的模型
     bool appendAssistantLlm(const QString &assistantId, const QString &llmId);

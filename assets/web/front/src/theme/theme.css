@@ -51,6 +51,8 @@ html {
     --uosai-color-assistantmenu-name: rgba(0, 0, 0, 0.9);
     --uosai-color-assistantmenu-description: rgba(0, 0, 0, 0.6);
     --uosai-color-modelbtn-splitline: rgba(0, 0, 0, 0.1);
+    --uosai-color-assistantmenu-backdrop: rgba(235, 235, 235, 1);
+    --uosai-color-assistantmenu-backdrop-qt6: rgba(235, 235, 235, 0.8);
 
     /* input-content */
     --uosai-color-inputcontent-bg: rgba(0, 0, 0, 0.08);
@@ -154,6 +156,43 @@ html {
     --uosai-color-shortcut-color: rgba(0, 0, 0, 0.4);
     --uosai-color-shortcut-tip-bg: rgba(0, 0, 0, 0.05);
 
+    /* baseOutlineGenContentBtn */
+    --uosai-color-baseOutlineGenContentBtn-text: rgba(255, 255, 255, 1);
+
+    /* GuessYouWant */
+    --uosai-color-guess-you-want-title-text: rgba(0, 0, 0, 0.7);
+    --uosai-color-guess-you-want-content-text: rgba(0, 0, 0, 1);
+    --uosai-color-guess-you-want-content-bg-normal: rgba(0, 0, 0, 0.05);
+    --uosai-color-guess-you-want-content-bg-hover: rgba(0, 0, 0, 0.1);
+    --uosai-color-guess-you-want-content-bg-active: rgba(0, 0, 0, 0.15);
+
+    /* ReferenceCard */
+    --uosai-color-reference-card-bg: rgba(247, 247, 247, 1);
+    --uosai-color-reference-card-title: rgba(0, 0, 0, 0.85);
+    --uosai-color-reference-card-website: rgba(0, 0, 0, 0.4);
+    --uosai-color-reference-card-text: rgba(0, 0, 0, 0.7);
+    --uosai-color-reference-card-shadow: rgba(0, 0, 0, 0.05);
+    --uosai-color-reference-card-icon-bg: rgba(0, 0, 0, 0.1);
+
+
+    /* outline */
+
+    /* outline */
+    --uosai-color-outline-item-hover-bg: rgba(0, 0, 0, 0.03);
+    --uosai-color-outline-paragraph-text: rgba(0, 0, 0, 0.85);
+    --uosai-color-outline-paragraph-border: rgba(0, 0, 0, 0.05);
+    --uosai-color-outline-paragraph-bg: rgba(0, 0, 0, 0);
+    --uosai-color-outline-item-text: rgba(0, 0, 0, 0.7);
+    --uosai-color-outline-draghandle: rgba(0, 0, 0, 0.3);
+    --uosai-color-outline-add-hover-bg: rgba(0, 0, 0, 0.03);
+    --uosai-color-outline-add-active-bg: rgba(0, 0, 0, 0.1);
+
+    /* ContentCard */
+    --uosai-color-content-card-text: rgba(0, 0, 0, 0.9);
+    --uosai-color-content-card-bg: linear-gradient(rgba(0, 129, 255, 0.01) 5%, rgba(0, 129, 255, 0.05) 100%); /* 半透明渐变蒙版 */
+    --uosai-color-content-card-border: rgba(0, 0, 0, 0.05);
+    --uosai-color-content-card-download-status-text: rgba(0, 0, 0, 0.6);
+
     /* 以下为qt6专用背景色 */
     /* retry */
     --uosai-bg-retry-qt6: rgba(255, 255, 255, 0.8);
@@ -167,6 +206,51 @@ html {
     --uosai-color-normal-bg-qt6: rgba(255, 255, 255, 0.4);
     /* 提示信息背景 */
     --uosai-color-tip-bg-qt6: rgba(247, 247, 247, 0.6);
+    /* ReferenceCard */
+    --uosai-color-reference-card-bg-qt6: rgba(247, 247, 247, 0.6);
+    /* 下载卡片 */
+    --uosai-color-download-card-bg-qt6: rgba(235, 235, 235, 0.3);
+    --uosai-color-download-card-filter: blur(30px);
+
+    /* FileGroup */
+    --uosai-color-file-item-bg: rgba(0, 0, 0, 0.1);
+    --uosai-color-file-item-name: rgba(0, 0, 0, 1);
+    --uosai-color-file-item-type: rgba(0, 0, 0, 0.6);
+    --uosai-color-file-list-bg: rgba(235, 235, 235, 1);
+    --uosai-color-file-list-bg-qt6: rgba(235, 235, 235, 0.3);
+    --uosai-color-file-list-item-hover-bg: rgba(0, 0, 0, 0.05);
+    --uosai-color-file-list-item-press-bg: rgba(0, 0, 0, 0.1);
+    --uosai-color-file-item-border: rgba(0, 0, 0, 0.1);
+    --uosai-color-file-item-hover-bg: rgba(0, 0, 0, 0.15);
+    --uosai-color-file-item-press-bg: rgba(0, 0, 0, 0.2);
+
+    /* md 编辑器-工具栏 */
+    /* --uosai-md-editor-toolbar-bg: rgba(255, 255, 255, 0.9); */
+    --uosai-md-editor-toolbar-divider: rgba(0, 0, 0, 0.1);
+    --uosai-md-editor-toolbar-button-bg: rgba(0, 0, 0, 0);
+    --uosai-md-editor-toolbar-button-bg-hover: rgba(0, 0, 0, 0.05);
+    --uosai-md-editor-toolbar-button-bg-active: rgba(0, 0, 0, 0.1);
+    --uosai-md-editor-toolbar-button-bg-checked: rgba(0, 0, 0, 0.1);
+    --uosai-md-editor-toolbar-button-icon: rgba(0, 0, 0, 0.7);
+    --uosai-md-editor-toolbar-button-icon-hover: rgba(0, 0, 0, 0.7);
+    --uosai-md-editor-toolbar-button-icon-active: rgba(0, 0, 0, 0.7);
+    --uosai-md-editor-toolbar-button-text: rgba(0, 0, 0, 0.7);
+    --uosai-md-editor-toolbar-button-text-hover: rgba(0, 0, 0, 0.7);
+    --uosai-md-editor-toolbar-button-text-active: rgba(0, 0, 0, 0.7);
+    --uosai-md-editor-toolbar-boxshadow-bg: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+    /* md 编辑器-正文 */
+    --uosai-md-editor-text: rgba(0, 0, 0, 0.9);
+    --uosai-md-editor-table-header-bg: rgba(0, 0, 0, 0.05);
+    --uosai-md-editor-table-border: rgba(0, 0, 0, 0.1);
+    --uosai-md-editor-blockquote-color: rgba(0, 0, 0, 0.5);
+    --uosai-md-editor-blockquote-border-left: rgba(0, 0, 0, 0.1);
+
+    /* md 编辑器-菜单 */
+    --uosai-color-menu-bg: rgba(235, 235, 235, 1);
+    --uosai-color-menu-boxshadow-bg: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    --uosai-color-menu-text-normal: rgba(0, 0, 0, 1);
+    --uosai-color-menu-text-active: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -213,6 +297,8 @@ html.dark {
     --uosai-color-assistantmenu-name: rgba(255, 255, 255, 0.9);
     --uosai-color-assistantmenu-description: rgba(255, 255, 255, 0.6);
     --uosai-color-modelbtn-splitline: rgba(255, 255, 255, 0.1);
+    --uosai-color-assistantmenu-backdrop: rgba(43, 43, 43, 1);
+    --uosai-color-assistantmenu-backdrop-qt6: rgba(43, 43, 43, 0.8);
 
     /* PromptList */
     --uosai-color-activeItem-bg: rgb(255, 255, 255, 0.1);
@@ -224,7 +310,7 @@ html.dark {
     --uosai-color-prompt-icon-hover: rgba(255, 255, 255, 1);
 
     /* input-content */
-    --uosai-color-inputcontent-bg: rgba(255, 255, 255, 0);
+    --uosai-color-inputcontent-bg: rgba(255, 255, 255, 0.08);
     --uosai-color-inputcontent-placeholder: rgba(255, 255, 255, 0.4);
     --uosai-color-inputcontent: #fff;
     --uosai-color-function-button-text-color: rgba(255, 255, 255, 0.7);
@@ -309,7 +395,7 @@ html.dark {
 
     /* ConversionMode */
     --uosai-color-conversion-mode-text: rgba(255, 255, 255, 1);
-    --uosai-color-conversion-mode-bg: rgba(0, 0, 0, 1);
+    --uosai-color-conversion-mode-bg: rgba(27, 27, 27, 1);
     --uosai-color-conversion-mode-icon: rgba(255, 255, 255, 0.7);
 
     /* PrivateWelcomePage */
@@ -327,6 +413,40 @@ html.dark {
     --uosai-color-shortcut-color: rgba(251, 251, 251, 0.4);
     --uosai-color-shortcut-tip-bg: rgba(255, 255, 255, 0.05);
 
+    /* baseOutlineGenContentBtn */
+    --uosai-color-baseOutlineGenContentBtn-text: rgba(255, 255, 255, 1);
+
+    /* GuessYouWant */
+    --uosai-color-guess-you-want-title-text: rgba(255, 255, 255, 0.7);
+    --uosai-color-guess-you-want-content-text: rgba(255, 255, 255, 1);
+    --uosai-color-guess-you-want-content-bg-normal: rgba(255, 255, 255, 0.05);
+    --uosai-color-guess-you-want-content-bg-hover: rgba(255, 255, 255, 0.1);
+    --uosai-color-guess-you-want-content-bg-active: rgba(255, 255, 255, 0.15);
+
+    /* ReferenceCard */
+    --uosai-color-reference-card-bg: rgba(42, 42, 42, 1);
+    --uosai-color-reference-card-title: rgba(255, 255, 255, 0.85);
+    --uosai-color-reference-card-website: rgba(255, 255, 255, 0.4);
+    --uosai-color-reference-card-text: rgba(255, 255, 255, 0.7);
+    --uosai-color-reference-card-shadow: rgba(0, 0, 0, 0.3);
+    --uosai-color-reference-card-icon-bg: rgba(255, 255, 255, 0.1);
+
+    /* outline */
+    --uosai-color-outline-item-hover-bg: rgba(255, 255, 255, 0.03);
+    --uosai-color-outline-paragraph-text: rgba(255, 255, 255, 0.9);
+    --uosai-color-outline-paragraph-border: rgba(255, 255, 255, 0.05);
+    --uosai-color-outline-paragraph-bg: rgba(255, 255, 255, 0);
+    --uosai-color-outline-item-text: rgba(255, 255, 255, 0.9);
+    --uosai-color-outline-draghandle: rgba(255, 255, 255, 0.3);
+    --uosai-color-outline-add-hover-bg: rgba(255, 255, 255, 0.03);
+    --uosai-color-outline-add-active-bg: rgba(255, 255, 255, 0.1);
+    
+    /* ContentCard */
+    --uosai-color-content-card-text: rgba(255, 255, 255, 0.9);
+    --uosai-color-content-card-bg: linear-gradient(rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 100%); /* 半透明渐变蒙版 */
+    --uosai-color-content-card-border: rgba(255, 255, 255, 0.05);
+    --uosai-color-content-card-download-status-text: rgba(255, 255, 255, 0.6);
+
     /* 以下为qt6专用背景色 */
     /* retry */
     --uosai-bg-retry-qt6: rgba(255, 255, 255, 0.1);
@@ -340,5 +460,49 @@ html.dark {
     --uosai-color-normal-bg-qt6: rgba(0, 0, 0, 0.4);
     /* 提示信息背景 */
     --uosai-color-tip-bg-qt6: rgba(42, 42, 42, 0.8);
+    /* ReferenceCard */
+    --uosai-color-reference-card-bg-qt6: rgba(42, 42, 42, 0.8);
+    /* 下载卡片 */
+    --uosai-color-download-card-bg-qt6: rgba(25, 25, 25, 0.8);
+    --uosai-color-download-card-filter: blur(45px);
 
+    /* FileGroup */
+    --uosai-color-file-item-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-file-item-name: rgba(255, 255, 255, 1);
+    --uosai-color-file-item-type: rgba(255, 255, 255, 0.6);
+    --uosai-color-file-list-bg: rgba(25, 25, 25, 1);
+    --uosai-color-file-list-bg-qt6: rgba(25, 25, 25, 0.8);
+    --uosai-color-file-list-item-hover-bg: rgba(255, 255, 255, 0.05);
+    --uosai-color-file-list-item-press-bg: rgba(255, 255, 255, 0.1);
+    --uosai-color-file-item-border: rgba(255, 255, 255, 0.1);
+    --uosai-color-file-item-hover-bg: rgba(255, 255, 255, 0.15);
+    --uosai-color-file-item-press-bg: rgba(255, 255, 255, 0.2);
+
+    /* md 编辑器-工具栏 */
+    /* --uosai-md-editor-toolbar-bg: rgba(255, 255, 255, 0.9); */
+    --uosai-md-editor-toolbar-divider: rgba(0, 0, 0, 0.1);
+    --uosai-md-editor-toolbar-button-bg: rgba(255, 255, 255, 0);
+    --uosai-md-editor-toolbar-button-bg-hover: rgba(255, 255, 255, 0.05);
+    --uosai-md-editor-toolbar-button-bg-active: rgba(255, 255, 255, 0.1);
+    --uosai-md-editor-toolbar-button-bg-checked: rgba(255, 255, 255, 0.1);
+    --uosai-md-editor-toolbar-button-icon: rgba(255, 255, 255, 0.7);
+    --uosai-md-editor-toolbar-button-icon-hover: rgba(255, 255, 255, 0.7);
+    --uosai-md-editor-toolbar-button-icon-active: rgba(255, 255, 255, 0.7);
+    --uosai-md-editor-toolbar-button-text: rgba(255, 255, 255, 0.7);
+    --uosai-md-editor-toolbar-button-text-hover: rgba(255, 255, 255, 0.7);
+    --uosai-md-editor-toolbar-button-text-active: rgba(255, 255, 255, 0.7);
+    --uosai-md-editor-toolbar-boxshadow-bg: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.2);
+
+    /* md 编辑器-正文 */
+    --uosai-md-editor-text: rgba(255, 255, 255, 0.9);
+    --uosai-md-editor-table-header-bg: rgba(255, 255, 255, 0.05);
+    --uosai-md-editor-table-border: rgba(255, 255, 255, 0.1);
+    --uosai-md-editor-blockquote-color: rgba(255, 255, 255, 0.5);
+    --uosai-md-editor-blockquote-border-left: rgba(255, 255, 255, 0.1);
+
+    /* md 编辑器-菜单 */
+    --uosai-color-menu-bg: rgba(25, 25, 25, 1);
+    --uosai-color-menu-boxshadow-bg: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    --uosai-color-menu-text-normal: rgba(255, 255, 255, 1);
+    --uosai-color-menu-text-active: rgba(255, 255, 255, 0.6);
 }

@@ -1,5 +1,20 @@
 [
     {
+        "version": "V2.13",
+        "date-for-v20": "2026-03-05",
+        "date-for-v25": "2026-02-14",
+        "items": [
+            {
+                "type": "new",
+                "description": "AI Writing Agent Fully Upgraded:\n·Supports report generation based on local materials and outlines for more relevant content.\n·Supports on-device/private models with enhanced data security.\n·Supports traceability of reference sources for more credible content.\n·Enables real-time online editing and modifications, allowing export only when satisfied for streamlined adjustments."
+            },
+            {
+                "type": "improvement",
+                "description": "FollowAlong Visual Optimization: Minor adjustments to the styles of icons and toolbars."
+            }
+        ]
+    },
+    {
         "version": "V2.12",
         "date-for-v20": "2025-12-05",
         "date-for-v25": "2025-11-25",

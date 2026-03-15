@@ -64,6 +64,16 @@ int EAiPrompt::instType()
     return m_instType;
 }
 
+void EAiPrompt::setParams(const QVariantHash &params)
+{
+    m_params = params;
+}
+
+QVariantHash EAiPrompt::getParams()
+{
+    return m_params;
+}
+
 QString EAiPrompt::lengthValid(const QString &prompt)
 {
     if (prompt.length() > MAX_LENGTH) {

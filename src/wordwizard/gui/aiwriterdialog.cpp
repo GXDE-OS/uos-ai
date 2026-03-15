@@ -79,7 +79,7 @@ void AiWriterDialog::initUi() {
     titleBar->setBackgroundTransparent(true);
 
     m_logoBt = new TransButton(this);
-    m_logoBt->setIcon(QIcon::fromTheme("uos-ai-assistant"));
+    m_logoBt->setIcon(QIcon::fromTheme("UosAiAssistant"));
     m_logoBt->setIconSize(QSize(25, 25));
     dynamic_cast<TransButton *>(m_logoBt)->setIconNoPressColor();
 

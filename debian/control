@@ -25,18 +25,13 @@ Build-Depends:
  qt6-wayland-private-dev,
  libdtk6widget-dev (>= 6.0.24),
  libdtk6declarative-dev (>= 6.0.19),
-# dde-tray-loader-dev,
-# libdde-shell-dev (>= 0.0.10),
+ dde-tray-loader-dev,
+ libdde-shell-dev (>= 0.0.10),
  treeland-protocols (>= 0.4.4),
  wlr-protocols,
  wayland-protocols,
  libdtk6ocr-dev,
- libdtk6ocr-dev,
-# 任务栏插件需要 Qt5 进行构建
- gxde-dock-dev,
- qtbase5-dev,
- libdtkwidget-dev,
- gxde-desktop-base,
+ libpoppler-qt6-dev
 
 Standards-Version: 4.5.0
 Package: uos-ai

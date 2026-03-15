@@ -1,4 +1,5 @@
 ﻿#include "eparserdocument.h"
+#include "filetypeselectdialog.h"
 #include "../parsers/parserfactory.h"
 
 #include <DFileDialog>
@@ -49,9 +50,24 @@ void EParserDocument::parser(const QString &id, const QString &docPath)
     futureWatcher->setFuture(future);
 }
 
-void EParserDocument::selectDocument(AssistantType type)
+QString EParserDocument::parserSync(const QString &docPath)
 {
-    DFileDialog fileDlg;
+    ParserRes res;
+    FileType fileType = getFileType(docPath);
+    switch (fileType) {
+    case FileType::Image:
+        res = this->parserImg(docPath);
+        break;
+    case FileType::Document:
+        res = this->parserDoc(docPath);
+        break;
+    }
+    return res.first;
+}
+
+void EParserDocument::selectDocument(AssistantType type, QWidget *parent)
+{
+    DFileDialog fileDlg(parent);
     fileDlg.setDirectory(m_lastImportPath);
     updateSupSuffix(type);
     QString selfilter = tr("Supported files") + (" (%1)");
@@ -84,6 +100,44 @@ void EParserDocument::selectDocument(AssistantType type)
 
         emit sigParserStart(selectedPaths[0], getFileIconData(selectedPaths[0]), QString(), ParserStart::Success);
     }
+}
+
+void EParserDocument::selectDocumentForOffice(FileCategory category, QWidget *parent)
+{
+    updateSupSuffix(AssistantType::AI_WRITING);
+
+    QStringList selectedPaths {};
+    if (!execFileSelect(selectedPaths, category == FileCategory::LocalMaterial ? QFileDialog::ExistingFiles : QFileDialog::ExistingFile, parent))
+        return;
+
+    QJsonArray filesArray;
+    // 文件选择框中创建新文件不会过滤，需要再判断一次后缀
+    for (auto filePath : selectedPaths) {
+        QFileInfo docInfo(filePath);
+        if (!m_supSuffix.contains("*." + docInfo.suffix().toLower())) {
+            qCWarning(logAIGUI) << "Unsupported document suffix:" << docInfo.suffix();
+            continue;
+        }
+
+        QString icon = getFileIconData(filePath);
+        // 创建文件信息JSON对象
+        QJsonObject fileObj;
+        fileObj["filePath"] = filePath;
+        fileObj["fileIcon"] = icon;
+
+        filesArray.append(fileObj);
+    }
+
+    if (filesArray.isEmpty()) {// 创建空的JSON数组
+        QJsonDocument emptyDoc(filesArray);
+        emit sigSelectFilesForOffice(emptyDoc.toJson(QJsonDocument::Compact), ParserStart::SuffixError, category);
+        return;
+    }
+
+    // 将JSON数组转换为字符串
+    QJsonDocument doc(filesArray);
+    QString filesDataJson = doc.toJson(QJsonDocument::Compact);
+    emit sigSelectFilesForOffice(filesDataJson, ParserStart::Success, category);
 }
 
 void EParserDocument::updateSupSuffix(AssistantType type)
@@ -133,6 +187,55 @@ void EParserDocument::dragInViewDocument(const QStringList &docPaths, const QStr
         }
 
         emit sigParserStart(path, getFileIconData(path), defaultPrompt, ParserStart::Success);
+    }
+}
+
+void EParserDocument::dragInViewDocForWriting(const QStringList &docPaths)
+{
+    updateSupSuffix(AssistantType::AI_WRITING);
+
+    QJsonArray filesArray {};
+    QList<QIcon> iconList {};
+    // 文件选择框中创建新文件不会过滤，需要再判断一次后缀
+    for (auto filePath : docPaths) {
+        QFileInfo docInfo(filePath);
+        if (!m_supSuffix.contains("*." + docInfo.suffix().toLower())) {
+            qCWarning(logAIGUI) << "Unsupported document suffix:" << docInfo.suffix();
+            continue;
+        }
+
+        QString icon = getFileIconData(filePath);
+        // 创建文件信息JSON对象
+        QJsonObject fileObj;
+        fileObj["filePath"] = filePath;
+        fileObj["fileIcon"] = icon;
+
+        filesArray.append(fileObj);
+
+        if (iconList.length() < 5) {
+            iconList.append(getFileIcon(filePath));
+        }
+    }
+
+    if (filesArray.empty()) { // 无支持的文件
+        // 通知前端，且不报错
+        emit sigParserStart(QString(), QString(), QString(), ParserStart::Success);
+        return;
+    }
+
+    // 显示文件类型选择对话框
+    FileTypeSelectDialog *dialog = new FileTypeSelectDialog(iconList, filesArray.size());
+    connect(dialog, &FileTypeSelectDialog::categorySelected, this, [this, filesArray](EParserDocument::FileCategory category) {
+        QJsonDocument doc(filesArray);
+        QString filesDataJson = doc.toJson(QJsonDocument::Compact);
+        emit sigSelectFilesForOffice(filesDataJson, ParserStart::Success, category);
+    });
+    connect(dialog, &FileTypeSelectDialog::finished, dialog, &FileTypeSelectDialog::deleteLater);
+
+    int ret = dialog->exec();
+    if (ret == QDialog::Rejected) {
+        // 拒绝直接通知前端，且不报错
+        emit sigSelectFilesForOffice(QString(), ParserStart::Success, FileCategory::LocalMaterial);
     }
 }
 
@@ -260,12 +363,29 @@ bool EParserDocument::validSize(const QString &docPath)
 
 QString EParserDocument::getFileIconData(const QString &docPath)
 {
+    QIcon icon = getFileIcon(docPath);
+    if (icon.isNull())
+        return "";
+
+    int size = static_cast<int>(qApp->devicePixelRatio() * 32);
+    QImage image = icon.pixmap(size, size).toImage();
+    QByteArray data;
+    QBuffer buffer(&data);
+    buffer.open(QIODevice::WriteOnly);
+    image.save(&buffer, "PNG");
+    buffer.close();
+
+    return QString::fromLatin1(data.toBase64());
+}
+
+QIcon EParserDocument::getFileIcon(const QString &docPath)
+{
     if (docPath.isEmpty())
-        return QString();
+        return QIcon();
 
     QFileInfo docInfo(docPath);
     if (!docInfo.exists())
-        return QString();
+        return QIcon();
 
     QStringList suffixReplace;
     suffixReplace << "docx"
@@ -280,16 +400,8 @@ QString EParserDocument::getFileIconData(const QString &docPath)
     }
 
     DFileIconProvider docIcon;
-    QIcon idcon = docIcon.icon(docInfo);
-    int size = static_cast<int>(qApp->devicePixelRatio() * 16);
-    QImage image = idcon.pixmap(size, size).toImage();
-    QByteArray data;
-    QBuffer buffer(&data);
-    buffer.open(QIODevice::WriteOnly);
-    image.save(&buffer, "PNG");
-    buffer.close();
-
-    return QString::fromLatin1(data.toBase64());
+    QIcon icon = docIcon.icon(docInfo);
+    return icon;
 }
 
 QString EParserDocument::runOCRProcessTool(QProcess *ocrProcess, const QStringList &arguments, const QByteArray &inputData)
@@ -425,6 +537,35 @@ QString EParserDocument::runOCRProcessTool(QProcess *ocrProcess, const QStringLi
     QMutexLocker locker(&resultsMutex);
     qCInfo(logAIGUI) << "OCR process completed, returning accumulated results";
     return allResults;
+}
+
+bool EParserDocument::execFileSelect(QStringList &paths, QFileDialog::FileMode mode, QWidget *parent)
+{
+    DFileDialog fileDlg(parent);
+    fileDlg.setDirectory(m_lastImportPath);
+    QString selfilter = tr("Supported files") + (" (%1)");
+    selfilter = selfilter.arg(m_supSuffix.join(" "));
+    fileDlg.setViewMode(DFileDialog::Detail);
+    fileDlg.setFileMode(mode);
+    fileDlg.setNameFilter(selfilter);
+    fileDlg.selectNameFilter(selfilter);
+    fileDlg.setObjectName("fileDialogAdd");
+    if (DFileDialog::Accepted == fileDlg.exec()) {
+        m_lastImportPath = fileDlg.directory().path();
+        paths = fileDlg.selectedFiles();
+    }
+
+    if (paths.isEmpty()) {
+        qCDebug(logAIGUI) << "No file selected in dialog";
+        return false;
+    }
+
+    if (!validSize(paths[0])) {
+        qCWarning(logAIGUI) << "Selected file exceeds size limit:" << paths[0];
+        return false;
+    }
+
+    return true;
 }
 
 EParserDocument::FileType EParserDocument::getFileType(const QString &filePath)

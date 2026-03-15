@@ -79,6 +79,8 @@ Application::Application(int &argc, char **argv)
     connect(ServerWrapper::instance(), &ServerWrapper::sigToLaunchAiQuickOCR, this, &Application::onLaunchAiQuickOCR);
     connect(ServerWrapper::instance(), &ServerWrapper::sigToUploadImage, this, &Application::onUploadImage);
     connect(&LocalModelServer::getInstance(), &LocalModelServer::sigToLaunchMgmtNoShow, this, &Application::onLaunchMgmtNoShow);
+
+    connect(this, &DApplication::iconThemeChanged, this, &Application::onIconThemeChanged);
 }
 
 Application::~Application()
@@ -602,4 +604,11 @@ void Application::onUploadImage(const QString &imagePath)
     }
 
     m_chatWindow->appendImage(imagePath);
+}
+
+void Application::onIconThemeChanged()
+{
+    if (m_chatWindow) {
+        m_chatWindow->iconThemeChanged();
+    }
 }

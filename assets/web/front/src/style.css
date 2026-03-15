@@ -171,6 +171,10 @@ body #drop-mask {
 	padding-right: 0px;
 }
 
+.vditor-scrollbar .scrollbar__content--vertical {
+    padding-right: 0px;
+}
+
 /* 这两个是内层的元素，需要设置为0，否则会遮挡住外部滚动条 */
 .scrollbar__thumb {
     opacity: 0 !important;
@@ -187,6 +191,7 @@ body #drop-mask {
     border-radius: 4px !important;
     overflow: hidden !important;
 	box-shadow: var(--globalScrollbar-boxShadow) !important;
+	width: 4px !important;
 }
 
 .scrollbar__thumbPlaceholder--vertical:hover {
@@ -195,6 +200,7 @@ body #drop-mask {
     border-radius: 4px !important;
     overflow: hidden;
     box-shadow: var(--globalScrollbar-boxShadow) !important;
+	width: 6px !important;
 }
 
 .scrollbar__thumbPlaceholder--vertical:active {
@@ -203,6 +209,7 @@ body #drop-mask {
     border-radius: 4px !important;
     overflow: hidden;
     box-shadow: var(--globalScrollbar-boxShadow) !important;
+	width: 6px !important;
 }
 
 img {

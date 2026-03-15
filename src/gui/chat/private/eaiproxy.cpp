@@ -8,6 +8,7 @@
 #include "localmodelserver.h"
 #include "easyncworker.h"
 #include "esystemcontext.h"
+#include "systemeventwatcher.h"
 
 #include <QScopedPointer>
 #include <QApplication>
@@ -123,6 +124,7 @@ EAiProxy::EAiProxy(QObject *parent)
 
     // 拖拽文档解析
     connect(EAiExec(), &EAiExecutor::docSummaryParsingStart, this, &EAiProxy::sigDocSummaryParsingStart);
+    connect(EAiExec(), &EAiExecutor::docSummaryForOffice, this, &EAiProxy::sigDocSummaryForOffice);
     connect(EAiExec(), &EAiExecutor::docDragInViewParserResult, this, &EAiProxy::sigDocSummaryParserResult);
     // API: openFile() -> Result
     connect(EAiExec(), &EAiExecutor::openFileFromPathResult, this, &EAiProxy::sigOpenFileFromPathResult);
@@ -154,6 +156,15 @@ EAiProxy::EAiProxy(QObject *parent)
 
     connect(EAiExec(), &EAiExecutor::sigClaimUsageResult, this, &EAiProxy::sigGetFreeCreditsResult);
     connect(EAiExec(), &EAiExecutor::sigClaimAgain, this, &EAiProxy::sigIsGotFreeCredits);
+
+    connect(EAiExec(), &EAiExecutor::sigIconThemeChanged, this, &EAiProxy::sigIconThemeChanged);
+
+    connect(EAiExec(), &EAiExecutor::sigDownloadFileFinished, this, &EAiProxy::sigDownloadFileFinished);
+    connect(EAiExec(), &EAiExecutor::sigActiveChatFromDigitalImage, this, &EAiProxy::sigActiveChatFromDigitalImage);
+
+    // Connect system event watcher to forward system events to web frontend
+    connect(&SystemEventWatcher::instance(), &SystemEventWatcher::sigSystemEvent,
+            this, &EAiProxy::sigSystemEvent);
 
     initAsyncWorkerConn();
 }
@@ -188,6 +199,11 @@ void EAiProxy::installEmbeddingPlugins()
 void EAiProxy::onDocSummarySelect()
 {
     EAiExec()->documentSummarySelect();
+}
+
+void EAiProxy::onDocSummaryForOfficeSelect(int category)
+{
+    EAiExec()->documentSummaryForOfficeSelect(category);
 }
 
 QString EAiProxy::processClipboardData()
@@ -340,6 +356,16 @@ void EAiProxy::setTitleBarStatus(bool status)
 bool EAiProxy::showWarningDialog(const QString assistantId, const QString conversationId, const QString msg, bool isDelete, bool isLlmDelete ,bool isAllConvDelete)
 {
     return EAiExec()->showWarningDialog(assistantId, conversationId, msg, isDelete, isLlmDelete, isAllConvDelete);
+}
+
+bool EAiProxy::showRemoveFileDialog(const QString &message)
+{
+    return EAiExec()->showRemoveFileDialog(message);
+}
+
+bool EAiProxy::showAllowUploadFilesAlert(int modelType, const QString &modelDisplayName, bool searchOnline)
+{
+    return EAiExec()->showAllowUploadFilesAlert(modelType, modelDisplayName, searchOnline);
 }
 
 void EAiProxy::updateUpdatePromptDB(bool isClicked)
@@ -703,6 +729,47 @@ bool EAiProxy::isSimplifiedChinese()
     return EAiExec()->isSimplifiedChinese();
 }
 
+bool EAiProxy::isDeleteOutlineTitle()
+{
+    return EAiExec()->isDeleteOutlineTitle();
+}
+
+QString EAiProxy::getDownloadListIcon(const QString &fileSuffix)
+{
+    return EAiExec()->getDownloadListIcon(fileSuffix);
+}
+
+bool EAiProxy::downloadFile(const QString &id, const QString &title, const QString &content, const QString &suffix)
+{
+    return EAiExec()->downloadFile(id, title, content, suffix);
+}
+
+void EAiProxy::printDocument(const QString &html, const QString &title)
+{
+    return EAiExec()->printDocument(html, title);
+}
+
+void EAiProxy::updateAnswresActiveIndex(int activeIndex)
+{
+    EAiExec()->updateAnswresActiveIndex(activeIndex);
+}
+
+void EAiProxy::setDigitalImageDisable(bool disable)
+{
+    EAiExec()->setDigitalImageDisable(disable);
+}
+
+bool EAiProxy::isActiveChatFromDigitalImage()
+{
+    return EAiExec()->isActiveChatFromDigitalImage();
+}
+
+void EAiProxy::confirmDataSaved()
+{
+    qCDebug(logAIGUI) << "Frontend confirmed data saved, notifying SystemEventWatcher";
+    SystemEventWatcher::instance().confirmDataSaved();
+}
+
 void EAiProxy::launchKnowledgeBaseConfigWindow()
 {
     return EAiExec()->launchKnowledgeBaseConfigWindow();
@@ -784,9 +851,9 @@ bool EAiProxy::stopRecorder()
     return EAiExec()->stopRecorder();
 }
 
-bool EAiProxy::playTextAudio(const QString &id, const QString &text, bool isEnd)
+bool EAiProxy::playTextAudio(const QString &id, const QString &text, bool isEnd, bool isPlayOutline)
 {
-    return EAiExec()->playTextAudio(id, text, isEnd);
+    return EAiExec()->playTextAudio(id, text, isEnd, isPlayOutline);
 }
 
 bool EAiProxy::stopPlayTextAudio()
@@ -1149,6 +1216,66 @@ QJsonObject EAiProxy::loadTranslations()
     translations["Enable MCP Server&"] = tr("Enable MCP Server&");  // 开启MCP服务
     translations["Disable MCP Server"] = tr("Disable MCP Server");  // 关闭MCP服务
     translations["Configure MCP Server"] = tr("Configure MCP Server");  // 配置MCP服务
+
+    // UOS AI写作需求
+    translations["Collecting and analyzing data"] = tr("Collecting and analyzing data");  // 正在搜集和分析资料
+    translations["Data collection and analysis completed"] = tr("Data collection and analysis completed");  // 已完成资料搜集和分析
+    translations["Local Materials"] = tr("Local Materials");  // 本地素材
+    translations["File Outline"] = tr("File Outline");  // 文件大纲
+    translations["I am [Enter Identity/Position]. Please help me write a [Report/Article/Outline/WeChat Official Account Post/Notice/Research Report/Work Summary/Speech] on [Enter Theme], with a length of about [1000 words]. The content requirements are [Enter Requirements/Content Focus/Content Style, etc.]."] = tr("I am [Enter Identity/Position]. Please help me write a [Report/Article/Outline/WeChat Official Account Post/Notice/Research Report/Work Summary/Speech] on [Enter Theme], with a length of about [1000 words]. The content requirements are [Enter Requirements/Content Focus/Content Style, etc.].");
+    translations["Supports uploading up to 10 local materials"] = tr("Supports uploading up to 10 local materials");  // 最多支持上传10个本地素材
+    translations["Only supports uploading 1 outline file"] = tr("Only supports uploading 1 outline file");  // 仅支持上传1个大纲文件
+    translations["Confirm deletion of this reference material?"] = tr("Confirm deletion of this reference material?");  // 确定删除该参考素材？
+    translations["Confirm deletion of this outline file?"] = tr("Confirm deletion of this outline file?");  // 确定删除该大纲文件？
+    translations["Outline:"] = tr("Outline:");  // 大纲
+    translations["Saving..."] = tr("Saving...");  // 保存中...
+    translations["Saved successfully!"] = tr("Saved successfully!");  // 保存成功！
+    translations["Save failed, please try again!"] = tr("Save failed, please try again!");  // 保存失败，请再试一次
+    translations["Text document"] = tr("Text document");  // 文本文档
+    translations["You can continue to input more requests to optimize or adjust the already generated content."] = tr("You can continue to input more requests to optimize or adjust the already generated content.");  // 您还可以继续输入更多要求，对已生成的内容优化或调整
+    translations["AI Writing Agent Fully Upgraded"] = tr("AI Writing Agent Fully Upgraded");  // AI写作智能体全新升级
+    translations["1.Reference local materials and outlines for more accurate content."] = tr("1.Reference local materials and outlines for more accurate content.");  // 1.参考本地资料和大纲，内容更准
+    translations["2.Supports local models, ensuring security and peace of mind."] = tr("2.Supports local models, ensuring security and peace of mind.");  // 2.支持本地模型，安全无忧
+    translations["3.Traceable sources, reliable data."] = tr("3.Traceable sources, reliable data.");  // 3.来源可查，数据可靠
+    translations["4.Edit while writing, export when satisfied."] = tr("4.Edit while writing, export when satisfied.");  // 4.边写边改，满意导出
+    translations["Try Later"] = tr("Try Later");  // 稍后再试
+    translations["Try Now"] = tr("Try Now");  // 前往体验
+    translations["Generate reports based or outline files for greater accuracy"] = tr("Generate reports based or outline files for greater accuracy");  // 可基于上传的本地素材或大纲文件来生成报告，内容更准确
+    translations["Start Now"] = tr("Start Now");  // 开始体验
+
+    // 大纲组件
+    translations["Enter Chapter Title"] = tr("Enter Chapter Title");  // 输入章节标题
+    translations["Add Chapter"] = tr("Add Chapter");  // 增加章节
+    translations["Add Section"] = tr("Add Section");  // 增加子章节
+    translations["Delete Chapter"] = tr("Delete Chapter");  // 删除章节
+    translations["Outline to Docs"] = tr("Outline to Docs");  // 基于大纲生成文档
+    translations["Save as Word"] = tr("Save as Word");  // 另存为Word
+    translations["Save as PDF"] = tr("Save as PDF");  // 另存为PDF
+    translations["Save as Markdown"] = tr("Save as Markdown");  // 另存为Markdown
+    translations["Content generation completed, but you can still provide revision suggestions in AI Assistant"] = tr("Content generation completed, but you can still provide revision suggestions in AI Assistant");  // 内容生成完毕，但你仍可在AI助手中继续提出修改意见
+    translations["Please input the title"] = tr("Please input the title");  // 请输入标题
+    translations["Bold"] = tr("Bold");
+    translations["Copied successfully"] = tr("Copied successfully");
+    translations["Save As"] = tr("Save As");
+    translations["Saving..."] = tr("Saving...");
+    translations["Saved successfully!"] = tr("Saved successfully!");
+    translations["Undo"] = tr("Undo");
+    translations["Redo"] = tr("Redo");
+    translations["Return to conversation"] = tr("Return to conversation");
+    translations["Print"] = tr("Print");
+    translations["Saving As..."] = tr("Saving As...");  // 另存中...
+    translations["Save As successful!"] = tr("Save As successful!");  // 另存成功！
+    translations["Save As failed. Please retry."] = tr("Save As failed. Please retry.");  // 另存失败，请再试一次
+    translations["Body text"] = tr("Body text");  // 正文
+    translations["Heading 1"] = tr("Heading 1");  // 标题1
+    translations["Heading 2"] = tr("Heading 2");  // 标题2
+    translations["Heading 3"] = tr("Heading 3");  // 标题3
+    translations["Heading 4"] = tr("Heading 4");  // 标题4
+    translations["Heading 5"] = tr("Heading 5");  // 标题5
+    translations["Heading 6"] = tr("Heading 6");  // 标题6
+    translations["Unordered list"] = tr("Unordered list");  // 无序列表
+    translations["Ordered list"] = tr("Ordered list");  // 有序列表
+    translations["Digital Human Unavailable"] = tr("Digital Human Unavailable");  // 数字人暂不可用
 
     return translations;
 }

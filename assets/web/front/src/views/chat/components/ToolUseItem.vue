@@ -1,6 +1,6 @@
 <template>
-    <div class="tool-use-status" v-if="toolUseItem.chatType === store.ChatAction.ChatToolUse">
-        <div class="tool-use-item">
+    <div class="tool-use-status" v-if="toolUseItem.chatType === store.ChatAction.ChatToolUse || toolUseItem.chatType === store.ChatAction.AgentAction">
+        <div class="tool-use-item" :style="{ marginBottom: toolUseItemMarginBottom }">
             <div class="tool-header" @click="toggleExpanded">
                 <div class="tool-name-wrapper">
                     <div class="expand-icon" :class="{ 'expanded': isExpanded }">
@@ -59,8 +59,16 @@ const props = defineProps({
     errCode: {
         type: Number,
         default: 0
+    },
+    marginBottom: {
+        type: String,
+        default: '10px'
     }
 });
+
+const toolUseItemMarginBottom = computed(() => {
+    return props.marginBottom
+})
 
 const toolUseItem = computed(() => {
     let toolUseItem = JSON.parse(JSON.stringify(props.toolUseItem))
@@ -137,14 +145,12 @@ const formatParams = (params) => {
     .tool-use-item {
         border-radius: 8px;
         margin-top: 6px;
-        margin-bottom: 10px;
         background-color: var(--uosai-color-tool-use-bg);
         color: var(--uosai-color-tool-use-header);
 
         .tool-header {
             display: flex;
             align-items: center;
-            margin-bottom: 6px;
             cursor: pointer;
             user-select: none;
             width: 100%;

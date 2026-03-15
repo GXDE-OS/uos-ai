@@ -92,12 +92,16 @@
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_model_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_model_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_downarrow_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_downarrow_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_downarrow_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_downarrow_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_bigmodel_128px.svg/selected.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_info_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_info_128px.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_info_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_info_128px.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_128px.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_128px.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant-wordwizard_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant-wordwizard_128px.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant-wordwizard_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant-wordwizard_128px.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_tips_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_tips_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_tips_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_tips_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_tooltips_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_tooltips_16px.svg/normal.svg</file>
@@ -124,6 +128,8 @@
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hello_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hello_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/uos-ai-twolines_128px.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-twolines_128px.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/uos-ai-twolines_128px.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-twolines_128px.svg</file>
         <file>../assets/images/gift.svg</file>
         <file>../assets/images/spirite/sleep/1.png</file>
         <file>../assets/images/spirite/active/1.png</file>
@@ -144,6 +150,8 @@
         <file>../assets/web/front/dist/assets/index2.js</file>
         <file>../assets/web/front/dist/assets/index3.js</file>
         <file>../assets/web/front/dist/assets/polyfills-legacy.js</file>
+        <file>../assets/web/front/dist/assets/lodash-legacy.js</file>
+        <file>../assets/web/front/dist/assets/lodash.js</file>
         <file>../assets/faq/AI-FAQ-zh_CN.json</file>
         <file>../assets/faq/AI-FAQ-en_US.json</file>
         <file>../assets/web/front/dist/assets/1-loading.svg</file>
@@ -154,8 +162,6 @@
         <file>../assets/web/front/dist/assets/DigitalImage-legacy.js</file>
         <file>../assets/web/front/dist/assets/DigitalImage.css</file>
         <file>../assets/web/front/dist/assets/DigitalImage.js</file>
-        <file>../assets/web/front/dist/assets/ChatTop-legacy.js</file>
-        <file>../assets/web/front/dist/assets/ChatTop.js</file>
         <file>../assets/web/front/dist/assets/silence.webm</file>
         <file>../assets/web/front/dist/assets/listen.webm</file>
         <file>../assets/web/front/dist/assets/listen1.png</file>

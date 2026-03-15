@@ -2,6 +2,7 @@
 
 #include "appagent.h"
 #include "defaultagent.h"
+#include "research/writingmasteragent.h"
 
 #include <QDebug>
 #include <QMutexLocker>
@@ -81,6 +82,14 @@ AgentFactory::AgentFactory(QObject *parent) : QObject(parent)
             qCInfo(logAgent) << "DefaultAgent registered during initialization.";
         }
     }
+
+    {
+        WritingMasterAgent writingMaster;
+        if (registerAgent(writingMaster.name(), WritingMasterAgent::create)) {
+            qCInfo(logAgent) << "WritingMasterAgent registered during initialization.";
+        }
+    }
+
     qCInfo(logAgent) << "AgentFactory initialized.";
 }
 

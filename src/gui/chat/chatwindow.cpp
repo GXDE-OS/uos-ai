@@ -2,6 +2,7 @@
 #include "private/esinglewebview.h"
 #include "private/eaiexecutor.h"
 #include "private/echatwndmanager.h"
+#include "private/uploadfilesalertdialog.h"
 #include "../common/echeckagreementdialog.h"
 #include "dbwrapper.h"
 #include "private/echatbutton.h"
@@ -100,6 +101,9 @@ ChatWindow::ChatWindow(QWidget *parent)
 #endif
     }
 
+    // 确保窗口的深色模式和浅色模式跟随系统设置改变
+    DGuiApplicationHelper::ColorType type = DGuiApplicationHelper::UnknownType;
+    DGuiApplicationHelper::instance()->setPaletteType(type);
 
     m_dock = new DDeDockObject(this);
     m_hasBlurWindow = DWindowManagerHelper::instance()->hasBlurWindow();
@@ -266,6 +270,8 @@ void ChatWindow::showWindowMode()
     setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
 
     DbWrapper::localDbWrapper().updateDisplayMode(WINDOW_MODE);
+
+    setDigitalImageDisable(m_isDigitalImageDisable);
 }
 
 void ChatWindow::showSidebarMode()
@@ -280,6 +286,8 @@ void ChatWindow::showSidebarMode()
     activeShowWindow();
 
     DbWrapper::localDbWrapper().updateDisplayMode(SIDEBAR_MODE);
+
+    setDigitalImageDisable(m_isDigitalImageDisable);
 }
 
 void ChatWindow::searchShortCut()
@@ -404,15 +412,13 @@ void ChatWindow::checkForUpdateLogs()
     QString shownVersion = confValue.value();
 
     // 3. 比较版本号
-    if (latestVersion != shownVersion) {
-        // 显示小红点
-        DStyle::setRedPointVisible(m_updateLogAction, true);
-        DStyle::setRedPointVisible(titlebar()->findChild<DIconButton *>("DTitlebarDWindowOptionButton"), true);
-    } else {
-        // 隐藏小红点
-        DStyle::setRedPointVisible(m_updateLogAction, false);
-        DStyle::setRedPointVisible(titlebar()->findChild<DIconButton *>("DTitlebarDWindowOptionButton"), false);
-    }
+    bool hasUpdate = (latestVersion != shownVersion);
+
+    // 更新更新日志菜单项的红点
+    DStyle::setRedPointVisible(m_updateLogAction, hasUpdate);
+
+    // 通过统一的红点管理更新 OptionButton 的红点状态
+    setRedPointSource(UpdateLogSource, hasUpdate);
 }
 
 
@@ -488,7 +494,7 @@ void ChatWindow::onMenuTriggered(QAction *action)
 
         // 隐藏小红点
         DStyle::setRedPointVisible(m_updateLogAction, false);
-        DStyle::setRedPointVisible(titlebar()->findChild<DIconButton *>("DTitlebarDWindowOptionButton"), false);
+        setRedPointSource(UpdateLogSource, false);
 
         uos_ai::UpdateLogDialog dialog;
         dialog.exec();
@@ -804,6 +810,56 @@ void ChatWindow::showUpdateDialog(const QString &msg, const QString &appName)
     }
 }
 
+bool ChatWindow::showRemoveFileDialog(const QString &message)
+{
+    DDialog dlg(this);
+    dlg.setMinimumWidth(380);
+    dlg.setIcon(QIcon(":/assets/images/warning.svg"));
+    dlg.setTitle(message);
+    dlg.addButton(tr("Cancel"), false, DDialog::ButtonNormal);
+    dlg.addButton(tr("Delete"), true, DDialog::ButtonWarning);
+    if (dlg.exec() == DDialog::Accepted) {
+        return true;
+    }
+
+    return false;
+}
+
+bool ChatWindow::showAllowUploadFilesAlert(int modelType, const QString &modelDisplayName, bool searchOnline)
+{
+    // 判断是否为本地模型
+    QList<LLMChatModel> localModelList;
+    localModelList << LLMChatModel::LOCAL_OTHER_MODEL
+                   << LLMChatModel::LOCAL_TEXT2IMAGE
+                   << LLMChatModel::LOCAL_YOURONG_1_5B
+                   << LLMChatModel::LOCAL_YOURONG_7B;
+
+    UploadFilesAlertDialog dialog;
+    bool curLLMIsOnline = !localModelList.contains(static_cast<LLMChatModel>(modelType));
+    if (curLLMIsOnline) {
+        // 情况一：使用线上模型
+        QString modelName;
+        if (static_cast<LLMChatModel>(modelType) == OPENAI_API_COMPATIBLE) {
+            modelName = modelDisplayName;
+        } else {
+            modelName = LLMServerProxy::llmName(static_cast<LLMChatModel>(modelType));
+        }
+        dialog.showOnlineModelAlert(modelName);
+    } else if (searchOnline) {
+        // 情况二：本地模型 + 联网搜索
+        dialog.showLocalModelAlert();
+    } else {
+        // 其他情况直接返回 true，不弹窗
+        return true;
+    }
+
+    if (dialog.exec() == DDialog::Accepted) {
+        return true;
+    }
+
+    return false;
+}
+
 void ChatWindow::startScreenshot()
 {
     emit EAiExec()->sigStartScreenshot();
@@ -988,7 +1044,13 @@ int ChatWindow::getTitleBarBtnWidth()
 bool ChatWindow::showGetFreeCreditsDlg()
 {
     DDialog dlg(this);
+    dlg.setWindowFlags(dlg.windowFlags() | Qt::Tool | Qt::X11BypassWindowManagerHint | Qt::WindowStaysOnTopHint);
+#ifdef COMPILE_ON_V25
+    dlg.setMaximumWidth(380);
+    dlg.setMinimumHeight(180);
+#else
     dlg.setMinimumWidth(380);
+#endif
     dlg.setIcon(QIcon(":/assets/images/warning.svg"));
     dlg.addButton(tr("Not Now"), true, DDialog::ButtonNormal);
     dlg.addButton(tr("Claim Credits"), true, DDialog::ButtonRecommend);
@@ -1006,14 +1068,45 @@ QString ChatWindow::getCurrentShortcut()
     return m_currentShortcut;
 }
 
-void ChatWindow::showGetFreeCreditsResultDlg(bool isSuccess)
+bool ChatWindow::isDeleteOutlineTitle()
 {
     DDialog dlg(this);
     dlg.setMinimumWidth(380);
-    dlg.setIcon(QIcon(isSuccess ? ":/assets/images/ok_info.svg" : ":/assets/images/warning.svg"));
-    dlg.addButton(tr("OK"), true, DDialog::ButtonRecommend);
-    dlg.setTitle(QString(isSuccess ? tr("Successfully Claimed") : tr("Failed to Claim. Please Try Again.")));
-    dlg.exec();
+    dlg.setIcon(QIcon(":/assets/images/warning.svg"));
+    dlg.addButton(tr("Cancel"), true, DDialog::ButtonNormal);
+    dlg.addButton(tr("Delete"), true, DDialog::ButtonWarning);
+    dlg.setTitle(QString(tr("Delete this title?")));  // 是否删除该标题
+    if (dlg.exec() == DDialog::Accepted) {
+        return true;
+    }
+    return false;
+}
+
+void ChatWindow::iconThemeChanged()
+{
+    emit EAiExec()->sigIconThemeChanged();
+}
+
+void ChatWindow::setDigitalImageDisable(bool disable)
+{
+    m_isDigitalImageDisable = disable;
+    
+    // 综合考虑所有状态因素来设置按钮的禁用状态
+    bool shouldDisable = m_isDigitalImageDisable || m_voiceConversationDisabled;
+    
+    // 检查语音对话状态
+    if (m_voiceConversationStatus == 3 || m_voiceConversationStatus == 4) {
+        shouldDisable = true;
+    }
+
+    m_chatBtn->setDisabled(shouldDisable);
+}
+
+bool ChatWindow::isActiveChatFromDigitalImage()
+{
+    bool ret = m_isActiveChatFromDigitalImage;
+    m_isActiveChatFromDigitalImage = false;
+    return ret;
 }
 
 void ChatWindow::onVoiceConversationStatusChanged(int status)
@@ -1112,14 +1205,8 @@ void ChatWindow::onChatInitFinished()
 
 void ChatWindow::onRedPointVisible(bool isVisible)
 {
-    auto optionButton = titlebar()->findChild<DIconButton *>("DTitlebarDWindowOptionButton");
-
-    if (optionButton) {
-        DStyle::setRedPointVisible(optionButton, isVisible);
-        optionButton->update();
-    }
-
     DStyle::setRedPointVisible(m_settingsAction, isVisible);
+    setRedPointSource(SettingsSource, isVisible);
 }
 
 void ChatWindow::updateSidebarGeometry(int currentWidth)
@@ -1398,6 +1485,16 @@ void ChatWindow::onScreenOrDockChanged()
 
 void ChatWindow::showWindow(ChatIndex index)
 {
+    // 写作智能体禁用数字形象
+    bool shouldDisableDigitalImage = m_isDigitalImageDisable || m_voiceConversationDisabled || EAiExec()->currentAssistantType() == AssistantType::AI_WRITING;
+    if (shouldDisableDigitalImage && index == ChatIndex::Talk) {
+        m_isDigitalImageDisable = true;
+        m_isActiveChatFromDigitalImage = true;
+        emit EAiExec()->sigActiveChatFromDigitalImage();
+        index = ChatIndex::Text;
+        qCInfo(logAIGUI) << "Talk to chat";
+    }
+
     if (ChatIndex::Talk == index) {
         //Requirement: if there is a modal window, do not do the switch and display the talk window
         if (QApplication::activeModalWidget()) {
@@ -1592,8 +1689,18 @@ void ChatWindow::setMenuDisabled(bool disabled)
 void ChatWindow::setVoiceConversationDisabled(bool disabled)
 {
     qCInfo(logAIGUI) << "Setting voice conversation disabled:" << disabled;
-    m_chatBtn->setDisabled(disabled);
+
     m_voiceConversationDisabled = disabled;
+    
+    // 综合考虑所有状态因素来设置按钮的禁用状态
+    bool shouldDisable = m_isDigitalImageDisable || m_voiceConversationDisabled;
+    
+    // 检查语音对话状态
+    if (m_voiceConversationStatus == 3 || m_voiceConversationStatus == 4) {
+        shouldDisable = true;
+    }
+    
+    m_chatBtn->setDisabled(shouldDisable);
 }
 
 void ChatWindow::setChatButtonVisible(bool visible)
@@ -1653,4 +1760,31 @@ void ChatWindow::setHasChatHistory(bool hasChatHistory)
 bool ChatWindow::isDigitalMode()
 {
     return m_isDigitalMode;
+}
+
+void ChatWindow::setRedPointSource(RedPointSource source, bool visible)
+{
+    if (visible) {
+        // 设置对应位，启用该来源的红点
+        m_redPointSources |= source;
+    } else {
+        // 清除对应位，禁用该来源的红点
+        m_redPointSources &= ~source;
+    }
+
+    // 更新 OptionButton 的红点状态
+    updateOptionButtonRedPoint();
+}
+
+void ChatWindow::updateOptionButtonRedPoint()
+{
+    auto optionButton = titlebar()->findChild<DIconButton *>("DTitlebarDWindowOptionButton");
+
+    if (optionButton) {
+        // 只要有一个来源启用红点，就显示红点
+        bool hasRedPoint = (m_redPointSources != 0);
+        DStyle::setRedPointVisible(optionButton, hasRedPoint);
+        optionButton->update();
+        qCDebug(logAIGUI) << "OptionButton red point updated:" << hasRedPoint << "(sources:" << m_redPointSources << ")";
+    }
 }

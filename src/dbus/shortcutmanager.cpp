@@ -2,6 +2,7 @@
 
 #include <QDBusMessage>
 #include <QDBusConnection>
+#include <QDBusConnectionInterface>
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QJsonObject>
@@ -15,13 +16,29 @@ UOSAI_USE_NAMESPACE
 #define KEYBINDING_PATH         "/com/deepin/daemon/Keybinding"
 #define KEYBINDING_INTERFACE    "com.deepin.daemon.Keybinding"
 
+#define KEYBINDING_SERVICE_ALT  "org.deepin.dde.Keybinding1"
+#define KEYBINDING_PATH_ALT     "/org/deepin/dde/Keybinding1"
+#define KEYBINDING_INTERFACE_ALT "org.deepin.dde.Keybinding1"
+
 ShortcutManager::ShortcutManager(QObject *parent)
     : QObject(parent)
     , m_shortcutDbus(nullptr)
 {
-    m_shortcutDbus = new QDBusInterface(KEYBINDING_SERVICE,
-                                       KEYBINDING_PATH,
-                                       KEYBINDING_INTERFACE,
+    QString serviceName = KEYBINDING_SERVICE;
+    QString path = KEYBINDING_PATH;
+    QString interface = KEYBINDING_INTERFACE;
+    
+    // 检查主服务是否已注册，如果未注册则使用备用服务
+    if (!QDBusConnection::sessionBus().interface()->isServiceRegistered(KEYBINDING_SERVICE)) {
+        qCWarning(logDBus) << "Service" << KEYBINDING_SERVICE << "not registered, trying" << KEYBINDING_SERVICE_ALT;
+        serviceName = KEYBINDING_SERVICE_ALT;
+        path = KEYBINDING_PATH_ALT;
+        interface = KEYBINDING_INTERFACE_ALT;
+    }
+    
+    m_shortcutDbus = new QDBusInterface(serviceName,
+                                       path,
+                                       interface,
                                        QDBusConnection::sessionBus(),
                                        this);
 }

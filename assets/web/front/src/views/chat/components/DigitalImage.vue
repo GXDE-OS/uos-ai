@@ -4,7 +4,6 @@
     class="main-content"
     :style="{ '--scale': animateScale, '--scale1': animateScale1,}"
     >
-    <ChatTop/>
     <div class="" style="position: relative; flex: 1 1 0">
         <div class="logo">
         <img v-if="!(currentAssistant.iconPrefix === undefined ||  currentAssistant.icon === undefined)" :src='currentAssistant.iconPrefix + currentAssistant.icon + "-110.svg"' class="" />
@@ -171,7 +170,6 @@ const store = useGlobalStore();
 import { Qrequest } from "@/utils";
 import _ from "lodash";
 import { useRouter } from "vue-router";
-import ChatTop from "./ChatTop.vue";
 import Tips from "../../../components/tips/tips.vue";
 import { computed, watch } from "vue";
 
@@ -1028,7 +1026,7 @@ const playTextAudio = async (res) => {
         }
     })
 
-    await Qrequest(chatQWeb.playTextAudio, reqId, res || playText, true);
+    await Qrequest(chatQWeb.playTextAudio, reqId, res || playText, true, false);
     playAudioID.value = reqId;
 };
 const stopPlayTextAudio = async () => {

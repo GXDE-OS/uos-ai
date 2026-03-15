@@ -1,7 +1,7 @@
 <template>
     <div v-if="visible" class="guide-overlay">
         <div class="guide-mask"></div>
-        <div class="guide-popup" :style="popupStyle">
+        <div class="guide-popup" :style="{ width: `${currentPanelWidth}px`, ...popupStyle }">
             <div class="guide-content">
                 <span class="guide-title">{{ currentStep.title }}</span>
                 <span class="guide-text">
@@ -22,7 +22,7 @@
                     <span class="close-btn" @click="activeBtn">{{ currentStep.activeText }}</span>
                 </div>
             </div>
-            <div class="guide-arrow" :style="arrayStyle"></div>
+            <div class="guide-arrow" :style="arrowStyle"></div>
         </div>
     </div>
 </template>
@@ -48,18 +48,27 @@ const props = defineProps({
         validator: (value) => ['independent', 'sequential'].includes(value)
     },
     isWindowMode: Boolean,
-    isDarkMode: Boolean
+    isDarkMode: Boolean,
+    // New props for multi-target support
+    targets: {
+        type: Array,
+        default: () => []
+    },
+    primaryTarget: {
+        type: Object,  // DOM Element
+        default: null
+    }
 })
 
 const emit = defineEmits(['close'])
 
 const popupStyle = ref({})
-const arrayStyle = ref({})
+const arrowStyle = ref({})
 
 const currentStepIndex = ref(props.startStep)
 
-// 存储克隆的目标元素
-let clonedTarget = null
+// 存储克隆的目标元素数组
+let clonedTargets = []
 
 const totalSteps = computed(() => props.steps.length)
 const currentStep = computed(() => {
@@ -69,253 +78,277 @@ const currentStep = computed(() => {
     return null
 })
 
+const currentPanelWidth = computed(() => {
+    return currentStep.value?.width || 280
+})
+
+const getActiveTargets = computed(() => {
+    // 新的targets有值时使用targets，否则向下兼容使用targetRef
+    if (props.steps && props.steps[currentStepIndex.value]) {
+        const step = props.steps[currentStepIndex.value]
+        if (step.targets && step.targets.length > 0) {
+            return step.targets
+        }
+        // 旧的targetRef兼容
+        if (step.targetRef && step.targetRef !== 'none') {
+            return [step.targetRef]
+        }
+    }
+    return []
+})
+
+const getPrimaryTarget = computed(() => {
+    // 新的primaryTarget有值时使用，否则取第一个目标
+    if (props.steps && props.steps[currentStepIndex.value]) {
+        const step = props.steps[currentStepIndex.value]
+        if (step.primaryTarget) {
+            return step.primaryTarget
+        }
+        const activeTargets = getActiveTargets.value
+        if (activeTargets.length > 0) {
+            return activeTargets[0]
+        }
+    }
+    return null
+})
+
 let resizeObserver = null
 let themeObserver = null
 
 const updateClonedTargetPosition = () => {
-    if (!clonedTarget || !currentStep.value || !currentStep.value.targetRef) return
+    const targets = getActiveTargets.value
+    targets.forEach((target, index) => {
+        if (!clonedTargets[index] || !target) return
 
-    const el = currentStep.value.targetRef
-    if (!el || typeof el.getBoundingClientRect !== 'function') return
-
-    const rect = el.getBoundingClientRect()
-    clonedTarget.style.left = `${rect.left}px`
-    clonedTarget.style.top = `${rect.top}px`
-    clonedTarget.style.width = `${rect.width}px`
-    clonedTarget.style.height = `${rect.height}px`
+        const rect = target.getBoundingClientRect()
+        clonedTargets[index].style.left = `${rect.left}px`
+        clonedTargets[index].style.top = `${rect.top}px`
+        clonedTargets[index].style.width = `${rect.width}px`
+        clonedTargets[index].style.height = `${rect.height}px`
+    })
 }
 
 const updatePosition = () => {
-    console.log('updatePosition')
+    if (!getActiveTargets.value || getActiveTargets.value.length === 0) return
 
-    if (!currentStep.value) return
-
-    // 更新克隆元素的位置
+    // 更新所有克隆元素的位置
     updateClonedTargetPosition()
-    
-    if (currentStep.value.targetRef === "none") {
-        // 根据 relativePosition 计算弹窗位置
-        const { arrayDirect, left = 0, right = 0, top = 0, bottom = 0 , titleBarBtnWidth = 0, arrayDisplay = '-1', position = 'none'} = currentStep.value.relativePosition
 
-        // 获取 guide-popup 的 DOM 元素
-        let popupDom = document.querySelector('.guide-popup')
-        let popupWidth = 280 // 默认宽度
-        let popupHeight = 120 // 默认高度
-        let arrowHeight = 10 // 箭头高度
-        if (popupDom) {
-            popupWidth = popupDom.offsetWidth
-            popupHeight = popupDom.offsetHeight
-        }
-        switch (position) {
-            case 'none':
-                {
-                    // 获取 main-content 的 DOM 元素
-                    let mainContentDom = document.querySelector('.main-content')
-                    let mainContentWidth = 0
-                    let mainContentHeight = 0
-                    if (mainContentDom) {
-                        mainContentWidth = mainContentDom.offsetWidth
-                        mainContentHeight = mainContentDom.offsetHeight
-                    }
+    const primary = getPrimaryTarget.value
+    if (!primary) return
 
-                    const right_ = right.replace('px', '')
-                    const top_ = top.replace('px', '')
-                    const popupLeft = mainContentWidth - popupWidth - parseInt(right_)
-                    const popupTop = parseInt(top_)
-                    
-                    // 根据 relativePosition 设置弹窗位置       
-                    popupStyle.value = {
-                        position: 'fixed',
-                        left: `${popupLeft}px`,
-                        top: `${popupTop}px`,
-                        zIndex: 10001
-                    }
-                    
-                    // 根据 arrayDirect 设置箭头方向
-                    let arrowPosition = 0
-                    let arrowTransform = ''
-                    let arrowTop = ''
-                    let arrowBottom = ''
-                    let arrowLeft = ''
-                    let arrowRight = ''
+    // 获取guide-popup的DOM元素和尺寸
+    const popupDom = document.querySelector('.guide-popup')
+    const popupWidth = popupDom?.offsetWidth || 280
+    const popupHeight = popupDom?.offsetHeight || 120
+    const arrowHeight = 10
 
-                    switch (arrayDirect) {
-                        case 'left':
-                            arrowPosition = popupWidth
-                            arrowTransform = 'rotate(90deg)'
-                            arrowLeft = '-10px'
-                            arrowTop = '50%'
-                            arrowBottom = 'auto'
-                            arrowRight = 'auto'
-                            break
-                        case 'right':
-                            arrowPosition = popupWidth
-                            arrowTransform = 'rotate(-90deg)'
-                            arrowRight = '-10px'
-                            arrowTop = '50%'
-                            arrowBottom = 'auto'
-                            arrowLeft = 'auto'
-                            break
-                        case 'top':
-                            if (props.isWindowMode) {
-                                arrowPosition = popupWidth - parseInt(right_) -  titleBarBtnWidth * 3.5 + 10
-                            }else {
-                                arrowPosition = popupWidth - parseInt(right_) -  titleBarBtnWidth * 1.5 + 10
-                            }
-                            
-                            arrowTransform = 'rotate(180deg)'
-                            arrowTop = '-10px'
-                            arrowLeft = '50%'
-                            arrowRight = 'auto'
-                            arrowBottom = 'auto'
-                            break
-                        case 'bottom':
-                            arrowPosition = popupWidth / 2
-                            arrowTransform = 'rotate(0deg)'
-                            arrowBottom = '-10px'
-                            arrowLeft = '50%'
-                            arrowRight = 'auto'
-                            arrowTop = 'auto'
-                            break
-                        default:
-                            arrowPosition = popupWidth / 2
-                            arrowTransform = 'rotate(0deg)'
-                            arrowBottom = '-10px'
-                            arrowLeft = '50%'
-                            arrowRight = 'auto'
-                            arrowTop = 'auto'
-                    }
-                    
-                    arrayStyle.value = {
-                        left: `${arrowPosition}px`,
-                        right: arrowRight,
-                        top: arrowTop,
-                        bottom: arrowBottom,
-                        transform: arrowTransform
-                    }
-                }
-                break;
-            case 'center':
-                {
-                    // 获取 main-content 的 DOM 元素
-                    let mainContentDom = document.querySelector('.main-content')
-                    let mainContentWidth = 0
-                    let mainContentHeight = 0
-                    if (mainContentDom) {
-                        mainContentWidth = mainContentDom.offsetWidth
-                        mainContentHeight = mainContentDom.offsetHeight
-                    }
+    if (currentStep.value?.relativePosition && currentStep.value.relativePosition.position !== undefined) {
+        const { arrowDirect, left = 0, right = 0, top = 0, bottom = 0, titleBarBtnWidth = 0, arrowDisplay = '-1', position = 'none', offset = 10 } = currentStep.value.relativePosition
 
-                    // 根据 relativePosition 设置弹窗位置       
-                    popupStyle.value = {
-                        position: 'fixed',
-                        left: `${(mainContentWidth - popupWidth) / 2}px`,
-                        top: `${(mainContentHeight - popupHeight) / 2}px`,
-                        zIndex: 10001
-                    }
-                }
-                break;
-            default:
-                break;
-        }
+        // 当有 primary target 且配置了 arrowDirect 时，基于目标元素定位
+        if (primary && arrowDirect && ['left', 'right', 'top', 'bottom'].includes(arrowDirect)) {
+            const rect = primary.getBoundingClientRect()
+            const spacing = parseInt(String(offset)) || 10
 
-        if (arrayDisplay === 'none') {
-            // 隐藏箭头
-            arrayStyle.value = {
-                display: 'none'
+            let popupLeft, popupTop
+            let arrowLeft = '50%', arrowRight = 'auto', arrowTop = '50%', arrowBottom = 'auto'
+            let arrowTransform = 'rotate(0deg)'
+
+            switch (arrowDirect) {
+                case 'left':
+                    // 箭头指向左边，浮窗在目标右侧
+                    popupLeft = rect.right + spacing
+                    popupTop = rect.top + (rect.height - popupHeight) / 2
+                    arrowTransform = 'rotate(90deg)'
+                    arrowRight = '0px'
+                    break
+                case 'right':
+                    // 箭头指向右边，浮窗在目标左侧
+                    popupLeft = rect.left - popupWidth - spacing
+                    popupTop = rect.top + (rect.height - popupHeight) / 2
+                    arrowTransform = 'rotate(-90deg)'
+                    arrowLeft = 'calc(100% - 2px)'
+                    break
+                case 'top':
+                    // 箭头指向上边，浮窗在目标下方
+                    popupLeft = rect.left + (rect.width - popupWidth) / 2
+                    popupTop = rect.bottom + spacing
+                    arrowTransform = 'rotate(180deg)'
+                    arrowTop = '-10px'
+                    break
+                case 'bottom':
+                    // 箭头指向下边，浮窗在目标上方
+                    popupLeft = rect.left + (rect.width - popupWidth) / 2
+                    popupTop = rect.top - popupHeight - spacing
+                    arrowTransform = 'rotate(0deg)'
+                    arrowBottom = '100%'
+                    break
             }
 
-            console.log('隐藏箭头', arrayStyle.value)
-        }
+            popupStyle.value = {
+                position: 'fixed',
+                left: `${popupLeft}px`,
+                top: `${popupTop}px`,
+                zIndex: 10001
+            }
 
-    } else {
-        const el = currentStep.value.targetRef
-        if (!el || typeof el.getBoundingClientRect !== 'function' || el.nodeType !== 1) {
+            if (arrowDisplay === 'none') {
+                arrowStyle.value = { display: 'none' }
+            } else {
+                arrowStyle.value = {
+                    left: arrowLeft,
+                    right: arrowRight,
+                    top: arrowTop,
+                    bottom: arrowBottom,
+                    transform: arrowTransform
+                }
+            }
             return
         }
-        const rect = el.getBoundingClientRect()
 
-        // 获取元素的计算样式以获取padding值
-        const computedStyle = window.getComputedStyle(el)
-        const paddingLeft = parseFloat(computedStyle.paddingLeft) || 0
-        const paddingRight = parseFloat(computedStyle.paddingRight) || 0
+        // 处理 'none' 或 'center' 位置
+        const mainContentDom = document.querySelector('.main-content')
+        const mainContentWidth = mainContentDom?.offsetWidth || 0
+        const mainContentHeight = mainContentDom?.offsetHeight || 0
 
-        // 弹窗高度假设为120px，箭头高度10px，弹窗底部对齐targetRef顶部
-        // 获取guide-popup的DOM元素
-        let popupDom = document.querySelector('.guide-popup')
-        let popupWidth = 280 // 默认宽度
-        let popupHeight = 120 // 默认高度
-        let arrowHeight = 10 // 箭头高度
-        if (popupDom) {
-            popupWidth = popupDom.offsetWidth
-            popupHeight = popupDom.offsetHeight
+        switch (position) {
+            case 'none': {
+                const right_ = parseInt(right.replace('px', '')) || 0
+                const top_ = parseInt(top.replace('px', '')) || 0
+                const popupLeft = mainContentWidth - popupWidth - right_
+                const popupTop = top_
+
+                popupStyle.value = {
+                    position: 'fixed',
+                    left: `${popupLeft}px`,
+                    top: `${popupTop}px`,
+                    zIndex: 10001
+                }
+
+                if (arrowDisplay === 'none') {
+                    arrowStyle.value = { display: 'none' }
+                    return
+                }
+
+                let arrowLeft = '50%', arrowRight = 'auto', arrowTop = 'auto', arrowBottom = '-10px'
+                let arrowTransform = 'rotate(0deg)'
+
+                switch (arrowDirect) {
+                    case 'left':
+                        arrowLeft = `-10px`
+                        arrowTop = '50%'
+                        arrowBottom = 'auto'
+                        arrowTransform = 'rotate(-90deg)'
+                        break
+                    case 'right':
+                        arrowRight = `-10px`
+                        arrowTop = '50%'
+                        arrowBottom = 'auto'
+                        arrowTransform = 'rotate(90deg)'
+                        break
+                    case 'top':
+                        arrowTop = `-10px`
+                        arrowBottom = 'auto'
+                        arrowTransform = 'rotate(0deg)'
+                        break
+                    case 'bottom':
+                        arrowTop = 'auto'
+                        arrowBottom = '-10px'
+                        arrowTransform = 'rotate(180deg)'
+                        break
+                    default:
+                        break
+                }
+
+                arrowStyle.value = {
+                    left: arrowLeft,
+                    right: arrowRight,
+                    top: arrowTop,
+                    bottom: arrowBottom,
+                    transform: arrowTransform
+                }
+                break
+            }
+            case 'center':
+                popupStyle.value = {
+                    position: 'fixed',
+                    left: `${(mainContentWidth - popupWidth) / 2}px`,
+                    top: `${(mainContentHeight - popupHeight) / 2}px`,
+                    zIndex: 10001
+                }
+                break
+            default:
+                break
         }
 
-        // 获取窗口宽度
-        const windowWidth = window.innerWidth
-        const margin = 4 // 距离边缘的最小间距
-
-        // 计算去除padding后的内容宽度
-        const contentWidth = rect.width - paddingLeft - paddingRight
-        let left = rect.left + (contentWidth - popupWidth) / 2
-
-        // 检查左边界
-        if (left < margin) {
-            left = margin
+        if (arrowDisplay === 'none') {
+            arrowStyle.value = { display: 'none' }
         }
+        return
+    }
 
-        // 检查右边界
-        if (left + popupWidth > windowWidth - margin) {
-            left = windowWidth - popupWidth - margin
-        }
+    // 默认情况：相对目标元素定位在上方
+    const rect = primary.getBoundingClientRect()
+    const computedStyle = window.getComputedStyle(primary)
+    const paddingLeft = parseFloat(computedStyle.paddingLeft) || 0
+    const paddingRight = parseFloat(computedStyle.paddingRight) || 0
+    const windowWidth = window.innerWidth
+    const margin = 4
 
-        popupStyle.value = {
-            position: 'fixed',
-            left: `${left}px`,
-            top: `${rect.top - popupHeight - arrowHeight * 2}px`,
-            zIndex: 10001
-        }
+    const contentWidth = rect.width - paddingLeft - paddingRight
+    let left = rect.left + (contentWidth - popupWidth) / 2
 
-        // 计算目标元素的中心点
-        const targetCenter = rect.left + rect.width / 2
-        // 计算弹出框的左边界
-        const popupLeft = left
-        // 计算箭头应该在弹出框中的位置（减去箭头宽度的一半：8px）
-        const arrowPosition = targetCenter - popupLeft - 8
+    // 边界检查
+    left = Math.max(margin, Math.min(left, windowWidth - popupWidth - margin))
 
-        // 确保箭头不会太靠近弹出框边缘
-        const minArrowPosition = 10 // 距离左边至少10px
-        const maxArrowPosition = popupWidth - 10 // 距离右边至少10px
+    popupStyle.value = {
+        position: 'fixed',
+        left: `${left}px`,
+        top: `${rect.top - popupHeight - arrowHeight * 2}px`,
+        zIndex: 10001
+    }
 
-        const finalArrowPosition = Math.min(Math.max(arrowPosition, minArrowPosition), maxArrowPosition)
+    // 计算箭头位置
+    const targetCenter = rect.left + rect.width / 2
+    const arrowPosition = targetCenter - left - 8
+    const finalArrowPosition = Math.min(Math.max(arrowPosition, 10), popupWidth - 10)
 
-        arrayStyle.value = {
-            left: `${finalArrowPosition}px`,
-            right: 'auto'
-        }
+    arrowStyle.value = {
+        left: `${finalArrowPosition}px`,
+        right: 'auto'
     }
 }
 
-const resetTargetStyle = (targetRef) => {
-    // 移除克隆的目标元素
-    if (clonedTarget && clonedTarget.parentNode) {
-        clonedTarget.parentNode.removeChild(clonedTarget)
-        clonedTarget = null
+const resetTargetStyle = (specificTarget = null) => {
+    // 恢复特定目标或所有目标的样式
+    if (specificTarget) {
+        specificTarget.style.opacity = ''
+        specificTarget.style.zIndex = ''
+        specificTarget.style.pointerEvents = ''
+    } else {
+        const activeTargets = getActiveTargets.value
+        activeTargets.forEach(target => {
+            if (target && target.style) {
+                target.style.opacity = ''
+                target.style.zIndex = ''
+                target.style.pointerEvents = ''
+            }
+        })
     }
 
-    // 恢复原始元素的样式
-    if (targetRef && targetRef.style) {
-        targetRef.style.zIndex = ''
-        targetRef.style.pointerEvents = ''
-        targetRef.style.opacity = ''
-    }
+    // 移除所有克隆的目标元素
+    clonedTargets.forEach(cloned => {
+        if (cloned && cloned.parentNode) {
+            cloned.parentNode.removeChild(cloned)
+        }
+    })
+    clonedTargets = []
 }
 
 const closeGuide = (isActive) => {
     emit('close', isActive)
-    if (currentStep.value) {
-        resetTargetStyle(currentStep.value.targetRef)
-    }
+    resetTargetStyle()
 }
 
 // 递归复制元素及其子元素的计算样式
@@ -341,90 +374,106 @@ const copyComputedStyles = (sourceElement, targetElement) => {
     for (let i = 0; i < sourceChildren.length && i < targetChildren.length; i++) {
         copyComputedStyles(sourceChildren[i], targetChildren[i])
     }
+    
 }
 
 // 刷新克隆元素的样式(用于主题变化时更新)
 const refreshClonedTargetStyles = () => {
-    if (!clonedTarget || !currentStep.value || !currentStep.value.targetRef) return
+    if (!clonedTargets.length || !getActiveTargets.value || getActiveTargets.value.length === 0) return
 
-    const el = currentStep.value.targetRef
-    if (!el || typeof el.getBoundingClientRect !== 'function') return
+    const targets = getActiveTargets.value
+    targets.forEach((target, index) => {
+        if (!clonedTargets[index] || !target) return
 
-    // 重新复制样式
-    copyComputedStyles(el, clonedTarget)
+        // 重新复制样式
+        copyComputedStyles(target, clonedTargets[index])
 
-    // 恢复必要的定位样式
-    const rect = el.getBoundingClientRect()
-    clonedTarget.style.position = 'fixed'
-    clonedTarget.style.left = `${rect.left}px`
-    clonedTarget.style.top = `${rect.top}px`
-    clonedTarget.style.width = `${rect.width}px`
-    clonedTarget.style.height = `${rect.height}px`
-    clonedTarget.style.pointerEvents = currentStep.value.isAllowClickOnTarget ? 'pointer' : 'none'
-    clonedTarget.style.zIndex = currentStep.value.isAllowClickOnTarget ? '10001' : '10000'
-    clonedTarget.style.margin = '0'
-    clonedTarget.style.opacity = '1'
+        // 恢复必要的定位样式
+        const rect = target.getBoundingClientRect()
+        clonedTargets[index].style.position = 'fixed'
+        clonedTargets[index].style.left = `${rect.left}px`
+        clonedTargets[index].style.top = `${rect.top}px`
+        clonedTargets[index].style.width = `${rect.width}px`
+        clonedTargets[index].style.height = `${rect.height}px`
+        clonedTargets[index].style.pointerEvents = currentStep.value?.isAllowClickOnTarget ? 'auto' : 'none'
+        clonedTargets[index].style.zIndex = currentStep.value?.isAllowClickOnTarget ? '10001' : '10000'
+        clonedTargets[index].style.margin = '0'
+        clonedTargets[index].style.opacity = '1'
+        clonedTargets[index].style.boxSizing = 'border-box'
+
+        // 显式重置可能影响定位的属性
+        clonedTargets[index].style.transform = 'none'
+        clonedTargets[index].style.transition = 'none'
+        clonedTargets[index].style.animation = 'none'
+    })
 }
 
-const highlightTarget = () => {
-    if (!currentStep.value || !currentStep.value.targetRef) return
+const highlightTargets = () => {
+    const targets = getActiveTargets.value
+    if (!targets || targets.length === 0) return
 
-    const el = currentStep.value.targetRef
-    if (!el || typeof el.getBoundingClientRect !== 'function' || el.nodeType !== 1) {
-        return
-    }
+    // 清除之前的克隆元素
+    resetTargetStyle()
 
-    // 移除之前的克隆元素
-    if (clonedTarget && clonedTarget.parentNode) {
-        clonedTarget.parentNode.removeChild(clonedTarget)
-        clonedTarget = null
-    }
+    targets.forEach(target => {
+        if (!target || !target.style || typeof target.getBoundingClientRect !== 'function' || target.nodeType !== 1) {
+            return
+        }
 
-    // 隐藏原始元素,避免与克隆元素产生视觉叠加
-    el.style.opacity = '0'
+        // 隐藏原始元素
+        target.style.opacity = '0'
 
-    // 获取目标元素的位置
-    const rect = el.getBoundingClientRect()
+        // 获取目标元素的位置
+        const rect = target.getBoundingClientRect()
 
-    // 克隆目标元素
-    clonedTarget = el.cloneNode(true)
+        // 克隆目标元素
+        const cloned = target.cloneNode(true)
 
-    // 递归复制所有计算样式(包括子元素和SVG)
-    copyComputedStyles(el, clonedTarget)
+        // 递归复制所有计算样式
+        copyComputedStyles(target, cloned)
 
-    // 确保克隆元素的基本定位样式不被覆盖
-    clonedTarget.style.position = 'fixed'
-    clonedTarget.style.left = `${rect.left}px`
-    clonedTarget.style.top = `${rect.top}px`
-    clonedTarget.style.width = `${rect.width}px`
-    clonedTarget.style.height = `${rect.height}px`
-    clonedTarget.style.pointerEvents = currentStep.value.isAllowClickOnTarget ? 'pointer' : 'none'
-    clonedTarget.style.zIndex = currentStep.value.isAllowClickOnTarget ? '10001' : '10000'
-    clonedTarget.style.margin = '0'
-    clonedTarget.style.opacity = '1'
+        // 将克隆元素添加到body（在添加后再设置样式，确保样式在DOM中生效）
+        document.body.appendChild(cloned)
 
-    // 添加一个标识class
-    clonedTarget.classList.add('guide-cloned-target')
+        // 添加标识class
+        cloned.classList.add('guide-cloned-target')
 
-    // 将克隆元素添加到body,确保不受父级disabled影响
-    document.body.appendChild(clonedTarget)
+        // 设置克隆元素的基本定位样式（必须在添加到DOM后设置，避免在添加前就设置了某些影响定位的样式）
+        cloned.style.position = 'fixed'
+        cloned.style.left = `${rect.left}px`
+        cloned.style.top = `${rect.top}px`
+        cloned.style.width = `${rect.width}px`
+        cloned.style.height = `${rect.height}px`
+        cloned.style.pointerEvents = currentStep.value?.isAllowClickOnTarget ? 'auto' : 'none'
+        cloned.style.zIndex = currentStep.value?.isAllowClickOnTarget ? '10001' : '10000'
+        cloned.style.margin = '0'
+        cloned.style.opacity = '1'
+        cloned.style.boxSizing = 'border-box'
 
-    // 如果允许点击,需要将点击事件代理到原始元素
-    if (currentStep.value.isAllowClickOnTarget) {
-        clonedTarget.addEventListener('click', (e) => {
-            e.stopPropagation()
-            el.click()
-        })
-    }
+        // 显式重置可能影响定位的属性
+        cloned.style.transform = 'none'
+        cloned.style.transition = 'none'
+        cloned.style.animation = 'none'
+
+        // 如果允许点击，需要将点击事件代理到原始元素
+        if (currentStep.value?.isAllowClickOnTarget) {
+            cloned.addEventListener('click', (e) => {
+                e.stopPropagation()
+                target.click()
+            })
+        }
+
+        clonedTargets.push(cloned)
+    })
 }
 
-const activeBtn = () => {
+const activeBtn = async () => {
     if (currentStep.value && currentStep.value.onActiveClick) {
-        currentStep.value.onActiveClick()
+        await currentStep.value.onActiveClick()
     }
 
     if (currentStepIndex.value < totalSteps.value - 1) {
-        resetTargetStyle(currentStep.value.targetRef)
+        resetTargetStyle()
         currentStepIndex.value++
     } else {
         closeGuide(true)
@@ -445,7 +494,7 @@ onMounted(() => {
                  mutation.attributeName === 'data-theme' ||
                  mutation.attributeName === 'style')) {
                 // 主题变化时刷新克隆元素样式
-                if (props.visible && clonedTarget) {
+                if (props.visible && clonedTargets.length) {
                     nextTick(() => {
                         refreshClonedTargetStyles()
                     })
@@ -486,19 +535,26 @@ onUnmounted(() => {
 watch(() => props.visible, (val) => {
     if (val) {
         currentStepIndex.value = props.startStep
+        // 使用 double RAF 确保在布局完全稳定后计算位置
         nextTick(() => {
-            if (currentStep.value) {
-                updatePosition()
-                highlightTarget()
-
-                const popupDom = document.querySelector('.guide-popup')
-                if (popupDom && !resizeObserver) {
-                    resizeObserver = new ResizeObserver(() => {
-                        updatePosition()
-                    })
-                    resizeObserver.observe(popupDom)
+            requestAnimationFrame(() => {
+                if (currentStep.value) {
+                    highlightTargets()
                 }
-            }
+                requestAnimationFrame(() => {
+                    if (currentStep.value) {
+                        updatePosition()
+
+                        const popupDom = document.querySelector('.guide-popup')
+                        if (popupDom && !resizeObserver) {
+                            resizeObserver = new ResizeObserver(() => {
+                                updatePosition()
+                            })
+                            resizeObserver.observe(popupDom)
+                        }
+                    }
+                })
+            })
         })
     } else {
         if (resizeObserver) {
@@ -512,14 +568,21 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
     if (props.visible) {
         const oldStep = props.steps[oldIndex]
         if (oldStep) {
-            resetTargetStyle(oldStep.targetRef)
+            resetTargetStyle()
         }
-        
+
+        // 使用 double RAF 确保在布局完全稳定后计算位置
         nextTick(() => {
-            if (currentStep.value) {
-                updatePosition()
-                highlightTarget()
-            }
+            requestAnimationFrame(() => {
+                if (currentStep.value) {
+                    highlightTargets()
+                }
+                requestAnimationFrame(() => {
+                    if (currentStep.value) {
+                        updatePosition()
+                    }
+                })
+            })
         })
     }
 }, { immediate: true })
@@ -539,7 +602,6 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
     z-index: 10000;
 }
 .guide-popup {
-    width: 280px;
     box-sizing: border-box;
     background-color: var(--uosai-guide-popup-bg);
     border-radius: 10px;
@@ -573,6 +635,7 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
     font-weight: 400;
     margin-top: 6px;
     margin-bottom: 10px;
+    white-space: pre-line; // 支持字符串中的 \n 换行
 }
 
 .guide-content-text {
@@ -636,9 +699,6 @@ watch(currentStepIndex, (newIndex, oldIndex) => {
     // 添加高亮效果,使其更加醒目
     outline: 2px solid var(--activityColor, #0081FF);
     outline-offset: 2px;
-
-    // 可以添加一些过渡效果
-    transition: outline 0.3s ease;
 
     // 禁用所有子元素的交互(除非特别允许)
     * {

@@ -1,6 +1,7 @@
 #include "commanderagent.h"
 #include "oaifunctionparser.h"
 #include "wrapper/llmservicevendor.h"
+#include "networkdefs.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -41,7 +42,7 @@ void CommanderAgent::setModel(QSharedPointer<LLM> llm)
     for (QSharedPointer<LlmAgent> agent : m_subAgents.values()) {
         auto newllm = LLMVendor()->getCopilot(account);
         newllm->switchStream(false);
-        connect(llm.data(), &LLM::aborted, newllm.data(), &LLM::aborted);
+        connect(llm.data(), &LLM::aborted, newllm.data(), &LLM::aborted, Qt::DirectConnection);
         agent->setModel(newllm);
     }
 }
@@ -105,6 +106,9 @@ QPair<int, QString> CommanderAgent::callTool(const QString &toolName, const QJso
     // 调用子智能体
     QJsonObject result = subAgent->processRequest(request, {}, {});
 
+    if (subAgent->lastError() != AIServer::NoError)
+        return qMakePair(-1, subAgent->lastErrorString());
+
     if (result.contains("error")) {
         return qMakePair(-1, result["error"].toString());
     }
@@ -152,9 +156,14 @@ QJsonObject CommanderAgent::subagentTool() const
     
     QJsonObject contentProp;
     contentProp["type"] = "string";
-    contentProp["description"] = "Task to be assigned to the sub-agent.";
+    contentProp["description"] = "Detailed task content to be assigned to the sub-agent.";
     properties["content"] = contentProp;
     
+    QJsonObject explProp;
+    explProp["type"] = "string";
+    explProp["description"] = "Explain to user what you are doing. But NEVER refer to tool and agent names.";
+    properties["explanation"] = explProp;
+
     parameters["properties"] = properties;
     toolObj["parameters"] = parameters;
     
@@ -168,20 +177,18 @@ QString CommanderAgent::subagentPrompt() const
     for (auto it = m_subAgents.begin(); it != m_subAgents.end(); ++it) {
         QString agentName = it.key();
         QString agentDescription = it.value()->description();
-        
-        agentsXml += QString("<agent>\n");
-        agentsXml += QString("    <agent_name>%1</agent_name>\n")
+
+        agentsXml += QString("  - agent_name\n    %1\n")
                         .arg(agentName);
-        agentsXml += QString("    <description>%1</description>\n")
+        agentsXml += QString("  - description\n    %1\n")
                         .arg(agentDescription);
-        agentsXml += QString("</agent>\n");
     }
-    
+
     QString tmpl = R"(
 You have the following sub-agents available to transfer task. Please transfer tasks precisely based on the descriptions of the sub-agents.
-<sub_agents>
+- sub_agents
 %0
-</sub_agents>)";
+)";
 
     return tmpl.arg(agentsXml);
 }

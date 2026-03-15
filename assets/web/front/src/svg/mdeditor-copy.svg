@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+	<path transform="translate(4 3)" d="M8 3C8.5522852 3 9 3.4477153 9 4L9 10L11 10L11 1L4 1L4 3L8 3ZM8 4L1 4L1 13L8 13L8 4ZM3 1C3 0.44771525 3.4477153 0 4 0L11 0C11.552285 0 12 0.44771525 12 1L12 10C12 10.552285 11.552285 11 11 11L9 11L9 13C9 13.552285 8.5522852 14 8 14L1 14C0.44771525 14 0 13.552285 0 13L0 4C0 3.4477153 0.44771525 3 1 3L3 3L3 1Z"/>
+</svg>

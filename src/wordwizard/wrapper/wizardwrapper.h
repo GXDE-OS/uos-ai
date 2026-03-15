@@ -9,6 +9,7 @@
 #include <DBlurEffectWidget>
 #include <DLineEdit>
 #include <DMenu>
+#include <DPlatformWindowHandle>
 
 #include <QVariant>
 #include <QPropertyAnimation>
@@ -18,6 +19,7 @@
 #include <QLabel>
 
 DGUI_USE_NAMESPACE
+DWIDGET_USE_NAMESPACE
 
 namespace  uos_ai {
 
@@ -129,8 +131,7 @@ private:
     CustomDMenu *m_moreMenu = nullptr;
     CustomDMenu *m_disableMenu = nullptr;
     DTK_WIDGET_NAMESPACE::DWidget *m_lineSep = nullptr;
-    DTK_WIDGET_NAMESPACE::DWidget *m_lineSep1 = nullptr;
-    DTK_WIDGET_NAMESPACE::DWidget *m_lineSep2 = nullptr;
+    QLabel *m_twoLineSep = nullptr;
     QAction *m_disableInProcessAction = nullptr;
     QAction *m_disableInAppAction = nullptr;
     QAction *m_disableGlobalAction = nullptr;
@@ -156,6 +157,8 @@ private:
     
     QList<QWidget*> m_customMenuWidgets;
     QList<QString> m_customMenuWidgetIconNames;
+
+    DPlatformWindowHandle::EffectScene m_effectScene;
 };
 }
 #endif // WIZARDWRAPPER_H

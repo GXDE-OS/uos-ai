@@ -495,7 +495,7 @@ void WordWizard::onShowScribeWord()
         if (m_isShortcut)
             m_Point = QCursor::pos();
         else
-            m_Point = QPoint(m_mouseReleaseX, m_mouseReleaseY + 16);
+            m_Point = QPoint(m_mouseReleaseX, m_mouseReleaseY - 36);
 
         m_selectwid->showScribeWordsAtCursorPosition(m_screenRect, m_Point, m_isMouseRelease, m_isShortcut);
         m_isClose = false;

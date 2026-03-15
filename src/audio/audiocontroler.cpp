@@ -230,7 +230,7 @@ void AudioControler::playSystemSound(AudioSystemEffect effect)
     m_sound->play();
 }
 
-bool AudioControler::startAppendPlayText(const QString &id, const QString &text, bool isEnd)
+bool AudioControler::startAppendPlayText(const QString &id, const QString &text, bool isEnd, bool isPlayOutline)
 {
     qCDebug(logAudio) << "Starting to play text, ID:" << id << "Length:" << text.length() << "isEnd:" << isEnd;
     
@@ -247,7 +247,7 @@ bool AudioControler::startAppendPlayText(const QString &id, const QString &text,
 
     if (m_tempDir.isValid()) {
         QString tempFile = m_tempDir.path() + "/" + id;
-        if (QFile::exists(tempFile)) {
+        if (QFile::exists(tempFile) && !isPlayOutline) {
             qCDebug(logAudio) << "Playing from existing audio file:" << tempFile;
             return m_audioPlayer->playFileSync(id, tempFile);
         } else {
