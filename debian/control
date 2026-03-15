@@ -29,7 +29,12 @@ Build-Depends:
  wlr-protocols,
  wayland-protocols,
  libdtk6ocr-dev,
- libpoppler-qt6-dev
+ libpoppler-qt6-dev,
+# 任务栏插件需要 Qt5 进行构建
+ gxde-dock-dev,
+ qtbase5-dev,
+ libdtkwidget-dev,
+ gxde-desktop-base,
 
 Standards-Version: 4.5.0
 Package: uos-ai
