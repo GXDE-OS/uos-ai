@@ -235,65 +235,6 @@ int DeepinLauncher::launchDefault(const QString &mineType)
 {
     qCDebug(logOsControl) << "Launching default application for mime type:" << mineType;
     int errorCode = OSCallContext::NonError;
-
-#ifdef COMPILE_ON_V23
-    QScopedPointer<QDBusInterface> appMime;
-    appMime.reset(
-        new QDBusInterface(
-            deepinNewMimeService,
-            deepinNewMimePath,
-            deepinNewMimeInterface,
-            QDBusConnection::sessionBus(), this));
-    if (appMime->isValid()) {
-        QList<QVariant> argumentList;
-        argumentList << QVariant::fromValue<QString>(mineType);
-        auto reply = appMime->asyncCallWithArgumentList(
-                         QStringLiteral("queryDefaultApplication"), argumentList);
-        reply.waitForFinished();
-        if (reply.isError()) {
-            qCWarning(logOsControl) << "Failed to get default app with V23 mime service - type:" << mineType
-                                  << "error:" << reply.error().message();
-        } else {
-            QString mimeType = reply.reply().arguments().value(0).toString();
-            QString defaultAppPath = reply.reply().arguments().value(1).value<QDBusObjectPath>().path();
-            
-            qCDebug(logOsControl) << "Got default app from V23 mime service - type:" << mimeType
-                                << "path:" << defaultAppPath;
-            
-            QScopedPointer<QDBusInterface> appAM;
-            appAM.reset(new QDBusInterface(
-                               deepinStartManagerService,
-                               defaultAppPath,
-                               deepinStartManagerInterface,
-                               QDBusConnection::sessionBus(), this));
-            if (appAM->isValid()) {
-                QList<QVariant> argumentList;
-                argumentList << QVariant::fromValue<QString>(QString(""))
-                             << QVariant::fromValue<QStringList>(QStringList(""))
-                             << QVariant::fromValue<QVariantMap>(QVariantMap());
-
-                auto reply = appAM->asyncCallWithArgumentList(
-                                 QStringLiteral("Launch"), argumentList);
-                reply.waitForFinished();
-                if (reply.isError()) {
-                    qCWarning(logOsControl) << "Failed to launch default app - path:" << defaultAppPath
-                                          << "error:" << reply.error().message();
-                    errorCode = OSCallContext::AppStartFailed;
-                }
-            } else {
-                qCWarning(logOsControl) << "V23 application manager interface is invalid";
-                errorCode = OSCallContext::NonService;
-            }
-            //If launch ok with new AM, just exit.
-            // else try to use old start manager.
-            if (errorCode == OSCallContext::NonError) {
-                return errorCode;
-            }
-        }
-    } else {
-        qCDebug(logOsControl) << "V23 new application service is not available";
-    }
-#endif
     if (m_osMime->isValid()) {
         QList<QVariant> argumentList;
         argumentList << QVariant::fromValue<QString>(mineType);
