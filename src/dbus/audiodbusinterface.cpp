@@ -13,11 +13,9 @@ Q_DECLARE_LOGGING_CATEGORY(logDBus)
 AudioDbusInterface::AudioDbusInterface(QObject *parent)
     : QObject(parent)
 {
-#ifdef COMPILE_ON_V20
+
+    // 修复麦克风不可用的问题
     m_audioInter = new Audio("com.deepin.daemon.Audio", "/com/deepin/daemon/Audio", QDBusConnection::sessionBus(), this);
-#else
-    m_audioInter = new Audio("org.deepin.dde.Audio1", "/org/deepin/dde/Audio1", QDBusConnection::sessionBus(), this);
-#endif
 
     m_audioInter->setSync(true);
     connect(m_audioInter, &Audio::DefaultSinkChanged, this, &AudioDbusInterface::setDefaultSink, Qt::QueuedConnection);
