@@ -4,6 +4,7 @@
 #include "serverdefs.h"
 #include "networkdefs.h"
 
+#include <QJsonArray>
 #include <QScopedPointer>
 
 class SessionPrivate;
@@ -128,6 +129,22 @@ signals:
      * @param chatText: Response Text
      */
     void chatTextReceived(const QString &id, const QString &chatText);
+
+    /**
+     * @brief Emitted with the full agent context (tool call chain) after each request.
+     *        Always emitted before chatTextReceived so handlers can store context first.
+     * @param id      Request ID
+     * @param context OAI-format message array: assistant tool_calls + tool results + final assistant
+     */
+    void chatContextReceived(const QString &id, const QJsonArray &context);
+
+    /**
+     * @brief Emitted for each incremental chunk when stream=true.
+     *        Consumers can use this to progressively render output.
+     * @param id        Request ID (same as chatRequest return value)
+     * @param deltaText The new incremental text fragment
+     */
+    void chatTextChunkReceived(const QString &id, const QString &deltaText);
 
     /**
      * @brief text2ImageReceived

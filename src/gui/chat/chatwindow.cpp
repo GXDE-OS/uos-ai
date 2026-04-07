@@ -1023,7 +1023,7 @@ bool ChatWindow::showInstallUosAIAgentDlg(QString appName)
     dlg.addButton(tr("Use later"), true, DDialog::ButtonNormal);
     dlg.addButton(tr("Install Now"), true, DDialog::ButtonRecommend);
 
-    dlg.setTitle(QString(tr("MCP environment missing")));
+    dlg.setTitle(QString(tr("MCP & Skills environment missing")));
     dlg.setMessage(QString(tr("Please go to the App Store to install UOS AI Agent")));
     if (dlg.exec() == DDialog::Accepted) {
         EAiExec()->openInstallWidget(appName);

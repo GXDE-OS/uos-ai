@@ -22,18 +22,10 @@ public:
     }
 
     inline QString modelId() override {
-        return QString("deepseek-r1-250528");
+        return QString("deepseek-v3-2-251201");
     }
 
-    inline QString v3Id() {
-        return QString("deepseek-v3-250324");
-    }
-
-    inline QString searchR1Id() {
-        return QString("bot-20240827214959-w7mj7");
-    }
-
-    inline QString searchV3Id() {
+    inline QString searchBotId() {
         return QString("bot-20250321110601-77w5l");
     }
 

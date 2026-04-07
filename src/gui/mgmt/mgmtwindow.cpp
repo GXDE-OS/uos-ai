@@ -23,7 +23,9 @@
 #include "private/wordwizardwidget.h"
 #include "private/aibarwidget.h"
 #include "private/mcpserverwidget.h"
+#include "private/skillserverwidget.h"
 #include "private/privatemodellistwidget.h"
+#include "private/chatbotwidget.h"
 
 #include <DWidgetUtil>
 #include <DLabel>
@@ -141,6 +143,7 @@ void MgmtWindow::initUI()
 
 #ifdef ENABLE_MCP
     scrollLayout->addWidget(initMcpServerWidget(), 0, Qt::AlignCenter);
+    scrollLayout->addWidget(initSkillWidget(), 0, Qt::AlignCenter);
 #endif
 
     scrollLayout->addWidget(initWordWizardWidget(), 0, Qt::AlignLeft);
@@ -150,6 +153,9 @@ void MgmtWindow::initUI()
     scrollLayout->addWidget(m_pKnowledgeBaseListWidget, 0, Qt::AlignCenter);
 #endif
 
+#ifdef ENABLE_CHATBOT
+    scrollLayout->addWidget(initChatBotWidget(), 0, Qt::AlignCenter);
+#endif
     scrollLayout->addWidget(initProxyWidget(), 0, Qt::AlignCenter);
     scrollLayout->addWidget(initAgreementWidget(), 0, Qt::AlignCenter);
 
@@ -472,6 +478,28 @@ DWidget *MgmtWindow::initMcpServerWidget()
     return m_pMcpServerWidget;
 }
 
+DWidget *MgmtWindow::initSkillWidget()
+{
+    m_pSkillServerWidget = new SkillServerWidget(this);
+
+    m_pSkillServerWidget->setFixedWidth(560);
+    m_pSkillServerWidget->setProperty("title", m_pSkillServerWidget->getTitleName());
+    m_pSkillServerWidget->setProperty("level", 1);
+    titles.insert(m_pSkillServerWidget->getTitleName(), m_pSkillServerWidget);
+    widgetList.push_back(m_pSkillServerWidget);
+    connect(this, &MgmtWindow::sigThirdPartyMcpAgree, m_pSkillServerWidget, &SkillServerWidget::sigThirdPartyMcpAgree);
+    connect(m_pSkillServerWidget, &SkillServerWidget::sigNavigateToMcpServerPage, this, [this]() {
+        if (m_pNavigationWidget) {
+            m_pNavigationWidget->onSelectGroup(m_pMcpServerWidget->getTitleName());
+        }
+    });
+    if (m_pMcpServerWidget) {
+        m_pSkillServerWidget->changeInstallStatus(m_pMcpServerWidget->getIsInstalled());
+        connect(m_pMcpServerWidget, &McpServerWidget::sigAgentInstallChanged, m_pSkillServerWidget, &SkillServerWidget::changeInstallStatus);
+    }
+    return m_pSkillServerWidget;
+}
+
 DWidget *MgmtWindow::initModelConfigWidget()
 {
     DWidget *modelConfigWidget = new DWidget(this);
@@ -520,6 +548,8 @@ void MgmtWindow::showEx(bool showAddllmPage, bool onlyUseAgreement, bool isFromA
         m_pModelListWidget->checkActivityExists();
     if (m_pMcpServerWidget)
         m_pMcpServerWidget->updateStatus();
+    if (m_pSkillServerWidget)
+        m_pSkillServerWidget->updateStatus();
     if (m_pWordWizardWidget)
         m_pWordWizardWidget->updateHiddenStatus(m_bIsWordWizardHidden);
     if (m_pAiBarWidget)
@@ -557,7 +587,7 @@ void MgmtWindow::onShowGetFreeAccountDialog()
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, DeepSeek_Uos_Free, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, UOS_FREE, freeAccount, status);
 
     if (1 == status) {
         qCWarning(logAIGUI) << "Free account activity has ended";
@@ -719,6 +749,17 @@ void MgmtWindow::loadDisabledApps()
             emit signalDisabledAppsUpdated(disabledApps);
         }
     }
+}
+
+DWidget *MgmtWindow::initChatBotWidget()
+{
+    m_pChatBotWidget = new ChatBotWidget(this);
+    m_pChatBotWidget->setFixedWidth(560);
+    m_pChatBotWidget->setProperty("title", m_pChatBotWidget->getTitleName());
+    m_pChatBotWidget->setProperty("level", 1);
+    titles.insert(m_pChatBotWidget->getTitleName(), m_pChatBotWidget);
+    widgetList.push_back(m_pChatBotWidget);
+    return m_pChatBotWidget;
 }
 
 void MgmtWindow::showFloatingMessage(const QString &message)

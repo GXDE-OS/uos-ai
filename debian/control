@@ -10,6 +10,7 @@ Build-Depends:
  libdocparser-dev,
  libjwt-dev,
  libssl-dev,
+ libyaml-cpp-dev,
  libfcitx5core-dev,
  libfcitx5utils-dev,
  fcitx5-modules-dev,
@@ -31,7 +32,9 @@ Build-Depends:
  wlr-protocols,
  wayland-protocols,
  libdtk6ocr-dev,
- libpoppler-qt6-dev
+ libpoppler-qt6-dev,
+ libprotobuf-dev,
+ protobuf-compiler
 
 Standards-Version: 4.5.0
 Package: uos-ai

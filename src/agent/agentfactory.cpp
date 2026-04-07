@@ -1,8 +1,9 @@
 #include "agentfactory.h"
 
 #include "appagent.h"
-#include "defaultagent.h"
+#include "defaultagentwithskills.h"
 #include "research/writingmasteragent.h"
+#include "chatbotagent.h"
 
 #include <QDebug>
 #include <QMutexLocker>
@@ -76,10 +77,10 @@ AgentFactory::AgentFactory(QObject *parent) : QObject(parent)
     }
 
     {
-        DefaultAgent dflt;
+        DefaultAgentWithSkills dflt;
 
-        if (registerAgent(dflt.name(), DefaultAgent::create)) {
-            qCInfo(logAgent) << "DefaultAgent registered during initialization.";
+        if (registerAgent(dflt.name(), DefaultAgentWithSkills::create)) {
+            qCInfo(logAgent) << "DefaultAgentWithSkills registered during initialization.";
         }
     }
 
@@ -87,6 +88,13 @@ AgentFactory::AgentFactory(QObject *parent) : QObject(parent)
         WritingMasterAgent writingMaster;
         if (registerAgent(writingMaster.name(), WritingMasterAgent::create)) {
             qCInfo(logAgent) << "WritingMasterAgent registered during initialization.";
+        }
+    }
+
+    {
+        uos_ai::chatbot::ChatbotAgent chatbotAgent;
+        if (registerAgent(chatbotAgent.name(), uos_ai::chatbot::ChatbotAgent::create)) {
+            qCInfo(logAgent) << "ChatbotAgent registered during initialization.";
         }
     }
 

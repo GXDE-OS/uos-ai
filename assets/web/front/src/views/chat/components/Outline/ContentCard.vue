@@ -152,12 +152,18 @@ const toggleDownloadCard = (event) => {
     // 点击事件过滤
     event.preventDefault(); // 阻止默认事件
     event.stopPropagation();
-    showDownloadCard.value = !showDownloadCard.value;
-    if (showDownloadCard.value) {
-        nextTick(() => {
-            calculateDownloadCardPosition(); // 显示时重新计算位置，确保使用最新的字体大小
-        });
+    if (store.IsEnableMcp) {
+        showDownloadCard.value = !showDownloadCard.value;
+        if (showDownloadCard.value) {
+            nextTick(() => {
+                calculateDownloadCardPosition(); // 显示时重新计算位置，确保使用最新的字体大小
+            });
+        }
+    } else {
+        // 直接下载markdown文件
+        handleSelectMode('md');
     }
+    
 };
 
 const mdEditorContent = ref({})

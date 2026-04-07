@@ -23,7 +23,6 @@ public:
 
 private:
     explicit LocalModelServer(QObject *parent = nullptr);
-    QDBusInterface *appStoreInterface = nullptr;
 
 signals:
     void localLLMStatusChanged(bool isExist);

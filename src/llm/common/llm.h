@@ -10,6 +10,7 @@
 #define PREDICT_PARAM_TEMPERATURE "temperature"  // predict temperature  default:1.0
 #define PREDICT_PARAM_SYSTEMROLE "system"        // prompt system role   default:""
 #define PREDICT_PARAM_THINKCHAIN "thinkChain"    // enable llm think     default:true
+#define PREDICT_PARAM_THINKINGMODE "thinkingMode"  // thinking mode param for API: "enabled" or "disabled"
 #define PREDICT_PARAM_ONLINESEARCH "OnlineSearch"    // enable Online search     default:false
 
 #define PREDICT_PARAM_INCREASEUSE "increaseUse"    // free account add use  default:false
@@ -18,6 +19,9 @@
 
 #define PREDICT_PARAM_MCPSERVERS "mcpServers"  // what mcp servers need to use.
 #define PREDICT_PARAM_MCPAGENT "mcpAgentId"
+
+// Skip AppSocketServer when the caller consumes chunks via chatTextChunkReceived signal directly
+#define PREDICT_PARAM_NOSOCKET "noSocket"
 
 class LLM : public QObject
 {

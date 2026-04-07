@@ -9,6 +9,8 @@
 #include <QMutexLocker>
 #include <QApplication>
 #include <QtConcurrent>
+#include <QProcess>
+#include <QCoreApplication>
 
 #include <QLoggingCategory>
 Q_DECLARE_LOGGING_CATEGORY(logUtils)
@@ -277,14 +279,22 @@ void AtspiDesktop::listenerUnRegister()
 void AtspiDesktop::run()
 {
 #ifdef AUTO_ENABLE_ACCESSIBLE
-    char cmdGsettings[128] = "gsettings set org.gnome.desktop.interface toolkit-accessibility true";
-    if(0 == system(cmdGsettings))
-    {
-        qCDebug(logUtils) << "exec:[gsettings set org.gnome.desktop.interface toolkit-accessibility true]success";
-    }
-    else
-    {
-        qCDebug(logUtils) << "exec gsettings failed";
+    // 使用 QProcess 替代 system()，避免命令注入风险
+    QProcess process;
+    process.setProgram("gsettings");
+    process.setArguments({"set", "org.gnome.desktop.interface", "toolkit-accessibility", "true"});
+    process.start();
+
+    if (process.waitForFinished(5000)) { // 5秒超时
+        if (process.exitCode() == 0) {
+            qCDebug(logUtils) << "exec:[gsettings set org.gnome.desktop.interface toolkit-accessibility true]success";
+        } else {
+            qCDebug(logUtils) << "exec gsettings failed with exit code:" << process.exitCode()
+                           << "Error:" << process.readAllStandardError();
+        }
+    } else {
+        qCDebug(logUtils) << "exec gsettings timed out or failed to start:"
+                         << process.errorString();
     }
 #endif
 

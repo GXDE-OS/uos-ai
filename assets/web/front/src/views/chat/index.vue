@@ -241,7 +241,7 @@
                             style="margin-top: 8px;margin-left: 10px;"/>
                         <!-- mcp开启标志 -->
                         <PromptTag v-show="(currentAssistant.type === store.AssistantType.UOS_AI || currentAssistant.id === 'PPT Assistant') && store.IsOpenMcpServer" 
-                            :promptTag="store.loadTranslations['MCP Server']"
+                            :promptTag="'MCP & Skills'"
                             :isMcpTag="true"
                             style="margin-top: 8px;margin-left: 10px;height: 24px;line-height: 24px;"/>
                     </div>
@@ -281,10 +281,10 @@
                                 <!-- 深度思考开关 -->
                                 <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
                                 :show-after="1000" :offset="2"
-                                :content="store.loadTranslations['DeepThink(R1)']">
+                                :content="store.loadTranslations['DeepThink']">
                                     <div v-show="showDeepThink" class="deep-think-btn" @click="deepThinkClick" :style="{'color': store.IsDeepThink ? 'var(--activityColor)' : 'var(--uosai-think-search-color)', 'width' : deepThinkWidth}">
                                         <SvgIcon icon="deep-think" :style="{'fill': store.IsDeepThink ?  'var(--activityColor)' : 'var(--uosai-think-search-color)', 'margin-right': isWindowMode ? '5px' : '0px'}"/>
-                                        <span v-show="isWindowMode">{{ store.loadTranslations['DeepThink(R1)'] }}</span>
+                                        <span v-show="isWindowMode">{{ store.loadTranslations['DeepThink'] }}</span>
                                     </div>
                                 </el-tooltip>
                                 <!-- 联网搜索开关 -->
@@ -316,25 +316,18 @@
                                 </div>
                             </el-tooltip>
                             <!-- 文档总结按钮 -->
-                            <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
-                                :show-after="1000" :offset="2"
-                                :content="inputFileList.length === 3 ? store.loadTranslations['You can upload up to 3 files or image'] : store.loadTranslations['Upload Files']"
-                                :class="{ 'disabled': (!((inputFileList.length === 3 && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT ) || recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant'))|| (currentAssistant.type === store.AssistantType.AI_WRITING_ASSISTANT && isShowGenContentBtn))}">
-                                <div class="file-btn btn"
-                                    ref="inputFilesIconRef"
-                                    v-show="(currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT || currentAssistant.id == 'PPT Assistant')"
-                                    :class="{ 'disabled': (((inputFileList.length === 3  && currentAssistant.type != store.AssistantType.AI_WRITING_ASSISTANT )|| recording || disabled || (currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant'))) || (currentAssistant.type === store.AssistantType.AI_WRITING_ASSISTANT && isShowGenContentBtn)}"
-                                    :style="{'margin-right': isWindowMode ? '15px' : '10px'}"
-                                    @mousedown="isClickingFileBtn = true"
-                                    @click="selectFile">
-                                    <SvgIcon icon="file" />
-                                </div>
-                            </el-tooltip>
-                            <InputFilesMenu
-                                ref="inputFilesMenuElRef"
-                                :target="inputFilesIconRef"
-                                :show="showInputFilesMenu"
-                                @select="handleSelectFiles"
+                            <FileButtonWithMenu
+                                ref="fileButtonWithMenuRef"
+                                :disabled="disabled || recording"
+                                :isWindowMode="isWindowMode"
+                                :inputFileListLength="inputFileList.length"
+                                :isShowGenContentBtn="isShowGenContentBtn"
+                                :currentAssistant="currentAssistant"
+                                :materialFilesLength="materialFiles.length"
+                                :outlineFilesLength="outlineFiles.length"
+                                v-show="(currentAssistant.type != store.AssistantType.PLUGIN_ASSISTANT || currentAssistant.id == 'PPT Assistant')"
+                                @selectFile="selectFile"
+                                @selectFiles="handleSelectFiles"
                             />
                             <!-- 语音输入按钮 -->
                             <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
@@ -415,6 +408,7 @@ import ConversionList from "./components/ConversionList.vue"
 import ConversionMode from "./components/ConversionMode.vue"
 import McpSetting from "./components/McpSetting.vue";
 import InputFilesMenu from "./components/InputFilesMenu.vue";
+import FileButtonWithMenu from "./components/FileButtonWithMenu.vue";
 import PrivateWelcomePage from "./components/PrivateWelcomePage.vue";
 import FunctionButtons from "./components/FunctionButtons.vue";
 import ShortcutTip from "./components/ShortcutTip.vue";
@@ -438,7 +432,6 @@ const isAllParsingStatusEnd = ref(false)  //所有文件解析状态结束
 const isDarkMode = ref(false)  //是否为深色主题
 const inputFileList = ref([]) // 输入框中文件列表
 const extensionFileList = ref([]) // 扩展文件列表,解析成功待发送
-const isClickingFileBtn = ref(false) // 标记是否正在点击文件上传按钮
 
 // 文件索引计数器，用于生成唯一的文件标识
 let fileIndexCounter = 0
@@ -628,7 +621,7 @@ const initChat = async () => {
     }
 
     // 判断当前是否已领取免费模型
-    const account = accountList.value.find(item => item.model === store.DeepSeek_Uos_Free)
+    const account = accountList.value.find(item => item.model === store.Uos_Free)
     if (account) {
         isGotDeepSeekUosFree.value = true
     } else {
@@ -640,6 +633,7 @@ const initChat = async () => {
 
     //查询是否启用mcp
     isEnableMcp.value = await Qrequest(chatQWeb.isEnableMcp);
+    store.IsEnableMcp = isEnableMcp.value
 
     //查询是否启用截图
     isEnableScreenshot.value = await Qrequest(chatQWeb.isEnableScreenshot);
@@ -677,7 +671,7 @@ const initChat = async () => {
 
     // 初始化知识库，指令，mcp的hover文案
     knowledgeBaseSwitchHoverContent.value = store.loadTranslations["After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base."]
-    mcpHoverContent.value = store.loadTranslations["MCP Server"]
+    mcpHoverContent.value = "MCP & Skills"
     instructionHoverContent.value = store.loadTranslations["Instruction"]
 
     // 解决输入框重新计算行高导致页面跳动问题
@@ -1231,18 +1225,6 @@ const selectFile = async (event) => {
     if(currentAssistant.type == store.AssistantType.PLUGIN_ASSISTANT && currentAssistant.id != 'PPT Assistant') return  //非UOS AI助手
     if(isShowGenContentBtn.value) return  //如果当前是生成内容按钮，不允许选择文件
 
-    // 如果当前是writing assistant，显示InputFilesMenu组件
-    if(currentAssistant.value.type === store.AssistantType.AI_WRITING_ASSISTANT) {
-        if (showInputFilesMenu.value) {
-            closeInputFilesMenu();
-        } else {
-            showInputFilesMenu.value = true;
-        }
-        // 重置标记
-        isClickingFileBtn.value = false
-        return;
-    }
-
     if(inputFileList.value.length === 3) return  //最多支持3个文件
     await Qrequest(chatQWeb.onDocSummarySelect)
 }
@@ -1372,8 +1354,8 @@ const isShowPromptBtn = ref(false)
 const currentAccountChanged  = async (accent) => {
     // mcp开启下切换到非官方模型，tips提示.
     // 开启mcp状态下或当前为运维智能体，模型变化，上一个模型为官方模型，当前不为官方模型
-    if (store.IsOpenMcpServer && accent && accent.model != store.DeepSeek_Uos_Free && store.LastModel == store.DeepSeek_Uos_Free) {
-        handleShowTip(store.loadTranslations["It is recommended to use the official model \"DeepSeek-Trial Account\""])
+    if (store.IsOpenMcpServer && accent && accent.model != store.Uos_Free && store.LastModel == store.Uos_Free) {
+        handleShowTip(store.loadTranslations["It is recommended to use the official model \"Intelligent Routing\""])
     }
 
     // 切换完成，更新上一个模型
@@ -1411,6 +1393,17 @@ const currentAccountChanged  = async (accent) => {
 
     if (showPromptTag.value && !promptNameLists.includes(promptTag.value)) {
         showPromptTag.value = false
+    }
+
+    // mcp开启下切换到非官方模型，tips提示.
+    // 开启mcp状态下，模型变化，上一个模型为官方模型，当前不为官方模型
+    if (store.IsOpenMcpServer && accent && accent.model != store.Uos_Free && store.LastModel == store.Uos_Free) {
+        handleShowTip(store.loadTranslations["It is recommended to use the official model \"Intelligent Routing\""])
+    }
+
+    // 切换完成，更新上一个模型
+    if (accent) {
+        store.LastModel = accent.model
     }
 
     
@@ -1498,7 +1491,7 @@ const sigSelectOnePrompt = async (promptInfo_) => {
 
     // 修改知识库，指令，mcp的hover文案
     knowledgeBaseSwitchHoverContent.value = store.loadTranslations["Knowledge base unavailable when any command or MCP is selected."]
-    mcpHoverContent.value = store.loadTranslations["MCP Server"]
+    mcpHoverContent.value = "MCP & Skills"
     instructionHoverContent.value = store.loadTranslations["Instruction"]
 
 }
@@ -1560,8 +1553,8 @@ const handleInputMouseUp = (event) => {
     event.stopPropagation();
 
     // 如果正在点击文件上传按钮，不要关闭菜单
-    if (!isClickingFileBtn.value && showInputFilesMenu.value) {
-        closeInputFilesMenu()
+    if (fileButtonWithMenuRef.value && !fileButtonWithMenuRef.value.isClickingFileBtn) {
+        fileButtonWithMenuRef.value.closeMenu()
     }
 }
 
@@ -1595,8 +1588,8 @@ const handleMainMouseUp = (event) => {
         closeMcpSetting()
     }
 
-    if (showInputFilesMenu.value && !isFocus.value) {
-        closeInputFilesMenu()
+    if (fileButtonWithMenuRef.value && !isFocus.value) {
+        fileButtonWithMenuRef.value.closeMenu()
     }
 };
 
@@ -1627,8 +1620,8 @@ const handleInputFocus = (event) => {
     }
 
     // 如果正在点击文件上传按钮，不要关闭菜单
-    if (!isClickingFileBtn.value && showInputFilesMenu.value) {
-        closeInputFilesMenu()
+    if (fileButtonWithMenuRef.value && !fileButtonWithMenuRef.value.isClickingFileBtn) {
+        fileButtonWithMenuRef.value.closeMenu()
     }
 };
 const handleInputNoFocus = (event) => {
@@ -1711,9 +1704,9 @@ const queryMcpServerList = async () => {
         }
         store.IsInstallUOSAiAgent = true
         store.IsOpenMcpServer = !store.IsOpenMcpServer
-        if (store.IsOpenMcpServer && currentAccount.value.model != store.DeepSeek_Uos_Free && !store.IsShowNonOfficialModelTip) {
+        if (store.IsOpenMcpServer && currentAccount.value.model != store.Uos_Free && !store.IsShowNonOfficialModelTip) {
             store.IsShowNonOfficialModelTip = true
-            handleShowTip(store.loadTranslations["It is recommended to use the official model \"DeepSeek-Trial Account\""])
+            handleShowTip(store.loadTranslations["It is recommended to use the official model \"Intelligent Routing\""])
         }
 
         if (store.IsOpenMcpServer) {
@@ -1745,7 +1738,7 @@ const handleMcpCheckChange = (isChecked) => {
 
     // 修改知识库，指令，mcp的hover文案
     knowledgeBaseSwitchHoverContent.value = store.loadTranslations["Knowledge base unavailable when any command or MCP is selected."]
-    mcpHoverContent.value = store.loadTranslations["MCP Server"]
+    mcpHoverContent.value = "MCP & Skills"
     instructionHoverContent.value = store.loadTranslations["Instruction"]
 }
 
@@ -1759,7 +1752,7 @@ const clickKnowledgeBaseIcon = (() => {
     store.IsOpenKnowledgeBase = !store.IsOpenKnowledgeBase
     knowledgeBaseSwitchHoverContent.value = store.loadTranslations["After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base."]
     if (!store.IsOpenKnowledgeBase) {
-        mcpHoverContent.value = store.loadTranslations["MCP Server"]
+        mcpHoverContent.value = "MCP & Skills"
         instructionHoverContent.value = store.loadTranslations["Instruction"]
         return  // 关闭知识库不需要判断插件和知识库是否存在
     }
@@ -1797,10 +1790,10 @@ const docParsingPlaceHolder = ref('')
 const placeHolder = computed(() => {
     // 开启mcp
     if (store.IsOpenMcpServer && store.IsInstallUOSAiAgent && currentAssistant.value.type === store.AssistantType.UOS_AI) {
-        let placeHolder = store.loadTranslations["Enter MCP Server command, e.g., \"Change system to dark mode for me\""]
-        if (currentAccount.value.model !== store.DeepSeek_Uos_Free) {
-            // 如果当前助手是UOS_AI，且开启了MCP服务器，且当前模型不是DeepSeek-Trial Account，则提示切换到正式版模型
-            placeHolder += "\n* " + store.loadTranslations["For MCP Server, switch to officially released model \"DeepSeek-Trial Account\""]
+        let placeHolder = store.loadTranslations["Enter MCP & Skills Server command, e.g., \"Change system to dark mode for me\""]
+        if (currentAccount.value.model !== store.Uos_Free) {
+            // 如果当前助手是UOS_AI，且开启了MCP服务器，且当前模型不是智能调度，则提示切换到正式版模型
+            placeHolder += "\n* " + store.loadTranslations["For MCP & Skills Server, it is recommended to switch to the official model \"Intelligent Routing\""]
         }
         return placeHolder
     }
@@ -2342,15 +2335,18 @@ const guideConfigStack = [
                         await nextTick()
 
                         // 4. 打开inputFilesMenu
-                        showInputFilesMenu.value = true
+                        // 通过点击按钮来打开菜单
+                        if (fileButtonWithMenuRef.value) {
+                            fileButtonWithMenuRef.value.btnRef?.click()
+                        }
 
                         // 5. 等待菜单渲染完成
                         await nextTick()
 
                         // 6. 获取第二步的目标元素
-                        const inputFilesIconElement = inputFilesIconRef.value
-                        const inputFilesMenuElement = inputFilesMenuElRef.value?.$el ||
-                            (inputFilesMenuElRef.value && inputFilesMenuElRef.value.querySelector('.input-files-menu'))
+                        const inputFilesIconElement = fileButtonWithMenuRef.value?.btnRef
+                        const inputFilesMenuElement = fileButtonWithMenuRef.value?.inputFilesMenuRef?.$el ||
+                            (fileButtonWithMenuRef.value?.inputFilesMenuRef && fileButtonWithMenuRef.value.inputFilesMenuRef.querySelector('.input-files-menu'))
 
                         // 7. 更新第二步的targets
                         if (guideConfig.value.steps[1]) {
@@ -2372,7 +2368,7 @@ const guideConfigStack = [
                     arrowDisplay: 'none',
                     isAllowClickOnTarget: false,
                     onActiveClick: () => {
-                        showInputFilesMenu.value = false
+                        fileButtonWithMenuRef.value?.closeMenu()
                         onGuideClose()
                     }
                 }
@@ -2541,7 +2537,6 @@ const guideConfig = ref({
 
 // Guide control state variables
 const guideActiveAssistantId = ref(null)
-const inputFilesMenuElRef = ref(null)
 
 const onGuideClose = (isTryClicked) => {
     // isTryClicked 在新逻辑中不再由 GuideOverlay 直接提供，
@@ -2558,7 +2553,7 @@ const onGuideClose = (isTryClicked) => {
     }
 
     // 关闭inputFilesMenu
-    showInputFilesMenu.value = false
+    fileButtonWithMenuRef.value?.closeMenu()
 
     // 把目标元素的层级设置为1
     mcpServerIconRef.value?.style.setProperty('z-index', '1')
@@ -3037,7 +3032,7 @@ const retryRequest = async () => {
 
 // 是否显示深度思考开关
 const showDeepThink = computed(() => {
-    return currentAccount.value.model == store.DeepSeek_Uos_Free && (!store.IsOpenMcpServer || !store.IsInstallUOSAiAgent) && (currentAssistant.value.type !== store.AssistantType.AI_WRITING_ASSISTANT)
+    return currentAccount.value.model == store.Uos_Free && (!store.IsOpenMcpServer || !store.IsInstallUOSAiAgent) && (currentAssistant.value.type !== store.AssistantType.AI_WRITING_ASSISTANT)
 })
 
 // 是否显示联网搜索开关
@@ -3047,7 +3042,7 @@ const showSearchOnline = computed(() => {
         return true
     }
 
-    return currentAccount.value.model == store.DeepSeek_Uos_Free && (!store.IsOpenMcpServer || !store.IsInstallUOSAiAgent)
+    return currentAccount.value.model == store.Uos_Free && (!store.IsOpenMcpServer || !store.IsInstallUOSAiAgent)
 })
 // 深度思考
 const deepThinkClick = async () => {
@@ -4107,11 +4102,7 @@ const sigShowTip = async (tip) => {
 
 // }
 
-const inputFilesIconRef = ref(null)
-const showInputFilesMenu = ref(false);
-const closeInputFilesMenu = () => {
-    showInputFilesMenu.value = false
-}
+const fileButtonWithMenuRef = ref(null)
 const handleSelectFiles = (category) => {
     // 根据category处理选择逻辑
     if (category === store.DocFileCategory.LocalMaterial) {
@@ -4129,7 +4120,6 @@ const handleSelectFiles = (category) => {
         // 处理文件大纲选择
         Qrequest(chatQWeb.onDocSummaryForOfficeSelect, store.DocFileCategory.FileOutline)
     }
-    showInputFilesMenu.value = false
 }
 
 function handleKeyDown(event) {
@@ -4207,7 +4197,7 @@ const responseAIFunObj = {
 // 窗口失去焦点时，关闭所有弹窗
 const handleWindowBlur = () => {
     showLocalMaterialsList.value = false;
-    showInputFilesMenu.value = false;
+    fileButtonWithMenuRef.value?.closeMenu();
     if (showMcpSetting.value) {
         showMcpSetting.value = false;
     }

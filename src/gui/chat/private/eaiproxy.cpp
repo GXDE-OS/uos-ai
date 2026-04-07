@@ -1098,7 +1098,7 @@ QJsonObject EAiProxy::loadTranslations()
 
     // 2.6需求
     translations["Search"] = tr("Search");
-    translations["DeepThink(R1)"] = tr("DeepThink(R1)");
+    translations["DeepThink"] = tr("DeepThink");
     translations["Thinking has stopped"] = tr("Thinking has stopped");
     translations["Back to bottom"] = tr("Back to bottom");
     translations["Deeply thought (%1 seconds)"] = tr("Deeply thought (%1 seconds)");
@@ -1134,15 +1134,15 @@ QJsonObject EAiProxy::loadTranslations()
     translations["Add Mcp Server"] = tr("Add Mcp Server");  //添加MCP服务器
     translations["Add Server"] = tr("Add Server");
     translations["Add failed! Error reason:"] = tr("Add failed! Error reason:");
-    translations["MCP environment missing. Please install 【UOS AI Agent】"] = tr("MCP environment missing. Please install 【UOS AI Agent】");
+    translations["MCP & Skills environment missing. Please install 【UOS AI Agent】"] = tr("MCP & Skills environment missing. Please install 【UOS AI Agent】");
     translations["Calling"] = tr("Calling");
     translations["Completed"] = tr("Completed");
     translations["Call Failed"] = tr("Call Failed");
     translations["Cancelled"] = tr("Cancelled");
     translations["params"] = tr("params");
     translations["result"] = tr("result");
-    translations["For MCP Server, switch to officially released model \"DeepSeek-Trial Account\""] = tr("For MCP Server, switch to officially released model \"DeepSeek-Trial Account\"");
-    translations["Enter MCP Server command, e.g., \"Change system to dark mode for me\""] = tr("Enter MCP Server command, e.g., \"Change system to dark mode for me\"");
+    translations["For MCP & Skills Server, it is recommended to switch to the official model \"Intelligent Routing\""] = tr("For MCP & Skills Server, it is recommended to switch to the official model \"Intelligent Routing\"");
+    translations["Enter MCP & Skills Server command, e.g., \"Change system to dark mode for me\""] = tr("Enter MCP & Skills Server command, e.g., \"Change system to dark mode for me\"");
     translations["Agent server is not available"] = tr("Agent server is not available");  //智能体服务不可用 11000
     translations["Agent server exception"] = tr("Agent server exception");  //智能体服务异常 11001
     translations["MCP server is not available"] = tr("MCP server is not available");  //MCP服务不可用 11100
@@ -1198,7 +1198,7 @@ QJsonObject EAiProxy::loadTranslations()
     translations["Disable MCP"] = tr("Disable MCP");
 
     // 2.12需求
-    translations["It is recommended to use the official model \"DeepSeek-Trial Account\""] = tr("It is recommended to use the official model \"DeepSeek-Trial Account\"");  // 推荐使用官方模型"DeepSeek-试用账号"
+    translations["It is recommended to use the official model \"Intelligent Routing\""] = tr("It is recommended to use the official model \"Intelligent Routing\"");  // 推荐使用官方模型"智能调度"
     translations["Quick Open"] = tr("Quick Open");  // 快速唤起
     translations["MCP Server Upgrade to Automatic Mode"] = tr("MCP Server Upgrade to Automatic Mode");  // MCP服务升级自动模式
     translations["MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click "] = tr("MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click ");  //MCP服务升级自动模式，仅需打开  
@@ -1207,7 +1207,7 @@ QJsonObject EAiProxy::loadTranslations()
     translations["To add more MCP Server, go to Settings > MCP Server."] = tr("To add more MCP Server, go to Settings > MCP Server.");  // 如需添加更多MCP服务，请到"设置-MCP服务"中添加。
     translations["Got it"] = tr("Got it");  // 知道了
     translations["Complimentary Model Credits"] = tr("Complimentary Model Credits");  //  【福利】模型额度赠送
-    translations["The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free."] = tr("The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.");  // 当前系统免费模型DeepSeek-试用账号，将为你在每月1日自动赠送200次文本对话额度，当月有效。
+    translations["The current system offers the \"Intelligent Routing\" model, which automatically refreshes your free quota at the beginning of each month, allowing you to use it worry-free."] = tr("The current system offers the \"Intelligent Routing\" model, which automatically refreshes your free quota at the beginning of each month, allowing you to use it worry-free.");  // 当前系统赠送的"智能调度"模型，每月初自动刷新免费额度，让您畅用无忧。
     translations["Claim Credits"] = tr("Claim Credits");  // 领取额度
     translations["Get a free account"] = tr("Get a free account");  // 领取免费账号
     translations["Claim Free Credits"] = tr("Claim Free Credits");  // 领取免费额度
@@ -1276,6 +1276,11 @@ QJsonObject EAiProxy::loadTranslations()
     translations["Unordered list"] = tr("Unordered list");  // 无序列表
     translations["Ordered list"] = tr("Ordered list");  // 有序列表
     translations["Digital Human Unavailable"] = tr("Digital Human Unavailable");  // 数字人暂不可用
+
+    // skills
+    translations["Enable MCP & Skills"] = tr("Enable MCP & Skills");  // 开启 MCP & Skills
+    translations["Disable MCP & Skills"] = tr("Disable MCP & Skills");  // 关闭 MCP & Skills
+    translations["Configure MCP & Skills"] = tr("Configure MCP & Skills");  // 配置 MCP & Skills
 
     return translations;
 }

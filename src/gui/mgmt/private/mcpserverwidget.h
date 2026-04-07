@@ -25,6 +25,7 @@ public:
     ~McpServerWidget();
     QString getTitleName();
     void updateStatus();
+    bool getIsInstalled();
 
 public Q_SLOTS:
     void beginTimer();
@@ -54,6 +55,7 @@ private:
     bool m_isInstalled = false;
 signals:
     void sigThirdPartyMcpAgree();
+    void sigAgentInstallChanged(bool isInstalled);
 
 };
 }

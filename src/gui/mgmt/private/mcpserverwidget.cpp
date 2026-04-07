@@ -113,11 +113,17 @@ void McpServerWidget::updateStatus()
         m_isInstalled = newInstallStatus;
         LocalModelServer::getInstance().localModelStatusChanged(MCP_APP, m_isInstalled);
         changeInstallStatus();
+        emit sigAgentInstallChanged(m_isInstalled);
         return;
     }
 
     if (m_pServerItem)
         m_pServerItem->checkUpdateStatus(m_isInstalled);
+}
+
+bool McpServerWidget::getIsInstalled()
+{
+    return m_isInstalled;
 }
 
 void McpServerWidget::beginTimer()

@@ -1,5 +1,6 @@
 #include "deepseekcompletion.h"
 #include "servercodetranslation.h"
+#include "llm.h"
 
 #include <QLoggingCategory>
 
@@ -11,7 +12,7 @@ DeepSeekCompletion::DeepSeekCompletion(const QString &url, const AccountProxy &a
     : BaseNetWork(account)
     , rootUrl(url)
 {
-
+    setTimeOut(35000);
 }
 
 QPair<int, QString> DeepSeekCompletion::create(const QString &model, DeepSeekConversation &conversation, const QVariantHash &params)
@@ -31,6 +32,11 @@ QPair<int, QString> DeepSeekCompletion::create(const QString &model, DeepSeekCon
     dataObject.insert("model", model);
     if (params.contains("max_tokens"))
         dataObject.insert("max_tokens", params.value("max_tokens").toInt());
+    if (params.contains(PREDICT_PARAM_THINKINGMODE)) {
+        QJsonObject thinking;
+        thinking["type"] = params.value(PREDICT_PARAM_THINKINGMODE).toString();
+        dataObject.insert("thinking", thinking);
+    }
 
     auto baseresult = request(QUrl(rootUrl), dataObject, nullptr);
 

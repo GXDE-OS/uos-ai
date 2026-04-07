@@ -53,11 +53,21 @@ pkg_check_modules(GIO_LIB REQUIRED
         glib-2.0
 )
 
+# yaml-cpp for parsing YAML front matter
+find_package(yaml-cpp REQUIRED)
+
+find_package(Protobuf REQUIRED)
+protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS
+    ${CMAKE_CURRENT_SOURCE_DIR}/chatbot/proto/pbbp2.proto
+)
+include_directories(${CMAKE_CURRENT_BINARY_DIR})  # generated pbbp2.pb.h
+
 if (COMPILE_ON_V25)
     pkg_check_modules(WL_PROTOCOLS REQUIRED IMPORTED_TARGET wayland-protocols)
     pkg_get_variable(WL_PROTOCOLS_DATADIR wayland-protocols pkgdatadir)
     add_executable(${PROJECT_NAME}
         ${EXE_FILES}
+        ${PROTO_SRCS}
         ../treeland/ddeshellwayland.h
         ../treeland/ddeshellwayland.cpp
         ../treeland/datacontrolmanagerv1.h
@@ -87,6 +97,7 @@ if (COMPILE_ON_V25)
 elseif(COMPILE_ON_V20)
     add_executable(${PROJECT_NAME}
         ${EXE_FILES}
+        ${PROTO_SRCS}
         ../wayland/waylandclipboard.h
         ../wayland/waylandclipboard.cpp
         ../wayland/waylandeventmonitor.h
@@ -95,6 +106,7 @@ elseif(COMPILE_ON_V20)
 else()
     add_executable(${PROJECT_NAME}
         ${EXE_FILES}
+        ${PROTO_SRCS}
     )
 endif()
 
@@ -131,6 +143,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/tools
     ${CMAKE_CURRENT_SOURCE_DIR}/wordwizard
     ${CMAKE_CURRENT_SOURCE_DIR}/audiowizard
+    ${CMAKE_CURRENT_SOURCE_DIR}/chatbot
     ${AtSpi_INCLUDE_DIRS}
     ${Gobject_INCLUDE_DIRS}
     ${GIO_LIB_INCLUDE_DIRS}
@@ -186,7 +199,9 @@ target_link_libraries(${PROJECT_NAME}
     qmarkdowntextedit
     ${JWT_LIBRARIES}
     PkgConfig::POPPLER
+    yaml-cpp
     pthread
+    ${Protobuf_LIBRARIES}
 )
 
 if (COMPILE_ON_V25)
@@ -227,6 +242,13 @@ set(AUDIO_DESTINATION "/usr/lib/${PROJECT_NAME}/audio")
 add_definitions(-DAUDIOPATH="${AUDIO_DESTINATION}")
 file(GLOB AUDIO_FILES "${CMAKE_SOURCE_DIR}/assets/audio/*")
 install(FILES ${AUDIO_FILES} DESTINATION ${AUDIO_DESTINATION})
+
+# Install default skills
+set(SKILLS_DEFAULT_DESTINATION "/usr/lib/${PROJECT_NAME}/skills-default")
+add_definitions(-DUOS_AI_SKILLS_DEFAULT="${SKILLS_DEFAULT_DESTINATION}")
+install(DIRECTORY "${CMAKE_SOURCE_DIR}/assets/skills-default/"
+    DESTINATION ${SKILLS_DEFAULT_DESTINATION}
+    PATTERN ".git*" EXCLUDE)
 
 # install desktop
 # Configure desktop file based on OS version (different icons for v20 and v25)

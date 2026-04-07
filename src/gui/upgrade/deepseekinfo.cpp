@@ -116,7 +116,7 @@ void DeepSeekInfo::initUI()
 
     m_pSpacer = new QSpacerItem(1, 30, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
-    m_pExplainLabel = new ThemedLable(tr("After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek"), this);
+    m_pExplainLabel = new ThemedLable(tr("After claiming, the originally gifted models will be replaced by the \"Intelligent Routing\" model"), this);
     m_pExplainLabel->setPaletteColor(QPalette::Text, DPalette::TextTitle, 0.4);
     m_pExplainLabel->setFixedWidth(320);
     m_pExplainLabel->setAlignment(Qt::AlignCenter);
@@ -181,12 +181,15 @@ void DeepSeekInfo::checkActivity()
     bool dpsk = false;
     for (auto tmp : DbWrapper::localDbWrapper().queryLlmList()) {
         if (tmp.type == FREE_NORMAL) {
-            if (tmp.model >= SPARKDESK || tmp.model <= WXQF_ERNIE_Bot_4) {
-                enrie = tmp;
-                qCDebug(logAIGUI) << "Found existing Ernie model:" << tmp.id;
-            } else if (tmp.model == DeepSeek_Uos_Free) {
+            if (tmp.model == UOS_FREE) {
                 dpsk = true;
-                qCDebug(logAIGUI) << "DeepSeek model already exists";
+                qCDebug(logAIGUI) << "UOS_FREE model already exists:" << tmp.id;
+            } else if (tmp.model == DeepSeek_Uos_Free
+                       || (tmp.model >= SPARKDESK && tmp.model <= WXQF_ERNIE_Bot_4)) {
+                // 兼容升级：旧免费模型（SPARKDESK/ERNIE/DeepSeek_Uos_Free）均通过
+                // getAccount() 流程迁移到 UOS_FREE
+                enrie = tmp;
+                qCDebug(logAIGUI) << "Found old free model, pending migration:" << tmp.id << tmp.model;
             }
         }
     }
@@ -253,6 +256,46 @@ bool DeepSeekInfo::checkAndShow()
     return true;
 }
 
+void DeepSeekInfo::migrateOldFreeModelAsync()
+{
+    LLMServerProxy oldModel;
+
+    for (auto tmp : DbWrapper::localDbWrapper().queryLlmList()) {
+        if (tmp.type == FREE_NORMAL) {
+            if (tmp.model == UOS_FREE)
+                return; // 已有新模型，无需迁移
+            else {
+                oldModel = tmp;
+            }
+        }
+    }
+
+    if (oldModel.id.isEmpty())
+        return;
+
+    qCInfo(logAIGUI) << "Old free model detected, starting silent migration:" << oldModel.id << oldModel.model;
+
+    QtConcurrent::run([oldModel]() {
+        UosFreeAccount freeAccount;
+        int status = -1;
+        auto error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, UOS_FREE, freeAccount, status);
+
+        if (error != QNetworkReply::NoError || freeAccount.llmModel != UOS_FREE) {
+            qCWarning(logAIGUI) << "Silent migration failed, will retry on next launch. error:" << error;
+            return;
+        }
+
+        LLMServerProxy updated = oldModel;
+        updated.model = UOS_FREE;
+        updated.name = freeLlmName();
+        updated.account.apiKey = freeAccount.appkey;
+
+        DbWrapper::localDbWrapper().updateLlm(updated);
+
+        qCInfo(logAIGUI) << "Silent migration to UOS_FREE completed successfully";
+    });
+}
+
 bool DeepSeekInfo::needGuide()
 {
     auto cur = DbWrapper::localDbWrapper().getGuideKey();
@@ -271,7 +314,7 @@ void DeepSeekInfo::getAccount()
             UosFreeAccount freeAccount;
 
             int status = -1;
-            auto error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, DeepSeek_Uos_Free, freeAccount, status);
+            auto error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, UOS_FREE, freeAccount, status);
             if (status == 1) { // 活动结束
                 qCWarning(logAIGUI) << "Free account activity has ended";
                 return 1;
@@ -280,8 +323,8 @@ void DeepSeekInfo::getAccount()
                 qCWarning(logAIGUI) << "Network error while getting free account:" << error;
                 return -1;
             }
-            if (freeAccount.llmModel != DeepSeek_Uos_Free) {
-                qCCritical(logAIGUI) << "getFreeAccount error: return model type" << freeAccount.llmModel << "need" << DeepSeek_Uos_Free;
+            if (freeAccount.llmModel != UOS_FREE) {
+                qCCritical(logAIGUI) << "getFreeAccount error: return model type" << freeAccount.llmModel << "need" << UOS_FREE;
                 return 2;
             }
             
@@ -290,9 +333,9 @@ void DeepSeekInfo::getAccount()
             LLMServerProxy tmp;
             tmp.id = freeAccount.appkey;
             tmp.type = FREE_NORMAL;
-            tmp.name = LLMServerProxy::llmName(DeepSeek_Uos_Free) + "-" + tr("Trial Account");
+            tmp.name = freeLlmName();
             tmp.account.apiKey = freeAccount.appkey;
-            tmp.model = DeepSeek_Uos_Free;
+            tmp.model = UOS_FREE;
 
             if (!enrie.id.isEmpty()) {
                 qCInfo(logAIGUI) << "Removing old Ernie model:" << enrie.id;
@@ -461,23 +504,23 @@ void DeepSeekInfo::changeIntroduceText(int type)
     QVBoxLayout *freeLayout = qobject_cast<QVBoxLayout*>(m_pFreeWidget->layout());
 
     if (status == ReceivedStatus::ACTIVITY_OVER) {
-        m_pFirstIntroduce->setText(tr("UOS AI has been fully integrated into DeepSeek"));
+        m_pFirstIntroduce->setText(tr("UOS AI has fully integrated the \"Intelligent Routing\" model capability"));
         m_pSecondIntroduce->setText(tr("The free account activity has ended."));
         freeLayout->addSpacerItem(m_pSpacer);
     } else if (status == ReceivedStatus::CHECK_FAIL) {
-        m_pFirstIntroduce->setText(tr("DeepSeek account claim failed!"));
+        m_pFirstIntroduce->setText(tr("Failed to claim the model quota!"));
         m_pSecondIntroduce->setText(tr("Please check the network and try again later！"));
         freeLayout->addSpacerItem(m_pSpacer);
     } else if (status == ReceivedStatus::RECEIVE_SUCCEED) {
-        m_pFirstIntroduce->setText(tr("DeepSeek account successfully claimed!"));
+        m_pFirstIntroduce->setText(tr("Model quota successfully claimed!"));
         m_pSecondIntroduce->setText(tr("Come and experience it!"));
         freeLayout->addSpacerItem(m_pSpacer);
     } else if (status == ReceivedStatus::RECEIVE_FAIL) {
-        m_pFirstIntroduce->setText(tr("DeepSeek account claim failed!"));
+        m_pFirstIntroduce->setText(tr("Failed to claim the model quota!"));
         m_pSecondIntroduce->setText(tr("Please check the network and try again or manually claim in UOS AI settings later"));
         freeLayout->removeItem(m_pSpacer);
     } else {
-        m_pFirstIntroduce->setText(tr("UOS AI has been fully integrated into DeepSeek"));
+        m_pFirstIntroduce->setText(tr("UOS AI has fully integrated the \"Intelligent Routing\" model capability"));
         m_pSecondIntroduce->setText(tr("Come and claim your account!"));
         freeLayout->removeItem(m_pSpacer);
     }
