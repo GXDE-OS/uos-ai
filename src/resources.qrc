@@ -124,6 +124,8 @@
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_edit_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_edit_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_delete_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_delete_16px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_delete_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_delete_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/dark/icons/chatbot-settings_16px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/chatbot-settings_16px.svg/normal.svg</file>
+        <file alias="icons/deepin/builtin/light/icons/chatbot-settings_16px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/chatbot-settings_16px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/light/icons/uos-ai-assistant_hello_128px.svg/normal.svg">../assets/icons/deepin/builtin/light/icons/uos-ai-assistant_hello_128px.svg/normal.svg</file>
         <file alias="icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg">../assets/icons/deepin/builtin/dark/icons/uos-ai-assistant_hello_en_128px.svg/normal.svg</file>

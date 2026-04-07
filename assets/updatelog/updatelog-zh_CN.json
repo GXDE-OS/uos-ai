@@ -2,7 +2,7 @@
     {
         "version": "V2.13",
         "date-for-v20": "2026-03-05",
-        "date-for-v25": "2026-02-14",
+        "date-for-v25": "2026-03-10",
         "items": [
             {
                 "type": "new",
@@ -11,6 +11,22 @@
             {
                 "type": "improvement",
                 "description": "随航视觉优化：图标与工具栏样式微调。"
+            },
+            {
+                "type": "new",
+                "description": "skill导入支持 zip、skill 压缩包格式。"
+            },
+            {
+                "type": "new",
+                "description": "优化 skill 导入成功 / 失败提示信息。"
+            },
+            {
+                "type": "new",
+                "description": "内置支持创建技能和查找技能。"
+            },
+            {
+                "type": "new",
+                "description": "默认模型升级为“智能调度”，动态提供deepseek‑v3.2、GLM‑4.7模型。"
             }
         ]
     },

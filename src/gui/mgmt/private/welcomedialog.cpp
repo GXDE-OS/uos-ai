@@ -265,7 +265,7 @@ void WelcomeDialog::onGetFreeAccount()
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, DeepSeek_Uos_Free, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, UOS_FREE, freeAccount, status);
 
     m_pFreeAccount->setDisabled(false);
     if (QNetworkReply::NoError == error) {
@@ -277,7 +277,7 @@ void WelcomeDialog::onGetFreeAccount()
         llm.id = freeAccount.appkey;
         llm.model = static_cast<LLMChatModel>(freeAccount.llmModel);
         llm.url = freeAccount.modelUrl;
-        llm.name = LLMServerProxy::llmName(llm.model, !llm.url.isEmpty()) + "-" + tr("Trial Account");
+        llm.name = freeLlmName();
         AccountProxy accountProxy;
         SocketProxy socketProxy;
         socketProxy.socketProxyType = SocketProxyType::SYSTEM_PROXY;

@@ -15,15 +15,12 @@ Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 LocalModelServer::LocalModelServer(QObject *parent) : QObject(parent)
 {
-    appStoreInterface = new QDBusInterface(NM_SERVICE,
-                                   NM_PATH,
-                                   NM_INTERFACE,
-                                   QDBusConnection::sessionBus());
+
 }
 
 LocalModelServer::~LocalModelServer()
 {
-    delete appStoreInterface;
+
 }
 
 LocalModelServer &LocalModelServer::getInstance()
@@ -34,7 +31,17 @@ LocalModelServer &LocalModelServer::getInstance()
 
 void LocalModelServer::openInstallWidget(const QString &appname)
 {
-    QDBusMessage reply = appStoreInterface->call("openBusinessUri", QVariant::fromValue(QString("app_detail_info/%1").arg(appname)));
+    auto con = QDBusConnection::sessionBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(NM_SERVICE, NM_PATH,
+                                   NM_INTERFACE, "openBusinessUri");
+
+    QVariantList args;
+    args << QVariant::fromValue(QString("app_detail_info/%1").arg(appname));
+    msg.setArguments(args);
+
+    con.asyncCall(msg);
+
+    QDBusMessage reply = con.call(msg);
     if (reply.type() == QDBusMessage::ErrorMessage) {
         qCWarning(logDBus) << "Failed to open install widget:" << reply.errorMessage();
     }
@@ -42,7 +49,15 @@ void LocalModelServer::openInstallWidget(const QString &appname)
 
 void LocalModelServer::openManagerWidget()
 {
-    QDBusMessage reply = appStoreInterface->call("openBusinessUri", QVariant::fromValue(QString("tab/manager")));
+    auto con = QDBusConnection::sessionBus();
+    QDBusMessage msg = QDBusMessage::createMethodCall(NM_SERVICE, NM_PATH,
+                                   NM_INTERFACE, "openBusinessUri");
+
+    QVariantList args;
+    args << QVariant::fromValue(QString("tab/manager"));
+    msg.setArguments(args);
+
+    QDBusMessage reply = con.call(msg);
     if (reply.type() == QDBusMessage::ErrorMessage) {
         qCWarning(logDBus) << "Failed to open manager widget:" << reply.errorMessage();
     }

@@ -183,6 +183,13 @@ QJsonObject DeepResearchAgent::processRequest(const QJsonObject &question, const
     QString userPrompt = QString("Current date: %1\nUser task: %2\n\nOutline:\n%3").arg(currentDate, m_userTask, outline);
     if (!uploadFiles.isEmpty()) {
         userPrompt = userPrompt + QString("\n\nUpload files: %1").arg(uploadFiles.join("\n"));
+    } else {
+        for (int i = 0; i < m_tools.size(); ++i) {
+            if (m_tools.at(i)["name"].toString() == "parse_upload_file") {
+                m_tools.removeAt(i);
+                break;
+            }
+        }
     }
 
     QJsonObject ques;
@@ -209,6 +216,10 @@ QJsonObject DeepResearchAgent::processRequest(const QJsonObject &question, const
         }
     }
 
+    if (m_tools.size() == 1 && m_tools.first()["name"] == "research_finish") {
+        m_tools = QJsonArray();
+    }
+
     response = LlmAgent::processRequest(ques, history, params);
     m_tools = originalTools;
 
@@ -216,14 +227,14 @@ QJsonObject DeepResearchAgent::processRequest(const QJsonObject &question, const
     QJsonArray contextArray = response.value("context").toArray();
     for (auto context : contextArray) {
         QJsonObject contextObj = context.toObject();
-        if (contextObj.value("role") == "tool") {
+        if (contextObj.value("role") == "tool" && !contextObj.value("content").toString().isEmpty()) {
             content = content + contextObj.value("content").toString() + "\n\n";
         }
     }
 
     if (content.isEmpty()) {
         ReasoningUse::reasoningUseTitle(this, ResearchAgentTitle, ReasoningUse::Failed);
-        ReasoningUse::reasoningUseContent(this, tr("DeepResearch Failed! Please Retry!"));
+        ReasoningUse::reasoningUseContent(this, tr("No information found."));
 
         return response;
     } else {
@@ -252,7 +263,7 @@ QPair<int, QString> DeepResearchAgent::callTool(const QString &toolName, const Q
              QString processContent = handleDeepAnalyzer(toolResults, m_userTask);
             return qMakePair(0, processContent);
         } else {
-            return qMakePair(0, QString("Error: 未获取到信息！"));
+            return qMakePair(0, QString(""));
         }
     } else if (toolName == "local_search") {
         QString thought = params.value("thought").toString();
@@ -263,18 +274,25 @@ QPair<int, QString> DeepResearchAgent::callTool(const QString &toolName, const Q
              QString processContent = addReferencesAndFormat(toolResults);
             return qMakePair(0, processContent);
         } else {
-            return qMakePair(0, QString("Error: 未获取到信息！"));
+            return qMakePair(0, QString(""));
         }
     } else if (toolName == "parse_upload_file") {
         QString thought = params.value("thought").toString();
         ReasoningUse::reasoningUseContent(this, thought);
+        for (int i = 0; i < m_tools.size(); ++i) {
+            // 解析上传文件工具只需执行一次
+            if (m_tools.at(i)["name"].toString() == "parse_upload_file") {
+                m_tools.removeAt(i);
+                break;
+            }
+        }
 
         QJsonArray toolResults = handleFileParseTool(params);
         if (!toolResults.isEmpty()) {
              QString processContent = addReferencesAndFormat(toolResults);
             return qMakePair(0, processContent);
         } else {
-            return qMakePair(0, QString("Error: 未获取到信息！"));
+            return qMakePair(0, QString(""));
         }
     } else if (toolName == "research_finish") {
         QString summary = params.value("summary").toString();
@@ -298,11 +316,11 @@ QJsonArray DeepResearchAgent::handleWebSearchTool(const QJsonObject &arg)
     QJsonArray searchContent = webSearch(query);
     if (!searchContent.isEmpty()) {
         tool.status = ToolUse::Completed;
-        tool.result = "搜索成功";
+        tool.result = tr("Search successful");
         ToolUse::actionUseContent(this, tool);
     } else {
         tool.status = ToolUse::Failed;
-        tool.result = "ERROR: 未搜索到信息！";
+        tool.result = tr("No information found!");
         ToolUse::actionUseContent(this, tool);
     }
 
@@ -363,7 +381,7 @@ QJsonArray DeepResearchAgent::handleLocalSearchTool(const QJsonObject &arg)
     QJsonArray searchContent = localSearch(query);
 
     tool.status = ToolUse::Completed;
-    tool.result = "搜索成功";
+    tool.result = tr("Search successful");
     ToolUse::actionUseContent(this, tool);
 
     return searchContent;
@@ -428,11 +446,11 @@ QJsonArray DeepResearchAgent::handleFileParseTool(const QJsonObject &arg)
     result = fileParse(files);
     if (!result.isEmpty()) {
         tool.status = ToolUse::Completed;
-        tool.result = "解析成功";
+        tool.result = tr("Material parsing successful");
         ToolUse::actionUseContent(this, tool);
     } else {
         tool.status = ToolUse::Failed;
-        tool.result = "ERROR: 未解析到信息！";
+        tool.result = tr("Material parsing failed!");
         ToolUse::actionUseContent(this, tool);
     }
 
@@ -474,10 +492,10 @@ QString DeepResearchAgent::handleDeepAnalyzer(const QJsonArray &results, const Q
 
     if (!anylyzeContent.isEmpty()) {
         analyzerTool.status = ToolUse::Completed;
-        analyzerTool.result = "分析成功！";
+        analyzerTool.result = tr("Information analyze successful");
         ToolUse::actionUseContent(this, analyzerTool);
     } else {
-        anylyzeContent = "ERROR: 无信息！";
+        anylyzeContent = tr("No information found!");
 
         analyzerTool.status = ToolUse::Failed;
         analyzerTool.result = anylyzeContent;

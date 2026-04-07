@@ -17,6 +17,9 @@
 #include <QProcess>
 
 #include <unistd.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <cerrno>
 
 Q_DECLARE_LOGGING_CATEGORY(logExternalLLM)
 using namespace uos_ai;
@@ -36,7 +39,10 @@ ModelhubWrapper::~ModelhubWrapper()
         // start by me, to kill.
         if (rpid == pid) {
             qCInfo(logExternalLLM) << "Killing modelhub server" << modelName << "with pid" << pid;
-            system(QString("kill -3 %0").arg(pid).toStdString().c_str());
+            // 使用系统调用替代 system()，避免命令注入风险
+            if (kill(static_cast<pid_t>(pid), SIGQUIT) != 0) {
+                qCWarning(logExternalLLM) << "Failed to kill process" << pid << ":" << strerror(errno);
+            }
         } else {
             qCInfo(logExternalLLM) << "Server" << modelName << pid << "was not launched by this instance";
         }
@@ -183,23 +189,47 @@ QList<QVariantHash> ModelhubWrapper::modelsStatus()
 
 bool ModelhubWrapper::openCmd(const QString &cmd, QString &out)
 {
-    FILE* pipe = popen(cmd.toStdString().c_str(), "r");
-    if (!pipe) {
-        qCCritical(logExternalLLM) << "Failed to execute command:" << cmd;
+    // 使用 QProcess 替代 popen()，避免命令注入风险
+    // 解析命令为程序和参数（假设命令格式为 "program arg1 arg2 ..."）
+#ifdef COMPILE_ON_QT6
+    QStringList parts = cmd.split(' ', Qt::SkipEmptyParts);
+#else
+    QStringList parts = cmd.split(' ', QString::SkipEmptyParts);
+#endif
+    if (parts.isEmpty()) {
+        qCCritical(logExternalLLM) << "Empty command";
         return false;
     }
 
-    char buffer[256] = {0};
-    QString tmp;
-    while (fgets(buffer,  sizeof(buffer) - 1, pipe) != nullptr)
-        tmp.append(buffer);
+    QString program = parts.takeFirst();
+    QProcess process;
+    process.start(program, parts);
 
+    if (!process.waitForStarted()) {
+        qCCritical(logExternalLLM) << "Failed to execute command:" << cmd
+                                   << "Error:" << process.errorString();
+        return false;
+    }
+
+    if (!process.waitForFinished(30000)) { // 30秒超时
+        qCCritical(logExternalLLM) << "Command timed out:" << cmd;
+        process.kill();
+        process.waitForFinished();
+        return false;
+    }
+
+    if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
+        qCWarning(logExternalLLM) << "Command failed with exit code:" << process.exitCode()
+                                   << "Command:" << cmd;
+        return false;
+    }
+
+    QString tmp = QString::fromUtf8(process.readAllStandardOutput());
     if (tmp.isEmpty()) {
-        pclose(pipe);
         qCWarning(logExternalLLM) << "Command produced no output:" << cmd;
         return false;
     }
-    pclose(pipe);
+
     out = tmp;
     return true;
 }

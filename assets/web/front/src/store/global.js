@@ -82,6 +82,7 @@ export const useGlobalStore = defineStore({
     },
     ConversationModeStatus:0, //会话模式状态 0:普通模式 1:私密模式
     DeepSeek_Uos_Free: 81,  //免费官方账号模型类型
+    Uos_Free: 82,  //免费UOS模型类型
     IsDeepThink: true,  //是否深度思考
     IsSearchOnline: false,  //是否在线搜索
     IsOpenMcpServer: false,  //是否开启mcp服务
@@ -93,6 +94,7 @@ export const useGlobalStore = defineStore({
     IsGotFreeCredits: true,  // 是否领取过免费额度
     IsEnableAdvancedCssFeatures: false,  // 是否启用高级CSS特性（如backdrop-filter等）
     IsSimplifiedChinese: true,  // 是否为简体中文
+    IsEnableMcp: false,  // 是否启用MCP
     FontSize: 14, // 字体大小
     DocParsingStatusType:{
         Success:0x00,

@@ -56,6 +56,9 @@ option(ENABLE_AI_BAR "Enable AI Bar" OFF)
 option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" ON)
 option(ENABLE_MCP "Enable MCP Server" ON)
 
+# chatbot
+add_definitions(-DENABLE_CHATBOT)
+
 # 模型插件
 option(ENABLE_MODEL_FYDN "Enable FYDN Plugin" OFF)
 option(ENABLE_MODEL_PPT "Enable PPT Plugin" OFF)

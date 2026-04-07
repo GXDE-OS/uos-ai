@@ -241,10 +241,7 @@ void Application::launchChatWindow(int index)
 
     qCInfo(logMain) << "Launching chat window with index:" << index;
     if (!m_chatWindow) {
-        if (!DeepSeekInfo::checkAndShow()) {
-            qCWarning(logMain) << "checkAndShow block launching chat window";
-            return;
-        }
+        DeepSeekInfo::migrateOldFreeModelAsync();
         m_chatWindow = ESystemContext::createWebWindow<ChatWindow>();
         connect(this, &Application::sigGenPersonalFAQ, m_chatWindow, &ChatWindow::onGenPersonalFAQ, Qt::UniqueConnection);
         connect(m_chatWindow, &ChatWindow::sigToAddKnowledgeBase, this, [this](const QStringList &knowledgeBasefile){

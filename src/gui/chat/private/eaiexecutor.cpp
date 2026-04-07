@@ -2643,7 +2643,7 @@ void EAiExecutor::JudgeIsShowFreeAccountGuide()
     QFuture<QNetworkReply::NetworkError> future = QtConcurrent::run([=]() {
         auto displayError = UosFreeAccounts::instance().freeAccountButtonDisplay("account", m_hasActivity);
         int status = 0;
-        auto freeModelError = UosFreeAccounts::instance().checkFreeModelActivity(DeepSeek_Uos_Free, status, m_hasModelActivity);
+        auto freeModelError = UosFreeAccounts::instance().checkFreeModelActivity(UOS_FREE, status, m_hasModelActivity);
 
         if (displayError != QNetworkReply::NoError)
             return displayError;
@@ -2706,7 +2706,7 @@ bool EAiExecutor::getFreeCredits(bool isShowDlg)
             QJsonObject accountObj = accountValue.toObject();
             if (accountObj.contains("model") && accountObj["model"].isDouble()) {
                 int modelType = accountObj["model"].toInt();
-                if (modelType == DeepSeek_Uos_Free && accountObj.contains("id") && accountObj["id"].isString()) {
+                if (modelType == UOS_FREE && accountObj.contains("id") && accountObj["id"].isString()) {
                     modelIdForFreeAccount = accountObj["id"].toString();
                     qCInfo(logAIGUI) << "Found model ID for type 81:" << modelIdForFreeAccount;
                     break;
@@ -2715,7 +2715,7 @@ bool EAiExecutor::getFreeCredits(bool isShowDlg)
         }
 
         if (modelIdForFreeAccount.isEmpty()) {
-            qCWarning(logAIGUI) << "No model found with type DeepSeek_Uos_Free";
+            qCWarning(logAIGUI) << "No model found with type UOS_FREE";
             return false;
         }
 

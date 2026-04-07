@@ -14,16 +14,22 @@ MeetingMonitor::MeetingMonitor()
 
 void MeetingMonitor::onStartAiMeeting()
 {
-    QProcess prrcess;
-    prrcess.setProgram("sh"); // 设置程序为sh
-    prrcess.setArguments({"-c", "nohup /opt/apps/com.aimeetingassistant.uos/files/run.sh > /dev/null 2>&1 &"}); // 设置参数为-c和包含管道的命令
-    prrcess.setProcessChannelMode(QProcess::MergedChannels);
-    prrcess.start();
-    
-    if (!prrcess.waitForFinished()) {
+    // 直接执行脚本文件，移除 sh -c 包装，避免命令注入风险
+    QString scriptPath = "/opt/apps/com.aimeetingassistant.uos/files/run.sh";
+    qint64 pid = -1;
+
+    // 使用 startDetached 直接启动脚本在后台运行，使用 QProcess 处理输出重定向
+    bool ok = QProcess::startDetached(
+        scriptPath,      // 直接执行脚本
+        QStringList(),    // 无参数
+        QString(),        // 使用脚本所在目录作为工作目录
+        &pid              // 返回进程 ID
+    );
+
+    if (!ok || pid < 0) {
         qCWarning(logAIBar) << "Failed to start meeting assistant process";
     } else {
-        qCDebug(logAIBar) << "Meeting assistant process started successfully";
+        qCDebug(logAIBar) << "Meeting assistant process started successfully, pid:" << pid;
     }
 }
 

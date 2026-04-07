@@ -20,34 +20,34 @@ DeepSeekFree::DeepSeekFree(const LLMServerProxy &serverproxy)
 QJsonObject DeepSeekFree::predict(const QString &content, const QJsonArray &functions)
 {
     qCInfo(logLLM) << "DeepSeekFree Starting prediction with content length:" << content.length();
-    
+
     DeepSeekConversation conversation;
     conversation.addUserData(content);
     conversation.filterThink();
 
     bool hasThink = m_params.value(PREDICT_PARAM_THINKCHAIN).toBool();
     bool enableOnlineSearch = m_params.value(PREDICT_PARAM_ONLINESEARCH).toBool();
-    QString model = modelId();
 
     if (!functions.isEmpty()) {
         // 只有选择指令后才会带入Functions
-        // 选择指令功能后强制调用V3模型
-        qCInfo(logLLM) << "DeepSeekFree Functions provided, switching to V3 model, functions size:" << functions.size();
-        model = v3Id();
+        qCInfo(logLLM) << "DeepSeekFree Functions provided, functions size:" << functions.size();
         conversation.setFunctions(functions);
     } else if (enableOnlineSearch) {
         return onlineSearch(content);
-    } else if (!hasThink) {
-        qCInfo(logLLM) << "DeepSeekFree No think chain, switching to V3 model";
-        model = v3Id();
     }
 
-    qCDebug(logLLM) << "DeepSeekFree Creating completion with model:" << model;
+    // 统一使用 deepseek-v3-2 模型，通过 thinking 参数控制思考模式
+    // Functions 场景下禁用思考模式
+    bool thinkEnabled = functions.isEmpty() && hasThink;
+    QVariantHash params = m_params;
+    params[PREDICT_PARAM_THINKINGMODE] = thinkEnabled ? QString("enabled") : QString("disabled");
+
+    qCDebug(logLLM) << "DeepSeekFree Creating completion with model:" << modelId() << "thinking:" << (thinkEnabled ? "enabled" : "disabled");
     DeepSeekCompletion chatCompletion(baseUrl(), m_accountProxy.account);
     connect(this, &DeepSeekAI::aborted, &chatCompletion, &DeepSeekCompletion::requestAborted);
     connect(&chatCompletion, &DeepSeekCompletion::readyReadDeltaContent, this, &DeepSeekFree::onReadyReadChatDeltaContent);
 
-    QPair<int, QString> errorpair = chatCompletion.create(model, conversation, m_params);
+    QPair<int, QString> errorpair = chatCompletion.create(modelId(), conversation, params);
     if (errorpair.first != 0)
         qCWarning(logLLM) << "DeepSeekFree Prediction failed with error:" << errorpair.first << errorpair.second;
 
@@ -69,7 +69,7 @@ QJsonObject DeepSeekFree::predict(const QString &content, const QJsonArray &func
 QJsonObject DeepSeekFree::onlineSearch(const QString &content)
 {
     qCInfo(logLLM) << "DeepSeekFree Starting online search with content length:" << content.length();
-    
+
     DeepSeekConversation conversation;
     conversation.addUserData(content);
     conversation.filterThink();
@@ -79,13 +79,16 @@ QJsonObject DeepSeekFree::onlineSearch(const QString &content)
     connect(&chatCompletion, &DeepSeekCompletion::readyReadDeltaContent, this, &DeepSeekFree::onReadyReadChatDeltaContent);
 
     bool hasThink = m_params.value(PREDICT_PARAM_THINKCHAIN).toBool();
-    const QString botId = hasThink ? searchR1Id() : searchV3Id();
+    const QString botId = searchBotId();
     qCDebug(logLLM) << "DeepSeekFree Online search using bot ID:" << botId;
 
-    QPair<int, QString> errorpair = chatCompletion.create(botId, conversation, {});
+    QVariantHash params = m_params;
+    params[PREDICT_PARAM_THINKINGMODE] = hasThink ? QString("enabled") : QString("disabled");
+
+    QPair<int, QString> errorpair = chatCompletion.create(botId, conversation, params);
     if (errorpair.first != 0)
         qCWarning(logLLM) << "DeepSeekFree Online search failed with error:" << errorpair.first << errorpair.second;
-  
+
     setLastError(errorpair.first);
     setLastErrorString(errorpair.second);
 

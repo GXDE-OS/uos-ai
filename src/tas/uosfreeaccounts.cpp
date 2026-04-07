@@ -128,8 +128,9 @@ QNetworkReply::NetworkError UosFreeAccounts::getFreeAccount(const ModelType type
     QJsonObject sendJson;
     sendJson["mac"] = mac;
     sendJson["type"] = type;
-    if (llm != NoModel)
-        sendJson["model"] = llm;
+    if (llm != NoModel) {
+            sendJson["model"] = llm;
+    }
 
     if (type == ModelType::FREE_KOL) {
         sendJson["appid"] = freeAccount.appid;

@@ -20,6 +20,12 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
         <translation>必須、入力してください</translation>
     </message>
@@ -45,6 +51,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
         <translation>オプション</translation>
     </message>
@@ -90,6 +97,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
         <translation>ドメイン</translation>
     </message>
@@ -100,6 +108,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
         <translation>保存に失敗しました。後でもう一度お試しください</translation>
     </message>
@@ -151,6 +160,7 @@
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
         <translation>オーディオデバイスが検出されません。確認してからもう一度お試しください</translation>
     </message>
@@ -174,6 +184,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
         <translation>現在のモデル: </translation>
     </message>
@@ -274,21 +285,26 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
         <translation>説明</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
         <translation>翻訳</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
         <translation>拡張</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
         <translation>修正</translation>
     </message>
@@ -314,6 +330,8 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
         <translation>テキストが認識されませんでした。</translation>
     </message>
@@ -324,6 +342,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
         <translation>要約</translation>
     </message>
@@ -334,11 +353,13 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
         <translation>書き続ける</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
         <translation>磨く</translation>
     </message>
@@ -349,6 +370,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
         <translation>この文章を%1に翻訳し、明確な結果を直接提供してください。
@@ -372,6 +394,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>OK</translation>
@@ -388,6 +411,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
         <translation>OK</translation>
     </message>
@@ -433,6 +457,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
         <translation> &quot;%1&quot; </translation>
     </message>
@@ -463,12 +488,13 @@ text：</source>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="59"/>
+        <location filename="../src/application.cpp" line="60"/>
+        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="63"/>
+        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AIはデスクトップスマートアシスタント、あなたのパーソナルアシスタントです！テキストや音声でコミュニケーションを取ることができ、質問に答えたり、情報を提供したり、あなたの説明に基づいて画像を生成したりできます。</translation>
     </message>
@@ -478,7 +504,7 @@ text：</source>
         <translation>UOS AIフォロー/書き込み</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="249"/>
+        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
         <translation>ナレッジベース管理</translation>
     </message>
@@ -494,6 +520,16 @@ text：</source>
 <context>
     <name>ChatSeesion</name>
     <message>
+        <location filename="../src/tools/functionhandler.cpp" line="205"/>
+        <source>The command was executed successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <source>Command execution failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
         <translation>関数解析失敗</translation>
@@ -504,17 +540,18 @@ text：</source>
         <translation>アプリケーションファイルが存在しません</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
+        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
         <translation>起動成功</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
         <translation>起動失敗</translation>
     </message>
     <message>
         <location filename="../src/tools/functionhandler.cpp" line="211"/>
+        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
         <translation>実行出力内容は</translation>
     </message>
@@ -522,162 +559,168 @@ text：</source>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="195"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
         <translation>モード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="197"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
         <translation>ウィンドウモード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="202"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
         <translation>サイドバーモード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="208"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
         <translation>更新ログ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="231"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
         <translation>音声会話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="767"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="768"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
         <translation>削除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="770"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="811"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
         <translation>%1を削除してもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="812"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>削除後、このサーバーは利用できなくなります。慎重に進めてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="830"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
         <translation type="unfinished">更新</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="871"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
         <translation>非ベクトル化プラグイン</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="872"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
         <translation>[AIナレッジベース]を使用する前に、ベクトル化プラグインをインストールしてください。そうすることでAIナレッジベース機能が正常に動作します。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="873"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
         <translation type="unfinished">インストール</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="875"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
         <translation>ナレッジベースは空です</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="876"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
         <translation>[AIナレッジベース]を使用する前に、まずナレッジベースにドキュメントを追加する必要があります。追加後、AIはナレッジベースに追加した内容に基づいて質問に回答します。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="877"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
         <translation>ファイルを追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="906"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
         <translation>以下のファイルは期限切れのため使用できません。続行しますか？</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="979"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
         <translation>後で使用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="980"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
         <translation>今すぐインストール</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="982"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
         <translation>MCP環境が見つかりません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="983"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
         <translation>App Storeに移動してUOS AI Agentをインストールしてください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1005"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
         <translation>後で</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1006"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
         <translation>クレジットを取得</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1008"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
         <translation>無料クレジットを配布しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1009"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
         <translation>トライアルアカウントの無料生成クレジットを使い切りました。今月有効な追加200クレジットをプレゼントしました。さらに多くの機能を探索し、UOS AIの無限の可能性を解き放ちましょう！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1026"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1027"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
         <translation>正常に取得しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1027"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>取得に失敗しました。もう一度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1558"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AIはデスクトップスマートアシスタントで、あなたのパーソナルアシスタントです！テキストや音声でコミュニケーションを取ることができ、質問に答えたり、情報を提供したり、あなたの説明に基づいて画像を生成したりできます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1582"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
         <translation>情報をファイルする</translation>
     </message>
@@ -723,21 +766,25 @@ text：</source>
     <name>EAiExecutor</name>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
         <translation>個人知識アシスタントは、知識ベースを設定した後にのみ使用できます。</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
         <translation>個人知識アシスタントは、モデルプラグを設定した後にのみ使用できます。</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
         <translation>ディープシステムアシスタントは、モデルプラグを設定した後にのみ使用できます。</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
         <translation>UOSシステムアシスタントは、モデルプラグを設定した後にのみ使用できます。</translation>
     </message>
@@ -753,6 +800,9 @@ text：</source>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AIを使用するには、AIモデルアカウントを設定する必要があります。まずモデルアカウントを設定してください。</translation>
     </message>
@@ -767,12 +817,12 @@ text：</source>
         <translation>モデルプラグインをインストールしてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2039"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
         <translation>画像をエクスポート</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2933"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
         <source>You can upload up to 3 files or image</source>
         <translation>最大3つのファイルまたは画像をアップロードできます</translation>
     </message>
@@ -1516,6 +1566,10 @@ text：</source>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
         <translation>人工知能</translation>
     </message>
@@ -1772,944 +1826,960 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="427"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
         <translation>UOSスクリーンレコーダーをバージョン6.6以降に更新し、コンピューターを再起動してスクリーンショットQ&amp;Aを有効にしてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="677"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
         <translation>モデル設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="939"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
         <translation>設定へ移動</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="940"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
         <translation>アカウントなし</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="941"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
         <translation>質問を入力</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="942"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AIが生成する内容は参考までに、情報の正確性にご注意ください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
         <translation>UOS AIへようこそ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
         <translation>UOS AIがお手伝いできることの一部をご紹介します</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
         <translation>再生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
         <translation>会話履歴を消去</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
         <translation>マイクを接続してもう一度お試しください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
         <translation>チャット履歴を消去しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
         <translation>クリックで録音開始/停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
         <translation>聞き取り中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
         <translation>待機中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
         <translation>マイクが検出されません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
         <translation>接続に失敗しました、クリックして再試行</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
         <translation>アニメーションをクリックまたはCtrl+Super+Spaceで起動</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
         <translation>音声入力は一時的に利用不可、ネットワークを確認してください！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>サーバーに接続できません、ネットワークを確認するか後でもう一度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
         <translation>音声会話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
         <translation>アニメーションをクリックまたはEnterキーで送信</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
         <translation>%1秒後に録音を停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
         <translation>思考中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
         <translation>アニメーションをクリックで中断</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
         <translation>回答中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>無料アカウントの利用枠が枯渇しました、モデルアカウントを設定して継続利用してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>無料アカウントの期限が切れました、モデルアカウントを設定して継続利用してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AIを使用するには、AIモデルアカウントの設定が必要です。まずモデルアカウントを設定してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
         <translation>有効化</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
         <translation>音声入力</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
         <translation>音声放送は一時的に利用できません。ネットワークを確認してください！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
         <translation>音声会話をオフにする</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
         <translation>画像が生成されました。チャットインターフェースに切り替えてご覧ください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
         <translation>アカウントがありません。アカウントを設定してください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
         <translation>各質問に対して最大5回まで回答可能</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
         <translation>コピーに成功しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
         <translation>音声出力デバイスが検出されません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
         <translation>音声出力デバイスが検出されません。確認して再試行してください！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
         <translation>について</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
         <translation>モード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
         <translation>ウィンドウモード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
         <translation>サイドバーモード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
         <translation>アシスタント一覧</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
         <translation>エージェント一覧</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
         <translation>エージェントストア</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
         <translation>UOSシステムアシスタント</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
         <translation>Deepinシステムアシスタント</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
         <translation>個人知識アシスタント</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
         <translation>ナレッジベースを設定してください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
         <translation>[個人知識アシスタント]を使用する前に、ナレッジベースの設定が必要です。ナレッジベースを設定すると、AIはナレッジベースに設定した内容に基づいて質問に答えたりコンテンツを生成したりします。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
         <translation>大規模モデルを設定してください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
         <translation>個人知識アシスタントは、大規模モデルを設定した後にのみ使用できます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
         <translation>設定する</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
         <translation>インストールする</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
         <translation>[EmbeddingPlugins]をインストールしてください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
         <translation>このアシスタントは実行するためにEmbeddingPluginsのインストールが必要です</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
         <translation>ファイルをここにドラッグして追加します。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
         <translation>追加できるファイルは3つまでです。サポートされるファイルタイプは：txt、doc、docx、xls、xlsx、ppt、pptx、pdf、md、png、jpg、jpeg、コードファイルなどです。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
         <translation>MCPサーバー</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
         <translation>MCPサーバーを追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1064"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
         <translation>サーバーを追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1065"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
         <translation>追加に失敗しました！エラー理由：</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
         <translation>MCP環境が見つかりません。【UOS AI Agent】をインストールしてください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
         <translation>呼び出し中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
         <translation>呼び出し失敗</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
         <translation>キャンセルされました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
         <translation>パラメータ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
         <translation>結果</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>MCPサーバーでは、公式リリースモデル「DeepSeek-Trial Account」に切り替えてください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
         <translation>MCPサーバーコマンドを入力してください。例：「システムをダークモードに変更して」</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
         <translation>エージェントサーバーが利用できません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
         <translation>エージェントサーバーエラー</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
         <translation>MCPサーバーが利用できません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
         <translation type="unfinished">キャンセル</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
         <translation type="unfinished">確認</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
         <translation>MCPサービスでワンコマンドで複数ファイル・複数アプリのタスクを自動化。今すぐお試しください！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
         <translation>後で使う</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
         <translation>今すぐインストール</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
         <translation>MCPサーバーを有効にする</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
         <translation>MCP環境「UOS AI Agent」をインストールした後、</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
         <translation> をクリックし、MCPサーバーリストから「uos-mcp」を選択してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
         <translation>試してみてください：「システムをダークモードに変更して」</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
         <translation>今すぐ試す</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
         <translation>MCPサーバーを追加[ガイドページ]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
         <translation>初めての方：App StoreからMCP環境「UOS AI Agent」をインストールしてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
         <translation>JSONファイルの形式が正しくありません。確認して再度送信してください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
         <translation>今すぐインストール &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
         <translation>一般チャット</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
         <translation>プライベートチャット</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1096"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
         <translation>現在プライベートチャット中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1097"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
         <translation>プライベートチャットのメッセージは履歴に保存されず、チャットを終了すると完全に削除されます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
         <translation>スクリーンショットQ&amp;A ショートカット(Ctrl+Alt+Q)、画像は最大3枚まで対応</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
         <translation>画面録画中は使用できません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
         <translation>ファイルまたは画像を最大3件までアップロードできます</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
         <translation>ファイルをアップロード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
         <translation>異常なファイルを削除してから再度送信してください</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
         <translation>プライベートチャットを追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
         <translation>[スクリーンショットQ&amp;A]を追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
         <translation>スクリーンショットを撮って内容をUOS AIに送信します。画像を直接アップロードすることもできます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
         <translation>次へ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
         <translation>[プライベートチャットモード]を追加 - チャットは保存されません。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
         <translation>テキストが抽出されていません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
         <translation>画像サイズが15 MBを超えています</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
         <translation>ナレッジベースを開くと、回答はその内容に基づいて生成されます。応答速度はマシンの性能とナレッジベースのサイズに依存します。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
         <translation>コマンドまたはMCPが選択されている場合、ナレッジベースは利用できません。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1115"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
         <translation>ナレッジベースが有効な間はMCPが無効になります。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1116"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
         <translation>ナレッジベースが有効な間はコマンドが無効になります。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
         <translation type="unfinished">コピー</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
         <translation>再編集</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
         <translation>コピーに成功しました。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
         <translation>コピーに失敗しました。もう一度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
         <translation>検索中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
         <translation>%1件の参照ドキュメントを取得しました(%2s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
         <translation>履歴をクリア</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
         <translation>すべての記録を削除しますか？</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
         <translation>一度削除すると、内容は復元できません！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
         <translation>公式モデルを推奨</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
         <translation>MCPを無効化</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>公式モデル「DeepSeek-Trial Account」の使用を推奨します</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
         <translation>クイックオープン</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1132"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
         <translation>MCPサーバーを自動モードにアップグレード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1133"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
         <translation>MCPサーバーは自動モードにアップグレードされました。ワンクリックですべてのMCPサーバーにアクセスできます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
         <translation>これにより、システムのセットアップやファイル処理などのタスクをワンクリックで自動化できます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
         <translation>MCPサーバーの追加は「設定」へ移動されました。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
         <translation>さらにMCPサーバーを追加するには、設定 &gt; MCPサーバーへ移動してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
         <translation type="unfinished">了解しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
         <translation>無料モデルクレジット</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
         <translation>現在のシステムではDeepSeekのトライアルアカウントモデルを提供しており、毎月月初に無料クォータが自動的に更新されるため、安心してご利用いただけます。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
         <translation>クレジットを取得</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
         <translation type="unfinished">無料アカウントを取得</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
         <translation>無料クレジットを取得</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
         <translation>正常に取得しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>取得に失敗しました。もう一度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
         <translation>MCPサーバーを有効化&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
         <translation>MCPサーバーを無効化</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
         <translation>MCPサーバーを設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1001"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
+        <source>Enable MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
+        <source>Disable MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
+        <source>Configure MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
         <translation>最大1つのファイルしか追加できません。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1002"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
         <translation>このファイル形式はサポートされていません。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
         <translation>ファイルの主要な内容を要約します。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
         <translation>解析中...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
         <translation>ファイルエラー</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
         <translation>ファイルは削除されました。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
         <translation>ファイルサイズが100MBの制限を超えています。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
         <translation>ドキュメントをアップロード</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
         <translation>ファイルを削除しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
         <translation>解析されたテキストはありません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
         <translation>参照</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
         <translation>指示</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
         <translation>入力ボックスに「/」と入力してアクティブにします。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1016"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
         <translation>入力してください；「Ctrl+Enter」で改行します。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1017"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
         <translation>質問を入力するか、「/」を入力してコマンドを選択します
 「Ctrl+Enter」で改行します</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
         <translation>検索が完了しました。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
         <translation>クリックして結果を表示</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
         <translation>編集</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1026"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
         <translation>コピー</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
         <translation>検索</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
         <translation>ディープシンク(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1031"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
         <translation>思考が停止しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1032"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
         <translation>最下部に戻る</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
         <translation>深く考えました（%1秒）</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
         <translation>新しい会話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
         <translation>履歴</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1038"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
         <translation>履歴がありません</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1039"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
         <translation>今日</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
         <translation>昨日</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
         <translation>この会話を削除してもよろしいですか？一度削除すると復元できません。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
         <translation>この会話で使用されていた%1エージェントは削除されました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
         <translation>この会話は表示できません。表示するには%1エージェントをインストールして再度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
         <translation>元の会話モデルは削除されました。会話を続けるために新しいモデルに切り替えました。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
         <translation>おすすめ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
         <translation>もっと見る</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1049"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
         <translation>モデルを追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1050"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
         <translation>モデルなし</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
         <translation>利用可能なモデルがありません。設定でモデルをインストールまたは構成してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
         <translation>作成するコンテンツのテーマと要件について説明してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
         <translation>翻訳したい内容を入力し、ターゲット言語を指定してください。デフォルトの翻訳は中国語です。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
         <translation>処理が必要なテキストを入力し、要件を指定してください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
         <translation>新しいエージェントが追加されました</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
         <translation>新しい執筆、テキスト処理、翻訳エージェントが追加されました。今すぐチェックしてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
         <translation>試してみる</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
         <translation>次のドキュメントに基づいて記事を書く：</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
         <translation>次のドキュメントを英語に翻訳する：</translation>
     </message>
@@ -2787,6 +2857,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>確認</translation>
@@ -2847,6 +2919,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
+        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
+        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
         <translation>セッションがタイムアウトしました</translation>
     </message>
@@ -2948,6 +3022,8 @@ Never combine explanation with translation or provide full translation after par
     <name>KnowledgeBaseListWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
         <translation>削除</translation>
     </message>
@@ -2958,6 +3034,9 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
         <translation>まず埋め込みモデルプラグインをインストールしてください</translation>
     </message>
@@ -2998,6 +3077,7 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
         <translation>この機能には高いハードウェアリソースが必要で、推奨されるベンチマーク構成は次のとおりです：CPU Intel第11世代i7以上、メモリ16GB以上、NVIDIAグラフィックスカードで10シリーズ以上が最適です。構成が低すぎると、遅延や回答の不正確さなどの問題が発生する可能性があります。</translation>
     </message>
@@ -3005,49 +3085,49 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="274"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>フォローアロング</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="283"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">ナレッジベースの容量不足</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">ナレッジベースの総容量は%1Mで、残りは%2です。今回追加されたファイルの総数は%3です。ナレッジベースへの追加操作を完了できません。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="290"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="304"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">ディスク容量不足</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">新しく追加されたファイルを保存するには、少なくとも%1のディスク容量が必要です。現在の残り容量は%2です。十分なハードディスク容量を確保してから再度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="323"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">ナレッジベースに追加するにはベクトル化モデルプラグインのインストールが必要です。アプリストアからダウンロードしてインストールしてください。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="331"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">インストールしない</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">今すぐインストール</translation>
@@ -3262,6 +3342,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
         <translation>一度インストールすれば、UOS AIを使用するためにインターネット接続は必要ありません。</translation>
     </message>
@@ -3284,64 +3366,66 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="196"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
         <translation>接続に成功しました</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="355"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
         <translation>ユーザー規約</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="366"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
         <translation>UOS AIユーザー規約</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="367"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
         <translation>読み取りおよび同意済み</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="393"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
         <translation>プロキシ設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
         <translation>設定に移動</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="483"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
         <translation>モデル設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="564"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
         <translation>無料アカウントのアクティビティが終了しました。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="671"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation>ナレッジベースに追加するにはベクトル化モデルプラグインのインストールが必要です。アプリストアからダウンロードしてインストールしてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="679"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation>インストールしない</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="680"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation>今すぐインストール</translation>
@@ -3376,6 +3460,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
         <translation>削除</translation>
     </message>
@@ -3559,58 +3645,60 @@ Never combine explanation with translation or provide full translation after par
         <translation>多言語対応の翻訳アシスタント</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="310"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="834"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
         <source>Search</source>
         <translation>検索</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="836"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
         <source>Explain</source>
         <translation>説明</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="838"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
         <source>Summary</source>
         <translation>要約</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="840"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
         <source>Translate</source>
         <translation>翻訳</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="842"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
         <source>Continue Writing</source>
         <translation>続きを書く</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="844"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
         <source>Expand</source>
         <translation>展開</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
         <source>Polish</source>
         <translation>推敲</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
         <source>Correct</source>
         <translation>修正</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
         <source>Add to the AI knowledge base</source>
         <translation>AIナレッジベースに追加</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
@@ -3705,7 +3793,7 @@ Never combine explanation with translation or provide full translation after par
         <translation>アラビア語（サウジアラビア）</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="25"/>
+        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3821,6 +3909,12 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>SessionPrivate</name>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="313"/>
+        <location filename="../src/wrapper/session_p.cpp" line="493"/>
+        <location filename="../src/wrapper/session_p.cpp" line="607"/>
+        <location filename="../src/wrapper/session_p.cpp" line="856"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AIを使用するには、AIモデルアカウントの設定が必要です。まずモデルアカウントを設定してください。</translation>
     </message>
@@ -3831,6 +3925,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="1285"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
         <translation type="unfinished">正常に取得しました</translation>
     </message>
@@ -3856,6 +3951,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="1304"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation type="unfinished">取得に失敗しました。もう一度お試しください。</translation>
     </message>
@@ -3863,7 +3959,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
         <source>Feedback</source>
         <translation>フィードバック</translation>
     </message>
@@ -3967,27 +4063,27 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1141"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>この機能はまだ実装されていません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1145"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
         <source>service is not available!</source>
         <translation>サービスが利用できません！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1150"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
         <source>Invalid parameter!</source>
         <translation>無効なパラメータ！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1155"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
         <source>This app cannot be found!</source>
         <translation>このアプリが見つかりません！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1160"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
         <source>Failed to start application!</source>
         <translation>アプリケーションの起動に失敗しました！</translation>
     </message>
@@ -3995,67 +4091,67 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="554"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
         <translation>明るさは既に最大値に達しており、これ以上上げることができません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="564"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
         <translation>明るさは既に最小値に達しており、これ以上下げることができません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="791"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
         <translation>システムメモリは%0です。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="811"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
         <translation>言語設定インターフェースが開かれました。このインターフェースで設定してください。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="855"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
         <translation>現在のモードは既に%1モードです。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="869"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
         <translation>現在のモード%1がターゲットモードと一致しないため、閉じることができません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="882"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
         <translation>バランスモードはオフにできません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="900"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
         <translation>ロック画面が開かれました</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="914"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
         <translation>スクリーンショットまたは録画が完了しました</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="931"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
         <translation>画面が1つしかないため、画面モードを切り替えられません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="943"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
         <translation>現在の表示モードと同じです。もう一度お試しください。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1016"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
         <translation>画面が1つしかないため、画面を切り替えられません。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1121"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
         <translation>コマンドが発行されました。</translation>
     </message>
@@ -4082,6 +4178,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>WXQFCodeTranslation</name>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
         <translation>サーバー内部エラー</translation>
     </message>
@@ -4102,6 +4199,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
         <translation>モデル呼び出しエラー: モデルリクエスト制限に達したか、モデルがオフラインです。解決策: モデルを再追加するか、大規模モデルサービスプロバイダーのカスタマーサービスに連絡してください。</translation>
     </message>
@@ -4303,6 +4401,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
         <translation>私は18歳以上であることを確認します。&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;「UOS AI利用規約」&lt;/a&gt;を承認し同意します。また、本アプリケーションを通じて送受信する内容は、大規模モデルサービスプロバイダーとの直接のデータ交換であり、当社とは無関係です。</translation>
     </message>
@@ -4359,6 +4458,8 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>確認</translation>
@@ -4493,6 +4594,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
+        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
         <translation>現在訪問者が多すぎます。しばらくしてから再試行してください。</translation>
     </message>
@@ -4636,6 +4738,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
         <translation>ネットワークエラー、エラーID: ${error_id}、カスタマーサービスに連絡してください</translation>
     </message>
@@ -4661,6 +4764,8 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
         <translation>現在アクセスが集中しています。しばらくしてから再度お試しください。</translation>
     </message>
@@ -4684,6 +4789,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
         <translation>必須項目です。入力してください</translation>
     </message>
@@ -4879,6 +4985,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>uos_ai::AiWriterDialog</name>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>作成したい内容を入力（Enterで生成/Escで終了）</translation>
     </message>
@@ -4889,6 +4996,10 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
         <source>Artificial Intelligence</source>
         <translation>人工知能</translation>
     </message>
@@ -4944,6 +5055,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -5031,6 +5143,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
         <source>Current model: </source>
         <translation>現在のモデル: </translation>
     </message>
@@ -5274,6 +5387,7 @@ json
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
         <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
         <source>Add MCP Server</source>
         <translation>MCPサーバーを追加</translation>
     </message>
@@ -5283,32 +5397,33 @@ json
         <translation>MCPサーバーを編集</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
         <source>JSON configuration:</source>
         <translation>JSON設定:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="101"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>MCPのJSON設定コードを入力欄に貼り付けてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="121"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
         <source>Describe</source>
         <translation>説明</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>クイック検索ツールを容易にするため、MCPサーバーの機能を説明してください</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
         <source>Cancel</source>
         <translation type="unfinished">キャンセル</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
         <source>Confirm</source>
         <translation type="unfinished">確認</translation>
     </message>
@@ -5345,6 +5460,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
         <translation>再試行</translation>
     </message>
@@ -5370,6 +5486,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
         <translation>DeepSeekアカウントの取得に失敗しました！</translation>
     </message>
@@ -5390,6 +5507,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
         <translation>UOS AIはDeepSeekに完全統合されました</translation>
     </message>
@@ -5453,27 +5571,27 @@ json
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="61"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
         <translation>MCP サーバー機能の有効化</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="80"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
         <translation>一部のサードパーティ MCP サーバー機能には一定のリスクが伴います。ご利用の際は十分ご注意ください。このサービスを有効にすると、内蔵ツールが必要な依存関係を検出し自動的にダウンロードします。このダウンロードには通信料が発生します。リスクをご理解のうえ、慎重にご利用ください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="96"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
         <translation>内容を理解し、本サービスを利用することに同意します</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="109"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
         <translation type="unfinished">キャンセル</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="111"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
         <translation type="unfinished">確認</translation>
     </message>
@@ -5518,6 +5636,7 @@ json
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
         <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
+        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>AI に質問</translation>
     </message>
@@ -5546,6 +5665,7 @@ json
     </message>
     <message>
         <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>&lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;設定&lt;/a&gt;から再度有効にしてください。</translation>
     </message>
@@ -5575,6 +5695,7 @@ json
     <name>uos_ai::MCPServer</name>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="67"/>
+        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
         <translation>&apos;mcpServers&apos; フィールドがありません。</translation>
     </message>
@@ -5585,6 +5706,7 @@ json
     </message>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="89"/>
+        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
         <translation>有効な MCP サーバーがありません。</translation>
     </message>
@@ -5605,6 +5727,7 @@ json
     </message>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="223"/>
+        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
         <translation>カスタム設定ファイルを書き込み用に開けませんでした</translation>
     </message>
@@ -5660,7 +5783,7 @@ json
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="60"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
         <source>built-in</source>
         <translation>内蔵</translation>
     </message>
@@ -5668,47 +5791,47 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
         <source>MCP Server</source>
         <translation>MCP サーバー</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
         <source>All</source>
         <translation>すべて</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>Built-in</source>
         <translation>内蔵</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Custom</source>
         <translation type="unfinished">カスタム</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
         <source>Add MCP Server</source>
         <translation>MCP サーバーを追加</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="324"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
         <source>Confirm deletion %1?</source>
         <translation>%1 を削除してもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="325"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>削除後、このサーバーは利用できなくなります。慎重に進めてください。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>Cancel</source>
         <translation type="unfinished">キャンセル</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Delete</source>
         <translation type="unfinished">削除</translation>
     </message>
@@ -5721,17 +5844,17 @@ json
         <translation>MCP環境</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="90"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
         <source>MCP Server</source>
         <translation>MCPサーバー</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="165"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
         <source>Install UOS AI Agent</source>
         <translation>UOS AIエージェントをインストール</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>インストール後、MCPサーバーが利用可能になります。</translation>
     </message>
@@ -5753,6 +5876,7 @@ json
     <name>uos_ai::ModelScopeItem</name>
     <message>
         <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
         <source>Install</source>
         <translation>インストール</translation>
     </message>
@@ -5805,6 +5929,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>OK</translation>
@@ -5857,6 +5982,8 @@ json
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
         <source>Delete</source>
         <translation>削除</translation>
     </message>
@@ -5980,6 +6107,11 @@ json
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>文字数制限を超えました</translation>
     </message>
@@ -5988,11 +6120,15 @@ json
     <name>uos_ai::SkillListItem</name>
     <message>
         <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Enable</source>
         <translation>有効</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Disabled</source>
         <translation>無効</translation>
     </message>
@@ -6033,6 +6169,83 @@ json
         <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>削除</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
+        <source>built-in</source>
+        <translation type="unfinished">内蔵</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
+        <source>Skill List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
+        <source>Import Skill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
+        <source>Supported files</source>
+        <translation type="unfinished">対応ファイル</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
+        <source>Confirm deletion %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
+        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <source>Cancel</source>
+        <translation type="unfinished">キャンセル</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
+        <source>Delete</source>
+        <translation type="unfinished">削除</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
+        <source>Skill Enviorment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
+        <source>Agent Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
+        <source>Configure </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
+        <source>MCP environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
+        <source>After configuration you can use agent skills</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6091,51 +6304,52 @@ json
     </message>
     <message>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>&lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;設定&lt;/a&gt;から再度有効にしてください。</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="782"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
         <source>The added content must be more than 10 words</source>
         <translation>追加する内容は10語以上である必要があります</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="831"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
         <source>Search</source>
         <translation>検索</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="835"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
         <source>Explain</source>
         <translation>説明</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="839"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
         <source>Summary</source>
         <translation>要約</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="843"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
         <source>Translate</source>
         <translation>翻訳</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="847"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
         <source>Continue Writing</source>
         <translation>続きを書く</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="851"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
         <source>Expand</source>
         <translation>展開</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="855"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
         <source>Correct</source>
         <translation>修正</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="863"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
         <source>Add to the AI knowledge base</source>
         <translation>AIナレッジベースに追加</translation>
     </message>
@@ -6155,7 +6369,7 @@ json
         <translation>カスタム設定</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="859"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
         <source>Polish</source>
         <translation>磨き上げる</translation>
     </message>
@@ -6163,12 +6377,12 @@ json
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="643"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
         <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="659"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
         <source>Added</source>
         <translation>追加済み</translation>
     </message>

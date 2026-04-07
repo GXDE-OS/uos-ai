@@ -40,6 +40,7 @@ public:
     void checkActivity();
     static bool checkAndShow();
     static bool needGuide();
+    static void migrateOldFreeModelAsync();
 
 private:
     explicit DeepSeekInfo(QWidget *parent = nullptr);

@@ -46,6 +46,8 @@ enum LLMChatModel {
     DeepSeek_R1 = 80,
     DeepSeek_Uos_Free = 81, // 免费账号，v3和r1双模
 
+    UOS_FREE = 82,
+
     LOCAL_TEXT2IMAGE     = 1000,// 本地文本转图片模型
     LOCAL_YOURONG_1_5B = 1200,
     LOCAL_YOURONG_7B = 1201,
@@ -324,6 +326,8 @@ struct LLMServerProxy {
             return QCoreApplication::translate("LLMServerProxy", "DeepSeek-R1");
         case LLMChatModel::DeepSeek_Uos_Free:
             return QCoreApplication::translate("LLMServerProxy", "DeepSeek");
+        case LLMChatModel::UOS_FREE:
+            return QCoreApplication::translate("LLMServerProxy", "Intelligent Model");
         }
 
         return QCoreApplication::translate("LLMServerProxy", "unknown model");
@@ -454,6 +458,10 @@ struct LLMServerProxy {
 
     }
 };
+
+inline QString freeLlmName() {
+    return QCoreApplication::translate("LLMServerProxy", "Intelligent Routing");
+}
 
 struct AssistantProxy {
     QString id;

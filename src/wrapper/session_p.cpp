@@ -896,11 +896,24 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
         m_runTaskIds << uuid;
         LLMThreadTaskMana::instance()->addRequestTask(uuid, copilot.toWeakRef());
 
+        bool noSocket = params.value(PREDICT_PARAM_NOSOCKET, false).toBool();
         AppSocketServer socketServer(uuid);
 
         // 开启流格式了，才会开启管道
-        socketServer.startServer();
-        connect(agent.data(), &LlmAgent::readyReadChatDeltaContent, &socketServer, &AppSocketServer::sendDataToClient);
+        // noSocket=true 时调用方通过 chatTextChunkReceived 信号消费 chunk，无需本地 socket
+        if (!noSocket) {
+            socketServer.startServer();
+            connect(agent.data(), &LlmAgent::readyReadChatDeltaContent, &socketServer, &AppSocketServer::sendDataToClient);
+        }
+        // 向外暴露 chunk 信号，供 chatbot 等外部消费者使用
+        Session *session = m_q;
+        connect(agent.data(), &LlmAgent::readyReadChatDeltaContent,
+                agent.data(), [session, uuid](const QString &delta) {
+            QMetaObject::invokeMethod(session, "chatTextChunkReceived",
+                                      Qt::QueuedConnection,
+                                      Q_ARG(QString, uuid),
+                                      Q_ARG(QString, delta));
+        }, Qt::DirectConnection);
 
         eventloop.quit();
         isLoopQuit = true;
@@ -970,6 +983,11 @@ QPair<AIServer::ErrorType, QStringList> SessionPrivate::requestAgent(LLMServerPr
         oneloop.setTimeout(100);
         oneloop.exec();
 
+        // Emit context FIRST (queued) so onChatContextReceived fires before onChatTextReceived,
+        // allowing the handler to cache tool call history before finalizing the turn.
+        QMetaObject::invokeMethod(m_q, "chatContextReceived", Qt::QueuedConnection,
+                                  Q_ARG(QString, uuid),
+                                  Q_ARG(QJsonArray, response.value("context").toArray()));
         QMetaObject::invokeMethod(m_q, "chatTextReceived", Qt::QueuedConnection, Q_ARG(QString, uuid), Q_ARG(QString, response.value("content").toString()));
 
         return uuid;
@@ -1040,12 +1058,25 @@ QString SessionPrivate::chatRequest(LLMServerProxy llmAccount, const QString &ct
         LLMThreadTaskMana::instance()->addRequestTask(uuid, copilot.toWeakRef());
 
         // AppSocketServer 在本线程中需要一个eventloop处理事件。
+        bool noSocket = params.value(PREDICT_PARAM_NOSOCKET, false).toBool();
         AppSocketServer socketServer(uuid, params.value(PREDICT_PARAM_NOJSONOUTPUT, false).toBool());
         qCDebug(logWrapper) << "Socket server created - uuid:" << uuid << socketServer.outputWithJson();
         // 开启流格式了，才会开启管道
         if (stream) {
-            socketServer.startServer();
-            connect(copilot.data(), &LLM::readyReadChatDeltaContent, &socketServer, &AppSocketServer::sendDataToClient);
+            // noSocket=true 时调用方通过 chatTextChunkReceived 信号消费 chunk，无需本地 socket
+            if (!noSocket) {
+                socketServer.startServer();
+                connect(copilot.data(), &LLM::readyReadChatDeltaContent, &socketServer, &AppSocketServer::sendDataToClient);
+            }
+            // 向外暴露 chunk 信号，供 chatbot 等外部消费者使用
+            Session *session = m_q;
+            connect(copilot.data(), &LLM::readyReadChatDeltaContent,
+                    copilot.data(), [session, uuid](const QString &delta) {
+                QMetaObject::invokeMethod(session, "chatTextChunkReceived",
+                                          Qt::QueuedConnection,
+                                          Q_ARG(QString, uuid),
+                                          Q_ARG(QString, delta));
+            }, Qt::DirectConnection);
             eventloop.quit();
             isLoopQuit = true;
             qCDebug(logWrapper) << "Stream mode initialized - uuid:" << uuid;
@@ -1054,7 +1085,7 @@ QString SessionPrivate::chatRequest(LLMServerProxy llmAccount, const QString &ct
         // 免费账号判断有效期和次数
         int errorType = -1;
         if (!checkLLMAccountStatus(uuid, tmpLLMAccount, errorType)) {
-            qCWarning(logWrapper) << "Account status check failed - uuid:" << uuid 
+            qCWarning(logWrapper) << "Account status check failed - uuid:" << uuid
                                 << "error type:" << errorType;
             return uuid;
         }
@@ -1302,8 +1333,8 @@ void SessionPrivate::claimUsageRequest(LLMServerProxy llmAccount)
             case 5001: // 账户不存在
                 resultMessage = tr("Account not found");
                 break;
-            case 5002: // 仅支持DeepSeek账号领取额外额度
-                resultMessage = tr("Only support deepseek account");
+            case 5002: // 仅支持"智能调度"模型领取额外额度
+                resultMessage = tr("Only supports claiming extra quota for the \"Intelligent Routing\" model");
                 break;
             case 5003: // 账号额度尚未用完 NOTE:仅老用户，在新手引导时存在此场景，无需告知用户该情况，默认告诉用户领取成功
                 resultMessage = tr("Successfully Claimed");

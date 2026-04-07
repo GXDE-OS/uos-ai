@@ -10,6 +10,8 @@
 class Session;
 class DBusInterface;
 
+namespace uos_ai { namespace chatbot { class ChatBotService; } }
+
 UOSAI_BEGIN_NAMESPACE
 class ChatDBusInterface;
 UOSAI_END_NAMESPACE
@@ -85,6 +87,8 @@ public:
     void updateVisibleState(bool visible);
     void updateActiveState(bool active);
 
+    uos_ai::chatbot::ChatBotService *chatBotService() const { return m_chatBotService; }
+
 public:
     /**
      * @brief LLM model account validity verification.
@@ -96,6 +100,7 @@ private:
     QSharedPointer<UOSAI_NAMESPACE::ChatDBusInterface> m_chatDbusObject;
     QSharedPointer<Session> m_copilotSeesion;
     UOSAI_NAMESPACE::AudioAiassistant *m_audioAiassistant = nullptr;
+    uos_ai::chatbot::ChatBotService *m_chatBotService = nullptr;
 };
 
 #endif // SERVERWRAPPER_H

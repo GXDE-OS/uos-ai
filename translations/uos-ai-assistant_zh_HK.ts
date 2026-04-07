@@ -20,6 +20,12 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
         <translation>必填，請輸入</translation>
     </message>
@@ -50,11 +56,13 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
         <translation>可選</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
         <translation>網域</translation>
     </message>
@@ -100,6 +108,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
         <translation>儲存失敗，請稍後再試</translation>
     </message>
@@ -261,36 +270,44 @@
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
         <translation>解釋</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
         <translation>摘要</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
         <translation>翻譯</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
         <translation>繼續寫作</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
         <translation>擴展</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
         <translation>修正</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
         <translation>潤飾</translation>
     </message>
@@ -306,11 +323,13 @@
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
         <translation>確定</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
         <translation>將這段文字翻譯成 %1 並直接給我清晰的結果。
@@ -323,11 +342,13 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
         <translation>未檢測到音頻設備，請檢查後重試。</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>確定</translation>
@@ -418,11 +439,13 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
         <translation>「%1」</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
         <translation>目前模型：</translation>
     </message>
@@ -438,6 +461,8 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
         <translation>未識別到文字。</translation>
     </message>
@@ -463,12 +488,13 @@ text：</source>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="59"/>
+        <location filename="../src/application.cpp" line="60"/>
+        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="63"/>
+        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AI 是一款桌面智能助手，您的個人助理！您可以通過文字或語音與其交流，它能幫助回答問題、提供信息，並根據您的描述生成圖像。</translation>
     </message>
@@ -478,7 +504,7 @@ text：</source>
         <translation>UOS AI 跟隨/寫作</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="249"/>
+        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
         <translation>知識庫管理</translation>
     </message>
@@ -494,19 +520,30 @@ text：</source>
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
+        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
         <translation>啟動成功</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
         <translation>啟動失敗</translation>
     </message>
     <message>
         <location filename="../src/tools/functionhandler.cpp" line="211"/>
+        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
         <translation>執行輸出內容為</translation>
+    </message>
+    <message>
+        <location filename="../src/tools/functionhandler.cpp" line="205"/>
+        <source>The command was executed successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <source>Command execution failed.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/tools/functionhandler.cpp" line="229"/>
@@ -522,162 +559,168 @@ text：</source>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="195"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
         <translation>模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="197"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
         <translation>視窗模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="202"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
         <translation>側邊欄模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="208"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
         <translation>更新日誌</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="231"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
         <translation>語音對話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="767"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="768"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="770"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="811"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
         <translation>確認刪除 %1？</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="812"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>刪除後此伺服器將無法使用，請謹慎操作。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="830"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
         <translation>更新</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="871"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
         <translation>非向量化插件</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="872"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
         <translation>使用[AI知識庫]前需先安裝向量化插件，才能使AI知識庫功能正常運作。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="873"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
         <translation>安裝</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="875"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
         <translation>知識庫為空</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="876"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
         <translation>使用[AI知識庫]前需先添加文件至知識庫，添加後AI將根據您添加至知識庫的內容回答問題。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="877"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
         <translation>添加文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="906"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
         <translation>以下文件已過期無法使用，是否繼續？</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="979"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
         <translation>稍後使用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="980"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
         <translation>立即安裝</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="982"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
         <translation>缺少MCP環境</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="983"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
         <translation>請前往應用商店安裝UOS AI Agent</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1005"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
         <translation>暫時不要</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1006"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
         <translation>領取點數</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1008"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
         <translation>免費點數已送達</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1009"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
         <translation>您嘅試用帳戶免費生成額度已用完。我哋額外贈送200個本月有效嘅免費額度俾您。探索更多功能，解鎖UOS AI嘅無限潛能！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1026"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1027"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
         <translation>領取成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1027"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>領取失敗，請重試。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1558"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AI係一款桌面智能助手，您嘅個人助理！您可以通過文字或語音同佢交流，佢可以幫助回答問題、提供資訊，並根據您嘅描述生成圖像。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1582"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
         <translation>歸檔資訊</translation>
     </message>
@@ -723,21 +766,25 @@ text：</source>
     <name>EAiExecutor</name>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
         <translation>個人知識助手需配置知識庫後方可使用。</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
         <translation>個人知識助手需配置模型插件後方可使用。</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
         <translation>深度系統助手需配置模型插件後方可使用。</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
         <translation>UOS系統助手需配置模型插件後方可使用。</translation>
     </message>
@@ -753,6 +800,9 @@ text：</source>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI需配置AI模型帳戶後方可使用，請先配置模型帳戶。</translation>
     </message>
@@ -767,12 +817,12 @@ text：</source>
         <translation>請安裝模型插件。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2039"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
         <translation>導出圖片為</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2933"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
         <source>You can upload up to 3 files or image</source>
         <translation>您最多可以上傳3個文件或圖片</translation>
     </message>
@@ -1501,6 +1551,10 @@ text：</source>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
         <translation>人工智能</translation>
     </message>
@@ -1818,946 +1872,962 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="427"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
         <translation>將UOS屏幕錄製器更新至6.6或更高版本，並重新啟動電腦以啟用截圖問答功能。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="677"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
         <translation>模型配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="939"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
         <translation>前往配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="940"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
         <translation>沒有帳戶</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="941"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
         <translation>輸入問題</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="942"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AI生成的內容僅供參考，請注意信息的準確性。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
         <translation>歡迎使用UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
         <translation>以下是UOS AI可以幫助你完成的一些事情</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
         <translation>重新生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
         <translation>清除對話記錄</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
         <translation>請連接麥克風並重試</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
         <translation>對話記錄已清除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
         <translation>點擊開始/停止錄製</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
         <translation>正在聆聽</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
         <translation>休眠中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
         <translation>未檢測到麥克風</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
         <translation>連接失敗，點擊重試</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
         <translation>點擊動畫或按Ctrl+Super+Space鍵激活</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
         <translation>語音輸入暫時不可用，請檢查網絡！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>無法連接至伺服器，請檢查網絡或稍後重試。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
         <translation>語音對話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
         <translation>點擊動畫或按Enter鍵發送</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
         <translation>%1秒後停止錄製</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
         <translation>思考中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
         <translation>點擊動畫中斷</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
         <translation>回答中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>你的免費帳戶配額已用完，請配置你的模型帳戶以繼續使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>你的免費帳戶已過期，請配置你的模型帳戶以繼續使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI 需要先配置 AI 模型帳戶才能使用。請先配置模型帳戶。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
         <translation>啟用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
         <translation>語音輸入</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
         <translation>語音廣播暫時不可用，請檢查網絡！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
         <translation>關閉語音對話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
         <translation>圖片已生成，請切換至聊天介面查看。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
         <translation>無帳戶，請配置帳戶</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
         <translation>每個問題最多回答 5 次</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
         <translation>複製成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
         <translation>未檢測到音頻輸出設備</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
         <translation>未檢測到音頻輸出設備，請檢查後重試！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
         <translation>模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
         <translation>視窗模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
         <translation>側邊欄模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
         <translation>助手列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
         <translation>代理列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
         <translation>代理商店</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
         <translation>UOS 系統助手</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
         <translation>Deepin 系統助手</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
         <translation>個人知識助手</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
         <translation>請配置知識庫</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
         <translation>使用 [個人知識助手] 前需配置知識庫。配置後，AI 將根據知識庫內容回答問題或生成內容。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
         <translation>請配置大模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
         <translation>個人知識助手需配置大模型後才能使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
         <translation>去配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
         <translation>去安裝</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
         <translation>請安裝 [EmbeddingPlugins]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
         <translation>此助手需安裝 EmbeddingPlugins 才能運行</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
         <translation>將檔案拖曳至此處以新增。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
         <translation>您只能新增3個檔案，支援的檔案類型包括：txt、doc、docx、xls、xlsx、ppt、pptx、pdf、md、png、jpg、jpeg、程式碼檔案等。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1001"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
         <translation>您最多只能新增一個檔案。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1002"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
         <translation>不支援此檔案格式。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
         <translation>總結檔案的關鍵內容。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
         <translation>解析中...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
         <translation>檔案錯誤</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
         <translation>檔案已被刪除。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
         <translation>檔案大小超過100MB限制。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
         <translation>上傳文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
         <translation>檔案已刪除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
         <translation>未解析到任何文字</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
         <translation>參考</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
         <translation>指令</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
         <translation>在輸入框中輸入「/」以啟動。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1016"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
         <translation>請輸入；「Ctrl+Enter」換行。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1017"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
         <translation>輸入您的問題，或輸入「/」選擇指令
 「Ctrl+Enter」換行</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
         <translation>搜尋完成。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
         <translation>點擊查看結果</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
         <translation>編輯</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
         <translation>儲存</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1026"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
         <translation>複製</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
         <translation>搜尋</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
         <translation>深度思考(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1031"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
         <translation>思考已停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1032"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
         <translation>返回底部</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
         <translation>深度思考（%1秒）</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
         <translation>新對話</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
         <translation>歷史記錄</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1038"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
         <translation>無歷史記錄</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1039"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
         <translation>今日</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
         <translation>昨日</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
         <translation>確定要刪除對話嗎？刪除後將無法恢復。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
         <translation>此對話中使用的 %1 代理已被刪除</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
         <translation>無法查看此對話。請安裝 %1 代理後再試。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
         <translation>原始對話模型已被刪除。我們已為您切換至新模型以繼續對話。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
         <translation>推薦</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
         <translation>更多</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1049"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
         <translation>添加模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1050"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
         <translation>無模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
         <translation>無可用模型。請在設定中安裝或配置模型。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
         <translation>請描述創作內容的主題及要求。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
         <translation>請輸入需要翻譯的內容並指定目標語言。預設翻譯為中文。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
         <translation>請輸入需要處理的文字並指定要求。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
         <translation>已新增代理</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
         <translation>已新增寫作、文字處理及翻譯代理。立即查看。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
         <translation>試試看</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
         <translation>根據以下文件撰寫文章：</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
         <translation>將以下文件翻譯成英文：</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
         <translation>MCP 伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
         <translation>添加 MCP 伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1064"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
         <translation>添加伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1065"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
         <translation>添加失敗！錯誤原因：</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
         <translation>缺少 MCP 環境。請安裝【UOS AI 代理】</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
         <translation>呼叫中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
         <translation>已完成</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
         <translation>呼叫失敗</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
         <translation>已取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
         <translation>參數</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
         <translation>結果</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>對於MCP伺服器，切換至官方發佈的模型「DeepSeek-Trial Account」</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
         <translation>輸入MCP伺服器指令，例如：「幫我將系統切換至深色模式」</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
         <translation>代理伺服器不可用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
         <translation>代理伺服器異常</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
         <translation>MCP伺服器不可用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
         <translation>使用MCP服務，一鍵自動化多檔案及多應用程式任務。立即試用！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
         <translation>稍後使用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
         <translation>立即安裝</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
         <translation>啟用MCP伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
         <translation>安裝MCP環境「UOS AI Agent」後，點擊</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
         <translation>並在MCP伺服器列表中選擇「uos-mcp」。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
         <translation>試試說：「將系統切換至深色模式」。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
         <translation>立即試用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
         <translation>新增Mcp伺服器[指南頁面]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
         <translation>首次使用者：透過應用程式商店安裝MCP環境「UOS AI Agent」。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
         <translation>JSON檔案格式不正確，請檢查後重新提交</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
         <translation>立即安裝 &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
         <translation>一般聊天</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
         <translation>私人聊天</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1096"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
         <translation>現在處於私人聊天</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1097"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
         <translation>私人聊天訊息不會保存在歷史記錄中，離開聊天時將永久刪除。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
         <translation>截圖問答 快捷鍵 (Ctrl+Alt+Q)，最多支援3張圖片。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
         <translation>螢幕錄製期間無法使用</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
         <translation>您最多可以上傳3個檔案或圖片</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
         <translation>上傳檔案</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
         <translation>請刪除異常檔案後重新傳送</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
         <translation>新增私人聊天</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
         <translation>新增[截圖問答]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
         <translation>擷取螢幕截圖並將內容傳送至UOS AI。您亦可直接上傳圖片。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
         <translation>下一步</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
         <translation>新增[私密聊天模式] - 對話內容將不會被儲存。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
         <translation>未能提取文字</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
         <translation>圖片大小超過15 MB</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
         <translation>開啟知識庫後，回答將基於其內容。回應速度取決於機器效能及知識庫大小。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
         <translation>選擇任何指令或MCP時，知識庫將無法使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1115"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
         <translation>知識庫啟用時，MCP將被停用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1116"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
         <translation>知識庫啟用時，指令將被停用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
         <translation>複製</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
         <translation>重新編輯</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
         <translation>複製成功。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
         <translation>複製失敗，請重試。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
         <translation>搜尋中</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
         <translation>已取得%1份參考文件（%2秒）</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
         <translation>清除歷史記錄</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
         <translation>刪除所有記錄？</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
         <translation>內容一經刪除將無法恢復！</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
         <translation>推薦官方模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
         <translation>停用MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>建議使用官方模型「DeepSeek-試用帳戶」</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
         <translation>快速開啟</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1132"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
         <translation>MCP伺服器升級至自動模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1133"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
         <translation>MCP伺服器已升級至自動模式，只需點擊即可存取所有MCP伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
         <translation>。此功能讓您只需點擊一下，即可自動執行系統設定及檔案處理等任務。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
         <translation>新增MCP伺服器功能已移至設定。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
         <translation>如需新增更多MCP伺服器，請前往設定 &gt; MCP伺服器。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
         <translation>明白了</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
         <translation>免費模型額度</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
         <translation>現時系統提供DeepSeek試用帳戶模式，每月初會自動重置免費限額，讓您無憂使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
         <translation>領取積分</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
         <translation>獲取免費帳戶</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
         <translation>領取免費積分</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
         <translation>領取成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>領取失敗，請重試。</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
         <translation>啟用 MCP 伺服器&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
         <translation>停用 MCP 伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
         <translation>設定 MCP 伺服器</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
+        <source>Enable MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
+        <source>Disable MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
+        <source>Configure MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2833,6 +2903,8 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>確認</translation>
@@ -2893,6 +2965,8 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     </message>
     <message>
         <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
+        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
+        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
         <translation>會話超時</translation>
     </message>
@@ -2994,6 +3068,8 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     <name>KnowledgeBaseListWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
@@ -3004,6 +3080,9 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
         <translation>請先安裝嵌入模型插件</translation>
     </message>
@@ -3014,6 +3093,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
         <translation>此功能需要較高硬件資源，參考基準配置為：CPU Intel 第11代 i7 或以上；內存 16GB 或以上；擁有 NVIDIA 顯卡且 10 系列或以上為最佳選擇。若配置過低，可能會出現卡頓、回答不準確等問題。</translation>
     </message>
@@ -3051,49 +3131,49 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="274"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>跟隨</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="283"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation>知識庫容量不足</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation>知識庫總容量為 %1M，剩餘 %2。本次添加文件總數為 %3。無法完成添加到知識庫操作。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="290"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="304"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation>磁碟空間不足</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation>要儲存新增檔案，至少需要 %1 的磁碟空間。目前剩餘空間為 %2。請清理足夠的硬碟空間後再試。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="323"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation>新增至知識庫需要安裝向量化模型插件。請前往應用商店下載並安裝。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="331"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation>不安裝</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation>立即安裝</translation>
@@ -3293,6 +3373,8 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
         <translation>安裝後，您無需網絡連接即可使用UOS AI。</translation>
     </message>
@@ -3330,64 +3412,66 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="196"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
         <translation>連接成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="355"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
         <translation>用戶協議</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="366"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
         <translation>UOS AI用戶協議</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="367"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
         <translation>已閱讀並同意</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="393"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
         <translation>代理設置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
         <translation>前往設置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="483"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
         <translation>模型配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="564"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
         <translation>免費帳戶活動已結束。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="671"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation>添加到知識庫需要安裝向量化模型插件。請前往應用商店下載安裝。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="679"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation>不安裝</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="680"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation>立即安裝</translation>
@@ -3422,6 +3506,8 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
@@ -3535,7 +3621,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="25"/>
+        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3546,13 +3632,15 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 提示範例：將桌面新創建的資料夾中的所有檔案命名為項目材料，並按數字順序排列。</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="310"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>確定</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
         <source>{selection}</source>
         <translation>&apos;{selection}&apos;</translation>
     </message>
@@ -3647,47 +3735,47 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
         <translation>阿拉伯文（沙特）</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="834"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
         <source>Search</source>
         <translation>搜尋</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="836"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
         <source>Explain</source>
         <translation>解釋</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="838"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
         <source>Summary</source>
         <translation>摘要</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="840"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
         <source>Translate</source>
         <translation>翻譯</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="842"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
         <source>Continue Writing</source>
         <translation>繼續寫作</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="844"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
         <source>Expand</source>
         <translation>擴展</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
         <source>Polish</source>
         <translation>波蘭文</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
         <source>Correct</source>
         <translation>修正</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
         <source>Add to the AI knowledge base</source>
         <translation>添加到AI知識庫</translation>
     </message>
@@ -3867,6 +3955,12 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>SessionPrivate</name>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="313"/>
+        <location filename="../src/wrapper/session_p.cpp" line="493"/>
+        <location filename="../src/wrapper/session_p.cpp" line="607"/>
+        <location filename="../src/wrapper/session_p.cpp" line="856"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI 需要配置 AI 模型帳戶才能使用。請先配置模型帳戶。</translation>
     </message>
@@ -3877,6 +3971,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="1285"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
         <translation>領取成功</translation>
     </message>
@@ -3902,6 +3997,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="1304"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>領取失敗，請重試。</translation>
     </message>
@@ -3909,7 +4005,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
         <source>Feedback</source>
         <translation>意見回饋</translation>
     </message>
@@ -4013,27 +4109,27 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1141"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>此功能尚未實現。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1145"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
         <source>service is not available!</source>
         <translation>服務不可用！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1150"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
         <source>Invalid parameter!</source>
         <translation>參數無效！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1155"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
         <source>This app cannot be found!</source>
         <translation>找不到此應用程式！</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1160"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
         <source>Failed to start application!</source>
         <translation>啟動應用程式失敗！</translation>
     </message>
@@ -4041,67 +4137,67 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="554"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
         <translation>亮度已達最大值，無法再提高。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="564"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
         <translation>亮度已達最小值，無法再降低。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="791"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
         <translation>您的系統記憶體為 %0。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="811"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
         <translation>語言設定介面已開啟，請在此介面中進行設定。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="855"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
         <translation>當前模式已經是 %1 模式。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="869"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
         <translation>無法關閉，因為當前模式 %1 與目標模式不符。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="882"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
         <translation>平衡模式無法關閉。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="900"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
         <translation>已為您開啟鎖定螢幕</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="914"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
         <translation>螢幕截圖或錄製已完成</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="931"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
         <translation>只有一個螢幕，無法切換螢幕模式。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="943"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
         <translation>與當前顯示模式相同，請再試一次。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1016"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
         <translation>只有一個螢幕，無法切換螢幕。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1121"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
         <translation>您的指令已發出。</translation>
     </message>
@@ -4128,6 +4224,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>WXQFCodeTranslation</name>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
         <translation>伺服器內部錯誤</translation>
     </message>
@@ -4143,6 +4240,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
         <translation>模型調用錯誤：已達模型請求限制，或模型已離線。建議：重新添加模型，或聯繫大型模型服務提供商的客戶服務以解決此問題。</translation>
     </message>
@@ -4349,6 +4447,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
         <translation>本人確認已年滿18歲。本人知悉並同意&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;《UOS AI用戶協議》&lt;/a&gt;，且本人通過應用程式發送及接收的內容均為與大模型服務提供商的直接數據交換，與本公司無關。</translation>
     </message>
@@ -4369,6 +4468,8 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>確認</translation>
@@ -4539,6 +4640,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
+        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
         <translation>目前訪問人數過多，請稍後再試</translation>
     </message>
@@ -4682,6 +4784,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
         <translation>網絡錯誤，錯誤編號：${error_id}，請聯繫客戶服務</translation>
     </message>
@@ -4707,6 +4810,8 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
         <translation>目前訪客過多，請稍後再試。</translation>
     </message>
@@ -4730,6 +4835,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
         <translation>必填，請輸入</translation>
     </message>
@@ -4930,6 +5036,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>輸入您想創作的內容（按 Enter 生成/Esc 退出）</translation>
     </message>
@@ -4970,6 +5077,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
@@ -5000,6 +5108,10 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
         <source>Artificial Intelligence</source>
         <translation>人工智能</translation>
     </message>
@@ -5072,6 +5184,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
         <source>Current model: </source>
         <translation>當前模型：</translation>
     </message>
@@ -5321,6 +5434,7 @@ json
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
         <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
         <source>Add MCP Server</source>
         <translation>新增MCP伺服器</translation>
     </message>
@@ -5330,32 +5444,33 @@ json
         <translation>編輯MCP伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
         <source>JSON configuration:</source>
         <translation>JSON配置：</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="101"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>請將MCP JSON配置代碼貼入輸入框。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="121"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
         <source>Describe</source>
         <translation>描述</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>描述MCP伺服器功能以便快速搜尋工具</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
@@ -5392,6 +5507,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
         <translation>重試</translation>
     </message>
@@ -5417,6 +5533,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
         <translation>UOS AI已完全整合至DeepSeek</translation>
     </message>
@@ -5427,6 +5544,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
         <translation>DeepSeek帳號領取失敗！</translation>
     </message>
@@ -5500,27 +5618,27 @@ json
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="61"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
         <translation>啟用MCP伺服器功能</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="80"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
         <translation>部分第三方MCP伺服器功能存在一定風險，請謹慎使用。啟用此服務後，內建工具將檢測並自動下載必要依賴項，此下載過程會產生數據流量費用。請知悉風險並謹慎操作。</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="96"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
         <translation>我已了解並同意使用此服務</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="109"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="111"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
@@ -5565,6 +5683,7 @@ json
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
         <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
+        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>詢問AI</translation>
     </message>
@@ -5593,6 +5712,7 @@ json
     </message>
     <message>
         <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>前往&lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;設定&lt;/a&gt;重新啟用。</translation>
     </message>
@@ -5622,6 +5742,7 @@ json
     <name>uos_ai::MCPServer</name>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="67"/>
+        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
         <translation>缺少&apos;mcpServers&apos;字段。</translation>
     </message>
@@ -5632,6 +5753,7 @@ json
     </message>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="89"/>
+        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
         <translation>無效的mcp伺服器。</translation>
     </message>
@@ -5652,6 +5774,7 @@ json
     </message>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="223"/>
+        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
         <translation>無法開啟自訂設定檔案進行寫入</translation>
     </message>
@@ -5707,7 +5830,7 @@ json
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="60"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
         <source>built-in</source>
         <translation>內建</translation>
     </message>
@@ -5715,47 +5838,47 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
         <source>MCP Server</source>
         <translation>MCP 伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>Built-in</source>
         <translation>內建</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Custom</source>
         <translation>自訂</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
         <source>Add MCP Server</source>
         <translation>新增 MCP 伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="324"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
         <source>Confirm deletion %1?</source>
         <translation>確認刪除 %1？</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="325"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>刪除後此伺服器將無法使用，請謹慎操作</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
@@ -5768,17 +5891,17 @@ json
         <translation>Mcp 環境</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="90"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
         <source>MCP Server</source>
         <translation>MCP 伺服器</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="165"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
         <source>Install UOS AI Agent</source>
         <translation>安裝 UOS AI 代理</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>安裝後即可使用 MCP 伺服器</translation>
     </message>
@@ -5800,6 +5923,7 @@ json
     <name>uos_ai::ModelScopeItem</name>
     <message>
         <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
         <source>Install</source>
         <translation>安裝</translation>
     </message>
@@ -5852,6 +5976,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>確定</translation>
@@ -5904,6 +6029,8 @@ json
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
@@ -6028,6 +6155,11 @@ json
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>超過字數限制</translation>
     </message>
@@ -6036,11 +6168,15 @@ json
     <name>uos_ai::SkillListItem</name>
     <message>
         <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Disabled</source>
         <translation>已停用</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Enable</source>
         <translation>啟用</translation>
     </message>
@@ -6081,6 +6217,83 @@ json
         <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>刪除</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
+        <source>built-in</source>
+        <translation type="unfinished">內建</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
+        <source>Skill List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
+        <source>Import Skill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
+        <source>Supported files</source>
+        <translation type="unfinished">支援的檔案</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
+        <source>Confirm deletion %1?</source>
+        <translation type="unfinished">確認刪除 %1？</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
+        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <source>Cancel</source>
+        <translation type="unfinished">取消</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
+        <source>Delete</source>
+        <translation type="unfinished">刪除</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
+        <source>Skill Enviorment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
+        <source>Agent Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
+        <source>Configure </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
+        <source>MCP environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
+        <source>After configuration you can use agent skills</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6154,56 +6367,57 @@ json
     </message>
     <message>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>前往&lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;設定&lt;/a&gt;重新啟用它。</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="782"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
         <source>The added content must be more than 10 words</source>
         <translation>新增內容必須超過 10 個字</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="831"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
         <source>Search</source>
         <translation>搜尋</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="835"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
         <source>Explain</source>
         <translation>解釋</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="839"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
         <source>Summary</source>
         <translation>摘要</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="843"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
         <source>Translate</source>
         <translation>翻譯</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="847"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
         <source>Continue Writing</source>
         <translation>繼續寫作</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="851"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
         <source>Expand</source>
         <translation>擴展</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="855"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
         <source>Correct</source>
         <translation>修正</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="859"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
         <source>Polish</source>
         <translation>潤色</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="863"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
         <source>Add to the AI knowledge base</source>
         <translation>添加到AI知識庫</translation>
     </message>
@@ -6211,12 +6425,12 @@ json
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="643"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
         <translation>UOS AI 跟隨模式</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="659"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
         <source>Added</source>
         <translation>已添加</translation>
     </message>

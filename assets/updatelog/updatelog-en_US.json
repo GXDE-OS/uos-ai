@@ -2,7 +2,7 @@
     {
         "version": "V2.13",
         "date-for-v20": "2026-03-05",
-        "date-for-v25": "2026-02-14",
+        "date-for-v25": "2026-03-10",
         "items": [
             {
                 "type": "new",
@@ -11,6 +11,22 @@
             {
                 "type": "improvement",
                 "description": "FollowAlong Visual Optimization: Minor adjustments to the styles of icons and toolbars."
+            },
+            {
+                "type": "new",
+                "description": "Skill import supports zip and skill archive formats."
+            },
+            {
+                "type": "new",
+                "description": "Optimize success/failure messages for skill import."
+            },
+            {
+                "type": "new",
+                "description": "Built-in support for create-skill and find-skill."
+            },
+            {
+                "type": "new",
+                "description": "The default model is upgraded to \"Intelligent Routing\", dynamically providing deepseek‑v3.2 and GLM‑4.7 models."
             }
         ]
     },

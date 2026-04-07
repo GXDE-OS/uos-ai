@@ -980,8 +980,13 @@ const copy = async (content) => {
 // 处理下载操作 - 显示下载选项卡片
 const handleDownload = () => {
     if (!hasContent.value) return
-    showDownloadCard.value = !showDownloadCard.value
-    closeOtherMenus('download')
+    
+    if (store.IsEnableMcp) {
+        showDownloadCard.value = !showDownloadCard.value
+        closeOtherMenus('download')
+    } else {
+        handleSelectDownloadMode('md')
+    }
 }
 
 // 处理选择的下载格式

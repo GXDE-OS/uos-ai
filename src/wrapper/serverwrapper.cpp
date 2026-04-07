@@ -6,6 +6,7 @@
 #include "dbwrapper.h"
 #include "networkmonitor.h"
 #include "chatdbusinterface.h"
+#include "chatbotservice.h"
 
 #include <QtDBus>
 #include <QLoggingCategory>
@@ -13,6 +14,7 @@
 Q_DECLARE_LOGGING_CATEGORY(logWrapper)
 
 UOSAI_USE_NAMESPACE
+using namespace uos_ai::chatbot;
 
 ServerWrapper::ServerWrapper()
 {
@@ -85,6 +87,15 @@ bool ServerWrapper::initialization()
 #endif
 
     qCInfo(logWrapper) << "Server initialization completed";
+
+#ifdef ENABLE_CHATBOT
+    // 启动 IM 机器人服务（读取 chatbot.json，按配置决定是否启动）
+    m_chatBotService = new ChatBotService(this);
+    QSharedPointer<Session> chatbotSession;
+    chatbotSession.reset(new Session(qApp->applicationName(), this));
+    m_chatBotService->initialize(chatbotSession);
+#endif
+
     return true;
 }
 

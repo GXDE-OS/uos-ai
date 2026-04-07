@@ -18,6 +18,8 @@ class AddPrivateModelDialog;
 class AiBarWidget;
 class WordWizardWidget;
 class McpServerWidget;
+class SkillServerWidget;
+class ChatBotWidget;
 };
 
 class ModelListWidget;
@@ -68,7 +70,9 @@ private:
     uos_ai::WordWizardWidget *initWordWizardWidget();
     uos_ai::AiBarWidget *initAiBarWidget();
     DWidget *initMcpServerWidget();
+    DWidget *initSkillWidget();
     DWidget *initModelConfigWidget();
+    DWidget *initChatBotWidget();
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
@@ -96,7 +100,9 @@ private:
     uos_ai::WordWizardWidget *m_pWordWizardWidget = nullptr;
     uos_ai::AiBarWidget *m_pAiBarWidget = nullptr;
     uos_ai::McpServerWidget *m_pMcpServerWidget = nullptr;
+    uos_ai::SkillServerWidget *m_pSkillServerWidget = nullptr;
     uos_ai::PrivateModelListWidget *m_pPrivateModelListWidget = nullptr;
+    uos_ai::ChatBotWidget *m_pChatBotWidget = nullptr;
 
 
     QSet<QWidget *> m_widgets;

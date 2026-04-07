@@ -560,7 +560,7 @@ const sendQuestion = async () => {
     }
 
     // ques添加openThink字段
-    if (currentAccount.value.model == store.DeepSeek_Uos_Free && !store.IsOpenMcpServer) {
+    if (currentAccount.value.model == store.Uos_Free && !store.IsOpenMcpServer) {
         ques.openThink = store.IsDeepThink
         ques.onlineSearch = store.IsSearchOnline
     }else{

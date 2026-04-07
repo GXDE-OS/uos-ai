@@ -473,7 +473,7 @@ void AddModelDialog::onSubmitButtonClicked()
 
         setAllWidgetEnabled(false);
         QNetworkReply::NetworkError error = UosFreeAccounts::instance().
-                getFreeAccount(ModelType::FREE_KOL, model == DeepSeek_R1 ? DeepSeek_Uos_Free : NoModel, freeAccount, status);
+                getFreeAccount(ModelType::FREE_KOL, model == DeepSeek_R1 ? UOS_FREE : NoModel, freeAccount, status);
         setAllWidgetEnabled(true);
 
         if (QNetworkReply::NoError == error) {
@@ -484,8 +484,8 @@ void AddModelDialog::onSubmitButtonClicked()
             if (m != model) {
                 if (m == LLMChatModel::WXQF_ERNIE_Bot) {
                     m = model;
-                } else if (m == DeepSeek_Uos_Free && model == DeepSeek_R1) {
-                    model = DeepSeek_Uos_Free;
+                } else if (m == UOS_FREE && model == DeepSeek_R1) {
+                    model = UOS_FREE;
                 } else {
                     typeError = true;
                     qCWarning(logAIGUI) << "KOL account type mismatch. Expected:" << model << ", Got:" << m;

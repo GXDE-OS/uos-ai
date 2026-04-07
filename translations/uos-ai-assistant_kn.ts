@@ -20,6 +20,12 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
         <translation>ಅಗತ್ಯವಿದೆ, ದಯವಿಟ್ಟು ನಮೂದಿಸಿ</translation>
     </message>
@@ -45,6 +51,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
         <translation>ಐಚ್ಛಿಕ</translation>
     </message>
@@ -90,6 +97,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
         <translation>ಡೊಮೇನ್</translation>
     </message>
@@ -100,6 +108,7 @@
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
+        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
         <translation>ಉಳಿಸಲು ವಿಫಲವಾಗಿದೆ, ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</translation>
     </message>
@@ -151,6 +160,7 @@
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
         <translation>ಆಡಿಯೋ ಸಾಧನವನ್ನು ಪತ್ತೆಹಚ್ಚಲಾಗಿಲ್ಲ, ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
@@ -174,6 +184,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
         <translation>ಪ್ರಸ್ತುತ ಮಾದರಿ: </translation>
     </message>
@@ -274,21 +285,26 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
         <translation>ವಿವರಿಸಿ</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
         <translation>ಅನುವಾದಿಸಿ</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
         <translation>ವಿಸ್ತರಿಸಿ</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
         <translation>ಸರಿಪಡಿಸಿ</translation>
     </message>
@@ -314,6 +330,8 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
         <translation>ಯಾವುದೇ ಪಠ್ಯ ಗುರುತಿಸಲಾಗಿಲ್ಲ.</translation>
     </message>
@@ -324,6 +342,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
         <translation>ಸಾರಾಂಶ</translation>
     </message>
@@ -334,11 +353,13 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
         <translation>ಬರೆಯುವುದನ್ನು ಮುಂದುವರಿಸಿ</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
         <translation>ಪಾಲಿಶ್</translation>
     </message>
@@ -349,6 +370,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
         <translation>ಈ ಪ್ಯಾಸೇಜ್ ಅನ್ನು %1 ಗೆ ಅನುವಾದಿಸಿ ಮತ್ತು ನನಗೆ ಸ್ಪಷ್ಟವಾದ ಫಲಿತಾಂಶವನ್ನು ನೇರವಾಗಿ ನೀಡಿ. ಪಠ್ಯ：</translation>
@@ -367,6 +389,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>ಸರಿ</translation>
@@ -383,6 +406,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
         <translation>ಸರಿ</translation>
     </message>
@@ -418,6 +442,7 @@ text：</source>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
         <translation> &quot;%1&quot; </translation>
     </message>
@@ -448,12 +473,13 @@ text：</source>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="59"/>
+        <location filename="../src/application.cpp" line="60"/>
+        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="63"/>
+        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AI ಒಂದು ಡೆಸ್ಕ್ಟಾಪ್ ಸ್ಮಾರ್ಟ್ ಸಹಾಯಕ, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಸಹಾಯಕ! ನೀವು ಪಠ್ಯ ಅಥವಾ ಧ್ವನಿಯನ್ನು ಬಳಸಿ ಅದರೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸಬಹುದು, ಮತ್ತು ಅದು ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಲು, ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಲು ಮತ್ತು ನಿಮ್ಮ ವಿವರಣೆಗಳ ಆಧಾರದ ಮೇಲೆ ಚಿತ್ರಗಳನ್ನು ರಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</translation>
     </message>
@@ -463,7 +489,7 @@ text：</source>
         <translation>UOS AI ಫಾಲೋಅಲಾಂಗ್/ಬರೆಯಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="249"/>
+        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
         <translation>ಜ್ಞಾನ ಬೇಸ್ ನಿರ್ವಹಣೆ</translation>
     </message>
@@ -479,6 +505,16 @@ text：</source>
 <context>
     <name>ChatSeesion</name>
     <message>
+        <location filename="../src/tools/functionhandler.cpp" line="205"/>
+        <source>The command was executed successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <source>Command execution failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
         <translation>ಕಾರ್ಯ ಪಾರ್ಸಿಂಗ್ ವಿಫಲವಾಗಿದೆ</translation>
@@ -489,17 +525,18 @@ text：</source>
         <translation>ಅಪ್ಲಿಕೇಶನ್ ಫೈಲ್ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
+        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
         <translation>ಯಶಸ್ವಿಯಾಗಿ ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
+        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
         <translation>ಪ್ರಾರಂಭಿಸುವುದು ವಿಫಲವಾಗಿದೆ</translation>
     </message>
     <message>
         <location filename="../src/tools/functionhandler.cpp" line="211"/>
+        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
         <translation> ಕಾರ್ಯಗತಗೊಳಿಸುವ ಔಟ್ಪುಟ್ ವಿಷಯವು </translation>
     </message>
@@ -507,162 +544,168 @@ text：</source>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="195"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
         <translation>ಮೋಡ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="197"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
         <translation>ವಿಂಡೋ ಮೋಡ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="202"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
         <translation>ಸೈಡ್ಬಾರ್ ಮೋಡ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
         <translation>ಸೆಟ್ಟಿಂಗ್ಸ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="208"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
         <translation>ನವೀಕರಣ ಲಾಗ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="231"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
         <translation>ಧ್ವನಿ ಸಂಭಾಷಣೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="767"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
         <translation>ರದ್ದುಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="768"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
         <translation>ಅಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="770"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
         <translation>ದೃಢೀಕರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="811"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
         <translation>ಅಳಿಸುವುದನ್ನು ಖಚಿತಪಡಿಸಿ %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="812"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>ಅಳಿಸಿದ ನಂತರ ಈ ಸರ್ವರ್ ಲಭ್ಯವಿರುವುದಿಲ್ಲ. ಎಚ್ಚರಿಕೆಯಿಂದ ಮುಂದುವರೆಯಿರಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="830"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
         <translation type="unfinished">ನವೀಕರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="871"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
         <translation>ವೆಕ್ಟರ್‌ಗೊಳಿಸದ ಪ್ಲಗಿನ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="872"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
         <translation>[ಎಐ ಜ್ಞಾನಸಂಪತ್ತು] ಬಳಸುವ ಮೊದಲು, ನೀವು ಮೊದಲು ವೆಕ್ಟರ್‌ಗೊಳಿಸುವ ಪ್ಲಗಿನ್ ಅನ್ನು ಸ್ಥಾಪಿಸಬೇಕು, ಆದ್ದರಿಂದ ಎಐ ಜ್ಞಾನಸಂಪತ್ತಿನ ಕಾರ್ಯ ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="873"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
         <translation>ಸ್ಥಾಪಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="875"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
         <translation>ಜ್ಞಾನಸಂಪತ್ತು ಖಾಲಿಯಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="876"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
         <translation>[ಎಐ ಜ್ಞಾನಸಂಪತ್ತು] ಬಳಸುವ ಮೊದಲು, ನೀವು ಮೊದಲು ದಸ್ತಾವೇಜುಗಳನ್ನು ಜ್ಞಾನಸಂಪತ್ತಿಗೆ ಸೇರಿಸಬೇಕು. ಸೇರಿಸಿದ ನಂತರ, ನೀವು ಸೇರಿಸಿದ ವಿಷಯದ ಆಧಾರದ ಮೇಲೆ ಎಐ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="877"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
         <translation>ಫೈಲ್‌ಗಳನ್ನು ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="906"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
         <translation>ಈ ಕೆಳಗಿನ ಫೈಲ್ ಅವಧಿ ಮೀರಿದೆ ಮತ್ತು ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಮುಂದುವರೆಯುವುದೇ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="979"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
         <translation>ನಂತರ ಬಳಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="980"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
         <translation>ಈಗಲೇ ಸ್ಥಾಪಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="982"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
         <translation>MCP ಪರಿಸರ ಕಾಣೆಯಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="983"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
         <translation>ದಯವಿಟ್ಟು ಅಪ್ಲಿಕೇಶನ್ ಸ್ಟೋರ್‌ಗೆ ಹೋಗಿ UOS AI Agent ಅನ್ನು ಸ್ಥಾಪಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1005"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
         <translation>ಈಗ ಅಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1006"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
         <translation>ಕ್ರೆಡಿಟ್ಗಳನ್ನು ಪಡೆಯಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1008"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
         <translation>ಉಚಿತ ಕ್ರೆಡಿಟ್ಗಳನ್ನು ತಲುಪಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1009"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
         <translation>ನೀವು ನಿಮ್ಮ ಪ್ರಯೋಗ ಖಾತೆಗಾಗಿ ಉಚಿತ ಉತ್ಪಾದನಾ ಕ್ರೆಡಿಟ್ಗಳನ್ನು ಬಳಸಿದ್ದೀರಿ. ನಾವು ನಿಮಗೆ ಈ ತಿಂಗಳಿಗೆ ಮಾನ್ಯವಾದ ಹೆಚ್ಚುವರಿ 200 ಉಚಿತ ಕ್ರೆಡಿಟ್ಗಳನ್ನು ನೀಡಿದ್ದೇವೆ. ಹೆಚ್ಚಿನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್ವೇಷಿಸಿ ಮತ್ತು UOS AI ನ ಅನಂತ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1026"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
         <translation type="unfinished">ಸರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1027"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
         <translation>ಯಶಸ್ವಿಯಾಗಿ ಪಡೆಯಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1027"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1558"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
         <translation>UOS AI ಒಂದು ಡೆಸ್ಕ್ಟಾಪ್ ಸ್ಮಾರ್ಟ್ ಸಹಾಯಕ, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಸಹಾಯಕ! ನೀವು ಪಠ್ಯ ಅಥವಾ ಧ್ವನಿಯೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸಬಹುದು, ಮತ್ತು ಅದು ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಲು, ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಲು ಮತ್ತು ನಿಮ್ಮ ವಿವರಣೆಗಳ ಆಧಾರದ ಮೇಲೆ ಚಿತ್ರಗಳನ್ನು ರಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1582"/>
+        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
         <translation>ಫೈಲಿಂಗ್ ಮಾಹಿತಿ</translation>
     </message>
@@ -708,21 +751,25 @@ text：</source>
     <name>EAiExecutor</name>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
         <translation>ವೈಯಕ್ತಿಕ ಜ್ಞಾನ ಸಹಾಯಕವನ್ನು ಜ್ಞಾನ ಬೇಸ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ನಂತರ ಮಾತ್ರ ಬಳಸಬಹುದು.</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
         <translation>ವೈಯಕ್ತಿಕ ಜ್ಞಾನ ಸಹಾಯಕವನ್ನು ಮಾಡೆಲ್ ಪ್ಲಗ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ನಂತರ ಮಾತ್ರ ಬಳಸಬಹುದು.</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
         <translation>ಡೀಪ್ ಸಿಸ್ಟಮ್ ಸಹಾಯಕವನ್ನು ಮಾಡೆಲ್ ಪ್ಲಗ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ನಂತರ ಮಾತ್ರ ಬಳಸಬಹುದು.</translation>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
         <translation>UOS ಸಿಸ್ಟಮ್ ಸಹಾಯಕವನ್ನು ಮಾಡೆಲ್ ಪ್ಲಗ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ನಂತರ ಮಾತ್ರ ಬಳಸಬಹುದು.</translation>
     </message>
@@ -738,6 +785,9 @@ text：</source>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI ಬಳಸಲು ಮೊದಲು AI ಮಾಡೆಲ್ ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಬೇಕು. ದಯವಿಟ್ಟು ಮೊದಲು ಮಾಡೆಲ್ ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ.</translation>
     </message>
@@ -752,12 +802,12 @@ text：</source>
         <translation>ದಯವಿಟ್ಟು ಮಾದರಿ ಪ್ಲಗ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2039"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
         <translation>ಚಿತ್ರವನ್ನು ಹೀಗೆ ರಫ್ತು ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2933"/>
+        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
         <source>You can upload up to 3 files or image</source>
         <translation>ನೀವು ಗರಿಷ್ಠ 3 ಫೈಲ್‌ಗಳು ಅಥವಾ ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಬಹುದು</translation>
     </message>
@@ -1501,6 +1551,10 @@ text：</source>
     </message>
     <message>
         <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
+        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
         <translation>ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ</translation>
     </message>
@@ -1735,944 +1789,960 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="427"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
         <translation>ಸ್ಕ್ರೀನ್‌ಶಾಟ್ Q&amp;A ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು UOS ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡರ್ ಅನ್ನು ಆವೃತ್ತಿ 6.6 ಅಥವಾ ಹೆಚ್ಚಿನದಕ್ಕೆ ನವೀಕರಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಪುನಃಪ್ರಾರಂಭಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="677"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
         <translation>ಮಾದರಿ ಸಂರಚನೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="939"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
         <translation>ಸಂರಚನೆಗೆ ಹೋಗಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="940"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
         <translation>ಖಾತೆ ಇಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="941"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
         <translation>ಇನ್ಪುಟ್ ಪ್ರಶ್ನೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="942"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AI ಯಿಂದ ರಚಿಸಲಾದ ವಿಷಯವು ಉಲ್ಲೇಖಕ್ಕಾಗಿ ಮಾತ್ರ, ದಯವಿಟ್ಟು ಮಾಹಿತಿಯ ನಿಖರತೆಗೆ ಗಮನ ಕೊಡಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
         <translation>UOS AI ಗೆ ಸ್ವಾಗತ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
         <translation>UOS AI ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದಾದ ಕೆಲವು ವಿಷಯಗಳು ಇಲ್ಲಿವೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
         <translation>ನಿಲ್ಲಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
         <translation>ಮರುಸೃಷ್ಟಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
         <translation>ಸಂಭಾಷಣೆ ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
         <translation>ದಯವಿಟ್ಟು ಮೈಕ್ರೋಫೋನ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
         <translation>ಚಾಟ್ ಇತಿಹಾಸ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
         <translation>ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಲು/ನಿಲ್ಲಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
         <translation>ಕೇಳುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
         <translation>ನಿದ್ರಿಸುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
         <translation>ಮೈಕ್ರೋಫೋನ್ ಕಂಡುಬಂದಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
         <translation>ಸಂಪರ್ಕ ವಿಫಲವಾಗಿದೆ, ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
         <translation>ಸಕ್ರಿಯಗೊಳಿಸಲು ಅನಿಮೇಶನ್ ಅಥವಾ Ctrl+Super+Space ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
         <translation>ವಾಯ್ಸ್ ಇನ್ಪುಟ್ ತಾತ್ಕಾಲಿಕವಾಗಿ ಲಭ್ಯವಿಲ್ಲ, ದಯವಿಟ್ಟು ನೆಟ್‌ವರ್ಕ್ ಪರಿಶೀಲಿಸಿ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>ಸರ್ವರ್‌ಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ದಯವಿಟ್ಟು ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್ ಪರಿಶೀಲಿಸಿ ಅಥವಾ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
         <translation>ವಾಯ್ಸ್ ಸಂಭಾಷಣೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
         <translation>ಕಳುಹಿಸಲು ಅನಿಮೇಶನ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ ಅಥವಾ Enter ಒತ್ತಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
         <translation>%1 ಸೆಕೆಂಡ್‌ಗಳ ನಂತರ ರೆಕಾರ್ಡಿಂಗ್ ನಿಲ್ಲಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
         <translation>ಯೋಚಿಸುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
         <translation>ಅಡ್ಡಿಪಡಿಸಲು ಅನಿಮೇಶನ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
         <translation>ಉತ್ತರಿಸುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>ನಿಮ್ಮ ಉಚಿತ ಖಾತೆಯ ಕೋಟಾ ತೀರಿದೆ, ಅದನ್ನು ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಮಾದರಿ ಖಾತೆಯನ್ನು ಸಂರಚಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>ನಿಮ್ಮ ಉಚಿತ ಖಾತೆಯು ಮುಕ್ತಾಯವಾಗಿದೆ, ಅದನ್ನು ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಮಾದರಿ ಖಾತೆಯನ್ನು ಸಂರಚಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>UOS AI ಬಳಸುವ ಮೊದಲು ಒಂದು AI ಮಾದರಿ ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಬೇಕಾಗಿದೆ. ದಯವಿಟ್ಟು ಮೊದಲು ಒಂದು ಮಾದರಿ ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
         <translation>ಸಕ್ರಿಯಗೊಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
         <translation>ಧ್ವನಿ ಇನ್ಪುಟ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
         <translation>ಧ್ವನಿ ಪ್ರಸಾರ ತಾತ್ಕಾಲಿಕವಾಗಿ ಲಭ್ಯವಿಲ್ಲ, ದಯವಿಟ್ಟು ನೆಟ್ವರ್ಕ್ ಪರಿಶೀಲಿಸಿ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
         <translation>ಧ್ವನಿ ಸಂಭಾಷಣೆಯನ್ನು ಆಫ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
         <translation>ಚಿತ್ರವನ್ನು ಉತ್ಪಾದಿಸಲಾಗಿದೆ, ಅದನ್ನು ವೀಕ್ಷಿಸಲು ದಯವಿಟ್ಟು ಚಾಟ್ ಇಂಟರ್ಫೇಸ್ಗೆ ಬದಲಾಯಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
         <translation>ಯಾವುದೇ ಖಾತೆ ಇಲ್ಲ, ದಯವಿಟ್ಟು ಒಂದು ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
         <translation>ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 5 ಬಾರಿ ಉತ್ತರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
         <translation>ಯಶಸ್ವಿಯಾಗಿ ನಕಲಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
         <translation>ಧ್ವನಿ ಔಟ್ಪುಟ್ ಸಾಧನ ಕಂಡುಬಂದಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
         <translation>ಧ್ವನಿ ಔಟ್ಪುಟ್ ಸಾಧನ ಕಂಡುಬಂದಿಲ್ಲ, ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
         <translation>ಸೆಟ್ಟಿಂಗ್ಗಳು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
         <translation>ಬಗ್ಗೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
         <translation>ಮೋಡ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
         <translation>ವಿಂಡೋ ಮೋಡ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
         <translation>ಸೈಡ್ಬಾರ್ ಮೋಡ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
         <translation>ಸಹಾಯಕ ಪಟ್ಟಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
         <translation>ಏಜೆಂಟ್ ಪಟ್ಟಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
         <translation>ಏಜೆಂಟ್ ಸ್ಟೋರ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
         <translation>UOS ಸಿಸ್ಟಂ ಸಹಾಯಕ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
         <translation>ಡೀಪಿನ್ ಸಿಸ್ಟಂ ಸಹಾಯಕ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
         <translation>ವೈಯಕ್ತಿಕ ಜ್ಞಾನ ಸಹಾಯಕ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
         <translation>ದಯವಿಟ್ಟು ಜ್ಞಾನ ಬೇಸ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
         <translation>[ವೈಯಕ್ತಿಕ ಜ್ಞಾನ ಸಹಾಯಕ] ಬಳಸುವ ಮೊದಲು, ಜ್ಞಾನ ಬೇಸ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡುವುದು ಅವಶ್ಯಕ. ಜ್ಞಾನ ಬೇಸ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ನಂತರ, AI ನೀವು ಜ್ಞಾನ ಬೇಸ್ನಲ್ಲಿ ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ವಿಷಯದ ಆಧಾರದ ಮೇಲೆ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುತ್ತದೆ ಅಥವಾ ವಿಷಯವನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
         <translation>ದಯವಿಟ್ಟು ದೊಡ್ಡ ಮಾದರಿಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
         <translation>ದೊಡ್ಡ ಮಾದರಿಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ನಂತರ ಮಾತ್ರ ವೈಯಕ್ತಿಕ ಜ್ಞಾನ ಸಹಾಯಕವನ್ನು ಬಳಸಬಹುದು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
         <translation>ಕಾನ್ಫಿಗರ್ ಮಾಡಲು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
         <translation>ಇನ್ಸ್ಟಾಲ್ ಮಾಡಲು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
         <translation>ದಯವಿಟ್ಟು [EmbeddingPlugins] ಅನ್ನು ಇನ್ಸ್ಟಾಲ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
         <translation>ಈ ಸಹಾಯಕವನ್ನು ಚಲಾಯಿಸಲು EmbeddingPlugins ಅನ್ನು ಇನ್ಸ್ಟಾಲ್ ಮಾಡುವ ಅಗತ್ಯವಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
         <translation>ಫೈಲ್‌ಗಳನ್ನು ಇಲ್ಲಿ ಎಳೆದು ಸೇರಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
         <translation>ನೀವು ಕೇವಲ 3 ಫೈಲ್‌ಗಳನ್ನು ಸೇರಿಸಬಹುದು, ಬೆಂಬಲಿತ ಫೈಲ್ ಪ್ರಕಾರಗಳು ಒಳಗೊಂಡಿವೆ: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, ಕೋಡ್ ಫೈಲ್‌ಗಳು, ಇತ್ಯಾದಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
         <translation>MCP ಸರ್ವರ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
         <translation>MCP ಸರ್ವರ್ ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1064"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
         <translation>ಸರ್ವರ್ ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1065"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
         <translation>ಸೇರಿಸಲು ವಿಫಲವಾಗಿದೆ! ದೋಷದ ಕಾರಣ:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
         <translation>MCP ಪರಿಸರವಿಲ್ಲ. ದಯವಿಟ್ಟು 【UOS AI Agent】 ಅನ್ನು ಸ್ಥಾಪಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
         <translation>ಕರೆಮಾಡಲಾಗುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
         <translation>ಪೂರ್ಣಗೊಂಡಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
         <translation>ಕರೆ ವಿಫಲವಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
         <translation>ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
         <translation>ಪ್ಯಾರಾಮೀಟರುಗಳು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
         <translation>ಫಲಿತಾಂಶ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>MCP ಸರ್ವರ್‌ಗಾಗಿ, ಅಧಿಕೃತವಾಗಿ ಬಿಡುಗಡೆಯಾದ &quot;DeepSeek-Trial Account&quot; ಮಾದರಿಗೆ ಬದಲಾಯಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
         <translation>MCP ಸರ್ವರ್ ಆಜ್ಞೆಯನ್ನು ನಮೂದಿಸಿ, ಉದಾ: &quot;ನನ್ನ ಪರವಾಗಿ ವ್ಯವಸ್ಥೆಯನ್ನು ಡಾರ್ಕ್ ಮೋಡ್‌ಗೆ ಬದಲಾಯಿಸು&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
         <translation>ಏಜೆಂಟ್ ಸರ್ವರ್ ಲಭ್ಯವಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
         <translation>ಏಜೆಂಟ್ ಸರ್ವರ್ ಅಪವಾದ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
         <translation>MCP ಸರ್ವರ್ ಲಭ್ಯವಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
         <translation>ರದ್ದುಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
         <translation type="unfinished">ದೃಢೀಕರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
         <translation>MCP ಸೇವೆಯೊಂದಿಗೆ ಒಂದೇ ಆಜ್ಞೆಯಲ್ಲಿ ಬಹು-ಫೈಲ್ ಹಾಗೂ ಬಹು-ಅಪ್ಲಿಕೇಶನ್ ಕೆಲಸಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತಗೊಳಿಸಿ. ಈಗಲೇ ಪ್ರಯತ್ನಿಸಿ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
         <translation>ನಂತರ ಬಳಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
         <translation>ಈಗಲೇ ಸ್ಥಾಪಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
         <translation>MCP ಸರ್ವರ್ ಸಕ್ರಿಯಗೊಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
         <translation>MCP ಪರಿಸರ &quot;UOS AI Agent&quot; ಅನ್ನು ಸ್ಥಾಪಿಸಿದ ನಂತರ, ಕ್ಲಿಕ್ ಮಾಡಿ </translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
         <translation> ಮತ್ತು MCP ಸರ್ವರ್ ಪಟ್ಟಿಯಲ್ಲಿ &quot;uos-mcp&quot; ಆಯ್ಕೆಮಾಡಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
         <translation>ಹೀಗೆ ಹೇಳಿ ನೋಡಿ: &quot;ವ್ಯವಸ್ಥೆಯನ್ನು ಡಾರ್ಕ್ ಮೋಡ್‌ಗೆ ಬದಲಾಯಿಸು&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
         <translation>ಈಗಲೇ ಪ್ರಯತ್ನಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
         <translation>MCP ಸರ್ವರ್ ಸೇರಿಸಿ[ಮಾರ್ಗದರ್ಶನ ಪುಟ]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
         <translation>ಮೊದಲ ಬಾರಿಗೆ ಬಳಸುವವರು: ಆ್ಯಪ್ ಸ್ಟೋರ್ ಮೂಲಕ MCP ಪರಿಸರ &quot;UOS AI Agent&quot; ಅನ್ನು ಸ್ಥಾಪಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
         <translation>JSON ಫೈಲ್ ರೂಪುತೆರೆ ತಪ್ಪಾಗಿದೆ, ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಸಲ್ಲಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
         <translation>ಈಗಲೇ ಸ್ಥಾಪಿಸಿ &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
         <translation>ಸಾಮಾನ್ಯ ಚಾಟ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
         <translation>ಖಾಸಗಿ ಚಾಟ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1096"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
         <translation>ಈಗ ಖಾಸಗಿ ಚಾಟ್‌ನಲ್ಲಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1097"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
         <translation>ಖಾಸಗಿ ಚಾಟ್ ಸಂದೇಶಗಳು ಇತಿಹಾಸದಲ್ಲಿ ಉಳಿಸಲ್ಪಡುವುದಿಲ್ಲ ಮತ್ತು ಚಾಟ್ ಬಿಡುವಾಗ ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
         <translation>ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಪ್ರಶ್ನೋತ್ತರ ಶಾರ್ಟ್‌ಕಟ್ (Ctrl+Alt+Q), ಗರಿಷ್ಠ 3 ಚಿತ್ರಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
         <translation>ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡಿಂಗ್ ಸಮಯದಲ್ಲಿ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
         <translation>ನೀವು ಗರಿಷ್ಠ 3 ಫೈಲ್‌ಗಳನ್ನು ಅಥವಾ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಬಹುದು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
         <translation>ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
         <translation>ದಯವಿಟ್ಟು ಅಸಹಜ ಫೈಲ್ ಅನ್ನು ಅಳಿಸಿ ಮತ್ತೆ ಕಳುಹಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
         <translation>ಖಾಸಗಿ ಚಾಟ್ ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
         <translation>[ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಪ್ರಶ್ನೋತ್ತರ] ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
         <translation>ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆದು ಅದರ ವಿಷಯವನ್ನು UOS AI ಗೆ ಕಳುಹಿಸಿ. ನೀವು ನೇರವಾಗಿ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಬಹುದು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
         <translation type="unfinished">ಸರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
         <translation>ಮುಂದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
         <translation>[ ಖಾಸಗಿ ಚಾಟ್ ಮೋಡ್ ] ಸೇರಿಸಿ - ಚಾಟ್‌ಗಳು ಉಳಿಸಲ್ಪಡುವುದಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
         <translation>ಯಾವುದೇ ಪಠ್ಯವನ್ನು ಹೊರತೆಗೆಯಲಾಗಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
         <translation>ಚಿತ್ರದ ಗಾತ್ರ 15 MB ಮೀರಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
         <translation>ನಾಲೇಜ್ ಬೇಸ್ ತೆರೆದ ನಂತರ, ಉತ್ತರಗಳು ಅದರ ವಿಷಯದ ಆಧಾರದ ಮೇಲೆ ಇರುತ್ತವೆ. ಪ್ರತಿಕ್ರಿಯೆಯ ವೇಗವು ಯಂತ್ರದ ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ನಾಲೇಜ್ ಬೇಸ್‌ನ ಗಾತ್ರವನ್ನು ಅವಲಂಬಿಸಿರುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
         <translation>ಯಾವುದೇ ಆಜ್ಞೆ ಅಥವಾ MCP ಆಯ್ಕೆ ಮಾಡಿದಾಗ ನಾಲೇಜ್ ಬೇಸ್ ಲಭ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1115"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
         <translation>ನಾಲೇಜ್ ಬೇಸ್ ಸಕ್ರಿಯವಾಗಿರುವಾಗ MCP ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1116"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
         <translation>ನಾಲೇಜ್ ಬೇಸ್ ಸಕ್ರಿಯವಾಗಿರುವಾಗ ಆಜ್ಞೆಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
         <translation>ನಕಲಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
         <translation>ಮತ್ತೆ ಸಂಪಾದಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
         <translation>ನಕಲು ಯಶಸ್ವಿಯಾಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
         <translation>ನಕಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
         <translation>ಹುಡುಕಲಾಗುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
         <translation>%1 ಉಲ್ಲೇಖ ದಸ್ತಾವೇಜುಗಳನ್ನು ಪಡೆಯಲಾಗಿದೆ (%2s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
         <translation>ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
         <translation>ಎಲ್ಲಾ ದಾಖಲೆಗಳನ್ನು ಅಳಿಸುವುದೇ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
         <translation>ಒಮ್ಮೆ ಅಳಿಸಿದರೆ, ವಿಷಯವನ್ನು ಮರಳಿ ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
         <translation>ಅಧಿಕೃತ ಮಾದರಿಗಳನ್ನು ಶಿಫಾರಸು ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
         <translation>MCP ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>ಅಧಿಕೃತ ಮಾದರಿ &quot;DeepSeek-Trial Account&quot; ಬಳಸಲು ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
         <translation>ತ್ವರಿತ ತೆರೆಯಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1132"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
         <translation>MCP ಸರ್ವರ್‌ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತ ಮೋಡ್‌ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1133"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
         <translation>MCP ಸರ್ವರ್‌ಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತ ಮೋಡ್‌ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಲಾಗಿದೆ; ಒಂದು ಕ್ಲಿಕ್‌ನಲ್ಲಿ ಎಲ್ಲಾ MCP ಸರ್ವರ್‌ಗಳನ್ನು ಪ್ರವೇಶಿಸಬಹುದು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
         <translation>. ಇದರಿಂದ ಸಿಸ್ಟಂ ಸೆಟಪ್‌ ಹಾಗೂ ಫೈಲ್‌ ಪ್ರೊಸೆಸಿಂಗ್‌ನಂತಹ ಕೆಲಸಗಳನ್ನು ಒಂದೇ ಕ್ಲಿಕ್‌ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತಗೊಳಿಸಬಹುದು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
         <translation>MCP ಸರ್ವರ್‌ ಸೇರಿಸುವ ಆಯ್ಕೆಯನ್ನು ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗೆ ಸ್ಥಳಾಂತರಿಸಲಾಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
         <translation>ಇನ್ನಷ್ಟು MCP ಸರ್ವರ್‌ಗಳನ್ನು ಸೇರಿಸಲು, Settings &gt; MCP Server ಗೆ ಹೋಗಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
         <translation type="unfinished">ಗೊತ್ತಾಯಿತು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
         <translation>ಉಚಿತ ಮಾದರಿ ಕ್ರೆಡಿಟ್ಗಳು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
         <translation>ಪ್ರಸ್ತುತ ವ್ಯವಸ್ಥೆಯು ಡೀಪ್ಸೀಕ್ ಪ್ರಯೋಗ ಖಾತೆ ಮಾದರಿಯನ್ನು ನೀಡುತ್ತದೆ, ಇದು ಪ್ರತಿ ತಿಂಗಳ ಆರಂಭದಲ್ಲಿ ಉಚಿತ ಕೋಟಾವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನವೀಕರಿಸುತ್ತದೆ, ಇದರಿಂದ ನೀವು ಚಿಂತೆ ಇಲ್ಲದೆ ಬಳಸಬಹುದು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
         <translation>ಕ್ರೆಡಿಟ್ಗಳನ್ನು ಪಡೆಯಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
         <translation type="unfinished">ಉಚಿತ ಖಾತೆ ಪಡೆಯಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
         <translation>ಉಚಿತ ಕ್ರೆಡಿಟ್ಗಳನ್ನು ಪಡೆಯಿರಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
         <translation>ಯಶಸ್ವಿಯಾಗಿ ಪಡೆಯಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
         <translation>MCP ಸರ್ವರ್ ಸಕ್ರಿಯಗೊಳಿಸಿ&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
         <translation>MCP ಸರ್ವರ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
         <translation>MCP ಸರ್ವರ್ ಕಾನ್ಫಿಗರ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1001"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
+        <source>Enable MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
+        <source>Disable MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
+        <source>Configure MCP &amp; Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
         <translation>ನೀವು ಗರಿಷ್ಠ ಒಂದು ಫೈಲ್ ಮಾತ್ರ ಸೇರಿಸಬಹುದು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1002"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
         <translation>ಫೈಲ್ ಸ್ವರೂಪವು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
         <translation>ಫೈಲ್‌ನ ಪ್ರಮುಖ ವಿಷಯವನ್ನು ಸಂಕ್ಷಿಪ್ತಗೊಳಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
         <translation>ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
         <translation>ಫೈಲ್ ದೋಷ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
         <translation>ಫೈಲ್ ಅಳಿಸಲಾಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
         <translation>ಫೈಲ್ ಗಾತ್ರ 100MB ಮಿತಿಯನ್ನು ಮೀರಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
         <translation>ಡಾಕ್ಯುಮೆಂಟ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
         <translation>ಫೈಲ್ ಅಳಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
         <translation>ಯಾವುದೇ ಪಠ್ಯ ವಿಶ್ಲೇಷಿಸಲಾಗಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
         <translation>ಉಲ್ಲೇಖ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
         <translation>ಸೂಚನೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
         <translation>ಸಕ್ರಿಯಗೊಳಿಸಲು ಇನ್‌ಪುಟ್ ಬಾಕ್ಸ್‌ನಲ್ಲಿ &quot;/&quot; ಟೈಪ್ ಮಾಡಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1016"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
         <translation>ದಯವಿಟ್ಟು ನಮೂದಿಸಿ; “Ctrl+Enter” ಸಾಲು ಬದಲಾಯಿಸಲು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1017"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
         <translation>ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ನಮೂದಿಸಿ, ಅಥವಾ ಆದೇಶ ಆಯ್ಕೆಮಾಡಲು &quot;/&quot; ನಮೂದಿಸಿ
 ಹೊಸ ಸಾಲು ಪ್ರಾರಂಭಿಸಲು &quot;Ctrl+Enter&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
         <translation>ಹುಡುಕಾಟ ಪೂರ್ಣಗೊಂಡಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
         <translation>ಫಲಿತಾಂಶಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
         <translation>ಸಂಪಾದಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
         <translation>ಉಳಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1026"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
         <translation>ನಕಲಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
         <translation>ಹುಡುಕಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
         <translation>ಡೀಪ್‌ಥಿಂಕ್(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1031"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
         <translation>ಯೋಚನೆ ನಿಲ್ಲಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1032"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
         <translation>ಕೆಳಗೆ ಹಿಂತಿರುಗಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
         <translation>ಆಳವಾಗಿ ಯೋಚಿಸಲಾಗಿದೆ (%1 ಸೆಕೆಂಡ್‌ಗಳು)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
         <translation>ಹೊಸ ಸಂಭಾಷಣೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
         <translation>ಇತಿಹಾಸ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1038"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
         <translation>ಯಾವುದೇ ಇತಿಹಾಸ ದಾಖಲೆಗಳಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1039"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
         <translation>ಇಂದು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
         <translation>ನಿನ್ನೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
         <translation>ನೀವು ಸಂಭಾಷಣೆಯನ್ನು ಅಳಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ? ಅಳಿಸಿದ ನಂತರ ಅದನ್ನು ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
         <translation>ಈ ಸಂಭಾಷಣೆಯಲ್ಲಿ ಬಳಸಲಾದ %1 ಏಜೆಂಟ್ ಅಳಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
         <translation>ಈ ಸಂಭಾಷಣೆಯನ್ನು ವೀಕ್ಷಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಅದನ್ನು ವೀಕ್ಷಿಸಲು, ದಯವಿಟ್ಟು %1 ಏಜೆಂಟ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
         <translation>ಮೂಲ ಸಂಭಾಷಣೆ ಮಾದರಿಯನ್ನು ಅಳಿಸಲಾಗಿದೆ. ನಾವು ನಿಮಗಾಗಿ ಹೊಸ ಮಾದರಿಗೆ ಬದಲಾಯಿಸಿದ್ದೇವೆ, ಇದರಿಂದ ನೀವು ಸಂಭಾಷಣೆಯನ್ನು ಮುಂದುವರಿಸಬಹುದು.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
         <translation>ಶಿಫಾರಸುಗಳು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
         <translation>ಹೆಚ್ಚು</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1049"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
         <translation>ಮಾದರಿಯನ್ನು ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1050"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
         <translation>ಯಾವುದೇ ಮಾದರಿ ಇಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
         <translation>ಯಾವುದೇ ಮಾದರಿ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್ಗಳಲ್ಲಿ ಮಾದರಿಯನ್ನು ಸ್ಥಾಪಿಸಿ ಅಥವಾ ಕಾನ್ಫಿಗರ್ ಮಾಡಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
         <translation>ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸೃಷ್ಟಿಗಾಗಿ ವಿಷಯದ ಥೀಮ್ ಮತ್ತು ಅವಶ್ಯಕತೆಗಳನ್ನು ವಿವರಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
         <translation>ನೀವು ಅನುವಾದಿಸಲು ಬಯಸುವ ವಿಷಯವನ್ನು ನಮೂದಿಸಿ ಮತ್ತು ಗುರಿ ಭಾಷೆಯನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ. ಪೂರ್ವನಿಯೋಜಿತ ಅನುವಾದ ಚೀನೀಸ್‌ಗೆ ಆಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
         <translation>ನೀವು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಬೇಕಾದ ಪಠ್ಯವನ್ನು ನಮೂದಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಅವಶ್ಯಕತೆಗಳನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
         <translation>ಹೊಸ ಏಜೆಂಟ್ ಸೇರಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
         <translation>ಹೊಸ ಬರವಣಿಗೆ, ಪಠ್ಯ ಪ್ರಕ್ರಿಯೆ ಮತ್ತು ಅನುವಾದ ಏಜೆಂಟ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಈಗ ಅವುಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
         <translation>ಪ್ರಯತ್ನಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
         <translation>ಕೆಳಗಿನ ದಾಖಲೆಯ ಆಧಾರದ ಮೇಲೆ ಒಂದು ಲೇಖನ ಬರೆಯಿರಿ:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
+        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
         <translation>ಕೆಳಗಿನ ದಾಖಲೆಯನ್ನು ಇಂಗ್ಲಿಷ್‌ಗೆ ಅನುವಾದಿಸಿ:</translation>
     </message>
@@ -2750,6 +2820,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>ದೃಢೀಕರಿಸಿ</translation>
@@ -2810,6 +2882,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
+        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
+        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
         <translation>ಸೆಷನ್ ಸಮಯ ಮೀರಿದೆ</translation>
     </message>
@@ -2911,6 +2985,8 @@ Never combine explanation with translation or provide full translation after par
     <name>KnowledgeBaseListWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
         <translation>ಅಳಿಸಿ</translation>
     </message>
@@ -2921,6 +2997,9 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
         <translation>ದಯವಿಟ್ಟು ಮೊದಲು ಎಂಬೆಡಿಂಗ್ ಮಾದರಿ ಪ್ಲಗಿನ್ಗಳನ್ನು ಸ್ಥಾಪಿಸಿ</translation>
     </message>
@@ -2961,6 +3040,7 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
         <translation>ಈ ವೈಶಿಷ್ಟ್ಯಕ್ಕೆ ಹೆಚ್ಚಿನ ಹಾರ್ಡ್ವೇರ್ ಸಂಪನ್ಮೂಲಗಳು ಅಗತ್ಯವಿದೆ, ಮತ್ತು ಉಲ್ಲೇಖಿತ ಬೆಂಚ್ಮಾರ್ಕ್ ಸಂರಚನೆ: CPU Intel 11ನೇ ತಲೆಮಾರಿನ i7 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚು; 16GB ಅಥವಾ ಹೆಚ್ಚು ಮೆಮೊರಿ; NVIDIA ಗ್ರಾಫಿಕ್ಸ್ ಕಾರ್ಡ್ ಮತ್ತು 10 ಸರಣಿ ಅಥವಾ ಹೆಚ್ಚಿನದು ಉತ್ತಮ ಆಯ್ಕೆ. ಸಂರಚನೆ ತುಂಬಾ ಕಡಿಮೆಯಿದ್ದರೆ, ಲ್ಯಾಗಿಂಗ್ ಮತ್ತು ತಪ್ಪಾದ ಉತ್ತರಗಳಂತಹ ಸಮಸ್ಯೆಗಳು ಉಂಟಾಗಬಹುದು.</translation>
     </message>
@@ -2968,49 +3048,49 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="274"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>ಫಾಲೋಅಲಾಂಗ್‌</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="283"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">ಸಾಕಷ್ಟು ಜ್ಞಾನ ಆಧಾರ ಸಾಮರ್ಥ್ಯ ಇಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">ಜ್ಞಾನ ಆಧಾರದ ಒಟ್ಟು ಸಾಮರ್ಥ್ಯ %1M, ಉಳಿದಿರುವುದು %2. ಈ ಬಾರಿ ಸೇರಿಸಲಾದ ಫೈಲ್ಗಳ ಒಟ್ಟು ಸಂಖ್ಯೆ %3. ಜ್ಞಾನ ಆಧಾರಕ್ಕೆ ಸೇರಿಸುವ ಕಾರ್ಯಾಚರಣೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="290"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation type="unfinished">ಸರಿ</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="304"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">ಸಾಕಷ್ಟು ಡಿಸ್ಕ್ ಸ್ಥಳವಿಲ್ಲ</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">ಹೊಸದಾಗಿ ಸೇರಿಸಲಾದ ಫೈಲ್ಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು, ಕನಿಷ್ಠ %1 ಡಿಸ್ಕ್ ಸ್ಥಳ ಅಗತ್ಯವಿದೆ. ಪ್ರಸ್ತುತ ಉಳಿದಿರುವ ಸ್ಥಳ %2. ದಯವಿಟ್ಟು ಸಾಕಷ್ಟು ಹಾರ್ಡ್ ಡಿಸ್ಕ್ ಸ್ಥಳವನ್ನು ಸ್ಪಷ್ಟಗೊಳಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="323"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">ಜ್ಞಾನದ ಆಧಾರಕ್ಕೆ ಸೇರಿಸಲು ವೆಕ್ಟರೈಸೇಶನ್ ಮಾದರಿ ಪ್ಲಗಿನ್ ಅನ್ನು ಸ್ಥಾಪಿಸಬೇಕಾಗುತ್ತದೆ. ದಯವಿಟ್ಟು ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಮತ್ತು ಸ್ಥಾಪಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ಸ್ಟೋರ್ಗೆ ಹೋಗಿ.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="331"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">ಸ್ಥಾಪಿಸಬೇಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">ತಕ್ಷಣ ಸ್ಥಾಪಿಸಿ</translation>
@@ -3225,6 +3305,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
         <translation>ಒಮ್ಮೆ ಇನ್ಸ್ಟಾಲ್ ಮಾಡಿದ ನಂತರ, UOS AI ಬಳಸಲು ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕದ ಅಗತ್ಯವಿಲ್ಲ.</translation>
     </message>
@@ -3247,64 +3329,66 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="196"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
         <translation>ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಿಸಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="355"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
         <translation>ಬಳಕೆದಾರ ಒಪ್ಪಂದ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="366"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
         <translation>UOS AI ಬಳಕೆದಾರ ಒಪ್ಪಂದ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="367"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
         <translation>ಓದಿ ಮತ್ತು ಒಪ್ಪಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="393"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
         <translation>ಪ್ರಾಕ್ಸಿ ಸೆಟ್ಟಿಂಗ್ಗಳು</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
         <translation>ಸೆಟ್ಟಿಂಗ್ಗಳಿಗೆ ಹೋಗಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="483"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
         <translation>ಮಾದರಿ ಸಂರಚನೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="564"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
         <translation>ಉಚಿತ ಖಾತೆ ಚಟುವಟಿಕೆ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>ದೃಢೀಕರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="671"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation>ಜ್ಞಾನದ ಆಧಾರಕ್ಕೆ ಸೇರಿಸಲು ವೆಕ್ಟರೈಸೇಶನ್ ಮಾದರಿ ಪ್ಲಗಿನ್ ಅನ್ನು ಸ್ಥಾಪಿಸಬೇಕಾಗುತ್ತದೆ. ದಯವಿಟ್ಟು ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಮತ್ತು ಸ್ಥಾಪಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ಸ್ಟೋರ್ಗೆ ಹೋಗಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="679"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation>ಸ್ಥಾಪಿಸಬೇಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="680"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation>ತಕ್ಷಣ ಸ್ಥಾಪಿಸಿ</translation>
@@ -3339,6 +3423,8 @@ Never combine explanation with translation or provide full translation after par
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
         <translation>ಅಳಿಸಿ</translation>
     </message>
@@ -3522,58 +3608,60 @@ Never combine explanation with translation or provide full translation after par
         <translation>ನಿಮ್ಮ ಅನುವಾದ ಸಹಾಯಕ, ಬಹುಭಾಷೆಗಳನ್ನು ಕರಗತ ಮಾಡಿಕೊಂಡಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="310"/>
+        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>ಸರಿ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="834"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
         <source>Search</source>
         <translation>ಹುಡುಕು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="836"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
         <source>Explain</source>
         <translation>ವಿವರಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="838"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
         <source>Summary</source>
         <translation>ಸಾರಾಂಶ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="840"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
         <source>Translate</source>
         <translation>ಅನುವಾದಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="842"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
         <source>Continue Writing</source>
         <translation>ಬರೆಯುವುದನ್ನು ಮುಂದುವರಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="844"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
         <source>Expand</source>
         <translation>ವಿಸ್ತರಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
         <source>Polish</source>
         <translation>ಪಾಲಿಶ್</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
         <source>Correct</source>
         <translation>ಸರಿಪಡಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
         <source>Add to the AI knowledge base</source>
         <translation>AI ಜ್ಞಾನಕೋಶಕ್ಕೆ ಸೇರಿಸಿ</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
@@ -3668,7 +3756,7 @@ Never combine explanation with translation or provide full translation after par
         <translation>ಅರೇಬಿಕ್‌ (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="25"/>
+        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3784,6 +3872,12 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>SessionPrivate</name>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="313"/>
+        <location filename="../src/wrapper/session_p.cpp" line="493"/>
+        <location filename="../src/wrapper/session_p.cpp" line="607"/>
+        <location filename="../src/wrapper/session_p.cpp" line="856"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
         <translation>ಯುಒಎಸ್ ಎಐ ಬಳಸಲು ಮೊದಲು ಎಐ ಮಾದರಿ ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಬೇಕಾಗಿದೆ. ದಯವಿಟ್ಟು ಮೊದಲು ಮಾದರಿ ಖಾತೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ.</translation>
     </message>
@@ -3794,6 +3888,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="1285"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
         <translation type="unfinished">ಯಶಸ್ವಿಯಾಗಿ ಪಡೆಯಲಾಗಿದೆ</translation>
     </message>
@@ -3819,6 +3914,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wrapper/session_p.cpp" line="1304"/>
+        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation type="unfinished">ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
@@ -3826,7 +3922,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
         <source>Feedback</source>
         <translation>ಪ್ರತಿಕ್ರಿಯೆ</translation>
     </message>
@@ -3930,27 +4026,27 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1141"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>ನಾನು ಇನ್ನೂ ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಅಳವಡಿಸಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1145"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
         <source>service is not available!</source>
         <translation>ಸೇವೆ ಲಭ್ಯವಿಲ್ಲ!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1150"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
         <source>Invalid parameter!</source>
         <translation>ಅಮಾನ್ಯ ನಿಯತಾಂಕ!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1155"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
         <source>This app cannot be found!</source>
         <translation>ಈ ಅಪ್ಲಿಕೇಶನ್ ಕಂಡುಬಂದಿಲ್ಲ!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1160"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
         <source>Failed to start application!</source>
         <translation>ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಾರಂಭಿಸಲು ವಿಫಲವಾಗಿದೆ!</translation>
     </message>
@@ -3958,67 +4054,67 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="554"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
         <translation>ಬ್ರೈಟ್ನೆಸ್ ಈಗಾಗಲೇ ಗರಿಷ್ಠ ಮಟ್ಟದಲ್ಲಿದೆ ಮತ್ತು ಮತ್ತಷ್ಟು ಹೆಚ್ಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="564"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
         <translation>ಬ್ರೈಟ್ನೆಸ್ ಈಗಾಗಲೇ ಕನಿಷ್ಠ ಮಟ್ಟದಲ್ಲಿದೆ ಮತ್ತು ಮತ್ತಷ್ಟು ಕಡಿಮೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="791"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
         <translation>ನಿಮ್ಮ ಸಿಸ್ಟಮ್ ಮೆಮೊರಿ %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="811"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
         <translation>ಭಾಷಾ ಸೆಟ್ಟಿಂಗ್ ಇಂಟರ್ಫೇಸ್ ತೆರೆಯಲಾಗಿದೆ. ದಯವಿಟ್ಟು ಈ ಇಂಟರ್ಫೇಸ್ನಲ್ಲಿ ಅದನ್ನು ಹೊಂದಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="855"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
         <translation>ಪ್ರಸ್ತುತ ಮೋಡ್ ಈಗಾಗಲೇ %1 ಮೋಡ್ ಆಗಿದೆ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="869"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
         <translation>ಮುಚ್ಚಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಪ್ರಸ್ತುತ ಮೋಡ್ %1 ಗುರಿ ಮೋಡ್‌ಗೆ ಹೊಂದಾಣಿಕೆಯಾಗುವುದಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="882"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
         <translation>ಸಮತೋಲನ ಮೋಡ್ ಅನ್ನು ಆಫ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="900"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
         <translation>ಲಾಕ್ ಸ್ಕ್ರೀನ್ ನಿಮಗಾಗಿ ತೆರೆಯಲಾಗಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="914"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
         <translation>ಸ್ಕ್ರೀನ್ ಶಾಟಿಂಗ್ ಅಥವಾ ರೆಕಾರ್ಡಿಂಗ್ ಪೂರ್ಣಗೊಂಡಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="931"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
         <translation>ಕೇವಲ ಒಂದು ಸ್ಕ್ರೀನ್, ಸ್ಕ್ರೀನ್ ಮೋಡ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="943"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
         <translation>ಇದು ಪ್ರಸ್ತುತ ಡಿಸ್ಪ್ಲೇ ಮೋಡ್‌ಗೆ ಸಮನಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1016"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
         <translation>ಕೇವಲ ಒಂದು ಸ್ಕ್ರೀನ್, ಸ್ಕ್ರೀನ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1121"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
         <translation>ನಿಮ್ಮ ಆದೇಶವನ್ನು ನೀಡಲಾಗಿದೆ.</translation>
     </message>
@@ -4045,6 +4141,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>WXQFCodeTranslation</name>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
         <translation>ಸರ್ವರ್ ಆಂತರಿಕ ದೋಷ</translation>
     </message>
@@ -4065,6 +4162,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
+        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
         <translation>ಮಾದರಿ ಆಹ್ವಾನ ದೋಷ: ಮಾದರಿ ವಿನಂತಿ ಮಿತಿಯನ್ನು ತಲುಪಿದೆ, ಅಥವಾ ಮಾದರಿ ಆಫ್ಲೈನ್ ಆಗಿದೆ. ಸಲಹೆಗಳು: ಮಾದರಿಯನ್ನು ಮತ್ತೆ ಸೇರಿಸಿ, ಅಥವಾ ದೊಡ್ಡ ಮಾದರಿ ಸೇವಾ ಪೂರೈಕೆದಾರರ ಗ್ರಾಹಕ ಸೇವೆಯನ್ನು ಸಂಪರ್ಕಿಸಿ ಈ ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಲು.</translation>
     </message>
@@ -4266,6 +4364,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
         <translation>ನಾನು 18 ವರ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚು ವಯಸ್ಸಿನವನು ಎಂದು ನಾನು ಧೃಡಪಡಿಸುತ್ತೇನೆ. ನಾನು &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI ಬಳಕೆದಾರ ಒಪ್ಪಂದ&quot;&lt;/a&gt; ಅನ್ನು ಅಂಗೀಕರಿಸುತ್ತೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ, ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಮೂಲಕ ನಾನು ಕಳುಹಿಸುವ ಮತ್ತು ಸ್ವೀಕರಿಸುವ ವಿಷಯಗಳು ದೊಡ್ಡ ಮಾದರಿ ಸೇವಾ ಪೂರೈಕೆದಾರರೊಂದಿಗೆ ನೇರ ಡೇಟಾ ವಿನಿಮಯಗಳು ಮತ್ತು ಕಂಪನಿಯೊಂದಿಗೆ ಯಾವುದೇ ಸಂಬಂಧವಿಲ್ಲ.</translation>
     </message>
@@ -4322,6 +4421,8 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>ದೃಢೀಕರಿಸಿ</translation>
@@ -4456,6 +4557,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
+        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
         <translation>ಪ್ರಸ್ತುತ ತುಂಬಾ ಭೇಟಿಕಾರರಿದ್ದಾರೆ, ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
@@ -4599,6 +4701,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
         <translation>ನೆಟ್ವರ್ಕ್ ದೋಷ, ದೋಷ id: ${error_id}, ದಯವಿಟ್ಟು ಗ್ರಾಹಕ ಸೇವೆಯನ್ನು ಸಂಪರ್ಕಿಸಿ</translation>
     </message>
@@ -4624,6 +4727,8 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
+        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
         <translation>ಪ್ರಸ್ತುತ ಹಲವಾರು ಭೇಟಿಕಾರರಿದ್ದಾರೆ, ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</translation>
     </message>
@@ -4647,6 +4752,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
         <translation>ಅಗತ್ಯವಿದೆ, ದಯವಿಟ್ಟು ನಮೂದಿಸಿ</translation>
     </message>
@@ -4838,6 +4944,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <name>uos_ai::AiWriterDialog</name>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>ನೀವು ರಚಿಸಲು ಬಯಸುವುದನ್ನು ನಮೂದಿಸಿ (ಉತ್ಪಾದಿಸಲು Enter ಒತ್ತಿರಿ/ನಿರ್ಗಮಿಸಲು Esc ಒತ್ತಿರಿ)</translation>
     </message>
@@ -4848,6 +4955,10 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
         <source>Artificial Intelligence</source>
         <translation>ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ</translation>
     </message>
@@ -4903,6 +5014,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
         <source>Cancel</source>
         <translation>ರದ್ದುಮಾಡು</translation>
     </message>
@@ -4990,6 +5102,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
         <source>Current model: </source>
         <translation>ಪ್ರಸ್ತುತ ಮಾದರಿ: </translation>
     </message>
@@ -5233,6 +5346,7 @@ json
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
         <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
         <source>Add MCP Server</source>
         <translation>MCP ಸರ್ವರ್‌ ಸೇರಿಸಿ</translation>
     </message>
@@ -5242,32 +5356,33 @@ json
         <translation>MCP ಸರ್ವರ್‌ ಸಂಪಾದಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
         <source>JSON configuration:</source>
         <translation>JSON ಕಾನ್ಫಿಗರೇಶನ್‌:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="101"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>ದಯವಿಟ್ಟು MCP JSON ಕಾನ್ಫಿಗರೇಷನ್ ಕೋಡ್ ಅನ್ನು ಇನ್‌ಪುಟ್ ಬಾಕ್ಸ್‌ಗೆ ಅಂಟಿಸಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="121"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
         <source>Describe</source>
         <translation>ವಿವರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>ವೇಗದ ಹುಡುಕಾಟ ಉಪಕರಣಗಳಿಗೆ ಸಹಾಯವಾಗುವಂತೆ MCP ಸರ್ವರ್ ಕಾರ್ಯಗಳನ್ನು ವಿವರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="156"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
         <source>Cancel</source>
         <translation>ರದ್ದು</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
         <source>Confirm</source>
         <translation type="unfinished">ದೃಢೀಕರಿಸಿ</translation>
     </message>
@@ -5304,6 +5419,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
         <translation>ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</translation>
     </message>
@@ -5329,6 +5445,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
         <translation>ಡೀಪ್ಸೀಕ್ ಖಾತೆ ಹಕ್ಕು ವಿಫಲವಾಗಿದೆ!</translation>
     </message>
@@ -5349,6 +5466,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
+        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
         <translation>ಯುಒಎಸ್ ಎಐ ಅನ್ನು ಡೀಪ್ಸೀಕ್ ನೊಂದಿಗೆ ಸಂಪೂರ್ಣವಾಗಿ ಸಂಯೋಜಿಸಲಾಗಿದೆ</translation>
     </message>
@@ -5412,27 +5530,27 @@ json
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="61"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
         <translation>MCP ಸರ್ವರ್ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತಿದೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="80"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
         <translation>ಕೆಲವು ಮೂರನೇ ಪಕ್ಷದ MCP ಸರ್ವರ್ ವೈಶಿಷ್ಟ್ಯಗಳು ಕೆಲವು ಅಪಾಯಗಳನ್ನು ಹೊಂದಿವೆ. ದಯವಿಟ್ಟು ಅವುಗಳನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಬಳಸಿ. ನೀವು ಈ ಸೇವೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಒಳನಿರ್ಮಿತ ಉಪಕರಣ ಅಗತ್ಯ ಅವಲಂಬನೆಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತದೆ. ಈ ಡೌನ್‌ಲೋಡ್ ಪ್ರಕ್ರಿಯೆಯು ಡೇಟಾ ಶುಲ್ಕಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ದಯವಿಟ್ಟು ಈ ಅಪಾಯಗಳ ಬಗ್ಗೆ ತಿಳಿದುಕೊಂಡು ಎಚ್ಚರಿಕೆಯಿಂದ ಮುಂದುವರೆಯಿರಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="96"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
         <translation>ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಈ ಸೇವೆಯನ್ನು ಬಳಸಲು ಒಪ್ಪುತ್ತೇನೆ</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="109"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
         <translation>AI ಅನ್ನು ಕೇಳಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="111"/>
+        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
         <translation type="unfinished">ದೃಢೀಕರಿಸಿ</translation>
     </message>
@@ -5477,6 +5595,7 @@ json
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
         <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
+        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>ಇದರ ಬಗ್ಗೆ ಏನನ್ನು ಕೇಳಬೇಕು?</translation>
     </message>
@@ -5505,6 +5624,7 @@ json
     </message>
     <message>
         <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>ಹಳೆಯ ಕಸ್ಟಮ್ ಸರ್ವರ್ ಕಾನ್ಫಿಗ್ ತೆಗೆದುಹಾಕಲು ವಿಫಲವಾಗಿದೆ, ಸರ್ವರ್ ಹೆಸರು: %0</translation>
     </message>
@@ -5534,6 +5654,7 @@ json
     <name>uos_ai::MCPServer</name>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="67"/>
+        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
         <translation>ಅದೇ ಹೆಸರಿನ MCP ಸರ್ವರ್: %0.</translation>
     </message>
@@ -5544,6 +5665,7 @@ json
     </message>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="89"/>
+        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
         <translation>ಸರ್ವರ್ ಹೆಸರು &apos;%1&apos; ಈಗಾಗಲೇ ಇದೆ</translation>
     </message>
@@ -5564,6 +5686,7 @@ json
     </message>
     <message>
         <location filename="../src/agent/mcpserver.cpp" line="223"/>
+        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
         <translation>ಸರ್ವರ್ &apos;%1&apos; ಕಂಡುಬಂದಿಲ್ಲ.</translation>
     </message>
@@ -5619,7 +5742,7 @@ json
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="60"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
         <source>built-in</source>
         <translation>ಅಂತರ್ನಿರ್ಮಿತ</translation>
     </message>
@@ -5627,47 +5750,47 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="120"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
         <source>MCP Server</source>
         <translation>MCP ಸರ್ವರ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
         <source>All</source>
         <translation>ಎಲ್ಲಾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>Built-in</source>
         <translation>ಅಂತರ್ನಿರ್ಮಿತ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Custom</source>
         <translation type="unfinished">ಕಸ್ಟಮ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
         <source>Add MCP Server</source>
         <translation>MCP ಸರ್ವರ್ ಸೇರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="324"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
         <source>Confirm deletion %1?</source>
         <translation>%1 ಅನ್ನು ಅಳಿಸಲು ಖಚಿತವಾಗಿದೆಯೇ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="325"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>ಅಳಿಸಿದ ನಂತರ ಈ ಸರ್ವರ್ ಲಭ್ಯವಿರುವುದಿಲ್ಲ. ಎಚ್ಚರಿಕೆಯಿಂದ ಮುಂದುವರೆಯಿರಿ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>Cancel</source>
         <translation>ರದ್ದುಮಾಡಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Delete</source>
         <translation type="unfinished">ಅಳಿಸಿ</translation>
     </message>
@@ -5680,17 +5803,17 @@ json
         <translation>Mcp ಪರಿಸರ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="90"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
         <source>MCP Server</source>
         <translation>MCP ಸರ್ವರ್</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="165"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
         <source>Install UOS AI Agent</source>
         <translation>UOS AI ಏಜೆಂಟ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>ಸ್ಥಾಪನೆಯ ನಂತರ MCP ಸರ್ವರ್ ಲಭ್ಯವಾಗುತ್ತದೆ.</translation>
     </message>
@@ -5712,6 +5835,7 @@ json
     <name>uos_ai::ModelScopeItem</name>
     <message>
         <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
         <source>Install</source>
         <translation>ಸ್ಥಾಪಿಸಿ</translation>
     </message>
@@ -5764,6 +5888,7 @@ json
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>ಸರಿ</translation>
@@ -5816,6 +5941,8 @@ json
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
         <source>Delete</source>
         <translation>ಅಳಿಸಿ</translation>
     </message>
@@ -5939,6 +6066,11 @@ json
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
+        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>ಅಕ್ಷರ ಮಿತಿಯನ್ನು ಮೀರಿದೆ</translation>
     </message>
@@ -5947,11 +6079,15 @@ json
     <name>uos_ai::SkillListItem</name>
     <message>
         <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Enable</source>
         <translation>ಸಕ್ರಿಯಗೊಳಿಸಿ</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Disabled</source>
         <translation>ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</translation>
     </message>
@@ -5992,6 +6128,83 @@ json
         <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>ಅಳಿಸಿ</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
+        <source>built-in</source>
+        <translation type="unfinished">ಅಂತರ್ನಿರ್ಮಿತ</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
+        <source>Skill List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
+        <source>Import Skill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
+        <source>Supported files</source>
+        <translation type="unfinished">ಬೆಂಬಲಿತ ಫೈಲ್‌ಗಳು</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
+        <source>Confirm deletion %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
+        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
+        <source>Delete</source>
+        <translation type="unfinished">ಅಳಿಸಿ</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillServerWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
+        <source>Skill Enviorment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
+        <source>Agent Skills</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
+        <source>Configure </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
+        <source>MCP environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
+        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
+        <source>After configuration you can use agent skills</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6050,51 +6263,52 @@ json
     </message>
     <message>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>ಇದನ್ನು ಮತ್ತೆ ಸಕ್ರಿಯಗೊಳಿಸಲು &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ&lt;/a&gt; ಹೋಗಿ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="782"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
         <source>The added content must be more than 10 words</source>
         <translation>ಸೇರಿಸಿದ ವಿಷಯವು 10 ಪದಗಳಿಗಿಂತ ಹೆಚ್ಚಿರಬೇಕು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="831"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
         <source>Search</source>
         <translation>ಹುಡುಕು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="835"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
         <source>Explain</source>
         <translation>ವಿವರಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="839"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
         <source>Summary</source>
         <translation>ಸಾರಾಂಶ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="843"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
         <source>Translate</source>
         <translation>ಅನುವಾದಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="847"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
         <source>Continue Writing</source>
         <translation>ಬರೆಯುವುದನ್ನು ಮುಂದುವರಿಸಿ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="851"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
         <source>Expand</source>
         <translation>ವಿಸ್ತರಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="855"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
         <source>Correct</source>
         <translation>ಸರಿಪಡಿಸು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="863"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
         <source>Add to the AI knowledge base</source>
         <translation>AI ಜ್ಞಾನ ಆಧಾರಕ್ಕೆ ಸೇರಿಸಿ</translation>
     </message>
@@ -6114,7 +6328,7 @@ json
         <translation>ಕಸ್ಟಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="859"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
         <source>Polish</source>
         <translation>ಪಾಲಿಶ್</translation>
     </message>
@@ -6122,12 +6336,12 @@ json
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="643"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
         <translation>UOS AI ಫಾಲೋಅಲಾಂಗ್</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="659"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
         <source>Added</source>
         <translation>ಸೇರಿಸಲಾಗಿದೆ</translation>
     </message>

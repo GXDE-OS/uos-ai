@@ -18,7 +18,7 @@ SystemControlInst::SystemControlInst()
 {
     availableAssis = {AssistantType::UOS_AI};
     availableManu = {ModelManufacturer::BAIDU_WXQF};
-    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, DeepSeek_Uos_Free};
+    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, UOS_FREE};
 
     tagName = tr("System Control");
     tagNameEn = "System Control";
@@ -47,7 +47,7 @@ LaunchAppInst::LaunchAppInst()
 {
     availableAssis = {AssistantType::UOS_AI};
     availableManu = {ModelManufacturer::BAIDU_WXQF};
-    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, DeepSeek_Uos_Free};
+    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, UOS_FREE};
 
     tagName = tr("Launch or Close App");
     tagNameEn = "Launch or Close App";
@@ -76,7 +76,7 @@ SendMailInst::SendMailInst()
 {
     availableAssis = {AssistantType::UOS_AI};
     availableManu = {ModelManufacturer::BAIDU_WXQF};
-    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, DeepSeek_Uos_Free};
+    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, UOS_FREE};
 
     tagName = tr("Send Mail");
     tagNameEn = "Send Mail";
@@ -139,7 +139,7 @@ CreateScheduleInst::CreateScheduleInst()
 {
     availableAssis = {AssistantType::UOS_AI};
     availableManu = {ModelManufacturer::BAIDU_WXQF};
-    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, DeepSeek_Uos_Free};
+    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, UOS_FREE};
 
     tagName = tr("Create Schedule");
     tagNameEn = "Create Schedule";
@@ -289,7 +289,7 @@ MultimediaControlInst::MultimediaControlInst()
 {
     availableAssis = {AssistantType::UOS_AI};
     availableManu = {ModelManufacturer::BAIDU_WXQF};
-    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, DeepSeek_Uos_Free};
+    availableLlm = {LLMChatModel::LOCAL_YOURONG_1_5B, LLMChatModel::LOCAL_YOURONG_7B, UOS_FREE};
 
     tagName = tr("Multimedia Control");
     tagNameEn = "Multimedia Control";

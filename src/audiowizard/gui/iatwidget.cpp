@@ -407,14 +407,43 @@ void IatWidget::onAudioData(QByteArray data) {
     m_model->sendData(data);
 }
 
+// 辅助函数：使用 QProcess 安全地执行 dbus-send 命令
+static bool executeDBusCommand(const QStringList &args)
+{
+    QProcess process;
+    process.setProgram("dbus-send");
+    process.setArguments(args);
+    qint64 pid = -1;
+    bool ok = QProcess::startDetached(process.program(), process.arguments(), QString(), &pid);
+    if (!ok || pid < 0) {
+        qWarning() << "Failed to execute dbus-send:" << process.errorString();
+        return false;
+    }
+    return true;
+}
+
 void IatWidget::onOpenConfigDialog() {
 #if defined(COMPILE_ON_V25)
     DbusControlCenterRequest dbus;
     dbus.showPage("sound");
 #elif defined(COMPILE_ON_V23)
-    QProcess::startDetached("dbus-send --print-reply --dest=org.deepin.dde.ControlCenter1 /org/deepin/dde/ControlCenter1 org.deepin.dde.ControlCenter1.ShowPage string:\"sound\"");
+    // 使用分离的参数替代单个字符串，避免命令注入风险
+    executeDBusCommand({
+        "--print-reply",
+        "--dest=org.deepin.dde.ControlCenter1",
+        "/org/deepin/dde/ControlCenter1",
+        "org.deepin.dde.ControlCenter1.ShowPage",
+        "string:sound"
+    });
 #else
-    QProcess::startDetached("dbus-send --print-reply --dest=com.deepin.dde.ControlCenter /com/deepin/dde/ControlCenter com.deepin.dde.ControlCenter.ShowPage string:\"sound\" string:\"Microphone\"");
+    executeDBusCommand({
+        "--print-reply",
+        "--dest=com.deepin.dde.ControlCenter",
+        "/com/deepin/dde/ControlCenter",
+        "com.deepin.dde.ControlCenter.ShowPage",
+        "string:sound",
+        "string:Microphone"
+    });
 #endif
 
     this->close();

@@ -1,5 +1,5 @@
 <template>
-    <div class="conversion-mode" v-show="show" @click.stop :style="{...conversionModeStyle, 'width': store.IsSimplifiedChinese ? '164px' : '214px'}">
+    <div class="conversion-mode" v-show="show" @click.stop :style="{...conversionModeStyle}">
         <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
             :show-after="1000" :offset="2" :content="mcpServerEnable">
             <div class="mode-option" @click="switchMcpStatus()" style="margin-top: 8px;">
@@ -7,9 +7,9 @@
             </div>
         </el-tooltip>
         <el-tooltip popper-class="uos-tooltip" effect="light" :show-arrow="false" :enterable="false"
-            :show-after="1000" :offset="2" :content="store.loadTranslations['Configure MCP Server']">
+            :show-after="1000" :offset="2" :content="store.loadTranslations['Configure MCP & Skills']">
             <div class="mode-option" @click="mcpSetting()" style="margin-bottom: 8px;">
-                <span class="mode-text">{{ store.loadTranslations['Configure MCP Server'] }}</span>
+                <span class="mode-text">{{ store.loadTranslations['Configure MCP & Skills'] }}</span>
             </div>
         </el-tooltip>
         
@@ -45,10 +45,9 @@ const mcpServerEnable = computed(() => {
     }
     
     if (store.IsOpenMcpServer && store.IsInstallUOSAiAgent) {
-        return store.loadTranslations['Disable MCP Server'] || 'Disable MCP Server'
+        return store.loadTranslations['Disable MCP & Skills'] || 'Disable MCP & Skills'
     } else {
-        const translation = store.loadTranslations['Enable MCP Server&']
-        return translation ? translation.replace('&', '') : 'Enable MCP Server'
+        return store.loadTranslations['Enable MCP & Skills'] || 'Enable MCP & Skills'
     }
 })
 
@@ -151,6 +150,7 @@ onUnmounted(() => {
     position: absolute;
     top: 36px;
     // width: 164px;
+    max-width: 222px;
     height: 84px;
     background-color: var(--uosai-color-conversion-mode-bg);
     border-radius: 18px;
@@ -174,7 +174,7 @@ onUnmounted(() => {
             font-size: 1rem;
             font-weight: 500;
             margin-left: 32px;
-            margin-right: 10px;
+            margin-right: 32px;
             color: var(--uosai-color-conversion-mode-text);
             user-select: none;
             white-space: nowrap;

@@ -13,6 +13,7 @@
 #include "coze/cozeagent.h"
 #include "deepseek/deepseekai.h"
 #include "deepseek/deepseekfree.h"
+#include "uosfree/uosfree.h"
 
 #include <QFile>
 #include <QtDBus>
@@ -74,6 +75,9 @@ QSharedPointer<LLM> LLMUtils::getCopilot(const LLMServerProxy &serverproxy)
         break;
     case::LLMChatModel::DeepSeek_Uos_Free:
         copilot.reset(new uos_ai::DeepSeekFree(serverproxy));
+        break;
+    case LLMChatModel::UOS_FREE:
+        copilot.reset(new uos_ai::UosFree(serverproxy));
         break;
     }
 

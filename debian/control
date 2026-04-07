@@ -10,6 +10,7 @@ Build-Depends:
  libdocparser-dev,
  libjwt-dev,
  libssl-dev,
+ libyaml-cpp-dev,
  libfcitx5core-dev,
  libfcitx5utils-dev,
  fcitx5-modules-dev,
@@ -35,6 +36,8 @@ Build-Depends:
  qtbase5-dev,
  libdtkwidget-dev,
  gxde-desktop-base,
+ libprotobuf-dev,
+ protobuf-compiler
 
 Standards-Version: 4.5.0
 Package: uos-ai
