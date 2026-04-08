@@ -37,6 +37,9 @@ int main(int argc, char *argv[])
 #else
     qputenv("QTWEBENGINE_CHROMIUM_FLAGS", "--enable-logging --log-level=2 --no-sandbox");
 #endif
+    // 修复通过 dbus 启动 uos ai 时 UI 显示异常的问题
+    qputenv("QT_QPA_PLATFORMTHEME", "deepin");
+    qputenv("QT_QPA_PLATFORM", "dxcb;dwayland");
 
     Application a(argc, argv);
 

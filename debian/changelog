@@ -1,3 +1,9 @@
+uos-ai (2.13.504-1) UNRELEASED; urgency=medium
+
+  * 修复通过 dbus 启动 uos ai 时 UI 显示异常的问题
+
+ -- gfdgd_xi <3025613752@qq.com>  Wed, 08 Apr 2026 21:45:44 +0800
+
 uos-ai (2.13.504) unstable; urgency=medium
 
   * update uos ai baseline version to V1.3.5
