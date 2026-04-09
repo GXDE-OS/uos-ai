@@ -108,7 +108,7 @@ static QStringList readCustomSkillPaths()
  * @return 排序后的技能列表
  *
  * 排序规则：
- * 1. 一级排序：uos-ai 放在第一位，其余按来源名称自然顺序
+ * 1. 一级排序：builtin > uos-ai > 其他来源
  * 2. 二级排序：在同一来源内，按技能名称排序
  */
 static QList<SkillInfo> sortSkills(const QList<SkillInfo> &skills)
@@ -116,18 +116,22 @@ static QList<SkillInfo> sortSkills(const QList<SkillInfo> &skills)
     QList<SkillInfo> result = skills;
 
     std::sort(result.begin(), result.end(), [](const SkillInfo &a, const SkillInfo &b) {
-        /* 一级排序：uos-ai 放在第一位，其余按来源名自然顺序 */
-        bool aIsUosAi = (a.source == "uos-ai");
-        bool bIsUosAi = (b.source == "uos-ai");
+        /* 一级排序：builtin > uos-ai > 其他来源 */
+        auto getPriority = [](const QString &source) -> int {
+            if (source == "builtin") return 0;  /* 最高优先级：默认预装技能 */
+            if (source == "uos-ai") return 1;   /* 次高优先级：用户自定义技能 */
+            return 2;                            /* 其他来源 */
+        };
 
-        if (aIsUosAi && !bIsUosAi) {
-            return true;
+        int aPriority = getPriority(a.source);
+        int bPriority = getPriority(b.source);
+
+        if (aPriority != bPriority) {
+            return aPriority < bPriority;
         }
-        if (!aIsUosAi && bIsUosAi) {
-            return false;
-        }
+
         if (a.source != b.source) {
-            /* 非uos-ai来源，按来源名自然顺序 */
+            /* 同优先级内，按来源名自然顺序 */
             return a.source < b.source;
         }
 

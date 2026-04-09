@@ -1,4 +1,4 @@
-uos-ai (2.13.504-1) UNRELEASED; urgency=medium
+uos-ai (2.13.505) UNRELEASED; urgency=medium
 
   * 修复通过 dbus 启动 uos ai 时 UI 显示异常的问题
 
