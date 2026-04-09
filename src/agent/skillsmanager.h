@@ -133,7 +133,7 @@ public:
      * @return 所有技能的列表，按来源和名称排序
      *
      * 排序规则：
-     * 1. 一级排序：uos-ai 放在第一位，其余按来源名称自然顺序
+     * 1. 一级排序：builtin > uos-ai > 其他来源
      * 2. 二级排序：在同一来源内，按技能名称排序
      */
     QList<SkillInfo> skills() const;
@@ -143,7 +143,7 @@ public:
      * @return 所有已启用技能的列表，按来源和名称排序
      *
      * 排序规则：
-     * 1. 一级排序：uos-ai 放在第一位，其余按来源名称自然顺序
+     * 1. 一级排序：builtin > uos-ai > 其他来源
      * 2. 二级排序：在同一来源内，按技能名称排序
      */
     QList<SkillInfo> enabledSkills() const;

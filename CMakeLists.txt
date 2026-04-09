@@ -55,9 +55,7 @@ option(ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT "Enable Personal Knowledge Assistant"
 option(ENABLE_AI_BAR "Enable AI Bar" OFF)
 option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" ON)
 option(ENABLE_MCP "Enable MCP Server" ON)
-
-# chatbot
-add_definitions(-DENABLE_CHATBOT)
+option(ENABLE_CHATBOT "Enable ChatBot" ON)
 
 # 模型插件
 option(ENABLE_MODEL_FYDN "Enable FYDN Plugin" OFF)
@@ -93,6 +91,7 @@ if (${BUILD_OS_VERSION} MATCHES "25")
 
     if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
         set(ENABLE_MCP OFF)
+        set(ENABLE_CHATBOT OFF)
 #    else()
 #        set(ENABLE_MODEL_RPA ON)
     endif()
@@ -170,6 +169,10 @@ endif()
 
 if (ENABLE_MCP)
     add_definitions(-DENABLE_MCP)
+endif()
+
+if (ENABLE_CHATBOT)
+    add_definitions(-DENABLE_CHATBOT)
 endif()
 
 if (ENABLE_AI_BAR)

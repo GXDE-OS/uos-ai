@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 34474d0..77abe22 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
+ 
+ project(uos-ai VERSION 0.1 LANGUAGES CXX)
+ 
++INCLUDE_DIRECTORIES(/runtime/include/dde-dock)
++
+ set(CMAKE_CXX_STANDARD 11)
+ set(CMAKE_AUTOMOC ON)
+ set(CMAKE_AUTORCC ON)

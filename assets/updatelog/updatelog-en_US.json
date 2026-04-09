@@ -2,7 +2,7 @@
     {
         "version": "V2.13",
         "date-for-v20": "2026-03-05",
-        "date-for-v25": "2026-03-10",
+        "date-for-v25": "2026-03-20",
         "items": [
             {
                 "type": "new",
@@ -27,6 +27,10 @@
             {
                 "type": "new",
                 "description": "The default model is upgraded to \"Intelligent Routing\", dynamically providing deepseek‑v3.2 and GLM‑4.7 models."
+            },
+            {
+                "type": "new",
+                "description": "Deep integration of domestic IM apps. Native support for Feishu, DingTalk and QQ. Some architectural functions may differ."
             }
         ]
     },
