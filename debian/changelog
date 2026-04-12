@@ -1,8 +1,9 @@
-uos-ai (2.13.505) UNRELEASED; urgency=medium
+uos-ai (2.13.505gxde1) UNRELEASED; urgency=medium
 
   * 修复通过 dbus 启动 uos ai 时 UI 显示异常的问题
+  * 补充编译依赖
 
- -- gfdgd_xi <3025613752@qq.com>  Wed, 08 Apr 2026 21:45:44 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 12 Apr 2026 08:55:30 +0800
 
 uos-ai (2.13.504) unstable; urgency=medium
 

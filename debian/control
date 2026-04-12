@@ -37,7 +37,8 @@ Build-Depends:
  libdtkwidget-dev,
  gxde-desktop-base,
  libprotobuf-dev,
- protobuf-compiler
+ protobuf-compiler,
+ libqt5websockets5-dev
 
 Standards-Version: 4.5.0
 Package: uos-ai
