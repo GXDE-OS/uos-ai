@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=uos-ai
+Exec=/usr/bin/uos-ai-assistant --chat
+GenericName=UOS AI
+Icon=UosAiAssistantLogo
+Name=UOS AI
+Type=Application

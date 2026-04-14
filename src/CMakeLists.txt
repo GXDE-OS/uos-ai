@@ -233,6 +233,9 @@ endif()
 # xdg-autostart
 install(FILES ${CMAKE_SOURCE_DIR}/assets/autostart/uos-ai-assistant.autostart.desktop
     DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/xdg/autostart)
+# launcher desktop icon
+install(FILES ${CMAKE_SOURCE_DIR}/assets/applications/uos-ai-assistant.desktop
+    DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/usr/share/applications)
 
 # install tts.sh shortcut
 file(GLOB TTS_SH "${CMAKE_SOURCE_DIR}/assets/shell/*.sh")
