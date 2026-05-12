@@ -1,12 +1,17 @@
 #include "outlineagent.h"
+#include "agentstep.h"
 #include "tools/researchtools.h"
-#include "tooluse.h"
-#include "reasoninguse.h"
-#include "networkdefs.h"
-#include "util.h"
+#include "retrievers/searchenginefactory.h"
+#include "global_key_define.h"
+#include "research_key_define.h"
 
-#include <QUuid>
+#include <QLocale>
+#include <QJsonDocument>
 #include <QRegularExpression>
+#include <QUuid>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logResearch)
 
 namespace uos_ai {
 
@@ -78,9 +83,8 @@ Return only a valid JSON object.
          ]
      }
  ]
-}
-```)";
-    m_systemPrompt = m_systemPrompt.arg(Util::checkLanguage() ? "Chinese" : "English");
+})";
+    m_systemPrompt = m_systemPrompt.arg(QLocale::system().language() == QLocale::Chinese ? "Chinese" : "English");
 }
 
 OutlineAgent::~OutlineAgent()
@@ -98,69 +102,137 @@ QSharedPointer<LlmAgent> OutlineAgent::create()
     return QSharedPointer<LlmAgent>(new OutlineAgent());
 }
 
-QJsonObject OutlineAgent::processRequest(const QJsonObject &question, const QJsonArray &messages, const QVariantHash &params)
+QVariantHash OutlineAgent::processRequest(const ModelMessage &question, const QList<ModelMessage> &messages, const QVariantHash &params)
 {
-    m_llm->switchStream(false);
-    QString outlinePath = params.value("outline_path").toString();
+    m_modelParams[STR_KEY_STREAM] = false;
 
+    QString outlinePath = params.value(STR_RESEARCH_OUTLINE_PATH).toString();
+
+    QString userText = question.content.value(0).data.toString();
     QString userPrompt;
-    QString outlineFinishTitle;
+    QString outlineFinishContent;
+    const QString agentTitle = tr("Generating outline");
+
     if (outlinePath.isEmpty()) {
-        // 未上传大纲
-        ReasoningUse::reasoningUseTitle(this, tr("Generating outline content"));
-        userPrompt = QString("Task:\n%1").arg(question.value("content").toString());
-        outlineFinishTitle = tr("Outline generated, please confirm");
-    } else {
-        ReasoningUse::reasoningUseTitle(this, tr("Detected that you have uploaded a local outline,  Currently parsing the outline content for you."));
-        QString outlineContent = ResearchTools::readDocument(outlinePath);
-        if (!outlineContent.isEmpty()) {
-            outlineFinishTitle = tr("Detected uploaded local outline, please confirm.");
-        } else {
-            ReasoningUse::reasoningUseTitle(this, tr("Failed to parse the uploaded outline file, please re-upload"), ReasoningUse::Failed);
-            return QJsonObject();
+        emit messageReceived(makeAgentStep(agentTitle, NsRunning, tr("Generating outline content for you.")));
+        userPrompt = QString("Task:\n%1").arg(userText);
+
+        // Preliminary search: gather topic context before generating outline
+        if (params.value(STR_KEY_ONLINE).toBool() && !userText.isEmpty()) {
+            auto searchEngine = SearchEngineFactory::create(SearchEngineFactory::EngineType::Baidu);
+            if (!searchEngine) {
+                qCWarning(logResearch) << "OutlineAgent: failed to create search engine, skipping preliminary search";
+            } else {
+                QJsonArray searchResults = searchEngine->search(userText, 8);
+                if (!searchResults.isEmpty()) {
+                    QString searchContext;
+                    for (const auto &val : searchResults) {
+                        QJsonObject obj = val.toObject();
+                        searchContext += QString("- %1\n  %2\n")
+                                             .arg(obj.value(STR_KEY_TITLE).toString(),
+                                                  obj.value(STR_KEY_SNIPPET).toString().left(200));
+                    }
+                    userPrompt += QString("\n\nReference Materials (from preliminary search — use these to inform your outline structure, do NOT copy them):\n%1").arg(searchContext);
+                    qCInfo(logResearch) << "OutlineAgent: preliminary search found" << searchResults.size() << "results";
+                } else {
+                    qCInfo(logResearch) << "OutlineAgent: preliminary search returned no results";
+                }
+            }
         }
 
-        userPrompt = QString("Task:\n%1\n\n解析上传的大纲内容：\n%2").arg(question.value("content").toString(), outlineContent);
+        outlineFinishContent = tr("An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.");
+    } else {
+        emit messageReceived(makeAgentStep(agentTitle, NsRunning, tr("Detected that you have uploaded a local outline,  Currently parsing the outline content for you.")));
+        QString outlineContent = ResearchTools::readDocument(outlinePath);
+        if (!outlineContent.isEmpty()) {
+            outlineFinishContent = tr("Detected uploaded local outline, please confirm.");
+        } else {
+            emit messageReceived(makeAgentStep(agentTitle, NsFailed, tr("Failed to parse the uploaded outline file, please re-upload")));
+            return QVariantHash();
+        }
+        userPrompt = QString("Task:\n%1\n\n解析上传的大纲内容：\n%2").arg(userText, outlineContent);
     }
 
-    QJsonObject ques;
-    ques["role"] = "user";
-    ques["content"] = userPrompt;
+    ModelMessage ques;
+    ques.role = STR_KEY_USER;
+    ques.content = {{ContentType::CntText, userPrompt}};
 
-    QJsonObject response = LlmAgent::processRequest(ques, messages, params);
+    QVariantHash response = LlmAgent::processRequest(ques, messages, params);
 
-    if (lastError() != AIServer::NoError) {
-        ReasoningUse::reasoningUseTitle(this, "", ReasoningUse::Failed);
-        ReasoningUse::reasoningUseContent(this, lastErrorString());
+    if (!lastError().isEmpty() && lastError().value(STR_KEY_ERROR, 0).toInt() != 0) {
+        emit messageReceived(makeAgentStep(agentTitle, NsFailed, tr("Generating outline content failed")));
         return response;
     }
 
+    QString content = response.value(STR_KEY_CONTENT).value<ModelMessage>().content.value(0).data.toString();
+
     QJsonObject outlineObj;
     QRegularExpression regex("```json\\s*([\\s\\S]*?)\\s*```", QRegularExpression::DotMatchesEverythingOption);
-    QRegularExpressionMatch match = regex.match(response.value("content").toString());
+    QRegularExpressionMatch match = regex.match(content);
     if (match.hasMatch()) {
         outlineObj = QJsonDocument::fromJson(match.captured(1).trimmed().toUtf8()).object();
     } else {
-        outlineObj = QJsonDocument::fromJson(response.value("content").toString().trimmed().toUtf8()).object();
+        outlineObj = QJsonDocument::fromJson(content.trimmed().toUtf8()).object();
     }
 
-    OutlineContent(outlineObj);
+    emitOutline(outlineObj, params.value(STR_KEY_ID).toString());
+    emit messageReceived(makeAgentStep(agentTitle, NsCompleted, outlineFinishContent));
 
-    ReasoningUse::reasoningUseTitle(this, outlineFinishTitle, ReasoningUse::Completed);
+    // Store outline object in result for upstream to update workspace
+    if (!outlineObj.isEmpty())
+        response[STR_KEY_OUTLINE] = QVariant::fromValue(outlineObj);
+
+    // Replace the raw JSON in both content and context with a human-readable summary,
+    // so subsequent LLM calls see coherent conversation history instead of bare JSON.
+    if (!outlineObj.isEmpty()) {
+        QString title = outlineObj["title"].toString();
+        QJsonArray chapters = outlineObj["content"].toArray();
+
+        QString summary;
+        if (outlinePath.isEmpty()) {
+            summary = tr("Based on your writing task, I have generated the following outline for **%1**:\n\n").arg(title);
+        } else {
+            summary = tr("I have parsed your uploaded outline and structured it as **%1**:\n\n").arg(title);
+        }
+
+        for (int i = 0; i < chapters.size(); ++i) {
+            QString chapterTitle = chapters[i].toObject()["title"].toString();
+            summary += QString("- %1\n").arg(chapterTitle);
+
+            QJsonArray subs = chapters[i].toObject()["content"].toArray();
+            for (int j = 0; j < subs.size(); ++j) {
+                summary += QString("  - %1\n").arg(subs[j].toObject()["title"].toString());
+            }
+        }
+
+        summary += tr("\nThe outline contains %1 sections in total. Please confirm to proceed with research and writing.")
+                       .arg(chapters.size());
+
+        // Replace the last assistant message in context so the summary enters
+        // conversation history (used by history() in subsequent turns).
+        ModelMessage summaryMsg;
+        summaryMsg.role = STR_KEY_ASSISTANT;
+        summaryMsg.content = {{ContentType::CntText, summary}};
+
+        QList<ModelMessage> context = response.value(STR_KEY_CONTEXT).value<QList<ModelMessage>>();
+        if (!context.isEmpty())
+            context.last() = summaryMsg;
+        response[STR_KEY_CONTEXT] = QVariant::fromValue(context);
+    }
+
     return response;
 }
 
-void OutlineAgent::OutlineContent(const QJsonObject &outline)
+void OutlineAgent::emitOutline(const QJsonObject &outline, const QString &articleId)
 {
-    QJsonObject message;
-    message.insert("chatType", ChatAction::ChatOutline);
-    message.insert("content", QString::fromUtf8(QJsonDocument(outline).toJson()));
+    QVariantHash data;
+    data[STR_KEY_ID]    = articleId;
+    data[STR_KEY_TITLE] = outline["title"].toString();
 
-    QJsonObject wrapper;
-    wrapper.insert("message", message);
-    wrapper.insert("stream", true);
-
-    emit readyReadChatDeltaContent(QJsonDocument(wrapper).toJson());
+    RenderMessage rmsg;
+    rmsg.type = ContentType::CntOutline;
+    rmsg.data = data;
+    emit messageReceived(RenderMessageList{rmsg});
 }
 
 } // namespace uos_ai

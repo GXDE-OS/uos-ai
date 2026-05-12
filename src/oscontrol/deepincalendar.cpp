@@ -117,7 +117,7 @@
 #define INVOKE_SCHEDULE_CANCEL              ("CANCEL")
 
 Q_DECLARE_LOGGING_CATEGORY(logOsControl)
-
+using namespace uos_ai;
 DeepinCalendar::DeepinCalendar(QObject *parent)
     : QObject(parent)
 {
@@ -156,7 +156,47 @@ int DeepinCalendar::cancelSchedule(const QJsonObject &objCancel)
 
 int DeepinCalendar::invoke(const QString &intent, const QJsonObject &objSchedule, QVariant &retInvoke)
 {
+#ifdef COMPILE_ON_V25
+    QJsonObject newSchedule;
 
+    // 映射旧字段到新字段
+    if (objSchedule.contains("Title")) {
+        newSchedule["title"] = objSchedule["Title"];
+    }
+    if (objSchedule.contains("Start")) {
+        newSchedule["startTime"] = objSchedule["Start"];
+    }
+    if (objSchedule.contains("End")) {
+        newSchedule["endTime"] = objSchedule["End"];
+    }
+    if (objSchedule.contains("AllDay")) {
+        newSchedule["allDay"] = objSchedule["AllDay"];
+    }
+    if (objSchedule.contains("Description")) {
+        newSchedule["description"] = objSchedule["Description"];
+    }
+
+    QJsonDocument jsonScheduleData;
+    jsonScheduleData.setObject(newSchedule);
+    QString strSchedule = jsonScheduleData.toJson(QJsonDocument::Compact);
+
+    qCDebug(logOsControl) << "Invoking calendar operation - intent:" << intent << "data:" << strSchedule;
+
+    QDBusInterface scheduleInterface("com.deepin.Calendar",
+                                     "/com/deepin/Calendar",
+                                     "com.deepin.Calendar");
+
+    QDBusMessage respon = scheduleInterface.call("CreateSchedule", strSchedule);
+    if (respon.type() == QDBusMessage::ErrorMessage) {
+        qCWarning(logOsControl) << "Calendar operation failed - intent:" << intent
+                               << "error:" << respon.errorMessage();
+        return -1;
+    }
+    
+    retInvoke = respon.arguments().takeFirst().toString();
+    qCDebug(logOsControl) << "Calendar operation completed successfully - intent:" << intent;
+    return 0;
+#else
     QJsonDocument jsonScheduleData;
     jsonScheduleData.setObject(objSchedule);
     QString strSchedule = jsonScheduleData.toJson(QJsonDocument::Compact);
@@ -177,4 +217,5 @@ int DeepinCalendar::invoke(const QString &intent, const QJsonObject &objSchedule
     retInvoke = qvariant_cast<QDBusVariant>(respon.arguments().takeFirst()).variant();
     qCDebug(logOsControl) << "Calendar operation completed successfully - intent:" << intent;
     return 0;
+#endif
 }

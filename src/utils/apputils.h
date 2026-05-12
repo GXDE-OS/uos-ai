@@ -1,8 +1,6 @@
 #ifndef APPUTILS_H
 #define APPUTILS_H
 
-#include <uosai_global.h>
-
 #include <QString>
 #include <QMap>
 #include <QObject>

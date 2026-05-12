@@ -3,12 +3,14 @@
 #include "channels/qqchannel.h"
 #include "channels/dingtalkchannel.h"
 #include "channels/feishuchannel.h"
+#include "channels/discordchannel.h"
+#include "channels/telegramchannel.h"
 
 #include <QJsonDocument>
 #include <QLoggingCategory>
 #include <functional>
 
-Q_LOGGING_CATEGORY(logCM, "uos-ai.chatbot.channelmanager")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
 using namespace uos_ai::chatbot;
 
@@ -31,7 +33,7 @@ void ChannelManager::applyConfig(const ChatBotConfig &config)
         const QString &name = it.key();
         bool shouldStop = !platforms.contains(name) || !platforms.value(name).enabled;
         if (shouldStop) {
-            qCInfo(logCM) << "Stopping channel:" << name;
+            qCInfo(logChatBot) << "Stopping channel:" << name;
             it.value()->stop();
             it.value()->deleteLater();
             m_configHashes.remove(name);
@@ -56,7 +58,7 @@ void ChannelManager::applyConfig(const ChatBotConfig &config)
             if (m_configHashes.value(name) == newHash)
                 continue; // 配置未变，跳过
             // 配置变化：重启
-            qCInfo(logCM) << "Restarting channel (config changed):" << name;
+            qCInfo(logChatBot) << "Restarting channel (config changed):" << name;
             m_channels[name]->stop();
             m_channels[name]->deleteLater();
             m_channels.remove(name);
@@ -65,7 +67,7 @@ void ChannelManager::applyConfig(const ChatBotConfig &config)
 
         AbstractChannel *ch = createChannel(name);
         if (!ch) {
-            qCWarning(logCM) << "Unknown platform:" << name;
+            qCWarning(logChatBot) << "Unknown platform:" << name;
             continue;
         }
 
@@ -73,13 +75,13 @@ void ChannelManager::applyConfig(const ChatBotConfig &config)
                 this, &ChannelManager::messageReceived);
         connect(ch, &AbstractChannel::errorOccurred,
                 this, [this, name](const QString &err) {
-            qCWarning(logCM) << "Channel error" << name << ":" << err;
+            qCWarning(logChatBot) << "Channel error" << name << ":" << err;
             emit channelError(name, err);
         });
 
         m_channels.insert(name, ch);
         m_configHashes.insert(name, newHash);
-        qCInfo(logCM) << "Starting channel:" << name;
+        qCInfo(logChatBot) << "Starting channel:" << name;
         ch->start(channelCfg.raw());
     }
 }
@@ -98,7 +100,7 @@ void ChannelManager::sendMessage(const QString &platform, const QString &to,
 {
     AbstractChannel *ch = m_channels.value(platform, nullptr);
     if (!ch || !ch->isRunning()) {
-        qCWarning(logCM) << "Channel not running:" << platform;
+        qCWarning(logChatBot) << "Channel not running:" << platform;
         return;
     }
     ch->sendMessage(to, content, conversationType);
@@ -135,10 +137,14 @@ AbstractChannel *ChannelManager::createChannel(const QString &platform)
     // 注册表：平台名 → 工厂函数。新增平台只需在此添加一行，不修改其他逻辑。
     using FactoryFn = std::function<AbstractChannel *(QObject *)>;
     static const QMap<QString, FactoryFn> kRegistry = {
-        { QStringLiteral("qq"),       [](QObject *p) { return new QQChannel(p); } },
-        { QStringLiteral("dingtalk"), [](QObject *p) { return new DingTalkChannel(p); } },
-        { QStringLiteral("feishu"),   [](QObject *p) { return new FeishuChannel(p); } },
-        { QStringLiteral("lark"),     [](QObject *p) { return new FeishuChannel(p); } },
+        { QLatin1String(STR_PLATFORM_QQ),       [](QObject *p) { return new QQChannel(p); } },
+        { QLatin1String(STR_PLATFORM_DINGTALK), [](QObject *p) { return new DingTalkChannel(p); } },
+        { QLatin1String(STR_PLATFORM_FEISHU),   [](QObject *p) { return new FeishuChannel(p); } },
+        { QLatin1String(STR_PLATFORM_LARK),     [](QObject *p) { return new FeishuChannel(p); } },
+#ifdef ENABLE_ULLM
+        { QLatin1String(STR_PLATFORM_DISCORD),  [](QObject *p) { return new DiscordChannel(p); } },
+        { QLatin1String(STR_PLATFORM_TELEGRAM), [](QObject *p) { return new TelegramChannel(p); } },
+#endif
     };
     auto it = kRegistry.find(platform);
     return it != kRegistry.end() ? it.value()(this) : nullptr;

@@ -1,9 +1,9 @@
 #include "ttscodetranslation.h"
-#include "servercodetranslation.h"
 
 #include <QCoreApplication>
 #include <QMap>
 
+using namespace uos_ai;
 QMap<int, QString> TtsCodeTranslation::errorMessages()
 {
     static const QMap<int, QString> errorMessages = {
@@ -38,5 +38,5 @@ QString TtsCodeTranslation::serverCodeTranslation(int code, const QString &messa
         return errorMessages()[code] + QString("(%1)").arg(message);
     }
 
-    return ServerCodeTranslation::serverCodeTranslation(code, message);
+    return message;
 }

@@ -67,7 +67,7 @@ public:
     // 示例输出：## 核心分析 [ID: s2]\n正文...
     QString toAnnotatedMarkdown() const;
 
-    // JSON 序列化，存入 WritingState
+    // JSON 序列化
     QJsonObject toJson() const;
     static ArticleModel fromJson(const QJsonObject &json);
 

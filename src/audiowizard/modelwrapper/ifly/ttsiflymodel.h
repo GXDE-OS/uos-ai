@@ -4,12 +4,12 @@
 #ifndef TTSIFLYMODEL_H
 #define TTSIFLYMODEL_H
 
-#include "serverdefs.h"
 #include "modelwrapper/common/ttsmodel.h"
+#include "model/modelinfo.h"
 
 #include <QWebSocket>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class TtsIflyModel : public TtsModel
 {
     Q_OBJECT
@@ -67,7 +67,7 @@ private:
     QStringList splitString(const QString &inputString);
 
 private:
-    AccountProxy m_account;
+    ProviderAccount m_account;
     QSharedPointer<QWebSocket> m_web;
 
     int m_error = -1;
@@ -78,5 +78,5 @@ private:
 
     QStringList m_chunkTexts;
 };
-UOSAI_END_NAMESPACE
+}
 #endif // TTSIFLYMODEL_H

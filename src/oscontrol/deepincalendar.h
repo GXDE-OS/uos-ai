@@ -1,12 +1,12 @@
 #ifndef DEEPINCALENDAR_H
 #define DEEPINCALENDAR_H
-#include "scheduleability.h"
 
 #include <QObject>
 #include <QVariant>
 #include <QJsonObject>
+namespace uos_ai {
 
-class DeepinCalendar : public QObject, public ISchedule
+class DeepinCalendar : public QObject
 {
     Q_OBJECT
 public:
@@ -60,5 +60,5 @@ private:
     virtual int invoke(const QString &intent, const QJsonObject &objSchedule, QVariant &retInvoke);
 
 };
-
+} // namespace uos_ai
 #endif // DEEPINCALENDAR_H

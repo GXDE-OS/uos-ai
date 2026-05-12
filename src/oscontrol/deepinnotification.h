@@ -1,25 +1,25 @@
 #ifndef DEEPINNOTIFICATION_H
 #define DEEPINNOTIFICATION_H
-#include "notificationability.h"
 
 #include <QObject>
 
 #include <QObject>
 #include <QDBusInterface>
 #include <QScopedPointer>
-
-class DeepinNotification : public QObject,  public INotification
+namespace uos_ai {
+class DeepinNotification : public QObject
 {
     Q_OBJECT
 public:
     explicit DeepinNotification(QObject *parent = nullptr);
 
-    int SetSystemInfo(int param, QVariant data) override;
+    int SetSystemInfo(int param, QVariant data);
 signals:
 protected:
     QScopedPointer<QDBusInterface> m_uosNotificationProxy;
 
     bool m_fIsLinglong;
 };
+} // namespace uos_ai
 
 #endif // DEEPINNOTIFICATION_H

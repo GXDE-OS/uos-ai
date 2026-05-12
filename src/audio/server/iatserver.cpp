@@ -1,8 +1,11 @@
+#include "iatserver.h"
+
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
-#include "iatserver.h"
+
+using namespace uos_ai;
 
 IatServer::IatServer(QObject *parent)
     : QObject{parent}

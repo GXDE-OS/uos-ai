@@ -1,5 +1,6 @@
 #include "encryptbase.h"
 
+using namespace uos_ai;
 static const int EncryptRounds = 5;
 
 EncryptBase::EncryptBase(const EVP_CIPHER *cipher)

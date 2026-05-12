@@ -1,7 +1,7 @@
 #ifndef TRANSBUTTON
 #define TRANSBUTTON
 
-#include "uosai_global.h"
+
 
 #include <DPushButton>
 

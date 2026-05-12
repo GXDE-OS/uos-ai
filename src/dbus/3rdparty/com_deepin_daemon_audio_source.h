@@ -29,7 +29,7 @@
 /*
  * Proxy class for interface com.deepin.daemon.Audio.Source
  */
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class __SourcePrivate;
 class __Source : public uos_ai::DBusExtendedAbstractInterface
 {
@@ -206,5 +206,5 @@ namespace audio {
   typedef ::__Source Source;
 }
 
-UOSAI_END_NAMESPACE
+}
 #endif

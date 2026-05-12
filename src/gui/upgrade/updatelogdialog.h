@@ -1,7 +1,7 @@
 #ifndef UPDATELOGDIALOG_H
 #define UPDATELOGDIALOG_H
 
-#include "uosai_global.h"
+
 
 #include <DDialog>
 #include <DLabel>

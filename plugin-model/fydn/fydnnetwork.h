@@ -27,7 +27,7 @@ public:
     explicit FydnNetwork();
 
 public:
-    QPair<int, QString> request(const QJsonObject &data, const QString &urlPath, const QString &role);
+    QPair<int, QString> request(const QJsonObject &data, const QString &urlPath, const QString &model);
 
 public slots:
     void setAbortRequest();

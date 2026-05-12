@@ -1,7 +1,6 @@
 #include <gio/gio.h>
 
 #include "wordwizard.h"
-#include "llmutils.h"
 #include "private/xeventmonitor.h"
 #ifdef COMPILE_ON_V25
 #include "treelandclipboard.h"
@@ -10,19 +9,18 @@
 #endif
 #include "wrapper/wizardwrapper.h"
 #include "wrapper/inputwindow.h"
-#include "dbs/knowledgebasemanager.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 #include "fcitxinputserver.h"
 #include "gui/aiwriterdialog.h"
-#include <gui/chat/private/eaiexecutor.h>
 #include "dconfigmanager.h"
 #include "util.h"
 #include "esystemcontext.h"
+#include "knowledgebasemanager.h"
 #include <report/followfunctionpoint.h>
 #include <report/knowledgefunctionpoint.h>
 #include <report/eventlogutil.h>
 #include <apputils.h>
-#include <application.h>
+#include "app/application.h"
 
 #include <QApplication>
 #include <QScreen>
@@ -145,7 +143,7 @@ void WordWizard::initCunstomFunctions()
             false,
             WIZARD_TYPE_TRANSLATE
         });
-#ifdef ENABLE_ASSISTANT
+#ifdef ENABLE_LOCAL_MODEL
         kCustomFunctionList.append(CustomFunction {
             "",
             "",
@@ -197,7 +195,7 @@ void WordWizard::initCunstomFunctions()
         QJsonObject json = jsonDoc.object();
         // 安全检查
         CustomFunction func(json);
-#ifndef ENABLE_ASSISTANT
+#ifndef ENABLE_LOCAL_MODEL
         if (func.defaultFunctionType == WIZARD_TYPE_KNOWLEDGE)
             continue;
 #endif
@@ -230,7 +228,7 @@ void WordWizard::initCunstomFunctions()
         if (defaultFunctionTypeSet.contains(i)) {
             continue;
         }
-#ifndef ENABLE_ASSISTANT
+#ifndef ENABLE_LOCAL_MODEL
         if (i == WIZARD_TYPE_KNOWLEDGE) {
             continue;
         }
@@ -276,22 +274,10 @@ void WordWizard::initConnect()
         this->onIconBtnClicked(m_selectclip->getClipText());
         m_selectwid->close();
     });
-    connect(EAiExec(), &EAiExecutor::sigWebViewLoadFinished, this, &WordWizard::onWebViewLoadFinished);
     connect(m_inputWindow, &InputWindow::signalInputTextTriggered, this, [&](const QString &inputText) {
         QString combinedText = QString("%0:%1").arg(inputText).arg(m_selectclip->getClipText());
-        if (EAiExec()->showChatWindow()) { // 等待前端渲染完成后再传，下一步会接收信号判断是否渲染完成
-            m_isWebviewOk = false;
-            QTimer::singleShot(2000, nullptr, [&, combinedText] {
-                if (m_isWebviewOk) {
-                    qCInfo(logWordWizard) << "webview is ok!";
-                    EAiExec()->wordWizardAskAI(combinedText, AssistantType::UOS_AI);
-                }
-                m_inputWindow->close();
-            });
-        } else {
-            EAiExec()->wordWizardAskAI(combinedText, AssistantType::UOS_AI);
-            m_inputWindow->close();
-        }
+        this->onIconBtnClicked(combinedText, true);
+        m_inputWindow->close();
     });
     connect(m_inputWindow, &InputWindow::signalCloseBtnClicked, this, &WordWizard::onCloseBtnClicked);
 
@@ -651,8 +637,7 @@ void WordWizard::onFunctionTriggered(int wizardtype, const QPoint &cursorPos, bo
             m_inputWindow->close();
             m_selectwid->setWidgetVisible(false);
         } else if (wizardtype == WIZARD_TYPE_CUSTOM) {
-            QString locateTitle(tr("UOS AI FollowAlong"));
-            emit sigToLaunchMgmt(false, false, false, locateTitle);
+            emit sigToLaunchMgmt(MgmtWindow::Page::FollowAlong);
             m_selectwid->close();
             m_inputWindow->close();
             m_selectwid->setWidgetVisible(false);
@@ -714,15 +699,15 @@ void WordWizard::onCloseBtnClicked()
     m_isClose = true;
 }
 
-void WordWizard::onIconBtnClicked(QString text)
+void WordWizard::onIconBtnClicked(QString text, bool isSend)
 {
     qCInfo(logWordWizard) << "UOS AI Icon clicked, text:" << text;
     // 写作助手，点击Icon只打开主窗口
     // 划词助手，点击Icon打开主窗口并带入文本
     if (text.isEmpty()) {
-        EAiExec()->showChatWindow();
+        QMetaObject::invokeMethod(aiApp, "showChatWindow", Qt::QueuedConnection);
     } else {
-        emit ServerWrapper::instance()->sigAppendPrompt(text);
+        QMetaObject::invokeMethod(aiApp, "appendPrompt", Qt::QueuedConnection, Q_ARG(QString, text), Q_ARG(bool, isSend));
     }
 }
 

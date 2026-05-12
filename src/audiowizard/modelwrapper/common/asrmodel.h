@@ -4,10 +4,10 @@
 #ifndef ASRMODEL_H
 #define ASRMODEL_H
 
-#include "uosai_global.h"
+
 #include <QObject>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class AsrModel : public QObject
 {
     Q_OBJECT
@@ -42,6 +42,6 @@ protected:
     QString m_id;
     ModelType m_model = Local;
 };
-UOSAI_END_NAMESPACE
+}
 #endif // ASRMODEL_H
 

@@ -1,7 +1,5 @@
 #include "knowledgebaselistitem.h"
-#include "modifymodeldialog.h"
-#include "dbwrapper.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 #include "operatinglinewidget.h"
 #include "embeddingserver.h"
 
@@ -13,6 +11,10 @@
 #include <QUrl>
 #include <QDesktopServices>
 #include <QLoggingCategory>
+#include <QFileInfo>
+
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -21,8 +23,6 @@ KnowledgeBaseItem::KnowledgeBaseItem(const QString &name, const QString &filePat
     , m_name(name)
     , m_filePath(filePath)
 {
-    qRegisterMetaType<LLMServerProxy>("LLMServerProxy");
-
     setObjectName("KnowledgeBaseItem_" + name);
     initUI();
     initConnect();

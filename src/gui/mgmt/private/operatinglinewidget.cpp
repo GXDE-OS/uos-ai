@@ -9,6 +9,8 @@
 #include <QMouseEvent>
 
 static constexpr char BIGMODEL[] = "uos-ai-assistant_bigmodel";
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
 OperatingLineWidget::OperatingLineWidget(DWidget *parent)
     : DWidget(parent)

@@ -4,7 +4,7 @@
 
 #include "textblobresult.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 TextBlobResult::TextBlobResult(const QString &content)
     : m_content(content)
@@ -65,4 +65,4 @@ void TextBlobResult::setErrorString(const QString &error)
     m_errorString = error;
 }
 
-UOSAI_END_NAMESPACE
+}

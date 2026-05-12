@@ -26,7 +26,6 @@
 #ifndef DBUSEXTENDEDABSTRACTINTERFACE_H
 #define DBUSEXTENDEDABSTRACTINTERFACE_H
 
-#include "uosai_global.h"
 #include <QDBusAbstractInterface>
 #include <QDBusError>
 

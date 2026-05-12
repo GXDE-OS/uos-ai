@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF674A" offset="0%"></stop>
+            <stop stop-color="#EC5783" offset="100%"></stop>
+        </linearGradient>
+        <path d="M7.99257143,0 C12.4149253,0 16,3.58260056 16,8 C16,12.4173994 12.4149253,16 7.99257143,16 C3.57764771,16 0,12.417404 0,8 C0,3.58259606 3.57764771,0 7.99257143,0 Z" id="path-2"></path>
+        <filter x="-3.1%" y="-3.1%" width="106.2%" height="106.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="图标/状态图标/Warning" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
+        <g id="warning">
+            <g id="Shape">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <path d="M8,3 C8.27614237,3 8.5,3.22385763 8.5,3.5 L8.5,9.5 C8.5,9.77614237 8.27614237,10 8,10 C7.72385763,10 7.5,9.77614237 7.5,9.5 L7.5,3.5 C7.5,3.22385763 7.72385763,3 8,3 Z M8,13 C8.55228475,13 9,12.5522847 9,12 C9,11.4477153 8.55228475,11 8,11 C7.44771525,11 7,11.4477153 7,12 C7,12.5522847 7.44771525,13 8,13 Z" id="形状结合" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

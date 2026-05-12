@@ -4,10 +4,10 @@
 #ifndef TTSMODEL_H
 #define TTSMODEL_H
 
-#include "uosai_global.h"
+
 #include <QObject>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class TtsModel : public QObject
 {
     Q_OBJECT
@@ -63,5 +63,5 @@ protected:
     QString m_id;
     ModelType m_model = Local;
 };
-UOSAI_END_NAMESPACE
+}
 #endif // TTSMODEL_H

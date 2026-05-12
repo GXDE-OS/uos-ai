@@ -3,7 +3,7 @@
 //#define ENABLE_DBUS_XEVENT
 #ifndef  ENABLE_DBUS_XEVENT
 
-#include "uosai_global.h"
+
 #include <QThread>
 #include <QMap>
 

@@ -1,7 +1,7 @@
 #ifndef WRITERTEXTEDIT_H
 #define WRITERTEXTEDIT_H
 
-#include "uosai_global.h"
+
 
 #include <QTextEdit>
 

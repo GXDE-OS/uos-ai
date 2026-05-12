@@ -1,0 +1,143 @@
+/* 数字人组件样式 */
+
+/* 数字人容器 */
+.digital-human {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 视频通用样式 */
+.digital-human video {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+/* 休眠状态视频 */
+.silence-video {
+    autoplay: true;
+    loop: true;
+    muted: true;
+}
+
+/* 聆听状态容器 */
+.listen-container {
+    position: relative;
+    width: 300px; /* 设置宽度 */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PNG 图片容器 - 位于下层 */
+.listen-container .listen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+
+.listen-container .listen .scale {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    animation: scale 50ms linear;
+    animation-fill-mode: forwards;
+}
+
+.listen-container .listen .scale1 {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    animation: scale1 50ms linear;
+    animation-fill-mode: forwards;
+}
+
+.listen-container .listen .listen-img {
+    width: 100%;
+    height: auto;
+}
+
+.listen-container .listen .rotate {
+    transform-origin: center center;
+    animation: rotate 6s linear infinite;
+}
+
+/* 聆听状态视频（上层，z-index: 1） */
+.listen-video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    autoplay: true;
+    loop: true;
+    muted: true;
+}
+
+/* 思考状态视频 */
+.thinking-video {
+    autoplay: true;
+    loop: true;
+    muted: true;
+}
+
+/* 回答状态视频 */
+.answer-video {
+    autoplay: true;
+    loop: true;
+    muted: true;
+}
+
+/* 错误状态视频 */
+.error-video {
+    autoplay: true;
+    loop: true;
+    muted: true;
+}
+
+/* 旋转动画 */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 缩放动画（最底层） */
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(var(--scale, 1));
+    }
+}
+
+/* 缩放动画（第二层） */
+@keyframes scale1 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(var(--scale1, 1));
+    }
+}

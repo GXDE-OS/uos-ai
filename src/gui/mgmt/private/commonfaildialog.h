@@ -5,14 +5,14 @@
 #include <DPlainTextEdit>
 #include <DWidget>
 
-DWIDGET_USE_NAMESPACE
 
-class CommonFailDialog : public DAbstractDialog
+namespace uos_ai {
+class CommonFailDialog : public DTK_WIDGET_NAMESPACE::DAbstractDialog
 {
     Q_OBJECT
 
 public:
-    explicit CommonFailDialog(DWidget *parent = nullptr);
+    explicit CommonFailDialog(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
     void setFailMsg(const QString &msg);
 
@@ -22,7 +22,8 @@ private:
 
 private:
 
-    DPlainTextEdit *m_pPlainTextEdit = nullptr;
+    DTK_WIDGET_NAMESPACE::DPlainTextEdit *m_pPlainTextEdit = nullptr;
 };
 
+}
 #endif // COMMONFAILDIALOG_H

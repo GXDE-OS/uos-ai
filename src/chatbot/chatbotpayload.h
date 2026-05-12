@@ -20,6 +20,8 @@ struct ParsedPayload {
     QString senderId;
     QString replyTo;    // 私聊 = senderId，群聊 = convId
     QString content;    // message text (trimmed)
+    QString contentSource;
+    QJsonObject meta;
 
     static ParsedPayload from(const QJsonObject &payload);
 

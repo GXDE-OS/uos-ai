@@ -1,6 +1,7 @@
 #pragma once
 
 #include "abstractchannel.h"
+#include "chatbot_key_define.h"
 
 #include <QWebSocket>
 #include <QNetworkAccessManager>
@@ -37,7 +38,7 @@ public:
     void    sendMessage(const QString &to, const QString &content,
                         const QString &conversationType) override;
     bool    isRunning() const override { return m_running; }
-    QString platformName() const override { return QStringLiteral("qq"); }
+    QString platformName() const override { return QLatin1String(STR_PLATFORM_QQ); }
 
 private Q_SLOTS:
     void onWsConnected();

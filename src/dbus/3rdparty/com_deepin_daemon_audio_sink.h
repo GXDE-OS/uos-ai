@@ -29,7 +29,7 @@
 /*
  * Proxy class for interface com.deepin.daemon.Audio.Sink
  */
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class __SinkPrivate;
 class __Sink : public uos_ai::DBusExtendedAbstractInterface
 {
@@ -206,5 +206,5 @@ namespace audio {
   typedef ::__Sink Sink;
 }
 
-UOSAI_END_NAMESPACE
+}
 #endif

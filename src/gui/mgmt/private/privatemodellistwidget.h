@@ -1,6 +1,5 @@
 #ifndef PRIVATEMODELLISTWIDGET_H
 #define PRIVATEMODELLISTWIDGET_H
-#include "uosai_global.h"
 #include <QFutureWatcher>
 #include <QtConcurrent>
 
@@ -9,22 +8,18 @@
 #include <DBackgroundGroup>
 
 #include "themedlable.h"
-#include "tasdef.h"
-#include "networkdefs.h"
-
-struct LLMServerProxy;
 
 namespace uos_ai {
 
-class PrivateModelListWidget: public DWidget
+class PrivateModelListWidget: public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 
 public:
-    explicit PrivateModelListWidget(DWidget *parent = nullptr);
+    explicit PrivateModelListWidget(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
-    void setModelList(const QList<LLMServerProxy> &);
-    void removeModel(const LLMServerProxy &);
+    void refresh();
+    void removeProvider(const QString &id);
 
     void resetEditButton();
     QString getTitleName();
@@ -32,28 +27,23 @@ public:
 private slots:
     void onEditButtonClicked();
     void onThemeTypeChanged();
-
-public slots:
-    void onAppendModel(const LLMServerProxy &);
-
-signals:
-    void signalAddModel();
-
+    void onEditItemClicked(const QString &id);
+    void onAddModel();
 private:
     void initUI();
     void initConnect();
 
     void adjustWidgetSize();
 
-    DWidget *noModelWidget();
-    DWidget *hasModelWidget();
+    DTK_WIDGET_NAMESPACE::DWidget *noModelWidget();
+    DTK_WIDGET_NAMESPACE::DWidget *hasModelWidget();
 
 private:
     ThemedLable *m_pWidgetLabel = nullptr;
-    DBackgroundGroup *m_pNoModelWidget = nullptr;
-    DBackgroundGroup *m_pHasModelWidget = nullptr;
-    DCommandLinkButton *m_pEditButton = nullptr;
-    DCommandLinkButton *m_pAddButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DBackgroundGroup *m_pNoModelWidget = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_pHasModelWidget = nullptr;
+    DTK_WIDGET_NAMESPACE::DCommandLinkButton *m_pEditButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DCommandLinkButton *m_pAddButton = nullptr;
 };
 }
 

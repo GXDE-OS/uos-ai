@@ -1,11 +1,10 @@
 #include "knowledgebaselistwidget.h"
-//#include "modellistitem.h"
-//#include "addmodeldialog.h"
 #include "themedlable.h"
 #include "knowledgebaselistitem.h"
 #include "embeddingserver.h"
 #include "localmodelserver.h"
 #include "knowledgebasemanager.h"
+#include "global_define.h"
 
 #include <DLabel>
 #include <DFontSizeManager>
@@ -30,6 +29,8 @@
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 static const qint64 KnowledgeBaseSize = 1024 * 1024 * 1024;
 
 using namespace uos_ai;
@@ -123,8 +124,7 @@ void KnowledgeBaseListWidget::initConnect()
     connect(&KnowledgeBaseManager::getInstance(), &KnowledgeBaseManager::filesProcessing, this, &KnowledgeBaseListWidget::onFilesProcessing);
     connect(&EmbeddingServer::getInstance(), &EmbeddingServer::addToServerStatusChanged, this, &KnowledgeBaseListWidget::onAddToServerStatusChanged);
     connect(&EmbeddingServer::getInstance(), &EmbeddingServer::indexDeleted, this, &KnowledgeBaseListWidget::onIndexDeleted);
-    connect(&LocalModelServer::getInstance(), &LocalModelServer::modelPluginsStatusChanged, this, &KnowledgeBaseListWidget::onEmbeddingPluginsStatusChanged);
-
+    connect(&LocalModelServer::getInstance(), &LocalModelServer::pluginStatusChanged, this, &KnowledgeBaseListWidget::onEmbeddingPluginsStatusChanged);
 }
 
 void KnowledgeBaseListWidget::onThemeTypeChanged()
@@ -301,8 +301,11 @@ void KnowledgeBaseListWidget::onFilesProcessing(const QStringList &files)
         onAppendKnowledgeBase(file, KnowledgeBaseProcessStatus::Processing);
 }
 
-void KnowledgeBaseListWidget::onEmbeddingPluginsStatusChanged(bool isExist)
+void KnowledgeBaseListWidget::onEmbeddingPluginsStatusChanged(const QString &app, bool isExist)
 {
+    if (app != PLUGINSNAME)
+        return;
+
     qCDebug(logAIGUI) << "Embedding plugins status changed. Exist:" << isExist;
     if (!isExist) {
         resetEditButton();
@@ -539,15 +542,9 @@ qint64 KnowledgeBaseListWidget::getDiskSpace(const QString &mountPoint)
     QString output = process.readAllStandardOutput();
     QStringList fields;
 
-#ifdef COMPILE_ON_QT6
-    QStringList lines = output.split(QRegularExpression("\\n"), Qt::SkipEmptyParts);
+    QStringList lines = output.split(QRegularExpression("\\n"), PARAM_SKIP_EMPTY);
     if (lines.size() > 1)
-        fields = lines.at(1).split(QRegularExpression("\\s+"), Qt::SkipEmptyParts);
-#else
-    QStringList lines = output.split(QRegExp("\\n"), QString::SkipEmptyParts);
-    if (lines.size() > 1)
-        fields = lines.at(1).split(QRegExp("\\s+"), QString::SkipEmptyParts);
-#endif
+        fields = lines.at(1).split(QRegularExpression("\\s+"), PARAM_SKIP_EMPTY);
 
     if (fields.size() >= 5) {
         // 通常df的输出格式是：文件系统 容量 已用 可用 已用% 挂载点

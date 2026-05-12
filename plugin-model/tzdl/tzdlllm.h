@@ -6,10 +6,10 @@
 #define ALIAGENTLLM_H
 
 #include <llmmodel.h>
-#include "wrapper/serverdefs.h"
-#include "llm/common/networkdefs.h"
 
 #include <QObject>
+#include <QEventLoop>
+#include <QNetworkReply>
 
 namespace uos_ai {
 namespace tzdl {
@@ -81,7 +81,7 @@ private:
     QByteArray httpRequest(QUrl url,
                            QByteArray sendData,
                            QEventLoop &loop,
-                           AIServer::ErrorType &serverErrorCode,
+                           QNetworkReply::NetworkError &serverErrorCode,
                            QString &errorStr,
                            QString &responseContent,
                            bool needAuth = false,

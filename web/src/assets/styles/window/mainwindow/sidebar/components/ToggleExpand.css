@@ -1,0 +1,53 @@
+/* 展开/收起切换项 */
+html {
+    --toggle-expand-color-text: rgba(0, 0, 0, 0.7);
+    --toggle-expand-color-text-active: rgba(0, 0, 0, 1);
+    --toggle-expand-color-bg-hover: rgba(0, 0, 0, 0.1);
+    --toggle-expand-color-bg-active: rgba(0, 0, 0, 0.2);
+}
+html.dark {
+    --toggle-expand-color-text: rgba(255, 255, 255, 0.7);
+    --toggle-expand-color-text-active: rgba(255, 255, 255, 1);
+    --toggle-expand-color-bg-hover: rgba(255, 255, 255, 0.1);
+    --toggle-expand-color-bg-active: rgba(255, 255, 255, 0.2);
+}
+
+.toggle-expand {
+    height: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--toggle-expand-color-text);
+    font-size: var(--uosai-font-size-base);
+    border-radius: 6px;
+    user-select: none;
+}
+
+.toggle-expand:hover {
+    background-color: var(--toggle-expand-color-bg-hover);
+}
+
+.toggle-expand:active {
+    color: var(--toggle-expand-color-text-active);
+    background-color: var(--toggle-expand-color-bg-active);
+}
+
+.toggle-expand__left {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-expand__text {
+    margin-left: 10px;
+    user-select: none;
+}
+
+.toggle-expand__arrow {
+    transition: transform 0.3s ease;
+}
+
+.toggle-expand__arrow--expanded {
+    transform: rotate(180deg);
+}

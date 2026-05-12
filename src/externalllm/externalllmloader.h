@@ -19,7 +19,7 @@ public:
     ~ExternalLLMLoader();
     void setPaths(const QStringList &paths);
     void readPlugins();
-    QList<QSharedPointer<LLMPlugin>> plugins() const;
+    QMap<QSharedPointer<LLMPlugin>, QString> plugins() const;
 signals:
 
 public slots:

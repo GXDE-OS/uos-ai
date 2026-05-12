@@ -36,26 +36,34 @@ AudioDbusInterface *AudioDbusInterface::instance()
 
 bool AudioDbusInterface::isDefaultInputDeviceValid()
 {
+    // Hold a local reference to prevent the Source from being destroyed by a
+    // reentrant setDefaultSource() call during synchronous D-Bus property reads.
+    QSharedPointer<Source> source = m_defaultSource;
+    if (!source) {
+        qCWarning(logDBus) << "Default source is null";
+        return false;
+    }
+
 #ifdef COMPILE_ON_QT6
     //QT6用description判断音频设备,如果QMediaDevices的description()为"Echo-Cancel Source"，说明开启了噪音抑制模式，跳过音频设备判断
-    if (QMediaDevices::defaultAudioInput().description() != "Echo-Cancel Source" && QMediaDevices::defaultAudioInput().description() != m_defaultSource->description()) {
+    if (QMediaDevices::defaultAudioInput().description() != "Echo-Cancel Source" && QMediaDevices::defaultAudioInput().description() != source->description()) {
         qCDebug(logDBus) << "Default input device mismatch";
         return false;
     }
 #else
-    if (QAudioDeviceInfo::defaultInputDevice().deviceName() != m_defaultSource->name()) {
+    if (QAudioDeviceInfo::defaultInputDevice().deviceName() != source->name()) {
         qCWarning(logDBus) << "Default input device mismatch";
         return false;
     }
 #endif
 
-    const AudioPort &activePort = m_defaultSource->activePort();
+    AudioPort activePort = source->activePort();
     if (activePort.name.isEmpty()) {
         qCWarning(logDBus) << "Active port name is empty";
         return false;
     }
 
-    if (!m_audioInter->IsPortEnabled(m_defaultSource->card(), activePort.name)) {
+    if (!m_audioInter->IsPortEnabled(source->card(), activePort.name)) {
         qCWarning(logDBus) << "Port not enabled:" << activePort.name;
         return false;
     }
@@ -67,26 +75,34 @@ bool AudioDbusInterface::isDefaultInputDeviceValid()
 
 bool AudioDbusInterface::isDefaultOutputDeviceValid()
 {
+    // Hold a local reference to prevent the Sink from being destroyed by a
+    // reentrant setDefaultSink() call during synchronous D-Bus property reads.
+    QSharedPointer<Sink> sink = m_defaultSink;
+    if (!sink) {
+        qCWarning(logDBus) << "Default sink is null";
+        return false;
+    }
+
 #ifdef COMPILE_ON_QT6
     //QT6用description判断音频设备
-    if (QMediaDevices::defaultAudioOutput().description() != m_defaultSink->description()) {
+    if (QMediaDevices::defaultAudioOutput().description() != sink->description()) {
         qCDebug(logDBus) << "Default output device mismatch";
         return false;
     }
 #else
-    if (QAudioDeviceInfo::defaultOutputDevice().deviceName() != m_defaultSink->name()) {
+    if (QAudioDeviceInfo::defaultOutputDevice().deviceName() != sink->name()) {
         qCWarning(logDBus) << "Default output device mismatch";
         return false;
     }
 #endif
 
-    const AudioPort &activePort = m_defaultSink->activePort();
+    AudioPort activePort = sink->activePort();
     if (activePort.name.isEmpty()) {
         qCWarning(logDBus) << "Active port name is empty";
         return false;
     }
 
-    if (!m_audioInter->IsPortEnabled(m_defaultSink->card(), activePort.name)) {
+    if (!m_audioInter->IsPortEnabled(sink->card(), activePort.name)) {
         qCWarning(logDBus) << "Port not enabled:" << activePort.name;
         return false;
     }
@@ -105,7 +121,7 @@ void AudioDbusInterface::setDefaultSource(const QDBusObjectPath &defaultSource)
 #endif
     connect(m_defaultSource.data(), &Source::ActivePortChanged, this, &AudioDbusInterface::defaultInputChanged, Qt::QueuedConnection);
     QTimer::singleShot(5, this, SIGNAL(defaultInputChanged()));
-    qCDebug(logDBus) << "Default source changed:" << defaultSource.path();
+    qCInfo(logDBus) << "Default source changed:" << defaultSource.path();
 }
 
 void AudioDbusInterface::setDefaultSink(const QDBusObjectPath &defaultSink)
@@ -117,15 +133,18 @@ void AudioDbusInterface::setDefaultSink(const QDBusObjectPath &defaultSink)
 #endif
     connect(m_defaultSink.data(), &Sink::ActivePortChanged, this, &AudioDbusInterface::defaultOutputChanged, Qt::QueuedConnection);
     QTimer::singleShot(5, this, SIGNAL(defaultOutputChanged()));
-    qCDebug(logDBus) << "Default sink changed:" << defaultSink.path();
+    qCInfo(logDBus) << "Default sink changed:" << defaultSink.path();
 }
 
 void AudioDbusInterface::onPortEnabledChanged(uint id, const QString &name, bool enable)
 {
-    qCDebug(logDBus) << "Port enabled changed - id:" << id << "name:" << name << "enable:" << enable;
-    if (id == m_defaultSink->card() && m_defaultSink->activePort().name == name) {
+    qCInfo(logDBus) << "Port enabled changed - id:" << id << "name:"
+                    << name << "enable:" << enable << m_defaultSink.isNull() << m_defaultSource.isNull();
+    QSharedPointer<Sink> sink = m_defaultSink;
+    QSharedPointer<Source> source = m_defaultSource;
+    if (sink && id == sink->card() && sink->activePort().name == name) {
         emit defaultOutputChanged();
-    } else if (id == m_defaultSource->card() && m_defaultSource->activePort().name == name) {
+    } else if (source && id == source->card() && source->activePort().name == name) {
         emit defaultInputChanged();
     }
 }

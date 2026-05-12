@@ -6,7 +6,7 @@
 #include <QThread>
 #include <QDebug>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 using namespace report;
 
 class EventLogUtilGlobal : public EventLogUtil

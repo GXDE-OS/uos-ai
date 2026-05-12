@@ -5,7 +5,7 @@
 #include "articlemodel.h"
 
 namespace uos_ai {
-class ArticleModificationAgent;
+
 class ArticleAdjustAgent : public LlmAgent
 {
     Q_OBJECT
@@ -13,21 +13,18 @@ public:
     explicit ArticleAdjustAgent(QObject *parent = nullptr);
     virtual ~ArticleAdjustAgent() override;
 
-    bool initialize() override;
     static QSharedPointer<LlmAgent> create();
 
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params = {}) override;
-
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params = {}) override;
 
 protected:
     QPair<int, QString> callTool(const QString &toolName, const QJsonObject &params) override;
 
 private:
-    QString       m_article;         // 当前文章原始 Markdown
-    ArticleModel  m_articleModel;    // 结构化文章模型（带 Section ID）
-    QSharedPointer<ArticleModificationAgent> m_modificationAgent;
-
-    QString removeReferenceTags(const QString &content);
+    QString      m_article;       // original article, used by callTool to apply section patches
+    ArticleModel m_articleModel;  // parsed model for section-level updates
+    QString      m_pendingArticle;
+    QString      m_articleId;     // article id from stage params, used by callTool
 };
 
 } // namespace uos_ai

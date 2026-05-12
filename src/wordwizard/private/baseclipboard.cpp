@@ -10,7 +10,7 @@
 #include "xclipboard.h"
 
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 BaseClipboard::BaseClipboard(QObject *parent) : QObject(parent)
 {

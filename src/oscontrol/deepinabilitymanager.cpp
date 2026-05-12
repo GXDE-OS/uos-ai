@@ -5,6 +5,10 @@
 #include "deepincontrolcenter.h"
 #include "deepinmultimedia.h"
 #include "osinfo.h"
+#include "storeapi.h"
+#include "localmodelserver.h"
+#include "deepinmultimedia.h"
+#include "global_define.h"
 
 #include <DDesktopEntry>
 #include <DSysInfo>
@@ -23,13 +27,17 @@
 #include <QUrl>
 #include <QProcess>
 #include <QThread>
-#include <QLoggingCategory>
+#include <QtConcurrent>
+#include <QDir>
+#include <QRegularExpression>
+#include <QUrlQuery>
 
 #include <math.h>
 
 Q_DECLARE_LOGGING_CATEGORY(logOsControl)
 
 DCORE_USE_NAMESPACE
+using namespace uos_ai;
 
 static QString formatCap(qulonglong cap, const int size = 1024, quint8 precision = 1)
 {
@@ -73,6 +81,12 @@ UOSAbilityManager::UOSAbilityManager(QObject *parent)
     initUosProxys();
 }
 
+UOSAbilityManager *UOSAbilityManager::instance()
+{
+    static UOSAbilityManager ins;
+    return &ins;
+}
+
 OSCallContext UOSAbilityManager::doBluetoothConfig(bool on)
 {
     qCDebug(logOsControl) << "Configuring bluetooth, state:" << on;
@@ -103,13 +117,7 @@ OSCallContext UOSAbilityManager::doBluetoothConfig(bool on)
         osCtrCallDbusNoResult(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface, QString("SetAdapterPowered"), args);
     }
 
-    if (on) {
-#ifdef COMPILE_ON_V20
-        m_uosControlCenterProxy->ShowModule("bluetooth");
-#elif COMPILE_ON_V25
-        m_uosControlCenterProxy->ShowPage("device/bluetooth");
-#endif
-    } else {
+    if (!on) {
         osCtrCallDbusNoResult(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface, QString("ClearUnpairedDevice"));
     }
 
@@ -556,6 +564,7 @@ OSCallContext UOSAbilityManager::doDiplayBrightness(int value, int adjustment)
                 OSCallContext ctx;
                 ctx.error = OSCallContext::NonError;
                 ctx.output = tr("Brightness is already at maximum and cannot be increased further.");
+                ctx.result["brightness"] = currentValue;
                 return ctx;
             }
             value = qMin(100, currentValue + 10);
@@ -566,6 +575,7 @@ OSCallContext UOSAbilityManager::doDiplayBrightness(int value, int adjustment)
                 OSCallContext ctx;
                 ctx.error = OSCallContext::NonError;
                 ctx.output = tr("Brightness is already at minimum and cannot be decreased further.");
+                ctx.result["brightness"] = currentValue;
                 return ctx;
             }
             value = qMax(0, currentValue - 10);
@@ -588,7 +598,9 @@ OSCallContext UOSAbilityManager::doDiplayBrightness(int value, int adjustment)
         return ctxByError(OSCallContext::NonService);
     }
 
-    return ctxByError(OSCallContext::NonError);
+    OSCallContext ctx = ctxByError(OSCallContext::NonError);
+    ctx.result["brightness"] = value;
+    return ctx;
 }
 
 OSCallContext UOSAbilityManager::doAppLaunch(const QString &appId, bool on)
@@ -686,7 +698,7 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
                                                   const QString &endTime)
 {
     qCDebug(logOsControl) << "Creating schedule - title:" << title
-                         << "start:" << startTime 
+                         << "start:" << startTime
                          << "end:" << endTime;
     OSCallContext ctx;
 
@@ -697,9 +709,10 @@ OSCallContext UOSAbilityManager::doCreateSchedule(const QString &title,
     //  Ai may reply invalid time format.So check if the times
     //are valid format.
     if (st.isValid() && et.isValid()) {
+        
         QJsonObject schedObj;
         //Use the default title if title is missed
-        schedObj["Title"] = title.isEmpty() ? QString("AI会议日程") : title;
+        schedObj["Title"] = title.isEmpty() ? tr("AI Meeting Schedule") : title;
         schedObj["Description"] = "Uos Ai " + title;
         schedObj["AllDay"] = false;
         schedObj["Type"] = 1;
@@ -800,27 +813,9 @@ OSCallContext UOSAbilityManager::switchWifi(bool on)
 #endif
     }
 
-    int errCode = 0;
-    if (on) {
-#ifdef COMPILE_ON_V23
-#ifdef COMPILE_ON_V25
-        QString firstAdpterNum = wirelessPaths.at(0).path().section('/', -1);
-        errCode = m_uosControlCenterProxy->ShowPage(QString("network/wireless%1").arg(firstAdpterNum));
-#else
-        errCode = m_uosControlCenterProxy->ShowPage(QString("network/WirelessPage"));
-#endif
-#else
-        errCode = m_uosControlCenterProxy->ShowPage("network", "WirelessPage");
-#endif
-    }
-
     OSCallContext ctx;
-    ctx.error = OSCallContext::CallError(errCode);
-
-    if (errCode == 0)
-        ctx.output = textForCommnand();
-    else
-        ctx.errorInfo = m_errMap[ctx.error];
+    ctx.error = OSCallContext::NonError;
+    ctx.output = textForCommnand();
 
     return ctx;
 }
@@ -1103,6 +1098,8 @@ OSCallContext UOSAbilityManager::volumeAdjustment(const QJsonObject &argsObj)
         return ctxByError(OSCallContext::NonService);
     }
 
+    int volume = 0;
+
     if (argsObj.contains("mute")) {
         // 静音
         bool isMute = argsObj.value("mute").toBool();
@@ -1114,7 +1111,15 @@ OSCallContext UOSAbilityManager::volumeAdjustment(const QJsonObject &argsObj)
             return ctxByError(OSCallContext::NonService);
         }
         qCInfo(logOsControl) << "Mute state set successfully to:" << isMute;
-        return ctxByError(OSCallContext::NonError);
+
+        // 获取当前音量
+        QVariant volVariant;
+        if (propertiesGet(osCallDbusAudioService, audioPath, osCallDbusAudioInterface + QString(".Sink"), QString("Volume"), volVariant)) {
+            volume = static_cast<int>(volVariant.toDouble() * 100);
+        }
+        OSCallContext ctx = ctxByError(OSCallContext::NonError);
+        ctx.result["volume"] = volume;
+        return ctx;
     }
 
     if (argsObj.contains("approximate")) {
@@ -1143,7 +1148,10 @@ OSCallContext UOSAbilityManager::volumeAdjustment(const QJsonObject &argsObj)
             return ctxByError(OSCallContext::NonService);
         }
         qCInfo(logOsControl) << "Volume adjusted successfully to:" << vol;
-        return ctxByError(OSCallContext::NonError);
+        volume = static_cast<int>(vol * 100);
+        OSCallContext ctx = ctxByError(OSCallContext::NonError);
+        ctx.result["volume"] = volume;
+        return ctx;
     }
 
     if (argsObj.contains("volume")) {
@@ -1161,6 +1169,10 @@ OSCallContext UOSAbilityManager::volumeAdjustment(const QJsonObject &argsObj)
             return ctxByError(OSCallContext::NonService);
         }
         qCInfo(logOsControl) << "Volume set successfully to:" << vol;
+        volume = static_cast<int>(vol * 100);
+        OSCallContext ctx = ctxByError(OSCallContext::NonError);
+        ctx.result["volume"] = volume;
+        return ctx;
     }
 
     return ctxByError(OSCallContext::NonError);
@@ -1169,6 +1181,40 @@ OSCallContext UOSAbilityManager::volumeAdjustment(const QJsonObject &argsObj)
 QString UOSAbilityManager::textForCommnand()
 {
     return tr("Your command has been issued.");
+}
+
+OSCallContext UOSAbilityManager::openControlCenter(const QString &module)
+{
+    qCDebug(logOsControl) << "Opening control center to module:" << module;
+
+    if (!m_uosControlCenterProxy) {
+        qCWarning(logOsControl) << "Control center proxy is not initialized";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    QString actualModule = module;
+    QString actualPage = "";
+    if (module == "font") {
+        actualModule = "personalization";
+#ifdef COMPILE_ON_V20
+        actualPage = "Font";
+#elif COMPILE_ON_V25
+        actualPage = "font";
+#endif
+    }
+
+    QtConcurrent::run([this, actualModule, actualPage]() {
+        QProcess::startDetached("dde-control-center", {});
+
+        int result = m_uosControlCenterProxy->ShowPage(actualModule, actualPage);
+        if (result != OSCallContext::NonError) {
+            qCWarning(logOsControl) << "Failed to open control center module:" << actualModule << "result:" << result;
+        } else {
+            qCInfo(logOsControl) << "Control center module opened successfully:" << actualModule;
+        }
+    });
+
+    return ctxByError(OSCallContext::NonError);
 }
 
 QStringList UOSAbilityManager::getAppsDesc()
@@ -1286,12 +1332,7 @@ void UOSAbilityManager::initUosProxys()
 void UOSAbilityManager::initDesktopPaths()
 {
     QString systemDataDirs = UosInfo()->pureEnvironment().value("XDG_DATA_DIRS");
-
-#if QT_VERSION < QT_VERSION_CHECK(5,14,0)
-    QStringList systemDataPaths = systemDataDirs.split(":", QString::SkipEmptyParts);
-#else
-    QStringList systemDataPaths = systemDataDirs.split(":", Qt::SkipEmptyParts);
-#endif
+    QStringList systemDataPaths = systemDataDirs.split(":", PARAM_SKIP_EMPTY);
 
     foreach (auto p, systemDataPaths) {
         if (p.endsWith('/')) {
@@ -1317,9 +1358,9 @@ bool UOSAbilityManager::osCtrCallDbus(const QString &service, const QString &pat
 
     if (reply.type() != QDBusMessage::ReplyMessage) {
         qCWarning(logOsControl) << "DBus call failed - service:" << service
-                               << "path:" << path 
-                               << "interface:" << interface 
-                               << "method:" << method 
+                               << "path:" << path
+                               << "interface:" << interface
+                               << "method:" << method
                                << "error:" << reply.errorMessage();
         return false;
     }
@@ -1426,14 +1467,14 @@ bool UOSAbilityManager::propertiesSet(const QString &service, const QString &pat
 OSCallContext UOSAbilityManager::doStateControl(const QString &control)
 {
     qCDebug(logOsControl) << "Controlling playback state:" << control;
-    
+
     if (!m_uosMultimediaProxy) {
         return ctxByError(OSCallContext::NonService);
     }
-    
+
     QString errorInfo;
     bool success = m_uosMultimediaProxy->stateControl(control, errorInfo);
-    
+
     OSCallContext ctx;
     if (success) {
         ctx.error = OSCallContext::NonError;
@@ -1447,14 +1488,14 @@ OSCallContext UOSAbilityManager::doStateControl(const QString &control)
 OSCallContext UOSAbilityManager::doSeek(int offset)
 {
     qCDebug(logOsControl) << "Seeking to position:" << offset;
-    
+
     if (!m_uosMultimediaProxy) {
         return ctxByError(OSCallContext::NonService);
     }
-    
+
     QString errorInfo;
     bool success = m_uosMultimediaProxy->seek(offset, errorInfo);
-    
+
     OSCallContext ctx;
     if (success) {
         ctx.error = OSCallContext::NonError;
@@ -1462,5 +1503,544 @@ OSCallContext UOSAbilityManager::doSeek(int offset)
         ctx.error = OSCallContext::NonService;
         ctx.errorInfo = errorInfo;
     }
+    return ctx;
+}
+
+// 系统字号功能实现
+OSCallContext UOSAbilityManager::doSystemFontSize(float size)
+{
+    qCDebug(logOsControl) << "Setting system font size:" << size;
+
+    // 字号到真实值的映射
+    QMap<int, double> SIZE_MAPPING = {
+        {11, 8.25},
+        {12, 9.0},
+        {13, 9.75},
+        {14, 10.5},
+        {15, 11.25},
+        {16, 12.0},
+        {18, 13.5},
+        {20, 15.0}
+    };
+
+    // 检查字号是否有效
+    int intSize = static_cast<int>(size);
+    if (!SIZE_MAPPING.contains(intSize)) {
+        qCWarning(logOsControl) << "Invalid font size:" << size;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 设置字体大小
+    double realSize = SIZE_MAPPING[intSize];
+    if (!propertiesSet(osCallDbusAppearanceService, osCallDbusAppearancePath,
+                      osCallDbusAppearanceInterface, "FontSize", realSize)) {
+        qCWarning(logOsControl) << "Failed to set font size";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.result["fontSize"] = intSize;
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::getSystemFontSize()
+{
+    qCDebug(logOsControl) << "Getting system font size";
+
+    // 字号到真实值的映射
+    QMap<int, double> SIZE_MAPPING = {
+        {11, 8.25},
+        {12, 9.0},
+        {13, 9.75},
+        {14, 10.5},
+        {15, 11.25},
+        {16, 12.0},
+        {18, 13.5},
+        {20, 15.0}
+    };
+
+    // 获取当前字体大小
+    QVariant currentSizeVariant;
+    if (!propertiesGet(osCallDbusAppearanceService, osCallDbusAppearancePath,
+                      osCallDbusAppearanceInterface, "FontSize", currentSizeVariant)) {
+        qCWarning(logOsControl) << "Failed to get font size";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    double currentValue = currentSizeVariant.toDouble();
+    qCDebug(logOsControl) << "Current font size value:" << currentValue;
+
+    // 查找最接近的预设字号
+    int closestSize = 11;
+    double minDiff = qAbs(SIZE_MAPPING[11] - currentValue);
+    for (auto iter = SIZE_MAPPING.begin(); iter != SIZE_MAPPING.end(); ++iter) {
+        double diff = qAbs(iter.value() - currentValue);
+        if (diff < minDiff) {
+            minDiff = diff;
+            closestSize = iter.key();
+        }
+    }
+
+    qCInfo(logOsControl) << "Current system font size:" << closestSize;
+
+    OSCallContext ctx;
+    ctx.error = OSCallContext::NonError;
+    ctx.result["fontSize"] = closestSize;
+    ctx.output = QString("Current system font size: %1").arg(closestSize);
+    return ctx;
+}
+
+// 文件操作功能实现
+OSCallContext UOSAbilityManager::doOpenFile(const QString &filePath)
+{
+    qCDebug(logOsControl) << "Opening file:" << filePath;
+
+    // 检查文件是否存在
+    if (!QFile::exists(filePath)) {
+        qCWarning(logOsControl) << "File not found:" << filePath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 使用xdg-open打开文件
+    if (!QProcess::startDetached("xdg-open", {filePath})) {
+        qCWarning(logOsControl) << "Failed to start xdg-open";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+   return OSCallContext{};
+}
+
+OSCallContext UOSAbilityManager::doCopyFile(const QString &sourcePath, const QString &destinationPath)
+{
+    qCDebug(logOsControl) << "Copying file from" << sourcePath << "to" << destinationPath;
+
+    // 检查源文件是否存在
+    if (!QFile::exists(sourcePath)) {
+        qCWarning(logOsControl) << "Source file not found:" << sourcePath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 使用QFile复制文件
+    if (!QFile::copy(sourcePath, destinationPath)) {
+        qCWarning(logOsControl) << "Failed to copy file";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return OSCallContext{};
+}
+
+OSCallContext UOSAbilityManager::doMoveFile(const QString &sourcePath, const QString &destinationPath)
+{
+    qCDebug(logOsControl) << "Moving file from" << sourcePath << "to" << destinationPath;
+
+    // 检查源文件是否存在
+    if (!QFile::exists(sourcePath)) {
+        qCWarning(logOsControl) << "Source file not found:" << sourcePath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 使用QFile重命名文件实现移动
+    if (!QFile::rename(sourcePath, destinationPath)) {
+        qCWarning(logOsControl) << "Failed to move file";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return OSCallContext{};
+}
+
+OSCallContext UOSAbilityManager::doCreateFolder(const QString &folderPath)
+{
+    qCDebug(logOsControl) << "Creating folder:" << folderPath;
+
+    // 使用QDir创建文件夹
+    QDir dir;
+    if (!dir.mkpath(folderPath)) {
+        qCWarning(logOsControl) << "Failed to create folder";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return OSCallContext{};
+}
+
+OSCallContext UOSAbilityManager::doRenameFile(const QString &oldPath, const QString &newName)
+{
+    qCDebug(logOsControl) << "Renaming file:" << oldPath << "to" << newName;
+
+    // 检查源文件是否存在
+    if (!QFile::exists(oldPath)) {
+        qCWarning(logOsControl) << "File not found:" << oldPath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 构建新路径
+    QFileInfo fileInfo(oldPath);
+    QString newPath = fileInfo.absolutePath() + "/" + newName;
+
+    // 使用QFile重命名文件
+    if (QFile::rename(oldPath, newPath)) {
+        qCWarning(logOsControl) << "Failed to rename file";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    return OSCallContext{};
+}
+
+OSCallContext UOSAbilityManager::doBatchRename(const QString &folderPath, const QString &newName, const QString &pattern)
+{
+    qCDebug(logOsControl) << "Batch renaming files in" << folderPath << "with pattern:" << pattern;
+
+    // 检查文件夹是否存在
+    QDir dir(folderPath);
+    if (!dir.exists()) {
+        qCWarning(logOsControl) << "Folder not found:" << folderPath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 获取文件夹中的所有文件
+    QFileInfoList files = dir.entryInfoList(QDir::Files | QDir::NoDotAndDotDot);
+    if (files.isEmpty()) {
+        qCWarning(logOsControl) << "Folder is empty:" << folderPath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 如果有正则表达式模式，过滤文件
+    if (!pattern.isEmpty()) {
+        QRegularExpression regex(pattern);
+        if (!regex.isValid()) {
+            qCWarning(logOsControl) << "Invalid regex pattern:" << pattern;
+            return ctxByError(OSCallContext::InvalidArgs);
+        }
+        QFileInfoList filteredFiles;
+        for (const QFileInfo &fileInfo : files) {
+            if (regex.match(fileInfo.fileName()).hasMatch()) {
+                filteredFiles.append(fileInfo);
+            }
+        }
+        if (filteredFiles.isEmpty()) {
+            return ctxByError(OSCallContext::InvalidArgs);
+        }
+        files = filteredFiles;
+    }
+
+    int renamedCount = 0;
+    QStringList errors;
+
+    for (int i = 0; i < files.size(); ++i) {
+        const QFileInfo &fileInfo = files[i];
+        QString oldPath = fileInfo.absoluteFilePath();
+        QString extension = fileInfo.suffix();
+        QString newFileName;
+
+        // 构建新文件名
+        if (files.size() == 1) {
+            newFileName = QString("%1.%2").arg(newName).arg(extension);
+        } else {
+            newFileName = QString("%1_%2.%3").arg(newName).arg(i + 1).arg(extension);
+        }
+
+        QString newPath = fileInfo.absolutePath() + "/" + newFileName;
+
+        // 重命名文件
+        if (QFile::rename(oldPath, newPath)) {
+            renamedCount++;
+        } else {
+            errors.append(tr("Failed to rename file %1").arg(fileInfo.fileName()));
+        }
+    }
+
+    OSCallContext ctx;
+    if (!errors.isEmpty()) {
+        ctx.output = tr("Batch rename completed, successfully renamed %1 files, failed %2 files.\nError details:\n%3")
+                     .arg(renamedCount).arg(errors.size()).arg(errors.join("\n"));
+    }
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doReadFile(const QString &filePath)
+{
+    qCDebug(logOsControl) << "Reading file:" << filePath;
+
+    // 检查文件是否存在
+    if (!QFile::exists(filePath)) {
+        qCWarning(logOsControl) << "File not found:" << filePath;
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    // 读取文件内容
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qCWarning(logOsControl) << "Failed to open file for reading:" << filePath;
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    QString content = QString::fromUtf8(file.readAll());
+    file.close();
+
+    OSCallContext ctx;
+    ctx.output = content;
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doGetFileMetadata(const QStringList &fileList)
+{
+    qCDebug(logOsControl) << "Getting metadata for files:" << fileList;
+
+    if (fileList.isEmpty()) {
+        qCWarning(logOsControl) << "No files provided";
+        return ctxByError(OSCallContext::InvalidArgs);
+    }
+
+    QJsonArray results;
+    for (const QString &filePath : fileList) {
+        if (!QFile::exists(filePath)) {
+            QJsonObject errorObj;
+            errorObj["path"] = filePath;
+            errorObj["error"] = "File not found";
+            results.append(errorObj);
+            continue;
+        }
+
+        QFileInfo fileInfo(filePath);
+        QJsonObject metadata;
+        metadata["name"] = fileInfo.fileName();
+        metadata["size"] = static_cast<qint64>(fileInfo.size());
+        metadata["created"] = fileInfo.birthTime().toString(Qt::ISODate);
+        metadata["modified"] = fileInfo.lastModified().toString(Qt::ISODate);
+
+        // 确定文件类型
+        QString suffix = fileInfo.suffix().toLower();
+        QString type = "other";
+        if (QStringList({"jpg", "jpeg", "png", "gif", "bmp", "webp", "svg"}).contains(suffix)) {
+            type = "image";
+        } else if (QStringList({"mp3", "wav", "ogg", "flac", "aac", "m4a"}).contains(suffix)) {
+            type = "audio";
+        } else if (QStringList({"mp4", "avi", "mkv", "mov", "webm"}).contains(suffix)) {
+            type = "video";
+        } else if (suffix == "desktop") {
+            type = "app";
+        } else if (QStringList({"pdf", "doc", "docx", "txt", "rtf", "odt"}).contains(suffix)) {
+            type = "document";
+        } else if (QStringList({"py", "js", "java", "c", "cpp", "h", "html", "css"}).contains(suffix)) {
+            type = "code";
+        }
+        metadata["type"] = type;
+
+        results.append(metadata);
+    }
+
+    OSCallContext ctx;
+    ctx.output = QJsonDocument(results).toJson(QJsonDocument::Indented);
+    return ctx;
+}
+
+// 邮件操作功能实现
+OSCallContext UOSAbilityManager::doSendMail(const QString &subject, const QString &content, const QStringList &toList, const QStringList &ccList, const QStringList &bccList)
+{
+    qCDebug(logOsControl) << "Sending mail to:" << toList;
+
+    // 创建一个mailto链接
+    QUrl mailtoUrl;
+    QUrlQuery queryItem;
+    mailtoUrl.setScheme("mailto");
+
+    // 设置收件人
+    if (!toList.join(",").isEmpty()) {
+        mailtoUrl.setPath(toList.join(","));
+    }
+
+    // 设置抄送人
+    if (!ccList.join(",").isEmpty()) {
+        queryItem.addQueryItem("cc", ccList.join(","));
+    }
+
+    // 设置密送人
+    if (!bccList.join(",").isEmpty()) {
+        queryItem.addQueryItem("bcc", bccList.join(","));
+    }
+
+    // 设置主题
+    if (!subject.isEmpty()) {
+        queryItem.addQueryItem("subject", QUrl::toPercentEncoding(subject));
+    }
+
+    // 设置正文
+    if (!content.isEmpty()) {
+        queryItem.addQueryItem("body", QUrl::toPercentEncoding(content));
+    }
+
+    queryItem.addQueryItem("type", "1");
+    mailtoUrl.setQuery(queryItem);
+
+    // 使用xdg-open打开邮件客户端
+    if (!QProcess::startDetached("xdg-open", {mailtoUrl.toString()})) {
+        qCWarning(logOsControl) << "Failed to start xdg-open";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    OSCallContext ctx;
+    ctx.output = tr("Email client has been opened, please confirm to send");
+    return ctx;
+}
+
+// 蓝牙设备列表功能实现
+OSCallContext UOSAbilityManager::doGetBluetoothDevices()
+{
+    qCDebug(logOsControl) << "Getting bluetooth devices";
+
+    // 获取适配器列表
+    QVariant adaptersResult;
+    if (!osCtrCallDbus(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface,
+                      "GetAdapters", adaptersResult)) {
+        qCWarning(logOsControl) << "Failed to get bluetooth adapters";
+        return ctxByError(OSCallContext::NonService);
+    }
+
+    QJsonDocument doc = QJsonDocument::fromJson(adaptersResult.toString().toUtf8());
+    QJsonArray adapters = doc.array();
+
+    QJsonArray allDevices;
+
+    for (const QJsonValue adapterValue : adapters) {
+        QJsonObject adapter = adapterValue.toObject();
+        QString adapterPath = adapter["Path"].toString();
+
+        // 获取每个适配器的设备列表
+        QVariant devicesResult;
+        QVariantList args;
+        args << QVariant::fromValue(QDBusObjectPath(adapterPath));
+
+        if (!osCtrCallDbus(osCallDbusBtService, osCallDbusBtPath, osCallDbusBtInterface,
+                          "GetDevices", devicesResult, args)) {
+            qCWarning(logOsControl) << "Failed to get devices for adapter:" << adapterPath;
+            continue;
+        }
+
+        QJsonDocument devicesDoc = QJsonDocument::fromJson(devicesResult.toString().toUtf8());
+        QJsonArray devices = devicesDoc.array();
+
+        // 添加所有设备到结果列表
+        for (const QJsonValue deviceValue : devices) {
+            allDevices.append(deviceValue);
+        }
+    }
+
+    OSCallContext ctx;
+    ctx.output = QJsonDocument(allDevices).toJson(QJsonDocument::Indented);
+    return ctx;
+}
+
+// 应用商店功能实现
+OSCallContext UOSAbilityManager::doSearchApp(const QString &keyword, int page, int maxResults)
+{
+    qCDebug(logOsControl) << "Searching app with keyword:" << keyword;
+
+    StoreAPI *storeAPI = new StoreAPI(this);
+
+    QEventLoop eventLoop;
+    QTimer timer;
+    timer.setSingleShot(true);
+    timer.start(30000);
+
+    OSCallContext ctx;
+    bool searchCompleted = false;
+    QString searchError;
+    QList<SearchResult> searchResults;
+
+    connect(storeAPI, &StoreAPI::searchFinished, [&](bool success, const QString &error, const QList<SearchResult> &results) {
+        searchCompleted = true;
+        searchError = error;
+        searchResults = results;
+
+        if (success) {
+            QJsonArray resultsArray;
+            for (const SearchResult &result : results) {
+                QJsonObject appObj;
+                appObj["appName"] = result.appName;
+                appObj["packageName"] = result.packageName;
+                appObj["version"] = result.version;
+                appObj["icon"] = result.icon;
+                appObj["description"] = result.description;
+                appObj["score"] = result.score;
+                appObj["downloadCount"] = result.downloadCount;
+                appObj["category"] = result.category;
+                appObj["appid"] = result.appid;
+                resultsArray.append(appObj);
+            }
+
+            QJsonObject responseObj;
+            responseObj["keyword"] = keyword;
+            responseObj["page"] = page;
+            responseObj["maxResults"] = maxResults;
+            responseObj["count"] = results.size();
+            responseObj["results"] = resultsArray;
+
+            ctx.output = QJsonDocument(responseObj).toJson(QJsonDocument::Indented);
+            ctx.error = OSCallContext::NonError;
+        } else {
+            ctx.error = OSCallContext::NonService;
+            ctx.errorInfo = error;
+        }
+
+        eventLoop.quit();
+    });
+
+    connect(&timer, &QTimer::timeout, [&]() {
+        if (!searchCompleted) {
+            qCWarning(logOsControl) << "Search app timeout";
+            ctx.error = OSCallContext::NonService;
+            ctx.errorInfo = "Search timeout";
+            eventLoop.quit();
+        }
+    });
+
+    storeAPI->searchApps(keyword, page, maxResults);
+
+    eventLoop.exec();
+
+    storeAPI->deleteLater();
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doDownloadApp(const QString &appName)
+{
+    qCDebug(logOsControl) << "Downloading app:" << appName;
+
+    // 调用LocalModelServer的openInstallWidget方法打开应用商店安装界面
+    LocalModelServer::getInstance().openInstallWidget(appName);
+
+    OSCallContext ctx;
+    ctx.output = tr("App store has been opened, preparing to install application: %1").arg(appName);
+
+    return ctx;
+}
+
+OSCallContext UOSAbilityManager::doShowStoreTab(const QString &tabName)
+{
+    OSCallContext ctx;
+    QString normalizedTarget = tabName.trimmed();
+
+    if (normalizedTarget.isEmpty()) {
+        ctx.error = OSCallContext::InvalidArgs;
+        ctx.errorInfo = tr("App store target is empty");
+        qCWarning(logOsControl) << "Failed to open app store: target is empty";
+        return ctx;
+    }
+
+    normalizedTarget = "tab/" + normalizedTarget;
+    qCDebug(logOsControl) << "Opening app store target:" << normalizedTarget;
+
+    StoreAPI storeAPI;
+    if (!storeAPI.openTargetInAppStore(normalizedTarget)) {
+        ctx.error = OSCallContext::NonService;
+        ctx.errorInfo = tr("Failed to open App Store target: %1").arg(normalizedTarget);
+        qCWarning(logOsControl) << "Failed to open app store target:" << normalizedTarget;
+        return ctx;
+    }
+
+    ctx.output = tr("App store has been opened for: %1").arg(normalizedTarget);
+
     return ctx;
 }

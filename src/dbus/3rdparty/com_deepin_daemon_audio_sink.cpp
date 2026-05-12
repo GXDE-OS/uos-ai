@@ -14,7 +14,7 @@
 /*
  * Implementation of interface class __Sink
  */
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class __SinkPrivate
 {
 public:
@@ -38,9 +38,9 @@ public:
     QMap<QString, QDBusPendingCallWatcher *> m_processingCalls;
     QMap<QString, QList<QVariant>> m_waittingCalls;
 };
-UOSAI_END_NAMESPACE
+}
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 __Sink::__Sink(const QString &service, const QString &path, const QDBusConnection &connection, QObject *parent)
     : DBusExtendedAbstractInterface(service, path, staticInterfaceName(), connection, parent)

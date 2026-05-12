@@ -1,7 +1,7 @@
 #ifndef LANGUAGECOMBODELEGATE
 #define LANGUAGECOMBODELEGATE
 
-#include "uosai_global.h"
+
 
 #include <QStyledItemDelegate>
 #include <QObject>

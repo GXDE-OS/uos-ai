@@ -1,0 +1,899 @@
+/* md编辑器组件主题变量 */
+html {
+    --mde-content-max-width: 960px;
+
+    --mde-content-text-color: rgba(0, 0, 0, 1);
+    --mde-content-table-color-header-bg: rgba(0, 0, 0, 0.05);
+    --mde-content-table-color-border: rgba(0, 0, 0, 0.1);
+    --mde-content-table-color-text: rgba(0, 0, 0, 0.9);
+    --mde-content-quote-color-indicator: rgba(0, 0, 0, 0.1);
+    --mde-content-quote-color-text: rgba(0, 0, 0, 0.5);
+    --mde-content-code-color-bg: rgba(0, 0, 0, 0.05);
+    --mde-content-code-color-text: rgba(0, 0, 0, 0.6);
+    --mde-content-divider-color-bg: rgba(0, 0, 0, 0.1);
+    --mde-content-link-color: rgba(0, 88, 222, 1);
+
+    --mde-toc-toggle-color-bg: rgba(0, 0, 0, 0.05);
+    --mde-toc-toggle-color-bg-hover: rgba(0, 0, 0, 0.1);
+    --mde-toc-toggle-color-bg-active: rgba(0, 0, 0, 0.2);
+    --mde-toc-toggle-color-text: rgba(0, 0, 0, 1);
+    --mde-toc-color-bg: rgba(251, 251, 251, 1);
+    --mde-toc-border-color: rgba(0, 0, 0, 0.15);
+
+    --mde-toolbar-btn-fill-color-normal: rgba(0, 0, 0, 0.7);
+    --mde-toolbar-btn-fill-color-hover: rgba(0, 0, 0, 1);
+    --mde-toolbar-btn-fill-color-pressed: var(--system-active-color);
+    --mde-toolbar-btn-fill-color-disabled: rgba(0, 0, 0, 0.4);
+    --mde-toolbar-btn-fill-color-active: var(--system-active-color);
+    --mde-toolbar-modified-time-color-text: rgba(0, 0, 0, 0.5);
+
+    --mde-toolbar-btn-bg-color-normal: transparent;
+    --mde-toolbar-btn-bg-color-hover: rgba(0, 0, 0, 0.1);
+    --mde-toolbar-btn-bg-color-pressed: rgba(0, 0, 0, 0.2);
+    --mde-toolbar-btn-bg-color-disabled: transparent;
+    --mde-toolbar-btn-bg-color-active: transparent;
+
+    --mde-footnote-ref-color-bg: rgba(0, 0, 0, 0.1);
+
+    --mde-refs-bg: rgba(255, 255, 255, 0.3);
+    --mde-refs-border: rgba(0, 0, 0, 0.08);
+    --mde-refs-text-color: rgba(0, 0, 0, 0.7);
+    --mde-refs-item-highlight-bg: var(--system-active-color-alpha-20);
+}
+
+html.dark {
+    --mde-content-text-color: rgba(255, 255, 255, 1);
+    --mde-content-table-color-header-bg: rgba(255, 255, 255, 0.05);
+    --mde-content-table-color-border: rgba(255, 255, 255, 0.1);
+    --mde-content-table-color-text: rgba(255, 255, 255, 0.9);
+    --mde-content-quote-color-indicator: rgba(255, 255, 255, 0.1);
+    --mde-content-quote-color-text: rgba(255, 255, 255, 0.5);
+    --mde-content-code-color-bg: rgba(255, 255, 255, 0.05);
+    --mde-content-code-color-text: rgba(255, 255, 255, 0.6);
+    --mde-content-divider-color-bg: rgba(255, 255, 255, 0.1);
+
+    --mde-toc-toggle-color-bg: rgba(255, 255, 255, 0.05);
+    --mde-toc-toggle-color-bg-hover: rgba(255, 255, 255, 0.1);
+    --mde-toc-toggle-color-bg-active: rgba(255, 255, 255, 0.2);
+    --mde-toc-toggle-color-text: rgba(255, 255, 255, 1);
+    --mde-toc-color-bg: rgba(26, 26, 26, 1);
+    --mde-toc-border-color: rgba(255, 255, 255, 0.15);
+
+    --mde-toolbar-btn-fill-color-normal: rgba(255, 255, 255, 0.7);
+    --mde-toolbar-btn-fill-color-hover: rgba(255, 255, 255, 1);
+    --mde-toolbar-btn-fill-color-pressed: var(--system-active-color);
+    --mde-toolbar-btn-fill-color-disabled: rgba(255, 255, 255, 0.4);
+    --mde-toolbar-btn-fill-color-active: var(--system-active-color);
+    --mde-toolbar-modified-time-color-text: rgba(255, 255, 255, 0.5);
+
+    --mde-toolbar-btn-bg-color-normal: transparent;
+    --mde-toolbar-btn-bg-color-hover: rgba(255, 255, 255, 0.1);
+    --mde-toolbar-btn-bg-color-pressed: rgba(255, 255, 255, 0.2);
+    --mde-toolbar-btn-bg-color-disabled: transparent;
+    --mde-toolbar-btn-bg-color-active: transparent;
+
+    --mde-footnote-ref-color-bg: rgba(255, 255, 255, 0.1);
+
+    --mde-refs-bg: rgba(0, 0, 0, 0.15);
+    --mde-refs-border: rgba(255, 255, 255, 0.1);
+    --mde-refs-text-color: rgba(255, 255, 255, 0.7);
+    --mde-refs-item-highlight-bg: var(--system-active-color-alpha-20);
+}
+
+/* ============================================
+   Markdown 编辑器 —— 容器
+============================================ */
+
+.ProseMirror-selectednode {
+    background-color: transparent !important;
+}
+
+.markdown-editor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+}
+
+.markdown-editor--fullscreen {
+    /* 全屏状态由 workspace 层动画处理（chat 区域滑出，extension panel 展开）
+       此处仅做标记类，供未来工具栏样式微调使用 */
+}
+
+/* ============================================
+   工具栏容器
+============================================ */
+.mde-toolbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 8px;
+    flex-shrink: 0;
+    border-bottom: 0px solid var(--border-color, rgba(0, 0, 0, 0.08));
+    overflow: hidden;
+    user-select: none;
+}
+
+.mde-toolbar > * + * {
+    margin-left: 10px;
+}
+
+/* 修改时间 */
+.mde-tb-modified-time {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: var(--mde-toolbar-modified-time-color-text);
+    font-size: var(--uosai-font-size-xs);
+    min-width: 0;
+    overflow: hidden;
+}
+
+.mde-tb-time-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 弹性间距 */
+.mde-tb-spacer {
+    flex: 1;
+    min-width: 0px;
+}
+
+/* 动作区 */
+.mde-tb-actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* 分组 */
+.mde-tb-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* 分割线 */
+.mde-tb-divider {
+    width: 1px;
+    height: 16px;
+    background: var(--mde-content-divider-color-bg);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   工具栏按钮
+============================================ */
+.mde-tb-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: var(--mde-toolbar-btn-fill-color-normal);
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
+    position: relative;
+}
+
+.mde-tb-btn:hover:not(.mde-tb-btn--disabled) {
+    background-color: var(--mde-toolbar-btn-bg-color-hover);
+    color: var(--mde-toolbar-btn-fill-color-hover);
+}
+
+.mde-tb-btn:active:not(.mde-tb-btn--disabled) {
+    background-color: var(--mde-toolbar-btn-bg-color-pressed);
+    color: var(--mde-toolbar-btn-fill-color-pressed);
+}
+
+/* 激活态（如加粗、斜体已应用） */
+.mde-tb-btn--active {
+    color: var(--mde-toolbar-btn-fill-color-active);
+}
+
+/* 禁用态 */
+.mde-tb-btn--disabled {
+    color: var(--mde-toolbar-btn-fill-color-disabled);
+}
+
+/* 带下拉箭头的标题按钮 */
+.mde-tb-btn--heading {
+    width: 40px;
+}
+
+.mde-tb-btn__arrow {
+    margin-left: 4px;
+    opacity: 0.5;
+    transition: transform 0.15s ease;
+}
+
+.mde-tb-btn--heading:hover .mde-tb-btn__arrow,
+.mde-tb-btn--active .mde-tb-btn__arrow {
+    opacity: 0.8;
+}
+
+/* 关闭按钮特殊悬停颜色 */
+/* .mde-tb-btn--close:hover {
+    background: rgba(255, 80, 80, 0.12);
+    color: #e04040;
+} */
+
+/* 组内更多按钮容器 */
+.mde-tb-group-more-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* 组内更多按钮（三点） */
+.mde-tb-btn--group-more {
+    color: var(--mde-toolbar-btn-fill-color-normal);
+}
+
+/* ============================================
+   SVG 图标通用
+============================================ */
+.mde-toolbar .svg-icon {
+    display: block;
+    fill: currentColor;
+}
+
+/* ============================================
+   编辑器主体布局（TOC + 编辑区水平排列）
+============================================ */
+.markdown-editor__layout {
+    --mde-editor-padding-x: 10%;
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.mde-link-tooltip-trigger {
+    position: absolute;
+    pointer-events: none;
+    z-index: 25;
+}
+
+/* 编辑器内所有 tooltip 的最大宽度：不超过容器宽度 2/3（由 ResizeObserver 动态写入 CSS 变量） */
+.mde-tooltip {
+    max-width: var(--mde-tooltip-max-width, 66.67vw);
+    word-break: break-all;
+}
+
+.mde-link-hover-tooltip {
+    word-break: break-all;
+}
+
+/* ============================================
+   编辑器主体
+============================================ */
+.markdown-editor__body {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.markdown-editor__body-content {
+    padding: 0;
+    min-height: 100%;
+}
+
+/* ============================================
+   编辑器与目录滚动条（复用 sidebar ScrollBar 组件）
+============================================ */
+.mde-toc__list {
+    flex: 1;
+    min-height: 0;
+}
+
+.markdown-editor__body > .scroll-bar--vertical,
+.mde-toc__list > .scroll-bar--vertical {
+    top: 0;
+    /* right: 0; */
+    bottom: 0;
+}
+
+.mde-toc__list .scroll-bar-content-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================
+   目录切换浮动按钮
+============================================ */
+.mde-toc-toggle {
+    position: absolute;
+    left: 10px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    z-index: 30; /* 高于 .mde-toc z-index:20 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--mde-toc-toggle-color-bg);
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
+    flex-shrink: 0;
+    color: var(--mde-toolbar-btn-fill-color-normal);
+}
+
+.mde-toc-toggle:hover {
+    background: var(--mde-toolbar-btn-bg-color-hover);
+    color: var(--mde-toolbar-btn-fill-color-hover);
+}
+
+.mde-toc-toggle:active {
+    background: var(--mde-toolbar-btn-bg-color-pressed);
+    color: var(--mde-toolbar-btn-fill-color-pressed);
+}
+
+/* 浮层遇罩：覆盖编辑区，点击关闭目录 */
+.mde-toc-mask {
+    position: absolute;
+    inset: 0;
+    z-index: 15; /* 在 toc(20) 之下，在编辑器内容之上 */
+    background: transparent;
+    cursor: default;
+}
+
+/* 并列模式不需要遇罩 */
+.markdown-editor__layout--wide .mde-toc-mask {
+    display: none;
+}
+
+/* 图标旋转动画 */
+.mde-toc-toggle .svg-icon {
+    transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.mde-toc-toggle--open .svg-icon {
+    transform: rotate(180deg);
+}
+
+/* ============================================
+   目录（TOC）抽屉
+============================================ */
+
+/* TOC 动画参数 */
+.mde-toc {
+    --mde-toc-easing: cubic-bezier(0.4, 0, 0.2, 1);
+    --mde-toc-duration: 0.22s;
+    --mde-toc-width: 200px;
+
+    /* 默认：浮层模式，绝对定位叠于编辑器左侧 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--mde-toc-width);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    background: var(--mde-toc-color-bg);
+    border-right: 1px solid var(--mde-toc-border-color);
+    /* 关闭时滑出到左侧 */
+    transform: translateX(-100%);
+    overflow: hidden;
+
+    /* 隐藏状态 */
+    pointer-events: none;
+    user-select: none;
+    visibility: hidden;
+
+    /* 关闭状态过渡：先滑动，结束后才隐藏 */
+    transition:
+        transform var(--mde-toc-duration) var(--mde-toc-easing),
+        visibility 0s linear var(--mde-toc-duration);
+}
+
+.mde-toc--open {
+    transform: translateX(0);
+    pointer-events: auto;
+    user-select: auto;
+    visibility: visible;
+
+    /* 开启状态过渡：立即显示，然后滑动 */
+    transition:
+        transform var(--mde-toc-duration) var(--mde-toc-easing),
+        visibility 0s linear 0s;
+}
+
+/* 宽度足够时（>= 620px），切换为并列 inline 模式 */
+.markdown-editor__layout--wide .mde-toc {
+    position: relative;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+
+    /* 关闭状态：完全占据 0 空间 */
+    width: 0;
+    min-width: 0;
+    max-width: 0;
+    flex: 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    /* 过渡动画 */
+    transition:
+        width var(--mde-toc-duration) var(--mde-toc-easing),
+        min-width var(--mde-toc-duration) var(--mde-toc-easing),
+        max-width var(--mde-toc-duration) var(--mde-toc-easing),
+        flex-basis var(--mde-toc-duration) var(--mde-toc-easing),
+        visibility 0s linear var(--mde-toc-duration),
+        border 0s step-end;
+}
+
+.markdown-editor__layout--wide .mde-toc--open {
+    width: var(--mde-toc-width);
+    min-width: var(--mde-toc-width);
+    max-width: var(--mde-toc-width);
+    flex: 0 0 var(--mde-toc-width);
+    pointer-events: auto;
+    user-select: auto;
+    visibility: visible;
+
+    transition:
+        width var(--mde-toc-duration) var(--mde-toc-easing),
+        min-width var(--mde-toc-duration) var(--mde-toc-easing),
+        max-width var(--mde-toc-duration) var(--mde-toc-easing),
+        flex-basis var(--mde-toc-duration) var(--mde-toc-easing),
+        visibility 0s linear 0s,
+        border var(--mde-toc-duration) var(--mde-toc-easing);
+}
+
+.mde-toc__placeholder {
+    height: 58px; /* 让目录在目录按钮下10像素位置滚动，按钮宽高24，距离容器顶部24 */
+}
+
+/* 目录列表：flex 列以便内层 wrapper 用 margin:auto 垂直居中 */
+.mde-toc__list {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 内层 wrapper：从顶部开始显示，不居中 */
+.mde-toc__list-inner {
+    margin: 0;
+    padding: 0;
+}
+
+.mde-toc__empty {
+    padding: 12px 16px;
+    font-size: var(--uosai-font-size-xs);
+    color: var(--mde-content-text-color);
+    text-align: center;
+}
+
+/* 目录条目 */
+.mde-toc__item {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 1px 10px;
+    transition: background 0.12s ease;
+}
+
+.mde-toc__item:hover {
+    background: var(--mde-toc-toggle-color-bg-hover);
+}
+
+.mde-toc__item:active {
+    background: var(--mde-toc-toggle-color-bg-active);
+}
+
+.mde-toc__item-text {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    color: var(--mde-toc-toggle-color-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: var(--uosai-line-height-extra-normal);
+}
+
+/* H1 ~ H6 缩进层级 */
+.mde-toc__item--h1,
+.mde-toc__item--h2 {
+    padding-left: 10px;
+}
+.mde-toc__item--h3 {
+    padding-left: 20px;
+}
+.mde-toc__item--h4 {
+    padding-left: 30px;
+}
+.mde-toc__item--h5 {
+    padding-left: 40px;
+}
+.mde-toc__item--h6 {
+    padding-left: 50px;
+}
+
+/* ============================================
+   Milkdown 主题覆盖
+============================================ */
+.milkdown {
+    --crepe-color-background: transparent;
+    /* 覆盖 Milkdown Crepe 主题字体，使用系统字体 */
+    --crepe-font-title: var(--font-family);
+    --crepe-font-default: var(--font-family);
+    --crepe-font-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.milkdown .editor {
+    /* 内容最大宽度 960px 居中显示 */
+    max-width: var(--mde-content-max-width);
+    margin: 0 auto;
+    /* Qt5 WebEngine 对 clamp() 兼容不稳定，使用 ResizeObserver 动态写入变量 */
+    padding: 0 var(--mde-editor-padding-x, 10%);
+}
+
+.milkdown .ProseMirror h1, 
+.milkdown .ProseMirror h2, 
+.milkdown .ProseMirror h3, 
+.milkdown .ProseMirror h4, 
+.milkdown .ProseMirror h5, 
+.milkdown .ProseMirror h6,
+.milkdown .ProseMirror p {
+    padding: 0;
+    color: var(--mde-content-text-color);
+    font-weight: 500;
+    font-style: medium;
+    line-height: var(--uosai-line-height-extra-tight);
+    margin: 0;
+}
+.milkdown .ProseMirror h1 {
+    font-size: var(--uosai-font-size-3xl);
+    padding: 24px 0;
+}
+.milkdown .ProseMirror h2 {
+    font-size: var(--uosai-font-size-xl);
+    padding: 20px 0;
+}
+.milkdown .ProseMirror h3 {
+    font-size: var(--uosai-font-size-lg);
+    padding: 16px 0;
+}
+.milkdown .ProseMirror h4 {
+    font-size: var(--uosai-font-size-md);
+    padding: 16px 0;
+}
+.milkdown .ProseMirror h5 {
+    font-size: var(--uosai-font-size-sm2);
+    padding: 12px 0;
+}
+.milkdown .ProseMirror h6 {
+    font-size: var(--uosai-font-size-base);
+    padding: 12px 0;
+}
+.milkdown .ProseMirror p {
+    font-size: var(--uosai-font-size-sm2);
+    font-weight: 400;
+    padding: 8px 0;
+    line-height: var(--uosai-line-height-normal);
+}
+
+.milkdown .ProseMirror strong {
+    color: var(--mde-content-text-color);
+    font-size: inherit;
+    font-weight: 500;
+}
+.milkdown .ProseMirror del {
+    font-weight: inherit;
+}
+.milkdown .ProseMirror a {
+    color: var(--mde-content-link-color);
+    text-decoration: unset;
+    cursor: pointer;
+}
+
+.milkdown .ProseMirror ul,
+.milkdown .ProseMirror ol {
+    padding: 0 0 0 20px;
+}
+
+.ProseMirror table {
+    border-collapse: unset;
+    width: unset;
+    border-spacing: 0px;
+}
+.milkdown .ProseMirror table {
+    border: 1px solid var(--mde-content-table-color-border); /* 整体边框 */
+    border-radius: 18px;
+    overflow: hidden; /* 裁剪超出圆角的部分 */
+}
+.milkdown .ProseMirror tr[data-is-header="true"] {
+    background-color: var(--mde-content-table-color-header-bg);
+}
+.milkdown .ProseMirror tr {
+    height: 49px;
+}
+
+.milkdown .ProseMirror th,
+.milkdown .ProseMirror td {
+    padding: 6px 6px; /* 添加内边距 */
+    /* 所有单元格的左侧边框 */
+    border-left: 1px solid var(--mde-content-table-color-border);
+    /* 所有单元格的顶部边框，除了表头单元格 */
+    border-top: 1px solid var(--mde-content-table-color-border);
+    text-align: center !important; /* 使用 !important 覆盖行内样式 */
+}
+
+/* 头部单元格不需要顶部边框 */
+.milkdown .ProseMirror th {
+    border-top: unset; /* 移除th的顶部边框 */
+}
+
+/* 第一个 th 和 td 不需要左侧边框 */
+.milkdown .ProseMirror th:first-child,
+.milkdown .ProseMirror td:first-child {
+    border-left: unset;
+}
+
+.milkdown .ProseMirror pre,
+.milkdown .ProseMirror code {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--mde-content-code-color-bg);
+    color: var(--mde-content-code-color-text);
+}
+.milkdown .ProseMirror code {
+    padding: 4px;
+}
+
+.milkdown .ProseMirror blockquote::before {
+    width: 3px;
+    margin: 8px 0;
+    background-color: var(--mde-content-quote-color-indicator);
+}
+.milkdown .ProseMirror blockquote {
+    padding-left: 17px;
+}
+
+.milkdown .ProseMirror li {
+    color: var(--mde-content-text-color);
+}
+
+.milkdown .ProseMirror hr {
+    border: none;
+    border-top: 1px solid var(--mde-content-divider-color-bg);
+    margin: 16px 0;
+}
+
+/* ============================================
+   脚注（GFM Footnote）
+============================================ */
+
+.milkdown .ProseMirror sup {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    height: 16px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 4px;
+    background: var(--mde-footnote-ref-color-bg);
+    font-size: var(--uosai-font-size-sm);
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.milkdown .ProseMirror sup.ProseMirror-selectednode {
+    background: var(--mde-footnote-ref-color-bg) !important;
+}
+
+/* ============================================
+   数学公式（KaTeX）
+============================================ */
+
+/* 行内公式 */
+.milkdown .editor .math-inline {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 2px;
+    color: var(--mde-content-text-color);
+    background-color: transparent;
+}
+
+/* 块级公式 */
+.milkdown .editor .math-block {
+    margin: 16px 0;
+    position: relative;
+}
+.milkdown .editor .math-block__preview {
+    text-align: center;
+    padding: 0;
+    overflow-x: auto;
+    color: var(--mde-content-text-color);
+}
+.milkdown .editor .math-block__source {
+    display: none;
+    font-family: var(--crepe-font-mono, monospace);
+    font-size: var(--uosai-font-size-sm);
+    background: var(--mde-content-code-color-bg);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 4px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    color: var(--mde-content-code-color-text);
+}
+
+/* ============================================
+   参考资料面板
+============================================ */
+.mde-refs {
+    /* 参考资料面板与编辑器内容对齐 */
+    max-width: calc(var(--mde-content-max-width) * 0.8);
+    width: 80%;
+    margin: 35px auto 40px;
+    border-radius: 10px;
+    border: 1px solid var(--mde-refs-border);
+    overflow: hidden;
+    background: var(--mde-refs-bg);
+}
+
+.mde-refs__header {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: var(--uosai-font-size-sm2);
+    cursor: pointer;
+    user-select: none;
+}
+
+.mde-refs__title {
+    font-size: var(--uosai-font-size-sm2);
+    font-weight: 500;
+    color: var(--mde-refs-text-color);
+}
+
+.mde-refs__arrow {
+    width: 12px;
+    height: 12px;
+    color: var(--mde-refs-text-color);
+    transition: transform 0.22s ease;
+    flex-shrink: 0;
+}
+
+.mde-refs__arrow--open {
+    transform: rotate(180deg);
+}
+
+.mde-refs__list-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+        grid-template-rows 0.24s ease,
+        opacity 0.18s ease;
+    pointer-events: none;
+}
+
+.mde-refs--open .mde-refs__list-wrap {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mde-refs__list {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.mde-refs__item {
+    height: 32px;
+    font-size: var(--uosai-font-size-sm2);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-decoration: none;
+    min-width: 0;
+    transition: background-color 0.2s ease;
+}
+
+.mde-refs--open .mde-refs__item:last-child {
+    margin-bottom: 8px;
+}
+
+.mde-refs__item > * + * {
+    margin-left: 4px;
+}
+
+.mde-refs__item-num {
+    width: auto;
+    flex-shrink: 0;
+    display: flex;
+    font-size: var(--uosai-font-size-sm2);
+    color: var(--mde-refs-text-color);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mde-refs__item-icon-wrap {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mde-refs__item-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.mde-refs__item-title {
+    font-size: var(--uosai-font-size-sm2);
+    color: var(--mde-refs-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex: 1;
+    cursor: pointer;
+}
+
+.mde-refs__item:hover .mde-refs__item-title, 
+.mde-refs__item:hover .mde-refs__item-num {
+    color: var(--system-active-color);
+}
+
+.mde-refs__item--blink {
+    animation: mde-ref-item-blink 1s ease;
+}
+
+.mde-refs__item--blink .mde-refs__item-title,
+.mde-refs__item--blink .mde-refs__item-num {
+    color: var(--system-active-color);
+}
+
+@keyframes mde-ref-item-blink {
+    0% {
+        background: transparent;
+    }
+    20% {
+        background: var(--mde-refs-item-highlight-bg);
+    }
+    45% {
+        background: transparent;
+    }
+    70% {
+        background: var(--mde-refs-item-highlight-bg);
+    }
+    100% {
+        background: transparent;
+    }
+}

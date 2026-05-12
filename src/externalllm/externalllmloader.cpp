@@ -75,7 +75,7 @@ void ExternalLLMLoader::readPlugins()
                 }
 
                 qCInfo(logExternalLLM) << "Successfully loaded plugin:" << fileName;
-                d->llmPlugins.append(QSharedPointer<LLMPlugin>(llm));
+                d->llmPlugins.insert(QSharedPointer<LLMPlugin>(llm), fileName);
                 d->loaders.append(loader);
             }
         }
@@ -83,7 +83,7 @@ void ExternalLLMLoader::readPlugins()
     qCInfo(logExternalLLM) << "Finished reading plugins, found" << d->llmPlugins.size() << "valid plugins";
 }
 
-QList<QSharedPointer<LLMPlugin> > ExternalLLMLoader::plugins() const
+QMap<QSharedPointer<uos_ai::LLMPlugin>, QString> ExternalLLMLoader::plugins() const
 {
     return d->llmPlugins;
 }

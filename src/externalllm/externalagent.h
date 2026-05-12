@@ -5,8 +5,8 @@
 #ifndef EXTERNALAGENT_H
 #define EXTERNALAGENT_H
 
-#include "serverdefs.h"
 #include "llmplugin.h"
+#include "model/modelinfo.h"
 
 #include <QSharedPointer>
 
@@ -16,14 +16,14 @@ class ExternalAgent : public  LLMPlugin
 {
 public:
     explicit ExternalAgent();
-    static QSharedPointer<ExternalAgent> fromJson(const QVariantHash &root);
-    static LLMChatModel modelType(const QString &strType);
+    static QSharedPointer<ExternalAgent> fromJson(const QString &file, const QVariantHash &root);
+    static QString provider(const QString &strType);
 public:
     QStringList roles(const QString &model) const override;
     QVariant queryInfo(const QString &query, const QString &id) override;
     QStringList modelList() const override;
     LLMModel *createModel(const QString &name) override;
-    inline QList<LLMServerProxy> getModels() const  {
+    inline QList<ModelAccountPtr> getModels() const  {
         return models.values();
     }
 protected:
@@ -33,7 +33,7 @@ protected:
     QString iconName;
     QString prefix;
     QString faqFile;
-    QMap<QString, LLMServerProxy> models;
+    QMap<QString, ModelAccountPtr> models;
     QMap<QString, QString> modelIcon;
 };
 

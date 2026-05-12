@@ -1,0 +1,202 @@
+/* ============================================
+   Toast 通知样式
+   从底部向上缩放显现，关闭时向上渐隐消失
+============================================ */
+
+/* Toast 组件主题变量 */
+html {
+    --toast-item-bg: rgba(247, 247, 247, 1);
+    --toast-item--advanced-css-bg: rgba(247, 247, 247, 0.6);
+    --toast-item-message-color: rgba(0, 0, 0, 0.7);
+    --toast-item-shadow:
+        0 0 0 1px inset rgba(255, 255, 255, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    --toast-item--advanced-css-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.3), 0 0 0 0.5px rgba(255, 255, 255, 0.3),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+
+    --toast-item__action-normal-bg: rgba(0, 0, 0, 0.15);
+    --toast-item__actionbox-normal-shadow: none;
+
+    --toast-item__action-hover-color: rgba(0, 0, 0, 1);
+    --toast-item__action-hover-bg: rgba(255, 255, 255, 0.2);
+    --toast-item__action-hover-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+
+    --toast-item__action-press-bg: rgba(0, 0, 0, 0.3);
+    --toast-item__action-press-box-shadow: none;
+}
+
+html.dark {
+    --toast-item-bg: rgba(20, 20, 20, 1);
+    --toast-item--advanced-css-bg: rgba(20, 20, 20, 0.6);
+    --toast-item-message-color: rgba(255, 255, 255, 0.7);
+    --toast-item-shadow:
+        0 0 0 1px inset rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(0, 0, 0, 0.7), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    --toast-item--advanced-css-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.7), 0 0 0 0.5px rgba(0, 0, 0, 0.7), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+
+    --toast-item__action-normal-bg: rgba(0, 0, 0, 0.2);
+    --toast-item__actionbox-normal-shadow:
+        0 -1px 0 0 inset rgba(0, 0, 0, 0.4), 0 1px 0 0 inset rgba(255, 255, 255, 0.05);
+
+    --toast-item__action-hover-color: rgba(255, 255, 255, 1);
+    --toast-item__action-hover-bg: rgba(20, 20, 20, 0.2);
+    --toast-item__action-hover-box-shadow:
+        0 1px 0 0 inset rgba(255, 255, 255, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
+
+    --toast-item__action-press-bg: rgba(0, 0, 0, 0.4);
+    --toast-item__action-press-box-shadow: none;
+}
+
+/* Toast 容器：在 workspace__main 区域底部居中 */
+.toast-container {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    width: auto;
+}
+
+/* 单个 Toast 条目 */
+.toast-item {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    box-shadow: var(--toast-item-shadow);
+    border-radius: 12px;
+    background-color: var(--toast-item-bg);
+    pointer-events: auto;
+    animation: toast-enter 0.4s ease-out forwards;
+    padding: 0 12px 0 8px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* 高级 CSS 特效：背景模糊 */
+.toast-item--advanced-css {
+    background-color: var(--toast-item--advanced-css-bg);
+    backdrop-filter: blur(30px);
+    box-shadow: var(--toast-item--advanced-css-shadow);
+}
+
+/* 进入动画：从底部向上缩放显现 */
+@keyframes toast-enter {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 关闭状态：触发退出动画 */
+.toast-item--closing {
+    animation: toast-exit 0.4s ease-in forwards;
+}
+
+/* 退出动画：原地渐隐消失 */
+@keyframes toast-exit {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 类型图标 */
+.toast-item__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Loading 图标旋转动画 */
+.toast-item__icon--loading {
+    animation: toast-spin 0.8s linear infinite;
+}
+
+@keyframes toast-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 消息文案 */
+.toast-item__message {
+    color: var(--toast-item-message-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+}
+
+/* 操作按钮 */
+.toast-item__action {
+    margin: 6px 0;
+    padding: 4px 12px;
+    font-size: var(--uosai-font-size-base);
+    color: var(--toast-item-message-color);
+    background: var(--toast-item__action-normal-bg);
+    box-shadow: var(--toast-item__actionbox-normal-shadow);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.toast-item__action:hover {
+    background: var(--toast-item__action-hover-bg);
+    color: var(--toast-item__action-hover-color);
+    box-shadow: var(--toast-item__action-hover-box-shadow);
+}
+
+.toast-item__action:active {
+    color: var(--system-active-color);
+    background: var(--toast-item__action-press-bg);
+    box-shadow: var(--toast-item__action-press-box-shadow);
+}
+
+/* 关闭按钮 */
+.toast-item__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+    margin-left: 10px;
+    color: var(--toast-item-message-color);
+}
+
+.toast-item__close:hover {
+    opacity: 1;
+}
+
+.toast-item__close svg {
+    width: 12px;
+    height: 12px;
+}

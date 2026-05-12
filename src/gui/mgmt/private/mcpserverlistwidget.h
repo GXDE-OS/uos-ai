@@ -12,15 +12,13 @@
 #include <QHBoxLayout>
 #include <QJsonArray>
 
-DWIDGET_USE_NAMESPACE
-
 namespace uos_ai {
 
-class McpFilterComboBox : public DComboBox
+class McpFilterComboBox : public DTK_WIDGET_NAMESPACE::DComboBox
 {
     Q_OBJECT
 public:
-    explicit McpFilterComboBox(DWidget *parent = nullptr);
+    explicit McpFilterComboBox(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
 public:
     void showPopup() override;
@@ -29,14 +27,14 @@ protected:
     void mousePressEvent(QMouseEvent *e) override;
 
 private:
-    DMenu *m_pMenu = nullptr;
+    DTK_WIDGET_NAMESPACE::DMenu *m_pMenu = nullptr;
 };
 
-class McpServerListWidget : public DWidget
+class McpServerListWidget : public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 public:
-    explicit McpServerListWidget(DWidget *parent = nullptr);
+    explicit McpServerListWidget(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
     void updateMcpServersInfo();
 
@@ -53,7 +51,7 @@ private:
     void initUI();
     void resetMcpServerItems();
     void updateServerList();
-    DBackgroundGroup* creatServerItem(const QJsonValue &info);
+    DTK_WIDGET_NAMESPACE::DBackgroundGroup* creatServerItem(const QJsonValue &info);
     bool showRmMcpServerDlg(const QString &name);
     bool getThirdPartyMcpAgreement();
     void updateFilterWidth();
@@ -61,17 +59,17 @@ private:
 
 private:
     // 顶部控件
-    DLabel *m_pTitleLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pTitleLabel = nullptr;
     McpFilterComboBox *m_pFilterComboBox = nullptr;
-    DCommandLinkButton *m_pAddButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DCommandLinkButton *m_pAddButton = nullptr;
 
     // 列表区域
-    DWidget *m_pListWidget = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_pListWidget = nullptr;
     QVBoxLayout *m_pListLayout = nullptr;
 
-    QMap<QString, DBackgroundGroup*> m_builtInItem {};
-    QMap<QString, DBackgroundGroup*> m_thirdBuiltInItem {};
-    QMap<QString, DBackgroundGroup*> m_customItem {};
+    QMap<QString, DTK_WIDGET_NAMESPACE::DBackgroundGroup*> m_builtInItem {};
+    QMap<QString, DTK_WIDGET_NAMESPACE::DBackgroundGroup*> m_thirdBuiltInItem {};
+    QMap<QString, DTK_WIDGET_NAMESPACE::DBackgroundGroup*> m_customItem {};
     QJsonArray m_pServersInfo {};
 
     int m_currentFilter = 0; // 0:全部, 1:内置, 2:自定义

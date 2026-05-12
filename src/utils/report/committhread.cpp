@@ -6,7 +6,7 @@
 #include <QLoggingCategory>
 Q_DECLARE_LOGGING_CATEGORY(logUtils)
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 using namespace report;
 

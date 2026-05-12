@@ -1,5 +1,4 @@
 #include "commonfaildialog.h"
-#include "networkdefs.h"
 #include "backgroundframe.h"
 
 #include <DFontSizeManager>
@@ -12,6 +11,8 @@
 
 static constexpr char WARNING_ICON[] = ":/assets/images/warning.svg";
 
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
 CommonFailDialog::CommonFailDialog(DWidget *parent)

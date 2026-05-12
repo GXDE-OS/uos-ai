@@ -3,7 +3,6 @@
 
 #include "private/querytextedit.h"
 
-#include <uosai_global.h>
 #include <markdownhighlighter.h>
 
 #include <DAbstractDialog>
@@ -23,6 +22,8 @@
 
 namespace uos_ai {
 
+class SessionManager;
+class ConversationRecord;
 class FillTextButton;
 class HintTextEdit;
 class AiWriterDialog : public DTK_WIDGET_NAMESPACE::DAbstractDialog
@@ -41,9 +42,6 @@ public:
 public slots:
     void onModelReply(int op, QString reply, int err);
     void onFontChanged(const QFont &font);
-    void onUosAiLlmAccountLstChanged();
-    void onLlmAccountLstChanged(const QString &currentAccountId, const QString &accountLst);
-    void onNetworkStateChanged(bool isOnline);
 
 protected:
     void reject() override;
@@ -140,6 +138,21 @@ private:
      * @brief 异步调整布局尺寸，某些场景同步会不生效
      */
     void asyncAdjustSize(int ms = 0);
+    /**
+     * @brief sendWordWizardRequest: Responding to user conversations
+     * @param conversation
+     * @param stream: Conversation flow switch.
+     * @param temperature: A parameter that returns randomness, where a higher value indicates higher randomness.
+     */
+    QString sendWordWizardRequest(const QString &llmId, const QString &conversation, qreal temperature, bool stream = false);
+    /**
+     * @brief Convert request to conversation record
+     */
+    QSharedPointer<uos_ai::ConversationRecord> convertRequestion(const QString &id, const QString &json);
+    /**
+     * @brief Handle session events
+     */
+    void onEvent(int event, const QString &id, const QString &json);
 
 private slots:
     void onBtClicked();
@@ -148,8 +161,6 @@ private slots:
     void onQueryTextChanged(bool isActiveChange = false);
 
 private:
-    // 初始化完成的标志
-    volatile bool m_isInitOk = false;
 
     Dtk::Gui::DGuiApplicationHelper::ColorType m_themeType = Dtk::Gui::DGuiApplicationHelper::LightType;
 
@@ -228,6 +239,14 @@ private:
     volatile bool m_isReplyEnd = false;
 
     QPoint m_initPos;
+
+    struct ChatTask {
+        QString id;
+        bool stream = false;
+        QSharedPointer<uos_ai::ConversationRecord> record;
+    };
+    ChatTask m_chatTask;
+    QSharedPointer<uos_ai::SessionManager> chatSession;
 };
 }
 

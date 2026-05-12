@@ -1,4 +1,6 @@
 #include "feishuchannel.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 // protobuf 生成代码（build 目录下）
 #include "pbbp2.pb.h"
@@ -14,8 +16,9 @@
 #include <QRegularExpression>
 #include <QUuid>
 
-Q_LOGGING_CATEGORY(logFS, "uos-ai.chatbot.feishu")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
+using namespace uos_ai;
 using namespace uos_ai::chatbot;
 
 const char *FeishuChannel::kEndpointPath   = "/callback/ws/endpoint";
@@ -88,15 +91,15 @@ FeishuChannel::FeishuChannel(QObject *parent)
 
 void FeishuChannel::start(const QJsonObject &config)
 {
-    m_appId     = config.value("app_id").toString();
-    m_appSecret = config.value("app_secret").toString();
-    QString domain = config.value("domain").toString("feishu");
-    m_domain = (domain == QStringLiteral("lark"))
+    m_appId     = config.value(STR_KEY_APP_ID).toString();
+    m_appSecret = config.value(STR_KEY_APP_SECRET).toString();
+    QString domain = config.value(STR_KEY_DOMAIN).toString(STR_PLATFORM_FEISHU);
+    m_domain = (domain == QLatin1String(STR_PLATFORM_LARK))
                ? QStringLiteral("https://open.larksuite.com")
                : QStringLiteral("https://open.feishu.cn");
 
     if (m_appId.isEmpty() || m_appSecret.isEmpty()) {
-        qCWarning(logFS) << "Missing app_id or app_secret";
+        qCWarning(logChatBot) << "Missing app_id or app_secret";
         return;
     }
 
@@ -128,7 +131,7 @@ void FeishuChannel::stop()
 
 void FeishuChannel::fetchEndpoint()
 {
-    qCInfo(logFS) << "Fetching Feishu WS endpoint...";
+    qCInfo(logChatBot) << "Fetching Feishu WS endpoint...";
 
     QNetworkRequest req(QUrl(m_domain + kEndpointPath));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
@@ -142,18 +145,18 @@ void FeishuChannel::fetchEndpoint()
     connect(reply, &QNetworkReply::finished, this, [this, reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logFS) << "Endpoint fetch failed:" << reply->errorString();
+            qCWarning(logChatBot) << "Endpoint fetch failed:" << reply->errorString();
             scheduleReconnect();
             return;
         }
 
         QJsonObject obj  = QJsonDocument::fromJson(reply->readAll()).object();
-        int code         = obj.value("code").toInt(-1);
-        QJsonObject data = obj.value("data").toObject();
+        int code         = obj.value(STR_KEY_CODE).toInt(-1);
+        QJsonObject data = obj.value(STR_KEY_DATA).toObject();
         QString wsUrl    = data.value("URL").toString();
 
         if (code != 0 || wsUrl.isEmpty()) {
-            qCWarning(logFS) << "Invalid endpoint response (code=" << code << "):" << obj;
+            qCWarning(logChatBot) << "Invalid endpoint response (code=" << code << "):" << obj;
             scheduleReconnect();
             return;
         }
@@ -167,7 +170,7 @@ void FeishuChannel::fetchEndpoint()
         QUrl url(wsUrl);
         m_serviceId = QUrlQuery(url).queryItemValue("service_id").toInt();
 
-        qCInfo(logFS) << "Connecting Feishu WebSocket...";
+        qCInfo(logChatBot) << "Connecting Feishu WebSocket...";
         m_ws->open(QUrl(wsUrl));
     });
 }
@@ -176,13 +179,13 @@ void FeishuChannel::scheduleReconnect()
 {
     if (!m_running)
         return;
-    qCInfo(logFS) << "Scheduling reconnect in" << kReconnectInterval << "ms";
+    qCInfo(logChatBot) << "Scheduling reconnect in" << kReconnectInterval << "ms";
     m_reconnectTimer->start(kReconnectInterval);
 }
 
 void FeishuChannel::onWsConnected()
 {
-    qCInfo(logFS) << "Feishu WebSocket connected";
+    qCInfo(logChatBot) << "Feishu WebSocket connected";
     m_pingTimer->setInterval(m_pingIntervalMs);
     m_pingTimer->start();
 }
@@ -190,14 +193,14 @@ void FeishuChannel::onWsConnected()
 void FeishuChannel::onWsDisconnected()
 {
     m_pingTimer->stop();
-    qCInfo(logFS) << "Feishu WebSocket disconnected";
+    qCInfo(logChatBot) << "Feishu WebSocket disconnected";
     if (m_running)
         scheduleReconnect();
 }
 
 void FeishuChannel::onWsError(QAbstractSocket::SocketError)
 {
-    qCWarning(logFS) << "Feishu WebSocket error:" << m_ws->errorString();
+    qCWarning(logChatBot) << "Feishu WebSocket error:" << m_ws->errorString();
 }
 
 // ============================================================
@@ -213,7 +216,7 @@ void FeishuChannel::handleBinaryFrame(const QByteArray &data)
 {
     pbbp2::Frame frame;
     if (!frame.ParseFromArray(data.constData(), data.size())) {
-        qCWarning(logFS) << "Failed to parse Protobuf frame";
+        qCWarning(logChatBot) << "Failed to parse Protobuf frame";
         return;
     }
 
@@ -280,8 +283,8 @@ void FeishuChannel::handleEventPayload(const QByteArray &frameBytes, const QByte
     }
 
     QJsonObject ev      = event.value("event").toObject();
-    QJsonObject msgObj  = ev.value("message").toObject();
-    QString messageId   = msgObj.value("message_id").toString();
+    QJsonObject msgObj  = ev.value(STR_KEY_MESSAGE).toObject();
+    QString messageId   = msgObj.value(STR_KEY_MESSAGE_ID).toString();
 
     // 消息去重
     if (m_processedMsgIds.contains(messageId)) {
@@ -291,12 +294,12 @@ void FeishuChannel::handleEventPayload(const QByteArray &frameBytes, const QByte
     m_processedMsgIds.insert(messageId);
 
     QString msgType = msgObj.value("message_type").toString();
-    QString contentRaw = msgObj.value("content").toString();
+    QString contentRaw = msgObj.value(STR_KEY_CONTENT).toString();
 
     QString textContent;
     if (msgType == QStringLiteral("text")) {
         QJsonObject contentObj = QJsonDocument::fromJson(contentRaw.toUtf8()).object();
-        textContent = contentObj.value("text").toString().trimmed();
+        textContent = contentObj.value(STR_KEY_TEXT).toString().trimmed();
         // 去掉飞书 @ 语法 <at ...>...</at>
         static QRegularExpression atTag(QStringLiteral("<at[^>]*>[^<]*</at>"),
                                         QRegularExpression::CaseInsensitiveOption);
@@ -314,24 +317,24 @@ void FeishuChannel::handleEventPayload(const QByteArray &frameBytes, const QByte
     }
 
     // 发送者与会话信息
-    QJsonObject sender     = ev.value("sender").toObject();
+    QJsonObject sender     = ev.value(STR_KEY_SENDER).toObject();
     QJsonObject senderId   = sender.value("sender_id").toObject();
     QString openId         = senderId.value("open_id").toString();
     QString chatId         = msgObj.value("chat_id").toString();
     QString chatType       = msgObj.value("chat_type").toString(); // p2p | group
 
     QString convType   = (chatType == QStringLiteral("p2p"))
-                         ? QStringLiteral("user") : QStringLiteral("group");
-    QString convId     = (convType == QStringLiteral("user")) ? openId : chatId;
+                         ? STR_KEY_USER : QStringLiteral("group");
+    QString convId     = (convType == QLatin1String(STR_KEY_USER)) ? openId : chatId;
     QString replyTo    = convId;   // sendMessage 的 to 参数
 
     QJsonObject payload_obj;
-    payload_obj["platform"]   = platformName();
-    payload_obj["message_id"] = messageId;
-    payload_obj["sender"]     = QJsonObject{{"id", openId}, {"name", openId}, {"type", "user"}};
-    payload_obj["conversation"] = QJsonObject{{"id", replyTo}, {"type", convType}};
-    payload_obj["content"]    = QJsonObject{{"type", "text"}, {"text", textContent}};
-    payload_obj["timestamp"]  = QDateTime::currentSecsSinceEpoch();
+    payload_obj[STR_KEY_PLATFORM]     = platformName();
+    payload_obj[STR_KEY_MESSAGE_ID]   = messageId;
+    payload_obj[STR_KEY_SENDER]       = QJsonObject{{STR_KEY_ID, openId}, {STR_KEY_NAME, openId}, {STR_KEY_TYPE, STR_KEY_USER}};
+    payload_obj[STR_KEY_CONVERSATION] = QJsonObject{{STR_KEY_ID, replyTo}, {STR_KEY_TYPE, convType}};
+    payload_obj[STR_KEY_CONTENT]      = QJsonObject{{STR_KEY_TYPE, STR_KEY_TEXT}, {STR_KEY_TEXT, textContent}};
+    payload_obj[STR_KEY_TIMESTAMP]    = QDateTime::currentSecsSinceEpoch();
 
     sendAck(frameBytes);
     emit messageReceived(payload_obj);
@@ -451,28 +454,28 @@ void FeishuChannel::ensureToken(std::function<void()> action)
 void FeishuChannel::fetchToken()
 {
     m_tokenState = TokenState::Refreshing;
-    qCInfo(logFS) << "Fetching Feishu tenant_access_token...";
+    qCInfo(logChatBot) << "Fetching Feishu tenant_access_token...";
 
     QNetworkRequest req(QUrl(m_domain + kTokenPath));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
     QJsonObject body;
-    body["app_id"]     = m_appId;
-    body["app_secret"] = m_appSecret;
+    body[STR_KEY_APP_ID]     = m_appId;
+    body[STR_KEY_APP_SECRET] = m_appSecret;
 
     QNetworkReply *reply = m_http->post(req, QJsonDocument(body).toJson(QJsonDocument::Compact));
     connect(reply, &QNetworkReply::finished, this, [this, reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logFS) << "Token fetch failed:" << reply->errorString();
+            qCWarning(logChatBot) << "Token fetch failed:" << reply->errorString();
             m_tokenState = TokenState::Invalid;
             m_pendingActions.clear();
             return;
         }
 
         QJsonObject obj = QJsonDocument::fromJson(reply->readAll()).object();
-        if (obj.value("code").toInt(-1) != 0) {
-            qCWarning(logFS) << "Token response error:" << obj;
+        if (obj.value(STR_KEY_CODE).toInt(-1) != 0) {
+            qCWarning(logChatBot) << "Token response error:" << obj;
             m_tokenState = TokenState::Invalid;
             m_pendingActions.clear();
             return;
@@ -524,18 +527,18 @@ void FeishuChannel::doSendMessage(const QString &to, const QString &content,
 
     // content 字段本身也是 JSON 字符串
     QString contentJson = QString::fromUtf8(
-        QJsonDocument(QJsonObject{{"text", content}}).toJson(QJsonDocument::Compact));
+        QJsonDocument(QJsonObject{{STR_KEY_TEXT, content}}).toJson(QJsonDocument::Compact));
 
     QJsonObject body;
-    body["receive_id"] = to;
-    body["msg_type"]   = "text";
-    body["content"]    = contentJson;
+    body["receive_id"]   = to;
+    body["msg_type"]     = STR_KEY_TEXT;
+    body[STR_KEY_CONTENT] = contentJson;
 
     QNetworkReply *reply = m_http->post(req, QJsonDocument(body).toJson(QJsonDocument::Compact));
     connect(reply, &QNetworkReply::finished, this, [reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logFS) << "Send failed:" << reply->errorString() << reply->readAll();
+            qCWarning(logChatBot) << "Send failed:" << reply->errorString() << reply->readAll();
     });
 }
 
@@ -581,7 +584,7 @@ void FeishuChannel::doCreateStreamingCard(const QString &handle)
 
     QJsonObject textElem;
     textElem["tag"]        = QStringLiteral("markdown");
-    textElem["content"]    = tr("Thinking...");
+    textElem[STR_KEY_CONTENT] = tr("Thinking...");
     textElem["element_id"] = QLatin1String(kStreamElementId);
 
     cardJson["body"] = QJsonObject{
@@ -597,8 +600,8 @@ void FeishuChannel::doCreateStreamingCard(const QString &handle)
                      QStringLiteral("Bearer %1").arg(m_accessToken).toUtf8());
 
     QJsonObject body;
-    body["type"] = QStringLiteral("card_json");
-    body["data"] = cardData;
+    body[STR_KEY_TYPE] = QStringLiteral("card_json");
+    body[STR_KEY_DATA] = cardData;
 
     QNetworkReply *reply = m_http->post(req, QJsonDocument(body).toJson(QJsonDocument::Compact));
     connect(reply, &QNetworkReply::finished, this, [this, reply, handle] {
@@ -608,7 +611,7 @@ void FeishuChannel::doCreateStreamingCard(const QString &handle)
 
         if (reply->error() != QNetworkReply::NoError) {
             QByteArray respBody = reply->readAll();
-            qCWarning(logFS) << "Create streaming card failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Create streaming card failed:" << reply->errorString()
                              << respBody;
             // 降级：卡片创建失败（如缺少 cardkit:card:write 权限），
             // 保留 handle 条目并标记 failed，等 updateStreamingReply 到来时发普通消息
@@ -624,15 +627,15 @@ void FeishuChannel::doCreateStreamingCard(const QString &handle)
         }
 
         QJsonObject obj = QJsonDocument::fromJson(reply->readAll()).object();
-        if (obj.value("code").toInt(-1) != 0) {
-            qCWarning(logFS) << "Create card error:" << obj;
+        if (obj.value(STR_KEY_CODE).toInt(-1) != 0) {
+            qCWarning(logChatBot) << "Create card error:" << obj;
             m_streamingReplies.remove(handle);
             return;
         }
 
-        QString cardId = obj.value("data").toObject().value("card_id").toString();
+        QString cardId = obj.value(STR_KEY_DATA).toObject().value("card_id").toString();
         if (cardId.isEmpty()) {
-            qCWarning(logFS) << "Empty card_id in response";
+            qCWarning(logChatBot) << "Empty card_id in response";
             m_streamingReplies.remove(handle);
             return;
         }
@@ -672,20 +675,20 @@ void FeishuChannel::doSendCardMessage(const QString &handle)
 
     // content 字段是 JSON 字符串，内含 card_id
     QJsonObject cardRef;
-    cardRef["type"] = QStringLiteral("card");
+    cardRef[STR_KEY_TYPE] = QStringLiteral("card");
     cardRef["data"] = QJsonObject{{"card_id", sr.cardId}};
 
     QJsonObject body;
-    body["receive_id"] = sr.to;
-    body["msg_type"]   = QStringLiteral("interactive");
-    body["content"]    = QString::fromUtf8(
+    body["receive_id"]    = sr.to;
+    body["msg_type"]      = QStringLiteral("interactive");
+    body[STR_KEY_CONTENT] = QString::fromUtf8(
         QJsonDocument(cardRef).toJson(QJsonDocument::Compact));
 
     QNetworkReply *reply = m_http->post(req, QJsonDocument(body).toJson(QJsonDocument::Compact));
     connect(reply, &QNetworkReply::finished, this, [reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logFS) << "Send card message failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Send card message failed:" << reply->errorString()
                              << reply->readAll();
     });
 }
@@ -729,8 +732,8 @@ void FeishuChannel::doUpdateCardContent(const QString &handle, const QString &co
                      QStringLiteral("Bearer %1").arg(m_accessToken).toUtf8());
 
     QJsonObject body;
-    body["content"]  = content;
-    body["sequence"] = seq;
+    body[STR_KEY_CONTENT] = content;
+    body["sequence"]      = seq;
 
     QNetworkReply *reply = m_http->sendCustomRequest(
         req, "PUT", QJsonDocument(body).toJson(QJsonDocument::Compact));
@@ -740,7 +743,7 @@ void FeishuChannel::doUpdateCardContent(const QString &handle, const QString &co
             return;
         StreamingReply &sr = m_streamingReplies[handle];
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logFS) << "Update card content failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Update card content failed:" << reply->errorString()
                              << reply->readAll();
         if (--sr.inflightUpdates == 0 && sr.pendingFinalize)
             doFinalizeCard(handle);
@@ -796,7 +799,7 @@ void FeishuChannel::doFinalizeCard(const QString &handle)
     connect(reply, &QNetworkReply::finished, this, [this, reply, handle] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logFS) << "Finalize card failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Finalize card failed:" << reply->errorString()
                              << reply->readAll();
         m_streamingReplies.remove(handle);
     });

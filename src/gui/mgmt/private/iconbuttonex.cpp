@@ -6,6 +6,9 @@
 #include <QMouseEvent>
 #include <QApplication>
 
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
+
 IconButtonEx::IconButtonEx(DWidget *parent)
     : IconButtonEx("", parent)
 {

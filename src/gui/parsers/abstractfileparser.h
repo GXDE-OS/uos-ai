@@ -5,14 +5,14 @@
 #ifndef ABSTRACTFILEPARSER_H
 #define ABSTRACTFILEPARSER_H
 
-#include "uosai_global.h"
+
 #include "parserresult.h"
 
 #include <QObject>
 #include <QHash>
 #include <QVariantMap>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief Abstract base class for file parsers
@@ -116,6 +116,6 @@ Q_SIGNALS:
     void parsingCompleted(bool success);
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // ABSTRACTFILEPARSER_H

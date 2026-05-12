@@ -27,22 +27,25 @@ FydnPlugin::FydnPlugin(QObject *parent)
 
 QStringList FydnPlugin::modelList() const
 {
-    return {ZgfyLLM::modelID()};
+    return {ZgfyLLM::modelID(), ZgfyLLM::qaModelID()};
 }
 
 QStringList FydnPlugin::roles(const QString &model) const
 {
-    if (model != ZgfyLLM::modelID())
-        return {};
+    if (model == ZgfyLLM::qaModelID())
+        return {kRoleQA};
 
-    return {kRoleRI, kRoleQA};
+    if (model ==  ZgfyLLM::modelID())
+        return {kRoleRI};
+
+    return {};
 }
 
 QVariant FydnPlugin::queryInfo(const QString &query, const QString &id)
 {
     if (query == QUERY_DISPLAY_NAME) {
-        if (id == ZgfyLLM::modelID())
-            return ZgfyLLM::modelID();
+        if (id == ZgfyLLM::modelID() || id == ZgfyLLM::qaModelID())
+            return QString("万法大模型");
         else if (id == kRoleQA)
             return QString("法律助手-类案查询");
         else if (id == kRoleRI)
@@ -92,8 +95,8 @@ QVariant FydnPlugin::queryInfo(const QString &query, const QString &id)
 
 LLMModel *FydnPlugin::createModel(const QString &name)
 {
-    if (name == ZgfyLLM::modelID())
-        return new ZgfyLLM;
+    if (name == ZgfyLLM::modelID() || name == ZgfyLLM::qaModelID())
+        return new ZgfyLLM(name);
 
     return nullptr;
 }

@@ -1,4 +1,5 @@
 #include "baidusearch.h"
+#include "../tools/iconstore.h"
 #include "osinfo.h"
 
 #include <QNetworkReply>
@@ -80,9 +81,10 @@ QJsonArray BaiduSearch::search(const QString &query, int maxResults)
     QTimer timer;
     timer.setInterval(60000); // 60s timeout
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
-    connect(&timer, &QTimer::timeout, &loop, &QEventLoop::quit);
+    connect(&timer, &QTimer::timeout, reply, &QNetworkReply::abort);
     timer.start();
     loop.exec();
+    timer.stop();
 
     QJsonArray normalizedResults;
     if (reply->error() != QNetworkReply::NoError) {
@@ -119,9 +121,10 @@ QJsonArray BaiduSearch::search(const QString &query, int maxResults)
                 }
                 if (resultObj.contains("icon")) {
                     QString iconUrl = resultObj.value("icon").toString();
-                    QString base64Icon = urlToBase64(iconUrl);
-                    if (!base64Icon.isEmpty()) {
-                        normalizedResult["icon"] = base64Icon;
+                    QString pageUrl = resultObj.value("url").toString();
+                    QString iconKey = downloadAndSaveIcon(iconUrl, pageUrl);
+                    if (!iconKey.isEmpty()) {
+                        normalizedResult["icon"] = iconKey;
                     }
                 }
 
@@ -138,33 +141,44 @@ QJsonArray BaiduSearch::search(const QString &query, int maxResults)
     return normalizedResults;
 }
 
-QString BaiduSearch::urlToBase64(const QString &url)
+QString BaiduSearch::downloadAndSaveIcon(const QString &iconUrl, const QString &pageUrl)
 {
-    if (url.isEmpty()) {
+    if (iconUrl.isEmpty())
         return QString();
-    }
 
-    QNetworkRequest request(url);
+    // Derive domain key from page URL (or icon URL as fallback)
+    QString key = IconStore::domainKey(pageUrl);
+    if (key.isEmpty())
+        key = IconStore::domainKey(iconUrl);
+    if (key.isEmpty())
+        return QString();
+
+    // Skip download if icon already cached
+    if (IconStore::instance()->exists(key))
+        return key;
+
+    QNetworkRequest request(iconUrl);
     QNetworkReply *reply = m_networkManager->get(request);
 
     QEventLoop loop;
     QTimer timer;
     timer.setInterval(5000); // 5s timeout
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
-    connect(&timer, &QTimer::timeout, &loop, &QEventLoop::quit);
+    connect(&timer, &QTimer::timeout, reply, &QNetworkReply::abort);
     timer.start();
     loop.exec();
+    timer.stop();
 
-    QString base64Str;
+    QString resultKey;
     if (reply->error() == QNetworkReply::NoError) {
         QByteArray data = reply->readAll();
-        base64Str = QString::fromLatin1(data.toBase64());
+        resultKey = IconStore::instance()->saveFromData(key, data);
     } else {
-        qWarning() << "Failed to download icon:" << url << reply->errorString();
+        qWarning() << "Failed to download icon:" << iconUrl << reply->errorString();
     }
     reply->deleteLater();
 
-    return base64Str;
+    return resultKey;
 }
 
 } // namespace uos_ai

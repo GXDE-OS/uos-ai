@@ -1,6 +1,6 @@
 #ifndef XEVENTMONITOR_H
 #define XEVENTMONITOR_H
-#include "uosai_global.h"
+
 
 #include "basemonitor.h"
 #include <QDataStream>

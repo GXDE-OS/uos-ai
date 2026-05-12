@@ -7,7 +7,6 @@
 #include <DLabel>
 #include <DPushButton>
 #include <DCommandLinkButton>
-#include "uosai_global.h"
 
 namespace uos_ai {
 class VoiceAnimationWidget : public DTK_WIDGET_NAMESPACE::DWidget

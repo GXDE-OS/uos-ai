@@ -24,6 +24,10 @@ struct ChannelConfig {
     QString clientId()     const;   // 钉钉
     QString clientSecret() const;   // 钉钉
     QString secret()       const;   // QQ
+    QString botToken()     const;   // Telegram / Discord
+    QString applicationId() const;  // Discord
+    QString guildId()      const;   // Discord
+    QString apiBase()      const;   // Telegram
 
     /// 返回适合传入 AbstractChannel::start() 的原始对象
     const QJsonObject &raw() const { return m_raw; }

@@ -1,6 +1,6 @@
 #ifndef WORDWIZARDWIDGET_H
 #define WORDWIZARDWIDGET_H
-#include "uosai_global.h"
+
 #include "disableappwidget.h"
 #include "skilllistwidget.h"
 
@@ -9,9 +9,8 @@
 #include <DWidget>
 #include <DBackgroundGroup>
 
-class ThemedLable;
-
 namespace uos_ai {
+class ThemedLable;
 class WordWizardItem;
 class DisableAppWidget;
 class WizardWrapperLabel;

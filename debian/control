@@ -10,7 +10,6 @@ Build-Depends:
  libdocparser-dev,
  libjwt-dev,
  libssl-dev,
- libyaml-cpp-dev,
  libfcitx5core-dev,
  libfcitx5utils-dev,
  fcitx5-modules-dev,
@@ -33,6 +32,7 @@ Build-Depends:
  wayland-protocols,
  libdtk6ocr-dev,
  libpoppler-qt6-dev,
+ libyaml-cpp-dev,
  libprotobuf-dev,
  protobuf-compiler
 

@@ -1,8 +1,6 @@
 #ifndef EMBEDDINGSERVER_H
 #define EMBEDDINGSERVER_H
 
-#include "serverdefs.h"
-
 #include <QObject>
 #include <QDBusInterface>
 
@@ -17,8 +15,8 @@ public:
     bool createVectorIndex(const QStringList &files);
     bool deleteVectorIndex(const QStringList &files);
 
-    QStringList searchVecor(const QString &query, int topK, AssistantType type);
-    QString embeddingSearch(const QString &query, int topK, AssistantType type);
+    QStringList searchVecor(const QString &query, int topK, bool sys = false);
+    QString embeddingSearch(const QString &query, int topK, bool sys = false);
     QVector<QPair<int, QString>> getDocFiles();
     QStringList getDocContent();
     void saveAllIndex();

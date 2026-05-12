@@ -5,8 +5,8 @@
 #ifndef MODELSCOPEITEM_H
 #define MODELSCOPEITEM_H
 
-#include "uosai_global.h"
 #include "updatebutton.h"
+
 #include <QProcess>
 #include <QTimer>
 

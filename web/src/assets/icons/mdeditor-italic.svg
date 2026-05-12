@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,0 L16,0 L16,16 L0,16 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/编辑器/斜体" stroke="none" xlink:href="#path-1" fill-rule="nonzero">
+        <polygon id="路径" fill="currentColor" points="10.4 14.5 4 14.5 4 13.5000055 6.341288 13.5000055 8.034 2.50468469 5.6 2.50468469 5.6 1.5 12 1.5 12 2.50468469 9.65872 2.50468469 7.966 13.5000055 10.4 13.5000055"></polygon>
+    </g>
+</svg>

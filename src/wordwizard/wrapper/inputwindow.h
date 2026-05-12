@@ -68,7 +68,8 @@ private:
     void updateHoverStyle(QWidget* widget, bool hovered);
     Q_DISABLE_COPY(InputWindow)
 
-    QLabel *m_twoLineSep = nullptr;
+    DWidget *m_lineSep1 = nullptr;
+    DWidget *m_lineSep2 = nullptr;
     DLineEdit *m_inputEdit = nullptr;
     QWidgetAction *m_sendBtnAction = nullptr;
     CustomDMenu *m_disableMenu = nullptr;

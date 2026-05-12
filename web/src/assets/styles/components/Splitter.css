@@ -1,0 +1,37 @@
+.splitter {
+    height: 100%;
+    background: transparent;
+    cursor: col-resize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: border-color var(--transition-normal);
+}
+
+.splitter:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.splitter:active {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.splitter-disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.splitter-handle {
+    width: 4px;
+    height: var(--size-lg);
+    background: transparent;
+    opacity: 0;
+    transition: all var(--transition-normal);
+}
+
+.splitter:hover .splitter-handle {
+    opacity: 1;
+    background: rgba(0, 0, 0, var(--gray-opacity-light));
+}

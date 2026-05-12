@@ -1,6 +1,6 @@
 #ifndef BASEMONITOR_H
 #define BASEMONITOR_H
-#include "uosai_global.h"
+
 
 #include <QObject>
 #include <QThread>

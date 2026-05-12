@@ -15,15 +15,16 @@ AppletItem {
     id: aibar
     property bool shouldVisible: Applet.visible
     property int dockSize: Panel.rootObject.dockSize
-    property int dockOrder: (Panel.displayMode === Dock.Fashion || Panel.itemAlignment === Dock.LeftAlignment) ? 13 : 1
+    property int dockOrder: 26
     property bool useColumnLayout: Panel.position % 2
     property ListModel itemModel: ListModel{}
-    property int iconCount: 2
+    property int iconCount: 1
     property bool meetingIconVisible: true
     property var meetAssistantStatus: Applet.getNowMeetAssistantStatus()
     property point iconPoint: Qt.point(0, 0)
-    implicitWidth: useColumnLayout ? Panel.rootObject.dockSize : Panel.rootObject.dockItemMaxSize * 0.8 * iconCount
-    implicitHeight: useColumnLayout ? Panel.rootObject.dockItemMaxSize * 0.8 * iconCount : Panel.rootObject.dockSize
+    property var iconWidth : Panel.rootObject.dockItemMaxSize * 2 / 3 > 36 ? 36 : Panel.rootObject.dockItemMaxSize * 2 / 3
+    implicitWidth: useColumnLayout ? Panel.rootObject.dockSize : iconWidth * iconCount + 10
+    implicitHeight: useColumnLayout ? iconWidth * iconCount + 10 : Panel.rootObject.dockSize
     PanelToolTip {
         id: toolTip
         text: qsTr("UOS AI Bar")
@@ -74,8 +75,9 @@ AppletItem {
 
                 D.DciIcon {
                     id: aiBarIcon1
-                    name: "qrc:/icons/deepin/builtin/icons/UosAiAssistant.svg"
-                    sourceSize: Qt.size(Panel.rootObject.dockItemMaxSize * 9 / 14 , Panel.rootObject.dockItemMaxSize * 9 / 14)
+                    name: "UosAiAssistant"
+                    sourceSize: Qt.size(iconWidth , iconWidth)
+                    Layout.rightMargin: 10
                     retainWhileLoading: true
 
                     // DropArea {
@@ -116,8 +118,9 @@ AppletItem {
                 D.DciIcon {
                     id: aiMeetingIcon1
                     visible: meetingIconVisible
-                    name: "qrc:/icons/deepin/builtin/icons/ai-meeting-assistant.svg"
-                    sourceSize: Qt.size(Panel.rootObject.dockItemMaxSize * 9 / 14 , Panel.rootObject.dockItemMaxSize * 9 / 14)
+                    name: "UosAiAssistant"
+                    sourceSize: Qt.size(iconWidth , iconWidth)
+                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
@@ -174,8 +177,9 @@ AppletItem {
 
                 D.DciIcon {
                     id: aiBarIcon2
-                    name: "qrc:/icons/deepin/builtin/icons/UosAiAssistant.svg"
-                    sourceSize: Qt.size(Panel.rootObject.dockItemMaxSize * 9 / 14 , Panel.rootObject.dockItemMaxSize * 9 / 14)
+                    name: "UosAiAssistant"
+                    sourceSize: Qt.size(iconWidth , iconWidth)
+                    Layout.bottomMargin: 10
 
                     // DropArea {
                     //     anchors.fill: parent
@@ -218,8 +222,9 @@ AppletItem {
                 D.DciIcon {
                     id: aiMeetingIcon2
                     visible: meetingIconVisible
-                    name: "qrc:/icons/deepin/builtin/icons/ai-meeting-assistant.svg"
-                    sourceSize: Qt.size(Panel.rootObject.dockItemMaxSize * 9 / 14 , Panel.rootObject.dockItemMaxSize * 9 / 14)
+                    name: "UosAiAssistant"
+                    sourceSize: Qt.size(iconWidth , iconWidth)
+                    Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {

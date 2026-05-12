@@ -1,0 +1,90 @@
+[
+    {
+        "id": "tpl-official-001",
+        "name": "通知公告",
+        "description": "适用于发布官方通知、公告等",
+        "icon": "official",
+        "category": "official",
+        "content": "<uos-ai-prompt-template>请帮我起草一份关于{{主题}}的通知公告，发布单位为{{单位名称}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-official-002",
+        "name": "会议纪要",
+        "description": "记录会议核心内容与决议事项",
+        "icon": "official",
+        "category": "official",
+        "content": "<uos-ai-prompt-template>请帮我整理[[本次|上次]]关于{{会议主题}}的会议纪要，参会人员包括{{参会人员}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-official-003",
+        "name": "请示报告",
+        "description": "向上级机关请示事项的正式公文",
+        "icon": "official",
+        "category": "official",
+        "content": "<uos-ai-prompt-template>请帮我撰写一份关于{{请示事项}}的请示报告，请示单位为{{单位名称}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-promotion-001",
+        "name": "产品宣传",
+        "description": "产品推广活动文案模板",
+        "icon": "promotion",
+        "category": "promotion",
+        "content": "<uos-ai-prompt-template>请为{{产品名称}}撰写一段[[微信公众号|微博|抖音]]宣传文案，突出产品的{{核心卖点}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-promotion-002",
+        "name": "活动策划",
+        "description": "线下活动策划方案框架",
+        "icon": "promotion",
+        "category": "promotion",
+        "content": "<uos-ai-prompt-template>请帮我策划一场{{活动主题}}活动，活动时间为{{活动时间}}，预计参与人数{{参与人数}}人</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-general-001",
+        "name": "工作周报",
+        "description": "周度工作总结与计划模板",
+        "icon": "general",
+        "category": "general",
+        "content": "<uos-ai-prompt-template>请帮我撰写[[本周|上周]]的工作周报，本周主要完成了{{主要工作}}，下周计划{{下周计划}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-general-002",
+        "name": "工作总结",
+        "description": "月度或年度工作总结报告",
+        "icon": "general",
+        "category": "general",
+        "content": "<uos-ai-prompt-template>请帮我撰写[[本月|本季度|本年度]]工作总结，主要工作成果包括{{主要成果}}，存在的不足是{{不足之处}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-industry-001",
+        "name": "项目管理",
+        "description": "项目进度跟踪与风险管理",
+        "icon": "industry",
+        "category": "industry",
+        "content": "<uos-ai-prompt-template>请帮我撰写{{项目名称}}的项目进度报告，当前进度为{{当前进度}}，存在的风险点为{{风险点}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-industry-002",
+        "name": "市场分析",
+        "description": "行业市场调研与分析报告",
+        "icon": "industry",
+        "category": "industry",
+        "content": "<uos-ai-prompt-template>请帮我撰写关于{{行业/产品}}的市场分析报告，重点分析[[市场规模|竞争格局|用户需求|发展趋势]]</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-tech-001",
+        "name": "技术文档",
+        "description": "API/系统技术文档模板",
+        "icon": "tech",
+        "category": "tech",
+        "content": "<uos-ai-prompt-template>请帮我撰写{{系统/模块名称}}的技术文档，包括[[接口说明|系统架构|部署说明|使用指南]]</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-tech-002",
+        "name": "需求分析",
+        "description": "产品需求文档 PRD 模板",
+        "icon": "tech",
+        "category": "tech",
+        "content": "<uos-ai-prompt-template>请帮我撰写{{功能/产品名称}}的需求分析文档（PRD），背景是{{需求背景}}，目标用户为{{目标用户}}</uos-ai-prompt-template>"
+    }
+]

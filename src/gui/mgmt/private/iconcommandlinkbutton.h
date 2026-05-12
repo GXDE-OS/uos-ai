@@ -1,6 +1,6 @@
 #ifndef ICONCOMMANDLINKBUTTON_H
 #define ICONCOMMANDLINKBUTTON_H
-#include "uosai_global.h"
+
 #include <DCommandLinkButton>
 
 namespace uos_ai {

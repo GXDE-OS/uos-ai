@@ -1,0 +1,160 @@
+html {
+    --window-sidebar-temp-conversation-button-bg-color-hover: rgba(0, 0, 0, 0.1);
+    --window-sidebar-temp-conversation-button-bg-color-active: rgba(0, 0, 0, 0.2);
+}
+
+html.dark {
+    --window-sidebar-temp-conversation-button-bg-color-hover: rgba(255, 255, 255, 0.1);
+    --window-sidebar-temp-conversation-button-bg-color-active: rgba(255, 255, 255, 0.05);
+}
+
+.window-sidebar {
+    width: var(--sidebar-width, 200px);
+    height: 100%;
+    background-color: transparent;
+    flex-shrink: 0;
+    transition: width var(--sidebar-layout-transition-duration) var(--sidebar-layout-transition-easing);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0; /* 为标题栏留出空间 */
+    user-select: none;
+}
+
+.window-sidebar.is-dragging,
+.window-sidebar.is-resizing {
+    transition: none;
+}
+
+.window-sidebar__content {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity var(--sidebar-layout-transition-duration) var(--sidebar-layout-transition-easing);
+}
+
+.window-sidebar--collapsed .window-sidebar__content {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.window-sidebar.is-dragging .window-sidebar__content,
+.window-sidebar.is-resizing .window-sidebar__content {
+    transition: none;
+}
+
+/* 新建对话项容器 - 在滚动区域外 */
+.window-sidebar__new-item {
+    flex-shrink: 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.window-sidebar__new-item-entry {
+    flex: 1;
+    min-width: 0;
+}
+
+.window-sidebar__temp-conversation-button {
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+.icon-button.window-sidebar__temp-conversation-button:hover:not(.icon-button-disabled) {
+    background: var(--window-sidebar-temp-conversation-button-bg-color-hover);
+    box-shadow: none;
+}
+
+.icon-button.window-sidebar__temp-conversation-button:active:not(.icon-button-disabled) {
+    background: var(--window-sidebar-temp-conversation-button-bg-color-active);
+    box-shadow: none;
+}
+
+.window-sidebar__list-shell {
+    --window-sidebar-sticky-stack-height: 0px;
+    position: relative;
+    flex: 1;
+    min-height: 0;
+}
+
+.window-sidebar__sticky-stack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    height: var(--window-sidebar-sticky-stack-height);
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+.window-sidebar__list-shell > .window-sidebar__scroll {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.window-sidebar__list-shell > .window-sidebar__scroll .scroll-bar-content {
+    clip-path: inset(var(--window-sidebar-sticky-stack-height) 0 0 0);
+}
+
+.window-sidebar__list-shell > .window-sidebar__scroll > .scroll-bar--vertical {
+    /* right: 0px; */
+    top: 0px;
+    bottom: 0px;
+}
+
+/* 会话状态指示器的公共容器，保证 loading 与红点在列表右侧对齐。 */
+.window-sidebar__conversation-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+/* 生成中状态保持 16px 命中盒，避免图标旋转时挤压文本布局。 */
+.window-sidebar__conversation-status--loading {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+}
+
+/* loading 图标围绕中心旋转，复用统一的 loading.svg 资源。 */
+.window-sidebar__conversation-loading-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    transform-origin: center center;
+    animation: window-sidebar-conversation-loading 0.9s linear infinite;
+}
+
+/* 未读状态使用小红点，尺寸和边缘高光按侧边栏视觉风格单独调整。 */
+.window-sidebar__conversation-status--unread {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 2, 2, 1);
+    box-shadow:
+        0 0 0 0.5px rgba(0, 0, 0, 0.05),
+        0 0 0 0.5px rgba(0, 0, 0, 0.05),
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(255, 255, 255, 0.2);
+    margin: 4px;
+}
+
+@keyframes window-sidebar-conversation-loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

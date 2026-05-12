@@ -1,11 +1,9 @@
 #ifndef AUDIOAIASSISTANTTTSPROXY_H
 #define AUDIOAIASSISTANTTTSPROXY_H
 
-#include "uosai_global.h"
-
 #include <QObject>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class AudioAiassistant;
 class AudioAiassistantTtsProxy : public QObject
 {
@@ -30,6 +28,6 @@ private:
 
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // AUDIOAIASSISTANTTTSPROXY_H

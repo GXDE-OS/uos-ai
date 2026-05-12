@@ -1,23 +1,19 @@
 #ifndef KNOWLEDGEBASELISTITEM_H
 #define KNOWLEDGEBASELISTITEM_H
 
-#include "serverdefs.h"
 #include "mgmtdefs.h"
 
 #include <DWidget>
 #include <DGuiApplicationHelper>
 
-DWIDGET_USE_NAMESPACE
-DGUI_USE_NAMESPACE
-
+namespace uos_ai {
 class OperatingLineWidget;
-
-class KnowledgeBaseItem : public DWidget
+class KnowledgeBaseItem : public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 
 public:
-    explicit KnowledgeBaseItem(const QString &name, const QString &filePath, DWidget *parent = nullptr);
+    explicit KnowledgeBaseItem(const QString &name, const QString &filePath, DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
     // 其他成员函数和数据成员
     void setEditMode(bool);
     void setStatus(KnowledgeBaseProcessStatus status);
@@ -33,7 +29,7 @@ signals:
 private slots:
     void onEditButtonClicked(const QString &objectname);
     void onDeleteButtonClicked();
-    void onThemeTypeChanged(DGuiApplicationHelper::ColorType themeType);
+    void onThemeTypeChanged(DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType themeType);
 
 private:
     void initUI();
@@ -47,4 +43,5 @@ private:
     QString m_filePath;
 };
 
+}
 #endif // KNOWLEDGEBASELISTITEM_H

@@ -1,0 +1,94 @@
+/* BatchOperateBar 主题变量 */
+html {
+    /* 背景色 */
+    --batchoperatebar-background: rgba(245, 245, 245, 1);
+    --batchoperatebar-background-advanced: rgba(245, 245, 245, 0.5);
+    /* 阴影 */
+    --batchoperatebar-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    /* 文本颜色 */
+    --batchoperatebar-text: rgba(0, 0, 0, 0.7);
+    /* 边框颜色 */
+    --batchoperatebar-border-color: rgba(0, 0, 0, 0.08);
+}
+
+html.dark {
+    /* 背景色 */
+    --batchoperatebar-background: rgba(10, 10, 10, 1);
+    --batchoperatebar-background-advanced: rgba(10, 10, 10, 0.5);
+    /* 阴影 */
+    --batchoperatebar-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.05), 0 0 0 0.5px rgba(255, 255, 255, 0.05),
+        0 0 0 0.5px rgba(0, 0, 0, 0.6), 0 0 0 0.5px rgba(0, 0, 0, 0.6), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    /* 文本颜色 */
+    --batchoperatebar-text: rgba(255, 255, 255, 0.7);
+    /* 边框颜色 */
+    --batchoperatebar-border-color: rgba(255, 255, 255, 0.08);
+}
+
+.batch-operate-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    height: 46px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 8px;
+    background-color: var(--batchoperatebar-background);
+    box-shadow: var(--batchoperatebar-shadow);
+    z-index: 1000;
+    border-radius: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.batch-operate-bar--advanced {
+    background-color: var(--batchoperatebar-background-advanced);
+    backdrop-filter: blur(30px);
+}
+
+.batch-operate-bar__left {
+    display: flex;
+    align-items: center;
+    /* gap: 16px; */
+}
+
+.batch-operate-bar__checkbox {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: var(--uosai-font-size-base);
+    margin-right: 6px;
+}
+
+.batch-operate-bar__checkbox-label {
+    margin-left: 6px;
+}
+
+.batch-operate-bar__label {
+    font-size: var(--uosai-font-size-base);
+    color: var(--batchoperatebar-text);
+}
+
+.batch-operate-bar__count {
+    margin-left: 12px;
+    font-size: var(--uosai-font-size-xs);
+    color: var(--batchoperatebar-text);
+    opacity: 0.8;
+}
+
+.batch-operate-bar__right {
+    display: flex;
+}
+
+.batch-operate-bar__divider {
+    width: 1px;
+    height: 24.9px;
+    background-color: var(--batchoperatebar-border-color);
+    margin: 0 8.5px;
+}
+.batch-operate-bar__button--delete:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}

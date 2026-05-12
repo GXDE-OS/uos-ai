@@ -1,13 +1,12 @@
 #ifndef DEEPINLAUNCHER_H
 #define DEEPINLAUNCHER_H
-#include "ability/launcherability.h"
 
 #include <QObject>
 #include <QString>
 #include <QStringList>
 #include <QDBusInterface>
-
-class DeepinLauncher : public QObject,  public ILauncher
+namespace uos_ai {
+class DeepinLauncher : public QObject
 {
     Q_OBJECT
 public:
@@ -15,10 +14,10 @@ public:
                             QObject *parent = nullptr);
     virtual ~DeepinLauncher() override;
 
-    virtual int showLauncher() override;
-    virtual int launchDesktop(const QString &pathApp) override;
-    virtual int launchDefault(const QString &mineType) override;
-    virtual int listApps(const QString &mime) override;
+    virtual int showLauncher();
+    virtual int launchDesktop(const QString &pathApp);
+    virtual int launchDefault(const QString &mineType);
+    virtual int listApps(const QString &mime);
 protected:
     //V23 new AM utility functions
     QString escapeToObjectPath(const QString &str);
@@ -35,5 +34,5 @@ private:
     QStringList m_defaultDesktopPaths;
     int m_callTimeout {5000}; //5s
 };
-
+} // namespace uos_ai
 #endif // DEEPINLAUNCHER_H

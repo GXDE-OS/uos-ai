@@ -5,8 +5,6 @@
 #ifndef TTSWIDGET_H
 #define TTSWIDGET_H
 
-#include "uosai_global.h"
-
 #include <QTimer>
 
 #include <DWidget>
@@ -17,9 +15,9 @@
 
 #include <QMutex>
 
+namespace uos_ai {
 
 class AudioPlayer;
-namespace uos_ai {
 class TtsModel;
 class TtsWidget : public DTK_WIDGET_NAMESPACE::DWidget
 {

@@ -1,0 +1,68 @@
+html {
+    --mcp-service-agreement-title-color: rgba(0, 0, 0, 1);
+    --mcp-service-agreement-description-color: rgba(0, 0, 0, 0.7);
+    --mcp-service-agreement-agreement-color: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --mcp-service-agreement-title-color: rgba(255, 255, 255, 1);
+    --mcp-service-agreement-description-color: rgba(255, 255, 255, 0.7);
+    --mcp-service-agreement-agreement-color: rgba(255, 255, 255, 0.7);
+}
+
+.dialog.mcp-service-agreement-dialog {
+    width: min(380px, calc(100vw - 32px));
+    min-height: 250px;
+}
+
+.dialog.mcp-service-agreement-dialog .dialog__body {
+    padding: 4px 20px 0;
+}
+
+.dialog.mcp-service-agreement-dialog .dialog__footer {
+    padding: 16px 10px 10px;
+}
+
+.mcp-service-agreement-dialog__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mcp-service-agreement-dialog__title {
+    margin: 0;
+    color: var(--mcp-service-agreement-title-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-tight);
+    text-align: center;
+}
+
+.mcp-service-agreement-dialog__description {
+    margin: 12px 0 0;
+    color: var(--mcp-service-agreement-description-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-extra-tight);
+    text-align: left;
+}
+
+.mcp-service-agreement-dialog__agreement {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.mcp-service-agreement-dialog__agreement-text {
+    color: var(--mcp-service-agreement-agreement-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-extra-tight);
+    text-align: left;
+    user-select: none;
+    margin: 2px 0 0 8px;
+}

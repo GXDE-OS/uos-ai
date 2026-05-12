@@ -1,0 +1,32 @@
+@import "../../components/ScrollBar.css";
+@import "./titlebar/WindowTitleBar.css";
+@import "./sidebar/WindowSidebar.css";
+@import "./footer/Footer.css";
+
+.main-window {
+    --sidebar-layout-transition-duration: 0.3s;
+    --sidebar-layout-transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+
+.two-column-layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-body {
+    flex: 1;
+    overflow: auto;
+    /* 由于滚动条的原因，这里的宽度设置为100%，最大宽度由内部子组件控制， 各个子组件的 padding 都需要手动设置 */
+    /* padding: 20px 20px 10px 20px; */
+    /* max-width: 960px; */
+    width: 100%;
+}

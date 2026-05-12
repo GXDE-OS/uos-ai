@@ -4,7 +4,7 @@
 
 #include "parserresult.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 ParserResult::ParserResult()
 {
@@ -15,4 +15,4 @@ ParserResult::~ParserResult()
 
 }
 
-UOSAI_END_NAMESPACE
+}

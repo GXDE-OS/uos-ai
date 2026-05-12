@@ -18,10 +18,15 @@ public:
 private:
     QString getApiKey();
 
+    /**
+     * 下载 favicon 并保存到 IconStore，返回图标键名。
+     * @param iconUrl  favicon URL
+     * @param pageUrl  所属页面 URL（用于提取域名作为键）
+     */
+    QString downloadAndSaveIcon(const QString &iconUrl, const QString &pageUrl);
+
     QNetworkAccessManager *m_networkManager;
     QString m_apiKey;
-
-    QString urlToBase64(const QString &url);
 };
 
 } // namespace uos_ai

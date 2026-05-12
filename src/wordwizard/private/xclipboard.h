@@ -1,6 +1,6 @@
 #ifndef XCLIPBOARD_H
 #define XCLIPBOARD_H
-#include "uosai_global.h"
+
 
 #include "baseclipboard.h"
 

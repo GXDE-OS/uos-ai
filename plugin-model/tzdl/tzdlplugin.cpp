@@ -14,6 +14,7 @@
 #include <QFile>
 #include <QDir>
 #include <QFileInfo>
+#include <QCoreApplication>
 
 // 添加日志声明
 Q_DECLARE_LOGGING_CATEGORY(logTzdl)

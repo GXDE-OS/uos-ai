@@ -1,0 +1,117 @@
+/* DigitalHumanAction 组件样式 */
+
+/* 深浅模式颜色变量 */
+html {
+    --digital-human-action-state-color: rgba(0, 0, 0, 1);
+    --digital-human-action-hint-color: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --digital-human-action-state-color: rgba(255, 255, 255, 1);
+    --digital-human-action-hint-color: rgba(255, 255, 255, 0.7);
+}
+
+/* 主容器 */
+.digital-human-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 状态显示区域 */
+.digital-human-action__state {
+    display: flex;
+    align-items: center;
+    font-size: var(--uosai-font-size-base);
+    color: var(--digital-human-action-state-color);
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+/* 语音图标 */
+.digital-human-action__voice-icon {
+    flex-shrink: 0;
+    margin-right: 6px;
+    color: var(--digital-human-action-state-color);
+}
+
+/* 状态文本 */
+.digital-human-action__state-text {
+    font-size: var(--uosai-font-size-xl);
+    font-weight: 500;
+}
+
+/* 提示文案 */
+.digital-human-action__hint {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    text-align: center;
+    color: var(--digital-human-action-hint-color);
+    margin: 0 20px;
+}
+
+/* 发送按钮包装器 */
+.digital-human-action__send-wrapper {
+    margin-top: 60px;
+}
+
+/* 发送按钮样式 */
+.digital-human-action__send-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--system-active-color) !important;
+    color: #fff !important;
+    border: none;
+    font-size: var(--uosai-font-size-base);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.digital-human-action__send-button:hover {
+    filter: brightness(1.2);
+}
+
+.digital-human-action__send-button:active {
+    filter: brightness(1.5);
+}
+
+.digital-human-action__send-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* 停止按钮 */
+.digital-human-action__stop-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* 浅色模式用0.3不透明度 */
+    background-color: var(--system-active-color-alpha-30);
+}
+
+html.dark .digital-human-action__stop-button {
+    /* 深色模式用0.4不透明度 */
+    background-color: var(--system-active-color-alpha-40);
+}
+
+.digital-human-action__stop-button:hover {
+    filter: brightness(1.2);
+}
+
+.digital-human-action__stop-button:active {
+    filter: brightness(1.5);
+}
+
+/* 停止按钮 - 中间方块 */
+.digital-human-action__stop-button .custom-stop-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: var(--system-active-color);
+}

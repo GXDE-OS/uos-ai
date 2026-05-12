@@ -1,11 +1,10 @@
 #ifndef OSCALLCONTEXT_H
 #define OSCALLCONTEXT_H
 
-#include "uosai_global.h"
-
 #include <QString>
+#include <QJsonObject>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 struct OSCallContext {
     enum CallError {
         NonError = 0,
@@ -18,6 +17,7 @@ struct OSCallContext {
 
     QString errorInfo;
     QString output;
+    QJsonObject result; 
 
     OSCallContext() : error(CallError::NonError), errorInfo(""), output("") {}
 };
@@ -128,5 +128,5 @@ inline constexpr char osCallDbusNetworkPath[] = "/com/deepin/daemon/Network";
 inline constexpr char osCallDbusNetworkInterface[] = "com.deepin.daemon.Network";
 #endif
 
-UOSAI_END_NAMESPACE
+}
 #endif // OSCALLCONTEXT_H

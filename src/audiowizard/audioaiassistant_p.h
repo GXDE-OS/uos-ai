@@ -1,7 +1,6 @@
 #ifndef AIASSISTANT_P_H
 #define AIASSISTANT_P_H
 
-#include "uosai_global.h"
 #include "audioaiassistant.h"
 #include "compliance/audioaiassistantsetting.h"
 
@@ -9,7 +8,7 @@
 #include "gui/iatwidget.h"
 #include "wrapper/asrwrapper.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class AudioAiassistantPrivate
 {
@@ -24,6 +23,6 @@ public:
     AsrWrapper *m_asr = nullptr;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // AIASSISTANT_P_H

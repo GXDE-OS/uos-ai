@@ -1,0 +1,104 @@
+/* Message 组件主题变量 */
+html {
+    --message-bubble-user-bg: rgba(0, 0, 0, 0.08);
+    --message-bubble-user-color: rgba(0, 0, 0, 1);
+    --message-bubble-ai-color: rgba(0, 0, 0, 1);
+}
+
+html.dark {
+    --message-bubble-user-bg: rgba(255, 255, 255, 0.1);
+    --message-bubble-user-color: rgba(255, 255, 255, 1);
+    --message-bubble-ai-color: rgba(255, 255, 255, 1);
+}
+
+/* Message 组件样式 */
+.message__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.message__file-group {
+    margin-bottom: 10px;
+}
+
+.chat-bubbles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+/* 消息项 */
+.chat-bubbles__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 80%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.chat-bubbles__item:hover {
+    /* transform: scale(1.02); */
+}
+
+.chat-bubbles__item--user {
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.chat-bubbles__item--ai {
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+.chat-bubbles__item--with-files {
+    width: 100%;
+}
+
+/* outline / reasoning / tool 类消息：撤销宽度限制，撤销 bubble 内边距 */
+.chat-bubbles__item--full-width {
+    max-width: 100%;
+    width: 100%;
+    align-items: stretch;
+}
+
+.chat-bubbles__item--full-width .chat-bubbles__bubble {
+    padding: 0;
+    width: 100%;
+}
+
+/* 消息气泡 */
+.chat-bubbles__bubble {
+    border-radius: 8px;
+    font-size: var(--uosai-font-size-sm2);
+    line-height: var(--uosai-line-height-normal);
+    word-wrap: break-word;
+    word-break: break-word;
+    /* margin-top: 8px; */
+}
+
+.chat-bubbles__item--user .chat-bubbles__bubble {
+    background-color: var(--message-bubble-user-bg);
+    color: var(--message-bubble-user-color);
+    border-radius: var(--radius-normal);
+    padding: 9px 12px 11px 12px;
+}
+
+.chat-bubbles__item--ai .chat-bubbles__bubble {
+    /* background-color: #fff; */
+    color: var(--message-bubble-ai-color);
+}
+
+/* 消息功能按钮区对齐 */
+.message-action-buttons--left {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+.message-action-buttons--right {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}

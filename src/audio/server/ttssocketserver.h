@@ -1,16 +1,18 @@
 #ifndef TTSSOCKETSERVER_H
 #define TTSSOCKETSERVER_H
 
-#include "serverdefs.h"
 #include "ttsserver.h"
+#include "model/modelinfo.h"
 
 #include <QWebSocket>
+
+namespace uos_ai {
 
 class TtsSocketServer : public TtsServer
 {
     Q_OBJECT
 public:
-    explicit TtsSocketServer(const QString &id, const AccountProxy &account, QObject *parent = nullptr);
+    explicit TtsSocketServer(const QString &id, const ProviderAccount &account, QObject *parent = nullptr);
 
 public:
     /**
@@ -63,7 +65,7 @@ private:
     void sendServer();
 
 private:
-    AccountProxy m_account;
+    ProviderAccount m_account;
     QSharedPointer<QWebSocket> m_web;
 
     int m_error = -1;
@@ -74,5 +76,7 @@ private:
 
     QStringList m_chunkTexts;
 };
+
+}
 
 #endif // TTSSOCKETSERVER_H

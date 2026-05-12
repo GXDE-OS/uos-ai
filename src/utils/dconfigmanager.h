@@ -5,8 +5,6 @@
 #ifndef DCONFIGMANAGER_H
 #define DCONFIGMANAGER_H
 
-#include <uosai_global.h>
-
 #include <QObject>
 #include <QVariant>
 

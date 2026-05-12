@@ -4,7 +4,7 @@
 
 #ifndef AUDIOPORT_H
 #define AUDIOPORT_H
-#include "uosai_global.h"
+
 #include <QDBusMetaType>
 #include <QString>
 #include <QDBusArgument>
@@ -18,12 +18,6 @@ public:
     QString name;
     QString description;
     uchar availability; // 0 for Unknown, 1 for Not Available, 2 for Available.
-
-    friend QDebug operator<<(QDebug argument, const AudioPort &port) {
-        argument << port.description;
-
-        return argument;
-    }
 
     friend QDBusArgument &operator<<(QDBusArgument &argument, const AudioPort &port) {
         argument.beginStructure();
@@ -51,7 +45,7 @@ public:
 };
 }
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_METATYPE(AudioPort)
 

@@ -10,14 +10,14 @@ class OutlineAgent : public LlmAgent
 public:
     explicit OutlineAgent(QObject *parent = nullptr);
     virtual ~OutlineAgent();
-    
+
     bool initialize() override;
     static QSharedPointer<LlmAgent> create();
 
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &messages, const QVariantHash &params = {}) override;
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &messages, const QVariantHash &params = {}) override;
 
 private:
-    void OutlineContent(const QJsonObject &outline);
+    void emitOutline(const QJsonObject &outline, const QString &articleId);
 };
 
 } // namespace uos_ai

@@ -1,0 +1,201 @@
+/* IconTextButton 主题变量 */
+html {
+    /* 未激活-normal - 亮色主题 */
+    --icon-text-button-normal-bg-color: transparent;
+    --icon-text-button-normal-shadow: none;
+    --icon-text-button-normal-text-color: rgba(0, 0, 0, 0.7);
+    --icon-text-button-normal-svg-color: rgba(0, 0, 0, 0.7);
+
+    /* 未激活-hover - 亮色主题 */
+    --icon-text-button-hover-bg-color: rgba(0, 0, 0, 0.15);
+    --icon-text-button-hover-shadow: none;
+    --icon-text-button-hover-text-color: rgba(0, 0, 0, 1);
+    --icon-text-button-hover-svg-color: rgba(0, 0, 0, 1);
+
+    /* 未激活-press - 亮色主题 */
+    --icon-text-button-active-bg-color: rgba(0, 0, 0, 0.15);
+    --icon-text-button-active-shadow: none;
+    --icon-text-button-active-text-color: var(--system-active-color);
+    --icon-text-button-active-svg-color: var(--system-active-color);
+
+    /* 激活-normal - 亮色主题 */
+    --icon-text-button-checked-normal-bg-color: rgba(255, 255, 255, 0.15);
+    --icon-text-button-checked-text-color: var(--system-active-color);
+    --icon-text-button-checked-svg-color: var(--system-active-color);
+
+    /* 激活-hover - 亮色主题 */
+    --icon-text-button-checked-hover-bg-color: rgba(255, 255, 255, 0.8);
+
+    /* 激活-press - 亮色主题 */
+    --icon-text-button-checked-active-bg-color: var(--system-active-color-alpha-05);
+}
+
+html.dark {
+    /* 未激活-normal - 暗色主题 */
+    --icon-text-button-normal-bg-color: transparent;
+    --icon-text-button-normal-shadow: none;
+    --icon-text-button-normal-text-color: rgba(255, 255, 255, 0.7);
+    --icon-text-button-normal-svg-color: rgba(255, 255, 255, 0.7);
+
+    /* 未激活-hover - 暗色主题 */
+    --icon-text-button-hover-bg-color: rgba(20, 20, 20, 0.2);
+    --icon-text-button-hover-shadow: 0 1px 0 0 inset rgba(255, 255, 255, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
+    --icon-text-button-hover-text-color: rgba(255, 255, 255, 1);
+    --icon-text-button-hover-svg-color: rgba(255, 255, 255, 1);
+
+    /* 未激活-press - 暗色主题 */
+    --icon-text-button-active-bg-color: rgba(0, 0, 0, 0.15);
+    --icon-text-button-active-shadow: none;
+    --icon-text-button-active-text-color: var(--system-active-color);
+    --icon-text-button-active-svg-color: var(--system-active-color);
+
+    /* 激活-normal - 暗色主题 */
+    --icon-text-button-checked-normal-bg-color: rgba(0, 0, 0, 0.35);
+    --icon-text-button-checked-text-color: var(--system-active-color);
+    --icon-text-button-checked-svg-color: var(--system-active-color);
+
+    /* 激活-hover - 暗色主题 */
+    --icon-text-button-checked-hover-bg-color: rgba(0, 0, 0, 0.5);
+
+    /* 激活-press - 暗色主题 */
+    --icon-text-button-checked-active-bg-color: var(--system-active-color-alpha-10);
+}
+
+.icon-text-button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    padding: 0 8px;
+    /* transition: all 0.2s ease; */
+    background: transparent;
+    width: fit-content;
+    user-select: none;
+}
+
+/* 设置 svg 的大小，确保不受 font-size 影响 */
+.icon-text-button svg {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.icon-text-button-text {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-normal);
+    white-space: nowrap;
+    margin-left: 6px;
+}
+
+/* Normal state (未激活) */
+.icon-text-button:not(.icon-text-button-checked):not(.icon-text-button-disabled) {
+    background: var(--icon-text-button-normal-bg-color);
+    box-shadow: var(--icon-text-button-normal-shadow);
+}
+
+.icon-text-button:not(.icon-text-button-checked):not(.icon-text-button-disabled) .icon-text-button-text {
+    color: var(--icon-text-button-normal-text-color);
+}
+
+.icon-text-button:not(.icon-text-button-checked):not(.icon-text-button-disabled) svg {
+    color: var(--icon-text-button-normal-svg-color);
+}
+
+/* Hover state (未激活) */
+.icon-text-button:hover:not(.icon-text-button-checked):not(.icon-text-button-disabled) {
+    background: var(--icon-text-button-hover-bg-color);
+    box-shadow: var(--icon-text-button-hover-shadow);
+}
+
+.icon-text-button:hover:not(.icon-text-button-checked):not(.icon-text-button-disabled) .icon-text-button-text {
+    color: var(--icon-text-button-hover-text-color);
+}
+
+.icon-text-button:hover:not(.icon-text-button-checked):not(.icon-text-button-disabled) svg {
+    color: var(--icon-text-button-hover-svg-color);
+}
+
+/* Active/Press state (未激活) */
+.icon-text-button:active:not(.icon-text-button-checked):not(.icon-text-button-disabled) {
+    background: var(--icon-text-button-active-bg-color);
+    box-shadow: var(--icon-text-button-active-shadow);
+}
+
+.icon-text-button:active:not(.icon-text-button-checked):not(.icon-text-button-disabled) .icon-text-button-text {
+    color: var(--icon-text-button-active-text-color);
+}
+
+.icon-text-button:active:not(.icon-text-button-checked):not(.icon-text-button-disabled) svg {
+    color: var(--icon-text-button-active-svg-color);
+}
+
+/* Checked state (激活-normal) */
+.icon-text-button-checked:not(.icon-text-button-disabled) {
+    position: relative;
+    background: var(--icon-text-button-checked-normal-bg-color);
+}
+
+.icon-text-button-checked:not(.icon-text-button-disabled)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid var(--system-active-color-alpha-50);
+    pointer-events: none;
+}
+
+html.dark .icon-text-button-checked:not(.icon-text-button-disabled)::after {
+    border-color: var(--system-active-color-alpha-70);
+}
+
+/* 暗色模式底部阴影线 */
+html.dark .icon-text-button-checked:not(.icon-text-button-disabled)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.icon-text-button-checked:not(.icon-text-button-disabled) .icon-text-button-text {
+    color: var(--icon-text-button-checked-text-color);
+}
+
+.icon-text-button-checked:not(.icon-text-button-disabled) svg {
+    color: var(--icon-text-button-checked-svg-color);
+}
+
+/* Checked + Hover state (激活-hover) */
+.icon-text-button-checked:hover:not(.icon-text-button-disabled) {
+    background: var(--icon-text-button-checked-hover-bg-color);
+}
+
+.icon-text-button-checked:hover:not(.icon-text-button-disabled)::after {
+    border-color: var(--system-active-color-alpha-80);
+}
+
+/* Checked + Active/Press state (激活-press) */
+.icon-text-button-checked:active:not(.icon-text-button-disabled) {
+    background: var(--icon-text-button-checked-active-bg-color);
+}
+
+.icon-text-button-checked:active:not(.icon-text-button-disabled)::after {
+    border-color: var(--system-active-color-alpha-70);
+}
+
+/* Disabled state */
+.icon-text-button-disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}

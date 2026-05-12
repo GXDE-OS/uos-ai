@@ -1,0 +1,35 @@
+/* TimeGroup 主题变量 */
+html {
+    --timegroup-title-color: rgba(0, 0, 0, 0.7);
+    --timegroup-title-sticky-background: rgba(255, 255, 255, 1);
+    --timegroup-title-sticky-color: rgba(0, 0, 0, 0.75);
+    --timegroup-title-sticky-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+html.dark {
+    --timegroup-title-color: rgba(255, 255, 255, 0.7);
+    --timegroup-title-sticky-background: rgba(45, 45, 45, 1);
+    --timegroup-title-sticky-color: rgba(255, 255, 255, 0.75);
+    --timegroup-title-sticky-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.time-group:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.time-group__title {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    background-color: var(--workspace-bg-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 500;
+    color: var(--timegroup-title-color);
+    z-index: 10;
+}
+
+.time-group__list {
+    background-color: transparent;
+}

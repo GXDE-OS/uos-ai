@@ -1,6 +1,8 @@
 #ifndef RAIDERSBUTTON_H
 #define RAIDERSBUTTON_H
 
+#include "uosfreeaccounts.h"
+
 #include <DWidget>
 
 #include <QDateTime>
@@ -18,11 +20,7 @@
 #include <DGuiApplicationHelper>
 #include <DFontSizeManager>
 
-#include "tasdef.h"
-#include "networkdefs.h"
-
-DGUI_USE_NAMESPACE
-DWIDGET_USE_NAMESPACE
+namespace uos_ai {
 
 class RaidersButton: public QWidget
 {
@@ -50,5 +48,5 @@ private:
     UosFreeAccountActivity m_hasActivity;
     QSharedPointer<QFutureWatcher<QNetworkReply::NetworkError>> m_watcher;
 };
-
+}
 #endif // RAIDERSBUTTON_H

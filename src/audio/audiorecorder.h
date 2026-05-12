@@ -17,7 +17,7 @@
 #endif
 
 //#define SAVE_AUDIO_DATA
-
+namespace uos_ai {
 class AudioInfo : public QIODevice
 {
     Q_OBJECT
@@ -126,5 +126,5 @@ private:
 
     QPropertyAnimation *m_animation;
 };
-
+} // namespace uos_ai
 #endif // AUDIORECORDER_H

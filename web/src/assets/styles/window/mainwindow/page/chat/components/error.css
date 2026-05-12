@@ -1,0 +1,95 @@
+/* Error - 错误信息气泡组件 */
+html {
+    --operation-canceled-hint-text-color: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --operation-canceled-hint-text-color: rgba(255, 255, 255, 0.7);
+}
+
+/* 主容器 */
+.error {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* 内容容器 - 让消息和按钮在同一行 */
+.error__content {
+    align-items: center;
+}
+
+/* 错误消息 */
+.error__message {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: var(--uosai-font-size-base);
+    line-height: var(--uosai-line-height-normal);
+    font-weight: 400;
+}
+
+/* 错误操作按钮容器 */
+.error__actions {
+    display: flex;
+    align-items: center;
+}
+
+.error__actions > :not(:first-child) {
+    margin-left: 8px;
+}
+
+/* ErrorActionButton - 错误操作按钮组件 */
+.error-action-button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    line-height: var(--uosai-line-height-normal);
+    color: inherit;
+}
+
+.error-action-button:hover {
+    color: var(--system-active-color-alpha-80);
+}
+
+.error-action-button:active {
+    color: var(--system-active-color);
+}
+
+.error-action-button__text {
+    font-size: var(--uosai-font-size-base);
+    line-height: var(--uosai-line-height-normal);
+    margin-right: 4px;
+}
+
+.error-action-button__icon {
+    transform: rotate(-90deg);
+}
+
+/* OperationCanceledHint - 操作取消提示组件 */
+.operation-canceled-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--uosai-font-size-base);
+    line-height: var(--uosai-line-height-normal);
+    color: var(--operation-canceled-hint-text-color);
+}
+
+.operation-canceled-hint__text {
+    color: var(--operation-canceled-hint-text-color);
+}
+
+.operation-canceled-hint__link {
+    color: var(--system-active-color);
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.operation-canceled-hint__link:hover {
+    color: var(--system-active-color-alpha-80);
+    /* text-decoration: underline; */
+}
+
+.operation-canceled-hint__link:active {
+    color: var(--system-active-color);
+}

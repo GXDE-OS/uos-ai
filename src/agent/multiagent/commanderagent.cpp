@@ -1,13 +1,14 @@
 #include "commanderagent.h"
-#include "oaifunctionparser.h"
-#include "wrapper/llmservicevendor.h"
-#include "networkdefs.h"
+#include "conversation/messagenode.h"
+#include "global_key_define.h"
+#include "model/modeltool.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QDebug>
 #include <QLoggingCategory>
+#include <QStringList>
 
 Q_DECLARE_LOGGING_CATEGORY(logAgent)
 
@@ -25,7 +26,7 @@ CommanderAgent::~CommanderAgent()
 
 bool CommanderAgent::initialize()
 {
-    m_tools.append(subagentTool());
+    m_tools += subagentTool();
     return true;
 }
 
@@ -34,48 +35,21 @@ QString CommanderAgent::systemPrompt() const
     return m_systemPrompt + subagentPrompt();
 }
 
-void CommanderAgent::setModel(QSharedPointer<LLM> llm)
+void CommanderAgent::setModel(QSharedPointer<AbstractChatModel> llm)
 {
     LlmAgent::setModel(llm);
 
-    auto account = llm->account();
     for (QSharedPointer<LlmAgent> agent : m_subAgents.values()) {
-        auto newllm = LLMVendor()->getCopilot(account);
-        newllm->switchStream(false);
-        connect(llm.data(), &LLM::aborted, newllm.data(), &LLM::aborted, Qt::DirectConnection);
-        agent->setModel(newllm);
+        agent->setModel(llm);
     }
 }
 
-QJsonArray CommanderAgent::initChatMessages(const QJsonObject &question, const QJsonArray &messages) const
+void CommanderAgent::cancel()
 {
-    QJsonArray initialMessages;
-    
-    // 添加系统消息
-    {
-        QJsonObject systemMessage;
-        systemMessage["role"] = "system";
-        systemMessage["content"] = systemPrompt();
-        initialMessages.append(systemMessage);
-    }
-    
-    // 添加历史消息，过滤掉system角色的消息
-    for (const QJsonValue &msg : messages) {
-        QJsonObject msgObj = msg.toObject();
-        if (msgObj["role"].toString() != "system") {
-            initialMessages.append(msg);
-        }
-    }
-    
-    // 添加当前用户问题
-    {
-        QJsonObject userMessage;
-        userMessage["role"] = "user";
-        userMessage["content"] = question["content"].toString();
-        initialMessages.append(userMessage);
-    }
-    
-    return initialMessages;
+    LlmAgent::cancel();
+
+    for (QSharedPointer<LlmAgent> agent : m_subAgents.values())
+        agent->cancel();
 }
 
 QPair<int, QString> CommanderAgent::callTool(const QString &toolName, const QJsonObject &params)
@@ -99,15 +73,14 @@ QPair<int, QString> CommanderAgent::callTool(const QString &toolName, const QJso
         return qMakePair(1, QString("Error: Sub-agent '%1' not found").arg(agentName));
     }
 
-    // 构建请求对象
-    QJsonObject request;
-    request["content"] = content;
+    ModelMessage request;
+    request.role = "user";
+    request.content = {{ContentType::CntText, content}};
 
-    // 调用子智能体
-    QJsonObject result = subAgent->processRequest(request, {}, {});
+    QVariantHash result = subAgent->processRequest(request, {}, {});
 
-    if (subAgent->lastError() != AIServer::NoError)
-        return qMakePair(-1, subAgent->lastErrorString());
+    if (!subAgent->lastError().isEmpty())
+        return qMakePair(-1, subAgent->lastError().value(STR_KEY_MESSAGE).toString());
 
     if (result.contains("error")) {
         return qMakePair(-1, result["error"].toString());
@@ -121,53 +94,40 @@ QPair<int, QString> CommanderAgent::callTool(const QString &toolName, const QJso
 
 }
 
-QJsonObject CommanderAgent::subagentTool() const
+ModelToolList CommanderAgent::subagentTool() const
 {
     if (m_subAgents.isEmpty()) {
-        return QJsonObject();
+        return ModelToolList();
     }
-    
-    // 构建agent_name的enum数组
-    QJsonArray enumArray;
-    for (auto it = m_subAgents.begin(); it != m_subAgents.end(); ++it) {
-        enumArray.append(it.key());
-    }
-    
-    // 构建完整的JSON对象
-    QJsonObject toolObj;
-    toolObj["name"] = "transfer_to_agent";
-    toolObj["description"] = "Transfer the current task to a specified sub-agent for execution";
-    
-    QJsonObject parameters;
-    parameters["type"] = "object";
-    
-    QJsonArray required;
-    required.append("agent_name");
-    required.append("content");
-    parameters["required"] = required;
-    
-    QJsonObject properties;
-    
-    QJsonObject agentNameProp;
-    agentNameProp["type"] = "string";
-    agentNameProp["description"] = "The name of the sub-agent who received the transferred task.";
-    //agentNameProp["enum"] = enumArray;
-    properties["agent_name"] = agentNameProp;
-    
-    QJsonObject contentProp;
-    contentProp["type"] = "string";
-    contentProp["description"] = "Detailed task content to be assigned to the sub-agent.";
-    properties["content"] = contentProp;
-    
-    QJsonObject explProp;
-    explProp["type"] = "string";
-    explProp["description"] = "Explain to user what you are doing. But NEVER refer to tool and agent names.";
-    properties["explanation"] = explProp;
 
-    parameters["properties"] = properties;
-    toolObj["parameters"] = parameters;
-    
-    return toolObj;
+    ModelToolList toolList;
+    ModelTool tool;
+
+    tool.name = "transfer_to_agent";
+    tool.description = "Transfer the current task to a specified sub-agent for execution";
+
+    ModelToolProperty agentNameProp;
+    agentNameProp.name = "agent_name";
+    agentNameProp.type = "string";
+    agentNameProp.description = "The name of the sub-agent who received the transferred task.";
+    tool.properties.append(agentNameProp);
+
+    ModelToolProperty contentProp;
+    contentProp.name = "content";
+    contentProp.type = "string";
+    contentProp.description = "Detailed task content to be assigned to the sub-agent.";
+    tool.properties.append(contentProp);
+
+    ModelToolProperty explProp;
+    explProp.name = "explanation";
+    explProp.type = "string";
+    explProp.description = "Explain to user what you are doing. But NEVER refer to tool and agent names.";
+    tool.properties.append(explProp);
+
+    tool.required = QStringList{"agent_name", "content"};
+
+    toolList.append(tool);
+    return toolList;
 }
 
 QString CommanderAgent::subagentPrompt() const

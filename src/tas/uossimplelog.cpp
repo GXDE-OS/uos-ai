@@ -1,7 +1,6 @@
 #include "uossimplelog.h"
-#include "httpaccessmanager.h"
-#include "httpeventloop.h"
-#include "networkdefs.h"
+#include "network/httpclient.h"
+#include "global_define.h"
 
 #include <QDebug>
 #include <QNetworkRequest>
@@ -12,6 +11,8 @@
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logTAS)
+
+using namespace uos_ai;
 
 UosSimpleLog::UosSimpleLog(QObject *parent)
     : QThread(parent)
@@ -150,27 +151,24 @@ int UosSimpleLog::pushLog(const UosRateLog &logObj)
 
 int UosSimpleLog::sendLog(const QByteArray &sendData, UosLogType logType)
 {
-    QSharedPointer<HttpAccessmanager> httpAccessManager
-        = QSharedPointer<HttpAccessmanager>(new HttpAccessmanager(""));
-    QNetworkRequest req = httpAccessManager->baseNetWorkRequest(QUrl(hostUrl(logType)));
-    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
-    QNetworkReply *reply = httpAccessManager->post(req, sendData);
-
-    HttpEventLoop loop(reply, "UosSimpleLog::pushLog");
-    loop.setHttpOutTime(15000);
-    loop.exec();
-
-    QNetworkReply::NetworkError netReplyError = QNetworkReply::NetworkError::UnknownServerError;
-    bool isAuthError = httpAccessManager->isAuthenticationRequiredError();
-    if (isAuthError)
-        netReplyError = QNetworkReply::NetworkError::AuthenticationRequiredError;
-    else if (loop.getHttpStatusCode() == 429)
-        netReplyError = QNetworkReply::NetworkError::InternalServerError;
-    else
-        netReplyError = loop.getNetWorkError();
+    uos_ai::HttpClient httpClient;
+    httpClient.setTimeOut(15000);
+    
+    QJsonObject data;
+    QJsonDocument document = QJsonDocument::fromJson(sendData);
+    if (document.isObject()) {
+        data = document.object();
+    }
+    
+    QVariantHash header;
+    header["Content-Type"] = "application/json";
+    
+    uos_ai::HttpClient::HttpResponse response = httpClient.post(QUrl(hostUrl(logType)), data, header);
+    
+    QNetworkReply::NetworkError netReplyError = response.error;
 
     if (netReplyError == QNetworkReply::NetworkError::NoError) {
-        QJsonDocument respJson = QJsonDocument::fromJson(loop.getHttpResult());
+        QJsonDocument respJson = QJsonDocument::fromJson(response.data);
         if (respJson.isObject()) {
             auto resultObj = respJson.object();
             if (resultObj.contains("status")) {
@@ -197,7 +195,7 @@ int UosSimpleLog::sendLog(const QByteArray &sendData, UosLogType logType)
         }
     }
     if (netReplyError != QNetworkReply::NetworkError::NoError) {
-        qCWarning(logTAS) << "Push log failed, type:" << logType << ", req size:" << sendData.size() << ", resp:" << loop.getHttpResult();
+        qCWarning(logTAS) << "Push log failed, type:" << logType << ", req size:" << sendData.size() << ", resp:" << QString::fromUtf8(response.data);
     }
 
     return netReplyError;
@@ -236,7 +234,7 @@ void UosSimpleLog::initServerAddress()
             qInfo() << "API Server Address is Test.";
         }
     } else {
-        apiAddress = AIServer::ServerAPIAddress;
+        apiAddress = uos_ai::UosAPIAddress;
     }
 
     serverUrls = {

@@ -54,8 +54,7 @@ QString GUtils::generateImage(const QWidget *widget, const QColor &color, const 
     pixmap.fill(Qt::transparent);
 
     QPainter painter(&pixmap);
-    painter.setRenderHint(QPainter::Antialiasing,true);
-    painter.setRenderHint(QPainter::SmoothPixmapTransform,true);
+    painter.setRenderHint(QPainter::Antialiasing);
     painter.setPen(color);
     painter.setBrush(color);
 

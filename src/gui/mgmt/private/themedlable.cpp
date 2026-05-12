@@ -2,6 +2,9 @@
 
 #include <DGuiApplicationHelper>
 
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
+
 ThemedLable::ThemedLable(QWidget *parent, Qt::WindowFlags f) : DLabel(parent, f)
 {
     setForegroundRole(QPalette::Text);

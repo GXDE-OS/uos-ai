@@ -1,6 +1,6 @@
 #ifndef WORDWIZARD_H
 #define WORDWIZARD_H
-#include "uosai_global.h"
+
 #include "private/disableappwidget.h"
 
 #include <QVariant>
@@ -109,9 +109,9 @@ signals:
      * @param query 文本
      * @param pos 显示位置
      */
-    void sigToLaunchAiQuick(int type, QString query, QPoint pos, bool isCustom);
+    void sigToLaunchAiQuick(int type, QString query, QPoint pos, bool isCustom, QString image = "");
     void sigToCloseAiQuick();
-    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement, bool isFromAiQuick, const QString &locateTitle);
+    void sigToLaunchMgmt(int page);
     void signalHiddenwidget(bool isHidden);
     void signalAddDisabledApp(const QString &appName);
 
@@ -134,8 +134,7 @@ public slots:
     void onDisableInProcess();
     void updateDisabledApps(const QStringList &appList);
     void onShowInputWindow(const QPoint &pos, const QRect &screenRect, int wizardWidth, int wizardHeight);
-    static void onIconBtnClicked(QString text = "");
-    void onWebViewLoadFinished() { m_isWebviewOk = true; }
+    static void onIconBtnClicked(QString text = "", bool isSend = false);
 
 private:
     void onHiddenActionTriggered();
@@ -146,7 +145,6 @@ private:
     void checkDisabledProcesses();
 
     static volatile bool kIsFcitxWritable;
-    volatile bool m_isWebviewOk = true;
 
     double m_scaleFactor; // 屏幕缩放比
     int m_mouseClickX;

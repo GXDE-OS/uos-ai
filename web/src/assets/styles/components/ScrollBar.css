@@ -1,0 +1,172 @@
+html {
+    --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+    --scrollbar-thumb-color-hover: rgba(0, 0, 0, 0.7);
+    --scrollbar-thumb-color-active: rgba(0, 0, 0, 0.4);
+    --scrollbar-thumb-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    --scrollbar-thumb-inset-color: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-inset-color-hover: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-inset-color-active: rgba(0, 0, 0, 0.05);
+}
+html.dark {
+    --scrollbar-thumb-color: rgba(255, 255, 255, 0.3);
+    --scrollbar-thumb-color-hover: rgba(255, 255, 255, 0.7);
+    --scrollbar-thumb-color-active: rgba(255, 255, 255, 0.3);
+    --scrollbar-thumb-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    --scrollbar-thumb-inset-color: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-inset-color-hover: rgba(255, 255, 255, 0.1);
+    --scrollbar-thumb-inset-color-active: rgba(255, 255, 255, 0.05);
+}
+
+/* 滚动条容器 */
+.scroll-bar-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 滚动内容区域 */
+.scroll-bar-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overscroll-behavior: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scroll-bar-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.scroll-bar-content-inner {
+    width: 100%;
+    min-height: 100%;
+    /* will-change: transform;   */ /* 禁用 transform 优化 ，避免滚动区域元素位置偏移导致弹窗位置偏移 */
+}
+
+/* 滚动条基础样式 */
+.scroll-bar {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 700ms ease;
+    z-index: 1000;
+}
+
+.scroll-bar--visible {
+    opacity: 1;
+    transition-duration: 120ms;
+}
+
+/* 垂直滚动条 */
+.scroll-bar--vertical {
+    top: 0px;
+    right: var(--spacing-xs);
+    bottom: 0px;
+    width: 12px;
+}
+
+/* 水平滚动条 */
+.scroll-bar--horizontal {
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+    bottom: var(--spacing-md);
+    height: 12px;
+}
+
+/* 滚动条轨道 */
+.scroll-bar-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-small);
+    overflow: visible;
+}
+
+/* 滚动条滑块 */
+.scroll-bar-thumb {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: var(--radius-small);
+    box-shadow: var(--scrollbar-thumb-shadow);
+    transition:
+        width var(--transition-normal),
+        height var(--transition-normal),
+        background-color var(--transition-normal);
+    cursor: pointer;
+}
+
+.scroll-bar-thumb::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    border: 1px solid var(--scrollbar-thumb-inset-color);
+    border-radius: inherit;
+    transition: border-color var(--transition-normal);
+    pointer-events: none;
+}
+
+/* 垂直滚动条滑块 */
+.scroll-bar--vertical .scroll-bar-thumb {
+    right: 0;
+    width: 4px;
+    min-height: 20px;
+}
+
+/* 水平滚动条滑块 */
+.scroll-bar--horizontal .scroll-bar-thumb {
+    bottom: 0;
+    height: 4px;
+    min-width: 20px;
+}
+
+/* 悬停状态 */
+.scroll-bar:hover .scroll-bar-thumb {
+    background-color: var(--scrollbar-thumb-color-hover);
+}
+
+.scroll-bar:hover .scroll-bar-thumb::after {
+    border-color: var(--scrollbar-thumb-inset-color-hover);
+}
+
+.scroll-bar--vertical:hover .scroll-bar-thumb,
+.scroll-bar--vertical.scroll-bar--dragging .scroll-bar-thumb {
+    border-radius: 6px;
+    width: 12px;
+}
+
+.scroll-bar--horizontal:hover .scroll-bar-thumb,
+.scroll-bar--horizontal.scroll-bar--dragging .scroll-bar-thumb {
+    border-radius: 6px;
+    height: 12px;
+}
+
+/* 拖动状态 */
+.scroll-bar:active .scroll-bar-thumb {
+    background-color: var(--scrollbar-thumb-color-active);
+}
+
+.scroll-bar:active .scroll-bar-thumb::after,
+.scroll-bar--dragging .scroll-bar-thumb::after {
+    border-color: var(--scrollbar-thumb-inset-color-active);
+}
+
+/* 无障碍支持 */
+.scroll-bar-thumb:focus {
+    outline: 2px solid rgba(52, 152, 219, 0.5);
+    outline-offset: 2px;
+}
+
+/* 减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-bar,
+    .scroll-bar-track,
+    .scroll-bar-thumb {
+        transition: none;
+    }
+}

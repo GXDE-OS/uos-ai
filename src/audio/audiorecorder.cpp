@@ -8,6 +8,7 @@
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logAudio)
+using namespace uos_ai;
 
 AudioInfo::AudioInfo()
 {

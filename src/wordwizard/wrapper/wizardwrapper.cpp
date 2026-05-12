@@ -2,8 +2,6 @@
 #include "inputplaceholderwidget.h"
 #include "wordwizard.h"
 #include "dconfigmanager.h"
-#include "dbwrapper.h"
-#include "private/eaiexecutor.h"
 #include "private/welcomedialog.h"
 #include "private/wizarddpushbutton.h"
 #include "esystemcontext.h"
@@ -80,7 +78,7 @@ void WizardWrapper::initUI()
     // 创建图标按钮
     m_iconBtn = new DIconButton(this);
     m_iconBtn->setFixedSize(QSize(20, 20));
-    m_iconBtn->setIcon(QIcon::fromTheme("UosAiAssistant"));
+    m_iconBtn->setIcon(QIcon::fromTheme("uos-ai-assistant"));
     m_iconBtn->setIconSize(QSize(20, 20));
     m_iconBtn->installEventFilter(this);
     
@@ -655,7 +653,7 @@ void WizardWrapper::switchToInitMode()
 {
     // 初始化模式：仅显示图标按钮
     m_isExtend = false;
-    this->setFixedSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT);
+    this->setFixedSize(INIT_MODE_HEIGHT,  INIT_MODE_HEIGHT);
 
     // 设置窗口为完全透明和无阴影
     this->setBlurEnabled(false);
@@ -672,9 +670,9 @@ void WizardWrapper::switchToInitMode()
     m_twoLineSep->hide();
     
     // 显示并设置图标按钮为透明背景
-    m_iconBtn->setFixedSize(QSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT));
+    m_iconBtn->setFixedSize(QSize(INIT_MODE_HEIGHT,  INIT_MODE_HEIGHT));
     m_iconBtn->setIcon(QIcon::fromTheme("uos-ai-assistant-wordwizard"));
-    m_iconBtn->setIconSize(QSize(INIT_MODE_HEIGHT, INIT_MODE_HEIGHT));
+    m_iconBtn->setIconSize(QSize(INIT_MODE_HEIGHT,  INIT_MODE_HEIGHT));
     m_iconBtn->setFlat(true);
     m_iconBtn->setBackgroundRole(QPalette::NoRole);
     m_iconBtn->setAutoFillBackground(false);
@@ -721,21 +719,21 @@ void WizardWrapper::switchToExpandedMode()
     QHBoxLayout *layout = this->findChild<QHBoxLayout *>();
     if (layout) {
         // 添加展开模式的所有组件
-        layout->addWidget(m_twoLineSep, Qt::AlignVCenter);
+        layout->addWidget(m_twoLineSep);
         layout->addSpacing(5);
         m_iconBtn->setFixedSize(QSize(20, 20));
-        m_iconBtn->setIcon(QIcon::fromTheme("UosAiAssistant"));
+        m_iconBtn->setIcon(QIcon::fromTheme("uos-ai-assistant"));
         m_iconBtn->setIconSize(QSize(20, 20));
-        layout->addWidget(m_iconBtn, Qt::AlignVCenter);
+        layout->addWidget(m_iconBtn);
         
         for (WizardDPushButton *btn : m_functionButtons) {
-            layout->addWidget(btn, Qt::AlignVCenter);
+            layout->addWidget(btn);
         }
         
-        layout->addWidget(m_lineSep, Qt::AlignVCenter);
-        layout->addWidget(m_moreBtn, Qt::AlignVCenter);
-        layout->addWidget(m_inputArea, Qt::AlignVCenter);
-        layout->addWidget(m_closeBtn, Qt::AlignVCenter);
+        layout->addWidget(m_lineSep);
+        layout->addWidget(m_moreBtn);
+        layout->addWidget(m_inputArea);
+        layout->addWidget(m_closeBtn);
         layout->addStretch();
         
         // 设置展开模式的布局参数

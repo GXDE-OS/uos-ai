@@ -1,15 +1,16 @@
 #ifndef IATIFLYMODEL_H
 #define IATIFLYMODEL_H
 
-#include "serverdefs.h"
 #include "pgsparser.h"
 #include "../common/iatmodel.h"
+#include "model/modelinfo.h"
 
 #include <QUrl>
 #include <QWebSocket>
 #include <QTimer>
 
 namespace uos_ai {
+
 class IatIflyModel : public IatModel {
     Q_OBJECT
 public:
@@ -71,7 +72,7 @@ private:
     void normalExitServer();
 
 private:
-    AccountProxy m_account;
+    ProviderAccount m_account;
     QSharedPointer<QWebSocket> m_web;
 
     bool m_normalExit = false;

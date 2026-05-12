@@ -1,31 +1,28 @@
 #include "mgmtwindow.h"
-#include "serverwrapper.h"
-#include "dbwrapper.h"
-#include "dbuscontrolcenterrequest.h"
+#include "app/serverwrapper.h"
+#include "oscontrol/deepincontrolcenter.h"
 #include "embeddingserver.h"
 #include "localmodelserver.h"
-#include "gui/chat/private/eaiexecutor.h"
 #include "uosfreeaccounts.h"
 #include "dconfigmanager.h"
 #include "util.h"
 #include "utils/apputils.h"
+#include "private/navigation.h"
 #include "private/useragreementdialog.h"
 #include "private/modellistwidget.h"
 #include "private/operatinglinewidget.h"
 #include "private/welcomedialog.h"
-#include "private/addmodeldialog.h"
-#include "private/addprivatemodeldialog.h"
 #include "private/themedlable.h"
 #include "private/localmodellistwidget.h"
-#include "private/echatwndmanager.h"
 #include "private/knowledgebaselistwidget.h"
 #include "private/getfreeaccountdialog.h"
 #include "private/wordwizardwidget.h"
 #include "private/aibarwidget.h"
-#include "private/mcpserverwidget.h"
-#include "private/skillserverwidget.h"
 #include "private/privatemodellistwidget.h"
+#include "private/mcpserverwidget.h"
 #include "private/chatbotwidget.h"
+
+#include "database/appdatabase.h"
 
 #include <DWidgetUtil>
 #include <DLabel>
@@ -69,8 +66,6 @@ MgmtWindow::MgmtWindow(DWidget *parent)
     setWindowFlag(Qt::Dialog);                                       // 取消在底栏显示
     setWindowModality(Qt::NonModal);
 
-    m_pAddDlg = new AddModelDialog();
-    m_pAddPrivateDlg = new AddPrivateModelDialog();
     m_pGetFreeAccountDialog = new GetFreeAccountDialog();
 
     initUI();
@@ -81,14 +76,69 @@ MgmtWindow::MgmtWindow(DWidget *parent)
 
 MgmtWindow::~MgmtWindow()
 {
-    if (m_pAddDlg) {
-        m_pAddDlg->deleteLater();
-    }
-    if (m_pAddPrivateDlg) {
-        m_pAddPrivateDlg->deleteLater();
-    }
     if (m_pGetFreeAccountDialog) {
         m_pGetFreeAccountDialog->deleteLater();
+    }
+}
+
+void MgmtWindow::showPage(int page)
+{
+    //已经存在模态框，激活模态框继续操作
+    auto addDlg = this->findChild<QDialog *>();
+    if (addDlg && addDlg->isVisible()) {
+        addDlg->showNormal();
+        addDlg->activateWindow();
+        return;
+    }
+
+    if (m_pLocalModelListWidget)
+        m_pLocalModelListWidget->updateLocalModelList();
+    if (m_pModelListWidget)
+        m_pModelListWidget->checkActivityExists();
+    if (m_pWordWizardWidget)
+        m_pWordWizardWidget->updateHiddenStatus(m_bIsWordWizardHidden);
+    if (m_pMcpServerWidget)
+        m_pMcpServerWidget->updateStatus();
+    if (m_pAiBarWidget)
+        m_pAiBarWidget->updateDragStatus(DConfigManager::instance()->value(AIBAR_GROUP, AIBAR_ENABLEFILEDRAG).toBool());
+    if (m_pKnowledgeBaseListWidget)
+        m_pKnowledgeBaseListWidget->onRefresh();
+
+    loadDisabledApps();
+
+    this->activateWindow();
+    this->show();
+
+    QString locateTitle;
+    bool scrollToTop = false;
+    switch (page) {
+        case Page::Default:
+            scrollToTop = true;
+            if (!widgetList.isEmpty()) {
+                locateTitle = widgetList.first()->property("title").toString();
+            }
+            break;
+        case Page::ModelList:
+        case Page::AddModel:
+            locateTitle = tr("Model Configuration");
+            break;
+        case Page::KnowledgeBase:
+            locateTitle = tr("Knowledge Base Management");
+            break;
+        case Page::FollowAlong:
+            locateTitle = tr("UOS AI FollowAlong");
+            break;
+        default:
+            break;
+    }
+
+    if (!locateTitle.isEmpty()) {
+        m_pNavigationWidget->onSelectGroup(locateTitle);
+    }
+    onNavigationSelected(scrollToTop ? QString() : locateTitle);
+
+    if (page == Page::AddModel && m_pModelListWidget) {
+        m_pModelListWidget->onAddModel();
     }
 }
 
@@ -140,15 +190,12 @@ void MgmtWindow::initUI()
     scrollLayout->setSpacing(30);
 
     scrollLayout->addWidget(initModelConfigWidget(), 0, Qt::AlignCenter);
-
 #ifdef ENABLE_MCP
     scrollLayout->addWidget(initMcpServerWidget(), 0, Qt::AlignCenter);
-    scrollLayout->addWidget(initSkillWidget(), 0, Qt::AlignCenter);
 #endif
-
     scrollLayout->addWidget(initWordWizardWidget(), 0, Qt::AlignLeft);
 
-#ifdef ENABLE_ASSISTANT
+#ifdef ENABLE_LOCAL_MODEL
     m_pKnowledgeBaseListWidget = initKnowledgeBaseWidget();
     scrollLayout->addWidget(m_pKnowledgeBaseListWidget, 0, Qt::AlignCenter);
 #endif
@@ -156,12 +203,10 @@ void MgmtWindow::initUI()
 #ifdef ENABLE_CHATBOT
     scrollLayout->addWidget(initChatBotWidget(), 0, Qt::AlignCenter);
 #endif
+
     scrollLayout->addWidget(initProxyWidget(), 0, Qt::AlignCenter);
     scrollLayout->addWidget(initAgreementWidget(), 0, Qt::AlignCenter);
 
-#ifdef ENABLE_AI_BAR
-    scrollLayout->addWidget(initAiBarWidget(), 0, Qt::AlignCenter);
-#endif
     scrollLayout->addStretch();
 
     frameLayout->addWidget(m_pScrollArea);
@@ -182,31 +227,16 @@ void MgmtWindow::initUI()
 void MgmtWindow::initConnect()
 {
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &MgmtWindow::onThemeTypeChanged);
-    connect(WelcomeDialog::instance(), &WelcomeDialog::signalAppendModel, m_pModelListWidget, &ModelListWidget::onAppendModel);
+    connect(WelcomeDialog::instance(), &WelcomeDialog::freeModelAppend, m_pModelListWidget, &ModelListWidget::refresh);
     connect(WelcomeDialog::instance(), &WelcomeDialog::accepted, [this] {
         if (!WelcomeDialog::instance()->isFreeAccount() && !WelcomeDialog::instance()->isOnlyUseAgreement()) {
-            showEx(false,false);  //点击新手流程弹窗的【添加模型】，不再弹出添加模型弹窗，而是跳转到设置的首页。
+            showPage(MgmtWindow::ModelList);
         }
     });
 
-    connect(m_pModelListWidget, &ModelListWidget::signalGetFreeAccountClicked, this, &MgmtWindow::onShowGetFreeAccountDialog);
-    connect(m_pGetFreeAccountDialog, &GetFreeAccountDialog::signalAppendModel, m_pModelListWidget, &ModelListWidget::onAppendModel);
+    connect(m_pModelListWidget, &ModelListWidget::signalGetFreeAccountClicked, this, &MgmtWindow::showGetFreeAccountDlg);
+    connect(m_pGetFreeAccountDialog, &GetFreeAccountDialog::freeModelAppend, m_pModelListWidget, &ModelListWidget::refresh);
     connect(m_pGetFreeAccountDialog, &GetFreeAccountDialog::signalActivityEnd, this, &MgmtWindow::onHiddenGetFreeAccountBtn);
-    connect(m_pAddDlg, &AddModelDialog::accepted, [this] {
-        m_pModelListWidget->onAppendModel(m_pAddDlg->getModelData());
-
-        if (m_pLocalModelListWidget) m_pLocalModelListWidget->updateLocalModelList();
-        this->activateWindow();
-        this->show();
-
-        showFloatingMessage(tr("Successfully connected"));
-
-        if (m_isFromAiQuick) {
-            EAiExec()->setUosAiLLMAccountId(m_pAddDlg->getModelData().id);
-        }
-    });
-
-    connect(m_pAddPrivateDlg, &AddModelDialog::accepted, this, &MgmtWindow::onAddPrivateModel);
     connect(m_pScrollArea->verticalScrollBar(), &QScrollBar::valueChanged, this, &MgmtWindow::onscrollAreaValueChanged);
     connect(this, &MgmtWindow::scrollToGroup, m_pNavigationWidget, [ = ](const QString & key) {
         m_pNavigationWidget->blockSignals(true);
@@ -289,8 +319,7 @@ ModelListWidget *MgmtWindow::initModelListWidget()
     m_pModelListWidget->setProperty("level", 2);
     titles.insert(m_pModelListWidget->getTitleName(),m_pModelListWidget);
     widgetList.push_back(m_pModelListWidget);
-    m_pModelListWidget->setModelList(DbWrapper::localDbWrapper().queryLlmList());
-    connect(m_pModelListWidget, &ModelListWidget::signalAddModel, this, &MgmtWindow::onAddModel);
+    m_pModelListWidget->refresh();
     return m_pModelListWidget;
 }
 
@@ -301,8 +330,7 @@ PrivateModelListWidget *MgmtWindow::initPrivateModelListWidget()
     m_pPrivateModelListWidget->setProperty("level", 2);
     titles.insert(m_pPrivateModelListWidget->getTitleName(),m_pPrivateModelListWidget);
     widgetList.push_back(m_pPrivateModelListWidget);
-    m_pPrivateModelListWidget->setModelList(DbWrapper::localDbWrapper().queryLlmList());
-    connect(m_pPrivateModelListWidget, &PrivateModelListWidget::signalAddModel, this, &MgmtWindow::showAddPrivateModel);
+    m_pPrivateModelListWidget->refresh();
     return m_pPrivateModelListWidget;
 }
 
@@ -314,41 +342,6 @@ LocalModelListWidget *MgmtWindow::initLocalModelListWidget()
     titles.insert(m_pLocalModelListWidget->getTitleName(),m_pLocalModelListWidget);
     widgetList.push_back(m_pLocalModelListWidget);
     return m_pLocalModelListWidget;
-}
-
-void MgmtWindow::onAddModel()
-{
-    qCInfo(logAIGUI) << "Opening add model dialog";
-    m_pAddDlg->resetDialog();
-    m_pAddDlg->show();
-    m_pAddDlg->adjustSize();
-    m_pAddDlg->activateWindow();
-}
-
-void MgmtWindow::showAddPrivateModel()
-{
-    qCInfo(logAIGUI) << "Opening add private model dialog";
-    m_pAddPrivateDlg->resetDialog();
-    m_pAddPrivateDlg->show();
-    m_pAddPrivateDlg->adjustSize();
-    m_pAddPrivateDlg->activateWindow();
-}
-
-void MgmtWindow::onAddPrivateModel()
-{
-    qCInfo(logAIGUI) << "Adding new private model";
-    m_pPrivateModelListWidget->onAppendModel(m_pAddPrivateDlg->getModelData());
-
-    if (m_pLocalModelListWidget) m_pLocalModelListWidget->updateLocalModelList();
-    this->activateWindow();
-    this->show();
-
-    showFloatingMessage(tr("Successfully connected"));
-
-    if (m_isFromAiQuick) {
-        qCDebug(logAIGUI) << "Setting UOS AI LLM account ID from quick access";
-        EAiExec()->setUosAiLLMAccountId(m_pAddDlg->getModelData().id);
-    }
 }
 
 DWidget *MgmtWindow::initAgreementWidget()
@@ -411,11 +404,11 @@ DWidget *MgmtWindow::initProxyWidget()
     oper->setEditText(tr("Go to settings"));
 
     connect(oper, &OperatingLineWidget::signalNotDeleteButtonClicked, this, []() {
-        DbusControlCenterRequest dbus;
+        DeepinControlCenter dbus;
 #ifdef COMPILE_ON_V23
-        dbus.showPage("network/systemProxy");
+        dbus.ShowPage("network/systemProxy");
 #else
-        dbus.showPage("network", "System Proxy");
+        dbus.ShowPage("network", "System Proxy");
 #endif
     });
 
@@ -454,17 +447,6 @@ WordWizardWidget *MgmtWindow::initWordWizardWidget()
     return m_pWordWizardWidget;
 }
 
-AiBarWidget *MgmtWindow::initAiBarWidget()
-{
-    m_pAiBarWidget = new AiBarWidget(this);
-    m_pAiBarWidget->setFixedWidth(560);
-    m_pAiBarWidget->setProperty("title", m_pAiBarWidget->getTitleName());
-    m_pAiBarWidget->setProperty("level", 1);
-    titles.insert(m_pAiBarWidget->getTitleName(),m_pAiBarWidget);
-    widgetList.push_back(m_pAiBarWidget);
-    return m_pAiBarWidget;
-}
-
 DWidget *MgmtWindow::initMcpServerWidget()
 {
     m_pMcpServerWidget = new McpServerWidget(this);
@@ -478,26 +460,15 @@ DWidget *MgmtWindow::initMcpServerWidget()
     return m_pMcpServerWidget;
 }
 
-DWidget *MgmtWindow::initSkillWidget()
+AiBarWidget *MgmtWindow::initAiBarWidget()
 {
-    m_pSkillServerWidget = new SkillServerWidget(this);
-
-    m_pSkillServerWidget->setFixedWidth(560);
-    m_pSkillServerWidget->setProperty("title", m_pSkillServerWidget->getTitleName());
-    m_pSkillServerWidget->setProperty("level", 1);
-    titles.insert(m_pSkillServerWidget->getTitleName(), m_pSkillServerWidget);
-    widgetList.push_back(m_pSkillServerWidget);
-    connect(this, &MgmtWindow::sigThirdPartyMcpAgree, m_pSkillServerWidget, &SkillServerWidget::sigThirdPartyMcpAgree);
-    connect(m_pSkillServerWidget, &SkillServerWidget::sigNavigateToMcpServerPage, this, [this]() {
-        if (m_pNavigationWidget) {
-            m_pNavigationWidget->onSelectGroup(m_pMcpServerWidget->getTitleName());
-        }
-    });
-    if (m_pMcpServerWidget) {
-        m_pSkillServerWidget->changeInstallStatus(m_pMcpServerWidget->getIsInstalled());
-        connect(m_pMcpServerWidget, &McpServerWidget::sigAgentInstallChanged, m_pSkillServerWidget, &SkillServerWidget::changeInstallStatus);
-    }
-    return m_pSkillServerWidget;
+    m_pAiBarWidget = new AiBarWidget(this);
+    m_pAiBarWidget->setFixedWidth(560);
+    m_pAiBarWidget->setProperty("title", m_pAiBarWidget->getTitleName());
+    m_pAiBarWidget->setProperty("level", 1);
+    titles.insert(m_pAiBarWidget->getTitleName(),m_pAiBarWidget);
+    widgetList.push_back(m_pAiBarWidget);
+    return m_pAiBarWidget;
 }
 
 DWidget *MgmtWindow::initModelConfigWidget()
@@ -520,7 +491,7 @@ DWidget *MgmtWindow::initModelConfigWidget()
     modelConfigLayout->addWidget(initModelListWidget());
     modelConfigLayout->addSpacing(20);
 
-#ifdef ENABLE_ASSISTANT
+#ifdef ENABLE_LOCAL_MODEL
     modelConfigLayout->addWidget(initLocalModelListWidget());
     if (!m_pLocalModelListWidget->property("title").toString().isEmpty())
         modelConfigLayout->addSpacing(20);
@@ -528,44 +499,6 @@ DWidget *MgmtWindow::initModelConfigWidget()
 
     modelConfigLayout->addWidget(initPrivateModelListWidget());
     return modelConfigWidget;
-}
-
-void MgmtWindow::showEx(bool showAddllmPage, bool onlyUseAgreement, bool isFromAiQuick, const QString & locateTitle)
-{
-    m_isFromAiQuick = isFromAiQuick;
-
-    //已经存在模态框，激活模态框继续操作
-    auto addDlg = this->findChild<QDialog *>();
-    if (addDlg && addDlg->isVisible()) {
-        addDlg->showNormal();
-        addDlg->activateWindow();
-        return;
-    }
-
-    if (m_pLocalModelListWidget)
-        m_pLocalModelListWidget->updateLocalModelList();
-    if (m_pModelListWidget)
-        m_pModelListWidget->checkActivityExists();
-    if (m_pMcpServerWidget)
-        m_pMcpServerWidget->updateStatus();
-    if (m_pSkillServerWidget)
-        m_pSkillServerWidget->updateStatus();
-    if (m_pWordWizardWidget)
-        m_pWordWizardWidget->updateHiddenStatus(m_bIsWordWizardHidden);
-    if (m_pAiBarWidget)
-        m_pAiBarWidget->updateDragStatus(DConfigManager::instance()->value(AIBAR_GROUP, AIBAR_ENABLEFILEDRAG).toBool());
-    if (m_pKnowledgeBaseListWidget)
-        m_pKnowledgeBaseListWidget->onRefresh();
-
-    loadDisabledApps();
-
-    this->activateWindow();
-    this->show();
-    m_pNavigationWidget->onSelectGroup(locateTitle);
-    onNavigationSelected(locateTitle);
-    if (showAddllmPage) {
-        onAddModel();
-    }
 }
 
 void MgmtWindow::checkUpdateStatus()
@@ -576,18 +509,19 @@ void MgmtWindow::checkUpdateStatus()
 
 void MgmtWindow::showGetFreeAccountDlg()
 {
-    onShowGetFreeAccountDialog();
-}
+    static QMutex lock;
+    if (!lock.tryLock(1)) {
+        qCWarning(logAIGUI) << "free account is in processing.";
+        return;
+    }
 
-void MgmtWindow::onShowGetFreeAccountDialog()
-{
     qCDebug(logAIGUI) << "Showing get free account dialog";
     DDialog dlg(this);
     dlg.setIcon(QIcon(":/assets/images/warning.svg"));
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, UOS_FREE, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 82, freeAccount, status);
 
     if (1 == status) {
         qCWarning(logAIGUI) << "Free account activity has ended";
@@ -595,12 +529,15 @@ void MgmtWindow::onShowGetFreeAccountDialog()
         dlg.addButton(tr("Confirm", "button"), true, DDialog::ButtonNormal);
         dlg.exec();
         onHiddenGetFreeAccountBtn();
+        lock.unlock();
         return;
     }
+
     if (DDialog::Accepted == m_pGetFreeAccountDialog->exec()) {
         qCInfo(logAIGUI) << "User accepted free account dialog";
         m_pGetFreeAccountDialog->onGetFreeAccount();
     }
+    lock.unlock();
 }
 
 void MgmtWindow::onscrollAreaValueChanged(int value)
@@ -751,7 +688,7 @@ void MgmtWindow::loadDisabledApps()
     }
 }
 
-DWidget *MgmtWindow::initChatBotWidget()
+ChatBotWidget *MgmtWindow::initChatBotWidget()
 {
     m_pChatBotWidget = new ChatBotWidget(this);
     m_pChatBotWidget->setFixedWidth(560);

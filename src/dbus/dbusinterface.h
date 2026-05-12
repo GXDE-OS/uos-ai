@@ -1,23 +1,30 @@
 #ifndef DBUSINTERFACE_H
 #define DBUSINTERFACE_H
 
-#include "appdefs.h"
-
 #include <QThread>
 #include <QVariantMap>
 #include <QSharedPointer>
 #include <QDBusContext>
 
+
+#define DBUS_SERVER             "com.deepin.copilot"
+#define DBUS_SERVER_PATH        "/com/deepin/copilot"
+#define DBUS_SERVER_INTERFACE   "com.deepin.copilot"
+
+namespace uos_ai {
 class AppDbusObject;
 class DBusInterface : public QObject, protected QDBusContext
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "com.deepin.copilot")
 
-    enum TaskType {
-        TASK_UPDATE_LLM_ACCOUNT = 0,
+    struct AppDbusPathObject {
+        QString appId;
+        QString path;
+        QString curLLMId;
+        QVariantMap cmdPrompts;
+        QSharedPointer<AppDbusObject> object;
     };
-
 public:
     explicit DBusInterface(QObject *parent = nullptr);
     ~DBusInterface();
@@ -26,7 +33,7 @@ signals:
     /**
      * @brief User experience plan state Changed
      */
-    Q_SCRIPTABLE void userExpStateChanged(bool);
+    Q_DECL_DEPRECATED Q_SCRIPTABLE void userExpStateChanged(bool);
 
     Q_SCRIPTABLE void windowVisibleChanged(bool);
 
@@ -59,7 +66,7 @@ public Q_SLOTS:
      * This function was added in v1.0
      * @return yes or not
      */
-    Q_SCRIPTABLE bool queryUserExpState();
+    Q_DECL_DEPRECATED Q_SCRIPTABLE bool queryUserExpState();
 
     /**
      * @brief A list of functions to be performed by the called program.
@@ -67,7 +74,7 @@ public Q_SLOTS:
      * This function was added in v1.1
      * @return A list of functions in json format
      */
-    Q_SCRIPTABLE QString cachedFunctions();
+     Q_DECL_DEPRECATED Q_SCRIPTABLE QString cachedFunctions();
 
     /**
      * @brief raise the chat window.
@@ -125,65 +132,14 @@ public Q_SLOTS:
     Q_SCRIPTABLE void unregisterAppCmdPrompts();
 
 public:
-    /**
-     * @brief Asynchronously update the model account information.
-     */
-    void asyncUpdateLLMAccount();
-
-    /**
-     * @brief Update User experience plan.
-     */
-    void updateUserExpState(int state);
-
     void updateVisibleState(bool visible);
     void updateActiveState(bool active);
-    /**
-     * @brief addAppFunction
-     * @param appId
-     * @param funciton
-     */
-    void addAppFunction(const QString &appId, const QJsonObject &funciton);
-
-    QJsonArray appFunctions();
-
-signals:
-    void sigTask(TaskType type);
-
-    void sigToLaunchMgmt(bool showAddllmPage, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString &locateTitle = "");
-
-    void sigToLaunchChat(int index);
-
-    void sigToLaunchWordWizard();
-
-    void sigToTranslate();
-
-    void sigToStartScreenshot();
-
-    void sigToLaunchAiQuickOCR(int type, QString query, QPoint pos, bool isCustom, const QString &imagePath);
-
-    void sigToUploadImage(const QString &imagePath);
-
-private slots:
-    /**
-     * @brief Execute the task received from the signal sigTask.
-     * @param type
-     */
-    void onProcessTask(TaskType type);
-
-    /**
-     * @brief Request task completion.
-     */
-    void onRequestTaskFinished();
-
-private:
-    /**
-     * @brief Update LLM account information.
-     */
-    void updateLLMAccount();
+    static QString adjustDbusPath(QString appId);
 
 private:
     QMap<QString, AppDbusPathObject> m_appDbusObjects;
-    QMap<QString, QJsonArray> m_appFunctions;
 };
+
+}
 
 #endif // DBUSINTERFACE_H

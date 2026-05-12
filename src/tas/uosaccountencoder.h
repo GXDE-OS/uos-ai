@@ -1,8 +1,11 @@
 #ifndef UOSACCOUNTENCODER_H
 #define UOSACCOUNTENCODER_H
-#include "tasdef.h"
+
+#include "uosfreeaccounts.h"
 
 #include <QSharedPointer>
+
+namespace uos_ai {
 
 class EncryptBase;
 
@@ -29,4 +32,5 @@ private:
 
 };
 
+}
 #endif // UOSACCOUNTENCODER_H

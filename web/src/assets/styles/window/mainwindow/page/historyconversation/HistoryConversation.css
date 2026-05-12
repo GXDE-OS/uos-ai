@@ -1,0 +1,166 @@
+/* HistoryConversation 主题变量 */
+html {
+    --historyconversation-title-color: rgba(0, 0, 0, 1);
+    --historyconversation-empty-color: rgba(0, 0, 0, 1);
+    --historyconversation-placeholder-color: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --historyconversation-title-color: rgba(255, 255, 255, 1);
+    --historyconversation-empty-color: rgba(255, 255, 255, 1);
+    --historyconversation-placeholder-color: rgba(255, 255, 255, 0.7);
+}
+
+.history-conversation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+}
+
+.history-conversation__header-container {
+    width: 100%;
+}
+
+.history-conversation__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 20px 30px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+}
+
+.history-conversation__title {
+    font-size: var(--uosai-font-size-xl);
+    font-weight: 700;
+    color: var(--historyconversation-title-color);
+    margin-right: 10px;
+}
+
+.history-conversation__actions {
+    display: flex;
+    align-items: center;
+}
+
+.history-conversation__icon-button {
+    margin-right: 8px;
+}
+
+.history-conversation__search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px var(--system-active-color);
+    background-color: var(--el-bg-color);
+    width: 240px;
+    max-width: 240px;
+    min-width: 160px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.history-conversation__search-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--historyconversation-placeholder-color);
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+
+.history-conversation__search-input {
+    flex: 1;
+    height: 100%;
+}
+
+.history-conversation__search-input.el-input {
+    --el-input-border-color: transparent;
+    --el-input-hover-border-color: transparent;
+    --el-input-focus-border-color: transparent;
+    --el-input-bg-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.history-conversation__search-input .el-input__wrapper {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.history-conversation__search-input .el-input__inner {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--historyconversation-title-color) !important;
+}
+
+.history-conversation__search-input .el-input__inner::placeholder {
+    color: var(--historyconversation-placeholder-color) !important;
+}
+
+.history-conversation__search-input .el-input__wrapper:hover,
+.history-conversation__search-input .el-input__wrapper:focus-within,
+.history-conversation__search-input .el-input__wrapper.is-focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.history-conversation__delete-button {
+    margin-left: 6px;
+    flex-shrink: 0;
+}
+
+.history-conversation__content-container {
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+.history-conversation__content {
+    padding: 0 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-conversation__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+    color: var(--historyconversation-empty-color);
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+
+.history-conversation__empty img {
+    width: 136px;
+    height: 136px;
+}
+
+.history-conversation__empty span {
+    margin-top: 20px;
+    font-size: var(--uosai-font-size-md);
+}

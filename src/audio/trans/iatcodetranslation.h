@@ -2,6 +2,7 @@
 #define IATCODETRANSLATION_H
 
 #include <QString>
+namespace uos_ai {
 
 class IatCodeTranslation
 {
@@ -11,5 +12,5 @@ public:
 private:
     static QMap<int, QString> errorMessages();
 };
-
+} // namespace uos_ai
 #endif // IATCODETRANSLATION_H

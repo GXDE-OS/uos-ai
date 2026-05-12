@@ -4,510 +4,396 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="56"/>
         <source>Add model</source>
-        <translation>Modell hozzáadása</translation>
+        <translation type="vanished">Modell hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="58"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="99"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
-        <translation>Kötelező, kérem adja meg</translation>
+        <translation type="vanished">Kötelező, kérem adja meg</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="107"/>
         <source>APIKey</source>
-        <translation>API kulcs</translation>
+        <translation type="vanished">API kulcs</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="115"/>
         <source>APISecret</source>
-        <translation>API titok</translation>
+        <translation type="vanished">API titok</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
         <source>Account</source>
-        <translation>Fiók</translation>
+        <translation type="vanished">Fiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Kötelező, több modell megkülönböztetéséhez</translation>
+        <translation type="vanished">Kötelező, több modell megkülönböztetéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
-        <translation>Opcionális</translation>
+        <translation type="vanished">Opcionális</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="155"/>
         <source>Optional. The default address will be used if not filled in.</source>
-        <translation>Opcionális. Ha nincs kitöltve, az alapértelmezett cím lesz használva.</translation>
+        <translation type="vanished">Opcionális. Ha nincs kitöltve, az alapértelmezett cím lesz használva.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="161"/>
         <source>Models List</source>
-        <translation>Modell lista</translation>
+        <translation type="vanished">Modell lista</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="168"/>
         <source>Custom</source>
-        <translation>Egyéni</translation>
+        <translation type="vanished">Egyéni</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="529"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nem sikerült csatlakozni a szerverhez, kérem ellenőrizze a hálózati kapcsolatot vagy próbálja újra később.</translation>
+        <translation type="vanished">Nem sikerült csatlakozni a szerverhez, kérem ellenőrizze a hálózati kapcsolatot vagy próbálja újra később.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="818"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>Proxy beállításokhoz kérem lépjen a rendszer proxy beállításaihoz</translation>
+        <translation type="vanished">Proxy beállításokhoz kérem lépjen a rendszer proxy beállításaihoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="821"/>
         <source>Go to settings</source>
-        <translation>Ugrás a beállításokhoz</translation>
+        <translation type="vanished">Ugrás a beállításokhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="254"/>
         <source>Cancel</source>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="134"/>
         <source>Model Name</source>
-        <translation>Modell neve</translation>
+        <translation type="vanished">Modell neve</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
-        <translation>Domain</translation>
+        <translation type="vanished">Domain</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="256"/>
         <source>Confirm</source>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
-        <translation>Mentés sikertelen, kérem próbálja újra később</translation>
+        <translation type="vanished">Mentés sikertelen, kérem próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="725"/>
         <source>The account name already exists, please change it</source>
-        <translation>A fióknév már létezik, kérem változtassa meg</translation>
+        <translation type="vanished">A fióknév már létezik, kérem változtassa meg</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="367"/>
         <source>No more than 20 characters</source>
-        <translation>Legfeljebb 20 karakter</translation>
+        <translation type="vanished">Legfeljebb 20 karakter</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="202"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>Annak ellenőrzésére, hogy a modell elérhető-e, a rendszer teszt információt küld a nagy modellnek, ami kis mennyiségű tokent fogyaszt.</translation>
+        <translation type="vanished">Annak ellenőrzésére, hogy a modell elérhető-e, a rendszer teszt információt küld a nagy modellnek, ami kis mennyiségű tokent fogyaszt.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="460"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>Ez az LLM már létezik, kérem ne adja hozzá újra.</translation>
+        <translation type="vanished">Ez az LLM már létezik, kérem ne adja hozzá újra.</translation>
     </message>
 </context>
 <context>
     <name>AiCodeTranslation</name>
     <message>
-        <location filename="../src/llm/openai/aicodetranslation.cpp" line="9"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Jelenleg túl sok látogató van, kérem próbálja újra később.</translation>
+        <translation type="vanished">Jelenleg túl sok látogató van, kérem próbálja újra később.</translation>
     </message>
 </context>
 <context>
     <name>AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="184"/>
         <source>type</source>
-        <translation>típus</translation>
+        <translation type="vanished">típus</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="283"/>
         <source>Cancel</source>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="308"/>
         <source>Read Aloud</source>
-        <translation>Hangos felolvasás</translation>
+        <translation type="vanished">Hangos felolvasás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
-        <translation>Az audio eszköz nem észlelhető, kérem ellenőrizze és próbálja újra.</translation>
+        <translation type="vanished">Az audio eszköz nem észlelhető, kérem ellenőrizze és próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="367"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Az AI által generált tartalom csak tájékoztató jellegű, kérem figyeljen az információk pontosságára.</translation>
+        <translation type="vanished">Az AI által generált tartalom csak tájékoztató jellegű, kérem figyeljen az információk pontosságára.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="336"/>
         <source>Copy</source>
-        <translation>Másolás</translation>
+        <translation type="vanished">Másolás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1379"/>
         <source>Polish this passage for me and just give me the result without any extra content.
 text：</source>
-        <translation>Csiszold fel nekem ezt a szöveget, és csak az eredményt add vissza, mindenféle extra tartalom nélkül.
+        <translation type="vanished">Csiszold fel nekem ezt a szöveget, és csak az eredményt add vissza, mindenféle extra tartalom nélkül.
 
 szöveg:</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
-        <translation>Jelenlegi modell: </translation>
+        <translation type="vanished">Jelenlegi modell: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="329"/>
         <source>Regenerate</source>
-        <translation>Újragenerálás</translation>
+        <translation type="vanished">Újragenerálás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="107"/>
         <source>simplified Chinese</source>
-        <translation>egyszerűsített kínai</translation>
+        <translation type="vanished">egyszerűsített kínai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="108"/>
         <source>traditional Chinese</source>
-        <translation>hagyományos kínai</translation>
+        <translation type="vanished">hagyományos kínai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="109"/>
         <source>Tibetan</source>
-        <translation>tibeti</translation>
+        <translation type="vanished">tibeti</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="110"/>
         <source>English</source>
-        <translation>angol</translation>
+        <translation type="vanished">angol</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="111"/>
         <source>Japanese </source>
-        <translation>japán</translation>
+        <translation type="vanished">japán</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="112"/>
         <source>German</source>
-        <translation>német</translation>
+        <translation type="vanished">német</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="113"/>
         <source>Spanish</source>
-        <translation>spanyol</translation>
+        <translation type="vanished">spanyol</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="114"/>
         <source>French</source>
-        <translation>francia</translation>
+        <translation type="vanished">francia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="115"/>
         <source>Italian</source>
-        <translation>olasz</translation>
+        <translation type="vanished">olasz</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="116"/>
         <source>Korean</source>
-        <translation>koreai</translation>
+        <translation type="vanished">koreai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="117"/>
         <source>Malay</source>
-        <translation>maláj</translation>
+        <translation type="vanished">maláj</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="118"/>
         <source>Portuguese</source>
-        <translation>portugál</translation>
+        <translation type="vanished">portugál</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="119"/>
         <source>Russian</source>
-        <translation>orosz</translation>
+        <translation type="vanished">orosz</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="120"/>
         <source>Thai</source>
-        <translation>thai</translation>
+        <translation type="vanished">thai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="121"/>
         <source>Vietnamese</source>
-        <translation>vietnámi</translation>
+        <translation type="vanished">vietnámi</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="354"/>
         <source>Continue Dialog</source>
-        <translation>Párbeszéd folytatása</translation>
+        <translation type="vanished">Párbeszéd folytatása</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="403"/>
         <source>Automatic Detection</source>
-        <translation>Automatikus felismerés</translation>
+        <translation type="vanished">Automatikus felismerés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="479"/>
         <source>Search</source>
-        <translation>Keresés</translation>
+        <translation type="vanished">Keresés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
-        <translation>Magyarázat</translation>
+        <translation type="vanished">Magyarázat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
-        <translation>Fordítás</translation>
+        <translation type="vanished">Fordítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
-        <translation>Kiterjesztés</translation>
+        <translation type="vanished">Kiterjesztés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
-        <translation>Javítás</translation>
+        <translation type="vanished">Javítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="506"/>
         <source>Add to the AI knowledge base</source>
-        <translation>Hozzáadás az MI tudásbázishoz</translation>
+        <translation type="vanished">Hozzáadás az MI tudásbázishoz</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="991"/>
         <source>Added</source>
-        <translation>Hozzáadva</translation>
+        <translation type="vanished">Hozzáadva</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1258"/>
         <source>Model Configuration</source>
-        <translation>Modell konfiguráció</translation>
+        <translation type="vanished">Modell konfiguráció</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1310"/>
         <source>Copied</source>
-        <translation>Másolva</translation>
+        <translation type="vanished">Másolva</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
-        <translation>Nem ismert fel szöveget.</translation>
+        <translation type="vanished">Nem ismert fel szöveget.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1981"/>
         <source>The added content must be more than 10 words</source>
-        <translation>A hozzáadott tartalomnak több mint 10 szóból kell állnia</translation>
+        <translation type="vanished">A hozzáadott tartalomnak több mint 10 szóból kell állnia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
-        <translation>Összefoglaló</translation>
+        <translation type="vanished">Összefoglaló</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="315"/>
         <source>Paste to Text</source>
-        <translation>Beillesztés szövegbe</translation>
+        <translation type="vanished">Beillesztés szövegbe</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
-        <translation>Írás folytatása</translation>
+        <translation type="vanished">Írás folytatása</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
-        <translation>Csiszolás</translation>
+        <translation type="vanished">Csiszolás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="613"/>
         <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation>A fordítás eredményét a modell képességei korlátozzák. Ha nem elégedett a fordítással, váltson más modellekre az UOS AI főoldalán.</translation>
+        <translation type="vanished">A fordítás eredményét a modell képességei korlátozzák. Ha nem elégedett a fordítással, váltson más modellekre az UOS AI főoldalán.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
-        <translation>Fordítsa le ezt a szöveget %1 nyelvre, és adja meg közvetlenül az egyértelmű eredményt.
+        <translation type="vanished">Fordítsa le ezt a szöveget %1 nyelvre, és adja meg közvetlenül az egyértelmű eredményt.
 szöveg：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="799"/>
         <source>Not clickable</source>
-        <translation>Nem kattintható</translation>
+        <translation type="vanished">Nem kattintható</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="907"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished">A funkció csak a beviteli mód újraindítása után használható. Az útmutató a következő:
+        <translation type="obsolete">A funkció csak a beviteli mód újraindítása után használható. Az útmutató a következő:
 
 1. Kattintson jobb gombbal a beviteli mód ikonjára a tálcán.
 
 2. Kattintson az &quot;Újraindítás&quot; gombra.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
-        <translation type="unfinished">Rendben</translation>
+        <translation type="obsolete">Rendben</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="925"/>
         <source>Fill failed</source>
-        <translation type="unfinished">Kitöltés sikertelen</translation>
+        <translation type="obsolete">Kitöltés sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="926"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished">Nincs beviteli mező kiválasztva, kérjük válassza ki a beviteli mezőt és töltse ki újra.</translation>
+        <translation type="obsolete">Nincs beviteli mező kiválasztva, kérjük válassza ki a beviteli mezőt és töltse ki újra.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
-        <translation type="unfinished">Rendben</translation>
+        <translation type="obsolete">Rendben</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1335"/>
         <source>Explain this passage in plain language. Just give me a clear result without redundant content.
 text：</source>
-        <translation>Magyarázza el ezt a szöveget közérthető nyelven. Csak egyértelmű eredményt adjon, felesleges tartalom nélkül.
+        <translation type="vanished">Magyarázza el ezt a szöveget közérthető nyelven. Csak egyértelmű eredményt adjon, felesleges tartalom nélkül.
 szöveg：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1340"/>
         <source>Summarize this passage and give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>Foglalja össze ezt a szöveget, és adja meg közvetlenül az egyértelmű eredményt, minden más felesleges tartalom nélkül.
+        <translation type="vanished">Foglalja össze ezt a szöveget, és adja meg közvetlenül az egyértelmű eredményt, minden más felesleges tartalom nélkül.
 szöveg：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
         <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>Folytassa megfelelően ezt a szöveget. Nem kell sok szó. Csak egyértelmű eredményt adjon, minden más felesleges tartalom nélkül.
+        <translation type="vanished">Folytassa megfelelően ezt a szöveget. Nem kell sok szó. Csak egyértelmű eredményt adjon, minden más felesleges tartalom nélkül.
 szöveg：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1369"/>
         <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>Bővítse megfelelően ezt a szöveget. Nem kell különösen hosszú szöveg. Csak egyértelmű eredményt adjon, minden más felesleges tartalom nélkül.
+        <translation type="vanished">Bővítse megfelelően ezt a szöveget. Nem kell különösen hosszú szöveg. Csak egyértelmű eredményt adjon, minden más felesleges tartalom nélkül.
 szöveg：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1374"/>
         <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>Ellenőrizze, hogy van-e elírás ebben a szövegben. Ha van, jelölje meg a hibák helyét. Adja meg közvetlenül az egyértelmű eredményt, minden más felesleges tartalom nélkül.
+        <translation type="vanished">Ellenőrizze, hogy van-e elírás ebben a szövegben. Ha van, jelölje meg a hibák helyét. Adja meg közvetlenül az egyértelmű eredményt, minden más felesleges tartalom nélkül.
 szöveg：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
-        <translation> &quot;%1&quot; </translation>
+        <translation type="vanished"> &quot;%1&quot; </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1673"/>
         <source>Currently no model</source>
-        <translation type="unfinished">Jelenleg nincs modell</translation>
+        <translation type="obsolete">Jelenleg nincs modell</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1690"/>
         <source>Go to configure  </source>
-        <translation type="unfinished">Ugrás a beállításhoz</translation>
+        <translation type="obsolete">Ugrás a beállításhoz</translation>
     </message>
 </context>
 <context>
     <name>AiToastMessage</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="100"/>
         <source>Chat history cleared</source>
-        <translation type="unfinished">Csevegési előzmények törölve</translation>
+        <translation type="obsolete">Csevegési előzmények törölve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="101"/>
         <source>Copied successfully</source>
-        <translation type="unfinished">Sikeresen másolva</translation>
+        <translation type="obsolete">Sikeresen másolva</translation>
     </message>
 </context>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="60"/>
-        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished">Az UOS AI egy asztali intelligens asszisztens, a személyes asszisztense! Szöveges vagy hangos kommunikációval lehet vele kapcsolatba lépni, segíthet kérdésekre válaszolni, információt szolgáltatni és képeket generálni a leírása alapján.</translation>
+        <translation type="obsolete">Az UOS AI egy asztali intelligens asszisztens, a személyes asszisztense! Szöveges vagy hangos kommunikációval lehet vele kapcsolatba lépni, segíthet kérdésekre válaszolni, információt szolgáltatni és képeket generálni a leírása alapján.</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="123"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS AI Követés/Írás</translation>
+        <translation type="vanished">UOS AI Követés/Írás</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
-        <translation>Tudásbázis-kezelés</translation>
+        <translation type="vanished">Tudásbázis-kezelés</translation>
     </message>
 </context>
 <context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="152"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>Nem sikerült kapcsolódni a kiszolgálóhoz, ellenőrizze a hálózatot, vagy próbálja meg később.</translation>
     </message>
@@ -515,1089 +401,869 @@ szöveg：</translation>
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
-        <source>The command was executed successfully.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
-        <source>Command execution failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
-        <translation>függvényelemzés sikertelen</translation>
+        <translation type="vanished">függvényelemzés sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="252"/>
         <source>Application file does not exist</source>
-        <translation>Az alkalmazásfájl nem létezik</translation>
+        <translation type="vanished">Az alkalmazásfájl nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
-        <translation>Sikeresen elindult</translation>
+        <translation type="vanished">Sikeresen elindult</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
-        <translation>Indítás sikertelen</translation>
+        <translation type="vanished">Indítás sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="211"/>
-        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
-        <translation> A végrehajtás kimeneti tartalma: </translation>
+        <translation type="vanished"> A végrehajtás kimeneti tartalma: </translation>
     </message>
 </context>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
-        <translation>Mód</translation>
+        <translation type="vanished">Mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
-        <translation>Ablak mód</translation>
+        <translation type="vanished">Ablak mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
-        <translation>Oldalsáv mód</translation>
+        <translation type="vanished">Oldalsáv mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
-        <translation>Beállítások</translation>
+        <translation type="vanished">Beállítások</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
-        <translation>Frissítési napló</translation>
+        <translation type="vanished">Frissítési napló</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
-        <translation>Hangos beszélgetés</translation>
+        <translation type="vanished">Hangos beszélgetés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
-        <translation>Törlés</translation>
+        <translation type="vanished">Törlés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
-        <translation>Megerősíti a törlést: %1?</translation>
+        <translation type="vanished">Megerősíti a törlést: %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Törlés után ez a kiszolgáló nem lesz elérhető. Járjon el körültekintően.</translation>
+        <translation type="vanished">Törlés után ez a kiszolgáló nem lesz elérhető. Járjon el körültekintően.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
-        <translation type="unfinished">Frissítés</translation>
+        <translation type="obsolete">Frissítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
-        <translation>Nem vektorizált bővítmény</translation>
+        <translation type="vanished">Nem vektorizált bővítmény</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation>Az [MI tudásbázis] használata előtt telepítenie kell a vektorizáló bővítményt, hogy az MI tudásbázis-funkció megfelelően működjön.</translation>
+        <translation type="vanished">Az [MI tudásbázis] használata előtt telepítenie kell a vektorizáló bővítményt, hogy az MI tudásbázis-funkció megfelelően működjön.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
-        <translation type="unfinished">Telepítés</translation>
+        <translation type="obsolete">Telepítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
-        <translation>A tudásbázis üres</translation>
+        <translation type="vanished">A tudásbázis üres</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation>Az [AI Tudásbázis] használata előtt először dokumentumokat kell hozzáadnia a tudásbázishoz. A hozzáadás után az AI a tudásbázisba feltöltött tartalom alapján válaszol a kérdésekre.</translation>
+        <translation type="vanished">Az [AI Tudásbázis] használata előtt először dokumentumokat kell hozzáadnia a tudásbázishoz. A hozzáadás után az AI a tudásbázisba feltöltött tartalom alapján válaszol a kérdésekre.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
-        <translation>Fájlok hozzáadása</translation>
+        <translation type="vanished">Fájlok hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
-        <translation>A következő fájl lejárt, nem használható. Folytatja?</translation>
+        <translation type="vanished">A következő fájl lejárt, nem használható. Folytatja?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
-        <translation>Később használom</translation>
+        <translation type="vanished">Később használom</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
-        <translation>Telepítés most</translation>
+        <translation type="vanished">Telepítés most</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
-        <translation>Hiányzó MCP-környezet</translation>
+        <translation type="vanished">Hiányzó MCP-környezet</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation>Kérjük, az App Store-ból telepítse az UOS AI Agentet</translation>
+        <translation type="vanished">Kérjük, az App Store-ból telepítse az UOS AI Agentet</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
-        <translation>Most nem</translation>
+        <translation type="vanished">Most nem</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
-        <translation>Kreditigény</translation>
+        <translation type="vanished">Kreditigény</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
-        <translation>Ingyenes kreditek kézbesítve</translation>
+        <translation type="vanished">Ingyenes kreditek kézbesítve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>Felhasználta a próbafiók ingyenes generálási kreditjeit. További 200 ingyenes kreditet adtunk Önnek, amelyek ebben a hónapban érvényesek. Fedezzen fel több funkciót és nyissa ki az UOS AI korlátlan lehetőségeit!</translation>
+        <translation type="vanished">Felhasználta a próbafiók ingyenes generálási kreditjeit. További 200 ingyenes kreditet adtunk Önnek, amelyek ebben a hónapban érvényesek. Fedezzen fel több funkciót és nyissa ki az UOS AI korlátlan lehetőségeit!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation type="obsolete">OK</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
-        <translation>Sikeresen igényelve</translation>
+        <translation type="vanished">Sikeresen igényelve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+        <translation type="vanished">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>Az UOS AI egy asztali intelligens asszisztens, a személyes asszisztense! Szöveges vagy hangos kommunikációval lehet vele kapcsolatba lépni, segíthet kérdésekre válaszolni, információt szolgáltatni és képeket generálni a leírása alapján.</translation>
+        <translation type="vanished">Az UOS AI egy asztali intelligens asszisztens, a személyes asszisztense! Szöveges vagy hangos kommunikációval lehet vele kapcsolatba lépni, segíthet kérdésekre válaszolni, információt szolgáltatni és képeket generálni a leírása alapján.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
-        <translation>Információk archiválása</translation>
+        <translation type="vanished">Információk archiválása</translation>
     </message>
 </context>
 <context>
     <name>CodeTranslation360</name>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="9"/>
         <source>Authentication failed, insufficient balance</source>
-        <translation>Hitelesítés sikertelen, nincs elegendő egyenleg</translation>
+        <translation type="vanished">Hitelesítés sikertelen, nincs elegendő egyenleg</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="10"/>
         <source>Authentication failed, daily limit exceeded</source>
-        <translation>Hitelesítés sikertelen, túllépte a napi limitet</translation>
+        <translation type="vanished">Hitelesítés sikertelen, túllépte a napi limitet</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="11"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Jelenleg túl sok látogató van, kérjük, próbálja újra később.</translation>
+        <translation type="vanished">Jelenleg túl sok látogató van, kérjük, próbálja újra később.</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="12"/>
         <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation>A szolgáltatás rendellenes. Kérjük, lépjen kapcsolatba a fejlesztői csapattal a hibaelhárításhoz.</translation>
+        <translation type="vanished">A szolgáltatás rendellenes. Kérjük, lépjen kapcsolatba a fejlesztői csapattal a hibaelhárításhoz.</translation>
     </message>
 </context>
 <context>
     <name>CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="30"/>
         <source>Error</source>
-        <translation>Hiba</translation>
+        <translation type="vanished">Hiba</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="52"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>DocParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
+        <source>The document content is invalid or empty.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>EAiExecutor</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation>A személyes tudásasszisztens csak a tudásbázis konfigurálása után használható.</translation>
+        <translation type="vanished">A személyes tudásasszisztens csak a tudásbázis konfigurálása után használható.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation>A személyes tudásasszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
+        <translation type="vanished">A személyes tudásasszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation>A mélyrendszer-asszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
+        <translation type="vanished">A mélyrendszer-asszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation>Az UOS rendszerasszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
+        <translation type="vanished">Az UOS rendszerasszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="427"/>
         <source>Knowledge Base Management</source>
-        <translation>Tudásbázis kezelése</translation>
+        <translation type="vanished">Tudásbázis kezelése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="433"/>
         <source>MCP Server</source>
-        <translation>MCP Szerver</translation>
+        <translation type="vanished">MCP Szerver</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>Az UOS AI használatához egy AI modell fiók konfigurálása szükséges. Kérjük, először konfiguráljon egy modell fiókot.</translation>
+        <translation type="vanished">Az UOS AI használatához egy AI modell fiók konfigurálása szükséges. Kérjük, először konfiguráljon egy modell fiókot.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1185"/>
         <source>Please configure the knowledge base.</source>
-        <translation>Kérjük, konfigurálja a tudásbázist.</translation>
+        <translation type="vanished">Kérjük, konfigurálja a tudásbázist.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1189"/>
         <source>Please install the model plug.</source>
-        <translation>Kérjük, telepítse a modulbővítményt.</translation>
+        <translation type="vanished">Kérjük, telepítse a modulbővítményt.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
-        <translation>Kép exportálása mint</translation>
+        <translation type="vanished">Kép exportálása mint</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
+        <source>Successfully Claimed</source>
+        <translation type="obsolete">Sikeresen igényelve</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="obsolete">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+    </message>
+    <message>
         <source>You can upload up to 3 files or image</source>
-        <translation>Legfeljebb 3 fájlt vagy képet tölthet fel</translation>
+        <translation type="vanished">Legfeljebb 3 fájlt vagy képet tölthet fel</translation>
     </message>
 </context>
 <context>
     <name>EAiFAQInit</name>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="17"/>
         <source>Translate the following text into English for me.</source>
-        <translation>Fordítsa le nekem a következő szöveget angolra.</translation>
+        <translation type="vanished">Fordítsa le nekem a következő szöveget angolra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="23"/>
         <source>Translate the following document into Chinese.</source>
-        <translation>Fordítsa le a következő dokumentumot kínaira.</translation>
+        <translation type="vanished">Fordítsa le a következő dokumentumot kínaira.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="29"/>
         <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation>Mit jelent az „Agent” szó az AI iparágban?</translation>
+        <translation type="vanished">Mit jelent az „Agent” szó az AI iparágban?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="35"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation>Kérjük, fordítsa le a következő tartalmat kínaira. Követelmények: Pontos jelentés, formális és szakmai nyelvhasználat.</translation>
+        <translation type="vanished">Kérjük, fordítsa le a következő tartalmat kínaira. Követelmények: Pontos jelentés, formális és szakmai nyelvhasználat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="41"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation>Milyen köznyelvi módok vannak egy barát megszólítására angolul?</translation>
+        <translation type="vanished">Milyen köznyelvi módok vannak egy barát megszólítására angolul?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="47"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation>Fordítsa le a következő klasszikus kínai szöveget modern kínaira.</translation>
+        <translation type="vanished">Fordítsa le a következő klasszikus kínai szöveget modern kínaira.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="60"/>
         <source>Summarize</source>
-        <translation>Összefoglalás</translation>
+        <translation type="vanished">Összefoglalás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="66"/>
         <source>Proofread</source>
-        <translation>Lektorálás</translation>
+        <translation type="vanished">Lektorálás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="72"/>
         <source>Explain</source>
-        <translation>Magyarázat</translation>
+        <translation type="vanished">Magyarázat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="78"/>
         <source>Expand</source>
-        <translation>Bővítés</translation>
+        <translation type="vanished">Bővítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="84"/>
         <source>Continue</source>
-        <translation>Folytatás</translation>
+        <translation type="vanished">Folytatás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="90"/>
         <source>Polish</source>
-        <translation>Finomítás</translation>
+        <translation type="vanished">Finomítás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="104"/>
         <source>Please help me write a work summary based on this document</source>
-        <translation>Kérlek, segíts nekem munkavégzési összefoglalót írni ezen dokumentum alapján</translation>
+        <translation type="vanished">Kérlek, segíts nekem munkavégzési összefoglalót írni ezen dokumentum alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="110"/>
         <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation>Szükségem van egy munkavégzési összefoglalóra az A projekthez, kérlek, segíts a kulcspontok megszervezésében</translation>
+        <translation type="vanished">Szükségem van egy munkavégzési összefoglalóra az A projekthez, kérlek, segíts a kulcspontok megszervezésében</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="116"/>
         <source>Please generate a concise work summary based on my input text</source>
-        <translation>Kérlek, generálj egy tömör munkavégzési összefoglalót a bemeneti szöveg alapján</translation>
+        <translation type="vanished">Kérlek, generálj egy tömör munkavégzési összefoglalót a bemeneti szöveg alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="122"/>
         <source>Analyze this report and extract key points for the work summary</source>
-        <translation>Elemezd ezt a jelentést és emeld ki a kulcspontokat a munkavégzési összefoglalóhoz</translation>
+        <translation type="vanished">Elemezd ezt a jelentést és emeld ki a kulcspontokat a munkavégzési összefoglalóhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="128"/>
         <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation>Szükségem van egy negyedéves adatokat tartalmazó munkavégzési összefoglalóra, kérlek, lásd a mellékletet</translation>
+        <translation type="vanished">Szükségem van egy negyedéves adatokat tartalmazó munkavégzési összefoglalóra, kérlek, lásd a mellékletet</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="134"/>
         <source>Help me write a work summary highlighting personal contributions</source>
-        <translation>Segíts nekem munkavégzési összefoglalót írni, kiemelve a személyes hozzájárulásokat</translation>
+        <translation type="vanished">Segíts nekem munkavégzési összefoglalót írni, kiemelve a személyes hozzájárulásokat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="140"/>
         <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation>Generálj egy munkavégzési összefoglalót a megbeszélési jegyzetekből, az akciópontokra összpontosítva</translation>
+        <translation type="vanished">Generálj egy munkavégzési összefoglalót a megbeszélési jegyzetekből, az akciópontokra összpontosítva</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="146"/>
         <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation>Kétnyelvű munkavégzési összefoglalóra van szükségem kínai és angol nyelven, kérlek, lásd a mellékelt anyagokat</translation>
+        <translation type="vanished">Kétnyelvű munkavégzési összefoglalóra van szükségem kínai és angol nyelven, kérlek, lásd a mellékelt anyagokat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="152"/>
         <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation>Segíts nekem elrendezni a múlt havi munkatartalmat és generálni egy összefoglalót</translation>
+        <translation type="vanished">Segíts nekem elrendezni a múlt havi munkatartalmat és generálni egy összefoglalót</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="158"/>
         <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation>Írj egy munkavégzési összefoglalót ezen feladatlisták alapján, kiemelve a befejezési állapotot</translation>
+        <translation type="vanished">Írj egy munkavégzési összefoglalót ezen feladatlisták alapján, kiemelve a befejezési állapotot</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="165"/>
         <source>Check for grammatical errors in this passage</source>
-        <translation>Ellenőrizd a nyelvtani hibákat ebben a szövegben</translation>
+        <translation type="vanished">Ellenőrizd a nyelvtani hibákat ebben a szövegben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="171"/>
         <source>Help me find spelling mistakes in this article</source>
-        <translation>Segíts nekem helyesírási hibákat találni ebben a cikkben</translation>
+        <translation type="vanished">Segíts nekem helyesírási hibákat találni ebben a cikkben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="177"/>
         <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation>Javítsd ki a nem megfelelő szóválasztásokat ebben a párbeszédben</translation>
+        <translation type="vanished">Javítsd ki a nem megfelelő szóválasztásokat ebben a párbeszédben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="183"/>
         <source>Fix the punctuation issues in this document</source>
-        <translation>Javítsd ki az írásjelekkel kapcsolatos problémákat ebben a dokumentumban</translation>
+        <translation type="vanished">Javítsd ki az írásjelekkel kapcsolatos problémákat ebben a dokumentumban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="189"/>
         <source>Revise the unclear expressions in this text</source>
-        <translation>Módosítsd a nem egyértelmű kifejezéseket ebben a szövegben</translation>
+        <translation type="vanished">Módosítsd a nem egyértelmű kifejezéseket ebben a szövegben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="195"/>
         <source>Edit the language errors in this email</source>
-        <translation>Szerkeszd a nyelvi hibákat ebben az e-mailben</translation>
+        <translation type="vanished">Szerkeszd a nyelvi hibákat ebben az e-mailben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="201"/>
         <source>Check if this text follows standard English conventions</source>
-        <translation>Ellenőrizd, hogy ez a szöveg követi-e a szabványos angol konvenciókat</translation>
+        <translation type="vanished">Ellenőrizd, hogy ez a szöveg követi-e a szabványos angol konvenciókat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="207"/>
         <source>Correct the logical flaws in this report</source>
-        <translation>Javítsd ki a logikai hibákat ebben a jelentésben</translation>
+        <translation type="vanished">Javítsd ki a logikai hibákat ebben a jelentésben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="213"/>
         <source>Identify language errors in this code comment</source>
-        <translation>Azonosítsd a nyelvi hibákat ebben a kódkommentben</translation>
+        <translation type="vanished">Azonosítsd a nyelvi hibákat ebben a kódkommentben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="219"/>
         <source>Fix the ambiguous statements in this contract</source>
-        <translation>Javítsd ki a kétértelmű állításokat ebben a szerződésben</translation>
+        <translation type="vanished">Javítsd ki a kétértelmű állításokat ebben a szerződésben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="226"/>
         <source>Explain the basic principles of quantum computing</source>
-        <translation>Magyarázd el a kvantumszámítás alapelveit</translation>
+        <translation type="vanished">Magyarázd el a kvantumszámítás alapelveit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="232"/>
         <source>Describe photosynthesis in simple terms</source>
-        <translation>Írd le a fotoszintézist egyszerű fogalmakkal</translation>
+        <translation type="vanished">Írd le a fotoszintézist egyszerű fogalmakkal</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="238"/>
         <source>Detail how blockchain technology works</source>
-        <translation>Részletezd, hogyan működik a blokklánc technológia</translation>
+        <translation type="vanished">Részletezd, hogyan működik a blokklánc technológia</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="244"/>
         <source>Explain relativity from a professional perspective</source>
-        <translation>Magyarázd el a relativitáselméletet szakmai szempontból</translation>
+        <translation type="vanished">Magyarázd el a relativitáselméletet szakmai szempontból</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="250"/>
         <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation>Használj metaforákat annak leírására, hogy mi a mesterséges intelligencia</translation>
+        <translation type="vanished">Használj metaforákat annak leírására, hogy mi a mesterséges intelligencia</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="256"/>
         <source>Describe climate change in layman&apos;s terms</source>
-        <translation>Írja le az éghajlatváltozást laikusok számára</translation>
+        <translation type="vanished">Írja le az éghajlatváltozást laikusok számára</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="262"/>
         <source>Explain the structure of the solar system to elementary students</source>
-        <translation>Magyarázza el a naprendszer szerkezetét általános iskolásoknak</translation>
+        <translation type="vanished">Magyarázza el a naprendszer szerkezetét általános iskolásoknak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="269"/>
         <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation>Bővítse ezt a szöveget 300 szóra, a jelenet részleteire és a karakterek érzelmeire összpontosítva</translation>
+        <translation type="vanished">Bővítse ezt a szöveget 300 szóra, a jelenet részleteire és a karakterek érzelmeire összpontosítva</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="275"/>
         <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation>Írja át ezt a bekezdést 500 szóra tudományos stílusban, adatokkal és hivatkozásokkal kiegészítve</translation>
+        <translation type="vanished">Írja át ezt a bekezdést 500 szóra tudományos stílusban, adatokkal és hivatkozásokkal kiegészítve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="281"/>
         <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation>Bővítse ezt a szöveget metaforákkal és szóképekkel, hogy élénkebb legyen</translation>
+        <translation type="vanished">Bővítse ezt a szöveget metaforákkal és szóképekkel, hogy élénkebb legyen</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="287"/>
         <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation>Kérjük, bővítse ezt a rövid cikket 1000 szóra, konkrét esetekkel és gyakorlati lépésekkel kiegészítve</translation>
+        <translation type="vanished">Kérjük, bővítse ezt a rövid cikket 1000 szóra, konkrét esetekkel és gyakorlati lépésekkel kiegészítve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="293"/>
         <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation>Bővítse ezt a párbeszédet a karakterek pszichológiai tevékenységével és a párbeszéd részleteivel</translation>
+        <translation type="vanished">Bővítse ezt a párbeszédet a karakterek pszichológiai tevékenységével és a párbeszéd részleteivel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="299"/>
         <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation>Írja át a dokumentum tartalmát jelentés formátumba, beleértve az összefoglalót, a törzset és a következtetést</translation>
+        <translation type="vanished">Írja át a dokumentum tartalmát jelentés formátumba, beleértve az összefoglalót, a törzset és a következtetést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="305"/>
         <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation>Bővítse ezt a műszaki leírást 800 szóra, további műszaki paraméterekkel és diagrammagyarázatokkal</translation>
+        <translation type="vanished">Bővítse ezt a műszaki leírást 800 szóra, további műszaki paraméterekkel és diagrammagyarázatokkal</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="311"/>
         <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation>Írja át ezt az e-mailt formálisabbá és professzionálisabbá, releváns háttérinformációkkal kiegészítve</translation>
+        <translation type="vanished">Írja át ezt az e-mailt formálisabbá és professzionálisabbá, releváns háttérinformációkkal kiegészítve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="317"/>
         <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation>Bővítse ezt a történetet 1500 szóra, több cselekményfordulattal és karakterháttérrel</translation>
+        <translation type="vanished">Bővítse ezt a történetet 1500 szóra, több cselekményfordulattal és karakterháttérrel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="323"/>
         <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation>Kérjük, bővítse ezt az összefoglalót, kiemelve a legfontosabb eredményeket és a jövőbeli terveket, szókorlát nélkül</translation>
+        <translation type="vanished">Kérjük, bővítse ezt az összefoglalót, kiemelve a legfontosabb eredményeket és a jövőbeli terveket, szókorlát nélkül</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="330"/>
         <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation>Kérjük, folytassa ezt a rövid szöveget a jövő technológiájáról, az AI mindennapi életre gyakorolt hatására összpontosítva, kb. 300 szóban, tudományos ismeretterjesztő stílusban</translation>
+        <translation type="vanished">Kérjük, folytassa ezt a rövid szöveget a jövő technológiájáról, az AI mindennapi életre gyakorolt hatására összpontosítva, kb. 300 szóban, tudományos ismeretterjesztő stílusban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="336"/>
         <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation>Segítsen bővíteni az üzleti terv utolsó bekezdését, hangsúlyozva a piaci potenciált és a versenyelőnyöket, szókorlát nélkül, formális stílusban</translation>
+        <translation type="vanished">Segítsen bővíteni az üzleti terv utolsó bekezdését, hangsúlyozva a piaci potenciált és a versenyelőnyöket, szókorlát nélkül, formális stílusban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="342"/>
         <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation>Folytassa a tündérmese végét, megható és meleg hangvételű, a főhős eléri álmát, kb. 200 szóban</translation>
+        <translation type="vanished">Folytassa a tündérmese végét, megható és meleg hangvételű, a főhős eléri álmát, kb. 200 szóban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="348"/>
         <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation>Kérjük, írja meg az e-mail második felét, barátságos és professzionális hangvételben, az együttműködés részleteire összpontosítva, 150 szón belül</translation>
+        <translation type="vanished">Kérjük, írja meg az e-mail második felét, barátságos és professzionális hangvételben, az együttműködés részleteire összpontosítva, 150 szón belül</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="354"/>
         <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation>Bővítse az utazói napló következő bekezdését, élénken és képzeletremagyarázva a völgy táját, kb. 200 szóban</translation>
+        <translation type="vanished">Bővítse az utazói napló következő bekezdését, élénken és képzeletremagyarázva a völgy táját, kb. 200 szóban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="360"/>
         <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation>Folytassa a rejtélyregény következő fejezetét, cselekményfordulattal, a feszültség fenntartásával, szókorlát nélkül</translation>
+        <translation type="vanished">Folytassa a rejtélyregény következő fejezetét, cselekményfordulattal, a feszültség fenntartásával, szókorlát nélkül</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="366"/>
         <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation>Segítsen megírni a beszéd befejezését, inspirálóan, a csapatmunkát hangsúlyozva, kb. 100 szóban</translation>
+        <translation type="vanished">Segítsen megírni a beszéd befejezését, inspirálóan, a csapatmunkát hangsúlyozva, kb. 100 szóban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="372"/>
         <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation>Bővítse a termékhasználati útmutató teljesítményleírás részét, részletesen és pontosan, kb. 300 szóban</translation>
+        <translation type="vanished">Bővítse a termékhasználati útmutató teljesítményleírás részét, részletesen és pontosan, kb. 300 szóban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="378"/>
         <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation>Folytassa a szerelmes történet kezdetét, esős Párizsban, romantikus stílusban, 150 szóban</translation>
+        <translation type="vanished">Folytassa a szerelmes történet kezdetét, esős Párizsban, romantikus stílusban, 150 szóban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="384"/>
         <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation>Kérjük, írja meg a tanulmány vitafejét, az eredmények korlátainak hangsúlyozásával, tudományos stílusban, szókorlát nélkül</translation>
+        <translation type="vanished">Kérjük, írja meg a tanulmány vitafejét, az eredmények korlátainak hangsúlyozásával, tudományos stílusban, szókorlát nélkül</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="391"/>
         <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation>Kérjük, csiszolja ezt a szöveget, hogy formálisabb és professzionálisabb legyen egy üzleti e-mailhez</translation>
+        <translation type="vanished">Kérjük, csiszolja ezt a szöveget, hogy formálisabb és professzionálisabb legyen egy üzleti e-mailhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="397"/>
         <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation>Írja át ezt a szöveget, hogy élénkebb és vonzóbb legyen a közösségi média posztokhoz</translation>
+        <translation type="vanished">Írja át ezt a szöveget, hogy élénkebb és vonzóbb legyen a közösségi média posztokhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="403"/>
         <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation>Finomítanom kell a tanulmány összefoglalóját, hogy tömörebb és világosabb legyen 200 szón belül</translation>
+        <translation type="vanished">Finomítanom kell a tanulmány összefoglalóját, hogy tömörebb és világosabb legyen 200 szón belül</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="409"/>
         <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation>Csiszolja ezt a párbeszédet, hogy természetesebb és folyékonyabb legyen a beszélt kommunikációhoz</translation>
+        <translation type="vanished">Csiszolja ezt a párbeszédet, hogy természetesebb és folyékonyabb legyen a beszélt kommunikációhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="415"/>
         <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation>Tökéletesítse a termékleírást, hogy kiemelje a prémium és innovatív jellemzőket a leendő vásárlóknak</translation>
+        <translation type="vanished">Tökéletesítse a termékleírást, hogy kiemelje a prémium és innovatív jellemzőket a leendő vásárlóknak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="421"/>
         <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation>Segítsen csiszolni ezt a motivációs levelet, hogy meggyőzőbb és személyre szabottabb legyen</translation>
+        <translation type="vanished">Segítsen csiszolni ezt a motivációs levelet, hogy meggyőzőbb és személyre szabottabb legyen</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="427"/>
         <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation>Írja át ezt a blogbejegyzést, hogy viccesebb és vonzóbb legyen a fiatal olvasóknak</translation>
+        <translation type="vanished">Írja át ezt a blogbejegyzést, hogy viccesebb és vonzóbb legyen a fiatal olvasóknak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="433"/>
         <source>Refine the opening section of this report to make it more captivating</source>
-        <translation>Finomítsa a jelentés nyitó részét, hogy vonzóbb legyen</translation>
+        <translation type="vanished">Finomítsa a jelentés nyitó részét, hogy vonzóbb legyen</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="439"/>
         <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation>Szeretném átnézni ezt a technikai dokumentumot, hogy könnyebben érthető legyen a nem szakemberek számára</translation>
+        <translation type="vanished">Szeretném átnézni ezt a technikai dokumentumot, hogy könnyebben érthető legyen a nem szakemberek számára</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="445"/>
         <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation>Kérlek, segíts átírni ezt a bocsánatkérő levelet, hogy őszintébb és megfelelőbb legyen</translation>
+        <translation type="vanished">Kérlek, segíts átírni ezt a bocsánatkérő levelet, hogy őszintébb és megfelelőbb legyen</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="458"/>
         <source>Articles</source>
-        <translation>Cikkek</translation>
+        <translation type="vanished">Cikkek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="464"/>
         <source>Speeches</source>
-        <translation>Beszédek</translation>
+        <translation type="vanished">Beszédek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="470"/>
         <source>Outlines</source>
-        <translation>Vázlatok</translation>
+        <translation type="vanished">Vázlatok</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="476"/>
         <source>Notifications</source>
-        <translation>Értesítések</translation>
+        <translation type="vanished">Értesítések</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="482"/>
         <source>Posts</source>
-        <translation>Bejegyzések</translation>
+        <translation type="vanished">Bejegyzések</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="488"/>
         <source>Work Report</source>
-        <translation>Munkajelentés</translation>
+        <translation type="vanished">Munkajelentés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="494"/>
         <source>Research Report</source>
-        <translation>Kutatási jelentés</translation>
+        <translation type="vanished">Kutatási jelentés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="508"/>
         <source>Please summarize the key points of this document</source>
-        <translation>Kérlek, foglald össze a dokumentum főbb pontjait</translation>
+        <translation type="vanished">Kérlek, foglald össze a dokumentum főbb pontjait</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="514"/>
         <source>List the main ideas of this file for me</source>
-        <translation>Sorold fel nekem a fájl főbb gondolatait</translation>
+        <translation type="vanished">Sorold fel nekem a fájl főbb gondolatait</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="520"/>
         <source>Summarize the core idea of this passage</source>
-        <translation>Foglald össze a szöveg központi gondolatát</translation>
+        <translation type="vanished">Foglald össze a szöveg központi gondolatát</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="526"/>
         <source>Use concise language to summarize this article</source>
-        <translation>Összegezd ezt a cikket tömör nyelven</translation>
+        <translation type="vanished">Összegezd ezt a cikket tömör nyelven</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="532"/>
         <source>I need a summary of this report, no more than 200 words</source>
-        <translation>Szükségem van ennek a jelentésnek az összefoglalására, maximum 200 szóban</translation>
+        <translation type="vanished">Szükségem van ennek a jelentésnek az összefoglalására, maximum 200 szóban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="538"/>
         <source>Extract the main data and conclusions from this document</source>
-        <translation>Vonj ki a főbb adatokat és következtetéseket ebből a dokumentumból</translation>
+        <translation type="vanished">Vonj ki a főbb adatokat és következtetéseket ebből a dokumentumból</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="544"/>
         <source>Summarize the main sections and points of this lengthy content</source>
-        <translation>Foglald össze a hosszú tartalom főbb részeit és pontjait</translation>
+        <translation type="vanished">Foglald össze a hosszú tartalom főbb részeit és pontjait</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="550"/>
         <source>Help me summarize the research methods and findings of this paper</source>
-        <translation>Segíts összefoglalni a kutatási módszereket és eredményeket ebben a tanulmányban</translation>
+        <translation type="vanished">Segíts összefoglalni a kutatási módszereket és eredményeket ebben a tanulmányban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="556"/>
         <source>Please summarize the key points of this article in a table format</source>
-        <translation>Kérlek, foglald össze a cikk főbb pontjait táblázatos formában</translation>
+        <translation type="vanished">Kérlek, foglald össze a cikk főbb pontjait táblázatos formában</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="562"/>
         <source>Summarize the operational steps in this file using bullet points</source>
-        <translation>Foglald össze a műveleti lépéseket ebben a fájlban felsorolással</translation>
+        <translation type="vanished">Foglald össze a műveleti lépéseket ebben a fájlban felsorolással</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="568"/>
         <source>Display the key clauses of this contract in bullet list format</source>
-        <translation>Jelenítsd meg a szerződés főbb záradékait felsorolás formájában</translation>
+        <translation type="vanished">Jelenítsd meg a szerződés főbb záradékait felsorolás formájában</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="575"/>
         <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation>Készíts vázlatot egy jelentéshez az MI trendekről, beleértve a technológiát, etikát és alkalmazásokat</translation>
+        <translation type="vanished">Készíts vázlatot egy jelentéshez az MI trendekről, beleértve a technológiát, etikát és alkalmazásokat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="581"/>
         <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation>Rendezze a feltöltött tanulmányt strukturált kutatási keretrendszer vázlatba</translation>
+        <translation type="vanished">Rendezze a feltöltött tanulmányt strukturált kutatási keretrendszer vázlatba</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="587"/>
         <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation>Szükségem van egy üzleti terv vázlatra, amely tartalmazza a piaci elemzést, termékleírást és pénzügyi tervezést</translation>
+        <translation type="vanished">Szükségem van egy üzleti terv vázlatra, amely tartalmazza a piaci elemzést, termékleírást és pénzügyi tervezést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="593"/>
         <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation>Alakítsd át ezt a beszédet PowerPoint vázlattá, minden szakaszhoz felsorolással</translation>
+        <translation type="vanished">Alakítsd át ezt a beszédet PowerPoint vázlattá, minden szakaszhoz felsorolással</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="599"/>
         <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation>Írj egy könyvösszefoglaló vázlatot, amely tartalmazza a főbb pontokat és személyes gondolataimat</translation>
+        <translation type="vanished">Írj egy könyvösszefoglaló vázlatot, amely tartalmazza a főbb pontokat és személyes gondolataimat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="605"/>
         <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation>Foglald össze az értekezleti jegyzeteket egy projektvégrehajtási terv vázlatába</translation>
+        <translation type="vanished">Foglald össze az értekezleti jegyzeteket egy projektvégrehajtási terv vázlatába</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="611"/>
         <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation>Szükségem van egy diplomamunka fejezetvázlatra, beleértve a bevezetést, szakirodalmi áttekintést és módszertant</translation>
+        <translation type="vanished">Szükségem van egy diplomamunka fejezetvázlatra, beleértve a bevezetést, szakirodalmi áttekintést és módszertant</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="617"/>
         <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation>Készíts termékkövetelmény dokumentum (PRD) vázlatot, amely tartalmazza a funkcióleírásokat és felhasználói folyamatokat</translation>
+        <translation type="vanished">Készíts termékkövetelmény dokumentum (PRD) vázlatot, amely tartalmazza a funkcióleírásokat és felhasználói folyamatokat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="623"/>
         <source>Extract key data from this industry report to make a summary outline</source>
-        <translation>Vonj ki kulcsadatokat ebből az ipari jelentésből egy összefoglaló vázlat készítéséhez</translation>
+        <translation type="vanished">Vonj ki kulcsadatokat ebből az ipari jelentésből egy összefoglaló vázlat készítéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="629"/>
         <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation>Írj egy eseménytervezési vázlatot, amely tartalmazza az időbeosztást, csapat szerepköröket és költségvetést</translation>
+        <translation type="vanished">Írj egy eseménytervezési vázlatot, amely tartalmazza az időbeosztást, csapat szerepköröket és költségvetést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="636"/>
         <source>Generate a three-level outline from this document</source>
-        <translation>Háromszintű vázlat generálása ebből a dokumentumból</translation>
+        <translation type="vanished">Háromszintű vázlat generálása ebből a dokumentumból</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="642"/>
         <source>Extract core framework from meeting notes</source>
-        <translation>Alapvető keretrendszer kinyerése az üléstörténetből</translation>
+        <translation type="vanished">Alapvető keretrendszer kinyerése az üléstörténetből</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="648"/>
         <source>Organize research report structure</source>
-        <translation>Kutatási jelentés szerkezetének megszervezése</translation>
+        <translation type="vanished">Kutatási jelentés szerkezetének megszervezése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="654"/>
         <source>Create product feature overview</source>
-        <translation>Termékfunkciók áttekintésének létrehozása</translation>
+        <translation type="vanished">Termékfunkciók áttekintésének létrehozása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="660"/>
         <source>Design training course syllabus</source>
-        <translation>Képzési tanterv tervezése</translation>
+        <translation type="vanished">Képzési tanterv tervezése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="666"/>
         <source>Analyze literature review framework</source>
-        <translation>Irodalomáttekintő keretrendszer elemzése</translation>
+        <translation type="vanished">Irodalomáttekintő keretrendszer elemzése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="672"/>
         <source>Generate business plan table of contents</source>
-        <translation>Üzleti terv tartalomjegyzékének generálása</translation>
+        <translation type="vanished">Üzleti terv tartalomjegyzékének generálása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="678"/>
         <source>Write event planning flow points</source>
-        <translation>Eseménytervezési folyamatpontok megírása</translation>
+        <translation type="vanished">Eseménytervezési folyamatpontok megírása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="685"/>
         <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation>Segítsen megírni egy értekezleti értesítést holnap 15 órára az A tárgyalóban a projekt haladásáról szóló jelentésről</translation>
+        <translation type="vanished">Segítsen megírni egy értekezleti értesítést holnap 15 órára az A tárgyalóban a projekt haladásáról szóló jelentésről</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="691"/>
         <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation>Hozzon létre egy tömör értesítést ezen dokumentum alapján, kiemelve a határidőt és a benyújtási módot</translation>
+        <translation type="vanished">Hozzon létre egy tömör értesítést ezen dokumentum alapján, kiemelve a határidőt és a benyújtási módot</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="697"/>
         <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation>Készítsen egy ünnepi értesítést a tavaszi fesztiválra február 10-től 17-ig, a munka február 18-án folytatódik</translation>
+        <translation type="vanished">Készítsen egy ünnepi értesítést a tavaszi fesztiválra február 10-től 17-ig, a munka február 18-án folytatódik</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="703"/>
         <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation>Szükségem van egy tevékenységértesítésre a személyzeti képzésről, ami egész nap következő szerdán lesz a vállalati előadóteremben</translation>
+        <translation type="vanished">Szükségem van egy tevékenységértesítésre a személyzeti képzésről, ami egész nap következő szerdán lesz a vállalati előadóteremben</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="709"/>
         <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation>Formázza a megadott szöveges anyagokat egy hivatalos értesítéssé szabványos formázással és professzionális hangvétellel</translation>
+        <translation type="vanished">Formázza a megadott szöveges anyagokat egy hivatalos értesítéssé szabványos formázással és professzionális hangvétellel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="715"/>
         <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation>Írjon egy áramszüneti értesítést erre a szombatra reggel 9-től délután 5-ig, ami az egész irodai épületet érinti</translation>
+        <translation type="vanished">Írjon egy áramszüneti értesítést erre a szombatra reggel 9-től délután 5-ig, ami az egész irodai épületet érinti</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="721"/>
         <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation>Készítsen egy értekezlet-változtatási értesítést, az eredeti időt péntekre 10 órára módosítva, miközben a többi részlet változatlan marad</translation>
+        <translation type="vanished">Készítsen egy értekezlet-változtatási értesítést, az eredeti időt péntekre 10 órára módosítva, miközben a többi részlet változatlan marad</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="727"/>
         <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation>Készítsen egy rövid értesítést a csatolt üléstörténet alapján a távollévő résztvevők számára</translation>
+        <translation type="vanished">Készítsen egy rövid értesítést a csatolt üléstörténet alapján a távollévő résztvevők számára</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="733"/>
         <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation>Készítsen egy rendszerfrissítési értesítést, ami ma éjjel éjféltől hajnali 3-ig lesz ütemezve, rendszerleállással</translation>
+        <translation type="vanished">Készítsen egy rendszerfrissítési értesítést, ami ma éjjel éjféltől hajnali 3-ig lesz ütemezve, rendszerleállással</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="739"/>
         <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation>Írjon egy tömör ünnepi szolgálati beosztási értesítést, felsorolva a szolgálatot teljesítő személyzetet és elérhetőségeiket</translation>
+        <translation type="vanished">Írjon egy tömör ünnepi szolgálati beosztási értesítést, felsorolva a szolgálatot teljesítő személyzetet és elérhetőségeiket</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="746"/>
         <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation>Segítsen megírni egy közegészségügyi cikket az egészséges táplálkozásról egyszerű nyelven az átlagos olvasók számára</translation>
+        <translation type="vanished">Segítsen megírni egy közegészségügyi cikket az egészséges táplálkozásról egyszerű nyelven az átlagos olvasók számára</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="752"/>
         <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation>Készítsen egy szórakoztató és lebilincselő tech trend bejegyzést ezen dokumentum alapján</translation>
+        <translation type="vanished">Készítsen egy szórakoztató és lebilincselő tech trend bejegyzést ezen dokumentum alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="758"/>
         <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation>Készítsen egy ünnepi promóciós bejegyzést, kiemelve a kedvezményeket és az esemény menetrendjét</translation>
+        <translation type="vanished">Készítsen egy ünnepi promóciós bejegyzést, kiemelve a kedvezményeket és az esemény menetrendjét</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="764"/>
         <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation>Szükségem van egy termékbevezető cikkre, amely a funkciókra és az ügyfélvéleményekre összpontosít</translation>
+        <translation type="vanished">Szükségem van egy termékbevezető cikkre, amely a funkciókra és az ügyfélvéleményekre összpontosít</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="770"/>
         <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation>Alakítsa át ezt az interjúátiratot egy laza személyiségprofil bejegyzéssé</translation>
+        <translation type="vanished">Alakítsa át ezt az interjúátiratot egy laza személyiségprofil bejegyzéssé</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="776"/>
         <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation>Írjon egy utazási útmutatót, amely három népszerű helyet ajánl gyakorlati tippekkel</translation>
+        <translation type="vanished">Írjon egy utazási útmutatót, amely három népszerű helyet ajánl gyakorlati tippekkel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="782"/>
         <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation>Készítsen egy évfordulós bejegyzést, amely áttekinti a vállalat történetét és megköszöni az ügyfeleknek</translation>
+        <translation type="vanished">Készítsen egy évfordulós bejegyzést, amely áttekinti a vállalat történetét és megköszöni az ügyfeleknek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="788"/>
         <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation>Elemezze ezt az ipari jelentést vizualizált adatokkal egy betekintést nyújtó bejegyzéshez</translation>
+        <translation type="vanished">Elemezze ezt az ipari jelentést vizualizált adatokkal egy betekintést nyújtó bejegyzéshez</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="794"/>
         <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation>Készítsen egy jótékonysági kampánybejegyzést, amely ösztönzi a részvételt egyértelmű utasításokkal</translation>
+        <translation type="vanished">Készítsen egy jótékonysági kampánybejegyzést, amely ösztönzi a részvételt egyértelmű utasításokkal</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="800"/>
         <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation>Írjon egy karrierkészségekről szóló cikket öt gyakorlati tippel és valós példákkal</translation>
+        <translation type="vanished">Írjon egy karrierkészségekről szóló cikket öt gyakorlati tippel és valós példákkal</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="807"/>
         <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation>Segítsen megírni egy heti munkajelentést, amely a projekt haladására és a csapat együttműködésére összpontosít</translation>
+        <translation type="vanished">Segítsen megírni egy heti munkajelentést, amely a projekt haladására és a csapat együttműködésére összpontosít</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="813"/>
         <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation>Készítsen egy tömör munkajelentést a feltöltött üléstörténet fájl alapján</translation>
+        <translation type="vanished">Készítsen egy tömör munkajelentést a feltöltött üléstörténet fájl alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="819"/>
         <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation>Szükségem van egy negyedéves munkajelentésre, amely tartalmazza az adatelemzést és a személyes fejlődésről szóló elmélkedést</translation>
+        <translation type="vanished">Szükségem van egy negyedéves munkajelentésre, amely tartalmazza az adatelemzést és a személyes fejlődésről szóló elmélkedést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="825"/>
         <source>Create a work summary based on the following text [paste text]</source>
-        <translation>Készítsen munkajelentést a következő szöveg alapján [szöveg beillesztése]</translation>
+        <translation type="vanished">Készítsen munkajelentést a következő szöveg alapján [szöveg beillesztése]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="831"/>
         <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation>Írjon egy munkajelentést, amely kiemeli a havi KPI eredményeket és az előfordult kihívásokat</translation>
+        <translation type="vanished">Írjon egy munkajelentést, amely kiemeli a havi KPI eredményeket és az előfordult kihívásokat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="837"/>
         <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation>Segítsen összefoglalni a múlt heti munkát projektenként kategorizálva</translation>
+        <translation type="vanished">Segítsen összefoglalni a múlt heti munkát projektenként kategorizálva</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="843"/>
         <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation>Készítsen munkajelentést e-mail tartalomból, hangsúlyozva a függőben lévő feladatokat és a teljesítéseket</translation>
+        <translation type="vanished">Készítsen munkajelentést e-mail tartalomból, hangsúlyozva a függőben lévő feladatokat és a teljesítéseket</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="849"/>
         <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation>Szükségem van egy éves összefoglalóra, amely tartalmazza a munka kiemelkedő pontjait és a fejlesztési terveket</translation>
+        <translation type="vanished">Szükségem van egy éves összefoglalóra, amely tartalmazza a munka kiemelkedő pontjait és a fejlesztési terveket</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="855"/>
         <source>Generate a monthly work report from the data I uploaded</source>
-        <translation>Készítsen havi munkajelentést a feltöltött adatok alapján</translation>
+        <translation type="vanished">Készítsen havi munkajelentést a feltöltött adatok alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="861"/>
         <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation>Segítsen a szétszórt munkajegyzetek strukturált munkajelentéssé szervezésében</translation>
+        <translation type="vanished">Segítsen a szétszórt munkajegyzetek strukturált munkajelentéssé szervezésében</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="868"/>
         <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation>Elemezze a feltöltött adatokat, és készítsen piaci trendjelentést</translation>
+        <translation type="vanished">Elemezze a feltöltött adatokat, és készítsen piaci trendjelentést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="874"/>
         <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation>Vonja ki a kulcsfontosságú információkat a szövegből, és állítson össze iparági elemzési jelentést</translation>
+        <translation type="vanished">Vonja ki a kulcsfontosságú információkat a szövegből, és állítson össze iparági elemzési jelentést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="880"/>
         <source>Combine the contents of the file to write a competitor research report</source>
-        <translation>Kombinálja a fájl tartalmát, és írjon versenytárs-kutatási jelentést</translation>
+        <translation type="vanished">Kombinálja a fájl tartalmát, és írjon versenytárs-kutatási jelentést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="886"/>
         <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation>Készítsen felhasználói igényeket feltáró kutatási összefoglalót a megadott interjú nyilvántartások alapján</translation>
+        <translation type="vanished">Készítsen felhasználói igényeket feltáró kutatási összefoglalót a megadott interjú nyilvántartások alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="892"/>
         <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation>Elemezze ezeket az értékesítési adatokat, és készítsen negyedéves piaci teljesítményjelentést</translation>
+        <translation type="vanished">Elemezze ezeket az értékesítési adatokat, és készítsen negyedéves piaci teljesítményjelentést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="898"/>
         <source>Write a technical research report based on the given product description</source>
-        <translation>Írjon műszaki kutatási jelentést a megadott termékleírás alapján</translation>
+        <translation type="vanished">Írjon műszaki kutatási jelentést a megadott termékleírás alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="904"/>
         <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation>Rendezze ezeket a felhasználói visszajelzéseket, és készítsen termékfejlesztési javaslati jelentést</translation>
+        <translation type="vanished">Rendezze ezeket a felhasználói visszajelzéseket, és készítsen termékfejlesztési javaslati jelentést</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="910"/>
         <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation>Kérjük, írjon piaci lehetőségelemző jelentést a megadott fájl alapján</translation>
+        <translation type="vanished">Kérjük, írjon piaci lehetőségelemző jelentést a megadott fájl alapján</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="921"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Segítsen esszét írni a [%1] témában [világos szerkezettel és gazdag tartalommal].</translation>
+        <translation type="vanished">Segítsen esszét írni a [%1] témában [világos szerkezettel és gazdag tartalommal].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="941"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Segítsen nyilvános tweetet írni a [%1] témában, [világos szerkezetet] és [lazított] hangvételt követelve.</translation>
+        <translation type="vanished">Segítsen nyilvános tweetet írni a [%1] témában, [világos szerkezetet] és [lazított] hangvételt követelve.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="946"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Segítsen összefoglalót írni a legutóbbi munkámról, beleértve [%1] és [eredmények], [formális] hangvételt követelve.</translation>
+        <translation type="vanished">Segítsen összefoglalót írni a legutóbbi munkámról, beleértve [%1] és [eredmények], [formális] hangvételt követelve.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="951"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Segítsen kutatási jelentést írni a [%1] témában, amely legalább tartalmazza [állapotleírást, problémamegoldást, ellenintézkedéseket és javaslatokat, kutatási következtetéseket].</translation>
+        <translation type="vanished">Segítsen kutatási jelentést írni a [%1] témában, amely legalább tartalmazza [állapotleírást, problémamegoldást, ellenintézkedéseket és javaslatokat, kutatási következtetéseket].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
-        <translation>Mesterséges intelligencia</translation>
+        <translation type="vanished">Mesterséges intelligencia</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="926"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Segítsen beszédet írni a [%1] témában [Vállalati Vezetők] számára, [világos szerkezetet és élénk nyelvet] követelve.</translation>
+        <translation type="vanished">Segítsen beszédet írni a [%1] témában [Vállalati Vezetők] számára, [világos szerkezetet és élénk nyelvet] követelve.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="931"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Segítsen vázlatot írni a [%1] témában, amely [PPT készítéséhez] lesz felhasználva.</translation>
+        <translation type="vanished">Segítsen vázlatot írni a [%1] témában, amely [PPT készítéséhez] lesz felhasználva.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="936"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Segítsen értesítést írni a [%1] témában, a címzett [Minden Alkalmazott], a feladó pedig [Adminisztrációs Osztály].</translation>
+        <translation type="vanished">Segítsen értesítést írni a [%1] témában, a címzett [Minden Alkalmazott], a feladó pedig [Adminisztrációs Osztály].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="937"/>
         <source>National Day Holiday</source>
-        <translation>Nemzeti ünnep</translation>
+        <translation type="vanished">Nemzeti ünnep</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="947"/>
         <source>work content</source>
-        <translation>munka tartalma</translation>
+        <translation type="vanished">munka tartalma</translation>
     </message>
 </context>
 <context>
     <name>EAiPrompt</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1439"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1610,7 +1276,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 ---question---
 %2
 </source>
-        <translation>---Szerep---
+        <translation type="vanished">---Szerep---
 
 Ön egy segítőkész asszisztens, aki a megadott háttértudással kapcsolatos kérdésekre válaszol.
 
@@ -1627,16 +1293,14 @@ Válaszoljon a felhasználók kérdéseire, beépítve minden releváns közért
 %2</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1450"/>
         <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
 :%1
 </source>
-        <translation>A válasz a következő szöveggel kezdődik: „Nem találtunk releváns információt a tudásbázisában.”---kérdés--
+        <translation type="vanished">A válasz a következő szöveggel kezdődik: „Nem találtunk releváns információt a tudásbázisában.”---kérdés--
 
 :%1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1455"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1648,7 +1312,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 
 ---question---
 %2</source>
-        <translation>---Szerep---
+        <translation type="vanished">---Szerep---
 
 Ön egy segítőkész asszisztens, aki a megadott háttértudással kapcsolatos kérdésekre válaszol.
 
@@ -1665,7 +1329,6 @@ Válaszoljon a felhasználók kérdéseire, beépítve minden releváns közért
 %2</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="104"/>
         <source>---Role---
 You are a professional writer with expertise in various writing styles and formats.
 
@@ -1688,7 +1351,7 @@ Based on the user&apos;s request, create high-quality content that meets their s
 Please provide the content in the following format:
 Title:
 Content:</source>
-        <translation>---Szerep---
+        <translation type="vanished">---Szerep---
 
 Ön egy profi író, aki jártas különféle stílusokban és formátumokban.
 
@@ -1716,7 +1379,6 @@ Cím:
 Tartalom:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="133"/>
         <source>---Role---
 You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
 
@@ -1736,7 +1398,7 @@ Process and improve the input text while maintaining its original meaning and st
 
 ---Output Format---
 Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation>---Szerep---
+        <translation type="vanished">---Szerep---
 
 Ön egy szövegfeldolgozási szakértő, aki mély jártassággal rendelkezik nyelvi elemzésben, írástechnikákban és szövegoptimalizálásban.
 
@@ -1761,7 +1423,6 @@ Dolgozza fel és javítsa a bemeneti szöveget, miközben megőrzi eredeti jelen
 Kérjük, közvetlenül adja meg a feldolgozott szöveget, további karakterek vagy formázás nélkül.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="159"/>
         <source>---Role---
 You are a professional translator and language expert. Your task is to:
 1. Accurately translate text as requested
@@ -1788,7 +1449,7 @@ For language questions, provide clear, concise explanations.
 2. For partial translations: Provide only the specified portion&apos;s translation
 3. For explanations: Provide only the explanation in the same language as the question
 Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation>---Szerep---
+        <translation type="vanished">---Szerep---
 
 Ön egy profi fordító és nyelvi szakértő. Feladatai:
 1. Pontos fordítás kérés szerint
@@ -1822,1073 +1483,857 @@ Soha ne kombinálja a magyarázatot a fordítással, és ne adjon meg teljes for
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation>Frissítse az UOS Screen Recorder alkalmazást 6.6-os vagy újabb verzióra, majd indítsa újra a számítógépet a Képernyőkép-Kérdések funkció engedélyezéséhez.</translation>
+        <translation type="vanished">Frissítse az UOS Screen Recorder alkalmazást 6.6-os vagy újabb verzióra, majd indítsa újra a számítógépet a Képernyőkép-Kérdések funkció engedélyezéséhez.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
-        <translation>Modell konfiguráció</translation>
+        <translation type="vanished">Modell konfiguráció</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
-        <translation>Ugrás a konfigurációhoz</translation>
+        <translation type="vanished">Ugrás a konfigurációhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
-        <translation>Nincs fiók</translation>
+        <translation type="vanished">Nincs fiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
-        <translation>Kérdés bevitele</translation>
+        <translation type="vanished">Kérdés bevitele</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Az AI által generált tartalom csak tájékoztató jellegű, kérjük, figyeljen az információk pontosságára.</translation>
+        <translation type="vanished">Az AI által generált tartalom csak tájékoztató jellegű, kérjük, figyeljen az információk pontosságára.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
-        <translation>Üdvözöljük az UOS AI-ban</translation>
+        <translation type="vanished">Üdvözöljük az UOS AI-ban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation>Íme néhány dolog, amiben az UOS AI segíthet Önnek</translation>
+        <translation type="vanished">Íme néhány dolog, amiben az UOS AI segíthet Önnek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
-        <translation>Leállítás</translation>
+        <translation type="vanished">Leállítás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
-        <translation>Újragenerálás</translation>
+        <translation type="vanished">Újragenerálás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
-        <translation>Beszélgetési előzmények törlése</translation>
+        <translation type="vanished">Beszélgetési előzmények törlése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
-        <translation>Kérjük, csatlakoztassa a mikrofont és próbálja újra</translation>
+        <translation type="vanished">Kérjük, csatlakoztassa a mikrofont és próbálja újra</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
-        <translation>Csevegési előzmények törölve</translation>
+        <translation type="vanished">Csevegési előzmények törölve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
-        <translation>Kattintson a felvétel indításához/leállításához</translation>
+        <translation type="vanished">Kattintson a felvétel indításához/leállításához</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
-        <translation>Figyelés</translation>
+        <translation type="vanished">Figyelés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
-        <translation>Alvó mód</translation>
+        <translation type="vanished">Alvó mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
-        <translation>Mikrofon nem érzékelhető</translation>
+        <translation type="vanished">Mikrofon nem érzékelhető</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
-        <translation>A kapcsolat sikertelen, kattintson az újrapróbálkozáshoz</translation>
+        <translation type="vanished">A kapcsolat sikertelen, kattintson az újrapróbálkozáshoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation>Kattintson az animációra vagy nyomja meg a Ctrl+Super+Szóköz billentyűkombinációt az aktiváláshoz</translation>
+        <translation type="vanished">Kattintson az animációra vagy nyomja meg a Ctrl+Super+Szóköz billentyűkombinációt az aktiváláshoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation>A hangbevitel átmenetileg nem elérhető, kérjük, ellenőrizze a hálózatot!</translation>
+        <translation type="vanished">A hangbevitel átmenetileg nem elérhető, kérjük, ellenőrizze a hálózatot!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nem sikerült csatlakozni a szerverhez, kérjük, ellenőrizze a hálózatot vagy próbálkozzon később.</translation>
+        <translation type="vanished">Nem sikerült csatlakozni a szerverhez, kérjük, ellenőrizze a hálózatot vagy próbálkozzon később.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
-        <translation>Hangos beszélgetés</translation>
+        <translation type="vanished">Hangos beszélgetés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
-        <translation>Kattintson az animációra vagy nyomja meg az Entert az elküldéshez</translation>
+        <translation type="vanished">Kattintson az animációra vagy nyomja meg az Entert az elküldéshez</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
-        <translation>Felvétel leállítása %1 másodperc után</translation>
+        <translation type="vanished">Felvétel leállítása %1 másodperc után</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
-        <translation>Gondolkodás</translation>
+        <translation type="vanished">Gondolkodás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
-        <translation>Kattintson az animációra a megszakításhoz</translation>
+        <translation type="vanished">Kattintson az animációra a megszakításhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
-        <translation>Válaszolás</translation>
+        <translation type="vanished">Válaszolás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>Az ingyenes fiókjának kvótája kimerült, kérjük, konfigurálja modellfiókját a további használathoz.</translation>
+        <translation type="vanished">Az ingyenes fiókjának kvótája kimerült, kérjük, konfigurálja modellfiókját a további használathoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>Az ingyenes fiókja lejárt, kérjük, konfigurálja modellfiókját a további használathoz.</translation>
+        <translation type="vanished">Az ingyenes fiókja lejárt, kérjük, konfigurálja modellfiókját a további használathoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>Az UOS AI használatához először konfigurálni kell egy AI modell fiókot. Kérjük, először konfiguráljon egy modell fiókot.</translation>
+        <translation type="vanished">Az UOS AI használatához először konfigurálni kell egy AI modell fiókot. Kérjük, először konfiguráljon egy modell fiókot.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
-        <translation>Aktiválás</translation>
+        <translation type="vanished">Aktiválás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
-        <translation>Hangbemenet</translation>
+        <translation type="vanished">Hangbemenet</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation>A hangos közvetítés átmenetileg nem elérhető, kérjük, ellenőrizze a hálózatot!</translation>
+        <translation type="vanished">A hangos közvetítés átmenetileg nem elérhető, kérjük, ellenőrizze a hálózatot!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
-        <translation>Hangos beszélgetés kikapcsolása</translation>
+        <translation type="vanished">Hangos beszélgetés kikapcsolása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation>A kép elkészült, kérjük, váltson a csevegési felületre a megtekintéshez.</translation>
+        <translation type="vanished">A kép elkészült, kérjük, váltson a csevegési felületre a megtekintéshez.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
-        <translation>Nincs fiók, kérjük, konfiguráljon egy fiókot</translation>
+        <translation type="vanished">Nincs fiók, kérjük, konfiguráljon egy fiókot</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
-        <translation>Minden kérdésre legfeljebb 5 válasz</translation>
+        <translation type="vanished">Minden kérdésre legfeljebb 5 válasz</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
-        <translation>Sikeresen másolva</translation>
+        <translation type="vanished">Sikeresen másolva</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
-        <translation>Hangkimeneti eszköz nem észlelhető</translation>
+        <translation type="vanished">Hangkimeneti eszköz nem észlelhető</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
-        <translation>A hangkimeneti eszköz nem észlelhető, kérjük, ellenőrizze és próbálja újra!</translation>
+        <translation type="vanished">A hangkimeneti eszköz nem észlelhető, kérjük, ellenőrizze és próbálja újra!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
-        <translation>Beállítások</translation>
+        <translation type="vanished">Beállítások</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
-        <translation>Névjegy</translation>
+        <translation type="vanished">Névjegy</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
-        <translation>Mód</translation>
+        <translation type="vanished">Mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
-        <translation>Ablak mód</translation>
+        <translation type="vanished">Ablak mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
-        <translation>Oldalsáv mód</translation>
+        <translation type="vanished">Oldalsáv mód</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
-        <translation>Asszisztens lista</translation>
+        <translation type="vanished">Asszisztens lista</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
-        <translation>Ügynök lista</translation>
+        <translation type="vanished">Ügynök lista</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
-        <translation>Ügynök bolt</translation>
+        <translation type="vanished">Ügynök bolt</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
-        <translation>UOS Rendszerasszisztens</translation>
+        <translation type="vanished">UOS Rendszerasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin Rendszerasszisztens</translation>
+        <translation type="vanished">Deepin Rendszerasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Személyes Tudás Asszisztens</translation>
+        <translation type="vanished">Személyes Tudás Asszisztens</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
-        <translation>Kérjük, konfigurálja a tudásbázist</translation>
+        <translation type="vanished">Kérjük, konfigurálja a tudásbázist</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation>A [Személyes Tudás Asszisztens] használata előtt konfigurálni kell a tudásbázist. A tudásbázis konfigurálása után az AI a tudásbázisban konfigurált tartalom alapján válaszol a kérdésekre vagy generál tartalmat.</translation>
+        <translation type="vanished">A [Személyes Tudás Asszisztens] használata előtt konfigurálni kell a tudásbázist. A tudásbázis konfigurálása után az AI a tudásbázisban konfigurált tartalom alapján válaszol a kérdésekre vagy generál tartalmat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
-        <translation>Kérjük, konfigurálja a nagy modellt</translation>
+        <translation type="vanished">Kérjük, konfigurálja a nagy modellt</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation>A személyes tudás asszisztens csak egy nagy modell konfigurálása után használható.</translation>
+        <translation type="vanished">A személyes tudás asszisztens csak egy nagy modell konfigurálása után használható.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
-        <translation>Konfigurálás</translation>
+        <translation type="vanished">Konfigurálás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
-        <translation>Telepítés</translation>
+        <translation type="vanished">Telepítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
-        <translation>Kérjük, telepítse az [EmbeddingPlugins]-t</translation>
+        <translation type="vanished">Kérjük, telepítse az [EmbeddingPlugins]-t</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation>Az asszisztens működéséhez szükséges az EmbeddingPlugins telepítése</translation>
+        <translation type="vanished">Az asszisztens működéséhez szükséges az EmbeddingPlugins telepítése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
-        <translation>Húzza ide a fájlokat a hozzáadáshoz.</translation>
+        <translation type="vanished">Húzza ide a fájlokat a hozzáadáshoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation>Maximum 3 fájlt adhat hozzá; támogatott fájltípusok: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kódfájlok stb.</translation>
+        <translation type="vanished">Maximum 3 fájlt adhat hozzá; támogatott fájltípusok: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kódfájlok stb.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
-        <translation>MCP-kiszolgáló</translation>
+        <translation type="vanished">MCP-kiszolgáló</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
-        <translation>MCP-kiszolgáló hozzáadása</translation>
+        <translation type="vanished">MCP-kiszolgáló hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
-        <translation>Kiszolgáló hozzáadása</translation>
+        <translation type="vanished">Kiszolgáló hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
-        <translation>Hozzáadás sikertelen! Hiba oka:</translation>
+        <translation type="vanished">Hozzáadás sikertelen! Hiba oka:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation>Hiányzik az MCP-környezet. Kérjük, telepítse az 【UOS AI Agent】 alkalmazást</translation>
+        <translation type="vanished">Hiányzik az MCP-környezet. Kérjük, telepítse az 【UOS AI Agent】 alkalmazást</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
-        <translation>Hívás folyamatban</translation>
+        <translation type="vanished">Hívás folyamatban</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
-        <translation>Kész</translation>
+        <translation type="vanished">Kész</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
-        <translation>Hívás sikertelen</translation>
+        <translation type="vanished">Hívás sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
-        <translation>Megszakítva</translation>
+        <translation type="vanished">Megszakítva</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
-        <translation>paraméterek</translation>
+        <translation type="vanished">paraméterek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
-        <translation>eredmény</translation>
+        <translation type="vanished">eredmény</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>Az MCP-kiszolgálóhoz váltson a hivatalosan kiadott „DeepSeek-Trial Account” modellre</translation>
+        <translation type="vanished">Az MCP-kiszolgálóhoz váltson a hivatalosan kiadott „DeepSeek-Trial Account” modellre</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation>Add meg az MCP-szerver parancsát, pl. „Kapcsold a rendszert sötét módra”</translation>
+        <translation type="vanished">Add meg az MCP-szerver parancsát, pl. „Kapcsold a rendszert sötét módra”</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
-        <translation>Az ügynök-szerver nem érhető el</translation>
+        <translation type="vanished">Az ügynök-szerver nem érhető el</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
-        <translation>Ügynök-szerver kivétel</translation>
+        <translation type="vanished">Ügynök-szerver kivétel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
-        <translation>Az MCP-szerver nem érhető el</translation>
+        <translation type="vanished">Az MCP-szerver nem érhető el</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
-        <translation type="unfinished">Mégse</translation>
+        <translation type="obsolete">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation>Automatizálj többfájlos és többalkalmazásos feladatokat egyetlen paranccsal az MCP-szolgáltatással. Próbáld ki most!</translation>
+        <translation type="vanished">Automatizálj többfájlos és többalkalmazásos feladatokat egyetlen paranccsal az MCP-szolgáltatással. Próbáld ki most!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
-        <translation>Használd később</translation>
+        <translation type="vanished">Használd később</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
-        <translation>Telepítés most</translation>
+        <translation type="vanished">Telepítés most</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
-        <translation>MCP-szerver engedélyezése</translation>
+        <translation type="vanished">MCP-szerver engedélyezése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation>Az „UOS AI Agent” MCP-környezet telepítése után kattints a </translation>
+        <translation type="vanished">Az „UOS AI Agent” MCP-környezet telepítése után kattints a </translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation> és válaszd ki az „uos-mcp”-t az MCP-szerverlistában.</translation>
+        <translation type="vanished"> és válaszd ki az „uos-mcp”-t az MCP-szerverlistában.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation>Próbáld ki: „Kapcsold a rendszert sötét módra”.</translation>
+        <translation type="vanished">Próbáld ki: „Kapcsold a rendszert sötét módra”.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
-        <translation>Próbáld ki most</translation>
+        <translation type="vanished">Próbáld ki most</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
-        <translation>MCP-szerver hozzáadása [Útmutató oldal]</translation>
+        <translation type="vanished">MCP-szerver hozzáadása [Útmutató oldal]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation>Első használat: telepítsd az „UOS AI Agent” MCP-környezetet az App Store-ból.</translation>
+        <translation type="vanished">Első használat: telepítsd az „UOS AI Agent” MCP-környezetet az App Store-ból.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation>A JSON-fájl formátuma hibás, kérjük, ellenőrizd és küldd be újra</translation>
+        <translation type="vanished">A JSON-fájl formátuma hibás, kérjük, ellenőrizd és küldd be újra</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
-        <translation>Telepítés most &gt;</translation>
+        <translation type="vanished">Telepítés most &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
-        <translation>Általános csevegés</translation>
+        <translation type="vanished">Általános csevegés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
-        <translation>Privát csevegés</translation>
+        <translation type="vanished">Privát csevegés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
-        <translation>Most privát csevegésben vagy</translation>
+        <translation type="vanished">Most privát csevegésben vagy</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation>A privát csevegés üzenetei nem kerülnek mentésre az előzményekbe, és véglegesen törlődnek, amikor kilépsz a csevegésből.</translation>
+        <translation type="vanished">A privát csevegés üzenetei nem kerülnek mentésre az előzményekbe, és véglegesen törlődnek, amikor kilépsz a csevegésből.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation>Képernyőkép kérdés-válasz Gyorsbillentyű (Ctrl+Alt+Q), legfeljebb 3 kép támogatott.</translation>
+        <translation type="vanished">Képernyőkép kérdés-válasz Gyorsbillentyű (Ctrl+Alt+Q), legfeljebb 3 kép támogatott.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
-        <translation>Képernyőfelvétel közben nem használható</translation>
+        <translation type="vanished">Képernyőfelvétel közben nem használható</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
-        <translation>Legfeljebb 3 fájlt vagy képet tölthetsz fel</translation>
+        <translation type="vanished">Legfeljebb 3 fájlt vagy képet tölthetsz fel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
-        <translation>Fájlok feltöltése</translation>
+        <translation type="vanished">Fájlok feltöltése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
-        <translation>Kérjük, töröld a hibás fájlt és küldd el újra</translation>
+        <translation type="vanished">Kérjük, töröld a hibás fájlt és küldd el újra</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
-        <translation>Privát csevegés hozzáadása</translation>
+        <translation type="vanished">Privát csevegés hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
-        <translation>[Képernyőkép kérdés-válasz] hozzáadása</translation>
+        <translation type="vanished">[Képernyőkép kérdés-válasz] hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation>Készíts képernyőképet és küldd el a tartalmat az UOS AI-nak. Képet közvetlenül is feltölthetsz.</translation>
+        <translation type="vanished">Készíts képernyőképet és küldd el a tartalmat az UOS AI-nak. Képet közvetlenül is feltölthetsz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation type="obsolete">OK</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
-        <translation>Tovább</translation>
+        <translation type="vanished">Tovább</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation>[Privát csevegési mód] hozzáadása – a beszélgetések nem lesznek mentve.</translation>
+        <translation type="vanished">[Privát csevegési mód] hozzáadása – a beszélgetések nem lesznek mentve.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
-        <translation>Nincs kinyert szöveg</translation>
+        <translation type="vanished">Nincs kinyert szöveg</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
-        <translation>A kép mérete meghaladja a 15 MB-ot</translation>
+        <translation type="vanished">A kép mérete meghaladja a 15 MB-ot</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation>A tudásbázis megnyitása után a válaszok annak tartalmán alapulnak. A válaszidő a gép teljesítményétől és a tudásbázis méretétől függ.</translation>
+        <translation type="vanished">A tudásbázis megnyitása után a válaszok annak tartalmán alapulnak. A válaszidő a gép teljesítményétől és a tudásbázis méretétől függ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation>A tudásbázis nem érhető el, ha bármely parancs vagy MCP van kiválasztva.</translation>
+        <translation type="vanished">A tudásbázis nem érhető el, ha bármely parancs vagy MCP van kiválasztva.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
-        <translation>Az MCP le van tiltva, amíg a tudásbázis aktív.</translation>
+        <translation type="vanished">Az MCP le van tiltva, amíg a tudásbázis aktív.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
-        <translation>Parancsok le vannak tiltva, amíg a tudásbázis aktív.</translation>
+        <translation type="vanished">Parancsok le vannak tiltva, amíg a tudásbázis aktív.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
-        <translation type="unfinished">Másolás</translation>
+        <translation type="obsolete">Másolás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
-        <translation>Újraszerkesztés</translation>
+        <translation type="vanished">Újraszerkesztés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
-        <translation>Másolás sikeres.</translation>
+        <translation type="vanished">Másolás sikeres.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
-        <translation>A másolás nem sikerült. Próbálja újra.</translation>
+        <translation type="vanished">A másolás nem sikerült. Próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
-        <translation>Keresés</translation>
+        <translation type="vanished">Keresés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
-        <translation>%1 referenciadokumentum letöltve (%2 mp)</translation>
+        <translation type="vanished">%1 referenciadokumentum letöltve (%2 mp)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
-        <translation>Előzmények törlése</translation>
+        <translation type="vanished">Előzmények törlése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
-        <translation>Törli az összes bejegyzést?</translation>
+        <translation type="vanished">Törli az összes bejegyzést?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
-        <translation>Törlés után a tartalom nem állítható vissza!</translation>
+        <translation type="vanished">Törlés után a tartalom nem állítható vissza!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
-        <translation>Hivatalos modellek ajánlása</translation>
+        <translation type="vanished">Hivatalos modellek ajánlása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
-        <translation>MCP letiltása</translation>
+        <translation type="vanished">MCP letiltása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>Javasolt a hivatalos „DeepSeek-Trial Account” modell használata</translation>
+        <translation type="vanished">Javasolt a hivatalos „DeepSeek-Trial Account” modell használata</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
-        <translation>Gyors megnyitás</translation>
+        <translation type="vanished">Gyors megnyitás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation>MCP-kiszolgáló automatikus módra frissítése</translation>
+        <translation type="vanished">MCP-kiszolgáló automatikus módra frissítése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation>Az MCP-kiszolgálók automatikus módra frissültek, így egy kattintással elérhetők.</translation>
+        <translation type="vanished">Az MCP-kiszolgálók automatikus módra frissültek, így egy kattintással elérhetők.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation>, így rendszerbeállítási és fájlfeldolgozási feladatokat automatizálhat egyetlen kattintással.</translation>
+        <translation type="vanished">, így rendszerbeállítási és fájlfeldolgozási feladatokat automatizálhat egyetlen kattintással.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
-        <translation>Az MCP-kiszolgáló hozzáadása a Beállításokhoz került.</translation>
+        <translation type="vanished">Az MCP-kiszolgáló hozzáadása a Beállításokhoz került.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation>További MCP-kiszolgálók hozzáadásához lépjen a Beállítások &gt; MCP-kiszolgáló menübe.</translation>
+        <translation type="vanished">További MCP-kiszolgálók hozzáadásához lépjen a Beállítások &gt; MCP-kiszolgáló menübe.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
-        <translation type="unfinished">Értettem</translation>
+        <translation type="obsolete">Értettem</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
-        <translation>Ingyenes modellkreditek</translation>
+        <translation type="vanished">Ingyenes modellkreditek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation>A jelenlegi rendszer a DeepSeek próbafiók modellt kínálja, amely minden hónap elején automatikusan frissíti az ingyenes kvótát, így gond nélkül használhatja.</translation>
+        <translation type="vanished">A jelenlegi rendszer a DeepSeek próbafiók modellt kínálja, amely minden hónap elején automatikusan frissíti az ingyenes kvótát, így gond nélkül használhatja.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
-        <translation>Kreditigény</translation>
+        <translation type="vanished">Kreditigény</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
-        <translation>Ingyenes fiók létrehozása</translation>
+        <translation type="vanished">Ingyenes fiók létrehozása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
-        <translation>Ingyenes kreditek igénylése</translation>
+        <translation type="vanished">Ingyenes kreditek igénylése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
-        <translation>Sikeresen igényelve</translation>
+        <translation type="vanished">Sikeresen igényelve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+        <translation type="vanished">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
-        <translation>MCP Szerver engedélyezése&amp;</translation>
+        <translation type="vanished">MCP Szerver engedélyezése&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
-        <translation>MCP Szerver letiltása</translation>
+        <translation type="vanished">MCP Szerver letiltása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
-        <translation>MCP Szerver beállítása</translation>
+        <translation type="vanished">MCP Szerver beállítása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
-        <source>Enable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
-        <source>Disable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
-        <source>Configure MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
-        <translation>Legfeljebb egy fájlt adhat hozzá.</translation>
+        <translation type="vanished">Legfeljebb egy fájlt adhat hozzá.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
-        <translation>A fájlformátum nem támogatott.</translation>
+        <translation type="vanished">A fájlformátum nem támogatott.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
-        <translation>A fájl kulcstartalmának összefoglalása.</translation>
+        <translation type="vanished">A fájl kulcstartalmának összefoglalása.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
-        <translation>Feldolgozás...</translation>
+        <translation type="vanished">Feldolgozás...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
-        <translation>Fájlhiba</translation>
+        <translation type="vanished">Fájlhiba</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
-        <translation>A fájl törölve lett.</translation>
+        <translation type="vanished">A fájl törölve lett.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
-        <translation>A fájl mérete meghaladja a 100 MB-os korlátot.</translation>
+        <translation type="vanished">A fájl mérete meghaladja a 100 MB-os korlátot.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
-        <translation>Dokumentum feltöltése</translation>
+        <translation type="vanished">Dokumentum feltöltése</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
-        <translation>Fájl törölve</translation>
+        <translation type="vanished">Fájl törölve</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
-        <translation>Nem sikerült szöveget feldolgozni</translation>
+        <translation type="vanished">Nem sikerült szöveget feldolgozni</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
-        <translation>Hivatkozás</translation>
+        <translation type="vanished">Hivatkozás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
-        <translation>Utasítás</translation>
+        <translation type="vanished">Utasítás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation>Írja be a &quot;/&quot; karaktert a beviteli mezőbe az aktiváláshoz.</translation>
+        <translation type="vanished">Írja be a &quot;/&quot; karaktert a beviteli mezőbe az aktiváláshoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation>Kérjük, írja be; „Ctrl+Enter” a sorváltáshoz.</translation>
+        <translation type="vanished">Kérjük, írja be; „Ctrl+Enter” a sorváltáshoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation>Írja be kérdését, vagy írja be a &quot;/&quot; karaktert egy parancs kiválasztásához
+        <translation type="vanished">Írja be kérdését, vagy írja be a &quot;/&quot; karaktert egy parancs kiválasztásához
 &quot;Ctrl+Enter&quot; az új sor kezdéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
-        <translation>Keresés befejezve.</translation>
+        <translation type="vanished">Keresés befejezve.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
-        <translation>Kattintson az eredmények megtekintéséhez</translation>
+        <translation type="vanished">Kattintson az eredmények megtekintéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
-        <translation>szerkesztés</translation>
+        <translation type="vanished">szerkesztés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
-        <translation>mentés</translation>
+        <translation type="vanished">mentés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
-        <translation>másolás</translation>
+        <translation type="vanished">másolás</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
-        <translation>Keresés</translation>
+        <translation type="vanished">Keresés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
-        <translation>DeepThink(R1)</translation>
+        <translation type="vanished">DeepThink(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
-        <translation>A gondolkodás leállt</translation>
+        <translation type="vanished">A gondolkodás leállt</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
-        <translation>Vissza az aljára</translation>
+        <translation type="vanished">Vissza az aljára</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
-        <translation>Mélyen elgondolkodva (%1 másodperc)</translation>
+        <translation type="vanished">Mélyen elgondolkodva (%1 másodperc)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
-        <translation>Új beszélgetés</translation>
+        <translation type="vanished">Új beszélgetés</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
-        <translation>Előzmények</translation>
+        <translation type="vanished">Előzmények</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
-        <translation>Nincsenek előzmények</translation>
+        <translation type="vanished">Nincsenek előzmények</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
-        <translation>Ma</translation>
+        <translation type="vanished">Ma</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
-        <translation>Tegnap</translation>
+        <translation type="vanished">Tegnap</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation>Biztosan törli a beszélgetést? A törlés után nem lehet visszaállítani.</translation>
+        <translation type="vanished">Biztosan törli a beszélgetést? A törlés után nem lehet visszaállítani.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
-        <translation>A %1 ügynök, amelyet ebben a beszélgetésben használt, törölve lett</translation>
+        <translation type="vanished">A %1 ügynök, amelyet ebben a beszélgetésben használt, törölve lett</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation>Ez a beszélgetés nem tekinthető meg. A megtekintéséhez telepítse a %1 ügynököt, és próbálja újra.</translation>
+        <translation type="vanished">Ez a beszélgetés nem tekinthető meg. A megtekintéséhez telepítse a %1 ügynököt, és próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation>Az eredeti beszélgetési modell törölve lett. Átváltottunk egy új modellre, hogy folytathassa a beszélgetést.</translation>
+        <translation type="vanished">Az eredeti beszélgetési modell törölve lett. Átváltottunk egy új modellre, hogy folytathassa a beszélgetést.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
-        <translation>Ajánlások</translation>
+        <translation type="vanished">Ajánlások</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
-        <translation>Több</translation>
+        <translation type="vanished">Több</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
-        <translation>Modell hozzáadása</translation>
+        <translation type="vanished">Modell hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
-        <translation>Nincs modell</translation>
+        <translation type="vanished">Nincs modell</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
-        <translation>Nincs elérhető modell. Telepítsen vagy konfiguráljon egy modellt a beállításokban.</translation>
+        <translation type="vanished">Nincs elérhető modell. Telepítsen vagy konfiguráljon egy modellt a beállításokban.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation>Kérjük, írja le a tartalom témáját és követelményeit az alkotáshoz.</translation>
+        <translation type="vanished">Kérjük, írja le a tartalom témáját és követelményeit az alkotáshoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation>Kérjük, adja meg a lefordítani kívánt tartalmat és a célnyelvet. Az alapértelmezett fordítás kínaira történik.</translation>
+        <translation type="vanished">Kérjük, adja meg a lefordítani kívánt tartalmat és a célnyelvet. Az alapértelmezett fordítás kínaira történik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation>Kérjük, adja meg a feldolgozni kívánt szöveget és a követelményeket.</translation>
+        <translation type="vanished">Kérjük, adja meg a feldolgozni kívánt szöveget és a követelményeket.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
-        <translation>Új ügynök hozzáadva</translation>
+        <translation type="vanished">Új ügynök hozzáadva</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation>Új írási, szövegfeldolgozó és fordítási ügynökök lettek hozzáadva. Nézze meg őket most.</translation>
+        <translation type="vanished">Új írási, szövegfeldolgozó és fordítási ügynökök lettek hozzáadva. Nézze meg őket most.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
-        <translation>Próbálja ki</translation>
+        <translation type="vanished">Próbálja ki</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
-        <translation>Írjon egy cikket a következő dokumentum alapján:</translation>
+        <translation type="vanished">Írjon egy cikket a következő dokumentum alapján:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
-        <translation>Fordítsa le a következő dokumentumot angolra:</translation>
+        <translation type="vanished">Fordítsa le a következő dokumentumot angolra:</translation>
     </message>
 </context>
 <context>
     <name>EChatButton</name>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="150"/>
         <source>Turn off voice conversation</source>
-        <translation>Hangbeszélgetés kikapcsolása</translation>
+        <translation type="vanished">Hangbeszélgetés kikapcsolása</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="152"/>
         <source>Voice conversation</source>
-        <translation>Hangbeszélgetés</translation>
+        <translation type="vanished">Hangbeszélgetés</translation>
     </message>
 </context>
 <context>
     <name>EPPTWebView</name>
     <message>
-        <location filename="../src/gui/chat/private/epptwebview.cpp" line="67"/>
         <source>Export Item As</source>
-        <translation>Elem exportálása mint</translation>
+        <translation type="vanished">Elem exportálása mint</translation>
     </message>
 </context>
 <context>
     <name>EParserDocument</name>
     <message>
-        <location filename="../src/gui/chat/private/eparserdocument.cpp" line="57"/>
         <source>Supported files</source>
-        <translation>Támogatott fájlok</translation>
+        <translation type="vanished">Támogatott fájlok</translation>
+    </message>
+</context>
+<context>
+    <name>FileParser</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
+        <source>Unsupported file format</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FunctionsParser</name>
     <message>
-        <location filename="../src/tools/functionsparser.cpp" line="267"/>
         <source>Function not available</source>
-        <translation>A funkció nem elérhető</translation>
+        <translation type="vanished">A funkció nem elérhető</translation>
     </message>
 </context>
 <context>
     <name>GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="44"/>
         <source>Get a free trial account</source>
-        <translation>Ingyenes próbafiók igénylése</translation>
+        <translation type="vanished">Ingyenes próbafiók igénylése</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="61"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="62"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation>Fiók igénylése</translation>
+        <translation type="vanished">Fiók igénylése</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="89"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>A fiók fogadása azt jelenti, hogy megértette és elfogadja az esemény feltételeit,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Esemény részletei&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">A fiók fogadása azt jelenti, hogy megértette és elfogadja az esemény feltételeit,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Esemény részletei&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="121"/>
         <source>Trial Account</source>
-        <translation>Próbafiók</translation>
+        <translation type="vanished">Próbafiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="133"/>
         <source>Save failed, please try again later</source>
-        <translation>A mentés sikertelen, kérjük, próbálja újra később</translation>
+        <translation type="vanished">A mentés sikertelen, kérjük, próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Trial account received successfully.</source>
-        <translation>A próbafiók sikeresen megérkezett.</translation>
+        <translation type="vanished">A próbafiók sikeresen megérkezett.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="144"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>A próbafiók használati száma és időtartama korlátozott, kérjük, állítsa be személyes modellfiókját időben! Részletekért lásd az esemény részleteit.</translation>
+        <translation type="vanished">A próbafiók használati száma és időtartama korlátozott, kérjük, állítsa be személyes modellfiókját időben! Részletekért lásd az esemény részleteit.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="146"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>A próbafiókok angol támogatása nem megfelelő, és a használatok száma és időtartama korlátozott. Időben konfigurálja saját modellfiókját!</translation>
+        <translation type="vanished">A próbafiókok angol támogatása nem megfelelő, és a használatok száma és időtartama korlátozott. Időben konfigurálja saját modellfiókját!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="147"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>Próba indítása</translation>
+        <translation type="vanished">Próba indítása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="152"/>
         <source>The free account activity ends.</source>
-        <translation>Az ingyenes fiók tevékenység véget ért.</translation>
+        <translation type="vanished">Az ingyenes fiók tevékenység véget ért.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nem sikerült csatlakozni a szerverhez, kérjük, ellenőrizze a hálózati kapcsolatot, vagy próbálkozzon később.</translation>
+        <translation type="vanished">Nem sikerült csatlakozni a szerverhez, kérjük, ellenőrizze a hálózati kapcsolatot, vagy próbálkozzon később.</translation>
     </message>
 </context>
 <context>
@@ -2989,141 +2434,120 @@ Soha ne kombinálja a magyarázatot a fordítással, és ne adjon meg teljes for
 <context>
     <name>IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="199"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation>Az újonnan hozzáadott fájlok előfeldolgozást igényelnek, mielőtt használhatók lennének, és az adatfeldolgozási folyamat során jelentős számítási és tárolási erőforrásokat fogyaszthat. Az adatfeldolgozás leáll az adatok törlése után.</translation>
+        <translation type="vanished">Az újonnan hozzáadott fájlok előfeldolgozást igényelnek, mielőtt használhatók lennének, és az adatfeldolgozási folyamat során jelentős számítási és tárolási erőforrásokat fogyaszthat. Az adatfeldolgozás leáll az adatok törlése után.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation>Biztosan törölni szeretné ezt a tudásbázis fájlt?</translation>
+        <translation type="vanished">Biztosan törölni szeretné ezt a tudásbázis fájlt?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
-        <translation>Törlés</translation>
+        <translation type="vanished">Törlés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="67"/>
         <source>Add</source>
-        <translation>Hozzáadás</translation>
+        <translation type="vanished">Hozzáadás</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
-        <translation>Kérjük, először telepítse a beágyazási modell bővítményeket</translation>
+        <translation type="vanished">Kérjük, először telepítse a beágyazási modell bővítményeket</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="79"/>
         <source>Knowledge Base Management</source>
-        <translation>Tudásbázis Kezelés</translation>
+        <translation type="vanished">Tudásbázis Kezelés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="106"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation>Itt meghatározható a Személyes Tudásasszisztens tudásbázisa, és a Személyes Tudásasszisztens az alább hozzáadott fájlok alapján válaszol a kérdésekre.</translation>
+        <translation type="vanished">Itt meghatározható a Személyes Tudásasszisztens tudásbázisa, és a Személyes Tudásasszisztens az alább hozzáadott fájlok alapján válaszol a kérdésekre.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
         <source>Done</source>
-        <translation>Kész</translation>
+        <translation type="vanished">Kész</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="169"/>
         <source>None</source>
-        <translation>Nincs</translation>
+        <translation type="vanished">Nincs</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="215"/>
         <source>File already exist</source>
-        <translation>A fájl már létezik</translation>
+        <translation type="vanished">A fájl már létezik</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="216"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation>A(z) %1 fájl már létezik, és nem adható hozzá újra. Kérjük, módosítsa a fájl nevét, vagy törölje a meglévő fájlt, mielőtt újra hozzáadná.</translation>
+        <translation type="vanished">A(z) %1 fájl már létezik, és nem adható hozzá újra. Kérjük, módosítsa a fájl nevét, vagy törölje a meglévő fájlt, mielőtt újra hozzáadná.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="241"/>
         <source>All files</source>
-        <translation>Összes fájl</translation>
+        <translation type="vanished">Összes fájl</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation>Ez a funkció nagy hardveres erőforrásokat igényel, és a referencia konfiguráció a következő: Intel 11. generációs i7 vagy újabb processzor; 16GB vagy több memória; NVIDIA grafikus kártya és 10-es vagy újabb sorozat az ideális. Ha a konfiguráció túl alacsony, olyan problémák léphetnek fel, mint a lassulás vagy pontatlan válaszok.</translation>
+        <translation type="vanished">Ez a funkció nagy hardveres erőforrásokat igényel, és a referencia konfiguráció a következő: Intel 11. generációs i7 vagy újabb processzor; 16GB vagy több memória; NVIDIA grafikus kártya és 10-es vagy újabb sorozat az ideális. Ha a konfiguráció túl alacsony, olyan problémák léphetnek fel, mint a lassulás vagy pontatlan válaszok.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>Követés</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">A tudásbázis kapacitása nem elegendő</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">A tudásbázis teljes kapacitása %1M, a maradék %2. Az ebben az alkalomban hozzáadott fájlok száma %3. Nem sikerült befejezni a tudásbázishoz való hozzáadást.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">Nincs elég hely a lemezen</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">Az újonnan hozzáadott fájlok tárolásához legalább %1 lemezterület szükséges. A jelenlegi szabad hely %2. Kérjük, szabadítson fel elegendő helyet a merevlemezen, és próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">A tudásbázisba való hozzáadáshoz a vektorizációs modell bővítmény telepítése szükséges. Kérjük, menjen az alkalmazásboltba a letöltéshez és telepítéshez.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">Ne telepítse</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">Azonnali telepítés</translation>
@@ -3132,563 +2556,477 @@ Soha ne kombinálja a magyarázatot a fordítással, és ne adjon meg teljes for
 <context>
     <name>LLM</name>
     <message>
-        <location filename="../src/llm/common/llm.cpp" line="78"/>
         <source>Vincent picture service is not supported</source>
-        <translation>A Vincent képkészítő szolgáltatás nem támogatott</translation>
+        <translation type="vanished">A Vincent képkészítő szolgáltatás nem támogatott</translation>
     </message>
 </context>
 <context>
     <name>LLMServerProxy</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="270"/>
         <source>GPT3.5（OpenAI）</source>
-        <translation>GPT3.5（OpenAI）</translation>
+        <translation type="vanished">GPT3.5（OpenAI）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="273"/>
         <source>GPT4（OpenAI）</source>
-        <translation>GPT4（OpenAI）</translation>
+        <translation type="vanished">GPT4（OpenAI）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="280"/>
         <source>星火大模型1.5（讯飞）</source>
-        <translation>Spark Big Model 1.5（iFLYTEK）</translation>
+        <translation type="vanished">Spark Big Model 1.5（iFLYTEK）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="283"/>
         <source>星火大模型2.0（讯飞）</source>
-        <translation>Spark Big Model 2.0（iFLYTEK）</translation>
+        <translation type="vanished">Spark Big Model 2.0（iFLYTEK）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="285"/>
         <source>星火大模型3.0（讯飞）</source>
-        <translation>Spark Big Model 3.0（iFLYTEK）</translation>
+        <translation type="vanished">Spark Big Model 3.0（iFLYTEK）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="290"/>
         <source>ERNIE 3.5</source>
-        <translation>ERNIE 3.5</translation>
+        <translation type="vanished">ERNIE 3.5</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="293"/>
         <source>ERNIE-Bot-turbo</source>
-        <translation>ERNIE-Bot-turbo</translation>
+        <translation type="vanished">ERNIE-Bot-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="295"/>
         <source>ERNIE-Bot-4</source>
-        <translation>ERNIE-Bot-4</translation>
+        <translation type="vanished">ERNIE-Bot-4</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="275"/>
         <source>360 AI</source>
-        <translation>360 AI</translation>
+        <translation type="vanished">360 AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="278"/>
         <source>iFLYTEK-Spark</source>
-        <translation>iFLYTEK-Spark</translation>
+        <translation type="vanished">iFLYTEK-Spark</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="288"/>
         <source>Baidu-Ernie</source>
-        <translation>Baidu-Ernie</translation>
+        <translation type="vanished">Baidu-Ernie</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="299"/>
         <source>ChatGLM-turbo</source>
-        <translation>ChatGLM-turbo</translation>
+        <translation type="vanished">ChatGLM-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="301"/>
         <source>Gemini 1.5 Flash</source>
-        <translation>Gemini 1.5 Flash</translation>
+        <translation type="vanished">Gemini 1.5 Flash</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="303"/>
         <source>Gemini 1.5 Pro</source>
-        <translation>Gemini 1.5 Pro</translation>
+        <translation type="vanished">Gemini 1.5 Pro</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="305"/>
         <source>TextToImage(Local)</source>
-        <translation>Szöveg-kép (Helyi)</translation>
+        <translation type="vanished">Szöveg-kép (Helyi)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="307"/>
         <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <translation type="vanished">YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="309"/>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="311"/>
         <source>Custom</source>
-        <translation>Egyéni</translation>
+        <translation type="vanished">Egyéni</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="313"/>
         <source>Private deployment model</source>
-        <translation>Privát telepítési modell</translation>
+        <translation type="vanished">Privát telepítési modell</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="315"/>
         <source>OpenRouter</source>
-        <translation>OpenRouter</translation>
+        <translation type="vanished">OpenRouter</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="317"/>
         <source>DeepSeek-R1</source>
-        <translation>DeepSeek-R1</translation>
+        <translation type="vanished">DeepSeek-R1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="319"/>
         <source>DeepSeek</source>
-        <translation>DeepSeek</translation>
+        <translation type="vanished">DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="322"/>
         <source>unknown model</source>
-        <translation>ismeretlen modell</translation>
+        <translation type="vanished">ismeretlen modell</translation>
     </message>
 </context>
 <context>
     <name>LLMUtils</name>
     <message>
-        <location filename="../src/llm/common/llmutils.cpp" line="114"/>
         <source>Your system environment is Linux, and the user home path is</source>
-        <translation>A rendszerkörnyezet Linux, és a felhasználói kezdőkönyvtár elérési útja</translation>
+        <translation type="vanished">A rendszerkörnyezet Linux, és a felhasználói kezdőkönyvtár elérési útja</translation>
     </message>
 </context>
 <context>
     <name>LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation>Telepítés</translation>
+        <translation type="vanished">Telepítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation>Frissítés</translation>
+        <translation type="vanished">Frissítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation>Eltávolítás</translation>
+        <translation type="vanished">Eltávolítás</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="32"/>
         <source>uninstall</source>
-        <translation>eltávolítás</translation>
+        <translation type="vanished">eltávolítás</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation>Helyi modell</translation>
+        <translation type="vanished">Helyi modell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Text to image model</source>
-        <translation>Szöveg-kép modell</translation>
+        <translation type="vanished">Szöveg-kép modell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation>Használjon helyi modellt képek generálásához. Bekapcsolás után kiválaszthatja a modellt a modelllistából a csevegőfelületen.</translation>
+        <translation type="vanished">Használjon helyi modellt képek generálásához. Bekapcsolás után kiválaszthatja a modellt a modelllistából a csevegőfelületen.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>speech model</source>
-        <translation>beszédmodell</translation>
+        <translation type="vanished">beszédmodell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation>Bekapcsoláskor a beszédfelismerés és a beszédolvasás a csevegőfelületen a helyi modellt fogja használni, internetkapcsolat nélkül.</translation>
+        <translation type="vanished">Bekapcsoláskor a beszédfelismerés és a beszédolvasás a csevegőfelületen a helyi modellt fogja használni, internetkapcsolat nélkül.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
         <source>ULLM-1.5B</source>
-        <translation>ULLM-1.5B</translation>
+        <translation type="vanished">ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
         <source>ULLM-7B</source>
-        <translation>ULLM-7B</translation>
+        <translation type="vanished">ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation>DeepSeek-R1-1.5B</translation>
+        <translation type="vanished">DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>UOS AI large model</source>
-        <translation>UOS AI nagy modell</translation>
+        <translation type="vanished">UOS AI nagy modell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation>Telepítés után nem szükséges internetkapcsolat az UOS AI használatához.</translation>
+        <translation type="vanished">Telepítés után nem szükséges internetkapcsolat az UOS AI használatához.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation>Saját felelősségre töltheti le a nyílt forráskódú közösségtől. Telepítés után használja az UOS AI Asszisztenssel.</translation>
+        <translation type="vanished">Saját felelősségre töltheti le a nyílt forráskódú közösségtől. Telepítés után használja az UOS AI Asszisztenssel.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>Embedding Plugins</source>
-        <translation>Beágyazott bővítmények</translation>
+        <translation type="vanished">Beágyazott bővítmények</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation>A modell telepítése után a Rendszerasszisztens és a Személyes Tudásasszisztens is futtatható.</translation>
+        <translation type="vanished">A modell telepítése után a Rendszerasszisztens és a Személyes Tudásasszisztens is futtatható.</translation>
     </message>
 </context>
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
-        <translation>Sikeresen csatlakoztatva</translation>
+        <translation type="vanished">Sikeresen csatlakoztatva</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
-        <translation>Felhasználói szerződés</translation>
+        <translation type="vanished">Felhasználói szerződés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI Felhasználói szerződés</translation>
+        <translation type="vanished">UOS AI Felhasználói szerződés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
-        <translation>Elolvastam és elfogadom</translation>
+        <translation type="vanished">Elolvastam és elfogadom</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
-        <translation>Proxy beállítások</translation>
+        <translation type="vanished">Proxy beállítások</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
-        <translation>Ugrás a beállításokhoz</translation>
+        <translation type="vanished">Ugrás a beállításokhoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
-        <translation>Modell konfiguráció</translation>
+        <translation type="vanished">Modell konfiguráció</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
-        <translation>A ingyenes fiók tevékenysége véget ér.</translation>
+        <translation type="vanished">A ingyenes fiók tevékenysége véget ér.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation>A tudásbázisba való hozzáadáshoz a vektorizációs modell bővítmény telepítése szükséges. Kérjük, menjen az alkalmazásboltba a letöltéshez és telepítéshez.</translation>
+        <translation type="vanished">A tudásbázisba való hozzáadáshoz a vektorizációs modell bővítmény telepítése szükséges. Kérjük, menjen az alkalmazásboltba a letöltéshez és telepítéshez.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation>Ne telepítse</translation>
+        <translation type="vanished">Ne telepítse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation>Azonnali telepítés</translation>
+        <translation type="vanished">Azonnali telepítés</translation>
     </message>
 </context>
 <context>
     <name>ModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="54"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>Biztos benne, hogy törölni szeretné ezt a modellt?</translation>
+        <translation type="vanished">Biztos benne, hogy törölni szeretné ezt a modellt?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="55"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="56"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
 </context>
 <context>
     <name>ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="31"/>
         <source>Get a free account</source>
-        <translation>Ingyenes fiók létrehozása</translation>
+        <translation type="vanished">Ingyenes fiók létrehozása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
-        <translation>Törlés</translation>
+        <translation type="vanished">Törlés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="41"/>
         <source>Add</source>
-        <translation>Hozzáadás</translation>
+        <translation type="vanished">Hozzáadás</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="48"/>
         <source>Online model</source>
-        <translation>Online modell</translation>
+        <translation type="vanished">Online modell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
         <source>Done</source>
-        <translation>Kész</translation>
+        <translation type="vanished">Kész</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="107"/>
         <source>None</source>
-        <translation>Nincs</translation>
+        <translation type="vanished">Nincs</translation>
     </message>
 </context>
 <context>
     <name>ModifyModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="27"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="37"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="47"/>
         <source>APIKey</source>
-        <translation>API kulcs</translation>
+        <translation type="vanished">API kulcs</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="57"/>
         <source>APISecret</source>
-        <translation>API titok</translation>
+        <translation type="vanished">API titok</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="67"/>
         <source>Account</source>
-        <translation>Fiók</translation>
+        <translation type="vanished">Fiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="73"/>
         <source>Model Name</source>
-        <translation>Modell neve</translation>
+        <translation type="vanished">Modell neve</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="83"/>
         <source>API Address</source>
-        <translation>API cím</translation>
+        <translation type="vanished">API cím</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="96"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Kötelező, több modell megkülönböztetéséhez</translation>
+        <translation type="vanished">Kötelező, több modell megkülönböztetéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="100"/>
         <source>Domain</source>
-        <translation>Tartomány</translation>
+        <translation type="vanished">Tartomány</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="136"/>
         <source>Cancel</source>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="138"/>
         <source>Confirm</source>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="298"/>
         <source>No more than 20 characters</source>
-        <translation>Legfeljebb 20 karakter</translation>
+        <translation type="vanished">Legfeljebb 20 karakter</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="337"/>
         <source>The account name already exists, please change it</source>
-        <translation>A fióknév már létezik, kérjük változtassa meg</translation>
+        <translation type="vanished">A fióknév már létezik, kérjük változtassa meg</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
+        <source>The image file does not exist: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
+        <source>OCR did not recognize the text content</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="192"/>
         <source>In data processing</source>
-        <translation>Adatfeldolgozás alatt</translation>
+        <translation type="vanished">Adatfeldolgozás alatt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="204"/>
         <source>Data processing error</source>
-        <translation>Adatfeldolgozási hiba</translation>
+        <translation type="vanished">Adatfeldolgozási hiba</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="216"/>
         <source>File error, unable to process, please delete.</source>
-        <translation>Fájlhiba, nem dolgozható fel, kérjük törölje.</translation>
+        <translation type="vanished">Fájlhiba, nem dolgozható fel, kérjük törölje.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="503"/>
         <source>UOS AI</source>
-        <translation>UOS MI</translation>
+        <translation type="vanished">UOS MI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="506"/>
         <source>UOS System Assistant</source>
-        <translation>UOS Rendszerasszisztens</translation>
+        <translation type="vanished">UOS Rendszerasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="509"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin Rendszerasszisztens</translation>
+        <translation type="vanished">Deepin Rendszerasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="512"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Személyes Tudásasszisztens</translation>
+        <translation type="vanished">Személyes Tudásasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="515"/>
         <source>AI Writing</source>
-        <translation>MI Írás</translation>
+        <translation type="vanished">MI Írás</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="518"/>
         <source>AI Text Processing</source>
-        <translation>MI Szövegfeldolgozás</translation>
+        <translation type="vanished">MI Szövegfeldolgozás</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="521"/>
         <source>AI Translation</source>
-        <translation>MI Fordítás</translation>
+        <translation type="vanished">MI Fordítás</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="534"/>
         <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation>A rendszer átfogó MI asszisztense.</translation>
+        <translation type="vanished">A rendszer átfogó MI asszisztense.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="537"/>
         <source>Assists you with UOS system-related inquiries.</source>
-        <translation>Segít az UOS rendszerrel kapcsolatos kérdésekben.</translation>
+        <translation type="vanished">Segít az UOS rendszerrel kapcsolatos kérdésekben.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="540"/>
         <source>Assists you with Deepin system-related inquiries.</source>
-        <translation>Segít a Deepin rendszerrel kapcsolatos kérdésekben.</translation>
+        <translation type="vanished">Segít a Deepin rendszerrel kapcsolatos kérdésekben.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="546"/>
         <source>Write Based on Your Topic and Requirements.</source>
-        <translation>Írás a megadott témáról és követelmények alapján.</translation>
+        <translation type="vanished">Írás a megadott témáról és követelmények alapján.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="543"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation>Kérdésekre válaszol a személyes tudásbázisa alapján.</translation>
+        <translation type="vanished">Kérdésekre válaszol a személyes tudásbázisa alapján.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="549"/>
         <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation>Képes szövegfeldolgozási feladatok kezelésére, mint az összefoglalás, lektorálás és átírás.</translation>
+        <translation type="vanished">Képes szövegfeldolgozási feladatok kezelésére, mint az összefoglalás, lektorálás és átírás.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="552"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation>Fordító asszisztensed, több nyelv elsajátításával.</translation>
+        <translation type="vanished">Fordító asszisztensed, több nyelv elsajátításával.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
         <source>Search</source>
         <translation>Keresés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
         <source>Explain</source>
         <translation>Magyarázat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
         <source>Summary</source>
         <translation>Összefoglaló</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
         <source>Translate</source>
         <translation>Fordítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
         <source>Continue Writing</source>
         <translation>Írás folytatása</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
         <source>Expand</source>
         <translation>Bővítés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
         <source>Polish</source>
         <translation>Lektorálás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
         <source>Correct</source>
         <translation>Javítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
         <source>Add to the AI knowledge base</source>
         <translation>Hozzáadás az AI tudásbázishoz</translation>
     </message>
@@ -3789,7 +3127,7 @@ Soha ne kombinálja a magyarázatot a fordítással, és ne adjon meg teljes for
         <translation>Arab (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
+        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3799,163 +3137,268 @@ Bevezetés: Intelligensen ütemezi a rendszereszközöket összetett rendszermű
 
 Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő összes fájlt projektanyagként és rendezze őket szám szerinti sorrendbe.</translation>
     </message>
+    <message>
+        <location filename="../src/assistant/assistantinfo.h" line="23"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
+        <source>Custom</source>
+        <translation type="unfinished">Egyéni</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
+        <source>Private deployment model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="obsolete">Hiányzik az &apos;mcpServers&apos; mező.</translation>
+    </message>
+    <message>
+        <source>no valid mcp server.</source>
+        <translation type="obsolete">nincs érvényes MCP-szerver.</translation>
+    </message>
+    <message>
+        <source>url field cannot be empty.</source>
+        <translation type="obsolete">Az url mező nem lehet üres.</translation>
+    </message>
+    <message>
+        <source>command field cannot be empty.</source>
+        <translation type="obsolete">A parancs mező nem lehet üres.</translation>
+    </message>
+    <message>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="obsolete">Hiányzik a &apos;command&apos; vagy az &apos;url&apos; mező</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ResearchTools</name>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
+        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
+        <source>The uos-ai-agent plugin must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
+        <source>Download Now</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ServerCodeTranslation</name>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="16"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nem sikerült csatlakozni a szerverhez, kérjük, ellenőrizze a hálózati kapcsolatot, vagy próbálkozzon később.</translation>
+        <translation type="vanished">Nem sikerült csatlakozni a szerverhez, kérjük, ellenőrizze a hálózati kapcsolatot, vagy próbálkozzon később.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="19"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>A kapcsolódás sikertelen, kérjük, ellenőrizze a megadott adatokat.</translation>
+        <translation type="vanished">A kapcsolódás sikertelen, kérjük, ellenőrizze a megadott adatokat.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="22"/>
         <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation>Elnézést, a vonatkozó törvények, rendeletek és irányelvek értelmében az eredményeket egyelőre nem jelenítjük meg.</translation>
+        <translation type="vanished">Elnézést, a vonatkozó törvények, rendeletek és irányelvek értelmében az eredményeket egyelőre nem jelenítjük meg.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation>A művelet megszakítva.</translation>
+        <translation type="vanished">A művelet megszakítva.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="28"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>Az ingyenes fiókja lejárt, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
+        <translation type="vanished">Az ingyenes fiókja lejárt, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="31"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>Az ingyenes fiókváltozata elfogyott, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
+        <translation type="vanished">Az ingyenes fiókváltozata elfogyott, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="34"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation>Az ingyenes fiókváltozata elfogyott a csevegéshez, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
+        <translation type="vanished">Az ingyenes fiókváltozata elfogyott a csevegéshez, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="37"/>
         <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation>Az ingyenes fiókváltozata elfogyott a szövegből kép funkcióhoz, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
+        <translation type="vanished">Az ingyenes fiókváltozata elfogyott a szövegből kép funkcióhoz, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="40"/>
         <source>Invalid input device</source>
-        <translation>Érvénytelen bemeneti eszköz</translation>
+        <translation type="vanished">Érvénytelen bemeneti eszköz</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="43"/>
         <source>Invalid output device</source>
-        <translation>Érvénytelen kimeneti eszköz</translation>
+        <translation type="vanished">Érvénytelen kimeneti eszköz</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="46"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Elnézést, nem található egyező művelet.</translation>
+        <translation type="vanished">Elnézést, nem található egyező művelet.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="49"/>
         <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation>A beszélgetésben szereplő karakterek száma meghaladta a korlátot, kérjük, törölje a beszélgetési előzményeket, és próbálkozzon újra.</translation>
+        <translation type="vanished">A beszélgetésben szereplő karakterek száma meghaladta a korlátot, kérjük, törölje a beszélgetési előzményeket, és próbálkozzon újra.</translation>
+    </message>
+</context>
+<context>
+    <name>ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="unfinished">Hiányzik az &apos;mcpServers&apos; mező.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
+        <source>no valid mcp server.</source>
+        <translation type="unfinished">nincs érvényes MCP-szerver.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
+        <source>Only one MCP service can be edited at a time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
+        <source>url field cannot be empty.</source>
+        <translation type="unfinished">Az url mező nem lehet üres.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
+        <source>command field cannot be empty.</source>
+        <translation type="unfinished">A parancs mező nem lehet üres.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="unfinished">Hiányzik a &apos;command&apos; vagy az &apos;url&apos; mező</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
+        <source>JSON configuration format is invalid.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Session</name>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="359"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="361"/>
         <source>UOS System Assistant</source>
-        <translation>UOS Rendszerasszisztens</translation>
+        <translation type="vanished">UOS Rendszerasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="363"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin Rendszerasszisztens</translation>
+        <translation type="vanished">Deepin Rendszerasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="365"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Személyes Tudásasszisztens</translation>
+        <translation type="vanished">Személyes Tudásasszisztens</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="367"/>
         <source>AI Writing</source>
-        <translation>AI Írás</translation>
+        <translation type="vanished">AI Írás</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="369"/>
         <source>AI Text Processing</source>
-        <translation>AI Szövegfeldolgozás</translation>
+        <translation type="vanished">AI Szövegfeldolgozás</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="371"/>
         <source>AI Translation</source>
-        <translation>AI Fordítás</translation>
+        <translation type="vanished">AI Fordítás</translation>
     </message>
 </context>
 <context>
     <name>SessionPrivate</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="313"/>
-        <location filename="../src/wrapper/session_p.cpp" line="493"/>
-        <location filename="../src/wrapper/session_p.cpp" line="607"/>
-        <location filename="../src/wrapper/session_p.cpp" line="856"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>Az UOS AI használatához egy AI modellfiók beállítása szükséges. Kérjük, először állítson be egy modellfiókot.</translation>
+        <translation type="vanished">Az UOS AI használatához egy AI modellfiók beállítása szükséges. Kérjük, először állítson be egy modellfiókot.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="921"/>
         <source>Agent server is not available.</source>
-        <translation>Az ügynök szerver nem érhető el.</translation>
+        <translation type="vanished">Az ügynök szerver nem érhető el.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1285"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Sikeresen igényelve</translation>
+        <translation type="obsolete">Sikeresen igényelve</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1288"/>
         <source>Account not found</source>
-        <translation>Fiók nem található</translation>
+        <translation type="vanished">Fiók nem található</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1291"/>
         <source>Only support deepseek account</source>
-        <translation>Csak deepseek fiók támogatott</translation>
+        <translation type="vanished">Csak deepseek fiók támogatott</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1298"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation>Már részt vett az eseményen, és nem igényelheti újra a jutalmat.</translation>
+        <translation type="vanished">Már részt vett az eseményen, és nem igényelheti újra a jutalmat.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1301"/>
         <source>Server system error</source>
-        <translation>Szerver rendszerhiba</translation>
+        <translation type="vanished">Szerver rendszerhiba</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1304"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+        <translation type="obsolete">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+    </message>
+</context>
+<context>
+    <name>TextParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
+        <source>Unable to open file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
+        <source>The file content is in binary format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
+        <source>Unable to read file: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Visszajelzés</translation>
     </message>
@@ -4051,35 +3494,34 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
 <context>
     <name>TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="71"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation>A kiválasztott szöveg meghaladja az 5000 karakteres korlátot.</translation>
+        <translation type="vanished">A kiválasztott szöveg meghaladja az 5000 karakteres korlátot.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>Ezt a funkciót még nem valósítottam meg.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>a szolgáltatás nem elérhető!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Érvénytelen paraméter!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
         <translation>Ez az alkalmazás nem található!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>Az alkalmazás indítása sikertelen!</translation>
     </message>
@@ -4087,858 +3529,797 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation>A fényerő már a maximális szinten van, nem növelhető tovább.</translation>
+        <translation type="vanished">A fényerő már a maximális szinten van, nem növelhető tovább.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation>A fényerő már a minimális szinten van, nem csökkenthető tovább.</translation>
+        <translation type="vanished">A fényerő már a minimális szinten van, nem csökkenthető tovább.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
-        <translation>A rendszermemória %0.</translation>
+        <translation type="vanished">A rendszermemória %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation>A nyelvi beállítások felülete megnyílt. Kérjük, itt állítsa be.</translation>
+        <translation type="vanished">A nyelvi beállítások felülete megnyílt. Kérjük, itt állítsa be.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
-        <translation>A jelenlegi mód már %1 mód.</translation>
+        <translation type="vanished">A jelenlegi mód már %1 mód.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation>Nem lehet bezárni, mert a jelenlegi %1 mód nem egyezik a célmóddal.</translation>
+        <translation type="vanished">Nem lehet bezárni, mert a jelenlegi %1 mód nem egyezik a célmóddal.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation>Az egyensúly mód nem kapcsolható ki.</translation>
+        <translation type="vanished">Az egyensúly mód nem kapcsolható ki.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
-        <translation>A képernyőzár fel lett oldva Ön számára</translation>
+        <translation type="vanished">A képernyőzár fel lett oldva Ön számára</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation>A képernyőkép készítése vagy felvétel befejeződött</translation>
+        <translation type="vanished">A képernyőkép készítése vagy felvétel befejeződött</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation>Csak egy képernyő van, nem lehet váltani a képernyőmód között.</translation>
+        <translation type="vanished">Csak egy képernyő van, nem lehet váltani a képernyőmód között.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation>Ugyanaz, mint a jelenlegi megjelenítési mód. Kérjük, próbálja újra.</translation>
+        <translation type="vanished">Ugyanaz, mint a jelenlegi megjelenítési mód. Kérjük, próbálja újra.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation>Csak egy képernyő van, nem lehet váltani a képernyők között.</translation>
+        <translation type="vanished">Csak egy képernyő van, nem lehet váltani a képernyők között.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
-        <translation>A parancs kiadásra került.</translation>
+        <translation type="vanished">A parancs kiadásra került.</translation>
     </message>
 </context>
 <context>
     <name>UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="47"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI Felhasználói Szerződés</translation>
+        <translation type="vanished">UOS AI Felhasználói Szerződés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="80"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>Igazolom, hogy 18 éven felüli vagyok. Tudomásul veszem és elfogadom, hogy az Alkalmazáson keresztül küldött és fogadott tartalmak közvetlen adatcserét jelentenek a nagy modell szolgáltatóval, és semmi közük a Vállalathoz.</translation>
+        <translation type="vanished">Igazolom, hogy 18 éven felüli vagyok. Tudomásul veszem és elfogadom, hogy az Alkalmazáson keresztül küldött és fogadott tartalmak közvetlen adatcserét jelentenek a nagy modell szolgáltatóval, és semmi közük a Vállalathoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="124"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>Hozzájárulok az Alkalmazás felhasználói élmény tervezésében való részvételhez, és engedélyezem a vállalatnak, hogy gyűjtse az Alkalmazás használata során küldött tartalmaimat, a küldés idejét, a kért nagy modell típusát, a konkrét alkalmazást és azt, hogy a szöveg sikeresen generált-e képet, annak érdekében, hogy javítsa a szolgáltatás minőségét és fokozza az üzemeltetési élményt. (Ha az Ön elutasítja a fenti információk megadását, az nem befolyásolja az Alkalmazás normál használatát.)</translation>
+        <translation type="vanished">Hozzájárulok az Alkalmazás felhasználói élmény tervezésében való részvételhez, és engedélyezem a vállalatnak, hogy gyűjtse az Alkalmazás használata során küldött tartalmaimat, a küldés idejét, a kért nagy modell típusát, a konkrét alkalmazást és azt, hogy a szöveg sikeresen generált-e képet, annak érdekében, hogy javítsa a szolgáltatás minőségét és fokozza az üzemeltetési élményt. (Ha az Ön elutasítja a fenti információk megadását, az nem befolyásolja az Alkalmazás normál használatát.)</translation>
     </message>
 </context>
 <context>
     <name>WXQFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
-        <translation>Szerver belső hiba</translation>
+        <translation type="vanished">Szerver belső hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="10"/>
         <source>Service is temporarily unavailable</source>
-        <translation>A szolgáltatás átmenetileg nem elérhető</translation>
+        <translation type="vanished">A szolgáltatás átmenetileg nem elérhető</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="11"/>
         <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation>A hívott API nem létezik. Kérjük, ellenőrizze a kérés URL-jét, és próbálja újra. Általában nem angol karakterek vannak az URL-ben, például &quot;-&quot;. Kézzel is beírhatja, és újra próbálkozhat.</translation>
+        <translation type="vanished">A hívott API nem létezik. Kérjük, ellenőrizze a kérés URL-jét, és próbálja újra. Általában nem angol karakterek vannak az URL-ben, például &quot;-&quot;. Kézzel is beírhatja, és újra próbálkozhat.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="13"/>
         <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation>Nincs interfész hívási engedély, a releváns Qianfan interfész nincs bejelölve az alkalmazás létrehozásakor</translation>
+        <translation type="vanished">Nincs interfész hívási engedély, a releváns Qianfan interfész nincs bejelölve az alkalmazás létrehozásakor</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation>Modell meghívási hiba: A modellkérési limit elérte a maximumot, vagy a modell offline. Javaslatok: Adja hozzá újra a modellt, vagy lépjen kapcsolatba a nagy modell szolgáltató ügyfélszolgálatával a probléma megoldásához.</translation>
+        <translation type="vanished">Modell meghívási hiba: A modellkérési limit elérte a maximumot, vagy a modell offline. Javaslatok: Adja hozzá újra a modellt, vagy lépjen kapcsolatba a nagy modell szolgáltató ügyfélszolgálatával a probléma megoldásához.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="14"/>
         <source>Failed to obtain token</source>
-        <translation>Nem sikerült token beszerzése</translation>
+        <translation type="vanished">Nem sikerült token beszerzése</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="15"/>
         <source>IAM authentication failed</source>
-        <translation>IAM hitelesítés sikertelen</translation>
+        <translation type="vanished">IAM hitelesítés sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="16"/>
         <source>The application does not exist or failed to be created</source>
-        <translation>Az alkalmazás nem létezik, vagy nem sikerült létrehozni</translation>
+        <translation type="vanished">Az alkalmazás nem létezik, vagy nem sikerült létrehozni</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="17"/>
         <source>The number of requests per day exceeds the limit</source>
-        <translation>A napi kérések száma meghaladja a limitet</translation>
+        <translation type="vanished">A napi kérések száma meghaladja a limitet</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="19"/>
         <source>The total number of requests exceeds the limit</source>
-        <translation>A kérések teljes száma meghaladja a limitet</translation>
+        <translation type="vanished">A kérések teljes száma meghaladja a limitet</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="20"/>
         <source>Invalid access_token parameter</source>
-        <translation>Érvénytelen access_token paraméter</translation>
+        <translation type="vanished">Érvénytelen access_token paraméter</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="21"/>
         <source>access_token is invalid</source>
-        <translation>Az access_token érvénytelen</translation>
+        <translation type="vanished">Az access_token érvénytelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="22"/>
         <source>access token expires</source>
-        <translation>Az access token lejárt</translation>
+        <translation type="vanished">Az access token lejárt</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="23"/>
         <source>Service error, template does not exist</source>
-        <translation>Szolgáltatási hiba, a sablon nem létezik</translation>
+        <translation type="vanished">Szolgáltatási hiba, a sablon nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="24"/>
         <source>A system error occurred, please try again later</source>
-        <translation>Rendszerhiba történt, kérjük, próbálja újra később</translation>
+        <translation type="vanished">Rendszerhiba történt, kérjük, próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="25"/>
         <source>The knowledge base server cannot be accessed</source>
-        <translation>A tudásbázis szerver nem érhető el</translation>
+        <translation type="vanished">A tudásbázis szerver nem érhető el</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="26"/>
         <source>Knowledge base data download exception</source>
-        <translation>Tudásbázis adat letöltési kivétel</translation>
+        <translation type="vanished">Tudásbázis adat letöltési kivétel</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="27"/>
         <source>Prompt word is too long</source>
-        <translation>A prompt szöveg túl hosszú</translation>
+        <translation type="vanished">A prompt szöveg túl hosszú</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="28"/>
         <source>Model does not exist</source>
-        <translation>A modell nem létezik</translation>
+        <translation type="vanished">A modell nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="29"/>
         <source>Request parameter error</source>
-        <translation>Kérés paraméter hiba</translation>
+        <translation type="vanished">Kérés paraméter hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="30"/>
         <source>Image processing failed</source>
-        <translation>Képfeldolgozás sikertelen</translation>
+        <translation type="vanished">Képfeldolgozás sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="31"/>
         <source>Service handling exception error</source>
-        <translation>Szolgáltatás kezelési kivétel hiba</translation>
+        <translation type="vanished">Szolgáltatás kezelési kivétel hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="32"/>
         <source>Service internal error</source>
-        <translation>Szolgáltatás belső hiba</translation>
+        <translation type="vanished">Szolgáltatás belső hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="33"/>
         <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation>A bemeneti paraméter formátuma helytelen, például hiányoznak a szükséges paraméterek.</translation>
+        <translation type="vanished">A bemeneti paraméter formátuma helytelen, például hiányoznak a szükséges paraméterek.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="34"/>
         <source>The input parameter body is not in standard JSON format</source>
-        <translation>A bemeneti paraméter test nem szabványos JSON formátumban van</translation>
+        <translation type="vanished">A bemeneti paraméter test nem szabványos JSON formátumban van</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="35"/>
         <source>Parameter verification is illegal</source>
-        <translation>A paraméter ellenőrzése érvénytelen</translation>
+        <translation type="vanished">A paraméter ellenőrzése érvénytelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="36"/>
         <source>Permission control error</source>
-        <translation>Engedélyezési vezérlési hiba</translation>
+        <translation type="vanished">Engedélyezési vezérlési hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="37"/>
         <source>Customized model service apiname does not exist</source>
-        <translation>Az egyéni modell szolgáltatás apiname nem létezik</translation>
+        <translation type="vanished">Az egyéni modell szolgáltatás apiname nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="38"/>
         <source>Service internal error, please try again later</source>
-        <translation>Szolgáltatás belső hiba, kérjük, próbálja újra később</translation>
+        <translation type="vanished">Szolgáltatás belső hiba, kérjük, próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="39"/>
         <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation>Érvénytelen HTTP metódus, jelenleg csak POST kérések támogatottak</translation>
+        <translation type="vanished">Érvénytelen HTTP metódus, jelenleg csak POST kérések támogatottak</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="40"/>
         <source>The requested content exceeds the large model internal limit</source>
-        <translation>A kért tartalom meghaladja a nagy modell belső korlátját</translation>
+        <translation type="vanished">A kért tartalom meghaladja a nagy modell belső korlátját</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="41"/>
         <source>internal error</source>
-        <translation>belső hiba</translation>
+        <translation type="vanished">belső hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="42"/>
         <source>Vincent diagram model service timeout</source>
-        <translation>Vincent diagram modell szolgáltatás időtúllépés</translation>
+        <translation type="vanished">Vincent diagram modell szolgáltatás időtúllépés</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="43"/>
         <source>There are security issues with prompt and negative_prompt</source>
-        <translation>Biztonsági problémák merültek fel a prompt és negative_prompt között</translation>
+        <translation type="vanished">Biztonsági problémák merültek fel a prompt és negative_prompt között</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="44"/>
         <source>There are security issues with output images</source>
-        <translation>Biztonsági problémák merültek fel a kimeneti képekkel</translation>
+        <translation type="vanished">Biztonsági problémák merültek fel a kimeneti képekkel</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="46"/>
         <source>Parameter error</source>
-        <translation>Paraméter hiba</translation>
+        <translation type="vanished">Paraméter hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="47"/>
         <source>No access</source>
-        <translation>Nincs hozzáférés</translation>
+        <translation type="vanished">Nincs hozzáférés</translation>
     </message>
 </context>
 <context>
     <name>WXQFText2Image</name>
     <message>
-        <location filename="../src/llm/baidu/wxqftext2image.cpp" line="27"/>
         <source>The image description exceeds the 256 character limit</source>
-        <translation>A kép leírása meghaladja a 256 karakteres korlátot</translation>
+        <translation type="vanished">A kép leírása meghaladja a 256 karakteres korlátot</translation>
     </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
         <source>Welcome to UOS AI</source>
-        <translation>Üdvözöljük az UOS AI-ban</translation>
+        <translation type="vanished">Üdvözöljük az UOS AI-ban</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="75"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation>Az UOS AI, az Ön intelligens asszisztense, a termelékenység növelésére és egy kiváló minőségű munkatapasztalat élvezetére tervezett.</translation>
+        <translation type="vanished">Az UOS AI, az Ön intelligens asszisztense, a termelékenység növelésére és egy kiváló minőségű munkatapasztalat élvezetére tervezett.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="100"/>
         <source>Get a free trial account</source>
-        <translation>Ingyenes próbafiók igénylése</translation>
+        <translation type="vanished">Ingyenes próbafiók igénylése</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation>Modell hozzáadása</translation>
+        <translation type="vanished">Modell hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="131"/>
         <source>Start using</source>
-        <translation>Használat kezdése</translation>
+        <translation type="vanished">Használat kezdése</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>Jóváhagyom, hogy 18 éven felüli vagyok. Tudomásul veszem és elfogadom az &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Felhasználói Szerződést&quot;&lt;/a&gt;, valamint hogy az Alkalmazáson keresztül küldött és fogadott tartalmak közvetlen adatcsere a nagy modell szolgáltatóval, és semmi közük a Vállalathoz.</translation>
+        <translation type="vanished">Jóváhagyom, hogy 18 éven felüli vagyok. Tudomásul veszem és elfogadom az &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Felhasználói Szerződést&quot;&lt;/a&gt;, valamint hogy az Alkalmazáson keresztül küldött és fogadott tartalmak közvetlen adatcsere a nagy modell szolgáltatóval, és semmi közük a Vállalathoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>A fiók fogadása jelzi, hogy megértette és elfogadja az esemény feltételeit,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Esemény részletek&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">A fiók fogadása jelzi, hogy megértette és elfogadja az esemény feltételeit,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Esemény részletek&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Trial Account</source>
-        <translation>Próbafiók</translation>
+        <translation type="vanished">Próbafiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="292"/>
         <source>Save failed, please try again later</source>
-        <translation>Mentés sikertelen, kérjük próbálja újra később</translation>
+        <translation type="vanished">Mentés sikertelen, kérjük próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="301"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished">UOS AI试用账号领取成功！</translation>
+        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="304"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>A próbafiók használati száma és időtartama korlátozott, kérjük időben konfigurálja személyes modell fiókját! Részletekért lásd az esemény részleteit.</translation>
+        <translation type="vanished">A próbafiók használati száma és időtartama korlátozott, kérjük időben konfigurálja személyes modell fiókját! Részletekért lásd az esemény részleteit.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="306"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>A próba fiókok angol támogatása nem megfelelő, és a használatok száma és időtartama korlátozott. Időben konfigurálja személyes modell fiókját!</translation>
+        <translation type="vanished">A próba fiókok angol támogatása nem megfelelő, és a használatok száma és időtartama korlátozott. Időben konfigurálja személyes modell fiókját!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="307"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>Próba indítása</translation>
+        <translation type="vanished">Próba indítása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="314"/>
         <source>The free account activity ends.</source>
-        <translation>Az ingyenes fiók tevékenység véget ért.</translation>
+        <translation type="vanished">Az ingyenes fiók tevékenység véget ért.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="322"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nem sikerült csatlakozni a szerverhez, kérjük ellenőrizze a hálózati kapcsolatát vagy próbálja újra később.</translation>
+        <translation type="vanished">Nem sikerült csatlakozni a szerverhez, kérjük ellenőrizze a hálózati kapcsolatát vagy próbálja újra később.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="343"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>Jóváhagyom, hogy részt veszek az Alkalmazás felhasználói élmény tervezésében, és engedélyezem a Vállalatnak, hogy gyűjtse az Alkalmazás használata közben küldött tartalmaimat, a küldés idejét, a kért nagy modell típusát, a konkrét alkalmazást és hogy a szöveg sikeresen generált-e képet, hogy javítsák a szolgáltatás minőségét és fokozzák a működési élményt. (Ha megtagadja a fenti információk megadását, az nem befolyásolja az Alkalmazás normál használatát.)</translation>
+        <translation type="vanished">Jóváhagyom, hogy részt veszek az Alkalmazás felhasználói élmény tervezésében, és engedélyezem a Vállalatnak, hogy gyűjtse az Alkalmazás használata közben küldött tartalmaimat, a küldés idejét, a kért nagy modell típusát, a konkrét alkalmazást és hogy a szöveg sikeresen generált-e képet, hogy javítsák a szolgáltatás minőségét és fokozzák a működési élményt. (Ha megtagadja a fenti információk megadását, az nem befolyásolja az Alkalmazás normál használatát.)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Megerősítés</translation>
+        <translation type="vanished">Megerősítés</translation>
+    </message>
+</context>
+<context>
+    <name>WorkspaceStore</name>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
+        <source>Note: Part of the document content may be generated by AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
+        <source>Word files (*.docx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
+        <source>PDF files (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
+        <source>Markdown files (*.md)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
+        <source>Save Article</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>XFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="9"/>
         <source>Error while upgrading to WebSocket</source>
-        <translation>Hiba a WebSocket-re való frissítés közben</translation>
+        <translation type="vanished">Hiba a WebSocket-re való frissítés közben</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="10"/>
         <source>Error reading user&apos;s message via WebSocket</source>
-        <translation>Hiba a felhasználó üzenetének olvasásakor WebSocket-en keresztül</translation>
+        <translation type="vanished">Hiba a felhasználó üzenetének olvasásakor WebSocket-en keresztül</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="11"/>
         <source>Error sending message to user via WebSocket</source>
-        <translation>Hiba az üzenet küldésekor a felhasználónak WebSocket-en keresztül</translation>
+        <translation type="vanished">Hiba az üzenet küldésekor a felhasználónak WebSocket-en keresztül</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="12"/>
         <source>The user&apos;s message format is incorrect</source>
-        <translation>A felhasználó üzenetének formátuma helytelen</translation>
+        <translation type="vanished">A felhasználó üzenetének formátuma helytelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="13"/>
         <source>Schema error for user data</source>
-        <translation>Séma hiba a felhasználói adatoknál</translation>
+        <translation type="vanished">Séma hiba a felhasználói adatoknál</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="14"/>
         <source>User parameter value is wrong</source>
-        <translation>A felhasználói paraméter értéke hibás</translation>
+        <translation type="vanished">A felhasználói paraméter értéke hibás</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="15"/>
         <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation>Felhasználói egyidejűségi hiba: Az aktuális felhasználó már csatlakozott, és ugyanaz a felhasználó nem csatlakozhat több helyre egyszerre.</translation>
+        <translation type="vanished">Felhasználói egyidejűségi hiba: Az aktuális felhasználó már csatlakozott, és ugyanaz a felhasználó nem csatlakozhat több helyre egyszerre.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="16"/>
         <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation>Korlátozott felhasználói forgalom: A szolgáltatás feldolgozza a felhasználó aktuális problémáját, és várni kell a feldolgozás befejezésére, mielőtt új kérést küldene. (Várnia kell a modell teljes válaszára, mielőtt a következő kérdést elküldené)</translation>
+        <translation type="vanished">Korlátozott felhasználói forgalom: A szolgáltatás feldolgozza a felhasználó aktuális problémáját, és várni kell a feldolgozás befejezésére, mielőtt új kérést küldene. (Várnia kell a modell teljes válaszára, mielőtt a következő kérdést elküldené)</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="17"/>
         <source>Insufficient service capacity, please contact staff</source>
-        <translation>Nem elegendő szolgáltatási kapacitás, kérjük, lépjen kapcsolatba a személyzettel</translation>
+        <translation type="vanished">Nem elegendő szolgáltatási kapacitás, kérjük, lépjen kapcsolatba a személyzettel</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="18"/>
         <source>Failed to establish connection with engine</source>
-        <translation>Nem sikerült kapcsolatot létesíteni a motorral</translation>
+        <translation type="vanished">Nem sikerült kapcsolatot létesíteni a motorral</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="19"/>
         <source>Error receiving engine data</source>
-        <translation>Hiba a motor adatainak fogadásakor</translation>
+        <translation type="vanished">Hiba a motor adatainak fogadásakor</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="20"/>
         <source>Error sending data to engine</source>
-        <translation>Hiba az adatok motorhoz küldésekor</translation>
+        <translation type="vanished">Hiba az adatok motorhoz küldésekor</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="21"/>
         <source>Engine internal error</source>
-        <translation>Motor belső hiba</translation>
+        <translation type="vanished">Motor belső hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="22"/>
         <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation>A bemeneti tartalom nem felel meg az ellenőrzésnek és gyanús a szabályok megszegésében. Kérjük, módosítsa a bemeneti tartalmat.</translation>
+        <translation type="vanished">A bemeneti tartalom nem felel meg az ellenőrzésnek és gyanús a szabályok megszegésében. Kérjük, módosítsa a bemeneti tartalmat.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="23"/>
         <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation>A kimeneti tartalom érzékeny információkat tartalmaz, az ellenőrzés sikertelen, és a további eredmények nem jeleníthetők meg a felhasználónak.</translation>
+        <translation type="vanished">A kimeneti tartalom érzékeny információkat tartalmaz, az ellenőrzés sikertelen, és a további eredmények nem jeleníthetők meg a felhasználónak.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="24"/>
         <source>appid is in the blacklist</source>
-        <translation>Az appid a feketelistán van</translation>
+        <translation type="vanished">Az appid a feketelistán van</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="25"/>
         <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation>Appid engedélyezési osztály hiba. Például: ez a funkció nincs aktiválva, a megfelelő verzió nincs aktiválva, a token nem elegendő, az egyidejűség meghaladja az engedélyezést stb.</translation>
+        <translation type="vanished">Appid engedélyezési osztály hiba. Például: ez a funkció nincs aktiválva, a megfelelő verzió nincs aktiválva, a token nem elegendő, az egyidejűség meghaladja az engedélyezést stb.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="26"/>
         <source>Clear history failed</source>
-        <translation>Az előzmények törlése sikertelen</translation>
+        <translation type="vanished">Az előzmények törlése sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="27"/>
         <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation>Jelzi, hogy a munkamenet tartalma illegális információkat tartalmazhat; ajánlott, hogy a fejlesztők figyelmeztessék a felhasználót, miután megkapták ezt a hibakódot, hogy illegális információkat tartalmazó adatokat ne adjon meg.</translation>
+        <translation type="vanished">Jelzi, hogy a munkamenet tartalma illegális információkat tartalmazhat; ajánlott, hogy a fejlesztők figyelmeztessék a felhasználót, miután megkapták ezt a hibakódot, hogy illegális információkat tartalmazó adatokat ne adjon meg.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="28"/>
         <source>Service is busy, please try again later</source>
-        <translation>A szolgáltatás elfoglalt, kérjük, próbálja újra később</translation>
+        <translation type="vanished">A szolgáltatás elfoglalt, kérjük, próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="29"/>
         <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation>A kérés motor paraméterei abnormálisak, és a motor séma ellenőrzése sikertelen.</translation>
+        <translation type="vanished">A kérés motor paraméterei abnormálisak, és a motor séma ellenőrzése sikertelen.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="30"/>
         <source>Engine network abnormality</source>
-        <translation>Motor hálózati rendellenesség</translation>
+        <translation type="vanished">Motor hálózati rendellenesség</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="31"/>
         <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation>A tokenek száma meghaladja a felső határt. A beszélgetési előzmények és a kérdés szavainak száma túl nagy, és le kell egyszerűsíteni.</translation>
+        <translation type="vanished">A tokenek száma meghaladja a felső határt. A beszélgetési előzmények és a kérdés szavainak száma túl nagy, és le kell egyszerűsíteni.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="32"/>
         <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation>Engedélyezési hiba: Az appId nem rendelkezik engedéllyel a kapcsolódó funkciókhoz, vagy az üzleti mennyiség meghaladja a korlátot</translation>
+        <translation type="vanished">Engedélyezési hiba: Az appId nem rendelkezik engedéllyel a kapcsolódó funkciókhoz, vagy az üzleti mennyiség meghaladja a korlátot</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="33"/>
         <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation>Engedélyezési hiba: A napi forgalomirányítási korlát túllépve. Túllépte a napi maximális látogatások számát</translation>
+        <translation type="vanished">Engedélyezési hiba: A napi forgalomirányítási korlát túllépve. Túllépte a napi maximális látogatások számát</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Jelenleg túl sok látogató van, kérjük, próbálja újra később.</translation>
+        <translation type="vanished">Jelenleg túl sok látogató van, kérjük, próbálja újra később.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="44"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>A kapcsolat sikertelen, kérjük, ellenőrizze a kitöltött információkat.</translation>
+        <translation type="vanished">A kapcsolat sikertelen, kérjük, ellenőrizze a kitöltött információkat.</translation>
     </message>
 </context>
 <context>
     <name>ZhiPuCodeTranslation</name>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="9"/>
         <source>Server internal error</source>
-        <translation>Szerver belső hiba</translation>
+        <translation type="vanished">Szerver belső hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="10"/>
         <source>Authentication failed</source>
-        <translation>Hitelesítés sikertelen</translation>
+        <translation type="vanished">Hitelesítés sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="11"/>
         <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation>A hitelesítési paramétert nem kapták meg a fejlécben, és a hitelesítés nem hajtható végre.</translation>
+        <translation type="vanished">A hitelesítési paramétert nem kapták meg a fejlécben, és a hitelesítés nem hajtható végre.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="12"/>
         <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation>A hitelesítési token érvénytelen. Kérjük, erősítse meg, hogy a hitelesítési token helyesen lett kézbesítve.</translation>
+        <translation type="vanished">A hitelesítési token érvénytelen. Kérjük, erősítse meg, hogy a hitelesítési token helyesen lett kézbesítve.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="13"/>
         <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation>A hitelesítési token lejárt, kérjük, újragenerálja/szerezze be.</translation>
+        <translation type="vanished">A hitelesítési token lejárt, kérjük, újragenerálja/szerezze be.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="14"/>
         <source>Verification via Authentication Token failed</source>
-        <translation>A hitelesítési tokenen keresztüli ellenőrzés sikertelen</translation>
+        <translation type="vanished">A hitelesítési tokenen keresztüli ellenőrzés sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="15"/>
         <source>Account reading and writing</source>
-        <translation>Fiók olvasása és írása</translation>
+        <translation type="vanished">Fiók olvasása és írása</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="16"/>
         <source>Your account is currently inactive. Please check account information</source>
-        <translation>Fiókja jelenleg inaktív. Kérjük, ellenőrizze a fiók információit</translation>
+        <translation type="vanished">Fiókja jelenleg inaktív. Kérjük, ellenőrizze a fiók információit</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="17"/>
         <source>Your account does not exist</source>
-        <translation>Fiókja nem létezik</translation>
+        <translation type="vanished">Fiókja nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="18"/>
         <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation>Fiókja zárolva van, kérjük, lépjen kapcsolatba az ügyfélszolgálattal a feloldáshoz</translation>
+        <translation type="vanished">Fiókja zárolva van, kérjük, lépjen kapcsolatba az ügyfélszolgálattal a feloldáshoz</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="19"/>
         <source>Your account is in arrears, please recharge and try again</source>
-        <translation>Fiókja tartozásban van, kérjük, töltse fel és próbálja újra</translation>
+        <translation type="vanished">Fiókja tartozásban van, kérjük, töltse fel és próbálja újra</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="20"/>
         <source>Unable to successfully access your account, please try again later</source>
-        <translation>Nem sikerült elérni a fiókját, kérjük, próbálja újra később</translation>
+        <translation type="vanished">Nem sikerült elérni a fiókját, kérjük, próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="21"/>
         <source>API call error</source>
-        <translation>API hívási hiba</translation>
+        <translation type="vanished">API hívási hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="22"/>
         <source>API call parameters are incorrect, please check the documentation</source>
-        <translation>Az API hívás paraméterei helytelenek, kérjük, ellenőrizze a dokumentációt</translation>
+        <translation type="vanished">Az API hívás paraméterei helytelenek, kérjük, ellenőrizze a dokumentációt</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="23"/>
         <source>Model does not exist, please check the model code</source>
-        <translation>A modell nem létezik, kérjük, ellenőrizze a modell kódját</translation>
+        <translation type="vanished">A modell nem létezik, kérjük, ellenőrizze a modell kódját</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="24"/>
         <source>The current model does not support the ${method} calling method</source>
-        <translation>Az aktuális modell nem támogatja a ${method} hívási módszert</translation>
+        <translation type="vanished">Az aktuális modell nem támogatja a ${method} hívási módszert</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="25"/>
         <source>${field} Parameters not received normally</source>
-        <translation>${field} paraméterek nem érkeztek meg normálisan</translation>
+        <translation type="vanished">${field} paraméterek nem érkeztek meg normálisan</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="26"/>
         <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation>A ${field} paraméter érvénytelen. Kérjük, ellenőrizze a dokumentációt</translation>
+        <translation type="vanished">A ${field} paraméter érvénytelen. Kérjük, ellenőrizze a dokumentációt</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="27"/>
         <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation>${field1} és ${field2} nem állítható be egyszerre, kérjük, ellenőrizze a dokumentációt</translation>
+        <translation type="vanished">${field1} és ${field2} nem állítható be egyszerre, kérjük, ellenőrizze a dokumentációt</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="28"/>
         <source>You do not have access to  ${API_name}</source>
-        <translation>Nincs hozzáférése a(z) ${API_name} API-hoz</translation>
+        <translation type="vanished">Nincs hozzáférése a(z) ${API_name} API-hoz</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="29"/>
         <source>API ${API_name} is offline</source>
-        <translation>A(z) ${API_name} API offline állapotban van</translation>
+        <translation type="vanished">A(z) ${API_name} API offline állapotban van</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="30"/>
         <source>API ${API_name}  does not exist</source>
-        <translation>A(z) ${API_name} API nem létezik</translation>
+        <translation type="vanished">A(z) ${API_name} API nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="31"/>
         <source>API call process error</source>
-        <translation>API hívási folyamat hiba</translation>
+        <translation type="vanished">API hívási folyamat hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="32"/>
         <source>You have requested: ${request_id}</source>
-        <translation>Ön a következőt kérte: ${request_id}</translation>
+        <translation type="vanished">Ön a következőt kérte: ${request_id}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="33"/>
         <source>When getting asynchronous request results, please use task_id</source>
-        <translation>Aszinkron kérés eredményének lekérésekor kérjük, használja a task_id-t</translation>
+        <translation type="vanished">Aszinkron kérés eredményének lekérésekor kérjük, használja a task_id-t</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="34"/>
         <source>Task: ${task_id} does not exist</source>
-        <translation>A(z) ${task_id} feladat nem létezik</translation>
+        <translation type="vanished">A(z) ${task_id} feladat nem létezik</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation>Hálózati hiba, hiba azonosító: ${error_id}, kérjük, lépjen kapcsolatba az ügyfélszolgálattal</translation>
+        <translation type="vanished">Hálózati hiba, hiba azonosító: ${error_id}, kérjük, lépjen kapcsolatba az ügyfélszolgálattal</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="37"/>
         <source>API run error</source>
-        <translation>API futási hiba</translation>
+        <translation type="vanished">API futási hiba</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="38"/>
         <source>Prompt super long</source>
-        <translation>Prompt túl hosszú</translation>
+        <translation type="vanished">Prompt túl hosszú</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="39"/>
         <source>API call blocked by policy</source>
-        <translation>API hívás szabályzat által blokkolva</translation>
+        <translation type="vanished">API hívás szabályzat által blokkolva</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="40"/>
         <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation>A rendszer érzékelte, hogy a bevitt vagy generált tartalom nem biztonságos vagy érzékeny tartalmat tartalmazhat. Kérjük, kerülje az olyan promptok megadását, amelyek könnyen érzékeny tartalmat generálhatnak. Köszönjük együttműködését.</translation>
+        <translation type="vanished">A rendszer érzékelte, hogy a bevitt vagy generált tartalom nem biztonságos vagy érzékeny tartalmat tartalmazhat. Kérjük, kerülje az olyan promptok megadását, amelyek könnyen érzékeny tartalmat generálhatnak. Köszönjük együttműködését.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Jelenleg túl sok látogató van, kérjük, próbálja újra később.</translation>
+        <translation type="vanished">Jelenleg túl sok látogató van, kérjük, próbálja újra később.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="43"/>
         <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation>Ez az API elérte a mai hívási limitet. Ha többre van szüksége, kérjük, lépjen kapcsolatba az ügyfélszolgálattal a vásárláshoz.</translation>
+        <translation type="vanished">Ez az API elérte a mai hívási limitet. Ha többre van szüksége, kérjük, lépjen kapcsolatba az ügyfélszolgálattal a vásárláshoz.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AITranslation</name>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
+        <source>Translate the following text into English for me.</source>
+        <translation type="unfinished">Fordítsa le nekem a következő szöveget angolra.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
+        <source>Translate the following document into Chinese.</source>
+        <translation type="unfinished">Fordítsa le a következő dokumentumot kínaira.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
+        <source>What does the word Ǌgent” mean in the AI industry?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
+        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
+        <translation type="unfinished">Kérjük, fordítsa le a következő tartalmat kínaira. Követelmények: Pontos jelentés, formális és szakmai nyelvhasználat.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
+        <source>What are some colloquial ways to address a friend in English?</source>
+        <translation type="unfinished">Milyen köznyelvi módok vannak egy barát megszólítására angolul?</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
+        <source>Translate the following classical Chinese text into modern Chinese.</source>
+        <translation type="unfinished">Fordítsa le a következő klasszikus kínai szöveget modern kínaira.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AIWriter</name>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
+        <source>Today </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
+        <source>Yesterday </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
+        <source>MMM d HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AboutWindow</name>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished">Az UOS AI egy asztali intelligens asszisztens, a személyes asszisztense! Szöveges vagy hangos kommunikációval lehet vele kapcsolatba lépni, segíthet kérdésekre válaszolni, információt szolgáltatni és képeket generálni a leírása alapján.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
+        <source>Filing Information</source>
+        <translation type="unfinished">Információk archiválása</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddPrivateModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="48"/>
         <source>Add model</source>
-        <translation>Modell hozzáadása</translation>
+        <translation type="vanished">Modell hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="50"/>
         <source>APIKey</source>
-        <translation>API kulcs</translation>
+        <translation type="vanished">API kulcs</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
-        <translation>Kötelező, kérjük, adja meg</translation>
+        <translation type="vanished">Kötelező, kérjük, adja meg</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="58"/>
         <source>Account</source>
-        <translation>Fiók</translation>
+        <translation type="vanished">Fiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="63"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Kötelező, több modell megkülönböztetéséhez</translation>
+        <translation type="vanished">Kötelező, több modell megkülönböztetéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="69"/>
         <source>Model Name</source>
-        <translation>Modell neve</translation>
+        <translation type="vanished">Modell neve</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="74"/>
         <source>Optional</source>
-        <translation>Opcionális</translation>
+        <translation type="vanished">Opcionális</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="77"/>
         <source>Domain</source>
-        <translation>Domain</translation>
+        <translation type="vanished">Domain</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="104"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>Annak ellenőrzésére, hogy a modell elérhető-e, a rendszer tesztinformációkat küld a nagy modellnek, ami kis mennyiségű tokent fogyaszt.</translation>
+        <translation type="vanished">Annak ellenőrzésére, hogy a modell elérhető-e, a rendszer tesztinformációkat küld a nagy modellnek, ami kis mennyiségű tokent fogyaszt.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="147"/>
         <source>Cancel</source>
-        <translation>Mégse</translation>
+        <translation type="vanished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="149"/>
         <source>Confirm</source>
-        <translation>Megerősít</translation>
+        <translation type="vanished">Megerősít</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="241"/>
         <source>No more than 20 characters</source>
-        <translation>Legfeljebb 20 karakter</translation>
+        <translation type="vanished">Legfeljebb 20 karakter</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="272"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>Ez az LLM már létezik, ne adja hozzá újra.</translation>
+        <translation type="vanished">Ez az LLM már létezik, ne adja hozzá újra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="315"/>
         <source>Save failed, please try again later</source>
-        <translation>Mentés sikertelen, próbálja újra később</translation>
+        <translation type="vanished">Mentés sikertelen, próbálja újra később</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="373"/>
         <source>The account name already exists, please change it</source>
-        <translation>A fióknév már létezik, kérjük, változtassa meg</translation>
+        <translation type="vanished">A fióknév már létezik, kérjük, változtassa meg</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="401"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>A proxy beállításokhoz lépjen a rendszer proxy beállításaihoz</translation>
+        <translation type="vanished">A proxy beállításokhoz lépjen a rendszer proxy beállításaihoz</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="404"/>
         <source>Go to settings</source>
-        <translation>Ugrás a beállításokhoz</translation>
+        <translation type="vanished">Ugrás a beállításokhoz</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>Készség hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="66"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Készség neve</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Adja meg a készség nevét</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Készség parancs</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
         <translation>a szöveg kijelölt részét jelöli.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Utasítások</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="130"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Mentés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="248"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>A készség neve nem lehet üres</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>Túllépte a karakterkorlátot</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>A készségnév már létezik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="440"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Parancs utasítások</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="478"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
         <translation>Ha le szeretné fordítani a kijelölt szöveget (&quot;Hello&quot;), ahogy fent látható, beírhatja a következő parancsot: Fordítsa le a {selection} angolra.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="485"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Haladó tippek</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="491"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
@@ -4949,12 +4330,12 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
 • Csiszolja ki a {selection} szöveget egy 100 szavas toborzási szöveggé, hangsúlyozva a csapatmunkát.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
         <translation>A címke megnyomásával továbbra is beillesztheti a beviteli mezőbe.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -4978,145 +4359,475 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
     </message>
 </context>
 <context>
+    <name>uos_ai::AiQuickDialog</name>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
+        <source>simplified Chinese</source>
+        <translation type="unfinished">egyszerűsített kínai</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
+        <source>traditional Chinese</source>
+        <translation type="unfinished">hagyományos kínai</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
+        <source>Tibetan</source>
+        <translation type="unfinished">tibeti</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
+        <source>English</source>
+        <translation type="unfinished">angol</translation>
+    </message>
+    <message>
+        <source>Japanese </source>
+        <translation type="obsolete">japán</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
+        <source>Japanese</source>
+        <translation type="unfinished">Japán</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
+        <source>German</source>
+        <translation type="unfinished">német</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
+        <source>Spanish</source>
+        <translation type="unfinished">spanyol</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
+        <source>French</source>
+        <translation type="unfinished">francia</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
+        <source>Italian</source>
+        <translation type="unfinished">olasz</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
+        <source>Korean</source>
+        <translation type="unfinished">koreai</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
+        <source>Malay</source>
+        <translation type="unfinished">maláj</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
+        <source>Portuguese</source>
+        <translation type="unfinished">portugál</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
+        <source>Russian</source>
+        <translation type="unfinished">orosz</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
+        <source>Thai</source>
+        <translation type="unfinished">thai</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
+        <source>Vietnamese</source>
+        <translation type="unfinished">vietnámi</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
+        <source>type</source>
+        <translation type="unfinished">típus</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
+        <source>Read Aloud</source>
+        <translation type="unfinished">Hangos felolvasás</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
+        <source>Paste to Text</source>
+        <translation type="unfinished">Beillesztés szövegbe</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
+        <source>Regenerate</source>
+        <translation type="unfinished">Újragenerálás</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
+        <source>Copy</source>
+        <translation type="unfinished">Másolás</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
+        <source>Continue Dialog</source>
+        <translation type="unfinished">Párbeszéd folytatása</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
+        <source>Automatic Detection</source>
+        <translation type="unfinished">Automatikus felismerés</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
+        <source>Search</source>
+        <translation type="unfinished">Keresés</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
+        <source>Explain</source>
+        <translation type="unfinished">Magyarázat</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
+        <source>Summary</source>
+        <translation type="unfinished">Összefoglaló</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
+        <source>Translate</source>
+        <translation type="unfinished">Fordítás</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
+        <source>Continue writing</source>
+        <translation type="unfinished">Írás folytatása</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
+        <source>Expand</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
+        <source>Correct</source>
+        <translation type="unfinished">Javítás</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
+        <source>Polish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
+        <source>Add to the AI knowledge base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation type="unfinished">A fordítás eredményét a modell képességei korlátozzák. Ha nem elégedett a fordítással, váltson más modellekre az UOS AI főoldalán.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
+        <source>Ok</source>
+        <translation type="unfinished">Rendben</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation type="unfinished">Fordítsa le ezt a szöveget %1 nyelvre, és adja meg közvetlenül az egyértelmű eredményt.
+szöveg：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
+        <source>Not clickable</source>
+        <translation type="unfinished">Nem kattintható</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation type="unfinished">Az audio eszköz nem észlelhető, kérem ellenőrizze és próbálja újra.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation type="unfinished">Rendben</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation type="unfinished">A funkció csak a beviteli mód újraindítása után használható. Az útmutató a következő:
+
+1. Kattintson jobb gombbal a beviteli mód ikonjára a tálcán.
+
+2. Kattintson az &quot;Újraindítás&quot; gombra.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
+        <source>Fill failed</source>
+        <translation type="unfinished">Kitöltés sikertelen</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation type="unfinished">Nincs beviteli mező kiválasztva, kérjük válassza ki a beviteli mezőt és töltse ki újra.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
+        <source>Added</source>
+        <translation type="unfinished">Hozzáadva</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
+        <source>Copied</source>
+        <translation type="unfinished">Másolva</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation type="unfinished">Magyarázza el ezt a szöveget közérthető nyelven. Csak egyértelmű eredményt adjon, felesleges tartalom nélkül.
+szöveg：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">Foglalja össze ezt a szöveget, és adja meg közvetlenül az egyértelmű eredményt, minden más felesleges tartalom nélkül.
+szöveg：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">Folytassa megfelelően ezt a szöveget. Nem kell sok szó. Csak egyértelmű eredményt adjon, minden más felesleges tartalom nélkül.
+szöveg：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">Bővítse megfelelően ezt a szöveget. Nem kell különösen hosszú szöveg. Csak egyértelmű eredményt adjon, minden más felesleges tartalom nélkül.
+szöveg：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">Ellenőrizze, hogy van-e elírás ebben a szövegben. Ha van, jelölje meg a hibák helyét. Adja meg közvetlenül az egyértelmű eredményt, minden más felesleges tartalom nélkül.
+szöveg：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation type="unfinished">Csiszold fel nekem ezt a szöveget, és csak az eredményt add vissza, mindenféle extra tartalom nélkül.
+
+szöveg:</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
+        <source> &quot;%1&quot; </source>
+        <translation type="unfinished"> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
+        <source>Current model: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
+        <source>Currently no model</source>
+        <translation type="unfinished">Jelenleg nincs modell</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
+        <source>Go to configure  </source>
+        <translation type="unfinished">Ugrás a beállításhoz</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
+        <source>Claim Free Credits  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
+        <source>No text recognized.</source>
+        <translation type="unfinished">Nem ismert fel szöveget.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
+        <source>The added content must be more than 10 words</source>
+        <translation type="unfinished">A hozzáadott tartalomnak több mint 10 szóból kell állnia</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AiWriterDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>Írja be, mit szeretne létrehozni (Enter a generáláshoz, Esc a kilépéshez)</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
         <translation>Segítsen nekem esszét írni a [%1] témában [világos szerkezettel és gazdag tartalommal].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Artificial Intelligence</source>
         <translation>Mesterséges intelligencia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
         <translation>Segítsen nekem vázlatot írni a [%1] témában, amely [PPT készítéshez] lesz felhasználva.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
         <translation>Segítsen nekem értesítést írni a [%1] témában, a címzett [Minden Alkalmazott], a feladó pedig [Adminisztrációs Osztály].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>National Day Holiday</source>
         <translation>Nemzeti ünnep</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
         <translation>Segítsen nekem kutatási jelentést írni a [%1] témában, amely tartalmazza [állapotleírást, problémamegoldást, ellenintézkedéseket és javaslatokat, kutatási következtetéseket].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
         <translation>Segítsen nekem beszédet írni a [%1] témában [Vállalati Vezetők] számára, [világos szerkezettel és élénk nyelvvel].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
         <translation>Segítsen nekem összefoglalót írni a legutóbbi munkámról, beleértve [%1] és [eredmények], [formális] hangvétellel.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>work content</source>
         <translation>munka tartalma</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
         <translation>Segítsen nekem nyilvános tweetet írni a [%1] témában, [világos szerkezettel] és [laza] hangvétellel.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1036"/>
         <source>Model Configuration</source>
-        <translation>Modell beállítás</translation>
+        <translation type="vanished">Modell beállítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1123"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
         <source>Go to configure  </source>
         <translation>Ugrás a beállításhoz</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Mégse</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="86"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
         <source>AI Writer</source>
         <translation>AI Író</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="190"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
         <source>Article</source>
         <translation>Cikk</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="194"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
         <source>Outline</source>
         <translation>Vázlat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="198"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
         <source>Notification</source>
         <translation>Értesítés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="202"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
         <source>Research Report</source>
         <translation>Kutatási jelentés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="206"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
         <source>Speeches</source>
         <translation>Beszédek</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="210"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
         <source>Work Summary</source>
         <translation>Munka összefoglaló</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="214"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
         <source>Tweets</source>
         <translation>Tweetek</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="306"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>Beillesztés szövegbe</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="324"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Újragenerálás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="332"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Másolás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="350"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>Az AI által generált tartalom csak tájékoztató jellegű, kérjük, figyeljen az információk pontosságára.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="849"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
@@ -5127,44 +4838,44 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
 2. Kattintson az &quot;Újraindítás&quot; gombra.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="853"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Rendben</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1070"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
         <source>Copied</source>
         <translation>Másolva</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
         <source>Current model: </source>
         <translation>Aktuális modell: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1106"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>Jelenleg nincs modell</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1137"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
         <source>Modify the content, change the tone…</source>
         <translation>A tartalom módosítása, a hangnem megváltoztatása…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1258"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>Kitöltés sikertelen</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1259"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>Nincs beviteli mező kiválasztva, kérjük válassza ki a beviteli mezőt és töltse ki újra.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1261"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>Rendben</translation>
     </message>
@@ -5333,6 +5044,301 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
     </message>
 </context>
 <context>
+    <name>uos_ai::Application</name>
+    <message>
+        <location filename="../src/app/application.cpp" line="66"/>
+        <location filename="../src/app/application.cpp" line="68"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="70"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished">Az UOS AI egy asztali intelligens asszisztens, a személyes asszisztense! Szöveges vagy hangos kommunikációval lehet vele kapcsolatba lépni, segíthet kérdésekre válaszolni, információt szolgáltatni és képeket generálni a leírása alapján.</translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="112"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI Követés/Írás</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ArticleAdjustAgent</name>
+    <message>
+        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AssistantManager</name>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
+        <source>Hello, I&apos;m UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
+        <source>AI Writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
+        <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
+        <source>AI Translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
+        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
+        <translation type="unfinished">Fordító asszisztensed, több nyelv elsajátításával.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
+        <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
+        <source>Answers questions based on your personal knowledge base.</source>
+        <translation type="unfinished">Kérdésekre válaszol a személyes tudásbázisa alapján.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
+        <source>Ask questions based on the knowledge base.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
+        <source>MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
+        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
+        <source>Please enter MCP Server commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioChannel</name>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
+        <source>Failed to start recorder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
+        <source>Failed to play text audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioControler</name>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
+        <source>invalid input device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
+        <source>invalid output device</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinProvider</name>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="54"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="59"/>
+        <source>Intelligent Routing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="71"/>
+        <source>Online Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="83"/>
+        <source>DeepSeek-V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="96"/>
+        <location filename="../src/model/builtinprovider.cpp" line="334"/>
+        <source>GLM-4.7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="110"/>
+        <source>Doubao-Seed-1.8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="127"/>
+        <source>Custom</source>
+        <translation type="unfinished">Egyéni</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="135"/>
+        <source>Private deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="144"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="149"/>
+        <source>GPT-3.5 Turbo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="162"/>
+        <source>GPT-4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="175"/>
+        <source>GPT-4.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="188"/>
+        <source>o1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="201"/>
+        <source>GPT-5.3 Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="217"/>
+        <source>doubao/seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="223"/>
+        <source>Doubao-Seed 2.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="236"/>
+        <source>Doubao-Seed 2.0-Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="252"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="257"/>
+        <source>DeepSeek V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>MiniMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="279"/>
+        <source>MiniMax-M2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="295"/>
+        <source>Moonshot (KIMI)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="300"/>
+        <source>Kimi K2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="313"/>
+        <source>Kimi K2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="329"/>
+        <source>GLM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="347"/>
+        <source>GLM-5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="363"/>
+        <source>Qwen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="369"/>
+        <source>Qwen3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="382"/>
+        <source>Qwen3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="399"/>
+        <source>Anthropic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="406"/>
+        <source>Gemini</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ClickableLabel</name>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
@@ -5341,24 +5347,48 @@ Példa a felkérésre: Nevezze meg az asztalon létrehozott új mappában lévő
     </message>
 </context>
 <context>
+    <name>uos_ai::CommonFailDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
+        <source>Error</source>
+        <translation type="unfinished">Hiba</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation type="unfinished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ConversationRecord</name>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
+        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">Új beszélgetés</translation>
+    </message>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
+        <source>Null</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::CreateScheduleInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="144"/>
         <source>Create Schedule</source>
-        <translation>Ütemterv létrehozása</translation>
+        <translation type="vanished">Ütemterv létrehozása</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="146"/>
         <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation>Ütemezzen egy megbeszélést a Marketing Osztállyal 14 órától 17 óráig.</translation>
+        <translation type="vanished">Ütemezzen egy megbeszélést a Marketing Osztállyal 14 órától 17 óráig.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="155"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Sajnáljuk, nem találhatóak megfelelő műveletek.</translation>
+        <translation type="vanished">Sajnáljuk, nem találhatóak megfelelő műveletek.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="169"/>
         <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
 
 Schedule template format:
@@ -5367,7 +5397,7 @@ json
 
 Input: %1
 Current time: %2</source>
-        <translation>Kérjük, elemezze ki a megfelelő paramétereket a bemeneti tartalomból, hogy illeszkedjen az alábbi JSON formátumú ütemezési sablonhoz, és csak a JSON tartalmat adja vissza, mellőzve minden irreleváns információt.
+        <translation type="vanished">Kérjük, elemezze ki a megfelelő paramétereket a bemeneti tartalomból, hogy illeszkedjen az alábbi JSON formátumú ütemezési sablonhoz, és csak a JSON tartalmat adja vissza, mellőzve minden irreleváns információt.
 
 Ütemezési sablon formátum:
 json
@@ -5380,46 +5410,64 @@ Aktuális idő: %2</translation>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>MCP szerver hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="48"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>MCP szerver szerkesztése</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>JSON konfiguráció:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>Kérjük, illessze be az MCP JSON konfigurációs kódját a beviteli mezőbe.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>Leírás</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>Írja le az MCP szerver funkcióit a gyors keresőeszközök megkönnyítéséhez</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation type="unfinished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation>Megerősítés</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::CustomModelGroup</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
+        <source>Please enter the model ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
+        <source>Please enter the model name</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5431,94 +5479,116 @@ Aktuális idő: %2</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::DeepResearchAgent</name>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
+        <source>Collecting and analyzing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
+        <source>Data collection and analysis completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
+        <source>Research completed. %1 references collected:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
+        <source>搜索成功</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
+        <source>ERROR: 未搜索到信息！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
+        <source>未找到相关文档</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
+        <source>Local Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DeepSeekInfo</name>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="119"/>
         <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation>Az ajándék átvétele után az eredeti Baidu modell és az iFlytek modell a DeepSeek-re lesz cserélve.</translation>
+        <translation type="vanished">Az ajándék átvétele után az eredeti Baidu modell és az iFlytek modell a DeepSeek-re lesz cserélve.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="132"/>
         <source>Manually collect later</source>
-        <translation>Később kézi gyűjtés</translation>
+        <translation type="vanished">Később kézi gyűjtés</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="293"/>
         <source>Trial Account</source>
-        <translation>Próba fiók</translation>
+        <translation type="vanished">Próba fiók</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="376"/>
         <source>Get a free account</source>
-        <translation>Ingyenes fiók igénylése</translation>
+        <translation type="vanished">Ingyenes fiók igénylése</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
-        <translation>Próbálja újra</translation>
+        <translation type="vanished">Próbálja újra</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="393"/>
         <source>Enter UOS AI</source>
-        <translation>Belépés az UOS AI-ba</translation>
+        <translation type="vanished">Belépés az UOS AI-ba</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="401"/>
         <source>Receiving...</source>
-        <translation>Fogadás...</translation>
+        <translation type="vanished">Fogadás...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="410"/>
         <source>Use it immediately</source>
-        <translation>Azonnali használat</translation>
+        <translation type="vanished">Azonnali használat</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="431"/>
         <source>Checking account status...</source>
-        <translation>Fiók állapotának ellenőrzése...</translation>
+        <translation type="vanished">Fiók állapotának ellenőrzése...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
-        <translation>DeepSeek fiók igénylése sikertelen!</translation>
+        <translation type="vanished">DeepSeek fiók igénylése sikertelen!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="469"/>
         <source>Please check the network and try again later！</source>
-        <translation>Kérjük, ellenőrizze a hálózati kapcsolatot, és próbálja újra később!</translation>
+        <translation type="vanished">Kérjük, ellenőrizze a hálózati kapcsolatot, és próbálja újra később!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="472"/>
         <source>DeepSeek account successfully claimed!</source>
-        <translation>DeepSeek fiók sikeresen igényelve!</translation>
+        <translation type="vanished">DeepSeek fiók sikeresen igényelve!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="477"/>
         <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation>Kérjük, ellenőrizze a hálózati kapcsolatot és próbálja újra, vagy igényelje kézzel később az UOS AI beállításaiban</translation>
+        <translation type="vanished">Kérjük, ellenőrizze a hálózati kapcsolatot és próbálja újra, vagy igényelje kézzel később az UOS AI beállításaiban</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation>Az UOS AI teljes mértékben integrálva lett a DeepSeek-be</translation>
+        <translation type="vanished">Az UOS AI teljes mértékben integrálva lett a DeepSeek-be</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="465"/>
         <source>The free account activity has ended.</source>
-        <translation>Az ingyenes fiók kampány véget ért.</translation>
+        <translation type="vanished">Az ingyenes fiók kampány véget ért.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="473"/>
         <source>Come and experience it!</source>
-        <translation>Gyere és próbáld ki!</translation>
+        <translation type="vanished">Gyere és próbáld ki!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="481"/>
         <source>Come and claim your account!</source>
-        <translation>Gyere és igényeld fel a fiókod!</translation>
+        <translation type="vanished">Gyere és igényeld fel a fiókod!</translation>
     </message>
 </context>
 <context>
@@ -5591,16 +5661,198 @@ Aktuális idő: %2</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::EParserDocument</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="207"/>
-        <source>Generate Image</source>
-        <translation>Kép generálása</translation>
+        <source>Supported files</source>
+        <translation type="obsolete">Támogatott fájlok</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FileChannel</name>
+    <message>
+        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
+        <source>Supported files</source>
+        <translation type="unfinished">Támogatott fájlok</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FreeAccountService</name>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
+        <source>Network error</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="209"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
+        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
+        <translation type="unfinished">Az ingyenes fiókváltozata elfogyott a csevegéshez, kérjük, állítsa be a modellfiókját a további használathoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
+        <source>Not Now</source>
+        <translation type="unfinished">Most nem</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">Kreditigény</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
+        <source>Free Credits Delivered</source>
+        <translation type="unfinished">Ingyenes kreditek kézbesítve</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
+        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">Sikeresen igényelve</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
+        <source>Account not found</source>
+        <translation type="unfinished">Fiók nem található</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
+        <source>Only support trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
+        <source>You have already participated in the event and cannot claim the reward again.</source>
+        <translation type="unfinished">Már részt vett az eseményen, és nem igényelheti újra a jutalmat.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
+        <source>Server system error</source>
+        <translation type="unfinished">Szerver rendszerhiba</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GenerateImageInst</name>
+    <message>
+        <source>Generate Image</source>
+        <translation type="vanished">Kép generálása</translation>
+    </message>
+    <message>
         <source>Describe Image Content</source>
-        <translation>Kép tartalmának leírása</translation>
+        <translation type="vanished">Kép tartalmának leírása</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GetFreeAccountDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
+        <source>Get a free trial account</source>
+        <translation type="unfinished">Ingyenes próbafiók igénylése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
+        <source>Get account</source>
+        <comment>button</comment>
+        <translation type="unfinished">Fiók igénylése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished">Próba indítása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::HttpCodeTranslation</name>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Connection failed, please check the fill in information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
+        <source>Operation canceled.</source>
+        <translation type="unfinished">A művelet megszakítva.</translation>
     </message>
 </context>
 <context>
@@ -5624,6 +5876,14 @@ Aktuális idő: %2</translation>
         <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>Hálózat nem elérhető</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::IconButtonEx</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
+        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
+        <translation type="unfinished">Az újonnan hozzáadott fájlok előfeldolgozást igényelnek, mielőtt használhatók lennének, és az adatfeldolgozási folyamat során jelentős számítási és tárolási erőforrásokat fogyaszthat. Az adatfeldolgozás leáll az adatok törlése után.</translation>
     </message>
 </context>
 <context>
@@ -5665,22 +5925,203 @@ Aktuális idő: %2</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::LaunchAppInst</name>
+    <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="52"/>
-        <source>Launch or Close App</source>
-        <translation>Alkalmazás indítása vagy bezárása</translation>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
+        <source>Searching knowledge base</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="54"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
+        <source>Search complete · %1s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
+        <source>Search complete · %1m%2s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
+        <source>Are you sure you want to delete this knowledge base file?</source>
+        <translation type="unfinished">Biztosan törölni szeretné ezt a tudásbázis fájlt?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
+        <source>Delete</source>
+        <translation type="unfinished">Törlés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
+        <source>Add</source>
+        <translation type="unfinished">Hozzáadás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
+        <source>Please install the embedding model plugins first</source>
+        <translation type="unfinished">Kérjük, először telepítse a beágyazási modell bővítményeket</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
+        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
+        <translation type="unfinished">Ez a funkció nagy hardveres erőforrásokat igényel, és a referencia konfiguráció a következő: Intel 11. generációs i7 vagy újabb processzor; 16GB vagy több memória; NVIDIA grafikus kártya és 10-es vagy újabb sorozat az ideális. Ha a konfiguráció túl alacsony, olyan problémák léphetnek fel, mint a lassulás vagy pontatlan válaszok.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
+        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
+        <translation type="unfinished">Itt meghatározható a Személyes Tudásasszisztens tudásbázisa, és a Személyes Tudásasszisztens az alább hozzáadott fájlok alapján válaszol a kérdésekre.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <source>Done</source>
+        <translation type="unfinished">Kész</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
+        <source>None</source>
+        <translation type="unfinished">Nincs</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
+        <source>File already exist</source>
+        <translation type="unfinished">A fájl már létezik</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
+        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
+        <translation type="unfinished">A(z) %1 fájl már létezik, és nem adható hozzá újra. Kérjük, módosítsa a fájl nevét, vagy törölje a meglévő fájlt, mielőtt újra hozzáadná.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
+        <source>All files</source>
+        <translation type="unfinished">Összes fájl</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LaunchAppInst</name>
+    <message>
+        <source>Launch or Close App</source>
+        <translation type="vanished">Alkalmazás indítása vagy bezárása</translation>
+    </message>
+    <message>
         <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation>WPS, Zene, Album, Vezérlőpult, Naplónéző ...</translation>
+        <translation type="vanished">WPS, Zene, Album, Vezérlőpult, Naplónéző ...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
+        <source>Install</source>
+        <translation type="unfinished">Telepítés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
+        <source>Uninstall</source>
+        <translation type="unfinished">Eltávolítás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
+        <source>Update</source>
+        <translation type="unfinished">Frissítés</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
+        <source>uninstall</source>
+        <translation type="unfinished">eltávolítás</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
+        <source>Local model</source>
+        <translation type="unfinished">Helyi modell</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <source>ULLM-1.5B</source>
+        <translation type="unfinished">ULLM-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
+        <translation type="unfinished">Telepítés után nem szükséges internetkapcsolat az UOS AI használatához.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <source>ULLM-7B</source>
+        <translation type="unfinished">ULLM-7B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>DeepSeek-R1-1.5B</source>
+        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
+        <translation type="unfinished">Saját felelősségre töltheti le a nyílt forráskódú közösségtől. Telepítés után használja az UOS AI Asszisztenssel.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>UOS AI large model</source>
+        <translation type="unfinished">UOS AI nagy modell</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>Embedding Plugins</source>
+        <translation type="unfinished">Beágyazott bővítmények</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
+        <translation type="unfinished">A modell telepítése után a Rendszerasszisztens és a Személyes Tudásasszisztens is futtatható.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="114"/>
+        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>Az MCP szerver nem érhető el</translation>
     </message>
@@ -5759,17 +6200,17 @@ Aktuális idő: %2</translation>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="50"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation type="unfinished">Telepítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
         <translation type="unfinished">Eltávolítás</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
         <translation type="unfinished">Frissítés</translation>
     </message>
@@ -5777,7 +6218,7 @@ Aktuális idő: %2</translation>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>beépített</translation>
     </message>
@@ -5785,47 +6226,47 @@ Aktuális idő: %2</translation>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP-szerver</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Mind</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>Beépített</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
         <translation type="unfinished">Egyéni</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>MCP-szerver hozzáadása</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>Biztosan törli: %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>Törlés után a szerver nem lesz elérhető. Körültekintően járjon el.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation type="unfinished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
         <translation type="unfinished">Törlés</translation>
     </message>
@@ -5833,173 +6274,574 @@ Aktuális idő: %2</translation>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="59"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>MCP-környezet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP-szerver</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>UOS AI-ügynök telepítése</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>A telepítés után az MCP-szerver elérhető lesz.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::ModelHubLLM</name>
+    <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="43"/>
-        <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
+        <source>Model Configuration</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="58"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
+        <source>UOS AI FollowAlong</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
+        <source>User Agreement</source>
+        <translation type="unfinished">Felhasználói szerződés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
+        <source>Read and agreed</source>
+        <translation type="unfinished">Elolvastam és elfogadom</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
+        <source>Proxy Settings</source>
+        <translation type="unfinished">Proxy beállítások</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">Ugrás a beállításokhoz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation type="unfinished">A tudásbázisba való hozzáadáshoz a vektorizációs modell bővítmény telepítése szükséges. Kérjük, menjen az alkalmazásboltba a letöltéshez és telepítéshez.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation type="unfinished">Ne telepítse</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation type="unfinished">Azonnali telepítés</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubLLM</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation type="vanished">YouRong 1.5B</translation>
+    </message>
+    <message>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
+        <source>YouRong 1.5B</source>
+        <translation type="unfinished">YouRong 1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
+        <source>YouRong 7B</source>
+        <translation type="unfinished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <source>Get a free account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Delete</source>
+        <translation type="unfinished">Törlés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
+        <source>Add</source>
+        <translation type="unfinished">Hozzáadás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
+        <source>Online model</source>
+        <translation type="unfinished">Online modell</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Done</source>
+        <translation type="unfinished">Kész</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
+        <source>None</source>
+        <translation type="unfinished">Nincs</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
         <translation>Telepítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="108"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
         <source>Update</source>
         <translation>Frissítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
         <translation>Eltávolítás</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="113"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
         <source>Cancel</source>
         <translation>Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="151"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
         <translation>Körülbelül %1 GB</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>Telepítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
         <translation>Biztosan törölni szeretnéd ezt a modellt?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Megerősítés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="245"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>Ellenőrzés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Rendben</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="266"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
         <translation>&apos;%0 letöltése sikertelen, próbáld újra!&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="313"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
         <translation>Kérjük, először telepítse az &quot;Embedding Plugins&quot; kiegészítőt, mielőtt telepítené ezt a modellt.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="493"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
         <translation>a célmappa kukába helyezése sikertelen, próbálja újra!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="529"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>&apos;%1 másodperc&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="531"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>&apos;%1 perc&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="536"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
         <translation>&apos;%1MB/%2GB letöltve, %3 maradt.&apos;</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="294"/>
-        <source>Multimedia Control</source>
-        <translation>Multimédia vezérlés</translation>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
+        <source>Are you sure you want to delete this model?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="297"/>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelValidator</name>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="37"/>
+        <source>Invalid model account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="54"/>
+        <source>Unsupported model type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="62"/>
+        <source>Model does not support chat completion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="89"/>
+        <source>Model is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="98"/>
+        <source>HTTP error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="108"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModifyProviderDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
+        <source>For proxy settings, please go to system proxy settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">Ugrás a beállításokhoz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Delete</source>
+        <translation type="unfinished">Törlés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Edit Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Add Model</source>
+        <translation type="unfinished">Modell hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
+        <source>Account</source>
+        <translation type="unfinished">Fiók</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
+        <source>Required, to distinguish multiple models</source>
+        <translation type="unfinished">Kötelező, több modell megkülönböztetéséhez</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
+        <source>Provider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
+        <source>APIKey</source>
+        <translation type="unfinished">API kulcs</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
+        <source>Required, please input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
+        <source>Domain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
+        <source>Enable</source>
+        <translation type="unfinished">Engedélyezés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
+        <source>Custom</source>
+        <translation type="unfinished">Egyéni</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
+        <source>Add</source>
+        <translation type="unfinished">Hozzáadás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
+        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
+        <source>Name and Model ID must be filled in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Done</source>
+        <translation type="unfinished">Kész</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
+        <source>Test passed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
+        <source>The model service is available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::MultimediaControlInst</name>
+    <message>
+        <source>Multimedia Control</source>
+        <translation type="vanished">Multimédia vezérlés</translation>
+    </message>
+    <message>
         <source>Play music, state control, seek...</source>
-        <translation>Zene lejátszása, állapotvezérlés, keresés...</translation>
+        <translation type="vanished">Zene lejátszása, állapotvezérlés, keresés...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OperatingLineWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
+        <source>In data processing</source>
+        <translation type="unfinished">Adatfeldolgozás alatt</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
+        <source>Data processing error</source>
+        <translation type="unfinished">Adatfeldolgozási hiba</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
+        <source>File error, unable to process, please delete.</source>
+        <translation type="unfinished">Fájlhiba, nem dolgozható fel, kérjük törölje.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OutlineAgent</name>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
+        <source>Generating outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
+        <source>Generating outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
+        <source>Outline generated, please confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
+        <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
+        <source>Detected uploaded local outline, please confirm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
+        <source>Failed to parse the uploaded outline file, please re-upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
+        <source>Generating outline content failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
+        <source>Based on your writing task, I have generated the following outline for **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
+        <source>I have parsed your uploaded outline and structured it as **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
+        <source>
+The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::PersonalKnowledgeAssistant</name>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
+        <translation type="unfinished">A személyes tudásasszisztens csak a modell beépülő modul konfigurálása után használható.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
+        <translation type="unfinished">A személyes tudásasszisztens csak a tudásbázis konfigurálása után használható.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Törlés</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="36"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Hozzáadás</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Privát üzembe helyezési modell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>Nincs</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ProviderListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
+        <source>Are you sure you want to delete this provider?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Mégse</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6021,37 +6863,60 @@ Aktuális idő: %2</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SearchOnlineInst</name>
+    <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="249"/>
-        <source>Search Online</source>
-        <translation>Online keresés</translation>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
+        <source>Document Generating</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="251"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
+        <source>failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
+        <source>Document Generated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
+        <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
+        <source>You can ask follow-up questions or request adjust the article.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SearchOnlineInst</name>
+    <message>
+        <source>Search Online</source>
+        <translation type="vanished">Online keresés</translation>
+    </message>
+    <message>
         <source>Enter Search Content</source>
-        <translation>Keresési tartalom megadása</translation>
+        <translation type="vanished">Keresési tartalom megadása</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SendMailInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="81"/>
         <source>Send Mail</source>
-        <translation>Levél küldése</translation>
+        <translation type="vanished">Levél küldése</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="83"/>
         <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation>Segítsen nekem e-mailt küldeni [Címzett neve] számára, a következő tartalommal: [E-mail tartalom].</translation>
+        <translation type="vanished">Segítsen nekem e-mailt küldeni [Címzett neve] számára, a következő tartalommal: [E-mail tartalom].</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="92"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Sajnáljuk, nem találhatóak megfelelő műveletek.</translation>
+        <translation type="vanished">Sajnáljuk, nem találhatóak megfelelő műveletek.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="106"/>
         <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
 
 Email template format:
@@ -6059,7 +6924,7 @@ json
 {&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
 
 Input: %1</source>
-        <translation>Kérjük, vonja ki a megfelelő paramétereket a megadott bemenetből az alábbi JSON e-mail-sablon formátumához, és csak a JSON-tartalmat adja vissza. Ne tartalmazzon semmilyen felesleges információt.
+        <translation type="vanished">Kérjük, vonja ki a megfelelő paramétereket a megadott bemenetből az alábbi JSON e-mail-sablon formátumához, és csak a JSON-tartalmat adja vissza. Ne tartalmazzon semmilyen felesleges információt.
 
 E-mail-sablon formátum:
 
@@ -6070,21 +6935,72 @@ Bemenet: %1</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
+        <source>Failed to get MCP server instance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
+        <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
+        <translation type="unfinished">A(z) &apos;%1&apos; szerver nem egyéni szerver, vagy nem létezik</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
+        <source>MCP server name &apos;%1&apos; already exists</source>
+        <translation type="unfinished">Az &apos;%1&apos; MCP-szervernév már létezik</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
+        <source>Server &apos;%1&apos; does not exist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SessionManager</name>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="52"/>
+        <source>Session with ID %1 already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="63"/>
+        <source>Session %1 create assistant %2 failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="74"/>
+        <source>Session %1 create success</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="120"/>
+        <source>Session %1 not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="128"/>
+        <source>Session %1 is not idle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ShortcutUpdateDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="51"/>
         <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation>Gyorsbillentyű: [Super + Szóköz]. Gyorsan hívja meg az UOS AI-t, hogy egy helyen hozzáférjen az összes AI funkcióhoz.</translation>
+        <translation type="vanished">Gyorsbillentyű: [Super + Szóköz]. Gyorsan hívja meg az UOS AI-t, hogy egy helyen hozzáférjen az összes AI funkcióhoz.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="79"/>
         <source>Got it</source>
-        <translation>Értettem</translation>
+        <translation type="vanished">Értettem</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="107"/>
         <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation>Ez az üzenet még %1 alkalommal megjelenik, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Ne jelenjen meg újra&lt;/a&gt;</translation>
+        <translation type="vanished">Ez az üzenet még %1 alkalommal megjelenik, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Ne jelenjen meg újra&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -6166,93 +7082,1727 @@ Bemenet: %1</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SkillServerListItem</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
-        <source>built-in</source>
-        <translation type="unfinished">beépített</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
-        <source>Skill List</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
+        <source>UOS AI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
-        <source>Import Skill</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
-        <source>Supported files</source>
-        <translation type="unfinished">Támogatott fájlok</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
-        <source>Confirm deletion %1?</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
+        <source>Update History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
-        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
+        <source>Settings</source>
+        <translation type="unfinished">Beállítások</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
+        <source>About</source>
+        <translation type="unfinished">Névjegy</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
+        <source>New Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
+        <source>Temporary Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
+        <source>AI Writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
+        <source>AI Translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
+        <source>AI Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
+        <source>MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
+        <source>Commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
+        <source>Agent Store</source>
+        <translation type="unfinished">Ügynök bolt</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
+        <source>More</source>
+        <translation type="unfinished">Több</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
+        <source>Chat History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
+        <source>Today</source>
+        <translation type="unfinished">Ma</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
+        <source>Yesterday</source>
+        <translation type="unfinished">Tegnap</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
+        <source>Last 7 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
+        <source>Last 30 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
+        <source>January</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
+        <source>February</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
+        <source>March</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
+        <source>April</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
+        <source>May</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <source>June</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <source>July</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <source>August</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <source>September</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <source>October</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <source>November</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <source>year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
+        <source>Earlier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
+        <source>Delete</source>
+        <translation type="unfinished">Törlés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
+        <source>Confirm Deletion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
+        <source>Confirm Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>Cancel</source>
         <translation type="unfinished">Mégse</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
-        <source>Delete</source>
-        <translation type="unfinished">Törlés</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
-        <source>Skill Enviorment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
+        <source>Batch Manage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
-        <source>Agent Skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
+        <source>All</source>
+        <translation type="unfinished">Mind</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
+        <source>Select All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
-        <source>Configure </source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
+        <source>%1 conversations selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
-        <source>MCP environment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
+        <source>No chat history yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
-        <source>After configuration you can use agent skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
+        <source>Chat content not found</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
+        <source>DeepThink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
+        <source>Search</source>
+        <translation type="unfinished">Keresés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
+        <source>Attachments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
+        <source>Upload Files</source>
+        <translation type="unfinished">Fájlok feltöltése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
+        <source>Screenshot Q&amp;A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
+        <source>Voice Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
+        <source>Voice Read</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
+        <source>Stop Reading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
+        <source>Copy</source>
+        <translation type="unfinished">Másolás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
+        <source>Regenerate</source>
+        <translation type="unfinished">Újragenerálás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
+        <source>Re-edit</source>
+        <translation type="unfinished">Újraszerkesztés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
+        <source>Stop Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
+        <source>Generation stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
+        <source>You stopped this answer, please re-edit your question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <source>Back to Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
+        <source>Thinking...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
+        <source>Deep think completed (took %1s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
+        <source>Parsing...</source>
+        <translation type="unfinished">Feldolgozás...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
+        <source>Parsing failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
+        <source>You can add up to 50 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
+        <source>Summarize the core content of the file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
+        <source>Model List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
+        <source>Smart Recommendation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
+        <source>Smart switch for best match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
+        <source>Local Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
+        <source>Online Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
+        <source>Add Model</source>
+        <translation type="unfinished">Modell hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <source>Official</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
+        <source>You have X newly answered chats</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
+        <source>View Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
+        <source>Remind Me Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
+        <source>Upload files/images as references</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
+        <source>Reference Outline / Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
+        <source>As reference material / As outline file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
+        <source>File Upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
+        <source>As Material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
+        <source>As Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
+        <source>Only 1 file is supported for outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
+        <source>Local Materials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
+        <source>File Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
+        <source>Outline</source>
+        <translation type="unfinished">Vázlat</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
+        <source>View All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
+        <source>Collapse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
+        <source>Recent Creations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
+        <source>Upload File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
+        <source>Reference Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
+        <source>Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
+        <source>Heading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
+        <source>Export Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
+        <source>Exit Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
+        <source>Untitled Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
+        <source>Enable Privacy Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
+        <source>Continue Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
+        <source>Generating outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
+        <source>Re-upload Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
+        <source>Directly generate outline using AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
+        <source>Add sub-chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <source>Delete chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
+        <source>Add chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
+        <source>Enter chapter title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
+        <source>Delete this heading?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
+        <source>Generate document from outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
+        <source>Save as Word</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
+        <source>Save as PDF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
+        <source>Save as Markdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
+        <source>Saving...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
+        <source>Saved successfully!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
+        <source>Failed to save, please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
+        <source>Undo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
+        <source>Redo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
+        <source>Body Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
+        <source>Heading %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
+        <source>Bold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
+        <source>Italic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
+        <source>Strikethrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
+        <source>Link Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
+        <source>Bulleted List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
+        <source>Numbered List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
+        <source>Decrease Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
+        <source>Increase Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
+        <source>Blockquote</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
+        <source>Divider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
+        <source>Copy Full Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
+        <source>Print Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
+        <source>Share Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
+        <source>Zoom Out</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
+        <source>Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <source>Please enter the text to be translated first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
+        <source>Identifying source language...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
+        <source>My MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
+        <source>Add MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
+        <source>Delete MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <source>Built-in Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
+        <source>Custom Added Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
+        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <source>Install Now</source>
+        <translation type="unfinished">Telepítés most</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
+        <source>System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
+        <source>Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
+        <source>Wireless Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
+        <source>DND Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
+        <source>Eye Comfort</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
+        <source>Brightness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
+        <source>Volume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
+        <source>Font Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
+        <source>App Store</source>
+        <translation type="unfinished">Alkalmazásbolt</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
+        <source>Schedule Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
+        <source>Click to download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
+        <source>downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <source>Go to configuration</source>
+        <translation type="unfinished">Ugrás a konfigurációhoz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
+        <source>No account</source>
+        <translation type="unfinished">Nincs fiók</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
+        <source>Input question</source>
+        <translation type="unfinished">Kérdés bevitele</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">Üdvözöljük az UOS AI-ban</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation type="unfinished">Íme néhány dolog, amiben az UOS AI segíthet Önnek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
+        <source>Stop</source>
+        <translation type="unfinished">Leállítás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
+        <source>Retry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
+        <source>Clear conversation history</source>
+        <translation type="unfinished">Beszélgetési előzmények törlése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
+        <source>Please connect the microphone and try again</source>
+        <translation type="unfinished">Kérjük, csatlakoztassa a mikrofont és próbálja újra</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
+        <source>Chat history cleared</source>
+        <translation type="unfinished">Csevegési előzmények törölve</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
+        <source>Click to start/stop recording</source>
+        <translation type="unfinished">Kattintson a felvétel indításához/leállításához</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
+        <source>Listening</source>
+        <translation type="unfinished">Figyelés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
+        <source>Sleeping</source>
+        <translation type="unfinished">Alvó mód</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
+        <source>Microphone not detected</source>
+        <translation type="unfinished">Mikrofon nem érzékelhető</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
+        <source>Connection failed, click to try again</source>
+        <translation type="unfinished">A kapcsolat sikertelen, kattintson az újrapróbálkozáshoz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
+        <source>Click on the animation or Ctrl+Super+Space to activate</source>
+        <translation type="unfinished">Kattintson az animációra vagy nyomja meg a Ctrl+Super+Szóköz billentyűkombinációt az aktiváláshoz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">A hangbevitel átmenetileg nem elérhető, kérjük, ellenőrizze a hálózatot!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
+        <source>Voice conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
+        <source>Click the animation or press Enter to send</source>
+        <translation type="unfinished">Kattintson az animációra vagy nyomja meg az Entert az elküldéshez</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
+        <source>Stop recording after %1 seconds</source>
+        <translation type="unfinished">Felvétel leállítása %1 másodperc után</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
+        <source>Thinking</source>
+        <translation type="unfinished">Gondolkodás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
+        <source>Click animation to interrupt</source>
+        <translation type="unfinished">Kattintson az animációra a megszakításhoz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
+        <source>Answering</source>
+        <translation type="unfinished">Válaszolás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
+        <source>Activate</source>
+        <translation type="unfinished">Aktiválás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
+        <source>Voice input</source>
+        <translation type="unfinished">Hangbemenet</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">A hangos közvetítés átmenetileg nem elérhető, kérjük, ellenőrizze a hálózatot!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
+        <source>Turn off voice conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation type="unfinished">A kép elkészült, kérjük, váltson a csevegési felületre a megtekintéshez.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
+        <source>No account, please configure an account</source>
+        <translation type="unfinished">Nincs fiók, kérjük, konfiguráljon egy fiókot</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
+        <source>Answer each question up to 5 times</source>
+        <translation type="unfinished">Minden kérdésre legfeljebb 5 válasz</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
+        <source>Copied successfully</source>
+        <translation type="unfinished">Sikeresen másolva</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
+        <source>Sound output device not detected</source>
+        <translation type="unfinished">Hangkimeneti eszköz nem észlelhető</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation type="unfinished">A hangkimeneti eszköz nem észlelhető, kérjük, ellenőrizze és próbálja újra!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
+        <source>Mode</source>
+        <translation type="unfinished">Mód</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
+        <source>Window Mode</source>
+        <translation type="unfinished">Ablak mód</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
+        <source>Sidebar Mode</source>
+        <translation type="unfinished">Oldalsáv mód</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
+        <source>Assistant List</source>
+        <translation type="unfinished">Asszisztens lista</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
+        <source>Agent List</source>
+        <translation type="unfinished">Ügynök lista</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
+        <source>UOS System Assistant</source>
+        <translation type="unfinished">UOS Rendszerasszisztens</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
+        <source>Deepin System Assistant</source>
+        <translation type="unfinished">Deepin Rendszerasszisztens</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
+        <source>Please configure the knowledge base</source>
+        <translation type="unfinished">Kérjük, konfigurálja a tudásbázist</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation type="unfinished">A [Személyes Tudás Asszisztens] használata előtt konfigurálni kell a tudásbázist. A tudásbázis konfigurálása után az AI a tudásbázisban konfigurált tartalom alapján válaszol a kérdésekre vagy generál tartalmat.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
+        <source>Please configure the large model</source>
+        <translation type="unfinished">Kérjük, konfigurálja a nagy modellt</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation type="unfinished">A személyes tudás asszisztens csak egy nagy modell konfigurálása után használható.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
+        <source>To configure</source>
+        <translation type="unfinished">Konfigurálás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
+        <source>To install</source>
+        <translation type="unfinished">Telepítés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation type="unfinished">Kérjük, telepítse az [EmbeddingPlugins]-t</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation type="unfinished">Az asszisztens működéséhez szükséges az EmbeddingPlugins telepítése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
+        <source>Drag files here to add them.</source>
+        <translation type="unfinished">Húzza ide a fájlokat a hozzáadáshoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation type="unfinished">Maximum 3 fájlt adhat hozzá; támogatott fájltípusok: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kódfájlok stb.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
+        <source>You can only add a maximum of one file.</source>
+        <translation type="unfinished">Legfeljebb egy fájlt adhat hozzá.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
+        <source>The file format is not supported.</source>
+        <translation type="unfinished">A fájlformátum nem támogatott.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
+        <source>Summarize the key content of the file.</source>
+        <translation type="unfinished">A fájl kulcstartalmának összefoglalása.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
+        <source>File Error</source>
+        <translation type="unfinished">Fájlhiba</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
+        <source>File has been deleted.</source>
+        <translation type="unfinished">A fájl törölve lett.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation type="unfinished">A fájl mérete meghaladja a 100 MB-os korlátot.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
+        <source>Upload a document</source>
+        <translation type="unfinished">Dokumentum feltöltése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
+        <source>File deleted</source>
+        <translation type="unfinished">Fájl törölve</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
+        <source>No text was parsed</source>
+        <translation type="unfinished">Nem sikerült szöveget feldolgozni</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
+        <source>Reference</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
+        <source>Instruction</source>
+        <translation type="unfinished">Utasítás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation type="unfinished">Írja be a &quot;/&quot; karaktert a beviteli mezőbe az aktiváláshoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation type="unfinished">Kérjük, írja be; „Ctrl+Enter” a sorváltáshoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation type="unfinished">Írja be kérdését, vagy írja be a &quot;/&quot; karaktert egy parancs kiválasztásához
+&quot;Ctrl+Enter&quot; az új sor kezdéséhez</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
+        <source>Search complete.</source>
+        <translation type="unfinished">Keresés befejezve.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
+        <source>Click to view results</source>
+        <translation type="unfinished">Kattintson az eredmények megtekintéséhez</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
+        <source>edit</source>
+        <translation type="unfinished">szerkesztés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <source>save</source>
+        <translation type="unfinished">mentés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
+        <source>copy</source>
+        <translation type="unfinished">másolás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <source>Thinking has stopped</source>
+        <translation type="unfinished">A gondolkodás leállt</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
+        <source>Back to bottom</source>
+        <translation type="unfinished">Vissza az aljára</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation type="unfinished">Mélyen elgondolkodva (%1 másodperc)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">Új beszélgetés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
+        <source>History</source>
+        <translation type="unfinished">Előzmények</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
+        <source>No History Records</source>
+        <translation type="unfinished">Nincsenek előzmények</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation type="unfinished">Biztosan törli a beszélgetést? A törlés után nem lehet visszaállítani.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation type="unfinished">A %1 ügynök, amelyet ebben a beszélgetésben használt, törölve lett</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation type="unfinished">Ez a beszélgetés nem tekinthető meg. A megtekintéséhez telepítse a %1 ügynököt, és próbálja újra.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation type="unfinished">Az eredeti beszélgetési modell törölve lett. Átváltottunk egy új modellre, hogy folytathassa a beszélgetést.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <source>Recommendations</source>
+        <translation type="unfinished">Ajánlások</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <source>No Model</source>
+        <translation type="unfinished">Nincs modell</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation type="unfinished">Nincs elérhető modell. Telepítsen vagy konfiguráljon egy modellt a beállításokban.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation type="unfinished">Kérjük, írja le a tartalom témáját és követelményeit az alkotáshoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation type="unfinished">Kérjük, adja meg a lefordítani kívánt tartalmat és a célnyelvet. Az alapértelmezett fordítás kínaira történik.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation type="unfinished">Kérjük, adja meg a feldolgozni kívánt szöveget és a követelményeket.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <source>New Agent Added</source>
+        <translation type="unfinished">Új ügynök hozzáadva</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation type="unfinished">Új írási, szövegfeldolgozó és fordítási ügynökök lettek hozzáadva. Nézze meg őket most.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <source>Try it</source>
+        <translation type="unfinished">Próbálja ki</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <source>Write an article based on the following document:</source>
+        <translation type="unfinished">Írjon egy cikket a következő dokumentum alapján:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <source>Translate the following document into English:</source>
+        <translation type="unfinished">Fordítsa le a következő dokumentumot angolra:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <source>Add Mcp Server</source>
+        <translation type="unfinished">MCP-kiszolgáló hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <source>Add Server</source>
+        <translation type="unfinished">Kiszolgáló hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <source>Add failed! Error reason:</source>
+        <translation type="unfinished">Hozzáadás sikertelen! Hiba oka:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation type="unfinished">Hiányzik az MCP-környezet. Kérjük, telepítse az 【UOS AI Agent】 alkalmazást</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <source>Calling</source>
+        <translation type="unfinished">Hívás folyamatban</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <source>Completed</source>
+        <translation type="unfinished">Kész</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <source>Call Failed</source>
+        <translation type="unfinished">Hívás sikertelen</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <source>Cancelled</source>
+        <translation type="unfinished">Megszakítva</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <source>params</source>
+        <translation type="unfinished">paraméterek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <source>result</source>
+        <translation type="unfinished">eredmény</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">Az MCP-kiszolgálóhoz váltson a hivatalosan kiadott „DeepSeek-Trial Account” modellre</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation type="unfinished">Add meg az MCP-szerver parancsát, pl. „Kapcsold a rendszert sötét módra”</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
+        <source>Agent server is not available</source>
+        <translation type="unfinished">Az ügynök-szerver nem érhető el</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
+        <source>Agent server exception</source>
+        <translation type="unfinished">Ügynök-szerver kivétel</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <source>MCP server is not available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation type="unfinished">Automatizálj többfájlos és többalkalmazásos feladatokat egyetlen paranccsal az MCP-szolgáltatással. Próbáld ki most!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <source>Use later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <source>Enable MCP Server</source>
+        <translation type="unfinished">MCP-szerver engedélyezése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation type="unfinished">Az „UOS AI Agent” MCP-környezet telepítése után kattints a </translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation type="unfinished"> és válaszd ki az „uos-mcp”-t az MCP-szerverlistában.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation type="unfinished">Próbáld ki: „Kapcsold a rendszert sötét módra”.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <source>Try it now</source>
+        <translation type="unfinished">Próbáld ki most</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation type="unfinished">MCP-szerver hozzáadása [Útmutató oldal]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation type="unfinished">Első használat: telepítsd az „UOS AI Agent” MCP-környezetet az App Store-ból.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation type="unfinished">A JSON-fájl formátuma hibás, kérjük, ellenőrizd és küldd be újra</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
+        <source>Install Now &gt;</source>
+        <translation type="unfinished">Telepítés most &gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <source>General Chat</source>
+        <translation type="unfinished">Általános csevegés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
+        <source>Now in Private Chat</source>
+        <translation type="unfinished">Most privát csevegésben vagy</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation type="unfinished">A privát csevegés üzenetei nem kerülnek mentésre az előzményekbe, és véglegesen törlődnek, amikor kilépsz a csevegésből.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation type="unfinished">Képernyőkép kérdés-válasz Gyorsbillentyű (Ctrl+Alt+Q), legfeljebb 3 kép támogatott.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
+        <source>Cannot be used during screen recording</source>
+        <translation type="unfinished">Képernyőfelvétel közben nem használható</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
+        <source>You can upload up to 3 files or image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation type="unfinished">Kérjük, töröld a hibás fájlt és küldd el újra</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
+        <source>Add Private Chat</source>
+        <translation type="unfinished">Privát csevegés hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation type="unfinished">[Képernyőkép kérdés-válasz] hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation type="unfinished">Készíts képernyőképet és küldd el a tartalmat az UOS AI-nak. Képet közvetlenül is feltölthetsz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
+        <source>Next</source>
+        <translation type="unfinished">Tovább</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation type="unfinished">[Privát csevegési mód] hozzáadása – a beszélgetések nem lesznek mentve.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
+        <source>No text extracted</source>
+        <translation type="unfinished">Nincs kinyert szöveg</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
+        <source>Image size exceeds 15 MB</source>
+        <translation type="unfinished">A kép mérete meghaladja a 15 MB-ot</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation type="unfinished">A tudásbázis megnyitása után a válaszok annak tartalmán alapulnak. A válaszidő a gép teljesítményétől és a tudásbázis méretétől függ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation type="unfinished">A tudásbázis nem érhető el, ha bármely parancs vagy MCP van kiválasztva.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation type="unfinished">Az MCP le van tiltva, amíg a tudásbázis aktív.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation type="unfinished">Parancsok le vannak tiltva, amíg a tudásbázis aktív.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
+        <source>Copy succeeded.</source>
+        <translation type="unfinished">Másolás sikeres.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
+        <source>Copy failed. Please try again.</source>
+        <translation type="unfinished">A másolás nem sikerült. Próbálja újra.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
+        <source>Searching</source>
+        <translation type="unfinished">Keresés</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation type="unfinished">%1 referenciadokumentum letöltve (%2 mp)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
+        <source>Clear History</source>
+        <translation type="unfinished">Előzmények törlése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
+        <source>Delete all records?</source>
+        <translation type="unfinished">Törli az összes bejegyzést?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation type="unfinished">Törlés után a tartalom nem állítható vissza!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
+        <source>Recommend official models</source>
+        <translation type="unfinished">Hivatalos modellek ajánlása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
+        <source>Disable MCP</source>
+        <translation type="unfinished">MCP letiltása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">Javasolt a hivatalos „DeepSeek-Trial Account” modell használata</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
+        <source>Quick Open</source>
+        <translation type="unfinished">Gyors megnyitás</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation type="unfinished">MCP-kiszolgáló automatikus módra frissítése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation type="unfinished">Az MCP-kiszolgálók automatikus módra frissültek, így egy kattintással elérhetők.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation type="unfinished">, így rendszerbeállítási és fájlfeldolgozási feladatokat automatizálhat egyetlen kattintással.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation type="unfinished">Az MCP-kiszolgáló hozzáadása a Beállításokhoz került.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation type="unfinished">További MCP-kiszolgálók hozzáadásához lépjen a Beállítások &gt; MCP-kiszolgáló menübe.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
+        <source>Got it</source>
+        <translation type="unfinished">Értettem</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
+        <source>Complimentary Model Credits</source>
+        <translation type="unfinished">Ingyenes modellkreditek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation type="unfinished">A jelenlegi rendszer a DeepSeek próbafiók modellt kínálja, amely minden hónap elején automatikusan frissíti az ingyenes kvótát, így gond nélkül használhatja.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">Kreditigény</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
+        <source>Get a free account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
+        <source>Claim Free Credits</source>
+        <translation type="unfinished">Ingyenes kreditek igénylése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">Sikeresen igényelve</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">Az igénylés sikertelen. Kérjük, próbálja újra.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
+        <source>Enable MCP Server&amp;</source>
+        <translation type="unfinished">MCP Szerver engedélyezése&amp;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
+        <source>Disable MCP Server</source>
+        <translation type="unfinished">MCP Szerver letiltása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
+        <source>Configure MCP Server</source>
+        <translation type="unfinished">MCP Szerver beállítása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI Követés/Írás</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemControlInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="23"/>
         <source>System Control</source>
-        <translation>Rendszervezérlés</translation>
+        <translation type="vanished">Rendszervezérlés</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="25"/>
         <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation>Váltás új háttérképre. A képernyő fényerejének beállítása 30%-ra...</translation>
+        <translation type="vanished">Váltás új háttérképre. A képernyő fényerejének beállítása 30%-ra...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::TtsCompositeWidget</name>
+    <message>
+        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
+        <source>The text you have selected has exceeded the 5000 character limit.</source>
+        <translation type="unfinished">A kiválasztott szöveg meghaladja az 5000 karakteres korlátot.</translation>
     </message>
 </context>
 <context>
@@ -6266,6 +8816,101 @@ Bemenet: %1</translation>
         <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>A hálózat offline, a szövegből beszéd leállítva</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSAbilityManager</name>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
+        <source>Brightness is already at maximum and cannot be increased further.</source>
+        <translation type="unfinished">A fényerő már a maximális szinten van, nem növelhető tovább.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
+        <source>Brightness is already at minimum and cannot be decreased further.</source>
+        <translation type="unfinished">A fényerő már a minimális szinten van, nem csökkenthető tovább.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
+        <source>AI Meeting Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
+        <source>Your system memory is %0.</source>
+        <translation type="unfinished">A rendszermemória %0.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
+        <source>The language setting interface has been opened. Please set it in this interface.</source>
+        <translation type="unfinished">A nyelvi beállítások felülete megnyílt. Kérjük, itt állítsa be.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
+        <source>The current mode is already %1 mode.</source>
+        <translation type="unfinished">A jelenlegi mód már %1 mód.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
+        <source>Unable to close because the current mode %1 does not match the target mode.</source>
+        <translation type="unfinished">Nem lehet bezárni, mert a jelenlegi %1 mód nem egyezik a célmóddal.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
+        <source>Balance mode cannot be turned off.</source>
+        <translation type="unfinished">Az egyensúly mód nem kapcsolható ki.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
+        <source>The lock screen has been opened for you</source>
+        <translation type="unfinished">A képernyőzár fel lett oldva Ön számára</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
+        <source>Screen shotting or recording has been completed</source>
+        <translation type="unfinished">A képernyőkép készítése vagy felvétel befejeződött</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
+        <source>Only one screen, can&apos;t switch screen mode.</source>
+        <translation type="unfinished">Csak egy képernyő van, nem lehet váltani a képernyőmód között.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
+        <source>It is the same as the current display mode. Please try again.</source>
+        <translation type="unfinished">Ugyanaz, mint a jelenlegi megjelenítési mód. Kérjük, próbálja újra.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
+        <source>Only one screen, can&apos;t switch screen.</source>
+        <translation type="unfinished">Csak egy képernyő van, nem lehet váltani a képernyők között.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
+        <source>Your command has been issued.</source>
+        <translation type="unfinished">A parancs kiadásra került.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
+        <source>Failed to rename file %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
+        <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
+Error details:
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
+        <source>Email client has been opened, please confirm to send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
+        <source>App store has been opened, preparing to install application: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6290,80 +8935,193 @@ Bemenet: %1</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::UserAgreementDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">Igazolom, hogy 18 éven felüli vagyok. Tudomásul veszem és elfogadom, hogy az Alkalmazáson keresztül küldött és fogadott tartalmak közvetlen adatcserét jelentenek a nagy modell szolgáltatóval, és semmi közük a Vállalathoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::WelcomeDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">Üdvözöljük az UOS AI-ban</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
+        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
+        <translation type="unfinished">Az UOS AI, az Ön intelligens asszisztense, a termelékenység növelésére és egy kiváló minőségű munkatapasztalat élvezetére tervezett.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
+        <source>Get a free account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
+        <source>Add Model</source>
+        <translation type="unfinished">Modell hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
+        <source>Start using</source>
+        <translation type="unfinished">Használat kezdése</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">Jóváhagyom, hogy 18 éven felüli vagyok. Tudomásul veszem és elfogadom az &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Felhasználói Szerződést&quot;&lt;/a&gt;, valamint hogy az Alkalmazáson keresztül küldött és fogadott tartalmak közvetlen adatcsere a nagy modell szolgáltatóval, és semmi közük a Vállalathoz.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished">Próba indítása</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="113"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
         <translation>Elrejtés az alkalmazás újraindításáig</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>A &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Beállítások&lt;/a&gt; menüpontban kapcsolható vissza.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
         <translation>A hozzáadott tartalomnak több mint 10 szóból kell állnia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>Keresés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>Magyarázat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>Összefoglaló</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>Fordítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
         <translation>Írás folytatása</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>Bővítés</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
         <translation>Javítás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
         <source>Add to the AI knowledge base</source>
         <translation>Hozzáadás az MI tudásbázishoz</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="114"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>Letiltás ebben az alkalmazásban</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="115"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>Globális letiltás</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="125"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Egyéni beállítások</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
         <source>Polish</source>
         <translation>Finomítás</translation>
     </message>
@@ -6371,12 +9129,11 @@ Bemenet: %1</translation>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI FollowAlong</translation>
+        <translation type="vanished">UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Hozzáadva</translation>
     </message>

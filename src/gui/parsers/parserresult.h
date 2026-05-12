@@ -5,13 +5,13 @@
 #ifndef PARSERRESULT_H
 #define PARSERRESULT_H
 
-#include "uosai_global.h"
+
 
 #include <QString>
 #include <QStringList>
 #include <QSharedPointer>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief Result container for file parsing operations
@@ -65,6 +65,6 @@ public:
     virtual QString errorString() const = 0;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // PARSERRESULT_H

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF674A" offset="0%"></stop>
+            <stop stop-color="#EC5783" offset="100%"></stop>
+        </linearGradient>
+        <path d="M5.99442857,0 C9.31119394,0 12,2.68695042 12,6 C12,9.31304957 9.31119394,12 5.99442857,12 C2.68323579,12 0,9.313053 0,6 C0,2.68694704 2.68323579,0 5.99442857,0 Z" id="path-2"></path>
+        <filter x="-4.2%" y="-4.2%" width="108.3%" height="108.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icon/mcp/mcp-warning" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
+        <g id="warning" transform="translate(2, 2)">
+            <g id="Shape">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <path d="M6,2.25 C6.20710678,2.25 6.375,2.41789322 6.375,2.625 L6.375,7.125 C6.375,7.33210678 6.20710678,7.5 6,7.5 C5.79289322,7.5 5.625,7.33210678 5.625,7.125 L5.625,2.625 C5.625,2.41789322 5.79289322,2.25 6,2.25 Z M6,9.75 C6.41421356,9.75 6.75,9.41421356 6.75,9 C6.75,8.58578644 6.41421356,8.25 6,8.25 C5.58578644,8.25 5.25,8.58578644 5.25,9 C5.25,9.41421356 5.58578644,9.75 6,9.75 Z" id="形状结合" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

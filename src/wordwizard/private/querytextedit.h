@@ -1,7 +1,7 @@
 #ifndef QUERYTEXTEDIT
 #define QUERYTEXTEDIT
 
-#include "uosai_global.h"
+
 
 #include <QTextEdit>
 

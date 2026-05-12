@@ -1,0 +1,237 @@
+html {
+    --model-selector-dropdown-bg-color: rgba(238, 238, 238, 1);
+    --model-selector-dropdown-bg-blur-color: rgba(238, 238, 238, 0.8);
+    --model-selector-dropdown-border-color: rgba(0, 0, 0, 0.05);
+    --model-selector-header-divider-color: rgba(0, 0, 0, 0.05);
+    --model-selector-header-title-color: rgba(0, 0, 0, 0.5);
+    --model-selector-group-text-color: rgba(0, 0, 0, 0.5);
+    --model-selector-item-text-color: rgba(0, 0, 0, 0.7);
+    --model-selector-item-bg-hover-color: rgba(0, 0, 0, var(--bg-opacity-hover));
+    --model-selector-item-bg-active-color: rgba(0, 0, 0, var(--bg-opacity-active));
+}
+
+html.dark {
+    --model-selector-dropdown-bg-color: rgba(24, 24, 24, 1);
+    --model-selector-dropdown-bg-blur-color: rgba(24, 24, 24, 0.8);
+    --model-selector-dropdown-border-color: rgba(0, 0, 0, 0.3);
+    --model-selector-header-divider-color: rgba(255, 255, 255, 0.1);
+    --model-selector-header-title-color: rgba(255, 255, 255, 0.5);
+    --model-selector-group-text-color: rgba(255, 255, 255, 0.5);
+    --model-selector-item-text-color: rgba(255, 255, 255, 0.7);
+    --model-selector-item-bg-hover-color: rgba(255, 255, 255, var(--bg-opacity-hover));
+    --model-selector-item-bg-active-color: rgba(255, 255, 255, var(--bg-opacity-active));
+}
+
+/* 下拉菜单容器 */
+.model-selector-dropdown {
+    position: absolute;
+    min-width: 240px;
+    max-height: 400px;
+    background-color: var(--model-selector-dropdown-bg-color);
+    border: 1px solid var(--model-selector-dropdown-border-color);
+    border-radius: var(--radius-large);
+    box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 6px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 滚动容器 */
+.model-selector-dropdown__scroll {
+    flex: 1;
+    height: auto;
+    min-height: 0;
+    max-height: 360px;
+}
+
+/* ScrollBar 根节点自身就带有 scroll-bar-container，这里需要直接覆盖默认的 height: 100% */
+.model-selector-dropdown__scroll .scroll-bar-content {
+    height: auto;
+    max-height: inherit;
+}
+
+.model-selector-dropdown--advanced-css {
+    background-color: var(--model-selector-dropdown-bg-blur-color);
+    backdrop-filter: blur(45px);
+}
+
+/* 标题栏 */
+.model-selector-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 12px;
+    position: relative;
+}
+
+/* 标题栏下边线 */
+.model-selector-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background-color: var(--model-selector-header-divider-color);
+}
+
+/* 标题栏标题 */
+.model-selector-header__title {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 500;
+    color: var(--model-selector-header-title-color);
+}
+
+/* 添加模型按钮 */
+.model-selector-header__add-btn {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    padding: 0 8px;
+    border: none;
+    border-radius: var(--radius-small);
+    background: transparent;
+    cursor: pointer;
+    transition: background var(--transition-normal);
+}
+
+.model-selector-header__add-btn:hover {
+    opacity: 0.7;
+}
+
+.model-selector-header__add-btn:active {
+    opacity: 1;
+}
+
+/* 添加模型图标 */
+.model-selector-header__add-icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* 添加模型文字 */
+.model-selector-header__add-text {
+    font-size: var(--uosai-font-size-xs);
+    color: var(--system-active-color);
+}
+
+/* 分组容器 */
+.model-selector-group {
+    padding: 0 6px 6px;
+    color: var(--model-selector-group-text-color);
+}
+
+/* 分组标题 */
+.model-selector-group__header {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+/* 分组图标 */
+.model-selector-group__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* 分组标签 */
+.model-selector-group__label {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 500;
+    color: inherit;
+}
+
+/* 菜单项 */
+.model-selector-item {
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-normal);
+    height: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: background var(--transition-normal);
+}
+
+.model-selector-item:not(.model-selector-item--selected):hover {
+    background: var(--model-selector-item-bg-hover-color);
+}
+
+.model-selector-item:not(.model-selector-item--selected):active {
+    background: var(--model-selector-item-bg-active-color);
+}
+
+/* 选中状态 */
+.model-selector-item--selected {
+    background: var(--system-active-color);
+}
+
+.model-selector-item--selected .model-selector-item__check-icon {
+    color: rgba(255, 255, 255, 1);
+}
+
+.model-selector-item--selected .model-selector-item__label {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 选中勾选图标 */
+.model-selector-item__check-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* 菜单项标签 */
+.model-selector-item__label {
+    font-size: var(--uosai-font-size-base);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 24px;
+    color: var(--model-selector-item-text-color);
+}
+
+.model-selector-item--selected .model-selector-item__label {
+    margin-left: 0;
+}
+
+/* 官方标识 */
+.model-selector-item__official-badge {
+    width: 26px;
+    height: 14px;
+    border: 0.5px solid var(--system-active-color-alpha-40);
+    border-radius: 2px;
+    background-color: var(--system-active-color-alpha-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    padding: 0 0 1px 0;
+}
+
+.model-selector-item__official-badge-text {
+    width: 18px;
+    height: 13px;
+    color: var(--system-active-color);
+    font-size: var(--uosai-font-size-4xs);
+    font-weight: 400;
+}
+
+/* 选中状态的官方标识 */
+.model-selector-item--selected .model-selector-item__official-badge {
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.model-selector-item--selected .model-selector-item__official-badge-text {
+    color: rgba(255, 255, 255, 1);
+}

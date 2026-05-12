@@ -4,12 +4,10 @@
 
 #include "audioaiassistant_p.h"
 #include "utils/util.h"
-#include "utils/compliance/atspidesktop.h"
-#include "utils/compliance/qselectionmonitor.h"
-#include "private/eaiexecutor.h"
 #include "gui/iatwidget.h"
 #include "wordwizard/wordwizard.h"
 #include "private/baseclipboard.h"
+#include "audiocontroler.h"
 
 #include "compliance/audioaiassistantmainwindowproxy.h"
 #include "compliance/audioaiassistantiatproxy.h"
@@ -30,7 +28,7 @@
 // Move this to the top of the file, before any usage
 Q_DECLARE_LOGGING_CATEGORY(logAudioWizard)
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 AudioAiassistantPrivate::AudioAiassistantPrivate(AudioAiassistant *parent) : q(parent)
 {
@@ -74,8 +72,6 @@ bool AudioAiassistant::registerInterface()
 
     // init AtspiDesktop
     AudioAiassistantSetting::instance();
-    AtspiDesktop::getInstance()->start();
-    QSelectionMonitor::getInstance();
 
     AudioAiassistantMainWindowProxy *mainWin = new AudioAiassistantMainWindowProxy(this);
     connection.registerObject(mainWin->proxyPath(), mainWin, QDBusConnection::ExportAllSlots | QDBusConnection::ExportAllSignals);
@@ -107,7 +103,7 @@ void AudioAiassistant::stopTTSDirectly()
 // 朗读
 void AudioAiassistant::textToSpeech()
 {
-    if(!EAiExec()->isAudioOutputAvailable()) {
+    if(!AudioControler::audioOutputDeviceValid()) {
         qCWarning(logAudioWizard) << "Audio output device not available";
         return;
     }

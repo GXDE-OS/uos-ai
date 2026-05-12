@@ -1,8 +1,6 @@
 #ifndef CHATBOTWIDGET_H
 #define CHATBOTWIDGET_H
 
-#include "uosai_global.h"
-
 #include <DWidget>
 #include <DBackgroundGroup>
 #include <DSwitchButton>
@@ -14,7 +12,7 @@
 
 DWIDGET_USE_NAMESPACE
 
-class ThemedLable;
+namespace uos_ai { class ThemedLable; }
 namespace uos_ai { namespace chatbot { class ChatBotService; } }
 
 namespace uos_ai {

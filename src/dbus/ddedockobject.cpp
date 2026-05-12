@@ -7,7 +7,7 @@
 
 Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 QDBusArgument &operator<<(QDBusArgument &argument, const DockRect &rect)
 {

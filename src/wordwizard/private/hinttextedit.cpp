@@ -15,7 +15,7 @@ using namespace uos_ai;
 HintTextEdit::HintTextEdit(QWidget *parent) : QTextEdit(parent),
     highLightRegex(R"(【(.*?)】)", QRegularExpression::MultilineOption | QRegularExpression::DotMatchesEverythingOption)
 {
-    if (!UOSAI_NAMESPACE::Util::checkLanguage())
+    if (!Util::checkLanguage())
         highLightRegex.setPattern(R"(\[(.*?)\])");
 }
 

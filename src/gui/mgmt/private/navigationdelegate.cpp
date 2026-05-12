@@ -6,7 +6,7 @@
 #include <QPainter>
 #include <QDebug>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 DWIDGET_USE_NAMESPACE
 
 NavigationDelegate::NavigationDelegate(QAbstractItemView *parent)

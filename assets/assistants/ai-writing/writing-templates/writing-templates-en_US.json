@@ -1,0 +1,90 @@
+[
+    {
+        "id": "tpl-official-001",
+        "name": "Official Notice",
+        "description": "For drafting official notices and announcements",
+        "icon": "official",
+        "category": "official",
+        "content": "<uos-ai-prompt-template>Please help me draft an official notice regarding {{subject}} issued by {{organization}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-official-002",
+        "name": "Meeting Minutes",
+        "description": "Record meeting content and decisions",
+        "icon": "official",
+        "category": "official",
+        "content": "<uos-ai-prompt-template>Please help me write [[this|last]] meeting minutes for {{meeting topic}}, attendees include {{attendees}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-official-003",
+        "name": "Request Report",
+        "description": "Formal request document submitted to superiors",
+        "icon": "official",
+        "category": "official",
+        "content": "<uos-ai-prompt-template>Please help me write a request report regarding {{request matter}} from {{organization}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-promotion-001",
+        "name": "Product Promotion",
+        "description": "Promotional copy template for products",
+        "icon": "promotion",
+        "category": "promotion",
+        "content": "<uos-ai-prompt-template>Please write a [[social media|blog|newsletter]] promotional copy for {{product name}}, highlighting {{key selling points}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-promotion-002",
+        "name": "Event Planning",
+        "description": "Offline event planning framework",
+        "icon": "promotion",
+        "category": "promotion",
+        "content": "<uos-ai-prompt-template>Please help me plan a {{event theme}} event, scheduled for {{date}}, with an expected attendance of {{number}} people</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-general-001",
+        "name": "Weekly Report",
+        "description": "Weekly work summary and plan template",
+        "icon": "general",
+        "category": "general",
+        "content": "<uos-ai-prompt-template>Please help me write a [[this week|last week]] work report. Main tasks completed: {{completed tasks}}. Plan for next week: {{next week plan}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-general-002",
+        "name": "Work Summary",
+        "description": "Monthly or annual work summary report",
+        "icon": "general",
+        "category": "general",
+        "content": "<uos-ai-prompt-template>Please help me write a [[monthly|quarterly|annual]] work summary. Key achievements: {{achievements}}. Areas for improvement: {{improvements}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-industry-001",
+        "name": "Project Management",
+        "description": "Project progress tracking and risk management",
+        "icon": "industry",
+        "category": "industry",
+        "content": "<uos-ai-prompt-template>Please help me write a progress report for {{project name}}. Current progress: {{current progress}}. Risk factors: {{risks}}</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-industry-002",
+        "name": "Market Analysis",
+        "description": "Industry market research and analysis report",
+        "icon": "industry",
+        "category": "industry",
+        "content": "<uos-ai-prompt-template>Please write a market analysis report for {{industry/product}}, focusing on [[market size|competitive landscape|user needs|development trends]]</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-tech-001",
+        "name": "Technical Document",
+        "description": "API/system technical documentation template",
+        "icon": "tech",
+        "category": "tech",
+        "content": "<uos-ai-prompt-template>Please help me write technical documentation for {{system/module name}}, covering [[API reference|system architecture|deployment guide|user guide]]</uos-ai-prompt-template>"
+    },
+    {
+        "id": "tpl-tech-002",
+        "name": "Requirements Analysis",
+        "description": "Product Requirements Document (PRD) template",
+        "icon": "tech",
+        "category": "tech",
+        "content": "<uos-ai-prompt-template>Please help me write a PRD for {{feature/product name}}. Background: {{context}}. Target users: {{target users}}</uos-ai-prompt-template>"
+    }
+]

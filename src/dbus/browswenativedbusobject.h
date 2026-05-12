@@ -3,6 +3,8 @@
 
 #include "appdbusobject.h"
 
+namespace uos_ai {
+
 class BrowsweNativeDbusObject : public AppDbusObject
 {
     Q_OBJECT
@@ -33,4 +35,5 @@ public Q_SLOTS:
     Q_SCRIPTABLE void incrementUsageCount(const QString &llmId);
 };
 
+}
 #endif // BROWSWENATIVEDBUSOBJECT_H

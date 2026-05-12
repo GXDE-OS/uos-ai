@@ -1,0 +1,61 @@
+html {
+    --trans-text: rgba(0, 0, 0, 1);
+    --trans-item-bg: rgba(0, 0, 0, 0.05);
+    --trans-item-bg-hover: rgba(0, 0, 0, 0.1);
+    --trans-item-bg-active: rgba(0, 0, 0, 0.15);
+}
+
+html.dark {
+    --trans-text: rgba(255, 255, 255, 1);
+    --trans-item-bg: rgba(255, 255, 255, 0.05);
+    --trans-item-bg-hover: rgba(255, 255, 255, 0.1);
+    --trans-item-bg-active: rgba(255, 255, 255, 0.15);
+}
+
+/* TranslateAssistant 翻译助手欢迎页组件样式 */
+
+.translate-assistant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.translate-assistant__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.translate-assistant__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    min-height: 32px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: var(--trans-item-bg);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    max-width: 100%;
+}
+
+.translate-assistant__card:hover {
+    background-color: var(--trans-item-bg-hover);
+}
+
+.translate-assistant__card:active {
+    background-color: var(--trans-item-bg-active);
+}
+
+.translate-assistant__card-text {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    color: var(--trans-text);
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+}

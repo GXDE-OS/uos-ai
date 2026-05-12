@@ -15,12 +15,11 @@
 #include <DFontSizeManager>
 #include <DGuiApplicationHelper>
 
-DWIDGET_USE_NAMESPACE
 
 namespace uos_ai {
 
 class LineNumberTextEdit;
-class CustomMcpServerEditor : public DAbstractDialog
+class CustomMcpServerEditor : public DTK_WIDGET_NAMESPACE::DAbstractDialog
 {
     Q_OBJECT
 
@@ -30,7 +29,7 @@ class CustomMcpServerEditor : public DAbstractDialog
     };
 
 public:
-    explicit CustomMcpServerEditor(DWidget *parent = nullptr);
+    explicit CustomMcpServerEditor(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
     bool showAddMode();
     bool showEditMode(const QJsonObject &serverConfig, const QString &description);
@@ -56,12 +55,12 @@ private:
     void showErrorMessage(const QString &errMsg);
 
 private:
-    DLabel *m_titleLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_titleLabel = nullptr;
     LineNumberTextEdit *m_jsonConfigEdit = nullptr;
-    DTextEdit *m_descriptionEdit = nullptr;
-    DPushButton *m_cancelButton = nullptr;
-    DSuggestButton *m_okButton = nullptr;
-    DLabel *m_errorLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DTextEdit *m_descriptionEdit = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_cancelButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DSuggestButton *m_okButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_errorLabel = nullptr;
 
     EditorMode m_currentMode = Add;
 };

@@ -4,500 +4,386 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="56"/>
         <source>Add model</source>
-        <translation>मॉडेल जोडा</translation>
+        <translation type="vanished">मॉडेल जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="58"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="99"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
-        <translation>आवश्यक आहे, कृपया इनपुट करा</translation>
+        <translation type="vanished">आवश्यक आहे, कृपया इनपुट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="107"/>
         <source>APIKey</source>
-        <translation>APIKey</translation>
+        <translation type="vanished">APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="115"/>
         <source>APISecret</source>
-        <translation>APISecret</translation>
+        <translation type="vanished">APISecret</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
         <source>Account</source>
-        <translation>खाते</translation>
+        <translation type="vanished">खाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>आवश्यक आहे, एकाधिक मॉडेल वेगळे करण्यासाठी</translation>
+        <translation type="vanished">आवश्यक आहे, एकाधिक मॉडेल वेगळे करण्यासाठी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
-        <translation>पर्यायी</translation>
+        <translation type="vanished">पर्यायी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="155"/>
         <source>Optional. The default address will be used if not filled in.</source>
-        <translation>पर्यायी. भरले नाही तर डीफॉल्ट पत्ता वापरला जाईल.</translation>
+        <translation type="vanished">पर्यायी. भरले नाही तर डीफॉल्ट पत्ता वापरला जाईल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="161"/>
         <source>Models List</source>
-        <translation>मॉडेल यादी</translation>
+        <translation type="vanished">मॉडेल यादी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="168"/>
         <source>Custom</source>
-        <translation>सानुकूल</translation>
+        <translation type="vanished">सानुकूल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="529"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया आपला नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया आपला नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="818"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>प्रॉक्सी सेटिंगसाठी, कृपया सिस्टम प्रॉक्सी सेटिंगमध्ये जा</translation>
+        <translation type="vanished">प्रॉक्सी सेटिंगसाठी, कृपया सिस्टम प्रॉक्सी सेटिंगमध्ये जा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="821"/>
         <source>Go to settings</source>
-        <translation>सेटिंग्जवर जा</translation>
+        <translation type="vanished">सेटिंग्जवर जा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="254"/>
         <source>Cancel</source>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="134"/>
         <source>Model Name</source>
-        <translation>मॉडेल नाव</translation>
+        <translation type="vanished">मॉडेल नाव</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
-        <translation>डोमेन</translation>
+        <translation type="vanished">डोमेन</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="256"/>
         <source>Confirm</source>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
-        <translation>जतन करणे अयशस्वी, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">जतन करणे अयशस्वी, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="725"/>
         <source>The account name already exists, please change it</source>
-        <translation>खाते नाव आधीपासून अस्तित्वात आहे, कृपया ते बदला</translation>
+        <translation type="vanished">खाते नाव आधीपासून अस्तित्वात आहे, कृपया ते बदला</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="367"/>
         <source>No more than 20 characters</source>
-        <translation>20 वर्णांपेक्षा जास्त नाही</translation>
+        <translation type="vanished">20 वर्णांपेक्षा जास्त नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="202"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>मॉडेल उपलब्ध आहे का ते तपासण्यासाठी, सिस्टम मोठ्या मॉडेलवर चाचणी माहिती पाठवते, ज्यामुळे थोड्या टोकनचा वापर होईल.</translation>
+        <translation type="vanished">मॉडेल उपलब्ध आहे का ते तपासण्यासाठी, सिस्टम मोठ्या मॉडेलवर चाचणी माहिती पाठवते, ज्यामुळे थोड्या टोकनचा वापर होईल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="460"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>हे LLM आधीपासून अस्तित्वात आहे, कृपया पुन्हा जोडू नका.</translation>
+        <translation type="vanished">हे LLM आधीपासून अस्तित्वात आहे, कृपया पुन्हा जोडू नका.</translation>
     </message>
 </context>
 <context>
     <name>AiCodeTranslation</name>
     <message>
-        <location filename="../src/llm/openai/aicodetranslation.cpp" line="9"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
 </context>
 <context>
     <name>AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="184"/>
         <source>type</source>
-        <translation>प्रकार</translation>
+        <translation type="vanished">प्रकार</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="283"/>
         <source>Cancel</source>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="308"/>
         <source>Read Aloud</source>
-        <translation>मोठ्यावर वाचा</translation>
+        <translation type="vanished">मोठ्यावर वाचा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
-        <translation>ऑडिओ डिव्हाइस आढळली नाही, कृपया तपासा आणि पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">ऑडिओ डिव्हाइस आढळली नाही, कृपया तपासा आणि पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="367"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>AI द्वारे व्युत्पन्न केलेली सामग्री फक्त संदर्भासाठी आहे, कृपया माहितीच्या अचूकतेकडे लक्ष द्या.</translation>
+        <translation type="vanished">AI द्वारे व्युत्पन्न केलेली सामग्री फक्त संदर्भासाठी आहे, कृपया माहितीच्या अचूकतेकडे लक्ष द्या.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="336"/>
         <source>Copy</source>
-        <translation>कॉपी करा</translation>
+        <translation type="vanished">कॉपी करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1379"/>
         <source>Polish this passage for me and just give me the result without any extra content.
 text：</source>
-        <translation>माझ्यासाठी हा मजकूर सुधारा आणि फक्त निकाल द्या, कोणतीही अतिरिक्त माहिती नको.
+        <translation type="vanished">माझ्यासाठी हा मजकूर सुधारा आणि फक्त निकाल द्या, कोणतीही अतिरिक्त माहिती नको.
 
 मजकूर:</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
-        <translation>सध्याचे मॉडेल: </translation>
+        <translation type="vanished">सध्याचे मॉडेल: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="329"/>
         <source>Regenerate</source>
-        <translation>पुन्हा तयार करा</translation>
+        <translation type="vanished">पुन्हा तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="107"/>
         <source>simplified Chinese</source>
-        <translation>सरलीकृत चिनी</translation>
+        <translation type="vanished">सरलीकृत चिनी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="108"/>
         <source>traditional Chinese</source>
-        <translation>पारंपारिक चिनी</translation>
+        <translation type="vanished">पारंपारिक चिनी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="109"/>
         <source>Tibetan</source>
-        <translation>तिबेटी</translation>
+        <translation type="vanished">तिबेटी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="110"/>
         <source>English</source>
-        <translation>इंग्रजी</translation>
+        <translation type="vanished">इंग्रजी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="111"/>
         <source>Japanese </source>
-        <translation>जपानी </translation>
+        <translation type="vanished">जपानी </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="112"/>
         <source>German</source>
-        <translation>जर्मन</translation>
+        <translation type="vanished">जर्मन</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="113"/>
         <source>Spanish</source>
-        <translation>स्पॅनिश</translation>
+        <translation type="vanished">स्पॅनिश</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="114"/>
         <source>French</source>
-        <translation>फ्रेंच</translation>
+        <translation type="vanished">फ्रेंच</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="115"/>
         <source>Italian</source>
-        <translation>इटालियन</translation>
+        <translation type="vanished">इटालियन</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="116"/>
         <source>Korean</source>
-        <translation>कोरियन</translation>
+        <translation type="vanished">कोरियन</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="117"/>
         <source>Malay</source>
-        <translation>मलय</translation>
+        <translation type="vanished">मलय</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="118"/>
         <source>Portuguese</source>
-        <translation>पोर्तुगीज</translation>
+        <translation type="vanished">पोर्तुगीज</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="119"/>
         <source>Russian</source>
-        <translation>रशियन</translation>
+        <translation type="vanished">रशियन</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="120"/>
         <source>Thai</source>
-        <translation>थाई</translation>
+        <translation type="vanished">थाई</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="121"/>
         <source>Vietnamese</source>
-        <translation>व्हिएतनामी</translation>
+        <translation type="vanished">व्हिएतनामी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="354"/>
         <source>Continue Dialog</source>
-        <translation>संवाद सुरू ठेवा</translation>
+        <translation type="vanished">संवाद सुरू ठेवा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="403"/>
         <source>Automatic Detection</source>
-        <translation>स्वयंचलित शोध</translation>
+        <translation type="vanished">स्वयंचलित शोध</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="479"/>
         <source>Search</source>
-        <translation>शोधा</translation>
+        <translation type="vanished">शोधा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
-        <translation>स्पष्ट करा</translation>
+        <translation type="vanished">स्पष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
-        <translation>भाषांतर करा</translation>
+        <translation type="vanished">भाषांतर करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
-        <translation>विस्तृत करा</translation>
+        <translation type="vanished">विस्तृत करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
-        <translation>दुरुस्त करा</translation>
+        <translation type="vanished">दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="506"/>
         <source>Add to the AI knowledge base</source>
-        <translation>एआय ज्ञानसंचयात जोडा</translation>
+        <translation type="vanished">एआय ज्ञानसंचयात जोडा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="991"/>
         <source>Added</source>
-        <translation>जोडले</translation>
+        <translation type="vanished">जोडले</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1258"/>
         <source>Model Configuration</source>
-        <translation>मॉडेल कॉन्फिगरेशन</translation>
+        <translation type="vanished">मॉडेल कॉन्फिगरेशन</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1310"/>
         <source>Copied</source>
-        <translation>कॉपी केले</translation>
+        <translation type="vanished">कॉपी केले</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
-        <translation>कोणताही मजकूर ओळखला गेला नाही.</translation>
+        <translation type="vanished">कोणताही मजकूर ओळखला गेला नाही.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1981"/>
         <source>The added content must be more than 10 words</source>
-        <translation>जोडलेली माहिती १० पेक्षा अधिक शब्दांची असावी</translation>
+        <translation type="vanished">जोडलेली माहिती १० पेक्षा अधिक शब्दांची असावी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
-        <translation>सारांश</translation>
+        <translation type="vanished">सारांश</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="315"/>
         <source>Paste to Text</source>
-        <translation>मजकूरात पेस्ट करा</translation>
+        <translation type="vanished">मजकूरात पेस्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
-        <translation>लेखन सुरू ठेवा</translation>
+        <translation type="vanished">लेखन सुरू ठेवा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
-        <translation>पॉलिश</translation>
+        <translation type="vanished">पॉलिश</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="613"/>
         <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation>भाषांतराचा परिणाम मॉडेलच्या क्षमतेद्वारे मर्यादित आहे. जर तुम्हाला भाषांतराने समाधानी नसाल, तर UOS AI होम पृष्ठावरील इतर मॉडेल्सवर स्विच करा.</translation>
+        <translation type="vanished">भाषांतराचा परिणाम मॉडेलच्या क्षमतेद्वारे मर्यादित आहे. जर तुम्हाला भाषांतराने समाधानी नसाल, तर UOS AI होम पृष्ठावरील इतर मॉडेल्सवर स्विच करा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
-        <translation>हा मजकूर %1 मध्ये भाषांतरित करा आणि मला थेट स्पष्ट परिणाम द्या. मजकूर：</translation>
+        <translation type="vanished">हा मजकूर %1 मध्ये भाषांतरित करा आणि मला थेट स्पष्ट परिणाम द्या. मजकूर：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="799"/>
         <source>Not clickable</source>
-        <translation>क्लिक करता येत नाही</translation>
+        <translation type="vanished">क्लिक करता येत नाही</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="907"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
-        <translation>इनपुट पद्धत पुन्हा सुरू केल्यानंतरच हे कार्य वापरता येते. ट्यूटोरियल खालीलप्रमाणे आहे: 1. टास्कबारमधील इनपुट पद्धत चिन्हावर उजवे क्लिक करा. 2. &quot;पुन्हा सुरू करा&quot; वर क्लिक करा.</translation>
+        <translation type="vanished">इनपुट पद्धत पुन्हा सुरू केल्यानंतरच हे कार्य वापरता येते. ट्यूटोरियल खालीलप्रमाणे आहे: 1. टास्कबारमधील इनपुट पद्धत चिन्हावर उजवे क्लिक करा. 2. &quot;पुन्हा सुरू करा&quot; वर क्लिक करा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
-        <translation>ठीक आहे</translation>
+        <translation type="vanished">ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="925"/>
         <source>Fill failed</source>
-        <translation>भरणे अयशस्वी</translation>
+        <translation type="vanished">भरणे अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="926"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>कोणतेही इनपुट बॉक्स निवडलेले नाही, कृपया इनपुट बॉक्स निवडा आणि पुन्हा भरा.</translation>
+        <translation type="vanished">कोणतेही इनपुट बॉक्स निवडलेले नाही, कृपया इनपुट बॉक्स निवडा आणि पुन्हा भरा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
-        <translation>ठीक आहे</translation>
+        <translation type="vanished">ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1335"/>
         <source>Explain this passage in plain language. Just give me a clear result without redundant content.
 text：</source>
-        <translation>हा मजकूर सोप्या भाषेत समजावून सांगा. फक्त मला स्पष्ट परिणाम द्या, अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+        <translation type="vanished">हा मजकूर सोप्या भाषेत समजावून सांगा. फक्त मला स्पष्ट परिणाम द्या, अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1340"/>
         <source>Summarize this passage and give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>हा मजकूर सारांशित करा आणि मला थेट स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+        <translation type="vanished">हा मजकूर सारांशित करा आणि मला थेट स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
         <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>हा मजकूर योग्यरित्या पुढे चालू ठेवा. खूप शब्दांची गरज नाही. फक्त मला स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+        <translation type="vanished">हा मजकूर योग्यरित्या पुढे चालू ठेवा. खूप शब्दांची गरज नाही. फक्त मला स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1369"/>
         <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>हा मजकूर योग्यरित्या विस्तृत करा. विशेषतः लांब मजकूराची गरज नाही. फक्त मला स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+        <translation type="vanished">हा मजकूर योग्यरित्या विस्तृत करा. विशेषतः लांब मजकूराची गरज नाही. फक्त मला स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1374"/>
         <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>या मजकूरात काही टायपो आहेत का ते तपासा. असल्यास, त्रुटींचे स्थान दर्शवा. मला थेट स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+        <translation type="vanished">या मजकूरात काही टायपो आहेत का ते तपासा. असल्यास, त्रुटींचे स्थान दर्शवा. मला थेट स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
-        <translation> &quot;%1&quot; </translation>
+        <translation type="vanished"> &quot;%1&quot; </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1673"/>
         <source>Currently no model</source>
-        <translation>सध्या कोणतेही मॉडेल नाही</translation>
+        <translation type="vanished">सध्या कोणतेही मॉडेल नाही</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1690"/>
         <source>Go to configure  </source>
-        <translation>कॉन्फिगर करण्यासाठी जा</translation>
+        <translation type="vanished">कॉन्फिगर करण्यासाठी जा</translation>
     </message>
 </context>
 <context>
     <name>AiToastMessage</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="100"/>
         <source>Chat history cleared</source>
-        <translation>चॅट इतिहास साफ केला</translation>
+        <translation type="vanished">चॅट इतिहास साफ केला</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="101"/>
         <source>Copied successfully</source>
-        <translation>यशस्वीरित्या कॉपी केले</translation>
+        <translation type="vanished">यशस्वीरित्या कॉपी केले</translation>
     </message>
 </context>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="60"/>
-        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI हा एक डेस्कटॉप स्मार्ट सहाय्यक आहे, तुमचा वैयक्तिक सहाय्यक! तुम्ही मजकूर किंवा आवाज वापरून त्याशी संवाद साधू शकता, आणि तो प्रश्नांची उत्तरे देण्यात, माहिती पुरविण्यात आणि तुमच्या वर्णनांवर आधारित प्रतिमा निर्माण करण्यात मदत करू शकतो.</translation>
+        <translation type="vanished">UOS AI हा एक डेस्कटॉप स्मार्ट सहाय्यक आहे, तुमचा वैयक्तिक सहाय्यक! तुम्ही मजकूर किंवा आवाज वापरून त्याशी संवाद साधू शकता, आणि तो प्रश्नांची उत्तरे देण्यात, माहिती पुरविण्यात आणि तुमच्या वर्णनांवर आधारित प्रतिमा निर्माण करण्यात मदत करू शकतो.</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="123"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS AI फॉलोअलॉंग/लिहा</translation>
+        <translation type="vanished">UOS AI फॉलोअलॉंग/लिहा</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
-        <translation>ज्ञान बेस व्यवस्थापन</translation>
+        <translation type="vanished">ज्ञान बेस व्यवस्थापन</translation>
     </message>
 </context>
 <context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="152"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया तुमचे नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
@@ -505,1089 +391,869 @@ text：</source>
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
-        <source>The command was executed successfully.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
-        <source>Command execution failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
-        <translation>फंक्शन पार्सिंग अयशस्वी</translation>
+        <translation type="vanished">फंक्शन पार्सिंग अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="252"/>
         <source>Application file does not exist</source>
-        <translation>अ‍ॅप्लिकेशन फाइल अस्तित्वात नाही</translation>
+        <translation type="vanished">अ‍ॅप्लिकेशन फाइल अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
-        <translation>यशस्वीरित्या सुरू केले</translation>
+        <translation type="vanished">यशस्वीरित्या सुरू केले</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
-        <translation>सुरू करणे अयशस्वी</translation>
+        <translation type="vanished">सुरू करणे अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="211"/>
-        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
-        <translation> कार्यान्वित आउटपुट सामग्री आहे </translation>
+        <translation type="vanished"> कार्यान्वित आउटपुट सामग्री आहे </translation>
     </message>
 </context>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
-        <translation>मोड</translation>
+        <translation type="vanished">मोड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
-        <translation>विंडो मोड</translation>
+        <translation type="vanished">विंडो मोड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
-        <translation>साइडबार मोड</translation>
+        <translation type="vanished">साइडबार मोड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
-        <translation>सेटिंग्ज</translation>
+        <translation type="vanished">सेटिंग्ज</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
-        <translation>अद्यतन लॉग</translation>
+        <translation type="vanished">अद्यतन लॉग</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
-        <translation>व्हॉइस संभाषण</translation>
+        <translation type="vanished">व्हॉइस संभाषण</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
-        <translation>हटवा</translation>
+        <translation type="vanished">हटवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
-        <translation>हटवण्याची पुष्टी करता का %1?</translation>
+        <translation type="vanished">हटवण्याची पुष्टी करता का %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>हटवल्यानंतर हा सर्वर उपलब्ध राहणार नाही. काळजीपूर्वक पुढे जा.</translation>
+        <translation type="vanished">हटवल्यानंतर हा सर्वर उपलब्ध राहणार नाही. काळजीपूर्वक पुढे जा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
-        <translation>अद्यतन करा</translation>
+        <translation type="vanished">अद्यतन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
-        <translation>नॉन-व्हेक्टराइझ्ड प्लगइन</translation>
+        <translation type="vanished">नॉन-व्हेक्टराइझ्ड प्लगइन</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation>[एआय नॉलेज बेस] वापरण्यापूर्वी तुम्हाला व्हेक्टरायझेशन प्लगइन प्रथम स्थापित करणे आवश्यक आहे, जेणेकरून एआय नॉलेज बेस कार्य योग्यरित्या कार्य करू शकेल.</translation>
+        <translation type="vanished">[एआय नॉलेज बेस] वापरण्यापूर्वी तुम्हाला व्हेक्टरायझेशन प्लगइन प्रथम स्थापित करणे आवश्यक आहे, जेणेकरून एआय नॉलेज बेस कार्य योग्यरित्या कार्य करू शकेल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
-        <translation type="unfinished">स्थापित करा</translation>
+        <translation type="obsolete">स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
-        <translation>नॉलेज बेस रिकामा आहे</translation>
+        <translation type="vanished">नॉलेज बेस रिकामा आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation>[एआय नॉलेज बेस] वापरण्यापूर्वी तुम्हाला नॉलेज बेसमध्ये दस्तऐवज प्रथम जोडणे आवश्यक आहे. जोडल्यानंतर एआय तुम्ही नॉलेज बेसमध्ये जोडलेल्या माहितीवर आधारित प्रश्नांची उत्तरे देईल.</translation>
+        <translation type="vanished">[एआय नॉलेज बेस] वापरण्यापूर्वी तुम्हाला नॉलेज बेसमध्ये दस्तऐवज प्रथम जोडणे आवश्यक आहे. जोडल्यानंतर एआय तुम्ही नॉलेज बेसमध्ये जोडलेल्या माहितीवर आधारित प्रश्नांची उत्तरे देईल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
-        <translation>फाइल्स जोडा</translation>
+        <translation type="vanished">फाइल्स जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
-        <translation>खालील फाइलची मुदत संपली आहे आणि ती वापरता येणार नाही. पुढे जायचे का?</translation>
+        <translation type="vanished">खालील फाइलची मुदत संपली आहे आणि ती वापरता येणार नाही. पुढे जायचे का?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
-        <translation>नंतर वापरा</translation>
+        <translation type="vanished">नंतर वापरा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
-        <translation>आता स्थापित करा</translation>
+        <translation type="vanished">आता स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
-        <translation>MCP वातावरण गहाळ आहे</translation>
+        <translation type="vanished">MCP वातावरण गहाळ आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation>कृपया अ‍ॅप स्टोअरमध्ये जाऊन UOS AI Agent स्थापित करा</translation>
+        <translation type="vanished">कृपया अ‍ॅप स्टोअरमध्ये जाऊन UOS AI Agent स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
-        <translation>आत्ता नाही</translation>
+        <translation type="vanished">आत्ता नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
-        <translation>क्रेडिट्स मिळवा</translation>
+        <translation type="vanished">क्रेडिट्स मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
-        <translation>विनामूल्य क्रेडिट्स पोहोचले</translation>
+        <translation type="vanished">विनामूल्य क्रेडिट्स पोहोचले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>तुम्ही तुमच्या ट्रायल खात्यासाठी विनामूल्य क्रेडिट्स संपवले आहेत. आम्ही तुम्हाला या महिन्यासाठी अतिरिक्त 200 विनामूल्य क्रेडिट्स दिले आहेत. अधिक वैशिष्ट्ये अन्वेषण करा आणि UOS AI च्या अमर्याद क्षमता अनलॉक करा!</translation>
+        <translation type="vanished">तुम्ही तुमच्या ट्रायल खात्यासाठी विनामूल्य क्रेडिट्स संपवले आहेत. आम्ही तुम्हाला या महिन्यासाठी अतिरिक्त 200 विनामूल्य क्रेडिट्स दिले आहेत. अधिक वैशिष्ट्ये अन्वेषण करा आणि UOS AI च्या अमर्याद क्षमता अनलॉक करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
-        <translation type="unfinished">ठीक आहे</translation>
+        <translation type="obsolete">ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
-        <translation>यशस्वीरित्या मिळवले</translation>
+        <translation type="vanished">यशस्वीरित्या मिळवले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI हा एक डेस्कटॉप स्मार्ट सहाय्यक आहे, तुमचा वैयक्तिक सहाय्यक! तुम्ही मजकूर किंवा आवाजाद्वारे त्याशी संवाद साधू शकता, आणि ते प्रश्नांची उत्तरे देण्यासाठी, माहिती पुरविण्यासाठी आणि तुमच्या वर्णनांवर आधारित चित्रे निर्माण करण्यासाठी मदत करू शकते.</translation>
+        <translation type="vanished">UOS AI हा एक डेस्कटॉप स्मार्ट सहाय्यक आहे, तुमचा वैयक्तिक सहाय्यक! तुम्ही मजकूर किंवा आवाजाद्वारे त्याशी संवाद साधू शकता, आणि ते प्रश्नांची उत्तरे देण्यासाठी, माहिती पुरविण्यासाठी आणि तुमच्या वर्णनांवर आधारित चित्रे निर्माण करण्यासाठी मदत करू शकते.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
-        <translation>फायलीिंग माहिती</translation>
+        <translation type="vanished">फायलीिंग माहिती</translation>
     </message>
 </context>
 <context>
     <name>CodeTranslation360</name>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="9"/>
         <source>Authentication failed, insufficient balance</source>
-        <translation>प्रमाणीकरण अयशस्वी, अपुरी शिल्लक</translation>
+        <translation type="vanished">प्रमाणीकरण अयशस्वी, अपुरी शिल्लक</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="10"/>
         <source>Authentication failed, daily limit exceeded</source>
-        <translation>प्रमाणीकरण अयशस्वी, दैनिक मर्यादा ओलांडली</translation>
+        <translation type="vanished">प्रमाणीकरण अयशस्वी, दैनिक मर्यादा ओलांडली</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="11"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="12"/>
         <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation>सेवा अयोग्य आहे. कृपया समस्यानिवारणासाठी विकास संघाशी संपर्क साधा.</translation>
+        <translation type="vanished">सेवा अयोग्य आहे. कृपया समस्यानिवारणासाठी विकास संघाशी संपर्क साधा.</translation>
     </message>
 </context>
 <context>
     <name>CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="30"/>
         <source>Error</source>
-        <translation>त्रुटी</translation>
+        <translation type="vanished">त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="52"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>ठीक आहे</translation>
+        <translation type="vanished">ठीक आहे</translation>
+    </message>
+</context>
+<context>
+    <name>DocParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
+        <source>The document content is invalid or empty.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>EAiExecutor</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation>वैयक्तिक ज्ञान सहाय्यक केवळ ज्ञान बेस कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
+        <translation type="vanished">वैयक्तिक ज्ञान सहाय्यक केवळ ज्ञान बेस कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation>वैयक्तिक ज्ञान सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
+        <translation type="vanished">वैयक्तिक ज्ञान सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation>डीप सिस्टम सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
+        <translation type="vanished">डीप सिस्टम सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation>UOS सिस्टम सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
+        <translation type="vanished">UOS सिस्टम सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="427"/>
         <source>Knowledge Base Management</source>
-        <translation>ज्ञान बेस व्यवस्थापन</translation>
+        <translation type="vanished">ज्ञान बेस व्यवस्थापन</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="433"/>
         <source>MCP Server</source>
-        <translation type="unfinished">MCP सर्व्हर</translation>
+        <translation type="obsolete">MCP सर्व्हर</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1185"/>
         <source>Please configure the knowledge base.</source>
-        <translation>कृपया नॉलेज बेस कॉन्फिगर करा.</translation>
+        <translation type="vanished">कृपया नॉलेज बेस कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1189"/>
         <source>Please install the model plug.</source>
-        <translation>कृपया मॉडेल प्लग इन्स्टॉल करा.</translation>
+        <translation type="vanished">कृपया मॉडेल प्लग इन्स्टॉल करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
-        <translation>प्रतिमा म्हणून निर्यात करा</translation>
+        <translation type="vanished">प्रतिमा म्हणून निर्यात करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
+        <source>Successfully Claimed</source>
+        <translation type="obsolete">यशस्वीरित्या मिळवले</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="obsolete">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+    </message>
+    <message>
         <source>You can upload up to 3 files or image</source>
-        <translation>तुम्ही जास्तीत जास्त ३ फाइल्स किंवा प्रतिमा अपलोड करू शकता</translation>
+        <translation type="vanished">तुम्ही जास्तीत जास्त ३ फाइल्स किंवा प्रतिमा अपलोड करू शकता</translation>
     </message>
 </context>
 <context>
     <name>EAiFAQInit</name>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="17"/>
         <source>Translate the following text into English for me.</source>
-        <translation>माझ्यासाठी खालील मजकूर इंग्रजीमध्ये भाषांतरित करा.</translation>
+        <translation type="vanished">माझ्यासाठी खालील मजकूर इंग्रजीमध्ये भाषांतरित करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="23"/>
         <source>Translate the following document into Chinese.</source>
-        <translation>खालील दस्तऐवज चिनीमध्ये भाषांतरित करा.</translation>
+        <translation type="vanished">खालील दस्तऐवज चिनीमध्ये भाषांतरित करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="29"/>
         <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation>AI उद्योगात &quot;Agent&quot; या शब्दाचा अर्थ काय आहे?</translation>
+        <translation type="vanished">AI उद्योगात &quot;Agent&quot; या शब्दाचा अर्थ काय आहे?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="35"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation>कृपया खालील सामग्री चिनीमध्ये भाषांतरित करा. आवश्यकता: अर्थात अचूक, भाषेत औपचारिक आणि व्यावसायिक.</translation>
+        <translation type="vanished">कृपया खालील सामग्री चिनीमध्ये भाषांतरित करा. आवश्यकता: अर्थात अचूक, भाषेत औपचारिक आणि व्यावसायिक.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="41"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation>इंग्रजीमध्ये मित्राला संबोधण्याचे काही बोलचालीचे मार्ग कोणते आहेत?</translation>
+        <translation type="vanished">इंग्रजीमध्ये मित्राला संबोधण्याचे काही बोलचालीचे मार्ग कोणते आहेत?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="47"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation>खालील शास्त्रीय चिनी मजकूर आधुनिक चिनीमध्ये भाषांतरित करा.</translation>
+        <translation type="vanished">खालील शास्त्रीय चिनी मजकूर आधुनिक चिनीमध्ये भाषांतरित करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="60"/>
         <source>Summarize</source>
-        <translation>सारांश</translation>
+        <translation type="vanished">सारांश</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="66"/>
         <source>Proofread</source>
-        <translation>प्रूफरीड</translation>
+        <translation type="vanished">प्रूफरीड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="72"/>
         <source>Explain</source>
-        <translation>स्पष्ट करा</translation>
+        <translation type="vanished">स्पष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="78"/>
         <source>Expand</source>
-        <translation>विस्तृत करा</translation>
+        <translation type="vanished">विस्तृत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="84"/>
         <source>Continue</source>
-        <translation>सुरू ठेवा</translation>
+        <translation type="vanished">सुरू ठेवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="90"/>
         <source>Polish</source>
-        <translation>पॉलिश करा</translation>
+        <translation type="vanished">पॉलिश करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="104"/>
         <source>Please help me write a work summary based on this document</source>
-        <translation>कृपया या दस्तऐवजावर आधारित कार्य सारांश लिहिण्यात मदत करा</translation>
+        <translation type="vanished">कृपया या दस्तऐवजावर आधारित कार्य सारांश लिहिण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="110"/>
         <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation>मला प्रोजेक्ट A साठी कार्य सारांश आवश्यक आहे, कृपया मुख्य मुद्दे संघटित करण्यात मदत करा</translation>
+        <translation type="vanished">मला प्रोजेक्ट A साठी कार्य सारांश आवश्यक आहे, कृपया मुख्य मुद्दे संघटित करण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="116"/>
         <source>Please generate a concise work summary based on my input text</source>
-        <translation>कृपया माझ्या इनपुट मजकुरावर आधारित संक्षिप्त कार्य सारांश तयार करा</translation>
+        <translation type="vanished">कृपया माझ्या इनपुट मजकुरावर आधारित संक्षिप्त कार्य सारांश तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="122"/>
         <source>Analyze this report and extract key points for the work summary</source>
-        <translation>हा अहवाल विश्लेषित करा आणि कार्य सारांशासाठी मुख्य मुद्दे काढा</translation>
+        <translation type="vanished">हा अहवाल विश्लेषित करा आणि कार्य सारांशासाठी मुख्य मुद्दे काढा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="128"/>
         <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation>मला त्रैमासिक डेटासह कार्य सारांश आवश्यक आहे, कृपया संलग्नक पहा</translation>
+        <translation type="vanished">मला त्रैमासिक डेटासह कार्य सारांश आवश्यक आहे, कृपया संलग्नक पहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="134"/>
         <source>Help me write a work summary highlighting personal contributions</source>
-        <translation>वैयक्तिक योगदान उठावून दाखवणारा कार्य सारांश लिहिण्यात मदत करा</translation>
+        <translation type="vanished">वैयक्तिक योगदान उठावून दाखवणारा कार्य सारांश लिहिण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="140"/>
         <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation>मीटिंग नोट्सवरून कार्य सारांश तयार करा, कृती मुद्द्यांवर लक्ष केंद्रित करा</translation>
+        <translation type="vanished">मीटिंग नोट्सवरून कार्य सारांश तयार करा, कृती मुद्द्यांवर लक्ष केंद्रित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="146"/>
         <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation>मला चिनी आणि इंग्रजीत द्विभाषिक कार्य सारांश आवश्यक आहे, कृपया पुरवलेली सामग्री पहा</translation>
+        <translation type="vanished">मला चिनी आणि इंग्रजीत द्विभाषिक कार्य सारांश आवश्यक आहे, कृपया पुरवलेली सामग्री पहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="152"/>
         <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation>मागील महिन्याचे कार्य सामग्री संघटित करण्यात आणि सारांश तयार करण्यात मदत करा</translation>
+        <translation type="vanished">मागील महिन्याचे कार्य सामग्री संघटित करण्यात आणि सारांश तयार करण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="158"/>
         <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation>या कार्य यादीवर आधारित कार्य सारांश लिहा, पूर्णता स्थितीवर भर द्या</translation>
+        <translation type="vanished">या कार्य यादीवर आधारित कार्य सारांश लिहा, पूर्णता स्थितीवर भर द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="165"/>
         <source>Check for grammatical errors in this passage</source>
-        <translation>या परिच्छेदातील व्याकरणातील त्रुटी तपासा</translation>
+        <translation type="vanished">या परिच्छेदातील व्याकरणातील त्रुटी तपासा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="171"/>
         <source>Help me find spelling mistakes in this article</source>
-        <translation>या लेखातील शुद्धलेखनाच्या चुका शोधण्यात मदत करा</translation>
+        <translation type="vanished">या लेखातील शुद्धलेखनाच्या चुका शोधण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="177"/>
         <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation>या संवादातील अयोग्य शब्द निवडी दुरुस्त करा</translation>
+        <translation type="vanished">या संवादातील अयोग्य शब्द निवडी दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="183"/>
         <source>Fix the punctuation issues in this document</source>
-        <translation>या दस्तऐवजातील विरामचिन्हांच्या समस्यांवर उपाय करा</translation>
+        <translation type="vanished">या दस्तऐवजातील विरामचिन्हांच्या समस्यांवर उपाय करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="189"/>
         <source>Revise the unclear expressions in this text</source>
-        <translation>या मजकुरातील अस्पष्ट अभिव्यक्ती दुरुस्त करा</translation>
+        <translation type="vanished">या मजकुरातील अस्पष्ट अभिव्यक्ती दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="195"/>
         <source>Edit the language errors in this email</source>
-        <translation>या ईमेलमधील भाषिक त्रुटी संपादित करा</translation>
+        <translation type="vanished">या ईमेलमधील भाषिक त्रुटी संपादित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="201"/>
         <source>Check if this text follows standard English conventions</source>
-        <translation>हा मजकूर मानक इंग्रजी नियमांचे पालन करतो का ते तपासा</translation>
+        <translation type="vanished">हा मजकूर मानक इंग्रजी नियमांचे पालन करतो का ते तपासा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="207"/>
         <source>Correct the logical flaws in this report</source>
-        <translation>या अहवालातील तार्किक दोष दुरुस्त करा</translation>
+        <translation type="vanished">या अहवालातील तार्किक दोष दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="213"/>
         <source>Identify language errors in this code comment</source>
-        <translation>या कोड टिप्पणीतील भाषिक त्रुटी ओळखा</translation>
+        <translation type="vanished">या कोड टिप्पणीतील भाषिक त्रुटी ओळखा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="219"/>
         <source>Fix the ambiguous statements in this contract</source>
-        <translation>या करारातील संदिग्ध विधाने दुरुस्त करा</translation>
+        <translation type="vanished">या करारातील संदिग्ध विधाने दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="226"/>
         <source>Explain the basic principles of quantum computing</source>
-        <translation>क्वांटम संगणकाचे मूलभूत तत्त्वे स्पष्ट करा</translation>
+        <translation type="vanished">क्वांटम संगणकाचे मूलभूत तत्त्वे स्पष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="232"/>
         <source>Describe photosynthesis in simple terms</source>
-        <translation>साध्या शब्दात प्रकाशसंश्लेषणाचे वर्णन करा</translation>
+        <translation type="vanished">साध्या शब्दात प्रकाशसंश्लेषणाचे वर्णन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="238"/>
         <source>Detail how blockchain technology works</source>
-        <translation>ब्लॉकचेन तंत्रज्ञान कसे कार्य करते ते तपशीलवार सांगा</translation>
+        <translation type="vanished">ब्लॉकचेन तंत्रज्ञान कसे कार्य करते ते तपशीलवार सांगा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="244"/>
         <source>Explain relativity from a professional perspective</source>
-        <translation>व्यावसायिक दृष्टिकोनातून सापेक्षता स्पष्ट करा</translation>
+        <translation type="vanished">व्यावसायिक दृष्टिकोनातून सापेक्षता स्पष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="250"/>
         <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation>कृत्रिम बुद्धिमत्ता काय आहे हे रूपक वापरून वर्णन करा</translation>
+        <translation type="vanished">कृत्रिम बुद्धिमत्ता काय आहे हे रूपक वापरून वर्णन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="256"/>
         <source>Describe climate change in layman&apos;s terms</source>
-        <translation>सामान्य माणसांसाठी हवामान बदलाचे वर्णन करा</translation>
+        <translation type="vanished">सामान्य माणसांसाठी हवामान बदलाचे वर्णन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="262"/>
         <source>Explain the structure of the solar system to elementary students</source>
-        <translation>प्राथमिक विद्यार्थ्यांना सौरमंडळाची रचना समजावून सांगा</translation>
+        <translation type="vanished">प्राथमिक विद्यार्थ्यांना सौरमंडळाची रचना समजावून सांगा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="269"/>
         <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation>या मजकुराचा 300 शब्दांपर्यंत विस्तार करा, दृश्य तपशील आणि पात्रांच्या भावनांवर लक्ष केंद्रित करा</translation>
+        <translation type="vanished">या मजकुराचा 300 शब्दांपर्यंत विस्तार करा, दृश्य तपशील आणि पात्रांच्या भावनांवर लक्ष केंद्रित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="275"/>
         <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation>या परिच्छेदाचे 500 शब्दांमध्ये शैक्षणिक शैलीत पुनर्लेखन करा, डेटा समर्थन आणि संदर्भ जोडा</translation>
+        <translation type="vanished">या परिच्छेदाचे 500 शब्दांमध्ये शैक्षणिक शैलीत पुनर्लेखन करा, डेटा समर्थन आणि संदर्भ जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="281"/>
         <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation>या परिच्छेदाचा अधिक रूपक आणि अलंकारिक साधनांसह विस्तार करा, जेणेकरून ते अधिक सजीव होईल</translation>
+        <translation type="vanished">या परिच्छेदाचा अधिक रूपक आणि अलंकारिक साधनांसह विस्तार करा, जेणेकरून ते अधिक सजीव होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="287"/>
         <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation>कृपया या लेखाचा 1000 शब्दांपर्यंत विस्तार करा, विशिष्ट प्रकरणे आणि व्यावहारिक चरणांसह पूरक</translation>
+        <translation type="vanished">कृपया या लेखाचा 1000 शब्दांपर्यंत विस्तार करा, विशिष्ट प्रकरणे आणि व्यावहारिक चरणांसह पूरक</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="293"/>
         <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation>या संवादाचा पात्रांच्या मानसिक क्रिया आणि संवाद तपशील जोडून विस्तार करा</translation>
+        <translation type="vanished">या संवादाचा पात्रांच्या मानसिक क्रिया आणि संवाद तपशील जोडून विस्तार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="299"/>
         <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation>या दस्तऐवजाच्या सामग्रीचे अहवाल स्वरूपात पुनर्लेखन करा, सारांश, मुख्य भाग आणि निष्कर्ष समाविष्ट करा</translation>
+        <translation type="vanished">या दस्तऐवजाच्या सामग्रीचे अहवाल स्वरूपात पुनर्लेखन करा, सारांश, मुख्य भाग आणि निष्कर्ष समाविष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="305"/>
         <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation>या तांत्रिक वर्णनाचा 800 शब्दांपर्यंत विस्तार करा, अधिक तांत्रिक मापदंड आणि आकृती स्पष्टीकरणे जोडा</translation>
+        <translation type="vanished">या तांत्रिक वर्णनाचा 800 शब्दांपर्यंत विस्तार करा, अधिक तांत्रिक मापदंड आणि आकृती स्पष्टीकरणे जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="311"/>
         <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation>या ईमेलचे अधिक औपचारिक आणि व्यावसायिक स्वरूपात पुनर्लेखन करा, संबंधित पार्श्वभूमी माहिती जोडा</translation>
+        <translation type="vanished">या ईमेलचे अधिक औपचारिक आणि व्यावसायिक स्वरूपात पुनर्लेखन करा, संबंधित पार्श्वभूमी माहिती जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="317"/>
         <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation>या कथेचा 1500 शब्दांपर्यंत विस्तार करा, अधिक कथानक वळणे आणि पात्र पार्श्वभूमी जोडा</translation>
+        <translation type="vanished">या कथेचा 1500 शब्दांपर्यंत विस्तार करा, अधिक कथानक वळणे आणि पात्र पार्श्वभूमी जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="323"/>
         <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation>कृपया या सारांशाचा विस्तार करा, मुख्य यशस्वी गोष्टी आणि भविष्यातील योजना उठावदार करा, शब्द मर्यादा नाही</translation>
+        <translation type="vanished">कृपया या सारांशाचा विस्तार करा, मुख्य यशस्वी गोष्टी आणि भविष्यातील योजना उठावदार करा, शब्द मर्यादा नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="330"/>
         <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation>कृपया भविष्यातील तंत्रज्ञानावरील या लहान परिच्छेदाचे लेखन सुरू ठेवा, AI दैनंदिन जीवन कसे बदलते यावर लक्ष केंद्रित करा, सुमारे 300 शब्द, लोकप्रिय विज्ञान शैलीत</translation>
+        <translation type="vanished">कृपया भविष्यातील तंत्रज्ञानावरील या लहान परिच्छेदाचे लेखन सुरू ठेवा, AI दैनंदिन जीवन कसे बदलते यावर लक्ष केंद्रित करा, सुमारे 300 शब्द, लोकप्रिय विज्ञान शैलीत</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="336"/>
         <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation>या व्यवसाय योजनेच्या शेवटच्या परिच्छेदाचा विस्तार करण्यात मदत करा, बाजार संधी आणि स्पर्धात्मक फायदे यावर भर द्या, शब्द मर्यादा नाही, औपचारिक शैली</translation>
+        <translation type="vanished">या व्यवसाय योजनेच्या शेवटच्या परिच्छेदाचा विस्तार करण्यात मदत करा, बाजार संधी आणि स्पर्धात्मक फायदे यावर भर द्या, शब्द मर्यादा नाही, औपचारिक शैली</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="342"/>
         <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation>या परीकथेचा शेवट सुरू ठेवा, उबदार आणि हृदयस्पर्शी, मुख्य पात्र त्यांचे स्वप्न साध्य करते, सुमारे 200 शब्द</translation>
+        <translation type="vanished">या परीकथेचा शेवट सुरू ठेवा, उबदार आणि हृदयस्पर्शी, मुख्य पात्र त्यांचे स्वप्न साध्य करते, सुमारे 200 शब्द</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="348"/>
         <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation>कृपया या ईमेलचा दुसरा भाग लिहा, स्नेही आणि व्यावसायिक टोन, सहकार्य तपशीलांवर लक्ष केंद्रित करा, 150 शब्दांमध्ये</translation>
+        <translation type="vanished">कृपया या ईमेलचा दुसरा भाग लिहा, स्नेही आणि व्यावसायिक टोन, सहकार्य तपशीलांवर लक्ष केंद्रित करा, 150 शब्दांमध्ये</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="354"/>
         <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation>या प्रवासवर्णनाच्या पुढील परिच्छेदाचा विस्तार करा, दऱ्यातील दृश्यांचे वर्णन, सजीव आणि कल्पनाशील, सुमारे 200 शब्द</translation>
+        <translation type="vanished">या प्रवासवर्णनाच्या पुढील परिच्छेदाचा विस्तार करा, दऱ्यातील दृश्यांचे वर्णन, सजीव आणि कल्पनाशील, सुमारे 200 शब्द</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="360"/>
         <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation>या गूढ कादंबरीचा पुढील प्रकरण सुरू ठेवा, कथानक वळणासह, ताण टिकवून ठेवा, शब्द मर्यादा नाही</translation>
+        <translation type="vanished">या गूढ कादंबरीचा पुढील प्रकरण सुरू ठेवा, कथानक वळणासह, ताण टिकवून ठेवा, शब्द मर्यादा नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="366"/>
         <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation>या भाषणाचा निष्कर्ष लिहिण्यात मदत करा, प्रेरणादायी आणि संघभावनेवर भर द्या, सुमारे 100 शब्द</translation>
+        <translation type="vanished">या भाषणाचा निष्कर्ष लिहिण्यात मदत करा, प्रेरणादायी आणि संघभावनेवर भर द्या, सुमारे 100 शब्द</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="372"/>
         <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation>या उत्पादन मार्गदर्शिकेच्या कार्यप्रदर्शन वर्णन विभागाचा विस्तार करा, तपशीलवार आणि अचूक, सुमारे 300 शब्द</translation>
+        <translation type="vanished">या उत्पादन मार्गदर्शिकेच्या कार्यप्रदर्शन वर्णन विभागाचा विस्तार करा, तपशीलवार आणि अचूक, सुमारे 300 शब्द</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="378"/>
         <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation>या प्रेमकथेची सुरुवात सुरू ठेवा, पावसाळी पॅरिसमध्ये सेट केलेली, रोमँटिक शैली, 150 शब्द</translation>
+        <translation type="vanished">या प्रेमकथेची सुरुवात सुरू ठेवा, पावसाळी पॅरिसमध्ये सेट केलेली, रोमँटिक शैली, 150 शब्द</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="384"/>
         <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation>कृपया या पेपरचा चर्चा विभाग लिहा, प्रायोगिक निकालांच्या मर्यादांवर लक्ष केंद्रित करा, शैक्षणिक शैली, शब्द मर्यादा नाही</translation>
+        <translation type="vanished">कृपया या पेपरचा चर्चा विभाग लिहा, प्रायोगिक निकालांच्या मर्यादांवर लक्ष केंद्रित करा, शैक्षणिक शैली, शब्द मर्यादा नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="391"/>
         <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation>कृपया या मजकुराचे पॉलिश करा, जेणेकरून ते व्यवसाय ईमेलसाठी अधिक औपचारिक आणि व्यावसायिक होईल</translation>
+        <translation type="vanished">कृपया या मजकुराचे पॉलिश करा, जेणेकरून ते व्यवसाय ईमेलसाठी अधिक औपचारिक आणि व्यावसायिक होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="397"/>
         <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation>या परिच्छेदाचे पुनर्लेखन करा, जेणेकरून ते सोशल मीडिया पोस्टसाठी अधिक जिवंत आणि आकर्षक होईल</translation>
+        <translation type="vanished">या परिच्छेदाचे पुनर्लेखन करा, जेणेकरून ते सोशल मीडिया पोस्टसाठी अधिक जिवंत आणि आकर्षक होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="403"/>
         <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation>मला या शैक्षणिक पेपरच्या सारांशाचे परिष्करण करणे आवश्यक आहे, जेणेकरून ते 200 शब्दांमध्ये अधिक संक्षिप्त आणि स्पष्ट होईल</translation>
+        <translation type="vanished">मला या शैक्षणिक पेपरच्या सारांशाचे परिष्करण करणे आवश्यक आहे, जेणेकरून ते 200 शब्दांमध्ये अधिक संक्षिप्त आणि स्पष्ट होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="409"/>
         <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation>या संवादाचे पॉलिश करा, जेणेकरून ते बोलण्याच्या संवादासाठी अधिक नैसर्गिक आणि सुटसुटीत होईल</translation>
+        <translation type="vanished">या संवादाचे पॉलिश करा, जेणेकरून ते बोलण्याच्या संवादासाठी अधिक नैसर्गिक आणि सुटसुटीत होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="415"/>
         <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation>या उत्पादन वर्णनाचे वर्धन करा, जेणेकरून ते संभाव्य ग्राहकांसाठी त्याच्या प्रीमियम आणि नाविन्यपूर्ण वैशिष्ट्यांना उठाव देईल</translation>
+        <translation type="vanished">या उत्पादन वर्णनाचे वर्धन करा, जेणेकरून ते संभाव्य ग्राहकांसाठी त्याच्या प्रीमियम आणि नाविन्यपूर्ण वैशिष्ट्यांना उठाव देईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="421"/>
         <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation>या कव्हर लेटरचे पॉलिश करण्यात मदत करा, जेणेकरून ते अधिक प्रेरक आणि वैयक्तिकृत होईल</translation>
+        <translation type="vanished">या कव्हर लेटरचे पॉलिश करण्यात मदत करा, जेणेकरून ते अधिक प्रेरक आणि वैयक्तिकृत होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="427"/>
         <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation>या ब्लॉग पोस्टचे पुनर्लेखन करा, जेणेकरून ते अधिक विनोदी आणि तरुण वाचकांसाठी आकर्षक होईल</translation>
+        <translation type="vanished">या ब्लॉग पोस्टचे पुनर्लेखन करा, जेणेकरून ते अधिक विनोदी आणि तरुण वाचकांसाठी आकर्षक होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="433"/>
         <source>Refine the opening section of this report to make it more captivating</source>
-        <translation>या अहवालाच्या सुरुवातीच्या विभागाचे परिष्करण करा, जेणेकरून ते अधिक मोहक होईल</translation>
+        <translation type="vanished">या अहवालाच्या सुरुवातीच्या विभागाचे परिष्करण करा, जेणेकरून ते अधिक मोहक होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="439"/>
         <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation>मला हे तांत्रिक दस्तऐवज सुधारण्याची गरज आहे जेणेकरून ते निष्णांसाठी अधिक सुलभ होईल</translation>
+        <translation type="vanished">मला हे तांत्रिक दस्तऐवज सुधारण्याची गरज आहे जेणेकरून ते निष्णांसाठी अधिक सुलभ होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="445"/>
         <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation>कृपया हे माफीनामे पुन्हा लिहिण्यात मदत करा जेणेकरून ते अधिक प्रामाणिक आणि योग्य वाटेल</translation>
+        <translation type="vanished">कृपया हे माफीनामे पुन्हा लिहिण्यात मदत करा जेणेकरून ते अधिक प्रामाणिक आणि योग्य वाटेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="458"/>
         <source>Articles</source>
-        <translation>लेख</translation>
+        <translation type="vanished">लेख</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="464"/>
         <source>Speeches</source>
-        <translation>भाषणे</translation>
+        <translation type="vanished">भाषणे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="470"/>
         <source>Outlines</source>
-        <translation>रूपरेषा</translation>
+        <translation type="vanished">रूपरेषा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="476"/>
         <source>Notifications</source>
-        <translation>अधिसूचना</translation>
+        <translation type="vanished">अधिसूचना</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="482"/>
         <source>Posts</source>
-        <translation>पोस्ट</translation>
+        <translation type="vanished">पोस्ट</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="488"/>
         <source>Work Report</source>
-        <translation>कार्य अहवाल</translation>
+        <translation type="vanished">कार्य अहवाल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="494"/>
         <source>Research Report</source>
-        <translation>संशोधन अहवाल</translation>
+        <translation type="vanished">संशोधन अहवाल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="508"/>
         <source>Please summarize the key points of this document</source>
-        <translation>कृपया या दस्तऐवजाच्या मुख्य मुद्द्यांचा सारांश द्या</translation>
+        <translation type="vanished">कृपया या दस्तऐवजाच्या मुख्य मुद्द्यांचा सारांश द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="514"/>
         <source>List the main ideas of this file for me</source>
-        <translation>या फाइलच्या मुख्य कल्पनांची यादी माझ्यासाठी करा</translation>
+        <translation type="vanished">या फाइलच्या मुख्य कल्पनांची यादी माझ्यासाठी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="520"/>
         <source>Summarize the core idea of this passage</source>
-        <translation>या परिच्छेदाच्या मुख्य कल्पनेचा सारांश द्या</translation>
+        <translation type="vanished">या परिच्छेदाच्या मुख्य कल्पनेचा सारांश द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="526"/>
         <source>Use concise language to summarize this article</source>
-        <translation>या लेखाचा सारांश देण्यासाठी संक्षिप्त भाषा वापरा</translation>
+        <translation type="vanished">या लेखाचा सारांश देण्यासाठी संक्षिप्त भाषा वापरा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="532"/>
         <source>I need a summary of this report, no more than 200 words</source>
-        <translation>मला या अहवालाचा सारांश हवा आहे, 200 शब्दांपेक्षा जास्त नाही</translation>
+        <translation type="vanished">मला या अहवालाचा सारांश हवा आहे, 200 शब्दांपेक्षा जास्त नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="538"/>
         <source>Extract the main data and conclusions from this document</source>
-        <translation>या दस्तऐवजातून मुख्य डेटा आणि निष्कर्ष काढा</translation>
+        <translation type="vanished">या दस्तऐवजातून मुख्य डेटा आणि निष्कर्ष काढा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="544"/>
         <source>Summarize the main sections and points of this lengthy content</source>
-        <translation>या मोठ्या आकारमानाच्या सामग्रीच्या मुख्य विभाग आणि मुद्द्यांचा सारांश द्या</translation>
+        <translation type="vanished">या मोठ्या आकारमानाच्या सामग्रीच्या मुख्य विभाग आणि मुद्द्यांचा सारांश द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="550"/>
         <source>Help me summarize the research methods and findings of this paper</source>
-        <translation>या पेपरच्या संशोधन पद्धती आणि निष्कर्षांचा सारांश देण्यात मला मदत करा</translation>
+        <translation type="vanished">या पेपरच्या संशोधन पद्धती आणि निष्कर्षांचा सारांश देण्यात मला मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="556"/>
         <source>Please summarize the key points of this article in a table format</source>
-        <translation>कृपया या लेखाच्या मुख्य मुद्द्यांचा सारांश टेबल स्वरूपात द्या</translation>
+        <translation type="vanished">कृपया या लेखाच्या मुख्य मुद्द्यांचा सारांश टेबल स्वरूपात द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="562"/>
         <source>Summarize the operational steps in this file using bullet points</source>
-        <translation>या फाइलमधील ऑपरेशनल चरणांचा सारांश बुलेट पॉइंट्स वापरून द्या</translation>
+        <translation type="vanished">या फाइलमधील ऑपरेशनल चरणांचा सारांश बुलेट पॉइंट्स वापरून द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="568"/>
         <source>Display the key clauses of this contract in bullet list format</source>
-        <translation>या कराराच्या मुख्य कलमांची यादी बुलेट स्वरूपात दाखवा</translation>
+        <translation type="vanished">या कराराच्या मुख्य कलमांची यादी बुलेट स्वरूपात दाखवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="575"/>
         <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation>AI ट्रेंडवरील अहवालासाठी एक रूपरेषा तयार करा, ज्यामध्ये तंत्रज्ञान, नीतिशास्त्र आणि अनुप्रयोग यांचा समावेश असेल</translation>
+        <translation type="vanished">AI ट्रेंडवरील अहवालासाठी एक रूपरेषा तयार करा, ज्यामध्ये तंत्रज्ञान, नीतिशास्त्र आणि अनुप्रयोग यांचा समावेश असेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="581"/>
         <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation>अपलोड केलेला पेपर एका संरचित संशोधन फ्रेमवर्क रूपरेषेत व्यवस्थित करा</translation>
+        <translation type="vanished">अपलोड केलेला पेपर एका संरचित संशोधन फ्रेमवर्क रूपरेषेत व्यवस्थित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="587"/>
         <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation>मला एक व्यवसाय योजना रूपरेषा हवी आहे ज्यामध्ये बाजार विश्लेषण, उत्पादन वर्णन आणि आर्थिक नियोजन यांचा समावेश असेल</translation>
+        <translation type="vanished">मला एक व्यवसाय योजना रूपरेषा हवी आहे ज्यामध्ये बाजार विश्लेषण, उत्पादन वर्णन आणि आर्थिक नियोजन यांचा समावेश असेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="593"/>
         <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation>या भाषणाला PowerPoint रूपरेषेत रूपांतरित करा ज्यामध्ये प्रत्येक विभागासाठी बुलेट पॉइंट्स असतील</translation>
+        <translation type="vanished">या भाषणाला PowerPoint रूपरेषेत रूपांतरित करा ज्यामध्ये प्रत्येक विभागासाठी बुलेट पॉइंट्स असतील</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="599"/>
         <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation>पुस्तक सारांश रूपरेषा लिहा ज्यामध्ये मुख्य मुद्दे आणि माझे वैयक्तिक विचार यांचा समावेश असेल</translation>
+        <translation type="vanished">पुस्तक सारांश रूपरेषा लिहा ज्यामध्ये मुख्य मुद्दे आणि माझे वैयक्तिक विचार यांचा समावेश असेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="605"/>
         <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation>मीटिंग नोट्स फाइलचा सारांश प्रकल्प अंमलबजावणी योजना रूपरेषेत द्या</translation>
+        <translation type="vanished">मीटिंग नोट्स फाइलचा सारांश प्रकल्प अंमलबजावणी योजना रूपरेषेत द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="611"/>
         <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation>मला एक प्रबंध अध्याय रूपरेषा हवी आहे ज्यामध्ये परिचय, साहित्य पुनरावलोकन आणि पद्धतशास्त्र यांचा समावेश असेल</translation>
+        <translation type="vanished">मला एक प्रबंध अध्याय रूपरेषा हवी आहे ज्यामध्ये परिचय, साहित्य पुनरावलोकन आणि पद्धतशास्त्र यांचा समावेश असेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="617"/>
         <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation>उत्पादन आवश्यकता दस्तऐवज (PRD) रूपरेषा तयार करा ज्यामध्ये वैशिष्ट्य वर्णन आणि वापरकर्ता प्रवाह यांचा समावेश असेल</translation>
+        <translation type="vanished">उत्पादन आवश्यकता दस्तऐवज (PRD) रूपरेषा तयार करा ज्यामध्ये वैशिष्ट्य वर्णन आणि वापरकर्ता प्रवाह यांचा समावेश असेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="623"/>
         <source>Extract key data from this industry report to make a summary outline</source>
-        <translation>या उद्योग अहवालातून मुख्य डेटा काढा जेणेकरून एक सारांश रूपरेषा तयार होईल</translation>
+        <translation type="vanished">या उद्योग अहवालातून मुख्य डेटा काढा जेणेकरून एक सारांश रूपरेषा तयार होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="629"/>
         <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation>इव्हेंट प्लॅनिंग रूपरेषा लिहा ज्यामध्ये वेळापत्रक, संघ भूमिका आणि बजेट यांचा समावेश असेल</translation>
+        <translation type="vanished">इव्हेंट प्लॅनिंग रूपरेषा लिहा ज्यामध्ये वेळापत्रक, संघ भूमिका आणि बजेट यांचा समावेश असेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="636"/>
         <source>Generate a three-level outline from this document</source>
-        <translation>या दस्तऐवजातून तीन-स्तरीय रूपरेषा तयार करा</translation>
+        <translation type="vanished">या दस्तऐवजातून तीन-स्तरीय रूपरेषा तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="642"/>
         <source>Extract core framework from meeting notes</source>
-        <translation>मीटिंग नोट्समधून मुख्य रचना काढा</translation>
+        <translation type="vanished">मीटिंग नोट्समधून मुख्य रचना काढा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="648"/>
         <source>Organize research report structure</source>
-        <translation>संशोधन अहवालाची रचना व्यवस्थित करा</translation>
+        <translation type="vanished">संशोधन अहवालाची रचना व्यवस्थित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="654"/>
         <source>Create product feature overview</source>
-        <translation>उत्पादन वैशिष्ट्यांचे विहंगावलोकन तयार करा</translation>
+        <translation type="vanished">उत्पादन वैशिष्ट्यांचे विहंगावलोकन तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="660"/>
         <source>Design training course syllabus</source>
-        <translation>प्रशिक्षण अभ्यासक्रमाची अभ्यासपत्रिका डिझाइन करा</translation>
+        <translation type="vanished">प्रशिक्षण अभ्यासक्रमाची अभ्यासपत्रिका डिझाइन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="666"/>
         <source>Analyze literature review framework</source>
-        <translation>साहित्य पुनरावलोकन रचनेचे विश्लेषण करा</translation>
+        <translation type="vanished">साहित्य पुनरावलोकन रचनेचे विश्लेषण करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="672"/>
         <source>Generate business plan table of contents</source>
-        <translation>व्यवसाय योजनेची अनुक्रमणिका तयार करा</translation>
+        <translation type="vanished">व्यवसाय योजनेची अनुक्रमणिका तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="678"/>
         <source>Write event planning flow points</source>
-        <translation>इव्हेंट प्लॅनिंग फ्लो पॉइंट्स लिहा</translation>
+        <translation type="vanished">इव्हेंट प्लॅनिंग फ्लो पॉइंट्स लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="685"/>
         <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation>उद्या दुपारी 3 वाजता कॉन्फरन्स रूम A मध्ये प्रोजेक्ट प्रगती अहवालाविषयी बैठक सूचना लिहिण्यात मला मदत करा</translation>
+        <translation type="vanished">उद्या दुपारी 3 वाजता कॉन्फरन्स रूम A मध्ये प्रोजेक्ट प्रगती अहवालाविषयी बैठक सूचना लिहिण्यात मला मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="691"/>
         <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation>या दस्तऐवजावर आधारित अंतिम मुदत आणि सबमिशन पद्धत हायलाइट करून संक्षिप्त सूचना तयार करा</translation>
+        <translation type="vanished">या दस्तऐवजावर आधारित अंतिम मुदत आणि सबमिशन पद्धत हायलाइट करून संक्षिप्त सूचना तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="697"/>
         <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation>फेब्रुवारी 10 ते 17 पर्यंत वसंतोत्सव सुट्टीची सूचना मसुदा करा आणि फेब्रुवारी 18 रोजी काम पुन्हा सुरू होईल</translation>
+        <translation type="vanished">फेब्रुवारी 10 ते 17 पर्यंत वसंतोत्सव सुट्टीची सूचना मसुदा करा आणि फेब्रुवारी 18 रोजी काम पुन्हा सुरू होईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="703"/>
         <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation>मला पुढील बुधवारी संपूर्ण दिवस कंपनीच्या ऑडिटोरियममध्ये कर्मचारी प्रशिक्षणासाठी क्रियाकलाप सूचना आवश्यक आहे</translation>
+        <translation type="vanished">मला पुढील बुधवारी संपूर्ण दिवस कंपनीच्या ऑडिटोरियममध्ये कर्मचारी प्रशिक्षणासाठी क्रियाकलाप सूचना आवश्यक आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="709"/>
         <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation>प्रदान केलेल्या मजकूर सामग्रीला मानक स्वरूपात आणि व्यावसायिक टोनसह औपचारिक सूचनेमध्ये रूपांतरित करा</translation>
+        <translation type="vanished">प्रदान केलेल्या मजकूर सामग्रीला मानक स्वरूपात आणि व्यावसायिक टोनसह औपचारिक सूचनेमध्ये रूपांतरित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="715"/>
         <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation>या शनिवारी सकाळी 9 ते संध्याकाळी 5 पर्यंत संपूर्ण ऑफिस बिल्डिंगवर परिणाम करणारी वीजपुरवठा बंद असल्याची सूचना लिहा</translation>
+        <translation type="vanished">या शनिवारी सकाळी 9 ते संध्याकाळी 5 पर्यंत संपूर्ण ऑफिस बिल्डिंगवर परिणाम करणारी वीजपुरवठा बंद असल्याची सूचना लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="721"/>
         <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation>मूळ वेळ शुक्रवारी सकाळी 10 वाजता बदलून इतर तपशील समान ठेवून बैठक बदल सूचना तयार करा</translation>
+        <translation type="vanished">मूळ वेळ शुक्रवारी सकाळी 10 वाजता बदलून इतर तपशील समान ठेवून बैठक बदल सूचना तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="727"/>
         <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation>जोडलेल्या बैठक मिनिटांवर आधारित अनुपस्थित सहभागींसाठी संक्षिप्त सूचना तयार करा</translation>
+        <translation type="vanished">जोडलेल्या बैठक मिनिटांवर आधारित अनुपस्थित सहभागींसाठी संक्षिप्त सूचना तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="733"/>
         <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation>आज रात्री मध्यरात्री ते 3 वाजेपर्यंत सिस्टम डाउनटाइमसह सिस्टम अपग्रेड सूचना मसुदा करा</translation>
+        <translation type="vanished">आज रात्री मध्यरात्री ते 3 वाजेपर्यंत सिस्टम डाउनटाइमसह सिस्टम अपग्रेड सूचना मसुदा करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="739"/>
         <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation>सुट्टीतील ड्युटी व्यवस्था सूचना लिहा ज्यात ड्युटीवरील कर्मचारी आणि संपर्क माहिती सूचीबद्ध आहे</translation>
+        <translation type="vanished">सुट्टीतील ड्युटी व्यवस्था सूचना लिहा ज्यात ड्युटीवरील कर्मचारी आणि संपर्क माहिती सूचीबद्ध आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="746"/>
         <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation>सामान्य वाचकांसाठी सोप्या भाषेत निरोगी आहाराविषयी सार्वजनिक आरोग्य लेख लिहिण्यात मला मदत करा</translation>
+        <translation type="vanished">सामान्य वाचकांसाठी सोप्या भाषेत निरोगी आहाराविषयी सार्वजनिक आरोग्य लेख लिहिण्यात मला मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="752"/>
         <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation>या दस्तऐवजावर आधारित मजेदार आणि आकर्षक टेक ट्रेंड पोस्ट तयार करा</translation>
+        <translation type="vanished">या दस्तऐवजावर आधारित मजेदार आणि आकर्षक टेक ट्रेंड पोस्ट तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="758"/>
         <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation>सवलती आणि इव्हेंट वेळापत्रक हायलाइट करून सुट्टी प्रोमोशन पोस्ट मसुदा करा</translation>
+        <translation type="vanished">सवलती आणि इव्हेंट वेळापत्रक हायलाइट करून सुट्टी प्रोमोशन पोस्ट मसुदा करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="764"/>
         <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation>मला वैशिष्ट्ये आणि ग्राहक पुनरावलोकनांवर लक्ष केंद्रित करून उत्पादन लॉन्च लेख आवश्यक आहे</translation>
+        <translation type="vanished">मला वैशिष्ट्ये आणि ग्राहक पुनरावलोकनांवर लक्ष केंद्रित करून उत्पादन लॉन्च लेख आवश्यक आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="770"/>
         <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation>या मुलाखत ट्रान्सक्रिप्टला कॅज्युअल व्यक्तिमत्व प्रोफाइल पोस्टमध्ये रूपांतरित करा</translation>
+        <translation type="vanished">या मुलाखत ट्रान्सक्रिप्टला कॅज्युअल व्यक्तिमत्व प्रोफाइल पोस्टमध्ये रूपांतरित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="776"/>
         <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation>प्रवास मार्गदर्शक लिहा ज्यात तीन लोकप्रिय स्थळांची शिफारस आणि व्यावहारिक टिप्स आहेत</translation>
+        <translation type="vanished">प्रवास मार्गदर्शक लिहा ज्यात तीन लोकप्रिय स्थळांची शिफारस आणि व्यावहारिक टिप्स आहेत</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="782"/>
         <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation>कंपनीचा इतिहास पुनरावलोकन करून आणि ग्राहकांचे आभार व्यक्त करून वर्धापन दिन पोस्ट तयार करा</translation>
+        <translation type="vanished">कंपनीचा इतिहास पुनरावलोकन करून आणि ग्राहकांचे आभार व्यक्त करून वर्धापन दिन पोस्ट तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="788"/>
         <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation>एक अंतर्दृष्टीपूर्ण पोस्टसाठी व्हिज्युअलाइज्ड डेटासह या उद्योग अहवालाचे विश्लेषण करा</translation>
+        <translation type="vanished">एक अंतर्दृष्टीपूर्ण पोस्टसाठी व्हिज्युअलाइज्ड डेटासह या उद्योग अहवालाचे विश्लेषण करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="794"/>
         <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation>स्पष्ट सूचनांसह सहभागाला प्रोत्साहित करणारी धर्मादाय मोहीम पोस्ट मसुदा करा</translation>
+        <translation type="vanished">स्पष्ट सूचनांसह सहभागाला प्रोत्साहित करणारी धर्मादाय मोहीम पोस्ट मसुदा करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="800"/>
         <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation>पाच कृतीयोग्य टिप्स आणि वास्तविक उदाहरणांसह करिअर कौशल्ये लेख लिहा</translation>
+        <translation type="vanished">पाच कृतीयोग्य टिप्स आणि वास्तविक उदाहरणांसह करिअर कौशल्ये लेख लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="807"/>
         <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation>प्रोजेक्ट प्रगती आणि संघ सहकार्यावर लक्ष केंद्रित करून साप्ताहिक कार्य सारांश लिहिण्यात मला मदत करा</translation>
+        <translation type="vanished">प्रोजेक्ट प्रगती आणि संघ सहकार्यावर लक्ष केंद्रित करून साप्ताहिक कार्य सारांश लिहिण्यात मला मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="813"/>
         <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation>मी अपलोड केलेल्या बैठक नोट्स फाइलवर आधारित संक्षिप्त कार्य सारांश तयार करा</translation>
+        <translation type="vanished">मी अपलोड केलेल्या बैठक नोट्स फाइलवर आधारित संक्षिप्त कार्य सारांश तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="819"/>
         <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation>मला त्रैमासिक कार्य सारांश आवश्यक आहे ज्यामध्ये डेटा विश्लेषण आणि वैयक्तिक वाढ विचार समाविष्ट आहे</translation>
+        <translation type="vanished">मला त्रैमासिक कार्य सारांश आवश्यक आहे ज्यामध्ये डेटा विश्लेषण आणि वैयक्तिक वाढ विचार समाविष्ट आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="825"/>
         <source>Create a work summary based on the following text [paste text]</source>
-        <translation>खालील मजकूरावर आधारित कार्य सारांश तयार करा [मजकूर पेस्ट करा]</translation>
+        <translation type="vanished">खालील मजकूरावर आधारित कार्य सारांश तयार करा [मजकूर पेस्ट करा]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="831"/>
         <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation>या महिन्यातील KPI यश आणि आलेल्या आव्हानांवर भर देऊन कार्य सारांश लिहा</translation>
+        <translation type="vanished">या महिन्यातील KPI यश आणि आलेल्या आव्हानांवर भर देऊन कार्य सारांश लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="837"/>
         <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation>मला मागील आठवड्याचे कार्य प्रकल्पानुसार वर्गीकृत करून सारांशित करण्यात मदत करा</translation>
+        <translation type="vanished">मला मागील आठवड्याचे कार्य प्रकल्पानुसार वर्गीकृत करून सारांशित करण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="843"/>
         <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation>ईमेल मजकूरातून कार्य सारांश तयार करा ज्यामध्ये बाकी असलेल्या कामांवर आणि पूर्ण झालेल्या कामांवर भर द्या</translation>
+        <translation type="vanished">ईमेल मजकूरातून कार्य सारांश तयार करा ज्यामध्ये बाकी असलेल्या कामांवर आणि पूर्ण झालेल्या कामांवर भर द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="849"/>
         <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation>मला वार्षिक सारांश आवश्यक आहे ज्यामध्ये कार्यातील महत्त्वाच्या गोष्टी आणि सुधारणा योजना समाविष्ट आहेत</translation>
+        <translation type="vanished">मला वार्षिक सारांश आवश्यक आहे ज्यामध्ये कार्यातील महत्त्वाच्या गोष्टी आणि सुधारणा योजना समाविष्ट आहेत</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="855"/>
         <source>Generate a monthly work report from the data I uploaded</source>
-        <translation>मी अपलोड केलेल्या डेटावरून मासिक कार्य अहवाल तयार करा</translation>
+        <translation type="vanished">मी अपलोड केलेल्या डेटावरून मासिक कार्य अहवाल तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="861"/>
         <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation>मला विखुरलेल्या कार्य नोट्सना सुव्यवस्थित कार्य सारांशात रूपांतरित करण्यात मदत करा</translation>
+        <translation type="vanished">मला विखुरलेल्या कार्य नोट्सना सुव्यवस्थित कार्य सारांशात रूपांतरित करण्यात मदत करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="868"/>
         <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation>अपलोड केलेला डेटा विश्लेषित करा आणि बाजारातील ट्रेंड अहवाल तयार करा</translation>
+        <translation type="vanished">अपलोड केलेला डेटा विश्लेषित करा आणि बाजारातील ट्रेंड अहवाल तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="874"/>
         <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation>मजकूरातील महत्त्वाची माहिती काढा आणि उद्योग विश्लेषण अहवाल संकलित करा</translation>
+        <translation type="vanished">मजकूरातील महत्त्वाची माहिती काढा आणि उद्योग विश्लेषण अहवाल संकलित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="880"/>
         <source>Combine the contents of the file to write a competitor research report</source>
-        <translation>फाइलच्या सामग्रीचा वापर करून स्पर्धक संशोधन अहवाल लिहा</translation>
+        <translation type="vanished">फाइलच्या सामग्रीचा वापर करून स्पर्धक संशोधन अहवाल लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="886"/>
         <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation>दिलेल्या मुलाखत रेकॉर्डवर आधारित वापरकर्त्यांच्या गरजांचा संशोधन सारांश तयार करा</translation>
+        <translation type="vanished">दिलेल्या मुलाखत रेकॉर्डवर आधारित वापरकर्त्यांच्या गरजांचा संशोधन सारांश तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="892"/>
         <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation>या विक्री डेटाचे विश्लेषण करा आणि त्रैमासिक बाजार कामगिरी अहवाल तयार करा</translation>
+        <translation type="vanished">या विक्री डेटाचे विश्लेषण करा आणि त्रैमासिक बाजार कामगिरी अहवाल तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="898"/>
         <source>Write a technical research report based on the given product description</source>
-        <translation>दिलेल्या उत्पादन वर्णनावर आधारित तांत्रिक संशोधन अहवाल लिहा</translation>
+        <translation type="vanished">दिलेल्या उत्पादन वर्णनावर आधारित तांत्रिक संशोधन अहवाल लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="904"/>
         <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation>या वापरकर्ता अभिप्रायांची व्यवस्था करा आणि उत्पादन सुधारणा सूचना अहवाल तयार करा</translation>
+        <translation type="vanished">या वापरकर्ता अभिप्रायांची व्यवस्था करा आणि उत्पादन सुधारणा सूचना अहवाल तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="910"/>
         <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation>कृपया दिलेल्या फाइलवर आधारित बाजार संधी विश्लेषण अहवाल लिहा</translation>
+        <translation type="vanished">कृपया दिलेल्या फाइलवर आधारित बाजार संधी विश्लेषण अहवाल लिहा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="921"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>मला [%1] या विषयावर [स्पष्ट रचना आणि समृद्ध सामग्री] असलेला निबंध लिहिण्यात मदत करा.</translation>
+        <translation type="vanished">मला [%1] या विषयावर [स्पष्ट रचना आणि समृद्ध सामग्री] असलेला निबंध लिहिण्यात मदत करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="941"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>मला [%1] या विषयावर [स्पष्ट रचना] आणि [सैल] टोन असलेला सार्वजनिक ट्वीट लिहिण्यात मदत करा.</translation>
+        <translation type="vanished">मला [%1] या विषयावर [स्पष्ट रचना] आणि [सैल] टोन असलेला सार्वजनिक ट्वीट लिहिण्यात मदत करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="946"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>मला माझ्या अलीकडील कार्याचा सारांश लिहिण्यात मदत करा, ज्यामध्ये [%1] आणि [निकाल] समाविष्ट आहेत, [औपचारिक] टोन आवश्यक आहे.</translation>
+        <translation type="vanished">मला माझ्या अलीकडील कार्याचा सारांश लिहिण्यात मदत करा, ज्यामध्ये [%1] आणि [निकाल] समाविष्ट आहेत, [औपचारिक] टोन आवश्यक आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="951"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>मला [%1] वर संशोधन अहवाल लिहिण्यात मदत करा, त्यात किमान [स्थिती वर्णन, समस्या विश्लेषण, उपाययोजना आणि सूचना, संशोधन निष्कर्ष] समाविष्ट असणे आवश्यक आहे.</translation>
+        <translation type="vanished">मला [%1] वर संशोधन अहवाल लिहिण्यात मदत करा, त्यात किमान [स्थिती वर्णन, समस्या विश्लेषण, उपाययोजना आणि सूचना, संशोधन निष्कर्ष] समाविष्ट असणे आवश्यक आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
-        <translation>कृत्रिम बुद्धिमत्ता</translation>
+        <translation type="vanished">कृत्रिम बुद्धिमत्ता</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="926"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>मला [कंपनी नेते] साठी [%1] या विषयावर [स्पष्ट रचना आणि जिवंत भाषा] असलेला भाषण लिहिण्यात मदत करा.</translation>
+        <translation type="vanished">मला [कंपनी नेते] साठी [%1] या विषयावर [स्पष्ट रचना आणि जिवंत भाषा] असलेला भाषण लिहिण्यात मदत करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="931"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>मला [%1] या विषयावर [PPT निर्मिती] साठी वापरल्या जाणाऱ्या रूपरेषा लिहिण्यात मदत करा.</translation>
+        <translation type="vanished">मला [%1] या विषयावर [PPT निर्मिती] साठी वापरल्या जाणाऱ्या रूपरेषा लिहिण्यात मदत करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="936"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>मला [%1] बद्दल [सर्व कर्मचारी] यांना [प्रशासन विभाग] कडून जाणीव पत्र लिहिण्यात मदत करा.</translation>
+        <translation type="vanished">मला [%1] बद्दल [सर्व कर्मचारी] यांना [प्रशासन विभाग] कडून जाणीव पत्र लिहिण्यात मदत करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="937"/>
         <source>National Day Holiday</source>
-        <translation>राष्ट्रीय दिन सुट्टी</translation>
+        <translation type="vanished">राष्ट्रीय दिन सुट्टी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="947"/>
         <source>work content</source>
-        <translation>कार्य सामग्री</translation>
+        <translation type="vanished">कार्य सामग्री</translation>
     </message>
 </context>
 <context>
     <name>EAiPrompt</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1439"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1600,7 +1266,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 ---question---
 %2
 </source>
-        <translation>---भूमिका---
+        <translation type="vanished">---भूमिका---
 
 तुम्ही एक उपयुक्त सहाय्यक आहात, दिलेल्या पार्श्वभूमीच्या ज्ञानावर आधारित प्रश्नांची उत्तरे देत आहात.
 
@@ -1617,16 +1283,14 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 %2</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1450"/>
         <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
 :%1
 </source>
-        <translation>उत्तर &quot;तुमच्या नॉलेज बेसमध्ये संबंधित माहिती आढळली नाही.&quot; याने सुरू होते.---प्रश्न---
+        <translation type="vanished">उत्तर &quot;तुमच्या नॉलेज बेसमध्ये संबंधित माहिती आढळली नाही.&quot; याने सुरू होते.---प्रश्न---
 
 :%1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1455"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1638,7 +1302,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 
 ---question---
 %2</source>
-        <translation>---भूमिका---
+        <translation type="vanished">---भूमिका---
 
 तुम्ही एक उपयुक्त सहाय्यक आहात, दिलेल्या पार्श्वभूमीच्या ज्ञानावर आधारित प्रश्नांची उत्तरे देत आहात.
 
@@ -1655,7 +1319,6 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 %2</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="104"/>
         <source>---Role---
 You are a professional writer with expertise in various writing styles and formats.
 
@@ -1678,7 +1341,7 @@ Based on the user&apos;s request, create high-quality content that meets their s
 Please provide the content in the following format:
 Title:
 Content:</source>
-        <translation>---भूमिका---
+        <translation type="vanished">---भूमिका---
 
 तुम्ही विविध लेखनशैली व स्वरूपांमध्ये निपुण असलेले व्यावसायिक लेखक आहात.
 
@@ -1706,7 +1369,6 @@ Content:</source>
 मजकूर:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="133"/>
         <source>---Role---
 You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
 
@@ -1726,7 +1388,7 @@ Process and improve the input text while maintaining its original meaning and st
 
 ---Output Format---
 Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation>---भूमिका---
+        <translation type="vanished">---भूमिका---
 
 तुम्ही भाषा विश्लेषण, लेखन तंत्र व मजकूर अनुकूलन यामध्ये खोल निपुण असलेले मजकूर प्रक्रिया तज्ञ आहात.
 
@@ -1751,7 +1413,6 @@ Please provide the processed text directly without any additional characters or 
 कृपया प्रक्रिया केलेला मजकूर थेट द्या, कोणतेही अतिरिक्त अक्षर किंवा स्वरूपण न वापरता.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="159"/>
         <source>---Role---
 You are a professional translator and language expert. Your task is to:
 1. Accurately translate text as requested
@@ -1778,7 +1439,7 @@ For language questions, provide clear, concise explanations.
 2. For partial translations: Provide only the specified portion&apos;s translation
 3. For explanations: Provide only the explanation in the same language as the question
 Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation>---भूमिका---
+        <translation type="vanished">---भूमिका---
 
 तुम्ही व्यावसायिक अनुवादक व भाषा तज्ञ आहात. तुमचे कार्य:
 1. विनंतीनुसार मजकुराचा अचूक अनुवाद करणे
@@ -1813,1073 +1474,857 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation>UOS स्क्रीन रेकॉर्डरला ६.६ किंवा नवीन आवृत्तीवर अद्यतनित करा आणि स्क्रीनशॉट प्रश्नोत्तर सक्षम करण्यासाठी संगणक रीस्टार्ट करा.</translation>
+        <translation type="vanished">UOS स्क्रीन रेकॉर्डरला ६.६ किंवा नवीन आवृत्तीवर अद्यतनित करा आणि स्क्रीनशॉट प्रश्नोत्तर सक्षम करण्यासाठी संगणक रीस्टार्ट करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
-        <translation>मॉडेल कॉन्फिगरेशन</translation>
+        <translation type="vanished">मॉडेल कॉन्फिगरेशन</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
-        <translation>कॉन्फिगरेशनवर जा</translation>
+        <translation type="vanished">कॉन्फिगरेशनवर जा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
-        <translation>खाते नाही</translation>
+        <translation type="vanished">खाते नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
-        <translation>इनपुट प्रश्न</translation>
+        <translation type="vanished">इनपुट प्रश्न</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>AI द्वारे निर्मित सामग्री केवळ संदर्भासाठी आहे, कृपया माहितीच्या अचूकतेकडे लक्ष द्या.</translation>
+        <translation type="vanished">AI द्वारे निर्मित सामग्री केवळ संदर्भासाठी आहे, कृपया माहितीच्या अचूकतेकडे लक्ष द्या.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
-        <translation>UOS AI मध्ये आपले स्वागत आहे</translation>
+        <translation type="vanished">UOS AI मध्ये आपले स्वागत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation>UOS AI तुम्हाला ही काही गोष्टी करण्यास मदत करू शकते</translation>
+        <translation type="vanished">UOS AI तुम्हाला ही काही गोष्टी करण्यास मदत करू शकते</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
-        <translation>थांबवा</translation>
+        <translation type="vanished">थांबवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
-        <translation>पुन्हा तयार करा</translation>
+        <translation type="vanished">पुन्हा तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
-        <translation>संभाषण इतिहास साफ करा</translation>
+        <translation type="vanished">संभाषण इतिहास साफ करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
-        <translation>कृपया मायक्रोफोन कनेक्ट करा आणि पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">कृपया मायक्रोफोन कनेक्ट करा आणि पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
-        <translation>चॅट इतिहास साफ केला</translation>
+        <translation type="vanished">चॅट इतिहास साफ केला</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
-        <translation>रेकॉर्डिंग सुरू/थांबवण्यासाठी क्लिक करा</translation>
+        <translation type="vanished">रेकॉर्डिंग सुरू/थांबवण्यासाठी क्लिक करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
-        <translation>ऐकत आहे</translation>
+        <translation type="vanished">ऐकत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
-        <translation>झोपलेले</translation>
+        <translation type="vanished">झोपलेले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
-        <translation>मायक्रोफोन आढळला नाही</translation>
+        <translation type="vanished">मायक्रोफोन आढळला नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
-        <translation>कनेक्शन अयशस्वी, पुन्हा प्रयत्न करण्यासाठी क्लिक करा</translation>
+        <translation type="vanished">कनेक्शन अयशस्वी, पुन्हा प्रयत्न करण्यासाठी क्लिक करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation>सक्रिय करण्यासाठी अ‍ॅनिमेशनवर क्लिक करा किंवा Ctrl+Super+Space दाबा</translation>
+        <translation type="vanished">सक्रिय करण्यासाठी अ‍ॅनिमेशनवर क्लिक करा किंवा Ctrl+Super+Space दाबा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation>व्हॉइस इनपुट तात्पुरत्या अनुपलब्ध आहे, कृपया नेटवर्क तपासा!</translation>
+        <translation type="vanished">व्हॉइस इनपुट तात्पुरत्या अनुपलब्ध आहे, कृपया नेटवर्क तपासा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया तुमचे नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया तुमचे नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
-        <translation>व्हॉइस संभाषण</translation>
+        <translation type="vanished">व्हॉइस संभाषण</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
-        <translation>पाठवण्यासाठी अ‍ॅनिमेशनवर क्लिक करा किंवा Enter दाबा</translation>
+        <translation type="vanished">पाठवण्यासाठी अ‍ॅनिमेशनवर क्लिक करा किंवा Enter दाबा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
-        <translation>%1 सेकंदांनंतर रेकॉर्डिंग थांबवा</translation>
+        <translation type="vanished">%1 सेकंदांनंतर रेकॉर्डिंग थांबवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
-        <translation>विचार करत आहे</translation>
+        <translation type="vanished">विचार करत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
-        <translation>खंडित करण्यासाठी अ‍ॅनिमेशनवर क्लिक करा</translation>
+        <translation type="vanished">खंडित करण्यासाठी अ‍ॅनिमेशनवर क्लिक करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
-        <translation>उत्तर देत आहे</translation>
+        <translation type="vanished">उत्तर देत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>तुमची विनामूल्य खाते कोटा संपली आहे, कृपया वापरणे सुरू ठेवण्यासाठी तुमचे मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">तुमची विनामूल्य खाते कोटा संपली आहे, कृपया वापरणे सुरू ठेवण्यासाठी तुमचे मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>तुमचे विनामूल्य खाते कालबाह्य झाले आहे, कृपया वापरणे सुरू ठेवण्यासाठी तुमचे मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">तुमचे विनामूल्य खाते कालबाह्य झाले आहे, कृपया वापरणे सुरू ठेवण्यासाठी तुमचे मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
-        <translation>सक्रिय करा</translation>
+        <translation type="vanished">सक्रिय करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
-        <translation>व्हॉइस इनपुट</translation>
+        <translation type="vanished">व्हॉइस इनपुट</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation>व्हॉइस प्रसारण तात्पुरत्या अनुपलब्ध आहे, कृपया नेटवर्क तपासा!</translation>
+        <translation type="vanished">व्हॉइस प्रसारण तात्पुरत्या अनुपलब्ध आहे, कृपया नेटवर्क तपासा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
-        <translation>व्हॉइस संभाषण बंद करा</translation>
+        <translation type="vanished">व्हॉइस संभाषण बंद करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation>चित्र निर्माण केले गेले आहे, कृपया ते पाहण्यासाठी चॅट इंटरफेसवर स्विच करा.</translation>
+        <translation type="vanished">चित्र निर्माण केले गेले आहे, कृपया ते पाहण्यासाठी चॅट इंटरफेसवर स्विच करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
-        <translation>खाते नाही, कृपया खाते कॉन्फिगर करा</translation>
+        <translation type="vanished">खाते नाही, कृपया खाते कॉन्फिगर करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
-        <translation>प्रत्येक प्रश्नाचे 5 वेळा उत्तर द्या</translation>
+        <translation type="vanished">प्रत्येक प्रश्नाचे 5 वेळा उत्तर द्या</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
-        <translation>यशस्वीरित्या कॉपी केले</translation>
+        <translation type="vanished">यशस्वीरित्या कॉपी केले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
-        <translation>ध्वनी आउटपुट डिव्हाइस आढळली नाही</translation>
+        <translation type="vanished">ध्वनी आउटपुट डिव्हाइस आढळली नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
-        <translation>ध्वनी आउटपुट डिव्हाइस आढळली नाही, कृपया तपासा आणि पुन्हा प्रयत्न करा!</translation>
+        <translation type="vanished">ध्वनी आउटपुट डिव्हाइस आढळली नाही, कृपया तपासा आणि पुन्हा प्रयत्न करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
-        <translation>सेटिंग्ज</translation>
+        <translation type="vanished">सेटिंग्ज</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
-        <translation>विषयी</translation>
+        <translation type="vanished">विषयी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
-        <translation>मोड</translation>
+        <translation type="vanished">मोड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
-        <translation>विंडो मोड</translation>
+        <translation type="vanished">विंडो मोड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
-        <translation>साइडबार मोड</translation>
+        <translation type="vanished">साइडबार मोड</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
-        <translation>सहाय्यक यादी</translation>
+        <translation type="vanished">सहाय्यक यादी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
-        <translation>एजंट यादी</translation>
+        <translation type="vanished">एजंट यादी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
-        <translation>एजंट स्टोअर</translation>
+        <translation type="vanished">एजंट स्टोअर</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
-        <translation>UOS सिस्टम सहाय्यक</translation>
+        <translation type="vanished">UOS सिस्टम सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin सिस्टम सहाय्यक</translation>
+        <translation type="vanished">Deepin सिस्टम सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>वैयक्तिक ज्ञान सहाय्यक</translation>
+        <translation type="vanished">वैयक्तिक ज्ञान सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
-        <translation>कृपया ज्ञान आधार कॉन्फिगर करा</translation>
+        <translation type="vanished">कृपया ज्ञान आधार कॉन्फिगर करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation>[वैयक्तिक ज्ञान सहाय्यक] वापरण्यापूर्वी ज्ञान आधार कॉन्फिगर करणे आवश्यक आहे. ज्ञान आधार कॉन्फिगर केल्यानंतर, AI तुम्ही ज्ञान आधारात कॉन्फिगर केलेल्या सामग्रीवर आधारित प्रश्नांची उत्तरे देईल किंवा सामग्री निर्माण करेल.</translation>
+        <translation type="vanished">[वैयक्तिक ज्ञान सहाय्यक] वापरण्यापूर्वी ज्ञान आधार कॉन्फिगर करणे आवश्यक आहे. ज्ञान आधार कॉन्फिगर केल्यानंतर, AI तुम्ही ज्ञान आधारात कॉन्फिगर केलेल्या सामग्रीवर आधारित प्रश्नांची उत्तरे देईल किंवा सामग्री निर्माण करेल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
-        <translation>कृपया मोठे मॉडेल कॉन्फिगर करा</translation>
+        <translation type="vanished">कृपया मोठे मॉडेल कॉन्फिगर करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation>वैयक्तिक ज्ञान सहाय्यक फक्त मोठे मॉडेल कॉन्फिगर केल्यानंतर वापरता येईल.</translation>
+        <translation type="vanished">वैयक्तिक ज्ञान सहाय्यक फक्त मोठे मॉडेल कॉन्फिगर केल्यानंतर वापरता येईल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
-        <translation>कॉन्फिगर करण्यासाठी</translation>
+        <translation type="vanished">कॉन्फिगर करण्यासाठी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
-        <translation>स्थापित करण्यासाठी</translation>
+        <translation type="vanished">स्थापित करण्यासाठी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
-        <translation>कृपया [EmbeddingPlugins] स्थापित करा</translation>
+        <translation type="vanished">कृपया [EmbeddingPlugins] स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation>हा सहाय्यक चालविण्यासाठी EmbeddingPlugins ची स्थापना आवश्यक आहे</translation>
+        <translation type="vanished">हा सहाय्यक चालविण्यासाठी EmbeddingPlugins ची स्थापना आवश्यक आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
-        <translation>फाइल्स येथे ड्रॅग करा जोडण्यासाठी.</translation>
+        <translation type="vanished">फाइल्स येथे ड्रॅग करा जोडण्यासाठी.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation>तुम्ही फक्त ३ फाइल्स जोडू शकता, समर्थित फाइल प्रकारांमध्ये समाविष्ट आहेत: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, कोड फाइल्स इत्यादी.</translation>
+        <translation type="vanished">तुम्ही फक्त ३ फाइल्स जोडू शकता, समर्थित फाइल प्रकारांमध्ये समाविष्ट आहेत: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, कोड फाइल्स इत्यादी.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
-        <translation>MCP सर्व्हर</translation>
+        <translation type="vanished">MCP सर्व्हर</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
-        <translation>MCP सर्व्हर जोडा</translation>
+        <translation type="vanished">MCP सर्व्हर जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
-        <translation>सर्व्हर जोडा</translation>
+        <translation type="vanished">सर्व्हर जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
-        <translation>जोडणी अयशस्वी! त्रुटीचे कारण:</translation>
+        <translation type="vanished">जोडणी अयशस्वी! त्रुटीचे कारण:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation>MCP वातावरण गहाळ आहे. कृपया 【UOS AI Agent】 स्थापित करा</translation>
+        <translation type="vanished">MCP वातावरण गहाळ आहे. कृपया 【UOS AI Agent】 स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
-        <translation>कॉल सुरू आहे</translation>
+        <translation type="vanished">कॉल सुरू आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
-        <translation>पूर्ण झाले</translation>
+        <translation type="vanished">पूर्ण झाले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
-        <translation>कॉल अयशस्वी</translation>
+        <translation type="vanished">कॉल अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
-        <translation>रद्द केले</translation>
+        <translation type="vanished">रद्द केले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
-        <translation>पॅरामीटर्स</translation>
+        <translation type="vanished">पॅरामीटर्स</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
-        <translation>परिणाम</translation>
+        <translation type="vanished">परिणाम</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>MCP सर्व्हरसाठी अधिकृत प्रकाशित केलेल्या &quot;DeepSeek-Trial Account&quot; मॉडेलवर स्विच करा</translation>
+        <translation type="vanished">MCP सर्व्हरसाठी अधिकृत प्रकाशित केलेल्या &quot;DeepSeek-Trial Account&quot; मॉडेलवर स्विच करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation>MCP सर्व्हर कमांड टाका, उदा. &quot;माझ्यासाठी सिस्टम डार्क मोडमध्ये बदला&quot;</translation>
+        <translation type="vanished">MCP सर्व्हर कमांड टाका, उदा. &quot;माझ्यासाठी सिस्टम डार्क मोडमध्ये बदला&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
-        <translation>एजंट सर्व्हर उपलब्ध नाही</translation>
+        <translation type="vanished">एजंट सर्व्हर उपलब्ध नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
-        <translation>एजंट सर्व्हर अपवाद</translation>
+        <translation type="vanished">एजंट सर्व्हर अपवाद</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
-        <translation>MCP सर्व्हर उपलब्ध नाही</translation>
+        <translation type="vanished">MCP सर्व्हर उपलब्ध नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
-        <translation type="unfinished">रद्द करा</translation>
+        <translation type="obsolete">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation>एकाच कमांडने MCP सेवेचा वापर करून बहु-फाइल व बहु-ऍप कार्ये स्वयंचलित करा. आत्ताच प्रयत्न करा!</translation>
+        <translation type="vanished">एकाच कमांडने MCP सेवेचा वापर करून बहु-फाइल व बहु-ऍप कार्ये स्वयंचलित करा. आत्ताच प्रयत्न करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
-        <translation>नंतर वापरा</translation>
+        <translation type="vanished">नंतर वापरा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
-        <translation>आत्ताच स्थापित करा</translation>
+        <translation type="vanished">आत्ताच स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
-        <translation>MCP सर्व्हर सक्षम करा</translation>
+        <translation type="vanished">MCP सर्व्हर सक्षम करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation>MCP वातावरण &quot;UOS AI Agent&quot; स्थापित केल्यानंतर, </translation>
+        <translation type="vanished">MCP वातावरण &quot;UOS AI Agent&quot; स्थापित केल्यानंतर, </translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation> वर क्लिक करा आणि MCP सर्व्हर यादीत &quot;uos-mcp&quot; निवडा.</translation>
+        <translation type="vanished"> वर क्लिक करा आणि MCP सर्व्हर यादीत &quot;uos-mcp&quot; निवडा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation>प्रयत्न करा: &quot;सिस्टम डार्क मोडमध्ये बदला&quot;.</translation>
+        <translation type="vanished">प्रयत्न करा: &quot;सिस्टम डार्क मोडमध्ये बदला&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
-        <translation>आत्ताच प्रयत्न करा</translation>
+        <translation type="vanished">आत्ताच प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
-        <translation>MCP सर्व्हर जोडा [मार्गदर्शनपृष्ठ]</translation>
+        <translation type="vanished">MCP सर्व्हर जोडा [मार्गदर्शनपृष्ठ]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation>प्रथमच वापरणारे वापरकर्ते: अ‍ॅप स्टोरमधून MCP वातावरण &quot;UOS AI Agent&quot; स्थापित करा.</translation>
+        <translation type="vanished">प्रथमच वापरणारे वापरकर्ते: अ‍ॅप स्टोरमधून MCP वातावरण &quot;UOS AI Agent&quot; स्थापित करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation>JSON फाइल स्वरूप चुकीचे आहे, कृपया तपासून पुन्हा सबमिट करा</translation>
+        <translation type="vanished">JSON फाइल स्वरूप चुकीचे आहे, कृपया तपासून पुन्हा सबमिट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
-        <translation>आत्ताच स्थापित करा &gt;</translation>
+        <translation type="vanished">आत्ताच स्थापित करा &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
-        <translation>सामान्य चॅट</translation>
+        <translation type="vanished">सामान्य चॅट</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
-        <translation>खाजगी चॅट</translation>
+        <translation type="vanished">खाजगी चॅट</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
-        <translation>सध्या खाजगी चॅटमध्ये</translation>
+        <translation type="vanished">सध्या खाजगी चॅटमध्ये</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation>खाजगी चॅटमधील संदेश इतिहासात जतन केले जात नाहीत आणि तुम्ही चॅट सोडल्यावर ते कायमचे हटवले जातील.</translation>
+        <translation type="vanished">खाजगी चॅटमधील संदेश इतिहासात जतन केले जात नाहीत आणि तुम्ही चॅट सोडल्यावर ते कायमचे हटवले जातील.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation>स्क्रीनशॉट प्रश्नोत्तर शॉर्टकट (Ctrl+Alt+Q), कमाल ३ प्रतिमा समर्थित.</translation>
+        <translation type="vanished">स्क्रीनशॉट प्रश्नोत्तर शॉर्टकट (Ctrl+Alt+Q), कमाल ३ प्रतिमा समर्थित.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
-        <translation>स्क्रीन रेकॉर्डिंग सुरू असताना वापरता येणार नाही</translation>
+        <translation type="vanished">स्क्रीन रेकॉर्डिंग सुरू असताना वापरता येणार नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
-        <translation>तुम्ही कमाल ३ फाइल्स किंवा प्रतिमा अपलोड करू शकता</translation>
+        <translation type="vanished">तुम्ही कमाल ३ फाइल्स किंवा प्रतिमा अपलोड करू शकता</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
-        <translation>फाइल्स अपलोड करा</translation>
+        <translation type="vanished">फाइल्स अपलोड करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
-        <translation>कृपया असामान्य फाइल हटवा आणि पुन्हा पाठवा</translation>
+        <translation type="vanished">कृपया असामान्य फाइल हटवा आणि पुन्हा पाठवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
-        <translation>खाजगी चॅट जोडा</translation>
+        <translation type="vanished">खाजगी चॅट जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
-        <translation>[स्क्रीनशॉट प्रश्नोत्तर] जोडा</translation>
+        <translation type="vanished">[स्क्रीनशॉट प्रश्नोत्तर] जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation>स्क्रीनशॉट घ्या आणि सामग्री UOS AI कडे पाठवा. तुम्ही थेट प्रतिमाही अपलोड करू शकता.</translation>
+        <translation type="vanished">स्क्रीनशॉट घ्या आणि सामग्री UOS AI कडे पाठवा. तुम्ही थेट प्रतिमाही अपलोड करू शकता.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
-        <translation type="unfinished">ठीक आहे</translation>
+        <translation type="obsolete">ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
-        <translation>पुढे</translation>
+        <translation type="vanished">पुढे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation>[खाजगी चॅट मोड] जोडा – संभाषणे जतन केली जाणार नाहीत.</translation>
+        <translation type="vanished">[खाजगी चॅट मोड] जोडा – संभाषणे जतन केली जाणार नाहीत.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
-        <translation>कोणताही मजकूर काढलेला नाही</translation>
+        <translation type="vanished">कोणताही मजकूर काढलेला नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
-        <translation>प्रतिमेचा आकार १५ MB पेक्षा जास्त आहे</translation>
+        <translation type="vanished">प्रतिमेचा आकार १५ MB पेक्षा जास्त आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation>नॉलेज बेस सुरू केल्यानंतर उत्तरे त्याच्या सामग्रीवर आधारित असतील. प्रतिसाद वेग मशीनच्या कार्यक्षमतेवर आणि नॉलेज बेसच्या आकारावर अवलंबून असतो.</translation>
+        <translation type="vanished">नॉलेज बेस सुरू केल्यानंतर उत्तरे त्याच्या सामग्रीवर आधारित असतील. प्रतिसाद वेग मशीनच्या कार्यक्षमतेवर आणि नॉलेज बेसच्या आकारावर अवलंबून असतो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation>कोणताही कमांड किंवा MCP निवडले असता नॉलेज बेस उपलब्ध नसते</translation>
+        <translation type="vanished">कोणताही कमांड किंवा MCP निवडले असता नॉलेज बेस उपलब्ध नसते</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
-        <translation>नॉलेज बेस सक्रिय असताना MCP अक्षम केले जाते</translation>
+        <translation type="vanished">नॉलेज बेस सक्रिय असताना MCP अक्षम केले जाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
-        <translation>नॉलेज बेस सक्रिय असताना कमांड्स अक्षम केल्या जातात</translation>
+        <translation type="vanished">नॉलेज बेस सक्रिय असताना कमांड्स अक्षम केल्या जातात</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
-        <translation type="unfinished">कॉपी करा</translation>
+        <translation type="obsolete">कॉपी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
-        <translation>पुन्हा संपादित करा</translation>
+        <translation type="vanished">पुन्हा संपादित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
-        <translation>कॉपी यशस्वी झाली.</translation>
+        <translation type="vanished">कॉपी यशस्वी झाली.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
-        <translation>कॉपी अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">कॉपी अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
-        <translation>शोधत आहे</translation>
+        <translation type="vanished">शोधत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
-        <translation>%1 संदर्भ दस्तऐवज प्राप्त झाले आहेत (%2s)</translation>
+        <translation type="vanished">%1 संदर्भ दस्तऐवज प्राप्त झाले आहेत (%2s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
-        <translation>इतिहास साफ करा</translation>
+        <translation type="vanished">इतिहास साफ करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
-        <translation>सर्व नोंदी हटवायच्या आहेत का?</translation>
+        <translation type="vanished">सर्व नोंदी हटवायच्या आहेत का?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
-        <translation>एकदा हटवल्यावर सामग्री परत मिळवता येणार नाही!</translation>
+        <translation type="vanished">एकदा हटवल्यावर सामग्री परत मिळवता येणार नाही!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
-        <translation>अधिकृत मॉडेल्स शिफारस करा</translation>
+        <translation type="vanished">अधिकृत मॉडेल्स शिफारस करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
-        <translation>MCP अक्षम करा</translation>
+        <translation type="vanished">MCP अक्षम करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>&quot;DeepSeek-Trial Account&quot; हे अधिकृत मॉडेल वापरण्याची शिफारस केली आहे</translation>
+        <translation type="vanished">&quot;DeepSeek-Trial Account&quot; हे अधिकृत मॉडेल वापरण्याची शिफारस केली आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
-        <translation>झटपट उघडा</translation>
+        <translation type="vanished">झटपट उघडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation>MCP सर्व्हर ऑटोमॅटिक मोडमध्ये अपग्रेड करा</translation>
+        <translation type="vanished">MCP सर्व्हर ऑटोमॅटिक मोडमध्ये अपग्रेड करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation>MCP सर्व्हर ऑटोमॅटिक मोडमध्ये अपग्रेड झाले आहे, ज्यामुळे तुम्ही सर्व MCP सर्व्हर फक्त एका क्लिकने प्रवेश करू शकता</translation>
+        <translation type="vanished">MCP सर्व्हर ऑटोमॅटिक मोडमध्ये अपग्रेड झाले आहे, ज्यामुळे तुम्ही सर्व MCP सर्व्हर फक्त एका क्लिकने प्रवेश करू शकता</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation>. यामुळे सिस्टम सेटअप आणि फाइल प्रोसेसिंगसारखे कार्य एकाच क्लिकने ऑटोमेट करता येतात.</translation>
+        <translation type="vanished">. यामुळे सिस्टम सेटअप आणि फाइल प्रोसेसिंगसारखे कार्य एकाच क्लिकने ऑटोमेट करता येतात.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
-        <translation>MCP सर्व्हर जोडणे आता सेटिंग्जमध्ये हलवले आहे.</translation>
+        <translation type="vanished">MCP सर्व्हर जोडणे आता सेटिंग्जमध्ये हलवले आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation>अधिक MCP सर्व्हर जोडण्यासाठी, सेटिंग्ज &gt; MCP सर्व्हर येथे जा.</translation>
+        <translation type="vanished">अधिक MCP सर्व्हर जोडण्यासाठी, सेटिंग्ज &gt; MCP सर्व्हर येथे जा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
-        <translation type="unfinished">समजले</translation>
+        <translation type="obsolete">समजले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
-        <translation>विनामूल्य मॉडेल क्रेडिट्स</translation>
+        <translation type="vanished">विनामूल्य मॉडेल क्रेडिट्स</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation>सध्याच्या प्रणालीमध्ये डीपसीक ट्रायल खाते मॉडेल उपलब्ध आहे, जे दर महिन्याच्या सुरुवातीला विनामूल्य कोटा आपोआप पुन्हा भरते, ज्यामुळे तुम्ही निश्चिंतपणे वापरू शकता.</translation>
+        <translation type="vanished">सध्याच्या प्रणालीमध्ये डीपसीक ट्रायल खाते मॉडेल उपलब्ध आहे, जे दर महिन्याच्या सुरुवातीला विनामूल्य कोटा आपोआप पुन्हा भरते, ज्यामुळे तुम्ही निश्चिंतपणे वापरू शकता.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
-        <translation>क्रेडिट्स मिळवा</translation>
+        <translation type="vanished">क्रेडिट्स मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
-        <translation type="unfinished">विनामूल्य खाते मिळवा</translation>
+        <translation type="obsolete">विनामूल्य खाते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
-        <translation>विनामूल्य क्रेडिट्स मिळवा</translation>
+        <translation type="vanished">विनामूल्य क्रेडिट्स मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
-        <translation>यशस्वीरित्या मिळवले</translation>
+        <translation type="vanished">यशस्वीरित्या मिळवले</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
-        <translation>एमसीपी सर्वर सक्षम करा&amp;</translation>
+        <translation type="vanished">एमसीपी सर्वर सक्षम करा&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
-        <translation>एमसीपी सर्वर अक्षम करा</translation>
+        <translation type="vanished">एमसीपी सर्वर अक्षम करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
-        <translation>एमसीपी सर्वर कॉन्फिगर करा</translation>
+        <translation type="vanished">एमसीपी सर्वर कॉन्फिगर करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
-        <source>Enable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
-        <source>Disable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
-        <source>Configure MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
-        <translation>तुम्ही फक्त एक फाइल जोडू शकता.</translation>
+        <translation type="vanished">तुम्ही फक्त एक फाइल जोडू शकता.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
-        <translation>फाइलचे स्वरूप समर्थित नाही.</translation>
+        <translation type="vanished">फाइलचे स्वरूप समर्थित नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
-        <translation>फाइलच्या मुख्य सामग्रीचा सारांश द्या.</translation>
+        <translation type="vanished">फाइलच्या मुख्य सामग्रीचा सारांश द्या.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
-        <translation>विश्लेषण करत आहे...</translation>
+        <translation type="vanished">विश्लेषण करत आहे...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
-        <translation>फाइल त्रुटी</translation>
+        <translation type="vanished">फाइल त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
-        <translation>फाइल हटवली गेली आहे.</translation>
+        <translation type="vanished">फाइल हटवली गेली आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
-        <translation>फाइलचा आकार 100MB मर्यादेपेक्षा जास्त आहे.</translation>
+        <translation type="vanished">फाइलचा आकार 100MB मर्यादेपेक्षा जास्त आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
-        <translation>डॉक्युमेंट अपलोड करा</translation>
+        <translation type="vanished">डॉक्युमेंट अपलोड करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
-        <translation>फाइल हटवली</translation>
+        <translation type="vanished">फाइल हटवली</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
-        <translation>कोणताही मजकूर विश्लेषित केला गेला नाही</translation>
+        <translation type="vanished">कोणताही मजकूर विश्लेषित केला गेला नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
-        <translation>संदर्भ</translation>
+        <translation type="vanished">संदर्भ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
-        <translation>सूचना</translation>
+        <translation type="vanished">सूचना</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation>सक्रिय करण्यासाठी इनपुट बॉक्समध्ये &quot;/&quot; टाइप करा.</translation>
+        <translation type="vanished">सक्रिय करण्यासाठी इनपुट बॉक्समध्ये &quot;/&quot; टाइप करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation>कृपया प्रविष्ट करा; “Ctrl+Enter” ओळ बदलण्यासाठी.</translation>
+        <translation type="vanished">कृपया प्रविष्ट करा; “Ctrl+Enter” ओळ बदलण्यासाठी.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation>तुमचा प्रश्न प्रविष्ट करा, किंवा कमांड निवडण्यासाठी &quot;/&quot; प्रविष्ट करा
+        <translation type="vanished">तुमचा प्रश्न प्रविष्ट करा, किंवा कमांड निवडण्यासाठी &quot;/&quot; प्रविष्ट करा
 नवीन ओळ सुरू करण्यासाठी &quot;Ctrl+Enter&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
-        <translation>शोध पूर्ण झाला.</translation>
+        <translation type="vanished">शोध पूर्ण झाला.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
-        <translation>निकाल पाहण्यासाठी क्लिक करा</translation>
+        <translation type="vanished">निकाल पाहण्यासाठी क्लिक करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
-        <translation>संपादन</translation>
+        <translation type="vanished">संपादन</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
-        <translation>जतन करा</translation>
+        <translation type="vanished">जतन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
-        <translation>कॉपी करा</translation>
+        <translation type="vanished">कॉपी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
-        <translation>शोधा</translation>
+        <translation type="vanished">शोधा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
-        <translation>डीपथिंक(R1)</translation>
+        <translation type="vanished">डीपथिंक(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
-        <translation>विचार थांबला आहे</translation>
+        <translation type="vanished">विचार थांबला आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
-        <translation>परत खाली</translation>
+        <translation type="vanished">परत खाली</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
-        <translation>खोलवर विचार (%1 सेकंद)</translation>
+        <translation type="vanished">खोलवर विचार (%1 सेकंद)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
-        <translation>नवीन संभाषण</translation>
+        <translation type="vanished">नवीन संभाषण</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
-        <translation>इतिहास</translation>
+        <translation type="vanished">इतिहास</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
-        <translation>कोणतेही इतिहास रेकॉर्ड नाहीत</translation>
+        <translation type="vanished">कोणतेही इतिहास रेकॉर्ड नाहीत</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
-        <translation>आज</translation>
+        <translation type="vanished">आज</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
-        <translation>काल</translation>
+        <translation type="vanished">काल</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation>तुम्हाला खात्री आहे की संभाषण हटवायचे आहे? एकदा हटवल्यानंतर ते परत मिळणार नाही.</translation>
+        <translation type="vanished">तुम्हाला खात्री आहे की संभाषण हटवायचे आहे? एकदा हटवल्यानंतर ते परत मिळणार नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
-        <translation>या संभाषणात वापरलेला %1 एजंट हटवला गेला आहे</translation>
+        <translation type="vanished">या संभाषणात वापरलेला %1 एजंट हटवला गेला आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation>हे संभाषण पाहता येत नाही. ते पाहण्यासाठी, कृपया %1 एजंट स्थापित करा आणि पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">हे संभाषण पाहता येत नाही. ते पाहण्यासाठी, कृपया %1 एजंट स्थापित करा आणि पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation>मूळ संभाषण मॉडेल हटवले गेले आहे. आम्ही तुमच्यासाठी नवीन मॉडेलवर स्विच केले आहे जेणेकरून तुम्ही संभाषण सुरू ठेवू शकता.</translation>
+        <translation type="vanished">मूळ संभाषण मॉडेल हटवले गेले आहे. आम्ही तुमच्यासाठी नवीन मॉडेलवर स्विच केले आहे जेणेकरून तुम्ही संभाषण सुरू ठेवू शकता.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
-        <translation>शिफारसी</translation>
+        <translation type="vanished">शिफारसी</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
-        <translation>अधिक</translation>
+        <translation type="vanished">अधिक</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
-        <translation>मॉडेल जोडा</translation>
+        <translation type="vanished">मॉडेल जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
-        <translation>मॉडेल नाही</translation>
+        <translation type="vanished">मॉडेल नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
-        <translation>कोणतेही मॉडेल उपलब्ध नाही. कृपया सेटिंग्जमध्ये मॉडेल स्थापित करा किंवा कॉन्फिगर करा.</translation>
+        <translation type="vanished">कोणतेही मॉडेल उपलब्ध नाही. कृपया सेटिंग्जमध्ये मॉडेल स्थापित करा किंवा कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation>कृपया तुमच्या निर्मितीसाठी सामग्रीचा विषय आणि आवश्यकता वर्णन करा.</translation>
+        <translation type="vanished">कृपया तुमच्या निर्मितीसाठी सामग्रीचा विषय आणि आवश्यकता वर्णन करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation>कृपया तुम्हाला भाषांतर करायची असलेली सामग्री प्रविष्ट करा आणि लक्ष्य भाषा निर्दिष्ट करा. पूर्वनिर्धारित भाषांतर चिनी भाषेत केले जाते.</translation>
+        <translation type="vanished">कृपया तुम्हाला भाषांतर करायची असलेली सामग्री प्रविष्ट करा आणि लक्ष्य भाषा निर्दिष्ट करा. पूर्वनिर्धारित भाषांतर चिनी भाषेत केले जाते.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation>कृपया तुम्हाला प्रक्रिया करायच्या असलेला मजकूर प्रविष्ट करा आणि तुमच्या आवश्यकता निर्दिष्ट करा.</translation>
+        <translation type="vanished">कृपया तुम्हाला प्रक्रिया करायच्या असलेला मजकूर प्रविष्ट करा आणि तुमच्या आवश्यकता निर्दिष्ट करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
-        <translation>नवीन एजंट जोडला गेला</translation>
+        <translation type="vanished">नवीन एजंट जोडला गेला</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation>नवीन लेखन, मजकूर प्रक्रिया आणि भाषांतर एजंट जोडले गेले आहेत. आता ते तपासा.</translation>
+        <translation type="vanished">नवीन लेखन, मजकूर प्रक्रिया आणि भाषांतर एजंट जोडले गेले आहेत. आता ते तपासा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
-        <translation>प्रयत्न करा</translation>
+        <translation type="vanished">प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
-        <translation>खालील दस्तऐवजावर आधारित लेख लिहा:</translation>
+        <translation type="vanished">खालील दस्तऐवजावर आधारित लेख लिहा:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
-        <translation>खालील दस्तऐवजाचे इंग्रजीमध्ये भाषांतर करा:</translation>
+        <translation type="vanished">खालील दस्तऐवजाचे इंग्रजीमध्ये भाषांतर करा:</translation>
     </message>
 </context>
 <context>
     <name>EChatButton</name>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="150"/>
         <source>Turn off voice conversation</source>
-        <translation>व्हॉइस संभाषण बंद करा</translation>
+        <translation type="vanished">व्हॉइस संभाषण बंद करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="152"/>
         <source>Voice conversation</source>
-        <translation>व्हॉइस संभाषण</translation>
+        <translation type="vanished">व्हॉइस संभाषण</translation>
     </message>
 </context>
 <context>
     <name>EPPTWebView</name>
     <message>
-        <location filename="../src/gui/chat/private/epptwebview.cpp" line="67"/>
         <source>Export Item As</source>
-        <translation>आयटम म्हणून निर्यात करा</translation>
+        <translation type="vanished">आयटम म्हणून निर्यात करा</translation>
     </message>
 </context>
 <context>
     <name>EParserDocument</name>
     <message>
-        <location filename="../src/gui/chat/private/eparserdocument.cpp" line="57"/>
         <source>Supported files</source>
-        <translation>सपोर्टेड फाइल्स</translation>
+        <translation type="vanished">सपोर्टेड फाइल्स</translation>
+    </message>
+</context>
+<context>
+    <name>FileParser</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
+        <source>Unsupported file format</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FunctionsParser</name>
     <message>
-        <location filename="../src/tools/functionsparser.cpp" line="267"/>
         <source>Function not available</source>
-        <translation>कार्य उपलब्ध नाही</translation>
+        <translation type="vanished">कार्य उपलब्ध नाही</translation>
     </message>
 </context>
 <context>
     <name>GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="44"/>
         <source>Get a free trial account</source>
-        <translation>विनामूल्य चाचणी खाते मिळवा</translation>
+        <translation type="vanished">विनामूल्य चाचणी खाते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="61"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="62"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation>खाते मिळवा</translation>
+        <translation type="vanished">खाते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="89"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>खाते मिळविणे म्हणजे तुम्ही कार्यक्रमाच्या अटी समजून घेतल्या आणि मान्य केल्या आहेत,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;कार्यक्रम तपशील&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">खाते मिळविणे म्हणजे तुम्ही कार्यक्रमाच्या अटी समजून घेतल्या आणि मान्य केल्या आहेत,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;कार्यक्रम तपशील&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="121"/>
         <source>Trial Account</source>
-        <translation>चाचणी खाते</translation>
+        <translation type="vanished">चाचणी खाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="133"/>
         <source>Save failed, please try again later</source>
-        <translation>जतन करणे अयशस्वी झाले, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">जतन करणे अयशस्वी झाले, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Trial account received successfully.</source>
-        <translation>चाचणी खाते यशस्वीरित्या मिळाले.</translation>
+        <translation type="vanished">चाचणी खाते यशस्वीरित्या मिळाले.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="144"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>चाचणी खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहेत, कृपया वेळेवर आपले वैयक्तिक मॉडेल खाते कॉन्फिगर करा! तपशीलांसाठी इव्हेंट तपशील पहा.</translation>
+        <translation type="vanished">चाचणी खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहेत, कृपया वेळेवर आपले वैयक्तिक मॉडेल खाते कॉन्फिगर करा! तपशीलांसाठी इव्हेंट तपशील पहा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="146"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>ट्रायल खात्यांसाठी इंग्रजी सपोर्ट समाधानकारक नाही. आणि ट्रायल खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहे. कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा!</translation>
+        <translation type="vanished">ट्रायल खात्यांसाठी इंग्रजी सपोर्ट समाधानकारक नाही. आणि ट्रायल खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहे. कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="147"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>चाचणी सुरू करा</translation>
+        <translation type="vanished">चाचणी सुरू करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="152"/>
         <source>The free account activity ends.</source>
-        <translation>विनामूल्य खाते क्रियाकलाप संपला.</translation>
+        <translation type="vanished">विनामूल्य खाते क्रियाकलाप संपला.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया आपले नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया आपले नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
 </context>
 <context>
@@ -2980,141 +2425,120 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="199"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation>नवीन जोडलेल्या फायलींना वापरण्यापूर्वी प्रीप्रोसेसिंग आवश्यक आहे, आणि डेटा प्रक्रिया प्रक्रियेदरम्यान, त्यामुळे मोठ्या प्रमाणात संगणक आणि स्टोरेज संसाधने वापरली जाऊ शकतात. डेटा हटवल्यानंतर डेटा प्रक्रिया थांबेल.</translation>
+        <translation type="vanished">नवीन जोडलेल्या फायलींना वापरण्यापूर्वी प्रीप्रोसेसिंग आवश्यक आहे, आणि डेटा प्रक्रिया प्रक्रियेदरम्यान, त्यामुळे मोठ्या प्रमाणात संगणक आणि स्टोरेज संसाधने वापरली जाऊ शकतात. डेटा हटवल्यानंतर डेटा प्रक्रिया थांबेल.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation>तुम्हाला ही ज्ञान आधार फाइल हटवायची आहे याची खात्री आहे?</translation>
+        <translation type="vanished">तुम्हाला ही ज्ञान आधार फाइल हटवायची आहे याची खात्री आहे?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
-        <translation>हटवा</translation>
+        <translation type="vanished">हटवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="67"/>
         <source>Add</source>
-        <translation>जोडा</translation>
+        <translation type="vanished">जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
-        <translation>कृपया प्रथम एम्बेडिंग मॉडेल प्लगइन्स स्थापित करा</translation>
+        <translation type="vanished">कृपया प्रथम एम्बेडिंग मॉडेल प्लगइन्स स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="79"/>
         <source>Knowledge Base Management</source>
-        <translation>ज्ञानसंग्रह व्यवस्थापन</translation>
+        <translation type="vanished">ज्ञानसंग्रह व्यवस्थापन</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="106"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation>येथे, वैयक्तिक ज्ञान सहाय्यकाचा ज्ञानसंग्रह परिभाषित केला जाऊ शकतो, आणि वैयक्तिक ज्ञान सहाय्यक खाली जोडलेल्या फायलीवर आधारित प्रश्नांची उत्तरे देईल.</translation>
+        <translation type="vanished">येथे, वैयक्तिक ज्ञान सहाय्यकाचा ज्ञानसंग्रह परिभाषित केला जाऊ शकतो, आणि वैयक्तिक ज्ञान सहाय्यक खाली जोडलेल्या फायलीवर आधारित प्रश्नांची उत्तरे देईल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
         <source>Done</source>
-        <translation>पूर्ण</translation>
+        <translation type="vanished">पूर्ण</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="169"/>
         <source>None</source>
-        <translation>काहीही नाही</translation>
+        <translation type="vanished">काहीही नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="215"/>
         <source>File already exist</source>
-        <translation>फाइल आधीपासून अस्तित्वात आहे</translation>
+        <translation type="vanished">फाइल आधीपासून अस्तित्वात आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="216"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation>%1 फाइल आधीपासून अस्तित्वात आहे आणि पुन्हा जोडली जाऊ शकत नाही. कृपया पुन्हा जोडण्यापूर्वी फाइलचे नाव बदला किंवा विद्यमान फाइल हटवा</translation>
+        <translation type="vanished">%1 फाइल आधीपासून अस्तित्वात आहे आणि पुन्हा जोडली जाऊ शकत नाही. कृपया पुन्हा जोडण्यापूर्वी फाइलचे नाव बदला किंवा विद्यमान फाइल हटवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="241"/>
         <source>All files</source>
-        <translation>सर्व फायली</translation>
+        <translation type="vanished">सर्व फायली</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation>या वैशिष्ट्यासाठी उच्च हार्डवेअर संसाधने आवश्यक आहेत, आणि संदर्भ बेंचमार्क कॉन्फिगरेशन आहे: CPU Intel 11वी पिढी i7 किंवा त्यापेक्षा जास्त; 16GB किंवा अधिक मेमरी; NVIDIA ग्राफिक्स कार्ड आणि 10 सिरीज किंवा त्यापेक्षा जास्त असणे हा सर्वोत्तम पर्याय आहे. जर कॉन्फिगरेशन खूपच कमी असेल, तर लॅगिंग आणि अचूक नसलेली उत्तरे यासारख्या समस्या येऊ शकतात.</translation>
+        <translation type="vanished">या वैशिष्ट्यासाठी उच्च हार्डवेअर संसाधने आवश्यक आहेत, आणि संदर्भ बेंचमार्क कॉन्फिगरेशन आहे: CPU Intel 11वी पिढी i7 किंवा त्यापेक्षा जास्त; 16GB किंवा अधिक मेमरी; NVIDIA ग्राफिक्स कार्ड आणि 10 सिरीज किंवा त्यापेक्षा जास्त असणे हा सर्वोत्तम पर्याय आहे. जर कॉन्फिगरेशन खूपच कमी असेल, तर लॅगिंग आणि अचूक नसलेली उत्तरे यासारख्या समस्या येऊ शकतात.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>फॉलोअलॉंग</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">ज्ञानसंग्रह क्षमता अपुरी</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">ज्ञानसंग्रहाची एकूण क्षमता %1M आहे, उर्वरित %2 आहे. यावेळी जोडल्या गेलेल्या फायलींची एकूण संख्या %3 आहे. ज्ञानसंग्रहात जोडण्याची क्रिया पूर्ण करणे शक्य नाही.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation type="unfinished">ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">डिस्क स्पेस पुरेसा नाही</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">नवीन जोडलेल्या फायली संचयित करण्यासाठी, किमान %1 डिस्क स्पेस आवश्यक आहे. सध्याची उर्वरित जागा %2 आहे. कृपया पुरेशी हार्ड डिस्क जागा मोकळी करा आणि पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">ज्ञानसंग्रहात जोडण्यासाठी वेक्टरायझेशन मॉडेल प्लगइन इंस्टॉल करणे आवश्यक आहे. कृपया अ‍ॅप स्टोअरवरून डाउनलोड आणि इंस्टॉल करा.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">इंस्टॉल करू नका</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">लगेच इंस्टॉल करा</translation>
@@ -3123,563 +2547,477 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>LLM</name>
     <message>
-        <location filename="../src/llm/common/llm.cpp" line="78"/>
         <source>Vincent picture service is not supported</source>
-        <translation>विन्सेंट चित्र सेवा समर्थित नाही</translation>
+        <translation type="vanished">विन्सेंट चित्र सेवा समर्थित नाही</translation>
     </message>
 </context>
 <context>
     <name>LLMServerProxy</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="270"/>
         <source>GPT3.5（OpenAI）</source>
-        <translation>GPT3.5 (OpenAI)</translation>
+        <translation type="vanished">GPT3.5 (OpenAI)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="273"/>
         <source>GPT4（OpenAI）</source>
-        <translation>GPT4 (OpenAI)</translation>
+        <translation type="vanished">GPT4 (OpenAI)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="280"/>
         <source>星火大模型1.5（讯飞）</source>
-        <translation>स्पार्क लार्ज मॉडेल 1.5 (iFLYTEK)</translation>
+        <translation type="vanished">स्पार्क लार्ज मॉडेल 1.5 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="283"/>
         <source>星火大模型2.0（讯飞）</source>
-        <translation>स्पार्क लार्ज मॉडेल 2.0 (iFLYTEK)</translation>
+        <translation type="vanished">स्पार्क लार्ज मॉडेल 2.0 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="285"/>
         <source>星火大模型3.0（讯飞）</source>
-        <translation>स्पार्क लार्ज मॉडेल 3.0 (iFLYTEK)</translation>
+        <translation type="vanished">स्पार्क लार्ज मॉडेल 3.0 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="290"/>
         <source>ERNIE 3.5</source>
-        <translation>ERNIE 3.5</translation>
+        <translation type="vanished">ERNIE 3.5</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="293"/>
         <source>ERNIE-Bot-turbo</source>
-        <translation>ERNIE-Bot-turbo</translation>
+        <translation type="vanished">ERNIE-Bot-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="295"/>
         <source>ERNIE-Bot-4</source>
-        <translation>ERNIE-Bot-4</translation>
+        <translation type="vanished">ERNIE-Bot-4</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="275"/>
         <source>360 AI</source>
-        <translation>360 AI</translation>
+        <translation type="vanished">360 AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="278"/>
         <source>iFLYTEK-Spark</source>
-        <translation>iFLYTEK-Spark</translation>
+        <translation type="vanished">iFLYTEK-Spark</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="288"/>
         <source>Baidu-Ernie</source>
-        <translation>Baidu-Ernie</translation>
+        <translation type="vanished">Baidu-Ernie</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="299"/>
         <source>ChatGLM-turbo</source>
-        <translation>ChatGLM-turbo</translation>
+        <translation type="vanished">ChatGLM-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="301"/>
         <source>Gemini 1.5 Flash</source>
-        <translation>जेमिनी १.५ फ्लॅश</translation>
+        <translation type="vanished">जेमिनी १.५ फ्लॅश</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="303"/>
         <source>Gemini 1.5 Pro</source>
-        <translation>जेमिनी १.५ प्रो</translation>
+        <translation type="vanished">जेमिनी १.५ प्रो</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="305"/>
         <source>TextToImage(Local)</source>
-        <translation>मजकूर-ते-प्रतिमा(स्थानिक)</translation>
+        <translation type="vanished">मजकूर-ते-प्रतिमा(स्थानिक)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="307"/>
         <source>YouRong 1.5B</source>
-        <translation>यूरॉंग 1.5B</translation>
+        <translation type="vanished">यूरॉंग 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="309"/>
         <source>YouRong 7B</source>
-        <translation>यूरॉंग 7B</translation>
+        <translation type="vanished">यूरॉंग 7B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="311"/>
         <source>Custom</source>
-        <translation>सानुकूलित</translation>
+        <translation type="vanished">सानुकूलित</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="313"/>
         <source>Private deployment model</source>
-        <translation>खाजगी तैनाती मॉडेल</translation>
+        <translation type="vanished">खाजगी तैनाती मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="315"/>
         <source>OpenRouter</source>
-        <translation>ओपनराऊटर</translation>
+        <translation type="vanished">ओपनराऊटर</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="317"/>
         <source>DeepSeek-R1</source>
-        <translation>डीपसीक-आर१</translation>
+        <translation type="vanished">डीपसीक-आर१</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="319"/>
         <source>DeepSeek</source>
-        <translation>डीपसीक</translation>
+        <translation type="vanished">डीपसीक</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="322"/>
         <source>unknown model</source>
-        <translation>अज्ञात मॉडेल</translation>
+        <translation type="vanished">अज्ञात मॉडेल</translation>
     </message>
 </context>
 <context>
     <name>LLMUtils</name>
     <message>
-        <location filename="../src/llm/common/llmutils.cpp" line="114"/>
         <source>Your system environment is Linux, and the user home path is</source>
-        <translation>तुमची सिस्टम वातावरण Linux आहे, आणि वापरकर्ता होम मार्ग आहे</translation>
+        <translation type="vanished">तुमची सिस्टम वातावरण Linux आहे, आणि वापरकर्ता होम मार्ग आहे</translation>
     </message>
 </context>
 <context>
     <name>LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation>स्थापित करा</translation>
+        <translation type="vanished">स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation>अद्यतन करा</translation>
+        <translation type="vanished">अद्यतन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation>विस्थापित करा</translation>
+        <translation type="vanished">विस्थापित करा</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="32"/>
         <source>uninstall</source>
-        <translation>विस्थापित करा</translation>
+        <translation type="vanished">विस्थापित करा</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation>स्थानिक मॉडेल</translation>
+        <translation type="vanished">स्थानिक मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Text to image model</source>
-        <translation>मजकूर ते प्रतिमा मॉडेल</translation>
+        <translation type="vanished">मजकूर ते प्रतिमा मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation>प्रतिमा निर्माण करण्यासाठी स्थानिक मॉडेल वापरा. ते चालू केल्यानंतर, तुम्ही चॅट इंटरफेसमधील मॉडेल यादीत मॉडेल निवडू शकता.</translation>
+        <translation type="vanished">प्रतिमा निर्माण करण्यासाठी स्थानिक मॉडेल वापरा. ते चालू केल्यानंतर, तुम्ही चॅट इंटरफेसमधील मॉडेल यादीत मॉडेल निवडू शकता.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>speech model</source>
-        <translation>भाषण मॉडेल</translation>
+        <translation type="vanished">भाषण मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation>चालू केल्यावर, चॅट इंटरफेसमधील भाषण ओळख आणि भाषण वाचन इंटरनेट कनेक्शन न घेता स्थानिक मॉडेल वापरेल.</translation>
+        <translation type="vanished">चालू केल्यावर, चॅट इंटरफेसमधील भाषण ओळख आणि भाषण वाचन इंटरनेट कनेक्शन न घेता स्थानिक मॉडेल वापरेल.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
         <source>ULLM-1.5B</source>
-        <translation>यूएलएलएम-1.5B</translation>
+        <translation type="vanished">यूएलएलएम-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
         <source>ULLM-7B</source>
-        <translation>यूएलएलएम-7B</translation>
+        <translation type="vanished">यूएलएलएम-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation>डीपसीक-आर१-१.५बी</translation>
+        <translation type="vanished">डीपसीक-आर१-१.५बी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>UOS AI large model</source>
-        <translation>यूओएस एआय मोठे मॉडेल</translation>
+        <translation type="vanished">यूओएस एआय मोठे मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation>एकदा स्थापित केल्यानंतर, यूओएस एआय वापरण्यासाठी तुम्हाला इंटरनेट कनेक्शनची आवश्यकता नाही.</translation>
+        <translation type="vanished">एकदा स्थापित केल्यानंतर, यूओएस एआय वापरण्यासाठी तुम्हाला इंटरनेट कनेक्शनची आवश्यकता नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation>ओपन-सोर्स समुदायातून तुमच्या जोखमीवर डाउनलोड करा. इन्स्टॉलेशननंतर UOS AI सहाय्यकात वापरा.</translation>
+        <translation type="vanished">ओपन-सोर्स समुदायातून तुमच्या जोखमीवर डाउनलोड करा. इन्स्टॉलेशननंतर UOS AI सहाय्यकात वापरा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>Embedding Plugins</source>
-        <translation>एम्बेडिंग प्लगइन्स</translation>
+        <translation type="vanished">एम्बेडिंग प्लगइन्स</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation>मॉडेल स्थापित केल्यानंतर, सिस्टम सहाय्यक आणि वैयक्तिक ज्ञान सहाय्यक चालवता येईल.</translation>
+        <translation type="vanished">मॉडेल स्थापित केल्यानंतर, सिस्टम सहाय्यक आणि वैयक्तिक ज्ञान सहाय्यक चालवता येईल.</translation>
     </message>
 </context>
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
-        <translation>यशस्वीरित्या कनेक्ट केले</translation>
+        <translation type="vanished">यशस्वीरित्या कनेक्ट केले</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
-        <translation>वापरकर्ता करार</translation>
+        <translation type="vanished">वापरकर्ता करार</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
-        <translation>यूओएस एआय वापरकर्ता करार</translation>
+        <translation type="vanished">यूओएस एआय वापरकर्ता करार</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
-        <translation>वाचले आणि मान्य केले</translation>
+        <translation type="vanished">वाचले आणि मान्य केले</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
-        <translation>प्रॉक्सी सेटिंग्ज</translation>
+        <translation type="vanished">प्रॉक्सी सेटिंग्ज</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
-        <translation>सेटिंग्जवर जा</translation>
+        <translation type="vanished">सेटिंग्जवर जा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
-        <translation>मॉडेल कॉन्फिगरेशन</translation>
+        <translation type="vanished">मॉडेल कॉन्फिगरेशन</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
-        <translation>विनामूल्य खाते क्रियाकलाप संपतो.</translation>
+        <translation type="vanished">विनामूल्य खाते क्रियाकलाप संपतो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation>ज्ञानसंग्रहात जोडण्यासाठी वेक्टरायझेशन मॉडेल प्लगइन इंस्टॉल करणे आवश्यक आहे. कृपया अ‍ॅप स्टोअरवरून डाउनलोड आणि इंस्टॉल करा.</translation>
+        <translation type="vanished">ज्ञानसंग्रहात जोडण्यासाठी वेक्टरायझेशन मॉडेल प्लगइन इंस्टॉल करणे आवश्यक आहे. कृपया अ‍ॅप स्टोअरवरून डाउनलोड आणि इंस्टॉल करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation>इंस्टॉल करू नका</translation>
+        <translation type="vanished">इंस्टॉल करू नका</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation>लगेच इंस्टॉल करा</translation>
+        <translation type="vanished">लगेच इंस्टॉल करा</translation>
     </message>
 </context>
 <context>
     <name>ModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="54"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>तुम्हाला हे मॉडेल हटवायचे आहे याची खात्री आहे का?</translation>
+        <translation type="vanished">तुम्हाला हे मॉडेल हटवायचे आहे याची खात्री आहे का?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="55"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="56"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
 </context>
 <context>
     <name>ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="31"/>
         <source>Get a free account</source>
-        <translation>विनामूल्य खाते मिळवा</translation>
+        <translation type="vanished">विनामूल्य खाते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
-        <translation>हटवा</translation>
+        <translation type="vanished">हटवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="41"/>
         <source>Add</source>
-        <translation>जोडा</translation>
+        <translation type="vanished">जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="48"/>
         <source>Online model</source>
-        <translation>ऑनलाइन मॉडेल</translation>
+        <translation type="vanished">ऑनलाइन मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
         <source>Done</source>
-        <translation>पूर्ण</translation>
+        <translation type="vanished">पूर्ण</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="107"/>
         <source>None</source>
-        <translation>काहीही नाही</translation>
+        <translation type="vanished">काहीही नाही</translation>
     </message>
 </context>
 <context>
     <name>ModifyModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="27"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="37"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="47"/>
         <source>APIKey</source>
-        <translation>APIKey</translation>
+        <translation type="vanished">APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="57"/>
         <source>APISecret</source>
-        <translation>APISecret</translation>
+        <translation type="vanished">APISecret</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="67"/>
         <source>Account</source>
-        <translation>खाते</translation>
+        <translation type="vanished">खाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="73"/>
         <source>Model Name</source>
-        <translation>मॉडेलचे नाव</translation>
+        <translation type="vanished">मॉडेलचे नाव</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="83"/>
         <source>API Address</source>
-        <translation>API पत्ता</translation>
+        <translation type="vanished">API पत्ता</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="96"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>आवश्यक, एकाधिक मॉडेल्स वेगळे करण्यासाठी</translation>
+        <translation type="vanished">आवश्यक, एकाधिक मॉडेल्स वेगळे करण्यासाठी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="100"/>
         <source>Domain</source>
-        <translation>डोमेन</translation>
+        <translation type="vanished">डोमेन</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="136"/>
         <source>Cancel</source>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="138"/>
         <source>Confirm</source>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="298"/>
         <source>No more than 20 characters</source>
-        <translation>20 वर्णांपेक्षा जास्त नाही</translation>
+        <translation type="vanished">20 वर्णांपेक्षा जास्त नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="337"/>
         <source>The account name already exists, please change it</source>
-        <translation>खात्याचे नाव आधीपासून अस्तित्वात आहे, कृपया ते बदला</translation>
+        <translation type="vanished">खात्याचे नाव आधीपासून अस्तित्वात आहे, कृपया ते बदला</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
+        <source>The image file does not exist: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
+        <source>OCR did not recognize the text content</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="192"/>
         <source>In data processing</source>
-        <translation>डेटा प्रक्रियेत</translation>
+        <translation type="vanished">डेटा प्रक्रियेत</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="204"/>
         <source>Data processing error</source>
-        <translation>डेटा प्रक्रिया त्रुटी</translation>
+        <translation type="vanished">डेटा प्रक्रिया त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="216"/>
         <source>File error, unable to process, please delete.</source>
-        <translation>फाइल त्रुटी, प्रक्रिया करण्यास अक्षम, कृपया हटवा.</translation>
+        <translation type="vanished">फाइल त्रुटी, प्रक्रिया करण्यास अक्षम, कृपया हटवा.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="503"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="506"/>
         <source>UOS System Assistant</source>
-        <translation>UOS सिस्टम सहाय्यक</translation>
+        <translation type="vanished">UOS सिस्टम सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="509"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin सिस्टम सहाय्यक</translation>
+        <translation type="vanished">Deepin सिस्टम सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="512"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>वैयक्तिक ज्ञान सहाय्यक</translation>
+        <translation type="vanished">वैयक्तिक ज्ञान सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="515"/>
         <source>AI Writing</source>
-        <translation>AI लेखन</translation>
+        <translation type="vanished">AI लेखन</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="518"/>
         <source>AI Text Processing</source>
-        <translation>AI मजकूर प्रक्रिया</translation>
+        <translation type="vanished">AI मजकूर प्रक्रिया</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="521"/>
         <source>AI Translation</source>
-        <translation>AI भाषांतर</translation>
+        <translation type="vanished">AI भाषांतर</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="534"/>
         <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation>सिस्टमचा व्यापक AI सहाय्यक.</translation>
+        <translation type="vanished">सिस्टमचा व्यापक AI सहाय्यक.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="537"/>
         <source>Assists you with UOS system-related inquiries.</source>
-        <translation>UOS सिस्टमशी संबंधित चौकशीसाठी तुम्हाला मदत करते.</translation>
+        <translation type="vanished">UOS सिस्टमशी संबंधित चौकशीसाठी तुम्हाला मदत करते.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="540"/>
         <source>Assists you with Deepin system-related inquiries.</source>
-        <translation>डीपिन सिस्टमशी संबंधित चौकशीसाठी तुम्हाला मदत करते.</translation>
+        <translation type="vanished">डीपिन सिस्टमशी संबंधित चौकशीसाठी तुम्हाला मदत करते.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="546"/>
         <source>Write Based on Your Topic and Requirements.</source>
-        <translation>तुमच्या विषय आणि आवश्यकतेनुसार लिहा.</translation>
+        <translation type="vanished">तुमच्या विषय आणि आवश्यकतेनुसार लिहा.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="543"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation>तुमच्या वैयक्तिक ज्ञान आधारावर प्रश्नांची उत्तरे देते.</translation>
+        <translation type="vanished">तुमच्या वैयक्तिक ज्ञान आधारावर प्रश्नांची उत्तरे देते.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="549"/>
         <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation>सारांश, प्रूफरीडिंग आणि पुनर्लेखन यासारख्या मजकूर प्रक्रिया कार्यांवर प्रक्रिया करण्यास सक्षम.</translation>
+        <translation type="vanished">सारांश, प्रूफरीडिंग आणि पुनर्लेखन यासारख्या मजकूर प्रक्रिया कार्यांवर प्रक्रिया करण्यास सक्षम.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="552"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation>तुमचे भाषांतर सहाय्यक, अनेक भाषांमध्ये प्रभुत्व.</translation>
+        <translation type="vanished">तुमचे भाषांतर सहाय्यक, अनेक भाषांमध्ये प्रभुत्व.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
         <source>Search</source>
         <translation>शोधा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
         <source>Explain</source>
         <translation>स्पष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
         <source>Summary</source>
         <translation>सारांश</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
         <source>Translate</source>
         <translation>भाषांतर करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
         <source>Continue Writing</source>
         <translation>लेखन सुरू ठेवा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
         <source>Expand</source>
         <translation>विस्तृत करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
         <source>Polish</source>
         <translation>पॉलिश करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
         <source>Correct</source>
         <translation>दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
         <source>Add to the AI knowledge base</source>
         <translation>AI नॉलेज बेसमध्ये जोडा</translation>
     </message>
@@ -3780,7 +3118,7 @@ Never combine explanation with translation or provide full translation after par
         <translation>अरबी (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
+        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3790,163 +3128,268 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 
 प्रॉम्प्ट उदाहरण: डेस्कटॉपवरील नवीन निर्मित फोल्डरमधील सर्व फाइल्सना प्रोजेक्ट साहित्य म्हणून नाव द्या आणि त्यांना संख्यात्मक क्रमाने मांडा.</translation>
     </message>
+    <message>
+        <location filename="../src/assistant/assistantinfo.h" line="23"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">डीपसीक</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
+        <source>Private deployment model</source>
+        <translation type="unfinished">खाजगी तैनाती मॉडेल</translation>
+    </message>
+    <message>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="obsolete">&apos;mcpServers&apos; फील्ड गहाळ आहे.</translation>
+    </message>
+    <message>
+        <source>no valid mcp server.</source>
+        <translation type="obsolete">कोणताही वैध mcp सर्व्हर नाही.</translation>
+    </message>
+    <message>
+        <source>url field cannot be empty.</source>
+        <translation type="obsolete">url फील्ड रिक्त असू शकत नाही.</translation>
+    </message>
+    <message>
+        <source>command field cannot be empty.</source>
+        <translation type="obsolete">command फील्ड रिक्त असू शकत नाही.</translation>
+    </message>
+    <message>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="obsolete">&apos;command&apos; किंवा &apos;url&apos; फील्ड गहाळ आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ResearchTools</name>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
+        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
+        <source>The uos-ai-agent plugin must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
+        <source>Cancel</source>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
+        <source>Download Now</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ServerCodeTranslation</name>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="16"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया आपला नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया आपला नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="19"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>कनेक्शन अयशस्वी, कृपया भरलेली माहिती तपासा.</translation>
+        <translation type="vanished">कनेक्शन अयशस्वी, कृपया भरलेली माहिती तपासा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="22"/>
         <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation>क्षमस्व, संबंधित कायदे, नियम आणि धोरणांनुसार, परिणाम सध्या दाखवले जात नाहीत.</translation>
+        <translation type="vanished">क्षमस्व, संबंधित कायदे, नियम आणि धोरणांनुसार, परिणाम सध्या दाखवले जात नाहीत.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation>ऑपरेशन रद्द केले.</translation>
+        <translation type="vanished">ऑपरेशन रद्द केले.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="28"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>आपले विनामूल्य खाते कालबाह्य झाले आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">आपले विनामूल्य खाते कालबाह्य झाले आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="31"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="34"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation>चॅटसाठी आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">चॅटसाठी आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="37"/>
         <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation>टेक्स्ट2इमेजसाठी आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">टेक्स्ट2इमेजसाठी आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="40"/>
         <source>Invalid input device</source>
-        <translation>अवैध इनपुट डिव्हाइस</translation>
+        <translation type="vanished">अवैध इनपुट डिव्हाइस</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="43"/>
         <source>Invalid output device</source>
-        <translation>अवैध आउटपुट डिव्हाइस</translation>
+        <translation type="vanished">अवैध आउटपुट डिव्हाइस</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="46"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>क्षमस्व, कोणतीही जुळणारी ऑपरेशन्स सापडली नाहीत.</translation>
+        <translation type="vanished">क्षमस्व, कोणतीही जुळणारी ऑपरेशन्स सापडली नाहीत.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="49"/>
         <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation>संभाषणातील वर्णांची एकूण संख्या मर्यादेपेक्षा जास्त आहे, कृपया संभाषण इतिहास साफ करा आणि पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">संभाषणातील वर्णांची एकूण संख्या मर्यादेपेक्षा जास्त आहे, कृपया संभाषण इतिहास साफ करा आणि पुन्हा प्रयत्न करा.</translation>
+    </message>
+</context>
+<context>
+    <name>ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="unfinished">&apos;mcpServers&apos; फील्ड गहाळ आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
+        <source>no valid mcp server.</source>
+        <translation type="unfinished">कोणताही वैध mcp सर्व्हर नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
+        <source>Only one MCP service can be edited at a time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
+        <source>url field cannot be empty.</source>
+        <translation type="unfinished">url फील्ड रिक्त असू शकत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
+        <source>command field cannot be empty.</source>
+        <translation type="unfinished">command फील्ड रिक्त असू शकत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="unfinished">&apos;command&apos; किंवा &apos;url&apos; फील्ड गहाळ आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
+        <source>JSON configuration format is invalid.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Session</name>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="359"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="361"/>
         <source>UOS System Assistant</source>
-        <translation>UOS सिस्टम असिस्टंट</translation>
+        <translation type="vanished">UOS सिस्टम असिस्टंट</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="363"/>
         <source>Deepin System Assistant</source>
-        <translation>डीपिन सिस्टम असिस्टंट</translation>
+        <translation type="vanished">डीपिन सिस्टम असिस्टंट</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="365"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>वैयक्तिक ज्ञान सहाय्यक</translation>
+        <translation type="vanished">वैयक्तिक ज्ञान सहाय्यक</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="367"/>
         <source>AI Writing</source>
-        <translation>AI लेखन</translation>
+        <translation type="vanished">AI लेखन</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="369"/>
         <source>AI Text Processing</source>
-        <translation>AI मजकूर प्रक्रिया</translation>
+        <translation type="vanished">AI मजकूर प्रक्रिया</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="371"/>
         <source>AI Translation</source>
-        <translation>AI भाषांतर</translation>
+        <translation type="vanished">AI भाषांतर</translation>
     </message>
 </context>
 <context>
     <name>SessionPrivate</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="313"/>
-        <location filename="../src/wrapper/session_p.cpp" line="493"/>
-        <location filename="../src/wrapper/session_p.cpp" line="607"/>
-        <location filename="../src/wrapper/session_p.cpp" line="856"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
+        <translation type="vanished">UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="921"/>
         <source>Agent server is not available.</source>
-        <translation>एजंट सर्व्हर उपलब्ध नाही.</translation>
+        <translation type="vanished">एजंट सर्व्हर उपलब्ध नाही.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1285"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">यशस्वीरित्या मिळवले</translation>
+        <translation type="obsolete">यशस्वीरित्या मिळवले</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1288"/>
         <source>Account not found</source>
-        <translation>खाते सापडले नाही</translation>
+        <translation type="vanished">खाते सापडले नाही</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1291"/>
         <source>Only support deepseek account</source>
-        <translation>फक्त deepseek खाते समर्थित आहे</translation>
+        <translation type="vanished">फक्त deepseek खाते समर्थित आहे</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1298"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation>तुम्ही आधीच या इव्हेंटमध्ये सहभागी झाला आहात आणि पुन्हा बक्षीस मिळवू शकत नाही.</translation>
+        <translation type="vanished">तुम्ही आधीच या इव्हेंटमध्ये सहभागी झाला आहात आणि पुन्हा बक्षीस मिळवू शकत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1301"/>
         <source>Server system error</source>
-        <translation>सर्व्हर सिस्टम त्रुटी</translation>
+        <translation type="vanished">सर्व्हर सिस्टम त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1304"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+        <translation type="obsolete">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+    </message>
+</context>
+<context>
+    <name>TextParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
+        <source>Unable to open file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
+        <source>The file content is in binary format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
+        <source>Unable to read file: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>अभिप्राय</translation>
     </message>
@@ -4042,35 +3485,34 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="71"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation>तुम्ही निवडलेला मजकूर 5000 वर्णांच्या मर्यादेपेक्षा जास्त आहे.</translation>
+        <translation type="vanished">तुम्ही निवडलेला मजकूर 5000 वर्णांच्या मर्यादेपेक्षा जास्त आहे.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>मी हे फीचर अद्याप लागू केलेले नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>सेवा उपलब्ध नाही!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>अवैध पॅरामीटर!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
         <translation>हे अ‍ॅप सापडले नाही!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>अ‍ॅप्लिकेशन सुरू करण्यात अयशस्वी!</translation>
     </message>
@@ -4078,870 +3520,809 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation>ब्राइटनेस आधीच जास्तीत जास्त आहे आणि त्याला आणखी वाढवता येत नाही.</translation>
+        <translation type="vanished">ब्राइटनेस आधीच जास्तीत जास्त आहे आणि त्याला आणखी वाढवता येत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation>ब्राइटनेस आधीच किमान आहे आणि त्याला आणखी कमी करता येत नाही.</translation>
+        <translation type="vanished">ब्राइटनेस आधीच किमान आहे आणि त्याला आणखी कमी करता येत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
-        <translation>तुमची सिस्टम मेमरी %0 आहे.</translation>
+        <translation type="vanished">तुमची सिस्टम मेमरी %0 आहे.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation>भाषा सेटिंग इंटरफेस उघडले आहे. कृपया या इंटरफेसमध्ये सेट करा.</translation>
+        <translation type="vanished">भाषा सेटिंग इंटरफेस उघडले आहे. कृपया या इंटरफेसमध्ये सेट करा.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
-        <translation>सध्याचा मोड आधीच %1 मोड आहे.</translation>
+        <translation type="vanished">सध्याचा मोड आधीच %1 मोड आहे.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation>बंद करणे शक्य नाही कारण सध्याचा मोड %1 लक्ष्य मोडशी जुळत नाही.</translation>
+        <translation type="vanished">बंद करणे शक्य नाही कारण सध्याचा मोड %1 लक्ष्य मोडशी जुळत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation>बॅलन्स मोड बंद करता येत नाही.</translation>
+        <translation type="vanished">बॅलन्स मोड बंद करता येत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
-        <translation>तुमच्यासाठी लॉक स्क्रीन उघडली आहे</translation>
+        <translation type="vanished">तुमच्यासाठी लॉक स्क्रीन उघडली आहे</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation>स्क्रीनशॉट किंवा रेकॉर्डिंग पूर्ण झाले आहे</translation>
+        <translation type="vanished">स्क्रीनशॉट किंवा रेकॉर्डिंग पूर्ण झाले आहे</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation>फक्त एक स्क्रीन, स्क्रीन मोड बदलू शकत नाही.</translation>
+        <translation type="vanished">फक्त एक स्क्रीन, स्क्रीन मोड बदलू शकत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation>हे सध्याच्या डिस्प्ले मोडसारखेच आहे. कृपया पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">हे सध्याच्या डिस्प्ले मोडसारखेच आहे. कृपया पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation>फक्त एक स्क्रीन, स्क्रीन बदलू शकत नाही.</translation>
+        <translation type="vanished">फक्त एक स्क्रीन, स्क्रीन बदलू शकत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
-        <translation>तुमची आज्ञा जारी केली गेली आहे.</translation>
+        <translation type="vanished">तुमची आज्ञा जारी केली गेली आहे.</translation>
     </message>
 </context>
 <context>
     <name>UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="47"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI वापरकर्ता करार</translation>
+        <translation type="vanished">UOS AI वापरकर्ता करार</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="80"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>मी पुष्टी करतो/करते की मी 18 वर्षांपेक्षा मोठा/मोठी आहे. मी मान्य करतो/करते आणि मान्य करतो/करते की अ‍ॅप्लिकेशनद्वारे मी पाठवलेली आणि प्राप्त केलेली सामग्री मोठ्या मॉडेल सेवा प्रदात्यासोबत थेट डेटा एक्सचेंज आहे आणि कंपनीशी काहीही संबंध नाही.</translation>
+        <translation type="vanished">मी पुष्टी करतो/करते की मी 18 वर्षांपेक्षा मोठा/मोठी आहे. मी मान्य करतो/करते आणि मान्य करतो/करते की अ‍ॅप्लिकेशनद्वारे मी पाठवलेली आणि प्राप्त केलेली सामग्री मोठ्या मॉडेल सेवा प्रदात्यासोबत थेट डेटा एक्सचेंज आहे आणि कंपनीशी काहीही संबंध नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="124"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>मी अ‍ॅप्लिकेशनच्या वापरकर्ता अनुभव योजनेत सहभागी होण्यास सहमत आहे, आणि तुमच्या कंपनीला अ‍ॅप्लिकेशन वापरताना मी पाठवलेली सामग्री, पाठवण्याची वेळ, विनंती केलेल्या मोठ्या मॉडेलचा प्रकार, विशिष्ट अ‍ॅप्लिकेशन आणि मजकूर यशस्वीरित्या प्रतिमा निर्माण केली का हे गोळा करण्याची परवानगी देत आहे, जेणेकरून सेवा गुणवत्ता सुधारण्यात आणि ऑपरेशन अनुभव वाढविण्यात मदत होईल. (जर तुम्ही वरील माहिती देण्यास नकार दिला तर तुमच्या अ‍ॅप्लिकेशनच्या सामान्य वापरावर परिणाम होणार नाही.)</translation>
+        <translation type="vanished">मी अ‍ॅप्लिकेशनच्या वापरकर्ता अनुभव योजनेत सहभागी होण्यास सहमत आहे, आणि तुमच्या कंपनीला अ‍ॅप्लिकेशन वापरताना मी पाठवलेली सामग्री, पाठवण्याची वेळ, विनंती केलेल्या मोठ्या मॉडेलचा प्रकार, विशिष्ट अ‍ॅप्लिकेशन आणि मजकूर यशस्वीरित्या प्रतिमा निर्माण केली का हे गोळा करण्याची परवानगी देत आहे, जेणेकरून सेवा गुणवत्ता सुधारण्यात आणि ऑपरेशन अनुभव वाढविण्यात मदत होईल. (जर तुम्ही वरील माहिती देण्यास नकार दिला तर तुमच्या अ‍ॅप्लिकेशनच्या सामान्य वापरावर परिणाम होणार नाही.)</translation>
     </message>
 </context>
 <context>
     <name>WXQFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
-        <translation>सर्व्हर आतील त्रुटी</translation>
+        <translation type="vanished">सर्व्हर आतील त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="10"/>
         <source>Service is temporarily unavailable</source>
-        <translation>सेवा तात्पुरत्या अनुपलब्ध आहे</translation>
+        <translation type="vanished">सेवा तात्पुरत्या अनुपलब्ध आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="11"/>
         <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation>कॉल केलेली API अस्तित्वात नाही. कृपया विनंती URL तपासा आणि पुन्हा प्रयत्न करा. सामान्यत: URL मध्ये इंग्रजी नसलेले वर्ण असतात, जसे की &quot;-&quot;. तुम्ही ते स्वहस्ते प्रविष्ट करून पुन्हा प्रयत्न करू शकता.</translation>
+        <translation type="vanished">कॉल केलेली API अस्तित्वात नाही. कृपया विनंती URL तपासा आणि पुन्हा प्रयत्न करा. सामान्यत: URL मध्ये इंग्रजी नसलेले वर्ण असतात, जसे की &quot;-&quot;. तुम्ही ते स्वहस्ते प्रविष्ट करून पुन्हा प्रयत्न करू शकता.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="13"/>
         <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation>इंटरफेस कॉलिंग परवानगी नाही, अॅप्लिकेशन तयार करताना संबंधित Qianfan इंटरफेस तपासले नाही</translation>
+        <translation type="vanished">इंटरफेस कॉलिंग परवानगी नाही, अॅप्लिकेशन तयार करताना संबंधित Qianfan इंटरफेस तपासले नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation>मॉडेल इन्वोकेशन त्रुटी: मॉडेल विनंती मर्यादा गाठली आहे, किंवा मॉडेल ऑफलाइन आहे. सूचना: मॉडेल पुन्हा जोडा, किंवा मोठ्या मॉडेल सेवा प्रदात्याच्या ग्राहक सेवेशी संपर्क साधा हा मुद्दा सोडवण्यासाठी.</translation>
+        <translation type="vanished">मॉडेल इन्वोकेशन त्रुटी: मॉडेल विनंती मर्यादा गाठली आहे, किंवा मॉडेल ऑफलाइन आहे. सूचना: मॉडेल पुन्हा जोडा, किंवा मोठ्या मॉडेल सेवा प्रदात्याच्या ग्राहक सेवेशी संपर्क साधा हा मुद्दा सोडवण्यासाठी.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="14"/>
         <source>Failed to obtain token</source>
-        <translation>टोकन मिळविण्यात अयशस्वी</translation>
+        <translation type="vanished">टोकन मिळविण्यात अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="15"/>
         <source>IAM authentication failed</source>
-        <translation>IAM प्रमाणीकरण अयशस्वी</translation>
+        <translation type="vanished">IAM प्रमाणीकरण अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="16"/>
         <source>The application does not exist or failed to be created</source>
-        <translation>अॅप्लिकेशन अस्तित्वात नाही किंवा तयार करण्यात अयशस्वी</translation>
+        <translation type="vanished">अॅप्लिकेशन अस्तित्वात नाही किंवा तयार करण्यात अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="17"/>
         <source>The number of requests per day exceeds the limit</source>
-        <translation>दररोजच्या विनंत्यांची संख्या मर्यादा ओलांडते</translation>
+        <translation type="vanished">दररोजच्या विनंत्यांची संख्या मर्यादा ओलांडते</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="19"/>
         <source>The total number of requests exceeds the limit</source>
-        <translation>एकूण विनंत्यांची संख्या मर्यादा ओलांडते</translation>
+        <translation type="vanished">एकूण विनंत्यांची संख्या मर्यादा ओलांडते</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="20"/>
         <source>Invalid access_token parameter</source>
-        <translation>अवैध access_token पॅरामीटर</translation>
+        <translation type="vanished">अवैध access_token पॅरामीटर</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="21"/>
         <source>access_token is invalid</source>
-        <translation>access_token अवैध आहे</translation>
+        <translation type="vanished">access_token अवैध आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="22"/>
         <source>access token expires</source>
-        <translation>access टोकन कालबाह्य</translation>
+        <translation type="vanished">access टोकन कालबाह्य</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="23"/>
         <source>Service error, template does not exist</source>
-        <translation>सेवा त्रुटी, टेम्पलेट अस्तित्वात नाही</translation>
+        <translation type="vanished">सेवा त्रुटी, टेम्पलेट अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="24"/>
         <source>A system error occurred, please try again later</source>
-        <translation>सिस्टम त्रुटी आली, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">सिस्टम त्रुटी आली, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="25"/>
         <source>The knowledge base server cannot be accessed</source>
-        <translation>ज्ञान आधार सर्व्हरवर प्रवेश मिळू शकत नाही</translation>
+        <translation type="vanished">ज्ञान आधार सर्व्हरवर प्रवेश मिळू शकत नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="26"/>
         <source>Knowledge base data download exception</source>
-        <translation>ज्ञान आधार डेटा डाउनलोड अपवाद</translation>
+        <translation type="vanished">ज्ञान आधार डेटा डाउनलोड अपवाद</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="27"/>
         <source>Prompt word is too long</source>
-        <translation>प्रॉम्प्ट शब्द खूप लांब आहे</translation>
+        <translation type="vanished">प्रॉम्प्ट शब्द खूप लांब आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="28"/>
         <source>Model does not exist</source>
-        <translation>मॉडेल अस्तित्वात नाही</translation>
+        <translation type="vanished">मॉडेल अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="29"/>
         <source>Request parameter error</source>
-        <translation>विनंती पॅरामीटर त्रुटी</translation>
+        <translation type="vanished">विनंती पॅरामीटर त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="30"/>
         <source>Image processing failed</source>
-        <translation>प्रतिमा प्रक्रिया अयशस्वी</translation>
+        <translation type="vanished">प्रतिमा प्रक्रिया अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="31"/>
         <source>Service handling exception error</source>
-        <translation>सेवा हाताळणी अपवाद त्रुटी</translation>
+        <translation type="vanished">सेवा हाताळणी अपवाद त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="32"/>
         <source>Service internal error</source>
-        <translation>सेवा आतील त्रुटी</translation>
+        <translation type="vanished">सेवा आतील त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="33"/>
         <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation>इनपुट पॅरामीटर स्वरूप अयोग्य आहे, जसे की आवश्यक पॅरामीटर्स गहाळ आहेत.</translation>
+        <translation type="vanished">इनपुट पॅरामीटर स्वरूप अयोग्य आहे, जसे की आवश्यक पॅरामीटर्स गहाळ आहेत.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="34"/>
         <source>The input parameter body is not in standard JSON format</source>
-        <translation>इनपुट पॅरामीटर बॉडी मानक JSON स्वरूपात नाही</translation>
+        <translation type="vanished">इनपुट पॅरामीटर बॉडी मानक JSON स्वरूपात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="35"/>
         <source>Parameter verification is illegal</source>
-        <translation>पॅरामीटर पडताळणी बेकायदेशीर आहे</translation>
+        <translation type="vanished">पॅरामीटर पडताळणी बेकायदेशीर आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="36"/>
         <source>Permission control error</source>
-        <translation>परवानगी नियंत्रण त्रुटी</translation>
+        <translation type="vanished">परवानगी नियंत्रण त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="37"/>
         <source>Customized model service apiname does not exist</source>
-        <translation>सानुकूलित मॉडेल सेवा apiname अस्तित्वात नाही</translation>
+        <translation type="vanished">सानुकूलित मॉडेल सेवा apiname अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="38"/>
         <source>Service internal error, please try again later</source>
-        <translation>सेवा आतील त्रुटी, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">सेवा आतील त्रुटी, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="39"/>
         <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation>बेकायदेशीर HTTP पद्धत, सध्या फक्त POST विनंतींना समर्थन आहे</translation>
+        <translation type="vanished">बेकायदेशीर HTTP पद्धत, सध्या फक्त POST विनंतींना समर्थन आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="40"/>
         <source>The requested content exceeds the large model internal limit</source>
-        <translation>विनंती केलेली सामग्री मोठ्या मॉडेलच्या अंतर्गत मर्यादेपेक्षा जास्त आहे</translation>
+        <translation type="vanished">विनंती केलेली सामग्री मोठ्या मॉडेलच्या अंतर्गत मर्यादेपेक्षा जास्त आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="41"/>
         <source>internal error</source>
-        <translation>अंतर्गत त्रुटी</translation>
+        <translation type="vanished">अंतर्गत त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="42"/>
         <source>Vincent diagram model service timeout</source>
-        <translation>विन्सेंट आकृती मॉडेल सेवा वेळ संपली</translation>
+        <translation type="vanished">विन्सेंट आकृती मॉडेल सेवा वेळ संपली</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="43"/>
         <source>There are security issues with prompt and negative_prompt</source>
-        <translation>प्रॉम्प्ट आणि नकारात्मक_प्रॉम्प्टमध्ये सुरक्षा समस्या आहेत</translation>
+        <translation type="vanished">प्रॉम्प्ट आणि नकारात्मक_प्रॉम्प्टमध्ये सुरक्षा समस्या आहेत</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="44"/>
         <source>There are security issues with output images</source>
-        <translation>आउटपुट प्रतिमांमध्ये सुरक्षा समस्या आहेत</translation>
+        <translation type="vanished">आउटपुट प्रतिमांमध्ये सुरक्षा समस्या आहेत</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="46"/>
         <source>Parameter error</source>
-        <translation>पॅरामीटर त्रुटी</translation>
+        <translation type="vanished">पॅरामीटर त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="47"/>
         <source>No access</source>
-        <translation>प्रवेश नाही</translation>
+        <translation type="vanished">प्रवेश नाही</translation>
     </message>
 </context>
 <context>
     <name>WXQFText2Image</name>
     <message>
-        <location filename="../src/llm/baidu/wxqftext2image.cpp" line="27"/>
         <source>The image description exceeds the 256 character limit</source>
-        <translation>प्रतिमा वर्णन 256 वर्णांच्या मर्यादेपेक्षा जास्त आहे</translation>
+        <translation type="vanished">प्रतिमा वर्णन 256 वर्णांच्या मर्यादेपेक्षा जास्त आहे</translation>
     </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
         <source>Welcome to UOS AI</source>
-        <translation>UOS AI मध्ये आपले स्वागत आहे</translation>
+        <translation type="vanished">UOS AI मध्ये आपले स्वागत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="75"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation>UOS AI, तुमचा स्मार्ट सहाय्यक, तुमची उत्पादकता सुधारण्यासाठी आणि उच्च-गुणवत्तेच्या कार्य अनुभवासाठी डिझाइन केलेला आहे.</translation>
+        <translation type="vanished">UOS AI, तुमचा स्मार्ट सहाय्यक, तुमची उत्पादकता सुधारण्यासाठी आणि उच्च-गुणवत्तेच्या कार्य अनुभवासाठी डिझाइन केलेला आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="100"/>
         <source>Get a free trial account</source>
-        <translation>विनामूल्य चाचणी खाते मिळवा</translation>
+        <translation type="vanished">विनामूल्य चाचणी खाते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation>मॉडेल जोडा</translation>
+        <translation type="vanished">मॉडेल जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="131"/>
         <source>Start using</source>
-        <translation>वापरास प्रारंभ करा</translation>
+        <translation type="vanished">वापरास प्रारंभ करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>मी पुष्टी करतो की मी 18 वर्षांपेक्षा मोठा आहे. मी &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI वापरकर्ता करार&quot;&lt;/a&gt; स्वीकारतो आणि मान्य करतो, आणि अॅप्लिकेशनद्वारे मी पाठवलेली आणि प्राप्त केलेली सामग्री मोठ्या मॉडेल सेवा प्रदात्याशी थेट डेटा देवाणघेवाण आहे आणि कंपनीशी काहीही संबंध नाही.</translation>
+        <translation type="vanished">मी पुष्टी करतो की मी 18 वर्षांपेक्षा मोठा आहे. मी &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI वापरकर्ता करार&quot;&lt;/a&gt; स्वीकारतो आणि मान्य करतो, आणि अॅप्लिकेशनद्वारे मी पाठवलेली आणि प्राप्त केलेली सामग्री मोठ्या मॉडेल सेवा प्रदात्याशी थेट डेटा देवाणघेवाण आहे आणि कंपनीशी काहीही संबंध नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>खाते प्राप्त करणे म्हणजे तुम्ही इव्हेंटच्या अटी समजून घेतल्या आणि मान्य केल्या,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;इव्हेंट तपशील&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">खाते प्राप्त करणे म्हणजे तुम्ही इव्हेंटच्या अटी समजून घेतल्या आणि मान्य केल्या,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;इव्हेंट तपशील&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Trial Account</source>
-        <translation>चाचणी खाते</translation>
+        <translation type="vanished">चाचणी खाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="292"/>
         <source>Save failed, please try again later</source>
-        <translation>जतन करणे अयशस्वी, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">जतन करणे अयशस्वी, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="301"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished">UOS AI试用账号领取成功！</translation>
+        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="304"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>चाचणी खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहेत, कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा! तपशीलांसाठी इव्हेंट तपशील पहा.</translation>
+        <translation type="vanished">चाचणी खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहेत, कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा! तपशीलांसाठी इव्हेंट तपशील पहा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="306"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>ट्रायल खात्यांसाठी इंग्रजी सपोर्ट समाधानकारक नाही. आणि ट्रायल खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहे. कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा!</translation>
+        <translation type="vanished">ट्रायल खात्यांसाठी इंग्रजी सपोर्ट समाधानकारक नाही. आणि ट्रायल खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहे. कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="307"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>चाचणी सुरू करा</translation>
+        <translation type="vanished">चाचणी सुरू करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="314"/>
         <source>The free account activity ends.</source>
-        <translation>विनामूल्य खाते क्रियाकलाप संपला.</translation>
+        <translation type="vanished">विनामूल्य खाते क्रियाकलाप संपला.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="322"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया तुमचे नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सर्व्हरशी कनेक्ट होऊ शकत नाही, कृपया तुमचे नेटवर्क तपासा किंवा नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="343"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>मी अॅप्लिकेशनच्या वापरकर्ता अनुभव योजनेत सहभागी होण्यास सहमत आहे, आणि तुमच्या कंपनीला अॅप्लिकेशन वापरताना मी पाठवलेली सामग्री, पाठवण्याची वेळ, विनंती केलेल्या मोठ्या मॉडेलचा प्रकार, विशिष्ट अॅप्लिकेशन आणि मजकूर यशस्वीरित्या प्रतिमा निर्माण केली का हे गोळा करण्याची परवानगी देतो, जेणेकरून सेवा गुणवत्ता सुधारेल आणि ऑपरेशन अनुभव वाढेल. (जर तुम्ही वरील माहिती देण्यास नकार दिला तर तुमच्या अॅप्लिकेशनच्या सामान्य वापरावर परिणाम होणार नाही.)</translation>
+        <translation type="vanished">मी अॅप्लिकेशनच्या वापरकर्ता अनुभव योजनेत सहभागी होण्यास सहमत आहे, आणि तुमच्या कंपनीला अॅप्लिकेशन वापरताना मी पाठवलेली सामग्री, पाठवण्याची वेळ, विनंती केलेल्या मोठ्या मॉडेलचा प्रकार, विशिष्ट अॅप्लिकेशन आणि मजकूर यशस्वीरित्या प्रतिमा निर्माण केली का हे गोळा करण्याची परवानगी देतो, जेणेकरून सेवा गुणवत्ता सुधारेल आणि ऑपरेशन अनुभव वाढेल. (जर तुम्ही वरील माहिती देण्यास नकार दिला तर तुमच्या अॅप्लिकेशनच्या सामान्य वापरावर परिणाम होणार नाही.)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
+    </message>
+</context>
+<context>
+    <name>WorkspaceStore</name>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
+        <source>Note: Part of the document content may be generated by AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
+        <source>Word files (*.docx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
+        <source>PDF files (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
+        <source>Markdown files (*.md)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
+        <source>Save Article</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>XFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="9"/>
         <source>Error while upgrading to WebSocket</source>
-        <translation>WebSocket वर अपग्रेड करताना त्रुटी</translation>
+        <translation type="vanished">WebSocket वर अपग्रेड करताना त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="10"/>
         <source>Error reading user&apos;s message via WebSocket</source>
-        <translation>WebSocket द्वारे वापरकर्त्याचा संदेश वाचताना त्रुटी</translation>
+        <translation type="vanished">WebSocket द्वारे वापरकर्त्याचा संदेश वाचताना त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="11"/>
         <source>Error sending message to user via WebSocket</source>
-        <translation>WebSocket द्वारे वापरकर्त्याला संदेश पाठवताना त्रुटी</translation>
+        <translation type="vanished">WebSocket द्वारे वापरकर्त्याला संदेश पाठवताना त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="12"/>
         <source>The user&apos;s message format is incorrect</source>
-        <translation>वापरकर्त्याच्या संदेशाचे स्वरूप चुकीचे आहे</translation>
+        <translation type="vanished">वापरकर्त्याच्या संदेशाचे स्वरूप चुकीचे आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="13"/>
         <source>Schema error for user data</source>
-        <translation>वापरकर्ता डेटासाठी स्कीमा त्रुटी</translation>
+        <translation type="vanished">वापरकर्ता डेटासाठी स्कीमा त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="14"/>
         <source>User parameter value is wrong</source>
-        <translation>वापरकर्ता पॅरामीटर मूल्य चुकीचे आहे</translation>
+        <translation type="vanished">वापरकर्ता पॅरामीटर मूल्य चुकीचे आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="15"/>
         <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation>वापरकर्ता समांतरता त्रुटी: सध्याचा वापरकर्ता आधीच कनेक्ट केलेला आहे, आणि समान वापरकर्ता एकाच वेळी एकाधिक ठिकाणी कनेक्ट होऊ शकत नाही.</translation>
+        <translation type="vanished">वापरकर्ता समांतरता त्रुटी: सध्याचा वापरकर्ता आधीच कनेक्ट केलेला आहे, आणि समान वापरकर्ता एकाच वेळी एकाधिक ठिकाणी कनेक्ट होऊ शकत नाही.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="16"/>
         <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation>वापरकर्ता ट्रॅफिक मर्यादित आहे: सेवा वापरकर्त्याची सध्याची समस्या प्रक्रिया करत आहे आणि नवीन विनंती पाठवण्यापूर्वी प्रक्रिया पूर्ण होण्याची वाट पाहणे आवश्यक आहे. (पुढील प्रश्न पाठवण्यापूर्वी तुम्हाला मॉडेलकडून पूर्ण उत्तराची वाट पाहावी लागेल)</translation>
+        <translation type="vanished">वापरकर्ता ट्रॅफिक मर्यादित आहे: सेवा वापरकर्त्याची सध्याची समस्या प्रक्रिया करत आहे आणि नवीन विनंती पाठवण्यापूर्वी प्रक्रिया पूर्ण होण्याची वाट पाहणे आवश्यक आहे. (पुढील प्रश्न पाठवण्यापूर्वी तुम्हाला मॉडेलकडून पूर्ण उत्तराची वाट पाहावी लागेल)</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="17"/>
         <source>Insufficient service capacity, please contact staff</source>
-        <translation>सेवा क्षमता अपुरी आहे, कृपया कर्मचार्यांशी संपर्क साधा</translation>
+        <translation type="vanished">सेवा क्षमता अपुरी आहे, कृपया कर्मचार्यांशी संपर्क साधा</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="18"/>
         <source>Failed to establish connection with engine</source>
-        <translation>इंजिनशी कनेक्शन स्थापित करण्यात अयशस्वी</translation>
+        <translation type="vanished">इंजिनशी कनेक्शन स्थापित करण्यात अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="19"/>
         <source>Error receiving engine data</source>
-        <translation>इंजिन डेटा प्राप्त करताना त्रुटी</translation>
+        <translation type="vanished">इंजिन डेटा प्राप्त करताना त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="20"/>
         <source>Error sending data to engine</source>
-        <translation>इंजिनला डेटा पाठवताना त्रुटी</translation>
+        <translation type="vanished">इंजिनला डेटा पाठवताना त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="21"/>
         <source>Engine internal error</source>
-        <translation>इंजिन अंतर्गत त्रुटी</translation>
+        <translation type="vanished">इंजिन अंतर्गत त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="22"/>
         <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation>इनपुट सामग्री पुनरावलोकनातून पास होत नाही आणि नियमांचे उल्लंघन करण्याचा संशय आहे. कृपया इनपुट सामग्री पुन्हा समायोजित करा.</translation>
+        <translation type="vanished">इनपुट सामग्री पुनरावलोकनातून पास होत नाही आणि नियमांचे उल्लंघन करण्याचा संशय आहे. कृपया इनपुट सामग्री पुन्हा समायोजित करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="23"/>
         <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation>आउटपुट सामग्रीमध्ये संवेदनशील माहिती समाविष्ट आहे, पुनरावलोकन अयशस्वी झाले आहे, आणि त्यानंतरचे निकाल वापरकर्त्याला दाखवता येणार नाहीत.</translation>
+        <translation type="vanished">आउटपुट सामग्रीमध्ये संवेदनशील माहिती समाविष्ट आहे, पुनरावलोकन अयशस्वी झाले आहे, आणि त्यानंतरचे निकाल वापरकर्त्याला दाखवता येणार नाहीत.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="24"/>
         <source>appid is in the blacklist</source>
-        <translation>appid ब्लॅकलिस्टमध्ये आहे</translation>
+        <translation type="vanished">appid ब्लॅकलिस्टमध्ये आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="25"/>
         <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation>Appid परवानगी वर्ग त्रुटी. उदाहरणार्थ: हे कार्य सक्रिय नाही, संबंधित आवृत्ती सक्रिय नाही, टोकन अपुरे आहे, समांतरता परवानगी ओलांडते, इ.</translation>
+        <translation type="vanished">Appid परवानगी वर्ग त्रुटी. उदाहरणार्थ: हे कार्य सक्रिय नाही, संबंधित आवृत्ती सक्रिय नाही, टोकन अपुरे आहे, समांतरता परवानगी ओलांडते, इ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="26"/>
         <source>Clear history failed</source>
-        <translation>इतिहास साफ करण्यात अयशस्वी</translation>
+        <translation type="vanished">इतिहास साफ करण्यात अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="27"/>
         <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation>या सत्राच्या सामग्रीमध्ये बेकायदेशीर माहिती समाविष्ट असण्याची प्रवृत्ती आहे; हा त्रुटी कोड प्राप्त झाल्यानंतर विकसकांनी वापरकर्त्याला बेकायदेशीर माहिती समाविष्ट असलेली माहिती प्रविष्ट करण्यासाठी प्रॉम्प्ट देण्याची शिफारस केली आहे.</translation>
+        <translation type="vanished">या सत्राच्या सामग्रीमध्ये बेकायदेशीर माहिती समाविष्ट असण्याची प्रवृत्ती आहे; हा त्रुटी कोड प्राप्त झाल्यानंतर विकसकांनी वापरकर्त्याला बेकायदेशीर माहिती समाविष्ट असलेली माहिती प्रविष्ट करण्यासाठी प्रॉम्प्ट देण्याची शिफारस केली आहे.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="28"/>
         <source>Service is busy, please try again later</source>
-        <translation>सेवा व्यस्त आहे, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">सेवा व्यस्त आहे, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="29"/>
         <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation>विनंती इंजिनचे पॅरामीटर्स असामान्य आहेत, आणि इंजिन स्कीम तपासणी अयशस्वी झाली आहे.</translation>
+        <translation type="vanished">विनंती इंजिनचे पॅरामीटर्स असामान्य आहेत, आणि इंजिन स्कीम तपासणी अयशस्वी झाली आहे.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="30"/>
         <source>Engine network abnormality</source>
-        <translation>इंजिन नेटवर्क असामान्यता</translation>
+        <translation type="vanished">इंजिन नेटवर्क असामान्यता</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="31"/>
         <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation>टोकनची संख्या वरच्या मर्यादेपेक्षा जास्त आहे. संभाषण इतिहास आणि प्रश्नातील शब्दांची संख्या खूप मोठी आहे आणि ती सोपी करणे आवश्यक आहे.</translation>
+        <translation type="vanished">टोकनची संख्या वरच्या मर्यादेपेक्षा जास्त आहे. संभाषण इतिहास आणि प्रश्नातील शब्दांची संख्या खूप मोठी आहे आणि ती सोपी करणे आवश्यक आहे.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="32"/>
         <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation>परवानगी त्रुटी: appId ला संबंधित कार्यांसाठी परवानगी नाही किंवा व्यवसायाचे प्रमाण मर्यादा ओलांडते</translation>
+        <translation type="vanished">परवानगी त्रुटी: appId ला संबंधित कार्यांसाठी परवानगी नाही किंवा व्यवसायाचे प्रमाण मर्यादा ओलांडते</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="33"/>
         <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation>परवानगी त्रुटी: दैनिक प्रवाह नियंत्रण मर्यादा ओलांडली. दिवसाच्या कमाल भेटींची संख्या ओलांडली</translation>
+        <translation type="vanished">परवानगी त्रुटी: दैनिक प्रवाह नियंत्रण मर्यादा ओलांडली. दिवसाच्या कमाल भेटींची संख्या ओलांडली</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="44"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>कनेक्शन अयशस्वी, कृपया भरलेली माहिती तपासा.</translation>
+        <translation type="vanished">कनेक्शन अयशस्वी, कृपया भरलेली माहिती तपासा.</translation>
     </message>
 </context>
 <context>
     <name>ZhiPuCodeTranslation</name>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="9"/>
         <source>Server internal error</source>
-        <translation>सर्व्हर अंतर्गत त्रुटी</translation>
+        <translation type="vanished">सर्व्हर अंतर्गत त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="10"/>
         <source>Authentication failed</source>
-        <translation>प्रमाणीकरण अयशस्वी</translation>
+        <translation type="vanished">प्रमाणीकरण अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="11"/>
         <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation>हेडरमध्ये प्रमाणीकरण पॅरामीटर प्राप्त झाले नाही आणि प्रमाणीकरण करता आले नाही.</translation>
+        <translation type="vanished">हेडरमध्ये प्रमाणीकरण पॅरामीटर प्राप्त झाले नाही आणि प्रमाणीकरण करता आले नाही.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="12"/>
         <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation>प्रमाणीकरण टोकन बेकायदेशीर आहे. कृपया प्रमाणीकरण टोकन योग्यरित्या पाठवले आहे याची पुष्टी करा.</translation>
+        <translation type="vanished">प्रमाणीकरण टोकन बेकायदेशीर आहे. कृपया प्रमाणीकरण टोकन योग्यरित्या पाठवले आहे याची पुष्टी करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="13"/>
         <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation>प्रमाणीकरण टोकन कालबाह्य झाले आहे, कृपया ते पुन्हा तयार करा/मिळवा</translation>
+        <translation type="vanished">प्रमाणीकरण टोकन कालबाह्य झाले आहे, कृपया ते पुन्हा तयार करा/मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="14"/>
         <source>Verification via Authentication Token failed</source>
-        <translation>प्रमाणीकरण टोकनद्वारे पडताळणी अयशस्वी</translation>
+        <translation type="vanished">प्रमाणीकरण टोकनद्वारे पडताळणी अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="15"/>
         <source>Account reading and writing</source>
-        <translation>खाते वाचन आणि लेखन</translation>
+        <translation type="vanished">खाते वाचन आणि लेखन</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="16"/>
         <source>Your account is currently inactive. Please check account information</source>
-        <translation>तुमचे खाते सध्या निष्क्रिय आहे. कृपया खाते माहिती तपासा</translation>
+        <translation type="vanished">तुमचे खाते सध्या निष्क्रिय आहे. कृपया खाते माहिती तपासा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="17"/>
         <source>Your account does not exist</source>
-        <translation>तुमचे खाते अस्तित्वात नाही</translation>
+        <translation type="vanished">तुमचे खाते अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="18"/>
         <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation>तुमचे खाते लॉक केले आहे, कृपया कस्टमर सेवेशी संपर्क साधून ते अनलॉक करा</translation>
+        <translation type="vanished">तुमचे खाते लॉक केले आहे, कृपया कस्टमर सेवेशी संपर्क साधून ते अनलॉक करा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="19"/>
         <source>Your account is in arrears, please recharge and try again</source>
-        <translation>तुमचे खाते बाकी आहे, कृपया रिचार्ज करा आणि पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">तुमचे खाते बाकी आहे, कृपया रिचार्ज करा आणि पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="20"/>
         <source>Unable to successfully access your account, please try again later</source>
-        <translation>तुमच्या खात्यात प्रवेश करणे अशक्य आहे, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">तुमच्या खात्यात प्रवेश करणे अशक्य आहे, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="21"/>
         <source>API call error</source>
-        <translation>API कॉल त्रुटी</translation>
+        <translation type="vanished">API कॉल त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="22"/>
         <source>API call parameters are incorrect, please check the documentation</source>
-        <translation>API कॉल पॅरामीटर्स चुकीचे आहेत, कृपया डॉक्युमेंटेशन तपासा</translation>
+        <translation type="vanished">API कॉल पॅरामीटर्स चुकीचे आहेत, कृपया डॉक्युमेंटेशन तपासा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="23"/>
         <source>Model does not exist, please check the model code</source>
-        <translation>मॉडेल अस्तित्वात नाही, कृपया मॉडेल कोड तपासा</translation>
+        <translation type="vanished">मॉडेल अस्तित्वात नाही, कृपया मॉडेल कोड तपासा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="24"/>
         <source>The current model does not support the ${method} calling method</source>
-        <translation>सध्याचे मॉडेल ${method} कॉलिंग पद्धतीला समर्थन देत नाही</translation>
+        <translation type="vanished">सध्याचे मॉडेल ${method} कॉलिंग पद्धतीला समर्थन देत नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="25"/>
         <source>${field} Parameters not received normally</source>
-        <translation>${field} पॅरामीटर्स सामान्यपणे प्राप्त झाले नाहीत</translation>
+        <translation type="vanished">${field} पॅरामीटर्स सामान्यपणे प्राप्त झाले नाहीत</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="26"/>
         <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation>${field} पॅरामीटर अवैध आहे. कृपया डॉक्युमेंटेशन तपासा</translation>
+        <translation type="vanished">${field} पॅरामीटर अवैध आहे. कृपया डॉक्युमेंटेशन तपासा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="27"/>
         <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation>${field1} आणि ${field2} एकाच वेळी सेट करता येत नाही, कृपया डॉक्युमेंटेशन तपासा</translation>
+        <translation type="vanished">${field1} आणि ${field2} एकाच वेळी सेट करता येत नाही, कृपया डॉक्युमेंटेशन तपासा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="28"/>
         <source>You do not have access to  ${API_name}</source>
-        <translation>तुमच्याकडे ${API_name} वर प्रवेश नाही</translation>
+        <translation type="vanished">तुमच्याकडे ${API_name} वर प्रवेश नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="29"/>
         <source>API ${API_name} is offline</source>
-        <translation>API ${API_name} ऑफलाइन आहे</translation>
+        <translation type="vanished">API ${API_name} ऑफलाइन आहे</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="30"/>
         <source>API ${API_name}  does not exist</source>
-        <translation>API ${API_name} अस्तित्वात नाही</translation>
+        <translation type="vanished">API ${API_name} अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="31"/>
         <source>API call process error</source>
-        <translation>API कॉल प्रक्रिया त्रुटी</translation>
+        <translation type="vanished">API कॉल प्रक्रिया त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="32"/>
         <source>You have requested: ${request_id}</source>
-        <translation>तुम्ही विनंती केली आहे: ${request_id}</translation>
+        <translation type="vanished">तुम्ही विनंती केली आहे: ${request_id}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="33"/>
         <source>When getting asynchronous request results, please use task_id</source>
-        <translation>असिंक्रोनस विनंती निकाल मिळवताना, कृपया task_id वापरा</translation>
+        <translation type="vanished">असिंक्रोनस विनंती निकाल मिळवताना, कृपया task_id वापरा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="34"/>
         <source>Task: ${task_id} does not exist</source>
-        <translation>कार्य: ${task_id} अस्तित्वात नाही</translation>
+        <translation type="vanished">कार्य: ${task_id} अस्तित्वात नाही</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation>नेटवर्क त्रुटी, त्रुटी आयडी: ${error_id}, कृपया कस्टमर सेवेशी संपर्क साधा</translation>
+        <translation type="vanished">नेटवर्क त्रुटी, त्रुटी आयडी: ${error_id}, कृपया कस्टमर सेवेशी संपर्क साधा</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="37"/>
         <source>API run error</source>
-        <translation>API चालवण्यात त्रुटी</translation>
+        <translation type="vanished">API चालवण्यात त्रुटी</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="38"/>
         <source>Prompt super long</source>
-        <translation>प्रॉम्प्ट खूप लांब</translation>
+        <translation type="vanished">प्रॉम्प्ट खूप लांब</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="39"/>
         <source>API call blocked by policy</source>
-        <translation>पॉलिसीद्वारे API कॉल ब्लॉक केले</translation>
+        <translation type="vanished">पॉलिसीद्वारे API कॉल ब्लॉक केले</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="40"/>
         <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation>सिस्टमने शोधले आहे की इनपुट किंवा व्युत्पन्न सामग्रीमध्ये असुरक्षित किंवा संवेदनशील सामग्री असू शकते. कृपया अशा प्रॉम्प्ट्स टाळा ज्यामुळे सहजपणे संवेदनशील सामग्री निर्माण होऊ शकते. तुमच्या सहकार्याबद्दल धन्यवाद.</translation>
+        <translation type="vanished">सिस्टमने शोधले आहे की इनपुट किंवा व्युत्पन्न सामग्रीमध्ये असुरक्षित किंवा संवेदनशील सामग्री असू शकते. कृपया अशा प्रॉम्प्ट्स टाळा ज्यामुळे सहजपणे संवेदनशील सामग्री निर्माण होऊ शकते. तुमच्या सहकार्याबद्दल धन्यवाद.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
+        <translation type="vanished">सध्या खूप भेट देणारे आहेत, कृपया नंतर पुन्हा प्रयत्न करा.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="43"/>
         <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation>या API ची आजच्या दिवसासाठी कॉल मर्यादा पूर्ण झाली आहे. जर तुम्हाला अधिक आवश्यक असेल, तर कृपया खरेदी करण्यासाठी कस्टमर सेवेशी संपर्क साधा.</translation>
+        <translation type="vanished">या API ची आजच्या दिवसासाठी कॉल मर्यादा पूर्ण झाली आहे. जर तुम्हाला अधिक आवश्यक असेल, तर कृपया खरेदी करण्यासाठी कस्टमर सेवेशी संपर्क साधा.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AITranslation</name>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
+        <source>Translate the following text into English for me.</source>
+        <translation type="unfinished">माझ्यासाठी खालील मजकूर इंग्रजीमध्ये भाषांतरित करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
+        <source>Translate the following document into Chinese.</source>
+        <translation type="unfinished">खालील दस्तऐवज चिनीमध्ये भाषांतरित करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
+        <source>What does the word Ǌgent” mean in the AI industry?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
+        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
+        <translation type="unfinished">कृपया खालील सामग्री चिनीमध्ये भाषांतरित करा. आवश्यकता: अर्थात अचूक, भाषेत औपचारिक आणि व्यावसायिक.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
+        <source>What are some colloquial ways to address a friend in English?</source>
+        <translation type="unfinished">इंग्रजीमध्ये मित्राला संबोधण्याचे काही बोलचालीचे मार्ग कोणते आहेत?</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
+        <source>Translate the following classical Chinese text into modern Chinese.</source>
+        <translation type="unfinished">खालील शास्त्रीय चिनी मजकूर आधुनिक चिनीमध्ये भाषांतरित करा.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AIWriter</name>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
+        <source>Today </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
+        <source>Yesterday </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
+        <source>MMM d HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AboutWindow</name>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
+        <source>Filing Information</source>
+        <translation type="unfinished">फायलीिंग माहिती</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddPrivateModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="48"/>
         <source>Add model</source>
-        <translation>मॉडेल जोडा</translation>
+        <translation type="vanished">मॉडेल जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="50"/>
         <source>APIKey</source>
-        <translation>APIKey</translation>
+        <translation type="vanished">APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
-        <translation>आवश्यक आहे, कृपया इनपुट करा</translation>
+        <translation type="vanished">आवश्यक आहे, कृपया इनपुट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="58"/>
         <source>Account</source>
-        <translation>खाते</translation>
+        <translation type="vanished">खाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="63"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>आवश्यक आहे, एकाधिक मॉडेल्समध्ये फरक करण्यासाठी</translation>
+        <translation type="vanished">आवश्यक आहे, एकाधिक मॉडेल्समध्ये फरक करण्यासाठी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="69"/>
         <source>Model Name</source>
-        <translation>मॉडेल नाव</translation>
+        <translation type="vanished">मॉडेल नाव</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="74"/>
         <source>Optional</source>
-        <translation>पर्यायी</translation>
+        <translation type="vanished">पर्यायी</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="77"/>
         <source>Domain</source>
-        <translation>डोमेन</translation>
+        <translation type="vanished">डोमेन</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="104"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>मॉडेल उपलब्ध आहे का ते तपासण्यासाठी, सिस्टम मोठ्या मॉडेलला चाचणी माहिती पाठवते, ज्यामुळे थोड्या प्रमाणात टोकन वापरले जातील.</translation>
+        <translation type="vanished">मॉडेल उपलब्ध आहे का ते तपासण्यासाठी, सिस्टम मोठ्या मॉडेलला चाचणी माहिती पाठवते, ज्यामुळे थोड्या प्रमाणात टोकन वापरले जातील.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="147"/>
         <source>Cancel</source>
-        <translation>रद्द करा</translation>
+        <translation type="vanished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="149"/>
         <source>Confirm</source>
-        <translation>पुष्टी करा</translation>
+        <translation type="vanished">पुष्टी करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="241"/>
         <source>No more than 20 characters</source>
-        <translation>20 वर्णांपेक्षा जास्त नाही</translation>
+        <translation type="vanished">20 वर्णांपेक्षा जास्त नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="272"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>हे LLM आधीपासून अस्तित्वात आहे, कृपया पुन्हा जोडू नका.</translation>
+        <translation type="vanished">हे LLM आधीपासून अस्तित्वात आहे, कृपया पुन्हा जोडू नका.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="315"/>
         <source>Save failed, please try again later</source>
-        <translation>जतन करणे अयशस्वी झाले, कृपया नंतर पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">जतन करणे अयशस्वी झाले, कृपया नंतर पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="373"/>
         <source>The account name already exists, please change it</source>
-        <translation>खात्याचे नाव आधीपासून अस्तित्वात आहे, कृपया ते बदला</translation>
+        <translation type="vanished">खात्याचे नाव आधीपासून अस्तित्वात आहे, कृपया ते बदला</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="401"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>प्रॉक्सी सेटिंगसाठी, कृपया सिस्टम प्रॉक्सी सेटिंगमध्ये जा</translation>
+        <translation type="vanished">प्रॉक्सी सेटिंगसाठी, कृपया सिस्टम प्रॉक्सी सेटिंगमध्ये जा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="404"/>
         <source>Go to settings</source>
-        <translation>सेटिंग्जवर जा</translation>
+        <translation type="vanished">सेटिंग्जवर जा</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>कौशल्य जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="66"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>कौशल्याचे नाव</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>कौशल्याचे नाव प्रविष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>कौशल्य आदेश</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
         <translation>शब्द निवडीद्वारे निवडलेला मजकूर दर्शवितो.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>सूचना</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="130"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>जतन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="248"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>कौशल्याचे नाव रिक्त असू शकत नाही</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>वर्ण मर्यादा ओलांडली</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>कौशल्याचे नाव आधीपासून अस्तित्वात आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="440"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>आदेश सूचना</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="478"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
         <translation>जर तुम्हाला निवडलेला मजकूर &quot;Hello&quot; भाषांतरित करायचा असेल, तर तुम्ही आदेश प्रविष्ट करू शकता: Translate {selection} into English.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="485"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>प्रगत टिपा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="491"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
         <translation>आदेश जितका विशिष्ट असेल, तितकी अचूक सामग्री निर्माण होईल. उदाहरणार्थ: • {selection} साठी 3 प्रकरणे आणि 10 मुख्य मुद्दे असलेली PPT रूपरेषा तयार करा. • {selection} ला 100 शब्दांमध्ये भरती प्रतमध्ये बदला, संघभावना हायलाइट करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
         <translation>लेबलवर क्लिक केल्यास ते इनपुट फील्डमध्ये घालता येते.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>ठीक आहे</translation>
     </message>
@@ -4965,145 +4346,465 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::AiQuickDialog</name>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
+        <source>simplified Chinese</source>
+        <translation type="unfinished">सरलीकृत चिनी</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
+        <source>traditional Chinese</source>
+        <translation type="unfinished">पारंपारिक चिनी</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
+        <source>Tibetan</source>
+        <translation type="unfinished">तिबेटी</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
+        <source>English</source>
+        <translation type="unfinished">इंग्रजी</translation>
+    </message>
+    <message>
+        <source>Japanese </source>
+        <translation type="obsolete">जपानी </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
+        <source>Japanese</source>
+        <translation type="unfinished">जपानी</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
+        <source>German</source>
+        <translation type="unfinished">जर्मन</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
+        <source>Spanish</source>
+        <translation type="unfinished">स्पॅनिश</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
+        <source>French</source>
+        <translation type="unfinished">फ्रेंच</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
+        <source>Italian</source>
+        <translation type="unfinished">इटालियन</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
+        <source>Korean</source>
+        <translation type="unfinished">कोरियन</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
+        <source>Malay</source>
+        <translation type="unfinished">मलय</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
+        <source>Portuguese</source>
+        <translation type="unfinished">पोर्तुगीज</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
+        <source>Russian</source>
+        <translation type="unfinished">रशियन</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
+        <source>Thai</source>
+        <translation type="unfinished">थाई</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
+        <source>Vietnamese</source>
+        <translation type="unfinished">व्हिएतनामी</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
+        <source>type</source>
+        <translation type="unfinished">प्रकार</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
+        <source>Cancel</source>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
+        <source>Read Aloud</source>
+        <translation type="unfinished">मोठ्यावर वाचा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
+        <source>Paste to Text</source>
+        <translation type="unfinished">मजकूरात पेस्ट करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
+        <source>Regenerate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
+        <source>Copy</source>
+        <translation type="unfinished">कॉपी करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
+        <source>Continue Dialog</source>
+        <translation type="unfinished">संवाद सुरू ठेवा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
+        <source>Automatic Detection</source>
+        <translation type="unfinished">स्वयंचलित शोध</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
+        <source>Search</source>
+        <translation type="unfinished">शोधा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
+        <source>Explain</source>
+        <translation type="unfinished">स्पष्ट करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
+        <source>Summary</source>
+        <translation type="unfinished">सारांश</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
+        <source>Translate</source>
+        <translation type="unfinished">भाषांतर करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
+        <source>Continue writing</source>
+        <translation type="unfinished">लेखन सुरू ठेवा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
+        <source>Expand</source>
+        <translation type="unfinished">विस्तृत करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
+        <source>Correct</source>
+        <translation type="unfinished">दुरुस्त करा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
+        <source>Polish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
+        <source>Add to the AI knowledge base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation type="unfinished">भाषांतराचा परिणाम मॉडेलच्या क्षमतेद्वारे मर्यादित आहे. जर तुम्हाला भाषांतराने समाधानी नसाल, तर UOS AI होम पृष्ठावरील इतर मॉडेल्सवर स्विच करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
+        <source>Ok</source>
+        <translation type="unfinished">ठीक आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation type="unfinished">हा मजकूर %1 मध्ये भाषांतरित करा आणि मला थेट स्पष्ट परिणाम द्या. मजकूर：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
+        <source>Not clickable</source>
+        <translation type="unfinished">क्लिक करता येत नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation type="unfinished">ऑडिओ डिव्हाइस आढळली नाही, कृपया तपासा आणि पुन्हा प्रयत्न करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation type="unfinished">ठीक आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
+        <source>Fill failed</source>
+        <translation type="unfinished">भरणे अयशस्वी</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation type="unfinished">कोणतेही इनपुट बॉक्स निवडलेले नाही, कृपया इनपुट बॉक्स निवडा आणि पुन्हा भरा.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
+        <source>Added</source>
+        <translation type="unfinished">जोडले</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
+        <source>Copied</source>
+        <translation type="unfinished">कॉपी केले</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation type="unfinished">हा मजकूर सोप्या भाषेत समजावून सांगा. फक्त मला स्पष्ट परिणाम द्या, अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">हा मजकूर सारांशित करा आणि मला थेट स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">हा मजकूर योग्यरित्या पुढे चालू ठेवा. खूप शब्दांची गरज नाही. फक्त मला स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">हा मजकूर योग्यरित्या विस्तृत करा. विशेषतः लांब मजकूराची गरज नाही. फक्त मला स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">या मजकूरात काही टायपो आहेत का ते तपासा. असल्यास, त्रुटींचे स्थान दर्शवा. मला थेट स्पष्ट परिणाम द्या, कोणत्याही अनावश्यक सामग्रीशिवाय. मजकूर：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation type="unfinished">माझ्यासाठी हा मजकूर सुधारा आणि फक्त निकाल द्या, कोणतीही अतिरिक्त माहिती नको.
+
+मजकूर:</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
+        <source> &quot;%1&quot; </source>
+        <translation type="unfinished"> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
+        <source>Current model: </source>
+        <translation type="unfinished">सध्याचे मॉडेल: </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
+        <source>Currently no model</source>
+        <translation type="unfinished">सध्या कोणतेही मॉडेल नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
+        <source>Go to configure  </source>
+        <translation type="unfinished">कॉन्फिगर करण्यासाठी जा</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
+        <source>Claim Free Credits  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
+        <source>No text recognized.</source>
+        <translation type="unfinished">कोणताही मजकूर ओळखला गेला नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
+        <source>The added content must be more than 10 words</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AiWriterDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>तुम्हाला काय तयार करायचे आहे ते प्रविष्ट करा (जनरेट करण्यासाठी Enter दाबा/बाहेर पडण्यासाठी Esc)</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
         <translation>मला [%1] या विषयावर निबंध लिहिण्यात मदत करा [स्पष्ट रचना आणि समृद्ध सामग्रीसह].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Artificial Intelligence</source>
         <translation>कृत्रिम बुद्धिमत्ता</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
         <translation>मला [%1] या विषयावर रूपरेषा लिहिण्यात मदत करा, जी [PPT निर्मितीसाठी] वापरली जाईल.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
         <translation>मला [%1] बद्दल सूचना लिहिण्यात मदत करा, प्राप्तकर्ता [सर्व कर्मचारी] आहे आणि पाठवणारा [प्रशासन विभाग] आहे.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>National Day Holiday</source>
         <translation>राष्ट्रीय दिन सुट्टी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
         <translation>मला [%1] वर संशोधन अहवाल लिहिण्यात मदत करा, त्यात किमान [स्थिती वर्णन, समस्येचे विश्लेषण, उपाययोजना आणि सूचना, संशोधन निष्कर्ष] समाविष्ट असावेत.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
         <translation>मला [%1] या विषयावर [कंपनीच्या नेत्यांसाठी] भाषण लिहिण्यात मदत करा, ज्यासाठी [स्पष्ट रचना आणि जिवंत भाषा] आवश्यक आहे.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
         <translation>मला माझ्या अलीकडील कामाचा सारांश लिहिण्यात मदत करा, ज्यात [%1] आणि [निकाल] समाविष्ट आहेत, [औपचारिक] टोन आवश्यक आहे.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>work content</source>
         <translation>कामाची सामग्री</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
         <translation>मला [%1] या विषयावर सार्वजनिक ट्वीट लिहिण्यात मदत करा, ज्यासाठी [स्पष्ट रचना] आणि [सैल] टोन आवश्यक आहे.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1036"/>
         <source>Model Configuration</source>
-        <translation>मॉडेल कॉन्फिगरेशन</translation>
+        <translation type="vanished">मॉडेल कॉन्फिगरेशन</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1123"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
         <source>Go to configure  </source>
         <translation>कॉन्फिगर करण्यासाठी जा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="86"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
         <source>AI Writer</source>
         <translation>AI लेखक</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="190"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
         <source>Article</source>
         <translation>लेख</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="194"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
         <source>Outline</source>
         <translation>रूपरेषा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="198"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
         <source>Notification</source>
         <translation>सूचना</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="202"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
         <source>Research Report</source>
         <translation>संशोधन अहवाल</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="206"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
         <source>Speeches</source>
         <translation>भाषणे</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="210"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
         <source>Work Summary</source>
         <translation>कामाचा सारांश</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="214"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
         <source>Tweets</source>
         <translation>ट्वीट्स</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="306"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>मजकूरात पेस्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="324"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>पुन्हा जनरेट करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="332"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>कॉपी करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="350"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AI द्वारे जनरेट केलेली सामग्री फक्त संदर्भासाठी आहे, कृपया माहितीच्या अचूकतेकडे लक्ष द्या.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="849"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
@@ -5114,44 +4815,44 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 2. &quot;पुन्हा सुरू करा&quot; क्लिक करा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="853"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1070"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
         <source>Copied</source>
         <translation>कॉपी केले</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
         <source>Current model: </source>
         <translation>सध्याचे मॉडेल: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1106"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>सध्या कोणतेही मॉडेल नाही</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1137"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
         <source>Modify the content, change the tone…</source>
         <translation>सामग्री सुधारा, टोन बदला…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1258"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>भरणे अयशस्वी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1259"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>कोणतेही इनपुट बॉक्स निवडलेले नाही, कृपया इनपुट बॉक्स निवडा आणि पुन्हा भरा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1261"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>ठीक आहे</translation>
     </message>
@@ -5320,6 +5021,301 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::Application</name>
+    <message>
+        <location filename="../src/app/application.cpp" line="66"/>
+        <location filename="../src/app/application.cpp" line="68"/>
+        <source>UOS AI</source>
+        <translation type="unfinished">UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="70"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="112"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI फॉलोअलॉंग/लिहा</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ArticleAdjustAgent</name>
+    <message>
+        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AssistantManager</name>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
+        <source>UOS AI</source>
+        <translation type="unfinished">UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
+        <source>Hello, I&apos;m UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
+        <source>AI Writing</source>
+        <translation type="unfinished">AI लेखन</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
+        <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
+        <source>AI Translation</source>
+        <translation type="unfinished">AI भाषांतर</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
+        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
+        <translation type="unfinished">तुमचे भाषांतर सहाय्यक, अनेक भाषांमध्ये प्रभुत्व.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
+        <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished">वैयक्तिक ज्ञान सहाय्यक</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
+        <source>Answers questions based on your personal knowledge base.</source>
+        <translation type="unfinished">तुमच्या वैयक्तिक ज्ञान आधारावर प्रश्नांची उत्तरे देते.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
+        <source>Ask questions based on the knowledge base.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
+        <source>MCP Server</source>
+        <translation type="unfinished">MCP सर्व्हर</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
+        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
+        <source>Please enter MCP Server commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioChannel</name>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
+        <source>Failed to start recorder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
+        <source>Failed to play text audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioControler</name>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
+        <source>invalid input device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
+        <source>invalid output device</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinProvider</name>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="54"/>
+        <source>UOS AI</source>
+        <translation type="unfinished">UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="59"/>
+        <source>Intelligent Routing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="71"/>
+        <source>Online Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="83"/>
+        <source>DeepSeek-V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="96"/>
+        <location filename="../src/model/builtinprovider.cpp" line="334"/>
+        <source>GLM-4.7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="110"/>
+        <source>Doubao-Seed-1.8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="127"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="135"/>
+        <source>Private deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="144"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="149"/>
+        <source>GPT-3.5 Turbo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="162"/>
+        <source>GPT-4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="175"/>
+        <source>GPT-4.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="188"/>
+        <source>o1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="201"/>
+        <source>GPT-5.3 Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="217"/>
+        <source>doubao/seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="223"/>
+        <source>Doubao-Seed 2.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="236"/>
+        <source>Doubao-Seed 2.0-Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="252"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">डीपसीक</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="257"/>
+        <source>DeepSeek V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>MiniMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="279"/>
+        <source>MiniMax-M2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="295"/>
+        <source>Moonshot (KIMI)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="300"/>
+        <source>Kimi K2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="313"/>
+        <source>Kimi K2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="329"/>
+        <source>GLM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="347"/>
+        <source>GLM-5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="363"/>
+        <source>Qwen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="369"/>
+        <source>Qwen3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="382"/>
+        <source>Qwen3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="399"/>
+        <source>Anthropic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="406"/>
+        <source>Gemini</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ClickableLabel</name>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
@@ -5328,24 +5324,48 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::CommonFailDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
+        <source>Error</source>
+        <translation type="unfinished">त्रुटी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation type="unfinished">ठीक आहे</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ConversationRecord</name>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
+        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">नवीन संभाषण</translation>
+    </message>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
+        <source>Null</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::CreateScheduleInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="144"/>
         <source>Create Schedule</source>
-        <translation>वेळापत्रक तयार करा</translation>
+        <translation type="vanished">वेळापत्रक तयार करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="146"/>
         <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation>मार्केटिंग विभागासोबत दुपारी २ वाजता ते ५ वाजेपर्यंत बैठक आयोजित करा.</translation>
+        <translation type="vanished">मार्केटिंग विभागासोबत दुपारी २ वाजता ते ५ वाजेपर्यंत बैठक आयोजित करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="155"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>माफ करा, कोणतीही जुळणारी क्रिया सापडली नाही.</translation>
+        <translation type="vanished">माफ करा, कोणतीही जुळणारी क्रिया सापडली नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="169"/>
         <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
 
 Schedule template format:
@@ -5354,7 +5374,7 @@ json
 
 Input: %1
 Current time: %2</source>
-        <translation>इनपुट सामग्रीमधून संबंधित पॅरामीटर्स पार्स करा आणि खालील JSON स्वरूपातील शेड्यूल टेम्प्लेटशी जुळवा, आणि फक्त JSON सामग्री आउटपुट करा, कोणताही अप्रासंगिक मजकूर वगळून.
+        <translation type="vanished">इनपुट सामग्रीमधून संबंधित पॅरामीटर्स पार्स करा आणि खालील JSON स्वरूपातील शेड्यूल टेम्प्लेटशी जुळवा, आणि फक्त JSON सामग्री आउटपुट करा, कोणताही अप्रासंगिक मजकूर वगळून.
 
 शेड्यूल टेम्प्लेट स्वरूप:
 
@@ -5369,46 +5389,64 @@ json
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>MCP सर्व्हर जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="48"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>MCP सर्व्हर संपादित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>JSON कॉन्फिगरेशन:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>कृपया MCP JSON कॉन्फिगरेशन कोड इनपुट बॉक्समध्ये पेस्ट करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>वर्णन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>द्रुत शोध साधनांसाठी MCP सर्व्हर कार्ये वर्णन करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation type="unfinished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation>पुष्टी करा</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::CustomModelGroup</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
+        <source>Please enter the model ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
+        <source>Please enter the model name</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5420,94 +5458,116 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::DeepResearchAgent</name>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
+        <source>Collecting and analyzing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
+        <source>Data collection and analysis completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
+        <source>Research completed. %1 references collected:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
+        <source>搜索成功</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
+        <source>ERROR: 未搜索到信息！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
+        <source>未找到相关文档</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
+        <source>Local Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DeepSeekInfo</name>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="119"/>
         <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation>भेट मिळाल्यानंतर, मूळ बैदू मॉडेल आणि आयफ्लायटेक मॉडेल डीपसीकने बदलले जाईल</translation>
+        <translation type="vanished">भेट मिळाल्यानंतर, मूळ बैदू मॉडेल आणि आयफ्लायटेक मॉडेल डीपसीकने बदलले जाईल</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="132"/>
         <source>Manually collect later</source>
-        <translation>नंतर स्वहस्ते गोळा करा</translation>
+        <translation type="vanished">नंतर स्वहस्ते गोळा करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="293"/>
         <source>Trial Account</source>
-        <translation>चाचणी खाते</translation>
+        <translation type="vanished">चाचणी खाते</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="376"/>
         <source>Get a free account</source>
-        <translation>विनामूल्य खाते मिळवा</translation>
+        <translation type="vanished">विनामूल्य खाते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
-        <translation>पुन्हा प्रयत्न करा</translation>
+        <translation type="vanished">पुन्हा प्रयत्न करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="393"/>
         <source>Enter UOS AI</source>
-        <translation>UOS AI मध्ये प्रवेश करा</translation>
+        <translation type="vanished">UOS AI मध्ये प्रवेश करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="401"/>
         <source>Receiving...</source>
-        <translation>मिळत आहे...</translation>
+        <translation type="vanished">मिळत आहे...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="410"/>
         <source>Use it immediately</source>
-        <translation>ताबडतोब वापरा</translation>
+        <translation type="vanished">ताबडतोब वापरा</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="431"/>
         <source>Checking account status...</source>
-        <translation>खाते स्थिती तपासत आहे...</translation>
+        <translation type="vanished">खाते स्थिती तपासत आहे...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
-        <translation>डीपसीक खाते मिळविणे अयशस्वी!</translation>
+        <translation type="vanished">डीपसीक खाते मिळविणे अयशस्वी!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="469"/>
         <source>Please check the network and try again later！</source>
-        <translation>कृपया नेटवर्क तपासा आणि नंतर पुन्हा प्रयत्न करा!</translation>
+        <translation type="vanished">कृपया नेटवर्क तपासा आणि नंतर पुन्हा प्रयत्न करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="472"/>
         <source>DeepSeek account successfully claimed!</source>
-        <translation>डीपसीक खाते यशस्वीरित्या मिळवले!</translation>
+        <translation type="vanished">डीपसीक खाते यशस्वीरित्या मिळवले!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="477"/>
         <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation>कृपया नेटवर्क तपासा आणि पुन्हा प्रयत्न करा किंवा नंतर UOS AI सेटिंग्जमध्ये स्वहस्ते मिळवा</translation>
+        <translation type="vanished">कृपया नेटवर्क तपासा आणि पुन्हा प्रयत्न करा किंवा नंतर UOS AI सेटिंग्जमध्ये स्वहस्ते मिळवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation>UOS AI पूर्णपणे डीपसीकमध्ये एकत्रित केले गेले आहे</translation>
+        <translation type="vanished">UOS AI पूर्णपणे डीपसीकमध्ये एकत्रित केले गेले आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="465"/>
         <source>The free account activity has ended.</source>
-        <translation>विनामूल्य खाते क्रियाकलाप संपला आहे.</translation>
+        <translation type="vanished">विनामूल्य खाते क्रियाकलाप संपला आहे.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="473"/>
         <source>Come and experience it!</source>
-        <translation>येथे या आणि अनुभव घ्या!</translation>
+        <translation type="vanished">येथे या आणि अनुभव घ्या!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="481"/>
         <source>Come and claim your account!</source>
-        <translation>येथे या आणि आपले खाते मिळवा!</translation>
+        <translation type="vanished">येथे या आणि आपले खाते मिळवा!</translation>
     </message>
 </context>
 <context>
@@ -5580,16 +5640,198 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::EParserDocument</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="207"/>
-        <source>Generate Image</source>
-        <translation>प्रतिमा निर्माण करा</translation>
+        <source>Supported files</source>
+        <translation type="obsolete">सपोर्टेड फाइल्स</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FileChannel</name>
+    <message>
+        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
+        <source>Supported files</source>
+        <translation type="unfinished">सपोर्टेड फाइल्स</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FreeAccountService</name>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
+        <source>Network error</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="209"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
+        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
+        <translation type="unfinished">चॅटसाठी आपले विनामूल्य खाते कोटा संपुष्टात आला आहे, कृपया वापरणे सुरू ठेवण्यासाठी आपले मॉडेल खाते कॉन्फिगर करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
+        <source>Not Now</source>
+        <translation type="unfinished">आत्ता नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">क्रेडिट्स मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
+        <source>Free Credits Delivered</source>
+        <translation type="unfinished">विनामूल्य क्रेडिट्स पोहोचले</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
+        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">यशस्वीरित्या मिळवले</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
+        <source>Account not found</source>
+        <translation type="unfinished">खाते सापडले नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
+        <source>Only support trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
+        <source>You have already participated in the event and cannot claim the reward again.</source>
+        <translation type="unfinished">तुम्ही आधीच या इव्हेंटमध्ये सहभागी झाला आहात आणि पुन्हा बक्षीस मिळवू शकत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
+        <source>Server system error</source>
+        <translation type="unfinished">सर्व्हर सिस्टम त्रुटी</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GenerateImageInst</name>
+    <message>
+        <source>Generate Image</source>
+        <translation type="vanished">प्रतिमा निर्माण करा</translation>
+    </message>
+    <message>
         <source>Describe Image Content</source>
-        <translation>प्रतिमा सामग्रीचे वर्णन करा</translation>
+        <translation type="vanished">प्रतिमा सामग्रीचे वर्णन करा</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GetFreeAccountDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
+        <source>Get a free trial account</source>
+        <translation type="unfinished">विनामूल्य चाचणी खाते मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
+        <source>Get account</source>
+        <comment>button</comment>
+        <translation type="unfinished">खाते मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished">ट्रायल खात्यांसाठी इंग्रजी सपोर्ट समाधानकारक नाही. आणि ट्रायल खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहे. कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished">चाचणी सुरू करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::HttpCodeTranslation</name>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Connection failed, please check the fill in information.</source>
+        <translation type="unfinished">कनेक्शन अयशस्वी, कृपया भरलेली माहिती तपासा.</translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
+        <source>Operation canceled.</source>
+        <translation type="unfinished">ऑपरेशन रद्द केले.</translation>
     </message>
 </context>
 <context>
@@ -5613,6 +5855,14 @@ json
         <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>नेटवर्क उपलब्ध नाही</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::IconButtonEx</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
+        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
+        <translation type="unfinished">नवीन जोडलेल्या फायलींना वापरण्यापूर्वी प्रीप्रोसेसिंग आवश्यक आहे, आणि डेटा प्रक्रिया प्रक्रियेदरम्यान, त्यामुळे मोठ्या प्रमाणात संगणक आणि स्टोरेज संसाधने वापरली जाऊ शकतात. डेटा हटवल्यानंतर डेटा प्रक्रिया थांबेल.</translation>
     </message>
 </context>
 <context>
@@ -5654,22 +5904,203 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::LaunchAppInst</name>
+    <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="52"/>
-        <source>Launch or Close App</source>
-        <translation>अनुप्रयोग सुरू करा किंवा बंद करा</translation>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
+        <source>Searching knowledge base</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="54"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
+        <source>Search complete · %1s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
+        <source>Search complete · %1m%2s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
+        <source>Are you sure you want to delete this knowledge base file?</source>
+        <translation type="unfinished">तुम्हाला ही ज्ञान आधार फाइल हटवायची आहे याची खात्री आहे?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
+        <source>Delete</source>
+        <translation type="unfinished">हटवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
+        <source>Add</source>
+        <translation type="unfinished">जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
+        <source>Please install the embedding model plugins first</source>
+        <translation type="unfinished">कृपया प्रथम एम्बेडिंग मॉडेल प्लगइन्स स्थापित करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
+        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
+        <translation type="unfinished">या वैशिष्ट्यासाठी उच्च हार्डवेअर संसाधने आवश्यक आहेत, आणि संदर्भ बेंचमार्क कॉन्फिगरेशन आहे: CPU Intel 11वी पिढी i7 किंवा त्यापेक्षा जास्त; 16GB किंवा अधिक मेमरी; NVIDIA ग्राफिक्स कार्ड आणि 10 सिरीज किंवा त्यापेक्षा जास्त असणे हा सर्वोत्तम पर्याय आहे. जर कॉन्फिगरेशन खूपच कमी असेल, तर लॅगिंग आणि अचूक नसलेली उत्तरे यासारख्या समस्या येऊ शकतात.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
+        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
+        <translation type="unfinished">येथे, वैयक्तिक ज्ञान सहाय्यकाचा ज्ञानसंग्रह परिभाषित केला जाऊ शकतो, आणि वैयक्तिक ज्ञान सहाय्यक खाली जोडलेल्या फायलीवर आधारित प्रश्नांची उत्तरे देईल.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <source>Done</source>
+        <translation type="unfinished">पूर्ण</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
+        <source>None</source>
+        <translation type="unfinished">काहीही नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
+        <source>File already exist</source>
+        <translation type="unfinished">फाइल आधीपासून अस्तित्वात आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
+        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
+        <translation type="unfinished">%1 फाइल आधीपासून अस्तित्वात आहे आणि पुन्हा जोडली जाऊ शकत नाही. कृपया पुन्हा जोडण्यापूर्वी फाइलचे नाव बदला किंवा विद्यमान फाइल हटवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
+        <source>All files</source>
+        <translation type="unfinished">सर्व फायली</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LaunchAppInst</name>
+    <message>
+        <source>Launch or Close App</source>
+        <translation type="vanished">अनुप्रयोग सुरू करा किंवा बंद करा</translation>
+    </message>
+    <message>
         <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation>WPS, संगीत, अल्बम, नियंत्रण केंद्र, लॉग व्ह्यूअर ...</translation>
+        <translation type="vanished">WPS, संगीत, अल्बम, नियंत्रण केंद्र, लॉग व्ह्यूअर ...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
+        <source>Install</source>
+        <translation type="unfinished">स्थापित करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
+        <source>Uninstall</source>
+        <translation type="unfinished">विस्थापित करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
+        <source>Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
+        <source>uninstall</source>
+        <translation type="unfinished">विस्थापित करा</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
+        <source>Local model</source>
+        <translation type="unfinished">स्थानिक मॉडेल</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <source>ULLM-1.5B</source>
+        <translation type="unfinished">यूएलएलएम-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
+        <translation type="unfinished">एकदा स्थापित केल्यानंतर, यूओएस एआय वापरण्यासाठी तुम्हाला इंटरनेट कनेक्शनची आवश्यकता नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <source>ULLM-7B</source>
+        <translation type="unfinished">यूएलएलएम-7B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>DeepSeek-R1-1.5B</source>
+        <translation type="unfinished">डीपसीक-आर१-१.५बी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
+        <translation type="unfinished">ओपन-सोर्स समुदायातून तुमच्या जोखमीवर डाउनलोड करा. इन्स्टॉलेशननंतर UOS AI सहाय्यकात वापरा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>UOS AI large model</source>
+        <translation type="unfinished">यूओएस एआय मोठे मॉडेल</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>Embedding Plugins</source>
+        <translation type="unfinished">एम्बेडिंग प्लगइन्स</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
+        <translation type="unfinished">मॉडेल स्थापित केल्यानंतर, सिस्टम सहाय्यक आणि वैयक्तिक ज्ञान सहाय्यक चालवता येईल.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="114"/>
+        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP सर्व्हर उपलब्ध नाही</translation>
     </message>
@@ -5748,17 +6179,17 @@ json
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="50"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation type="unfinished">स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
         <translation type="unfinished">विस्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
         <translation>अद्यतनित करा</translation>
     </message>
@@ -5766,7 +6197,7 @@ json
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>अंतर्भूत</translation>
     </message>
@@ -5774,47 +6205,47 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP सर्व्हर</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>सर्व</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>अंतर्भूत</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
         <translation>सानुकूल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>MCP सर्व्हर जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>हटवण्याची पुष्टी करता का %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>हटवल्यानंतर हा सर्व्हर उपलब्ध राहणार नाही. काळजीपूर्वक पुढे जा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation type="unfinished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
         <translation type="unfinished">हटवा</translation>
     </message>
@@ -5822,173 +6253,574 @@ json
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="59"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>MCP वातावरण</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP सर्व्हर</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>UOS AI एजंट स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>स्थापनानंतर MCP सर्व्हर उपलब्ध होईल.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::ModelHubLLM</name>
+    <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="43"/>
-        <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
+        <source>Model Configuration</source>
+        <translation type="unfinished">मॉडेल कॉन्फिगरेशन</translation>
     </message>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="58"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
+        <source>UOS AI FollowAlong</source>
+        <translation type="unfinished">UOS AI फॉलोअलॉंग</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
+        <source>User Agreement</source>
+        <translation type="unfinished">वापरकर्ता करार</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
+        <source>Read and agreed</source>
+        <translation type="unfinished">वाचले आणि मान्य केले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
+        <source>Proxy Settings</source>
+        <translation type="unfinished">प्रॉक्सी सेटिंग्ज</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">सेटिंग्जवर जा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation type="unfinished">ज्ञानसंग्रहात जोडण्यासाठी वेक्टरायझेशन मॉडेल प्लगइन इंस्टॉल करणे आवश्यक आहे. कृपया अ‍ॅप स्टोअरवरून डाउनलोड आणि इंस्टॉल करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation type="unfinished">इंस्टॉल करू नका</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation type="unfinished">लगेच इंस्टॉल करा</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubLLM</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation type="vanished">YouRong 1.5B</translation>
+    </message>
+    <message>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
+        <source>YouRong 1.5B</source>
+        <translation type="unfinished">YouRong 7B {1.5B?}</translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
+        <source>YouRong 7B</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">विनामूल्य खाते मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Delete</source>
+        <translation type="unfinished">हटवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
+        <source>Add</source>
+        <translation type="unfinished">जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
+        <source>Online model</source>
+        <translation type="unfinished">ऑनलाइन मॉडेल</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Done</source>
+        <translation type="unfinished">पूर्ण</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
+        <source>None</source>
+        <translation type="unfinished">काहीही नाही</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
         <translation>स्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="108"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
         <source>Update</source>
         <translation>अद्यतनित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
         <translation>विस्थापित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="113"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
         <source>Cancel</source>
         <translation>रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="151"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
         <translation>अंदाजे %1GB</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>स्थापित केले जात आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
         <translation>तुम्हाला हे मॉडेल हटवायचे आहे याची खात्री आहे?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>निश्चित करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="245"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>तपासत आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>ठीक आहे</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="266"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
         <translation>&apos;%0 डाउनलोड अयशस्वी, कृपया पुन्हा प्रयत्न करा!&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="313"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
         <translation>कृपया हे मॉडेल इन्स्टॉल करण्यापूर्वी &quot;एम्बेडिंग प्लगइन्स&quot; प्रथम इन्स्टॉल करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="493"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
         <translation>लक्ष्य फोल्डर कचरापेटीत टाकण्यात अयशस्वी, कृपया पुन्हा प्रयत्न करा!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="529"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>&apos;%1 सेकंद&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="531"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>&apos;%1 मिनिटे&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="536"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
         <translation>&apos;%1MB/%2GB डाउनलोड केले, %3 बाकी.&apos;</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="294"/>
-        <source>Multimedia Control</source>
-        <translation>मल्टीमीडिया नियंत्रण</translation>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
+        <source>Are you sure you want to delete this model?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="297"/>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelValidator</name>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="37"/>
+        <source>Invalid model account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="54"/>
+        <source>Unsupported model type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="62"/>
+        <source>Model does not support chat completion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="89"/>
+        <source>Model is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="98"/>
+        <source>HTTP error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="108"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModifyProviderDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
+        <source>For proxy settings, please go to system proxy settings</source>
+        <translation type="unfinished">प्रॉक्सी सेटिंगसाठी, कृपया सिस्टम प्रॉक्सी सेटिंगमध्ये जा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">सेटिंग्जवर जा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Delete</source>
+        <translation type="unfinished">हटवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Edit Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Add Model</source>
+        <translation type="unfinished">मॉडेल जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
+        <source>Account</source>
+        <translation type="unfinished">खाते</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
+        <source>Required, to distinguish multiple models</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
+        <source>Provider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
+        <source>APIKey</source>
+        <translation type="unfinished">APIKey</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
+        <source>Required, please input</source>
+        <translation type="unfinished">आवश्यक आहे, कृपया इनपुट करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
+        <source>Domain</source>
+        <translation type="unfinished">डोमेन</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
+        <source>Enable</source>
+        <translation type="unfinished">सक्षम करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
+        <source>Add</source>
+        <translation type="unfinished">जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
+        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
+        <source>Cancel</source>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
+        <source>Name and Model ID must be filled in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Done</source>
+        <translation type="unfinished">पूर्ण</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
+        <source>Test passed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
+        <source>The model service is available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::MultimediaControlInst</name>
+    <message>
+        <source>Multimedia Control</source>
+        <translation type="vanished">मल्टीमीडिया नियंत्रण</translation>
+    </message>
+    <message>
         <source>Play music, state control, seek...</source>
-        <translation>संगीत प्ले करा, स्थिती नियंत्रण, शोधा...</translation>
+        <translation type="vanished">संगीत प्ले करा, स्थिती नियंत्रण, शोधा...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OperatingLineWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
+        <source>In data processing</source>
+        <translation type="unfinished">डेटा प्रक्रियेत</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
+        <source>Data processing error</source>
+        <translation type="unfinished">डेटा प्रक्रिया त्रुटी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
+        <source>File error, unable to process, please delete.</source>
+        <translation type="unfinished">फाइल त्रुटी, प्रक्रिया करण्यास अक्षम, कृपया हटवा.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OutlineAgent</name>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
+        <source>Generating outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
+        <source>Generating outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
+        <source>Outline generated, please confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
+        <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
+        <source>Detected uploaded local outline, please confirm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
+        <source>Failed to parse the uploaded outline file, please re-upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
+        <source>Generating outline content failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
+        <source>Based on your writing task, I have generated the following outline for **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
+        <source>I have parsed your uploaded outline and structured it as **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
+        <source>
+The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::PersonalKnowledgeAssistant</name>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
+        <translation type="unfinished">वैयक्तिक ज्ञान सहाय्यक केवळ मॉडेल प्लग कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
+        <translation type="unfinished">वैयक्तिक ज्ञान सहाय्यक केवळ ज्ञान बेस कॉन्फिगर केल्यानंतरच वापरला जाऊ शकतो.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>हटवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="36"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>जोडा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>खाजगी तैनाती मॉडेल</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>पूर्ण</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>काहीही नाही</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ProviderListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
+        <source>Are you sure you want to delete this provider?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">रद्द करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6010,37 +6842,60 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::SearchOnlineInst</name>
+    <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="249"/>
-        <source>Search Online</source>
-        <translation>ऑनलाइन शोधा</translation>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
+        <source>Document Generating</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="251"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
+        <source>failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
+        <source>Document Generated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
+        <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
+        <source>You can ask follow-up questions or request adjust the article.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SearchOnlineInst</name>
+    <message>
+        <source>Search Online</source>
+        <translation type="vanished">ऑनलाइन शोधा</translation>
+    </message>
+    <message>
         <source>Enter Search Content</source>
-        <translation>शोध सामग्री प्रविष्ट करा</translation>
+        <translation type="vanished">शोध सामग्री प्रविष्ट करा</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SendMailInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="81"/>
         <source>Send Mail</source>
-        <translation>ईमेल पाठवा</translation>
+        <translation type="vanished">ईमेल पाठवा</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="83"/>
         <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation>मला [प्राप्तकर्त्याचे नाव] यांना [ईमेल सामग्री] सह ईमेल पाठवण्यास मदत करा.</translation>
+        <translation type="vanished">मला [प्राप्तकर्त्याचे नाव] यांना [ईमेल सामग्री] सह ईमेल पाठवण्यास मदत करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="92"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>क्षमस्व, कोणतीही जुळणारी क्रिया सापडली नाही.</translation>
+        <translation type="vanished">क्षमस्व, कोणतीही जुळणारी क्रिया सापडली नाही.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="106"/>
         <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
 
 Email template format:
@@ -6048,7 +6903,7 @@ json
 {&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
 
 Input: %1</source>
-        <translation>कृपया खालील JSON ईमेल टेम्पलेट स्वरूपाशी जुळण्यासाठी दिलेल्या इनपुटमधून संबंधित पॅरामीटर्स काढा आणि फक्त JSON सामग्री आउटपुट करा. कोणतीही अतिरिक्त माहिती समाविष्ट करू नका.
+        <translation type="vanished">कृपया खालील JSON ईमेल टेम्पलेट स्वरूपाशी जुळण्यासाठी दिलेल्या इनपुटमधून संबंधित पॅरामीटर्स काढा आणि फक्त JSON सामग्री आउटपुट करा. कोणतीही अतिरिक्त माहिती समाविष्ट करू नका.
 
 ईमेल टेम्पलेट स्वरूप:
 
@@ -6059,21 +6914,72 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
+        <source>Failed to get MCP server instance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
+        <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
+        <translation type="unfinished">सर्व्हर &apos;%1&apos; हा कस्टम सर्व्हर नाही किंवा अस्तित्वात नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
+        <source>MCP server name &apos;%1&apos; already exists</source>
+        <translation type="unfinished">MCP सर्व्हर नाव &apos;%1&apos; आधीच अस्तित्वात आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
+        <source>Server &apos;%1&apos; does not exist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SessionManager</name>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="52"/>
+        <source>Session with ID %1 already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="63"/>
+        <source>Session %1 create assistant %2 failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="74"/>
+        <source>Session %1 create success</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="120"/>
+        <source>Session %1 not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="128"/>
+        <source>Session %1 is not idle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ShortcutUpdateDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="51"/>
         <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation>शॉर्टकट: [सुपर + स्पेस]. UOS AI ला झटपट कॉल करा आणि सर्व AI वैशिष्ट्ये एकाच ठिकाणी प्रवेश करा.</translation>
+        <translation type="vanished">शॉर्टकट: [सुपर + स्पेस]. UOS AI ला झटपट कॉल करा आणि सर्व AI वैशिष्ट्ये एकाच ठिकाणी प्रवेश करा.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="79"/>
         <source>Got it</source>
-        <translation>समजले</translation>
+        <translation type="vanished">समजले</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="107"/>
         <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation>हा प्रॉम्प्ट %1 अधिक वेळा दिसेल, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;पुन्हा दाखवू नका&lt;/a&gt;</translation>
+        <translation type="vanished">हा प्रॉम्प्ट %1 अधिक वेळा दिसेल, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;पुन्हा दाखवू नका&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -6155,93 +7061,1727 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::SkillServerListItem</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
-        <source>built-in</source>
-        <translation type="unfinished">अंतर्भूत</translation>
+        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
+        <source>UOS AI</source>
+        <translation type="unfinished">UOS AI</translation>
     </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
-        <source>Skill List</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
-        <source>Import Skill</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
+        <source>Update History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
-        <source>Supported files</source>
-        <translation type="unfinished">सपोर्टेड फाइल्स</translation>
+        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
+        <source>Settings</source>
+        <translation type="unfinished">सेटिंग्ज</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
-        <source>Confirm deletion %1?</source>
-        <translation type="unfinished">हटवण्याची पुष्टी करता का %1?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
-        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
+        <source>About</source>
+        <translation type="unfinished">विषयी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
+        <source>New Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
+        <source>Temporary Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
+        <source>AI Writing</source>
+        <translation type="unfinished">AI लेखन</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
+        <source>AI Translation</source>
+        <translation type="unfinished">AI भाषांतर</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
+        <source>AI Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
+        <source>MCP Server</source>
+        <translation type="unfinished">MCP सर्व्हर</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
+        <source>Commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
+        <source>Agent Store</source>
+        <translation type="unfinished">एजंट स्टोअर</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
+        <source>More</source>
+        <translation type="unfinished">अधिक</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
+        <source>Chat History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
+        <source>Today</source>
+        <translation type="unfinished">आज</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
+        <source>Yesterday</source>
+        <translation type="unfinished">काल</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
+        <source>Last 7 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
+        <source>Last 30 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
+        <source>January</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
+        <source>February</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
+        <source>March</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
+        <source>April</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
+        <source>May</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <source>June</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <source>July</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <source>August</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <source>September</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <source>October</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <source>November</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <source>year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
+        <source>Earlier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
+        <source>Delete</source>
+        <translation type="unfinished">हटवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
+        <source>Confirm Deletion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
+        <source>Confirm Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>Cancel</source>
         <translation type="unfinished">रद्द करा</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
-        <source>Delete</source>
-        <translation type="unfinished">हटवा</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
-        <source>Skill Enviorment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
+        <source>Batch Manage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
-        <source>Agent Skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
+        <source>All</source>
+        <translation type="unfinished">सर्व</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
+        <source>Select All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
-        <source>Configure </source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
+        <source>%1 conversations selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
-        <source>MCP environment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
+        <source>No chat history yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
-        <source>After configuration you can use agent skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
+        <source>Chat content not found</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
+        <source>DeepThink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
+        <source>Search</source>
+        <translation type="unfinished">शोधा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
+        <source>Attachments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
+        <source>Upload Files</source>
+        <translation type="unfinished">फाइल्स अपलोड करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
+        <source>Screenshot Q&amp;A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
+        <source>Voice Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
+        <source>Voice Read</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
+        <source>Stop Reading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
+        <source>Copy</source>
+        <translation type="unfinished">कॉपी करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
+        <source>Regenerate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
+        <source>Re-edit</source>
+        <translation type="unfinished">पुन्हा संपादित करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
+        <source>Stop Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
+        <source>Generation stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
+        <source>You stopped this answer, please re-edit your question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <source>Back to Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
+        <source>Thinking...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
+        <source>Deep think completed (took %1s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
+        <source>Parsing...</source>
+        <translation type="unfinished">विश्लेषण करत आहे...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
+        <source>Parsing failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
+        <source>You can add up to 50 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
+        <source>Summarize the core content of the file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
+        <source>Model List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
+        <source>Smart Recommendation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
+        <source>Smart switch for best match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
+        <source>Local Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
+        <source>Online Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
+        <source>Add Model</source>
+        <translation type="unfinished">मॉडेल जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <source>Official</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
+        <source>You have X newly answered chats</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
+        <source>View Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
+        <source>Remind Me Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
+        <source>Upload files/images as references</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
+        <source>Reference Outline / Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
+        <source>As reference material / As outline file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
+        <source>File Upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
+        <source>As Material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
+        <source>As Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
+        <source>Only 1 file is supported for outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
+        <source>Local Materials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
+        <source>File Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
+        <source>Outline</source>
+        <translation type="unfinished">रूपरेषा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
+        <source>View All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
+        <source>Collapse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
+        <source>Recent Creations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
+        <source>Upload File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
+        <source>Reference Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
+        <source>Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
+        <source>Heading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
+        <source>Export Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
+        <source>Exit Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
+        <source>Untitled Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
+        <source>Enable Privacy Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
+        <source>Continue Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
+        <source>Generating outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
+        <source>Re-upload Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
+        <source>Directly generate outline using AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
+        <source>Add sub-chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <source>Delete chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
+        <source>Add chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
+        <source>Enter chapter title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
+        <source>Delete this heading?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
+        <source>Generate document from outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
+        <source>Save as Word</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
+        <source>Save as PDF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
+        <source>Save as Markdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
+        <source>Saving...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
+        <source>Saved successfully!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
+        <source>Failed to save, please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
+        <source>Undo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
+        <source>Redo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
+        <source>Body Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
+        <source>Heading %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
+        <source>Bold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
+        <source>Italic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
+        <source>Strikethrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
+        <source>Link Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
+        <source>Bulleted List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
+        <source>Numbered List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
+        <source>Decrease Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
+        <source>Increase Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
+        <source>Blockquote</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
+        <source>Divider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
+        <source>Copy Full Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
+        <source>Print Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
+        <source>Share Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
+        <source>Zoom Out</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
+        <source>Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <source>Please enter the text to be translated first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
+        <source>Identifying source language...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
+        <source>My MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
+        <source>Add MCP Server</source>
+        <translation type="unfinished">MCP सर्व्हर जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
+        <source>Delete MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <source>Built-in Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
+        <source>Custom Added Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
+        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <source>Install Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
+        <source>System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
+        <source>Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
+        <source>Wireless Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
+        <source>DND Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
+        <source>Eye Comfort</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
+        <source>Brightness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
+        <source>Volume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
+        <source>Font Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
+        <source>App Store</source>
+        <translation type="unfinished">अॅप स्टोअर</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
+        <source>Schedule Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
+        <source>Click to download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
+        <source>downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <source>Go to configuration</source>
+        <translation type="unfinished">कॉन्फिगरेशनवर जा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
+        <source>No account</source>
+        <translation type="unfinished">खाते नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
+        <source>Input question</source>
+        <translation type="unfinished">इनपुट प्रश्न</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">UOS AI मध्ये आपले स्वागत आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation type="unfinished">UOS AI तुम्हाला ही काही गोष्टी करण्यास मदत करू शकते</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
+        <source>Stop</source>
+        <translation type="unfinished">थांबवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
+        <source>Retry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
+        <source>Clear conversation history</source>
+        <translation type="unfinished">संभाषण इतिहास साफ करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
+        <source>Please connect the microphone and try again</source>
+        <translation type="unfinished">कृपया मायक्रोफोन कनेक्ट करा आणि पुन्हा प्रयत्न करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
+        <source>Chat history cleared</source>
+        <translation type="unfinished">चॅट इतिहास साफ केला</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
+        <source>Click to start/stop recording</source>
+        <translation type="unfinished">रेकॉर्डिंग सुरू/थांबवण्यासाठी क्लिक करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
+        <source>Listening</source>
+        <translation type="unfinished">ऐकत आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
+        <source>Sleeping</source>
+        <translation type="unfinished">झोपलेले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
+        <source>Microphone not detected</source>
+        <translation type="unfinished">मायक्रोफोन आढळला नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
+        <source>Connection failed, click to try again</source>
+        <translation type="unfinished">कनेक्शन अयशस्वी, पुन्हा प्रयत्न करण्यासाठी क्लिक करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
+        <source>Click on the animation or Ctrl+Super+Space to activate</source>
+        <translation type="unfinished">सक्रिय करण्यासाठी अ‍ॅनिमेशनवर क्लिक करा किंवा Ctrl+Super+Space दाबा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">व्हॉइस इनपुट तात्पुरत्या अनुपलब्ध आहे, कृपया नेटवर्क तपासा!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
+        <source>Voice conversation</source>
+        <translation type="unfinished">व्हॉइस संभाषण</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
+        <source>Click the animation or press Enter to send</source>
+        <translation type="unfinished">पाठवण्यासाठी अ‍ॅनिमेशनवर क्लिक करा किंवा Enter दाबा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
+        <source>Stop recording after %1 seconds</source>
+        <translation type="unfinished">%1 सेकंदांनंतर रेकॉर्डिंग थांबवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
+        <source>Thinking</source>
+        <translation type="unfinished">विचार करत आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
+        <source>Click animation to interrupt</source>
+        <translation type="unfinished">खंडित करण्यासाठी अ‍ॅनिमेशनवर क्लिक करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
+        <source>Answering</source>
+        <translation type="unfinished">उत्तर देत आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation type="unfinished">UOS AI वापरण्यापूर्वी AI मॉडेल खाते कॉन्फिगर करणे आवश्यक आहे. कृपया प्रथम मॉडेल खाते कॉन्फिगर करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
+        <source>Activate</source>
+        <translation type="unfinished">सक्रिय करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
+        <source>Voice input</source>
+        <translation type="unfinished">व्हॉइस इनपुट</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">व्हॉइस प्रसारण तात्पुरत्या अनुपलब्ध आहे, कृपया नेटवर्क तपासा!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
+        <source>Turn off voice conversation</source>
+        <translation type="unfinished">व्हॉइस संभाषण बंद करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation type="unfinished">चित्र निर्माण केले गेले आहे, कृपया ते पाहण्यासाठी चॅट इंटरफेसवर स्विच करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
+        <source>No account, please configure an account</source>
+        <translation type="unfinished">खाते नाही, कृपया खाते कॉन्फिगर करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
+        <source>Answer each question up to 5 times</source>
+        <translation type="unfinished">प्रत्येक प्रश्नाचे 5 वेळा उत्तर द्या</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
+        <source>Copied successfully</source>
+        <translation type="unfinished">यशस्वीरित्या कॉपी केले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
+        <source>Sound output device not detected</source>
+        <translation type="unfinished">ध्वनी आउटपुट डिव्हाइस आढळली नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation type="unfinished">ध्वनी आउटपुट डिव्हाइस आढळली नाही, कृपया तपासा आणि पुन्हा प्रयत्न करा!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
+        <source>Mode</source>
+        <translation type="unfinished">मोड</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
+        <source>Window Mode</source>
+        <translation type="unfinished">विंडो मोड</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
+        <source>Sidebar Mode</source>
+        <translation type="unfinished">साइडबार मोड</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
+        <source>Assistant List</source>
+        <translation type="unfinished">सहाय्यक यादी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
+        <source>Agent List</source>
+        <translation type="unfinished">एजंट यादी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
+        <source>UOS System Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
+        <source>Deepin System Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished">वैयक्तिक ज्ञान सहाय्यक</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
+        <source>Please configure the knowledge base</source>
+        <translation type="unfinished">कृपया ज्ञान आधार कॉन्फिगर करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation type="unfinished">[वैयक्तिक ज्ञान सहाय्यक] वापरण्यापूर्वी ज्ञान आधार कॉन्फिगर करणे आवश्यक आहे. ज्ञान आधार कॉन्फिगर केल्यानंतर, AI तुम्ही ज्ञान आधारात कॉन्फिगर केलेल्या सामग्रीवर आधारित प्रश्नांची उत्तरे देईल किंवा सामग्री निर्माण करेल.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
+        <source>Please configure the large model</source>
+        <translation type="unfinished">कृपया मोठे मॉडेल कॉन्फिगर करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation type="unfinished">वैयक्तिक ज्ञान सहाय्यक फक्त मोठे मॉडेल कॉन्फिगर केल्यानंतर वापरता येईल.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
+        <source>To configure</source>
+        <translation type="unfinished">कॉन्फिगर करण्यासाठी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
+        <source>To install</source>
+        <translation type="unfinished">स्थापित करण्यासाठी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation type="unfinished">कृपया [EmbeddingPlugins] स्थापित करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation type="unfinished">हा सहाय्यक चालविण्यासाठी EmbeddingPlugins ची स्थापना आवश्यक आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
+        <source>Drag files here to add them.</source>
+        <translation type="unfinished">फाइल्स येथे ड्रॅग करा जोडण्यासाठी.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation type="unfinished">तुम्ही फक्त ३ फाइल्स जोडू शकता, समर्थित फाइल प्रकारांमध्ये समाविष्ट आहेत: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, कोड फाइल्स इत्यादी.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
+        <source>You can only add a maximum of one file.</source>
+        <translation type="unfinished">तुम्ही फक्त एक फाइल जोडू शकता.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
+        <source>The file format is not supported.</source>
+        <translation type="unfinished">फाइलचे स्वरूप समर्थित नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
+        <source>Summarize the key content of the file.</source>
+        <translation type="unfinished">फाइलच्या मुख्य सामग्रीचा सारांश द्या.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
+        <source>File Error</source>
+        <translation type="unfinished">फाइल त्रुटी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
+        <source>File has been deleted.</source>
+        <translation type="unfinished">फाइल हटवली गेली आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation type="unfinished">फाइलचा आकार 100MB मर्यादेपेक्षा जास्त आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
+        <source>Upload a document</source>
+        <translation type="unfinished">डॉक्युमेंट अपलोड करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
+        <source>File deleted</source>
+        <translation type="unfinished">फाइल हटवली</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
+        <source>No text was parsed</source>
+        <translation type="unfinished">कोणताही मजकूर विश्लेषित केला गेला नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
+        <source>Reference</source>
+        <translation type="unfinished">संदर्भ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
+        <source>Instruction</source>
+        <translation type="unfinished">सूचना</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation type="unfinished">सक्रिय करण्यासाठी इनपुट बॉक्समध्ये &quot;/&quot; टाइप करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation type="unfinished">कृपया प्रविष्ट करा; “Ctrl+Enter” ओळ बदलण्यासाठी.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation type="unfinished">तुमचा प्रश्न प्रविष्ट करा, किंवा कमांड निवडण्यासाठी &quot;/&quot; प्रविष्ट करा
+नवीन ओळ सुरू करण्यासाठी &quot;Ctrl+Enter&quot;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
+        <source>Search complete.</source>
+        <translation type="unfinished">शोध पूर्ण झाला.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
+        <source>Click to view results</source>
+        <translation type="unfinished">निकाल पाहण्यासाठी क्लिक करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
+        <source>edit</source>
+        <translation type="unfinished">संपादन</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <source>save</source>
+        <translation type="unfinished">जतन करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
+        <source>copy</source>
+        <translation type="unfinished">कॉपी करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <source>Thinking has stopped</source>
+        <translation type="unfinished">विचार थांबला आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
+        <source>Back to bottom</source>
+        <translation type="unfinished">परत खाली</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation type="unfinished">खोलवर विचार (%1 सेकंद)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">नवीन संभाषण</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
+        <source>History</source>
+        <translation type="unfinished">इतिहास</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
+        <source>No History Records</source>
+        <translation type="unfinished">कोणतेही इतिहास रेकॉर्ड नाहीत</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation type="unfinished">तुम्हाला खात्री आहे की संभाषण हटवायचे आहे? एकदा हटवल्यानंतर ते परत मिळणार नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation type="unfinished">या संभाषणात वापरलेला %1 एजंट हटवला गेला आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation type="unfinished">हे संभाषण पाहता येत नाही. ते पाहण्यासाठी, कृपया %1 एजंट स्थापित करा आणि पुन्हा प्रयत्न करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation type="unfinished">मूळ संभाषण मॉडेल हटवले गेले आहे. आम्ही तुमच्यासाठी नवीन मॉडेलवर स्विच केले आहे जेणेकरून तुम्ही संभाषण सुरू ठेवू शकता.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <source>Recommendations</source>
+        <translation type="unfinished">शिफारसी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <source>No Model</source>
+        <translation type="unfinished">मॉडेल नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation type="unfinished">कोणतेही मॉडेल उपलब्ध नाही. कृपया सेटिंग्जमध्ये मॉडेल स्थापित करा किंवा कॉन्फिगर करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation type="unfinished">कृपया तुमच्या निर्मितीसाठी सामग्रीचा विषय आणि आवश्यकता वर्णन करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation type="unfinished">कृपया तुम्हाला भाषांतर करायची असलेली सामग्री प्रविष्ट करा आणि लक्ष्य भाषा निर्दिष्ट करा. पूर्वनिर्धारित भाषांतर चिनी भाषेत केले जाते.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation type="unfinished">कृपया तुम्हाला प्रक्रिया करायच्या असलेला मजकूर प्रविष्ट करा आणि तुमच्या आवश्यकता निर्दिष्ट करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <source>New Agent Added</source>
+        <translation type="unfinished">नवीन एजंट जोडला गेला</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation type="unfinished">नवीन लेखन, मजकूर प्रक्रिया आणि भाषांतर एजंट जोडले गेले आहेत. आता ते तपासा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <source>Try it</source>
+        <translation type="unfinished">प्रयत्न करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <source>Write an article based on the following document:</source>
+        <translation type="unfinished">खालील दस्तऐवजावर आधारित लेख लिहा:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <source>Translate the following document into English:</source>
+        <translation type="unfinished">खालील दस्तऐवजाचे इंग्रजीमध्ये भाषांतर करा:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <source>Add Mcp Server</source>
+        <translation type="unfinished">MCP सर्व्हर जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <source>Add Server</source>
+        <translation type="unfinished">सर्व्हर जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <source>Add failed! Error reason:</source>
+        <translation type="unfinished">जोडणी अयशस्वी! त्रुटीचे कारण:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation type="unfinished">MCP वातावरण गहाळ आहे. कृपया 【UOS AI Agent】 स्थापित करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <source>Calling</source>
+        <translation type="unfinished">कॉल सुरू आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <source>Completed</source>
+        <translation type="unfinished">पूर्ण झाले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <source>Call Failed</source>
+        <translation type="unfinished">कॉल अयशस्वी</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <source>Cancelled</source>
+        <translation type="unfinished">रद्द केले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <source>params</source>
+        <translation type="unfinished">पॅरामीटर्स</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <source>result</source>
+        <translation type="unfinished">परिणाम</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">MCP सर्व्हरसाठी अधिकृत प्रकाशित केलेल्या &quot;DeepSeek-Trial Account&quot; मॉडेलवर स्विच करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation type="unfinished">MCP सर्व्हर कमांड टाका, उदा. &quot;माझ्यासाठी सिस्टम डार्क मोडमध्ये बदला&quot;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
+        <source>Agent server is not available</source>
+        <translation type="unfinished">एजंट सर्व्हर उपलब्ध नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
+        <source>Agent server exception</source>
+        <translation type="unfinished">एजंट सर्व्हर अपवाद</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <source>MCP server is not available</source>
+        <translation type="unfinished">MCP सर्व्हर उपलब्ध नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation type="unfinished">एकाच कमांडने MCP सेवेचा वापर करून बहु-फाइल व बहु-ऍप कार्ये स्वयंचलित करा. आत्ताच प्रयत्न करा!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <source>Use later</source>
+        <translation type="unfinished">नंतर वापरा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <source>Enable MCP Server</source>
+        <translation type="unfinished">MCP सर्व्हर सक्षम करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation type="unfinished">MCP वातावरण &quot;UOS AI Agent&quot; स्थापित केल्यानंतर, </translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation type="unfinished"> वर क्लिक करा आणि MCP सर्व्हर यादीत &quot;uos-mcp&quot; निवडा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation type="unfinished">प्रयत्न करा: &quot;सिस्टम डार्क मोडमध्ये बदला&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <source>Try it now</source>
+        <translation type="unfinished">आत्ताच प्रयत्न करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation type="unfinished">MCP सर्व्हर जोडा [मार्गदर्शनपृष्ठ]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation type="unfinished">प्रथमच वापरणारे वापरकर्ते: अ‍ॅप स्टोरमधून MCP वातावरण &quot;UOS AI Agent&quot; स्थापित करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation type="unfinished">JSON फाइल स्वरूप चुकीचे आहे, कृपया तपासून पुन्हा सबमिट करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
+        <source>Install Now &gt;</source>
+        <translation type="unfinished">आत्ताच स्थापित करा &gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <source>General Chat</source>
+        <translation type="unfinished">सामान्य चॅट</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
+        <source>Now in Private Chat</source>
+        <translation type="unfinished">सध्या खाजगी चॅटमध्ये</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation type="unfinished">खाजगी चॅटमधील संदेश इतिहासात जतन केले जात नाहीत आणि तुम्ही चॅट सोडल्यावर ते कायमचे हटवले जातील.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation type="unfinished">स्क्रीनशॉट प्रश्नोत्तर शॉर्टकट (Ctrl+Alt+Q), कमाल ३ प्रतिमा समर्थित.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
+        <source>Cannot be used during screen recording</source>
+        <translation type="unfinished">स्क्रीन रेकॉर्डिंग सुरू असताना वापरता येणार नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
+        <source>You can upload up to 3 files or image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation type="unfinished">कृपया असामान्य फाइल हटवा आणि पुन्हा पाठवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
+        <source>Add Private Chat</source>
+        <translation type="unfinished">खाजगी चॅट जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation type="unfinished">[स्क्रीनशॉट प्रश्नोत्तर] जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation type="unfinished">स्क्रीनशॉट घ्या आणि सामग्री UOS AI कडे पाठवा. तुम्ही थेट प्रतिमाही अपलोड करू शकता.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
+        <source>OK</source>
+        <translation type="unfinished">ठीक आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
+        <source>Next</source>
+        <translation type="unfinished">पुढे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation type="unfinished">[खाजगी चॅट मोड] जोडा – संभाषणे जतन केली जाणार नाहीत.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
+        <source>No text extracted</source>
+        <translation type="unfinished">कोणताही मजकूर काढलेला नाही</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
+        <source>Image size exceeds 15 MB</source>
+        <translation type="unfinished">प्रतिमेचा आकार १५ MB पेक्षा जास्त आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation type="unfinished">नॉलेज बेस सुरू केल्यानंतर उत्तरे त्याच्या सामग्रीवर आधारित असतील. प्रतिसाद वेग मशीनच्या कार्यक्षमतेवर आणि नॉलेज बेसच्या आकारावर अवलंबून असतो.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation type="unfinished">कोणताही कमांड किंवा MCP निवडले असता नॉलेज बेस उपलब्ध नसते</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation type="unfinished">नॉलेज बेस सक्रिय असताना MCP अक्षम केले जाते</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation type="unfinished">नॉलेज बेस सक्रिय असताना कमांड्स अक्षम केल्या जातात</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
+        <source>Copy succeeded.</source>
+        <translation type="unfinished">कॉपी यशस्वी झाली.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
+        <source>Copy failed. Please try again.</source>
+        <translation type="unfinished">कॉपी अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
+        <source>Searching</source>
+        <translation type="unfinished">शोधत आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation type="unfinished">%1 संदर्भ दस्तऐवज प्राप्त झाले आहेत (%2s)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
+        <source>Clear History</source>
+        <translation type="unfinished">इतिहास साफ करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
+        <source>Delete all records?</source>
+        <translation type="unfinished">सर्व नोंदी हटवायच्या आहेत का?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation type="unfinished">एकदा हटवल्यावर सामग्री परत मिळवता येणार नाही!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
+        <source>Recommend official models</source>
+        <translation type="unfinished">अधिकृत मॉडेल्स शिफारस करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
+        <source>Disable MCP</source>
+        <translation type="unfinished">MCP अक्षम करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">&quot;DeepSeek-Trial Account&quot; हे अधिकृत मॉडेल वापरण्याची शिफारस केली आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
+        <source>Quick Open</source>
+        <translation type="unfinished">झटपट उघडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation type="unfinished">MCP सर्व्हर ऑटोमॅटिक मोडमध्ये अपग्रेड करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation type="unfinished">MCP सर्व्हर ऑटोमॅटिक मोडमध्ये अपग्रेड झाले आहे, ज्यामुळे तुम्ही सर्व MCP सर्व्हर फक्त एका क्लिकने प्रवेश करू शकता</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation type="unfinished">. यामुळे सिस्टम सेटअप आणि फाइल प्रोसेसिंगसारखे कार्य एकाच क्लिकने ऑटोमेट करता येतात.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation type="unfinished">MCP सर्व्हर जोडणे आता सेटिंग्जमध्ये हलवले आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation type="unfinished">अधिक MCP सर्व्हर जोडण्यासाठी, सेटिंग्ज &gt; MCP सर्व्हर येथे जा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
+        <source>Got it</source>
+        <translation type="unfinished">समजले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
+        <source>Complimentary Model Credits</source>
+        <translation type="unfinished">विनामूल्य मॉडेल क्रेडिट्स</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation type="unfinished">सध्याच्या प्रणालीमध्ये डीपसीक ट्रायल खाते मॉडेल उपलब्ध आहे, जे दर महिन्याच्या सुरुवातीला विनामूल्य कोटा आपोआप पुन्हा भरते, ज्यामुळे तुम्ही निश्चिंतपणे वापरू शकता.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">क्रेडिट्स मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">विनामूल्य खाते मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
+        <source>Claim Free Credits</source>
+        <translation type="unfinished">विनामूल्य क्रेडिट्स मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">यशस्वीरित्या मिळवले</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">मिळविण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
+        <source>Enable MCP Server&amp;</source>
+        <translation type="unfinished">एमसीपी सर्वर सक्षम करा&amp;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
+        <source>Disable MCP Server</source>
+        <translation type="unfinished">एमसीपी सर्वर अक्षम करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
+        <source>Configure MCP Server</source>
+        <translation type="unfinished">एमसीपी सर्वर कॉन्फिगर करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI फॉलोअलॉंग/लिहा</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemControlInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="23"/>
         <source>System Control</source>
-        <translation>सिस्टम नियंत्रण</translation>
+        <translation type="vanished">सिस्टम नियंत्रण</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="25"/>
         <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation>नवीन वॉलपेपरवर स्विच करा. स्क्रीनची चमक 30% वर सेट करा...</translation>
+        <translation type="vanished">नवीन वॉलपेपरवर स्विच करा. स्क्रीनची चमक 30% वर सेट करा...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::TtsCompositeWidget</name>
+    <message>
+        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
+        <source>The text you have selected has exceeded the 5000 character limit.</source>
+        <translation type="unfinished">तुम्ही निवडलेला मजकूर 5000 वर्णांच्या मर्यादेपेक्षा जास्त आहे.</translation>
     </message>
 </context>
 <context>
@@ -6255,6 +8795,101 @@ json
         <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>नेटवर्क ऑफलाइन आहे, मजकूर ते भाषण थांबवा</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSAbilityManager</name>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
+        <source>Brightness is already at maximum and cannot be increased further.</source>
+        <translation type="unfinished">ब्राइटनेस आधीच जास्तीत जास्त आहे आणि त्याला आणखी वाढवता येत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
+        <source>Brightness is already at minimum and cannot be decreased further.</source>
+        <translation type="unfinished">ब्राइटनेस आधीच किमान आहे आणि त्याला आणखी कमी करता येत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
+        <source>AI Meeting Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
+        <source>Your system memory is %0.</source>
+        <translation type="unfinished">तुमची सिस्टम मेमरी %0 आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
+        <source>The language setting interface has been opened. Please set it in this interface.</source>
+        <translation type="unfinished">भाषा सेटिंग इंटरफेस उघडले आहे. कृपया या इंटरफेसमध्ये सेट करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
+        <source>The current mode is already %1 mode.</source>
+        <translation type="unfinished">सध्याचा मोड आधीच %1 मोड आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
+        <source>Unable to close because the current mode %1 does not match the target mode.</source>
+        <translation type="unfinished">बंद करणे शक्य नाही कारण सध्याचा मोड %1 लक्ष्य मोडशी जुळत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
+        <source>Balance mode cannot be turned off.</source>
+        <translation type="unfinished">बॅलन्स मोड बंद करता येत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
+        <source>The lock screen has been opened for you</source>
+        <translation type="unfinished">तुमच्यासाठी लॉक स्क्रीन उघडली आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
+        <source>Screen shotting or recording has been completed</source>
+        <translation type="unfinished">स्क्रीनशॉट किंवा रेकॉर्डिंग पूर्ण झाले आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
+        <source>Only one screen, can&apos;t switch screen mode.</source>
+        <translation type="unfinished">फक्त एक स्क्रीन, स्क्रीन मोड बदलू शकत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
+        <source>It is the same as the current display mode. Please try again.</source>
+        <translation type="unfinished">हे सध्याच्या डिस्प्ले मोडसारखेच आहे. कृपया पुन्हा प्रयत्न करा.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
+        <source>Only one screen, can&apos;t switch screen.</source>
+        <translation type="unfinished">फक्त एक स्क्रीन, स्क्रीन बदलू शकत नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
+        <source>Your command has been issued.</source>
+        <translation type="unfinished">तुमची आज्ञा जारी केली गेली आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
+        <source>Failed to rename file %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
+        <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
+Error details:
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
+        <source>Email client has been opened, please confirm to send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
+        <source>App store has been opened, preparing to install application: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6279,80 +8914,193 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::UserAgreementDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">मी पुष्टी करतो/करते की मी 18 वर्षांपेक्षा मोठा/मोठी आहे. मी मान्य करतो/करते आणि मान्य करतो/करते की अ‍ॅप्लिकेशनद्वारे मी पाठवलेली आणि प्राप्त केलेली सामग्री मोठ्या मॉडेल सेवा प्रदात्यासोबत थेट डेटा एक्सचेंज आहे आणि कंपनीशी काहीही संबंध नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::WelcomeDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">UOS AI मध्ये आपले स्वागत आहे</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
+        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
+        <translation type="unfinished">UOS AI, तुमचा स्मार्ट सहाय्यक, तुमची उत्पादकता सुधारण्यासाठी आणि उच्च-गुणवत्तेच्या कार्य अनुभवासाठी डिझाइन केलेला आहे.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">विनामूल्य खाते मिळवा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
+        <source>Add Model</source>
+        <translation type="unfinished">मॉडेल जोडा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
+        <source>Start using</source>
+        <translation type="unfinished">वापरास प्रारंभ करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">मी पुष्टी करतो की मी 18 वर्षांपेक्षा मोठा आहे. मी &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI वापरकर्ता करार&quot;&lt;/a&gt; स्वीकारतो आणि मान्य करतो, आणि अॅप्लिकेशनद्वारे मी पाठवलेली आणि प्राप्त केलेली सामग्री मोठ्या मॉडेल सेवा प्रदात्याशी थेट डेटा देवाणघेवाण आहे आणि कंपनीशी काहीही संबंध नाही.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished">ट्रायल खात्यांसाठी इंग्रजी सपोर्ट समाधानकारक नाही. आणि ट्रायल खात्याच्या वापराची संख्या आणि कालावधी मर्यादित आहे. कृपया वेळेवर तुमचे वैयक्तिक मॉडेल खाते कॉन्फिगर करा!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished">चाचणी सुरू करा</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="113"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
         <translation>हा अॅप रीस्टार्ट होईपर्यंत लपवा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>त्यास पुन्हा सक्षम करण्यासाठी &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;सेटिंग्ज&lt;/a&gt; मध्ये जा.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
         <translation>जोडलेली सामग्री 10 पेक्षा अधिक शब्दांची असावी</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>शोधा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>स्पष्ट करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>सारांश</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>भाषांतर करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
         <translation>लेखन सुरू ठेवा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>विस्तृत करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
         <translation>दुरुस्त करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
         <source>Add to the AI knowledge base</source>
         <translation>AI ज्ञानकोशात जोडा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="114"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>या अनुप्रयोगामध्ये अक्षम करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="115"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>जागतिकरित्या अक्षम करा</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="125"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>सानुकूल सेटिंग्ज</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
         <source>Polish</source>
         <translation>पॉलिश</translation>
     </message>
@@ -6360,12 +9108,11 @@ json
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI फॉलोअलॉंग</translation>
+        <translation type="vanished">UOS AI फॉलोअलॉंग</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>जोडले</translation>
     </message>

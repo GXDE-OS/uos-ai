@@ -1,23 +1,26 @@
 #include "ttssocketserver.h"
-#include "authweburl.h"
-#include "networkdefs.h"
+#include "network/authweburl.h"
 #include "ttscodetranslation.h"
+#include "global_key_define.h"
 
 #include <QTimer>
 #include <QRegularExpression>
 #include <QLoggingCategory>
+#include <QNetworkReply>
+#include <QJsonObject>
+#include <QJsonDocument>
 
-const int STATUS_LAST_FRAME     = 2;
+static const int STATUS_LAST_FRAME     = 2;
 
 Q_DECLARE_LOGGING_CATEGORY(logAudio)
+using namespace uos_ai;
 
-TtsSocketServer::TtsSocketServer(const QString &id, const AccountProxy &account, QObject *parent)
+TtsSocketServer::TtsSocketServer(const QString &id, const ProviderAccount &account, QObject *parent)
     : TtsServer(id, parent)
     , m_account(account)
 {
     qCDebug(logAudio) << "Initializing TTS socket server with ID:" << id;
-    m_account.socketProxy.socketProxyType = SocketProxyType::NO_PROXY;
-    m_web = AuthWebUrl::webSocket(m_account.socketProxy);
+    m_web = AuthWebUrl::webSocket();
 
     connect(m_web.data(), QOverload<QAbstractSocket::SocketError>::of(&QWebSocket::error), [ = ](QAbstractSocket::SocketError errorCode) {
         // 这里有时候正常对出了，服务器也要返回一个RemoteHostClosedError
@@ -27,14 +30,13 @@ TtsSocketServer::TtsSocketServer(const QString &id, const AccountProxy &account,
         }
 
         qCWarning(logAudio) << "WebSocket error:" << errorCode << m_web->errorString();
-        AIServer::ErrorType serverError = AIServer::socketErrorToAiServerError(static_cast<QAbstractSocket::SocketError>(errorCode));
-        QString errorMessage = TtsCodeTranslation::serverCodeTranslation(serverError, m_web->errorString());
+        QString errorMessage = TtsCodeTranslation::serverCodeTranslation(errorCode, m_web->errorString());
 
         // Qt组装的，去掉Qt起始信息
         if (errorMessage.startsWith("QWebSocketPrivate::processHandshake:"))
             errorMessage = errorMessage.mid(QString("QWebSocketPrivate::processHandshake:").length()).trimmed();
 
-        emit error(serverError, errorMessage);
+        emit error(errorCode, errorMessage);
     });
     connect(m_web.data(), &QWebSocket::textMessageReceived, this, &TtsSocketServer::onTextMessageReceived);
     connect(m_web.data(), &QWebSocket::disconnected, this, &TtsSocketServer::onDisconnected);
@@ -45,14 +47,16 @@ void TtsSocketServer::cancel()
 {
     clear();
     m_normalExit = true;
-    m_error = AIServer::OperationCanceledError;
+    m_error = QNetworkReply::OperationCanceledError;
     m_web->close(QWebSocketProtocol::CloseCodeNormal);
 }
 
 void TtsSocketServer::openServer()
 {
     if (m_web->state() != QAbstractSocket::ConnectedState) {
-        const QUrl &url = AuthWebUrl::createUrl("GET", "wss://tts-api.xfyun.cn/v2/tts", m_account.apiKey, m_account.apiSecret);
+        const QUrl &url = AuthWebUrl::createUrl("GET", "wss://tts-api.xfyun.cn/v2/tts",
+                                                m_account.auth.value(STR_KEY_API_KEY).toString(),
+                                                m_account.auth.value(STR_KEY_API_SECRET).toString());
         qCDebug(logAudio) << "Opening connection to:" << url.toString();
         m_web->open(url);
     }
@@ -70,7 +74,9 @@ void TtsSocketServer::sendText(const QString &text, bool isStart, bool isEnd)
     m_isEnd = isEnd;
 
     if (m_web->state() == QAbstractSocket::UnconnectedState) {
-        const QUrl &url = AuthWebUrl::createUrl("GET", "wss://tts-api.xfyun.cn/v2/tts", m_account.apiKey, m_account.apiSecret);
+        const QUrl &url = AuthWebUrl::createUrl("GET", "wss://tts-api.xfyun.cn/v2/tts",
+                                                m_account.auth.value(STR_KEY_API_KEY).toString(),
+                                                m_account.auth.value(STR_KEY_API_SECRET).toString());
         qCWarning(logAudio) << "WebSocket disconnected, attempting to reconnect to:" << url.toString();
         m_web->open(url);
     }
@@ -108,7 +114,7 @@ void TtsSocketServer::sendServer()
         data["text"] = QString::fromUtf8(text.toUtf8().toBase64());
 
         QJsonObject commonArgs;
-        commonArgs.insert("app_id", m_account.appId);
+        commonArgs.insert("app_id", m_account.auth.value(STR_KEY_APP_ID).toString());
 
         QJsonObject businessArgs;
         businessArgs.insert("aue", "raw");
@@ -177,6 +183,6 @@ void TtsSocketServer::onTextMessageReceived(const QString &message)
         }
     } else {
         qWarning() << "TtsSocketServer code = " << code << " message = " << errorMessage;
-        emit error(AIServer::ContentAccessDenied, TtsCodeTranslation::serverCodeTranslation(code, errorMessage));
+        emit error(QNetworkReply::ContentAccessDenied, TtsCodeTranslation::serverCodeTranslation(code, errorMessage));
     }
 }

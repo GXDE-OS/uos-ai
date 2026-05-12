@@ -4,515 +4,401 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="56"/>
         <source>Add model</source>
-        <translation>Voeg model by</translation>
+        <translation type="vanished">Voeg model by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="58"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="99"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
-        <translation>Vereis, voer asseblief in</translation>
+        <translation type="vanished">Vereis, voer asseblief in</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="107"/>
         <source>APIKey</source>
-        <translation>APISleutel</translation>
+        <translation type="vanished">APISleutel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="115"/>
         <source>APISecret</source>
-        <translation>APIGeheim</translation>
+        <translation type="vanished">APIGeheim</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
         <source>Account</source>
-        <translation>Rekening</translation>
+        <translation type="vanished">Rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Vereis om veelvuldige modelle te onderskei</translation>
+        <translation type="vanished">Vereis om veelvuldige modelle te onderskei</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
-        <translation>Opsioneel</translation>
+        <translation type="vanished">Opsioneel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="155"/>
         <source>Optional. The default address will be used if not filled in.</source>
-        <translation>Opsioneel. Die verstekadres sal gebruik word indien nie ingevul nie.</translation>
+        <translation type="vanished">Opsioneel. Die verstekadres sal gebruik word indien nie ingevul nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="161"/>
         <source>Models List</source>
-        <translation>Modellelys</translation>
+        <translation type="vanished">Modellelys</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="168"/>
         <source>Custom</source>
-        <translation>Pasgemaak</translation>
+        <translation type="vanished">Pasgemaak</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="529"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Kan nie aan die bediener koppel nie, gaan asseblief u netwerk na of probeer weer later.</translation>
+        <translation type="vanished">Kan nie aan die bediener koppel nie, gaan asseblief u netwerk na of probeer weer later.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="818"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>Vir volmaginstellings, gaan asseblief na stelselvolmaginstellings</translation>
+        <translation type="vanished">Vir volmaginstellings, gaan asseblief na stelselvolmaginstellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="821"/>
         <source>Go to settings</source>
-        <translation>Gaan na instellings</translation>
+        <translation type="vanished">Gaan na instellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="254"/>
         <source>Cancel</source>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="134"/>
         <source>Model Name</source>
-        <translation>Modelnaam</translation>
+        <translation type="vanished">Modelnaam</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
-        <translation>Domein</translation>
+        <translation type="vanished">Domein</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="256"/>
         <source>Confirm</source>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
-        <translation>Stoor het misluk, probeer asseblief weer later</translation>
+        <translation type="vanished">Stoor het misluk, probeer asseblief weer later</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="725"/>
         <source>The account name already exists, please change it</source>
-        <translation>Die rekeningnaam bestaan reeds, verander dit asseblief</translation>
+        <translation type="vanished">Die rekeningnaam bestaan reeds, verander dit asseblief</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="367"/>
         <source>No more than 20 characters</source>
-        <translation>Nie meer as 20 karakters nie</translation>
+        <translation type="vanished">Nie meer as 20 karakters nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="202"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>Om te toets of die model beskikbaar is, stuur die stelsel toetsinligting na die groot model, wat &apos;n klein hoeveelheid tokens sal verbruik.</translation>
+        <translation type="vanished">Om te toets of die model beskikbaar is, stuur die stelsel toetsinligting na die groot model, wat &apos;n klein hoeveelheid tokens sal verbruik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="460"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>Hierdie LLM bestaan reeds, moenie dit weer byvoeg nie.</translation>
+        <translation type="vanished">Hierdie LLM bestaan reeds, moenie dit weer byvoeg nie.</translation>
     </message>
 </context>
 <context>
     <name>AiCodeTranslation</name>
     <message>
-        <location filename="../src/llm/openai/aicodetranslation.cpp" line="9"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Daar is tans te veel besoekers, probeer asseblief weer later.</translation>
+        <translation type="vanished">Daar is tans te veel besoekers, probeer asseblief weer later.</translation>
     </message>
 </context>
 <context>
     <name>AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="184"/>
         <source>type</source>
-        <translation>tipe</translation>
+        <translation type="vanished">tipe</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="283"/>
         <source>Cancel</source>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="308"/>
         <source>Read Aloud</source>
-        <translation>Lees Hardop</translation>
+        <translation type="vanished">Lees Hardop</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
-        <translation>Die oudio-toestel word nie opgespoor nie, gaan dit na en probeer weer.</translation>
+        <translation type="vanished">Die oudio-toestel word nie opgespoor nie, gaan dit na en probeer weer.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="367"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
+        <translation type="vanished">Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="336"/>
         <source>Copy</source>
-        <translation>Kopieer</translation>
+        <translation type="vanished">Kopieer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1379"/>
         <source>Polish this passage for me and just give me the result without any extra content.
 text：</source>
-        <translation>Maak hierdie gedeelte vir my skoon en gee net die resultaat sonder enige ekstra inhoud.
+        <translation type="vanished">Maak hierdie gedeelte vir my skoon en gee net die resultaat sonder enige ekstra inhoud.
 
 teks:</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
-        <translation>Huidige model: </translation>
+        <translation type="vanished">Huidige model: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="329"/>
         <source>Regenerate</source>
-        <translation>Hergenereer</translation>
+        <translation type="vanished">Hergenereer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="107"/>
         <source>simplified Chinese</source>
-        <translation>vereenvoudigde Chinees</translation>
+        <translation type="vanished">vereenvoudigde Chinees</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="108"/>
         <source>traditional Chinese</source>
-        <translation>tradisionele Chinees</translation>
+        <translation type="vanished">tradisionele Chinees</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="109"/>
         <source>Tibetan</source>
-        <translation>Tibettaans</translation>
+        <translation type="vanished">Tibettaans</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="110"/>
         <source>English</source>
-        <translation>Engels</translation>
+        <translation type="vanished">Engels</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="111"/>
         <source>Japanese </source>
-        <translation>Japannees </translation>
+        <translation type="vanished">Japannees </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="112"/>
         <source>German</source>
-        <translation>Duits</translation>
+        <translation type="vanished">Duits</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="113"/>
         <source>Spanish</source>
-        <translation>Spaans</translation>
+        <translation type="vanished">Spaans</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="114"/>
         <source>French</source>
-        <translation>Frans</translation>
+        <translation type="vanished">Frans</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="115"/>
         <source>Italian</source>
-        <translation>Italiaans</translation>
+        <translation type="vanished">Italiaans</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="116"/>
         <source>Korean</source>
-        <translation>Koreaans</translation>
+        <translation type="vanished">Koreaans</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="117"/>
         <source>Malay</source>
-        <translation>Maleis</translation>
+        <translation type="vanished">Maleis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="118"/>
         <source>Portuguese</source>
-        <translation>Portugees</translation>
+        <translation type="vanished">Portugees</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="119"/>
         <source>Russian</source>
-        <translation>Russies</translation>
+        <translation type="vanished">Russies</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="120"/>
         <source>Thai</source>
-        <translation>Thai</translation>
+        <translation type="vanished">Thai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="121"/>
         <source>Vietnamese</source>
-        <translation>Viëtnamees</translation>
+        <translation type="vanished">Viëtnamees</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="354"/>
         <source>Continue Dialog</source>
-        <translation>Gaan voort met Dialog</translation>
+        <translation type="vanished">Gaan voort met Dialog</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="403"/>
         <source>Automatic Detection</source>
-        <translation>Outomatiese Bespeuring</translation>
+        <translation type="vanished">Outomatiese Bespeuring</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="479"/>
         <source>Search</source>
-        <translation>Soek</translation>
+        <translation type="vanished">Soek</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
-        <translation>Verduidelik</translation>
+        <translation type="vanished">Verduidelik</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
-        <translation>Vertaal</translation>
+        <translation type="vanished">Vertaal</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
-        <translation>Brei uit</translation>
+        <translation type="vanished">Brei uit</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
-        <translation>Korrigeer</translation>
+        <translation type="vanished">Korrigeer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="506"/>
         <source>Add to the AI knowledge base</source>
-        <translation>Voeg by die KI-kennisbank</translation>
+        <translation type="vanished">Voeg by die KI-kennisbank</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="991"/>
         <source>Added</source>
-        <translation>Bygevoeg</translation>
+        <translation type="vanished">Bygevoeg</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1258"/>
         <source>Model Configuration</source>
-        <translation>Model Konfigurasie</translation>
+        <translation type="vanished">Model Konfigurasie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1310"/>
         <source>Copied</source>
-        <translation>Gekopieer</translation>
+        <translation type="vanished">Gekopieer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
-        <translation>Geen teks herken nie.</translation>
+        <translation type="vanished">Geen teks herken nie.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1981"/>
         <source>The added content must be more than 10 words</source>
-        <translation>Die bygevoegde inhoud moet meer as 10 woorde wees</translation>
+        <translation type="vanished">Die bygevoegde inhoud moet meer as 10 woorde wees</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
-        <translation>Opsomming</translation>
+        <translation type="vanished">Opsomming</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="315"/>
         <source>Paste to Text</source>
-        <translation>Plak na Teks</translation>
+        <translation type="vanished">Plak na Teks</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
-        <translation>Gaan voort met skryf</translation>
+        <translation type="vanished">Gaan voort met skryf</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
-        <translation>Poleer</translation>
+        <translation type="vanished">Poleer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="613"/>
         <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation>Die vertalingsresultaat word beperk deur die model se vermoëns. As jy nie tevrede is met die vertaling nie, skakel asseblief na ander modelle op die UOS AI-tuisblad.</translation>
+        <translation type="vanished">Die vertalingsresultaat word beperk deur die model se vermoëns. As jy nie tevrede is met die vertaling nie, skakel asseblief na ander modelle op die UOS AI-tuisblad.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
-        <translation>Vertaal hierdie teks in %1 en gee my direk &apos;n duidelike resultaat.
+        <translation type="vanished">Vertaal hierdie teks in %1 en gee my direk &apos;n duidelike resultaat.
 teks：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="799"/>
         <source>Not clickable</source>
-        <translation>Nie klikbaar nie</translation>
+        <translation type="vanished">Nie klikbaar nie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="907"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
-        <translation>Die funksie kan slegs gebruik word nadat die insetmetode herbegin is. Die handleiding is soos volg:
+        <translation type="vanished">Die funksie kan slegs gebruik word nadat die insetmetode herbegin is. Die handleiding is soos volg:
 
 1. Klik regs op die insetmetode-ikoon in die taakbalk.
 
 2. Klik &quot;Herbegin&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
-        <translation>Ok</translation>
+        <translation type="vanished">Ok</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="925"/>
         <source>Fill failed</source>
-        <translation>Vul het misluk</translation>
+        <translation type="vanished">Vul het misluk</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="926"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>Geen invoerkis gekies nie, kies asseblief die invoerkis en vul dit weer in.</translation>
+        <translation type="vanished">Geen invoerkis gekies nie, kies asseblief die invoerkis en vul dit weer in.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
-        <translation>Ok</translation>
+        <translation type="vanished">Ok</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1335"/>
         <source>Explain this passage in plain language. Just give me a clear result without redundant content.
 text：</source>
-        <translation>Verduidelik hierdie teks in eenvoudige taal. Gee my net &apos;n duidelike resultaat sby oorbodige inhoud.
+        <translation type="vanished">Verduidelik hierdie teks in eenvoudige taal. Gee my net &apos;n duidelike resultaat sby oorbodige inhoud.
 
 teks：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1340"/>
         <source>Summarize this passage and give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>Vat hierdie teks saam en gee my direk &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+        <translation type="vanished">Vat hierdie teks saam en gee my direk &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
 
 teks：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
         <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>Gaan voort met hierdie teks op &apos;n gepaste manier. Geen behoefte aan baie woorde nie. Gee my net &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+        <translation type="vanished">Gaan voort met hierdie teks op &apos;n gepaste manier. Geen behoefte aan baie woorde nie. Gee my net &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
 
 teks：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1369"/>
         <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>Brei hierdie teks op &apos;n gepaste manier uit. Geen behoefte aan &apos;n besonder lang teks nie. Gee my net &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+        <translation type="vanished">Brei hierdie teks op &apos;n gepaste manier uit. Geen behoefte aan &apos;n besonder lang teks nie. Gee my net &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
 
 teks：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1374"/>
         <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>Gaan na of daar enige tikfoute in hierdie teks is. As daar is, wys die ligging van die foute. Gee my direk &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+        <translation type="vanished">Gaan na of daar enige tikfoute in hierdie teks is. As daar is, wys die ligging van die foute. Gee my direk &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
 
 teks：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
-        <translation> &quot;%1&quot; </translation>
+        <translation type="vanished"> &quot;%1&quot; </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1673"/>
         <source>Currently no model</source>
-        <translation>Tans geen model nie</translation>
+        <translation type="vanished">Tans geen model nie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1690"/>
         <source>Go to configure  </source>
-        <translation>Gaan na instelling</translation>
+        <translation type="vanished">Gaan na instelling</translation>
     </message>
 </context>
 <context>
     <name>AiToastMessage</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="100"/>
         <source>Chat history cleared</source>
-        <translation>Gesprekgeskiedenis skoongemaak</translation>
+        <translation type="vanished">Gesprekgeskiedenis skoongemaak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="101"/>
         <source>Copied successfully</source>
-        <translation>Suksesvol gekopieër</translation>
+        <translation type="vanished">Suksesvol gekopieër</translation>
     </message>
 </context>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="60"/>
-        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
-        <translation>UOS KI</translation>
+        <translation type="vanished">UOS KI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS KI is &apos;n lessenaar slim assistent, jou persoonlike assistent! Jy kan daarmee kommunikeer deur teks of stem te gebruik, en dit kan help om vrae te beantwoord, inligting te verskaf en beelde te genereer gebaseer op jou beskrywings.</translation>
+        <translation type="vanished">UOS KI is &apos;n lessenaar slim assistent, jou persoonlike assistent! Jy kan daarmee kommunikeer deur teks of stem te gebruik, en dit kan help om vrae te beantwoord, inligting te verskaf en beelde te genereer gebaseer op jou beskrywings.</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="123"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS KI VolgSaam/Skryf</translation>
+        <translation type="vanished">UOS KI VolgSaam/Skryf</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
-        <translation>Kennisbasis Bestuur</translation>
+        <translation type="vanished">Kennisbasis Bestuur</translation>
     </message>
 </context>
 <context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="152"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>Kan nie aan die bediener koppel nie, gaan asseblief jou netwerk na of probeer weer later.</translation>
     </message>
@@ -520,1089 +406,869 @@ teks：</translation>
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
-        <source>The command was executed successfully.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
-        <source>Command execution failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
-        <translation>funksie ontleding het misluk</translation>
+        <translation type="vanished">funksie ontleding het misluk</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="252"/>
         <source>Application file does not exist</source>
-        <translation>Toepassingslêer bestaan nie</translation>
+        <translation type="vanished">Toepassingslêer bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
-        <translation>Suksesvol begin</translation>
+        <translation type="vanished">Suksesvol begin</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
-        <translation>Begin het misluk</translation>
+        <translation type="vanished">Begin het misluk</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="211"/>
-        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
-        <translation> Die uitvoerinhoud is </translation>
+        <translation type="vanished"> Die uitvoerinhoud is </translation>
     </message>
 </context>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
-        <translation>Modus</translation>
+        <translation type="vanished">Modus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
-        <translation>Venstermodus</translation>
+        <translation type="vanished">Venstermodus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
-        <translation>Sypaneelmodus</translation>
+        <translation type="vanished">Sypaneelmodus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
-        <translation>Instellings</translation>
+        <translation type="vanished">Instellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
-        <translation>Opdateringslog</translation>
+        <translation type="vanished">Opdateringslog</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
-        <translation>Stemgesprek</translation>
+        <translation type="vanished">Stemgesprek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
-        <translation>Verwyder</translation>
+        <translation type="vanished">Verwyder</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
-        <translation>Bevestig skrapping %1?</translation>
+        <translation type="vanished">Bevestig skrapping %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Na skrapping sal hierdie bediener onbeskikbaar wees. Gaan voort met omsigtigheid.</translation>
+        <translation type="vanished">Na skrapping sal hierdie bediener onbeskikbaar wees. Gaan voort met omsigtigheid.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
-        <translation type="unfinished">Opdateer</translation>
+        <translation type="obsolete">Opdateer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
-        <translation>Nie-gevektoriseerde inprop</translation>
+        <translation type="vanished">Nie-gevektoriseerde inprop</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation>Voordat jy die [KI-kennisbank] gebruik, moet jy eers die vektorisasie-inprop installeer, sodat die KI-kennisbank-funksie behoorlik kan werk.</translation>
+        <translation type="vanished">Voordat jy die [KI-kennisbank] gebruik, moet jy eers die vektorisasie-inprop installeer, sodat die KI-kennisbank-funksie behoorlik kan werk.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
-        <translation type="unfinished">Installeer</translation>
+        <translation type="obsolete">Installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
-        <translation>Die kennisbank is leeg</translation>
+        <translation type="vanished">Die kennisbank is leeg</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation>Voordat jy die [KI-kennisbank] gebruik, moet jy eers dokumente by die kennisbank voeg. Nadat jy dit bygevoeg het, sal die KI vrae beantwoord op grond van die inhoud wat jy by die kennisbank gevoeg het.</translation>
+        <translation type="vanished">Voordat jy die [KI-kennisbank] gebruik, moet jy eers dokumente by die kennisbank voeg. Nadat jy dit bygevoeg het, sal die KI vrae beantwoord op grond van die inhoud wat jy by die kennisbank gevoeg het.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
-        <translation>Voeg lêers by</translation>
+        <translation type="vanished">Voeg lêers by</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
-        <translation>Die volgende lêer het verval en kan nie gebruik word nie. Gaan voort?</translation>
+        <translation type="vanished">Die volgende lêer het verval en kan nie gebruik word nie. Gaan voort?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
-        <translation>Gebruik later</translation>
+        <translation type="vanished">Gebruik later</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
-        <translation>Installeer nou</translation>
+        <translation type="vanished">Installeer nou</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
-        <translation>MCP-omgewing ontbreek</translation>
+        <translation type="vanished">MCP-omgewing ontbreek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation>Gaan asseblief na die App Store om UOS KI-agent te installeer</translation>
+        <translation type="vanished">Gaan asseblief na die App Store om UOS KI-agent te installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
-        <translation>Nie Nou</translation>
+        <translation type="vanished">Nie Nou</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
-        <translation>Eis Krediete</translation>
+        <translation type="vanished">Eis Krediete</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
-        <translation>Gratis Krediete Afgelewer</translation>
+        <translation type="vanished">Gratis Krediete Afgelewer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>Jy het die gratis generasiekrediete vir jou proefrekening opgebruik. Ons het jou &apos;n ekstra 200 gratis krediete gegee wat hierdie maand geldig is. Verken meer funksies en ontgrendel UOS AI se grenslose vermoëns!</translation>
+        <translation type="vanished">Jy het die gratis generasiekrediete vir jou proefrekening opgebruik. Ons het jou &apos;n ekstra 200 gratis krediete gegee wat hierdie maand geldig is. Verken meer funksies en ontgrendel UOS AI se grenslose vermoëns!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation type="obsolete">OK</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
-        <translation>Suksesvol Geëis</translation>
+        <translation type="vanished">Suksesvol Geëis</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>Kon Nie Eis Nie. Probeer Weereens.</translation>
+        <translation type="vanished">Kon Nie Eis Nie. Probeer Weereens.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI is &apos;n slim bureaubladhulp, jou persoonlike assistent! Jy kan daarmee kommunikeer deur teks of stem te gebruik, en dit kan help om vrae te beantwoord, inligting te verskaf en beelde te genereer gebaseer op jou beskrywings.</translation>
+        <translation type="vanished">UOS AI is &apos;n slim bureaubladhulp, jou persoonlike assistent! Jy kan daarmee kommunikeer deur teks of stem te gebruik, en dit kan help om vrae te beantwoord, inligting te verskaf en beelde te genereer gebaseer op jou beskrywings.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
-        <translation>Lêerinligting</translation>
+        <translation type="vanished">Lêerinligting</translation>
     </message>
 </context>
 <context>
     <name>CodeTranslation360</name>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="9"/>
         <source>Authentication failed, insufficient balance</source>
-        <translation>Verifikasie het misluk, onvoldoende saldo</translation>
+        <translation type="vanished">Verifikasie het misluk, onvoldoende saldo</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="10"/>
         <source>Authentication failed, daily limit exceeded</source>
-        <translation>Verifikasie het misluk, daaglikse limiet oorskry</translation>
+        <translation type="vanished">Verifikasie het misluk, daaglikse limiet oorskry</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="11"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Daar is tans te veel besoekers, probeer asseblief later weer.</translation>
+        <translation type="vanished">Daar is tans te veel besoekers, probeer asseblief later weer.</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="12"/>
         <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation>Die diens is abnormaal. Kontak asseblief die ontwikkelspan vir foutopsporing.</translation>
+        <translation type="vanished">Die diens is abnormaal. Kontak asseblief die ontwikkelspan vir foutopsporing.</translation>
     </message>
 </context>
 <context>
     <name>CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="30"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation type="vanished">Fout</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="52"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>DocParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
+        <source>The document content is invalid or empty.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>EAiExecutor</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation>Die Persoonlike Kennisassistent kan slegs gebruik word nadat die kennisbasis opgestel is.</translation>
+        <translation type="vanished">Die Persoonlike Kennisassistent kan slegs gebruik word nadat die kennisbasis opgestel is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation>Die Persoonlike Kennisassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
+        <translation type="vanished">Die Persoonlike Kennisassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation>Die Diep Stelselassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
+        <translation type="vanished">Die Diep Stelselassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation>Die UOS Stelselassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
+        <translation type="vanished">Die UOS Stelselassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="427"/>
         <source>Knowledge Base Management</source>
-        <translation>Kennisbasisbestuur</translation>
+        <translation type="vanished">Kennisbasisbestuur</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="433"/>
         <source>MCP Server</source>
-        <translation type="unfinished">MCP-bediener</translation>
+        <translation type="obsolete">MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI vereis dat &apos;n AI-modelrekening opgestel word voordat dit gebruik kan word. Stel asseblief eers &apos;n modelrekening op.</translation>
+        <translation type="vanished">UOS AI vereis dat &apos;n AI-modelrekening opgestel word voordat dit gebruik kan word. Stel asseblief eers &apos;n modelrekening op.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1185"/>
         <source>Please configure the knowledge base.</source>
-        <translation>Stel asseblief die kennisbank op.</translation>
+        <translation type="vanished">Stel asseblief die kennisbank op.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1189"/>
         <source>Please install the model plug.</source>
-        <translation>Installeer asseblief die model-inprop.</translation>
+        <translation type="vanished">Installeer asseblief die model-inprop.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
-        <translation>Voer beeld uit as</translation>
+        <translation type="vanished">Voer beeld uit as</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
+        <source>Successfully Claimed</source>
+        <translation type="obsolete">Suksesvol Geëis</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="obsolete">Kon Nie Eis Nie. Probeer Weereens.</translation>
+    </message>
+    <message>
         <source>You can upload up to 3 files or image</source>
-        <translation>Jy kan tot 3 lêers of beelde oplaai</translation>
+        <translation type="vanished">Jy kan tot 3 lêers of beelde oplaai</translation>
     </message>
 </context>
 <context>
     <name>EAiFAQInit</name>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="17"/>
         <source>Translate the following text into English for me.</source>
-        <translation>Vertaal die volgende teks in Engels vir my.</translation>
+        <translation type="vanished">Vertaal die volgende teks in Engels vir my.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="23"/>
         <source>Translate the following document into Chinese.</source>
-        <translation>Vertaal die volgende dokument in Chinees.</translation>
+        <translation type="vanished">Vertaal die volgende dokument in Chinees.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="29"/>
         <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation>Wat beteken die woord “Agent” in die AI-bedryf?</translation>
+        <translation type="vanished">Wat beteken die woord “Agent” in die AI-bedryf?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="35"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation>Vertaal asseblief die volgende inhoud in Chinees. Vereistes: Akkuraat in betekenis, formeel en professioneel in taal.</translation>
+        <translation type="vanished">Vertaal asseblief die volgende inhoud in Chinees. Vereistes: Akkuraat in betekenis, formeel en professioneel in taal.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="41"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation>Wat is &apos;n paar informele maniere om &apos;n vriend in Engels aan te spreek?</translation>
+        <translation type="vanished">Wat is &apos;n paar informele maniere om &apos;n vriend in Engels aan te spreek?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="47"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation>Vertaal die volgende klassieke Chinese teks in moderne Chinees.</translation>
+        <translation type="vanished">Vertaal die volgende klassieke Chinese teks in moderne Chinees.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="60"/>
         <source>Summarize</source>
-        <translation>Samevat</translation>
+        <translation type="vanished">Samevat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="66"/>
         <source>Proofread</source>
-        <translation>Proeflees</translation>
+        <translation type="vanished">Proeflees</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="72"/>
         <source>Explain</source>
-        <translation>Verduidelik</translation>
+        <translation type="vanished">Verduidelik</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="78"/>
         <source>Expand</source>
-        <translation>Brei uit</translation>
+        <translation type="vanished">Brei uit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="84"/>
         <source>Continue</source>
-        <translation>Gaan voort</translation>
+        <translation type="vanished">Gaan voort</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="90"/>
         <source>Polish</source>
-        <translation>Verfyn</translation>
+        <translation type="vanished">Verfyn</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="104"/>
         <source>Please help me write a work summary based on this document</source>
-        <translation>Help my asseblief om &apos;n werkopsomming te skryf gebaseer op hierdie dokument</translation>
+        <translation type="vanished">Help my asseblief om &apos;n werkopsomming te skryf gebaseer op hierdie dokument</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="110"/>
         <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation>Ek het &apos;n werkopsomming nodig vir Projek A, help my asseblief om die sleutelpunte te organiseer</translation>
+        <translation type="vanished">Ek het &apos;n werkopsomming nodig vir Projek A, help my asseblief om die sleutelpunte te organiseer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="116"/>
         <source>Please generate a concise work summary based on my input text</source>
-        <translation>Genereer asseblief &apos;n bondige werkopsomming gebaseer op my invoerteks</translation>
+        <translation type="vanished">Genereer asseblief &apos;n bondige werkopsomming gebaseer op my invoerteks</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="122"/>
         <source>Analyze this report and extract key points for the work summary</source>
-        <translation>Ontleed hierdie verslag en haal sleutelpunte uit vir die werkopsomming</translation>
+        <translation type="vanished">Ontleed hierdie verslag en haal sleutelpunte uit vir die werkopsomming</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="128"/>
         <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation>Ek het &apos;n werkopsomming nodig wat kwartaaldata insluit, verwys asseblief na die aanhangsel</translation>
+        <translation type="vanished">Ek het &apos;n werkopsomming nodig wat kwartaaldata insluit, verwys asseblief na die aanhangsel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="134"/>
         <source>Help me write a work summary highlighting personal contributions</source>
-        <translation>Help my om &apos;n werkopsomming te skryf wat persoonlike bydraes uitlig</translation>
+        <translation type="vanished">Help my om &apos;n werkopsomming te skryf wat persoonlike bydraes uitlig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="140"/>
         <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation>Genereer &apos;n werkopsomming uit vergadernotas, met fokus op aksiepunte</translation>
+        <translation type="vanished">Genereer &apos;n werkopsomming uit vergadernotas, met fokus op aksiepunte</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="146"/>
         <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation>Ek het &apos;n tweetalige werkopsomming in Chinees en Engels nodig, verwys asseblief na die verskafte materiaal</translation>
+        <translation type="vanished">Ek het &apos;n tweetalige werkopsomming in Chinees en Engels nodig, verwys asseblief na die verskafte materiaal</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="152"/>
         <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation>Help my om verlede maand se werkinhoud te organiseer en &apos;n opsomming te genereer</translation>
+        <translation type="vanished">Help my om verlede maand se werkinhoud te organiseer en &apos;n opsomming te genereer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="158"/>
         <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation>Skryf &apos;n werkopsomming gebaseer op hierdie taaklyste, met klem op voltooiingstatus</translation>
+        <translation type="vanished">Skryf &apos;n werkopsomming gebaseer op hierdie taaklyste, met klem op voltooiingstatus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="165"/>
         <source>Check for grammatical errors in this passage</source>
-        <translation>Gaan na vir grammatikale foute in hierdie gedeelte</translation>
+        <translation type="vanished">Gaan na vir grammatikale foute in hierdie gedeelte</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="171"/>
         <source>Help me find spelling mistakes in this article</source>
-        <translation>Help my om spelfoute in hierdie artikel te vind</translation>
+        <translation type="vanished">Help my om spelfoute in hierdie artikel te vind</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="177"/>
         <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation>Korrigeer die onvanlike woordkeuses in hierdie dialoog</translation>
+        <translation type="vanished">Korrigeer die onvanlike woordkeuses in hierdie dialoog</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="183"/>
         <source>Fix the punctuation issues in this document</source>
-        <translation>Maak reg die leestekenskwessies in hierdie dokument</translation>
+        <translation type="vanished">Maak reg die leestekenskwessies in hierdie dokument</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="189"/>
         <source>Revise the unclear expressions in this text</source>
-        <translation>Hersien die onduidelike uitdrukkings in hierdie teks</translation>
+        <translation type="vanished">Hersien die onduidelike uitdrukkings in hierdie teks</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="195"/>
         <source>Edit the language errors in this email</source>
-        <translation>Redigeer die taalfoute in hierdie e-pos</translation>
+        <translation type="vanished">Redigeer die taalfoute in hierdie e-pos</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="201"/>
         <source>Check if this text follows standard English conventions</source>
-        <translation>Gaan na of hierdie teks standaard Engelse konvensies volg</translation>
+        <translation type="vanished">Gaan na of hierdie teks standaard Engelse konvensies volg</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="207"/>
         <source>Correct the logical flaws in this report</source>
-        <translation>Korrigeer die logiese foute in hierdie verslag</translation>
+        <translation type="vanished">Korrigeer die logiese foute in hierdie verslag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="213"/>
         <source>Identify language errors in this code comment</source>
-        <translation>Identifiseer taalfoute in hierdie kodekommentaar</translation>
+        <translation type="vanished">Identifiseer taalfoute in hierdie kodekommentaar</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="219"/>
         <source>Fix the ambiguous statements in this contract</source>
-        <translation>Maak reg die dubbelsinnige stellings in hierdie kontrak</translation>
+        <translation type="vanished">Maak reg die dubbelsinnige stellings in hierdie kontrak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="226"/>
         <source>Explain the basic principles of quantum computing</source>
-        <translation>Verduidelik die basiese beginsels van kwantumrekenaar</translation>
+        <translation type="vanished">Verduidelik die basiese beginsels van kwantumrekenaar</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="232"/>
         <source>Describe photosynthesis in simple terms</source>
-        <translation>Beskryf fotosintese in eenvoudige terme</translation>
+        <translation type="vanished">Beskryf fotosintese in eenvoudige terme</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="238"/>
         <source>Detail how blockchain technology works</source>
-        <translation>Beskryf in detail hoe blockchain-tegnologie werk</translation>
+        <translation type="vanished">Beskryf in detail hoe blockchain-tegnologie werk</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="244"/>
         <source>Explain relativity from a professional perspective</source>
-        <translation>Verduidelik relatiwiteit vanuit &apos;n professionele perspektief</translation>
+        <translation type="vanished">Verduidelik relatiwiteit vanuit &apos;n professionele perspektief</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="250"/>
         <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation>Gebruik metafore om te beskryf wat kunsmatige intelligensie is</translation>
+        <translation type="vanished">Gebruik metafore om te beskryf wat kunsmatige intelligensie is</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="256"/>
         <source>Describe climate change in layman&apos;s terms</source>
-        <translation>Beskryf klimaatsverandering in eenvoudige terme</translation>
+        <translation type="vanished">Beskryf klimaatsverandering in eenvoudige terme</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="262"/>
         <source>Explain the structure of the solar system to elementary students</source>
-        <translation>Verduidelik die struktuur van die sonnestelsel aan laerskoolleerlinge</translation>
+        <translation type="vanished">Verduidelik die struktuur van die sonnestelsel aan laerskoolleerlinge</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="269"/>
         <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation>Brei hierdie teks uit tot 300 woorde, met fokus op toneelbesonderhede en karakterse emosies</translation>
+        <translation type="vanished">Brei hierdie teks uit tot 300 woorde, met fokus op toneelbesonderhede en karakterse emosies</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="275"/>
         <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation>Herskryf hierdie paragraaf tot 500 woorde in &apos;n akademiese styl, met byvoeging van datasteun en aanhalings</translation>
+        <translation type="vanished">Herskryf hierdie paragraaf tot 500 woorde in &apos;n akademiese styl, met byvoeging van datasteun en aanhalings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="281"/>
         <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation>Brei hierdie gedeelte uit met meer metafore en retoriese middele om dit lewendiger te maak</translation>
+        <translation type="vanished">Brei hierdie gedeelte uit met meer metafore en retoriese middele om dit lewendiger te maak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="287"/>
         <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation>Verleng hierdie kort artikel tot 1000 woorde, met byvoeging van spesifieke gevalle en praktiese stappe</translation>
+        <translation type="vanished">Verleng hierdie kort artikel tot 1000 woorde, met byvoeging van spesifieke gevalle en praktiese stappe</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="293"/>
         <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation>Brei hierdie dialoog uit deur karakters se sielkundige aktiwiteite en dialoogbesonderhede by te voeg</translation>
+        <translation type="vanished">Brei hierdie dialoog uit deur karakters se sielkundige aktiwiteite en dialoogbesonderhede by te voeg</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="299"/>
         <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation>Herskryf die inhoud van hierdie dokument in &apos;n verslagformaat, insluitend opsomming, liggaam en gevolgtrekking</translation>
+        <translation type="vanished">Herskryf die inhoud van hierdie dokument in &apos;n verslagformaat, insluitend opsomming, liggaam en gevolgtrekking</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="305"/>
         <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation>Brei hierdie tegniese beskrywing uit tot 800 woorde, met byvoeging van meer tegniese parameters en diagramverduidelikings</translation>
+        <translation type="vanished">Brei hierdie tegniese beskrywing uit tot 800 woorde, met byvoeging van meer tegniese parameters en diagramverduidelikings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="311"/>
         <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation>Herskryf hierdie e-pos om meer formeel en professioneel te wees, met byvoeging van relevante agtergrondinligting</translation>
+        <translation type="vanished">Herskryf hierdie e-pos om meer formeel en professioneel te wees, met byvoeging van relevante agtergrondinligting</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="317"/>
         <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation>Brei hierdie storie uit tot 1500 woorde, met byvoeging van meer intriges en karakteragtergronde</translation>
+        <translation type="vanished">Brei hierdie storie uit tot 1500 woorde, met byvoeging van meer intriges en karakteragtergronde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="323"/>
         <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation>Brei hierdie opsomming uit, met beklemtoning van sleutelprestasies en toekomstige planne, woordtelling onbeperk</translation>
+        <translation type="vanished">Brei hierdie opsomming uit, met beklemtoning van sleutelprestasies en toekomstige planne, woordtelling onbeperk</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="330"/>
         <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation>Gaan voort met die skryf van hierdie kort gedeelte oor toekomstige tegnologie, met fokus op hoe AI die daaglikse lewe verander, ongeveer 300 woorde, in &apos;n populêre wetenskapstyl</translation>
+        <translation type="vanished">Gaan voort met die skryf van hierdie kort gedeelte oor toekomstige tegnologie, met fokus op hoe AI die daaglikse lewe verander, ongeveer 300 woorde, in &apos;n populêre wetenskapstyl</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="336"/>
         <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation>Help my om die laaste paragraaf van hierdie besigheidsplan uit te brei, met beklemtoning van markpotensiaal en mededingende voordele, geen woordlimiet nie, formele styl</translation>
+        <translation type="vanished">Help my om die laaste paragraaf van hierdie besigheidsplan uit te brei, met beklemtoning van markpotensiaal en mededingende voordele, geen woordlimiet nie, formele styl</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="342"/>
         <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation>Gaan voort met die einde van hierdie sprokie, warm en aangrypend, die hoofkarakter bereik hul droom, ongeveer 200 woorde</translation>
+        <translation type="vanished">Gaan voort met die einde van hierdie sprokie, warm en aangrypend, die hoofkarakter bereik hul droom, ongeveer 200 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="348"/>
         <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation>Skryf asseblief die tweede helfte van hierdie e-pos, toon vriendelik en professioneel, met fokus op samewerkingsbesonderhede, binne 150 woorde</translation>
+        <translation type="vanished">Skryf asseblief die tweede helfte van hierdie e-pos, toon vriendelik en professioneel, met fokus op samewerkingsbesonderhede, binne 150 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="354"/>
         <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation>Brei die volgende paragraaf van hierdie reisverhaal uit, met beskrywing van die natuurskoon in die vallei, lewendig en verbeeldingryk, ongeveer 200 woorde</translation>
+        <translation type="vanished">Brei die volgende paragraaf van hierdie reisverhaal uit, met beskrywing van die natuurskoon in die vallei, lewendig en verbeeldingryk, ongeveer 200 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="360"/>
         <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation>Gaan voort met die volgende hoofstuk van hierdie raaiselroman, met &apos;n intrige, terwyl spanning behou word, geen woordlimiet nie</translation>
+        <translation type="vanished">Gaan voort met die volgende hoofstuk van hierdie raaiselroman, met &apos;n intrige, terwyl spanning behou word, geen woordlimiet nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="366"/>
         <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation>Help my om die slot van hierdie toespraak te skryf, inspirerend en met beklemtoning van spanwerk, ongeveer 100 woorde</translation>
+        <translation type="vanished">Help my om die slot van hierdie toespraak te skryf, inspirerend en met beklemtoning van spanwerk, ongeveer 100 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="372"/>
         <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation>Brei die prestasiebeskrywing-afdeling van hierdie produkhandleiding uit, gedetailleerd en akkuraat, ongeveer 300 woorde</translation>
+        <translation type="vanished">Brei die prestasiebeskrywing-afdeling van hierdie produkhandleiding uit, gedetailleerd en akkuraat, ongeveer 300 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="378"/>
         <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation>Gaan voort met die begin van hierdie liefdesverhaal, afspeel in reënerige Parys, romantiese styl, 150 woorde</translation>
+        <translation type="vanished">Gaan voort met die begin van hierdie liefdesverhaal, afspeel in reënerige Parys, romantiese styl, 150 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="384"/>
         <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation>Skryf asseblief die besprekingsafdeling van hierdie referaat, met fokus op die beperkings van die eksperimentele resultaat, akademiese styl, geen woordlimiet nie</translation>
+        <translation type="vanished">Skryf asseblief die besprekingsafdeling van hierdie referaat, met fokus op die beperkings van die eksperimentele resultaat, akademiese styl, geen woordlimiet nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="391"/>
         <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation>Maak hierdie teks asseblief meer formeel en professioneel vir &apos;n besigheidse-pos</translation>
+        <translation type="vanished">Maak hierdie teks asseblief meer formeel en professioneel vir &apos;n besigheidse-pos</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="397"/>
         <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation>Herskryf hierdie gedeelte om lewendiger en boeiender te wees vir sosiale media-plasings</translation>
+        <translation type="vanished">Herskryf hierdie gedeelte om lewendiger en boeiender te wees vir sosiale media-plasings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="403"/>
         <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation>Ek moet die opsomming van hierdie akademiese referaat verfyn om meer bondig en duidelik te wees binne 200 woorde</translation>
+        <translation type="vanished">Ek moet die opsomming van hierdie akademiese referaat verfyn om meer bondig en duidelik te wees binne 200 woorde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="409"/>
         <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation>Verfyn hierdie dialoog om meer natuurlik en vlot te wees vir gesproke kommunikasie</translation>
+        <translation type="vanished">Verfyn hierdie dialoog om meer natuurlik en vlot te wees vir gesproke kommunikasie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="415"/>
         <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation>Verbeter hierdie produkbeskrywing om sy premium en innoverende kenmerke vir potensiële kliënte uit te lig</translation>
+        <translation type="vanished">Verbeter hierdie produkbeskrywing om sy premium en innoverende kenmerke vir potensiële kliënte uit te lig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="421"/>
         <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation>Help my om hierdie aanbevelingsbrief te verfyn om meer oortuigend en persoonlik te wees</translation>
+        <translation type="vanished">Help my om hierdie aanbevelingsbrief te verfyn om meer oortuigend en persoonlik te wees</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="427"/>
         <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation>Herskryf hierdie blogpos om meer humoristies en aantreklik vir jong lesers te wees</translation>
+        <translation type="vanished">Herskryf hierdie blogpos om meer humoristies en aantreklik vir jong lesers te wees</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="433"/>
         <source>Refine the opening section of this report to make it more captivating</source>
-        <translation>Verfyn die openingsafdeling van hierdie verslag om dit meer boeiend te maak</translation>
+        <translation type="vanished">Verfyn die openingsafdeling van hierdie verslag om dit meer boeiend te maak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="439"/>
         <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation>Ek moet hierdie tegniese dokument opknap om dit meer toeganklik te maak vir nie-kundiges</translation>
+        <translation type="vanished">Ek moet hierdie tegniese dokument opknap om dit meer toeganklik te maak vir nie-kundiges</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="445"/>
         <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation>Help my asseblief om hierdie verskoningbrief te herskryf om meer opreg en toepaslik te klink</translation>
+        <translation type="vanished">Help my asseblief om hierdie verskoningbrief te herskryf om meer opreg en toepaslik te klink</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="458"/>
         <source>Articles</source>
-        <translation>Artikels</translation>
+        <translation type="vanished">Artikels</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="464"/>
         <source>Speeches</source>
-        <translation>Toesprake</translation>
+        <translation type="vanished">Toesprake</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="470"/>
         <source>Outlines</source>
-        <translation>Uiteensettings</translation>
+        <translation type="vanished">Uiteensettings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="476"/>
         <source>Notifications</source>
-        <translation>Kennisgewings</translation>
+        <translation type="vanished">Kennisgewings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="482"/>
         <source>Posts</source>
-        <translation>Posisies</translation>
+        <translation type="vanished">Posisies</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="488"/>
         <source>Work Report</source>
-        <translation>Werkverslag</translation>
+        <translation type="vanished">Werkverslag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="494"/>
         <source>Research Report</source>
-        <translation>Navorsingsverslag</translation>
+        <translation type="vanished">Navorsingsverslag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="508"/>
         <source>Please summarize the key points of this document</source>
-        <translation>Som asseblief die sleutelpunte van hierdie dokument op</translation>
+        <translation type="vanished">Som asseblief die sleutelpunte van hierdie dokument op</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="514"/>
         <source>List the main ideas of this file for me</source>
-        <translation>Lys die hoofidees van hierdie lêer vir my</translation>
+        <translation type="vanished">Lys die hoofidees van hierdie lêer vir my</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="520"/>
         <source>Summarize the core idea of this passage</source>
-        <translation>Som die kernidee van hierdie gedeelte op</translation>
+        <translation type="vanished">Som die kernidee van hierdie gedeelte op</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="526"/>
         <source>Use concise language to summarize this article</source>
-        <translation>Gebruik bondige taal om hierdie artikel op te som</translation>
+        <translation type="vanished">Gebruik bondige taal om hierdie artikel op te som</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="532"/>
         <source>I need a summary of this report, no more than 200 words</source>
-        <translation>Ek het &apos;n opsomming van hierdie verslag nodig, nie meer as 200 woorde nie</translation>
+        <translation type="vanished">Ek het &apos;n opsomming van hierdie verslag nodig, nie meer as 200 woorde nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="538"/>
         <source>Extract the main data and conclusions from this document</source>
-        <translation>Onttrek die hoofdata en gevolgtrekkings uit hierdie dokument</translation>
+        <translation type="vanished">Onttrek die hoofdata en gevolgtrekkings uit hierdie dokument</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="544"/>
         <source>Summarize the main sections and points of this lengthy content</source>
-        <translation>Som die hoofafdelings en punte van hierdie lang inhoud op</translation>
+        <translation type="vanished">Som die hoofafdelings en punte van hierdie lang inhoud op</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="550"/>
         <source>Help me summarize the research methods and findings of this paper</source>
-        <translation>Help my om die navorsingsmetodes en bevindings van hierdie artikel op te som</translation>
+        <translation type="vanished">Help my om die navorsingsmetodes en bevindings van hierdie artikel op te som</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="556"/>
         <source>Please summarize the key points of this article in a table format</source>
-        <translation>Som asseblief die sleutelpunte van hierdie artikel in tabelformaat op</translation>
+        <translation type="vanished">Som asseblief die sleutelpunte van hierdie artikel in tabelformaat op</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="562"/>
         <source>Summarize the operational steps in this file using bullet points</source>
-        <translation>Som die operasionele stappe in hierdie lêer op met kolpunte</translation>
+        <translation type="vanished">Som die operasionele stappe in hierdie lêer op met kolpunte</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="568"/>
         <source>Display the key clauses of this contract in bullet list format</source>
-        <translation>Vertoon die sleutelklousules van hierdie kontrak in kolpuntlysformaat</translation>
+        <translation type="vanished">Vertoon die sleutelklousules van hierdie kontrak in kolpuntlysformaat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="575"/>
         <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation>Skep &apos;n uiteensetting vir &apos;n verslag oor KI-tendense, wat tegnologie, etiek en toepassings insluit</translation>
+        <translation type="vanished">Skep &apos;n uiteensetting vir &apos;n verslag oor KI-tendense, wat tegnologie, etiek en toepassings insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="581"/>
         <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation>Organiseer die opgelaaide artikel in &apos;n gestruktureerde navorsingsraamwerk-uiteensetting</translation>
+        <translation type="vanished">Organiseer die opgelaaide artikel in &apos;n gestruktureerde navorsingsraamwerk-uiteensetting</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="587"/>
         <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation>Ek het &apos;n sakeplan-uiteensetting nodig wat markontleding, produkbeskrywing en finansiële beplanning insluit</translation>
+        <translation type="vanished">Ek het &apos;n sakeplan-uiteensetting nodig wat markontleding, produkbeskrywing en finansiële beplanning insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="593"/>
         <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation>Skat hierdie toespraak om in &apos;n PowerPoint-uiteensetting met kolpunte vir elke afdeling</translation>
+        <translation type="vanished">Skat hierdie toespraak om in &apos;n PowerPoint-uiteensetting met kolpunte vir elke afdeling</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="599"/>
         <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation>Skryf &apos;n boekopsommings-uiteensetting wat sleutelpunte en my persoonlike beskouings insluit</translation>
+        <translation type="vanished">Skryf &apos;n boekopsommings-uiteensetting wat sleutelpunte en my persoonlike beskouings insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="605"/>
         <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation>Som die vergadernotaslêer op in &apos;n projekuitvoeringsplan-uiteensetting</translation>
+        <translation type="vanished">Som die vergadernotaslêer op in &apos;n projekuitvoeringsplan-uiteensetting</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="611"/>
         <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation>Ek het &apos;n tesis-hoofstuk-uiteensetting nodig wat inleiding, literatuuroorsig en metodologie insluit</translation>
+        <translation type="vanished">Ek het &apos;n tesis-hoofstuk-uiteensetting nodig wat inleiding, literatuuroorsig en metodologie insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="617"/>
         <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation>Skep &apos;n produkvereistesdokument (PRD)-uiteensetting met funksiebeskrywings en gebruikersvloeie</translation>
+        <translation type="vanished">Skep &apos;n produkvereistesdokument (PRD)-uiteensetting met funksiebeskrywings en gebruikersvloeie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="623"/>
         <source>Extract key data from this industry report to make a summary outline</source>
-        <translation>Onttrek sleuteldata uit hierdie bedryfsverslag om &apos;n opsommings-uiteensetting te maak</translation>
+        <translation type="vanished">Onttrek sleuteldata uit hierdie bedryfsverslag om &apos;n opsommings-uiteensetting te maak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="629"/>
         <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation>Skryf &apos;n gebeurtenisbeplanning-uiteensetting wat skedule, spanrolle en begroting insluit</translation>
+        <translation type="vanished">Skryf &apos;n gebeurtenisbeplanning-uiteensetting wat skedule, spanrolle en begroting insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="636"/>
         <source>Generate a three-level outline from this document</source>
-        <translation>Genereer &apos;n drie-vlak uiteensetting uit hierdie dokument</translation>
+        <translation type="vanished">Genereer &apos;n drie-vlak uiteensetting uit hierdie dokument</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="642"/>
         <source>Extract core framework from meeting notes</source>
-        <translation>Onttrek kernraamwerk uit vergadernotas</translation>
+        <translation type="vanished">Onttrek kernraamwerk uit vergadernotas</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="648"/>
         <source>Organize research report structure</source>
-        <translation>Organiseer navorsingsverslagstruktuur</translation>
+        <translation type="vanished">Organiseer navorsingsverslagstruktuur</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="654"/>
         <source>Create product feature overview</source>
-        <translation>Skep produkkenmerk-oorsig</translation>
+        <translation type="vanished">Skep produkkenmerk-oorsig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="660"/>
         <source>Design training course syllabus</source>
-        <translation>Ontwerp opleidingskursus-leerplan</translation>
+        <translation type="vanished">Ontwerp opleidingskursus-leerplan</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="666"/>
         <source>Analyze literature review framework</source>
-        <translation>Analiseer literatuuroorsig-raamwerk</translation>
+        <translation type="vanished">Analiseer literatuuroorsig-raamwerk</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="672"/>
         <source>Generate business plan table of contents</source>
-        <translation>Genereer besigheidsplan-inhoudsopgawe</translation>
+        <translation type="vanished">Genereer besigheidsplan-inhoudsopgawe</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="678"/>
         <source>Write event planning flow points</source>
-        <translation>Skryf gebeurtenisbeplanning-vloeipunte</translation>
+        <translation type="vanished">Skryf gebeurtenisbeplanning-vloeipunte</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="685"/>
         <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation>Help my om &apos;n vergaderkennisgewing te skryf vir môre om 15:00 in Konferensiekamer A oor projekvorderingverslagdoening</translation>
+        <translation type="vanished">Help my om &apos;n vergaderkennisgewing te skryf vir môre om 15:00 in Konferensiekamer A oor projekvorderingverslagdoening</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="691"/>
         <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation>Skep &apos;n bondige kennisgewing gebaseer op hierdie dokument wat die sperdatum en indieningsmetode uitlig</translation>
+        <translation type="vanished">Skep &apos;n bondige kennisgewing gebaseer op hierdie dokument wat die sperdatum en indieningsmetode uitlig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="697"/>
         <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation>Ontwerp &apos;n vakansiekennisgewing vir die Lente-fees van 10 tot 17 Februarie met werk wat op 18 Februarie hervat word</translation>
+        <translation type="vanished">Ontwerp &apos;n vakansiekennisgewing vir die Lente-fees van 10 tot 17 Februarie met werk wat op 18 Februarie hervat word</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="703"/>
         <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation>Ek benodig &apos;n aktiwiteitskennisgewing vir personeelopleiding die hele volgende Woensdag by die maatskappy se ouditorium</translation>
+        <translation type="vanished">Ek benodig &apos;n aktiwiteitskennisgewing vir personeelopleiding die hele volgende Woensdag by die maatskappy se ouditorium</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="709"/>
         <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation>Formateer die verskafde teksmateriaal in &apos;n formele kennisgewing met standaardformatering en professionele toon</translation>
+        <translation type="vanished">Formateer die verskafde teksmateriaal in &apos;n formele kennisgewing met standaardformatering en professionele toon</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="715"/>
         <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation>Skryf &apos;n kragonderbrekingskennisgewing vir hierdie Saterdag van 09:00 tot 17:00 wat die hele kantoorgebou beïnvloed</translation>
+        <translation type="vanished">Skryf &apos;n kragonderbrekingskennisgewing vir hierdie Saterdag van 09:00 tot 17:00 wat die hele kantoorgebou beïnvloed</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="721"/>
         <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation>Genereer &apos;n vergaderveranderingskennisgewing wat die oorspronklike tyd na Vrydag om 10:00 verskuif en ander besonderhede dieselfde hou</translation>
+        <translation type="vanished">Genereer &apos;n vergaderveranderingskennisgewing wat die oorspronklike tyd na Vrydag om 10:00 verskuif en ander besonderhede dieselfde hou</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="727"/>
         <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation>Berei &apos;n kort kennisgewing voor gebaseer op die aangehegte vergadernotas vir afwesige deelnemers</translation>
+        <translation type="vanished">Berei &apos;n kort kennisgewing voor gebaseer op die aangehegte vergadernotas vir afwesige deelnemers</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="733"/>
         <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation>Ontwerp &apos;n stelselopgraderingskennisgewing wat vanaand van middernag tot 03:00 geskeduleer is met stelselonderbreking</translation>
+        <translation type="vanished">Ontwerp &apos;n stelselopgraderingskennisgewing wat vanaand van middernag tot 03:00 geskeduleer is met stelselonderbreking</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="739"/>
         <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation>Skryf &apos;n bondige vakansiepligreëlingskennisgewing wat diensdoende personeel en kontakinligting lys</translation>
+        <translation type="vanished">Skryf &apos;n bondige vakansiepligreëlingskennisgewing wat diensdoende personeel en kontakinligting lys</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="746"/>
         <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation>Help my om &apos;n openbare gesondheidsartikel oor gesonde eet in eenvoudige taal vir algemene lesers te skryf</translation>
+        <translation type="vanished">Help my om &apos;n openbare gesondheidsartikel oor gesonde eet in eenvoudige taal vir algemene lesers te skryf</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="752"/>
         <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation>Skep &apos;n prettige en boeiende tegnologietendens-pos gebaseer op hierdie dokument</translation>
+        <translation type="vanished">Skep &apos;n prettige en boeiende tegnologietendens-pos gebaseer op hierdie dokument</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="758"/>
         <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation>Ontwerp &apos;n vakansiepromosie-pos wat afslag en gebeurtenisskedule uitlig</translation>
+        <translation type="vanished">Ontwerp &apos;n vakansiepromosie-pos wat afslag en gebeurtenisskedule uitlig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="764"/>
         <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation>Ek benodig &apos;n produkbekendstellingsartikel wat op kenmerke en kliënte-oorsigte fokus</translation>
+        <translation type="vanished">Ek benodig &apos;n produkbekendstellingsartikel wat op kenmerke en kliënte-oorsigte fokus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="770"/>
         <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation>Verander hierdie onderhoudtranskripsie in &apos;n gemaklike persoonlikheidsprofiel-pos</translation>
+        <translation type="vanished">Verander hierdie onderhoudtranskripsie in &apos;n gemaklike persoonlikheidsprofiel-pos</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="776"/>
         <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation>Skryf &apos;n reisgids wat drie gewilde plekke met praktiese wenke aanbeveel</translation>
+        <translation type="vanished">Skryf &apos;n reisgids wat drie gewilde plekke met praktiese wenke aanbeveel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="782"/>
         <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation>Genereer &apos;n herdenkingspos wat maatskappygeskiedenis hersien en kliënte bedank</translation>
+        <translation type="vanished">Genereer &apos;n herdenkingspos wat maatskappygeskiedenis hersien en kliënte bedank</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="788"/>
         <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation>Analiseer hierdie bedryfverslag met gevisualiseerde data vir &apos;n insiggewende pos</translation>
+        <translation type="vanished">Analiseer hierdie bedryfverslag met gevisualiseerde data vir &apos;n insiggewende pos</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="794"/>
         <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation>Ontwerp &apos;n liefdadigheidsveldtog-pos wat deelname aanmoedig met duidelike instruksies</translation>
+        <translation type="vanished">Ontwerp &apos;n liefdadigheidsveldtog-pos wat deelname aanmoedig met duidelike instruksies</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="800"/>
         <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation>Skryf &apos;n loopbaanvaardigheidsartikel met vyf uitvoerbare wenke en regte voorbeelde</translation>
+        <translation type="vanished">Skryf &apos;n loopbaanvaardigheidsartikel met vyf uitvoerbare wenke en regte voorbeelde</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="807"/>
         <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation>Help my om &apos;n weeklikse werksamevatting te skryf wat op projekvordering en span-samewerking fokus</translation>
+        <translation type="vanished">Help my om &apos;n weeklikse werksamevatting te skryf wat op projekvordering en span-samewerking fokus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="813"/>
         <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation>Genereer &apos;n bondige werksamevatting gebaseer op die vergadernotas-lêer wat ek opgelaai het</translation>
+        <translation type="vanished">Genereer &apos;n bondige werksamevatting gebaseer op die vergadernotas-lêer wat ek opgelaai het</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="819"/>
         <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation>Ek het &apos;n kwartaallikse werkopsomming nodig wat data-analise en persoonlike groeirefleksie insluit</translation>
+        <translation type="vanished">Ek het &apos;n kwartaallikse werkopsomming nodig wat data-analise en persoonlike groeirefleksie insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="825"/>
         <source>Create a work summary based on the following text [paste text]</source>
-        <translation>Skep &apos;n werkopsomming gebaseer op die volgende teks [plak teks]</translation>
+        <translation type="vanished">Skep &apos;n werkopsomming gebaseer op die volgende teks [plak teks]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="831"/>
         <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation>Skryf &apos;n werkopsomming wat hierdie maand se KPI-prestasies en uitdagings uitlig</translation>
+        <translation type="vanished">Skryf &apos;n werkopsomming wat hierdie maand se KPI-prestasies en uitdagings uitlig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="837"/>
         <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation>Help my om verlede week se werk volgens projekte saam te vat</translation>
+        <translation type="vanished">Help my om verlede week se werk volgens projekte saam te vat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="843"/>
         <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation>Genereer &apos;n werkopsomming uit e-posinhoud met klem op hangende take en voltooiings</translation>
+        <translation type="vanished">Genereer &apos;n werkopsomming uit e-posinhoud met klem op hangende take en voltooiings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="849"/>
         <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation>Ek het &apos;n jaarlikse opsomming nodig wat werk-hoogtepunte en verbeteringsplanne insluit</translation>
+        <translation type="vanished">Ek het &apos;n jaarlikse opsomming nodig wat werk-hoogtepunte en verbeteringsplanne insluit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="855"/>
         <source>Generate a monthly work report from the data I uploaded</source>
-        <translation>Genereer &apos;n maandelikse werkverslag uit die data wat ek opgelaai het</translation>
+        <translation type="vanished">Genereer &apos;n maandelikse werkverslag uit die data wat ek opgelaai het</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="861"/>
         <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation>Help my om verspreide werknotas in &apos;n gestruktureerde werkopsomming te organiseer</translation>
+        <translation type="vanished">Help my om verspreide werknotas in &apos;n gestruktureerde werkopsomming te organiseer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="868"/>
         <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation>Analiseer die opgelaaide data en genereer &apos;n markneigingverslag</translation>
+        <translation type="vanished">Analiseer die opgelaaide data en genereer &apos;n markneigingverslag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="874"/>
         <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation>Ontrek sleutelinligting uit die teks en stel &apos;n bedryfanaliseverslag saam</translation>
+        <translation type="vanished">Ontrek sleutelinligting uit die teks en stel &apos;n bedryfanaliseverslag saam</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="880"/>
         <source>Combine the contents of the file to write a competitor research report</source>
-        <translation>Kombineer die inhoud van die lêer om &apos;n mededinger-navorsingsverslag te skryf</translation>
+        <translation type="vanished">Kombineer die inhoud van die lêer om &apos;n mededinger-navorsingsverslag te skryf</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="886"/>
         <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation>Genereer &apos;n gebruikersbehoeftes-navorsingsopsomming gebaseer op die verskafde onderhoudrekords</translation>
+        <translation type="vanished">Genereer &apos;n gebruikersbehoeftes-navorsingsopsomming gebaseer op die verskafde onderhoudrekords</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="892"/>
         <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation>Analiseer hierdie verkoopsdata en lewer &apos;n kwartaallikse markprestasieverslag</translation>
+        <translation type="vanished">Analiseer hierdie verkoopsdata en lewer &apos;n kwartaallikse markprestasieverslag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="898"/>
         <source>Write a technical research report based on the given product description</source>
-        <translation>Skryf &apos;n tegniese navorsingsverslag gebaseer op die gegewe produkbeskrywing</translation>
+        <translation type="vanished">Skryf &apos;n tegniese navorsingsverslag gebaseer op die gegewe produkbeskrywing</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="904"/>
         <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation>Organiseer hierdie gebruikersterugvoer en genereer &apos;n produkverbeteringsvoorstelverslag</translation>
+        <translation type="vanished">Organiseer hierdie gebruikersterugvoer en genereer &apos;n produkverbeteringsvoorstelverslag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="910"/>
         <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation>Skryf asseblief &apos;n markgeleentheid-analiseverslag gebaseer op die verskafde lêer</translation>
+        <translation type="vanished">Skryf asseblief &apos;n markgeleentheid-analiseverslag gebaseer op die verskafde lêer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="921"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Help my om &apos;n opstel oor die onderwerp van [%1] te skryf met [duidelike struktuur en ryk inhoud].</translation>
+        <translation type="vanished">Help my om &apos;n opstel oor die onderwerp van [%1] te skryf met [duidelike struktuur en ryk inhoud].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="941"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Help my om &apos;n openbare tweet oor die onderwerp van [%1] te skryf, wat [duidelike struktuur] en [ontspanne] toon vereis.</translation>
+        <translation type="vanished">Help my om &apos;n openbare tweet oor die onderwerp van [%1] te skryf, wat [duidelike struktuur] en [ontspanne] toon vereis.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="946"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Help my om &apos;n opsomming van my onlangse werk te skryf, insluitend [%1] en [resultate], wat &apos;n [formele] toon vereis.</translation>
+        <translation type="vanished">Help my om &apos;n opsomming van my onlangse werk te skryf, insluitend [%1] en [resultate], wat &apos;n [formele] toon vereis.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="951"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Help my om &apos;n navorsingsverslag oor [%1] te skryf, wat ten minste [statusbeskrywing, probleemanalise, teenmaatreëls en voorstelle, navorsingsgevolgtrekkings] moet insluit.</translation>
+        <translation type="vanished">Help my om &apos;n navorsingsverslag oor [%1] te skryf, wat ten minste [statusbeskrywing, probleemanalise, teenmaatreëls en voorstelle, navorsingsgevolgtrekkings] moet insluit.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
-        <translation>Kunsmatige Intelligensie</translation>
+        <translation type="vanished">Kunsmatige Intelligensie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="926"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Help my om &apos;n toespraak oor die onderwerp van [%1] vir [Maatskappy-leiers] te skryf, wat [duidelike struktuur en lewendige taal] vereis.</translation>
+        <translation type="vanished">Help my om &apos;n toespraak oor die onderwerp van [%1] vir [Maatskappy-leiers] te skryf, wat [duidelike struktuur en lewendige taal] vereis.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="931"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Help my om &apos;n uiteensetting oor die onderwerp van [%1] te skryf, wat vir [PPT-produksie] gebruik sal word.</translation>
+        <translation type="vanished">Help my om &apos;n uiteensetting oor die onderwerp van [%1] te skryf, wat vir [PPT-produksie] gebruik sal word.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="936"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Help my om &apos;n kennisgewing oor [%1] te skryf, die ontvanger is [Alle Werknemers] en die sender is [Administrasie-afdeling].</translation>
+        <translation type="vanished">Help my om &apos;n kennisgewing oor [%1] te skryf, die ontvanger is [Alle Werknemers] en die sender is [Administrasie-afdeling].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="937"/>
         <source>National Day Holiday</source>
-        <translation>Nasionale Dag Vakansie</translation>
+        <translation type="vanished">Nasionale Dag Vakansie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="947"/>
         <source>work content</source>
-        <translation>werkinhoud</translation>
+        <translation type="vanished">werkinhoud</translation>
     </message>
 </context>
 <context>
     <name>EAiPrompt</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1439"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1615,7 +1281,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 ---question---
 %2
 </source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 Jy is ’n hulpvaardige assistent wat vrae beantwoord oor die agtergrondkennis wat verskaf is.
 
@@ -1632,16 +1298,14 @@ Reageer op gebruikers se vrae en voeg enige relevante gesonde verstand by. As jy
 %2</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1450"/>
         <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
 :%1
 </source>
-        <translation>Die uitsetantwoord begin met &quot;Geen relevante inligting is in jou kennisbank gevind nie.&quot;---vraag--
+        <translation type="vanished">Die uitsetantwoord begin met &quot;Geen relevante inligting is in jou kennisbank gevind nie.&quot;---vraag--
 
 :%1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1455"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1653,7 +1317,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 
 ---question---
 %2</source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 Jy is ’n hulpvaardige assistent wat vrae beantwoord oor die agtergrondkennis wat verskaf is.
 
@@ -1670,7 +1334,6 @@ Reageer op gebruikers se vrae en voeg enige relevante gesonde verstand by. As jy
 %2</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="104"/>
         <source>---Role---
 You are a professional writer with expertise in various writing styles and formats.
 
@@ -1693,7 +1356,7 @@ Based on the user&apos;s request, create high-quality content that meets their s
 Please provide the content in the following format:
 Title:
 Content:</source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 Jy is ’n professionele skrywer met kundigheid in verskeie skryfstylle en formate.
 
@@ -1730,7 +1393,6 @@ Titel:
 Inhoud:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="133"/>
         <source>---Role---
 You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
 
@@ -1750,7 +1412,7 @@ Process and improve the input text while maintaining its original meaning and st
 
 ---Output Format---
 Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 Jy is ’n teksverwerkingskenner met diep kundigheid in taalontleding, skryftegnieke en teksoptimalisering.
 
@@ -1781,7 +1443,6 @@ Verwerk en verbeter die insetteks terwyl die oorspronklike betekenis en styl beh
 Verskaf asseblief die verwerkte teks direk sonder enige addisionele karakters of formatering.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="159"/>
         <source>---Role---
 You are a professional translator and language expert. Your task is to:
 1. Accurately translate text as requested
@@ -1808,7 +1469,7 @@ For language questions, provide clear, concise explanations.
 2. For partial translations: Provide only the specified portion&apos;s translation
 3. For explanations: Provide only the explanation in the same language as the question
 Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 Jy is ’n professionele vertaler en taalkundige. Jou taak is om:
 
@@ -1854,1072 +1515,856 @@ Moenie ooit verduideliking met vertaling kombineer of volledige vertaling na ged
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation>Werk die UOS-skermopnemer op na weergawe 6.6 of later en herbegin jou rekenaar om Skermkiekie V&amp;A te aktiveer.</translation>
+        <translation type="vanished">Werk die UOS-skermopnemer op na weergawe 6.6 of later en herbegin jou rekenaar om Skermkiekie V&amp;A te aktiveer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
-        <translation>Modelkonfigurasie</translation>
+        <translation type="vanished">Modelkonfigurasie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
-        <translation>Gaan na konfigurasie</translation>
+        <translation type="vanished">Gaan na konfigurasie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
-        <translation>Geen rekening</translation>
+        <translation type="vanished">Geen rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
-        <translation>Invoervraag</translation>
+        <translation type="vanished">Invoervraag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
+        <translation type="vanished">Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
-        <translation>Welkom by UOS AI</translation>
+        <translation type="vanished">Welkom by UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation>Hier is sommige van die dinge wat UOS AI jou kan help doen</translation>
+        <translation type="vanished">Hier is sommige van die dinge wat UOS AI jou kan help doen</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
-        <translation>Stop</translation>
+        <translation type="vanished">Stop</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
-        <translation>Hergenereer</translation>
+        <translation type="vanished">Hergenereer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
-        <translation>Maak gespreksgeskiedenis skoon</translation>
+        <translation type="vanished">Maak gespreksgeskiedenis skoon</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
-        <translation>Koppel die mikrofoon en probeer weer</translation>
+        <translation type="vanished">Koppel die mikrofoon en probeer weer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
-        <translation>Kletsgeskiedenis skoongemaak</translation>
+        <translation type="vanished">Kletsgeskiedenis skoongemaak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
-        <translation>Klik om opname te begin/stop</translation>
+        <translation type="vanished">Klik om opname te begin/stop</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
-        <translation>Luister</translation>
+        <translation type="vanished">Luister</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
-        <translation>Slaap</translation>
+        <translation type="vanished">Slaap</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
-        <translation>Mikrofoon nie opgespoor nie</translation>
+        <translation type="vanished">Mikrofoon nie opgespoor nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
-        <translation>Verbinding het misluk, klik om weer te probeer</translation>
+        <translation type="vanished">Verbinding het misluk, klik om weer te probeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation>Klik op die animasie of Ctrl+Super+Spatie om te aktiveer</translation>
+        <translation type="vanished">Klik op die animasie of Ctrl+Super+Spatie om te aktiveer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation>Steminsette is tydelik onbeskikbaar, gaan die netwerk na!</translation>
+        <translation type="vanished">Steminsette is tydelik onbeskikbaar, gaan die netwerk na!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Kan nie aan die bediener koppel nie, gaan jou netwerk na of probeer later weer.</translation>
+        <translation type="vanished">Kan nie aan die bediener koppel nie, gaan jou netwerk na of probeer later weer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
-        <translation>Stemgesprek</translation>
+        <translation type="vanished">Stemgesprek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
-        <translation>Klik die animasie of druk Enter om te stuur</translation>
+        <translation type="vanished">Klik die animasie of druk Enter om te stuur</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
-        <translation>Stop opname na %1 sekondes</translation>
+        <translation type="vanished">Stop opname na %1 sekondes</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
-        <translation>Dink</translation>
+        <translation type="vanished">Dink</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
-        <translation>Klik animasie om te onderbreek</translation>
+        <translation type="vanished">Klik animasie om te onderbreek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
-        <translation>Antwoord</translation>
+        <translation type="vanished">Antwoord</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>Jou gratis rekeningkwota is uitgeput, konfigureer jou modelrekening om voort te gaan om dit te gebruik.</translation>
+        <translation type="vanished">Jou gratis rekeningkwota is uitgeput, konfigureer jou modelrekening om voort te gaan om dit te gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>Jou gratis rekening het verval, konfigureer jou modelrekening om voort te gaan om dit te gebruik.</translation>
+        <translation type="vanished">Jou gratis rekening het verval, konfigureer jou modelrekening om voort te gaan om dit te gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI vereis &apos;n AI-modelrekening om gekonfigureer te word voordat dit gebruik kan word. Konfigureer asseblief eers &apos;n modelrekening.</translation>
+        <translation type="vanished">UOS AI vereis &apos;n AI-modelrekening om gekonfigureer te word voordat dit gebruik kan word. Konfigureer asseblief eers &apos;n modelrekening.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
-        <translation>Aktiveer</translation>
+        <translation type="vanished">Aktiveer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
-        <translation>Steminsette</translation>
+        <translation type="vanished">Steminsette</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation>Stemuitsending is tydelik onbeskikbaar, gaan asseblief die netwerk na!</translation>
+        <translation type="vanished">Stemuitsending is tydelik onbeskikbaar, gaan asseblief die netwerk na!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
-        <translation>Skakel stemgesprek af</translation>
+        <translation type="vanished">Skakel stemgesprek af</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation>Die prent is gegenereer, skakel asseblief na die kletskoppelvlak om dit te sien.</translation>
+        <translation type="vanished">Die prent is gegenereer, skakel asseblief na die kletskoppelvlak om dit te sien.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
-        <translation>Geen rekening nie, konfigureer asseblief &apos;n rekening</translation>
+        <translation type="vanished">Geen rekening nie, konfigureer asseblief &apos;n rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
-        <translation>Beantwoord elke vraag tot 5 keer</translation>
+        <translation type="vanished">Beantwoord elke vraag tot 5 keer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
-        <translation>Suksesvol gekopieër</translation>
+        <translation type="vanished">Suksesvol gekopieër</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
-        <translation>Klankuitsetapparaat nie opgespoor nie</translation>
+        <translation type="vanished">Klankuitsetapparaat nie opgespoor nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
-        <translation>Die klankuitsetapparaat word nie opgespoor nie, gaan dit na en probeer weer!</translation>
+        <translation type="vanished">Die klankuitsetapparaat word nie opgespoor nie, gaan dit na en probeer weer!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
-        <translation>Instellings</translation>
+        <translation type="vanished">Instellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
-        <translation>Oor</translation>
+        <translation type="vanished">Oor</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
-        <translation>Modus</translation>
+        <translation type="vanished">Modus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
-        <translation>Venstermodus</translation>
+        <translation type="vanished">Venstermodus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
-        <translation>Sykantlynmodus</translation>
+        <translation type="vanished">Sykantlynmodus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
-        <translation>Assistentlys</translation>
+        <translation type="vanished">Assistentlys</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
-        <translation>Agentlys</translation>
+        <translation type="vanished">Agentlys</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
-        <translation>Agentwinkel</translation>
+        <translation type="vanished">Agentwinkel</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
-        <translation>UOS-stelselassistent</translation>
+        <translation type="vanished">UOS-stelselassistent</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin-stelselassistent</translation>
+        <translation type="vanished">Deepin-stelselassistent</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Persoonlike Kennisassistent</translation>
+        <translation type="vanished">Persoonlike Kennisassistent</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
-        <translation>Konfigureer asseblief die kennisbasis</translation>
+        <translation type="vanished">Konfigureer asseblief die kennisbasis</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation>Voordat die [Persoonlike Kennisassistent] gebruik word, is dit nodig om die kennisbasis te konfigureer. Nadat die kennisbasis gekonfigureer is, sal AI vrae beantwoord of inhoud genereer gebaseer op die inhoud wat u in die kennisbasis gekonfigureer het.</translation>
+        <translation type="vanished">Voordat die [Persoonlike Kennisassistent] gebruik word, is dit nodig om die kennisbasis te konfigureer. Nadat die kennisbasis gekonfigureer is, sal AI vrae beantwoord of inhoud genereer gebaseer op die inhoud wat u in die kennisbasis gekonfigureer het.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
-        <translation>Konfigureer asseblief die groot model</translation>
+        <translation type="vanished">Konfigureer asseblief die groot model</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation>Die persoonlike kennisassistent kan slegs gebruik word nadat &apos;n groot model gekonfigureer is.</translation>
+        <translation type="vanished">Die persoonlike kennisassistent kan slegs gebruik word nadat &apos;n groot model gekonfigureer is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
-        <translation>Om te konfigureer</translation>
+        <translation type="vanished">Om te konfigureer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
-        <translation>Om te installeer</translation>
+        <translation type="vanished">Om te installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
-        <translation>Installeer asseblief [EmbeddingPlugins]</translation>
+        <translation type="vanished">Installeer asseblief [EmbeddingPlugins]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation>Hierdie assistent vereis die installering van die EmbeddingPlugins om te werk</translation>
+        <translation type="vanished">Hierdie assistent vereis die installering van die EmbeddingPlugins om te werk</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
-        <translation>Sleep lêers hier om dit by te voeg.</translation>
+        <translation type="vanished">Sleep lêers hier om dit by te voeg.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation>Jy kan slegs 3 lêers byvoeg; ondersteunde lêertipes sluit in: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kodelêers, ens.</translation>
+        <translation type="vanished">Jy kan slegs 3 lêers byvoeg; ondersteunde lêertipes sluit in: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kodelêers, ens.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
-        <translation>MCP-bediener</translation>
+        <translation type="vanished">MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
-        <translation>Voeg MCP-bediener by</translation>
+        <translation type="vanished">Voeg MCP-bediener by</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
-        <translation>Voeg Bediener By</translation>
+        <translation type="vanished">Voeg Bediener By</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
-        <translation>Byvoeging het misluk! Foutrede:</translation>
+        <translation type="vanished">Byvoeging het misluk! Foutrede:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation>MCP-omgewing ontbreek. Installeer asseblief 【UOS AI Agent】</translation>
+        <translation type="vanished">MCP-omgewing ontbreek. Installeer asseblief 【UOS AI Agent】</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
-        <translation>Besig om te roep</translation>
+        <translation type="vanished">Besig om te roep</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
-        <translation>Voltooi</translation>
+        <translation type="vanished">Voltooi</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
-        <translation>Oproep het misluk</translation>
+        <translation type="vanished">Oproep het misluk</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
-        <translation>Gekanselleer</translation>
+        <translation type="vanished">Gekanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
-        <translation>params</translation>
+        <translation type="vanished">params</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
-        <translation>resultaat</translation>
+        <translation type="vanished">resultaat</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>Vir MCP-bediener, skakel oor na die amptelik vrygestelde model &quot;DeepSeek-Trial Account&quot;</translation>
+        <translation type="vanished">Vir MCP-bediener, skakel oor na die amptelik vrygestelde model &quot;DeepSeek-Trial Account&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation>Voer MCP-bediener-opdrag in, bv. &quot;Verander stelsel na donker modus vir my&quot;</translation>
+        <translation type="vanished">Voer MCP-bediener-opdrag in, bv. &quot;Verander stelsel na donker modus vir my&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
-        <translation>Agent-bediener is nie beskikbaar nie</translation>
+        <translation type="vanished">Agent-bediener is nie beskikbaar nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
-        <translation>Agent-bediener-uitsondering</translation>
+        <translation type="vanished">Agent-bediener-uitsondering</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
-        <translation>MCP-bediener is nie beskikbaar nie</translation>
+        <translation type="vanished">MCP-bediener is nie beskikbaar nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
-        <translation type="unfinished">Kanselleer</translation>
+        <translation type="obsolete">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
-        <translation type="unfinished">Bevestig</translation>
+        <translation type="obsolete">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation>Outomatiseer veelvuldige-lêer- en veelvuldige-toep-take met een opdrag deur MCP-diens. Probeer dit nou!</translation>
+        <translation type="vanished">Outomatiseer veelvuldige-lêer- en veelvuldige-toep-take met een opdrag deur MCP-diens. Probeer dit nou!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
-        <translation>Gebruik later</translation>
+        <translation type="vanished">Gebruik later</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
-        <translation>Installeer nou</translation>
+        <translation type="vanished">Installeer nou</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
-        <translation>Aktiveer MCP-bediener</translation>
+        <translation type="vanished">Aktiveer MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation>Nadat jy die MCP-omgewing &quot;UOS AI Agent&quot; geïnstalleer het, klik die </translation>
+        <translation type="vanished">Nadat jy die MCP-omgewing &quot;UOS AI Agent&quot; geïnstalleer het, klik die </translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation> en kies &quot;uos-mcp&quot; in die MCP-bediener-lys.</translation>
+        <translation type="vanished"> en kies &quot;uos-mcp&quot; in die MCP-bediener-lys.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation>Probeer sê: &quot;Verander stelsel na donker modus&quot;.</translation>
+        <translation type="vanished">Probeer sê: &quot;Verander stelsel na donker modus&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
-        <translation>Probeer dit nou</translation>
+        <translation type="vanished">Probeer dit nou</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
-        <translation>Voeg Mcp-bediener by [Gidsbladsy]</translation>
+        <translation type="vanished">Voeg Mcp-bediener by [Gidsbladsy]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation>Eerstekeergebruikers: Installeer die MCP-omgewing &quot;UOS AI Agent&quot; via die App Store.</translation>
+        <translation type="vanished">Eerstekeergebruikers: Installeer die MCP-omgewing &quot;UOS AI Agent&quot; via die App Store.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation>Die JSON-lêerformaat is verkeerd, kontroleer en dien weer in</translation>
+        <translation type="vanished">Die JSON-lêerformaat is verkeerd, kontroleer en dien weer in</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
-        <translation>Installeer nou &gt;</translation>
+        <translation type="vanished">Installeer nou &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
-        <translation>Algemene gesprek</translation>
+        <translation type="vanished">Algemene gesprek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
-        <translation>Privaat gesprek</translation>
+        <translation type="vanished">Privaat gesprek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
-        <translation>Nou in Privaat gesprek</translation>
+        <translation type="vanished">Nou in Privaat gesprek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation>Privaat-gesprekboodskappe word nie in die geskiedenis gestoor nie en sal permanent verwyder word wanneer jy die gesprek verlaat.</translation>
+        <translation type="vanished">Privaat-gesprekboodskappe word nie in die geskiedenis gestoor nie en sal permanent verwyder word wanneer jy die gesprek verlaat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation>Skermkiekie V&amp;V Kortpad (Ctrl+Alt+Q), tot 3 beelde word ondersteun.</translation>
+        <translation type="vanished">Skermkiekie V&amp;V Kortpad (Ctrl+Alt+Q), tot 3 beelde word ondersteun.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
-        <translation>Kan nie tydens skermopname gebruik word nie</translation>
+        <translation type="vanished">Kan nie tydens skermopname gebruik word nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
-        <translation>Jy kan tot 3 lêers of beelde oplaai</translation>
+        <translation type="vanished">Jy kan tot 3 lêers of beelde oplaai</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
-        <translation>Laai lêers op</translation>
+        <translation type="vanished">Laai lêers op</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
-        <translation>Verwyder asseblief die abnormale lêer en stuur dit weer</translation>
+        <translation type="vanished">Verwyder asseblief die abnormale lêer en stuur dit weer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
-        <translation>Voeg privaat klets by</translation>
+        <translation type="vanished">Voeg privaat klets by</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
-        <translation>Voeg [Skermkiekie V&amp;V] by</translation>
+        <translation type="vanished">Voeg [Skermkiekie V&amp;V] by</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation>Neem ’n skermkiekie en stuur die inhoud na UOS AI. Jy kan ook ’n beeld direk oplaai.</translation>
+        <translation type="vanished">Neem ’n skermkiekie en stuur die inhoud na UOS AI. Jy kan ook ’n beeld direk oplaai.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation type="obsolete">OK</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
-        <translation>Volgende</translation>
+        <translation type="vanished">Volgende</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation>Voeg [Privaat Kletsmodus] by – kletsgeskiedenis word nie gestoor nie.</translation>
+        <translation type="vanished">Voeg [Privaat Kletsmodus] by – kletsgeskiedenis word nie gestoor nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
-        <translation>Geen teks onttrek nie</translation>
+        <translation type="vanished">Geen teks onttrek nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
-        <translation>Beeldgrootte oorskry 15 MB</translation>
+        <translation type="vanished">Beeldgrootte oorskry 15 MB</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation>Nadat die kennisbank oopgemaak is, sal antwoorde op sy inhoud gebaseer word. Responsspoed hang van masjienprestasie en die grootte van die kennisbank af.</translation>
+        <translation type="vanished">Nadat die kennisbank oopgemaak is, sal antwoorde op sy inhoud gebaseer word. Responsspoed hang van masjienprestasie en die grootte van die kennisbank af.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation>Kennisbank is nie beskikbaar wanneer enige opdrag of MCP gekies is nie.</translation>
+        <translation type="vanished">Kennisbank is nie beskikbaar wanneer enige opdrag of MCP gekies is nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
-        <translation>MCP is gedeaktiveer terwyl die kennisbank aktief is.</translation>
+        <translation type="vanished">MCP is gedeaktiveer terwyl die kennisbank aktief is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
-        <translation>Opdragte is gedeaktiveer terwyl die kennisbank aktief is.</translation>
+        <translation type="vanished">Opdragte is gedeaktiveer terwyl die kennisbank aktief is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
-        <translation type="unfinished">Kopieer</translation>
+        <translation type="obsolete">Kopieer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
-        <translation>Hersien</translation>
+        <translation type="vanished">Hersien</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
-        <translation>Kopieer suksesvol.</translation>
+        <translation type="vanished">Kopieer suksesvol.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
-        <translation>Kopieer het misluk. Probeer asseblief weer.</translation>
+        <translation type="vanished">Kopieer het misluk. Probeer asseblief weer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
-        <translation>Soek tans</translation>
+        <translation type="vanished">Soek tans</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
-        <translation>%1 verwysingsdokumente is verkry (%2s)</translation>
+        <translation type="vanished">%1 verwysingsdokumente is verkry (%2s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
-        <translation>Vee geskiedenis uit</translation>
+        <translation type="vanished">Vee geskiedenis uit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
-        <translation>Alle rekords uitvee?</translation>
+        <translation type="vanished">Alle rekords uitvee?</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
-        <translation>Sodra dit uitgevee is, kan die inhoud nie herwin word nie!</translation>
+        <translation type="vanished">Sodra dit uitgevee is, kan die inhoud nie herwin word nie!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
-        <translation>Beveel amptelike modelle aan</translation>
+        <translation type="vanished">Beveel amptelike modelle aan</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
-        <translation>Deaktiveer MCP</translation>
+        <translation type="vanished">Deaktiveer MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>Dit word aanbeveel om die amptelike model &quot;DeepSeek-Trial Account&quot; te gebruik</translation>
+        <translation type="vanished">Dit word aanbeveel om die amptelike model &quot;DeepSeek-Trial Account&quot; te gebruik</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
-        <translation>Vinnig oopmaak</translation>
+        <translation type="vanished">Vinnig oopmaak</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation>MCP-bediener opgradeer na outomatiese modus</translation>
+        <translation type="vanished">MCP-bediener opgradeer na outomatiese modus</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation>MCP-bediener is opgegradeer na outomatiese modus, wat jou toelaat om alle MCP-bedieners met ’n enkele klik te bereik</translation>
+        <translation type="vanished">MCP-bediener is opgegradeer na outomatiese modus, wat jou toelaat om alle MCP-bedieners met ’n enkele klik te bereik</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation>. Dit laat jou toe om take soos stelselopstelling en lêerverwerking met net een klik te outomatiseer.</translation>
+        <translation type="vanished">. Dit laat jou toe om take soos stelselopstelling en lêerverwerking met net een klik te outomatiseer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
-        <translation>Om ’n MCP-bediener by te voeg is na Instellings verskuif.</translation>
+        <translation type="vanished">Om ’n MCP-bediener by te voeg is na Instellings verskuif.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation>Om nog MCP-bedieners by te voeg, gaan na Instellings &gt; MCP-bediener.</translation>
+        <translation type="vanished">Om nog MCP-bedieners by te voeg, gaan na Instellings &gt; MCP-bediener.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
-        <translation type="unfinished">Ek het dit</translation>
+        <translation type="obsolete">Ek het dit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
-        <translation>Komplimentêre Modelkrediete</translation>
+        <translation type="vanished">Komplimentêre Modelkrediete</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation>Die huidige stelsel bied die DeepSeek-proefrekeningmodel aan, wat outomaties die gratis kwota aan die begin van elke maand vernuwe, sodat jy dit sorgevry kan gebruik.</translation>
+        <translation type="vanished">Die huidige stelsel bied die DeepSeek-proefrekeningmodel aan, wat outomaties die gratis kwota aan die begin van elke maand vernuwe, sodat jy dit sorgevry kan gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
-        <translation>Eis Krediete</translation>
+        <translation type="vanished">Eis Krediete</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Kry &apos;n gratis rekening</translation>
+        <translation type="obsolete">Kry &apos;n gratis rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
-        <translation>Eis Gratis Krediete</translation>
+        <translation type="vanished">Eis Gratis Krediete</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
-        <translation>Suksesvol Geëis</translation>
+        <translation type="vanished">Suksesvol Geëis</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>Kon Nie Eis Nie. Probeer Weereens.</translation>
+        <translation type="vanished">Kon Nie Eis Nie. Probeer Weereens.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
-        <translation>Aktiveer MCP-bediener&amp;</translation>
+        <translation type="vanished">Aktiveer MCP-bediener&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
-        <translation>Deaktiveer MCP-bediener</translation>
+        <translation type="vanished">Deaktiveer MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
-        <translation>Konfigureer MCP-bediener</translation>
+        <translation type="vanished">Konfigureer MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
-        <source>Enable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
-        <source>Disable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
-        <source>Configure MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
-        <translation>Jy kan maksimum een lêer byvoeg.</translation>
+        <translation type="vanished">Jy kan maksimum een lêer byvoeg.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
-        <translation>Die lêerformaat word nie ondersteun nie.</translation>
+        <translation type="vanished">Die lêerformaat word nie ondersteun nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
-        <translation>Vat die sleutelinhoud van die lêer saam.</translation>
+        <translation type="vanished">Vat die sleutelinhoud van die lêer saam.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
-        <translation>Ontleed...</translation>
+        <translation type="vanished">Ontleed...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
-        <translation>Lêerfout</translation>
+        <translation type="vanished">Lêerfout</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
-        <translation>Lêer is uitgevee.</translation>
+        <translation type="vanished">Lêer is uitgevee.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
-        <translation>Die lêergrootte oorskry die 100MB-limiet.</translation>
+        <translation type="vanished">Die lêergrootte oorskry die 100MB-limiet.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
-        <translation>Laai &apos;n dokument op</translation>
+        <translation type="vanished">Laai &apos;n dokument op</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
-        <translation>Lêer uitgevee</translation>
+        <translation type="vanished">Lêer uitgevee</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
-        <translation>Geen teks is ontleed nie</translation>
+        <translation type="vanished">Geen teks is ontleed nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
-        <translation>Verwysing</translation>
+        <translation type="vanished">Verwysing</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
-        <translation>Instruksie</translation>
+        <translation type="vanished">Instruksie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation>Tik &quot;/&quot; in die invoerkassie om te aktiveer.</translation>
+        <translation type="vanished">Tik &quot;/&quot; in die invoerkassie om te aktiveer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation>Tik asseblief; “Ctrl+Enter” om die lyn te verander.</translation>
+        <translation type="vanished">Tik asseblief; “Ctrl+Enter” om die lyn te verander.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation>Voer jou vraag in, of tik &quot;/&quot; om &apos;n opdrag te kies &quot;Ctrl+Enter&quot; om &apos;n nuwe lyn te begin</translation>
+        <translation type="vanished">Voer jou vraag in, of tik &quot;/&quot; om &apos;n opdrag te kies &quot;Ctrl+Enter&quot; om &apos;n nuwe lyn te begin</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
-        <translation>Soektog voltooi.</translation>
+        <translation type="vanished">Soektog voltooi.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
-        <translation>Klik om resultate te sien</translation>
+        <translation type="vanished">Klik om resultate te sien</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
-        <translation>wysig</translation>
+        <translation type="vanished">wysig</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
-        <translation>stoor</translation>
+        <translation type="vanished">stoor</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
-        <translation>kopieer</translation>
+        <translation type="vanished">kopieer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
-        <translation>Soek</translation>
+        <translation type="vanished">Soek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
-        <translation>DiepDink(R1)</translation>
+        <translation type="vanished">DiepDink(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
-        <translation>Denke het gestop</translation>
+        <translation type="vanished">Denke het gestop</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
-        <translation>Terug na onder</translation>
+        <translation type="vanished">Terug na onder</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
-        <translation>Diep gedink (%1 sekondes)</translation>
+        <translation type="vanished">Diep gedink (%1 sekondes)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
-        <translation>Nuwe Gesprek</translation>
+        <translation type="vanished">Nuwe Gesprek</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
-        <translation>Geskiedenis</translation>
+        <translation type="vanished">Geskiedenis</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
-        <translation>Geen Geskiedenisrekords nie</translation>
+        <translation type="vanished">Geen Geskiedenisrekords nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
-        <translation>Vandag</translation>
+        <translation type="vanished">Vandag</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
-        <translation>Gister</translation>
+        <translation type="vanished">Gister</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation>Is jy seker jy wil die gesprek skrap? Dit sal onherroeplik wees sodra dit geskrap is.</translation>
+        <translation type="vanished">Is jy seker jy wil die gesprek skrap? Dit sal onherroeplik wees sodra dit geskrap is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
-        <translation>Die %1-agent wat in hierdie gesprek gebruik is, is geskrap</translation>
+        <translation type="vanished">Die %1-agent wat in hierdie gesprek gebruik is, is geskrap</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation>Hierdie gesprek kan nie bekyk word nie. Installeer asseblief die %1-agent en probeer weer.</translation>
+        <translation type="vanished">Hierdie gesprek kan nie bekyk word nie. Installeer asseblief die %1-agent en probeer weer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation>Die oorspronklike gesprekmodel is geskrap. Ons het na &apos;n nuwe model oorgeskakel vir jou om die gesprek voort te sit.</translation>
+        <translation type="vanished">Die oorspronklike gesprekmodel is geskrap. Ons het na &apos;n nuwe model oorgeskakel vir jou om die gesprek voort te sit.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
-        <translation>Aanbevelings</translation>
+        <translation type="vanished">Aanbevelings</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
-        <translation>Meer</translation>
+        <translation type="vanished">Meer</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
-        <translation>Voeg Model By</translation>
+        <translation type="vanished">Voeg Model By</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
-        <translation>Geen Model</translation>
+        <translation type="vanished">Geen Model</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
-        <translation>Geen model beskikbaar nie. Installeer of konfigureer asseblief &apos;n model in die instellings.</translation>
+        <translation type="vanished">Geen model beskikbaar nie. Installeer of konfigureer asseblief &apos;n model in die instellings.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation>Beskryf asseblief die Inhoudtema en Vereistes vir Jou Skepping.</translation>
+        <translation type="vanished">Beskryf asseblief die Inhoudtema en Vereistes vir Jou Skepping.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation>Voer asseblief die Inhoud in wat Jy Wil Vertaal en Spesifiseer die Doeltaal. Standaardvertaling is na Chinees.</translation>
+        <translation type="vanished">Voer asseblief die Inhoud in wat Jy Wil Vertaal en Spesifiseer die Doeltaal. Standaardvertaling is na Chinees.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation>Voer asseblief die Teks in wat Jy Wil Verwerk en Spesifiseer Jou Vereistes.</translation>
+        <translation type="vanished">Voer asseblief die Teks in wat Jy Wil Verwerk en Spesifiseer Jou Vereistes.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
-        <translation>Nuwe Agent Bygevoeg</translation>
+        <translation type="vanished">Nuwe Agent Bygevoeg</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation>Nuwe Skryf-, Teksverwerking- en Vertaalagentskappe is bygevoeg. Kyk nou na hulle.</translation>
+        <translation type="vanished">Nuwe Skryf-, Teksverwerking- en Vertaalagentskappe is bygevoeg. Kyk nou na hulle.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
-        <translation>Probeer dit</translation>
+        <translation type="vanished">Probeer dit</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
-        <translation>Skryf &apos;n artikel gebaseer op die volgende dokument:</translation>
+        <translation type="vanished">Skryf &apos;n artikel gebaseer op die volgende dokument:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
-        <translation>Vertaal die volgende dokument in Engels:</translation>
+        <translation type="vanished">Vertaal die volgende dokument in Engels:</translation>
     </message>
 </context>
 <context>
     <name>EChatButton</name>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="150"/>
         <source>Turn off voice conversation</source>
-        <translation>Skakel stemgesprek af</translation>
+        <translation type="vanished">Skakel stemgesprek af</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="152"/>
         <source>Voice conversation</source>
-        <translation>Stemgesprek</translation>
+        <translation type="vanished">Stemgesprek</translation>
     </message>
 </context>
 <context>
     <name>EPPTWebView</name>
     <message>
-        <location filename="../src/gui/chat/private/epptwebview.cpp" line="67"/>
         <source>Export Item As</source>
-        <translation>Voer Item Uit As</translation>
+        <translation type="vanished">Voer Item Uit As</translation>
     </message>
 </context>
 <context>
     <name>EParserDocument</name>
     <message>
-        <location filename="../src/gui/chat/private/eparserdocument.cpp" line="57"/>
         <source>Supported files</source>
-        <translation>Ondersteunde lêers</translation>
+        <translation type="vanished">Ondersteunde lêers</translation>
+    </message>
+</context>
+<context>
+    <name>FileParser</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
+        <source>Unsupported file format</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FunctionsParser</name>
     <message>
-        <location filename="../src/tools/functionsparser.cpp" line="267"/>
         <source>Function not available</source>
-        <translation>Funksie nie beskikbaar nie</translation>
+        <translation type="vanished">Funksie nie beskikbaar nie</translation>
     </message>
 </context>
 <context>
     <name>GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="44"/>
         <source>Get a free trial account</source>
-        <translation>Kry &apos;n gratis proefrekening</translation>
+        <translation type="vanished">Kry &apos;n gratis proefrekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="61"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="62"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation>Kry rekening</translation>
+        <translation type="vanished">Kry rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="89"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>Om &apos;n rekening te ontvang dui aan dat jy die bepalings van die geleentheid verstaan en daarmee saamstem,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Geleentheidsbesonderhede&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">Om &apos;n rekening te ontvang dui aan dat jy die bepalings van die geleentheid verstaan en daarmee saamstem,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Geleentheidsbesonderhede&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="121"/>
         <source>Trial Account</source>
-        <translation>Proefrekening</translation>
+        <translation type="vanished">Proefrekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="133"/>
         <source>Save failed, please try again later</source>
-        <translation>Stoor het misluk, probeer asseblief later weer</translation>
+        <translation type="vanished">Stoor het misluk, probeer asseblief later weer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Trial account received successfully.</source>
-        <translation>Proefrekening suksesvol ontvang.</translation>
+        <translation type="vanished">Proefrekening suksesvol ontvang.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="144"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>Die aantal gebruike en duur van die proefrekening is beperk, stel asseblief jou persoonlike modelrekening betyds op! Sien gebeurtenisbesonderhede vir meer inligting.</translation>
+        <translation type="vanished">Die aantal gebruike en duur van die proefrekening is beperk, stel asseblief jou persoonlike modelrekening betyds op! Sien gebeurtenisbesonderhede vir meer inligting.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="146"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>Die Engelse ondersteuning vir proefrekeninge is nie bevredigend nie, en die aantal gebruike sowel as die tydsduur van die proefrekening is beperk. Stel asseblief jou persoonlike modelrekening betyds op!</translation>
+        <translation type="vanished">Die Engelse ondersteuning vir proefrekeninge is nie bevredigend nie, en die aantal gebruike sowel as die tydsduur van die proefrekening is beperk. Stel asseblief jou persoonlike modelrekening betyds op!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="147"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>Begin proeftydperk</translation>
+        <translation type="vanished">Begin proeftydperk</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="152"/>
         <source>The free account activity ends.</source>
-        <translation>Die gratis rekeningaktiwiteit eindig.</translation>
+        <translation type="vanished">Die gratis rekeningaktiwiteit eindig.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Kan nie aan die bediener koppel nie, gaan asseblief jou netwerk na of probeer weer later.</translation>
+        <translation type="vanished">Kan nie aan die bediener koppel nie, gaan asseblief jou netwerk na of probeer weer later.</translation>
     </message>
 </context>
 <context>
@@ -3020,141 +2465,120 @@ Moenie ooit verduideliking met vertaling kombineer of volledige vertaling na ged
 <context>
     <name>IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="199"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation>Nuutbygevoegde lêers vereis voorverwerking voordat hulle gebruik kan word, en tydens die dataverwerkingsproses kan dit &apos;n aansienlike hoeveelheid rekenaar- en stoorhulpbronne verbruik. Dataverwerking sal stop nadat data uitgevee is.</translation>
+        <translation type="vanished">Nuutbygevoegde lêers vereis voorverwerking voordat hulle gebruik kan word, en tydens die dataverwerkingsproses kan dit &apos;n aansienlike hoeveelheid rekenaar- en stoorhulpbronne verbruik. Dataverwerking sal stop nadat data uitgevee is.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation>Is jy seker jy wil hierdie kennisbasislêer uitvee?</translation>
+        <translation type="vanished">Is jy seker jy wil hierdie kennisbasislêer uitvee?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
-        <translation>Vee uit</translation>
+        <translation type="vanished">Vee uit</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="67"/>
         <source>Add</source>
-        <translation>Voeg by</translation>
+        <translation type="vanished">Voeg by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
-        <translation>Installeer asseblief eers die inbeddingsmodel-inproppe</translation>
+        <translation type="vanished">Installeer asseblief eers die inbeddingsmodel-inproppe</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="79"/>
         <source>Knowledge Base Management</source>
-        <translation>Kennisbasisbestuur</translation>
+        <translation type="vanished">Kennisbasisbestuur</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="106"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation>Hier kan die kennisbasis van die Persoonlike Kennisassistent gedefinieer word, en die Persoonlike Kennisassistent sal vrae beantwoord gebaseer op die lêers wat hieronder bygevoeg is.</translation>
+        <translation type="vanished">Hier kan die kennisbasis van die Persoonlike Kennisassistent gedefinieer word, en die Persoonlike Kennisassistent sal vrae beantwoord gebaseer op die lêers wat hieronder bygevoeg is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
         <source>Done</source>
-        <translation>Klaar</translation>
+        <translation type="vanished">Klaar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="169"/>
         <source>None</source>
-        <translation>Geen</translation>
+        <translation type="vanished">Geen</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="215"/>
         <source>File already exist</source>
-        <translation>Lêer bestaan reeds</translation>
+        <translation type="vanished">Lêer bestaan reeds</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="216"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation>Die %1-lêer bestaan reeds en kan nie weer bygevoeg word nie. Wysig asseblief die lêernaam of skrap die bestaande lêer voordat u dit weer byvoeg.</translation>
+        <translation type="vanished">Die %1-lêer bestaan reeds en kan nie weer bygevoeg word nie. Wysig asseblief die lêernaam of skrap die bestaande lêer voordat u dit weer byvoeg.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="241"/>
         <source>All files</source>
-        <translation>Alle lêers</translation>
+        <translation type="vanished">Alle lêers</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation>Hierdie funksie vereis hoë hardewarehulpbronne, en die verwysingsmaatstafkonfigurasie is: CPU Intel 11de generasie i7 of hoër; Geheue van 16GB of meer; Om &apos;n NVIDIA-grafiese kaart en &apos;n 10-reeks of hoër te hê, is die beste opsie. As die konfigurasie te laag is, kan daar probleme soos vertraging en onakkurate antwoorde wees.</translation>
+        <translation type="vanished">Hierdie funksie vereis hoë hardewarehulpbronne, en die verwysingsmaatstafkonfigurasie is: CPU Intel 11de generasie i7 of hoër; Geheue van 16GB of meer; Om &apos;n NVIDIA-grafiese kaart en &apos;n 10-reeks of hoër te hê, is die beste opsie. As die konfigurasie te laag is, kan daar probleme soos vertraging en onakkurate antwoorde wees.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>VolgSaam</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">Onvoldoende kennisbasis kapasiteit</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">Die totale kapasiteit van die kennisbasis is %1M, met &apos;n oorblywende %2. Die totale aantal lêers wat hierdie keer bygevoeg is, is %3. Kan nie die byvoeging tot die kennisbasis voltooi nie.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">Nie genoeg skyfspasie nie</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">Om die nuutbygevoegde lêers te stoor, word ten minste %1 van skyfspasie benodig. Die huidige oorblywende spasie is %2. Maak asseblief genoeg hardeskyfspasie skoon en probeer weer.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">Byvoeging tot die kennisbasis vereis die installering van die vektoriseringmodel-inprop. Gaan asseblief na die appwinkel om af te laai en te installeer.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">Moenie installeer nie</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">Installeer onmiddellik</translation>
@@ -3163,563 +2587,477 @@ Moenie ooit verduideliking met vertaling kombineer of volledige vertaling na ged
 <context>
     <name>LLM</name>
     <message>
-        <location filename="../src/llm/common/llm.cpp" line="78"/>
         <source>Vincent picture service is not supported</source>
-        <translation>Vincent-prentdiens word nie ondersteun nie</translation>
+        <translation type="vanished">Vincent-prentdiens word nie ondersteun nie</translation>
     </message>
 </context>
 <context>
     <name>LLMServerProxy</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="270"/>
         <source>GPT3.5（OpenAI）</source>
-        <translation>GPT3.5 (OpenAI)</translation>
+        <translation type="vanished">GPT3.5 (OpenAI)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="273"/>
         <source>GPT4（OpenAI）</source>
-        <translation>GPT4 (OpenAI)</translation>
+        <translation type="vanished">GPT4 (OpenAI)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="280"/>
         <source>星火大模型1.5（讯飞）</source>
-        <translation>Spark Groot Model 1.5 (iFLYTEK)</translation>
+        <translation type="vanished">Spark Groot Model 1.5 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="283"/>
         <source>星火大模型2.0（讯飞）</source>
-        <translation>Spark Groot Model 2.0 (iFLYTEK)</translation>
+        <translation type="vanished">Spark Groot Model 2.0 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="285"/>
         <source>星火大模型3.0（讯飞）</source>
-        <translation>Spark Groot Model 3.0 (iFLYTEK)</translation>
+        <translation type="vanished">Spark Groot Model 3.0 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="290"/>
         <source>ERNIE 3.5</source>
-        <translation>ERNIE 3.5</translation>
+        <translation type="vanished">ERNIE 3.5</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="293"/>
         <source>ERNIE-Bot-turbo</source>
-        <translation>ERNIE-Bot-turbo</translation>
+        <translation type="vanished">ERNIE-Bot-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="295"/>
         <source>ERNIE-Bot-4</source>
-        <translation>ERNIE-Bot-4</translation>
+        <translation type="vanished">ERNIE-Bot-4</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="275"/>
         <source>360 AI</source>
-        <translation>360 AI</translation>
+        <translation type="vanished">360 AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="278"/>
         <source>iFLYTEK-Spark</source>
-        <translation>iFLYTEK-Spark</translation>
+        <translation type="vanished">iFLYTEK-Spark</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="288"/>
         <source>Baidu-Ernie</source>
-        <translation>Baidu-Ernie</translation>
+        <translation type="vanished">Baidu-Ernie</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="299"/>
         <source>ChatGLM-turbo</source>
-        <translation>ChatGLM-turbo</translation>
+        <translation type="vanished">ChatGLM-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="301"/>
         <source>Gemini 1.5 Flash</source>
-        <translation>Gemini 1.5 Flash</translation>
+        <translation type="vanished">Gemini 1.5 Flash</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="303"/>
         <source>Gemini 1.5 Pro</source>
-        <translation>Gemini 1.5 Pro</translation>
+        <translation type="vanished">Gemini 1.5 Pro</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="305"/>
         <source>TextToImage(Local)</source>
-        <translation>TextNaBeeld(Plaaslik)</translation>
+        <translation type="vanished">TextNaBeeld(Plaaslik)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="307"/>
         <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <translation type="vanished">YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="309"/>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="311"/>
         <source>Custom</source>
-        <translation>Pasgemaak</translation>
+        <translation type="vanished">Pasgemaak</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="313"/>
         <source>Private deployment model</source>
-        <translation>Privaat ontplooiingsmodel</translation>
+        <translation type="vanished">Privaat ontplooiingsmodel</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="315"/>
         <source>OpenRouter</source>
-        <translation>OpenRouter</translation>
+        <translation type="vanished">OpenRouter</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="317"/>
         <source>DeepSeek-R1</source>
-        <translation>DeepSeek-R1</translation>
+        <translation type="vanished">DeepSeek-R1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="319"/>
         <source>DeepSeek</source>
-        <translation>DeepSeek</translation>
+        <translation type="vanished">DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="322"/>
         <source>unknown model</source>
-        <translation>onbekende model</translation>
+        <translation type="vanished">onbekende model</translation>
     </message>
 </context>
 <context>
     <name>LLMUtils</name>
     <message>
-        <location filename="../src/llm/common/llmutils.cpp" line="114"/>
         <source>Your system environment is Linux, and the user home path is</source>
-        <translation>Jou stelselomgewing is Linux, en die gebruikertuisblad is</translation>
+        <translation type="vanished">Jou stelselomgewing is Linux, en die gebruikertuisblad is</translation>
     </message>
 </context>
 <context>
     <name>LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation>Installeer</translation>
+        <translation type="vanished">Installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation>Opdateer</translation>
+        <translation type="vanished">Opdateer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation>Verwyder</translation>
+        <translation type="vanished">Verwyder</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="32"/>
         <source>uninstall</source>
-        <translation>verwyder</translation>
+        <translation type="vanished">verwyder</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation>Plaaslike model</translation>
+        <translation type="vanished">Plaaslike model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Text to image model</source>
-        <translation>Teks-na-beeld model</translation>
+        <translation type="vanished">Teks-na-beeld model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation>Gebruik &apos;n plaaslike model om beelde te genereer. Nadat dit aangeskakel is, kan jy die model in die modellys in die kletskoppelvlak kies.</translation>
+        <translation type="vanished">Gebruik &apos;n plaaslike model om beelde te genereer. Nadat dit aangeskakel is, kan jy die model in die modellys in die kletskoppelvlak kies.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>speech model</source>
-        <translation>spraakmodel</translation>
+        <translation type="vanished">spraakmodel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation>Wanneer aangeskakel, sal die spraakherkenning en spraaklees in die kletskoppelvlak die plaaslike model gebruik sonder &apos;n internetverbinding.</translation>
+        <translation type="vanished">Wanneer aangeskakel, sal die spraakherkenning en spraaklees in die kletskoppelvlak die plaaslike model gebruik sonder &apos;n internetverbinding.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
         <source>ULLM-1.5B</source>
-        <translation>ULLM-1.5B</translation>
+        <translation type="vanished">ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
         <source>ULLM-7B</source>
-        <translation>ULLM-7B</translation>
+        <translation type="vanished">ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation>DeepSeek-R1-1.5B</translation>
+        <translation type="vanished">DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>UOS AI large model</source>
-        <translation>UOS AI groot model</translation>
+        <translation type="vanished">UOS AI groot model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation>Sodra geïnstalleer, het jy nie &apos;n internetverbinding nodig om UOS AI te gebruik nie.</translation>
+        <translation type="vanished">Sodra geïnstalleer, het jy nie &apos;n internetverbinding nodig om UOS AI te gebruik nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation>Laai op eie risiko van die oopbron-gemeenskap af. Gebruik dit in UOS AI Assistant ná installasie.</translation>
+        <translation type="vanished">Laai op eie risiko van die oopbron-gemeenskap af. Gebruik dit in UOS AI Assistant ná installasie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>Embedding Plugins</source>
-        <translation>Inbedding Inproppe</translation>
+        <translation type="vanished">Inbedding Inproppe</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation>Nadat die model geïnstalleer is, kan die Stelselassistent en die Persoonlike Kennisassistent uitgevoer word.</translation>
+        <translation type="vanished">Nadat die model geïnstalleer is, kan die Stelselassistent en die Persoonlike Kennisassistent uitgevoer word.</translation>
     </message>
 </context>
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
-        <translation>Suksesvol verbind</translation>
+        <translation type="vanished">Suksesvol verbind</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
-        <translation>Gebruikersooreenkoms</translation>
+        <translation type="vanished">Gebruikersooreenkoms</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI Gebruikersooreenkoms</translation>
+        <translation type="vanished">UOS AI Gebruikersooreenkoms</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
-        <translation>Lees en aanvaar</translation>
+        <translation type="vanished">Lees en aanvaar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
-        <translation>Volmaginstellings</translation>
+        <translation type="vanished">Volmaginstellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
-        <translation>Gaan na instellings</translation>
+        <translation type="vanished">Gaan na instellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
-        <translation>Modelkonfigurasie</translation>
+        <translation type="vanished">Modelkonfigurasie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
-        <translation>Die gratis rekeningaktiwiteit eindig.</translation>
+        <translation type="vanished">Die gratis rekeningaktiwiteit eindig.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation>Byvoeging tot die kennisbasis vereis die installering van die vektoriseringmodel-inprop. Gaan asseblief na die appwinkel om af te laai en te installeer.</translation>
+        <translation type="vanished">Byvoeging tot die kennisbasis vereis die installering van die vektoriseringmodel-inprop. Gaan asseblief na die appwinkel om af te laai en te installeer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation>Moenie installeer nie</translation>
+        <translation type="vanished">Moenie installeer nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation>Installeer onmiddellik</translation>
+        <translation type="vanished">Installeer onmiddellik</translation>
     </message>
 </context>
 <context>
     <name>ModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="54"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>Is jy seker jy wil hierdie model skrap?</translation>
+        <translation type="vanished">Is jy seker jy wil hierdie model skrap?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="55"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="56"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
 </context>
 <context>
     <name>ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="31"/>
         <source>Get a free account</source>
-        <translation>Kry &apos;n gratis rekening</translation>
+        <translation type="vanished">Kry &apos;n gratis rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
-        <translation>Skrap</translation>
+        <translation type="vanished">Skrap</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="41"/>
         <source>Add</source>
-        <translation>Voeg by</translation>
+        <translation type="vanished">Voeg by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="48"/>
         <source>Online model</source>
-        <translation>Aanlyn model</translation>
+        <translation type="vanished">Aanlyn model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
         <source>Done</source>
-        <translation>Klaar</translation>
+        <translation type="vanished">Klaar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="107"/>
         <source>None</source>
-        <translation>Geen</translation>
+        <translation type="vanished">Geen</translation>
     </message>
 </context>
 <context>
     <name>ModifyModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="27"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="37"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="47"/>
         <source>APIKey</source>
-        <translation>APISleutel</translation>
+        <translation type="vanished">APISleutel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="57"/>
         <source>APISecret</source>
-        <translation>APIGeheim</translation>
+        <translation type="vanished">APIGeheim</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="67"/>
         <source>Account</source>
-        <translation>Rekening</translation>
+        <translation type="vanished">Rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="73"/>
         <source>Model Name</source>
-        <translation>Modelnaam</translation>
+        <translation type="vanished">Modelnaam</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="83"/>
         <source>API Address</source>
-        <translation>API-adres</translation>
+        <translation type="vanished">API-adres</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="96"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Vereis, om veelvuldige modelle te onderskei</translation>
+        <translation type="vanished">Vereis, om veelvuldige modelle te onderskei</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="100"/>
         <source>Domain</source>
-        <translation>Domein</translation>
+        <translation type="vanished">Domein</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="136"/>
         <source>Cancel</source>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="138"/>
         <source>Confirm</source>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="298"/>
         <source>No more than 20 characters</source>
-        <translation>Nie meer as 20 karakters nie</translation>
+        <translation type="vanished">Nie meer as 20 karakters nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="337"/>
         <source>The account name already exists, please change it</source>
-        <translation>Die rekenaam bestaan reeds, verander dit asseblief</translation>
+        <translation type="vanished">Die rekenaam bestaan reeds, verander dit asseblief</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
+        <source>The image file does not exist: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
+        <source>OCR did not recognize the text content</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="192"/>
         <source>In data processing</source>
-        <translation>In dataverwerking</translation>
+        <translation type="vanished">In dataverwerking</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="204"/>
         <source>Data processing error</source>
-        <translation>Dataverwerking fout</translation>
+        <translation type="vanished">Dataverwerking fout</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="216"/>
         <source>File error, unable to process, please delete.</source>
-        <translation>Lêer fout, kan nie verwerk nie, skrap asseblief.</translation>
+        <translation type="vanished">Lêer fout, kan nie verwerk nie, skrap asseblief.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="503"/>
         <source>UOS AI</source>
-        <translation>UOS KI</translation>
+        <translation type="vanished">UOS KI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="506"/>
         <source>UOS System Assistant</source>
-        <translation>UOS Stelselassistent</translation>
+        <translation type="vanished">UOS Stelselassistent</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="509"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin Stelselassistent</translation>
+        <translation type="vanished">Deepin Stelselassistent</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="512"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Persoonlike Kennisassistent</translation>
+        <translation type="vanished">Persoonlike Kennisassistent</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="515"/>
         <source>AI Writing</source>
-        <translation>KI Skryfwerk</translation>
+        <translation type="vanished">KI Skryfwerk</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="518"/>
         <source>AI Text Processing</source>
-        <translation>KI Teksverwerking</translation>
+        <translation type="vanished">KI Teksverwerking</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="521"/>
         <source>AI Translation</source>
-        <translation>KI Vertaling</translation>
+        <translation type="vanished">KI Vertaling</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="534"/>
         <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation>Stelsel se Omvattende KI-assistent.</translation>
+        <translation type="vanished">Stelsel se Omvattende KI-assistent.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="537"/>
         <source>Assists you with UOS system-related inquiries.</source>
-        <translation>Help jou met UOS-stelselverwante navrae.</translation>
+        <translation type="vanished">Help jou met UOS-stelselverwante navrae.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="540"/>
         <source>Assists you with Deepin system-related inquiries.</source>
-        <translation>Help jou met Deepin-stelselverwante navrae.</translation>
+        <translation type="vanished">Help jou met Deepin-stelselverwante navrae.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="546"/>
         <source>Write Based on Your Topic and Requirements.</source>
-        <translation>Skryf gebaseer op jou onderwerp en vereistes.</translation>
+        <translation type="vanished">Skryf gebaseer op jou onderwerp en vereistes.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="543"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation>Beantwoord vrae gebaseer op jou persoonlike kennisbasis.</translation>
+        <translation type="vanished">Beantwoord vrae gebaseer op jou persoonlike kennisbasis.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="549"/>
         <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation>In staat om teksverwerkingstake soos opsomming, proeflees en herskryf te hanteer.</translation>
+        <translation type="vanished">In staat om teksverwerkingstake soos opsomming, proeflees en herskryf te hanteer.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="552"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation>Jou Vertaalassistent, Meester in Veelvuldige Tale.</translation>
+        <translation type="vanished">Jou Vertaalassistent, Meester in Veelvuldige Tale.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
         <source>Search</source>
         <translation>Soek</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
         <source>Explain</source>
         <translation>Verduidelik</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
         <source>Summary</source>
         <translation>Opsomming</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
         <source>Translate</source>
         <translation>Vertaal</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
         <source>Continue Writing</source>
         <translation>Gaan voort met Skryf</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
         <source>Expand</source>
         <translation>Brei uit</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
         <source>Polish</source>
         <translation>Poleer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
         <source>Correct</source>
         <translation>Korrigeer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
         <source>Add to the AI knowledge base</source>
         <translation>Voeg by die AI-kennisbasis</translation>
     </message>
@@ -3820,7 +3158,7 @@ Moenie ooit verduideliking met vertaling kombineer of volledige vertaling na ged
         <translation>Arabies (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
+        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3830,163 +3168,268 @@ Inleiding: Skeduleer intelligente stelselgereedskap om komplekse stelseloperasie
 
 Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as projekmateriaal en rangskik hulle in numeriese volgorde.</translation>
     </message>
+    <message>
+        <location filename="../src/assistant/assistantinfo.h" line="23"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
+        <source>Custom</source>
+        <translation type="unfinished">Pasgemaak</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
+        <source>Private deployment model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="obsolete">Die veld &apos;mcpServers&apos; ontbreek.</translation>
+    </message>
+    <message>
+        <source>no valid mcp server.</source>
+        <translation type="obsolete">geen geldige mcp-bediener nie.</translation>
+    </message>
+    <message>
+        <source>url field cannot be empty.</source>
+        <translation type="obsolete">url-veld mag nie leeg wees nie.</translation>
+    </message>
+    <message>
+        <source>command field cannot be empty.</source>
+        <translation type="obsolete">command-veld mag nie leeg wees nie.</translation>
+    </message>
+    <message>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="obsolete">Die veld &apos;command&apos; of &apos;url&apos; ontbreek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ResearchTools</name>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
+        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
+        <source>The uos-ai-agent plugin must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
+        <source>Download Now</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ServerCodeTranslation</name>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="16"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Kan nie aan die bediener koppel nie, gaan asseblief jou netwerk na of probeer weer later.</translation>
+        <translation type="vanished">Kan nie aan die bediener koppel nie, gaan asseblief jou netwerk na of probeer weer later.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="19"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Verbinding het misluk, gaan asseblief die ingevulde inligting na.</translation>
+        <translation type="vanished">Verbinding het misluk, gaan asseblief die ingevulde inligting na.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="22"/>
         <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation>Jammer, volgens toepaslike wette, regulasies en beleide word die resultate nie tans vertoon nie.</translation>
+        <translation type="vanished">Jammer, volgens toepaslike wette, regulasies en beleide word die resultate nie tans vertoon nie.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation>Operasie gekanselleer.</translation>
+        <translation type="vanished">Operasie gekanselleer.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="28"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>Jou gratis rekening het verval, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
+        <translation type="vanished">Jou gratis rekening het verval, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="31"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>Jou gratis rekeningkwota is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
+        <translation type="vanished">Jou gratis rekeningkwota is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="34"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation>Jou gratis rekeningkwota vir gesprekke is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
+        <translation type="vanished">Jou gratis rekeningkwota vir gesprekke is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="37"/>
         <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation>Jou gratis rekeningkwota vir teks-na-beeld is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
+        <translation type="vanished">Jou gratis rekeningkwota vir teks-na-beeld is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="40"/>
         <source>Invalid input device</source>
-        <translation>Ongeldige invoerapparaat</translation>
+        <translation type="vanished">Ongeldige invoerapparaat</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="43"/>
         <source>Invalid output device</source>
-        <translation>Ongeldige uitvoerapparaat</translation>
+        <translation type="vanished">Ongeldige uitvoerapparaat</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="46"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Jammer, geen ooreenstemmende operasies is gevind nie.</translation>
+        <translation type="vanished">Jammer, geen ooreenstemmende operasies is gevind nie.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="49"/>
         <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation>Die totale aantal karakters in die gesprek het die limiet oorskry, maak asseblief die gesprekgeskiedenis skoon en probeer weer.</translation>
+        <translation type="vanished">Die totale aantal karakters in die gesprek het die limiet oorskry, maak asseblief die gesprekgeskiedenis skoon en probeer weer.</translation>
+    </message>
+</context>
+<context>
+    <name>ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="unfinished">Die veld &apos;mcpServers&apos; ontbreek.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
+        <source>no valid mcp server.</source>
+        <translation type="unfinished">geen geldige mcp-bediener nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
+        <source>Only one MCP service can be edited at a time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
+        <source>url field cannot be empty.</source>
+        <translation type="unfinished">url-veld mag nie leeg wees nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
+        <source>command field cannot be empty.</source>
+        <translation type="unfinished">command-veld mag nie leeg wees nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="unfinished">Die veld &apos;command&apos; of &apos;url&apos; ontbreek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
+        <source>JSON configuration format is invalid.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Session</name>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="359"/>
         <source>UOS AI</source>
-        <translation>UOS KI</translation>
+        <translation type="vanished">UOS KI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="361"/>
         <source>UOS System Assistant</source>
-        <translation>UOS Stelselassistent</translation>
+        <translation type="vanished">UOS Stelselassistent</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="363"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin Stelselassistent</translation>
+        <translation type="vanished">Deepin Stelselassistent</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="365"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Persoonlike Kennisassistent</translation>
+        <translation type="vanished">Persoonlike Kennisassistent</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="367"/>
         <source>AI Writing</source>
-        <translation>KI Skryfwerk</translation>
+        <translation type="vanished">KI Skryfwerk</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="369"/>
         <source>AI Text Processing</source>
-        <translation>KI Teksverwerking</translation>
+        <translation type="vanished">KI Teksverwerking</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="371"/>
         <source>AI Translation</source>
-        <translation>KI Vertaling</translation>
+        <translation type="vanished">KI Vertaling</translation>
     </message>
 </context>
 <context>
     <name>SessionPrivate</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="313"/>
-        <location filename="../src/wrapper/session_p.cpp" line="493"/>
-        <location filename="../src/wrapper/session_p.cpp" line="607"/>
-        <location filename="../src/wrapper/session_p.cpp" line="856"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS KI vereis dat &apos;n KI-modelrekening opgestel word voordat dit gebruik kan word. Stel asseblief eers &apos;n modelrekening op.</translation>
+        <translation type="vanished">UOS KI vereis dat &apos;n KI-modelrekening opgestel word voordat dit gebruik kan word. Stel asseblief eers &apos;n modelrekening op.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="921"/>
         <source>Agent server is not available.</source>
-        <translation>Agent-bediener is nie beskikbaar nie.</translation>
+        <translation type="vanished">Agent-bediener is nie beskikbaar nie.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1285"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Suksesvol Geëis</translation>
+        <translation type="obsolete">Suksesvol Geëis</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1288"/>
         <source>Account not found</source>
-        <translation>Rekening nie gevind nie</translation>
+        <translation type="vanished">Rekening nie gevind nie</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1291"/>
         <source>Only support deepseek account</source>
-        <translation>Ondersteun slegs deepseek-rekeninge</translation>
+        <translation type="vanished">Ondersteun slegs deepseek-rekeninge</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1298"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation>Jy het reeds aan die geleentheid deelgeneem en kan nie die beloning weer eis nie.</translation>
+        <translation type="vanished">Jy het reeds aan die geleentheid deelgeneem en kan nie die beloning weer eis nie.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1301"/>
         <source>Server system error</source>
-        <translation>Stelselfout op bediener</translation>
+        <translation type="vanished">Stelselfout op bediener</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1304"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Kon Nie Eis Nie. Probeer Weereens.</translation>
+        <translation type="obsolete">Kon Nie Eis Nie. Probeer Weereens.</translation>
+    </message>
+</context>
+<context>
+    <name>TextParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
+        <source>Unable to open file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
+        <source>The file content is in binary format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
+        <source>Unable to read file: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Terugvoer</translation>
     </message>
@@ -4082,35 +3525,34 @@ Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as 
 <context>
     <name>TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="71"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation>Die teks wat u gekies het, het die 5000 karakter limiet oorskry.</translation>
+        <translation type="vanished">Die teks wat u gekies het, het die 5000 karakter limiet oorskry.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>Ek het nog nie hierdie funksie geïmplementeer nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>diens is nie beskikbaar nie!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Ongeldige parameter!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
         <translation>Hierdie toepassing kan nie gevind word nie!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>Kon nie toepassing begin nie!</translation>
     </message>
@@ -4118,870 +3560,809 @@ Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as 
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation>Helderheid is reeds op maksimum en kan nie verder verhoog word nie.</translation>
+        <translation type="vanished">Helderheid is reeds op maksimum en kan nie verder verhoog word nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation>Helderheid is reeds op minimum en kan nie verder verlaag word nie.</translation>
+        <translation type="vanished">Helderheid is reeds op minimum en kan nie verder verlaag word nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
-        <translation>Jou stelsel geheue is %0.</translation>
+        <translation type="vanished">Jou stelsel geheue is %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation>Die taalinstellingskoppelvlak is oopgemaak. Stel dit asseblief in hierdie koppelvlak.</translation>
+        <translation type="vanished">Die taalinstellingskoppelvlak is oopgemaak. Stel dit asseblief in hierdie koppelvlak.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
-        <translation>Die huidige modus is reeds %1 modus.</translation>
+        <translation type="vanished">Die huidige modus is reeds %1 modus.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation>Kan nie sluit nie omdat die huidige modus %1 nie ooreenstem met die teikenmodus nie.</translation>
+        <translation type="vanished">Kan nie sluit nie omdat die huidige modus %1 nie ooreenstem met die teikenmodus nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation>Balansmodus kan nie afgeskakel word nie.</translation>
+        <translation type="vanished">Balansmodus kan nie afgeskakel word nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
-        <translation>Die slotskerm is vir jou oopgemaak</translation>
+        <translation type="vanished">Die slotskerm is vir jou oopgemaak</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation>Skermkiekie of opname is voltooi</translation>
+        <translation type="vanished">Skermkiekie of opname is voltooi</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation>Slegs een skerm, kan nie skermmodus verander nie.</translation>
+        <translation type="vanished">Slegs een skerm, kan nie skermmodus verander nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation>Dit is dieselfde as die huidige vertoonmodus. Probeer asseblief weer.</translation>
+        <translation type="vanished">Dit is dieselfde as die huidige vertoonmodus. Probeer asseblief weer.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation>Slegs een skerm, kan nie skerm verander nie.</translation>
+        <translation type="vanished">Slegs een skerm, kan nie skerm verander nie.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
-        <translation>Jou opdrag is uitgereik.</translation>
+        <translation type="vanished">Jou opdrag is uitgereik.</translation>
     </message>
 </context>
 <context>
     <name>UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="47"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI Gebruikersooreenkoms</translation>
+        <translation type="vanished">UOS AI Gebruikersooreenkoms</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="80"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>Ek bevestig dat ek ouer as 18 jaar is. Ek erken en stem in dat die inhoud wat ek via die Toepassing stuur en ontvang direkte data-uitruilings met die groot model diensverskaffer is en niks met die Maatskappy te doen het nie.</translation>
+        <translation type="vanished">Ek bevestig dat ek ouer as 18 jaar is. Ek erken en stem in dat die inhoud wat ek via die Toepassing stuur en ontvang direkte data-uitruilings met die groot model diensverskaffer is en niks met die Maatskappy te doen het nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="124"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>Ek stem in om deel te neem aan die gebruikerservaringsplan van die Toepassing, en magtig jou maatskappy om die inhoud wat ek stuur terwyl ek die Toepassing gebruik, die tyd van stuur, die tipe aangevraagde groot model, die spesifieke toepassing en of die teks die beeld suksesvol gegenereer het, in te samel, om sodoende die dienskwaliteit te verbeter en die bedryfsondervinding te verbeter. (As jy weier om die bogenoemde inligting te verskaf, sal dit nie jou normale gebruik van die Toepassing beïnvloed nie.)</translation>
+        <translation type="vanished">Ek stem in om deel te neem aan die gebruikerservaringsplan van die Toepassing, en magtig jou maatskappy om die inhoud wat ek stuur terwyl ek die Toepassing gebruik, die tyd van stuur, die tipe aangevraagde groot model, die spesifieke toepassing en of die teks die beeld suksesvol gegenereer het, in te samel, om sodoende die dienskwaliteit te verbeter en die bedryfsondervinding te verbeter. (As jy weier om die bogenoemde inligting te verskaf, sal dit nie jou normale gebruik van die Toepassing beïnvloed nie.)</translation>
     </message>
 </context>
 <context>
     <name>WXQFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
-        <translation>Bedienerse interne fout</translation>
+        <translation type="vanished">Bedienerse interne fout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="10"/>
         <source>Service is temporarily unavailable</source>
-        <translation>Diens is tydelik onbeskikbaar</translation>
+        <translation type="vanished">Diens is tydelik onbeskikbaar</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="11"/>
         <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation>Die API wat geroep word, bestaan nie. Gaan asseblief die versoek-URL na en probeer weer. Gewoonlik is daar nie-Engelse karakters in die URL, soos &quot;-&quot;. Jy kan dit handmatig invoer en weer probeer.</translation>
+        <translation type="vanished">Die API wat geroep word, bestaan nie. Gaan asseblief die versoek-URL na en probeer weer. Gewoonlik is daar nie-Engelse karakters in die URL, soos &quot;-&quot;. Jy kan dit handmatig invoer en weer probeer.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="13"/>
         <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation>Geen koppelvlakoproep-toestemming nie, die toepaslike Qianfan-koppelvlak is nie nagegaan toe die toepassing geskep is nie</translation>
+        <translation type="vanished">Geen koppelvlakoproep-toestemming nie, die toepaslike Qianfan-koppelvlak is nie nagegaan toe die toepassing geskep is nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation>Modeloproepfout: Die modelversoeklimiet is bereik, of die model is vanlyn. Voorstelle: Voeg die model weer by, of kontak die kliëntediens van die groot modeldiensverskaffer om hierdie probleem op te los.</translation>
+        <translation type="vanished">Modeloproepfout: Die modelversoeklimiet is bereik, of die model is vanlyn. Voorstelle: Voeg die model weer by, of kontak die kliëntediens van die groot modeldiensverskaffer om hierdie probleem op te los.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="14"/>
         <source>Failed to obtain token</source>
-        <translation>Kon nie token verkry nie</translation>
+        <translation type="vanished">Kon nie token verkry nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="15"/>
         <source>IAM authentication failed</source>
-        <translation>IAM-verifikasie het misluk</translation>
+        <translation type="vanished">IAM-verifikasie het misluk</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="16"/>
         <source>The application does not exist or failed to be created</source>
-        <translation>Die toepassing bestaan nie of kon nie geskep word nie</translation>
+        <translation type="vanished">Die toepassing bestaan nie of kon nie geskep word nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="17"/>
         <source>The number of requests per day exceeds the limit</source>
-        <translation>Die aantal versoeke per dag oorskry die limiet</translation>
+        <translation type="vanished">Die aantal versoeke per dag oorskry die limiet</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="19"/>
         <source>The total number of requests exceeds the limit</source>
-        <translation>Die totale aantal versoeke oorskry die limiet</translation>
+        <translation type="vanished">Die totale aantal versoeke oorskry die limiet</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="20"/>
         <source>Invalid access_token parameter</source>
-        <translation>Ongeldige access_token-parameter</translation>
+        <translation type="vanished">Ongeldige access_token-parameter</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="21"/>
         <source>access_token is invalid</source>
-        <translation>access_token is ongeldig</translation>
+        <translation type="vanished">access_token is ongeldig</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="22"/>
         <source>access token expires</source>
-        <translation>access token verval</translation>
+        <translation type="vanished">access token verval</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="23"/>
         <source>Service error, template does not exist</source>
-        <translation>Diensfout, sjabloon bestaan nie</translation>
+        <translation type="vanished">Diensfout, sjabloon bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="24"/>
         <source>A system error occurred, please try again later</source>
-        <translation>&apos;n Stelselfout het voorgekom, probeer asseblief later weer</translation>
+        <translation type="vanished">&apos;n Stelselfout het voorgekom, probeer asseblief later weer</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="25"/>
         <source>The knowledge base server cannot be accessed</source>
-        <translation>Die kennisbassisbediener kan nie verkry word nie</translation>
+        <translation type="vanished">Die kennisbassisbediener kan nie verkry word nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="26"/>
         <source>Knowledge base data download exception</source>
-        <translation>Kennisbassisdata-aflaai-uitsondering</translation>
+        <translation type="vanished">Kennisbassisdata-aflaai-uitsondering</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="27"/>
         <source>Prompt word is too long</source>
-        <translation>Aansporingswoord is te lank</translation>
+        <translation type="vanished">Aansporingswoord is te lank</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="28"/>
         <source>Model does not exist</source>
-        <translation>Model bestaan nie</translation>
+        <translation type="vanished">Model bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="29"/>
         <source>Request parameter error</source>
-        <translation>Versoekparameterfout</translation>
+        <translation type="vanished">Versoekparameterfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="30"/>
         <source>Image processing failed</source>
-        <translation>Beeldverwerking het misluk</translation>
+        <translation type="vanished">Beeldverwerking het misluk</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="31"/>
         <source>Service handling exception error</source>
-        <translation>Dienshanteringsuitsonderingsfout</translation>
+        <translation type="vanished">Dienshanteringsuitsonderingsfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="32"/>
         <source>Service internal error</source>
-        <translation>Diensinterne fout</translation>
+        <translation type="vanished">Diensinterne fout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="33"/>
         <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation>Die invoerparameterformaat is verkeerd, soos ontbrekende noodsaaklike parameters.</translation>
+        <translation type="vanished">Die invoerparameterformaat is verkeerd, soos ontbrekende noodsaaklike parameters.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="34"/>
         <source>The input parameter body is not in standard JSON format</source>
-        <translation>Die invoerparameterliggaam is nie in standaard JSON-formaat nie</translation>
+        <translation type="vanished">Die invoerparameterliggaam is nie in standaard JSON-formaat nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="35"/>
         <source>Parameter verification is illegal</source>
-        <translation>Parameterverifikasie is onwettig</translation>
+        <translation type="vanished">Parameterverifikasie is onwettig</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="36"/>
         <source>Permission control error</source>
-        <translation>Toestemmingsbeheerfout</translation>
+        <translation type="vanished">Toestemmingsbeheerfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="37"/>
         <source>Customized model service apiname does not exist</source>
-        <translation>Vervaardigde modeldiens apiname bestaan nie</translation>
+        <translation type="vanished">Vervaardigde modeldiens apiname bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="38"/>
         <source>Service internal error, please try again later</source>
-        <translation>Diensinterne fout, probeer asseblief later weer</translation>
+        <translation type="vanished">Diensinterne fout, probeer asseblief later weer</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="39"/>
         <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation>Onwettige HTTP-metode, ondersteun tans slegs POST-versoeke</translation>
+        <translation type="vanished">Onwettige HTTP-metode, ondersteun tans slegs POST-versoeke</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="40"/>
         <source>The requested content exceeds the large model internal limit</source>
-        <translation>Die aangevraagde inhoud oorskry die interne limiet van die groot model</translation>
+        <translation type="vanished">Die aangevraagde inhoud oorskry die interne limiet van die groot model</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="41"/>
         <source>internal error</source>
-        <translation>interne fout</translation>
+        <translation type="vanished">interne fout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="42"/>
         <source>Vincent diagram model service timeout</source>
-        <translation>Vincent-diagrammodeldiens het uitgetel</translation>
+        <translation type="vanished">Vincent-diagrammodeldiens het uitgetel</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="43"/>
         <source>There are security issues with prompt and negative_prompt</source>
-        <translation>Daar is sekuriteitskwessies met prompt en negative_prompt</translation>
+        <translation type="vanished">Daar is sekuriteitskwessies met prompt en negative_prompt</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="44"/>
         <source>There are security issues with output images</source>
-        <translation>Daar is sekuriteitskwessies met uitvoerbeelde</translation>
+        <translation type="vanished">Daar is sekuriteitskwessies met uitvoerbeelde</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="46"/>
         <source>Parameter error</source>
-        <translation>Parameterfout</translation>
+        <translation type="vanished">Parameterfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="47"/>
         <source>No access</source>
-        <translation>Geen toegang nie</translation>
+        <translation type="vanished">Geen toegang nie</translation>
     </message>
 </context>
 <context>
     <name>WXQFText2Image</name>
     <message>
-        <location filename="../src/llm/baidu/wxqftext2image.cpp" line="27"/>
         <source>The image description exceeds the 256 character limit</source>
-        <translation>Die beeldbeskrywing oorskry die 256-karakterlimiet</translation>
+        <translation type="vanished">Die beeldbeskrywing oorskry die 256-karakterlimiet</translation>
     </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
         <source>Welcome to UOS AI</source>
-        <translation>Welkom by UOS AI</translation>
+        <translation type="vanished">Welkom by UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="75"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation>UOS AI, jou slim assistent, is ontwerp om jou produktiwiteit te verbeter en &apos;n hoë-gehalte werkservaring te geniet.</translation>
+        <translation type="vanished">UOS AI, jou slim assistent, is ontwerp om jou produktiwiteit te verbeter en &apos;n hoë-gehalte werkservaring te geniet.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="100"/>
         <source>Get a free trial account</source>
-        <translation>Kry &apos;n gratis proefrekening</translation>
+        <translation type="vanished">Kry &apos;n gratis proefrekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation>Voeg Model by</translation>
+        <translation type="vanished">Voeg Model by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="131"/>
         <source>Start using</source>
-        <translation>Begin gebruik</translation>
+        <translation type="vanished">Begin gebruik</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>Ek bevestig dat ek ouer as 18 jaar is. Ek erken en stem in tot die &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Gebruikersooreenkoms&quot;&lt;/a&gt;, en die inhoud wat ek via die Toepassing stuur en ontvang, is direkte data-uitruilings met die groot modeldiensverskaffer en het niks met die Maatskappy te doen nie.</translation>
+        <translation type="vanished">Ek bevestig dat ek ouer as 18 jaar is. Ek erken en stem in tot die &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Gebruikersooreenkoms&quot;&lt;/a&gt;, en die inhoud wat ek via die Toepassing stuur en ontvang, is direkte data-uitruilings met die groot modeldiensverskaffer en het niks met die Maatskappy te doen nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>Die ontvangs van &apos;n rekening dui aan dat u die bepalings van die gebeurtenis verstaan en daarmee saamstem,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Gebeurtenisbesonderhede&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">Die ontvangs van &apos;n rekening dui aan dat u die bepalings van die gebeurtenis verstaan en daarmee saamstem,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Gebeurtenisbesonderhede&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Trial Account</source>
-        <translation>Proefrekening</translation>
+        <translation type="vanished">Proefrekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="292"/>
         <source>Save failed, please try again later</source>
-        <translation>Stoor het misluk, probeer asseblief later weer</translation>
+        <translation type="vanished">Stoor het misluk, probeer asseblief later weer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="301"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished">UOS AI试用账号领取成功！</translation>
+        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="304"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>Die aantal gebruike en duur van die proefrekening is beperk, stel asseblief u persoonlike modelrekening betyds op! Sien gebeurtenisbesonderhede vir besonderhede.</translation>
+        <translation type="vanished">Die aantal gebruike en duur van die proefrekening is beperk, stel asseblief u persoonlike modelrekening betyds op! Sien gebeurtenisbesonderhede vir besonderhede.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="306"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>Die Engelse ondersteuning vir proefrekeninge is nie bevredigend nie, en die aantal gebruike sowel as die tydsduur van die proefrekening is beperk. Stel asseblief jou persoonlike modelrekening betyds op!</translation>
+        <translation type="vanished">Die Engelse ondersteuning vir proefrekeninge is nie bevredigend nie, en die aantal gebruike sowel as die tydsduur van die proefrekening is beperk. Stel asseblief jou persoonlike modelrekening betyds op!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="307"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>Begin proef</translation>
+        <translation type="vanished">Begin proef</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="314"/>
         <source>The free account activity ends.</source>
-        <translation>Die gratis rekeningaktiwiteit eindig.</translation>
+        <translation type="vanished">Die gratis rekeningaktiwiteit eindig.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="322"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Kan nie aan die bediener koppel nie, gaan asseblief u netwerk na of probeer later weer.</translation>
+        <translation type="vanished">Kan nie aan die bediener koppel nie, gaan asseblief u netwerk na of probeer later weer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="343"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>Ek stem in om deel te neem aan die gebruikerservaringsplan van die Toepassing, en magtig u maatskappy om die inhoud wat ek stuur terwyl ek die Toepassing gebruik, die tyd van stuur, die tipe aangevraagde groot model, die spesifieke toepassing en of die teks die beeld suksesvol gegenereer het, in te samel, om sodoende die diensgehalte te verbeter en die bedryfsondervinding te verbeter. (As u weier om die bogenoemde inligting te verskaf, sal dit nie u normale gebruik van die Toepassing beïnvloed nie.)</translation>
+        <translation type="vanished">Ek stem in om deel te neem aan die gebruikerservaringsplan van die Toepassing, en magtig u maatskappy om die inhoud wat ek stuur terwyl ek die Toepassing gebruik, die tyd van stuur, die tipe aangevraagde groot model, die spesifieke toepassing en of die teks die beeld suksesvol gegenereer het, in te samel, om sodoende die diensgehalte te verbeter en die bedryfsondervinding te verbeter. (As u weier om die bogenoemde inligting te verskaf, sal dit nie u normale gebruik van die Toepassing beïnvloed nie.)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
+    </message>
+</context>
+<context>
+    <name>WorkspaceStore</name>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
+        <source>Note: Part of the document content may be generated by AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
+        <source>Word files (*.docx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
+        <source>PDF files (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
+        <source>Markdown files (*.md)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
+        <source>Save Article</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>XFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="9"/>
         <source>Error while upgrading to WebSocket</source>
-        <translation>Fout tydens opgradering na WebSocket</translation>
+        <translation type="vanished">Fout tydens opgradering na WebSocket</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="10"/>
         <source>Error reading user&apos;s message via WebSocket</source>
-        <translation>Fout met lees van gebruiker se boodskap via WebSocket</translation>
+        <translation type="vanished">Fout met lees van gebruiker se boodskap via WebSocket</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="11"/>
         <source>Error sending message to user via WebSocket</source>
-        <translation>Fout met stuur van boodskap aan gebruiker via WebSocket</translation>
+        <translation type="vanished">Fout met stuur van boodskap aan gebruiker via WebSocket</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="12"/>
         <source>The user&apos;s message format is incorrect</source>
-        <translation>Die gebruiker se boodskapformaat is verkeerd</translation>
+        <translation type="vanished">Die gebruiker se boodskapformaat is verkeerd</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="13"/>
         <source>Schema error for user data</source>
-        <translation>Skemafout vir gebruikersdata</translation>
+        <translation type="vanished">Skemafout vir gebruikersdata</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="14"/>
         <source>User parameter value is wrong</source>
-        <translation>Gebruiker se parameterwaarde is verkeerd</translation>
+        <translation type="vanished">Gebruiker se parameterwaarde is verkeerd</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="15"/>
         <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation>Gebruiker gelyktydigheid fout: Die huidige gebruiker is reeds verbind, en dieselfde gebruiker kan nie op verskeie plekke gelyktydig verbind nie.</translation>
+        <translation type="vanished">Gebruiker gelyktydigheid fout: Die huidige gebruiker is reeds verbind, en dieselfde gebruiker kan nie op verskeie plekke gelyktydig verbind nie.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="16"/>
         <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation>Gebruikersverkeer is beperk: Die diens verwerk tans die gebruiker se probleem en moet wag tot die verwerking voltooi is voordat &apos;n nuwe versoek gestuur word. (Jy moet wag vir &apos;n volledige antwoord van die model voordat jy die volgende vraag stuur)</translation>
+        <translation type="vanished">Gebruikersverkeer is beperk: Die diens verwerk tans die gebruiker se probleem en moet wag tot die verwerking voltooi is voordat &apos;n nuwe versoek gestuur word. (Jy moet wag vir &apos;n volledige antwoord van die model voordat jy die volgende vraag stuur)</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="17"/>
         <source>Insufficient service capacity, please contact staff</source>
-        <translation>Onvoldoende dienskapasiteit, kontak asseblief personeel</translation>
+        <translation type="vanished">Onvoldoende dienskapasiteit, kontak asseblief personeel</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="18"/>
         <source>Failed to establish connection with engine</source>
-        <translation>Kon nie verbinding met enjin tot stand bring nie</translation>
+        <translation type="vanished">Kon nie verbinding met enjin tot stand bring nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="19"/>
         <source>Error receiving engine data</source>
-        <translation>Fout met ontvangs van enjindata</translation>
+        <translation type="vanished">Fout met ontvangs van enjindata</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="20"/>
         <source>Error sending data to engine</source>
-        <translation>Fout met stuur van data na enjin</translation>
+        <translation type="vanished">Fout met stuur van data na enjin</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="21"/>
         <source>Engine internal error</source>
-        <translation>Interne enjinfout</translation>
+        <translation type="vanished">Interne enjinfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="22"/>
         <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation>Die invoerinhoud slaag nie die hersiening nie en word verdink van die oortreding van reëls. Pas asseblief die invoerinhoud aan.</translation>
+        <translation type="vanished">Die invoerinhoud slaag nie die hersiening nie en word verdink van die oortreding van reëls. Pas asseblief die invoerinhoud aan.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="23"/>
         <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation>Die uitvoerinhoud behels sensitiewe inligting, die hersiening misluk, en daaropvolgende resultate kan nie aan die gebruiker vertoon word nie.</translation>
+        <translation type="vanished">Die uitvoerinhoud behels sensitiewe inligting, die hersiening misluk, en daaropvolgende resultate kan nie aan die gebruiker vertoon word nie.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="24"/>
         <source>appid is in the blacklist</source>
-        <translation>appid is in die swartlys</translation>
+        <translation type="vanished">appid is in die swartlys</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="25"/>
         <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation>Appid magtigingsklas fout. Byvoorbeeld: hierdie funksie is nie geaktiveer nie, die ooreenstemmende weergawe is nie geaktiveer nie, die token is onvoldoende, die gelyktydigheid oorskry magtiging, ens.</translation>
+        <translation type="vanished">Appid magtigingsklas fout. Byvoorbeeld: hierdie funksie is nie geaktiveer nie, die ooreenstemmende weergawe is nie geaktiveer nie, die token is onvoldoende, die gelyktydigheid oorskry magtiging, ens.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="26"/>
         <source>Clear history failed</source>
-        <translation>Skoonmaak van geskiedenis het misluk</translation>
+        <translation type="vanished">Skoonmaak van geskiedenis het misluk</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="27"/>
         <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation>Dui aan dat die inhoud van hierdie sessie geneig is om onwettige inligting te behels; dit word aanbeveel dat ontwikkelaars die gebruiker &apos;n aansporing gee nadat hierdie foutkode ontvang is om inligting in te voer wat onwettige inligting behels.</translation>
+        <translation type="vanished">Dui aan dat die inhoud van hierdie sessie geneig is om onwettige inligting te behels; dit word aanbeveel dat ontwikkelaars die gebruiker &apos;n aansporing gee nadat hierdie foutkode ontvang is om inligting in te voer wat onwettige inligting behels.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="28"/>
         <source>Service is busy, please try again later</source>
-        <translation>Diens is besig, probeer asseblief later weer</translation>
+        <translation type="vanished">Diens is besig, probeer asseblief later weer</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="29"/>
         <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation>Die parameters van die versoekenjin is abnormaal, en die enjinsjema-keuring misluk.</translation>
+        <translation type="vanished">Die parameters van die versoekenjin is abnormaal, en die enjinsjema-keuring misluk.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="30"/>
         <source>Engine network abnormality</source>
-        <translation>Enjinnetwerk abnormaliteit</translation>
+        <translation type="vanished">Enjinnetwerk abnormaliteit</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="31"/>
         <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation>Die aantal tokens oorskry die boonste limiet. Die aantal woorde in die gespreksgeskiedenis en vraag is te groot en moet vereenvoudig word.</translation>
+        <translation type="vanished">Die aantal tokens oorskry die boonste limiet. Die aantal woorde in die gespreksgeskiedenis en vraag is te groot en moet vereenvoudig word.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="32"/>
         <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation>Magtigingsfout: Die appId het nie magtiging vir verwante funksies nie of die besigheidsvolume oorskry die limiet</translation>
+        <translation type="vanished">Magtigingsfout: Die appId het nie magtiging vir verwante funksies nie of die besigheidsvolume oorskry die limiet</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="33"/>
         <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation>Magtigingsfout: Daaglikse vloeikontrolelimiet oorskry. Het die maksimum aantal besoeke vir die dag oorskry</translation>
+        <translation type="vanished">Magtigingsfout: Daaglikse vloeikontrolelimiet oorskry. Het die maksimum aantal besoeke vir die dag oorskry</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Daar is tans te veel besoekers, probeer asseblief later weer.</translation>
+        <translation type="vanished">Daar is tans te veel besoekers, probeer asseblief later weer.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="44"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Verbinding het misluk, kontroleer asseblief die ingevulde inligting.</translation>
+        <translation type="vanished">Verbinding het misluk, kontroleer asseblief die ingevulde inligting.</translation>
     </message>
 </context>
 <context>
     <name>ZhiPuCodeTranslation</name>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="9"/>
         <source>Server internal error</source>
-        <translation>Bediener interne fout</translation>
+        <translation type="vanished">Bediener interne fout</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="10"/>
         <source>Authentication failed</source>
-        <translation>Verifikasie het misluk</translation>
+        <translation type="vanished">Verifikasie het misluk</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="11"/>
         <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation>Die Verifikasieparameter is nie in die kop ontvang nie en verifikasie kon nie uitgevoer word nie.</translation>
+        <translation type="vanished">Die Verifikasieparameter is nie in die kop ontvang nie en verifikasie kon nie uitgevoer word nie.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="12"/>
         <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation>Die Verifikasie Token is onwettig. Bevestig asseblief dat die Verifikasie Token korrek afgelewer word.</translation>
+        <translation type="vanished">Die Verifikasie Token is onwettig. Bevestig asseblief dat die Verifikasie Token korrek afgelewer word.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="13"/>
         <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation>Verifikasie Token het verval, hergenereer/kry dit asseblief</translation>
+        <translation type="vanished">Verifikasie Token het verval, hergenereer/kry dit asseblief</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="14"/>
         <source>Verification via Authentication Token failed</source>
-        <translation>Verifikasie via Verifikasie Token het misluk</translation>
+        <translation type="vanished">Verifikasie via Verifikasie Token het misluk</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="15"/>
         <source>Account reading and writing</source>
-        <translation>Rekening lees en skryf</translation>
+        <translation type="vanished">Rekening lees en skryf</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="16"/>
         <source>Your account is currently inactive. Please check account information</source>
-        <translation>Jou rekening is tans onaktief. Kontroleer asseblief rekeninginligting</translation>
+        <translation type="vanished">Jou rekening is tans onaktief. Kontroleer asseblief rekeninginligting</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="17"/>
         <source>Your account does not exist</source>
-        <translation>Jou rekening bestaan nie</translation>
+        <translation type="vanished">Jou rekening bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="18"/>
         <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation>Jou rekening is gesluit, kontak asseblief kliëntediens om dit te ontsluit</translation>
+        <translation type="vanished">Jou rekening is gesluit, kontak asseblief kliëntediens om dit te ontsluit</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="19"/>
         <source>Your account is in arrears, please recharge and try again</source>
-        <translation>Jou rekening is agterstallig, herlaai asseblief en probeer weer</translation>
+        <translation type="vanished">Jou rekening is agterstallig, herlaai asseblief en probeer weer</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="20"/>
         <source>Unable to successfully access your account, please try again later</source>
-        <translation>Kan nie jou rekening suksesvol toegang nie, probeer asseblief later weer</translation>
+        <translation type="vanished">Kan nie jou rekening suksesvol toegang nie, probeer asseblief later weer</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="21"/>
         <source>API call error</source>
-        <translation>API-oproepfout</translation>
+        <translation type="vanished">API-oproepfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="22"/>
         <source>API call parameters are incorrect, please check the documentation</source>
-        <translation>API-oproepparameters is verkeerd, gaan asseblief die dokumentasie na</translation>
+        <translation type="vanished">API-oproepparameters is verkeerd, gaan asseblief die dokumentasie na</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="23"/>
         <source>Model does not exist, please check the model code</source>
-        <translation>Model bestaan nie, gaan asseblief die modelkode na</translation>
+        <translation type="vanished">Model bestaan nie, gaan asseblief die modelkode na</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="24"/>
         <source>The current model does not support the ${method} calling method</source>
-        <translation>Die huidige model ondersteun nie die ${method} oproepmetode nie</translation>
+        <translation type="vanished">Die huidige model ondersteun nie die ${method} oproepmetode nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="25"/>
         <source>${field} Parameters not received normally</source>
-        <translation>${field} Parameters is nie normaal ontvang nie</translation>
+        <translation type="vanished">${field} Parameters is nie normaal ontvang nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="26"/>
         <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation>Die ${field} parameter is onwettig. Gaan asseblief die dokumentasie na</translation>
+        <translation type="vanished">Die ${field} parameter is onwettig. Gaan asseblief die dokumentasie na</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="27"/>
         <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation>${field1} en ${field2} kan nie terselfdertyd gestel word nie, gaan asseblief die dokumentasie na</translation>
+        <translation type="vanished">${field1} en ${field2} kan nie terselfdertyd gestel word nie, gaan asseblief die dokumentasie na</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="28"/>
         <source>You do not have access to  ${API_name}</source>
-        <translation>Jy het nie toegang tot ${API_name} nie</translation>
+        <translation type="vanished">Jy het nie toegang tot ${API_name} nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="29"/>
         <source>API ${API_name} is offline</source>
-        <translation>API ${API_name} is aflyn</translation>
+        <translation type="vanished">API ${API_name} is aflyn</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="30"/>
         <source>API ${API_name}  does not exist</source>
-        <translation>API ${API_name} bestaan nie</translation>
+        <translation type="vanished">API ${API_name} bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="31"/>
         <source>API call process error</source>
-        <translation>API-oproepprosesfout</translation>
+        <translation type="vanished">API-oproepprosesfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="32"/>
         <source>You have requested: ${request_id}</source>
-        <translation>Jy het versoek: ${request_id}</translation>
+        <translation type="vanished">Jy het versoek: ${request_id}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="33"/>
         <source>When getting asynchronous request results, please use task_id</source>
-        <translation>Wanneer jy asynchrone versoekresultate kry, gebruik asseblief task_id</translation>
+        <translation type="vanished">Wanneer jy asynchrone versoekresultate kry, gebruik asseblief task_id</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="34"/>
         <source>Task: ${task_id} does not exist</source>
-        <translation>Taak: ${task_id} bestaan nie</translation>
+        <translation type="vanished">Taak: ${task_id} bestaan nie</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation>Netwerkfout, fout-ID: ${error_id}, kontak asseblief kliëntediens</translation>
+        <translation type="vanished">Netwerkfout, fout-ID: ${error_id}, kontak asseblief kliëntediens</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="37"/>
         <source>API run error</source>
-        <translation>API-loopfout</translation>
+        <translation type="vanished">API-loopfout</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="38"/>
         <source>Prompt super long</source>
-        <translation>Aansporing super lank</translation>
+        <translation type="vanished">Aansporing super lank</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="39"/>
         <source>API call blocked by policy</source>
-        <translation>API-oproep geblokkeer deur beleid</translation>
+        <translation type="vanished">API-oproep geblokkeer deur beleid</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="40"/>
         <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation>Die stelsel het opgespoor dat die invoer of gegenereerde inhoud onveilige of sensitiewe inhoud kan bevat. Vermy asseblief om aansporings in te voer wat maklik sensitiewe inhoud kan genereer. Dankie vir jou samewerking.</translation>
+        <translation type="vanished">Die stelsel het opgespoor dat die invoer of gegenereerde inhoud onveilige of sensitiewe inhoud kan bevat. Vermy asseblief om aansporings in te voer wat maklik sensitiewe inhoud kan genereer. Dankie vir jou samewerking.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Daar is tans te veel besoekers, probeer asseblief later weer.</translation>
+        <translation type="vanished">Daar is tans te veel besoekers, probeer asseblief later weer.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="43"/>
         <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation>Hierdie API het die limiet van oproepe vir vandag bereik. As jy meer nodig het, kontak asseblief kliëntediens om te koop.</translation>
+        <translation type="vanished">Hierdie API het die limiet van oproepe vir vandag bereik. As jy meer nodig het, kontak asseblief kliëntediens om te koop.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AITranslation</name>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
+        <source>Translate the following text into English for me.</source>
+        <translation type="unfinished">Vertaal die volgende teks in Engels vir my.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
+        <source>Translate the following document into Chinese.</source>
+        <translation type="unfinished">Vertaal die volgende dokument in Chinees.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
+        <source>What does the word Ǌgent” mean in the AI industry?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
+        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
+        <translation type="unfinished">Vertaal asseblief die volgende inhoud in Chinees. Vereistes: Akkuraat in betekenis, formeel en professioneel in taal.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
+        <source>What are some colloquial ways to address a friend in English?</source>
+        <translation type="unfinished">Wat is &apos;n paar informele maniere om &apos;n vriend in Engels aan te spreek?</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
+        <source>Translate the following classical Chinese text into modern Chinese.</source>
+        <translation type="unfinished">Vertaal die volgende klassieke Chinese teks in moderne Chinees.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AIWriter</name>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
+        <source>Today </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
+        <source>Yesterday </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
+        <source>MMM d HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AboutWindow</name>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
+        <source>Filing Information</source>
+        <translation type="unfinished">Lêerinligting</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddPrivateModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="48"/>
         <source>Add model</source>
-        <translation>Voeg model by</translation>
+        <translation type="vanished">Voeg model by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="50"/>
         <source>APIKey</source>
-        <translation>APISleutel</translation>
+        <translation type="vanished">APISleutel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
-        <translation>Vereis, voer asseblief in</translation>
+        <translation type="vanished">Vereis, voer asseblief in</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="58"/>
         <source>Account</source>
-        <translation>Rekening</translation>
+        <translation type="vanished">Rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="63"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Vereis, om veelvuldige modelle te onderskei</translation>
+        <translation type="vanished">Vereis, om veelvuldige modelle te onderskei</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="69"/>
         <source>Model Name</source>
-        <translation>Modelnaam</translation>
+        <translation type="vanished">Modelnaam</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="74"/>
         <source>Optional</source>
-        <translation>Opsioneel</translation>
+        <translation type="vanished">Opsioneel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="77"/>
         <source>Domain</source>
-        <translation>Domein</translation>
+        <translation type="vanished">Domein</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="104"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>Om te toets of die model beskikbaar is, stuur die stelsel toetsinligting na die groot model, wat &apos;n klein hoeveelheid tokens sal verbruik.</translation>
+        <translation type="vanished">Om te toets of die model beskikbaar is, stuur die stelsel toetsinligting na die groot model, wat &apos;n klein hoeveelheid tokens sal verbruik.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="147"/>
         <source>Cancel</source>
-        <translation>Kanselleer</translation>
+        <translation type="vanished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="149"/>
         <source>Confirm</source>
-        <translation>Bevestig</translation>
+        <translation type="vanished">Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="241"/>
         <source>No more than 20 characters</source>
-        <translation>Nie meer as 20 karakters nie</translation>
+        <translation type="vanished">Nie meer as 20 karakters nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="272"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>Hierdie LLM bestaan reeds, moenie dit weer byvoeg nie.</translation>
+        <translation type="vanished">Hierdie LLM bestaan reeds, moenie dit weer byvoeg nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="315"/>
         <source>Save failed, please try again later</source>
-        <translation>Stoor het misluk, probeer later weer</translation>
+        <translation type="vanished">Stoor het misluk, probeer later weer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="373"/>
         <source>The account name already exists, please change it</source>
-        <translation>Die rekeningnaam bestaan reeds, verander dit asseblief</translation>
+        <translation type="vanished">Die rekeningnaam bestaan reeds, verander dit asseblief</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="401"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>Vir proxy-instellings, gaan na stelselproxy-instellings</translation>
+        <translation type="vanished">Vir proxy-instellings, gaan na stelselproxy-instellings</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="404"/>
         <source>Go to settings</source>
-        <translation>Gaan na instellings</translation>
+        <translation type="vanished">Gaan na instellings</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>Voeg Vaardigheid By</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="66"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Vaardigheid Naam</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Voer vaardigheidnaam in</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Vaardigheid Opdrag</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
         <translation>verteenwoordig die teks wat deur woordkeuse gekies is.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Instruksies</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="130"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Stoor</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="248"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>Vaardigheidnaam kan nie leeg wees nie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>Karakterlimiet oorskry</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>Die vaardigheidnaam bestaan reeds.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="440"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Opdrag Instruksies</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="478"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
         <translation>As u die gekose teks &quot;Hello&quot; wil vertaal, soos hierbo gewys, kan u die opdrag invoer: Vertaal {selection} in Engels.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="485"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Gevorderde Wenke</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="491"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
         <translation>Hoe meer spesifiek die opdrag, hoe meer akkuraat die gegenereerde inhoud. Byvoorbeeld: • Genereer &apos;n PPT-buitekant vir {selection} met 3 hoofstukke en 10 sleutelpunte. • Poleer {selection} in &apos;n werwingskopie binne 100 woorde, wat spanwerk beklemtoon.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
         <translation>Om op die etiket te klik kan dit steeds in die invoerveld plaas.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -5005,145 +4386,476 @@ Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as 
     </message>
 </context>
 <context>
+    <name>uos_ai::AiQuickDialog</name>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
+        <source>simplified Chinese</source>
+        <translation type="unfinished">vereenvoudigde Chinees</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
+        <source>traditional Chinese</source>
+        <translation type="unfinished">tradisionele Chinees</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
+        <source>Tibetan</source>
+        <translation type="unfinished">Tibettaans</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
+        <source>English</source>
+        <translation type="unfinished">Engels</translation>
+    </message>
+    <message>
+        <source>Japanese </source>
+        <translation type="obsolete">Japannees </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
+        <source>Japanese</source>
+        <translation type="unfinished">Japanees</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
+        <source>German</source>
+        <translation type="unfinished">Duits</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
+        <source>Spanish</source>
+        <translation type="unfinished">Spaans</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
+        <source>French</source>
+        <translation type="unfinished">Frans</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
+        <source>Italian</source>
+        <translation type="unfinished">Italiaans</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
+        <source>Korean</source>
+        <translation type="unfinished">Koreaans</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
+        <source>Malay</source>
+        <translation type="unfinished">Maleis</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
+        <source>Portuguese</source>
+        <translation type="unfinished">Portugees</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
+        <source>Russian</source>
+        <translation type="unfinished">Russies</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
+        <source>Thai</source>
+        <translation type="unfinished">Thai</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
+        <source>Vietnamese</source>
+        <translation type="unfinished">Viëtnamees</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
+        <source>type</source>
+        <translation type="unfinished">tipe</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
+        <source>Read Aloud</source>
+        <translation type="unfinished">Lees Hardop</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
+        <source>Paste to Text</source>
+        <translation type="unfinished">Plak na Teks</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
+        <source>Regenerate</source>
+        <translation type="unfinished">Hergenereer</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
+        <source>Copy</source>
+        <translation type="unfinished">Kopieer</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
+        <source>Continue Dialog</source>
+        <translation type="unfinished">Gaan voort met Dialog</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished">Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
+        <source>Automatic Detection</source>
+        <translation type="unfinished">Outomatiese Bespeuring</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
+        <source>Search</source>
+        <translation type="unfinished">Soek</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
+        <source>Explain</source>
+        <translation type="unfinished">Verduidelik</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
+        <source>Summary</source>
+        <translation type="unfinished">Opsomming</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
+        <source>Translate</source>
+        <translation type="unfinished">Vertaal</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
+        <source>Continue writing</source>
+        <translation type="unfinished">Gaan voort met skryf</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
+        <source>Expand</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
+        <source>Correct</source>
+        <translation type="unfinished">Korrigeer</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
+        <source>Polish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
+        <source>Add to the AI knowledge base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation type="unfinished">Die vertalingsresultaat word beperk deur die model se vermoëns. As jy nie tevrede is met die vertaling nie, skakel asseblief na ander modelle op die UOS AI-tuisblad.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
+        <source>Ok</source>
+        <translation type="unfinished">Ok</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation type="unfinished">Vertaal hierdie teks in %1 en gee my direk &apos;n duidelike resultaat.
+teks：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
+        <source>Not clickable</source>
+        <translation type="unfinished">Nie klikbaar nie</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation type="unfinished">Die oudio-toestel word nie opgespoor nie, gaan dit na en probeer weer.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation type="unfinished">Ok</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
+        <source>Fill failed</source>
+        <translation type="unfinished">Vul het misluk</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
+        <source>Added</source>
+        <translation type="unfinished">Bygevoeg</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
+        <source>Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation type="unfinished">Verduidelik hierdie teks in eenvoudige taal. Gee my net &apos;n duidelike resultaat sby oorbodige inhoud.
+
+teks：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">Vat hierdie teks saam en gee my direk &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+
+teks：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">Gaan voort met hierdie teks op &apos;n gepaste manier. Geen behoefte aan baie woorde nie. Gee my net &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+
+teks：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">Brei hierdie teks op &apos;n gepaste manier uit. Geen behoefte aan &apos;n besonder lang teks nie. Gee my net &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+
+teks：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">Gaan na of daar enige tikfoute in hierdie teks is. As daar is, wys die ligging van die foute. Gee my direk &apos;n duidelike resultaat sonder enige ander oorbodige inhoud.
+
+teks：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation type="unfinished">Maak hierdie gedeelte vir my skoon en gee net die resultaat sonder enige ekstra inhoud.
+
+teks:</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
+        <source> &quot;%1&quot; </source>
+        <translation type="unfinished"> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
+        <source>Current model: </source>
+        <translation type="unfinished">Huidige model: </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
+        <source>Currently no model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
+        <source>Go to configure  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
+        <source>Claim Free Credits  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
+        <source>No text recognized.</source>
+        <translation type="unfinished">Geen teks herken nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
+        <source>The added content must be more than 10 words</source>
+        <translation type="unfinished">Die bygevoegde inhoud moet meer as 10 woorde wees</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AiWriterDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>Voer in wat jy wil skep (druk Enter om te genereer/Esc om te verlaat)</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
         <translation>Help my om &apos;n opstel oor die onderwerp [%1] te skryf met [duidelike struktuur en ryk inhoud].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Artificial Intelligence</source>
         <translation>Kunsmatige Intelligensie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
         <translation>Help my om &apos;n uiteensetting oor die onderwerp [%1] te skryf, wat vir [PPT-produksie] gebruik sal word.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
         <translation>Help my om &apos;n kennisgewing oor [%1] te skryf, die ontvanger is [Alle Werknemers] en die sender is [Administrasie Departement].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>National Day Holiday</source>
         <translation>Nasionale Dag Vakansie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
         <translation>Help my om &apos;n navorsingsverslag oor [%1] te skryf, dit moet ten minste insluit [statusbeskrywing, probleemanalise, teenmaatreëls en voorstelle, navorsingsgevolgtrekkings].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
         <translation>Help my om &apos;n toespraak oor die onderwerp [%1] vir [Maatskappy Leiers] te skryf, wat [duidelike struktuur en lewendige taal] vereis.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
         <translation>Help my om &apos;n opsomming van my onlangse werk te skryf, insluitend [%1] en [resultate], wat &apos;n [formele] toon vereis.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>work content</source>
         <translation>werk inhoud</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
         <translation>Help my om &apos;n openbare twiet oor die onderwerp [%1] te skryf, wat [duidelike struktuur] en [ontspanne] toon vereis.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1036"/>
         <source>Model Configuration</source>
-        <translation>Model Konfigurasie</translation>
+        <translation type="vanished">Model Konfigurasie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1123"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
         <source>Go to configure  </source>
         <translation>Gaan konfigureer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="86"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
         <source>AI Writer</source>
         <translation>AI Skrywer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="190"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
         <source>Article</source>
         <translation>Artikel</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="194"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
         <source>Outline</source>
         <translation>Uiteensetting</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="198"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
         <source>Notification</source>
         <translation>Kennisgewing</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="202"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
         <source>Research Report</source>
         <translation>Navorsingsverslag</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="206"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
         <source>Speeches</source>
         <translation>Toesprake</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="210"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
         <source>Work Summary</source>
         <translation>Werk Opsomming</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="214"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
         <source>Tweets</source>
         <translation>Twiete</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="306"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>Plak na Teks</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="324"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Hergenereer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="332"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Kopieer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="350"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="849"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
@@ -5154,44 +4866,44 @@ Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as 
 2. Klik &quot;Herbegin&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="853"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1070"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
         <source>Copied</source>
         <translation>Gekopieër</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
         <source>Current model: </source>
         <translation>Huidige model: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1106"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>Geen model tans</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1137"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
         <source>Modify the content, change the tone…</source>
         <translation>Wysig die inhoud, verander die toon…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1258"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>Vul het misluk</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1259"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>Geen invoerveld gekies nie, kies asseblief die invoerveld en vul dit weer in.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1261"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
@@ -5360,6 +5072,301 @@ Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as 
     </message>
 </context>
 <context>
+    <name>uos_ai::Application</name>
+    <message>
+        <location filename="../src/app/application.cpp" line="66"/>
+        <location filename="../src/app/application.cpp" line="68"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="70"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="112"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS KI VolgSaam/Skryf</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ArticleAdjustAgent</name>
+    <message>
+        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AssistantManager</name>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
+        <source>Hello, I&apos;m UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
+        <source>AI Writing</source>
+        <translation type="unfinished">KI Skryfwerk</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
+        <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
+        <source>AI Translation</source>
+        <translation type="unfinished">KI Vertaling</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
+        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
+        <translation type="unfinished">Jou Vertaalassistent, Meester in Veelvuldige Tale.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
+        <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished">Persoonlike Kennisassistent</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
+        <source>Answers questions based on your personal knowledge base.</source>
+        <translation type="unfinished">Beantwoord vrae gebaseer op jou persoonlike kennisbasis.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
+        <source>Ask questions based on the knowledge base.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
+        <source>MCP Server</source>
+        <translation type="unfinished">MCP-bediener</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
+        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
+        <source>Please enter MCP Server commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioChannel</name>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
+        <source>Failed to start recorder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
+        <source>Failed to play text audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioControler</name>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
+        <source>invalid input device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
+        <source>invalid output device</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinProvider</name>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="54"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="59"/>
+        <source>Intelligent Routing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="71"/>
+        <source>Online Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="83"/>
+        <source>DeepSeek-V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="96"/>
+        <location filename="../src/model/builtinprovider.cpp" line="334"/>
+        <source>GLM-4.7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="110"/>
+        <source>Doubao-Seed-1.8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="127"/>
+        <source>Custom</source>
+        <translation type="unfinished">Pasgemaak</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="135"/>
+        <source>Private deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="144"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="149"/>
+        <source>GPT-3.5 Turbo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="162"/>
+        <source>GPT-4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="175"/>
+        <source>GPT-4.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="188"/>
+        <source>o1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="201"/>
+        <source>GPT-5.3 Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="217"/>
+        <source>doubao/seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="223"/>
+        <source>Doubao-Seed 2.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="236"/>
+        <source>Doubao-Seed 2.0-Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="252"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="257"/>
+        <source>DeepSeek V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>MiniMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="279"/>
+        <source>MiniMax-M2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="295"/>
+        <source>Moonshot (KIMI)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="300"/>
+        <source>Kimi K2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="313"/>
+        <source>Kimi K2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="329"/>
+        <source>GLM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="347"/>
+        <source>GLM-5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="363"/>
+        <source>Qwen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="369"/>
+        <source>Qwen3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="382"/>
+        <source>Qwen3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="399"/>
+        <source>Anthropic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="406"/>
+        <source>Gemini</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ClickableLabel</name>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
@@ -5368,24 +5375,48 @@ Voorbeeldopdrag: Noem alle lêers in die nuut geskepte gids op die lessenaar as 
     </message>
 </context>
 <context>
+    <name>uos_ai::CommonFailDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
+        <source>Error</source>
+        <translation type="unfinished">Fout</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation type="unfinished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ConversationRecord</name>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
+        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">Nuwe Gesprek</translation>
+    </message>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
+        <source>Null</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::CreateScheduleInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="144"/>
         <source>Create Schedule</source>
-        <translation>Skep Skedule</translation>
+        <translation type="vanished">Skep Skedule</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="146"/>
         <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation>Skep &apos;n vergadering met die Bemarkingsafdeling van 14:00 tot 17:00.</translation>
+        <translation type="vanished">Skep &apos;n vergadering met die Bemarkingsafdeling van 14:00 tot 17:00.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="155"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Jammer, geen ooreenstemmende bewerkings is gevind nie.</translation>
+        <translation type="vanished">Jammer, geen ooreenstemmende bewerkings is gevind nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="169"/>
         <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
 
 Schedule template format:
@@ -5394,7 +5425,7 @@ json
 
 Input: %1
 Current time: %2</source>
-        <translation>Ontleed asseblief die ooreenstemmende parameters uit die invoerinhoud om by die skedulering-sjabloon in die volgende JSON-formaat te pas, en lewer slegs die JSON-inhoud sonder enige irrelvante inligting.
+        <translation type="vanished">Ontleed asseblief die ooreenstemmende parameters uit die invoerinhoud om by die skedulering-sjabloon in die volgende JSON-formaat te pas, en lewer slegs die JSON-inhoud sonder enige irrelvante inligting.
 
 Skedulering-sjabloonformaat:
 
@@ -5409,46 +5440,64 @@ Huidige tyd: %2</translation>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>Voeg MCP-bediener by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="48"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>Wysig MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>JSON-opstelling:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>Plak asseblief die MCP-JSON-opstellingskode in die invoerboks.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>Beskryf</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>Beskryf MCP-bedienerfunksies om vinnige soekgereedskap te vergemaklik</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation type="unfinished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation type="unfinished">Bevestig</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::CustomModelGroup</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
+        <source>Please enter the model ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
+        <source>Please enter the model name</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5460,94 +5509,116 @@ Huidige tyd: %2</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::DeepResearchAgent</name>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
+        <source>Collecting and analyzing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
+        <source>Data collection and analysis completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
+        <source>Research completed. %1 references collected:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
+        <source>搜索成功</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
+        <source>ERROR: 未搜索到信息！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
+        <source>未找到相关文档</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
+        <source>Local Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DeepSeekInfo</name>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="119"/>
         <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation>Na ontvangs van die geskenk sal die oorspronklike Baidu-model en iFlytek-model met DeepSeek vervang word.</translation>
+        <translation type="vanished">Na ontvangs van die geskenk sal die oorspronklike Baidu-model en iFlytek-model met DeepSeek vervang word.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="132"/>
         <source>Manually collect later</source>
-        <translation>Versamel later handmatig</translation>
+        <translation type="vanished">Versamel later handmatig</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="293"/>
         <source>Trial Account</source>
-        <translation>Proefrekening</translation>
+        <translation type="vanished">Proefrekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="376"/>
         <source>Get a free account</source>
-        <translation>Kry &apos;n gratis rekening</translation>
+        <translation type="vanished">Kry &apos;n gratis rekening</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
-        <translation>Probeer weer</translation>
+        <translation type="vanished">Probeer weer</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="393"/>
         <source>Enter UOS AI</source>
-        <translation>Treed UOS AI binne</translation>
+        <translation type="vanished">Treed UOS AI binne</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="401"/>
         <source>Receiving...</source>
-        <translation>Ontvang...</translation>
+        <translation type="vanished">Ontvang...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="410"/>
         <source>Use it immediately</source>
-        <translation>Gebruik dit onmiddellik</translation>
+        <translation type="vanished">Gebruik dit onmiddellik</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="431"/>
         <source>Checking account status...</source>
-        <translation>Kontakstatus word nagegaan...</translation>
+        <translation type="vanished">Kontakstatus word nagegaan...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
-        <translation>DeepSeek-rekeningeis het misluk!</translation>
+        <translation type="vanished">DeepSeek-rekeningeis het misluk!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="469"/>
         <source>Please check the network and try again later！</source>
-        <translation>Gaan die netwerk na en probeer later weer！</translation>
+        <translation type="vanished">Gaan die netwerk na en probeer later weer！</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="472"/>
         <source>DeepSeek account successfully claimed!</source>
-        <translation>DeepSeek-rekeningeis suksesvol!</translation>
+        <translation type="vanished">DeepSeek-rekeningeis suksesvol!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="477"/>
         <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation>Gaan die netwerk na en probeer weer of eis handmatig in UOS AI-instellings later</translation>
+        <translation type="vanished">Gaan die netwerk na en probeer weer of eis handmatig in UOS AI-instellings later</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation>UOS AI is volledig in DeepSeek geïntegreer</translation>
+        <translation type="vanished">UOS AI is volledig in DeepSeek geïntegreer</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="465"/>
         <source>The free account activity has ended.</source>
-        <translation>Die gratis rekeningaktiwiteit het geëindig.</translation>
+        <translation type="vanished">Die gratis rekeningaktiwiteit het geëindig.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="473"/>
         <source>Come and experience it!</source>
-        <translation>Kom ervaar dit!</translation>
+        <translation type="vanished">Kom ervaar dit!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="481"/>
         <source>Come and claim your account!</source>
-        <translation>Kom eis jou rekening!</translation>
+        <translation type="vanished">Kom eis jou rekening!</translation>
     </message>
 </context>
 <context>
@@ -5620,16 +5691,198 @@ Huidige tyd: %2</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::EParserDocument</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="207"/>
-        <source>Generate Image</source>
-        <translation>Genereer Beeld</translation>
+        <source>Supported files</source>
+        <translation type="obsolete">Ondersteunde lêers</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FileChannel</name>
+    <message>
+        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
+        <source>Supported files</source>
+        <translation type="unfinished">Ondersteunde lêers</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FreeAccountService</name>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
+        <source>Network error</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="209"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
+        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
+        <translation type="unfinished">Jou gratis rekeningkwota vir gesprekke is uitgeput, stel asseblief jou modelrekening op om voort te gaan om dit te gebruik.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
+        <source>Not Now</source>
+        <translation type="unfinished">Nie Nou</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">Eis Krediete</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
+        <source>Free Credits Delivered</source>
+        <translation type="unfinished">Gratis Krediete Afgelewer</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
+        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">Suksesvol Geëis</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
+        <source>Account not found</source>
+        <translation type="unfinished">Rekening nie gevind nie</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
+        <source>Only support trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
+        <source>You have already participated in the event and cannot claim the reward again.</source>
+        <translation type="unfinished">Jy het reeds aan die geleentheid deelgeneem en kan nie die beloning weer eis nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
+        <source>Server system error</source>
+        <translation type="unfinished">Stelselfout op bediener</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">Kon Nie Eis Nie. Probeer Weereens.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GenerateImageInst</name>
+    <message>
+        <source>Generate Image</source>
+        <translation type="vanished">Genereer Beeld</translation>
+    </message>
+    <message>
         <source>Describe Image Content</source>
-        <translation>Beskryf Beeldinhoud</translation>
+        <translation type="vanished">Beskryf Beeldinhoud</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GetFreeAccountDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
+        <source>Get a free trial account</source>
+        <translation type="unfinished">Kry &apos;n gratis proefrekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
+        <source>Get account</source>
+        <comment>button</comment>
+        <translation type="unfinished">Kry rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished">Die Engelse ondersteuning vir proefrekeninge is nie bevredigend nie, en die aantal gebruike sowel as die tydsduur van die proefrekening is beperk. Stel asseblief jou persoonlike modelrekening betyds op!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished">Die gratis rekeningaktiwiteit eindig.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::HttpCodeTranslation</name>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Connection failed, please check the fill in information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
+        <source>Operation canceled.</source>
+        <translation type="unfinished">Operasie gekanselleer.</translation>
     </message>
 </context>
 <context>
@@ -5653,6 +5906,14 @@ Huidige tyd: %2</translation>
         <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>Netwerk nie beskikbaar</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::IconButtonEx</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
+        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
+        <translation type="unfinished">Nuutbygevoegde lêers vereis voorverwerking voordat hulle gebruik kan word, en tydens die dataverwerkingsproses kan dit &apos;n aansienlike hoeveelheid rekenaar- en stoorhulpbronne verbruik. Dataverwerking sal stop nadat data uitgevee is.</translation>
     </message>
 </context>
 <context>
@@ -5694,22 +5955,203 @@ Huidige tyd: %2</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::LaunchAppInst</name>
+    <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="52"/>
-        <source>Launch or Close App</source>
-        <translation>Lanseer of Sluit Toepassing</translation>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
+        <source>Searching knowledge base</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="54"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
+        <source>Search complete · %1s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
+        <source>Search complete · %1m%2s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
+        <source>Are you sure you want to delete this knowledge base file?</source>
+        <translation type="unfinished">Is jy seker jy wil hierdie kennisbasislêer uitvee?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
+        <source>Add</source>
+        <translation type="unfinished">Voeg by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
+        <source>Please install the embedding model plugins first</source>
+        <translation type="unfinished">Installeer asseblief eers die inbeddingsmodel-inproppe</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
+        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
+        <translation type="unfinished">Hierdie funksie vereis hoë hardewarehulpbronne, en die verwysingsmaatstafkonfigurasie is: CPU Intel 11de generasie i7 of hoër; Geheue van 16GB of meer; Om &apos;n NVIDIA-grafiese kaart en &apos;n 10-reeks of hoër te hê, is die beste opsie. As die konfigurasie te laag is, kan daar probleme soos vertraging en onakkurate antwoorde wees.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
+        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
+        <translation type="unfinished">Hier kan die kennisbasis van die Persoonlike Kennisassistent gedefinieer word, en die Persoonlike Kennisassistent sal vrae beantwoord gebaseer op die lêers wat hieronder bygevoeg is.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <source>Done</source>
+        <translation type="unfinished">Klaar</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
+        <source>None</source>
+        <translation type="unfinished">Geen</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
+        <source>File already exist</source>
+        <translation type="unfinished">Lêer bestaan reeds</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
+        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
+        <translation type="unfinished">Die %1-lêer bestaan reeds en kan nie weer bygevoeg word nie. Wysig asseblief die lêernaam of skrap die bestaande lêer voordat u dit weer byvoeg.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
+        <source>All files</source>
+        <translation type="unfinished">Alle lêers</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LaunchAppInst</name>
+    <message>
+        <source>Launch or Close App</source>
+        <translation type="vanished">Lanseer of Sluit Toepassing</translation>
+    </message>
+    <message>
         <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation>WPS, Musiek, Album, Beheersentrum, Logkyker ...</translation>
+        <translation type="vanished">WPS, Musiek, Album, Beheersentrum, Logkyker ...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
+        <source>Install</source>
+        <translation type="unfinished">Installeer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
+        <source>Uninstall</source>
+        <translation type="unfinished">Verwyder</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
+        <source>Update</source>
+        <translation type="unfinished">Opdateer</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
+        <source>uninstall</source>
+        <translation type="unfinished">verwyder</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
+        <source>Local model</source>
+        <translation type="unfinished">Plaaslike model</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <source>ULLM-1.5B</source>
+        <translation type="unfinished">ULLM-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
+        <translation type="unfinished">Sodra geïnstalleer, het jy nie &apos;n internetverbinding nodig om UOS AI te gebruik nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <source>ULLM-7B</source>
+        <translation type="unfinished">ULLM-7B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>DeepSeek-R1-1.5B</source>
+        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
+        <translation type="unfinished">Laai op eie risiko van die oopbron-gemeenskap af. Gebruik dit in UOS AI Assistant ná installasie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>UOS AI large model</source>
+        <translation type="unfinished">UOS AI groot model</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>Embedding Plugins</source>
+        <translation type="unfinished">Inbedding Inproppe</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
+        <translation type="unfinished">Nadat die model geïnstalleer is, kan die Stelselassistent en die Persoonlike Kennisassistent uitgevoer word.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="114"/>
+        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP-bediener is nie beskikbaar nie</translation>
     </message>
@@ -5788,17 +6230,17 @@ Huidige tyd: %2</translation>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="50"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation type="unfinished">Installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
         <translation type="unfinished">Verwyder</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
         <translation type="unfinished">Opdateer</translation>
     </message>
@@ -5806,7 +6248,7 @@ Huidige tyd: %2</translation>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>ingebou</translation>
     </message>
@@ -5814,47 +6256,47 @@ Huidige tyd: %2</translation>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Alles</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>Ingebou</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
         <translation type="unfinished">Pasgemaak</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>Voeg MCP-bediener by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>Bevestig verwydering %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>Na verwydering sal hierdie bediener nie meer beskikbaar wees nie. Gaan versigtig voort.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation type="unfinished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
         <translation>Vee uit</translation>
     </message>
@@ -5862,173 +6304,574 @@ Huidige tyd: %2</translation>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="59"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>MCP-omgewing</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP-bediener</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>Installeer UOS AI-agent</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>Na installasie sal die MCP-bediener beskikbaar wees.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::ModelHubLLM</name>
+    <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="43"/>
-        <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
+        <source>Model Configuration</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="58"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
+        <source>UOS AI FollowAlong</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
+        <source>User Agreement</source>
+        <translation type="unfinished">Gebruikersooreenkoms</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished">UOS AI Gebruikersooreenkoms</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
+        <source>Read and agreed</source>
+        <translation type="unfinished">Lees en aanvaar</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
+        <source>Proxy Settings</source>
+        <translation type="unfinished">Volmaginstellings</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">Gaan na instellings</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished">Die gratis rekeningaktiwiteit eindig.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation type="unfinished">Byvoeging tot die kennisbasis vereis die installering van die vektoriseringmodel-inprop. Gaan asseblief na die appwinkel om af te laai en te installeer.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation type="unfinished">Moenie installeer nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation type="unfinished">Installeer onmiddellik</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubLLM</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation type="vanished">YouRong 1.5B</translation>
+    </message>
+    <message>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
+        <source>YouRong 1.5B</source>
+        <translation type="unfinished">YouRong 1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
+        <source>YouRong 7B</source>
+        <translation type="unfinished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">Kry &apos;n gratis rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
+        <source>Add</source>
+        <translation type="unfinished">Voeg by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
+        <source>Online model</source>
+        <translation type="unfinished">Aanlyn model</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Done</source>
+        <translation type="unfinished">Klaar</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
+        <source>None</source>
+        <translation type="unfinished">Geen</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
         <translation>Installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="108"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
         <source>Update</source>
         <translation>Opdateer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
         <translation>Verwyder</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="113"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
         <source>Cancel</source>
         <translation>Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="151"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
         <translation>Omtrent %1GB</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>Installeer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
         <translation>Is jy seker jy wil hierdie model verwyder?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Bevestig</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="245"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>Kontroleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="266"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
         <translation>&apos;%0 aflaai het misluk, probeer asseblief weer!&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="313"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
         <translation>Installeer asseblief die &quot;Embedding Plugins&quot; eers voordat jy hierdie model installeer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="493"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
         <translation>teiken-vouer-asblik het misluk, probeer asseblief weer!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="529"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>&apos;%1 sekondes&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="531"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>&apos;%1 minute&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="536"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
         <translation>&apos;%1MB/%2GB afgelaai, %3 oor.&apos;</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="294"/>
-        <source>Multimedia Control</source>
-        <translation>Multimedia-beheer</translation>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
+        <source>Are you sure you want to delete this model?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="297"/>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelValidator</name>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="37"/>
+        <source>Invalid model account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="54"/>
+        <source>Unsupported model type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="62"/>
+        <source>Model does not support chat completion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="89"/>
+        <source>Model is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="98"/>
+        <source>HTTP error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="108"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModifyProviderDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
+        <source>For proxy settings, please go to system proxy settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">Gaan na instellings</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Edit Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Add Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
+        <source>Account</source>
+        <translation type="unfinished">Rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
+        <source>Required, to distinguish multiple models</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
+        <source>Provider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
+        <source>APIKey</source>
+        <translation type="unfinished">APISleutel</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
+        <source>Required, please input</source>
+        <translation type="unfinished">Vereis, voer asseblief in</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
+        <source>Domain</source>
+        <translation type="unfinished">Domein</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
+        <source>Enable</source>
+        <translation type="unfinished">Aktiveer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
+        <source>Custom</source>
+        <translation type="unfinished">Pasgemaak</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
+        <source>Add</source>
+        <translation type="unfinished">Voeg by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
+        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
+        <translation type="unfinished">Om te toets of die model beskikbaar is, stuur die stelsel toetsinligting na die groot model, wat &apos;n klein hoeveelheid tokens sal verbruik.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
+        <source>Confirm</source>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
+        <source>Name and Model ID must be filled in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Done</source>
+        <translation type="unfinished">Klaar</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
+        <source>Test passed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
+        <source>The model service is available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::MultimediaControlInst</name>
+    <message>
+        <source>Multimedia Control</source>
+        <translation type="vanished">Multimedia-beheer</translation>
+    </message>
+    <message>
         <source>Play music, state control, seek...</source>
-        <translation>Speel musiek, toestandbeheer, soek...</translation>
+        <translation type="vanished">Speel musiek, toestandbeheer, soek...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OperatingLineWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
+        <source>In data processing</source>
+        <translation type="unfinished">In dataverwerking</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
+        <source>Data processing error</source>
+        <translation type="unfinished">Dataverwerking fout</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
+        <source>File error, unable to process, please delete.</source>
+        <translation type="unfinished">Lêer fout, kan nie verwerk nie, skrap asseblief.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OutlineAgent</name>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
+        <source>Generating outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
+        <source>Generating outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
+        <source>Outline generated, please confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
+        <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
+        <source>Detected uploaded local outline, please confirm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
+        <source>Failed to parse the uploaded outline file, please re-upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
+        <source>Generating outline content failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
+        <source>Based on your writing task, I have generated the following outline for **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
+        <source>I have parsed your uploaded outline and structured it as **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
+        <source>
+The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::PersonalKnowledgeAssistant</name>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
+        <translation type="unfinished">Die Persoonlike Kennisassistent kan slegs gebruik word nadat die modelprop opgestel is.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
+        <translation type="unfinished">Die Persoonlike Kennisassistent kan slegs gebruik word nadat die kennisbasis opgestel is.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Verwyder</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="36"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Voeg by</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Prête ontplooiingsmodel</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Klaar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>Geen</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ProviderListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
+        <source>Are you sure you want to delete this provider?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Kanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
     </message>
 </context>
 <context>
@@ -6050,37 +6893,60 @@ Huidige tyd: %2</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SearchOnlineInst</name>
+    <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="249"/>
-        <source>Search Online</source>
-        <translation>Soek aanlyn</translation>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
+        <source>Document Generating</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="251"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
+        <source>failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
+        <source>Document Generated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
+        <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
+        <source>You can ask follow-up questions or request adjust the article.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SearchOnlineInst</name>
+    <message>
+        <source>Search Online</source>
+        <translation type="vanished">Soek aanlyn</translation>
+    </message>
+    <message>
         <source>Enter Search Content</source>
-        <translation>Voer soekinhoud in</translation>
+        <translation type="vanished">Voer soekinhoud in</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SendMailInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="81"/>
         <source>Send Mail</source>
-        <translation>Stuur pos</translation>
+        <translation type="vanished">Stuur pos</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="83"/>
         <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation>Help my om &apos;n e-pos aan [Ontvanger se Naam] te stuur, met die inhoud: [E-posinhoud].</translation>
+        <translation type="vanished">Help my om &apos;n e-pos aan [Ontvanger se Naam] te stuur, met die inhoud: [E-posinhoud].</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="92"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Jammer, geen ooreenstemmende bewerkings is gevind nie.</translation>
+        <translation type="vanished">Jammer, geen ooreenstemmende bewerkings is gevind nie.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="106"/>
         <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
 
 Email template format:
@@ -6088,7 +6954,7 @@ json
 {&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
 
 Input: %1</source>
-        <translation>Trek die relevante parameters uit die verskafde inset om die volgende JSON-e-pos-sjabloonformaat te pas en lewer slegs die JSON-inhoud. Moenie enige oortollige inligting insluit nie.
+        <translation type="vanished">Trek die relevante parameters uit die verskafde inset om die volgende JSON-e-pos-sjabloonformaat te pas en lewer slegs die JSON-inhoud. Moenie enige oortollige inligting insluit nie.
 
 E-pos-sjabloonformaat:
 
@@ -6099,21 +6965,72 @@ Inset: %1</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
+        <source>Failed to get MCP server instance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
+        <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
+        <translation type="unfinished">Bediener &apos;%1&apos; is nie &apos;n persoonlike bediener nie of bestaan nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
+        <source>MCP server name &apos;%1&apos; already exists</source>
+        <translation type="unfinished">MCP-bedienernaam &apos;%1&apos; bestaan reeds</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
+        <source>Server &apos;%1&apos; does not exist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SessionManager</name>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="52"/>
+        <source>Session with ID %1 already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="63"/>
+        <source>Session %1 create assistant %2 failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="74"/>
+        <source>Session %1 create success</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="120"/>
+        <source>Session %1 not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="128"/>
+        <source>Session %1 is not idle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ShortcutUpdateDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="51"/>
         <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation>Kortpad: [Super + Spasie]. Roep vinnig UOS AI op om toegang tot alle AI-kenmerke op een plek te kry.</translation>
+        <translation type="vanished">Kortpad: [Super + Spasie]. Roep vinnig UOS AI op om toegang tot alle AI-kenmerke op een plek te kry.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="79"/>
         <source>Got it</source>
-        <translation>Ek het dit</translation>
+        <translation type="vanished">Ek het dit</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="107"/>
         <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation>Hierdie aansporing sal %1 meer keer verskyn, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Moenie weer wys nie&lt;/a&gt;</translation>
+        <translation type="vanished">Hierdie aansporing sal %1 meer keer verskyn, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Moenie weer wys nie&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -6195,93 +7112,1726 @@ Inset: %1</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SkillServerListItem</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
-        <source>built-in</source>
-        <translation type="unfinished">ingebou</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
-        <source>Skill List</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
+        <source>UOS AI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
-        <source>Import Skill</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
-        <source>Supported files</source>
-        <translation type="unfinished">Ondersteunde lêers</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
-        <source>Confirm deletion %1?</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
+        <source>Update History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
-        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
+        <source>Settings</source>
+        <translation type="unfinished">Instellings</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
+        <source>About</source>
+        <translation type="unfinished">Oor</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
+        <source>New Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
+        <source>Temporary Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
+        <source>AI Writing</source>
+        <translation type="unfinished">KI Skryfwerk</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
+        <source>AI Translation</source>
+        <translation type="unfinished">KI Vertaling</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
+        <source>AI Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
+        <source>MCP Server</source>
+        <translation type="unfinished">MCP-bediener</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
+        <source>Commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
+        <source>Agent Store</source>
+        <translation type="unfinished">Agentwinkel</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
+        <source>More</source>
+        <translation type="unfinished">Meer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
+        <source>Chat History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
+        <source>Today</source>
+        <translation type="unfinished">Vandag</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
+        <source>Yesterday</source>
+        <translation type="unfinished">Gister</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
+        <source>Last 7 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
+        <source>Last 30 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
+        <source>January</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
+        <source>February</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
+        <source>March</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
+        <source>April</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
+        <source>May</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <source>June</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <source>July</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <source>August</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <source>September</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <source>October</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <source>November</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <source>year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
+        <source>Earlier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
+        <source>Confirm Deletion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
+        <source>Confirm Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>Cancel</source>
         <translation type="unfinished">Kanselleer</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
-        <source>Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
-        <source>Skill Enviorment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
+        <source>Batch Manage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
-        <source>Agent Skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
+        <source>All</source>
+        <translation type="unfinished">Alles</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
+        <source>Select All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
-        <source>Configure </source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
+        <source>%1 conversations selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
-        <source>MCP environment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
+        <source>No chat history yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
-        <source>After configuration you can use agent skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
+        <source>Chat content not found</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
+        <source>DeepThink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
+        <source>Search</source>
+        <translation type="unfinished">Soek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
+        <source>Attachments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
+        <source>Upload Files</source>
+        <translation type="unfinished">Laai lêers op</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
+        <source>Screenshot Q&amp;A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
+        <source>Voice Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
+        <source>Voice Read</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
+        <source>Stop Reading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
+        <source>Copy</source>
+        <translation type="unfinished">Kopieer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
+        <source>Regenerate</source>
+        <translation type="unfinished">Hergenereer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
+        <source>Re-edit</source>
+        <translation type="unfinished">Hersien</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
+        <source>Stop Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
+        <source>Generation stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
+        <source>You stopped this answer, please re-edit your question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <source>Back to Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
+        <source>Thinking...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
+        <source>Deep think completed (took %1s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
+        <source>Parsing...</source>
+        <translation type="unfinished">Ontleed...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
+        <source>Parsing failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
+        <source>You can add up to 50 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
+        <source>Summarize the core content of the file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
+        <source>Model List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
+        <source>Smart Recommendation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
+        <source>Smart switch for best match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
+        <source>Local Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
+        <source>Online Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
+        <source>Add Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <source>Official</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
+        <source>You have X newly answered chats</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
+        <source>View Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
+        <source>Remind Me Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
+        <source>Upload files/images as references</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
+        <source>Reference Outline / Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
+        <source>As reference material / As outline file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
+        <source>File Upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
+        <source>As Material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
+        <source>As Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
+        <source>Only 1 file is supported for outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
+        <source>Local Materials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
+        <source>File Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
+        <source>Outline</source>
+        <translation type="unfinished">Uiteensetting</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
+        <source>View All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
+        <source>Collapse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
+        <source>Recent Creations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
+        <source>Upload File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
+        <source>Reference Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
+        <source>Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
+        <source>Heading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
+        <source>Export Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
+        <source>Exit Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
+        <source>Untitled Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
+        <source>Enable Privacy Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
+        <source>Continue Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
+        <source>Generating outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
+        <source>Re-upload Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
+        <source>Directly generate outline using AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
+        <source>Add sub-chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <source>Delete chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
+        <source>Add chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
+        <source>Enter chapter title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
+        <source>Delete this heading?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
+        <source>Generate document from outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
+        <source>Save as Word</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
+        <source>Save as PDF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
+        <source>Save as Markdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
+        <source>Saving...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
+        <source>Saved successfully!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
+        <source>Failed to save, please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
+        <source>Undo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
+        <source>Redo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
+        <source>Body Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
+        <source>Heading %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
+        <source>Bold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
+        <source>Italic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
+        <source>Strikethrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
+        <source>Link Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
+        <source>Bulleted List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
+        <source>Numbered List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
+        <source>Decrease Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
+        <source>Increase Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
+        <source>Blockquote</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
+        <source>Divider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
+        <source>Copy Full Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
+        <source>Print Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
+        <source>Share Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
+        <source>Zoom Out</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
+        <source>Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <source>Please enter the text to be translated first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
+        <source>Identifying source language...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
+        <source>My MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
+        <source>Add MCP Server</source>
+        <translation type="unfinished">Voeg MCP-bediener by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
+        <source>Delete MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <source>Built-in Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
+        <source>Custom Added Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
+        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <source>Install Now</source>
+        <translation type="unfinished">Installeer nou</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
+        <source>System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
+        <source>Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
+        <source>Wireless Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
+        <source>DND Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
+        <source>Eye Comfort</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
+        <source>Brightness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
+        <source>Volume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
+        <source>Font Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
+        <source>App Store</source>
+        <translation type="unfinished">Appwinkel</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
+        <source>Schedule Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
+        <source>Click to download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
+        <source>downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <source>Go to configuration</source>
+        <translation type="unfinished">Gaan na konfigurasie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
+        <source>No account</source>
+        <translation type="unfinished">Geen rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
+        <source>Input question</source>
+        <translation type="unfinished">Invoervraag</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished">Die inhoud gegenereer deur AI is slegs vir verwysing, let asseblief op die akkuraatheid van die inligting.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">Welkom by UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation type="unfinished">Hier is sommige van die dinge wat UOS AI jou kan help doen</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
+        <source>Stop</source>
+        <translation type="unfinished">Stop</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
+        <source>Retry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
+        <source>Clear conversation history</source>
+        <translation type="unfinished">Maak gespreksgeskiedenis skoon</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
+        <source>Please connect the microphone and try again</source>
+        <translation type="unfinished">Koppel die mikrofoon en probeer weer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
+        <source>Chat history cleared</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
+        <source>Click to start/stop recording</source>
+        <translation type="unfinished">Klik om opname te begin/stop</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
+        <source>Listening</source>
+        <translation type="unfinished">Luister</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
+        <source>Sleeping</source>
+        <translation type="unfinished">Slaap</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
+        <source>Microphone not detected</source>
+        <translation type="unfinished">Mikrofoon nie opgespoor nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
+        <source>Connection failed, click to try again</source>
+        <translation type="unfinished">Verbinding het misluk, klik om weer te probeer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
+        <source>Click on the animation or Ctrl+Super+Space to activate</source>
+        <translation type="unfinished">Klik op die animasie of Ctrl+Super+Spatie om te aktiveer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">Steminsette is tydelik onbeskikbaar, gaan die netwerk na!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
+        <source>Voice conversation</source>
+        <translation type="unfinished">Stemgesprek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
+        <source>Click the animation or press Enter to send</source>
+        <translation type="unfinished">Klik die animasie of druk Enter om te stuur</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
+        <source>Stop recording after %1 seconds</source>
+        <translation type="unfinished">Stop opname na %1 sekondes</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
+        <source>Thinking</source>
+        <translation type="unfinished">Dink</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
+        <source>Click animation to interrupt</source>
+        <translation type="unfinished">Klik animasie om te onderbreek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
+        <source>Answering</source>
+        <translation type="unfinished">Antwoord</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
+        <source>Activate</source>
+        <translation type="unfinished">Aktiveer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
+        <source>Voice input</source>
+        <translation type="unfinished">Steminsette</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">Stemuitsending is tydelik onbeskikbaar, gaan asseblief die netwerk na!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
+        <source>Turn off voice conversation</source>
+        <translation type="unfinished">Skakel stemgesprek af</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation type="unfinished">Die prent is gegenereer, skakel asseblief na die kletskoppelvlak om dit te sien.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
+        <source>No account, please configure an account</source>
+        <translation type="unfinished">Geen rekening nie, konfigureer asseblief &apos;n rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
+        <source>Answer each question up to 5 times</source>
+        <translation type="unfinished">Beantwoord elke vraag tot 5 keer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
+        <source>Copied successfully</source>
+        <translation type="unfinished">Suksesvol gekopieër</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
+        <source>Sound output device not detected</source>
+        <translation type="unfinished">Klankuitsetapparaat nie opgespoor nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation type="unfinished">Die klankuitsetapparaat word nie opgespoor nie, gaan dit na en probeer weer!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
+        <source>Mode</source>
+        <translation type="unfinished">Modus</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
+        <source>Window Mode</source>
+        <translation type="unfinished">Venstermodus</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
+        <source>Sidebar Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
+        <source>Assistant List</source>
+        <translation type="unfinished">Assistentlys</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
+        <source>Agent List</source>
+        <translation type="unfinished">Agentlys</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
+        <source>UOS System Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
+        <source>Deepin System Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished">Persoonlike Kennisassistent</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
+        <source>Please configure the knowledge base</source>
+        <translation type="unfinished">Konfigureer asseblief die kennisbasis</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation type="unfinished">Voordat die [Persoonlike Kennisassistent] gebruik word, is dit nodig om die kennisbasis te konfigureer. Nadat die kennisbasis gekonfigureer is, sal AI vrae beantwoord of inhoud genereer gebaseer op die inhoud wat u in die kennisbasis gekonfigureer het.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
+        <source>Please configure the large model</source>
+        <translation type="unfinished">Konfigureer asseblief die groot model</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation type="unfinished">Die persoonlike kennisassistent kan slegs gebruik word nadat &apos;n groot model gekonfigureer is.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
+        <source>To configure</source>
+        <translation type="unfinished">Om te konfigureer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
+        <source>To install</source>
+        <translation type="unfinished">Om te installeer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation type="unfinished">Installeer asseblief [EmbeddingPlugins]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation type="unfinished">Hierdie assistent vereis die installering van die EmbeddingPlugins om te werk</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
+        <source>Drag files here to add them.</source>
+        <translation type="unfinished">Sleep lêers hier om dit by te voeg.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation type="unfinished">Jy kan slegs 3 lêers byvoeg; ondersteunde lêertipes sluit in: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kodelêers, ens.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
+        <source>You can only add a maximum of one file.</source>
+        <translation type="unfinished">Jy kan maksimum een lêer byvoeg.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
+        <source>The file format is not supported.</source>
+        <translation type="unfinished">Die lêerformaat word nie ondersteun nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
+        <source>Summarize the key content of the file.</source>
+        <translation type="unfinished">Vat die sleutelinhoud van die lêer saam.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
+        <source>File Error</source>
+        <translation type="unfinished">Lêerfout</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
+        <source>File has been deleted.</source>
+        <translation type="unfinished">Lêer is uitgevee.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation type="unfinished">Die lêergrootte oorskry die 100MB-limiet.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
+        <source>Upload a document</source>
+        <translation type="unfinished">Laai &apos;n dokument op</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
+        <source>File deleted</source>
+        <translation type="unfinished">Lêer uitgevee</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
+        <source>No text was parsed</source>
+        <translation type="unfinished">Geen teks is ontleed nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
+        <source>Reference</source>
+        <translation type="unfinished">Verwysing</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
+        <source>Instruction</source>
+        <translation type="unfinished">Instruksie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation type="unfinished">Tik &quot;/&quot; in die invoerkassie om te aktiveer.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation type="unfinished">Tik asseblief; “Ctrl+Enter” om die lyn te verander.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation type="unfinished">Voer jou vraag in, of tik &quot;/&quot; om &apos;n opdrag te kies &quot;Ctrl+Enter&quot; om &apos;n nuwe lyn te begin</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
+        <source>Search complete.</source>
+        <translation type="unfinished">Soektog voltooi.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
+        <source>Click to view results</source>
+        <translation type="unfinished">Klik om resultate te sien</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
+        <source>edit</source>
+        <translation type="unfinished">wysig</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <source>save</source>
+        <translation type="unfinished">stoor</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
+        <source>copy</source>
+        <translation type="unfinished">kopieer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <source>Thinking has stopped</source>
+        <translation type="unfinished">Denke het gestop</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
+        <source>Back to bottom</source>
+        <translation type="unfinished">Terug na onder</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation type="unfinished">Diep gedink (%1 sekondes)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">Nuwe Gesprek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
+        <source>History</source>
+        <translation type="unfinished">Geskiedenis</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
+        <source>No History Records</source>
+        <translation type="unfinished">Geen Geskiedenisrekords nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation type="unfinished">Is jy seker jy wil die gesprek skrap? Dit sal onherroeplik wees sodra dit geskrap is.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation type="unfinished">Die %1-agent wat in hierdie gesprek gebruik is, is geskrap</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation type="unfinished">Hierdie gesprek kan nie bekyk word nie. Installeer asseblief die %1-agent en probeer weer.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation type="unfinished">Die oorspronklike gesprekmodel is geskrap. Ons het na &apos;n nuwe model oorgeskakel vir jou om die gesprek voort te sit.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <source>Recommendations</source>
+        <translation type="unfinished">Aanbevelings</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <source>No Model</source>
+        <translation type="unfinished">Geen Model</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation type="unfinished">Geen model beskikbaar nie. Installeer of konfigureer asseblief &apos;n model in die instellings.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation type="unfinished">Beskryf asseblief die Inhoudtema en Vereistes vir Jou Skepping.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation type="unfinished">Voer asseblief die Inhoud in wat Jy Wil Vertaal en Spesifiseer die Doeltaal. Standaardvertaling is na Chinees.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation type="unfinished">Voer asseblief die Teks in wat Jy Wil Verwerk en Spesifiseer Jou Vereistes.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <source>New Agent Added</source>
+        <translation type="unfinished">Nuwe Agent Bygevoeg</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation type="unfinished">Nuwe Skryf-, Teksverwerking- en Vertaalagentskappe is bygevoeg. Kyk nou na hulle.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <source>Try it</source>
+        <translation type="unfinished">Probeer dit</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <source>Write an article based on the following document:</source>
+        <translation type="unfinished">Skryf &apos;n artikel gebaseer op die volgende dokument:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <source>Translate the following document into English:</source>
+        <translation type="unfinished">Vertaal die volgende dokument in Engels:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <source>Add Mcp Server</source>
+        <translation type="unfinished">Voeg MCP-bediener by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <source>Add Server</source>
+        <translation type="unfinished">Voeg Bediener By</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <source>Add failed! Error reason:</source>
+        <translation type="unfinished">Byvoeging het misluk! Foutrede:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation type="unfinished">MCP-omgewing ontbreek. Installeer asseblief 【UOS AI Agent】</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <source>Calling</source>
+        <translation type="unfinished">Besig om te roep</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <source>Completed</source>
+        <translation type="unfinished">Voltooi</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <source>Call Failed</source>
+        <translation type="unfinished">Oproep het misluk</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <source>Cancelled</source>
+        <translation type="unfinished">Gekanselleer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <source>params</source>
+        <translation type="unfinished">params</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <source>result</source>
+        <translation type="unfinished">resultaat</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">Vir MCP-bediener, skakel oor na die amptelik vrygestelde model &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation type="unfinished">Voer MCP-bediener-opdrag in, bv. &quot;Verander stelsel na donker modus vir my&quot;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
+        <source>Agent server is not available</source>
+        <translation type="unfinished">Agent-bediener is nie beskikbaar nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
+        <source>Agent server exception</source>
+        <translation type="unfinished">Agent-bediener-uitsondering</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <source>MCP server is not available</source>
+        <translation type="unfinished">MCP-bediener is nie beskikbaar nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <source>Confirm</source>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation type="unfinished">Outomatiseer veelvuldige-lêer- en veelvuldige-toep-take met een opdrag deur MCP-diens. Probeer dit nou!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <source>Use later</source>
+        <translation type="unfinished">Gebruik later</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <source>Enable MCP Server</source>
+        <translation type="unfinished">Aktiveer MCP-bediener</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation type="unfinished">Nadat jy die MCP-omgewing &quot;UOS AI Agent&quot; geïnstalleer het, klik die </translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation type="unfinished"> en kies &quot;uos-mcp&quot; in die MCP-bediener-lys.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation type="unfinished">Probeer sê: &quot;Verander stelsel na donker modus&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <source>Try it now</source>
+        <translation type="unfinished">Probeer dit nou</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation type="unfinished">Voeg Mcp-bediener by [Gidsbladsy]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation type="unfinished">Eerstekeergebruikers: Installeer die MCP-omgewing &quot;UOS AI Agent&quot; via die App Store.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation type="unfinished">Die JSON-lêerformaat is verkeerd, kontroleer en dien weer in</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
+        <source>Install Now &gt;</source>
+        <translation type="unfinished">Installeer nou &gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <source>General Chat</source>
+        <translation type="unfinished">Algemene gesprek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
+        <source>Now in Private Chat</source>
+        <translation type="unfinished">Nou in Privaat gesprek</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation type="unfinished">Privaat-gesprekboodskappe word nie in die geskiedenis gestoor nie en sal permanent verwyder word wanneer jy die gesprek verlaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation type="unfinished">Skermkiekie V&amp;V Kortpad (Ctrl+Alt+Q), tot 3 beelde word ondersteun.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
+        <source>Cannot be used during screen recording</source>
+        <translation type="unfinished">Kan nie tydens skermopname gebruik word nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
+        <source>You can upload up to 3 files or image</source>
+        <translation type="unfinished">Jy kan tot 3 lêers of beelde oplaai</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation type="unfinished">Verwyder asseblief die abnormale lêer en stuur dit weer</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
+        <source>Add Private Chat</source>
+        <translation type="unfinished">Voeg privaat klets by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation type="unfinished">Voeg [Skermkiekie V&amp;V] by</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation type="unfinished">Neem ’n skermkiekie en stuur die inhoud na UOS AI. Jy kan ook ’n beeld direk oplaai.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
+        <source>Next</source>
+        <translation type="unfinished">Volgende</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation type="unfinished">Voeg [Privaat Kletsmodus] by – kletsgeskiedenis word nie gestoor nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
+        <source>No text extracted</source>
+        <translation type="unfinished">Geen teks onttrek nie</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
+        <source>Image size exceeds 15 MB</source>
+        <translation type="unfinished">Beeldgrootte oorskry 15 MB</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation type="unfinished">Nadat die kennisbank oopgemaak is, sal antwoorde op sy inhoud gebaseer word. Responsspoed hang van masjienprestasie en die grootte van die kennisbank af.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation type="unfinished">Kennisbank is nie beskikbaar wanneer enige opdrag of MCP gekies is nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation type="unfinished">MCP is gedeaktiveer terwyl die kennisbank aktief is.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation type="unfinished">Opdragte is gedeaktiveer terwyl die kennisbank aktief is.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
+        <source>Copy succeeded.</source>
+        <translation type="unfinished">Kopieer suksesvol.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
+        <source>Copy failed. Please try again.</source>
+        <translation type="unfinished">Kopieer het misluk. Probeer asseblief weer.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
+        <source>Searching</source>
+        <translation type="unfinished">Soek tans</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation type="unfinished">%1 verwysingsdokumente is verkry (%2s)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
+        <source>Clear History</source>
+        <translation type="unfinished">Vee geskiedenis uit</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
+        <source>Delete all records?</source>
+        <translation type="unfinished">Alle rekords uitvee?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation type="unfinished">Sodra dit uitgevee is, kan die inhoud nie herwin word nie!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
+        <source>Recommend official models</source>
+        <translation type="unfinished">Beveel amptelike modelle aan</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
+        <source>Disable MCP</source>
+        <translation type="unfinished">Deaktiveer MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">Dit word aanbeveel om die amptelike model &quot;DeepSeek-Trial Account&quot; te gebruik</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
+        <source>Quick Open</source>
+        <translation type="unfinished">Vinnig oopmaak</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation type="unfinished">MCP-bediener opgradeer na outomatiese modus</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation type="unfinished">MCP-bediener is opgegradeer na outomatiese modus, wat jou toelaat om alle MCP-bedieners met ’n enkele klik te bereik</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation type="unfinished">. Dit laat jou toe om take soos stelselopstelling en lêerverwerking met net een klik te outomatiseer.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation type="unfinished">Om ’n MCP-bediener by te voeg is na Instellings verskuif.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation type="unfinished">Om nog MCP-bedieners by te voeg, gaan na Instellings &gt; MCP-bediener.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
+        <source>Got it</source>
+        <translation type="unfinished">Ek het dit</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
+        <source>Complimentary Model Credits</source>
+        <translation type="unfinished">Komplimentêre Modelkrediete</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation type="unfinished">Die huidige stelsel bied die DeepSeek-proefrekeningmodel aan, wat outomaties die gratis kwota aan die begin van elke maand vernuwe, sodat jy dit sorgevry kan gebruik.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">Eis Krediete</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">Kry &apos;n gratis rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
+        <source>Claim Free Credits</source>
+        <translation type="unfinished">Eis Gratis Krediete</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">Suksesvol Geëis</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">Kon Nie Eis Nie. Probeer Weereens.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
+        <source>Enable MCP Server&amp;</source>
+        <translation type="unfinished">Aktiveer MCP-bediener&amp;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
+        <source>Disable MCP Server</source>
+        <translation type="unfinished">Deaktiveer MCP-bediener</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
+        <source>Configure MCP Server</source>
+        <translation type="unfinished">Konfigureer MCP-bediener</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS KI VolgSaam/Skryf</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemControlInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="23"/>
         <source>System Control</source>
-        <translation>Stelselbeheer</translation>
+        <translation type="vanished">Stelselbeheer</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="25"/>
         <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation>Skakel oor na &apos;n nuwe agtergrond. stel die skermhelderheid op 30%...</translation>
+        <translation type="vanished">Skakel oor na &apos;n nuwe agtergrond. stel die skermhelderheid op 30%...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::TtsCompositeWidget</name>
+    <message>
+        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
+        <source>The text you have selected has exceeded the 5000 character limit.</source>
+        <translation type="unfinished">Die teks wat u gekies het, het die 5000 karakter limiet oorskry.</translation>
     </message>
 </context>
 <context>
@@ -6295,6 +8845,101 @@ Inset: %1</translation>
         <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>Netwerk is afgekoppel, stop teks-na-spraak</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSAbilityManager</name>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
+        <source>Brightness is already at maximum and cannot be increased further.</source>
+        <translation type="unfinished">Helderheid is reeds op maksimum en kan nie verder verhoog word nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
+        <source>Brightness is already at minimum and cannot be decreased further.</source>
+        <translation type="unfinished">Helderheid is reeds op minimum en kan nie verder verlaag word nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
+        <source>AI Meeting Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
+        <source>Your system memory is %0.</source>
+        <translation type="unfinished">Jou stelsel geheue is %0.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
+        <source>The language setting interface has been opened. Please set it in this interface.</source>
+        <translation type="unfinished">Die taalinstellingskoppelvlak is oopgemaak. Stel dit asseblief in hierdie koppelvlak.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
+        <source>The current mode is already %1 mode.</source>
+        <translation type="unfinished">Die huidige modus is reeds %1 modus.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
+        <source>Unable to close because the current mode %1 does not match the target mode.</source>
+        <translation type="unfinished">Kan nie sluit nie omdat die huidige modus %1 nie ooreenstem met die teikenmodus nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
+        <source>Balance mode cannot be turned off.</source>
+        <translation type="unfinished">Balansmodus kan nie afgeskakel word nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
+        <source>The lock screen has been opened for you</source>
+        <translation type="unfinished">Die slotskerm is vir jou oopgemaak</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
+        <source>Screen shotting or recording has been completed</source>
+        <translation type="unfinished">Skermkiekie of opname is voltooi</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
+        <source>Only one screen, can&apos;t switch screen mode.</source>
+        <translation type="unfinished">Slegs een skerm, kan nie skermmodus verander nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
+        <source>It is the same as the current display mode. Please try again.</source>
+        <translation type="unfinished">Dit is dieselfde as die huidige vertoonmodus. Probeer asseblief weer.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
+        <source>Only one screen, can&apos;t switch screen.</source>
+        <translation type="unfinished">Slegs een skerm, kan nie skerm verander nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
+        <source>Your command has been issued.</source>
+        <translation type="unfinished">Jou opdrag is uitgereik.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
+        <source>Failed to rename file %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
+        <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
+Error details:
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
+        <source>Email client has been opened, please confirm to send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
+        <source>App store has been opened, preparing to install application: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6319,80 +8964,193 @@ Inset: %1</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::UserAgreementDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished">UOS AI Gebruikersooreenkoms</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">Ek bevestig dat ek ouer as 18 jaar is. Ek erken en stem in dat die inhoud wat ek via die Toepassing stuur en ontvang direkte data-uitruilings met die groot model diensverskaffer is en niks met die Maatskappy te doen het nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::WelcomeDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">Welkom by UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
+        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
+        <translation type="unfinished">UOS AI, jou slim assistent, is ontwerp om jou produktiwiteit te verbeter en &apos;n hoë-gehalte werkservaring te geniet.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">Kry &apos;n gratis rekening</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
+        <source>Add Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
+        <source>Start using</source>
+        <translation type="unfinished">Begin gebruik</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">Ek bevestig dat ek ouer as 18 jaar is. Ek erken en stem in tot die &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Gebruikersooreenkoms&quot;&lt;/a&gt;, en die inhoud wat ek via die Toepassing stuur en ontvang, is direkte data-uitruilings met die groot modeldiensverskaffer en het niks met die Maatskappy te doen nie.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Bevestig</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished">Die Engelse ondersteuning vir proefrekeninge is nie bevredigend nie, en die aantal gebruike sowel as die tydsduur van die proefrekening is beperk. Stel asseblief jou persoonlike modelrekening betyds op!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished">Die gratis rekeningaktiwiteit eindig.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="113"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
         <translation>Versteek totdat hierdie toepassing herbegin word</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>Gaan na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Instellings&lt;/a&gt; om dit weer te aktiveer.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
         <translation>Die bygevoegde inhoud moet meer as 10 woorde wees</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>Soek</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>Verduidelik</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>Opsomming</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>Vertaal</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
         <translation>Gaan voort met Skryf</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>Brei Uit</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
         <translation>Korrigeer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
         <source>Add to the AI knowledge base</source>
         <translation>Voeg by die AI-kennisbasis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="114"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>Deaktiveer in Hierdie Toepassing</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="115"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>Globaal Deaktiveer</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="125"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Pasgemaakte Instellings</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
         <source>Polish</source>
         <translation>Poleer</translation>
     </message>
@@ -6400,12 +9158,11 @@ Inset: %1</translation>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI FollowAlong</translation>
+        <translation type="vanished">UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Bygevoeg</translation>
     </message>

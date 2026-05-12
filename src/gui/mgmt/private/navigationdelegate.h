@@ -1,6 +1,5 @@
 #ifndef NAVIGATIONDELEGATE_H
 #define NAVIGATIONDELEGATE_H
-#include "uosai_global.h"
 
 #include <QScopedPointer>
 

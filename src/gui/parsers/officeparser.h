@@ -5,10 +5,10 @@
 #ifndef OFFICEPARSER_H
 #define OFFICEPARSER_H
 
-#include "uosai_global.h"
+
 #include "abstractfileparser.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief Office document parser
@@ -33,6 +33,6 @@ public:
     QSharedPointer<ParserResult> parseFile(const QString &filePath, const QVariantMap &metadata = QVariantMap()) override;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // OFFICEPARSER_H

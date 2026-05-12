@@ -8,6 +8,7 @@
 #include "audio/audioplayerstream.h"
 #include "dbus/networkmonitor.h"
 #include "utils/util.h"
+#include "builtinprovider.h"
 
 #include <DPlatformWindowHandle>
 
@@ -16,7 +17,7 @@
 #include <QUuid>
 
 DWIDGET_USE_NAMESPACE
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 #define TTS_TEXT_MAX_LENGTH 5000
 
@@ -61,7 +62,7 @@ bool TtsCompositeWidget::startTTS(QString text, bool ui)
     m_isworking = true;
 
     m_currentID = QUuid::createUuid().toString();
-    m_ttsServer = new TtsSocketServer(m_currentID, AccountProxy::xfInlineAccount(), this);
+    m_ttsServer = new TtsSocketServer(m_currentID, BuiltinProvider::xfInline(), this);
 
     connect(m_ttsServer, &TtsServer::error, this, &TtsCompositeWidget::ttsServerError, Qt::QueuedConnection);
     connect(m_ttsServer, &TtsServer::appendAudioData, this, &TtsCompositeWidget::ttsAudioData, Qt::QueuedConnection);

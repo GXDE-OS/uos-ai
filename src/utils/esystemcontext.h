@@ -6,6 +6,8 @@
 #include <QWindow>
 #endif
 
+namespace uos_ai {
+
 /**
  * @brief 获取系统各种环境变量
  */
@@ -45,4 +47,5 @@ public:
     }
 };
 
+} // namespace uos_ai
 #endif // ESYSTEMCONTEXT_H

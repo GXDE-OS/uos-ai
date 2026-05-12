@@ -1,7 +1,7 @@
 #ifndef TOPDIALOG
 #define TOPDIALOG
 
-#include "uosai_global.h"
+
 
 #include <DDialog>
 #include <DTitlebar>

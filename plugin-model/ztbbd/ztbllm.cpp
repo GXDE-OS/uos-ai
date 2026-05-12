@@ -3,8 +3,6 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include "ztbllm.h"
-#include "llm/common/networkdefs.h"
-#include "wrapper/serverdefs.h"
 
 #include <QTimer>
 #include <QJsonObject>
@@ -78,10 +76,10 @@ QJsonObject ZtbLLM::generate(const QString &content, const QVariantHash &params,
 
     timer.start();
 
-    AIServer::ErrorType serverErrorCode = AIServer::ErrorType::NoError;
+    QNetworkReply::NetworkError serverErrorCode = QNetworkReply::NoError;
     QString errorStr;
     QObject::connect(&timer, &QTimer::timeout, this, [=, &loop, &serverErrorCode](){
-        serverErrorCode = AIServer::ErrorType::TimeoutError;
+        serverErrorCode = QNetworkReply::TimeoutError;
         reply->abort();
         loop.quit();
     });
@@ -93,8 +91,8 @@ QJsonObject ZtbLLM::generate(const QString &content, const QVariantHash &params,
     loop.exec();
     timer.stop();
 
-    if (serverErrorCode == AIServer::ErrorType::NoError && reply->error() != QNetworkReply::NoError) {
-        serverErrorCode = AIServer::networkReplyErrorToAiServerError(static_cast<QNetworkReply::NetworkError>(reply->error()));
+    if (serverErrorCode == QNetworkReply::NoError && reply->error() != QNetworkReply::NoError) {
+        serverErrorCode = reply->error();
         errorStr = reply->errorString();
     }
 
@@ -143,7 +141,7 @@ QJsonObject ZtbLLM::generate(const QString &content, const QVariantHash &params,
     response.insert(GENERATE_RESPONSE_CODE, serverErrorCode);
     response.insert(GENERATE_RESPONSE_ERRORMSG, errorStr);
 
-    if (serverErrorCode == AIServer::ErrorType::NoError && !docArray.isEmpty())
+    if (serverErrorCode == QNetworkReply::NoError && !docArray.isEmpty())
         response.insert(GENERATE_RESPONSE_REFERENCES, reference);
 
     return response;

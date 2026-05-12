@@ -1,8 +1,7 @@
 #pragma once
 
 #include "mcpagent.h"
-#include "skillsmanager.h"
-#include "tooluse.h"
+#include "mcp/skillsmanager.h"
 
 #include <QScopedPointer>
 #include <QSharedPointer>
@@ -32,8 +31,9 @@ public:
 
     static QSharedPointer<LlmAgent> create();
 
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &history,
-                               const QVariantHash &params) override;
+    QVariantHash processRequest(const uos_ai::ModelMessage &question,
+                                const QList<uos_ai::ModelMessage> &history,
+                                const QVariantHash &params = {}) override;
 
     QPair<int, QString> fetchTools(const QStringList &servers) override;
 
@@ -43,17 +43,17 @@ protected:
     QPair<int, QString> callTool(const QString &toolName, const QJsonObject &params) override;
 
 private:
-    QPair<int, QString> toolGetCurrentDatetime(const QJsonObject &params);
-    QPair<int, QString> toolUpdateProfile(const QJsonObject &params);
-    QJsonObject         createSkillTool(const QList<uos_ai::SkillInfo> &skillList);
-    QPair<int, QString> getSkill(const QString &name);
+    QPair<int, QString>  toolGetCurrentDatetime(const QJsonObject &params);
+    QPair<int, QString>  toolUpdateProfile(const QJsonObject &params);
+    uos_ai::ModelTool    createSkillTool(const QList<uos_ai::SkillInfo> &skillList);
+    QPair<int, QString>  getSkill(const QString &name);
 
     /**
      * Bootstrap Hook：若 PROFILE.md 不存在（首次启动），在用户消息前注入 bootstrap
      * 引导文本，指示模型完成身份初始化并写入 PROFILE.md / SOUL.md。
      * PROFILE.md 写入后 update_profile 工具自动触发，下次请求时 hook 不再介入。
      */
-    void bootstrapHook(QJsonObject &question) const;
+    void bootstrapHook(uos_ai::ModelMessage &question) const;
 
     QString m_platform;           // 当前平台，processRequest 时从 params 注入
     bool    m_isBootstrapSession = false;  // 本次请求是否为首次上线（PROFILE.md 不存在），processRequest 计算一次，fetchTools/bootstrapHook 共用

@@ -1,0 +1,142 @@
+html {
+    --tool-management-list-item-title-color: rgba(0, 0, 0, 1);
+    --tool-management-list-item-description-color: rgba(0, 0, 0, 0.7);
+    --tool-management-list-item-tooltip-title-color: rgba(0, 0, 0, 1);
+    --tool-management-list-item-tooltip-description-color: rgba(0, 0, 0, 1);
+}
+
+html.dark {
+    --tool-management-list-item-title-color: rgba(255, 255, 255, 1);
+    --tool-management-list-item-description-color: rgba(255, 255, 255, 0.7);
+    --tool-management-list-item-tooltip-title-color: rgba(255, 255, 255, 1);
+    --tool-management-list-item-tooltip-description-color: rgba(255, 255, 255, 1);
+}
+
+.tool-management-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 14px;
+}
+
+.tool-management-list-item__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    margin-right: 12px;
+}
+
+.tool-management-list-item__header {
+    display: flex;
+    align-items: center;
+}
+
+.tool-management-list-item__title-row {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.tool-management-list-item__title-row > * + * {
+    margin-left: 10px;
+}
+
+.tool-management-list-item__title {
+    max-width: 100%;
+    overflow: hidden;
+    line-height: var(--uosai-line-height-tight);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--tool-management-list-item-title-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tool-management-list-item__badge {
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    padding: 0 6px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 6px;
+    background: rgba(248, 250, 252, 1);
+    color: #667085;
+    font-size: var(--uosai-font-size-xs);
+    line-height: var(--uosai-line-height-normal);
+}
+
+.tool-management-list-item__badge--builtin {
+    border-color: rgba(0, 129, 255, 0.4);
+    background: rgba(0, 129, 255, 0.1);
+    color: rgba(0, 130, 250, 1);
+}
+
+.tool-management-list-item__actions {
+    display: inline-flex;
+    align-items: center;
+    min-width: 52px;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.tool-management-list-item__actions > * + * {
+    margin-left: 2px;
+}
+
+.tool-management-list-item__actions--custom {
+    visibility: hidden;
+}
+
+.tool-management-list-item:hover .tool-management-list-item__actions--custom {
+    visibility: visible;
+}
+
+.tool-management-list-item__description {
+    overflow: hidden;
+    margin-top: 4px;
+    line-height: var(--uosai-line-height-tight);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--tool-management-list-item-description-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.uos-tooltip.tool-management-list-item__tooltip-popper {
+    width: 354px !important;
+    max-width: 354px !important;
+    box-sizing: border-box !important;
+    padding: 10px !important;
+}
+
+.tool-management-list-item__tooltip {
+    width: 100%;
+}
+
+.tool-management-list-item__tooltip-title {
+    color: var(--tool-management-list-item-tooltip-title-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-tight);
+}
+
+.tool-management-list-item__tooltip-description {
+    margin-top: 8px;
+    color: var(--tool-management-list-item-tooltip-description-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-regular);
+    white-space: normal;
+    word-break: break-word;
+}
+
+.tool-management-list-item__tooltip-link {
+    color: var(--system-active-color);
+    text-decoration: none;
+}
+
+.tool-management-list-item__tooltip-link:hover {
+    text-decoration: underline;
+}

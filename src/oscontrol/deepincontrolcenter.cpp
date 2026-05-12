@@ -6,7 +6,7 @@
 
 Q_DECLARE_LOGGING_CATEGORY(logOsControl)
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 DeepinControlCenter::DeepinControlCenter(QObject *parent) : QObject{parent}
 {

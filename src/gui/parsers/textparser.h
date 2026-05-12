@@ -5,12 +5,12 @@
 #ifndef TEXTPARSER_H
 #define TEXTPARSER_H
 
-#include "uosai_global.h"
+
 #include "abstractfileparser.h"
 
 #include <QIODevice>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief Text file parser
@@ -38,6 +38,6 @@ private:
     bool looksBinary(const QByteArray &head);
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // TEXTPARSER_H

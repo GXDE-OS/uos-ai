@@ -1,6 +1,5 @@
 #ifndef WORDWIZARDITEM_H
 #define WORDWIZARDITEM_H
-#include "uosai_global.h"
 
 #include <DWidget>
 #include <DLabel>

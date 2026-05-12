@@ -3,25 +3,23 @@
 #include "iatsocketserver.h"
 #include "audioplayerstream.h"
 #include "ttssocketserver.h"
-#include "networkdefs.h"
-#include "servercodetranslation.h"
 #include "audiodbusinterface.h"
 #include "networkmonitor.h"
-#include "iatlocalserver.h"
-#include "ttslocalserver.h"
-#include "dbwrapper.h"
+#include "builtinprovider.h"
 
 #include <QDebug>
 #include <QSoundEffect>
 #include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logAudio)
+
+using namespace uos_ai;
 
 #ifdef AUDIOPATH
 static const QString &audioPath = AUDIOPATH;
 #else
 static const QString &audioPath = "/usr/lib/uos-ai-assistant/audio";
 #endif
-
-Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
 AudioControler::AudioControler(QObject *parent)
     : QThread(parent)
@@ -36,7 +34,7 @@ AudioControler::AudioControler(QObject *parent)
         emit recordDeviceChange(audioInputDeviceValid());
     });
 
-    m_audioModel = DbWrapper::localDbWrapper().getLocalSpeech() ? Local : NetWork;
+    m_audioModel = NetWork;
     qCDebug(logAudio) << "Initial audio model:" << m_audioModel;
 
     moveToThread(this);
@@ -82,10 +80,8 @@ void AudioControler::prepare()
     connect(m_audioRecorder.data(), &AudioRecorder::audioRecorded,  this, &AudioControler::onAudioRecorded, Qt::QueuedConnection);
     connect(m_audioRecorder.data(), &AudioRecorder::levelUpdated,   this, &AudioControler::levelUpdated, Qt::QueuedConnection);
 
-    connect(m_audioRecorder.data(), &AudioRecorder::recordError,    this, [this]() {
-        emit recordError(AIServer::AudioInputDeviceInvalid
-                         , ServerCodeTranslation::serverCodeTranslation(AIServer::AudioInputDeviceInvalid
-                                                                        , "invalid input device"));
+    connect(m_audioRecorder.data(), &AudioRecorder::recordError, this, [this]() {
+        emit recordError(GErrorType::AudioInputDeviceInvalid, tr("Microphone not detected"));
     }, Qt::QueuedConnection);
 
     m_audioPlayer.reset(new AudioPlayer);
@@ -94,10 +90,8 @@ void AudioControler::prepare()
     connect(m_audioPlayer.data(), &AudioPlayer::playerStreamStopped, this, &AudioControler::playTextFinished, Qt::QueuedConnection);
     connect(m_audioPlayer.data(), &AudioPlayer::playerFileStop,      this, &AudioControler::playTextFinished, Qt::QueuedConnection);
 
-    connect(m_audioPlayer.data(), &AudioPlayer::playError,           this, [this]() {
-        emit playerError(AIServer::AudioOutputDeviceInvalid
-                         , ServerCodeTranslation::serverCodeTranslation(AIServer::AudioOutputDeviceInvalid
-                                                                        , "invalid output device"));
+    connect(m_audioPlayer.data(), &AudioPlayer::playError, this, [this]() {
+        emit playerError(GErrorType::AudioOutputDeviceInvalid, tr("Microphone not detected"));
     }, Qt::QueuedConnection);
 }
 
@@ -108,10 +102,10 @@ void AudioControler::resetIatServer()
 
     switch (m_audioModel) {
     case NetWork:
-        m_iatServer.reset(new IatSocketServer(AccountProxy::xfInlineAccount()));
+        m_iatServer.reset(new IatSocketServer(BuiltinProvider::xfInline()));
         break;
     case Local:
-        m_iatServer.reset(new IatLocalServer());
+        qCWarning(logAudio) << "no local model for iat.";
         break;
     default:
         break;
@@ -128,10 +122,10 @@ void AudioControler::resetTtsServer(const QString &id)
 {
     switch (m_audioModel) {
     case NetWork:
-        m_ttsServer.reset(new TtsSocketServer(id, AccountProxy::xfInlineAccount()));
+        m_ttsServer.reset(new TtsSocketServer(id, BuiltinProvider::xfInline()));
         break;
     case Local:
-        m_ttsServer.reset(new TtsLocalServer(id));
+        qCWarning(logAudio) << "no local model for tts";
         break;
     default:
         break;
@@ -148,7 +142,7 @@ void AudioControler::resetTtsServer(const QString &id)
 QPair<int, QString> AudioControler::formatError(int code, QString errorMessage)
 {
     if (!NetworkMonitor::getInstance().isOnline() && Local != m_audioModel) {
-        code = AIServer::NetworkError;
+        code = GErrorType::HttpError;
         errorMessage = QCoreApplication::translate("AudioControler", "Unable to connect to the server, please check your network or try again later.");
     }
 
@@ -186,9 +180,7 @@ bool AudioControler::startRecorder()
 {
     if (!audioInputDeviceValid()) {
         qCWarning(logAudio) << "Invalid audio input device";
-        emit playerError(AIServer::AudioInputDeviceInvalid
-                         , ServerCodeTranslation::serverCodeTranslation(AIServer::AudioInputDeviceInvalid
-                                                                        , "invalid input device"));
+        emit playerError(GErrorType::AudioInputDeviceInvalid, "invalid input device");
         return false;
     }
 
@@ -230,14 +222,12 @@ void AudioControler::playSystemSound(AudioSystemEffect effect)
     m_sound->play();
 }
 
-bool AudioControler::startAppendPlayText(const QString &id, const QString &text, bool isEnd, bool isPlayOutline)
+bool AudioControler::startAppendPlayText(const QString &id, const QString &text, bool isEnd)
 {
     qCDebug(logAudio) << "Starting to play text, ID:" << id << "Length:" << text.length() << "isEnd:" << isEnd;
     
     if (!audioOutputDeviceValid()) {
-        emit playerError(AIServer::AudioOutputDeviceInvalid
-                         , ServerCodeTranslation::serverCodeTranslation(AIServer::AudioOutputDeviceInvalid
-                                                                        , "invalid output device"));
+        emit playerError(GErrorType::AudioOutputDeviceInvalid, "invalid output device");
         return false;
     }
 
@@ -247,7 +237,7 @@ bool AudioControler::startAppendPlayText(const QString &id, const QString &text,
 
     if (m_tempDir.isValid()) {
         QString tempFile = m_tempDir.path() + "/" + id;
-        if (QFile::exists(tempFile) && !isPlayOutline) {
+        if (QFile::exists(tempFile)) {
             qCDebug(logAudio) << "Playing from existing audio file:" << tempFile;
             return m_audioPlayer->playFileSync(id, tempFile);
         } else {

@@ -1,0 +1,229 @@
+/* InputAreaAction 组件样式 */
+
+/* 按钮区域 */
+.input-area__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+/* 左侧按钮组 */
+.input-area__actions-group-left {
+    display: flex;
+    align-items: center;
+}
+
+.input-area__actions-group-left > *:not(:first-child) {
+    margin-left: 8px;
+}
+
+.input-area__actions-group-right > *:not(:last-child) {
+    margin-right: 8px;
+}
+
+/* 右侧按钮组 */
+.input-area__actions-group-right {
+    display: flex;
+    align-items: center;
+}
+
+/* 发送按钮样式 */
+.input-area__send-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--system-active-color) !important;
+    color: #fff !important;
+    border: none;
+    font-size: var(--uosai-font-size-base);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-area__send-button:hover {
+    filter: brightness(1.2);
+}
+
+.input-area__send-button:active {
+    filter: brightness(1.5);
+}
+
+.input-area__send-button:disabled {
+    cursor: not-allowed;
+}
+
+/* 停止按钮 */
+.input-area__stop-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* 浅色模式用0.3不透明度 */
+    background-color: var(--system-active-color-alpha-30);
+}
+
+.input-area__stop-button:hover {
+    filter: brightness(1.2);
+}
+
+.input-area__stop-button:active {
+    filter: brightness(1.5);
+}
+
+.input-area__stop-button:disabled {
+    cursor: not-allowed;
+}
+
+html.dark .input-area__stop-button {
+    /* 深色模式用0.4不透明度 */
+    background-color: var(--system-active-color-alpha-40);
+}
+
+/* 停止按钮 - 中间方块 */
+.input-area__stop-button .custom-stop-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: var(--system-active-color);
+}
+
+/* 语音按钮容器 */
+.input-area__voice-button-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* 语音按钮录制动效 */
+.input-area__voice-button {
+    position: relative;
+}
+
+/* 录音状态下的伪元素 */
+.input-area__voice-button.recording {
+    background-color: var(--system-active-color);
+    color: #fff;
+}
+
+.input-area__voice-button.recording:hover {
+    background-color: var(--system-active-color);
+    color: #fff;
+    filter: brightness(1.2);
+}
+
+.input-area__voice-button.recording:active {
+    background-color: var(--system-active-color);
+    color: #fff;
+    filter: brightness(1.5);
+}
+
+/* .input-area__voice-button.recording::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+    border-radius: 50%;
+} */
+
+.input-area__voice-button.recording::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0.3; */
+    border-radius: 50%;
+}
+
+/* 有声音时的动效 (Wave1) - 第一层波纹 */
+/* @keyframes Wave1 {
+    0% {
+        border: 2px solid var(--system-active-color);
+        width: 30px;
+        height: 30px;
+    }
+
+    100% {
+        border: 6px solid var(--system-active-color);
+        width: 30px;
+        height: 30px;
+    }
+} */
+
+/* 有声音时的动效 (Wave2) - 第二层波纹 */
+@keyframes Wave2 {
+    0% {
+        border: 4px solid var(--system-active-color-alpha-30);
+        width: 30px;
+        height: 30px;
+    }
+
+    100% {
+        border: 4px solid var(--system-active-color-alpha-30);
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* 当不在静音状态时，应用录音动效 */
+/* .input-area__voice-button:not(.notalking).recording::before {
+    animation: Wave1 0.4s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+} */
+
+.input-area__voice-button:not(.notalking).recording::after {
+    animation: Wave2 0.4s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* 静音时的动效 (notalking1) */
+/* @keyframes notalking1 {
+    0% {
+        border: 1px solid var(--system-active-color);
+        width: 30px;
+        height: 30px;
+    }
+
+    100% {
+        border: 3px solid var(--system-active-color);
+        width: 30px;
+        height: 30px;
+    }
+} */
+
+/* 静音时的动效 (notalking2) */
+/* @keyframes notalking2 {
+    0% {
+        border: 3px solid var(--system-active-color);
+        width: 32px;
+        height: 32px;
+    }
+
+    100% {
+        border: 4px solid var(--system-active-color);
+        width: 36px;
+        height: 36px;
+    }
+} */
+
+/* 静音状态下的录音动效，持续时间更长 */
+/* .input-area__voice-button.notalking::before {
+    animation: notalking1 0.8s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+.input-area__voice-button.notalking::after {
+    animation: notalking2 0.8s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+} */

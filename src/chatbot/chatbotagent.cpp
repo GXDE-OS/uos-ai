@@ -1,8 +1,10 @@
 #include "chatbotagent.h"
 #include "chatbotpaths.h"
 #include "mcpclient.h"
-#include "networkdefs.h"
 #include "global_define.h"
+#include "global_key_define.h"
+#include "chatbot_key_define.h"
+#include "conversation/messagenode.h"
 
 #include <QDateTime>
 #include <QDir>
@@ -76,8 +78,9 @@ QSharedPointer<LlmAgent> ChatbotAgent::create()
     return QSharedPointer<LlmAgent>(new ChatbotAgent());
 }
 
-QJsonObject ChatbotAgent::processRequest(const QJsonObject &question, const QJsonArray &history,
-                                          const QVariantHash &params)
+QVariantHash ChatbotAgent::processRequest(const uos_ai::ModelMessage &question,
+                                           const QList<uos_ai::ModelMessage> &history,
+                                           const QVariantHash &params)
 {
     // 每次请求前重建系统提示词
     m_platform           = params.value(QLatin1String(kChatbotPlatformParam)).toString();
@@ -129,7 +132,7 @@ QJsonObject ChatbotAgent::processRequest(const QJsonObject &question, const QJso
         m_systemPrompt += QStringLiteral("\n\n---\n\n## 历史对话记录\n\n") + summary;
 
     // Bootstrap Hook：首次上线时在用户消息中注入引导文本
-    QJsonObject q = question;
+    uos_ai::ModelMessage q = question;
     bootstrapHook(q);
 
     return MCPAgent::processRequest(q, history, params);
@@ -146,7 +149,7 @@ bool ChatbotAgent::syncServers() const
     });
 
     if (ret.first == 0) {
-        auto details = ret.second.value("details").toObject();
+        auto details = ret.second.value(STR_KEY_DETAILS).toObject();
         if (!details.isEmpty())
             qCInfo(logAgent) << "Synced servers" << details;
     } else {
@@ -158,7 +161,7 @@ bool ChatbotAgent::syncServers() const
 
 QPair<int, QString> ChatbotAgent::fetchTools(const QStringList &servers)
 {
-    m_tools = QJsonArray();
+    m_tools.clear();
 
     // Bootstrap 阶段（PROFILE.md 不存在）：跳过所有 MCP / Skill 工具，
     // 只保留 update_profile，防止模型在自我介绍前调用 bash/文件工具检查环境。
@@ -177,24 +180,26 @@ QPair<int, QString> ChatbotAgent::fetchTools(const QStringList &servers)
                     if (!serverValue.isObject())
                         continue;
                     QJsonObject serverObj = serverValue.toObject();
-                    const QString name   = serverObj.value("name").toString();
+                    const QString name   = serverObj.value(STR_KEY_NAME).toString();
 
                     if (name.isEmpty() || !servers.contains(name))
                         continue;
 
                     invaildSrv.removeOne(name);
 
-                    if (serverObj.contains("error")) {
+                    if (serverObj.contains(STR_KEY_ERROR)) {
                         qCWarning(logAgent) << "MCP server error:" << name
-                                            << serverObj.value("error").toString()
+                                            << serverObj.value(STR_KEY_ERROR).toString()
                                             << "— will retry after sync";
                         failedSrv.append(name);
                         continue;
                     }
 
-                    if (serverObj.contains("tools") && serverObj["tools"].isArray()) {
-                        for (const QJsonValue &toolValue : serverObj["tools"].toArray())
-                            m_tools.append(toolValue);
+                    if (serverObj.contains(STR_KEY_TOOLS) && serverObj[STR_KEY_TOOLS].isArray()) {
+                        for (const QJsonValue &toolValue : serverObj[STR_KEY_TOOLS].toArray()) {
+                            if (toolValue.isObject())
+                                m_tools.append(uos_ai::ModelTool::fromOai(toolValue.toObject()));
+                        }
                     }
                 }
 
@@ -215,14 +220,16 @@ QPair<int, QString> ChatbotAgent::fetchTools(const QStringList &servers)
                             if (!serverValue.isObject())
                                 continue;
                             QJsonObject serverObj = serverValue.toObject();
-                            if (serverObj.contains("error")) {
+                            if (serverObj.contains(STR_KEY_ERROR)) {
                                 qCWarning(logAgent) << "MCP server still unavailable after retry:"
-                                                    << serverObj.value("name").toString();
+                                                    << serverObj.value(STR_KEY_NAME).toString();
                                 continue;
                             }
-                            if (serverObj.contains("tools") && serverObj["tools"].isArray()) {
-                                for (const QJsonValue &toolValue : serverObj["tools"].toArray())
-                                    m_tools.append(toolValue);
+                            if (serverObj.contains(STR_KEY_TOOLS) && serverObj[STR_KEY_TOOLS].isArray()) {
+                                for (const QJsonValue &toolValue : serverObj[STR_KEY_TOOLS].toArray()) {
+                                    if (toolValue.isObject())
+                                        m_tools.append(uos_ai::ModelTool::fromOai(toolValue.toObject()));
+                                }
                             }
                         }
                     }
@@ -238,8 +245,8 @@ QPair<int, QString> ChatbotAgent::fetchTools(const QStringList &servers)
     // update_profile：静默更新 PROFILE.md / SOUL.md（仅在已知平台时注册）
     if (!m_platform.isEmpty()) {
         QJsonObject updateProfileTool;
-        updateProfileTool["name"]        = QStringLiteral("update_profile");
-        updateProfileTool["description"] = QStringLiteral(
+        updateProfileTool[STR_KEY_NAME]        = QStringLiteral("update_profile");
+        updateProfileTool[STR_KEY_DESCRIPTION] = QStringLiteral(
             "Silently update PROFILE.md or SOUL.md with new information learned about the user. "
             "Call this whenever you learn persistent facts about the user (name, preferences, background, etc.) "
             "or when the user explicitly asks to change bot settings. "
@@ -248,23 +255,23 @@ QPair<int, QString> ChatbotAgent::fetchTools(const QStringList &servers)
         QJsonObject upProperties;
 
         QJsonObject upFilenameProp;
-        upFilenameProp["type"]        = QStringLiteral("string");
-        upFilenameProp["description"] = QStringLiteral("File to update. Allowed values: PROFILE.md, SOUL.md");
-        upFilenameProp["enum"]        = QJsonArray{ QStringLiteral("PROFILE.md"), QStringLiteral("SOUL.md") };
-        upProperties["filename"]      = upFilenameProp;
+        upFilenameProp[STR_KEY_TYPE]        = QStringLiteral("string");
+        upFilenameProp[STR_KEY_DESCRIPTION] = QStringLiteral("File to update. Allowed values: PROFILE.md, SOUL.md");
+        upFilenameProp[STR_KEY_ENUM]        = QJsonArray{ QStringLiteral("PROFILE.md"), QStringLiteral("SOUL.md") };
+        upProperties["filename"]            = upFilenameProp;
 
         QJsonObject upContentProp;
-        upContentProp["type"]        = QStringLiteral("string");
-        upContentProp["description"] = QStringLiteral("Full updated markdown content to write to the file");
-        upProperties["content"]      = upContentProp;
+        upContentProp[STR_KEY_TYPE]        = QStringLiteral("string");
+        upContentProp[STR_KEY_DESCRIPTION] = QStringLiteral("Full updated markdown content to write to the file");
+        upProperties[STR_KEY_CONTENT]      = upContentProp;
 
         QJsonObject upParameters;
-        upParameters["type"]       = QStringLiteral("object");
-        upParameters["properties"] = upProperties;
-        upParameters["required"]   = QJsonArray{ QStringLiteral("filename"), QStringLiteral("content") };
+        upParameters[STR_KEY_TYPE]       = QStringLiteral("object");
+        upParameters[STR_KEY_PROPERTIES] = upProperties;
+        upParameters[STR_KEY_REQUIRED]   = QJsonArray{ QStringLiteral("filename"), STR_KEY_CONTENT };
 
-        updateProfileTool["parameters"] = upParameters;
-        m_tools.append(updateProfileTool);
+        updateProfileTool[STR_KEY_PARAMETERS] = upParameters;
+        m_tools.append(uos_ai::ModelTool::fromOai(updateProfileTool));
     }
 
     // 追加 Skill 工具（仅非 bootstrap 阶段）
@@ -277,7 +284,7 @@ QPair<int, QString> ChatbotAgent::fetchTools(const QStringList &servers)
             m_tools.append(createSkillTool(skillList));
     }
 
-    return qMakePair(AIServer::ErrorType::NoError, QString());
+    return qMakePair(GErrorType::NoError, QString());
 }
 
 QPair<int, QString> ChatbotAgent::callTool(const QString &toolName, const QJsonObject &params)
@@ -287,12 +294,10 @@ QPair<int, QString> ChatbotAgent::callTool(const QString &toolName, const QJsonO
         return toolUpdateProfile(params);
 
     // 通知前端：工具开始调用
-    ToolUse tool;
-    tool.name   = toolName;
-    tool.params = QString::fromUtf8(QJsonDocument(params).toJson(QJsonDocument::Compact));
-    tool.index  = QUuid::createUuid().toString(QUuid::WithoutBraces);
-    tool.status = ToolUse::Calling;
-    ToolUse::toolUseContent(this, tool);
+    const QString strParams = QString::fromUtf8(QJsonDocument(params).toJson(QJsonDocument::Compact));
+    const QString id        = uos_ai::GlobalUtil::generateMsId();
+    int status              = uos_ai::NormalStatus::NsRunning;
+    emit messageReceived({ uos_ai::RenderMessage::createTool(id, toolName, strParams, status) });
 
     QPair<int, QString> result;
 
@@ -305,15 +310,14 @@ QPair<int, QString> ChatbotAgent::callTool(const QString &toolName, const QJsonO
         result = syncCall<QPair<int, QString>>([this, toolName, params]() {
             return m_mcpClient->callTool(kDefaultAgentName, toolName, params);
         });
-        if ((result.first != AIServer::ErrorType::NoError)
-                && (result.first != AIServer::ErrorType::MCPToolError))
+        if ((result.first != uos_ai::GErrorType::NoError)
+                && (result.first != uos_ai::GErrorType::MCPToolError))
             result.first = -1;
     }
 
     // 通知前端：工具调用结束
-    tool.result = result.second;
-    tool.status = (result.first == 0) ? ToolUse::Completed : ToolUse::Failed;
-    ToolUse::toolUseContent(this, tool);
+    status = (result.first < 0) ? uos_ai::NormalStatus::NsFailed : uos_ai::NormalStatus::NsCompleted;
+    emit messageReceived({ uos_ai::RenderMessage::createTool(id, toolName, strParams, status, result.second) });
 
     return result;
 }
@@ -330,7 +334,7 @@ QPair<int, QString> ChatbotAgent::toolGetCurrentDatetime(const QJsonObject &)
 QPair<int, QString> ChatbotAgent::toolUpdateProfile(const QJsonObject &params)
 {
     const QString filename = params.value(QStringLiteral("filename")).toString().trimmed();
-    const QString content  = params.value(QStringLiteral("content")).toString();
+    const QString content  = params.value(STR_KEY_CONTENT).toString();
 
     if (filename != QLatin1String("PROFILE.md") && filename != QLatin1String("SOUL.md")) {
         qCWarning(logAgent) << "update_profile: rejected filename:" << filename;
@@ -362,10 +366,10 @@ QPair<int, QString> ChatbotAgent::toolUpdateProfile(const QJsonObject &params)
     return { 0, QStringLiteral("Successfully updated ") + filename };
 }
 
-QJsonObject ChatbotAgent::createSkillTool(const QList<uos_ai::SkillInfo> &skillList)
+uos_ai::ModelTool ChatbotAgent::createSkillTool(const QList<uos_ai::SkillInfo> &skillList)
 {
     QJsonObject skillTool;
-    skillTool["name"] = "get_skill";
+    skillTool[STR_KEY_NAME] = "get_skill";
 
     const QString tmplDesc = R"(
 When a user task matches any `<available_skills>`, you MUST invoke `get_skill` tool first.
@@ -385,28 +389,28 @@ File Storage: Save all SKILL-generated files under `$HOME/Documents/uos-ai/<topi
             skillXml += QString("    <description>%1</description>\n").arg(skill.description);
             skillXml += QString("</skill>\n");
         }
-        skillTool["description"] = tmplDesc.arg(skillXml);
+        skillTool[STR_KEY_DESCRIPTION] = tmplDesc.arg(skillXml);
     }
 
     QJsonObject parameters;
-    parameters["type"] = "object";
+    parameters[STR_KEY_TYPE] = "object";
 
     {
         QJsonArray required;
         required.append("skill_name");
-        parameters["required"] = required;
+        parameters[STR_KEY_REQUIRED] = required;
 
         QJsonObject properties;
         QJsonObject skillNameProp;
-        skillNameProp["type"]        = "string";
-        skillNameProp["description"] = "The skill name from available_skills.";
-        properties["skill_name"]     = skillNameProp;
-        parameters["properties"]     = properties;
+        skillNameProp[STR_KEY_TYPE]        = "string";
+        skillNameProp[STR_KEY_DESCRIPTION] = "The skill name from available_skills.";
+        properties["skill_name"]           = skillNameProp;
+        parameters[STR_KEY_PROPERTIES]     = properties;
 
-        skillTool["parameters"] = parameters;
+        skillTool[STR_KEY_PARAMETERS] = parameters;
     }
 
-    return skillTool;
+    return uos_ai::ModelTool::fromOai(skillTool);
 }
 
 QPair<int, QString> ChatbotAgent::getSkill(const QString &name)
@@ -441,14 +445,22 @@ Note: file list is sampled.
 // Bootstrap Hook
 // ---------------------------------------------------------------------------
 
-void ChatbotAgent::bootstrapHook(QJsonObject &question) const
+void ChatbotAgent::bootstrapHook(uos_ai::ModelMessage &question) const
 {
     if (!m_isBootstrapSession)
         return;
 
-    // 首次启动：在用户消息前注入引导文本
-    const QString original = question.value(QStringLiteral("content")).toString();
-    question[QStringLiteral("content")] = kBootstrapGuidance + original;
+    // 首次启动：在用户消息第一段文本前注入引导文本
+    bool injected = false;
+    for (MetaMessage &part : question.content) {
+        if (part.type == uos_ai::ContentType::CntText) {
+            part.data = kBootstrapGuidance + part.data.toString();
+            injected = true;
+            break;
+        }
+    }
+    if (!injected)
+        question.content.prepend({ uos_ai::ContentType::CntText, kBootstrapGuidance });
 
     qCInfo(logAgent) << "Bootstrap hook injected for platform:" << m_platform;
 }

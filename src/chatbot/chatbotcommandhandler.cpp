@@ -3,11 +3,14 @@
 #include "channelmanager.h"
 #include "chatmemory.h"
 #include "chatbotrequestprocessor.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 #include <QLoggingCategory>
 
-Q_LOGGING_CATEGORY(logCommand, "uos-ai.chatbot.command")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
+using namespace uos_ai;
 using namespace uos_ai::chatbot;
 
 ChatBotCommandHandler::ChatBotCommandHandler(ChannelManager *channels,
@@ -24,8 +27,11 @@ ChatBotCommandHandler::ChatBotCommandHandler(ChannelManager *channels,
 bool ChatBotCommandHandler::tryHandle(const QJsonObject &payload)
 {
     // Quick check before full parse — most messages are not commands
-    const QString content = payload.value("content").toObject()
-                                   .value("text").toString().trimmed();
+    const QJsonObject contentObj = payload.value(STR_KEY_CONTENT).toObject();
+    if (contentObj.value(STR_KEY_SOURCE).toString() == QLatin1String("slash_command"))
+        return false;
+
+    const QString content = contentObj.value(STR_KEY_TEXT).toString().trimmed();
     if (!content.startsWith('/'))
         return false;
 
@@ -104,7 +110,7 @@ void ChatBotCommandHandler::handleClear(const ParsedPayload &p)
     // PROFILE.md / SOUL.md 属于 Bot 身份配置，不受 /clear 影响
     m_memory->clearAll();
 
-    qCInfo(logCommand) << "All conversation history cleared by /clear command";
+    qCInfo(logChatBot) << "All conversation history cleared by /clear command";
     m_channels->sendMessage(p.platform, p.replyTo, tr("Conversation history has been cleared."), p.convType);
 }
 

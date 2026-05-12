@@ -1,0 +1,52 @@
+/* 组名项 - 吸顶组件 */
+html {
+    --group-header-color-text: rgba(0, 0, 0, 0.5);
+    --group-header-color-bg-hover: rgba(0, 0, 0, 0.1);
+    --group-header-color-bg-active: rgba(0, 0, 0, 0.2);
+}
+html.dark {
+    --group-header-color-text: rgba(255, 255, 255, 0.5);
+    --group-header-color-bg-hover: rgba(255, 255, 255, 0.1);
+    --group-header-color-bg-active: rgba(255, 255, 255, 0.2);
+}
+.group-header {
+    --group-header-height: 30px;
+    position: relative;
+    padding: 0 4px 0 10px;
+    height: var(--group-header-height);
+    line-height: calc(var(--group-header-height) - 2px);
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--radius-normal);
+    background-color: transparent;
+    pointer-events: auto;
+}
+
+/* 暂时不做悬停和点击效果 */
+/* 
+.group-header:hover {
+    background-color: var(--group-header-color-bg-hover);
+}
+
+.group-header:active {
+    background-color: var(--group-header-color-bg-active);
+} */
+
+.group-header__name {
+    flex: 1;
+    min-width: 0;
+    color: var(--group-header-color-text);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 500;
+    font-style: medium;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.group-header--hidden {
+    visibility: hidden;
+    pointer-events: none;
+}

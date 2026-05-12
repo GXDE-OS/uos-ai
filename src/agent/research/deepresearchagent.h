@@ -2,21 +2,20 @@
 #define DEEPRESEARCHAGENT_H
 
 #include "llmagent.h"
+#include "referencemanager.h"
 
 namespace uos_ai {
-class DeepAnalyzer;
+
 class DeepResearchAgent : public LlmAgent
 {
     Q_OBJECT
 public:
     explicit DeepResearchAgent(QObject *parent = nullptr);
-    virtual ~DeepResearchAgent() override;
-    
+    ~DeepResearchAgent() override;
+
     bool initialize() override;
     static QSharedPointer<LlmAgent> create();
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params = {}) override;
-
-    QJsonArray getReferences() const;
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params = {}) override;
 
 protected:
     QPair<int, QString> callTool(const QString &toolName, const QJsonObject &params) override;
@@ -28,19 +27,15 @@ private:
     QJsonArray handleLocalSearchTool(const QJsonObject &arg);
     QJsonArray localSearch(const QString &query);
 
-    QJsonArray handleFileParseTool(const QJsonObject &arg);
-    QJsonArray fileParse(const QStringList &files);
+    void emitAction(const QString &name, NormalStatus status, const QString &params, const QString &result, int index = 0);
 
-    QString handleDeepAnalyzer(const QJsonArray &results, const QString &initTask);
-    QString deepAnalyze(const QJsonArray &searchContent, const QString &task);
-    QString addReferencesAndFormat(const QJsonArray &results);
-    void outlineJson2Md(const QJsonObject &outlineObj, int level, QString &markdown);
-    QString findRefIdBySource(const QString &source) const;
+    ReferenceManager m_refManager;
 
-    QString m_userTask;
+    ModelTool m_webSearchTool;
+    ModelTool m_localSearchTool;
 
-    QJsonArray m_accumulatedReferences;
-    int m_refOffset = 0;
+    int m_searchFailCount = 0;
+    static constexpr int kMaxSearchFails = 3;
 };
 
 } // namespace uos_ai

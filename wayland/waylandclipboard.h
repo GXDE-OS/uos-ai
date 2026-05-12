@@ -1,28 +1,31 @@
 #ifndef WAYLANDCLIPBOARD_H
 #define WAYLANDCLIPBOARD_H
-#include "uosai_global.h"
+
 
 #include <QGuiApplication>
 #include <QDebug>
 #include <QObject>
 #include <QClipboard>
 #include <QtConcurrent/QtConcurrent>
+#include <QThread>
+#include <QThreadPool>
+#include <QFile>
+#include <cerrno>
+#include <cstring>
 
-#include "KF5/KWayland/Client/compositor.h"
-#include "KF5/KWayland/Client/connection_thread.h"
-#include "KF5/KWayland/Client/event_queue.h"
-#include "KF5/KWayland/Client/registry.h"
-#include "KF5/KWayland/Client/seat.h"
-
-#include "KF5/KWayland/Client/datacontroldevicemanager.h"
-#include "KF5/KWayland/Client/datacontroldevice.h"
-#include "KF5/KWayland/Client/datacontrolsource.h"
-#include "KF5/KWayland/Client/datacontroloffer.h"
+#include "native/connection_thread.h"
+#include "native/event_queue.h"
+#include "native/registry.h"
+#include "native/seat.h"
+#include "native/datacontroldevicemanager.h"
+#include "native/datacontroldevice.h"
+#include "native/datacontroloffer.h"
 
 #include "private/baseclipboard.h"
 #include <unistd.h>
+#include <QLoggingCategory>
 
-using namespace KWayland::Client; 
+using namespace uos_ai::wayland; 
 
 namespace uos_ai {
 class WaylandClipboard : public BaseClipboard

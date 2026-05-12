@@ -2,6 +2,10 @@
 
 #include <QRegularExpression>
 
+using namespace uos_ai;
+
+const int TtsServer::chunkSize = 1000;
+
 TtsServer::TtsServer(const QString &id, QObject *parent)
     : QObject(parent)
     , m_id(id)

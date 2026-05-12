@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B6B6B6" offset="0%"></stop>
+            <stop stop-color="#7B7B7B" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="6" cy="6" r="6"></circle>
+        <filter x="-4.2%" y="-4.2%" width="108.3%" height="108.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icon/mcp/mcp-cancal" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
+        <g id="编组" transform="translate(2, 2)">
+            <g id="Oval-1">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <line x1="4" y1="8" x2="8" y2="4" id="Path-1766" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="4" y1="8" x2="8" y2="4" id="Path-1766" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(6, 6) scale(-1, 1) translate(-6, -6)"></line>
+        </g>
+    </g>
+</svg>

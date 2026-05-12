@@ -4,8 +4,8 @@
 #include <QObject>
 #include <QDBusInterface>
 
-static constexpr char PLUGINSNAME[] = "uos-ai-rag";
-static constexpr char UOSAIAGENTNAME[] = "uos-ai-agent";
+inline constexpr char PLUGINSNAME[] = "uos-ai-rag";
+inline constexpr char UOSAIAGENTNAME[] = "uos-ai-agent";
 
 class LocalModelServer : public QObject
 {
@@ -17,18 +17,16 @@ public:
 
     void openInstallWidget(const QString &appname);
     void openManagerWidget();
-    void localModelStatusChanged(const QString &app, bool isExist);
     bool checkInstallStatus(const QString &appName);
     void openInstallWidgetOnTimer(const QString &appname);
 
 private:
     explicit LocalModelServer(QObject *parent = nullptr);
+    QDBusInterface *appStoreInterface = nullptr;
 
 signals:
-    void localLLMStatusChanged(bool isExist);
-    void modelPluginsStatusChanged(bool isExist);
-    void sigToLaunchMgmtNoShow();
-    void sigToLaunchTimer(int count);
+    void pluginStatusChanged(const QString &app, bool isExist);
+    void beginCheck(const QString &name, int count);
 
 };
 

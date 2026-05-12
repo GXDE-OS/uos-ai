@@ -1,8 +1,6 @@
 #ifndef ECHECKAGREEMENTDIALOG_H
 #define ECHECKAGREEMENTDIALOG_H
 
-#include "serverdefs.h"
-
 #include <DAbstractDialog>
 #include <DWidget>
 #include <DLabel>

@@ -1,8 +1,6 @@
 #ifndef MCPSERVERITEM_H
 #define MCPSERVERITEM_H
 
-#include "uosai_global.h"
-
 #include <DWidget>
 #include <DSwitchButton>
 #include <DLabel>
@@ -12,14 +10,12 @@
 #include <QProcess>
 #include <QTimer>
 
-DWIDGET_USE_NAMESPACE
-
 namespace uos_ai {
-class McpServerItem: public DWidget
+class McpServerItem : public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 public:
-    explicit McpServerItem(DWidget *parent = nullptr);
+    explicit McpServerItem(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
     ~McpServerItem() override;
 
     void setText(const QString &theme, const QString &summary);
@@ -45,11 +41,11 @@ private:
     QString getUpdateVersion(const QByteArray& reply);
     void adjustSummaryLabelWidth();
 private:
-    DLabel *m_pNameLabel = nullptr;
-    DLabel *m_pDescLabel = nullptr;
-    DSuggestButton *m_pBtnInstall = nullptr;
-    DPushButton *m_pBtnUninstall = nullptr;
-    DSuggestButton *m_pBtnUpdate = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pNameLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pDescLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DSuggestButton *m_pBtnInstall = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_pBtnUninstall = nullptr;
+    DTK_WIDGET_NAMESPACE::DSuggestButton *m_pBtnUpdate = nullptr;
 
     QProcess *m_pProcess = nullptr;
 

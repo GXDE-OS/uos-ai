@@ -6,6 +6,9 @@
 #include <QApplication>
 #include <QHBoxLayout>
 
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
+
 WrapCheckBox::WrapCheckBox(QWidget *parent) : QWidget(parent)
 {
     initUI();

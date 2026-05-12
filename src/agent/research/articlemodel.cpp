@@ -1,4 +1,6 @@
 #include "articlemodel.h"
+#include "global_key_define.h"
+#include "research_key_define.h"
 
 #include <QRegularExpression>
 #include <QJsonDocument>
@@ -37,7 +39,6 @@ ArticleModel ArticleModel::fromMarkdown(const QString &markdown)
     // 为没有 ID 的节分配位置 ID（s1, s2, s2_1 ...）
     // 使用计数栈按层级跟踪编号
     QList<int> counters = {0, 0, 0, 0, 0, 0, 0}; // counters[level], level in [1..6]
-    int lastLevel = 0;
 
     for (auto &pair : rawSections) {
         Section &sec = pair.second;
@@ -57,9 +58,7 @@ ArticleModel ArticleModel::fromMarkdown(const QString &markdown)
             }
             sec.id = id;
         }
-        lastLevel = lv;
     }
-    Q_UNUSED(lastLevel)
 
     // 提取各节的正文（从本节标题行之后到下一节标题行之前）
     for (int i = 0; i < rawSections.size(); ++i) {
@@ -68,8 +67,10 @@ ArticleModel ArticleModel::fromMarkdown(const QString &markdown)
 
         // 找本节标题行的结束位置
         int headEnd = markdown.indexOf('\n', startPos);
-        if (headEnd == -1) headEnd = markdown.length();
-        else headEnd++; // 包含换行符
+        if (headEnd == -1)
+            headEnd = markdown.length();
+        else
+            headEnd++; // 跳过换行符
 
         // 下一节的开始位置（或文档末尾）
         int contentEnd = (i + 1 < rawSections.size())
@@ -94,12 +95,12 @@ ArticleModel ArticleModel::fromOutline(const QJsonObject &outline)
     Section rootSec;
     rootSec.id      = "s0_title";
     rootSec.level   = 1;
-    rootSec.title   = outline.value("title").toString();
+    rootSec.title   = outline.value(STR_KEY_TITLE).toString();
     rootSec.content = QString();
 
     // 根 title 是文章总标题，不纳入章节列表（由 ReportWriterAgent 生成 # 标题）
     // 仅收集 content 数组下的子节点
-    QJsonArray children = outline.value("content").toArray();
+    QJsonArray children = outline.value(STR_KEY_CONTENT).toArray();
     int counter = 0;
     for (const QJsonValue &child : children) {
         collectOutlineSections(child.toObject(), "", 1, counter, model.m_sections);
@@ -117,7 +118,7 @@ void ArticleModel::collectOutlineSections(const QJsonObject &node,
     counter++;
     Section sec;
     sec.level   = level;
-    sec.title   = node.value("title").toString();
+    sec.title   = node.value(STR_KEY_TITLE).toString();
     sec.content = QString();
 
     // 构建 ID
@@ -127,7 +128,7 @@ void ArticleModel::collectOutlineSections(const QJsonObject &node,
 
     sections.append(sec);
 
-    QJsonArray children = node.value("content").toArray();
+    QJsonArray children = node.value(STR_KEY_CONTENT).toArray();
     int childCounter = 0;
     for (const QJsonValue &child : children) {
         collectOutlineSections(child.toObject(), sec.id, level + 1, childCounter, sections);
@@ -210,28 +211,28 @@ QJsonObject ArticleModel::toJson() const
     QJsonArray arr;
     for (const Section &sec : m_sections) {
         QJsonObject obj;
-        obj["id"]      = sec.id;
-        obj["level"]   = sec.level;
-        obj["title"]   = sec.title;
-        obj["content"] = sec.content;
+        obj[STR_KEY_ID]             = sec.id;
+        obj[STR_RESEARCH_LEVEL]     = sec.level;
+        obj[STR_KEY_TITLE]          = sec.title;
+        obj[STR_KEY_CONTENT]        = sec.content;
         arr.append(obj);
     }
     QJsonObject result;
-    result["sections"] = arr;
+    result[STR_RESEARCH_SECTIONS] = arr;
     return result;
 }
 
 ArticleModel ArticleModel::fromJson(const QJsonObject &json)
 {
     ArticleModel model;
-    QJsonArray arr = json.value("sections").toArray();
+    QJsonArray arr = json.value(STR_RESEARCH_SECTIONS).toArray();
     for (const QJsonValue &val : arr) {
         QJsonObject obj = val.toObject();
         Section sec;
-        sec.id      = obj.value("id").toString();
-        sec.level   = obj.value("level").toInt(1);
-        sec.title   = obj.value("title").toString();
-        sec.content = obj.value("content").toString();
+        sec.id      = obj.value(STR_KEY_ID).toString();
+        sec.level   = obj.value(STR_RESEARCH_LEVEL).toInt(1);
+        sec.title   = obj.value(STR_KEY_TITLE).toString();
+        sec.content = obj.value(STR_KEY_CONTENT).toString();
         model.m_sections.append(sec);
     }
     return model;

@@ -1,7 +1,7 @@
 #ifndef HINTTEXTEDIT_H
 #define HINTTEXTEDIT_H
 
-#include "uosai_global.h"
+
 
 #include <DLabel>
 

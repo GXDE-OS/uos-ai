@@ -11,19 +11,17 @@
 #include <DTipLabel>
 #include <QScreen>
 
-DWIDGET_USE_NAMESPACE
-DGUI_USE_NAMESPACE
-
-class IconButtonEx : public DWidget
+namespace uos_ai {
+class IconButtonEx : public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 
 public:
-    explicit IconButtonEx(DWidget *parent = nullptr);
-    explicit IconButtonEx(const QString text, DWidget *parent = nullptr);
+    explicit IconButtonEx(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
+    explicit IconButtonEx(const QString text, DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
     void setText(const QString &);
-    void setFont(DFontSizeManager::SizeType type, int weight);
+    void setFont(DTK_WIDGET_NAMESPACE::DFontSizeManager::SizeType type, int weight);
     void setIconSize(const QSize &);
     void setHighlight(bool);
     void setSpacing(int);
@@ -39,7 +37,7 @@ public:
 
     void setStatus(KnowledgeBaseProcessStatus status);
 
-    DLabel *getTipsIcon();
+    DTK_WIDGET_NAMESPACE::DLabel *getTipsIcon();
 
 signals:
     void clicked();
@@ -51,17 +49,17 @@ protected:
     bool event(QEvent *event) override;
 
 private slots:
-    void onThemeTypeChanged(DGuiApplicationHelper::ColorType themeType);
+    void onThemeTypeChanged(DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType themeType);
     void onApplicationPaletteChanged();
 
 private:
-    DLabel *m_pStatusIcon = nullptr;
-    DLabel *m_pLabel = nullptr;
-    DLabel *m_pIcon = nullptr;
-    DLabel *m_pTipsIcon = nullptr;
-    DSpinner *m_spinner = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pStatusIcon = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pIcon = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pTipsIcon = nullptr;
+    DTK_WIDGET_NAMESPACE::DSpinner *m_spinner = nullptr;
 
-    DTipLabel *m_tips = nullptr;
+    DTK_WIDGET_NAMESPACE::DTipLabel *m_tips = nullptr;
 
     bool m_bHighlight = false;
     bool m_bInterrupt = false;
@@ -69,4 +67,5 @@ private:
     QSize m_iconSize;
 };
 
+}
 #endif // ICONBUTTONEX_H

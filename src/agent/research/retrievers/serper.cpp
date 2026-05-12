@@ -111,9 +111,10 @@ QJsonArray Serper::search(const QString &query,
     QTimer timer;
     timer.setInterval(60000);
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
-    connect(&timer, &QTimer::timeout, &loop, &QEventLoop::quit);
+    connect(&timer, &QTimer::timeout, reply, &QNetworkReply::abort);
     timer.start();
     loop.exec();
+    timer.stop();
 
     QJsonArray normalizedResults;
     if (reply->error() != QNetworkReply::NoError) {

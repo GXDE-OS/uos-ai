@@ -1,7 +1,7 @@
 #include "custommcpservereditor.h"
-#include "uosai_global.h"
+
 #include "utils/util.h"
-#include "agentfactory.h"
+#include "agent/mcp/defaultagent.h"
 #include "mcpserver.h"
 #include "linenumbertextedit.h"
 #include "global_define.h"
@@ -23,6 +23,7 @@
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
+DWIDGET_USE_NAMESPACE
 using namespace uos_ai;
 
 CustomMcpServerEditor::CustomMcpServerEditor(DWidget *parent)
@@ -74,7 +75,7 @@ void CustomMcpServerEditor::initUI()
     titleBar->setMenuVisible(false);
     titleBar->setBackgroundTransparent(true);
     titleBar->setFixedWidth(600);
-    titleBar->setIcon(QIcon::fromTheme(kApplicationIconName));
+    titleBar->setIcon(QIcon::fromTheme(getApplicationIconName()));
 
     // 主布局
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -224,7 +225,7 @@ bool CustomMcpServerEditor::eventFilter(QObject *obj, QEvent *event)
 
 void CustomMcpServerEditor::onOkButtonClicked()
 {
-    QSharedPointer<MCPServer> mcpServer = AgentFactory::instance()->getMCPServer(kDefaultAgentName);
+    QSharedPointer<MCPServer> mcpServer = DefaultAgent().mcpServer();
     if (!mcpServer) {
         qCWarning(logAIGUI) << QString("Can't find mcp server for agent: %0").arg(kDefaultAgentName);
         return;

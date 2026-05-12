@@ -1,6 +1,5 @@
 #ifndef DOWNLOADER_H
 #define DOWNLOADER_H
-#include "uosai_global.h"
 
 #include <QObject>
 #include <QNetworkAccessManager>

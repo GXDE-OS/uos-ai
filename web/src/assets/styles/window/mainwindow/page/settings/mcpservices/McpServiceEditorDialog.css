@@ -1,0 +1,217 @@
+/* MCP 服务编辑器对话框主题变量 */
+html {
+    --mcp-service-editor-textarea-bg-color: rgba(255, 255, 255, 0.6);
+    --mcp-service-editor-textarea-border-color: rgba(0, 0, 0, 0.05);
+    --mcp-service-editor-block-title-color: rgba(0, 0, 0, 1);
+    --mcp-service-editor-content-color: rgba(0, 0, 0, 0.7);
+    --mcp-service-editor-placeholder-color: rgba(85, 85, 85, 0.4);
+}
+
+html.dark {
+    --mcp-service-editor-textarea-bg-color: rgba(255, 255, 255, 0.05);
+    --mcp-service-editor-textarea-border-color: rgba(255, 255, 255, 0.05);
+    --mcp-service-editor-block-title-color: rgba(255, 255, 255, 1);
+    --mcp-service-editor-content-color: rgba(255, 255, 255, 0.7);
+    --mcp-service-editor-placeholder-color: rgba(255, 255, 255, 0.4);
+}
+
+.dialog.mcp-service-editor-dialog.dialog-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.dialog.mcp-service-editor-dialog {
+    --mcp-service-editor-scrollbar-thumb-color: rgba(120, 120, 120, 0.4);
+    --mcp-service-editor-scrollbar-thumb-hover-color: rgba(120, 120, 120, 0.6);
+    --mcp-service-editor-scrollbar-thumb-active-color: rgba(120, 120, 120, 0.8);
+    width: min(360px, calc(100vw - 32px));
+    height: min(416px, calc(100vh - 32px));
+    max-height: calc(100vh - 32px);
+    border-radius: var(--radius-large);
+    box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 8px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dialog.mcp-service-editor-dialog.dialog--blur {
+    backdrop-filter: blur(45px);
+}
+
+.dialog.mcp-service-editor-dialog .dialog__app-icon {
+    padding: 1px 0 0 1px;
+}
+
+.dialog.mcp-service-editor-dialog .dialog__title--header {
+    font-weight: 500;
+    font-style: medium;
+    font-size: var(--uosai-font-size-base);
+}
+
+.dialog.mcp-service-editor-dialog .dialog__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0 6px;
+    overflow: auto;
+}
+
+.mcp-service-editor-dialog__field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.mcp-service-editor-dialog__field--grow {
+    flex: 1;
+    min-height: 0;
+    margin-top: 20px;
+}
+
+.mcp-service-editor-dialog__label {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    color: var(--mcp-service-editor-block-title-color);
+}
+
+.mcp-service-editor-dialog__label-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.mcp-service-editor-dialog__label-main {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.mcp-service-editor-dialog__label--inline {
+    margin: 0 0 0 2px;
+}
+
+.mcp-service-editor-dialog__required {
+    color: rgba(255, 0, 0, 1);
+    font-size: var(--uosai-font-size-base);
+    line-height: 1;
+}
+
+.mcp-service-editor-dialog__label-description {
+    flex: 1;
+    min-width: 0;
+    color: var(--mcp-service-editor-content-color);
+    font-size: var(--uosai-font-size-xs);
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    white-space: nowrap;
+    margin: 0 0 0 4px;
+}
+
+.mcp-service-editor-dialog__editor-shell {
+    width: 100%;
+    min-height: 0;
+    border: 1px solid var(--mcp-service-editor-textarea-border-color);
+    border-radius: 8px;
+    background: var(--mcp-service-editor-textarea-bg-color);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mcp-service-editor-dialog__editor-shell:focus-within {
+    border-color: var(--system-active-color);
+}
+
+.mcp-service-editor-dialog__editor-shell--json {
+    height: 140px;
+}
+
+.mcp-service-editor-dialog__editor-shell--description {
+    height: 100px;
+}
+
+.mcp-service-editor-dialog__editor-scroll {
+    height: 100%;
+    padding: 6px 0;
+}
+
+.mcp-service-editor-dialog__editor-scroll .scroll-bar-content {
+    height: 100%;
+}
+
+.mcp-service-editor-dialog__editor-scroll .scroll-bar-content-inner {
+    min-height: 100%;
+}
+
+.mcp-service-editor-dialog__editor-scroll .scroll-bar--vertical {
+    top: 8px;
+    right: 3px;
+    bottom: 8px;
+    width: var(--scrollbar-hit-size);
+}
+
+.mcp-service-editor-dialog__editor {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 0px 20px 0px 12px;
+    box-sizing: border-box;
+    color: var(--mcp-service-editor-content-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    outline: none;
+    white-space: pre-wrap;
+    word-break: break-word;
+    cursor: text;
+    caret-color: currentColor;
+}
+
+.mcp-service-editor-dialog__editor--description {
+    padding: 5px 18px 5px 10px;
+}
+
+.mcp-service-editor-dialog__editor--empty::before {
+    content: attr(data-placeholder);
+    color: var(--mcp-service-editor-placeholder-color);
+    pointer-events: none;
+}
+
+.mcp-service-editor-dialog__editor--description.mcp-service-editor-dialog__editor--empty::before {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mcp-service-editor-dialog__editor--json {
+    tab-size: 4;
+}
+
+/* .mcp-service-editor-dialog__editor-scroll .scroll-bar-thumb {
+    background-color: var(--mcp-service-editor-scrollbar-thumb-color);
+}
+
+.mcp-service-editor-dialog__editor-scroll .scroll-bar:hover .scroll-bar-thumb {
+    background-color: var(--mcp-service-editor-scrollbar-thumb-hover-color);
+}
+
+.mcp-service-editor-dialog__editor-scroll .scroll-bar--dragging .scroll-bar-thumb {
+    background-color: var(--mcp-service-editor-scrollbar-thumb-active-color);
+} */
+
+.mcp-service-editor-dialog__error {
+    padding: 10px 12px;
+    border-radius: var(--radius-large);
+    background: rgba(220, 38, 38, 0.08);
+    color: rgba(185, 28, 28, 1);
+    font-size: var(--uosai-font-size-xs);
+    line-height: 20px;
+}

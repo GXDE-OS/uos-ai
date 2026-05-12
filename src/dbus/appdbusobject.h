@@ -2,8 +2,12 @@
 #define APPDBUSOBJECT_H
 
 #include <QDBusContext>
+#include <QSharedPointer>
 
-class Session;
+namespace uos_ai {
+
+class SessionManager;
+class ConversationRecord;
 class AppDbusObject : public QObject, protected QDBusContext
 {
     Q_OBJECT
@@ -12,12 +16,6 @@ class AppDbusObject : public QObject, protected QDBusContext
 public:
     explicit AppDbusObject(const QString &appId);
     virtual ~AppDbusObject();
-
-    /**
-     * @brief The LLM account list has been updated
-     * including additions, edits, and deletions of LLM accounts.
-     */
-    void updateLLMAccount();
 
     /**
      * @brief Interrupt the task.
@@ -89,17 +87,22 @@ public Q_SLOTS:
      * This function was added in v1.0 but replaced by others in v1.1
      */
     Q_SCRIPTABLE void launchLLMUiPage(bool showAddllmPage);
-
-signals:
-    /**
-     * @brief Launch the UI page.
-     * @param showAddllmPage: true，Display the add model account page.
-     */
-    void launchUI(bool showAddllmPage, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString &locateTitle = "");
-private:
-    bool checkAgreement();
+protected Q_SLOTS:
+    void onEvent(int event, const QString &id, const QString &json);
 protected:
-    Session *m_chatSession = nullptr;
+    struct ChatTask {
+        QString id;
+        bool stream = false;
+        QSharedPointer<ConversationRecord> record;
+    };
+    bool checkAgreement();
+    QSharedPointer<ConversationRecord> convertRequestion(const QString &id, const QString &json);
+protected:
+    QMap<QString, ChatTask> chatTask;
+    QString app;
+    QSharedPointer<SessionManager> chatSession;
 };
+
+}
 
 #endif // APPDBUSOBJECT_H

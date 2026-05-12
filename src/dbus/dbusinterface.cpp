@@ -1,9 +1,9 @@
 #include "dbusinterface.h"
 #include "appdbusobject.h"
-#include "llmutils.h"
+#include "util.h"
 #include "browswenativedbusobject.h"
-#include "dbwrapper.h"
-#include "threadtaskmana.h"
+#include "database/appdatabase.h"
+#include "app/application.h"
 
 #include <QtDBus>
 #include <QDebug>
@@ -12,64 +12,19 @@
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logDBus)
+using namespace uos_ai;
 
 DBusInterface::DBusInterface(QObject *parent)
     : QObject(parent)
     , QDBusContext()
 {
-    qRegisterMetaType<DBusInterface::TaskType>("TaskType");
-    m_appDbusObjects = DbWrapper::localDbWrapper().queryAppList();
 
-    connect(this, &DBusInterface::sigTask, this, &DBusInterface::onProcessTask, Qt::QueuedConnection);
 }
 
 DBusInterface::~DBusInterface()
 {
     QDBusConnection dbus = QDBusConnection::sessionBus();
     dbus.unregisterService(DBUS_SERVER);
-}
-
-void DBusInterface::onProcessTask(DBusInterface::TaskType type)
-{
-    qCDebug(logDBus) << "Processing task type:" << type;
-    if (type == TASK_UPDATE_LLM_ACCOUNT) {
-        updateLLMAccount();
-    }
-}
-
-void DBusInterface::onRequestTaskFinished()
-{
-    QFutureWatcher<QString> *watcher = dynamic_cast<QFutureWatcher<QString> *>(sender());
-    if (watcher) {
-        LLMThreadTaskMana::instance()->requestTaskFinished(watcher->result());
-    }
-    sender()->deleteLater();
-}
-
-void DBusInterface::updateLLMAccount()
-{
-    qCDebug(logDBus) << "Updating LLM accounts for all apps";
-    for (auto iter = m_appDbusObjects.begin(); iter != m_appDbusObjects.end(); iter++) {
-        QSharedPointer<AppDbusObject> appDbusObj = iter.value().object;
-        if (appDbusObj.isNull()) {
-            qCWarning(logDBus) << "Null app DBus object found for app:" << iter.key();
-            continue;
-        }
-
-        appDbusObj->updateLLMAccount();
-    }
-}
-
-void DBusInterface::asyncUpdateLLMAccount()
-{
-    qCDebug(logDBus) << "Scheduling async LLM account update";
-    emit sigTask(TASK_UPDATE_LLM_ACCOUNT);
-}
-
-void DBusInterface::updateUserExpState(int state)
-{
-    qCDebug(logDBus) << "Updating user experience state:" << state;
-    emit userExpStateChanged(state > 0);
 }
 
 void DBusInterface::updateVisibleState(bool visible)
@@ -84,78 +39,55 @@ void DBusInterface::updateActiveState(bool active)
     emit windowActiveChanged(active);
 }
 
-void DBusInterface::addAppFunction(const QString &appId, const QJsonObject &funciton)
+QString DBusInterface::adjustDbusPath(QString appId)
 {
-    qCDebug(logDBus) << "Adding function for app:" << appId;
-    m_appFunctions[appId] << funciton;
-}
-
-QJsonArray DBusInterface::appFunctions()
-{
-    const QString &appId = qApp->applicationName();
-    const QJsonArray &functions = m_appFunctions.value(appId);
-    m_appFunctions.remove(appId);
-    qCDebug(logDBus) << "Retrieved functions for app:" << appId << "count:" << functions.size();
-    return functions;
+    return DBUS_SERVER_PATH + QString("/") + "a_" + appId.replace(QRegularExpression("[^A-Za-z]"), "_");
 }
 
 QString DBusInterface::version()
 {
-    return "1.1";
+    return "3.0";
 }
 
 bool DBusInterface::queryUserExpState()
 {
-    bool state = DbWrapper::localDbWrapper().getUserExpState() > 0;
-    qCDebug(logDBus) << "Querying user experience state:" << state;
-    return state;
+    qCWarning(logDBus) <<"queryUserExpState is deprecated";
+    return false;
 }
 
 QString DBusInterface::cachedFunctions()
 {
-    uint pid = QDBusConnection::sessionBus().interface()->servicePid(message().service());
-    QString appId = LLMUtils::queryAppId(pid);
-    const QJsonArray &functions = m_appFunctions.value(appId);
-    if (functions.isEmpty()) {
-        qCDebug(logDBus) << "No cached functions found for app:" << appId;
-        return QString();
-    }
-
-    QJsonObject rootObject;
-    rootObject["functions"] = functions;
-    QJsonDocument jsonDocument(rootObject);
-    m_appFunctions.remove(appId);
-    qCDebug(logDBus) << "Retrieved cached functions for app:" << appId << "count:" << functions.size();
-    return jsonDocument.toJson(QJsonDocument::Compact);
+    qCWarning(logDBus) <<"cachedFunctions is deprecated";
+    return "";
 }
 
 void DBusInterface::launchChatPage(int index)
 {
     qCDebug(logDBus) << "Launching chat page with index:" << index;
-    emit sigToLaunchChat(index);
+    QMetaObject::invokeMethod(aiApp, "launchChatWindow", Qt::QueuedConnection, Q_ARG(int, index));
 }
 
 void DBusInterface::launchWordWizard()
 {
     qCDebug(logDBus) << "Launching word wizard";
-    emit sigToLaunchWordWizard();
+    QMetaObject::invokeMethod(aiApp, "launchWordWizard", Qt::QueuedConnection);
 }
 
 void DBusInterface::textTranslation()
 {
     qCDebug(logDBus) << "Initiating text translation";
-    emit sigToTranslate();
+    QMetaObject::invokeMethod(aiApp, "showTranslate", Qt::QueuedConnection);
 }
 
 void DBusInterface::startScreenshot()
 {
     qCDebug(logDBus) << "Initiating screenshot for AI analysis";
-    emit sigToStartScreenshot();
+    QMetaObject::invokeMethod(aiApp, "startScreenshot", Qt::QueuedConnection);
 }
 
 bool DBusInterface::isCopilotEnabled()
 {
-    bool enabled = DbWrapper::localDbWrapper().getAICopilotIsOpen();
+    bool enabled = AppDatabase::instance()->getConfigBool(CONFIG_APP_AGREEMENT);
     qCDebug(logDBus) << "Checking copilot status:" << enabled;
     return enabled;
 }
@@ -163,19 +95,20 @@ bool DBusInterface::isCopilotEnabled()
 void DBusInterface::launchAiQuickOCR(int type, QString query, QPoint pos, bool isCustom, const QString &imagePath)
 {
     qCDebug(logDBus) << "upload screenshot to aiquickdialog";
-    emit sigToLaunchAiQuickOCR(type, query, pos, isCustom, imagePath);
+    QMetaObject::invokeMethod(aiApp, "launchAiQuick", Qt::QueuedConnection, 
+            Q_ARG(int, type), Q_ARG(QString, query), Q_ARG(QPoint, pos), Q_ARG(bool, isCustom), Q_ARG(QString, imagePath));
 }
 
 void DBusInterface::launchChatUploadImage(const QString &imagePath)
 {
     qCDebug(logDBus) << "upload screenshot to chatwindow";
-    emit sigToUploadImage(imagePath);
+    QMetaObject::invokeMethod(aiApp, "uploadImage", Qt::QueuedConnection, Q_ARG(QString, imagePath));
 }
 
 void DBusInterface::launchLLMUiPage(bool openAddAccountDialog)
 {
     qCDebug(logDBus) << "Launching LLM UI page, openAddAccountDialog:" << openAddAccountDialog;
-    emit sigToLaunchMgmt(openAddAccountDialog);
+    QMetaObject::invokeMethod(aiApp, "showConfig", Qt::QueuedConnection, Q_ARG(int, MgmtWindow::Page::ModelList));
 }
 
 QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts*/)
@@ -184,7 +117,7 @@ QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts
     QVariantMap cmdPrompts;
 
     uint pid = QDBusConnection::sessionBus().interface()->servicePid(message().service());
-    const QString &appId = LLMUtils::queryAppId(pid);
+    const QString &appId = Util::queryProcessName(pid);
 
     if (appId.isEmpty()) {
         qCWarning(logDBus) << "Empty appId received during registration";
@@ -192,7 +125,7 @@ QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts
     }
 
     QDBusConnection connection = QDBusConnection::sessionBus();
-    const QString &path = LLMUtils::adjustDbusPath(appId);
+    const QString &path = adjustDbusPath(appId);
 
     if (m_appDbusObjects.contains(appId) && !m_appDbusObjects[appId].object.isNull()) {
         if (m_appDbusObjects[appId].cmdPrompts == cmdPrompts && connection.objectRegisteredAt(path)) {
@@ -212,7 +145,6 @@ QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts
     object.appId = appId;
     object.path = path;
     object.cmdPrompts = cmdPrompts;
-    object.curLLMId = DbWrapper::localDbWrapper().queryCurLlmIdByAppId(appId);
 
     // 浏览器专属VIP接口
     if (appId == "browser_native") {
@@ -220,8 +152,6 @@ QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts
     } else {
         object.object.reset(new AppDbusObject(appId));
     }
-
-    connect(object.object.data(), &AppDbusObject::launchUI, this, &DBusInterface::sigToLaunchMgmt, Qt::QueuedConnection);
 
     m_appDbusObjects[appId] = object;
 
@@ -233,7 +163,7 @@ QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts
         qCDebug(logDBus) << "Successfully registered DBus path:" << object.path;
     }
 
-    DbWrapper::localDbWrapper().appendApp(object);
+    //DbWrapper::localDbWrapper().appendApp(object);
 
     QStringList reply;
     reply << path;
@@ -243,7 +173,8 @@ QStringList DBusInterface::registerAppCmdPrompts(const QVariantMap &/*cmdPrompts
 
 QString DBusInterface::registerApp()
 {
-    return registerAppCmdPrompts(QVariantMap()).value(0);
+    auto list = registerAppCmdPrompts(QVariantMap());
+    return list.isEmpty() ? "" : list.first();
 }
 
 void DBusInterface::unregisterApp()
@@ -255,10 +186,10 @@ void DBusInterface::unregisterApp()
 void DBusInterface::unregisterAppCmdPrompts()
 {
     uint pid = QDBusConnection::sessionBus().interface()->servicePid(message().service());
-    const QString &appId = LLMUtils::queryAppId(pid);
+    const QString &appId = Util::queryProcessName(pid);
 
     QDBusConnection connection = QDBusConnection::sessionBus();
-    const QString &path = LLMUtils::adjustDbusPath(appId);
+    const QString &path = adjustDbusPath(appId);
     connection.unregisterObject(path);
 
     m_appDbusObjects.remove(appId);

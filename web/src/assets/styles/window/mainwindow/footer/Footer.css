@@ -1,0 +1,100 @@
+/* Footer 主题变量 */
+html {
+    --footer-text-color: rgba(0, 0, 0, 0.5);
+    --footer-shortcut-color: rgba(0, 0, 0, 0.7);
+    --footer-shortcut-tip-bg: rgba(0, 0, 0, 0.05);
+}
+
+html.dark {
+    --footer-text-color: rgba(255, 255, 255, 0.7);
+    --footer-shortcut-color: rgba(255, 255, 255, 0.9);
+    --footer-shortcut-tip-bg: rgba(255, 255, 255, 0.08);
+}
+
+/* 底部信息栏容器 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 10px 20px;
+    line-height: 11px;
+    font-size: 8px;
+    color: var(--footer-text-color);
+    user-select: none;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* 当 workspace__main 内存在 chat-view__input-wrapper 时，使用负 margin 抵消额外 padding */
+.footer--with-input {
+    margin-top: -22px;
+}
+
+.footer__left {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.footer__right {
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.footer__shortcut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0;
+    user-select: none;
+}
+
+.footer__shortcut-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__super-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    background-color: var(--footer-shortcut-tip-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__super-icon svg {
+    fill: var(--footer-shortcut-color);
+}
+
+.footer__plus-sign {
+    width: fit-content;
+    white-space: nowrap;
+    height: 10px;
+    text-align: center;
+    margin: 0 4px;
+    line-height: var(--uosai-line-height-compact);
+}
+
+.footer__space-text {
+    width: fit-content;
+    white-space: nowrap;
+    padding: 0 3px;
+    border-radius: 4px;
+    background-color: var(--footer-shortcut-tip-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__quick-text {
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 4px;
+}

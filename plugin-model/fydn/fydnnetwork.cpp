@@ -31,7 +31,7 @@ FydnNetwork::FydnNetwork()
 
 }
 
-QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString &urlPath, const QString &role)
+QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString &urlPath, const QString &model)
 {
     const QPair<int, QString> accessData = generateAccessToken();
     if (accessData.first != ErrorType::NoError)
@@ -65,9 +65,9 @@ QPair<int, QString> FydnNetwork::request(const QJsonObject &data, const QString 
         } else {
             requestMsg = qMakePair(ErrorType::NoError, QString());
             QString dataStr;
-            if (role == uos_ai::fydn::ZgfyLLM::roleFlfg())
+            if (model == uos_ai::fydn::ZgfyLLM::modelID())
                 dataStr = this->parseFlfgResultString(data);
-            else if (role == uos_ai::fydn::ZgfyLLM::roleQa())
+            else if (model == uos_ai::fydn::ZgfyLLM::qaModelID())
                 dataStr = this->parseQaResultString(data);
 
             emit FydnNetwork::sigReadStream(dataStr);

@@ -181,26 +181,10 @@ void TtsWidget::initUI()
     m_closeButton->setIconSize(QSize(50, 50));
     m_closeButton->move(50, 0);
 
-    // Get the screen where the mouse cursor is located
-    QPoint cursorPos = QCursor::pos();
-    QScreen *cursorScreen = nullptr;
-
-    // Find the screen that contains the cursor position
-    for (QScreen *screen : QGuiApplication::screens()) {
-        if (screen->geometry().contains(cursorPos)) {
-            cursorScreen = screen;
-            break;
-        }
-    }
-
-    // Fallback to primary screen if cursor screen not found
-    if (!cursorScreen) {
-        cursorScreen = QGuiApplication::primaryScreen();
-    }
-
-    QRect availableRect = cursorScreen->availableGeometry();
+    QScreen *desktopWidget = QGuiApplication::primaryScreen();
+    QRect availableRect = desktopWidget->availableGeometry();
     QPoint pos((availableRect.width() - this->width()) / 2, availableRect.height() - this->height());
-    this->move(cursorScreen->geometry().topLeft() + pos - QPoint(0, 10));
+    this->move(pos - QPoint(0, 10));
 #ifdef COMPILE_ON_V20
     if (ESystemContext::isWayland()) {
         this->move(pos - QPoint(0, 80));

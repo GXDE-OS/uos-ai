@@ -7,6 +7,8 @@
 
 class QSoundEffect;
 
+namespace uos_ai {
+
 class IatServer;
 class TtsServer;
 
@@ -68,7 +70,7 @@ public:
      * @param text
      * @return
      */
-    bool startAppendPlayText(const QString &id, const QString &text, bool isEnd, bool isPlayOutline);
+    bool startAppendPlayText(const QString &id, const QString &text, bool isEnd);
 
     /**
      * @brief filterMarkdown
@@ -224,5 +226,7 @@ private:
     AudioModel m_audioModel = AudioModel::NetWork;
     QSharedPointer<QSoundEffect> m_sound;
 };
+
+} // namespace uos_ai
 
 #endif // AUDIOCONTROLER_H

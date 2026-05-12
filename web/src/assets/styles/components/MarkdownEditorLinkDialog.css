@@ -1,0 +1,99 @@
+html {
+    --mde-link-format-title-color: rgba(0, 0, 0, 0.7);
+    --mde-link-format-input-placeholder-color: rgba(85, 85, 85, 0.4);
+    --mde-link-input-bg: rgba(255, 255, 255, 0.6);
+    --mde-link-input-bg-error: rgba(145, 0, 0, 0.3);
+    --mde-link-error-color-bg: rgba(255, 255, 255, 1);
+    --mde-link-error-color-text: rgba(225, 87, 54, 1);
+}
+
+html.dark {
+    --mde-link-format-title-color: rgba(255, 255, 255, 0.7);
+    --mde-link-format-input-placeholder-color: rgba(255, 255, 255, 0.4);
+    --mde-link-input-bg: rgba(255, 255, 255, 0.05);
+    --mde-link-input-bg-error: rgba(241, 57, 50, 0.15);
+    --mde-link-error-color-bg: rgba(20, 20, 20, 0.6);
+    --mde-link-error-color-text: rgba(225, 54, 105, 1);
+}
+
+
+/* ============================================
+   链接插入对话框 —— 表单字段专属样式
+   （对话框框架样式已由 Dialog.css 提供）
+============================================ */
+
+.mde-link-dialog__field {
+    position: relative;
+    margin: 0 6px 14px 6px;
+}
+
+.mde-link-dialog__field:last-child {
+    margin-bottom: 0;
+}
+
+.mde-link-dialog__label {
+    display: block;
+    margin: 0 0 4px 8px;
+    color: var(--mde-link-format-title-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mde-link-dialog__input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px 9px;
+    font-size: var(--uosai-font-size-base);
+    color: var(--mde-link-format-title-color);
+    transition: border-color 0.2s ease;
+    outline: none;
+
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    0 1px 0 0 inset rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 6px;
+    background-color: var(--mde-link-input-bg);
+}
+
+.mde-link-dialog__input:focus {
+    border-color: var(--system-active-color, #1e82ff);
+}
+
+/* 错误状态 */
+.mde-link-dialog__input--error {
+    border-radius: 6px;
+    background-color: var(--mde-link-input-bg-error);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3) , 0 1px 0 0 inset rgba(255, 255, 255, 0.05);
+}
+
+.mde-link-dialog__input::placeholder {
+    color: var(--mde-link-format-input-placeholder-color);
+    font-weight: 500;
+}
+
+/* 错误提示：absolute 悬挂在输入框正下方，不撑开父布局 */
+.mde-link-dialog__error {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: fit-content;
+    white-space: nowrap;
+    margin: 0;
+    padding: 4px 10px 5px 10px;
+    font-size: var(--uosai-font-size-xs);
+    color: var(--mde-link-error-color-text);
+    line-height: var(--uosai-line-height-extra-normal);
+    pointer-events: none;
+
+    box-shadow: 0 0 0 0.5px inset rgba(255, 255, 255, 0.3),
+                0 0 0 0.5px rgba(255, 255, 255, 0.3),
+                0 0 0 0.5px rgba(0, 0, 0, 0.1),
+                0 0 0 0.5px rgba(0, 0, 0, 0.1),
+                0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-color: var(--mde-link-error-color-bg);
+}
+

@@ -1,0 +1,22 @@
+/* 纵向列表容器 */
+.item-list {
+    --item-list-sticky-stack-height: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    min-height: 100%;
+    position: relative;
+    user-select: none;
+}
+
+.item-list__content {
+    margin-top: var(--item-list-sticky-stack-height);
+    overflow: hidden;
+}
+
+.item-list__groups {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(calc(-1 * var(--item-list-sticky-stack-height)));
+}

@@ -11,7 +11,9 @@
 #include <QUrl>
 #include <QTimer>
 
-UOSAI_USE_NAMESPACE
+DGUI_USE_NAMESPACE
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -100,11 +102,13 @@ void RaidersButton::resetUrl()
                          .arg(QLocale::system().language())
                          .arg(QLocale::system().script());
     m_watcher.reset(new QFutureWatcher<QNetworkReply::NetworkError>);
+    QSharedPointer<UosFreeAccountActivity> tmpActivity(new UosFreeAccountActivity);
     QFuture<QNetworkReply::NetworkError> future = QtConcurrent::run([ = ] {
-        return UosFreeAccounts::instance().freeAccountButtonDisplay("detail", m_hasActivity);
+        return UosFreeAccounts::instance().freeAccountButtonDisplay("detail", *tmpActivity.data());
     });
     m_watcher->setFuture(future);
     connect(m_watcher.data(), &QFutureWatcher<QNetworkReply::NetworkError>::finished, this, [ = ]() {
+        m_hasActivity = *tmpActivity.data();
         if (QNetworkReply::NoError == m_watcher.data()->future().result() && 0 != m_hasActivity.display) {
             qCInfo(logAIGUI) << "Successfully retrieved button display info, showing button";
             this->show();

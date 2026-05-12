@@ -22,20 +22,25 @@ public:
 
     /**
      * 设置模型服务
-     * @param {QSharedPointer<LLM>} llm - 模型服务的共享指针
+     * @param {QSharedPointer<AbstractChatModel>} llm - 模型服务的共享指针
      */
-    void setModel(QSharedPointer<LLM> llm) override;
+    void setModel(QSharedPointer<AbstractChatModel> llm) override;
 
     /**
      * 处理用户请求
      * 按子智能体的顺序依次执行子智能体的processRequest
-     * @param {QJsonObject} question - 当前请求内容
-     * @param {QJsonArray} messages - 聊天消息记录
+     * @param {ModelMessage} question - 当前请求内容
+     * @param {QList<ModelMessage>} messages - 聊天消息记录
      * @param {QVariantHash} params - 扩展参数
-     * @returns {QJsonObject} 智能体工作流输出的消息记录
+     * @returns {QVariantHash} 智能体工作流输出的消息记录
      */
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &messages, const QVariantHash &params = {}) override;
-
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &messages, const QVariantHash &params = {}) override;
+public Q_SLOTS:
+    /**
+     * 取消当前请求
+     * 中断正在进行的LLM请求处理
+     */
+    void cancel() override;
 protected:
     /**
      * @brief 调用子智能体前的 hook 操作
@@ -44,8 +49,8 @@ protected:
      * @param localMessages 局部聊天记录
      * @param globalMessages 全局聊天记录
      */
-    virtual bool beforeSubAgentCall(const QString &agentName, QJsonObject &currentQuestion,
-                                    QJsonArray &localMessages, const QJsonArray &globalMessages);
+    virtual bool beforeSubAgentCall(const QString &agentName, ModelMessage &currentQuestion,
+                                    QList<ModelMessage> &localMessages, const QList<ModelMessage> &globalMessages);
 
 protected:
     QMap<QString, QSharedPointer<LlmAgent>> m_subAgents;  // 子智能体映射表

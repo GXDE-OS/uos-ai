@@ -14,7 +14,10 @@
 using namespace uos_ai;
 using namespace uos_ai::fydn;
 
-ZgfyLLM::ZgfyLLM() : QObject(), LLMModel()
+ZgfyLLM::ZgfyLLM(const QString &id)
+    : QObject()
+    , LLMModel()
+    , modelId(id)
 {
 
 }
@@ -26,9 +29,6 @@ QString ZgfyLLM::model() const
 
 QJsonObject ZgfyLLM::generate(const QString &content, const QVariantHash &params, LLMModel::streamFuncion stream, void *user)
 {
-    float temperature = params.value(GENERATE_PARAM_TEMPERATURE, 0.9).toFloat();
-    QString role = params.value(GENERATE_PARAM_ROLE).toString();
-
     QJsonObject sendObj;
     QJsonArray conversions = QJsonDocument::fromJson(content.toUtf8()).array();
     sendObj.insert("model", model());
@@ -36,7 +36,7 @@ QJsonObject ZgfyLLM::generate(const QString &content, const QVariantHash &params
     sendObj.insert("stream", true);
 
     QString url = "https://api.cjbdi.com:8443/354347/defg/web/openapis/template/netSearch";
-    if (role == roleFlfg()) {
+    if (modelId == modelID()) {
         url = "https://api.cjbdi.com:8443/354347/llm/flfg/v1/chat/completions";
         sendObj.insert("top_k", 5);
         sendObj.insert("threshold", 0.5);
@@ -53,7 +53,7 @@ QJsonObject ZgfyLLM::generate(const QString &content, const QVariantHash &params
         responseContent += data;
     });
 
-    QPair<int, QString> errorPair = fydnNetwork->request(sendObj, url, role);
+    QPair<int, QString> errorPair = fydnNetwork->request(sendObj, url, modelId);
 
     if (errorPair.first == FydnNetwork::ErrorType::NetWorkError)
         errorPair.second = QCoreApplication::translate("ErrorCodeTranslation", "Connection exception, please try again later.");

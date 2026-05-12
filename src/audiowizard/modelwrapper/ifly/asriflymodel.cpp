@@ -7,7 +7,7 @@
 #include <QRegularExpression>
 #include <QLoggingCategory>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAudioWizard)
 

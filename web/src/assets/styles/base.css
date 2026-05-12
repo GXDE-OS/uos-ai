@@ -1,0 +1,157 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+    --vt-c-white: #ffffff;
+    --vt-c-white-soft: #f8f8f8;
+    --vt-c-white-mute: #f2f2f2;
+
+    --vt-c-black: #181818;
+    --vt-c-black-soft: #222222;
+    --vt-c-black-mute: #282828;
+
+    --vt-c-indigo: #2c3e50;
+
+    --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+    --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+    --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+    --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+    --vt-c-text-light-1: var(--vt-c-indigo);
+    --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+    --vt-c-text-dark-1: var(--vt-c-white);
+    --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+    --vt-c-transparent: transparent;
+}
+
+/* semantic color variables for this project */
+:root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+    --color-background-transparent: rgba(255, 255, 255, 0.6);
+
+    --color-border: var(--vt-c-divider-light-2);
+    --color-border-hover: var(--vt-c-divider-light-1);
+
+    --color-heading: var(--vt-c-text-light-1);
+    --color-text: var(--vt-c-text-light-1);
+
+    --section-gap: 160px;
+
+    --text-normal-opacity: 0.7;
+
+    /* Component design system variables */
+    /* Background opacity levels */
+    --bg-opacity-hover: 0.05;
+    --bg-opacity-active: 0.1;
+    --bg-opacity-disabled: 0.5;
+
+    /* Gray opacity levels */
+    --gray-opacity-light: 0.1;
+    --gray-opacity-medium: 0.4;
+    --gray-opacity-dark: 0.8;
+
+    /* Border radius values */
+    --radius-none: 0;
+    --radius-small: 4px;
+    --radius-normal: 6px;
+    --radius-large: 12px;
+    --radius-circle: 50%;
+
+    /* Spacing values */
+    --spacing-xs: 2px;
+    --spacing-sm: 4px;
+    --spacing-md: 8px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    --spacing-xxl: 32px;
+
+    /* Transition durations */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.2s ease;
+    --transition-slow: 0.3s ease;
+
+    /* Font size values (base: 14px) */
+    --uosai-font-size-4xs: 0.643rem; /* 9px */
+    --uosai-font-size-3xs: 0.714rem; /* 10px */
+    --uosai-font-size-2xs: 0.786rem; /* 11px */
+    --uosai-font-size-xs: 0.857rem; /* 12px */
+    --uosai-font-size-sm: 0.929rem; /* 13px */
+    --uosai-font-size-base: 1rem; /* 14px */
+    --uosai-font-size-sm2: 1.071rem; /* 15px */
+    --uosai-font-size-md: 1.143rem; /* 16px */
+    --uosai-font-size-md2: 1.214rem; /* 17px */
+    --uosai-font-size-lg: 1.286rem; /* 18px */
+    --uosai-font-size-lg2: 1.357rem; /* 19px */
+    --uosai-font-size-xl: 1.429rem; /* 20px */
+    --uosai-font-size-2xl: 1.571rem; /* 22px */
+    --uosai-font-size-3xl: 1.714rem; /* 24px */
+    --uosai-font-size-4xl: 1.857rem; /* 26px */
+    --uosai-font-size-5xl: 2rem; /* 28px */
+
+    /* MarkdownRenderer specific font sizes */
+    --uosai-font-size-h1: 1.75rem; /* 24.5px */
+    --uosai-font-size-h2: 1.5rem; /* 21px */
+    --uosai-font-size-h4: 1.1rem; /* 15.4px */
+    --uosai-font-size-h5: 1rem; /* 14px */
+    --uosai-font-size-h6: 0.9rem; /* 12.6px */
+    --uosai-font-size-code: 0.875rem; /* 12.25px - code blocks and code language */
+    --uosai-font-size-code-sm: 0.85rem; /* 11.9px - inline code @85% */
+    --uosai-font-size-math: 1rem; /* 14px - MathJax math, same as body text */
+    --uosai-font-size-small: 0.8rem; /* 11.2px - responsive code */
+
+    /* Line height values */
+    --uosai-line-height-compact: 1;
+    --uosai-line-height-extra-tight: 1.2;
+    --uosai-line-height-tight: 1.25;
+    --uosai-line-height-regular: 1.35;
+    --uosai-line-height-normal: 1.5;
+    --uosai-line-height-normal-relaxed: 1.6;
+    --uosai-line-height-relaxed: 1.75;
+    --uosai-line-height-loose: 2;
+
+    /* MarkdownRenderer line height values */
+    --uosai-line-height-h1: 1.3;
+    --uosai-line-height-h2: 1.35;
+    --uosai-line-height-h3: 1.4;
+    --uosai-line-height-body: 1.6;
+    --uosai-line-height-code: 1.8;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: var(--vt-c-black);
+        --color-background-soft: var(--vt-c-black-soft);
+        --color-background-mute: var(--vt-c-black-mute);
+        --color-background-transparent: rgba(0, 0, 0, 0.1);
+
+        --color-border: var(--vt-c-divider-dark-2);
+        --color-border-hover: var(--vt-c-divider-dark-1);
+
+        --color-heading: var(--vt-c-text-dark-1);
+        --color-text: var(--vt-c-text-dark-2);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: transparent;
+    transition:
+        color 0.5s,
+        background-color 0.5s;
+    line-height: var(--uosai-line-height-relaxed);
+    font-family: var(--font-family);
+    font-size: var(--uosai-font-size-base);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

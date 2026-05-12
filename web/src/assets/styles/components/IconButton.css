@@ -1,0 +1,160 @@
+html {
+    --icon-button-color: rgba(0, 0, 0, 0.7);
+    --icon-button-hover-color: rgba(0, 0, 0, 1);
+    --icon-button-active-color: var(--system-active-color);
+    --icon-button-color-border: rgba(0, 0, 0, 0.08);
+    --icon-button-color-border-active: rgba(0, 0, 0, 0);
+    --icon-button-color-filled-bg: rgba(240, 240, 240, 1);
+    --icon-button-color-filled-bg-blur: rgba(240, 240, 240, 0.5);
+    --icon-button-hover-bg: rgba(0, 0, 0, 0.1);
+    --icon-button-hover-box-shadow: none;
+    --icon-button-active-bg: rgba(0, 0, 0, 0.2);
+    --icon-button-active-box-shadow: none;
+}
+
+html.dark {
+    --icon-button-color: rgba(255, 255, 255, 0.7);
+    --icon-button-hover-color: rgba(255, 255, 255, 1);
+    --icon-button-active-color: var(--system-active-color);
+    --icon-button-color-border: rgba(255, 255, 255, 0.08);
+    --icon-button-color-border-active: rgba(255, 255, 255, 0);
+    --icon-button-color-filled-bg: rgba(24, 24, 24, 1);
+    --icon-button-color-filled-bg-blur: rgba(24, 24, 24, 0.5);
+    --icon-button-hover-bg: rgba(20, 20, 20, 0.2);
+    --icon-button-hover-box-shadow: 0 1px 0 0 inset rgba(255, 255, 255, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
+    --icon-button-active-bg: rgba(0, 0, 0, 0.15);
+    --icon-button-active-box-shadow: none;
+}
+
+.icon-button {
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    user-select: none;
+    color: var(--icon-button-color);
+    transition:
+        background var(--transition-normal),
+        color var(--transition-normal),
+        opacity var(--transition-normal);
+}
+
+/* Shape variants */
+.icon-button-square {
+    border-radius: var(--radius-none);
+}
+
+.icon-button-rounded {
+    border-radius: var(--radius-normal);
+}
+
+.icon-button-circle {
+    border-radius: var(--radius-circle);
+}
+
+.icon-button--bordered {
+    border: 1px solid var(--icon-button-color-border);
+}
+
+.icon-button--bordered:active:not(.icon-button-disabled) {
+    border-color: var(--icon-button-color-border-active);
+}
+
+/* Hover state */
+.icon-button:hover:not(.icon-button-disabled) {
+    background: var(--icon-button-hover-bg);
+    box-shadow: var(--icon-button-hover-box-shadow);
+    color: var(--icon-button-hover-color);
+}
+
+/* Press/Active state */
+.icon-button:active:not(.icon-button-disabled) {
+    background: var(--icon-button-active-bg);
+    box-shadow: var(--icon-button-active-box-shadow);
+    color: var(--icon-button-active-color);
+}
+
+/* Disabled state */
+.icon-button-disabled {
+    cursor: not-allowed;
+    opacity: var(--bg-opacity-disabled);
+}
+
+/* Filled variant */
+.icon-button--filled {
+    background-color: var(--icon-button-color-filled-bg);
+    box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(0, 0, 0, 0.08),
+        0 0 0 0.5px rgba(0, 0, 0, 0.08),
+        0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: var(--icon-button-color);
+}
+
+.icon-button--filled--advanced {
+    background-color: var(--icon-button-color-filled-bg-blur);
+    backdrop-filter: blur(45px);
+}
+
+.icon-button--filled:hover:not(.icon-button-disabled) {
+    background-color: var(--icon-button-color-filled-bg);
+}
+
+.icon-button--filled--advanced:hover:not(.icon-button-disabled) {
+    background-color: var(--icon-button-color-filled-bg-blur);
+    backdrop-filter: blur(45px);
+}
+
+.icon-button--filled:active:not(.icon-button-disabled) {
+    color: var(--icon-button-active-color);
+    background-color: var(--icon-button-color-filled-bg);
+}
+
+.icon-button--filled--advanced:active:not(.icon-button-disabled) {
+    color: var(--icon-button-active-color);
+    background-color: var(--icon-button-color-filled-bg-blur);
+    backdrop-filter: blur(45px);
+}
+
+/* Disabled state child elements */
+.icon-button-disabled * {
+    pointer-events: none;
+}
+
+/* Focus visible for keyboard navigation */
+.icon-button:focus-visible {
+    outline: 2px solid rgba(52, 152, 219, 0.5);
+    outline-offset: 2px;
+}
+
+/* Focus not visible (mouse click) */
+.icon-button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .icon-button--bordered {
+        border: 1px solid #000;
+    }
+
+    .icon-button:hover:not(.icon-button-disabled) {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+    .icon-button,
+    .icon-button *,
+    .icon-button::before,
+    .icon-button::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}

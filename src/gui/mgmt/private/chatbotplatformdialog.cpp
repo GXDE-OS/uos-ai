@@ -1,4 +1,6 @@
 #include "chatbotplatformdialog.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 #include <DTitlebar>
 #include <DLabel>
@@ -6,12 +8,12 @@
 #include <DPaletteHelper>
 #include <DGuiApplicationHelper>
 
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QFormLayout>
-#include <QLoggingCategory>
 #include <QDesktopServices>
+#include <QFormLayout>
+#include <QHBoxLayout>
+#include <QLoggingCategory>
 #include <QUrl>
+#include <QVBoxLayout>
 
 using namespace uos_ai;
 
@@ -34,47 +36,39 @@ void ChatBotPlatformDialog::initUI()
     DTitlebar *titleBar = new DTitlebar(this);
     titleBar->setMenuVisible(false);
     titleBar->setBackgroundTransparent(true);
+
     QString title;
-    if (m_platformKey == "feishu")
+    if (m_platformKey == QLatin1String(STR_PLATFORM_FEISHU))
         title = tr("Lark Integration Settings");
-    else if (m_platformKey == "dingtalk")
+    else if (m_platformKey == QLatin1String(STR_PLATFORM_DINGTALK))
         title = tr("DingTalk Integration Settings");
+    else if (m_platformKey == QLatin1String(STR_PLATFORM_TELEGRAM))
+        title = tr("Telegram Integration Settings");
+    else if (m_platformKey == QLatin1String(STR_PLATFORM_DISCORD))
+        title = tr("Discord Integration Settings");
     else
         title = tr("QQ Integration Settings");
     titleBar->setTitle(title);
     DFontSizeManager::instance()->bind(titleBar, DFontSizeManager::T5, QFont::DemiBold);
 
-    QString label1, label2, label3;
-    if (m_platformKey == "feishu") {
-        label1 = "App ID";
-        label2 = "App Secret";
-    } else if (m_platformKey == "dingtalk") {
-        label1 = "Client ID";
-        label2 = "Client Secret";
-        label3 = "Card Template ID";
-    } else { // qq
-        label1 = "AppID";
-        label2 = "AppSecret";
-    }
-
-    // 表单
-    m_field1Edit = new DPasswordEdit(this);
-    m_field1Edit->setPlaceholderText(tr("Required"));
-
-    m_field2Edit = new DPasswordEdit(this);
-    m_field2Edit->setPlaceholderText(tr("Required"));
-
     QFormLayout *formLayout = new QFormLayout;
     formLayout->setLabelAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     formLayout->setSpacing(10);
-    formLayout->addRow(new DLabel(label1), m_field1Edit);
-    formLayout->addRow(new DLabel(label2), m_field2Edit);
 
-    if (m_platformKey == "dingtalk") {
-        m_field3Edit = new DLineEdit(this);
-        m_field3Edit->setPlaceholderText(tr("Optional"));
-        m_field3Edit->setClearButtonEnabled(true);
-        formLayout->addRow(new DLabel(label3), m_field3Edit);
+    for (const FieldConfig &config : fieldConfigs()) {
+        FieldWidgets field;
+        field.config = config;
+        field.label = new DLabel(config.label, this);
+        if (config.password) {
+            field.edit = new DPasswordEdit(this);
+        } else {
+            auto *lineEdit = new DLineEdit(this);
+            lineEdit->setClearButtonEnabled(true);
+            field.edit = lineEdit;
+        }
+        field.edit->setPlaceholderText(config.required ? tr("Required") : tr("Optional"));
+        formLayout->addRow(field.label, field.edit);
+        m_fields.append(field);
     }
 
     // 配置方法链接（居中显示）
@@ -112,8 +106,9 @@ void ChatBotPlatformDialog::initUI()
 
 void ChatBotPlatformDialog::initConnect()
 {
-    connect(m_field1Edit, &DPasswordEdit::textChanged, this, &ChatBotPlatformDialog::updateConfirmEnabled);
-    connect(m_field2Edit, &DPasswordEdit::textChanged, this, &ChatBotPlatformDialog::updateConfirmEnabled);
+    for (const FieldWidgets &field : std::as_const(m_fields))
+        connect(field.edit, &DLineEdit::textChanged, this, &ChatBotPlatformDialog::updateConfirmEnabled);
+
     connect(m_cancelBtn,  &DPushButton::clicked, this, &ChatBotPlatformDialog::reject);
     connect(m_confirmBtn, &DSuggestButton::clicked, this, &ChatBotPlatformDialog::accept);
 
@@ -128,43 +123,67 @@ void ChatBotPlatformDialog::initConnect()
 
 void ChatBotPlatformDialog::updateConfirmEnabled()
 {
-    m_confirmBtn->setEnabled(
-        !m_field1Edit->text().trimmed().isEmpty() &&
-        !m_field2Edit->text().trimmed().isEmpty()
-    );
+    bool enabled = true;
+    for (const FieldWidgets &field : std::as_const(m_fields)) {
+        if (field.config.required && field.edit->text().trimmed().isEmpty()) {
+            enabled = false;
+            break;
+        }
+    }
+    m_confirmBtn->setEnabled(enabled);
 }
 
 void ChatBotPlatformDialog::setConfig(const QJsonObject &cfg)
 {
-    if (m_platformKey == "feishu") {
-        m_field1Edit->setText(cfg.value("app_id").toString());
-        m_field2Edit->setText(cfg.value("app_secret").toString());
-    } else if (m_platformKey == "dingtalk") {
-        m_field1Edit->setText(cfg.value("client_id").toString());
-        m_field2Edit->setText(cfg.value("client_secret").toString());
-        m_field3Edit->setText(cfg.value("card_template_id").toString());
-    } else { // qq
-        m_field1Edit->setText(cfg.value("app_id").toString());
-        m_field2Edit->setText(cfg.value("token").toString());
-    }
+    for (const FieldWidgets &field : std::as_const(m_fields))
+        field.edit->setText(cfg.value(field.config.key).toString());
     updateConfirmEnabled();
 }
 
 QJsonObject ChatBotPlatformDialog::config() const
 {
     QJsonObject obj;
-    if (m_platformKey == "feishu") {
-        obj["app_id"]     = m_field1Edit->text().trimmed();
-        obj["app_secret"] = m_field2Edit->text().trimmed();
-    } else if (m_platformKey == "dingtalk") {
-        obj["client_id"]        = m_field1Edit->text().trimmed();
-        obj["client_secret"]    = m_field2Edit->text().trimmed();
-        obj["card_template_id"] = m_field3Edit->text().trimmed();
-    } else { // qq
-        obj["app_id"] = m_field1Edit->text().trimmed();
-        obj["token"]  = m_field2Edit->text().trimmed();
-    }
+    for (const FieldWidgets &field : m_fields)
+        obj[field.config.key] = field.edit->text().trimmed();
     return obj;
+}
+
+QVector<ChatBotPlatformDialog::FieldConfig> ChatBotPlatformDialog::fieldConfigs() const
+{
+    if (m_platformKey == QLatin1String(STR_PLATFORM_FEISHU)) {
+        return {
+            { QStringLiteral("app_id"), QStringLiteral("App ID"), true, true },
+            { QStringLiteral("app_secret"), QStringLiteral("App Secret"), true, true },
+        };
+    }
+
+    if (m_platformKey == QLatin1String(STR_PLATFORM_DINGTALK)) {
+        return {
+            { QStringLiteral("client_id"), QStringLiteral("Client ID"), true, true },
+            { QStringLiteral("client_secret"), QStringLiteral("Client Secret"), true, true },
+            { QStringLiteral("card_template_id"), QStringLiteral("Card Template ID"), false, false },
+        };
+    }
+
+    if (m_platformKey == QLatin1String(STR_PLATFORM_TELEGRAM)) {
+        return {
+            { QStringLiteral("bot_token"), QStringLiteral("Bot Token"), true, true },
+            { QStringLiteral("api_base"), QStringLiteral("API Base"), false, false },
+        };
+    }
+
+    if (m_platformKey == QLatin1String(STR_PLATFORM_DISCORD)) {
+        return {
+            { QStringLiteral("bot_token"), QStringLiteral("Bot Token"), true, true },
+            { QStringLiteral("application_id"), QStringLiteral("Application ID"), true, true },
+            { QStringLiteral("guild_id"), QStringLiteral("Guild ID"), false, false },
+        };
+    }
+
+    return {
+        { QStringLiteral("app_id"), QStringLiteral("AppID"), true, true },
+        { QStringLiteral("token"), QStringLiteral("AppSecret"), true, true },
+    };
 }
 
 void ChatBotPlatformDialog::updateHelpLabel()
@@ -172,15 +191,18 @@ void ChatBotPlatformDialog::updateHelpLabel()
     const QColor color = DPaletteHelper::instance()->palette(m_helpLabel).color(DPalette::Normal, DPalette::Highlight);
 
     QString url;
-    if (m_platformKey == "feishu")
-        url = "https://bbs.deepin.org/post/296336";
-    else if (m_platformKey == "dingtalk")
-        url = "https://bbs.deepin.org/post/296337";
+    if (m_platformKey == QLatin1String(STR_PLATFORM_FEISHU))
+        url = QStringLiteral("https://bbs.deepin.org/post/296336");
+    else if (m_platformKey == QLatin1String(STR_PLATFORM_DINGTALK))
+        url = QStringLiteral("https://bbs.deepin.org/post/296337");
+    else if (m_platformKey == QLatin1String(STR_PLATFORM_TELEGRAM))
+        url = QStringLiteral("https://core.telegram.org/bots/api");
+    else if (m_platformKey == QLatin1String(STR_PLATFORM_DISCORD))
+        url = QStringLiteral("https://discord.com/developers/docs/intro");
     else
-        url = "https://bbs.deepin.org/post/296334";
+        url = QStringLiteral("https://bbs.deepin.org/post/296334");
 
     m_helpLabel->setText(
         QString("<a href=\"%1\" style=\"color:%2; text-decoration: none;\">%3</a>")
-        .arg(url, color.name(), tr("Configuration Guide >"))
-    );
+            .arg(url, color.name(), tr("Configuration Guide >")));
 }

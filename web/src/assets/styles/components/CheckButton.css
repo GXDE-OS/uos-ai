@@ -1,0 +1,162 @@
+html {
+    --check-button-color-border: rgba(0, 0, 0, 0.7);
+    --check-button-color-border-hover: var(--system-active-color);
+    --check-button-border-active: 2px solid rgba(0, 0, 0, 0.2);
+    --check-button-bg-active: rgba(0, 0, 0, 0.1);
+    --check-button-shadow-active: none;
+    --check-button-color-checked-bg: var(--system-active-color);
+    --check-button-color-checked-bg-hover: var(--transparent);
+    --check-button-color-checked-shadow-base: var(--system-active-color-alpha-30);
+    --check-button-color-checked-shadow-inset: var(--system-active-color-alpha-80);
+    --check-button-color-icon: rgba(255, 255, 255, 1);
+    --check-button-color-icon-hover: rgba(0, 0, 0, 1);
+    --check-button-color-icon-active: var(--system-active-color);
+    --check-button-color-indeterminate: rgba(0, 0, 0, 0.7);
+    --check-button-color-indeterminate-hover: rgba(0, 0, 0, 1);
+    --check-button-color-indeterminate-active: var(--system-active-color);
+}
+html.dark {
+    --check-button-color-border: rgba(255, 255, 255, 0.7);
+    --check-button-color-border-hover: var(--system-active-color);
+    --check-button-border-active: none;
+    --check-button-bg-active: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(46, 46, 46, 1) 100%);
+    --check-button-shadow-active: 0 1px 0 0 rgba(0, 0, 0, 0.4), 0 1px 0 0 inset rgba(255, 255, 255, 0.07);
+    --check-button-color-checked-bg: var(--system-active-color);
+    --check-button-color-checked-bg-hover: var(--transparent);
+    --check-button-color-checked-shadow-base: var(--system-active-color-alpha-30);
+    --check-button-color-checked-shadow-inset: var(--system-active-color-alpha-80);
+    --check-button-color-icon: rgba(255, 255, 255, 1);
+    --check-button-color-icon-hover: rgba(255, 255, 255, 1);
+    --check-button-color-icon-active: var(--system-active-color);
+    --check-button-color-indeterminate: rgba(255, 255, 255, 0.7);
+    --check-button-color-indeterminate-hover: rgba(255, 255, 255, 1);
+    --check-button-color-indeterminate-active: var(--system-active-color);
+}
+
+.check-button {
+    box-sizing: border-box;
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.check-button__box,
+.check-button--indeterminate .check-button__box {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--check-button-color-border);
+    border-radius: 4px;
+    background: transparent;
+    pointer-events: none;
+}
+
+.check-button__indeterminate {
+    flex: none;
+    width: 8px;
+    height: 2px;
+    background: var(--check-button-color-indeterminate);
+    pointer-events: none;
+}
+
+.check-button__icon {
+    margin: 0 0 3px 3px;
+    flex: none;
+    color: var(--check-button-color-icon);
+    overflow: visible;
+    pointer-events: none;
+}
+
+.check-button__icon,
+.check-button__icon use {
+    stroke: var(--system-active-color-alpha-50);
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    paint-order: stroke fill;
+}
+
+.check-button:hover:not(.check-button--checked):not(.check-button--disabled) .check-button__box {
+    border-color: var(--check-button-color-border-hover);
+}
+
+.check-button:active:not(.check-button--checked):not(.check-button--disabled) .check-button__box {
+    box-shadow: var(--check-button-shadow-active);
+    background: var(--check-button-bg-active);
+    border: var(--check-button-border-active);
+}
+
+.check-button--checked .check-button__box {
+    border: none;
+    background: var(--check-button-color-checked-bg);
+    box-shadow:
+        0 0 0 1px var(--check-button-color-checked-shadow-base),
+        0 1px 0 0 rgba(0, 0, 0, 0.1),
+        0 -1px 0 0 inset var(--check-button-color-checked-shadow-inset);
+}
+
+.check-button--checked:hover:not(.check-button--disabled) .check-button__box,
+.check-button--indeterminate:hover:not(.check-button--disabled) .check-button__box {
+    box-shadow: none;
+    border: 2px solid var(--check-button-color-border-hover);
+    background: transparent;
+}
+
+.check-button--checked:hover:not(.check-button--disabled) .check-button__icon {
+    color: var(--check-button-color-icon-hover);
+}
+
+.check-button--indeterminate:hover:not(.check-button--disabled) .check-button__indeterminate {
+    background: var(--check-button-color-indeterminate-hover);
+}
+
+.check-button--checked:active:not(.check-button--disabled) .check-button__box,
+.check-button--indeterminate:active:not(.check-button--disabled) .check-button__box {
+    box-shadow: var(--check-button-shadow-active);
+    border: var(--check-button-border-active);
+    background: var(--check-button-bg-active);
+}
+
+.check-button--checked:active:not(.check-button--disabled) .check-button__icon {
+    color: var(--check-button-color-icon-active);
+}
+
+.check-button--indeterminate:active:not(.check-button--disabled) .check-button__indeterminate {
+    background: var(--check-button-color-indeterminate-active);
+}
+
+.check-button--checked:hover:not(.check-button--disabled) .check-button__icon,
+.check-button--checked:hover:not(.check-button--disabled) .check-button__icon use {
+    stroke: none;
+    stroke-width: 0;
+}
+
+.check-button--checked:active:not(.check-button--disabled) .check-button__icon,
+.check-button--checked:active:not(.check-button--disabled) .check-button__icon use {
+    stroke: none;
+    stroke-width: 0;
+}
+
+.check-button--disabled {
+    cursor: default;
+    opacity: var(--bg-opacity-disabled);
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .check-button__box {
+        transition: none;
+    }
+}
