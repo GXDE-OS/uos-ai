@@ -1,7 +1,7 @@
 #ifndef AIBARITEM_H
 #define AIBARITEM_H
 
-#include "uosai_global.h"
+
 #include <DWidget>
 #include <DLabel>
 #include <DSwitchButton>

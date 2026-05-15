@@ -72,7 +72,7 @@ QJsonObject TzdlLLM::generate(const QString &content, const QVariantHash &params
 
     QUrl url;
     QEventLoop loop;
-    AIServer::ErrorType serverErrorCode;
+    QNetworkReply::NetworkError serverErrorCode;
     QByteArray replyData;
     QString errorStr;
 
@@ -168,7 +168,7 @@ void TzdlLLM::setAbort()
 QByteArray TzdlLLM::httpRequest(QUrl url,
                                     QByteArray sendData,
                                     QEventLoop &loop,
-                                    AIServer::ErrorType &serverErrorCode,
+                                    QNetworkReply::NetworkError &serverErrorCode,
                                     QString &errorStr,
                                     QString &responseContent,
                                     bool needAuth,
@@ -212,10 +212,10 @@ QByteArray TzdlLLM::httpRequest(QUrl url,
 
     timer.start();
 
-    serverErrorCode = AIServer::ErrorType::NoError;
+   serverErrorCode = QNetworkReply::NoError;
     QObject::connect(&timer, &QTimer::timeout, this, [=, &loop, &serverErrorCode]()
                      {
-        serverErrorCode = AIServer::ErrorType::TimeoutError;
+        serverErrorCode = QNetworkReply::TimeoutError;
         reply->abort();
         loop.quit(); });
 
@@ -226,9 +226,9 @@ QByteArray TzdlLLM::httpRequest(QUrl url,
     loop.exec();
     timer.stop();
 
-    if (serverErrorCode == AIServer::ErrorType::NoError && reply->error() != QNetworkReply::NoError)
+    if (serverErrorCode == QNetworkReply::NoError && reply->error() != QNetworkReply::NoError)
     {
-        serverErrorCode = AIServer::networkReplyErrorToAiServerError(static_cast<QNetworkReply::NetworkError>(reply->error()));
+        serverErrorCode = reply->error();
         errorStr = reply->errorString();
     }
 

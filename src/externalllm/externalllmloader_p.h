@@ -21,7 +21,7 @@ public:
 public:
     QStringList loadPaths;
     QList<QSharedPointer<QPluginLoader>> loaders;
-    QList<QSharedPointer<LLMPlugin>> llmPlugins;
+    QMap<QSharedPointer<uos_ai::LLMPlugin>, QString> llmPlugins;
 
 private:
     ExternalLLMLoader *q;

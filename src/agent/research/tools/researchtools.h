@@ -14,7 +14,7 @@ public:
     static bool md2Pdf(const QString &md, const QString &pdfPath);
     static bool checkAgentInstalled();
 
-    static QString getFileIconData(const QString &docPath); // base64
+    static QString getFileIconKey(const QString &docPath); // icon store key
     static void outlineJson2Md(const QJsonObject &outlineObj, int level, QString &markdown);
 };
 

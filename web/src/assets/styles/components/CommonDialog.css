@@ -1,0 +1,24 @@
+/* ============================================
+   CommonDialog 专属样式
+   （遮罩、容器、标题栏由 Dialog.css 提供，
+     此文件仅覆盖 CommonDialog 个性化部分）
+   作用域锚点：.common-dialog（通过 BaseDialog 的 dialogClass prop 注入）
+============================================ */
+
+html {
+    --common-dialog-content-color: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --common-dialog-content-color: rgba(255, 255, 255, 0.7);
+}
+
+/* 正文内容文本 */
+.common-dialog__content {
+    font-size: var(--uosai-font-size-base);
+    color: var(--common-dialog-content-color);
+    margin: 0;
+    padding: 0 16px 8px;
+    text-align: center;
+    line-height: var(--uosai-line-height-normal);
+}

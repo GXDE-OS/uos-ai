@@ -7,25 +7,23 @@
 #include <DIconButton>
 #include <DLabel>
 
-DWIDGET_USE_NAMESPACE
-
 class WrapCheckBox;
-
-class UserAgreementDialog : public DAbstractDialog
+namespace uos_ai {
+class UserAgreementDialog : public DTK_WIDGET_NAMESPACE::DAbstractDialog
 {
     Q_OBJECT
 
 public:
-    explicit UserAgreementDialog(DWidget *parent = nullptr);
+    explicit UserAgreementDialog(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
 private:
     void initUI();
 
-    DArrowRectangle *showArrowRectangle(DArrowRectangle::ArrowDirection);
+    DTK_WIDGET_NAMESPACE::DArrowRectangle *showArrowRectangle(DTK_WIDGET_NAMESPACE::DArrowRectangle::ArrowDirection);
 
     QString getAgreementText();
 private:
-    DPushButton *m_pPushButton{nullptr};
+    DTK_WIDGET_NAMESPACE::DPushButton *m_pPushButton{nullptr};
 };
-
+}
 #endif // USERAGREEMENTDIALOG_H

@@ -4,7 +4,7 @@
 #include "basicpoint.h"
 #include "wordwizard.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 namespace report {
 
@@ -55,6 +55,6 @@ public:
 
 }
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // FOLLOWFUNCTION_POINT_H

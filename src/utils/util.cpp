@@ -30,7 +30,7 @@ Q_DECLARE_LOGGING_CATEGORY(logUtils)
 
 DCORE_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Util::Util()
 {
@@ -94,17 +94,6 @@ bool Util::isGPTEnable()
     return !checkLanguage();
 }
 
-bool Util::isGPTSeries(LLMChatModel m)
-{
-    static QSet<LLMChatModel> gptSeries = {
-        CHATGPT_3_5, CHATGPT_3_5_16K,
-        CHATGPT_4, CHATGPT_4_32K,
-        GEMINI_1_5_FLASH, GEMINI_1_5_PRO, OPENROUTER_MODEL
-    };
-
-    return gptSeries.contains(m);
-}
-
 bool Util::isCommunity()
 {
     return DSysInfo::productType() == DSysInfo::Deepin;
@@ -115,12 +104,6 @@ bool Util::checkLanguage()
     static const QList<QLocale> supportLanguage{{QLocale::Tibetan}, {QLocale::Uighur}, {QLocale::Chinese}};
     QLocale locale = QLocale::system();
     return supportLanguage.contains(locale.language());
-}
-
-QString Util::generateAssistantUuid(QString name)
-{
-    QString formatName = name.replace(" ", "-").toLower().trimmed();
-    return  formatName;
 }
 
 bool Util::isAIDaemonExist()
@@ -353,5 +336,29 @@ QString Util::splitLocaleName(const QString &locale)
         ret = localeList.first();
 
     return ret;
+}
+
+QString Util::queryProcessName(const uint &pid)
+{
+    QString processName;
+    QString procFilePath = QString("/proc/%1/cmdline").arg(pid);
+
+    QFile file(procFilePath);
+    if (file.open(QIODevice::ReadOnly)) {
+        QByteArray data = file.readAll();
+        file.close();
+
+        QStringList args = QString(data).split('/');
+
+        if (!args.isEmpty()) {
+            processName = args.last();
+        } else {
+            qWarning() << "Error: cmdline" << procFilePath;
+        }
+    } else {
+        qWarning() << "Error: Unable to open" << procFilePath;
+    }
+
+    return processName;
 }
 

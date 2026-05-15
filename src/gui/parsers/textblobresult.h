@@ -5,12 +5,12 @@
 #ifndef TEXTBLOBRESULT_H
 #define TEXTBLOBRESULT_H
 
-#include "uosai_global.h"
+
 #include "parserresult.h"
 
 #include <QString>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief Concrete implementation of ParserResult that stores content in a QString
@@ -88,6 +88,6 @@ private:
     QString m_errorString; ///< Error message if parsing failed
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // TEXTBLOBRESULT_H

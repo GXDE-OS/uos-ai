@@ -1,6 +1,6 @@
 #ifndef SHORTCUTMANAGER_H
 #define SHORTCUTMANAGER_H
-#include "uosai_global.h"
+
 
 #include <QObject>
 #include <QDBusInterface>

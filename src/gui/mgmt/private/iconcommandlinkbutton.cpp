@@ -1,6 +1,5 @@
 #include "iconcommandlinkbutton.h"
 #include "wrapcheckbox.h"
-#include "private/echatwndmanager.h"
 #include "utils/esystemcontext.h"
 
 #include <DGuiApplicationHelper>
@@ -10,11 +9,11 @@
 #include <QPixmap>
 
 using namespace uos_ai;
+DWIDGET_USE_NAMESPACE
 
 IconCommandLinkButton::IconCommandLinkButton(const QString &text, IconPosition iconPos, DWidget *parent)
     : DCommandLinkButton(text, parent), m_iconPosition(iconPos)
 {
-    EWndManager()->registeWindow(this);
 }
 
 QSize IconCommandLinkButton::sizeHint() const

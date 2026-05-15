@@ -5,8 +5,6 @@
 #ifndef DCONFIGMANAGER_P_H
 #define DCONFIGMANAGER_P_H
 
-#include <uosai_global.h>
-
 #include <dtkcore_global.h>
 #include <QMap>
 #include <QReadWriteLock>
@@ -15,7 +13,7 @@ DCORE_BEGIN_NAMESPACE
 class DConfig;
 DCORE_END_NAMESPACE
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class DConfigManager;
 class DConfigManagerPrivate
@@ -31,6 +29,6 @@ public:
         : q(qq) {}
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif   // DCONFIGMANAGER_P_H

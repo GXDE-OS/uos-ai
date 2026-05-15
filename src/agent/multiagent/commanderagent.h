@@ -34,18 +34,17 @@ public:
 
     /**
      * 设置模型服务
-     * @param {QSharedPointer<LLM>} llm - 模型服务的共享指针
+     * @param {QSharedPointer<AbstractChatModel>} llm - 模型服务的共享指针
      */
-    void setModel(QSharedPointer<LLM> llm) override;
-protected:
-    /**
-     * @brief 初始化聊天消息
-     * @param question 当前请求内容
-     * @param messages 历史消息记录
-     * @return 初始化后的消息数组
-     */
-    QJsonArray initChatMessages(const QJsonObject &question, const QJsonArray &messages) const override;
+    void setModel(QSharedPointer<AbstractChatModel> llm) override;
 
+public Q_SLOTS:
+    /**
+     * 取消当前请求
+     * 中断正在进行的LLM请求处理
+     */
+    void cancel() override;
+protected:
     /**
      * @brief 调用工具
      * @param toolName 工具名称
@@ -56,9 +55,9 @@ protected:
 
     /**
      * @brief 构建子智能体工具定义
-     * @return 工具定义JSON数组
+     * @return 工具定义列表
      */
-    virtual QJsonObject subagentTool() const;
+    virtual ModelToolList subagentTool() const;
 
     /**
      * @brief 构建子智能体描述文本

@@ -1,6 +1,8 @@
 #ifndef GETFREEACCOUNTDIALOG_H
 #define GETFREEACCOUNTDIALOG_H
 
+#include "uosfreeaccounts.h"
+
 #include <DDialog>
 #include <DWidget>
 #include <DCheckBox>
@@ -14,22 +16,18 @@
 #include <QFutureWatcher>
 #include <QtConcurrent>
 
-#include "tasdef.h"
-#include "networkdefs.h"
-
-DWIDGET_USE_NAMESPACE
-
-class LLMServerProxy;
 class WrapCheckBox;
+
+namespace uos_ai {
+
 class ThemedLable;
 
-class GetFreeAccountDialog : public DDialog
+class GetFreeAccountDialog : public DTK_WIDGET_NAMESPACE::DDialog
 {
     Q_OBJECT
 public:
-    explicit GetFreeAccountDialog(DWidget *parent = nullptr);
+    explicit GetFreeAccountDialog(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
-    bool isFreeAccount();
     void resetDialog();
 
 private:
@@ -38,7 +36,7 @@ private:
     void resetLinkColor();
 
 signals:
-    void signalAppendModel(const LLMServerProxy &);
+    void freeModelAppend();
     void signalActivityEnd();
 
 public slots:
@@ -46,11 +44,10 @@ public slots:
 
 private slots:
     void onUpdateSystemFont(const QFont &);
-    void onUpdateSystemTheme(const DGuiApplicationHelper::ColorType &);
+    void onUpdateSystemTheme(const DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType &);
 
 private:
     QString m_activityUrl;
-    bool m_freeAccount;
 
     ThemedLable *m_pActivity = nullptr;
     UosFreeAccountActivity m_hasActivity;
@@ -58,4 +55,5 @@ private:
 
 };
 
+}
 #endif // GETFREEACCOUNTDIALOG_H

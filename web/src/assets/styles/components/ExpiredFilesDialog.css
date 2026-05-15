@@ -1,0 +1,98 @@
+html {
+    --expired-files-dialog-list-color-bg: rgba(255, 255, 255, 0.3);
+    --expired-files-dialog-color-title: rgba(0, 0, 0, 1);
+    --expired-files-dialog-color-text: rgba(0, 0, 0, 0.7);
+    --expired-files-dialog-color-secondary: rgba(0, 0, 0, 0.5);
+    --expired-files-dialog-color-bg: rgba(0, 0, 0, 0.05);
+}
+
+html.dark {
+    --expired-files-dialog-list-color-bg: rgba(0, 0, 0, 0.3);
+    --expired-files-dialog-color-title: rgba(255, 255, 255, 1);
+    --expired-files-dialog-color-text: rgba(255, 255, 255, 0.7);
+    --expired-files-dialog-color-secondary: rgba(255, 255, 255, 0.5);
+    --expired-files-dialog-color-bg: rgba(255, 255, 255, 0.05);
+}
+
+.expired-files-dialog {
+    width: 360px;
+}
+
+.expired-files-dialog .dialog__title {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-normal);
+    color: var(--expired-files-dialog-color-title);
+}
+
+.expired-files-dialog .dialog__body {
+    background: var(--expired-files-dialog-list-color-bg);
+    border-radius: 6px;
+    /* 设置内边距，左右12px，上20px， 下10px */
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.expired-files-dialog__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.expired-files-dialog__body .scroll-bar-container {
+    flex: 1;
+    min-height: 0;
+}
+
+.expired-files-dialog__list {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    height: 150px;
+}
+
+.expired-files-dialog__item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    /* background: var(--expired-files-dialog-color-bg); */
+    border-radius: 6px;
+    height: 30px;
+    min-height: 30px; /* 添加这行 */
+    overflow: hidden; /* 可选，防止内容溢出 */
+    user-select: none;
+}
+
+/* expired-files-dialog__item的偶数项添加背景颜色 */
+.expired-files-dialog__item:nth-child(even) {
+    background: var(--expired-files-dialog-color-bg);
+}
+
+.expired-files-dialog__icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+}
+
+.expired-files-dialog__icon-image {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.expired-files-dialog__name {
+    flex: 1;
+    font-size: var(--uosai-font-size-sm);
+    color: var(--expired-files-dialog-color-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 6px;
+}

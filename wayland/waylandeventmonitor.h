@@ -1,6 +1,6 @@
 #ifndef WAYLANDEVENTMONITOR_H
 #define WAYLANDEVENTMONITOR_H
-#include "uosai_global.h"
+
 
 #include "private/basemonitor.h"
 #include <DRegionMonitor>

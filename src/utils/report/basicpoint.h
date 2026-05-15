@@ -1,12 +1,12 @@
 #ifndef BASICPOINT_H
 #define BASICPOINT_H
 
-#include "uosai_global.h"
+
 
 #include <QPair>
 #include <QVariantMap>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 namespace report {
 
@@ -51,6 +51,6 @@ protected:
 
 }
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // BASICPOINT_H

@@ -1,0 +1,31 @@
+html {
+    --file-privacy-text: rgba(0, 0, 0, 0.7);
+}
+html.dark {
+    --file-privacy-text: rgba(255, 255, 255, 0.7);
+}
+
+.file-privacy-dialog__desc {
+    color: var(--file-privacy-text);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 0 20px 17px 20px;
+}
+
+.file-privacy-dialog__list {
+    list-style: none;
+    color: var(--file-privacy-text);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 20px;
+}
+.file-privacy-dialog__list li {
+    padding-bottom: 6px;
+}
+
+.file-privacy-dialog {
+    width: 480px;
+}

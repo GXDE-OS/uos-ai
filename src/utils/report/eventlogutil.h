@@ -1,11 +1,11 @@
 #ifndef EVENTLOGUTIL_H
 #define EVENTLOGUTIL_H
 
-#include "uosai_global.h"
+
 
 #include <QVariantMap>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 namespace report {
 
@@ -37,7 +37,7 @@ private:
 
 }
 
-UOSAI_END_NAMESPACE
+}
 
 #define ReportIns uos_ai::report::EventLogUtil::instance
 

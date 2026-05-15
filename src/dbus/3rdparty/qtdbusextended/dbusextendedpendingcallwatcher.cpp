@@ -25,7 +25,7 @@
 
 #include "dbusextendedpendingcallwatcher_p.h"
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 DBusExtendedPendingCallWatcher::DBusExtendedPendingCallWatcher(const QDBusPendingCall &call, const QString &asyncProperty, const QVariant &previousValue, QObject *parent)
     : QDBusPendingCallWatcher(call, parent)

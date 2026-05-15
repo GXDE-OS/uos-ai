@@ -1,0 +1,174 @@
+html {
+    --message-action-buttons__model-color: rgba(0, 0, 0, 0.7);
+    --message-action-button-hover-bg: rgba(0, 0, 0, 0.1);
+    --message-action-button-hover-box-shadow: none;
+    --message-action-button-active-bg: rgba(0, 0, 0, 0.2);
+    --message-action-button-active-box-shadow: none;
+}
+
+html.dark {
+    --message-action-buttons__model-color: rgba(255, 255, 255, 0.7);
+    --message-action-button-hover-bg: rgba(20, 20, 20, 0.2);
+    --message-action-button-hover-box-shadow:
+        0 1px 0 0 inset rgba(255, 255, 255, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
+    --message-action-button-active-bg: rgba(0, 0, 0, 0.15);
+    --message-action-button-active-box-shadow: none;
+}
+
+.message-action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.message-action-buttons__model {
+    display: flex;
+    align-items: center;
+}
+
+.message-action-buttons__model-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    color: var(--message-action-buttons__model-color);
+}
+
+.message-action-buttons__model-name {
+    font-size: var(--uosai-font-size-3xs);
+    color: var(--message-action-buttons__model-color);
+}
+
+.message-action-buttons__divider {
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 7.5px;
+}
+
+.message-action-buttons__actions {
+    display: flex;
+    align-items: center;
+}
+
+.message-action-buttons__actions .icon-button {
+    margin-left: 0px;
+}
+
+.message-action-buttons__actions .icon-button:first-child {
+    margin-left: 0;
+}
+
+/* 控制操作按钮的可见性 */
+.message-action-buttons--visible {
+    opacity: 1;
+    visibility: visible;
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
+
+.message-action-buttons--hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
+
+/* 左右切换按钮区域 */
+.message-action-buttons__switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.message-action-buttons__switch .icon-button {
+    margin-left: 0;
+}
+
+.message-action-buttons__switch-counter {
+    font-size: var(--uosai-font-size-base);
+    color: var(--message-action-buttons__model-color);
+    min-width: 32px;
+    text-align: center;
+    user-select: none;
+}
+
+/* 禁用状态的切换按钮 */
+.message-action-buttons__switch .icon-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* 向前切换按钮图标 - 顺时针旋转90度 */
+.message-action-buttons__switch-button--previous .svg-icon {
+    transform: rotate(90deg);
+}
+
+/* 向后切换按钮图标 - 逆时针旋转90度 */
+.message-action-buttons__switch-button--next .svg-icon {
+    transform: rotate(-90deg);
+}
+
+/* 语音播放动画 */
+.voice-play-animation {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.voice-play-animation:hover {
+    border-radius: var(--radius-normal);
+    background: var(--message-action-button-hover-bg);
+    box-shadow: var(--message-action-button-hover-box-shadow);
+}
+
+.voice-play-animation:active {
+    background: var(--message-action-button-active-bg);
+    box-shadow: var(--message-action-button-active-box-shadow);
+}
+
+.voice-play-animation:first-child {
+    margin-left: 0;
+}
+
+.voice-play-animation svg {
+    width: 16px;
+    height: 16px;
+}
+
+.voice-play-animation .wave-bar {
+    fill: var(--system-active-color);
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: pulse 0.8s infinite ease-in-out;
+}
+
+/* 设置四根声波柱的不同延迟，制造起伏感 */
+.voice-play-animation .bar-1 {
+    animation-delay: 0s;
+}
+.voice-play-animation .bar-2 {
+    animation-delay: 0.2s;
+}
+.voice-play-animation .bar-3 {
+    animation-delay: 0.4s;
+}
+.voice-play-animation .bar-4 {
+    animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scaleY(0.4);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+}

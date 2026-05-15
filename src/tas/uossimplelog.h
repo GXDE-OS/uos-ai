@@ -1,12 +1,53 @@
 #ifndef UOSSIMPLELOG_H
 #define UOSSIMPLELOG_H
-#include "tasdef.h"
+
 #include "tlockfreequeue.h"
 
 #include <QQueue>
 #include <QThread>
 #include <QMutex>
 #include <QWaitCondition>
+#include <QDateTime>
+
+namespace uos_ai {
+
+enum UosLogType {
+    UserInput = 1,
+    FailedRetry,
+    TextToImageResult,
+    AnwserRate
+};
+
+struct UosLogObject {
+    UosLogType type;  // 日志类型
+    QString app;
+    QString content;
+    QDateTime time;
+    QString llm;
+    QString ModelType;
+    QString assistant;
+    int t2iResult; // 0成功 1失败
+} ;
+
+struct UosRateLog {
+    enum Rate{
+        None = -1,
+        Like = 1,
+        Dislike = 2,
+        Cancle = 3
+    };
+
+    UosLogType type;  // 日志类型
+    QString question;
+    QString answer;
+    QString questionTime;
+    QString answerTime;
+    QString llm;
+    QString app;
+    QString modelType;
+    QString assistantName;
+    Rate likeOrNot = None;
+};
 
 class UosSimpleLog : public QThread
 {
@@ -49,5 +90,7 @@ private:
 
     QMap<UosLogType, QString> serverUrls;
 };
+
+}
 
 #endif // UOSSIMPLELOG_H

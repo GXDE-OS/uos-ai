@@ -1,0 +1,216 @@
+html {
+    --base-dialog-color-bg: rgba(240, 240, 240, 1);
+    --base-dialog-color-bg-blur: rgba(240, 240, 240, 0.7);
+    --base-dialog-color-text: rgba(0, 0, 0, 1);
+    --base-dialog-out-border-color: rgba(0, 0, 0, 0.1);
+    --base-dialog-inner-border-color: rgba(255, 255, 255, 0.2);
+    --base-dialog-shadow-color: rgba(0, 0, 0, 0.2);
+    --base-dialog-footer-button-bg: rgba(0, 0, 0, 0.15);
+    --base-dialog-footer-button-box-shadow: none;
+    --base-dialog-footer-button-hover-bg: rgba(255, 255, 255, 0.2);
+    --base-dialog-footer-button-hover-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    --base-dialog-footer-button-active-bg: rgba(0, 0, 0, 0.3);
+    --base-dialog-footer-button-color-text: rgba(0, 0, 0, 0.7);
+    --base-dialog-footer-button-color-text-active: var(--system-active-color);
+}
+
+html.dark {
+    --base-dialog-color-bg: rgba(24, 24, 24, 1);
+    --base-dialog-color-bg-blur: rgba(24, 24, 24, 0.7);
+    --base-dialog-color-text: rgba(255, 255, 255, 1);
+    --base-dialog-out-border-color: rgba(0, 0, 0, 0.6);
+    --base-dialog-inner-border-color: rgba(255, 255, 255, 0.1);
+    --base-dialog-shadow-color: rgba(0, 0, 0, 0.4);
+    --base-dialog-footer-button-bg: rgba(0, 0, 0, 0.2);
+    --base-dialog-footer-button-box-shadow:
+        0 -1px 0 0 inset rgba(0, 0, 0, 0.4), 0 1px 0 0 inset rgba(255, 255, 255, 0.05);
+    --base-dialog-footer-button-hover-bg: rgba(20, 20, 20, 0.2);
+    --base-dialog-footer-button-hover-box-shadow:
+        0 1px 0 0 inset rgba(255, 255, 255, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
+    --base-dialog-footer-button-active-bg: rgba(0, 0, 0, 0.4);
+    --base-dialog-footer-button-color-text: rgba(255, 255, 255, 0.7);
+    --base-dialog-footer-button-color-text-active: var(--system-active-color-alpha-80);
+}
+
+/* ============================================
+   通用对话框 —— 遮罩层
+============================================ */
+.dialog-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* ============================================
+   对话框容器
+============================================ */
+.dialog {
+    position: relative;
+    width: 360px;
+    max-width: 90vw;
+    border-radius: 12px;
+    border: 0.5px solid var(--base-dialog-out-border-color);
+    background-color: var(--base-dialog-color-bg);
+    box-shadow: 0 8px 20px 0 var(--base-dialog-shadow-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    outline: none;
+}
+
+/* 内边框（用伪元素替代 inset box-shadow 以兼容 Qt5 WebEngine） */
+.dialog::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 0.5px solid var(--base-dialog-inner-border-color);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+/* 背景模糊变体（isEnableAdvancedCssFeatures 开启时） */
+.dialog--blur {
+    backdrop-filter: blur(45px);
+    background-color: var(--base-dialog-color-bg-blur);
+}
+
+/* ============================================
+   标题栏
+============================================ */
+.dialog__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.dialog__header .icon-button {
+    color: var(--base-dialog-footer-button-color-text);
+}
+
+.dialog__header-main {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.dialog__app-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+/* 关闭按钮不要圆角（贴近标题栏右上角） */
+.dialog__header .icon-button,
+.dialog__header .icon-button-rounded {
+    border-radius: 0;
+}
+
+/* ============================================
+   居中标题行
+============================================ */
+.dialog__title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0 0 0;
+    flex-shrink: 0;
+}
+
+.dialog__title {
+    margin: 0;
+    color: var(--base-dialog-color-text);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: var(--uosai-line-height-tight);
+}
+
+.dialog__title--header {
+    margin-left: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* ============================================
+   Body 区域（默认插槽）
+============================================ */
+.dialog__body {
+    padding: 10px 0px;
+    flex: 1;
+}
+
+/* ============================================
+   底部按钮区
+============================================ */
+.dialog__footer {
+    display: flex;
+    padding: 10px 6px 6px 6px;
+    flex-shrink: 0;
+}
+
+.dialog__btn {
+    flex: 1;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    background: var(--base-dialog-footer-button-bg);
+    color: var(--base-dialog-footer-button-color-text);
+    outline: none;
+}
+
+.dialog__btn + .dialog__btn {
+    margin-left: 6px;
+}
+
+.dialog__btn:hover:not(:disabled) {
+    background: var(--base-dialog-footer-button-hover-bg);
+    box-shadow: var(--base-dialog-footer-button-hover-box-shadow);
+}
+
+.dialog__btn:active:not(:disabled) {
+    background: var(--base-dialog-footer-button-active-bg);
+    box-shadow: var(--base-dialog-footer-button-active-box-shadow);
+}
+
+.dialog__btn:disabled,
+.dialog__btn--disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+/* default 类型：灰色 */
+.dialog__btn--default {
+    color: var(--base-dialog-footer-button-color-text);
+}
+
+/* primary 类型：蓝色文字 */
+.dialog__btn--primary {
+    color: var(--system-active-color, #1e82ff);
+}
+
+.dialog__btn--primary:active:not(:disabled) {
+    color: var(--base-dialog-footer-button-color-text-active);
+}
+
+/* danger 类型：红色文字 */
+.dialog__btn--danger {
+    color: rgba(224, 64, 64, 1);
+}
+
+/* suggested：在 type 基础上加高亮轮廓，不改变色彩语义 */
+/* .dialog__btn--suggested {
+    box-shadow: inset 0 0 0 1.5px var(--system-active-color, #1e82ff);
+} */

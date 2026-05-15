@@ -1,5 +1,4 @@
 #include "audioaiassistantsetting.h"
-#include "private/eaiexecutor.h"
 #include "audiowizard/gui/iatwidget.h"
 #include <dconfigmanager.h>
 
@@ -11,7 +10,7 @@
 #include <QDir>
 #include <QLoggingCategory>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAudioWizard)
 

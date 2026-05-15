@@ -3,7 +3,6 @@
 #include "chatbotpaths.h"
 #include "channelmanager.h"
 #include "chatbotrequesthandler.h"
-#include "session.h"
 
 #include <QFile>
 #include <QDir>
@@ -11,13 +10,18 @@
 #include <QJsonDocument>
 #include <QLoggingCategory>
 
-Q_LOGGING_CATEGORY(logChatBot, "uos-ai.chatbot")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
 using namespace uos_ai::chatbot;
 
-ChatBotService::ChatBotService(QObject *parent)
-    : QObject(parent)
-    , m_channelManager(new ChannelManager(this))
+ChatBotService *ChatBotService::instance()
+{
+    static ChatBotService service;
+    return &service;
+}
+
+ChatBotService::ChatBotService()
+    : m_channelManager(new ChannelManager(this))
     , m_handler(new ChatBotRequestHandler(this))
 {
     connect(&m_watcher, &QFileSystemWatcher::fileChanged,
@@ -31,11 +35,8 @@ ChatBotService::~ChatBotService()
     m_channelManager->stopAll();
 }
 
-void ChatBotService::initialize(const QSharedPointer<Session> &session)
+void ChatBotService::initialize()
 {
-    m_session = session;
-
-    m_handler->setSession(session.get());
     m_handler->setChannelManager(m_channelManager);
 
     loadAndApply();

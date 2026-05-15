@@ -81,12 +81,12 @@ public:
     /**
      * 处理用户请求
      * 处理来自用户的请求，包括文本对话和工具调用
-     * @param {QJsonObject} question - 当前请求内容，包含用户的问题和相关参数
-     * @param {QJsonArray} history - 聊天消息记录，包含之前的对话历史
-     * @param {QJsonObject} params - 扩展参数，包含额外的配置信息
-     * @returns {QJsonObject} 智能体工作流输出的消息记录
+     * @param {ModelMessage} question - 当前请求内容，包含用户的问题和相关参数
+     * @param {QList<ModelMessage>} history - 聊天消息记录，包含之前的对话历史
+     * @param {QVariantHash} params - 扩展参数，包含额外的配置信息
+     * @returns {QVariantHash} 智能体工作流输出的消息记录
      */
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params = {}) override;
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params = {}) override;
 protected:
     /**
      * 调用工具

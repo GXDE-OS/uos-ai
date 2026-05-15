@@ -9,8 +9,6 @@
 #include <QQueue>
 #include <QSet>
 
-class Session;
-
 namespace uos_ai {
 namespace chatbot {
 
@@ -37,7 +35,6 @@ class ChatBotRequestHandler : public QObject
 public:
     explicit ChatBotRequestHandler(QObject *parent = nullptr);
 
-    void setSession(Session *session);
     void setChannelManager(ChannelManager *manager);
 
 private Q_SLOTS:

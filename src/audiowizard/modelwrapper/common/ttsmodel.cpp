@@ -5,7 +5,7 @@
 
 #include <QRegularExpression>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 TtsModel::TtsModel(const QString &id, QObject *parent)
     : QObject(parent)

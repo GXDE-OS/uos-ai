@@ -12,6 +12,7 @@
 #include <QVariant>
 #include <QtGlobal>
 #include <QLoggingCategory>
+#include <QApplication>
 
 Q_DECLARE_LOGGING_CATEGORY(logExternalLLM)
 using namespace uos_ai;
@@ -86,13 +87,13 @@ void ExternalAgentLoader::readAgents()
             qCDebug(logExternalLLM) << "Found" << agentList.size() << "agents in file";
             
             for (const QVariant &one : agentList) {
-                QSharedPointer<ExternalAgent> obj = ExternalAgent::fromJson(one.toHash());
+                QSharedPointer<ExternalAgent> obj = ExternalAgent::fromJson(fileName, one.toHash());
                 if (obj.isNull()) {
                     qCWarning(logExternalLLM) << "Invalid agent configuration in file:" << fileName;
                     continue;
                 }
 
-                allAgents.append(obj);
+                allAgents.insert(obj, fileName);
             }
         }
     }
@@ -100,7 +101,7 @@ void ExternalAgentLoader::readAgents()
     qCInfo(logExternalLLM) << "Total agents loaded:" << allAgents.size();
 }
 
-QList<QSharedPointer<ExternalAgent> > ExternalAgentLoader::agents() const
+QMap<QSharedPointer<ExternalAgent>, QString> ExternalAgentLoader::agents() const
 {
     return allAgents;
 }

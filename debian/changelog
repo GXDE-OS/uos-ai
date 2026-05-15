@@ -1,12 +1,4 @@
-uos-ai (2.13.505gxde2) UNRELEASED; urgency=medium
-
-  * 修复通过 dbus 启动 uos ai 时 UI 显示异常的问题
-  * 补充编译依赖
-  * 增加启动器图标
-
- -- gfdgd_xi <3025613752@qq.com>  Tue, 14 Apr 2026 22:34:19 +0800
-
-uos-ai (2.13.504) unstable; urgency=medium
+uos-ai (3.0.0.601) unstable; urgency=medium
 
   * update uos ai baseline version to V1.3.5
   * fix mic can't use

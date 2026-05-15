@@ -1,7 +1,6 @@
 #include "aiquickdialog.h"
-#include <gui/chat/private/eappaiprompt.h>
-#include <llm/common/networkdefs.h>
-#include <wrapper/serverwrapper.h>
+
+#include "app/serverwrapper.h"
 #include <dbus/fcitxinputserver.h>
 #include <wrapper/wizardwrapper.h>
 #include <wordwizard.h>
@@ -13,6 +12,21 @@
 #include "util.h"
 #include "utils/esystemcontext.h"
 #include "private/baseclipboard.h"
+#include "app/application.h"
+#include "global_define.h"
+#include "global_key_define.h"
+#include "conversation/conversationmanager.h"
+#include "session/sessionmanager.h"
+#include "conversation/conversationrecord.h"
+#include "assistant/assistantmanager.h"
+#include "database/appdatabase.h"
+#include "database/usedmodeltable.h"
+#include "audiocontroler.h"
+#include "services/accountservice/freeaccountservice.h"
+#include "gui/window/windowmanager.h"
+#include "gui/web/webcontext.h"
+#include "gui/web/taskchannel.h"
+#include "model/modelvendor.h"
 
 #include <DWidgetUtil>
 #include <DTitlebar>
@@ -49,7 +63,7 @@ Q_DECLARE_LOGGING_CATEGORY(logWordWizard)
 DWIDGET_USE_NAMESPACE
 DGUI_USE_NAMESPACE
 DCORE_USE_NAMESPACE
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_METATYPE(CustomFunction)
 
@@ -100,6 +114,12 @@ bool AiQuickDialog::almostAllEnglish(QString text) {
 AiQuickDialog::AiQuickDialog(QObject *parent)
     : DAbstractDialog(), m_parent(parent)
 {
+    setAttribute(Qt::WA_DeleteOnClose);
+
+    // Initialize chat session
+    chatSession = uos_ai::SessionManager::instance("uos-ai-wordwizard");
+    connect(chatSession.data(), &uos_ai::SessionManager::sessionEvent, this, &AiQuickDialog::onEvent, Qt::QueuedConnection);
+
     // 初始化自定义功能列表
     m_customFunctionList = WordWizard::kCustomFunctionList;
     // 翻译提示词列表
@@ -108,7 +128,7 @@ AiQuickDialog::AiQuickDialog(QObject *parent)
         tr("traditional Chinese"), // 繁体中文
         tr("Tibetan"), // 藏语
         tr("English"), // 英语
-        tr("Japanese "), // 日语
+        tr("Japanese"), // 日语
         tr("German"), // 德语
         tr("Spanish"), // 西班牙语
         tr("French"), // 法语
@@ -147,15 +167,17 @@ AiQuickDialog::~AiQuickDialog()
     disconnect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &AiQuickDialog::onUpdateSystemTheme);
     disconnect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::fontChanged, this, &AiQuickDialog::onFontChanged);
 
-    disconnect(EAiExec(), &EAiExecutor::uosAiLlmAccountLstChanged, this, &AiQuickDialog::onUosAiLlmAccountLstChanged);
-    disconnect(EAiExec(), &EAiExecutor::llmAccountLstChanged, this, &AiQuickDialog::onLlmAccountLstChanged);
-    disconnect(EAiExec(), &EAiExecutor::netStateChanged, this, &AiQuickDialog::onNetworkStateChanged);
-    EAiExec()->clearAiRequest(this);
-
     disconnect(&FcitxInputServer::getInstance(), &FcitxInputServer::signalFocusIn, this, &AiQuickDialog::onFocusIn);
     disconnect(&FcitxInputServer::getInstance(), &FcitxInputServer::signalFocusOut, this, &AiQuickDialog::onFocusOut);
 
     disconnect(&WizardWrapper::instance(), &WizardWrapper::signalEscEvent, this, &AiQuickDialog::close);
+
+    // Cancel all active sessions
+    for (auto id : chatSession->getAllSessionIds()) {
+        chatSession->cancelSession(id);
+    }
+
+    uos_ai::SessionManager::destroyInstance("uos-ai-wordwizard");
 }
 
 void AiQuickDialog::initUi()
@@ -176,10 +198,10 @@ void AiQuickDialog::initUi()
         m_closeBt->setPalette(closePalette);
     }
 
-    m_logoBt = new DPushButton(this);
-    m_logoBt->setIcon(QIcon::fromTheme("UosAiAssistant"));
+    m_logoBt = new TransButton(this);
+    m_logoBt->setIcon(QIcon::fromTheme("uos-ai-assistant"));
     m_logoBt->setIconSize(QSize(25, 25));
-    m_logoBt->setFixedSize(QSize(25, 25));
+    dynamic_cast<TransButton *>(m_logoBt)->setIconNoPressColor();
 
     m_titleBt = new TransButton(tr("type"), this);
     m_titleBt->setIcon(QIcon::fromTheme("uos-ai-assistant_aidropdown"));
@@ -278,7 +300,6 @@ void AiQuickDialog::initUi()
     DPalette errorPalette = m_errorInfoLabel->palette();
     errorPalette.setColor(DPalette::WindowText, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::Normal, DPalette::Text));
     m_errorInfoLabel->setPalette(errorPalette);
-    DFontSizeManager::instance()->bind(m_errorInfoLabel, DFontSizeManager::T7, QFont::Normal);
     m_errorInfoLabel->setVisible(false);
 
     m_cancelBt = new DPushButton(tr("Cancel"), this);
@@ -405,8 +426,7 @@ void AiQuickDialog::initUi()
     m_autoComboBox->setFixedWidth(180);
     m_autoComboBox->setCurrentIndex(0);
     m_autoComboBox->setVisible(false);
-    //隐藏下拉箭头
-    m_autoComboBox->setStyleSheet("QComboBox::drop-down { border: none; width: 0px; } QComboBox::down-arrow { width: 0px; height: 0px; border: none; }");
+    m_autoComboBox->setEnabled(false);
     m_autoComboBox->installEventFilter(this);
 
     // 语言选择下拉框
@@ -504,7 +524,7 @@ void AiQuickDialog::initUi()
     m_correctAction->setVisible(false);
     m_polishAction->setVisible(false);
 
-#ifdef ENABLE_ASSISTANT
+#ifdef ENABLE_LOCAL_MODEL
     m_knowledgeAction = new QAction(tr("Add to the AI knowledge base"), this);
     m_menu->addAction(m_knowledgeAction);
     m_knowledgeAction->setVisible(false);
@@ -635,14 +655,11 @@ void AiQuickDialog::initConnect()
     this->onUpdateSystemTheme();
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &AiQuickDialog::onUpdateSystemTheme);
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::fontChanged, this, &AiQuickDialog::onFontChanged);
-
-    connect(EAiExec(), &EAiExecutor::uosAiLlmAccountLstChanged, this, &AiQuickDialog::onUosAiLlmAccountLstChanged);
-    connect(EAiExec(), &EAiExecutor::llmAccountLstChanged, this, &AiQuickDialog::onLlmAccountLstChanged);
-    connect(EAiExec(), &EAiExecutor::netStateChanged, this, &AiQuickDialog::onNetworkStateChanged);
-    connect(EAiExec(), &EAiExecutor::sigWebViewLoadFinished, this, &AiQuickDialog::onWebViewLoadFinished);
-    connect(EAiExec(), &EAiExecutor::sigClaimUsageResult,this, [&] (bool ret, const QString &msg) {
-        if (ret) {
+    // 监听 FreeAccountService 的 claimUsageComplete 信号
+    connect(FreeAccountService::instance(), &FreeAccountService::claimUsageComplete, this, [this] (bool ok, const QString &msg) {
+        if (ok && m_curErr != ERROR_TYPE_NONE) {
             m_errorInfoLabel->setVisible(false);
+            m_cancelBt->setVisible(false);
             this->sendAiRequst();
         }
     });
@@ -732,7 +749,12 @@ void AiQuickDialog::showEvent(QShowEvent *event)
 void AiQuickDialog::closeEvent(QCloseEvent *event)
 {
     qCDebug(logWordWizard) << "Closing quick dialog";
-    EAiExec()->cancelAiRequst(m_reqId);
+
+    // Cancel current session
+    if (!m_chatTask.id.isEmpty()) {
+        chatSession->cancelSession(m_chatTask.id);
+    }
+
     this->deleteLater();
     return DAbstractDialog::closeEvent(event);
 }
@@ -796,8 +818,19 @@ bool AiQuickDialog::eventFilter(QObject *watched, QEvent *event)
             return true;
         }
     } else if (watched == m_autoComboBox) {
-        if (event->type() == QEvent::MouseButtonPress || event->type() == QEvent::MouseButtonDblClick) {
-            //不使用enable，直接拦截点击事件，保证两个combobox的颜色一致
+        static bool isNeedShowTip = true;
+        if (event->type() == QEvent::Enter) { // 配置了nofocus窗口属性后，需要手动弹出tooltip
+            isNeedShowTip = true;
+            QTimer::singleShot(1000, this, [&] {
+                if (!isNeedShowTip && m_autoComboBox) {
+                    return;
+                }
+
+                QToolTip::showText(QCursor::pos(), tr("Not clickable"), m_autoComboBox);
+            });
+            return true;
+        } else if (event->type() == QEvent::Leave) {
+            isNeedShowTip = false;
             return true;
         }
     } else if (watched == m_titleBar) {
@@ -873,7 +906,7 @@ void AiQuickDialog::onBtClicked()
     }
 
     if (sender() == m_readBt) {
-        if (!EAiExec()->isAudioOutputAvailable()) {
+        if (!AudioControler::audioOutputDeviceValid()) {
             // 未检测到音频输出设备，请检查后重试
             if (true) {
                 this->showToast(tr("The audio device is not detected, please check and try again."));
@@ -1010,26 +1043,7 @@ void AiQuickDialog::onMenuTriggered(QAction *action)
 
 void AiQuickDialog::onModelReply(int op, QString reply, int err)
 {
-    /*
-    {
-        "message": {
-            "chatType": 0,
-            "content": "xxx"
-        },
-        "stream": true
-    }
-    */
-    if (!reply.isEmpty() && reply.startsWith("{")) {
-        QJsonObject rootJson = QJsonDocument::fromJson(reply.toUtf8()).object();
-        QJsonObject msgJson = rootJson.value("message").toObject();
-        int chatType = msgJson.value("chatType").toInt(ChatAction::ChatTextPlain);
-        reply = msgJson.value("content").toString();
-        if (chatType != ChatAction::ChatTextPlain) {
-            return;
-        }
-    }
-
-    if (err != AIServer::NoError && err != 200) {
+    if (err != GErrorType::NoError) {
         qCWarning(logWordWizard) << "Model reply error:" << err << "reply:" << reply;
     }
 
@@ -1044,12 +1058,12 @@ void AiQuickDialog::onModelReply(int op, QString reply, int err)
      * FREEACCOUNTTEXT2IMAGEUSAGELIMIT = 9003,
      * AccountInvalid = 9004,
      */
-    if (err == AIServer::NoError) {
+    if (err == GErrorType::NoError) {
         m_modelErrCode = err;
         m_curErr = ERROR_TYPE_NONE;
         m_isReplyEnd = false;
         this->putAiReply(reply);
-    } else if (err == 200) { // 流式回答结束符号
+    } else if (err == SessionEvent::SeFinished) { // 流式回答结束符号
         m_modelErrCode = err;
         m_isReplyEnd = true;
         this->putAiReply();
@@ -1063,15 +1077,11 @@ void AiQuickDialog::onModelReply(int op, QString reply, int err)
         m_isReplyEnd = true;
         this->setReplyPartVisible(true);
         err = std::abs(err);
-        if (err == AIServer::FREEACCOUNTUSAGELIMIT || err == AIServer::FREEACCOUNTCHATUSAGELIMIT || err == AIServer::FREEACCOUNTTEXT2IMAGEUSAGELIMIT) {  // 额度用完
+        if (err == GErrorType::ModelChatUsageClaimAgain) {  // 额度用完
             m_curErr     = AiQuickDialog::ERROR_TYPE_ACCOUNT_LIMIT;
             m_curErrInfo = reply;
             this->handleError();
-        } else if (err == AIServer::FREEACCOUNTEXPIRED) {  // 账号过期
-            m_curErr     = AiQuickDialog::ERROR_TYPE_ACCOUNT_EXPIRED;
-            m_curErrInfo = reply;
-            this->handleError();
-        } else if (err == AIServer::AccountInvalid) {  // 账号无效
+        }  else if (err == GErrorType::ModelChatUsageLimitReached) {  // 额度用完，不可领取
             m_curErr     = AiQuickDialog::ERROR_TYPE_ACCOUNT_INVALID;
             m_curErrInfo = reply;
             this->handleError();
@@ -1094,13 +1104,6 @@ void AiQuickDialog::onModelReply(int op, QString reply, int err)
 
 void AiQuickDialog::onUpdateSystemTheme()
 {
-    QString activeColor = DGuiApplicationHelper::instance()->applicationPalette()
-                          .color(DPalette::Normal, DPalette::Highlight)
-                          .name(QColor::HexRgb);
-    if (m_activeColor != activeColor) {
-        m_activeColor = activeColor;
-        handleError();
-    }
     DGuiApplicationHelper::ColorType themeType = DGuiApplicationHelper::instance()->themeType();
     if (m_themeType == themeType) {
         return;
@@ -1232,48 +1235,19 @@ void AiQuickDialog::onUpdateSystemTheme()
 void AiQuickDialog::onFontChanged(const QFont &font)
 {
     this->asyncAdjustSize();
-    handleError();
-}
-
-void AiQuickDialog::onUosAiLlmAccountLstChanged()
-{
-    qCInfo(logWordWizard) << "Llm account list changed";
-    QString modelIdOrig = m_modelId;
-    this->syncLlmAccount();
-    // 账号列表变化了，但是首选model没变
-    if (m_modelId == modelIdOrig) {
-        return;
-    }
-
-    if (m_curErr != ERROR_TYPE_NONE) {
-        m_errorInfoLabel->setVisible(false);
-        m_cancelBt->setVisible(false);
-
-        this->sendAiRequst();
-    }
-}
-
-void AiQuickDialog::onLlmAccountLstChanged(const QString &currentAccountId, const QString &accountLst)
-{
-    this->onUosAiLlmAccountLstChanged();
 }
 
 void AiQuickDialog::onOpenConfigDialog(const QString& link)
 {
     if (link.contains("javascript:void(0)")) {
         qCInfo(logWordWizard) << "Go to configure button clicked";
-        EAiExec()->launchLLMConfigWindow(false, false, false, tr("Model Configuration"));
+        QMetaObject::invokeMethod(aiApp, "showConfig", Qt::QueuedConnection, Q_ARG(int, MgmtWindow::Page::ModelList));
         // BUG-292967（面板脱离窗管置顶，遮住了设置窗口）  打开设置窗口后，关闭面板
         this->close();
     } else if (link.contains("javascript:void(1)")) {
-        qCInfo(logWordWizard) << "Claim Free Credits button clicked";
-        EAiExec()->getFreeCredits(true);
+        qCInfo(logWordWizard) << "Claim Free Credits button clicked, modelId:" << m_modelId;
+        FreeAccountService::instance()->showClaimUsageDlg(m_modelId);
     }
-}
-
-void AiQuickDialog::onNetworkStateChanged(bool isOnline)
-{
-    this->onUosAiLlmAccountLstChanged();
 }
 
 void AiQuickDialog::onWritableStateChanged(bool isTrue)
@@ -1445,25 +1419,14 @@ void AiQuickDialog::setCustomQueryType(const CustomFunction &func)
 
 void AiQuickDialog::sendAiRequst()
 {
-    // AI model
-    // [{\"description\":\"Welcome to UOS AI, the comprehensive assistant of UOS AI system.\",\"displayname\":\"UOS AI\",\"icon\":\"uos-ai\",\"iconPrefix\":\"icons/\",\"id\":\"uos-ai_1723016869400\",\"type\":1},{\"description\":\"UOS System Assistant, answers questions related to using the UOS operating system.\",\"displayname\":\"UOS System Assistant\",\"icon\":\"system-assistant\",\"iconPrefix\":\"icons/\",\"id\":\"uos-system-assistant_1723016869400\",\"type\":2},{\"description\":\"A personal knowledge assistant who can answer questions and generate content based on your personal file data. You can add or delete knowledge on the Settings - Knowledge Base Management page.\",\"displayname\":\"Personal Knowledge Assistant\",\"icon\":\"personal-assistant\",\"iconPrefix\":\"icons/\",\"id\":\"personal-knowledge-assistant_1723016869400\",\"type\":4}]
-    if (false) {
-        QString assisListJson = EAiExec()->queryAssistantList();
-        QJsonDocument jsonDoc = QJsonDocument::fromJson(assisListJson.toUtf8());
-        QJsonArray jsonArr = jsonDoc.array();
-        for (int i = 0; i < jsonArr.size(); i++) {
-            QJsonObject infoJson = jsonArr[i].toObject();
-            if (infoJson["displayname"] == "UOS AI") {
-                EAiExec()->setCurrentAssistantId(infoJson["id"].toString());
-                break;
-            }
-        }
-    }
-
     // 每次发起请求时，复位错误码
     m_curErr = ERROR_TYPE_NONE;
-    EAiExec()->cancelAiRequst(m_reqId);
-    EAiExec()->clearAiRequest(this);
+
+    // 取消之前的会话
+    if (!m_chatTask.id.isEmpty()) {
+        chatSession->cancelSession(m_chatTask.id);
+        m_chatTask.id.clear();
+    }
 
     m_replyCacheMutex.lock();
     m_replyCache.clear();
@@ -1489,8 +1452,162 @@ void AiQuickDialog::sendAiRequst()
     // 规避偶现的AI请求卡住UI线程，至少也要让dialog先show出来
     QTimer::singleShot(100, this, [&] {
         qCInfo(logWordWizard) << "Sending AI request - model:" << m_modelInfo << "query:" << m_systemPrompt;
-        m_reqId = EAiExec()->sendWordWizardRequest(m_modelId, m_systemPrompt, this, QString("onModelReply"));
+        m_reqId = this->sendWordWizardRequest(m_modelId, m_systemPrompt, 0.7, true);
     });
+}
+
+QString AiQuickDialog::sendWordWizardRequest(const QString &llmId, const QString &conversation, qreal temperature, bool stream)
+{
+    if (llmId.isEmpty() || conversation.isEmpty()) {
+        qCWarning(logWordWizard) << "Empty llmId or conversation, skipping request";
+        return QString();
+    }
+
+    qCDebug(logWordWizard) << "Requesting chat text with llmId:" << llmId << "temperature:" << temperature << "stream:" << stream;
+    QVariantHash params = {
+        {STR_KEY_STREAM, QVariant(stream)},
+        {STR_KEY_THINKING, QVariant(false)},
+    };
+
+    QString sessionId = GlobalUtil::generateMsId();
+
+    // 创建会话
+    {
+        auto obj = chatSession->createSession(STR_KEY_UOS_AI_CHAT, sessionId);
+        if (obj.value(STR_KEY_ID).toString() != sessionId) {
+            qCWarning(logWordWizard) << "createSession error: " << llmId << conversation;
+            return QString();
+        }
+    }
+    auto record = convertRequestion(sessionId, conversation);
+    auto runRet = chatSession->runSession(sessionId, llmId, record, params);
+    if (runRet.contains(STR_KEY_ERROR)) {
+        qCWarning(logWordWizard) << "runSession error: " << runRet.value(STR_KEY_MESSAGE).toString();
+        return QString();
+    }
+
+    // 保存当前会话信息到单个 ChatTask 实例
+    m_chatTask.id = sessionId;
+    m_chatTask.stream = stream;
+    m_chatTask.record = record;
+
+    return sessionId;
+}
+
+void AiQuickDialog::onEvent(int event, const QString &id, const QString &json)
+{
+    // 只处理当前会话的事件
+    if (id != m_chatTask.id) {
+        qCDebug(logWordWizard) << "Ignoring event for non-current session:" << id;
+        return;
+    }
+
+    if (event == SessionEvent::SeError) {
+        qCWarning(logWordWizard) << "Session error:" << id << json;
+
+        // Parse error JSON to extract error code and error message
+        int errorCode = -1;
+        QString errorMessage;
+        QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+        if (!doc.isNull() && doc.isObject()) {
+            QJsonObject jsonObj = doc.object();
+            errorCode = jsonObj.value("error").toInt(-1);
+            errorMessage = jsonObj.value("error_message").toString();
+
+            if (!errorMessage.isEmpty()) {
+                this->onModelReply(0, errorMessage, errorCode);
+            } else {
+                this->onModelReply(0, QString(), errorCode);
+            }
+        } else {
+            this->onModelReply(0, QString(), -1);
+        }
+    } else if (event == SessionEvent::SeMessage) {
+        // 流式消息事件：stream=true 时才会收到
+        if (!m_chatTask.stream) {
+            qCDebug(logWordWizard) << "Ignoring SeMessage event for non-stream session:" << id;
+            return;
+        }
+
+        QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+        RenderMessage msg = RenderMessage::fromJson(doc.object());
+        if (msg.type == CntText) {
+            qCDebug(logWordWizard) << "Received stream message:" << msg.data.toString();
+            this->onModelReply(0, msg.data.toString(), GErrorType::NoError);
+        }
+    } else if (event == SessionEvent::SeFinished) {
+        m_chatTask.id.clear();
+        if (m_chatTask.stream) {
+            // 流式模式下，SeFinished 表示流式输出结束，发送空内容表示结束
+            qCDebug(logWordWizard) << "Stream finished for session:" << id;
+            this->onModelReply(0, QString(), SessionEvent::SeFinished);
+        } else {
+            // 非流式模式下，SeFinished 包含完整的回复内容
+            QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+            QString msgId = doc.object().value(STR_KEY_ID).toString();
+            if (m_chatTask.record.isNull()) {
+                qCWarning(logWordWizard) << "No record found for session:" << id;
+                return;
+            }
+
+            auto msgNode = m_chatTask.record->messageAt(msgId);
+            if (msgNode.isNull()) {
+                qCWarning(logWordWizard) << "No message found for ID:" << msgId;
+                return;
+            }
+
+            auto list = msgNode->getMessage();
+            if (list.isEmpty()) {
+                qCWarning(logWordWizard) << "No message content found for ID:" << msgId;
+                return;
+            }
+            QString content;
+            for (const MetaMessage &mm : list.last().content) {
+                if (mm.type == CntText)
+                    content.append(mm.data.toString());
+            }
+
+            qCDebug(logWordWizard) << "Received finished message (non-stream):" << content;
+            this->onModelReply(0, content, GErrorType::NoError);
+        }
+    }
+}
+
+QSharedPointer<uos_ai::ConversationRecord> AiQuickDialog::convertRequestion(const QString &id, const QString &json)
+{
+    QSharedPointer<uos_ai::ConversationRecord> record(new uos_ai::ConversationRecord(id));
+    uos_ai::MessageNodePtr msgNode(new uos_ai::MessageNode);
+    msgNode->setId(GlobalUtil::generateMsId());
+    msgNode->setRole(MrUser);
+
+    record->addMessage("", msgNode);
+    record->setCurrentMessage(msgNode->getId());
+
+    const QJsonDocument &document = QJsonDocument::fromJson(json.toUtf8());
+    if (document.isArray()) {
+        for ( QJsonValue val : document.array()) {
+            if (!val.isObject())
+                continue;
+
+            ModelMessage modelMsg;
+            modelMsg.role = val.toObject().value(STR_KEY_ROLE).toString();
+            MetaMessage metaMsg;
+            metaMsg.type = CntText;
+            metaMsg.data = val.toObject().value(STR_KEY_CONTENT).toString();
+            modelMsg.content.append(metaMsg);
+            msgNode->appendMessage(modelMsg);
+        }
+    } else {
+        ModelMessage modelMsg;
+        modelMsg.role = STR_KEY_USER;
+        MetaMessage metaMsg;
+        metaMsg.type = CntText;
+        metaMsg.data = json;
+        modelMsg.content.append(metaMsg);
+        msgNode->appendMessage(modelMsg);
+    }
+
+    return record;
 }
 
 void AiQuickDialog::putAiReply(QString reply)
@@ -1548,78 +1665,59 @@ void AiQuickDialog::smoothEachWord()
 
 void AiQuickDialog::continueDialog()
 {
-    Conversations conv;
+    if (m_customFunctionList[m_queryType].defaultFunctionType == WordWizard::WIZARD_TYPE_TRANSLATE) {
+        m_chatTask.record->setAssistantId(STR_KEY_UOS_AI_TRANSLATION);
+    } else {
+        m_chatTask.record->setAssistantId(STR_KEY_UOS_AI_GENERIC);
+    }
+    m_chatTask.record->setTitle(m_query);
+    m_chatTask.record->setIntroduction(m_reply);
+    m_chatTask.record->setModelId(m_modelIdBak);
     // question
-    conv.question.chatType       = ChatAction::ChatTextPlain;
-    conv.question.reqId          = m_reqId;
-    conv.question.content        = m_systemPrompt;
-    conv.question.displayContent = m_query;
-    conv.question.displayHash    = QString(QCryptographicHash::hash(conv.question.displayContent.toUtf8(), QCryptographicHash::Md5).toHex());
-    conv.question.llmIcon        = m_modelIconBak;
-    conv.question.llmName        = m_modelNameBak;
-    conv.question.llmId          = m_modelIdBak;
-    conv.question.errCode        = 0;
-    conv.question.errInfo        = "{\"info\":\"\", \"exec\":\"\"}";
-    conv.question.isRetry        = false;
-
-    QJsonObject rootJson;
-    if (m_customFunctionList[m_queryType].defaultFunctionType != WordWizard::WIZARD_TYPE_TRANSLATE) {
-        rootJson.insert("type", ExtentionType::WordSelection);
-        rootJson.insert("label", QString("[%1]\n").arg(m_menuLabel));
-    } else {
-        rootJson.insert("type", ExtentionType::None);
+    MessageNodePtr question = m_chatTask.record->messageAt(m_chatTask.record->currentMessage());
+    if (question) {
+        question->setModelName(m_modelNameBak);
+        question->setModelId(m_modelIdBak);
+        RenderMessage renderMsg;
+        renderMsg.type = CntText;
+        renderMsg.data = m_query;
+        question->appendRender(renderMsg);
     }
-    rootJson.insert("prompt", m_systemPrompt);
-    QJsonArray jsonArr;
-    jsonArr.append(rootJson);
-    conv.question.extention      = QString(QJsonDocument(jsonArr).toJson(QJsonDocument::Compact));
-
     // answer
-    ChatChunk answer;
-
-    QJsonArray displayContentArray;
-    QJsonObject dialogContent;
-    dialogContent.insert("content", m_reply);
-    dialogContent.insert("chatType", ChatAction::ChatTextPlain);
-    displayContentArray.append(dialogContent);
-
-    answer.chatType       = ChatAction::ChatTextPlain;
-    answer.reqId          = m_reqId;
-    answer.content        = m_reply;
-    answer.displayContent = QString(QJsonDocument(displayContentArray).toJson(QJsonDocument::Compact));
-    answer.displayHash    = QString(QCryptographicHash::hash(answer.displayContent.toUtf8(), QCryptographicHash::Md5).toHex());
-    answer.llmIcon        = m_modelIconBak;
-    answer.llmName        = m_modelNameBak;
-    answer.llmId          = m_modelIdBak;
-    answer.errCode        = m_modelErrCode;
-    answer.errInfo        = "{\"info\":\"\", \"exec\":\"\"}";
-    answer.isRetry        = false;
-    answer.extention      = "[]";
-    answer.knowledgeSearchStatus = false;
-
-    conv.answers.append(answer);
-
-    if (EAiExec()->showChatWindow()) { // 等待前端渲染完成后再传，下一步会接收信号判断是否渲染完成
-        m_isWebviewOk = false;
-        QTimer::singleShot(2000, nullptr, [&, conv] {
-            if (m_isWebviewOk) {
-                qCInfo(logWordWizard) << "webview is ok!";
-                if (m_customFunctionList[m_queryType].defaultFunctionType == WordWizard::WIZARD_TYPE_TRANSLATE) {
-                   EAiExec()->wordWizardContinueChat(conv, AssistantType::AI_TRANSLATION);
-                } else {
-                   EAiExec()->wordWizardContinueChat(conv, AssistantType::AI_TEXT_PROCESSING);
-                }
-            }
-            this->close();
-        });
-    } else {
-        if (m_customFunctionList[m_queryType].defaultFunctionType == WordWizard::WIZARD_TYPE_TRANSLATE) {
-           EAiExec()->wordWizardContinueChat(conv, AssistantType::AI_TRANSLATION);
-        } else {
-           EAiExec()->wordWizardContinueChat(conv, AssistantType::AI_TEXT_PROCESSING);
-        }
-        this->close();
+    MessageNodePtr answer = m_chatTask.record->messageAt(question->getCurNext());
+    if (answer) {
+        answer->setModelId(m_modelIdBak);
+        answer->setModelName(m_modelNameBak);
+        RenderMessage renderMsg;
+        renderMsg.type = CntText;
+        renderMsg.data = m_reply;
+        answer->appendRender(renderMsg);
     }
+    // 保存当前对话记录
+    if (m_chatTask.record) {
+        m_chatTask.record->saveToFile(ConvMgr()->getConversationFilePath(m_chatTask.record->id()));;
+        ConvMgr()->addOrUpdateIndex(m_chatTask.record);
+    } else {
+        qCWarning(logWordWizard) << "No valid conversation record to save";
+    }
+
+    if (!WmIns()->isWindowExist() || !WmIns()->isActiveWindow()) {
+        WmIns()->showWindow(WmIns()->currentMode());
+    }
+
+    if (m_customFunctionList[m_queryType].defaultFunctionType == WordWizard::WIZARD_TYPE_TRANSLATE) {
+        qCInfo(logWordWizard) << "changeToConversation:"
+                              << "assistantId=" << STR_KEY_UOS_AI_TRANSLATION
+                              << "conversationId=" << m_chatTask.record->id();
+
+        WmIns()->context()->taskCh->changeToConversation(STR_KEY_UOS_AI_TRANSLATION, m_chatTask.record->id());
+    } else {
+        qCInfo(logWordWizard) << "changeToConversation:"
+                              << "assistantId=" << STR_KEY_UOS_AI_GENERIC
+                              << "conversationId=" << m_chatTask.record->id();
+        WmIns()->context()->taskCh->changeToConversation(STR_KEY_UOS_AI_GENERIC, m_chatTask.record->id());
+    }
+    this->close();
 }
 
 void AiQuickDialog::adjustReplyTextEditSize()
@@ -1643,45 +1741,74 @@ void AiQuickDialog::adjustReplyTextEditSize()
 
 void AiQuickDialog::syncLlmAccount()
 {
-    QString modelListJson = EAiExec()->queryUosAiLLMAccountList();
-    m_modelId             = EAiExec()->uosAiLLMAccountId();
-    int modelType = 0;
-    qCInfo(logWordWizard) << "modelId:" << m_modelId << "modelList:" << modelListJson;
-    // [{\"displayname\":\"ERNIE-Bot（百度千帆）-试用账号\",\"icon\":\"/tmp/uos-ai-assistant-WaznkA/baidu.svg\",\"id\":\"3x9Z1LXhJ1snR+1lAILd3hjyJmg4uWKTA15eMBo5PGOwlyfCpNgy0dsdl7GAM30s\",\"llmname\":\"ERNIE 3.5\",\"model\":20,\"type\":1},{\"displayname\":\"uos-baidu\",\"icon\":\"/tmp/uos-ai-assistant-WaznkA/baidu.svg\",\"id\":\"9a4348121e0d46c4a485af3f56817519\",\"llmname\":\"ERNIE 3.5\",\"model\":20,\"type\":0}]
-    QJsonDocument jsonDoc = QJsonDocument::fromJson(modelListJson.toUtf8());
-    QJsonArray jsonArr = jsonDoc.array();
+    // 根据当前功能类型选择相应的 assistant
+    QString assistantId = STR_KEY_UOS_AI_GENERIC; // 默认使用通用助手
+    if (m_customFunctionList[m_queryType].defaultFunctionType == WordWizard::WIZARD_TYPE_TRANSLATE) {
+        assistantId = STR_KEY_UOS_AI_TRANSLATION;
+    }
+
+    // 获取可用模型列表
+    auto models = AssistantMgr->availableModels(assistantId);
+
+    // 使用数据库查询当前模型
+    auto *db = AppDatabase::instance();
+    UsedModelTable usedModel = UsedModelTable::getByAssistant(db, assistantId);
+
+    QString targetModelId;
     bool isFound = false;
-    if (!jsonArr.isEmpty()) { // no model
-        for (int i = 0; i < jsonArr.size(); i++) {
-            QJsonObject infoJson = jsonArr[i].toObject();
-            if (infoJson["id"].toString() == m_modelId) {
+
+    if (!usedModel.assistant().isEmpty()) {
+        // 从数据库中找到了当前模型
+        targetModelId = usedModel.model();
+    }
+
+    // 如果数据库中有记录，尝试查找匹配的模型
+    if (!targetModelId.isEmpty()) {
+        for (const ModelAccountPtr &info : models) {
+            if (info->id == targetModelId) {
                 isFound = true;
-                m_modelName = infoJson["displayname"].toString();
-                m_modelInfo = tr("Current model: ") + infoJson["displayname"].toString();
-                m_modelIcon = infoJson["icon"].toString();
-                modelType = infoJson["type"].toInt();
+                m_modelId = info->id;
+                m_modelName = info->model.name;
+                m_modelInfo = tr("Current model: ") + info->model.name;
+                m_modelIcon = info->model.icon;
+                qCInfo(logWordWizard) << "Found current model from database:" << m_modelId << m_modelName;
                 break;
             }
         }
+    }
 
-        // m_modelId没找到，使用第一个
-        if (!isFound) {
-            isFound = true;
-            QJsonObject infoJson = jsonArr[0].toObject();
-            m_modelId   = infoJson["id"].toString();
-            m_modelName = infoJson["displayname"].toString();
-            m_modelInfo = tr("Current model: ") + infoJson["displayname"].toString();
-            m_modelIcon = infoJson["icon"].toString();
-            modelType = infoJson["type"].toInt();
-
-            //m_modelInfoLabel->setVisible(true);
-            //m_modelIconLabel->setVisible(true);
+    // 没有找到当前模型，使用与 AssistantChannel::getCurrentModel 相同的逻辑选择默认模型
+    if (!isFound) {
+        // 优先选择 uos_ai 模型
+        for (const ModelAccountPtr &info : models) {
+            if (ModelVendor::isUosProvider(info)) {
+                isFound = true;
+                m_modelId = info->id;
+                m_modelName = info->model.name;
+                m_modelInfo = tr("Current model: ") + info->model.name;
+                m_modelIcon = info->model.icon;
+                qCInfo(logWordWizard) << "Using uos_ai model as default:" << m_modelId << m_modelName;
+                break;
+            }
         }
     }
 
+    // 如果没有 uos_ai 模型，使用第一个可用模型
+    if (!isFound && !models.isEmpty()) {
+        isFound = true;
+        const ModelAccountPtr &info = models.first();
+        m_modelId = info->id;
+        m_modelName = info->model.name;
+        m_modelInfo = tr("Current model: ") + info->model.name;
+        m_modelIcon = info->model.icon;
+        qCInfo(logWordWizard) << "Using first available model as default:" << m_modelId << m_modelName;
+    }
+
+    // 没有可用模型
     if (!isFound) {
         m_modelId.clear();
         m_modelInfo = tr("Currently no model");
+        qCWarning(logWordWizard) << "No available models found for assistant:" << assistantId;
     }
 
     this->asyncAdjustSize();
@@ -1691,18 +1818,27 @@ void AiQuickDialog::handleError()
 {
     if (m_curErr == AiQuickDialog::ERROR_TYPE_NO_MODEL || m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_LIMIT || m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_EXPIRED || m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_INVALID) {
         this->enableReplyFunBt(false);
-        if (!m_replyBak.isEmpty() && m_curErr != AiQuickDialog::ERROR_TYPE_ACCOUNT_LIMIT) {
+        if (!m_replyBak.isEmpty()) {
             m_cancelBt->setVisible(true);
         }
-        const QColor &color(m_activeColor);
+        const QColor &color = DPaletteHelper::instance()->palette(m_errorInfoLabel).color(DPalette::Normal, DPalette::Highlight);
         m_errorInfoLabel->setText(m_curErrInfo
-                                  + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2></a>")
+                                  + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2<img src=\"%3\"></a>")
                                   .arg(color.name())
-                                  .arg(tr("Go to configure"))
-                                  + QString("<a href=\"javascript:void(1)\" style=\"color:%1; text-decoration: none;\"> %2></a>")
+                                  .arg(tr("Go to configure  "))
+                                  .arg(GUtils::generateImage(m_errorInfoLabel, color, QSize(QFontMetrics(m_errorInfoLabel->font()).height() / 2, QFontMetrics(m_errorInfoLabel->font()).height() / 2), QStyle::PE_IndicatorArrowRight))
+                                  + QString("<a href=\"javascript:void(1)\" style=\"color:%1; text-decoration: none;\"> %2<img src=\"%3\"></a>")
                                   .arg(color.name())
-                                  .arg(tr("Claim Free Credits")));
+                                  .arg(tr("Claim Free Credits  "))
+                                  .arg(GUtils::generateImage(m_errorInfoLabel, color, QSize(QFontMetrics(m_errorInfoLabel->font()).height() / 2, QFontMetrics(m_errorInfoLabel->font()).height() / 2), QStyle::PE_IndicatorArrowRight)));
+        if (m_curErr == AiQuickDialog::ERROR_TYPE_ACCOUNT_INVALID) {
+            m_errorInfoLabel->setText(m_curErrInfo
+                                      + QString("<a href=\"javascript:void(0)\" style=\"color:%1; text-decoration: none;\"> %2<img src=\"%3\"></a>")
+                                      .arg(color.name())
+                                      .arg(tr("Go to configure  "))
+                                      .arg(GUtils::generateImage(m_errorInfoLabel, color, QSize(QFontMetrics(m_errorInfoLabel->font()).height() / 2, QFontMetrics(m_errorInfoLabel->font()).height() / 2), QStyle::PE_IndicatorArrowRight)));
 
+        }
         m_errorInfoLabel->setFixedHeight(m_errorInfoLabel->sizeHint().height());
         m_replyTextEdit->setVisible(false);
         m_errorInfoLabel->setVisible(true);
@@ -1783,23 +1919,14 @@ void AiQuickDialog::runOCRProcessByPath(int type, bool isCustom, const QString &
         return;
     }
 
-    if (false) {
-        QString assisListJson = EAiExec()->queryAssistantList();
-        QJsonDocument jsonDoc = QJsonDocument::fromJson(assisListJson.toUtf8());
-        QJsonArray jsonArr = jsonDoc.array();
-        for (int i = 0; i < jsonArr.size(); i++) {
-            QJsonObject infoJson = jsonArr[i].toObject();
-            if (infoJson["displayname"] == "UOS AI") {
-                EAiExec()->setCurrentAssistantId(infoJson["id"].toString());
-                break;
-            }
-        }
-    }
-
     // 每次发起请求时，复位错误码
     m_curErr = ERROR_TYPE_NONE;
-    EAiExec()->cancelAiRequst(m_reqId);
-    EAiExec()->clearAiRequest(this);
+
+    // 取消之前的会话
+    if (!m_chatTask.id.isEmpty()) {
+        chatSession->cancelSession(m_chatTask.id);
+        m_chatTask.id.clear();
+    }
 
     m_replyCacheMutex.lock();
     m_replyCache.clear();
@@ -1904,12 +2031,13 @@ void AiQuickDialog::runOCRProcessByPath(int type, bool isCustom, const QString &
         m_inOCRLabel->setVisible(false);
         m_inOCRMovie->stop();
         m_queryTextEdit->setFullText(m_query);
+        this->syncLlmAccount();
 
         // 规避偶现的AI请求卡住UI线程，至少也要让dialog先show出来
         if (allResults != "") {
             QTimer::singleShot(100, this, [&] {
                 qCInfo(logWordWizard) << "Sending AI request - model:" << m_modelInfo << "query:" << m_systemPrompt;
-                m_reqId = EAiExec()->sendWordWizardRequest(m_modelId, m_systemPrompt, this, QString("onModelReply"));
+                m_reqId = this->sendWordWizardRequest(m_modelId, m_systemPrompt, 0.7, true);
             });
         }
         // 清理进程对象防止内存泄漏

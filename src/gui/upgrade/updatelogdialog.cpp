@@ -34,7 +34,7 @@ void UpdateLogDialog::initUI()
 {
     setFixedSize(700, 540);
     setDisplayPosition(DisplayPosition::Center);
-    QIcon titleIcon(QIcon::fromTheme(kApplicationIconName));
+    QIcon titleIcon(QIcon::fromTheme(getApplicationIconName()));
     setIcon(titleIcon);
 
     DLabel *titleLabel = new DLabel(tr("UOS AI Assistant Update Log"), this);

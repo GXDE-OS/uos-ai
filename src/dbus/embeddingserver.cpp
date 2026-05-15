@@ -6,6 +6,7 @@
 #include <QJsonArray>
 #include <QJsonObject>
 #include <QLoggingCategory>
+#include <QJsonDocument>
 
 Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
@@ -92,9 +93,9 @@ bool EmbeddingServer::deleteVectorIndex(const QStringList &files)
     return result;
 }
 
-QStringList EmbeddingServer::searchVecor(const QString &query, int topK, AssistantType type)
+QStringList EmbeddingServer::searchVecor(const QString &query, int topK, bool sys)
 {
-    QString result = embeddingSearch(query, topK, type);
+    QString result = embeddingSearch(query, topK, sys);
     QStringList contents;
     QJsonObject resultObj = QJsonDocument::fromJson(result.toUtf8()).object();
     for (auto res : resultObj["result"].toArray()) {
@@ -104,20 +105,29 @@ QStringList EmbeddingServer::searchVecor(const QString &query, int topK, Assista
     return contents;
 }
 
-QString EmbeddingServer::embeddingSearch(const QString &query, int topK, AssistantType type)
+QString EmbeddingServer::embeddingSearch(const QString &query, int topK, bool sys)
 {
     QDBusMessage reply;
-    embedInterface->setTimeout(60000);
-    if (AssistantType::UOS_SYSTEM_ASSISTANT == type || AssistantType::DEEPIN_SYSTEM_ASSISTANT == type) {
-        reply = embedInterface->call("Search", QVariant(kSystemAssistantEmbedding), QVariant(query), QVariant(topK));
+    bool callOk = false;
+    if (sys) {
+        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(kSystemAssistantEmbedding), QVariant(query), QVariant(topK));
+        pendingCall.waitForFinished();
+        reply = pendingCall.reply();
+        callOk = pendingCall.isValid();
     } else {
-        reply = embedInterface->call("Search", QVariant(appid), QVariant(query), QVariant(topK));
+        QDBusPendingCall pendingCall = embedInterface->asyncCall("Search", QVariant(appid), QVariant(query), QVariant(topK));
+        pendingCall.waitForFinished();
+        reply = pendingCall.reply();
+        callOk = pendingCall.isValid();
     }
 
-    if (reply.type() == QDBusMessage::MessageType::ErrorMessage) {
-        return QString();
+    if (callOk) {
+        qCDebug(logDBus) << "Embedding search completed successfully";
+    } else {
+        qCWarning(logDBus) << "Embedding search failed:" << reply.errorMessage();
     }
 
+    //json格式检索结果
     return reply.arguments().at(0).toString();
 }
 

@@ -6,6 +6,8 @@
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
+using namespace uos_ai;
+DGUI_USE_NAMESPACE
 
 BackgroundFrame::BackgroundFrame(QWidget *parent)
     : DFrame(parent)

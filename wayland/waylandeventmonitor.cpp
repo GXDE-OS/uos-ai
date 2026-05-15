@@ -4,7 +4,7 @@
 #include <QPoint>
 #include <QLoggingCategory>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 DGUI_USE_NAMESPACE
 
 Q_DECLARE_LOGGING_CATEGORY(logWayland)

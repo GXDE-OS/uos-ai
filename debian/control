@@ -10,7 +10,6 @@ Build-Depends:
  libdocparser-dev,
  libjwt-dev,
  libssl-dev,
- libyaml-cpp-dev,
  libfcitx5core-dev,
  libfcitx5utils-dev,
  fcitx5-modules-dev,
@@ -36,6 +35,7 @@ Build-Depends:
  qtbase5-dev,
  libdtkwidget-dev,
  gxde-desktop-base,
+ libyaml-cpp-dev,
  libprotobuf-dev,
  protobuf-compiler,
  libqt5websockets5-dev

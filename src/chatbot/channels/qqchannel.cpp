@@ -1,4 +1,6 @@
 #include "qqchannel.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 #include <QNetworkRequest>
 #include <QNetworkReply>
@@ -7,8 +9,9 @@
 #include <QDateTime>
 #include <QLoggingCategory>
 
-Q_LOGGING_CATEGORY(logQQ, "uos-ai.chatbot.qq")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
+using namespace uos_ai;
 using namespace uos_ai::chatbot;
 
 const char *QQChannel::kTokenUrl   = "https://bots.qq.com/app/getAppAccessToken";
@@ -44,11 +47,11 @@ QQChannel::QQChannel(QObject *parent)
 
 void QQChannel::start(const QJsonObject &config)
 {
-    m_appId  = config.value("app_id").toString();
-    m_secret = config.value("token").toString();
+    m_appId  = config.value(STR_KEY_APP_ID).toString();
+    m_secret = config.value(STR_KEY_TOKEN).toString();
 
     if (m_appId.isEmpty() || m_secret.isEmpty()) {
-        qCWarning(logQQ) << "Missing app_id or token";
+        qCWarning(logChatBot) << "Missing app_id or token";
         return;
     }
 
@@ -99,7 +102,7 @@ void QQChannel::fetchToken()
         return;
 
     m_tokenState = TokenState::Refreshing;
-    qCInfo(logQQ) << "Fetching QQ access token...";
+    qCInfo(logChatBot) << "Fetching QQ access token...";
 
     QNetworkRequest req((QUrl(kTokenUrl)));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
@@ -112,7 +115,7 @@ void QQChannel::fetchToken()
     connect(reply, &QNetworkReply::finished, this, [this, reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logQQ) << "Token fetch failed:" << reply->errorString();
+            qCWarning(logChatBot) << "Token fetch failed:" << reply->errorString();
             m_tokenState = TokenState::Invalid;
             scheduleReconnect();
             return;
@@ -124,11 +127,11 @@ void QQChannel::fetchToken()
 void QQChannel::onTokenReply(const QByteArray &data)
 {
     QJsonObject obj = QJsonDocument::fromJson(data).object();
-    QString token   = obj.value("access_token").toString();
-    int expiresIn   = obj.value("expires_in").toString("600").toInt();
+    QString token   = obj.value(STR_KEY_ACCESS_TOKEN).toString();
+    int expiresIn   = obj.value(STR_KEY_EXPIRES_IN).toString("600").toInt();
 
     if (token.isEmpty()) {
-        qCWarning(logQQ) << "Invalid token response:" << data;
+        qCWarning(logChatBot) << "Invalid token response:" << data;
         m_tokenState = TokenState::Invalid;
         scheduleReconnect();
         return;
@@ -137,7 +140,7 @@ void QQChannel::onTokenReply(const QByteArray &data)
     m_accessToken  = token;
     m_tokenExpiry  = QDateTime::currentSecsSinceEpoch() + expiresIn - 60;
     m_tokenState   = TokenState::Valid;
-    qCInfo(logQQ) << "Token obtained, expires in" << expiresIn << "s";
+    qCInfo(logChatBot) << "Token obtained, expires in" << expiresIn << "s";
 
     // 在过期前 60s 预刷新
     m_tokenTimer->setInterval((expiresIn - 120) * 1000);
@@ -164,7 +167,7 @@ void QQChannel::flushPendingTokenActions()
 
 void QQChannel::fetchGateway()
 {
-    qCInfo(logQQ) << "Fetching QQ gateway URL...";
+    qCInfo(logChatBot) << "Fetching QQ gateway URL...";
 
     QNetworkRequest req((QUrl(kGatewayUrl)));
     req.setRawHeader("Authorization",
@@ -174,7 +177,7 @@ void QQChannel::fetchGateway()
     connect(reply, &QNetworkReply::finished, this, [this, reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logQQ) << "Gateway fetch failed:" << reply->errorString();
+            qCWarning(logChatBot) << "Gateway fetch failed:" << reply->errorString();
             scheduleReconnect();
             return;
         }
@@ -185,15 +188,15 @@ void QQChannel::fetchGateway()
 void QQChannel::onGatewayReply(const QByteArray &data)
 {
     QJsonObject obj = QJsonDocument::fromJson(data).object();
-    QString wsUrl   = obj.value("url").toString();
+    QString wsUrl   = obj.value(STR_KEY_URL).toString();
 
     if (wsUrl.isEmpty()) {
-        qCWarning(logQQ) << "Empty gateway URL:" << data;
+        qCWarning(logChatBot) << "Empty gateway URL:" << data;
         scheduleReconnect();
         return;
     }
 
-    qCInfo(logQQ) << "Gateway URL:" << wsUrl;
+    qCInfo(logChatBot) << "Gateway URL:" << wsUrl;
     m_ws->open(QUrl(wsUrl));
 }
 
@@ -204,14 +207,14 @@ void QQChannel::connectWs()
 
 void QQChannel::onWsConnected()
 {
-    qCInfo(logQQ) << "QQ WebSocket connected (waiting for Hello)";
+    qCInfo(logChatBot) << "QQ WebSocket connected (waiting for Hello)";
     // 等待 op:10 Hello，在 onWsTextMessageReceived 中处理
 }
 
 void QQChannel::onWsDisconnected()
 {
     m_heartbeatTimer->stop();
-    qCInfo(logQQ) << "QQ WebSocket disconnected";
+    qCInfo(logChatBot) << "QQ WebSocket disconnected";
 
     if (m_running)
         scheduleReconnect();
@@ -219,14 +222,14 @@ void QQChannel::onWsDisconnected()
 
 void QQChannel::onWsError(QAbstractSocket::SocketError)
 {
-    qCWarning(logQQ) << "QQ WebSocket error:" << m_ws->errorString();
+    qCWarning(logChatBot) << "QQ WebSocket error:" << m_ws->errorString();
 }
 
 void QQChannel::scheduleReconnect()
 {
     if (!m_running)
         return;
-    qCInfo(logQQ) << "Scheduling reconnect in" << kReconnectInterval << "ms";
+    qCInfo(logChatBot) << "Scheduling reconnect in" << kReconnectInterval << "ms";
     m_reconnectTimer->start(kReconnectInterval);
 }
 
@@ -245,7 +248,7 @@ void QQChannel::onWsTextMessageReceived(const QString &message)
 
     switch (op) {
     case 10: { // Hello
-        qCInfo(logQQ) << "Received Hello, authenticating...";
+        qCInfo(logChatBot) << "Received Hello, authenticating...";
         if (!m_sessionId.isEmpty() && m_canResume)
             sendResume();
         else
@@ -260,7 +263,7 @@ void QQChannel::onWsTextMessageReceived(const QString &message)
         m_ws->close();
         break;
     case 9: // Invalid Session
-        qCWarning(logQQ) << "Invalid session, clearing state";
+        qCWarning(logChatBot) << "Invalid session, clearing state";
         m_sessionId.clear();
         m_lastSeq  = 0;
         m_canResume = false;
@@ -280,9 +283,9 @@ void QQChannel::handleDispatch(const QJsonObject &msg)
     QJsonObject d = msg.value("d").toObject();
 
     if (t == QStringLiteral("READY")) {
-        m_sessionId = d.value("session_id").toString();
+        m_sessionId = d.value(STR_KEY_SESSION_ID).toString();
         m_canResume = true;
-        qCInfo(logQQ) << "QQ Bot ready, session:" << m_sessionId;
+        qCInfo(logChatBot) << "QQ Bot ready, session:" << m_sessionId;
         return;
     }
 
@@ -299,7 +302,7 @@ void QQChannel::handleMessage(const QJsonObject &d, const QString &convType)
 {
     // 提取发送者
     QJsonObject author = d.value("author").toObject();
-    QString senderId   = author.value("id").toString();
+    QString senderId   = author.value(STR_KEY_ID).toString();
     if (senderId.isEmpty())
         senderId = author.value("user_openid").toString();
     if (senderId.isEmpty())
@@ -315,13 +318,13 @@ void QQChannel::handleMessage(const QJsonObject &d, const QString &convType)
         conversationId = senderId;   // user: 用 openid 作为 conv id
 
     // 存储 msg_id 供被动回复
-    QString msgId = d.value("id").toString();
+    QString msgId = d.value(STR_KEY_ID).toString();
     if (!msgId.isEmpty() && !conversationId.isEmpty()) {
         m_lastMsgIds[conversationId] = { msgId, QDateTime::currentSecsSinceEpoch() };
     }
 
     // 提取内容（去除 @bot 前缀）
-    QString content = d.value("content").toString().trimmed();
+    QString content = d.value(STR_KEY_CONTENT).toString().trimmed();
     // QQ @ 消息 content 含 "<@bot_id> " 前缀，去掉
     if (content.startsWith('<')) {
         int end = content.indexOf('>');
@@ -330,12 +333,12 @@ void QQChannel::handleMessage(const QJsonObject &d, const QString &convType)
     }
 
     QJsonObject payload;
-    payload["platform"]   = platformName();
-    payload["message_id"] = msgId;
-    payload["sender"]     = QJsonObject{{"id", senderId}, {"name", "User"}, {"type", "user"}};
-    payload["conversation"] = QJsonObject{{"id", conversationId}, {"type", convType}};
-    payload["content"]    = QJsonObject{{"type", "text"}, {"text", content}};
-    payload["timestamp"]  = QDateTime::currentSecsSinceEpoch();
+    payload[STR_KEY_PLATFORM]     = platformName();
+    payload[STR_KEY_MESSAGE_ID]   = msgId;
+    payload[STR_KEY_SENDER]       = QJsonObject{{STR_KEY_ID, senderId}, {STR_KEY_NAME, "User"}, {STR_KEY_TYPE, STR_KEY_USER}};
+    payload[STR_KEY_CONVERSATION] = QJsonObject{{STR_KEY_ID, conversationId}, {STR_KEY_TYPE, convType}};
+    payload[STR_KEY_CONTENT]      = QJsonObject{{STR_KEY_TYPE, STR_KEY_TEXT}, {STR_KEY_TEXT, content}};
+    payload[STR_KEY_TIMESTAMP]    = QDateTime::currentSecsSinceEpoch();
 
     emit messageReceived(payload);
 }
@@ -350,7 +353,7 @@ void QQChannel::sendIdentify()
         {"shard",   QJsonArray{0, 1}}
     };
     sendWsJson(payload);
-    qCInfo(logQQ) << "Sent Identify (intents=" << kIntents << ")";
+    qCInfo(logChatBot) << "Sent Identify (intents=" << kIntents << ")";
 }
 
 void QQChannel::sendResume()
@@ -363,7 +366,7 @@ void QQChannel::sendResume()
         {"seq",        m_lastSeq}
     };
     sendWsJson(payload);
-    qCInfo(logQQ) << "Sent Resume (session=" << m_sessionId << ", seq=" << m_lastSeq << ")";
+    qCInfo(logChatBot) << "Sent Resume (session=" << m_sessionId << ", seq=" << m_lastSeq << ")";
 }
 
 void QQChannel::sendHeartbeat()
@@ -403,8 +406,8 @@ void QQChannel::doSendMessage(const QString &to, const QString &content,
                      QStringLiteral("QQBot %1").arg(m_accessToken).toUtf8());
 
     QJsonObject body;
-    body["content"]  = content;
-    body["msg_type"] = 0;
+    body[STR_KEY_CONTENT] = content;
+    body["msg_type"]      = 0;
 
     // 被动回复：带 msg_id（5 分钟内有效）
     if (m_lastMsgIds.contains(to)) {
@@ -420,7 +423,7 @@ void QQChannel::doSendMessage(const QString &to, const QString &content,
     connect(reply, &QNetworkReply::finished, this, [reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logQQ) << "Send failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Send failed:" << reply->errorString()
                              << reply->readAll();
     });
 }

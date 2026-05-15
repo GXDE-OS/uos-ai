@@ -1,6 +1,6 @@
 #ifndef BASECLIPBOARD_H
 #define BASECLIPBOARD_H
-#include "uosai_global.h"
+
 
 #include <QObject>
 

@@ -5,7 +5,7 @@
 #ifndef PARSERFACTORY_H
 #define PARSERFACTORY_H
 
-#include "uosai_global.h"
+
 #include "abstractfileparser.h"
 
 #include <QObject>
@@ -16,7 +16,7 @@
 
 #include <functional>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief Factory for creating and managing file parsers
@@ -179,6 +179,6 @@ private:
     mutable QMutex m_mutex;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // PARSERFACTORY_H

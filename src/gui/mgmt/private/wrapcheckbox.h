@@ -6,8 +6,7 @@
 #include <DCheckBox>
 #include <DLabel>
 
-DWIDGET_USE_NAMESPACE
-
+namespace uos_ai {
 class WrapCheckBox : public QWidget
 {
     Q_OBJECT
@@ -49,10 +48,10 @@ private slots:
     void onUpdateSystemFont(const QFont &);
 
 private:
-    DCheckBox *m_checkBox{nullptr};
-    DLabel *m_label{nullptr};
+    DTK_WIDGET_NAMESPACE::DCheckBox *m_checkBox{nullptr};
+    DTK_WIDGET_NAMESPACE::DLabel *m_label{nullptr};
     QString m_text;
     int m_maxWidth;
 };
-
+}
 #endif // WRAPCHECKBOX_H

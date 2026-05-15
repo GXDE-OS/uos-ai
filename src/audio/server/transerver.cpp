@@ -1,5 +1,5 @@
 #include "transerver.h"
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 #include <QLoggingCategory>
 

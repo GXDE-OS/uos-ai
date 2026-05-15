@@ -40,8 +40,9 @@ class ChatMemory : public QObject
 {
     Q_OBJECT
 
-    static constexpr int MAX_CHARS           = 100000; // 单会话消息总字符上限
-    static constexpr int TOOL_RESULT_KEEP_N  = 5;      // 压缩时保留最近 N 轮工具调用
+    static constexpr int MAX_CHARS              = 100000; // 单会话消息总字符上限
+    static constexpr int TOOL_RESULT_KEEP_N     = 5;      // 压缩时保留最近 N 轮工具调用
+    static constexpr int TOOL_RESULT_MAX_CHARS  = 2000;   // 单条 tool result 字符上限（注入时截断）
 
 public:
     explicit ChatMemory(QObject *parent = nullptr);

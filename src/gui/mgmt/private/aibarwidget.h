@@ -3,12 +3,12 @@
 
 #include <DWidget>
 #include <DBackgroundGroup>
-#include "uosai_global.h"
+
 
 DWIDGET_USE_NAMESPACE
 
-class ThemedLable;
 namespace uos_ai {
+class ThemedLable;
 class AiBarItem;
 class AiBarWidget: public DWidget
 {

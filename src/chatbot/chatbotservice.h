@@ -2,14 +2,11 @@
 #define CHATBOTSERVICE_H
 
 #include <QObject>
-#include <QSharedPointer>
 #include <QFileSystemWatcher>
 #include <QJsonObject>
 #include <optional>
 
 #include "chatbotconfig.h"
-
-class Session;
 
 namespace uos_ai {
 namespace chatbot {
@@ -42,11 +39,10 @@ class ChatBotService : public QObject
     Q_OBJECT
 
 public:
-    explicit ChatBotService(QObject *parent = nullptr);
-    ~ChatBotService();
+    static ChatBotService *instance();
 
-    /// 传入 Session（来自 ServerWrapper::createChatSession()），完成初始化
-    void initialize(const QSharedPointer<Session> &session);
+    /// 完成初始化：绑定 channel manager、启动配置文件监听、加载首次配置
+    void initialize();
 
     /// 更新平台配置并立即应用
     void applyConfig(const QJsonObject &config);
@@ -65,9 +61,11 @@ private:
     void        loadAndApply();
     QJsonObject readConfigFile() const;
 
+    ChatBotService();
+    ~ChatBotService();
+
     ChannelManager       *m_channelManager = nullptr;
     ChatBotRequestHandler *m_handler       = nullptr;
-    QSharedPointer<Session> m_session;
 
     QJsonObject m_config;
     std::optional<ChatBotConfig> m_lastValidConfig;   // 上一次成功应用的配置，用于热重载失败时回滚

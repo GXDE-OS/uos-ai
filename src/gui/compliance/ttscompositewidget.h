@@ -5,8 +5,6 @@
 #ifndef TTSCOMPOSITEWIDGET_H
 #define TTSCOMPOSITEWIDGET_H
 
-#include "uosai_global.h"
-
 #include <QTimer>
 
 #include <DWidget>
@@ -16,9 +14,9 @@
 
 #include <QMutex>
 
-class TtsSocketServer;
+namespace uos_ai {
 class AudioPlayer;
-UOSAI_BEGIN_NAMESPACE
+class TtsSocketServer;
 
 class TtsCompositeWidget : public DTK_WIDGET_NAMESPACE::DWidget
 {
@@ -52,6 +50,6 @@ private:
     QString m_currentID;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // TTSCOMPOSITEWIDGET_H

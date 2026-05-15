@@ -1,0 +1,164 @@
+/* ChatView 组件主题变量 */
+html {
+    --chat-view-scroll-button-bg: rgba(245, 245, 245, 1);
+    --chat-view-scroll-button-hover-bg: rgba(245, 245, 245, 1);
+    --chat-view-scroll-button-icon-color: rgba(0, 0, 0, 0.7);
+    --chat-view-scroll-button-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    --chat-view-scroll-button--advanced-css-bg: rgba(245, 245, 245, 0.85);
+    --chat-view-fade-bg: rgba(248, 248, 248, 0.9);
+}
+
+html.dark {
+    --chat-view-scroll-button-bg: rgba(10, 10, 10, 1);
+    --chat-view-scroll-button-hover-bg: rgba(10, 10, 10, 1);
+    --chat-view-scroll-button-icon-color: rgba(255, 255, 255, 0.7);
+    --chat-view-scroll-button-shadow:
+        0 0 0 1px inset rgba(255, 255, 255, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.6), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    --chat-view-scroll-button--advanced-css-bg: rgba(10, 10, 10, 0.85);
+    --chat-view-fade-bg: rgba(24, 24, 24, 0.8);
+}
+
+/* ChatView 组件样式 */
+
+.chat-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+/* 欢迎页区域：min-height:0 防止 flex 子项撑开；overflow-y:auto 提供滚动 */
+.chat-view__welcome {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.chat-view__welcome .scroll-bar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-view__welcome .scroll-bar-content-inner {
+    display: flex;
+    flex: 1 0 auto;
+    min-height: 100%;
+}
+
+/* 聊天消息区域 */
+.chat-view__messages {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    position: relative;
+}
+
+.chat-view__messages .message-navigator {
+    padding-top: 20px;
+}
+
+/* 底部渐隐效果 - 当内容可滚动且未到底部时显示 */
+.chat-view__messages--fade-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, var(--chat-view-fade-bg));
+    pointer-events: none;
+    z-index: 5;
+    transition: opacity 0.2s ease;
+}
+
+/* 回到底部按钮容器，与 message-navigator 相同宽度 */
+.chat-view__scroll-to-bottom-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1000px;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* 回到底部按钮 */
+.chat-view__scroll-to-bottom-button {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--chat-view-scroll-button-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--chat-view-scroll-button-shadow);
+    transition: all 0.2s ease;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.chat-view__scroll-to-bottom-button--advanced-css {
+    background-color: var(--chat-view-scroll-button--advanced-css-bg);
+    backdrop-filter: blur(20px);
+}
+
+.chat-view__scroll-to-bottom-button:hover {
+    background-color: var(--chat-view-scroll-button-hover-bg);
+}
+
+.chat-view__scroll-to-bottom-button svg {
+    color: var(--chat-view-scroll-button-icon-color);
+}
+
+.message-navigator {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1000px;
+    width: 100%;
+    container-type: inline-size;
+}
+
+/* 输入区域 */
+.chat-view__input-area {
+    min-height: 102px;
+    height: auto;
+    overflow: visible;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* 输入区域外层包装，用于快速输入浮层定位 */
+.chat-view__input-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 32px; /* 为 input-area 的 box-shadow 留出足够空间 (30px blur + 2px spread) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+/* 快速输入按钮浮层，悬浮在输入框上方正中 */
+.chat-view__quick-input-floater {
+    position: absolute;
+    bottom: calc(100% + 11px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}

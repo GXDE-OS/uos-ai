@@ -10,7 +10,7 @@
 #include <QRegularExpression>
 
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 AbstractFileParser::AbstractFileParser(QObject *parent)
     : QObject(parent)
@@ -91,4 +91,4 @@ float AbstractFileParser::matchPattern(const QString &input, const QHash<QString
     return bestWeight;
 }
 
-UOSAI_END_NAMESPACE
+}

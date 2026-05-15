@@ -11,7 +11,7 @@
 
 #include <docparser.h>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 PdfParser::PdfParser(QObject *parent)
     : AbstractFileParser(parent)
@@ -66,4 +66,4 @@ QSharedPointer<ParserResult> PdfParser::parseFile(const QString &filePath, const
     return qSharedPointerDynamicCast<ParserResult>(ret);
 }
 
-UOSAI_END_NAMESPACE
+}

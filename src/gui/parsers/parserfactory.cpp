@@ -13,7 +13,7 @@
 #include <QMimeType>
 #include <QDebug>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 ParserFactory* ParserFactory::instance()
 {
@@ -263,4 +263,4 @@ QString ParserFactory::findBestParser(const QString &extension, const QString &m
     return bestParser;
 }
 
-UOSAI_END_NAMESPACE
+}

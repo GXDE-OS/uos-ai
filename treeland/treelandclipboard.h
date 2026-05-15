@@ -2,7 +2,7 @@
 #define TREELANDCLIPBOARD_H
 
 #include "datacontrolmanagerv1.h"
-#include "uosai_global.h"
+// #include "uosai_global.h"
 #include "private/baseclipboard.h"
 
 #include <QClipboard>

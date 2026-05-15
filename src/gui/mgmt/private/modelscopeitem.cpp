@@ -6,10 +6,9 @@
 #include "downloader.h"
 #include "modelupdater.h"
 #include "localmodelserver.h"
-#include "dbwrapper.h"
 #include "externalllm/modelhubwrapper.h"
 #include "downloader.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 
 #include <DFontSizeManager>
 #include <DDialog>
@@ -139,7 +138,12 @@ void ModelScopeItem::initConnect()
         else
             stopDownload();
     });
-    connect(&LocalModelServer::getInstance(), &LocalModelServer::modelPluginsStatusChanged, this, &ModelScopeItem::checkInstallStatus);
+
+    connect(&LocalModelServer::getInstance(), &LocalModelServer::pluginStatusChanged, this, [this](const QString &app, bool isExist) {
+        if (app != PLUGINSNAME)
+            return;
+        checkInstallStatus();
+    });
 }
 
 void ModelScopeItem::setText(const QString &theme, const QString &summary, double sizeGb)
@@ -276,8 +280,8 @@ void ModelScopeItem::checkInstallStatus()
     bool lastStatus = m_isInstall;
     m_isInstall = ModelhubWrapper::isModelInstalled(m_info.modelName);
 
-    if (lastStatus != m_isInstall)
-        ServerWrapper::instance()->updateLLMAccount();
+//    if (lastStatus != m_isInstall)
+//        ServerWrapper::instance()->updateLLMAccount();
 
     //判断模型是否在用户路径
     if (m_isInstall) {

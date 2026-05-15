@@ -1,0 +1,181 @@
+html {
+    --agentstep-bg: rgba(255, 255, 255, 0.3);
+    --agentstep-border: rgba(0, 0, 0, 0.08);
+    --agentstep-title-color: rgba(0, 0, 0, 0.7);
+    --agentstep-content-color: rgba(0, 0, 0, 0.5);
+    --agentstep-scrollbar-thumb: rgba(0, 0, 0, 0.5);
+    --agentstep-scrollbar-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+                                  0 0 0 0.5px rgba(255, 255, 255, 0.1),
+                                  0 0 0 0.5px inset rgba(0, 0, 0, 0.05),
+                                  0 0 0 0.5px rgba(0, 0, 0, 0.05);
+    --agentstep-header-expanded-bg: rgba(248, 248, 248, 0.95);
+}
+
+html.dark {
+    --agentstep-bg: rgba(0, 0, 0, 0.15);
+    --agentstep-border: rgba(255, 255, 255, 0.1);
+    --agentstep-title-color: rgba(255, 255, 255, 0.5);
+    --agentstep-content-color: rgba(255, 255, 255, 0.5);
+    --agentstep-scrollbar-thumb: rgba(255, 255, 255, 0.3);
+    --agentstep-scrollbar-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1),
+                                  0 0 0 0.5px rgba(0, 0, 0, 0.1),
+                                  0 0 0 0.5px inset rgba(255, 255, 255, 0.05),
+                                  0 0 0 0.5px rgba(255, 255, 255, 0.05);
+    --agentstep-header-expanded-bg: rgba(0, 0, 0, 0.15);
+}
+
+/* AgentStep - Agent 任务步骤块 */
+
+.agent-step {
+    margin: 4px 0 8px;
+    border-radius: 10px;
+    border: 1px solid var(--agentstep-border);
+    background: var(--agentstep-bg);
+    overflow: hidden;
+    width: fit-content;
+}
+
+/* 展开时全宽，去除 overflow:hidden 使 header 可以 sticky 定位 */
+.agent-step--expanded {
+    width: 100%;
+    overflow: visible;
+}
+
+/* 展开状态标题栏：吸附在外层滚动容器可视区顶部 */
+.agent-step--expanded .agent-step__header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-radius: 10px 10px 0 0;
+    background: var(--agentstep-header-expanded-bg);
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+    /* 向外扩 1px 使自身边框与 agent-step 边框精确重叠：
+       正常位置时两者合为一条线；sticky 后 header 自带边框保持顶部框线 */
+    margin: -1px -1px 0;
+    border: 1px solid var(--agentstep-border);
+    border-bottom: none;
+}
+
+/* ===== 标题栏 ===== */
+.agent-step__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+    gap: 14px;
+    background: transparent;
+}
+
+.agent-step__header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+/* 图标容器 */
+.agent-step__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.agent-step__icon--done {
+    color: #555;
+}
+
+.agent-step__icon--failed {
+    color: #d94f4f;
+}
+
+.agent-step__icon--canceled {
+    color: #aaa;
+}
+
+/* 脉冲动画 */
+.agent-step__pulse {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #999;
+    animation: agent-step-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes agent-step-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.7); }
+}
+
+/* 标题文字 */
+.agent-step__title {
+    font-family: SourceHanSansSC-Normal, sans-serif;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    color: var(--agentstep-title-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 展开图标 */
+.agent-step__chevron {
+    display: flex;
+    align-items: center;
+    color: var(--agentstep-title-color);
+    flex-shrink: 0;
+}
+
+/* ===== 内容区 ===== */
+.agent-step__body--expanded {
+    /* 5个 tool 行上限（5×40px + 4×6px 间距 + 20px padding），内容不足时高度随内容收缩 */
+    max-height: 244px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    background: transparent;
+    padding: 10px 12px;
+    margin-right: 3px;
+}
+
+.agent-step__body--expanded::-webkit-scrollbar {
+    width: 4px;
+}
+
+.agent-step__body--expanded::-webkit-scrollbar-thumb {
+    height: 71px;
+    border-radius: 4px;
+    background-color: var(--agentstep-scrollbar-thumb);
+    box-shadow: var(--agentstep-scrollbar-shadow);
+}
+
+.agent-step__body--expanded::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.agent-step__body--expanded > * + * {
+    margin-top: 6px;
+}
+
+/* ===== 说明文本 ===== */
+.agent-step__content {
+    font-family: SourceHanSansSC-Normal, sans-serif;
+    font-size: var(--uosai-font-size-sm);
+    line-height: var(--uosai-line-height-relaxed);
+    color: var(--agentstep-content-color);
+    word-break: break-word;
+}
+
+/* emitStep 静态说明文本，显示在最底部 */
+.agent-step__content--summary {
+    padding-top: 6px;
+    border-top: 1px solid var(--agentstep-border);
+    margin-top: 2px;
+    color: var(--agentstep-content-color);
+}

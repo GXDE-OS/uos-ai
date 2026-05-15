@@ -1,6 +1,9 @@
 #ifndef WELCOMEDIALOG_H
 #define WELCOMEDIALOG_H
 
+#include "tas/uosfreeaccounts.h"
+#include "themedbutton.h"
+
 #include <DAbstractDialog>
 #include <DWidget>
 #include <DCheckBox>
@@ -14,16 +17,11 @@
 #include <QFutureWatcher>
 #include <QtConcurrent>
 
-#include "tasdef.h"
-#include "networkdefs.h"
+namespace uos_ai {
 
-DWIDGET_USE_NAMESPACE
-
-class LLMServerProxy;
 class WrapCheckBox;
 class ThemedLable;
-
-class WelcomeDialog : public DAbstractDialog
+class WelcomeDialog : public DTK_WIDGET_NAMESPACE::DAbstractDialog
 {
     Q_OBJECT
 public:
@@ -39,13 +37,14 @@ private:
     void initUI();
     void initConnect();
 
-    DArrowRectangle *showArrowRectangle(DArrowRectangle::ArrowDirection);
+    DTK_WIDGET_NAMESPACE::DArrowRectangle *showArrowRectangle(DTK_WIDGET_NAMESPACE::DArrowRectangle::ArrowDirection);
 
     void resetLinkColor();
     void updateAgree();
+    void updateButtonLayout();
 
 signals:
-    void signalAppendModel(const LLMServerProxy &);
+    void freeModelAppend();
     //当用户选择添加模型时，需要先拉起chatwindow，在chatwindow绘制完成后在拉起设置界面。
     //否则会导致设置界面被覆盖在chatwindow下面且无法激活。
     void signalShowMgmtWindowAfterChatInitFinished();
@@ -55,24 +54,25 @@ public slots:
 
 private slots:
     void onUpdateSystemFont(const QFont &);
-    void onUpdateSystemTheme(const DGuiApplicationHelper::ColorType &);
+    void onUpdateSystemTheme(const DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType &);
 
 protected:
     void showEvent(QShowEvent *event) override;
 
 private:
-    WelcomeDialog(DWidget *parent = nullptr, bool onlyUseAgreement = false);
+    WelcomeDialog(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr, bool onlyUseAgreement = false);
     WrapCheckBox *m_pAgrCheckbox{nullptr};
 
-    DSuggestButton *m_pFreeAccount{nullptr};
-    DSuggestButton *m_pStartUsing{nullptr};
-    DPushButton *m_pAddModel{nullptr};
+    ThemedButton *m_pFreeAccount{nullptr};
+    ThemedButton *m_pStartUsing{nullptr};
+    ThemedButton *m_pAddModel{nullptr};
 
     ThemedLable *m_pActivity{nullptr};
     ThemedLable *m_pIntroduce{nullptr};
     QSpacerItem *m_pVerticalSpacer{nullptr};
 
-    DWidget *m_pFreeWidget{nullptr};
+    DTK_WIDGET_NAMESPACE::DWidget *m_pFreeWidget{nullptr};
+    QHBoxLayout *m_pButtonLayout{nullptr};
 
     bool m_freeAccount;
     QString m_activityUrl;
@@ -81,5 +81,7 @@ private:
 
     bool m_onlyUseAgreement = false;
 };
+
+}
 
 #endif // WELCOMEDIALOG_H

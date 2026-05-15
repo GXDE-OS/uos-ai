@@ -1,10 +1,12 @@
 #include "localmodelserver.h"
+#include "app/application.h"
 
 #include <QDBusMessage>
 #include <QDBusReply>
 #include <QDBusConnection>
-#include <QProcess>
 #include <QTimer>
+#include <QDir>
+#include <QFileInfo>
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logDBus)
@@ -15,12 +17,15 @@ Q_DECLARE_LOGGING_CATEGORY(logDBus)
 
 LocalModelServer::LocalModelServer(QObject *parent) : QObject(parent)
 {
-
+    appStoreInterface = new QDBusInterface(NM_SERVICE,
+                                   NM_PATH,
+                                   NM_INTERFACE,
+                                   QDBusConnection::sessionBus());
 }
 
 LocalModelServer::~LocalModelServer()
 {
-
+    delete appStoreInterface;
 }
 
 LocalModelServer &LocalModelServer::getInstance()
@@ -31,17 +36,7 @@ LocalModelServer &LocalModelServer::getInstance()
 
 void LocalModelServer::openInstallWidget(const QString &appname)
 {
-    auto con = QDBusConnection::sessionBus();
-    QDBusMessage msg = QDBusMessage::createMethodCall(NM_SERVICE, NM_PATH,
-                                   NM_INTERFACE, "openBusinessUri");
-
-    QVariantList args;
-    args << QVariant::fromValue(QString("app_detail_info/%1").arg(appname));
-    msg.setArguments(args);
-
-    con.asyncCall(msg);
-
-    QDBusMessage reply = con.call(msg);
+    QDBusMessage reply = appStoreInterface->call("openBusinessUri", QVariant::fromValue(QString("app_detail_info/%1").arg(appname)));
     if (reply.type() == QDBusMessage::ErrorMessage) {
         qCWarning(logDBus) << "Failed to open install widget:" << reply.errorMessage();
     }
@@ -49,49 +44,39 @@ void LocalModelServer::openInstallWidget(const QString &appname)
 
 void LocalModelServer::openManagerWidget()
 {
-    auto con = QDBusConnection::sessionBus();
-    QDBusMessage msg = QDBusMessage::createMethodCall(NM_SERVICE, NM_PATH,
-                                   NM_INTERFACE, "openBusinessUri");
-
-    QVariantList args;
-    args << QVariant::fromValue(QString("tab/manager"));
-    msg.setArguments(args);
-
-    QDBusMessage reply = con.call(msg);
+    QDBusMessage reply = appStoreInterface->call("openBusinessUri", QVariant::fromValue(QString("tab/manager")));
     if (reply.type() == QDBusMessage::ErrorMessage) {
         qCWarning(logDBus) << "Failed to open manager widget:" << reply.errorMessage();
     }
 }
 
-void LocalModelServer::localModelStatusChanged(const QString &app, bool isExist)
-{
-    qCDebug(logDBus) << "Local model status changed - app:" << app << "exists:" << isExist;
-    
-    if ("uos-ai-llm" == app)
-        emit localLLMStatusChanged(isExist);
-    if (PLUGINSNAME == app)
-        emit modelPluginsStatusChanged(isExist);
-}
-
 bool LocalModelServer::checkInstallStatus(const QString &appName)
 {
-    qCDebug(logDBus) << "Checking install status for app:" << appName;
-    
+    QDir dir("/var/lib/dpkg/info");
+    bool b = !dir.entryList(QStringList() << appName + "*.list").isEmpty();
+    qCDebug(logDBus) << "Checking install status for app:" << appName << b;
+    return b;
+
+#if 0
     QProcess m_pProcess;
     m_pProcess.start("dpkg-query", QStringList() << "-W" << QString("-f='${db:Status-Status}\n'") << appName);
     m_pProcess.waitForFinished();
     QByteArray reply = m_pProcess.readAllStandardOutput();
     bool InstallStatus = (reply == "'installed\n'" ? true : false);
     return InstallStatus;
+#else
+    return QFileInfo::exists(QString("/usr/bin/%0").arg(appName));
+#endif
 }
 
 void LocalModelServer::openInstallWidgetOnTimer(const QString &appname)
 {
     qCDebug(logDBus) << "Opening install widget with timer for app:" << appname;
-    
-    emit sigToLaunchMgmtNoShow();
+
+    aiApp->initMgmtWindow();
+
     openInstallWidget(appname);
     QTimer::singleShot(2000, this, [=](){
-        emit sigToLaunchTimer(720);//启动定时器检查安装状态
+        emit beginCheck(appname, 720);//启动定时器检查安装状态
     });
 }

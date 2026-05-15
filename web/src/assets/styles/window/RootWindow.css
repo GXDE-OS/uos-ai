@@ -1,0 +1,14 @@
+html {
+    --color-root-window-background: rgba(255, 255, 255, 0.8);
+}
+
+html.dark {
+    --color-root-window-background: rgba(16, 16, 16, 0.8);
+}
+
+.root-window {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-root-window-background);
+}

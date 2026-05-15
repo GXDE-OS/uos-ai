@@ -5,6 +5,8 @@
 #include <sstream>
 #include <iomanip>
 
+using namespace uos_ai;
+
 UosAccountEncoder::UosAccountEncoder()
     : m_encryptor(new EncryptBase(EVP_aes_128_ecb()))
     , m_passwd("f5739d638610d5e1")
@@ -39,18 +41,19 @@ QVector<UosFreeAccount> UosAccountEncoder::makeUosFreeAccount(const UosFreeAccou
 QString UosAccountEncoder::encrypt(const QString &key, const QString &index, int type)
 {
     QString plaintext = QString("%1;%2;%3").arg(key).arg(index).arg(type);
-    int len = plaintext.length();
-    std::vector<unsigned char> secret = m_encryptor->encrypt(plaintext.toStdString().c_str(), len);
-    QByteArray data = QByteArray((const char *)secret.data(), len);
+    auto data = plaintext.toUtf8();
+    int len = data.length();
+    std::vector<unsigned char> secret = m_encryptor->encrypt(data.constData(), len);
+    data = QByteArray((const char *)secret.data(), secret.size());
     return data.toBase64();
 }
 
 std::tuple<QString, QString, int> UosAccountEncoder::decrypt(const QString &ciphertext)
 {
-    QByteArray bcipher = QByteArray::fromBase64(ciphertext.toLocal8Bit());
+    QByteArray bcipher = QByteArray::fromBase64(ciphertext.toUtf8());
     int len = bcipher.length();
     std::vector<unsigned char> plaintext = m_encryptor->decrypt(bcipher.data(), len);
-    QByteArray data = QByteArray((const char *)plaintext.data(), len);
+    QByteArray data = QByteArray((const char *)plaintext.data(), plaintext.size());
     auto plainList = data.split(';');
     if (plainList.size() == 3) {
         return std::make_tuple(plainList.at(0), plainList.at(1), plainList.at(2).toInt());

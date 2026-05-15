@@ -1,6 +1,5 @@
 #include "localmodelitem.h"
 #include "localmodelserver.h"
-#include "dbwrapper.h"
 #include "dconfigmanager.h"
 
 #include <DFontSizeManager>
@@ -10,8 +9,10 @@
 #include <QtConcurrent>
 #include <QResizeEvent>
 #include <QLoggingCategory>
+#include <QDir>
 
-UOSAI_USE_NAMESPACE
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -19,7 +20,6 @@ static constexpr int TIMERBEGIN = 720;//5秒轮询安装和更新状态60分钟
 
 LocalModelItem::LocalModelItem(DWidget *parent)
     : DWidget(parent)
-    , m_pProcess(new QProcess)
 {
     m_timer = new QTimer(this);
     m_timer->setInterval(5000);
@@ -29,10 +29,6 @@ LocalModelItem::LocalModelItem(DWidget *parent)
 
 LocalModelItem::~LocalModelItem()
 {
-    if (m_pProcess) {
-        m_pProcess->terminate();
-        m_pProcess->deleteLater();
-    }
     m_timer->stop();
 }
 
@@ -96,7 +92,12 @@ void LocalModelItem::initConnect()
     connect(m_pBtnUninstall, &DSuggestButton::clicked, this, &LocalModelItem::onUninstall);
     connect(this,&LocalModelItem::changeUpdateStatus, this,&LocalModelItem::onChangeUpdateStatus);
     connect(m_timer, &QTimer::timeout, this, &LocalModelItem::checkStatusOntime);
-    connect(&LocalModelServer::getInstance(), &LocalModelServer::sigToLaunchTimer, this, &LocalModelItem::beginTimer);
+    connect(&LocalModelServer::getInstance(), &LocalModelServer::beginCheck, this, [this](const QString &name, int count) {
+        if (name != m_appName)
+            return;
+
+        beginTimer(count);
+    });
 }
 
 void LocalModelItem::setText(const QString &theme, const QString &summary)
@@ -145,17 +146,11 @@ void LocalModelItem::onUninstall()
 
 void LocalModelItem::checkInstallStatus()
 {
-    if (!m_pProcess->atEnd()) return;
-    if (m_pProcess->state() == QProcess::Running)
-        m_pProcess->waitForFinished();
-    m_pProcess->start("dpkg-query", QStringList() << "-W" << QString("-f='${db:Status-Status}\n'") << m_appName);
-    m_pProcess->waitForFinished();
-    QByteArray reply = m_pProcess->readAllStandardOutput();
-    bool newInstallStatus = (reply == "'installed\n'" ? true : false);
+    bool newInstallStatus = LocalModelServer::getInstance().checkInstallStatus(m_appName);
     if (m_isInstall != newInstallStatus) {
         qCInfo(logAIGUI) << "Install status changed. AppName:" << m_appName << ", Installed:" << newInstallStatus;
         m_isInstall = newInstallStatus;
-        LocalModelServer::getInstance().localModelStatusChanged(m_appName, m_isInstall);
+        emit LocalModelServer::getInstance().pluginStatusChanged(m_appName, m_isInstall);
     }
     changeInstallStatus();
 }
@@ -244,25 +239,18 @@ void LocalModelItem::checkStatusOntime()
     }
 }
 
-void LocalModelItem::beginTimer(const int &time)
+void LocalModelItem::beginTimer(int time)
 {
-    qCDebug(logAIGUI) << "Begin timer for LocalModelItem. Time:" << time;
+    qCDebug(logAIGUI) << "Begin timer " << time << m_appName;
     m_timerCount = time;
     m_timer->start();
 }
 
 void LocalModelItem::stopTimer()
 {
-    qCDebug(logAIGUI) << "Stop timer for LocalModelItem.";
+    qCDebug(logAIGUI) << "Stop timer for " << m_appName;
     m_timerCount = 0;
     m_timer->stop();
-}
-
-void LocalModelItem::addLocalLlM()
-{
-    qCDebug(logAIGUI) << "addLocalLlM called.";
-    //DbWrapper::appAssistant(); initAssistant();
-    //DbWrapper::appendLlm();
 }
 
 bool LocalModelItem::getInstallStatus()

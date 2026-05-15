@@ -1,6 +1,6 @@
 #ifndef SKILLCOMMANDTEXTEDIT_H
 #define SKILLCOMMANDTEXTEDIT_H
-#include "uosai_global.h"
+
 #include "selectiontagobject.h"
 
 #include <DTextEdit>

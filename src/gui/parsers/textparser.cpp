@@ -12,7 +12,7 @@
 #endif
 #include <QFileInfo>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 TextParser::TextParser(QObject *parent)
     : AbstractFileParser(parent)
@@ -118,4 +118,4 @@ bool TextParser::looksBinary(const QByteArray &head)
     return false;
 }
 
-UOSAI_END_NAMESPACE
+}

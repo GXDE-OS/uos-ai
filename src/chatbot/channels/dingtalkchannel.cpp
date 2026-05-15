@@ -1,4 +1,6 @@
 #include "dingtalkchannel.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 #include <QNetworkRequest>
 #include <QNetworkReply>
@@ -10,8 +12,9 @@
 #include <QLoggingCategory>
 #include <QUuid>
 
-Q_LOGGING_CATEGORY(logDT, "uos-ai.chatbot.dingtalk")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
+using namespace uos_ai;
 using namespace uos_ai::chatbot;
 
 const char *DingTalkChannel::kApiBase            = "https://api.dingtalk.com";
@@ -49,12 +52,12 @@ DingTalkChannel::DingTalkChannel(QObject *parent)
 
 void DingTalkChannel::start(const QJsonObject &config)
 {
-    m_clientId       = config.value("client_id").toString();
-    m_clientSecret   = config.value("client_secret").toString();
-    m_cardTemplateId = config.value("card_template_id").toString();
+    m_clientId       = config.value(STR_KEY_CLIENT_ID).toString();
+    m_clientSecret   = config.value(STR_KEY_CLIENT_SECRET).toString();
+    m_cardTemplateId = config.value(STR_KEY_CARD_TEMPLATE_ID).toString();
 
     if (m_clientId.isEmpty() || m_clientSecret.isEmpty()) {
-        qCWarning(logDT) << "Missing client_id or client_secret";
+        qCWarning(logChatBot) << "Missing client_id or client_secret";
         return;
     }
 
@@ -79,7 +82,7 @@ void DingTalkChannel::stop()
 
 void DingTalkChannel::openConnection()
 {
-    qCInfo(logDT) << "Opening DingTalk Stream connection...";
+    qCInfo(logChatBot) << "Opening DingTalk Stream connection...";
 
     QNetworkRequest req(QUrl(QStringLiteral("%1%2").arg(kApiBase, kOpenConnectionPath)));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
@@ -107,7 +110,7 @@ void DingTalkChannel::openConnection()
     connect(reply, &QNetworkReply::finished, this, [this, reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logDT) << "openConnection failed:" << reply->errorString();
+            qCWarning(logChatBot) << "openConnection failed:" << reply->errorString();
             scheduleReconnect();
             return;
         }
@@ -117,13 +120,13 @@ void DingTalkChannel::openConnection()
         QString ticket   = obj.value("ticket").toString();
 
         if (endpoint.isEmpty() || ticket.isEmpty()) {
-            qCWarning(logDT) << "Invalid openConnection response:" << obj;
+            qCWarning(logChatBot) << "Invalid openConnection response:" << obj;
             scheduleReconnect();
             return;
         }
 
         QString wsUrl = QStringLiteral("%1?ticket=%2").arg(endpoint, ticket);
-        qCInfo(logDT) << "Connecting DingTalk WebSocket...";
+        qCInfo(logChatBot) << "Connecting DingTalk WebSocket...";
         m_ws->open(QUrl(wsUrl));
     });
 }
@@ -132,27 +135,27 @@ void DingTalkChannel::scheduleReconnect()
 {
     if (!m_running)
         return;
-    qCInfo(logDT) << "Scheduling reconnect in" << kReconnectInterval << "ms";
+    qCInfo(logChatBot) << "Scheduling reconnect in" << kReconnectInterval << "ms";
     m_reconnectTimer->start(kReconnectInterval);
 }
 
 void DingTalkChannel::onWsConnected()
 {
-    qCInfo(logDT) << "DingTalk WebSocket connected";
+    qCInfo(logChatBot) << "DingTalk WebSocket connected";
     m_pingTimer->start();
 }
 
 void DingTalkChannel::onWsDisconnected()
 {
     m_pingTimer->stop();
-    qCInfo(logDT) << "DingTalk WebSocket disconnected";
+    qCInfo(logChatBot) << "DingTalk WebSocket disconnected";
     if (m_running)
         scheduleReconnect();
 }
 
 void DingTalkChannel::onWsError(QAbstractSocket::SocketError)
 {
-    qCWarning(logDT) << "DingTalk WebSocket error:" << m_ws->errorString();
+    qCWarning(logChatBot) << "DingTalk WebSocket error:" << m_ws->errorString();
 }
 
 // ============================================================
@@ -162,12 +165,12 @@ void DingTalkChannel::onWsError(QAbstractSocket::SocketError)
 void DingTalkChannel::onWsTextMessageReceived(const QString &message)
 {
     QJsonObject msg = QJsonDocument::fromJson(message.toUtf8()).object();
-    QString type    = msg.value("type").toString();
+    QString type    = msg.value(STR_KEY_TYPE).toString();
 
     if (type == QStringLiteral("SYSTEM")) {
         QJsonObject headers = msg.value("headers").toObject();
         if (headers.value("topic").toString() == QStringLiteral("disconnect")) {
-            qCInfo(logDT) << "Received disconnect from server";
+            qCInfo(logChatBot) << "Received disconnect from server";
             m_ws->close();
         }
         return;
@@ -187,7 +190,7 @@ void DingTalkChannel::onWsTextMessageReceived(const QString &message)
         return;
 
     // data 是 JSON 字符串，需二次解析
-    QByteArray dataStr = msg.value("data").toString().toUtf8();
+    QByteArray dataStr = msg.value(STR_KEY_DATA).toString().toUtf8();
     QJsonObject d      = QJsonDocument::fromJson(dataStr).object();
 
     handleCallback(d);
@@ -200,13 +203,13 @@ void DingTalkChannel::handleCallback(const QJsonObject &d)
     // 只处理文本消息
     QString textContent;
     if (msgtype == QStringLiteral("text")) {
-        textContent = d.value("text").toObject().value("content").toString().trimmed();
+        textContent = d.value(STR_KEY_TEXT).toObject().value(STR_KEY_CONTENT).toString().trimmed();
     } else if (msgtype == QStringLiteral("richText")) {
-        QJsonArray richText = d.value("content").toObject().value("richText").toArray();
+        QJsonArray richText = d.value(STR_KEY_CONTENT).toObject().value("richText").toArray();
         for (const QJsonValue &item : richText) {
             QJsonObject obj = item.toObject();
-            if (obj.contains("text"))
-                textContent += obj.value("text").toString();
+            if (obj.contains(STR_KEY_TEXT))
+                textContent += obj.value(STR_KEY_TEXT).toString();
         }
         textContent = textContent.trimmed();
     }
@@ -234,16 +237,16 @@ void DingTalkChannel::handleCallback(const QJsonObject &d)
     QString msgId = d.value("msgId").toString();
 
     QJsonObject payload;
-    payload["platform"]   = platformName();
-    payload["message_id"] = msgId;
-    payload["sender"]     = QJsonObject{
-        {"id",   senderId},
-        {"name", d.value("senderNick").toString()},
-        {"type", "user"}
+    payload[STR_KEY_PLATFORM]     = platformName();
+    payload[STR_KEY_MESSAGE_ID]   = msgId;
+    payload[STR_KEY_SENDER]       = QJsonObject{
+        {STR_KEY_ID,   senderId},
+        {STR_KEY_NAME, d.value("senderNick").toString()},
+        {STR_KEY_TYPE, STR_KEY_USER}
     };
-    payload["conversation"] = QJsonObject{{"id", replyTo}, {"type", convType}};
-    payload["content"]      = QJsonObject{{"type", "text"}, {"text", textContent}};
-    payload["timestamp"]    = QDateTime::currentSecsSinceEpoch();
+    payload[STR_KEY_CONVERSATION] = QJsonObject{{STR_KEY_ID, replyTo}, {STR_KEY_TYPE, convType}};
+    payload[STR_KEY_CONTENT]      = QJsonObject{{STR_KEY_TYPE, STR_KEY_TEXT}, {STR_KEY_TEXT, textContent}};
+    payload[STR_KEY_TIMESTAMP]    = QDateTime::currentSecsSinceEpoch();
 
     emit messageReceived(payload);
 }
@@ -302,7 +305,7 @@ void DingTalkChannel::fetchToken(std::function<void(const QString &)> callback)
         return;
 
     m_tokenState = TokenState::Refreshing;
-    qCInfo(logDT) << "Fetching DingTalk access token...";
+    qCInfo(logChatBot) << "Fetching DingTalk access token...";
 
     QNetworkRequest req(QUrl(QStringLiteral("%1%2").arg(kApiBase, kTokenPath)));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
@@ -315,7 +318,7 @@ void DingTalkChannel::fetchToken(std::function<void(const QString &)> callback)
     connect(reply, &QNetworkReply::finished, this, [this, reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logDT) << "Token fetch failed:" << reply->errorString();
+            qCWarning(logChatBot) << "Token fetch failed:" << reply->errorString();
             m_tokenState = TokenState::Invalid;
             auto cbs = std::move(m_pendingTokenCallbacks);
             m_pendingTokenCallbacks.clear();
@@ -341,14 +344,14 @@ void DingTalkChannel::doSendViaWebhook(const QString &webhookUrl, const QString 
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
     QJsonObject body;
-    body["msgtype"] = "text";
-    body["text"]    = QJsonObject{{"content", content}};
+    body["msgtype"]      = STR_KEY_TEXT;
+    body[STR_KEY_TEXT]   = QJsonObject{{STR_KEY_CONTENT, content}};
 
     QNetworkReply *reply = m_http->post(req, QJsonDocument(body).toJson(QJsonDocument::Compact));
     connect(reply, &QNetworkReply::finished, this, [reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logDT) << "Webhook send failed:" << reply->errorString();
+            qCWarning(logChatBot) << "Webhook send failed:" << reply->errorString();
     });
 }
 
@@ -356,12 +359,12 @@ void DingTalkChannel::doSendViaToken(const QString &token, const QString &to,
                                       const QString &content, const QString &conversationType)
 {
     if (token.isEmpty()) {
-        qCWarning(logDT) << "No valid token for sending";
+        qCWarning(logChatBot) << "No valid token for sending";
         return;
     }
 
     QString msgParam = QString::fromUtf8(
-        QJsonDocument(QJsonObject{{"content", content}}).toJson(QJsonDocument::Compact));
+        QJsonDocument(QJsonObject{{STR_KEY_CONTENT, content}}).toJson(QJsonDocument::Compact));
 
     QJsonObject body;
     body["robotCode"] = m_clientId;
@@ -385,7 +388,7 @@ void DingTalkChannel::doSendViaToken(const QString &token, const QString &to,
     connect(reply, &QNetworkReply::finished, this, [reply] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logDT) << "Token send failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Token send failed:" << reply->errorString()
                              << reply->readAll();
     });
 }
@@ -428,7 +431,7 @@ void DingTalkChannel::doCreateCardInstance(const QString &handle)
 
     // outTrackId 与 handle 相同（客户端生成的 UUID）
     QJsonObject cardParamMap;
-    cardParamMap["content"] = QStringLiteral("生成中...");
+    cardParamMap[STR_KEY_CONTENT] = QStringLiteral("生成中...");
 
     QJsonObject body;
     body["cardTemplateId"] = m_cardTemplateId;
@@ -446,7 +449,7 @@ void DingTalkChannel::doCreateCardInstance(const QString &handle)
             return;
 
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logDT) << "Create card instance failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Create card instance failed:" << reply->errorString()
                              << reply->readAll();
             // 降级：卡片创建失败，标记 failed；有 pending 内容则发普通消息
             StreamingReply &sr = m_streamingReplies[handle];
@@ -473,7 +476,7 @@ void DingTalkChannel::doSendInteractiveCard(const QString &handle)
     const StreamingReply &sr = m_streamingReplies[handle];
 
     QJsonObject cardParamMap;
-    cardParamMap["content"] = QStringLiteral("生成中...");
+    cardParamMap[STR_KEY_CONTENT] = QStringLiteral("生成中...");
 
     QJsonObject body;
     body["robotCode"]      = m_clientId;
@@ -500,7 +503,7 @@ void DingTalkChannel::doSendInteractiveCard(const QString &handle)
             return;
 
         if (reply->error() != QNetworkReply::NoError) {
-            qCWarning(logDT) << "Send interactive card failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Send interactive card failed:" << reply->errorString()
                              << reply->readAll();
             m_streamingReplies.remove(handle);
             return;
@@ -572,8 +575,8 @@ void DingTalkChannel::doUpdateCardStreaming(const QString &handle,
     QJsonObject body;
     body["outTrackId"]  = handle;
     body["guid"]        = guid;
-    body["key"]         = QStringLiteral("content");  // 卡片模板中流式变量名
-    body["content"]     = content;
+    body["key"]         = STR_KEY_CONTENT;  // 卡片模板中流式变量名
+    body[STR_KEY_CONTENT] = content;
     body["isFull"]      = true;       // markdown 变量必须全量更新
     body["isFinalize"]  = isFull;     // isFull 参数复用为"是否最后一帧"语义
     body["isError"]     = false;
@@ -589,7 +592,7 @@ void DingTalkChannel::doUpdateCardStreaming(const QString &handle,
     connect(reply, &QNetworkReply::finished, this, [this, reply, handle, isFull] {
         reply->deleteLater();
         if (reply->error() != QNetworkReply::NoError)
-            qCWarning(logDT) << "Update card streaming failed:" << reply->errorString()
+            qCWarning(logChatBot) << "Update card streaming failed:" << reply->errorString()
                              << reply->readAll();
         if (isFull)
             m_streamingReplies.remove(handle);

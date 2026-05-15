@@ -4,10 +4,12 @@
 #ifndef ASRFLYMODEL_H
 #define ASRFLYMODEL_H
 
-#include "serverdefs.h"
 #include "modelwrapper/common/asrmodel.h"
+
 #include <QAudioDecoder>
-UOSAI_BEGIN_NAMESPACE
+
+namespace uos_ai {
+
 class IatIflyModel;
 class AsrIflyModel : public AsrModel
 {
@@ -25,5 +27,6 @@ private:
     QAudioDecoder decoder;
     IatIflyModel*   m_iatModel = nullptr;
 };
-UOSAI_END_NAMESPACE
+
+}
 #endif // ASRFLYMODEL_H

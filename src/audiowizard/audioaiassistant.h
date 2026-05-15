@@ -5,11 +5,9 @@
 #ifndef AUDIOAIASSISTANT_H
 #define AUDIOAIASSISTANT_H
 
-#include "uosai_global.h"
-
 #include <QObject>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class BaseClipboard;
 class AudioAiassistantPrivate;
 class AudioAiassistant : public QObject
@@ -38,6 +36,6 @@ private:
     BaseClipboard *m_selectclip = nullptr;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // AIASSISTANT_H

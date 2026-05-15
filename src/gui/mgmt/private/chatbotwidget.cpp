@@ -2,7 +2,8 @@
 #include "chatbotplatformdialog.h"
 #include "themedlable.h"
 #include "chatbotservice.h"
-#include "serverwrapper.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 #include <DFontSizeManager>
 #include <DGuiApplicationHelper>
@@ -29,6 +30,7 @@ PlatformRowWidget::PlatformRowWidget(const QString &name, const QString &key, DW
     m_editBtn = new QToolButton(this);
     m_editBtn->setIcon(QIcon::fromTheme("chatbot-settings"));
     m_editBtn->setIconSize(QSize(16, 16));
+    m_editBtn->setFixedSize(24, 24);
     m_editBtn->setAutoRaise(true);
     m_editBtn->setVisible(false);
 
@@ -65,7 +67,7 @@ void PlatformRowWidget::setChecked(bool checked)
 ChatBotWidget::ChatBotWidget(DWidget *parent)
     : DWidget(parent)
 {
-    m_service = ServerWrapper::instance()->chatBotService();
+    m_service = ChatBotService::instance();
     if (m_service) {
         connect(m_service, &ChatBotService::configChanged,
                 this, &ChatBotWidget::onServiceConfigChanged);
@@ -111,7 +113,11 @@ DBackgroundGroup *ChatBotWidget::createPlatformGroup()
     DLabel *nameLabel = new DLabel(tr("Enable Message Forwarding Service"), enableRow);
     DFontSizeManager::instance()->bind(nameLabel, DFontSizeManager::T6, QFont::Medium);
 
-    const QString descText = tr("After enabling, UOS AI will receive messages from Lark, DingTalk, and QQ through the configured bot. You can then directly interact with UOS AI in your IM client.");
+#ifdef ENABLE_ULLM
+    const QString descText = tr("After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.");
+#else
+    const QString descText = tr("After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.");
+#endif
     DLabel *descLabel = new DLabel(descText, enableRow);
     DFontSizeManager::instance()->bind(descLabel, DFontSizeManager::T8, QFont::Normal);
     descLabel->setElideMode(Qt::ElideRight);
@@ -139,9 +145,13 @@ DBackgroundGroup *ChatBotWidget::createPlatformGroup()
     // ── platform rows ────────────────────────────
     struct PlatformDef { QString key; QString name; };
     const QList<PlatformDef> platforms = {
-        { "feishu",   tr("Lark")     },
-        { "dingtalk", tr("DingTalk") },
-        { "qq",       tr("QQ")       },
+        { STR_PLATFORM_FEISHU,   tr("Lark")     },
+        { STR_PLATFORM_DINGTALK, tr("DingTalk") },
+        { STR_PLATFORM_QQ,       tr("QQ")       },
+#ifdef ENABLE_ULLM
+        { STR_PLATFORM_TELEGRAM, tr("Telegram") },
+        { STR_PLATFORM_DISCORD,  tr("Discord")  },
+#endif
     };
 
     QVBoxLayout *vLayout = new QVBoxLayout;
@@ -187,15 +197,15 @@ void ChatBotWidget::loadFromService()
         return;
 
     m_mainSwitch->blockSignals(true);
-    m_mainSwitch->setChecked(m_config.value("enabled").toBool(false));
+    m_mainSwitch->setChecked(m_config.value(STR_KEY_ENABLED).toBool(false));
     m_mainSwitch->blockSignals(false);
 
-    updatePlatformGroupVisible(m_config.value("enabled").toBool(false));
+    updatePlatformGroupVisible(m_config.value(STR_KEY_ENABLED).toBool(false));
 
-    QJsonObject platforms = m_config.value("platforms").toObject();
+    QJsonObject platforms = m_config.value(STR_KEY_PLATFORMS).toObject();
     for (auto it = m_platformRows.begin(); it != m_platformRows.end(); ++it) {
         QJsonObject pCfg = platforms.value(it.key()).toObject();
-        it.value().row->setChecked(pCfg.value("enabled").toBool(false));
+        it.value().row->setChecked(pCfg.value(STR_KEY_ENABLED).toBool(false));
     }
 }
 
@@ -221,18 +231,18 @@ void ChatBotWidget::onThemeTypeChanged()
 
 void ChatBotWidget::onMainEnableChanged(bool enabled)
 {
-    m_config["enabled"] = enabled;
+    m_config[STR_KEY_ENABLED] = enabled;
     updatePlatformGroupVisible(enabled);
     saveToService();
 }
 
 void ChatBotWidget::onPlatformEnableChanged(const QString &key, bool enabled)
 {
-    QJsonObject platforms = m_config.value("platforms").toObject();
+    QJsonObject platforms = m_config.value(STR_KEY_PLATFORMS).toObject();
     QJsonObject pCfg      = platforms.value(key).toObject();
-    pCfg["enabled"]       = enabled;
+    pCfg[STR_KEY_ENABLED]       = enabled;
     platforms[key]        = pCfg;
-    m_config["platforms"] = platforms;
+    m_config[STR_KEY_PLATFORMS] = platforms;
     saveToService();
 }
 
@@ -240,7 +250,7 @@ void ChatBotWidget::onConfigureClicked(const QString &key)
 {
     ChatBotPlatformDialog dlg(key, this);
 
-    QJsonObject platforms = m_config.value("platforms").toObject();
+    QJsonObject platforms = m_config.value(STR_KEY_PLATFORMS).toObject();
     dlg.setConfig(platforms.value(key).toObject());
 
     if (dlg.exec() != QDialog::Accepted)
@@ -252,7 +262,7 @@ void ChatBotWidget::onConfigureClicked(const QString &key)
         existing[it.key()] = it.value();
 
     platforms[key]        = existing;
-    m_config["platforms"] = platforms;
+    m_config[STR_KEY_PLATFORMS] = platforms;
     saveToService();
 
     qCInfo(logAIGUI) << "Chatbot platform credentials updated:" << key;
@@ -266,13 +276,13 @@ void ChatBotWidget::onServiceConfigChanged(const QJsonObject &config)
     m_config = config;
 
     m_mainSwitch->blockSignals(true);
-    m_mainSwitch->setChecked(config.value("enabled").toBool(false));
+    m_mainSwitch->setChecked(config.value(STR_KEY_ENABLED).toBool(false));
     m_mainSwitch->blockSignals(false);
-    updatePlatformGroupVisible(config.value("enabled").toBool(false));
+    updatePlatformGroupVisible(config.value(STR_KEY_ENABLED).toBool(false));
 
-    QJsonObject platforms = config.value("platforms").toObject();
+    QJsonObject platforms = config.value(STR_KEY_PLATFORMS).toObject();
     for (auto it = m_platformRows.begin(); it != m_platformRows.end(); ++it) {
         QJsonObject pCfg = platforms.value(it.key()).toObject();
-        it.value().row->setChecked(pCfg.value("enabled").toBool(false));
+        it.value().row->setChecked(pCfg.value(STR_KEY_ENABLED).toBool(false));
     }
 }

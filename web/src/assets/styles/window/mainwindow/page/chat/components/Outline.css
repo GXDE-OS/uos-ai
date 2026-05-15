@@ -1,0 +1,678 @@
+html {
+    --outline-title-bg: transparent;
+    --outline-title-text: rgba(0, 0, 0, 1);
+    --outline-title-border: rgba(0, 0, 0, 0.1);
+    --outline-section-bg: transparent;
+    --outline-section-bg-hover: rgba(0, 0, 0, 0.05);
+    --outline-section-text: rgba(0, 0, 0, 1);
+    --outline-section-border: rgba(0, 0, 0, 0.08);
+    --outline-section-drag: rgba(243, 245, 248, 1);
+    --outline-subsection-bg: transparent;
+    --outline-subsection-bg-hover: rgba(0, 0, 0, 0.05);
+    --outline-subsection-text: rgba(0, 0, 0, 0.7);
+    --outline-drag-handle-color: rgba(0, 0, 0, 0.3);
+    --outline-button-color: rgba(0, 0, 0, 0.7);
+    --outline-button-bg-hover: rgba(0, 0, 0, 0.1);
+    --outline-button-bg-active: rgba(0, 0, 0, 0.2);
+    --outline-button-box-shadow: none;
+    --outline-text-placeholder: rgba(85, 85, 85, 1);
+    --outline-ghost-overlay-bg: rgba(249, 249, 249, 1);
+    --outline-quick-input-bg: rgba(31, 110, 231, 1);
+    --outline-quick-input-hover-bg: rgba(36, 114, 255, 1);
+    --outline-quick-input-active-bg: rgba(0, 69, 194, 1);
+    --outline-quick-input-text: white;
+    --outline-quick-input-text-active: rgba(255, 255, 255, 0.7);
+
+    /* 深浅通用 */
+    --outline-editing-border-color: var(--system-active-color-alpha-50);
+}
+
+html.dark {
+    --outline-title-bg: transparent;
+    --outline-title-text: rgba(255, 255, 255, 0.7);
+    --outline-title-border: rgba(255, 255, 255, 0.1);
+    --outline-section-bg: transparent;
+    --outline-section-bg-hover: rgba(255, 255, 255, 0.05);
+    --outline-section-text: rgba(255, 255, 255, 0.7);
+    --outline-section-border: rgba(255, 255, 255, 0.1);
+    --outline-section-drag: rgba(33, 39, 60, 1);
+    --outline-subsection-bg: transparent;
+    --outline-subsection-bg-hover: rgba(255, 255, 255, 0.05);
+    --outline-subsection-text: rgba(255, 255, 255, 0.7);
+    --outline-drag-handle-color: rgba(255, 255, 255, 0.3);
+    --outline-button-color: rgba(255, 255, 255, 0.7);
+    --outline-button-bg-hover: rgba(20, 20, 20, 0.2);
+    --outline-button-bg-active: rgba(0, 0, 0, 0.15);
+    --outline-button-box-shadow: 0 1px 0 0 inset rgba(255, 255, 255, 0.1) , 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
+    --outline-text-placeholder: rgba(255, 255, 255, 1);
+    --outline-ghost-overlay-bg: rgba(32, 32, 32, 1);
+    --outline-quick-input-bg: rgba(31, 110, 231, 1);
+    --outline-quick-input-hover-bg: rgba(36, 114, 255, 1);
+    --outline-quick-input-active-bg: rgba(0, 69, 194, 1);
+    --outline-quick-input-text: white;
+    --outline-quick-input-text-active: rgba(255, 255, 255, 0.7);
+}
+
+/* Outline Viewer 组件样式 */
+
+.outline-viewer {
+    width: 100%;
+    min-width: 200px;
+    cursor: default;
+}
+
+/* 拖拽时禁用所有 hover 效果 */
+.outline-viewer--dragging {
+    pointer-events: none;
+}
+
+/* ===== 大纲标题 ===== */
+.outline-title {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0 0px 9px;
+    padding: 11px 10px;
+    border: 1px solid var(--outline-title-border);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.outline-title__text {
+    flex: 1;
+    min-width: 0;
+    font-size: var(--uosai-font-size-md);
+    font-weight: 500;
+    color: var(--outline-title-text);
+    cursor: text;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.outline-title__input,
+.outline-section__input,
+.outline-subsection__input,
+.outline-subsection__add-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+.outline-section__input {
+    font-size: var(--uosai-font-size-md);
+}
+
+/* title input 高度继承父元素 */
+.outline-title__input {
+    height: inherit;
+    font-size: var(--uosai-font-size-md);
+}
+
+/* section/subsection 编辑框（textarea）跟随内容高度自适应 */
+.outline-section__input,
+.outline-subsection__input {
+    display: block;
+    resize: none;
+    overflow: hidden;
+}
+
+.outline-title__input::placeholder,
+.outline-section__input::placeholder,
+.outline-subsection__input::placeholder,
+.outline-subsection__add-input::placeholder {
+    color: var(--outline-text-placeholder);
+}
+
+.outline-subsection__add-input {
+    height: 40px;
+}
+
+/* ===== 大章节数组容器 ===== */
+.outline-viewer__sections {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 增加章节按钮 */
+.outline-viewer__add-section {
+    height: 40px;
+    border: 1px solid var(--outline-section-border);
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: var(--uosai-font-size-base);
+    padding: 0 10px;
+    outline: none;
+    color: var(--outline-section-text)
+}
+
+.outline-viewer__add-section:hover {
+    color: var(--system-active-color);
+}
+
+.outline-viewer__add-section .svg-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+
+.outline-viewer__add-section.disabled {
+    color: var(--outline-section-border);
+    cursor: default;
+}
+
+/* 新增章节输入行 */
+.outline-section--adding {
+    padding: 0 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--outline-editing-border-color);
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.outline-section__add-input {
+    width: 100%;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--outline-section-text);
+}
+
+.outline-section__add-input::placeholder {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    font-style: medium;
+}
+
+/* ===== 大章节 ===== */
+.outline-section {
+    position: relative;
+    margin: 0 0 12px 0;
+    border: 1px solid var(--outline-section-border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+                background-color 0.15s ease,
+                opacity 0.18s ease;
+    will-change: transform;
+}
+
+.outline-section:hover:not(.outline-section--subsection-hover) {
+    background-color: var(--outline-section-bg-hover);
+}
+
+/* 大章节头部 */
+.outline-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.outline-section__title {
+    flex: 1;
+    min-width: 0;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 600;
+    color: var(--outline-section-text);
+}
+
+/* 仅文字区域可点击编辑 */
+.outline-section__title-text {
+    cursor: text;
+    font-size: var(--uosai-font-size-md);
+}
+
+.outline-section__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--outline-button-color);
+    cursor: pointer;
+    padding: 0px;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+
+.outline-section__button:hover:not(.disabled) {
+    background-color: var(--outline-button-bg-hover);
+    box-shadow: var(--outline-button-box-shadow);
+}
+.outline-section__button:active:not(.disabled) {
+    background-color: var(--outline-button-bg-active);
+    color: var(--system-active-color);
+    box-shadow: none;
+}
+
+.outline-section__button .svg-icon {
+    width: 16px;
+    height: 16px;
+}
+.outline-section__button.disabled {
+    color: var(--outline-section-border);
+    cursor: default;
+}
+
+.outline-section {
+    cursor: default;
+}
+/* ===== 可编辑状态拖拽光标 ===== */
+.outline-section--editable {
+    cursor: move;
+}
+
+/* 编辑/新增状态下禁止拖拽，光标视觉还原 */
+.outline-section--input-focused,
+.outline-section--input-focused .outline-drag-handle {
+    cursor: default;
+}
+
+/* 按钮显示箭头光标 */
+.outline-section--editable button {
+    cursor: default;
+}
+
+/* 输入框保持文本光标 */
+.outline-section--editable input,
+.outline-section--editable textarea {
+    cursor: text;
+}
+
+/* 子章节区域不继承 move */
+.outline-section--editable .outline-section__content {
+    cursor: default;
+}
+
+.outline-section--dragging {
+    opacity: 0.35;
+}
+
+.outline-section--drag-placeholder {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.12s ease;
+}
+
+.outline-section--ghost {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); */
+    border-radius: 10px;
+    opacity: 1;
+    background: var(--outline-ghost-overlay-bg);
+    border: 1px solid var(--outline-section-border);
+    box-sizing: border-box;
+}
+
+.outline-section--ghost-settling {
+    transition: top 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                left 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                width 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                height 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.18s ease;
+}
+
+/* 大章节内容容器（小章节） */
+.outline-section__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+}
+
+/* ===== 小章节 ===== */
+.outline-subsection {
+    min-height: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.18s ease;
+    will-change: transform;
+}
+
+/* 没有新增输入行时，最后一个子章节补底部间距；有新增输入行时取消，避免重复空白
+   （由 Vue !isAdding 动态添加 class，替代 :not(:has()) 以兼容 Qt5 WebEngine） */
+.outline-section__content--no-adding .outline-subsection-wrapper:last-child .outline-subsection {
+    margin-bottom: 10px;
+}
+
+/* 高亮区域不包含左侧 drag handle */
+.outline-subsection__content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+    padding-right: 2px;
+    padding-left: 4px;
+}
+
+.outline-subsection:hover .outline-subsection__content {
+    background-color: var(--outline-subsection-bg-hover);
+}
+
+.outline-subsection__title {
+    flex: 1;
+    min-width: 0;
+    font-size: var(--uosai-font-size-sm);
+    color: var(--outline-subsection-text);
+    line-height: var(--uosai-line-height-normal);
+}
+
+/* 仅文字区域可点击编辑 */
+.outline-subsection__title-text {
+    cursor: text;
+}
+
+.outline-subsection__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--outline-button-color);
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0px 2px;
+    flex-shrink: 0;
+    opacity: 0;
+    transition:
+        opacity 0.2s ease,
+        color 0.2s ease;
+    outline: none;
+}
+
+.outline-subsection:hover .outline-subsection__delete {
+    opacity: 1;
+}
+
+/* 新增子章节输入行 */
+.outline-subsection--adding {
+    padding: 0 0 10px 20px;
+}
+
+.outline-subsection__add-input {
+    width: 100%;
+    font-size: var(--uosai-font-size-sm);
+    color: #595959;
+    line-height: var(--uosai-line-height-normal);
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 2px 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+
+/* ===== 拖拽手柄 ===== */
+.outline-drag-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    cursor: move;
+    color: var(--outline-drag-handle-color);
+    margin-right: 0px;
+    transition: color 0.2s ease;
+    user-select: none;
+}
+
+.outline-drag-handle:hover {
+    color: var(--outline-drag-handle-hover-color);
+}
+
+.outline-drag-handle .svg-icon {
+    width: 7px;
+    height: 12px;
+}
+
+.outline-drag-handle.disabled {
+    cursor: default;
+    color: var(--outline-section-border);
+}
+
+/* 拖拽中的条目（半透明） */
+/* section 拖拽状态见上方 .outline-section--dragging */
+
+.outline-subsection--dragging {
+    opacity: 0.35;
+}
+
+/* 编辑态：小章节取消固定高度，保持居中对齐；drag handle 光标还原 */
+.outline-subsection--input-focused {
+    height: auto;
+    min-height: 40px;
+}
+
+.outline-subsection--input-focused .outline-subsection__content {
+    height: auto;
+}
+
+.outline-subsection--input-focused .outline-drag-handle {
+    cursor: default;
+}
+
+.outline-subsection--drag-placeholder {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.12s ease;
+}
+
+/* 幽灵克隆（跟随鼠标的浮动副本） */
+/* section ghost 见上方 .outline-section--ghost */
+
+.outline-subsection--ghost {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 1;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); */
+    border-radius: 6px;
+    background: var(--outline-ghost-overlay-bg);
+    box-sizing: border-box;
+}
+.outline-subsection--ghost::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    border: 1px solid var(--outline-section-border);
+}
+
+.outline-subsection--ghost-settling {
+    transition: top 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                left 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                width 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                height 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.18s ease;
+}
+
+.outline-quick-input {
+    width: auto !important;
+    height: 36px !important;
+    /* box-shadow: 0 -1px 0 0 inset rgba(0, 0, 0, 0.2); */
+    border-radius: 8px;
+    background-color: var(--outline-quick-input-bg) !important;
+    padding-right: 16px;
+    padding-left: 10px;
+}
+.outline-quick-input::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.outline-quick-input:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    border-bottom: 1px solid rgba(17, 47, 251, 0.5);
+}
+.outline-quick-input:active::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    border-bottom: 1px solid rgba(17, 47, 251, 0.5);
+}
+.outline-quick-input:hover {
+    background-color: var(--outline-quick-input-hover-bg) !important;
+}
+.outline-quick-input:active {
+    background-color: var(--outline-quick-input-active-bg) !important;
+}
+/* 正常状态：白色文字/图标 */
+.outline-quick-input .icon-text-button-text,
+.outline-quick-input .svg-icon {
+    color: var(--outline-quick-input-text) !important;
+}
+
+/* hover 状态：保持白色（视觉连续） */
+.outline-quick-input:hover .icon-text-button-text,
+.outline-quick-input:hover .svg-icon {
+    color: var(--outline-quick-input-text) !important;
+}
+
+/* active 状态：半透明白色（按下反馈） */
+.outline-quick-input:active .icon-text-button-text,
+.outline-quick-input:active .svg-icon {
+    color: var(--outline-quick-input-text-active) !important;
+}
+
+
+/* ===== 大章节新增动画（展开）===== */
+.section-list-enter-active {
+    overflow: hidden;
+    /* 内容快速展开，透明度稍慢淡入 */
+    transition:
+        max-height 0.3s cubic-bezier(0, 0, 0.2, 1),
+        opacity 0.28s ease,
+        margin-bottom 0.3s ease,
+        padding-bottom 0.3s ease;
+}
+
+.section-list-enter-from {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-list-enter-to {
+    max-height: 600px;
+    opacity: 1;
+}
+
+/* ===== 大章节删除动画（收缩）===== */
+/* 策略：先让 opacity 快速降至 0（0.16s），再等 max-height 降到 0（0.22s）；
+   用户看到"章节消失"后，空间再悄然合拢，感知不到 max-height 动画的延迟 */
+.section-list-leave-active {
+    overflow: hidden;
+    transition:
+        max-height 0.22s ease,
+        opacity 0.16s ease,
+        margin-bottom 0.22s ease,
+        padding-bottom 0.22s ease;
+}
+
+.section-list-leave-from {
+    max-height: 600px;
+    opacity: 1;
+}
+
+.section-list-leave-to {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-list-move {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===== 小章节新增动画（展开）===== */
+/* 子章节固定高度 40px，max-height 完全精准，动画线性流畅 */
+.subsection-list-enter-active {
+    overflow: hidden;
+    transition:
+        max-height 0.2s cubic-bezier(0, 0, 0.2, 1),
+        opacity 0.18s ease;
+}
+
+.subsection-list-enter-from {
+    max-height: 0;
+    opacity: 0;
+}
+
+.subsection-list-enter-to {
+    max-height: 40px;
+    opacity: 1;
+}
+
+/* ===== 小章节删除动画（收缩）===== */
+.subsection-list-leave-active {
+    overflow: hidden;
+    transition:
+        max-height 0.18s ease,
+        opacity 0.13s ease;
+}
+
+.subsection-list-move {
+    transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.subsection-list-leave-from {
+    max-height: 40px;
+    opacity: 1;
+}
+
+.subsection-list-leave-to {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* 大纲编辑态，边框高亮 */
+.outline-title--input-focused,
+.outline-section--input-focused,
+.outline-subsection__add-input:focus,
+.outline-subsection--input-focused .outline-subsection__content {
+    border: 1px solid var(--outline-editing-border-color);
+}

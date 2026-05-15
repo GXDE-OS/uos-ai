@@ -37,7 +37,7 @@
 #include <QtCore/QMetaProperty>
 #include <QtCore/QVariant>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_GLOBAL_STATIC_WITH_ARGS(QByteArray, dBusInterface, ("org.freedesktop.DBus"))
 Q_GLOBAL_STATIC_WITH_ARGS(QByteArray, dBusPropertiesInterface, ("org.freedesktop.DBus.Properties"))

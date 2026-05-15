@@ -1,7 +1,7 @@
 #ifndef CIRCLEBUTTON_H
 #define CIRCLEBUTTON_H
 
-#include "uosai_global.h"
+
 
 #include <DPushButton>
 

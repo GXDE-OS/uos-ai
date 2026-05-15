@@ -1,0 +1,194 @@
+html {
+    --title-bar-color-button-text: rgba(0, 0, 0, 0.7);
+    --title-bar-color-button-hover: rgba(0, 0, 0, var(--bg-opacity-hover));
+    --title-bar-color-button-active: rgba(0, 0, 0, var(--bg-opacity-active));
+}
+html.dark {
+    --title-bar-color-button-text: rgba(255, 255, 255, 0.7);
+    --title-bar-color-button-hover: rgba(255, 255, 255, var(--bg-opacity-hover));
+    --title-bar-color-button-active: rgba(255, 255, 255, var(--bg-opacity-active));
+}
+
+/* 标题栏容器 */
+.title-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: rgb(0, 0, 0); */
+    padding: 0 0 0 8px;
+    user-select: none;
+    z-index: 100;
+    pointer-events: auto;
+    -webkit-app-region: drag; /* 允许拖动窗口 */
+}
+
+/* 标题栏左侧区域 */
+.title-bar-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.title-bar__new-conversation-slot {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 4px);
+    display: flex;
+    justify-content: flex-end;
+    width: 34px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.title-bar__new-conversation-shell {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    opacity: 0;
+    pointer-events: none;
+    flex-shrink: 0;
+    transform: translateX(6px) scale(0.92);
+    transform-origin: right center;
+}
+
+.title-bar__new-conversation-shell--animated {
+    transition:
+        opacity var(--sidebar-layout-transition-duration) var(--sidebar-layout-transition-easing),
+        transform var(--sidebar-layout-transition-duration) var(--sidebar-layout-transition-easing);
+}
+
+.title-bar__new-conversation-shell--visible {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    pointer-events: auto;
+}
+
+.title-bar__new-conversation-button {
+    flex-shrink: 0;
+}
+
+/* 标题栏中间区域 */
+.title-bar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    -webkit-app-region: no-drag;
+}
+
+/* 吸附于分界线的容器 */
+.title-bar-splitter-attached {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    -webkit-app-region: no-drag;
+    z-index: 10;
+}
+
+.title-bar-splitter-attached--animated {
+    transition: left var(--sidebar-layout-transition-duration) var(--sidebar-layout-transition-easing);
+}
+
+/* 应用图标 */
+.app-icon {
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+    margin-right: 20px;
+    -webkit-app-region: no-drag;
+    flex-shrink: 0;
+}
+
+/* 模型选择器 */
+.model-selector {
+    -webkit-app-region: no-drag;
+}
+
+.model-selector .combobox {
+    max-width: 200px;
+    height: 32px;
+    border-radius: 6px;
+    padding: 0 8px;
+    font-size: var(--uosai-font-size-sm);
+}
+
+.model-selector .combobox-text {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.model-selector .combobox-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.model-selector .combobox.combobox--compact {
+    min-width: 0;
+    max-width: 50px;
+    padding: 0 8px;
+    justify-content: center;
+}
+
+.title-bar__back-button {
+    display: inline-flex;
+    align-items: center;
+    max-width: 200px;
+    height: 32px;
+    padding: 0 16px 0 10px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--title-bar-color-button-text);
+    cursor: pointer;
+    transition: background var(--transition-normal);
+}
+
+.title-bar__back-button:hover {
+    background: var(--title-bar-color-button-hover);
+}
+
+.title-bar__back-button:active {
+    background: var(--title-bar-color-button-active);
+}
+
+.title-bar__back-button-icon {
+    transform: rotate(90deg);
+    flex-shrink: 0;
+}
+
+.title-bar__back-button-text {
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 标题栏右侧按钮区域 */
+.title-bar-right {
+    display: flex;
+    -webkit-app-region: no-drag; /* 按钮区域不允许拖动 */
+}
+
+.title-bar__button--digital_human_active {
+    color: var(--system-active-color) !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+    .title-bar {
+        padding: 0 12px;
+    }
+}

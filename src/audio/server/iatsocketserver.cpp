@@ -1,24 +1,27 @@
 #include "iatsocketserver.h"
-#include "authweburl.h"
-#include "networkdefs.h"
+#include "network/authweburl.h"
 #include "iatcodetranslation.h"
+#include "global_key_define.h"
+
 #include <QLoggingCategory>
+#include <QNetworkReply>
 
 Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
-const int STATUS_FIRST_FRAME    = 0;
-const int STATUS_CONTINUE_FRAME = 1;
-const int STATUS_LAST_FRAME     = 2;
+static const int STATUS_FIRST_FRAME    = 0;
+static const int STATUS_CONTINUE_FRAME = 1;
+static const int STATUS_LAST_FRAME     = 2;
 
-const int payloadSize = 1280;
-const int payloadInterval = 40;
+static const int payloadSize = 1280;
+static const int payloadInterval = 40;
 
-IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
+using namespace uos_ai;
+
+IatSocketServer::IatSocketServer(const ProviderAccount &account, QObject *parent)
     : IatServer(parent)
     , m_account(account)
 {
-    m_account.socketProxy.socketProxyType = SocketProxyType::NO_PROXY;
-    m_web = AuthWebUrl::webSocket(m_account.socketProxy);
+    m_web = AuthWebUrl::webSocket();
 
     connect(m_web.data(), QOverload<QAbstractSocket::SocketError>::of(&QWebSocket::error), [ = ](QAbstractSocket::SocketError errorCode) {
         // 这里有时候正常对出了，服务器也要返回一个RemoteHostClosedError
@@ -28,14 +31,13 @@ IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
         }
 
         qCWarning(logAudio) << "WebSocket error:" << errorCode << m_web->errorString();
-        AIServer::ErrorType serverError = AIServer::socketErrorToAiServerError(static_cast<QAbstractSocket::SocketError>(errorCode));
-        QString errorMessage = IatCodeTranslation::serverCodeTranslation(serverError, m_web->errorString());
+        QString errorMessage = IatCodeTranslation::serverCodeTranslation(static_cast<int>(errorCode), m_web->errorString());
 
         // Qt组装的，去掉Qt起始信息
         if (errorMessage.startsWith("QWebSocketPrivate::processHandshake:"))
             errorMessage = errorMessage.mid(QString("QWebSocketPrivate::processHandshake:").length()).trimmed();
 
-        emit error(serverError, errorMessage);
+        emit error(errorCode, errorMessage);
     });
 
     connect(m_web.data(), &QWebSocket::textMessageReceived, this, &IatSocketServer::onTextMessageReceived);
@@ -46,7 +48,7 @@ IatSocketServer::IatSocketServer(const AccountProxy &account, QObject *parent)
 
     m_abnormalExitTimer.setSingleShot(true);
     connect(&m_abnormalExitTimer, &QTimer::timeout, this, [=](){
-        if (m_error == AIServer::OperationCanceledError) {
+        if (m_error == QNetworkReply::OperationCanceledError) {
             qCDebug(logAudio) << "Abnormal exit timeout triggered";
             normalExitServer();
         }
@@ -59,7 +61,7 @@ void IatSocketServer::cancel()
         normalExitServer();
     } else {
         m_processTimer.start();
-        m_error = AIServer::OperationCanceledError;
+        m_error = QNetworkReply::OperationCanceledError;
     }
 }
 
@@ -84,7 +86,7 @@ void IatSocketServer::onTextMessageReceived(const QString &message)
         }
     } else {
         qCWarning(logAudio) << "Server error - code:" << code << "message:" << errorMessage;
-        emit error(AIServer::ContentAccessDenied, IatCodeTranslation::serverCodeTranslation(code, errorMessage));
+        emit error(QNetworkReply::ContentAccessDenied, IatCodeTranslation::serverCodeTranslation(code, errorMessage));
     }
 }
 
@@ -95,7 +97,7 @@ void IatSocketServer::onDisconnected()
 
 void IatSocketServer::processData()
 {
-    if (m_data.isEmpty() && m_error == AIServer::OperationCanceledError) {
+    if (m_data.isEmpty() && m_error == QNetworkReply::OperationCanceledError) {
         qCDebug(logAudio) << "No data to process with cancel error, starting abnormal exit timer";
         m_processTimer.stop();
         m_abnormalExitTimer.start(3 * 1000);
@@ -115,7 +117,7 @@ void IatSocketServer::processData()
 
     QByteArray extractedData = m_data.left(payloadSize);
     
-    if (extractedData.size() < payloadSize && m_error == AIServer::OperationCanceledError) {
+    if (extractedData.size() < payloadSize && m_error == QNetworkReply::OperationCanceledError) {
         m_readStatus = STATUS_LAST_FRAME;
     } else if (extractedData.size() < payloadSize) {
         return;
@@ -133,7 +135,7 @@ void IatSocketServer::processData()
         data["encoding"] = "raw";
 
         QJsonObject commonArgs;
-        commonArgs.insert("app_id", m_account.appId);
+        commonArgs.insert("app_id", m_account.auth.value(STR_KEY_APP_ID).toString());
 
         QJsonObject businessArgs;
         businessArgs.insert("domain", "iat");
@@ -186,7 +188,9 @@ void IatSocketServer::openServer()
     }
 
     if (m_web->state() != QAbstractSocket::ConnectedState) {
-        const QUrl &url = AuthWebUrl::createUrl("GET", "wss://iat-api.xfyun.cn/v2/iat", m_account.apiKey, m_account.apiSecret);
+        const QUrl &url = AuthWebUrl::createUrl("GET", "wss://iat-api.xfyun.cn/v2/iat",
+                                                m_account.auth.value(STR_KEY_API_KEY).toString(),
+                                                m_account.auth.value(STR_KEY_API_SECRET).toString());
         m_web->open(url);
     }
 }

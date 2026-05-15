@@ -1,0 +1,72 @@
+/* 分组容器 */
+.group {
+    margin-top: 16px;
+    --group-header-height: 30px;
+    --group-sticky-order: 0;
+    position: relative;
+    scroll-margin-top: calc(var(--group-sticky-order) * var(--group-header-height));
+    user-select: none;
+}
+
+.group__items,
+.group__hidden-items,
+.group__drag-preview-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.group__hidden-items .base-item .base-item__content {
+    padding-left: 20px;
+}
+
+/* 统一拖拽预览中，隐藏区项仍需要保留原本的缩进层级。 */
+.group__drag-preview-item--hidden .base-item .base-item__content {
+    padding-left: 20px;
+}
+
+.group__items .base-item,
+.group__hidden-items .base-item,
+.group__drag-preview-list .base-item {
+    transition:
+        transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 0.15s ease,
+        opacity 0.18s ease;
+    will-change: transform;
+}
+
+.group__drag-toggle-row {
+    pointer-events: none;
+}
+
+.group__drop-placeholder {
+    height: 30px;
+    pointer-events: none;
+    transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.sidebar-reorder-move {
+    transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+/* 临时露出助手或跨区拖拽时关闭重排动画，避免同一项在两个区域之间闪烁。 */
+.group--reorder-transition-suppressed .base-item,
+.group--reorder-transition-suppressed .sidebar-reorder-move,
+.group--reorder-transition-suppressed .sidebar-reorder-enter-active,
+.group--reorder-transition-suppressed .sidebar-reorder-leave-active {
+    transition: none !important;
+}
+
+.group--reorder-transition-suppressed .sidebar-reorder-leave-active {
+    display: none !important;
+}
+
+.group__drag-overlay-item {
+    position: fixed;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    pointer-events: none;
+    z-index: 1000;
+}

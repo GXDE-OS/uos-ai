@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,0 L16,0 L16,16 L0,16 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/编辑器/无序列表" stroke="none" xlink:href="#path-1" fill-rule="nonzero">
+        <path d="M5,2 L15,2 L15,3 L5,3 L5,2 Z M1.75,1.75 L3.25,1.75 L3.25,3.25 L1.75,3.25 L1.75,1.75 Z M1.75,7.25 L3.25,7.25 L3.25,8.75 L1.75,8.75 L1.75,7.25 Z M5,7.5 L15,7.5 L15,8.5 L5,8.5 L5,7.5 Z M1.75,12.75 L3.25,12.75 L3.25,14.25 L1.75,14.25 L1.75,12.75 Z M5,13 L15,13 L15,14 L5,14 L5,13 Z" id="形状结合" fill="currentColor"></path>
+    </g>
+</svg>

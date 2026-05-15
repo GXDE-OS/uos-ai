@@ -19,6 +19,8 @@
 #include <QAudioSink>
 #endif
 
+namespace uos_ai {
+
 class AudioPlayer;
 class AudioPlayDevice : public QIODevice
 {
@@ -121,5 +123,5 @@ private:
     QList<QAudioOutput *> m_audioFileOutputs;
 #endif
 };
-
+} // namespace uos_ai
 #endif // AUDIOPLAYERSTREAM_H

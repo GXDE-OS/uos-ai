@@ -50,12 +50,12 @@ endif()
 # 配置选项
 option(ENABLE_AGENT_PLUGIN "Enable Agent Plugin" ON)
 option(ENABLE_MODEL_PLUGINS "Enable Model Plugins" OFF)
-option(ENABLE_ASSISTANT "Enable AI Assistant" ON)
-option(ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT "Enable Personal Knowledge Assistant" OFF)
+option(ENABLE_LOCAL_MODEL "Enable Local Model" ON)
 option(ENABLE_AI_BAR "Enable AI Bar" OFF)
 option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" ON)
 option(ENABLE_MCP "Enable MCP Server" ON)
 option(ENABLE_CHATBOT "Enable ChatBot" ON)
+option(ENABLE_ULLM "Enable YouRong" OFF)
 
 # 模型插件
 option(ENABLE_MODEL_FYDN "Enable FYDN Plugin" OFF)
@@ -81,11 +81,11 @@ endif()
 
 message("COMPILE ON GXDE ${BUILD_OS_VERSION}")
 
-#set(COMPILE_ON_V25 TRUE)
-#add_definitions(-DCOMPILE_ON_V25)
+set(COMPILE_ON_V25 TRUE)
+add_definitions(-DCOMPILE_ON_V25)
 
-add_definitions(-DCOMPILE_ON_V23)
-set(COMPILE_ON_V23 TRUE)
+#add_definitions(-DCOMPILE_ON_V23)
+#set(COMPILE_ON_V23 TRUE)
 
 #先默认打开ppt助手
 set(ENABLE_MODEL_PPT ON)
@@ -95,8 +95,7 @@ set(ENABLE_MODEL_POSTER ON)
 if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
     set(ENABLE_ASSISTANT OFF)
     set(ENABLE_MCP OFF)
-#else()
-#    set(ENABLE_MODEL_RPA ON)
+    set(ENABLE_LOCAL_MODEL OFF)
 endif()
 message("SYSTEM PROCESSOR ${CMAKE_SYSTEM_PROCESSOR} ${ENABLE_ASSISTANT}")
 
@@ -131,12 +130,8 @@ if (ENABLE_MODEL_PLUGINS)
     add_definitions(-DENABLE_MODEL_PLUGIN)
 endif()
 
-if (ENABLE_ASSISTANT)
-    add_definitions(-DENABLE_ASSISTANT)
-endif()
-
-if (ENABLE_PERSONAL_KNOWLEDGE_ASSISTANT)
-    add_definitions(-DENABLE_PERSONAL_KNOWLEDGE_ASSISTANT)
+if (ENABLE_LOCAL_MODEL)
+    add_definitions(-DENABLE_LOCAL_MODEL)
 endif()
 
 if (ENABLE_MCP)
@@ -145,6 +140,10 @@ endif()
 
 if (ENABLE_CHATBOT)
     add_definitions(-DENABLE_CHATBOT)
+endif()
+
+if (ENABLE_ULLM)
+    add_definitions(-DENABLE_ULLM)
 endif()
 
 if (ENABLE_AI_BAR)
@@ -156,6 +155,7 @@ endif()
 if (ENABLE_TRAY_PLUGIN)
     add_subdirectory(plugin-tray)
 endif()
+
 
 add_subdirectory(3rdparty)
 add_subdirectory(src)

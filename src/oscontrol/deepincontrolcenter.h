@@ -1,12 +1,13 @@
 #ifndef DEEPINCONTROLCENTER_H
 #define DEEPINCONTROLCENTER_H
-#include "controlcenterability.h"
 
 #include <QObject>
 #include <QDBusInterface>
 #include <QScopedPointer>
 
-class DeepinControlCenter : public QObject, public IControlCenter
+namespace uos_ai {
+
+class DeepinControlCenter : public QObject
 {
     Q_OBJECT
 public:
@@ -16,12 +17,13 @@ signals:
 
     // IControlCenter interface
 public:
-    int ShowModule(const QString &module) override;
-    int ShowPage(const QString &module, const QString &page) override;
-    int ShowPage(const QString &url) override;
+    int ShowModule(const QString &module);
+    int ShowPage(const QString &module, const QString &page);
+    int ShowPage(const QString &url);
 
 protected:
     QScopedPointer<QDBusInterface> m_controlCenterProxy;
 };
 
+} // namespace uos_ai
 #endif // DEEPINCONTROLCENTER_H

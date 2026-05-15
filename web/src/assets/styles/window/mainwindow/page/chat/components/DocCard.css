@@ -1,0 +1,171 @@
+html {
+    --doccard-title-color: rgba(0, 0, 0, 1);
+    --doccard-status-color: rgba(0, 0, 0, 0.7);
+    --doccard-bg: linear-gradient(180deg, 
+                rgba(0, 88, 222, 0.01) 0%, 
+                rgba(0, 88, 222, 0.05) 100%);
+    --doccard-border: rgba(0, 0, 0, 0.05);
+    --doccard-export-btn-bg: rgba(0, 0, 0, 0.05);
+    --doccard-export-btn-bg-hover: rgba(0, 0, 0, 0.10);
+    --doccard-export-btn-bg-active: rgba(0, 0, 0, 0.15);
+    --doccard-export-btn-fill: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --doccard-title-color: rgba(255, 255, 255, 1);
+    --doccard-status-color: rgba(255, 255, 255, 0.7);
+    --doccard-bg: linear-gradient( 180deg , 
+                rgba(255, 255, 255, 0.02) 0% , 
+                rgba(255, 255, 255, 0.08) 100% );
+    --doccard-border: rgba(255, 255, 255, 0.05);
+    --doccard-export-btn-bg: rgba(255, 255, 255, 0.1);
+    --doccard-export-btn-bg-hover: rgba(255, 255, 255, 0.15);
+    --doccard-export-btn-bg-active: rgba(255, 255, 255, 0.25);
+    --doccard-export-btn-fill: rgba(255, 255, 255, 1);
+}
+
+/* DocCard - 文档卡片组件样式 */
+
+/* ===== 卡片主体 ===== */
+.doc-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 320px;
+    height: 96px;
+    padding: 0 20px;
+    margin-top: 16px;
+    box-sizing: border-box;
+
+    border: 1px solid var(--doccard-border);
+    border-radius: 8px;
+    background: var(--doccard-bg);
+
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    position: relative; /* 为下拉菜单提供定位基准 */
+}
+
+/* .doc-card:hover {
+    border-color: rgba(0, 129, 255, 0.25);
+    box-shadow: 0 2px 8px rgba(0, 129, 255, 0.1);
+} */
+
+/* ===== 左侧信息区 ===== */
+.doc-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0; /* 防止文字撑开布局 */
+}
+
+/* 上部：图标 + 标题行 */
+.doc-card__title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+    margin-bottom: 10px;
+}
+
+/* 文件图标 */
+.doc-card__icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+/* 文档名称 */
+.doc-card__title {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    color: var(--doccard-title-color);
+    line-height: var(--uosai-line-height-extra-normal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+}
+
+/* 下部：状态行（默认为创建时间） */
+.doc-card__status {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--uosai-font-size-xs);
+    color: var(--doccard-status-color);
+    line-height: var(--uosai-line-height-extra-normal);
+}
+
+.doc-card__status-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.doc-card__status-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.doc-card__status-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.doc-card__status-icon-wrap.is-spinning {
+    animation: doc-card-spin 0.8s linear infinite;
+}
+
+/* .doc-card__status--success {
+    color: #2a9d55;
+}
+
+.doc-card__status--failed {
+    color: #d63f3f;
+} */
+
+@keyframes doc-card-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== 右侧操作区 ===== */
+.doc-card__actions {
+    position: relative;
+    flex-shrink: 0;
+    /* margin-left: 12px; */
+}
+
+/* 导出按钮 */
+.doc-card__export-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background-color: var(--doccard-export-btn-bg);
+    color: var(--doccard-export-btn-fill);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.doc-card__export-btn:hover {
+    background-color: var(--doccard-export-btn-bg-hover);
+}
+
+.doc-card__export-btn:active {
+    background-color: var(--doccard-export-btn-bg-active);
+}

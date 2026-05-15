@@ -1,7 +1,8 @@
 #include "researchtools.h"
+#include "iconstore.h"
 #include "agent/mcpclient.h"
-#include "gui/chat/private/eparserdocument.h"
 #include "localmodelserver.h"
+#include "services/fileservice/fileservice.h"
 
 #include <QLoggingCategory>
 #include <QIcon>
@@ -15,7 +16,7 @@
 #include <QUrl>
 #include <QThread>
 
-Q_DECLARE_LOGGING_CATEGORY(logAgent)
+Q_DECLARE_LOGGING_CATEGORY(logResearch)
 DWIDGET_USE_NAMESPACE
 
 namespace uos_ai {
@@ -56,19 +57,19 @@ static void showAgentInstallPrompt()
     QString sizeStr = getAgentSize();
     QString bodyText;
     if (!sizeStr.isEmpty()) {
-        bodyText = QObject::tr("The uos-ai-agent plugin (approximately %1) must be installed to save documents.").arg(sizeStr);
+        bodyText = QCoreApplication::translate("ResearchTools", "The uos-ai-agent plugin (approximately %1) must be installed to save documents.").arg(sizeStr);
     } else {
-        bodyText = QObject::tr("The uos-ai-agent plugin must be installed to save documents.");
+        bodyText = QCoreApplication::translate("ResearchTools", "The uos-ai-agent plugin must be installed to save documents.");
     }
 
     bool shouldDownload = false;
 
     auto showDialog = [&]() {
         DDialog dlg(nullptr);
-        dlg.setTitle(QObject::tr("Note"));
+        dlg.setTitle(QCoreApplication::translate("ResearchTools","Note"));
         dlg.setMessage(bodyText);
-        dlg.addButton(QObject::tr("Cancel"), false, DDialog::ButtonNormal);
-        dlg.addButton(QObject::tr("Download Now"), true, DDialog::ButtonRecommend);
+        dlg.addButton(QCoreApplication::translate("ResearchTools","Cancel"), false, DDialog::ButtonNormal);
+        dlg.addButton(QCoreApplication::translate("ResearchTools","Download Now"), true, DDialog::ButtonRecommend);
         if (dlg.exec() == DDialog::Accepted) {
             shouldDownload = true;
         }
@@ -87,14 +88,19 @@ static void showAgentInstallPrompt()
 
 QString ResearchTools::readDocument(const QString &documentPath)
 {
-    return EParserDocument::instance()->parserSync(documentPath);
+    QString err;
+    QString content = FileService::parseFileSync(documentPath, &err);
+    if (!err.isEmpty())
+        qCWarning(logResearch) << "readDocument error: " << err;
+
+    return content;
 }
 
 bool ResearchTools::md2Word(const QString &md, const QString &wordPath)
 {
     McpClient mcpClient;
     if (!mcpClient.init()) {
-        qCWarning(logAgent) << "Failed to initialize McpClient for WebScraper.";
+        qCWarning(logResearch) << "Failed to initialize McpClient for WebScraper.";
         showAgentInstallPrompt();
         return false;
     }
@@ -106,12 +112,13 @@ bool ResearchTools::md2Word(const QString &md, const QString &wordPath)
     params["text"] = md;
     params["path"] = wordPath;
 
-    qCInfo(logAgent) << "Calling MCP tool 'md_to_word'";
+    qCInfo(logResearch) << "Calling MCP tool 'md_to_word'";
 
     QPair<int, QString> result = mcpClient.callTool(agentName, toolName, params);
 
     if (result.first != 0) {
-        return false; // Return empty string on failure.
+        qCWarning(logResearch) << "ResearchTools::md2Word failed, error:" << result.first << result.second;
+        return false;
     }
 
     return true;
@@ -121,7 +128,7 @@ bool ResearchTools::md2Pdf(const QString &md, const QString &pdfPath)
 {
     McpClient mcpClient;
     if (!mcpClient.init()) {
-        qCWarning(logAgent) << "Failed to initialize McpClient for WebScraper.";
+        qCWarning(logResearch) << "Failed to initialize McpClient for WebScraper.";
         showAgentInstallPrompt();
         return false;
     }
@@ -133,12 +140,13 @@ bool ResearchTools::md2Pdf(const QString &md, const QString &pdfPath)
     params["text"] = md;
     params["path"] = pdfPath;
 
-    qCInfo(logAgent) << "Calling MCP tool 'md_to_pdf'";
+    qCInfo(logResearch) << "Calling MCP tool 'md_to_pdf'";
 
     QPair<int, QString> result = mcpClient.callTool(agentName, toolName, params);
 
     if (result.first != 0) {
-        return false; // Return empty string on failure.
+        qCWarning(logResearch) << "ResearchTools::md2Pdf failed, error:" << result.first << result.second;
+        return false;
     }
 
     return true;
@@ -154,7 +162,7 @@ bool ResearchTools::checkAgentInstalled()
     return true;
 }
 
-QString ResearchTools::getFileIconData(const QString &docPath)
+QString ResearchTools::getFileIconKey(const QString &docPath)
 {
     if (docPath.isEmpty())
         return QString();
@@ -163,13 +171,20 @@ QString ResearchTools::getFileIconData(const QString &docPath)
     if (!docInfo.exists())
         return QString();
 
+    // Generate icon key by extension (deduplicates across files with same type)
+    QString key = IconStore::extensionKey(docPath);
+    if (key.isEmpty())
+        return QString();
+
+    // Skip if already cached
+    if (IconStore::instance()->exists(key))
+        return key;
+
+    // Map docx/xlsx/pptx to doc/xls/ppt for correct system icon
     QStringList suffixReplace;
-    suffixReplace << "docx"
-                  << "xlsx"
-                  << "pptx";
+    suffixReplace << "docx" << "xlsx" << "pptx";
 
     if (suffixReplace.contains(docInfo.suffix())) {
-        // 文档后缀带x会获取到压缩包图标，需要去掉x: *.docx -> *.doc
         QString replaceXDocPath = docPath;
         replaceXDocPath.remove(replaceXDocPath.size() - 1, 1);
         docInfo.setFile(replaceXDocPath);
@@ -183,13 +198,8 @@ QString ResearchTools::getFileIconData(const QString &docPath)
 
     int size = static_cast<int>(qApp->devicePixelRatio() * 16);
     QImage image = icon.pixmap(size, size).toImage();
-    QByteArray data;
-    QBuffer buffer(&data);
-    buffer.open(QIODevice::WriteOnly);
-    image.save(&buffer, "PNG");
-    buffer.close();
 
-    return QString::fromLatin1(data.toBase64());
+    return IconStore::instance()->saveFromImage(key, image);
 }
 
 void ResearchTools::outlineJson2Md(const QJsonObject &outlineObj, int level, QString &markdown)

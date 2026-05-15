@@ -1,7 +1,7 @@
 #include "llmagent.h"
-#include "llm.h"
-#include "oaifunctionparser.h"
-#include "networkdefs.h"
+#include "model/abstractchatmodel.h"
+#include "global_key_define.h"
+#include "modeltool.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -10,10 +10,27 @@
 #include <QDir>
 #include <QDate>
 #include <QLoggingCategory>
+#include <QNetworkReply>
+#include <QThread>
 
 Q_DECLARE_LOGGING_CATEGORY(logAgent)
 
 namespace uos_ai {
+
+static bool isRetryable(QNetworkReply::NetworkError e) {
+    switch (e) {
+        case QNetworkReply::ConnectionRefusedError:
+        case QNetworkReply::RemoteHostClosedError:
+        case QNetworkReply::HostNotFoundError:
+        case QNetworkReply::TimeoutError:
+        case QNetworkReply::TemporaryNetworkFailureError:
+        case QNetworkReply::InternalServerError:
+        case QNetworkReply::ServiceUnavailableError:
+            return true;
+        default:
+            return false;
+    }
+};
 
 LlmAgent::LlmAgent(QObject *parent)
     : QObject(parent)
@@ -22,164 +39,215 @@ LlmAgent::LlmAgent(QObject *parent)
 
 }
 
+LlmAgent::~LlmAgent()
+{
+    // FIXME, 不断连会崩溃
+    if (m_llm)
+        disconnect(m_llm.data(), nullptr, this, nullptr);
+}
+
 bool LlmAgent::initialize()
 {
     return true;
 }
 
-void LlmAgent::setModel(QSharedPointer<LLM> llm)
+void LlmAgent::setModel(QSharedPointer<AbstractChatModel> llm)
 {
     m_llm = llm;
-    connect(llm.data(), &LLM::aborted, this, &LlmAgent::cancel, Qt::DirectConnection);
 }
 
-QJsonObject LlmAgent::processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params)
+void LlmAgent::setModelParams(const QVariantHash &params)
 {
-    QJsonObject response;
-    
+    m_modelParams = params;
+}
+
+QVariantHash LlmAgent::processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &agentParams)
+{
+    QVariantHash response;
+
     if (!m_llm) {
         qCWarning(logAgent) << "No model set for LlmAgent";
-        m_llm->setLastError(AIServer::ContentAccessDenied);
-        m_llm->setLastErrorString("Invalid LLM Account.");
         return response;
     }
-    
+
     auto messages = initChatMessages(question, history);
 
-    QJsonArray context;
-
+    QList<ModelMessage> context;
+    int chatTurn =  0;
     while (!canceled) {
-        if (m_llm->stream()) {
-            connect(m_llm.data(), &LLM::readyReadChatDeltaContent, this, [this](const QString &content) {
+        bool received = false;
+        chatTurn++;
+
+        if (m_modelParams.value(STR_KEY_STREAM, false).toBool()) {
+            connect(m_llm.data(), &AbstractChatModel::messageReceived, this, [this, &received, chatTurn](const MetaMessageList &msgs) {
                 if (canceled) {
-                    qCDebug(logAgent()) << "received delta content after abort." << content;
+                    qCDebug(logAgent) << "received delta content after abort.";
                     return;
                 }
 
-                OutputCtx ctx;
-                ctx.deltaContent = content;
-                bool ret = handleStreamOutput(&ctx);
+                if (!received) {
+                    received = true;
+                    qCDebug(logAgent) << "this turn received the first chunck." << name() << chatTurn;
+                }
+
+                bool ret = handleStreamOutput(msgs);
                 if (!ret) {
                     canceled = true;
-                    // cancle
-                    m_llm->aborted();
+                    // cancel
+                    m_llm->cancel();
                 }
             });
         }
 
-        QJsonObject output = m_llm->predict(QJsonDocument(messages).toJson(), m_tools);
-        disconnect(m_llm.data(), &LLM::readyReadChatDeltaContent, this, nullptr);
+        if (!m_tools.isEmpty())
+            m_modelParams[STR_KEY_TOOLS] = QVariant::fromValue(m_tools);
+        else
+            m_modelParams.remove(STR_KEY_TOOLS);
 
-        if (m_llm->lastError() != AIServer::NoError) {
-            response["context"] = context;
+        QVariantHash output;
+        // 重试三次
+        for (int i = 0; i < 3; ++i) {
+            output = m_llm->chatCompletion(messages, m_modelParams);
+
+            auto err = static_cast<QNetworkReply::NetworkError>(m_llm->lastError().value(STR_KEY_HTTP_ERROR).toInt());
+            if (isRetryable(err) && !received && output.isEmpty()) {
+                qCWarning(logAgent) << "model request error: "<< err << "retry" << i;
+                // 增加等待重试
+                for (int j = 0; j < (2 + i * 8); ++j) {
+                    QThread::msleep(500);
+                    qCDebug(logAgent) << "waiting for retry " << j << "check cancel" << canceled;
+                    if (canceled)
+                        break;
+                }
+
+                if (!canceled)
+                    continue;
+
+                qCInfo(logAgent) << "user cancel the request when retry";
+            }
+
+            break;
+        }
+
+        disconnect(m_llm.data(), &AbstractChatModel::messageReceived, this, nullptr);
+
+        ModelMessage curMsg;
+        {
+            curMsg.role = STR_KEY_ASSISTANT;
+            curMsg.source = name();
+            curMsg.content = MetaMessage::fromHash(output);
+
+            context.append(curMsg);
+            messages.append(curMsg);
+        }
+
+        if (!m_llm->lastError().isEmpty()) {
+            response[STR_KEY_CONTEXT] = QVariant::fromValue(context);
+            response[STR_KEY_CONTENT] = QVariant::fromValue(curMsg);
             return response;
         }
 
-        OAIFunctionParser parser;
-        if (parser.hasToolCalls(output)) {
-            auto tools = parser.parseResponse(output);
+        if (output.contains(STR_KEY_TOOL_CALLS)) {
+            ModelToolCallList tools = output.value(STR_KEY_TOOL_CALLS).value<ModelToolCallList>();
             if (tools.isEmpty())
                 break;
 
-            // 使用OAIFunctionParser创建OAI格式的assistant消息
-            QJsonObject assistantMsg = OAIFunctionParser::createAssistantMessage(tools);
-            context.append(assistantMsg);
-            messages.append(context.last());
-            
             bool isAbort = false;
             // 调用callTool接口并添加tool结果到聊天记录
             for (const auto &toolCall : tools) {
                 if (canceled)
                     break;
-
                 qCInfo(logAgent) << "Agent" << name() << "calling tool:" << toolCall.name << toolCall.arguments;
-                auto result = callTool(toolCall.name, toolCall.arguments);
+                auto result = callTool(toolCall.name, QJsonObject::fromVariantHash(toolCall.arguments));
                 if (result.first < 0)
                     isAbort = true;
-
                 qCInfo(logAgent) << "Agent" << name() << "tool" << toolCall.name << "output:" << result.second << result.first;
-                // 使用OAIFunctionParser创建tool消息
-                QJsonObject toolMsg = OAIFunctionParser::createToolMessage(toolCall, result.second);
-                context.append(toolMsg);
-                messages.append(context.last());
-            }
 
+                ModelMessage toolMsg = ModelMessage::toolOutput(toolCall.id, result.second);
+                toolMsg.source = name();
+
+                context.append(toolMsg);
+                messages.append(toolMsg);
+            }
             if (isAbort) {
                 qCWarning(logAgent) << "break flow by calling tool.";
+                response[STR_KEY_CONTENT] = QVariant::fromValue(curMsg);
+                response[STR_KEY_CONTEXT] = QVariant::fromValue(context);
                 break;
             }
-
             continue;
         }
 
-        context.append(QJsonObject{{"role","assistant"}, {"content", output.value("content").toString()}});
         // final output
-        response["content"] = output.value("content").toString();
+        response[STR_KEY_CONTENT] = QVariant::fromValue(curMsg);
+        response[STR_KEY_CONTEXT] = QVariant::fromValue(context);
         break;
     }
 
-    response["context"] = context;
     return response;
 }
 
-int LlmAgent::lastError() const
+QVariantHash LlmAgent::lastError() const
 {
-    if (m_llm.isNull())
-        return AIServer::ContentAccessDenied;
+    if (m_llm.isNull()) {
+        QVariantHash error;
+        error[STR_KEY_ERROR] = GErrorType::InvalidModel;
+        error[STR_KEY_MESSAGE] = "No model set for LlmAgent";
+        return error;
+    }
 
     return m_llm->lastError();
-}
-
-QString LlmAgent::lastErrorString() const
-{
-    if (m_llm.isNull())
-        return "Invalid LLM Account.";
-    return  m_llm->lastErrorString();
 }
 
 void LlmAgent::cancel()
 {
     qCInfo(logAgent) << "LLM agent request canceled";
     canceled = true;
+
+    if (m_llm)
+        m_llm->cancel();
 }
 
-QJsonArray LlmAgent::initChatMessages(const QJsonObject &question, const QJsonArray &history) const
+QList<ModelMessage> LlmAgent::initChatMessages(const ModelMessage &question, const QList<ModelMessage> &history) const
 {
-    QJsonArray initialMessages;
-    
+    QList<ModelMessage> initialMessages;
+
     // 添加系统消息
     {
         QString prompt = systemPrompt();
         if (!prompt.isEmpty()) {
-            QJsonObject systemMessage;
-            systemMessage["role"] = "system";
-            systemMessage["content"] = prompt;
+            ModelMessage systemMessage;
+            systemMessage.role = STR_KEY_SYSTEM;
+            systemMessage.content.append({ContentType::CntText, prompt});
             initialMessages.append(systemMessage);
         }
     }
-    
+
     // 添加历史消息，过滤掉system角色的消息
-    for (const QJsonValue &msg : history) {
-        QJsonObject msgObj = msg.toObject();
-        if (msgObj["role"].toString() != "system") {
+    for (const ModelMessage &msg : history) {
+        if (msg.role.compare(STR_KEY_SYSTEM) != 0) {
             initialMessages.append(msg);
         }
     }
-    
+
     // 添加当前用户问题
-    {
-        QJsonObject userMessage;
-        userMessage["role"] = "user";
-        userMessage["content"] = question["content"].toString();
-        initialMessages.append(userMessage);
-    }
-    
+    initialMessages.append(question);
+
     return initialMessages;
 }
 
-bool LlmAgent::handleStreamOutput(OutputCtx *ctx)
+bool LlmAgent::handleStreamOutput(const MetaMessageList &msgs)
 {
-    emit readyReadChatDeltaContent(ctx->deltaContent);
+    RenderMessageList rmsgs;
+    //todo 协议转换
+    for (const  MetaMessage &tmp : msgs) {
+        RenderMessage rmsg;
+        rmsg.type = tmp.type;
+        rmsg.data = tmp.data;
+        rmsgs.append(rmsg);
+    }
+
+    emit messageReceived(rmsgs);
     return true;
 }
 
@@ -190,18 +258,5 @@ QPair<int, QString> LlmAgent::callTool(const QString &toolName, const QJsonObjec
     return qMakePair(-1, QString("Tool calling not implemented"));
 }
 
-void LlmAgent::textChainContent(const QString &content)
-{
-    QJsonObject message;
-
-    message.insert("content", content);
-    message.insert("chatType", ChatAction::ChatTextPlain);  // 普通文本类型
-
-    QJsonObject wrapper;
-    wrapper.insert("message", message);
-    wrapper.insert("stream", true);
-
-    emit readyReadChatDeltaContent(QJsonDocument(wrapper).toJson());
-}
 
 } // namespace uos_ai 

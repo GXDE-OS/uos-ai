@@ -8,7 +8,7 @@
 #include <QLoggingCategory>
 Q_DECLARE_LOGGING_CATEGORY(logWordWizard)
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 XClipboard::XClipboard(QObject *parent) : BaseClipboard(parent)
 {

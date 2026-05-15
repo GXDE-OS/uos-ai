@@ -1,6 +1,5 @@
 #ifndef DISABLEAPPWIDGET_H
 #define DISABLEAPPWIDGET_H
-#include "uosai_global.h"
 
 #include <QVector>
 #include <QString>

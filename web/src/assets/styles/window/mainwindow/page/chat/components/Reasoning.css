@@ -1,0 +1,292 @@
+html {
+    --reasoning-bg: rgba(255, 255, 255, 0.3);
+    --reasoning-border: rgba(0, 0, 0, 0.08);
+    --reasoning-title-color: rgba(0, 0, 0, 0.7);
+    --reasoning-title-done-color: rgba(0, 0, 0, 0.5);
+    --reasoning-icon-opacity: 0.7;
+    --reasoning-icon-done-opacity: 0.5;
+    --reasoning-content-color: rgba(0, 0, 0, 0.5);
+    --reasoning-scrollbar-thumb: rgba(0, 0, 0, 0.5);
+    --reasoning-scrollbar-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px inset rgba(0, 0, 0, 0.05),
+        0 0 0 0.5px rgba(0, 0, 0, 0.05);
+    --reasoning-title-shimmer: rgba(0, 0, 0, 0.15);
+    --reasoning-header-expanded-bg: rgba(248, 248, 248, 0.95);
+    --reasoning-chevron-hover-bg: rgba(0, 0, 0, 0.1);
+    --reasoning-chevron-active-bg: rgba(0, 0, 0, 0.2);
+}
+
+html.dark {
+    --reasoning-bg: rgba(0, 0, 0, 0.15);
+    --reasoning-border: rgba(255, 255, 255, 0.1);
+    --reasoning-title-color: rgba(255, 255, 255, 0.5);
+    --reasoning-title-done-color: rgba(255, 255, 255, 0.5);
+    --reasoning-icon-opacity: 1;
+    --reasoning-icon-done-opacity: 1;
+    --reasoning-icon-color: rgba(151, 151, 151, 1);
+    --reasoning-content-color: rgba(255, 255, 255, 0.5);
+    --reasoning-scrollbar-thumb: rgba(255, 255, 255, 0.3);
+    --reasoning-scrollbar-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.05),
+        0 0 0 0.5px rgba(255, 255, 255, 0.05);
+    --reasoning-title-shimmer: rgba(255, 255, 255, 0.15);
+    --reasoning-header-expanded-bg: rgba(24, 24, 24, 0.95);
+    --reasoning-chevron-hover-bg: rgba(255, 255, 255, 0.1);
+    --reasoning-chevron-active-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Reasoning - 深度思考块 */
+
+.reasoning-block {
+    margin: 4px 0 8px;
+    border-radius: 10px;
+    border: 1px solid var(--reasoning-border);
+    background: var(--reasoning-bg);
+    overflow: hidden;
+    width: 100%;
+}
+
+.reasoning-block--compact {
+    width: fit-content;
+}
+
+.reasoning-block--done .reasoning-block__title {
+    color: var(--reasoning-title-done-color);
+}
+
+.reasoning-block__icon-wrapper,
+.reasoning-block__chevron {
+    opacity: var(--reasoning-icon-opacity);
+}
+
+.reasoning-block--done .reasoning-block__icon-wrapper,
+.reasoning-block--done .reasoning-block__chevron {
+    opacity: var(--reasoning-icon-done-opacity);
+}
+
+html.dark .reasoning-block__icon-wrapper,
+html.dark .reasoning-block__chevron {
+    color: var(--reasoning-icon-color);
+}
+
+/* ===== 标题栏 ===== */
+.reasoning-block__header {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    user-select: none;
+    gap: 0;
+    background: transparent;
+}
+
+/* deepthink 图标容器 */
+.reasoning-block__icon-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+/* 动画 WebP 图标（思考中）和静态 SVG（完成）：绝对定位居中 */
+.reasoning-block__icon-anim,
+.reasoning-block__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 300ms ease;
+}
+
+.reasoning-block__icon-anim {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.reasoning-block__icon {
+    opacity: 0;
+}
+
+/* 思考完成：动图淡出，静态图淡入 */
+.reasoning-block--done .reasoning-block__icon-anim {
+    opacity: 0;
+}
+
+.reasoning-block--done .reasoning-block__icon {
+    opacity: var(--reasoning-icon-done-opacity);
+}
+
+/* 标题文字 */
+.reasoning-block__title {
+    flex: 1;
+    font-family: SourceHanSansSC-Normal, sans-serif;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--reasoning-title-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 折叠/展开按钮 */
+.reasoning-block__chevron {
+    flex-shrink: 0;
+    margin-left: 14px;
+}
+
+.reasoning-block__chevron:hover {
+    background: var(--reasoning-chevron-hover-bg);
+}
+
+.reasoning-block__chevron:active {
+    background: var(--reasoning-chevron-active-bg);
+}
+
+/* ===== 内容区 ===== */
+
+/* 思考中：高度随内容增长，最高 192px，内容向上滚动 */
+.reasoning-block__body--thinking {
+    max-height: 152px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    background: transparent;
+    margin-right: 3px;
+}
+
+.reasoning-block__body--thinking::-webkit-scrollbar {
+    width: 4px;
+}
+
+.reasoning-block__body--thinking::-webkit-scrollbar-thumb {
+    height: 71px;
+    border-radius: 4px;
+    background-color: var(--reasoning-scrollbar-thumb);
+    box-shadow: var(--reasoning-scrollbar-shadow);
+}
+
+.reasoning-block__body--thinking::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* 全部展开：向下无限展开；自带完整底半圈边框（方案A：边框下放给 header + body） */
+.reasoning-block__body--full {
+    overflow-y: visible;
+    overflow-x: hidden;
+    background: transparent;
+    border: 1px solid var(--reasoning-border);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* 展开状态：移除 block 自身边框与 overflow:hidden，让 sticky 生效；
+   边框由 header（顶半圈）与 body--full（底半圈）各自承担 */
+.reasoning-block--expanded {
+    overflow: visible;
+    border: none;
+    position: relative;
+}
+
+/* 展开状态标题栏：吸附在滚动容器可视区顶部，直到整个块滚出视野 */
+.reasoning-block--expanded .reasoning-block__header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border: 1px solid var(--reasoning-border);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    background: var(--reasoning-header-expanded-bg);
+    backdrop-filter: blur(8px);
+}
+
+/* sticky 释放瞬间（block 下边追上 header 底部，header 即将随 block 整体上移）
+   给 header 补一条带圆角的下框线，让"只剩 header 一条"的瞬间呈完整胶囊封口 */
+.reasoning-block--expanded.reasoning-block--released .reasoning-block__header {
+    border-bottom: 1px solid var(--reasoning-border);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* 用伪元素填补 header 两个顶部圆角的 cutout 区域，
+   挡住 body 的左右竖线在滚动超出时从圆角外透出。
+   radial-gradient 以圆角中心为原点，半径外实心（涂掉竖线），半径内透明（保留圆角弧线）。
+   仅在 --stuck 时启用，避免未吸附时覆盖透明切角；-1px 偏移抵消 header 的 1px 边框
+   （absolute 定位参照 padding-box，向外扩 1px 才能对齐 border-box 角 & border-radius 弧心）。 */
+.reasoning-block--expanded.reasoning-block--stuck .reasoning-block__header::before,
+.reasoning-block--expanded.reasoning-block--stuck .reasoning-block__header::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+}
+
+.reasoning-block--expanded.reasoning-block--stuck .reasoning-block__header::before {
+    left: -1px;
+    background: radial-gradient(circle at 100% 100%,
+            transparent 10px,
+            var(--reasoning-header-expanded-bg) 10px);
+}
+
+.reasoning-block--expanded.reasoning-block--stuck .reasoning-block__header::after {
+    right: -1px;
+    background: radial-gradient(circle at 0% 100%,
+            transparent 10px,
+            var(--reasoning-header-expanded-bg) 10px);
+}
+
+/* ===== 思考中动画 ===== */
+
+/* 图标动画由 animated WebP 实现（圆点脉冲 + 旋转），文字流光保留 CSS */
+
+/* 文字流光：0%-40% 流动 */
+@keyframes reasoning-shimmer {
+    0%   { background-position: 100% 0; }
+    40%  { background-position: 0% 0; }
+    100% { background-position: 0% 0; }
+}
+
+.reasoning-block:not(.reasoning-block--done) .reasoning-block__title {
+    flex: none;
+    width: fit-content;
+    background: linear-gradient(
+        90deg,
+        var(--reasoning-title-color) 0%,
+        var(--reasoning-title-color) 40%,
+        var(--reasoning-title-shimmer) 47%,
+        var(--reasoning-title-shimmer) 53%,
+        var(--reasoning-title-color) 60%,
+        var(--reasoning-title-color) 100%
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: reasoning-shimmer 2.5s linear infinite;
+}
+
+
+/* 标题收缩后，chevron 靠 auto margin 右对齐 */
+.reasoning-block:not(.reasoning-block--done) .reasoning-block__chevron {
+    margin-left: auto;
+}
+
+/* 思考文本 */
+.reasoning-block__content {
+    padding: 0 20px 10px;
+    font-family: SourceHanSansSC-Normal, sans-serif;
+    font-size: var(--uosai-font-size-sm);
+    line-height: var(--uosai-line-height-extra-relaxed);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--reasoning-content-color);
+    white-space: pre-wrap;
+    word-break: break-word;
+}

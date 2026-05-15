@@ -1,8 +1,6 @@
 #include "localmodellistwidget.h"
 #include "themedlable.h"
-#include "localmodellistitem.h"
-#include "dbwrapper.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 #include "audiocontroler.h"
 #include "localmodelitem.h"
 #include "localmodelserver.h"
@@ -21,6 +19,7 @@
 #include <QLoggingCategory>
 
 using namespace uos_ai;
+DWIDGET_USE_NAMESPACE
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -43,17 +42,15 @@ void LocalModelListWidget::initUI()
     DFontSizeManager::instance()->bind(m_pWidgetLabel, DFontSizeManager::T6, QFont::Medium);
     layout->addWidget(m_pWidgetLabel, 0, Qt::AlignLeft);
 
-#ifdef ENABLE_ASSISTANT
+#ifdef ENABLE_LOCAL_MODEL
     layout->addWidget(embeddingPluginsWidget());
-#ifndef COMPILE_ON_V20
+#ifdef ENABLE_ULLM
     layout->addWidget(yourong1_5BLLMWidget());
     layout->addWidget(yourong7BLLMWidget());
 #endif
     layout->addWidget(deepseek_1_5BLLMWidget());
 #endif
 
-    layout->addWidget(speechRecognitionWidget());
-    layout->addWidget(textToImageWidget());
     layout->setSpacing(10);
     layout->addStretch();
 }
@@ -61,13 +58,7 @@ void LocalModelListWidget::initUI()
 void LocalModelListWidget::onThemeTypeChanged()
 {
     qCDebug(logAIGUI) << "Theme type changed for LocalModelListWidget.";
-    DPalette pl = m_pTextToImageWidget->palette();
-    pl.setBrush(DPalette::Base, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::ItemBackground));
-    m_pTextToImageWidget->setPalette(pl);
-
-    pl = m_pSpeechRecognitionWidget->palette();
-    pl.setBrush(DPalette::Base, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::ItemBackground));
-    m_pSpeechRecognitionWidget->setPalette(pl);
+    DPalette pl;
 
     if (m_pYouRong1_5B) {
         pl = m_pYouRong1_5B->palette();
@@ -87,12 +78,6 @@ void LocalModelListWidget::onThemeTypeChanged()
         m_pDeepseek1_5B->setPalette(pl);
     }
 
-    if (m_pLocalLlmWidget) {
-        pl = m_pLocalLlmWidget->palette();
-        pl.setBrush(DPalette::Base, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::ItemBackground));
-        m_pLocalLlmWidget->setPalette(pl);
-    }
-
     if (m_pEmbeddingPluginsWidget) {
         pl = m_pEmbeddingPluginsWidget->palette();
         pl.setBrush(DPalette::Base, DGuiApplicationHelper::instance()->applicationPalette().color(DPalette::ItemBackground));
@@ -105,60 +90,6 @@ void LocalModelListWidget::onSetRedPointVisible(bool isShow)
     qCDebug(logAIGUI) << "Set red point visible. isShow:" << isShow;
     m_isShowRedPoint |= isShow;
     emit sigRedPointVisible(m_isShowRedPoint);
-}
-
-DBackgroundGroup *LocalModelListWidget::textToImageWidget()
-{
-    qCDebug(logAIGUI) << "Creating textToImageWidget.";
-    LocalModelListItem *item = new LocalModelListItem(this);
-    item->setText(tr("Text to image model"), tr("Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface."));
-    item->setFixedHeight(78);
-    item->setAppName("texttoimage");
-    item->setSwitchChecked(DbWrapper::localDbWrapper().queryLlmByLlmid("TextToImage").isValid());
-    connect(item, &LocalModelListItem::signalSwitchChanged, this, [this](bool b) {
-        updateLocalModelSwitch(LocalModel::TextToImage, b);
-    });
-    connect(item, &LocalModelListItem::signalUninstall, [this]() {
-        updateLocalModelList();
-        updateLocalModelSwitch(LocalModel::TextToImage, false);
-    });
-
-    QHBoxLayout *bgLayout = new QHBoxLayout;
-    bgLayout->setContentsMargins(0, 0, 0, 0);
-    bgLayout->addWidget(item);
-
-    m_pTextToImageWidget = new DBackgroundGroup(bgLayout, this);
-    m_pTextToImageWidget->setContentsMargins(0, 0, 0, 0);
-
-    return m_pTextToImageWidget;
-}
-
-DBackgroundGroup *LocalModelListWidget::speechRecognitionWidget()
-{
-    qCDebug(logAIGUI) << "Creating speechRecognitionWidget.";
-    LocalModelListItem *item = new LocalModelListItem(this);
-    item->setText(tr("speech model"), tr("When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection."));
-    item->setFixedHeight(78);
-    item->setAppName("deepin-speech");
-    item->setSwitchChecked(DbWrapper::localDbWrapper().getLocalSpeech());
-    connect(item, &LocalModelListItem::signalSwitchChanged, this, [this](bool b) {
-        updateLocalModelSwitch(LocalModel::SpeechRecognition, b);
-        AudioControler::instance()->switchModel(b ? AudioControler::Local : AudioControler::NetWork);
-    });
-    connect(item, &LocalModelListItem::signalUninstall, [this]() {
-        updateLocalModelList();
-        updateLocalModelSwitch(LocalModel::SpeechRecognition, false);
-        AudioControler::instance()->switchModel(AudioControler::NetWork);
-    });
-
-    QHBoxLayout *bgLayout = new QHBoxLayout;
-    bgLayout->setContentsMargins(0, 0, 0, 0);
-    bgLayout->addWidget(item);
-
-    m_pSpeechRecognitionWidget = new DBackgroundGroup(bgLayout, this);
-    m_pSpeechRecognitionWidget->setContentsMargins(0, 0, 0, 0);
-
-    return m_pSpeechRecognitionWidget;
 }
 
 DBackgroundGroup *LocalModelListWidget::yourong1_5BLLMWidget()
@@ -218,24 +149,6 @@ DBackgroundGroup *LocalModelListWidget::deepseek_1_5BLLMWidget()
     return m_pDeepseek1_5B;
 }
 
-DBackgroundGroup *LocalModelListWidget::localLLMWidget()
-{
-    qCDebug(logAIGUI) << "Creating localLLMWidget.";
-    LocalModelItem *item = new LocalModelItem(this);
-    item->setText(tr("UOS AI large model"), tr("Once installed, you do not need an internet connection to use UOS AI."));
-    item->setAppName("uos-ai-llm");
-    item->setMinimumHeight(60);
-    item->setMaximumHeight(75);
-    QHBoxLayout *bgLayout = new QHBoxLayout;
-    bgLayout->setContentsMargins(0, 0, 0, 0);
-    bgLayout->addWidget(item);
-
-    m_pLocalLlmWidget = new DBackgroundGroup(bgLayout, this);
-    m_pLocalLlmWidget->setContentsMargins(0, 0, 0, 0);
-
-    return m_pLocalLlmWidget;
-}
-
 DBackgroundGroup *LocalModelListWidget::embeddingPluginsWidget()
 {
     qCDebug(logAIGUI) << "Creating embeddingPluginsWidget.";
@@ -259,43 +172,41 @@ DBackgroundGroup *LocalModelListWidget::embeddingPluginsWidget()
 void LocalModelListWidget::updateLocalModelList()
 {
     qCDebug(logAIGUI) << "Updating local model list.";
-    bool textToImageExists = checkModelExist(LocalModel::TextToImage);
-    bool speechRecognitionExists = checkModelExist(LocalModel::SpeechRecognition);
 
-    m_pTextToImageWidget->setVisible(textToImageExists);
-    m_pSpeechRecognitionWidget->setVisible(speechRecognitionExists);
-
-    auto yourong1_5BWidget = m_pYouRong1_5B->findChild<YouRongModelItem *>();
-    if (yourong1_5BWidget) {
-        yourong1_5BWidget->checkInstallStatus();
-    }
-    auto yourong7BWidget = m_pYouRong7B->findChild<YouRongModelItem *>();
-    if (yourong7BWidget) {
-        yourong7BWidget->checkInstallStatus();
-    }
-
-    auto deepseekWidget = m_pDeepseek1_5B->findChild<ModelScopeItem *>();
-    if (deepseekWidget) {
-        deepseekWidget->checkInstallStatus();
-    }
-
-    LocalModelItem *llmWidget = nullptr;
-    if (m_pLocalLlmWidget) {
-        llmWidget = m_pLocalLlmWidget->findChild<LocalModelItem *>();
-        if (llmWidget) {
-            llmWidget->stopTimer();
-            llmWidget->checkInstallStatus();
-            llmWidget->checkUpdateStatus();
+    bool isVisible = false;
+    if (m_pYouRong1_5B) {
+        auto yourong1_5BWidget = m_pYouRong1_5B->findChild<YouRongModelItem *>();
+        if (yourong1_5BWidget) {
+            yourong1_5BWidget->checkInstallStatus();
+            isVisible = true;
         }
     }
 
-    auto embeddingPluginsWidget = m_pEmbeddingPluginsWidget->findChild<LocalModelItem *>();
-    if (embeddingPluginsWidget) {
-        embeddingPluginsWidget->stopTimer();
-        embeddingPluginsWidget->checkInstallStatus();
-        embeddingPluginsWidget->checkUpdateStatus();
+    if (m_pYouRong7B) {
+        auto yourong7BWidget = m_pYouRong7B->findChild<YouRongModelItem *>();
+        if (yourong7BWidget) {
+            yourong7BWidget->checkInstallStatus();
+            isVisible = true;
+        }
     }
-    bool isVisible = textToImageExists || speechRecognitionExists || llmWidget || embeddingPluginsWidget || yourong1_5BWidget || yourong7BWidget;
+
+    if (m_pDeepseek1_5B) {
+        auto deepseekWidget = m_pDeepseek1_5B->findChild<ModelScopeItem *>();
+        if (deepseekWidget) {
+            deepseekWidget->checkInstallStatus();
+            isVisible = true;
+        }
+    }
+
+    if (m_pEmbeddingPluginsWidget) {
+        auto embeddingPluginsWidget = m_pEmbeddingPluginsWidget->findChild<LocalModelItem *>();
+        if (embeddingPluginsWidget) {
+            embeddingPluginsWidget->stopTimer();
+            embeddingPluginsWidget->checkInstallStatus();
+            embeddingPluginsWidget->checkUpdateStatus();
+            isVisible = true;
+        }
+    }
 
     this->setVisible(isVisible);
 
@@ -305,22 +216,32 @@ void LocalModelListWidget::updateLocalModelList()
 void LocalModelListWidget::clearRedPoint()
 {
     qCDebug(logAIGUI) << "Clearing red point.";
-    auto yourong1_5BWidget = m_pYouRong1_5B->findChild<YouRongModelItem *>();
-    if (yourong1_5BWidget) {
-        yourong1_5BWidget->saveNewHashFile();
-    }
-    auto yourong7BWidget = m_pYouRong7B->findChild<YouRongModelItem *>();
-    if (yourong7BWidget) {
-        yourong7BWidget->saveNewHashFile();
-    }
-    auto deepseekWidget = m_pDeepseek1_5B->findChild<ModelScopeItem *>();
-    if (deepseekWidget) {
-        deepseekWidget->saveNewHashFile();
+    if (m_pYouRong1_5B) {
+        auto yourong1_5BWidget = m_pYouRong1_5B->findChild<YouRongModelItem *>();
+        if (yourong1_5BWidget) {
+            yourong1_5BWidget->saveNewHashFile();
+        }
     }
 
-    auto embeddingPluginsWidget = m_pEmbeddingPluginsWidget->findChild<LocalModelItem *>();
-    if (embeddingPluginsWidget) {
-        embeddingPluginsWidget->saveUpdateVersion();
+    if (m_pYouRong7B) {
+        auto yourong7BWidget = m_pYouRong7B->findChild<YouRongModelItem *>();
+        if (yourong7BWidget) {
+            yourong7BWidget->saveNewHashFile();
+        }
+    }
+
+    if (m_pDeepseek1_5B) {
+        auto deepseekWidget = m_pDeepseek1_5B->findChild<ModelScopeItem *>();
+        if (deepseekWidget) {
+            deepseekWidget->saveNewHashFile();
+        }
+    }
+
+    if (m_pEmbeddingPluginsWidget) {
+        auto embeddingPluginsWidget = m_pEmbeddingPluginsWidget->findChild<LocalModelItem *>();
+        if (embeddingPluginsWidget) {
+            embeddingPluginsWidget->saveUpdateVersion();
+        }
     }
 
     m_isShowRedPoint = false;
@@ -330,62 +251,24 @@ void LocalModelListWidget::clearRedPoint()
 void LocalModelListWidget::stopDownload()
 {
     qCDebug(logAIGUI) << "Stopping download for all models.";
-    auto yourong1_5BWidget = m_pYouRong1_5B->findChild<YouRongModelItem *>();
-    if (yourong1_5BWidget)
-        yourong1_5BWidget->stopDownload();
-
-    auto yourong7BWidget = m_pYouRong7B->findChild<YouRongModelItem *>();
-    if (yourong7BWidget)
-        yourong7BWidget->stopDownload();
-
-    auto deepseekWidget = m_pDeepseek1_5B->findChild<ModelScopeItem *>();
-    if (deepseekWidget) {
-        deepseekWidget->stopDownload();
-    }
-}
-
-bool LocalModelListWidget::checkModelExist(const LocalModel model)
-{
-    qCDebug(logAIGUI) << "Checking if model exists. Model:" << model;
-    if (model == LocalModel::TextToImage) {
-        QFileInfo binInfo("/usr/bin/texttoimage");
-        return binInfo.exists() && binInfo.isFile();
-    } else if (model == LocalModel::SpeechRecognition) {
-        QFileInfo binInfo("/usr/bin/speechrecognition");
-        return binInfo.exists() && binInfo.isFile();
+    if (m_pYouRong1_5B) {
+        auto yourong1_5BWidget = m_pYouRong1_5B->findChild<YouRongModelItem *>();
+        if (yourong1_5BWidget)
+            yourong1_5BWidget->stopDownload();
     }
 
-    return false;
-}
+    if (m_pYouRong7B) {
+        auto yourong7BWidget = m_pYouRong7B->findChild<YouRongModelItem *>();
+        if (yourong7BWidget)
+            yourong7BWidget->stopDownload();
+    }
 
-bool LocalModelListWidget::updateLocalModelSwitch(const LocalModel model, bool b)
-{
-    qCDebug(logAIGUI) << "Updating local model switch. Model:" << model << ", Switch:" << b;
-    // 已卸载，但是界面没刷新
-    if (b && !checkModelExist(model)) return false;
-
-    if (LocalModel::TextToImage == model) {
-        QString modelId = "TextToImage";
-        if (b) {
-            LLMServerProxy newAccount;
-            newAccount.name = LLMServerProxy::llmName(LLMChatModel::LOCAL_TEXT2IMAGE);
-            newAccount.id = modelId;
-            newAccount.model = LLMChatModel::LOCAL_TEXT2IMAGE;
-            newAccount.type = ModelType::LOCAL;
-            AccountProxy proxy;
-            proxy.apiKey = modelId;
-            newAccount.account = proxy;
-            if (!DbWrapper::localDbWrapper().appendLlm(newAccount)) return false;
-            ServerWrapper::instance()->updateLLMAccount();
-        } else {
-            if (!DbWrapper::localDbWrapper().deleteLlm(modelId)) return false;
-            ServerWrapper::instance()->updateLLMAccount();
+    if (m_pDeepseek1_5B) {
+        auto deepseekWidget = m_pDeepseek1_5B->findChild<ModelScopeItem *>();
+        if (deepseekWidget) {
+            deepseekWidget->stopDownload();
         }
-    } else if (LocalModel::SpeechRecognition == model) {
-        return DbWrapper::localDbWrapper().updateLocalSpeech(b);
     }
-
-    return true;
 }
 
 QString LocalModelListWidget::getTitleName()

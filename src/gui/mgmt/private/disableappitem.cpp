@@ -12,7 +12,8 @@
 #include <QLoggingCategory>
 
 DWIDGET_USE_NAMESPACE
-UOSAI_USE_NAMESPACE
+
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 

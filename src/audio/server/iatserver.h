@@ -3,6 +3,7 @@
 
 #include <QObject>
 
+namespace uos_ai {
 class IatServer : public QObject
 {
     Q_OBJECT
@@ -51,5 +52,5 @@ public:
 private:
     int m_model = 0;
 };
-
+} // namespace uos_ai
 #endif // IATSERVER_H

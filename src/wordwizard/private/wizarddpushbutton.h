@@ -1,12 +1,12 @@
 #ifndef WIZARDDPUSHBUTTON
 #define WIZARDDPUSHBUTTON
-#include "uosai_global.h"
+
 
 #include <DPushButton>
 
 namespace uos_ai {
 
-class LIBDTKWIDGETSHARED_EXPORT WizardDPushButton : public DTK_WIDGET_NAMESPACE::DPushButton
+class WizardDPushButton : public DTK_WIDGET_NAMESPACE::DPushButton
 {
     Q_OBJECT
 public:

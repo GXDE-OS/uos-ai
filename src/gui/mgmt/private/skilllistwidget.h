@@ -12,10 +12,9 @@
 #include <QTimer>
 #include <QQueue>
 
-class ThemedLable;
-
 namespace uos_ai {
 
+class ThemedLable;
 class CustomFunction;
 class SkillListItem;
 class AddSkillDialog;

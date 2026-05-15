@@ -1,6 +1,5 @@
 #ifndef DISABLEAPPITEM_H
 #define DISABLEAPPITEM_H
-#include "uosai_global.h"
 
 #include <DFrame>
 #include <DLabel>
@@ -8,7 +7,7 @@
 #include <QPaintEvent>
 #include <QEvent>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class DisableAppItem : public DTK_WIDGET_NAMESPACE::DFrame
 {
@@ -51,5 +50,5 @@ private:
     DTK_WIDGET_NAMESPACE::DIconButton *m_deleteBtn;
 };
 
-UOSAI_END_NAMESPACE
+}
 #endif // DISABLEAPPITEM_H

@@ -3,7 +3,7 @@
 
 #include "basicpoint.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 namespace report {
 
@@ -20,6 +20,6 @@ public:
 
 }
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // DIGITAL_CHAT_POINT_H

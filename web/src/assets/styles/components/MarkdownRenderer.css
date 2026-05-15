@@ -1,0 +1,1091 @@
+/* MarkdownRenderer 主题变量 */
+html {
+    /* 文本颜色 */
+    --markdownrenderer-color-text-tertiary: rgba(0, 0, 0, 0.7);
+    --markdownrenderer-color-link: rgba(0, 88, 222, 1);
+    --markdownrenderer-color-list-marker: rgba(107, 114, 128, 1);
+
+    /* 代码块相关 */
+    --markdownrenderer-code-background: rgba(255, 255, 255, 0.3);
+    --markdownrenderer-code-header-background: rgba(235, 235, 235, 1);
+    --markdownrenderer-code-header-bg-solid: rgba(248, 248, 248, 0.95);
+    --markdownrenderer-code-border: rgba(0, 0, 0, 0.08);
+    --markdownrenderer-code-line-number: rgba(0, 0, 0, 0.3);
+    --markdownrenderer-code-inline-bg: rgba(175, 184, 193, 0.2);
+
+    /* 引用块相关 */
+    --markdownrenderer-blockquote-border: rgba(0, 0, 0, 0.1);
+
+    /* 表格相关 */
+    --markdownrenderer-table-background: rgba(255, 255, 255, 0.3);
+    --markdownrenderer-table-header-background: rgba(0, 0, 0, 0.05);
+    --markdownrenderer-table-border: rgba(229, 229, 229, 1);
+    --markdownrenderer-table-header-bg-solid: rgba(248, 248, 248, 0.95);
+
+    /* 交互状态 */
+    --markdownrenderer-hover-bg-color: rgba(0, 0, 0, 0.08);
+    --markdownrenderer-active-bg-color: rgba(0, 0, 0, 0.12);
+
+    /* 其他元素 */
+    --markdownrenderer-hr-color: rgba(229, 231, 235, 1);
+    --markdownrenderer-img-bg: rgba(255, 255, 255, 0.3);
+    --markdownrenderer-loading-dot: rgba(0, 0, 0, 0.7);
+    --markdownrenderer-waiting-dot: rgba(176, 176, 176, 1);
+}
+
+html.dark {
+    /* 文本颜色 */
+    --markdownrenderer-color-text-tertiary: rgba(255, 255, 255, 0.7);
+    --markdownrenderer-color-link: rgba(2, 76, 202, 1);
+    --markdownrenderer-color-list-marker: rgba(156, 163, 175, 1);
+
+    /* 代码块相关 */
+    --markdownrenderer-code-background: rgba(0, 0, 0, 0.3);
+    --markdownrenderer-code-header-background: rgba(30, 30, 30, 1);
+    --markdownrenderer-code-header-bg-solid: rgba(24, 24, 24, 0.95);
+    --markdownrenderer-code-border: rgba(255, 255, 255, 0.08);
+    --markdownrenderer-code-line-number: rgba(255, 255, 255, 0.3);
+    --markdownrenderer-code-inline-bg: rgba(255, 255, 255, 0.15);
+
+    /* 引用块相关 */
+    --markdownrenderer-blockquote-border: rgba(255, 255, 255, 0.15);
+
+    /* 表格相关 */
+    --markdownrenderer-table-background: rgba(0, 0, 0, 0.3);
+    --markdownrenderer-table-header-background: rgba(255, 255, 255, 0.05);
+    --markdownrenderer-table-border: rgba(255, 255, 255, 0.08);
+    --markdownrenderer-table-header-bg-solid: rgba(24, 24, 24, 0.95);
+
+    /* 交互状态 */
+    --markdownrenderer-hover-bg-color: rgba(255, 255, 255, 0.08);
+    --markdownrenderer-active-bg-color: rgba(255, 255, 255, 0.12);
+
+    /* 其他元素 */
+    --markdownrenderer-hr-color: rgba(75, 85, 99, 1);
+    --markdownrenderer-img-bg: rgba(0, 0, 0, 0.3);
+    --markdownrenderer-loading-dot: rgba(255, 255, 255, 0.7);
+    --markdownrenderer-waiting-dot: rgba(176, 176, 176, 1);
+}
+
+.markdown-content {
+  display: inline;
+  line-height: var(--uosai-line-height-relaxed);;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Message streaming container */
+.message-streaming-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.message-content-wrapper {
+  display: inline;
+}
+
+.loading-indicator-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+  margin-left: 2px;
+}
+
+/* Markdown container */
+.markdown-container {
+  display: inline;
+}
+
+/* Streaming container - makes content flow naturally with loading animation */
+.markdown-container.streaming {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.loading-dots-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-left: 2px;
+  flex-shrink: 0;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: inherit;
+}
+
+.markdown-content h1 {
+  font-size: var(--uosai-font-size-h1);
+  margin-top: calc(var(--U, 14px) * 10);
+  margin-bottom: calc(var(--U, 14px) * 4);
+  line-height: var(--uosai-line-height-h1);
+  color: inherit;
+}
+
+.markdown-content h1 .header-link {
+  display: none;
+}
+
+.markdown-content h2 {
+  font-size: var(--uosai-font-size-h2);
+  margin-top: calc(var(--U, 14px) * 8);
+  margin-bottom: calc(var(--U, 14px) * 3);
+  line-height: var(--uosai-line-height-h2);
+  color: inherit;
+}
+
+.markdown-content h2 .header-link {
+  display: none;
+}
+
+.markdown-content h3 {
+  font-size: inherit;
+  font-weight: 700;
+  margin-top: calc(var(--U, 14px) * 6);
+  margin-bottom: calc(var(--U, 14px) * 2);
+  line-height: var(--uosai-line-height-h3);
+  color: inherit;
+}
+
+.markdown-content h4 {
+  font-size: var(--uosai-font-size-h4);
+}
+
+.markdown-content h5 {
+  font-size: var(--uosai-font-size-h5);
+}
+
+.markdown-content h6 {
+  font-size: var(--uosai-font-size-h6);
+  color: var(--markdownrenderer-color-text-tertiary);
+}
+
+.markdown-content p {
+  margin-top: 10px;
+  margin-bottom: calc(var(--U, 14px) * 4);
+  text-indent: 0;
+  line-height: var(--uosai-line-height-body);
+}
+
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content a {
+  color: var(--markdownrenderer-color-link);
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-top: 0;
+  margin-bottom: calc(var(--U, 14px) * 4);
+  padding-left: 2rem;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-content ul li::marker {
+  color: var(--markdownrenderer-color-list-marker);
+}
+
+.markdown-content ol li::marker {
+  color: var(--markdownrenderer-color-list-marker);
+  font-weight: 500;
+}
+
+.markdown-content code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: var(--uosai-font-size-code-sm);
+  background-color: var(--markdownrenderer-code-inline-bg);
+  border-radius: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Code block container */
+.markdown-content .code-block-container {
+  margin: 20px 0;
+  border: none;
+  border-radius: 8px;
+  overflow: visible;
+  background-color: transparent;
+}
+
+/* Code block header - sticky positioning to stay at top when scrolling */
+.markdown-content .code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+  padding-left: 0;
+  background-color: var(--markdownrenderer-code-header-background);
+  border: 1px solid var(--markdownrenderer-code-border);
+  border-radius: 8px 8px 0 0;
+  user-select: none;
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+}
+
+/* 用伪元素填补 header 两个顶部圆角的 cutout 区域，
+   挡住 body 的左右竖线在滚动超出时从圆角外透出。
+   radial-gradient 以圆角中心为原点，半径外实心（涂掉竖线），半径内透明（保留圆角弧线）。
+   仅在 --stuck 时启用，避免未吸附时覆盖透明切角；-1px 偏移抵消 header 的 1px 边框
+   （absolute 定位参照 padding-box，向外扩 1px 才能对齐 border-box 角 & border-radius 弧心）。 */
+.markdown-content .code-block-container--stuck .code-block-header::before,
+.markdown-content .code-block-container--stuck .code-block-header::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+}
+
+.markdown-content .code-block-container--stuck .code-block-header::before {
+  left: -1px;
+  background: radial-gradient(circle at 100% 100%,
+      transparent 8px,
+      var(--markdownrenderer-code-header-bg-solid) 8px);
+}
+
+.markdown-content .code-block-container--stuck .code-block-header::after {
+  right: -1px;
+  background: radial-gradient(circle at 0% 100%,
+      transparent 8px,
+      var(--markdownrenderer-code-header-bg-solid) 8px);
+}
+
+/* Code language wrapper - no padding */
+.markdown-content .code-language-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  user-select: none;
+  padding: 0;
+  padding-left: 10px;
+}
+
+
+.markdown-content .code-language {
+  font-size: var(--uosai-font-size-code);
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0;
+  padding-left: 10px;
+}
+
+/* Collapse arrow wrapper */
+.markdown-content .collapse-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.markdown-content .collapse-arrow-wrapper:hover {
+  opacity: 0.7;
+}
+
+/* Collapse arrow */
+.markdown-content .collapse-arrow {
+  width: 12px;
+  height: 12px;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+/* Collapsed state - rotate arrow */
+.markdown-content .collapse-arrow-wrapper--collapsed .collapse-arrow {
+  transform: rotate(180deg);
+}
+
+/* Copy button - match IconButton rounded style */
+.markdown-content .copy-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-normal);
+  color: var(--icon-button-color);
+  cursor: pointer;
+  transition:
+      background var(--transition-normal),
+      color var(--transition-normal),
+      opacity var(--transition-normal);
+  user-select: none;
+  outline: none;
+}
+
+.markdown-content .copy-button:hover {
+  background: var(--icon-button-hover-bg);
+  box-shadow: var(--icon-button-hover-box-shadow);
+  color: var(--icon-button-hover-color);
+}
+
+.markdown-content .copy-button:active {
+  background: var(--icon-button-active-bg);
+  box-shadow: var(--icon-button-active-box-shadow);
+  color: var(--icon-button-active-color);
+}
+
+/* Remove focus outline on copy button */
+.markdown-content .copy-button:focus {
+  outline: none;
+}
+
+.markdown-content .copy-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Focus visible for keyboard navigation */
+.markdown-content .copy-button:focus-visible {
+  outline: 2px solid rgba(52, 152, 219, 0.5);
+  outline-offset: 2px;
+}
+
+/* Tooltip styles using data-tooltip attribute - matching Tooltip.tsx */
+.markdown-content .copy-button::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 5px 4px 5px;
+  background: var(--uos-tooltip-bg);
+  color: var(--uos-tooltip-color);
+  font-size: var(--uosai-font-size-xs);
+  font-weight: var(--uos-tooltip-font-weight);
+  line-height: var(--uosai-line-height-extra-tight);
+  border-radius: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  transition-delay: 1s; /* 1s delay to match Tooltip showAfter: 1000 */
+  z-index: 1000;
+  box-shadow: var(--uos-tooltip-box-shadow);
+}
+
+.markdown-content .copy-button:hover::after {
+  opacity: 1;
+}
+
+/* Remove transition delay when hiding */
+.markdown-content .copy-button:not(:hover)::after {
+  transition-delay: 0s;
+}
+
+
+.markdown-content .copy-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.markdown-content .copy-button .check-icon {
+  color: inherit;
+}
+
+.markdown-content pre {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* Code block body */
+.markdown-content .code-block-body {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  background-color: var(--markdownrenderer-code-background);
+  overflow: visible;
+  border: 1px solid var(--markdownrenderer-code-border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Code content */
+.markdown-content .code-content {
+  flex: 1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: var(--uosai-font-size-code);
+  line-height: var(--uosai-line-height-code);
+  color: inherit;
+}
+
+/* Code line wrapper */
+.markdown-content .code-line {
+  display: flex;
+  min-height: 1.5em;
+}
+
+/* Line number */
+.markdown-content .code-line-number {
+  flex-shrink: 0;
+  min-width: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: var(--markdownrenderer-code-line-number);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: var(--uosai-font-size-code);
+  line-height: var(--uosai-line-height-code);
+  text-align: left;
+  user-select: none;
+}
+
+/* Code line content */
+.markdown-content .code-line-content {
+  flex: 1;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.markdown-content pre code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  background-color: transparent !important;
+  border-radius: 0;
+}
+
+/* Override highlight.js dark theme background */
+.markdown-content .code-content.hljs {
+  background-color: transparent !important;
+}
+
+.markdown-content .code-content .hljs {
+  background-color: transparent !important;
+}
+
+/* Code block collapsed state */
+.markdown-content .code-block-collapsed {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  height: 32px;
+  padding: 0 32px;
+  border: 1px solid var(--markdownrenderer-code-border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background-color: var(--markdownrenderer-code-background);
+}
+
+.markdown-content .collapsed-text {
+  color: inherit;
+  opacity: 0.7;
+  font-size: var(--uosai-font-size-code);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.markdown-content .collapsed-expand-link {
+  margin-left: 4px;
+  cursor: pointer;
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-decoration: none;
+  font-size: var(--uosai-font-size-code);
+  user-select: none;
+}
+
+.markdown-content .collapsed-expand-link:hover {
+  text-decoration: underline;
+}
+
+.markdown-content blockquote {
+  padding: 0 0 0 20px;
+  margin: 0 20px 0 0;
+  border-left: 3px solid var(--markdownrenderer-blockquote-border);
+  color: inherit;
+}
+
+.markdown-content blockquote p {
+  margin-bottom: 0;
+}
+
+/* Nested blockquotes for multi-level quotes */
+.markdown-content blockquote blockquote {
+  margin-left: 0px;
+}
+
+.markdown-content blockquote blockquote blockquote {
+  margin-left: 0px;
+}
+
+/* Table container */
+.markdown-content .table-container {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: visible;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Table body with scroll */
+.markdown-content .table-body {
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--markdownrenderer-table-border);
+  border-top: none;
+  position: relative;
+  overflow: visible;
+  border-radius: 0 0 12px 12px;
+}
+
+/* 用伪元素填补 table body 两个底部圆角的 cutout 区域，
+   挡住单元格边框在滚动时从圆角外透出。*/
+.markdown-content .table-body::before,
+.markdown-content .table-scrollbar::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  z-index: 25;
+}
+
+.markdown-content .table-body::before {
+  left: -2px;
+  bottom: -2px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle at 100% 0%,
+      transparent 12px,
+      var(--markdownrenderer-table-border) 12px,
+      var(--markdownrenderer-table-border) 13px,
+      var(--markdownrenderer-table-header-bg-solid) 13px);
+}
+
+/* 右下角遮挡 - 使用独立元素，固定在 table-body 右下角 */
+.markdown-content .table-corner-mask {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 14px;
+  height: 14px;
+  background:
+    /* 圆角边框：从11px到12px之间绘制边框线 */
+    radial-gradient(circle at 0% 0%,
+      transparent 12px,
+      var(--markdownrenderer-table-border) 12px,
+      var(--markdownrenderer-table-border) 13px,
+      var(--markdownrenderer-table-header-bg-solid) 13px);
+  pointer-events: none;
+  z-index: 25;
+}
+
+/* Add scroll hint indicator */
+.markdown-content .table-body::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+  z-index: 15;
+}
+
+/* Show scroll hint when table has horizontal scroll */
+.markdown-content .table-body:has(.table-wrapper.has-scroll)::after {
+  opacity: 1;
+  animation: scrollHintPulse 2s ease-in-out infinite;
+}
+
+/* Hide scroll hint when hovered or scrolled to end */
+.markdown-content .table-body:hover::after,
+.markdown-content .table-body:has(.table-wrapper.scrolled-to-end)::after {
+  opacity: 0;
+  animation: none;
+}
+
+@keyframes scrollHintPulse {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-50%) translateX(4px);
+    opacity: 0.6;
+  }
+}
+
+/* Dark mode scroll hint */
+html.dark .markdown-content .table-body::after {
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Table wrapper - now with horizontal scroll */
+.markdown-content .table-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* Hide default scrollbar - we'll use custom styling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  position: relative;
+  padding-bottom: 0;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+/* Hide default scrollbar for Chrome, Safari and Opera */
+.markdown-content .table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar container - matching ScrollBar component styles */
+.markdown-content .table-scrollbar {
+  position: relative;
+  left: var(--spacing-md);
+  right: var(--spacing-md);
+  height: 12px;
+  margin: -12px var(--spacing-md) 0px;
+  border-radius: var(--radius-small);
+  opacity: 0;
+  transition: opacity 700ms ease;
+  cursor: pointer;
+  display: none;
+  z-index: 20;
+  background-color: transparent;
+}
+
+/* Show scrollbar when has-scroll is present */
+.markdown-content .table-scrollbar.visible,
+.markdown-content .table-wrapper.has-scroll + .table-scrollbar {
+  display: block !important;
+}
+
+/* Show scrollbar on hover or when scrolling - quick fade in */
+.markdown-content .table-scrollbar.visible,
+.markdown-content .table-body:hover .table-scrollbar {
+  opacity: 1;
+  transition-duration: 120ms;
+}
+
+/* Scrollbar track */
+.markdown-content .table-scrollbar-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-small);
+  overflow: visible;
+}
+
+/* Scrollbar thumb */
+.markdown-content .table-scrollbar-thumb {
+  position: absolute;
+  bottom: 3px;
+  box-sizing: border-box;
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: var(--radius-small);
+  box-shadow: var(--scrollbar-thumb-shadow);
+  transition:
+    height var(--transition-normal),
+    background-color var(--transition-normal);
+  cursor: pointer;
+  height: 4px;
+  min-width: 20px;
+  left: 0;
+}
+
+.markdown-content .table-scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid var(--scrollbar-thumb-inset-color);
+  border-radius: inherit;
+  transition: border-color var(--transition-normal);
+  pointer-events: none;
+}
+
+/* Hover state for scrollbar */
+.markdown-content .table-scrollbar:hover .table-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color-hover);
+}
+
+.markdown-content .table-scrollbar:hover .table-scrollbar-thumb::after {
+  border-color: var(--scrollbar-thumb-inset-color-hover);
+}
+
+/* Expand thumb on hover or when dragging */
+.markdown-content .table-scrollbar:hover .table-scrollbar-thumb,
+.markdown-content .table-scrollbar.dragging .table-scrollbar-thumb {
+  border-radius: 6px;
+  height: 12px;
+  bottom: 3px;
+}
+
+/* Dragging state for scrollbar thumb */
+.markdown-content .table-scrollbar.dragging .table-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color-active);
+}
+
+.markdown-content .table-scrollbar.dragging .table-scrollbar-thumb::after {
+  border-color: var(--scrollbar-thumb-inset-color-active);
+}
+
+/* Active state (clicking) */
+.markdown-content .table-scrollbar:active .table-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color-active);
+}
+
+.markdown-content .table-scrollbar:active .table-scrollbar-thumb::after {
+  border-color: var(--scrollbar-thumb-inset-color-active);
+}
+
+/* Focus state for accessibility */
+.markdown-content .table-scrollbar-thumb:focus {
+  outline: 2px solid rgba(52, 152, 219, 0.5);
+  outline-offset: 2px;
+}
+
+/* Table header - sticky positioning */
+.markdown-content .table-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+  background-color: var(--markdownrenderer-table-header-background);
+  border: 1px solid var(--markdownrenderer-table-border);
+  border-radius: 12px 12px 0 0;
+  user-select: none;
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+}
+
+.markdown-content table.marked-table {
+  border-collapse: collapse;
+  width: max-content;
+  margin: 0;
+}
+
+.markdown-content table.marked-table th,
+.markdown-content table.marked-table td {
+  padding: 3px 20px;
+  min-width: 100px;
+  max-width: 50cqw;
+  height: 48px;
+  border-right: 1px solid var(--markdownrenderer-table-border);
+  border-bottom: 1px solid var(--markdownrenderer-table-border);
+  text-align: left;
+  vertical-align: middle;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: var(--markdownrenderer-table-background);
+}
+
+/* First column has left border */
+.markdown-content table.marked-table th:first-child,
+.markdown-content table.marked-table td:first-child {
+  border-left: none;
+}
+
+/* Last column has right border */
+.markdown-content table.marked-table th:last-child,
+.markdown-content table.marked-table td:last-child {
+  border-right: none;
+}
+
+/* Last row cells have no bottom border */
+.markdown-content table.marked-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* First column, last row cell has bottom-left radius */
+.markdown-content table.marked-table tbody tr:last-child td:first-child {
+  border-left: none;
+}
+
+/* Last column, last row cell has bottom-right radius */
+.markdown-content table.marked-table tbody tr:last-child td:last-child {
+  border-right: none;
+}
+
+.markdown-content table.marked-table th {
+  font-weight: 600;
+}
+
+.markdown-content hr {
+  height: 1px;
+  margin: 1rem 0;
+  border: none;
+  background-color: var(--markdownrenderer-hr-color);
+}
+
+.markdown-content img {
+  max-width: 258px;
+  max-height: 400px;
+  border-radius: 10px;
+  margin: 1rem 0;
+  object-fit: contain;
+  background-color: var(--markdownrenderer-img-bg);
+  display: block;
+}
+
+
+.markdown-content strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+.markdown-content em {
+  font-style: italic;
+}
+
+/* Code block language badge */
+.markdown-content pre code::before {
+  display: none;
+}
+
+/* Copy button for code blocks (optional enhancement) */
+.markdown-content pre {
+  position: relative;
+}
+
+/* Think tag styling */
+.markdown-content think {
+  display: block;
+  color: var(--uosai-color-think, #A6A6A6);
+  padding: 0.5em 0;
+  line-height: var(--uosai-line-height-relaxed);;
+}
+
+/* Dark mode support for think tag */
+@media (prefers-color-scheme: dark) {
+  .markdown-content think {
+    color: var(--uosai-color-think, #A6A6A6);
+  }
+}
+
+/* Light mode support for think tag */
+@media (prefers-color-scheme: light) {
+  .markdown-content think {
+    color: var(--uosai-color-think, #8B8B8B);
+  }
+}
+
+/* MathJax math styling */
+.markdown-content .mathjax-math-container {
+  display: block;
+  margin: 20px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-height: 1em;
+  will-change: transform;
+  backface-visibility: hidden;
+  direction: ltr;
+  text-align: left;
+}
+
+.markdown-content .mathjax-math-container mjx-container {
+  font-size: var(--uosai-font-size-math);
+  color: inherit;
+  font-family: 'Cambria Math', 'Latin Modern Math', 'Times New Roman', 'Georgia', serif;
+  font-weight: 700;
+}
+
+.markdown-content .mathjax-math-inline {
+  display: inline;
+  color: inherit;
+  font-weight: 700;
+}
+
+.markdown-content .mathjax-math-inline mjx-container {
+  color: inherit;
+  font-family: 'Cambria Math', 'Latin Modern Math', 'Times New Roman', 'Georgia', serif;
+}
+
+/* Prevent layout shift during streaming */
+.markdown-content mjx-container {
+  display: inline-block;
+}
+
+.markdown-content mjx-container[display="true"] {
+  display: block;
+  margin: 20px 0;
+  text-align: left !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Dark mode for MathJax */
+@media (prefers-color-scheme: dark) {
+  .markdown-content .mathjax-math-container mjx-container,
+  .markdown-content .mathjax-math-inline mjx-container {
+    color: inherit;
+  }
+}
+
+/* Streaming loading animation - inline with text flow */
+.message-loading-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0;
+  margin-left: 4px;
+  vertical-align: middle;
+  will-change: transform;
+  /* Ensure it flows naturally with text content */
+  white-space: nowrap;
+  /* Keep animation playing during position changes */
+  animation: none;
+  /* Smooth transition when position changes */
+  transition: all 0.05s linear;
+  /* Prevent it from breaking across lines */
+  display: inline-flex !important;
+}
+
+/* Ensure loading indicator inside paragraphs remains inline */
+.markdown-content p .message-loading-indicator,
+.markdown-content li .message-loading-indicator,
+.markdown-content span .message-loading-indicator {
+  display: inline-flex !important;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.message-loading-indicator.loading-inline {
+  display: inline-flex;
+  vertical-align: baseline;
+}
+
+/* Removed fadeIn animation to prevent animation interruption */
+/* The loading dots will animate continuously without fade effects */
+
+.loading-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--markdownrenderer-loading-dot);
+  animation: blink 0.8s infinite alternate;
+  will-change: transform;
+  /* Ensure animation continues during position changes */
+  animation-play-state: running;
+  display: inline-block;
+}
+
+.loading-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Ensure the loading indicator wraps properly with text */
+.markdown-content .message-loading-indicator {
+  display: inline-flex !important;
+  align-items: center;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+
+/* Waiting loading animation - bounce effect for empty text item */
+.waiting-loading-indicator {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.waiting-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--markdownrenderer-waiting-dot);
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+  display: inline-block;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+.waiting-dot:nth-child(1) {
+  animation-delay: -0.32s;
+  margin-right: 4px;
+}
+
+.waiting-dot:nth-child(2) {
+  animation-delay: -0.16s;
+  margin-right: 4px;
+}
+
+.waiting-dot:nth-child(3) {
+  animation-delay: 0s;
+}
+
+/* Ensure waiting dots inside paragraphs maintain spacing */
+.markdown-content p .waiting-loading-indicator,
+.markdown-content li .waiting-loading-indicator,
+.markdown-content span .waiting-loading-indicator {
+  display: inline-flex;
+  gap: 4px;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  40% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}

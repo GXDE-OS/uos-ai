@@ -1,13 +1,17 @@
 #include "welcomedialog.h"
-#include "dbwrapper.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 #include "themedlable.h"
 #include "uosfreeaccounts.h"
 #include "wrapcheckbox.h"
-#include "private/echatwndmanager.h"
 #include "utils/esystemcontext.h"
-#include "private/eaiexecutor.h"
 #include "utils/util.h"
+#include "database/providertable.h"
+#include "database/modelstable.h"
+#include "global_key_define.h"
+#include "global_define.h"
+#include "appdatabase.h"
+#include "builtinprovider.h"
+#include "modelvendor.h"
 
 #include <DTitlebar>
 #include <DLabel>
@@ -23,7 +27,8 @@
 #include <QApplication>
 #include <QLoggingCategory>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
+DWIDGET_USE_NAMESPACE
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -34,11 +39,11 @@ WelcomeDialog::WelcomeDialog(DWidget *parent, bool onlyUseAgreement) : DAbstract
   , m_freeAccount(false)
   , m_onlyUseAgreement(onlyUseAgreement)
 {
-    EWndManager()->registeWindow(this);
     setDisplayPosition(DisplayPosition::Center);
 
     initUI();
     initConnect();
+    resetDialog();
     setModal(true);
 }
 
@@ -56,7 +61,7 @@ WelcomeDialog *WelcomeDialog::instance(bool onlyUseAgreement)
 
 void WelcomeDialog::initUI()
 {
-    int dialogWidth = 460;
+    int dialogWidth = 530;
     setFixedWidth(dialogWidth);
     //标题栏
     DTitlebar *titleBar = new DTitlebar(this);
@@ -64,94 +69,110 @@ void WelcomeDialog::initUI()
     titleBar->setBackgroundTransparent(true);
 
     DLabel *logoLabel = new DLabel(this);
-    logoLabel->setPixmap(QIcon::fromTheme("uos-ai-assistant").pixmap(90, 90));
+    qreal dpr = this->devicePixelRatioF();
+    QPixmap pixmap = QIcon::fromTheme(getApplicationIconName()).pixmap(QSize(48, 48) * dpr);
+    pixmap.setDevicePixelRatio(dpr);
+    logoLabel->setPixmap(pixmap);
+
 
     ThemedLable *titleLable = new ThemedLable(tr("Welcome to UOS AI"));
     titleLable->setPaletteColor(QPalette::Text, QPalette::BrightText, 0.9);
-    titleLable->setAlignment(Qt::AlignCenter);
-    titleLable->setFixedWidth(dialogWidth * 0.75);
+    titleLable->setAlignment(Qt::AlignLeft);
+    titleLable->setFixedWidth(dialogWidth * 0.87);
     DFontSizeManager::instance()->bind(titleLable, DFontSizeManager::T3, QFont::Medium);
 
     m_pIntroduce = new ThemedLable(tr("UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience."));
     m_pIntroduce->setPaletteColor(QPalette::Text, DPalette::BrightText, 0.7);
-    m_pIntroduce->setFixedWidth(dialogWidth * 0.75);
-    m_pIntroduce->setAlignment(Qt::AlignCenter);
+    m_pIntroduce->setFixedWidth(dialogWidth * 0.87);
+    m_pIntroduce->setAlignment(Qt::AlignLeft);
     m_pIntroduce->setWordWrap(true);
     DFontSizeManager::instance()->bind(m_pIntroduce, DFontSizeManager::T5, QFont::Normal);
 
     auto labelLayout = new QHBoxLayout();
-    labelLayout->setContentsMargins(50, 0, 50, 0);
-    labelLayout->addWidget(m_pIntroduce, 1, Qt::AlignCenter);
+    labelLayout->setContentsMargins(0, 0, 0, 0);
+    labelLayout->addWidget(m_pIntroduce, 1, Qt::AlignLeft);
 
     m_pAgrCheckbox = new WrapCheckBox();
     m_pAgrCheckbox->setTextFormat(Qt::RichText);
     m_pAgrCheckbox->setTextInteractionFlags(Qt::LinksAccessibleByMouse);
     m_pAgrCheckbox->setOpenExternalLinks(true);
-    m_pAgrCheckbox->setTextMaxWidth(dialogWidth - 80);
-    m_pAgrCheckbox->setFixedWidth(dialogWidth - 40);
-    m_pAgrCheckbox->setFontSize(DFontSizeManager::T7, QFont::Normal);
+    m_pAgrCheckbox->setTextMaxWidth(dialogWidth - 102);
+    m_pAgrCheckbox->setFixedWidth(dialogWidth - 72);
+    m_pAgrCheckbox->setFontSize(DFontSizeManager::T8, QFont::Normal);
 
     auto agrLayout = new QHBoxLayout();
-    agrLayout->setContentsMargins(20, 0, 20, 0);
+    agrLayout->setContentsMargins(0, 0, 0, 0);
     agrLayout->addWidget(m_pAgrCheckbox, 1, Qt::AlignTop | Qt::AlignLeft);
-
-    m_pFreeAccount = new DSuggestButton();
-    m_pFreeAccount->setFixedSize(360, 36);
-    m_pFreeAccount->setText(tr("Get a free trial account"));
+    
+    m_pFreeAccount = new ThemedButton();
+    m_pFreeAccount->setButtonStyle(ThemedButton::Default);
+    m_pFreeAccount->setFixedSize(240, 30);
+    m_pFreeAccount->setText(tr("Get a free account"));
     m_pActivity = new ThemedLable();
     m_pActivity->setPaletteColor(QPalette::Text, QPalette::BrightText, 0.5);
     m_pActivity->setTextFormat(Qt::RichText);
     m_pActivity->setTextInteractionFlags(Qt::LinksAccessibleByMouse);
     m_pActivity->setOpenExternalLinks(true);
-    m_pActivity->setFixedWidth(dialogWidth - 40);
+    m_pActivity->setFixedWidth(240);
     m_pActivity->setAlignment(Qt::AlignCenter);
     m_pActivity->setWordWrap(true);
     DFontSizeManager::instance()->bind(m_pActivity, DFontSizeManager::T10, QFont::Medium);
 
-    auto activityLabelLayout = new QHBoxLayout();
-    activityLabelLayout->setContentsMargins(20, 0, 20, 0);
-    activityLabelLayout->addWidget(m_pActivity, 1, Qt::AlignCenter);
-
     m_pFreeWidget = new DWidget();
     auto freeLayout = new QVBoxLayout(m_pFreeWidget);
     freeLayout->setSpacing(5);
-    freeLayout->setContentsMargins(0, 0, 0, 10);
+    freeLayout->setContentsMargins(0, 0, 0, 0);
+    freeLayout->addWidget(m_pActivity, 0, Qt::AlignCenter);
     freeLayout->addWidget(m_pFreeAccount, 0, Qt::AlignCenter);
-    freeLayout->addLayout(activityLabelLayout);
     m_pFreeWidget->hide();
-
-
-    m_pAddModel = new DPushButton();
-    m_pAddModel->setFixedSize(360, 36);
+    
+    m_pAddModel = new ThemedButton();
+    m_pAddModel->setButtonStyle(ThemedButton::Plain);
+    m_pAddModel->setFixedHeight(30);
+    m_pAddModel->setMinimumWidth(80);
     m_pAddModel->setText(tr("Add Model"));
     m_pFreeAccount->setDisabled(true);
     m_pAddModel->setDisabled(true);
+    DFontSizeManager::instance()->bind(m_pAddModel, DFontSizeManager::T6, QFont::Normal);
 
-    m_pStartUsing = new DSuggestButton();
+    m_pStartUsing = new ThemedButton();
+    m_pStartUsing->setButtonStyle(ThemedButton::Default);
     m_pStartUsing->setText(tr("Start using"));
     m_pStartUsing->setDisabled(true);
     m_pStartUsing->setFixedWidth(360);
 
+    resetLinkColor();
+
+    // 将 m_pAddModel 放入垂直布局中，上面添加 spacer 来向下偏移，使其与 m_pFreeAccount 水平对齐
+    auto addModelLayout = new QVBoxLayout();
+    addModelLayout->setSpacing(0);
+    addModelLayout->setContentsMargins(0, 0, 0, 0);
+    addModelLayout->addSpacing(m_pActivity->sizeHint().height() + 5);
+    addModelLayout->addWidget(m_pAddModel);
+
+    m_pButtonLayout = new QHBoxLayout();
+    m_pButtonLayout->setContentsMargins(0, 0, 36, 0);
+    m_pButtonLayout->setSpacing(0);
+    m_pButtonLayout->addLayout(addModelLayout);
+    m_pButtonLayout->addStretch();
+    m_pButtonLayout->addWidget(m_pFreeWidget);
+
     QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->setContentsMargins(0, 0, 0, 20);
+    mainLayout->setContentsMargins(36, 0, 0, 26);
     mainLayout->setSpacing(0);
     mainLayout->addWidget(titleBar);
-    mainLayout->addWidget(logoLabel, 0, Qt::AlignHCenter);
-    mainLayout->addSpacing(15);
-    mainLayout->addWidget(titleLable, 0, Qt::AlignHCenter);
+    mainLayout->addWidget(logoLabel, 0, Qt::AlignLeft);
+    mainLayout->addSpacing(10);
+    mainLayout->addWidget(titleLable, 0, Qt::AlignLeft);
     mainLayout->addSpacing(10);
     mainLayout->addLayout(labelLayout);
-    m_pVerticalSpacer = new QSpacerItem(0, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
-    mainLayout->addSpacerItem(m_pVerticalSpacer);
-    mainLayout->addStretch();
+    mainLayout->addSpacing(24);
     mainLayout->addLayout(agrLayout);
-    mainLayout->addSpacing(20);
+    mainLayout->addSpacing(32);
+    mainLayout->addStretch();
     mainLayout->addWidget(m_pStartUsing, 0, Qt::AlignHCenter);
-    mainLayout->addWidget(m_pFreeWidget);
-    mainLayout->addWidget(m_pAddModel, 0, Qt::AlignHCenter);
+    mainLayout->addLayout(m_pButtonLayout);
     this->setLayout(mainLayout);
-
-    resetLinkColor();
 }
 
 void WelcomeDialog::initConnect()
@@ -210,6 +231,42 @@ void WelcomeDialog::onUpdateSystemFont(const QFont &)
     this->adjustSize();
 }
 
+void WelcomeDialog::updateButtonLayout()
+{
+    if (m_pButtonLayout) {
+        // Clear existing layout contents
+        while (m_pButtonLayout->count() > 0) {
+            QLayoutItem *item = m_pButtonLayout->takeAt(0);
+            if (item) {
+                delete item;
+            }
+        }
+
+        // Rebuild layout based on m_pFreeWidget visibility
+        if (m_pFreeWidget->isVisible()) {
+            // Left-right layout: addModelLayout on left, m_pFreeWidget on right
+            auto addModelLayout = new QVBoxLayout();
+            addModelLayout->setSpacing(0);
+            addModelLayout->setContentsMargins(0, 0, 0, 0);
+            addModelLayout->addSpacing(m_pActivity->sizeHint().height() + 5);
+            addModelLayout->addWidget(m_pAddModel);
+
+            m_pButtonLayout->addLayout(addModelLayout);
+            m_pButtonLayout->addStretch();
+            m_pButtonLayout->addWidget(m_pFreeWidget);
+        } else {
+            // Right-aligned layout: addModelLayout on right
+            m_pButtonLayout->addStretch();
+            auto addModelLayout = new QVBoxLayout();
+            addModelLayout->setSpacing(0);
+            addModelLayout->setContentsMargins(0, 0, 0, 0);
+            addModelLayout->addWidget(m_pAddModel);
+
+            m_pButtonLayout->addLayout(addModelLayout);
+        }
+    }
+}
+
 void WelcomeDialog::showEvent(QShowEvent *event)
 {
     return DAbstractDialog::showEvent(event);
@@ -228,24 +285,24 @@ void WelcomeDialog::resetLinkColor()
     } else {
         m_pAgrCheckbox->setText(tr("I confirm that I am over 18 years old. I acknowledge and agree to the <a href=\"%1\" style=\"color: %2; text-decoration: none;\">\"UOS AI User Agreement\"</a>, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.").arg("https://uosai.uniontech.com/agreement/UOSAIUserAgreement_EN.html").arg(tmpC.name()));
     }
-    m_pActivity->setText(tr("Receiving an account indicates that you understand and agree to the terms of the event,<a href=\"%1\" style=\"color:%2; text-decoration:none;\">Event Details></a>").arg(m_activityUrl).arg(tmpC.name()));
+    m_pActivity->setText(tr("Receiving an account indicates that you understand and agree to the terms of the event,<a href=\"%1\" style=\"color:%2; text-decoration:none;\">Event Details</a>").arg(m_activityUrl).arg(tmpC.name()));
 }
 
 void WelcomeDialog::updateAgree()
 {
     if (m_pAgrCheckbox->isEnabled()) {
         bool agreed = m_pAgrCheckbox->checkState() != Qt::Unchecked;
-        DbWrapper::localDbWrapper().updateAICopilot(agreed);
+        AppDatabase::instance()->saveConfigBool(CONFIG_APP_AGREEMENT, agreed);
         qCInfo(logAIGUI) << "User agreement status updated:" << agreed;
 
-        // 使用欢迎界面后无需再提示新手引导。
-        {
-            auto cur = DbWrapper::localDbWrapper().getGuideKey();
-            if (cur.isEmpty() || cur.toInt() < DbWrapper::builtinGuideVersion()) {
-                DbWrapper::localDbWrapper().updateGuideKey(QString::number(DbWrapper::builtinGuideVersion()));
-                qCDebug(logAIGUI) << "Guide version updated to:" << DbWrapper::builtinGuideVersion();
-            }
-        }
+        // 使用欢迎界面后无需再提示新手引导。TODO
+        // {
+        //     auto cur = DbWrapper::localDbWrapper().getGuideKey();
+        //     if (cur.isEmpty() || cur.toInt() < DbWrapper::builtinGuideVersion()) {
+        //         DbWrapper::localDbWrapper().updateGuideKey(QString::number(DbWrapper::builtinGuideVersion()));
+        //         qCDebug(logAIGUI) << "Guide version updated to:" << DbWrapper::builtinGuideVersion();
+        //     }
+        // }
     }
 }
 
@@ -256,6 +313,16 @@ bool WelcomeDialog::isFreeAccount()
 
 void WelcomeDialog::onGetFreeAccount()
 {
+    for ( const ProviderAccount &provider : AppDatabase::instance()->queryAllProviders().values()) {
+        if (ModelVendor::isUosProvider(provider.provider)) {
+            qCWarning(logAIGUI) << "UOS AI free account already exists.";
+
+            updateAgree();
+            accept();
+            return;
+        }
+    }
+
     qCDebug(logAIGUI) << "Requesting free account";
     m_pFreeAccount->setDisabled(true);
 
@@ -265,42 +332,57 @@ void WelcomeDialog::onGetFreeAccount()
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(ModelType::FREE_NORMAL, UOS_FREE, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 82, freeAccount, status);
 
     m_pFreeAccount->setDisabled(false);
     if (QNetworkReply::NoError == error) {
         qCInfo(logAIGUI) << "Free account received successfully";
         m_freeAccount = true;
 
-        LLMServerProxy llm;
-        llm.type = ModelType::FREE_NORMAL;
-        llm.id = freeAccount.appkey;
-        llm.model = static_cast<LLMChatModel>(freeAccount.llmModel);
-        llm.url = freeAccount.modelUrl;
-        llm.name = freeLlmName();
-        AccountProxy accountProxy;
-        SocketProxy socketProxy;
-        socketProxy.socketProxyType = SocketProxyType::SYSTEM_PROXY;
-        accountProxy.socketProxy = socketProxy;
-        accountProxy.appId = freeAccount.appid;
-        accountProxy.apiKey = freeAccount.appkey;
-        accountProxy.apiSecret = freeAccount.appsecret;
-        llm.account = accountProxy;
+        QJsonObject authObj;
+        authObj[STR_KEY_API_KEY] = freeAccount.appkey;
 
-        if (!DbWrapper::localDbWrapper().appendLlm(llm)) {
-            qCWarning(logAIGUI) << "Failed to save free account configuration";
+        auto provider = ProviderTable::create(
+                    GlobalUtil::generateUuid(),
+                    tr("UOS AI Trial Account"),
+                    QString::fromUtf8(QJsonDocument(authObj).toJson(QJsonDocument::Compact)),
+                    STR_KEY_UOS_AI,
+                    QString()
+                    );
+
+        if (!provider.save(AppDatabase::instance())) {
+            qCWarning(logAIGUI) << "Failed to save free account provdier to local DB.";
             dlg.setMessage(tr("Save failed, please try again later"));
             dlg.addButton(tr("Confirm", "button"), true, DDialog::ButtonNormal);
             dlg.exec();
             return;
         }
 
+        ModelsTable table = ModelsTable::create(
+                    GlobalUtil::generateUuid(),
+                    provider.id(),
+                    ModelsTable::createModel(UOS_FREE_MODEL_AUTO)
+                    );
+
+        if (!table.save(AppDatabase::instance())) {
+            qCWarning(logAIGUI) << "Failed to save free account provdier to local DB.";
+            dlg.setMessage(tr("Save failed, please try again later"));
+            dlg.addButton(tr("Confirm", "button"), true, DDialog::ButtonNormal);
+            dlg.exec();
+            return;
+        }
+
+        qCInfo(logAIGUI) << "Free account saved to local DB.";
+
+        // 刷新账号库
+        ModelVendor::instance()->refresh();
+
         qCInfo(logAIGUI) << "Free account configuration saved successfully";
-        ServerWrapper::instance()->updateLLMAccount();
-        emit signalAppendModel(llm);
+        emit freeModelAppend();
+
         dlg.setTitle(tr("Trial account received successfully."));// UOS AI试用账号领取成功！
 
-        if (UOSAI_NAMESPACE::Util::checkLanguage())
+        if (Util::checkLanguage())
             dlg.setMessage(tr("The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details."));
         else
             dlg.setMessage(tr("The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!"));
@@ -316,6 +398,7 @@ void WelcomeDialog::onGetFreeAccount()
         dlg.exec();
 
         m_pFreeWidget->hide();
+        updateButtonLayout();
         this->adjustSize();
     } else {
         qCWarning(logAIGUI) << "Failed to connect to server for free account, error:" << error << "status:" << status;
@@ -369,6 +452,7 @@ void WelcomeDialog::resetDialog()
     if (m_onlyUseAgreement) {
         m_pFreeWidget->hide();
         m_pFreeAccount->hide();
+        updateButtonLayout();
         m_pActivity->hide();
         m_pAddModel->hide();
 
@@ -389,20 +473,24 @@ void WelcomeDialog::resetDialog()
                 if (m_watcher && m_watcher->isRunning())
                     return;
                 m_watcher.reset(new QFutureWatcher<QNetworkReply::NetworkError>);
+                QSharedPointer<UosFreeAccountActivity> tmpActivity(new UosFreeAccountActivity);
                 QFuture<QNetworkReply::NetworkError> future = QtConcurrent::run([ = ] {
-                    return UosFreeAccounts::instance().freeAccountButtonDisplay("account", m_hasActivity);
+                    return UosFreeAccounts::instance().freeAccountButtonDisplay("account", *tmpActivity.data());
                 });
                 m_watcher->setFuture(future);
                 connect(m_watcher.data(), &QFutureWatcher<QNetworkReply::NetworkError>::finished, this, [ = ]()
                 {
+                    m_hasActivity = *tmpActivity.data();
                     if (QNetworkReply::NoError == m_watcher.data()->future().result() && 0 != m_hasActivity.display && !m_onlyUseAgreement) {
                         m_pFreeWidget->show();
                         m_pFreeAccount->show();
                         m_pActivity->show();
                         m_activityUrl = m_hasActivity.url;
                         resetLinkColor();
+                        updateButtonLayout();
                     } else {
                         m_pFreeWidget->hide();
+                        updateButtonLayout();
                     }
                     this->adjustSize();
                     this->onUpdateSystemFont(QFont());
@@ -416,6 +504,6 @@ void WelcomeDialog::resetDialog()
 }
 bool WelcomeDialog::isAgreed()
 {
-    return DbWrapper::localDbWrapper().getAICopilotIsOpen();
+    return AppDatabase::instance()->getConfigBool(CONFIG_APP_AGREEMENT);
 }
 

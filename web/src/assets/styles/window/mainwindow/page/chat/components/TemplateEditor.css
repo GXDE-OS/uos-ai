@@ -1,0 +1,284 @@
+html {
+    --input-text-color: rgba(0, 0, 0, 1);
+    --input-placeholder-color: rgba(85, 85, 85, 0.4);
+    --input-variable-block-bg: var(--system-active-color-alpha-05);
+    --input-variable-text-color: var(--system-active-color);
+}
+html.dark {
+    --input-text-color: rgba(255, 255, 255, 1);
+    --input-placeholder-color: rgba(255, 255, 255, 0.4);
+    --input-variable-block-bg: var(--system-active-color-alpha-10);
+    --input-variable-text-color: var(--system-active-color);
+}
+
+/* TemplateEditor 组件样式 */
+
+/* ─── 容器 ──────────────────────────────────────────────── */
+
+.template-editor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: var(--uosai-font-size-sm2);
+    line-height: var(--uosai-line-height-normal-relaxed);
+    color: var(--input-text-color);
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-sizing: border-box;
+    cursor: text;
+    /* 允许内部行内元素自动换行 */
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+/* 当 TemplateEditor 被 InputArea 附加 input-area__field 类时，确保 padding 为 0 */
+.template-editor.input-area__field {
+    padding: 0;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+/* 内容内边距包装层，代替原来根容器上的 padding */
+.template-editor__content-wrapper {
+    padding: 0 16px 16px 16px;
+}
+
+/* ScrollBar 封装：覆盖默认的 height:100%，改为随内容自动增长并继承最大高度约束 */
+.template-editor__scroll {
+    height: auto;
+    max-height: inherit;
+}
+
+.template-editor__scroll .scroll-bar-content {
+    height: auto;
+    max-height: inherit;
+}
+
+.template-editor__pm-root {
+    width: 100%;
+    line-height: var(--uosai-line-height-normal-relaxed);
+}
+
+.template-editor__pm-root .ProseMirror {
+    outline: none;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.template-editor__pm-root .ProseMirror:focus-visible {
+    outline: none;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* 覆盖 ProseMirror 默认的节点选中样式（蓝色边框） */
+.template-editor__pm-root .ProseMirror-selectednode {
+    outline: none;
+}
+
+.template-editor__pm-root .ProseMirror p {
+    margin: 0;
+}
+
+.template-editor--disabled {
+    color: #bfbfbf;
+    cursor: not-allowed;
+    user-select: none;
+}
+
+/* ─── 占位符 ─────────────────────────────────────────────── */
+
+.template-editor__placeholder {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    color: var(--input-placeholder-color);
+    pointer-events: none;
+    user-select: none;
+}
+
+.template-editor--disabled .template-editor__placeholder {
+    opacity: 0.4;
+}
+
+/* ─── 文本片段（contenteditable span） ──────────────────── */
+
+.template-editor__text {
+    display: inline-block;
+    outline: none;
+    white-space: pre-wrap;
+    min-width: 1px; /* 空内容时保留光标落点 */
+}
+
+/* ─── 编辑块公共基础 ─────────────────────────────────────── */
+
+.te-block {
+    display: inline-flex;
+    position: relative;
+    margin: 0 4px;
+    align-items: center;
+    line-height: var(--uosai-line-height-normal-relaxed);
+    height: calc(var(--uosai-font-size-sm2) * 2); /* 刚好实现设计图的2倍行高，在存在变量块的时候 */
+}
+
+.te-block__body {
+    display: inline-flex;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    font-size: inherit;
+    line-height: inherit;
+    transition: opacity 0.15s;
+    outline: none;
+    padding: 0 4px;
+}
+
+/* ─── 选项块 ─────────────────────────────────────────────── */
+
+.te-block--option > .te-block__body {
+    background-color: rgba(24, 144, 255, 0.12);
+    color: #096dd9;
+    border: 1px solid rgba(24, 144, 255, 0.3);
+}
+
+.te-block--option > .te-block__body:hover {
+    background-color: rgba(24, 144, 255, 0.2);
+}
+
+.te-block--option > .te-block__body.is-active {
+    background-color: rgba(24, 144, 255, 0.25);
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.te-block__arrow {
+    font-size: var(--uosai-font-size-3xs);
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+/* ─── 选项下拉列表 ───────────────────────────────────────── */
+
+.te-block__dropdown {
+    display: flex;
+    flex-direction: column;
+    /* position/top/left/z-index/max-height 由组件通过 Teleport+getBoundingClientRect() 动态内联设置 */
+    min-width: 80px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    overflow-y: auto;
+}
+
+.te-block__dropdown-item {
+    display: block;
+    padding: 6px 12px;
+    font-size: var(--uosai-font-size-base);
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+}
+
+.te-block__dropdown-item:hover,
+.te-block__dropdown-item.is-hover {
+    background-color: #f5f5f5;
+}
+
+.te-block__dropdown-item.is-selected {
+    color: #1890ff;
+    font-weight: 500;
+}
+
+/* ─── 变量块 ─────────────────────────────────────────────── */
+
+.te-block--variable > .te-block__body {
+    background-color: var(--input-variable-block-bg);
+    color: var(--input-variable-text-color);
+    border: none;
+}
+
+.te-block--variable > .te-block__body--editing {
+    display: inline-grid;
+}
+
+/* 变量块编辑态 */
+.te-block__body--editing {
+    outline: none;
+    cursor: text;
+    user-select: text;
+}
+
+/* 变量块占位符 */
+.te-block__placeholder {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.te-pm-block {
+    display: inline-flex;
+    vertical-align: baseline;
+}
+
+.te-pm-option-trigger {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.te-pm-option-trigger:focus-visible {
+    outline: 2px solid rgba(24, 144, 255, 0.55);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.te-pm-option-trigger:disabled {
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+.te-block--option .te-block__body::after {
+    content: "▾";
+    margin-left: 2px;
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.te-pm-variable-input {
+    grid-area: 1 / 1;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    outline: none;
+    padding: 0;
+    /* width:0 让 input 不参与格子宽度计算，min-width:100% 让它填满由 sizer 决定的格子 */
+    width: 0;
+    min-width: 100%;
+    box-sizing: content-box;
+}
+
+.te-pm-variable-sizer {
+    grid-area: 1 / 1;
+    visibility: hidden;
+    pointer-events: none;
+    white-space: pre;
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 0;
+}
+
+.te-pm-variable-input::placeholder {
+    opacity: 0.5;
+    color: inherit;
+}

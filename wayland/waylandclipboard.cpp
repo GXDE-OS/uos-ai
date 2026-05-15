@@ -2,7 +2,7 @@
 #include <QMetaObject>
 #include <QLoggingCategory>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logWayland)
 
@@ -57,7 +57,7 @@ void WaylandClipboard::setupRegistry(Registry *registry)
         QThreadPool *pool = QThreadPool::globalInstance();
         pool->setMaxThreadCount(16);
         //监听 selectionOffered  当选择发生了变化，该信号会发出。需要监听clipbord 改变，监听 dataOffered 即可。
-        connect(m_dataControlDevice, &DataControlDeviceV1::selectionOffered, [ = ](KWayland::Client::DataControlOfferV1 * offer) {
+        connect(m_dataControlDevice, &DataControlDeviceV1::selectionOffered, [ = ](uos_ai::wayland::DataControlOfferV1 * offer) {
             if (offer) {
                 m_copyControlOffer = m_dataControlDevice->primaryOfferedSelection();
                 qCDebug(logWayland) << "New selection offer received";
@@ -70,7 +70,7 @@ void WaylandClipboard::setupRegistry(Registry *registry)
                 return;
             }
 
-            QStringList mimeTypes = m_copyControlOffer->offeredMimeTypes();
+            QList<QString> mimeTypes = m_copyControlOffer->offeredMimeTypes();
             qCDebug(logWayland) << "==============Available MIME types:" << mimeTypes;
             clipText.clear();
 

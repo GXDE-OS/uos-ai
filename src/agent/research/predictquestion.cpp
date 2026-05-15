@@ -1,7 +1,15 @@
 #include "predictquestion.h"
-#include "util.h"
+#include "global_key_define.h"
+#include "research_key_define.h"
 
+#include <QLocale>
 #include <QRegularExpression>
+#include <QJsonDocument>
+#include <QJsonParseError>
+#include <QJsonArray>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(logResearch)
 
 using namespace uos_ai;
 
@@ -47,36 +55,59 @@ Format Example:
 ]
 ```)";
 
-    QString language = Util::checkLanguage() ? "Chinese" : "English";
+    QString language = QLocale::system().language() == QLocale::Chinese ? "Chinese" : "English";
     m_systemPrompt += QString("\n\nPlease respond in %1.").arg(language);
 }
 
-QJsonObject PredictQuestion::processRequest(const QJsonObject &question, const QJsonArray &message, const QVariantHash &params)
+QVariantHash PredictQuestion::processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params)
 {
-    QJsonObject res = LlmAgent::processRequest(question, message, params);
+    // Disable streaming for JSON output
+    m_modelParams[STR_KEY_STREAM] = false;
+
+    QString userTask = question.content.value(0).data.toString();
+    QString articleContent = params.value(STR_RESEARCH_ARTICLE_CONTENT).toString();
+
+    ModelMessage ques = question;
+    if (!articleContent.isEmpty()) {
+        ques.role = STR_KEY_USER;
+        ques.content = {{ContentType::CntText,
+                         QString("User Original Task:%1\nFinal Content:\n%2").arg(userTask, articleContent)}};
+    }
+
+    QVariantHash res = LlmAgent::processRequest(ques, history, params);
+
+    QString content = res.value(STR_KEY_CONTENT).value<ModelMessage>().content.value(0).data.toString();
 
     QJsonArray questionArray;
     QRegularExpression regex("```json\\s*([\\s\\S]*?)\\s*```", QRegularExpression::DotMatchesEverythingOption);
-    QRegularExpressionMatch match = regex.match(res.value("content").toString());
+    QRegularExpressionMatch match = regex.match(content);
+    QJsonParseError parseError;
     if (match.hasMatch()) {
-        questionArray = QJsonDocument::fromJson(match.captured(1).trimmed().toUtf8()).array();
+        questionArray = QJsonDocument::fromJson(match.captured(1).trimmed().toUtf8(), &parseError).array();
     } else {
-        questionArray = QJsonDocument::fromJson(res.value("content").toString().trimmed().toUtf8()).array();
+        questionArray = QJsonDocument::fromJson(content.trimmed().toUtf8(), &parseError).array();
     }
-    predictContent(questionArray);
+    if (questionArray.isEmpty()) {
+        qCWarning(logResearch) << "PredictQuestion: failed to parse questions JSON:"
+                               << parseError.errorString() << "raw:" << content.left(200);
+    }
+
+    QStringList questions;
+    for (const QJsonValue &val : questionArray)
+        questions.append(val.toString());
+
+    emitGuessYouWant(questions);
 
     return res;
 }
 
-void PredictQuestion::predictContent(const QJsonArray &questions)
+void PredictQuestion::emitGuessYouWant(const QStringList &questions)
 {
-    QJsonObject message;
-    message.insert("content", questions);
-    message.insert("chatType", ChatAction::ChatGuessYouWant);
+    QVariantHash data;
+    data[STR_KEY_CONTENT] = questions;
 
-    QJsonObject wrapper;
-    wrapper.insert("message", message);
-    wrapper.insert("stream", true);
-
-    emit readyReadChatDeltaContent(QJsonDocument(wrapper).toJson());
+    RenderMessage rmsg;
+    rmsg.type = ContentType::CntGuessYouWant;
+    rmsg.data = data;
+    emit messageReceived(RenderMessageList{rmsg});
 }

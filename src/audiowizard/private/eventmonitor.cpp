@@ -15,7 +15,7 @@ Q_DECLARE_LOGGING_CATEGORY(logAudioWizard)
 
 #ifndef ENABLE_DBUS_XEVENT
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class EventMonitorPrivate
 {
@@ -26,9 +26,9 @@ public:
     EventMonitor *q;
 };
 
-UOSAI_END_NAMESPACE
+}
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 EventMonitor::EventMonitor(QObject* parent):QThread (parent)
   , m_releaseX(0)

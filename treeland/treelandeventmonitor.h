@@ -1,6 +1,5 @@
 #ifndef TREELANDEVENTMONITOR_H
 #define TREELANDEVENTMONITOR_H
-#include "uosai_global.h"
 
 #include "private/basemonitor.h"
 #include "treelandddeactivev1.h"

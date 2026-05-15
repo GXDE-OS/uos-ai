@@ -22,13 +22,13 @@ public:
     ~ExternalAgentLoader();
     void setPaths(const QStringList &paths);
     void readAgents();
-    QList<QSharedPointer<ExternalAgent>> agents() const;
+    QMap<QSharedPointer<ExternalAgent>, QString> agents() const;
 signals:
     void agentChanged();
 public slots:
 private:
     QStringList loadPaths;
-    QList<QSharedPointer<ExternalAgent> > allAgents;
+    QMap<QSharedPointer<ExternalAgent>, QString> allAgents;
     FileWatcher watcher;
     QTimer agentTimer;
 };

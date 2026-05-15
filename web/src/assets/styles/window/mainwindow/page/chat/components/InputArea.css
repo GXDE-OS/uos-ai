@@ -1,0 +1,91 @@
+html {
+    --input-area-bg-color: rgba(255, 255, 255, 1);
+    --input-area-focused-bg: rgba(255, 255, 255, 0.65);
+    --input-area-focused-box-shadow: 0 0 0 1px var(--system-active-color-alpha-60), 0 6px 30px 2px rgba(0, 0, 0, 0.08);
+}
+html.dark {
+    --input-area-bg-color: rgba(255, 255, 255, 0.05);
+    --input-area-focused-bg: rgba(255, 255, 255, 0.1);
+    --input-area-focused-box-shadow:
+        0 0 0 1px var(--system-active-color-alpha-70), 0 3px 8px 5px rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* InputArea 组件样式 */
+
+.input-area {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 102px;
+    height: auto;
+    position: relative;
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.03),
+        0 4px 8px 1px rgba(0, 0, 0, 0.03);
+    border-radius: var(--radius-large);
+    background-color: var(--input-area-bg-color);
+    overflow: visible;
+}
+
+.input-area--dashed {
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.03);
+}
+
+.input-area--dashed::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border: 1px dashed var(--system-active-color-alpha-80);
+    border-radius: calc(var(--radius-large) + 1px);
+    pointer-events: none;
+}
+
+.input-area--focused {
+    background-color: var(--input-area-focused-bg);
+    box-shadow: var(--input-area-focused-box-shadow);
+}
+
+/* Attachment display area */
+.input-area__attachments {
+    width: 100%;
+    padding: 7px var(--spacing-md) var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 100;
+}
+
+.input-area__field {
+    width: 100%;
+    min-height: 60px;
+    max-height: 232px;
+    padding: 12px 16px;
+    font-size: var(--uosai-font-size-base);
+    line-height: var(--uosai-line-height-normal);
+    color: #333;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    /* overflow-y 由 TemplateEditor 内部 ScrollBar 组件负责 */
+}
+
+/* 当存在附件区时，输入区最大高度限制为 169px (12px padding top + 157px content.)*/
+.input-area__attachments + .input-area__field {
+    max-height: 169px;
+}
+
+.input-area__field::placeholder {
+    color: #bfbfbf;
+}
+
+.input-area__field:disabled {
+    background-color: transparent;
+    color: #bfbfbf;
+    cursor: not-allowed;
+}

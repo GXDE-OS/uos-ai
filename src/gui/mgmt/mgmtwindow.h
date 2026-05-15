@@ -1,50 +1,48 @@
 #ifndef MGMTWINDOW_H
 #define MGMTWINDOW_H
-#include "private/navigation.h"
-#include "private/disableappwidget.h"
-
-#include <QScrollArea>
 
 #include <DMainWindow>
 #include <DWidget>
 #include <DStandardItem>
 #include <DListView>
 
-DWIDGET_USE_NAMESPACE
+#include <QScrollArea>
 
 namespace uos_ai {
+
 class PrivateModelListWidget;
-class AddPrivateModelDialog;
 class AiBarWidget;
 class WordWizardWidget;
-class McpServerWidget;
-class SkillServerWidget;
-class ChatBotWidget;
-};
-
+class GetFreeAccountDialog;
+class KnowledgeBaseListWidget;
 class ModelListWidget;
 class LocalModelListWidget;
-class AddModelDialog;
-class KnowledgeBaseListWidget;
-class GetFreeAccountDialog;
-
-class MgmtWindow : public DMainWindow
+class Navigation;
+class McpServerWidget;
+class ChatBotWidget;
+class MgmtWindow : public DTK_WIDGET_NAMESPACE::DMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MgmtWindow(DWidget *parent = nullptr);
+    enum Page {
+        Default = 0,
+        ModelList,
+        KnowledgeBase,
+        FollowAlong,
+        AddModel
+    };
+
+    explicit MgmtWindow(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
     ~MgmtWindow();
 
-    void showEx(bool, bool onlyUseAgreement = false, bool isFromAiQuick = false, const QString & locateTitle = "");
+    void showPage(int page);
     void checkUpdateStatus();
-    void showGetFreeAccountDlg();
 
+public slots:
+    void showGetFreeAccountDlg();
 private slots:
-    void onAddModel();
-    void showAddPrivateModel();
     void onThemeTypeChanged();
-    void onShowGetFreeAccountDialog();
     void onscrollAreaValueChanged(int value);
     void onNavigationSelected(const QString & key);
 
@@ -58,21 +56,19 @@ public slots:
 private:
     void initUI();
     void initConnect();
-    void onAddPrivateModel();
     void loadDisabledApps();
 
     ModelListWidget *initModelListWidget();
-    uos_ai::PrivateModelListWidget *initPrivateModelListWidget();
+    PrivateModelListWidget *initPrivateModelListWidget();
     LocalModelListWidget *initLocalModelListWidget();
-    DWidget *initAgreementWidget();
-    DWidget *initProxyWidget();
+    DTK_WIDGET_NAMESPACE::DWidget *initAgreementWidget();
+    DTK_WIDGET_NAMESPACE::DWidget *initProxyWidget();
     KnowledgeBaseListWidget *initKnowledgeBaseWidget();
-    uos_ai::WordWizardWidget *initWordWizardWidget();
-    uos_ai::AiBarWidget *initAiBarWidget();
-    DWidget *initMcpServerWidget();
-    DWidget *initSkillWidget();
-    DWidget *initModelConfigWidget();
-    DWidget *initChatBotWidget();
+    WordWizardWidget *initWordWizardWidget();
+    DTK_WIDGET_NAMESPACE::DWidget *initMcpServerWidget();
+    AiBarWidget *initAiBarWidget();
+    DTK_WIDGET_NAMESPACE::DWidget *initModelConfigWidget();
+    ChatBotWidget *initChatBotWidget();
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
@@ -88,32 +84,27 @@ signals:
     void sigThirdPartyMcpAgree();
 
 private:
-    QMap<QString, DWidget *> titles = {};
-    QList<DWidget *> widgetList = {};
+    QMap<QString, DTK_WIDGET_NAMESPACE::DWidget *> titles = {};
+    QList<DTK_WIDGET_NAMESPACE::DWidget *> widgetList = {};
     QWidget *m_pToastContent = nullptr;
     QScrollArea *m_pScrollArea = nullptr;
 
-    uos_ai::Navigation *m_pNavigationWidget = nullptr;
+    Navigation *m_pNavigationWidget = nullptr;
     ModelListWidget *m_pModelListWidget = nullptr;
     LocalModelListWidget *m_pLocalModelListWidget = nullptr;
     KnowledgeBaseListWidget *m_pKnowledgeBaseListWidget = nullptr;
-    uos_ai::WordWizardWidget *m_pWordWizardWidget = nullptr;
-    uos_ai::AiBarWidget *m_pAiBarWidget = nullptr;
-    uos_ai::McpServerWidget *m_pMcpServerWidget = nullptr;
-    uos_ai::SkillServerWidget *m_pSkillServerWidget = nullptr;
-    uos_ai::PrivateModelListWidget *m_pPrivateModelListWidget = nullptr;
-    uos_ai::ChatBotWidget *m_pChatBotWidget = nullptr;
-
+    WordWizardWidget *m_pWordWizardWidget = nullptr;
+    AiBarWidget *m_pAiBarWidget = nullptr;
+    McpServerWidget *m_pMcpServerWidget = nullptr;
+    PrivateModelListWidget *m_pPrivateModelListWidget = nullptr;
+    ChatBotWidget *m_pChatBotWidget = nullptr;
 
     QSet<QWidget *> m_widgets;
-    AddModelDialog *m_pAddDlg = nullptr;
-    uos_ai::AddPrivateModelDialog *m_pAddPrivateDlg = nullptr;
 
     bool m_bIsWordWizardHidden = false;
-    GetFreeAccountDialog *m_pGetFreeAccountDialog=nullptr;
-
-    bool m_isFromAiQuick = false;
+    GetFreeAccountDialog *m_pGetFreeAccountDialog = nullptr;
 };
 
+}
 
 #endif // MGMTWINDOW_H

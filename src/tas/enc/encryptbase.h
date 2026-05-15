@@ -5,6 +5,8 @@
 #include <string>
 #include <openssl/evp.h>
 
+namespace uos_ai {
+
 class EncryptBase
 {
 public:
@@ -29,5 +31,7 @@ protected:
 
     std::vector<unsigned char> m_iv;
 };
+
+}
 
 #endif // ENCRYPTBASE_H

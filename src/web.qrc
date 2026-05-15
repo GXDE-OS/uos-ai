@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../web/dist/index.html</file>
+        <file>../web/dist/favicon.svg</file>
+        <file>../web/dist/assets/index.css</file>
+        <file>../web/dist/assets/index.js</file>
+        <file>../web/dist/assets/index-legacy.js</file>
+        <file>../web/dist/assets/RootWindow.css</file>
+        <file>../web/dist/assets/RootWindow.js</file>
+        <file>../web/dist/assets/RootWindow-legacy.js</file>
+        <file>../web/dist/assets/polyfills-legacy.js</file>
+        <file>../web/dist/assets/Root.js</file>
+        <file>../web/dist/assets/Root-legacy.js</file>
+        <file>../web/dist/assets/pinia.js</file>
+        <file>../web/dist/assets/pinia-legacy.js</file>
+        <file>../web/dist/assets/stores.js</file>
+        <file>../web/dist/assets/stores-legacy.js</file>
+        <file>../web/dist/assets/listen1.png</file>
+        <file>../web/dist/assets/listen2.png</file>
+        <file>../web/dist/assets/silence.webm</file>
+        <file>../web/dist/assets/listen.webm</file>
+        <file>../web/dist/assets/play.webm</file>
+        <file>../web/dist/assets/thinking.webm</file>
+        <file>../web/dist/assets/error.webm</file>
+        <file>../web/dist/assets/icon_empty_conversation_dark.svg</file>
+        <file>../web/dist/assets/icon_empty_conversation_light.svg</file>
+        <file>../web/dist/assets/deep-thinking.webp</file>
+        <file>../web/dist/assets/deep-thinking-dark.webp</file>
+    </qresource>
+</RCC>

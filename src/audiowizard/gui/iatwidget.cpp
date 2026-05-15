@@ -4,9 +4,9 @@
 #include <dbus/fcitxinputserver.h>
 #include <utils/dconfigmanager.h>
 #include "utils/esystemcontext.h"
-#include "dbus/dbuscontrolcenterrequest.h"
 #include "networkmonitor.h"
 #include "audioaiassistant.h"
+#include "oscontrol/deepincontrolcenter.h"
 
 #include <DPushButton>
 #include <DPaletteHelper>
@@ -40,50 +40,43 @@ DCORE_USE_NAMESPACE
 using namespace uos_ai;
 
 int IatWidget::getRecoderVolume() {
-#ifdef COMPILE_ON_V25
-    QString dbusAudioService = "org.deepin.dde.Audio1";
-    QString dbusAudioPath = "/org/deepin/dde/Audio1";
-#else
-    QString dbusAudioService = "com.deepin.daemon.Audio";
-    QString dbusAudioPath = "/com/deepin/daemon/Audio";
-#endif
     // 获取麦克风设备
-    QDBusInterface interface( dbusAudioService,
-                              dbusAudioPath,
+    QDBusInterface interface("com.deepin.daemon.Audio",
+                              "/com/deepin/daemon/Audio",
                               "org.freedesktop.DBus.Properties");
-    QDBusReply<QDBusVariant> reply = interface.call("Get", dbusAudioService, "DefaultSource");
+    QDBusReply<QDBusVariant> reply = interface.call("Get", "com.deepin.daemon.Audio", "DefaultSource");
     if (!reply.isValid()) {
-        qCritical() << "dbus call "<<dbusAudioService<<" DefaultSource FAILED:" << reply.error().name();
+        qCritical() << "dbus call com.deepin.daemon.Audio DefaultSource FAILED:" << reply.error().name();
         return -1;
     }
 
     QString defaultSource = reply.value().variant().value<QDBusObjectPath>().path();
-    qInfo() << "dbus call "<<dbusAudioService<<" DefaultSource:" << defaultSource;
+    qInfo() << "dbus call com.deepin.daemon.Audio DefaultSource:" << defaultSource;
     if (defaultSource.isEmpty()) {
-        qWarning() << "dbus call "<<dbusAudioService<<" DefaultSource EMPTY";
+        qWarning() << "dbus call com.deepin.daemon.Audio DefaultSource EMPTY";
         return -1;
     }
 
     // 判断是否静音
-    QDBusInterface interface1( dbusAudioService,
+    QDBusInterface interface1("com.deepin.daemon.Audio",
                                defaultSource,
                                "org.freedesktop.DBus.Properties");
-    reply = interface1.call("Get", dbusAudioService + ".Source", "Name");
+    reply = interface1.call("Get", "com.deepin.daemon.Audio.Source", "Name");
     if(!reply.isValid()){
-        qWarning() << "dbus call "<<dbusAudioService<<" Name FAILED:" << reply.error().name();
+        qWarning() << "dbus call com.deepin.daemon.Audio Name FAILED:" << reply.error().name();
         return -1;
     }
 
     QString name = reply.value().variant().toString();
-    qInfo() << "dbus call "<<dbusAudioService<<" Name:" << name;
+    qInfo() << "dbus call com.deepin.daemon.Audio Name:" << name;
     if (name.endsWith("monitor")) {
-        qWarning() << "dbus call "<<dbusAudioService<<" Name INVALID";
+        qWarning() << "dbus call com.deepin.daemon.Audio Name INVALID";
         return -1;
     }
 
-    reply = interface1.call("Get", dbusAudioService + ".Source", "Mute");
+    reply = interface1.call("Get", "com.deepin.daemon.Audio.Source", "Mute");
     if(!reply.isValid()){
-        qWarning() << "dbus call "<<dbusAudioService<<" Mute FAILED:" << reply.error().name();
+        qWarning() << "dbus call com.deepin.daemon.Audio Mute FAILED:" << reply.error().name();
         return -1;
     }
 
@@ -94,12 +87,12 @@ int IatWidget::getRecoderVolume() {
     }
 
     // 获取麦克风音量
-    QDBusInterface interface2( dbusAudioService,
+    QDBusInterface interface2("com.deepin.daemon.Audio",
                                defaultSource,
                                "org.freedesktop.DBus.Properties");
-    reply = interface2.call("Get", dbusAudioService + ".Source", "Volume");
+    reply = interface2.call("Get", "com.deepin.daemon.Audio.Source", "Volume");
     if(!reply.isValid()){
-        qWarning() << "dbus call "<<dbusAudioService<<" Volume FAILED:" << reply.error().name();
+        qWarning() << "dbus call com.deepin.daemon.Audio Volume FAILED:" << reply.error().name();
         return -1;
     }
 
@@ -123,28 +116,12 @@ IatWidget::~IatWidget() {
 }
 
 void IatWidget::initUi() {
-    // Get the screen where the mouse cursor is located
-    QPoint cursorPos = QCursor::pos();
-    QScreen *cursorScreen = nullptr;
-    
-    // Find the screen that contains the cursor position
-    for (QScreen *screen : QGuiApplication::screens()) {
-        if (screen->geometry().contains(cursorPos)) {
-            cursorScreen = screen;
-            break;
-        }
-    }
-    
-    // Fallback to primary screen if cursor screen not found
-    if (!cursorScreen) {
-        cursorScreen = QGuiApplication::primaryScreen();
-    }
-    
-    QRect availableRect = cursorScreen->availableGeometry();
+    QScreen *desktopWidget = QGuiApplication::primaryScreen();
+    QRect availableRect = desktopWidget->availableGeometry();
 
     this->setFixedSize(QSize(WIDGET_WIDTH, WIDGET_HEIGHT));
     QPoint pos((availableRect.width() - this->width()) / 2, availableRect.height() - this->height());
-    this->move(cursorScreen->geometry().topLeft() + pos - QPoint(0, 10));
+    this->move(pos - QPoint(0, 10));
     this->installEventFilter(this);
 #ifdef COMPILE_ON_V20
     if (ESystemContext::isWayland()) {
@@ -407,43 +384,14 @@ void IatWidget::onAudioData(QByteArray data) {
     m_model->sendData(data);
 }
 
-// 辅助函数：使用 QProcess 安全地执行 dbus-send 命令
-static bool executeDBusCommand(const QStringList &args)
-{
-    QProcess process;
-    process.setProgram("dbus-send");
-    process.setArguments(args);
-    qint64 pid = -1;
-    bool ok = QProcess::startDetached(process.program(), process.arguments(), QString(), &pid);
-    if (!ok || pid < 0) {
-        qWarning() << "Failed to execute dbus-send:" << process.errorString();
-        return false;
-    }
-    return true;
-}
-
 void IatWidget::onOpenConfigDialog() {
 #if defined(COMPILE_ON_V25)
-    DbusControlCenterRequest dbus;
-    dbus.showPage("sound");
+    DeepinControlCenter dbus;
+    dbus.ShowPage("sound");
 #elif defined(COMPILE_ON_V23)
-    // 使用分离的参数替代单个字符串，避免命令注入风险
-    executeDBusCommand({
-        "--print-reply",
-        "--dest=org.deepin.dde.ControlCenter1",
-        "/org/deepin/dde/ControlCenter1",
-        "org.deepin.dde.ControlCenter1.ShowPage",
-        "string:sound"
-    });
+    QProcess::startDetached("dbus-send --print-reply --dest=org.deepin.dde.ControlCenter1 /org/deepin/dde/ControlCenter1 org.deepin.dde.ControlCenter1.ShowPage string:\"sound\"");
 #else
-    executeDBusCommand({
-        "--print-reply",
-        "--dest=com.deepin.dde.ControlCenter",
-        "/com/deepin/dde/ControlCenter",
-        "com.deepin.dde.ControlCenter.ShowPage",
-        "string:sound",
-        "string:Microphone"
-    });
+    QProcess::startDetached("dbus-send --print-reply --dest=com.deepin.dde.ControlCenter /com/deepin/dde/ControlCenter com.deepin.dde.ControlCenter.ShowPage string:\"sound\" string:\"Microphone\"");
 #endif
 
     this->close();

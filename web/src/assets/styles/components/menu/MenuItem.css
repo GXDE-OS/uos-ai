@@ -1,0 +1,84 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    cursor: pointer;
+    user-select: none;
+    border-radius: var(--radius-normal);
+    height: 26px;
+}
+
+.menu-item:hover:not(.menu-item--disabled) {
+    box-shadow: 0 -1px 0 0 inset rgba(0, 0, 0, 0.2);
+    background-color: var(--system-active-color);
+}
+
+.menu-item:hover:not(.menu-item--disabled) .menu-item__label,
+.menu-item:hover:not(.menu-item--disabled) .menu-item__icon {
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu-item--selected {
+    background-color: var(--menu-item-selected-bg, rgba(0, 0, 0, var(--gray-opacity-light)));
+}
+
+.menu-item--disabled {
+    opacity: var(--bg-opacity-disabled);
+    cursor: not-allowed;
+}
+
+.menu-item:active:not(.menu-item--disabled) {
+    box-shadow: 0 -1px 0 0 inset rgba(0, 0, 0, 0.2);
+    background-color: var(--system-active-color);
+}
+
+.menu-item:active:not(.menu-item--disabled) .menu-item__label,
+.menu-item:active:not(.menu-item--disabled) .menu-item__icon,
+.menu-item:hover:not(.menu-item--disabled) .menu-item__check {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-item__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item__label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--menu-text-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 层级缩进 */
+.menu-item--level-1 {
+    padding-left: var(--spacing-xl);
+}
+
+.menu-item--level-2 {
+    padding-left: calc(var(--spacing-xl) + var(--spacing-md));
+}
+
+.menu-item--level-3 {
+    padding-left: calc(var(--spacing-xl) * 2);
+}
+
+/* Checkable 勾选标记 */
+.menu-item__check {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

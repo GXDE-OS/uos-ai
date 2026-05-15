@@ -1,0 +1,17 @@
+html {
+    --menu-separator-color: rgba(0, 0, 0, 0.1);
+}
+
+html.dark {
+    --menu-separator-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-separator {
+    padding: 3px 0;
+}
+
+.menu-separator__line {
+    height: 2px;
+    background-color: var(--menu-separator-color);
+    margin: 0 10px;
+}

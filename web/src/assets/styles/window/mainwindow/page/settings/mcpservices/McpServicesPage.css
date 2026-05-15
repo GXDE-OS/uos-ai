@@ -1,0 +1,133 @@
+html {
+    --mcp-services-page-title-color: rgba(0, 0, 0, 1);
+}
+
+html.dark {
+    --mcp-services-page-title-color: rgba(255, 255, 255, 1);
+}
+
+.mcp-services-page {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+}
+
+.mcp-services-page__header-container {
+    width: 100%;
+}
+
+.mcp-services-page__container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mcp-services-page__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mcp-services-page__header-left {
+    display: flex;
+    align-items: center;
+}
+
+.mcp-services-page__header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.mcp-services-page__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.mcp-services-page__actions > * + * {
+    margin-left: 10px;
+}
+
+.mcp-services-page__actions .combobox {
+    padding: 0 6px;
+}
+
+.mcp-services-page__title {
+    color: var(--mcp-services-page-title-color);
+    font-size: var(--uosai-font-size-xl);
+    font-weight: 700;
+    font-style: bold;
+    line-height: var(--uosai-line-height-normal);
+}
+
+.mcp-services-page__add-button {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--system-active-color);
+    cursor: pointer;
+}
+
+.mcp-services-page__add-button:hover {
+    opacity: 0.7;
+}
+
+.mcp-services-page__add-button:active {
+    opacity: 1;
+}
+
+.mcp-services-page__add-button-text {
+    font-size: var(--uosai-font-size-base);
+    line-height: var(--uosai-line-height-relaxed);
+}
+
+.mcp-services-page__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mcp-services-page__scroll {
+    flex: 1;
+    min-height: 0;
+}
+
+.mcp-services-page__content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+.mcp-services-page__content-container > .mcp-services-page__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100%;
+}
+
+.mcp-services-page__section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+
+.mcp-services-page__section > * + * {
+    margin-top: 10px;
+}

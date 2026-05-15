@@ -2,34 +2,32 @@
 #define MODEL_POINT_H
 
 #include "basicpoint.h"
-#include "serverdefs.h"
-UOSAI_BEGIN_NAMESPACE
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QLoggingCategory>
+
+namespace uos_ai {
 
 namespace report {
 
 class ModelPoint : public BasicPoint
 {
 public:
-    explicit ModelPoint(const LLMServerProxy &tmpLLMAccount) : BasicPoint()
+    explicit ModelPoint(const QString &jsonData) : BasicPoint()
     {
-        QString species = "Online model";
-        QString type = tmpLLMAccount.llmName(tmpLLMAccount.model, true);
-        switch (tmpLLMAccount.type) {
-        case ModelType::USER:
-            species = "Private deployment model";
-            break;
-        case ModelType::LOCAL:
-            species = "Local model";
-            break;
-        case ModelType::FREE_KOL:
-            species = "Online model";
-            break;
-        case ModelType::FREE_NORMAL:
-            species = "Online model";
-            break;
-        default:
-            break;
+        QString species = "";
+        QString type = "";
+
+        // Parse JSON to extract model_species and model_type
+        QJsonParseError parseError;
+        QJsonDocument doc = QJsonDocument::fromJson(jsonData.toUtf8(), &parseError);
+
+        if (parseError.error == QJsonParseError::NoError && doc.isObject()) {
+            QJsonObject obj = doc.object();
+            species = obj.value("model_species").toString();
+            type = obj.value("model_type").toString();
         }
+
         this->m_eventId.second = EventID::MODEL;
         this->m_event = "model";
         QVariantMap map;
@@ -42,6 +40,6 @@ public:
 
 }
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // MODEL_POINT_H

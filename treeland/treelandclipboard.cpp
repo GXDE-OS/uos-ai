@@ -5,7 +5,7 @@
 #include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(logTreeland)
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 TreelandClipboard::TreelandClipboard(QObject *parent) : BaseClipboard(parent)
 {

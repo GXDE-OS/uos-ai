@@ -3,11 +3,10 @@
 #include "chatbotcommandhandler.h"
 #include "chatbotpayload.h"
 #include "channelmanager.h"
-#include "session.h"
 
 #include <QLoggingCategory>
 
-Q_LOGGING_CATEGORY(logHandler, "uos-ai.chatbot.handler")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
 using namespace uos_ai::chatbot;
 
@@ -30,11 +29,6 @@ ChatBotRequestHandler::ChatBotRequestHandler(QObject *parent)
         m_queue.clear();
         m_activeTargets.clear();
     });
-}
-
-void ChatBotRequestHandler::setSession(Session *session)
-{
-    m_processor->setSession(session);
 }
 
 void ChatBotRequestHandler::setChannelManager(ChannelManager *manager)
@@ -67,7 +61,7 @@ void ChatBotRequestHandler::onMessageReceived(const QJsonObject &payload)
         return;
 
     if (m_activeTargets.contains(targetKey)) {
-        qCDebug(logHandler) << "Target busy, queuing message for" << targetKey;
+        qCDebug(logChatBot) << "Target busy, queuing message for" << targetKey;
         m_queue[targetKey].enqueue(payload);
         return;
     }

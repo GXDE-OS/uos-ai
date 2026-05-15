@@ -1,14 +1,12 @@
 #ifndef AUDIOAIASSISTANTSETTING_H
 #define AUDIOAIASSISTANTSETTING_H
 
-#include "uosai_global.h"
-
 #include <QObject>
 #include <QTimer>
 #include <QSet>
 
 class QSettings;
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class AudioAiassistantSetting : public QObject
 {
@@ -42,6 +40,6 @@ protected:
 private:
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // AUDIOAIASSISTANTSETTING_H

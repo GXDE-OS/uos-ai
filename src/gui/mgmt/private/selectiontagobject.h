@@ -1,6 +1,5 @@
 #ifndef SELECTIONTAGOBJECT_H
 #define SELECTIONTAGOBJECT_H
-#include "uosai_global.h"
 
 #include <DGuiApplicationHelper>
 #include <DPalette>

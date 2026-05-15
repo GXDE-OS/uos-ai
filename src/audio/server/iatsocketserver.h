@@ -1,19 +1,21 @@
 #ifndef IATSOCKETSERVER_H
 #define IATSOCKETSERVER_H
 
-#include "serverdefs.h"
 #include "pgsparser.h"
 #include "iatserver.h"
+#include "model/modelinfo.h"
 
 #include <QUrl>
 #include <QWebSocket>
 #include <QTimer>
 
+namespace uos_ai {
+
 class IatSocketServer : public IatServer
 {
     Q_OBJECT
 public:
-    explicit IatSocketServer(const AccountProxy &account, QObject *parent = nullptr);
+    explicit IatSocketServer(const ProviderAccount &account, QObject *parent = nullptr);
 
 public:
     /**
@@ -60,7 +62,7 @@ private:
     void normalExitServer();
 
 private:
-    AccountProxy m_account;
+    ProviderAccount m_account;
     QSharedPointer<QWebSocket> m_web;
 
     bool m_normalExit = false;
@@ -74,5 +76,7 @@ private:
 
     PgsParser m_pgsParser;
 };
+
+}
 
 #endif // IATSOCKETSERVER_H

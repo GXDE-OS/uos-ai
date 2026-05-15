@@ -27,7 +27,7 @@
 /*
  * Proxy class for interface com.deepin.daemon.Audio
  */
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 class __AudioPrivate;
 class __Audio : public uos_ai::DBusExtendedAbstractInterface
 {
@@ -220,5 +220,5 @@ private:
 
 typedef uos_ai::__Audio Audio;
 
-UOSAI_END_NAMESPACE
+}
 #endif

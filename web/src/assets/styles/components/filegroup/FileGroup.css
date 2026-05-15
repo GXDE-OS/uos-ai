@@ -1,0 +1,182 @@
+html {
+    --file-group-color-more-btn-bg: rgba(0, 0, 0, 0.05);
+    --file-group-color-more-btn-bg-hover: rgba(0, 0, 0, 0.1);
+    --file-group-color-more-btn-bg-active: rgba(0, 0, 0, 0.15);
+    --file-group-color-more-btn-text: rgba(0, 0, 0, 0.7);
+    --file-group-color-image-border: rgba(0, 0, 0, 0.1);
+}
+html.dark {
+    --file-group-color-more-btn-bg: rgba(255, 255, 255, 0.05);
+    --file-group-color-more-btn-bg-hover: rgba(255, 255, 255, 0.1);
+    --file-group-color-more-btn-bg-active: rgba(255, 255, 255, 0.15);
+    --file-group-color-more-btn-text: rgba(255, 255, 255, 0.7);
+    --file-group-color-image-border: rgba(255, 255, 255, 0.1);
+}
+
+/* File group container */
+.file-group {
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+}
+
+/* Align left modifier */
+.file-group--align-left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Align right modifier */
+.file-group--align-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* File items wrapper */
+.file-group__items {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.file-group__items.file-group--align-left {
+    justify-content: flex-start;
+}
+
+.file-group__items.file-group--align-right {
+    justify-content: flex-end;
+}
+
+/* More files button */
+.file-group__more-btn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-normal);
+    background-color: var(--file-group-color-more-btn-bg);
+    cursor: pointer;
+    user-select: none;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--file-group-color-more-btn-text);
+    transition: background-color var(--transition-normal);
+    position: relative;
+    z-index: 1;
+}
+
+.file-group__more-btn:hover {
+    background-color: var(--file-group-color-more-btn-bg-hover);
+}
+
+.file-group__more-btn:active {
+    background-color: var(--file-group-color-more-btn-bg-active);
+}
+
+/* When popover is visible, disable hover effect on button */
+.file-group__more-btn--popover-open:hover {
+    background-color: var(--file-group-color-more-btn-bg);
+}
+
+/* Popover container - use fixed to avoid clipping */
+.file-group__popover-container {
+    position: fixed;
+    /* Position will be set dynamically by JS */
+    z-index: 10000;
+}
+
+/* Single image container */
+.file-group__image {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid var(--file-group-color-image-border);
+
+    /* Viewport size constraints - fixed container size range */
+    min-width: 105px;
+    max-width: 320px;
+    min-height: 124px;
+    max-height: 320px;
+
+    /* Container settings */
+    position: relative;
+    border-radius: var(--radius-normal);
+
+    /* Let container adapt to content, but constrained by min/max */
+    width: max-content;
+    height: max-content;
+}
+
+.file-group__image.file-group--align-left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.file-group__image.file-group--align-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Image file */
+.file-group__image-file {
+    display: block;
+    border-radius: var(--radius-normal);
+
+    /* Core: image fit strategy */
+    object-fit: cover;
+    object-position: top left;
+
+    /* Image size settings - key logic */
+    min-width: 105px;
+    min-height: 124px;
+    max-width: 320px;
+    max-height: 320px;
+
+    /* Let image fill container */
+    width: 100%;
+    height: 100%;
+}
+
+/* Small mode container */
+.file-group__image--small {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    max-width: 52px;
+    min-height: 52px;
+    max-height: 52px;
+    margin-bottom: 0;
+}
+
+/* Small mode image */
+.file-group__image-file--small {
+    min-width: 52px;
+    min-height: 52px;
+    max-width: 52px;
+    max-height: 52px;
+    object-position: center;
+}
+
+/* Image delete button */
+.file-group__image-delete {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.2s,
+        visibility 0.2s;
+}
+
+.file-group__image:hover .file-group__image-delete {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,87 @@
+html {
+    --welcome-title-color: rgba(0, 0, 0, 1);
+    --welcome-slogan-color: rgba(0, 0, 0, 0.7);
+    --welcome-avatar-color: rgba(0, 0, 0, 1);
+}
+
+html.dark {
+    --welcome-title-color: rgba(255, 255, 255, 1);
+    --welcome-slogan-color: rgba(255, 255, 255, 0.7);
+    --welcome-avatar-color: rgba(255, 255, 255, 1);
+}
+
+/* WelcomeView 组件样式 */
+
+.welcome-view {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100%; /* 内容少时填满欢迎区以便垂直居中，内容多时保留自然高度参与父级滚动 */
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.welcome-view__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* 第一排：图标 + 名称横向排列 */
+.welcome-view__title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.welcome-view__avatar {
+    /* 固定尺寸，禁止压缩，保持宽高比 */
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--welcome-avatar-color);
+}
+
+.welcome-view__avatar img,
+.welcome-view__avatar svg {
+    object-fit: contain;
+}
+
+.welcome-view__name {
+    font-size: var(--uosai-font-size-3xl);
+    font-weight: 500;
+    color: var(--welcome-title-color);
+    white-space: nowrap;
+    margin-left: 7px;
+}
+
+.welcome-view__name--without-avatar {
+    margin-left: 0;
+}
+
+/* 第二排：标语独占一行，与上方间距 10px */
+.welcome-view__slogan {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    color: var(--welcome-slogan-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.welcome-view__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* 允许子组件（如 WritingAssistant）正确撑满宽度 */
+}

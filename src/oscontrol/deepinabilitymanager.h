@@ -1,29 +1,29 @@
 #ifndef DEEPINABILITYMANAGER_H
 #define DEEPINABILITYMANAGER_H
-#include "esingleton.h"
+
 #include "oscallcontext.h"
-#include "ability/launcherability.h"
-#include "ability/scheduleability.h"
-#include "ability/notificationability.h"
-#include "ability/controlcenterability.h"
-#include "deepinmultimedia.h"
 
 #include <QObject>
 #include <QMap>
 #include <QDBusInterface>
 #include <QScopedPointer>
+#include <QEventLoop>
+#include <QTimer>
 
-UOSAI_USE_NAMESPACE
+namespace uos_ai {
+class DeepinControlCenter;
+class DeepinNotification;
+class DeepinLauncher;
+class DeepinCalendar;
+class DeepinMultimedia;
 
 class UOSAbilityManager : public QObject
 {
     Q_OBJECT
-
-    SINGLETONIZE_CLASS(UOSAbilityManager);
-
     explicit UOSAbilityManager(QObject *parent = nullptr);
 
 public:
+    static UOSAbilityManager *instance();
     /**
      * @brief doBluetoothConfig
      * @return Do bluetooth config,
@@ -106,11 +106,43 @@ public:
     OSCallContext doDisplayModeSwitch(int mode);
     OSCallContext openGrandSearch();
     OSCallContext switchScreen();
-    OSCallContext volumeAdjustment(const QJsonObject &argsObj);
+    OSCallContext volumeAdjustment(const QJsonObject &argsObj); 
 
     // 音乐播放器功能
     OSCallContext doStateControl(const QString &control);
     OSCallContext doSeek(int offset);
+
+    // 系统字号
+    OSCallContext doSystemFontSize(float size);
+    OSCallContext getSystemFontSize();
+
+    // 文件操作
+    OSCallContext doOpenFile(const QString &filePath);
+    OSCallContext doCopyFile(const QString &sourcePath, const QString &destinationPath);
+    OSCallContext doMoveFile(const QString &sourcePath, const QString &destinationPath);
+    OSCallContext doCreateFolder(const QString &folderPath);
+    OSCallContext doRenameFile(const QString &oldPath, const QString &newName);
+    OSCallContext doBatchRename(const QString &folderPath, const QString &newName, const QString &pattern = QString());
+    OSCallContext doReadFile(const QString &filePath);
+    OSCallContext doGetFileMetadata(const QStringList &fileList);
+
+    // 邮件操作
+    OSCallContext doSendMail(const QString &subject, const QString &content, const QStringList &toList, const QStringList &ccList = QStringList(), const QStringList &bccList = QStringList());
+
+    // 蓝牙设备列表
+    OSCallContext doGetBluetoothDevices();
+
+    // 应用商店功能
+    OSCallContext doSearchApp(const QString &keyword, int page = 1, int maxResults = 3);
+    OSCallContext doDownloadApp(const QString &appName);
+    OSCallContext doShowStoreTab(const QString &tabName);
+
+    // 控制中心功能
+    /**
+     * @brief 打开控制中心并定位到指定模块
+     * @param module 模块名称 (如 "sound", "display", "appearance", "bluetooth", "wifi", "power" 等)
+     */
+    OSCallContext openControlCenter(const QString &module);
 
 public:
     QString textForCommnand();
@@ -133,10 +165,10 @@ protected:
 protected:
     QMap<OSCallContext::CallError, QString> m_errMap;
 
-    QScopedPointer<IControlCenter> m_uosControlCenterProxy;
-    QScopedPointer<INotification> m_uosNotificationProxy;
-    QScopedPointer<ILauncher> m_uosAppLauncher;
-    QScopedPointer<ISchedule> m_uosCalendarScheduler;
+    QScopedPointer<DeepinControlCenter> m_uosControlCenterProxy;
+    QScopedPointer<DeepinNotification> m_uosNotificationProxy;
+    QScopedPointer<DeepinLauncher> m_uosAppLauncher;
+    QScopedPointer<DeepinCalendar> m_uosCalendarScheduler;
     QScopedPointer<DeepinMultimedia> m_uosMultimediaProxy;
 
     struct UosAppInfo {
@@ -160,5 +192,7 @@ private:
     }
 };
 
-#define UosAbility() (ESingleton<UOSAbilityManager>::getInstance())
+}
+
+#define UosAbility() UOSAbilityManager::instance()
 #endif // DEEPINABILITYMANAGER_H

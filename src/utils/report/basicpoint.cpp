@@ -3,7 +3,7 @@
 #include <QDateTime>
 #include <QJsonObject>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 using namespace report;
 
 BasicPoint::BasicPoint()

@@ -1,6 +1,7 @@
 #include "sequentialagent.h"
-#include "wrapper/llmservicevendor.h"
-#include "networkdefs.h"
+#include "global_key_define.h"
+
+#include "conversation/messagenode.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -22,27 +23,22 @@ SequentialAgent::~SequentialAgent()
 {
 }
 
-void SequentialAgent::setModel(QSharedPointer<LLM> llm)
+void SequentialAgent::setModel(QSharedPointer<AbstractChatModel> llm)
 {
     LlmAgent::setModel(llm);
 
-    auto account = llm->account();
     for (QSharedPointer<LlmAgent> agent : m_subAgents.values()) {
-        auto newllm = LLMVendor()->getCopilot(account);
-        newllm->switchStream(false);
-        connect(llm.data(), &LLM::aborted, newllm.data(), &LLM::aborted, Qt::DirectConnection);
-        agent->setModel(newllm);
+        agent->setModel(llm);
     }
 }
 
-QJsonObject SequentialAgent::processRequest(const QJsonObject &question, const QJsonArray &messages, const QVariantHash &params)
+QVariantHash SequentialAgent::processRequest(const ModelMessage &question, const QList<ModelMessage> &messages, const QVariantHash &params)
 {
-    QJsonObject response;
-    QJsonArray currentMessages = messages;
-    QJsonArray globalMessages = messages;
-    QJsonObject currentQuestion = question;
+    QVariantHash response;
+    QList<ModelMessage> currentMessages = messages;
+    QList<ModelMessage> globalMessages = messages;
+    ModelMessage currentQuestion = question;
 
-    // 按顺序执行子智能体
     for (const QString &agentName : m_agentOrder) {
         if (canceled)
             break;
@@ -53,54 +49,57 @@ QJsonObject SequentialAgent::processRequest(const QJsonObject &question, const Q
             break;
         }
 
-        // 调用子智能体前的处理
         if (!beforeSubAgentCall(agentName, currentQuestion, currentMessages, globalMessages))
             break;
 
         globalMessages = initChatMessages(currentQuestion, globalMessages);
 
-        // 调用子智能体
-        QJsonObject result = subAgent->processRequest(currentQuestion, currentMessages, params);
+        QVariantHash result = subAgent->processRequest(currentQuestion, currentMessages, params);
 
-        if (subAgent->lastError() != AIServer::NoError) {
-            m_llm->setLastError(subAgent->lastError());
-            m_llm->setLastErrorString(subAgent->lastErrorString());
-            response["context"] = globalMessages;
+        if (subAgent->lastError().value(STR_KEY_ERROR, 0).toInt() != 0) {
+            response[STR_KEY_CONTEXT] = QVariant::fromValue(QList<ModelMessage>());
             return response;
         }
 
-        // 更新当前问题和消息记录
-        QString content = result.value("content").toString();
+        ModelMessage resultMsg = result.value(STR_KEY_CONTENT).value<ModelMessage>();
+        QString content;
+        if (!resultMsg.content.isEmpty()) {
+            content = resultMsg.content.first().data.toString();
+        }
         qCInfo(logAgent) << subAgent->name() << "output" << content;
 
         if (!content.isEmpty()) {
-            // 将子智能体的输出作为下一个智能体的输入
-            currentQuestion = QJsonObject{{"content", content}};
-            
-            // 更新消息记录，添加子智能体的回复
-            QJsonObject assistantMessage;
-            assistantMessage["role"] = "assistant";
-            assistantMessage["content"] = content;
-            currentMessages.append(assistantMessage);
+            currentQuestion.role = "user";
+            currentQuestion.content = {{ContentType::CntText, content}};
 
-            assistantMessage["agent"] = agentName;
+            ModelMessage assistantMessage;
+            assistantMessage.role = "assistant";
+            assistantMessage.content = {{ContentType::CntText, content}};
+            assistantMessage.source = agentName;
+            currentMessages.append(assistantMessage);
             globalMessages.append(assistantMessage);
 
-            response["content"] = content;
+            response[STR_KEY_CONTENT] = QVariant::fromValue(resultMsg);
         } else {
             break;
         }
     }
 
-    response["context"] = globalMessages;
-
     return response;
 }
 
-bool SequentialAgent::beforeSubAgentCall(const QString &agentName, QJsonObject &currentQuestion, QJsonArray &localMessages, const QJsonArray &globalMessages)
+void SequentialAgent::cancel()
+{
+    LlmAgent::cancel();
+
+    for (QSharedPointer<LlmAgent> agent : m_subAgents.values())
+        agent->cancel();
+}
+
+bool SequentialAgent::beforeSubAgentCall(const QString &agentName, ModelMessage &currentQuestion, QList<ModelMessage> &localMessages, const QList<ModelMessage> &globalMessages)
 {
     if (m_agentOrder.indexOf(agentName) != 0)
-        localMessages = QJsonArray();
+        localMessages = QList<ModelMessage>();
 
     return true;
 }

@@ -1,6 +1,5 @@
 #ifndef UPDATEBUTTON_H
 #define UPDATEBUTTON_H
-#include "uosai_global.h"
 
 #include <DSuggestButton>
 

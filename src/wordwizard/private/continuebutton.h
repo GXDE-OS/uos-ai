@@ -1,7 +1,7 @@
 #ifndef CONTINUEBUTTON
 #define CONTINUEBUTTON
 
-#include "uosai_global.h"
+
 
 #include <DPushButton>
 

@@ -13,7 +13,7 @@
 
 #include <docparser.h>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 OfficeParser::OfficeParser(QObject *parent)
     : AbstractFileParser(parent)
@@ -85,4 +85,4 @@ QSharedPointer<ParserResult> OfficeParser::parseFile(const QString &filePath, co
     return qSharedPointerDynamicCast<ParserResult>(ret);
 }
 
-UOSAI_END_NAMESPACE
+}

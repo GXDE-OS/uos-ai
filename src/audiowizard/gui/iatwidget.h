@@ -1,7 +1,6 @@
 #ifndef IATWIDGET_H
 #define IATWIDGET_H
 
-#include <uosai_global.h>
 #include "audiowizard/private/voiceanimationwidget.h"
 #include "audio/audiorecorder.h"
 #include "audiowizard/modelwrapper/common/iatmodel.h"

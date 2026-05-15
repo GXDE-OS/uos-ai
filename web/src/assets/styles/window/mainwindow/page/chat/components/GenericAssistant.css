@@ -1,0 +1,88 @@
+html {
+    --ga-card-bg: rgba(255, 255, 255, 0.8);
+    --ga-card-bg-hover: rgba(255, 255, 255, 1);
+    --ga-card-text-color: rgba(0, 0, 0, 0.7);
+    --ga-card-box-shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+html.dark {
+    --ga-card-bg: rgba(255, 255, 255, 0.05);
+    --ga-card-bg-hover: rgba(255, 255, 255, 0.1);
+    --ga-card-text-color: rgba(255, 255, 255, 0.7);
+    --ga-card-box-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* GenericAssistant 默认助手欢迎页组件样式 */
+
+.generic-assistant {
+    width: 100%;
+}
+
+/* 智能体卡片横向列表，水平居中，允许换行；margin: 3px 替代 gap: 6px */
+.generic-assistant__agent-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 单个智能体卡片：高度固定 42px，宽度由内容动态决定，左右各 20px padding
+   margin: 3px 替代父容器 gap: 6px */
+.generic-assistant__agent-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 42px;
+    margin: 5px;
+    padding: 0 20px;
+    background-color: var(--ga-card-bg, rgba(255, 255, 255, 0.8));
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 0 0 var(--ga-card-box-shadow-color, rgba(0, 0, 0, 0.05));
+    cursor: pointer;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition:
+        border-color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.generic-assistant__agent-card:hover {
+    background-color: var(--ga-card-bg-hover, rgba(255, 255, 255, 1));
+}
+
+/* 图标容器：固定 20×20，防止被压缩；margin-right: 6px 替代父容器 gap: 6px */
+.generic-assistant__agent-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.generic-assistant__agent-icon-img {
+    width: 20px;
+    height: 20px;
+}
+
+.generic-assistant__agent-icon .svg-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* 智能体名称文字 */
+.generic-assistant__agent-name {
+    font-size: var(--uosai-font-size-sm);
+    font-weight: 400;
+    color: var(--ga-card-text-color);
+    user-select: none;
+    line-height: var(--uosai-line-height-compact);
+}
+
+/* "更多"按钮没有图标，仅有文字，颜色略淡以示区分 */
+.generic-assistant__agent-card--more .generic-assistant__agent-name {
+    color: var(--ga-card-text-color);
+}

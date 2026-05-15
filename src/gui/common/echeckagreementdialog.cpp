@@ -1,8 +1,8 @@
 #include "echeckagreementdialog.h"
-#include "dbwrapper.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 #include "gui/gutils.h"
 #include "utils/util.h"
+#include "appdatabase.h"
 
 #include <QLoggingCategory>
 
@@ -32,7 +32,7 @@ void ECheckAgreementDialog::onCancelButtonClicked()
 void ECheckAgreementDialog::onConfirmButtonClicked()
 {
     qCDebug(logAIGUI) << "The user has accepted the tripartite MCP server agreement." ;
-    DbWrapper::localDbWrapper().updateThirdPartyMcpAgreement(true);
+    AppDatabase::instance()->saveConfigBool(CONFIG_THIRD_PARTY_MCP, true);
     this->accept();
 }
 

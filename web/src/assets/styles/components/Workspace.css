@@ -1,0 +1,204 @@
+html {
+    --workspace-bg-color: rgba(248, 248, 248, 0.9);
+    --workspace-color-dropzone-bg: rgba(248, 248, 248, 0.8);
+    --workspace-color-dropzone-bg-blur: rgba(248, 248, 248, 0.3);
+    --workspace-color-dropzone-text: rgba(0, 0, 0, 1);
+    --workspace-color-dropzone-suffix-text: rgba(0, 0, 0, 0.7);
+    --workspace-titlebar-text-color: rgba(0, 0, 0, 0.7);
+    --workspace-titlebar-border-color: rgba(0, 0, 0, 0.05);
+    --workspace-left-border-color: rgba(0, 0, 0, 0.05);
+}
+html.dark {
+    --workspace-bg-color: rgba(24, 24, 24, 0.8);
+    --workspace-color-dropzone-bg: rgba(24, 24, 24, 0.8);
+    --workspace-color-dropzone-bg-blur: rgba(24, 24, 24, 0.3);
+    --workspace-color-dropzone-text: rgba(255, 255, 255, 1);
+    --workspace-color-dropzone-suffix-text: rgba(255, 255, 255, 0.7);
+    --workspace-titlebar-text-color: rgba(255, 255, 255, 0.7);
+    --workspace-titlebar-border-color: rgba(0, 0, 0, 0.4);
+    --workspace-left-border-color: rgba(0, 0, 0, 0.5);
+}
+
+.workspace {
+    flex: 1;
+    min-width: var(--workspace-min-width, 120px);
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+    background: var(--workspace-bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--workspace-left-border-color);
+}
+
+.window-sidebar--collapsed ~ .workspace {
+    border-left: none;
+}
+
+/* 标题栏——替代原有 padding-top:40px，防止内容被窗口标题栏遮挡，同时承载助手名称渐显 */
+.workspace__titlebar {
+    flex-shrink: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    user-select: none;
+    /* 下边线：默认透明，滚动后渐显 */
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.workspace__titlebar--scrolled {
+    border-bottom-color: var(--workspace-titlebar-border-color);
+}
+/* 全屏编辑时隐藏标题栏下边线（兼容 Qt5WebEngine 5.11，不使用 :has() 选择器） */
+.workspace--editor-fullscreen .workspace__titlebar--scrolled {
+    border-bottom-color: transparent;
+}
+
+.workspace__titlebar-text {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    color: var(--workspace-titlebar-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Workspace content layout */
+.workspace-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 0; /* 防止 flex 子项溢出 */
+    align-items: stretch;
+    position: relative;
+    overflow: hidden; /* 配合扩展面板滑入滑出动画，裁剪溢出内容 */
+}
+
+/* 聊天区容器 - 恢复原有 .workspace 的 flex 列布局能力，
+   使内部 .content-body flex:1 和 .chat-view height:100% 正常工作 */
+.workspace__main {
+    position: relative; /* 为 Toast 通知提供定位基准 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中内容，与原 .workspace align-items:center 一致 */
+    min-height: 0;
+    overflow: hidden; /* 必须为 hidden，让内层 .chat-view 自行管理滚动 */
+    min-width: 0; /* 允许在 flex 行中收缩 */
+    opacity: 1;
+    /* 全屏入出动画 */
+    transition:
+        flex 0.36s cubic-bezier(0.4, 0, 0.2, 1),
+        max-width 0.36s cubic-bezier(0.4, 0, 0.2, 1),
+        min-width 0.36s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.28s ease;
+}
+
+/* Both areas visible - split mode */
+.workspace-content--both-visible {
+    justify-content: center; /* 双侧面板整体居中 */
+}
+
+.workspace-content--both-visible .workspace__main {
+    flex: 4 1 0%; /* 聊天区占 4 份 */
+    min-width: 0;
+    opacity: 1;
+}
+
+/* Only chat visible */
+.workspace-content--chat-only .workspace__main {
+    flex: 1;
+}
+
+/* Only extension visible */
+.workspace-content--extension-only .workspace__main {
+    display: none;
+}
+
+.workspace-content--extension-only .extension-panel {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ============================================
+   编辑器全屏模式：聊天区动画滑出，扩展面板充满 workspace
+   入场：wworkspace-content--both-visible → editor-fullscreen
+   出场：editor-fullscreen → workspace-content--both-visible / chat-only
+============================================ */
+
+.workspace-content--editor-fullscreen .workspace__main {
+    /* transform 向左滑出，透明度渐隐 */
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    /* 保持宽度，避免编辑区被挤压 */
+    /* flex/max-width/min-width 不变，动画更自然 */
+    overflow: hidden;
+}
+
+.workspace-content--editor-fullscreen .extension-panel {
+    flex-basis: 100%;
+    opacity: 1;
+    border-left: none; /* 全屏时隐藏左边框 */
+}
+
+.workspace__dropzone {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: var(--workspace-color-dropzone-bg);
+    z-index: 20000;
+    pointer-events: none;
+}
+
+.workspace__dropzone--advanced-css {
+    background: var(--workspace-color-dropzone-bg-blur);
+    backdrop-filter: blur(15px);
+}
+
+.workspace__dropzone-content {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10%;
+}
+
+.workspace__dropzone-icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workspace__dropzone-icon-svg {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.workspace__dropzone-text {
+    color: var(--workspace-color-dropzone-text);
+    font-size: var(--uosai-font-size-md);
+    font-weight: 500;
+    font-style: medium;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.workspace__dropzone-text-suffix {
+    margin-top: 8px;
+    color: var(--workspace-color-dropzone-suffix-text);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    line-height: var(--uosai-line-height-extra-normal);
+    text-align: center;
+}

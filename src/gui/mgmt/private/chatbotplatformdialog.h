@@ -1,8 +1,6 @@
 #ifndef CHATBOTPLATFORMDIALOG_H
 #define CHATBOTPLATFORMDIALOG_H
 
-#include "uosai_global.h"
-
 #include <DAbstractDialog>
 #include <DLineEdit>
 #include <DPasswordEdit>
@@ -11,6 +9,7 @@
 #include <DSuggestButton>
 
 #include <QJsonObject>
+#include <QVector>
 
 DWIDGET_USE_NAMESPACE
 
@@ -19,10 +18,12 @@ namespace uos_ai {
 /**
  * @brief ChatBotPlatformDialog - 编辑单个 IM 平台的接入凭据
  *
- * 根据 platformKey（feishu / dingtalk / qq）显示不同标题和字段：
+ * 根据 platformKey（feishu / dingtalk / qq / telegram / discord）显示不同标题和字段：
  *   - feishu:   App ID + App Secret
- *   - dingtalk: Client ID + Client Secret
+ *   - dingtalk: Client ID + Client Secret + Card Template ID(optional)
  *   - qq:       App ID + Token
+ *   - telegram: Bot Token + API Base(optional)
+ *   - discord:  Bot Token + Application ID + Guild ID(optional)
  */
 class ChatBotPlatformDialog : public DAbstractDialog
 {
@@ -35,19 +36,28 @@ public:
     QJsonObject config() const;
 
 private:
+    struct FieldConfig {
+        QString key;
+        QString label;
+        bool required = false;
+        bool password = false;
+    };
+
+    struct FieldWidgets {
+        FieldConfig config;
+        DLabel *label = nullptr;
+        DLineEdit *edit = nullptr;
+    };
+
     void initUI();
     void initConnect();
     void updateConfirmEnabled();
     void updateHelpLabel();
+    QVector<FieldConfig> fieldConfigs() const;
 
 private:
     QString m_platformKey;
-
-    // feishu & qq
-    DPasswordEdit *m_field1Edit = nullptr; // app_id / client_id
-    DPasswordEdit *m_field2Edit = nullptr; // app_secret / client_secret / token
-    // dingtalk only (optional)
-    DLineEdit     *m_field3Edit = nullptr; // card_template_id
+    QVector<FieldWidgets> m_fields;
 
     DLabel         *m_helpLabel  = nullptr;
     DPushButton    *m_cancelBtn  = nullptr;

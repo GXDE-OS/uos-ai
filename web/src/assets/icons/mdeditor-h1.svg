@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,0 L16,0 L16,16 L0,16 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/编辑器/H1" stroke="none" xlink:href="#path-1" fill-rule="nonzero">
+        <path d="M2,1 L2,7 L9,7 L9,1 L10,1 L10,14 L9,14 L9,8 L2,8 L2,14 L1,14 L1,1 L2,1 Z M12.1484375,8.05859375 L12.1484375,7.25 C12.9101563,7.17578125 13.4414062,7.05175781 13.7421875,6.87792969 C14.0429688,6.70410156 14.2675781,6.29296875 14.4160156,5.64453125 L15.2480469,5.64453125 L15.2480469,14 L14.1230469,14 L14.1230469,8.05859375 L12.1484375,8.05859375 Z" id="形状结合" fill="currentColor"></path>
+    </g>
+</svg>

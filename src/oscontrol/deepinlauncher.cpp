@@ -8,6 +8,7 @@
  */
 #include "deepinlauncher.h"
 #include "oscallcontext.h"
+#include "global_define.h"
 
 #include <QFileInfo>
 #include <QDBusPendingCall>
@@ -22,7 +23,7 @@
 
 Q_DECLARE_LOGGING_CATEGORY(logOsControl)
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 DeepinLauncher::DeepinLauncher(const QStringList &deskPaths, QObject *parent) : QObject(parent)
     , m_defaultDesktopPaths(deskPaths)
@@ -369,11 +370,8 @@ QString DeepinLauncher::getAppIdFromAbsolutePath(const QString &path)
     }
 
     auto tmp = path.chopped(desktopSuffix.size());
-#if QT_VERSION < QT_VERSION_CHECK(5,14,0)
-    auto components = tmp.split(QDir::separator(), QString::SkipEmptyParts);
-#else
-    auto components = tmp.split(QDir::separator(), Qt::SkipEmptyParts);
-#endif
+    auto components = tmp.split(QDir::separator(), PARAM_SKIP_EMPTY);
+
     auto location = std::find(components.cbegin(), components.cend(), "applications");
     if (location == components.cend()) {
         qCDebug(logOsControl) << "No applications directory found in path";

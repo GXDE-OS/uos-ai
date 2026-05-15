@@ -1,0 +1,99 @@
+.submenu {
+    position: relative;
+}
+
+.submenu__content {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    cursor: pointer;
+    user-select: none;
+    border-radius: var(--radius-normal);
+    height: 26px;
+}
+
+.submenu:hover:not(.submenu--disabled) .submenu__content {
+    box-shadow: 0 -1px 0 0 inset rgba(0, 0, 0, 0.2);
+    background-color: var(--system-active-color, rgba(31, 110, 231, 1));
+}
+
+.submenu:hover:not(.submenu--disabled) .submenu__content .submenu__label,
+.submenu:hover:not(.submenu--disabled) .submenu__content .submenu__icon,
+.submenu:hover:not(.submenu--disabled) .submenu__content .submenu__arrow {
+    color: rgba(255, 255, 255, 1);
+}
+
+.submenu--disabled {
+    opacity: var(--bg-opacity-disabled);
+    cursor: not-allowed;
+}
+
+.submenu__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submenu__label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--menu-text-color);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.submenu__arrow {
+    width: 12px;
+    height: 12px;
+    margin-left: var(--spacing-md);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+}
+
+/* Checkable 占位区域，保持与 MenuItem 对齐 */
+.submenu__check {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.submenu__children {
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    /* 默认从左侧滑入（向右展开） */
+    transform: translateX(-4px);
+    transition:
+        opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0s linear 0.15s;
+}
+
+/* 向左展开时从右侧滑入 */
+.submenu__children--open-left {
+    transform: translateX(4px);
+}
+
+/* 可见态：淡入 + 滑入 */
+.submenu__children--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition:
+        opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0s linear 0s;
+}

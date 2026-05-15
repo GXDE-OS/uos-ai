@@ -1,0 +1,193 @@
+html {
+    --files-list-popover-color-bg: rgba(238, 238, 238, 1);
+    --files-list-popover-color-bg-blur: rgba(238, 238, 238, 0.8);
+    --files-list-popover-color-item-bg: rgba(0, 0, 0, 0.05);
+    --files-list-popover-color-item-bg-hover: rgba(0, 0, 0, 0.15);
+    --files-list-popover-color-item-bg-active: rgba(0, 0, 0, 0.15);
+    --files-list-popover-color-item-text: rgba(0, 0, 0, 0.7);
+    --files-list-popover-color-item-info-text: rgba(0, 0, 0, 0.5);
+}
+html.dark {
+    --files-list-popover-color-bg: rgba(24, 24, 24, 1);
+    --files-list-popover-color-bg-blur: rgba(24, 24, 24, 0.8);
+    --files-list-popover-color-item-bg: rgba(255, 255, 255, 0.05);
+    --files-list-popover-color-item-bg-hover: rgba(255, 255, 255, 0.15);
+    --files-list-popover-color-item-bg-active: rgba(255, 255, 255, 0.15);
+    --files-list-popover-color-item-text: rgba(255, 255, 255, 0.7);
+    --files-list-popover-color-item-info-text: rgba(255, 255, 255, 0.5);
+}
+
+/* Files list popover component */
+.files-list-popover {
+    width: 264px;
+    background-color: var(--files-list-popover-color-bg);
+    border-radius: var(--radius-large);
+    box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1),
+        0 6px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.files-list-popover--advanced {
+    background-color: var(--files-list-popover-color-bg-blur);
+    backdrop-filter: blur(30px);
+}
+
+/* Scrollbar for popover */
+.files-list-popover::-webkit-scrollbar {
+    width: 6px;
+}
+
+.files-list-popover::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.files-list-popover::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+/* Popover item */
+.files-list-popover__item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-normal);
+    cursor: pointer;
+    transition: background-color var(--transition-normal);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.files-list-popover__item:nth-child(even) {
+    background-color: var(--files-list-popover-color-item-bg);
+}
+
+.files-list-popover__item:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.files-list-popover__item:hover {
+    background-color: var(--files-list-popover-color-item-bg-hover);
+}
+
+.files-list-popover__item:active {
+    background-color: var(--files-list-popover-color-item-bg-active);
+}
+
+/* Popover icon */
+.files-list-popover__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.files-list-popover__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Popover info */
+.files-list-popover__info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    padding-right: 6px;
+    margin-left: 6px;
+    min-width: 0;
+}
+
+.files-list-popover__name {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--files-list-popover-color-item-text);
+    line-height: var(--uosai-line-height-extra-normal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+}
+
+.files-list-popover__details {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.files-list-popover__type {
+    margin-left: 4px;
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--files-list-popover-color-item-info-text);
+    line-height: var(--uosai-line-height-normal);
+    flex-shrink: 0;
+}
+
+.files-list-popover__size {
+    margin-left: 4px;
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--files-list-popover-color-item-info-text);
+    line-height: var(--uosai-line-height-normal);
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+}
+
+/* Delete button - replaces size on hover, participates in layout */
+.files-list-popover__delete {
+    margin-left: 4px;
+    flex-shrink: 0;
+    display: none;
+}
+
+.files-list-popover__item--deletable:hover .files-list-popover__delete {
+    display: block;
+}
+
+.files-list-popover__item--deletable:hover .files-list-popover__size {
+    display: none;
+}
+
+/* Status icon for loading/error states */
+.files-list-popover__status-icon {
+    flex-shrink: 0;
+    margin-left: 4px;
+}
+
+.files-list-popover__status-icon--loading {
+    animation: files-list-popover-spin 0.8s linear infinite;
+}
+
+@keyframes files-list-popover-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.files-list-popover__status-text {
+    margin-left: 4px;
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--files-list-popover-color-item-info-text);
+    line-height: var(--uosai-line-height-normal);
+    flex-shrink: 0;
+}

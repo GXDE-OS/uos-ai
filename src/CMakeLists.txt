@@ -8,6 +8,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS
     Core
     Gui
     Widgets
+    PrintSupport
     DBus
     Concurrent
     Sql
@@ -20,29 +21,49 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS
 find_package(Dtk${DTK_VERSION_MAJOR} REQUIRED COMPONENTS Core Widget )
 find_package(X11 REQUIRED)
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(POPPLER REQUIRED IMPORTED_TARGET poppler-qt6)
+find_package(yaml-cpp REQUIRED)
+
+if (ENABLE_CHATBOT)
+    find_package(Protobuf REQUIRED)
+    protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS
+        ${CMAKE_CURRENT_SOURCE_DIR}/chatbot/proto/pbbp2.proto
+    )
+endif()
 
 add_definitions(-DENABLE_FREEACCOUNT)
+
+if (COMPILE_ON_V25)
+    # Standard installation paths
+    include(GNUInstallDirs)
+    # Macros
+    include(FeatureSummary)
+
+    qt_standard_project_setup(REQUIRES 6.8)
+
+    find_package(Qt6 REQUIRED COMPONENTS WaylandClient)
+    find_package(TreelandProtocols REQUIRED)
+    pkg_check_modules(WLR_PROTOCOLS REQUIRED IMPORTED_TARGET wlr-protocols)
+    pkg_get_variable(WLR_PROTOCOLS_DATADIR wlr-protocols pkgdatadir)
+    pkg_check_modules(POPPLER REQUIRED IMPORTED_TARGET poppler-qt6)
+
+elseif(COMPILE_ON_V20)
+    pkg_check_modules(POPPLER REQUIRED IMPORTED_TARGET poppler-qt5)
+    find_package(Qt5 REQUIRED COMPONENTS WaylandClient)
+else()
+    pkg_check_modules(POPPLER REQUIRED IMPORTED_TARGET poppler-qt5)
+endif()
 
 pkg_check_modules(AtSpi REQUIRED atspi-2)
 pkg_check_modules(Gobject REQUIRED gobject-2.0)
 pkg_check_modules(Docparser REQUIRED IMPORTED_TARGET docparser)
 pkg_check_modules(XTST REQUIRED xtst)
 pkg_check_modules(JWT REQUIRED libjwt)
+pkg_check_modules(WaylandClient REQUIRED IMPORTED_TARGET wayland-client)
 pkg_check_modules(GIO_LIB REQUIRED
         gio-unix-2.0
         glib-2.0
 )
-
-# yaml-cpp for parsing YAML front matter
-find_package(yaml-cpp REQUIRED)
-
-find_package(Protobuf REQUIRED)
-protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS
-    ${CMAKE_CURRENT_SOURCE_DIR}/chatbot/proto/pbbp2.proto
-)
-include_directories(${CMAKE_CURRENT_BINARY_DIR})  # generated pbbp2.pb.h
-
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
 if (COMPILE_ON_V25)
     pkg_check_modules(WL_PROTOCOLS REQUIRED IMPORTED_TARGET wayland-protocols)
     pkg_get_variable(WL_PROTOCOLS_DATADIR wayland-protocols pkgdatadir)
@@ -76,14 +97,48 @@ if (COMPILE_ON_V25)
         ${CMAKE_SOURCE_DIR}/layershell/protocol/wlr-layer-shell-unstable-v1.xml
     )
 elseif(COMPILE_ON_V20)
+    # Generate Wayland protocol headers
+    set(WAYLAND_PROTOCOL_DIR "${CMAKE_SOURCE_DIR}/wayland/native/protocols")
+    set(WAYLAND_PROTOCOL_XML "${WAYLAND_PROTOCOL_DIR}/wlr-data-control-unstable-v1.xml")
+    set(WAYLAND_PROTOCOL_BASE "wlr-data-control-unstable-v1")
+    
+    set(WAYLAND_PROTOCOL_HEADER "${CMAKE_CURRENT_BINARY_DIR}/${WAYLAND_PROTOCOL_BASE}-client-protocol.h")
+    set(WAYLAND_PROTOCOL_CODE "${CMAKE_CURRENT_BINARY_DIR}/${WAYLAND_PROTOCOL_BASE}-client-protocol.c")
+    
+    add_custom_command(
+        OUTPUT ${WAYLAND_PROTOCOL_HEADER}
+        COMMAND wayland-scanner client-header ${WAYLAND_PROTOCOL_XML} ${WAYLAND_PROTOCOL_HEADER}
+        DEPENDS ${WAYLAND_PROTOCOL_XML}
+        VERBATIM
+    )
+    
+    add_custom_command(
+        OUTPUT ${WAYLAND_PROTOCOL_CODE}
+        COMMAND wayland-scanner private-code ${WAYLAND_PROTOCOL_XML} ${WAYLAND_PROTOCOL_CODE}
+        DEPENDS ${WAYLAND_PROTOCOL_XML}
+        VERBATIM
+    )
+    
+    add_custom_target(wayland_protocol_gen DEPENDS ${WAYLAND_PROTOCOL_HEADER} ${WAYLAND_PROTOCOL_CODE})
+    
     add_executable(${PROJECT_NAME}
         ${EXE_FILES}
         ${PROTO_SRCS}
+        ${WAYLAND_PROTOCOL_CODE}
         ../wayland/waylandclipboard.h
         ../wayland/waylandclipboard.cpp
         ../wayland/waylandeventmonitor.h
         ../wayland/waylandeventmonitor.cpp
+        ../wayland/native/connection_thread.cpp
+        ../wayland/native/datacontroldevice.cpp
+        ../wayland/native/datacontroldevicemanager.cpp
+        ../wayland/native/datacontroloffer.cpp
+        ../wayland/native/event_queue.cpp
+        ../wayland/native/registry.cpp
+        ../wayland/native/seat.cpp
     )
+    
+    add_dependencies(${PROJECT_NAME} wayland_protocol_gen)
 else()
     add_executable(${PROJECT_NAME}
         ${EXE_FILES}
@@ -95,23 +150,12 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/agent
-    ${CMAKE_CURRENT_SOURCE_DIR}/dbs
-    ${CMAKE_CURRENT_SOURCE_DIR}/dbs/dbwrapper
-    ${CMAKE_CURRENT_SOURCE_DIR}/dbs/tables
-    ${CMAKE_CURRENT_SOURCE_DIR}/tables
+    ${CMAKE_CURRENT_SOURCE_DIR}/assistant
+    ${CMAKE_CURRENT_SOURCE_DIR}/session
+    ${CMAKE_CURRENT_SOURCE_DIR}/model
+    ${CMAKE_CURRENT_SOURCE_DIR}/database
     ${CMAKE_CURRENT_SOURCE_DIR}/dbus
     ${CMAKE_CURRENT_SOURCE_DIR}/gui/mgmt
-    ${CMAKE_CURRENT_SOURCE_DIR}/gui/chat
-    ${CMAKE_CURRENT_SOURCE_DIR}/gui/screen
-    ${CMAKE_CURRENT_SOURCE_DIR}/http
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/360
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/zhipu
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/openai
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/iflytek
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/baidu
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/localtext2image
-    ${CMAKE_CURRENT_SOURCE_DIR}/llm/common
     ${CMAKE_CURRENT_SOURCE_DIR}/socket
     ${CMAKE_CURRENT_SOURCE_DIR}/wrapper
     ${CMAKE_CURRENT_SOURCE_DIR}/tas
@@ -124,7 +168,9 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/tools
     ${CMAKE_CURRENT_SOURCE_DIR}/wordwizard
     ${CMAKE_CURRENT_SOURCE_DIR}/audiowizard
+    ${CMAKE_CURRENT_SOURCE_DIR}/datamigration
     ${CMAKE_CURRENT_SOURCE_DIR}/chatbot
+    ${CMAKE_CURRENT_SOURCE_DIR}/app
     ${AtSpi_INCLUDE_DIRS}
     ${Gobject_INCLUDE_DIRS}
     ${GIO_LIB_INCLUDE_DIRS}
@@ -141,13 +187,26 @@ else()
     target_link_libraries(${PROJECT_NAME} Qt${QT_VERSION_MAJOR}::WebEngineWidgets)
 endif()
 
-# Include agent directory
-include(${CMAKE_CURRENT_SOURCE_DIR}/agent/CMakeLists.txt)
+if (COMPILE_ON_V25)
+    target_include_directories(${PROJECT_NAME} PUBLIC
+        ${CMAKE_SOURCE_DIR}/treeland
+        ${CMAKE_SOURCE_DIR}/layershell
+        ${CMAKE_SOURCE_DIR}/layershell/protocol
+        )
+elseif(COMPILE_ON_V20)
+    target_include_directories(${PROJECT_NAME} PUBLIC
+        ${CMAKE_SOURCE_DIR}/wayland
+        )
+    target_include_directories(${PROJECT_NAME} PRIVATE
+        ${WAYLAND_INCLUDE_DIRS}
+    )
+endif()
 
 target_link_libraries(${PROJECT_NAME}
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Gui
     Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::PrintSupport
     Qt${QT_VERSION_MAJOR}::DBus
     Qt${QT_VERSION_MAJOR}::Concurrent
     Qt${QT_VERSION_MAJOR}::Sql
@@ -168,10 +227,27 @@ target_link_libraries(${PROJECT_NAME}
     qmarkdowntextedit
     ${JWT_LIBRARIES}
     PkgConfig::POPPLER
-    yaml-cpp
     pthread
-    ${Protobuf_LIBRARIES}
+    yaml-cpp
 )
+
+if (ENABLE_CHATBOT)
+    target_link_libraries(${PROJECT_NAME} ${Protobuf_LIBRARIES})
+    target_include_directories(${PROJECT_NAME} PUBLIC ${Protobuf_INCLUDE_DIRS})
+endif()
+
+if (COMPILE_ON_V25)
+    target_link_libraries(${PROJECT_NAME}
+        Qt6::WaylandClient
+        Qt6::WaylandClientPrivate
+    )
+elseif(COMPILE_ON_V20)
+    target_link_libraries(${PROJECT_NAME}
+        Qt5::WaylandClient
+        PkgConfig::WaylandClient
+        )
+    target_include_directories(${PROJECT_NAME} PRIVATE ${Qt5Gui_PRIVATE_INCLUDE_DIRS})
+endif()
 
 # Install bin
 install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
@@ -188,24 +264,11 @@ install(FILES ${SERVICE_FILES} DESTINATION share/dbus-1/services)
 file(GLOB CREDITS_FILES "${CMAKE_SOURCE_DIR}/assets/${PROJECT_NAME}.json")
 install(FILES ${CREDITS_FILES} DESTINATION share/deepin/credits)
 
-# Install functions
-set(FUNCTIONS_DESTINATION "/usr/lib/${PROJECT_NAME}/functions")
-add_definitions(-DFUNCTIONPATH="${FUNCTIONS_DESTINATION}")
-file(GLOB FUNCTIONS_FILES "${CMAKE_SOURCE_DIR}/assets/functions/*")
-install(FILES ${FUNCTIONS_FILES} DESTINATION ${FUNCTIONS_DESTINATION})
-
 # Install audio
 set(AUDIO_DESTINATION "/usr/lib/${PROJECT_NAME}/audio")
 add_definitions(-DAUDIOPATH="${AUDIO_DESTINATION}")
 file(GLOB AUDIO_FILES "${CMAKE_SOURCE_DIR}/assets/audio/*")
 install(FILES ${AUDIO_FILES} DESTINATION ${AUDIO_DESTINATION})
-
-# Install default skills
-set(SKILLS_DEFAULT_DESTINATION "/usr/lib/${PROJECT_NAME}/skills-default")
-add_definitions(-DUOS_AI_SKILLS_DEFAULT="${SKILLS_DEFAULT_DESTINATION}")
-install(DIRECTORY "${CMAKE_SOURCE_DIR}/assets/skills-default/"
-    DESTINATION ${SKILLS_DEFAULT_DESTINATION}
-    PATTERN ".git*" EXCLUDE)
 
 # install desktop
 # Configure desktop file based on OS version (different icons for v20 and v25)
@@ -225,7 +288,7 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/uos-ai-assistant.desktop
     DESTINATION share/applications)
 
 # install context menu configuration
-if (ENABLE_ASSISTANT)
+if (ENABLE_LOCAL_MODEL)
 install(FILES ${CMAKE_SOURCE_DIR}/assets/configs/uos-ai-knowledgebase.conf
     DESTINATION share/applications/context-menus)
 endif()
@@ -254,3 +317,12 @@ INSTALL_DCONFIG("uos-ai-assistant.wordwizard.json")
 INSTALL_DCONFIG("uos-ai-assistant.aiquick.json")
 INSTALL_DCONFIG("uos-ai-assistant.llm.json")
 INSTALL_DCONFIG("uos-ai-assistant.mcp.json")
+
+if (ENABLE_MCP)
+    # Install default skills
+    set(SKILLS_DEFAULT_DESTINATION "/usr/lib/${PROJECT_NAME}/skills-default")
+    add_definitions(-DUOS_AI_SKILLS_DEFAULT="${SKILLS_DEFAULT_DESTINATION}")
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/assets/skills-default/"
+        DESTINATION ${SKILLS_DEFAULT_DESTINATION}
+        PATTERN ".git*" EXCLUDE)
+endif()

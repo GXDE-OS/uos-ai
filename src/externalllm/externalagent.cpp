@@ -3,11 +3,16 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #include "externalagent.h"
+#include "global_key_define.h"
+#include "tas/uosaccountencoder.h"
 
+#include <QFile>
 #include <QLoggingCategory>
 #include <QVariantHash>
 #include <QLocale>
 #include <QJsonArray>
+#include <QDir>
+#include <QJsonDocument>
 
 using namespace uos_ai;
 
@@ -40,10 +45,11 @@ static QString readLocale(const QVariantHash &obj, const QString &locale, const 
 static QString restoreKey(const QString &base)
 {
     if (base.isEmpty())
-        return "";
+        return base;
 
     UosAccountEncoder coder("2ef2fbf9265038a9");
-    return std::get<0>(coder.decrypt(base));
+    QString value = std::get<0>(coder.decrypt(base));
+    return value.isEmpty() ? base : value;
 }
 
 ExternalAgent::ExternalAgent() : LLMPlugin()
@@ -51,7 +57,7 @@ ExternalAgent::ExternalAgent() : LLMPlugin()
 
 }
 
-QSharedPointer<ExternalAgent> ExternalAgent::fromJson(const QVariantHash &root)
+QSharedPointer<ExternalAgent> ExternalAgent::fromJson(const QString &file, const QVariantHash &root)
 {
     QSharedPointer<ExternalAgent> tmp(new ExternalAgent);
     const QString locale = QLocale::system().name().simplified();
@@ -84,38 +90,42 @@ QSharedPointer<ExternalAgent> ExternalAgent::fromJson(const QVariantHash &root)
     {
         qCDebug(logExternalLLM) << "Processing models configuration";
         for (const QVariant &v : root.value("model").toList()) {
-            LLMServerProxy sp;
-            sp.type = LOCAL;
-
             auto m = v.toHash();
-            sp.id = m.value("id").toString();
-            sp.name = readLocale(m.value("name").toHash(), locale, localeSplited);
-            sp.model = modelType(m.value("type").toString());
 
-            if (sp.id.isEmpty() || sp.name.isEmpty())
+            ModelAccountPtr acc(new ModelAccount);
+            QString mid = m.value("id").toString();
+            acc->id = QString::fromUtf8(QCryptographicHash::hash(file.toUtf8(), QCryptographicHash::Md5).toHex()) + "#" + mid;
+            acc->model.name = readLocale(m.value("name").toHash(), locale, localeSplited);
+            acc->account.provider = provider(m.value("type").toString());
+            acc->network = STR_KEY_ONLINE;
+            acc->model.arch = MaLanguage;
+            acc->model.ability = ModelAbilities(ModelAbility::MaText);
+
+            if (mid.isEmpty() || acc->model.name.isEmpty() || acc->account.provider.isEmpty())
                 continue;
 
             const QVariantHash &api = m.value("api").toHash();
-            if (sp.model == OPENAI_API_COMPATIBLE) {
-                sp.url = api.value("url").toString();
-                sp.account.apiKey = restoreKey(api.value("key").toString());
-                sp.ext.insert(LLM_EXTKEY_VENDOR_URL, sp.url);
-                sp.ext.insert(LLM_EXTKEY_VENDOR_MODEL, api.value("model").toString());
+            if (acc->account.provider.compare(STR_KEY_OPENAI_COMPATIBLE, Qt::CaseInsensitive) == 0) {
+                QString url = api.value("url").toString();
+                QString apiKey = restoreKey(api.value("key").toString());
 
-                if (sp.url.isEmpty() || sp.account.apiKey.isEmpty()) {
-                    qCWarning(logExternalLLM) << "Invalid API configuration for model" << sp.name 
-                                             << "- URL:" << sp.url << "API Key:" << (sp.account.apiKey.isEmpty() ? "empty" : "present");
+                acc->account.additional.insert(STR_KEY_PROVIDER_HOST, url);
+                acc->account.auth.insert(STR_KEY_API_KEY, apiKey);
+                acc->model.modelId = api.value("model").toString();
+
+                if (url.isEmpty() || apiKey.isEmpty()) {
+                    qCWarning(logExternalLLM) << "Invalid API configuration for model" << acc->model.name
+                                             << "- URL:" << url << "API Key:" << (apiKey.isEmpty() ? "empty" : "present");
                     continue;
                 }
-            } else if (sp.model == COZE_AGENT) {
-                sp.ext.insert(LLM_EXTKEY_VENDOR_PARAMS, api);
-                sp.account.apiKey = "null";
+            } else if (acc->account.provider.compare(STR_KEY_COZE_AGENT, Qt::CaseInsensitive) == 0) {
+                acc->account.auth = api;
             }
 
-            tmp->models.insert(sp.id, sp);
+            tmp->models.insert(acc->id, acc);
             QString icon = m.value("iconName").toString();
             if (!icon.isEmpty())
-                tmp->modelIcon.insert(sp.id, icon);
+                tmp->modelIcon.insert(acc->id, icon);
         }
 
         if (tmp->models.isEmpty()) {
@@ -128,14 +138,14 @@ QSharedPointer<ExternalAgent> ExternalAgent::fromJson(const QVariantHash &root)
     return tmp;
 }
 
-LLMChatModel ExternalAgent::modelType(const QString &strType)
+QString ExternalAgent::provider(const QString &strType)
 {
-    static const QHash<QString, LLMChatModel> modelMap =
+    static const QHash<QString, QString> modelMap =
     {
-        {"coze", COZE_AGENT}, {"openai", OPENAI_API_COMPATIBLE}
+        {"coze", STR_KEY_COZE_AGENT}, {"openai", STR_KEY_OPENAI_COMPATIBLE}
     };
 
-    return modelMap.value(strType.toLower(), NoModel);
+    return modelMap.value(strType.toLower(), "");
 }
 
 QStringList ExternalAgent::roles(const QString &model) const
@@ -152,7 +162,7 @@ QVariant ExternalAgent::queryInfo(const QString &query, const QString &id)
         if (id == agentId)
             return name;
         else if (models.contains(id)) {
-            return models.value(id).name;
+            return models.value(id)->model.name;
         }
     } else if (query == QUERY_ICON_NAME) {
         if (id == agentId)

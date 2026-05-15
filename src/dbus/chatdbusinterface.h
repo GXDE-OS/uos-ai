@@ -5,14 +5,11 @@
 #ifndef CHATDBUSINTERFACE_H
 #define CHATDBUSINTERFACE_H
 
-#include "uosai_global.h"
-
 #include <QObject>
 #include <QDBusContext>
 
+namespace uos_ai {
 class ServerWrapper;
-UOSAI_BEGIN_NAMESPACE
-
 class ChatDBusInterface : public QObject, protected QDBusContext
 {
     Q_OBJECT
@@ -29,6 +26,6 @@ private:
     ServerWrapper *m_server = nullptr;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // CHATDBUSINTERFACE_H

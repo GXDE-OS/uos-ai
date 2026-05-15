@@ -1,6 +1,6 @@
 #ifndef FILLTEXTBUTTON_H
 #define FILLTEXTBUTTON_H
-#include "uosai_global.h"
+
 
 #include <DPushButton>
 

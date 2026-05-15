@@ -8,23 +8,22 @@
 #include <DIconButton>
 #include <DFontSizeManager>
 
-DWIDGET_USE_NAMESPACE
+namespace uos_ai {
 
 class IconButtonEx;
-
-class OperatingLineWidget: public DWidget
+class OperatingLineWidget: public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 
 public:
-    explicit OperatingLineWidget(DWidget *parent = nullptr);
+    explicit OperatingLineWidget(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
 
     // 其他成员函数和数据成员
     void setEditMode(bool);
     void setName(const QString &);
 
     void setEditText(const QString &);
-    void setEditFont(DFontSizeManager::SizeType type, int weight);
+    void setEditFont(DTK_WIDGET_NAMESPACE::DFontSizeManager::SizeType type, int weight);
     void setEditIconSize(const QSize &);
     void setEditHighlight(bool);
     void setEditSpacing(int);
@@ -43,8 +42,6 @@ public:
     void setSpinnerVisible(bool visible);
 
     void setStatus(KnowledgeBaseProcessStatus status);
-
-
 signals:
     void signalDeleteButtonClicked();
     void signalNotDeleteButtonClicked(QString objectname);
@@ -57,14 +54,14 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
 private:
-    DIconButton *m_pDeleteButton = nullptr;
-    DIconButton *m_pModelButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DIconButton *m_pDeleteButton = nullptr;
+    DTK_WIDGET_NAMESPACE::DIconButton *m_pModelButton = nullptr;
     IconButtonEx *m_pEditbutton = nullptr;
 
-    DLabel *m_pName = nullptr;
-    DLabel *m_pFileSize = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pName = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pFileSize = nullptr;
     bool m_bInterrupt = false;
     qint64 m_fileSize = 0;
 };
-
+}
 #endif // OPERATINGLINEWIDGET_H

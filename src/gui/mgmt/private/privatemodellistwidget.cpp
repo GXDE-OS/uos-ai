@@ -1,9 +1,11 @@
 #include "privatemodellistwidget.h"
-#include "modellistitem.h"
-#include "addmodeldialog.h"
+#include "providerlistitem.h"
+#include "modelsubitem.h"
+#include "modifyproviderdialog.h"
 #include "themedlable.h"
-#include "uosfreeaccounts.h"
 #include "utils/util.h"
+#include "appdatabase.h"
+#include "global_key_define.h"
 
 #include <DLabel>
 
@@ -11,9 +13,10 @@
 #include <QHBoxLayout>
 #include <QLoggingCategory>
 
-using namespace uos_ai;
-
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
+
+using namespace uos_ai;
+DWIDGET_USE_NAMESPACE
 
 PrivateModelListWidget::PrivateModelListWidget(DWidget *parent)
     : DWidget(parent)
@@ -57,8 +60,36 @@ void PrivateModelListWidget::initUI()
 void PrivateModelListWidget::initConnect()
 {
     connect(m_pEditButton, &DCommandLinkButton::clicked, this, &PrivateModelListWidget::onEditButtonClicked);
-    connect(m_pAddButton, &DCommandLinkButton::clicked, this, &PrivateModelListWidget::signalAddModel);
+    connect(m_pAddButton, &DCommandLinkButton::clicked, this, &PrivateModelListWidget::onAddModel);
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &PrivateModelListWidget::onThemeTypeChanged);
+}
+
+void PrivateModelListWidget::onEditItemClicked(const QString &id)
+{
+    QMap<QString, ProviderAccount> providers = AppDatabase::instance()->queryAllProviders();
+    if (!providers.contains(id)) {
+        qCWarning(logAIGUI) << "Provider not found. id:" << id;
+        return;
+    }
+
+    QList<ModelAccountPtr> models = AppDatabase::instance()->queryAllModels();
+    QList<ModelAccountPtr> providerModels;
+    for (const auto &model : models) {
+        if (model->account.id == id) {
+            providerModels.append(model);
+        }
+    }
+
+    ModifyProviderDialog dialog(providers[id], providerModels, true, this);
+    connect(&dialog, &ModifyProviderDialog::dataChanged, this, &PrivateModelListWidget::refresh, Qt::QueuedConnection);
+    dialog.exec();
+}
+
+void PrivateModelListWidget::onAddModel()
+{
+    ModifyProviderDialog dialog(true, this);
+    connect(&dialog, &ModifyProviderDialog::dataChanged, this, &PrivateModelListWidget::refresh, Qt::QueuedConnection);
+    dialog.exec();
 }
 
 void PrivateModelListWidget::onThemeTypeChanged()
@@ -79,7 +110,7 @@ void PrivateModelListWidget::onEditButtonClicked()
     m_pEditButton->setProperty("editMode", !editMode);
     editMode = m_pEditButton->property("editMode").toBool();
 
-    auto items = m_pHasModelWidget->findChildren<ModelListItem *>();
+    auto items = m_pHasModelWidget->findChildren<ProviderListItem *>();
     for (auto item : items) {
         item->setEditMode(editMode);
     }
@@ -90,69 +121,72 @@ void PrivateModelListWidget::onEditButtonClicked()
 
 DWidget *PrivateModelListWidget::noModelWidget()
 {
-    DWidget *widget = new DWidget(this);
-    QHBoxLayout *layout = new QHBoxLayout(widget);
-    layout->setContentsMargins(10, 0, 10, 0);
+    if (!m_pNoModelWidget) {
+        QHBoxLayout *bgLayout = new QHBoxLayout;
+        bgLayout->setContentsMargins(10, 0, 10, 0);
+        bgLayout->addWidget(new DLabel(tr("None")));
 
-    layout->addWidget(new DLabel(tr("None"), widget));
-    layout->addStretch();
-
-    QHBoxLayout *bgLayout = new QHBoxLayout;
-    bgLayout->setContentsMargins(0, 0, 0, 0);
-    bgLayout->addWidget(widget);
-
-    m_pNoModelWidget = new DBackgroundGroup(bgLayout, this);
-    m_pNoModelWidget->setContentsMargins(0, 0, 0, 0);
-    m_pNoModelWidget->setFixedHeight(36);
+        m_pNoModelWidget = new DBackgroundGroup(bgLayout, this);
+        m_pNoModelWidget->setContentsMargins(0, 0, 0, 0);
+        m_pNoModelWidget->setFixedHeight(36);
+    }
 
     return m_pNoModelWidget;
 }
 
 DWidget *PrivateModelListWidget::hasModelWidget()
 {
-    DWidget *widget = new DWidget(this);
-    auto layout = new QVBoxLayout(widget);
-    layout->setContentsMargins(0, 0, 0, 0);
+    if (!m_pHasModelWidget) {
+        m_pHasModelWidget = new DWidget(this);
+        auto layout = new QVBoxLayout(m_pHasModelWidget);
+        layout->setContentsMargins(0, 0, 0, 0);
+        layout->setSpacing(10);
+    }
 
-    m_pHasModelWidget = new DBackgroundGroup(layout, this);
-    m_pHasModelWidget->setContentsMargins(0, 0, 0, 0);
-    m_pHasModelWidget->setItemSpacing(1);
     return m_pHasModelWidget;
 }
 
-void PrivateModelListWidget::setModelList(const QList<LLMServerProxy> &llmList)
+void PrivateModelListWidget::refresh()
 {
-    // 先将布局中的控件清空
+    QMap<QString, ProviderAccount> providers = AppDatabase::instance()->queryAllProviders();
+    QList<ModelAccountPtr> models = AppDatabase::instance()->queryAllModels();
+
     QList<QWidget *> childWidgets = m_pHasModelWidget->findChildren<QWidget *>();
     for (QWidget *childWidget : childWidgets) {
         childWidget->deleteLater();
     }
 
-    for (auto llm : llmList) {
-        if (llm.model == LLMChatModel::PRIVATE_MODEL)
-            onAppendModel(llm);
+    QMap<QString, QList<ModelAccountPtr>> providerModels;
+    for (const auto &model : models) {
+        providerModels[model->account.id].append(model);
+    }
+
+    QMap<QString, ProviderAccount> privateProviders;
+    for (const auto &provider : providers) {
+        if (provider.provider.compare(STR_KEY_PRIVATE_NET, Qt::CaseInsensitive) != 0) {
+            continue;
+        }
+
+        auto providerItem = new ProviderListItem(provider, this);
+        connect(providerItem, &ProviderListItem::signalDeleteItem, this, &PrivateModelListWidget::removeProvider, Qt::QueuedConnection);
+        connect(providerItem, &ProviderListItem::signalEditItem, this, &PrivateModelListWidget::onEditItemClicked, Qt::QueuedConnection);
+        m_pHasModelWidget->layout()->addWidget(providerItem);
+
+        if (providerModels.contains(provider.id)) {
+            for (const auto &model : providerModels[provider.id]) {
+                auto modelItem = new ModelSubItem(model, this);
+                providerItem->addModelItem(modelItem);
+            }
+        }
     }
 
     adjustWidgetSize();
+    qCInfo(logAIGUI) << "Private model list set. count:" << models.size();
 }
 
-void PrivateModelListWidget::onAppendModel(const LLMServerProxy &llmServerProxy)
+void PrivateModelListWidget::removeProvider(const QString &id)
 {
-    auto item = m_pHasModelWidget->findChild<ModelListItem *>("ModelListItem_" + llmServerProxy.id);
-    if (item) return;
-
-    ModelListItem *newItem = new ModelListItem(llmServerProxy, this);
-    connect(newItem, &ModelListItem::signalDeleteItem, this, &PrivateModelListWidget::removeModel, Qt::QueuedConnection);
-    m_pHasModelWidget->layout()->addWidget(newItem);
-
-    adjustWidgetSize();
-    m_pEditButton->setText(tr("Delete"));
-}
-
-void PrivateModelListWidget::removeModel(const LLMServerProxy &llmServerProxy)
-{
-    qCInfo(logAIGUI) << "Remove model, id:" << llmServerProxy.id;
-    auto item = m_pHasModelWidget->findChild<ModelListItem *>("ModelListItem_" + llmServerProxy.id);
+    auto item = m_pHasModelWidget->findChild<ProviderListItem *>("ProviderListItem_" + id);
     if (!item) return;
 
     m_pHasModelWidget->layout()->removeWidget(item);
@@ -160,6 +194,7 @@ void PrivateModelListWidget::removeModel(const LLMServerProxy &llmServerProxy)
     delete item;
 
     adjustWidgetSize();
+    qCInfo(logAIGUI) << "Provider removed. id:" << id;
 }
 
 void PrivateModelListWidget::adjustWidgetSize()

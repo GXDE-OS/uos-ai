@@ -1,10 +1,6 @@
 #ifndef AIQUICKDIALOG_H
 #define AIQUICKDIALOG_H
 
-#include <uosai_global.h>
-#include "gui/chat/private/eaiproxy.h"
-#include "gui/chat/private/eaiexecutor.h"
-#include "gui/chat/private/eaicallbck.h"
 #include "gui/gutils.h"
 #include "../wordwizard.h"
 #include "../private/transbutton.h"
@@ -25,11 +21,15 @@
 #include <DPushButton>
 #include <DWindowCloseButton>
 #include <DComboBox>
+#include <DTitlebar>
 
 namespace uos_ai {
-    class CustomDMenu;
-}
-class AiQuickDialog : public DAbstractDialog
+
+class CustomDMenu;
+class SessionManager;
+class ConversationRecord;
+
+class AiQuickDialog : public DTK_WIDGET_NAMESPACE::DAbstractDialog
 {
     Q_OBJECT
 
@@ -82,13 +82,9 @@ public slots:
     void onModelReply(int op, QString reply, int err);
     void onUpdateSystemTheme();
     void onFontChanged(const QFont &font);
-    void onUosAiLlmAccountLstChanged();
-    void onLlmAccountLstChanged(const QString &currentAccountId, const QString &accountLst);
-    void onNetworkStateChanged(bool isOnline);
     void onWritableStateChanged(bool isTrue);
     void onFocusIn() { onWritableStateChanged(true); }
     void onFocusOut() { onWritableStateChanged(false); }
-    void onWebViewLoadFinished() { m_isWebviewOk = true; }
 
 private:
     void initUi();
@@ -179,6 +175,24 @@ private:
      * @brief 启动新process进行ocr识别，将结果发送给大模型
      */
     void runOCRProcessByPath(int type, bool isCustom, const QString &imagePath);
+    /**
+     * @brief sendWordWizardRequest: Responding to user conversations
+     * @param conversation
+     * @param stream: Conversation flow switch.
+     * @param temperature: A parameter that returns randomness, where a higher value indicates higher randomness.
+     */
+    QString sendWordWizardRequest(const QString &llmId, const QString &conversation, qreal temperature, bool stream = false);
+
+private:
+    /**
+     * @brief Convert request to conversation record
+     */
+    QSharedPointer<uos_ai::ConversationRecord> convertRequestion(const QString &id, const QString &json);
+
+    /**
+     * @brief Handle session events
+     */
+    void onEvent(int event, const QString &id, const QString &json);
 
 private slots:
     void onBtClicked();
@@ -196,8 +210,6 @@ protected:
 private:
     QObject *m_parent = nullptr;
 
-    QString m_activeColor {""};
-
     DGuiApplicationHelper::ColorType m_themeType = DGuiApplicationHelper::LightType;
 
     int m_queryType    = 0;
@@ -210,33 +222,33 @@ private:
 
     uos_ai::QueryTextEdit *m_queryTextEdit = nullptr;
 
-    DPushButton *m_logoBt           = nullptr;
-    DPushButton *m_titleBt          = nullptr;
-    DTitlebar *m_titleBar           = nullptr;
-    DWindowCloseButton *m_closeBt   = nullptr;
-    DWidget *m_querySep             = nullptr;
-    DWidget *m_queryHSep            = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_logoBt           = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_titleBt          = nullptr;
+    DTK_WIDGET_NAMESPACE::DTitlebar *m_titleBar           = nullptr;
+    DTK_WIDGET_NAMESPACE::DWindowCloseButton *m_closeBt   = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_querySep             = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_queryHSep            = nullptr;
     QHBoxLayout *m_queryLayout      = nullptr;
-    DLabel *m_longArrowLabel        = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_longArrowLabel        = nullptr;
     QTextEdit *m_replyTextEdit      = nullptr;
-    DLabel *m_errorInfoLabel        = nullptr;
-    DPushButton *m_cancelBt         = nullptr;
-    DLabel *m_inProgressLabel       = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_errorInfoLabel        = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_cancelBt         = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_inProgressLabel       = nullptr;
     QMovie *m_inProgressMovie       = nullptr;
-    DLabel *m_inOCRLabel            = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_inOCRLabel            = nullptr;
     QMovie *m_inOCRMovie            = nullptr;
-    DPushButton *m_readBt           = nullptr;
-    DPushButton *m_replaceBt        = nullptr;
-    DWidget *m_replySep1            = nullptr;
-    DPushButton *m_againBt          = nullptr;
-    DPushButton *m_copyBt           = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_readBt           = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_replaceBt        = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_replySep1            = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_againBt          = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_copyBt           = nullptr;
     QHBoxLayout *m_replyFunLayout   = nullptr;
-    DPushButton *m_continueBt       = nullptr;
-    DLabel *m_attentionLabel        = nullptr;
-    DPushButton *m_modelBt          = nullptr;
-    DWidget *m_vSpace               = nullptr;
-    DWidget *m_vSpace1              = nullptr;
-    DWidget *m_vSpace2              = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_continueBt       = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_attentionLabel        = nullptr;
+    DTK_WIDGET_NAMESPACE::DPushButton *m_modelBt          = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_vSpace               = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_vSpace1              = nullptr;
+    DTK_WIDGET_NAMESPACE::DWidget *m_vSpace2              = nullptr;
     int m_queryTextEditMax = 0;
     int m_replyTextEditMax = 0;
     volatile bool m_isReplyEditCursorEnd = true;
@@ -245,11 +257,9 @@ private:
     volatile bool m_isQueryNeedShowTip = false;
     // 第一次使用填充功能，提醒用户重启输入法服务
     bool m_isFirstFill = false;
-    // 前端是否准备好
-    volatile bool m_isWebviewOk = true;
 
     // menu
-    uos_ai::CustomDMenu *m_menu = nullptr;
+    CustomDMenu *m_menu = nullptr;
     QAction *m_searchAction    = nullptr;
     QAction *m_explainAction   = nullptr;
     QAction *m_summarizeAction = nullptr;
@@ -284,8 +294,8 @@ private:
     bool m_dragging = false;
     QPoint m_dragStartPos;
 
-    DComboBox *m_autoComboBox = nullptr;
-    DComboBox *m_languageComboBox = nullptr;
+    DTK_WIDGET_NAMESPACE::DComboBox *m_autoComboBox = nullptr;
+    DTK_WIDGET_NAMESPACE::DComboBox *m_languageComboBox = nullptr;
     static QList<QString> kLanguageList;
     static int kTargetLanguageIdx;
     // 语言与提示词映射
@@ -294,7 +304,18 @@ private:
     static bool kIsFirstTranslate;
 
     // 自定义功能列表
-    QList<uos_ai::CustomFunction> m_customFunctionList;
+    QList<CustomFunction> m_customFunctionList;
     QSet<QAction *> m_showActions;
+
+    // Chat session management
+    struct ChatTask {
+        QString id;
+        bool stream = false;
+        QSharedPointer<ConversationRecord> record;
+    };
+    ChatTask m_chatTask;
+    QSharedPointer<SessionManager> chatSession;
 };
+
+}
 #endif // AIQUICKDIALOG_H

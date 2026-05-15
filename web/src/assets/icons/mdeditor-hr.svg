@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,0 L16,0 L16,16 L0,16 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/编辑器/分割线" stroke="none" xlink:href="#path-1" fill-rule="nonzero">
+        <path d="M1,7 L2,7 L2,8 L1,8 L1,7 Z M3,7 L13,7 L13,8 L3,8 L3,7 Z M14,7 L15,7 L15,8 L14,8 L14,7 Z" id="形状" fill="currentColor"></path>
+    </g>
+</svg>

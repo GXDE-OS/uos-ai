@@ -1,5 +1,5 @@
 #include "referencedialog.h"
-#include "uosai_global.h"
+
 #include "utils/util.h"
 
 #include <QVBoxLayout>

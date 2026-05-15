@@ -8,6 +8,8 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
+namespace uos_ai {
+
 class PgsParser
 {
 public:
@@ -161,5 +163,6 @@ private:
     bool            m_last{ false };
 };
 
+}
 
 #endif // PGSPARSER_H

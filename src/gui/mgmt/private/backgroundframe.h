@@ -4,10 +4,9 @@
 #include <DGuiApplicationHelper>
 #include <DFrame>
 
-DGUI_USE_NAMESPACE
-DWIDGET_USE_NAMESPACE
+namespace uos_ai {
 
-class BackgroundFrame : public DFrame
+class BackgroundFrame : public DTK_WIDGET_NAMESPACE::DFrame
 {
     Q_OBJECT
 public:
@@ -15,7 +14,7 @@ public:
     ~BackgroundFrame() override;
 
 private slots:
-    void updateSystemTheme(const DGuiApplicationHelper::ColorType &themeType);
+    void updateSystemTheme(const DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType &themeType);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -27,6 +26,9 @@ private:
 private:
     bool m_isDarkTheme;
 };
+
+
+}
 
 #endif // BACKGROUNDFRAME_H
 

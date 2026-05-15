@@ -1,11 +1,11 @@
 #ifndef COMMITTHREAD_H
 #define COMMITTHREAD_H
 
-#include "uosai_global.h"
+
 
 #include <QObject>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 namespace report {
 
@@ -30,6 +30,6 @@ private:
 
 }
 
-UOSAI_END_NAMESPACE
+}
 
 #endif   // COMMITTHREAD_H

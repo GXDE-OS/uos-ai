@@ -1,6 +1,6 @@
 #include "mcpclient.h"
 #include "osinfo.h"
-#include "networkdefs.h"
+#include "global_define.h"
 
 #include <QFile>
 #include <QJsonDocument>
@@ -15,12 +15,14 @@
 #include <QThread>
 #include <QLocale>
 #include <QStandardPaths>
+#include <QTimer>
 
 #include <unistd.h>
 
 Q_DECLARE_LOGGING_CATEGORY(logAgent)
 
-namespace uos_ai {
+using namespace uos_ai;
+
 McpClient::McpClient(QObject *parent)
     : QObject(parent)
     , m_serverIp("127.0.0.1")
@@ -228,36 +230,36 @@ QPair<int, QJsonValue> McpClient::queryServers(const QString &agentName, const Q
     
     QNetworkAccessManager networkManager;
     QNetworkReply *reply = networkManager.post(request, requestDoc.toJson());
-    
+
     QEventLoop loop;
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
-    
+
     if (reply->error() != QNetworkReply::NoError) {
-        qCWarning(logAgent) << "Error fetching MCP servers for agent" << agentName 
+        qCWarning(logAgent) << "Error fetching MCP servers for agent" << agentName
                            << "Error:" << reply->errorString();
         reply->deleteLater();
-        return qMakePair(AIServer::ErrorType::AgentServerUnavailable, QJsonObject());
+        return qMakePair(GErrorType::AgentServerUnavailable, QJsonObject());
     }
-    
+
     QByteArray responseData = reply->readAll();
     QJsonDocument responseDoc = QJsonDocument::fromJson(responseData);
     reply->deleteLater();
-    
+
     if (responseDoc.isNull() || !responseDoc.isObject()) {
         qCWarning(logAgent) << "Invalid MCP server response format from" << agentName << servers;
-        return qMakePair(AIServer::ErrorType::AgentServerInvaildContent, QJsonObject());
+        return qMakePair(GErrorType::AgentServerInvaildContent, QJsonObject());
     }
     
     QJsonObject responseObj = responseDoc.object();
     
     if (!responseObj.contains("servers") || !responseObj["servers"].isArray()) {
         qWarning() << "Invalid MCP server response: servers array not found" << agentName << servers;
-        return qMakePair(AIServer::ErrorType::AgentServerInvaildContent, QJsonObject());
+        return qMakePair(GErrorType::AgentServerInvaildContent, QJsonObject());
     }
     
     QJsonArray serversArray = responseObj["servers"].toArray();
-    return qMakePair(AIServer::ErrorType::NoError, serversArray);
+    return qMakePair(GErrorType::NoError, serversArray);
 }
 
 QPair<int, QJsonValue> McpClient::getTools(const QString &agentName)
@@ -282,7 +284,7 @@ QPair<int, QJsonValue> McpClient::getTools(const QString &agentName)
         }
     }
 
-    return qMakePair(AIServer::ErrorType::NoError, toolsArray);
+    return qMakePair(GErrorType::NoError, toolsArray);
 }
 
 QPair<int, QString> McpClient::callTool(const QString &agentName, const QString &toolName, const QJsonObject &params)
@@ -299,40 +301,40 @@ QPair<int, QString> McpClient::callTool(const QString &agentName, const QString 
     
     QNetworkAccessManager networkManager;
     QNetworkReply *reply = networkManager.post(request, requestDoc.toJson());
-    
+
     QEventLoop loop;
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
-    
+
     if (reply->error() != QNetworkReply::NoError) {
         QString erInfo = QString::fromUtf8(reply->readAll());
         qCWarning(logAgent) << "Error calling MCP tool:" << toolName << "for agent:" << agentName
                            << "Error:" << reply->errorString() << "Response:" << erInfo;
         reply->deleteLater();
-        return qMakePair(AIServer::ErrorType::MCPSeverUnavailable, erInfo);
+        return qMakePair(GErrorType::MCPSeverUnavailable, erInfo);
     }
-    
+
     QByteArray responseData = reply->readAll();
     QJsonDocument responseDoc = QJsonDocument::fromJson(responseData);
     reply->deleteLater();
-    
+
     if (responseDoc.isNull() || !responseDoc.isObject()) {
         qWarning() << "Invalid MCP tool response format" << agentName << toolName;
-        return qMakePair(AIServer::ErrorType::AgentServerInvaildContent, QString());
+        return qMakePair(GErrorType::AgentServerInvaildContent, QString());
     }
     
     QJsonObject responseObj = responseDoc.object();
     
     if (!responseObj.contains("result")) {
         qWarning() << "Invalid MCP tool response: result not found" << agentName << toolName;
-        return qMakePair(AIServer::ErrorType::AgentServerInvaildContent, QString());
+        return qMakePair(GErrorType::AgentServerInvaildContent, QString());
     }
     
     bool toolEr = false;
     if (responseObj.contains("isError"))
         toolEr = responseObj["isError"].toBool(false);
 
-    return qMakePair(toolEr ? AIServer::ErrorType::MCPToolError : AIServer::ErrorType::NoError,
+    return qMakePair(toolEr ? GErrorType::MCPToolError : GErrorType::NoError,
                      responseObj["result"].toString());
 }
 
@@ -344,18 +346,23 @@ bool McpClient::ping() const
     
     QNetworkAccessManager networkManager;
     QNetworkReply *reply = networkManager.get(request);
-    
+
     QEventLoop loop;
+    QTimer timer;
+    timer.setSingleShot(true);
+    timer.start(3000);
+    connect(&timer, &QTimer::timeout, reply, &QNetworkReply::abort);
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
-    
+    timer.stop();
+
     if (reply->error() != QNetworkReply::NoError) {
         qCWarning(logAgent) << "Ping failed for MCP server at" << url.toString()
                            << "Error:" << reply->errorString();
         reply->deleteLater();
         return false;
     }
-    
+
     reply->deleteLater();
     return true;
 }
@@ -426,29 +433,27 @@ QPair<int, QJsonObject> McpClient::syncServers(const QString &agentName)
     
     QNetworkAccessManager networkManager;
     QNetworkReply *reply = networkManager.post(request, requestDoc.toJson());
-    
+
     QEventLoop loop;
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
-    
+
     if (reply->error() != QNetworkReply::NoError) {
-        qCWarning(logAgent) << "Error syncing servers for agent" << agentName 
+        qCWarning(logAgent) << "Error syncing servers for agent" << agentName
                            << "Error:" << reply->errorString();
         reply->deleteLater();
-        return qMakePair(AIServer::ErrorType::AgentServerUnavailable, QJsonObject());
+        return qMakePair(GErrorType::AgentServerUnavailable, QJsonObject());
     }
-    
+
     QByteArray responseData = reply->readAll();
     QJsonDocument responseDoc = QJsonDocument::fromJson(responseData);
     reply->deleteLater();
-    
+
     if (responseDoc.isNull() || !responseDoc.isObject()) {
         qCWarning(logAgent) << "Invalid sync servers response format from" << agentName;
-        return qMakePair(AIServer::ErrorType::AgentServerInvaildContent, QJsonObject());
+        return qMakePair(GErrorType::AgentServerInvaildContent, QJsonObject());
     }
     
     QJsonObject responseObj = responseDoc.object();    
-    return qMakePair(AIServer::ErrorType::NoError, responseObj);
+    return qMakePair(GErrorType::NoError, responseObj);
 }
-
-} // namespace uos_ai 

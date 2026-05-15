@@ -5,7 +5,7 @@
 
 #include <QRegularExpression>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 AsrModel::AsrModel(const QString &id, QObject *parent)
     : QObject(parent)

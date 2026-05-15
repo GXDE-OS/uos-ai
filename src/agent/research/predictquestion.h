@@ -1,7 +1,7 @@
 #ifndef PREDICTQUESTION_H
 #define PREDICTQUESTION_H
 
-#include "agent/llmagent.h"
+#include "llmagent.h"
 
 namespace uos_ai {
 class PredictQuestion : public LlmAgent
@@ -10,10 +10,10 @@ class PredictQuestion : public LlmAgent
 public:
     explicit PredictQuestion(QObject *parent = nullptr);
 
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &message, const QVariantHash &params = {}) override;
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params = {}) override;
 
 private:
-    void predictContent(const QJsonArray &questions);
+    void emitGuessYouWant(const QStringList &questions);
 };
 }
 #endif // PREDICTQUESTION_H

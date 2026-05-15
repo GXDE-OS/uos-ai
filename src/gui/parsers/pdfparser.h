@@ -5,10 +5,10 @@
 #ifndef PDFPARSER_H
 #define PDFPARSER_H
 
-#include "uosai_global.h"
+
 #include "abstractfileparser.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 /**
  * @brief PDF file parser
@@ -33,6 +33,6 @@ public:
     QSharedPointer<ParserResult> parseFile(const QString &filePath, const QVariantMap &metadata = QVariantMap()) override;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // PDFPARSER_H

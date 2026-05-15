@@ -4,515 +4,401 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="56"/>
         <source>Add model</source>
-        <translation>Προσθήκη μοντέλου</translation>
+        <translation type="vanished">Προσθήκη μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="58"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="99"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
-        <translation>Απαιτείται, παρακαλώ εισάγετε</translation>
+        <translation type="vanished">Απαιτείται, παρακαλώ εισάγετε</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="107"/>
         <source>APIKey</source>
-        <translation>Κλειδί API</translation>
+        <translation type="vanished">Κλειδί API</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="115"/>
         <source>APISecret</source>
-        <translation>Μυστικό API</translation>
+        <translation type="vanished">Μυστικό API</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
         <source>Account</source>
-        <translation>Λογαριασμός</translation>
+        <translation type="vanished">Λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Απαιτείται για διαχωρισμό πολλαπλών μοντέλων</translation>
+        <translation type="vanished">Απαιτείται για διαχωρισμό πολλαπλών μοντέλων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
-        <translation>Προαιρετικό</translation>
+        <translation type="vanished">Προαιρετικό</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="155"/>
         <source>Optional. The default address will be used if not filled in.</source>
-        <translation>Προαιρετικό. Θα χρησιμοποιηθεί η προεπιλεγμένη διεύθυνση εάν δεν συμπληρωθεί.</translation>
+        <translation type="vanished">Προαιρετικό. Θα χρησιμοποιηθεί η προεπιλεγμένη διεύθυνση εάν δεν συμπληρωθεί.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="161"/>
         <source>Models List</source>
-        <translation>Λίστα Μοντέλων</translation>
+        <translation type="vanished">Λίστα Μοντέλων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="168"/>
         <source>Custom</source>
-        <translation>Προσαρμογή</translation>
+        <translation type="vanished">Προσαρμογή</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="529"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="818"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>Για ρυθμίσεις διακομιστή μεσολάβησης, μεταβείτε στις ρυθμίσεις μεσολάβησης συστήματος</translation>
+        <translation type="vanished">Για ρυθμίσεις διακομιστή μεσολάβησης, μεταβείτε στις ρυθμίσεις μεσολάβησης συστήματος</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="821"/>
         <source>Go to settings</source>
-        <translation>Μετάβαση στις ρυθμίσεις</translation>
+        <translation type="vanished">Μετάβαση στις ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="254"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="134"/>
         <source>Model Name</source>
-        <translation>Όνομα Μοντέλου</translation>
+        <translation type="vanished">Όνομα Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
-        <translation>Τομέας</translation>
+        <translation type="vanished">Τομέας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="256"/>
         <source>Confirm</source>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
-        <translation>Αποτυχία αποθήκευσης, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Αποτυχία αποθήκευσης, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="725"/>
         <source>The account name already exists, please change it</source>
-        <translation>Το όνομα λογαριασμού υπάρχει ήδη, παρακαλώ αλλάξτε το</translation>
+        <translation type="vanished">Το όνομα λογαριασμού υπάρχει ήδη, παρακαλώ αλλάξτε το</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="367"/>
         <source>No more than 20 characters</source>
-        <translation>Όχι περισσότεροι από 20 χαρακτήρες</translation>
+        <translation type="vanished">Όχι περισσότεροι από 20 χαρακτήρες</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="202"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>Για να ελεγχθεί εάν το μοντέλο είναι διαθέσιμο, το σύστημα στέλνει πληροφορίες δοκιμής στο μεγάλο μοντέλο, το οποίο θα καταναλώσει μια μικρή ποσότητα token.</translation>
+        <translation type="vanished">Για να ελεγχθεί εάν το μοντέλο είναι διαθέσιμο, το σύστημα στέλνει πληροφορίες δοκιμής στο μεγάλο μοντέλο, το οποίο θα καταναλώσει μια μικρή ποσότητα token.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="460"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>Αυτό το LLM υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά.</translation>
+        <translation type="vanished">Αυτό το LLM υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά.</translation>
     </message>
 </context>
 <context>
     <name>AiCodeTranslation</name>
     <message>
-        <location filename="../src/llm/openai/aicodetranslation.cpp" line="9"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Υπάρχουν πολλοί επισκέπτες αυτήν τη στιγμή, παρακαλώ δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Υπάρχουν πολλοί επισκέπτες αυτήν τη στιγμή, παρακαλώ δοκιμάστε ξανά αργότερα.</translation>
     </message>
 </context>
 <context>
     <name>AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="184"/>
         <source>type</source>
-        <translation>τύπος</translation>
+        <translation type="vanished">τύπος</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="283"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="308"/>
         <source>Read Aloud</source>
-        <translation>Ανάγνωση Δυνατά</translation>
+        <translation type="vanished">Ανάγνωση Δυνατά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
-        <translation>Η συσκευή ήχου δεν εντοπίστηκε, παρακαλώ ελέγξτε και δοκιμάστε ξανά.</translation>
+        <translation type="vanished">Η συσκευή ήχου δεν εντοπίστηκε, παρακαλώ ελέγξτε και δοκιμάστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="367"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Το περιεχόμενο που δημιουργείται από την AI είναι μόνο για αναφορά, παρακαλώ δώστε προσοχή στην ακρίβεια των πληροφοριών.</translation>
+        <translation type="vanished">Το περιεχόμενο που δημιουργείται από την AI είναι μόνο για αναφορά, παρακαλώ δώστε προσοχή στην ακρίβεια των πληροφοριών.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="336"/>
         <source>Copy</source>
-        <translation>Αντιγραφή</translation>
+        <translation type="vanished">Αντιγραφή</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1379"/>
         <source>Polish this passage for me and just give me the result without any extra content.
 text：</source>
-        <translation>Βελτίωσε αυτό το κείμενο για μένα και δώσε μου μόνο το αποτέλεσμα χωρίς επιπλέον περιεχόμενο.
+        <translation type="vanished">Βελτίωσε αυτό το κείμενο για μένα και δώσε μου μόνο το αποτέλεσμα χωρίς επιπλέον περιεχόμενο.
 
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
-        <translation>Τρέχον μοντέλο: </translation>
+        <translation type="vanished">Τρέχον μοντέλο: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="329"/>
         <source>Regenerate</source>
-        <translation>Επαναδημιουργία</translation>
+        <translation type="vanished">Επαναδημιουργία</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="107"/>
         <source>simplified Chinese</source>
-        <translation>Απλοποιημένα Κινέζικα</translation>
+        <translation type="vanished">Απλοποιημένα Κινέζικα</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="108"/>
         <source>traditional Chinese</source>
-        <translation>Παραδοσιακά Κινέζικα</translation>
+        <translation type="vanished">Παραδοσιακά Κινέζικα</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="109"/>
         <source>Tibetan</source>
-        <translation>Θιβετιανά</translation>
+        <translation type="vanished">Θιβετιανά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="110"/>
         <source>English</source>
-        <translation>Αγγλικά</translation>
+        <translation type="vanished">Αγγλικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="111"/>
         <source>Japanese </source>
-        <translation>Ιαπωνικά</translation>
+        <translation type="vanished">Ιαπωνικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="112"/>
         <source>German</source>
-        <translation>Γερμανικά</translation>
+        <translation type="vanished">Γερμανικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="113"/>
         <source>Spanish</source>
-        <translation>Ισπανικά</translation>
+        <translation type="vanished">Ισπανικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="114"/>
         <source>French</source>
-        <translation>Γαλλικά</translation>
+        <translation type="vanished">Γαλλικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="115"/>
         <source>Italian</source>
-        <translation>Ιταλικά</translation>
+        <translation type="vanished">Ιταλικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="116"/>
         <source>Korean</source>
-        <translation>Κορεατικά</translation>
+        <translation type="vanished">Κορεατικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="117"/>
         <source>Malay</source>
-        <translation>Μαλαισιανά</translation>
+        <translation type="vanished">Μαλαισιανά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="118"/>
         <source>Portuguese</source>
-        <translation>Πορτογαλικά</translation>
+        <translation type="vanished">Πορτογαλικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="119"/>
         <source>Russian</source>
-        <translation>Ρωσικά</translation>
+        <translation type="vanished">Ρωσικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="120"/>
         <source>Thai</source>
-        <translation>Ταϊλανδικά</translation>
+        <translation type="vanished">Ταϊλανδικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="121"/>
         <source>Vietnamese</source>
-        <translation>Βιετναμικά</translation>
+        <translation type="vanished">Βιετναμικά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="354"/>
         <source>Continue Dialog</source>
-        <translation>Συνέχιση Διαλόγου</translation>
+        <translation type="vanished">Συνέχιση Διαλόγου</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="403"/>
         <source>Automatic Detection</source>
-        <translation>Αυτόματος Εντοπισμός</translation>
+        <translation type="vanished">Αυτόματος Εντοπισμός</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="479"/>
         <source>Search</source>
-        <translation>Αναζήτηση</translation>
+        <translation type="vanished">Αναζήτηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
-        <translation>Εξήγηση</translation>
+        <translation type="vanished">Εξήγηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
-        <translation>Μετάφραση</translation>
+        <translation type="vanished">Μετάφραση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
-        <translation>Επέκταση</translation>
+        <translation type="vanished">Επέκταση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
-        <translation>Διόρθωση</translation>
+        <translation type="vanished">Διόρθωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="506"/>
         <source>Add to the AI knowledge base</source>
-        <translation>Προσθήκη στη βάση γνώσης AI</translation>
+        <translation type="vanished">Προσθήκη στη βάση γνώσης AI</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="991"/>
         <source>Added</source>
-        <translation>Προστέθηκε</translation>
+        <translation type="vanished">Προστέθηκε</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1258"/>
         <source>Model Configuration</source>
-        <translation>Διαμόρφωση Μοντέλου</translation>
+        <translation type="vanished">Διαμόρφωση Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1310"/>
         <source>Copied</source>
-        <translation>Αντιγράφηκε</translation>
+        <translation type="vanished">Αντιγράφηκε</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
-        <translation>Δεν αναγνωρίστηκε κείμενο.</translation>
+        <translation type="vanished">Δεν αναγνωρίστηκε κείμενο.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1981"/>
         <source>The added content must be more than 10 words</source>
-        <translation>Το προστιθέμενο περιεχόμενο πρέπει να υπερβαίνει τις 10 λέξεις</translation>
+        <translation type="vanished">Το προστιθέμενο περιεχόμενο πρέπει να υπερβαίνει τις 10 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
-        <translation>Περίληψη</translation>
+        <translation type="vanished">Περίληψη</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="315"/>
         <source>Paste to Text</source>
-        <translation>Επικόλληση σε Κείμενο</translation>
+        <translation type="vanished">Επικόλληση σε Κείμενο</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
-        <translation>Συνέχιση γραφής</translation>
+        <translation type="vanished">Συνέχιση γραφής</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
-        <translation>Βελτίωση</translation>
+        <translation type="vanished">Βελτίωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="613"/>
         <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation>Το αποτέλεσμα της μετάφρασης περιορίζεται από τις δυνατότητες του μοντέλου. Εάν δεν είστε ικανοποιημένοι με τη μετάφραση, παρακαλώ αλλάξτε σε άλλα μοντέλα στην αρχική σελίδα του UOS AI.</translation>
+        <translation type="vanished">Το αποτέλεσμα της μετάφρασης περιορίζεται από τις δυνατότητες του μοντέλου. Εάν δεν είστε ικανοποιημένοι με τη μετάφραση, παρακαλώ αλλάξτε σε άλλα μοντέλα στην αρχική σελίδα του UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
-        <translation>Μεταφράστε αυτό το κείμενο σε %1 και δώστε μου ένα σαφές αποτέλεσμα απευθείας.
+        <translation type="vanished">Μεταφράστε αυτό το κείμενο σε %1 και δώστε μου ένα σαφές αποτέλεσμα απευθείας.
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="799"/>
         <source>Not clickable</source>
-        <translation>Μη κλικάρισμα</translation>
+        <translation type="vanished">Μη κλικάρισμα</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="907"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
-        <translation>Η λειτουργία μπορεί να χρησιμοποιηθεί μόνο μετά την επανεκκίνηση της μεθόδου εισαγωγής. Το tutorial είναι το εξής:
+        <translation type="vanished">Η λειτουργία μπορεί να χρησιμοποιηθεί μόνο μετά την επανεκκίνηση της μεθόδου εισαγωγής. Το tutorial είναι το εξής:
 
 1. Κάντε δεξί κλικ στο εικονίδιο της μεθόδου εισαγωγής στη γραμμή εργασιών.
 
 2. Κάντε κλικ στο &quot;Επανεκκίνηση&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
-        <translation>Εντάξει</translation>
+        <translation type="vanished">Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="925"/>
         <source>Fill failed</source>
-        <translation>Αποτυχία συμπλήρωσης</translation>
+        <translation type="vanished">Αποτυχία συμπλήρωσης</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="926"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>Δεν έχει επιλεγεί πλαίσιο εισαγωγής, παρακαλώ επιλέξτε το πλαίσιο εισαγωγής και συμπληρώστε ξανά.</translation>
+        <translation type="vanished">Δεν έχει επιλεγεί πλαίσιο εισαγωγής, παρακαλώ επιλέξτε το πλαίσιο εισαγωγής και συμπληρώστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
-        <translation>Εντάξει</translation>
+        <translation type="vanished">Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1335"/>
         <source>Explain this passage in plain language. Just give me a clear result without redundant content.
 text：</source>
-        <translation>Εξηγήστε αυτό το κείμενο με απλή γλώσσα. Δώστε μου ένα σαφές αποτέλεσμα χωρίς περιττό περιεχόμενο.
+        <translation type="vanished">Εξηγήστε αυτό το κείμενο με απλή γλώσσα. Δώστε μου ένα σαφές αποτέλεσμα χωρίς περιττό περιεχόμενο.
 
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1340"/>
         <source>Summarize this passage and give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>Συνοψίστε αυτό το κείμενο και δώστε μου ένα σαφές αποτέλεσμα απευθείας χωρίς άλλο περιττό περιεχόμενο.
+        <translation type="vanished">Συνοψίστε αυτό το κείμενο και δώστε μου ένα σαφές αποτέλεσμα απευθείας χωρίς άλλο περιττό περιεχόμενο.
 
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
         <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>Συνεχίστε αυτό το κείμενο κατάλληλα. Δεν χρειάζονται πολλές λέξεις. Δώστε μου ένα σαφές αποτέλεσμα χωρίς άλλο περιττό περιεχόμενο.
+        <translation type="vanished">Συνεχίστε αυτό το κείμενο κατάλληλα. Δεν χρειάζονται πολλές λέξεις. Δώστε μου ένα σαφές αποτέλεσμα χωρίς άλλο περιττό περιεχόμενο.
 
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1369"/>
         <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>Επεκτείνετε αυτό το κείμενο κατάλληλα. Δεν χρειάζεται ιδιαίτερα μεγάλο κείμενο. Δώστε μου ένα σαφές αποτέλεσμα χωρίς άλλο περιττό περιεχόμενο.
+        <translation type="vanished">Επεκτείνετε αυτό το κείμενο κατάλληλα. Δεν χρειάζεται ιδιαίτερα μεγάλο κείμενο. Δώστε μου ένα σαφές αποτέλεσμα χωρίς άλλο περιττό περιεχόμενο.
 
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1374"/>
         <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>Ελέγξτε εάν υπάρχουν τυπογραφικά λάθη σε αυτό το κείμενο. Εάν υπάρχουν, δείξτε την τοποθεσία των σφαλμάτων. Δώστε μου ένα σαφές αποτέλεσμα απευθείας χωρίς άλλο περιττό περιεχόμενο.
+        <translation type="vanished">Ελέγξτε εάν υπάρχουν τυπογραφικά λάθη σε αυτό το κείμενο. Εάν υπάρχουν, δείξτε την τοποθεσία των σφαλμάτων. Δώστε μου ένα σαφές αποτέλεσμα απευθείας χωρίς άλλο περιττό περιεχόμενο.
 
 κείμενο：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
-        <translation>&quot;%1&quot;</translation>
+        <translation type="vanished">&quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1673"/>
         <source>Currently no model</source>
-        <translation>Προς το παρόν κανένα μοντέλο</translation>
+        <translation type="vanished">Προς το παρόν κανένα μοντέλο</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1690"/>
         <source>Go to configure  </source>
-        <translation>Πηγαίνετε στη διαμόρφωση</translation>
+        <translation type="vanished">Πηγαίνετε στη διαμόρφωση</translation>
     </message>
 </context>
 <context>
     <name>AiToastMessage</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="100"/>
         <source>Chat history cleared</source>
-        <translation>Το ιστορικό συνομιλιών διαγράφηκε</translation>
+        <translation type="vanished">Το ιστορικό συνομιλιών διαγράφηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="101"/>
         <source>Copied successfully</source>
-        <translation>Αντιγραφή επιτυχής</translation>
+        <translation type="vanished">Αντιγραφή επιτυχής</translation>
     </message>
 </context>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="60"/>
-        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>Το UOS AI είναι ένας έξυπνος βοηθός επιφάνειας εργασίας, ο προσωπικός σας βοηθός! Μπορείτε να επικοινωνήσετε μαζί του χρησιμοποιώντας κείμενο ή φωνή, και μπορεί να βοηθήσει να απαντήσετε σε ερωτήσεις, να παρέχει πληροφορίες και να δημιουργεί εικόνες με βάση τις περιγραφές σας.</translation>
+        <translation type="vanished">Το UOS AI είναι ένας έξυπνος βοηθός επιφάνειας εργασίας, ο προσωπικός σας βοηθός! Μπορείτε να επικοινωνήσετε μαζί του χρησιμοποιώντας κείμενο ή φωνή, και μπορεί να βοηθήσει να απαντήσετε σε ερωτήσεις, να παρέχει πληροφορίες και να δημιουργεί εικόνες με βάση τις περιγραφές σας.</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="123"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS AI Ακολουθήστε/Γράψτε</translation>
+        <translation type="vanished">UOS AI Ακολουθήστε/Γράψτε</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
-        <translation>Διαχείριση Βάσης Γνώσεων</translation>
+        <translation type="vanished">Διαχείριση Βάσης Γνώσεων</translation>
     </message>
 </context>
 <context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="152"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
     </message>
@@ -520,1089 +406,869 @@ text：</source>
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
-        <source>The command was executed successfully.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
-        <source>Command execution failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
-        <translation>Αποτυχία ανάλυσης λειτουργίας</translation>
+        <translation type="vanished">Αποτυχία ανάλυσης λειτουργίας</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="252"/>
         <source>Application file does not exist</source>
-        <translation>Το αρχείο εφαρμογής δεν υπάρχει</translation>
+        <translation type="vanished">Το αρχείο εφαρμογής δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
-        <translation>Επιτυχής εκκίνηση</translation>
+        <translation type="vanished">Επιτυχής εκκίνηση</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
-        <translation>Αποτυχία εκκίνησης</translation>
+        <translation type="vanished">Αποτυχία εκκίνησης</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="211"/>
-        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
-        <translation>Το περιεχόμενο εξόδου εκτέλεσης είναι</translation>
+        <translation type="vanished">Το περιεχόμενο εξόδου εκτέλεσης είναι</translation>
     </message>
 </context>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
-        <translation>Λειτουργία</translation>
+        <translation type="vanished">Λειτουργία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
-        <translation>Λειτουργία Παραθύρου</translation>
+        <translation type="vanished">Λειτουργία Παραθύρου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
-        <translation>Λειτουργία Πλευρικής Μπάρας</translation>
+        <translation type="vanished">Λειτουργία Πλευρικής Μπάρας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation type="vanished">Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
-        <translation>Αρχείο ενημερώσεων</translation>
+        <translation type="vanished">Αρχείο ενημερώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
-        <translation>Φωνητική συνομιλία</translation>
+        <translation type="vanished">Φωνητική συνομιλία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation type="vanished">Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
-        <translation>Επιβεβαίωση διαγραφής %1;</translation>
+        <translation type="vanished">Επιβεβαίωση διαγραφής %1;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Μετά τη διαγραφή, ο διακομιστής δεν θα είναι διαθέσιμος. Προχωρήστε με προσοχή.</translation>
+        <translation type="vanished">Μετά τη διαγραφή, ο διακομιστής δεν θα είναι διαθέσιμος. Προχωρήστε με προσοχή.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
-        <translation type="unfinished">Ενημέρωση</translation>
+        <translation type="obsolete">Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
-        <translation>Μη διανυσματοποιημένο πρόσθετο</translation>
+        <translation type="vanished">Μη διανυσματοποιημένο πρόσθετο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation>Πριν χρησιμοποιήσετε τη [Βάση Γνώσης AI], πρέπει πρώτα να εγκαταστήσετε το πρόσθετο διανυσματοποίησης, ώστε να λειτουργεί σωστά η λειτουργία βάσης γνώσης AI.</translation>
+        <translation type="vanished">Πριν χρησιμοποιήσετε τη [Βάση Γνώσης AI], πρέπει πρώτα να εγκαταστήσετε το πρόσθετο διανυσματοποίησης, ώστε να λειτουργεί σωστά η λειτουργία βάσης γνώσης AI.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
-        <translation type="unfinished">Εγκατάσταση</translation>
+        <translation type="obsolete">Εγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
-        <translation>Η βάση γνώσης είναι κενή</translation>
+        <translation type="vanished">Η βάση γνώσης είναι κενή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation>Πριν χρησιμοποιήσετε τη [Βάση Γνώσης AI], πρέπει πρώτα να προσθέσετε έγγραφα στη βάση γνώσης. Αφού προστεθούν, η AI θα απαντά σε ερωτήσεις βάσει του περιεχομένου που έχετε προσθέσει.</translation>
+        <translation type="vanished">Πριν χρησιμοποιήσετε τη [Βάση Γνώσης AI], πρέπει πρώτα να προσθέσετε έγγραφα στη βάση γνώσης. Αφού προστεθούν, η AI θα απαντά σε ερωτήσεις βάσει του περιεχομένου που έχετε προσθέσει.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
-        <translation>Προσθήκη Αρχείων</translation>
+        <translation type="vanished">Προσθήκη Αρχείων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
-        <translation>Το ακόλουθο αρχείο έχει λήξει και δεν μπορεί να χρησιμοποιηθεί. Να συνεχιστεί;</translation>
+        <translation type="vanished">Το ακόλουθο αρχείο έχει λήξει και δεν μπορεί να χρησιμοποιηθεί. Να συνεχιστεί;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
-        <translation>Χρήση αργότερα</translation>
+        <translation type="vanished">Χρήση αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
-        <translation>Εγκατάσταση τώρα</translation>
+        <translation type="vanished">Εγκατάσταση τώρα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
-        <translation>Λείπει το περιβάλλον MCP</translation>
+        <translation type="vanished">Λείπει το περιβάλλον MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation>Παρακαλώ μεταβείτε στο App Store για να εγκαταστήσετε τον UOS AI Agent</translation>
+        <translation type="vanished">Παρακαλώ μεταβείτε στο App Store για να εγκαταστήσετε τον UOS AI Agent</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
-        <translation>Όχι Τώρα</translation>
+        <translation type="vanished">Όχι Τώρα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
-        <translation>Διεκδίκηση Πιστώσεων</translation>
+        <translation type="vanished">Διεκδίκηση Πιστώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
-        <translation>Δωρεάν Πιστώσεις Παραδόθηκαν</translation>
+        <translation type="vanished">Δωρεάν Πιστώσεις Παραδόθηκαν</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>Έχετε εξαντλήσει τις δωρεάν πιστώσεις δημιουργίας για τον δοκιμαστικό σας λογαριασμό. Σας έχουμε δώσει επιπλέον 200 δωρεάν πιστώσεις που ισχύουν αυτόν τον μήνα. Εξερευνήστε περισσότερες λειτουργίες και ξεκλειδώστε τις απεριόριστες δυνατότητες του UOS AI!</translation>
+        <translation type="vanished">Έχετε εξαντλήσει τις δωρεάν πιστώσεις δημιουργίας για τον δοκιμαστικό σας λογαριασμό. Σας έχουμε δώσει επιπλέον 200 δωρεάν πιστώσεις που ισχύουν αυτόν τον μήνα. Εξερευνήστε περισσότερες λειτουργίες και ξεκλειδώστε τις απεριόριστες δυνατότητες του UOS AI!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
-        <translation type="unfinished">Εντάξει</translation>
+        <translation type="obsolete">Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
-        <translation>Επιτυχής Διεκδίκηση</translation>
+        <translation type="vanished">Επιτυχής Διεκδίκηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+        <translation type="vanished">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>Το UOS AI είναι ένας έξυπνος βοηθός επιφάνειας εργασίας, ο προσωπικός σας βοηθός! Μπορείτε να επικοινωνήσετε μαζί του χρησιμοποιώντας κείμενο ή φωνή, και μπορεί να βοηθήσει να απαντήσει σε ερωτήσεις, να παρέχει πληροφορίες και να δημιουργεί εικόνες βάσει των περιγραφών σας.</translation>
+        <translation type="vanished">Το UOS AI είναι ένας έξυπνος βοηθός επιφάνειας εργασίας, ο προσωπικός σας βοηθός! Μπορείτε να επικοινωνήσετε μαζί του χρησιμοποιώντας κείμενο ή φωνή, και μπορεί να βοηθήσει να απαντήσει σε ερωτήσεις, να παρέχει πληροφορίες και να δημιουργεί εικόνες βάσει των περιγραφών σας.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
-        <translation>Πληροφορίες Αρχειοθέτησης</translation>
+        <translation type="vanished">Πληροφορίες Αρχειοθέτησης</translation>
     </message>
 </context>
 <context>
     <name>CodeTranslation360</name>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="9"/>
         <source>Authentication failed, insufficient balance</source>
-        <translation>Αποτυχία πιστοποίησης, ανεπαρκές υπόλοιπο</translation>
+        <translation type="vanished">Αποτυχία πιστοποίησης, ανεπαρκές υπόλοιπο</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="10"/>
         <source>Authentication failed, daily limit exceeded</source>
-        <translation>Αποτυχία πιστοποίησης, υπέρβαση ημερήσιου ορίου</translation>
+        <translation type="vanished">Αποτυχία πιστοποίησης, υπέρβαση ημερήσιου ορίου</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="11"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Υπάρχουν πολλοί επισκέπτες αυτή τη στιγμή, δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Υπάρχουν πολλοί επισκέπτες αυτή τη στιγμή, δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="12"/>
         <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation>Η υπηρεσία είναι ανώμαλη. Παρακαλώ επικοινωνήστε με την ομάδα ανάπτυξης για αντιμετώπιση προβλημάτων.</translation>
+        <translation type="vanished">Η υπηρεσία είναι ανώμαλη. Παρακαλώ επικοινωνήστε με την ομάδα ανάπτυξης για αντιμετώπιση προβλημάτων.</translation>
     </message>
 </context>
 <context>
     <name>CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="30"/>
         <source>Error</source>
-        <translation>Σφάλμα</translation>
+        <translation type="vanished">Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="52"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Εντάξει</translation>
+        <translation type="vanished">Εντάξει</translation>
+    </message>
+</context>
+<context>
+    <name>DocParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
+        <source>The document content is invalid or empty.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>EAiExecutor</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation>Ο Προσωπικός Βοηθός Γνώσης μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση της βάσης γνώσης.</translation>
+        <translation type="vanished">Ο Προσωπικός Βοηθός Γνώσης μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση της βάσης γνώσης.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation>Ο Προσωπικός Βοηθός Γνώσης μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
+        <translation type="vanished">Ο Προσωπικός Βοηθός Γνώσης μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation>Ο Βοηθός Βαθιάς Συστήματος μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
+        <translation type="vanished">Ο Βοηθός Βαθιάς Συστήματος μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation>Ο Βοηθός Συστήματος UOS μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
+        <translation type="vanished">Ο Βοηθός Συστήματος UOS μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="427"/>
         <source>Knowledge Base Management</source>
-        <translation>Διαχείριση Βάσης Γνώσης</translation>
+        <translation type="vanished">Διαχείριση Βάσης Γνώσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="433"/>
         <source>MCP Server</source>
-        <translation type="unfinished">Διακομιστής MCP</translation>
+        <translation type="obsolete">Διακομιστής MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>Το UOS AI απαιτεί τη διαμόρφωση ενός λογαριασμού μοντέλου AI πριν μπορέσει να χρησιμοποιηθεί. Παρακαλώ διαμορφώστε πρώτα έναν λογαριασμό μοντέλου.</translation>
+        <translation type="vanished">Το UOS AI απαιτεί τη διαμόρφωση ενός λογαριασμού μοντέλου AI πριν μπορέσει να χρησιμοποιηθεί. Παρακαλώ διαμορφώστε πρώτα έναν λογαριασμό μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1185"/>
         <source>Please configure the knowledge base.</source>
-        <translation>Παρακαλώ διαμορφώστε τη βάση γνώσης.</translation>
+        <translation type="vanished">Παρακαλώ διαμορφώστε τη βάση γνώσης.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1189"/>
         <source>Please install the model plug.</source>
-        <translation>Παρακαλώ εγκαταστήστε το πρόσθετο μοντέλου.</translation>
+        <translation type="vanished">Παρακαλώ εγκαταστήστε το πρόσθετο μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
-        <translation>Εξαγωγή Εικόνας Ως</translation>
+        <translation type="vanished">Εξαγωγή Εικόνας Ως</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
+        <source>Successfully Claimed</source>
+        <translation type="obsolete">Επιτυχής Διεκδίκηση</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="obsolete">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+    </message>
+    <message>
         <source>You can upload up to 3 files or image</source>
-        <translation>Μπορείτε να μεταφορτώσετε έως 3 αρχεία ή εικόνες</translation>
+        <translation type="vanished">Μπορείτε να μεταφορτώσετε έως 3 αρχεία ή εικόνες</translation>
     </message>
 </context>
 <context>
     <name>EAiFAQInit</name>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="17"/>
         <source>Translate the following text into English for me.</source>
-        <translation>Μεταφράστε το παρακάτω κείμενο στα Αγγλικά για μένα.</translation>
+        <translation type="vanished">Μεταφράστε το παρακάτω κείμενο στα Αγγλικά για μένα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="23"/>
         <source>Translate the following document into Chinese.</source>
-        <translation>Μεταφράστε το παρακάτω έγγραφο στα Κινέζικα.</translation>
+        <translation type="vanished">Μεταφράστε το παρακάτω έγγραφο στα Κινέζικα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="29"/>
         <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation>Τι σημαίνει η λέξη «Agent» στη βιομηχανία AI;</translation>
+        <translation type="vanished">Τι σημαίνει η λέξη «Agent» στη βιομηχανία AI;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="35"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation>Παρακαλώ μεταφράστε το παρακάτω περιεχόμενο στα Κινέζικα. Απαιτήσεις: Ακριβής στην έννοια, επίσημη και επαγγελματική γλώσσα.</translation>
+        <translation type="vanished">Παρακαλώ μεταφράστε το παρακάτω περιεχόμενο στα Κινέζικα. Απαιτήσεις: Ακριβής στην έννοια, επίσημη και επαγγελματική γλώσσα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="41"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation>Ποιες είναι μερικές καθομιλούμενες τρόποι να απευθυνθείτε σε έναν φίλο στα Αγγλικά;</translation>
+        <translation type="vanished">Ποιες είναι μερικές καθομιλούμενες τρόποι να απευθυνθείτε σε έναν φίλο στα Αγγλικά;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="47"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation>Μεταφράστε το παρακάτω κλασικό κινέζικο κείμενο σε σύγχρονα κινέζικα.</translation>
+        <translation type="vanished">Μεταφράστε το παρακάτω κλασικό κινέζικο κείμενο σε σύγχρονα κινέζικα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="60"/>
         <source>Summarize</source>
-        <translation>Σύνοψη</translation>
+        <translation type="vanished">Σύνοψη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="66"/>
         <source>Proofread</source>
-        <translation>Επιμέλεια κειμένου</translation>
+        <translation type="vanished">Επιμέλεια κειμένου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="72"/>
         <source>Explain</source>
-        <translation>Εξήγηση</translation>
+        <translation type="vanished">Εξήγηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="78"/>
         <source>Expand</source>
-        <translation>Επέκταση</translation>
+        <translation type="vanished">Επέκταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="84"/>
         <source>Continue</source>
-        <translation>Συνέχεια</translation>
+        <translation type="vanished">Συνέχεια</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="90"/>
         <source>Polish</source>
-        <translation>Εξομάλυνση</translation>
+        <translation type="vanished">Εξομάλυνση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="104"/>
         <source>Please help me write a work summary based on this document</source>
-        <translation>Παρακαλώ βοηθήστε με να γράψω μια σύνοψη εργασίας βασισμένη σε αυτό το έγγραφο</translation>
+        <translation type="vanished">Παρακαλώ βοηθήστε με να γράψω μια σύνοψη εργασίας βασισμένη σε αυτό το έγγραφο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="110"/>
         <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation>Χρειάζομαι μια σύνοψη εργασίας για το Έργο Α, παρακαλώ βοηθήστε με να οργανώσω τα βασικά σημεία</translation>
+        <translation type="vanished">Χρειάζομαι μια σύνοψη εργασίας για το Έργο Α, παρακαλώ βοηθήστε με να οργανώσω τα βασικά σημεία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="116"/>
         <source>Please generate a concise work summary based on my input text</source>
-        <translation>Παρακαλώ δημιουργήστε μια συνοπτική σύνοψη εργασίας βασισμένη στο κείμενό μου</translation>
+        <translation type="vanished">Παρακαλώ δημιουργήστε μια συνοπτική σύνοψη εργασίας βασισμένη στο κείμενό μου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="122"/>
         <source>Analyze this report and extract key points for the work summary</source>
-        <translation>Αναλύστε αυτή την αναφορά και εξάγετε τα βασικά σημεία για την σύνοψη εργασίας</translation>
+        <translation type="vanished">Αναλύστε αυτή την αναφορά και εξάγετε τα βασικά σημεία για την σύνοψη εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="128"/>
         <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation>Χρειάζομαι μια σύνοψη εργασίας που περιλαμβάνει τριμηνιαία δεδομένα, παρακαλώ ανατρέξτε στο συνημμένο</translation>
+        <translation type="vanished">Χρειάζομαι μια σύνοψη εργασίας που περιλαμβάνει τριμηνιαία δεδομένα, παρακαλώ ανατρέξτε στο συνημμένο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="134"/>
         <source>Help me write a work summary highlighting personal contributions</source>
-        <translation>Βοηθήστε με να γράψω μια σύνοψη εργασίας που τονίζει τις προσωπικές συνεισφορές</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια σύνοψη εργασίας που τονίζει τις προσωπικές συνεισφορές</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="140"/>
         <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation>Δημιουργήστε μια σύνοψη εργασίας από σημειώσεις συνεδρίου, εστιάζοντας στα σημεία δράσης</translation>
+        <translation type="vanished">Δημιουργήστε μια σύνοψη εργασίας από σημειώσεις συνεδρίου, εστιάζοντας στα σημεία δράσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="146"/>
         <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation>Χρειάζομαι μια δίγλωσση σύνοψη εργασίας σε Κινέζικα και Αγγλικά, παρακαλώ ανατρέξτε στα παρεχόμενα υλικά</translation>
+        <translation type="vanished">Χρειάζομαι μια δίγλωσση σύνοψη εργασίας σε Κινέζικα και Αγγλικά, παρακαλώ ανατρέξτε στα παρεχόμενα υλικά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="152"/>
         <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation>Βοηθήστε με να οργανώσω το περιεχόμενο εργασίας του περασμένου μήνα και να δημιουργήσω μια σύνοψη</translation>
+        <translation type="vanished">Βοηθήστε με να οργανώσω το περιεχόμενο εργασίας του περασμένου μήνα και να δημιουργήσω μια σύνοψη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="158"/>
         <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation>Γράψτε μια σύνοψη εργασίας βασισμένη σε αυτές τις λίστες εργασιών, τονίζοντας την κατάσταση ολοκλήρωσης</translation>
+        <translation type="vanished">Γράψτε μια σύνοψη εργασίας βασισμένη σε αυτές τις λίστες εργασιών, τονίζοντας την κατάσταση ολοκλήρωσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="165"/>
         <source>Check for grammatical errors in this passage</source>
-        <translation>Ελέγξτε για γραμματικά λάθη σε αυτό το απόσπασμα</translation>
+        <translation type="vanished">Ελέγξτε για γραμματικά λάθη σε αυτό το απόσπασμα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="171"/>
         <source>Help me find spelling mistakes in this article</source>
-        <translation>Βοηθήστε με να βρω ορθογραφικά λάθη σε αυτό το άρθρο</translation>
+        <translation type="vanished">Βοηθήστε με να βρω ορθογραφικά λάθη σε αυτό το άρθρο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="177"/>
         <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation>Διορθώστε τις ακατάλληλες επιλογές λέξεων σε αυτόν τον διάλογο</translation>
+        <translation type="vanished">Διορθώστε τις ακατάλληλες επιλογές λέξεων σε αυτόν τον διάλογο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="183"/>
         <source>Fix the punctuation issues in this document</source>
-        <translation>Διορθώστε τα ζητήματα στίξης σε αυτό το έγγραφο</translation>
+        <translation type="vanished">Διορθώστε τα ζητήματα στίξης σε αυτό το έγγραφο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="189"/>
         <source>Revise the unclear expressions in this text</source>
-        <translation>Αναθεωρήστε τις ασαφείς εκφράσεις σε αυτό το κείμενο</translation>
+        <translation type="vanished">Αναθεωρήστε τις ασαφείς εκφράσεις σε αυτό το κείμενο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="195"/>
         <source>Edit the language errors in this email</source>
-        <translation>Επεξεργαστείτε τα γλωσσικά λάθη σε αυτό το email</translation>
+        <translation type="vanished">Επεξεργαστείτε τα γλωσσικά λάθη σε αυτό το email</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="201"/>
         <source>Check if this text follows standard English conventions</source>
-        <translation>Ελέγξτε αν αυτό το κείμενο ακολουθεί τις τυπικές αγγλικές συμβάσεις</translation>
+        <translation type="vanished">Ελέγξτε αν αυτό το κείμενο ακολουθεί τις τυπικές αγγλικές συμβάσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="207"/>
         <source>Correct the logical flaws in this report</source>
-        <translation>Διορθώστε τα λογικά ελαττώματα σε αυτή την αναφορά</translation>
+        <translation type="vanished">Διορθώστε τα λογικά ελαττώματα σε αυτή την αναφορά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="213"/>
         <source>Identify language errors in this code comment</source>
-        <translation>Αναγνωρίστε γλωσσικά λάθη σε αυτό το σχόλιο κώδικα</translation>
+        <translation type="vanished">Αναγνωρίστε γλωσσικά λάθη σε αυτό το σχόλιο κώδικα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="219"/>
         <source>Fix the ambiguous statements in this contract</source>
-        <translation>Διορθώστε τις διφορούμενες δηλώσεις σε αυτό το συμβόλαιο</translation>
+        <translation type="vanished">Διορθώστε τις διφορούμενες δηλώσεις σε αυτό το συμβόλαιο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="226"/>
         <source>Explain the basic principles of quantum computing</source>
-        <translation>Εξηγήστε τις βασικές αρχές της κβαντικής πληροφορικής</translation>
+        <translation type="vanished">Εξηγήστε τις βασικές αρχές της κβαντικής πληροφορικής</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="232"/>
         <source>Describe photosynthesis in simple terms</source>
-        <translation>Περιγράψτε τη φωτοσύνθεση με απλούς όρους</translation>
+        <translation type="vanished">Περιγράψτε τη φωτοσύνθεση με απλούς όρους</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="238"/>
         <source>Detail how blockchain technology works</source>
-        <translation>Αναφέρετε λεπτομερώς πώς λειτουργεί η τεχνολογία blockchain</translation>
+        <translation type="vanished">Αναφέρετε λεπτομερώς πώς λειτουργεί η τεχνολογία blockchain</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="244"/>
         <source>Explain relativity from a professional perspective</source>
-        <translation>Εξηγήστε τη σχετικότητα από επαγγελματική άποψη</translation>
+        <translation type="vanished">Εξηγήστε τη σχετικότητα από επαγγελματική άποψη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="250"/>
         <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation>Χρησιμοποιήστε μεταφορές για να περιγράψετε τι είναι η τεχνητή νοημοσύνη</translation>
+        <translation type="vanished">Χρησιμοποιήστε μεταφορές για να περιγράψετε τι είναι η τεχνητή νοημοσύνη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="256"/>
         <source>Describe climate change in layman&apos;s terms</source>
-        <translation>Περιγράψτε την κλιματική αλλαγή με απλά λόγια</translation>
+        <translation type="vanished">Περιγράψτε την κλιματική αλλαγή με απλά λόγια</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="262"/>
         <source>Explain the structure of the solar system to elementary students</source>
-        <translation>Εξηγήστε τη δομή του ηλιακού συστήματος σε μαθητές δημοτικού</translation>
+        <translation type="vanished">Εξηγήστε τη δομή του ηλιακού συστήματος σε μαθητές δημοτικού</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="269"/>
         <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation>Επεκτείνετε αυτό το κείμενο σε 300 λέξεις, εστιάζοντας στις λεπτομέρειες της σκηνής και στα συναισθήματα των χαρακτήρων</translation>
+        <translation type="vanished">Επεκτείνετε αυτό το κείμενο σε 300 λέξεις, εστιάζοντας στις λεπτομέρειες της σκηνής και στα συναισθήματα των χαρακτήρων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="275"/>
         <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation>Ξαναγράψτε αυτήν την παράγραφο σε 500 λέξεις με ακαδημαϊκό στυλ, προσθέτοντας στοιχεία και παραπομπές</translation>
+        <translation type="vanished">Ξαναγράψτε αυτήν την παράγραφο σε 500 λέξεις με ακαδημαϊκό στυλ, προσθέτοντας στοιχεία και παραπομπές</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="281"/>
         <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation>Επεκτείνετε αυτό το απόσπασμα με περισσότερες μεταφορές και ρητορικές συσκευές για να το κάνετε πιο ζωντανό</translation>
+        <translation type="vanished">Επεκτείνετε αυτό το απόσπασμα με περισσότερες μεταφορές και ρητορικές συσκευές για να το κάνετε πιο ζωντανό</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="287"/>
         <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation>Παρακαλώ επεκτείνετε αυτό το σύντομο άρθρο σε 1000 λέξεις, συμπληρώνοντας με συγκεκριμένες περιπτώσεις και πρακτικά βήματα</translation>
+        <translation type="vanished">Παρακαλώ επεκτείνετε αυτό το σύντομο άρθρο σε 1000 λέξεις, συμπληρώνοντας με συγκεκριμένες περιπτώσεις και πρακτικά βήματα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="293"/>
         <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation>Επεκτείνετε αυτόν τον διάλογο προσθέτοντας ψυχολογικές δραστηριότητες των χαρακτήρων και λεπτομέρειες διαλόγου</translation>
+        <translation type="vanished">Επεκτείνετε αυτόν τον διάλογο προσθέτοντας ψυχολογικές δραστηριότητες των χαρακτήρων και λεπτομέρειες διαλόγου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="299"/>
         <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation>Ξαναγράψτε το περιεχόμενο αυτού του εγγράφου σε μορφή αναφοράς, συμπεριλαμβάνοντας περίληψη, κύριο μέρος και συμπέρασμα</translation>
+        <translation type="vanished">Ξαναγράψτε το περιεχόμενο αυτού του εγγράφου σε μορφή αναφοράς, συμπεριλαμβάνοντας περίληψη, κύριο μέρος και συμπέρασμα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="305"/>
         <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation>Επεκτείνετε αυτήν την τεχνική περιγραφή σε 800 λέξεις, προσθέτοντας περισσότερες τεχνικές παραμέτρους και εξηγήσεις διαγραμμάτων</translation>
+        <translation type="vanished">Επεκτείνετε αυτήν την τεχνική περιγραφή σε 800 λέξεις, προσθέτοντας περισσότερες τεχνικές παραμέτρους και εξηγήσεις διαγραμμάτων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="311"/>
         <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation>Ξαναγράψτε αυτό το email για να είναι πιο επίσημο και επαγγελματικό, συμπληρώνοντας σχετικές πληροφορίες υπόβαθρου</translation>
+        <translation type="vanished">Ξαναγράψτε αυτό το email για να είναι πιο επίσημο και επαγγελματικό, συμπληρώνοντας σχετικές πληροφορίες υπόβαθρου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="317"/>
         <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation>Επεκτείνετε αυτήν την ιστορία σε 1500 λέξεις, προσθέτοντας περισσότερες ανατροπές πλοκής και υπόβαθρα χαρακτήρων</translation>
+        <translation type="vanished">Επεκτείνετε αυτήν την ιστορία σε 1500 λέξεις, προσθέτοντας περισσότερες ανατροπές πλοκής και υπόβαθρα χαρακτήρων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="323"/>
         <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation>Παρακαλώ επεκτείνετε αυτήν την περίληψη, τονίζοντας τα κύρια επιτεύγματα και τα μελλοντικά σχέδια, χωρίς περιορισμό λέξεων</translation>
+        <translation type="vanished">Παρακαλώ επεκτείνετε αυτήν την περίληψη, τονίζοντας τα κύρια επιτεύγματα και τα μελλοντικά σχέδια, χωρίς περιορισμό λέξεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="330"/>
         <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation>Παρακαλώ συνεχίστε να γράφετε αυτό το σύντομο απόσπασμα για τη μελλοντική τεχνολογία, εστιάζοντας στο πώς η ΤΝ αλλάζει την καθημερινή ζωή, περίπου 300 λέξεις, με στυλ δημοφιλούς επιστήμης</translation>
+        <translation type="vanished">Παρακαλώ συνεχίστε να γράφετε αυτό το σύντομο απόσπασμα για τη μελλοντική τεχνολογία, εστιάζοντας στο πώς η ΤΝ αλλάζει την καθημερινή ζωή, περίπου 300 λέξεις, με στυλ δημοφιλούς επιστήμης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="336"/>
         <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation>Βοηθήστε με να επεκτείνω την τελευταία παράγραφο αυτού του επιχειρηματικού σχεδίου, τονίζοντας την αγοραία δυναμική και τα ανταγωνιστικά πλεονεκτήματα, χωρίς περιορισμό λέξεων, με επίσημο στυλ</translation>
+        <translation type="vanished">Βοηθήστε με να επεκτείνω την τελευταία παράγραφο αυτού του επιχειρηματικού σχεδίου, τονίζοντας την αγοραία δυναμική και τα ανταγωνιστικά πλεονεκτήματα, χωρίς περιορισμό λέξεων, με επίσημο στυλ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="342"/>
         <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation>Συνεχίστε το τέλος αυτού του παραμυθιού, ζεστό και συγκινητικό, ο πρωταγωνιστής πετυχαίνει το όνειρό του, περίπου 200 λέξεις</translation>
+        <translation type="vanished">Συνεχίστε το τέλος αυτού του παραμυθιού, ζεστό και συγκινητικό, ο πρωταγωνιστής πετυχαίνει το όνειρό του, περίπου 200 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="348"/>
         <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation>Παρακαλώ γράψτε το δεύτερο μισό αυτού του email, με φιλικό και επαγγελματικό ύφος, εστιάζοντας στις λεπτομέρειες συνεργασίας, μέσα σε 150 λέξεις</translation>
+        <translation type="vanished">Παρακαλώ γράψτε το δεύτερο μισό αυτού του email, με φιλικό και επαγγελματικό ύφος, εστιάζοντας στις λεπτομέρειες συνεργασίας, μέσα σε 150 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="354"/>
         <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation>Επεκτείνετε την επόμενη παράγραφο αυτού του ταξιδιωτικού κειμένου, περιγράφοντας το τοπίο της κοιλάδας, ζωντανό και ευφάνταστο, περίπου 200 λέξεις</translation>
+        <translation type="vanished">Επεκτείνετε την επόμενη παράγραφο αυτού του ταξιδιωτικού κειμένου, περιγράφοντας το τοπίο της κοιλάδας, ζωντανό και ευφάνταστο, περίπου 200 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="360"/>
         <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation>Συνεχίστε το επόμενο κεφάλαιο αυτού του μυθιστορήματος μυστηρίου, με μια ανατροπή πλοκής, διατηρώντας την αγωνία, χωρίς περιορισμό λέξεων</translation>
+        <translation type="vanished">Συνεχίστε το επόμενο κεφάλαιο αυτού του μυθιστορήματος μυστηρίου, με μια ανατροπή πλοκής, διατηρώντας την αγωνία, χωρίς περιορισμό λέξεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="366"/>
         <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation>Βοηθήστε με να γράψω το συμπέρασμα αυτής της ομιλίας, εμπνευσμένο και τονίζοντας την ομαδική εργασία, περίπου 100 λέξεις</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω το συμπέρασμα αυτής της ομιλίας, εμπνευσμένο και τονίζοντας την ομαδική εργασία, περίπου 100 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="372"/>
         <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation>Επεκτείνετε την ενότητα περιγραφής απόδοσης αυτού του εγχειριδίου προϊόντος, λεπτομερή και ακριβής, περίπου 300 λέξεις</translation>
+        <translation type="vanished">Επεκτείνετε την ενότητα περιγραφής απόδοσης αυτού του εγχειριδίου προϊόντος, λεπτομερή και ακριβής, περίπου 300 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="378"/>
         <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation>Συνεχίστε την αρχή αυτής της ιστορίας αγάπης, τοποθετημένη στη βροχερή Παρίσι, με ρομαντικό στυλ, 150 λέξεις</translation>
+        <translation type="vanished">Συνεχίστε την αρχή αυτής της ιστορίας αγάπης, τοποθετημένη στη βροχερή Παρίσι, με ρομαντικό στυλ, 150 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="384"/>
         <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation>Παρακαλώ γράψτε την ενότητα συζήτησης αυτής της εργασίας, εστιάζοντας στους περιορισμούς του πειραματικού αποτελέσματος, με ακαδημαϊκό στυλ, χωρίς περιορισμό λέξεων</translation>
+        <translation type="vanished">Παρακαλώ γράψτε την ενότητα συζήτησης αυτής της εργασίας, εστιάζοντας στους περιορισμούς του πειραματικού αποτελέσματος, με ακαδημαϊκό στυλ, χωρίς περιορισμό λέξεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="391"/>
         <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation>Παρακαλώ βελτιώστε αυτό το κείμενο για να γίνει πιο επίσημο και επαγγελματικό για ένα επιχειρηματικό email</translation>
+        <translation type="vanished">Παρακαλώ βελτιώστε αυτό το κείμενο για να γίνει πιο επίσημο και επαγγελματικό για ένα επιχειρηματικό email</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="397"/>
         <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation>Ξαναγράψτε αυτό το απόσπασμα για να είναι πιο ζωντανό και ελκυστικό για αναρτήσεις στα μέσα κοινωνικής δικτύωσης</translation>
+        <translation type="vanished">Ξαναγράψτε αυτό το απόσπασμα για να είναι πιο ζωντανό και ελκυστικό για αναρτήσεις στα μέσα κοινωνικής δικτύωσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="403"/>
         <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation>Χρειάζομαι να βελτιώσω την περίληψη αυτής της ακαδημαϊκής εργασίας για να είναι πιο συνοπτική και σαφής μέσα σε 200 λέξεις</translation>
+        <translation type="vanished">Χρειάζομαι να βελτιώσω την περίληψη αυτής της ακαδημαϊκής εργασίας για να είναι πιο συνοπτική και σαφής μέσα σε 200 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="409"/>
         <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation>Βελτιώστε αυτόν τον διάλογο για να είναι πιο φυσικός και ευχάριστος για προφορική επικοινωνία</translation>
+        <translation type="vanished">Βελτιώστε αυτόν τον διάλογο για να είναι πιο φυσικός και ευχάριστος για προφορική επικοινωνία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="415"/>
         <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation>Βελτιώστε αυτήν την περιγραφή προϊόντος για να τονίσετε τα premium και καινοτόμα χαρακτηριστικά του για πιθανούς πελάτες</translation>
+        <translation type="vanished">Βελτιώστε αυτήν την περιγραφή προϊόντος για να τονίσετε τα premium και καινοτόμα χαρακτηριστικά του για πιθανούς πελάτες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="421"/>
         <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation>Βοηθήστε με να βελτιώσω αυτήν την επιστολή συνοδείας για να γίνει πιο πειστική και εξατομικευμένη</translation>
+        <translation type="vanished">Βοηθήστε με να βελτιώσω αυτήν την επιστολή συνοδείας για να γίνει πιο πειστική και εξατομικευμένη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="427"/>
         <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation>Ξαναγράψτε αυτήν την ανάρτηση ιστολογίου για να είναι πιο χιουμοριστική και ελκυστική για νεαρούς αναγνώστες</translation>
+        <translation type="vanished">Ξαναγράψτε αυτήν την ανάρτηση ιστολογίου για να είναι πιο χιουμοριστική και ελκυστική για νεαρούς αναγνώστες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="433"/>
         <source>Refine the opening section of this report to make it more captivating</source>
-        <translation>Βελτιώστε την αρχική ενότητα αυτής της αναφοράς για να γίνει πιο συναρπαστική</translation>
+        <translation type="vanished">Βελτιώστε την αρχική ενότητα αυτής της αναφοράς για να γίνει πιο συναρπαστική</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="439"/>
         <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation>Χρειάζομαι να βελτιώσω αυτό το τεχνικό έγγραφο για να γίνει πιο προσιτό για μη ειδικούς</translation>
+        <translation type="vanished">Χρειάζομαι να βελτιώσω αυτό το τεχνικό έγγραφο για να γίνει πιο προσιτό για μη ειδικούς</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="445"/>
         <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation>Παρακαλώ βοηθήστε με να ξαναγράψω αυτή την επιστολή συγγνώμης για να ακούγεται πιο ειλικρινής και κατάλληλη</translation>
+        <translation type="vanished">Παρακαλώ βοηθήστε με να ξαναγράψω αυτή την επιστολή συγγνώμης για να ακούγεται πιο ειλικρινής και κατάλληλη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="458"/>
         <source>Articles</source>
-        <translation>Άρθρα</translation>
+        <translation type="vanished">Άρθρα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="464"/>
         <source>Speeches</source>
-        <translation>Ομιλίες</translation>
+        <translation type="vanished">Ομιλίες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="470"/>
         <source>Outlines</source>
-        <translation>Περιλήψεις</translation>
+        <translation type="vanished">Περιλήψεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="476"/>
         <source>Notifications</source>
-        <translation>Ειδοποιήσεις</translation>
+        <translation type="vanished">Ειδοποιήσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="482"/>
         <source>Posts</source>
-        <translation>Δημοσιεύσεις</translation>
+        <translation type="vanished">Δημοσιεύσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="488"/>
         <source>Work Report</source>
-        <translation>Αναφορά Εργασίας</translation>
+        <translation type="vanished">Αναφορά Εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="494"/>
         <source>Research Report</source>
-        <translation>Αναφορά Έρευνας</translation>
+        <translation type="vanished">Αναφορά Έρευνας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="508"/>
         <source>Please summarize the key points of this document</source>
-        <translation>Παρακαλώ συνοψίστε τα βασικά σημεία αυτού του εγγράφου</translation>
+        <translation type="vanished">Παρακαλώ συνοψίστε τα βασικά σημεία αυτού του εγγράφου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="514"/>
         <source>List the main ideas of this file for me</source>
-        <translation>Καταγράψτε τις κύριες ιδέες αυτού του αρχείου για μένα</translation>
+        <translation type="vanished">Καταγράψτε τις κύριες ιδέες αυτού του αρχείου για μένα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="520"/>
         <source>Summarize the core idea of this passage</source>
-        <translation>Συνοψίστε την κύρια ιδέα αυτού του κειμένου</translation>
+        <translation type="vanished">Συνοψίστε την κύρια ιδέα αυτού του κειμένου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="526"/>
         <source>Use concise language to summarize this article</source>
-        <translation>Χρησιμοποιήστε συνοπτική γλώσσα για να συνοψίσετε αυτό το άρθρο</translation>
+        <translation type="vanished">Χρησιμοποιήστε συνοπτική γλώσσα για να συνοψίσετε αυτό το άρθρο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="532"/>
         <source>I need a summary of this report, no more than 200 words</source>
-        <translation>Χρειάζομαι μια σύνοψη αυτής της αναφοράς, όχι περισσότερες από 200 λέξεις</translation>
+        <translation type="vanished">Χρειάζομαι μια σύνοψη αυτής της αναφοράς, όχι περισσότερες από 200 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="538"/>
         <source>Extract the main data and conclusions from this document</source>
-        <translation>Εξάγετε τα κύρια δεδομένα και τα συμπεράσματα από αυτό το έγγραφο</translation>
+        <translation type="vanished">Εξάγετε τα κύρια δεδομένα και τα συμπεράσματα από αυτό το έγγραφο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="544"/>
         <source>Summarize the main sections and points of this lengthy content</source>
-        <translation>Συνοψίστε τα κύρια τμήματα και σημεία αυτού του εκτενούς περιεχομένου</translation>
+        <translation type="vanished">Συνοψίστε τα κύρια τμήματα και σημεία αυτού του εκτενούς περιεχομένου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="550"/>
         <source>Help me summarize the research methods and findings of this paper</source>
-        <translation>Βοηθήστε με να συνοψίσω τις μεθόδους έρευνας και τα ευρήματα αυτής της εργασίας</translation>
+        <translation type="vanished">Βοηθήστε με να συνοψίσω τις μεθόδους έρευνας και τα ευρήματα αυτής της εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="556"/>
         <source>Please summarize the key points of this article in a table format</source>
-        <translation>Παρακαλώ συνοψίστε τα βασικά σημεία αυτού του άρθρου σε μορφή πίνακα</translation>
+        <translation type="vanished">Παρακαλώ συνοψίστε τα βασικά σημεία αυτού του άρθρου σε μορφή πίνακα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="562"/>
         <source>Summarize the operational steps in this file using bullet points</source>
-        <translation>Συνοψίστε τα βήματα λειτουργίας σε αυτό το αρχείο χρησιμοποιώντας κουκκίδες</translation>
+        <translation type="vanished">Συνοψίστε τα βήματα λειτουργίας σε αυτό το αρχείο χρησιμοποιώντας κουκκίδες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="568"/>
         <source>Display the key clauses of this contract in bullet list format</source>
-        <translation>Εμφανίστε τις βασικές ρήτρες αυτού του συμβολαίου σε μορφή λίστας με κουκκίδες</translation>
+        <translation type="vanished">Εμφανίστε τις βασικές ρήτρες αυτού του συμβολαίου σε μορφή λίστας με κουκκίδες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="575"/>
         <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation>Δημιουργήστε μια περίληψη για μια αναφορά σχετικά με τις τάσεις της ΤΝ, που καλύπτει την τεχνολογία, την ηθική και τις εφαρμογές</translation>
+        <translation type="vanished">Δημιουργήστε μια περίληψη για μια αναφορά σχετικά με τις τάσεις της ΤΝ, που καλύπτει την τεχνολογία, την ηθική και τις εφαρμογές</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="581"/>
         <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation>Οργανώστε το ανεβασμένο χαρτί σε μια δομημένη περίληψη πλαισίου έρευνας</translation>
+        <translation type="vanished">Οργανώστε το ανεβασμένο χαρτί σε μια δομημένη περίληψη πλαισίου έρευνας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="587"/>
         <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation>Χρειάζομαι μια περίληψη επιχειρηματικού σχεδίου που περιλαμβάνει ανάλυση αγοράς, περιγραφή προϊόντος και οικονομικό σχεδιασμό</translation>
+        <translation type="vanished">Χρειάζομαι μια περίληψη επιχειρηματικού σχεδίου που περιλαμβάνει ανάλυση αγοράς, περιγραφή προϊόντος και οικονομικό σχεδιασμό</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="593"/>
         <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation>Μετατρέψτε αυτή την ομιλία σε μια περίληψη PowerPoint με κουκκίδες για κάθε ενότητα</translation>
+        <translation type="vanished">Μετατρέψτε αυτή την ομιλία σε μια περίληψη PowerPoint με κουκκίδες για κάθε ενότητα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="599"/>
         <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation>Γράψτε μια περίληψη βιβλίου που καλύπτει τα βασικά σημεία και τις προσωπικές μου σκέψεις</translation>
+        <translation type="vanished">Γράψτε μια περίληψη βιβλίου που καλύπτει τα βασικά σημεία και τις προσωπικές μου σκέψεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="605"/>
         <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation>Συνοψίστε το αρχείο σημειώσεων συνεδριάσεων σε μια περίληψη σχεδίου εκτέλεσης έργου</translation>
+        <translation type="vanished">Συνοψίστε το αρχείο σημειώσεων συνεδριάσεων σε μια περίληψη σχεδίου εκτέλεσης έργου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="611"/>
         <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation>Χρειάζομαι μια περίληψη κεφαλαίου διπλωματικής που περιλαμβάνει εισαγωγή, ανασκόπηση βιβλιογραφίας και μεθοδολογία</translation>
+        <translation type="vanished">Χρειάζομαι μια περίληψη κεφαλαίου διπλωματικής που περιλαμβάνει εισαγωγή, ανασκόπηση βιβλιογραφίας και μεθοδολογία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="617"/>
         <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation>Δημιουργήστε μια περίληψη εγγράφου απαιτήσεων προϊόντος (PRD) με περιγραφές χαρακτηριστικών και ροές χρηστών</translation>
+        <translation type="vanished">Δημιουργήστε μια περίληψη εγγράφου απαιτήσεων προϊόντος (PRD) με περιγραφές χαρακτηριστικών και ροές χρηστών</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="623"/>
         <source>Extract key data from this industry report to make a summary outline</source>
-        <translation>Εξάγετε βασικά δεδομένα από αυτή την αναφορά βιομηχανίας για να δημιουργήσετε μια περίληψη</translation>
+        <translation type="vanished">Εξάγετε βασικά δεδομένα από αυτή την αναφορά βιομηχανίας για να δημιουργήσετε μια περίληψη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="629"/>
         <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation>Γράψτε μια περίληψη σχεδιασμού εκδήλωσης που περιλαμβάνει χρονοδιάγραμμα, ρόλους ομάδας και προϋπολογισμό</translation>
+        <translation type="vanished">Γράψτε μια περίληψη σχεδιασμού εκδήλωσης που περιλαμβάνει χρονοδιάγραμμα, ρόλους ομάδας και προϋπολογισμό</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="636"/>
         <source>Generate a three-level outline from this document</source>
-        <translation>Δημιουργήστε μια τριεπίπεδη περιγραφή από αυτό το έγγραφο</translation>
+        <translation type="vanished">Δημιουργήστε μια τριεπίπεδη περιγραφή από αυτό το έγγραφο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="642"/>
         <source>Extract core framework from meeting notes</source>
-        <translation>Εξαγάγετε το βασικό πλαίσιο από τις σημειώσεις συνεδρίας</translation>
+        <translation type="vanished">Εξαγάγετε το βασικό πλαίσιο από τις σημειώσεις συνεδρίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="648"/>
         <source>Organize research report structure</source>
-        <translation>Οργανώστε τη δομή της έκθεσης έρευνας</translation>
+        <translation type="vanished">Οργανώστε τη δομή της έκθεσης έρευνας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="654"/>
         <source>Create product feature overview</source>
-        <translation>Δημιουργήστε μια επισκόπηση των χαρακτηριστικών του προϊόντος</translation>
+        <translation type="vanished">Δημιουργήστε μια επισκόπηση των χαρακτηριστικών του προϊόντος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="660"/>
         <source>Design training course syllabus</source>
-        <translation>Σχεδιάστε το πρόγραμμα του εκπαιδευτικού μαθήματος</translation>
+        <translation type="vanished">Σχεδιάστε το πρόγραμμα του εκπαιδευτικού μαθήματος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="666"/>
         <source>Analyze literature review framework</source>
-        <translation>Αναλύστε το πλαίσιο της βιβλιογραφικής ανασκόπησης</translation>
+        <translation type="vanished">Αναλύστε το πλαίσιο της βιβλιογραφικής ανασκόπησης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="672"/>
         <source>Generate business plan table of contents</source>
-        <translation>Δημιουργήστε τον πίνακα περιεχομένων του επιχειρηματικού σχεδίου</translation>
+        <translation type="vanished">Δημιουργήστε τον πίνακα περιεχομένων του επιχειρηματικού σχεδίου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="678"/>
         <source>Write event planning flow points</source>
-        <translation>Γράψτε τα σημεία ροής του σχεδιασμού εκδήλωσης</translation>
+        <translation type="vanished">Γράψτε τα σημεία ροής του σχεδιασμού εκδήλωσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="685"/>
         <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation>Βοηθήστε με να γράψω μια ειδοποίηση συνεδρίας για αύριο στις 3 μ.μ. στην Αίθουσα Συνεδριών Α σχετικά με την αναφορά προόδου του έργου</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια ειδοποίηση συνεδρίας για αύριο στις 3 μ.μ. στην Αίθουσα Συνεδριών Α σχετικά με την αναφορά προόδου του έργου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="691"/>
         <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation>Δημιουργήστε μια συνοπτική ειδοποίηση βασισμένη σε αυτό το έγγραφο που επισημαίνει την προθεσμία και τη μέθοδο υποβολής</translation>
+        <translation type="vanished">Δημιουργήστε μια συνοπτική ειδοποίηση βασισμένη σε αυτό το έγγραφο που επισημαίνει την προθεσμία και τη μέθοδο υποβολής</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="697"/>
         <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation>Συντάξτε μια ειδοποίηση αργίας για το Φεστιβάλ της Άνοιξης από τις 10 έως τις 17 Φεβρουαρίου με επαναφορά εργασίας στις 18 Φεβρουαρίου</translation>
+        <translation type="vanished">Συντάξτε μια ειδοποίηση αργίας για το Φεστιβάλ της Άνοιξης από τις 10 έως τις 17 Φεβρουαρίου με επαναφορά εργασίας στις 18 Φεβρουαρίου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="703"/>
         <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation>Χρειάζομαι μια ειδοποίηση δραστηριότητας για εκπαίδευση προσωπικού όλη την ημέρα την επόμενη Τετάρτη στο αμφιθέατρο της εταιρείας</translation>
+        <translation type="vanished">Χρειάζομαι μια ειδοποίηση δραστηριότητας για εκπαίδευση προσωπικού όλη την ημέρα την επόμενη Τετάρτη στο αμφιθέατρο της εταιρείας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="709"/>
         <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation>Μορφοποιήστε τα παρεχόμενα κειμενικά υλικά σε μια επίσημη ειδοποίηση με τυποποιημένη μορφοποίηση και επαγγελματικό ύφος</translation>
+        <translation type="vanished">Μορφοποιήστε τα παρεχόμενα κειμενικά υλικά σε μια επίσημη ειδοποίηση με τυποποιημένη μορφοποίηση και επαγγελματικό ύφος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="715"/>
         <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation>Γράψτε μια ειδοποίηση διακοπής ρεύματος για αυτό το Σάββατο από τις 9 π.μ. έως τις 5 μ.μ. που επηρεάζει ολόκληρο το κτίριο γραφείων</translation>
+        <translation type="vanished">Γράψτε μια ειδοποίηση διακοπής ρεύματος για αυτό το Σάββατο από τις 9 π.μ. έως τις 5 μ.μ. που επηρεάζει ολόκληρο το κτίριο γραφείων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="721"/>
         <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation>Δημιουργήστε μια ειδοποίηση αλλαγής συνεδρίας μετατοπίζοντας την αρχική ώρα σε Παρασκευή στις 10 π.μ. διατηρώντας τα υπόλοιπα στοιχεία ίδια</translation>
+        <translation type="vanished">Δημιουργήστε μια ειδοποίηση αλλαγής συνεδρίας μετατοπίζοντας την αρχική ώρα σε Παρασκευή στις 10 π.μ. διατηρώντας τα υπόλοιπα στοιχεία ίδια</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="727"/>
         <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation>Ετοιμάστε μια σύντομη ειδοποίηση βασισμένη στα συνημμένα πρακτικά συνεδρίας για απώντες συμμετέχοντες</translation>
+        <translation type="vanished">Ετοιμάστε μια σύντομη ειδοποίηση βασισμένη στα συνημμένα πρακτικά συνεδρίας για απώντες συμμετέχοντες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="733"/>
         <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation>Συντάξτε μια ειδοποίηση αναβάθμισης συστήματος προγραμματισμένη για απόψε από τα μεσάνυχτα έως τις 3 π.μ. με διακοπή λειτουργίας του συστήματος</translation>
+        <translation type="vanished">Συντάξτε μια ειδοποίηση αναβάθμισης συστήματος προγραμματισμένη για απόψε από τα μεσάνυχτα έως τις 3 π.μ. με διακοπή λειτουργίας του συστήματος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="739"/>
         <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation>Γράψτε μια συνοπτική ειδοποίηση διάταξης αργίας που καταγράφει το προσωπικό σε υπηρεσία και τις πληροφορίες επικοινωνίας</translation>
+        <translation type="vanished">Γράψτε μια συνοπτική ειδοποίηση διάταξης αργίας που καταγράφει το προσωπικό σε υπηρεσία και τις πληροφορίες επικοινωνίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="746"/>
         <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation>Βοηθήστε με να γράψω ένα δημόσιο άρθρο υγείας για τη υγιεινή διατροφή σε απλή γλώσσα για το γενικό κοινό</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω ένα δημόσιο άρθρο υγείας για τη υγιεινή διατροφή σε απλή γλώσσα για το γενικό κοινό</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="752"/>
         <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation>Δημιουργήστε μια διασκεδαστική και ελκυστική ανάρτηση τεχνολογικής τάσης βασισμένη σε αυτό το έγγραφο</translation>
+        <translation type="vanished">Δημιουργήστε μια διασκεδαστική και ελκυστική ανάρτηση τεχνολογικής τάσης βασισμένη σε αυτό το έγγραφο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="758"/>
         <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation>Συντάξτε μια ανάρτηση προώθησης αργίας που επισημαίνει τις εκπτώσεις και το πρόγραμμα εκδηλώσεων</translation>
+        <translation type="vanished">Συντάξτε μια ανάρτηση προώθησης αργίας που επισημαίνει τις εκπτώσεις και το πρόγραμμα εκδηλώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="764"/>
         <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation>Χρειάζομαι ένα άρθρο εκκίνησης προϊόντος που εστιάζει στα χαρακτηριστικά και τις κριτικές πελατών</translation>
+        <translation type="vanished">Χρειάζομαι ένα άρθρο εκκίνησης προϊόντος που εστιάζει στα χαρακτηριστικά και τις κριτικές πελατών</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="770"/>
         <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation>Μετατρέψτε αυτή τη μεταγραφή συνέντευξης σε μια ανεπίσημη ανάρτηση προφίλ προσωπικότητας</translation>
+        <translation type="vanished">Μετατρέψτε αυτή τη μεταγραφή συνέντευξης σε μια ανεπίσημη ανάρτηση προφίλ προσωπικότητας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="776"/>
         <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation>Γράψτε έναν ταξιδιωτικό οδηγό που προτείνει τρία δημοφιλή σημεία με πρακτικές συμβουλές</translation>
+        <translation type="vanished">Γράψτε έναν ταξιδιωτικό οδηγό που προτείνει τρία δημοφιλή σημεία με πρακτικές συμβουλές</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="782"/>
         <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation>Δημιουργήστε μια επετειακή ανάρτηση που ανασκοπεί την ιστορία της εταιρείας και ευχαριστεί τους πελάτες</translation>
+        <translation type="vanished">Δημιουργήστε μια επετειακή ανάρτηση που ανασκοπεί την ιστορία της εταιρείας και ευχαριστεί τους πελάτες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="788"/>
         <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation>Αναλύστε αυτή την έκθεση βιομηχανίας με οπτικοποιημένα δεδομένα για μια διορατική ανάρτηση</translation>
+        <translation type="vanished">Αναλύστε αυτή την έκθεση βιομηχανίας με οπτικοποιημένα δεδομένα για μια διορατική ανάρτηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="794"/>
         <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation>Συντάξτε μια ανάρτηση φιλανθρωπικής καμπάνιας που ενθαρρύνει τη συμμετοχή με σαφείς οδηγίες</translation>
+        <translation type="vanished">Συντάξτε μια ανάρτηση φιλανθρωπικής καμπάνιας που ενθαρρύνει τη συμμετοχή με σαφείς οδηγίες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="800"/>
         <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation>Γράψτε ένα άρθρο δεξιοτήτων καριέρας με πέντε πρακτικές συμβουλές και πραγματικά παραδείγματα</translation>
+        <translation type="vanished">Γράψτε ένα άρθρο δεξιοτήτων καριέρας με πέντε πρακτικές συμβουλές και πραγματικά παραδείγματα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="807"/>
         <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation>Βοηθήστε με να γράψω μια εβδομαδιαία σύνοψη εργασίας που εστιάζει στην πρόοδο του έργου και τη συνεργασία της ομάδας</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια εβδομαδιαία σύνοψη εργασίας που εστιάζει στην πρόοδο του έργου και τη συνεργασία της ομάδας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="813"/>
         <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation>Δημιουργήστε μια συνοπτική σύνοψη εργασίας βασισμένη στο αρχείο σημειώσεων συνεδρίας που ανέβασα</translation>
+        <translation type="vanished">Δημιουργήστε μια συνοπτική σύνοψη εργασίας βασισμένη στο αρχείο σημειώσεων συνεδρίας που ανέβασα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="819"/>
         <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation>Χρειάζομαι μια τριμηνιαία σύνοψη εργασίας που να περιλαμβάνει ανάλυση δεδομένων και προσωπική αντανάκλαση</translation>
+        <translation type="vanished">Χρειάζομαι μια τριμηνιαία σύνοψη εργασίας που να περιλαμβάνει ανάλυση δεδομένων και προσωπική αντανάκλαση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="825"/>
         <source>Create a work summary based on the following text [paste text]</source>
-        <translation>Δημιουργήστε μια σύνοψη εργασίας με βάση το ακόλουθο κείμενο [επικολλήστε κείμενο]</translation>
+        <translation type="vanished">Δημιουργήστε μια σύνοψη εργασίας με βάση το ακόλουθο κείμενο [επικολλήστε κείμενο]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="831"/>
         <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation>Γράψτε μια σύνοψη εργασίας που να αναδεικνύει τις επιτυχίες στους δείκτες KPI και τις προκλήσεις αυτού του μήνα</translation>
+        <translation type="vanished">Γράψτε μια σύνοψη εργασίας που να αναδεικνύει τις επιτυχίες στους δείκτες KPI και τις προκλήσεις αυτού του μήνα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="837"/>
         <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation>Βοηθήστε με να συνοψίσω την εργασία της περασμένης εβδομάδας κατηγοριοποιημένη ανά έργο</translation>
+        <translation type="vanished">Βοηθήστε με να συνοψίσω την εργασία της περασμένης εβδομάδας κατηγοριοποιημένη ανά έργο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="843"/>
         <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation>Δημιουργήστε μια σύνοψη εργασίας από το περιεχόμενο email με έμφαση σε εκκρεμότητες και ολοκληρωμένες εργασίες</translation>
+        <translation type="vanished">Δημιουργήστε μια σύνοψη εργασίας από το περιεχόμενο email με έμφαση σε εκκρεμότητες και ολοκληρωμένες εργασίες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="849"/>
         <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation>Χρειάζομαι μια ετήσια σύνοψη που να περιλαμβάνει τα κυριότερα σημεία της εργασίας και σχέδια βελτίωσης</translation>
+        <translation type="vanished">Χρειάζομαι μια ετήσια σύνοψη που να περιλαμβάνει τα κυριότερα σημεία της εργασίας και σχέδια βελτίωσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="855"/>
         <source>Generate a monthly work report from the data I uploaded</source>
-        <translation>Δημιουργήστε μια μηνιαία αναφορά εργασίας από τα δεδομένα που ανέβασα</translation>
+        <translation type="vanished">Δημιουργήστε μια μηνιαία αναφορά εργασίας από τα δεδομένα που ανέβασα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="861"/>
         <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation>Βοηθήστε με να οργανώσω διάσπαρτες σημειώσεις εργασίας σε μια δομημένη σύνοψη</translation>
+        <translation type="vanished">Βοηθήστε με να οργανώσω διάσπαρτες σημειώσεις εργασίας σε μια δομημένη σύνοψη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="868"/>
         <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation>Αναλύστε τα ανεβασμένα δεδομένα και δημιουργήστε μια αναφορά τάσεων αγοράς</translation>
+        <translation type="vanished">Αναλύστε τα ανεβασμένα δεδομένα και δημιουργήστε μια αναφορά τάσεων αγοράς</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="874"/>
         <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation>Εξάγετε βασικές πληροφορίες από το κείμενο και συντάξτε μια αναφορά ανάλυσης βιομηχανίας</translation>
+        <translation type="vanished">Εξάγετε βασικές πληροφορίες από το κείμενο και συντάξτε μια αναφορά ανάλυσης βιομηχανίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="880"/>
         <source>Combine the contents of the file to write a competitor research report</source>
-        <translation>Συνδυάστε τα περιεχόμενα του αρχείου για να γράψετε μια αναφορά έρευνας ανταγωνιστών</translation>
+        <translation type="vanished">Συνδυάστε τα περιεχόμενα του αρχείου για να γράψετε μια αναφορά έρευνας ανταγωνιστών</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="886"/>
         <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation>Δημιουργήστε μια σύνοψη έρευνας αναγκών χρηστών με βάση τις παρεχόμενες συνεντεύξεις</translation>
+        <translation type="vanished">Δημιουργήστε μια σύνοψη έρευνας αναγκών χρηστών με βάση τις παρεχόμενες συνεντεύξεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="892"/>
         <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation>Αναλύστε αυτά τα δεδομένα πωλήσεων και δημιουργήστε μια τριμηνιαία αναφορά απόδοσης αγοράς</translation>
+        <translation type="vanished">Αναλύστε αυτά τα δεδομένα πωλήσεων και δημιουργήστε μια τριμηνιαία αναφορά απόδοσης αγοράς</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="898"/>
         <source>Write a technical research report based on the given product description</source>
-        <translation>Γράψτε μια τεχνική ερευνητική αναφορά με βάση την περιγραφή του προϊόντος</translation>
+        <translation type="vanished">Γράψτε μια τεχνική ερευνητική αναφορά με βάση την περιγραφή του προϊόντος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="904"/>
         <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation>Οργανώστε αυτές τις κριτικές χρηστών και δημιουργήστε μια αναφορά προτάσεων βελτίωσης προϊόντος</translation>
+        <translation type="vanished">Οργανώστε αυτές τις κριτικές χρηστών και δημιουργήστε μια αναφορά προτάσεων βελτίωσης προϊόντος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="910"/>
         <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation>Παρακαλώ γράψτε μια αναφορά ανάλυσης ευκαιριών αγοράς με βάση το παρεχόμενο αρχείο</translation>
+        <translation type="vanished">Παρακαλώ γράψτε μια αναφορά ανάλυσης ευκαιριών αγοράς με βάση το παρεχόμενο αρχείο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="921"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Βοηθήστε με να γράψω μια έκθεση για το θέμα [%1] με [σαφή δομή και πλούσιο περιεχόμενο].</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια έκθεση για το θέμα [%1] με [σαφή δομή και πλούσιο περιεχόμενο].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="941"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Βοηθήστε με να γράψω ένα δημόσιο tweet για το θέμα [%1], που να έχει [σαφή δομή] και [χαλαρό] ύφος.</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω ένα δημόσιο tweet για το θέμα [%1], που να έχει [σαφή δομή] και [χαλαρό] ύφος.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="946"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Βοηθήστε με να γράψω μια σύνοψη της πρόσφατης εργασίας μου, που να περιλαμβάνει [%1] και [αποτελέσματα], με [επίσημο] ύφος.</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια σύνοψη της πρόσφατης εργασίας μου, που να περιλαμβάνει [%1] και [αποτελέσματα], με [επίσημο] ύφος.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="951"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Βοηθήστε με να γράψω μια ερευνητική αναφορά για [%1], που τουλάχιστον να περιλαμβάνει [περιγραφή κατάστασης, ανάλυση προβλήματος, αντιμετώπιση και προτάσεις, ερευνητικά συμπεράσματα].</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια ερευνητική αναφορά για [%1], που τουλάχιστον να περιλαμβάνει [περιγραφή κατάστασης, ανάλυση προβλήματος, αντιμετώπιση και προτάσεις, ερευνητικά συμπεράσματα].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
-        <translation>Τεχνητή Νοημοσύνη</translation>
+        <translation type="vanished">Τεχνητή Νοημοσύνη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="926"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Βοηθήστε με να γράψω μια ομιλία για το θέμα [%1] για [Ηγέτες Εταιρείας], που να έχει [σαφή δομή και ζωντανή γλώσσα].</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια ομιλία για το θέμα [%1] για [Ηγέτες Εταιρείας], που να έχει [σαφή δομή και ζωντανή γλώσσα].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="931"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Βοηθήστε με να γράψω μια περιγραφή για το θέμα [%1], που θα χρησιμοποιηθεί για [παραγωγή PPT].</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια περιγραφή για το θέμα [%1], που θα χρησιμοποιηθεί για [παραγωγή PPT].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="936"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Βοηθήστε με να γράψω μια ειδοποίηση για [%1], ο παραλήπτης είναι [Όλοι οι Υπάλληλοι] και ο αποστολέας είναι [Τμήμα Διοίκησης].</translation>
+        <translation type="vanished">Βοηθήστε με να γράψω μια ειδοποίηση για [%1], ο παραλήπτης είναι [Όλοι οι Υπάλληλοι] και ο αποστολέας είναι [Τμήμα Διοίκησης].</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="937"/>
         <source>National Day Holiday</source>
-        <translation>Εθνική Εορτή</translation>
+        <translation type="vanished">Εθνική Εορτή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="947"/>
         <source>work content</source>
-        <translation>περιεχόμενο εργασίας</translation>
+        <translation type="vanished">περιεχόμενο εργασίας</translation>
     </message>
 </context>
 <context>
     <name>EAiPrompt</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1439"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1615,7 +1281,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 ---question---
 %2
 </source>
-        <translation>---Ρόλος---
+        <translation type="vanished">---Ρόλος---
 
 Είστε ένας εξυπηρετικός βοηθός που απαντά σε ερωτήσεις σχετικά με τις παρεχόμενες γνώσεις υπόβαθρου.
 
@@ -1635,16 +1301,14 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 %2</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1450"/>
         <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
 :%1
 </source>
-        <translation>Η απάντηση εξόδου ξεκινά με &quot;Δεν βρέθηκαν σχετικές πληροφορίες στη βάση γνώσεών σας.&quot;---ερώτηση--
+        <translation type="vanished">Η απάντηση εξόδου ξεκινά με &quot;Δεν βρέθηκαν σχετικές πληροφορίες στη βάση γνώσεών σας.&quot;---ερώτηση--
 
 :%1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1455"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1656,7 +1320,7 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 
 ---question---
 %2</source>
-        <translation>---Ρόλος---
+        <translation type="vanished">---Ρόλος---
 
 Είστε ένας επαγγελματίας συγγραφέας με εμπειρία σε διάφορα στυλ και μορφές γραφής.
 
@@ -1697,7 +1361,6 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 Περιεχόμενο:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="104"/>
         <source>---Role---
 You are a professional writer with expertise in various writing styles and formats.
 
@@ -1720,7 +1383,7 @@ Based on the user&apos;s request, create high-quality content that meets their s
 Please provide the content in the following format:
 Title:
 Content:</source>
-        <translation>---Ρόλος---
+        <translation type="vanished">---Ρόλος---
 
 Είστε επαγγελματίας συγγραφέας με εμπειρία σε διάφορα στυλ και μορφές γραφής.
 
@@ -1745,7 +1408,6 @@ Content:</source>
 Περιεχόμενο:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="133"/>
         <source>---Role---
 You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
 
@@ -1765,7 +1427,7 @@ Process and improve the input text while maintaining its original meaning and st
 
 ---Output Format---
 Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation>---Ρόλος---
+        <translation type="vanished">---Ρόλος---
 
 Είστε ειδικός στην επεξεργασία κειμένου με βαθιά γνώση στη γλωσσική ανάλυση,
 τεχνικές γραφής και βελτιστοποίηση κειμένου.
@@ -1804,7 +1466,6 @@ Please provide the processed text directly without any additional characters or 
 χαρακτήρες ή μορφοποίηση.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="159"/>
         <source>---Role---
 You are a professional translator and language expert. Your task is to:
 1. Accurately translate text as requested
@@ -1831,7 +1492,7 @@ For language questions, provide clear, concise explanations.
 2. For partial translations: Provide only the specified portion&apos;s translation
 3. For explanations: Provide only the explanation in the same language as the question
 Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation>---Ρόλος---
+        <translation type="vanished">---Ρόλος---
 
 Είστε επαγγελματίας μεταφραστής και γλωσσικός ειδικός. Οι αρμοδιότητές σας είναι:
 1. Να μεταφράζετε κείμενα με ακρίβεια κατόπιν αιτήματος
@@ -1863,1073 +1524,857 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation>Ενημερώστε το UOS Screen Recorder στην έκδοση 6.6 ή νεότερη και επανεκκινήστε τον υπολογιστή σας για να ενεργοποιηθεί η λειτουργία Q&amp;A στιγμιοτύπων.</translation>
+        <translation type="vanished">Ενημερώστε το UOS Screen Recorder στην έκδοση 6.6 ή νεότερη και επανεκκινήστε τον υπολογιστή σας για να ενεργοποιηθεί η λειτουργία Q&amp;A στιγμιοτύπων.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
-        <translation>Διαμόρφωση Μοντέλου</translation>
+        <translation type="vanished">Διαμόρφωση Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
-        <translation>Μετάβαση στη διαμόρφωση</translation>
+        <translation type="vanished">Μετάβαση στη διαμόρφωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
-        <translation>Κανένας λογαριασμός</translation>
+        <translation type="vanished">Κανένας λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
-        <translation>Ερώτηση εισόδου</translation>
+        <translation type="vanished">Ερώτηση εισόδου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Το περιεχόμενο που δημιουργείται από την ΤΝ είναι μόνο για αναφορά, παρακαλώ δώστε προσοχή στην ακρίβεια των πληροφοριών.</translation>
+        <translation type="vanished">Το περιεχόμενο που δημιουργείται από την ΤΝ είναι μόνο για αναφορά, παρακαλώ δώστε προσοχή στην ακρίβεια των πληροφοριών.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
-        <translation>Καλώς ήρθατε στο UOS AI</translation>
+        <translation type="vanished">Καλώς ήρθατε στο UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation>Ακολουθούν μερικά πράγματα με τα οποία μπορεί να σας βοηθήσει το UOS AI</translation>
+        <translation type="vanished">Ακολουθούν μερικά πράγματα με τα οποία μπορεί να σας βοηθήσει το UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
-        <translation>Σταμάτα</translation>
+        <translation type="vanished">Σταμάτα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
-        <translation>Επαναδημιουργία</translation>
+        <translation type="vanished">Επαναδημιουργία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
-        <translation>Εκκαθάριση ιστορικού συνομιλίας</translation>
+        <translation type="vanished">Εκκαθάριση ιστορικού συνομιλίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
-        <translation>Παρακαλώ συνδέστε το μικρόφωνο και δοκιμάστε ξανά</translation>
+        <translation type="vanished">Παρακαλώ συνδέστε το μικρόφωνο και δοκιμάστε ξανά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
-        <translation>Το ιστορικό συνομιλιών εκκαθαρίστηκε</translation>
+        <translation type="vanished">Το ιστορικό συνομιλιών εκκαθαρίστηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
-        <translation>Κάντε κλικ για να ξεκινήσετε/σταματήσετε την εγγραφή</translation>
+        <translation type="vanished">Κάντε κλικ για να ξεκινήσετε/σταματήσετε την εγγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
-        <translation>Ακρόαση</translation>
+        <translation type="vanished">Ακρόαση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
-        <translation>Αδράνεια</translation>
+        <translation type="vanished">Αδράνεια</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
-        <translation>Δεν εντοπίστηκε μικρόφωνο</translation>
+        <translation type="vanished">Δεν εντοπίστηκε μικρόφωνο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
-        <translation>Αποτυχία σύνδεσης, κάντε κλικ για να δοκιμάσετε ξανά</translation>
+        <translation type="vanished">Αποτυχία σύνδεσης, κάντε κλικ για να δοκιμάσετε ξανά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation>Κάντε κλικ στην κινούμενη εικόνα ή Ctrl+Super+Space για ενεργοποίηση</translation>
+        <translation type="vanished">Κάντε κλικ στην κινούμενη εικόνα ή Ctrl+Super+Space για ενεργοποίηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation>Η φωνητική εισαγωγή είναι προσωρινά μη διαθέσιμη, παρακαλώ ελέγξτε το δίκτυο!</translation>
+        <translation type="vanished">Η φωνητική εισαγωγή είναι προσωρινά μη διαθέσιμη, παρακαλώ ελέγξτε το δίκτυο!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
-        <translation>Φωνητική συνομιλία</translation>
+        <translation type="vanished">Φωνητική συνομιλία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
-        <translation>Κάντε κλικ στην κινούμενη εικόνα ή πατήστε Enter για αποστολή</translation>
+        <translation type="vanished">Κάντε κλικ στην κινούμενη εικόνα ή πατήστε Enter για αποστολή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
-        <translation>Διακοπή εγγραφής μετά από %1 δευτερόλεπτα</translation>
+        <translation type="vanished">Διακοπή εγγραφής μετά από %1 δευτερόλεπτα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
-        <translation>Σκέψη</translation>
+        <translation type="vanished">Σκέψη</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
-        <translation>Κάντε κλικ στην κινούμενη εικόνα για διακοπή</translation>
+        <translation type="vanished">Κάντε κλικ στην κινούμενη εικόνα για διακοπή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
-        <translation>Απάντηση</translation>
+        <translation type="vanished">Απάντηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>Το δωρεάν όριο του λογαριασμού σας έχει εξαντληθεί, παρακαλώ διαμορφώστε τον λογαριασμό μοντέλου σας για να συνεχίσετε τη χρήση του.</translation>
+        <translation type="vanished">Το δωρεάν όριο του λογαριασμού σας έχει εξαντληθεί, παρακαλώ διαμορφώστε τον λογαριασμό μοντέλου σας για να συνεχίσετε τη χρήση του.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>Ο δωρεάν λογαριασμός σας έχει λήξει, παρακαλώ διαμορφώστε τον λογαριασμό μοντέλου σας για να συνεχίσετε τη χρήση του.</translation>
+        <translation type="vanished">Ο δωρεάν λογαριασμός σας έχει λήξει, παρακαλώ διαμορφώστε τον λογαριασμό μοντέλου σας για να συνεχίσετε τη χρήση του.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>Το UOS AI απαιτεί τη διαμόρφωση ενός λογαριασμού μοντέλου AI πριν μπορέσει να χρησιμοποιηθεί. Παρακαλώ διαμορφώστε πρώτα έναν λογαριασμό μοντέλου.</translation>
+        <translation type="vanished">Το UOS AI απαιτεί τη διαμόρφωση ενός λογαριασμού μοντέλου AI πριν μπορέσει να χρησιμοποιηθεί. Παρακαλώ διαμορφώστε πρώτα έναν λογαριασμό μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
-        <translation>Ενεργοποίηση</translation>
+        <translation type="vanished">Ενεργοποίηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
-        <translation>Φωνητική εισαγωγή</translation>
+        <translation type="vanished">Φωνητική εισαγωγή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation>Η φωνητική μετάδοση είναι προσωρινά μη διαθέσιμη, παρακαλώ ελέγξτε το δίκτυο!</translation>
+        <translation type="vanished">Η φωνητική μετάδοση είναι προσωρινά μη διαθέσιμη, παρακαλώ ελέγξτε το δίκτυο!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
-        <translation>Απενεργοποίηση φωνητικής συνομιλίας</translation>
+        <translation type="vanished">Απενεργοποίηση φωνητικής συνομιλίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation>Η εικόνα έχει δημιουργηθεί, παρακαλώ μεταβείτε στη διεπαφή συνομιλίας για να τη δείτε.</translation>
+        <translation type="vanished">Η εικόνα έχει δημιουργηθεί, παρακαλώ μεταβείτε στη διεπαφή συνομιλίας για να τη δείτε.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
-        <translation>Δεν υπάρχει λογαριασμός, παρακαλώ διαμορφώστε έναν λογαριασμό</translation>
+        <translation type="vanished">Δεν υπάρχει λογαριασμός, παρακαλώ διαμορφώστε έναν λογαριασμό</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
-        <translation>Απαντήστε σε κάθε ερώτηση έως 5 φορές</translation>
+        <translation type="vanished">Απαντήστε σε κάθε ερώτηση έως 5 φορές</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
-        <translation>Αντιγράφηκε με επιτυχία</translation>
+        <translation type="vanished">Αντιγράφηκε με επιτυχία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
-        <translation>Δεν εντοπίστηκε συσκευή εξόδου ήχου</translation>
+        <translation type="vanished">Δεν εντοπίστηκε συσκευή εξόδου ήχου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
-        <translation>Δεν εντοπίστηκε συσκευή εξόδου ήχου, παρακαλώ ελέγξτε και δοκιμάστε ξανά!</translation>
+        <translation type="vanished">Δεν εντοπίστηκε συσκευή εξόδου ήχου, παρακαλώ ελέγξτε και δοκιμάστε ξανά!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation type="vanished">Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
-        <translation>Σχετικά</translation>
+        <translation type="vanished">Σχετικά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
-        <translation>Λειτουργία</translation>
+        <translation type="vanished">Λειτουργία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
-        <translation>Λειτουργία Παραθύρου</translation>
+        <translation type="vanished">Λειτουργία Παραθύρου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
-        <translation>Λειτουργία Πλευρικής Μπάρας</translation>
+        <translation type="vanished">Λειτουργία Πλευρικής Μπάρας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
-        <translation>Λίστα Βοηθών</translation>
+        <translation type="vanished">Λίστα Βοηθών</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
-        <translation>Λίστα Πρακτόρων</translation>
+        <translation type="vanished">Λίστα Πρακτόρων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
-        <translation>Κατάστημα Πρακτόρων</translation>
+        <translation type="vanished">Κατάστημα Πρακτόρων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
-        <translation>Βοηθός Συστήματος UOS</translation>
+        <translation type="vanished">Βοηθός Συστήματος UOS</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
-        <translation>Βοηθός Συστήματος Deepin</translation>
+        <translation type="vanished">Βοηθός Συστήματος Deepin</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Προσωπικός Βοηθός Γνώσεων</translation>
+        <translation type="vanished">Προσωπικός Βοηθός Γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
-        <translation>Παρακαλώ διαμορφώστε τη βάση γνώσεων</translation>
+        <translation type="vanished">Παρακαλώ διαμορφώστε τη βάση γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation>Πριν χρησιμοποιήσετε τον [Προσωπικό Βοηθό Γνώσεων], είναι απαραίτητο να διαμορφώσετε τη βάση γνώσεων. Μετά τη διαμόρφωση της βάσης γνώσεων, η AI θα απαντά σε ερωτήσεις ή θα δημιουργεί περιεχόμενο με βάση το περιεχόμενο που έχετε διαμορφώσει στη βάση γνώσεων.</translation>
+        <translation type="vanished">Πριν χρησιμοποιήσετε τον [Προσωπικό Βοηθό Γνώσεων], είναι απαραίτητο να διαμορφώσετε τη βάση γνώσεων. Μετά τη διαμόρφωση της βάσης γνώσεων, η AI θα απαντά σε ερωτήσεις ή θα δημιουργεί περιεχόμενο με βάση το περιεχόμενο που έχετε διαμορφώσει στη βάση γνώσεων.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
-        <translation>Παρακαλώ διαμορφώστε το μεγάλο μοντέλο</translation>
+        <translation type="vanished">Παρακαλώ διαμορφώστε το μεγάλο μοντέλο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation>Ο προσωπικός βοηθός γνώσεων μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση ενός μεγάλου μοντέλου.</translation>
+        <translation type="vanished">Ο προσωπικός βοηθός γνώσεων μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση ενός μεγάλου μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
-        <translation>Για διαμόρφωση</translation>
+        <translation type="vanished">Για διαμόρφωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
-        <translation>Για εγκατάσταση</translation>
+        <translation type="vanished">Για εγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
-        <translation>Παρακαλώ εγκαταστήστε τα [EmbeddingPlugins]</translation>
+        <translation type="vanished">Παρακαλώ εγκαταστήστε τα [EmbeddingPlugins]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation>Αυτός ο βοηθός απαιτεί την εγκατάσταση των EmbeddingPlugins για να λειτουργήσει</translation>
+        <translation type="vanished">Αυτός ο βοηθός απαιτεί την εγκατάσταση των EmbeddingPlugins για να λειτουργήσει</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
-        <translation>Σύρετε αρχεία εδώ για να τα προσθέσετε.</translation>
+        <translation type="vanished">Σύρετε αρχεία εδώ για να τα προσθέσετε.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation>Μπορείτε να προσθέσετε μόνο 3 αρχεία· υποστηριζόμενοι τύποι αρχείων: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, αρχεία κώδικα κ.ά.</translation>
+        <translation type="vanished">Μπορείτε να προσθέσετε μόνο 3 αρχεία· υποστηριζόμενοι τύποι αρχείων: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, αρχεία κώδικα κ.ά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
-        <translation>Διακομιστής MCP</translation>
+        <translation type="vanished">Διακομιστής MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
-        <translation>Προσθήκη Διακομιστή MCP</translation>
+        <translation type="vanished">Προσθήκη Διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
-        <translation>Προσθήκη Διακομιστή</translation>
+        <translation type="vanished">Προσθήκη Διακομιστή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
-        <translation>Η προσθήκη απέτυχε! Αιτία σφάλματος:</translation>
+        <translation type="vanished">Η προσθήκη απέτυχε! Αιτία σφάλματος:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation>Λείπει το περιβάλλον MCP. Παρακαλώ εγκαταστήστε τον 【UOS AI Agent】</translation>
+        <translation type="vanished">Λείπει το περιβάλλον MCP. Παρακαλώ εγκαταστήστε τον 【UOS AI Agent】</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
-        <translation>Κλήση</translation>
+        <translation type="vanished">Κλήση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
-        <translation>Ολοκληρώθηκε</translation>
+        <translation type="vanished">Ολοκληρώθηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
-        <translation>Η κλήση απέτυχε</translation>
+        <translation type="vanished">Η κλήση απέτυχε</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
-        <translation>Ακυρώθηκε</translation>
+        <translation type="vanished">Ακυρώθηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
-        <translation>παράμετροι</translation>
+        <translation type="vanished">παράμετροι</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
-        <translation>αποτέλεσμα</translation>
+        <translation type="vanished">αποτέλεσμα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>Για τον διακομιστή MCP, εναλλάξτε στο επίσημα κυκλοφορημένο μοντέλο «DeepSeek-Trial Account»</translation>
+        <translation type="vanished">Για τον διακομιστή MCP, εναλλάξτε στο επίσημα κυκλοφορημένο μοντέλο «DeepSeek-Trial Account»</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation>Εισάγετε εντολή διακομιστή MCP, π.χ. «Άλλαξε το σύστημα σε σκοτεινή λειτουργία για μένα»</translation>
+        <translation type="vanished">Εισάγετε εντολή διακομιστή MCP, π.χ. «Άλλαξε το σύστημα σε σκοτεινή λειτουργία για μένα»</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
-        <translation>Ο διακομιστής πράκτορα δεν είναι διαθέσιμος</translation>
+        <translation type="vanished">Ο διακομιστής πράκτορα δεν είναι διαθέσιμος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
-        <translation>Εξαίρεση διακομιστή πράκτορα</translation>
+        <translation type="vanished">Εξαίρεση διακομιστή πράκτορα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
-        <translation>Ο διακομιστής MCP δεν είναι διαθέσιμος</translation>
+        <translation type="vanished">Ο διακομιστής MCP δεν είναι διαθέσιμος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
-        <translation type="unfinished">Ακύρωση</translation>
+        <translation type="obsolete">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
-        <translation type="unfinished">Επιβεβαίωση</translation>
+        <translation type="obsolete">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation>Αυτοματοποιήστε εργασίες πολλών αρχείων και εφαρμογών με μία εντολή μέσω της υπηρεσίας MCP. Δοκιμάστε το τώρα!</translation>
+        <translation type="vanished">Αυτοματοποιήστε εργασίες πολλών αρχείων και εφαρμογών με μία εντολή μέσω της υπηρεσίας MCP. Δοκιμάστε το τώρα!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
-        <translation>Χρήση αργότερα</translation>
+        <translation type="vanished">Χρήση αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
-        <translation>Εγκατάσταση τώρα</translation>
+        <translation type="vanished">Εγκατάσταση τώρα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
-        <translation>Ενεργοποίηση διακομιστή MCP</translation>
+        <translation type="vanished">Ενεργοποίηση διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation>Αφού εγκαταστήσετε το περιβάλλον MCP «UOS AI Agent», κάντε κλικ στο </translation>
+        <translation type="vanished">Αφού εγκαταστήσετε το περιβάλλον MCP «UOS AI Agent», κάντε κλικ στο </translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation> και επιλέξτε «uos-mcp» από τη λίστα διακομιστών MCP.</translation>
+        <translation type="vanished"> και επιλέξτε «uos-mcp» από τη λίστα διακομιστών MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation>Δοκιμάστε να πείτε: «Άλλαξε το σύστημα σε σκοτεινή λειτουργία».</translation>
+        <translation type="vanished">Δοκιμάστε να πείτε: «Άλλαξε το σύστημα σε σκοτεινή λειτουργία».</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
-        <translation>Δοκιμάστε το τώρα</translation>
+        <translation type="vanished">Δοκιμάστε το τώρα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
-        <translation>Προσθήκη διακομιστή Mcp[Σελίδα οδηγιών]</translation>
+        <translation type="vanished">Προσθήκη διακομιστή Mcp[Σελίδα οδηγιών]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation>Για νέους χρήστες: Εγκαταστήστε το περιβάλλον MCP «UOS AI Agent» μέσω του App Store.</translation>
+        <translation type="vanished">Για νέους χρήστες: Εγκαταστήστε το περιβάλλον MCP «UOS AI Agent» μέσω του App Store.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation>Η μορφή του αρχείου JSON είναι εσφαλμένη, παρακαλώ ελέγξτε και υποβάλετε ξανά</translation>
+        <translation type="vanished">Η μορφή του αρχείου JSON είναι εσφαλμένη, παρακαλώ ελέγξτε και υποβάλετε ξανά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
-        <translation>Εγκατάσταση τώρα &gt;</translation>
+        <translation type="vanished">Εγκατάσταση τώρα &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
-        <translation>Γενική συνομιλία</translation>
+        <translation type="vanished">Γενική συνομιλία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
-        <translation>Ιδιωτική συνομιλία</translation>
+        <translation type="vanished">Ιδιωτική συνομιλία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
-        <translation>Τώρα σε ιδιωτική συνομιλία</translation>
+        <translation type="vanished">Τώρα σε ιδιωτική συνομιλία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation>Τα μηνύματα ιδιωτικής συνομιλίας δεν αποθηκεύονται στο ιστορικό και θα διαγραφούν οριστικά όταν φύγετε από τη συνομιλία.</translation>
+        <translation type="vanished">Τα μηνύματα ιδιωτικής συνομιλίας δεν αποθηκεύονται στο ιστορικό και θα διαγραφούν οριστικά όταν φύγετε από τη συνομιλία.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation>Στιγμιότυπο οθόνης &amp; Ερωτήσεις Συντόμευση (Ctrl+Alt+Q), υποστηρίζονται έως 3 εικόνες.</translation>
+        <translation type="vanished">Στιγμιότυπο οθόνης &amp; Ερωτήσεις Συντόμευση (Ctrl+Alt+Q), υποστηρίζονται έως 3 εικόνες.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
-        <translation>Δεν είναι δυνατή η χρήση κατά την εγγραφή οθόνης</translation>
+        <translation type="vanished">Δεν είναι δυνατή η χρήση κατά την εγγραφή οθόνης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
-        <translation>Μπορείτε να ανεβάσετε έως 3 αρχεία ή εικόνες</translation>
+        <translation type="vanished">Μπορείτε να ανεβάσετε έως 3 αρχεία ή εικόνες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
-        <translation>Μεταφόρτωση αρχείων</translation>
+        <translation type="vanished">Μεταφόρτωση αρχείων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
-        <translation>Διαγράψτε το μη φυσιολογικό αρχείο και στείλτε το ξανά</translation>
+        <translation type="vanished">Διαγράψτε το μη φυσιολογικό αρχείο και στείλτε το ξανά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
-        <translation>Προσθήκη Ιδιωτικής Συνομιλίας</translation>
+        <translation type="vanished">Προσθήκη Ιδιωτικής Συνομιλίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
-        <translation>Προσθήκη [Στιγμιότυπου &amp; Ερωταπαντήσεων]</translation>
+        <translation type="vanished">Προσθήκη [Στιγμιότυπου &amp; Ερωταπαντήσεων]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation>Κάντε ένα στιγμιότυπο και στείλτε το περιεχόμενο στο UOS AI. Μπορείτε επίσης να ανεβάσετε μια εικόνα απευθείας.</translation>
+        <translation type="vanished">Κάντε ένα στιγμιότυπο και στείλτε το περιεχόμενο στο UOS AI. Μπορείτε επίσης να ανεβάσετε μια εικόνα απευθείας.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
-        <translation type="unfinished">Εντάξει</translation>
+        <translation type="obsolete">Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
-        <translation>Επόμενο</translation>
+        <translation type="vanished">Επόμενο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation>Προσθήκη [Λειτουργίας Ιδιωτικής Συνομιλίας] – Οι συνομιλίες δεν θα αποθηκεύονται.</translation>
+        <translation type="vanished">Προσθήκη [Λειτουργίας Ιδιωτικής Συνομιλίας] – Οι συνομιλίες δεν θα αποθηκεύονται.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
-        <translation>Δεν εξήχθη κείμενο</translation>
+        <translation type="vanished">Δεν εξήχθη κείμενο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
-        <translation>Το μέγεθος της εικόνας υπερβαίνει τα 15 MB</translation>
+        <translation type="vanished">Το μέγεθος της εικόνας υπερβαίνει τα 15 MB</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation>Μετά το άνοιγμα της βάσης γνώσης, οι απαντήσεις θα βασίζονται στο περιεχόμενό της. Η ταχύτητα απόκρισης εξαρτάται από την απόδοση του μηχανήματος και το μέγεθος της βάσης γνώσης.</translation>
+        <translation type="vanished">Μετά το άνοιγμα της βάσης γνώσης, οι απαντήσεις θα βασίζονται στο περιεχόμενό της. Η ταχύτητα απόκρισης εξαρτάται από την απόδοση του μηχανήματος και το μέγεθος της βάσης γνώσης.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation>Η βάση γνώσης δεν είναι διαθέσιμη όταν επιλεγεί οποιαδήποτε εντολή ή MCP.</translation>
+        <translation type="vanished">Η βάση γνώσης δεν είναι διαθέσιμη όταν επιλεγεί οποιαδήποτε εντολή ή MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
-        <translation>Το MCP είναι απενεργοποιημένο ενώ η βάση γνώσης είναι ενεργή.</translation>
+        <translation type="vanished">Το MCP είναι απενεργοποιημένο ενώ η βάση γνώσης είναι ενεργή.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
-        <translation>Οι εντολές είναι απενεργοποιημένες ενώ η βάση γνώσης είναι ενεργή.</translation>
+        <translation type="vanished">Οι εντολές είναι απενεργοποιημένες ενώ η βάση γνώσης είναι ενεργή.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
-        <translation type="unfinished">Αντιγραφή</translation>
+        <translation type="obsolete">Αντιγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
-        <translation>Επανεπεξεργασία</translation>
+        <translation type="vanished">Επανεπεξεργασία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
-        <translation>Η αντιγραφή ολοκληρώθηκε.</translation>
+        <translation type="vanished">Η αντιγραφή ολοκληρώθηκε.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
-        <translation>Η αντιγραφή απέτυχε. Προσπαθήστε ξανά.</translation>
+        <translation type="vanished">Η αντιγραφή απέτυχε. Προσπαθήστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
-        <translation>Αναζήτηση</translation>
+        <translation type="vanished">Αναζήτηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
-        <translation>Λήφθηκαν %1 έγγραφα αναφοράς (%2 δευτερόλεπτα)</translation>
+        <translation type="vanished">Λήφθηκαν %1 έγγραφα αναφοράς (%2 δευτερόλεπτα)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
-        <translation>Καθαρισμός Ιστορικού</translation>
+        <translation type="vanished">Καθαρισμός Ιστορικού</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
-        <translation>Διαγραφή όλων των εγγραφών;</translation>
+        <translation type="vanished">Διαγραφή όλων των εγγραφών;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
-        <translation>Μόλις διαγραφεί, το περιεχόμενο δεν μπορεί να ανακτηθεί!</translation>
+        <translation type="vanished">Μόλις διαγραφεί, το περιεχόμενο δεν μπορεί να ανακτηθεί!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
-        <translation>Σύσταση επίσημων μοντέλων</translation>
+        <translation type="vanished">Σύσταση επίσημων μοντέλων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
-        <translation>Απενεργοποίηση MCP</translation>
+        <translation type="vanished">Απενεργοποίηση MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>Συνιστάται η χρήση του επίσημου μοντέλου «DeepSeek-Trial Account»</translation>
+        <translation type="vanished">Συνιστάται η χρήση του επίσημου μοντέλου «DeepSeek-Trial Account»</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
-        <translation>Γρήγορο Άνοιγμα</translation>
+        <translation type="vanished">Γρήγορο Άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation>Αναβάθμιση διακομιστή MCP σε Αυτόματη Λειτουργία</translation>
+        <translation type="vanished">Αναβάθμιση διακομιστή MCP σε Αυτόματη Λειτουργία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation>Οι διακομιστές MCP έχουν αναβαθμιστεί σε αυτόματη λειτουργία, επιτρέποντάς σας να έχετε πρόσβαση σε όλους τους διακομιστές MCP με ένα κλικ</translation>
+        <translation type="vanished">Οι διακομιστές MCP έχουν αναβαθμιστεί σε αυτόματη λειτουργία, επιτρέποντάς σας να έχετε πρόσβαση σε όλους τους διακομιστές MCP με ένα κλικ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation>. Αυτό σας επιτρέπει να αυτοματοποιείτε εργασίες όπως η ρύθμιση συστήματος και η επεξεργασία αρχείων με ένα μόνο κλικ.</translation>
+        <translation type="vanished">. Αυτό σας επιτρέπει να αυτοματοποιείτε εργασίες όπως η ρύθμιση συστήματος και η επεξεργασία αρχείων με ένα μόνο κλικ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
-        <translation>Η προσθήκη διακομιστή MCP μεταφέρθηκε στις Ρυθμίσεις.</translation>
+        <translation type="vanished">Η προσθήκη διακομιστή MCP μεταφέρθηκε στις Ρυθμίσεις.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation>Για να προσθέσετε περισσότερους διακομιστές MCP, μεταβείτε στις Ρυθμίσεις &gt; Διακομιστής MCP.</translation>
+        <translation type="vanished">Για να προσθέσετε περισσότερους διακομιστές MCP, μεταβείτε στις Ρυθμίσεις &gt; Διακομιστής MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
-        <translation type="unfinished">Το κατάλαβα</translation>
+        <translation type="obsolete">Το κατάλαβα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
-        <translation>Δωρεάν Πιστώσεις Μοντέλου</translation>
+        <translation type="vanished">Δωρεάν Πιστώσεις Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation>Το τρέχον σύστημα προσφέρει το δοκιμαστικό λογαριασμό DeepSeek, το οποίο ανανεώνει αυτόματα τη δωρεάν ποσόστωση στην αρχή κάθε μήνα, επιτρέποντάς σας να το χρησιμοποιείτε χωρίς ανησυχίες.</translation>
+        <translation type="vanished">Το τρέχον σύστημα προσφέρει το δοκιμαστικό λογαριασμό DeepSeek, το οποίο ανανεώνει αυτόματα τη δωρεάν ποσόστωση στην αρχή κάθε μήνα, επιτρέποντάς σας να το χρησιμοποιείτε χωρίς ανησυχίες.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
-        <translation>Διεκδίκηση Πιστώσεων</translation>
+        <translation type="vanished">Διεκδίκηση Πιστώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Λήψη δωρεάν λογαριασμού</translation>
+        <translation type="obsolete">Λήψη δωρεάν λογαριασμού</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
-        <translation>Διεκδίκηση Δωρεάν Πιστώσεων</translation>
+        <translation type="vanished">Διεκδίκηση Δωρεάν Πιστώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
-        <translation>Επιτυχής Διεκδίκηση</translation>
+        <translation type="vanished">Επιτυχής Διεκδίκηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+        <translation type="vanished">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
-        <translation>Ενεργοποίηση διακομιστή MCP&amp;</translation>
+        <translation type="vanished">Ενεργοποίηση διακομιστή MCP&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
-        <translation>Απενεργοποίηση διακομιστή MCP</translation>
+        <translation type="vanished">Απενεργοποίηση διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
-        <translation>Διαμόρφωση διακομιστή MCP</translation>
+        <translation type="vanished">Διαμόρφωση διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
-        <source>Enable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
-        <source>Disable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
-        <source>Configure MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
-        <translation>Μπορείτε να προσθέσετε το πολύ ένα αρχείο.</translation>
+        <translation type="vanished">Μπορείτε να προσθέσετε το πολύ ένα αρχείο.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
-        <translation>Η μορφή του αρχείου δεν υποστηρίζεται.</translation>
+        <translation type="vanished">Η μορφή του αρχείου δεν υποστηρίζεται.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
-        <translation>Συνοψίστε το βασικό περιεχόμενο του αρχείου.</translation>
+        <translation type="vanished">Συνοψίστε το βασικό περιεχόμενο του αρχείου.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
-        <translation>Ανάλυση...</translation>
+        <translation type="vanished">Ανάλυση...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
-        <translation>Σφάλμα αρχείου</translation>
+        <translation type="vanished">Σφάλμα αρχείου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
-        <translation>Το αρχείο έχει διαγραφεί.</translation>
+        <translation type="vanished">Το αρχείο έχει διαγραφεί.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
-        <translation>Το μέγεθος του αρχείου υπερβαίνει το όριο των 100MB.</translation>
+        <translation type="vanished">Το μέγεθος του αρχείου υπερβαίνει το όριο των 100MB.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
-        <translation>Ανεβάστε ένα έγγραφο</translation>
+        <translation type="vanished">Ανεβάστε ένα έγγραφο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
-        <translation>Αρχείο διαγράφηκε</translation>
+        <translation type="vanished">Αρχείο διαγράφηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
-        <translation>Δεν αναλύθηκε κείμενο</translation>
+        <translation type="vanished">Δεν αναλύθηκε κείμενο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
-        <translation>Αναφορά</translation>
+        <translation type="vanished">Αναφορά</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
-        <translation>Οδηγία</translation>
+        <translation type="vanished">Οδηγία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation>Πληκτρολογήστε &quot;/&quot; στο πλαίσιο εισαγωγής για ενεργοποίηση.</translation>
+        <translation type="vanished">Πληκτρολογήστε &quot;/&quot; στο πλαίσιο εισαγωγής για ενεργοποίηση.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation>Παρακαλώ εισάγετε; “Ctrl+Enter” για αλλαγή γραμμής.</translation>
+        <translation type="vanished">Παρακαλώ εισάγετε; “Ctrl+Enter” για αλλαγή γραμμής.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation>Εισάγετε την ερώτησή σας, ή πληκτρολογήστε &quot;/&quot; για επιλογή εντολής
+        <translation type="vanished">Εισάγετε την ερώτησή σας, ή πληκτρολογήστε &quot;/&quot; για επιλογή εντολής
 &quot;Ctrl+Enter&quot; για νέα γραμμή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
-        <translation>Η αναζήτηση ολοκληρώθηκε.</translation>
+        <translation type="vanished">Η αναζήτηση ολοκληρώθηκε.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
-        <translation>Κάντε κλικ για προβολή αποτελεσμάτων</translation>
+        <translation type="vanished">Κάντε κλικ για προβολή αποτελεσμάτων</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
-        <translation>επεξεργασία</translation>
+        <translation type="vanished">επεξεργασία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
-        <translation>αποθήκευση</translation>
+        <translation type="vanished">αποθήκευση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
-        <translation>αντιγραφή</translation>
+        <translation type="vanished">αντιγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
-        <translation>Αναζήτηση</translation>
+        <translation type="vanished">Αναζήτηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
-        <translation>DeepThink(R1)</translation>
+        <translation type="vanished">DeepThink(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
-        <translation>Η σκέψη έχει σταματήσει</translation>
+        <translation type="vanished">Η σκέψη έχει σταματήσει</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
-        <translation>Επιστροφή στο κάτω μέρος</translation>
+        <translation type="vanished">Επιστροφή στο κάτω μέρος</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
-        <translation>Σκέφτηκε βαθιά (%1 δευτερόλεπτα)</translation>
+        <translation type="vanished">Σκέφτηκε βαθιά (%1 δευτερόλεπτα)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
-        <translation>Νέα Συζήτηση</translation>
+        <translation type="vanished">Νέα Συζήτηση</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
-        <translation>Ιστορικό</translation>
+        <translation type="vanished">Ιστορικό</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
-        <translation>Δεν υπάρχουν ιστορικά αρχεία</translation>
+        <translation type="vanished">Δεν υπάρχουν ιστορικά αρχεία</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
-        <translation>Σήμερα</translation>
+        <translation type="vanished">Σήμερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
-        <translation>Χθες</translation>
+        <translation type="vanished">Χθες</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε τη συζήτηση; Δεν θα είναι δυνατή η ανάκτησή της μετά τη διαγραφή.</translation>
+        <translation type="vanished">Είστε βέβαιοι ότι θέλετε να διαγράψετε τη συζήτηση; Δεν θα είναι δυνατή η ανάκτησή της μετά τη διαγραφή.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
-        <translation>Ο πράκτορας %1 που χρησιμοποιήθηκε σε αυτή τη συζήτηση έχει διαγραφεί</translation>
+        <translation type="vanished">Ο πράκτορας %1 που χρησιμοποιήθηκε σε αυτή τη συζήτηση έχει διαγραφεί</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation>Αυτή η συζήτηση δεν μπορεί να προβληθεί. Για να τη δείτε, εγκαταστήστε τον πράκτορα %1 και δοκιμάστε ξανά.</translation>
+        <translation type="vanished">Αυτή η συζήτηση δεν μπορεί να προβληθεί. Για να τη δείτε, εγκαταστήστε τον πράκτορα %1 και δοκιμάστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation>Το αρχικό μοντέλο συζήτησης έχει διαγραφεί. Έχουμε αλλάξει σε ένα νέο μοντέλο για να συνεχίσετε τη συζήτηση.</translation>
+        <translation type="vanished">Το αρχικό μοντέλο συζήτησης έχει διαγραφεί. Έχουμε αλλάξει σε ένα νέο μοντέλο για να συνεχίσετε τη συζήτηση.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
-        <translation>Προτάσεις</translation>
+        <translation type="vanished">Προτάσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
-        <translation>Περισσότερα</translation>
+        <translation type="vanished">Περισσότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
-        <translation>Προσθήκη Μοντέλου</translation>
+        <translation type="vanished">Προσθήκη Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
-        <translation>Κανένα Μοντέλο</translation>
+        <translation type="vanished">Κανένα Μοντέλο</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
-        <translation>Δεν υπάρχει διαθέσιμο μοντέλο. Εγκαταστήστε ή ρυθμίστε ένα μοντέλο στις ρυθμίσεις.</translation>
+        <translation type="vanished">Δεν υπάρχει διαθέσιμο μοντέλο. Εγκαταστήστε ή ρυθμίστε ένα μοντέλο στις ρυθμίσεις.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation>Παρακαλώ περιγράψτε το θέμα και τις απαιτήσεις για τη δημιουργία σας.</translation>
+        <translation type="vanished">Παρακαλώ περιγράψτε το θέμα και τις απαιτήσεις για τη δημιουργία σας.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation>Παρακαλώ εισάγετε το περιεχόμενο που θέλετε να μεταφράσετε και καθορίστε τη γλώσσα προορισμού. Η προεπιλεγμένη μετάφραση είναι στα Κινέζικα.</translation>
+        <translation type="vanished">Παρακαλώ εισάγετε το περιεχόμενο που θέλετε να μεταφράσετε και καθορίστε τη γλώσσα προορισμού. Η προεπιλεγμένη μετάφραση είναι στα Κινέζικα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation>Παρακαλώ εισάγετε το κείμενο που θέλετε να επεξεργαστείτε και καθορίστε τις απαιτήσεις σας.</translation>
+        <translation type="vanished">Παρακαλώ εισάγετε το κείμενο που θέλετε να επεξεργαστείτε και καθορίστε τις απαιτήσεις σας.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
-        <translation>Προστέθηκε Νέος Πράκτορας</translation>
+        <translation type="vanished">Προστέθηκε Νέος Πράκτορας</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation>Έχουν προστεθεί νέοι πράκτορες γραφής, επεξεργασίας κειμένου και μετάφρασης. Δοκιμάστε τους τώρα.</translation>
+        <translation type="vanished">Έχουν προστεθεί νέοι πράκτορες γραφής, επεξεργασίας κειμένου και μετάφρασης. Δοκιμάστε τους τώρα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
-        <translation>Δοκιμάστε το</translation>
+        <translation type="vanished">Δοκιμάστε το</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
-        <translation>Γράψτε ένα άρθρο βασισμένο στο ακόλουθο έγγραφο:</translation>
+        <translation type="vanished">Γράψτε ένα άρθρο βασισμένο στο ακόλουθο έγγραφο:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
-        <translation>Μεταφράστε το ακόλουθο έγγραφο στα Αγγλικά:</translation>
+        <translation type="vanished">Μεταφράστε το ακόλουθο έγγραφο στα Αγγλικά:</translation>
     </message>
 </context>
 <context>
     <name>EChatButton</name>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="150"/>
         <source>Turn off voice conversation</source>
-        <translation>Απενεργοποίηση φωνητικής συζήτησης</translation>
+        <translation type="vanished">Απενεργοποίηση φωνητικής συζήτησης</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="152"/>
         <source>Voice conversation</source>
-        <translation>Φωνητική συζήτηση</translation>
+        <translation type="vanished">Φωνητική συζήτηση</translation>
     </message>
 </context>
 <context>
     <name>EPPTWebView</name>
     <message>
-        <location filename="../src/gui/chat/private/epptwebview.cpp" line="67"/>
         <source>Export Item As</source>
-        <translation>Εξαγωγή αντικειμένου ως</translation>
+        <translation type="vanished">Εξαγωγή αντικειμένου ως</translation>
     </message>
 </context>
 <context>
     <name>EParserDocument</name>
     <message>
-        <location filename="../src/gui/chat/private/eparserdocument.cpp" line="57"/>
         <source>Supported files</source>
-        <translation>Υποστηριζόμενα αρχεία</translation>
+        <translation type="vanished">Υποστηριζόμενα αρχεία</translation>
+    </message>
+</context>
+<context>
+    <name>FileParser</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
+        <source>Unsupported file format</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FunctionsParser</name>
     <message>
-        <location filename="../src/tools/functionsparser.cpp" line="267"/>
         <source>Function not available</source>
-        <translation>Η λειτουργία δεν είναι διαθέσιμη</translation>
+        <translation type="vanished">Η λειτουργία δεν είναι διαθέσιμη</translation>
     </message>
 </context>
 <context>
     <name>GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="44"/>
         <source>Get a free trial account</source>
-        <translation>Λάβετε δωρεάν δοκιμαστικό λογαριασμό</translation>
+        <translation type="vanished">Λάβετε δωρεάν δοκιμαστικό λογαριασμό</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="61"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="62"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation>Λήψη λογαριασμού</translation>
+        <translation type="vanished">Λήψη λογαριασμού</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="89"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>Η λήψη λογαριασμού υποδηλώνει ότι κατανοείτε και συμφωνείτε με τους όρους της εκδήλωσης,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Λεπτομέρειες Εκδήλωσης&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">Η λήψη λογαριασμού υποδηλώνει ότι κατανοείτε και συμφωνείτε με τους όρους της εκδήλωσης,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Λεπτομέρειες Εκδήλωσης&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="121"/>
         <source>Trial Account</source>
-        <translation>Δοκιμαστικός Λογαριασμός</translation>
+        <translation type="vanished">Δοκιμαστικός Λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="133"/>
         <source>Save failed, please try again later</source>
-        <translation>Η αποθήκευση απέτυχε, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Η αποθήκευση απέτυχε, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Trial account received successfully.</source>
-        <translation>Ο λογαριασμός δοκιμής ελήφθη με επιτυχία.</translation>
+        <translation type="vanished">Ο λογαριασμός δοκιμής ελήφθη με επιτυχία.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="144"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>Ο αριθμός χρήσεων και η διάρκεια του λογαριασμού δοκιμής είναι περιορισμένοι, παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου έγκαιρα! Δείτε τις λεπτομέρειες της εκδήλωσης για περισσότερες πληροφορίες.</translation>
+        <translation type="vanished">Ο αριθμός χρήσεων και η διάρκεια του λογαριασμού δοκιμής είναι περιορισμένοι, παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου έγκαιρα! Δείτε τις λεπτομέρειες της εκδήλωσης για περισσότερες πληροφορίες.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="146"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>Η αγγλική υποστήριξη για τους λογαριασμούς δοκιμής δεν είναι ικανοποιητική. Και ο αριθμός χρήσεων και η διάρκεια του λογαριασμού δοκιμής είναι περιορισμένοι. Παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου έγκαιρα!</translation>
+        <translation type="vanished">Η αγγλική υποστήριξη για τους λογαριασμούς δοκιμής δεν είναι ικανοποιητική. Και ο αριθμός χρήσεων και η διάρκεια του λογαριασμού δοκιμής είναι περιορισμένοι. Παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου έγκαιρα!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="147"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>Έναρξη δοκιμής</translation>
+        <translation type="vanished">Έναρξη δοκιμής</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="152"/>
         <source>The free account activity ends.</source>
-        <translation>Η δραστηριότητα του δωρεάν λογαριασμού έχει λήξει.</translation>
+        <translation type="vanished">Η δραστηριότητα του δωρεάν λογαριασμού έχει λήξει.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
     </message>
 </context>
 <context>
@@ -3030,141 +2475,120 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="199"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation>Τα νέα αρχεία που προστέθηκαν απαιτούν προεπεξεργασία πριν μπορέσουν να χρησιμοποιηθούν, και κατά τη διαδικασία επεξεργασίας δεδομένων, μπορεί να καταναλώσει σημαντικό ποσό υπολογιστικών και αποθηκευτικών πόρων. Η επεξεργασία δεδομένων θα σταματήσει μετά τη διαγραφή δεδομένων.</translation>
+        <translation type="vanished">Τα νέα αρχεία που προστέθηκαν απαιτούν προεπεξεργασία πριν μπορέσουν να χρησιμοποιηθούν, και κατά τη διαδικασία επεξεργασίας δεδομένων, μπορεί να καταναλώσει σημαντικό ποσό υπολογιστικών και αποθηκευτικών πόρων. Η επεξεργασία δεδομένων θα σταματήσει μετά τη διαγραφή δεδομένων.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το αρχείο βάσης γνώσεων;</translation>
+        <translation type="vanished">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το αρχείο βάσης γνώσεων;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation type="vanished">Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="67"/>
         <source>Add</source>
-        <translation>Προσθήκη</translation>
+        <translation type="vanished">Προσθήκη</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
-        <translation>Παρακαλώ εγκαταστήστε πρώτα τα πρόσθετα ενσωμάτωσης μοντέλων</translation>
+        <translation type="vanished">Παρακαλώ εγκαταστήστε πρώτα τα πρόσθετα ενσωμάτωσης μοντέλων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="79"/>
         <source>Knowledge Base Management</source>
-        <translation>Διαχείριση Βάσης Γνώσεων</translation>
+        <translation type="vanished">Διαχείριση Βάσης Γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="106"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation>Εδώ μπορείτε να ορίσετε τη βάση γνώσεων του Προσωπικού Βοηθού Γνώσεων, ο οποίος θα απαντά σε ερωτήσεις με βάση τα αρχεία που προστίθενται παρακάτω.</translation>
+        <translation type="vanished">Εδώ μπορείτε να ορίσετε τη βάση γνώσεων του Προσωπικού Βοηθού Γνώσεων, ο οποίος θα απαντά σε ερωτήσεις με βάση τα αρχεία που προστίθενται παρακάτω.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
         <source>Done</source>
-        <translation>Ολοκληρώθηκε</translation>
+        <translation type="vanished">Ολοκληρώθηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="169"/>
         <source>None</source>
-        <translation>Κανένα</translation>
+        <translation type="vanished">Κανένα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="215"/>
         <source>File already exist</source>
-        <translation>Το αρχείο υπάρχει ήδη</translation>
+        <translation type="vanished">Το αρχείο υπάρχει ήδη</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="216"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation>Το αρχείο %1 υπάρχει ήδη και δεν μπορεί να προστεθεί ξανά. Παρακαλώ τροποποιήστε το όνομα του αρχείου ή διαγράψτε το υπάρχον αρχείο πριν το προσθέσετε ξανά</translation>
+        <translation type="vanished">Το αρχείο %1 υπάρχει ήδη και δεν μπορεί να προστεθεί ξανά. Παρακαλώ τροποποιήστε το όνομα του αρχείου ή διαγράψτε το υπάρχον αρχείο πριν το προσθέσετε ξανά</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="241"/>
         <source>All files</source>
-        <translation>Όλα τα αρχεία</translation>
+        <translation type="vanished">Όλα τα αρχεία</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation>Αυτή η λειτουργία απαιτεί υψηλούς πόρους υλικού και η προτεινόμενη διαμόρφωση είναι: CPU Intel 11ης γενιάς i7 ή ανώτερο, μνήμη 16GB ή περισσότερη, κάρτα γραφικών NVIDIA σειράς 10 ή ανώτερη. Εάν η διαμόρφωση είναι πολύ χαμηλή, μπορεί να προκύψουν προβλήματα όπως καθυστερήσεις και ανακριβείς απαντήσεις.</translation>
+        <translation type="vanished">Αυτή η λειτουργία απαιτεί υψηλούς πόρους υλικού και η προτεινόμενη διαμόρφωση είναι: CPU Intel 11ης γενιάς i7 ή ανώτερο, μνήμη 16GB ή περισσότερη, κάρτα γραφικών NVIDIA σειράς 10 ή ανώτερη. Εάν η διαμόρφωση είναι πολύ χαμηλή, μπορεί να προκύψουν προβλήματα όπως καθυστερήσεις και ανακριβείς απαντήσεις.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>Ακολούθηση</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">Ανεπαρκής χωρητικότητα βάσης γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">Η συνολική χωρητικότητα της βάσης γνώσεων είναι %1M, με υπόλοιπο %2. Ο συνολικός αριθμός αρχείων που προστέθηκαν αυτή τη φορά είναι %3. Αδυναμία ολοκλήρωσης της λειτουργίας προσθήκης στη βάση γνώσεων.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation type="unfinished">Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">Ανεπαρκής χώρος στο δίσκο</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">Για την αποθήκευση των νέων αρχείων, απαιτείται τουλάχιστον %1 χώρος στο δίσκο. Ο τρέχων διαθέσιμος χώρος είναι %2. Παρακαλώ απελευθερώστε αρκετό χώρο στον σκληρό δίσκο και δοκιμάστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">Η προσθήκη στη βάση γνώσεων απαιτεί την εγκατάσταση του πρόσθετου μοντέλου διανυσματοποίησης. Παρακαλώ μεταβείτε στο κατάστημα εφαρμογών για λήψη και εγκατάσταση.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">Να μην εγκατασταθεί</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">Αμέσως εγκατάσταση</translation>
@@ -3173,563 +2597,477 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>LLM</name>
     <message>
-        <location filename="../src/llm/common/llm.cpp" line="78"/>
         <source>Vincent picture service is not supported</source>
-        <translation>Η υπηρεσία εικόνων Vincent δεν υποστηρίζεται</translation>
+        <translation type="vanished">Η υπηρεσία εικόνων Vincent δεν υποστηρίζεται</translation>
     </message>
 </context>
 <context>
     <name>LLMServerProxy</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="270"/>
         <source>GPT3.5（OpenAI）</source>
-        <translation>GPT3.5 (OpenAI)</translation>
+        <translation type="vanished">GPT3.5 (OpenAI)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="273"/>
         <source>GPT4（OpenAI）</source>
-        <translation>GPT4 (OpenAI)</translation>
+        <translation type="vanished">GPT4 (OpenAI)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="280"/>
         <source>星火大模型1.5（讯飞）</source>
-        <translation>Spark Big Model 1.5 (iFLYTEK)</translation>
+        <translation type="vanished">Spark Big Model 1.5 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="283"/>
         <source>星火大模型2.0（讯飞）</source>
-        <translation>Spark Big Model 2.0 (iFLYTEK)</translation>
+        <translation type="vanished">Spark Big Model 2.0 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="285"/>
         <source>星火大模型3.0（讯飞）</source>
-        <translation>Spark Big Model 3.0 (iFLYTEK)</translation>
+        <translation type="vanished">Spark Big Model 3.0 (iFLYTEK)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="290"/>
         <source>ERNIE 3.5</source>
-        <translation>ERNIE 3.5</translation>
+        <translation type="vanished">ERNIE 3.5</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="293"/>
         <source>ERNIE-Bot-turbo</source>
-        <translation>ERNIE-Bot-turbo</translation>
+        <translation type="vanished">ERNIE-Bot-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="295"/>
         <source>ERNIE-Bot-4</source>
-        <translation>ERNIE-Bot-4</translation>
+        <translation type="vanished">ERNIE-Bot-4</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="275"/>
         <source>360 AI</source>
-        <translation>360 AI</translation>
+        <translation type="vanished">360 AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="278"/>
         <source>iFLYTEK-Spark</source>
-        <translation>iFLYTEK-Spark</translation>
+        <translation type="vanished">iFLYTEK-Spark</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="288"/>
         <source>Baidu-Ernie</source>
-        <translation>Baidu-Ernie</translation>
+        <translation type="vanished">Baidu-Ernie</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="299"/>
         <source>ChatGLM-turbo</source>
-        <translation>ChatGLM-turbo</translation>
+        <translation type="vanished">ChatGLM-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="301"/>
         <source>Gemini 1.5 Flash</source>
-        <translation>Gemini 1.5 Flash</translation>
+        <translation type="vanished">Gemini 1.5 Flash</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="303"/>
         <source>Gemini 1.5 Pro</source>
-        <translation>Gemini 1.5 Pro</translation>
+        <translation type="vanished">Gemini 1.5 Pro</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="305"/>
         <source>TextToImage(Local)</source>
-        <translation>ΚείμενοΣεΕικόνα(Τοπικό)</translation>
+        <translation type="vanished">ΚείμενοΣεΕικόνα(Τοπικό)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="307"/>
         <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <translation type="vanished">YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="309"/>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="311"/>
         <source>Custom</source>
-        <translation>Προσαρμοσμένο</translation>
+        <translation type="vanished">Προσαρμοσμένο</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="313"/>
         <source>Private deployment model</source>
-        <translation>Ιδιωτικό μοντέλο ανάπτυξης</translation>
+        <translation type="vanished">Ιδιωτικό μοντέλο ανάπτυξης</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="315"/>
         <source>OpenRouter</source>
-        <translation>OpenRouter</translation>
+        <translation type="vanished">OpenRouter</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="317"/>
         <source>DeepSeek-R1</source>
-        <translation>DeepSeek-R1</translation>
+        <translation type="vanished">DeepSeek-R1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="319"/>
         <source>DeepSeek</source>
-        <translation>DeepSeek</translation>
+        <translation type="vanished">DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="322"/>
         <source>unknown model</source>
-        <translation>άγνωστο μοντέλο</translation>
+        <translation type="vanished">άγνωστο μοντέλο</translation>
     </message>
 </context>
 <context>
     <name>LLMUtils</name>
     <message>
-        <location filename="../src/llm/common/llmutils.cpp" line="114"/>
         <source>Your system environment is Linux, and the user home path is</source>
-        <translation>Το περιβάλλον συστήματός σας είναι Linux και η διαδρομή αρχικού φακέλου χρήστη είναι</translation>
+        <translation type="vanished">Το περιβάλλον συστήματός σας είναι Linux και η διαδρομή αρχικού φακέλου χρήστη είναι</translation>
     </message>
 </context>
 <context>
     <name>LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation>Εγκατάσταση</translation>
+        <translation type="vanished">Εγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation>Ενημέρωση</translation>
+        <translation type="vanished">Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation>Απεγκατάσταση</translation>
+        <translation type="vanished">Απεγκατάσταση</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="32"/>
         <source>uninstall</source>
-        <translation>απεγκατάσταση</translation>
+        <translation type="vanished">απεγκατάσταση</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation>Τοπικό μοντέλο</translation>
+        <translation type="vanished">Τοπικό μοντέλο</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Text to image model</source>
-        <translation>Μοντέλο κειμένου σε εικόνα</translation>
+        <translation type="vanished">Μοντέλο κειμένου σε εικόνα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation>Χρησιμοποιήστε ένα τοπικό μοντέλο για να δημιουργήσετε εικόνες. Αφού το ενεργοποιήσετε, μπορείτε να επιλέξετε το μοντέλο από τη λίστα μοντέλων στη διεπαφή συνομιλίας.</translation>
+        <translation type="vanished">Χρησιμοποιήστε ένα τοπικό μοντέλο για να δημιουργήσετε εικόνες. Αφού το ενεργοποιήσετε, μπορείτε να επιλέξετε το μοντέλο από τη λίστα μοντέλων στη διεπαφή συνομιλίας.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>speech model</source>
-        <translation>μοντέλο ομιλίας</translation>
+        <translation type="vanished">μοντέλο ομιλίας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation>Όταν είναι ενεργοποιημένο, η αναγνώριση ομιλίας και η ανάγνωση ομιλίας στη διεπαφή συνομιλίας θα χρησιμοποιούν το τοπικό μοντέλο χωρίς να απαιτείται σύνδεση στο Διαδίκτυο.</translation>
+        <translation type="vanished">Όταν είναι ενεργοποιημένο, η αναγνώριση ομιλίας και η ανάγνωση ομιλίας στη διεπαφή συνομιλίας θα χρησιμοποιούν το τοπικό μοντέλο χωρίς να απαιτείται σύνδεση στο Διαδίκτυο.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
         <source>ULLM-1.5B</source>
-        <translation>ULLM-1.5B</translation>
+        <translation type="vanished">ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
         <source>ULLM-7B</source>
-        <translation>ULLM-7B</translation>
+        <translation type="vanished">ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation>DeepSeek-R1-1.5B</translation>
+        <translation type="vanished">DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>UOS AI large model</source>
-        <translation>Μεγάλο μοντέλο UOS AI</translation>
+        <translation type="vanished">Μεγάλο μοντέλο UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation>Μόλις εγκατασταθεί, δεν χρειάζεστε σύνδεση στο Διαδίκτυο για να χρησιμοποιήσετε το UOS AI.</translation>
+        <translation type="vanished">Μόλις εγκατασταθεί, δεν χρειάζεστε σύνδεση στο Διαδίκτυο για να χρησιμοποιήσετε το UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation>Κατεβάστε από την κοινότητα ανοιχτού κώδικα με δική σας ευθύνη. Χρησιμοποιήστε το στο UOS AI Assistant μετά την εγκατάσταση.</translation>
+        <translation type="vanished">Κατεβάστε από την κοινότητα ανοιχτού κώδικα με δική σας ευθύνη. Χρησιμοποιήστε το στο UOS AI Assistant μετά την εγκατάσταση.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>Embedding Plugins</source>
-        <translation>Ενσωματωμένες προσθήκες</translation>
+        <translation type="vanished">Ενσωματωμένες προσθήκες</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation>Μετά την εγκατάσταση του μοντέλου, μπορούν να εκτελεστούν ο Βοηθός Συστήματος και ο Βοηθός Προσωπικής Γνώσης.</translation>
+        <translation type="vanished">Μετά την εγκατάσταση του μοντέλου, μπορούν να εκτελεστούν ο Βοηθός Συστήματος και ο Βοηθός Προσωπικής Γνώσης.</translation>
     </message>
 </context>
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
-        <translation>Επιτυχής σύνδεση</translation>
+        <translation type="vanished">Επιτυχής σύνδεση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
-        <translation>Συμφωνία Χρήστη</translation>
+        <translation type="vanished">Συμφωνία Χρήστη</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
-        <translation>Συμφωνία Χρήστη UOS AI</translation>
+        <translation type="vanished">Συμφωνία Χρήστη UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
-        <translation>Διάβασα και συμφωνώ</translation>
+        <translation type="vanished">Διάβασα και συμφωνώ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
-        <translation>Ρυθμίσεις διακομιστή μεσολάβησης</translation>
+        <translation type="vanished">Ρυθμίσεις διακομιστή μεσολάβησης</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
-        <translation>Μετάβαση στις ρυθμίσεις</translation>
+        <translation type="vanished">Μετάβαση στις ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
-        <translation>Διαμόρφωση μοντέλου</translation>
+        <translation type="vanished">Διαμόρφωση μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
-        <translation>Η δραστηριότητα του δωρεάν λογαριασμού λήγει.</translation>
+        <translation type="vanished">Η δραστηριότητα του δωρεάν λογαριασμού λήγει.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation>Η προσθήκη στη βάση γνώσεων απαιτεί την εγκατάσταση του πρόσθετου μοντέλου διανυσματοποίησης. Παρακαλώ μεταβείτε στο κατάστημα εφαρμογών για λήψη και εγκατάσταση.</translation>
+        <translation type="vanished">Η προσθήκη στη βάση γνώσεων απαιτεί την εγκατάσταση του πρόσθετου μοντέλου διανυσματοποίησης. Παρακαλώ μεταβείτε στο κατάστημα εφαρμογών για λήψη και εγκατάσταση.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation>Να μην εγκατασταθεί</translation>
+        <translation type="vanished">Να μην εγκατασταθεί</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation>Αμέσως εγκατάσταση</translation>
+        <translation type="vanished">Αμέσως εγκατάσταση</translation>
     </message>
 </context>
 <context>
     <name>ModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="54"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το μοντέλο;</translation>
+        <translation type="vanished">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το μοντέλο;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="55"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="56"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
 </context>
 <context>
     <name>ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="31"/>
         <source>Get a free account</source>
-        <translation>Λήψη δωρεάν λογαριασμού</translation>
+        <translation type="vanished">Λήψη δωρεάν λογαριασμού</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation type="vanished">Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="41"/>
         <source>Add</source>
-        <translation>Προσθήκη</translation>
+        <translation type="vanished">Προσθήκη</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="48"/>
         <source>Online model</source>
-        <translation>Διαδικτυακό μοντέλο</translation>
+        <translation type="vanished">Διαδικτυακό μοντέλο</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
         <source>Done</source>
-        <translation>Ολοκλήρωση</translation>
+        <translation type="vanished">Ολοκλήρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="107"/>
         <source>None</source>
-        <translation>Καμία</translation>
+        <translation type="vanished">Καμία</translation>
     </message>
 </context>
 <context>
     <name>ModifyModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="27"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="37"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="47"/>
         <source>APIKey</source>
-        <translation>Κλειδί API</translation>
+        <translation type="vanished">Κλειδί API</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="57"/>
         <source>APISecret</source>
-        <translation>Μυστικό API</translation>
+        <translation type="vanished">Μυστικό API</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="67"/>
         <source>Account</source>
-        <translation>Λογαριασμός</translation>
+        <translation type="vanished">Λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="73"/>
         <source>Model Name</source>
-        <translation>Όνομα μοντέλου</translation>
+        <translation type="vanished">Όνομα μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="83"/>
         <source>API Address</source>
-        <translation>Διεύθυνση API</translation>
+        <translation type="vanished">Διεύθυνση API</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="96"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Απαιτείται για τη διάκριση πολλαπλών μοντέλων</translation>
+        <translation type="vanished">Απαιτείται για τη διάκριση πολλαπλών μοντέλων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="100"/>
         <source>Domain</source>
-        <translation>Τομέας</translation>
+        <translation type="vanished">Τομέας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="136"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="138"/>
         <source>Confirm</source>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="298"/>
         <source>No more than 20 characters</source>
-        <translation>Όχι περισσότεροι από 20 χαρακτήρες</translation>
+        <translation type="vanished">Όχι περισσότεροι από 20 χαρακτήρες</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="337"/>
         <source>The account name already exists, please change it</source>
-        <translation>Το όνομα λογαριασμού υπάρχει ήδη, παρακαλώ αλλάξτε το</translation>
+        <translation type="vanished">Το όνομα λογαριασμού υπάρχει ήδη, παρακαλώ αλλάξτε το</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
+        <source>The image file does not exist: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
+        <source>OCR did not recognize the text content</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="192"/>
         <source>In data processing</source>
-        <translation>Σε επεξεργασία δεδομένων</translation>
+        <translation type="vanished">Σε επεξεργασία δεδομένων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="204"/>
         <source>Data processing error</source>
-        <translation>Σφάλμα επεξεργασίας δεδομένων</translation>
+        <translation type="vanished">Σφάλμα επεξεργασίας δεδομένων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="216"/>
         <source>File error, unable to process, please delete.</source>
-        <translation>Σφάλμα αρχείου, αδυναμία επεξεργασίας, παρακαλώ διαγράψτε το.</translation>
+        <translation type="vanished">Σφάλμα αρχείου, αδυναμία επεξεργασίας, παρακαλώ διαγράψτε το.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="503"/>
         <source>UOS AI</source>
-        <translation>UOS ΤΝ</translation>
+        <translation type="vanished">UOS ΤΝ</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="506"/>
         <source>UOS System Assistant</source>
-        <translation>Βοηθός Συστήματος UOS</translation>
+        <translation type="vanished">Βοηθός Συστήματος UOS</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="509"/>
         <source>Deepin System Assistant</source>
-        <translation>Βοηθός Συστήματος Deepin</translation>
+        <translation type="vanished">Βοηθός Συστήματος Deepin</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="512"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Προσωπικός Βοηθός Γνώσεων</translation>
+        <translation type="vanished">Προσωπικός Βοηθός Γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="515"/>
         <source>AI Writing</source>
-        <translation>ΤΝ Σύνταξη</translation>
+        <translation type="vanished">ΤΝ Σύνταξη</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="518"/>
         <source>AI Text Processing</source>
-        <translation>ΤΝ Επεξεργασία Κειμένου</translation>
+        <translation type="vanished">ΤΝ Επεξεργασία Κειμένου</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="521"/>
         <source>AI Translation</source>
-        <translation>ΤΝ Μετάφραση</translation>
+        <translation type="vanished">ΤΝ Μετάφραση</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="534"/>
         <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation>Ολοκληρωμένος Βοηθός ΤΝ Συστήματος.</translation>
+        <translation type="vanished">Ολοκληρωμένος Βοηθός ΤΝ Συστήματος.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="537"/>
         <source>Assists you with UOS system-related inquiries.</source>
-        <translation>Σας βοηθά με ερωτήματα που σχετίζονται με το σύστημα UOS.</translation>
+        <translation type="vanished">Σας βοηθά με ερωτήματα που σχετίζονται με το σύστημα UOS.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="540"/>
         <source>Assists you with Deepin system-related inquiries.</source>
-        <translation>Σας βοηθά με ερωτήματα που σχετίζονται με το σύστημα Deepin.</translation>
+        <translation type="vanished">Σας βοηθά με ερωτήματα που σχετίζονται με το σύστημα Deepin.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="546"/>
         <source>Write Based on Your Topic and Requirements.</source>
-        <translation>Γράψτε βάσει του θέματος και των απαιτήσεών σας.</translation>
+        <translation type="vanished">Γράψτε βάσει του θέματος και των απαιτήσεών σας.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="543"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation>Απαντά σε ερωτήσεις βασισμένες στην προσωπική σας βάση γνώσεων.</translation>
+        <translation type="vanished">Απαντά σε ερωτήσεις βασισμένες στην προσωπική σας βάση γνώσεων.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="549"/>
         <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation>Ικανός να χειριστεί εργασίες επεξεργασίας κειμένου όπως συνοπτική παρουσίαση, διόρθωση και επανεγγραφή.</translation>
+        <translation type="vanished">Ικανός να χειριστεί εργασίες επεξεργασίας κειμένου όπως συνοπτική παρουσίαση, διόρθωση και επανεγγραφή.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="552"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation>Ο Βοηθός Μετάφρασής Σας, με Γνώση Πολλαπλών Γλωσσών.</translation>
+        <translation type="vanished">Ο Βοηθός Μετάφρασής Σας, με Γνώση Πολλαπλών Γλωσσών.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
         <source>Search</source>
         <translation>Αναζήτηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
         <source>Explain</source>
         <translation>Εξήγηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
         <source>Summary</source>
         <translation>Περίληψη</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
         <source>Translate</source>
         <translation>Μετάφραση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
         <source>Continue Writing</source>
         <translation>Συνέχεια Γραφής</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
         <source>Expand</source>
         <translation>Επέκταση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
         <source>Polish</source>
         <translation>Εξομάλυνση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
         <source>Correct</source>
         <translation>Διόρθωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
         <source>Add to the AI knowledge base</source>
         <translation>Προσθήκη στη βάση γνώσης της ΤΝ</translation>
     </message>
@@ -3830,7 +3168,7 @@ Never combine explanation with translation or provide full translation after par
         <translation>Αραβικά (ΣΑ)</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
+        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3840,163 +3178,268 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 
 Παράδειγμα Εντολής: Ονομάστε όλα τα αρχεία στον νέο φάκελο στην επιφάνεια εργασίας ως υλικά έργου και ταξινομήστε τα με αριθμητική σειρά.</translation>
     </message>
+    <message>
+        <location filename="../src/assistant/assistantinfo.h" line="23"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
+        <source>Private deployment model</source>
+        <translation type="unfinished">Ιδιωτικό μοντέλο ανάπτυξης</translation>
+    </message>
+    <message>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="obsolete">Το πεδίο &apos;mcpServers&apos; λείπει.</translation>
+    </message>
+    <message>
+        <source>no valid mcp server.</source>
+        <translation type="obsolete">δεν υπάρχει έγκυρος διακομιστής mcp.</translation>
+    </message>
+    <message>
+        <source>url field cannot be empty.</source>
+        <translation type="obsolete">Το πεδίο url δεν μπορεί να είναι κενό.</translation>
+    </message>
+    <message>
+        <source>command field cannot be empty.</source>
+        <translation type="obsolete">Το πεδίο command δεν μπορεί να είναι κενό.</translation>
+    </message>
+    <message>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="obsolete">Λείπει το πεδίο &apos;command&apos; ή &apos;url&apos;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ResearchTools</name>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
+        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
+        <source>The uos-ai-agent plugin must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
+        <source>Download Now</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ServerCodeTranslation</name>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="16"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Δεν είναι δυνατή η σύνδεση με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Δεν είναι δυνατή η σύνδεση με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="19"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Η σύνδεση απέτυχε, παρακαλώ ελέγξτε τις πληροφορίες που συμπληρώσατε.</translation>
+        <translation type="vanished">Η σύνδεση απέτυχε, παρακαλώ ελέγξτε τις πληροφορίες που συμπληρώσατε.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="22"/>
         <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation>Λυπούμαστε, σύμφωνα με τους ισχύοντες νόμους, κανονισμούς και πολιτικές, τα αποτελέσματα δεν εμφανίζονται προς το παρόν.</translation>
+        <translation type="vanished">Λυπούμαστε, σύμφωνα με τους ισχύοντες νόμους, κανονισμούς και πολιτικές, τα αποτελέσματα δεν εμφανίζονται προς το παρόν.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation>Η λειτουργία ακυρώθηκε.</translation>
+        <translation type="vanished">Η λειτουργία ακυρώθηκε.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="28"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>Ο δωρεάν λογαριασμός σας έχει λήξει, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
+        <translation type="vanished">Ο δωρεάν λογαριασμός σας έχει λήξει, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="31"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>Το όριο του δωρεάν λογαριασμού σας έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
+        <translation type="vanished">Το όριο του δωρεάν λογαριασμού σας έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="34"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation>Το όριο του δωρεάν λογαριασμού σας για συνομιλία έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
+        <translation type="vanished">Το όριο του δωρεάν λογαριασμού σας για συνομιλία έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="37"/>
         <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation>Το όριο του δωρεάν λογαριασμού σας για μετατροπή κειμένου σε εικόνα έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
+        <translation type="vanished">Το όριο του δωρεάν λογαριασμού σας για μετατροπή κειμένου σε εικόνα έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="40"/>
         <source>Invalid input device</source>
-        <translation>Μη έγκυρη συσκευή εισόδου</translation>
+        <translation type="vanished">Μη έγκυρη συσκευή εισόδου</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="43"/>
         <source>Invalid output device</source>
-        <translation>Μη έγκυρη συσκευή εξόδου</translation>
+        <translation type="vanished">Μη έγκυρη συσκευή εξόδου</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="46"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Λυπούμαστε, δεν βρέθηκαν αντιστοιχίσεις λειτουργιών.</translation>
+        <translation type="vanished">Λυπούμαστε, δεν βρέθηκαν αντιστοιχίσεις λειτουργιών.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="49"/>
         <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation>Ο συνολικός αριθμός χαρακτήρων στη συνομιλία έχει υπερβεί το όριο, παρακαλώ διαγράψτε το ιστορικό συνομιλιών και δοκιμάστε ξανά.</translation>
+        <translation type="vanished">Ο συνολικός αριθμός χαρακτήρων στη συνομιλία έχει υπερβεί το όριο, παρακαλώ διαγράψτε το ιστορικό συνομιλιών και δοκιμάστε ξανά.</translation>
+    </message>
+</context>
+<context>
+    <name>ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="unfinished">Το πεδίο &apos;mcpServers&apos; λείπει.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
+        <source>no valid mcp server.</source>
+        <translation type="unfinished">δεν υπάρχει έγκυρος διακομιστής mcp.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
+        <source>Only one MCP service can be edited at a time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
+        <source>url field cannot be empty.</source>
+        <translation type="unfinished">Το πεδίο url δεν μπορεί να είναι κενό.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
+        <source>command field cannot be empty.</source>
+        <translation type="unfinished">Το πεδίο command δεν μπορεί να είναι κενό.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="unfinished">Λείπει το πεδίο &apos;command&apos; ή &apos;url&apos;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
+        <source>JSON configuration format is invalid.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Session</name>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="359"/>
         <source>UOS AI</source>
-        <translation>UOS ΤΝ</translation>
+        <translation type="vanished">UOS ΤΝ</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="361"/>
         <source>UOS System Assistant</source>
-        <translation>Βοηθός Συστήματος UOS</translation>
+        <translation type="vanished">Βοηθός Συστήματος UOS</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="363"/>
         <source>Deepin System Assistant</source>
-        <translation>Βοηθός Συστήματος Deepin</translation>
+        <translation type="vanished">Βοηθός Συστήματος Deepin</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="365"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>Προσωπικός Βοηθός Γνώσης</translation>
+        <translation type="vanished">Προσωπικός Βοηθός Γνώσης</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="367"/>
         <source>AI Writing</source>
-        <translation>ΤΝ Γραφής</translation>
+        <translation type="vanished">ΤΝ Γραφής</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="369"/>
         <source>AI Text Processing</source>
-        <translation>ΤΝ Επεξεργασίας Κειμένου</translation>
+        <translation type="vanished">ΤΝ Επεξεργασίας Κειμένου</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="371"/>
         <source>AI Translation</source>
-        <translation>ΤΝ Μετάφρασης</translation>
+        <translation type="vanished">ΤΝ Μετάφρασης</translation>
     </message>
 </context>
 <context>
     <name>SessionPrivate</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="313"/>
-        <location filename="../src/wrapper/session_p.cpp" line="493"/>
-        <location filename="../src/wrapper/session_p.cpp" line="607"/>
-        <location filename="../src/wrapper/session_p.cpp" line="856"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>Το UOS ΤΝ απαιτεί τη ρύθμιση ενός λογαριασμού μοντέλου ΤΝ πριν από τη χρήση. Παρακαλώ ρυθμίστε πρώτα έναν λογαριασμό μοντέλου.</translation>
+        <translation type="vanished">Το UOS ΤΝ απαιτεί τη ρύθμιση ενός λογαριασμού μοντέλου ΤΝ πριν από τη χρήση. Παρακαλώ ρυθμίστε πρώτα έναν λογαριασμό μοντέλου.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="921"/>
         <source>Agent server is not available.</source>
-        <translation>Ο διακομιστής πράκτορας δεν είναι διαθέσιμος.</translation>
+        <translation type="vanished">Ο διακομιστής πράκτορας δεν είναι διαθέσιμος.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1285"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Επιτυχής Διεκδίκηση</translation>
+        <translation type="obsolete">Επιτυχής Διεκδίκηση</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1288"/>
         <source>Account not found</source>
-        <translation>Ο λογαριασμός δεν βρέθηκε</translation>
+        <translation type="vanished">Ο λογαριασμός δεν βρέθηκε</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1291"/>
         <source>Only support deepseek account</source>
-        <translation>Υποστηρίζεται μόνο λογαριασμός deepseek</translation>
+        <translation type="vanished">Υποστηρίζεται μόνο λογαριασμός deepseek</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1298"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation>Έχετε ήδη συμμετάσχει στην εκδήλωση και δεν μπορείτε να διεκδικήσετε ξανά την ανταμοιβή.</translation>
+        <translation type="vanished">Έχετε ήδη συμμετάσχει στην εκδήλωση και δεν μπορείτε να διεκδικήσετε ξανά την ανταμοιβή.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1301"/>
         <source>Server system error</source>
-        <translation>Σφάλμα συστήματος διακομιστή</translation>
+        <translation type="vanished">Σφάλμα συστήματος διακομιστή</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1304"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+        <translation type="obsolete">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+    </message>
+</context>
+<context>
+    <name>TextParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
+        <source>Unable to open file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
+        <source>The file content is in binary format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
+        <source>Unable to read file: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Ανατροφοδότηση</translation>
     </message>
@@ -4092,35 +3535,34 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="71"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation>Το κείμενο που έχετε επιλέξει έχει υπερβεί το όριο των 5000 χαρακτήρων.</translation>
+        <translation type="vanished">Το κείμενο που έχετε επιλέξει έχει υπερβεί το όριο των 5000 χαρακτήρων.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>Δεν έχω υλοποιήσει αυτή τη λειτουργία ακόμα.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>η υπηρεσία δεν είναι διαθέσιμη!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Μη έγκυρη παράμετρος!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
         <translation>Αυτή η εφαρμογή δεν μπορεί να βρεθεί!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>Αποτυχία εκκίνησης εφαρμογής!</translation>
     </message>
@@ -4128,858 +3570,797 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation>Η φωτεινότητα είναι ήδη στο μέγιστο και δεν μπορεί να αυξηθεί περαιτέρω.</translation>
+        <translation type="vanished">Η φωτεινότητα είναι ήδη στο μέγιστο και δεν μπορεί να αυξηθεί περαιτέρω.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation>Η φωτεινότητα είναι ήδη στο ελάχιστο και δεν μπορεί να μειωθεί περαιτέρω.</translation>
+        <translation type="vanished">Η φωτεινότητα είναι ήδη στο ελάχιστο και δεν μπορεί να μειωθεί περαιτέρω.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
-        <translation>Η μνήμη του συστήματός σας είναι %0.</translation>
+        <translation type="vanished">Η μνήμη του συστήματός σας είναι %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation>Το περιβάλλον ρύθμισης γλώσσας έχει ανοίξει. Παρακαλώ ρυθμίστε το σε αυτό το περιβάλλον.</translation>
+        <translation type="vanished">Το περιβάλλον ρύθμισης γλώσσας έχει ανοίξει. Παρακαλώ ρυθμίστε το σε αυτό το περιβάλλον.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
-        <translation>Η τρέχουσα λειτουργία είναι ήδη %1 λειτουργία.</translation>
+        <translation type="vanished">Η τρέχουσα λειτουργία είναι ήδη %1 λειτουργία.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation>Αδυναμία κλεισίματος επειδή η τρέχουσα λειτουργία %1 δεν ταιριάζει με την προορισμένη λειτουργία.</translation>
+        <translation type="vanished">Αδυναμία κλεισίματος επειδή η τρέχουσα λειτουργία %1 δεν ταιριάζει με την προορισμένη λειτουργία.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation>Η λειτουργία ισορροπίας δεν μπορεί να απενεργοποιηθεί.</translation>
+        <translation type="vanished">Η λειτουργία ισορροπίας δεν μπορεί να απενεργοποιηθεί.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
-        <translation>Η οθόνη κλειδώματος έχει ανοίξει για εσάς</translation>
+        <translation type="vanished">Η οθόνη κλειδώματος έχει ανοίξει για εσάς</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation>Η λήψη οθόνης ή η εγγραφή έχει ολοκληρωθεί</translation>
+        <translation type="vanished">Η λήψη οθόνης ή η εγγραφή έχει ολοκληρωθεί</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation>Μόνο μία οθόνη, δεν μπορεί να αλλάξει η λειτουργία οθόνης.</translation>
+        <translation type="vanished">Μόνο μία οθόνη, δεν μπορεί να αλλάξει η λειτουργία οθόνης.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation>Είναι το ίδιο με την τρέχουσα λειτουργία εμφάνισης. Παρακαλώ δοκιμάστε ξανά.</translation>
+        <translation type="vanished">Είναι το ίδιο με την τρέχουσα λειτουργία εμφάνισης. Παρακαλώ δοκιμάστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation>Μόνο μία οθόνη, δεν μπορεί να αλλάξει οθόνη.</translation>
+        <translation type="vanished">Μόνο μία οθόνη, δεν μπορεί να αλλάξει οθόνη.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
-        <translation>Η εντολή σας έχει εκδοθεί.</translation>
+        <translation type="vanished">Η εντολή σας έχει εκδοθεί.</translation>
     </message>
 </context>
 <context>
     <name>UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="47"/>
         <source>UOS AI User Agreement</source>
-        <translation>Συμφωνία Χρήστη UOS AI</translation>
+        <translation type="vanished">Συμφωνία Χρήστη UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="80"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>Επιβεβαιώνω ότι είμαι άνω των 18 ετών. Αναγνωρίζω και συμφωνώ ότι τα περιεχόμενα που στέλνω και λαμβάνω μέσω της Εφαρμογής είναι άμεσες ανταλλαγές δεδομένων με τον πάροχο υπηρεσιών μεγάλου μοντέλου και δεν έχουν καμία σχέση με την Εταιρεία.</translation>
+        <translation type="vanished">Επιβεβαιώνω ότι είμαι άνω των 18 ετών. Αναγνωρίζω και συμφωνώ ότι τα περιεχόμενα που στέλνω και λαμβάνω μέσω της Εφαρμογής είναι άμεσες ανταλλαγές δεδομένων με τον πάροχο υπηρεσιών μεγάλου μοντέλου και δεν έχουν καμία σχέση με την Εταιρεία.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="124"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>Συμφωνώ να συμμετάσχω στο σχέδιο εμπειρίας χρήστη της Εφαρμογής και εξουσιοδοτώ την εταιρεία σας να συλλέγει τα περιεχόμενα που στέλνω ενώ χρησιμοποιώ την Εφαρμογή, τον χρόνο αποστολής, τον τύπο του ζητούμενου μεγάλου μοντέλου, τη συγκεκριμένη εφαρμογή και αν το κείμενο δημιούργησε επιτυχώς την εικόνα, προκειμένου να βελτιωθεί η ποιότητα της υπηρεσίας και να ενισχυθεί η εμπειρία λειτουργίας. (Εάν αρνηθείτε να παράσχετε τις παραπάνω πληροφορίες, αυτό δεν θα επηρεάσει την κανονική χρήση της Εφαρμογής.)</translation>
+        <translation type="vanished">Συμφωνώ να συμμετάσχω στο σχέδιο εμπειρίας χρήστη της Εφαρμογής και εξουσιοδοτώ την εταιρεία σας να συλλέγει τα περιεχόμενα που στέλνω ενώ χρησιμοποιώ την Εφαρμογή, τον χρόνο αποστολής, τον τύπο του ζητούμενου μεγάλου μοντέλου, τη συγκεκριμένη εφαρμογή και αν το κείμενο δημιούργησε επιτυχώς την εικόνα, προκειμένου να βελτιωθεί η ποιότητα της υπηρεσίας και να ενισχυθεί η εμπειρία λειτουργίας. (Εάν αρνηθείτε να παράσχετε τις παραπάνω πληροφορίες, αυτό δεν θα επηρεάσει την κανονική χρήση της Εφαρμογής.)</translation>
     </message>
 </context>
 <context>
     <name>WXQFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
-        <translation>Εσωτερικό σφάλμα διακομιστή</translation>
+        <translation type="vanished">Εσωτερικό σφάλμα διακομιστή</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="10"/>
         <source>Service is temporarily unavailable</source>
-        <translation>Η υπηρεσία είναι προσωρινά μη διαθέσιμη</translation>
+        <translation type="vanished">Η υπηρεσία είναι προσωρινά μη διαθέσιμη</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="11"/>
         <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation>Το API που καλείται δεν υπάρχει. Ελέγξτε τη διεύθυνση URL του αιτήματος και δοκιμάστε ξανά. Συνήθως, υπάρχουν μη αγγλικοί χαρακτήρες στη διεύθυνση URL, όπως &quot;-&quot;. Μπορείτε να την εισάγετε χειροκίνητα και να δοκιμάσετε ξανά.</translation>
+        <translation type="vanished">Το API που καλείται δεν υπάρχει. Ελέγξτε τη διεύθυνση URL του αιτήματος και δοκιμάστε ξανά. Συνήθως, υπάρχουν μη αγγλικοί χαρακτήρες στη διεύθυνση URL, όπως &quot;-&quot;. Μπορείτε να την εισάγετε χειροκίνητα και να δοκιμάσετε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="13"/>
         <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation>Δεν υπάρχει άδεια κλήσης διεπαφής, η σχετική διεπαφή Qianfan δεν ελέγχεται κατά τη δημιουργία της εφαρμογής</translation>
+        <translation type="vanished">Δεν υπάρχει άδεια κλήσης διεπαφής, η σχετική διεπαφή Qianfan δεν ελέγχεται κατά τη δημιουργία της εφαρμογής</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation>Σφάλμα κλήσης μοντέλου: Έχει φτάσει το όριο αιτήματος του μοντέλου ή το μοντέλο είναι εκτός σύνδεσης. Προτάσεις: Προσθέστε ξανά το μοντέλο ή επικοινωνήστε με την εξυπηρέτηση πελατών του πάροχου υπηρεσιών μεγάλου μοντέλου για να επιλύσετε αυτό το ζήτημα.</translation>
+        <translation type="vanished">Σφάλμα κλήσης μοντέλου: Έχει φτάσει το όριο αιτήματος του μοντέλου ή το μοντέλο είναι εκτός σύνδεσης. Προτάσεις: Προσθέστε ξανά το μοντέλο ή επικοινωνήστε με την εξυπηρέτηση πελατών του πάροχου υπηρεσιών μεγάλου μοντέλου για να επιλύσετε αυτό το ζήτημα.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="14"/>
         <source>Failed to obtain token</source>
-        <translation>Αποτυχία λήψης token</translation>
+        <translation type="vanished">Αποτυχία λήψης token</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="15"/>
         <source>IAM authentication failed</source>
-        <translation>Αποτυχία πιστοποίησης IAM</translation>
+        <translation type="vanished">Αποτυχία πιστοποίησης IAM</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="16"/>
         <source>The application does not exist or failed to be created</source>
-        <translation>Η εφαρμογή δεν υπάρχει ή απέτυχε να δημιουργηθεί</translation>
+        <translation type="vanished">Η εφαρμογή δεν υπάρχει ή απέτυχε να δημιουργηθεί</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="17"/>
         <source>The number of requests per day exceeds the limit</source>
-        <translation>Ο αριθμός των αιτημάτων ανά ημέρα υπερβαίνει το όριο</translation>
+        <translation type="vanished">Ο αριθμός των αιτημάτων ανά ημέρα υπερβαίνει το όριο</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="19"/>
         <source>The total number of requests exceeds the limit</source>
-        <translation>Ο συνολικός αριθμός των αιτημάτων υπερβαίνει το όριο</translation>
+        <translation type="vanished">Ο συνολικός αριθμός των αιτημάτων υπερβαίνει το όριο</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="20"/>
         <source>Invalid access_token parameter</source>
-        <translation>Μη έγκυρη παράμετρος access_token</translation>
+        <translation type="vanished">Μη έγκυρη παράμετρος access_token</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="21"/>
         <source>access_token is invalid</source>
-        <translation>Το access_token δεν είναι έγκυρο</translation>
+        <translation type="vanished">Το access_token δεν είναι έγκυρο</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="22"/>
         <source>access token expires</source>
-        <translation>Το access token έχει λήξει</translation>
+        <translation type="vanished">Το access token έχει λήξει</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="23"/>
         <source>Service error, template does not exist</source>
-        <translation>Σφάλμα υπηρεσίας, το πρότυπο δεν υπάρχει</translation>
+        <translation type="vanished">Σφάλμα υπηρεσίας, το πρότυπο δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="24"/>
         <source>A system error occurred, please try again later</source>
-        <translation>Παρουσιάστηκε σφάλμα συστήματος, δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Παρουσιάστηκε σφάλμα συστήματος, δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="25"/>
         <source>The knowledge base server cannot be accessed</source>
-        <translation>Δεν είναι δυνατή η πρόσβαση στον διακομιστή βάσης γνώσεων</translation>
+        <translation type="vanished">Δεν είναι δυνατή η πρόσβαση στον διακομιστή βάσης γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="26"/>
         <source>Knowledge base data download exception</source>
-        <translation>Εξαίρεση λήψης δεδομένων βάσης γνώσεων</translation>
+        <translation type="vanished">Εξαίρεση λήψης δεδομένων βάσης γνώσεων</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="27"/>
         <source>Prompt word is too long</source>
-        <translation>Η λέξη προτροπής είναι πολύ μεγάλη</translation>
+        <translation type="vanished">Η λέξη προτροπής είναι πολύ μεγάλη</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="28"/>
         <source>Model does not exist</source>
-        <translation>Το μοντέλο δεν υπάρχει</translation>
+        <translation type="vanished">Το μοντέλο δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="29"/>
         <source>Request parameter error</source>
-        <translation>Σφάλμα παραμέτρου αιτήματος</translation>
+        <translation type="vanished">Σφάλμα παραμέτρου αιτήματος</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="30"/>
         <source>Image processing failed</source>
-        <translation>Αποτυχία επεξεργασίας εικόνας</translation>
+        <translation type="vanished">Αποτυχία επεξεργασίας εικόνας</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="31"/>
         <source>Service handling exception error</source>
-        <translation>Σφάλμα εξαίρεσης χειρισμού υπηρεσίας</translation>
+        <translation type="vanished">Σφάλμα εξαίρεσης χειρισμού υπηρεσίας</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="32"/>
         <source>Service internal error</source>
-        <translation>Εσωτερικό σφάλμα υπηρεσίας</translation>
+        <translation type="vanished">Εσωτερικό σφάλμα υπηρεσίας</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="33"/>
         <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation>Η μορφή της παραμέτρου εισόδου είναι εσφαλμένη, όπως λείπει απαραίτητες παράμετροι.</translation>
+        <translation type="vanished">Η μορφή της παραμέτρου εισόδου είναι εσφαλμένη, όπως λείπει απαραίτητες παράμετροι.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="34"/>
         <source>The input parameter body is not in standard JSON format</source>
-        <translation>Το σώμα της παραμέτρου εισόδου δεν είναι σε τυπική μορφή JSON</translation>
+        <translation type="vanished">Το σώμα της παραμέτρου εισόδου δεν είναι σε τυπική μορφή JSON</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="35"/>
         <source>Parameter verification is illegal</source>
-        <translation>Η επαλήθευση παραμέτρων είναι παράνομη</translation>
+        <translation type="vanished">Η επαλήθευση παραμέτρων είναι παράνομη</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="36"/>
         <source>Permission control error</source>
-        <translation>Σφάλμα ελέγχου δικαιωμάτων</translation>
+        <translation type="vanished">Σφάλμα ελέγχου δικαιωμάτων</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="37"/>
         <source>Customized model service apiname does not exist</source>
-        <translation>Το προσαρμοσμένο όνομα API υπηρεσίας μοντέλου δεν υπάρχει</translation>
+        <translation type="vanished">Το προσαρμοσμένο όνομα API υπηρεσίας μοντέλου δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="38"/>
         <source>Service internal error, please try again later</source>
-        <translation>Εσωτερικό σφάλμα υπηρεσίας, δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Εσωτερικό σφάλμα υπηρεσίας, δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="39"/>
         <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation>Μη έγκυρη μέθοδος HTTP, υποστηρίζει μόνο αιτήματα POST</translation>
+        <translation type="vanished">Μη έγκυρη μέθοδος HTTP, υποστηρίζει μόνο αιτήματα POST</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="40"/>
         <source>The requested content exceeds the large model internal limit</source>
-        <translation>Το ζητούμενο περιεχόμενο υπερβαίνει το εσωτερικό όριο του μεγάλου μοντέλου</translation>
+        <translation type="vanished">Το ζητούμενο περιεχόμενο υπερβαίνει το εσωτερικό όριο του μεγάλου μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="41"/>
         <source>internal error</source>
-        <translation>εσωτερικό σφάλμα</translation>
+        <translation type="vanished">εσωτερικό σφάλμα</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="42"/>
         <source>Vincent diagram model service timeout</source>
-        <translation>Λήξη χρονικού ορίου υπηρεσίας μοντέλου διαγράμματος Vincent</translation>
+        <translation type="vanished">Λήξη χρονικού ορίου υπηρεσίας μοντέλου διαγράμματος Vincent</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="43"/>
         <source>There are security issues with prompt and negative_prompt</source>
-        <translation>Υπάρχουν ζητήματα ασφαλείας με το prompt και το negative_prompt</translation>
+        <translation type="vanished">Υπάρχουν ζητήματα ασφαλείας με το prompt και το negative_prompt</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="44"/>
         <source>There are security issues with output images</source>
-        <translation>Υπάρχουν ζητήματα ασφαλείας με τις εικόνες εξόδου</translation>
+        <translation type="vanished">Υπάρχουν ζητήματα ασφαλείας με τις εικόνες εξόδου</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="46"/>
         <source>Parameter error</source>
-        <translation>Σφάλμα παραμέτρου</translation>
+        <translation type="vanished">Σφάλμα παραμέτρου</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="47"/>
         <source>No access</source>
-        <translation>Δεν υπάρχει πρόσβαση</translation>
+        <translation type="vanished">Δεν υπάρχει πρόσβαση</translation>
     </message>
 </context>
 <context>
     <name>WXQFText2Image</name>
     <message>
-        <location filename="../src/llm/baidu/wxqftext2image.cpp" line="27"/>
         <source>The image description exceeds the 256 character limit</source>
-        <translation>Η περιγραφή της εικόνας υπερβαίνει το όριο των 256 χαρακτήρων</translation>
+        <translation type="vanished">Η περιγραφή της εικόνας υπερβαίνει το όριο των 256 χαρακτήρων</translation>
     </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
         <source>Welcome to UOS AI</source>
-        <translation>Καλώς ήρθατε στο UOS AI</translation>
+        <translation type="vanished">Καλώς ήρθατε στο UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="75"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation>Το UOS AI, ο έξυπνος βοηθός σας, έχει σχεδιαστεί για να βελτιώσει την παραγωγικότητά σας και να σας προσφέρει μια υψηλής ποιότητας εμπειρία εργασίας.</translation>
+        <translation type="vanished">Το UOS AI, ο έξυπνος βοηθός σας, έχει σχεδιαστεί για να βελτιώσει την παραγωγικότητά σας και να σας προσφέρει μια υψηλής ποιότητας εμπειρία εργασίας.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="100"/>
         <source>Get a free trial account</source>
-        <translation>Αποκτήστε δωρεάν δοκιμαστικό λογαριασμό</translation>
+        <translation type="vanished">Αποκτήστε δωρεάν δοκιμαστικό λογαριασμό</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation>Προσθήκη Μοντέλου</translation>
+        <translation type="vanished">Προσθήκη Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="131"/>
         <source>Start using</source>
-        <translation>Έναρξη χρήσης</translation>
+        <translation type="vanished">Έναρξη χρήσης</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>Επιβεβαιώνω ότι είμαι άνω των 18 ετών. Αναγνωρίζω και συμφωνώ με τη &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Συμφωνία Χρήστη UOS AI&quot;&lt;/a&gt;, και τα περιεχόμενα που στέλνω και λαμβάνω μέσω της Εφαρμογής είναι άμεσες ανταλλαγές δεδομένων με τον πάροχο υπηρεσιών του μεγάλου μοντέλου και δεν έχουν καμία σχέση με την Εταιρεία.</translation>
+        <translation type="vanished">Επιβεβαιώνω ότι είμαι άνω των 18 ετών. Αναγνωρίζω και συμφωνώ με τη &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Συμφωνία Χρήστη UOS AI&quot;&lt;/a&gt;, και τα περιεχόμενα που στέλνω και λαμβάνω μέσω της Εφαρμογής είναι άμεσες ανταλλαγές δεδομένων με τον πάροχο υπηρεσιών του μεγάλου μοντέλου και δεν έχουν καμία σχέση με την Εταιρεία.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>Η λήψη ενός λογαριασμού υποδηλώνει ότι κατανοείτε και συμφωνείτε με τους όρους της εκδήλωσης,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Λεπτομέρειες Εκδήλωσης&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">Η λήψη ενός λογαριασμού υποδηλώνει ότι κατανοείτε και συμφωνείτε με τους όρους της εκδήλωσης,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Λεπτομέρειες Εκδήλωσης&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Trial Account</source>
-        <translation>Δοκιμαστικός Λογαριασμός</translation>
+        <translation type="vanished">Δοκιμαστικός Λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="292"/>
         <source>Save failed, please try again later</source>
-        <translation>Η αποθήκευση απέτυχε, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Η αποθήκευση απέτυχε, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="301"/>
         <source>Trial account received successfully.</source>
-        <translation>Ο δοκιμαστικός λογαριασμός ελήφθη με επιτυχία.</translation>
+        <translation type="vanished">Ο δοκιμαστικός λογαριασμός ελήφθη με επιτυχία.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="304"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>Ο αριθμός χρήσεων και η διάρκεια του δοκιμαστικού λογαριασμού είναι περιορισμένοι, παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου εγκαίρως! Δείτε τις λεπτομέρειες της εκδήλωσης για περισσότερες πληροφορίες.</translation>
+        <translation type="vanished">Ο αριθμός χρήσεων και η διάρκεια του δοκιμαστικού λογαριασμού είναι περιορισμένοι, παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου εγκαίρως! Δείτε τις λεπτομέρειες της εκδήλωσης για περισσότερες πληροφορίες.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="306"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>Η υποστήριξη στα Αγγλικά για τους δοκιμαστικούς λογαριασμούς δεν είναι ικανοποιητική. Και ο αριθμός χρήσεων και η διάρκεια του δοκιμαστικού λογαριασμού είναι περιορισμένοι. Παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου εγκαίρως!</translation>
+        <translation type="vanished">Η υποστήριξη στα Αγγλικά για τους δοκιμαστικούς λογαριασμούς δεν είναι ικανοποιητική. Και ο αριθμός χρήσεων και η διάρκεια του δοκιμαστικού λογαριασμού είναι περιορισμένοι. Παρακαλώ ρυθμίστε τον προσωπικό σας λογαριασμό μοντέλου εγκαίρως!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="307"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>Έναρξη δοκιμής</translation>
+        <translation type="vanished">Έναρξη δοκιμής</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="314"/>
         <source>The free account activity ends.</source>
-        <translation>Η δραστηριότητα του δωρεάν λογαριασμού έχει λήξει.</translation>
+        <translation type="vanished">Η δραστηριότητα του δωρεάν λογαριασμού έχει λήξει.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="322"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Αδυναμία σύνδεσης με τον διακομιστή, παρακαλώ ελέγξτε το δίκτυό σας ή δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="343"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>Συμφωνώ να συμμετάσχω στο σχέδιο εμπειρίας χρήστη της Εφαρμογής, και εξουσιοδοτώ την εταιρεία σας να συλλέγει τα περιεχόμενα που στέλνω ενώ χρησιμοποιώ την Εφαρμογή, τον χρόνο αποστολής, τον τύπο του ζητούμενου μεγάλου μοντέλου, τη συγκεκριμένη εφαρμογή και αν το κείμενο δημιούργησε την εικόνα με επιτυχία, προκειμένου να βελτιωθεί η ποιότητα της υπηρεσίας και να ενισχυθεί η εμπειρία λειτουργίας. (Εάν αρνηθείτε να παράσχετε τις παραπάνω πληροφορίες, αυτό δεν θα επηρεάσει την κανονική σας χρήση της Εφαρμογής.)</translation>
+        <translation type="vanished">Συμφωνώ να συμμετάσχω στο σχέδιο εμπειρίας χρήστη της Εφαρμογής, και εξουσιοδοτώ την εταιρεία σας να συλλέγει τα περιεχόμενα που στέλνω ενώ χρησιμοποιώ την Εφαρμογή, τον χρόνο αποστολής, τον τύπο του ζητούμενου μεγάλου μοντέλου, τη συγκεκριμένη εφαρμογή και αν το κείμενο δημιούργησε την εικόνα με επιτυχία, προκειμένου να βελτιωθεί η ποιότητα της υπηρεσίας και να ενισχυθεί η εμπειρία λειτουργίας. (Εάν αρνηθείτε να παράσχετε τις παραπάνω πληροφορίες, αυτό δεν θα επηρεάσει την κανονική σας χρήση της Εφαρμογής.)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
+    </message>
+</context>
+<context>
+    <name>WorkspaceStore</name>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
+        <source>Note: Part of the document content may be generated by AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
+        <source>Word files (*.docx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
+        <source>PDF files (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
+        <source>Markdown files (*.md)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
+        <source>Save Article</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>XFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="9"/>
         <source>Error while upgrading to WebSocket</source>
-        <translation>Σφάλμα κατά την αναβάθμιση σε WebSocket</translation>
+        <translation type="vanished">Σφάλμα κατά την αναβάθμιση σε WebSocket</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="10"/>
         <source>Error reading user&apos;s message via WebSocket</source>
-        <translation>Σφάλμα ανάγνωσης μηνύματος χρήστη μέσω WebSocket</translation>
+        <translation type="vanished">Σφάλμα ανάγνωσης μηνύματος χρήστη μέσω WebSocket</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="11"/>
         <source>Error sending message to user via WebSocket</source>
-        <translation>Σφάλμα αποστολής μηνύματος στον χρήστη μέσω WebSocket</translation>
+        <translation type="vanished">Σφάλμα αποστολής μηνύματος στον χρήστη μέσω WebSocket</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="12"/>
         <source>The user&apos;s message format is incorrect</source>
-        <translation>Η μορφή του μηνύματος του χρήστη είναι εσφαλμένη</translation>
+        <translation type="vanished">Η μορφή του μηνύματος του χρήστη είναι εσφαλμένη</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="13"/>
         <source>Schema error for user data</source>
-        <translation>Σφάλμα σχήματος για τα δεδομένα χρήστη</translation>
+        <translation type="vanished">Σφάλμα σχήματος για τα δεδομένα χρήστη</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="14"/>
         <source>User parameter value is wrong</source>
-        <translation>Η τιμή της παραμέτρου χρήστη είναι λάθος</translation>
+        <translation type="vanished">Η τιμή της παραμέτρου χρήστη είναι λάθος</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="15"/>
         <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation>Σφάλμα ταυτόχρονης χρήσης: Ο τρέχων χρήστης είναι ήδη συνδεδεμένος και ο ίδιος χρήστης δεν μπορεί να συνδεθεί σε πολλαπλά σημεία ταυτόχρονα.</translation>
+        <translation type="vanished">Σφάλμα ταυτόχρονης χρήσης: Ο τρέχων χρήστης είναι ήδη συνδεδεμένος και ο ίδιος χρήστης δεν μπορεί να συνδεθεί σε πολλαπλά σημεία ταυτόχρονα.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="16"/>
         <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation>Η κίνηση χρήστη είναι περιορισμένη: Η υπηρεσία επεξεργάζεται το τρέχον πρόβλημα του χρήστη και πρέπει να περιμένει την ολοκλήρωση της επεξεργασίας πριν στείλει νέα αίτηση. (Πρέπει να περιμένετε μια πλήρη απάντηση από το μοντέλο πριν στείλετε την επόμενη ερώτηση)</translation>
+        <translation type="vanished">Η κίνηση χρήστη είναι περιορισμένη: Η υπηρεσία επεξεργάζεται το τρέχον πρόβλημα του χρήστη και πρέπει να περιμένει την ολοκλήρωση της επεξεργασίας πριν στείλει νέα αίτηση. (Πρέπει να περιμένετε μια πλήρη απάντηση από το μοντέλο πριν στείλετε την επόμενη ερώτηση)</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="17"/>
         <source>Insufficient service capacity, please contact staff</source>
-        <translation>Ανεπαρκής χωρητικότητα υπηρεσίας, παρακαλώ επικοινωνήστε με το προσωπικό</translation>
+        <translation type="vanished">Ανεπαρκής χωρητικότητα υπηρεσίας, παρακαλώ επικοινωνήστε με το προσωπικό</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="18"/>
         <source>Failed to establish connection with engine</source>
-        <translation>Αποτυχία δημιουργίας σύνδεσης με τη μηχανή</translation>
+        <translation type="vanished">Αποτυχία δημιουργίας σύνδεσης με τη μηχανή</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="19"/>
         <source>Error receiving engine data</source>
-        <translation>Σφάλμα λήψης δεδομένων μηχανής</translation>
+        <translation type="vanished">Σφάλμα λήψης δεδομένων μηχανής</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="20"/>
         <source>Error sending data to engine</source>
-        <translation>Σφάλμα αποστολής δεδομένων στη μηχανή</translation>
+        <translation type="vanished">Σφάλμα αποστολής δεδομένων στη μηχανή</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="21"/>
         <source>Engine internal error</source>
-        <translation>Εσωτερικό σφάλμα μηχανής</translation>
+        <translation type="vanished">Εσωτερικό σφάλμα μηχανής</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="22"/>
         <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation>Το περιεχόμενο εισαγωγής δεν περνά τον έλεγχο και υπάρχει υποψία παραβίασης κανόνων. Παρακαλώ προσαρμόστε το περιεχόμενο εισαγωγής.</translation>
+        <translation type="vanished">Το περιεχόμενο εισαγωγής δεν περνά τον έλεγχο και υπάρχει υποψία παραβίασης κανόνων. Παρακαλώ προσαρμόστε το περιεχόμενο εισαγωγής.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="23"/>
         <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation>Το περιεχόμενο εξόδου περιλαμβάνει ευαίσθητες πληροφορίες, ο έλεγχος αποτυγχάνει και τα επόμενα αποτελέσματα δεν μπορούν να εμφανιστούν στον χρήστη.</translation>
+        <translation type="vanished">Το περιεχόμενο εξόδου περιλαμβάνει ευαίσθητες πληροφορίες, ο έλεγχος αποτυγχάνει και τα επόμενα αποτελέσματα δεν μπορούν να εμφανιστούν στον χρήστη.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="24"/>
         <source>appid is in the blacklist</source>
-        <translation>Το appid βρίσκεται στη μαύρη λίστα</translation>
+        <translation type="vanished">Το appid βρίσκεται στη μαύρη λίστα</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="25"/>
         <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation>Σφάλμα κλάσης εξουσιοδότησης appid. Για παράδειγμα: αυτή η λειτουργία δεν είναι ενεργοποιημένη, η αντίστοιχη έκδοση δεν είναι ενεργοποιημένη, το token είναι ανεπαρκές, η ταυτόχρονη χρήση υπερβαίνει την εξουσιοδότηση, κλπ.</translation>
+        <translation type="vanished">Σφάλμα κλάσης εξουσιοδότησης appid. Για παράδειγμα: αυτή η λειτουργία δεν είναι ενεργοποιημένη, η αντίστοιχη έκδοση δεν είναι ενεργοποιημένη, το token είναι ανεπαρκές, η ταυτόχρονη χρήση υπερβαίνει την εξουσιοδότηση, κλπ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="26"/>
         <source>Clear history failed</source>
-        <translation>Αποτυχία εκκαθάρισης ιστορικού</translation>
+        <translation type="vanished">Αποτυχία εκκαθάρισης ιστορικού</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="27"/>
         <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation>Δείχνει ότι το περιεχόμενο αυτής της συνεδρίας έχει τάση να περιλαμβάνει παράνομες πληροφορίες· συνιστάται οι προγραμματιστές να δώσουν στον χρήστη μια προτροπή μετά τη λήψη αυτού του κωδικού σφάλματος να εισάγει πληροφορίες που περιλαμβάνουν παράνομες πληροφορίες.</translation>
+        <translation type="vanished">Δείχνει ότι το περιεχόμενο αυτής της συνεδρίας έχει τάση να περιλαμβάνει παράνομες πληροφορίες· συνιστάται οι προγραμματιστές να δώσουν στον χρήστη μια προτροπή μετά τη λήψη αυτού του κωδικού σφάλματος να εισάγει πληροφορίες που περιλαμβάνουν παράνομες πληροφορίες.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="28"/>
         <source>Service is busy, please try again later</source>
-        <translation>Η υπηρεσία είναι απασχολημένη, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Η υπηρεσία είναι απασχολημένη, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="29"/>
         <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation>Οι παράμετροι της μηχανής αιτήματος είναι ανώμαλες και ο έλεγχος σχήματος μηχανής αποτυγχάνει.</translation>
+        <translation type="vanished">Οι παράμετροι της μηχανής αιτήματος είναι ανώμαλες και ο έλεγχος σχήματος μηχανής αποτυγχάνει.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="30"/>
         <source>Engine network abnormality</source>
-        <translation>Ανωμαλία δικτύου μηχανής</translation>
+        <translation type="vanished">Ανωμαλία δικτύου μηχανής</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="31"/>
         <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation>Ο αριθμός των tokens υπερβαίνει το ανώτατο όριο. Ο αριθμός των λέξεων στο ιστορικό συνομιλίας και στην ερώτηση είναι πολύ μεγάλος και πρέπει να απλοποιηθεί.</translation>
+        <translation type="vanished">Ο αριθμός των tokens υπερβαίνει το ανώτατο όριο. Ο αριθμός των λέξεων στο ιστορικό συνομιλίας και στην ερώτηση είναι πολύ μεγάλος και πρέπει να απλοποιηθεί.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="32"/>
         <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation>Σφάλμα εξουσιοδότησης: Το appId δεν έχει εξουσιοδότηση για σχετικές λειτουργίες ή ο όγκος επιχειρηματικότητας υπερβαίνει το όριο</translation>
+        <translation type="vanished">Σφάλμα εξουσιοδότησης: Το appId δεν έχει εξουσιοδότηση για σχετικές λειτουργίες ή ο όγκος επιχειρηματικότητας υπερβαίνει το όριο</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="33"/>
         <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation>Σφάλμα εξουσιοδότησης: Υπέρβαση ημερήσιου ορίου ελέγχου ροής. Υπερβήκατε τον μέγιστο αριθμό επισκέψεων για την ημέρα</translation>
+        <translation type="vanished">Σφάλμα εξουσιοδότησης: Υπέρβαση ημερήσιου ορίου ελέγχου ροής. Υπερβήκατε τον μέγιστο αριθμό επισκέψεων για την ημέρα</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Υπάρχουν πολλοί επισκέπτες αυτή τη στιγμή, παρακαλώ δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Υπάρχουν πολλοί επισκέπτες αυτή τη στιγμή, παρακαλώ δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="44"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Αποτυχία σύνδεσης, παρακαλώ ελέγξτε τις πληροφορίες συμπλήρωσης.</translation>
+        <translation type="vanished">Αποτυχία σύνδεσης, παρακαλώ ελέγξτε τις πληροφορίες συμπλήρωσης.</translation>
     </message>
 </context>
 <context>
     <name>ZhiPuCodeTranslation</name>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="9"/>
         <source>Server internal error</source>
-        <translation>Εσωτερικό σφάλμα διακομιστή</translation>
+        <translation type="vanished">Εσωτερικό σφάλμα διακομιστή</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="10"/>
         <source>Authentication failed</source>
-        <translation>Αποτυχία πιστοποίησης</translation>
+        <translation type="vanished">Αποτυχία πιστοποίησης</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="11"/>
         <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation>Η παράμετρος πιστοποίησης δεν ελήφθη στην κεφαλίδα και δεν ήταν δυνατή η πιστοποίηση.</translation>
+        <translation type="vanished">Η παράμετρος πιστοποίησης δεν ελήφθη στην κεφαλίδα και δεν ήταν δυνατή η πιστοποίηση.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="12"/>
         <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation>Το Authentication Token είναι παράνομο. Παρακαλώ επιβεβαιώστε ότι το Authentication Token παραδίδεται σωστά.</translation>
+        <translation type="vanished">Το Authentication Token είναι παράνομο. Παρακαλώ επιβεβαιώστε ότι το Authentication Token παραδίδεται σωστά.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="13"/>
         <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation>Το Authentication Token έχει λήξει, παρακαλώ αναδημιουργήστε/αποκτήστε το ξανά</translation>
+        <translation type="vanished">Το Authentication Token έχει λήξει, παρακαλώ αναδημιουργήστε/αποκτήστε το ξανά</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="14"/>
         <source>Verification via Authentication Token failed</source>
-        <translation>Η επαλήθευση μέσω Authentication Token απέτυχε</translation>
+        <translation type="vanished">Η επαλήθευση μέσω Authentication Token απέτυχε</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="15"/>
         <source>Account reading and writing</source>
-        <translation>Ανάγνωση και εγγραφή λογαριασμού</translation>
+        <translation type="vanished">Ανάγνωση και εγγραφή λογαριασμού</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="16"/>
         <source>Your account is currently inactive. Please check account information</source>
-        <translation>Ο λογαριασμός σας είναι αυτή τη στιγμή ανενεργός. Παρακαλώ ελέγξτε τις πληροφορίες λογαριασμού</translation>
+        <translation type="vanished">Ο λογαριασμός σας είναι αυτή τη στιγμή ανενεργός. Παρακαλώ ελέγξτε τις πληροφορίες λογαριασμού</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="17"/>
         <source>Your account does not exist</source>
-        <translation>Ο λογαριασμός σας δεν υπάρχει</translation>
+        <translation type="vanished">Ο λογαριασμός σας δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="18"/>
         <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation>Ο λογαριασμός σας έχει κλειδωθεί, παρακαλώ επικοινωνήστε με την εξυπηρέτηση πελατών για να το ξεκλειδώσετε</translation>
+        <translation type="vanished">Ο λογαριασμός σας έχει κλειδωθεί, παρακαλώ επικοινωνήστε με την εξυπηρέτηση πελατών για να το ξεκλειδώσετε</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="19"/>
         <source>Your account is in arrears, please recharge and try again</source>
-        <translation>Ο λογαριασμός σας έχει καθυστερήσεις, παρακαλώ επαναφορτίστε και δοκιμάστε ξανά</translation>
+        <translation type="vanished">Ο λογαριασμός σας έχει καθυστερήσεις, παρακαλώ επαναφορτίστε και δοκιμάστε ξανά</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="20"/>
         <source>Unable to successfully access your account, please try again later</source>
-        <translation>Δεν είναι δυνατή η πρόσβαση στον λογαριασμό σας, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Δεν είναι δυνατή η πρόσβαση στον λογαριασμό σας, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="21"/>
         <source>API call error</source>
-        <translation>Σφάλμα κλήσης API</translation>
+        <translation type="vanished">Σφάλμα κλήσης API</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="22"/>
         <source>API call parameters are incorrect, please check the documentation</source>
-        <translation>Οι παράμετροι κλήσης API είναι λανθασμένες, παρακαλώ ελέγξτε την τεκμηρίωση</translation>
+        <translation type="vanished">Οι παράμετροι κλήσης API είναι λανθασμένες, παρακαλώ ελέγξτε την τεκμηρίωση</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="23"/>
         <source>Model does not exist, please check the model code</source>
-        <translation>Το μοντέλο δεν υπάρχει, παρακαλώ ελέγξτε τον κωδικό μοντέλου</translation>
+        <translation type="vanished">Το μοντέλο δεν υπάρχει, παρακαλώ ελέγξτε τον κωδικό μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="24"/>
         <source>The current model does not support the ${method} calling method</source>
-        <translation>Το τρέχον μοντέλο δεν υποστηρίζει τη μέθοδο κλήσης ${method}</translation>
+        <translation type="vanished">Το τρέχον μοντέλο δεν υποστηρίζει τη μέθοδο κλήσης ${method}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="25"/>
         <source>${field} Parameters not received normally</source>
-        <translation>Οι παράμετροι ${field} δεν ελήφθησαν κανονικά</translation>
+        <translation type="vanished">Οι παράμετροι ${field} δεν ελήφθησαν κανονικά</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="26"/>
         <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation>Η παράμετρος ${field} είναι μη έγκυρη. Παρακαλώ ελέγξτε την τεκμηρίωση</translation>
+        <translation type="vanished">Η παράμετρος ${field} είναι μη έγκυρη. Παρακαλώ ελέγξτε την τεκμηρίωση</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="27"/>
         <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation>Οι ${field1} και ${field2} δεν μπορούν να οριστούν ταυτόχρονα, παρακαλώ ελέγξτε την τεκμηρίωση</translation>
+        <translation type="vanished">Οι ${field1} και ${field2} δεν μπορούν να οριστούν ταυτόχρονα, παρακαλώ ελέγξτε την τεκμηρίωση</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="28"/>
         <source>You do not have access to  ${API_name}</source>
-        <translation>Δεν έχετε πρόσβαση στο ${API_name}</translation>
+        <translation type="vanished">Δεν έχετε πρόσβαση στο ${API_name}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="29"/>
         <source>API ${API_name} is offline</source>
-        <translation>Το API ${API_name} είναι εκτός σύνδεσης</translation>
+        <translation type="vanished">Το API ${API_name} είναι εκτός σύνδεσης</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="30"/>
         <source>API ${API_name}  does not exist</source>
-        <translation>Το API ${API_name} δεν υπάρχει</translation>
+        <translation type="vanished">Το API ${API_name} δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="31"/>
         <source>API call process error</source>
-        <translation>Σφάλμα διαδικασίας κλήσης API</translation>
+        <translation type="vanished">Σφάλμα διαδικασίας κλήσης API</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="32"/>
         <source>You have requested: ${request_id}</source>
-        <translation>Έχετε ζητήσει: ${request_id}</translation>
+        <translation type="vanished">Έχετε ζητήσει: ${request_id}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="33"/>
         <source>When getting asynchronous request results, please use task_id</source>
-        <translation>Κατά τη λήψη ασύγχρονων αποτελεσμάτων αιτήματος, παρακαλώ χρησιμοποιήστε το task_id</translation>
+        <translation type="vanished">Κατά τη λήψη ασύγχρονων αποτελεσμάτων αιτήματος, παρακαλώ χρησιμοποιήστε το task_id</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="34"/>
         <source>Task: ${task_id} does not exist</source>
-        <translation>Η εργασία: ${task_id} δεν υπάρχει</translation>
+        <translation type="vanished">Η εργασία: ${task_id} δεν υπάρχει</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation>Σφάλμα δικτύου, αναγνωριστικό σφάλματος: ${error_id}, παρακαλώ επικοινωνήστε με την εξυπηρέτηση πελατών</translation>
+        <translation type="vanished">Σφάλμα δικτύου, αναγνωριστικό σφάλματος: ${error_id}, παρακαλώ επικοινωνήστε με την εξυπηρέτηση πελατών</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="37"/>
         <source>API run error</source>
-        <translation>Σφάλμα εκτέλεσης API</translation>
+        <translation type="vanished">Σφάλμα εκτέλεσης API</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="38"/>
         <source>Prompt super long</source>
-        <translation>Υπερβολικά μεγάλη προτροπή</translation>
+        <translation type="vanished">Υπερβολικά μεγάλη προτροπή</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="39"/>
         <source>API call blocked by policy</source>
-        <translation>Η κλήση API αποκλείστηκε λόγω πολιτικής</translation>
+        <translation type="vanished">Η κλήση API αποκλείστηκε λόγω πολιτικής</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="40"/>
         <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation>Το σύστημα έχει εντοπίσει ότι η εισαγωγή ή το παραγόμενο περιεχόμενο μπορεί να περιέχει μη ασφαλή ή ευαίσθητο περιεχόμενο. Παρακαλώ αποφύγετε την εισαγωγή προτροπών που μπορούν εύκολα να δημιουργήσουν ευαίσθητο περιεχόμενο. Σας ευχαριστούμε για τη συνεργασία σας.</translation>
+        <translation type="vanished">Το σύστημα έχει εντοπίσει ότι η εισαγωγή ή το παραγόμενο περιεχόμενο μπορεί να περιέχει μη ασφαλή ή ευαίσθητο περιεχόμενο. Παρακαλώ αποφύγετε την εισαγωγή προτροπών που μπορούν εύκολα να δημιουργήσουν ευαίσθητο περιεχόμενο. Σας ευχαριστούμε για τη συνεργασία σας.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>Υπάρχουν πολλοί επισκέπτες αυτήν τη στιγμή, παρακαλώ δοκιμάστε ξανά αργότερα.</translation>
+        <translation type="vanished">Υπάρχουν πολλοί επισκέπτες αυτήν τη στιγμή, παρακαλώ δοκιμάστε ξανά αργότερα.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="43"/>
         <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation>Αυτό το API έχει φτάσει το όριο κλήσεων για σήμερα. Εάν χρειάζεστε περισσότερες, παρακαλώ επικοινωνήστε με την εξυπηρέτηση πελατών για αγορά.</translation>
+        <translation type="vanished">Αυτό το API έχει φτάσει το όριο κλήσεων για σήμερα. Εάν χρειάζεστε περισσότερες, παρακαλώ επικοινωνήστε με την εξυπηρέτηση πελατών για αγορά.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AITranslation</name>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
+        <source>Translate the following text into English for me.</source>
+        <translation type="unfinished">Μεταφράστε το παρακάτω κείμενο στα Αγγλικά για μένα.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
+        <source>Translate the following document into Chinese.</source>
+        <translation type="unfinished">Μεταφράστε το παρακάτω έγγραφο στα Κινέζικα.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
+        <source>What does the word Ǌgent” mean in the AI industry?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
+        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
+        <translation type="unfinished">Παρακαλώ μεταφράστε το παρακάτω περιεχόμενο στα Κινέζικα. Απαιτήσεις: Ακριβής στην έννοια, επίσημη και επαγγελματική γλώσσα.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
+        <source>What are some colloquial ways to address a friend in English?</source>
+        <translation type="unfinished">Ποιες είναι μερικές καθομιλούμενες τρόποι να απευθυνθείτε σε έναν φίλο στα Αγγλικά;</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
+        <source>Translate the following classical Chinese text into modern Chinese.</source>
+        <translation type="unfinished">Μεταφράστε το παρακάτω κλασικό κινέζικο κείμενο σε σύγχρονα κινέζικα.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AIWriter</name>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
+        <source>Today </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
+        <source>Yesterday </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
+        <source>MMM d HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AboutWindow</name>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
+        <source>Filing Information</source>
+        <translation type="unfinished">Πληροφορίες Αρχειοθέτησης</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddPrivateModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="48"/>
         <source>Add model</source>
-        <translation>Προσθήκη μοντέλου</translation>
+        <translation type="vanished">Προσθήκη μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="50"/>
         <source>APIKey</source>
-        <translation>Κλειδί API</translation>
+        <translation type="vanished">Κλειδί API</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
-        <translation>Απαιτείται, παρακαλώ εισάγετε</translation>
+        <translation type="vanished">Απαιτείται, παρακαλώ εισάγετε</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="58"/>
         <source>Account</source>
-        <translation>Λογαριασμός</translation>
+        <translation type="vanished">Λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="63"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>Απαιτείται, για διάκριση πολλαπλών μοντέλων</translation>
+        <translation type="vanished">Απαιτείται, για διάκριση πολλαπλών μοντέλων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="69"/>
         <source>Model Name</source>
-        <translation>Όνομα Μοντέλου</translation>
+        <translation type="vanished">Όνομα Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="74"/>
         <source>Optional</source>
-        <translation>Προαιρετικό</translation>
+        <translation type="vanished">Προαιρετικό</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="77"/>
         <source>Domain</source>
-        <translation>Τομέας</translation>
+        <translation type="vanished">Τομέας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="104"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>Για να ελεγχθεί εάν το μοντέλο είναι διαθέσιμο, το σύστημα στέλνει πληροφορίες δοκιμής στο μεγάλο μοντέλο, το οποίο θα καταναλώσει μια μικρή ποσότητα token.</translation>
+        <translation type="vanished">Για να ελεγχθεί εάν το μοντέλο είναι διαθέσιμο, το σύστημα στέλνει πληροφορίες δοκιμής στο μεγάλο μοντέλο, το οποίο θα καταναλώσει μια μικρή ποσότητα token.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="147"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="149"/>
         <source>Confirm</source>
-        <translation>Επιβεβαίωση</translation>
+        <translation type="vanished">Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="241"/>
         <source>No more than 20 characters</source>
-        <translation>Όχι περισσότεροι από 20 χαρακτήρες</translation>
+        <translation type="vanished">Όχι περισσότεροι από 20 χαρακτήρες</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="272"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>Αυτό το LLM υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά.</translation>
+        <translation type="vanished">Αυτό το LLM υπάρχει ήδη, παρακαλώ μην το προσθέσετε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="315"/>
         <source>Save failed, please try again later</source>
-        <translation>Η αποθήκευση απέτυχε, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
+        <translation type="vanished">Η αποθήκευση απέτυχε, παρακαλώ δοκιμάστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="373"/>
         <source>The account name already exists, please change it</source>
-        <translation>Το όνομα λογαριασμού υπάρχει ήδη, παρακαλώ αλλάξτε το</translation>
+        <translation type="vanished">Το όνομα λογαριασμού υπάρχει ήδη, παρακαλώ αλλάξτε το</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="401"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>Για τις ρυθμίσεις διακομιστή μεσολάβησης, παρακαλώ μεταβείτε στις ρυθμίσεις διακομιστή μεσολάβησης του συστήματος</translation>
+        <translation type="vanished">Για τις ρυθμίσεις διακομιστή μεσολάβησης, παρακαλώ μεταβείτε στις ρυθμίσεις διακομιστή μεσολάβησης του συστήματος</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="404"/>
         <source>Go to settings</source>
-        <translation>Μετάβαση στις ρυθμίσεις</translation>
+        <translation type="vanished">Μετάβαση στις ρυθμίσεις</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>Προσθήκη Δεξιότητας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="66"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Όνομα Δεξιότητας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Εισαγάγετε όνομα δεξιότητας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Εντολή Δεξιότητας</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
         <translation>αντιπροσωπεύει το κείμενο που επιλέχθηκε με την επιλογή λέξεων.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Οδηγίες</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="130"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Αποθήκευση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="248"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>Το όνομα της δεξιότητας δεν μπορεί να είναι κενό</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>Υπέρβαση ορίου χαρακτήρων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>Το όνομα της δεξιότητας υπάρχει ήδη.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="440"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Οδηγίες Εντολής</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="478"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
         <translation>Εάν θέλετε να μεταφράσετε το επιλεγμένο κείμενο &quot;Hello&quot;, όπως φαίνεται παραπάνω, μπορείτε να εισάγετε την εντολή: Μεταφράστε {selection} στα Αγγλικά.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="485"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Προηγμένες Συμβουλές</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="491"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
@@ -4990,12 +4371,12 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 • Βελτιώστε {selection} σε ένα κείμενο πρόσληψης εντός 100 λέξεων, τονίζοντας την ομαδική εργασία.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
         <translation>Κάνοντας κλικ στην ετικέτα μπορείτε να την εισαγάγετε στο πεδίο εισαγωγής.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>Εντάξει</translation>
     </message>
@@ -5019,145 +4400,480 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::AiQuickDialog</name>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
+        <source>simplified Chinese</source>
+        <translation type="unfinished">Απλοποιημένα Κινέζικα</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
+        <source>traditional Chinese</source>
+        <translation type="unfinished">Παραδοσιακά Κινέζικα</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
+        <source>Tibetan</source>
+        <translation type="unfinished">Θιβετιανά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
+        <source>English</source>
+        <translation type="unfinished">Αγγλικά</translation>
+    </message>
+    <message>
+        <source>Japanese </source>
+        <translation type="obsolete">Ιαπωνικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
+        <source>Japanese</source>
+        <translation type="unfinished">Ιαπωνικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
+        <source>German</source>
+        <translation type="unfinished">Γερμανικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
+        <source>Spanish</source>
+        <translation type="unfinished">Ισπανικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
+        <source>French</source>
+        <translation type="unfinished">Γαλλικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
+        <source>Italian</source>
+        <translation type="unfinished">Ιταλικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
+        <source>Korean</source>
+        <translation type="unfinished">Κορεατικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
+        <source>Malay</source>
+        <translation type="unfinished">Μαλαισιανά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
+        <source>Portuguese</source>
+        <translation type="unfinished">Πορτογαλικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
+        <source>Russian</source>
+        <translation type="unfinished">Ρωσικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
+        <source>Thai</source>
+        <translation type="unfinished">Ταϊλανδικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
+        <source>Vietnamese</source>
+        <translation type="unfinished">Βιετναμικά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
+        <source>type</source>
+        <translation type="unfinished">τύπος</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
+        <source>Read Aloud</source>
+        <translation type="unfinished">Ανάγνωση Δυνατά</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
+        <source>Paste to Text</source>
+        <translation type="unfinished">Επικόλληση σε Κείμενο</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
+        <source>Regenerate</source>
+        <translation type="unfinished">Επαναδημιουργία</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
+        <source>Copy</source>
+        <translation type="unfinished">Αντιγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
+        <source>Continue Dialog</source>
+        <translation type="unfinished">Συνέχιση Διαλόγου</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
+        <source>Automatic Detection</source>
+        <translation type="unfinished">Αυτόματος Εντοπισμός</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
+        <source>Search</source>
+        <translation type="unfinished">Αναζήτηση</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
+        <source>Explain</source>
+        <translation type="unfinished">Εξήγηση</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
+        <source>Summary</source>
+        <translation type="unfinished">Περίληψη</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
+        <source>Translate</source>
+        <translation type="unfinished">Μετάφραση</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
+        <source>Continue writing</source>
+        <translation type="unfinished">Συνέχιση γραφής</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
+        <source>Expand</source>
+        <translation type="unfinished">Επέκταση</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
+        <source>Correct</source>
+        <translation type="unfinished">Διόρθωση</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
+        <source>Polish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
+        <source>Add to the AI knowledge base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation type="unfinished">Το αποτέλεσμα της μετάφρασης περιορίζεται από τις δυνατότητες του μοντέλου. Εάν δεν είστε ικανοποιημένοι με τη μετάφραση, παρακαλώ αλλάξτε σε άλλα μοντέλα στην αρχική σελίδα του UOS AI.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
+        <source>Ok</source>
+        <translation type="unfinished">Εντάξει</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation type="unfinished">Μεταφράστε αυτό το κείμενο σε %1 και δώστε μου ένα σαφές αποτέλεσμα απευθείας.
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
+        <source>Not clickable</source>
+        <translation type="unfinished">Μη κλικάρισμα</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation type="unfinished">Η συσκευή ήχου δεν εντοπίστηκε, παρακαλώ ελέγξτε και δοκιμάστε ξανά.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation type="unfinished">Εντάξει</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation type="unfinished">Η λειτουργία μπορεί να χρησιμοποιηθεί μόνο μετά την επανεκκίνηση της μεθόδου εισαγωγής. Το tutorial είναι το εξής:
+
+1. Κάντε δεξί κλικ στο εικονίδιο της μεθόδου εισαγωγής στη γραμμή εργασιών.
+
+2. Κάντε κλικ στο &quot;Επανεκκίνηση&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
+        <source>Fill failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
+        <source>Added</source>
+        <translation type="unfinished">Προστέθηκε</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
+        <source>Copied</source>
+        <translation type="unfinished">Αντιγράφηκε</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation type="unfinished">Εξηγήστε αυτό το κείμενο με απλή γλώσσα. Δώστε μου ένα σαφές αποτέλεσμα χωρίς περιττό περιεχόμενο.
+
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">Συνοψίστε αυτό το κείμενο και δώστε μου ένα σαφές αποτέλεσμα απευθείας χωρίς άλλο περιττό περιεχόμενο.
+
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">Συνεχίστε αυτό το κείμενο κατάλληλα. Δεν χρειάζονται πολλές λέξεις. Δώστε μου ένα σαφές αποτέλεσμα χωρίς άλλο περιττό περιεχόμενο.
+
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">Επεκτείνετε αυτό το κείμενο κατάλληλα. Δεν χρειάζεται ιδιαίτερα μεγάλο κείμενο. Δώστε μου ένα σαφές αποτέλεσμα χωρίς άλλο περιττό περιεχόμενο.
+
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">Ελέγξτε εάν υπάρχουν τυπογραφικά λάθη σε αυτό το κείμενο. Εάν υπάρχουν, δείξτε την τοποθεσία των σφαλμάτων. Δώστε μου ένα σαφές αποτέλεσμα απευθείας χωρίς άλλο περιττό περιεχόμενο.
+
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation type="unfinished">Βελτίωσε αυτό το κείμενο για μένα και δώσε μου μόνο το αποτέλεσμα χωρίς επιπλέον περιεχόμενο.
+
+κείμενο：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
+        <source> &quot;%1&quot; </source>
+        <translation type="unfinished">&quot;%1&quot;</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
+        <source>Current model: </source>
+        <translation type="unfinished">Τρέχον μοντέλο: </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
+        <source>Currently no model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
+        <source>Go to configure  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
+        <source>Claim Free Credits  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
+        <source>No text recognized.</source>
+        <translation type="unfinished">Δεν αναγνωρίστηκε κείμενο.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
+        <source>The added content must be more than 10 words</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AiWriterDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>Εισάγετε αυτό που θέλετε να δημιουργήσετε (πατήστε Enter για δημιουργία/Esc για έξοδο)</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
         <translation>Βοηθήστε με να γράψω μια έκθεση για το θέμα [%1] με [σαφή δομή και πλούσιο περιεχόμενο].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Artificial Intelligence</source>
         <translation>Τεχνητή Νοημοσύνη</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
         <translation>Βοηθήστε με να γράψω μια περιγραφή για το θέμα [%1], που θα χρησιμοποιηθεί για [δημιουργία PPT].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
         <translation>Βοηθήστε με να γράψω μια ειδοποίηση για [%1], ο παραλήπτης είναι [Όλοι οι Υπάλληλοι] και ο αποστολέας είναι [Τμήμα Διοίκησης].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>National Day Holiday</source>
         <translation>Αργία Εθνικής Εορτής</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
         <translation>Βοηθήστε με να γράψω μια ερευνητική αναφορά για [%1], που πρέπει να περιλαμβάνει [περιγραφή κατάστασης, ανάλυση προβλήματος, αντιμετώπιση και προτάσεις, ερευνητικά συμπεράσματα].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
         <translation>Βοηθήστε με να γράψω μια ομιλία για το θέμα [%1] για [Ηγέτες Εταιρείας], που απαιτεί [σαφή δομή και ζωντανή γλώσσα].</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
         <translation>Βοηθήστε με να γράψω μια σύνοψη της πρόσφατης δουλειάς μου, που περιλαμβάνει [%1] και [αποτελέσματα], με [επίσημο] ύφος.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>work content</source>
         <translation>περιεχόμενο εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
         <translation>Βοηθήστε με να γράψω ένα δημόσιο tweet για το θέμα [%1], που απαιτεί [σαφή δομή] και [χαλαρό] ύφος.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1036"/>
         <source>Model Configuration</source>
-        <translation>Διαμόρφωση Μοντέλου</translation>
+        <translation type="vanished">Διαμόρφωση Μοντέλου</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1123"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
         <source>Go to configure  </source>
         <translation>Πηγαίνετε για διαμόρφωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="86"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
         <source>AI Writer</source>
         <translation>AI Συγγραφέας</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="190"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
         <source>Article</source>
         <translation>Άρθρο</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="194"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
         <source>Outline</source>
         <translation>Περιγραφή</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="198"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
         <source>Notification</source>
         <translation>Ειδοποίηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="202"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
         <source>Research Report</source>
         <translation>Ερευνητική Αναφορά</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="206"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
         <source>Speeches</source>
         <translation>Ομιλίες</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="210"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
         <source>Work Summary</source>
         <translation>Σύνοψη Εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="214"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
         <source>Tweets</source>
         <translation>Tweets</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="306"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>Επικόλληση σε Κείμενο</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="324"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Επαναδημιουργία</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="332"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Αντιγραφή</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="350"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>Το περιεχόμενο που δημιουργείται από την AI είναι μόνο για αναφορά, παρακαλώ δώστε προσοχή στην ακρίβεια των πληροφοριών.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="849"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
@@ -5168,44 +4884,44 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 2. Κάντε κλικ στο &quot;Επανεκκίνηση&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="853"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1070"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
         <source>Copied</source>
         <translation>Αντιγράφηκε</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
         <source>Current model: </source>
         <translation>Τρέχον μοντέλο: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1106"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>Δεν υπάρχει τρέχον μοντέλο</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1137"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
         <source>Modify the content, change the tone…</source>
         <translation>Τροποποιήστε το περιεχόμενο, αλλάξτε τον τόνο…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1258"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>Η συμπλήρωση απέτυχε</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1259"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>Δεν έχει επιλεγεί πλαίσιο εισαγωγής, επιλέξτε το πλαίσιο εισαγωγής και συμπληρώστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1261"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>Εντάξει</translation>
     </message>
@@ -5374,6 +5090,301 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::Application</name>
+    <message>
+        <location filename="../src/app/application.cpp" line="66"/>
+        <location filename="../src/app/application.cpp" line="68"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="70"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="112"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI Ακολουθήστε/Γράψτε</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ArticleAdjustAgent</name>
+    <message>
+        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AssistantManager</name>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
+        <source>Hello, I&apos;m UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
+        <source>AI Writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
+        <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
+        <source>AI Translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
+        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
+        <translation type="unfinished">Ο Βοηθός Μετάφρασής Σας, με Γνώση Πολλαπλών Γλωσσών.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
+        <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
+        <source>Answers questions based on your personal knowledge base.</source>
+        <translation type="unfinished">Απαντά σε ερωτήσεις βασισμένες στην προσωπική σας βάση γνώσεων.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
+        <source>Ask questions based on the knowledge base.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
+        <source>MCP Server</source>
+        <translation type="unfinished">Διακομιστής MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
+        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
+        <source>Please enter MCP Server commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioChannel</name>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
+        <source>Failed to start recorder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
+        <source>Failed to play text audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioControler</name>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
+        <source>invalid input device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
+        <source>invalid output device</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinProvider</name>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="54"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="59"/>
+        <source>Intelligent Routing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="71"/>
+        <source>Online Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="83"/>
+        <source>DeepSeek-V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="96"/>
+        <location filename="../src/model/builtinprovider.cpp" line="334"/>
+        <source>GLM-4.7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="110"/>
+        <source>Doubao-Seed-1.8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="127"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="135"/>
+        <source>Private deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="144"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="149"/>
+        <source>GPT-3.5 Turbo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="162"/>
+        <source>GPT-4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="175"/>
+        <source>GPT-4.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="188"/>
+        <source>o1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="201"/>
+        <source>GPT-5.3 Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="217"/>
+        <source>doubao/seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="223"/>
+        <source>Doubao-Seed 2.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="236"/>
+        <source>Doubao-Seed 2.0-Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="252"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="257"/>
+        <source>DeepSeek V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>MiniMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="279"/>
+        <source>MiniMax-M2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="295"/>
+        <source>Moonshot (KIMI)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="300"/>
+        <source>Kimi K2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="313"/>
+        <source>Kimi K2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="329"/>
+        <source>GLM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="347"/>
+        <source>GLM-5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="363"/>
+        <source>Qwen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="369"/>
+        <source>Qwen3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="382"/>
+        <source>Qwen3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="399"/>
+        <source>Anthropic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="406"/>
+        <source>Gemini</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ClickableLabel</name>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
@@ -5382,24 +5393,48 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::CommonFailDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
+        <source>Error</source>
+        <translation type="unfinished">Σφάλμα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation type="unfinished">Εντάξει</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ConversationRecord</name>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
+        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">Νέα Συζήτηση</translation>
+    </message>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
+        <source>Null</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::CreateScheduleInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="144"/>
         <source>Create Schedule</source>
-        <translation>Δημιουργία Προγράμματος</translation>
+        <translation type="vanished">Δημιουργία Προγράμματος</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="146"/>
         <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation>Προγραμματίστε μια συνάντηση με το Τμήμα Μάρκετινγκ από τις 2 μ.μ. έως τις 5 μ.μ.</translation>
+        <translation type="vanished">Προγραμματίστε μια συνάντηση με το Τμήμα Μάρκετινγκ από τις 2 μ.μ. έως τις 5 μ.μ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="155"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Λυπούμαστε, δεν βρέθηκαν αντιστοιχίσεις λειτουργιών.</translation>
+        <translation type="vanished">Λυπούμαστε, δεν βρέθηκαν αντιστοιχίσεις λειτουργιών.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="169"/>
         <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
 
 Schedule template format:
@@ -5408,7 +5443,7 @@ json
 
 Input: %1
 Current time: %2</source>
-        <translation>Παρακαλώ αναλύστε τις αντίστοιχες παραμέτρους από το περιεχόμενο εισαγωγής για να ταιριάξετε με το πρότυπο προγράμματος στην παρακάτω μορφή JSON και εξάγετε μόνο το περιεχόμενο JSON, εξαιρώντας οποιαδήποτε άσχετες πληροφορίες.
+        <translation type="vanished">Παρακαλώ αναλύστε τις αντίστοιχες παραμέτρους από το περιεχόμενο εισαγωγής για να ταιριάξετε με το πρότυπο προγράμματος στην παρακάτω μορφή JSON και εξάγετε μόνο το περιεχόμενο JSON, εξαιρώντας οποιαδήποτε άσχετες πληροφορίες.
 
 Πρότυπο μορφής προγράμματος:
 
@@ -5424,46 +5459,64 @@ json
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>Προσθήκη διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="48"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>Επεξεργασία διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>Διαμόρφωση JSON:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>Παρακαλώ επικολλήστε τον κώδικα διαμόρφωσης MCP JSON στο πεδίο εισαγωγής.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>Περιγράψτε</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>Περιγράψτε τις λειτουργίες του διακομιστή MCP για ευκολότερη αναζήτηση εργαλείων</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation type="unfinished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::CustomModelGroup</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
+        <source>Please enter the model ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
+        <source>Please enter the model name</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5475,94 +5528,116 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::DeepResearchAgent</name>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
+        <source>Collecting and analyzing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
+        <source>Data collection and analysis completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
+        <source>Research completed. %1 references collected:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
+        <source>搜索成功</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
+        <source>ERROR: 未搜索到信息！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
+        <source>未找到相关文档</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
+        <source>Local Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DeepSeekInfo</name>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="119"/>
         <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation>Μετά την παραλαβή του δώρου, το αρχικό μοντέλο Baidu και το μοντέλο iFlytek θα αντικατασταθούν με το DeepSeek</translation>
+        <translation type="vanished">Μετά την παραλαβή του δώρου, το αρχικό μοντέλο Baidu και το μοντέλο iFlytek θα αντικατασταθούν με το DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="132"/>
         <source>Manually collect later</source>
-        <translation>Χειροκίνητη συλλογή αργότερα</translation>
+        <translation type="vanished">Χειροκίνητη συλλογή αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="293"/>
         <source>Trial Account</source>
-        <translation>Δοκιμαστικός Λογαριασμός</translation>
+        <translation type="vanished">Δοκιμαστικός Λογαριασμός</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="376"/>
         <source>Get a free account</source>
-        <translation>Λήψη δωρεάν λογαριασμού</translation>
+        <translation type="vanished">Λήψη δωρεάν λογαριασμού</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
-        <translation>Δοκιμάστε ξανά</translation>
+        <translation type="vanished">Δοκιμάστε ξανά</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="393"/>
         <source>Enter UOS AI</source>
-        <translation>Είσοδος στο UOS AI</translation>
+        <translation type="vanished">Είσοδος στο UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="401"/>
         <source>Receiving...</source>
-        <translation>Λήψη...</translation>
+        <translation type="vanished">Λήψη...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="410"/>
         <source>Use it immediately</source>
-        <translation>Χρησιμοποιήστε το αμέσως</translation>
+        <translation type="vanished">Χρησιμοποιήστε το αμέσως</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="431"/>
         <source>Checking account status...</source>
-        <translation>Έλεγχος κατάστασης λογαριασμού...</translation>
+        <translation type="vanished">Έλεγχος κατάστασης λογαριασμού...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
-        <translation>Η αξίωση λογαριασμού DeepSeek απέτυχε!</translation>
+        <translation type="vanished">Η αξίωση λογαριασμού DeepSeek απέτυχε!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="469"/>
         <source>Please check the network and try again later！</source>
-        <translation>Παρακαλώ ελέγξτε το δίκτυο και δοκιμάστε ξανά αργότερα！</translation>
+        <translation type="vanished">Παρακαλώ ελέγξτε το δίκτυο και δοκιμάστε ξανά αργότερα！</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="472"/>
         <source>DeepSeek account successfully claimed!</source>
-        <translation>Ο λογαριασμός DeepSeek αξιώθηκε με επιτυχία!</translation>
+        <translation type="vanished">Ο λογαριασμός DeepSeek αξιώθηκε με επιτυχία!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="477"/>
         <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation>Παρακαλώ ελέγξτε το δίκτυο και δοκιμάστε ξανά ή αξιώστε χειροκίνητα στις ρυθμίσεις UOS AI αργότερα</translation>
+        <translation type="vanished">Παρακαλώ ελέγξτε το δίκτυο και δοκιμάστε ξανά ή αξιώστε χειροκίνητα στις ρυθμίσεις UOS AI αργότερα</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation>Το UOS AI έχει ενσωματωθεί πλήρως στο DeepSeek</translation>
+        <translation type="vanished">Το UOS AI έχει ενσωματωθεί πλήρως στο DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="465"/>
         <source>The free account activity has ended.</source>
-        <translation>Η δωρεάν δραστηριότητα λογαριασμού έχει λήξει.</translation>
+        <translation type="vanished">Η δωρεάν δραστηριότητα λογαριασμού έχει λήξει.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="473"/>
         <source>Come and experience it!</source>
-        <translation>Ελάτε και δοκιμάστε το!</translation>
+        <translation type="vanished">Ελάτε και δοκιμάστε το!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="481"/>
         <source>Come and claim your account!</source>
-        <translation>Ελάτε και διεκδικήστε τον λογαριασμό σας!</translation>
+        <translation type="vanished">Ελάτε και διεκδικήστε τον λογαριασμό σας!</translation>
     </message>
 </context>
 <context>
@@ -5635,16 +5710,198 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::EParserDocument</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="207"/>
-        <source>Generate Image</source>
-        <translation>Δημιουργία Εικόνας</translation>
+        <source>Supported files</source>
+        <translation type="obsolete">Υποστηριζόμενα αρχεία</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FileChannel</name>
+    <message>
+        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
+        <source>Supported files</source>
+        <translation type="unfinished">Υποστηριζόμενα αρχεία</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FreeAccountService</name>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
+        <source>Network error</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="209"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
+        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
+        <translation type="unfinished">Το όριο του δωρεάν λογαριασμού σας για συνομιλία έχει εξαντληθεί, παρακαλώ ρυθμίστε τον λογαριασμό μοντέλου σας για να συνεχίσετε να τον χρησιμοποιείτε.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
+        <source>Not Now</source>
+        <translation type="unfinished">Όχι Τώρα</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">Διεκδίκηση Πιστώσεων</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
+        <source>Free Credits Delivered</source>
+        <translation type="unfinished">Δωρεάν Πιστώσεις Παραδόθηκαν</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
+        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">Επιτυχής Διεκδίκηση</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
+        <source>Account not found</source>
+        <translation type="unfinished">Ο λογαριασμός δεν βρέθηκε</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
+        <source>Only support trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
+        <source>You have already participated in the event and cannot claim the reward again.</source>
+        <translation type="unfinished">Έχετε ήδη συμμετάσχει στην εκδήλωση και δεν μπορείτε να διεκδικήσετε ξανά την ανταμοιβή.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
+        <source>Server system error</source>
+        <translation type="unfinished">Σφάλμα συστήματος διακομιστή</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GenerateImageInst</name>
+    <message>
+        <source>Generate Image</source>
+        <translation type="vanished">Δημιουργία Εικόνας</translation>
+    </message>
+    <message>
         <source>Describe Image Content</source>
-        <translation>Περιγραφή Περιεχομένου Εικόνας</translation>
+        <translation type="vanished">Περιγραφή Περιεχομένου Εικόνας</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GetFreeAccountDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
+        <source>Get a free trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
+        <source>Get account</source>
+        <comment>button</comment>
+        <translation type="unfinished">Λήψη λογαριασμού</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished">Έναρξη δοκιμής</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::HttpCodeTranslation</name>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Connection failed, please check the fill in information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
+        <source>Operation canceled.</source>
+        <translation type="unfinished">Η λειτουργία ακυρώθηκε.</translation>
     </message>
 </context>
 <context>
@@ -5668,6 +5925,14 @@ json
         <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>Δίκτυο μη διαθέσιμο</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::IconButtonEx</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
+        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
+        <translation type="unfinished">Τα νέα αρχεία που προστέθηκαν απαιτούν προεπεξεργασία πριν μπορέσουν να χρησιμοποιηθούν, και κατά τη διαδικασία επεξεργασίας δεδομένων, μπορεί να καταναλώσει σημαντικό ποσό υπολογιστικών και αποθηκευτικών πόρων. Η επεξεργασία δεδομένων θα σταματήσει μετά τη διαγραφή δεδομένων.</translation>
     </message>
 </context>
 <context>
@@ -5709,22 +5974,203 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::LaunchAppInst</name>
+    <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="52"/>
-        <source>Launch or Close App</source>
-        <translation>Εκκίνηση ή Κλείσιμο Εφαρμογής</translation>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
+        <source>Searching knowledge base</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="54"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
+        <source>Search complete · %1s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
+        <source>Search complete · %1m%2s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
+        <source>Are you sure you want to delete this knowledge base file?</source>
+        <translation type="unfinished">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το αρχείο βάσης γνώσεων;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
+        <source>Delete</source>
+        <translation type="unfinished">Διαγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
+        <source>Add</source>
+        <translation type="unfinished">Προσθήκη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
+        <source>Please install the embedding model plugins first</source>
+        <translation type="unfinished">Παρακαλώ εγκαταστήστε πρώτα τα πρόσθετα ενσωμάτωσης μοντέλων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
+        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
+        <translation type="unfinished">Αυτή η λειτουργία απαιτεί υψηλούς πόρους υλικού και η προτεινόμενη διαμόρφωση είναι: CPU Intel 11ης γενιάς i7 ή ανώτερο, μνήμη 16GB ή περισσότερη, κάρτα γραφικών NVIDIA σειράς 10 ή ανώτερη. Εάν η διαμόρφωση είναι πολύ χαμηλή, μπορεί να προκύψουν προβλήματα όπως καθυστερήσεις και ανακριβείς απαντήσεις.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
+        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
+        <translation type="unfinished">Εδώ μπορείτε να ορίσετε τη βάση γνώσεων του Προσωπικού Βοηθού Γνώσεων, ο οποίος θα απαντά σε ερωτήσεις με βάση τα αρχεία που προστίθενται παρακάτω.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
+        <source>File already exist</source>
+        <translation type="unfinished">Το αρχείο υπάρχει ήδη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
+        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
+        <translation type="unfinished">Το αρχείο %1 υπάρχει ήδη και δεν μπορεί να προστεθεί ξανά. Παρακαλώ τροποποιήστε το όνομα του αρχείου ή διαγράψτε το υπάρχον αρχείο πριν το προσθέσετε ξανά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
+        <source>All files</source>
+        <translation type="unfinished">Όλα τα αρχεία</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LaunchAppInst</name>
+    <message>
+        <source>Launch or Close App</source>
+        <translation type="vanished">Εκκίνηση ή Κλείσιμο Εφαρμογής</translation>
+    </message>
+    <message>
         <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation>WPS, Μουσική, Άλμπουμ, Κέντρο Ελέγχου, Προβολή Καταγραφών ...</translation>
+        <translation type="vanished">WPS, Μουσική, Άλμπουμ, Κέντρο Ελέγχου, Προβολή Καταγραφών ...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
+        <source>Install</source>
+        <translation type="unfinished">Εγκατάσταση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
+        <source>Uninstall</source>
+        <translation type="unfinished">Απεγκατάσταση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
+        <source>Update</source>
+        <translation type="unfinished">Ενημέρωση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
+        <source>uninstall</source>
+        <translation type="unfinished">απεγκατάσταση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
+        <source>Local model</source>
+        <translation type="unfinished">Τοπικό μοντέλο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <source>ULLM-1.5B</source>
+        <translation type="unfinished">ULLM-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
+        <translation type="unfinished">Μόλις εγκατασταθεί, δεν χρειάζεστε σύνδεση στο Διαδίκτυο για να χρησιμοποιήσετε το UOS AI.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <source>ULLM-7B</source>
+        <translation type="unfinished">ULLM-7B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>DeepSeek-R1-1.5B</source>
+        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
+        <translation type="unfinished">Κατεβάστε από την κοινότητα ανοιχτού κώδικα με δική σας ευθύνη. Χρησιμοποιήστε το στο UOS AI Assistant μετά την εγκατάσταση.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>UOS AI large model</source>
+        <translation type="unfinished">Μεγάλο μοντέλο UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>Embedding Plugins</source>
+        <translation type="unfinished">Ενσωματωμένες προσθήκες</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
+        <translation type="unfinished">Μετά την εγκατάσταση του μοντέλου, μπορούν να εκτελεστούν ο Βοηθός Συστήματος και ο Βοηθός Προσωπικής Γνώσης.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="114"/>
+        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>Ο διακομιστής MCP δεν είναι διαθέσιμος</translation>
     </message>
@@ -5803,17 +6249,17 @@ json
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="50"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation type="unfinished">Εγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
         <translation type="unfinished">Απεγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
         <translation type="unfinished">Ενημέρωση</translation>
     </message>
@@ -5821,7 +6267,7 @@ json
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>ενσωματωμένο</translation>
     </message>
@@ -5829,47 +6275,47 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>Διακομιστής MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Όλα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>Ενσωματωμένα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
         <translation>Προσαρμοσμένα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>Προσθήκη διακομιστή MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>Επιβεβαίωση διαγραφής %1;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>Μετά τη διαγραφή, ο διακομιστής δεν θα είναι διαθέσιμος. Προχωρήστε με προσοχή.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation type="unfinished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
         <translation type="unfinished">Διαγραφή</translation>
     </message>
@@ -5877,173 +6323,574 @@ json
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="59"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>Περιβάλλον Mcp</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>Διακομιστής MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>Εγκατάσταση πράκτορα UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>Μετά την εγκατάσταση, ο διακομιστής MCP θα είναι διαθέσιμος.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::ModelHubLLM</name>
+    <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="43"/>
-        <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
+        <source>Model Configuration</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="58"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
+        <source>UOS AI FollowAlong</source>
+        <translation type="unfinished">UOS AI Ακολούθηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
+        <source>User Agreement</source>
+        <translation type="unfinished">Συμφωνία Χρήστη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished">Συμφωνία Χρήστη UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
+        <source>Read and agreed</source>
+        <translation type="unfinished">Διάβασα και συμφωνώ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
+        <source>Proxy Settings</source>
+        <translation type="unfinished">Ρυθμίσεις διακομιστή μεσολάβησης</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">Μετάβαση στις ρυθμίσεις</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation type="unfinished">Η προσθήκη στη βάση γνώσεων απαιτεί την εγκατάσταση του πρόσθετου μοντέλου διανυσματοποίησης. Παρακαλώ μεταβείτε στο κατάστημα εφαρμογών για λήψη και εγκατάσταση.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation type="unfinished">Να μην εγκατασταθεί</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation type="unfinished">Αμέσως εγκατάσταση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubLLM</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation type="vanished">YouRong 1.5B</translation>
+    </message>
+    <message>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
+        <source>YouRong 1.5B</source>
+        <translation type="unfinished">YouRong 1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
+        <source>YouRong 7B</source>
+        <translation type="unfinished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">Λήψη δωρεάν λογαριασμού</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Delete</source>
+        <translation type="unfinished">Διαγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
+        <source>Add</source>
+        <translation type="unfinished">Προσθήκη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
+        <source>Online model</source>
+        <translation type="unfinished">Διαδικτυακό μοντέλο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
         <translation>Εγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="108"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
         <source>Update</source>
         <translation>Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
         <translation>Απεγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="113"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="151"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
         <translation>Περίπου %1GB</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>Γίνεται εγκατάσταση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το μοντέλο;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Επιβεβαίωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="245"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>Γίνεται έλεγχος</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Εντάξει</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="266"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
         <translation>Η λήψη του %0 απέτυχε, δοκιμάστε ξανά!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="313"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
         <translation>Παρακαλώ εγκαταστήστε πρώτα τα &quot;Embedding Plugins&quot; πριν εγκαταστήσετε αυτό το μοντέλο.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="493"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
         <translation>Η διαγραφή του φακέλου προορισμού απέτυχε, δοκιμάστε ξανά!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="529"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>%1 δευτερόλεπτα</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="531"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>%1 λεπτά</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="536"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
         <translation>Έχουν ληφθεί %1MB/%2GB, απομένουν %3.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="294"/>
-        <source>Multimedia Control</source>
-        <translation>Έλεγχος Πολυμέσων</translation>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
+        <source>Are you sure you want to delete this model?</source>
+        <translation type="unfinished">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το μοντέλο;</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="297"/>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelValidator</name>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="37"/>
+        <source>Invalid model account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="54"/>
+        <source>Unsupported model type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="62"/>
+        <source>Model does not support chat completion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="89"/>
+        <source>Model is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="98"/>
+        <source>HTTP error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="108"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModifyProviderDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
+        <source>For proxy settings, please go to system proxy settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
+        <source>Go to settings</source>
+        <translation type="unfinished">Μετάβαση στις ρυθμίσεις</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Delete</source>
+        <translation type="unfinished">Διαγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Edit Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Add Model</source>
+        <translation type="unfinished">Προσθήκη Μοντέλου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
+        <source>Account</source>
+        <translation type="unfinished">Λογαριασμός</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
+        <source>Required, to distinguish multiple models</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
+        <source>Provider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
+        <source>APIKey</source>
+        <translation type="unfinished">Κλειδί API</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
+        <source>Required, please input</source>
+        <translation type="unfinished">Απαιτείται, παρακαλώ εισάγετε</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
+        <source>Domain</source>
+        <translation type="unfinished">Τομέας</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
+        <source>Enable</source>
+        <translation type="unfinished">Ενεργοποίηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
+        <source>Add</source>
+        <translation type="unfinished">Προσθήκη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
+        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
+        <translation type="unfinished">Για να ελεγχθεί εάν το μοντέλο είναι διαθέσιμο, το σύστημα στέλνει πληροφορίες δοκιμής στο μεγάλο μοντέλο, το οποίο θα καταναλώσει μια μικρή ποσότητα token.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
+        <source>Confirm</source>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
+        <source>Name and Model ID must be filled in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
+        <source>Test passed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
+        <source>The model service is available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::MultimediaControlInst</name>
+    <message>
+        <source>Multimedia Control</source>
+        <translation type="vanished">Έλεγχος Πολυμέσων</translation>
+    </message>
+    <message>
         <source>Play music, state control, seek...</source>
-        <translation>Αναπαραγωγή μουσικής, έλεγχος κατάστασης, αναζήτηση...</translation>
+        <translation type="vanished">Αναπαραγωγή μουσικής, έλεγχος κατάστασης, αναζήτηση...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OperatingLineWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
+        <source>In data processing</source>
+        <translation type="unfinished">Σε επεξεργασία δεδομένων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
+        <source>Data processing error</source>
+        <translation type="unfinished">Σφάλμα επεξεργασίας δεδομένων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
+        <source>File error, unable to process, please delete.</source>
+        <translation type="unfinished">Σφάλμα αρχείου, αδυναμία επεξεργασίας, παρακαλώ διαγράψτε το.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OutlineAgent</name>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
+        <source>Generating outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
+        <source>Generating outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
+        <source>Outline generated, please confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
+        <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
+        <source>Detected uploaded local outline, please confirm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
+        <source>Failed to parse the uploaded outline file, please re-upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
+        <source>Generating outline content failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
+        <source>Based on your writing task, I have generated the following outline for **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
+        <source>I have parsed your uploaded outline and structured it as **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
+        <source>
+The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::PersonalKnowledgeAssistant</name>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
+        <translation type="unfinished">Ο Προσωπικός Βοηθός Γνώσης μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση του πρόσθετου μοντέλου.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
+        <translation type="unfinished">Ο Προσωπικός Βοηθός Γνώσης μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση της βάσης γνώσης.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="36"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Προσθήκη</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Ιδιωτικό μοντέλο ανάπτυξης</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Ολοκληρώθηκε</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>Καμία</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ProviderListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
+        <source>Are you sure you want to delete this provider?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
     </message>
 </context>
 <context>
@@ -6065,37 +6912,60 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::SearchOnlineInst</name>
+    <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="249"/>
-        <source>Search Online</source>
-        <translation>Αναζήτηση στο Διαδίκτυο</translation>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
+        <source>Document Generating</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="251"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
+        <source>failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
+        <source>Document Generated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
+        <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
+        <source>You can ask follow-up questions or request adjust the article.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SearchOnlineInst</name>
+    <message>
+        <source>Search Online</source>
+        <translation type="vanished">Αναζήτηση στο Διαδίκτυο</translation>
+    </message>
+    <message>
         <source>Enter Search Content</source>
-        <translation>Εισαγωγή περιεχομένου αναζήτησης</translation>
+        <translation type="vanished">Εισαγωγή περιεχομένου αναζήτησης</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SendMailInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="81"/>
         <source>Send Mail</source>
-        <translation>Αποστολή Email</translation>
+        <translation type="vanished">Αποστολή Email</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="83"/>
         <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation>Βοηθήστε με να στείλω ένα email στον [Όνομα Παραλήπτη], με το περιεχόμενο: [Περιεχόμενο Email].</translation>
+        <translation type="vanished">Βοηθήστε με να στείλω ένα email στον [Όνομα Παραλήπτη], με το περιεχόμενο: [Περιεχόμενο Email].</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="92"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>Λυπούμαστε, δεν βρέθηκαν αντιστοιχίσεις.</translation>
+        <translation type="vanished">Λυπούμαστε, δεν βρέθηκαν αντιστοιχίσεις.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="106"/>
         <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
 
 Email template format:
@@ -6103,7 +6973,7 @@ json
 {&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
 
 Input: %1</source>
-        <translation>Παρακαλώ εξαγάγετε τις σχετικές παραμέτρους από την εισαγωγή για να ταιριάξουν με την παρακάτω μορφή προτύπου email JSON, και να εξάγετε μόνο το περιεχόμενο JSON. Μην συμπεριλάβετε καμία άσχετη πληροφορία.
+        <translation type="vanished">Παρακαλώ εξαγάγετε τις σχετικές παραμέτρους από την εισαγωγή για να ταιριάξουν με την παρακάτω μορφή προτύπου email JSON, και να εξάγετε μόνο το περιεχόμενο JSON. Μην συμπεριλάβετε καμία άσχετη πληροφορία.
 
 Μορφή προτύπου email:
 
@@ -6115,21 +6985,72 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
+        <source>Failed to get MCP server instance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
+        <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
+        <translation type="unfinished">Ο διακομιστής &apos;%1&apos; δεν είναι προσαρμοσμένος ή δεν υπάρχει</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
+        <source>MCP server name &apos;%1&apos; already exists</source>
+        <translation type="unfinished">Το όνομα διακομιστή MCP &apos;%1&apos; υπάρχει ήδη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
+        <source>Server &apos;%1&apos; does not exist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SessionManager</name>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="52"/>
+        <source>Session with ID %1 already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="63"/>
+        <source>Session %1 create assistant %2 failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="74"/>
+        <source>Session %1 create success</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="120"/>
+        <source>Session %1 not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="128"/>
+        <source>Session %1 is not idle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ShortcutUpdateDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="51"/>
         <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation>Συντόμευση: [Super + Space]. Γρήγορη πρόσβαση στο UOS AI για όλες τις λειτουργίες AI σε ένα μέρος.</translation>
+        <translation type="vanished">Συντόμευση: [Super + Space]. Γρήγορη πρόσβαση στο UOS AI για όλες τις λειτουργίες AI σε ένα μέρος.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="79"/>
         <source>Got it</source>
-        <translation>Το κατάλαβα</translation>
+        <translation type="vanished">Το κατάλαβα</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="107"/>
         <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation>Αυτό το μήνυμα θα εμφανιστεί %1 ακόμη φορές, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Να μην εμφανιστεί ξανά&lt;/a&gt;</translation>
+        <translation type="vanished">Αυτό το μήνυμα θα εμφανιστεί %1 ακόμη φορές, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Να μην εμφανιστεί ξανά&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -6211,93 +7132,1727 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::SkillServerListItem</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
-        <source>built-in</source>
-        <translation type="unfinished">ενσωματωμένο</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
-        <source>Skill List</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
+        <source>UOS AI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
-        <source>Import Skill</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
-        <source>Supported files</source>
-        <translation type="unfinished">Υποστηριζόμενα αρχεία</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
-        <source>Confirm deletion %1?</source>
-        <translation type="unfinished">Επιβεβαίωση διαγραφής %1;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
-        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
+        <source>Update History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
+        <source>Settings</source>
+        <translation type="unfinished">Ρυθμίσεις</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
+        <source>About</source>
+        <translation type="unfinished">Σχετικά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
+        <source>New Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
+        <source>Temporary Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
+        <source>AI Writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
+        <source>AI Translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
+        <source>AI Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
+        <source>MCP Server</source>
+        <translation type="unfinished">Διακομιστής MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
+        <source>Commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
+        <source>Agent Store</source>
+        <translation type="unfinished">Κατάστημα Πρακτόρων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
+        <source>More</source>
+        <translation type="unfinished">Περισσότερα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
+        <source>Chat History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
+        <source>Today</source>
+        <translation type="unfinished">Σήμερα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
+        <source>Yesterday</source>
+        <translation type="unfinished">Χθες</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
+        <source>Last 7 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
+        <source>Last 30 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
+        <source>January</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
+        <source>February</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
+        <source>March</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
+        <source>April</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
+        <source>May</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <source>June</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <source>July</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <source>August</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <source>September</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <source>October</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <source>November</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <source>year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
+        <source>Earlier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
+        <source>Delete</source>
+        <translation type="unfinished">Διαγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
+        <source>Confirm Deletion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
+        <source>Confirm Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>Cancel</source>
         <translation type="unfinished">Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
-        <source>Delete</source>
-        <translation type="unfinished">Διαγραφή</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
-        <source>Skill Enviorment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
+        <source>Batch Manage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
-        <source>Agent Skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
+        <source>All</source>
+        <translation type="unfinished">Όλα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
+        <source>Select All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
-        <source>Configure </source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
+        <source>%1 conversations selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
-        <source>MCP environment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
+        <source>No chat history yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
-        <source>After configuration you can use agent skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
+        <source>Chat content not found</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
+        <source>DeepThink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
+        <source>Search</source>
+        <translation type="unfinished">Αναζήτηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
+        <source>Attachments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
+        <source>Upload Files</source>
+        <translation type="unfinished">Μεταφόρτωση αρχείων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
+        <source>Screenshot Q&amp;A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
+        <source>Voice Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
+        <source>Voice Read</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
+        <source>Stop Reading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
+        <source>Copy</source>
+        <translation type="unfinished">Αντιγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
+        <source>Regenerate</source>
+        <translation type="unfinished">Επαναδημιουργία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
+        <source>Re-edit</source>
+        <translation type="unfinished">Επανεπεξεργασία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
+        <source>Stop Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
+        <source>Generation stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
+        <source>You stopped this answer, please re-edit your question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <source>Back to Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
+        <source>Thinking...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
+        <source>Deep think completed (took %1s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
+        <source>Parsing...</source>
+        <translation type="unfinished">Ανάλυση...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
+        <source>Parsing failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
+        <source>You can add up to 50 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
+        <source>Summarize the core content of the file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
+        <source>Model List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
+        <source>Smart Recommendation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
+        <source>Smart switch for best match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
+        <source>Local Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
+        <source>Online Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
+        <source>Add Model</source>
+        <translation type="unfinished">Προσθήκη Μοντέλου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <source>Official</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
+        <source>You have X newly answered chats</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
+        <source>View Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
+        <source>Remind Me Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
+        <source>Upload files/images as references</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
+        <source>Reference Outline / Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
+        <source>As reference material / As outline file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
+        <source>File Upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
+        <source>As Material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
+        <source>As Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
+        <source>Only 1 file is supported for outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
+        <source>Local Materials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
+        <source>File Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
+        <source>Outline</source>
+        <translation type="unfinished">Περιγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
+        <source>View All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
+        <source>Collapse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
+        <source>Recent Creations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
+        <source>Upload File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
+        <source>Reference Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
+        <source>Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
+        <source>Heading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
+        <source>Export Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
+        <source>Exit Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
+        <source>Untitled Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
+        <source>Enable Privacy Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
+        <source>Continue Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
+        <source>Generating outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
+        <source>Re-upload Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
+        <source>Directly generate outline using AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
+        <source>Add sub-chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <source>Delete chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
+        <source>Add chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
+        <source>Enter chapter title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
+        <source>Delete this heading?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
+        <source>Generate document from outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
+        <source>Save as Word</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
+        <source>Save as PDF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
+        <source>Save as Markdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
+        <source>Saving...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
+        <source>Saved successfully!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
+        <source>Failed to save, please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
+        <source>Undo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
+        <source>Redo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
+        <source>Body Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
+        <source>Heading %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
+        <source>Bold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
+        <source>Italic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
+        <source>Strikethrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
+        <source>Link Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
+        <source>Bulleted List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
+        <source>Numbered List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
+        <source>Decrease Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
+        <source>Increase Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
+        <source>Blockquote</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
+        <source>Divider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
+        <source>Copy Full Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
+        <source>Print Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
+        <source>Share Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
+        <source>Zoom Out</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
+        <source>Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <source>Please enter the text to be translated first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
+        <source>Identifying source language...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
+        <source>My MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
+        <source>Add MCP Server</source>
+        <translation type="unfinished">Προσθήκη διακομιστή MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
+        <source>Delete MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <source>Built-in Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
+        <source>Custom Added Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
+        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <source>Install Now</source>
+        <translation type="unfinished">Εγκατάσταση τώρα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
+        <source>System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
+        <source>Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
+        <source>Wireless Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
+        <source>DND Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
+        <source>Eye Comfort</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
+        <source>Brightness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
+        <source>Volume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
+        <source>Font Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
+        <source>App Store</source>
+        <translation type="unfinished">Κατάστημα εφαρμογών</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
+        <source>Schedule Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
+        <source>Click to download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
+        <source>downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <source>Go to configuration</source>
+        <translation type="unfinished">Μετάβαση στη διαμόρφωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
+        <source>No account</source>
+        <translation type="unfinished">Κανένας λογαριασμός</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
+        <source>Input question</source>
+        <translation type="unfinished">Ερώτηση εισόδου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">Καλώς ήρθατε στο UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation type="unfinished">Ακολουθούν μερικά πράγματα με τα οποία μπορεί να σας βοηθήσει το UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
+        <source>Stop</source>
+        <translation type="unfinished">Σταμάτα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
+        <source>Retry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
+        <source>Clear conversation history</source>
+        <translation type="unfinished">Εκκαθάριση ιστορικού συνομιλίας</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
+        <source>Please connect the microphone and try again</source>
+        <translation type="unfinished">Παρακαλώ συνδέστε το μικρόφωνο και δοκιμάστε ξανά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
+        <source>Chat history cleared</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
+        <source>Click to start/stop recording</source>
+        <translation type="unfinished">Κάντε κλικ για να ξεκινήσετε/σταματήσετε την εγγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
+        <source>Listening</source>
+        <translation type="unfinished">Ακρόαση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
+        <source>Sleeping</source>
+        <translation type="unfinished">Αδράνεια</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
+        <source>Microphone not detected</source>
+        <translation type="unfinished">Δεν εντοπίστηκε μικρόφωνο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
+        <source>Connection failed, click to try again</source>
+        <translation type="unfinished">Αποτυχία σύνδεσης, κάντε κλικ για να δοκιμάσετε ξανά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
+        <source>Click on the animation or Ctrl+Super+Space to activate</source>
+        <translation type="unfinished">Κάντε κλικ στην κινούμενη εικόνα ή Ctrl+Super+Space για ενεργοποίηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">Η φωνητική εισαγωγή είναι προσωρινά μη διαθέσιμη, παρακαλώ ελέγξτε το δίκτυο!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
+        <source>Voice conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
+        <source>Click the animation or press Enter to send</source>
+        <translation type="unfinished">Κάντε κλικ στην κινούμενη εικόνα ή πατήστε Enter για αποστολή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
+        <source>Stop recording after %1 seconds</source>
+        <translation type="unfinished">Διακοπή εγγραφής μετά από %1 δευτερόλεπτα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
+        <source>Thinking</source>
+        <translation type="unfinished">Σκέψη</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
+        <source>Click animation to interrupt</source>
+        <translation type="unfinished">Κάντε κλικ στην κινούμενη εικόνα για διακοπή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
+        <source>Answering</source>
+        <translation type="unfinished">Απάντηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
+        <source>Activate</source>
+        <translation type="unfinished">Ενεργοποίηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
+        <source>Voice input</source>
+        <translation type="unfinished">Φωνητική εισαγωγή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">Η φωνητική μετάδοση είναι προσωρινά μη διαθέσιμη, παρακαλώ ελέγξτε το δίκτυο!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
+        <source>Turn off voice conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation type="unfinished">Η εικόνα έχει δημιουργηθεί, παρακαλώ μεταβείτε στη διεπαφή συνομιλίας για να τη δείτε.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
+        <source>No account, please configure an account</source>
+        <translation type="unfinished">Δεν υπάρχει λογαριασμός, παρακαλώ διαμορφώστε έναν λογαριασμό</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
+        <source>Answer each question up to 5 times</source>
+        <translation type="unfinished">Απαντήστε σε κάθε ερώτηση έως 5 φορές</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
+        <source>Copied successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
+        <source>Sound output device not detected</source>
+        <translation type="unfinished">Δεν εντοπίστηκε συσκευή εξόδου ήχου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation type="unfinished">Δεν εντοπίστηκε συσκευή εξόδου ήχου, παρακαλώ ελέγξτε και δοκιμάστε ξανά!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
+        <source>Mode</source>
+        <translation type="unfinished">Λειτουργία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
+        <source>Window Mode</source>
+        <translation type="unfinished">Λειτουργία Παραθύρου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
+        <source>Sidebar Mode</source>
+        <translation type="unfinished">Λειτουργία Πλευρικής Μπάρας</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
+        <source>Assistant List</source>
+        <translation type="unfinished">Λίστα Βοηθών</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
+        <source>Agent List</source>
+        <translation type="unfinished">Λίστα Πρακτόρων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
+        <source>UOS System Assistant</source>
+        <translation type="unfinished">Βοηθός Συστήματος UOS</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
+        <source>Deepin System Assistant</source>
+        <translation type="unfinished">Βοηθός Συστήματος Deepin</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
+        <source>Please configure the knowledge base</source>
+        <translation type="unfinished">Παρακαλώ διαμορφώστε τη βάση γνώσεων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation type="unfinished">Πριν χρησιμοποιήσετε τον [Προσωπικό Βοηθό Γνώσεων], είναι απαραίτητο να διαμορφώσετε τη βάση γνώσεων. Μετά τη διαμόρφωση της βάσης γνώσεων, η AI θα απαντά σε ερωτήσεις ή θα δημιουργεί περιεχόμενο με βάση το περιεχόμενο που έχετε διαμορφώσει στη βάση γνώσεων.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
+        <source>Please configure the large model</source>
+        <translation type="unfinished">Παρακαλώ διαμορφώστε το μεγάλο μοντέλο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation type="unfinished">Ο προσωπικός βοηθός γνώσεων μπορεί να χρησιμοποιηθεί μόνο μετά τη διαμόρφωση ενός μεγάλου μοντέλου.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
+        <source>To configure</source>
+        <translation type="unfinished">Για διαμόρφωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
+        <source>To install</source>
+        <translation type="unfinished">Για εγκατάσταση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation type="unfinished">Παρακαλώ εγκαταστήστε τα [EmbeddingPlugins]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation type="unfinished">Αυτός ο βοηθός απαιτεί την εγκατάσταση των EmbeddingPlugins για να λειτουργήσει</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
+        <source>Drag files here to add them.</source>
+        <translation type="unfinished">Σύρετε αρχεία εδώ για να τα προσθέσετε.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation type="unfinished">Μπορείτε να προσθέσετε μόνο 3 αρχεία· υποστηριζόμενοι τύποι αρχείων: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, αρχεία κώδικα κ.ά.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
+        <source>You can only add a maximum of one file.</source>
+        <translation type="unfinished">Μπορείτε να προσθέσετε το πολύ ένα αρχείο.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
+        <source>The file format is not supported.</source>
+        <translation type="unfinished">Η μορφή του αρχείου δεν υποστηρίζεται.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
+        <source>Summarize the key content of the file.</source>
+        <translation type="unfinished">Συνοψίστε το βασικό περιεχόμενο του αρχείου.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
+        <source>File Error</source>
+        <translation type="unfinished">Σφάλμα αρχείου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
+        <source>File has been deleted.</source>
+        <translation type="unfinished">Το αρχείο έχει διαγραφεί.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation type="unfinished">Το μέγεθος του αρχείου υπερβαίνει το όριο των 100MB.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
+        <source>Upload a document</source>
+        <translation type="unfinished">Ανεβάστε ένα έγγραφο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
+        <source>File deleted</source>
+        <translation type="unfinished">Αρχείο διαγράφηκε</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
+        <source>No text was parsed</source>
+        <translation type="unfinished">Δεν αναλύθηκε κείμενο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
+        <source>Reference</source>
+        <translation type="unfinished">Αναφορά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
+        <source>Instruction</source>
+        <translation type="unfinished">Οδηγία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation type="unfinished">Πληκτρολογήστε &quot;/&quot; στο πλαίσιο εισαγωγής για ενεργοποίηση.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation type="unfinished">Παρακαλώ εισάγετε; “Ctrl+Enter” για αλλαγή γραμμής.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation type="unfinished">Εισάγετε την ερώτησή σας, ή πληκτρολογήστε &quot;/&quot; για επιλογή εντολής
+&quot;Ctrl+Enter&quot; για νέα γραμμή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
+        <source>Search complete.</source>
+        <translation type="unfinished">Η αναζήτηση ολοκληρώθηκε.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
+        <source>Click to view results</source>
+        <translation type="unfinished">Κάντε κλικ για προβολή αποτελεσμάτων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
+        <source>edit</source>
+        <translation type="unfinished">επεξεργασία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <source>save</source>
+        <translation type="unfinished">αποθήκευση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
+        <source>copy</source>
+        <translation type="unfinished">αντιγραφή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <source>Thinking has stopped</source>
+        <translation type="unfinished">Η σκέψη έχει σταματήσει</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
+        <source>Back to bottom</source>
+        <translation type="unfinished">Επιστροφή στο κάτω μέρος</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation type="unfinished">Σκέφτηκε βαθιά (%1 δευτερόλεπτα)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">Νέα Συζήτηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
+        <source>History</source>
+        <translation type="unfinished">Ιστορικό</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
+        <source>No History Records</source>
+        <translation type="unfinished">Δεν υπάρχουν ιστορικά αρχεία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation type="unfinished">Είστε βέβαιοι ότι θέλετε να διαγράψετε τη συζήτηση; Δεν θα είναι δυνατή η ανάκτησή της μετά τη διαγραφή.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation type="unfinished">Ο πράκτορας %1 που χρησιμοποιήθηκε σε αυτή τη συζήτηση έχει διαγραφεί</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation type="unfinished">Αυτή η συζήτηση δεν μπορεί να προβληθεί. Για να τη δείτε, εγκαταστήστε τον πράκτορα %1 και δοκιμάστε ξανά.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation type="unfinished">Το αρχικό μοντέλο συζήτησης έχει διαγραφεί. Έχουμε αλλάξει σε ένα νέο μοντέλο για να συνεχίσετε τη συζήτηση.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <source>Recommendations</source>
+        <translation type="unfinished">Προτάσεις</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <source>No Model</source>
+        <translation type="unfinished">Κανένα Μοντέλο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation type="unfinished">Δεν υπάρχει διαθέσιμο μοντέλο. Εγκαταστήστε ή ρυθμίστε ένα μοντέλο στις ρυθμίσεις.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation type="unfinished">Παρακαλώ περιγράψτε το θέμα και τις απαιτήσεις για τη δημιουργία σας.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation type="unfinished">Παρακαλώ εισάγετε το περιεχόμενο που θέλετε να μεταφράσετε και καθορίστε τη γλώσσα προορισμού. Η προεπιλεγμένη μετάφραση είναι στα Κινέζικα.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation type="unfinished">Παρακαλώ εισάγετε το κείμενο που θέλετε να επεξεργαστείτε και καθορίστε τις απαιτήσεις σας.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <source>New Agent Added</source>
+        <translation type="unfinished">Προστέθηκε Νέος Πράκτορας</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation type="unfinished">Έχουν προστεθεί νέοι πράκτορες γραφής, επεξεργασίας κειμένου και μετάφρασης. Δοκιμάστε τους τώρα.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <source>Try it</source>
+        <translation type="unfinished">Δοκιμάστε το</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <source>Write an article based on the following document:</source>
+        <translation type="unfinished">Γράψτε ένα άρθρο βασισμένο στο ακόλουθο έγγραφο:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <source>Translate the following document into English:</source>
+        <translation type="unfinished">Μεταφράστε το ακόλουθο έγγραφο στα Αγγλικά:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <source>Add Mcp Server</source>
+        <translation type="unfinished">Προσθήκη Διακομιστή MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <source>Add Server</source>
+        <translation type="unfinished">Προσθήκη Διακομιστή</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <source>Add failed! Error reason:</source>
+        <translation type="unfinished">Η προσθήκη απέτυχε! Αιτία σφάλματος:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation type="unfinished">Λείπει το περιβάλλον MCP. Παρακαλώ εγκαταστήστε τον 【UOS AI Agent】</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <source>Calling</source>
+        <translation type="unfinished">Κλήση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <source>Completed</source>
+        <translation type="unfinished">Ολοκληρώθηκε</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <source>Call Failed</source>
+        <translation type="unfinished">Η κλήση απέτυχε</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <source>Cancelled</source>
+        <translation type="unfinished">Ακυρώθηκε</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <source>params</source>
+        <translation type="unfinished">παράμετροι</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <source>result</source>
+        <translation type="unfinished">αποτέλεσμα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">Για τον διακομιστή MCP, εναλλάξτε στο επίσημα κυκλοφορημένο μοντέλο «DeepSeek-Trial Account»</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation type="unfinished">Εισάγετε εντολή διακομιστή MCP, π.χ. «Άλλαξε το σύστημα σε σκοτεινή λειτουργία για μένα»</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
+        <source>Agent server is not available</source>
+        <translation type="unfinished">Ο διακομιστής πράκτορα δεν είναι διαθέσιμος</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
+        <source>Agent server exception</source>
+        <translation type="unfinished">Εξαίρεση διακομιστή πράκτορα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <source>MCP server is not available</source>
+        <translation type="unfinished">Ο διακομιστής MCP δεν είναι διαθέσιμος</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <source>Confirm</source>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation type="unfinished">Αυτοματοποιήστε εργασίες πολλών αρχείων και εφαρμογών με μία εντολή μέσω της υπηρεσίας MCP. Δοκιμάστε το τώρα!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <source>Use later</source>
+        <translation type="unfinished">Χρήση αργότερα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <source>Enable MCP Server</source>
+        <translation type="unfinished">Ενεργοποίηση διακομιστή MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation type="unfinished">Αφού εγκαταστήσετε το περιβάλλον MCP «UOS AI Agent», κάντε κλικ στο </translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation type="unfinished"> και επιλέξτε «uos-mcp» από τη λίστα διακομιστών MCP.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation type="unfinished">Δοκιμάστε να πείτε: «Άλλαξε το σύστημα σε σκοτεινή λειτουργία».</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <source>Try it now</source>
+        <translation type="unfinished">Δοκιμάστε το τώρα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation type="unfinished">Προσθήκη διακομιστή Mcp[Σελίδα οδηγιών]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation type="unfinished">Για νέους χρήστες: Εγκαταστήστε το περιβάλλον MCP «UOS AI Agent» μέσω του App Store.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation type="unfinished">Η μορφή του αρχείου JSON είναι εσφαλμένη, παρακαλώ ελέγξτε και υποβάλετε ξανά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
+        <source>Install Now &gt;</source>
+        <translation type="unfinished">Εγκατάσταση τώρα &gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <source>General Chat</source>
+        <translation type="unfinished">Γενική συνομιλία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
+        <source>Now in Private Chat</source>
+        <translation type="unfinished">Τώρα σε ιδιωτική συνομιλία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation type="unfinished">Τα μηνύματα ιδιωτικής συνομιλίας δεν αποθηκεύονται στο ιστορικό και θα διαγραφούν οριστικά όταν φύγετε από τη συνομιλία.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation type="unfinished">Στιγμιότυπο οθόνης &amp; Ερωτήσεις Συντόμευση (Ctrl+Alt+Q), υποστηρίζονται έως 3 εικόνες.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
+        <source>Cannot be used during screen recording</source>
+        <translation type="unfinished">Δεν είναι δυνατή η χρήση κατά την εγγραφή οθόνης</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
+        <source>You can upload up to 3 files or image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation type="unfinished">Διαγράψτε το μη φυσιολογικό αρχείο και στείλτε το ξανά</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
+        <source>Add Private Chat</source>
+        <translation type="unfinished">Προσθήκη Ιδιωτικής Συνομιλίας</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation type="unfinished">Προσθήκη [Στιγμιότυπου &amp; Ερωταπαντήσεων]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation type="unfinished">Κάντε ένα στιγμιότυπο και στείλτε το περιεχόμενο στο UOS AI. Μπορείτε επίσης να ανεβάσετε μια εικόνα απευθείας.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
+        <source>OK</source>
+        <translation type="unfinished">Εντάξει</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
+        <source>Next</source>
+        <translation type="unfinished">Επόμενο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation type="unfinished">Προσθήκη [Λειτουργίας Ιδιωτικής Συνομιλίας] – Οι συνομιλίες δεν θα αποθηκεύονται.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
+        <source>No text extracted</source>
+        <translation type="unfinished">Δεν εξήχθη κείμενο</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
+        <source>Image size exceeds 15 MB</source>
+        <translation type="unfinished">Το μέγεθος της εικόνας υπερβαίνει τα 15 MB</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation type="unfinished">Μετά το άνοιγμα της βάσης γνώσης, οι απαντήσεις θα βασίζονται στο περιεχόμενό της. Η ταχύτητα απόκρισης εξαρτάται από την απόδοση του μηχανήματος και το μέγεθος της βάσης γνώσης.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation type="unfinished">Η βάση γνώσης δεν είναι διαθέσιμη όταν επιλεγεί οποιαδήποτε εντολή ή MCP.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation type="unfinished">Το MCP είναι απενεργοποιημένο ενώ η βάση γνώσης είναι ενεργή.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation type="unfinished">Οι εντολές είναι απενεργοποιημένες ενώ η βάση γνώσης είναι ενεργή.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
+        <source>Copy succeeded.</source>
+        <translation type="unfinished">Η αντιγραφή ολοκληρώθηκε.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
+        <source>Copy failed. Please try again.</source>
+        <translation type="unfinished">Η αντιγραφή απέτυχε. Προσπαθήστε ξανά.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
+        <source>Searching</source>
+        <translation type="unfinished">Αναζήτηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation type="unfinished">Λήφθηκαν %1 έγγραφα αναφοράς (%2 δευτερόλεπτα)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
+        <source>Clear History</source>
+        <translation type="unfinished">Καθαρισμός Ιστορικού</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
+        <source>Delete all records?</source>
+        <translation type="unfinished">Διαγραφή όλων των εγγραφών;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation type="unfinished">Μόλις διαγραφεί, το περιεχόμενο δεν μπορεί να ανακτηθεί!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
+        <source>Recommend official models</source>
+        <translation type="unfinished">Σύσταση επίσημων μοντέλων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
+        <source>Disable MCP</source>
+        <translation type="unfinished">Απενεργοποίηση MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">Συνιστάται η χρήση του επίσημου μοντέλου «DeepSeek-Trial Account»</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
+        <source>Quick Open</source>
+        <translation type="unfinished">Γρήγορο Άνοιγμα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation type="unfinished">Αναβάθμιση διακομιστή MCP σε Αυτόματη Λειτουργία</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation type="unfinished">Οι διακομιστές MCP έχουν αναβαθμιστεί σε αυτόματη λειτουργία, επιτρέποντάς σας να έχετε πρόσβαση σε όλους τους διακομιστές MCP με ένα κλικ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation type="unfinished">. Αυτό σας επιτρέπει να αυτοματοποιείτε εργασίες όπως η ρύθμιση συστήματος και η επεξεργασία αρχείων με ένα μόνο κλικ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation type="unfinished">Η προσθήκη διακομιστή MCP μεταφέρθηκε στις Ρυθμίσεις.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation type="unfinished">Για να προσθέσετε περισσότερους διακομιστές MCP, μεταβείτε στις Ρυθμίσεις &gt; Διακομιστής MCP.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
+        <source>Got it</source>
+        <translation type="unfinished">Το κατάλαβα</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
+        <source>Complimentary Model Credits</source>
+        <translation type="unfinished">Δωρεάν Πιστώσεις Μοντέλου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation type="unfinished">Το τρέχον σύστημα προσφέρει το δοκιμαστικό λογαριασμό DeepSeek, το οποίο ανανεώνει αυτόματα τη δωρεάν ποσόστωση στην αρχή κάθε μήνα, επιτρέποντάς σας να το χρησιμοποιείτε χωρίς ανησυχίες.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">Διεκδίκηση Πιστώσεων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">Λήψη δωρεάν λογαριασμού</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
+        <source>Claim Free Credits</source>
+        <translation type="unfinished">Διεκδίκηση Δωρεάν Πιστώσεων</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">Επιτυχής Διεκδίκηση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">Αποτυχία Διεκδίκησης. Παρακαλώ Δοκιμάστε Ξανά.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
+        <source>Enable MCP Server&amp;</source>
+        <translation type="unfinished">Ενεργοποίηση διακομιστή MCP&amp;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
+        <source>Disable MCP Server</source>
+        <translation type="unfinished">Απενεργοποίηση διακομιστή MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
+        <source>Configure MCP Server</source>
+        <translation type="unfinished">Διαμόρφωση διακομιστή MCP</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI Ακολουθήστε/Γράψτε</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemControlInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="23"/>
         <source>System Control</source>
-        <translation>Έλεγχος Συστήματος</translation>
+        <translation type="vanished">Έλεγχος Συστήματος</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="25"/>
         <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation>Αλλαγή σε νέα ταπετσαρία. Ρύθμιση φωτεινότητας οθόνης στο 30%...</translation>
+        <translation type="vanished">Αλλαγή σε νέα ταπετσαρία. Ρύθμιση φωτεινότητας οθόνης στο 30%...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::TtsCompositeWidget</name>
+    <message>
+        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
+        <source>The text you have selected has exceeded the 5000 character limit.</source>
+        <translation type="unfinished">Το κείμενο που έχετε επιλέξει έχει υπερβεί το όριο των 5000 χαρακτήρων.</translation>
     </message>
 </context>
 <context>
@@ -6311,6 +8866,101 @@ json
         <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>Το δίκτυο είναι εκτός σύνδεσης, διακοπή μετατροπής κειμένου σε ομιλία</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSAbilityManager</name>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
+        <source>Brightness is already at maximum and cannot be increased further.</source>
+        <translation type="unfinished">Η φωτεινότητα είναι ήδη στο μέγιστο και δεν μπορεί να αυξηθεί περαιτέρω.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
+        <source>Brightness is already at minimum and cannot be decreased further.</source>
+        <translation type="unfinished">Η φωτεινότητα είναι ήδη στο ελάχιστο και δεν μπορεί να μειωθεί περαιτέρω.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
+        <source>AI Meeting Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
+        <source>Your system memory is %0.</source>
+        <translation type="unfinished">Η μνήμη του συστήματός σας είναι %0.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
+        <source>The language setting interface has been opened. Please set it in this interface.</source>
+        <translation type="unfinished">Το περιβάλλον ρύθμισης γλώσσας έχει ανοίξει. Παρακαλώ ρυθμίστε το σε αυτό το περιβάλλον.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
+        <source>The current mode is already %1 mode.</source>
+        <translation type="unfinished">Η τρέχουσα λειτουργία είναι ήδη %1 λειτουργία.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
+        <source>Unable to close because the current mode %1 does not match the target mode.</source>
+        <translation type="unfinished">Αδυναμία κλεισίματος επειδή η τρέχουσα λειτουργία %1 δεν ταιριάζει με την προορισμένη λειτουργία.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
+        <source>Balance mode cannot be turned off.</source>
+        <translation type="unfinished">Η λειτουργία ισορροπίας δεν μπορεί να απενεργοποιηθεί.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
+        <source>The lock screen has been opened for you</source>
+        <translation type="unfinished">Η οθόνη κλειδώματος έχει ανοίξει για εσάς</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
+        <source>Screen shotting or recording has been completed</source>
+        <translation type="unfinished">Η λήψη οθόνης ή η εγγραφή έχει ολοκληρωθεί</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
+        <source>Only one screen, can&apos;t switch screen mode.</source>
+        <translation type="unfinished">Μόνο μία οθόνη, δεν μπορεί να αλλάξει η λειτουργία οθόνης.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
+        <source>It is the same as the current display mode. Please try again.</source>
+        <translation type="unfinished">Είναι το ίδιο με την τρέχουσα λειτουργία εμφάνισης. Παρακαλώ δοκιμάστε ξανά.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
+        <source>Only one screen, can&apos;t switch screen.</source>
+        <translation type="unfinished">Μόνο μία οθόνη, δεν μπορεί να αλλάξει οθόνη.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
+        <source>Your command has been issued.</source>
+        <translation type="unfinished">Η εντολή σας έχει εκδοθεί.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
+        <source>Failed to rename file %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
+        <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
+Error details:
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
+        <source>Email client has been opened, please confirm to send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
+        <source>App store has been opened, preparing to install application: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6335,80 +8985,193 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::UserAgreementDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished">Συμφωνία Χρήστη UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">Επιβεβαιώνω ότι είμαι άνω των 18 ετών. Αναγνωρίζω και συμφωνώ ότι τα περιεχόμενα που στέλνω και λαμβάνω μέσω της Εφαρμογής είναι άμεσες ανταλλαγές δεδομένων με τον πάροχο υπηρεσιών μεγάλου μοντέλου και δεν έχουν καμία σχέση με την Εταιρεία.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::WelcomeDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished">Καλώς ήρθατε στο UOS AI</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
+        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
+        <translation type="unfinished">Το UOS AI, ο έξυπνος βοηθός σας, έχει σχεδιαστεί για να βελτιώσει την παραγωγικότητά σας και να σας προσφέρει μια υψηλής ποιότητας εμπειρία εργασίας.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
+        <source>Get a free account</source>
+        <translation type="unfinished">Λήψη δωρεάν λογαριασμού</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
+        <source>Add Model</source>
+        <translation type="unfinished">Προσθήκη Μοντέλου</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
+        <source>Start using</source>
+        <translation type="unfinished">Έναρξη χρήσης</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">Επιβεβαιώνω ότι είμαι άνω των 18 ετών. Αναγνωρίζω και συμφωνώ με τη &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Συμφωνία Χρήστη UOS AI&quot;&lt;/a&gt;, και τα περιεχόμενα που στέλνω και λαμβάνω μέσω της Εφαρμογής είναι άμεσες ανταλλαγές δεδομένων με τον πάροχο υπηρεσιών του μεγάλου μοντέλου και δεν έχουν καμία σχέση με την Εταιρεία.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished">Επιβεβαίωση</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished">Έναρξη δοκιμής</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="113"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
         <translation>Απόκρυψη μέχρι την επανεκκίνηση της εφαρμογής</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>Μεταβείτε στις &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Ρυθμίσεις&lt;/a&gt; για να το ενεργοποιήσετε ξανά.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
         <translation>Το προστεθέν περιεχόμενο πρέπει να έχει περισσότερες από 10 λέξεις</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>Αναζήτηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>Εξήγηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>Περίληψη</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>Μετάφραση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
         <translation>Συνέχεια Γραφής</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>Επέκταση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
         <translation>Διόρθωση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
         <source>Add to the AI knowledge base</source>
         <translation>Προσθήκη στη βάση γνώσης AI</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="114"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>Απενεργοποίηση σε Αυτήν την Εφαρμογή</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="115"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>Απενεργοποίηση Παγκοσμίως</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="125"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Προσαρμοσμένες Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
         <source>Polish</source>
         <translation>Βελτίωση</translation>
     </message>
@@ -6416,12 +9179,11 @@ json
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI Ακολούθηση</translation>
+        <translation type="vanished">UOS AI Ακολούθηση</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Προστέθηκε</translation>
     </message>

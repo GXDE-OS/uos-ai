@@ -1,10 +1,7 @@
 #include "useragreementdialog.h"
-#include "dbwrapper.h"
-#include "serverwrapper.h"
 #include "themedlable.h"
 #include "wrapcheckbox.h"
 #include "utils/esystemcontext.h"
-#include "private/echatwndmanager.h"
 
 #include <DTitlebar>
 #include <DFontSizeManager>
@@ -22,8 +19,11 @@
 #include <QScrollArea>
 #include <QApplication>
 #include <QLoggingCategory>
+#include <QFile>
 
-UOSAI_USE_NAMESPACE
+DGUI_USE_NAMESPACE
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -32,7 +32,6 @@ static constexpr char info[] = "uos-ai-assistant_info";
 UserAgreementDialog::UserAgreementDialog(DWidget *parent):
     DAbstractDialog(parent)
 {
-    EWndManager()->registeWindow(this);
     initUI();
 }
 
@@ -139,6 +138,7 @@ QString UserAgreementDialog::getAgreementText()
 {
     QString content;
     // 打开资源文件
+
     QFile file(QLocale::Chinese == QLocale::system().language() && QLocale::SimplifiedChineseScript == QLocale::system().script() ? ":/assets/useragreement/chinese.txt" : ":/assets/useragreement/english.txt");
     if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         // 读取文本内容

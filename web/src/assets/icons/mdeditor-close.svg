@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,0 L16,0 L16,16 L0,16 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/编辑器/关闭" stroke="none" xlink:href="#path-1" fill-rule="nonzero">
+        <g id="ICON-/-Action-/-Add" fill="currentColor">
+            <polygon id="路径" points="12.5 4.25 8.74925 7.99925 12.5 11.75 11.75 12.5 7.99925 8.74925 4.25 12.5 3.5 11.75 7.24925 7.99925 3.5 4.25 4.25 3.5 7.99925 7.24925 11.75 3.5"></polygon>
+        </g>
+    </g>
+</svg>

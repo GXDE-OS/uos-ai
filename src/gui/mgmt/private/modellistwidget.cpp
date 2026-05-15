@@ -1,9 +1,13 @@
 #include "modellistwidget.h"
-#include "modellistitem.h"
-#include "addmodeldialog.h"
+#include "providerlistitem.h"
+#include "modelsubitem.h"
 #include "themedlable.h"
 #include "uosfreeaccounts.h"
-#include "utils/util.h"
+#include "appdatabase.h"
+#include "builtinprovider.h"
+#include "global_key_define.h"
+#include "modifyproviderdialog.h"
+#include "model/modelvendor.h"
 
 #include <DLabel>
 
@@ -11,8 +15,10 @@
 #include <QHBoxLayout>
 #include <QLoggingCategory>
 
-using namespace uos_ai;
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
+
+DWIDGET_USE_NAMESPACE
+using namespace uos_ai;
 
 ModelListWidget::ModelListWidget(DWidget *parent)
     : DWidget(parent)
@@ -31,7 +37,6 @@ void ModelListWidget::initUI()
     m_pGetFreeAccountButton = new IconCommandLinkButton(tr("Get a free account"), IconPosition::Left, this);//Claim a free account
     m_pGetFreeAccountButton->setIcon(QIcon::fromTheme(":/assets/images/free_account.svg").pixmap(QSize(16, 16)));
     DFontSizeManager::instance()->bind(m_pGetFreeAccountButton, DFontSizeManager::T8, QFont::Normal);
-    m_pGetFreeAccountButton->setProperty("editMode", false);
     m_pGetFreeAccountButton->hide();
 
     m_pEditButton = new DCommandLinkButton(tr("Delete"), this);
@@ -64,7 +69,7 @@ void ModelListWidget::initConnect()
 {
     connect(m_pGetFreeAccountButton, &IconCommandLinkButton::clicked, this, &ModelListWidget::onGetFreeAccount);
     connect(m_pEditButton, &DCommandLinkButton::clicked, this, &ModelListWidget::onEditButtonClicked);
-    connect(m_pAddButton, &DCommandLinkButton::clicked, this, &ModelListWidget::signalAddModel);
+    connect(m_pAddButton, &DCommandLinkButton::clicked, this, &ModelListWidget::onAddModel);
     connect(DGuiApplicationHelper::instance(), &DGuiApplicationHelper::themeTypeChanged, this, &ModelListWidget::onThemeTypeChanged);
 }
 
@@ -81,13 +86,32 @@ void ModelListWidget::onThemeTypeChanged()
     qCDebug(logAIGUI) << "Theme type changed for ModelListWidget.";
 }
 
+void ModelListWidget::onEditItemClicked(const QString &id)
+{
+    auto item = this->findChild<ProviderListItem *>("ProviderListItem_" + id);
+    if (!item)
+        return;
+
+    ModifyProviderDialog dialog(item->getData(), item->models(), false, this);
+    connect(&dialog, &ModifyProviderDialog::dataChanged, this, &ModelListWidget::refresh, Qt::QueuedConnection);
+
+    dialog.exec();
+}
+
+void ModelListWidget::onAddModel()
+{
+    ModifyProviderDialog dialog(false, this);
+    connect(&dialog, &ModifyProviderDialog::dataChanged, this, &ModelListWidget::refresh, Qt::QueuedConnection);
+    dialog.exec();
+}
+
 void ModelListWidget::onEditButtonClicked()
 {
     bool editMode = m_pEditButton->property("editMode").toBool();
     m_pEditButton->setProperty("editMode", !editMode);
     editMode = m_pEditButton->property("editMode").toBool();
 
-    auto items = m_pHasModelWidget->findChildren<ModelListItem *>();
+    auto items = m_pHasModelWidget->findChildren<ProviderListItem *>();
     for (auto item : items) {
         item->setEditMode(editMode);
     }
@@ -100,64 +124,83 @@ void ModelListWidget::onEditButtonClicked()
 
 DWidget *ModelListWidget::noModelWidget()
 {
-    DWidget *widget = new DWidget(this);
-    QHBoxLayout *layout = new QHBoxLayout(widget);
-    layout->setContentsMargins(10, 0, 10, 0);
+    if (!m_pNoModelWidget) {
+        QHBoxLayout *bgLayout = new QHBoxLayout;
+        bgLayout->setContentsMargins(10, 0, 10, 0);
+        bgLayout->addWidget(new DLabel(tr("None")));
 
-    layout->addWidget(new DLabel(tr("None"), widget));
-    layout->addStretch();
-
-    QHBoxLayout *bgLayout = new QHBoxLayout;
-    bgLayout->setContentsMargins(0, 0, 0, 0);
-    bgLayout->addWidget(widget);
-
-    m_pNoModelWidget = new DBackgroundGroup(bgLayout, this);
-    m_pNoModelWidget->setContentsMargins(0, 0, 0, 0);
-    m_pNoModelWidget->setFixedHeight(36);
+        m_pNoModelWidget = new DBackgroundGroup(bgLayout, this);
+        m_pNoModelWidget->setContentsMargins(0, 0, 0, 0);
+        m_pNoModelWidget->setFixedHeight(36);
+    }
 
     return m_pNoModelWidget;
 }
 
 DWidget *ModelListWidget::hasModelWidget()
 {
-    DWidget *widget = new DWidget(this);
-    auto layout = new QVBoxLayout(widget);
-    layout->setContentsMargins(0, 0, 0, 0);
+    if (!m_pHasModelWidget) {
+        m_pHasModelWidget = new DWidget(this);
+        auto layout = new QVBoxLayout(m_pHasModelWidget);
+        layout->setContentsMargins(0, 0, 0, 0);
+        layout->setSpacing(10);
+    }
 
-    m_pHasModelWidget = new DBackgroundGroup(layout, this);
-    m_pHasModelWidget->setContentsMargins(0, 0, 0, 0);
-    m_pHasModelWidget->setItemSpacing(1);
     return m_pHasModelWidget;
 }
 
-void ModelListWidget::setModelList(const QList<LLMServerProxy> &llmList)
+void ModelListWidget::refresh()
 {
-    // 先将布局中的控件清空
+    QMap<QString, ProviderAccount> providers = AppDatabase::instance()->queryAllProviders();
+    for (auto it = providers.begin(); it != providers.end();) {
+        if (!BuiltinProvider::instance()->isProviderSupported(it->provider)) {
+            qCWarning(logAIGUI) << "Provider not supported:" << it->id << it->name << it->provider;
+            it = providers.erase(it);
+            continue;
+        }
+
+        // 跳过私有模型
+        if (it->provider.compare(STR_KEY_PRIVATE_NET, Qt::CaseInsensitive) == 0) {
+            it = providers.erase(it);
+            continue;
+        }
+
+        it++;
+    }
+
+    QList<ModelAccountPtr> models = AppDatabase::instance()->queryAllModels();
+
     QList<QWidget *> childWidgets = m_pHasModelWidget->findChildren<QWidget *>();
     for (QWidget *childWidget : childWidgets) {
         childWidget->deleteLater();
     }
 
-    for (auto llm : llmList) {
-        if (llm.model == LLMChatModel::LOCAL_TEXT2IMAGE || llm.model == LLMChatModel::PRIVATE_MODEL) continue;
-        onAppendModel(llm);
+    QMap<QString, QList<ModelAccountPtr>> providerModels;
+    for (const auto &model : models) {
+        providerModels[model->account.id].append(model);
+    }
+
+    for (const auto &provider : providers) {
+        auto providerItem = new ProviderListItem(provider, this);
+        connect(providerItem, &ProviderListItem::signalDeleteItem, this, &ModelListWidget::removeProvider, Qt::QueuedConnection);
+        connect(providerItem, &ProviderListItem::signalEditItem, this, &ModelListWidget::onEditItemClicked, Qt::QueuedConnection);
+        m_pHasModelWidget->layout()->addWidget(providerItem);
+
+        if (providerModels.contains(provider.id)) {
+            for (const auto &model : providerModels[provider.id]) {
+                if (!ModelVendor::isValid(model)) {
+                    qCWarning(logAIGUI) << "Invalid model, account" << model->id << "provider "<< model->account.id << model->account.provider
+                                        << "model" << model->model.id << model->model.modelId;
+                    continue;
+                }
+                auto modelItem = new ModelSubItem(model, this);
+                providerItem->addModelItem(modelItem);
+            }
+        }
     }
 
     adjustWidgetSize();
-    qCInfo(logAIGUI) << "Model list set. count:" << llmList.size();
-}
-
-void ModelListWidget::onAppendModel(const LLMServerProxy &llmServerProxy)
-{
-    auto item = m_pHasModelWidget->findChild<ModelListItem *>("ModelListItem_" + llmServerProxy.id);
-    if (item) return;
-
-    ModelListItem *newItem = new ModelListItem(llmServerProxy, this);
-    connect(newItem, &ModelListItem::signalDeleteItem, this, &ModelListWidget::removeModel, Qt::QueuedConnection);
-    m_pHasModelWidget->layout()->addWidget(newItem);
-
-    adjustWidgetSize();
-    m_pEditButton->setText(tr("Delete"));
+    qCInfo(logAIGUI) << "Provider list set. count:" << providers.size();
 }
 
 void ModelListWidget::onGetFreeAccount()
@@ -166,9 +209,9 @@ void ModelListWidget::onGetFreeAccount()
     emit signalGetFreeAccountClicked();
 }
 
-void ModelListWidget::removeModel(const LLMServerProxy &llmServerProxy)
+void ModelListWidget::removeProvider(const QString &id)
 {
-    auto item = m_pHasModelWidget->findChild<ModelListItem *>("ModelListItem_" + llmServerProxy.id);
+    auto item = m_pHasModelWidget->findChild<ProviderListItem *>("ProviderListItem_" + id);
     if (!item) return;
 
     m_pHasModelWidget->layout()->removeWidget(item);
@@ -176,7 +219,7 @@ void ModelListWidget::removeModel(const LLMServerProxy &llmServerProxy)
     delete item;
 
     adjustWidgetSize();
-    qCInfo(logAIGUI) << "Model removed. id:" << llmServerProxy.id;
+    qCInfo(logAIGUI) << "Provider removed. id:" << id;
 }
 
 void ModelListWidget::adjustWidgetSize()
@@ -186,17 +229,17 @@ void ModelListWidget::adjustWidgetSize()
         m_pHasModelWidget->hide();
         m_pEditButton->hide();
         m_pEditButton->setProperty("editMode", false);
+        m_pEditButton->setText(tr("Delete"));
         m_pAddButton->setEnabled(true);
         m_pGetFreeAccountButton->setEnabled(true);
-    }
-    else {
+    } else {
         m_pNoModelWidget->hide();
         m_pHasModelWidget->show();
         m_pEditButton->show();
     }
 
     checkActivityExists();//判断免费活动是否超时
-    //adjustSize();//屏蔽防止重新布局条目过小的问题
+    //adjustSize();
 }
 
 void ModelListWidget::resetEditButton()
@@ -214,37 +257,29 @@ QString ModelListWidget::getTitleName()
 
 void ModelListWidget::checkActivityExists()
 {
-    if (m_pHasModelWidget->layout()->count() > 0) {
-        auto items = m_pHasModelWidget->findChildren<ModelListItem *>();
-        for (auto item : items) {
-            if (item->getData().type == FREE_NORMAL) {  // 普通免费账号
-                m_pGetFreeAccountButton->hide();
-                return;
-            }
-        }
+    if (hasFreeAccount()) {
+        m_pGetFreeAccountButton->hide();
+        return;
     }
 
     if (m_watcher && m_watcher->isRunning())
-            return;
+        return;
     m_watcher.reset(new QFutureWatcher<QNetworkReply::NetworkError>);
 #ifdef ENABLE_FREEACCOUNT
     {
 #else
     if (UOSAI_NAMESPACE::Util::checkLanguage()) {
 #endif
+        QSharedPointer<UosFreeAccountActivity> tmpActivity(new UosFreeAccountActivity);
         QFuture<QNetworkReply::NetworkError> future = QtConcurrent::run([ = ] {
-            return UosFreeAccounts::instance().freeAccountButtonDisplay("account", m_hasActivity);
+            return UosFreeAccounts::instance().freeAccountButtonDisplay("account", *tmpActivity.data());
         });
         m_watcher->setFuture(future);
         connect(m_watcher.data(), &QFutureWatcher<QNetworkReply::NetworkError>::finished, this, [ = ]() {
-            if( m_pHasModelWidget->layout()->count() > 0) {
-                auto items = m_pHasModelWidget->findChildren<ModelListItem *>();
-                for (auto item : items) {
-                    if (item->getData().type == FREE_NORMAL) {  // 普通免费账号
-                        m_pGetFreeAccountButton->hide();
-                        return;
-                    }
-                }
+            m_hasActivity = *tmpActivity.data();
+            if (hasFreeAccount()) {
+                m_pGetFreeAccountButton->hide();
+                return;
             }
 
             if (QNetworkReply::NoError == m_watcher.data()->future().result() && m_hasActivity.display) {
@@ -258,5 +293,18 @@ void ModelListWidget::checkActivityExists()
 void ModelListWidget::hiddenGetFreeAccountButton()
 {
     m_pGetFreeAccountButton->hide();
+}
+
+bool ModelListWidget::hasFreeAccount() const
+{
+    if (m_pHasModelWidget->layout()->count() > 0) {
+        auto items = m_pHasModelWidget->findChildren<ProviderListItem *>();
+        for (auto item : items) {
+            if (ModelVendor::isUosProvider(item->getData().provider)) {  // 免费账号
+                return true;
+            }
+        }
+    }
+    return false;
 }
 

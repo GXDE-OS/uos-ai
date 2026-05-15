@@ -1,10 +1,9 @@
 #include "articleadjustagent.h"
-#include "articlemodificationagent.h"
-#include "writingstate.h"
-#include "articlemodel.h"
+#include "global_key_define.h"
+#include "research_key_define.h"
 
-#include <QJsonDocument>
 #include <QUuid>
+#include <QDateTime>
 #include <QRegularExpression>
 #include <QLocale>
 
@@ -13,70 +12,58 @@ namespace uos_ai {
 ArticleAdjustAgent::ArticleAdjustAgent(QObject *parent) : LlmAgent(parent)
 {
     m_name = "ArticleAdjustAgent";
-    m_description = "Agent for modifying articles via tool calls";
-    m_systemPrompt = R"(# Role
-You are a **Backend Article Adjustment Specialist**.
-Your role is to modify articles according to user instructions using the `modify_article` tool.
-
-# System Context (CRITICAL)
-When the `modify_article` tool is called, the user's screen **automatically refreshes** to show the new article content.
-You **MUST NOT** output the article text or say "Here is the updated version". Doing so causes duplicate content in the UI.
-
-# Response Rules
-1. **Action**: Call the `modify_article` tool.
-2. **After the tool executes**: Reply with **a single short confirmation sentence** (under 10 words).
-3. **Prohibitions**:
- - ❌ NO outputting the article body.
- - ❌ NO saying "Here is the modified version...".
- - ❌ NO summarizing what was changed.
-
-# Examples
-
-**User**: "Remove the third paragraph, it's too long."
-**Tool Call**: `modify_article(instruction="delete the third paragraph")`
-**AI Output**: Article updated successfully.
-
-**User**: "Change the tone to be more friendly."
-**Tool Call**: `modify_article(instruction="rewrite in a friendly tone")`
-**AI Output**: Tone adjusted.
-)";
+    m_description = "Agent for modifying articles via tool calls.";
 
     QString language = QLocale::system().language() == QLocale::Chinese ? "Chinese" : "English";
-    m_systemPrompt += QString("\nIn %1.\n").arg(language);
+    m_systemPrompt = QString(R"(You are a writing assistant. Apply the user's change using exactly one tool call. Before the tool call output one short sentence; after it output one short sentence.
+- Use `rename_article` to change only the article's main title — never touches body content.
+- Use `rename_section` to change only a section heading — never touches its body content.
+- Use `edit_section` to rewrite a section's body text only — never changes the heading.
+- Use `rewrite_article` for broad changes that span multiple sections or restructure the whole article.
+Never include [ID:…] markers in any field. Respond in %1.
+)").arg(language);
 
-    // 工具定义：增加可选 section_id，LLM 通过带 [ID: xxx] 注记的 Markdown 感知章节 ID，
-    // 精确指定要修改的章节，避免正则全文扫描
-    QString modifyToolJson = R"({
-        "name": "modify_article",
-        "description": "Trigger when user wants to modify the article. Prefer specifying section_id when the user targets a specific section.",
-        "parameters": {
-            "type": "object",
-            "required": ["instruction"],
-            "properties": {
-                "instruction": {
-                    "type": "string",
-                    "description": "The specific instruction for modifying the article."
-                },
-                "section_id": {
-                    "type": "string",
-                    "description": "Optional. The ID of the specific section to modify (e.g. 's2_1'). If omitted, the entire article is considered."
-                }
-            }
-        }
-    })";
+    m_tools.append({
+        STR_RESEARCH_TOOL_RENAME_ARTICLE,
+        "Change only the article's main title (H1 heading). Does not modify any body content.",
+        {
+            {STR_KEY_TITLE, "string", "The new article title (plain text, no # prefix)."},
+        },
+        {STR_KEY_TITLE}
+    });
 
-    QJsonDocument modifyDoc = QJsonDocument::fromJson(modifyToolJson.toUtf8());
-    m_tools.append(modifyDoc.object());
+    m_tools.append({
+        STR_RESEARCH_TOOL_RENAME_SECTION,
+        "Change only a section's heading text. Does not modify the section body.",
+        {
+            {STR_RESEARCH_SECTION_ID, "string", "The [ID: xxx] of the section to rename."},
+            {STR_KEY_TITLE,           "string", "The new heading text (plain text, no # prefix)."},
+        },
+        {STR_RESEARCH_SECTION_ID, STR_KEY_TITLE}
+    });
+
+    m_tools.append({
+        STR_RESEARCH_TOOL_EDIT_SECTION,
+        "Rewrite the body of a single section. Does not change the section heading.",
+        {
+            {STR_RESEARCH_SECTION_ID, "string", "The [ID: xxx] of the section whose body to rewrite."},
+            {STR_KEY_CONTENT,         "string", "New body text (plain Markdown, no heading line)."},
+        },
+        {STR_RESEARCH_SECTION_ID, STR_KEY_CONTENT}
+    });
+
+    m_tools.append({
+        STR_RESEARCH_TOOL_REWRITE_ARTICLE,
+        "Replace the entire article. Use only when changes span multiple sections or restructure the article.",
+        {
+            {STR_KEY_CONTENT, "string", "The complete rewritten article."},
+        },
+        {STR_KEY_CONTENT}
+    });
 }
 
 ArticleAdjustAgent::~ArticleAdjustAgent()
 {
-}
-
-bool ArticleAdjustAgent::initialize()
-{
-    m_modificationAgent = QSharedPointer<ArticleModificationAgent>::create(this);
-    return true;
 }
 
 QSharedPointer<LlmAgent> ArticleAdjustAgent::create()
@@ -84,160 +71,117 @@ QSharedPointer<LlmAgent> ArticleAdjustAgent::create()
     return QSharedPointer<LlmAgent>(new ArticleAdjustAgent());
 }
 
-QJsonObject ArticleAdjustAgent::processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params)
+QVariantHash ArticleAdjustAgent::processRequest(const ModelMessage &question,
+                                                 const QList<ModelMessage> &history,
+                                                 const QVariantHash &params)
 {
-    // 从 WritingState 读取文章内容（取代原来从 params["article"] 直接取字符串）
-    WritingState state = WritingState::fromParams(params);
-    m_article = state.articleContent();
-
-    // 构建 ArticleModel，并将带 ID 注记的 Markdown 追加到 system prompt，
-    // 使 LLM 能够在 modify_article 工具调用中精确指定 section_id
+    m_article      = params.value(STR_RESEARCH_ARTICLE_CONTENT).toString();
+    m_articleId    = params.value(STR_KEY_ID).toString();
     m_articleModel = ArticleModel::fromMarkdown(m_article);
-    if (!m_articleModel.isEmpty()) {
-        m_systemPrompt = m_systemPrompt + "\n\n# Current Article Structure (with Section IDs)\n"
-                         + "Use the [ID: xxx] markers below when calling modify_article with section_id.\n\n"
-                         + m_articleModel.toAnnotatedMarkdown();
-    }
 
-    QJsonObject response = LlmAgent::processRequest(question, history, params);
+    // Inject current article (with section IDs) into the system prompt
+    QString articleForPrompt = m_articleModel.isEmpty() ? m_article : m_articleModel.toAnnotatedMarkdown();
+    m_systemPrompt += QString("\n\n# Current Article\n\n%1").arg(articleForPrompt);
 
-    QString newArticle;
-    QJsonArray contextArray = response.value("context").toArray();
-    for (auto context : contextArray) {
-        QJsonObject contextObj = context.toObject();
-        if (contextObj.value("role") == "tool") {
-            newArticle = contextObj.value("content").toString() + "\n\n";
-            break;
-        }
-    }
-    QString title;
-    QRegularExpression re(R"(^#\s+(.*)$)", QRegularExpression::MultilineOption);
-    QRegularExpressionMatch match = re.match(newArticle);
-    if (match.hasMatch()) {
-        title = match.captured(1).trimmed();
-    } else {
-        title = tr("Untitled");
-    }
-
-    if (!newArticle.isEmpty()) {
-        QJsonObject message;
-        QJsonObject contentObj;
-        contentObj.insert("id", QUuid::createUuid().toString(QUuid::WithoutBraces));
-        contentObj.insert("title", title);
-        contentObj.insert("content", newArticle);
-        message.insert("content", contentObj);
-        message.insert("chatType", ChatAction::ChatDocCard);
-        QJsonObject wrapper;
-        wrapper.insert("message", message);
-        wrapper.insert("stream", true);
-        emit readyReadChatDeltaContent(QJsonDocument(wrapper).toJson());
-    }
+    m_modelParams[STR_KEY_STREAM] = true;
+    QVariantHash response = LlmAgent::processRequest(question, history, params);
+    response[STR_RESEARCH_CLEAN_ARTICLE] = m_pendingArticle;
 
     return response;
 }
 
 QPair<int, QString> ArticleAdjustAgent::callTool(const QString &toolName, const QJsonObject &params)
 {
-    if (toolName == "modify_article") {
-        QString instruction = params.value("instruction").toString();
-        QString sectionId   = params.value("section_id").toString();
+    if (toolName != STR_RESEARCH_TOOL_RENAME_ARTICLE  &&
+        toolName != STR_RESEARCH_TOOL_RENAME_SECTION  &&
+        toolName != STR_RESEARCH_TOOL_EDIT_SECTION    &&
+        toolName != STR_RESEARCH_TOOL_REWRITE_ARTICLE)
+        return qMakePair(-1, QString("Unknown tool: %1").arg(toolName));
 
-        if (m_article.isEmpty()) {
-            return qMakePair(0, QString("Error: No article content found to modify."));
-        }
+    // Remove all tools immediately to prevent the LLM from calling a second time
+    m_tools.clear();
 
-        m_modificationAgent->setModel(m_llm);
-        QString modifiedArticle;
+    // Strip [ID: xxx] markers the LLM may have copied from the annotated prompt
+    static QRegularExpression idMarkerRe(R"(\s*\[ID:\s*[^\]]+\])");
 
-        if (!sectionId.isEmpty() && !m_articleModel.isEmpty()) {
-            // 精确模式：仅取出目标章节，交给 LLM 重写，再写回 ArticleModel
-            const ArticleModel::Section *sec = m_articleModel.sectionById(sectionId);
-            if (sec) {
-                if (!sec->content.isEmpty()) {
-                    // 精确模式：章节有直接内容，只重写本节正文
-                    QString heading(sec->level, '#');
-                    QString sectionText = QString("%1 %2\n\n%3").arg(heading, sec->title, sec->content);
-                    QString rewritten = m_modificationAgent->modifyArticle(sectionText, instruction);
+    QString finalArticle;
 
-                    if (rewritten.trimmed() == "DELETE_SECTION") {
-                        m_articleModel.deleteSection(sectionId);
-                    } else {
-                        // 解析重写结果：若首行为标题行则同时更新 title 和 content，
-                        // 避免旧 title 残留导致渲染出两个标题
-                        static QRegularExpression headRe(R"(^#{1,6}\s+(.+))");
-                        QRegularExpressionMatch hm = headRe.match(rewritten.trimmed());
-                        if (hm.hasMatch()) {
-                            m_articleModel.updateSectionTitle(sectionId, hm.captured(1).trimmed());
-                            int newlinePos = rewritten.indexOf('\n');
-                            QString newContent = (newlinePos != -1)
-                                                     ? rewritten.mid(newlinePos + 1).trimmed()
-                                                     : QString();
-                            m_articleModel.updateSection(sectionId, newContent);
-                        } else {
-                            m_articleModel.updateSection(sectionId, rewritten.trimmed());
-                        }
-                    }
-                    modifiedArticle = m_articleModel.toMarkdown();
-                } else {
-                    // 章节无直接内容（内容在子节中）：从原始文章按位置提取完整块
-                    // 找该标题行在 m_article 中的位置
-                    QRegularExpression headFindRe(
-                        QString(R"(^#{%1}\s+%2[^\n]*$)")
-                            .arg(sec->level)
-                            .arg(QRegularExpression::escape(sec->title)),
-                        QRegularExpression::MultilineOption);
-                    QRegularExpressionMatch headMatch = headFindRe.match(m_article);
+    if (toolName == STR_RESEARCH_TOOL_RENAME_ARTICLE) {
+        QString title = params.value(STR_KEY_TITLE).toString().trimmed();
+        if (title.isEmpty())
+            return qMakePair(-1, QString("Error: title is empty."));
 
-                    if (headMatch.hasMatch()) {
-                        int blockStart = headMatch.capturedStart();
-                        // 找下一个同级或更高级标题（块的结束位置）
-                        QRegularExpression blockEndRe(
-                            QString(R"(^#{1,%1}\s+)").arg(sec->level),
-                            QRegularExpression::MultilineOption);
-                        QRegularExpressionMatch endMatch = blockEndRe.match(m_article, headMatch.capturedEnd());
-                        int blockEnd = endMatch.hasMatch() ? endMatch.capturedStart() : m_article.length();
-
-                        QString sectionBlock = m_article.mid(blockStart, blockEnd - blockStart).trimmed();
-                        QString rewritten = m_modificationAgent->modifyArticle(sectionBlock, instruction);
-
-                        modifiedArticle = m_article;
-                        if (rewritten.trimmed() == "DELETE_SECTION") {
-                            modifiedArticle.remove(blockStart, blockEnd - blockStart);
-                        } else {
-                            modifiedArticle.replace(blockStart, blockEnd - blockStart,
-                                                    rewritten.trimmed() + "\n\n");
-                        }
-                    } else {
-                        // 找不到标题，降级为全文修改
-                        modifiedArticle = m_modificationAgent->modifyArticle(m_article, instruction);
-                    }
-                }
-            } else {
-                // section_id 未找到，降级为全文修改
-                modifiedArticle = m_modificationAgent->modifyArticle(m_article, instruction);
-            }
+        if (!m_articleModel.isEmpty()) {
+            // Find the H1 section and update its title
+            const auto &sections = m_articleModel.sections();
+            if (!sections.isEmpty() && sections.first().level == 1)
+                m_articleModel.updateSectionTitle(sections.first().id, title);
+            finalArticle = m_articleModel.toMarkdown();
         } else {
-            // 全文模式（无 section_id 或 ArticleModel 为空）
-            modifiedArticle = m_modificationAgent->modifyArticle(m_article, instruction);
+            // Fallback: replace the H1 line in raw markdown
+            static QRegularExpression h1Re(R"(^#\s+.*$)", QRegularExpression::MultilineOption);
+            finalArticle = m_article;
+            finalArticle.replace(h1Re, QString("# %1").arg(title));
         }
 
-        if (!modifiedArticle.isEmpty()) {
-            m_article = modifiedArticle; // 更新缓存供同一会话多次调用
-            return qMakePair(0, modifiedArticle);
+    } else if (toolName == STR_RESEARCH_TOOL_RENAME_SECTION) {
+        QString sectionId = params.value(STR_RESEARCH_SECTION_ID).toString().trimmed();
+        QString title     = params.value(STR_KEY_TITLE).toString().trimmed();
+        if (sectionId.isEmpty())
+            return qMakePair(-1, QString("Error: section_id is required for rename_section."));
+        if (title.isEmpty())
+            return qMakePair(-1, QString("Error: title is empty."));
+
+        if (!m_articleModel.isEmpty()) {
+            m_articleModel.updateSectionTitle(sectionId, title);
+            finalArticle = m_articleModel.toMarkdown();
         } else {
-            return qMakePair(-1, QString("Error: Failed to modify article."));
+            finalArticle = m_article;
         }
+
+    } else if (toolName == STR_RESEARCH_TOOL_EDIT_SECTION) {
+        QString sectionId = params.value(STR_RESEARCH_SECTION_ID).toString().trimmed();
+        QString content   = params.value(STR_KEY_CONTENT).toString().trimmed();
+        if (sectionId.isEmpty())
+            return qMakePair(-1, QString("Error: section_id is required for edit_section."));
+        if (content.isEmpty())
+            return qMakePair(-1, QString("Error: content is empty."));
+
+        content.replace(idMarkerRe, QString());
+
+        if (!m_articleModel.isEmpty()) {
+            if (content == STR_RESEARCH_DELETE_SECTION)
+                m_articleModel.deleteSection(sectionId);
+            else
+                m_articleModel.updateSection(sectionId, content);
+            finalArticle = m_articleModel.toMarkdown();
+        } else {
+            finalArticle = content;
+        }
+
+    } else {
+        // rewrite_article
+        QString content = params.value(STR_KEY_CONTENT).toString().trimmed();
+        if (content.isEmpty())
+            return qMakePair(-1, QString("Error: content is empty."));
+        content.replace(idMarkerRe, QString());
+        finalArticle = content;
     }
 
-    return qMakePair(-1, QString("Unknown tool: %1").arg(toolName));
-}
+    QString title;
+    static QRegularExpression titleRe(R"(^#\s+(.*)$)", QRegularExpression::MultilineOption);
+    QRegularExpressionMatch match = titleRe.match(finalArticle);
+    if (match.hasMatch()) {
+        title = match.captured(1).trimmed();
+    } else {
+        // Fallback: extract from original article (e.g. edit_section with empty model)
+        QRegularExpressionMatch origMatch = titleRe.match(m_article);
+        title = origMatch.hasMatch() ? origMatch.captured(1).trimmed() : tr("Untitled");
+    }
 
-QString ArticleAdjustAgent::removeReferenceTags(const QString &content)
-{
-    QString result = content;
-    QRegularExpression re(R"(<reference>.*?</reference>)", QRegularExpression::DotMatchesEverythingOption);
-    result.replace(re, "");
-    return result;
+    m_pendingArticle = finalArticle;
+
+    return qMakePair(0, QString("Article updated."));
 }
 
 } // namespace uos_ai

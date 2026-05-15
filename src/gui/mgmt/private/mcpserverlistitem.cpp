@@ -1,8 +1,8 @@
 #include "mcpserverlistitem.h"
 #include "dconfigmanager.h"
 #include "mcpserverlistitemtooltip.h"
-#include "dbwrapper.h"
 #include "../common/echeckagreementdialog.h"
+#include "database/appdatabase.h"
 
 #include <DFontSizeManager>
 #include <DGuiApplicationHelper>
@@ -12,6 +12,7 @@
 #include <QLoggingCategory>
 #include <QTimer>
 
+DWIDGET_USE_NAMESPACE
 using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
@@ -252,7 +253,7 @@ void McpServerListItem::setServerId(const QString &serverId)
 {
     m_serverId = serverId;
 
-    if (m_pBtnSwitch && DbWrapper::localDbWrapper().getThirdPartyMcpAgreement()) {
+    if (m_pBtnSwitch && AppDatabase::instance()->getConfigBool(CONFIG_THIRD_PARTY_MCP)) {
         auto enabledList = DConfigManager::instance()->value(MCP_GROUP, MCP_ENABLED_LIST).toStringList();
         m_pBtnSwitch->setChecked(enabledList.contains(serverId));
     }
@@ -315,13 +316,13 @@ void McpServerListItem::onDelete()
 bool McpServerListItem::getThirdPartyMcpAgreement()
 {
     //先查询数据库，没同意就弹窗
-    if(DbWrapper::localDbWrapper().getThirdPartyMcpAgreement())
+    if(AppDatabase::instance()->getConfigBool(CONFIG_THIRD_PARTY_MCP))
         return true;
 
     ECheckAgreementDialog dlg;
     dlg.exec();
 
-    bool agreed = DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
+    bool agreed = AppDatabase::instance()->getConfigBool(CONFIG_THIRD_PARTY_MCP);
     if (agreed) {
         // 同意协议时，通知刷新所有McpServerListItem的check状态
         emit signalAgreementAccepted();

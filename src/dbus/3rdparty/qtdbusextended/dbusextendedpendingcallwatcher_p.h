@@ -38,11 +38,11 @@
 
 #ifndef DBUSEXTENDEDPENDINGCALLWATCHER_P_H
 #define DBUSEXTENDEDPENDINGCALLWATCHER_P_H
-#include "uosai_global.h"
+
 #include <QDBusPendingCallWatcher>
 #include <QDBusError>
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class DBusExtendedPendingCallWatcher: public QDBusPendingCallWatcher
 {
@@ -65,6 +65,6 @@ private:
     QVariant m_previousValue;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif /* DBUSEXTENDEDPENDINGCALLWATCHER_P_H */

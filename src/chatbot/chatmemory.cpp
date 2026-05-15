@@ -1,5 +1,7 @@
 #include "chatmemory.h"
 #include "chatbotpaths.h"
+#include "chatbot_key_define.h"
+#include "global_key_define.h"
 
 #include <QDateTime>
 #include <QDir>
@@ -10,8 +12,9 @@
 #include <QJsonObject>
 #include <QLoggingCategory>
 
-Q_LOGGING_CATEGORY(logMemory, "uos-ai.chatbot.memory")
+Q_DECLARE_LOGGING_CATEGORY(logChatBot)
 
+using namespace uos_ai;
 using namespace uos_ai::chatbot;
 
 static QString platformFromKey(const QString &key)
@@ -60,25 +63,25 @@ void ChatMemory::appendTurn(const QString &key, const QString &userText,
     h.lastActiveMs = QDateTime::currentMSecsSinceEpoch();
 
     // 存储用户消息
-    h.messages.append({QStringLiteral("user"), userText, {}, {}, h.lastActiveMs});
+    h.messages.append({STR_KEY_USER, userText, {}, {}, h.lastActiveMs});
 
     // 存储 agent context 链（OAI 格式：assistant tool_calls + tool results + 最终 assistant）
     for (const QJsonValue &v : agentContext) {
         const QJsonObject msg = v.toObject();
-        const QString role    = msg.value(QStringLiteral("role")).toString();
+        const QString role    = msg.value(STR_KEY_ROLE).toString();
 
         MemoryMessage m;
         m.timestamp = h.lastActiveMs;
         m.role      = role;
 
-        if (role == QLatin1String("assistant") && msg.contains(QStringLiteral("tool_calls"))) {
-            m.toolCalls = msg.value(QStringLiteral("tool_calls")).toArray();
-            m.content   = msg.value(QStringLiteral("content")).toString();
-        } else if (role == QLatin1String("tool")) {
-            m.toolCallId = msg.value(QStringLiteral("tool_call_id")).toString();
-            m.content    = msg.value(QStringLiteral("content")).toString();
+        if (role == QLatin1String(STR_KEY_ASSISTANT) && msg.contains(STR_KEY_TOOL_CALLS)) {
+            m.toolCalls = msg.value(STR_KEY_TOOL_CALLS).toArray();
+            m.content   = msg.value(STR_KEY_CONTENT).toString();
+        } else if (role == QLatin1String(STR_KEY_TOOL)) {
+            m.toolCallId = msg.value(STR_KEY_TOOL_CALL_ID).toString();
+            m.content    = msg.value(STR_KEY_CONTENT).toString();
         } else {
-            m.content = msg.value(QStringLiteral("content")).toString();
+            m.content = msg.value(STR_KEY_CONTENT).toString();
         }
 
         h.messages.append(m);
@@ -107,7 +110,7 @@ QJsonArray ChatMemory::buildContext(const QString &key, const QString &userText,
 
     // 对齐到轮起始（user 消息）：若 start 指向非 user 消息，跳到下一个 user
     while (start < h.messages.size()
-           && h.messages[start].role != QLatin1String("user")) {
+           && h.messages[start].role != QLatin1String(STR_KEY_USER)) {
         ++start;
     }
 
@@ -116,20 +119,25 @@ QJsonArray ChatMemory::buildContext(const QString &key, const QString &userText,
     for (int i = start; i < h.messages.size(); ++i) {
         const MemoryMessage &m = h.messages[i];
         QJsonObject msg;
-        msg[QStringLiteral("role")] = m.role;
+        msg[STR_KEY_ROLE] = m.role;
 
         if (!m.toolCalls.isEmpty()) {
             // assistant with tool_calls
-            msg[QStringLiteral("content")]    = m.content.isEmpty()
-                                                ? QJsonValue(QJsonValue::Null)
-                                                : QJsonValue(m.content);
-            msg[QStringLiteral("tool_calls")] = m.toolCalls;
+            msg[STR_KEY_CONTENT]    = m.content.isEmpty()
+                                      ? QJsonValue(QJsonValue::Null)
+                                      : QJsonValue(m.content);
+            msg[STR_KEY_TOOL_CALLS] = m.toolCalls;
         } else if (!m.toolCallId.isEmpty()) {
             // tool result
-            msg[QStringLiteral("tool_call_id")] = m.toolCallId;
-            msg[QStringLiteral("content")]       = m.content;
+            msg[STR_KEY_TOOL_CALL_ID] = m.toolCallId;
+            if (m.content.size() > TOOL_RESULT_MAX_CHARS) {
+                msg[STR_KEY_CONTENT] = m.content.left(TOOL_RESULT_MAX_CHARS)
+                    + QStringLiteral("…[truncated]");
+            } else {
+                msg[STR_KEY_CONTENT] = m.content;
+            }
         } else {
-            msg[QStringLiteral("content")] = m.content;
+            msg[STR_KEY_CONTENT] = m.content;
         }
 
         raw.append(msg);
@@ -140,8 +148,8 @@ QJsonArray ChatMemory::buildContext(const QString &key, const QString &userText,
 
     // 追加当前用户消息
     QJsonObject cur;
-    cur[QStringLiteral("role")]    = QStringLiteral("user");
-    cur[QStringLiteral("content")] = userText;
+    cur[STR_KEY_ROLE]    = STR_KEY_USER;
+    cur[STR_KEY_CONTENT] = userText;
     arr.append(cur);
 
     return arr;
@@ -197,7 +205,7 @@ void ChatMemory::clearAll()
     for (const QString &filePath : allConversationFilePaths())
         QFile::remove(filePath);
 
-    qCDebug(logMemory) << "All conversations cleared";
+    qCDebug(logChatBot) << "All conversations cleared";
 }
 
 QStringList ChatMemory::activeKeys() const
@@ -251,29 +259,29 @@ void ChatMemory::load()
         const QJsonObject obj = QJsonDocument::fromJson(f.readAll()).object();
         f.close();
 
-        const QString key = obj.value(QStringLiteral("sessionKey")).toString();
+        const QString key = obj.value(STR_KEY_SESSION_KEY).toString();
         if (key.isEmpty())
             continue;
 
         ConvHistory h;
-        h.summary      = obj.value(QStringLiteral("summary")).toString();
-        h.lastActiveMs = obj.value(QStringLiteral("lastActiveMs")).toVariant().toLongLong();
+        h.summary      = obj.value(STR_KEY_SUMMARY).toString();
+        h.lastActiveMs = obj.value(STR_KEY_LAST_ACTIVE_MS).toVariant().toLongLong();
 
-        for (const QJsonValue &v : obj.value(QStringLiteral("messages")).toArray()) {
+        for (const QJsonValue &v : obj.value(STR_KEY_MESSAGES).toArray()) {
             const QJsonObject m = v.toObject();
             MemoryMessage msg;
-            msg.role        = m.value(QStringLiteral("role")).toString();
-            msg.content     = m.value(QStringLiteral("content")).toString();
-            msg.toolCalls   = m.value(QStringLiteral("tool_calls")).toArray();
-            msg.toolCallId  = m.value(QStringLiteral("tool_call_id")).toString();
-            msg.timestamp   = m.value(QStringLiteral("timestamp")).toVariant().toLongLong();
+            msg.role        = m.value(STR_KEY_ROLE).toString();
+            msg.content     = m.value(STR_KEY_CONTENT).toString();
+            msg.toolCalls   = m.value(STR_KEY_TOOL_CALLS).toArray();
+            msg.toolCallId  = m.value(STR_KEY_TOOL_CALL_ID).toString();
+            msg.timestamp   = m.value(STR_KEY_TIMESTAMP).toVariant().toLongLong();
             h.messages.append(msg);
         }
 
         m_store.insert(key, h);
     }
 
-    qCDebug(logMemory) << "Loaded" << m_store.size() << "conversations";
+    qCDebug(logChatBot) << "Loaded" << m_store.size() << "conversations";
 }
 
 void ChatMemory::scheduleSave(const QString &key)
@@ -296,33 +304,33 @@ void ChatMemory::save(const QString &key)
     const ConvHistory &h = m_store.value(key);
 
     QJsonObject obj;
-    obj[QStringLiteral("sessionKey")]   = key;
-    obj[QStringLiteral("summary")]      = h.summary;
-    obj[QStringLiteral("lastActiveMs")] = h.lastActiveMs;
+    obj[STR_KEY_SESSION_KEY]    = key;
+    obj[STR_KEY_SUMMARY]        = h.summary;
+    obj[STR_KEY_LAST_ACTIVE_MS] = h.lastActiveMs;
 
     QJsonArray messages;
     for (const MemoryMessage &m : h.messages) {
         QJsonObject msg;
-        msg[QStringLiteral("role")]      = m.role;
-        msg[QStringLiteral("content")]   = m.content;
-        msg[QStringLiteral("timestamp")] = m.timestamp;
+        msg[STR_KEY_ROLE]      = m.role;
+        msg[STR_KEY_CONTENT]   = m.content;
+        msg[STR_KEY_TIMESTAMP] = m.timestamp;
         if (!m.toolCalls.isEmpty())
-            msg[QStringLiteral("tool_calls")] = m.toolCalls;
+            msg[STR_KEY_TOOL_CALLS] = m.toolCalls;
         if (!m.toolCallId.isEmpty())
-            msg[QStringLiteral("tool_call_id")] = m.toolCallId;
+            msg[STR_KEY_TOOL_CALL_ID] = m.toolCallId;
         messages.append(msg);
     }
-    obj[QStringLiteral("messages")] = messages;
+    obj[STR_KEY_MESSAGES] = messages;
 
     QFile f(filePath);
     if (!f.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
-        qCWarning(logMemory) << "Failed to save conversation:" << filePath;
+        qCWarning(logChatBot) << "Failed to save conversation:" << filePath;
         return;
     }
     f.write(QJsonDocument(obj).toJson(QJsonDocument::Compact));
     f.close();
 
-    qCDebug(logMemory) << "Saved conversation:" << key;
+    qCDebug(logChatBot) << "Saved conversation:" << key;
 }
 
 void ChatMemory::tryCompress(const QString &key)
@@ -344,7 +352,7 @@ void ChatMemory::tryCompress(const QString &key)
     int protectStart = h.messages.size();
     int turnsFromBack = 0;
     for (int i = h.messages.size() - 1; i >= 0; --i) {
-        if (h.messages[i].role == QLatin1String("user")) {
+        if (h.messages[i].role == QLatin1String(STR_KEY_USER)) {
             ++turnsFromBack;
             if (turnsFromBack >= TOOL_RESULT_KEEP_N) {
                 protectStart = i;
@@ -357,7 +365,7 @@ void ChatMemory::tryCompress(const QString &key)
 
     // 从头部按完整轮次压缩，直到保护区或字符降至目标值
     while (!h.messages.isEmpty()
-           && h.messages.first().role == QLatin1String("user")) {
+           && h.messages.first().role == QLatin1String(STR_KEY_USER)) {
         // 检查当前大小
         int remaining = 0;
         for (int i = 0; i < protectStart && i < h.messages.size(); ++i)
@@ -366,7 +374,7 @@ void ChatMemory::tryCompress(const QString &key)
             break;
 
         // 已到达保护区边界则停止
-        if (h.messages.first().role == QLatin1String("user")
+        if (h.messages.first().role == QLatin1String(STR_KEY_USER)
                 && h.messages.size() > 0
                 && &h.messages.first() == &h.messages[protectStart])
             break;
@@ -377,11 +385,11 @@ void ChatMemory::tryCompress(const QString &key)
         compressed += QStringLiteral("**用户**: ") + userMsg.content + QStringLiteral("\n\n");
 
         while (!h.messages.isEmpty()
-               && h.messages.first().role != QLatin1String("user")) {
+               && h.messages.first().role != QLatin1String(STR_KEY_USER)) {
             const MemoryMessage m = h.messages.takeFirst();
             --protectStart;
             // 只保留最终 assistant 文字摘要，丢弃 tool_calls / tool result 详情
-            if (m.role == QLatin1String("assistant") && m.toolCalls.isEmpty()
+            if (m.role == QLatin1String(STR_KEY_ASSISTANT) && m.toolCalls.isEmpty()
                     && !m.content.isEmpty())
                 compressed += QStringLiteral("**助手**: ") + m.content + QStringLiteral("\n\n");
         }
@@ -391,7 +399,7 @@ void ChatMemory::tryCompress(const QString &key)
         if (!h.summary.isEmpty())
             h.summary += '\n';
         h.summary += compressed;
-        qCDebug(logMemory) << "Compressed conversation" << key
+        qCDebug(logChatBot) << "Compressed conversation" << key
                            << "summary size:" << h.summary.size()
                            << "remaining messages:" << h.messages.size();
     }
@@ -403,8 +411,8 @@ QJsonArray ChatMemory::sanitizeToolMessages(const QJsonArray &msgs)
     QSet<QString> resultIds;
     for (const QJsonValue &v : msgs) {
         const QJsonObject msg = v.toObject();
-        if (msg.value(QStringLiteral("role")).toString() == QLatin1String("tool")) {
-            const QString id = msg.value(QStringLiteral("tool_call_id")).toString();
+        if (msg.value(STR_KEY_ROLE).toString() == QLatin1String(STR_KEY_TOOL)) {
+            const QString id = msg.value(STR_KEY_TOOL_CALL_ID).toString();
             if (!id.isEmpty())
                 resultIds.insert(id);
         }
@@ -414,26 +422,26 @@ QJsonArray ChatMemory::sanitizeToolMessages(const QJsonArray &msgs)
     QJsonArray out;
     for (const QJsonValue &v : msgs) {
         QJsonObject msg = v.toObject();
-        const QString role = msg.value(QStringLiteral("role")).toString();
+        const QString role = msg.value(STR_KEY_ROLE).toString();
 
-        if (role == QLatin1String("assistant") && msg.contains(QStringLiteral("tool_calls"))) {
+        if (role == QLatin1String(STR_KEY_ASSISTANT) && msg.contains(STR_KEY_TOOL_CALLS)) {
             QJsonArray filteredCalls;
-            for (const QJsonValue &tc : msg.value(QStringLiteral("tool_calls")).toArray()) {
-                const QString id = tc.toObject().value(QStringLiteral("id")).toString();
+            for (const QJsonValue &tc : msg.value(STR_KEY_TOOL_CALLS).toArray()) {
+                const QString id = tc.toObject().value(STR_KEY_ID).toString();
                 if (resultIds.contains(id))
                     filteredCalls.append(tc);
             }
             if (filteredCalls.isEmpty()) {
                 // 所有 tool_calls 都孤立：若有文本则退化为普通 assistant 消息
-                const QString content = msg.value(QStringLiteral("content")).toString();
+                const QString content = msg.value(STR_KEY_CONTENT).toString();
                 if (!content.isEmpty()) {
-                    msg.remove(QStringLiteral("tool_calls"));
+                    msg.remove(STR_KEY_TOOL_CALLS);
                     out.append(msg);
                 }
                 // 否则整条跳过
                 continue;
             }
-            msg[QStringLiteral("tool_calls")] = filteredCalls;
+            msg[STR_KEY_TOOL_CALLS] = filteredCalls;
         }
 
         out.append(msg);

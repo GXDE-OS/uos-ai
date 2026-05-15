@@ -1,12 +1,15 @@
 #include "audioaiassistantmainwindowproxy.h"
 #include "audioaiassistantsetting.h"
 #include "audioaiassistant.h"
-#include "serverwrapper.h"
+#include "app/serverwrapper.h"
 #include "networkmonitor.h"
-#include "networkdefs.h"
-#include <QLoggingCategory>
+#include "app/application.h"
 
-UOSAI_USE_NAMESPACE
+#include <QLoggingCategory>
+#include <QJsonDocument>
+#include <QJsonObject>
+
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAudioWizard)
 
@@ -86,6 +89,6 @@ void AudioAiassistantMainWindowProxy::TextToTranslate()
 {
     //随航翻译快捷键
     qCDebug(logAudioWizard) << "Initiating text translation";
-    emit ServerWrapper::instance()->sigToTranslate();
+    QMetaObject::invokeMethod(aiApp, "showTranslate", Qt::QueuedConnection);
 }
 

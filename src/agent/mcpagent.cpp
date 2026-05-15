@@ -1,7 +1,8 @@
 #include "mcpagent.h"
 #include "mcpclient.h"
 #include "mcpserver.h"
-#include "networkdefs.h"
+#include "global_define.h"
+#include "global_key_define.h"
 
 #include <QLoggingCategory>
 #include <QJsonDocument>
@@ -67,7 +68,7 @@ QPair<int, QJsonValue> MCPAgent::listTools() const
 
 QPair<int, QString> MCPAgent::fetchTools(const QStringList &servers)
 {
-    m_tools = QJsonArray();
+    m_tools.clear();
     qCDebug(logAgent) << "Fetching tools from servers:" << servers;
 
     QPair<int, QJsonValue> srv = syncCall<QPair<int, QJsonValue>>([this, servers]() {
@@ -78,7 +79,7 @@ QPair<int, QString> MCPAgent::fetchTools(const QStringList &servers)
     if (srv.first != 0)
         return qMakePair(srv.first, QString());
 
-    QJsonArray toolsArray;
+    ModelToolList toolsArray;
     QString error;
     QStringList invaildSrv = servers;
     for (const QJsonValue &serverValue : srv.second.toArray()) {
@@ -102,7 +103,10 @@ QPair<int, QString> MCPAgent::fetchTools(const QStringList &servers)
         if (serverObj.contains("tools") && serverObj["tools"].isArray()) {
             QJsonArray serverTools = serverObj["tools"].toArray();
             for (const QJsonValue &toolValue : serverTools) {
-                toolsArray.append(toolValue);
+                if (toolValue.isObject()) {
+                    QJsonObject toolObj = toolValue.toObject();
+                    toolsArray.append(ModelTool::fromOai(toolObj));
+                }
             }
         }
     }
@@ -118,7 +122,7 @@ QPair<int, QString> MCPAgent::fetchTools(const QStringList &servers)
     }
 
     m_tools = std::move(toolsArray);
-    return qMakePair(AIServer::ErrorType::NoError, QString());
+    return qMakePair(GErrorType::NoError, QString());
 }
 
 bool MCPAgent::syncServers() const
@@ -139,9 +143,9 @@ bool MCPAgent::syncServers() const
     return ret.first == 0;
 }
 
-QJsonObject MCPAgent::processRequest(const QJsonObject &question, const QJsonArray &history, const QVariantHash &params)
+QVariantHash MCPAgent::processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params)
 {
-    QJsonObject response;
+    QVariantHash response;
     // 先刷新一次服务
     syncServers();
 
@@ -150,14 +154,15 @@ QJsonObject MCPAgent::processRequest(const QJsonObject &question, const QJsonArr
         qCDebug(logAgent) << "agent canceled before fetch tools.";
         return response;
     }
-
-    {
-        auto toolRet = fetchTools(params.value(PREDICT_PARAM_MCPSERVERS).toStringList());
+    auto servers = params.value("mcpServers").toStringList();
+    if (!servers.isEmpty()) {
+        auto toolRet = fetchTools(servers);
         if (toolRet.first != 0) {
             qCWarning(logAgent) << "Failed to fetch tools:" << toolRet.second;
             if (m_llm) {
-                m_llm->setLastError(toolRet.first);
-                m_llm->setLastErrorString(toolRet.second);
+                QVariantHash error;
+                error[STR_KEY_ERROR] = toolRet.first;
+                m_llm->setError(error);
             }
             return response;
         }
@@ -179,11 +184,11 @@ QPair<int, QString> MCPAgent::callTool(const QString &toolName, const QJsonObjec
         return m_mcpClient->callTool(m_name, toolName, params);
     });
 
-    if ((result.first != AIServer::ErrorType::NoError)
-            && (result.first != AIServer::ErrorType::MCPToolError))
+    if ((result.first != GErrorType::NoError)
+            && (result.first != GErrorType::MCPToolError))
         result.first = -1;
 
     return result;
 }
 
-} // namespace uos_ai 
+} // namespace uos_ai

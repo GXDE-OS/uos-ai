@@ -2,18 +2,19 @@
 #include "mcpserverlistitem.h"
 #include "custommcpservereditor.h"
 #include "dconfigmanager.h"
-#include "dbwrapper.h"
 #include "../common/echeckagreementdialog.h"
 #include "global_define.h"
-#include "mcpconfigsyncer.h"
+#include "mcp/mcpconfigsyncer.h"
+#include "appdatabase.h"
+#include "mcp/defaultagent.h"
 
-#include "agentfactory.h"
 #include "mcpserver.h"
 
 #include <DFontSizeManager>
 #include <DDialog>
 
 using namespace uos_ai;
+DWIDGET_USE_NAMESPACE
 
 McpFilterComboBox::McpFilterComboBox(DWidget *parent)
     : DComboBox(parent)
@@ -72,7 +73,7 @@ McpServerListWidget::McpServerListWidget(DWidget *parent)
 
 void McpServerListWidget::updateMcpServersInfo()
 {
-    auto mcpServer = AgentFactory::instance()->getMCPServer(kDefaultAgentName);
+    auto mcpServer = DefaultAgent().mcpServer();
     if (!mcpServer)
         return;
 
@@ -187,7 +188,7 @@ void McpServerListWidget::onAddServerClicked()
 
 void McpServerListWidget::onEditServerClicked(const QString &name)
 {
-    auto mcpServer = AgentFactory::instance()->getMCPServer(kDefaultAgentName);
+    auto mcpServer = DefaultAgent().mcpServer();
     if (!mcpServer)
         return;
 
@@ -208,7 +209,7 @@ void McpServerListWidget::removeCustomMcpServer(const QString &name)
     if (!showRmMcpServerDlg(name))
         return;
 
-    QSharedPointer<MCPServer> mcpServer = AgentFactory::instance()->getMCPServer(kDefaultAgentName);
+    QSharedPointer<MCPServer> mcpServer = DefaultAgent().mcpServer();
     if (!mcpServer)
         return;
 
@@ -336,13 +337,13 @@ bool McpServerListWidget::showRmMcpServerDlg(const QString &name)
 bool McpServerListWidget::getThirdPartyMcpAgreement()
 {
     //先查询数据库，没同意就弹窗
-    if(DbWrapper::localDbWrapper().getThirdPartyMcpAgreement())
+    if(AppDatabase::instance()->getConfigBool(CONFIG_APP_AGREEMENT))
         return true;
 
     ECheckAgreementDialog dlg;
     dlg.exec();
 
-    bool agreed = DbWrapper::localDbWrapper().getThirdPartyMcpAgreement();
+    bool agreed = AppDatabase::instance()->getConfigBool(CONFIG_APP_AGREEMENT);
     if (agreed) {
         // 同意协议时，刷新所有McpServerListItem的check状态
         refreshAllItemsCheckState();

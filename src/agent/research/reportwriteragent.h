@@ -1,7 +1,8 @@
 #ifndef REPORTWRITERAGENT_H
 #define REPORTWRITERAGENT_H
 
-#include "agent/llmagent.h"
+#include "llmagent.h"
+#include "referencemanager.h"
 
 namespace uos_ai {
 
@@ -11,14 +12,39 @@ class ReportWriterAgent : public LlmAgent
 public:
     explicit ReportWriterAgent(QObject *parent = nullptr);
 
-    QJsonObject processRequest(const QJsonObject &question, const QJsonArray &message, const QVariantHash &params = {}) override;
+    QVariantHash processRequest(const ModelMessage &question, const QList<ModelMessage> &history, const QVariantHash &params = {}) override;
 
 private:
-    void outlineJson2Md(const QJsonObject &outlineObj, int level, QString &markdown);
-    void docCardContent(const QString &title, const QString &report);
-    void sendReference(const QJsonObject &reference);
+    struct SectionData {
+        QString title;
+        QString outline;
+        QStringList selectedRefIds;
+        QString retrievedContent;
+        QString filteredMaterialSection;
+    };
 
-    QString m_streamBuffer;
+    // processRequest sub-steps
+    QList<SectionData> prepareSections(const QJsonObject &outlineObj, const QString &materialSection);
+    void loadReferences(const QVariantHash &params);
+    QSharedPointer<AbstractChatModel> createSelectModel();
+    QString buildSectionPrompt(bool isFirst, const QString &materialSection,
+                               const QString &fullOutline, const QString &context,
+                               const QString &sectionOutline, const QString &retrievedContent);
+    ModelMessage buildMaskedHistoryMessage(bool isFirst, const QString &materialSection,
+                                          const QString &fullOutline, const QString &context,
+                                          const QString &sectionOutline);
+    static void appendMaterialPrompt(QString &prompt, const QString &retrievedContent);
+    void ensureSectionSeparator();
+    void finalizeReport(const QString &title, const QString &context, const QString &articleId, QVariantHash &result);
+
+    // Emit helpers
+    QString emitSummary(const QString &context, const QString &article);
+    QList<QStringList> selectRefsForAllSections(const QStringList &sectionOutlines, const QString &materialSection,
+                                                QSharedPointer<AbstractChatModel> selectModel);
+    void trimConversationHistory(QList<ModelMessage> &history, int currentIndex);
+
+    ReferenceManager m_refManager;
+    QString m_report;
 };
 
 } // namespace uos_ai

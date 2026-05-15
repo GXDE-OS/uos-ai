@@ -1,6 +1,6 @@
 #ifndef WIZARDWRAPPER_H
 #define WIZARDWRAPPER_H
-#include "uosai_global.h"
+
 
 #include <DIconButton>
 #include <DWidget>

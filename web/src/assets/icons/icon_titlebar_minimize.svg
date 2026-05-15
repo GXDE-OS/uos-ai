@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画框" transform="translate(-146, -50)" fill="currentColor">
+            <g id="icon_titlebar_Minimize" transform="translate(145, 49)">
+                <rect id="bg" fill-opacity="0.288836051" opacity="0" x="1" y="1" width="16" height="16"></rect>
+                <path d="M14.5897436,9.275 L14.7948718,9.275 C14.908161,9.275 15,9.18316097 15,9.06987179 L15,8.48012821 C15,8.36683903 14.908161,8.275 14.7948718,8.275 L14.5897436,8.275 L3.41025641,8.275 L3.20512821,8.275 C3.09183903,8.275 3,8.36683903 3,8.48012821 L3,9.06987179 C3,9.18316097 3.09183903,9.275 3.20512821,9.275 L3.41025641,9.275 L14.5897436,9.275 Z" id="Line" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,10 +1,12 @@
 #include "asrwrapper.h"
 #include "modelwrapper/ifly/asriflymodel.h"
+
 #include <QString>
 #include <QUuid>
 #include <QLoggingCategory>
+#include <QVariantMap>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 Q_DECLARE_LOGGING_CATEGORY(logAudioWizard)
 
@@ -28,7 +30,7 @@ AsrWrapper::~AsrWrapper()
 
 QString AsrWrapper::startAsr(const QVariantMap &param)
 {
-    qCDebug(logAudioWizard) << "Starting ASR with parameters:" << param.keys();
+    qCDebug(logAudioWizard) << "Starting ASR with parameters:";
     return m_asrModel->startAsr(param);
 }
 void AsrWrapper::stopAsr()

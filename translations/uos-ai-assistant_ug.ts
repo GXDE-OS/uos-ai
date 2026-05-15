@@ -4,513 +4,399 @@
 <context>
     <name>AddModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="56"/>
         <source>Add model</source>
-        <translation>مودېل قوشۇش</translation>
+        <translation type="vanished">مودېل قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="58"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="99"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="120"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="147"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="627"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="628"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="635"/>
         <source>Required, please input</source>
-        <translation>تاللىشىڭىز زۆرۈر، كىرگۈزۈڭ</translation>
+        <translation type="vanished">تاللىشىڭىز زۆرۈر، كىرگۈزۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="107"/>
         <source>APIKey</source>
-        <translation>APIKey</translation>
+        <translation type="vanished">APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="115"/>
         <source>APISecret</source>
-        <translation>APISecret</translation>
+        <translation type="vanished">APISecret</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="123"/>
         <source>Account</source>
-        <translation>ھېسابات</translation>
+        <translation type="vanished">ھېسابات</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="128"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>تاللىشىڭىز زۆرۈر، كۆپ مودېللارنى پەرقلەندۈرۈش ئۈچۈن</translation>
+        <translation type="vanished">تاللىشىڭىز زۆرۈر، كۆپ مودېللارنى پەرقلەندۈرۈش ئۈچۈن</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="139"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="619"/>
         <source>Optional</source>
-        <translation>تاللىشىڭىز مۇمكىن</translation>
+        <translation type="vanished">تاللىشىڭىز مۇمكىن</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="155"/>
         <source>Optional. The default address will be used if not filled in.</source>
-        <translation>تاللىشىڭىز مۇمكىن. كىرگۈزۈلمىسە سۈكۈتتىكى ئادرېس ئىشلىتىلىدۇ.</translation>
+        <translation type="vanished">تاللىشىڭىز مۇمكىن. كىرگۈزۈلمىسە سۈكۈتتىكى ئادرېس ئىشلىتىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="161"/>
         <source>Models List</source>
-        <translation>مودېللار تىزىمى</translation>
+        <translation type="vanished">مودېللار تىزىمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="168"/>
         <source>Custom</source>
-        <translation>ئۆزلۈكىڭىزچە</translation>
+        <translation type="vanished">ئۆزلۈكىڭىزچە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="529"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>سېرۋېرغا ئۇلانالمىدى، تور باغلىنىشىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">سېرۋېرغا ئۇلانالمىدى، تور باغلىنىشىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="818"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>Proxy تەڭشىكى ئۈچۈن، سىستېما Proxy تەڭشىكىگە بارىڭ</translation>
+        <translation type="vanished">Proxy تەڭشىكى ئۈچۈن، سىستېما Proxy تەڭشىكىگە بارىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="821"/>
         <source>Go to settings</source>
-        <translation>تەڭشەككە بارىڭ</translation>
+        <translation type="vanished">تەڭشەككە بارىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="254"/>
         <source>Cancel</source>
-        <translation>ئەمەلدىن قالدۇرۇش</translation>
+        <translation type="vanished">ئەمەلدىن قالدۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="134"/>
         <source>Model Name</source>
-        <translation>مودېل ئىسمى</translation>
+        <translation type="vanished">مودېل ئىسمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="142"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="150"/>
         <source>Domain</source>
-        <translation>دائىرە</translation>
+        <translation type="vanished">دائىرە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="256"/>
         <source>Confirm</source>
-        <translation>جەزملەش</translation>
+        <translation type="vanished">جەزملەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="516"/>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="580"/>
         <source>Save failed, please try again later</source>
-        <translation>ساقلاش مەغلۇپ بولدى، كېيىن قايتا سىناڭ</translation>
+        <translation type="vanished">ساقلاش مەغلۇپ بولدى، كېيىن قايتا سىناڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="725"/>
         <source>The account name already exists, please change it</source>
-        <translation>ھېسابات ئىسمى مەۋجۇت، ئۆزگەرتىڭ</translation>
+        <translation type="vanished">ھېسابات ئىسمى مەۋجۇت، ئۆزگەرتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="367"/>
         <source>No more than 20 characters</source>
-        <translation>20 ھەرپتىن ئاشمايدۇ</translation>
+        <translation type="vanished">20 ھەرپتىن ئاشمايدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="202"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>مودېلنىڭ ئىشلەيدىغانلىقىنى سىناش ئۈچۈن، سىستېما چوڭ مودېلغا سىناق ئۇچۇرى ئەۋەتىدۇ، بۇ ئاز مىقداردا token سەرپ قىلىدۇ.</translation>
+        <translation type="vanished">مودېلنىڭ ئىشلەيدىغانلىقىنى سىناش ئۈچۈن، سىستېما چوڭ مودېلغا سىناق ئۇچۇرى ئەۋەتىدۇ، بۇ ئاز مىقداردا token سەرپ قىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addmodeldialog.cpp" line="460"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>بۇ LLM مەۋجۇت، قايتا قوشماڭ.</translation>
+        <translation type="vanished">بۇ LLM مەۋجۇت، قايتا قوشماڭ.</translation>
     </message>
 </context>
 <context>
     <name>AiCodeTranslation</name>
     <message>
-        <location filename="../src/llm/openai/aicodetranslation.cpp" line="9"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>ھازىر زىيارەتچىلەر بەك كۆپ، كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">ھازىر زىيارەتچىلەر بەك كۆپ، كېيىن قايتا سىناڭ.</translation>
     </message>
 </context>
 <context>
     <name>AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="184"/>
         <source>type</source>
-        <translation>تىپ</translation>
+        <translation type="vanished">تىپ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="283"/>
         <source>Cancel</source>
-        <translation>ئەمەلدىن قالدۇرۇش</translation>
+        <translation type="vanished">ئەمەلدىن قالدۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="308"/>
         <source>Read Aloud</source>
-        <translation>ئاۋازلىق ئوقۇش</translation>
+        <translation type="vanished">ئاۋازلىق ئوقۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="887"/>
         <source>The audio device is not detected, please check and try again.</source>
-        <translation>ئاۋاز قورالى بايقالمىدى، تەكشۈرۈپ قايتا سىناڭ.</translation>
+        <translation type="vanished">ئاۋاز قورالى بايقالمىدى، تەكشۈرۈپ قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="367"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>AI تەرىپىدىن ھاسىل قىلىنغان مەزمۇن پەقەت پايدىلىنىش ئۈچۈن، ئۇچۇرنىڭ توغرا بولۇشىغا دىققەت قىلىڭ.</translation>
+        <translation type="vanished">AI تەرىپىدىن ھاسىل قىلىنغان مەزمۇن پەقەت پايدىلىنىش ئۈچۈن، ئۇچۇرنىڭ توغرا بولۇشىغا دىققەت قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="336"/>
         <source>Copy</source>
-        <translation>كۆچۈرۈش</translation>
+        <translation type="vanished">كۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1379"/>
         <source>Polish this passage for me and just give me the result without any extra content.
 text：</source>
-        <translation>بۇ پارچىنى مېنىڭ ئۈچۈن ياخشىلاپ بېرىڭ ۋە قوشۇمچە مەزمۇنسىز نەتىجىنى بېرىڭ. تېكىست:</translation>
+        <translation type="vanished">بۇ پارچىنى مېنىڭ ئۈچۈن ياخشىلاپ بېرىڭ ۋە قوشۇمچە مەزمۇنسىز نەتىجىنى بېرىڭ. تېكىست:</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1649"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1662"/>
         <source>Current model: </source>
-        <translation>نۆۋەتتىكى مودېل: </translation>
+        <translation type="vanished">نۆۋەتتىكى مودېل: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="329"/>
         <source>Regenerate</source>
-        <translation>قايتا ئىشلەش</translation>
+        <translation type="vanished">قايتا ئىشلەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="107"/>
         <source>simplified Chinese</source>
-        <translation>ئاددىيلاشتۇرۇلغان خەنزۇچە</translation>
+        <translation type="vanished">ئاددىيلاشتۇرۇلغان خەنزۇچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="108"/>
         <source>traditional Chinese</source>
-        <translation>ئەنئەنىۋى خەنزۇچە</translation>
+        <translation type="vanished">ئەنئەنىۋى خەنزۇچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="109"/>
         <source>Tibetan</source>
-        <translation>تىبەتچە</translation>
+        <translation type="vanished">تىبەتچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="110"/>
         <source>English</source>
-        <translation>ئىنگلىزچە</translation>
+        <translation type="vanished">ئىنگلىزچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="111"/>
         <source>Japanese </source>
-        <translation>ياپونچە</translation>
+        <translation type="vanished">ياپونچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="112"/>
         <source>German</source>
-        <translation>نېمىسچە</translation>
+        <translation type="vanished">نېمىسچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="113"/>
         <source>Spanish</source>
-        <translation>ئىسپانچە</translation>
+        <translation type="vanished">ئىسپانچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="114"/>
         <source>French</source>
-        <translation>فىرانسۇزچە</translation>
+        <translation type="vanished">فىرانسۇزچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="115"/>
         <source>Italian</source>
-        <translation>ئىتاليانچە</translation>
+        <translation type="vanished">ئىتاليانچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="116"/>
         <source>Korean</source>
-        <translation>كورېيەچە</translation>
+        <translation type="vanished">كورېيەچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="117"/>
         <source>Malay</source>
-        <translation>مالايچە</translation>
+        <translation type="vanished">مالايچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="118"/>
         <source>Portuguese</source>
-        <translation>پورتۇگالچە</translation>
+        <translation type="vanished">پورتۇگالچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="119"/>
         <source>Russian</source>
-        <translation>رۇسچە</translation>
+        <translation type="vanished">رۇسچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="120"/>
         <source>Thai</source>
-        <translation>تايلاندچە</translation>
+        <translation type="vanished">تايلاندچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="121"/>
         <source>Vietnamese</source>
-        <translation>ۋىيېتنامچە</translation>
+        <translation type="vanished">ۋىيېتنامچە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="354"/>
         <source>Continue Dialog</source>
-        <translation>سۆھبەتنى داۋام قىلدۇرۇش</translation>
+        <translation type="vanished">سۆھبەتنى داۋام قىلدۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="403"/>
         <source>Automatic Detection</source>
-        <translation>ئاپتوماتىك ئالاقىلەش</translation>
+        <translation type="vanished">ئاپتوماتىك ئالاقىلەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="479"/>
         <source>Search</source>
-        <translation>ئىزدەش</translation>
+        <translation type="vanished">ئىزدەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="480"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1333"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1382"/>
         <source>Explain</source>
-        <translation>چۈشەندۈرۈش</translation>
+        <translation type="vanished">چۈشەندۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="482"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1343"/>
         <source>Translate</source>
-        <translation>تەرجىمە قىلىش</translation>
+        <translation type="vanished">تەرجىمە قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="484"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1367"/>
         <source>Expand</source>
-        <translation>كېڭەيتىش</translation>
+        <translation type="vanished">كېڭەيتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="485"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1372"/>
         <source>Correct</source>
-        <translation>تۈزىتىش</translation>
+        <translation type="vanished">تۈزىتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="506"/>
         <source>Add to the AI knowledge base</source>
-        <translation>AI بىلىم ئامبىرىغا قوشۇش</translation>
+        <translation type="vanished">AI بىلىم ئامبىرىغا قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="991"/>
         <source>Added</source>
-        <translation>قوشۇلدى</translation>
+        <translation type="vanished">قوشۇلدى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1258"/>
         <source>Model Configuration</source>
-        <translation>مودېل سەپلىمىسى</translation>
+        <translation type="vanished">مودېل سەپلىمىسى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1310"/>
         <source>Copied</source>
-        <translation>كۆچۈرۈلدى</translation>
+        <translation type="vanished">كۆچۈرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1882"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1916"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1962"/>
         <source>No text recognized.</source>
-        <translation>ھېچقانداق تېكىست تونالمىدى.</translation>
+        <translation type="vanished">ھېچقانداق تېكىست تونالمىدى.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1981"/>
         <source>The added content must be more than 10 words</source>
-        <translation>قوشۇلغان مەزمۇن 10 سۆزدىن كۆپ بولۇشى كېرەك</translation>
+        <translation type="vanished">قوشۇلغان مەزمۇن 10 سۆزدىن كۆپ بولۇشى كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="481"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1338"/>
         <source>Summary</source>
-        <translation>ئۈزۈندە</translation>
+        <translation type="vanished">ئۈزۈندە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="315"/>
         <source>Paste to Text</source>
-        <translation>تېكىستكە چاپلاش</translation>
+        <translation type="vanished">تېكىستكە چاپلاش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="483"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1362"/>
         <source>Continue writing</source>
-        <translation>داۋاملاشتۇرۇش</translation>
+        <translation type="vanished">داۋاملاشتۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="486"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1377"/>
         <source>Polish</source>
-        <translation>پولشا</translation>
+        <translation type="vanished">پولشا</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="613"/>
         <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation>تەرجىمە نەتىجىسى مودېلنىڭ قابىلىيىتى بىلەن چەكلىنىدۇ. ئەگەر تەرجىمىگە قانائەتسىز بولسىڭىز، UOS AI باش بېتىدىكى باشقا مودېللارنى تاللاڭ.</translation>
+        <translation type="vanished">تەرجىمە نەتىجىسى مودېلنىڭ قابىلىيىتى بىلەن چەكلىنىدۇ. ئەگەر تەرجىمىگە قانائەتسىز بولسىڭىز، UOS AI باش بېتىدىكى باشقا مودېللارنى تاللاڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="620"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
         <source>Translate this passage into %1 and give me a clear result directly.
 text：</source>
-        <translation>بۇ پارچىنى %1 گە تەرجىمە قىلىڭ ۋە ئوڭۇشلۇق نەتىجىنى بىۋاستە بېرىڭ.
+        <translation type="vanished">بۇ پارچىنى %1 گە تەرجىمە قىلىڭ ۋە ئوڭۇشلۇق نەتىجىنى بىۋاستە بېرىڭ.
 مەزمۇن：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="799"/>
         <source>Not clickable</source>
-        <translation>چېكىشكە بولمايدۇ</translation>
+        <translation type="vanished">چېكىشكە بولمايدۇ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="907"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
-        <translation>بۇ ئىقتىدارنى پەقەت كىرگۈزۈش ئۇسۇلنى قايتا قوزغىتىپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز. قوللانما:
+        <translation type="vanished">بۇ ئىقتىدارنى پەقەت كىرگۈزۈش ئۇسۇلنى قايتا قوزغىتىپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز. قوللانما:
 
 1. ۋەزىپە بالداقتىكى كىرگۈزۈش ئۇسۇل بەلگىسىگە ئوڭ چېكىڭ.
 
 2. &quot;قايتا قوزغات&quot; نى چېكىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="888"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
         <source>Ok</source>
         <comment>button</comment>
-        <translation>جەزىملەش</translation>
+        <translation type="vanished">جەزىملەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="925"/>
         <source>Fill failed</source>
-        <translation>تولدۇرۇش مەغلۇپ بولدى</translation>
+        <translation type="vanished">تولدۇرۇش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="926"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>كىرگۈزۈش رامكىسى تاللانمىدى، كىرگۈزۈش رامكىسىنى تاللاپ قايتا تولدۇرۇڭ.</translation>
+        <translation type="vanished">كىرگۈزۈش رامكىسى تاللانمىدى، كىرگۈزۈش رامكىسىنى تاللاپ قايتا تولدۇرۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="614"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="927"/>
         <source>Ok</source>
-        <translation>جەزىملەش</translation>
+        <translation type="vanished">جەزىملەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1335"/>
         <source>Explain this passage in plain language. Just give me a clear result without redundant content.
 text：</source>
-        <translation>بۇ پارچىنى ئاددى تىلدا چۈشەندۈرۈڭ. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+        <translation type="vanished">بۇ پارچىنى ئاددى تىلدا چۈشەندۈرۈڭ. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
 
 مەزمۇن：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1340"/>
         <source>Summarize this passage and give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>بۇ پارچىنى قىسقا چۈشەندۈرۈپ بېرىڭ ۋە پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+        <translation type="vanished">بۇ پارچىنى قىسقا چۈشەندۈرۈپ بېرىڭ ۋە پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
 
 مەزمۇن：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
         <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>بۇ پارچىنى مۇناسىۋەتلىك داۋاملاشتۇرۇڭ. كۆپ سۆز كېرەك ئەمەس. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+        <translation type="vanished">بۇ پارچىنى مۇناسىۋەتلىك داۋاملاشتۇرۇڭ. كۆپ سۆز كېرەك ئەمەس. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
 
 مەزمۇن：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1369"/>
         <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
 text：</source>
-        <translation>بۇ پارچىنى مۇناسىۋەتلىك كېڭەيتىڭ. ئالاھىدە ئۇزۇن مەزمۇن كېرەك ئەمەس. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+        <translation type="vanished">بۇ پارچىنى مۇناسىۋەتلىك كېڭەيتىڭ. ئالاھىدە ئۇزۇن مەزمۇن كېرەك ئەمەس. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
 
 مەزمۇن：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1374"/>
         <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
 text：</source>
-        <translation>بۇ پارچىدىكى ئىملاخاتا بار-يوقلۇقىنى تەكشۈرۈڭ. ئەگەر بار بولسا، خاتالىقنىڭ ئورنىنى كۆرسەتىڭ. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+        <translation type="vanished">بۇ پارچىدىكى ئىملاخاتا بار-يوقلۇقىنى تەكشۈرۈڭ. ئەگەر بار بولسا، خاتالىقنىڭ ئورنىنى كۆرسەتىڭ. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
 
 مەزمۇن：</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1420"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1422"/>
         <source> &quot;%1&quot; </source>
-        <translation> &quot;%1&quot; </translation>
+        <translation type="vanished"> &quot;%1&quot; </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1673"/>
         <source>Currently no model</source>
-        <translation>ھازىرچە مودېل يوق</translation>
+        <translation type="vanished">ھازىرچە مودېل يوق</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1690"/>
         <source>Go to configure  </source>
-        <translation>سەپلەشكە بار</translation>
+        <translation type="vanished">سەپلەشكە بار</translation>
     </message>
 </context>
 <context>
     <name>AiToastMessage</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="100"/>
         <source>Chat history cleared</source>
-        <translation>سۆھبەت تارىخى تازىلاندى</translation>
+        <translation type="vanished">سۆھبەت تارىخى تازىلاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="101"/>
         <source>Copied successfully</source>
-        <translation>كۆچۈرۈش مۇۋەپپىقىيەتلىك بولدى</translation>
+        <translation type="vanished">كۆچۈرۈش مۇۋەپپىقىيەتلىك بولدى</translation>
     </message>
 </context>
 <context>
     <name>Application</name>
     <message>
-        <location filename="../src/application.cpp" line="60"/>
-        <location filename="../src/application.cpp" line="62"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation type="vanished">UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="64"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI ئۈستەل ئاستى ئەقىللىق ياردەمچى، شەخسىي ياردەمچىڭىز! سىز ئۇنى تېكىست ياكى ئاۋاز ئارقىلىق ئالاقىلەشتۈرەلەيسىز، ئۇ سوئاللارغا جاۋاب بېرىش، ئۇچۇر تەمىنلەش ۋە تەسۋىرىڭىز بويىچە رەسىم ھاسىل قىلىش قاتارلىق ياردەم بېرەلەيدۇ.</translation>
+        <translation type="vanished">UOS AI ئۈستەل ئاستى ئەقىللىق ياردەمچى، شەخسىي ياردەمچىڭىز! سىز ئۇنى تېكىست ياكى ئاۋاز ئارقىلىق ئالاقىلەشتۈرەلەيسىز، ئۇ سوئاللارغا جاۋاب بېرىش، ئۇچۇر تەمىنلەش ۋە تەسۋىرىڭىز بويىچە رەسىم ھاسىل قىلىش قاتارلىق ياردەم بېرەلەيدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="123"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS AI FollowAlong/Write</translation>
+        <translation type="vanished">UOS AI FollowAlong/Write</translation>
     </message>
     <message>
-        <location filename="../src/application.cpp" line="250"/>
         <source>Knowledge Base Management</source>
-        <translation>بىلىم قۇرۇلمىسى باشقۇرۇش</translation>
+        <translation type="vanished">بىلىم قۇرۇلمىسى باشقۇرۇش</translation>
     </message>
 </context>
 <context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="152"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>مۇلازىمېتكا ئۇلانالمايدۇ، تورىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
     </message>
@@ -518,1089 +404,869 @@ text：</source>
 <context>
     <name>ChatSeesion</name>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="205"/>
-        <source>The command was executed successfully.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="207"/>
-        <source>Command execution failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/tools/functionhandler.cpp" line="229"/>
         <source>function parsing failed</source>
-        <translation>ئىقتىدار تەھلىل مەغلۇپ بولدى</translation>
+        <translation type="vanished">ئىقتىدار تەھلىل مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="252"/>
         <source>Application file does not exist</source>
-        <translation>ئەپ ھۆججىتى مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">ئەپ ھۆججىتى مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="274"/>
         <source>Started successfully</source>
-        <translation>مۇۋەپپىقىيەتلىك قوزغىتىلدى</translation>
+        <translation type="vanished">مۇۋەپپىقىيەتلىك قوزغىتىلدى</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="276"/>
         <source>Startup failed</source>
-        <translation>قوزغىتىش مەغلۇپ بولدى</translation>
+        <translation type="vanished">قوزغىتىش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/tools/functionhandler.cpp" line="211"/>
-        <location filename="../src/tools/functionhandler.cpp" line="280"/>
         <source> The execution output content is </source>
-        <translation> ئىجرا چىقىرىش مەزمۇنى </translation>
+        <translation type="vanished"> ئىجرا چىقىرىش مەزمۇنى </translation>
     </message>
 </context>
 <context>
     <name>ChatWindow</name>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="194"/>
         <source>Mode</source>
-        <translation>ھالىتى</translation>
+        <translation type="vanished">ھالىتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="196"/>
         <source>Window Mode</source>
-        <translation>كۆزنەك ھالىتى</translation>
+        <translation type="vanished">كۆزنەك ھالىتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="201"/>
         <source>Sidebar Mode</source>
-        <translation>يان تىزىملىك ھالىتى</translation>
+        <translation type="vanished">يان تىزىملىك ھالىتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="206"/>
         <source>Settings</source>
-        <translation>تەڭشەكلەر</translation>
+        <translation type="vanished">تەڭشەكلەر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="207"/>
         <source>Update Log</source>
-        <translation>يېڭىلاش خاتىرىسى</translation>
+        <translation type="vanished">يېڭىلاش خاتىرىسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="230"/>
         <source>Voice conversation</source>
-        <translation>ئاۋازلىق سۆزلەش</translation>
+        <translation type="vanished">ئاۋازلىق سۆزلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="737"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="783"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="799"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="844"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="953"/>
         <source>Cancel</source>
-        <translation>ئەمەلدىن قالدۇرۇش</translation>
+        <translation type="vanished">ئەمەلدىن قالدۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="738"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="784"/>
         <source>Delete</source>
-        <translation>ئۆچۈرۈش</translation>
+        <translation type="vanished">ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="740"/>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="954"/>
         <source>Confirm</source>
-        <translation>جەزملەش</translation>
+        <translation type="vanished">جەزملەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="781"/>
         <source>Confirm deletion %1?</source>
-        <translation>%1 ئۆچۈرۈشنى جەزىملەشتۈرەمسىز؟</translation>
+        <translation type="vanished">%1 ئۆچۈرۈشنى جەزىملەشتۈرەمسىز؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="782"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>ئۆچۈرگەندىن كېيىن بۇ مۇلازىمېتىر ئىشلەتكىلى بولمايدۇ، ئېھتىيات بىلەن ئىش قىلىڭ.</translation>
+        <translation type="vanished">ئۆچۈرگەندىن كېيىن بۇ مۇلازىمېتىر ئىشلەتكىلى بولمايدۇ، ئېھتىيات بىلەن ئىش قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="800"/>
         <source>Update</source>
-        <translation type="unfinished">يېڭىلاش</translation>
+        <translation type="obsolete">يېڭىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="846"/>
         <source>Non-vectorized plugin</source>
-        <translation>ۋېكتورلاشمىغان قىستۇرما</translation>
+        <translation type="vanished">ۋېكتورلاشمىغان قىستۇرما</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="847"/>
         <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation>[AI بىلىم ئامبىرى] نى ئىشلىتىشتىن بۇرۇن، سىز ئاۋۋال ۋېكتورلاشتۇرۇش قىستۇرمىسىنى قاچىلىشىڭىز كېرەك، شۇنداق قىلسا AI بىلىم ئامبىرى ئىقتىدارى ئادەتتىكىدەك ئىشلەيدۇ.</translation>
+        <translation type="vanished">[AI بىلىم ئامبىرى] نى ئىشلىتىشتىن بۇرۇن، سىز ئاۋۋال ۋېكتورلاشتۇرۇش قىستۇرمىسىنى قاچىلىشىڭىز كېرەك، شۇنداق قىلسا AI بىلىم ئامبىرى ئىقتىدارى ئادەتتىكىدەك ئىشلەيدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="848"/>
         <source>Install</source>
-        <translation type="unfinished">ئورنىتىش</translation>
+        <translation type="obsolete">ئورنىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="850"/>
         <source>The knowledge base is empty</source>
-        <translation>بىلىم ئامبىرى بوش</translation>
+        <translation type="vanished">بىلىم ئامبىرى بوش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="851"/>
         <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation>[AI بىلىم ئامبىرى] نى ئىشلىتىشتىن بۇرۇن، سىز ئاۋۋال پۈتۈكلەرنى بىلىم ئامبىرىغا قوشۇشىڭىز كېرەك. قوشقاندىن كېيىن، AI سىز قوشقان مەزمۇن ئاساسىدا سوئاللارغا جاۋاب بېرىدۇ.</translation>
+        <translation type="vanished">[AI بىلىم ئامبىرى] نى ئىشلىتىشتىن بۇرۇن، سىز ئاۋۋال پۈتۈكلەرنى بىلىم ئامبىرىغا قوشۇشىڭىز كېرەك. قوشقاندىن كېيىن، AI سىز قوشقان مەزمۇن ئاساسىدا سوئاللارغا جاۋاب بېرىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="852"/>
         <source>Add Files</source>
-        <translation>ھۆججەت قوشۇش</translation>
+        <translation type="vanished">ھۆججەت قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="881"/>
         <source>The following file has expired and cannot be used. Continue?</source>
-        <translation>تۆۋەندىكى ھۆججەتنىڭ ۋاقتى ئۆتۈپ كەتكەن، ئىشلەتكىلى بولمايدۇ. داۋاملاشتۇرامسىز؟</translation>
+        <translation type="vanished">تۆۋەندىكى ھۆججەتنىڭ ۋاقتى ئۆتۈپ كەتكەن، ئىشلەتكىلى بولمايدۇ. داۋاملاشتۇرامسىز؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="967"/>
         <source>Use later</source>
-        <translation>كېيىن ئىشلىتىش</translation>
+        <translation type="vanished">كېيىن ئىشلىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="968"/>
         <source>Install Now</source>
-        <translation>ھازىر قاچىلاش</translation>
+        <translation type="vanished">ھازىر قاچىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="970"/>
         <source>MCP environment missing</source>
-        <translation>MCP مۇھىتى يوقاپ كەتتى</translation>
+        <translation type="vanished">MCP مۇھىتى يوقاپ كەتتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="971"/>
         <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation>App Store غا بېرىپ UOS AI Agent نى قاچىلىشىڭىزنى سورايمىز</translation>
+        <translation type="vanished">App Store غا بېرىپ UOS AI Agent نى قاچىلىشىڭىزنى سورايمىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="993"/>
         <source>Not Now</source>
-        <translation>ھازىر ئەمەس</translation>
+        <translation type="vanished">ھازىر ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="994"/>
         <source>Claim Credits</source>
-        <translation>نەق پۇل تەلەپ قىلىش</translation>
+        <translation type="vanished">نەق پۇل تەلەپ قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="996"/>
         <source>Free Credits Delivered</source>
-        <translation>ھەقسىز نەق پۇل تەقسىم قىلىندى</translation>
+        <translation type="vanished">ھەقسىز نەق پۇل تەقسىم قىلىندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="997"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>سىناق ھېساباتىڭىزنىڭ ھەقسىز نەق پۇلىنى تۈگەتتىڭىز. بىز سىزگە بۇ ئايدا ئىشلىتىشكە بولىدىغان قوشۇمچە 200 ھەقسىز نەق پۇل بەردۇق. تېخىمۇ كۆپ ئالاھىدىلىكلەرنى بايقاپ، UOS AI نىڭ چەكلىمىسىز ئىقتىدارلىرىنى ئاچ!</translation>
+        <translation type="vanished">سىناق ھېساباتىڭىزنىڭ ھەقسىز نەق پۇلىنى تۈگەتتىڭىز. بىز سىزگە بۇ ئايدا ئىشلىتىشكە بولىدىغان قوشۇمچە 200 ھەقسىز نەق پۇل بەردۇق. تېخىمۇ كۆپ ئالاھىدىلىكلەرنى بايقاپ، UOS AI نىڭ چەكلىمىسىز ئىقتىدارلىرىنى ئاچ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1014"/>
         <source>OK</source>
-        <translation>جازا</translation>
+        <translation type="vanished">جازا</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Successfully Claimed</source>
-        <translation>مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
+        <translation type="vanished">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1015"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+        <translation type="vanished">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1526"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI سىزنىڭ ئۈستەلئۈستى ئەقىللىق ياردەمچىڭىز، شەخسىي ياردەمچىڭىز! سىز ئۇنى تېكىست ياكى ئاۋاز ئارقىلىق سۆزلەش ئۈچۈن ئىشلىتەلەيسىز، ئۇ سوئاللارغا جاۋاب بېرىش، ئۇچۇر تەمىنلەش ۋە سىزنىڭ تەسۋىرلىرىڭىزگە ئاساسەن رەسىم ھاسىل قىلىش قاتارلىق جەريانلاردا سىزگە ياردەم قىلالايدۇ.</translation>
+        <translation type="vanished">UOS AI سىزنىڭ ئۈستەلئۈستى ئەقىللىق ياردەمچىڭىز، شەخسىي ياردەمچىڭىز! سىز ئۇنى تېكىست ياكى ئاۋاز ئارقىلىق سۆزلەش ئۈچۈن ئىشلىتەلەيسىز، ئۇ سوئاللارغا جاۋاب بېرىش، ئۇچۇر تەمىنلەش ۋە سىزنىڭ تەسۋىرلىرىڭىزگە ئاساسەن رەسىم ھاسىل قىلىش قاتارلىق جەريانلاردا سىزگە ياردەم قىلالايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/chatwindow.cpp" line="1550"/>
         <source>Filing Information</source>
-        <translation>ھۆججەت ئۇچۇرى</translation>
+        <translation type="vanished">ھۆججەت ئۇچۇرى</translation>
     </message>
 </context>
 <context>
     <name>CodeTranslation360</name>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="9"/>
         <source>Authentication failed, insufficient balance</source>
-        <translation>دەلىللەش مەغلۇپ بولدى، پۇل يېتەرسىز</translation>
+        <translation type="vanished">دەلىللەش مەغلۇپ بولدى، پۇل يېتەرسىز</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="10"/>
         <source>Authentication failed, daily limit exceeded</source>
-        <translation>دەلىللەش مەغلۇپ بولدى، كۈندىلىك چەك ئاشتى</translation>
+        <translation type="vanished">دەلىللەش مەغلۇپ بولدى، كۈندىلىك چەك ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="11"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>ھازىر زىيارەتچىلەر بەك كۆپ، كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">ھازىر زىيارەتچىلەر بەك كۆپ، كېيىن قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/360/360codetranslation.cpp" line="12"/>
         <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation>مۇلازىمەت نورمال ئەمەس. تۈزىتىش ئۈچۈن تەرەققىيات گۇرۇپپىسى بىلەن ئالاقىلىشىڭ.</translation>
+        <translation type="vanished">مۇلازىمەت نورمال ئەمەس. تۈزىتىش ئۈچۈن تەرەققىيات گۇرۇپپىسى بىلەن ئالاقىلىشىڭ.</translation>
     </message>
 </context>
 <context>
     <name>CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="30"/>
         <source>Error</source>
-        <translation>خاتالىق</translation>
+        <translation type="vanished">خاتالىق</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="52"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>جەزملەش</translation>
+        <translation type="vanished">جەزملەش</translation>
+    </message>
+</context>
+<context>
+    <name>DocParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
+        <source>The document content is invalid or empty.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>EAiExecutor</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="185"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1154"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation>شەخسىي بىلىم ياردەمچىسىنى بىلىم ئامبىرىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+        <translation type="vanished">شەخسىي بىلىم ياردەمچىسىنى بىلىم ئامبىرىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="199"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1168"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation>شەخسىي بىلىم ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+        <translation type="vanished">شەخسىي بىلىم ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="201"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1170"/>
         <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation>چوڭقۇر سىستېما ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+        <translation type="vanished">چوڭقۇر سىستېما ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="203"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1172"/>
         <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation>UOS سىستېما ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+        <translation type="vanished">UOS سىستېما ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="427"/>
         <source>Knowledge Base Management</source>
-        <translation>بىلىم ئامبىرىنى باشقۇرۇش</translation>
+        <translation type="vanished">بىلىم ئامبىرىنى باشقۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="433"/>
         <source>MCP Server</source>
-        <translation>MCP سېرۋېر</translation>
+        <translation type="vanished">MCP سېرۋېر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1143"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1255"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1366"/>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1425"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI نى ئىشلىتىش ئۈچۈن ئالدى بىلەن AI مودېل ھېساباتىنى تەڭشەش كېرەك. ئالدى بىلەن مودېل ھېساباتىنى تەڭشەڭ.</translation>
+        <translation type="vanished">UOS AI نى ئىشلىتىش ئۈچۈن ئالدى بىلەن AI مودېل ھېساباتىنى تەڭشەش كېرەك. ئالدى بىلەن مودېل ھېساباتىنى تەڭشەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1185"/>
         <source>Please configure the knowledge base.</source>
-        <translation>بىلىم ئامبىرىنى سەپلەڭ.</translation>
+        <translation type="vanished">بىلىم ئامبىرىنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="1189"/>
         <source>Please install the model plug.</source>
-        <translation>مودېل قىستۇرمىسىنى قاچىلىڭ.</translation>
+        <translation type="vanished">مودېل قىستۇرمىسىنى قاچىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2047"/>
         <source>Export Image As</source>
-        <translation>رەسىمنى چىقىرىش</translation>
+        <translation type="vanished">رەسىمنى چىقىرىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiexecutor.cpp" line="2936"/>
+        <source>Successfully Claimed</source>
+        <translation type="obsolete">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="obsolete">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+    </message>
+    <message>
         <source>You can upload up to 3 files or image</source>
-        <translation>سىز 3 تىن ئارتۇق ھۆججەت ياكى رەسىم يوللىيالمايسىز</translation>
+        <translation type="vanished">سىز 3 تىن ئارتۇق ھۆججەت ياكى رەسىم يوللىيالمايسىز</translation>
     </message>
 </context>
 <context>
     <name>EAiFAQInit</name>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="17"/>
         <source>Translate the following text into English for me.</source>
-        <translation>تۆۋەندىكى تېكىستنى ئېنگلىزچىغا تەرجىمە قىلىڭ.</translation>
+        <translation type="vanished">تۆۋەندىكى تېكىستنى ئېنگلىزچىغا تەرجىمە قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="23"/>
         <source>Translate the following document into Chinese.</source>
-        <translation>تۆۋەندىكى ھۆججەتنى خەنزۇچىغا تەرجىمە قىلىڭ.</translation>
+        <translation type="vanished">تۆۋەندىكى ھۆججەتنى خەنزۇچىغا تەرجىمە قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="29"/>
         <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation>AI سانائىتىدىكى &quot;Agent&quot; سۆزى نېمىنى بىلدۈرىدۇ؟</translation>
+        <translation type="vanished">AI سانائىتىدىكى &quot;Agent&quot; سۆزى نېمىنى بىلدۈرىدۇ؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="35"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation>تۆۋەندىكى مەزمۇننى خەنزۇچىغا تەرجىمە قىلىڭ. تەلەپ: مەنىدە توغرا، تىلدا رەسمىي ۋە كەسپىي بولۇشى كېرەك.</translation>
+        <translation type="vanished">تۆۋەندىكى مەزمۇننى خەنزۇچىغا تەرجىمە قىلىڭ. تەلەپ: مەنىدە توغرا، تىلدا رەسمىي ۋە كەسپىي بولۇشى كېرەك.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="41"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation>ئېنگلىزچىدا دوستنى خەتەرجەم قىلىشتىكى بەزى خەتەرجەم ئۇسۇللار نېمە؟</translation>
+        <translation type="vanished">ئېنگلىزچىدا دوستنى خەتەرجەم قىلىشتىكى بەزى خەتەرجەم ئۇسۇللار نېمە؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="47"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation>تۆۋەندىكى قەدىمكى خەنزۇچە تېكىستنى ھازىرقى خەنزۇچىغا تەرجىمە قىلىڭ.</translation>
+        <translation type="vanished">تۆۋەندىكى قەدىمكى خەنزۇچە تېكىستنى ھازىرقى خەنزۇچىغا تەرجىمە قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="60"/>
         <source>Summarize</source>
-        <translation>ئۈزۈندە</translation>
+        <translation type="vanished">ئۈزۈندە</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="66"/>
         <source>Proofread</source>
-        <translation>تەكشۈرۈش</translation>
+        <translation type="vanished">تەكشۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="72"/>
         <source>Explain</source>
-        <translation>چۈشەندۈرۈش</translation>
+        <translation type="vanished">چۈشەندۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="78"/>
         <source>Expand</source>
-        <translation>كېڭەيتىش</translation>
+        <translation type="vanished">كېڭەيتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="84"/>
         <source>Continue</source>
-        <translation>دەۋام قىلىش</translation>
+        <translation type="vanished">دەۋام قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="90"/>
         <source>Polish</source>
-        <translation>مۇكەممەللەشتۈرۈش</translation>
+        <translation type="vanished">مۇكەممەللەشتۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="104"/>
         <source>Please help me write a work summary based on this document</source>
-        <translation>بۇ پۈتۈككە ئاساسەن مېنىڭ ئىش خۇلاسەمىنى يېزىشقا ياردەم قىلىڭ</translation>
+        <translation type="vanished">بۇ پۈتۈككە ئاساسەن مېنىڭ ئىش خۇلاسەمىنى يېزىشقا ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="110"/>
         <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation>مېنىڭ A قانۇنى ئۈچۈن ئىش خۇلاسىسىگە ئېھتىياجىم بار، مۇھىم نۇقتىلارنى تەرتىپلەشتە ياردەم قىلىڭ</translation>
+        <translation type="vanished">مېنىڭ A قانۇنى ئۈچۈن ئىش خۇلاسىسىگە ئېھتىياجىم بار، مۇھىم نۇقتىلارنى تەرتىپلەشتە ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="116"/>
         <source>Please generate a concise work summary based on my input text</source>
-        <translation>كىرگۈزگەن تېكىستىمگە ئاساسەن قىسقا ئىش خۇلاسىسىنى ھاسىل قىلىڭ</translation>
+        <translation type="vanished">كىرگۈزگەن تېكىستىمگە ئاساسەن قىسقا ئىش خۇلاسىسىنى ھاسىل قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="122"/>
         <source>Analyze this report and extract key points for the work summary</source>
-        <translation>بۇ دوكلاتنى تەھلىل قىلىپ، ئىش خۇلاسىسى ئۈچۈن مۇھىم نۇقتىلارنى ئالاڭ</translation>
+        <translation type="vanished">بۇ دوكلاتنى تەھلىل قىلىپ، ئىش خۇلاسىسى ئۈچۈن مۇھىم نۇقتىلارنى ئالاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="128"/>
         <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation>چارەكلىك سانلىق مەلۇماتنى ئۆز ئىچىگە ئالغان ئىش خۇلاسىسىگە ئېھتىياجىم بار، قوشۇمچىنى قاراڭ</translation>
+        <translation type="vanished">چارەكلىك سانلىق مەلۇماتنى ئۆز ئىچىگە ئالغان ئىش خۇلاسىسىگە ئېھتىياجىم بار، قوشۇمچىنى قاراڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="134"/>
         <source>Help me write a work summary highlighting personal contributions</source>
-        <translation>شەخسىي تۆھپىلەرنى ئالاھىدە كۆرسىتىدىغان ئىش خۇلاسىسىنى يېزىشقا ياردەم قىلىڭ</translation>
+        <translation type="vanished">شەخسىي تۆھپىلەرنى ئالاھىدە كۆرسىتىدىغان ئىش خۇلاسىسىنى يېزىشقا ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="140"/>
         <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation>يىغىن خاتىرىسىدىن ھەرىكەت تۈرلىرىگە دىققەت قىلىپ ئىش خۇلاسىسى ھاسىل قىلىڭ</translation>
+        <translation type="vanished">يىغىن خاتىرىسىدىن ھەرىكەت تۈرلىرىگە دىققەت قىلىپ ئىش خۇلاسىسى ھاسىل قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="146"/>
         <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation>خەنزۇچە ۋە ئىنگلىزچە قوش تىللىق ئىش خۇلاسىسىگە ئېھتىياجىم بار، تەمىنلەنگەن ماتېرىياللارغا قاراڭ</translation>
+        <translation type="vanished">خەنزۇچە ۋە ئىنگلىزچە قوش تىللىق ئىش خۇلاسىسىگە ئېھتىياجىم بار، تەمىنلەنگەن ماتېرىياللارغا قاراڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="152"/>
         <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation>ئۆتكەن ئايدىكى ئىش مەزمۇنىنى تەرتىپلەپ، خۇلاسە ھاسىل قىلىشقا ياردەم قىلىڭ</translation>
+        <translation type="vanished">ئۆتكەن ئايدىكى ئىش مەزمۇنىنى تەرتىپلەپ، خۇلاسە ھاسىل قىلىشقا ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="158"/>
         <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation>بۇ ۋەزىپە تىزىملىكىگە ئاساسەن تاماملاش ھالىتىنى ئالاھىدە كۆرسىتىدىغان ئىش خۇلاسىسىنى يېزىڭ</translation>
+        <translation type="vanished">بۇ ۋەزىپە تىزىملىكىگە ئاساسەن تاماملاش ھالىتىنى ئالاھىدە كۆرسىتىدىغان ئىش خۇلاسىسىنى يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="165"/>
         <source>Check for grammatical errors in this passage</source>
-        <translation>بۇ پاراگرافتا گرامماتىكا خاتالىقلىرىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">بۇ پاراگرافتا گرامماتىكا خاتالىقلىرىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="171"/>
         <source>Help me find spelling mistakes in this article</source>
-        <translation>بۇ ماقالىدىكى ئىملا خاتالىقلىرىنى تاپقىلى ياردەم قىلىڭ</translation>
+        <translation type="vanished">بۇ ماقالىدىكى ئىملا خاتالىقلىرىنى تاپقىلى ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="177"/>
         <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation>بۇ سۆھبەتتىكى نامۇناسىب سۆز تاللاشلارنى تۈزىتىڭ</translation>
+        <translation type="vanished">بۇ سۆھبەتتىكى نامۇناسىب سۆز تاللاشلارنى تۈزىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="183"/>
         <source>Fix the punctuation issues in this document</source>
-        <translation>بۇ پۈتۈكتىكى پۇنكتۇاتسىيە مەسىلىلىرىنى تۈزىتىڭ</translation>
+        <translation type="vanished">بۇ پۈتۈكتىكى پۇنكتۇاتسىيە مەسىلىلىرىنى تۈزىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="189"/>
         <source>Revise the unclear expressions in this text</source>
-        <translation>بۇ تېكىستتىكى ئېنىق ئەمەس ئىپادىلەرنى قايتا تەھرىرلەڭ</translation>
+        <translation type="vanished">بۇ تېكىستتىكى ئېنىق ئەمەس ئىپادىلەرنى قايتا تەھرىرلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="195"/>
         <source>Edit the language errors in this email</source>
-        <translation>بۇ ئېلخەتتىكى تىل خاتالىقلىرىنى تەھرىرلەڭ</translation>
+        <translation type="vanished">بۇ ئېلخەتتىكى تىل خاتالىقلىرىنى تەھرىرلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="201"/>
         <source>Check if this text follows standard English conventions</source>
-        <translation>بۇ تېكىستنىڭ ئۆلچەملىك ئىنگلىزچە قائىدىسىگە ئەمەل قىلىدىغانلىقىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">بۇ تېكىستنىڭ ئۆلچەملىك ئىنگلىزچە قائىدىسىگە ئەمەل قىلىدىغانلىقىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="207"/>
         <source>Correct the logical flaws in this report</source>
-        <translation>بۇ دوكلاتتىكى مەنەۋى ئەۋەزلىكلەرنى تۈزىتىڭ</translation>
+        <translation type="vanished">بۇ دوكلاتتىكى مەنەۋى ئەۋەزلىكلەرنى تۈزىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="213"/>
         <source>Identify language errors in this code comment</source>
-        <translation>بۇ كود ئىزاھاتىدىكى تىل خاتالىقلىرىنى بەلگىلەڭ</translation>
+        <translation type="vanished">بۇ كود ئىزاھاتىدىكى تىل خاتالىقلىرىنى بەلگىلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="219"/>
         <source>Fix the ambiguous statements in this contract</source>
-        <translation>بۇ شەرتنامىدىكى مۇبھەم ئىپادىلەرنى تۈزىتىڭ</translation>
+        <translation type="vanished">بۇ شەرتنامىدىكى مۇبھەم ئىپادىلەرنى تۈزىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="226"/>
         <source>Explain the basic principles of quantum computing</source>
-        <translation>كوانتۇم ھېسابلاشنىڭ ئاساسىي پرىنسىپلىرىنى چۈشەندۈرۈڭ</translation>
+        <translation type="vanished">كوانتۇم ھېسابلاشنىڭ ئاساسىي پرىنسىپلىرىنى چۈشەندۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="232"/>
         <source>Describe photosynthesis in simple terms</source>
-        <translation>يورۇقلۇق ئاساسىدا ماددا ئالماشتۇرۇشنى ساددىچە چۈشەندۈرۈڭ</translation>
+        <translation type="vanished">يورۇقلۇق ئاساسىدا ماددا ئالماشتۇرۇشنى ساددىچە چۈشەندۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="238"/>
         <source>Detail how blockchain technology works</source>
-        <translation>بىر تەرەپ قورۇل تېخنىكىسىنىڭ قانداق ئىشلەيدىغانلىقىنى تەپسىلىي چۈشەندۈرۈڭ</translation>
+        <translation type="vanished">بىر تەرەپ قورۇل تېخنىكىسىنىڭ قانداق ئىشلەيدىغانلىقىنى تەپسىلىي چۈشەندۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="244"/>
         <source>Explain relativity from a professional perspective</source>
-        <translation>نىسبىيەت نەزەرىيىسىنى پېشقەدەم پىكىر بىلەن چۈشەندۈرۈڭ</translation>
+        <translation type="vanished">نىسبىيەت نەزەرىيىسىنى پېشقەدەم پىكىر بىلەن چۈشەندۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="250"/>
         <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation>سانائە ئەقلىنى چۈشەندۈرۈش ئۈچۈن مىساللارنى ئىشلىتىڭ</translation>
+        <translation type="vanished">سانائە ئەقلىنى چۈشەندۈرۈش ئۈچۈن مىساللارنى ئىشلىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="256"/>
         <source>Describe climate change in layman&apos;s terms</source>
-        <translation>ئىقلىم ئۆزگىرىشىنى ئادەتتىكى سۆزلەر بىلەن چۈشەندۈرۈڭ</translation>
+        <translation type="vanished">ئىقلىم ئۆزگىرىشىنى ئادەتتىكى سۆزلەر بىلەن چۈشەندۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="262"/>
         <source>Explain the structure of the solar system to elementary students</source>
-        <translation>قۇياش سىستېمىسىنىڭ قۇرۇلۇشىنى باشلانغۇچ سىنىپ ئوقۇغۇچىلىرىغا چۈشەندۈرۈڭ</translation>
+        <translation type="vanished">قۇياش سىستېمىسىنىڭ قۇرۇلۇشىنى باشلانغۇچ سىنىپ ئوقۇغۇچىلىرىغا چۈشەندۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="269"/>
         <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation>بۇ تېكىستنى 300 سۆزگە كېڭەيتىڭ، سەھنە تەپسىلاتى ۋە شەخسىيەت ھېسسىياتىغا دىققەت قىلىڭ</translation>
+        <translation type="vanished">بۇ تېكىستنى 300 سۆزگە كېڭەيتىڭ، سەھنە تەپسىلاتى ۋە شەخسىيەت ھېسسىياتىغا دىققەت قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="275"/>
         <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation>بۇ پاراگرافنى ئىلمىي ئۇسلۇبتا 500 سۆزگە قايتا يېزىڭ، سانلىق مەلۇمات قوللاش ۋە نۇسخا كەلتۈرۈش قوشۇڭ</translation>
+        <translation type="vanished">بۇ پاراگرافنى ئىلمىي ئۇسلۇبتا 500 سۆزگە قايتا يېزىڭ، سانلىق مەلۇمات قوللاش ۋە نۇسخا كەلتۈرۈش قوشۇڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="281"/>
         <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation>بۇ پارچىنى تېخىمۇ جانلىق قىلىش ئۈچۈن كۆپچىلىك مىساللار ۋە رەتورىكا قوراللىرى بىلەن كېڭەيتىڭ</translation>
+        <translation type="vanished">بۇ پارچىنى تېخىمۇ جانلىق قىلىش ئۈچۈن كۆپچىلىك مىساللار ۋە رەتورىكا قوراللىرى بىلەن كېڭەيتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="287"/>
         <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation>بۇ قىسقا ماقالىنى 1000 سۆزگە كېڭەيتىڭ، ئالاھىدە ئەھۋاللار ۋە ئەمەلىي قەدەملىرىنى قوشۇڭ</translation>
+        <translation type="vanished">بۇ قىسقا ماقالىنى 1000 سۆزگە كېڭەيتىڭ، ئالاھىدە ئەھۋاللار ۋە ئەمەلىي قەدەملىرىنى قوشۇڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="293"/>
         <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation>بۇ دىئالوگنى شەخسىيەتلەرنىڭ روھىي پائالىيىتى ۋە دىئالوگ تەپسىلاتلىرىنى قوشۇپ كېڭەيتىڭ</translation>
+        <translation type="vanished">بۇ دىئالوگنى شەخسىيەتلەرنىڭ روھىي پائالىيىتى ۋە دىئالوگ تەپسىلاتلىرىنى قوشۇپ كېڭەيتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="299"/>
         <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation>بۇ پۈتۈكنىڭ مەزمۇنىنى دوكلات فورماتىغا قايتا يېزىڭ، ئۇزۇن مەزمۇن، تەن ۋە خۇلاسە قوشۇڭ</translation>
+        <translation type="vanished">بۇ پۈتۈكنىڭ مەزمۇنىنى دوكلات فورماتىغا قايتا يېزىڭ، ئۇزۇن مەزمۇن، تەن ۋە خۇلاسە قوشۇڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="305"/>
         <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation>بۇ تېخنىكىي چۈشەندۈرۈشنى 800 سۆزگە كېڭەيتىڭ، تېخىمۇ كۆپ تېخنىكىي پارامېتىرلار ۋە دىئاگرام چۈشەندۈرۈشلىرىنى قوشۇڭ</translation>
+        <translation type="vanished">بۇ تېخنىكىي چۈشەندۈرۈشنى 800 سۆزگە كېڭەيتىڭ، تېخىمۇ كۆپ تېخنىكىي پارامېتىرلار ۋە دىئاگرام چۈشەندۈرۈشلىرىنى قوشۇڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="311"/>
         <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation>بۇ ئېلخەتنى تېخىمۇ رەسمىي ۋە كەسپىي قىلىپ قايتا يېزىپ، تەڭشەشكە لايىق تەپسىلىي ئۇچۇرلارنى تولۇقلاڭ</translation>
+        <translation type="vanished">بۇ ئېلخەتنى تېخىمۇ رەسمىي ۋە كەسپىي قىلىپ قايتا يېزىپ، تەڭشەشكە لايىق تەپسىلىي ئۇچۇرلارنى تولۇقلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="317"/>
         <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation>بۇ ھېكايىنى 1500 سۆزگە كېڭەيتىپ، كۆپرەك سۇيىقەست ئۆزگىرىشى ۋە قېھرىمانلارنىڭ تەرەققىيات تارىخىنى قوشۇڭ</translation>
+        <translation type="vanished">بۇ ھېكايىنى 1500 سۆزگە كېڭەيتىپ، كۆپرەك سۇيىقەست ئۆزگىرىشى ۋە قېھرىمانلارنىڭ تەرەققىيات تارىخىنى قوشۇڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="323"/>
         <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation>بۇ خۇلاسىنى كېڭەيتىپ، ئاساسىي قولغا كەلتۈرگەن ئۇتۇقلارنى ۋە كەلگۈسىدىكى پىلانلارنى ئالاھىدە تەكىتلىڭ، سۆز سانى چەكلىمىسىز</translation>
+        <translation type="vanished">بۇ خۇلاسىنى كېڭەيتىپ، ئاساسىي قولغا كەلتۈرگەن ئۇتۇقلارنى ۋە كەلگۈسىدىكى پىلانلارنى ئالاھىدە تەكىتلىڭ، سۆز سانى چەكلىمىسىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="330"/>
         <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation>بۇ قىسقىچە تېخنىكا ماقالىسىنى داۋاملاشتۇرۇپ، AI نىڭ كۈندىلىك تۇرمۇشقا قانداق ئۆزگىرىش ئېلىپ كەلگەنلىكىگە ئەگىشىپ، سىنپۇڭ ئىلمىي ئۇسلۇبتا، تەخمىنەن 300 سۆز ئەتراپىدا يېزىڭ</translation>
+        <translation type="vanished">بۇ قىسقىچە تېخنىكا ماقالىسىنى داۋاملاشتۇرۇپ، AI نىڭ كۈندىلىك تۇرمۇشقا قانداق ئۆزگىرىش ئېلىپ كەلگەنلىكىگە ئەگىشىپ، سىنپۇڭ ئىلمىي ئۇسلۇبتا، تەخمىنەن 300 سۆز ئەتراپىدا يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="336"/>
         <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation>بۇ سودا پىلانىنىڭ ئاخىرقى ئابزاسىنى كېڭەيتىپ، بازار ئىمكانىيىتى ۋە رىقابەت ئافزاللىقلىرىنى تەكىتلىڭ، سۆز سانى چەكلىمىسىز، رەسمىي ئۇسلۇبتا</translation>
+        <translation type="vanished">بۇ سودا پىلانىنىڭ ئاخىرقى ئابزاسىنى كېڭەيتىپ، بازار ئىمكانىيىتى ۋە رىقابەت ئافزاللىقلىرىنى تەكىتلىڭ، سۆز سانى چەكلىمىسىز، رەسمىي ئۇسلۇبتا</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="342"/>
         <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation>بۇ پەرىزلەر ھېكايىسىنىڭ ئاخىرقى قىسىمىنى داۋاملاشتۇرۇپ، ئىللىق ۋە تەسىرلىك بولۇپ، قېھرىمان ئارزۇسىغا يەتسۇن، تەخمىنەن 200 سۆز ئەتراپىدا</translation>
+        <translation type="vanished">بۇ پەرىزلەر ھېكايىسىنىڭ ئاخىرقى قىسىمىنى داۋاملاشتۇرۇپ، ئىللىق ۋە تەسىرلىك بولۇپ، قېھرىمان ئارزۇسىغا يەتسۇن، تەخمىنەن 200 سۆز ئەتراپىدا</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="348"/>
         <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation>بۇ ئېلخەتنىڭ ئىككىنچى يېرىمىنى يېزىپ، ئۇسلۇب دوستانە ۋە كەسپىي بولۇپ، ھەمكارلىق تەپسىلاتلىرىغا ئەگىشىپ، 150 سۆز ئىچىدە تۇرسۇن</translation>
+        <translation type="vanished">بۇ ئېلخەتنىڭ ئىككىنچى يېرىمىنى يېزىپ، ئۇسلۇب دوستانە ۋە كەسپىي بولۇپ، ھەمكارلىق تەپسىلاتلىرىغا ئەگىشىپ، 150 سۆز ئىچىدە تۇرسۇن</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="354"/>
         <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation>بۇ سەپەرنامىنىڭ كېيىنكى ئابزاسىنى كېڭەيتىپ، ئۆزىڭىزنىڭ قاراشلىقىدا ۋادىدىكى مەنزىرىنى جانلىق ۋە تەسەۋۋۇرغا تولغان قىلىپ سۈپەتلەپ، تەخمىنەن 200 سۆز ئەتراپىدا يېزىڭ</translation>
+        <translation type="vanished">بۇ سەپەرنامىنىڭ كېيىنكى ئابزاسىنى كېڭەيتىپ، ئۆزىڭىزنىڭ قاراشلىقىدا ۋادىدىكى مەنزىرىنى جانلىق ۋە تەسەۋۋۇرغا تولغان قىلىپ سۈپەتلەپ، تەخمىنەن 200 سۆز ئەتراپىدا يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="360"/>
         <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation>بۇ سىرلىق روماننىڭ كېيىنكى بۆلۈمىنى داۋاملاشتۇرۇپ، سۇيىقەست ئۆزگىرىشى بىلەن بىرلىكتە، قىزىقىشىنى ساقلاپ، سۆز سانى چەكلىمىسىز</translation>
+        <translation type="vanished">بۇ سىرلىق روماننىڭ كېيىنكى بۆلۈمىنى داۋاملاشتۇرۇپ، سۇيىقەست ئۆزگىرىشى بىلەن بىرلىكتە، قىزىقىشىنى ساقلاپ، سۆز سانى چەكلىمىسىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="366"/>
         <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation>بۇ سۆزنىڭ خۇلاسىسىنى يېزىپ، ئىلھاملاندۇرغۇچى بولۇپ، كۆپ خىل كۈچ بىرلىكتە ئىشلەشنى تەكىتلىسۇن، تەخمىنەن 100 سۆز ئەتراپىدا</translation>
+        <translation type="vanished">بۇ سۆزنىڭ خۇلاسىسىنى يېزىپ، ئىلھاملاندۇرغۇچى بولۇپ، كۆپ خىل كۈچ بىرلىكتە ئىشلەشنى تەكىتلىسۇن، تەخمىنەن 100 سۆز ئەتراپىدا</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="372"/>
         <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation>بۇ مەھسۇلات قوللانمىسىنىڭ ئەمەلدارلىق چۈشەندۈرۈش بۆلۈكىنى كېڭەيتىپ، تەپسىلىي ۋە ئېغىرچان بولۇپ، تەخمىنەن 300 سۆز بولسۇن.</translation>
+        <translation type="vanished">بۇ مەھسۇلات قوللانمىسىنىڭ ئەمەلدارلىق چۈشەندۈرۈش بۆلۈكىنى كېڭەيتىپ، تەپسىلىي ۋە ئېغىرچان بولۇپ، تەخمىنەن 300 سۆز بولسۇن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="378"/>
         <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation>بۇ سۆيۈش ھېكايىسىنىڭ باشلىنىشىنى، يامغۇرلۇق پەرىژدا ئورۇنلاشقان، رومانتىك ئۇسلۇبتا، 150 سۆز ئىچىدە داۋاملاشتۇرۇڭ.</translation>
+        <translation type="vanished">بۇ سۆيۈش ھېكايىسىنىڭ باشلىنىشىنى، يامغۇرلۇق پەرىژدا ئورۇنلاشقان، رومانتىك ئۇسلۇبتا، 150 سۆز ئىچىدە داۋاملاشتۇرۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="384"/>
         <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation>بۇ ماقالىنىڭ مۇزاكىرە بۆلۈكىنى يېزىپ، تەجرىبە نەتىجىسىنىڭ چەكلىمىلىرىگە ئەساسلىنىپ، ئاكادېمىك ئۇسلۇبتا، سۆز سانى چەكلىمىسىز بولسۇن.</translation>
+        <translation type="vanished">بۇ ماقالىنىڭ مۇزاكىرە بۆلۈكىنى يېزىپ، تەجرىبە نەتىجىسىنىڭ چەكلىمىلىرىگە ئەساسلىنىپ، ئاكادېمىك ئۇسلۇبتا، سۆز سانى چەكلىمىسىز بولسۇن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="391"/>
         <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation>بۇ تېكىستنى سىزىپ، ئۇنى ئىشخانا ئېلخەتى ئۈچۈن تېخىمۇ رەسمىي ۋە كەسپىي قىلىپ سۇسلاشتۇرۇڭ.</translation>
+        <translation type="vanished">بۇ تېكىستنى سىزىپ، ئۇنى ئىشخانا ئېلخەتى ئۈچۈن تېخىمۇ رەسمىي ۋە كەسپىي قىلىپ سۇسلاشتۇرۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="397"/>
         <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation>بۇ بۆلەكنى قايتا يېزىپ، ئۇنى ئىجتىمائىي ئالاقە مېدىيىسى ئەسلىمىلىرى ئۈچۈن تېخىمۇ جانلىق ۋە قىزىقارلىق قىلىڭ.</translation>
+        <translation type="vanished">بۇ بۆلەكنى قايتا يېزىپ، ئۇنى ئىجتىمائىي ئالاقە مېدىيىسى ئەسلىمىلىرى ئۈچۈن تېخىمۇ جانلىق ۋە قىزىقارلىق قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="403"/>
         <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation>بۇ ئاكادېمىك ماقالىنىڭ خۇلاسىسىنى تېخىمۇ قىسقا ۋە ئېنىق قىلىپ، 200 سۆز ئىچىدە سۇسلاشتۇرۇشۇم كېرەك.</translation>
+        <translation type="vanished">بۇ ئاكادېمىك ماقالىنىڭ خۇلاسىسىنى تېخىمۇ قىسقا ۋە ئېنىق قىلىپ، 200 سۆز ئىچىدە سۇسلاشتۇرۇشۇم كېرەك.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="409"/>
         <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation>بۇ دىئالوگنى سۇسلاشتۇرۇپ، ئۇنى سۆزلەش ئالاقىسى ئۈچۈن تېخىمۇ تەبئىي ۋە قىيىنچىلىقسىز قىلىڭ.</translation>
+        <translation type="vanished">بۇ دىئالوگنى سۇسلاشتۇرۇپ، ئۇنى سۆزلەش ئالاقىسى ئۈچۈن تېخىمۇ تەبئىي ۋە قىيىنچىلىقسىز قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="415"/>
         <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation>بۇ مەھسۇلات چۈشەندۈرۈشىنى كۈچەيتىپ، ئۇنىڭ ئالىي سۈپەتلىك ۋە يېڭىلىق ياراتقان ئالاھىدىلىكلىرىنى مۇمكىن بولغان خېرىدارلارغا ئاشكارا قىلىڭ.</translation>
+        <translation type="vanished">بۇ مەھسۇلات چۈشەندۈرۈشىنى كۈچەيتىپ، ئۇنىڭ ئالىي سۈپەتلىك ۋە يېڭىلىق ياراتقان ئالاھىدىلىكلىرىنى مۇمكىن بولغان خېرىدارلارغا ئاشكارا قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="421"/>
         <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation>بۇ قاپلىق خەتنى سۇسلاشتۇرۇپ، ئۇنى تېخىمۇ ئىسپاتلىق ۋە شەخسىيلەشتۈرۈلگەن قىلىپ ياردەم قىلىڭ.</translation>
+        <translation type="vanished">بۇ قاپلىق خەتنى سۇسلاشتۇرۇپ، ئۇنى تېخىمۇ ئىسپاتلىق ۋە شەخسىيلەشتۈرۈلگەن قىلىپ ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="427"/>
         <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation>بۇ بلوگ ئەسلىمىسىنى قايتا يېزىپ، ئۇنى تېخىمۇ خۇمارلىق ۋە ياش ئوقۇرمەنلەرگە قىزىقارلىق قىلىڭ.</translation>
+        <translation type="vanished">بۇ بلوگ ئەسلىمىسىنى قايتا يېزىپ، ئۇنى تېخىمۇ خۇمارلىق ۋە ياش ئوقۇرمەنلەرگە قىزىقارلىق قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="433"/>
         <source>Refine the opening section of this report to make it more captivating</source>
-        <translation>بۇ دوكلاتنىڭ باشلانغۇچ بۆلۈكىنى سۇسلاشتۇرۇپ، ئۇنى تېخىمۇ قىزىقارلىق قىلىڭ.</translation>
+        <translation type="vanished">بۇ دوكلاتنىڭ باشلانغۇچ بۆلۈكىنى سۇسلاشتۇرۇپ، ئۇنى تېخىمۇ قىزىقارلىق قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="439"/>
         <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation>مېنىڭ بۇ تېخنىكىلىق ھۆججەتنى ئاددىيلاشتۇرۇپ، پەن ئەھلى بولمىغانلارغا تونۇشتۇرۇشىم كېرەك</translation>
+        <translation type="vanished">مېنىڭ بۇ تېخنىكىلىق ھۆججەتنى ئاددىيلاشتۇرۇپ، پەن ئەھلى بولمىغانلارغا تونۇشتۇرۇشىم كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="445"/>
         <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation>بۇ كەچۈرۈم سورايدىغان خەتنى قايتا يېزىپ، ئەقىللىق ۋە ساداقەتلىك قىلىپ بېرىڭ</translation>
+        <translation type="vanished">بۇ كەچۈرۈم سورايدىغان خەتنى قايتا يېزىپ، ئەقىللىق ۋە ساداقەتلىك قىلىپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="458"/>
         <source>Articles</source>
-        <translation>ماقالىلەر</translation>
+        <translation type="vanished">ماقالىلەر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="464"/>
         <source>Speeches</source>
-        <translation>نۇتۇقلار</translation>
+        <translation type="vanished">نۇتۇقلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="470"/>
         <source>Outlines</source>
-        <translation>قىسقىچە مەزمۇنلار</translation>
+        <translation type="vanished">قىسقىچە مەزمۇنلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="476"/>
         <source>Notifications</source>
-        <translation>ئۇقتۇرۇشلار</translation>
+        <translation type="vanished">ئۇقتۇرۇشلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="482"/>
         <source>Posts</source>
-        <translation>يازىلار</translation>
+        <translation type="vanished">يازىلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="488"/>
         <source>Work Report</source>
-        <translation>خىزمەت دوكلاتى</translation>
+        <translation type="vanished">خىزمەت دوكلاتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="494"/>
         <source>Research Report</source>
-        <translation>تەتقىقات دوكلاتى</translation>
+        <translation type="vanished">تەتقىقات دوكلاتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="508"/>
         <source>Please summarize the key points of this document</source>
-        <translation>بۇ ھۆججەتنىڭ ئاساسلىق نۇقتىلىرىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ھۆججەتنىڭ ئاساسلىق نۇقتىلىرىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="514"/>
         <source>List the main ideas of this file for me</source>
-        <translation>بۇ ھۆججەتنىڭ ئاساسلىق پىكرىلىرىنى تىزىپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ھۆججەتنىڭ ئاساسلىق پىكرىلىرىنى تىزىپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="520"/>
         <source>Summarize the core idea of this passage</source>
-        <translation>بۇ پاراگرافنىڭ مەزمۇنىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ پاراگرافنىڭ مەزمۇنىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="526"/>
         <source>Use concise language to summarize this article</source>
-        <translation>بۇ ماقالىنى قىسقا ۋە ئوچۇق تىلدا چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ماقالىنى قىسقا ۋە ئوچۇق تىلدا چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="532"/>
         <source>I need a summary of this report, no more than 200 words</source>
-        <translation>بۇ دوكلاتنى 200 سۆزدىن ئارتۇق بولمىغان ھالدا قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ دوكلاتنى 200 سۆزدىن ئارتۇق بولمىغان ھالدا قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="538"/>
         <source>Extract the main data and conclusions from this document</source>
-        <translation>بۇ ھۆججەتتىن ئاساسلىق سانلىق مەلۇمات ۋە خۇلاسىلەرنى ئېلىپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ھۆججەتتىن ئاساسلىق سانلىق مەلۇمات ۋە خۇلاسىلەرنى ئېلىپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="544"/>
         <source>Summarize the main sections and points of this lengthy content</source>
-        <translation>بۇ ئۇزۇن مەزمۇننىڭ ئاساسلىق بۆلەكلىرى ۋە نۇقتىلىرىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ئۇزۇن مەزمۇننىڭ ئاساسلىق بۆلەكلىرى ۋە نۇقتىلىرىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="550"/>
         <source>Help me summarize the research methods and findings of this paper</source>
-        <translation>بۇ تەتقىقات نامىسىنىڭ تەتقىقات ئۇسۇلى ۋە نەتىجىلىرىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ تەتقىقات نامىسىنىڭ تەتقىقات ئۇسۇلى ۋە نەتىجىلىرىنى قىسقىچە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="556"/>
         <source>Please summarize the key points of this article in a table format</source>
-        <translation>بۇ ماقالىنىڭ ئاساسلىق نۇقتىلىرىنى جەدۋەل شەكلىدە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ماقالىنىڭ ئاساسلىق نۇقتىلىرىنى جەدۋەل شەكلىدە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="562"/>
         <source>Summarize the operational steps in this file using bullet points</source>
-        <translation>بۇ ھۆججەتتىكى مەشغۇلات قەدەملىرىنى تىزىملىك شەكلىدە چۈشەندۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">بۇ ھۆججەتتىكى مەشغۇلات قەدەملىرىنى تىزىملىك شەكلىدە چۈشەندۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="568"/>
         <source>Display the key clauses of this contract in bullet list format</source>
-        <translation>بۇ شەرتنامىدىكى ئاساسلىق ماددىلارنى تىزىملىك شەكلىدە كۆرسىتىپ بېرىڭ</translation>
+        <translation type="vanished">بۇ شەرتنامىدىكى ئاساسلىق ماددىلارنى تىزىملىك شەكلىدە كۆرسىتىپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="575"/>
         <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation>سانلىق مەلۇمات تېخنىكىسى، ئەخلاق ۋە قوللىنىش جەھەتلىرىنى ئۆز ئىچىگە ئالغان سۇنئىي ئەقىل دوكلاتى ئۈچۈن قىسقىچە مەزمۇن تەييارلاڭ</translation>
+        <translation type="vanished">سانلىق مەلۇمات تېخنىكىسى، ئەخلاق ۋە قوللىنىش جەھەتلىرىنى ئۆز ئىچىگە ئالغان سۇنئىي ئەقىل دوكلاتى ئۈچۈن قىسقىچە مەزمۇن تەييارلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="581"/>
         <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation>يۈكلەنگەن تەتقىقات نامىسىنى قۇرۇلما تەتقىقات قىسقىچە مەزمۇن قىلىپ تەييارلاڭ</translation>
+        <translation type="vanished">يۈكلەنگەن تەتقىقات نامىسىنى قۇرۇلما تەتقىقات قىسقىچە مەزمۇن قىلىپ تەييارلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="587"/>
         <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation>بازار تەھلىلى، مەھسۇلات چۈشەندۈرۈشى ۋە مالىيە پىلانىنى ئۆز ئىچىگە ئالغان تىجارەت پىلانى قىسقىچە مەزمۇنى كېرەك</translation>
+        <translation type="vanished">بازار تەھلىلى، مەھسۇلات چۈشەندۈرۈشى ۋە مالىيە پىلانىنى ئۆز ئىچىگە ئالغان تىجارەت پىلانى قىسقىچە مەزمۇنى كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="593"/>
         <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation>بۇ نۇتۇقنى ھەر بۆلەككە تىزىملىك شەكلىدە PowerPoint قىسقىچە مەزمۇن قىلىپ ئۆزگەرتىڭ</translation>
+        <translation type="vanished">بۇ نۇتۇقنى ھەر بۆلەككە تىزىملىك شەكلىدە PowerPoint قىسقىچە مەزمۇن قىلىپ ئۆزگەرتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="599"/>
         <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation>كىتابنىڭ ئاساسلىق نۇقتىلىرى ۋە شەخسىي پىكرىمىنى ئۆز ئىچىگە ئالغان قىسقىچە مەزمۇن يېزىڭ</translation>
+        <translation type="vanished">كىتابنىڭ ئاساسلىق نۇقتىلىرى ۋە شەخسىي پىكرىمىنى ئۆز ئىچىگە ئالغان قىسقىچە مەزمۇن يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="605"/>
         <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation>يىغىن خاتىرىسى ھۆججىتىنى قىسقىچە مەزمۇن قىلىپ، تۈر ئىجرا پىلانىغا ئۆزگەرتىڭ</translation>
+        <translation type="vanished">يىغىن خاتىرىسى ھۆججىتىنى قىسقىچە مەزمۇن قىلىپ، تۈر ئىجرا پىلانىغا ئۆزگەرتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="611"/>
         <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation>كىرىش سۆز، ئەدەبىيات تەكشۈرۈش ۋە تەتقىقات ئۇسۇلىنى ئۆز ئىچىگە ئالغان تېزىس بۆلەكلىرىنىڭ قىسقىچە مەزمۇنى كېرەك</translation>
+        <translation type="vanished">كىرىش سۆز، ئەدەبىيات تەكشۈرۈش ۋە تەتقىقات ئۇسۇلىنى ئۆز ئىچىگە ئالغان تېزىس بۆلەكلىرىنىڭ قىسقىچە مەزمۇنى كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="617"/>
         <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation>مەھسۇلات ئىقتىدارى چۈشەندۈرۈشى ۋە ئىشلەتكۈچى يولىنى ئۆز ئىچىگە ئالغان مەھسۇلات تەلىپى ھۆججىتى (PRD) قىسقىچە مەزمۇنىنى تەييارلاڭ</translation>
+        <translation type="vanished">مەھسۇلات ئىقتىدارى چۈشەندۈرۈشى ۋە ئىشلەتكۈچى يولىنى ئۆز ئىچىگە ئالغان مەھسۇلات تەلىپى ھۆججىتى (PRD) قىسقىچە مەزمۇنىنى تەييارلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="623"/>
         <source>Extract key data from this industry report to make a summary outline</source>
-        <translation>بۇ سانائەت دوكلاتىدىن ئاساسلىق سانلىق مەلۇماتلارنى ئېلىپ، قىسقىچە مەزمۇن تەييارلاڭ</translation>
+        <translation type="vanished">بۇ سانائەت دوكلاتىدىن ئاساسلىق سانلىق مەلۇماتلارنى ئېلىپ، قىسقىچە مەزمۇن تەييارلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="629"/>
         <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation>ۋاقىت جەدۋىلى، گۇرۇپپا رولى ۋە بۇدجېتنى ئۆز ئىچىگە ئالغان پائالىيەت پىلانى قىسقىچە مەزمۇنىنى يېزىڭ</translation>
+        <translation type="vanished">ۋاقىت جەدۋىلى، گۇرۇپپا رولى ۋە بۇدجېتنى ئۆز ئىچىگە ئالغان پائالىيەت پىلانى قىسقىچە مەزمۇنىنى يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="636"/>
         <source>Generate a three-level outline from this document</source>
-        <translation>بۇ پۈتۈكتىن ئۈچ باسقۇچلۇق خۇلاسە قۇر</translation>
+        <translation type="vanished">بۇ پۈتۈكتىن ئۈچ باسقۇچلۇق خۇلاسە قۇر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="642"/>
         <source>Extract core framework from meeting notes</source>
-        <translation>يىغىن خاتىرىسىدىن ئاساسىي قۇرۇلمىنى چىقىرىش</translation>
+        <translation type="vanished">يىغىن خاتىرىسىدىن ئاساسىي قۇرۇلمىنى چىقىرىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="648"/>
         <source>Organize research report structure</source>
-        <translation>تەتقىقات دوكلاتى قۇرۇلمىسىنى تەرتىپلەش</translation>
+        <translation type="vanished">تەتقىقات دوكلاتى قۇرۇلمىسىنى تەرتىپلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="654"/>
         <source>Create product feature overview</source>
-        <translation>مەھسۇلات ئالاھىدىلىكلىرىنى ئومۇمىي چۈشەندۈرۈش</translation>
+        <translation type="vanished">مەھسۇلات ئالاھىدىلىكلىرىنى ئومۇمىي چۈشەندۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="660"/>
         <source>Design training course syllabus</source>
-        <translation>ئوقۇتۇش دەرسىنىڭ تۈزۈمىنى لايىھىلەش</translation>
+        <translation type="vanished">ئوقۇتۇش دەرسىنىڭ تۈزۈمىنى لايىھىلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="666"/>
         <source>Analyze literature review framework</source>
-        <translation>ئەدەبىيات تەكشۈرۈش قۇرۇلمىسىنى تەھلىل قىلىش</translation>
+        <translation type="vanished">ئەدەبىيات تەكشۈرۈش قۇرۇلمىسىنى تەھلىل قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="672"/>
         <source>Generate business plan table of contents</source>
-        <translation>تۈزۈمچىلىك پىلانىنىڭ مەزمۇن فېھرىستىنى تۈزۈش</translation>
+        <translation type="vanished">تۈزۈمچىلىك پىلانىنىڭ مەزمۇن فېھرىستىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="678"/>
         <source>Write event planning flow points</source>
-        <translation>پائالىيەت تەدبىرىنىڭ ئېقىم نۇقتىلىرىنى يېزىش</translation>
+        <translation type="vanished">پائالىيەت تەدبىرىنىڭ ئېقىم نۇقتىلىرىنى يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="685"/>
         <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation>ئەتىگۈن سائەت 3 تە A يىغىن زالىدا قۇرۇلۇش ئىلگىرىلەش دوكلاتى توغرىسىدىكى يىغىن ئۇقتۇرۇشىنى يېزىشقا ياردەم قىلىڭ</translation>
+        <translation type="vanished">ئەتىگۈن سائەت 3 تە A يىغىن زالىدا قۇرۇلۇش ئىلگىرىلەش دوكلاتى توغرىسىدىكى يىغىن ئۇقتۇرۇشىنى يېزىشقا ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="691"/>
         <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation>بۇ پۈتۈكتە ئاساسەن، ئاخىرلىق مۆھلەت ۋە تەقدىم قىلىش ئۇسۇلىنى ئەستايىدىلەپ كۆرسىتىدىغان قىسقا ئۇقتۇرۇش تۈزۈش</translation>
+        <translation type="vanished">بۇ پۈتۈكتە ئاساسەن، ئاخىرلىق مۆھلەت ۋە تەقدىم قىلىش ئۇسۇلىنى ئەستايىدىلەپ كۆرسىتىدىغان قىسقا ئۇقتۇرۇش تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="697"/>
         <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation>2-ئاينىڭ 10-كۈنىدىن 17-كۈنىگىچە بولغان بايرام ۋە 2-ئاينىڭ 18-كۈنى خىزمەت قايتا باشلانغانلىقى توغرىسىدىكى بايرام ئۇقتۇرۇشىنى تۈزۈش</translation>
+        <translation type="vanished">2-ئاينىڭ 10-كۈنىدىن 17-كۈنىگىچە بولغان بايرام ۋە 2-ئاينىڭ 18-كۈنى خىزمەت قايتا باشلانغانلىقى توغرىسىدىكى بايرام ئۇقتۇرۇشىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="703"/>
         <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation>كېلەر چارشەنبە كۈنى پۈتۈن كۈن شىركەت ئاودىتورىيەسىدە بولىدىغان خادىم ئوقۇتۇش پائالىيىتى ئۇقتۇرۇشىنى تەلەپ قىلىمەن</translation>
+        <translation type="vanished">كېلەر چارشەنبە كۈنى پۈتۈن كۈن شىركەت ئاودىتورىيەسىدە بولىدىغان خادىم ئوقۇتۇش پائالىيىتى ئۇقتۇرۇشىنى تەلەپ قىلىمەن</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="709"/>
         <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation>بەرگەن تېكىست ماتېرىياللىرىنى ئۆلچەملىك فورمات ۋە كەسپىي ئۇسلۇب بىلەن رەسمىي ئۇقتۇرۇشقا ئايلاندۇرۇش</translation>
+        <translation type="vanished">بەرگەن تېكىست ماتېرىياللىرىنى ئۆلچەملىك فورمات ۋە كەسپىي ئۇسلۇب بىلەن رەسمىي ئۇقتۇرۇشقا ئايلاندۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="715"/>
         <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation>بۇ شەنبە كۈنى سائەت 9 دىن 5 كەچكىچە بولىدىغان، پۈتۈن ئىشخانا بىناسىنى قاپلىغان توك توختىتىش ئۇقتۇرۇشىنى يېزىش</translation>
+        <translation type="vanished">بۇ شەنبە كۈنى سائەت 9 دىن 5 كەچكىچە بولىدىغان، پۈتۈن ئىشخانا بىناسىنى قاپلىغان توك توختىتىش ئۇقتۇرۇشىنى يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="721"/>
         <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation>ئەسلى ۋاقتىنى جۈمە كۈنى سائەت 10 غا ئۆزگەرتىپ، باشقا تەپسىلاتلارنى ئۆزگەرتمەي قالدىغان يىغىن ئۆزگەرتىش ئۇقتۇرۇشىنى تۈزۈش</translation>
+        <translation type="vanished">ئەسلى ۋاقتىنى جۈمە كۈنى سائەت 10 غا ئۆزگەرتىپ، باشقا تەپسىلاتلارنى ئۆزگەرتمەي قالدىغان يىغىن ئۆزگەرتىش ئۇقتۇرۇشىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="727"/>
         <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation>قوشۇلغان يىغىن خاتىرىسىگە ئاساسەن، قاتناشمىغانلار ئۈچۈن قىسقا ئۇقتۇرۇش تەييارلاش</translation>
+        <translation type="vanished">قوشۇلغان يىغىن خاتىرىسىگە ئاساسەن، قاتناشمىغانلار ئۈچۈن قىسقا ئۇقتۇرۇش تەييارلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="733"/>
         <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation>بۈگۈن كېچە تۇڭ ئەتراپىدىن سائەت 3 كەچكىچە بولىدىغان، سىستېما توختىتىش بىلەن بىرلىكتە بولىدىغان سىستېما يېڭىلاش ئۇقتۇرۇشىنى تۈزۈش</translation>
+        <translation type="vanished">بۈگۈن كېچە تۇڭ ئەتراپىدىن سائەت 3 كەچكىچە بولىدىغان، سىستېما توختىتىش بىلەن بىرلىكتە بولىدىغان سىستېما يېڭىلاش ئۇقتۇرۇشىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="739"/>
         <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation>باجارغۇچى خادىملار ۋە ئالاقىلىشىش ئۇچۇرلىرىنى تىزىملىگەن، قىسقا بايرام خىزمەت تەقسىماتى ئۇقتۇرۇشىنى يېزىش</translation>
+        <translation type="vanished">باجارغۇچى خادىملار ۋە ئالاقىلىشىش ئۇچۇرلىرىنى تىزىملىگەن، قىسقا بايرام خىزمەت تەقسىماتى ئۇقتۇرۇشىنى يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="746"/>
         <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation>ئادەتتىكى ئوقۇرمەنلەر ئۈچۈن ساددا تىلدا ساغلام تاماقلنىش توغرىسىدىكى جەمئىيەت ساقلىقى ماقالىسىنى يېزىشقا ياردەم قىلىڭ</translation>
+        <translation type="vanished">ئادەتتىكى ئوقۇرمەنلەر ئۈچۈن ساددا تىلدا ساغلام تاماقلنىش توغرىسىدىكى جەمئىيەت ساقلىقى ماقالىسىنى يېزىشقا ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="752"/>
         <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation>بۇ پۈتۈكتە ئاساسەن، قىزىقارلىق ۋە جەلپ قىلىدىغان تېخنىكا يۆنىلىشى يوللانمىسىنى تۈزۈش</translation>
+        <translation type="vanished">بۇ پۈتۈكتە ئاساسەن، قىزىقارلىق ۋە جەلپ قىلىدىغان تېخنىكا يۆنىلىشى يوللانمىسىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="758"/>
         <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation>ئېتىبار ۋە پائالىيەت جەدۋىلىنى ئەستايىدىلەپ كۆرسىتىدىغان بايرام تەشۋىقات يوللانمىسىنى تۈزۈش</translation>
+        <translation type="vanished">ئېتىبار ۋە پائالىيەت جەدۋىلىنى ئەستايىدىلەپ كۆرسىتىدىغان بايرام تەشۋىقات يوللانمىسىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="764"/>
         <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation>ئالاھىدىلىكلىرى ۋە خېرىدار باھالىرىغا ئەھمىيەت بەرگەن مەھسۇلات تونۇشتۇرۇش ماقالىسىنى تەلەپ قىلىمەن</translation>
+        <translation type="vanished">ئالاھىدىلىكلىرى ۋە خېرىدار باھالىرىغا ئەھمىيەت بەرگەن مەھسۇلات تونۇشتۇرۇش ماقالىسىنى تەلەپ قىلىمەن</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="770"/>
         <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation>بۇ سوراقنامە تېكىستىنى ئادەتتىكى شەخسىيەت تونۇشتۇرۇش يوللانمىسىغا ئايلاندۇرۇش</translation>
+        <translation type="vanished">بۇ سوراقنامە تېكىستىنى ئادەتتىكى شەخسىيەت تونۇشتۇرۇش يوللانمىسىغا ئايلاندۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="776"/>
         <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation>ئۈچ مەشھۇر نۇقتا ۋە ئەمەلىي كۆرسەتمىلەرنى تەۋسىيە قىلىدىغان ساياھەت رەھبىرىنى يېزىش</translation>
+        <translation type="vanished">ئۈچ مەشھۇر نۇقتا ۋە ئەمەلىي كۆرسەتمىلەرنى تەۋسىيە قىلىدىغان ساياھەت رەھبىرىنى يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="782"/>
         <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation>شىركەت تارىخىنى باھالاپ، خېرىدارلارغا رەھمەت ئېيتقان يىللىق يوللانما تۈزۈش</translation>
+        <translation type="vanished">شىركەت تارىخىنى باھالاپ، خېرىدارلارغا رەھمەت ئېيتقان يىللىق يوللانما تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="788"/>
         <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation>چۈشەنچىلىك يوللانما ئۈچۈن، بۇ سانائەت دوكلاتىنى كۆرۈنەرلىك سانلىق مەلۇماتلار بىلەن تەھلىل قىلىش</translation>
+        <translation type="vanished">چۈشەنچىلىك يوللانما ئۈچۈن، بۇ سانائەت دوكلاتىنى كۆرۈنەرلىك سانلىق مەلۇماتلار بىلەن تەھلىل قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="794"/>
         <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation>قاتنىشىشنى رەغبەتلەندۈرىدىغان ۋە ئېنىق كۆرسەتمىلەرنى ئۆز ئىچىگە ئالغان خەير-ساخاەت پائالىيىتى يوللانمىسىنى تۈزۈش</translation>
+        <translation type="vanished">قاتنىشىشنى رەغبەتلەندۈرىدىغان ۋە ئېنىق كۆرسەتمىلەرنى ئۆز ئىچىگە ئالغان خەير-ساخاەت پائالىيىتى يوللانمىسىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="800"/>
         <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation>بەش ئەمەلىي كۆرسەتمە ۋە راست مىساللارنى ئۆز ئىچىگە ئالغان كەسپىي ماھارەت ماقالىسىنى يېزىش</translation>
+        <translation type="vanished">بەش ئەمەلىي كۆرسەتمە ۋە راست مىساللارنى ئۆز ئىچىگە ئالغان كەسپىي ماھارەت ماقالىسىنى يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="807"/>
         <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation>قۇرۇلۇش ئىلگىرىلەش ۋە گۇرۇپپا ھەمكارلىشىشىغا ئەھمىيەت بەرگەن ھەپتىلىك خىزمەت خۇلاسىسىنى يېزىشقا ياردەم قىلىڭ</translation>
+        <translation type="vanished">قۇرۇلۇش ئىلگىرىلەش ۋە گۇرۇپپا ھەمكارلىشىشىغا ئەھمىيەت بەرگەن ھەپتىلىك خىزمەت خۇلاسىسىنى يېزىشقا ياردەم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="813"/>
         <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation>يۈكلەپ بەرگەن يىغىن خاتىرىسى ھۆججىتىگە ئاساسەن، قىسقا خىزمەت خۇلاسىسىنى تۈزۈش</translation>
+        <translation type="vanished">يۈكلەپ بەرگەن يىغىن خاتىرىسى ھۆججىتىگە ئاساسەن، قىسقا خىزمەت خۇلاسىسىنى تۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="819"/>
         <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation>مېنىڭ سانلىق مەلۇمات تەھلىل ۋە شەخسىي ئۆسۈش ئەكس ئەتتۈرۈشلەرنى ئۆز ئىچىگە ئالغان پەسىللىك ئىش خۇلاسىسىگە ئېھتىياجىم بار</translation>
+        <translation type="vanished">مېنىڭ سانلىق مەلۇمات تەھلىل ۋە شەخسىي ئۆسۈش ئەكس ئەتتۈرۈشلەرنى ئۆز ئىچىگە ئالغان پەسىللىك ئىش خۇلاسىسىگە ئېھتىياجىم بار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="825"/>
         <source>Create a work summary based on the following text [paste text]</source>
-        <translation>تۆۋەندىكى تېكىست [تېكىستنى چاپلا] ئاساسىدا ئىش خۇلاسىسى قۇرۇڭ</translation>
+        <translation type="vanished">تۆۋەندىكى تېكىست [تېكىستنى چاپلا] ئاساسىدا ئىش خۇلاسىسى قۇرۇڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="831"/>
         <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation>بۇ ئاينىڭ KPI يېتىلدۈرۈشلىرى ۋە يولغا قويۇلغان چەت-چېتىكلەرنى ئاساس قىلغان ئىش خۇلاسىسى يېزىڭ</translation>
+        <translation type="vanished">بۇ ئاينىڭ KPI يېتىلدۈرۈشلىرى ۋە يولغا قويۇلغان چەت-چېتىكلەرنى ئاساس قىلغان ئىش خۇلاسىسى يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="837"/>
         <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation>ئۆتكەن ھەپتىدىكى ئىشلارنى تۈرلەر بويىچە خۇلاسىلەشتۈرۈپ بېرىڭ</translation>
+        <translation type="vanished">ئۆتكەن ھەپتىدىكى ئىشلارنى تۈرلەر بويىچە خۇلاسىلەشتۈرۈپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="843"/>
         <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation>ئېلخەت مەزمۇنىدىن قارشى ئېلىنغان ۋە تاماملانغان ۋەزىپىلەرنى ئاساس قىلغان ئىش خۇلاسىسى ھاسىل قىلىڭ</translation>
+        <translation type="vanished">ئېلخەت مەزمۇنىدىن قارشى ئېلىنغان ۋە تاماملانغان ۋەزىپىلەرنى ئاساس قىلغان ئىش خۇلاسىسى ھاسىل قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="849"/>
         <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation>مېنىڭ ئىش جەريانىدىكى ئەڭ ياخشى نەتىجىلەر ۋە ياخشىلاش پىلانلىرىنى ئۆز ئىچىگە ئالغان يىللىق خۇلاسىگە ئېھتىياجىم بار</translation>
+        <translation type="vanished">مېنىڭ ئىش جەريانىدىكى ئەڭ ياخشى نەتىجىلەر ۋە ياخشىلاش پىلانلىرىنى ئۆز ئىچىگە ئالغان يىللىق خۇلاسىگە ئېھتىياجىم بار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="855"/>
         <source>Generate a monthly work report from the data I uploaded</source>
-        <translation>تارقالغان ئىش خاتىرىلىرىمنى تۈزۈملۈك ئىش خۇلاسىسىغا ئايلاندۇرۇپ بېرىڭ</translation>
+        <translation type="vanished">تارقالغان ئىش خاتىرىلىرىمنى تۈزۈملۈك ئىش خۇلاسىسىغا ئايلاندۇرۇپ بېرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="861"/>
         <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation>يۈكلەنگەن سانلىق مەلۇماتلارنى تەھلىل قىلىپ، بازار ئېغىشى ھەققىدە دوكلات ھاسىل قىلىڭ</translation>
+        <translation type="vanished">يۈكلەنگەن سانلىق مەلۇماتلارنى تەھلىل قىلىپ، بازار ئېغىشى ھەققىدە دوكلات ھاسىل قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="868"/>
         <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation>تېكىستتىن ئاساسلىق ئۇچۇرلارنى ئېلىپ، سانائەت تەھلىل دوكلاتى تۈزۈڭ</translation>
+        <translation type="vanished">تېكىستتىن ئاساسلىق ئۇچۇرلارنى ئېلىپ، سانائەت تەھلىل دوكلاتى تۈزۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="874"/>
         <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation>ھۆججەت مەزمۇنىنى بىرلەشتۈرۈپ، رىقابەتچىلەر توغرىسىدا تەكشۈرۈش دوكلاتى يېزىڭ</translation>
+        <translation type="vanished">ھۆججەت مەزمۇنىنى بىرلەشتۈرۈپ، رىقابەتچىلەر توغرىسىدا تەكشۈرۈش دوكلاتى يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="880"/>
         <source>Combine the contents of the file to write a competitor research report</source>
-        <translation>تەمىنلەنگەن سوئال-جاياب خاتىرىسى ئاساسىدا ئىشلەتكۈچى ئېھتىياجى توغرىسىدا تەكشۈرۈش خۇلاسىسى ھاسىل قىلىڭ</translation>
+        <translation type="vanished">تەمىنلەنگەن سوئال-جاياب خاتىرىسى ئاساسىدا ئىشلەتكۈچى ئېھتىياجى توغرىسىدا تەكشۈرۈش خۇلاسىسى ھاسىل قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="886"/>
         <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation>بۇ سېتىش سانلىق مەلۇماتلىرىنى تەھلىل قىلىپ، پەسىللىك بازار پەرمانسى دوكلاتى تەييارلاڭ</translation>
+        <translation type="vanished">بۇ سېتىش سانلىق مەلۇماتلىرىنى تەھلىل قىلىپ، پەسىللىك بازار پەرمانسى دوكلاتى تەييارلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="892"/>
         <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation>بېرىلگەن مەھسۇل چۈشەندۈرۈشى ئاساسىدا تېخنىكىلىق تەكشۈرۈش دوكلاتى يېزىڭ</translation>
+        <translation type="vanished">بېرىلگەن مەھسۇل چۈشەندۈرۈشى ئاساسىدا تېخنىكىلىق تەكشۈرۈش دوكلاتى يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="898"/>
         <source>Write a technical research report based on the given product description</source>
-        <translation>بۇ ئىشلەتكۈچى باھالىرىنى تۈزۈپ، مەھسۇلنى ياخشىلاش تەكلىپى دوكلاتى ھاسىل قىلىڭ</translation>
+        <translation type="vanished">بۇ ئىشلەتكۈچى باھالىرىنى تۈزۈپ، مەھسۇلنى ياخشىلاش تەكلىپى دوكلاتى ھاسىل قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="904"/>
         <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation>تەمىنلەنگەن ھۆججەت ئاساسىدا بازار پۇرسىتى تەھلىل دوكلاتى يېزىڭ</translation>
+        <translation type="vanished">تەمىنلەنگەن ھۆججەت ئاساسىدا بازار پۇرسىتى تەھلىل دوكلاتى يېزىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="910"/>
         <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation>[%1] تېمىسىدا [ئېنىق قۇرۇلمىلىق ۋە باي مەزمۇنلۇق] ماقالىنى يېزىشىمغا ياردەم قىلىڭ.</translation>
+        <translation type="vanished">[%1] تېمىسىدا [ئېنىق قۇرۇلمىلىق ۋە باي مەزمۇنلۇق] ماقالىنى يېزىشىمغا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="921"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>[%1] تېمىسىدا [ئېنىق قۇرۇلمىلىق] ۋە [ئاراملىق] ئۇسلۇبتا جەمئىي تويىت يېزىشىمغا ياردەم قىلىڭ.</translation>
+        <translation type="vanished">[%1] تېمىسىدا [ئېنىق قۇرۇلمىلىق] ۋە [ئاراملىق] ئۇسلۇبتا جەمئىي تويىت يېزىشىمغا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="941"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>يېقىندىكى ئىشلىرىمنى [%1] ۋە [نەتىجىلەر] نى ئۆز ئىچىگە ئالغان [رەسمىي] ئۇسلۇبتا خۇلاسىلەشتۈرۈپ بېرىڭ.</translation>
+        <translation type="vanished">يېقىندىكى ئىشلىرىمنى [%1] ۋە [نەتىجىلەر] نى ئۆز ئىچىگە ئالغان [رەسمىي] ئۇسلۇبتا خۇلاسىلەشتۈرۈپ بېرىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="946"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>[%1] توغرىسىدا تەكشۈرۈش دوكلاتى يېزىشىمغا ياردەم قىلىڭ، ئەڭ ئازىدىن [ھالەت چۈشەندۈرۈشى، مەسىلە تەھلىلى، قارشى تەدبىرلەر ۋە تەكلىپلەر، تەكشۈرۈش خۇلاسىسى] نى ئۆز ئىچىگە ئالسۇن.</translation>
+        <translation type="vanished">[%1] توغرىسىدا تەكشۈرۈش دوكلاتى يېزىشىمغا ياردەم قىلىڭ، ئەڭ ئازىدىن [ھالەت چۈشەندۈرۈشى، مەسىلە تەھلىلى، قارشى تەدبىرلەر ۋە تەكلىپلەر، تەكشۈرۈش خۇلاسىسى] نى ئۆز ئىچىگە ئالسۇن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="951"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>سانائەت زېھنى</translation>
+        <translation type="vanished">سانائەت زېھنى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="922"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="927"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="932"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="942"/>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="952"/>
         <source>Artificial Intelligence</source>
-        <translation>[%1] تېمىسىدا [شىركەت رەھبەرلىرى] ئۈچۈن [ئېنىق قۇرۇلمىلىق ۋە جانلىق تىل] دىن ئىبارەت نۇتۇق يېزىشىمغا ياردەم قىلىڭ.</translation>
+        <translation type="vanished">[%1] تېمىسىدا [شىركەت رەھبەرلىرى] ئۈچۈن [ئېنىق قۇرۇلمىلىق ۋە جانلىق تىل] دىن ئىبارەت نۇتۇق يېزىشىمغا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="926"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>[%1] تېمىسىدا [PPT تەييارلاش] ئۈچۈن ئىشلىتىدىغان قىسقا مەزمۇن يېزىشىمغا ياردەم قىلىڭ.</translation>
+        <translation type="vanished">[%1] تېمىسىدا [PPT تەييارلاش] ئۈچۈن ئىشلىتىدىغان قىسقا مەزمۇن يېزىشىمغا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="931"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>[%1] ھەققىدە [بارلىق خىزمەتچىلەر] گە [ئىدارە بۆلۈمى] تەرىپىدىن چىقىرىلىدىغان ئۇقتۇرۇش يېزىشىمغا ياردەم قىلىڭ.</translation>
+        <translation type="vanished">[%1] ھەققىدە [بارلىق خىزمەتچىلەر] گە [ئىدارە بۆلۈمى] تەرىپىدىن چىقىرىلىدىغان ئۇقتۇرۇش يېزىشىمغا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="936"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>مىللىي بايرام تەتىلى</translation>
+        <translation type="vanished">مىللىي بايرام تەتىلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="937"/>
         <source>National Day Holiday</source>
-        <translation>ئىش مەزمۇنى</translation>
+        <translation type="vanished">ئىش مەزمۇنى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaifaqinit.cpp" line="947"/>
         <source>work content</source>
-        <translation type="unfinished">خىزمەت مەزمۇنى</translation>
+        <translation type="obsolete">خىزمەت مەزمۇنى</translation>
     </message>
 </context>
 <context>
     <name>EAiPrompt</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1439"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1613,18 +1279,16 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 ---question---
 %2
 </source>
-        <translation>---رول---\n\nسىز تۈرلۈك يېزىش ئۇسلۇبلىرى ۋە فورماتلىرىدا ماھارەتلىك پروفېسسىونال يازغۇچىسىز.\n\n\n---مەقسەت---\n\nئىشلەتكۈچىنىڭ تەلىپىگە ئاساسەن، ئۇلارنىڭ ئالاھىدە ئېھتىياجلىرىغا جاۋاب بېرىدىغان يۇقىرى سەۋىيىلىك مەزمۇنلارنى يارىتىڭ.\n\n\n---يېزىش تۈرلىرى---\n\n1. ماقالە: ئېنىق پىكىرلىك ۋە قىزىقارلىق مەزمۇنلۇق ياخشى قۇرۇلمىلىق ماقالىلەر يېزىڭ\n\n2. نۇتۇق: مۇۋەپپەقىيەتلىك باشلانغۇچ، تەن ۋە خۇلاسە دىن ئىبارەت نۇتۇقلارنى يارىتىڭ\n\n\n3. قىسقا مەزمۇن: بېرىلگەن تېما ئۈچۈن قۇرۇلمىلىق قىسقا مەزمۇن تۈزۈڭ\n\n4. ئۇقتۇرۇش: رەسمىي ئۇقتۇرۇش ياكى ئېلانلارنى يېزىڭ\n\n5. پوچتا: قىزىقارلىق جەمئىي تور مەزمۇنلىرىنى يارىتىڭ\n\n6. ئىش دوكلاتى: توپلاملىق ئىش دوكلاتلىرىنى يېزىڭ\n\n7. تەكشۈرۈش دوكلاتى: تەپسىلاتلىق تەكشۈرۈش دوكلاتلىرىنى يارىتىڭ\n\n---كىرگۈزۈش---\n\n%1\n\n\n---چىقىرىش فورماتى---\n\nمەزمۇننى تۆۋەندىكى فورماتتا تەمىنلەڭ:\n\nTitle:\n\nContent:</translation>
+        <translation type="vanished">---رول---\n\nسىز تۈرلۈك يېزىش ئۇسلۇبلىرى ۋە فورماتلىرىدا ماھارەتلىك پروفېسسىونال يازغۇچىسىز.\n\n\n---مەقسەت---\n\nئىشلەتكۈچىنىڭ تەلىپىگە ئاساسەن، ئۇلارنىڭ ئالاھىدە ئېھتىياجلىرىغا جاۋاب بېرىدىغان يۇقىرى سەۋىيىلىك مەزمۇنلارنى يارىتىڭ.\n\n\n---يېزىش تۈرلىرى---\n\n1. ماقالە: ئېنىق پىكىرلىك ۋە قىزىقارلىق مەزمۇنلۇق ياخشى قۇرۇلمىلىق ماقالىلەر يېزىڭ\n\n2. نۇتۇق: مۇۋەپپەقىيەتلىك باشلانغۇچ، تەن ۋە خۇلاسە دىن ئىبارەت نۇتۇقلارنى يارىتىڭ\n\n\n3. قىسقا مەزمۇن: بېرىلگەن تېما ئۈچۈن قۇرۇلمىلىق قىسقا مەزمۇن تۈزۈڭ\n\n4. ئۇقتۇرۇش: رەسمىي ئۇقتۇرۇش ياكى ئېلانلارنى يېزىڭ\n\n5. پوچتا: قىزىقارلىق جەمئىي تور مەزمۇنلىرىنى يارىتىڭ\n\n6. ئىش دوكلاتى: توپلاملىق ئىش دوكلاتلىرىنى يېزىڭ\n\n7. تەكشۈرۈش دوكلاتى: تەپسىلاتلىق تەكشۈرۈش دوكلاتلىرىنى يارىتىڭ\n\n---كىرگۈزۈش---\n\n%1\n\n\n---چىقىرىش فورماتى---\n\nمەزمۇننى تۆۋەندىكى فورماتتا تەمىنلەڭ:\n\nTitle:\n\nContent:</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1450"/>
         <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
 :%1
 </source>
-        <translation>چىقىرىش جا۾ابى «سىزنىڭ بىلىم ئامبىرىڭىزدا مۇناسىپ ئۇچۇر تېپىلمىدى.» دەپ باشلىنىدۇ.---سوراش--
+        <translation type="vanished">چىقىرىش جا۾ابى «سىزنىڭ بىلىم ئامبىرىڭىزدا مۇناسىپ ئۇچۇر تېپىلمىدى.» دەپ باشلىنىدۇ.---سوراش--
 :%1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1455"/>
         <source>---Role---
 You are a helpful assistant, answering questions about the background knowledge provided.
 
@@ -1636,11 +1300,10 @@ Respond to users&apos; questions, incorporating any relevant common sense.If you
 
 ---question---
 %2</source>
-        <translation type="unfinished">---رول---\n\nسىز تۈرلۈك يېزىش ئۇسلۇبلىرى ۋە فورماتلىرىدا ماھارەتلىك پروفېسسىونال يازغۇچىسىز.\n\n\n---مەقسەت---\n\nئىشلەتكۈچىنىڭ تەلىپىگە ئاساسەن، ئۇلارنىڭ ئالاھىدە ئېھتىياجلىرىغا جاۋاب بېرىدىغان يۇقىرى سەۋىيىلىك مەزمۇنلارنى يارىتىڭ.\n\n\n---يېزىش تۈرلىرى---\n\n1. ماقالە: ئېنىق پىكىرلىك ۋە قىزىقارلىق مەزمۇنلۇق ياخشى قۇرۇلمىلىق ماقالىلەر يېزىڭ\n\n2. نۇتۇق: مۇۋەپپەقىيەتلىك باشلانغۇچ، تەن ۋە خۇلاسە دىن ئىبارەت نۇتۇقلارنى يارىتىڭ\n\n\n3. قىسقا مەزمۇن: بېرىلگەن تېما ئۈچۈن قۇرۇلمىلىق قىسقا مەزمۇن تۈزۈڭ\n\n4. ئۇقتۇرۇش: رەسمىي ئۇقتۇرۇش ياكى ئېلانلارنى يېزىڭ\n\n5. پوچتا: قىزىقارلىق جەمئىي تور مەزمۇنلىرىنى يارىتىڭ\n\n6. ئىش دوكلاتى: توپلاملىق ئىش دوكلاتلىرىنى يېزىڭ\n\n7. تەكشۈرۈش دوكلاتى: تەپسىلاتلىق تەكشۈرۈش دوكلاتلىرىنى يارىتىڭ\n\n---كىرگۈزۈش---\n\n%1\n\n\n---چىقىرىش فورماتى---\n\nمەزمۇننى تۆۋەندىكى فورماتتا تەمىنلەڭ:\n\nTitle:\n\nContent: {1
+        <translation type="obsolete">---رول---\n\nسىز تۈرلۈك يېزىش ئۇسلۇبلىرى ۋە فورماتلىرىدا ماھارەتلىك پروفېسسىونال يازغۇچىسىز.\n\n\n---مەقسەت---\n\nئىشلەتكۈچىنىڭ تەلىپىگە ئاساسەن، ئۇلارنىڭ ئالاھىدە ئېھتىياجلىرىغا جاۋاب بېرىدىغان يۇقىرى سەۋىيىلىك مەزمۇنلارنى يارىتىڭ.\n\n\n---يېزىش تۈرلىرى---\n\n1. ماقالە: ئېنىق پىكىرلىك ۋە قىزىقارلىق مەزمۇنلۇق ياخشى قۇرۇلمىلىق ماقالىلەر يېزىڭ\n\n2. نۇتۇق: مۇۋەپپەقىيەتلىك باشلانغۇچ، تەن ۋە خۇلاسە دىن ئىبارەت نۇتۇقلارنى يارىتىڭ\n\n\n3. قىسقا مەزمۇن: بېرىلگەن تېما ئۈچۈن قۇرۇلمىلىق قىسقا مەزمۇن تۈزۈڭ\n\n4. ئۇقتۇرۇش: رەسمىي ئۇقتۇرۇش ياكى ئېلانلارنى يېزىڭ\n\n5. پوچتا: قىزىقارلىق جەمئىي تور مەزمۇنلىرىنى يارىتىڭ\n\n6. ئىش دوكلاتى: توپلاملىق ئىش دوكلاتلىرىنى يېزىڭ\n\n7. تەكشۈرۈش دوكلاتى: تەپسىلاتلىق تەكشۈرۈش دوكلاتلىرىنى يارىتىڭ\n\n---كىرگۈزۈش---\n\n%1\n\n\n---چىقىرىش فورماتى---\n\nمەزمۇننى تۆۋەندىكى فورماتتا تەمىنلەڭ:\n\nTitle:\n\nContent: {1
 ?} {2?}</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="104"/>
         <source>---Role---
 You are a professional writer with expertise in various writing styles and formats.
 
@@ -1663,7 +1326,7 @@ Based on the user&apos;s request, create high-quality content that meets their s
 Please provide the content in the following format:
 Title:
 Content:</source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 سىز خەتلەر ۋە فورماتلارنىڭ ئالاھىدە ئۇستىسى بولغان كەسپىي يازغۇچى.
 
@@ -1690,7 +1353,6 @@ Title:
 Content:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="133"/>
         <source>---Role---
 You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
 
@@ -1710,7 +1372,7 @@ Process and improve the input text while maintaining its original meaning and st
 
 ---Output Format---
 Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation>---رول---
+        <translation type="vanished">---رول---
 
 سىز تېكىست بىلەن مۇئامىلە قىلىش، تىل تەھلىل قىلىش، يېزىش تېخنىكىسى ۋە تېكىستنى ياخشىلاشقا چوڭقۇر پەنلەرنى بىلىدىغان تېكىست بىلەن مۇئامىلە قىلىش مۇتەخەسسىسى.
 
@@ -1745,7 +1407,6 @@ Please provide the processed text directly without any additional characters or 
 بىر تەرەپ قىلىنغان تېكىستنى قوشۇمچە ھەرپ ياكى فورماتسىز بىۋاستە تەمىنلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eappaiprompt.cpp" line="159"/>
         <source>---Role---
 You are a professional translator and language expert. Your task is to:
 1. Accurately translate text as requested
@@ -1772,7 +1433,7 @@ For language questions, provide clear, concise explanations.
 2. For partial translations: Provide only the specified portion&apos;s translation
 3. For explanations: Provide only the explanation in the same language as the question
 Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation>---Rol---
+        <translation type="vanished">---Rol---
 
 سىز كەسپىي تەرجىمان ۋە تىل ئۇستىسى. سىزنىڭ ۋەزىپىڭىز:
 1. تەلەپ بويىچە تېكىستنى ئېغىرچان تەرجىمە قىلىش
@@ -1805,1073 +1466,857 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>EAiProxy</name>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="422"/>
         <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation>UOS ئېكران سىنلىغۇچىنى 6.6 ياكى ئۇنىڭدىن يۇقىرى نەشرىگە يېڭىلاپ، كومپيۇتېرىڭىزنى قايتا قوزغىتىپ، ئېكران سۈرىتى سوئال-جاۋابنى ئىچىڭ.</translation>
+        <translation type="vanished">UOS ئېكران سىنلىغۇچىنى 6.6 ياكى ئۇنىڭدىن يۇقىرى نەشرىگە يېڭىلاپ، كومپيۇتېرىڭىزنى قايتا قوزغىتىپ، ئېكران سۈرىتى سوئال-جاۋابنى ئىچىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="672"/>
         <source>Model Configuration</source>
-        <translation>مودېل سەپلىمىسى</translation>
+        <translation type="vanished">مودېل سەپلىمىسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="943"/>
         <source>Go to configuration</source>
-        <translation>سەپلەمىگە ئۆتۈش</translation>
+        <translation type="vanished">سەپلەمىگە ئۆتۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="944"/>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="954"/>
         <source>No account</source>
-        <translation>ھېسابات يوق</translation>
+        <translation type="vanished">ھېسابات يوق</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="945"/>
         <source>Input question</source>
-        <translation>سوئال كىرگۈزۈش</translation>
+        <translation type="vanished">سوئال كىرگۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="946"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>AI تەرىپىدىن ھاسىل قىلىنغان مەزمۇن پەقەت پايدىلىنىش ئۈچۈن، ئۇچۇر توغرا بولۇشىغا دىققەت قىلىڭ.</translation>
+        <translation type="vanished">AI تەرىپىدىن ھاسىل قىلىنغان مەزمۇن پەقەت پايدىلىنىش ئۈچۈن، ئۇچۇر توغرا بولۇشىغا دىققەت قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="947"/>
         <source>Welcome to UOS AI</source>
-        <translation>UOS AI غا خۇش ئەمدىڭىز</translation>
+        <translation type="vanished">UOS AI غا خۇش ئەمدىڭىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="948"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation>UOS AI سىزگە ياردەم قىلالايدىغان بەزى ئىشلار</translation>
+        <translation type="vanished">UOS AI سىزگە ياردەم قىلالايدىغان بەزى ئىشلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="949"/>
         <source>Stop</source>
-        <translation>توختا</translation>
+        <translation type="vanished">توختا</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="950"/>
         <source>Regenerate</source>
-        <translation>قايتا ھاسىل قىل</translation>
+        <translation type="vanished">قايتا ھاسىل قىل</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="951"/>
         <source>Clear conversation history</source>
-        <translation>سۆزلەش تارىخىنى تازىلاش</translation>
+        <translation type="vanished">سۆزلەش تارىخىنى تازىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="952"/>
         <source>Please connect the microphone and try again</source>
-        <translation>مىكروفوننى ئۇلانغان بولۇڭ ۋە قايتا سىناش</translation>
+        <translation type="vanished">مىكروفوننى ئۇلانغان بولۇڭ ۋە قايتا سىناش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="953"/>
         <source>Chat history cleared</source>
-        <translation>سۆزلەش تارىخى تازىلاندى</translation>
+        <translation type="vanished">سۆزلەش تارىخى تازىلاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="955"/>
         <source>Click to start/stop recording</source>
-        <translation>يازما باشلاش/توختىتىش ئۈچۈن چېكىڭ</translation>
+        <translation type="vanished">يازما باشلاش/توختىتىش ئۈچۈن چېكىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="956"/>
         <source>Listening</source>
-        <translation>ئاڭلاۋاتىدۇ</translation>
+        <translation type="vanished">ئاڭلاۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="957"/>
         <source>Sleeping</source>
-        <translation>ئۇخلاۋاتىدۇ</translation>
+        <translation type="vanished">ئۇخلاۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="958"/>
         <source>Microphone not detected</source>
-        <translation>مىكروفون تېپىلمىدى</translation>
+        <translation type="vanished">مىكروفون تېپىلمىدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="959"/>
         <source>Connection failed, click to try again</source>
-        <translation>ئۇلانش مەغلۇپ بولدى، قايتا سىناش ئۈچۈن چېكىڭ</translation>
+        <translation type="vanished">ئۇلانش مەغلۇپ بولدى، قايتا سىناش ئۈچۈن چېكىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="960"/>
         <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation>ئاكتىپلاشتۇرۇش ئۈچۈن ئانىماتسىيە ياكى Ctrl+Super+Space نى بېسىڭ</translation>
+        <translation type="vanished">ئاكتىپلاشتۇرۇش ئۈچۈن ئانىماتسىيە ياكى Ctrl+Super+Space نى بېسىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="961"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation>ئاۋاز كىرگۈزۈش ۋاقىتلىق ئىشلەتكىلى بولمايدۇ، تورنى تەكشۈرۈڭ!</translation>
+        <translation type="vanished">ئاۋاز كىرگۈزۈش ۋاقىتلىق ئىشلەتكىلى بولمايدۇ، تورنى تەكشۈرۈڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="962"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>مۇلازىمېتكا ئۇلانالمىدى، تورنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناش.</translation>
+        <translation type="vanished">مۇلازىمېتكا ئۇلانالمىدى، تورنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناش.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="963"/>
         <source>Voice conversation</source>
-        <translation>ئاۋازلىق سۆزلەش</translation>
+        <translation type="vanished">ئاۋازلىق سۆزلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="964"/>
         <source>Click the animation or press Enter to send</source>
-        <translation>ئەۋەتىش ئۈچۈن ئانىماتسىيە ياكى Enter نى بېسىڭ</translation>
+        <translation type="vanished">ئەۋەتىش ئۈچۈن ئانىماتسىيە ياكى Enter نى بېسىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="965"/>
         <source>Stop recording after %1 seconds</source>
-        <translation>%1 سېكۇنتتىن كېيىن يازما توختىتىلىدۇ</translation>
+        <translation type="vanished">%1 سېكۇنتتىن كېيىن يازما توختىتىلىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="966"/>
         <source>Thinking</source>
-        <translation>ئويلىنىۋاتىدۇ</translation>
+        <translation type="vanished">ئويلىنىۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="967"/>
         <source>Click animation to interrupt</source>
-        <translation>بىكار قىلىش ئۈچۈن ئانىماتسىيە چېكىڭ</translation>
+        <translation type="vanished">بىكار قىلىش ئۈچۈن ئانىماتسىيە چېكىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="968"/>
         <source>Answering</source>
-        <translation>جاۋاب بېرىۋاتىدۇ</translation>
+        <translation type="vanished">جاۋاب بېرىۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="969"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>ھەقسىز ھېسابات چېكىڭىز تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+        <translation type="vanished">ھەقسىز ھېسابات چېكىڭىز تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="970"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>ھەقسىز ھېساباتىڭىزنىڭ مۇددىتى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+        <translation type="vanished">ھەقسىز ھېساباتىڭىزنىڭ مۇددىتى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="971"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI ئىشلىتىشتىن ئىلگىرى AI مودېل ھېساباتىنى سەپلەش كېرەك. ئالدى بىلەن مودېل ھېساباتىنى سەپلەڭ.</translation>
+        <translation type="vanished">UOS AI ئىشلىتىشتىن ئىلگىرى AI مودېل ھېساباتىنى سەپلەش كېرەك. ئالدى بىلەن مودېل ھېساباتىنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="972"/>
         <source>Activate</source>
-        <translation>ئاكتىپلاشتۇرۇش</translation>
+        <translation type="vanished">ئاكتىپلاشتۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="973"/>
         <source>Voice input</source>
-        <translation>ئاۋاز كىرگۈزۈش</translation>
+        <translation type="vanished">ئاۋاز كىرگۈزۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="974"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation>ئاۋاز تارقىتىش ۋاقىتلىق ئىشلەتكىلى بولمايدۇ، تورنى تەكشۈرۈڭ!</translation>
+        <translation type="vanished">ئاۋاز تارقىتىش ۋاقىتلىق ئىشلەتكىلى بولمايدۇ، تورنى تەكشۈرۈڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="975"/>
         <source>Turn off voice conversation</source>
-        <translation>ئاۋازلىق سۆزلەشنى ئۆچۈرۈش</translation>
+        <translation type="vanished">ئاۋازلىق سۆزلەشنى ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="976"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation>سۈرەت ھاسىل قىلىندى، كۆرۈش ئۈچۈن سۆزلەش ئېكرانىغا ئالماشتۇرۇڭ.</translation>
+        <translation type="vanished">سۈرەت ھاسىل قىلىندى، كۆرۈش ئۈچۈن سۆزلەش ئېكرانىغا ئالماشتۇرۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="977"/>
         <source>No account, please configure an account</source>
-        <translation>ھېسابات يوق، ھېسابات سەپلەڭ</translation>
+        <translation type="vanished">ھېسابات يوق، ھېسابات سەپلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="978"/>
         <source>Answer each question up to 5 times</source>
-        <translation>ھەر بىر سوئالغا 5 قېتىم جاۋاب بېرىش</translation>
+        <translation type="vanished">ھەر بىر سوئالغا 5 قېتىم جاۋاب بېرىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="979"/>
         <source>Copied successfully</source>
-        <translation>مۇۋەپپىقىيەتلىك كۆچۈرۈلدى</translation>
+        <translation type="vanished">مۇۋەپپىقىيەتلىك كۆچۈرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="980"/>
         <source>Sound output device not detected</source>
-        <translation>ئاۋاز چىقىرىش قۇرالى تېپىلمىدى</translation>
+        <translation type="vanished">ئاۋاز چىقىرىش قۇرالى تېپىلمىدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="981"/>
         <source>The sound output device is not detected, please check and try again!</source>
-        <translation>ئاۋاز چىقىرىش قۇرالى تېپىلمىدى، تەكشۈرۈپ قايتا سىناشنى!</translation>
+        <translation type="vanished">ئاۋاز چىقىرىش قۇرالى تېپىلمىدى، تەكشۈرۈپ قايتا سىناشنى!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="982"/>
         <source>Settings</source>
-        <translation>تەڭشەكلەر</translation>
+        <translation type="vanished">تەڭشەكلەر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="983"/>
         <source>About</source>
-        <translation>ھەققىدە</translation>
+        <translation type="vanished">ھەققىدە</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="984"/>
         <source>Mode</source>
-        <translation>ئۇسلۇب</translation>
+        <translation type="vanished">ئۇسلۇب</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="985"/>
         <source>Window Mode</source>
-        <translation>كۆزنەك ئۇسلۇبى</translation>
+        <translation type="vanished">كۆزنەك ئۇسلۇبى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="986"/>
         <source>Sidebar Mode</source>
-        <translation>يان تاختىسى ئۇسلۇبى</translation>
+        <translation type="vanished">يان تاختىسى ئۇسلۇبى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="987"/>
         <source>Assistant List</source>
-        <translation>ياردەمچىلەر تىزىمى</translation>
+        <translation type="vanished">ياردەمچىلەر تىزىمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="988"/>
         <source>Agent List</source>
-        <translation>ئەمەلدارلار تىزىمى</translation>
+        <translation type="vanished">ئەمەلدارلار تىزىمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="989"/>
         <source>Agent Store</source>
-        <translation>ئەمەلدارلار دۇكىنى</translation>
+        <translation type="vanished">ئەمەلدارلار دۇكىنى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="990"/>
         <source>UOS System Assistant</source>
-        <translation>UOS سىستېمىسى ياردەمچىسى</translation>
+        <translation type="vanished">UOS سىستېمىسى ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="991"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin سىستېمىسى ياردەمچىسى</translation>
+        <translation type="vanished">Deepin سىستېمىسى ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="992"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>شەخسىي بىلىم ياردەمچىسى</translation>
+        <translation type="vanished">شەخسىي بىلىم ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="993"/>
         <source>Please configure the knowledge base</source>
-        <translation>بىلىم بانكىسىنى سەپلەڭ</translation>
+        <translation type="vanished">بىلىم بانكىسىنى سەپلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="994"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation>[شەخسىي بىلىم ياردەمچىسى] نى ئىشلىتىشتىن ئىلگىرى بىلىم بانكىسىنى سەپلەش كېرەك. بىلىم بانكىسىنى سەپلىگەندىن كېيىن، AI سىز بىلىم بانكىسىدا سەپلىگەن مەزمۇنلارغا ئاساسەن سوئاللارغا جاۋاب بېرىدۇ ياكى مەزمۇن ھاسىل قىلىدۇ.</translation>
+        <translation type="vanished">[شەخسىي بىلىم ياردەمچىسى] نى ئىشلىتىشتىن ئىلگىرى بىلىم بانكىسىنى سەپلەش كېرەك. بىلىم بانكىسىنى سەپلىگەندىن كېيىن، AI سىز بىلىم بانكىسىدا سەپلىگەن مەزمۇنلارغا ئاساسەن سوئاللارغا جاۋاب بېرىدۇ ياكى مەزمۇن ھاسىل قىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="995"/>
         <source>Please configure the large model</source>
-        <translation>چوڭ مودېلنى سەپلەڭ</translation>
+        <translation type="vanished">چوڭ مودېلنى سەپلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="996"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation>شەخسىي بىلىم ياردەمچىسىنى چوڭ مودېلنى سەپلىگەندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+        <translation type="vanished">شەخسىي بىلىم ياردەمچىسىنى چوڭ مودېلنى سەپلىگەندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="997"/>
         <source>To configure</source>
-        <translation>سەپلەش</translation>
+        <translation type="vanished">سەپلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="998"/>
         <source>To install</source>
-        <translation>ئورنىتىش</translation>
+        <translation type="vanished">ئورنىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="999"/>
         <source>Please install [EmbeddingPlugins]</source>
-        <translation>[EmbeddingPlugins] نى ئورنىتىڭ</translation>
+        <translation type="vanished">[EmbeddingPlugins] نى ئورنىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1000"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation>بۇ ياردەمچىنى ئىشلىتىش ئۈچۈن EmbeddingPlugins نى ئورنىتىش كېرەك</translation>
+        <translation type="vanished">بۇ ياردەمچىنى ئىشلىتىش ئۈچۈن EmbeddingPlugins نى ئورنىتىش كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1003"/>
         <source>Drag files here to add them.</source>
-        <translation>فايللارنى بۇ يەرگە سۆرەپ قوشۇڭ.</translation>
+        <translation type="vanished">فايللارنى بۇ يەرگە سۆرەپ قوشۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1004"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation>سىز پەقەت 3 ھۆججەت قوشالايسىز، قوللايدىغان ھۆججەت تىپلىرى: txt، doc، docx، xls، xlsx، ppt، pptx، pdf، md، png، jpg، jpeg، كود ھۆججەتلىرى قاتارلىقلار.</translation>
+        <translation type="vanished">سىز پەقەت 3 ھۆججەت قوشالايسىز، قوللايدىغان ھۆججەت تىپلىرى: txt، doc، docx، xls، xlsx، ppt، pptx، pdf، md، png، jpg، jpeg، كود ھۆججەتلىرى قاتارلىقلار.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1066"/>
         <source>MCP Server</source>
-        <translation>MCP مۇلازىمېتىرى</translation>
+        <translation type="vanished">MCP مۇلازىمېتىرى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1067"/>
         <source>Add Mcp Server</source>
-        <translation>MCP مۇلازىمېتىرىنى قوشۇش</translation>
+        <translation type="vanished">MCP مۇلازىمېتىرىنى قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1068"/>
         <source>Add Server</source>
-        <translation>مۇلازىمېتىر قوشۇش</translation>
+        <translation type="vanished">مۇلازىمېتىر قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1069"/>
         <source>Add failed! Error reason:</source>
-        <translation>قوشۇش مەغلۇپ بولدى! خاتالىق سەۋەبى:</translation>
+        <translation type="vanished">قوشۇش مەغلۇپ بولدى! خاتالىق سەۋەبى:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1070"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation>MCP مۇھىتى يوق. 【UOS AI Agent】 نى ئورنىتىڭ</translation>
+        <translation type="vanished">MCP مۇھىتى يوق. 【UOS AI Agent】 نى ئورنىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1071"/>
         <source>Calling</source>
-        <translation>چاقىرىۋاتىدۇ</translation>
+        <translation type="vanished">چاقىرىۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1072"/>
         <source>Completed</source>
-        <translation>تاماملاندى</translation>
+        <translation type="vanished">تاماملاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1073"/>
         <source>Call Failed</source>
-        <translation>چاقىرىش مەغلۇپ بولدى</translation>
+        <translation type="vanished">چاقىرىش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1074"/>
         <source>Cancelled</source>
-        <translation>بىكار قىلىندى</translation>
+        <translation type="vanished">بىكار قىلىندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1075"/>
         <source>params</source>
-        <translation>پارامېتىرلار</translation>
+        <translation type="vanished">پارامېتىرلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1076"/>
         <source>result</source>
-        <translation>نەتىجە</translation>
+        <translation type="vanished">نەتىجە</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1077"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>MCP مۇلازىمېتىرى ئۈچۈن، رەسمىي سۇپۇرغان «DeepSeek-Trial Account» مودېلىغا ئالماشتۇرۇڭ.</translation>
+        <translation type="vanished">MCP مۇلازىمېتىرى ئۈچۈن، رەسمىي سۇپۇرغان «DeepSeek-Trial Account» مودېلىغا ئالماشتۇرۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1078"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation>MCP مۇلازىمېتىرى بۇيرۇقىنى كىرگۈزۈڭ، مەسىلەن «مېنىڭ ئۈچۈن سىستېمىنى قارا ھالىتىگە ئۆزگەرتىڭ».</translation>
+        <translation type="vanished">MCP مۇلازىمېتىرى بۇيرۇقىنى كىرگۈزۈڭ، مەسىلەن «مېنىڭ ئۈچۈن سىستېمىنى قارا ھالىتىگە ئۆزگەرتىڭ».</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1079"/>
         <source>Agent server is not available</source>
-        <translation>ئاگېنت مۇلازىمېتىرى ئىشلەمدۇ</translation>
+        <translation type="vanished">ئاگېنت مۇلازىمېتىرى ئىشلەمدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1080"/>
         <source>Agent server exception</source>
-        <translation>Agent مۇلازىمېتى ئىستىسنا ئالدى</translation>
+        <translation type="vanished">Agent مۇلازىمېتى ئىستىسنا ئالدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1081"/>
         <source>MCP server is not available</source>
-        <translation>MCP مۇلازىمېتى ئىشلەتمەيدۇ</translation>
+        <translation type="vanished">MCP مۇلازىمېتى ئىشلەتمەيدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1082"/>
         <source>Cancel</source>
-        <translation>بىكار قىلىش</translation>
+        <translation type="vanished">بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1083"/>
         <source>Confirm</source>
-        <translation>جەزملەش</translation>
+        <translation type="vanished">جەزملەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1084"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation>MCP خىزمىتى ئارقىلىق بىر بۇيرۇق بىلەن كۆپ ھۆججەت ۋە كۆپ قوللىنىشچان پروگرامما ۋەزىپىلىرىنى ئاپتوماتلاشتۇرۇڭ. ھازىر سىناپ بېقىڭ!</translation>
+        <translation type="vanished">MCP خىزمىتى ئارقىلىق بىر بۇيرۇق بىلەن كۆپ ھۆججەت ۋە كۆپ قوللىنىشچان پروگرامما ۋەزىپىلىرىنى ئاپتوماتلاشتۇرۇڭ. ھازىر سىناپ بېقىڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1085"/>
         <source>Use later</source>
-        <translation>كېيىن ئىشلىتىش</translation>
+        <translation type="vanished">كېيىن ئىشلىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1086"/>
         <source>Install Now</source>
-        <translation>ھازىر قاچىلاش</translation>
+        <translation type="vanished">ھازىر قاچىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1087"/>
         <source>Enable MCP Server</source>
-        <translation>MCP مۇلازىمېتىنى قوزغىتىش</translation>
+        <translation type="vanished">MCP مۇلازىمېتىنى قوزغىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1088"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation>MCP مۇھىتى &quot;UOS AI Agent&quot; نى قاچىلاغاندىن كېيىن، </translation>
+        <translation type="vanished">MCP مۇھىتى &quot;UOS AI Agent&quot; نى قاچىلاغاندىن كېيىن، </translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1089"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation> تېپىپ، MCP مۇلازىمېتى تىزىملىكىدىن &quot;uos-mcp&quot; نى تاللاڭ.</translation>
+        <translation type="vanished"> تېپىپ، MCP مۇلازىمېتى تىزىملىكىدىن &quot;uos-mcp&quot; نى تاللاڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1090"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation>سىناپ بېقىڭ: &quot;سىستېمىنى قاراڭغۇ ھالىتىگە ئۆزگەرت&quot;.</translation>
+        <translation type="vanished">سىناپ بېقىڭ: &quot;سىستېمىنى قاراڭغۇ ھالىتىگە ئۆزگەرت&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1091"/>
         <source>Try it now</source>
-        <translation>ھازىر سىناپ بېقىڭ</translation>
+        <translation type="vanished">ھازىر سىناپ بېقىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1092"/>
         <source>Add Mcp Server[GuidePage]</source>
-        <translation>MCP مۇلازىمېتى قوشۇش[يېتەكلىگەن بەت]</translation>
+        <translation type="vanished">MCP مۇلازىمېتى قوشۇش[يېتەكلىگەن بەت]</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1093"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation>تۇنجى قېتىم ئىشلىتىدىغانلار: App Store ئارقىلىق MCP مۇھىتى &quot;UOS AI Agent&quot; نى قاچىلاڭ.</translation>
+        <translation type="vanished">تۇنجى قېتىم ئىشلىتىدىغانلار: App Store ئارقىلىق MCP مۇھىتى &quot;UOS AI Agent&quot; نى قاچىلاڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1094"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation>JSON ھۆججەت فورماتى خاتا، تەكشۈرۈپ قايتا تەقدىم قىلىڭ</translation>
+        <translation type="vanished">JSON ھۆججەت فورماتى خاتا، تەكشۈرۈپ قايتا تەقدىم قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1095"/>
         <source>Install Now &gt;</source>
-        <translation>ھازىر قاچىلاش &gt;</translation>
+        <translation type="vanished">ھازىر قاچىلاش &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1098"/>
         <source>General Chat</source>
-        <translation>ئادەتتىكى سۆھبەت</translation>
+        <translation type="vanished">ئادەتتىكى سۆھبەت</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1099"/>
         <source>Private Chat</source>
-        <translation>شەخسىي سۆھبەت</translation>
+        <translation type="vanished">شەخسىي سۆھبەت</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1100"/>
         <source>Now in Private Chat</source>
-        <translation>ھازىر شەخسىي سۆھبەتتە</translation>
+        <translation type="vanished">ھازىر شەخسىي سۆھبەتتە</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1101"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation>شەخسىي سۆھبەت ئۇچۇرلىرى تارىخقا ساقلانمايدۇ، سۆھبەتتىن چىققاندا مەڭگۈلۈك ئۆچۈرۈلىدۇ.</translation>
+        <translation type="vanished">شەخسىي سۆھبەت ئۇچۇرلىرى تارىخقا ساقلانمايدۇ، سۆھبەتتىن چىققاندا مەڭگۈلۈك ئۆچۈرۈلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1102"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation>ئېكران كۆرۈنۈشى سوئال-جاۋاب تېزلەتمە (Ctrl+Alt+Q)، 3 پارچىگىچە رەسىم قوللايدۇ.</translation>
+        <translation type="vanished">ئېكران كۆرۈنۈشى سوئال-جاۋاب تېزلەتمە (Ctrl+Alt+Q)، 3 پارچىگىچە رەسىم قوللايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1103"/>
         <source>Cannot be used during screen recording</source>
-        <translation>ئېكران سىنىغا ئېلىۋاتقاندا ئىشلىتەلمەيدۇ</translation>
+        <translation type="vanished">ئېكران سىنىغا ئېلىۋاتقاندا ئىشلىتەلمەيدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1104"/>
         <source>You can upload up to 3 files or image</source>
-        <translation>3 پارچىگىچە ھۆججەت ياكى رەسىم يوللىيالايسىز</translation>
+        <translation type="vanished">3 پارچىگىچە ھۆججەت ياكى رەسىم يوللىيالايسىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1105"/>
         <source>Upload Files</source>
-        <translation>ھۆججەت يوللاش</translation>
+        <translation type="vanished">ھۆججەت يوللاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1106"/>
         <source>Please delete the abnormal file and send it again</source>
-        <translation>ئادەمسىز ھۆججەتنى ئۆچۈرۈپ قايتا يوللاڭ</translation>
+        <translation type="vanished">ئادەمسىز ھۆججەتنى ئۆچۈرۈپ قايتا يوللاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1107"/>
         <source>Add Private Chat</source>
-        <translation>شەخسىي سۆھبەت قوشۇش</translation>
+        <translation type="vanished">شەخسىي سۆھبەت قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1108"/>
         <source>Add [Screenshot Q&amp;A]</source>
-        <translation>[ئېكران كۆرۈنۈشى سوئال-جاۋاب] قوشۇش</translation>
+        <translation type="vanished">[ئېكران كۆرۈنۈشى سوئال-جاۋاب] قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1109"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation>ئېكران كۆرۈنۈشىنى تۇتۇپ UOS AI غا يوللاڭ. تۈركۈدىن رەسىم يوللىيالايسىز.</translation>
+        <translation type="vanished">ئېكران كۆرۈنۈشىنى تۇتۇپ UOS AI غا يوللاڭ. تۈركۈدىن رەسىم يوللىيالايسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1110"/>
         <source>OK</source>
-        <translation>ماقۇل</translation>
+        <translation type="vanished">ماقۇل</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1111"/>
         <source>Next</source>
-        <translation>كېيىنكى</translation>
+        <translation type="vanished">كېيىنكى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1112"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation>[شەخسىي سۆھبەت ئۇسلۇبى] قوشۇش - سۆھبەتلەر ساقلانمايدۇ.</translation>
+        <translation type="vanished">[شەخسىي سۆھبەت ئۇسلۇبى] قوشۇش - سۆھبەتلەر ساقلانمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1113"/>
         <source>No text extracted</source>
-        <translation>ھېچقانداق تېكىست چىقىرىلمىدى</translation>
+        <translation type="vanished">ھېچقانداق تېكىست چىقىرىلمىدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1114"/>
         <source>Image size exceeds 15 MB</source>
-        <translation>رەسىم چوڭلۇقى 15 MB دىن ئېشىپ كەتتى</translation>
+        <translation type="vanished">رەسىم چوڭلۇقى 15 MB دىن ئېشىپ كەتتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1117"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation>ئىلمىي ئامبار ئېچىلغاندىن كېيىن، جاۋابلار ئۇنىڭ مەزمۇنىغا ئاساسەن بولىدۇ. جاۋاب تېزلىكى ماشىنا ئىقتىدارى ۋە ئىلمىي ئامبار چوڭلۇقىغا باغلىق.</translation>
+        <translation type="vanished">ئىلمىي ئامبار ئېچىلغاندىن كېيىن، جاۋابلار ئۇنىڭ مەزمۇنىغا ئاساسەن بولىدۇ. جاۋاب تېزلىكى ماشىنا ئىقتىدارى ۋە ئىلمىي ئامبار چوڭلۇقىغا باغلىق.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1118"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation>قائىلە ياكى MCP تاللانغاندا ئىلمىي ئامبار ئىشلەتكىلى بولمايدۇ.</translation>
+        <translation type="vanished">قائىلە ياكى MCP تاللانغاندا ئىلمىي ئامبار ئىشلەتكىلى بولمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1119"/>
         <source>MCP is disabled while the knowledge base is active.</source>
-        <translation>ئىلمىي ئامبار ئاكتىپ بولغاندا MCP چەكلەنگەن.</translation>
+        <translation type="vanished">ئىلمىي ئامبار ئاكتىپ بولغاندا MCP چەكلەنگەن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1120"/>
         <source>Commands disabled while knowledge base is active.</source>
-        <translation>ئىلمىي ئامبار ئاكتىپ بولغاندا قوللىنىشچان بۇيرۇقلار چەكلەنگەن.</translation>
+        <translation type="vanished">ئىلمىي ئامبار ئاكتىپ بولغاندا قوللىنىشچان بۇيرۇقلار چەكلەنگەن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1121"/>
         <source>Copy</source>
-        <translation type="unfinished">كۆچۈرۈش</translation>
+        <translation type="obsolete">كۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1122"/>
         <source>Re-edit</source>
-        <translation>قايتا تەھرىرلەش</translation>
+        <translation type="vanished">قايتا تەھرىرلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1123"/>
         <source>Copy succeeded.</source>
-        <translation>كۆچۈرۈش ئۈنۈملۈك بولدى.</translation>
+        <translation type="vanished">كۆچۈرۈش ئۈنۈملۈك بولدى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1124"/>
         <source>Copy failed. Please try again.</source>
-        <translation>كۆچۈرۈش مەغلۇپ بولدى، قايتا سىناپ بېقىڭ.</translation>
+        <translation type="vanished">كۆچۈرۈش مەغلۇپ بولدى، قايتا سىناپ بېقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1125"/>
         <source>Searching</source>
-        <translation>ئىزدەۋاتىدۇ</translation>
+        <translation type="vanished">ئىزدەۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1126"/>
         <source>%1 reference documents have been obtained (%2s)</source>
-        <translation>%1 دانە ئەسلىكى ھۆججەت ئېرىشىلدى (%2s)</translation>
+        <translation type="vanished">%1 دانە ئەسلىكى ھۆججەت ئېرىشىلدى (%2s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1127"/>
         <source>Clear History</source>
-        <translation>تارىخنى تازىلاش</translation>
+        <translation type="vanished">تارىخنى تازىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1128"/>
         <source>Delete all records?</source>
-        <translation>بارلىق خاتىرىلەرنى ئۆچۈرەمسىز؟</translation>
+        <translation type="vanished">بارلىق خاتىرىلەرنى ئۆچۈرەمسىز؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1129"/>
         <source>Once deleted, the content cannot be recovered!</source>
-        <translation>ئۆچۈرۈلگەندىن كېيىن مەزمۇن قايتۇرغىلى بولمايدۇ!</translation>
+        <translation type="vanished">ئۆچۈرۈلگەندىن كېيىن مەزمۇن قايتۇرغىلى بولمايدۇ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1130"/>
         <source>Recommend official models</source>
-        <translation>رەسمىي مودېللارنى تەۋسىيە قىلىش</translation>
+        <translation type="vanished">رەسمىي مودېللارنى تەۋسىيە قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1131"/>
         <source>Disable MCP</source>
-        <translation>MCP نى چەكلەش</translation>
+        <translation type="vanished">MCP نى چەكلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1134"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation>&quot;DeepSeek-Trial Account&quot; رەسمىي مودېلىنى ئىشلىتىشنى تەۋسىيە قىلىمىز</translation>
+        <translation type="vanished">&quot;DeepSeek-Trial Account&quot; رەسمىي مودېلىنى ئىشلىتىشنى تەۋسىيە قىلىمىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1135"/>
         <source>Quick Open</source>
-        <translation>تېز ئېچىش</translation>
+        <translation type="vanished">تېز ئېچىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1136"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation>MCP مۇلازىمېتىر ئاپتوماتىك ئۇسلۇبغا يۇقىرىلاندى</translation>
+        <translation type="vanished">MCP مۇلازىمېتىر ئاپتوماتىك ئۇسلۇبغا يۇقىرىلاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1137"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation>MCP مۇلازىمېتىر ئاپتوماتىك ئۇسلۇبغا يۇقىرىلاندى، ھەر قانداق MCP مۇلازىمېتىرغا بىر كۇنۇپكا بېسىپ لايىھەلەپ كىرەلەيسىز</translation>
+        <translation type="vanished">MCP مۇلازىمېتىر ئاپتوماتىك ئۇسلۇبغا يۇقىرىلاندى، ھەر قانداق MCP مۇلازىمېتىرغا بىر كۇنۇپكا بېسىپ لايىھەلەپ كىرەلەيسىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1138"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation>. بۇ سىستېما سەپلەش ۋە ھۆججەت بىر تەرەپ قىلىش قاتارلىق ۋەزىپىلەرنى بىر كۇنۇپكا بىلەن ئاپتوماتىك قىلىشىڭىزغا ياردەم قىلىدۇ.</translation>
+        <translation type="vanished">. بۇ سىستېما سەپلەش ۋە ھۆججەت بىر تەرەپ قىلىش قاتارلىق ۋەزىپىلەرنى بىر كۇنۇپكا بىلەن ئاپتوماتىك قىلىشىڭىزغا ياردەم قىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1139"/>
         <source>Adding MCP Server has been moved to Settings.</source>
-        <translation>MCP مۇلازىمېتىر قوشۇش تەڭشەكلەرگە يۆتكەلدى.</translation>
+        <translation type="vanished">MCP مۇلازىمېتىر قوشۇش تەڭشەكلەرگە يۆتكەلدى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1140"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation>تېخىمۇ كۆپ MCP مۇلازىمېتىر قوشۇش ئۈچۈن تەڭشەكلەر &gt; MCP مۇلازىمېتىرغا بېقىڭ.</translation>
+        <translation type="vanished">تېخىمۇ كۆپ MCP مۇلازىمېتىر قوشۇش ئۈچۈن تەڭشەكلەر &gt; MCP مۇلازىمېتىرغا بېقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1141"/>
         <source>Got it</source>
-        <translation type="unfinished">چۈشەندىم</translation>
+        <translation type="obsolete">چۈشەندىم</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1142"/>
         <source>Complimentary Model Credits</source>
-        <translation>ھەدىيە مودېل نەق پۇلى</translation>
+        <translation type="vanished">ھەدىيە مودېل نەق پۇلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1143"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation>ھازىرقى سىستېما DeepSeek سىناق ھېسابات مودېلىنى تەمىنلەيدۇ، ھەر ئاينىڭ باشلىنىشىدا ھەقسىز چېكىنىش مىقدارى ئاپتوماتىك ئەسلىگە كېلىدۇ، سىز ئۇنى قايغۇسىز ئىشلىتەلەيسىز.</translation>
+        <translation type="vanished">ھازىرقى سىستېما DeepSeek سىناق ھېسابات مودېلىنى تەمىنلەيدۇ، ھەر ئاينىڭ باشلىنىشىدا ھەقسىز چېكىنىش مىقدارى ئاپتوماتىك ئەسلىگە كېلىدۇ، سىز ئۇنى قايغۇسىز ئىشلىتەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1144"/>
         <source>Claim Credits</source>
-        <translation>نەق پۇل تەلەپ قىلىش</translation>
+        <translation type="vanished">نەق پۇل تەلەپ قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1145"/>
         <source>Get a free account</source>
-        <translation>ھەقسىز ھېسابات ئېلىش</translation>
+        <translation type="vanished">ھەقسىز ھېسابات ئېلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1146"/>
         <source>Claim Free Credits</source>
-        <translation>ھەقسىز نەق پۇل تەلەپ قىلىش</translation>
+        <translation type="vanished">ھەقسىز نەق پۇل تەلەپ قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1147"/>
         <source>Successfully Claimed</source>
-        <translation>مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
+        <translation type="vanished">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1148"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation>تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+        <translation type="vanished">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1149"/>
         <source>Enable MCP Server&amp;</source>
-        <translation>MCP سېرۋېرنى قوزغات&amp;</translation>
+        <translation type="vanished">MCP سېرۋېرنى قوزغات&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1150"/>
         <source>Disable MCP Server</source>
-        <translation>MCP سېرۋېرنى ئۆچۈر</translation>
+        <translation type="vanished">MCP سېرۋېرنى ئۆچۈر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1151"/>
         <source>Configure MCP Server</source>
-        <translation>MCP سېرۋېرنى سەپلە</translation>
+        <translation type="vanished">MCP سېرۋېرنى سەپلە</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1154"/>
-        <source>Enable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1155"/>
-        <source>Disable MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1156"/>
-        <source>Configure MCP &amp; Skills</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1005"/>
         <source>You can only add a maximum of one file.</source>
-        <translation>ئەڭ كۆپ بىر فايل قوشالايسىز.</translation>
+        <translation type="vanished">ئەڭ كۆپ بىر فايل قوشالايسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1006"/>
         <source>The file format is not supported.</source>
-        <translation>فايل فورماتى قوللىمايدۇ.</translation>
+        <translation type="vanished">فايل فورماتى قوللىمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1007"/>
         <source>Summarize the key content of the file.</source>
-        <translation>فايلنىڭ ئاساسلىق مەزمۇنىنى قىسقارتىپ چىقىڭ.</translation>
+        <translation type="vanished">فايلنىڭ ئاساسلىق مەزمۇنىنى قىسقارتىپ چىقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1008"/>
         <source>Parsing...</source>
-        <translation>تەھلىل قىلىنىۋاتىدۇ...</translation>
+        <translation type="vanished">تەھلىل قىلىنىۋاتىدۇ...</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1009"/>
         <source>File Error</source>
-        <translation>فايل خاتالىقى</translation>
+        <translation type="vanished">فايل خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1010"/>
         <source>File has been deleted.</source>
-        <translation>فايل ئۆچۈرۈلگەن.</translation>
+        <translation type="vanished">فايل ئۆچۈرۈلگەن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1011"/>
         <source>The file size exceeds the 100MB limit.</source>
-        <translation>فايل چوڭلۇقى 100MB چەكلىمىسىدىن ئاشتى.</translation>
+        <translation type="vanished">فايل چوڭلۇقى 100MB چەكلىمىسىدىن ئاشتى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1012"/>
         <source>Upload a document</source>
-        <translation>پۈتۈك يۈكلەڭ</translation>
+        <translation type="vanished">پۈتۈك يۈكلەڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1013"/>
         <source>File deleted</source>
-        <translation>فايل ئۆچۈرۈلدى</translation>
+        <translation type="vanished">فايل ئۆچۈرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1014"/>
         <source>No text was parsed</source>
-        <translation>تېكىست تەھلىل قىلىنمىدى</translation>
+        <translation type="vanished">تېكىست تەھلىل قىلىنمىدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1015"/>
         <source>Reference</source>
-        <translation>پايدىلانما</translation>
+        <translation type="vanished">پايدىلانما</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1018"/>
         <source>Instruction</source>
-        <translation>يېتەكچى</translation>
+        <translation type="vanished">يېتەكچى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1019"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation>ئاكتىپلاشتۇرۇش ئۈچۈن كىرگۈزۈش رامكىسىدە &quot;/&quot; نى كىرگۈزۈڭ.</translation>
+        <translation type="vanished">ئاكتىپلاشتۇرۇش ئۈچۈن كىرگۈزۈش رامكىسىدە &quot;/&quot; نى كىرگۈزۈڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1020"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation>كىرگۈزۈڭ؛ قۇر سىزىق ئالماشتۇرۇش ئۈچۈن &quot;Ctrl+Enter&quot; نى بېسىڭ.</translation>
+        <translation type="vanished">كىرگۈزۈڭ؛ قۇر سىزىق ئالماشتۇرۇش ئۈچۈن &quot;Ctrl+Enter&quot; نى بېسىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1021"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation>سوئالىڭىزنى كىرگۈزۈڭ، ياكى بۇيرۇق تاللاش ئۈچۈن &quot;/&quot; نى كىرگۈزۈڭ
+        <translation type="vanished">سوئالىڭىزنى كىرگۈزۈڭ، ياكى بۇيرۇق تاللاش ئۈچۈن &quot;/&quot; نى كىرگۈزۈڭ
 يېڭى قۇر سىزىق باشلاش ئۈچۈن &quot;Ctrl+Enter&quot; نى بېسىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1024"/>
         <source>Search complete.</source>
-        <translation>ئىزدەش تاماملاندى.</translation>
+        <translation type="vanished">ئىزدەش تاماملاندى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1025"/>
         <source>Click to view results</source>
-        <translation>نەتىجىلەرنى كۆرۈش ئۈچۈن چېكىڭ</translation>
+        <translation type="vanished">نەتىجىلەرنى كۆرۈش ئۈچۈن چېكىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1028"/>
         <source>edit</source>
-        <translation>تەھرىر</translation>
+        <translation type="vanished">تەھرىر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1029"/>
         <source>save</source>
-        <translation>ساقلا</translation>
+        <translation type="vanished">ساقلا</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1030"/>
         <source>copy</source>
-        <translation>كۆچۈر</translation>
+        <translation type="vanished">كۆچۈر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1033"/>
         <source>Search</source>
-        <translation>ئىزدە</translation>
+        <translation type="vanished">ئىزدە</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1034"/>
         <source>DeepThink(R1)</source>
-        <translation>چوڭقۇر پىكىر(R1)</translation>
+        <translation type="vanished">چوڭقۇر پىكىر(R1)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1035"/>
         <source>Thinking has stopped</source>
-        <translation>پىكىر تۇتۇلدى</translation>
+        <translation type="vanished">پىكىر تۇتۇلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1036"/>
         <source>Back to bottom</source>
-        <translation>ئاستىغا قايت</translation>
+        <translation type="vanished">ئاستىغا قايت</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1037"/>
         <source>Deeply thought (%1 seconds)</source>
-        <translation>چوڭقۇر پىكىر (%1 سېكۇنت)</translation>
+        <translation type="vanished">چوڭقۇر پىكىر (%1 سېكۇنت)</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1040"/>
         <source>New Conversation</source>
-        <translation>يېڭى پاراڭ</translation>
+        <translation type="vanished">يېڭى پاراڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1041"/>
         <source>History</source>
-        <translation>تارىخ</translation>
+        <translation type="vanished">تارىخ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1042"/>
         <source>No History Records</source>
-        <translation>تارىخ خاتىرىسى يوق</translation>
+        <translation type="vanished">تارىخ خاتىرىسى يوق</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1043"/>
         <source>Today</source>
-        <translation>بۈگۈن</translation>
+        <translation type="vanished">بۈگۈن</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1044"/>
         <source>Yesterday</source>
-        <translation>تۈنۈگۈن</translation>
+        <translation type="vanished">تۈنۈگۈن</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1045"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation>سۆزلەشۈشنى چىقىرىۋېتىشكە جازا قىلامسىز؟ ئۇنى چىقىرىۋەتكەندىن كېيىن قايتا تىكلىيەلمەيسىز.</translation>
+        <translation type="vanished">سۆزلەشۈشنى چىقىرىۋېتىشكە جازا قىلامسىز؟ ئۇنى چىقىرىۋەتكەندىن كېيىن قايتا تىكلىيەلمەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1046"/>
         <source>The %1 agent used in this conversation has been deleted</source>
-        <translation>بۇ سۆزلەشۈشتە ئىشلىتىلگەن %1 ۋەكىل چىقىرىۋېتىلدى</translation>
+        <translation type="vanished">بۇ سۆزلەشۈشتە ئىشلىتىلگەن %1 ۋەكىل چىقىرىۋېتىلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1047"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation>بۇ سۆزلەشۈشنى كۆرەلمەيسىز. كۆرۈش ئۈچۈن %1 ۋەكىلنى ئورنىتىپ قايتا سىناپ بېقىڭ.</translation>
+        <translation type="vanished">بۇ سۆزلەشۈشنى كۆرەلمەيسىز. كۆرۈش ئۈچۈن %1 ۋەكىلنى ئورنىتىپ قايتا سىناپ بېقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1048"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation>ئەسلى سۆزلەشۈش مودېلى چىقىرىۋېتىلدى. سىز سۆزلەشۈشنى داۋاملاشتۇرۇش ئۈچۈن يېڭى مودېلغا ئالماشتۇردۇق.</translation>
+        <translation type="vanished">ئەسلى سۆزلەشۈش مودېلى چىقىرىۋېتىلدى. سىز سۆزلەشۈشنى داۋاملاشتۇرۇش ئۈچۈن يېڭى مودېلغا ئالماشتۇردۇق.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1051"/>
         <source>Recommendations</source>
-        <translation>تەۋسىيەلەر</translation>
+        <translation type="vanished">تەۋسىيەلەر</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1052"/>
         <source>More</source>
-        <translation>تېخىمۇ كۆپ</translation>
+        <translation type="vanished">تېخىمۇ كۆپ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1053"/>
         <source>Add Model</source>
-        <translation>مودېل قوشۇش</translation>
+        <translation type="vanished">مودېل قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1054"/>
         <source>No Model</source>
-        <translation>مودېل يوق</translation>
+        <translation type="vanished">مودېل يوق</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1055"/>
         <source>No model available. Please install or configure a model in the settings.</source>
-        <translation>ئىشلەتكىلى بولىدىغان مودېل يوق. تەڭشەكلەردە مودېل ئورنىتىڭ ياكى تەڭشەڭ.</translation>
+        <translation type="vanished">ئىشلەتكىلى بولىدىغان مودېل يوق. تەڭشەكلەردە مودېل ئورنىتىڭ ياكى تەڭشەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1056"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation>ئىجادىيىتىڭىز ئۈچۈن مەزمۇن تېمىسى ۋە تەلەپلىرىنى بايان قىلىڭ.</translation>
+        <translation type="vanished">ئىجادىيىتىڭىز ئۈچۈن مەزمۇن تېمىسى ۋە تەلەپلىرىنى بايان قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1057"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation>تەرجىمە قىلماقچى بولغان مەزمۇننى كىرگۈزۈڭ ۋە نىشان تىلىنى بەلگىلەڭ. سۈكۈتتىكى تەرجىمە خەنزۇچىغا بولىدۇ.</translation>
+        <translation type="vanished">تەرجىمە قىلماقچى بولغان مەزمۇننى كىرگۈزۈڭ ۋە نىشان تىلىنى بەلگىلەڭ. سۈكۈتتىكى تەرجىمە خەنزۇچىغا بولىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1058"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation>ئىشلەمەكچى بولغان تېكىستى كىرگۈزۈڭ ۋە تەلەپلىرىڭىزنى بەلگىلەڭ.</translation>
+        <translation type="vanished">ئىشلەمەكچى بولغان تېكىستى كىرگۈزۈڭ ۋە تەلەپلىرىڭىزنى بەلگىلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1059"/>
         <source>New Agent Added</source>
-        <translation>يېڭى ۋەكىل قوشۇلدى</translation>
+        <translation type="vanished">يېڭى ۋەكىل قوشۇلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1060"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation>يېڭى يېزىش، تېكىست ئىشلەش ۋە تەرجىمە ۋەكىللىرى قوشۇلدى. ھازىر تەكشۈرۈپ بېقىڭ.</translation>
+        <translation type="vanished">يېڭى يېزىش، تېكىست ئىشلەش ۋە تەرجىمە ۋەكىللىرى قوشۇلدى. ھازىر تەكشۈرۈپ بېقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1061"/>
         <source>Try it</source>
-        <translation>سىناپ بېقىڭ</translation>
+        <translation type="vanished">سىناپ بېقىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1062"/>
         <source>Write an article based on the following document:</source>
-        <translation>تۆۋەندىكى ھۆججەتكە ئاساسەن ماقالە يېزىڭ:</translation>
+        <translation type="vanished">تۆۋەندىكى ھۆججەتكە ئاساسەن ماقالە يېزىڭ:</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/eaiproxy.cpp" line="1063"/>
         <source>Translate the following document into English:</source>
-        <translation>تۆۋەندىكى ھۆججەتنى ئىنگلىزچىغا تەرجىمە قىلىڭ:</translation>
+        <translation type="vanished">تۆۋەندىكى ھۆججەتنى ئىنگلىزچىغا تەرجىمە قىلىڭ:</translation>
     </message>
 </context>
 <context>
     <name>EChatButton</name>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="150"/>
         <source>Turn off voice conversation</source>
-        <translation>ئاۋازلىق سۆزلەشۈشنى ئۆچۈرۈش</translation>
+        <translation type="vanished">ئاۋازلىق سۆزلەشۈشنى ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/chat/private/echatbutton.cpp" line="152"/>
         <source>Voice conversation</source>
-        <translation>ئاۋازلىق سۆزلەشۈش</translation>
+        <translation type="vanished">ئاۋازلىق سۆزلەشۈش</translation>
     </message>
 </context>
 <context>
     <name>EPPTWebView</name>
     <message>
-        <location filename="../src/gui/chat/private/epptwebview.cpp" line="67"/>
         <source>Export Item As</source>
-        <translation>تۈرنى باشقا فورماتتا چىقىرىش</translation>
+        <translation type="vanished">تۈرنى باشقا فورماتتا چىقىرىش</translation>
     </message>
 </context>
 <context>
     <name>EParserDocument</name>
     <message>
-        <location filename="../src/gui/chat/private/eparserdocument.cpp" line="57"/>
         <source>Supported files</source>
-        <translation>قوللايدىغان ھۆججەتلەر</translation>
+        <translation type="vanished">قوللايدىغان ھۆججەتلەر</translation>
+    </message>
+</context>
+<context>
+    <name>FileParser</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
+        <source>Unsupported file format</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FunctionsParser</name>
     <message>
-        <location filename="../src/tools/functionsparser.cpp" line="267"/>
         <source>Function not available</source>
-        <translation>فۇنكسىيە ئىشلەتكىلى بولمايدۇ</translation>
+        <translation type="vanished">فۇنكسىيە ئىشلەتكىلى بولمايدۇ</translation>
     </message>
 </context>
 <context>
     <name>GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="44"/>
         <source>Get a free trial account</source>
-        <translation>ھەقسىز سىناق ھېساباتى ئالىسىز</translation>
+        <translation type="vanished">ھەقسىز سىناق ھېساباتى ئالىسىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="61"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>ئەمەلدىن قالدۇرۇش</translation>
+        <translation type="vanished">ئەمەلدىن قالدۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="62"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation>ھېسابات ئالىسىز</translation>
+        <translation type="vanished">ھېسابات ئالىسىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="89"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>ھېسابات تاپشۇرۇۋېلىش سىز پائالىيەت شەرتلىرىنى چۈشەندىڭىز ۋە قوشۇلدىڭىزنى بىلدۈرىدۇ,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;پائالىيەت تەپسىلاتى&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">ھېسابات تاپشۇرۇۋېلىش سىز پائالىيەت شەرتلىرىنى چۈشەندىڭىز ۋە قوشۇلدىڭىزنى بىلدۈرىدۇ,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;پائالىيەت تەپسىلاتى&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="121"/>
         <source>Trial Account</source>
-        <translation>سىناق ھېساباتى</translation>
+        <translation type="vanished">سىناق ھېساباتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="133"/>
         <source>Save failed, please try again later</source>
-        <translation>ساقلاش مەغلۇپ بولدى، كېيىن قايتا سىناپ بېقىڭ</translation>
+        <translation type="vanished">ساقلاش مەغلۇپ بولدى، كېيىن قايتا سىناپ بېقىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="134"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="153"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>جەزملەشتۈرۈش</translation>
+        <translation type="vanished">جەزملەشتۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Trial account received successfully.</source>
-        <translation>سىناق ھېساباتى مۇۋەپپەقىيەتلىك قوبۇل قىلىندى.</translation>
+        <translation type="vanished">سىناق ھېساباتى مۇۋەپپەقىيەتلىك قوبۇل قىلىندى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="144"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>سىناق ھېساباتىنىڭ ئىشلىتىش سانى ۋە ۋاقتى چەكلىك، شەخسىي مودېل ھېساباتىڭىزنى ۋاقتىدا سەپلەڭ! تەپسىلاتلارنى كۆرۈش ئۈچۈن پائالىيەت تەپسىلاتىغا قاراڭ.</translation>
+        <translation type="vanished">سىناق ھېساباتىنىڭ ئىشلىتىش سانى ۋە ۋاقتى چەكلىك، شەخسىي مودېل ھېساباتىڭىزنى ۋاقتىدا سەپلەڭ! تەپسىلاتلارنى كۆرۈش ئۈچۈن پائالىيەت تەپسىلاتىغا قاراڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="146"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>سىناق ھېساباتى ئۈچۈن ئىنگلىزچە قوللاش قانائەتلىنەرلىك ئەمەس. شۇڭا شەخسىي مودېل ھېساباتىڭىزنى ۋاقتىدا سەپلەڭ!</translation>
+        <translation type="vanished">سىناق ھېساباتى ئۈچۈن ئىنگلىزچە قوللاش قانائەتلىنەرلىك ئەمەس. شۇڭا شەخسىي مودېل ھېساباتىڭىزنى ۋاقتىدا سەپلەڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="147"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>سىناشنى باشلاش</translation>
+        <translation type="vanished">سىناشنى باشلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="152"/>
         <source>The free account activity ends.</source>
-        <translation>ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
+        <translation type="vanished">ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>مۇلازىمېتكا ئۇلانالمىدى، تور باغلىنىشىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">مۇلازىمېتكا ئۇلانالمىدى، تور باغلىنىشىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
     </message>
 </context>
 <context>
@@ -2972,141 +2417,120 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="199"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation>يېڭى قوشۇلغان ھۆججەتلەرنى ئىشلىتىشتىن ئىلگىرى ئالدىن بىر تەييارلىق قىلىش كېرەك بولىدۇ، سانلىق مەلۇماتنى بىر تەرەپ قىلىش جەريانىدا نۇرغۇن ھېسابلاش ۋە ساقلىغۇچ مەنبەلەرنى سەرف قىلىشى مۇمكىن. سانلىق مەلۇماتنى ئۆچۈرگەندىن كېيىن بىر تەرەپ قىلىش توختايدۇ.</translation>
+        <translation type="vanished">يېڭى قوشۇلغان ھۆججەتلەرنى ئىشلىتىشتىن ئىلگىرى ئالدىن بىر تەييارلىق قىلىش كېرەك بولىدۇ، سانلىق مەلۇماتنى بىر تەرەپ قىلىش جەريانىدا نۇرغۇن ھېسابلاش ۋە ساقلىغۇچ مەنبەلەرنى سەرف قىلىشى مۇمكىن. سانلىق مەلۇماتنى ئۆچۈرگەندىن كېيىن بىر تەرەپ قىلىش توختايدۇ.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation>بۇ بىلىم بانكا ھۆججىتىنى ئۆچۈرمەكچىمۇ؟</translation>
+        <translation type="vanished">بۇ بىلىم بانكا ھۆججىتىنى ئۆچۈرمەكچىمۇ؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>بىكار قىلىش</translation>
+        <translation type="vanished">بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>جەزملەشتۈرۈش</translation>
+        <translation type="vanished">جەزملەشتۈرۈش</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="63"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="381"/>
         <source>Delete</source>
-        <translation>ئۆچۈرۈش</translation>
+        <translation type="vanished">ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="67"/>
         <source>Add</source>
-        <translation>قوشۇش</translation>
+        <translation type="vanished">قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="71"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="310"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
         <source>Please install the embedding model plugins first</source>
-        <translation>ئاۋۋال embedding مودېل قىستۇرمىسىنى ئورنىتىڭ</translation>
+        <translation type="vanished">ئاۋۋال embedding مودېل قىستۇرمىسىنى ئورنىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="79"/>
         <source>Knowledge Base Management</source>
-        <translation>بىلىم بانكىسى باشقۇرۇش</translation>
+        <translation type="vanished">بىلىم بانكىسى باشقۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="106"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation>بۇ يەردە شەخسىي بىلىم ياردەمچىسىنىڭ بىلىم بانكىسىنى بېكىتسە بولىدۇ، شەخسىي بىلىم ياردەمچىسى تۆۋەندە قوشۇلغان ھۆججەتلەرگە ئاساسەن سوئاللارغا جاۋاب بېرىدۇ.</translation>
+        <translation type="vanished">بۇ يەردە شەخسىي بىلىم ياردەمچىسىنىڭ بىلىم بانكىسىنى بېكىتسە بولىدۇ، شەخسىي بىلىم ياردەمچىسى تۆۋەندە قوشۇلغان ھۆججەتلەرگە ئاساسەن سوئاللارغا جاۋاب بېرىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="156"/>
         <source>Done</source>
-        <translation>تاماملاندى</translation>
+        <translation type="vanished">تاماملاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="169"/>
         <source>None</source>
-        <translation>يوق</translation>
+        <translation type="vanished">يوق</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="215"/>
         <source>File already exist</source>
-        <translation>ھۆججەت ئاللىقاچان مەۋجۇت</translation>
+        <translation type="vanished">ھۆججەت ئاللىقاچان مەۋجۇت</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="216"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation>%1 ھۆججىتى ئاللىقاچان مەۋجۇت بولۇپ، قايتا قوشۇشقا بولمايدۇ. قايتا قوشۇشتىن ئىلگىرى ھۆججەت نامىنى ئۆزگەرتىڭ ياكى مەۋجۇت ھۆججەتنى ئۆچۈرۈڭ.</translation>
+        <translation type="vanished">%1 ھۆججىتى ئاللىقاچان مەۋجۇت بولۇپ، قايتا قوشۇشقا بولمايدۇ. قايتا قوشۇشتىن ئىلگىرى ھۆججەت نامىنى ئۆزگەرتىڭ ياكى مەۋجۇت ھۆججەتنى ئۆچۈرۈڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="241"/>
         <source>All files</source>
-        <translation>ھەممە ھۆججەتلەر</translation>
+        <translation type="vanished">ھەممە ھۆججەتلەر</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="93"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="564"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation>بۇ ئىقتىدار يۇقىرى دەرىجىلىك قورۇلما مەنبەسىنى تەلەپ قىلىدۇ، ئەسلىيەت سەپلىمىسى: CPU Intel 11-نەۋرە i7 ياكى ئۇنىڭدىن يۇقىرى؛ 16GB ياكى ئۇنىڭدىن كۆپ رام؛ NVIDIA گرافىك كارتا 10-سىرىيە ياكى ئۇنىڭدىن يۇقىرى بولسا ئەڭ ياخشى. ئەگەر سەپلىمە بەك تۆۋەن بولسا، كېچىكىش ۋە توغرا ئەمەس جاۋاب قاتارلىق مەسىلىلەر كۆرۈلۈشى مۇمكىن.</translation>
+        <translation type="vanished">بۇ ئىقتىدار يۇقىرى دەرىجىلىك قورۇلما مەنبەسىنى تەلەپ قىلىدۇ، ئەسلىيەت سەپلىمىسى: CPU Intel 11-نەۋرە i7 ياكى ئۇنىڭدىن يۇقىرى؛ 16GB ياكى ئۇنىڭدىن كۆپ رام؛ NVIDIA گرافىك كارتا 10-سىرىيە ياكى ئۇنىڭدىن يۇقىرى بولسا ئەڭ ياخشى. ئەگەر سەپلىمە بەك تۆۋەن بولسا، كېچىكىش ۋە توغرا ئەمەس جاۋاب قاتارلىق مەسىلىلەر كۆرۈلۈشى مۇمكىن.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="275"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>ئەگىشىش</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="284"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
         <translation type="unfinished">بىلىم بانكىسى سىغىمى يېتەرسىز</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="285"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
         <translation type="unfinished">بىلىم بانكىسىنىڭ ئومۇمىي سىغىمى %1M، قالغان سىغىم %2. بۇ قېتىم قوشۇلغان ھۆججەتلەرنىڭ ئومۇمىي سانى %3. بىلىم بانكىسىغا قوشۇش مەشغۇلاتىنى تاماملاش مۇمكىن ئەمەس.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="291"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>ماقۇل</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="305"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
         <translation type="unfinished">دىسكا بوشلۇقى يېتەرسىز</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="306"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
         <translation type="unfinished">يېڭى قوشۇلغان ھۆججەتلەرنى ساقلىش ئۈچۈن، ئەڭ ئاز %1 دىسكا بوشلۇقى تەلەپ قىلىنىدۇ. نۆۋەتتىكى قالغان بوشلۇق %2. دىسكا بوشلۇقىنى تازىلاپ، قايتا سىناشنى سورايمىز.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="324"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
         <translation type="unfinished">بىلىم ئامبىرىغا قوشۇش ئۈچۈن ۋېكتورلاشتۇرۇش مودېلى قىستۇرمىسىنى ئورنىتىش كېرەك. ئىلتىماس دۇكىنىغا بارىپ چۈشۈرۈپ ئورنىتىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="332"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
         <source>Do not install</source>
         <comment>button</comment>
         <translation type="unfinished">ئورنىتما</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="333"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
         <source>Install immediately</source>
         <comment>button</comment>
         <translation type="unfinished">دەرھال ئورنىت</translation>
@@ -3115,563 +2539,477 @@ Never combine explanation with translation or provide full translation after par
 <context>
     <name>LLM</name>
     <message>
-        <location filename="../src/llm/common/llm.cpp" line="78"/>
         <source>Vincent picture service is not supported</source>
-        <translation>Vincent رەسىم مۇلازىمىتى قوللىمايدۇ</translation>
+        <translation type="vanished">Vincent رەسىم مۇلازىمىتى قوللىمايدۇ</translation>
     </message>
 </context>
 <context>
     <name>LLMServerProxy</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="270"/>
         <source>GPT3.5（OpenAI）</source>
-        <translation>GPT3.5（OpenAI）</translation>
+        <translation type="vanished">GPT3.5（OpenAI）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="273"/>
         <source>GPT4（OpenAI）</source>
-        <translation>GPT4（OpenAI）</translation>
+        <translation type="vanished">GPT4（OpenAI）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="280"/>
         <source>星火大模型1.5（讯飞）</source>
-        <translation>Spark چوڭ مودېل 1.5（iFLYTEK）</translation>
+        <translation type="vanished">Spark چوڭ مودېل 1.5（iFLYTEK）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="283"/>
         <source>星火大模型2.0（讯飞）</source>
-        <translation>Spark چوڭ مودېل 2.0（iFLYTEK）</translation>
+        <translation type="vanished">Spark چوڭ مودېل 2.0（iFLYTEK）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="285"/>
         <source>星火大模型3.0（讯飞）</source>
-        <translation>Spark چوڭ مودېل 3.0（iFLYTEK）</translation>
+        <translation type="vanished">Spark چوڭ مودېل 3.0（iFLYTEK）</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="290"/>
         <source>ERNIE 3.5</source>
-        <translation>ERNIE 3.5</translation>
+        <translation type="vanished">ERNIE 3.5</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="293"/>
         <source>ERNIE-Bot-turbo</source>
-        <translation>ERNIE-Bot-turbo</translation>
+        <translation type="vanished">ERNIE-Bot-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="295"/>
         <source>ERNIE-Bot-4</source>
-        <translation>ERNIE-Bot-4</translation>
+        <translation type="vanished">ERNIE-Bot-4</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="275"/>
         <source>360 AI</source>
-        <translation>360 AI</translation>
+        <translation type="vanished">360 AI</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="278"/>
         <source>iFLYTEK-Spark</source>
-        <translation>iFLYTEK-Spark</translation>
+        <translation type="vanished">iFLYTEK-Spark</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="288"/>
         <source>Baidu-Ernie</source>
-        <translation>Baidu-Ernie</translation>
+        <translation type="vanished">Baidu-Ernie</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="299"/>
         <source>ChatGLM-turbo</source>
-        <translation>ChatGLM-turbo</translation>
+        <translation type="vanished">ChatGLM-turbo</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="301"/>
         <source>Gemini 1.5 Flash</source>
-        <translation>Gemini 1.5 Flash</translation>
+        <translation type="vanished">Gemini 1.5 Flash</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="303"/>
         <source>Gemini 1.5 Pro</source>
-        <translation>Gemini 1.5 Pro</translation>
+        <translation type="vanished">Gemini 1.5 Pro</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="305"/>
         <source>TextToImage(Local)</source>
-        <translation>تېكىستتىن رەسىم(يەرلىك)</translation>
+        <translation type="vanished">تېكىستتىن رەسىم(يەرلىك)</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="307"/>
         <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <translation type="vanished">YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="309"/>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="311"/>
         <source>Custom</source>
-        <translation>ئۆزلەشتۈرۈلگەن</translation>
+        <translation type="vanished">ئۆزلەشتۈرۈلگەن</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="313"/>
         <source>Private deployment model</source>
-        <translation>شەخسىي يولغا قويۇش مودېلى</translation>
+        <translation type="vanished">شەخسىي يولغا قويۇش مودېلى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="315"/>
         <source>OpenRouter</source>
-        <translation>OpenRouter</translation>
+        <translation type="vanished">OpenRouter</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="317"/>
         <source>DeepSeek-R1</source>
-        <translation>DeepSeek-R1</translation>
+        <translation type="vanished">DeepSeek-R1</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="319"/>
         <source>DeepSeek</source>
-        <translation>DeepSeek</translation>
+        <translation type="vanished">DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="322"/>
         <source>unknown model</source>
-        <translation>نامەلۇم مودېل</translation>
+        <translation type="vanished">نامەلۇم مودېل</translation>
     </message>
 </context>
 <context>
     <name>LLMUtils</name>
     <message>
-        <location filename="../src/llm/common/llmutils.cpp" line="114"/>
         <source>Your system environment is Linux, and the user home path is</source>
-        <translation>سىستېمىڭىز Linux مۇھىت، ئىشلەتكۈچى ئۆي يولى</translation>
+        <translation type="vanished">سىستېمىڭىز Linux مۇھىت، ئىشلەتكۈچى ئۆي يولى</translation>
     </message>
 </context>
 <context>
     <name>LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation>ئورنىتىش</translation>
+        <translation type="vanished">ئورنىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation>يېڭىلاش</translation>
+        <translation type="vanished">يېڭىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation>ئۆچۈرۈش</translation>
+        <translation type="vanished">ئۆچۈرۈش</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="32"/>
         <source>uninstall</source>
-        <translation>ئۆچۈرۈش</translation>
+        <translation type="vanished">ئۆچۈرۈش</translation>
     </message>
 </context>
 <context>
     <name>LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation>يەرلىك مودېل</translation>
+        <translation type="vanished">يەرلىك مودېل</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Text to image model</source>
-        <translation>تېكىستتىن رەسىم مودېلى</translation>
+        <translation type="vanished">تېكىستتىن رەسىم مودېلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="114"/>
         <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation>رەسىم ئىشلەش ئۈچۈن يەرلىك مودېل ئىشلىتىڭ. قوزغىغاندىن كېيىن پاراڭ ئېغىزىدىكى مودېل تىزىمىدىن تاللىيالايسىز.</translation>
+        <translation type="vanished">رەسىم ئىشلەش ئۈچۈن يەرلىك مودېل ئىشلىتىڭ. قوزغىغاندىن كېيىن پاراڭ ئېغىزىدىكى مودېل تىزىمىدىن تاللىيالايسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>speech model</source>
-        <translation>نۇتۇق مودېلى</translation>
+        <translation type="vanished">نۇتۇق مودېلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="140"/>
         <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation>قوزغىغاندا، پاراڭ ئېغىزىدىكى نۇتۇق تونۇش ۋە نۇتۇق ئوقۇش ئۈچۈن تور باغلىنىشى زۆرۈر ئەمەس، يەرلىك مودېل ئىشلىتىلىدۇ.</translation>
+        <translation type="vanished">قوزغىغاندا، پاراڭ ئېغىزىدىكى نۇتۇق تونۇش ۋە نۇتۇق ئوقۇش ئۈچۈن تور باغلىنىشى زۆرۈر ئەمەس، يەرلىك مودېل ئىشلىتىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
         <source>ULLM-1.5B</source>
-        <translation>ULLM-1.5B</translation>
+        <translation type="vanished">ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
         <source>ULLM-7B</source>
-        <translation>ULLM-7B</translation>
+        <translation type="vanished">ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation>DeepSeek-R1-1.5B</translation>
+        <translation type="vanished">DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>UOS AI large model</source>
-        <translation>UOS AI چوڭ مودېلى</translation>
+        <translation type="vanished">UOS AI چوڭ مودېلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="187"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="225"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation>ئورنىتىلغاندىن كېيىن، UOS AI نى ئىشلەتە ئۈچۈن تور باغلىنىشى زۆرۈر ئەمەس.</translation>
+        <translation type="vanished">ئورنىتىلغاندىن كېيىن، UOS AI نى ئىشلەتە ئۈچۈن تور باغلىنىشى زۆرۈر ئەمەس.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="206"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation>ئوچۇق مەنبەلىك جەمئىيەتتىن ئۆز ئەھۋالىڭىز بىلەن چۈشۈرۈڭ. ئورنىتىلغاندىن كېيىن UOS AI ياردەمچىدە ئىشلىتىڭ.</translation>
+        <translation type="vanished">ئوچۇق مەنبەلىك جەمئىيەتتىن ئۆز ئەھۋالىڭىز بىلەن چۈشۈرۈڭ. ئورنىتىلغاندىن كېيىن UOS AI ياردەمچىدە ئىشلىتىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>Embedding Plugins</source>
-        <translation>قىستۇرما قىستۇرمىلار</translation>
+        <translation type="vanished">قىستۇرما قىستۇرمىلار</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="243"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation>مودېل ئورنىتىلغاندىن كېيىن، سىستېما ياردەمچىسى ۋە شەخسىي بىلىم ياردەمچىسى ئىشلەيدۇ.</translation>
+        <translation type="vanished">مودېل ئورنىتىلغاندىن كېيىن، سىستېما ياردەمچىسى ۋە شەخسىي بىلىم ياردەمچىسى ئىشلەيدۇ.</translation>
     </message>
 </context>
 <context>
     <name>MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="198"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="342"/>
         <source>Successfully connected</source>
-        <translation>مۇۋەپپەقىيەتلىك باغلاندى</translation>
+        <translation type="vanished">مۇۋەپپەقىيەتلىك باغلاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="357"/>
         <source>User Agreement</source>
-        <translation>ئىشلەتكۈچى كېلىشىمى</translation>
+        <translation type="vanished">ئىشلەتكۈچى كېلىشىمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="368"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI ئىشلەتكۈچى كېلىشىمى</translation>
+        <translation type="vanished">UOS AI ئىشلەتكۈچى كېلىشىمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="369"/>
         <source>Read and agreed</source>
-        <translation>ئوقۇپ قوشۇلدىم</translation>
+        <translation type="vanished">ئوقۇپ قوشۇلدىم</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="395"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="406"/>
         <source>Proxy Settings</source>
-        <translation>ۋەكىل تەڭشىكى</translation>
+        <translation type="vanished">ۋەكىل تەڭشىكى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="407"/>
         <source>Go to settings</source>
-        <translation>تەڭشەككە بار</translation>
+        <translation type="vanished">تەڭشەككە بار</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="507"/>
         <source>Model Configuration</source>
-        <translation>مودېل تەڭشىكى</translation>
+        <translation type="vanished">مودېل تەڭشىكى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="590"/>
         <source>The free account activity ends.</source>
-        <translation>ھەقسىز ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
+        <translation type="vanished">ھەقسىز ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="591"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>جەزملە</translation>
+        <translation type="vanished">جەزملە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="697"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation>بىلىم ئامبىرىغا قوشۇش ئۈچۈن ۋېكتورلاشتۇرۇش مودېلى قىستۇرمىسىنى ئورنىتىش كېرەك. ئىلتىماس دۇكىنىغا بارىپ چۈشۈرۈپ ئورنىتىڭ.</translation>
+        <translation type="vanished">بىلىم ئامبىرىغا قوشۇش ئۈچۈن ۋېكتورلاشتۇرۇش مودېلى قىستۇرمىسىنى ئورنىتىش كېرەك. ئىلتىماس دۇكىنىغا بارىپ چۈشۈرۈپ ئورنىتىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="705"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation>ئورنىتما</translation>
+        <translation type="vanished">ئورنىتما</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="706"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation>دەرھال ئورنىت</translation>
+        <translation type="vanished">دەرھال ئورنىت</translation>
     </message>
 </context>
 <context>
     <name>ModelListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="54"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>بۇ مودېلنى ئۆچۈرۈشنى جەزىملىدىڭىزمۇ؟</translation>
+        <translation type="vanished">بۇ مودېلنى ئۆچۈرۈشنى جەزىملىدىڭىزمۇ؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="55"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>بىكار قىل</translation>
+        <translation type="vanished">بىكار قىل</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistitem.cpp" line="56"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>جەزملە</translation>
+        <translation type="vanished">جەزملە</translation>
     </message>
 </context>
 <context>
     <name>ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="31"/>
         <source>Get a free account</source>
-        <translation>ھەقسىز ھېسابات ئېلىش</translation>
+        <translation type="vanished">ھەقسىز ھېسابات ئېلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="160"/>
         <source>Delete</source>
-        <translation>ئۆچۈر</translation>
+        <translation type="vanished">ئۆچۈر</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="41"/>
         <source>Add</source>
-        <translation>قوش</translation>
+        <translation type="vanished">قوش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="48"/>
         <source>Online model</source>
-        <translation>تور مودېلى</translation>
+        <translation type="vanished">تور مودېلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="95"/>
         <source>Done</source>
-        <translation>تامام</translation>
+        <translation type="vanished">تامام</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="107"/>
         <source>None</source>
-        <translation>يوق</translation>
+        <translation type="vanished">يوق</translation>
     </message>
 </context>
 <context>
     <name>ModifyModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="27"/>
         <source>LLM</source>
-        <translation>LLM</translation>
+        <translation type="vanished">LLM</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="37"/>
         <source>APPID</source>
-        <translation>APPID</translation>
+        <translation type="vanished">APPID</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="47"/>
         <source>APIKey</source>
-        <translation>APIKey</translation>
+        <translation type="vanished">APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="57"/>
         <source>APISecret</source>
-        <translation>APISecret</translation>
+        <translation type="vanished">APISecret</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="67"/>
         <source>Account</source>
-        <translation>ھېسابات</translation>
+        <translation type="vanished">ھېسابات</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="73"/>
         <source>Model Name</source>
-        <translation>مودېل ئىسمى</translation>
+        <translation type="vanished">مودېل ئىسمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="83"/>
         <source>API Address</source>
-        <translation>API ئادرېسى</translation>
+        <translation type="vanished">API ئادرېسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="96"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>زۆرۈر، كۆپ مودېللارنى پەرقلەندۈرۈش ئۈچۈن</translation>
+        <translation type="vanished">زۆرۈر، كۆپ مودېللارنى پەرقلەندۈرۈش ئۈچۈن</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="100"/>
         <source>Domain</source>
-        <translation>دائىرە</translation>
+        <translation type="vanished">دائىرە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="136"/>
         <source>Cancel</source>
-        <translation>بىكار قىل</translation>
+        <translation type="vanished">بىكار قىل</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="138"/>
         <source>Confirm</source>
-        <translation>جەزملە</translation>
+        <translation type="vanished">جەزملە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="298"/>
         <source>No more than 20 characters</source>
-        <translation>20 ھەرپتىن ئاشما</translation>
+        <translation type="vanished">20 ھەرپتىن ئاشما</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifymodeldialog.cpp" line="337"/>
         <source>The account name already exists, please change it</source>
-        <translation>ھېسابات ئىسمى مەۋجۇت، ئۆزگەرتىڭ</translation>
+        <translation type="vanished">ھېسابات ئىسمى مەۋجۇت، ئۆزگەرتىڭ</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
+        <source>The image file does not exist: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
+        <source>OCR did not recognize the text content</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="192"/>
         <source>In data processing</source>
-        <translation>سانلىق مەلۇمات بىلەن شۇغۇللانماقتا</translation>
+        <translation type="vanished">سانلىق مەلۇمات بىلەن شۇغۇللانماقتا</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="204"/>
         <source>Data processing error</source>
-        <translation>سانلىق مەلۇمات بىلەن شۇغۇللانغاندا خاتالىق كۆرۈلدى</translation>
+        <translation type="vanished">سانلىق مەلۇمات بىلەن شۇغۇللانغاندا خاتالىق كۆرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="216"/>
         <source>File error, unable to process, please delete.</source>
-        <translation>ھۆججەت خاتالىقى، بىلەن شۇغۇللانالمىدى، ئۆچۈرۈڭ.</translation>
+        <translation type="vanished">ھۆججەت خاتالىقى، بىلەن شۇغۇللانالمىدى، ئۆچۈرۈڭ.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="503"/>
         <source>UOS AI</source>
-        <translation>UOS ياساما ئەقىل</translation>
+        <translation type="vanished">UOS ياساما ئەقىل</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="506"/>
         <source>UOS System Assistant</source>
-        <translation>UOS سىستېما ياردەمچىسى</translation>
+        <translation type="vanished">UOS سىستېما ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="509"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin سىستېما ياردەمچىسى</translation>
+        <translation type="vanished">Deepin سىستېما ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="512"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>شەخسى بىلىم ياردەمچىسى</translation>
+        <translation type="vanished">شەخسى بىلىم ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="515"/>
         <source>AI Writing</source>
-        <translation>ياساما ئەقىل يېزىش</translation>
+        <translation type="vanished">ياساما ئەقىل يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="518"/>
         <source>AI Text Processing</source>
-        <translation>ياساما ئەقىل تېكىست بىلەن شۇغۇللانش</translation>
+        <translation type="vanished">ياساما ئەقىل تېكىست بىلەن شۇغۇللانش</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="521"/>
         <source>AI Translation</source>
-        <translation>ياساما ئەقىل تەرجىمە</translation>
+        <translation type="vanished">ياساما ئەقىل تەرجىمە</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="534"/>
         <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation>سىستېما توپلام ياساما ئەقىل ياردەمچىسى.</translation>
+        <translation type="vanished">سىستېما توپلام ياساما ئەقىل ياردەمچىسى.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="537"/>
         <source>Assists you with UOS system-related inquiries.</source>
-        <translation>UOS سىستېمىسىغا ئائىت سوئاللىرىڭىزغا ياردەم قىلىدۇ.</translation>
+        <translation type="vanished">UOS سىستېمىسىغا ئائىت سوئاللىرىڭىزغا ياردەم قىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="540"/>
         <source>Assists you with Deepin system-related inquiries.</source>
-        <translation>Deepin سىستېمىسىغا ئائىت سوئاللىرىڭىزغا ياردەم قىلىدۇ.</translation>
+        <translation type="vanished">Deepin سىستېمىسىغا ئائىت سوئاللىرىڭىزغا ياردەم قىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="546"/>
         <source>Write Based on Your Topic and Requirements.</source>
-        <translation>مەزمۇن ۋە تەلەپلىرىڭىزگە ئاساسەن يېزىش.</translation>
+        <translation type="vanished">مەزمۇن ۋە تەلەپلىرىڭىزگە ئاساسەن يېزىش.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="543"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation>شەخسى بىلىم ساندۇقىڭىزغا ئاساسەن سوئاللارغا جاۋاب بېرىدۇ.</translation>
+        <translation type="vanished">شەخسى بىلىم ساندۇقىڭىزغا ئاساسەن سوئاللارغا جاۋاب بېرىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="549"/>
         <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation>قىسقارتىش، تەكشۈرۈش ۋە قايتا يېزىش قاتارلىق تېكىست بىلەن شۇغۇللانش ۋەزىپىلىرىنى ئورۇنداشقا قادىر.</translation>
+        <translation type="vanished">قىسقارتىش، تەكشۈرۈش ۋە قايتا يېزىش قاتارلىق تېكىست بىلەن شۇغۇللانش ۋەزىپىلىرىنى ئورۇنداشقا قادىر.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/serverdefs.h" line="552"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation>كۆپ تىل بىلەن شۇغۇللانغان تەرجىمە ياردەمچىڭىز.</translation>
+        <translation type="vanished">كۆپ تىل بىلەن شۇغۇللانغان تەرجىمە ياردەمچىڭىز.</translation>
     </message>
     <message>
-        <location filename="../src/dbs/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="220"/>
+        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>جەزىملەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="846"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
         <source>Search</source>
         <translation>ئىزدەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="848"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
         <source>Explain</source>
         <translation>چۈشەندۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="850"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
         <source>Summary</source>
         <translation>قىسقارتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="852"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
         <source>Translate</source>
         <translation>تەرجىمە قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="854"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
         <source>Continue Writing</source>
         <translation>داۋاملاشتۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="856"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
         <source>Expand</source>
         <translation>كېڭەيتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="858"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
         <source>Polish</source>
         <translation>مۇكەممەللەشتۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="860"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
         <source>Correct</source>
         <translation>تۈزىتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="862"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
         <source>Add to the AI knowledge base</source>
         <translation>AI ئىلمىي ئامبارىغا قوشۇش</translation>
     </message>
@@ -3772,7 +3110,7 @@ Never combine explanation with translation or provide full translation after par
         <translation>ئەرەب تىلى (سەئۇدى ئەرەبىستان)</translation>
     </message>
     <message>
-        <location filename="../src/agent/defaultmcpserver.cpp" line="20"/>
+        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
         <source>System AI Intelligent ButlerFunction
 Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
 Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
@@ -3782,163 +3120,268 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 
 مىسال: ئۈستەلئۈستىدىكى يېڭى قۇرۇلغان قىسقۇچتىكى بارلىق ھۆججەتلەرنى قانۇنلۇق ماتېرىيال دەپ ئاتاپ، رەقەم تەرتىپى بويىچە تەرتىپلەڭ.</translation>
     </message>
+    <message>
+        <location filename="../src/assistant/assistantinfo.h" line="23"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
+        <source>Private deployment model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="obsolete">&apos;mcpServers&apos; دالىسى يوقاپ كەتتى.</translation>
+    </message>
+    <message>
+        <source>no valid mcp server.</source>
+        <translation type="obsolete">ئىناۋەتلىك mcp مۇلازىمېتىرى يوق.</translation>
+    </message>
+    <message>
+        <source>url field cannot be empty.</source>
+        <translation type="obsolete">url بۆلەك بوش قالمىسۇن.</translation>
+    </message>
+    <message>
+        <source>command field cannot be empty.</source>
+        <translation type="obsolete">command بۆلەك بوش قالمىسۇن.</translation>
+    </message>
+    <message>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="obsolete">«command» ياكى «url» بۆلەك كەم</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ResearchTools</name>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
+        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
+        <source>The uos-ai-agent plugin must be installed to save documents.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
+        <source>Download Now</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ServerCodeTranslation</name>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="16"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>سېرۋېرغا ئۇلانالمايدىغان بولۇپ، تورىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">سېرۋېرغا ئۇلانالمايدىغان بولۇپ، تورىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="19"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>ئۇلانمىسى مۇۋەپپەقىيەتسىز بولۇپ، تولدۇرۇلغان ئۇچۇرلارنى تەكشۈرۈڭ.</translation>
+        <translation type="vanished">ئۇلانمىسى مۇۋەپپەقىيەتسىز بولۇپ، تولدۇرۇلغان ئۇچۇرلارنى تەكشۈرۈڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="22"/>
         <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation>كەچۈرۈڭ، قانۇن، قائىدە ۋە سىياسەتلەرگە ئاساسەن، نەتىجىلەرنى ھازىرچە كۆرسىتەلمەيدۇ.</translation>
+        <translation type="vanished">كەچۈرۈڭ، قانۇن، قائىدە ۋە سىياسەتلەرگە ئاساسەن، نەتىجىلەرنى ھازىرچە كۆرسىتەلمەيدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation>مەشغۇلاتتىن ۋاز كەچتى.</translation>
+        <translation type="vanished">مەشغۇلاتتىن ۋاز كەچتى.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="28"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation>ھەقسىز ھېساباتىڭىزنىڭ مۇددىتى ئۆتتى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+        <translation type="vanished">ھەقسىز ھېساباتىڭىزنىڭ مۇددىتى ئۆتتى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="31"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation>ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+        <translation type="vanished">ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="34"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation>سۆزلەشكە بولىدىغان ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+        <translation type="vanished">سۆزلەشكە بولىدىغان ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="37"/>
         <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation>تېكىستتىن رەسىمگە بولىدىغان ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+        <translation type="vanished">تېكىستتىن رەسىمگە بولىدىغان ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="40"/>
         <source>Invalid input device</source>
-        <translation>ئىناۋەتسىز كىرگۈزۈش قۇرۇلمىسى</translation>
+        <translation type="vanished">ئىناۋەتسىز كىرگۈزۈش قۇرۇلمىسى</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="43"/>
         <source>Invalid output device</source>
-        <translation>ئىناۋەتسىز چىقىرىش قۇرۇلمىسى</translation>
+        <translation type="vanished">ئىناۋەتسىز چىقىرىش قۇرۇلمىسى</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="46"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>كەچۈرۈڭ، ماس كېلىدىغان مەشغۇلات تېپىلمىدى.</translation>
+        <translation type="vanished">كەچۈرۈڭ، ماس كېلىدىغان مەشغۇلات تېپىلمىدى.</translation>
     </message>
     <message>
-        <location filename="../src/llm/common/servercodetranslation.cpp" line="49"/>
         <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation>سۆزلەشتىكى تېكىستلەرنىڭ ئومۇمىي سانى چەكتىن ئاشتى، سۆزلەش تارىخىنى تازىلاپ قايتا سىناڭ.</translation>
+        <translation type="vanished">سۆزلەشتىكى تېكىستلەرنىڭ ئومۇمىي سانى چەكتىن ئاشتى، سۆزلەش تارىخىنى تازىلاپ قايتا سىناڭ.</translation>
+    </message>
+</context>
+<context>
+    <name>ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation type="unfinished">&apos;mcpServers&apos; دالىسى يوقاپ كەتتى.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
+        <source>no valid mcp server.</source>
+        <translation type="unfinished">ئىناۋەتلىك mcp مۇلازىمېتىرى يوق.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
+        <source>Only one MCP service can be edited at a time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
+        <source>url field cannot be empty.</source>
+        <translation type="unfinished">url بۆلەك بوش قالمىسۇن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
+        <source>command field cannot be empty.</source>
+        <translation type="unfinished">command بۆلەك بوش قالمىسۇن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation type="unfinished">«command» ياكى «url» بۆلەك كەم</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
+        <source>JSON configuration format is invalid.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Session</name>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="359"/>
         <source>UOS AI</source>
-        <translation>UOS ياساما ئەقىل</translation>
+        <translation type="vanished">UOS ياساما ئەقىل</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="361"/>
         <source>UOS System Assistant</source>
-        <translation>UOS سىستېما ياردەمچىسى</translation>
+        <translation type="vanished">UOS سىستېما ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="363"/>
         <source>Deepin System Assistant</source>
-        <translation>Deepin سىستېما ياردەمچىسى</translation>
+        <translation type="vanished">Deepin سىستېما ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="365"/>
         <source>Personal Knowledge Assistant</source>
-        <translation>شەخسىي بىلىم ياردەمچىسى</translation>
+        <translation type="vanished">شەخسىي بىلىم ياردەمچىسى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="367"/>
         <source>AI Writing</source>
-        <translation>ياساما ئەقىل يېزىش</translation>
+        <translation type="vanished">ياساما ئەقىل يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="369"/>
         <source>AI Text Processing</source>
-        <translation>ياساما ئەقىل تېكىست بىر تەرەپ قىلىش</translation>
+        <translation type="vanished">ياساما ئەقىل تېكىست بىر تەرەپ قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session.cpp" line="371"/>
         <source>AI Translation</source>
-        <translation>ياساما ئەقىل تەرجىمە</translation>
+        <translation type="vanished">ياساما ئەقىل تەرجىمە</translation>
     </message>
 </context>
 <context>
     <name>SessionPrivate</name>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="313"/>
-        <location filename="../src/wrapper/session_p.cpp" line="493"/>
-        <location filename="../src/wrapper/session_p.cpp" line="607"/>
-        <location filename="../src/wrapper/session_p.cpp" line="856"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1003"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1097"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1215"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS ياساما ئەقىلنى ئىشلىتىشتىن ئىلگىرى مودېل ھېساباتىنى سەپلەش كېرەك. ئاۋۋال مودېل ھېساباتىنى سەپلەڭ.</translation>
+        <translation type="vanished">UOS ياساما ئەقىلنى ئىشلىتىشتىن ئىلگىرى مودېل ھېساباتىنى سەپلەش كېرەك. ئاۋۋال مودېل ھېساباتىنى سەپلەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="921"/>
         <source>Agent server is not available.</source>
-        <translation>ئاگېنت مۇلازىمېتىرى ئىشلەمدى.</translation>
+        <translation type="vanished">ئاگېنت مۇلازىمېتىرى ئىشلەمدى.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1285"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1294"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
+        <translation type="obsolete">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1288"/>
         <source>Account not found</source>
-        <translation>ھېسابات تېپىلمىدى</translation>
+        <translation type="vanished">ھېسابات تېپىلمىدى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1291"/>
         <source>Only support deepseek account</source>
-        <translation>پەقەت deepseek ھېساباتىنى قوللايدۇ</translation>
+        <translation type="vanished">پەقەت deepseek ھېساباتىنى قوللايدۇ</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1298"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation>سىز ئاللىقاچان پائالىيەتتە قاتناشقان بولۇپ، قايتا مۇكاپات ئالالمايسىز.</translation>
+        <translation type="vanished">سىز ئاللىقاچان پائالىيەتتە قاتناشقان بولۇپ، قايتا مۇكاپات ئالالمايسىز.</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1301"/>
         <source>Server system error</source>
-        <translation>مۇلازىمېتېر سىستېما خاتالىقى</translation>
+        <translation type="vanished">مۇلازىمېتېر سىستېما خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/wrapper/session_p.cpp" line="1304"/>
-        <location filename="../src/wrapper/session_p.cpp" line="1316"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+        <translation type="obsolete">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+    </message>
+</context>
+<context>
+    <name>TextParse</name>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
+        <source>Unable to open file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
+        <source>The file content is in binary format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
+        <source>Unable to read file: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>ئەڭ قىممەتلىك باھا</translation>
     </message>
@@ -4034,35 +3477,34 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="71"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation>تاللىغان تېكىستىڭىز 5000 خەت چېكىدىن ئاشتى.</translation>
+        <translation type="vanished">تاللىغان تېكىستىڭىز 5000 خەت چېكىدىن ئاشتى.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1191"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>بۇ ئىقتىدارنى ھازىرچە ئىشلەتمىدىم.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1195"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>مۇلازىمەت يوق!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1200"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>ئىناۋەتسىز پارامېتىر!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1205"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
         <translation>بۇ قوللىنىش پروگراممىسىنى تاپالمىدىم!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1210"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>قوللىنىش پروگراممىسىنى قوزغىتالمىدىم!</translation>
     </message>
@@ -4070,870 +3512,809 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="558"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation>يورۇقلۇق ئاللىبۇرۇن ئەڭ يۇقىرى دەرىجىدە، تېخىمۇ ئاشۇرالمايدۇ.</translation>
+        <translation type="vanished">يورۇقلۇق ئاللىبۇرۇن ئەڭ يۇقىرى دەرىجىدە، تېخىمۇ ئاشۇرالمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="568"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation>يورۇقلۇق ئاللىبۇرۇن ئەڭ تۆۋەن دەرىجىدە، تېخىمۇ تۆۋەنلىتەلمەيدۇ.</translation>
+        <translation type="vanished">يورۇقلۇق ئاللىبۇرۇن ئەڭ تۆۋەن دەرىجىدە، تېخىمۇ تۆۋەنلىتەلمەيدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="841"/>
         <source>Your system memory is %0.</source>
-        <translation>سىستېما ئەسلەك %0.</translation>
+        <translation type="vanished">سىستېما ئەسلەك %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="861"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation>تىل تەڭشەك ئېچىلدى. بۇ ئېچىلغان تەڭشەكتە تەڭشەڭ.</translation>
+        <translation type="vanished">تىل تەڭشەك ئېچىلدى. بۇ ئېچىلغان تەڭشەكتە تەڭشەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="905"/>
         <source>The current mode is already %1 mode.</source>
-        <translation>نۆۋەتتىكى ھالەت ئاللىبۇرۇن %1 ھالەت.</translation>
+        <translation type="vanished">نۆۋەتتىكى ھالەت ئاللىبۇرۇن %1 ھالەت.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="919"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation>نۆۋەتتىكى ھالەت %1 نىشان ھالەتكە ماس كەلمىگەچكە، يېپىشقا بولمايدۇ.</translation>
+        <translation type="vanished">نۆۋەتتىكى ھالەت %1 نىشان ھالەتكە ماس كەلمىگەچكە، يېپىشقا بولمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation>تەڭپۇڭ ھالەت ئۆچۈرۈلمەيدۇ.</translation>
+        <translation type="vanished">تەڭپۇڭ ھالەت ئۆچۈرۈلمەيدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="950"/>
         <source>The lock screen has been opened for you</source>
-        <translation>ئېكران قۇلۇپى ئېچىلدى</translation>
+        <translation type="vanished">ئېكران قۇلۇپى ئېچىلدى</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="964"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation>ئېكران رەسىمى ياكى يازما تاماملاندى</translation>
+        <translation type="vanished">ئېكران رەسىمى ياكى يازما تاماملاندى</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="981"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation>پەقەت بىر ئېكران بار، ئېكران ھالىتىنى ئالماشتۇرالمايدۇ.</translation>
+        <translation type="vanished">پەقەت بىر ئېكران بار، ئېكران ھالىتىنى ئالماشتۇرالمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="993"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation>نۆۋەتتىكى كۆرسىتىش ھالىتى بىلەن ئوخشاش، قايتا سىناڭ.</translation>
+        <translation type="vanished">نۆۋەتتىكى كۆرسىتىش ھالىتى بىلەن ئوخشاش، قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1066"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation>پەقەت بىر ئېكران بار، ئېكراننى ئالماشتۇرالمايدۇ.</translation>
+        <translation type="vanished">پەقەت بىر ئېكران بار، ئېكراننى ئالماشتۇرالمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1171"/>
         <source>Your command has been issued.</source>
-        <translation>بۇيرۇقىڭىز يوللاندى.</translation>
+        <translation type="vanished">بۇيرۇقىڭىز يوللاندى.</translation>
     </message>
 </context>
 <context>
     <name>UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="47"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS ياساما ئەقىل ئىشلەتكۈچى كېلىشىمى</translation>
+        <translation type="vanished">UOS ياساما ئەقىل ئىشلەتكۈچى كېلىشىمى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="80"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>مەن 18 ياشتىن ئاشقانلىقىمنى جەزملەيمەن. قوللىنىش پروگراممىسى ئارقىلىق ئەۋەتىدىغان ۋە تاپشۇرىدىغان مەزمۇنلارنىڭ چوڭ مودېل مۇلازىمەت تەمىنلىگۈچى بىلەن بىۋاسىتە سانلىق مەلۇمات ئالماشتۇرۇشى ئىكەنلىكىنى تونۇيمەن ۋە قوشۇلىمەن، شىركەت بىلەن ھېچقانداق مۇناسىۋىتى يوق.</translation>
+        <translation type="vanished">مەن 18 ياشتىن ئاشقانلىقىمنى جەزملەيمەن. قوللىنىش پروگراممىسى ئارقىلىق ئەۋەتىدىغان ۋە تاپشۇرىدىغان مەزمۇنلارنىڭ چوڭ مودېل مۇلازىمەت تەمىنلىگۈچى بىلەن بىۋاسىتە سانلىق مەلۇمات ئالماشتۇرۇشى ئىكەنلىكىنى تونۇيمەن ۋە قوشۇلىمەن، شىركەت بىلەن ھېچقانداق مۇناسىۋىتى يوق.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="124"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>مەن قوللىنىش پروگراممىسىنىڭ ئىشلەتكۈچى تەجرىبە پىلانىغا قاتنىشىش توغرىسىدا قوشۇلىمەن ۋە شىركىتىڭىزگە قوللىنىش پروگراممىسىنى ئىشلىتىش جەريانىدا ئەۋەتىدىغان مەزمۇنلار، ئەۋەتىش ۋاقتى، تەلەپ قىلىنغان چوڭ مودېل تىپى، مۇناسىۋەتلىك قوللىنىش پروگراممىسى ۋە تېكىست رەسىم مۇۋەپپىقىيەتلىك ھاسىل قىلغان-قىلمىغانلىقىنى يىغىشقا رۇخسەت قىلىمەن، بۇ ئارقىلىق مۇلازىمەت سۈپىتىنى ياخشىلاش ۋە ئىشلەپچىقىرىش تەجرىبىسىنى ئاشۇرۇشقا بولىدۇ. (ئەگەر يۇقىرىدىكى ئۇچۇرلارنى تەمىنلىمەستىڭىز، قوللىنىش پروگراممىسىنى نورمال ئىشلىتىشىڭىزگە تەسىر يەتمەيدۇ.)</translation>
+        <translation type="vanished">مەن قوللىنىش پروگراممىسىنىڭ ئىشلەتكۈچى تەجرىبە پىلانىغا قاتنىشىش توغرىسىدا قوشۇلىمەن ۋە شىركىتىڭىزگە قوللىنىش پروگراممىسىنى ئىشلىتىش جەريانىدا ئەۋەتىدىغان مەزمۇنلار، ئەۋەتىش ۋاقتى، تەلەپ قىلىنغان چوڭ مودېل تىپى، مۇناسىۋەتلىك قوللىنىش پروگراممىسى ۋە تېكىست رەسىم مۇۋەپپىقىيەتلىك ھاسىل قىلغان-قىلمىغانلىقىنى يىغىشقا رۇخسەت قىلىمەن، بۇ ئارقىلىق مۇلازىمەت سۈپىتىنى ياخشىلاش ۋە ئىشلەپچىقىرىش تەجرىبىسىنى ئاشۇرۇشقا بولىدۇ. (ئەگەر يۇقىرىدىكى ئۇچۇرلارنى تەمىنلىمەستىڭىز، قوللىنىش پروگراممىسىنى نورمال ئىشلىتىشىڭىزگە تەسىر يەتمەيدۇ.)</translation>
     </message>
 </context>
 <context>
     <name>WXQFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="9"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="45"/>
         <source>Server internal error</source>
-        <translation>مۇلازىمېتىر ئىچكى خاتالىقى</translation>
+        <translation type="vanished">مۇلازىمېتىر ئىچكى خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="10"/>
         <source>Service is temporarily unavailable</source>
-        <translation>مۇلازىمەت ۋاقىتلىق تەمىنلەنمەيدۇ</translation>
+        <translation type="vanished">مۇلازىمەت ۋاقىتلىق تەمىنلەنمەيدۇ</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="11"/>
         <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation>چاقىرىلغان API مەۋجۇت ئەمەس. ئىلتىماس URL نى تەكشۈرۈپ قايتا سىناڭ. ئادەتتە URL دىكى ئەنگلىيەچە بولمىغان ھەرپلەر بار، مەسىلەن &quot;-&quot;. قولدا كىرگۈزۈپ قايتا سىناپ بېقىڭ.</translation>
+        <translation type="vanished">چاقىرىلغان API مەۋجۇت ئەمەس. ئىلتىماس URL نى تەكشۈرۈپ قايتا سىناڭ. ئادەتتە URL دىكى ئەنگلىيەچە بولمىغان ھەرپلەر بار، مەسىلەن &quot;-&quot;. قولدا كىرگۈزۈپ قايتا سىناپ بېقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="13"/>
         <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation>ئېغىز چاقىرىش ئىجازىتى يوق، قوللىنىش قۇرۇلۇشىدا Qianfan ئېغىزى تاللانمىغان</translation>
+        <translation type="vanished">ئېغىز چاقىرىش ئىجازىتى يوق، قوللىنىش قۇرۇلۇشىدا Qianfan ئېغىزى تاللانمىغان</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="12"/>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="18"/>
         <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation>مودېل چاقىرىش خاتالىقى: مودېل تەلەپ چەكلىمىسىگە يەتكەن ياكى مودېل ئۈنۈمسىز. تەۋسىيە: مودېلنى قايتا قوشۇڭ ياكى چوڭ مودېل مۇلازىمەت تەمىنلىگۈچىنىڭ خىزمەت خادىمى بىلەن ئالاقىلىشىپ بۇ مەسىلنى ھەل قىلىڭ.</translation>
+        <translation type="vanished">مودېل چاقىرىش خاتالىقى: مودېل تەلەپ چەكلىمىسىگە يەتكەن ياكى مودېل ئۈنۈمسىز. تەۋسىيە: مودېلنى قايتا قوشۇڭ ياكى چوڭ مودېل مۇلازىمەت تەمىنلىگۈچىنىڭ خىزمەت خادىمى بىلەن ئالاقىلىشىپ بۇ مەسىلنى ھەل قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="14"/>
         <source>Failed to obtain token</source>
-        <translation>Token ئېلىش مەغلۇپ بولدى</translation>
+        <translation type="vanished">Token ئېلىش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="15"/>
         <source>IAM authentication failed</source>
-        <translation>IAM دەلىللەش مەغلۇپ بولدى</translation>
+        <translation type="vanished">IAM دەلىللەش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="16"/>
         <source>The application does not exist or failed to be created</source>
-        <translation>قوللىنىش مەۋجۇت ئەمەس ياكى قۇرۇش مەغلۇپ بولدى</translation>
+        <translation type="vanished">قوللىنىش مەۋجۇت ئەمەس ياكى قۇرۇش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="17"/>
         <source>The number of requests per day exceeds the limit</source>
-        <translation>كۈندىلىك تەلەپ سانى چەكتىن ئاشتى</translation>
+        <translation type="vanished">كۈندىلىك تەلەپ سانى چەكتىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="19"/>
         <source>The total number of requests exceeds the limit</source>
-        <translation>ئومۇمىي تەلەپ سانى چەكتىن ئاشتى</translation>
+        <translation type="vanished">ئومۇمىي تەلەپ سانى چەكتىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="20"/>
         <source>Invalid access_token parameter</source>
-        <translation>ئىناۋەتسىز access_token پارامېتىرى</translation>
+        <translation type="vanished">ئىناۋەتسىز access_token پارامېتىرى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="21"/>
         <source>access_token is invalid</source>
-        <translation>access_token ئىناۋەتسىز</translation>
+        <translation type="vanished">access_token ئىناۋەتسىز</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="22"/>
         <source>access token expires</source>
-        <translation>access token ۋاقتى ئۆتتى</translation>
+        <translation type="vanished">access token ۋاقتى ئۆتتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="23"/>
         <source>Service error, template does not exist</source>
-        <translation>مۇلازىمەت خاتالىقى، قېلىپ مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">مۇلازىمەت خاتالىقى، قېلىپ مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="24"/>
         <source>A system error occurred, please try again later</source>
-        <translation>سىستېما خاتالىقى كۆرۈلدى، كېيىن قايتا سىناپ بېقىڭ</translation>
+        <translation type="vanished">سىستېما خاتالىقى كۆرۈلدى، كېيىن قايتا سىناپ بېقىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="25"/>
         <source>The knowledge base server cannot be accessed</source>
-        <translation>بىلىم بانكا مۇلازىمېتىرىغا ئېرىشەلمەيدۇ</translation>
+        <translation type="vanished">بىلىم بانكا مۇلازىمېتىرىغا ئېرىشەلمەيدۇ</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="26"/>
         <source>Knowledge base data download exception</source>
-        <translation>بىلىم بانكا سانلىق مەلۇمات چۈشۈرۈش ئۈنۈملۈك بولمىدى</translation>
+        <translation type="vanished">بىلىم بانكا سانلىق مەلۇمات چۈشۈرۈش ئۈنۈملۈك بولمىدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="27"/>
         <source>Prompt word is too long</source>
-        <translation>ئەسكەرتىش سۆزى بەك ئۇزۇن</translation>
+        <translation type="vanished">ئەسكەرتىش سۆزى بەك ئۇزۇن</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="28"/>
         <source>Model does not exist</source>
-        <translation>مودېل مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">مودېل مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="29"/>
         <source>Request parameter error</source>
-        <translation>تەلەپ پارامېتىرى خاتالىقى</translation>
+        <translation type="vanished">تەلەپ پارامېتىرى خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="30"/>
         <source>Image processing failed</source>
-        <translation>رەسىم بىر تەرەپ قىلىش مەغلۇپ بولدى</translation>
+        <translation type="vanished">رەسىم بىر تەرەپ قىلىش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="31"/>
         <source>Service handling exception error</source>
-        <translation>مۇلازىمەت بىر تەرەپ قىلىش ئۈنۈملۈك بولمىدى</translation>
+        <translation type="vanished">مۇلازىمەت بىر تەرەپ قىلىش ئۈنۈملۈك بولمىدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="32"/>
         <source>Service internal error</source>
-        <translation>مۇلازىمەت ئىچكى خاتالىقى</translation>
+        <translation type="vanished">مۇلازىمەت ئىچكى خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="33"/>
         <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation>كىرگۈزۈلگەن پارامېتىر فورماتى خاتا، مەسىلەن زۆرۈر پارامېتىر يوق.</translation>
+        <translation type="vanished">كىرگۈزۈلگەن پارامېتىر فورماتى خاتا، مەسىلەن زۆرۈر پارامېتىر يوق.</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="34"/>
         <source>The input parameter body is not in standard JSON format</source>
-        <translation>كىرگۈزۈلگەن پارامېتىر جىسمى ئۆلچەملىك JSON فورماتىدا ئەمەس</translation>
+        <translation type="vanished">كىرگۈزۈلگەن پارامېتىر جىسمى ئۆلچەملىك JSON فورماتىدا ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="35"/>
         <source>Parameter verification is illegal</source>
-        <translation>پارامېتىر دەلىللەش قانۇنسىز</translation>
+        <translation type="vanished">پارامېتىر دەلىللەش قانۇنسىز</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="36"/>
         <source>Permission control error</source>
-        <translation>ئىجازەت كونترول خاتالىقى</translation>
+        <translation type="vanished">ئىجازەت كونترول خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="37"/>
         <source>Customized model service apiname does not exist</source>
-        <translation>خاس مودېل مۇلازىمىتى apiname مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">خاس مودېل مۇلازىمىتى apiname مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="38"/>
         <source>Service internal error, please try again later</source>
-        <translation>مۇلازىمەت ئىچكى خاتالىقى، كېيىن قايتا سىناپ بېقىڭ</translation>
+        <translation type="vanished">مۇلازىمەت ئىچكى خاتالىقى، كېيىن قايتا سىناپ بېقىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="39"/>
         <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation>قانۇنسىز HTTP ئۇسۇلى، ھازىر پەقەت POST تەلەپلىرىنى قوللايدۇ</translation>
+        <translation type="vanished">قانۇنسىز HTTP ئۇسۇلى، ھازىر پەقەت POST تەلەپلىرىنى قوللايدۇ</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="40"/>
         <source>The requested content exceeds the large model internal limit</source>
-        <translation>تەلەپ قىلىنغان مەزمۇن چوڭ مودېل ئىچكى چەكلىمىسىدىن ئاشتى</translation>
+        <translation type="vanished">تەلەپ قىلىنغان مەزمۇن چوڭ مودېل ئىچكى چەكلىمىسىدىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="41"/>
         <source>internal error</source>
-        <translation>ئىچكى خاتالىق</translation>
+        <translation type="vanished">ئىچكى خاتالىق</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="42"/>
         <source>Vincent diagram model service timeout</source>
-        <translation>Vincent دىئاگرام مودېل مۇلازىمىتى ۋاقتىدىن ئاشتى</translation>
+        <translation type="vanished">Vincent دىئاگرام مودېل مۇلازىمىتى ۋاقتىدىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="43"/>
         <source>There are security issues with prompt and negative_prompt</source>
-        <translation>prompt ۋە negative_prompt بىلەن باغلىق بىخەتەرلىك مەسىلىسى بار</translation>
+        <translation type="vanished">prompt ۋە negative_prompt بىلەن باغلىق بىخەتەرلىك مەسىلىسى بار</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="44"/>
         <source>There are security issues with output images</source>
-        <translation>چىقىرىش سۈرەتلىرى بىلەن باغلىق بىخەتەرلىك مەسىلىسى بار</translation>
+        <translation type="vanished">چىقىرىش سۈرەتلىرى بىلەن باغلىق بىخەتەرلىك مەسىلىسى بار</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="46"/>
         <source>Parameter error</source>
-        <translation>پارامېتىر خاتالىقى</translation>
+        <translation type="vanished">پارامېتىر خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/baidu/wxqfcodetranslation.cpp" line="47"/>
         <source>No access</source>
-        <translation>زىيارەت قىلالمايدۇ</translation>
+        <translation type="vanished">زىيارەت قىلالمايدۇ</translation>
     </message>
 </context>
 <context>
     <name>WXQFText2Image</name>
     <message>
-        <location filename="../src/llm/baidu/wxqftext2image.cpp" line="27"/>
         <source>The image description exceeds the 256 character limit</source>
-        <translation>سۈرەت چۈشەندۈرۈشى 256 ھەرپ چەكلىمىسىدىن ئاشتى</translation>
+        <translation type="vanished">سۈرەت چۈشەندۈرۈشى 256 ھەرپ چەكلىمىسىدىن ئاشتى</translation>
     </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="69"/>
         <source>Welcome to UOS AI</source>
-        <translation>UOS AI غا خۇش ئامېدىڭىز</translation>
+        <translation type="vanished">UOS AI غا خۇش ئامېدىڭىز</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="75"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation>UOS AI سىزنىڭ ئەقىللىق ياردەمچىڭىز بولۇپ، ئىشچانلىقىڭىزنى ئۆستۈرۈش ۋە يۇقىرى سەۋىيىلىك خىزمەت تەجرىبىسىدىن بەھرىمان بولۇش ئۈچۈن لايىھەلەنگەن.</translation>
+        <translation type="vanished">UOS AI سىزنىڭ ئەقىللىق ياردەمچىڭىز بولۇپ، ئىشچانلىقىڭىزنى ئۆستۈرۈش ۋە يۇقىرى سەۋىيىلىك خىزمەت تەجرىبىسىدىن بەھرىمان بولۇش ئۈچۈن لايىھەلەنگەن.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="100"/>
         <source>Get a free trial account</source>
-        <translation>ھەقسىز سىناق ھېساباتىغا ئېرىشىڭ</translation>
+        <translation type="vanished">ھەقسىز سىناق ھېساباتىغا ئېرىشىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation>مودېل قوشۇش</translation>
+        <translation type="vanished">مودېل قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="131"/>
         <source>Start using</source>
-        <translation>ئىشلىتىشنى باشلاڭ</translation>
+        <translation type="vanished">ئىشلىتىشنى باشلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="227"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="229"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>مەن 18 ياشتىن ئاشقانلىقىمنى جەزىملەيمەن. مەن &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI ئىشلەتكۈچى كېلىشىمى&quot;&lt;/a&gt; نى تونۇيمەن ۋە قوشۇلىمەن، ئەپ ئارقىلىق ئەۋەتىدىغان ۋە تاپشۇرالايدىغان مەزمۇنلار چوڭ مودېل مۇلازىمەت بىلەن تۇرۇشلۇق بىۋاسىتە سانلىق مەلۇمات ئالماشتۇرۇش بولۇپ، شىركەت بىلەن ھېچقانداق مۇناسىۋىتى يوق.</translation>
+        <translation type="vanished">مەن 18 ياشتىن ئاشقانلىقىمنى جەزىملەيمەن. مەن &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI ئىشلەتكۈچى كېلىشىمى&quot;&lt;/a&gt; نى تونۇيمەن ۋە قوشۇلىمەن، ئەپ ئارقىلىق ئەۋەتىدىغان ۋە تاپشۇرالايدىغان مەزمۇنلار چوڭ مودېل مۇلازىمەت بىلەن تۇرۇشلۇق بىۋاسىتە سانلىق مەلۇمات ئالماشتۇرۇش بولۇپ، شىركەت بىلەن ھېچقانداق مۇناسىۋىتى يوق.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="231"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation>ھېسابات تاپشۇرۇۋېلىش سىز پائالىيەت شەرتىنى چۈشەنگەنلىكىڭىز ۋە قوشۇلغانلىقىڭىزنى بىلدۈرىدۇ،&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;پائالىيەت تەپسىلاتى&gt;&lt;/a&gt;</translation>
+        <translation type="vanished">ھېسابات تاپشۇرۇۋېلىش سىز پائالىيەت شەرتىنى چۈشەنگەنلىكىڭىز ۋە قوشۇلغانلىقىڭىزنى بىلدۈرىدۇ،&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;پائالىيەت تەپسىلاتى&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Trial Account</source>
-        <translation>سىناق ھېساباتى</translation>
+        <translation type="vanished">سىناق ھېساباتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="292"/>
         <source>Save failed, please try again later</source>
-        <translation>ساقلىش مەغلۇپ بولدى، كېيىن قايتا سىناڭ</translation>
+        <translation type="vanished">ساقلىش مەغلۇپ بولدى، كېيىن قايتا سىناڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="301"/>
         <source>Trial account received successfully.</source>
-        <translation>سىناق ھېساباتى مۇۋەپپەقىيەتلىك تاپشۇرۇۋېلىندى.</translation>
+        <translation type="vanished">سىناق ھېساباتى مۇۋەپپەقىيەتلىك تاپشۇرۇۋېلىندى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="304"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation>سىناق ھېساباتىنىڭ ئىشلىتىش سانى ۋە ۋاقتى چەكلەنگەن، ۋاقتىدا شەخسىي مودېل ھېساباتىڭىزنى سەپلەڭ! تەپسىلاتلارنى كۆرۈش ئۈچۈن پائالىيەت تەپسىلاتىغا قاراڭ.</translation>
+        <translation type="vanished">سىناق ھېساباتىنىڭ ئىشلىتىش سانى ۋە ۋاقتى چەكلەنگەن، ۋاقتىدا شەخسىي مودېل ھېساباتىڭىزنى سەپلەڭ! تەپسىلاتلارنى كۆرۈش ئۈچۈن پائالىيەت تەپسىلاتىغا قاراڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="306"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation>سىناق ھېساباتى ئۈچۈن ئىنگىلىزچە قوللاش قانائەتلىنەرلىك ئەمەس. شۇنداقلا سىناق ھېساباتىنىڭ ئىشلىتىش سانى ۋە ۋاقتى چەكلەنگەن. ۋاقتىدا شەخسىي مودېل ھېساباتىڭىزنى سەپلەڭ!</translation>
+        <translation type="vanished">سىناق ھېساباتى ئۈچۈن ئىنگىلىزچە قوللاش قانائەتلىنەرلىك ئەمەس. شۇنداقلا سىناق ھېساباتىنىڭ ئىشلىتىش سانى ۋە ۋاقتى چەكلەنگەن. ۋاقتىدا شەخسىي مودېل ھېساباتىڭىزنى سەپلەڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="307"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation>سىناشنى باشلاڭ</translation>
+        <translation type="vanished">سىناشنى باشلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="314"/>
         <source>The free account activity ends.</source>
-        <translation>ھەقسىز ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
+        <translation type="vanished">ھەقسىز ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="322"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>مۇلازىمېتكە ئۇلانالمايدۇ، تور باغلىنىشىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">مۇلازىمېتكە ئۇلانالمايدۇ، تور باغلىنىشىڭىزنى تەكشۈرۈڭ ياكى كېيىن قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="343"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation>مەن ئەپنىڭ ئىشلەتكۈچى تەجرىبە پىلانىغا قاتنىشىشقا قوشۇلىمەن ۋە شىركىتىڭىزگە ئەپنى ئىشلەتكەندە ئەۋەتىدىغان مەزمۇنلارنى، ئەۋەتىش ۋاقتىنى، تەلەپ قىلىنغان چوڭ مودېل تىپىنى، مۇناسىۋەتلىك ئەپنى ۋە تېكىست سۈرەت ئەسلىگە كەلتۈرۈش مۇۋەپپەقىيەتلىك بولغانلىقىنى توپلاشقا ئىجازەت بېرىمەن، مۇلازىمەت سۈپىتىنى ياخشىلاش ۋە ئىشلەپچىقىرىش تەجرىبىسىنى ئۆستۈرۈش ئۈچۈن. (ئەگەر يۇقىرىدىكى ئۇچۇرلارنى تەمىنلەشتىن بۇرۇنسىز بولسىڭىز، ئەپنى نورمال ئىشلىتىشىڭىزگە تەسىر كۆرسەتمەيدۇ.)</translation>
+        <translation type="vanished">مەن ئەپنىڭ ئىشلەتكۈچى تەجرىبە پىلانىغا قاتنىشىشقا قوشۇلىمەن ۋە شىركىتىڭىزگە ئەپنى ئىشلەتكەندە ئەۋەتىدىغان مەزمۇنلارنى، ئەۋەتىش ۋاقتىنى، تەلەپ قىلىنغان چوڭ مودېل تىپىنى، مۇناسىۋەتلىك ئەپنى ۋە تېكىست سۈرەت ئەسلىگە كەلتۈرۈش مۇۋەپپەقىيەتلىك بولغانلىقىنى توپلاشقا ئىجازەت بېرىمەن، مۇلازىمەت سۈپىتىنى ياخشىلاش ۋە ئىشلەپچىقىرىش تەجرىبىسىنى ئۆستۈرۈش ئۈچۈن. (ئەگەر يۇقىرىدىكى ئۇچۇرلارنى تەمىنلەشتىن بۇرۇنسىز بولسىڭىز، ئەپنى نورمال ئىشلىتىشىڭىزگە تەسىر كۆرسەتمەيدۇ.)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="293"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="315"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="323"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>جەزىملەش</translation>
+        <translation type="vanished">جەزىملەش</translation>
+    </message>
+</context>
+<context>
+    <name>WorkspaceStore</name>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
+        <source>Note: Part of the document content may be generated by AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
+        <source>Word files (*.docx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
+        <source>PDF files (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
+        <source>Markdown files (*.md)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
+        <source>Save Article</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>XFCodeTranslation</name>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="9"/>
         <source>Error while upgrading to WebSocket</source>
-        <translation>WebSocket غا يۈكسەلتكەندە خاتالىق كۆرۈلدى</translation>
+        <translation type="vanished">WebSocket غا يۈكسەلتكەندە خاتالىق كۆرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="10"/>
         <source>Error reading user&apos;s message via WebSocket</source>
-        <translation>WebSocket ئارقىلىق ئىشلەتكۈچىنىڭ خەۋىرىنى ئوقۇشتا خاتالىق كۆرۈلدى</translation>
+        <translation type="vanished">WebSocket ئارقىلىق ئىشلەتكۈچىنىڭ خەۋىرىنى ئوقۇشتا خاتالىق كۆرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="11"/>
         <source>Error sending message to user via WebSocket</source>
-        <translation>WebSocket ئارقىلىق ئىشلەتكۈچىگە خەۋەر ئەۋەتىشتە خاتالىق كۆرۈلدى</translation>
+        <translation type="vanished">WebSocket ئارقىلىق ئىشلەتكۈچىگە خەۋەر ئەۋەتىشتە خاتالىق كۆرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="12"/>
         <source>The user&apos;s message format is incorrect</source>
-        <translation>ئىشلەتكۈچىنىڭ خەۋەر فورماتى خاتا</translation>
+        <translation type="vanished">ئىشلەتكۈچىنىڭ خەۋەر فورماتى خاتا</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="13"/>
         <source>Schema error for user data</source>
-        <translation>ئىشلەتكۈچى سانلىق مەلۇماتىنىڭ سكىما خاتالىقى</translation>
+        <translation type="vanished">ئىشلەتكۈچى سانلىق مەلۇماتىنىڭ سكىما خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="14"/>
         <source>User parameter value is wrong</source>
-        <translation>ئىشلەتكۈچى پارامېتىر قىممىتى خاتا</translation>
+        <translation type="vanished">ئىشلەتكۈچى پارامېتىر قىممىتى خاتا</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="15"/>
         <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation>ئىشلەتكۈچى بىر ۋاقىتتا قوشۇلۇش خاتالىقى: نۆۋەتتىكى ئىشلەتكۈچى ئاللىقاچان ئۇلانغان، بىر ئىشلەتكۈچى بىر ۋاقىتتا بىر قانچە جايلارغا قوشۇلالمايدۇ.</translation>
+        <translation type="vanished">ئىشلەتكۈچى بىر ۋاقىتتا قوشۇلۇش خاتالىقى: نۆۋەتتىكى ئىشلەتكۈچى ئاللىقاچان ئۇلانغان، بىر ئىشلەتكۈچى بىر ۋاقىتتا بىر قانچە جايلارغا قوشۇلالمايدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="16"/>
         <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation>ئىشلەتكۈچى ترافىكى چەكلىمىسى: مۇلازىمەت ئىشلەتكۈچىنىڭ نۆۋەتتىكى مەسلىسىنى بىر تەرەپ قىلىۋاتىدۇ، يېڭى تەلەپ ئەۋەتىشتىن ئىلگىرى بىر تەرەپ قىلىنىشىنى ساقلىشىڭىز كېرەك. (كېيىنكى سوئالنى ئەۋەتىشتىن ئىلگىرى مودېلدىن تولۇق جاۋابىنى ساقلاشىڭىز كېرەك)</translation>
+        <translation type="vanished">ئىشلەتكۈچى ترافىكى چەكلىمىسى: مۇلازىمەت ئىشلەتكۈچىنىڭ نۆۋەتتىكى مەسلىسىنى بىر تەرەپ قىلىۋاتىدۇ، يېڭى تەلەپ ئەۋەتىشتىن ئىلگىرى بىر تەرەپ قىلىنىشىنى ساقلىشىڭىز كېرەك. (كېيىنكى سوئالنى ئەۋەتىشتىن ئىلگىرى مودېلدىن تولۇق جاۋابىنى ساقلاشىڭىز كېرەك)</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="17"/>
         <source>Insufficient service capacity, please contact staff</source>
-        <translation>مۇلازىمەت قۇۋۋىتى يېتەرسىز، خادىملار بىلەن ئالاقىلىشىڭ</translation>
+        <translation type="vanished">مۇلازىمەت قۇۋۋىتى يېتەرسىز، خادىملار بىلەن ئالاقىلىشىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="18"/>
         <source>Failed to establish connection with engine</source>
-        <translation>ئېنېرگىيە بىلەن ئۇلىنىش مۇۋەپپەقىيەتسىز بولدى</translation>
+        <translation type="vanished">ئېنېرگىيە بىلەن ئۇلىنىش مۇۋەپپەقىيەتسىز بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="19"/>
         <source>Error receiving engine data</source>
-        <translation>ئېنېرگىيە سانلىق مەلۇماتىنى قوبۇلاش خاتالىقى</translation>
+        <translation type="vanished">ئېنېرگىيە سانلىق مەلۇماتىنى قوبۇلاش خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="20"/>
         <source>Error sending data to engine</source>
-        <translation>ئېنېرگىيەگە سانلىق مەلۇمات ئەۋەتىش خاتالىقى</translation>
+        <translation type="vanished">ئېنېرگىيەگە سانلىق مەلۇمات ئەۋەتىش خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="21"/>
         <source>Engine internal error</source>
-        <translation>ئېنېرگىيە ئىچكى خاتالىقى</translation>
+        <translation type="vanished">ئېنېرگىيە ئىچكى خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="22"/>
         <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation>كىرگۈزۈلگەن مەزمۇن تەكشۈرۈشتىن ئۆتۈلمىدى ۋە قائىدىگە خىلاپلىق قىلغانلىقتىن گۇمانلىنىۋاتىدۇ. كىرگۈزۈلگەن مەزمۇننى قايتا تەڭشەڭ.</translation>
+        <translation type="vanished">كىرگۈزۈلگەن مەزمۇن تەكشۈرۈشتىن ئۆتۈلمىدى ۋە قائىدىگە خىلاپلىق قىلغانلىقتىن گۇمانلىنىۋاتىدۇ. كىرگۈزۈلگەن مەزمۇننى قايتا تەڭشەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="23"/>
         <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation>چىقىرىلغان مەزمۇن ھەسساس ئۇچۇرلارنى ئۆز ئىچىگە ئالىدۇ، تەكشۈرۈش مۇۋەپپەقىيەتسىز بولدى، كېيىنكى نەتىجىلەرنى ئىشلەتكۈچىگە كۆرسىتەلمەيدۇ.</translation>
+        <translation type="vanished">چىقىرىلغان مەزمۇن ھەسساس ئۇچۇرلارنى ئۆز ئىچىگە ئالىدۇ، تەكشۈرۈش مۇۋەپپەقىيەتسىز بولدى، كېيىنكى نەتىجىلەرنى ئىشلەتكۈچىگە كۆرسىتەلمەيدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="24"/>
         <source>appid is in the blacklist</source>
-        <translation>appid قارا تىزىملىكتە</translation>
+        <translation type="vanished">appid قارا تىزىملىكتە</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="25"/>
         <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation>Appid ئىجازەت سىنىپى خاتالىقى. مەسىلەن: بۇ فۇنكسىيە ئاكتىپلانمىغان، ماس كېلىدىغان نەشر ئاكتىپلانمىغان، token يېتەرسىز، بىر ۋاقىتتا قوشۇلۇش ئىجازەتتىن ئاشىدۇ، قاتارلىقلار.</translation>
+        <translation type="vanished">Appid ئىجازەت سىنىپى خاتالىقى. مەسىلەن: بۇ فۇنكسىيە ئاكتىپلانمىغان، ماس كېلىدىغان نەشر ئاكتىپلانمىغان، token يېتەرسىز، بىر ۋاقىتتا قوشۇلۇش ئىجازەتتىن ئاشىدۇ، قاتارلىقلار.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="26"/>
         <source>Clear history failed</source>
-        <translation>تارىخنى تازىلاش مۇۋەپپەقىيەتسىز بولدى</translation>
+        <translation type="vanished">تارىخنى تازىلاش مۇۋەپپەقىيەتسىز بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="27"/>
         <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation>بۇ يىغىن مەزمۇنى قانۇنسىز ئۇچۇرلارنى ئۆز ئىچىگە ئېلىش ئېھتىمالى بارلىقىنى كۆرسىتىدۇ؛ تەرەققىياتچىلارغا بۇ خاتا كودىنى قوبۇلغاندىن كېيىن ئىشلەتكۈچىگە قانۇنسىز ئۇچۇرلارنى كىرگۈزۈش توغرىسىدىن ئەسكەرتىش بېرىش تەۋسىيە قىلىنىدۇ.</translation>
+        <translation type="vanished">بۇ يىغىن مەزمۇنى قانۇنسىز ئۇچۇرلارنى ئۆز ئىچىگە ئېلىش ئېھتىمالى بارلىقىنى كۆرسىتىدۇ؛ تەرەققىياتچىلارغا بۇ خاتا كودىنى قوبۇلغاندىن كېيىن ئىشلەتكۈچىگە قانۇنسىز ئۇچۇرلارنى كىرگۈزۈش توغرىسىدىن ئەسكەرتىش بېرىش تەۋسىيە قىلىنىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="28"/>
         <source>Service is busy, please try again later</source>
-        <translation>مۇلازىمەت مەشغۇل، كېيىن قايتا سىناڭ</translation>
+        <translation type="vanished">مۇلازىمەت مەشغۇل، كېيىن قايتا سىناڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="29"/>
         <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation>تەلەپ ئېنېرگىيەسىنىڭ پارامېتىرلىرى نورمال ئەمەس، ئېنېرگىيە جەدۋىلى تەكشۈرۈش مۇۋەپپەقىيەتسىز بولدى.</translation>
+        <translation type="vanished">تەلەپ ئېنېرگىيەسىنىڭ پارامېتىرلىرى نورمال ئەمەس، ئېنېرگىيە جەدۋىلى تەكشۈرۈش مۇۋەپپەقىيەتسىز بولدى.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="30"/>
         <source>Engine network abnormality</source>
-        <translation>ئېنېرگىيە تورى نورمال ئەمەس</translation>
+        <translation type="vanished">ئېنېرگىيە تورى نورمال ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="31"/>
         <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation>Token سانى چەكلىمىدىن ئاشتى. سۆزلەش تارىخى ۋە سوئالدىكى سۆزلەر ناھايىتى كۆپ، ئاددىيلاشتۇرۇش كېرەك.</translation>
+        <translation type="vanished">Token سانى چەكلىمىدىن ئاشتى. سۆزلەش تارىخى ۋە سوئالدىكى سۆزلەر ناھايىتى كۆپ، ئاددىيلاشتۇرۇش كېرەك.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="32"/>
         <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation>ئىجازەت خاتالىقى: appId بۇنىڭغا مۇناسىۋەتلىك فۇنكسىيىلەرگە ئىجازەت قىلالمىدى ياكى سودا ھەجىمى چەكتىن ئاشتى</translation>
+        <translation type="vanished">ئىجازەت خاتالىقى: appId بۇنىڭغا مۇناسىۋەتلىك فۇنكسىيىلەرگە ئىجازەت قىلالمىدى ياكى سودا ھەجىمى چەكتىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="33"/>
         <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation>ئىجازەت خاتالىقى: كۈندىلىك ئېقىم كونترول چېكىدىن ئاشتى. كۈندىكى ئەڭ يۇقىرى زىيارەت سانىدىن ئاشتى</translation>
+        <translation type="vanished">ئىجازەت خاتالىقى: كۈندىلىك ئېقىم كونترول چېكىدىن ئاشتى. كۈندىكى ئەڭ يۇقىرى زىيارەت سانىدىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="34"/>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="35"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>نۆۋەتتە زىيارەتچىلەر ناھايىتى كۆپ، كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">نۆۋەتتە زىيارەتچىلەر ناھايىتى كۆپ، كېيىن قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/iflytek/xfcodetranslation.cpp" line="44"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>ئۇلىنىش مۇۋەپپەقىيەتسىز بولدى، كىرگۈزۈلگەن ئۇچۇرلارنى تەكشۈرۈڭ.</translation>
+        <translation type="vanished">ئۇلىنىش مۇۋەپپەقىيەتسىز بولدى، كىرگۈزۈلگەن ئۇچۇرلارنى تەكشۈرۈڭ.</translation>
     </message>
 </context>
 <context>
     <name>ZhiPuCodeTranslation</name>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="9"/>
         <source>Server internal error</source>
-        <translation>مۇلازىمېتېر ئىچكى خاتالىقى</translation>
+        <translation type="vanished">مۇلازىمېتېر ئىچكى خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="10"/>
         <source>Authentication failed</source>
-        <translation>دەلىللەش مۇۋەپپەقىيەتسىز بولدى</translation>
+        <translation type="vanished">دەلىللەش مۇۋەپپەقىيەتسىز بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="11"/>
         <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation>باش بەتتە دەلىللەش پارامېتىرى قوبۇلانمىدى ۋە دەلىللەش ئىجرا قىلىنالمىدى.</translation>
+        <translation type="vanished">باش بەتتە دەلىللەش پارامېتىرى قوبۇلانمىدى ۋە دەلىللەش ئىجرا قىلىنالمىدى.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="12"/>
         <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation>دەلىللەش Token نىڭ قانۇنىيىتى يوق. دەلىللەش Token نىڭ توغرا يەتكۈزۈلگەنلىكىنى جەزىملەڭ.</translation>
+        <translation type="vanished">دەلىللەش Token نىڭ قانۇنىيىتى يوق. دەلىللەش Token نىڭ توغرا يەتكۈزۈلگەنلىكىنى جەزىملەڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="13"/>
         <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation>دەلىللەش Token نىڭ مۇددىتى ئۆتۈپ كەتتى، قايتا ھاسىل قىلىڭ/ئېلىڭ</translation>
+        <translation type="vanished">دەلىللەش Token نىڭ مۇددىتى ئۆتۈپ كەتتى، قايتا ھاسىل قىلىڭ/ئېلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="14"/>
         <source>Verification via Authentication Token failed</source>
-        <translation>دەلىللەش Token ئارقىلىق دەلىللەش مۇۋەپپەقىيەتسىز بولدى</translation>
+        <translation type="vanished">دەلىللەش Token ئارقىلىق دەلىللەش مۇۋەپپەقىيەتسىز بولدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="15"/>
         <source>Account reading and writing</source>
-        <translation>ھېسابات ئوقۇش ۋە يېزىش</translation>
+        <translation type="vanished">ھېسابات ئوقۇش ۋە يېزىش</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="16"/>
         <source>Your account is currently inactive. Please check account information</source>
-        <translation>ھېساباتىڭىز نۆۋەتتە ئاكتىپ ئەمەس. ھېسابات ئۇچۇرلىرىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">ھېساباتىڭىز نۆۋەتتە ئاكتىپ ئەمەس. ھېسابات ئۇچۇرلىرىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="17"/>
         <source>Your account does not exist</source>
-        <translation>ھېساباتىڭىز مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">ھېساباتىڭىز مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="18"/>
         <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation>ھېساباتىڭىز قۇلۇپلاندى، قۇلۇپنى ئېچىش ئۈچۈن خىزمەت خادىمى بىلەن ئالاقىلىشىڭ</translation>
+        <translation type="vanished">ھېساباتىڭىز قۇلۇپلاندى، قۇلۇپنى ئېچىش ئۈچۈن خىزمەت خادىمى بىلەن ئالاقىلىشىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="19"/>
         <source>Your account is in arrears, please recharge and try again</source>
-        <translation>ھېساباتىڭىز قەرزدار، قايتا تولۇقلاپ سىناق قىلىڭ</translation>
+        <translation type="vanished">ھېساباتىڭىز قەرزدار، قايتا تولۇقلاپ سىناق قىلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="20"/>
         <source>Unable to successfully access your account, please try again later</source>
-        <translation>ھېساباتىڭىزغا ئۇلانالمىدى، كېيىن قايتا سىناش ئۈچۈن ساقلاڭ</translation>
+        <translation type="vanished">ھېساباتىڭىزغا ئۇلانالمىدى، كېيىن قايتا سىناش ئۈچۈن ساقلاڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="21"/>
         <source>API call error</source>
-        <translation>API چاقىرىش خاتالىقى</translation>
+        <translation type="vanished">API چاقىرىش خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="22"/>
         <source>API call parameters are incorrect, please check the documentation</source>
-        <translation>API چاقىرىش پارامېتىرى خاتا، قوللانما قىلچىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">API چاقىرىش پارامېتىرى خاتا، قوللانما قىلچىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="23"/>
         <source>Model does not exist, please check the model code</source>
-        <translation>مودېل مەۋجۇت ئەمەس، مودېل كودىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">مودېل مەۋجۇت ئەمەس، مودېل كودىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="24"/>
         <source>The current model does not support the ${method} calling method</source>
-        <translation>نۆۋەتتىكى مودېل ${method} چاقىرىش ئۇسۇلىنى قوللىمايدۇ</translation>
+        <translation type="vanished">نۆۋەتتىكى مودېل ${method} چاقىرىش ئۇسۇلىنى قوللىمايدۇ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="25"/>
         <source>${field} Parameters not received normally</source>
-        <translation>${field} پارامېتىرى نورمال قوبۇللانمىدى</translation>
+        <translation type="vanished">${field} پارامېتىرى نورمال قوبۇللانمىدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="26"/>
         <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation>${field} پارامېتىرى خاتا، قوللانما قىلچىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">${field} پارامېتىرى خاتا، قوللانما قىلچىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="27"/>
         <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation>${field1} بىلەن ${field2} نى بىر ۋاقىتتا بەلگىلەشكە بولمايدۇ، قوللانما قىلچىنى تەكشۈرۈڭ</translation>
+        <translation type="vanished">${field1} بىلەن ${field2} نى بىر ۋاقىتتا بەلگىلەشكە بولمايدۇ، قوللانما قىلچىنى تەكشۈرۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="28"/>
         <source>You do not have access to  ${API_name}</source>
-        <translation>سىز ${API_name} غا زىيارەت قىلالمايسىز</translation>
+        <translation type="vanished">سىز ${API_name} غا زىيارەت قىلالمايسىز</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="29"/>
         <source>API ${API_name} is offline</source>
-        <translation>API ${API_name} تور بىلەن ئۇلىنىشتىن چىقىرىۋېتىلدى</translation>
+        <translation type="vanished">API ${API_name} تور بىلەن ئۇلىنىشتىن چىقىرىۋېتىلدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="30"/>
         <source>API ${API_name}  does not exist</source>
-        <translation>API ${API_name} مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">API ${API_name} مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="31"/>
         <source>API call process error</source>
-        <translation>API چاقىرىش جەريانى خاتالىقى</translation>
+        <translation type="vanished">API چاقىرىش جەريانى خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="32"/>
         <source>You have requested: ${request_id}</source>
-        <translation>سىز تەلەپ قىلغان: ${request_id}</translation>
+        <translation type="vanished">سىز تەلەپ قىلغان: ${request_id}</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="33"/>
         <source>When getting asynchronous request results, please use task_id</source>
-        <translation>ئاسىنخرون تەلەپ نەتىجىسىنى ئېلىشتا، task_id نى ئىشلىتىڭ</translation>
+        <translation type="vanished">ئاسىنخرون تەلەپ نەتىجىسىنى ئېلىشتا، task_id نى ئىشلىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="34"/>
         <source>Task: ${task_id} does not exist</source>
-        <translation>ۋەزىپە: ${task_id} مەۋجۇت ئەمەس</translation>
+        <translation type="vanished">ۋەزىپە: ${task_id} مەۋجۇت ئەمەس</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="35"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="36"/>
         <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation>تور خاتالىقى، خاتالىق نومۇرى: ${error_id}، خىزمەت خادىمى بىلەن ئالاقىلىشىڭ</translation>
+        <translation type="vanished">تور خاتالىقى، خاتالىق نومۇرى: ${error_id}، خىزمەت خادىمى بىلەن ئالاقىلىشىڭ</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="37"/>
         <source>API run error</source>
-        <translation>API ئىجرا خاتالىقى</translation>
+        <translation type="vanished">API ئىجرا خاتالىقى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="38"/>
         <source>Prompt super long</source>
-        <translation>ئۇقتۇرۇش بەك ئۇزۇن</translation>
+        <translation type="vanished">ئۇقتۇرۇش بەك ئۇزۇن</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="39"/>
         <source>API call blocked by policy</source>
-        <translation>API چاقىرىش سىياسەت تەرىپىدىن توسۇلدى</translation>
+        <translation type="vanished">API چاقىرىش سىياسەت تەرىپىدىن توسۇلدى</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="40"/>
         <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation>سىستېما كىرگۈزۈلگەن ياكى ھاسىل قىلىنغان مەزمۇنلاردا خەتەرلىك ياكى ھەسساس مەزمۇنلار بولۇشى مۇمكىنلىكىنى بايقىدى. ھەسساس مەزمۇنلارنى ئاسان ھاسىل قىلىدىغان ئۇقتۇرۇشلارنى كىرگۈزۈشتىن ساقلىنىڭ. ھەمكارلىقىڭىزغا رەھمەت.</translation>
+        <translation type="vanished">سىستېما كىرگۈزۈلگەن ياكى ھاسىل قىلىنغان مەزمۇنلاردا خەتەرلىك ياكى ھەسساس مەزمۇنلار بولۇشى مۇمكىنلىكىنى بايقىدى. ھەسساس مەزمۇنلارنى ئاسان ھاسىل قىلىدىغان ئۇقتۇرۇشلارنى كىرگۈزۈشتىن ساقلىنىڭ. ھەمكارلىقىڭىزغا رەھمەت.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="41"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="42"/>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="44"/>
         <source>There are currently too many visitors, please try again later.</source>
-        <translation>نۆۋەتتە زىيارەتچىلەر بەك كۆپ، كېيىن قايتا سىناپ بېقىڭ.</translation>
+        <translation type="vanished">نۆۋەتتە زىيارەتچىلەر بەك كۆپ، كېيىن قايتا سىناپ بېقىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/llm/zhipu/zhipucodetranslation.cpp" line="43"/>
         <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation>بۇ API نىڭ بۈگۈنكى چاقىرىش چېكىگە يەتكەن. تېخىمۇ كۆپ زىيارەت قىلىش زۆرۈرىيىتى بولسا، خىزمەت خادىمى بىلەن ئالاقىلىشىپ سېتىۋېلىڭ.</translation>
+        <translation type="vanished">بۇ API نىڭ بۈگۈنكى چاقىرىش چېكىگە يەتكەن. تېخىمۇ كۆپ زىيارەت قىلىش زۆرۈرىيىتى بولسا، خىزمەت خادىمى بىلەن ئالاقىلىشىپ سېتىۋېلىڭ.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AITranslation</name>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
+        <source>Translate the following text into English for me.</source>
+        <translation type="unfinished">تۆۋەندىكى تېكىستنى ئېنگلىزچىغا تەرجىمە قىلىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
+        <source>Translate the following document into Chinese.</source>
+        <translation type="unfinished">تۆۋەندىكى ھۆججەتنى خەنزۇچىغا تەرجىمە قىلىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
+        <source>What does the word Ǌgent” mean in the AI industry?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
+        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
+        <translation type="unfinished">تۆۋەندىكى مەزمۇننى خەنزۇچىغا تەرجىمە قىلىڭ. تەلەپ: مەنىدە توغرا، تىلدا رەسمىي ۋە كەسپىي بولۇشى كېرەك.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
+        <source>What are some colloquial ways to address a friend in English?</source>
+        <translation type="unfinished">ئېنگلىزچىدا دوستنى خەتەرجەم قىلىشتىكى بەزى خەتەرجەم ئۇسۇللار نېمە؟</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
+        <source>Translate the following classical Chinese text into modern Chinese.</source>
+        <translation type="unfinished">تۆۋەندىكى قەدىمكى خەنزۇچە تېكىستنى ھازىرقى خەنزۇچىغا تەرجىمە قىلىڭ.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AIWriter</name>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
+        <source>Today </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
+        <source>Yesterday </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
+        <source>MMM d HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AboutWindow</name>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
+        <source>Filing Information</source>
+        <translation type="unfinished">ھۆججەت ئۇچۇرى</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddPrivateModelDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="48"/>
         <source>Add model</source>
-        <translation>مودېل قوشۇش</translation>
+        <translation type="vanished">مودېل قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="50"/>
         <source>APIKey</source>
-        <translation>APIKey</translation>
+        <translation type="vanished">APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="55"/>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="82"/>
         <source>Required, please input</source>
-        <translation>زۆرۈر، كىرگۈزۈڭ</translation>
+        <translation type="vanished">زۆرۈر، كىرگۈزۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="58"/>
         <source>Account</source>
-        <translation>ھېسابات</translation>
+        <translation type="vanished">ھېسابات</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="63"/>
         <source>Required, to distinguish multiple models</source>
-        <translation>زۆرۈر، كۆپ مودېللارنى پەرقلەندۈرۈش ئۈچۈن</translation>
+        <translation type="vanished">زۆرۈر، كۆپ مودېللارنى پەرقلەندۈرۈش ئۈچۈن</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="69"/>
         <source>Model Name</source>
-        <translation>مودېل نامى</translation>
+        <translation type="vanished">مودېل نامى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="74"/>
         <source>Optional</source>
-        <translation>تاللاشچان</translation>
+        <translation type="vanished">تاللاشچان</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="77"/>
         <source>Domain</source>
-        <translation>دائىرە</translation>
+        <translation type="vanished">دائىرە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="104"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation>مودېلنىڭ ئىشلەيدىغانلىقىنى سىناش ئۈچۈن، سىستېما سىناق ئۇچۇرىنى چوڭ مودېلغا ئەۋەتىدۇ، بۇ ئاز مىقداردا توكېن سەرپ قىلىدۇ.</translation>
+        <translation type="vanished">مودېلنىڭ ئىشلەيدىغانلىقىنى سىناش ئۈچۈن، سىستېما سىناق ئۇچۇرىنى چوڭ مودېلغا ئەۋەتىدۇ، بۇ ئاز مىقداردا توكېن سەرپ قىلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="147"/>
         <source>Cancel</source>
-        <translation>بىكار قىل</translation>
+        <translation type="vanished">بىكار قىل</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="149"/>
         <source>Confirm</source>
-        <translation>جەزملە</translation>
+        <translation type="vanished">جەزملە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="241"/>
         <source>No more than 20 characters</source>
-        <translation>20 ھەرپتىن ئارتۇق بولماسلىقى كېرەك</translation>
+        <translation type="vanished">20 ھەرپتىن ئارتۇق بولماسلىقى كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="272"/>
         <source>This LLM already exists, please do not add it again.</source>
-        <translation>بۇ LLM مەۋجۇت، قايتا قوشۇپ قويماڭ.</translation>
+        <translation type="vanished">بۇ LLM مەۋجۇت، قايتا قوشۇپ قويماڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="315"/>
         <source>Save failed, please try again later</source>
-        <translation>ساقلىاش مەغلۇپ بولدى، كېيىن قايتا سىناڭ.</translation>
+        <translation type="vanished">ساقلىاش مەغلۇپ بولدى، كېيىن قايتا سىناڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="373"/>
         <source>The account name already exists, please change it</source>
-        <translation>ھېسابات نامى مەۋجۇت، ئۆزگەرتىڭ.</translation>
+        <translation type="vanished">ھېسابات نامى مەۋجۇت، ئۆزگەرتىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="401"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation>ۋاكالەت تەڭشىكى ئۈچۈن، سىستېما ۋاكالەت تەڭشىكىگە بارىڭ.</translation>
+        <translation type="vanished">ۋاكالەت تەڭشىكى ئۈچۈن، سىستېما ۋاكالەت تەڭشىكىگە بارىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addprivatemodeldialog.cpp" line="404"/>
         <source>Go to settings</source>
-        <translation>تەڭشەككە بار</translation>
+        <translation type="vanished">تەڭشەككە بار</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>ماھارەت قوش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="66"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>ماھارەت نامى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="71"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>ماھارەت نامىنى كىرگۈزۈڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>ماھارەت بۇيرۇقى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="93"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
         <translation>سۆز تاللاش ئارقىلىق تاللانغان تېكىستنى كۆرسىتىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>يۆلۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>بىكار قىل</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="130"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>ساقلا</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="248"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>ماھارەت نامى بوش قالمايدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="293"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>ھەرپ چەكلىمىسىدىن ئاشتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>ماھارەت نامى مەۋجۇت.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="440"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>بۇيرۇق يۆلۈشى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="478"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
         <translation>ئەگەر تاللانغان تېكىست &quot;Hello&quot; نى تەرجىمە قىلماقچى بولسىڭىز، يۇقىرىدىكىدەك بۇيرۇقنى كىرگۈزەلەيسىز: Translate {selection} into English.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="485"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>ئىلغار چۈشەندۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="491"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
         <translation>بۇيرۇق قانچە ئېنىق بولسا، ھاسىل قىلىنغان مەزمۇن شۇنچە توغرا بولىدۇ. مەسىلەن: • {selection} ئۈچۈن 3 باب ۋە 10 مۇھىم نۇقتىدىن تەركىب تاپقان PPT قىسقىچە يوللىمىسى ھاسىل قىل. • {selection} نى 100 سۆز ئىچىدە تەكلىپ نۇسخىسىغا ئايلاندۇر، گۇرۇپپا ئىشىنى ئاساس قىل.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
         <translation>بەلگىنى چېكىپ كىرگۈزۈش سۆز بۆلىكىگە كىرگۈزەلەيسىز.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="565"/>
+        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>جەزملە</translation>
     </message>
@@ -4957,145 +4338,474 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::AiQuickDialog</name>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
+        <source>simplified Chinese</source>
+        <translation type="unfinished">ئاددىيلاشتۇرۇلغان خەنزۇچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
+        <source>traditional Chinese</source>
+        <translation type="unfinished">ئەنئەنىۋى خەنزۇچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
+        <source>Tibetan</source>
+        <translation type="unfinished">تىبەتچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
+        <source>English</source>
+        <translation type="unfinished">ئىنگلىزچە</translation>
+    </message>
+    <message>
+        <source>Japanese </source>
+        <translation type="obsolete">ياپونچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
+        <source>Japanese</source>
+        <translation type="unfinished">ياپون تىلى</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
+        <source>German</source>
+        <translation type="unfinished">نېمىسچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
+        <source>Spanish</source>
+        <translation type="unfinished">ئىسپانچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
+        <source>French</source>
+        <translation type="unfinished">فىرانسۇزچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
+        <source>Italian</source>
+        <translation type="unfinished">ئىتاليانچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
+        <source>Korean</source>
+        <translation type="unfinished">كورېيەچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
+        <source>Malay</source>
+        <translation type="unfinished">مالايچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
+        <source>Portuguese</source>
+        <translation type="unfinished">پورتۇگالچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
+        <source>Russian</source>
+        <translation type="unfinished">رۇسچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
+        <source>Thai</source>
+        <translation type="unfinished">تايلاندچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
+        <source>Vietnamese</source>
+        <translation type="unfinished">ۋىيېتنامچە</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
+        <source>type</source>
+        <translation type="unfinished">تىپ</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
+        <source>Read Aloud</source>
+        <translation type="unfinished">ئاۋازلىق ئوقۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
+        <source>Paste to Text</source>
+        <translation type="unfinished">تېكىستكە چاپلاش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
+        <source>Regenerate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
+        <source>Copy</source>
+        <translation type="unfinished">كۆچۈرۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
+        <source>Continue Dialog</source>
+        <translation type="unfinished">سۆھبەتنى داۋام قىلدۇرۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
+        <source>Automatic Detection</source>
+        <translation type="unfinished">ئاپتوماتىك ئالاقىلەش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
+        <source>Explain</source>
+        <translation type="unfinished">چۈشەندۈرۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
+        <source>Summary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
+        <source>Translate</source>
+        <translation type="unfinished">تەرجىمە قىلىش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
+        <source>Continue writing</source>
+        <translation type="unfinished">داۋاملاشتۇرۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
+        <source>Expand</source>
+        <translation type="unfinished">كېڭەيتىش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
+        <source>Correct</source>
+        <translation type="unfinished">تۈزىتىش</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
+        <source>Polish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
+        <source>Add to the AI knowledge base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation type="unfinished">تەرجىمە نەتىجىسى مودېلنىڭ قابىلىيىتى بىلەن چەكلىنىدۇ. ئەگەر تەرجىمىگە قانائەتسىز بولسىڭىز، UOS AI باش بېتىدىكى باشقا مودېللارنى تاللاڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation type="unfinished">بۇ پارچىنى %1 گە تەرجىمە قىلىڭ ۋە ئوڭۇشلۇق نەتىجىنى بىۋاستە بېرىڭ.
+مەزمۇن：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
+        <source>Not clickable</source>
+        <translation type="unfinished">چېكىشكە بولمايدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation type="unfinished">ئاۋاز قورالى بايقالمىدى، تەكشۈرۈپ قايتا سىناڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
+        <source>Fill failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
+        <source>Added</source>
+        <translation type="unfinished">قوشۇلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
+        <source>Copied</source>
+        <translation type="unfinished">كۆچۈرۈلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation type="unfinished">بۇ پارچىنى ئاددى تىلدا چۈشەندۈرۈڭ. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+
+مەزمۇن：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">بۇ پارچىنى قىسقا چۈشەندۈرۈپ بېرىڭ ۋە پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+
+مەزمۇن：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">بۇ پارچىنى مۇناسىۋەتلىك داۋاملاشتۇرۇڭ. كۆپ سۆز كېرەك ئەمەس. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+
+مەزمۇن：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation type="unfinished">بۇ پارچىنى مۇناسىۋەتلىك كېڭەيتىڭ. ئالاھىدە ئۇزۇن مەزمۇن كېرەك ئەمەس. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+
+مەزمۇن：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation type="unfinished">بۇ پارچىدىكى ئىملاخاتا بار-يوقلۇقىنى تەكشۈرۈڭ. ئەگەر بار بولسا، خاتالىقنىڭ ئورنىنى كۆرسەتىڭ. پەقەت ئوڭۇشلۇق نەتىجىنى بېرىڭ، قوشۇمچە مەزمۇن قوشماڭ.
+
+مەزمۇن：</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation type="unfinished">بۇ پارچىنى مېنىڭ ئۈچۈن ياخشىلاپ بېرىڭ ۋە قوشۇمچە مەزمۇنسىز نەتىجىنى بېرىڭ. تېكىست:</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
+        <source> &quot;%1&quot; </source>
+        <translation type="unfinished"> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
+        <source>Current model: </source>
+        <translation type="unfinished">نۆۋەتتىكى مودېل: </translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
+        <source>Currently no model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
+        <source>Go to configure  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
+        <source>Claim Free Credits  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
+        <source>No text recognized.</source>
+        <translation type="unfinished">ھېچقانداق تېكىست تونالمىدى.</translation>
+    </message>
+    <message>
+        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
+        <source>The added content must be more than 10 words</source>
+        <translation type="unfinished">قوشۇلغان مەزمۇن 10 سۆزدىن كۆپ بولۇشى كېرەك</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AiWriterDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="97"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="415"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
         <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
         <translation>قۇرماقچى بولغان نەرسىڭىزنى كىرگۈزۈڭ (Enter نى بېسىپ ھاسىل قىلىڭ/Esc نى بېسىپ چېكىنىڭ)</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
         <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
         <translation>[%1] تېمىسىدا [ئېنىق قۇرۇلمىلىق ۋە باي مەزمۇنلۇق] ماقالە يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="739"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Artificial Intelligence</source>
         <translation>سانائەت ئەقلى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="755"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
         <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
         <translation>[%1] تېمىسىدا [PPT تەييارلاش] ئۈچۈن ئىشلىتىدىغان تەكلىپ يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
         <translation>[%1] ھەققىدە [بارلىق خىزمەتچىلەر] گە [ئىدارە بۆلۈمى] تەرىپىدىن ئەۋەتىلىدىغان ئۇقتۇرۇش يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="771"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
         <source>National Day Holiday</source>
         <translation>مىللەتچىلىك بايرىمى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="787"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
         <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
         <translation>[%1] ھەققىدە [ھالەت تەسۋىرى، مەسىلە تەھلىلى، قارشى تەدبىر ۋە تەكلىپلەر، تەتقىقات خۇلاسىسى] نى ئۆز ئىچىگە ئالغان تەتقىقات دوكلاتى يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="803"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
         <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
         <translation>[%1] تېمىسىدا [شىركەت رەھبەرلىرى] ئۈچۈن [ئېنىق قۇرۇلمىلىق ۋە جانلىق تىل] داۋام قىلىدىغان نۇتۇق يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
         <translation>يېقىندىكى خىزمىتىمدىن [%1] ۋە [نەتىجىلەر] نى ئۆز ئىچىگە ئالغان [رەسمى] توندا خۇلاسە يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="819"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
         <source>work content</source>
         <translation>خىزمەت مەزمۇنى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="835"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
         <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
         <translation>[%1] تېمىسىدا [ئېنىق قۇرۇلمىلىق] ۋە [ئاراملىق] توندا جەمئىي تۈردىكى تۈر يېزىشقا ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1036"/>
         <source>Model Configuration</source>
-        <translation>مودېل سەپلىمىسى</translation>
+        <translation type="vanished">مودېل سەپلىمىسى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1123"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
         <source>Go to configure  </source>
         <translation>سەپلەشكە ئۆتۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="268"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1260"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>ئەمەلدىن قالدۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="86"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
         <source>AI Writer</source>
         <translation>AI يازغۇچ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="190"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
         <source>Article</source>
         <translation>ماقالە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="194"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
         <source>Outline</source>
         <translation>تەكلىپ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="198"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
         <source>Notification</source>
         <translation>ئۇقتۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="202"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
         <source>Research Report</source>
         <translation>تەتقىقات دوكلاتى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="206"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
         <source>Speeches</source>
         <translation>نۇتۇق</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="210"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
         <source>Work Summary</source>
         <translation>خىزمەت خۇلاسىسى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="214"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
         <source>Tweets</source>
         <translation>تۈر</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="306"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>تېكىستكە چاپلاش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="324"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>قايتا ھاسىل قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="332"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>كۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="350"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AI تەرىپىدىن ھاسىل قىلىنغان مەزمۇن پەقەت پايدىلىنىش ئۈچۈن، ئۇچۇرلارنىڭ توغرا بولۇشىغا دىققەت قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="849"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
         <source>The function can be used only after restarting the input method. The tutorial is as follows:
 1. Right-click on the input method icon in the taskbar.
 2. Click &quot;Restart&quot;.</source>
@@ -5106,44 +4816,44 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 2. &quot;قايتا قوزغىتىش&quot; نى چېكىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="853"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>جەزملەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1070"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
         <source>Copied</source>
         <translation>كۆچۈرۈلدى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1088"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1099"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
         <source>Current model: </source>
         <translation>نۆۋەتتىكى مودېل: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1106"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>نۆۋەتتە مودېل يوق</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1137"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
         <source>Modify the content, change the tone…</source>
         <translation>مەزمۇننى ئۆزگەرتىش، ئاۋازنى ئۆزگەرتىش…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1258"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>تولۇقتۇرۇش مەغلۇپ بولدى</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1259"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>كىرگۈزۈش رامكىسى تاللانمىغان، كىرگۈزۈش رامكىسىنى تاللاپ قايتا تولۇقتۇرۇڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1261"/>
+        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>جەزملەش</translation>
     </message>
@@ -5312,6 +5022,301 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::Application</name>
+    <message>
+        <location filename="../src/app/application.cpp" line="66"/>
+        <location filename="../src/app/application.cpp" line="68"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="70"/>
+        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="112"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI FollowAlong/Write</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ArticleAdjustAgent</name>
+    <message>
+        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AssistantManager</name>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
+        <source>Hello, I&apos;m UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
+        <source>AI Writing</source>
+        <translation type="unfinished">ياساما ئەقىل يېزىش</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
+        <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
+        <source>AI Translation</source>
+        <translation type="unfinished">ياساما ئەقىل تەرجىمە</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
+        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
+        <translation type="unfinished">كۆپ تىل بىلەن شۇغۇللانغان تەرجىمە ياردەمچىڭىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
+        <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
+        <source>Answers questions based on your personal knowledge base.</source>
+        <translation type="unfinished">شەخسى بىلىم ساندۇقىڭىزغا ئاساسەن سوئاللارغا جاۋاب بېرىدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
+        <source>Ask questions based on the knowledge base.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
+        <source>MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
+        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
+        <source>Please enter MCP Server commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioChannel</name>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
+        <source>Failed to start recorder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
+        <source>Failed to play text audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AudioControler</name>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
+        <source>invalid input device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
+        <source>invalid output device</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::BuiltinProvider</name>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="54"/>
+        <source>UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="59"/>
+        <source>Intelligent Routing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="71"/>
+        <source>Online Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="83"/>
+        <source>DeepSeek-V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="96"/>
+        <location filename="../src/model/builtinprovider.cpp" line="334"/>
+        <source>GLM-4.7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="110"/>
+        <source>Doubao-Seed-1.8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="127"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="135"/>
+        <source>Private deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="144"/>
+        <source>OpenAI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="149"/>
+        <source>GPT-3.5 Turbo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="162"/>
+        <source>GPT-4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="175"/>
+        <source>GPT-4.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="188"/>
+        <source>o1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="201"/>
+        <source>GPT-5.3 Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="217"/>
+        <source>doubao/seed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="223"/>
+        <source>Doubao-Seed 2.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="236"/>
+        <source>Doubao-Seed 2.0-Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="252"/>
+        <source>DeepSeek</source>
+        <translation type="unfinished">DeepSeek</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="257"/>
+        <source>DeepSeek V3.2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>MiniMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="279"/>
+        <source>MiniMax-M2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="295"/>
+        <source>Moonshot (KIMI)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="300"/>
+        <source>Kimi K2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="313"/>
+        <source>Kimi K2.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="329"/>
+        <source>GLM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="347"/>
+        <source>GLM-5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="363"/>
+        <source>Qwen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="369"/>
+        <source>Qwen3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="382"/>
+        <source>Qwen3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="399"/>
+        <source>Anthropic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="406"/>
+        <source>Gemini</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ClickableLabel</name>
     <message>
         <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
@@ -5320,24 +5325,48 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>uos_ai::CommonFailDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
+        <source>Error</source>
+        <translation type="unfinished">خاتالىق</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ConversationRecord</name>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
+        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">يېڭى پاراڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
+        <source>Null</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::CreateScheduleInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="144"/>
         <source>Create Schedule</source>
-        <translation>جەدۋەل قۇرۇش</translation>
+        <translation type="vanished">جەدۋەل قۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="146"/>
         <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation>سائەت 2 دىن 5 گىچە ماركېتىڭ بۆلۈمى بىلەن يىغىن ئۆتكۈزۈڭ.</translation>
+        <translation type="vanished">سائەت 2 دىن 5 گىچە ماركېتىڭ بۆلۈمى بىلەن يىغىن ئۆتكۈزۈڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="155"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>كەچۈرۈڭ، ماس كېلىدىغان مەشغۇلات تېپىلمىدى.</translation>
+        <translation type="vanished">كەچۈرۈڭ، ماس كېلىدىغان مەشغۇلات تېپىلمىدى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="169"/>
         <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
 
 Schedule template format:
@@ -5346,7 +5375,7 @@ json
 
 Input: %1
 Current time: %2</source>
-        <translation>كىرگۈزۈلگەن مەزمۇندىن تۆۋەندىكى JSON فورماتىدىكى جەدۋەل قېلىپىغا ماس كېلىدىغان پارامېتىرلارنى چىقىرىپ، پەقەت JSON مەزمۇنىنىلا چىقىرىڭ، قوشۇمچە ئۇچۇرلارنى چىقارماڭ.
+        <translation type="vanished">كىرگۈزۈلگەن مەزمۇندىن تۆۋەندىكى JSON فورماتىدىكى جەدۋەل قېلىپىغا ماس كېلىدىغان پارامېتىرلارنى چىقىرىپ، پەقەت JSON مەزمۇنىنىلا چىقىرىڭ، قوشۇمچە ئۇچۇرلارنى چىقارماڭ.
 
 جەدۋەل قېلىپى فورماتى:
 
@@ -5362,46 +5391,64 @@ json
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="39"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="85"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>MCP مۇلازىمېتىرى قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="48"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>MCP مۇلازىمېتىرى تەھرىرلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>JSON سەپلەشى:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="99"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="105"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>MCP JSON سەپلەش كودىنى كىرگۈزۈش رامكىسىغا چاپلاڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="119"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>تەسۋىرلەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>MCP مۇلازىمېتىرىنىڭ ئىقتىدارلىرىنى تەسۋىرلەپ، تېز ئىزدەش قوراللىرىغا ئاسانلىق يارىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="154"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation>بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="166"/>
+        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation>جەزملەش</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::CustomModelGroup</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
+        <source>Please enter the model ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
+        <source>Please enter the model name</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5413,94 +5460,116 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::DeepResearchAgent</name>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
+        <source>Collecting and analyzing data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
+        <source>Data collection and analysis completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
+        <source>Research completed. %1 references collected:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
+        <source>搜索成功</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
+        <source>ERROR: 未搜索到信息！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
+        <source>未找到相关文档</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
+        <source>Local Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DeepSeekInfo</name>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="119"/>
         <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation>سوۋغاتنى تاپشۇرۇۋالغاندىن كېيىن، ئەسلىدىكى Baidu مودېلى ۋە iFlytek مودېلى DeepSeek بىلەن ئالماشتۇرۇلىدۇ.</translation>
+        <translation type="vanished">سوۋغاتنى تاپشۇرۇۋالغاندىن كېيىن، ئەسلىدىكى Baidu مودېلى ۋە iFlytek مودېلى DeepSeek بىلەن ئالماشتۇرۇلىدۇ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="132"/>
         <source>Manually collect later</source>
-        <translation>كېيىن قولدا يىغىش</translation>
+        <translation type="vanished">كېيىن قولدا يىغىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="293"/>
         <source>Trial Account</source>
-        <translation>سىناق ھېساباتى</translation>
+        <translation type="vanished">سىناق ھېساباتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="376"/>
         <source>Get a free account</source>
-        <translation>ھېساباتتىن بېپۇل پايدىلىنىڭ</translation>
+        <translation type="vanished">ھېساباتتىن بېپۇل پايدىلىنىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="385"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="418"/>
         <source>Try again</source>
-        <translation>قايتا سىناڭ</translation>
+        <translation type="vanished">قايتا سىناڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="393"/>
         <source>Enter UOS AI</source>
-        <translation>UOS AI غا كىرىڭ</translation>
+        <translation type="vanished">UOS AI غا كىرىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="401"/>
         <source>Receiving...</source>
-        <translation>قوبۇل قىلىنىۋاتىدۇ...</translation>
+        <translation type="vanished">قوبۇل قىلىنىۋاتىدۇ...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="410"/>
         <source>Use it immediately</source>
-        <translation>دەرھال ئىشلىتىڭ</translation>
+        <translation type="vanished">دەرھال ئىشلىتىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="431"/>
         <source>Checking account status...</source>
-        <translation>ھېسابات ھالىتى تەكشۈرۈلىۋاتىدۇ...</translation>
+        <translation type="vanished">ھېسابات ھالىتى تەكشۈرۈلىۋاتىدۇ...</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="468"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="476"/>
         <source>DeepSeek account claim failed!</source>
-        <translation>DeepSeek ھېساباتىنى تاپشۇرۇۋېلىش مەغلۇپ بولدى!</translation>
+        <translation type="vanished">DeepSeek ھېساباتىنى تاپشۇرۇۋېلىش مەغلۇپ بولدى!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="469"/>
         <source>Please check the network and try again later！</source>
-        <translation>تورنى تەكشۈرۈپ، كېيىن قايتا سىناڭ！</translation>
+        <translation type="vanished">تورنى تەكشۈرۈپ، كېيىن قايتا سىناڭ！</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="472"/>
         <source>DeepSeek account successfully claimed!</source>
-        <translation>DeepSeek ھېساباتى مۇۋەپپەقىيەتلىك تاپشۇرۇۋېلىندى!</translation>
+        <translation type="vanished">DeepSeek ھېساباتى مۇۋەپپەقىيەتلىك تاپشۇرۇۋېلىندى!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="477"/>
         <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation>تورنى تەكشۈرۈپ قايتا سىناڭ ياكى كېيىن UOS AI تەڭشىكىدە قولدا تاپشۇرۇۋېلىڭ</translation>
+        <translation type="vanished">تورنى تەكشۈرۈپ قايتا سىناڭ ياكى كېيىن UOS AI تەڭشىكىدە قولدا تاپشۇرۇۋېلىڭ</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="464"/>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="480"/>
         <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation>UOS AI DeepSeek غا تولۇق ئۇيغۇنلاشتۇرۇلدى</translation>
+        <translation type="vanished">UOS AI DeepSeek غا تولۇق ئۇيغۇنلاشتۇرۇلدى</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="465"/>
         <source>The free account activity has ended.</source>
-        <translation>ھەقسىز ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
+        <translation type="vanished">ھەقسىز ھېسابات پائالىيىتى ئاخىرلاشتى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="473"/>
         <source>Come and experience it!</source>
-        <translation>كېلىپ تەجرىبە قىلىڭ!</translation>
+        <translation type="vanished">كېلىپ تەجرىبە قىلىڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/deepseekinfo.cpp" line="481"/>
         <source>Come and claim your account!</source>
-        <translation>كېلىپ ھېساباتىڭىزنى ئېلىڭ!</translation>
+        <translation type="vanished">كېلىپ ھېساباتىڭىزنى ئېلىڭ!</translation>
     </message>
 </context>
 <context>
@@ -5573,16 +5642,198 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::EParserDocument</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="207"/>
-        <source>Generate Image</source>
-        <translation>سۈرەت ھاسىل قىلىش</translation>
+        <source>Supported files</source>
+        <translation type="obsolete">قوللايدىغان ھۆججەتلەر</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FileChannel</name>
+    <message>
+        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
+        <source>Supported files</source>
+        <translation type="unfinished">قوللايدىغان ھۆججەتلەر</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::FreeAccountService</name>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
+        <source>Network error</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="209"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
+        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
+        <translation type="unfinished">سۆزلەشكە بولىدىغان ھەقسىز ھېساباتىڭىزنىڭ چەكلىمىسى تۈگەپ قالدى، داۋاملىق ئىشلىتىش ئۈچۈن مودېل ھېساباتىڭىزنى سەپلەڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
+        <source>Not Now</source>
+        <translation type="unfinished">ھازىر ئەمەس</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">نەق پۇل تەلەپ قىلىش</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
+        <source>Free Credits Delivered</source>
+        <translation type="unfinished">ھەقسىز نەق پۇل تەقسىم قىلىندى</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
+        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
+        <source>Account not found</source>
+        <translation type="unfinished">ھېسابات تېپىلمىدى</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
+        <source>Only support trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
+        <source>You have already participated in the event and cannot claim the reward again.</source>
+        <translation type="unfinished">سىز ئاللىقاچان پائالىيەتتە قاتناشقان بولۇپ، قايتا مۇكاپات ئالالمايسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
+        <source>Server system error</source>
+        <translation type="unfinished">مۇلازىمېتېر سىستېما خاتالىقى</translation>
+    </message>
+    <message>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GenerateImageInst</name>
+    <message>
+        <source>Generate Image</source>
+        <translation type="vanished">سۈرەت ھاسىل قىلىش</translation>
+    </message>
+    <message>
         <source>Describe Image Content</source>
-        <translation>سۈرەت مەزمۇنىنى تەسۋىرلەش</translation>
+        <translation type="vanished">سۈرەت مەزمۇنىنى تەسۋىرلەش</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GetFreeAccountDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
+        <source>Get a free trial account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
+        <source>Get account</source>
+        <comment>button</comment>
+        <translation type="unfinished">ھېسابات ئالىسىز</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::HttpCodeTranslation</name>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Connection failed, please check the fill in information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
+        <source>Operation canceled.</source>
+        <translation type="unfinished">مەشغۇلاتتىن ۋاز كەچتى.</translation>
     </message>
 </context>
 <context>
@@ -5606,6 +5857,14 @@ json
         <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>تور يوق</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::IconButtonEx</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
+        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
+        <translation type="unfinished">يېڭى قوشۇلغان ھۆججەتلەرنى ئىشلىتىشتىن ئىلگىرى ئالدىن بىر تەييارلىق قىلىش كېرەك بولىدۇ، سانلىق مەلۇماتنى بىر تەرەپ قىلىش جەريانىدا نۇرغۇن ھېسابلاش ۋە ساقلىغۇچ مەنبەلەرنى سەرف قىلىشى مۇمكىن. سانلىق مەلۇماتنى ئۆچۈرگەندىن كېيىن بىر تەرەپ قىلىش توختايدۇ.</translation>
     </message>
 </context>
 <context>
@@ -5647,22 +5906,203 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::LaunchAppInst</name>
+    <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="52"/>
-        <source>Launch or Close App</source>
-        <translation>پروگراممىنى قوزغات ياكى تاقاش</translation>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
+        <source>Searching knowledge base</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="54"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
+        <source>Search complete · %1s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
+        <source>Search complete · %1m%2s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
+        <source>Are you sure you want to delete this knowledge base file?</source>
+        <translation type="unfinished">بۇ بىلىم بانكا ھۆججىتىنى ئۆچۈرمەكچىمۇ؟</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::KnowledgeBaseListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
+        <source>Please install the embedding model plugins first</source>
+        <translation type="unfinished">ئاۋۋال embedding مودېل قىستۇرمىسىنى ئورنىتىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
+        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
+        <translation type="unfinished">بۇ ئىقتىدار يۇقىرى دەرىجىلىك قورۇلما مەنبەسىنى تەلەپ قىلىدۇ، ئەسلىيەت سەپلىمىسى: CPU Intel 11-نەۋرە i7 ياكى ئۇنىڭدىن يۇقىرى؛ 16GB ياكى ئۇنىڭدىن كۆپ رام؛ NVIDIA گرافىك كارتا 10-سىرىيە ياكى ئۇنىڭدىن يۇقىرى بولسا ئەڭ ياخشى. ئەگەر سەپلىمە بەك تۆۋەن بولسا، كېچىكىش ۋە توغرا ئەمەس جاۋاب قاتارلىق مەسىلىلەر كۆرۈلۈشى مۇمكىن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
+        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
+        <translation type="unfinished">بۇ يەردە شەخسىي بىلىم ياردەمچىسىنىڭ بىلىم بانكىسىنى بېكىتسە بولىدۇ، شەخسىي بىلىم ياردەمچىسى تۆۋەندە قوشۇلغان ھۆججەتلەرگە ئاساسەن سوئاللارغا جاۋاب بېرىدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
+        <source>None</source>
+        <translation type="unfinished">يوق</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
+        <source>File already exist</source>
+        <translation type="unfinished">ھۆججەت ئاللىقاچان مەۋجۇت</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
+        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
+        <translation type="unfinished">%1 ھۆججىتى ئاللىقاچان مەۋجۇت بولۇپ، قايتا قوشۇشقا بولمايدۇ. قايتا قوشۇشتىن ئىلگىرى ھۆججەت نامىنى ئۆزگەرتىڭ ياكى مەۋجۇت ھۆججەتنى ئۆچۈرۈڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
+        <source>All files</source>
+        <translation type="unfinished">ھەممە ھۆججەتلەر</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LaunchAppInst</name>
+    <message>
+        <source>Launch or Close App</source>
+        <translation type="vanished">پروگراممىنى قوزغات ياكى تاقاش</translation>
+    </message>
+    <message>
         <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation>WPS، مۇزىكا، ئالبوم، كونترول مەركىزى، خاتىرە كۆرگۈچ ...</translation>
+        <translation type="vanished">WPS، مۇزىكا، ئالبوم، كونترول مەركىزى، خاتىرە كۆرگۈچ ...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
+        <source>Install</source>
+        <translation type="unfinished">ئورنىتىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
+        <source>Uninstall</source>
+        <translation type="unfinished">ئۆچۈرۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
+        <source>Update</source>
+        <translation type="unfinished">يېڭىلاش</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
+        <source>uninstall</source>
+        <translation type="unfinished">ئۆچۈرۈش</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::LocalModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
+        <source>Local model</source>
+        <translation type="unfinished">يەرلىك مودېل</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <source>ULLM-1.5B</source>
+        <translation type="unfinished">ULLM-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
+        <translation type="unfinished">ئورنىتىلغاندىن كېيىن، UOS AI نى ئىشلەتە ئۈچۈن تور باغلىنىشى زۆرۈر ئەمەس.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
+        <source>ULLM-7B</source>
+        <translation type="unfinished">ULLM-7B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>DeepSeek-R1-1.5B</source>
+        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
+        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
+        <translation type="unfinished">ئوچۇق مەنبەلىك جەمئىيەتتىن ئۆز ئەھۋالىڭىز بىلەن چۈشۈرۈڭ. ئورنىتىلغاندىن كېيىن UOS AI ياردەمچىدە ئىشلىتىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
+        <source>UOS AI large model</source>
+        <translation type="unfinished">UOS AI چوڭ مودېلى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>Embedding Plugins</source>
+        <translation type="unfinished">قىستۇرما قىستۇرمىلار</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
+        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
+        <translation type="unfinished">مودېل ئورنىتىلغاندىن كېيىن، سىستېما ياردەمچىسى ۋە شەخسىي بىلىم ياردەمچىسى ئىشلەيدۇ.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="114"/>
+        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP مۇلازىمېتىرى ئىشلەمدى</translation>
     </message>
@@ -5741,17 +6181,17 @@ json
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="50"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation type="unfinished">ئورنىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="55"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
         <translation type="unfinished">ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
         <translation type="unfinished">يېڭىلاش</translation>
     </message>
@@ -5759,7 +6199,7 @@ json
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="62"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>ئورگانىك</translation>
     </message>
@@ -5767,47 +6207,47 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="127"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP مۇلازىمېتىر</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="134"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>ھەممىسى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>ئورگانىك</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
         <translation>ئۆزگەچە</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="144"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>MCP مۇلازىمېتىر قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="326"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>ئۆچۈرۈشنى جەزىملەشتۈرەمسىز %1؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>ئۆچۈرگەندىن كېيىن بۇ مۇلازىمېتىر ئىشلىتكىلى بولمايدۇ، ئېھتىيات بىلەن ئىش قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation>بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
+        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
         <translation>ئۆچۈرۈش</translation>
     </message>
@@ -5815,173 +6255,574 @@ json
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="59"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>MCP ئايلاندۇرۇش مۇھىتى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="91"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP مۇلازىمېتىر</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="172"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>UOS AI Agent قاچىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="173"/>
+        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>قاچىلاندىن كېيىن MCP مۇلازىمېتىر ئىشلىتىشكە بولىدۇ.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::ModelHubLLM</name>
+    <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="43"/>
-        <source>YouRong 1.5B</source>
-        <translation>YouRong 1.5B</translation>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
+        <source>Model Configuration</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/externalllm/modelhubllm.cpp" line="58"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
+        <source>Knowledge Base Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
+        <source>UOS AI FollowAlong</source>
+        <translation type="unfinished">UOS AI ئەگەشىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
+        <source>User Agreement</source>
+        <translation type="unfinished">ئىشلەتكۈچى كېلىشىمى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
+        <source>Read and agreed</source>
+        <translation type="unfinished">ئوقۇپ قوشۇلدىم</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
+        <source>Proxy Settings</source>
+        <translation type="unfinished">ۋەكىل تەڭشىكى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
+        <source>Go to settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation type="unfinished">بىلىم ئامبىرىغا قوشۇش ئۈچۈن ۋېكتورلاشتۇرۇش مودېلى قىستۇرمىسىنى ئورنىتىش كېرەك. ئىلتىماس دۇكىنىغا بارىپ چۈشۈرۈپ ئورنىتىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation type="unfinished">ئورنىتما</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation type="unfinished">دەرھال ئورنىت</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubLLM</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation type="vanished">YouRong 1.5B</translation>
+    </message>
+    <message>
         <source>YouRong 7B</source>
-        <translation>YouRong 7B</translation>
+        <translation type="vanished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
+        <source>YouRong 1.5B</source>
+        <translation type="unfinished">YouRong 1.5B</translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
+        <source>YouRong 7B</source>
+        <translation type="unfinished">YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
+        <source>Get a free account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
+        <source>Online model</source>
+        <translation type="unfinished">تور مودېلى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
+        <source>None</source>
+        <translation type="unfinished">يوق</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="98"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="305"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
         <translation>ئورنىتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="108"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
         <source>Update</source>
         <translation>يېڭىلاش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="102"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
         <translation>ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="113"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
         <source>Cancel</source>
         <translation>بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="151"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
         <translation>تەخمىنەن %1GB</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>ئورنىتىلىۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
         <translation>بۇ مودېلنى ئۆچۈرمەكچىمۇ؟</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="223"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>جەزىملەشتۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="245"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>تەكشۈرۈۋاتىدۇ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>جەزىملەش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="266"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
         <translation>%0 چۈشۈرۈش مەغلۇپ بولدى، قايتا سىناڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="313"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
         <translation>بۇ مودېلنى ئورنىتىشتىن بۇرۇن &quot;Embedding Plugins&quot; نى ئورنىتىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="493"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
         <translation>نىشان قىسقۇچنى چۈمۈلگە تاشلاش مەغلۇپ بولدى، قايتا سىناڭ!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="529"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>%1 سېكۇنت</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="531"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>%1 مىنۇت</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="536"/>
+        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
         <translation>%1MB/%2GB چۈشۈرۈلدى، %3 قالدى.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="294"/>
-        <source>Multimedia Control</source>
-        <translation>كۆپ ۋاستىلىق كونترول</translation>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
+        <source>Are you sure you want to delete this model?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="297"/>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelValidator</name>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="37"/>
+        <source>Invalid model account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="54"/>
+        <source>Unsupported model type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="62"/>
+        <source>Model does not support chat completion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="89"/>
+        <source>Model is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="98"/>
+        <source>HTTP error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/modelvalidator.cpp" line="108"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModifyProviderDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
+        <source>For proxy settings, please go to system proxy settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
+        <source>Go to settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Edit Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
+        <source>Add Model</source>
+        <translation type="unfinished">مودېل قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
+        <source>Account</source>
+        <translation type="unfinished">ھېسابات</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
+        <source>Required, to distinguish multiple models</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
+        <source>Provider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
+        <source>APIKey</source>
+        <translation type="unfinished">APIKey</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
+        <source>Required, please input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
+        <source>Domain</source>
+        <translation type="unfinished">دائىرە</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
+        <source>Enable</source>
+        <translation type="unfinished">قوزغات</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
+        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
+        <source>Name and Model ID must be filled in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
+        <source>Test passed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
+        <source>The model service is available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::MultimediaControlInst</name>
+    <message>
+        <source>Multimedia Control</source>
+        <translation type="vanished">كۆپ ۋاستىلىق كونترول</translation>
+    </message>
+    <message>
         <source>Play music, state control, seek...</source>
-        <translation>مۇزىكا ئوينىتىش، ھالەت كونترولى، ئىزدەش...</translation>
+        <translation type="vanished">مۇزىكا ئوينىتىش، ھالەت كونترولى، ئىزدەش...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OperatingLineWidget</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
+        <source>In data processing</source>
+        <translation type="unfinished">سانلىق مەلۇمات بىلەن شۇغۇللانماقتا</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
+        <source>Data processing error</source>
+        <translation type="unfinished">سانلىق مەلۇمات بىلەن شۇغۇللانغاندا خاتالىق كۆرۈلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
+        <source>File error, unable to process, please delete.</source>
+        <translation type="unfinished">ھۆججەت خاتالىقى، بىلەن شۇغۇللانالمىدى، ئۆچۈرۈڭ.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OutlineAgent</name>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
+        <source>Generating outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
+        <source>Generating outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
+        <source>Outline generated, please confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
+        <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
+        <source>Detected uploaded local outline, please confirm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
+        <source>Failed to parse the uploaded outline file, please re-upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
+        <source>Generating outline content failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
+        <source>Based on your writing task, I have generated the following outline for **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
+        <source>I have parsed your uploaded outline and structured it as **%1**:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
+        <source>
+The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::PersonalKnowledgeAssistant</name>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
+        <translation type="unfinished">شەخسىي بىلىم ياردەمچىسىنى مودېل قىستۇرمىسىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
+        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
+        <translation type="unfinished">شەخسىي بىلىم ياردەمچىسىنى بىلىم ئامبىرىنى تەڭشەپ بولغاندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="32"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="149"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>ئۆچۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="36"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="43"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>شەخسىي يوللاشتۇرۇش مودېلى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="87"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>تاماملاندى</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="97"/>
+        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>يوق</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ProviderListItem</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
+        <source>Are you sure you want to delete this provider?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6003,37 +6844,60 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::SearchOnlineInst</name>
+    <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="249"/>
-        <source>Search Online</source>
-        <translation>توردا ئىزدەش</translation>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
+        <source>Document Generating</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="251"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
+        <source>failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
+        <source>Document Generated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
+        <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
+        <source>You can ask follow-up questions or request adjust the article.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SearchOnlineInst</name>
+    <message>
+        <source>Search Online</source>
+        <translation type="vanished">توردا ئىزدەش</translation>
+    </message>
+    <message>
         <source>Enter Search Content</source>
-        <translation>ئىزدەش مەزمۇنىنى كىرگۈزۈڭ</translation>
+        <translation type="vanished">ئىزدەش مەزمۇنىنى كىرگۈزۈڭ</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SendMailInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="81"/>
         <source>Send Mail</source>
-        <translation>ئېلخەت ئەۋەتىش</translation>
+        <translation type="vanished">ئېلخەت ئەۋەتىش</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="83"/>
         <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation>ماڭا [تاپشۇرۇۋالغۇچىنىڭ ئىسمى] غا [ئېلخەت مەزمۇنى] بىلەن ئېلخەت ئەۋەتىشكە ياردەم قىلىڭ.</translation>
+        <translation type="vanished">ماڭا [تاپشۇرۇۋالغۇچىنىڭ ئىسمى] غا [ئېلخەت مەزمۇنى] بىلەن ئېلخەت ئەۋەتىشكە ياردەم قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="92"/>
         <source>Sorry, no matching operations were found.</source>
-        <translation>كەچۈرۈڭ، ماس كېلىدىغان مەشغۇلات تېپىلمىدى.</translation>
+        <translation type="vanished">كەچۈرۈڭ، ماس كېلىدىغان مەشغۇلات تېپىلمىدى.</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="106"/>
         <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
 
 Email template format:
@@ -6041,7 +6905,7 @@ json
 {&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
 
 Input: %1</source>
-        <translation>تۆۋەندىكى JSON ئېلخەت قېلىپى فورماتىغا ماس كېلىش ئۈچۈن بېرىلگەن كىرگۈزۈشتىن مۇناسىۋەتلىك پارامېترلارنى ئالماقچى بولۇپ، پەقەت JSON مەزمۇنىنى چىقىرىڭ. باشقا قوشۇمچە ئۇچۇرلارنى كىرگۈزمەڭ.
+        <translation type="vanished">تۆۋەندىكى JSON ئېلخەت قېلىپى فورماتىغا ماس كېلىش ئۈچۈن بېرىلگەن كىرگۈزۈشتىن مۇناسىۋەتلىك پارامېترلارنى ئالماقچى بولۇپ، پەقەت JSON مەزمۇنىنى چىقىرىڭ. باشقا قوشۇمچە ئۇچۇرلارنى كىرگۈزمەڭ.
 
 ئېلخەت قېلىپى فورماتى:
 
@@ -6053,21 +6917,72 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::ServiceConfigChannel</name>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
+        <source>Failed to get MCP server instance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
+        <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
+        <translation type="unfinished">مۇلازىمېتىر «%1» ئۆزگەچە مۇلازىمېتىر ئەمەس ياكى مەۋجۇت ئەمەس</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
+        <source>MCP server name &apos;%1&apos; already exists</source>
+        <translation type="unfinished">MCP مۇلازىمېتىر نامى &apos;%1&apos; ئاللىبۇرۇن مەۋجۇت</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
+        <source>Server &apos;%1&apos; does not exist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SessionManager</name>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="52"/>
+        <source>Session with ID %1 already exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="63"/>
+        <source>Session %1 create assistant %2 failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="74"/>
+        <source>Session %1 create success</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="120"/>
+        <source>Session %1 not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/session/sessionmanager.cpp" line="128"/>
+        <source>Session %1 is not idle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::ShortcutUpdateDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="51"/>
         <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation>قىسقا يول: [Super + Space]. UOS AI نى تېز چاقىرىپ، بارلىق AI ئىقتىدارلارنى بىر يەردە زىيارەت قىلىڭ.</translation>
+        <translation type="vanished">قىسقا يول: [Super + Space]. UOS AI نى تېز چاقىرىپ، بارلىق AI ئىقتىدارلارنى بىر يەردە زىيارەت قىلىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="79"/>
         <source>Got it</source>
-        <translation>چۈشەندىم</translation>
+        <translation type="vanished">چۈشەندىم</translation>
     </message>
     <message>
-        <location filename="../src/gui/upgrade/shortcutupdatedialog.cpp" line="107"/>
         <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation>بۇ ئەسكەرتىش %1 قېتىم تېخى كۆرۈنىدۇ, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;قايتا كۆرسەتمە&lt;/a&gt;</translation>
+        <translation type="vanished">بۇ ئەسكەرتىش %1 قېتىم تېخى كۆرۈنىدۇ, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;قايتا كۆرسەتمە&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -6149,93 +7064,1727 @@ json
     </message>
 </context>
 <context>
-    <name>uos_ai::SkillServerListItem</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistitem.cpp" line="62"/>
-        <source>built-in</source>
-        <translation type="unfinished">ئورگانىك</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="82"/>
-        <source>Skill List</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
+        <source>UOS AI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="89"/>
-        <source>Import Skill</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="121"/>
-        <source>Supported files</source>
-        <translation type="unfinished">قوللايدىغان ھۆججەتلەر</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="265"/>
-        <source>Confirm deletion %1?</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
+        <source>Update History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="266"/>
-        <source>After deletion, this skill will be unavailable. Proceed with caution.</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
+        <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="267"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
+        <source>About</source>
+        <translation type="unfinished">ھەققىدە</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
+        <source>New Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
+        <source>Temporary Chat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
+        <source>AI Writing</source>
+        <translation type="unfinished">ياساما ئەقىل يېزىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
+        <source>AI Translation</source>
+        <translation type="unfinished">ياساما ئەقىل تەرجىمە</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
+        <source>AI Knowledge Base</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
+        <source>MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
+        <source>Commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
+        <source>Agent Store</source>
+        <translation type="unfinished">ئەمەلدارلار دۇكىنى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
+        <source>More</source>
+        <translation type="unfinished">تېخىمۇ كۆپ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
+        <source>Chat History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
+        <source>Today</source>
+        <translation type="unfinished">بۈگۈن</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
+        <source>Yesterday</source>
+        <translation type="unfinished">تۈنۈگۈن</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
+        <source>Last 7 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
+        <source>Last 30 Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
+        <source>January</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
+        <source>February</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
+        <source>March</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
+        <source>April</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
+        <source>May</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <source>June</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <source>July</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <source>August</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <source>September</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <source>October</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <source>November</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <source>year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
+        <source>Earlier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
+        <source>Confirm Deletion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
+        <source>Confirm Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverlistwidget.cpp" line="268"/>
-        <source>Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SkillServerWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="48"/>
-        <source>Skill Enviorment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
+        <source>Batch Manage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="84"/>
-        <source>Agent Skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
+        <source>All</source>
+        <translation type="unfinished">ھەممىسى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
+        <source>Select All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="109"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="120"/>
-        <source>Configure </source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
+        <source>%1 conversations selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="110"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="121"/>
-        <source>MCP environment</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
+        <source>No chat history yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skillserverwidget.cpp" line="122"/>
-        <source>After configuration you can use agent skills</source>
+        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
+        <source>Chat content not found</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
+        <source>DeepThink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
+        <source>Attachments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
+        <source>Upload Files</source>
+        <translation type="unfinished">ھۆججەت يوللاش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
+        <source>Screenshot Q&amp;A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
+        <source>Voice Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
+        <source>Ask a question...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
+        <source>Voice Read</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
+        <source>Stop Reading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
+        <source>Copy</source>
+        <translation type="unfinished">كۆچۈرۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
+        <source>Regenerate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
+        <source>Re-edit</source>
+        <translation type="unfinished">قايتا تەھرىرلەش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
+        <source>Stop Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
+        <source>Generation stopped</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
+        <source>You stopped this answer, please re-edit your question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <source>Back to Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
+        <source>Thinking...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
+        <source>Deep think completed (took %1s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
+        <source>Parsing...</source>
+        <translation type="unfinished">تەھلىل قىلىنىۋاتىدۇ...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
+        <source>Parsing failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
+        <source>You can add up to 50 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
+        <source>Summarize the core content of the file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
+        <source>Model List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
+        <source>Smart Recommendation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
+        <source>Smart switch for best match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
+        <source>Local Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
+        <source>Online Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
+        <source>Add Model</source>
+        <translation type="unfinished">مودېل قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <source>Official</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
+        <source>You have X newly answered chats</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
+        <source>View Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
+        <source>Remind Me Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
+        <source>Upload files/images as references</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
+        <source>Reference Outline / Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
+        <source>As reference material / As outline file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
+        <source>File Upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
+        <source>As Material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
+        <source>As Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
+        <source>Only 1 file is supported for outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
+        <source>Local Materials</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
+        <source>File Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
+        <source>Outline</source>
+        <translation type="unfinished">تەكلىپ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
+        <source>View All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
+        <source>Collapse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
+        <source>Recent Creations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
+        <source>Upload File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
+        <source>Reference Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
+        <source>Local File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
+        <source>Heading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
+        <source>Export Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
+        <source>Exit Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
+        <source>Untitled Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
+        <source>Enable Privacy Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
+        <source>Continue Generating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
+        <source>Generating outline content...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
+        <source>Re-upload Outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
+        <source>Directly generate outline using AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
+        <source>Add sub-chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <source>Delete chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
+        <source>Add chapter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
+        <source>Enter chapter title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
+        <source>Delete this heading?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
+        <source>Generate document from outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
+        <source>Save as Word</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
+        <source>Save as PDF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
+        <source>Save as Markdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
+        <source>Saving...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
+        <source>Saved successfully!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
+        <source>Failed to save, please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
+        <source>Undo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
+        <source>Redo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
+        <source>Body Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
+        <source>Heading %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
+        <source>Bold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
+        <source>Italic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
+        <source>Strikethrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
+        <source>Link Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
+        <source>Bulleted List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
+        <source>Numbered List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
+        <source>Decrease Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
+        <source>Increase Indent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
+        <source>Blockquote</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
+        <source>Divider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
+        <source>Copy Full Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
+        <source>Print Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
+        <source>Share Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
+        <source>Zoom Out</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
+        <source>Full Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <source>Please enter the text to be translated first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
+        <source>Identifying source language...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
+        <source>My MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
+        <source>Add MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
+        <source>Delete MCP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <source>Built-in Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
+        <source>Custom Added Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
+        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <source>Install Now</source>
+        <translation type="unfinished">ھازىر قاچىلاش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
+        <source>System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
+        <source>Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
+        <source>Wireless Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
+        <source>DND Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
+        <source>Eye Comfort</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
+        <source>Brightness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
+        <source>Volume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
+        <source>Font Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
+        <source>App Store</source>
+        <translation type="unfinished">ئەپ دۇكىنى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
+        <source>Schedule Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
+        <source>Click to download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
+        <source>downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <source>Go to configuration</source>
+        <translation type="unfinished">سەپلەمىگە ئۆتۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
+        <source>No account</source>
+        <translation type="unfinished">ھېسابات يوق</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
+        <source>Input question</source>
+        <translation type="unfinished">سوئال كىرگۈزۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation type="unfinished">UOS AI سىزگە ياردەم قىلالايدىغان بەزى ئىشلار</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
+        <source>Stop</source>
+        <translation type="unfinished">توختا</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
+        <source>Retry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
+        <source>Clear conversation history</source>
+        <translation type="unfinished">سۆزلەش تارىخىنى تازىلاش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
+        <source>Please connect the microphone and try again</source>
+        <translation type="unfinished">مىكروفوننى ئۇلانغان بولۇڭ ۋە قايتا سىناش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
+        <source>Chat history cleared</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
+        <source>Click to start/stop recording</source>
+        <translation type="unfinished">يازما باشلاش/توختىتىش ئۈچۈن چېكىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
+        <source>Listening</source>
+        <translation type="unfinished">ئاڭلاۋاتىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
+        <source>Sleeping</source>
+        <translation type="unfinished">ئۇخلاۋاتىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
+        <source>Microphone not detected</source>
+        <translation type="unfinished">مىكروفون تېپىلمىدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
+        <source>Connection failed, click to try again</source>
+        <translation type="unfinished">ئۇلانش مەغلۇپ بولدى، قايتا سىناش ئۈچۈن چېكىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
+        <source>Click on the animation or Ctrl+Super+Space to activate</source>
+        <translation type="unfinished">ئاكتىپلاشتۇرۇش ئۈچۈن ئانىماتسىيە ياكى Ctrl+Super+Space نى بېسىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">ئاۋاز كىرگۈزۈش ۋاقىتلىق ئىشلەتكىلى بولمايدۇ، تورنى تەكشۈرۈڭ!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
+        <source>Voice conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
+        <source>Click the animation or press Enter to send</source>
+        <translation type="unfinished">ئەۋەتىش ئۈچۈن ئانىماتسىيە ياكى Enter نى بېسىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
+        <source>Stop recording after %1 seconds</source>
+        <translation type="unfinished">%1 سېكۇنتتىن كېيىن يازما توختىتىلىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
+        <source>Thinking</source>
+        <translation type="unfinished">ئويلىنىۋاتىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
+        <source>Click animation to interrupt</source>
+        <translation type="unfinished">بىكار قىلىش ئۈچۈن ئانىماتسىيە چېكىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
+        <source>Answering</source>
+        <translation type="unfinished">جاۋاب بېرىۋاتىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
+        <source>Activate</source>
+        <translation type="unfinished">ئاكتىپلاشتۇرۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
+        <source>Voice input</source>
+        <translation type="unfinished">ئاۋاز كىرگۈزۈش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation type="unfinished">ئاۋاز تارقىتىش ۋاقىتلىق ئىشلەتكىلى بولمايدۇ، تورنى تەكشۈرۈڭ!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
+        <source>Turn off voice conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation type="unfinished">سۈرەت ھاسىل قىلىندى، كۆرۈش ئۈچۈن سۆزلەش ئېكرانىغا ئالماشتۇرۇڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
+        <source>No account, please configure an account</source>
+        <translation type="unfinished">ھېسابات يوق، ھېسابات سەپلەڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
+        <source>Answer each question up to 5 times</source>
+        <translation type="unfinished">ھەر بىر سوئالغا 5 قېتىم جاۋاب بېرىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
+        <source>Copied successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
+        <source>Sound output device not detected</source>
+        <translation type="unfinished">ئاۋاز چىقىرىش قۇرالى تېپىلمىدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation type="unfinished">ئاۋاز چىقىرىش قۇرالى تېپىلمىدى، تەكشۈرۈپ قايتا سىناشنى!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
+        <source>Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
+        <source>Window Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
+        <source>Sidebar Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
+        <source>Assistant List</source>
+        <translation type="unfinished">ياردەمچىلەر تىزىمى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
+        <source>Agent List</source>
+        <translation type="unfinished">ئەمەلدارلار تىزىمى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
+        <source>UOS System Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
+        <source>Deepin System Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
+        <source>Personal Knowledge Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
+        <source>Please configure the knowledge base</source>
+        <translation type="unfinished">بىلىم بانكىسىنى سەپلەڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation type="unfinished">[شەخسىي بىلىم ياردەمچىسى] نى ئىشلىتىشتىن ئىلگىرى بىلىم بانكىسىنى سەپلەش كېرەك. بىلىم بانكىسىنى سەپلىگەندىن كېيىن، AI سىز بىلىم بانكىسىدا سەپلىگەن مەزمۇنلارغا ئاساسەن سوئاللارغا جاۋاب بېرىدۇ ياكى مەزمۇن ھاسىل قىلىدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
+        <source>Please configure the large model</source>
+        <translation type="unfinished">چوڭ مودېلنى سەپلەڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation type="unfinished">شەخسىي بىلىم ياردەمچىسىنى چوڭ مودېلنى سەپلىگەندىن كېيىنلا ئىشلىتەلەيسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
+        <source>To configure</source>
+        <translation type="unfinished">سەپلەش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
+        <source>To install</source>
+        <translation type="unfinished">ئورنىتىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation type="unfinished">[EmbeddingPlugins] نى ئورنىتىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation type="unfinished">بۇ ياردەمچىنى ئىشلىتىش ئۈچۈن EmbeddingPlugins نى ئورنىتىش كېرەك</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
+        <source>Drag files here to add them.</source>
+        <translation type="unfinished">فايللارنى بۇ يەرگە سۆرەپ قوشۇڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation type="unfinished">سىز پەقەت 3 ھۆججەت قوشالايسىز، قوللايدىغان ھۆججەت تىپلىرى: txt، doc، docx، xls، xlsx، ppt، pptx، pdf، md، png، jpg، jpeg، كود ھۆججەتلىرى قاتارلىقلار.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
+        <source>You can only add a maximum of one file.</source>
+        <translation type="unfinished">ئەڭ كۆپ بىر فايل قوشالايسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
+        <source>The file format is not supported.</source>
+        <translation type="unfinished">فايل فورماتى قوللىمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
+        <source>Summarize the key content of the file.</source>
+        <translation type="unfinished">فايلنىڭ ئاساسلىق مەزمۇنىنى قىسقارتىپ چىقىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
+        <source>File Error</source>
+        <translation type="unfinished">فايل خاتالىقى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
+        <source>File has been deleted.</source>
+        <translation type="unfinished">فايل ئۆچۈرۈلگەن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation type="unfinished">فايل چوڭلۇقى 100MB چەكلىمىسىدىن ئاشتى.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
+        <source>Upload a document</source>
+        <translation type="unfinished">پۈتۈك يۈكلەڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
+        <source>File deleted</source>
+        <translation type="unfinished">فايل ئۆچۈرۈلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
+        <source>No text was parsed</source>
+        <translation type="unfinished">تېكىست تەھلىل قىلىنمىدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
+        <source>Reference</source>
+        <translation type="unfinished">پايدىلانما</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
+        <source>Instruction</source>
+        <translation type="unfinished">يېتەكچى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation type="unfinished">ئاكتىپلاشتۇرۇش ئۈچۈن كىرگۈزۈش رامكىسىدە &quot;/&quot; نى كىرگۈزۈڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation type="unfinished">كىرگۈزۈڭ؛ قۇر سىزىق ئالماشتۇرۇش ئۈچۈن &quot;Ctrl+Enter&quot; نى بېسىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation type="unfinished">سوئالىڭىزنى كىرگۈزۈڭ، ياكى بۇيرۇق تاللاش ئۈچۈن &quot;/&quot; نى كىرگۈزۈڭ
+يېڭى قۇر سىزىق باشلاش ئۈچۈن &quot;Ctrl+Enter&quot; نى بېسىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
+        <source>Search complete.</source>
+        <translation type="unfinished">ئىزدەش تاماملاندى.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
+        <source>Click to view results</source>
+        <translation type="unfinished">نەتىجىلەرنى كۆرۈش ئۈچۈن چېكىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
+        <source>edit</source>
+        <translation type="unfinished">تەھرىر</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <source>save</source>
+        <translation type="unfinished">ساقلا</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
+        <source>copy</source>
+        <translation type="unfinished">كۆچۈر</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <source>Thinking has stopped</source>
+        <translation type="unfinished">پىكىر تۇتۇلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
+        <source>Back to bottom</source>
+        <translation type="unfinished">ئاستىغا قايت</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation type="unfinished">چوڭقۇر پىكىر (%1 سېكۇنت)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
+        <source>New Conversation</source>
+        <translation type="unfinished">يېڭى پاراڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
+        <source>History</source>
+        <translation type="unfinished">تارىخ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
+        <source>No History Records</source>
+        <translation type="unfinished">تارىخ خاتىرىسى يوق</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation type="unfinished">سۆزلەشۈشنى چىقىرىۋېتىشكە جازا قىلامسىز؟ ئۇنى چىقىرىۋەتكەندىن كېيىن قايتا تىكلىيەلمەيسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation type="unfinished">بۇ سۆزلەشۈشتە ئىشلىتىلگەن %1 ۋەكىل چىقىرىۋېتىلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation type="unfinished">بۇ سۆزلەشۈشنى كۆرەلمەيسىز. كۆرۈش ئۈچۈن %1 ۋەكىلنى ئورنىتىپ قايتا سىناپ بېقىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation type="unfinished">ئەسلى سۆزلەشۈش مودېلى چىقىرىۋېتىلدى. سىز سۆزلەشۈشنى داۋاملاشتۇرۇش ئۈچۈن يېڭى مودېلغا ئالماشتۇردۇق.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <source>Recommendations</source>
+        <translation type="unfinished">تەۋسىيەلەر</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <source>No Model</source>
+        <translation type="unfinished">مودېل يوق</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation type="unfinished">ئىشلەتكىلى بولىدىغان مودېل يوق. تەڭشەكلەردە مودېل ئورنىتىڭ ياكى تەڭشەڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation type="unfinished">ئىجادىيىتىڭىز ئۈچۈن مەزمۇن تېمىسى ۋە تەلەپلىرىنى بايان قىلىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation type="unfinished">تەرجىمە قىلماقچى بولغان مەزمۇننى كىرگۈزۈڭ ۋە نىشان تىلىنى بەلگىلەڭ. سۈكۈتتىكى تەرجىمە خەنزۇچىغا بولىدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation type="unfinished">ئىشلەمەكچى بولغان تېكىستى كىرگۈزۈڭ ۋە تەلەپلىرىڭىزنى بەلگىلەڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <source>New Agent Added</source>
+        <translation type="unfinished">يېڭى ۋەكىل قوشۇلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation type="unfinished">يېڭى يېزىش، تېكىست ئىشلەش ۋە تەرجىمە ۋەكىللىرى قوشۇلدى. ھازىر تەكشۈرۈپ بېقىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <source>Try it</source>
+        <translation type="unfinished">سىناپ بېقىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <source>Write an article based on the following document:</source>
+        <translation type="unfinished">تۆۋەندىكى ھۆججەتكە ئاساسەن ماقالە يېزىڭ:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <source>Translate the following document into English:</source>
+        <translation type="unfinished">تۆۋەندىكى ھۆججەتنى ئىنگلىزچىغا تەرجىمە قىلىڭ:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <source>Add Mcp Server</source>
+        <translation type="unfinished">MCP مۇلازىمېتىرىنى قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <source>Add Server</source>
+        <translation type="unfinished">مۇلازىمېتىر قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <source>Add failed! Error reason:</source>
+        <translation type="unfinished">قوشۇش مەغلۇپ بولدى! خاتالىق سەۋەبى:</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation type="unfinished">MCP مۇھىتى يوق. 【UOS AI Agent】 نى ئورنىتىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <source>Calling</source>
+        <translation type="unfinished">چاقىرىۋاتىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <source>Completed</source>
+        <translation type="unfinished">تاماملاندى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <source>Call Failed</source>
+        <translation type="unfinished">چاقىرىش مەغلۇپ بولدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <source>Cancelled</source>
+        <translation type="unfinished">بىكار قىلىندى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <source>params</source>
+        <translation type="unfinished">پارامېتىرلار</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <source>result</source>
+        <translation type="unfinished">نەتىجە</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">MCP مۇلازىمېتىرى ئۈچۈن، رەسمىي سۇپۇرغان «DeepSeek-Trial Account» مودېلىغا ئالماشتۇرۇڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation type="unfinished">MCP مۇلازىمېتىرى بۇيرۇقىنى كىرگۈزۈڭ، مەسىلەن «مېنىڭ ئۈچۈن سىستېمىنى قارا ھالىتىگە ئۆزگەرتىڭ».</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
+        <source>Agent server is not available</source>
+        <translation type="unfinished">ئاگېنت مۇلازىمېتىرى ئىشلەمدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
+        <source>Agent server exception</source>
+        <translation type="unfinished">Agent مۇلازىمېتى ئىستىسنا ئالدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <source>MCP server is not available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation type="unfinished">MCP خىزمىتى ئارقىلىق بىر بۇيرۇق بىلەن كۆپ ھۆججەت ۋە كۆپ قوللىنىشچان پروگرامما ۋەزىپىلىرىنى ئاپتوماتلاشتۇرۇڭ. ھازىر سىناپ بېقىڭ!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <source>Use later</source>
+        <translation type="unfinished">كېيىن ئىشلىتىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <source>Enable MCP Server</source>
+        <translation type="unfinished">MCP مۇلازىمېتىنى قوزغىتىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation type="unfinished">MCP مۇھىتى &quot;UOS AI Agent&quot; نى قاچىلاغاندىن كېيىن، </translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation type="unfinished"> تېپىپ، MCP مۇلازىمېتى تىزىملىكىدىن &quot;uos-mcp&quot; نى تاللاڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation type="unfinished">سىناپ بېقىڭ: &quot;سىستېمىنى قاراڭغۇ ھالىتىگە ئۆزگەرت&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <source>Try it now</source>
+        <translation type="unfinished">ھازىر سىناپ بېقىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation type="unfinished">MCP مۇلازىمېتى قوشۇش[يېتەكلىگەن بەت]</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation type="unfinished">تۇنجى قېتىم ئىشلىتىدىغانلار: App Store ئارقىلىق MCP مۇھىتى &quot;UOS AI Agent&quot; نى قاچىلاڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation type="unfinished">JSON ھۆججەت فورماتى خاتا، تەكشۈرۈپ قايتا تەقدىم قىلىڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
+        <source>Install Now &gt;</source>
+        <translation type="unfinished">ھازىر قاچىلاش &gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <source>General Chat</source>
+        <translation type="unfinished">ئادەتتىكى سۆھبەت</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
+        <source>Now in Private Chat</source>
+        <translation type="unfinished">ھازىر شەخسىي سۆھبەتتە</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation type="unfinished">شەخسىي سۆھبەت ئۇچۇرلىرى تارىخقا ساقلانمايدۇ، سۆھبەتتىن چىققاندا مەڭگۈلۈك ئۆچۈرۈلىدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation type="unfinished">ئېكران كۆرۈنۈشى سوئال-جاۋاب تېزلەتمە (Ctrl+Alt+Q)، 3 پارچىگىچە رەسىم قوللايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
+        <source>Cannot be used during screen recording</source>
+        <translation type="unfinished">ئېكران سىنىغا ئېلىۋاتقاندا ئىشلىتەلمەيدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
+        <source>You can upload up to 3 files or image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation type="unfinished">ئادەمسىز ھۆججەتنى ئۆچۈرۈپ قايتا يوللاڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
+        <source>Add Private Chat</source>
+        <translation type="unfinished">شەخسىي سۆھبەت قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation type="unfinished">[ئېكران كۆرۈنۈشى سوئال-جاۋاب] قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation type="unfinished">ئېكران كۆرۈنۈشىنى تۇتۇپ UOS AI غا يوللاڭ. تۈركۈدىن رەسىم يوللىيالايسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
+        <source>Next</source>
+        <translation type="unfinished">كېيىنكى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation type="unfinished">[شەخسىي سۆھبەت ئۇسلۇبى] قوشۇش - سۆھبەتلەر ساقلانمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
+        <source>No text extracted</source>
+        <translation type="unfinished">ھېچقانداق تېكىست چىقىرىلمىدى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
+        <source>Image size exceeds 15 MB</source>
+        <translation type="unfinished">رەسىم چوڭلۇقى 15 MB دىن ئېشىپ كەتتى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation type="unfinished">ئىلمىي ئامبار ئېچىلغاندىن كېيىن، جاۋابلار ئۇنىڭ مەزمۇنىغا ئاساسەن بولىدۇ. جاۋاب تېزلىكى ماشىنا ئىقتىدارى ۋە ئىلمىي ئامبار چوڭلۇقىغا باغلىق.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation type="unfinished">قائىلە ياكى MCP تاللانغاندا ئىلمىي ئامبار ئىشلەتكىلى بولمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation type="unfinished">ئىلمىي ئامبار ئاكتىپ بولغاندا MCP چەكلەنگەن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation type="unfinished">ئىلمىي ئامبار ئاكتىپ بولغاندا قوللىنىشچان بۇيرۇقلار چەكلەنگەن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
+        <source>Copy succeeded.</source>
+        <translation type="unfinished">كۆچۈرۈش ئۈنۈملۈك بولدى.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
+        <source>Copy failed. Please try again.</source>
+        <translation type="unfinished">كۆچۈرۈش مەغلۇپ بولدى، قايتا سىناپ بېقىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
+        <source>Searching</source>
+        <translation type="unfinished">ئىزدەۋاتىدۇ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation type="unfinished">%1 دانە ئەسلىكى ھۆججەت ئېرىشىلدى (%2s)</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
+        <source>Clear History</source>
+        <translation type="unfinished">تارىخنى تازىلاش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
+        <source>Delete all records?</source>
+        <translation type="unfinished">بارلىق خاتىرىلەرنى ئۆچۈرەمسىز؟</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation type="unfinished">ئۆچۈرۈلگەندىن كېيىن مەزمۇن قايتۇرغىلى بولمايدۇ!</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
+        <source>Recommend official models</source>
+        <translation type="unfinished">رەسمىي مودېللارنى تەۋسىيە قىلىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
+        <source>Disable MCP</source>
+        <translation type="unfinished">MCP نى چەكلەش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation type="unfinished">&quot;DeepSeek-Trial Account&quot; رەسمىي مودېلىنى ئىشلىتىشنى تەۋسىيە قىلىمىز</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
+        <source>Quick Open</source>
+        <translation type="unfinished">تېز ئېچىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation type="unfinished">MCP مۇلازىمېتىر ئاپتوماتىك ئۇسلۇبغا يۇقىرىلاندى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation type="unfinished">MCP مۇلازىمېتىر ئاپتوماتىك ئۇسلۇبغا يۇقىرىلاندى، ھەر قانداق MCP مۇلازىمېتىرغا بىر كۇنۇپكا بېسىپ لايىھەلەپ كىرەلەيسىز</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation type="unfinished">. بۇ سىستېما سەپلەش ۋە ھۆججەت بىر تەرەپ قىلىش قاتارلىق ۋەزىپىلەرنى بىر كۇنۇپكا بىلەن ئاپتوماتىك قىلىشىڭىزغا ياردەم قىلىدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation type="unfinished">MCP مۇلازىمېتىر قوشۇش تەڭشەكلەرگە يۆتكەلدى.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation type="unfinished">تېخىمۇ كۆپ MCP مۇلازىمېتىر قوشۇش ئۈچۈن تەڭشەكلەر &gt; MCP مۇلازىمېتىرغا بېقىڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
+        <source>Got it</source>
+        <translation type="unfinished">چۈشەندىم</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
+        <source>Complimentary Model Credits</source>
+        <translation type="unfinished">ھەدىيە مودېل نەق پۇلى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation type="unfinished">ھازىرقى سىستېما DeepSeek سىناق ھېسابات مودېلىنى تەمىنلەيدۇ، ھەر ئاينىڭ باشلىنىشىدا ھەقسىز چېكىنىش مىقدارى ئاپتوماتىك ئەسلىگە كېلىدۇ، سىز ئۇنى قايغۇسىز ئىشلىتەلەيسىز.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
+        <source>Claim Credits</source>
+        <translation type="unfinished">نەق پۇل تەلەپ قىلىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
+        <source>Get a free account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
+        <source>Claim Free Credits</source>
+        <translation type="unfinished">ھەقسىز نەق پۇل تەلەپ قىلىش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
+        <source>Successfully Claimed</source>
+        <translation type="unfinished">مۇۋەپپەقىيەتلىك تەلەپ قىلىندى</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation type="unfinished">تەلەپ قىلىش مەغلۇپ بولدى. قايتا سىناڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
+        <source>Enable MCP Server&amp;</source>
+        <translation type="unfinished">MCP سېرۋېرنى قوزغات&amp;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
+        <source>Disable MCP Server</source>
+        <translation type="unfinished">MCP سېرۋېرنى ئۆچۈر</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
+        <source>Configure MCP Server</source>
+        <translation type="unfinished">MCP سېرۋېرنى سەپلە</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation type="unfinished">UOS AI FollowAlong/Write</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemControlInst</name>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="23"/>
         <source>System Control</source>
-        <translation>سىستېما كونترولى</translation>
+        <translation type="vanished">سىستېما كونترولى</translation>
     </message>
     <message>
-        <location filename="../src/gui/Instruction/instructions.cpp" line="25"/>
         <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation>يېڭى تام رەسىمىگە ئالماشتۇرۇش. ئېكران يورۇقلۇقىنى 30% غا تەڭشەش...</translation>
+        <translation type="vanished">يېڭى تام رەسىمىگە ئالماشتۇرۇش. ئېكران يورۇقلۇقىنى 30% غا تەڭشەش...</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::TtsCompositeWidget</name>
+    <message>
+        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
+        <source>The text you have selected has exceeded the 5000 character limit.</source>
+        <translation type="unfinished">تاللىغان تېكىستىڭىز 5000 خەت چېكىدىن ئاشتى.</translation>
     </message>
 </context>
 <context>
@@ -6249,6 +8798,101 @@ json
         <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>تور باغلانغان، تېكىستنى ئاۋازغا ئايلاندۇرۇش توختىتىلدى</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSAbilityManager</name>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
+        <source>Brightness is already at maximum and cannot be increased further.</source>
+        <translation type="unfinished">يورۇقلۇق ئاللىبۇرۇن ئەڭ يۇقىرى دەرىجىدە، تېخىمۇ ئاشۇرالمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
+        <source>Brightness is already at minimum and cannot be decreased further.</source>
+        <translation type="unfinished">يورۇقلۇق ئاللىبۇرۇن ئەڭ تۆۋەن دەرىجىدە، تېخىمۇ تۆۋەنلىتەلمەيدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
+        <source>AI Meeting Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
+        <source>Your system memory is %0.</source>
+        <translation type="unfinished">سىستېما ئەسلەك %0.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
+        <source>The language setting interface has been opened. Please set it in this interface.</source>
+        <translation type="unfinished">تىل تەڭشەك ئېچىلدى. بۇ ئېچىلغان تەڭشەكتە تەڭشەڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
+        <source>The current mode is already %1 mode.</source>
+        <translation type="unfinished">نۆۋەتتىكى ھالەت ئاللىبۇرۇن %1 ھالەت.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
+        <source>Unable to close because the current mode %1 does not match the target mode.</source>
+        <translation type="unfinished">نۆۋەتتىكى ھالەت %1 نىشان ھالەتكە ماس كەلمىگەچكە، يېپىشقا بولمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
+        <source>Balance mode cannot be turned off.</source>
+        <translation type="unfinished">تەڭپۇڭ ھالەت ئۆچۈرۈلمەيدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
+        <source>The lock screen has been opened for you</source>
+        <translation type="unfinished">ئېكران قۇلۇپى ئېچىلدى</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
+        <source>Screen shotting or recording has been completed</source>
+        <translation type="unfinished">ئېكران رەسىمى ياكى يازما تاماملاندى</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
+        <source>Only one screen, can&apos;t switch screen mode.</source>
+        <translation type="unfinished">پەقەت بىر ئېكران بار، ئېكران ھالىتىنى ئالماشتۇرالمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
+        <source>It is the same as the current display mode. Please try again.</source>
+        <translation type="unfinished">نۆۋەتتىكى كۆرسىتىش ھالىتى بىلەن ئوخشاش، قايتا سىناڭ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
+        <source>Only one screen, can&apos;t switch screen.</source>
+        <translation type="unfinished">پەقەت بىر ئېكران بار، ئېكراننى ئالماشتۇرالمايدۇ.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
+        <source>Your command has been issued.</source>
+        <translation type="unfinished">بۇيرۇقىڭىز يوللاندى.</translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
+        <source>Failed to rename file %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
+        <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
+Error details:
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
+        <source>Email client has been opened, please confirm to send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
+        <source>App store has been opened, preparing to install application: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6273,80 +8917,193 @@ json
     </message>
 </context>
 <context>
+    <name>uos_ai::UserAgreementDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
+        <source>UOS AI User Agreement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">مەن 18 ياشتىن ئاشقانلىقىمنى جەزملەيمەن. قوللىنىش پروگراممىسى ئارقىلىق ئەۋەتىدىغان ۋە تاپشۇرىدىغان مەزمۇنلارنىڭ چوڭ مودېل مۇلازىمەت تەمىنلىگۈچى بىلەن بىۋاسىتە سانلىق مەلۇمات ئالماشتۇرۇشى ئىكەنلىكىنى تونۇيمەن ۋە قوشۇلىمەن، شىركەت بىلەن ھېچقانداق مۇناسىۋىتى يوق.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::WelcomeDialog</name>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
+        <source>Welcome to UOS AI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
+        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
+        <translation type="unfinished">UOS AI سىزنىڭ ئەقىللىق ياردەمچىڭىز بولۇپ، ئىشچانلىقىڭىزنى ئۆستۈرۈش ۋە يۇقىرى سەۋىيىلىك خىزمەت تەجرىبىسىدىن بەھرىمان بولۇش ئۈچۈن لايىھەلەنگەن.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
+        <source>Get a free account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
+        <source>Add Model</source>
+        <translation type="unfinished">مودېل قوشۇش</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
+        <source>Start using</source>
+        <translation type="unfinished">ئىشلىتىشنى باشلاڭ</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
+        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
+        <translation type="unfinished">مەن 18 ياشتىن ئاشقانلىقىمنى جەزىملەيمەن. مەن &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI ئىشلەتكۈچى كېلىشىمى&quot;&lt;/a&gt; نى تونۇيمەن ۋە قوشۇلىمەن، ئەپ ئارقىلىق ئەۋەتىدىغان ۋە تاپشۇرالايدىغان مەزمۇنلار چوڭ مودېل مۇلازىمەت بىلەن تۇرۇشلۇق بىۋاسىتە سانلىق مەلۇمات ئالماشتۇرۇش بولۇپ، شىركەت بىلەن ھېچقانداق مۇناسىۋىتى يوق.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
+        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
+        <source>UOS AI Trial Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
+        <source>Save failed, please try again later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
+        <source>Trial account received successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
+        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
+        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
+        <source>Start trial</source>
+        <comment>button</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
+        <source>The free account activity ends.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
+        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="113"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
         <translation>بۇ قوللىنىشچىنى قايتا قوزغىتىپ كېتىشكىچە يوشۇرۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="134"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
         <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>قايتا قوزغىتىش ئۈچۈن &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;تەڭشەكلەر&lt;/a&gt; غا كىرىڭ.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="784"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
         <translation>قوشۇلغان مەزمۇن 10 سۆزدىن كۆپ بولۇشى كېرەك</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="833"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>ئىزدەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="837"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>چۈشەندۈرۈش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="841"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>ئۈزۈندە</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="845"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>تەرجىمە قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="849"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
         <translation>يازىنى داۋام قىلىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="853"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>كېڭەيتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="857"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
         <translation>تۈزىتىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="865"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
         <source>Add to the AI knowledge base</source>
         <translation>AI بىلىم ئامبىرىغا قوشۇش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="114"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>بۇ پروگراممىدا چەكلەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="115"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>ئومۇمىي چەكلەش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="125"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>ئىختىيارىي تەڭشەك</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="861"/>
+        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
         <source>Polish</source>
         <translation>يېپىياشلاشتۇرۇش</translation>
     </message>
@@ -6354,12 +9111,11 @@ json
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="654"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI ئەگەشىش</translation>
+        <translation type="vanished">UOS AI ئەگەشىش</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="671"/>
+        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>قوشۇلدى</translation>
     </message>

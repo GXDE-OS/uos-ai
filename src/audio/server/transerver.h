@@ -2,9 +2,8 @@
 #define TranServer_H
 
 #include <QObject>
-#include "uosai_global.h"
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class TranServer : public QObject
 {
@@ -46,6 +45,6 @@ private:
     int m_model = 0;
 };
 
-UOSAI_END_NAMESPACE
+}
 
 #endif // TranServer_H

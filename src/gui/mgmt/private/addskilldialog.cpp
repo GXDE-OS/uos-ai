@@ -6,7 +6,6 @@
 #include "themedlable.h"
 #include "wordwizard/wordwizard.h"
 #include "utils/dconfigmanager.h"
-#include "private/echatwndmanager.h"
 #include "tooltipwidget.h"
 
 #include <DPaletteHelper>
@@ -43,7 +42,6 @@ Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 AddSkillDialog::AddSkillDialog(DWidget *parent)
     : DAbstractDialog(parent)
 {
-    EWndManager()->registeWindow(this);
     initUI();
     initConnect();
     setModal(true);

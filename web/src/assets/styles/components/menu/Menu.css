@@ -1,0 +1,71 @@
+html {
+    --menu-bg-color: rgba(238, 238, 238, 1);
+    --menu-bg-blur-color: rgba(238, 238, 238, 0.8);
+    --menu-text-color: rgba(0, 0, 0, 0.7);
+    --menu-box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+html.dark {
+    --menu-bg-color: rgba(24, 24, 24, 1);
+    --menu-bg-blur-color: rgba(24, 24, 24, 0.8);
+    --menu-text-color: rgba(255, 255, 255, 0.7);
+    --menu-box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.8), 0 0 0 0.5px rgba(0, 0, 0, 0.8), 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    min-width: 160px;
+    max-width: 320px;
+    -webkit-app-region: no-drag;
+    background-color: var(--menu-bg-color);
+    border-radius: var(--radius-large);
+    box-shadow: var(--menu-box-shadow);
+    color: var(--menu-text-color);
+    padding: 6px;
+}
+
+/* 动画仅作用于顶层菜单（SubMenu 内嵌的 .menu 不带 menu--root，不受影响） */
+.menu--root {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0s linear 0.2s;
+}
+
+/* 菜单在触发元素下方：从上方滑入（向下） */
+.menu--root.menu--from-top {
+    transform: translateY(-6px);
+}
+
+/* 菜单在触发元素上方：从下方滑入（向上） */
+.menu--root.menu--from-bottom {
+    transform: translateY(6px);
+}
+
+/* 激活状态：淡入 + 滑入到位 */
+.menu--root.menu--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition:
+        opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0s linear 0s;
+}
+
+.menu--advanced-css {
+    background-color: var(--menu-bg-blur-color);
+    backdrop-filter: blur(45px);
+}
+
+.menu__content {
+    display: flex;
+    flex-direction: column;
+}

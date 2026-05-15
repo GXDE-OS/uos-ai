@@ -1,0 +1,314 @@
+html {
+    --wa-text: rgba(0, 0, 0, 0.7);
+    --wa-text-hover: rgba(0, 0, 0, 0.9);
+    --wa-doccard-title-color: rgba(0, 0, 0, 0.7);
+    --wa-doccard-status-color: rgba(0, 0, 0, 0.5);
+    --wa-doccard-bg: rgba(255, 255, 255, 0.8);
+    --wa-doccard-bg-hover: rgba(255, 255, 255, 0.9);
+    --wa-doccard-bg-active: rgba(255, 255, 255, 1);
+    --wa-doccard-border-shadow: rgba(0, 0, 0, 0.05);
+}
+
+html.dark {
+    --wa-text: rgba(255, 255, 255, 0.7);
+    --wa-text-hover: rgba(255, 255, 255, 0.9);
+    --wa-doccard-title-color: rgba(255, 255, 255, 0.7);
+    --wa-doccard-status-color: rgba(255, 255, 255, 0.5);
+    --wa-doccard-bg: rgba(255, 255, 255, 0.05);
+    --wa-doccard-bg-hover: rgba(255, 255, 255, 0.1);
+    --wa-doccard-bg-active: rgba(255, 255, 255, 0.2);
+    --wa-doccard-border-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* WritingAssistant 写作助手欢迎页组件样式 */
+
+.writing-assistant {
+    width: 100%;
+}
+
+/* ===== 最近创作模块 ===== */
+.writing-assistant__recent {
+    width: 100%;
+}
+
+.writing-assistant__recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 0 0 11px;
+}
+
+.writing-assistant__recent-title {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 500;
+    color: var(--wa-text);
+    opacity: 0.7;
+}
+
+.writing-assistant__recent-more {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 500;
+    color: var(--wa-text);
+    opacity: 0.5;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.writing-assistant__recent-more:hover {
+    color: var(--wa-text-hover);
+}
+
+/* 箭头图标：默认 0 度，展开后旋转 180 度 */
+.writing-assistant__arrow-icon {
+    flex-shrink: 0;
+    transform: rotate(0deg);
+    transition: transform 0.25s ease;
+}
+
+.writing-assistant__arrow-icon.is-expanded {
+    transform: rotate(180deg);
+}
+
+/* 滚动能力由 ScrollBar 组件提供，高度由 JS 动态计算控制 */
+.writing-assistant__recent-scroll {
+    transition: height 0.3s ease;
+}
+
+.writing-assistant__recent-scroll > .scroll-bar--vertical {
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* 使用 flex 布局实现动态宽度排列，卡片宽度由 JS 动态计算 */
+.writing-assistant__recent-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* 单个文档卡片：宽度由 JS 动态计算，margin 由 JS 根据位置动态设置 */
+.writing-assistant__doc-card {
+    /* 移除固定宽度，由 JS 动态设置 */
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px 10px 10px;
+    background-color: var(--wa-doccard-bg);
+    border-radius: 6px;
+    box-shadow: 0 1px 0 0 var(--wa-doccard-border-shadow);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.writing-assistant__doc-card:hover {
+    border-color: var(--color-border-hover);
+    background-color: var(--wa-doccard-bg-hover);
+}
+
+/* 文档 SVG 图标容器：margin-right 替代父容器 gap: 6px */
+.writing-assistant__doc-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.writing-assistant__doc-icon .svg-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* 文档信息区（标题 + 时间） */
+.writing-assistant__doc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0; /* 让文字截断生效 */
+    flex: 1;
+}
+
+.writing-assistant__doc-icon-img {
+    width: 100%;
+    height: 100%;
+}
+
+.writing-assistant__doc-name {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    color: var(--wa-text);
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1px; /* 替代父容器 gap: 1px */
+}
+
+.writing-assistant__doc-time {
+    font-size: var(--uosai-font-size-3xs);
+    font-weight: 400;
+    color: var(--wa-text);
+    opacity: 0.5;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ===== 写作模板模块 ===== */
+.writing-assistant__templates {
+    width: 100%;
+    margin-top: 16px;
+}
+
+/* 分类 Tab 行 */
+.writing-assistant__templates-tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 0 0 15px;
+}
+
+/* 单个 Tab */
+.writing-assistant__templates-tab {
+    height: 30px;
+    padding: 5px 8px 7px 8px;
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    line-height: var(--uosai-line-height-tight);;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.writing-assistant__templates-tab:hover {
+    opacity: 0.8;
+}
+
+.writing-assistant__templates-tab.is-active {
+    opacity: 1;
+    box-shadow: 0 -1px 0 0 inset rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--system-active-color)
+}
+
+/* 使用 flex 布局实现动态宽度排列，卡片宽度由 JS 动态计算 */
+.writing-assistant__templates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    /* 不设置高度限制，可根据实际需要的行数调整 */
+    overflow-y: auto;
+    /* 美化滚动条 */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* WebKit 滚动条样式 */
+.writing-assistant__templates-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.writing-assistant__templates-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.writing-assistant__templates-grid::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.writing-assistant__templates-grid::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 模板卡片：宽度由 JS 动态计算，margin 由 JS 根据位置动态设置 */
+.writing-assistant__template-card {
+    /* 移除固定宽度，由 JS 动态设置 */
+    height: 78px;
+    padding: 12px 16px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+}
+
+.writing-assistant__template-card:hover {
+    border-color: var(--color-border-hover);
+    background-color: var(--color-background-mute);
+}
+
+/* 第一行：图标 + 名称；margin-bottom 替代父容器 gap: 3px */
+.template--header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 3px;
+}
+
+/* 图标占位符：margin-right 替代父容器 gap: 6px */
+.template--icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-right: 6px;
+}
+
+/* 模板名称 */
+.template--name {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 1);
+    line-height: var(--uosai-line-height-extra-tight);;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 模板描述：最多2行 */
+.template--desc {
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: var(--uosai-line-height-extra-tight);;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,19 @@
+/* 可展开容器 */
+.expandable-content {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        height 0.3s ease,
+        opacity 0.2s ease;
+    user-select: none;
+}
+
+.expandable-content--expanded {
+    opacity: 1;
+}
+
+/* 拖拽重排期间隐藏区高度由 JS 直接同步，不再播放展开/收起动画。 */
+.expandable-content--transition-disabled {
+    transition: none !important;
+}

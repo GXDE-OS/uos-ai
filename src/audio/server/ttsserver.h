@@ -3,8 +3,8 @@
 
 #include <QObject>
 
-const int chunkSize = 1000;
 
+namespace uos_ai {
 class TtsServer : public QObject
 {
     Q_OBJECT
@@ -48,7 +48,7 @@ signals:
     void audioNullFinished(const QString &id);
 
 public:
-
+    static const int chunkSize;
     /**
      * @brief cancel
      */
@@ -69,5 +69,5 @@ protected:
     QString m_id;
     int m_model = 0;
 };
-
+} // namespace uos_ai
 #endif // TTSSERVER_H

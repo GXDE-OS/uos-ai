@@ -16,7 +16,7 @@ Q_DECLARE_LOGGING_CATEGORY(logWordWizard)
 
 #define MAX_OPENDISPLAY_COUNT 10
 
-UOSAI_BEGIN_NAMESPACE
+namespace uos_ai {
 
 class xEventMonitorPrivate
 {
@@ -43,9 +43,9 @@ public:
     QString getWindowName(Window window);
 };
 
-UOSAI_END_NAMESPACE
+}
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 xEventMonitor::xEventMonitor(QObject *parent) : BaseMonitor(parent)
 {

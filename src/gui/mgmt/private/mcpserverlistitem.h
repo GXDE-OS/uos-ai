@@ -1,8 +1,6 @@
 #ifndef MCPSERVERLISTITEM_H
 #define MCPSERVERLISTITEM_H
 
-#include "uosai_global.h"
-
 #include <DWidget>
 #include <DLabel>
 #include <DSwitchButton>
@@ -10,17 +8,15 @@
 
 #include <QProcess>
 
-DWIDGET_USE_NAMESPACE
-
 namespace uos_ai {
     
 class McpServerListItemTooltip;
-class McpServerListItem: public DWidget
+class McpServerListItem: public DTK_WIDGET_NAMESPACE::DWidget
 {
     Q_OBJECT
 
 public:
-    explicit McpServerListItem(DWidget *parent = nullptr);
+    explicit McpServerListItem(DTK_WIDGET_NAMESPACE::DWidget *parent = nullptr);
     ~McpServerListItem();
 
     void setText(const QString &name, const QString &description);
@@ -56,12 +52,12 @@ private:
     bool getThirdPartyMcpAgreement();
 
 private:
-    DLabel *m_pNameLabel = nullptr;
-    DLabel *m_pDescLabel = nullptr;
-    DLabel *m_pBuiltInLabel = nullptr;
-    DIconButton *m_pBtnEdit = nullptr;
-    DIconButton *m_pBtnDelete = nullptr;
-    DSwitchButton *m_pBtnSwitch = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pNameLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pDescLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DLabel *m_pBuiltInLabel = nullptr;
+    DTK_WIDGET_NAMESPACE::DIconButton *m_pBtnEdit = nullptr;
+    DTK_WIDGET_NAMESPACE::DIconButton *m_pBtnDelete = nullptr;
+    DTK_WIDGET_NAMESPACE::DSwitchButton *m_pBtnSwitch = nullptr;
     QWidget *m_pEditPlaceholder = nullptr;
     QWidget *m_pDeletePlaceholder = nullptr;
     McpServerListItemTooltip *m_pCustomToolTip = nullptr;

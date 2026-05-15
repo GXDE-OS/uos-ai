@@ -15,7 +15,11 @@ class ZgfyLLM : public QObject, public LLMModel
     Q_OBJECT
 public:
     static inline QString modelID() {
-        return QString("万法大模型");
+        return QString("flfg-llm");
+    }
+
+    static inline QString qaModelID() {
+        return QString("qa-wanfallm");
     }
 
     static inline QString roleQa() {
@@ -26,7 +30,7 @@ public:
         return QString("Regulatory inquiry");
     }
 public:
-    explicit ZgfyLLM();
+    explicit ZgfyLLM(const QString &id);
     QString model() const override;
 
     QJsonObject generate(const QString &content, const QVariantHash &params, streamFuncion stream = nullptr, void *user = nullptr) override;
@@ -35,6 +39,8 @@ public:
 
 signals:
     void sigAbort();
+private:
+    QString modelId;
 };
 
 }}

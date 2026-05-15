@@ -1,0 +1,36 @@
+html {
+    --uos-tooltip-color: rgba(0, 0, 0, 1);
+    --uos-tooltip-font-weight: 400;
+    --uos-tooltip-bg: rgba(247, 247, 247, 1);
+    --uos-tooltip-advanced-bg: rgba(247, 247, 247, 0.6);
+    --uos-tooltip-box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.3), 0 0 0 0.5px rgba(255, 255, 255, 0.3),
+        0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+html.dark {
+    --uos-tooltip-color: rgba(255, 255, 255, 0.7);
+    --uos-tooltip-font-weight: 500;
+    --uos-tooltip-bg: rgba(20, 20, 20, 1);
+    --uos-tooltip-advanced-bg: rgba(20, 20, 20, 0.6);
+    --uos-tooltip-box-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.7), 0 0 0 0.5px rgba(0, 0, 0, 0.7), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.uos-tooltip {
+    border-radius: 8px !important;
+    box-shadow: var(--uos-tooltip-box-shadow) !important;
+    background: var(--uos-tooltip-bg) !important;
+    padding: 3px 5px 4px 5px !important;
+    color: var(--uos-tooltip-color) !important;
+    font-size: var(--uosai-font-size-xs) !important;
+    font-weight: var(--uos-tooltip-font-weight) !important;
+    line-height: var(--uosai-line-height-extra-tight) !important;
+    min-width: 0px !important;
+}
+
+.uos-tooltip--advanced {
+    background-color: var(--uos-tooltip-advanced-bg) !important;
+    backdrop-filter: blur(30px) !important;
+}

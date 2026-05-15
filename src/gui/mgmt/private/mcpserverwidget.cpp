@@ -14,17 +14,17 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLoggingCategory>
+#include <QDir>
 
 using namespace uos_ai;
+DWIDGET_USE_NAMESPACE
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
-static const QString MCP_APP("uos-ai-agent");
 static constexpr int TIMER_BEGIN = 720; // 5秒轮询状态60分钟
 
 McpServerWidget::McpServerWidget(DWidget *parent)
     : DWidget(parent)
-    ,m_pProcess(new QProcess(this))
 {
     initUI();
     onThemeTypeChanged();
@@ -33,13 +33,16 @@ McpServerWidget::McpServerWidget(DWidget *parent)
     m_timer = new QTimer(this);
     m_timer->setInterval(5000);
     connect(m_timer, &QTimer::timeout, this, &McpServerWidget::checkStatusOntime);
+    connect(&LocalModelServer::getInstance(), &LocalModelServer::beginCheck, this, [this](const QString &app, int count) {
+        if (app != UOSAIAGENTNAME)
+            return;
+
+        beginTimer();
+    });
 }
 
 McpServerWidget::~McpServerWidget()
 {
-    if (m_pProcess)
-        m_pProcess->terminate();
-
     m_timer->stop();
 }
 
@@ -70,7 +73,7 @@ void McpServerWidget::changeInstallStatus()
 {
     if (m_pServerItem)
         m_pServerItem->changeInstallStatus(m_isInstalled);
-
+#if 0
     if (m_isInstalled) {
         if (!m_pServersListWidget) {
             m_pServersListWidget = new McpServerListWidget(this);
@@ -84,6 +87,7 @@ void McpServerWidget::changeInstallStatus()
         if (m_pServersListWidget)
             m_pServersListWidget->setVisible(false);
     }
+#endif
 }
 
 QString McpServerWidget::getTitleName()
@@ -95,35 +99,19 @@ void McpServerWidget::updateStatus()
 {
     qCDebug(logAIGUI) << "Updating MCP server status";
 
-    if (!m_pProcess->atEnd()) {
-        return;
-    }
-
-    if (m_pProcess->state() == QProcess::Running) {
-        m_pProcess->waitForFinished();
-    }
-
-    m_pProcess->start("dpkg-query", QStringList() << "-W" << QString("-f='${db:Status-Status}\n'") << MCP_APP);
-    m_pProcess->waitForFinished();
-    QByteArray reply = m_pProcess->readAllStandardOutput();
-    bool newInstallStatus = (reply == "'installed\n'");
+    QDir dir("/var/lib/dpkg/info");
+    bool newInstallStatus = !dir.entryList(QStringList() << QString("%1*.list").arg(UOSAIAGENTNAME)).isEmpty();
 
     if (m_isInstalled != newInstallStatus) {
-        qCInfo(logAIGUI) << "MCP server install status changed. AppName:" << MCP_APP << ", Installed:" << newInstallStatus;
+        qCInfo(logAIGUI) << "MCP server install status changed. AppName:" << UOSAIAGENTNAME << ", Installed:" << newInstallStatus;
         m_isInstalled = newInstallStatus;
-        LocalModelServer::getInstance().localModelStatusChanged(MCP_APP, m_isInstalled);
+        emit LocalModelServer::getInstance().pluginStatusChanged(UOSAIAGENTNAME, m_isInstalled);
         changeInstallStatus();
-        emit sigAgentInstallChanged(m_isInstalled);
         return;
     }
 
     if (m_pServerItem)
         m_pServerItem->checkUpdateStatus(m_isInstalled);
-}
-
-bool McpServerWidget::getIsInstalled()
-{
-    return m_isInstalled;
 }
 
 void McpServerWidget::beginTimer()
@@ -171,7 +159,7 @@ DBackgroundGroup *McpServerWidget::serverWidget()
     m_pServerItem = new McpServerItem(this);
     m_pServerItem->setText(tr("Install UOS AI Agent"), 
                            tr("After installation, MCP Server will be available."));
-    m_pServerItem->setAppName(MCP_APP);
+    m_pServerItem->setAppName(UOSAIAGENTNAME);
     m_pServerItem->setMinimumHeight(60);
     m_pServerItem->setMaximumHeight(75);
 

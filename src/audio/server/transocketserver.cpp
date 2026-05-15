@@ -1,5 +1,5 @@
 #include "transocketserver.h"
-#include "networkdefs.h"
+#include "global_key_define.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -11,8 +11,9 @@
 #include <QByteArray>
 #include <QCryptographicHash>
 #include <QLoggingCategory>
+#include <QNetworkReply>
 
-UOSAI_USE_NAMESPACE
+using namespace uos_ai;
 
 QString getCurrentRFC1123Timestamp()
 {
@@ -42,11 +43,10 @@ QString getCurrentRFC1123Timestamp()
 
 Q_DECLARE_LOGGING_CATEGORY(logAudio)
 
-TranSocketServer::TranSocketServer(const AccountProxy &account, QObject *parent)
+TranSocketServer::TranSocketServer(const ProviderAccount &account, QObject *parent)
     : TranServer(parent)
     , m_account(account)
 {
-    m_account.socketProxy.socketProxyType = SocketProxyType::NO_PROXY;
     m_manager = new QNetworkAccessManager(this);
 }
 
@@ -66,7 +66,7 @@ void TranSocketServer::sendText(const QString &text)
     QByteArray base64Encoded = textData.toBase64();
     // 将QByteArray转换回QString，注意编码
     content = QString(base64Encoded);
-    postdata["common"] = QJsonObject{{"app_id", m_account.appId}};
+    postdata["common"] = QJsonObject{{"app_id", m_account.auth.value(STR_KEY_APP_ID).toString()}};
     postdata["business"] = QJsonObject{{"from", "cn"}, {"to", "en"}};
     postdata["data"] = QJsonObject{{"text", content}};
     QJsonDocument jsonDoc(postdata);
@@ -101,11 +101,11 @@ void TranSocketServer::sendText(const QString &text)
     signatureOrigin += method + " " + path + " HTTP/1.1" + "\n";;
     signatureOrigin += "digest: " + digest;
 
-    QByteArray signature = QMessageAuthenticationCode::hash(signatureOrigin.toUtf8(), m_account.apiSecret.toUtf8(), QCryptographicHash::Sha256).toBase64();
+    QByteArray signature = QMessageAuthenticationCode::hash(signatureOrigin.toUtf8(), m_account.auth.value(STR_KEY_API_SECRET).toString().toUtf8(), QCryptographicHash::Sha256).toBase64();
 
 
     QString authorizationOrigin = QString("api_key=\"%1\", algorithm=\"hmac-sha256\", headers=\"host date request-line digest\", signature=\"%2\"")
-                                  .arg(m_account.apiKey)
+                                  .arg(m_account.auth.value(STR_KEY_API_KEY).toString())
                                   .arg(QString(signature));
 
     request.setRawHeader("Authorization",authorizationOrigin.toUtf8());

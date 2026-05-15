@@ -1,0 +1,96 @@
+/* 物理弹性动效开关 */
+html {
+    --switch-control-color-bg: rgba(96, 96, 96, 0.2);
+    --switch-control-bg-box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.2);
+    --switch-control-checked-bg-box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.15);
+    --switch-control-thumb-bg: linear-gradient(180deg, rgba(124, 124, 124, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    --switch-control-thumb-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 -1px 0 0 inset rgba(0, 0, 0, 0.2);
+    --switch-control-checked-thumb-bg: rgba(255, 255, 255, 1);
+    --switch-control-checked-thumb-box-shadow:
+        0 6px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 1px 1px rgba(0, 0, 0, 0.2),
+        0 -1px 0 0 inset var(--system-active-color-alpha-20);
+}
+html.dark {
+    --switch-control-color-bg: rgba(96, 96, 96, 0.1);
+    --switch-control-bg-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    --switch-control-checked-bg-box-shadow: 0 -1px 0 0 inset rgba(0, 0, 0, 0.2), 0 1px 0 0 inset rgba(0, 154, 255, 0.4);
+    --switch-control-thumb-bg: linear-gradient(180deg, rgba(83, 83, 83, 1) 0%, rgba(46, 46, 46, 1) 100%);
+    --switch-control-thumb-box-shadow:
+        0 0 0 0.5px rgba(0, 0, 0, 0.6), 0 0 0 0.5px rgba(0, 0, 0, 0.6), 0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 4px 6px 0 rgba(31, 31, 31, 0.4),
+        0 1px 0 0 inset rgba(255, 255, 255, 0.2);
+    --switch-control-checked-thumb-bg: var(--switch-control-thumb-bg);
+    --switch-control-checked-thumb-box-shadow: var(--switch-control-thumb-box-shadow);
+}
+
+.switch-control {
+    --thumb-width: 18px;
+    --thumb-width-checked: 19px;
+
+    appearance: none;
+    position: relative;
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 20px;
+    border-radius: var(--radius-normal);
+    background-color: var(--switch-control-color-bg);
+    box-shadow: var(--switch-control-bg-box-shadow);
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.switch-control__thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: var(--thumb-width);
+    height: 16px;
+    border-radius: var(--radius-small);
+    background: var(--switch-control-thumb-bg);
+    box-shadow: var(--switch-control-thumb-box-shadow);
+    transition:
+        transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+        width 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    z-index: 2;
+}
+
+/* 开启态 */
+.switch-control--checked {
+    background-color: var(--system-active-color);
+    box-shadow: var(--switch-control-checked-bg-box-shadow);
+}
+
+.switch-control--checked .switch-control__thumb {
+    transform: translateX(13px);
+    width: var(--thumb-width-checked);
+    background: var(--switch-control-checked-thumb-bg);
+    box-shadow: var(--switch-control-checked-thumb-box-shadow);
+}
+
+/* 按压时的挤压感 */
+.switch-control:active .switch-control__thumb {
+    width: calc(var(--thumb-width) * 1.2);
+}
+
+.switch-control--checked:active .switch-control__thumb {
+    width: calc(var(--thumb-width-checked) * 1.15);
+}
+
+/* 禁用态 */
+.switch-control--disabled {
+    cursor: default;
+    opacity: var(--bg-opacity-disabled);
+    pointer-events: none;
+    user-select: none;
+}
+
+.switch-control--disabled * {
+    pointer-events: none;
+}
