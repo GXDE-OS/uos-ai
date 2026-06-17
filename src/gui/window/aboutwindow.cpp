@@ -2,6 +2,7 @@
 #include "global_define.h"
 
 #include <DGuiApplicationHelper>
+#include <DIcon>
 
 #include <QApplication>
 #include <QFontMetrics>
@@ -18,8 +19,8 @@ const QString AboutWindow::RECORD_NUMBER_TEXT = "BeiJing-UOSAIZhiNengZhuShou-202
 AboutWindow::AboutWindow(QWidget *parent)
     : DAboutDialog(parent)
 {
-    setProductName("UOS AI");
-    setProductIcon(QIcon::fromTheme(getApplicationIconName()));
+    setProductName(QCoreApplication::translate("uos_ai::AssistantManager", "UOS AI"));
+    setProductIcon(DIcon(QIcon::fromTheme(getApplicationIconName())));
     setVersion(QApplication::applicationVersion());
     setDescription(tr("UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions."));
 

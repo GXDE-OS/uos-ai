@@ -412,7 +412,9 @@ export default defineComponent({
                 const nextScroll = Math.max(0, Math.min(nextRawScroll, maxScroll));
 
                 if (Math.abs(nextScroll - currentScroll) > 0.1) {
-                    pendingProgrammaticScroll = true;
+                    // 注意：不设 pendingProgrammaticScroll。
+                    // scheduleAnimation 仅被 handleWheel（用户滚轮）和边界回弹调用，
+                    // 属于用户操作，不是外部 API 驱动的程序滚动。
                     if (props.direction === "vertical") {
                         scrollContainerRef.value.scrollTop = nextScroll;
                     } else {
@@ -506,11 +508,14 @@ export default defineComponent({
 
             scrollPosition.value = nextPosition;
 
+            // 先 emit，让消费者（如 ChatView）在回调中能读到 isProgrammaticScroll() 的值，
+            // 之后再重置标志。否则消费者拿到的永远是 false。
+            emitScroll(nextPosition);
+
             if (pendingProgrammaticScroll) {
                 pendingProgrammaticScroll = false;
             }
 
-            emitScroll(nextPosition);
             scheduleHideScrollBar();
         };
 
@@ -748,6 +753,12 @@ export default defineComponent({
         };
 
         /**
+         * 判断最近一次 scroll 事件是否由程序调用 scrollToBottom / setScrollPosition 等触发。
+         * 用于区分程序滚动（不应取消自动滚动定时器）和用户手动滚动（应取消定时器）。
+         */
+        const isProgrammaticScroll = () => pendingProgrammaticScroll;
+
+        /**
          * 判断容器是否可滚动（内容尺寸大于容器尺寸）
          * @returns 是否可滚动
          */
@@ -954,6 +965,7 @@ export default defineComponent({
             scrollToTop,
             isAtBottom,
             isScrollable,
+            isProgrammaticScroll,
             setScrollPosition,
         };
     },
@@ -963,6 +975,7 @@ export default defineComponent({
         "scrollToTop",
         "isAtBottom",
         "isScrollable",
+        "isProgrammaticScroll",
         "setScrollPosition",
         "scrollContainerRef",
     ],

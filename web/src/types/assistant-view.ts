@@ -12,8 +12,8 @@ export interface AssistantViewConfig {
     input?: {
         /** 是否显示深度思考按钮，默认 true */
         showDeepThink?: boolean;
-        /** 是否显示搜索按钮，0 不显示，1 显示, 2 仅显示免费模型 */
-        showSearch?: number;
+        /** 是否显示搜索按钮，默认 false */
+        showSearch?: boolean;
     };
     message?: {
         /** 是否显示重试按钮，默认 true */

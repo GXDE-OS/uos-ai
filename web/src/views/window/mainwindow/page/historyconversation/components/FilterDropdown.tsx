@@ -1,7 +1,7 @@
 import { defineComponent, computed } from "vue";
 import type { AssistantFilterTag } from "@/types/historyconversation";
 import type { ComboboxOption } from "@/types/combobox";
-import { useHistoryConversationStore } from "@/stores";
+import { useHistoryConversationStore, useAssistantInfosStore } from "@/stores";
 import ComboBox from "@/components/combobox/ComboBox";
 import "@/assets/styles/window/mainwindow/page/historyconversation/components/FilterDropdown.css";
 
@@ -9,16 +9,18 @@ export default defineComponent({
     name: "FilterDropdown",
     setup() {
         const historyConversationStore = useHistoryConversationStore();
+        const assistantInfosStore = useAssistantInfosStore();
 
         const tags = computed(() => historyConversationStore.assistantFilterTags);
 
         const comboboxOptions = computed<ComboboxOption[]>(() => {
-            return [
-                ...tags.value.map((tag: AssistantFilterTag) => ({
+            return tags.value.map((tag: AssistantFilterTag) => {
+                const assistant = assistantInfosStore.getAssistantById(tag.id);
+                return {
                     value: tag.id,
-                    label: tag.name,
-                })),
-            ];
+                    label: assistant ? assistant.name : tag.name,
+                };
+            });
         });
 
         // 从 store 中获取当前选中的值

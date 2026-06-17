@@ -1,4 +1,4 @@
-import { defineComponent, ref, computed, type VNodeRef, onMounted, onUnmounted } from "vue";
+import { defineComponent, ref, computed, type VNodeRef, onMounted, onUnmounted, type VNode } from "vue";
 import SvgIcon from "@/components/SvgIcon";
 import CheckButton from "@/components/CheckButton";
 import Menu from "@/components/menu/Menu";
@@ -18,6 +18,37 @@ import {
     useBackendStore,
 } from "@/stores";
 import { getIconByType, type Assistant } from "@/types/assistant";
+
+function highlightText(text: string, keyword: string): (string | VNode)[] {
+    if (!keyword) {
+        return [text];
+    }
+    const lowerText = text.toLowerCase();
+    const lowerKeyword = keyword.toLowerCase();
+    const parts: (string | VNode)[] = [];
+    let lastIndex = 0;
+    let index = lowerText.indexOf(lowerKeyword);
+
+    while (index !== -1) {
+        if (index > lastIndex) {
+            const leading = text.slice(lastIndex, index);
+            if (lastIndex === 0 && leading.length > 20) {
+                parts.push("…" + leading.slice(-20));
+            } else {
+                parts.push(leading);
+            }
+        }
+        parts.push(<span class="conversation-item__highlight">{text.slice(index, index + keyword.length)}</span>);
+        lastIndex = index + keyword.length;
+        index = lowerText.indexOf(lowerKeyword, lastIndex);
+    }
+
+    if (lastIndex < text.length) {
+        parts.push(text.slice(lastIndex));
+    }
+
+    return parts;
+}
 
 export default defineComponent({
     name: "ConversationItem",
@@ -43,6 +74,8 @@ export default defineComponent({
         const backendStore = useBackendStore();
         const isHovered = ref(false);
         const optionMenuTriggerRef = ref<HTMLElement | null>(null);
+
+        const searchKeyword = computed(() => historyConversationStore.filterCondition.searchKeyword);
 
         const menuId = `history:${props.conversation.id}`;
         const isMenuVisible = computed(() => historyConversationStore.openedMenuId === menuId);
@@ -164,6 +197,8 @@ export default defineComponent({
             isSelected,
             assistantIcon,
             formatDate,
+            searchKeyword,
+            highlightText,
             handleMouseEnter,
             handleMouseLeave,
             handleOptionButtonClick,
@@ -204,11 +239,13 @@ export default defineComponent({
                                 )
                             ) : (
                                 <div class="conversation-item__icon">
-                                    <SvgIcon icon="icon_sidebar_conversation" size={[16, 16]} />
+                                    <SvgIcon icon="lost-assistant-historyitem" size={[24, 24]} />
                                 </div>
                             )}
                             <Tooltip content={this.conversation.title} showAfter={1000} placement="top-start">
-                                <div class="conversation-item__title">{this.conversation.title}</div>
+                                <div class="conversation-item__title">
+                                    {this.highlightText(this.conversation.title, this.searchKeyword)}
+                                </div>
                             </Tooltip>
                             <div class="conversation-item__right">
                                 {this.isHovered && !this.isBatchMode ? (
@@ -218,6 +255,7 @@ export default defineComponent({
                                             iconSize={[16, 16]}
                                             size={[30, 30]}
                                             shape={ButtonShape.Circle}
+                                            colorOnly={true}
                                             onClick={this.handleOptionButtonClick}
                                         />
                                     </div>
@@ -232,7 +270,11 @@ export default defineComponent({
                             !(
                                 this.conversation.introduction.trim() !== "" &&
                                 this.conversation.introduction === "Null"
-                            ) && <div class="conversation-item__description">{this.conversation.introduction}</div>}
+                            ) && (
+                                <div class="conversation-item__description">
+                                    {this.highlightText(this.conversation.introduction, this.searchKeyword)}
+                                </div>
+                            )}
                     </div>
                 </div>
                 <Menu

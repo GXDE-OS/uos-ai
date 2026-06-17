@@ -85,6 +85,13 @@ html.dark {
     margin: 0;
 }
 
+/* Fix: 空态未聚焦时隐藏 ProseMirror 为光标落点插入的 trailing break，避免拖拽显示空白选区；聚焦后恢复以保留输入能力。 */
+.template-editor--empty:not(.template-editor--focused) .template-editor__pm-root .ProseMirror-trailingBreak {
+    display: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 .template-editor--disabled {
     color: #bfbfbf;
     cursor: not-allowed;

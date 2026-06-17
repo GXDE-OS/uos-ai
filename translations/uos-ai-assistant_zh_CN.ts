@@ -174,19 +174,27 @@
 <context>
     <name>MarkdownEditor</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
         <source>Outline</source>
         <translation>大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
         <source>No outline</source>
         <translation>暂无大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
         <source>References</source>
         <translation>参考资料</translation>
+    </message>
+</context>
+<context>
+    <name>NewUserGuideDialog</name>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <source>Close</source>
+        <translation>关 闭</translation>
     </message>
 </context>
 <context>
@@ -362,32 +370,32 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 提示词示例：把桌面新建文件夹内的所有文件命名为项目资料，按数字顺序排好。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
+        <location filename="../src/assistant/assistantinfo.h" line="24"/>
         <source>Ask a question...</source>
         <translation>请输入您的问题</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
+        <location filename="../src/datamigration/llmmigration.cpp" line="100"/>
         <source>OpenAI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
+        <location filename="../src/datamigration/llmmigration.cpp" line="119"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">深度求索</translation>
+        <translation>深度求索</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
+        <location filename="../src/datamigration/llmmigration.cpp" line="157"/>
         <source>UOS AI Trial Account</source>
-        <translation>UOS AI试用账号</translation>
+        <translation>小U同学试用账号</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
+        <location filename="../src/datamigration/llmmigration.cpp" line="203"/>
         <source>Custom</source>
         <translation>自定义</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
+        <location filename="../src/datamigration/llmmigration.cpp" line="253"/>
         <source>Private deployment model</source>
         <translation>私有化部署模型</translation>
     </message>
@@ -420,12 +428,12 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <message>
         <location filename="../src/chatbot/channels/discordchannel.cpp" line="539"/>
         <source>Ask UOS AI a question</source>
-        <translation>向 UOS AI 提问</translation>
+        <translation>向小U同学提问</translation>
     </message>
     <message>
         <location filename="../src/chatbot/channels/discordchannel.cpp" line="544"/>
         <source>Question for UOS AI</source>
-        <translation>向 UOS AI 提问</translation>
+        <translation>向小U同学提问</translation>
     </message>
     <message>
         <location filename="../src/chatbot/channels/telegramchannel.cpp" line="70"/>
@@ -441,6 +449,11 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
         <location filename="../src/chatbot/channels/telegramchannel.cpp" line="399"/>
         <source>Telegram API request failed.</source>
         <translation>Telegram 接口请求失败。</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/icompents.h" line="30"/>
+        <source>%0 file changes</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -536,22 +549,22 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
         <translation>反馈</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="585"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="665"/>
         <source>Light Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="586"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="666"/>
         <source>Dark Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="587"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="667"/>
         <source>System Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="588"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="668"/>
         <source>Theme</source>
         <translation type="unfinished"></translation>
     </message>
@@ -706,6 +719,34 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     </message>
 </context>
 <context>
+    <name>notify</name>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <source>New version available</source>
+        <translation>发现新版本</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <source>View new features</source>
+        <translation>查看新特性</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <source>Upgrade now</source>
+        <translation>立刻升级</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <source>Later</source>
+        <translation>暂不升级</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <source>New version features</source>
+        <translation>新版本特性</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AITranslation</name>
     <message>
         <location filename="../src/assistant/aitranslation.cpp" line="27"/>
@@ -759,12 +800,12 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="25"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI是一款桌面智能助手，是您的私人助理！您可以用文字或语音与它交流，它可以帮助回答问题、提供有用的信息、也可根据您的描述生成图片等。</translation>
+        <translation>小U同学是一款桌面智能助手，是您的私人助理！您可以用文字或语音与它交流，它可以帮助回答问题、提供有用的信息、也可根据您的描述生成图片等。</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="60"/>
         <source>Filing Information</source>
         <translation>备案信息</translation>
     </message>
@@ -774,7 +815,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <message>
         <location filename="../src/assistant/abstractassistant.cpp" line="50"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished">UOS AI需要配置AI模型账号才可使用，请先配置模型账号。</translation>
+        <translation>小U同学需要配置AI模型账号才可使用，请先配置模型账号。</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1112,7 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="635"/>
         <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation>翻译的结果受限于模型的能力，若对翻译结果不满意，请在UOS AI首页更换其他模型。</translation>
+        <translation>翻译的结果受限于模型的能力，若对翻译结果不满意，请在小U同学首页更换其他模型。</translation>
     </message>
     <message>
         <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="636"/>
@@ -1398,6 +1439,14 @@ text：</source>
     </message>
 </context>
 <context>
+    <name>uos_ai::AppUpdateChecker</name>
+    <message>
+        <location filename="../src/services/updateservice/appupdatechecker.cpp" line="155"/>
+        <source>Unknown</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::AppUtils</name>
     <message>
         <location filename="../src/utils/apputils.cpp" line="43"/>
@@ -1563,20 +1612,30 @@ text：</source>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="79"/>
-        <location filename="../src/app/application.cpp" line="81"/>
-        <source>UOS AI</source>
-        <translation>UOS AI</translation>
-    </message>
-    <message>
         <location filename="../src/app/application.cpp" line="83"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation>UOS AI是一款桌面智能助手，是您的私人助理！您可以用文字或语音与它交流，它可以帮助回答问题、提供有用的信息、也可根据您的描述生成图片等。</translation>
+        <translation>小U同学是一款桌面智能助手，是您的私人助理！您可以用文字或语音与它交流，它可以帮助回答问题、提供有用的信息、也可根据您的描述生成图片等。</translation>
     </message>
     <message>
         <location filename="../src/app/application.cpp" line="129"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS AI随航/写作</translation>
+        <translation>AI随航/写作</translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="185"/>
+        <source>UOS AI Talk</source>
+        <translation>语音对话</translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="189"/>
+        <location filename="../src/app/application.cpp" line="194"/>
+        <source>UOS AI</source>
+        <translation>小U同学</translation>
+    </message>
+    <message>
+        <location filename="../src/app/application.cpp" line="199"/>
+        <source>UOS AI Screenshot</source>
+        <translation>截图问答</translation>
     </message>
 </context>
 <context>
@@ -1590,9 +1649,12 @@ text：</source>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/agent/generic/genericagent.cpp" line="39"/>
-        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="15"/>
+        <location filename="../src/agent/generic/genericagent.cpp" line="40"/>
+        <location filename="../src/agent/mcp/defaultagent.cpp" line="52"/>
+        <location filename="../src/app/application.cpp" line="79"/>
+        <location filename="../src/app/application.cpp" line="81"/>
         <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
+        <location filename="../src/gui/window/aboutwindow.cpp" line="22"/>
         <source>UOS AI</source>
         <translation>小U同学</translation>
     </message>
@@ -1602,62 +1664,62 @@ text：</source>
         <translation>你好，我是小U同学。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="58"/>
         <source>AI Writing</source>
         <translation>AI 写作</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="57"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="59"/>
         <source>Infinite inspiration, worry-free writing</source>
         <translation>灵感无限，写作无忧</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="64"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="67"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
         <translation>请输入文档的主题和需求，小U同学会帮你完成创作。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="74"/>
         <source>AI Translation</source>
         <translation>AI 翻译</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="72"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="75"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
         <translation>您的随身翻译助理，精通多国语言。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="79"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="83"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
         <translation>请输入你要翻译的内容，并说明需要翻译为什么语言，默认翻译为中文。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="92"/>
         <source>AI Knowledge Base</source>
         <translation>AI知识库</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="110"/>
         <source>MCP&amp;Skills</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="106"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="111"/>
         <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
         <translation>内置常用MCP&amp;Skills，支持自定义导入工具，随心选择工具对话</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="113"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="119"/>
         <source>Please enter MCP&amp;Skills commands.</source>
         <translation>请输入MCP&amp;Skills指令。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="89"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="93"/>
         <source>Answers questions based on your personal knowledge base.</source>
         <translation>基于个人知识库回答问题。</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="96"/>
+        <location filename="../src/assistant/assistantmanager.cpp" line="101"/>
         <source>Ask questions based on the knowledge base.</source>
         <translation>基于知识库提问。</translation>
     </message>
@@ -1666,9 +1728,15 @@ text：</source>
     <name>uos_ai::AudioControler</name>
     <message>
         <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <source>Microphone not detected</source>
+        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
+        <source>No microphone detected</source>
         <translation>未检测到麦克风</translation>
+    </message>
+    <message>
+        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
+        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
+        <source>No speaker detected</source>
+        <translation>未检测到扬声器</translation>
     </message>
 </context>
 <context>
@@ -1684,7 +1752,7 @@ text：</source>
     <message>
         <location filename="../src/model/builtinprovider.cpp" line="75"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation>小U同学</translation>
     </message>
     <message>
         <location filename="../src/model/builtinprovider.cpp" line="80"/>
@@ -1702,148 +1770,203 @@ text：</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="117"/>
-        <location filename="../src/model/builtinprovider.cpp" line="381"/>
+        <location filename="../src/model/builtinprovider.cpp" line="118"/>
+        <location filename="../src/model/builtinprovider.cpp" line="473"/>
         <source>GLM-4.7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="131"/>
+        <location filename="../src/model/builtinprovider.cpp" line="132"/>
+        <source>DeepSeek-V4-Pro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="146"/>
+        <source>DeepSeek-V4-Flash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="161"/>
         <source>Doubao-Seed-1.8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="148"/>
+        <location filename="../src/model/builtinprovider.cpp" line="178"/>
         <source>Custom</source>
         <translation>自定义</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="156"/>
+        <location filename="../src/model/builtinprovider.cpp" line="186"/>
         <source>Private deployment</source>
         <translation>私有化部署</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="165"/>
+        <location filename="../src/model/builtinprovider.cpp" line="195"/>
         <source>OpenAI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="170"/>
+        <location filename="../src/model/builtinprovider.cpp" line="200"/>
         <source>GPT-3.5 Turbo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="183"/>
+        <location filename="../src/model/builtinprovider.cpp" line="213"/>
         <source>GPT-4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="196"/>
+        <location filename="../src/model/builtinprovider.cpp" line="226"/>
         <source>GPT-4.1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="209"/>
+        <location filename="../src/model/builtinprovider.cpp" line="239"/>
         <source>o1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="222"/>
+        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>GPT-5.3 Chat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="238"/>
+        <location filename="../src/model/builtinprovider.cpp" line="268"/>
         <source>doubao/seed</source>
-        <translation>字节跳动/火山引擎</translation>
+        <translation>字节跳动/火山引擎（Doubao）</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="244"/>
+        <location filename="../src/model/builtinprovider.cpp" line="274"/>
         <source>Doubao-Seed 2.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
+        <location filename="../src/model/builtinprovider.cpp" line="288"/>
         <source>Doubao-Seed 2.0-Code</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <location filename="../src/model/builtinprovider.cpp" line="305"/>
         <source>DeepSeek</source>
-        <translation>深度求索</translation>
+        <translation>深度求索（DeepSeek）</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="278"/>
+        <location filename="../src/model/builtinprovider.cpp" line="310"/>
         <source>DeepSeek V3.2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="291"/>
+        <location filename="../src/model/builtinprovider.cpp" line="324"/>
         <source>DeepSeek V4 Flash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="305"/>
+        <location filename="../src/model/builtinprovider.cpp" line="339"/>
         <source>DeepSeek V4 Pro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="320"/>
+        <location filename="../src/model/builtinprovider.cpp" line="355"/>
         <source>MiniMax</source>
-        <translation>稀宇科技</translation>
+        <translation type="unfinished">稀宇科技（MiniMax）</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="326"/>
+        <location filename="../src/model/builtinprovider.cpp" line="361"/>
         <source>MiniMax-M2.5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="342"/>
-        <source>Moonshot (KIMI)</source>
-        <translation>月之暗面</translation>
-    </message>
-    <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
-        <source>Kimi K2</source>
+        <location filename="../src/model/builtinprovider.cpp" line="375"/>
+        <source>MiniMax-M2.7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="360"/>
+        <location filename="../src/model/builtinprovider.cpp" line="389"/>
+        <source>MiniMax-M2.7-highspeed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="403"/>
+        <source>MiniMax-M3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="420"/>
+        <source>Moonshot (KIMI)</source>
+        <translation>月之暗面（Kimi）</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="438"/>
         <source>Kimi K2.5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="376"/>
-        <source>GLM</source>
-        <translation>智谱AI</translation>
+        <location filename="../src/model/builtinprovider.cpp" line="452"/>
+        <source>Kimi K2.6</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="394"/>
+        <location filename="../src/model/builtinprovider.cpp" line="468"/>
+        <source>GLM</source>
+        <translation>智谱AI（GLM）</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="487"/>
         <source>GLM-5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="410"/>
-        <source>Qwen</source>
-        <translation>阿里云百炼（千问）</translation>
+        <location filename="../src/model/builtinprovider.cpp" line="501"/>
+        <source>GLM-5-Turbo</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="416"/>
+        <location filename="../src/model/builtinprovider.cpp" line="515"/>
+        <source>GLM-5V-Turbo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="529"/>
+        <source>GLM-5.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="545"/>
+        <source>Qwen</source>
+        <translation>阿里云百炼（Qwen）</translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="551"/>
         <source>Qwen3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="429"/>
+        <location filename="../src/model/builtinprovider.cpp" line="565"/>
         <source>Qwen3.5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="446"/>
+        <location filename="../src/model/builtinprovider.cpp" line="579"/>
+        <source>Qwen3.6-Max-Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="593"/>
+        <source>Qwen3.6-Plus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="607"/>
+        <source>Qwen3.6-Flash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/model/builtinprovider.cpp" line="624"/>
         <source>Anthropic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="453"/>
+        <location filename="../src/model/builtinprovider.cpp" line="631"/>
         <source>Gemini</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1921,12 +2044,12 @@ text：</source>
     <message>
         <location filename="../src/gui/mgmt/private/chatbotwidget.cpp" line="117"/>
         <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
-        <translation>开启后，UOS AI 将通过配置的机器人接收飞书、钉钉、QQ、Telegram 和 Discord 机器人的消息。您可以直接在IM终端与UOSAI进行对话。</translation>
+        <translation>开启后，小U同学将通过配置的机器人接收飞书、钉钉、QQ、Telegram 和 Discord 机器人的消息。您可以直接在IM终端与小U同学进行对话。</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/chatbotwidget.cpp" line="119"/>
         <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
-        <translation>开启后，UOS AI 将通过配置的机器人接收飞书、钉钉和 QQ 机器人的消息。您可以直接在IM终端与UOSAI进行对话。</translation>
+        <translation>开启后，小U同学将通过配置的机器人接收飞书、钉钉和 QQ 机器人的消息。您可以直接在IM终端与小U同学进行对话。</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/chatbotwidget.cpp" line="152"/>
@@ -1985,7 +2108,7 @@ text：</source>
         <translation>新会话</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
+        <location filename="../src/conversation/conversationrecord.cpp" line="321"/>
         <source>Null</source>
         <translation></translation>
     </message>
@@ -2137,6 +2260,27 @@ text：</source>
     </message>
 </context>
 <context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <location filename="../src/agent/mcp/defaultagent.cpp" line="55"/>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy年MM月dd日 hh点mm分 ddd</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::DefaultAgentWithSkills</name>
+    <message>
+        <location filename="../src/agent/mcp/defaultagentwithskills.cpp" line="215"/>
+        <source>Skill &apos;%1&apos; installed successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/defaultagentwithskills.cpp" line="217"/>
+        <source>Failed to install the skill.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
         <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
@@ -2203,76 +2347,84 @@ text：</source>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="69"/>
         <source>Network error</source>
         <translation>网络错误</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="77"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>您的免费账号已过期，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="82"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>您的免费账号额度已用完，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="87"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
         <translation>您的免费账号的文本生成额度已用完，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Not Now</source>
         <translation>暂不领取</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="112"/>
         <source>Claim Credits</source>
         <translation>领取额度</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
         <source>Free Credits Delivered</source>
         <translation>免费额度已送达</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="115"/>
         <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>当前试用账号模型的免费生成额度已用完，我们已为你额外赠送200次免费额度，本月有效。立即体验更多功能，探索UOS AI的无限可能吧！</translation>
+        <translation>当前试用账号模型的免费生成额度已用完，我们已为你额外赠送200次免费额度，本月有效。立即体验更多功能，探索小U同学的无限可能吧！</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="144"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="153"/>
         <source>Successfully Claimed</source>
         <translation>领取成功</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="147"/>
         <source>Account not found</source>
         <translation>账户不存在</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="150"/>
         <source>Only support trial account</source>
         <translation>仅支持免费账号领取额外额度</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="157"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
         <translation>已参与过活动，无法重复领取</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="160"/>
         <source>Server system error</source>
         <translation>系统错误</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="163"/>
+        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="175"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>领取失败，请再试一次</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::GenericAgent</name>
+    <message>
+        <location filename="../src/agent/generic/genericagent.cpp" line="42"/>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy年MM月dd日 ddd</translation>
     </message>
 </context>
 <context>
@@ -2302,7 +2454,7 @@ text：</source>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="112"/>
         <source>UOS AI Trial Account</source>
-        <translation>UOS AI 试用账号</translation>
+        <translation>小U同学试用账号</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
@@ -2322,7 +2474,7 @@ text：</source>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="149"/>
         <source>Trial account received successfully.</source>
-        <translation>UOS AI试用账号领取成功！</translation>
+        <translation>小U同学试用账号领取成功！</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="151"/>
@@ -2377,22 +2529,22 @@ text：</source>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
+        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="120"/>
         <source>Speak now</source>
         <translation>请说话</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
+        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="128"/>
         <source>Low input volume</source>
         <translation>麦克风音量低</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
+        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="131"/>
         <source>Settings</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
+        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="212"/>
         <source>Network unavailable</source>
         <translation>当前网络不可用</translation>
     </message>
@@ -2446,22 +2598,22 @@ text：</source>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="161"/>
         <source>Searching knowledge base</source>
         <translation>正在搜索知识库</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="195"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="197"/>
         <source>Search complete · %1s</source>
         <translation>搜索完成 · %1 秒</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="199"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="201"/>
         <source>Search complete · %1m%2s</source>
         <translation>搜索完成 · %1 分%2秒</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="210"/>
+        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="212"/>
         <source>References</source>
         <translation>参考资料</translation>
     </message>
@@ -2584,7 +2736,7 @@ text：</source>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="99"/>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="118"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation>安装后，无需联网即可使用 UOS AI。</translation>
+        <translation>安装后，无需联网即可使用小U同学。</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="118"/>
@@ -2599,7 +2751,7 @@ text：</source>
     <message>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="137"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation>从开源社区下载，请谨慎操作。安装后在UOSAI助手中使用。</translation>
+        <translation>从开源社区下载，请谨慎操作。安装后在小U同学中使用。</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="156"/>
@@ -2804,7 +2956,7 @@ text：</source>
     <message>
         <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="129"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI随航</translation>
+        <translation>AI随航</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="354"/>
@@ -2814,7 +2966,7 @@ text：</source>
     <message>
         <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="365"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI 用户使用协议</translation>
+        <translation>小U同学用户使用协议</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="366"/>
@@ -3027,32 +3179,32 @@ text：</source>
     <message>
         <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished">无效的模型</translation>
+        <translation>无效的模型</translation>
     </message>
     <message>
         <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished">不支持的模型类型</translation>
+        <translation>不支持的模型类型</translation>
     </message>
     <message>
         <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished">模型不支持聊天对话</translation>
+        <translation>模型不支持聊天对话</translation>
     </message>
     <message>
         <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished">模型不可用</translation>
+        <translation>模型不可用</translation>
     </message>
     <message>
         <location filename="../src/model/modelvalidator.cpp" line="99"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished">网络错误：%1</translation>
+        <translation>网络错误：%1</translation>
     </message>
     <message>
         <location filename="../src/model/modelvalidator.cpp" line="109"/>
         <source>Unknown error</source>
-        <translation type="unfinished">未知错误</translation>
+        <translation>未知错误</translation>
     </message>
 </context>
 <context>
@@ -3177,6 +3329,43 @@ text：</source>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>确 定</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::OnlineSearchAgent</name>
+    <message>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="102"/>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy年MM月dd日 ddd</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="165"/>
+        <source>Searching for relevant information</source>
+        <translation>正在搜索相关资料</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="177"/>
+        <source>References %0 sources</source>
+        <translation>参考 %0 篇资料</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="219"/>
+        <source>%0 pages found</source>
+        <translation>已找到 %0 个网页</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="278"/>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="293"/>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="372"/>
+        <source>Browsing %0</source>
+        <translation>正在浏览 %0</translation>
+    </message>
+    <message>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="279"/>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="294"/>
+        <location filename="../src/agent/generic/onlinesearchagent.cpp" line="372"/>
+        <source>page %0</source>
+        <translation>网页 %0</translation>
     </message>
 </context>
 <context>
@@ -3338,28 +3527,28 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="187"/>
         <source>Document Generating</source>
         <translation>正在生成文档</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="226"/>
         <source>failed</source>
         <translation>失败</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="454"/>
         <source>Document Generated</source>
         <translation>文档已生成</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
         <translation>已根据大纲生成文档，可点击下方卡片编辑文档内容，或点击另存按钮，保存到本地编辑。</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="453"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="589"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="464"/>
+        <location filename="../src/agent/research/reportwriteragent.cpp" line="600"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
         <translation>您可以提出后续问题，或要求对文章进行调整。</translation>
     </message>
@@ -3499,2070 +3688,2485 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="256"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="687"/>
         <source>The archive file does not exist.</source>
         <translation>压缩文件不存在。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="263"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="694"/>
         <source>Failed to create temporary directory for extraction.</source>
         <translation>无法创建解压用临时目录。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="271"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="705"/>
         <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
         <translation>解压文件失败。文件可能已损坏或格式不支持。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="278"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="715"/>
         <source>No SKILL.md file found in the archive.</source>
         <translation>压缩包中未找到 SKILL.md 文件。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="310"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="747"/>
         <source>The specified path is invalid.</source>
         <translation>指定路径无效。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="900"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="505"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1372"/>
         <source>Failed to read SKILL.md.</source>
         <translation>读取 SKILL.md 失败。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="910"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="513"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1382"/>
         <source>SKILL.md is missing the required &apos;name&apos; field.</source>
         <translation>SKILL.md 缺少必填的 name 字段。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="938"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1481"/>
         <source>The skill directory does not exist.</source>
         <translation>技能目录不存在。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="945"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1488"/>
         <source>The skill cannot be imported from this path.</source>
         <translation>无法从该路径导入技能。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="952"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1495"/>
         <source>No SKILL.md file found in the skill directory.</source>
         <translation>技能目录中未找到 SKILL.md 文件。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="964"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="284"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="333"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="562"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1510"/>
         <source>The skill contains too many files (maximum %1 allowed).</source>
         <translation>技能包含文件过多（最多允许 %1 个）。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="972"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="185"/>
+        <source>The skill URL is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="191"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1456"/>
+        <source>Only http and https skill URLs are supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="196"/>
+        <source>Skill URLs must not contain credentials.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="274"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="296"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="323"/>
+        <source>Failed to inspect the skill archive.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="280"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="329"/>
+        <source>The skill archive is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="289"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="354"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="567"/>
+        <source>The skill archive contains an unsafe path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="307"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="344"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="572"/>
+        <source>The skill archive contains unsupported file types.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="385"/>
+        <source>Failed to create a temporary file for the skill download.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="432"/>
+        <source>The skill URL download timed out.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="440"/>
+        <source>The skill download exceeds the limit (maximum 10 MB allowed).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="446"/>
+        <source>Failed to write the downloaded skill file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="456"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="492"/>
+        <source>The skill URL redirected too many times.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="460"/>
+        <source>The skill URL must not redirect from https to http.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="471"/>
+        <source>The skill URL returned HTTP status %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="479"/>
+        <source>Failed to download the skill URL: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="486"/>
+        <source>The skill URL downloaded an empty file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="520"/>
+        <source>Failed to prepare a temporary skill directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="525"/>
+        <source>Failed to prepare SKILL.md for installation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="543"/>
+        <source>The skill source contains unsupported file types.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="549"/>
+        <source>Failed to inspect the skill files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="578"/>
+        <source>The skill archive contains files outside the extraction directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="585"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1518"/>
         <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
         <translation>技能大小超出限制（最大允许 10 MB）。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="978"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1405"/>
+        <source>Failed to create temporary directory for the skill download.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1430"/>
+        <source>The URL does not point to a supported SKILL.md file or skill archive.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1443"/>
+        <source>Skill source cannot be empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1454"/>
+        <source>Use a local file path instead of a file URL.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1524"/>
         <source>The skill folder name is invalid.</source>
         <translation>技能文件夹名称无效。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="990"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1536"/>
         <source>Failed to overwrite the existing skill.</source>
         <translation>覆盖现有技能失败。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1001"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1547"/>
         <source>Failed to create the skills directory.</source>
         <translation>创建技能目录失败。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1009"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1555"/>
         <source>Failed to copy the skill files.</source>
         <translation>复制技能文件失败。</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1036"/>
+        <location filename="../src/agent/mcp/skillsmanager.cpp" line="1595"/>
         <source>Supported files</source>
-        <translation type="unfinished">支持的文件</translation>
+        <translation>支持的文件</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
         <source>UOS AI</source>
-        <translation>UOS AI</translation>
+        <translation>小U同学</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
         <source>Ask UOS AI, kiss your worries goodbye.</source>
         <translation>问问小U，事事无忧。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Update History</source>
-        <translation>更新记录</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
         <source>Settings</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
         <source>New Chat</source>
         <translation>创建新对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
         <source>Temporary Chat</source>
         <translation>临时对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>AI Writing</source>
         <translation>AI 写作</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
         <source>AI Translation</source>
         <translation>AI 翻译</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
         <source>AI Knowledge Base</source>
         <translation>AI知识库</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
         <source>MCP Server</source>
         <translation>MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
         <source>Commands</source>
         <translation>Commands</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
         <source>Agent Store</source>
         <translation>智能体商店</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
         <source>More</source>
         <translation>更多</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
         <source>Chat History</source>
         <translation>历史对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
         <source>Today</source>
         <translation>今天</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
         <source>Yesterday</source>
         <translation>昨天</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
         <source>Last 7 Days</source>
         <translation>过去7天</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
         <source>Last 30 Days</source>
         <translation>过去30天</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
         <source>January</source>
         <translation>1月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
         <source>February</source>
         <translation>2月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
         <source>March</source>
         <translation>3月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
         <source>April</source>
         <translation>4月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
         <source>May</source>
         <translation>5月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
         <source>June</source>
         <translation>6月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
         <source>July</source>
         <translation>7月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
         <source>August</source>
         <translation>8月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
         <source>September</source>
         <translation>9月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
         <source>October</source>
         <translation>10月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
         <source>November</source>
         <translation>11月</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
         <source>year</source>
         <translation>年</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
         <source>Earlier</source>
         <translation>更早</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
         <source>Confirm Deletion</source>
         <translation>确认删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
         <source>Confirm deletion</source>
         <translation>确认删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
         <translation>删除后将无法使用该服务器，请谨慎操作。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
         <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation>此操作将从 UOSAI 中删除该对话相关的所有内容。</translation>
+        <translation>此操作将从小U同学中删除该对话相关的所有内容。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
         <source>Confirm Delete</source>
         <translation>确认删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
         <source>Cancel</source>
         <translation>取 消</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
         <source>Batch Manage</source>
         <translation>批量管理</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
         <source>Select All</source>
         <translation>全选</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
         <source>%1 conversations selected</source>
         <translation>已选择%1个对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
         <source>No chat history yet</source>
         <translation>您还没有历史对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
         <source>Chat content not found</source>
         <translation>找不到对话内容</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
         <source>DeepThink</source>
         <translation>深度思考</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
         <source>Search</source>
         <translation>联网搜索</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
         <source>Attachments</source>
         <translation>附件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
         <source>Upload Files</source>
         <translation>上传文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
         <source>Screenshot Q&amp;A</source>
         <translation>截图问答</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
         <source>Voice Input</source>
         <translation>语音输入</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
         <source>Send</source>
         <translation>发送</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
         <source>Ask a question...</source>
         <translation>请输入您的问题</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
         <source>Voice Read</source>
         <translation>语音朗读</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
         <source>Stop Reading</source>
         <translation>停止朗读</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
         <source>Copy</source>
         <translation>复制</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
         <source>Regenerate</source>
         <translation>重新生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
         <source>Re-edit</source>
         <translation>重新编辑</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
         <source>Stop Generating</source>
         <translation>停止生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
         <source>Generation stopped</source>
         <translation>已停止生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
         <source>Back to Bottom</source>
         <translation>回到底部</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
         <source>Thinking...</source>
         <translation>思考中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
         <source>Deep think completed (took %1s)</source>
         <translation>已深度思考（用时%1秒）</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
         <source>Parsing...</source>
         <translation>解析中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
         <source>Parsing failed</source>
         <translation>解析失败</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
         <source>You can add up to 50 files</source>
         <translation>最多只能添加50个文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
         <source>Summarize the core content of the file</source>
         <translation>整理文件的核心内容</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
         <source>Model List</source>
         <translation>模型列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
         <source>Smart Recommendation</source>
         <translation>智能推荐</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
         <source>Smart switch for best match</source>
         <translation>智能切换最佳匹配</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
         <source>Local Model</source>
         <translation>本地模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
         <source>Online Model</source>
         <translation>在线模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
         <source>Add Model</source>
         <translation>添加模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
         <source>Official</source>
         <translation>官方</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
         <source>AI-generated content is for reference only. Please verify its accuracy.</source>
         <translation>AI生成的内容仅供参考，请注意甄别信息准确性。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
         <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
         <translation>临时对话不会显示在历史记录中，离开对话界面时，其内容会被完全删除。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
         <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
         <translation>最多同时进行10个对话，请稍后发送。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
         <source>View Now</source>
         <translation>立即查看</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
         <source>Remind Me Later</source>
         <translation>稍后再说</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
         <source>Infinite inspiration, worry-free writing</source>
         <translation>灵感无限，写作无忧</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
         <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
         <translation>开启后，会联网搜索资料，获取更实时、全面、准确的参考信息。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
         <source>Upload files/images as references</source>
         <translation>上传文件/图片作为参考资料</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
         <source>Reference Outline / Local File</source>
         <translation>参考大纲 / 本地文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
         <source>As reference material / As outline file</source>
         <translation>作为参考素材 / 作为大纲文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
         <source>File Upload</source>
         <translation>文件上传</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
         <source>As Material</source>
         <translation>作为参考素材</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
         <source>As Outline</source>
         <translation>作为大纲文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
         <source>Local Materials</source>
         <translation>本地素材</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
         <source>File Outline</source>
         <translation>文件大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
         <source>Outline</source>
         <translation>写大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
         <source>View All</source>
         <translation>查看全部</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
         <source>Collapse</source>
         <translation>折叠</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
         <source>Recent Creations</source>
         <translation>最近创作</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
         <source>Upload File</source>
         <translation>上传文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
         <source>Reference Outline</source>
         <translation>参考大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
         <source>Local File</source>
         <translation>本地文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
         <source>Heading</source>
         <translation>标题</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
         <source>Export Document</source>
         <translation>导出文档</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
         <source>Exit Full Screen</source>
         <translation>退出全屏</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
         <source>Untitled Document</source>
         <translation>未命名文档</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
         <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
         <translation>如果您不希望本地素材上传，可在输入框做如下操作后再来生成内容：</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
         <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
         <translation> 1、将模型切换为本地模型（如DeepSeek-R1-1.5B）或私有化部署模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
         <source>2. Turn off &quot;Web Search&quot;</source>
         <translation>2、将&quot;联网搜索&quot;设置为未选中状态</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
         <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
         <translation>素材将会上传至在线模型分析，是否继续生成？</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
         <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
         <translation>素材将会上传至在线模型（%1）分析，是否继续生成？</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
         <source>Enable Privacy Mode</source>
         <translation>一键开启隐私模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
         <source>Continue Generating</source>
         <translation>继续生成</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
         <source>You can enter more requirements to optimize or adjust the generated content.</source>
         <translation>您还可以继续输入更多要求，对已生成的内容优化或调整。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
         <source>Detected local outline uploaded. Analyzing outline content...</source>
         <translation>检测到你已上传本地大纲，正在为你解析大纲内容</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
         <source>Generating outline content...</source>
         <translation>正在为你生成大纲内容</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
         <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
         <translation>已为你生成了可以自由编辑的大纲，确认无误后，点击下方蓝色按钮，进入到生成文档环节</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
         <source>Unable to parse the uploaded outline file. Please re-upload.</source>
         <translation>无法解析你上传的大纲文件，请重新上传</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
         <source>Re-upload Outline</source>
         <translation>重新上传大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
         <source>Directly generate outline using AI</source>
         <translation>直接使用AI生成大纲</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
         <source>Add sub-chapter</source>
         <translation>添加子章节</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
         <source>Delete sub-chapter</source>
         <translation>删除子章节</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
         <source>Delete chapter</source>
         <translation>删除章节</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
         <source>Add chapter</source>
         <translation>增加章节</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
         <source>Enter chapter title</source>
         <translation>输入章节标题</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
         <source>Delete this heading?</source>
         <translation>是否删除该标题？</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
         <source>Generate document from outline</source>
         <translation>基于大纲生成文档</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
         <source>Save as Word</source>
         <translation>另存为Word</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
         <source>Save as PDF</source>
         <translation>另存为PDF</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
         <source>Save as Markdown</source>
         <translation>另存为Markdown</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
         <source>Saving...</source>
         <translation>保存中...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="314"/>
         <source>Saved successfully!</source>
         <translation>保存成功！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="315"/>
         <source>Failed to save, please try again.</source>
         <translation>另存失败，请再试一次。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
         <source>Undo</source>
         <translation>撤销</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
         <source>Redo</source>
         <translation>恢复</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
         <source>Body Text</source>
         <translation>正文</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
         <source>Heading %1</source>
         <translation>%1级标题</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
         <source>Bold</source>
         <translation>粗体</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
         <source>Italic</source>
         <translation>斜体</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
         <source>Strikethrough</source>
         <translation>删除线</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
         <source>Link Text</source>
         <translation>链接文本</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
         <source>Bulleted List</source>
         <translation>无序列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
         <source>Numbered List</source>
         <translation>有序列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
         <source>Decrease Indent</source>
         <translation>减少缩进</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
         <source>Increase Indent</source>
         <translation>增加缩进</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
         <source>Blockquote</source>
         <translation>引用</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
         <source>Divider</source>
         <translation>分割线</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
         <source>Copy Full Text</source>
         <translation>复制全文</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
         <source>Print Document</source>
         <translation>打印文档</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
         <source>Share Document</source>
         <translation>分享文档</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
         <source>Zoom Out</source>
         <translation>缩小</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
         <source>Full Screen</source>
         <translation>全屏</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="314"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
         <source>Insert Link</source>
         <translation>插入链接</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="315"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
         <source>Text:</source>
         <translation>文本：</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
         <source>Link:</source>
         <translation>链接：</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
         <source>Please enter a valid link</source>
         <translation>请输入有效链接</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
         <source>Link text</source>
         <translation>链接文本</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
         <source>Please enter the text to be translated first.</source>
         <translation>请先输入需要翻译的内容。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
         <source>Identifying source language...</source>
         <translation>我正在识别源语言语种...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
         <source>My MCP Server</source>
         <translation>我的MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
         <source>Add MCP Server</source>
         <translation>添加MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
         <source>Delete MCP Server</source>
         <translation>删除MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
         <source>Built-in Only</source>
         <translation>仅内置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
         <source>Custom Added Only</source>
         <translation>仅自定义添加</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
         <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
         <translation>使用MCP&amp;Skills需要先安装UOS AI Agent，请前往应用商店安装</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
         <source>You can add and manage MCP servers</source>
         <translation>您可以添加、管理MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
         <source>Edited on</source>
         <translation>修改于</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="371"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="395"/>
         <source>Created</source>
         <translation>创建时间</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="372"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="396"/>
         <source>You have %1 newly answered chats</source>
         <translation>您有%1个新对话已回答完毕</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
         <source>Search History</source>
         <translation>搜索历史会话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
         <source>Confirm delete this conversation</source>
         <translation>确认删除对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="400"/>
         <source>This will remove all related content from UOS AI</source>
         <translation>此操作将从小U同学中删除该对话相关的所有内容</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="401"/>
         <source>Use it now</source>
         <translation>马上使用</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
         <source>My Skills</source>
         <translation>我的Skills</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
         <source>Open installation directory</source>
         <translation>打开安装目录</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
         <source>Refresh</source>
         <translation>刷新</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="405"/>
         <source>Import Skill</source>
         <translation> 导入Skill</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
         <source>Exit Voice Chat</source>
         <translation>退出语音对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
         <source>The following %1 files are invalid and unavailable. Continue?</source>
         <translation>以下%1个文件已失效，无法使用。是否继续？</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
         <source>The following file is invalid and unavailable. Continue?</source>
         <translation>以下文件已失效，无法使用。是否继续?</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <source>No microphone detected</source>
+        <translation>未检测到麦克风</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
         <source>Click on the animation%1 to activate</source>
         <translation>点击动画%1激活</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
         <source>Install Now</source>
         <translation>立即安装</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
         <source>System Settings</source>
         <translation>系统设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
         <source>Bluetooth</source>
         <translation>蓝牙</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
         <source>Wireless Network</source>
         <translation>WiFi</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
         <source>DND Mode</source>
         <translation>勿扰模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
         <source>Eye Comfort</source>
         <translation>护眼模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
         <source>Brightness</source>
         <translation>屏幕亮度</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
         <source>Volume</source>
         <translation>系统音量</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
         <source>Font Size</source>
         <translation>系统字号</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
         <source>App Store</source>
         <translation>应用商店</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
         <source>Schedule Management</source>
         <translation>日程管理</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
         <source>Click to download</source>
         <translation>点击前往下载</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
         <source>You stopped this answer, </source>
         <translation>您已停止了本次回答，</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
+        <source>Changelog</source>
+        <translation>更新记录</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
+        <source>Start Chatting</source>
+        <translation>开始聊天</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>从左侧选择一个助手，直接输入问题或指令，就能开始一次新的对话。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
+        <source>Voice Interaction</source>
+        <translation>语音互动</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>如果你习惯语音操作，可以在相应入口中快速切换，减少重复操作。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
+        <source>Keep Exploring</source>
+        <translation>继续探索</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>在历史记录和设置里继续处理任务，并按你的习惯调整模型、工具和外观。</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
         <source>please re-edit your question</source>
         <translation>重新编辑问题</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
         <source>Private Model</source>
         <translation>私有模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
         <source>Only supports uploading 1 outline file</source>
         <translation>仅支持上传1个大纲文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
         <source>Edit MCP Server</source>
         <translation>编辑MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
         <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
         <translation>使用AI知识库需要先安装向量化模型插件，请前往应用商店安装。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
         <source>&lt;10k downloads</source>
         <translation>&lt;1万次下载</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
         <source>&lt;100k downloads</source>
         <translation>&lt;10万次下载</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
         <source>100k+ downloads</source>
         <translation>10万+次下载</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
         <source>%1 stars</source>
         <translation>%1分</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
         <source>Click to go to app</source>
         <translation>点击跳转到应用</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
         <source>Sunday</source>
         <translation>星期日</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
         <source>Monday</source>
         <translation>星期一</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="371"/>
         <source>Tuesday</source>
         <translation>星期二</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="372"/>
         <source>Wednesday</source>
         <translation>星期三</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
         <source>Thursday</source>
         <translation>星期四</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
         <source>Friday</source>
         <translation>星期五</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
         <source>Saturday</source>
         <translation>星期六</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
         <source>MCP Servers</source>
         <translation>MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
         <source>Select All MCP Servers</source>
         <translation>选择所有MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
         <source>Describe</source>
         <translation>描述</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
         <source>JSON configuration</source>
         <translation>JSON配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>请将MCP JSON配置代码粘贴到输入框中。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
         <translation>描述MCP服务功能，方便快速查找工具</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
         <source>Free Credits Delivered</source>
         <translation>免费额度已送达</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="385"/>
         <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation>当前试用账号模型的免费生成额度已用完，我们已为你额外赠送200次免费额度，本月有效。立即体验更多功能，探索UOS AI的无限可能吧！</translation>
+        <translation>当前试用账号模型的免费生成额度已用完，我们已为你额外赠送200次免费额度，本月有效。立即体验更多功能，探索小U同学的无限可能吧！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="386"/>
         <source>Not Now</source>
         <translation>暂不领取</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
         <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
         <translation>我是{{输入身份/职务}}，帮我写一篇关于{{输入主题}}的{{报告/文章/大纲/公众号/通知/调研报告/工作总结/演讲稿}}，篇幅{{1000}}字左右，内容要求是{{输入要求/内容侧重/内容风格等}}</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <source>Please analyze the {{uploaded file/data}}, focusing on {{data structure/key metrics/trends/anomalies}}, and output {{summary/recommendations/visualizations/report}}.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <source>Please input</source>
+        <translation>请输入</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
         <source>Manage Chat History</source>
         <translation>管理历史对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="391"/>
         <source>Voice Chat</source>
         <translation>语音对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <location filename="../src/gui/web/systemchannel.cpp" line="473"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="392"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="548"/>
         <source>Expand</source>
         <translation>展开</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <source>Search conversation titles or content…</source>
+        <translation>搜索对话标题或内容…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="406"/>
         <source>You can add and manage Skills</source>
         <translation>您可以添加、管理Skills</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="386"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <source>Previous</source>
+        <translation>上一个</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>小U同学3.0迎来全面界面升级！</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>全新的大窗模式，带给您全新的交互体验</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="414"/>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>智能明晰的侧边导航，功能入口井井有条，操作更便捷</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="415"/>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>更宽广、更专注的工作区，内容更丰富</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>层级更分明，核心任务更聚焦，工作更沉浸</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>多任务并行处理，彻底释放您的宝贵时间</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>多任务后台静默并行，彻底告别干等</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>随时布置新任务，思路不断流</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>系统及时通知任务进度，不必一直盯</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>分屏沉浸写作，准确安全可查</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>左右分屏边聊边改，告别频繁切窗口</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>海量资料深度“投喂”，不再凭空乱编</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>大纲先行手动纠偏，一键导出，创作一气呵成</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>端侧/私有模型数据不出域，创作安全有底气</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>原生系统控制与海量 Skills，一句话搞定一切</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="427"/>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>可视化原生系统操控，调字体、开关 WiFi、下载应用</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="428"/>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>解锁高频办公技能，文档编写、翻译、合并等</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>海量 Skills 一键导入，创建、查找技能无限解锁</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <source>Batch management and precise search for history</source>
+        <translation>历史记忆批量管理与精准搜索</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>全局快捷搜索，历史记录一秒直达</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>智能体分类筛选，历史对话查找更精准</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>高效批量管理，快速清理，清爽有序</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <source>No historical conversations found.</source>
+        <translation>未找到历史对话</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <source>Apply</source>
+        <translation>接受</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
+        <source>Reject</source>
+        <translation>拒绝</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
+        <source>Applied</source>
+        <translation>已接受</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <source>Rejected</source>
+        <translation>已拒绝</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <source>%1 file changes (%2 added, %3 modified, %4 deleted)</source>
+        <translation>共 %1 个文件变更（新增 %2，修改 %3，删除 %4）</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <source>Added</source>
+        <translation>新增</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <source>Modified</source>
+        <translation>修改</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <source>Deleted</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <source>Awaiting Approval</source>
+        <translation>等待批准</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <source>Allow Once - This command only</source>
+        <translation>允许一次 - 仅执行当前命令，之后仍会询问</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <source>Allow Chat - For this chat</source>
+        <translation>允许全部 - 当前对话中的后续命令将直接执行，不再询问</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <source>Reject &amp; Revise - Tell UOS AI what to change</source>
+        <translation>拒绝并调整 - 取消执行并告诉小U如何调整</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <source>Skip</source>
+        <translation>跳过</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <source>Submit</source>
+        <translation>提交</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <source>Pending</source>
+        <translation>待审批</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
+        <source>Allow Once</source>
+        <translation>允许一次</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="456"/>
+        <source>Allow Chat</source>
+        <translation>允许全部</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="457"/>
+        <source>Loading history conversations...</source>
+        <translation>历史对话加载中…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <source>Searching history conversations...</source>
+        <translation>历史对话搜索中…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
         <source>Go to configuration</source>
         <translation>去配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
         <source>No account</source>
         <translation>无账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
         <source>Input question</source>
         <translation>输入问题</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>AI生成的内容仅供参考，请注意甄别信息准确性。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
         <source>Welcome to UOS AI</source>
-        <translation>欢迎使用UOS AI</translation>
+        <translation>欢迎使用小U同学</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="391"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation>下面是UOS AI可以帮助您做的一些事</translation>
+        <translation>下面是小U同学可以帮助您做的一些事</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="392"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
         <source>Play</source>
         <translation>播放</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
         <source>Retry</source>
         <translation>重新尝试</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="395"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
         <source>Clear conversation history</source>
         <translation>清除对话记录</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="396"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
         <source>Please connect the microphone and try again</source>
         <translation>请接入麦克风后再试</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
         <source>Chat history cleared</source>
         <translation>历史聊天已清除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="473"/>
         <source>Click to start/stop recording</source>
         <translation>点击可开始/停止录音</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="474"/>
         <source>Listening</source>
         <translation>聆听中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="400"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
         <source>Sleeping</source>
         <translation>休眠中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="401"/>
-        <source>Microphone not detected</source>
-        <translation>未检测到麦克风</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
         <source>Connection failed, click to try again</source>
         <translation>连接失败，点击可重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
         <translation>语音输入暂不可用，请检查网络！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="405"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="406"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
         <source>Voice conversation</source>
         <translation>语音对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
         <source>Click the animation or press Enter to send</source>
         <translation>点击动画或回车可发送</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
         <source>Stop recording after %1 seconds</source>
         <translation>%1s后停止录音</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
         <source>Thinking</source>
         <translation>思考中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
         <source>Click animation to interrupt</source>
         <translation>点击动画可打断</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
         <source>Answering</source>
         <translation>回答中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
         <translation>您的免费账号额度已用完，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="488"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
         <translation>您的免费账号已过期，请配置自己的模型账号以继续使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="414"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="489"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation>UOS AI需要配置AI模型账号才可使用，请先配置模型账号。</translation>
+        <translation>小U同学需要配置AI模型账号才可使用，请先配置模型账号。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="415"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
         <source>Activate</source>
         <translation>激活</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
         <source>Voice input</source>
         <translation>语音输入</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
         <translation>语音播报暂不可用，请检查网络！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
         <source>Turn off voice conversation</source>
         <translation>关闭语音对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
         <translation>图片已生成，请切换到聊天界面查看</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
         <source>No account, please configure an account</source>
         <translation>无账号，请配置账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
         <source>Answer each question up to 5 times</source>
         <translation>每个问题最多回答5次</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
         <source>Copied successfully</source>
         <translation>复制成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
         <source>Sound output device not detected</source>
         <translation>未检测到声音输出设备</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
         <source>The sound output device is not detected, please check and try again!</source>
         <translation>未检测到声音输出设备，请检查后重试！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
         <source>Mode</source>
         <translation>模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
         <source>Window Mode</source>
         <translation>窗口模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="427"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
         <source>Sidebar Mode</source>
         <translation>侧边栏模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="428"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
         <source>Assistant List</source>
         <translation>助手列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
         <source>Agent List</source>
         <translation>智能体列表</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
         <source>UOS System Assistant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
         <source>Deepin System Assistant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
         <source>Personal Knowledge Assistant</source>
         <translation>个人知识助手</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="508"/>
         <source>Please configure the knowledge base</source>
         <translation>请配置知识库</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="509"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
         <translation>使用【个人知识助手】前，需要配置知识库，配置好知识库后，AI将根据您在知识库中配置的内容，回答问题或做内容生成。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="510"/>
         <source>Please configure the large model</source>
         <translation>请配置大模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="511"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
         <translation>个人知识助手需配置大模型后才可使用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="512"/>
         <source>To configure</source>
         <translation>去配置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="513"/>
         <source>To install</source>
         <translation>去安装</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="514"/>
         <source>Please install [EmbeddingPlugins]</source>
         <translation>请安装【向量化模型插件】</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="515"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
         <translation>该助手需要安装【向量化模型插件】才可运行</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="518"/>
         <source>Drag files here to add them.</source>
         <translation>文件拖动到此处即可添加</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="519"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
         <translation>最多只能添加3个文件，文件类型:txt、doc、docx、xls、xlsx、ppt、pptx、pdf、md、png、jpg、jpeg、代码等。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="520"/>
         <source>You can only add a maximum of one file.</source>
         <translation>最多只能添加一个文件</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="521"/>
         <source>The file format is not supported.</source>
         <translation>文件格式不支持</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="522"/>
         <source>Summarize the key content of the file.</source>
         <translation>整理文件的核心内容</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="523"/>
         <source>File Error</source>
         <translation>文件出错</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="524"/>
         <source>File has been deleted.</source>
         <translation>文件已删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="525"/>
         <source>The file size exceeds the 100MB limit.</source>
         <translation>文件大小超出100MB限制</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="526"/>
         <source>Upload a document</source>
         <translation>上传文档</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="527"/>
         <source>File deleted</source>
         <translation>文件已删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="528"/>
         <source>No text was parsed</source>
         <translation>没有解析出文字</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="529"/>
         <source>Reference</source>
         <translation>参考</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="457"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="532"/>
         <source>Instruction</source>
         <translation>指令</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="533"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
         <translation>输入框输入&quot;/&quot;可唤起。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="534"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
         <translation>请输入；“Ctrl+回车”可换行。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="535"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
         <translation>请输入您的问题，或输入“/”选择指令
 Ctrl+Enter换行</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="538"/>
         <source>Search complete.</source>
         <translation>搜索完成</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="539"/>
         <source>Click to view results</source>
         <translation>点击查看结果</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="542"/>
         <source>edit</source>
         <translation>编辑</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="543"/>
         <source>save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="544"/>
         <source>copy</source>
         <translation>复制</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="547"/>
         <source>lines of code collapsed</source>
-        <translation type="unfinished"></translation>
+        <translation>行代码已折叠</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="549"/>
+        <source>Source</source>
+        <translation>源码</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="550"/>
+        <source>Preview</source>
+        <translation>预览</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="553"/>
+        <source>Save As</source>
+        <translation>另存为</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/web/systemchannel.cpp" line="556"/>
         <source>Thinking has stopped</source>
         <translation>思考已停止</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="557"/>
         <source>Deeply thought (%1 seconds)</source>
         <translation>已深度思考(用时%1秒)</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="560"/>
         <source>New Conversation</source>
         <translation>创建新会话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="561"/>
         <source>History</source>
         <translation>历史记录</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="562"/>
         <source>No History Records</source>
         <translation>暂无历史记录</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="563"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
         <translation>确定删除会话吗？删除后会话将不可恢复。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="564"/>
         <source>The %1 agent used in this conversation has been deleted</source>
         <translation>该会话使用的%1智能体已被删除</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="565"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
         <translation>对话无法查看，如需查看，请安装%1智能体再试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="566"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
         <translation>原来对话的模型已被删除，已为你切换到新模型以继续对话。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="489"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="569"/>
         <source>Recommendations</source>
         <translation>推荐</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="570"/>
         <source>No Model</source>
         <translation>无模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="571"/>
         <source>No model available. Please install or configure a model in the settings.</source>
         <translation>没有模型，请在设置中安装或配置模型。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="572"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
         <translation>请描述你需要创作的内容主题和要求。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="573"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
         <translation>请输入你要翻译的内容，并说明需要翻译为什么语言，默认翻译为中文。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="574"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
         <translation>请输入你需要处理的文本，并说明要求。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="575"/>
         <source>New Agent Added</source>
         <translation>新增智能体</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="576"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
         <translation>本次新增了写作、文本处理、翻译智能体，快来看看吧。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="577"/>
         <source>Try it</source>
         <translation>马上体验</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="578"/>
         <source>Write an article based on the following document:</source>
         <translation>基于如下文档写一篇文章：</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="579"/>
         <source>Translate the following document into English:</source>
         <translation>将如下文档翻译中文：</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="582"/>
         <source>Add Mcp Server</source>
         <translation>添加MCP服务器</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="583"/>
         <source>Add Server</source>
         <translation>添加服务器</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="584"/>
         <source>Add failed! Error reason:</source>
         <translation>添加失败！错误原因：</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="585"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
         <translation>MCP环境缺失，请安装【UOS AI Agent】</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="586"/>
         <source>Calling</source>
         <translation>调用中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="587"/>
         <source>Completed</source>
         <translation>已完成</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="508"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="588"/>
         <source>Call Failed</source>
         <translation>调用失败</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="509"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="589"/>
         <source>Cancelled</source>
         <translation>已取消</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="510"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="590"/>
         <source>params</source>
         <translation>参数</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="511"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="591"/>
         <source>result</source>
         <translation>结果</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="512"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="592"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>使用MCP服务推荐切换官方发放模型“DeepSeek-试用账号”</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="513"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="593"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
         <translation>请输入MCP服务指令，如“帮我把系统调整为深色模式”</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="514"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="594"/>
         <source>Agent server is not available</source>
         <translation>智能体服务不可用</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="515"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="595"/>
         <source>Agent server exception</source>
         <translation>智能体服务异常</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="516"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="596"/>
         <source>MCP server is not available</source>
         <translation>MCP服务不可用</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="517"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="597"/>
         <source>Confirm</source>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="518"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="598"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
         <translation>使用MCP服务可以一句话完成多个文件、应用的自动化任务。快来试试吧！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="519"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="599"/>
         <source>Use later</source>
         <translation>稍后再试</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="520"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="600"/>
         <source>Enable MCP Server</source>
         <translation>开启使用MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="521"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="601"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
         <translation>MCP环境“UOS AI Agengt”安装成功后，单击</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="522"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="602"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
         <translation>在MCP服务器列表中勾选“uos-mcp”。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="523"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="603"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
         <translation>试试发送“把系统调整为深色模式”。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="524"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="604"/>
         <source>Try it now</source>
         <translation>立即体验</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="525"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="605"/>
         <source>Add Mcp Server[GuidePage]</source>
         <translation>新增MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="526"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="606"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
         <translation>首次使用需前往应用商店安装MCP环境“UOS AI Agent”。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="527"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="607"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
         <translation>JSON文件格式错误，请核对后重新提交</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="528"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="608"/>
         <source>Install Now &gt;</source>
         <translation>去安装 &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="531"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="611"/>
         <source>General Chat</source>
         <translation>普通对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="532"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="612"/>
         <source>Now in Private Chat</source>
         <translation>已经进入隐私对话</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="533"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="613"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
         <translation>隐私对话不会显示在历史记录中，离开对话界面时，其内容会被完全删除。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="534"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="614"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
         <translation>截图问答    快捷键（Ctrl+Alt+Q），最多支持 3 张图</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="535"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="615"/>
         <source>Cannot be used during screen recording</source>
         <translation>录屏中无法使用此功能</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="536"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="616"/>
         <source>You can upload up to 3 files or image</source>
         <translation>最多只能添加3个文件或图片</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="537"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="617"/>
         <source>Please delete the abnormal file and send it again</source>
         <translation>请删除异常文件再发送</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="538"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="618"/>
         <source>Add Private Chat</source>
         <translation>新增【隐私对话】</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="539"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="619"/>
         <source>Add [Screenshot Q&amp;A]</source>
         <translation>新增截图问答</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="540"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="620"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation>启动截图，并将截图内容发送给UOS AI。也可以直接上传图片。</translation>
+        <translation>启动截图，并将截图内容发送给小U同学。也可以直接上传图片。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="541"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="621"/>
         <source>OK</source>
         <translation>好的</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="542"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="622"/>
         <source>Next</source>
         <translation>下一个</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="543"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="623"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
         <translation>新增【隐私对话】模式，在该对话模式下，聊天记录不会保存。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="544"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="624"/>
         <source>No text extracted</source>
         <translation>未提取到文字</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="545"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="625"/>
         <source>Image size exceeds 15 MB</source>
         <translation>图片大小超过15M</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="548"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="628"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
         <translation>打开知识库后，会基于知识库回答问题。回答速度受机器性能和知识库数量影响。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="549"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="629"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
         <translation>在选中任意指令或MCP时，知识库不可用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="550"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="630"/>
         <source>MCP is disabled while the knowledge base is active.</source>
         <translation>在使用知识库时，MCP功能不可用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="551"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="631"/>
         <source>Commands disabled while knowledge base is active.</source>
         <translation>在使用知识库时，指令功能不可用。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="552"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="632"/>
         <source>Copy succeeded.</source>
         <translation>复制成功。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="553"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="633"/>
         <source>Copy failed. Please try again.</source>
         <translation>复制失败，请重试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="554"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="634"/>
         <source>Searching</source>
         <translation>搜索中</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="555"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="635"/>
         <source>%1 reference documents have been obtained (%2s)</source>
         <translation>搜索到%1个参考文档（用时%2秒）</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="556"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="636"/>
         <source>Clear History</source>
         <translation>清除历史记录</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="557"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="637"/>
         <source>Delete all records?</source>
         <translation>是否要删除全部记录？</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="558"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="638"/>
         <source>Once deleted, the content cannot be recovered!</source>
         <translation>删除后，内容将无法恢复！</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="559"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="639"/>
         <source>Recommend official models</source>
         <translation>推荐使用官方模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="560"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="640"/>
         <source>Disable MCP</source>
         <translation>关闭MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="563"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="643"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
         <translation>推荐使用官方模型“DeepSeek-试用账号”</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="564"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="644"/>
         <source>Quick Open</source>
         <translation>快速唤起</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="565"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="645"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
         <translation>MCP服务升级自动模式</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="566"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="646"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
         <translation>MCP服务升级自动模式，仅需打开</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="567"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="647"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
         <translation>按钮即可使用所有MCP服务。您可以一句话完成系统设置、文件处理等自动化任务。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="568"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="648"/>
         <source>Adding MCP Server has been moved to Settings.</source>
         <translation>添加MCP服务移至设置</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="569"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="649"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
         <translation>如需添加更多MCP服务，请到“设置-MCP服务”中添加。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="570"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="650"/>
         <source>Got it</source>
         <translation>知道了</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="571"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="651"/>
         <source>Complimentary Model Credits</source>
         <translation>【福利】模型额度赠送</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="572"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="652"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
         <translation>当前系统赠送的模型DeepSeek-试用账号，每月初自动刷新免费额度，让您畅用无忧。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="573"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="653"/>
         <source>Claim Credits</source>
         <translation>领取额度</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="574"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="654"/>
         <source>Get a free account</source>
         <translation>领取免费账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="575"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="655"/>
         <source>Claim Free Credits</source>
         <translation>领取免费额度</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="576"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="656"/>
         <source>Successfully Claimed</source>
         <translation>领取成功</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="577"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="657"/>
         <source>Failed to Claim. Please Try Again.</source>
         <translation>领取失败，请再试一次</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="578"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="658"/>
         <source>Enable MCP Server&amp;</source>
         <translation>开启MCP服务&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="579"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="659"/>
         <source>Disable MCP Server</source>
         <translation>关闭MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="580"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="660"/>
         <source>Configure MCP Server</source>
         <translation>配置MCP服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="581"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="661"/>
         <source>Enabling MCP Server Features</source>
         <translation>启用MCP服务功能</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="582"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="662"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
         <translation>部分三方MCP服务器功能存在一定风险，请您谨慎识别和使用。如您启用本服务，您将使用内置工具检测并自动下载必要依赖项，下载过程将产生一定的流量费用，请您悉知风险并谨慎操作。</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="583"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="663"/>
         <source>I have understood and agree to use this service</source>
         <translation>我已悉知并同意使用该服务</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="1075"/>
+        <location filename="../src/gui/web/systemchannel.cpp" line="1341"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation>UOS AI随航/写作</translation>
+        <translation>AI随航/写作</translation>
     </message>
 </context>
 <context>
@@ -5659,39 +6263,39 @@ Ctrl+Enter换行</translation>
         <translation>您的命令已执行。</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1748"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1747"/>
         <source>Failed to rename file %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1754"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1753"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1883"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1882"/>
         <source>Email client has been opened, please confirm to send</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2015"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2014"/>
         <source>App store has been opened, preparing to install application: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2027"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2026"/>
         <source>App store target is empty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2038"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2037"/>
         <source>Failed to open App Store target: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2043"/>
+        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="2042"/>
         <source>App store has been opened for: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5736,7 +6340,7 @@ Error details:
     <message>
         <location filename="../src/assistant/uosclaw.cpp" line="37"/>
         <source>Enable eye protection mode</source>
-        <translation type="unfinished">开启护眼模式</translation>
+        <translation>开启护眼模式</translation>
     </message>
 </context>
 <context>
@@ -5755,9 +6359,9 @@ Error details:
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
+        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="107"/>
         <source>UOS AI Assistant Update Log</source>
-        <translation>UOS AI助手更新记录</translation>
+        <translation>小U同学更新记录</translation>
     </message>
 </context>
 <context>
@@ -5765,7 +6369,7 @@ Error details:
     <message>
         <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation>UOS AI 用户使用协议</translation>
+        <translation>小U同学用户使用协议</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
@@ -5773,7 +6377,7 @@ Error details:
         <translation>我确认我已满十八周岁；我知悉并同意，我通过本应用发送与接收的内容均是直接与大模型服务商进行数据交换，与统信软件无关。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
+        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="124"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
         <translation>我同意参与本应用的用户体验计划，授权统信软件收集我使用本应用发送的内容、发送内容的时间、请求大模型的类型、所在的应用和文生图是否成功，以改善服务质量、提升操作体验。（若您拒绝提供前述信息，也不会影响本应用的正常使用。）</translation>
     </message>
@@ -5781,94 +6385,94 @@ Error details:
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="78"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="79"/>
         <source>Welcome to UOS AI</source>
-        <translation>欢迎使用UOS AI</translation>
+        <translation>欢迎使用小U同学</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="84"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="90"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation>UOS AI，您的智能助手，旨在提高您的工作效率，享受高品质的工作体验。</translation>
+        <translation>小U同学，您的智能助手，旨在提高您的工作效率，享受高品质的工作体验。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="110"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Get a free account</source>
         <translation>领取免费账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="133"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="154"/>
         <source>Add Model</source>
         <translation>添加模型</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="140"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="166"/>
         <source>Start using</source>
         <translation>开始使用</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="284"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="286"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="310"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="312"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation>我确认我已满十八周岁；我知悉并同意&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;《UOS AI 用户使用协议》&lt;/a&gt;，且我通过本应用发送与接收的内容均是直接与大模型服务商进行数据交换，与统信软件无关。</translation>
+        <translation>我确认我已满十八周岁；我知悉并同意&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;《小U同学用户使用协议》&lt;/a&gt;，且我通过本应用发送与接收的内容均是直接与大模型服务商进行数据交换，与统信软件无关。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="288"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="314"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
         <translation>领取账号，则表示知晓并同意活动条款，&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;活动详情&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="373"/>
         <source>UOS AI Trial Account</source>
-        <translation>UOS AI试用账号</translation>
+        <translation>小U同学试用账号</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="355"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="369"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="395"/>
         <source>Save failed, please try again later</source>
         <translation>保存失败，请稍后重试</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="356"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="370"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="406"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="382"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="396"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="423"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="432"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>确 定</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="383"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="409"/>
         <source>Trial account received successfully.</source>
-        <translation>UOS AI试用账号领取成功！</translation>
+        <translation>小U同学试用账号领取成功！</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="386"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="412"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
         <translation>试用账号使用次数和使用时长有限，请及时配置个人专属模型账号！详见活动详情。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="414"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="415"/>
         <source>Start trial</source>
         <comment>button</comment>
         <translation>开始试用</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="396"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="422"/>
         <source>The free account activity ends.</source>
         <translation>免费账号活动结束。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="405"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="431"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>连接失败，请检查是否连接了互联网，或稍后再试。</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="426"/>
+        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="452"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
         <translation>我同意参与本应用的用户体验计划，授权统信软件收集我使用本应用发送的内容、发送内容的时间、请求大模型的类型、所在的应用和文生图是否成功，以改善服务质量、提升操作体验。（若您拒绝提供前述信息，也不会影响本应用的正常使用。）</translation>
     </message>
@@ -5965,7 +6569,7 @@ Error details:
     <message>
         <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI随航</translation>
+        <translation>AI随航</translation>
     </message>
     <message>
         <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>

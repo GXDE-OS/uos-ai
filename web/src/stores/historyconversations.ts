@@ -1,6 +1,8 @@
 import { defineStore } from "pinia";
 import type { BatchOperateState, AssistantFilterTag } from "@/types/historyconversation";
-import { useConversationManagerStore, useBackendStore } from "@/stores";
+import { useConversationManagerStore, useBackendStore, useAssistantInfosStore, useModelInfosStore } from "@/stores";
+import { AssistantID, type Assistant } from "@/types/assistant";
+import { createId } from "@/utils/date";
 
 export const useHistoryConversationStore = defineStore("historyconversation", {
     state: () => ({
@@ -15,25 +17,27 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
         }, // 筛选条件
         assistantFilterTags: [] as AssistantFilterTag[], // 智能体筛选标签列表
         openedMenuId: null as string | null, // 当前打开的菜单 ID，格式为 "source:conversationId"，如 "sidebar:xxx" 或 "history:xxx"
+        isSearching: false, // 搜索等待状态
+        isInitialLoading: false, // 初始加载状态
     }),
 
     getters: {
         // 获取历史会话列表（直接引用 conversationManagerStore）
         getHistoryConversations: () => {
-            return useConversationManagerStore().getConversationIndexList;
+            return useConversationManagerStore().getHistoryConversationIndexList;
         },
         // 获取筛选后的历史会话列表
         getFilteredHistoryConversations: (state) => {
-            let filtered = useConversationManagerStore().getConversationIndexList;
+            let filtered = useConversationManagerStore().getHistoryConversationIndexList;
 
             // 按搜索关键词筛选
-            if (state.filterCondition.searchKeyword) {
-                const keyword = state.filterCondition.searchKeyword.toLowerCase();
-                filtered = filtered.filter(
-                    (conv) =>
-                        conv.title.toLowerCase().includes(keyword) || conv.introduction.toLowerCase().includes(keyword),
-                );
-            }
+            // if (state.filterCondition.searchKeyword) {
+            //     const keyword = state.filterCondition.searchKeyword.toLowerCase();
+            //     filtered = filtered.filter(
+            //         (conv) =>
+            //             conv.title.toLowerCase().includes(keyword) || conv.introduction.toLowerCase().includes(keyword),
+            //     );
+            // }
 
             // 按智能体筛选
             if (state.filterCondition.selectedAssistants.length > 0) {
@@ -46,9 +50,13 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
         getBatchOperateState: (state) => state.batchOperateState,
         // 获取选中的会话数量
         getSelectedCount: (state) => state.batchOperateState.selectedIds.length,
+        // 是否搜索等待中
+        getIsSearching: (state) => state.isSearching,
+        // 是否初始加载中
+        getIsInitialLoading: (state) => state.isInitialLoading,
         // 检查是否全选
         isAllSelected: (state) => {
-            const filtered = useConversationManagerStore().getConversationIndexList.filter(
+            const filtered = useConversationManagerStore().getHistoryConversationIndexList.filter(
                 (conv) =>
                     state.filterCondition.selectedAssistants.length === 0 ||
                     state.filterCondition.selectedAssistants.includes(conv.assistant),
@@ -58,13 +66,31 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
     },
 
     actions: {
+        // 设置搜索等待状态
+        setIsSearching(value: boolean) {
+            this.isSearching = value;
+        },
+        // 设置初始加载状态
+        setIsInitialLoading(value: boolean) {
+            this.isInitialLoading = value;
+        },
         // 获取历史会话数据
         async fetchHistoryConversations() {
+            // 添加一个“全部”标签
+            this.assistantFilterTags = [
+                {
+                    id: "all",
+                    name: useBackendStore().translate("All"),
+                    isSelected: false,
+                },
+            ];
+
             const conversationManagerStore = useConversationManagerStore();
-            await conversationManagerStore.loadConversationIndexList(useBackendStore()); // 获取会话索引列表
+            await conversationManagerStore.loadConversationIndexList(useBackendStore()); // 获取历史会话索引列表
+            // await conversationManagerStore.loadHistoryConversationIndexList(useBackendStore()); // 获取历史会话索引列表(搜索)
 
             // 从会话列表中提取智能体信息，去重后生成筛选标签
-            const conversationList = useConversationManagerStore().getConversationIndexList;
+            const conversationList = useConversationManagerStore().getHistoryConversationIndexList;
             const assistantMap = new Map<string, string>(); // 使用 Map 去重，key 为 assistant id，value 为 assistant_name
 
             conversationList.forEach((conv) => {
@@ -74,18 +100,13 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
             });
 
             // 初始化智能体筛选标签
-            this.assistantFilterTags = Array.from(assistantMap.entries()).map(([id, name]) => ({
-                id,
-                name,
-                isSelected: false,
-            }));
-
-            // 添加一个“全部”标签
-            this.assistantFilterTags.unshift({
-                id: "all",
-                name: useBackendStore().translate("All"),
-                isSelected: false,
-            });
+            this.assistantFilterTags.push(
+                ...Array.from(assistantMap.entries()).map(([id, name]) => ({
+                    id,
+                    name,
+                    isSelected: false,
+                })),
+            );
 
             // 重置智能体筛选标签状态
             this.toggleSelectAllAssistants();
@@ -136,12 +157,30 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
             await useBackendStore().requestConversation("deleteConversation", conversationIds);
 
             // 保存当前筛选的智能体（排除"all"）
-            const previousSelectedAssistants = this.filterCondition.selectedAssistants.filter(
-                (id) => id !== "all",
-            );
+            const previousSelectedAssistants = this.filterCondition.selectedAssistants.filter((id) => id !== "all");
 
             // 重新获取历史会话数据
             await this.fetchHistoryConversations();
+
+            // 检查是否删除了当前会话
+            if (conversationIds.includes(useConversationManagerStore().getCurrentConversationId)) {
+                // 会话管理器创建对话
+                const conversationId = createId(); // 初始化会话ID，使用当前时间戳
+                const assistantId = AssistantID.UOS_AI;
+                // 切换到默认助手
+                useAssistantInfosStore().setCurrentAssistant(
+                    useAssistantInfosStore().getAssistantById(assistantId) as Assistant,
+                );
+                // 加载默认助手的模型列表
+                await useModelInfosStore().loadModelList(assistantId);
+
+                // 创建默认会话
+                await useConversationManagerStore().createConversation(
+                    conversationId,
+                    assistantId,
+                    useModelInfosStore().getCurrentModel?.id || "", // TODO: 暂时使用当前模型
+                );
+            }
 
             // 如果之前有特定的智能体筛选，检查是否还有该智能体的会话
             if (previousSelectedAssistants.length > 0) {
@@ -184,6 +223,8 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
         updateFilterCondition(condition: { searchKeyword?: string; selectedAssistants?: string[] }) {
             if (condition.searchKeyword !== undefined) {
                 this.filterCondition.searchKeyword = condition.searchKeyword;
+                this.setIsSearching(true);
+                useBackendStore().requestConversation("searchConversations", condition.searchKeyword);
             }
             if (condition.selectedAssistants !== undefined) {
                 this.filterCondition.selectedAssistants = condition.selectedAssistants;
@@ -237,7 +278,16 @@ export const useHistoryConversationStore = defineStore("historyconversation", {
                 searchKeyword: "",
                 selectedAssistants: [],
             });
-            this.assistantFilterTags = [];
+            this.assistantFilterTags = [
+                {
+                    id: "all",
+                    name: useBackendStore().translate("All"),
+                    isSelected: false,
+                },
+            ];
+            this.setIsSearching(false);
+            this.setIsInitialLoading(false);
+            useConversationManagerStore().setHistoryConversationIndexList([]);
         },
     },
 });

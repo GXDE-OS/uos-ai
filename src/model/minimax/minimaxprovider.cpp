@@ -24,7 +24,13 @@ AbstractModel* MiniMaxProvider::createModel(const ModelAccountPtr &acc)
         return nullptr;
     }
 
+    // 开启回传 reasoning 功能
+    QVariantHash parameters;
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
+
     MiniMaxChatModel *model = new MiniMaxChatModel();
+
+    model->setParameters(parameters);
     model->setAccount(acc);
     model->setApiHost(host());
     
@@ -33,7 +39,7 @@ AbstractModel* MiniMaxProvider::createModel(const ModelAccountPtr &acc)
 
 QString MiniMaxProvider::host()
 {
-    return "https://api.minimax.io/v1";
+    return "https://api.minimaxi.com/v1";
 }
 
 } // namespace uos_ai

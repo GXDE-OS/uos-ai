@@ -11,23 +11,21 @@ import org.deepin.ds 1.0
 import org.deepin.dtk 1.0 as D
 import org.deepin.ds.dock 1.0
 
-AppletItem {
+AppletDockItem {
     id: aibar
-    property bool shouldVisible: Applet.visible
-    property int dockSize: Panel.rootObject.dockSize
-    property int dockOrder: 26
-    property bool useColumnLayout: Panel.position % 2
+    dockOrder: 26
     property ListModel itemModel: ListModel{}
     property int iconCount: 1
     property bool meetingIconVisible: true
+    property bool isUseColumnLayout: Panel.position % 2
     property var meetAssistantStatus: Applet.getNowMeetAssistantStatus()
     property point iconPoint: Qt.point(0, 0)
     property var iconWidth : Panel.rootObject.dockItemMaxSize * 2 / 3 > 36 ? 36 : Panel.rootObject.dockItemMaxSize * 2 / 3
-    implicitWidth: useColumnLayout ? Panel.rootObject.dockSize : iconWidth * iconCount + 10
-    implicitHeight: useColumnLayout ? iconWidth * iconCount + 10 : Panel.rootObject.dockSize
+    implicitWidth: isUseColumnLayout ? Panel.rootObject.dockSize : iconWidth * iconCount + 10
+    implicitHeight: isUseColumnLayout ? iconWidth * iconCount + 10 : Panel.rootObject.dockSize
     PanelToolTip {
         id: toolTip
-        text: qsTr("UOS AI Bar")
+        text: qsTr("UOS AI")
         toolTipX: DockPanelPositioner.x
         toolTipY: DockPanelPositioner.y
     }
@@ -48,7 +46,7 @@ AppletItem {
         Loader {
             anchors.fill: parent
             //判断当前任务栏位置，加载不同component
-            sourceComponent: useColumnLayout ? verticalLayoutView : horizontalLayoutView
+            sourceComponent: isUseColumnLayout ? verticalLayoutView : horizontalLayoutView
         }
     }
 
@@ -125,7 +123,6 @@ AppletItem {
                         anchors.fill: parent
                         onClicked: {
                             console.info("Opening meeting assistant")
-                            
                             Applet.onClickRecommend()
                         }
                     }

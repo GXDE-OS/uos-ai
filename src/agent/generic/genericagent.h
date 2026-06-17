@@ -25,6 +25,10 @@ public:
      */
     bool initialize() override;
 
+    void setSearchedContent(const QString &content) {
+        searchedContent = content;
+    }
+
 protected:
     /**
      * 获取系统提示词
@@ -45,6 +49,9 @@ protected:
      * @param {ToolCallResult} result - 工具调用结果
      */
     void handleCardData(const ToolCallResult &result);
+
+private:
+    QString searchedContent;
 };
 
 } // namespace uos_ai

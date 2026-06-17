@@ -52,6 +52,7 @@ option(ENABLE_AGENT_PLUGIN "Enable Agent Plugin" ON)
 option(ENABLE_MODEL_PLUGINS "Enable Model Plugins" OFF)
 option(ENABLE_LOCAL_MODEL "Enable Local Model" ON)
 option(ENABLE_AI_BAR "Enable AI Bar" OFF)
+option(ENABLE_TREELAND_SHORTCUTS "Enable Treeland Shortcuts" OFF)
 option(ENABLE_TRAY_PLUGIN "Build Tray Plugin" ON)
 option(ENABLE_MCP "Enable MCP Server" ON)
 option(ENABLE_CHATBOT "Enable ChatBot" ON)
@@ -88,6 +89,8 @@ if (${BUILD_OS_VERSION} MATCHES "25")
     set(COMPILE_ON_V23 TRUE)
 
     set(ENABLE_AI_BAR ON)
+
+    set(ENABLE_TREELAND_SHORTCUTS ON)
 
     if (NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64|aarch64")
         set(ENABLE_MCP OFF)
@@ -159,6 +162,10 @@ if (ENABLE_AI_BAR)
     add_subdirectory(plugin-aibar)
     set(ENABLE_TRAY_PLUGIN OFF)
     add_definitions(-DENABLE_AI_BAR)
+endif()
+
+if (ENABLE_TREELAND_SHORTCUTS)
+    add_subdirectory(shortcuts)
 endif()
 
 if (ENABLE_TRAY_PLUGIN)

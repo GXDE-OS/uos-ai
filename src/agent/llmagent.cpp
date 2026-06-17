@@ -208,6 +208,11 @@ void LlmAgent::cancel()
         m_llm->cancel();
 }
 
+void LlmAgent::invokeAction(const QJsonObject &action)
+{
+    return ;
+}
+
 QList<ModelMessage> LlmAgent::initChatMessages(const ModelMessage &question, const QList<ModelMessage> &history) const
 {
     QList<ModelMessage> initialMessages;

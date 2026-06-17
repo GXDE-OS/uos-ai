@@ -227,6 +227,11 @@ html.dark {
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }
 
+/* Qt5 兼容降级：移除 inset */
+html[data-legacy-css] .writing-assistant__templates-tab.is-active {
+    box-shadow: none;
+}
+
 /* WebKit 滚动条样式 */
 .writing-assistant__templates-grid::-webkit-scrollbar {
     width: 6px;

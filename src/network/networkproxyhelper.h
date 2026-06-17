@@ -21,18 +21,27 @@ Q_SIGNALS:
     void proxySettingsChanged();
 };
 
-void enableQtSystemProxyConfiguration();
+class ProxySettingsWrapper
+{
+public:
+    enum ProxyMode{
+      ProxyNone,
+      ProxyAuto,
+      ProxyManual
+    };
+static void enableQtSystemProxyConfiguration();
 
-QNetworkProxy resolveProxyForUrl(const QUrl &url, QString *source = nullptr);
+static QNetworkProxy resolveProxyForUrl(const QUrl &url, QString *source = nullptr);
 
-void applyProxyToNetworkAccessManager(QNetworkAccessManager *manager, const QUrl &url,
+static void applyProxyToNetworkAccessManager(QNetworkAccessManager *manager, const QUrl &url,
                                       const QLoggingCategory &category,
                                       const char *context);
 
-void applyProxyToWebSocket(QWebSocket *socket, const QUrl &url,
+static void applyProxyToWebSocket(QWebSocket *socket, const QUrl &url,
                            const QLoggingCategory &category,
                            const char *context);
 
-QString describeProxy(const QNetworkProxy &proxy);
+static QString describeProxy(const QNetworkProxy &proxy);
 
+};
 } // namespace uos_ai

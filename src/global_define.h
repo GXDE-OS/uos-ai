@@ -86,7 +86,8 @@ enum ModelAbility {
     MaText = 1,
     MaImage = 1 << 1,
     MaToolCall = 1 << 2,
-    MaReasoning = 1 << 3
+    MaReasoning = 1 << 3,
+    MaPreservedThinking = 1 << 4
 };
 
 Q_DECLARE_FLAGS(ModelAbilities, ModelAbility);
@@ -110,6 +111,8 @@ enum ContentType {
     CntCommandCard, // 指令卡片
     CntGuessYouWant,  // 猜你想要
     CntError,  // 错误
+    CntWebSearch,  // 网页搜索
+    CntIComps,  // 交互组件卡片
 };
 
 enum NormalStatus {
@@ -117,6 +120,13 @@ enum NormalStatus {
     NsCompleted,
     NsFailed,
     NsCanceled
+};
+
+enum SearchStatus {
+    SsSearching = 0,
+    SsReading,
+    SsCompleted,
+    SsFailed
 };
 
 enum GErrorType {

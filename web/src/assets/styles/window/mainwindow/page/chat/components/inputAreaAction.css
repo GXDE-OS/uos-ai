@@ -41,11 +41,11 @@
     transition: all 0.3s ease;
 }
 
-.input-area__send-button:hover {
+.input-area__send-button:hover:not(.icon-button-disabled):not(.input-area__send-button--blocked) {
     filter: brightness(1.2);
 }
 
-.input-area__send-button:active {
+.input-area__send-button:active:not(.icon-button-disabled):not(.input-area__send-button--blocked) {
     filter: brightness(1.5);
 }
 

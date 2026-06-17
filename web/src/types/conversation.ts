@@ -8,6 +8,7 @@ export interface Root {
     cur_next: string; // 子节点，对应第一个问题的id, 发送问题时更新
     model: string; // 模型ID
     next: Array<string>; // 下一个问题的id列表, 发送第一个问题时更新, TODO：重新编辑问题时追加
+    extension: Record<string, any>; // 扩展字段（如 always_approve 等）
 }
 
 export interface Message {
@@ -74,8 +75,11 @@ export interface RenderMessageItem {
         | DocCardData
         | ToolUseData
         | ErrorMsg
-        | CommandCardData; // 渲染数据
-    type: string; // 类型：text, thinking, agent_step, tool, outline, doc_card, error, command_card 等
+        | CommandCardData
+        | WebSearchData
+        | BashApproveData
+        | FileChangeApproveData; // 渲染数据
+    type: string; // 类型：text, thinking, web_search, agent_step, tool, outline, doc_card, error, command_card, interactive_components 等
     isNew?: boolean; // 仅内存标记：流式新生成时为 true，历史加载时永远不携带此字段
 }
 
@@ -176,6 +180,25 @@ export interface AgentStepData {
     entries?: AgentStepEntry[]; // 有序条目：流式文本段 + 工具调用
 }
 
+// Online Search 数据结构（CntWebSearch/ type="web_search"）
+export interface WebSearchData {
+    title: string; // 搜索标题
+    status: WebSearchStatus; // "searching"| "searched" | "reading" | "completed" | "failed"
+    content?: WebSearchContent[]; // 搜索结果列表
+}
+
+export enum WebSearchStatus {
+    SEARCHING = 0,
+    READING = 1,
+    COMPLETED = 2,
+    FAILED = 3,
+}
+
+export interface WebSearchContent {
+    url: string; // 搜索结果URL
+    title: string; // 搜索结果标题
+}
+
 // 大纲引用数据（render_message 中存储的引用格式）
 export interface OutlineRefData {
     id: string; // 关联的文章 ID
@@ -221,6 +244,39 @@ export type ErrorMsg = {
     http_error?: number; // HTTP 错误码 （仅当 error 为 HttpError 时有效）
 };
 
+// 交互组件状态 "pending":待批准；"reject":拒绝；"accept":接受
+export enum InteractiveCompStatus {
+    PENDING = "pending", // 待确认
+    APPROVED = "approved", // 已确认
+    REJECTED = "rejected", // 已拒绝
+    CANCELED = "canceled", // 已取消（用户点击停止按钮）
+}
+
+// 交互组件子类型
+export type InteractiveCompType = "bash_approve" | "file_change_approve";
+
+// Bash 命令确认卡片数据
+export interface BashApproveData {
+    id: string; // request_id
+    ic_type: InteractiveCompType;
+    title: string; // 卡片标题
+    command: string; // bash 命令
+    status: InteractiveCompStatus; // 状态
+}
+
+// 文件变更确认卡片数据
+export interface FileChangeApproveData {
+    id: string; // request_id
+    ic_type: InteractiveCompType;
+    title: string; // 卡片标题
+    status: InteractiveCompStatus; // 状态
+    changes: Array<{
+        path: string;
+        kind: string; // "created" | "modified" | "deleted"
+        is_dir: boolean;
+    }>;
+}
+
 // 设置界面导航参数
 export enum SettingNav {
     NORMAL = 0, // 普通设置
@@ -259,6 +315,7 @@ export enum ConversationStatus {
 // 侧边栏等列表视图使用的会话索引结构，在基础索引上附带当前展示状态。
 export interface ConversationIndexWithStatus extends ConversationIndex {
     conversationStatus: ConversationStatus;
+    hasPendingApproval: boolean;
 }
 
 export enum ConversationScene {

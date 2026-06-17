@@ -12,11 +12,18 @@ import type {
     AgentStepEntry,
     ToolUseData,
     ErrorMsg,
+    WebSearchData,
+    WebSearchContent,
+    BashApproveData,
+    FileChangeApproveData,
 } from "@/types/conversation";
-import { ConversationScene, ConversationStatus, UserType } from "@/types/conversation";
+import { WebSearchStatus } from "@/types/conversation";
+import { ConversationScene, ConversationStatus, InteractiveCompStatus, UserType } from "@/types/conversation";
+import { ContentType } from "@/types/message";
 // import cloneDeep from "lodash/cloneDeep";
 import { useBackendStore } from "@/stores";
 import { getConversationSceneBehavior } from "@/utils/mainwindow/conversationScenes";
+import { hasPendingApprovalInConversation } from "@/utils/mainwindow/conversationPendingApproval";
 
 type ToolLikeData = Pick<ToolUseData, "name" | "status" | "index" | "params" | "result" | "display_content">;
 
@@ -183,6 +190,11 @@ export class ConversationRecord {
         return this._conversationStatus;
     }
 
+    // 是否存在待审批交互卡片，用于侧边栏展示优先级。
+    get hasPendingApproval(): boolean {
+        return hasPendingApprovalInConversation(this.root, this.messages);
+    }
+
     // 获取会话活动时间
     get activityAt(): number | null {
         return this._activityAt;
@@ -254,7 +266,7 @@ export class ConversationRecord {
             render_message: [
                 {
                     data: { content: "" },
-                    type: "text",
+                    type: ContentType.CntText,
                 },
             ],
             role: UserType.ASSISTANT, // AI role
@@ -281,23 +293,30 @@ export class ConversationRecord {
             const messageType = parsedMessage.type || "text";
             console.log("<<<<<<<<<<    parsedMessage:", parsedMessage);
 
-            if (messageType === "outline") {
+            if (messageType === ContentType.CntOutline) {
                 // 处理大纲类型消息
                 const outlineData: OutlineData = parsedMessage.data;
                 console.log("<<<<<<<<<<    outlineData:", outlineData);
                 this.updateAnsweringOutlineMessage(outlineData);
-            } else if (messageType === "thinking") {
+            } else if (messageType === ContentType.CntReasoning) {
                 // 模型思考流：累积到 CntReasoning 渲染块
                 const content = parsedMessage.data?.reasoning_content || "";
                 this.appendThinkingContent(content);
-            } else if (messageType === "agent_step") {
+            } else if (messageType === ContentType.CntAgentStep) {
                 // Agent 任务步骤：管理 CntAgentStep 渲染块
                 const title = (parsedMessage.data?.title as string) || "";
                 const status = (parsedMessage.data?.status as number) ?? 0;
                 const content = (parsedMessage.data?.content as string) || "";
                 this.handleAgentStepMessage(title, status, content);
-            } else if (messageType === "text") {
+            } else if (messageType === ContentType.CntWebSearch) {
+                // Web Search：管理 CntWebSearch 渲染块
+                const title = (parsedMessage.data?.title as string) || "";
+                const status = (parsedMessage.data?.status as WebSearchStatus) ?? 0;
+                const content = (parsedMessage.data?.content as WebSearchContent[]) || [];
+                this.handleWebSearchMessage(title, status, content);
+            } else if (messageType === ContentType.CntText) {
                 this.finalizeThinkingBlockIfNeeded();
+                this.finalizeWebSearchBlockIfNeeded();
                 const content = parsedMessage.data?.content || "";
                 const activeBlock = this.getActiveAgentStepBlock();
                 if (activeBlock) {
@@ -305,7 +324,7 @@ export class ConversationRecord {
                 } else {
                     this.updateAnsweringMessage(content);
                 }
-            } else if (messageType === "tool") {
+            } else if (messageType === ContentType.CntTool) {
                 const activeBlock = this.getActiveAgentStepBlock();
                 if (activeBlock) {
                     const toolData = this.normalizeToolUseData(parsedMessage.data);
@@ -313,12 +332,14 @@ export class ConversationRecord {
                 } else {
                     this.handleToolLikeMessage(parsedMessage.data);
                 }
-            } else if (messageType === "doc_card") {
+            } else if (messageType === ContentType.CntDocCard) {
                 // doc_card 始终推到 render_message 末端，不进入推理块细节
                 this.addDocCardRenderItem(parsedMessage.data);
-            } else if (messageType === "command_card") {
+            } else if (messageType === ContentType.CntCommandCard) {
                 // command_card 处理，添加到 render_message
                 this.addCommandCardRenderItem(parsedMessage.data);
+            } else if (messageType === ContentType.CntIComps) {
+                this.addICompRenderItem(parsedMessage.data);
             } else {
                 // 其他未知类型：仅处理 string content
                 const content = parsedMessage.data?.content;
@@ -349,10 +370,16 @@ export class ConversationRecord {
             const elapsedSec = this._thinkingStartTime ? Math.round((Date.now() - this._thinkingStartTime) / 1000) : 0;
             this._thinkingStartTime = 0;
             for (const item of lastMessage.render_message) {
-                if (item.type === "thinking") {
+                if (item.type === ContentType.CntReasoning) {
                     const d = item.data as ReasoningData;
                     d.status = 1;
                     if (elapsedSec > 0 && d.elapsed == null) d.elapsed = elapsedSec;
+                }
+                if (item.type === ContentType.CntWebSearch) {
+                    const d = item.data as WebSearchData;
+                    if (d.status !== WebSearchStatus.COMPLETED && d.status !== WebSearchStatus.FAILED) {
+                        d.status = WebSearchStatus.COMPLETED;
+                    }
                 }
                 // agent_step 块由显式 status=1 消息关闭，无需在此 patch
             }
@@ -366,6 +393,7 @@ export class ConversationRecord {
                 this.root?.id,
                 parsedMessage.id,
                 JSON.stringify(lastMessage.render_message),
+                JSON.stringify(this.root?.extension ?? {}),
             );
 
             // 某些场景只保留内存态，不应落历史文件。
@@ -423,7 +451,7 @@ export class ConversationRecord {
         if (!lastMessage) return;
 
         // 在 render_message 数组中查找 outline 类型的消息
-        const outlineMessage = lastMessage.render_message.find((item) => item.type === "outline");
+        const outlineMessage = lastMessage.render_message.find((item) => item.type === ContentType.CntOutline);
         if (outlineMessage) {
             // 更新现有大纲消息
             outlineMessage.data = outlineData;
@@ -431,7 +459,7 @@ export class ConversationRecord {
             // 没有找到大纲消息，创建新的大纲消息
             lastMessage.render_message.push({
                 data: outlineData,
-                type: "outline",
+                type: ContentType.CntOutline,
             });
         }
     }
@@ -442,7 +470,7 @@ export class ConversationRecord {
         if (!lastMessage) return null;
         return (
             lastMessage.render_message.find(
-                (item) => item.type === "agent_step" && (item.data as AgentStepData).status === 0,
+                (item) => item.type === ContentType.CntAgentStep && (item.data as AgentStepData).status === 0,
             ) ?? null
         );
     }
@@ -503,7 +531,7 @@ export class ConversationRecord {
     finalizeThinkingBlockIfNeeded() {
         const lastMessage = this.getMessage(this._messageId);
         if (!lastMessage) return;
-        const thinking = lastMessage.render_message.find((item) => item.type === "thinking");
+        const thinking = lastMessage.render_message.find((item) => item.type === ContentType.CntReasoning);
         if (!thinking) return;
         const d = thinking.data as ReasoningData;
         if (d.status === 1) return;
@@ -514,17 +542,29 @@ export class ConversationRecord {
         }
     }
 
+    // 将未完成的 web_search 块标记为完成
+    finalizeWebSearchBlockIfNeeded() {
+        const lastMessage = this.getMessage(this._messageId);
+        if (!lastMessage) return;
+        const webSearch = lastMessage.render_message.find((item) => item.type === ContentType.CntWebSearch);
+        if (!webSearch) return;
+        const d = webSearch.data as WebSearchData;
+        // 如果已经是完成或失败状态，不处理
+        if (d.status === WebSearchStatus.COMPLETED || d.status === WebSearchStatus.FAILED) return;
+        d.status = WebSearchStatus.COMPLETED;
+    }
+
     // 追加模型思考文本到 CntReasoning 渲染块，不存在则创建
     appendThinkingContent(content: string) {
         const lastMessage = this.getMessage(this._messageId);
         if (!lastMessage) return;
 
-        const existing = lastMessage.render_message.find((item) => item.type === "thinking");
+        const existing = lastMessage.render_message.find((item) => item.type === ContentType.CntReasoning);
         if (!existing) {
             this._thinkingStartTime = Date.now();
-            lastMessage.render_message.unshift({
+            lastMessage.render_message.push({
                 data: { reasoning_content: content, status: 0 } as ReasoningData,
-                type: "thinking",
+                type: ContentType.CntReasoning,
             });
             return;
         }
@@ -539,7 +579,7 @@ export class ConversationRecord {
         if (!lastMessage) return;
 
         const existing = lastMessage.render_message.find(
-            (item) => item.type === "agent_step" && (item.data as AgentStepData).status === 0,
+            (item) => item.type === ContentType.CntAgentStep && (item.data as AgentStepData).status === 0,
         );
 
         if (status === 0) {
@@ -547,7 +587,7 @@ export class ConversationRecord {
                 // 新步骤开始：创建新 block
                 lastMessage.render_message.push({
                     data: { title, status: 0, content, entries: [] } as AgentStepData,
-                    type: "agent_step",
+                    type: ContentType.CntAgentStep,
                 });
             } else {
                 // 已有活跃步骤：更新标题和内容
@@ -566,13 +606,52 @@ export class ConversationRecord {
         }
     }
 
+    // 处理 Web Search 消息（CntWebSearch）
+    handleWebSearchMessage(title: string, status: WebSearchStatus, content: WebSearchContent[]) {
+        const lastMessage = this.getMessage(this._messageId); // 找到当前待填充消息
+        if (!lastMessage) return;
+
+        const existing = lastMessage.render_message.find((item) => item.type === ContentType.CntWebSearch);
+
+        if (status === WebSearchStatus.FAILED) {
+            // 报错，删除已存在的项，不展示
+            console.warn("Online Search failed:", title, content);
+            if (existing) {
+                const index = lastMessage.render_message.indexOf(existing);
+                if (index !== -1) {
+                    lastMessage.render_message.splice(index, 1);
+                }
+            }
+            return;
+        }
+        if (!existing) {
+            lastMessage.render_message.push({
+                data: { title, status, content } as WebSearchData,
+                type: ContentType.CntWebSearch,
+            });
+        } else {
+            // 处理成功，但是 content 为空，删除该项不展示
+            if (status === WebSearchStatus.COMPLETED && content.length === 0) {
+                const index = lastMessage.render_message.indexOf(existing);
+                if (index !== -1) {
+                    lastMessage.render_message.splice(index, 1);
+                }
+                return;
+            }
+            const d = existing.data as WebSearchData;
+            d.title = title;
+            d.status = status;
+            d.content = content;
+        }
+    }
+
     // 将独立工具消息插入到 render_message，后续状态更新时按同一工具项合并
     upsertAnsweringStandaloneToolMessage(toolData: ToolUseData) {
         const lastMessage = this.getMessage(this._messageId); // 找到当前待填充消息
         if (!lastMessage) return;
 
         const existingItem = this.findMatchingToolLikeEntry(lastMessage.render_message, toolData, (item) => {
-            return item.type === "tool" ? (item.data as ToolUseData) : null;
+            return item.type === ContentType.CntTool ? (item.data as ToolUseData) : null;
         });
 
         if (existingItem) {
@@ -583,7 +662,7 @@ export class ConversationRecord {
         // 顶层工具卡片沿用 tool 类型，兼容现有渲染和持久化解析逻辑
         lastMessage.render_message.push({
             data: { ...toolData },
-            type: "tool",
+            type: ContentType.CntTool,
         });
     }
 
@@ -675,13 +754,13 @@ export class ConversationRecord {
         const lastItem = lastMessage.render_message[lastMessage.render_message.length - 1];
 
         // 如果最后一个条目是text且内容不为空，追加内容
-        if (lastItem && lastItem.type === "text" && "content" in lastItem.data) {
+        if (lastItem && lastItem.type === ContentType.CntText && "content" in lastItem.data) {
             lastItem.data.content += content;
         } else {
             // 否则创建新的text条目
             lastMessage.render_message.push({
                 data: { content },
-                type: "text",
+                type: ContentType.CntText,
             });
         }
 
@@ -703,7 +782,7 @@ export class ConversationRecord {
         lastMessage.render_message.push({
             data,
             isNew: true,
-            type: "doc_card",
+            type: ContentType.CntDocCard,
         });
     }
 
@@ -714,8 +793,48 @@ export class ConversationRecord {
         console.log("Adding command_card to render_message:", data);
         lastMessage.render_message.push({
             data,
-            type: "command_card",
+            type: ContentType.CntCommandCard,
         });
+    }
+
+    addICompRenderItem(data: BashApproveData | FileChangeApproveData) {
+        const lastMessage = this.getMessage(this._messageId);
+        if (!lastMessage) return;
+        const hadPendingApproval = this.hasPendingApproval;
+        lastMessage.render_message.push({
+            data,
+            type: ContentType.CntIComps,
+        });
+        this.emitConversationStateChangeIfPendingApprovalChanged(hadPendingApproval);
+        this.emit("iCompAdded", data, this._messageId, this);
+    }
+
+    updateICompStatus(messageId: string, requestId: string, status: InteractiveCompStatus): void {
+        const message = this.getMessage(messageId);
+        if (!message) return;
+        const hadPendingApproval = this.hasPendingApproval;
+        const icItem = message.render_message.find(
+            (item) =>
+                item.type === ContentType.CntIComps &&
+                (item.data as BashApproveData | FileChangeApproveData).id === requestId,
+        );
+        if (icItem) {
+            (icItem.data as BashApproveData | FileChangeApproveData).status = status;
+            this.emitConversationStateChangeIfPendingApprovalChanged(hadPendingApproval);
+        }
+    }
+
+    updateAlwaysApprove(alwaysApprove: boolean): void {
+        if (this.root) {
+            if (!this.root.extension) {
+                this.root.extension = {};
+            }
+            this.root.extension.always_approve = alwaysApprove;
+        }
+    }
+
+    getAlwaysApprove(): boolean {
+        return this.root?.extension?.always_approve || false;
     }
 
     // 持久化用户编辑后的大纲数据
@@ -728,7 +847,7 @@ export class ConversationRecord {
         }
 
         // 2. 更新 render_message 中的 outline 引用标题（保持引用格式）
-        const outlineItem = targetMessage.render_message.find((item) => item.type === "outline");
+        const outlineItem = targetMessage.render_message.find((item) => item.type === ContentType.CntOutline);
         if (outlineItem) {
             const refData = outlineItem.data as OutlineRefData;
             refData.title = outlineData.title; // 只更新标题，保持引用格式
@@ -751,7 +870,9 @@ export class ConversationRecord {
             return;
         }
 
+        const hadPendingApproval = this.hasPendingApproval;
         message.cur_next = newCurrNext;
+        this.emitConversationStateChangeIfPendingApprovalChanged(hadPendingApproval);
 
         // 从root.cur_next开始遍历，设置当前最后一个消息为currentMessageId
         let currentId = this.root?.cur_next;
@@ -809,7 +930,7 @@ export class ConversationRecord {
         if (!lastMessage) return;
         lastMessage.render_message.push({
             data: data,
-            type: "error",
+            type: ContentType.CntError,
         });
     }
 
@@ -827,10 +948,20 @@ export class ConversationRecord {
 
         if (hasChanged) {
             // 复用现有信号机制通知外层 store，让列表层自己决定如何刷新展示。
-            this.emit("conversationStateChange", {
-                status: this._conversationStatus,
-                updatedAt: this._activityAt,
-            });
+            this.emitConversationStateChange();
+        }
+    }
+
+    emitConversationStateChange() {
+        this.emit("conversationStateChange", {
+            status: this._conversationStatus,
+            updatedAt: this._activityAt,
+        });
+    }
+
+    emitConversationStateChangeIfPendingApprovalChanged(previousValue: boolean) {
+        if (previousValue !== this.hasPendingApproval) {
+            this.emitConversationStateChange();
         }
     }
 

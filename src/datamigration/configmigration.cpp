@@ -53,11 +53,8 @@ bool ConfigMigration::migrateConfigData()
         while (query.next()) {
             int type = query.value("type").toInt();
             QString value = query.value("value").toString();
-            
-            if (type == 1) { // CopilotSwitch = 1
-                newDb->saveConfig(CONFIG_APP_AGREEMENT, value);
-                qCInfo(logMigration) << "Migrated config: CopilotSwitch -> CONFIG_APP_AGREEMENT, value:" << value;
-            } else if (type == 10) { // CopilotThirdPartyMcp = 10
+
+            if (type == 10) { // CopilotThirdPartyMcp = 10
                 newDb->saveConfig(CONFIG_THIRD_PARTY_MCP, value);
                 qCInfo(logMigration) << "Migrated config: CopilotThirdPartyMcp -> CONFIG_THIRD_PARTY_MCP, value:" << value;
             }

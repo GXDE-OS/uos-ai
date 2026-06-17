@@ -160,3 +160,14 @@ html.dark {
         transition: none;
     }
 }
+
+/* Qt5 兼容降级：移除 inset */
+html.dark[data-legacy-css] {
+    --check-button-shadow-active: 0 1px 0 0 rgba(0, 0, 0, 0.4), 0 1px 0 0 rgba(255, 255, 255, 0.07);
+}
+
+html[data-legacy-css] .check-button--checked .check-button__box {
+    box-shadow:
+        0 0 0 1px var(--check-button-color-checked-shadow-base),
+        0 1px 0 0 rgba(0, 0, 0, 0.1);
+}

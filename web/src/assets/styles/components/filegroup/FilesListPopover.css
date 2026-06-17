@@ -22,12 +22,11 @@ html.dark {
     width: 264px;
     background-color: var(--files-list-popover-color-bg);
     border-radius: var(--radius-large);
-    box-shadow:
-        0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
+    box-shadow: var(--files-list-popover-shadow, 0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
         0 0 0 0.5px rgba(255, 255, 255, 0.1),
         0 0 0 0.5px rgba(0, 0, 0, 0.1),
         0 0 0 0.5px rgba(0, 0, 0, 0.1),
-        0 6px 16px 0 rgba(0, 0, 0, 0.2);
+        0 6px 16px 0 rgba(0, 0, 0, 0.2));
     padding: 6px;
     overflow-y: auto;
     max-height: 300px;
@@ -36,6 +35,13 @@ html.dark {
 .files-list-popover--advanced {
     background-color: var(--files-list-popover-color-bg-blur);
     backdrop-filter: blur(30px);
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --files-list-popover-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.1), 0 6px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Scrollbar for popover */

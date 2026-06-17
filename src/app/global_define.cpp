@@ -23,7 +23,9 @@ static const QHash<QString, ContentType> contentTypeMap = {
     {STR_KEY_DOC_CARD, CntDocCard},
     {STR_KEY_COMMAND_CARD, CntCommandCard},
     {STR_KEY_GUESS_YOU_WANT, CntGuessYouWant},
-    {STR_KEY_ERROR, CntError}
+    {STR_KEY_ERROR, CntError},
+    {STR_KEY_WEB_SEARCH, CntWebSearch},
+    {STR_KEY_INTERACTIVE_COMPONENTPS, CntIComps}
 };
 
 QString GlobalUtil::contentTypeToString(ContentType type)

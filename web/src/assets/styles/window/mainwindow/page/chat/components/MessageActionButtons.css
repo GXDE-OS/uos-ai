@@ -172,3 +172,8 @@ html.dark {
         transform: scaleY(1);
     }
 }
+
+/* Qt5 兼容降级：移除 inset */
+html.dark[data-legacy-css] {
+    --message-action-button-hover-box-shadow: none;
+}

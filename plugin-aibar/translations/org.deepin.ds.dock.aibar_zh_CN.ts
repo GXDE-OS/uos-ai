@@ -22,12 +22,17 @@
     <name>main</name>
     <message>
         <location filename="../package/main.qml" line="29"/>
-        <source>UOS AI Bar</source>
-        <translation type="unfinished"></translation>
+        <source>UOS AI</source>
+        <translation>小U同学</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiBar</name>
+    <message>
+        <location filename="../aibar.cpp" line="71"/>
+        <source>UOS AI</source>
+        <translation>小U同学</translation>
+    </message>
     <message>
         <location filename="../aibar.cpp" line="115"/>
         <source>Summarize</source>

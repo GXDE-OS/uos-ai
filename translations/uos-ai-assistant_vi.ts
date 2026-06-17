@@ -2,4911 +2,1118 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="vi">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">Thêm mô hình</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Bắt buộc, vui lòng nhập</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">APISecret</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Tài khoản</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Bắt buộc, để phân biệt nhiều mô hình</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Tùy chọn</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">Tùy chọn. Địa chỉ mặc định sẽ được sử dụng nếu không điền.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">Danh sách mô hình</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Tùy chỉnh</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Không thể kết nối với máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Để cài đặt proxy, vui lòng vào cài đặt proxy hệ thống</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Đến cài đặt</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Tên mô hình</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Tên miền</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Lưu thất bại, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Tên tài khoản đã tồn tại, vui lòng thay đổi</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Không quá 20 ký tự</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Để kiểm tra xem mô hình có khả dụng không, hệ thống gửi thông tin kiểm tra đến mô hình lớn, điều này sẽ tiêu tốn một lượng nhỏ token.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">LLM này đã tồn tại, vui lòng không thêm lại.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Hiện có quá nhiều người truy cập, vui lòng thử lại sau.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">loại</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">Đọc to</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">Không phát hiện thiết bị âm thanh, vui lòng kiểm tra và thử lại.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Nội dung do AI tạo ra chỉ mang tính tham khảo, vui lòng chú ý đến độ chính xác của thông tin.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Sao chép</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">Chỉnh sửa đoạn văn này cho tôi và chỉ đưa ra kết quả mà không có bất kỳ nội dung bổ sung nào.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">Mô hình hiện tại: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Tạo lại</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">tiếng Trung giản thể</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">tiếng Trung phồn thể</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">tiếng Tây Tạng</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">tiếng Anh</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">tiếng Nhật</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">tiếng Đức</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">tiếng Tây Ban Nha</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">tiếng Pháp</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">tiếng Ý</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">tiếng Hàn</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">tiếng Mã Lai</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">tiếng Bồ Đào Nha</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">tiếng Nga</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">tiếng Thái</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">tiếng Việt</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">Tiếp tục Hội thoại</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">Tự động Phát hiện</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Tìm kiếm</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Giải thích</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">Dịch</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Mở rộng</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">Sửa lỗi</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">Thêm vào cơ sở tri thức AI</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">Đã thêm</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Cấu hình Mô hình</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">Đã sao chép</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">Không nhận diện được văn bản.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">Nội dung thêm vào phải nhiều hơn 10 từ</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">Tóm tắt</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">Dán vào Văn bản</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">Tiếp tục viết</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Chỉnh sửa</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">Kết quả dịch bị giới hạn bởi khả năng của mô hình. Nếu bạn không hài lòng với bản dịch, vui lòng chuyển sang các mô hình khác trên trang chủ UOS AI.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">Dịch đoạn văn này sang %1 và đưa ra kết quả rõ ràng.
-văn bản：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">Không thể nhấp</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">Chức năng chỉ có thể sử dụng sau khi khởi động lại bộ gõ. Hướng dẫn như sau:
-
-1. Nhấp chuột phải vào biểu tượng bộ gõ trên thanh tác vụ.
-
-2. Nhấp &quot;Khởi động lại&quot;.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">Đồng ý</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">Điền thất bại</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">Chưa chọn ô nhập liệu, vui lòng chọn ô nhập liệu và điền lại.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">Đồng ý</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">Giải thích đoạn văn này bằng ngôn ngữ đơn giản. Chỉ đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Tóm tắt đoạn văn này và đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Tiếp tục đoạn văn này một cách phù hợp. Không cần quá nhiều từ. Chỉ đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Mở rộng đoạn văn này một cách phù hợp. Không cần văn bản quá dài. Chỉ đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Kiểm tra xem có lỗi chính tả trong đoạn văn này không. Nếu có, chỉ ra vị trí lỗi. Đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">Hiện không có mô hình</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">Đi đến cấu hình</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Lịch sử trò chuyện đã xóa</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Sao chép thành công</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI là trợ lý thông minh trên máy tính, trợ lý cá nhân của bạn! Bạn có thể giao tiếp bằng văn bản hoặc giọng nói, và nó có thể giúp trả lời câu hỏi, cung cấp thông tin và tạo hình ảnh dựa trên mô tả của bạn.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI Theo dõi/Viết</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Quản lý cơ sở kiến thức</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Không thể kết nối đến máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
-    </message>
-</context>
-<context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">Phân tích chức năng thất bại</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">Tệp ứng dụng không tồn tại</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">Khởi động thành công</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">Khởi động thất bại</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished"> Nội dung đầu ra thực thi là </translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Chế độ</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Chế độ cửa sổ</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Chế độ thanh bên</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Cài đặt</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">Nhật ký cập nhật</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Trò chuyện bằng giọng nói</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Xóa</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">Xác nhận xóa %1?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">Sau khi xóa, máy chủ này sẽ không khả dụng. Hãy thận trọng.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="obsolete">Cập nhật</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">Plugin chưa được vector hóa</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">Trước khi dùng [Cơ sở tri thức AI], bạn cần cài plugin vector hóa để chức năng cơ sở tri thức AI hoạt động đúng.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="obsolete">Cài đặt</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">Cơ sở tri thức đang trống</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">Trước khi dùng [Cơ sở tri thức AI], bạn phải thêm tài liệu vào cơ sở tri thức. Sau khi thêm, AI sẽ trả lời câu hỏi dựa trên nội dung bạn đã bổ sung.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">Thêm tệp</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">Tệp sau đây đã hết hạn và không thể dùng. Tiếp tục?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Dùng sau</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Cài ngay</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">Thiếu môi trường MCP</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">Vui lòng vào App Store để cài UOS AI Agent</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">Không phải bây giờ</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Nhận tín dụng</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">Tín dụng miễn phí đã được giao</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">Bạn đã sử dụng hết tín dụng tạo miễn phí cho tài khoản dùng thử. Chúng tôi đã tặng bạn thêm 200 tín dụng miễn phí có hiệu lực trong tháng này. Khám phá thêm nhiều tính năng và mở khóa khả năng vô hạn của UOS AI!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="vanished">Đồng ý</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Nhận thành công</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Nhận thất bại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI là trợ lý thông minh trên máy tính, trợ lý cá nhân của bạn! Bạn có thể giao tiếp với nó bằng văn bản hoặc giọng nói, và nó có thể giúp trả lời câu hỏi, cung cấp thông tin và tạo hình ảnh dựa trên mô tả của bạn.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">Thông tin lưu trữ</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">Xác thực thất bại, số dư không đủ</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">Xác thực thất bại, vượt quá giới hạn hàng ngày</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Hiện có quá nhiều người truy cập, vui lòng thử lại sau.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">Dịch vụ đang gặp sự cố. Vui lòng liên hệ nhóm phát triển để khắc phục.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Lỗi</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">Đồng ý</translation>
+        <translation>Không thể kết nối với máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
     </message>
 </context>
 <context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">Trợ lý Kiến thức Cá nhân chỉ có thể sử dụng sau khi cấu hình cơ sở kiến thức.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Trợ lý Kiến thức Cá nhân chỉ có thể sử dụng sau khi cấu hình plugin mô hình.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Trợ lý Hệ thống Sâu chỉ có thể sử dụng sau khi cấu hình plugin mô hình.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Trợ lý Hệ thống UOS chỉ có thể sử dụng sau khi cấu hình plugin mô hình.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Quản lý Cơ sở Kiến thức</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="obsolete">Máy chủ MCP</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI yêu cầu tài khoản mô hình AI được cấu hình trước khi sử dụng. Vui lòng cấu hình tài khoản mô hình trước.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">Vui lòng cấu hình cơ sở tri thức.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">Vui lòng cài plug-in mô hình.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">Xuất hình ảnh dưới dạng</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Nhận thành công</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Nhận thất bại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Bạn có thể tải lên tối đa 3 tệp hoặc ảnh</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">Dịch đoạn văn bản sau sang tiếng Anh cho tôi.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">Dịch tài liệu sau sang tiếng Trung.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">Từ &apos;Agent&apos; trong ngành AI có nghĩa là gì?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">Vui lòng dịch nội dung sau sang tiếng Trung. Yêu cầu: Chính xác về nghĩa, ngôn ngữ trang trọng và chuyên nghiệp.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">Một số cách thân mật để gọi bạn bè trong tiếng Anh là gì?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">Dịch đoạn văn cổ điển sau sang tiếng Trung hiện đại.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">Tóm tắt</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">Đọc hiệu đính</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Giải thích</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Mở rộng</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">Tiếp tục</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Chỉnh sửa</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">Vui lòng giúp tôi viết bản tóm tắt công việc dựa trên tài liệu này</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">Tôi cần bản tóm tắt công việc cho Dự án A, vui lòng giúp tôi tổ chức các điểm chính</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">Vui lòng tạo bản tóm tắt công việc ngắn gọn dựa trên văn bản đầu vào của tôi</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">Phân tích báo cáo này và trích xuất các điểm chính cho bản tóm tắt công việc</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">Tôi cần bản tóm tắt công việc bao gồm dữ liệu hàng quý, vui lòng tham khảo tệp đính kèm</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">Giúp tôi viết bản tóm tắt công việc nêu bật đóng góp cá nhân</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">Tạo bản tóm tắt công việc từ biên bản cuộc họp, tập trung vào các mục hành động</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">Tôi cần bản tóm tắt công việc song ngữ bằng tiếng Trung và tiếng Anh, vui lòng tham khảo tài liệu được cung cấp</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">Giúp tôi sắp xếp nội dung công việc tháng trước và tạo bản tóm tắt</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">Viết bản tóm tắt công việc dựa trên danh sách nhiệm vụ này, nhấn mạnh trạng thái hoàn thành</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">Kiểm tra lỗi ngữ pháp trong đoạn văn này</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">Giúp tôi tìm lỗi chính tả trong bài viết này</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">Sửa các lựa chọn từ ngữ không phù hợp trong đoạn hội thoại này</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">Sửa các vấn đề về dấu câu trong tài liệu này</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">Sửa lại các diễn đạt không rõ ràng trong văn bản này</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">Chỉnh sửa các lỗi ngôn ngữ trong email này</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">Kiểm tra xem văn bản này có tuân theo quy ước tiếng Anh chuẩn không</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">Sửa các lỗi logic trong báo cáo này</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">Xác định các lỗi ngôn ngữ trong bình luận mã này</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">Sửa các phát biểu mơ hồ trong hợp đồng này</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">Giải thích các nguyên tắc cơ bản của điện toán lượng tử</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">Mô tả quang hợp bằng ngôn ngữ đơn giản</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">Chi tiết cách công nghệ blockchain hoạt động</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">Giải thích thuyết tương đối từ góc độ chuyên môn</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">Sử dụng phép ẩn dụ để mô tả trí tuệ nhân tạo là gì</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">Mô tả biến đổi khí hậu bằng ngôn ngữ đơn giản</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">Giải thích cấu trúc hệ mặt trời cho học sinh tiểu học</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">Mở rộng văn bản này thành 300 từ, tập trung vào chi tiết cảnh và cảm xúc nhân vật</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">Viết lại đoạn văn này thành 500 từ theo phong cách học thuật, thêm dữ liệu hỗ trợ và trích dẫn</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">Mở rộng đoạn văn này với nhiều phép ẩn dụ và biện pháp tu từ để làm nó sinh động hơn</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">Vui lòng mở rộng bài viết ngắn này thành 1000 từ, bổ sung các trường hợp cụ thể và bước thực tế</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">Mở rộng đoạn hội thoại này bằng cách thêm hoạt động tâm lý nhân vật và chi tiết hội thoại</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">Viết lại nội dung tài liệu này thành định dạng báo cáo, bao gồm tóm tắt, nội dung và kết luận</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">Mở rộng mô tả kỹ thuật này thành 800 từ, thêm các thông số kỹ thuật và giải thích biểu đồ</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">Viết lại email này để trang trọng và chuyên nghiệp hơn, bổ sung thông tin nền liên quan</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">Mở rộng câu chuyện này thành 1500 từ, thêm nhiều tình tiết bất ngờ và nền tảng nhân vật</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">Vui lòng mở rộng bản tóm tắt này, nêu bật thành tựu chính và kế hoạch tương lai, không giới hạn số từ</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">Vui lòng tiếp tục viết đoạn văn ngắn này về công nghệ tương lai, tập trung vào cách AI thay đổi cuộc sống hàng ngày, khoảng 300 từ, theo phong cách khoa học phổ thông</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">Giúp tôi mở rộng đoạn cuối của kế hoạch kinh doanh này, nhấn mạnh tiềm năng thị trường và lợi thế cạnh tranh, không giới hạn số từ, phong cách trang trọng</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">Tiếp tục kết thúc câu chuyện cổ tích này, ấm áp và cảm động, nhân vật chính đạt được ước mơ, khoảng 200 từ</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">Vui lòng viết nửa sau của email này, giọng điệu thân thiện và chuyên nghiệp, tập trung vào chi tiết hợp tác, trong vòng 150 từ</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">Mở rộng đoạn tiếp theo của bài du ký này, mô tả cảnh quan thung lũng, sinh động và giàu trí tưởng tượng, khoảng 200 từ</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">Tiếp tục chương tiếp theo của tiểu thuyết trinh thám này, với tình tiết bất ngờ, duy trì sự hồi hộp, không giới hạn số từ</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">Giúp tôi viết kết luận bài phát biểu này, truyền cảm hứng và nhấn mạnh tinh thần đồng đội, khoảng 100 từ</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">Mở rộng phần mô tả hiệu suất của hướng dẫn sản phẩm này, chi tiết và chính xác, khoảng 300 từ</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">Tiếp tục phần mở đầu của câu chuyện tình yêu này, bối cảnh Paris mưa, phong cách lãng mạn, 150 từ</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">Vui lòng viết phần thảo luận của bài báo này, tập trung vào hạn chế của kết quả thí nghiệm, phong cách học thuật, không giới hạn số từ</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">Vui lòng chỉnh sửa văn bản này để trang trọng và chuyên nghiệp hơn cho email kinh doanh</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">Viết lại đoạn văn này để sinh động và hấp dẫn hơn cho bài đăng mạng xã hội</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">Tôi cần tinh chỉnh phần tóm tắt của bài báo học thuật này để ngắn gọn và rõ ràng hơn trong vòng 200 từ</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">Chỉnh sửa đoạn hội thoại này để tự nhiên và trôi chảy hơn cho giao tiếp nói</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">Nâng cao mô tả sản phẩm này để nổi bật các tính năng cao cấp và sáng tạo cho khách hàng tiềm năng</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">Giúp tôi chỉnh sửa thư xin việc này để thuyết phục và cá nhân hóa hơn</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">Viết lại bài đăng blog này để hài hước và hấp dẫn hơn với độc giả trẻ</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">Tinh chỉnh phần mở đầu của báo cáo này để hấp dẫn hơn</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">Tôi cần chỉnh sửa tài liệu kỹ thuật này để dễ hiểu hơn với người không chuyên</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">Hãy giúp tôi viết lại lá thư xin lỗi này để nghe chân thành và phù hợp hơn</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">Bài báo</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">Bài phát biểu</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">Dàn ý</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">Thông báo</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">Bài đăng</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">Báo cáo công việc</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">Báo cáo nghiên cứu</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">Hãy tóm tắt những điểm chính của tài liệu này</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">Liệt kê các ý chính của tập tin này cho tôi</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">Tóm tắt ý chính của đoạn văn này</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">Dùng ngôn ngữ ngắn gọn để tóm tắt bài viết này</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">Tôi cần bản tóm tắt báo cáo này, không quá 200 từ</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">Trích xuất dữ liệu chính và kết luận từ tài liệu này</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">Tóm tắt các phần chính và điểm quan trọng của nội dung dài này</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">Giúp tôi tóm tắt phương pháp nghiên cứu và kết quả của bài báo này</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">Hãy tóm tắt các điểm chính của bài viết này dưới dạng bảng</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">Tóm tắt các bước thực hiện trong tập tin này bằng gạch đầu dòng</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">Hiển thị các điều khoản chính của hợp đồng này dưới dạng danh sách gạch đầu dòng</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">Tạo dàn ý cho báo cáo về xu hướng AI, bao gồm công nghệ, đạo đức và ứng dụng</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">Sắp xếp bài báo đã tải lên thành dàn ý khung nghiên cứu có cấu trúc</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">Tôi cần dàn ý kế hoạch kinh doanh bao gồm phân tích thị trường, mô tả sản phẩm và kế hoạch tài chính</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">Chuyển bài phát biểu này thành dàn ý PowerPoint với gạch đầu dòng cho từng phần</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">Viết dàn ý tóm tắt sách bao gồm các điểm chính và suy nghĩ cá nhân của tôi</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">Tóm tắt tập tin ghi chú cuộc họp thành dàn ý kế hoạch thực hiện dự án</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">Tôi cần dàn ý chương luận văn bao gồm giới thiệu, tổng quan tài liệu và phương pháp luận</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">Tạo dàn ý tài liệu yêu cầu sản phẩm (PRD) với mô tả tính năng và luồng người dùng</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">Trích xuất dữ liệu chính từ báo cáo ngành này để tạo dàn ý tóm tắt</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">Viết dàn ý kế hoạch sự kiện bao gồm lịch trình, vai trò nhóm và ngân sách</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">Tạo dàn ý ba cấp từ tài liệu này</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">Trích xuất khung cốt lõi từ biên bản cuộc họp</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">Sắp xếp cấu trúc báo cáo nghiên cứu</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">Tạo tổng quan tính năng sản phẩm</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">Thiết kế giáo trình khóa đào tạo</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">Phân tích khung tổng quan tài liệu</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">Tạo mục lục kế hoạch kinh doanh</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">Viết các điểm quy trình lập kế hoạch sự kiện</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">Giúp tôi viết thông báo cuộc họp vào 3 giờ chiều mai tại Phòng họp A về báo cáo tiến độ dự án</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">Tạo thông báo ngắn gọn từ tài liệu này nhấn mạnh hạn chót và cách thức nộp</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">Soạn thảo thông báo nghỉ Tết Nguyên Đán từ 10/2 đến 17/2 với ngày làm việc trở lại là 18/2</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">Tôi cần thông báo hoạt động đào tạo nhân viên cả ngày thứ Tư tuần sau tại hội trường công ty</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">Định dạng tài liệu văn bản được cung cấp thành thông báo chính thức với định dạng chuẩn và ngôn ngữ chuyên nghiệp</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">Viết thông báo mất điện vào thứ Bảy này từ 9 giờ sáng đến 5 giờ chiều ảnh hưởng đến toàn bộ tòa nhà văn phòng</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">Tạo thông báo thay đổi cuộc họp dời giờ ban đầu sang thứ Sáu lúc 10 giờ sáng giữ nguyên các chi tiết khác</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">Chuẩn bị thông báo ngắn dựa trên biên bản họp đính kèm cho những người vắng mặt</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">Soạn thảo thông báo nâng cấp hệ thống dự kiến tối nay từ nửa đêm đến 3 giờ sáng với thời gian ngừng hệ thống</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">Viết thông báo sắp xếp trực ngày lễ ngắn gọn liệt kê nhân viên trực và thông tin liên lạc</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">Giúp tôi viết bài viết sức khỏe cộng đồng về ăn uống lành mạnh bằng ngôn ngữ đơn giản cho độc giả phổ thông</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">Tạo bài viết xu hướng công nghệ thú vị và hấp dẫn dựa trên tài liệu này</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">Soạn thảo bài đăng khuyến mãi ngày lễ nổi bật các ưu đãi và lịch trình sự kiện</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">Tôi cần bài viết ra mắt sản phẩm tập trung vào tính năng và đánh giá khách hàng</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">Biến bản ghi phỏng vấn này thành bài viết chân dung cá nhân thân thiện</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">Viết hướng dẫn du lịch giới thiệu ba điểm đến phổ biến với mẹo thực tế</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">Tạo bài đăng kỷ niệm điểm lại lịch sử công ty và cảm ơn khách hàng</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">Phân tích báo cáo ngành với dữ liệu trực quan hóa cho bài viết sâu sắc</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">Soạn thảo bài đăng chiến dịch từ thiện khuyến khích tham gia với hướng dẫn rõ ràng</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">Viết bài viết kỹ năng nghề nghiệp với năm mẹo thực tế và ví dụ thực tế</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">Giúp tôi viết bản tóm tắt công việc hàng tuần tập trung vào tiến độ dự án và sự hợp tác nhóm</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">Tạo bản tóm tắt công việc ngắn gọn dựa trên tệp biên bản cuộc họp tôi đã tải lên</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">Tôi cần một bản tóm tắt công việc hàng quý bao gồm phân tích dữ liệu và suy ngẫm về sự phát triển cá nhân</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">Tạo bản tóm tắt công việc dựa trên văn bản sau [dán văn bản]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">Viết bản tóm tắt công việc nêu bật thành tích KPI tháng này và những thách thức gặp phải</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">Giúp tôi tổng hợp công việc tuần trước theo từng dự án</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">Tạo bản tóm tắt công việc từ nội dung email nhấn mạnh các nhiệm vụ đang chờ và đã hoàn thành</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">Tôi cần một bản tổng kết hàng năm bao gồm những điểm nổi bật trong công việc và kế hoạch cải thiện</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">Tạo báo cáo công việc hàng tháng từ dữ liệu tôi đã tải lên</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">Giúp tôi sắp xếp các ghi chú công việc rời rạc thành một bản tóm tắt có cấu trúc</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">Phân tích dữ liệu đã tải lên và tạo báo cáo xu hướng thị trường</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">Trích xuất thông tin chính từ văn bản và biên soạn báo cáo phân tích ngành</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">Kết hợp nội dung của tệp để viết báo cáo nghiên cứu đối thủ cạnh tranh</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">Tạo bản tóm tắt nghiên cứu nhu cầu người dùng dựa trên hồ sơ phỏng vấn được cung cấp</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">Phân tích dữ liệu bán hàng này và tạo báo cáo hiệu suất thị trường hàng quý</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">Viết báo cáo nghiên cứu kỹ thuật dựa trên mô tả sản phẩm đã cho</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">Sắp xếp các phản hồi của người dùng và tạo báo cáo đề xuất cải tiến sản phẩm</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">Vui lòng viết báo cáo phân tích cơ hội thị trường dựa trên tệp được cung cấp</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="vanished">Giúp tôi viết một bài luận về chủ đề [%1] với [cấu trúc rõ ràng và nội dung phong phú].</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="vanished">Giúp tôi viết một tweet công khai về chủ đề [%1], yêu cầu [cấu trúc rõ ràng] và giọng điệu [thoải mái].</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="vanished">Giúp tôi viết tóm tắt công việc gần đây, bao gồm [%1] và [kết quả], yêu cầu giọng điệu [trang trọng].</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="vanished">Giúp tôi viết báo cáo nghiên cứu về [%1], ít nhất cần bao gồm [mô tả hiện trạng, phân tích vấn đề, biện pháp đối phó và đề xuất, kết luận nghiên cứu].</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="vanished">Trí tuệ nhân tạo</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="vanished">Giúp tôi viết bài phát biểu về chủ đề [%1] cho [Lãnh đạo Công ty], yêu cầu [cấu trúc rõ ràng và ngôn ngữ sinh động].</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="vanished">Giúp tôi viết dàn ý về chủ đề [%1], sẽ được sử dụng để [sản xuất PPT].</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="vanished">Giúp tôi viết thông báo về [%1], người nhận là [Tất cả Nhân viên] và người gửi là [Phòng Hành chính].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="vanished">Ngày lễ Quốc khánh</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="vanished">nội dung công việc</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---Vai trò---
-
-Bạn là trợ lý hữu ích, trả lời câu hỏi dựa trên kiến thức nền được cung cấp.
-
----Mục tiêu---
-
-Trả lời câu hỏi của người dùng, kết hợp kiến thức thông thường liên quan. Nếu không biết câu trả lời, hãy nói thẳng, đừng bịa ra.
-
----kiến thức---
-
-%1
-
----câu hỏi---
-
-%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">Câu trả lời bắt đầu bằng &quot;Không tìm thấy thông tin liên quan trong cơ sở tri thức của bạn.&quot;---câu hỏi--
-
-:%1</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---Vai trò---
-
-Bạn là trợ lý hữu ích, trả lời câu hỏi dựa trên kiến thức nền được cung cấp.
-
----Mục tiêu---
-
-Trả lời câu hỏi của người dùng, kết hợp kiến thức thông thường liên quan. Nếu không biết câu trả lời, hãy nói thẳng, đừng bịa ra.
-
----kiến thức---
-
-%1
-
----câu hỏi---
-
-%2</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---Vai trò---
-
-Bạn là nhà văn chuyên nghiệp, thành thạo nhiều phong cách và định dạng viết.
-
----Mục tiêu---
-
-Dựa trên yêu cầu của người dùng, tạo nội dung chất lượng cao phù hợp nhu cầu cụ thể.
-
----Loại viết---
-
-1. Bài báo: Viết bài có cấu trúc rõ ràng, lập luận chặt chẽ và nội dung hấp dẫn
-
-2. Bài phát biểu: Soạn bài phát biểu thuyết phục với phần mở đầu, thân bài và kết luận
-
-3. Dàn ý: Tạo dàn ý có cấu trúc cho chủ đề được cho
-
-4. Thông báo: Viết thông báo hoặc thông cáo chính thức
-
-5. Bài đăng: Tạo nội dung mạng xã hội thu hút
-
-6. Báo cáo công việc: Viết báo cáo công việc toàn diện
-
-7. Báo cáo nghiên cứu: Soạn báo cáo nghiên cứu chi tiết
-
----Đầu vào---
-
-%1
-
----Định dạng đầu ra---
-
-Vui lòng cung cấp nội dung theo định dạng sau:
-
-Tiêu đề:
-
-Nội dung:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">---Vai trò---
-
-Bạn là chuyên gia xử lý văn bản, thành thạo phân tích ngôn ngữ, kỹ thuật viết và tối ưu hóa văn bản.
-
----Mục tiêu---
-
-Xử lý và cải thiện văn bản đầu vào, giữ nguyên nghĩa gốc và phong cách.
-
----Loại xử lý---
-
-1. Tóm tắt: Tạo bản tóm tắt ngắn gọn các điểm chính
-
-2. Hiệu đính: Tìm và sửa lỗi ngữ pháp, chính tả, phong cách
-
-3. Giải thích: Cung cấp lời giải thích chi tiết cho khái niệm hay đoạn phức tạp
-
-4. Mở rộng: Triển khai các điểm chính, giữ nguyên phong cách gốc
-
-5. Tiếp tục: Viết tiếp văn bản một cách mạch lạc, tự nhiên
-
-6. Đánh bóng: Nâng cao độ rõ ràng, mạch lạc và sức nặng, giữ bản chất
-
----Đầu vào---
-
-%1
-
----Định dạng đầu ra---
-
-Vui lòng cung cấp văn bản đã xử lý trực tiếp, không thêm ký tự hay định dạng nào.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">---Vai trò---
-
-Bạn là dịch giả chuyên nghiệp và chuyên gia ngôn ngữ. Nhiệm vụ của bạn:
-
-1. Dịch chính xác theo yêu cầu
-
-2. Trả lời câu hỏi liên quan đến ngôn ngữ
-
-3. Nhận diện và xử lý yêu cầu dịch cụ thể
-
----Mục tiêu---
-
-Phân tích kỹ đầu vào của người dùng để xác định ý định:
-
-1. Nếu đầu vào chứa cụm như &apos;cụm này nghĩa là gì&apos;, &apos;giải thích cụm từ này&apos; hoặc tương tự – chỉ cung cấp lời giải thích ngôn ngữ (không dịch)
-
-2. Nếu đầu vào chỉ định câu/đoạn cụ thể để dịch (ví dụ: &apos;Dịch câu này:...&apos;) – chỉ dịch phần được chỉ định (không dịch toàn bộ)
-
-3. Chỉ khi không phát hiện yêu cầu cụ thể, thực hiện dịch toàn bộ giữa tiếng Trung và tiếng Anh
-
-
-Luôn giữ nguyên nghĩa, giọng điệu và phong cách gốc. Đối với bản dịch:
-
-- Tiếng Trung → Tiếng Anh
-
-- Tiếng Anh → Tiếng Trung
-
-
-Đối với câu hỏi ngôn ngữ, cung cấp lời giải thích rõ ràng, ngắn gọn.
-
----Đầu vào---
-
-%1
-
----Định dạng đầu ra---
-
-1. Đối với dịch toàn bộ: Chỉ cung cấp bản dịch, không thêm định dạng
-
-2. Đối với dịch phần: Chỉ cung cấp bản dịch phần được chỉ định
-
-3. Đối với giải thích: Chỉ cung cấp lời giải thích bằng cùng ngôn ngữ với câu hỏi
-
-Không bao giờ kết hợp giải thích với dịch hay cung cấp dịch toàn bộ sau dịch phần</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">Cập nhật UOS Screen Recorder lên phiên bản 6.6 trở lên và khởi động lại máy tính để bật Chụp màn hình Hỏi &amp; Đáp.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Cấu hình mô hình</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">Đến phần cấu hình</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">Không có tài khoản</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">Nhập câu hỏi</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Nội dung do AI tạo ra chỉ mang tính chất tham khảo, vui lòng chú ý đến độ chính xác của thông tin.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Chào mừng đến với UOS AI</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">Dưới đây là một số điều UOS AI có thể giúp bạn thực hiện</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">Dừng</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Tạo lại</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">Xóa lịch sử trò chuyện</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">Vui lòng kết nối microphone và thử lại</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Đã xóa lịch sử trò chuyện</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">Nhấp để bắt đầu/dừng ghi âm</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">Đang nghe</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">Đang chờ</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">Không phát hiện microphone</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">Kết nối thất bại, nhấp để thử lại</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">Nhấp vào hoạt ảnh hoặc Ctrl+Super+Space để kích hoạt</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Nhập giọng nói tạm thời không khả dụng, vui lòng kiểm tra mạng!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Không thể kết nối với máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Trò chuyện bằng giọng nói</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">Nhấp vào hoạt ảnh hoặc nhấn Enter để gửi</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">Dừng ghi âm sau %1 giây</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">Đang suy nghĩ</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">Nhấp vào hoạt ảnh để ngắt</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">Đang trả lời</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Hạn mức tài khoản miễn phí của bạn đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Tài khoản miễn phí của bạn đã hết hạn, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI yêu cầu cấu hình tài khoản mô hình AI trước khi sử dụng. Vui lòng cấu hình tài khoản mô hình trước.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">Kích hoạt</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">Nhập giọng nói</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Phát thanh giọng nói tạm thời không khả dụng, vui lòng kiểm tra mạng!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Tắt hội thoại giọng nói</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">Hình ảnh đã được tạo, vui lòng chuyển sang giao diện trò chuyện để xem.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">Không có tài khoản, vui lòng cấu hình tài khoản</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">Trả lời mỗi câu hỏi tối đa 5 lần</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Sao chép thành công</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">Không phát hiện thiết bị âm thanh đầu ra</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">Không phát hiện thiết bị âm thanh đầu ra, vui lòng kiểm tra và thử lại!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Cài đặt</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">Giới thiệu</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Chế độ</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Chế độ cửa sổ</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Chế độ thanh bên</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">Danh sách trợ lý</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">Danh sách đại lý</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">Cửa hàng đại lý</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Trợ lý hệ thống UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Trợ lý hệ thống Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Trợ lý kiến thức cá nhân</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">Vui lòng cấu hình cơ sở kiến thức</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">Trước khi sử dụng [Trợ lý kiến thức cá nhân], cần phải cấu hình cơ sở kiến thức. Sau khi cấu hình, AI sẽ trả lời câu hỏi hoặc tạo nội dung dựa trên nội dung bạn đã cấu hình trong cơ sở kiến thức.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">Vui lòng cấu hình mô hình lớn</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">Trợ lý kiến thức cá nhân chỉ có thể sử dụng sau khi cấu hình mô hình lớn.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">Để cấu hình</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">Để cài đặt</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">Vui lòng cài đặt [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">Trợ lý này yêu cầu cài đặt EmbeddingPlugins để chạy</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">Kéo tệp vào đây để thêm chúng.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">Bạn chỉ có thể thêm 3 tệp, các định dạng được hỗ trợ gồm: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, tệp mã nguồn, v.v.</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">Máy chủ MCP</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">Thêm Máy chủ MCP</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">Thêm Máy chủ</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">Thêm thất bại! Lý do lỗi:</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">Thiếu môi trường MCP. Vui lòng cài đặt 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">Đang gọi</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">Hoàn thành</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">Gọi thất bại</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">Đã hủy</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">tham số</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">kết quả</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Đối với Máy chủ MCP, hãy chuyển sang mô hình phát hành chính thức &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">Nhập lệnh Máy chủ MCP, ví dụ: &quot;Chuyển hệ thống sang chế độ tối cho tôi&quot;</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">Máy chủ Agent không khả dụng</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">Ngoại lệ máy chủ Agent</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">Máy chủ MCP không khả dụng</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Hủy</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="obsolete">Xác nhận</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">Tự động hóa các tác vụ đa tệp và đa ứng dụng chỉ bằng một lệnh với Dịch vụ MCP. Thử ngay!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Dùng sau</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Cài đặt ngay</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">Bật Máy chủ MCP</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">Sau khi cài đặt môi trường MCP &quot;UOS AI Agent&quot;, hãy nhấn vào </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished"> và chọn &quot;uos-mcp&quot; trong danh sách máy chủ MCP.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">Hãy thử nói: &quot;Chuyển hệ thống sang chế độ tối&quot;.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">Thử ngay</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">Thêm Máy chủ Mcp[GuidePage]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">Người dùng lần đầu: Cài đặt môi trường MCP &quot;UOS AI Agent&quot; qua App Store.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">Định dạng tệp JSON không đúng, vui lòng kiểm tra và gửi lại</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">Cài đặt ngay &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">Trò chuyện chung</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">Trò chuyện riêng tư</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">Hiện đang trong Trò chuyện riêng tư</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">Tin nhắn Trò chuyện riêng tư không được lưu vào lịch sử và sẽ bị xóa vĩnh viễn khi bạn rời khỏi cuộc trò chuyện.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">Chụp màn hình hỏi-đáp Phím tắt (Ctrl+Alt+Q), hỗ trợ tối đa 3 ảnh.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">Không thể sử dụng khi đang ghi màn hình</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Bạn có thể tải lên tối đa 3 tệp hoặc ảnh</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">Tải lên Tệp</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">Vui lòng xóa tệp bất thường và gửi lại</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">Thêm Trò chuyện Riêng tư</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">Thêm [Chụp màn hình hỏi-đáp]</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">Chụp ảnh màn hình và gửi nội dung cho UOS AI. Bạn cũng có thể tải ảnh trực tiếp.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="vanished">OK</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">Tiếp</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">Thêm [Chế độ Trò chuyện Riêng tư] - Các cuộc trò chuyện sẽ không được lưu.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">Không trích xuất được văn bản</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">Kích thước ảnh vượt quá 15 MB</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">Sau khi mở cơ sở kiến thức, câu trả lời sẽ dựa trên nội dung của nó. Tốc độ phản hồi phụ thuộc vào hiệu năng máy và kích thước cơ sở kiến thức.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">Cơ sở kiến thức không khả dụng khi có lệnh hoặc MCP nào được chọn.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">MCP bị vô hiệu hóa khi cơ sở kiến thức đang hoạt động.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">Các lệnh bị vô hiệu hóa khi cơ sở kiến thức đang hoạt động.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="obsolete">Sao chép</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">Chỉnh sửa lại</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">Sao chép thành công.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">Sao chép thất bại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">Đang tìm kiếm</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">Đã lấy được %1 tài liệu tham khảo (%2s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">Xóa Lịch sử</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">Xóa toàn bộ bản ghi?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">Sau khi xóa, nội dung sẽ không thể khôi phục!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">Đề xuất các mô hình chính thức</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">Tắt MCP</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Khuyến nghị sử dụng mô hình chính thức &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">Mở Nhanh</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">Nâng cấp Máy chủ MCP sang Chế độ Tự động</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">MCP Server đã được nâng cấp lên chế độ tự động, cho phép bạn truy cập mọi MCP Server chỉ bằng một cú nhấp chuột</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. Điều này cho phép bạn tự động hóa các tác vụ như thiết lập hệ thống và xử lý tệp chỉ bằng một lần nhấp.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">Việc thêm MCP Server đã được chuyển vào Cài đặt.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">Để thêm MCP Server khác, vào Cài đặt &gt; MCP Server.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">Đã hiểu</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">Tín dụng mẫu miễn phí</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">Hệ thống hiện tại cung cấp mô hình tài khoản dùng thử DeepSeek, tự động làm mới hạn ngạch miễn phí vào đầu mỗi tháng, giúp bạn sử dụng mà không phải lo lắng.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Nhận tín dụng</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="obsolete">Nhận tài khoản miễn phí</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">Nhận tín dụng miễn phí</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Nhận thành công</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Nhận thất bại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">Bật Máy chủ MCP&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">Tắt Máy chủ MCP</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">Cấu hình Máy chủ MCP</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">Bạn chỉ có thể thêm tối đa một tệp.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">Định dạng tệp không được hỗ trợ.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">Tóm tắt nội dung chính của tệp.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">Đang phân tích...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">Lỗi tệp</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">Tệp đã bị xóa.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">Kích thước tệp vượt quá giới hạn 100MB.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">Tải lên tài liệu</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">Tệp đã xóa</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">Không có văn bản nào được phân tích</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">Tham khảo</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">Hướng dẫn</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">Nhập &quot;/&quot; vào ô nhập để kích hoạt.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">Vui lòng nhập; “Ctrl+Enter” để xuống dòng.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">Nhập câu hỏi của bạn, hoặc nhập &quot;/&quot; để chọn lệnh
-&quot;Ctrl+Enter&quot; để xuống dòng mới</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">Tìm kiếm hoàn tất.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">Nhấp để xem kết quả</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">chỉnh sửa</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">lưu</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">sao chép</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Tìm kiếm</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">DeepThink(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">Đã dừng suy nghĩ</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">Quay lại cuối</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">Suy nghĩ sâu (%1 giây)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">Cuộc trò chuyện mới</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">Lịch sử</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">Không có lịch sử</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">Hôm nay</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">Hôm qua</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">Bạn có chắc chắn muốn xóa cuộc trò chuyện này không? Một khi đã xóa sẽ không thể khôi phục.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">Tác nhân %1 được sử dụng trong cuộc trò chuyện này đã bị xóa</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">Không thể xem cuộc trò chuyện này. Để xem, vui lòng cài đặt tác nhân %1 và thử lại.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">Mô hình trò chuyện ban đầu đã bị xóa. Chúng tôi đã chuyển sang mô hình mới để bạn tiếp tục cuộc trò chuyện.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">Đề xuất</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">Thêm</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Thêm Mô hình</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">Không có Mô hình</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">Không có mô hình nào khả dụng. Vui lòng cài đặt hoặc cấu hình mô hình trong phần cài đặt.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">Vui lòng Mô tả Chủ đề Nội dung và Yêu cầu cho Sáng tạo của Bạn.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">Vui lòng Nhập Nội dung Bạn Muốn Dịch và Chỉ định Ngôn ngữ Đích. Dịch mặc định là sang tiếng Trung.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">Vui lòng Nhập Văn bản Bạn Cần Xử lý và Chỉ định Yêu cầu của Bạn.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">Đã Thêm Tác nhân Mới</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">Các tác nhân Viết, Xử lý Văn bản và Dịch mới đã được thêm. Hãy khám phá ngay.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">Dùng thử</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">Viết một bài báo dựa trên tài liệu sau:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">Dịch tài liệu sau sang tiếng Anh:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Tắt trò chuyện bằng giọng nói</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Trò chuyện bằng giọng nói</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">Xuất Mục thành</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">Tệp được hỗ trợ</translation>
+        <translation>Nội dung tài liệu không hợp lệ hoặc trống.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">Chức năng không khả dụng</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Nhận tài khoản dùng thử miễn phí</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">Nhận tài khoản</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Nhận tài khoản đồng nghĩa với việc bạn đã hiểu và đồng ý với các điều khoản của sự kiện,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Chi tiết Sự kiện&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Tài khoản Dùng thử</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Lưu thất bại, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">Nhận tài khoản dùng thử thành công.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Số lần sử dụng và thời gian của tài khoản dùng thử có giới hạn, vui lòng cấu hình tài khoản mô hình cá nhân kịp thời! Xem chi tiết sự kiện để biết thêm.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Hỗ trợ tiếng Anh cho tài khoản dùng thử chưa đạt yêu cầu. Số lần sử dụng và thời hạn của tài khoản dùng thử đều có giới hạn. Vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Bắt đầu dùng thử</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Hoạt động tài khoản miễn phí đã kết thúc.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Không thể kết nối với máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
+        <translation>Định dạng tệp không được hỗ trợ</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>Ủy quyền appid thất bại</translation>
+        <translation>xác thực appid không thành công</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>Không thể lấy được một tham số nhất định</translation>
+        <translation>Không thể lấy tham số nhất định</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
         <translation>Giá trị tham số không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>Ủy quyền động cơ không đủ</translation>
+        <translation>Không đủ quyền ủy quyền cho động cơ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
-        <translation>Phiên làm việc hết hạn</translation>
+        <translation>Phiên làm việc hết giờ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
-        <translation>Giải mã âm thanh thất bại</translation>
+        <translation>Giải mã âm thanh không thành công</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
-        <translation>Phiên động cơ kết thúc</translation>
+        <translation>Phiên động cơ đã kết thúc</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>Lỗi tham số</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
         <source>appid cannot be empty</source>
         <translation>appid không được để trống</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
         <source>Illegal version</source>
         <translation>Phiên bản không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
         <source>permission denied</source>
-        <translation>Từ chối quyền truy cập</translation>
+        <translation>quyền bị từ chối</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
         <source>Daily flow control exceeds limit</source>
         <translation>Kiểm soát lưu lượng hàng ngày vượt quá giới hạn</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
         <source>The request data format is illegal</source>
         <translation>Định dạng dữ liệu yêu cầu không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
         <source>base64 decoding failed</source>
-        <translation>Giải mã base64 thất bại</translation>
+        <translation>giải mã base64 không thành công</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
         <source>Required parameters are missing or the parameters are illegal</source>
         <translation>Thiếu tham số bắt buộc hoặc tham số không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
         <source>Invalid handle</source>
-        <translation>Xử lý không hợp lệ</translation>
+        <translation>Bộ xử lý không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
         <source>Reading data timeout</source>
         <translation>Hết thời gian đọc dữ liệu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Kết nối thất bại, vui lòng kiểm tra thông tin điền vào.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">Các tệp mới được thêm vào cần tiền xử lý trước khi có thể sử dụng, và trong quá trình xử lý dữ liệu, nó có thể tiêu tốn một lượng lớn tài nguyên tính toán và lưu trữ. Xử lý dữ liệu sẽ dừng sau khi xóa dữ liệu.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">Bạn có chắc chắn muốn xóa tệp cơ sở kiến thức này không?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Xóa</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Thêm</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">Vui lòng cài đặt plugin mô hình nhúng trước</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Quản lý Cơ sở Kiến thức</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">Tại đây, bạn có thể định nghĩa cơ sở kiến thức của Trợ lý Kiến thức Cá nhân, và Trợ lý Kiến thức Cá nhân sẽ trả lời các câu hỏi dựa trên các tệp được thêm bên dưới.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Xong</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Không có</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">Tệp đã tồn tại</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">Tệp %1 đã tồn tại và không thể thêm lại. Vui lòng sửa tên tệp hoặc xóa tệp hiện có trước khi thêm lại.</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">Tất cả tệp</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">Tính năng này yêu cầu tài nguyên phần cứng cao, và cấu hình tham khảo là: CPU Intel thế hệ thứ 11 i7 trở lên; Bộ nhớ 16GB trở lên; Có card đồ họa NVIDIA dòng 10 trở lên là tốt nhất. Nếu cấu hình quá thấp, có thể gặp các vấn đề như giật lag và câu trả lời không chính xác.</translation>
+        <translation>Kết nối thất bại, vui lòng kiểm tra thông tin đã nhập.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
-        <translation>Theo dõi</translation>
+        <translation>Theo Dõi</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">Dung lượng cơ sở kiến thức không đủ</translation>
+        <translation>Dung lượng cơ sở kiến thức không đủ</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">Tổng dung lượng cơ sở kiến thức là %1M, còn lại %2. Tổng số tệp được thêm lần này là %3. Không thể hoàn thành thao tác thêm vào cơ sở kiến thức.</translation>
+        <translation>Tổng dung lượng của cơ sở kiến thức là %1M, còn lại %2. Tổng số tệp được thêm lần này là %3. Không thể hoàn tất thao tác thêm vào cơ sở kiến thức.</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation>Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
         <source>Not enough disk space</source>
-        <translation type="unfinished">Không đủ dung lượng đĩa</translation>
+        <translation>Không đủ dung lượng đĩa</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
         <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">Để lưu trữ các tệp mới thêm, cần ít nhất %1 dung lượng đĩa. Dung lượng còn lại hiện tại là %2. Vui lòng dọn dẹp đủ dung lượng ổ cứng và thử lại.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Thêm vào cơ sở kiến thức yêu cầu cài đặt plugin mô hình vector hóa. Vui lòng đến cửa hàng ứng dụng để tải xuống và cài đặt.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Không cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Cài đặt ngay lập tức</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">Dịch vụ hình ảnh Vincent không được hỗ trợ</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5（OpenAI）</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4（OpenAI）</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">Mô hình lớn Tia lửa 1.5（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">Mô hình lớn Tia lửa 2.0（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">Mô hình lớn Tia lửa 3.0（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-Spark</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">Gemini 1.5 Flash</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">Gemini 1.5 Pro</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">Văn bản thành hình ảnh (Cục bộ)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Tùy chỉnh</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">Mô hình triển khai riêng</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">OpenRouter</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">DeepSeek-R1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">DeepSeek</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">mô hình không xác định</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">Môi trường hệ thống của bạn là Linux và đường dẫn thư mục chính người dùng là</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">Cài đặt</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">Cập nhật</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">Gỡ cài đặt</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">gỡ cài đặt</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">Mô hình cục bộ</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">Mô hình văn bản thành hình ảnh</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">Sử dụng mô hình cục bộ để tạo hình ảnh. Sau khi bật, bạn có thể chọn mô hình trong danh sách mô hình ở giao diện trò chuyện.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">mô hình giọng nói</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">Khi bật, nhận dạng giọng nói và đọc giọng nói trong giao diện trò chuyện sẽ sử dụng mô hình cục bộ mà không cần kết nối Internet.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">DeepSeek-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">Mô hình lớn UOS AI</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">Sau khi cài đặt, bạn không cần kết nối internet để sử dụng UOS AI.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">Tải xuống từ cộng đồng mã nguồn mở với rủi ro tự chịu. Sử dụng trong Trợ lý UOS AI sau khi cài đặt.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">Plugin nhúng</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">Sau khi cài đặt mô hình, Trợ lý Hệ thống và Trợ lý Kiến thức Cá nhân có thể chạy.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">Kết nối thành công</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">Thỏa thuận người dùng</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Thỏa thuận người dùng UOS AI</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">Đã đọc và đồng ý</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">Cài đặt Proxy</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Đi đến cài đặt</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Cấu hình Mô hình</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Hoạt động tài khoản miễn phí kết thúc.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Xác nhận</translation>
+        <translation>Để lưu trữ các tệp mới thêm, cần ít nhất %1 dung lượng đĩa. Dung lượng còn lại hiện tại là %2. Vui lòng xóa bớt dung lượng đĩa cứng và thử lại.</translation>
     </message>
     <message>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">Thêm vào cơ sở kiến thức yêu cầu cài đặt plugin mô hình vector hóa. Vui lòng đến cửa hàng ứng dụng để tải xuống và cài đặt.</translation>
+        <translation>Việc thêm vào cơ sở kiến thức yêu cầu cài đặt plugin mô hình vector hóa. Vui lòng đến cửa hàng ứng dụng để tải xuống và cài đặt.</translation>
     </message>
     <message>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation type="vanished">Không cài đặt</translation>
+        <translation>Không cài đặt</translation>
     </message>
     <message>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation type="vanished">Cài đặt ngay lập tức</translation>
+        <translation>Cài đặt ngay</translation>
     </message>
 </context>
 <context>
-    <name>ModelListItem</name>
+    <name>MarkdownEditor</name>
     <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">Bạn có chắc chắn muốn xóa mô hình này không?</translation>
+        <source>Outline</source>
+        <translation>Đề mục</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Hủy</translation>
+        <source>No outline</source>
+        <translation>Không có đề mục</translation>
     </message>
     <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Nhận tài khoản miễn phí</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Xóa</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Thêm</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">Mô hình trực tuyến</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Hoàn thành</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Không có</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">APISecret</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Tài khoản</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Tên Mô hình</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">Địa chỉ API</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Bắt buộc, để phân biệt nhiều mô hình</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Miền</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Không quá 20 ký tự</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Tên tài khoản đã tồn tại, vui lòng thay đổi</translation>
+        <source>References</source>
+        <translation>Tài liệu tham khảo</translation>
     </message>
 </context>
 <context>
     <name>OcrParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
         <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tệp hình ảnh không tồn tại: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
         <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">Đang xử lý dữ liệu</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">Lỗi xử lý dữ liệu</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">Lỗi tệp, không thể xử lý, vui lòng xóa.</translation>
+        <translation>OCR không nhận diện được nội dung văn bản</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>Chức năng Trợ lý AI Hệ thống Thông minh
+Giới thiệu: Lên lịch thông minh cho các công cụ hệ thống để thực hiện các thao tác hệ thống phức tạp, hỗ trợ kiểm soát hệ thống, quản lý tệp, quản lý ứng dụng và giao thức mạng.
+Ví dụ Lời nhắc: Đặt tên tất cả các tệp trong thư mục mới tạo trên màn hình nền là tài liệu dự án và sắp xếp chúng theo thứ tự số.</translation>
     </message>
     <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Trợ lý hệ thống UOS</translation>
+        <source>Ask a question...</source>
+        <translation>Đặt câu hỏi...</translation>
     </message>
     <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Trợ lý hệ thống Deepin</translation>
+        <source>Discord gateway error: %1</source>
+        <translation>Lỗi cổng Discord: %1</translation>
     </message>
     <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Trợ lý kiến thức cá nhân</translation>
+        <source>Missing Discord bot token.</source>
+        <translation>Thiếu mã thông báo bot Discord.</translation>
     </message>
     <message>
-        <source>AI Writing</source>
-        <translation type="vanished">Viết bằng AI</translation>
+        <source>Generating...</source>
+        <translation>Đang tạo...</translation>
     </message>
     <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Xử lý văn bản bằng AI</translation>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Thiếu tin nhắn giữ chỗ Discord id.</translation>
     </message>
     <message>
-        <source>AI Translation</source>
-        <translation type="vanished">Dịch bằng AI</translation>
+        <source>Discord gateway URL is empty.</source>
+        <translation>URL cổng Discord đang trống.</translation>
     </message>
     <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">Trợ lý AI toàn diện của hệ thống.</translation>
+        <source>Ask UOS AI a question</source>
+        <translation>Hỏi UOS AI một câu hỏi</translation>
     </message>
     <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">Hỗ trợ bạn với các thắc mắc liên quan đến hệ thống UOS.</translation>
+        <source>Question for UOS AI</source>
+        <translation>Câu hỏi cho UOS AI</translation>
     </message>
     <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">Hỗ trợ bạn với các thắc mắc liên quan đến hệ thống Deepin.</translation>
+        <source>Missing Telegram bot token.</source>
+        <translation>Thiếu mã thông báo bot Telegram.</translation>
     </message>
     <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">Viết dựa trên chủ đề và yêu cầu của bạn.</translation>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>Tin nhắn giữ chỗ Telegram thiếu message_id.</translation>
     </message>
     <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">Trả lời câu hỏi dựa trên cơ sở kiến thức cá nhân của bạn.</translation>
+        <source>Telegram API request failed.</source>
+        <translation>Yêu cầu API Telegram thất bại.</translation>
     </message>
     <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">Có khả năng xử lý các tác vụ văn bản như tóm tắt, hiệu đính và viết lại.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">Trợ lý dịch thuật của bạn, thông thạo nhiều ngôn ngữ.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>Giải thích</translation>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>Tóm tắt</translation>
+        <source>UOS AI Trial Account</source>
+        <translation>Tài khoản dùng thử UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>Dịch</translation>
+        <source>Custom</source>
+        <translation>Tùy chỉnh</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>Tiếp tục viết</translation>
+        <source>Private deployment model</source>
+        <translation>Mô hình triển khai riêng</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>Mở rộng</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>Chỉnh sửa</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>Sửa lỗi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Thêm vào cơ sở tri thức AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
         <source>Restart immediately</source>
         <translation>Khởi động lại ngay</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
         <source>Simplified Chinese</source>
         <translation>Tiếng Trung giản thể</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
         <source>Traditional Chinese</source>
         <translation>Tiếng Trung phồn thể</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tiếng Tây Tạng</translation>
+        <translation>Tiếng Tạng</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
         <source>English</source>
-        <translation type="unfinished">tiếng Anh</translation>
+        <translation>Tiếng Anh</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
         <source>Japanese</source>
         <translation>Tiếng Nhật</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
         <source>German</source>
-        <translation type="unfinished">tiếng Đức</translation>
+        <translation>Tiếng Đức</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
         <source>Spanish</source>
-        <translation type="unfinished">tiếng Tây Ban Nha</translation>
+        <translation>Tiếng Tây Ban Nha</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
         <source>French</source>
-        <translation type="unfinished">tiếng Pháp</translation>
+        <translation>Tiếng Pháp</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
         <source>Italian</source>
-        <translation type="unfinished">tiếng Ý</translation>
+        <translation>Tiếng Ý</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
         <source>Korean</source>
-        <translation type="unfinished">tiếng Hàn</translation>
+        <translation>Tiếng Hàn</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
         <source>Malay</source>
-        <translation type="unfinished">tiếng Mã Lai</translation>
+        <translation>Tiếng Mã Lai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
         <source>Portuguese</source>
-        <translation type="unfinished">tiếng Bồ Đào Nha</translation>
+        <translation>Tiếng Bồ Đào Nha</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
         <source>Russian</source>
-        <translation type="unfinished">tiếng Nga</translation>
+        <translation>Tiếng Nga</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
         <source>Thai</source>
-        <translation type="unfinished">tiếng Thái</translation>
+        <translation>Tiếng Thái</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">tiếng Việt</translation>
+        <translation>Tiếng Việt</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
         <source>Arabic (SA)</source>
-        <translation>Tiếng Ả Rập (Ả Rập Xê Út)</translation>
+        <translation>Tiếng Ả Rập (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>Hệ thống AI Quản gia Thông minh
-
-Giới thiệu: Tự động lập lịch các công cụ hệ thống để thực hiện các thao tác phức tạp, hỗ trợ kiểm soát hệ thống, quản lý tệp, quản lý ứng dụng và các giao thức mạng.
-
-Ví dụ: Đặt tên tất cả các tệp trong thư mục mới tạo trên màn hình là tài liệu dự án và sắp xếp chúng theo thứ tự số.</translation>
+        <source>Search</source>
+        <translation>Tìm kiếm</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <source>Explain</source>
+        <translation>Giải thích</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <source>Summary</source>
+        <translation>Tóm tắt</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <source>Translate</source>
+        <translation>Dịch</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <source>Continue Writing</source>
+        <translation>Viết tiếp</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">Tùy chỉnh</translation>
+        <source>Expand</source>
+        <translation>Mở rộng</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished">Mô hình triển khai riêng</translation>
+        <source>Polish</source>
+        <translation>Chỉnh sửa</translation>
     </message>
     <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">Trường &apos;mcpServers&apos; bị thiếu.</translation>
+        <source>Correct</source>
+        <translation>Sửa lỗi</translation>
     </message>
     <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">không có máy chủ mcp hợp lệ.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">trường url không được để trống.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">trường command không được để trống.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">Trường &apos;command&apos; hoặc &apos;url&apos; bị thiếu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <source>Add to the AI knowledge base</source>
+        <translation>Thêm vào cơ sở kiến thức AI</translation>
     </message>
 </context>
 <context>
     <name>ResearchTools</name>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
         <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cần cài đặt plugin uos-ai-agent (khoảng %1) để lưu tài liệu.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
         <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cần cài đặt plugin uos-ai-agent để lưu tài liệu.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>Ghi chú</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
         <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
         <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Không thể kết nối đến máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Kết nối thất bại, vui lòng kiểm tra thông tin đã điền.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">Xin lỗi, theo luật, quy định và chính sách liên quan, kết quả tạm thời không được hiển thị.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">Thao tác đã bị hủy.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Tài khoản miễn phí của bạn đã hết hạn, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Hạn ngạch tài khoản miễn phí của bạn đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">Hạn ngạch tài khoản miễn phí cho trò chuyện đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">Hạn ngạch tài khoản miễn phí cho text2image đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">Thiết bị đầu vào không hợp lệ</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">Thiết bị đầu ra không hợp lệ</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Xin lỗi, không tìm thấy thao tác phù hợp.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">Tổng số ký tự trong cuộc trò chuyện đã vượt quá giới hạn, vui lòng xóa lịch sử trò chuyện và thử lại.</translation>
+        <translation>Tải xuống ngay</translation>
     </message>
 </context>
 <context>
     <name>ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">Trường &apos;mcpServers&apos; bị thiếu.</translation>
+        <translation>Thiếu trường &apos;mcpServers&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
         <source>no valid mcp server.</source>
-        <translation type="unfinished">không có máy chủ mcp hợp lệ.</translation>
+        <translation>không có máy chủ mcp hợp lệ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
         <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Chỉ có thể chỉnh sửa một dịch vụ MCP tại một thời điểm.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
         <source>url field cannot be empty.</source>
-        <translation type="unfinished">trường url không được để trống.</translation>
+        <translation>trường url không được để trống.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
         <source>command field cannot be empty.</source>
-        <translation type="unfinished">trường command không được để trống.</translation>
+        <translation>trường lệnh không được để trống.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">Trường &apos;command&apos; hoặc &apos;url&apos; bị thiếu</translation>
+        <translation>Thiếu trường &apos;command&apos; hoặc &apos;url&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
         <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Trợ lý hệ thống UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Trợ lý hệ thống Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Trợ lý kiến thức cá nhân</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">Viết bằng AI</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Xử lý văn bản bằng AI</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">Dịch bằng AI</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI yêu cầu cấu hình tài khoản mô hình AI trước khi sử dụng. Vui lòng cấu hình tài khoản mô hình trước.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">Máy chủ Agent không khả dụng.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Nhận thành công</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">Không tìm thấy tài khoản</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">Chỉ hỗ trợ tài khoản deepseek</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">Bạn đã tham gia sự kiện này và không thể nhận thưởng lại.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">Lỗi hệ thống máy chủ</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Nhận thất bại. Vui lòng thử lại.</translation>
+        <translation>Định dạng cấu hình JSON không hợp lệ.</translation>
     </message>
 </context>
 <context>
     <name>TextParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
         <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể mở tệp: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
         <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
+        <translation>Nội dung tệp ở định dạng nhị phân</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
         <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể đọc tệp: %1</translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Phản hồi</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Chủ đề Sáng</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Chủ đề Tối</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>Chủ đề Hệ thống</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>Chủ đề</translation>
     </message>
 </context>
 <context>
     <name>TtsCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>Ủy quyền appid thất bại</translation>
+        <translation>xác thực appid thất bại</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>Không thể lấy một tham số nhất định</translation>
+        <translation>Không thể lấy tham số nhất định</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
         <translation>Giá trị tham số không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>Ủy quyền động cơ không đủ</translation>
+        <translation>Xác thực động cơ không đủ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
         <source>Request text length is illegal</source>
         <translation>Độ dài văn bản yêu cầu không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
         <source>session timeout</source>
-        <translation>Phiên hết hạn</translation>
+        <translation>phiên làm việc hết giờ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
         <source>Engine session ended</source>
-        <translation>Phiên động cơ đã kết thúc</translation>
+        <translation>Phiên làm việc của động cơ đã kết thúc</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
         <translation>appid không được để trống</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
         <translation>Phiên bản không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
-        <translation>từ chối quyền truy cập</translation>
+        <translation>quyền bị từ chối</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
         <translation>Kiểm soát lưu lượng hàng ngày vượt quá giới hạn</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
         <translation>Định dạng dữ liệu yêu cầu không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
-        <translation>Giải mã base64 thất bại</translation>
+        <translation>giải mã base64 thất bại</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Thiếu tham số bắt buộc hoặc tham số không hợp lệ</translation>
+        <translation>Thiếu các tham số bắt buộc hoặc tham số không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
         <source>Reading data timeout</source>
-        <translation>Hết thời gian đọc dữ liệu</translation>
+        <translation>Hết giờ đọc dữ liệu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
         <source>network anomaly</source>
-        <translation>Mạng bất thường</translation>
+        <translation>bất thường mạng</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Kết nối thất bại, vui lòng kiểm tra thông tin điền vào.</translation>
-    </message>
-</context>
-<context>
-    <name>TtsCompositeWidget</name>
-    <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">Văn bản bạn đã chọn đã vượt quá giới hạn 5000 ký tự.</translation>
+        <translation>Kết nối thất bại, vui lòng kiểm tra thông tin đã điền.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>Tôi chưa triển khai tính năng này.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>dịch vụ không khả dụng!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Tham số không hợp lệ!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
-        <translation>Không thể tìm thấy ứng dụng này!</translation>
+        <translation>Không tìm thấy ứng dụng này!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
-        <translation>Không thể khởi động ứng dụng!</translation>
-    </message>
-</context>
-<context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">Độ sáng đã ở mức tối đa và không thể tăng thêm.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">Độ sáng đã ở mức tối thiểu và không thể giảm thêm.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">Bộ nhớ hệ thống của bạn là %0.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">Giao diện cài đặt ngôn ngữ đã được mở. Vui lòng cài đặt trong giao diện này.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">Chế độ hiện tại đã là chế độ %1.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">Không thể đóng vì chế độ hiện tại %1 không khớp với chế độ mục tiêu.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">Không thể tắt chế độ cân bằng.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">Màn hình khóa đã được mở cho bạn</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">Chụp màn hình hoặc ghi hình đã hoàn tất</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">Chỉ có một màn hình, không thể chuyển đổi chế độ màn hình.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">Nó giống với chế độ hiển thị hiện tại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">Chỉ có một màn hình, không thể chuyển đổi màn hình.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">Lệnh của bạn đã được phát hành.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Thỏa thuận Người dùng UOS AI</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Tôi xác nhận rằng tôi trên 18 tuổi. Tôi công nhận và đồng ý rằng nội dung tôi gửi và nhận qua Ứng dụng là trao đổi dữ liệu trực tiếp với nhà cung cấp dịch vụ mô hình lớn và không liên quan gì đến Công ty.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Tôi đồng ý tham gia vào kế hoạch trải nghiệm người dùng của Ứng dụng, và ủy quyền cho công ty của bạn thu thập nội dung tôi gửi khi sử dụng Ứng dụng, thời gian gửi, loại mô hình lớn được yêu cầu, ứng dụng cụ thể và liệu văn bản có tạo hình ảnh thành công hay không, để cải thiện chất lượng dịch vụ và nâng cao trải nghiệm vận hành. (Nếu bạn từ chối cung cấp thông tin trên, nó sẽ không ảnh hưởng đến việc sử dụng Ứng dụng bình thường của bạn.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Lỗi nội bộ máy chủ</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">Dịch vụ tạm thời không khả dụng</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">API được gọi không tồn tại. Vui lòng kiểm tra URL yêu cầu và thử lại. Thông thường, có các ký tự không phải tiếng Anh trong URL, chẳng hạn như &quot;-&quot;. Bạn có thể nhập thủ công và thử lại.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">Không có quyền gọi giao diện, giao diện Qianfan liên quan chưa được kiểm tra khi tạo ứng dụng</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">Lỗi gọi mô hình: Đã đạt đến giới hạn yêu cầu mô hình hoặc mô hình đang ngoại tuyến. Gợi ý: Thêm lại mô hình hoặc liên hệ dịch vụ khách hàng của nhà cung cấp dịch vụ mô hình lớn để giải quyết vấn đề này.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">Không thể lấy token</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">Xác thực IAM thất bại</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">Ứng dụng không tồn tại hoặc không thể tạo</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">Số lượng yêu cầu mỗi ngày vượt quá giới hạn</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">Tổng số yêu cầu vượt quá giới hạn</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">Tham số access_token không hợp lệ</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">access_token không hợp lệ</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">access token hết hạn</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">Lỗi dịch vụ, mẫu không tồn tại</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">Đã xảy ra lỗi hệ thống, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">Không thể truy cập máy chủ cơ sở kiến thức</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">Ngoại lệ tải xuống dữ liệu cơ sở kiến thức</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">Từ nhắc quá dài</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">Mô hình không tồn tại</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">Lỗi tham số yêu cầu</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">Xử lý hình ảnh thất bại</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">Lỗi ngoại lệ xử lý dịch vụ</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">Lỗi nội bộ dịch vụ</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">Định dạng tham số đầu vào không chính xác, chẳng hạn như thiếu các tham số cần thiết.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">Thân tham số đầu vào không ở định dạng JSON chuẩn</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">Xác minh tham số không hợp lệ</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">Lỗi kiểm soát quyền</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">Tên API dịch vụ mô hình tùy chỉnh không tồn tại</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">Lỗi nội bộ dịch vụ, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">Phương thức HTTP không hợp lệ, hiện chỉ hỗ trợ yêu cầu POST</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">Nội dung yêu cầu vượt quá giới hạn nội bộ của mô hình lớn</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">Lỗi nội bộ</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">Dịch vụ mô hình biểu đồ Vincent hết thời gian chờ</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">Có vấn đề bảo mật với prompt và negative_prompt</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">Có vấn đề bảo mật với hình ảnh đầu ra</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">Lỗi tham số</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">Không có quyền truy cập</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">Mô tả hình ảnh vượt quá giới hạn 256 ký tự</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Chào mừng đến với UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, trợ lý thông minh của bạn, được thiết kế để nâng cao năng suất và mang lại trải nghiệm làm việc chất lượng cao.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Nhận tài khoản dùng thử miễn phí</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Thêm Mô hình</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">Bắt đầu sử dụng</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Tôi xác nhận rằng tôi trên 18 tuổi. Tôi công nhận và đồng ý với &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Thỏa thuận Người dùng UOS AI&quot;&lt;/a&gt;, và nội dung tôi gửi và nhận qua Ứng dụng là trao đổi dữ liệu trực tiếp với nhà cung cấp dịch vụ mô hình lớn và không liên quan đến Công ty.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Nhận tài khoản đồng nghĩa với việc bạn hiểu và đồng ý với các điều khoản của sự kiện,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Chi tiết Sự kiện&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Tài khoản Dùng thử</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Lưu thất bại, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Số lần sử dụng và thời gian của tài khoản dùng thử có giới hạn, vui lòng cấu hình tài khoản mô hình cá nhân kịp thời! Xem chi tiết sự kiện để biết thêm.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Hỗ trợ tiếng Anh cho tài khoản dùng thử chưa đạt yêu cầu. Số lần sử dụng và thời hạn của tài khoản dùng thử đều có giới hạn. Vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Bắt đầu dùng thử</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Hoạt động tài khoản miễn phí đã kết thúc.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Không thể kết nối với máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Tôi đồng ý tham gia vào kế hoạch trải nghiệm người dùng của Ứng dụng, và ủy quyền cho công ty của bạn thu thập nội dung tôi gửi khi sử dụng Ứng dụng, thời gian gửi, loại mô hình lớn được yêu cầu, ứng dụng cụ thể và liệu văn bản có tạo ra hình ảnh thành công hay không, để cải thiện chất lượng dịch vụ và nâng cao trải nghiệm vận hành. (Nếu bạn từ chối cung cấp thông tin trên, điều này sẽ không ảnh hưởng đến việc sử dụng bình thường Ứng dụng của bạn.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Xác nhận</translation>
+        <translation>Khởi động ứng dụng thất bại!</translation>
     </message>
 </context>
 <context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>Lưu ý: Một phần nội dung tài liệu có thể được tạo bởi AI</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Tài liệu tham khảo</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tệp Word (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tệp PDF (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tệp Markdown (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">Lỗi khi nâng cấp lên WebSocket</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">Lỗi khi đọc tin nhắn của người dùng qua WebSocket</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">Lỗi khi gửi tin nhắn đến người dùng qua WebSocket</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">Định dạng tin nhắn của người dùng không chính xác</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">Lỗi lược đồ cho dữ liệu người dùng</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">Giá trị tham số người dùng không đúng</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">Lỗi đồng thời người dùng: Người dùng hiện tại đã được kết nối và không thể kết nối đến nhiều nơi cùng một lúc.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">Lưu lượng người dùng bị giới hạn: Dịch vụ đang xử lý vấn đề hiện tại của người dùng và cần chờ xử lý hoàn tất trước khi gửi yêu cầu mới. (Bạn phải chờ phản hồi hoàn chỉnh từ mô hình trước khi gửi câu hỏi tiếp theo)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">Khả năng dịch vụ không đủ, vui lòng liên hệ nhân viên</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">Không thể thiết lập kết nối với động cơ</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">Lỗi nhận dữ liệu từ động cơ</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">Lỗi gửi dữ liệu đến động cơ</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">Lỗi nội bộ động cơ</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">Nội dung đầu vào không vượt qua kiểm duyệt và bị nghi ngờ vi phạm quy tắc. Vui lòng điều chỉnh lại nội dung đầu vào.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">Nội dung đầu ra liên quan đến thông tin nhạy cảm, kiểm duyệt thất bại và không thể hiển thị kết quả tiếp theo cho người dùng.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">appid nằm trong danh sách đen</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Lỗi lớp ủy quyền appid. Ví dụ: chức năng này chưa được kích hoạt, phiên bản tương ứng chưa kích hoạt, token không đủ, đồng thời vượt quá ủy quyền, v.v.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">Xóa lịch sử thất bại</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">Cho thấy nội dung phiên này có xu hướng liên quan đến thông tin bất hợp pháp; khuyến nghị nhà phát triển thông báo cho người dùng sau khi nhận mã lỗi này để nhập thông tin liên quan đến thông tin bất hợp pháp.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">Dịch vụ đang bận, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">Tham số yêu cầu động cơ bất thường và kiểm tra lược đồ động cơ thất bại.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">Mạng động cơ bất thường</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">Số lượng token vượt quá giới hạn trên. Số lượng từ trong lịch sử hội thoại và câu hỏi quá lớn và cần được đơn giản hóa.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">Lỗi ủy quyền: appId không có ủy quyền cho các chức năng liên quan hoặc khối lượng kinh doanh vượt quá giới hạn</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">Lỗi ủy quyền: Vượt quá giới hạn kiểm soát lưu lượng hàng ngày. Vượt quá số lượt truy cập tối đa trong ngày</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Hiện có quá nhiều người truy cập, vui lòng thử lại sau.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Kết nối thất bại, vui lòng kiểm tra thông tin điền vào.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Lỗi nội bộ máy chủ</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">Xác thực thất bại</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">Không nhận được tham số Xác thực trong tiêu đề và không thể thực hiện xác thực.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">Token Xác thực không hợp lệ. Vui lòng xác nhận rằng Token Xác thực được gửi đúng cách.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">Token Xác thực đã hết hạn, vui lòng tạo lại/lấy lại</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">Xác minh qua Token Xác thực thất bại</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">Đọc và ghi tài khoản</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">Tài khoản của bạn hiện không hoạt động. Vui lòng kiểm tra thông tin tài khoản</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">Tài khoản của bạn không tồn tại</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">Tài khoản của bạn đã bị khóa, vui lòng liên hệ dịch vụ khách hàng để mở khóa</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">Tài khoản của bạn đang bị nợ, vui lòng nạp tiền và thử lại</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">Không thể truy cập tài khoản của bạn thành công, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">Lỗi gọi API</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">Tham số gọi API không chính xác, vui lòng kiểm tra tài liệu</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">Mô hình không tồn tại, vui lòng kiểm tra mã mô hình</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">Mô hình hiện tại không hỗ trợ phương thức gọi ${method}</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">Tham số ${field} không nhận được bình thường</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">Tham số ${field} không hợp lệ. Vui lòng kiểm tra tài liệu</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} và ${field2} không thể được đặt cùng lúc, vui lòng kiểm tra tài liệu</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">Bạn không có quyền truy cập vào ${API_name}</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">API ${API_name} đang ngoại tuyến</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">API ${API_name} không tồn tại</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">Lỗi quá trình gọi API</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">Bạn đã yêu cầu: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">Khi nhận kết quả yêu cầu bất đồng bộ, vui lòng sử dụng task_id</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">Tác vụ: ${task_id} không tồn tại</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">Lỗi mạng, mã lỗi: ${error_id}, vui lòng liên hệ dịch vụ khách hàng</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">Lỗi chạy API</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">Lời nhắc quá dài</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">Gọi API bị chặn do chính sách</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">Hệ thống đã phát hiện nội dung nhập hoặc tạo có thể chứa nội dung không an toàn hoặc nhạy cảm. Vui lòng tránh nhập lời nhắc có thể dễ dàng tạo nội dung nhạy cảm. Cảm ơn sự hợp tác của bạn.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Hiện có quá nhiều người truy cập, vui lòng thử lại sau.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">API này đã đạt giới hạn gọi cho ngày hôm nay. Nếu bạn cần thêm, vui lòng liên hệ dịch vụ khách hàng để mua.</translation>
+        <translation>Lưu bài viết</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">Dịch đoạn văn bản sau sang tiếng Anh cho tôi.</translation>
+        <translation>Hãy dịch đoạn văn bản sau sang tiếng Anh cho tôi.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">Dịch tài liệu sau sang tiếng Trung.</translation>
+        <translation>Dịch tài liệu sau sang tiếng Trung.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>Từ &quot;Agent&quot; có nghĩa là gì trong ngành công nghiệp AI?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">Vui lòng dịch nội dung sau sang tiếng Trung. Yêu cầu: Chính xác về nghĩa, ngôn ngữ trang trọng và chuyên nghiệp.</translation>
+        <translation>Vui lòng dịch nội dung sau sang tiếng Trung. Yêu cầu: Chính xác về nghĩa, ngôn ngữ trang trọng và chuyên nghiệp.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">Một số cách thân mật để gọi bạn bè trong tiếng Anh là gì?</translation>
+        <translation>Có những cách nói suồng sã nào để gọi một người bạn bằng tiếng Anh?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">Dịch đoạn văn cổ điển sau sang tiếng Trung hiện đại.</translation>
+        <translation>Dịch đoạn văn bản Hán văn sau sang tiếng Trung hiện đại.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>Hôm nay </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>Hôm qua </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI là trợ lý thông minh trên máy tính để bàn, trợ lý cá nhân của bạn! Bạn có thể giao tiếp với nó bằng văn bản hoặc giọng nói, nó có thể giúp trả lời câu hỏi, cung cấp thông tin và tạo hình ảnh dựa trên mô tả của bạn.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">Thông tin lưu trữ</translation>
+        <translation>Thông tin lưu trữ</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">Thêm mô hình</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">Khóa API</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Bắt buộc, vui lòng nhập</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Tài khoản</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Bắt buộc, để phân biệt nhiều mô hình</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Tên mô hình</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Tùy chọn</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Miền</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Để kiểm tra xem mô hình có khả dụng không, hệ thống sẽ gửi thông tin kiểm tra đến mô hình lớn, điều này sẽ tiêu tốn một lượng token nhỏ.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Hủy</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Xác nhận</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Không quá 20 ký tự</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">LLM này đã tồn tại, vui lòng không thêm lại.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Lưu thất bại, vui lòng thử lại sau</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Tên tài khoản đã tồn tại, vui lòng thay đổi</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Để cài đặt proxy, vui lòng vào cài đặt proxy hệ thống</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Đến cài đặt</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI cần cấu hình tài khoản mô hình AI trước khi có thể sử dụng. Vui lòng cấu hình tài khoản mô hình trước.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>Thêm Kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Tên Kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Nhập tên kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Lệnh Kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
-        <translation>đại diện cho văn bản được chọn bằng cách chọn từ.</translation>
+        <translation>đại diện cho văn bản được chọn bởi lựa chọn từ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Hướng dẫn</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Lưu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>Tên kỹ năng không được để trống</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>Vượt quá giới hạn ký tự</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>Tên kỹ năng đã tồn tại.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Hướng dẫn Lệnh</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>Nếu bạn muốn dịch văn bản được chọn &quot;Hello&quot;, như trên, bạn có thể nhập lệnh: Dịch {selection} sang tiếng Anh.</translation>
+        <translation>Nếu bạn muốn dịch văn bản đã chọn &quot;Hello&quot;, như được hiển thị ở trên, bạn có thể nhập lệnh: Dịch {selection} sang tiếng Anh.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Mẹo Nâng cao</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>Lệnh càng cụ thể, nội dung tạo ra càng chính xác. Ví dụ: • Tạo dàn ý PPT cho {selection} với 3 chương và 10 điểm chính. • Chỉnh sửa {selection} thành bản sao tuyển dụng trong 100 từ, nhấn mạnh tinh thần đồng đội.</translation>
+        <translation>Lệnh càng cụ thể thì nội dung tạo ra càng chính xác. Ví dụ:
+• Tạo dàn ý PPT cho {selection} với 3 chương và 10 điểm chính.
+• Chỉnh sửa {selection} thành bản tuyển dụng trong vòng 100 từ, làm nổi bật tinh thần đồng đội.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
         <translation>Nhấp vào nhãn vẫn có thể chèn nó vào trường nhập liệu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Đồng ý</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
         <translation>Thanh AI DDE Shell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
         <translation>Kéo tệp nhanh chóng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
-        <translation>Kéo tệp vào thanh AI để xử lý thông minh</translation>
+        <translation>Kéo tệp vào dải AI để xử lý thông minh</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">tiếng Trung giản thể</translation>
+        <translation>Tiếng Trung giản thể</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">tiếng Trung phồn thể</translation>
+        <translation>Tiếng Trung phồn thể</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tiếng Tây Tạng</translation>
+        <translation>Tiếng Tạng</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">tiếng Anh</translation>
+        <translation>Tiếng Anh</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">tiếng Nhật</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">Tiếng Nhật</translation>
+        <translation>Tiếng Nhật</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">tiếng Đức</translation>
+        <translation>Tiếng Đức</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">tiếng Tây Ban Nha</translation>
+        <translation>Tiếng Tây Ban Nha</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">tiếng Pháp</translation>
+        <translation>Tiếng Pháp</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">tiếng Ý</translation>
+        <translation>Tiếng Ý</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">tiếng Hàn</translation>
+        <translation>Tiếng Hàn</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">tiếng Mã Lai</translation>
+        <translation>Tiếng Mã Lai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">tiếng Bồ Đào Nha</translation>
+        <translation>Tiếng Bồ Đào Nha</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">tiếng Nga</translation>
+        <translation>Tiếng Nga</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">tiếng Thái</translation>
+        <translation>Tiếng Thái</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">tiếng Việt</translation>
+        <translation>Tiếng Việt</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">loại</translation>
+        <translation>loại</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
-        <source>Read Aloud</source>
-        <translation type="unfinished">Đọc to</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished">Dán vào Văn bản</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">Tạo lại</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished">Sao chép</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">Tiếp tục Hội thoại</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">Tự động Phát hiện</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished">Tìm kiếm</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished">Giải thích</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished">Tóm tắt</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished">Dịch</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">Tiếp tục viết</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished">Mở rộng</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished">Chỉnh sửa</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">Kết quả dịch bị giới hạn bởi khả năng của mô hình. Nếu bạn không hài lòng với bản dịch, vui lòng chuyển sang các mô hình khác trên trang chủ UOS AI.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">Đồng ý</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">Dịch đoạn văn này sang %1 và đưa ra kết quả rõ ràng.
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">Không thể nhấp</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">Không phát hiện thiết bị âm thanh, vui lòng kiểm tra và thử lại.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">Đồng ý</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished">Điền thất bại</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished">Đã thêm</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished">Đã sao chép</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">Giải thích đoạn văn này bằng ngôn ngữ đơn giản. Chỉ đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Tóm tắt đoạn văn này và đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Tiếp tục đoạn văn này một cách phù hợp. Không cần quá nhiều từ. Chỉ đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Mở rộng đoạn văn này một cách phù hợp. Không cần văn bản quá dài. Chỉ đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Kiểm tra xem có lỗi chính tả trong đoạn văn này không. Nếu có, chỉ ra vị trí lỗi. Đưa ra kết quả rõ ràng không có nội dung thừa.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">Chỉnh sửa đoạn văn này cho tôi và chỉ đưa ra kết quả mà không có bất kỳ nội dung bổ sung nào.
-
-văn bản：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">Mô hình hiện tại: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished">Hiện không có mô hình</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished">Đi đến cấu hình</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">Không nhận diện được văn bản.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>Nhập nội dung bạn muốn tạo (nhấn Enter để tạo/Esc để thoát)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Giúp tôi viết một bài luận về chủ đề [%1] với [cấu trúc rõ ràng và nội dung phong phú].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>Trí tuệ nhân tạo</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Giúp tôi viết dàn ý về chủ đề [%1], sẽ được sử dụng để [làm PPT].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Giúp tôi viết thông báo về [%1], người nhận là [Tất cả nhân viên] và người gửi là [Phòng Hành chính].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>Ngày Quốc khánh</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Giúp tôi viết báo cáo nghiên cứu về [%1], ít nhất cần bao gồm [mô tả hiện trạng, phân tích vấn đề, giải pháp và kiến nghị, kết luận nghiên cứu].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Giúp tôi viết bài phát biểu về chủ đề [%1] cho [Lãnh đạo Công ty], yêu cầu [cấu trúc rõ ràng và ngôn ngữ sinh động].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Giúp tôi viết bản tóm tắt công việc gần đây, bao gồm [%1] và [kết quả], yêu cầu giọng văn [trang trọng].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>nội dung công việc</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Giúp tôi viết một tweet công khai về chủ đề [%1], yêu cầu [cấu trúc rõ ràng] và giọng văn [thoải mái].</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Cấu hình Mô hình</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>Đi đến cấu hình</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>Trình viết AI</translation>
+        <source>Read Aloud</source>
+        <translation>Đọc to</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>Bài viết</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>Dàn ý</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>Thông báo</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>Báo cáo Nghiên cứu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>Bài phát biểu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>Tóm tắt Công việc</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>Tweet</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
-        <translation>Dán vào Văn bản</translation>
+        <translation>Dán vào văn bản</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Tạo lại</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Sao chép</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>Tiếp tục hội thoại</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
         <translation>Nội dung do AI tạo chỉ mang tính tham khảo, vui lòng chú ý đến độ chính xác của thông tin.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>Chức năng chỉ có thể sử dụng sau khi khởi động lại trình nhập liệu. Hướng dẫn như sau:
-
-1. Nhấp chuột phải vào biểu tượng trình nhập liệu trên thanh tác vụ.
-
-2. Nhấp vào &quot;Khởi động lại&quot;.</translation>
+        <source>Automatic Detection</source>
+        <translation>Tự động phát hiện</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Giải thích</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Tóm tắt</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Dịch</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>Viết tiếp</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Mở rộng</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Sửa lỗi</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>Trau chuốt</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Thêm vào cơ sở kiến thức AI</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>Kết quả dịch bị giới hạn bởi khả năng của mô hình. Nếu bạn không hài lòng với bản dịch, vui lòng chuyển sang mô hình khác trên trang chủ UOS AI.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>Đồng ý</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>Dịch đoạn này sang %1 và đưa cho tôi kết quả rõ ràng ngay lập tức.
+văn bản：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>Không thể nhấp</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>Không phát hiện thiết bị âm thanh, vui lòng kiểm tra và thử lại.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
-        <source>Copied</source>
-        <translation>Đã sao chép</translation>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Chức năng này chỉ có thể sử dụng sau khi khởi động lại phương thức nhập. Hướng dẫn như sau:
+1. Nhấp chuột phải vào biểu tượng phương thức nhập trên thanh tác vụ.
+2. Nhấp vào &quot;Khởi động lại&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
-        <source>Current model: </source>
-        <translation>Mô hình hiện tại: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
-        <source>Currently no model</source>
-        <translation>Hiện không có mô hình</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
-        <source>Modify the content, change the tone…</source>
-        <translation>Sửa nội dung, thay đổi giọng điệu…</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>Điền thất bại</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>Không có hộp nhập liệu nào được chọn, vui lòng chọn hộp nhập liệu và điền lại.</translation>
+        <translation>Chưa chọn ô nhập, vui lòng chọn ô nhập và điền lại.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
+        <source>Added</source>
+        <translation>Đã thêm</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Đã sao chép</translation>
+    </message>
+    <message>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>Hãy giải thích đoạn văn này bằng ngôn ngữ đơn giản. Chỉ đưa ra kết quả rõ ràng mà không có nội dung thừa.
+văn bản：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Tóm tắt đoạn văn này và đưa ra kết quả rõ ràng trực tiếp mà không có bất kỳ nội dung thừa nào khác.
+văn bản：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Tiếp tục đoạn văn này một cách phù hợp. Không cần quá nhiều lời. Chỉ đưa ra kết quả rõ ràng mà không có bất kỳ nội dung thừa nào khác.
+văn bản：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Mở rộng đoạn văn này một cách phù hợp. Không cần văn bản quá dài. Chỉ đưa ra kết quả rõ ràng mà không có bất kỳ nội dung thừa nào khác.
+văn bản：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Kiểm tra xem đoạn văn này có lỗi chính tả không. Nếu có, hãy chỉ ra vị trí lỗi. Đưa ra kết quả rõ ràng trực tiếp mà không có bất kỳ nội dung thừa nào khác.
+văn bản：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>Hãy trau chuốt đoạn văn này cho tôi và chỉ đưa ra kết quả mà không có bất kỳ nội dung bổ sung nào.
+văn bản：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Mô hình hiện tại: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Hiện tại không có mô hình</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Đi tới cấu hình  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>Nhận tín dụng miễn phí  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>Không nhận dạng được văn bản.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Nội dung được thêm phải nhiều hơn 10 từ</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>Trình viết AI</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>Nhập nội dung bạn muốn tạo (nhấn Enter để tạo/phím Esc để thoát)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>Bài viết</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Dàn ý</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>Thông báo</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>Báo cáo nghiên cứu</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>Bài phát biểu</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>Tóm tắt công việc</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>Tweet</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>Dán vào văn bản</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Tạo lại</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Nội dung do AI tạo chỉ mang tính chất tham khảo, vui lòng lưu ý đến độ chính xác của thông tin.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>Giúp tôi viết một bài luận về chủ đề [%1] với [cấu trúc rõ ràng và nội dung phong phú].</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>Trí tuệ nhân tạo</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>Giúp tôi viết một dàn ý về chủ đề [%1], sẽ được dùng cho [sản xuất PPT].</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>Giúp tôi viết một thông báo về [%1], người nhận là [Tất cả nhân viên] và người gửi là [Phòng Hành chính].</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>Lễ nghỉ Quốc khánh</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>Giúp tôi viết một báo cáo nghiên cứu về [%1], ít nhất cần bao gồm [mô tả tình trạng, phân tích vấn đề, giải pháp và đề xuất, kết luận nghiên cứu].</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>Giúp tôi viết một bài phát biểu về chủ đề [%1] dành cho [Lãnh đạo công ty], yêu cầu [cấu trúc rõ ràng và ngôn ngữ sinh động].</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>Giúp tôi viết tóm tắt công việc gần đây, bao gồm [%1] và [kết quả], yêu cầu văn phong [trang trọng].</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>nội dung công việc</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>Giúp tôi viết một tweet công khai về chủ đề [%1], yêu cầu [cấu trúc rõ ràng] và văn phong [thư giãn].</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Chức năng này chỉ có thể được sử dụng sau khi khởi động lại bộ phương thức nhập. Hướng dẫn như sau:
+1. Nhấp chuột phải vào biểu tượng bộ phương thức nhập trên thanh tác vụ.
+2. Nhấp vào &quot;Khởi động lại&quot;.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>Đồng ý</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Đã sao chép</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Mô hình hiện tại: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Hiện không có mô hình nào</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Đi tới cấu hình  </translation>
+    </message>
+    <message>
+        <source>Modify the content, change the tone…</source>
+        <translation>Sửa đổi nội dung, thay đổi văn phong…</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>Điền thất bại</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>Chưa chọn ô nhập liệu, vui lòng chọn ô nhập liệu và điền lại.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <translation>Đồng ý</translation>
     </message>
@@ -4914,162 +1121,130 @@ văn bản：</translation>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>Trình quản lý tệp</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>Thư</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>Lịch</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
         <translation>Trình duyệt web</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
         <translation>Trình soạn thảo văn bản</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
-        <translation>Ảnh chụp màn hình</translation>
+        <translation>Chụp màn hình</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
-        <translation>Ghi chú bằng giọng nói</translation>
+        <translation>Ghi âm thanh</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
-        <translation>Trình xem tài liệu</translation>
+        <translation>Xem tài liệu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
-        <translation>Cửa hàng ứng dụng</translation>
+        <translation>Cửa hàng Ứng dụng</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
-        <translation>Hướng dẫn</translation>
+        <translation>Sổ hướng dẫn</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
         <translation>WPS Writer</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
         <translation>WPS Spreadsheets</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
         <translation>WPS Presentation</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
         <translation>Foxit PDF Editor</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo Document 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
         <translation>Yozo Office 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
         <translation>Yozo Presentation 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
         <translation>Yozo Sheet 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
         <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
-        <translation>WeChat</translation>
+        <translation>Wechat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
         <translation>WXWork</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -5077,302 +1252,322 @@ văn bản：</translation>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI là trợ lý thông minh trên máy tính, trợ lý cá nhân của bạn! Bạn có thể giao tiếp với nó bằng văn bản hoặc giọng nói, và nó có thể giúp trả lời câu hỏi, cung cấp thông tin và tạo hình ảnh dựa trên mô tả của bạn.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI Theo dõi/Viết</translation>
+        <translation>UOS AI Theo dõi/Viết</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>Chưa đặt tên</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Xin chào, tôi là UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">Viết bằng AI</translation>
+        <translation>Viết AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>Cảm hứng vô tận, viết thoải mái</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vui lòng nhập chủ đề và yêu cầu của tài liệu, UOS AI sẽ giúp bạn hoàn tất việc tạo.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">Dịch bằng AI</translation>
+        <translation>Dịch thuật AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">Trợ lý dịch thuật của bạn, thông thạo nhiều ngôn ngữ.</translation>
+        <translation>Trợ lý Dịch thuật của bạn, Thành thạo Nhiều Ngôn ngữ.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vui lòng nhập nội dung cần dịch và chỉ định ngôn ngữ đích; ngôn ngữ đích mặc định là tiếng Trung.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Trợ lý kiến thức cá nhân</translation>
+        <source>AI Knowledge Base</source>
+        <translation>Cơ sở Kiến thức AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">Trả lời câu hỏi dựa trên cơ sở kiến thức cá nhân của bạn.</translation>
+        <translation>Trả lời câu hỏi dựa trên cơ sở kiến thức cá nhân của bạn.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>Đặt câu hỏi dựa trên cơ sở kiến thức.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">Máy chủ MCP</translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP&amp;Kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>MCP &amp; Kỹ năng tích hợp sẵn, hỗ trợ nhập công cụ tùy chỉnh, tự do chọn công cụ để hội thoại.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>Vui lòng nhập lệnh MCP &amp; Kỹ năng.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>Không phát hiện micrô</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>Không phát hiện loa</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiểm tra</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>Định tuyến thông minh</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Tìm kiếm trực tuyến</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">Tùy chỉnh</translation>
+        <translation>Tùy chỉnh</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>Triển khai riêng tư</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Cài đặt tích hợp Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>Cài đặt tích hợp DingTalk</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>Cài đặt tích hợp Telegram</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>Cài đặt tích hợp Discord</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>Cài đặt tích hợp QQ</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>Bắt buộc</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>Tùy chọn</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Xác nhận</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>Hướng dẫn cấu hình &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>Tích hợp IM</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>Tích hợp IM bên thứ ba</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>Bật dịch vụ chuyển tiếp tin nhắn</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Sau khi bật, UOS AI sẽ nhận tin nhắn từ các bot Lark, DingTalk, QQ, Telegram và Discord đã cấu hình. Sau đó, bạn có thể tương tác trực tiếp với UOS AI trong ứng dụng IM của mình.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Sau khi bật, UOS AI sẽ nhận tin nhắn từ các bot Lark, DingTalk và QQ đã cấu hình. Sau đó, bạn có thể tương tác trực tiếp với UOS AI trong ứng dụng IM của mình.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
         <translation>Chèn vào trường nhập liệu</translation>
     </message>
@@ -5380,286 +1575,153 @@ văn bản：</translation>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">Lỗi</translation>
+        <translation>Lỗi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Đồng ý</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">Cuộc trò chuyện mới</translation>
+        <translation>Hội thoại mới</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">Tạo lịch trình</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">Lên lịch họp với phòng Marketing từ 2 giờ chiều đến 5 giờ chiều.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Xin lỗi, không tìm thấy thao tác phù hợp.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">Vui lòng phân tích các tham số tương ứng từ nội dung đầu vào để khớp với mẫu lịch trình ở định dạng JSON sau và chỉ xuất ra nội dung JSON, không bao gồm bất kỳ thông tin không liên quan nào.
-
-Định dạng mẫu lịch trình:
-json
-{&quot;subject&quot;: &quot;Chủ đề&quot;, &quot;startTime&quot;: &quot;Thời gian bắt đầu lịch trình, định dạng: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Thời gian kết thúc lịch trình, định dạng: yyyy-MM-ddThh:mm:ss&quot;}
-
-Đầu vào: %1
-
-Thời gian hiện tại: %2</translation>
+        <translation>Null</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
-        <translation>Thêm MCP Server</translation>
+        <translation>Thêm máy chủ MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
-        <translation>Chỉnh sửa MCP Server</translation>
+        <translation>Chỉnh sửa máy chủ MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>Cấu hình JSON:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
-        <translation>Vui lòng dán mã cấu hình MCP JSON vào ô nhập liệu.</translation>
+        <translation>Vui lòng dán mã cấu hình JSON của MCP vào ô nhập liệu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>Mô tả</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>Mô tả chức năng máy chủ MCP để hỗ trợ công cụ tìm kiếm nhanh</translation>
+        <translation>Mô tả các chức năng của máy chủ MCP để tạo điều kiện thuận lợi cho công cụ tìm kiếm nhanh</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Vui lòng nhập ID của mô hình</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiểm tra</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>Vui lòng nhập tên của mô hình</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
-        <translation>Thiết bị cần được khởi động lại trước khi chức năng này có thể sử dụng đầy đủ.</translation>
+        <translation>Thiết bị cần được khởi động lại trước khi chức năng này có thể được sử dụng đầy đủ.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>Đang thu thập và phân tích dữ liệu</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Đã hoàn tất thu thập và phân tích dữ liệu</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Nghiên cứu đã hoàn tất. Đã thu thập %1 tài liệu tham khảo:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>Tìm kiếm thành công</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>LỖI: Không tìm thấy thông tin!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>Không tìm thấy tài liệu liên quan</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">Sau khi nhận quà tặng, mô hình Baidu và iFlytek ban đầu sẽ được thay thế bằng DeepSeek</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">Thu thập thủ công sau</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Tài khoản dùng thử</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Nhận tài khoản miễn phí</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">Thử lại</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">Truy cập UOS AI</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">Đang nhận...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">Sử dụng ngay</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">Đang kiểm tra trạng thái tài khoản...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">Nhận tài khoản DeepSeek thất bại!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">Vui lòng kiểm tra mạng và thử lại sau！</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">Nhận tài khoản DeepSeek thành công!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">Vui lòng kiểm tra mạng và thử lại hoặc nhận thủ công trong cài đặt UOS AI sau</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI đã được tích hợp đầy đủ vào DeepSeek</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">Hoạt động tài khoản miễn phí đã kết thúc.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">Hãy đến và trải nghiệm!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">Hãy đến và nhận tài khoản của bạn!</translation>
+        <translation>Cơ sở kiến thức cục bộ</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
         <translation>Lưu ý</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>Mô hình DeepSeek cục bộ có một số yêu cầu về cấu hình máy tính. Nếu cấu hình thấp hơn mức khuyến nghị, trải nghiệm sẽ bị ảnh hưởng.</translation>
+        <translation>Mô hình cục bộ DeepSeek có một số yêu cầu nhất định đối với cấu hình máy tính. Nếu cấu hình thấp hơn mức khuyến nghị, trải nghiệm sẽ bị ảnh hưởng.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
         <translation>Cấu hình khuyến nghị</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation type="unfinished">&lt;b&gt;推荐配置&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU：&lt;/b&gt;高性能多核CPU（如Intel i5/i7或AMD Ryzen 5/7系列），主频3.0 GHz以上&lt;br&gt;&lt;b&gt;GPU：&lt;/b&gt;显存4GB以上&lt;br&gt;&lt;b&gt;内存：&lt;/b&gt;8GB及以上&lt;br&gt;&lt;b&gt;硬盘：&lt;/b&gt;固态硬盘（SSD）并预留5GB以上空间</translation>
+        <translation>&lt;b&gt;Cấu hình khuyến nghị&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;CPU đa nhân hiệu suất cao (như Intel i5/i7 hoặc AMD Ryzen 5/7), với tốc độ xung nhịp trên 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;Có bộ nhớ video trên 4GB.&lt;br&gt;&lt;b&gt;Bộ nhớ: &lt;/b&gt;8GB trở lên.&lt;br&gt;&lt;b&gt;Ổ cứng: &lt;/b&gt;Ổ cứng thể rắn (SSD) với ít nhất 5GB dung lượng trống.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
         <translation>Cài đặt sau</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
         <translation>Xác nhận cài đặt</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (năm-tháng-ngày giờ:phút tuần)</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
         <translation>Ẩn FollowAlong trong các ứng dụng sau</translation>
     </message>
@@ -5667,245 +1729,208 @@ Thời gian hiện tại: %2</translation>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
         <translation>Bật tính năng Máy chủ MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>Một số tính năng máy chủ MCP của bên thứ ba có nguy cơ nhất định. Vui lòng sử dụng thận trọng. Nếu bạn bật dịch vụ này, công cụ tích hợp sẽ phát hiện và tự động tải các phụ thuộc cần thiết. Quá trình tải này sẽ phát sinh cước dữ liệu. Hãy nhận thức rõ rủi ro và tiếp tục thận trọng.</translation>
+        <translation>Một số tính năng máy chủ MCP của bên thứ ba mang rủi ro nhất định. Vui lòng sử dụng thận trọng. Nếu bạn bật dịch vụ này, công cụ tích hợp sẽ phát hiện và tự động tải xuống các phụ thuộc cần thiết. Quá trình tải xuống này sẽ phát sinh phí dữ liệu. Vui lòng lưu ý các rủi ro này và tiếp tục thận trọng.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
         <translation>Tôi đã hiểu và đồng ý sử dụng dịch vụ này</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
-        <translation type="unfinished">Xác nhận</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">Tệp được hỗ trợ</translation>
+        <translation>Xác nhận</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">Tệp được hỗ trợ</translation>
+        <translation>Các tệp được hỗ trợ</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>Cập nhật UOS Screen Recorder lên phiên bản 6.6 trở lên và khởi động lại máy tính của bạn để bật Hỏi đáp qua Màn hình.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Định dạng tệp không được hỗ trợ.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>Hình ảnh vượt quá giới hạn kích thước 15 MB.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>Tệp vượt quá giới hạn kích thước 100 MB.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>Lỗi mạng</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Tài khoản miễn phí của bạn đã hết hạn, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
+        <translation>Tài khoản dùng thử của bạn đã hết hạn, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hạn ngạch tài khoản dùng thử của bạn đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Hạn ngạch tài khoản miễn phí cho trò chuyện đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
+        <translation>Hạn ngạch trò chuyện của tài khoản dùng thử đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">Không phải bây giờ</translation>
+        <translation>Không phải bây giờ</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">Nhận tín dụng</translation>
+        <translation>Nhận tín dụng</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">Tín dụng miễn phí đã được giao</translation>
+        <translation>Đã cấp tín dụng miễn phí</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Bạn đã dùng hết tín dụng tạo miễn phí cho tài khoản dùng thử. Chúng tôi đã tặng bạn thêm 200 tín dụng miễn phí có hiệu lực trong tháng này. Khám phá thêm tính năng và mở khóa khả năng vô hạn của UOS AI!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Nhận thành công</translation>
+        <translation>Đã nhận thành công</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">Không tìm thấy tài khoản</translation>
+        <translation>Không tìm thấy tài khoản</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>Chỉ hỗ trợ tài khoản dùng thử</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">Bạn đã tham gia sự kiện này và không thể nhận thưởng lại.</translation>
+        <translation>Bạn đã tham gia sự kiện và không thể nhận thưởng lại.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">Lỗi hệ thống máy chủ</translation>
+        <translation>Lỗi hệ thống máy chủ</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Nhận thất bại. Vui lòng thử lại.</translation>
+        <translation>Không thể nhận. Vui lòng thử lại.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">Tạo hình ảnh</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">Mô tả nội dung hình ảnh</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (năm-tháng-ngày tuần)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished">Nhận tài khoản dùng thử miễn phí</translation>
+        <translation>Nhận tài khoản dùng thử miễn phí</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">Nhận tài khoản</translation>
+        <translation>Nhận tài khoản</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Việc nhận tài khoản đồng nghĩa rằng bạn đã hiểu và đồng ý với các điều khoản của sự kiện,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Chi tiết sự kiện&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Tài khoản dùng thử UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished">Lưu thất bại, vui lòng thử lại sau</translation>
+        <translation>Lưu thất bại, vui lòng thử lại sau</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Đã nhận tài khoản dùng thử thành công.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished">Số lần sử dụng và thời gian của tài khoản dùng thử có giới hạn, vui lòng cấu hình tài khoản mô hình cá nhân kịp thời! Xem chi tiết sự kiện để biết thêm.</translation>
+        <translation>Số lần sử dụng và thời hạn của tài khoản dùng thử bị giới hạn, vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời! Xem chi tiết sự kiện để biết thêm thông tin.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Hỗ trợ tiếng Anh cho tài khoản dùng thử chưa đạt yêu cầu. Số lần sử dụng và thời hạn của tài khoản dùng thử đều có giới hạn. Vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời!</translation>
+        <translation>Hỗ trợ tiếng Anh cho tài khoản dùng thử chưa thỏa đáng. Ngoài ra, số lần sử dụng và thời hạn của tài khoản dùng thử bị giới hạn. Vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">Bắt đầu dùng thử</translation>
+        <translation>Bắt đầu dùng thử</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoạt động tài khoản miễn phí đã kết thúc.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể kết nối với máy chủ, vui lòng kiểm tra mạng của bạn hoặc thử lại sau.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể kết nối với máy chủ, vui lòng kiểm tra mạng của bạn hoặc thử lại sau.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>Yêu cầu hết thời gian do máy chủ quá tải hoặc sự cố mạng. Vui lòng thử lại sau.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kết nối thất bại, vui lòng kiểm tra thông tin đã nhập.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">Thao tác đã bị hủy.</translation>
+        <translation>Đã hủy thao tác.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
         <translation>Nói ngay</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
         <translation>Âm lượng đầu vào thấp</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
         <translation>Cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>Mạng không khả dụng</translation>
     </message>
@@ -5913,16 +1938,13 @@ Thời gian hiện tại: %2</translation>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">Các tệp mới được thêm vào cần tiền xử lý trước khi có thể sử dụng, và trong quá trình xử lý dữ liệu, nó có thể tiêu tốn một lượng lớn tài nguyên tính toán và lưu trữ. Xử lý dữ liệu sẽ dừng sau khi xóa dữ liệu.</translation>
+        <translation>Các tệp mới được thêm cần được xử lý trước trước khi có thể sử dụng, và trong quá trình xử lý dữ liệu, nó có thể tiêu tốn một lượng lớn tài nguyên tính toán và lưu trữ. Xử lý dữ liệu sẽ dừng sau khi xóa dữ liệu.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>Hỏi AI</translation>
     </message>
@@ -5930,230 +1952,162 @@ Thời gian hiện tại: %2</translation>
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
-        <translation>Muốn hỏi gì về điều này?</translation>
+        <translation>Hỏi điều gì về cái này?</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
         <translation>Ẩn cho đến khi khởi động lại ứng dụng này</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">Tắt trong ứng dụng này</translation>
+        <translation>Tắt trong Ứng dụng này</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">Tắt toàn cục</translation>
+        <translation>Tắt Toàn cục</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Vào &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Cài đặt&lt;/a&gt; để bật lại.</translation>
+        <translation>Đi tới &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Cài đặt&lt;/a&gt; để bật lại.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>Đang tìm kiếm cơ sở kiến thức</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>Tìm kiếm hoàn tất · %1s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>Tìm kiếm hoàn tất · %1m%2s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Tài liệu tham khảo</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">Bạn có chắc chắn muốn xóa tệp cơ sở kiến thức này không?</translation>
+        <translation>Bạn có chắc chắn muốn xóa tệp cơ sở kiến thức này không?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished">Xóa</translation>
+        <translation>Xóa</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">Thêm</translation>
+        <translation>Thêm</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">Vui lòng cài đặt plugin mô hình nhúng trước</translation>
+        <translation>Vui lòng cài đặt các plugin mô hình nhúng trước</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Quản lý Cơ sở Kiến thức</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">Tính năng này yêu cầu tài nguyên phần cứng cao, và cấu hình tham khảo là: CPU Intel thế hệ thứ 11 i7 trở lên; Bộ nhớ 16GB trở lên; Có card đồ họa NVIDIA dòng 10 trở lên là tốt nhất. Nếu cấu hình quá thấp, có thể gặp các vấn đề như giật lag và câu trả lời không chính xác.</translation>
+        <translation>Tính năng này yêu cầu tài nguyên phần cứng cao, cấu hình tham chiếu là: CPU Intel thế hệ 11 i7 trở lên; Bộ nhớ 16GB trở lên; Có card đồ họa NVIDIA và dòng 10 trở lên là tốt nhất. Nếu cấu hình quá thấp, có thể xảy ra các vấn đề như giật lag và câu trả lời không chính xác.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">Tại đây, bạn có thể định nghĩa cơ sở kiến thức của Trợ lý Kiến thức Cá nhân, và Trợ lý Kiến thức Cá nhân sẽ trả lời các câu hỏi dựa trên các tệp được thêm bên dưới.</translation>
+        <translation>Tại đây, bạn có thể xác định cơ sở kiến thức cho Trợ lý Kiến thức Cá nhân, và Trợ lý Kiến thức Cá nhân sẽ trả lời câu hỏi dựa trên các tệp được thêm vào bên dưới.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Xong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished">Không có</translation>
+        <translation>Không có</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">Tệp đã tồn tại</translation>
+        <translation>Tệp đã tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">Tệp %1 đã tồn tại và không thể thêm lại. Vui lòng sửa tên tệp hoặc xóa tệp hiện có trước khi thêm lại.</translation>
+        <translation>Tệp %1 đã tồn tại và không thể thêm lại. Vui lòng sửa tên tệp hoặc xóa tệp hiện có trước khi thêm lại</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">Tất cả tệp</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">Khởi chạy hoặc đóng ứng dụng</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, Âm nhạc, Album, Trung tâm điều khiển, Trình xem nhật ký ...</translation>
+        <translation>Tất cả tệp</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished">Cài đặt</translation>
+        <translation>Cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Gỡ cài đặt</translation>
+        <translation>Gỡ cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished">Cập nhật</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">gỡ cài đặt</translation>
+        <translation>Cập nhật</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">Mô hình cục bộ</translation>
+        <translation>Mô hình cục bộ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">Sau khi cài đặt, bạn không cần kết nối internet để sử dụng UOS AI.</translation>
+        <translation>Sau khi cài đặt, bạn không cần kết nối internet để sử dụng UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">Tải xuống từ cộng đồng mã nguồn mở với rủi ro tự chịu. Sử dụng trong Trợ lý UOS AI sau khi cài đặt.</translation>
+        <translation>Tải xuống từ cộng đồng mã nguồn mở dưới trách nhiệm của bạn. Sử dụng trong Trợ lý UOS AI sau khi cài đặt.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">Mô hình lớn UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">Plugin nhúng</translation>
+        <translation>Tiện ích nhúng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">Sau khi cài đặt mô hình, Trợ lý Hệ thống và Trợ lý Kiến thức Cá nhân có thể chạy.</translation>
+        <translation>Sau khi mô hình được cài đặt, Trợ lý Hệ thống và Trợ lý Kiến thức Cá nhân có thể chạy.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>Máy chủ MCP không khả dụng</translation>
     </message>
@@ -6161,391 +2115,304 @@ Thời gian hiện tại: %2</translation>
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation>Trường &apos;mcpServers&apos; bị thiếu.</translation>
+        <translation>Thiếu trường &apos;mcpServers&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
         <translation>Xóa cấu hình máy chủ tùy chỉnh cũ thất bại, tên máy chủ: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
         <translation>không có máy chủ mcp hợp lệ.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
         <translation>Trùng tên máy chủ MCP: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
         <translation>Tên máy chủ MCP &apos;%1&apos; đã tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
         <translation>Tên máy chủ &apos;%1&apos; đã tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
         <translation>Không thể mở tệp cấu hình tùy chỉnh để ghi</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation>Máy chủ &apos;%1&apos; không phải máy chủ tùy chỉnh hoặc không tồn tại</translation>
+        <translation>Máy chủ &apos;%1&apos; không phải là máy chủ tùy chỉnh hoặc không tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
-        <translation>Không tìm thấy máy chủ tùy chỉnh nào.</translation>
+        <translation>Không tìm thấy máy chủ tùy chỉnh.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
         <translation>Không tìm thấy máy chủ &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
         <translation>trường url không được để trống.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
-        <translation>trường command không được để trống.</translation>
+        <translation>trường lệnh không được để trống.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation>Trường &apos;command&apos; hoặc &apos;url&apos; bị thiếu</translation>
+        <translation>Thiếu trường &apos;command&apos; hoặc &apos;url&apos;</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
-        <translation type="unfinished">Cài đặt</translation>
+        <translation>Cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Gỡ cài đặt</translation>
+        <translation>Gỡ cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation type="unfinished">Cập nhật</translation>
+        <translation>Cập nhật</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
-        <translation>tích hợp sẵn</translation>
+        <translation>tích hợp</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>Máy chủ MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Tất cả</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
-        <translation>Tích hợp sẵn</translation>
+        <translation>Tích hợp</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">Tùy chỉnh</translation>
+        <translation>Tùy chỉnh</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
-        <translation>Thêm Máy chủ MCP</translation>
+        <translation>Thêm máy chủ MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>Xác nhận xóa %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Sau khi xóa, máy chủ này sẽ không khả dụng. Hãy thận trọng khi tiếp tục.</translation>
+        <translation>Sau khi xóa, máy chủ này sẽ không khả dụng. Hãy thận trọng.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
-        <translation type="unfinished">Xóa</translation>
+        <translation>Xóa</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>Môi trường Mcp</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
-        <translation>Máy chủ MCP</translation>
+        <translation>MCP Server</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>Cài đặt UOS AI Agent</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
-        <translation>Sau khi cài đặt, Máy chủ MCP sẽ khả dụng.</translation>
+        <translation>Sau khi cài đặt, MCP Server sẽ sẵn dùng.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Cấu hình Mô hình</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Quản lý Cơ sở Kiến thức</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">Thỏa thuận người dùng</translation>
+        <translation>Thỏa thuận Người dùng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished"></translation>
+        <translation>Thỏa thuận Người dùng UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">Đã đọc và đồng ý</translation>
+        <translation>Đã đọc và đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">Cài đặt Proxy</translation>
+        <translation>Cài đặt Proxy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Đi tới cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoạt động tài khoản miễn phí đã kết thúc.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Thêm vào cơ sở kiến thức yêu cầu cài đặt plugin mô hình vector hóa. Vui lòng đến cửa hàng ứng dụng để tải xuống và cài đặt.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Không cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Cài đặt ngay lập tức</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubProvider</name>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
-        <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
-        <source>YouRong 7B</source>
-        <translation type="unfinished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Nhận tài khoản miễn phí</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Delete</source>
-        <translation type="unfinished">Xóa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
-        <source>Add</source>
-        <translation type="unfinished">Thêm</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
-        <source>Online model</source>
-        <translation type="unfinished">Mô hình trực tuyến</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Done</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
-        <source>None</source>
-        <translation type="unfinished">Không có</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelScopeItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
-        <source>Install</source>
-        <translation>Cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>Cập nhật</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
-        <source>Uninstall</source>
-        <translation>Gỡ cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
-        <source>Cancel</source>
-        <translation>Hủy</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
-        <source>About %1GB</source>
-        <translation>Khoảng %1GB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
-        <source>Installing</source>
-        <translation>Đang cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
-        <source>Are you sure you want to delete this model?</source>
-        <translation>Bạn có chắc chắn muốn xóa mô hình này không?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation>Hủy</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Xác nhận</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Thêm vào cơ sở kiến thức yêu cầu cài đặt plugin mô hình vector hóa. Vui lòng vào cửa hàng ứng dụng để tải xuống và cài đặt.</translation>
+    </message>
+    <message>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Không cài đặt</translation>
+    </message>
+    <message>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Cài đặt ngay</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation>YouRong 1.5B</translation>
+    </message>
+    <message>
+        <source>YouRong 7B</source>
+        <translation>YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <source>Get a free account</source>
+        <translation>Nhận tài khoản miễn phí</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Xóa</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>Thêm</translation>
+    </message>
+    <message>
+        <source>Online model</source>
+        <translation>Mô hình trực tuyến</translation>
+    </message>
+    <message>
+        <source>Done</source>
+        <translation>Xong</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Không</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelScopeItem</name>
+    <message>
+        <source>Install</source>
+        <translation>Cài đặt</translation>
+    </message>
+    <message>
+        <source>Uninstall</source>
+        <translation>Gỡ cài đặt</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Cập nhật</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>About %1GB</source>
+        <translation>Khoảng %1GB</translation>
+    </message>
+    <message>
+        <source>Installing</source>
+        <translation>Đang cài đặt</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete this model?</source>
+        <translation>Bạn có chắc chắn muốn xóa mô hình này không?</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation>Xác nhận</translation>
+    </message>
+    <message>
         <source>Checking</source>
         <translation>Đang kiểm tra</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>&apos;Tải xuống %0 thất bại, vui lòng thử lại!&apos;</translation>
+        <translation>%0 tải xuống thất bại, vui lòng thử lại!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
         <translation>Vui lòng cài đặt &quot;Embedding Plugins&quot; trước khi cài đặt mô hình này.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>không thể xóa thư mục đích, vui lòng thử lại!</translation>
+        <translation>thất bại khi dán thư mục mục tiêu, vui lòng thử lại!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>%1 giây</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>%1 phút</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
         <translation>Đã tải xuống %1MB/%2GB, còn lại %3.</translation>
     </message>
@@ -6553,343 +2420,300 @@ Thời gian hiện tại: %2</translation>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished">Bạn có chắc chắn muốn xóa mô hình này không?</translation>
+        <translation>Bạn có chắc chắn muốn xóa mô hình này không?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>Tài khoản mô hình không hợp lệ</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>Loại mô hình không được hỗ trợ</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>Mô hình không hỗ trợ hoàn thành trò chuyện</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>Mô hình đã sẵn sàng</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lỗi HTTP: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Lỗi không xác định</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished">Để cài đặt proxy, vui lòng vào cài đặt proxy hệ thống</translation>
+        <translation>Để cài đặt proxy, vui lòng chuyển đến cài đặt proxy hệ thống</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Đi đến cài đặt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished">Xóa</translation>
+        <translation>Xóa</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Chỉnh sửa Mô hình</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">Thêm Mô hình</translation>
+        <translation>Thêm Mô hình</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">Tài khoản</translation>
+        <translation>Tài khoản</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished">Bắt buộc, để phân biệt nhiều mô hình</translation>
+        <translation>Bắt buộc, để phân biệt nhiều mô hình</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Nhà cung cấp</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished"></translation>
+        <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished">Bắt buộc, vui lòng nhập</translation>
+        <translation>Bắt buộc, vui lòng nhập</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Tên miền</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">Bật</translation>
+        <translation>Bật</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">Tùy chỉnh</translation>
+        <translation>Tùy chỉnh</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">Thêm</translation>
+        <translation>Thêm</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished"></translation>
+        <translation>Để kiểm tra xem mô hình có sẵn không, hệ thống sẽ gửi thông tin kiểm tra đến mô hình lớn, việc này sẽ tiêu tốn một lượng nhỏ token.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tên và ID Mô hình phải được điền.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished">Lưu thất bại, vui lòng thử lại sau</translation>
+        <translation>Lưu thất bại, vui lòng thử lại sau</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Xong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiểm tra thành công</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dịch vụ mô hình có sẵn.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">Điều khiển đa phương tiện</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (năm-tháng-ngày tuần)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">Phát nhạc, điều khiển trạng thái, tìm kiếm...</translation>
+        <source>Searching for relevant information</source>
+        <translation>Đang tìm kiếm thông tin liên quan</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>Tham chiếu %0 nguồn</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>Tìm thấy %0 trang</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>Đang duyệt %0</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>trang %0</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">Đang xử lý dữ liệu</translation>
+        <translation>Đang xử lý dữ liệu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">Lỗi xử lý dữ liệu</translation>
+        <translation>Lỗi xử lý dữ liệu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">Lỗi tệp, không thể xử lý, vui lòng xóa.</translation>
+        <translation>Lỗi tệp, không thể xử lý, vui lòng xóa.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Đang tạo dàn ý</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Đang tạo nội dung dàn ý cho bạn.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Đã tạo dàn ý có thể chỉnh sửa. Sau khi xác nhận, hãy nhấp vào nút màu xanh bên dưới để tiếp tục tạo tài liệu.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Đã phát hiện bạn đã tải lên dàn ý cục bộ, hiện đang phân tích nội dung dàn ý cho bạn.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>Đã phát hiện dàn ý cục bộ được tải lên, vui lòng xác nhận.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể phân tích tệp dàn ý đã tải lên, vui lòng tải lại</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Tạo nội dung dàn ý không thành công</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Dựa trên nhiệm vụ viết của bạn, tôi đã tạo dàn ý sau cho **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Tôi đã phân tích dàn ý bạn tải lên và cấu trúc nó thành **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Dàn ý chứa tổng cộng %1 phần. Vui lòng xác nhận để tiếp tục nghiên cứu và viết.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">Trợ lý Kiến thức Cá nhân chỉ có thể sử dụng sau khi cấu hình plugin mô hình.</translation>
+        <translation>Trợ lý Kiến thức Cá nhân chỉ có thể được sử dụng sau khi cấu hình thêm vào mô hình.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">Trợ lý Kiến thức Cá nhân chỉ có thể sử dụng sau khi cấu hình cơ sở kiến thức.</translation>
+        <translation>Trợ lý Kiến thức Cá nhân chỉ có thể được sử dụng sau khi cấu hình cơ sở kiến thức.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Xóa</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Thêm</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Mô hình triển khai riêng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Xong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
-        <translation>Không có</translation>
+        <translation>Không</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>Bạn có chắc chắn muốn xóa nhà cung cấp này không?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Hủy</translation>
+        <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
-        <translation>Tham khảo</translation>
+        <translation>Tham chiếu</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
         <translation>Mở</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
         <translation>Tài liệu không tồn tại!</translation>
     </message>
@@ -6897,163 +2721,79 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Đang tạo tài liệu</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>thất bại</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>Đã tạo tài liệu</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tài liệu đã được tạo dựa trên dàn ý. Bạn có thể nhấp vào thẻ bên dưới để chỉnh sửa nội dung hoặc nhấp vào nút &quot;Lưu thành&quot; để lưu cục bộ để chỉnh sửa thêm.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">Tìm kiếm trực tuyến</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">Nhập nội dung tìm kiếm</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">Gửi thư</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">Giúp tôi gửi email đến [Tên người nhận], với nội dung: [Nội dung Email].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Xin lỗi, không tìm thấy thao tác phù hợp.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">Vui lòng trích xuất các tham số liên quan từ đầu vào được cung cấp để khớp với định dạng mẫu email JSON dưới đây và chỉ xuất ra nội dung JSON. Không bao gồm bất kỳ thông tin thừa nào.
-
-Định dạng mẫu email:
-
-json
-{&quot;subject&quot;: &quot;Tiêu đề Email&quot;, &quot;content&quot;: &quot;Nội dung Email&quot;, &quot;to&quot;: &quot;Người nhận&quot;, &quot;cc&quot;: &quot;Người nhận CC&quot;, &quot;bcc&quot;: &quot;Người nhận BCC&quot;}
-
-Đầu vào: %1</translation>
+        <translation>Bạn có thể đặt câu hỏi tiếp theo hoặc yêu cầu điều chỉnh bài viết.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Không lấy được phiên bản máy chủ MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">Máy chủ &apos;%1&apos; không phải máy chủ tùy chỉnh hoặc không tồn tại</translation>
+        <translation>Máy chủ &apos;%1&apos; không phải là máy chủ tùy chỉnh hoặc không tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">Tên máy chủ MCP &apos;%1&apos; đã tồn tại</translation>
+        <translation>Tên máy chủ MCP &apos;%1&apos; đã tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>Máy chủ &apos;%1&apos; không tồn tại</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Phiên làm việc với ID %1 đã tồn tại</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Phiên làm việc %1 tạo trợ lý %2 thất bại</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>Phiên làm việc %1 tạo thành công</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Không tìm thấy phiên làm việc %1</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">Phím tắt: [Super + Space]. Nhanh chóng gọi UOS AI để truy cập tất cả các tính năng AI tại một nơi.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">Đã hiểu</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">Lời nhắc này sẽ xuất hiện thêm %1 lần nữa, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Không hiển thị lại&lt;/a&gt;</translation>
+        <translation>Phiên làm việc %1 không rảnh</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
-        <translation>Lấy </translation>
+        <translation>Tiếp nhận </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
         <translation> dịch sang tiếng Anh</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>Vượt quá giới hạn ký tự</translation>
     </message>
@@ -7061,1791 +2801,1835 @@ json
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>Bật</translation>
+        <source>Disabled</source>
+        <translation>Đã tắt</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Disabled</source>
-        <translation>Tắt</translation>
+        <source>Enable</source>
+        <translation>Bật</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
         <translation>Quản lý kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
         <translation>Thêm kỹ năng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
-        <translation>4 kỹ năng đầu tiên sẽ hiển thị trên thanh công cụ, các kỹ năng khác sẽ được ẩn trong menu Thêm.</translation>
+        <translation>4 kỹ năng đầu tiên sẽ được hiển thị trên thanh công cụ, các kỹ năng khác sẽ bị ẩn trong menu Thêm.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
         <translation>Đã lưu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
-        <translation>Bạn có chắc muốn xóa kỹ năng &quot;%1&quot; không?</translation>
+        <translation>Bạn có chắc chắn muốn xóa kỹ năng &quot;%1&quot; không?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>Xóa</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemChannel</name>
+    <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <source>The archive file does not exist.</source>
+        <translation>Tệp lưu trữ không tồn tại.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
-        <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>Không thể tạo thư mục tạm thời để giải nén.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>Không thể giải nén tệp lưu trữ. Tệp có thể bị hỏng hoặc định dạng không được hỗ trợ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
-        <source>Settings</source>
-        <translation type="unfinished">Cài đặt</translation>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>Không tìm thấy tệp SKILL.md trong tệp lưu trữ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
+        <source>The specified path is invalid.</source>
+        <translation>Đường dẫn được chỉ định không hợp lệ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
-        <source>About</source>
-        <translation type="unfinished">Giới thiệu</translation>
+        <source>Failed to read SKILL.md.</source>
+        <translation>Không thể đọc SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
-        <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>SKILL.md thiếu trường &apos;name&apos; bắt buộc.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
-        <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <source>The skill directory does not exist.</source>
+        <translation>Thư mục kỹ năng không tồn tại.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
-        <source>AI Writing</source>
-        <translation type="unfinished">Viết bằng AI</translation>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>Không thể nhập kỹ năng từ đường dẫn này.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
-        <source>AI Translation</source>
-        <translation type="unfinished">Dịch bằng AI</translation>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>Không tìm thấy tệp SKILL.md trong thư mục kỹ năng.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
-        <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>Kỹ năng chứa quá nhiều tệp (tối đa %1 tệp được phép).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">Máy chủ MCP</translation>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>Kích thước kỹ năng vượt quá giới hạn (tối đa 10 MB được phép).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <source>The skill folder name is invalid.</source>
+        <translation>Tên thư mục kỹ năng không hợp lệ.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
-        <source>Agent Store</source>
-        <translation type="unfinished">Cửa hàng đại lý</translation>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>Không thể ghi đè kỹ năng hiện có.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
-        <source>More</source>
-        <translation type="unfinished">Thêm</translation>
+        <source>Failed to create the skills directory.</source>
+        <translation>Không thể tạo thư mục kỹ năng.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
-        <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to copy the skill files.</source>
+        <translation>Không thể sao chép các tệp kỹ năng.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
-        <source>Today</source>
-        <translation type="unfinished">Hôm nay</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
-        <source>Yesterday</source>
-        <translation type="unfinished">Hôm qua</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
-        <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
-        <source>January</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
-        <source>February</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
-        <source>March</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
-        <source>April</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
-        <source>May</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
-        <source>June</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
-        <source>July</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
-        <source>August</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
-        <source>September</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
-        <source>October</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
-        <source>November</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
-        <source>year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
-        <source>Earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
-        <source>Delete</source>
-        <translation type="unfinished">Xóa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
-        <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
-        <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
-        <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Hủy</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
-        <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
-        <source>All</source>
-        <translation type="unfinished">Tất cả</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
-        <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
-        <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
-        <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
-        <source>DeepThink</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
-        <source>Search</source>
-        <translation type="unfinished">Tìm kiếm</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
-        <source>Attachments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
-        <source>Upload Files</source>
-        <translation type="unfinished">Tải lên Tệp</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
-        <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
-        <source>Voice Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
-        <source>Voice Read</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
-        <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
-        <source>Copy</source>
-        <translation type="unfinished">Sao chép</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">Tạo lại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
-        <source>Re-edit</source>
-        <translation type="unfinished">Chỉnh sửa lại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
-        <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
-        <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
-        <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
-        <source>Thinking...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
-        <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
-        <source>Parsing...</source>
-        <translation type="unfinished">Đang phân tích...</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
-        <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
-        <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
-        <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
-        <source>Model List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
-        <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
-        <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
-        <source>Local Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
-        <source>Online Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
-        <source>Add Model</source>
-        <translation type="unfinished">Thêm Mô hình</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
-        <source>Official</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
-        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
-        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
-        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
-        <source>View Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
-        <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
-        <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
-        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
-        <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
-        <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
-        <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
-        <source>File Upload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
-        <source>As Material</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
-        <source>As Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
-        <source>Local Materials</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
-        <source>File Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
-        <source>Outline</source>
-        <translation type="unfinished">Dàn ý</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
-        <source>View All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
-        <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
-        <source>Upload File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
-        <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
-        <source>Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
-        <source>Heading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
-        <source>Export Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
-        <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
-        <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
-        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
-        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
-        <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
-        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
-        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
-        <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
-        <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
-        <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
-        <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
-        <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
-        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
-        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
-        <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
-        <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
-        <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
-        <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
-        <source>Add chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
-        <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
-        <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
-        <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
-        <source>Save as Word</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
-        <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
-        <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
-        <source>Saving...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
-        <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
-        <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
-        <source>Body Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
-        <source>Heading %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
-        <source>Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
-        <source>Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
-        <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
-        <source>Link Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
-        <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
-        <source>Numbered List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
-        <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
-        <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
-        <source>Blockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
-        <source>Divider</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
-        <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
-        <source>Print Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
-        <source>Share Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
-        <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
-        <source>Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
-        <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
-        <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
-        <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
-        <source>Add MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
-        <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
-        <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
-        <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
-        <source>Install Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
-        <source>System Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
-        <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
-        <source>DND Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
-        <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
-        <source>Brightness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
-        <source>Font Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
-        <source>App Store</source>
-        <translation type="unfinished">Cửa hàng ứng dụng</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
-        <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
-        <source>Click to download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
-        <source>Go to configuration</source>
-        <translation type="unfinished">Đến phần cấu hình</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
-        <source>No account</source>
-        <translation type="unfinished">Không có tài khoản</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
-        <source>Input question</source>
-        <translation type="unfinished">Nhập câu hỏi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
-        <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Chào mừng đến với UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">Dưới đây là một số điều UOS AI có thể giúp bạn thực hiện</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
-        <source>Stop</source>
-        <translation type="unfinished">Dừng</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
-        <source>Retry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
-        <source>Clear conversation history</source>
-        <translation type="unfinished">Xóa lịch sử trò chuyện</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
-        <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">Vui lòng kết nối microphone và thử lại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
-        <source>Chat history cleared</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
-        <source>Click to start/stop recording</source>
-        <translation type="unfinished">Nhấp để bắt đầu/dừng ghi âm</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
-        <source>Listening</source>
-        <translation type="unfinished">Đang nghe</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
-        <source>Sleeping</source>
-        <translation type="unfinished">Đang chờ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">Không phát hiện microphone</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
-        <source>Connection failed, click to try again</source>
-        <translation type="unfinished">Kết nối thất bại, nhấp để thử lại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">Nhấp vào hoạt ảnh hoặc Ctrl+Super+Space để kích hoạt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Nhập giọng nói tạm thời không khả dụng, vui lòng kiểm tra mạng!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
-        <source>Voice conversation</source>
-        <translation type="unfinished">Trò chuyện bằng giọng nói</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">Nhấp vào hoạt ảnh hoặc nhấn Enter để gửi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">Dừng ghi âm sau %1 giây</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
-        <source>Thinking</source>
-        <translation type="unfinished">Đang suy nghĩ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
-        <source>Click animation to interrupt</source>
-        <translation type="unfinished">Nhấp vào hoạt ảnh để ngắt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
-        <source>Answering</source>
-        <translation type="unfinished">Đang trả lời</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Tài khoản miễn phí của bạn đã hết hạn, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
-        <source>Activate</source>
-        <translation type="unfinished">Kích hoạt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
-        <source>Voice input</source>
-        <translation type="unfinished">Nhập giọng nói</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Phát thanh giọng nói tạm thời không khả dụng, vui lòng kiểm tra mạng!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
-        <source>Turn off voice conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">Hình ảnh đã được tạo, vui lòng chuyển sang giao diện trò chuyện để xem.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
-        <source>No account, please configure an account</source>
-        <translation type="unfinished">Không có tài khoản, vui lòng cấu hình tài khoản</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
-        <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">Trả lời mỗi câu hỏi tối đa 5 lần</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
-        <source>Copied successfully</source>
-        <translation type="unfinished">Sao chép thành công</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
-        <source>Sound output device not detected</source>
-        <translation type="unfinished">Không phát hiện thiết bị âm thanh đầu ra</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">Không phát hiện thiết bị âm thanh đầu ra, vui lòng kiểm tra và thử lại!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
-        <source>Mode</source>
-        <translation type="unfinished">Chế độ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
-        <source>Window Mode</source>
-        <translation type="unfinished">Chế độ cửa sổ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
-        <source>Sidebar Mode</source>
-        <translation type="unfinished">Chế độ thanh bên</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
-        <source>Assistant List</source>
-        <translation type="unfinished">Danh sách trợ lý</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
-        <source>Agent List</source>
-        <translation type="unfinished">Danh sách đại lý</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
-        <source>UOS System Assistant</source>
-        <translation type="unfinished">Trợ lý hệ thống UOS</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
-        <source>Deepin System Assistant</source>
-        <translation type="unfinished">Trợ lý hệ thống Deepin</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Trợ lý kiến thức cá nhân</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
-        <source>Please configure the knowledge base</source>
-        <translation type="unfinished">Vui lòng cấu hình cơ sở kiến thức</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">Trước khi sử dụng [Trợ lý kiến thức cá nhân], cần phải cấu hình cơ sở kiến thức. Sau khi cấu hình, AI sẽ trả lời câu hỏi hoặc tạo nội dung dựa trên nội dung bạn đã cấu hình trong cơ sở kiến thức.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
-        <source>Please configure the large model</source>
-        <translation type="unfinished">Vui lòng cấu hình mô hình lớn</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">Trợ lý kiến thức cá nhân chỉ có thể sử dụng sau khi cấu hình mô hình lớn.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
-        <source>To configure</source>
-        <translation type="unfinished">Để cấu hình</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <source>To install</source>
-        <translation type="unfinished">Để cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">Vui lòng cài đặt [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">Trợ lý này yêu cầu cài đặt EmbeddingPlugins để chạy</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
-        <source>Drag files here to add them.</source>
-        <translation type="unfinished">Kéo tệp vào đây để thêm chúng.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">Bạn chỉ có thể thêm 3 tệp, các định dạng được hỗ trợ gồm: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, tệp mã nguồn, v.v.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">Bạn chỉ có thể thêm tối đa một tệp.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
-        <source>The file format is not supported.</source>
-        <translation type="unfinished">Định dạng tệp không được hỗ trợ.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
-        <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">Tóm tắt nội dung chính của tệp.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
-        <source>File Error</source>
-        <translation type="unfinished">Lỗi tệp</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
-        <source>File has been deleted.</source>
-        <translation type="unfinished">Tệp đã bị xóa.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">Kích thước tệp vượt quá giới hạn 100MB.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
-        <source>Upload a document</source>
-        <translation type="unfinished">Tải lên tài liệu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
-        <source>File deleted</source>
-        <translation type="unfinished">Tệp đã xóa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
-        <source>No text was parsed</source>
-        <translation type="unfinished">Không có văn bản nào được phân tích</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
-        <source>Reference</source>
-        <translation type="unfinished">Tham khảo</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
-        <source>Instruction</source>
-        <translation type="unfinished">Hướng dẫn</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">Nhập &quot;/&quot; vào ô nhập để kích hoạt.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">Vui lòng nhập; “Ctrl+Enter” để xuống dòng.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">Nhập câu hỏi của bạn, hoặc nhập &quot;/&quot; để chọn lệnh
-&quot;Ctrl+Enter&quot; để xuống dòng mới</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
-        <source>Search complete.</source>
-        <translation type="unfinished">Tìm kiếm hoàn tất.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
-        <source>Click to view results</source>
-        <translation type="unfinished">Nhấp để xem kết quả</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
-        <source>edit</source>
-        <translation type="unfinished">chỉnh sửa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
-        <source>save</source>
-        <translation type="unfinished">lưu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
-        <source>copy</source>
-        <translation type="unfinished">sao chép</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
-        <source>Thinking has stopped</source>
-        <translation type="unfinished">Đã dừng suy nghĩ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">Quay lại cuối</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">Suy nghĩ sâu (%1 giây)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
-        <source>New Conversation</source>
-        <translation type="unfinished">Cuộc trò chuyện mới</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
-        <source>History</source>
-        <translation type="unfinished">Lịch sử</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
-        <source>No History Records</source>
-        <translation type="unfinished">Không có lịch sử</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">Bạn có chắc chắn muốn xóa cuộc trò chuyện này không? Một khi đã xóa sẽ không thể khôi phục.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">Tác nhân %1 được sử dụng trong cuộc trò chuyện này đã bị xóa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">Không thể xem cuộc trò chuyện này. Để xem, vui lòng cài đặt tác nhân %1 và thử lại.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">Mô hình trò chuyện ban đầu đã bị xóa. Chúng tôi đã chuyển sang mô hình mới để bạn tiếp tục cuộc trò chuyện.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
-        <source>Recommendations</source>
-        <translation type="unfinished">Đề xuất</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
-        <source>No Model</source>
-        <translation type="unfinished">Không có Mô hình</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">Không có mô hình nào khả dụng. Vui lòng cài đặt hoặc cấu hình mô hình trong phần cài đặt.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">Vui lòng Mô tả Chủ đề Nội dung và Yêu cầu cho Sáng tạo của Bạn.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">Vui lòng Nhập Nội dung Bạn Muốn Dịch và Chỉ định Ngôn ngữ Đích. Dịch mặc định là sang tiếng Trung.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">Vui lòng Nhập Văn bản Bạn Cần Xử lý và Chỉ định Yêu cầu của Bạn.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
-        <source>New Agent Added</source>
-        <translation type="unfinished">Đã Thêm Tác nhân Mới</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">Các tác nhân Viết, Xử lý Văn bản và Dịch mới đã được thêm. Hãy khám phá ngay.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
-        <source>Try it</source>
-        <translation type="unfinished">Dùng thử</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
-        <source>Write an article based on the following document:</source>
-        <translation type="unfinished">Viết một bài báo dựa trên tài liệu sau:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
-        <source>Translate the following document into English:</source>
-        <translation type="unfinished">Dịch tài liệu sau sang tiếng Anh:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
-        <source>Add Mcp Server</source>
-        <translation type="unfinished">Thêm Máy chủ MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
-        <source>Add Server</source>
-        <translation type="unfinished">Thêm Máy chủ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
-        <source>Add failed! Error reason:</source>
-        <translation type="unfinished">Thêm thất bại! Lý do lỗi:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">Thiếu môi trường MCP. Vui lòng cài đặt 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
-        <source>Calling</source>
-        <translation type="unfinished">Đang gọi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
-        <source>Completed</source>
-        <translation type="unfinished">Hoàn thành</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
-        <source>Call Failed</source>
-        <translation type="unfinished">Gọi thất bại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
-        <source>Cancelled</source>
-        <translation type="unfinished">Đã hủy</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
-        <source>params</source>
-        <translation type="unfinished">tham số</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
-        <source>result</source>
-        <translation type="unfinished">kết quả</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Đối với Máy chủ MCP, hãy chuyển sang mô hình phát hành chính thức &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">Nhập lệnh Máy chủ MCP, ví dụ: &quot;Chuyển hệ thống sang chế độ tối cho tôi&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
-        <source>Agent server is not available</source>
-        <translation type="unfinished">Máy chủ Agent không khả dụng</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
-        <source>Agent server exception</source>
-        <translation type="unfinished">Ngoại lệ máy chủ Agent</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
-        <source>MCP server is not available</source>
-        <translation type="unfinished">Máy chủ MCP không khả dụng</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
-        <source>Confirm</source>
-        <translation type="unfinished">Xác nhận</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">Tự động hóa các tác vụ đa tệp và đa ứng dụng chỉ bằng một lệnh với Dịch vụ MCP. Thử ngay!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
-        <source>Use later</source>
-        <translation type="unfinished">Dùng sau</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
-        <source>Enable MCP Server</source>
-        <translation type="unfinished">Bật Máy chủ MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">Sau khi cài đặt môi trường MCP &quot;UOS AI Agent&quot;, hãy nhấn vào </translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished"> và chọn &quot;uos-mcp&quot; trong danh sách máy chủ MCP.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">Hãy thử nói: &quot;Chuyển hệ thống sang chế độ tối&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
-        <source>Try it now</source>
-        <translation type="unfinished">Thử ngay</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">Thêm Máy chủ Mcp[GuidePage]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">Người dùng lần đầu: Cài đặt môi trường MCP &quot;UOS AI Agent&quot; qua App Store.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">Định dạng tệp JSON không đúng, vui lòng kiểm tra và gửi lại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
-        <source>Install Now &gt;</source>
-        <translation type="unfinished">Cài đặt ngay &gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
-        <source>General Chat</source>
-        <translation type="unfinished">Trò chuyện chung</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
-        <source>Now in Private Chat</source>
-        <translation type="unfinished">Hiện đang trong Trò chuyện riêng tư</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">Tin nhắn Trò chuyện riêng tư không được lưu vào lịch sử và sẽ bị xóa vĩnh viễn khi bạn rời khỏi cuộc trò chuyện.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">Chụp màn hình hỏi-đáp Phím tắt (Ctrl+Alt+Q), hỗ trợ tối đa 3 ảnh.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
-        <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">Không thể sử dụng khi đang ghi màn hình</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished">Bạn có thể tải lên tối đa 3 tệp hoặc ảnh</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">Vui lòng xóa tệp bất thường và gửi lại</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
-        <source>Add Private Chat</source>
-        <translation type="unfinished">Thêm Trò chuyện Riêng tư</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">Thêm [Chụp màn hình hỏi-đáp]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">Chụp ảnh màn hình và gửi nội dung cho UOS AI. Bạn cũng có thể tải ảnh trực tiếp.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
-        <source>OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
-        <source>Next</source>
-        <translation type="unfinished">Tiếp</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">Thêm [Chế độ Trò chuyện Riêng tư] - Các cuộc trò chuyện sẽ không được lưu.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
-        <source>No text extracted</source>
-        <translation type="unfinished">Không trích xuất được văn bản</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">Kích thước ảnh vượt quá 15 MB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">Sau khi mở cơ sở kiến thức, câu trả lời sẽ dựa trên nội dung của nó. Tốc độ phản hồi phụ thuộc vào hiệu năng máy và kích thước cơ sở kiến thức.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">Cơ sở kiến thức không khả dụng khi có lệnh hoặc MCP nào được chọn.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">MCP bị vô hiệu hóa khi cơ sở kiến thức đang hoạt động.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">Các lệnh bị vô hiệu hóa khi cơ sở kiến thức đang hoạt động.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
-        <source>Copy succeeded.</source>
-        <translation type="unfinished">Sao chép thành công.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
-        <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">Sao chép thất bại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
-        <source>Searching</source>
-        <translation type="unfinished">Đang tìm kiếm</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">Đã lấy được %1 tài liệu tham khảo (%2s)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
-        <source>Clear History</source>
-        <translation type="unfinished">Xóa Lịch sử</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
-        <source>Delete all records?</source>
-        <translation type="unfinished">Xóa toàn bộ bản ghi?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">Sau khi xóa, nội dung sẽ không thể khôi phục!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
-        <source>Recommend official models</source>
-        <translation type="unfinished">Đề xuất các mô hình chính thức</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
-        <source>Disable MCP</source>
-        <translation type="unfinished">Tắt MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Khuyến nghị sử dụng mô hình chính thức &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
-        <source>Quick Open</source>
-        <translation type="unfinished">Mở Nhanh</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">Nâng cấp Máy chủ MCP sang Chế độ Tự động</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">MCP Server đã được nâng cấp lên chế độ tự động, cho phép bạn truy cập mọi MCP Server chỉ bằng một cú nhấp chuột</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. Điều này cho phép bạn tự động hóa các tác vụ như thiết lập hệ thống và xử lý tệp chỉ bằng một lần nhấp.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">Việc thêm MCP Server đã được chuyển vào Cài đặt.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">Để thêm MCP Server khác, vào Cài đặt &gt; MCP Server.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
-        <source>Got it</source>
-        <translation type="unfinished">Đã hiểu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
-        <source>Complimentary Model Credits</source>
-        <translation type="unfinished">Tín dụng mẫu miễn phí</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">Hệ thống hiện tại cung cấp mô hình tài khoản dùng thử DeepSeek, tự động làm mới hạn ngạch miễn phí vào đầu mỗi tháng, giúp bạn sử dụng mà không phải lo lắng.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
-        <source>Claim Credits</source>
-        <translation type="unfinished">Nhận tín dụng</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Nhận tài khoản miễn phí</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
-        <source>Claim Free Credits</source>
-        <translation type="unfinished">Nhận tín dụng miễn phí</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
-        <source>Successfully Claimed</source>
-        <translation type="unfinished">Nhận thành công</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Nhận thất bại. Vui lòng thử lại.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">Bật Máy chủ MCP&amp;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
-        <source>Disable MCP Server</source>
-        <translation type="unfinished">Tắt Máy chủ MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
-        <source>Configure MCP Server</source>
-        <translation type="unfinished">Cấu hình Máy chủ MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI Theo dõi/Viết</translation>
+        <source>Supported files</source>
+        <translation>Các tệp được hỗ trợ</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemControlInst</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <source>System Control</source>
-        <translation type="vanished">Điều khiển hệ thống</translation>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">Chuyển sang hình nền mới. Đặt độ sáng màn hình ở mức 30%...</translation>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
+        <translation>Hỏi UOS AI, quên đi mọi lo toan.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>Nhật ký thay đổi</translation>
+    </message>
+    <message>
+        <source>Start Chatting</source>
+        <translation>Bắt đầu trò chuyện</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>Chọn một trợ lý ở bên trái, sau đó nhập câu hỏi hoặc hướng dẫn để bắt đầu cuộc trò chuyện mới.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>Tương tác giọng nói</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>Nếu bạn thích điều khiển bằng giọng nói, hãy chuyển đổi nhanh từ mục liên quan để giảm thiểu các thao tác lặp lại.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>Tiếp tục khám phá</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>Sử dụng lịch sử và cài đặt để tiếp tục công việc của bạn và điều chỉnh mô hình, công cụ cũng như giao diện.</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Cài đặt</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Trợ giúp</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>Giới thiệu</translation>
+    </message>
+    <message>
+        <source>New Chat</source>
+        <translation>Hội thoại mới</translation>
+    </message>
+    <message>
+        <source>Temporary Chat</source>
+        <translation>Hội thoại tạm thời</translation>
+    </message>
+    <message>
+        <source>AI Writing</source>
+        <translation>Viết AI</translation>
+    </message>
+    <message>
+        <source>AI Translation</source>
+        <translation>Dịch AI</translation>
+    </message>
+    <message>
+        <source>AI Knowledge Base</source>
+        <translation>Cơ sở kiến thức AI</translation>
+    </message>
+    <message>
+        <source>MCP Server</source>
+        <translation>Máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation>Lệnh</translation>
+    </message>
+    <message>
+        <source>Agent Store</source>
+        <translation>Cửa hàng Agent</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Thêm</translation>
+    </message>
+    <message>
+        <source>Chat History</source>
+        <translation>Lịch sử hội thoại</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hôm nay</translation>
+    </message>
+    <message>
+        <source>Yesterday</source>
+        <translation>Hôm qua</translation>
+    </message>
+    <message>
+        <source>Last 7 Days</source>
+        <translation>7 ngày qua</translation>
+    </message>
+    <message>
+        <source>Last 30 Days</source>
+        <translation>30 ngày qua</translation>
+    </message>
+    <message>
+        <source>January</source>
+        <translation>Tháng Một</translation>
+    </message>
+    <message>
+        <source>February</source>
+        <translation>Tháng Hai</translation>
+    </message>
+    <message>
+        <source>March</source>
+        <translation>Tháng Ba</translation>
+    </message>
+    <message>
+        <source>April</source>
+        <translation>Tháng Tư</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>Tháng Năm</translation>
+    </message>
+    <message>
+        <source>June</source>
+        <translation>Tháng Sáu</translation>
+    </message>
+    <message>
+        <source>July</source>
+        <translation>Tháng 7</translation>
+    </message>
+    <message>
+        <source>August</source>
+        <translation>Tháng 8</translation>
+    </message>
+    <message>
+        <source>September</source>
+        <translation>Tháng 9</translation>
+    </message>
+    <message>
+        <source>October</source>
+        <translation>Tháng 10</translation>
+    </message>
+    <message>
+        <source>November</source>
+        <translation>Tháng 11</translation>
+    </message>
+    <message>
+        <source>year</source>
+        <translation>năm</translation>
+    </message>
+    <message>
+        <source>Earlier</source>
+        <translation>Trước đó</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Xóa</translation>
+    </message>
+    <message>
+        <source>Confirm Deletion</source>
+        <translation>Xác nhận xóa</translation>
+    </message>
+    <message>
+        <source>Confirm deletion</source>
+        <translation>Xác nhận xóa</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>Sau khi xóa, máy chủ này sẽ không khả dụng. Hãy thận trọng.</translation>
+    </message>
+    <message>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation>Hành động này sẽ xóa tất cả nội dung liên quan đến cuộc trò chuyện này khỏi UOS AI.</translation>
+    </message>
+    <message>
+        <source>Confirm Delete</source>
+        <translation>Xác nhận xóa</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Batch Manage</source>
+        <translation>Quản lý hàng loạt</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tất cả</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Chọn tất cả</translation>
+    </message>
+    <message>
+        <source>%1 conversations selected</source>
+        <translation>%1 cuộc trò chuyện đã chọn</translation>
+    </message>
+    <message>
+        <source>No chat history yet</source>
+        <translation>Chưa có lịch sử trò chuyện</translation>
+    </message>
+    <message>
+        <source>Chat content not found</source>
+        <translation>Không tìm thấy nội dung trò chuyện</translation>
+    </message>
+    <message>
+        <source>DeepThink</source>
+        <translation>DeepThink</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Attachments</source>
+        <translation>Đính kèm</translation>
+    </message>
+    <message>
+        <source>Upload Files</source>
+        <translation>Tải lên tệp</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A</source>
+        <translation>Hỏi đáp bằng ảnh chụp</translation>
+    </message>
+    <message>
+        <source>Voice Input</source>
+        <translation>Nhập liệu bằng giọng nói</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Gửi</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>Đặt câu hỏi...</translation>
+    </message>
+    <message>
+        <source>Voice Read</source>
+        <translation>Đọc bằng giọng nói</translation>
+    </message>
+    <message>
+        <source>Stop Reading</source>
+        <translation>Dừng đọc</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Tạo lại</translation>
+    </message>
+    <message>
+        <source>Re-edit</source>
+        <translation>Chỉnh sửa lại</translation>
+    </message>
+    <message>
+        <source>Stop Generating</source>
+        <translation>Dừng tạo</translation>
+    </message>
+    <message>
+        <source>Generation stopped</source>
+        <translation>Đã dừng tạo</translation>
+    </message>
+    <message>
+        <source>You stopped this answer, </source>
+        <translation>Bạn đã dừng câu trả lời này, </translation>
+    </message>
+    <message>
+        <source>please re-edit your question</source>
+        <translation>vui lòng chỉnh sửa lại câu hỏi của bạn</translation>
+    </message>
+    <message>
+        <source>Back to Bottom</source>
+        <translation>Về cuối trang</translation>
+    </message>
+    <message>
+        <source>Thinking...</source>
+        <translation>Đang suy nghĩ...</translation>
+    </message>
+    <message>
+        <source>Deep think completed (took %1s)</source>
+        <translation>Đã suy nghĩ sâu xong (mất %1s)</translation>
+    </message>
+    <message>
+        <source>Parsing...</source>
+        <translation>Đang phân tích...</translation>
+    </message>
+    <message>
+        <source>Parsing failed</source>
+        <translation>Phân tích thất bại</translation>
+    </message>
+    <message>
+        <source>You can add up to 50 files</source>
+        <translation>Bạn có thể thêm tối đa 50 tệp</translation>
+    </message>
+    <message>
+        <source>Summarize the core content of the file</source>
+        <translation>Tóm tắt nội dung cốt lõi của tệp</translation>
+    </message>
+    <message>
+        <source>Model List</source>
+        <translation>Danh sách Mô hình</translation>
+    </message>
+    <message>
+        <source>Smart Recommendation</source>
+        <translation>Đề xuất Thông minh</translation>
+    </message>
+    <message>
+        <source>Smart switch for best match</source>
+        <translation>Chuyển đổi thông minh để phù hợp nhất</translation>
+    </message>
+    <message>
+        <source>Local Model</source>
+        <translation>Mô hình Cục bộ</translation>
+    </message>
+    <message>
+        <source>Online Model</source>
+        <translation>Mô hình Trực tuyến</translation>
+    </message>
+    <message>
+        <source>Add Model</source>
+        <translation>Thêm Mô hình</translation>
+    </message>
+    <message>
+        <source>Private Model</source>
+        <translation>Mô hình Riêng tư</translation>
+    </message>
+    <message>
+        <source>Official</source>
+        <translation>Chính thức</translation>
+    </message>
+    <message>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation>Nội dung do AI tạo chỉ mang tính chất tham khảo. Vui lòng xác minh độ chính xác.</translation>
+    </message>
+    <message>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation>Các cuộc trò chuyện tạm thời không được lưu vào lịch sử. Nội dung sẽ bị xóa hoàn toàn khi thoát.</translation>
+    </message>
+    <message>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation>Đã đạt tối đa 10 cuộc trò chuyện đồng thời. Vui lòng thử lại sau.</translation>
+    </message>
+    <message>
+        <source>View Now</source>
+        <translation>Xem Ngay</translation>
+    </message>
+    <message>
+        <source>Remind Me Later</source>
+        <translation>Nhắc Tôi Sau</translation>
+    </message>
+    <message>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation>Cảm hứng vô tận, viết thư thoải mái</translation>
+    </message>
+    <message>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation>Bật để tìm kiếm trên web nhằm có thêm tài liệu tham khảo thời gian thực, toàn diện và chính xác hơn.</translation>
+    </message>
+    <message>
+        <source>Upload files/images as references</source>
+        <translation>Tải lên tệp/hình ảnh làm tài liệu tham khảo</translation>
+    </message>
+    <message>
+        <source>Reference Outline / Local File</source>
+        <translation>Tài liệu tham khảo / Tệp cục bộ</translation>
+    </message>
+    <message>
+        <source>As reference material / As outline file</source>
+        <translation>Làm tài liệu tham khảo / Làm tệp dàn ý</translation>
+    </message>
+    <message>
+        <source>File Upload</source>
+        <translation>Tải lên tệp</translation>
+    </message>
+    <message>
+        <source>As Material</source>
+        <translation>Làm tài liệu</translation>
+    </message>
+    <message>
+        <source>As Outline</source>
+        <translation>Làm dàn ý</translation>
+    </message>
+    <message>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>Chỉ hỗ trợ tải lên 1 tệp dàn ý</translation>
+    </message>
+    <message>
+        <source>Local Materials</source>
+        <translation>Tài liệu cục bộ</translation>
+    </message>
+    <message>
+        <source>File Outline</source>
+        <translation>Dàn ý tệp</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Dàn ý</translation>
+    </message>
+    <message>
+        <source>View All</source>
+        <translation>Xem tất cả</translation>
+    </message>
+    <message>
+        <source>Recent Creations</source>
+        <translation>Tạo gần đây</translation>
+    </message>
+    <message>
+        <source>Upload File</source>
+        <translation>Tải lên tệp</translation>
+    </message>
+    <message>
+        <source>Reference Outline</source>
+        <translation>Dàn ý tham khảo</translation>
+    </message>
+    <message>
+        <source>Local File</source>
+        <translation>Tệp cục bộ</translation>
+    </message>
+    <message>
+        <source>Heading</source>
+        <translation>Tiêu đề</translation>
+    </message>
+    <message>
+        <source>Export Document</source>
+        <translation>Xuất tài liệu</translation>
+    </message>
+    <message>
+        <source>Exit Full Screen</source>
+        <translation>Thoát toàn màn hình</translation>
+    </message>
+    <message>
+        <source>Untitled Document</source>
+        <translation>Tài liệu chưa đặt tên</translation>
+    </message>
+    <message>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation>Nếu bạn không muốn tài liệu cục bộ được tải lên, bạn có thể thực hiện các bước sau trước khi tạo nội dung:</translation>
+    </message>
+    <message>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation>1. Chuyển sang mô hình cục bộ (ví dụ: DeepSeek-R1-1.5B) hoặc mô hình được triển khai riêng tư</translation>
+    </message>
+    <message>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation>2. Tắt &quot;Tìm kiếm trên Web&quot;</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation>Tài liệu sẽ được tải lên mô hình trực tuyến để phân tích. Tiếp tục tạo?</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation>Tài liệu sẽ được tải lên mô hình trực tuyến (%1) để phân tích. Tiếp tục tạo?</translation>
+    </message>
+    <message>
+        <source>Enable Privacy Mode</source>
+        <translation>Bật Chế độ Riêng tư</translation>
+    </message>
+    <message>
+        <source>Continue Generating</source>
+        <translation>Tiếp tục Tạo</translation>
+    </message>
+    <message>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation>Bạn có thể nhập thêm yêu cầu để tối ưu hóa hoặc điều chỉnh nội dung đã tạo.</translation>
+    </message>
+    <message>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation>Đã phát hiện tải lên dàn ý cục bộ. Đang phân tích nội dung dàn ý...</translation>
+    </message>
+    <message>
+        <source>Generating outline content...</source>
+        <translation>Đang tạo nội dung dàn ý...</translation>
+    </message>
+    <message>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Đã tạo dàn ý có thể chỉnh sửa. Sau khi xác nhận, hãy nhấp vào nút màu xanh bên dưới để tiếp tục tạo tài liệu.</translation>
+    </message>
+    <message>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation>Không thể phân tích tệp dàn ý đã tải lên. Vui lòng tải lại.</translation>
+    </message>
+    <message>
+        <source>Re-upload Outline</source>
+        <translation>Tải lại Dàn ý</translation>
+    </message>
+    <message>
+        <source>Directly generate outline using AI</source>
+        <translation>Tạo trực tiếp dàn ý bằng AI</translation>
+    </message>
+    <message>
+        <source>Add sub-chapter</source>
+        <translation>Thêm chương con</translation>
+    </message>
+    <message>
+        <source>Delete sub-chapter</source>
+        <translation>Xóa chương con</translation>
+    </message>
+    <message>
+        <source>Delete chapter</source>
+        <translation>Xóa chương</translation>
+    </message>
+    <message>
+        <source>Add chapter</source>
+        <translation>Thêm chương</translation>
+    </message>
+    <message>
+        <source>Enter chapter title</source>
+        <translation>Nhập tiêu đề chương</translation>
+    </message>
+    <message>
+        <source>Delete this heading?</source>
+        <translation>Xóa tiêu đề này?</translation>
+    </message>
+    <message>
+        <source>Generate document from outline</source>
+        <translation>Tạo tài liệu từ dàn ý</translation>
+    </message>
+    <message>
+        <source>Save as Word</source>
+        <translation>Lưu dưới dạng Word</translation>
+    </message>
+    <message>
+        <source>Save as PDF</source>
+        <translation>Lưu dưới dạng PDF</translation>
+    </message>
+    <message>
+        <source>Save as Markdown</source>
+        <translation>Lưu dưới dạng Markdown</translation>
+    </message>
+    <message>
+        <source>Saving...</source>
+        <translation>Đang lưu...</translation>
+    </message>
+    <message>
+        <source>Saved successfully!</source>
+        <translation>Đã lưu thành công!</translation>
+    </message>
+    <message>
+        <source>Failed to save, please try again.</source>
+        <translation>Lưu thất bại, vui lòng thử lại.</translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Hoàn tác</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation>Làm lại</translation>
+    </message>
+    <message>
+        <source>Body Text</source>
+        <translation>Nội dung</translation>
+    </message>
+    <message>
+        <source>Heading %1</source>
+        <translation>Tiêu đề %1</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>In đậm</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>In nghiêng</translation>
+    </message>
+    <message>
+        <source>Strikethrough</source>
+        <translation>Gạch ngang</translation>
+    </message>
+    <message>
+        <source>Link Text</source>
+        <translation>Văn bản liên kết</translation>
+    </message>
+    <message>
+        <source>Bulleted List</source>
+        <translation>Danh sách gạch đầu dòng</translation>
+    </message>
+    <message>
+        <source>Numbered List</source>
+        <translation>Danh sách đánh số</translation>
+    </message>
+    <message>
+        <source>Decrease Indent</source>
+        <translation>Giảm thụt lề</translation>
+    </message>
+    <message>
+        <source>Increase Indent</source>
+        <translation>Tăng thụt lề</translation>
+    </message>
+    <message>
+        <source>Blockquote</source>
+        <translation>Trích dẫn</translation>
+    </message>
+    <message>
+        <source>Divider</source>
+        <translation>Đường kẻ</translation>
+    </message>
+    <message>
+        <source>Copy Full Text</source>
+        <translation>Sao chép toàn bộ văn bản</translation>
+    </message>
+    <message>
+        <source>Print Document</source>
+        <translation>In Tài liệu</translation>
+    </message>
+    <message>
+        <source>Share Document</source>
+        <translation>Chia sẻ Tài liệu</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>Thu nhỏ</translation>
+    </message>
+    <message>
+        <source>Full Screen</source>
+        <translation>Toàn màn hình</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Đóng</translation>
+    </message>
+    <message>
+        <source>Insert Link</source>
+        <translation>Chèn Liên kết</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>Văn bản:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>Liên kết:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>Vui lòng nhập một liên kết hợp lệ</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>Văn bản liên kết</translation>
+    </message>
+    <message>
+        <source>Please enter the text to be translated first.</source>
+        <translation>Vui lòng nhập văn bản cần dịch trước.</translation>
+    </message>
+    <message>
+        <source>Identifying source language...</source>
+        <translation>Đang xác định ngôn ngữ nguồn...</translation>
+    </message>
+    <message>
+        <source>My MCP Server</source>
+        <translation>MCP Server của tôi</translation>
+    </message>
+    <message>
+        <source>Add MCP Server</source>
+        <translation>Thêm MCP Server</translation>
+    </message>
+    <message>
+        <source>Delete MCP Server</source>
+        <translation>Xóa MCP Server</translation>
+    </message>
+    <message>
+        <source>Edit MCP Server</source>
+        <translation>Chỉnh sửa MCP Server</translation>
+    </message>
+    <message>
+        <source>Built-in Only</source>
+        <translation>Chỉ Tích hợp sẵn</translation>
+    </message>
+    <message>
+        <source>Custom Added Only</source>
+        <translation>Chỉ Tự thêm</translation>
+    </message>
+    <message>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>Để sử dụng MCP&amp;Kỹ năng, hãy cài đặt UOS AI Agent từ Cửa hàng Ứng dụng trước.</translation>
+    </message>
+    <message>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>Để sử dụng Cơ sở Kiến thức AI, hãy cài đặt Plugin Nhúng từ Cửa hàng Ứng dụng trước.</translation>
+    </message>
+    <message>
+        <source>Install Now</source>
+        <translation>Cài đặt ngay</translation>
+    </message>
+    <message>
+        <source>System Settings</source>
+        <translation>Cài đặt hệ thống</translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation>Bluetooth</translation>
+    </message>
+    <message>
+        <source>Wireless Network</source>
+        <translation>Mạng không dây</translation>
+    </message>
+    <message>
+        <source>DND Mode</source>
+        <translation>Chế độ Không làm phiền</translation>
+    </message>
+    <message>
+        <source>Eye Comfort</source>
+        <translation>Bảo vệ mắt</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>Độ sáng</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>Âm lượng</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>Cỡ chữ</translation>
+    </message>
+    <message>
+        <source>App Store</source>
+        <translation>Cửa hàng ứng dụng</translation>
+    </message>
+    <message>
+        <source>Schedule Management</source>
+        <translation>Quản lý lịch trình</translation>
+    </message>
+    <message>
+        <source>Click to download</source>
+        <translation>Nhấn để tải xuống</translation>
+    </message>
+    <message>
+        <source>&lt;10k downloads</source>
+        <translation>&lt;10k lượt tải</translation>
+    </message>
+    <message>
+        <source>&lt;100k downloads</source>
+        <translation>&lt;100k lượt tải</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100k+ lượt tải</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 sao</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>Nhấn để mở ứng dụng</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>Chủ nhật</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>Thứ hai</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>Thứ ba</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>Thứ Tư</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>Thứ Năm</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>Thứ Sáu</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>Thứ Bảy</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>Máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>Chọn tất cả máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>Bạn có thể thêm và quản lý máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>Mô tả</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>Cấu hình JSON</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>Vui lòng dán mã cấu hình JSON của MCP vào ô nhập liệu.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>Mô tả các chức năng của máy chủ MCP để tạo điều kiện thuận lợi cho công cụ tìm kiếm nhanh</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Quay lại</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>Đã gửi tín dụng miễn phí</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Bạn đã dùng hết tín dụng tạo miễn phí cho tài khoản dùng thử của mình. Chúng tôi đã tặng bạn thêm 200 tín dụng miễn phí có hiệu lực trong tháng này. Khám phá thêm tính năng và mở khóa khả năng vô hạn của UOS AI!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>Không phải bây giờ</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>Tôi là {{nhập danh tính/vị trí}}. Giúp tôi viết một {{báo cáo/bài viết/dàn ý/bài đăng tài khoản công WeChat/thông báo/báo cáo nghiên cứu/tóm tắt công việc/bài phát biểu}} về {{nhập chủ đề}}, dài khoảng {{1000}} từ. Yêu cầu nội dung là {{nhập yêu cầu/trọng tâm nội dung/phong cách viết, v.v..}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>Quản lý lịch sử trò chuyện</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>Trò chuyện bằng giọng nói</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Mở rộng</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>Thu gọn</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>Đã chỉnh sửa vào</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Đã tạo</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>Bạn có %1 cuộc trò chuyện đã được trả lời mới</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>Lịch sử tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>Xác nhận xóa cuộc trò chuyện này</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>Thao tác này sẽ xóa tất cả nội dung liên quan khỏi UOS AI</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>Sử dụng ngay</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>Kỹ năng của tôi</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>Mở thư mục cài đặt</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Làm mới</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>Nhập Kỹ năng</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>Bạn có thể thêm và quản lý Kỹ năng</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>Thoát Trò chuyện Giọng nói</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>%1 tệp sau không hợp lệ và không khả dụng. Tiếp tục?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>Tệp tệp sau không hợp lệ và không khả dụng. Tiếp tục?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>Trước đó</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: Nâng cấp giao diện hoàn toàn mới</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>Chế độ Cửa sổ mới mang lại trải nghiệm tương tác mới mẻ</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>Thanh điều hướng bên gọn gàng để truy cập có tổ chức và dễ sử dụng</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>Không gian làm việc rộng hơn, tập trung với nội dung phong phú hơn</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>Phân cấp rõ ràng để giữ nhiệm vụ cốt lõi tập trung và sâu sắc</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>Đa nhiệm để tiết kiệm thời gian quý báu của bạn</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>Đa nhiệm nền tảng yên tĩnh: Không còn phải chờ đợi</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>Giao nhiệm vụ bất cứ lúc nào mà không làm gián đoạn quy trình làm việc</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>Nhận cập nhật tiến độ tức thì mà không cần theo dõi liên tục</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>Soạn thảo màn hình chia sâu sắc: Chính xác, an toàn và có thể truy xuất</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>Trò chuyện &amp; chỉnh sửa màn hình chia: Không còn chuyển đổi cửa sổ</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>Cung cấp dữ liệu chuyên sâu để tạo nội dung vững chắc</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>Tạo dàn ý trước với chỉnh sửa thủ công và xuất bằng một cú nhấp chuột</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>Mô hình trên thiết bị/Riêng tư đảm bảo quyền riêng tư và bảo mật dữ liệu</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>Kiểm soát hệ thống &amp; Kỹ năng phong phú: Tất cả trong một lệnh duy nhất</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>Kiểm soát hệ thống trực quan: Điều chỉnh phông, bật/tắt Wi-Fi, v.v.</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>Kỹ năng văn phòng tần suất cao: Viết, dịch và hợp nhất</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>Nhập Kỹ năng bằng một cú nhấp chuột để mở khóa khả năng vô tận</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>Quản lý hàng loạt và tìm kiếm chính xác cho lịch sử</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>Tìm kiếm nhanh toàn cầu: Truy cập lịch sử trong vài giây</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>Bộ lọc dựa trên tác nhân để tìm kiếm lịch sử trò chuyện chính xác</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>Quản lý hàng loạt hiệu quả cho không gian làm việc gọn gàng và có tổ chức</translation>
+    </message>
+    <message>
+        <source>Go to configuration</source>
+        <translation>Đi đến cấu hình</translation>
+    </message>
+    <message>
+        <source>No account</source>
+        <translation>Không có tài khoản</translation>
+    </message>
+    <message>
+        <source>Input question</source>
+        <translation>Nhập câu hỏi</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Nội dung do AI tạo chỉ mang tính chất tham khảo, vui lòng lưu ý đến độ chính xác của thông tin.</translation>
+    </message>
+    <message>
+        <source>Welcome to UOS AI</source>
+        <translation>Chào mừng đến với UOS AI</translation>
+    </message>
+    <message>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation>Dưới đây là một số việc mà UOS AI có thể giúp bạn thực hiện</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Dừng</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>Phát</translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation>Thử lại</translation>
+    </message>
+    <message>
+        <source>Clear conversation history</source>
+        <translation>Xóa lịch sử hội thoại</translation>
+    </message>
+    <message>
+        <source>Please connect the microphone and try again</source>
+        <translation>Vui lòng kết nối micro và thử lại</translation>
+    </message>
+    <message>
+        <source>Chat history cleared</source>
+        <translation>Đã xóa lịch sử hội thoại</translation>
+    </message>
+    <message>
+        <source>Click to start/stop recording</source>
+        <translation>Nhấp để bắt đầu/dừng ghi âm</translation>
+    </message>
+    <message>
+        <source>Listening</source>
+        <translation>Đang lắng nghe</translation>
+    </message>
+    <message>
+        <source>Sleeping</source>
+        <translation>Đang ngủ</translation>
+    </message>
+    <message>
+        <source>No microphone detected</source>
+        <translation>Không phát hiện thấy micro</translation>
+    </message>
+    <message>
+        <source>Connection failed, click to try again</source>
+        <translation>Kết nối thất bại, nhấp để thử lại</translation>
+    </message>
+    <message>
+        <source>Click on the animation%1 to activate</source>
+        <translation>Nhấp vào hoạt ảnh%1 để kích hoạt</translation>
+    </message>
+    <message>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation>Nhập bằng giọng nói tạm thời không khả dụng, vui lòng kiểm tra mạng!</translation>
+    </message>
+    <message>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>Không thể kết nối với máy chủ, vui lòng kiểm tra mạng hoặc thử lại sau.</translation>
+    </message>
+    <message>
+        <source>Voice conversation</source>
+        <translation>Hội thoại giọng nói</translation>
+    </message>
+    <message>
+        <source>Click the animation or press Enter to send</source>
+        <translation>Nhấp vào hoạt ảnh hoặc nhấn Enter để gửi</translation>
+    </message>
+    <message>
+        <source>Stop recording after %1 seconds</source>
+        <translation>Dừng ghi âm sau %1 giây</translation>
+    </message>
+    <message>
+        <source>Thinking</source>
+        <translation>Đang suy nghĩ</translation>
+    </message>
+    <message>
+        <source>Click animation to interrupt</source>
+        <translation>Nhấp vào ảnh động để ngắt</translation>
+    </message>
+    <message>
+        <source>Answering</source>
+        <translation>Đang trả lời</translation>
+    </message>
+    <message>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation>Hạn mức tài khoản miễn phí của bạn đã hết, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
+    </message>
+    <message>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation>Tài khoản miễn phí của bạn đã hết hạn, vui lòng cấu hình tài khoản mô hình để tiếp tục sử dụng.</translation>
+    </message>
+    <message>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI yêu cầu cấu hình tài khoản mô hình AI trước khi có thể sử dụng. Vui lòng cấu hình tài khoản mô hình trước.</translation>
+    </message>
+    <message>
+        <source>Activate</source>
+        <translation>Kích hoạt</translation>
+    </message>
+    <message>
+        <source>Voice input</source>
+        <translation>Giọng nói</translation>
+    </message>
+    <message>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation>Tính năng phát sóng giọng nói tạm thời không khả dụng, vui lòng kiểm tra mạng!</translation>
+    </message>
+    <message>
+        <source>Turn off voice conversation</source>
+        <translation>Tắt hội thoại giọng nói</translation>
+    </message>
+    <message>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation>Đã tạo hình ảnh, vui lòng chuyển sang giao diện trò chuyện để xem.</translation>
+    </message>
+    <message>
+        <source>No account, please configure an account</source>
+        <translation>Chưa có tài khoản, vui lòng cấu hình tài khoản</translation>
+    </message>
+    <message>
+        <source>Answer each question up to 5 times</source>
+        <translation>Trả lời mỗi câu tối đa 5 lần</translation>
+    </message>
+    <message>
+        <source>Copied successfully</source>
+        <translation>Đã sao chép thành công</translation>
+    </message>
+    <message>
+        <source>Sound output device not detected</source>
+        <translation>Không phát hiện thiết bị đầu ra âm thanh</translation>
+    </message>
+    <message>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation>Không phát hiện thiết bị đầu ra âm thanh, vui lòng kiểm tra và thử lại!</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>Chế độ</translation>
+    </message>
+    <message>
+        <source>Window Mode</source>
+        <translation>Chế độ Cửa sổ</translation>
+    </message>
+    <message>
+        <source>Sidebar Mode</source>
+        <translation>Chế độ Thanh bên</translation>
+    </message>
+    <message>
+        <source>Assistant List</source>
+        <translation>Danh sách Trợ lý</translation>
+    </message>
+    <message>
+        <source>Agent List</source>
+        <translation>Danh sách Đại lý</translation>
+    </message>
+    <message>
+        <source>UOS System Assistant</source>
+        <translation>Trợ lý Hệ thống UOS</translation>
+    </message>
+    <message>
+        <source>Deepin System Assistant</source>
+        <translation>Trợ lý Hệ thống Deepin</translation>
+    </message>
+    <message>
+        <source>Personal Knowledge Assistant</source>
+        <translation>Trợ lý Kiến thức Cá nhân</translation>
+    </message>
+    <message>
+        <source>Please configure the knowledge base</source>
+        <translation>Vui lòng cấu hình cơ sở kiến thức</translation>
+    </message>
+    <message>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>Trước khi sử dụng [Trợ lý Kiến thức Cá nhân], cần phải cấu hình cơ sở kiến thức. Sau khi cấu hình cơ sở kiến thức, AI sẽ trả lời câu hỏi hoặc tạo nội dung dựa trên nội dung bạn đã cấu hình trong cơ sở kiến thức.</translation>
+    </message>
+    <message>
+        <source>Please configure the large model</source>
+        <translation>Vui lòng cấu hình mô hình lớn</translation>
+    </message>
+    <message>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>Trợ lý kiến thức cá nhân chỉ có thể được sử dụng sau khi cấu hình một mô hình lớn.</translation>
+    </message>
+    <message>
+        <source>To configure</source>
+        <translation>Để cấu hình</translation>
+    </message>
+    <message>
+        <source>To install</source>
+        <translation>Để cài đặt</translation>
+    </message>
+    <message>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation>Vui lòng cài đặt [EmbeddingPlugins]</translation>
+    </message>
+    <message>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation>Trợ lý này yêu cầu cài đặt EmbeddingPlugins để chạy</translation>
+    </message>
+    <message>
+        <source>Drag files here to add them.</source>
+        <translation>Kéo tệp vào đây để thêm.</translation>
+    </message>
+    <message>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation>Bạn chỉ có thể thêm tối đa 3 tệp, các loại tệp được hỗ trợ bao gồm: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, tệp mã, v.v.</translation>
+    </message>
+    <message>
+        <source>You can only add a maximum of one file.</source>
+        <translation>Bạn chỉ có thể thêm tối đa một tệp.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Định dạng tệp không được hỗ trợ.</translation>
+    </message>
+    <message>
+        <source>Summarize the key content of the file.</source>
+        <translation>Tóm tắt nội dung chính của tệp.</translation>
+    </message>
+    <message>
+        <source>File Error</source>
+        <translation>Lỗi Tệp</translation>
+    </message>
+    <message>
+        <source>File has been deleted.</source>
+        <translation>Tệp đã bị xóa.</translation>
+    </message>
+    <message>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation>Kích thước tệp vượt quá giới hạn 100MB.</translation>
+    </message>
+    <message>
+        <source>Upload a document</source>
+        <translation>Tải lên tài liệu</translation>
+    </message>
+    <message>
+        <source>File deleted</source>
+        <translation>Đã xóa tệp</translation>
+    </message>
+    <message>
+        <source>No text was parsed</source>
+        <translation>Không có văn bản nào được phân tích</translation>
+    </message>
+    <message>
+        <source>Reference</source>
+        <translation>Tham chiếu</translation>
+    </message>
+    <message>
+        <source>Instruction</source>
+        <translation>Hướng dẫn</translation>
+    </message>
+    <message>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation>Nhập &quot;/&quot; vào ô nhập liệu để kích hoạt.</translation>
+    </message>
+    <message>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation>Vui lòng nhập; &quot;Ctrl+Enter&quot; để xuống dòng.</translation>
+    </message>
+    <message>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation>Nhập câu hỏi của bạn, hoặc nhập &quot;/&quot; để chọn lệnh
+&quot;Ctrl+Enter&quot; để bắt đầu dòng mới</translation>
+    </message>
+    <message>
+        <source>Search complete.</source>
+        <translation>Tìm kiếm hoàn tất.</translation>
+    </message>
+    <message>
+        <source>Click to view results</source>
+        <translation>Nhấp để xem kết quả</translation>
+    </message>
+    <message>
+        <source>edit</source>
+        <translation>chỉnh sửa</translation>
+    </message>
+    <message>
+        <source>save</source>
+        <translation>lưu</translation>
+    </message>
+    <message>
+        <source>copy</source>
+        <translation>sao chép</translation>
+    </message>
+    <message>
+        <source>lines of code collapsed</source>
+        <translation>dòng mã đã thu gọn</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>Lưu dưới dạng</translation>
+    </message>
+    <message>
+        <source>Thinking has stopped</source>
+        <translation>Đã dừng suy nghĩ</translation>
+    </message>
+    <message>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation>Suy nghĩ sâu (%1 giây)</translation>
+    </message>
+    <message>
+        <source>New Conversation</source>
+        <translation>Cuộc trò chuyện mới</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Lịch sử</translation>
+    </message>
+    <message>
+        <source>No History Records</source>
+        <translation>Không có Lịch sử</translation>
+    </message>
+    <message>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation>Bạn có chắc chắn muốn xóa cuộc hội thoại này không? Nó sẽ không thể phục hồi sau khi xóa.</translation>
+    </message>
+    <message>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation>Đại lý %1 được sử dụng trong cuộc hội thoại này đã bị xóa</translation>
+    </message>
+    <message>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation>Cuộc hội thoại này không thể xem được. Để xem, vui lòng cài đặt đại lý %1 và thử lại.</translation>
+    </message>
+    <message>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation>Mô hình cuộc hội thoại gốc đã bị xóa. Chúng tôi đã chuyển sang mô hình mới để bạn có thể tiếp tục cuộc hội thoại.</translation>
+    </message>
+    <message>
+        <source>Recommendations</source>
+        <translation>Đề xuất</translation>
+    </message>
+    <message>
+        <source>No Model</source>
+        <translation>Không có Mô hình</translation>
+    </message>
+    <message>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation>Không có mô hình nào. Vui lòng cài đặt hoặc cấu hình mô hình trong cài đặt.</translation>
+    </message>
+    <message>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation>Vui lòng Mô tả Chủ đề Nội dung và Yêu cầu cho Tạo tác của Bạn.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation>Vui lòng Nhập Nội dung Bạn Muốn Dịch và Chỉ định Ngôn ngữ Đích. Mặc định là Dịch sang Tiếng Trung.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation>Vui lòng Nhập Văn bản Bạn Cần Xử lý và Chỉ định Yêu cầu của Bạn.</translation>
+    </message>
+    <message>
+        <source>New Agent Added</source>
+        <translation>Đã Thêm Đại lý Mới</translation>
+    </message>
+    <message>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation>Các Đại lý Viết mới, Xử lý Văn bản và Dịch thuật đã được thêm. Hãy khám phá ngay.</translation>
+    </message>
+    <message>
+        <source>Try it</source>
+        <translation>Thử ngay</translation>
+    </message>
+    <message>
+        <source>Write an article based on the following document:</source>
+        <translation>Viết một bài dựa trên tài liệu sau:</translation>
+    </message>
+    <message>
+        <source>Translate the following document into English:</source>
+        <translation>Dịch tài liệu sau sang tiếng Anh:</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server</source>
+        <translation>Thêm Máy chủ Mcp</translation>
+    </message>
+    <message>
+        <source>Add Server</source>
+        <translation>Thêm Máy chủ</translation>
+    </message>
+    <message>
+        <source>Add failed! Error reason:</source>
+        <translation>Thêm thất bại! Lý do lỗi:</translation>
+    </message>
+    <message>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation>Thiếu môi trường MCP. Vui lòng cài đặt 【UOS AI Agent】</translation>
+    </message>
+    <message>
+        <source>Calling</source>
+        <translation>Đang gọi</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>Đã hoàn thành</translation>
+    </message>
+    <message>
+        <source>Call Failed</source>
+        <translation>Gọi thất bại</translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation>Đã hủy</translation>
+    </message>
+    <message>
+        <source>params</source>
+        <translation>tham số</translation>
+    </message>
+    <message>
+        <source>result</source>
+        <translation>kết quả</translation>
+    </message>
+    <message>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Đối với MCP Server, hãy chuyển sang mô hình phát hành chính thức &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation>Nhập lệnh MCP Server, ví dụ: &quot;Thay đổi hệ thống sang chế độ tối giúp tôi&quot;</translation>
+    </message>
+    <message>
+        <source>Agent server is not available</source>
+        <translation>Máy chủ Agent không khả dụng</translation>
+    </message>
+    <message>
+        <source>Agent server exception</source>
+        <translation>Lỗi máy chủ Agent</translation>
+    </message>
+    <message>
+        <source>MCP server is not available</source>
+        <translation>MCP server không khả dụng</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Xác nhận</translation>
+    </message>
+    <message>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation>Tự động hóa các tác vụ đa tệp và đa ứng dụng bằng một lệnh sử dụng MCP Service. Thử ngay!</translation>
+    </message>
+    <message>
+        <source>Use later</source>
+        <translation>Dùng sau</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server</source>
+        <translation>Bật MCP Server</translation>
+    </message>
+    <message>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation>Sau khi cài đặt môi môi trường MCP &quot;UOS AI Agent&quot;, hãy nhấp vào </translation>
+    </message>
+    <message>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation> và chọn &quot;uos-mcp&quot; trong danh sách máy chủ MCP.</translation>
+    </message>
+    <message>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation>Thử nói: &quot;Thay đổi hệ thống sang chế độ tối&quot;.</translation>
+    </message>
+    <message>
+        <source>Try it now</source>
+        <translation>Thử ngay</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation>Thêm Mcp Server[GuidePage]</translation>
+    </message>
+    <message>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation>Người dùng mới: Cài đặt môi trường MCP &quot;UOS AI Agent&quot; qua Cửa hàng ứng dụng.</translation>
+    </message>
+    <message>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation>Định dạng tệp JSON không chính xác, vui lòng kiểm tra và gửi lại</translation>
+    </message>
+    <message>
+        <source>Install Now &gt;</source>
+        <translation>Cài đặt ngay &gt;</translation>
+    </message>
+    <message>
+        <source>General Chat</source>
+        <translation>Trò chuyện chung</translation>
+    </message>
+    <message>
+        <source>Now in Private Chat</source>
+        <translation>Đang ở chế độ Trò chuyện riêng tư</translation>
+    </message>
+    <message>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation>Tin nhắn Trò chuyện riêng tư không được lưu vào lịch sử và sẽ bị xóa vĩnh viễn khi bạn rời khỏi cuộc trò chuyện.</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation>Hỏi đáp chụp màn hình    Phím tắt (Ctrl+Alt+Q), hỗ trợ tối đa 3 hình ảnh.</translation>
+    </message>
+    <message>
+        <source>Cannot be used during screen recording</source>
+        <translation>Không thể sử dụng trong khi quay màn hình</translation>
+    </message>
+    <message>
+        <source>You can upload up to 3 files or image</source>
+        <translation>Bạn có thể tải lên tối đa 3 tệp hoặc hình ảnh</translation>
+    </message>
+    <message>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation>Vui lòng xóa tệp bất thường và gửi lại</translation>
+    </message>
+    <message>
+        <source>Add Private Chat</source>
+        <translation>Thêm Trò chuyện riêng tư</translation>
+    </message>
+    <message>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation>Thêm [Hỏi đáp chụp màn hình]</translation>
+    </message>
+    <message>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation>Chụp màn hình và gửi nội dung cho UOS AI. Bạn cũng có thể tải trực tiếp hình ảnh lên.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Tiếp theo</translation>
+    </message>
+    <message>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation>Thêm [ Chế độ Trò chuyện riêng tư ] - Cuộc trò chuyện sẽ không được lưu.</translation>
+    </message>
+    <message>
+        <source>No text extracted</source>
+        <translation>Không trích xuất được văn bản</translation>
+    </message>
+    <message>
+        <source>Image size exceeds 15 MB</source>
+        <translation>Kích thước hình ảnh vượt quá 15 MB</translation>
+    </message>
+    <message>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation>Sau khi mở cơ sở kiến thức, câu trả lời sẽ dựa trên nội dung của nó. Tốc độ phản hồi phụ thuộc vào hiệu suất máy và kích thước cơ sở kiến thức.</translation>
+    </message>
+    <message>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation>Cơ sở kiến thức không khả dụng khi bất kỳ lệnh hoặc MCP nào được chọn.</translation>
+    </message>
+    <message>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation>MCP bị tắt khi cơ sở kiến thức đang hoạt động.</translation>
+    </message>
+    <message>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation>Các lệnh bị tắt khi cơ sở kiến thức đang hoạt động.</translation>
+    </message>
+    <message>
+        <source>Copy succeeded.</source>
+        <translation>Sao chép thành công.</translation>
+    </message>
+    <message>
+        <source>Copy failed. Please try again.</source>
+        <translation>Sao chép thất bại. Vui lòng thử lại.</translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation>Đang tìm kiếm</translation>
+    </message>
+    <message>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation>Đã lấy được %1 tài liệu tham khảo (%2s)</translation>
+    </message>
+    <message>
+        <source>Clear History</source>
+        <translation>Xóa lịch sử</translation>
+    </message>
+    <message>
+        <source>Delete all records?</source>
+        <translation>Xóa tất cả bản ghi?</translation>
+    </message>
+    <message>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation>Sau khi xóa, nội dung sẽ không thể khôi phục!</translation>
+    </message>
+    <message>
+        <source>Recommend official models</source>
+        <translation>Đề xuất mô hình chính thức</translation>
+    </message>
+    <message>
+        <source>Disable MCP</source>
+        <translation>Tắt MCP</translation>
+    </message>
+    <message>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Khuyên dùng mô hình chính thức &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>Mở nhanh</translation>
+    </message>
+    <message>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation>Nâng cấp Máy chủ MCP sang Chế độ tự động</translation>
+    </message>
+    <message>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation>Máy chủ MCP đã được nâng cấp sang chế độ tự động, cho phép bạn truy cập tất cả Máy chủ MCP chỉ bằng một cú nhấp chuột </translation>
+    </message>
+    <message>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation>. Điều này cho phép bạn tự động hóa các tác vụ như thiết lập hệ thống và xử lý tệp chỉ bằng một cú nhấp chuột.</translation>
+    </message>
+    <message>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation>Việc thêm Máy chủ MCP đã được chuyển sang Cài đặt.</translation>
+    </message>
+    <message>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation>Để thêm Máy chủ MCP khác, hãy đi tới Cài đặt &gt; Máy chủ MCP.</translation>
+    </message>
+    <message>
+        <source>Got it</source>
+        <translation>Đã hiểu</translation>
+    </message>
+    <message>
+        <source>Complimentary Model Credits</source>
+        <translation>Tín dụng Mô hình Tặng kèm</translation>
+    </message>
+    <message>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation>Hệ thống hiện tại cung cấp mô hình tài khoản dùng thử DeepSeek, tự động làm mới hạn ngạch miễn phí vào đầu mỗi tháng, giúp bạn sử dụng mà không cần lo lắng.</translation>
+    </message>
+    <message>
+        <source>Claim Credits</source>
+        <translation>Nhận Tín dụng</translation>
+    </message>
+    <message>
+        <source>Get a free account</source>
+        <translation>Nhận tài khoản miễn phí</translation>
+    </message>
+    <message>
+        <source>Claim Free Credits</source>
+        <translation>Nhận Tín dụng Miễn phí</translation>
+    </message>
+    <message>
+        <source>Successfully Claimed</source>
+        <translation>Đã Nhận Thành công</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation>Nhận Thất bại. Vui lòng Thử lại.</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server&amp;</source>
+        <translation>Bật Máy chủ MCP&amp;</translation>
+    </message>
+    <message>
+        <source>Disable MCP Server</source>
+        <translation>Tắt Máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>Configure MCP Server</source>
+        <translation>Cấu hình Máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>Enabling MCP Server Features</source>
+        <translation>Đang bật Tính năng Máy chủ MCP</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>Một số tính năng máy chủ MCP của bên thứ ba mang rủi ro nhất định. Vui lòng sử dụng thận trọng. Nếu bạn bật dịch vụ này, một công cụ tích hợp sẽ phát hiện và tự động tải xuống các phần phụ thuộc cần thiết. Quá trình tải xuống này sẽ phát sinh phí dữ liệu. Vui lòng lưu ý các rủi ro này và tiếp tục thận trọng.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>Tôi đã hiểu và đồng ý sử dụng dịch vụ này</translation>
+    </message>
+    <message>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation>UOS AI Theo dõi/Viết</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">Văn bản bạn đã chọn đã vượt quá giới hạn 5000 ký tự.</translation>
+        <translation>Văn bản bạn đã chọn đã vượt quá giới hạn 5000 ký tự.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
-        <translation>Văn bản bạn đã chọn vượt quá giới hạn 2000 ký tự.</translation>
+        <translation>Văn bản bạn đã chọn đã vượt quá giới hạn 2000 ký tự.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>Mạng đang ngoại tuyến, dừng chuyển văn bản thành giọng nói</translation>
     </message>
@@ -8853,107 +4637,136 @@ json
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">Độ sáng đã ở mức tối đa và không thể tăng thêm.</translation>
+        <translation>Độ sáng đã đạt mức tối đa và không thể tăng thêm.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">Độ sáng đã ở mức tối thiểu và không thể giảm thêm.</translation>
+        <translation>Độ sáng đã đạt mức tối thiểu và không thể giảm thêm.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Lịch họp AI</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">Bộ nhớ hệ thống của bạn là %0.</translation>
+        <translation>Bộ nhớ hệ thống của bạn là %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">Giao diện cài đặt ngôn ngữ đã được mở. Vui lòng cài đặt trong giao diện này.</translation>
+        <translation>Giao diện cài đặt ngôn ngữ đã được mở. Vui lòng cài đặt trong giao diện này.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">Chế độ hiện tại đã là chế độ %1.</translation>
+        <translation>Chế độ hiện tại đã là chế độ %1.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">Không thể đóng vì chế độ hiện tại %1 không khớp với chế độ mục tiêu.</translation>
+        <translation>Không thể đóng vì chế độ hiện tại %1 không khớp với chế độ mục tiêu.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">Không thể tắt chế độ cân bằng.</translation>
+        <translation>Không thể tắt chế độ cân bằng.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">Màn hình khóa đã được mở cho bạn</translation>
+        <translation>Màn hình khóa đã được mở cho bạn</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">Chụp màn hình hoặc ghi hình đã hoàn tất</translation>
+        <translation>Chụp màn hình hoặc quay màn hình đã hoàn tất</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">Chỉ có một màn hình, không thể chuyển đổi chế độ màn hình.</translation>
+        <translation>Chỉ có một màn hình, không thể chuyển đổi chế độ màn hình.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">Nó giống với chế độ hiển thị hiện tại. Vui lòng thử lại.</translation>
+        <translation>Giống như chế độ hiển thị hiện tại. Vui lòng thử lại.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">Chỉ có một màn hình, không thể chuyển đổi màn hình.</translation>
+        <translation>Chỉ có một màn hình, không thể chuyển đổi màn hình.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">Lệnh của bạn đã được phát hành.</translation>
+        <translation>Lệnh của bạn đã được gửi.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể đổi tên tệp %1</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Đổi tên hàng loạt hoàn tất, đã đổi tên thành công %1 tệp, thất bại %2 tệp.
+Chi tiết lỗi:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>Ứng dụng khách email đã được mở, vui lòng xác nhận để gửi</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Cửa hàng ứng dụng đã được mở, đang chuẩn bị cài đặt ứng dụng: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>Mục tiêu cửa hàng ứng dụng trống</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>Không thể mở mục tiêu Cửa hàng ứng dụng: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>Cửa hàng ứng dụng đã được mở cho: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>Lấy mức sử dụng bộ nhớ hệ thống</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>Lấy mức sử dụng CPU hệ thống</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>Lấy thông tin đĩa hệ thống</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>Chuyển sang chế độ tối</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>Chuyển sang chế độ sáng</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>Thay đổi hình nền máy tính</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>Chuyển chế độ thanh dock</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>Bật chế độ bảo vệ mắt</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
         <translation>Cập nhật</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
         <translation>Hủy cập nhật</translation>
     </message>
@@ -8961,211 +4774,164 @@ Error details:
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
-        <translation>Nhật ký cập nhật Trợ lý UOS AI</translation>
+        <translation>Nhật ký cập nhật Trợ lý AI UOS</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished"></translation>
+        <translation>Thỏa thuận người dùng UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Tôi xác nhận rằng tôi trên 18 tuổi. Tôi công nhận và đồng ý rằng nội dung tôi gửi và nhận qua Ứng dụng là trao đổi dữ liệu trực tiếp với nhà cung cấp dịch vụ mô hình lớn và không liên quan gì đến Công ty.</translation>
+        <translation>Tôi xác nhận rằng tôi trên 18 tuổi. Tôi thừa nhận và đồng ý rằng nội dung tôi gửi và nhận qua Ứng dụng là trao đổi dữ liệu trực tiếp với nhà cung cấp dịch vụ mô hình lớn và không liên quan đến Công ty.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tôi đồng ý tham gia kế hoạch trải nghiệm người dùng của Ứng dụng và ủy quyền cho công ty của bạn thu thập nội dung tôi gửi khi sử dụng Ứng dụng, thời gian gửi, loại mô hình lớn được yêu cầu, ứng dụng cụ thể và liệu văn bản có tạo hình ảnh thành công hay không, nhằm cải thiện chất lượng dịch vụ và nâng cao trải nghiệm vận hành. (Nếu bạn từ chối cung cấp thông tin trên, việc đó sẽ không ảnh hưởng đến việc sử dụng bình thường Ứng dụng của bạn.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Chào mừng đến với UOS AI</translation>
+        <translation>Chào mừng đến với UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, trợ lý thông minh của bạn, được thiết kế để nâng cao năng suất và mang lại trải nghiệm làm việc chất lượng cao.</translation>
+        <translation>UOS AI, trợ lý thông minh của bạn, được thiết kế để nâng cao năng suất của bạn và tận hưởng trải nghiệm làm việc chất lượng cao.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Nhận tài khoản miễn phí</translation>
+        <translation>Nhận tài khoản miễn phí</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">Thêm Mô hình</translation>
+        <translation>Thêm Mô hình</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">Bắt đầu sử dụng</translation>
+        <translation>Bắt đầu sử dụng</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Tôi xác nhận rằng tôi trên 18 tuổi. Tôi công nhận và đồng ý với &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Thỏa thuận Người dùng UOS AI&quot;&lt;/a&gt;, và nội dung tôi gửi và nhận qua Ứng dụng là trao đổi dữ liệu trực tiếp với nhà cung cấp dịch vụ mô hình lớn và không liên quan đến Công ty.</translation>
+        <translation>Tôi xác nhận rằng tôi trên 18 tuổi. Tôi thừa nhận và đồng ý với &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Thỏa thuận người dùng UOS AI&quot;&lt;/a&gt;, và nội dung tôi gửi và nhận qua Ứng dụng là trao đổi dữ liệu trực tiếp với nhà cung cấp dịch vụ mô hình lớn và không liên quan đến Công ty.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Việc nhận tài khoản cho thấy bạn hiểu và đồng ý với các điều khoản của sự kiện,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Chi tiết sự kiện&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Tài khoản dùng thử UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished">Lưu thất bại, vui lòng thử lại sau</translation>
+        <translation>Lưu không thành công, vui lòng thử lại sau</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Xác nhận</translation>
+        <translation>Xác nhận</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Đã nhận tài khoản dùng thử thành công.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished">Số lần sử dụng và thời gian của tài khoản dùng thử có giới hạn, vui lòng cấu hình tài khoản mô hình cá nhân kịp thời! Xem chi tiết sự kiện để biết thêm.</translation>
+        <translation>Số lần sử dụng và thời hạn của tài khoản dùng thử bị giới hạn, vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời! Xem chi tiết sự kiện để biết thêm thông tin.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Hỗ trợ tiếng Anh cho tài khoản dùng thử chưa đạt yêu cầu. Số lần sử dụng và thời hạn của tài khoản dùng thử đều có giới hạn. Vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời!</translation>
+        <translation>Hỗ trợ tiếng Anh cho tài khoản dùng thử chưa thực sự tốt. Ngoài ra, số lần sử dụng và thời hạn của tài khoản dùng thử bị giới hạn. Vui lòng cấu hình tài khoản mô hình cá nhân của bạn kịp thời!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">Bắt đầu dùng thử</translation>
+        <translation>Bắt đầu dùng thử</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoạt động tài khoản miễn phí đã kết thúc.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Không thể kết nối với máy chủ, vui lòng kiểm tra mạng của bạn hoặc thử lại sau.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tôi đồng ý tham gia vào kế hoạch trải nghiệm người dùng của Ứng dụng, và ủy quyền cho công ty của bạn thu thập nội dung tôi gửi khi sử dụng Ứng dụng, thời gian gửi, loại mô hình lớn được yêu cầu, ứng dụng cụ thể và việc tạo hình ảnh từ văn bản có thành công hay không, nhằm cải thiện chất lượng dịch vụ và nâng cao trải nghiệm vận hành. (Nếu bạn từ chối cung cấp thông tin trên, việc này sẽ không ảnh hưởng đến việc sử dụng bình thường Ứng dụng của bạn.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
         <translation>Ẩn cho đến khi khởi động lại ứng dụng này</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
+        <source>Disable in This Application</source>
+        <translation>Tắt trong Ứng dụng này</translation>
+    </message>
+    <message>
+        <source>Disable Globally</source>
+        <translation>Tắt Toàn cục</translation>
+    </message>
+    <message>
+        <source>Custom Settings</source>
+        <translation>Cài đặt Tùy chỉnh</translation>
+    </message>
+    <message>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Vào &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Cài đặt&lt;/a&gt; để bật lại.</translation>
+        <translation>Đi tới &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Cài đặt&lt;/a&gt; để bật lại.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
-        <translation>Nội dung đã thêm phải có hơn 10 từ</translation>
+        <translation>Nội dung được thêm phải nhiều hơn 10 từ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>Tìm kiếm</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>Giải thích</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>Tóm tắt</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>Dịch</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
-        <translation>Tiếp tục viết</translation>
+        <translation>Viết tiếp</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>Mở rộng</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
-        <translation>Sửa</translation>
+        <translation>Sửa lại</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
+        <source>Polish</source>
+        <translation>Trau chuốt</translation>
+    </message>
+    <message>
         <source>Add to the AI knowledge base</source>
         <translation>Thêm vào cơ sở kiến thức AI</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
-        <source>Disable in This Application</source>
-        <translation>Tắt trong ứng dụng này</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
-        <source>Disable Globally</source>
-        <translation>Tắt toàn cục</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
-        <source>Custom Settings</source>
-        <translation>Tùy chỉnh cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
-        <source>Polish</source>
-        <translation>Chỉnh sửa</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI FollowAlong</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Đã thêm</translation>
     </message>
@@ -9173,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI Đồng hành</translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>Tự động hiển thị thanh công cụ UOS AI Đồng hành khi văn bản được chọn.</translation>
+        <translation>Tự động hiển thị thanh công cụ UOS AI FollowAlong khi có văn bản được chọn.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>Sau khi đóng, văn bản đã chọn vẫn có thể được gọi lại bằng phím tắt thanh Super+R.</translation>
+        <translation>Sau khi đóng, văn bản đã chọn vẫn có thể được kích hoạt bằng phím tắt Super+R.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>Lệnh không xác định: %1
+Gửi /help để xem các lệnh có sẵn.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>Đã bắt đầu cuộc trò chuyện mới.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>Lịch sử trò chuyện đã được xóa.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>Các lệnh có sẵn:
+  /help   — Hiển thị thông tin trợ giúp này
+  /new    — Bắt đầu cuộc trò chuyện mới (xóa ngữ cảnh hiện tại)
+  /stop   — Hủy yêu cầu đang thực hiện
+  /clear  — Xóa toàn bộ lịch sử trò chuyện</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>Không tìm thấy mô hình. Vui lòng cấu hình mô hình trước.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>Yêu cầu AI thất bại</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>Yêu cầu hết thời gian, vui lòng thử lại</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>Không có yêu cầu nào đang hoạt động để dừng.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>Đã hủy yêu cầu.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>Đang gọi công cụ: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>Gọi công cụ thất bại: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>Lỗi AI (mã: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>Lỗi nền tảng, yêu cầu đã bị hủy: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>Đang suy nghĩ...</translation>
     </message>
 </context>
 </TS>

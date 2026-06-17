@@ -34,29 +34,23 @@ AbstractModel* UosFreeProvider::createModel(const ModelAccountPtr &acc)
 
     QVariantHash parameters;
     // 自动选择模型或没有配置模型时，默认使用deepseek 3.2
-    if (acc->model.id.compare(UOS_FREE_MODEL_AUTO, Qt::CaseInsensitive) == 0 || acc->model.modelId.isEmpty()) {
+    if (decrypted->model.id.compare(UOS_FREE_MODEL_AUTO, Qt::CaseInsensitive) == 0 || decrypted->model.modelId.isEmpty()) {
         decrypted->model = BuiltinProvider::instance()->getModelInfo(UOS_FREE_DEEPSEEK_V3_2);
-        // 开启deepseek 3.2的回传 reasoning 功能
-        parameters.insert(STR_KEY_ATTACH_REASONING, true);
     }
+
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
 
     switch (decrypted->model.arch) {
     case ModelArch::MaLanguage: {
-        if (acc->model.id.compare(UOS_FREE_DEEPSEEK_V3_2, Qt::CaseInsensitive) == 0) {
-            auto model = new DeepSeekChatModel();
-            model->setParameters(parameters);
-            model->setAccount(decrypted);
-            model->setApiHost(host());
-            return model;
-        } else if (acc->model.id.compare(UOS_FREE_ONLINE_SEARCH, Qt::CaseInsensitive) == 0) {
+        if (decrypted->model.id.compare(UOS_FREE_ONLINE_SEARCH, Qt::CaseInsensitive) == 0) {
             auto model = new OnlineSearchModel();
-            model->setParameters(parameters);
             model->setAccount(decrypted);
             return model;
         } else {
             auto model = new OaiChatModel();
             model->setAccount(decrypted);
             model->setApiHost(host());
+            model->setParameters(parameters);
             return model;
         }
         break;

@@ -73,6 +73,7 @@ html.dark {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding-bottom: 2px;
 }
 
 .file-item__type {
@@ -87,6 +88,7 @@ html.dark {
     display: flex;
     align-items: center;
     margin-top: 4px;
+    padding-bottom: 2px;
 }
 
 .file-item__size {

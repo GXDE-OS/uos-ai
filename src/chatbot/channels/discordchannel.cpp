@@ -774,8 +774,8 @@ void DiscordChannel::requestJson(const QString &method, const QString &path,
 void DiscordChannel::applyCurrentProxy()
 {
     const QUrl restUrl(QStringLiteral("https://discord.com/api/v10"));
-    uos_ai::applyProxyToNetworkAccessManager(m_http, restUrl, logDiscord(), "Discord HTTP");
-    uos_ai::applyProxyToWebSocket(m_ws, QUrl(QStringLiteral("wss://gateway.discord.gg")),
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_http, restUrl, logDiscord(), "Discord HTTP");
+    ProxySettingsWrapper::applyProxyToWebSocket(m_ws, QUrl(QStringLiteral("wss://gateway.discord.gg")),
                                   logDiscord(), "Discord WebSocket");
 }
 

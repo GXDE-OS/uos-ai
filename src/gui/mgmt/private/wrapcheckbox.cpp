@@ -62,7 +62,6 @@ void WrapCheckBox::initUI()
     m_label = new DLabel;
     m_label->setWordWrap(false);
     m_label->setForegroundRole(QPalette::Text);
-    DFontSizeManager::instance()->bind(m_label, DFontSizeManager::T6, QFont::Medium);
 
     auto layout = new QHBoxLayout();
     layout->setContentsMargins(0, 0, 0, 0);
@@ -127,6 +126,12 @@ void WrapCheckBox::setTextFormat(Qt::TextFormat format)
 {
     if (m_label)
         m_label->setTextFormat(format);
+}
+
+void WrapCheckBox::setTextFont(const QFont &font)
+{
+    if (m_label)
+        m_label->setFont(font);
 }
 
 bool WrapCheckBox::openExternalLinks() const

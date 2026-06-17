@@ -11,6 +11,7 @@
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QReadWriteLock>
+#include <QVariantHash>
 
 namespace uos_ai {
 
@@ -32,6 +33,8 @@ public:
     void setCurrentMessage(const QString &msgId);
     QString currentMessage() const;
 
+    void setExtension(const QVariantHash &extension);
+    QVariantHash extension() const;
     // 基本属性
     QString id() const;
     QString title() const;
@@ -56,6 +59,7 @@ public:
     // 工具方法
     QString generateSummary() const;
     bool isEmpty() const;
+    QStringList extractTextContent() const;  // 组合文本内容，生成搜索范围
     
     QList<MessageNodePtr> history(const QString &leafId) const;
 
@@ -68,6 +72,7 @@ private:
     QString m_title;
     QString m_assistantId;
     QString m_modelId;
+    QVariantHash m_extension;
     QString m_introduction;
     QDateTime m_createTime;
     QDateTime m_updateTime;

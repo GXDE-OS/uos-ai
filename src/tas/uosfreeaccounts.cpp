@@ -161,7 +161,7 @@ QNetworkReply::NetworkError UosFreeAccounts::getFreeAccount(int type, int llm, U
     return resp.first;
 }
 
-QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl, bool &claimAgain)
+QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl, bool &claimAgain, QString *msg)
 {
     QJsonObject sendJson;
     sendJson["appkey"] = appkey;
@@ -185,7 +185,9 @@ QNetworkReply::NetworkError UosFreeAccounts::getDeterAccountLegal(const QString 
         if (obj.contains("claimAgain"))
             claimAgain = obj["claimAgain"].toBool();  // 是否已领取额外额度 true: 已经领取，false: 未领取
     } else {
-        qCWarning(logTAS) << "Failed to get deter account legal, error:" << resp.first;
+        qCWarning(logTAS) << "Failed to get deter account legal, error:" << resp.first << obj;
+        if (msg)
+            *msg = obj.value("desc").toString();
     }
     
     return resp.first;

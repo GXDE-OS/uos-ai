@@ -2,4289 +2,709 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ta">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">மாதிரியைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">தேவை, தயவுசெய்து உள்ளிடவும்</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">APISecret</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">கணக்கு</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">தேவை, பல மாதிரிகளை வேறுபடுத்த</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">விருப்பமானது</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">விருப்பமானது. நிரப்பப்படாவிட்டால் இயல்புநிலை முகவரி பயன்படுத்தப்படும்.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">மாதிரிகள் பட்டியல்</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">தனிப்பயன்</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் பிணையத்தைச் சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">ப்ராக்ஸி அமைப்புகளுக்கு, கணினி ப்ராக்ஸி அமைப்புகளுக்குச் செல்லவும்</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">அமைப்புகளுக்குச் செல்லவும்</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ரத்துசெய்</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">மாதிரி பெயர்</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">களம்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">உறுதிப்படுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">சேமிப்பு தோல்வியடைந்தது, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">கணக்கு பெயர் ஏற்கனவே உள்ளது, அதை மாற்றவும்</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">20 எழுத்துகளுக்கு மேல் இல்லை</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">மாதிரி கிடைக்கிறதா என்பதை சோதிக்க, கணினி பெரிய மாதிரிக்கு சோதனை தகவலை அனுப்புகிறது, இது ஒரு சிறிய அளவு டோக்கன்களைப் பயன்படுத்தும்.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">இந்த LLM ஏற்கனவே உள்ளது, அதை மீண்டும் சேர்க்க வேண்டாம்.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">தற்போது பல பார்வையாளர்கள் உள்ளனர், பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">வகை</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ரத்துசெய்</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">சத்தமாக வாசிக்கவும்</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">ஆடியோ சாதனம் கண்டறியப்படவில்லை, சரிபார்க்கவும் மற்றும் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">AI மூலம் உருவாக்கப்பட்ட உள்ளடக்கம் குறிப்புக்காக மட்டுமே, தகவலின் துல்லியத்திற்கு கவனம் செலுத்தவும்.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">நகலெடு</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியை எனக்காக மெருகேற்றி, கூடுதல் உள்ளடக்கம் இல்லாமல் முடிவை மட்டும் தரவும்.
-
-உரை：</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">தற்போதைய மாதிரி: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">மீண்டும் உருவாக்கு</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">எளிமைப்படுத்தப்பட்ட சீனம்</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">பாரம்பரிய சீனம்</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">திபெத்திய</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">ஆங்கிலம்</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">ஜப்பானிய </translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">ஜெர்மன்</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">ஸ்பானிஷ்</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">பிரஞ்சு</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">இத்தாலிய</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">கொரியன்</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">மலாய்</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">போர்த்துகீசிய</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">ரஷியன்</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">தாய்</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">வியட்நாமிய</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">உரையாடலைத் தொடரவும்</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">தானியங்கி கண்டறிதல்</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">தேடு</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">விளக்கு</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">மொழிபெயர்</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">விரிவாக்கு</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">சரி செய்</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">ஏஐ அறிவுத்தளத்தில் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">சேர்க்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">மாதிரி உள்ளமைவு</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">நகலெடுக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">உரை எதுவும் அடையாளம் காணப்படவில்லை.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">சேர்க்கப்பட்ட உள்ளடக்கம் 10 சொற்களுக்கு மேல் இருக்க வேண்டும்</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">சுருக்கம்</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">உரையில் ஒட்டு</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">எழுதுவதைத் தொடரவும்</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">மெருகேற்று</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">மொழிபெயர்ப்பு முடிவு மாதிரியின் திறன்களால் வரையறுக்கப்படுகிறது. மொழிபெயர்ப்பில் திருப்தி இல்லையென்றால், UOS AI முகப்பு பக்கத்தில் உள்ள பிற மாதிரிகளுக்கு மாறவும்.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியை %1 மொழியில் மொழிபெயர்த்து, தெளிவான முடிவை நேரடியாகத் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">கிளிக் செய்ய முடியாது</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">உள்ளீட்டு முறையை மீண்டும் தொடங்கிய பிறகே இந்த செயல்பாட்டைப் பயன்படுத்தலாம். பயிற்சி பின்வருமாறு: 1. பணிப்பட்டியில் உள்ள உள்ளீட்டு முறை ஐகானில் வலது கிளிக் செய்யவும். 2. &quot;மீண்டும் தொடங்கு&quot; என்பதைக் கிளிக் செய்யவும்.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">சரி</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">நிரப்புவது தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">உள்ளீட்டுப் பெட்டி தேர்ந்தெடுக்கப்படவில்லை, உள்ளீட்டுப் பெட்டியைத் தேர்ந்தெடுத்து மீண்டும் நிரப்பவும்.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">சரி</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியை எளிய மொழியில் விளக்கவும். தேவையற்ற உள்ளடக்கம் இல்லாமல் தெளிவான முடிவை மட்டும் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியை சுருக்கி, வேறு தேவையற்ற உள்ளடக்கம் இல்லாமல் நேரடியாக தெளிவான முடிவைத் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியை பொருத்தமாகத் தொடரவும். அதிக வார்த்தைகள் தேவையில்லை. தேவையற்ற உள்ளடக்கம் இல்லாமல் தெளிவான முடிவை மட்டும் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியை பொருத்தமாக விரிவாக்கவும். மிக நீண்ட உரை தேவையில்லை. தேவையற்ற உள்ளடக்கம் இல்லாமல் தெளிவான முடிவை மட்டும் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">இந்தப் பத்தியில் எழுத்துப் பிழைகள் உள்ளதா என்பதைச் சரிபார்க்கவும். இருந்தால், பிழைகளின் இடத்தைக் குறிப்பிடவும். தேவையற்ற உள்ளடக்கம் இல்லாமல் நேரடியாக தெளிவான முடிவைத் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">தற்போது மாதிரி இல்லை</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">கட்டமைக்கச் செல்லவும்</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">அரட்டை வரலாறு அழிக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">நகல் எடுக்கப்பட்டது</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI ஒரு டெஸ்க்டாப் ஸ்மார்ட் உதவியாளர், உங்கள் தனிப்பட்ட உதவியாளர்! உரை அல்லது குரல் மூலம் இதனுடன் தொடர்பு கொள்ளலாம், இது கேள்விகளுக்கு பதிலளிக்கவும், தகவல்களை வழங்கவும், உங்கள் விளக்கங்களின் அடிப்படையில் படங்களை உருவாக்கவும் உதவும்.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI பின்தொடர்/எழுது</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">அறிவு தள மேலாண்மை</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் பிணையத்தை சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">செயல்பாடு பாகுபடுத்துதல் தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">பயன்பாட்டுக் கோப்பு இல்லை</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">வெற்றிகரமாகத் தொடங்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">தொடக்கம் தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished"> நிறைவேற்று வெளியீடு உள்ளடக்கம் </translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">முறை</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">சாளர முறை</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">பக்கப்பட்டியின் முறை</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">அமைப்புகள்</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">புதுப்பிப்பு பதிவு</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">குரல் உரையாடல்</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ரத்து செய்</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">நீக்கு</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">அழிப்பை உறுதிப்படுத்தவா %1?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">அழித்த பிறகு இந்த சேவையகம் பயன்படுத்த முடியாததாகிவிடும். கவனமாக செயல்படவும்.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">புதுப்பிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">வெக்டர் செய்யப்படாத சொருகி</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">[ஏஐ அறிவுத்தளத்தை] பயன்படுத்துவதற்கு முன், நீங்கள் முதலில் வெக்டரைசேஷன் சொருகியை நிறுவ வேண்டும், அதனால் ஏஐ அறிவுத்தள செயல்பாடு சரியாக வேலை செய்யும்.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">நிறுவவும்</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">அறிவுத்தளம் காலியாக உள்ளது</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">[ஏஐ அறிவுத்தளத்தை] பயன்படுத்துவதற்கு முன், நீங்கள் முதலில் ஆவணங்களை அறிவுத்தளத்தில் சேர்க்க வேண்டும். சேர்த்த பிறகு, நீங்கள் சேர்த்த உள்ளடக்கத்தின் அடிப்படையில் ஏஐ கேள்விகளுக்கு பதிலளிக்கும்.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">கோப்புகளை சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">பின்வரும் கோப்பு காலாவதியாகிவிட்டது, பயன்படுத்த முடியாது. தொடரவா?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">பின்னர் பயன்படுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">இப்போது நிறுவவும்</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">MCP சூழல் இல்லை</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">UOS AI ஏஜெண்டை நிறுவ App Store செல்லவும்</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">இப்போது இல்லை</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">கடன் கோரிக்கைகளைக் கோருங்கள்</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">இலவச கடன் வழங்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">உங்கள் சோதனை கணக்கிற்கான இலவச உருவாக்க கடன்களை நீங்கள் பயன்படுத்திவிட்டீர்கள். இந்த மாதத்திற்கான 200 கூடுதல் இலவச கடன்களை நாங்கள் உங்களுக்கு வழங்கியுள்ளோம். மேலும் அம்சங்களை ஆராய்ந்து UOS AI இன் வரம்பற்ற திறன்களைத் திறக்கவும்!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">சரி</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">வெற்றிகரமாக கோரப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">கோரிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI என்பது ஒரு டெஸ்க்டாப் ஸ்மார்ட் உதவியாளர், உங்கள் தனிப்பட்ட உதவியாளர்! உரை அல்லது குரல் மூலம் இதனுடன் தொடர்பு கொள்ளலாம், மேலும் இது கேள்விகளுக்கு பதிலளிக்க உதவும், தகவல்களை வழங்கும் மற்றும் உங்கள் விளக்கங்களின் அடிப்படையில் படங்களை உருவாக்கும்.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">தகவல் தாக்கல்</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">அங்கீகாரம் தோல்வியுற்றது, போதுமான இருப்பு இல்லை</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">அங்கீகாரம் தோல்வியுற்றது, தினசரி வரம்பு மீறப்பட்டது</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">தற்போது பல பார்வையாளர்கள் உள்ளனர், பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">சேவை அசாதாரணமாக உள்ளது. சிக்கலைத் தீர்க்க வளர்ச்சி குழுவைத் தொடர்பு கொள்ளவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">பிழை</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">சரி</translation>
+        <translation>சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் நெட்வொர்க்கைச் சரிபார்க்கவும் அல்லது பிறகு மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">தனிப்பட்ட அறிவு உதவியாளரை அறிவு தளத்தை உள்ளமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">தனிப்பட்ட அறிவு உதவியாளரை மாதிரி பிளக்கை உள்ளமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">ஆழமான அமைப்பு உதவியாளரை மாதிரி பிளக்கை உள்ளமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">UOS அமைப்பு உதவியாளரை மாதிரி பிளக்கை உள்ளமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">அறிவு தள மேலாண்மை</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="obsolete">MCP சர்வர்</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI பயன்படுத்துவதற்கு முன் ஒரு AI மாதிரி கணக்கை உள்ளமைக்க வேண்டும். முதலில் ஒரு மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">அறிவுத்தளத்தை அமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">மாடல் சொருகியை நிறுவவும்.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">படத்தை இப்படியாக ஏற்றுமதி செய்</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">வெற்றிகரமாக கோரப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">கோரிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">நீங்கள் அதிகபட்சமாக 3 கோப்புகள் அல்லது படங்களை பதிவேற்றலாம்</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">பின்வரும் உரையை எனக்காக ஆங்கிலத்தில் மொழிபெயர்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">பின்வரும் ஆவணத்தை சீனத்தில் மொழிபெயர்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">AI தொழில்துறையில் “Agent” என்ற சொல்லின் பொருள் என்ன?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">பின்வரும் உள்ளடக்கத்தை சீனத்தில் மொழிபெயர்க்கவும். தேவைகள்: பொருளில் துல்லியமான, மொழியில் முறையான மற்றும் தொழில்முறை.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">ஆங்கிலத்தில் ஒரு நண்பரை அழைப்பதற்கான சில பேச்சுவழக்கு வழிகள் என்ன?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">பின்வரும் பாரம்பரிய சீன உரையை நவீன சீனத்தில் மொழிபெயர்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">சரிபார்ப்பு</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">விளக்கு</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">விரிவாக்கு</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">தொடரவும்</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">மெருகேற்று</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">இந்த ஆவணத்தின் அடிப்படையில் ஒரு பணி சுருக்கத்தை எழுத எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">திட்டம் A க்கான ஒரு பணி சுருக்கம் எனக்கு தேவை, முக்கிய புள்ளிகளை ஒழுங்கமைக்க எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">எனது உள்ளீட்டு உரையின் அடிப்படையில் ஒரு சுருக்கமான பணி சுருக்கத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">இந்த அறிக்கையை பகுப்பாய்வு செய்து பணி சுருக்கத்திற்கான முக்கிய புள்ளிகளை பிரித்தெடுக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">காலாண்டு தரவுகள் உட்பட ஒரு பணி சுருக்கம் எனக்கு தேவை, இணைப்பைப் பார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">தனிப்பட்ட பங்களிப்புகளை முன்னிலைப்படுத்தும் ஒரு பணி சுருக்கத்தை எழுத எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">செயல் புள்ளிகளில் கவனம் செலுத்தி, கூட்டக் குறிப்புகளிலிருந்து ஒரு பணி சுருக்கத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">சீனம் மற்றும் ஆங்கிலம் இரண்டிலும் ஒரு இருமொழி பணி சுருக்கம் எனக்கு தேவை, வழங்கப்பட்ட பொருட்களைப் பார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">கடந்த மாத பணி உள்ளடக்கத்தை ஒழுங்கமைத்து ஒரு சுருக்கத்தை உருவாக்க எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">இந்த பணி பட்டியல்களின் அடிப்படையில் ஒரு பணி சுருக்கத்தை எழுதுங்கள், நிறைவு நிலையை வலியுறுத்தி</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">இந்த பத்தியில் இலக்கணப் பிழைகளை சரிபார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">இந்த கட்டுரையில் எழுத்துப் பிழைகளை கண்டுபிடிக்க எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">இந்த உரையாடலில் பொருத்தமற்ற சொல் தேர்வுகளை சரிசெய்யவும்</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">இந்த ஆவணத்தில் உள்ள நிறுத்தக்குறி சிக்கல்களை சரிசெய்யவும்</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">இந்த உரையில் தெளிவற்ற வெளிப்பாடுகளை திருத்தவும்</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">இந்த மின்னஞ்சலில் உள்ள மொழிப் பிழைகளை திருத்தவும்</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">இந்த உரை நிலையான ஆங்கில மரபுகளைப் பின்பற்றுகிறதா என்பதை சரிபார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">இந்த அறிக்கையில் உள்ள தர்க்கரீதியான குறைபாடுகளை சரிசெய்யவும்</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">இந்த குறியீடு கருத்தில் உள்ள மொழிப் பிழைகளை அடையாளம் காணவும்</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">இந்த ஒப்பந்தத்தில் உள்ள தெளிவற்ற அறிக்கைகளை சரிசெய்யவும்</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">குவாண்டம் கணினியின் அடிப்படைக் கொள்கைகளை விளக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">ஒளிச்சேர்க்கையை எளிய சொற்களில் விவரிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">பிளாக்செயின் தொழில்நுட்பம் எவ்வாறு செயல்படுகிறது என்பதை விரிவாக விளக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">சார்பியலை ஒரு தொழில்முறைக் கண்ணோட்டத்தில் விளக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">செயற்கை நுண்ணறிவு என்ன என்பதை உருவகங்களைப் பயன்படுத்தி விவரிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">பொதுவான மொழியில் காலநிலை மாற்றத்தை விளக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">அடிப்படை மாணவர்களுக்கு சூரியக் குடும்பத்தின் அமைப்பை விளக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">இந்த உரையை 300 சொற்களாக விரிவாக்கவும், காட்சி விவரங்கள் மற்றும் கதாபாத்திர உணர்வுகளில் கவனம் செலுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">இந்த பத்தியை 500 சொற்களாக கல்வி பாணியில் மீண்டும் எழுதுங்கள், தரவு ஆதரவு மற்றும் மேற்கோள்களைச் சேர்த்து</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">இந்த பத்தியை மேலும் உருவகங்கள் மற்றும் அணி நடை சாதனங்களுடன் விரிவாக்கி அதிக உயிர்ப்புடன் ஆக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">இந்த கட்டுரையை 1000 சொற்களாக நீட்டிக்கவும், குறிப்பிட்ட நிகழ்வுகள் மற்றும் நடைமுறை படிகளுடன்</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">இந்த உரையாடலை கதாபாத்திரங்களின் உளவியல் செயல்பாடுகள் மற்றும் உரையாடல் விவரங்களைச் சேர்த்து விரிவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">இந்த ஆவணத்தின் உள்ளடக்கத்தை அறிக்கை வடிவத்தில் மீண்டும் எழுதுங்கள், சுருக்கம், உடல் மற்றும் முடிவு ஆகியவற்றை உள்ளடக்கியது</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">இந்த தொழில்நுட்ப விளக்கத்தை 800 சொற்களாக விரிவாக்கவும், மேலும் தொழில்நுட்ப அளவுருக்கள் மற்றும் வரைபட விளக்கங்களைச் சேர்த்து</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">இந்த மின்னஞ்சலை மிகவும் முறையான மற்றும் தொழில்முறையாக மீண்டும் எழுதுங்கள், தொடர்புடைய பின்னணி தகவல்களைச் சேர்த்து</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">இந்த கதையை 1500 சொற்களாக விரிவாக்கவும், மேலும் கதை முறிவுகள் மற்றும் கதாபாத்திர பின்னணிகளைச் சேர்த்து</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">இந்த சுருக்கத்தை விரிவாக்கவும், முக்கிய சாதனைகள் மற்றும் எதிர்கால திட்டங்களை முன்னிலைப்படுத்தவும், சொல் எண்ணிக்கை வரையறுக்கப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">எதிர்கால தொழில்நுட்பம் பற்றிய இந்த குறுகிய பத்தியை தொடர்ந்து எழுதுங்கள், AI எவ்வாறு தினசரி வாழ்க்கையை மாற்றுகிறது என்பதில் கவனம் செலுத்துங்கள், சுமார் 300 சொற்கள், பிரபலமான அறிவியல் பாணியில்</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">இந்த வணிகத் திட்டத்தின் கடைசி பத்தியை விரிவாக்க உதவுங்கள், சந்தை திறன் மற்றும் போட்டி நன்மைகளை வலியுறுத்தி, சொல் எண்ணிக்கை வரையறுக்கப்படவில்லை, முறையான பாணி</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">இந்த கதைக்கதையின் முடிவை தொடரவும், சூடான மற்றும் உணர்ச்சிகரமான, கதாநாயகன் தனது கனவை அடைகிறார், சுமார் 200 சொற்கள்</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">இந்த மின்னஞ்சலின் இரண்டாம் பாதியை எழுதுங்கள், நட்பு மற்றும் தொழில்முறை தொனி, ஒத்துழைப்பு விவரங்களில் கவனம் செலுத்துங்கள், 150 சொற்களுக்குள்</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">இந்த பயணக் குறிப்பின் அடுத்த பத்தியை விரிவாக்கவும், பள்ளத்தாக்கில் உள்ள காட்சியை விவரிக்கவும், உயிர்ப்புடன் மற்றும் கற்பனையாக, சுமார் 200 சொற்கள்</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">இந்த மர்ம நாவலின் அடுத்த அத்தியாயத்தை தொடரவும், கதை முறிவுடன், மர்மத்தை பராமரிக்கவும், சொல் எண்ணிக்கை வரையறுக்கப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">இந்த உரையின் முடிவை எழுத உதவுங்கள், ஈர்க்கக்கூடிய மற்றும் குழு வேலையை வலியுறுத்தி, சுமார் 100 சொற்கள்</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">இந்த தயாரிப்பு கையேட்டின் செயல்திறன் விளக்கப் பகுதியை விரிவாக்கவும், விரிவான மற்றும் துல்லியமான, சுமார் 300 சொற்கள்</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">இந்த காதல் கதையின் ஆரம்பத்தை தொடரவும், மழை நிறைந்த பாரிஸில் அமைக்கப்பட்டுள்ளது, காதல் பாணி, 150 சொற்கள்</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">இந்த ஆய்வறிக்கையின் விவாதப் பகுதியை எழுதுங்கள், சோதனை முடிவுகளின் வரம்புகளில் கவனம் செலுத்துங்கள், கல்வி பாணி, சொல் எண்ணிக்கை வரையறுக்கப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">இந்த உரையை மேம்படுத்தி ஒரு வணிக மின்னஞ்சலுக்கு மிகவும் முறையான மற்றும் தொழில்முறையாக ஆக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">இந்த பத்தியை மீண்டும் எழுதி சமூக ஊடக இடுகைகளுக்கு அதிக உயிர்ப்புடன் மற்றும் ஈர்க்கக்கூடியதாக ஆக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">இந்த கல்வி ஆய்வறிக்கையின் சுருக்கத்தை 200 சொற்களுக்குள் மிகவும் சுருக்கமான மற்றும் தெளிவாக மேம்படுத்த வேண்டும்</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">இந்த உரையாடலை மேம்படுத்தி பேச்சு தொடர்புக்கு மிகவும் இயல்பான மற்றும் சரளமாக ஆக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">இந்த தயாரிப்பு விளக்கத்தை மேம்படுத்தி அதன் பிரீமியம் மற்றும் புதுமையான அம்சங்களை சாத்தியமான வாடிக்கையாளர்களுக்கு முன்னிலைப்படுத்துங்கள்</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">இந்த முன்னுரையை மேம்படுத்தி அதிக வலியுறுத்தல் மற்றும் தனிப்பயனாக்கப்பட்டதாக ஆக்க உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">இந்த வலைப்பதிவு இடுகையை மீண்டும் எழுதி இளம் வாசகர்களுக்கு அதிக நகைச்சுவை மற்றும் ஈர்க்கக்கூடியதாக ஆக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">இந்த அறிக்கையின் தொடக்கப் பகுதியை மேம்படுத்தி அதிக கவர்ச்சிகரமாக ஆக்குங்கள்</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">இந்த தொழில்நுட்ப ஆவணத்தை நான் மேம்படுத்த வேண்டும், இது நிபுணர்கள் அல்லாதவர்களுக்கு மிகவும் அணுகக்கூடியதாக இருக்கும்</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">இந்த மன்னிப்பு கடிதத்தை மிகவும் நேர்மையான மற்றும் பொருத்தமானதாக மாற்றுவதற்கு எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">கட்டுரைகள்</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">உரைகள்</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">கோடிட்டுக் காட்டுகள்</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">அறிவிப்புகள்</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">இடுகைகள்</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">வேலை அறிக்கை</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">ஆராய்ச்சி அறிக்கை</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">இந்த ஆவணத்தின் முக்கிய புள்ளிகளை சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">இந்த கோப்பின் முக்கிய யோசனைகளை எனக்கு பட்டியலிடுங்கள்</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">இந்த பத்தியின் முக்கிய யோசனையை சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">இந்த கட்டுரையை சுருக்கமான மொழியில் சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">இந்த அறிக்கையின் சுருக்கம் எனக்கு தேவை, 200 வார்த்தைகளுக்கு மேல் இல்லை</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">இந்த ஆவணத்திலிருந்து முக்கிய தரவு மற்றும் முடிவுகளை பிரித்தெடுக்கவும்</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">இந்த நீண்ட உள்ளடக்கத்தின் முக்கிய பிரிவுகள் மற்றும் புள்ளிகளை சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">இந்த ஆராய்ச்சி முறைகள் மற்றும் கண்டுபிடிப்புகளை சுருக்க எனக்கு உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">இந்த கட்டுரையின் முக்கிய புள்ளிகளை அட்டவணை வடிவத்தில் சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">இந்த கோப்பில் உள்ள செயல்பாட்டு படிகளை புல்லட் புள்ளிகளைப் பயன்படுத்தி சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">இந்த ஒப்பந்தத்தின் முக்கிய விதிமுறைகளை புல்லட் பட்டியல் வடிவத்தில் காட்டவும்</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">AI போக்குகள் குறித்து ஒரு அறிக்கைக்கான கோடிட்டுக் காட்டை உருவாக்கவும், தொழில்நுட்பம், நெறிமுறைகள் மற்றும் பயன்பாடுகளை உள்ளடக்கியது</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">பதிவேற்றப்பட்ட காகிதத்தை ஒரு கட்டமைக்கப்பட்ட ஆராய்ச்சி கட்டமைப்பு கோடிட்டுக் காட்டாக ஒழுங்கமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">சந்தை பகுப்பாய்வு, தயாரிப்பு விளக்கம் மற்றும் நிதி திட்டமிடல் உள்ளிட்ட ஒரு வணிகத் திட்ட கோடிட்டுக் காட்டு எனக்கு தேவை</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">இந்த உரையை ஒவ்வொரு பிரிவுக்கும் புல்லட் புள்ளிகளுடன் PowerPoint கோடிட்டுக் காட்டாக மாற்றவும்</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">முக்கிய புள்ளிகள் மற்றும் எனது தனிப்பட்ட பிரதிபலிப்புகளை உள்ளடக்கிய ஒரு புத்தக சுருக்க கோடிட்டுக் காட்டை எழுதுங்கள்</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">கூட்டக் குறிப்புகள் கோப்பை ஒரு திட்ட செயல்படுத்தல் திட்ட கோடிட்டுக் காட்டாக சுருக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">அறிமுகம், இலக்கிய ஆய்வு மற்றும் முறைமை உள்ளிட்ட ஒரு ஆய்வறிக்கை அத்தியாய கோடிட்டுக் காட்டு எனக்கு தேவை</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">அம்ச விளக்கங்கள் மற்றும் பயனர் பாய்வுகளுடன் ஒரு தயாரிப்பு தேவைகள் ஆவணம் (PRD) கோடிட்டுக் காட்டை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">இந்த தொழில் அறிக்கையிலிருந்து முக்கிய தரவை பிரித்தெடுத்து ஒரு சுருக்க கோடிட்டுக் காட்டை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">அட்டவணை, குழு பங்குகள் மற்றும் பட்ஜெட் உள்ளிட்ட ஒரு நிகழ்வு திட்டமிடல் கோடிட்டுக் காட்டை எழுதுங்கள்</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">இந்த ஆவணத்திலிருந்து மூன்று நிலை கோட்பாட்டை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">கூட்டக் குறிப்புகளிலிருந்து முக்கிய கட்டமைப்பைப் பிரித்தெடுக்கவும்</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">ஆராய்ச்சி அறிக்கை கட்டமைப்பை ஒழுங்கமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">தயாரிப்பு அம்சங்களின் கண்ணோட்டத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">பயிற்சி பாடத்திட்டத்தை வடிவமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">இலக்கிய மதிப்பாய்வு கட்டமைப்பை பகுப்பாய்வு செய்யவும்</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">வணிகத் திட்டத்தின் உள்ளடக்க அட்டவணையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">நிகழ்வுத் திட்டமிடல் ஓட்டப் புள்ளிகளை எழுதவும்</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">நாளை மாலை 3 மணிக்கு மாநாட்டு அறை A-இல் திட்ட முன்னேற்ற அறிக்கை பற்றிய கூட்ட அறிவிப்பை எழுத உதவவும்</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">கடைசி நாள் மற்றும் சமர்ப்பிப்பு முறையை முன்னிலைப்படுத்தும் இந்த ஆவணத்தின் அடிப்படையில் சுருக்கமான அறிவிப்பை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">பிப்ரவரி 10 முதல் 17 வரை வசந்த திருவிழா விடுமுறை அறிவிப்பை உருவாக்கவும், பிப்ரவரி 18-இல் வேலை மீண்டும் தொடங்கும்</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">அடுத்த புதன்கிழமை நிறுவன அரங்கத்தில் நாள் முழுவதும் ஊழியர் பயிற்சிக்கான செயல்பாட்டு அறிவிப்பு தேவை</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">வழங்கப்பட்ட உரைப் பொருட்களை தரநிலை வடிவமைப்பு மற்றும் தொழில்முறை தொனியுடன் முறையான அறிவிப்பாக வடிவமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">இந்த சனிக்கிழமை காலை 9 மணி முதல் மாலை 5 மணி வரை முழு அலுவலக கட்டிடத்தையும் பாதிக்கும் மின்சார தடை அறிவிப்பை எழுதவும்</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">அசல் நேரத்தை வெள்ளிக்கிழமை காலை 10 மணிக்கு மாற்றி மற்ற விவரங்களை அப்படியே வைத்திருக்கும் கூட்ட மாற்ற அறிவிப்பை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">இணைக்கப்பட்ட கூட்டக் குறிப்புகளின் அடிப்படையில் வராதவர்களுக்கான சுருக்கமான அறிவிப்பை தயாரிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">இன்று இரவு நள்ளிரவு முதல் காலை 3 மணி வரை திட்டமிடப்பட்டுள்ள கணினி மேம்படுத்தல் அறிவிப்பை உருவாக்கவும், கணினி செயலிழப்புடன்</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">பணியில் உள்ள ஊழியர்கள் மற்றும் தொடர்பு தகவல்களை பட்டியலிடும் சுருக்கமான விடுமுறை பணி ஏற்பாட்டு அறிவிப்பை எழுதவும்</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">பொது வாசகர்களுக்கு எளிய மொழியில் ஆரோக்கியமான உணவு பற்றிய பொது சுகாதாரக் கட்டுரையை எழுத உதவவும்</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">இந்த ஆவணத்தின் அடிப்படையில் வேடிக்கையான மற்றும் ஈர்க்கக்கூடிய தொழில்நுட்ப போக்கு இடுகையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">தள்ளுபடிகள் மற்றும் நிகழ்வு அட்டவணையை முன்னிலைப்படுத்தும் விடுமுறை விளம்பர இடுகையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">அம்சங்கள் மற்றும் வாடிக்கையாளர் மதிப்புரைகளில் கவனம் செலுத்தும் தயாரிப்பு வெளியீட்டுக் கட்டுரை தேவை</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">இந்த நேர்காணல் பதிவை சாதாரண ஆளுமை சுயவிவர இடுகையாக மாற்றவும்</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">மூன்று பிரபலமான இடங்களை பரிந்துரைக்கும் பயண வழிகாட்டியை நடைமுறை உதவிக்குறிப்புகளுடன் எழுதவும்</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">நிறுவன வரலாற்றை மதிப்பாய்வு செய்து வாடிக்கையாளர்களுக்கு நன்றி தெரிவிக்கும் ஆண்டு நிறைவு இடுகையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">ஒரு நுண்ணறிவு நிறைந்த இடுகைக்காக காட்சிப்படுத்தப்பட்ட தரவுகளுடன் இந்தத் தொழில் அறிக்கையை பகுப்பாய்வு செய்யவும்</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">தெளிவான வழிமுறைகளுடன் பங்கேற்பை ஊக்குவிக்கும் தாராள மனப்பான்மை பிரச்சார இடுகையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">ஐந்து செயல்படுத்தக்கூடிய உதவிக்குறிப்புகள் மற்றும் உண்மையான எடுத்துக்காட்டுகளுடன் தொழில் திறன்கள் கட்டுரையை எழுதவும்</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">திட்ட முன்னேற்றம் மற்றும் குழு ஒத்துழைப்பில் கவனம் செலுத்தும் வாராந்திர வேலை சுருக்கத்தை எழுத உதவவும்</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">நான் பதிவேற்றிய கூட்டக் குறிப்புகள் கோப்பின் அடிப்படையில் சுருக்கமான வேலை சுருக்கத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">தரவு பகுப்பாய்வு மற்றும் தனிப்பட்ட வளர்ச்சி பிரதிபலிப்பு உள்ளிட்ட காலாண்டு வேலை சுருக்கம் எனக்கு தேவை</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">பின்வரும் உரையின் அடிப்படையில் ஒரு வேலை சுருக்கத்தை உருவாக்கவும் [உரையை ஒட்டவும்]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">இந்த மாதத்தின் KPI சாதனைகள் மற்றும் எதிர்கொள்ளப்பட்ட சவால்களை முன்னிலைப்படுத்தும் ஒரு வேலை சுருக்கத்தை எழுதுங்கள்</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">கடந்த வார வேலைகளை திட்டங்களால் வகைப்படுத்தி சுருக்கமாகக் கூற உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">நிலுவையில் உள்ள பணிகள் மற்றும் நிறைவுகளை வலியுறுத்தி மின்னஞ்சல் உள்ளடக்கத்திலிருந்து ஒரு வேலை சுருக்கத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">வேலை முன்னணிகள் மற்றும் மேம்பாட்டுத் திட்டங்கள் உள்ளிட்ட வருடாந்திர சுருக்கம் எனக்கு தேவை</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">நான் பதிவேற்றிய தரவுகளிலிருந்து மாதாந்திர வேலை அறிக்கையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">சிதறிய வேலைக் குறிப்புகளை ஒழுங்கமைக்கப்பட்ட வேலை சுருக்கமாக ஒழுங்கமைக்க உதவுங்கள்</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">பதிவேற்றப்பட்ட தரவுகளை பகுப்பாய்வு செய்து சந்தை போக்கு அறிக்கையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">உரையிலிருந்து முக்கிய தகவல்களை பிரித்தெடுத்து ஒரு தொழில் பகுப்பாய்வு அறிக்கையை தொகுக்கவும்</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">ஒரு போட்டியாளர் ஆராய்ச்சி அறிக்கையை எழுத கோப்பின் உள்ளடக்கங்களை இணைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">வழங்கப்பட்ட நேர்காணல் பதிவுகளின் அடிப்படையில் பயனர் தேவைகள் ஆராய்ச்சி சுருக்கத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">இந்த விற்பனை தரவுகளை பகுப்பாய்வு செய்து காலாண்டு சந்தை செயல்திறன் அறிக்கையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">கொடுக்கப்பட்ட தயாரிப்பு விளக்கத்தின் அடிப்படையில் ஒரு தொழில்நுட்ப ஆராய்ச்சி அறிக்கையை எழுதுங்கள்</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">இந்த பயனர் கருத்துகளை ஒழுங்கமைத்து ஒரு தயாரிப்பு மேம்பாட்டு பரிந்துரை அறிக்கையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">வழங்கப்பட்ட கோப்பின் அடிப்படையில் ஒரு சந்தை வாய்ப்பு பகுப்பாய்வு அறிக்கையை எழுதவும்</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="vanished">[தெளிவான கட்டமைப்பு மற்றும் பணக்கார உள்ளடக்கம்] உடன் [%1] என்ற தலைப்பில் ஒரு கட்டுரை எழுத உதவுங்கள்.</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="vanished">[%1] என்ற தலைப்பில் ஒரு பொது ட்வீட்டை எழுத உதவுங்கள், இதற்கு [தெளிவான கட்டமைப்பு] மற்றும் [ஓய்வான] தொனி தேவை.</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="vanished">எனது சமீபத்திய வேலைகளின் சுருக்கத்தை எழுத உதவுங்கள், இதில் [%1] மற்றும் [முடிவுகள்] அடங்கும், இதற்கு [முறையான] தொனி தேவை.</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="vanished">[%1] குறித்த ஒரு ஆராய்ச்சி அறிக்கையை எழுத உதவுங்கள், குறைந்தபட்சம் இது [நிலை விளக்கம், சிக்கல் பகுப்பாய்வு, எதிர்மறை நடவடிக்கைகள் மற்றும் பரிந்துரைகள், ஆராய்ச்சி முடிவுகள்] ஆகியவற்றை உள்ளடக்கியிருக்க வேண்டும்.</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="vanished">செயற்கை நுண்ணறிவு</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="vanished">[நிறுவன தலைவர்கள்] க்கு [%1] என்ற தலைப்பில் ஒரு உரையை எழுத உதவுங்கள், இதற்கு [தெளிவான கட்டமைப்பு மற்றும் உயிரோட்டமான மொழி] தேவை.</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="vanished">[PPT உற்பத்தி] க்கு பயன்படுத்தப்படும் [%1] என்ற தலைப்பில் ஒரு கோட்பாட்டை எழுத உதவுங்கள்.</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="vanished">[%1] பற்றி ஒரு அறிவிப்பை எழுத உதவுங்கள், பெறுநர் [அனைத்து ஊழியர்கள்] மற்றும் அனுப்புநர் [நிர்வாகத் துறை].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="vanished">தேசிய தின விடுமுறை</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="vanished">வேலை உள்ளடக்கம்</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---பங்கு---\n\nநீங்கள் ஒரு உதவியாளர்; வழங்கப்பட்ட பின்னணி அறிவு குறித்து கேள்விகளுக்கு பதிலளிக்கிறீர்கள்.\n\n---இலக்கு---\n\nபயனர்களின் கேள்விகளுக்கு பதிலளிக்கவும், தொடர்புடைய பொது அறிவையும் சேர்க்கவும். பதில் தெரியாவிட்டால் அதைச் சொல்லுங்கள்; கற்பனை செய்ய வேண்டாம்.\n\n---அறிவு---\n\n%1\n\n---கேள்வி---\n\n%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">---பங்கு---\n\nநீங்கள் பல எழுத்து பாணிகளிலும் வடிவங்களிலும் நிபுணத்துவம் கொண்ட தொழில்முறை எழுத்தாளர்.\n\n---இலக்கு---\n\nபயனரின் கோரிக்கையின் அடிப்படையில், அவர்களின் குறிப்பிட்ட தேவைகளை பூர்த்தி செய்யும் உயர்தர உள்ளடக்கத்தை உருவாக்கவும்.\n\n---எழுத்து வகைகள்---\n\n1. கட்டுரை: தெளிவான வாதங்களும் ஈர்க்கும் உள்ளடக்கமும் கொண்ட நன்கு அமைக்கப்பட்ட கட்டுரைகளை எழுதவும்\n2. உரைகள்: சரியான தொடக்கம், உடல், முடிவுடன் ஈர்க்கும் உரைகளை உருவாக்கவும்\n\n3. வரைவுகள்: கொடுக்கப்பட்ட தலைப்புக்கான அமைப்பு வரைவை உருவாக்கவும்\n4. அறிவிப்புகள்: முறையான அறிவிப்புகள் அல்லது அறிவிப்புகளை எழுதவும்\n5. இடுகைகள்: ஈர்க்கும் சமூக ஊடக உள்ளடக்கத்தை உருவாக்கவும்\n6. வேலை அறிக்கை: விரிவான வேலை அறிக்கைகளை எழுதவும்\n7. ஆய்வு அறிக்கை: விரிவான ஆய்வு அறிக்கைகளை உருவாக்கவும்\n\n---இன்புட்---\n\n%1\n\n---வெளியீட்டு வடிவம்---\n\nதயவுசெய்து கீழ்க்கண்ட வடிவத்தில் உள்ளடக்கத்தை வழங்கவும்:\nதலைப்பு:\nஉள்ளடக்கம்:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---பங்கு---\n\nநீங்கள் மொழி பகுப்பாய்வு, எழுத்து நுட்பங்கள் மற்றும் உரை மேம்பாட்டில் ஆழ்ந்த நிபுணத்துவம் கொண்ட உரை செயலாக்க நிபுணர்.\n\n---இலக்கு---\n\nஉரையின் அசல் பொருளையும் பாணியையும் பாதுகாத்தபடி உள்ளீட்டு உரையை செயலாக்கி மேம்படுத்தவும்.\n\n---செயலாக்க வகைகள்---\n\n1. சுருக்கம்: முக்கிய அம்சங்களின் சுருக்கமான சுருக்கத்தை உருவாக்கவும்\n2. நிரூபித்தல்: இலக்கண, எழுத்துப்பிழை மற்றும் பாணி பிழைகளை அடையாளம் காணவும் சரிசெய்யவும்\n3. விளக்கம்: சிக்கலான கருத்துகள் அல்லது பகுதிகளை விரிவாக விளக்கவும்\n4. விரிவாக்கம்: அசல் பாணியை பாதுகாத்தபடி முக்கிய அம்சங்களை விரிவாக்கவும்\n5. தொடர்ச்சி: உரையை ஒத்ததொரு இயல்பான முறையில் தொடரவும்\n6. மெருகூட்டல்: உரையின் தெளிவு, ஓட்டம் மற்றும் தாக்கத்தை அதன் அடிப்படையை பாதுகாத்தபடி மேம்படுத்தவும்\n\n---இன்புட்---\n\n%1\n\n---வெளியீட்டு வடிவம்---\n\nதயவுசெய்து செயலாக்கப்பட்ட உரையை நேரடியாக வழங்கவும், கூடுதல் எழுத்துகள் அல்லது வடிவமைப்பு இல்லாமல்.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---பங்கு---
-
-நீங்கள் பலவிதமான எழுத்து பாணிகள் மற்றும் வடிவங்களில் நிபுணத்துவம் கொண்ட தொழில்முறை எழுத்தாளர்.
-
----இலக்கு---
-
-பயனரின் கோரிக்கையின் அடிப்படையில், அவர்களின் குறிப்பிட்ட தேவைகளை பூர்த்தி செய்யும் உயர்தர உள்ளடக்கத்தை உருவாக்கவும்.
-
----எழுத்து வகைகள்---
-1. கட்டுரை: தெளிவான வாதங்கள் மற்றும் ஈர்க்கும் உள்ளடக்கத்துடன் நன்கு அமைக்கப்பட்ட கட்டுரைகளை எழுதவும்
-2. உரைகள்: சரியான தொடக்கம், உடல் மற்றும் முடிவுடன் ஈர்க்கும் உரைகளை உருவாக்கவும்
-3. வரைவுகள்: கொடுக்கப்பட்ட தலைப்புக்கான கட்டமைக்கப்பட்ட வரைவை உருவாக்கவும்
-4. அறிவிப்புகள்: முறையான அறிவிப்புகள் அல்லது அறிவிப்புகளை எழுதவும்
-5. இடுகைகள்: ஈர்க்கும் சமூக ஊடக உள்ளடக்கத்தை உருவாக்கவும்
-6. வேலை அறிக்கை: விரிவான வேலை அறிக்கைகளை எழுதவும்
-7. ஆய்வு அறிக்கை: விரிவான ஆய்வு அறிக்கைகளை உருவாக்கவும்
----உள்ளீடு---
-%1
-
----வெளியீட்டு வடிவம்---
-தயவுசெய்து உள்ளடக்கத்தை பின்வரும் வடிவத்தில் வழங்கவும்:
-தலைப்பு:
-உள்ளடக்கம்:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">---பங்கு---
-
-நீங்கள் மொழி பகுப்பாய்வு, எழுத்து நுட்பங்கள் மற்றும் உரை மேம்பாட்டில் ஆழ்ந்த நிபுணத்துவம் கொண்ட உரை செயலாக்க நிபுணர்.
-
----இலக்கு---
-
-அதன் அசல் பொருள் மற்றும் பாணியை பராமரிக்கும் போது உள்ளீட்டு உரையை செயலாக்கி மேம்படுத்தவும்.
-
----செயலாக்க வகைகள்---
-1. சுருக்கம்: முக்கிய அம்சங்களின் சுருக்கமான சுருக்கத்தை உருவாக்கவும்
-2. நிரூபித்தல்: இலக்கண, எழுத்துப்பிழை மற்றும் பாணி பிழைகளை அடையாளம் காணவும் மற்றும் சரிசெய்யவும்
-3. விளக்கம்: சிக்கலான கருத்துகள் அல்லது பகுதிகளின் விரிவான விளக்கங்களை வழங்கவும்
-4. விரிவாக்கம்: அசல் பாணியை பராமரிக்கும் போது முக்கிய அம்சங்களை விரிவாக்கவும்
-5. தொடர்ச்சி: உரையை ஒருங்கிணைந்த மற்றும் இயற்கையான வழியில் தொடரவும்
-6. மெருகூட்டல்: அதன் அடிப்படையை பாதுகாக்கும் போது உரையின் தெளிவு, ஓட்டம் மற்றும் தாக்கத்தை மேம்படுத்தவும்
----உள்ளீடு---
-%1
-
----வெளியீட்டு வடிவம்---
-தயவுசெய்து செயலாக்கப்பட்ட உரையை நேரடியாக எந்த கூடுதல் எழுத்துகள் அல்லது வடிவமைப்பும் இல்லாமல் வழங்கவும்.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">---பங்கு---
-
-நீங்கள் ஒரு தொழில்முறை மொழிபெயர்ப்பாளர் மற்றும் மொழி நிபுணர். உங்கள் பணி:
-1. கோரியபடி துல்லியமாக உரையை மொழிபெயர்க்க
-2. மொழி தொடர்பான கேள்விகளுக்கு பதிலளிக்க
-3. குறிப்பிட்ட மொழிபெயர்ப்பு கோரிக்கைகளை அடையாளம் காணவும் மற்றும் கையாளவும்
-
----இலக்கு---
-
-பயனரின் உள்ளீட்டை கவனமாக பகுப்பாய்வு செய்து அவர்களின் நோக்கத்தை தீர்மானிக்கவும்:
-1. உள்ளீட்டில் &apos;இதன் பொருள் என்ன&apos;, &apos;இந்த சொற்றொடரை விளக்கவும்&apos;, அல்லது ஒத்த சொற்கள் இருந்தால் - மொழி விளக்கத்தை மட்டும் வழங்கவும் (மொழிபெயர்ப்பு இல்லாமல்)
-2. உள்ளீட்டில் குறிப்பிட்ட வாக்கியம்/பகுதி மொழிபெயர்க்க குறிப்பிடப்பட்டிருந்தால் (எ.கா. &apos;இந்த வாக்கியத்தை மொழிபெயர்க்கவும்:...&apos;) - குறிப்பிட்ட பகுதியை மட்டும் மொழிபெயர்க்கவும் (முழு மொழிபெயர்ப்பு இல்லாமல்)
-3. குறிப்பிட்ட கோரிக்கை எதுவும் கண்டறியப்படாத போது மட்டும், சீனம் மற்றும் ஆங்கிலம் இடையே முழு மொழிபெயர்ப்பை செய்யவும்
-
-எப்போதும் அசல் பொருள், தொனி மற்றும் பாணியை பராமரிக்கவும். மொழிபெயர்ப்புகளுக்கு:
-- சீனம் → ஆங்கிலம்
-- ஆங்கிலம் → சீனம்
-
-மொழி கேள்விகளுக்கு, தெளிவான, சுருக்கமான விளக்கங்களை வழங்கவும்.
-
----உள்ளீடு---
-%1
-
----வெளியீட்டு வடிவம்---
-1. முழு மொழிபெயர்ப்புகளுக்கு: கூடுதல் வடிவமைப்பு இல்லாமல் மொழிபெயர்ப்பை மட்டும் வழங்கவும்
-2. பகுதி மொழிபெயர்ப்புகளுக்கு: குறிப்பிட்ட பகுதியின் மொழிபெயர்ப்பை மட்டும் வழங்கவும்
-3. விளக்கங்களுக்கு: கேள்வியின் அதே மொழியில் விளக்கத்தை மட்டும் வழங்கவும்
-விளக்கத்தை மொழிபெயர்ப்புடன் சேர்க்கவோ அல்லது பகுதி மொழிபெயர்ப்புக்கு பிறகு முழு மொழிபெயர்ப்பை வழங்கவோ வேண்டாம்</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">ஸ்கிரீன்ஷாட் கேள்வி-பதிலை இயக்க UOS ஸ்கிரீன் ரெக்கார்டரை பதிப்பு 6.6 அல்லது அதற்குப் பிறகு புதுப்பித்து, உங்கள் கணினியை மீண்டும் தொடங்கவும்.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">மாதிரி உள்ளமைவு</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">உள்ளமைவுக்குச் செல்</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">கணக்கு இல்லை</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">உள்ளீட்டு கேள்வி</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">AI உருவாக்கிய உள்ளடக்கம் குறிப்புக்காக மட்டுமே, தகவலின் துல்லியத்திற்கு கவனம் செலுத்தவும்.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">UOS AI க்கு வரவேற்கிறோம்</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">UOS AI உங்களுக்கு உதவக்கூடிய சில விஷயங்கள் இங்கே உள்ளன</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">நிறுத்து</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">மீண்டும் உருவாக்கு</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">உரையாடல் வரலாற்றை அழி</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">மைக்ரோஃபோனை இணைத்து மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">அரட்டை வரலாறு அழிக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">பதிவைத் தொடங்க/நிறுத்த கிளிக் செய்க</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">கேட்கிறது</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">தூங்குகிறது</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">மைக்ரோஃபோன் கண்டறியப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">இணைப்பு தோல்வியடைந்தது, மீண்டும் முயற்சிக்க கிளிக் செய்க</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">செயல்படுத்த அனிமேஷனை கிளிக் செய்யவும் அல்லது Ctrl+Super+Space அழுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">குரல் உள்ளீடு தற்காலிகமாக கிடைக்கவில்லை, நெட்வொர்க்கை சரிபார்க்கவும்!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் நெட்வொர்க்கை சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">குரல் உரையாடல்</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">அனுப்ப அனிமேஷனை கிளிக் செய்யவும் அல்லது Enter அழுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">%1 வினாடிகளுக்குப் பிறகு பதிவை நிறுத்து</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">சிந்திக்கிறது</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">குறுக்கிட அனிமேஷனை கிளிக் செய்க</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">பதிலளிக்கிறது</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">உங்கள் இலவச கணக்கு காலாவதியாகிவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI பயன்படுத்துவதற்கு முன்பு ஒரு AI மாதிரி கணக்கு கட்டமைக்கப்பட வேண்டும். முதலில் ஒரு மாதிரி கணக்கு கட்டமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">செயல்படுத்து</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">குரல் உள்ளீடு</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">குரல் ஒலிபரப்பு தற்காலிகமாக கிடைக்கவில்லை, தயவுசெய்து வலையமைப்பை சரிபார்க்கவும்!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">குரல் உரையாடலை முடக்கு</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">படம் உருவாக்கப்பட்டது, அதைப் பார்க்க அரட்டை இடைமுகத்திற்கு மாறவும்.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">கணக்கு இல்லை, தயவுசெய்து ஒரு கணக்கு கட்டமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">ஒவ்வொரு கேள்விக்கும் 5 முறை வரை பதிலளிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">வெற்றிகரமாக நகலெடுக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">ஒலி வெளியீடு சாதனம் கண்டறியப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">ஒலி வெளியீடு சாதனம் கண்டறியப்படவில்லை, தயவுசெய்து சரிபார்த்து மீண்டும் முயற்சிக்கவும்!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">அமைப்புகள்</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">பற்றி</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">முறை</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">சாளர முறை</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">பக்கப்பட்டி முறை</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">உதவியாளர் பட்டியல்</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">முகவர் பட்டியல்</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">முகவர் கடை</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS அமைப்பு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin அமைப்பு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">தனிப்பட்ட அறிவு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">தயவுசெய்து அறிவு தளத்தை கட்டமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">[தனிப்பட்ட அறிவு உதவியாளர்] பயன்படுத்துவதற்கு முன்பு, அறிவு தளத்தை கட்டமைக்க வேண்டும். அறிவு தளத்தை கட்டமைத்த பிறகு, AI உங்கள் அறிவு தளத்தில் கட்டமைத்த உள்ளடக்கத்தின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கும் அல்லது உள்ளடக்கத்தை உருவாக்கும்.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">தயவுசெய்து பெரிய மாதிரியை கட்டமைக்கவும்</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">தனிப்பட்ட அறிவு உதவியாளர் ஒரு பெரிய மாதிரியை கட்டமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">கட்டமைக்க</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">நிறுவ</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">தயவுசெய்து [EmbeddingPlugins] நிறுவவும்</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">இந்த உதவியாளர் இயக்க EmbeddingPlugins நிறுவல் தேவை</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">கோப்புகளை இங்கே இழுத்து சேர்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">நீங்கள் 3 கோப்புகளை மட்டுமே சேர்க்கலாம்; ஆதரிக்கப்படும் கோப்பு வகைகள்: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, குறியீடு கோப்புகள் முதலியவை.</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">MCP சர்வர்</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">MCP சர்வரைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">சர்வரைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">சேர்க்க முடியவில்லை! பிழை காரணம்:</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">MCP சூழல் இல்லை. தயவுசெய்து 【UOS AI Agent】 ஐ நிறுவவும்</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">அழைக்கப்படுகிறது</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">முடிந்தது</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">அழைப்பு தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">ரத்து செய்யப்பட்டது</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">அளவுருக்கள்</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">முடிவு</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">MCP சர்வருக்காக, அதிகாரப்பூர்வமாக வெளியிடப்பட்ட &quot;DeepSeek-Trial Account&quot; மாடலுக்கு மாறவும்</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">MCP சர்வர் கட்டளையை உள்ளிடவும், எ.கா., &quot;எனக்காக அமைப்பை இருண்ட பயன்முறைக்கு மாற்று&quot;</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">முகவர் சர்வர் கிடைக்கவில்லை</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">முகவர் சர்வர் விதிவிலக்கு</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">MCP சர்வர் கிடைக்கவில்லை</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ரத்து செய்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">MCP சேவையைப் பயன்படுத்தி ஒரே கட்டளையில் பல கோப்பு மற்றும் பல பயன்பாடு பணிகளை தானியங்கி செய்யுங்கள். இப்போதே முயற்சிக்கவும்!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">பின்னர் பயன்படுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">இப்போது நிறுவவும்</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">MCP சர்வரை இயக்கவும்</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">MCP சூழல் &quot;UOS AI Agent&quot; ஐ நிறுவிய பிறகு, கிளிக் செய்யவும் </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished"> மற்றும் MCP சர்வர் பட்டியலில் &quot;uos-mcp&quot; ஐத் தேர்ந்தெடுக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">இவ்வாறு சொல்லிப் பாருங்கள்: &quot;அமைப்பை இருண்ட பயன்முறைக்கு மாற்று&quot;.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">இப்போதே முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">MCP சர்வரைச் சேர்க்கவும் [வழிகாட்டி பக்கம்]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">முதல் முறையாகப் பயன்படுத்தும் பயனர்கள்: App Store மூலம் MCP சூழல் &quot;UOS AI Agent&quot; ஐ நிறுவவும்.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">JSON கோப்பு வடிவம் தவறாக உள்ளது, தயவுசெய்து சரிபார்த்து மீண்டும் சமர்ப்பிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">இப்போது நிறுவவும் &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">பொது உரையாடல்</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">தனியுரையாடல்</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">இப்போது தனியுரையாடலில்</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">தனியுரையாடல் செய்திகள் வரலாற்றில் சேமிக்கப்படாது; உரையாடலை விட்டு வெளியேறும் போது நிரந்தரமாக நீக்கப்படும்.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">திரைப்பிடிப்பு கேள்வி-பதில் குறுக்குவழி (Ctrl+Alt+Q), அதிகபட்சம் 3 படங்கள் ஆதரிக்கப்படுகின்றன.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">திரை பதிவின் போது பயன்படுத்த முடியாது</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">நீங்கள் அதிகபட்சம் 3 கோப்புகள் அல்லது படங்களை பதிவேற்றலாம்</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">கோப்புகளை பதிவேற்று</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">தயவுசெய்து தவறான கோப்பை நீக்கி மீண்டும் அனுப்பவும்</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">தனியுரையாடலை சேர்</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">[திரைப்பிடிப்பு கேள்வி-பதிலை] சேர்</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">திரைப்பிடிப்பு எடுத்து அதன் உள்ளடக்கத்தை UOS AI-க்கு அனுப்பவும். நேரடியாக படத்தையும் பதிவேற்றலாம்.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">சரி</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">அடுத்து</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">[தனியுரையாடல் பயன்முறை] சேர் – உரையாடல்கள் சேமிக்கப்படாது.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">உரை எதுவும் பிரித்தெடுக்கப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">படத்தின் அளவு 15 MB-ஐ மீறுகிறது</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">அறிவுத்தளம் திறக்கப்பட்ட பிறகு, பதில்கள் அதன் உள்ளடக்கத்தின் அடிப்படையில் வழங்கப்படும். பதிலின் வேகம் கணினி செயல்திறன் மற்றும் அறிவுத்தளத்தின் அளவைப் பொறுத்தது.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">ஏதேனும் கட்டளை அல்லது MCP தேர்ந்தெடுக்கப்பட்டால் அறிவுத்தளம் பயன்படுத்த முடியாது.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">அறிவுத்தளம் செயல்பாட்டில் இருக்கும் போது MCP முடக்கப்படுகிறது.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">அறிவுத்தளம் செயல்பாட்டில் இருக்கும் போது கட்டளைகள் முடக்கப்படுகின்றன.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="obsolete">நகலெடு</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">மீண்டும் திருத்து</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">நகலெடுப்பு வெற்றியடைந்தது.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">நகலெடுப்பு தோல்வியடைந்தது. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">தேடுகிறது</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">%1 குறிப்பு ஆவணங்கள் பெறப்பட்டுள்ளன (%2s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">வரலாற்றை அழி</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">அனைத்து பதிவுகளையும் நீக்கவா?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">ஒருமுறை நீக்கப்பட்டால் உள்ளடக்கத்தை மீட்டெடுக்க முடியாது!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">அதிகாரப்பூர்வ மாடல்களை பரிந்துரை</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">MCP-ஐ முடக்கு</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">&quot;DeepSeek-Trial Account&quot; என்ற அதிகாரப்பூர்வ மாதிரியைப் பயன்படுத்த பரிந்துரைக்கப்படுகிறது</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">விரைவு திறப்பு</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">MCP சர்வர் தானியங்கி பயன்முறைக்கு மேம்படுத்தப்பட்டது</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">MCP சர்வர் தானியங்கி பயன்முறைக்கு மேம்படுத்தப்பட்டுள்ளது; ஒரே கிளிக்கில் அனைத்து MCP சர்வர்களையும் அணுகலாம்</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. இதன் மூலம் அமைப்பு அமைப்பு மற்றும் கோப்பு செயலாக்கம் போன்ற பணிகளை ஒரே கிளிக்கில் தானியங்கியாகச் செய்யலாம்.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">MCP சர்வரைச் சேர்ப்பது அமைப்புகளுக்கு மாற்றப்பட்டுள்ளது.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">மேலும் MCP சர்வர்களைச் சேர்க்க, அமைப்புகள் &gt; MCP சர்வர் என்பதற்குச் செல்லவும்.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">புரிந்தது</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">இலவச மாதிரி கடன்கள்</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">தற்போதைய அமைப்பு DeepSeek சோதனை கணக்கு மாதிரியை வழங்குகிறது, இது ஒவ்வொரு மாதத்தின் தொடக்கத்திலும் இலவான ஒதுக்கீட்டை தானாக புதுப்பிக்கிறது, இதனால் நீங்கள் கவலையின்றி பயன்படுத்தலாம்.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">கடன் கோரிக்கைகளைக் கோருங்கள்</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">இலவச கணக்கைப் பெறுங்கள்</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">இலவச கடன்களைக் கோருங்கள்</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">வெற்றிகரமாக கோரப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">கோரிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">MCP சேவையகத்தை இயக்கு&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">MCP சேவையகத்தை முடக்கு</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">MCP சேவையகத்தை உள்ளமை</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">நீங்கள் அதிகபட்சம் ஒரு கோப்பை மட்டுமே சேர்க்க முடியும்.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">கோப்பு வடிவம் ஆதரவளிக்கப்படவில்லை.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">கோப்பின் முக்கிய உள்ளடக்கத்தை சுருக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">பாகுபடுத்துகிறது...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">கோப்பு பிழை</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">கோப்பு நீக்கப்பட்டது.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">கோப்பின் அளவு 100MB வரம்பை மீறுகிறது.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">ஒரு ஆவணத்தை பதிவேற்றவும்</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">கோப்பு நீக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">எந்த உரையும் பாகுபடுத்தப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">குறிப்பு</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">வழிமுறை</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">செயல்படுத்த உள்ளீட்டு பெட்டியில் &quot;/&quot; தட்டச்சு செய்யவும்.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">தயவுசெய்து உள்ளிடவும்; வரியை மாற்ற “Ctrl+Enter” அழுத்தவும்.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">உங்கள் கேள்வியை உள்ளிடவும், அல்லது ஒரு கட்டளையைத் தேர்ந்தெடுக்க &quot;/&quot; உள்ளிடவும்
-புதிய வரியைத் தொடங்க &quot;Ctrl+Enter&quot; அழுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">தேடல் முடிந்தது.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">முடிவுகளைப் பார்க்க கிளிக் செய்யவும்</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">திருத்து</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">சேமி</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">நகலெடு</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">தேடு</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">டீப் திங்க்(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">சிந்தனை நிறுத்தப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">கீழே திரும்பு</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">ஆழமாக சிந்திக்கப்பட்டது (%1 வினாடிகள்)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">புதிய உரையாடல்</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">வரலாறு</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">வரலாறு பதிவுகள் இல்லை</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">இன்று</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">நேற்று</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">உரையாடலை நீக்குவதில் உறுதியாக உள்ளீர்களா? நீக்கப்பட்ட பிறகு அதை மீட்டெடுக்க முடியாது.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">இந்த உரையாடலில் பயன்படுத்தப்பட்ட %1 முகவர் நீக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">இந்த உரையாடலைப் பார்க்க முடியாது. அதைப் பார்க்க, %1 முகவரை நிறுவி மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">அசல் உரையாடல் மாதிரி நீக்கப்பட்டது. உரையாடலைத் தொடர நாங்கள் ஒரு புதிய மாதிரிக்கு மாற்றியுள்ளோம்.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">பரிந்துரைகள்</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">மேலும்</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">மாதிரியைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">மாதிரி இல்லை</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">எந்த மாதிரியும் கிடைக்கவில்லை. அமைப்புகளில் ஒரு மாதிரியை நிறுவவும் அல்லது கட்டமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">உங்கள் படைப்புக்கான உள்ளடக்கத் தீம் மற்றும் தேவைகளை விவரிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">மொழிபெயர்க்க விரும்பும் உள்ளடக்கத்தை உள்ளிட்டு இலக்கு மொழியைக் குறிப்பிடவும். இயல்புநிலை மொழிபெயர்ப்பு சீனம்.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">செயல்படுத்த வேண்டிய உரையை உள்ளிட்டு உங்கள் தேவைகளைக் குறிப்பிடவும்.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">புதிய முகவர் சேர்க்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">புதிய எழுத்து, உரை செயலாக்கம் மற்றும் மொழிபெயர்ப்பு முகவர்கள் சேர்க்கப்பட்டுள்ளனர். இப்போது அவற்றைப் பாருங்கள்.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">பின்வரும் ஆவணத்தின் அடிப்படையில் ஒரு கட்டுரை எழுதவும்:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">பின்வரும் ஆவணத்தை ஆங்கிலத்தில் மொழிபெயர்க்கவும்:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">குரல் உரையாடலை அணைக்கவும்</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">குரல் உரையாடல்</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">ஐடத்தை ஏற்றுமதி செய்க</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">ஆதரிக்கப்படும் கோப்புகள்</translation>
+        <translation>ஆவணத் தகவல் தவறானது அல்லது காலியாக உள்ளது.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">செயல்பாடு கிடைக்கவில்லை</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">இலவச சோதனை கணக்கைப் பெறவும்</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">ரத்துசெய்</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">கணக்கைப் பெறுக</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">ஒரு கணக்கைப் பெறுவது நீங்கள் நிகழ்வின் விதிமுறைகளைப் புரிந்துகொண்டு ஒப்புக்கொள்கிறீர்கள் என்பதைக் குறிக்கிறது,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;நிகழ்வு விவரங்கள்&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">சோதனை கணக்கு</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">சேமிப்பு தோல்வியுற்றது, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">உலாவர் கணக்கு வெற்றிகரமாக பெறப்பட்டது.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">உலாவர் கணக்கின் பயன்பாடுகள் மற்றும் கால அளவு வரையறுக்கப்பட்டுள்ளது, உங்கள் தனிப்பட்ட மாதிரி கணக்கை சரியான நேரத்தில் உள்ளமைக்கவும்! விவரங்களுக்கு நிகழ்வு விவரங்களைப் பார்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">சோதனை கணக்குகளுக்கான ஆங்கில ஆதரவு திருப்திகரமாக இல்லை. மேலும் சோதனை கணக்கின் பயன்பாடுகள் மற்றும் கால அளவு கட்டுப்படுத்தப்பட்டுள்ளன. தயவுசெய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை உடனடியாக அமைக்கவும்!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">உலாவைத் தொடங்கு</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">இலவச கணக்கு செயல்பாடு முடிந்தது.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் பிணையத்தை சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
+        <translation>ஆதரிக்கப்படாத கோப்பு வடிவம்</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
         <translation>appid அங்கீகாரம் தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>ஒரு குறிப்பிட்ட அளவுருவைப் பெற முடியவில்லை</translation>
+        <translation>ஒரு குறிப்பிட்ட அளவுருவைப் பெறுவதில் தோல்வி</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
         <translation>அளவுரு மதிப்பு சட்டவிரோதமானது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>இயந்திர அங்கீகாரம் போதுமானதாக இல்லை</translation>
+        <translation>போதுமான இயந்திர அங்கீகாரம் இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
-        <translation>அமர்வு நேரம் முடிந்துவிட்டது</translation>
+        <translation>அமர்வு நேரம் முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
-        <translation>ஒலி டிகோடிங் தோல்வியடைந்தது</translation>
+        <translation>ஆடியோ குறியாக்கம் தோல்வியட�ைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
         <translation>இயந்திர அமர்வு முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>அளவுரு பிழை</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
         <source>appid cannot be empty</source>
-        <translation>appid காலியாக இருக்க முடியாது</translation>
+        <translation>appid காலியாக இருக்கக்கூடாது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
         <source>Illegal version</source>
         <translation>சட்டவிரோதமான பதிப்பு</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
         <source>permission denied</source>
         <translation>அனுமதி மறுக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>தினசரி ஓட்டக் கட்டுப்பாடு வரம்பை மீறுகிறது</translation>
+        <translation>தினசரி ஓட்டக் கட்டுப்பாடு வரம்பை மீறியது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
         <source>The request data format is illegal</source>
-        <translation>கோரிக்கை தரவு வடிவம் சட்டவிரோதமானது</translation>
+        <translation>கோரிக்கைத் தரவு வடிவம் சட்டவிரோதமானது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
         <source>base64 decoding failed</source>
-        <translation>base64 டிகோடிங் தோல்வியடைந்தது</translation>
+        <translation>base64 குறியாக்கம் தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>தேவையான அளவுருக்கள் காணவில்லை அல்லது அளவுருக்கள் சட்டவிரோதமானவை</translation>
+        <translation>தேவையான அளவுருகள் இல்லை அல்லது அளவுருகள் சட்டவிரோதமானவை</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
         <source>Invalid handle</source>
         <translation>தவறான கைப்பிடி</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
         <source>Reading data timeout</source>
-        <translation>தரவைப் படிக்கும் நேரம் முடிந்துவிட்டது</translation>
+        <translation>தரவைப் படிக்கும் நேரம் முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>இணைப்பு தோல்வியடைந்தது, நிரப்பிய தகவலை சரிபார்க்கவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">புதிதாக சேர்க்கப்பட்ட கோப்புகள் பயன்படுத்துவதற்கு முன் முன் செயலாக்கம் தேவைப்படுகின்றன, மேலும் தரவு செயலாக்க செயல்பாட்டில், கணக்கிடுதல் மற்றும் சேமிப்பு வளங்கள் கணிசமாக பயன்படுத்தப்படலாம். தரவை நீக்கிய பின் தரவு செயலாக்கம் நிறுத்தப்படும்.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">இந்த அறிவு தள கோப்பை நீக்க விரும்புகிறீர்களா?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">ரத்துசெய்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">நீக்கு</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">சேர்</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">முதலில் உள்ளமைவு மாதிரி செருகுநிரல்களை நிறுவவும்</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">அறிவு தள மேலாண்மை</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">இங்கே, தனிப்பட்ட அறிவு உதவியாளரின் அறிவுத் தளத்தை வரையறுக்கலாம், மேலும் தனிப்பட்ட அறிவு உதவியாளர் கீழே சேர்க்கப்பட்ட கோப்புகளின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கும்.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">முடிந்தது</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">எதுவும் இல்லை</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">கோப்பு ஏற்கனவே உள்ளது</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">%1 கோப்பு ஏற்கனவே உள்ளது மற்றும் மீண்டும் சேர்க்க முடியாது. மீண்டும் சேர்க்கும் முன் கோப்பு பெயரை மாற்றவும் அல்லது இருக்கும் கோப்பை நீக்கவும்</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">அனைத்து கோப்புகள்</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">இந்த அம்சத்திற்கு அதிக வன்பொருள் வளங்கள் தேவைப்படுகின்றன, மேலும் குறிப்பு அளவுகோல் உள்ளமைவு: CPU Intel 11வது தலைமுறை i7 அல்லது அதற்கு மேல்; நினைவகம் 16GB அல்லது அதற்கு மேல்; NVIDIA கிராபிக்ஸ் கார்டு மற்றும் 10 தொடர் அல்லது அதற்கு மேல் இருப்பது சிறந்த விருப்பமாகும். உள்ளமைவு மிகவும் குறைவாக இருந்தால், பின்னடைவு மற்றும் துல்லியமற்ற பதில்கள் போன்ற சிக்கல்கள் ஏற்படலாம்.</translation>
+        <translation>இணைப்பு தோல்வியடைந்தது, தயவு செய்து உள்ளிட்ட தகவல்களைச் சரிபார்க்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
-        <translation>பின்பற்றுங்கள்</translation>
+        <translation>பின்பற்று</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">அறிவுத் தள திறன் போதுமானதாக இல்லை</translation>
+        <translation>போதுமான அறிவுத்தள திறன் இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">அறிவுத் தளத்தின் மொத்த திறன் %1M ஆகும், மீதமுள்ள %2. இந்த முறை சேர்க்கப்பட்ட மொத்த கோப்புகளின் எண்ணிக்கை %3. அறிவுத் தளத்தில் சேர்க்கும் செயல்பாட்டை முடிக்க முடியவில்லை.</translation>
+        <translation>அறிவுத்தளத்தின் மொத்த திறன் %1M, மீதமுள்ளது %2. இம்முறை சேர்க்கப்பட்ட கோப்புகளின் மொத்த எண்ணிக்கை %3. அறிவுத்தளத்தில் சேர்க்கும் செயல்பாட்டை முடிக்க முடியவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="unfinished">சரி</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
-        <source>Not enough disk space</source>
-        <translation type="unfinished">டிஸ்க் இடம் போதுமானதாக இல்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
-        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">புதிதாக சேர்க்கப்பட்ட கோப்புகளை சேமிக்க, குறைந்தது %1 டிஸ்க் இடம் தேவைப்படுகிறது. தற்போதைய மீதமுள்ள இடம் %2. போதுமான ஹார்ட் டிஸ்க் இடத்தை அழித்து மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">அறிவு தளத்தில் சேர்க்க திசையாக்கம் மாதிரி சொருகியை நிறுவ வேண்டும். தயவுசெய்து பயன்பாட்டுக் கடையில் சென்று பதிவிறக்கி நிறுவவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">நிறுவ வேண்டாம்</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">உடனடியாக நிறுவு</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">வின்சென்ட் பட சேவை ஆதரிக்கப்படவில்லை</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">ஸ்பார்க் பெரிய மாதிரி 1.5 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">ஸ்பார்க் பெரிய மாதிரி 2.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">ஸ்பார்க் பெரிய மாதிரி 3.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-ஸ்பார்க்</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">Gemini 1.5 Flash</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">Gemini 1.5 Pro</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">உரைக்கு படம்(உள்ளூர்)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">தனிப்பயன்</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">தனிப்பட்ட பயன்பாட்டு மாதிரி</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">OpenRouter</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">DeepSeek-R1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">DeepSeek</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">அறியப்படாத மாதிரி</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">உங்கள் கணினி சூழல் Linux, மற்றும் பயனர் வீட்டு பாதை</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">நிறுவு</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">புதுப்பிக்க</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">நிறுவல் நீக்கு</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">நிறுவல் நீக்கு</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">உள்ளூர் மாதிரி</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">உரைக்கு படம் மாதிரி</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">படங்களை உருவாக்க உள்ளூர் மாதிரியைப் பயன்படுத்தவும். அதை இயக்கிய பிறகு, அரட்டை இடைமுகத்தில் மாதிரி பட்டியலில் மாதிரியைத் தேர்ந்தெடுக்கலாம்.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">பேச்சு மாதிரி</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">இயக்கப்படும் போது, அரட்டை இடைமுகத்தில் பேச்சு அங்கீகாரம் மற்றும் பேச்சு வாசிப்பு இணைய இணைப்பு தேவையில்லாமல் உள்ளூர் மாதிரியைப் பயன்படுத்தும்.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">DeepSeek-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">UOS AI பெரிய மாதிரி</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">நிறுவப்பட்டவுடன், UOS AI ஐப் பயன்படுத்த இணைய இணைப்பு தேவையில்லை.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">திறந்த மூல சமூகத்திலிருந்து உங்கள் சொந்த பொறுப்பில் பதிவிறக்கவும். நிறுவிய பிறகு UOS AI உதவியாளரில் பயன்படுத்தவும்.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">உட்பொதிக்கப்பட்ட செருகுநிரல்கள்</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">மாதிரி நிறுவப்பட்ட பிறகு, கணினி உதவியாளர் மற்றும் தனிப்பட்ட அறிவு உதவியாளர் இயக்கப்படலாம்.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">வெற்றிகரமாக இணைக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">பயனர் ஒப்பந்தம்</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">UOS AI பயனர் ஒப்பந்தம்</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">படித்து ஒப்புக்கொண்டேன்</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">ப்ராக்ஸி அமைப்புகள்</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">அமைப்புகளுக்குச் செல்</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">மாதிரி உள்ளமைவு</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">இலவச கணக்கு செயல்பாடு முடிகிறது.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-    <message>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">அறிவு தளத்தில் சேர்க்க திசையாக்கம் மாதிரி சொருகியை நிறுவ வேண்டும். தயவுசெய்து பயன்பாட்டுக் கடையில் சென்று பதிவிறக்கி நிறுவவும்.</translation>
-    </message>
-    <message>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="vanished">நிறுவ வேண்டாம்</translation>
-    </message>
-    <message>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="vanished">உடனடியாக நிறுவு</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListItem</name>
-    <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">இந்த மாதிரியை நீக்க விரும்புகிறீர்களா?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">ரத்துசெய்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">இலவச கணக்கைப் பெறுக</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">நீக்கு</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">சேர்</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">ஆன்லைன் மாதிரி</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">முடிந்தது</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">எதுவுமில்லை</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">APISecret</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">கணக்கு</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">மாதிரி பெயர்</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">API முகவரி</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">தேவை, பல மாதிரிகளை வேறுபடுத்த</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">களம்</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ரத்துசெய்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">20 எழுத்துகளுக்கு மேல் இல்லை</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">கணக்கு பெயர் ஏற்கனவே உள்ளது, தயவுசெய்து அதை மாற்றவும்</translation>
-    </message>
-</context>
-<context>
-    <name>OcrParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
-        <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
-        <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">தரவு செயலாக்கத்தில்</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">தரவு செயலாக்க பிழை</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">கோப்பு பிழை, செயலாக்க முடியவில்லை, தயவுசெய்து நீக்கவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS அமைப்பு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin அமைப்பு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">தனிப்பட்ட அறிவு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI எழுத்து</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI உரை செயலாக்கம்</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI மொழிபெயர்ப்பு</translation>
-    </message>
-    <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">அமைப்பின் விரிவான AI உதவியாளர்.</translation>
-    </message>
-    <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">UOS அமைப்பு தொடர்பான வினவல்களில் உதவுகிறது.</translation>
-    </message>
-    <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">Deepin அமைப்பு தொடர்பான வினவல்களில் உதவுகிறது.</translation>
-    </message>
-    <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">உங்கள் தலைப்பு மற்றும் தேவைகளின் அடிப்படையில் எழுதுங்கள்.</translation>
-    </message>
-    <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">உங்கள் தனிப்பட்ட அறிவு தளத்தின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கிறது.</translation>
-    </message>
-    <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">சுருக்கம், சரிபார்ப்பு மற்றும் மீண்டும் எழுதுதல் போன்ற உரை செயலாக்க பணிகளை கையாளும் திறன்.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">உங்கள் மொழிபெயர்ப்பு உதவியாளர், பல மொழிகளில் தேர்ச்சி பெற்றவர்.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>சரி</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>தேடு</translation>
+        <source>Not enough disk space</source>
+        <translation>போதுமான வட்டு இடம் இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>விளக்கு</translation>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>புதிதாக சேர்க்கப்பட்ட கோப்புகளை சேமிக்க குறைந்தது %1 வட்டு இடம் தேவை. தற்போதுள்ள மீதம் இடம் %2. தயவு செய்து போதுமான ஹார்ட் டிஸ்க் இடத்தை அகற்றி மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>சுருக்கம்</translation>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>அறிவுத்தளத்தில் சேர்க்க வெக்டரைசேஷன் மாதிரி சொருகியை நிறுவ வேண்டும். தயவு செய்து பயன்பாட்டு கடைக்குச் சென்று பதிவிறக்கி நிறுவவும்.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>மொழிபெயர்</translation>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>நிறுவ வேண்டாம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>எழுதுதலைத் தொடரவும்</translation>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>உடனடியாக நிறுவு</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <source>Outline</source>
+        <translation>வெளிவரை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>விரிவாக்கு</translation>
+        <source>No outline</source>
+        <translation>வெளிவரை இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>மெருகேற்று</translation>
+        <source>References</source>
+        <translation>குறிப்புகள்</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <source>The image file does not exist: %1</source>
+        <translation>படக் கோப்பு இல்லை: %1</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>சரி செய்</translation>
+        <source>OCR did not recognize the text content</source>
+        <translation>OCR உரை உள்ளடக்கத்தை அடையாளம் காணவில்லை</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>கணினி AI புத்திசாலி உதவியாளர் செயல்பாடு
+அறிமுகம்: கணினி கருவிகளை புத்திசாலியாக திட்டமிட்டு சிக்கலான கணினி செயல்பாடுகளை செய்கிறது, கணினி கட்டுப்பாடு, கோப்பு மேலாண்மை, பயன்பாடு மேலாண்மை மற்றும் நெட்வொர்க்கிங் நெறிமுறைகளை ஆதரிக்கிறது.
+உதாரணம்: டெஸ்க்டாப்பில் புதிதாக உருவாக்கப்பட்ட கோப்புறையில் உள்ள அனைத்து கோப்புகளையும் திட்ட பொருட்கள் என்று பெயரிடுங்கள் மற்றும் அவற்றை எண் வரிசையில் அடுக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>AI அறிவுத்தளத்தில் சேர்க்கவும்</translation>
+        <source>Ask a question...</source>
+        <translation>ஒரு கேள்வி கேளுங்கள்...</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
+        <source>Discord gateway error: %1</source>
+        <translation>Discord நுழைவாயில் பிழை: %1</translation>
+    </message>
+    <message>
+        <source>Missing Discord bot token.</source>
+        <translation>Discord பாட் டோக்கன் காணவில்லை.</translation>
+    </message>
+    <message>
+        <source>Generating...</source>
+        <translation>உருவாக்குகிறது...</translation>
+    </message>
+    <message>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Discord பிளேஸ்ஹோல்டர் செய்தியில் id காணவில்லை.</translation>
+    </message>
+    <message>
+        <source>Discord gateway URL is empty.</source>
+        <translation>Discord கேட்வே URL காலியாக உள்ளது.</translation>
+    </message>
+    <message>
+        <source>Ask UOS AI a question</source>
+        <translation>UOS AI க்கு ஒரு கேள்வியைக் கேளுங்கள்</translation>
+    </message>
+    <message>
+        <source>Question for UOS AI</source>
+        <translation>UOS AI க்கான கேள்வி</translation>
+    </message>
+    <message>
+        <source>Missing Telegram bot token.</source>
+        <translation>Telegram பாட் டோக்கன் காணவில்லை.</translation>
+    </message>
+    <message>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>Telegram பிளேஸ்ஹோல்டர் செய்தியில் message_id காணவில்லை.</translation>
+    </message>
+    <message>
+        <source>Telegram API request failed.</source>
+        <translation>Telegram API கோரிக்கை தோல்வியடைந்தது.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>சரி</translation>
+    </message>
+    <message>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
+    </message>
+    <message>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
+    </message>
+    <message>
+        <source>UOS AI Trial Account</source>
+        <translation>UOS AI சோதனை கணக்கு</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>தனிப்பயன்</translation>
+    </message>
+    <message>
+        <source>Private deployment model</source>
+        <translation>தனிப்பட்ட வரிசைப்படுத்தல் மாதிரி</translation>
+    </message>
+    <message>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
         <source>Cancel</source>
-        <translation>ரத்துசெய்</translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
         <source>Restart immediately</source>
-        <translation>உடனடியாக மீண்டும் தொடங்கவும்</translation>
+        <translation>உடனடியாக மறுதொடக்கம் செய்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
         <source>Simplified Chinese</source>
-        <translation>எளிமைப்படுத்தப்பட்ட சீனம்</translation>
+        <translation>எளிதாக்கப்பட்ட சீனம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
         <source>Traditional Chinese</source>
-        <translation>பாரம்பரிய சீனம்</translation>
+        <translation>மரபுசார் சீனம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
         <source>Tibetan</source>
-        <translation type="unfinished">திபெத்திய</translation>
+        <translation>திபெத்தியம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
         <source>English</source>
-        <translation type="unfinished">ஆங்கிலம்</translation>
+        <translation>ஆங்கிலம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
         <source>Japanese</source>
         <translation>ஜப்பானியம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
         <source>German</source>
-        <translation type="unfinished">ஜெர்மன்</translation>
+        <translation>ஜெர்மன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
         <source>Spanish</source>
-        <translation type="unfinished">ஸ்பானிஷ்</translation>
+        <translation>ஸ்பானிஷ்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
         <source>French</source>
-        <translation type="unfinished">பிரஞ்சு</translation>
+        <translation>பிரெஞ்சு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
         <source>Italian</source>
-        <translation type="unfinished">இத்தாலிய</translation>
+        <translation>இத்தாலியன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
         <source>Korean</source>
-        <translation type="unfinished">கொரியன்</translation>
+        <translation>கொரியன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
         <source>Malay</source>
-        <translation type="unfinished">மலாய்</translation>
+        <translation>மலாய்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
         <source>Portuguese</source>
-        <translation type="unfinished">போர்த்துகீசிய</translation>
+        <translation>போர்ச்சுகீஸ்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
         <source>Russian</source>
-        <translation type="unfinished">ரஷியன்</translation>
+        <translation>ரஷ்யன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
         <source>Thai</source>
-        <translation type="unfinished">தாய்</translation>
+        <translation>தாய்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">வியட்நாமிய</translation>
+        <translation>வியட்நாமீஸ்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
         <source>Arabic (SA)</source>
-        <translation>அரபிக் (SA)</translation>
+        <translation>அரபு (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>கணினி AI புத்திசாலி பட்லர் செயல்பாடு
-
-அறிமுகம்: சிக்கலான கணினி செயல்பாடுகளைச் செய்ய கணினி கருவிகளை புத்திசாலித்தனமாக திட்டமிடுகிறது, கணினி கட்டுப்பாடு, கோப்பு மேலாண்மை, பயன்பாட்டு மேலாண்மை மற்றும் நெட்வொர்க்கிங் நெறிமுறைகளை ஆதரிக்கிறது.
-
-உதாரணம்: புதிதாக உருவாக்கப்பட்ட கோப்புறையில் உள்ள அனைத்து கோப்புகளையும் திட்டப் பொருட்களாக பெயரிட்டு எண் வரிசையில் அமைக்கவும்.</translation>
+        <source>Search</source>
+        <translation>தேடுக</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <source>Explain</source>
+        <translation>விளக்குக</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <source>Summary</source>
+        <translation>சுருக்கம்</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <source>Translate</source>
+        <translation>மொழிபெயர்க்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <source>Continue Writing</source>
+        <translation>எழுதுவதைத் தொடரவும்</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">தனிப்பயன்</translation>
+        <source>Expand</source>
+        <translation>விரிவாக்கு</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished"></translation>
+        <source>Polish</source>
+        <translation>மெருகேற்று</translation>
     </message>
     <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">&apos;mcpServers&apos; புலம் இல்லை.</translation>
+        <source>Correct</source>
+        <translation>திருத்து</translation>
     </message>
     <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">சரியான mcp சேவையகம் இல்லை.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">url புலம் காலியாக இருக்க முடியாது.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">command புலம் காலியாக இருக்க முடியாது.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">&apos;command&apos; அல்லது &apos;url&apos; புலம் இல்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished">அறிவு தள மேலாண்மை</translation>
+        <source>Add to the AI knowledge base</source>
+        <translation>AI அறிவுத்தளத்தில் சேர்</translation>
     </message>
 </context>
 <context>
     <name>ResearchTools</name>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
         <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆவணங்களைச் சேமிக்க uos-ai-agent சொருகி (தோராயமாக %1) நிறுவப்பட்டிருக்க வேண்டும்.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
         <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆவணங்களைச் சேமிக்க uos-ai-agent சொருகி நிறுவப்பட்டிருக்க வேண்டும்.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>குறிப்பு</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
         <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் பிணையத்தை சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">இணைப்பு தோல்வியுற்றது, உள்ளிடப்பட்ட தகவலை சரிபார்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">மன்னிக்கவும், தொடர்புடைய சட்டங்கள், விதிமுறைகள் மற்றும் கொள்கைகளின்படி, முடிவுகள் தற்போது காட்டப்படவில்லை.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">செயல் ரத்து செய்யப்பட்டது.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">உங்கள் இலவச கணக்கு காலாவதியாகிவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">உரையாடலுக்கான உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">உரை-படத்திற்கான உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">தவறான உள்ளீட்டு சாதனம்</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">தவறான வெளியீட்டு சாதனம்</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">மன்னிக்கவும், பொருந்தக்கூடிய செயல்பாடுகள் எதுவும் கிடைக்கவில்லை.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">உரையாடலில் உள்ள மொத்த எழுத்துக்கள் வரம்பை மீறிவிட்டன, உரையாடல் வரலாற்றை அழித்து மீண்டும் முயற்சிக்கவும்.</translation>
+        <translation>இப்போது பதிவிறக்கு</translation>
     </message>
 </context>
 <context>
     <name>ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">&apos;mcpServers&apos; புலம் இல்லை.</translation>
+        <translation>&apos;mcpServers&apos; புலம் காணவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
         <source>no valid mcp server.</source>
-        <translation type="unfinished">சரியான mcp சேவையகம் இல்லை.</translation>
+        <translation>சரியான mcp சர்வர் இல்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
         <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
+        <translation>ஒரே ஒரு MCP சேவையை மட்டுமே ஒரே நேரத்தில் திருத்த முடியும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
         <source>url field cannot be empty.</source>
-        <translation type="unfinished">url புலம் காலியாக இருக்க முடியாது.</translation>
+        <translation>url புலம் காலியாக இருக்க முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
         <source>command field cannot be empty.</source>
-        <translation type="unfinished">command புலம் காலியாக இருக்க முடியாது.</translation>
+        <translation>command புலம் காலியாக இருக்க முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">&apos;command&apos; அல்லது &apos;url&apos; புலம் இல்லை</translation>
+        <translation>&apos;command&apos; அல்லது &apos;url&apos; புலம் காணவில்லை</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
         <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS கணினி உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin கணினி உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">தனிப்பட்ட அறிவு உதவியாளர்</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI எழுத்து</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI உரை செயலாக்கம்</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI மொழிபெயர்ப்பு</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI பயன்படுத்துவதற்கு முன்பு ஒரு AI மாதிரி கணக்கு உள்ளமைக்கப்பட வேண்டும். முதலில் ஒரு மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">முகவர் சர்வர் கிடைக்கவில்லை.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">வெற்றிகரமாக கோரப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">கணக்கு கிடைக்கவில்லை</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">டீப்சீக் கணக்கு மட்டுமே ஆதரிக்கப்படுகிறது</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">நீங்கள் ஏற்கனவே நிகழ்வில் பங்கேற்றுள்ளீர்கள், வெகுமதியை மீண்டும் கோர முடியாது.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">சேவையக கணினி பிழை</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">கோரிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</translation>
+        <translation>JSON கட்டமைப்பு வடிவம் தவறானது.</translation>
     </message>
 </context>
 <context>
     <name>TextParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
         <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>கோப்பைத் திறக்க முடியவில்லை: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
         <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
+        <translation>கோப்பு உள்ளடக்கம் பைனரி வடிவத்தில் உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
         <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>கோப்பைப் படிக்க முடியவில்லை: %1</translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
-        <translation>கருத்து</translation>
+        <translation>கருத்துக்கள்</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>ஒளி தீம்</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>இருள் தீம்</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>கணினி தீம்</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>தீம்</translation>
     </message>
 </context>
 <context>
     <name>TtsCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>appid அங்கீகாரம் தோல்வியுற்றது</translation>
+        <translation>appid அங்கீகாரம் தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>ஒரு குறிப்பிட்ட அளவுருவைப் பெறத் தோல்வியுற்றது</translation>
+        <translation>ஒரு குறிப்பிட்ட அளவுருவைப் பெறுவதில் தோல்வி</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>அளவுரு மதிப்பு தவறானது</translation>
+        <translation>அளவுரு மதிப்பு சட்டவிரோதமானது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>இயந்திர அங்கீகாரம் போதுமானதாக இல்லை</translation>
+        <translation>போதிய எஞ்சின் அங்கீகாரம் இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
         <source>Request text length is illegal</source>
-        <translation>கோரிக்கை உரை நீளம் தவறானது</translation>
+        <translation>கோரிக்கை உரை நீளம் சட்டவிரோதமானது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
         <source>session timeout</source>
-        <translation>அமர்வு நேரம் முடிந்துவிட்டது</translation>
+        <translation>அமர்வு நேரம் முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
         <source>Engine session ended</source>
-        <translation>இயந்திர அமர்வு முடிந்துவிட்டது</translation>
+        <translation>எஞ்சின் அமர்வு முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
-        <translation>appid காலியாக இருக்க முடியாது</translation>
+        <translation>appid காலியாக இருக்கக்கூடாது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
-        <translation>தவறான பதிப்பு</translation>
+        <translation>சட்டவிரோதமான பதிப்பு</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
         <translation>அனுமதி மறுக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>தினசரி ஓட்டக் கட்டுப்பாடு வரம்பை மீறுகிறது</translation>
+        <translation>தினசரி போக்குவரத்து கட்டுப்பாடு வரம்பை மீறியது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
         <translation>கோரிக்கை தரவு வடிவம் சட்டவிரோதமானது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
-        <translation>base64 டிகோடிங் தோல்வியடைந்தது</translation>
+        <translation>base64 முறிவு தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>தேவையான அளவுருக்கள் காணவில்லை அல்லது அளவுருக்கள் சட்டவிரோதமானவை</translation>
+        <translation>தேவையான அளவுருக்கள் இல்லை அல்லது அளவுருக்கள் சட்டவிரோதமானவை</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
         <source>Reading data timeout</source>
-        <translation>தரவு வாசிக்கும் நேரம் முடிந்துவிட்டது</translation>
+        <translation>தரவுப் படிப்பு நேரம் முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
         <source>network anomaly</source>
-        <translation>பிணைய அசாதாரணம்</translation>
+        <translation>நெட்வொர்க் ஒழுங்கின்றி</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>இணைப்பு தோல்வியடைந்தது, தயவுசெய்து நிரப்பிய தகவலை சரிபார்க்கவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>TtsCompositeWidget</name>
-    <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">நீங்கள் தேர்ந்தெடுத்த உரை 5000 எழுத்து வரம்பை மீறிவிட்டது.</translation>
+        <translation>இணைப்பு தோல்வியடைந்தது, தயவு செய்து நிரப்பிய தகவலைச் சரிபார்க்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
-        <translation>நான் இந்த வசதியை இன்னும் செயல்படுத்தவில்லை.</translation>
+        <translation>நான் இந்த அம்சத்தை இன்னும் செயல்படுத்தவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>சேவை கிடைக்கவில்லை!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>தவறான அளவுரு!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
-        <translation>இந்த பயன்பாட்டை கண்டுபிடிக்க முடியவில்லை!</translation>
+        <translation>இந்த பயன்பாட்டு கண்டுபிடிக்க முடியவில்லை!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>பயன்பாட்டைத் தொடங்குவதில் தோல்வி!</translation>
     </message>
 </context>
 <context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">பிரகாசம் ஏற்கனவே அதிகபட்சத்தில் உள்ளது மேலும் அதிகரிக்க முடியாது.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">பிரகாசம் ஏற்கனவே குறைந்தபட்சத்தில் உள்ளது மேலும் குறைக்க முடியாது.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">உங்கள் கணினி நினைவகம் %0.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">மொழி அமைப்பு இடைமுகம் திறக்கப்பட்டது. தயவுசெய்து இந்த இடைமுகத்தில் அதை அமைக்கவும்.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">தற்போதைய முறை ஏற்கனவே %1 முறை.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">மூட முடியவில்லை ஏனெனில் தற்போதைய முறை %1 இலக்கு முறையுடன் பொருந்தவில்லை.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">சமநிலை முறையை அணைக்க முடியாது.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">பூட்டு திரை உங்களுக்காக திறக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">திரை ஷாட் அல்லது பதிவு முடிந்தது</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">ஒரே ஒரு திரை, திரை முறையை மாற்ற முடியாது.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">இது தற்போதைய காட்சி முறைக்கு ஒத்திருக்கிறது. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">ஒரே ஒரு திரை, திரையை மாற்ற முடியாது.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">உங்கள் கட்டளை வழங்கப்பட்டது.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">UOS AI பயனர் ஒப்பந்தம்</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">நான் 18 வயதுக்கு மேற்பட்டவன் என்பதை உறுதிப்படுத்துகிறேன். நான் அங்கீகரிக்கிறேன் மற்றும் ஒப்புக்கொள்கிறேன், நான் பயன்பாட்டின் மூலம் அனுப்பி பெறும் உள்ளடக்கங்கள் பெரிய மாதிரி சேவை வழங்குநருடன் நேரடி தரவு பரிமாற்றங்கள் மற்றும் நிறுவனத்துடன் எந்த தொடர்பும் இல்லை.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">நான் பயன்பாட்டின் பயனர் அனுபவத் திட்டத்தில் பங்கேற்பதற்கு ஒப்புக்கொள்கிறேன், மற்றும் உங்கள் நிறுவனத்திற்கு பயன்பாட்டைப் பயன்படுத்தும் போது நான் அனுப்பும் உள்ளடக்கங்கள், அனுப்பும் நேரம், கோரப்பட்ட பெரிய மாதிரியின் வகை, குறிப்பிட்ட பயன்பாடு மற்றும் உரை படத்தை வெற்றிகரமாக உருவாக்கியதா என்பதை சேகரிக்க அங்கீகரிக்கிறேன், இதனால் சேவை தரம் மேம்படுத்தப்பட்டு செயல்பாட்டு அனுபவம் மேம்படுத்தப்படும். (நீங்கள் மேலே உள்ள தகவலை வழங்க மறுத்தால், அது உங்கள் பயன்பாட்டின் சாதாரண பயன்பாட்டை பாதிக்காது.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">சேவையக உள் பிழை</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">சேவை தற்காலிகமாக கிடைக்கவில்லை</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">அழைக்கப்படும் API இல்லை. தயவுசெய்து கோரிக்கை URL ஐ சரிபார்க்கவும் மீண்டும் முயற்சிக்கவும். பொதுவாக, URL இல் ஆங்கிலம் அல்லாத எழுத்துக்கள் உள்ளன, எடுத்துக்காட்டாக &quot;-&quot;. நீங்கள் அதை கைமுறையாக உள்ளிட்டு மீண்டும் முயற்சிக்கலாம்.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">இடைமுக அழைப்பு அனுமதி இல்லை, பயன்பாட்டை உருவாக்கும் போது தொடர்புடைய Qianfan இடைமுகம் சரிபார்க்கப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">மாடல் அழைப்பு பிழை: மாடல் கோரிக்கை வரம்பு அடைந்துவிட்டது, அல்லது மாடல் ஆஃப்லைனில் உள்ளது. பரிந்துரைகள்: மாடலை மீண்டும் சேர்க்கவும், அல்லது இந்த சிக்கலை தீர்க்க பெரிய மாடல் சேவை வழங்குநரின் வாடிக்கையாளர் சேவையை தொடர்பு கொள்ளவும்.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">டோக்கன் பெறுவதில் தோல்வி</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">IAM அங்கீகாரம் தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">பயன்பாடு இல்லை அல்லது உருவாக்குவதில் தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">ஒரு நாளைக்கு கோரிக்கைகளின் எண்ணிக்கை வரம்பை மீறுகிறது</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">மொத்த கோரிக்கைகளின் எண்ணிக்கை வரம்பை மீறுகிறது</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">தவறான access_token அளவுரு</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">access_token தவறானது</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">access token காலாவதியாகிவிட்டது</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">சேவை பிழை, டெம்ப்ளேட் இல்லை</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">ஒரு கணினி பிழை ஏற்பட்டது, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">அறிவு தள சேவையகத்தை அணுக முடியவில்லை</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">அறிவு தள தரவு பதிவிறக்க விதிவிலக்கு</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">தூண்டல் சொல் மிக நீளமானது</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">மாடல் இல்லை</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">கோரிக்கை அளவுரு பிழை</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">பட செயலாக்கம் தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">சேவை கையாளுதல் விதிவிலக்கு பிழை</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">சேவை உள் பிழை</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">உள்ளீட்டு அளவுரு வடிவம் தவறானது, எடுத்துக்காட்டாக தேவையான அளவுருக்கள் காணவில்லை.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">உள்ளீட்டு அளவுரு உடல் நிலையான JSON வடிவத்தில் இல்லை</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">அளவுரு சரிபார்ப்பு சட்டவிரோதமானது</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">அனுமதி கட்டுப்பாடு பிழை</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">தனிப்பயனாக்கப்பட்ட மாடல் சேவை apiname இல்லை</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">சேவை உள் பிழை, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">சட்டவிரோத HTTP முறை, தற்போது POST கோரிக்கைகளை மட்டுமே ஆதரிக்கிறது</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">கோரிய உள்ளடக்கம் பெரிய மாதிரி உள் வரம்பை மீறுகிறது</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">உள் பிழை</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">வின்சென்ட் வரைபட மாதிரி சேவை நேரம் முடிந்துவிட்டது</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">prompt மற்றும் negative_prompt உள்ள பாதுகாப்பு பிரச்சினைகள் உள்ளன</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">வெளியீடு படங்களில் பாதுகாப்பு பிரச்சினைகள் உள்ளன</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">அளவுரு பிழை</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">அணுகல் இல்லை</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">பட விளக்கம் 256 எழுத்து வரம்பை மீறுகிறது</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">UOS AI க்கு வரவேற்கிறோம்</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, உங்கள் ஸ்மார்ட் உதவியாளர், உங்கள் உற்பத்தித்திறனை மேம்படுத்தவும் மற்றும் உயர்தர வேலை அனுபவத்தை அனுபவிக்கவும் வடிவமைக்கப்பட்டுள்ளது.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">இலவச சோதனை கணக்கைப் பெறவும்</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">மாதிரியைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">பயன்படுத்தத் தொடங்கவும்</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">நான் 18 வயதுக்கு மேற்பட்டவன் என்பதை உறுதிப்படுத்துகிறேன். நான் ஒப்புக்கொள்கிறேன் மற்றும் &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI பயனர் ஒப்பந்தம்&quot;&lt;/a&gt; உடன் ஒப்புக்கொள்கிறேன், மற்றும் நான் அனுப்பிய மற்றும் பெறும் உள்ளடக்கங்கள் பெரிய மாதிரி சேவை வழங்குநருடன் நேரடி தரவு பரிமாற்றங்கள் மற்றும் நிறுவனத்துடன் எந்த தொடர்பும் இல்லை.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">ஒரு கணக்கைப் பெறுவது நீங்கள் நிகழ்வின் விதிமுறைகளைப் புரிந்துகொண்டு ஒப்புக்கொள்கிறீர்கள் என்பதைக் குறிக்கிறது,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;நிகழ்வு விவரங்கள்&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">சோதனை கணக்கு</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">சேமிப்பு தோல்வியடைந்தது, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">சோதனை கணக்கின் பயன்பாடுகள் மற்றும் கால அளவு வரையறுக்கப்பட்டுள்ளது, உங்கள் தனிப்பட்ட மாதிரி கணக்கை சரியான நேரத்தில் கட்டமைக்கவும்! விவரங்களுக்கு நிகழ்வு விவரங்களைப் பார்க்கவும்.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">சோதனை கணக்குகளுக்கான ஆங்கில ஆதரவு திருப்திகரமாக இல்லை. மேலும் சோதனை கணக்கின் பயன்பாடுகள் மற்றும் கால அளவு கட்டுப்படுத்தப்பட்டுள்ளன. தயவுசெய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை உடனடியாக அமைக்கவும்!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">சோதனையைத் தொடங்கவும்</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">இலவச கணக்கு செயல்பாடு முடிந்தது.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">சேவையகத்துடன் இணைக்க முடியவில்லை, உங்கள் பிணையத்தைச் சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">நான் பயன்பாட்டின் பயனர் அனுபவத் திட்டத்தில் பங்கேற்பதற்கு ஒப்புக்கொள்கிறேன், மற்றும் உங்கள் நிறுவனத்திற்கு நான் அனுப்பும் உள்ளடக்கங்கள், அனுப்பும் நேரம், கோரப்பட்ட பெரிய மாதிரி வகை, குறிப்பிட்ட பயன்பாடு மற்றும் உரை படத்தை வெற்றிகரமாக உருவாக்கியதா என்பதை சேகரிக்க அங்கீகரிக்கிறேன், இதனால் சேவை தரத்தை மேம்படுத்தவும் மற்றும் செயல்பாட்டு அனுபவத்தை மேம்படுத்தவும். (நீங்கள் மேலே உள்ள தகவலை வழங்க மறுத்தால், அது உங்கள் சாதாரண பயன்பாட்டை பாதிக்காது.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">உறுதிப்படுத்தவும்</translation>
-    </message>
-</context>
-<context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>குறிப்பு: ஆவணத்தின் சில உள்ளடக்கங்கள் AI மூலம் உருவாக்கப்பட்டிருக்கலாம்</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>குறிப்புகள்</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>வேர்ட் கோப்புகள் (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>PDF கோப்புகள் (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>மார்க்டவுன் கோப்புகள் (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">WebSocket ஆக மேம்படுத்தும் போது பிழை</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">WebSocket மூலம் பயனரின் செய்தியைப் படிக்கும் போது பிழை</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">WebSocket மூலம் பயனருக்கு செய்தி அனுப்பும் போது பிழை</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">பயனரின் செய்தி வடிவம் தவறானது</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">பயனர் தரவுக்கான திட்ட பிழை</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">பயனர் அளவுரு மதிப்பு தவறானது</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">பயனர் ஒரே நேரத்தில் பல இடங்களில் இணைக்க முடியாது: தற்போதைய பயனர் ஏற்கனவே இணைக்கப்பட்டுள்ளார்.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">பயனர் போக்குவரத்து வரம்புக்குட்பட்டது: சேவை பயனரின் தற்போதைய பிரச்சினையை செயல்படுத்துகிறது, மேலும் புதிய கோரிக்கையை அனுப்புவதற்கு முன் செயலாக்கம் முடிவடைய வேண்டும். (அடுத்த கேள்வியை அனுப்புவதற்கு முன் மாதிரியிலிருந்து முழுமையான பதிலுக்கு காத்திருக்க வேண்டும்)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">சேவை திறன் போதுமானதாக இல்லை, ஊழியர்களைத் தொடர்பு கொள்ளவும்</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">இயந்திரத்துடன் இணைப்பை நிறுவ முடியவில்லை</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">இயந்திர தரவைப் பெறுவதில் பிழை</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">இயந்திரத்திற்கு தரவை அனுப்புவதில் பிழை</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">இயந்திர உள் பிழை</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">உள்ளீட்டு உள்ளடக்கம் மதிப்பாய்வைத் தாண்டவில்லை மற்றும் விதிகளை மீறுவதாக சந்தேகிக்கப்படுகிறது. உள்ளீட்டு உள்ளடக்கத்தை மீண்டும் சரிசெய்யவும்.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">வெளியீட்டு உள்ளடக்கமானது உணர்திறன் தகவல்களை உள்ளடக்கியது, மதிப்பாய்வு தோல்வியடைகிறது, மேலும் அடுத்தடுத்த முடிவுகளை பயனருக்கு காட்ட முடியாது.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">appid கருப்புப் பட்டியலில் உள்ளது</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Appid அங்கீகார வகுப்பு பிழை. எடுத்துக்காட்டாக: இந்த செயல்பாடு செயல்படுத்தப்படவில்லை, தொடர்புடைய பதிப்பு செயல்படுத்தப்படவில்லை, டோக்கன் போதுமானதாக இல்லை, ஒரே நேரத்தில் அங்கீகாரத்தை மீறுகிறது, போன்றவை.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">வரலாற்றை அழிக்க முடியவில்லை</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">இந்த அமர்வின் உள்ளடக்கம் சட்டவிரோத தகவல்களை உள்ளடக்கியிருக்கலாம் என்பதைக் குறிக்கிறது; இந்த பிழை குறியீட்டைப் பெற்ற பிறகு, டெவலப்பர்கள் பயனருக்கு சட்டவிரோத தகவல்களை உள்ளிடுவதற்கு ஒரு தூண்டுதலை வழங்க பரிந்துரைக்கப்படுகிறது.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">சேவை பிஸியாக உள்ளது, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">கோரிக்கை இயந்திரத்தின் அளவுருக்கள் அசாதாரணமாக உள்ளன, மற்றும் இயந்திர திட்ட சரிபார்ப்பு தோல்வியடைகிறது.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">இயந்திர வலையமைப்பு அசாதாரணம்</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">டோக்கன்களின் எண்ணிக்கை மேல் வரம்பை மீறுகிறது. உரையாடல் வரலாறு மற்றும் கேள்வியில் உள்ள சொற்களின் எண்ணிக்கை மிக அதிகமாக உள்ளது மற்றும் எளிமைப்படுத்தப்பட வேண்டும்.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">அங்கீகார பிழை: appId தொடர்புடைய செயல்பாடுகளுக்கு அங்கீகாரம் இல்லை அல்லது வணிக அளவு வரம்பை மீறுகிறது</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">அங்கீகார பிழை: தினசரி ஓட்டக் கட்டுப்பாடு வரம்பு மீறப்பட்டது. நாளின் அதிகபட்ச பார்வைகளின் எண்ணிக்கையை மீறியது</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">தற்போது பார்வையாளர்கள் அதிகமாக உள்ளனர், பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">இணைப்பு தோல்வியடைந்தது, உள்ளீட்டுத் தகவலைச் சரிபார்க்கவும்.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">சேவையக உள் பிழை</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">அங்கீகாரம் தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">தலைப்பில் அங்கீகார அளவுரு பெறப்படவில்லை மற்றும் அங்கீகாரம் செய்ய முடியவில்லை.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">அங்கீகார டோக்கன் சட்டவிரோதமானது. அங்கீகார டோக்கன் சரியாக வழங்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்தவும்.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">அங்கீகார டோக்கன் காலாவதியாகிவிட்டது, தயவுசெய்து அதை மீண்டும் உருவாக்கவும்/பெறவும்</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">அங்கீகார டோக்கன் மூலம் சரிபார்ப்பு தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">கணக்கு வாசிப்பு மற்றும் எழுதுதல்</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">உங்கள் கணக்கு தற்போது செயலற்ற நிலையில் உள்ளது. கணக்கு தகவலைச் சரிபார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">உங்கள் கணக்கு இல்லை</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">உங்கள் கணக்கு பூட்டப்பட்டுள்ளது, திறக்க வாடிக்கையாளர் சேவையைத் தொடர்பு கொள்ளவும்</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">உங்கள் கணக்கில் பணம் செலுத்தப்படவில்லை, மீண்டும் ரீசார்ஜ் செய்து முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">உங்கள் கணக்கை வெற்றிகரமாக அணுக முடியவில்லை, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">API அழைப்பு பிழை</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">API அழைப்பு அளவுருக்கள் தவறாக உள்ளன, ஆவணத்தைப் பார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">மாதிரி இல்லை, மாதிரி குறியீட்டைச் சரிபார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">தற்போதைய மாதிரி ${method} அழைப்பு முறையை ஆதரிக்கவில்லை</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">${field} அளவுருக்கள் சாதாரணமாக பெறப்படவில்லை</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">${field} அளவுரு சட்டவிரோதமானது. ஆவணத்தைப் பார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} மற்றும் ${field2} ஒரே நேரத்தில் அமைக்க முடியாது, ஆவணத்தைப் பார்க்கவும்</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">உங்களுக்கு ${API_name} அணுகல் இல்லை</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">API ${API_name} ஆஃப்லைனில் உள்ளது</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">API ${API_name} இல்லை</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">API அழைப்பு செயல்முறை பிழை</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">நீங்கள் கோரியுள்ளீர்கள்: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">அசின்க்ரோனஸ் கோரிக்கை முடிவுகளைப் பெறும்போது, task_id ஐப் பயன்படுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">பணி: ${task_id} இல்லை</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">நெட்வொர்க் பிழை, பிழை ஐடி: ${error_id}, வாடிக்கையாளர் சேவையைத் தொடர்பு கொள்ளவும்</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">API இயக்க பிழை</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">உடனடி மிக நீளமானது</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">API அழைப்பு கொள்கையால் தடுக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">உள்ளீடு அல்லது உருவாக்கப்பட்ட உள்ளடக்கம் பாதுகாப்பற்ற அல்லது உணர்திறன் உள்ளடக்கத்தைக் கொண்டிருக்கலாம் என்பதை கணினி கண்டறிந்துள்ளது. உணர்திறன் உள்ளடக்கத்தை எளிதில் உருவாக்கக்கூடிய உடனடிகளை உள்ளிடுவதைத் தவிர்க்கவும். உங்கள் ஒத்துழைப்புக்கு நன்றி.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">தற்போது பல பார்வையாளர்கள் உள்ளனர், பின்னர் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">இந்த API இன்றைய அழைப்பு வரம்பை எட்டியுள்ளது. உங்களுக்கு மேலும் தேவைப்பட்டால், வாங்க வாடிக்கையாளர் சேவையைத் தொடர்பு கொள்ளவும்.</translation>
+        <translation>கட்டுரையைச் சேமி</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">பின்வரும் உரையை எனக்காக ஆங்கிலத்தில் மொழிபெயர்க்கவும்.</translation>
+        <translation>பின்வரும் உரையை எனக்கு ஆங்கிலத்தில் மொழிபெயர்க்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">பின்வரும் ஆவணத்தை சீனத்தில் மொழிபெயர்க்கவும்.</translation>
+        <translation>பின்வரும் ஆவணத்தை சீன மொழியில் மொழிபெயர்க்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>AI துறையில் &apos;Agent&apos; என்ற வார்த்திற்கு என்ன பொருள்?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">பின்வரும் உள்ளடக்கத்தை சீனத்தில் மொழிபெயர்க்கவும். தேவைகள்: பொருளில் துல்லியமான, மொழியில் முறையான மற்றும் தொழில்முறை.</translation>
+        <translation>பின்வரும் உள்ளடக்கத்தை சீன மொழியில் மொழிபெயர்க்கவும். தேவைகள்: பொருள் துல்லியமாக இருக்க வேண்டும், மொழி முறையாகவும் தொழில்முறையாகவும் இருக்க வேண்டும்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">ஆங்கிலத்தில் ஒரு நண்பரை அழைப்பதற்கான சில பேச்சுவழக்கு வழிகள் என்ன?</translation>
+        <translation>ஆங்கிலத்தில் ஒரு நண்பரை அணுகுவதற்கான சில பேச்சு வழக்கு முறைகள் யாவை?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">பின்வரும் பாரம்பரிய சீன உரையை நவீன சீனத்தில் மொழிபெயர்க்கவும்.</translation>
+        <translation>பின்வரும் பழைய சீன உரையை நவீன சீன மொழியில் மொழிபெயர்க்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>இன்று </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>நேற்று </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI என்பது ஒரு டெஸ்க்டாப் ஸ்மார்ட் உதவியாளர், உங்கள் தனிப்பட்ட உதவியாளர்! நீங்கள் உரை அல்லது குரல் வழியாக அதனுடன் தொடர்பு கொள்ளலாம், அது கேள்விகளுக்கு பதிலளிக்க, தகவல்களை வழங்க, மற்றும் உங்கள் விளக்கங்களின் அடிப்படையில் படங்களை உருவாக்க உதவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">தகவல் தாக்கல்</translation>
+        <translation>பதிவு தகவல்</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">மாதிரியைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">தேவை, உள்ளிடவும்</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">கணக்கு</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">தேவை, பல மாதிரிகளை வேறுபடுத்த</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">மாதிரி பெயர்</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">விருப்பமான</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">களம்</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">மாதிரி கிடைக்கிறதா என்பதை சோதிக்க, கணினி பெரிய மாதிரிக்கு சோதனை தகவலை அனுப்புகிறது, இது ஒரு சிறிய அளவு டோக்கன்களை பயன்படுத்தும்.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ரத்து செய்</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">உறுதிப்படுத்து</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">20 எழுத்துகளுக்கு மேல் இல்லை</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">இந்த LLM ஏற்கனவே உள்ளது, மீண்டும் சேர்க்க வேண்டாம்.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">சேமிப்பு தோல்வியடைந்தது, பின்னர் மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">கணக்கு பெயர் ஏற்கனவே உள்ளது, அதை மாற்றவும்</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">ப்ராக்ஸி அமைப்புகளுக்கு, கணினி ப்ராக்ஸி அமைப்புகளுக்கு செல்லவும்</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">அமைப்புகளுக்கு செல்</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI ஐப் பயன்படுத்துவதற்கு முன்பு AI மாதிரி கணக்கை உளமைக்க வேண்டும். தயவு செய்து முதலில் ஒரு மாதிரி கணக்கை உளமைக்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
-        <translation>திறனை சேர்</translation>
+        <translation>திறன் சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>திறன் பெயர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>திறன் பெயரை உள்ளிடவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>திறன் கட்டளை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
-        <translation>சொல் தேர்வு மூலம் தேர்ந்தெடுக்கப்பட்ட உரையை குறிக்கிறது.</translation>
+        <translation>சொற் தேர்வின் மூலம் தேர்ந்தெடுக்கப்பட்ட உரையைக் குறிக்கிறது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>வழிமுறைகள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>சேமி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
-        <translation>திறன் பெயர் காலியாக இருக்க முடியாது</translation>
+        <translation>திறன் பெயர் காலியாக இருக்கக்கூடாது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
-        <translation>எழுத்து வரம்பை மீறியது</translation>
+        <translation>எழுத்து வரம்பு மீறப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>திறன் பெயர் ஏற்கனவே உள்ளது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>கட்டளை வழிமுறைகள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>நீங்கள் தேர்ந்தெடுக்கப்பட்ட உரை &quot;Hello&quot; ஐ மொழிபெயர்க்க விரும்பினால், மேலே காட்டியபடி, நீங்கள் கட்டளையை உள்ளிடலாம்: Translate {selection} into English.</translation>
+        <translation>மேலே காட்டப்பட்டது போல, தேர்ந்தெடுக்கப்பட்ட &quot;Hello&quot; உரையை மொழிபெயர்க்க விரும்பினால், நீங்கள் கட்டளையை உள்ளிடலாம்: Translate {selection} into English.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
-        <translation>மேம்பட்ட உதவிக்குறிப்புகள்</translation>
+        <translation>மேம்படுத்தப்பட்ட குறிப்புகள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>கட்டளை மிகவும் குறிப்பிட்டதாக இருந்தால், உருவாக்கப்பட்ட உள்ளடக்கம் மிகவும் துல்லியமாக இருக்கும். எடுத்துக்காட்டாக: • 3 அத்தியாயங்கள் மற்றும் 10 முக்கிய புள்ளிகளுடன் {selection} க்கான PPT கோட்பாட்டை உருவாக்கவும். • {selection} ஐ 100 வார்த்தைகளுக்குள் ஒரு வேலைவாய்ப்பு நகலாக மெருகேற்றவும், குழு வேலைகளை முன்னிலைப்படுத்தவும்.</translation>
+        <translation>கட்டளை குறிப்பிட்டதாக இருந்தால், உருவாக்கப்பட்ட உள்ளடக்கம் அதிக துல்லியமாக இருக்கும். எடுத்துக்காட்டாக:
+• {selection} க்கு 3 அதிகாரங்கள் மற்றும் 10 முக்கிய புள்ளிகளுடன் ஒரு PPT வெளிக்காட்டியை உருவாக்கவும்.
+• {selection} ஐ 100 வார்த்திகளுக்குள் ஒரு ஆட்கள் சேகரிப்பு நகலாக மெருகூட்டவும், குழுப்பணியை முக்கியமாகக் காட்டவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
-        <translation>லேபிளை கிளிக் செய்வது அதை உள்ளீட்டு புலத்தில் செருகும்.</translation>
+        <translation>லேபிளைச் சொடுக்குவது அதை உள்ளீடு புலத்தில் செருகலாம்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>சரி</translation>
     </message>
@@ -4292,529 +712,408 @@ Prompt Example: Name all files in the newly created folder on the desktop as pro
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
-        <translation>DDE ஷெல் AI பார்</translation>
+        <translation>DDE Shell AI பட்டி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
         <translation>கோப்புகளை விரைவாக இழுக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
-        <translation>அறிவார்ந்த செயலாக்கத்திற்காக கோப்புகளை AI ரிப்பனுக்கு இழுக்கவும்</translation>
+        <translation>நுண்ணறிவு செயலாக்கத்திற்கு AI ரிப்பனில் கோப்புகளை இழுக்கவும்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">எளிமைப்படுத்தப்பட்ட சீனம்</translation>
+        <translation>எளிதாக்கப்பட்ட சீனம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">பாரம்பரிய சீனம்</translation>
+        <translation>மரபு சீனம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">திபெத்திய</translation>
+        <translation>திபெத்தியம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">ஆங்கிலம்</translation>
+        <translation>ஆங்கிலம்</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">ஜப்பானிய </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">ஜப்பானியம்</translation>
+        <translation>ஜப்பானியம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">ஜெர்மன்</translation>
+        <translation>ஜெர்மன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">ஸ்பானிஷ்</translation>
+        <translation>ஸ்பானிஷ்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">பிரஞ்சு</translation>
+        <translation>பிரெஞ்சு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">இத்தாலிய</translation>
+        <translation>இத்தாலியம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">கொரியன்</translation>
+        <translation>கொரியன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">மலாய்</translation>
+        <translation>மலாய்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">போர்த்துகீசிய</translation>
+        <translation>போர்ச்சுகீஸ்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">ரஷியன்</translation>
+        <translation>ரஷ்யன்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">தாய்</translation>
+        <translation>தாய்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">வியட்நாமிய</translation>
+        <translation>வியட்நாமியம்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">வகை</translation>
+        <translation>வகை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
         <source>Read Aloud</source>
-        <translation type="unfinished">சத்தமாக வாசிக்கவும்</translation>
+        <translation>சத்தமாக படிக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">மீண்டும் உருவாக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished">நகலெடு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">உரையாடலைத் தொடரவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">தானியங்கி கண்டறிதல்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished">தேடு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished">விளக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished">சுருக்கம்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished">மொழிபெயர்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">எழுதுவதைத் தொடரவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished">விரிவாக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished">சரி செய்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished">மெருகேற்று</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">மொழிபெயர்ப்பு முடிவு மாதிரியின் திறன்களால் வரையறுக்கப்படுகிறது. மொழிபெயர்ப்பில் திருப்தி இல்லையென்றால், UOS AI முகப்பு பக்கத்தில் உள்ள பிற மாதிரிகளுக்கு மாறவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">சரி</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியை %1 மொழியில் மொழிபெயர்த்து, தெளிவான முடிவை நேரடியாகத் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">கிளிக் செய்ய முடியாது</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">ஆடியோ சாதனம் கண்டறியப்படவில்லை, சரிபார்க்கவும் மற்றும் மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">சரி</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished">நிரப்புவது தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished">உள்ளீட்டுப் பெட்டி தேர்ந்தெடுக்கப்படவில்லை, உள்ளீட்டுப் பெட்டியைத் தேர்ந்தெடுத்து மீண்டும் நிரப்பவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished">சேர்க்கப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished">நகலெடுக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியை எளிய மொழியில் விளக்கவும். தேவையற்ற உள்ளடக்கம் இல்லாமல் தெளிவான முடிவை மட்டும் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியை சுருக்கி, வேறு தேவையற்ற உள்ளடக்கம் இல்லாமல் நேரடியாக தெளிவான முடிவைத் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியை பொருத்தமாகத் தொடரவும். அதிக வார்த்தைகள் தேவையில்லை. தேவையற்ற உள்ளடக்கம் இல்லாமல் தெளிவான முடிவை மட்டும் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியை பொருத்தமாக விரிவாக்கவும். மிக நீண்ட உரை தேவையில்லை. தேவையற்ற உள்ளடக்கம் இல்லாமல் தெளிவான முடிவை மட்டும் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியில் எழுத்துப் பிழைகள் உள்ளதா என்பதைச் சரிபார்க்கவும். இருந்தால், பிழைகளின் இடத்தைக் குறிப்பிடவும். தேவையற்ற உள்ளடக்கம் இல்லாமல் நேரடியாக தெளிவான முடிவைத் தரவும். உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">இந்தப் பத்தியை எனக்காக மெருகேற்றி, கூடுதல் உள்ளடக்கம் இல்லாமல் முடிவை மட்டும் தரவும்.
-
-உரை：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">தற்போதைய மாதிரி: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished">தற்போது மாதிரி இல்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">உரை எதுவும் அடையாளம் காணப்படவில்லை.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished">சேர்க்கப்பட்ட உள்ளடக்கம் 10 சொற்களுக்கு மேல் இருக்க வேண்டும்</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>நீங்கள் உருவாக்க விரும்புவதை உள்ளிடவும் (உருவாக்க Enter ஐ அழுத்தவும்/வெளியேற Esc ஐ அழுத்தவும்)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>[%1] என்ற தலைப்பில் [தெளிவான அமைப்பு மற்றும் பலவற்றைக் கொண்ட] ஒரு கட்டுரை எழுத உதவுங்கள்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>செயற்கை நுண்ணறிவு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>[%1] என்ற தலைப்பில் [PPT உற்பத்திக்கு] பயன்படுத்தப்படும் ஒரு கோட்பாட்டை எழுத உதவுங்கள்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>[%1] பற்றி ஒரு அறிவிப்பை எழுத உதவுங்கள், பெறுநர் [அனைத்து ஊழியர்கள்] மற்றும் அனுப்புநர் [நிர்வாகத் துறை].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>தேசிய தின விடுமுறை</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>[%1] பற்றி ஒரு ஆராய்ச்சி அறிக்கையை எழுத உதவுங்கள், குறைந்தபட்சம் அதில் [நிலை விளக்கம், சிக்கல் பகுப்பாய்வு, எதிர்மறை நடவடிக்கைகள் மற்றும் பரிந்துரைகள், ஆராய்ச்சி முடிவுகள்] இருக்க வேண்டும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>[%1] என்ற தலைப்பில் [நிறுவன தலைவர்களுக்கு] [தெளிவான அமைப்பு மற்றும் உயிரோட்டமான மொழி] தேவைப்படும் ஒரு உரையை எழுத உதவுங்கள்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>எனது சமீபத்திய வேலையின் சுருக்கத்தை எழுத உதவுங்கள், அதில் [%1] மற்றும் [முடிவுகள்] அடங்கும், [முறையான] தொனி தேவைப்படுகிறது.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>வேலை உள்ளடக்கம்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>[%1] என்ற தலைப்பில் ஒரு பொது ட்வீட்டை எழுத உதவுங்கள், [தெளிவான அமைப்பு] மற்றும் [தளர்வான] தொனி தேவைப்படுகிறது.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">மாதிரி உள்ளமைவு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>உள்ளமைக்க செல்லவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
-        <source>Cancel</source>
-        <translation>ரத்துசெய்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>AI எழுத்தாளர்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>கட்டுரை</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>கோட்பாடு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>அறிவிப்பு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>ஆராய்ச்சி அறிக்கை</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>உரைகள்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>வேலை சுருக்கம்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>ட்வீட்கள்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>உரையில் ஒட்டவும்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>மீண்டும் உருவாக்கு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>நகலெடு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>உரையாடலைத் தொடர்க</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>AI உருவாக்கிய உள்ளடக்கம் குறிப்புக்காக மட்டுமே, தகவலின் துல்லியத்திற்கு கவனம் செலுத்தவும்.</translation>
+        <translation>AI மூலம் உருவாக்கப்பட்ட உள்ளடக்கம் குறிப்பிற்காக மட்டுமே, தகவலின் துல்லியத்தில் கவனம் செலுத்தவும்.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>உள்ளீட்டு முறையை மீண்டும் தொடங்கிய பிறகு மட்டுமே இந்த செயல்பாட்டைப் பயன்படுத்தலாம். பயிற்சி பின்வருமாறு:
-
-1. பணிப்பட்டியில் உள்ளீட்டு முறை ஐகானில் வலது கிளிக் செய்யவும்.
-
-2. &quot;மீண்டும் தொடங்கு&quot; என்பதைக் கிளிக் செய்யவும்.</translation>
+        <source>Automatic Detection</source>
+        <translation>தானியக்கக் கண்டறிதல்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>தேடு</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>விளக்கு</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>சுருக்கம்</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>மொழிபெயர்க்கவும்</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>எழுதுவதைத் தொடர்க</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>விரிவாக்கு</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>திருத்து</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>மெருகூட்டு</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>AI அறிவுத்தளத்தில் சேர்க்கவும்</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>மொழிபெயர்ப்பு முடிவு மாதிரியின் திறன்களால் வரையறுக்கப்பட்டுள்ளது. நீங்கள் மொழிபெயர்ப்பில் திருப்தி அடையவில்லை என்றால், UOS AI முகப்புப் பக்கத்தில் பிற மாதிரிகளுக்கு மாறவும்.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>சரி</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>இந்தப் பத்தியை %1 க்கு மொழிபெயர்த்து எனக்கு நேரடியாக தெளிவான முடிவைத் தரவும்.
+text：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>சொடுக்க முடியாது</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>ஆடியோ சாதனம் கண்டறியப்படவில்லை, தயவு செய்து சரிபார்த்து மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>சரி</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>உள்ளீடு முறைமையை மறுதொடக்கம் செய்த பிறகு மட்டுமே இந்த செயல்பாட்டைப் பயன்படுத்த முடியும். பயிற்சி பின்வருமாறு:
+1. பணிப்பட்டையில் உள்ள உள்ளீடு முறைமை ஐகானில் வலது-சொடுக்கு செய்க.
+2. &quot;மறுதொடக்கம்&quot; என்பதைச் சொடுக்கு செய்க.</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>நிரப்பு தோல்வியடைந்தது</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>உள்ளீடு பெட்டி எதுவும் தேர்ந்தெடுக்கப்படவில்லை, உள்ளீடு பெட்டியைத் தேர்ந்வெடுத்து மீண்டும் நிரப்பவும்.</translation>
+    </message>
+    <message>
+        <source>Added</source>
+        <translation>சேர்க்கப்பட்டது</translation>
+    </message>
+    <message>
         <source>Copied</source>
         <translation>நகலெடுக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>இந்த பத்தியை எளிய மொழியில் விளக்கவும். தேவையற்ற உள்ளடக்கம் இல்லாமல் எனக்கு தெளிவான முடிவைக் கொடுங்கள்.
+text：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>இந்த பத்தியைச் சுருக்கி, வேறு எந்த தேவையற்ற உள்ளடக்கமும் இல்லாமல் எனக்கு நேரடியாக தெளிவான முடிவைக் கொடுங்கள்.
+text：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>இந்த பத்தியை பொருத்தமாகத் தொடரவும். அதிக வார்த்தைகள் தேவையில்லை. வேறு எந்த தேவையற்ற உள்ளடக்கமும் இல்லாமல் எனக்கு தெளிவான முடிவைக் கொடுங்கள்.
+text：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>இந்த பத்தியை பொருத்தமாக விரிவாக்கவும். குறிப்பாக நீண்ட உரை தேவையில்லை. வேறு எந்த தேவையற்ற உள்ளடக்கமும் இல்லாமல் எனக்கு தெளிவான முடிவைக் கொடுங்கள்.
+text：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>இந்த பத்தியில் எந்த எழுத்துப் பிழைகள் உள்ளது என்பதை சரிபார்க்கவும். இருந்தால், பிழைகளின் இடத்தைச் சுட்டிக்காட்டவும். வேறு எந்த தேவையற்ற உள்ளடக்கமும் இல்லாமல் எனக்கு நேரடியாக தெளிவான முடிவைக் கொடுங்கள்.
+text：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>இந்த பத்தியை எனக்காக மெருகேற்றவும், மேலதிக உள்ளடக்கம் இல்லாமல் வெறும் முடிவை மட்டும் கொடுங்கள்.
+text：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
         <source>Current model: </source>
         <translation>தற்போதைய மாதிரி: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>தற்போது மாதிரி இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
+        <source>Go to configure  </source>
+        <translation>கட்டமைப்புக்குச் செல்  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>இலவச கிரெடிட்களைப் பெறுங்கள்  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>உரை அங்கீகரிக்கப்படவில்லை.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>சேர்க்கப்பட்ட உள்ளடக்கம் 10 வார்த்தைகளுக்கு மேல் இருக்க வேண்டும்</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>AI எழுத்தாளர்</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>உருவாக்க விரும்புவதை உள்ளிடவும் (உருவாக்க Enter அழுத்தவும்/வெளியேற Esc அழுத்தவும்)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>கட்டுரை</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>குறிப்புரை</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>அறிவிப்பு</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>ஆராய்ச்சி அறிக்கை</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>பேருரைகள்</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>வேலை சுருக்கம்</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>ட்வீட்கள்</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>ரத்துசெய்</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>உரையில் ஒட்டவும்</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>மீண்டும் உருவாக்கு</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>நகலெடு</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>AI மூலம் உருவாக்கப்பட்ட உள்ளடக்கம் குறிப்பிற்காக மட்டுமே, தகவலின் துல்லியத்தில் கவனம் செலுத்தவும்.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>[%1] தலைப்பில் ஒரு கட்டுரை எழுத உதவுங்கள், அதில் [தெளிவான அமைப்பு மற்றும் பொருள் நிறைந்த உள்ளடக்கம்] இருக்க வேண்டும்.</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>செயற்கை நுண்ணறிவு</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>[%1] தலைப்பில் ஒரு குறிப்புரை எழுத உதவுங்கள், அது [PPT உருவாக்கத்திற்கு] பயன்படுத்தப்படும்.</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>[%1] பற்றி ஒரு அறிவிப்பை எழுத உதவுங்கள், பெறுநர் [அனைத்து ஊழியர்கள்] மற்றும் அனுப்புநர் [நிர்வாகத் துறை].</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>தேசிய விடுமுறை</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>[%1] பற்றி ஒரு ஆராய்ச்சி அறிக்கையை எழுத உதவுங்கள், குறைந்தபட்சம் [நிலை விளக்கம், பிரச்சினை பகுப்பாய்வு, எதிர்நடவடிக்கைகள் மற்றும் பரிந்துரைகள், ஆராய்ச்சி முடிவுகள்] ஆகியவை இருக்க வேண்டும்.</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>[%1] தலைப்பில் [நிறுவனத் தலைவர்களுக்காக] ஒரு பேருரையை எழுத உதவுங்கள், அதில் [தெளிவான அமைப்பு மற்றும் உயிரோட்டமான மொழி] தேவை.</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>எனது சமீபத்திய வேலையின் சுருக்கத்தை எழுத [%1] மற்றும் [முடிவுகள்] ஆகியவற்றை உள்ளடக்கி, [முறையான] தொனியில் எனக்கு உதவு.</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>வேலை உள்ளடக்கம்</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>[%1] தலைப்பில் ஒரு பொது ட்வீட்டை எழுத உதவு, [தெளிவான அமைப்பு] மற்றும் [ஓய்வான] தொனி தேவை.</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>இந்த செயல்பாட்டை உள்ளீட்டு முறையை மறுதொடக்கம் செய்த பிறகு மட்டுமே பயன்படுத்த முடியும். பயிற்சி பின்வருமாறு:
+1. பணிப்பட்டியில் உள்ள உள்ளீட்டு முறை ஐகானில் வலது-சொடுக்கு செய்க.
+2. &quot;மறுதொடக்கம்&quot; (Restart) என்பதைச் சொடுக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>சரி</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>நகலெடுக்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>தற்போதைய மாதிரி: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>தற்போது மாதிரி இல்லை</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>கட்டமைப்புக்குச் செல்  </translation>
+    </message>
+    <message>
         <source>Modify the content, change the tone…</source>
-        <translation>உள்ளடக்கத்தை மாற்றவும், தொனியை மாற்றவும்…</translation>
+        <translation>உள்ளடக்கத்தை மாற்றி, தொனியை மாற்றவும்…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
-        <translation>நிரப்புவது தோல்வியடைந்தது</translation>
+        <translation>நிரப்புதல் தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>உள்ளீட்டுப் பெட்டி தேர்ந்தெடுக்கப்படவில்லை, உள்ளீட்டுப் பெட்டியைத் தேர்ந்தெடுத்து மீண்டும் நிரப்பவும்.</translation>
+        <translation>உள்ளீட்டு பெட்டி தேர்ந்தெடுக்கப்படவில்லை, உள்ளீட்டு பெட்டியைத் தேர்ந்தெடுத்து மீண்டும் நிரப்பவும்.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>சரி</translation>
     </message>
@@ -4822,162 +1121,130 @@ text：</source>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>கோப்பு மேலாளர்</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>அஞ்சல்</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>நாட்காட்டி</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
-        <translation>இணைய உலாவி</translation>
+        <translation>வலை உலாவி</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
         <translation>உரை திருத்தி</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
         <translation>திரைப்பிடிப்பு</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
         <translation>குரல் குறிப்புகள்</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
-        <translation>ஆவணப் பார்வையாளர்</translation>
+        <translation>ஆவண காட்டி</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
-        <translation>பயன்பாட்டுக் கடை</translation>
+        <translation>பயன்பாட்டு கடை</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
         <translation>கையேடு</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
-        <translation>WPS எழுத்தாளர்</translation>
+        <translation>WPS எழுதி</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
         <translation>WPS விரிதாள்கள்</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
         <translation>WPS விளக்கக்காட்சி</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
-        <translation>Foxit PDF திருத்தி</translation>
+        <translation>Foxit PDF எடிட்டர்</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo ஆவணம் 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
-        <translation>Yozo Office 2024</translation>
+        <translation>Yozo ஆபிஸ் 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
         <translation>Yozo விளக்கக்காட்சி 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
         <translation>Yozo தாள் 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
         <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
         <translation>Wechat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
         <translation>WXWork</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -4985,410 +1252,380 @@ text：</source>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI ஒரு டெஸ்க்டாப் ஸ்மார்ட் உதவியாளர், உங்கள் தனிப்பட்ட உதவியாளர்! நீங்கள் உரை அல்லது குரல் மூலம் அதுடன் தொடர்பு கொள்ளலாம், அது கேள்விகளுக்கு பதிலளிக்க, தகவல்களை வழங்கி, உங்கள் விவரங்களின் அடிப்படையில் படங்களை உருவாக்க உதவும்.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI பின்தொடர்/எழுது</translation>
+        <translation>UOS AI தொடர்பு/எழுதுதல்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>தலைப்பிடப்படாதது</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>வணக்கம், நான் UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">AI எழுத்து</translation>
+        <translation>AI எழுத்து</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>முடிவற்ற உந்தனை, கவலையற்ற எழுத்து</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆவணத்தின் தலைப்பையும் தேவைகளையும் உள்ளிடவும், UOS AI உருவாக்கத்தை முடிக்க உங்களுக்கு உதவும்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">AI மொழிபெயர்ப்பு</translation>
+        <translation>AI மொழிபெயர்ப்பு</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">உங்கள் மொழிபெயர்ப்பு உதவியாளர், பல மொழிகளில் தேர்ச்சி பெற்றவர்.</translation>
+        <translation>உங்கள் மொழிபெயர்ப்பு உதவியாளர், பல மொழிகளில் தேர்ச்சி பெற்றது.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>மொழிபெயர்க்க வேண்டிய உள்ளடக்கத்தை உள்ளிடவும் மற்றும் இலக்கு மொழியைக் குறிப்பிடவும்; இயல்புநிலை இலக்கு மொழி சீனம்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">தனிப்பட்ட அறிவு உதவியாளர்</translation>
+        <source>AI Knowledge Base</source>
+        <translation>AI அறிவுத்தளம்</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">உங்கள் தனிப்பட்ட அறிவு தளத்தின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கிறது.</translation>
+        <translation>உங்கள் தனிப்பட்ட அறிவுத்தளத்தின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கிறது.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>அறிவுத்தளத்தின் அடிப்படையில் கேள்விகள் கேளுங்கள்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">MCP சர்வர்</translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP&amp;திறன்கள்</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>உள்ளமைக்கப்பட்ட பொதுவான MCP &amp; திறன்கள், தனிப்பயன் கருவி இறக்குமதியை ஆதரிக்கிறது, உரையாடலுக்கு கருவிகளை சுதந்திரமாக தேர்வு செய்யவும்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>தயவு செய்து MCP&amp;Skills கட்டளைகளை உள்ளிடவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>மைக்ரோஃபோன் எதுவும் கண்டறியப்படவில்லை</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>ஸ்பீக்கர் எதுவும் கண்டறியப்படவில்லை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>அறிவாற்றல் ரூட்டிங்</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆன்லைன் தேடல்</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">தனிப்பயன்</translation>
+        <translation>தனிப்பயன்</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>தனிப்பட்ட வரிசைப்படுத்தல்</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Lark ஒருங்கிணைப்பு அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>DingTalk ஒருங்கிணைப்பு அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>டெலிகிராம் ஒருங்கிணைப்பு அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>டிஸ்கோர்டு ஒருங்கிணைப்பு அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>QQ ஒருங்கிணைப்பு அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>தேவை</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>விருப்பம்</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>ரத்துசெய்</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>உறுதிப்படுத்து</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>கட்டமைப்பு வழிகாட்டி &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>IM ஒருங்கிணைப்பு</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>மூன்றாம் தரப்பு IM ஒருங்கிணைப்பு</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>செய்தி முன்னனுப்பு சேவையை இயக்கு</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>இயக்கிய பிறகு, UOS AI கட்டமைக்கப்பட்ட Lark, DingTalk, QQ, Telegram மற்றும் Discord பாட்களில் இருந்து செய்திகளைப் பெறும். பிறகு நீங்கள் உங்கள் IM கிளையண்டில் நேரடியாக UOS AI உடன் தொடர்பு கொள்ளலாம்.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>இயக்கிய பிறகு, UOS AI கட்டமைக்கப்பட்ட Lark, DingTalk மற்றும் QQ பாட்களில் இருந்து செய்திகளைப் பெறும். பிறகு நீங்கள் உங்கள் IM கிளையண்டில் நேரடியாக UOS AI உடன் தொடர்பு கொள்ளலாம்.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
-        <translation>அதை உள்ளீட்டு புலத்தில் செருகவும்</translation>
+        <translation>உள்ளீட்டு புலத்தில் செருகவும்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">பிழை</translation>
+        <translation>பிழை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished">சரி</translation>
+        <translation>சரி</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">புதிய உரையாடல்</translation>
+        <translation>புதிய உரையாடல்</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">அட்டவணையை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">மார்க்கெட்டிங் துறையுடன் பிற்பகல் 2 மணி முதல் 5 மணி வரை கூட்டத்தை அட்டவணையிடவும்.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">மன்னிக்கவும், பொருந்தக்கூடிய செயல்பாடுகள் எதுவும் கிடைக்கவில்லை.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">உள்ளீட்டு உள்ளடக்கத்திலிருந்து தொடர்புடைய அளவுருக்களை பகுப்பாய்வு செய்து கீழ்காணும் JSON வடிவத்தில் உள்ள அட்டவணை வார்ப்புருவுடன் பொருத்தி, பிற சம்பந்தமற்ற தகவல்களைத் தவிர்த்து JSON உள்ளடக்கத்தை மட்டும் வெளியீடு செய்யவும்.
-
-அட்டவணை வார்ப்புரு வடிவம்:
-
-json
-{&quot;subject&quot;: &quot;தலைப்பு&quot;, &quot;startTime&quot;: &quot;அட்டவணை தொடக்க நேரம், வடிவம்: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;அட்டவணை முடிவு நேரம், வடிவம்: yyyy-MM-ddThh:mm:ss&quot;}
-
-உள்ளீடு: %1
-
-தற்போதைய நேரம்: %2</translation>
+        <translation>வெறுமை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
-        <translation>MCP சர்வர் சேர்க்கவும்</translation>
+        <translation>MCP சேவையகத்தைச் சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
-        <translation>MCP சர்வர் திருத்தவும்</translation>
+        <translation>MCP சேவையகத்தைத் திருத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
-        <translation>JSON அமைப்பு:</translation>
+        <translation>JSON கட்டமைப்பு:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
-        <translation>MCP JSON அமைப்புக் குறியீட்டை உள்ளீட்டுப் பெட்டியில் ஒட்டவும்.</translation>
+        <translation>MCP JSON கட்டமைப்பு குறியீட்டை உள்ளீடு பெட்டியில் ஒட்டவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
-        <translation>விவரிக்கவும்</translation>
+        <translation>விளக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>விரைவு தேடல் கருவிகளை எளிதாக்க MCP சேவையக செயல்பாடுகளை விவரிக்கவும்</translation>
+        <translation>விரைவான தேடல் கருவிகளை எளிதாக்க MCP சேவையக செயல்பாடுகளை விளக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
-        <translation>ரத்து செய்</translation>
+        <translation>ரத்துசெய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation>உறுதிப்படுத்து</translation>
     </message>
@@ -5396,673 +1633,481 @@ json
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>தயவு செய்து மாதிரி IDயை உள்ளிடவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>தயவு செய்து மாதிரி பெயரை உள்ளிடவும்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
-        <translation>இந்த செயல்பாட்டை முழுமையாக பயன்படுத்துவதற்கு முன் சாதனத்தை மீண்டும் துவக்க வேண்டும்.</translation>
+        <translation>இந்தச் செயல்பாட்டை முழுமையாகப் பயன்படுத்த சாதனத்தை மறுதொடக்கம் செய்ய வேண்டும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>தரவு சேகரித்து பகுப்பாய்வு செய்கிறது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>தரவு சேகரிப்பு மற்றும் பகுப்பாய்வு முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>ஆராய்ச்சி முடிந்தது. %1 குறிப்புகள் சேகரிக்கப்பட்டன:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>தேடல் வெற்றி பெற்றது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>பிழை: தகவல் எதுவும் கிடைக்கவில்லை!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>பொருத்தமான ஆவணங்கள் எதுவும் கிா்க்கப்படவில்லை</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">பரிசு பெற்ற பிறகு, அசல் Baidu மாதிரி மற்றும் iFlytek மாதிரி DeepSeek உடன் மாற்றப்படும்</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">பின்னர் கைமுறையாக சேகரிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">சோதனை கணக்கு</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">இலவச கணக்கைப் பெறவும்</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">UOS AI இல் நுழையவும்</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">பெறுகிறது...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">உடனே பயன்படுத்தவும்</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">கணக்கு நிலையை சரிபார்க்கிறது...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">DeepSeek கணக்கு கோரிக்கை தோல்வியடைந்தது!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">தயவு செய்து நெட்வொர்க்கை சரிபார்த்து பின்னர் மீண்டும் முயற்சிக்கவும்！</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">DeepSeek கணக்கு வெற்றிகரமாக கோரப்பட்டது!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">தயவு செய்து நெட்வொர்க்கை சரிபார்த்து மீண்டும் முயற்சிக்கவும் அல்லது பின்னர் UOS AI அமைப்புகளில் கைமுறையாக கோரிக்கை செய்யவும்</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI முழுமையாக DeepSeek இல் ஒருங்கிணைக்கப்பட்டுள்ளது</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">இலவச கணக்கு செயல்பாடு முடிவடைந்தது.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">வந்து அதை அனுபவிக்கவும்!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">வந்து உங்கள் கணக்கை கோரவும்!</translation>
+        <translation>உள்ளூர் அறிவுத்தளம்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
         <translation>முன்னெச்சரிக்கைகள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>டீப்சீக் உள்ளூர் மாதிரிக்கு கணினி உள்ளமைவுக்கு சில தேவைகள் உள்ளன. பரிந்துரைக்கப்பட்டதை விட உள்ளமைவு குறைவாக இருந்தால், அனுபவம் பாதிக்கப்படும்.</translation>
+        <translation>DeepSeek உள்ளூர் மாதிரிக்கு கணினி அமைப்பில் சில தேவைகள் உள்ளன. பரிந்துரைக்கப்பட்ட அமைப்பை விட குறைவாக இருந்தால், அனுபவம் பாதிக்கப்படும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
-        <translation>பரிந்துரைக்கப்பட்ட உள்ளமைவு</translation>
+        <translation>பரிந்துரைக்கப்பட்ட அமைப்பு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation type="unfinished">&lt;b&gt;推荐配置&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU：&lt;/b&gt;高性能多核CPU（如Intel i5/i7或AMD Ryzen 5/7系列），主频3.0 GHz以上&lt;br&gt;&lt;b&gt;GPU：&lt;/b&gt;显存4GB以上&lt;br&gt;&lt;b&gt;内存：&lt;/b&gt;8GB及以上&lt;br&gt;&lt;b&gt;硬盘：&lt;/b&gt;固态硬盘（SSD）并预留5GB以上空间</translation>
+        <translation>&lt;b&gt;பரிந்துரைக்கப்பட்ட அமைப்பு&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;உயர் செயல்திறன் கொண்ட பல-கோர் CPU (Intel i5/i7 அல்லது AMD Ryzen 5/7 தொடர் போன்றவை), 3.0 GHz க்கும் அதிகமான கடிகார வேகத்துடன்.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;4GB க்கும் அதிகமான வீடியோ நினைவகத்துடன்.&lt;br&gt;&lt;b&gt;நினைவகம்: &lt;/b&gt;8GB மற்றும் அதற்கு மேல்.&lt;br&gt;&lt;b&gt;ஹார்ட் டிரைவ்: &lt;/b&gt;குறைந்தபட்சம் 5GB இலவச இடம் ஒதுக்கப்பட்ட திட நிலை இயக்கி (SSD).</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
-        <translation>பின்னர் நிறுவவும்</translation>
+        <translation>பிறகு நிறுவு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
-        <translation>நிறுவலை உறுதிப்படுத்தவும்</translation>
+        <translation>நிறுவலை உறுதிப்படுத்து</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (ஆண்டு-மாதம்-தேதி மணி-நிமிடம் வாரம்)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
-        <translation>பின்வரும் பயன்பாடுகளில் FollowAlong-ஐ மறைக்கவும்</translation>
+        <translation>பின்வரும் பயன்பாடுகளில் தொடர்புகொள்ளும் பயன்முறையை மறை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
-        <translation>MCP சேவையக அம்சங்களை இயக்குதல்</translation>
+        <translation>MCP சர்வர் அம்சங்களை இயக்குகிறது</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>சில மூன்றாம் தரப்பு MCP சேவையக அம்சங்கள் சில அபாயங்களைக் கொண்டுள்ளன. தயவுசெய்து அவற்றை கவனமுடன் பயன்படுத்தவும். இந்த சேவையை நீங்கள் இயக்கினால், ஒரு உள்ளமைக்கப்பட்ட கருவி தேவையான சார்புகளை கண்டறிந்து தானாக பதிவிறக்கும். இந்த பதிவிறக்க செயல்முறை தரவுக் கட்டணங்களை ஏற்படுத்தும். தயவுசெய்து இந்த அபாயங்களை உணர்ந்து கவனமுடன் முன்னேறவும்.</translation>
+        <translation>சில மூன்றாம் தரப்பு MCP சர்வர் அம்சங்களில் சில ஆபத்துகள் உள்ளன. தயவு செய்து எச்சரிக்கையுடன் பயன்படுத்தவும். இந்த சேவையை இயக்கினால், உள்ளமைக்கப்பட்ட கருவி தேவையான சார்புகளைக் கண்டறிந்து தானாகவே பதிவிறக்கம் செய்யும். இந்த பதிவிறக்க செயல்முறை தரவு கட்டணத்தை ஏற்படுத்தும். தயவு செய்து இந்த ஆபத்துகளை அறிந்து எச்சரிக்கையுடன் முன்னேறவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
-        <translation>நான் புரிந்துகொண்டேன் மற்றும் இந்த சேவையைப் பயன்படுத்த ஒப்புக்கொள்கிறேன்</translation>
+        <translation>இந்த சேவையைப் பயன்படுத்த புரிந்துகொண்டு ஒப்புக்கொள்கிறேன்</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
-        <translation>ரத்து செய்</translation>
+        <translation>ரத்துசெய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
         <translation>உறுதிப்படுத்து</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">ஆதரிக்கப்படும் கோப்புகள்</translation>
-    </message>
-</context>
-<context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">ஆதரிக்கப்படும் கோப்புகள்</translation>
+        <translation>ஆதரிக்கப்படும் கோப்புகள்</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>ஸ்கிரீன் ஷாட் கேள்வி-பதிலை இயக்க UOS ஸ்கிரீன் ரெக்கார்டரை 6.6 அல்லது அதற்கு மேற்பட்ட பதிப்பிற்கு மேம்படுத்தி உங்கள் கணினியை மறுதொடக்கம் செய்யவும்.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>கோப்பு வடிவம் ஆதரிக்கப்படவில்லை.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>படம் 15 MB அளவு வரம்பை மீறியுள்ளது.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>கோப்பு 100 MB அளவு வரம்பை மீறியுள்ளது.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>பிணைய பிழை</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished">உங்கள் இலவச கணக்கு காலாவதியாகிவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
+        <translation>உங்கள் இலவச கணக்கின் காலாவதி காலம் முடிவடைந்தது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உளமைக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished">உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
+        <translation>உங்கள் இலவச கணக்கின் ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உளமைக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">உரையாடலுக்கான உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
+        <translation>உங்கள் இலவச கணக்கின் அரட்டைக்கான ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உளமைக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">இப்போது இல்லை</translation>
+        <translation>இப்போது இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">கடன் கோரிக்கைகளைக் கோருங்கள்</translation>
+        <translation>கிரெடிட்களைப் பெறுங்கள்</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">இலவச கடன் வழங்கப்பட்டது</translation>
+        <translation>இலவச கிரெடிட்கள் வழங்கப்பட்டன</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>உங்கள் சோதனை கணக்கிற்க்கான இலவச உருவாக்க கிரெடிட்களை நீங்கள் பயன்படுத்திவிட்டீர்கள். இந்த மாதத்திற்கு செல்லுபடியாகும் கூடுதல் 200 இலவச கிரெடிட்களை நாங்கள் உங்களுக்கு வழங்கியுள்ளோம். மேலும் அம்சங்களை ஆராய்ந்து, UOS AI இன் வரம்பற்ற திறன்களை திறக்கவும்!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">வெற்றிகரமாக கோரப்பட்டது</translation>
+        <translation>வெற்றிகரமாக பெறப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">கணக்கு கிடைக்கவில்லை</translation>
+        <translation>கணக்கு கிாிக்கப்படவில்லை</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை கணக்குகளை மட்டுமே ஆதரிக்கிறது</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">நீங்கள் ஏற்கனவே நிகழ்வில் பங்கேற்றுள்ளீர்கள், வெகுமதியை மீண்டும் கோர முடியாது.</translation>
+        <translation>நீங்கள் ஏற்கனவே இந்த நிகழ்வில் பங்கேற்றுள்ளீர்கள், எனவே பரிசை மீண்டும் பெற முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">சேவையக கணினி பிழை</translation>
+        <translation>சேவையக கணினி பிழை</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">கோரிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</translation>
+        <translation>பெறுவதில் தோல்வி. தயவு செய்து மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">படத்தை உருவாக்கவும்</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">பட உள்ளடக்கத்தை விவரிக்கவும்</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (ஆண்டு-மாதம்-தேதி வாரம்)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished">இலவச சோதனை கணக்கைப் பெறவும்</translation>
+        <translation>ஒரு இலவச சோதனை கணக்கைப் பெறுங்கள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">கணக்கைப் பெறுக</translation>
+        <translation>கணக்கைப் பெறு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished">ஒரு கணக்கைப் பெறுவது நீங்கள் நிகழ்வின் விதிமுறைகளைப் புரிந்துகொண்டு ஒப்புக்கொள்கிறீர்கள் என்பதைக் குறிக்கிறது,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;நிகழ்வு விவரங்கள்&gt;&lt;/a&gt;</translation>
+        <translation>ஒரு கணக்கைப் பெறுவது என்பது நிகழ்வின் விதிமுறைகளை நீங்கள் புரிந்துகொண்டு ஒப்புக்கொள்வதைக் குறிக்கிறது,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;நிகழ்வு விவரங்கள்&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI சோதனை கணக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>சேமிக்க முடியவில்லை, பிறகு மீண்டும் முயற்சிக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை கணக்கு வெற்றிகரமாகப் பெறப்பட்டது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை கணக்கின் பயன்பாட்டு எண்ணிக்கை மற்றும் காலம் வரையறுக்கப்பட்டுள்ளது, தயவு செய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை சரியான நேரத்தில் கட்டமைக்கவும்! விவரங்களுக்கு நிகழ்வு விவரங்களைப் பார்க்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">சோதனை கணக்குகளுக்கான ஆங்கில ஆதரவு திருப்திகரமாக இல்லை. மேலும் சோதனை கணக்கின் பயன்பாடுகள் மற்றும் கால அளவு கட்டுப்படுத்தப்பட்டுள்ளன. தயவுசெய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை உடனடியாக அமைக்கவும்!</translation>
+        <translation>சோதனை கணக்குகளுக்கான ஆங்கில ஆதரவு திருப்திகரமாக இல்லை. மேலும், சோதனை கணக்கின் பயன்பாட்டு எண்ணிக்கை மற்றும் காலம் வரையறுக்கப்பட்டுள்ளது. தயவு செய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை சரியான நேரத்தில் கட்டமைக்கவும்!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>சோதனையைத் தொடங்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>இலவச கணக்கு நடவடிக்கை முடிவடைந்தது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>சர்வருடன் இணைக்க முடியவில்லை, தயவு செய்து உங்கள் நெட்வொர்க்கை சரிபார்க்கவும் அல்லது பிறகு மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>சர்வருடன் இணைக்க முடியவில்லை, தயவு செய்து உங்கள் நெட்வொர்க்கை சரிபார்க்கவும் அல்லது பிறகு மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>சர்வர் சுமை அல்லது நெட்வொர்க் பிரச்சினைகள் காரணமாக கோரிக்கை நேரம் முடிந்தது. தயவு செய்து பிறகு மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished"></translation>
+        <translation>இணைப்பு தோல்வியடைந்தது, தயவு செய்து நிரப்பப்பட்ட தகவல்களைச் சரிபார்க்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">செயல் ரத்து செய்யப்பட்டது.</translation>
+        <translation>செயல்பாடு ரத்து செய்யப்பட்டது.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
-        <translation>இப்போது பேசவும்</translation>
+        <translation>இப்போது பேசுங்கள்</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
-        <translation>குறைந்த உள்ளீட்டு அளவு</translation>
+        <translation>உள்ளீட்டு ஒலி குறைவாக உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
         <translation>அமைப்புகள்</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
-        <translation>பிணையம் கிடைக்கவில்லை</translation>
+        <translation>புதிதாகச் சேர்க்கப்பட்ட கோப்புகளைப் பயன்படுத்துவதற்கு முன் முன்சிகரிப்பு தேவைப்படும், மேலும் தரவு செயலாக்க செயல்முறையின் போக்கில், இது கணிசமான கணினி மற்றும் சேமிப்பக வளங்களைப் பயன்படுத்தக்கூடும். தரவு நீக்கப்பட்ட பிறகு தரவு செயலாக்கம் நிறுத்தப்படும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">புதிதாக சேர்க்கப்பட்ட கோப்புகள் பயன்படுத்துவதற்கு முன் முன் செயலாக்கம் தேவைப்படுகின்றன, மேலும் தரவு செயலாக்க செயல்பாட்டில், கணக்கிடுதல் மற்றும் சேமிப்பு வளங்கள் கணிசமாக பயன்படுத்தப்படலாம். தரவை நீக்கிய பின் தரவு செயலாக்கம் நிறுத்தப்படும்.</translation>
+        <translation>AI யிடம் கேளுங்கள்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
-        <translation>AI ஐ கேள்</translation>
+        <translation>இது பற்றி என்ன கேட்க வேண்டும்?</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
-        <translation>இதைப் பற்றி என்ன கேட்க வேண்டும்?</translation>
+        <translation>இந்த பயன்பாட்டை மறுதொடக்கம் செய்யும் வரை மறைக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
-        <translation>இந்த பயன்பாட்டை மீண்டும் தொடங்கும் வரை மறைக்கவும்</translation>
+        <translation>இந்த பயன்பாட்டை மறுதொடக்கம் செய்யும் வரை மறை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">இந்த பயன்பாட்டில் முடக்கு</translation>
+        <translation>இந்த பயன்பாட்டில் முடக்கு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">உலகளவில் முடக்கு</translation>
+        <translation>முழுமையாக முடக்கு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>மீண்டும் இயக்க &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;அமைப்புகள்&lt;/a&gt; செல்லவும்.</translation>
+        <translation>இதை மீண்டும் இயக்க &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;அமைப்புகளுக்கு&lt;/a&gt; செல்லவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>அறிவுத்தளத்தில் தேடுகிறது</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>தேடல் முடிநுதுவிட்டது · %1s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>தேடல் முடிநுதுவிட்டது · %1m%2s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>குறிப்புகள்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">இந்த அறிவு தள கோப்பை நீக்க விரும்புகிறீர்களா?</translation>
+        <translation>இந்த அறிவுத்தள கோப்பை நிச்சயமாக நீக்க வேண்டுமா?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">சேர்</translation>
+        <translation>சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">முதலில் உள்ளமைவு மாதிரி செருகுநிரல்களை நிறுவவும்</translation>
+        <translation>தயவு செய்து முதலில் உட்பொதிக்கப்பட்ட மாதிரி சொருகிகளை நிறுவவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished">அறிவு தள மேலாண்மை</translation>
+        <translation>அறிவுத்தள மேலாண்மை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">இந்த அம்சத்திற்கு அதிக வன்பொருள் வளங்கள் தேவைப்படுகின்றன, மேலும் குறிப்பு அளவுகோல் உள்ளமைவு: CPU Intel 11வது தலைமுறை i7 அல்லது அதற்கு மேல்; நினைவகம் 16GB அல்லது அதற்கு மேல்; NVIDIA கிராபிக்ஸ் கார்டு மற்றும் 10 தொடர் அல்லது அதற்கு மேல் இருப்பது சிறந்த விருப்பமாகும். உள்ளமைவு மிகவும் குறைவாக இருந்தால், பின்னடைவு மற்றும் துல்லியமற்ற பதில்கள் போன்ற சிக்கல்கள் ஏற்படலாம்.</translation>
+        <translation>இந்த அம்சத்திற்கு அதிக வன்பொருள் வளங்கள் தேவைப்படுகின்றன, மேலும் குறிப்பிட்ட அளவீட்டு அமைப்பு: சிபியு இன்டெல் 11-ஆம் தலைமுறை ஐ7 அல்லது அதற்கு மேல்; 16ஜிபி அல்லது அதிக நினைவகம்; என்விடியா கிராபிக்ஸ் கார்டு மற்றும் 10 தொடர் அல்லது அதற்கு மேல் இருப்பது சிறந்த விருப்பமாகும். அமைப்பு மிகக் குறைவாக இருந்தால், தாமதம் மற்றும் துல்லியமற்ற பதில்கள் போன்ற பிரச்சினைகள் இருக்கலாம்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">இங்கே, தனிப்பட்ட அறிவு உதவியாளரின் அறிவுத் தளத்தை வரையறுக்கலாம், மேலும் தனிப்பட்ட அறிவு உதவியாளர் கீழே சேர்க்கப்பட்ட கோப்புகளின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கும்.</translation>
+        <translation>இங்கே, தனிப்பட்ட அறிவு உதவியாளரின் அறிவுத்தளத்தை வரையறுக்க முடியும், மேலும் தனிப்பட்ட அறிவு உதவியாளர் கீழே சேர்க்கப்பட்ட கோப்புகளின் அடிப்படையில் கேள்களுக்கு பதிலளிப்பார்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished">முடிந்தது</translation>
+        <translation>முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>ஏதுமில்லை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">கோப்பு ஏற்கனவே உள்ளது</translation>
+        <translation>கோப்பு ஏற்கனவே உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">%1 கோப்பு ஏற்கனவே உள்ளது மற்றும் மீண்டும் சேர்க்க முடியாது. மீண்டும் சேர்க்கும் முன் கோப்பு பெயரை மாற்றவும் அல்லது இருக்கும் கோப்பை நீக்கவும்</translation>
+        <translation>%1 கோப்பு ஏற்கனவே உள்ளது, மீண்டும் சேர்க்க முடியாது. தயவு செய்து கோப்பு பெயரை மாற்றவும் அல்லது மீண்டும் சேர்க்கும் முன் இருக்கும் கோப்பை நீக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">அனைத்து கோப்புகள்</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">பயன்பாட்டைத் தொடங்கவும் அல்லது மூடவும்</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, இசை, ஆல்பம், கட்டுப்பாட்டு மையம், பதிவு பார்வையாளர் ...</translation>
+        <translation>அனைத்து கோப்புகள்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>நிறுவு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished"></translation>
+        <translation>நிறுவல் நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">நிறுவல் நீக்கு</translation>
+        <translation>புதுப்பிப்பு</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">உள்ளூர் மாதிரி</translation>
+        <translation>உள்ளமை மாதிரி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">நிறுவப்பட்டவுடன், UOS AI ஐப் பயன்படுத்த இணைய இணைப்பு தேவையில்லை.</translation>
+        <translation>நிறுவப்பட்ட பிறகு, UOS AI ஐப் பயன்படுத்த இணைய இணைப்பு தேவையில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">திறந்த மூல சமூகத்திலிருந்து உங்கள் சொந்த பொறுப்பில் பதிவிறக்கவும். நிறுவிய பிறகு UOS AI உதவியாளரில் பயன்படுத்தவும்.</translation>
+        <translation>உங்கள் சொந்த ஆபத்தில் திறந்த மூல சமூகத்திலிருந்து பதிவிறக்கவும். நிறுவலுக்குப் பிறகு UOS AI உதவியாளரில் இதைப் பயன்படுத்தவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">UOS AI பெரிய மாதிரி</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">உட்பொதிக்கப்பட்ட செருகுநிரல்கள்</translation>
+        <translation>உட்பொதிக்கப்பட்ட செருகுநிரல்கள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">மாதிரி நிறுவப்பட்ட பிறகு, கணினி உதவியாளர் மற்றும் தனிப்பட்ட அறிவு உதவியாளர் இயக்கப்படலாம்.</translation>
+        <translation>மாதிரி நிறுவப்பட்ட பிறகு, கணினி உதவியாளர் மற்றும் தனிப்பட்ட அறிவு உதவியாளர் இயங்க முடியும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP சேவையகம் கிடைக்கவில்லை</translation>
     </message>
@@ -6070,96 +2115,76 @@ json
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation>&apos;mcpServers&apos; புலம் இல்லை.</translation>
+        <translation>&apos;mcpServers&apos; புலம் காணவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
-        <translation>பழைய தனிப்பயன் சேவையக அமைப்பை அகற்ற முடியவில்லை, சேவையக பெயர்: %0</translation>
+        <translation>பழைய தனிப்பயன் சேவையக கட்டமைப்பை அகற்றுவது தோல்வியடைந்தது, சேவையக பெயர்: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
-        <translation>சரியான mcp சேவையகம் இல்லை.</translation>
+        <translation>செல்லுபடியான mcp சேவையகம் இல்லை.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
         <translation>நகல் MCP சேவையக பெயர்: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
         <translation>MCP சேவையக பெயர் &apos;%1&apos; ஏற்கனவே உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
         <translation>சேவையக பெயர் &apos;%1&apos; ஏற்கனவே உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
-        <translation>தனிப்பயன் அமைப்புக் கோப்பை எழுத அதை திறக்க முடியவில்லை</translation>
+        <translation>எழுதுவதற்காக தனிப்பயன் கட்டமைப்பு கோப்பைத் திறப்பது தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation>சேவையகம் &apos;%1&apos; ஒரு தனிப்பயன் சேவையகம் அல்ல அல்லது இல்லை</translation>
+        <translation>சர்வர் &apos;%1&apos; ஒரு தனிப்பயன் சர்வர் அல்ல அல்லது இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
-        <translation>தனிப்பயன் சேவையகம் எதுவும் காணப்படவில்லை.</translation>
+        <translation>தனிப்பயன் சர்வர் எதுவும் கிடைக்கவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
-        <translation>சேவையகம் &apos;%1&apos; காணப்படவில்லை.</translation>
+        <translation>சர்வர் &apos;%1&apos; காணப்படவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
-        <translation>url புலம் காலியாக இருக்க முடியாது.</translation>
+        <translation>url புலம் காலியாக இருக்கக்கூடாது.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
-        <translation>command புலம் காலியாக இருக்க முடியாது.</translation>
+        <translation>கட்டளை புலம் காலியாக இருக்கக்கூடாது.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation>&apos;command&apos; அல்லது &apos;url&apos; புலம் இல்லை</translation>
+        <translation>&apos;கட்டளை&apos; அல்லது &apos;url&apos; புலம் காணவில்லை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation>நிறுவு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation>அகற்று</translation>
+        <translation>நிறுவல் நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation>புதுப்பிக்கவும்</translation>
+        <translation>புதுப்பிக்க</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>உள்ளமைக்கப்பட்டது</translation>
     </message>
@@ -6167,47 +2192,38 @@ json
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP சர்வர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>அனைத்தும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
-        <translation>உள்ளமைக்கப்பட்ட</translation>
+        <translation>உள்ளமைக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">தனிப்பயன்</translation>
+        <translation>தனிப்பயன்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
-        <translation>MCP சர்வர் சேர்க்கவும்</translation>
+        <translation>MCP சர்வர் சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
-        <translation>%1 ஐ நீக்க உறுதி செய்யவா?</translation>
+        <translation>நீக்குதலை உறுதிப்படுத்தவும் %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>நீக்கிய பிறகு, இந்த சர்வர் பயன்படுத்த முடியாது. கவனமாக செயல்படவும்.</translation>
+        <translation>நீக்கிய பிறகு, இந்த சர்வர் கிடைக்காது. எச்சரிக்கையுடன் முன்னேறுங்கள்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
-        <translation>ரத்து செய்</translation>
+        <translation>ரத்துசெய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
         <translation>நீக்கு</translation>
     </message>
@@ -6215,590 +2231,489 @@ json
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>Mcp சூழல்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP சர்வர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
-        <translation>UOS AI ஏஜெண்ட் நிறுவவும்</translation>
+        <translation>UOS AI ஏஜென்டை நிறுவவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
-        <translation>நிறுவிய பிறகு, MCP சர்வர் பயன்பாட்டுக்கு வரும்.</translation>
+        <translation>நிறுவலுக்குப் பிறகு, MCP சர்வர் கிடைக்கும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished">மாதிரி உள்ளமைவு</translation>
+        <translation>மாடல் கட்டமைப்பு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished">அறிவு தள மேலாண்மை</translation>
+        <translation>அறிவுத்தள மேலாண்மை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI பின்தொடர்தல்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">பயனர் ஒப்பந்தம்</translation>
+        <translation>பயனர் ஒப்பந்தம்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">UOS AI பயனர் ஒப்பந்தம்</translation>
+        <translation>UOS AI பயனர் ஒப்பந்தம்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">படித்து ஒப்புக்கொண்டேன்</translation>
+        <translation>படித்து ஒப்புக்கொண்டேன்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">ப்ராக்ஸி அமைப்புகள்</translation>
+        <translation>ப்ராக்ஸி அமைப்புகள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>அமைப்புகளுக்குச் செல்லவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>இலவச கணக்கு செயல்பாடு முடிவடைந்தது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">அறிவு தளத்தில் சேர்க்க திசையாக்கம் மாதிரி சொருகியை நிறுவ வேண்டும். தயவுசெய்து பயன்பாட்டுக் கடையில் சென்று பதிவிறக்கி நிறுவவும்.</translation>
+        <translation>அறிவுத்தளத்தில் சேர்க்க வெக்டரயேசன் மாடல் சொருகியை நிறுவ வேண்டும். தயவு செய்து பயன்பாட்டு ஸ்டோருக்குச் சென்று பதிவிறக்கம் செய்து நிறுவவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation type="unfinished">நிறுவ வேண்டாம்</translation>
+        <translation>நிறுவ வேண்டாம்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation type="unfinished">உடனடியாக நிறுவு</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
+        <translation>உடனடியாக நிறுவவும்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelHubProvider</name>
     <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
         <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 1.5B</translation>
+        <translation>YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
         <source>YouRong 7B</source>
-        <translation type="unfinished">YouRong 7B</translation>
+        <translation>YouRong 7B</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
         <source>Get a free account</source>
-        <translation type="unfinished"></translation>
+        <translation>இலவச கணக்கு பெறுங்கள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
         <source>Add</source>
-        <translation type="unfinished">சேர்</translation>
+        <translation>சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
         <source>Online model</source>
-        <translation type="unfinished">ஆன்லைன் மாதிரி</translation>
+        <translation>ஆன்லைன் மாதிரி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
         <source>Done</source>
-        <translation type="unfinished">முடிந்தது</translation>
+        <translation>முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>ஏதுமில்லை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
-        <translation>நிறுவவும்</translation>
+        <translation>நிறுவு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>புதுப்பிக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
-        <translation>நிறுவல் நீக்கவும்</translation>
+        <translation>நிறுவல் நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
+        <source>Update</source>
+        <translation>புதுப்பிக்க</translation>
+    </message>
+    <message>
         <source>Cancel</source>
-        <translation>ரத்துசெய்</translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
-        <translation>சுமார் %1GB</translation>
+        <translation>%1ஜிபி பற்றி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>நிறுவுகிறது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>இந்த மாதிரியை நீக்க விரும்புகிறீர்களா?</translation>
+        <translation>இந்த மாதிரியை நிச்சயமாக நீக்க வேண்டுமா?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>ரத்துசெய்</translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>உறுதிப்படுத்தவும்</translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>சரிபார்க்கிறது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>சரி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>&apos;%0 பதிவிறக்கம் தோல்வியடைந்தது, மீண்டும் முயற்சிக்கவும்!&apos;</translation>
+        <translation>%0 பதிவிறக்கம் தோல்வியடைந்தது, தயவு செய்து மீண்டும் முயற்சிக்கவும்!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
-        <translation>இந்த மாதிரியை நிறுவுவதற்கு முன் &quot;எம்பெடிங் பிளக்-இன்கள்&quot; ஐ நிறுவவும்.</translation>
+        <translation>இந்த மாதிரியை நிறுவுவதற்கு முன்பு &quot;உட்பொதிக்கப்பட்ட செருகுநிரல்களை&quot; முதலில் நிறுவவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>இலக்கு கோப்புறை குப்பையில் போட முடியவில்லை, மீண்டும் முயற்சிக்கவும்!</translation>
+        <translation>இலக்கு கோப்புறை குப்பையில் போடுதல் தோல்வியடைந்தது, தயவு செய்து மீண்டும் முயற்சிக்கவும்!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
-        <translation>&apos;%1 விநாடிகள்&apos;</translation>
+        <translation>%1 நொடிகள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
-        <translation>&apos;%1 நிமிடங்கள்&apos;</translation>
+        <translation>%1 நிமிடங்கள்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
-        <translation>&apos;%1MB/%2GB பதிவிறக்கம் செய்யப்பட்டது, %3 மீதம் உள்ளது.&apos;</translation>
+        <translation>%1MB/%2GB பதிவிறக்கமானது, %3 மீதம்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished">இந்த மாதிரியை நீக்க விரும்புகிறீர்களா?</translation>
+        <translation>இந்த மாதிரியை நிச்சயமாக நீக்க வேண்டுமா?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>ரத்துசெய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>தவறான மாதிரி கணக்கு</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆதரவற்ற மாதிரி வகை</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>மாதிரி அரட்டை முடிவை ஆதரிக்காது</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>மாதிரி கிடைக்கிறது</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP பிழஈ: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>தெரியாத பிழை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished"></translation>
+        <translation>ப்ராக்ஸி அமைப்புகளுக்கு, தயவு செய்து கணினி ப்ராக்ஸி அமைப்புகளுக்குச் செல்லவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>அமைப்புகளுக்குச் செல்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>மாதிரியைத் திருத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">மாதிரியைச் சேர்க்கவும்</translation>
+        <translation>மாதிரியைச் சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">கணக்கு</translation>
+        <translation>கணக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished">தேவை, பல மாதிரிகளை வேறுபடுத்த</translation>
+        <translation>தேவை, பல மாதிரிகளை வேறுபடுத்த</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>வழங்குநர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished">APIKey</translation>
+        <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished"></translation>
+        <translation>தேவை, தயவு செய்து உள்ளிடவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished">களம்</translation>
+        <translation>டொமைன்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">இயக்கு</translation>
+        <translation>இயக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">தனிப்பயன்</translation>
+        <translation>தனிப்பயன்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">சேர்</translation>
+        <translation>சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished"></translation>
+        <translation>மாதிரி கிடைக்கிறதா என்று சோதிக்க, கணினி சோதனைத் தகவலை பெரிய மாதிரிக்கு அனுப்பும், இது சிறிதளவு டோக்கன்களைப் பயன்படுத்தும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ரத்துசெய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>பெயர் மற்றும் மாதிரி ஐடி நிரப்பப்பட வேண்டும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>சேமிப்பு தோல்வியடைந்தது, பிறகு மீண்டும் முயற்சிக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished">முடிந்தது</translation>
+        <translation>முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை வெற்றி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>மாதிரி சேவை கிடைக்கிறது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதி செய்</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">மல்டிமீடியா கட்டுப்பாடு</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (ஆண்டு-மாதம்-தேதி வாரம்)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">இசை வாசிக்க, நிலை கட்டுப்பாடு, தேடு...</translation>
+        <source>Searching for relevant information</source>
+        <translation>தொடர்புடைய தகவல்களைத் தேடுகிறது</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>%0 மூலங்களைக் குறிப்பிடுகிறது</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>%0 பக்கங்கள் கிடைத்தன</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>%0 உலாவுகிறது</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>பக்கம் %0</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">தரவு செயலாக்கத்தில்</translation>
+        <translation>தரவு செயலாக்கத்தில்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">தரவு செயலாக்க பிழை</translation>
+        <translation>தரவு செயலாக்க பிழை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">கோப்பு பிழை, செயலாக்க முடியவில்லை, தயவுசெய்து நீக்கவும்.</translation>
+        <translation>கோப்பு பிழை, செயலாக்க முடியவில்லை, தயவு செய்து நீக்கவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>வெளிக்கோடு உருவாக்குகிறது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>உங்களுக்காக வெளிக்கோடு உள்ளடக்கத்தை உருவாக்குகிறது.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>திருத்தக்கூடிய வெளிக்கோடு உருவாக்கப்பட்டுள்ளது. உறுதிப்படுத்திய பிறகு, ஆவணம் உருவாக்கத்திற்குச் செல்ல கீழே உள்ள நீல பட்டனை அழுத்தவும்.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>நீங்கள் ஒரு உள்ளூர் வெளிக்கோட்டை பதிவேற்றியுள்ளது கண்டறியப்பட்டது, தற்போது உங்களுக்காக வெளிக்கோடு உள்ளடக்கத்தை பாகுபாடு செய்கிறது.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>பதிவேற்றப்பட்ட உள்ளூர் வெளிக்கோடு கண்டறியப்பட்டது, தயவு செய்து உறுதிப்படுத்தவும்.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>பதிவேற்றப்பட்ட வெளிக்கோடு கோப்பை பாகுபாடு செய்ய முடியவில்லை, தயவு செய்து மீண்டும் பதிவேற்றவும்</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>வெளிக்கோடு உள்ளடக்கத்தை உருவாக்குவது தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>உங்கள் எழுத்துப் பணியைப் பொறுத்து, நான் **%1** க்காக பின்வரும் வெளிக்கோட்டை உருவாக்கியுள்ளேன்:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>நீங்கள் பதிவேற்றிய வெளிக்கோட்டை நான் பாகுபாடு செய்து, அதை **%1** என அமைத்துள்ளேன்:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+வெளிக்கோட்டில் மொத்தம் %1 பிரிவுகள் உள்ளன. ஆராய்ச்சி மற்றும் எழுத்தில் தொடர உறுதிப்படுத்தவும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">தனிப்பட்ட அறிவு உதவியாளரை மாதிரி பிளக்கை உள்ளமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
+        <translation>தனிப்பட்ட அறிவு உதவியாளரைப் பயன்படுத்த, மாதிரி சொருகியை கட்டமைத்த பிறகே முடியும்.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">தனிப்பட்ட அறிவு உதவியாளரை அறிவு தளத்தை உள்ளமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
+        <translation>தனிப்பட்ட அறிவு உதவியாளரைப் பயன்படுத்த, அறிவுத்தளத்தை கட்டமைத்த பிறகே முடியும்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
-        <translation>அழி</translation>
+        <translation>நீக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
-        <translation>தனியார் முன்னிலைப்படுத்தல் மாதிரி</translation>
+        <translation>தனிப்பட்ட வரிசைப்படுத்தல் மாதிரி</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
-        <translation>எதுவும் இல்லை</translation>
+        <translation>ஏதுமில்லை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>இந்த வழங்குநரை நிச்சயமாக நீக்க வேண்டுமா?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>ரத்து செய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
         <translation>குறிப்பு</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
         <translation>திற</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
         <translation>ஆவணங்கள் இல்லை!</translation>
     </message>
@@ -6806,163 +2721,79 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆவணம் உருவாக்கப்படுகிறது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆவணம் உருவாக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>ஆவணம் வரைபடத்தின் அடிப்படையில் உருவாக்கப்பட்டுள்ளது. உள்ளடக்கத்தைத் திருத்த கீழே உள்ள கார்டைக் கிளிக் செய்யலாம், அல்லது உள்ளூரில் சேமிக்க &quot;இவ்வாறு சேமி&quot; பட்டனைக் கிளிக் செய்து மேலும் திருத்தலாம்.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">ஆன்லைனில் தேடு</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">தேடல் உள்ளடக்கத்தை உள்ளிடவும்</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">மின்னஞ்சல் அனுப்பு</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">[பெறுநரின் பெயர்] க்கு ஒரு மின்னஞ்சலை அனுப்ப உதவுங்கள், உள்ளடக்கம்: [மின்னஞ்சல் உள்ளடக்கம்].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">மன்னிக்கவும், பொருந்தக்கூடிய செயல்பாடுகள் எதுவும் கிடைக்கவில்லை.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">கொடுக்கப்பட்ட உள்ளீட்டிலிருந்து தொடர்புடைய அளவுருக்களை பின்வரும் JSON மின்னஞ்சல் வார்ப்புரு வடிவத்திற்கு எடுத்து, JSON உள்ளடக்கத்தை மட்டும் வெளியீடு செய்யவும். எந்தவொரு தேவையற்ற தகவலையும் சேர்க்க வேண்டாம்.
-
-மின்னஞ்சல் வார்ப்புரு வடிவம்:
-
-json
-{&quot;subject&quot;: &quot;மின்னஞ்சல் தலைப்பு&quot;, &quot;content&quot;: &quot;மின்னஞ்சல் உடல்&quot;, &quot;to&quot;: &quot;பெறுநர்&quot;, &quot;cc&quot;: &quot;CC பெறுநர்&quot;, &quot;bcc&quot;: &quot;BCC பெறுநர்&quot;}
-
-உள்ளீடு: %1</translation>
+        <translation>நீங்கள் தொடர்புடைய கேள்விகளைக் கேட்கலாம் அல்லது கட்டுரையை சரிசெய்யக் கேட்கலாம்.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>MCP சர்வர் நிகர்நிலையைப் பெற்றெடுக்க முடியவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">சேவையகம் &apos;%1&apos; ஒரு தனிப்பயன் சேவையகம் அல்ல அல்லது இல்லை</translation>
+        <translation>சர்வர் &apos;%1&apos; ஒரு தனிப்பயன் சர்வர் அல்லது இல்லை</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">MCP சேவையக பெயர் &apos;%1&apos; ஏற்கனவே உள்ளது</translation>
+        <translation>MCP சர்வர் பெயர் &apos;%1&apos; ஏற்கனவே உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>சர்வர் &apos;%1&apos; இல்லை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>ID %1 கொண்ட அமர்வு ஏற்கனவே உள்ளது</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>அமர்வு %1 உதவியாளர் %2 ஐ உருவாக்குவது தோல்வியடைந்தது</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>அமர்வு %1 உருவாக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>அமர்வு %1 காணப்படவில்லை</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">குறுக்குவழி: [Super + Space]. UOS AI ஐ விரைவாக அழைத்து அனைத்து AI அம்சங்களையும் ஒரே இடத்தில் அணுகவும்.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">புரிந்தது</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">இந்த உத்வேகம் %1 முறை மேலும் தோன்றும், &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;மீண்டும் காட்ட வேண்டாம்&lt;/a&gt;</translation>
+        <translation>அமர்வு %1 செயலற்ற நிலையில் இல்லை</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
-        <translation>&apos;எடு &apos;</translation>
+        <translation>எடுக்கவும் </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
-        <translation>&apos; ஆங்கிலத்தில் மொழிபெயர்&apos;</translation>
+        <translation>ஆங்கிலத்தில் மொழிபெயர்க்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>எழுத்து வரம்பு மீறப்பட்டது</translation>
     </message>
@@ -6970,2111 +2801,2137 @@ json
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>இயக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Disabled</source>
         <translation>முடக்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>இயக்கு</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
         <translation>திறன் மேலாண்மை</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
         <translation>திறன் சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
-        <translation>முதல் 4 திறன்கள் கருவிப்பட்டியில் காட்டப்படும், மற்றவை மேலும் மெனுவில் மறைக்கப்படும்.</translation>
+        <translation>முதல் 4 திறன்கள் கருவிப்பட்டையில் காட்டப்படும், மற்றவை மேலும் மெனுவில் மறைக்கப்படும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
         <translation>சேமிக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
-        <translation>நீங்கள் &quot;%1&quot; திறனை நிச்சயமாக நீக்க விரும்புகிறீர்களா?</translation>
+        <translation>&quot;%1&quot; திறனை நிச்சயமாக நீக்க விரும்புகிறீர்களா?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
-        <translation>ரத்து செய்</translation>
+        <translation>ரத்துசெய்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>நீக்கு</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemChannel</name>
+    <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <source>The archive file does not exist.</source>
+        <translation>காப்புக் கோப்பு இல்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
-        <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>பிரித்தெடுப்பதற்கான தற்காலிக அடைவு உருவாக்க முடியவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>காப்புக் கோப்பைப் பிரித்தெடுக்க முடியவில்லை. கோப்பு சேதமடைந்திருக்கலாம் அல்லது வடிவம் ஆதரிக்கப்படவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
-        <source>Settings</source>
-        <translation type="unfinished">அமைப்புகள்</translation>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>காப்புக் கோப்பில் SKILL.md கோப்பு கிடைக்கவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
+        <source>The specified path is invalid.</source>
+        <translation>குறிப்பிட்ட பாதை தவறானது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
-        <source>About</source>
-        <translation type="unfinished">பற்றி</translation>
+        <source>Failed to read SKILL.md.</source>
+        <translation>SKILL.md ஐப் படிக்க முடியவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
-        <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>SKILL.md இல் தேவையான &apos;பெயர்&apos; புலம் இல்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
-        <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <source>The skill directory does not exist.</source>
+        <translation>திறன் அடைவு இல்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
-        <source>AI Writing</source>
-        <translation type="unfinished">AI எழுத்து</translation>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>இந்தப் பாதையிலிருந்து திறனை இறக்குமதி செய்ய முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
-        <source>AI Translation</source>
-        <translation type="unfinished">AI மொழிபெயர்ப்பு</translation>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>திறமை அடைவில் SKILL.md கோப்பு எதுவும் கிடைக்கவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
-        <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>திறமையில் அதிகபடியான கோப்புகள் உள்ளன (அதிகபட்சம் %1 அனுமதிக்கப்படுகிறது).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">MCP சர்வர்</translation>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>திறமையின் அளவு வரம்பை மீறியுள்ளது (அதிகபட்சம் 10 எம்பி அனுமதிக்கப்படுகிறது).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <source>The skill folder name is invalid.</source>
+        <translation>திறமை கோப்புறையின் பெயர் தவறானது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
-        <source>Agent Store</source>
-        <translation type="unfinished">முகவர் கடை</translation>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>இருக்கும் திறமையை மேலெழுதுவதில் தோல்வி.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
-        <source>More</source>
-        <translation type="unfinished">மேலும்</translation>
+        <source>Failed to create the skills directory.</source>
+        <translation>திறமைகள் அடைவினை உருவாக்குவதில் தோல்வி.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
-        <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to copy the skill files.</source>
+        <translation>திறமை கோப்புகளை நகலெடுப்பதில் தோல்வி.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
-        <source>Today</source>
-        <translation type="unfinished">இன்று</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
-        <source>Yesterday</source>
-        <translation type="unfinished">நேற்று</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
-        <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
-        <source>January</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
-        <source>February</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
-        <source>March</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
-        <source>April</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
-        <source>May</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
-        <source>June</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
-        <source>July</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
-        <source>August</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
-        <source>September</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
-        <source>October</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
-        <source>November</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
-        <source>year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
-        <source>Earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
-        <source>Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
-        <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
-        <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
-        <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
-        <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
-        <source>All</source>
-        <translation type="unfinished">அனைத்தும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
-        <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
-        <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
-        <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
-        <source>DeepThink</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
-        <source>Search</source>
-        <translation type="unfinished">தேடு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
-        <source>Attachments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
-        <source>Upload Files</source>
-        <translation type="unfinished">கோப்புகளை பதிவேற்று</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
-        <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
-        <source>Voice Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
-        <source>Voice Read</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
-        <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
-        <source>Copy</source>
-        <translation type="unfinished">நகலெடு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">மீண்டும் உருவாக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
-        <source>Re-edit</source>
-        <translation type="unfinished">மீண்டும் திருத்து</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
-        <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
-        <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
-        <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
-        <source>Thinking...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
-        <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
-        <source>Parsing...</source>
-        <translation type="unfinished">பாகுபடுத்துகிறது...</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
-        <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
-        <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
-        <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
-        <source>Model List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
-        <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
-        <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
-        <source>Local Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
-        <source>Online Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
-        <source>Add Model</source>
-        <translation type="unfinished">மாதிரியைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
-        <source>Official</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
-        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
-        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
-        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
-        <source>View Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
-        <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
-        <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
-        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
-        <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
-        <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
-        <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
-        <source>File Upload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
-        <source>As Material</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
-        <source>As Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
-        <source>Local Materials</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
-        <source>File Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
-        <source>Outline</source>
-        <translation type="unfinished">கோட்பாடு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
-        <source>View All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
-        <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
-        <source>Upload File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
-        <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
-        <source>Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
-        <source>Heading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
-        <source>Export Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
-        <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
-        <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
-        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
-        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
-        <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
-        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
-        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
-        <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
-        <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
-        <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
-        <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
-        <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
-        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
-        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
-        <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
-        <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
-        <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
-        <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
-        <source>Add chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
-        <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
-        <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
-        <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
-        <source>Save as Word</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
-        <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
-        <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
-        <source>Saving...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
-        <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
-        <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
-        <source>Body Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
-        <source>Heading %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
-        <source>Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
-        <source>Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
-        <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
-        <source>Link Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
-        <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
-        <source>Numbered List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
-        <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
-        <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
-        <source>Blockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
-        <source>Divider</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
-        <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
-        <source>Print Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
-        <source>Share Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
-        <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
-        <source>Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
-        <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
-        <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
-        <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
-        <source>Add MCP Server</source>
-        <translation type="unfinished">MCP சர்வர் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
-        <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
-        <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
-        <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
-        <source>Install Now</source>
-        <translation type="unfinished">இப்போது நிறுவவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
-        <source>System Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
-        <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
-        <source>DND Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
-        <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
-        <source>Brightness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
-        <source>Font Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
-        <source>App Store</source>
-        <translation type="unfinished">பயன்பாட்டுக் கடை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
-        <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
-        <source>Click to download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
-        <source>Go to configuration</source>
-        <translation type="unfinished">உள்ளமைவுக்குச் செல்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
-        <source>No account</source>
-        <translation type="unfinished">கணக்கு இல்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
-        <source>Input question</source>
-        <translation type="unfinished">உள்ளீட்டு கேள்வி</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
-        <source>Welcome to UOS AI</source>
-        <translation type="unfinished">UOS AI க்கு வரவேற்கிறோம்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">UOS AI உங்களுக்கு உதவக்கூடிய சில விஷயங்கள் இங்கே உள்ளன</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
-        <source>Stop</source>
-        <translation type="unfinished">நிறுத்து</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
-        <source>Retry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
-        <source>Clear conversation history</source>
-        <translation type="unfinished">உரையாடல் வரலாற்றை அழி</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
-        <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">மைக்ரோஃபோனை இணைத்து மீண்டும் முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
-        <source>Chat history cleared</source>
-        <translation type="unfinished">அரட்டை வரலாறு அழிக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
-        <source>Click to start/stop recording</source>
-        <translation type="unfinished">பதிவைத் தொடங்க/நிறுத்த கிளிக் செய்க</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
-        <source>Listening</source>
-        <translation type="unfinished">கேட்கிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
-        <source>Sleeping</source>
-        <translation type="unfinished">தூங்குகிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">மைக்ரோஃபோன் கண்டறியப்படவில்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
-        <source>Connection failed, click to try again</source>
-        <translation type="unfinished">இணைப்பு தோல்வியடைந்தது, மீண்டும் முயற்சிக்க கிளிக் செய்க</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">செயல்படுத்த அனிமேஷனை கிளிக் செய்யவும் அல்லது Ctrl+Super+Space அழுத்தவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">குரல் உள்ளீடு தற்காலிகமாக கிடைக்கவில்லை, நெட்வொர்க்கை சரிபார்க்கவும்!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
-        <source>Voice conversation</source>
-        <translation type="unfinished">குரல் உரையாடல்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">அனுப்ப அனிமேஷனை கிளிக் செய்யவும் அல்லது Enter அழுத்தவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">%1 வினாடிகளுக்குப் பிறகு பதிவை நிறுத்து</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
-        <source>Thinking</source>
-        <translation type="unfinished">சிந்திக்கிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
-        <source>Click animation to interrupt</source>
-        <translation type="unfinished">குறுக்கிட அனிமேஷனை கிளிக் செய்க</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
-        <source>Answering</source>
-        <translation type="unfinished">பதிலளிக்கிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished">உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished">உங்கள் இலவச கணக்கு காலாவதியாகிவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
-        <source>Activate</source>
-        <translation type="unfinished">செயல்படுத்து</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
-        <source>Voice input</source>
-        <translation type="unfinished">குரல் உள்ளீடு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">குரல் ஒலிபரப்பு தற்காலிகமாக கிடைக்கவில்லை, தயவுசெய்து வலையமைப்பை சரிபார்க்கவும்!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
-        <source>Turn off voice conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">படம் உருவாக்கப்பட்டது, அதைப் பார்க்க அரட்டை இடைமுகத்திற்கு மாறவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
-        <source>No account, please configure an account</source>
-        <translation type="unfinished">கணக்கு இல்லை, தயவுசெய்து ஒரு கணக்கு கட்டமைக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
-        <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">ஒவ்வொரு கேள்விக்கும் 5 முறை வரை பதிலளிக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
-        <source>Copied successfully</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
-        <source>Sound output device not detected</source>
-        <translation type="unfinished">ஒலி வெளியீடு சாதனம் கண்டறியப்படவில்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">ஒலி வெளியீடு சாதனம் கண்டறியப்படவில்லை, தயவுசெய்து சரிபார்த்து மீண்டும் முயற்சிக்கவும்!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
-        <source>Mode</source>
-        <translation type="unfinished">முறை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
-        <source>Window Mode</source>
-        <translation type="unfinished">சாளர முறை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
-        <source>Sidebar Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
-        <source>Assistant List</source>
-        <translation type="unfinished">உதவியாளர் பட்டியல்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
-        <source>Agent List</source>
-        <translation type="unfinished">முகவர் பட்டியல்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
-        <source>UOS System Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
-        <source>Deepin System Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">தனிப்பட்ட அறிவு உதவியாளர்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
-        <source>Please configure the knowledge base</source>
-        <translation type="unfinished">தயவுசெய்து அறிவு தளத்தை கட்டமைக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">[தனிப்பட்ட அறிவு உதவியாளர்] பயன்படுத்துவதற்கு முன்பு, அறிவு தளத்தை கட்டமைக்க வேண்டும். அறிவு தளத்தை கட்டமைத்த பிறகு, AI உங்கள் அறிவு தளத்தில் கட்டமைத்த உள்ளடக்கத்தின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கும் அல்லது உள்ளடக்கத்தை உருவாக்கும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
-        <source>Please configure the large model</source>
-        <translation type="unfinished">தயவுசெய்து பெரிய மாதிரியை கட்டமைக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">தனிப்பட்ட அறிவு உதவியாளர் ஒரு பெரிய மாதிரியை கட்டமைத்த பிறகு மட்டுமே பயன்படுத்த முடியும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
-        <source>To configure</source>
-        <translation type="unfinished">கட்டமைக்க</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <source>To install</source>
-        <translation type="unfinished">நிறுவ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">தயவுசெய்து [EmbeddingPlugins] நிறுவவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">இந்த உதவியாளர் இயக்க EmbeddingPlugins நிறுவல் தேவை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
-        <source>Drag files here to add them.</source>
-        <translation type="unfinished">கோப்புகளை இங்கே இழுத்து சேர்க்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">நீங்கள் 3 கோப்புகளை மட்டுமே சேர்க்கலாம்; ஆதரிக்கப்படும் கோப்பு வகைகள்: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, குறியீடு கோப்புகள் முதலியவை.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">நீங்கள் அதிகபட்சம் ஒரு கோப்பை மட்டுமே சேர்க்க முடியும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
-        <source>The file format is not supported.</source>
-        <translation type="unfinished">கோப்பு வடிவம் ஆதரவளிக்கப்படவில்லை.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
-        <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">கோப்பின் முக்கிய உள்ளடக்கத்தை சுருக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
-        <source>File Error</source>
-        <translation type="unfinished">கோப்பு பிழை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
-        <source>File has been deleted.</source>
-        <translation type="unfinished">கோப்பு நீக்கப்பட்டது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">கோப்பின் அளவு 100MB வரம்பை மீறுகிறது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
-        <source>Upload a document</source>
-        <translation type="unfinished">ஒரு ஆவணத்தை பதிவேற்றவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
-        <source>File deleted</source>
-        <translation type="unfinished">கோப்பு நீக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
-        <source>No text was parsed</source>
-        <translation type="unfinished">எந்த உரையும் பாகுபடுத்தப்படவில்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
-        <source>Reference</source>
-        <translation type="unfinished">குறிப்பு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
-        <source>Instruction</source>
-        <translation type="unfinished">வழிமுறை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">செயல்படுத்த உள்ளீட்டு பெட்டியில் &quot;/&quot; தட்டச்சு செய்யவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">தயவுசெய்து உள்ளிடவும்; வரியை மாற்ற “Ctrl+Enter” அழுத்தவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">உங்கள் கேள்வியை உள்ளிடவும், அல்லது ஒரு கட்டளையைத் தேர்ந்தெடுக்க &quot;/&quot; உள்ளிடவும்
-புதிய வரியைத் தொடங்க &quot;Ctrl+Enter&quot; அழுத்தவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
-        <source>Search complete.</source>
-        <translation type="unfinished">தேடல் முடிந்தது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
-        <source>Click to view results</source>
-        <translation type="unfinished">முடிவுகளைப் பார்க்க கிளிக் செய்யவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
-        <source>edit</source>
-        <translation type="unfinished">திருத்து</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
-        <source>save</source>
-        <translation type="unfinished">சேமி</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
-        <source>copy</source>
-        <translation type="unfinished">நகலெடு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
-        <source>Thinking has stopped</source>
-        <translation type="unfinished">சிந்தனை நிறுத்தப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">கீழே திரும்பு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">ஆழமாக சிந்திக்கப்பட்டது (%1 வினாடிகள்)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
-        <source>New Conversation</source>
-        <translation type="unfinished">புதிய உரையாடல்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
-        <source>History</source>
-        <translation type="unfinished">வரலாறு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
-        <source>No History Records</source>
-        <translation type="unfinished">வரலாறு பதிவுகள் இல்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">உரையாடலை நீக்குவதில் உறுதியாக உள்ளீர்களா? நீக்கப்பட்ட பிறகு அதை மீட்டெடுக்க முடியாது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">இந்த உரையாடலில் பயன்படுத்தப்பட்ட %1 முகவர் நீக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">இந்த உரையாடலைப் பார்க்க முடியாது. அதைப் பார்க்க, %1 முகவரை நிறுவி மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">அசல் உரையாடல் மாதிரி நீக்கப்பட்டது. உரையாடலைத் தொடர நாங்கள் ஒரு புதிய மாதிரிக்கு மாற்றியுள்ளோம்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
-        <source>Recommendations</source>
-        <translation type="unfinished">பரிந்துரைகள்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
-        <source>No Model</source>
-        <translation type="unfinished">மாதிரி இல்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">எந்த மாதிரியும் கிடைக்கவில்லை. அமைப்புகளில் ஒரு மாதிரியை நிறுவவும் அல்லது கட்டமைக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">உங்கள் படைப்புக்கான உள்ளடக்கத் தீம் மற்றும் தேவைகளை விவரிக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">மொழிபெயர்க்க விரும்பும் உள்ளடக்கத்தை உள்ளிட்டு இலக்கு மொழியைக் குறிப்பிடவும். இயல்புநிலை மொழிபெயர்ப்பு சீனம்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">செயல்படுத்த வேண்டிய உரையை உள்ளிட்டு உங்கள் தேவைகளைக் குறிப்பிடவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
-        <source>New Agent Added</source>
-        <translation type="unfinished">புதிய முகவர் சேர்க்கப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">புதிய எழுத்து, உரை செயலாக்கம் மற்றும் மொழிபெயர்ப்பு முகவர்கள் சேர்க்கப்பட்டுள்ளனர். இப்போது அவற்றைப் பாருங்கள்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
-        <source>Try it</source>
-        <translation type="unfinished">முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
-        <source>Write an article based on the following document:</source>
-        <translation type="unfinished">பின்வரும் ஆவணத்தின் அடிப்படையில் ஒரு கட்டுரை எழுதவும்:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
-        <source>Translate the following document into English:</source>
-        <translation type="unfinished">பின்வரும் ஆவணத்தை ஆங்கிலத்தில் மொழிபெயர்க்கவும்:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
-        <source>Add Mcp Server</source>
-        <translation type="unfinished">MCP சர்வரைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
-        <source>Add Server</source>
-        <translation type="unfinished">சர்வரைச் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
-        <source>Add failed! Error reason:</source>
-        <translation type="unfinished">சேர்க்க முடியவில்லை! பிழை காரணம்:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">MCP சூழல் இல்லை. தயவுசெய்து 【UOS AI Agent】 ஐ நிறுவவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
-        <source>Calling</source>
-        <translation type="unfinished">அழைக்கப்படுகிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
-        <source>Completed</source>
-        <translation type="unfinished">முடிந்தது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
-        <source>Call Failed</source>
-        <translation type="unfinished">அழைப்பு தோல்வியடைந்தது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
-        <source>Cancelled</source>
-        <translation type="unfinished">ரத்து செய்யப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
-        <source>params</source>
-        <translation type="unfinished">அளவுருக்கள்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
-        <source>result</source>
-        <translation type="unfinished">முடிவு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">MCP சர்வருக்காக, அதிகாரப்பூர்வமாக வெளியிடப்பட்ட &quot;DeepSeek-Trial Account&quot; மாடலுக்கு மாறவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">MCP சர்வர் கட்டளையை உள்ளிடவும், எ.கா., &quot;எனக்காக அமைப்பை இருண்ட பயன்முறைக்கு மாற்று&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
-        <source>Agent server is not available</source>
-        <translation type="unfinished">முகவர் சர்வர் கிடைக்கவில்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
-        <source>Agent server exception</source>
-        <translation type="unfinished">முகவர் சர்வர் விதிவிலக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
-        <source>MCP server is not available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
-        <source>Confirm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">MCP சேவையைப் பயன்படுத்தி ஒரே கட்டளையில் பல கோப்பு மற்றும் பல பயன்பாடு பணிகளை தானியங்கி செய்யுங்கள். இப்போதே முயற்சிக்கவும்!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
-        <source>Use later</source>
-        <translation type="unfinished">பின்னர் பயன்படுத்தவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
-        <source>Enable MCP Server</source>
-        <translation type="unfinished">MCP சர்வரை இயக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">MCP சூழல் &quot;UOS AI Agent&quot; ஐ நிறுவிய பிறகு, கிளிக் செய்யவும் </translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished"> மற்றும் MCP சர்வர் பட்டியலில் &quot;uos-mcp&quot; ஐத் தேர்ந்தெடுக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">இவ்வாறு சொல்லிப் பாருங்கள்: &quot;அமைப்பை இருண்ட பயன்முறைக்கு மாற்று&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
-        <source>Try it now</source>
-        <translation type="unfinished">இப்போதே முயற்சிக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">MCP சர்வரைச் சேர்க்கவும் [வழிகாட்டி பக்கம்]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">முதல் முறையாகப் பயன்படுத்தும் பயனர்கள்: App Store மூலம் MCP சூழல் &quot;UOS AI Agent&quot; ஐ நிறுவவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">JSON கோப்பு வடிவம் தவறாக உள்ளது, தயவுசெய்து சரிபார்த்து மீண்டும் சமர்ப்பிக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
-        <source>Install Now &gt;</source>
-        <translation type="unfinished">இப்போது நிறுவவும் &gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
-        <source>General Chat</source>
-        <translation type="unfinished">பொது உரையாடல்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
-        <source>Now in Private Chat</source>
-        <translation type="unfinished">இப்போது தனியுரையாடலில்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">தனியுரையாடல் செய்திகள் வரலாற்றில் சேமிக்கப்படாது; உரையாடலை விட்டு வெளியேறும் போது நிரந்தரமாக நீக்கப்படும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">திரைப்பிடிப்பு கேள்வி-பதில் குறுக்குவழி (Ctrl+Alt+Q), அதிகபட்சம் 3 படங்கள் ஆதரிக்கப்படுகின்றன.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
-        <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">திரை பதிவின் போது பயன்படுத்த முடியாது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">தயவுசெய்து தவறான கோப்பை நீக்கி மீண்டும் அனுப்பவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
-        <source>Add Private Chat</source>
-        <translation type="unfinished">தனியுரையாடலை சேர்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">[திரைப்பிடிப்பு கேள்வி-பதிலை] சேர்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">திரைப்பிடிப்பு எடுத்து அதன் உள்ளடக்கத்தை UOS AI-க்கு அனுப்பவும். நேரடியாக படத்தையும் பதிவேற்றலாம்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
-        <source>OK</source>
-        <translation type="unfinished">சரி</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
-        <source>Next</source>
-        <translation type="unfinished">அடுத்து</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">[தனியுரையாடல் பயன்முறை] சேர் – உரையாடல்கள் சேமிக்கப்படாது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
-        <source>No text extracted</source>
-        <translation type="unfinished">உரை எதுவும் பிரித்தெடுக்கப்படவில்லை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">படத்தின் அளவு 15 MB-ஐ மீறுகிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">அறிவுத்தளம் திறக்கப்பட்ட பிறகு, பதில்கள் அதன் உள்ளடக்கத்தின் அடிப்படையில் வழங்கப்படும். பதிலின் வேகம் கணினி செயல்திறன் மற்றும் அறிவுத்தளத்தின் அளவைப் பொறுத்தது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">ஏதேனும் கட்டளை அல்லது MCP தேர்ந்தெடுக்கப்பட்டால் அறிவுத்தளம் பயன்படுத்த முடியாது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">அறிவுத்தளம் செயல்பாட்டில் இருக்கும் போது MCP முடக்கப்படுகிறது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">அறிவுத்தளம் செயல்பாட்டில் இருக்கும் போது கட்டளைகள் முடக்கப்படுகின்றன.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
-        <source>Copy succeeded.</source>
-        <translation type="unfinished">நகலெடுப்பு வெற்றியடைந்தது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
-        <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">நகலெடுப்பு தோல்வியடைந்தது. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
-        <source>Searching</source>
-        <translation type="unfinished">தேடுகிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">%1 குறிப்பு ஆவணங்கள் பெறப்பட்டுள்ளன (%2s)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
-        <source>Clear History</source>
-        <translation type="unfinished">வரலாற்றை அழி</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
-        <source>Delete all records?</source>
-        <translation type="unfinished">அனைத்து பதிவுகளையும் நீக்கவா?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">ஒருமுறை நீக்கப்பட்டால் உள்ளடக்கத்தை மீட்டெடுக்க முடியாது!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
-        <source>Recommend official models</source>
-        <translation type="unfinished">அதிகாரப்பூர்வ மாடல்களை பரிந்துரை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
-        <source>Disable MCP</source>
-        <translation type="unfinished">MCP-ஐ முடக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">&quot;DeepSeek-Trial Account&quot; என்ற அதிகாரப்பூர்வ மாதிரியைப் பயன்படுத்த பரிந்துரைக்கப்படுகிறது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
-        <source>Quick Open</source>
-        <translation type="unfinished">விரைவு திறப்பு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">MCP சர்வர் தானியங்கி பயன்முறைக்கு மேம்படுத்தப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">MCP சர்வர் தானியங்கி பயன்முறைக்கு மேம்படுத்தப்பட்டுள்ளது; ஒரே கிளிக்கில் அனைத்து MCP சர்வர்களையும் அணுகலாம்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. இதன் மூலம் அமைப்பு அமைப்பு மற்றும் கோப்பு செயலாக்கம் போன்ற பணிகளை ஒரே கிளிக்கில் தானியங்கியாகச் செய்யலாம்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">MCP சர்வரைச் சேர்ப்பது அமைப்புகளுக்கு மாற்றப்பட்டுள்ளது.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">மேலும் MCP சர்வர்களைச் சேர்க்க, அமைப்புகள் &gt; MCP சர்வர் என்பதற்குச் செல்லவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
-        <source>Got it</source>
-        <translation type="unfinished">புரிந்தது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
-        <source>Complimentary Model Credits</source>
-        <translation type="unfinished">இலவச மாதிரி கடன்கள்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">தற்போதைய அமைப்பு DeepSeek சோதனை கணக்கு மாதிரியை வழங்குகிறது, இது ஒவ்வொரு மாதத்தின் தொடக்கத்திலும் இலவான ஒதுக்கீட்டை தானாக புதுப்பிக்கிறது, இதனால் நீங்கள் கவலையின்றி பயன்படுத்தலாம்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
-        <source>Claim Credits</source>
-        <translation type="unfinished">கடன் கோரிக்கைகளைக் கோருங்கள்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
-        <source>Get a free account</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
-        <source>Claim Free Credits</source>
-        <translation type="unfinished">இலவச கடன்களைக் கோருங்கள்</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
-        <source>Successfully Claimed</source>
-        <translation type="unfinished">வெற்றிகரமாக கோரப்பட்டது</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">கோரிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">MCP சேவையகத்தை இயக்கு&amp;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
-        <source>Disable MCP Server</source>
-        <translation type="unfinished">MCP சேவையகத்தை முடக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
-        <source>Configure MCP Server</source>
-        <translation type="unfinished">MCP சேவையகத்தை உள்ளமை</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI பின்தொடர்/எழுது</translation>
+        <source>Supported files</source>
+        <translation>ஆதரிக்கப்படும் கோப்புகள்</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemControlInst</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <source>System Control</source>
-        <translation type="vanished">அமைப்பு கட்டுப்பாடு</translation>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">புதிய சுவரொட்டிக்கு மாறவும். திரை பிரகாசத்தை 30% ஆக அமைக்கவும்...</translation>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
+        <translation>UOS AI இடம் கேளுங்கள், உங்கள் கவலைகளை மறக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>மாற்றங்கள் பதிவு</translation>
+    </message>
+    <message>
+        <source>Start Chatting</source>
+        <translation>அரட்டையைத் தொடங்கு</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>இடது புறம் ஒரு உதவியாளரைத் தேர்ந்தெடுத்து, புதிய அரட்டையைத் தொடங்க ஒரு கேள்வி அல்லது அறிவுறுத்தலை உள்ளிடவும்.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>குரல் தொடர்பு</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>நீங்கள் குரல் கட்டுப்பாட்டை விரும்பினால், மீண்டும் செயல்பாடுகளைக் குறைக்க தொடர்புடைய உள்ளீட்டிலிருந்து விரைவாக மாறவும்.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>தேடலைத் தொடரவும்</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>உங்கள் பணிகளைத் தொடர்வதற்கும் மாதிரிகள், கருவிகள் மற்றும் தோற்றத்தை சரிசெய்ய வரலாறு மற்றும் அமைப்புகளைப் பயன்படுத்தவும்.</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>உதவி</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>அறிமுகம்</translation>
+    </message>
+    <message>
+        <source>New Chat</source>
+        <translation>புதிய அரட்டு</translation>
+    </message>
+    <message>
+        <source>Temporary Chat</source>
+        <translation>தற்காலித அரட்டு</translation>
+    </message>
+    <message>
+        <source>AI Writing</source>
+        <translation>AI எழுத்து</translation>
+    </message>
+    <message>
+        <source>AI Translation</source>
+        <translation>AI மொழிபெயர்ப்பு</translation>
+    </message>
+    <message>
+        <source>AI Knowledge Base</source>
+        <translation>AI அறிவுத்தளம்</translation>
+    </message>
+    <message>
+        <source>MCP Server</source>
+        <translation>MCP சர்வர்</translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation>கட்டளைகள்</translation>
+    </message>
+    <message>
+        <source>Agent Store</source>
+        <translation>ஏஜென்ட் ஸ்டோர்</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>மேலும்</translation>
+    </message>
+    <message>
+        <source>Chat History</source>
+        <translation>அரட்டு வரலாறு</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>இன்று</translation>
+    </message>
+    <message>
+        <source>Yesterday</source>
+        <translation>நேற்று</translation>
+    </message>
+    <message>
+        <source>Last 7 Days</source>
+        <translation>கடந்த 7 நாட்கள்</translation>
+    </message>
+    <message>
+        <source>Last 30 Days</source>
+        <translation>கடந்த 30 நாட்கள்</translation>
+    </message>
+    <message>
+        <source>January</source>
+        <translation>ஜனவரி</translation>
+    </message>
+    <message>
+        <source>February</source>
+        <translation>பிப்ரவரி</translation>
+    </message>
+    <message>
+        <source>March</source>
+        <translation>மார்ச்</translation>
+    </message>
+    <message>
+        <source>April</source>
+        <translation>ஏப்ரல்</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>மே</translation>
+    </message>
+    <message>
+        <source>June</source>
+        <translation>ஜூன்</translation>
+    </message>
+    <message>
+        <source>July</source>
+        <translation>ஜூலை</translation>
+    </message>
+    <message>
+        <source>August</source>
+        <translation>ஆகஸ்ட்</translation>
+    </message>
+    <message>
+        <source>September</source>
+        <translation>செப்டம்பர்</translation>
+    </message>
+    <message>
+        <source>October</source>
+        <translation>அக்டோபர்</translation>
+    </message>
+    <message>
+        <source>November</source>
+        <translation>நவம்பர்</translation>
+    </message>
+    <message>
+        <source>year</source>
+        <translation>ஆண்டு</translation>
+    </message>
+    <message>
+        <source>Earlier</source>
+        <translation>முந்தையது</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>நீக்கு</translation>
+    </message>
+    <message>
+        <source>Confirm Deletion</source>
+        <translation>நீக்குதலை உறுதிப்படுத்து</translation>
+    </message>
+    <message>
+        <source>Confirm deletion</source>
+        <translation>நீக்குதலை உறுதிப்படுத்து</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>நீக்கிய பிறகு, இந்த சேவையகம் கிடைக்காது. எச்சரிக்கையுடன் முன்னேறுங்கள்.</translation>
+    </message>
+    <message>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation>இந்த செயல் UOS AI இலிருந்து இந்த அரட்டைக்கு தொடர்புடைய அனைத்து உள்ளடக்கத்தையும் நீக்கும்.</translation>
+    </message>
+    <message>
+        <source>Confirm Delete</source>
+        <translation>நீக்குதலை உறுதிசெய்</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>ரத்துசெய்</translation>
+    </message>
+    <message>
+        <source>Batch Manage</source>
+        <translation>தொகுதி மேலாண்மை</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>அனைத்தும்</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>அனைத்தையும் தேர்ந்தெடு</translation>
+    </message>
+    <message>
+        <source>%1 conversations selected</source>
+        <translation>%1 உரையாடல்கள் தேர்ந்தெடுக்கப்பட்டன</translation>
+    </message>
+    <message>
+        <source>No chat history yet</source>
+        <translation>இதுவரை அரட்டை வரலாறு இல்லை</translation>
+    </message>
+    <message>
+        <source>Chat content not found</source>
+        <translation>அரட்டை உள்ளடக்கம் காணப்படவில்லை</translation>
+    </message>
+    <message>
+        <source>DeepThink</source>
+        <translation>ஆழ்நிலை சிந்தனை</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>தேடு</translation>
+    </message>
+    <message>
+        <source>Attachments</source>
+        <translation>இணைப்புகள்</translation>
+    </message>
+    <message>
+        <source>Upload Files</source>
+        <translation>கோப்புகளை பதிவேற்று</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A</source>
+        <translation>ஸ்கிரீன்ஷாட் கேள்வி-பதில்</translation>
+    </message>
+    <message>
+        <source>Voice Input</source>
+        <translation>குரல் உள்ளீடு</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>அனுப்பு</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>ஒரு கேள்வி கேள்...</translation>
+    </message>
+    <message>
+        <source>Voice Read</source>
+        <translation>குரல் வாசிப்பு</translation>
+    </message>
+    <message>
+        <source>Stop Reading</source>
+        <translation>வாசிப்பதை நிறுத்து</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>நகலெடு</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>மீண்டும் உருவாக்கு</translation>
+    </message>
+    <message>
+        <source>Re-edit</source>
+        <translation>மீண்டும் திருத்து</translation>
+    </message>
+    <message>
+        <source>Stop Generating</source>
+        <translation>உருவாக்குவதை நிறுத்து</translation>
+    </message>
+    <message>
+        <source>Generation stopped</source>
+        <translation>உருவாக்குதல் நிறுத்தப்பட்டது</translation>
+    </message>
+    <message>
+        <source>You stopped this answer, </source>
+        <translation>நீங்கள் இந்த பதிலை நிறுத்தினீர்கள், </translation>
+    </message>
+    <message>
+        <source>please re-edit your question</source>
+        <translation>தேவையானால் உங்கள் கேள்ளியை மீண்டும் திருத்தவும்</translation>
+    </message>
+    <message>
+        <source>Back to Bottom</source>
+        <translation>கீழே செல்</translation>
+    </message>
+    <message>
+        <source>Thinking...</source>
+        <translation>சிந்திக்கிறது...</translation>
+    </message>
+    <message>
+        <source>Deep think completed (took %1s)</source>
+        <translation>ஆழ்நிலை சிந்தனை முடிந்தது (%1s எடுத்தது)</translation>
+    </message>
+    <message>
+        <source>Parsing...</source>
+        <translation>பாகுபாடு செய்கிறது...</translation>
+    </message>
+    <message>
+        <source>Parsing failed</source>
+        <translation>பாகுபாடு தோல்வியடைந்தது</translation>
+    </message>
+    <message>
+        <source>You can add up to 50 files</source>
+        <translation>நீங்கள் அதிகபட்சம் 50 கோப்புகள் வரை சேர்க்கலாம்</translation>
+    </message>
+    <message>
+        <source>Summarize the core content of the file</source>
+        <translation>கோப்பின் முக்கிய உள்ளடக்கத்தை சுருக்கவும்</translation>
+    </message>
+    <message>
+        <source>Model List</source>
+        <translation>மாதிரி பட்டியல்</translation>
+    </message>
+    <message>
+        <source>Smart Recommendation</source>
+        <translation>ஸ்மார்ட் பரிந்துரை</translation>
+    </message>
+    <message>
+        <source>Smart switch for best match</source>
+        <translation>சிறந்த பொருத்தத்திற்கு ஸ்மார்ட் மாற்றம்</translation>
+    </message>
+    <message>
+        <source>Local Model</source>
+        <translation>உள்ளூர் மாதிரி</translation>
+    </message>
+    <message>
+        <source>Online Model</source>
+        <translation>ஆன்லைன் மாதிரி</translation>
+    </message>
+    <message>
+        <source>Add Model</source>
+        <translation>மாதிரியைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Private Model</source>
+        <translation>தனிப்பட்ட மாதிரி</translation>
+    </message>
+    <message>
+        <source>Official</source>
+        <translation>அதிகாரபப்பூர்வம்</translation>
+    </message>
+    <message>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation>AI உருவாக்கிய உள்ளடக்கம் குறிப்பிற்காக மட்டுமே. தயவு செய்து அதன் துல்லியத்தை சரிபார்க்கவும்.</translation>
+    </message>
+    <message>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation>தற்காலிக அரட்டைகள் வரலாற்றில் சேமிக்கப்படாது. வெளியேறும் போது உள்ளடக்கம் முற்றிலுமாக நீக்கப்படும்.</translation>
+    </message>
+    <message>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation>அதிகபட்சம் 10 ஒரே நேரத்தில் நடக்கும் அரட்டைகள் எட்டப்பட்டன. தயவு செய்து பிறகு முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>View Now</source>
+        <translation>இப்போது காண்க</translation>
+    </message>
+    <message>
+        <source>Remind Me Later</source>
+        <translation>பிறகு நினைவூட்டு</translation>
+    </message>
+    <message>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation>வரம்பற்ற உந்தனை, கவலையற்ற எழுத்து</translation>
+    </message>
+    <message>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation>மேலும் நிகழ்நேர, விரிவான மற்றும் துல்லியமான குறிப்புகளுக்கு வலையில் தேட இயக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Upload files/images as references</source>
+        <translation>குறிப்புகளாக கோப்புகள்/படங்களை பதிவேற்றவும்</translation>
+    </message>
+    <message>
+        <source>Reference Outline / Local File</source>
+        <translation>குறிப்பு வெளிவரை / உகப்பு கோப்பு</translation>
+    </message>
+    <message>
+        <source>As reference material / As outline file</source>
+        <translation>குறிப்பு பொருளாக / வெளிவரை கோப்பாக</translation>
+    </message>
+    <message>
+        <source>File Upload</source>
+        <translation>கோப்பு பதிவேற்றம்</translation>
+    </message>
+    <message>
+        <source>As Material</source>
+        <translation>பொருளாக</translation>
+    </message>
+    <message>
+        <source>As Outline</source>
+        <translation>வெளிவரையாக</translation>
+    </message>
+    <message>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>ஒரு வெளிவரை கோப்பை மட்டுமே பதிவேற்ற ஆதரிக்கிறது</translation>
+    </message>
+    <message>
+        <source>Local Materials</source>
+        <translation>உள்ளூர் பொருட்கள்</translation>
+    </message>
+    <message>
+        <source>File Outline</source>
+        <translation>கோப்பு வெளிவரை</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>வெளிவரை</translation>
+    </message>
+    <message>
+        <source>View All</source>
+        <translation>அனைத்தும் காண்க</translation>
+    </message>
+    <message>
+        <source>Recent Creations</source>
+        <translation>சமீபத்திய உருவாக்கங்கள்</translation>
+    </message>
+    <message>
+        <source>Upload File</source>
+        <translation>கோப்பை பதிவேற்று</translation>
+    </message>
+    <message>
+        <source>Reference Outline</source>
+        <translation>குறிப்பு வெளிவரை</translation>
+    </message>
+    <message>
+        <source>Local File</source>
+        <translation>உள்ளூர் கோப்பு</translation>
+    </message>
+    <message>
+        <source>Heading</source>
+        <translation>தலைப்பு</translation>
+    </message>
+    <message>
+        <source>Export Document</source>
+        <translation>ஆவணத்தை ஏற்றுமதி செய்</translation>
+    </message>
+    <message>
+        <source>Exit Full Screen</source>
+        <translation>முழுத்திரையிலிருந்து வெளியேறு</translation>
+    </message>
+    <message>
+        <source>Untitled Document</source>
+        <translation>தலைப்பில்லாத ஆவணம்</translation>
+    </message>
+    <message>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation>உள்ளூர் பொருட்கள் பதிவேற்றப்பட வேண்டாமெனில், உள்ளடக்கத்தை உருவாக்குவதற்கு முன் பின்வருவனவற்றைச் செய்யலாம்:</translation>
+    </message>
+    <message>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation>1. உள்ளூர் மாதிரிக்கு (எ.கா., DeepSeek-R1-1.5B) அல்லது தனிப்பட்ட முறையில் வரிசைப்படுத்தப்பட்ட மாதிரிக்கு மாறு</translation>
+    </message>
+    <message>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation>2. &quot;வலை தேடல்&quot; ஐ முடக்கு</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation>ஆவணங்கள் பகுப்பாய்வு செய்ய ஆன்லைன் மாதிரியில் பதிவேற்றப்படும். தொடர்ந்து உருவாக்கவா?</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation>ஆவணங்கள் பகுப்பாய்வு செய்ய ஆன்லைன் மாதிரியில் (%1) பதிவேற்றப்படும். தொடர்ந்து உருவாக்கவா?</translation>
+    </message>
+    <message>
+        <source>Enable Privacy Mode</source>
+        <translation>தனியுரிமை பயன்முறையை இயக்கு</translation>
+    </message>
+    <message>
+        <source>Continue Generating</source>
+        <translation>தொடர்ந்து உருவாக்கு</translation>
+    </message>
+    <message>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation>உருவாக்கப்பட்ட உள்ளடக்கத்தை மேம்படுத்த அல்லது சரிசெய்ய கூடுதல் தேவைகளை உள்ளிடலாம்.</translation>
+    </message>
+    <message>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation>உள்ளூர் வெளிக்கோடு பதிவேற்றப்பட்டது கண்டறியப்பட்டது. வெளிக்கோடு உள்ளடக்கத்தை பகுப்பாய்வு செய்கிறது...</translation>
+    </message>
+    <message>
+        <source>Generating outline content...</source>
+        <translation>வெளிக்கோடு உள்ளடக்கத்தை உருவாக்குகிறது...</translation>
+    </message>
+    <message>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>திருத்தக்கூடிய வெளிக்கோடு உருவாக்கப்பட்டது. உறுதிப்படுத்திய பிறகு, ஆவண உருவாக்கத்திற்குச் செல்ல கீழே உள்ள நீல பட்டனை கிளிக் செய்யவும்.</translation>
+    </message>
+    <message>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation>பதிவேற்றப்பட்ட வெளிக்கோடு கோப்பை பாகுபாடு செய்ய முடியவில்லை. மீண்டும் பதிவேற்றவும்.</translation>
+    </message>
+    <message>
+        <source>Re-upload Outline</source>
+        <translation>வெளிக்கோட்டை மீண்டும் பதிவேற்று</translation>
+    </message>
+    <message>
+        <source>Directly generate outline using AI</source>
+        <translation>AI ஐப் பயன்படுத்தி நேரடியாக வெளிக்கோட்டை உருவாக்கு</translation>
+    </message>
+    <message>
+        <source>Add sub-chapter</source>
+        <translation>துணைஅதிகாரத்தைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Delete sub-chapter</source>
+        <translation>துணைஅதிகாரத்தை நீக்கு</translation>
+    </message>
+    <message>
+        <source>Delete chapter</source>
+        <translation>அதிகாரத்தை நீக்கு</translation>
+    </message>
+    <message>
+        <source>Add chapter</source>
+        <translation>அதிகாரத்தைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Enter chapter title</source>
+        <translation>அதிகாரத் தலைப்பை உள்ளிடவும்</translation>
+    </message>
+    <message>
+        <source>Delete this heading?</source>
+        <translation>இந்தத் தலைப்பை நீக்கவா?</translation>
+    </message>
+    <message>
+        <source>Generate document from outline</source>
+        <translation>வெளிக்கோட்டிலிருந்து ஆவணத்தை உருவாக்கு</translation>
+    </message>
+    <message>
+        <source>Save as Word</source>
+        <translation>Word ஆக சேமி</translation>
+    </message>
+    <message>
+        <source>Save as PDF</source>
+        <translation>PDF ஆக சேமி</translation>
+    </message>
+    <message>
+        <source>Save as Markdown</source>
+        <translation>மார்க்டவுன் ஆக சேமி</translation>
+    </message>
+    <message>
+        <source>Saving...</source>
+        <translation>சேமிக்கிறது...</translation>
+    </message>
+    <message>
+        <source>Saved successfully!</source>
+        <translation>வெற்றிகரமாக சேமிக்கப்பட்டது!</translation>
+    </message>
+    <message>
+        <source>Failed to save, please try again.</source>
+        <translation>சேமிக்க முடியவில்லை, தயவு செய்து மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>செயல்தவிர்</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation>மீண்டும் செய்</translation>
+    </message>
+    <message>
+        <source>Body Text</source>
+        <translation>உடல் உரை</translation>
+    </message>
+    <message>
+        <source>Heading %1</source>
+        <translation>தலைப்பு %1</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>அடிக்கோடிட்ட</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>சாய்வு</translation>
+    </message>
+    <message>
+        <source>Strikethrough</source>
+        <translation>ஊடுருவு கோடு</translation>
+    </message>
+    <message>
+        <source>Link Text</source>
+        <translation>இணைப்பு உரை</translation>
+    </message>
+    <message>
+        <source>Bulleted List</source>
+        <translation>துளையிட்ட பட்டியல்</translation>
+    </message>
+    <message>
+        <source>Numbered List</source>
+        <translation>எண்ணிட்ட பட்டியல்</translation>
+    </message>
+    <message>
+        <source>Decrease Indent</source>
+        <translation>உள்தள்ளலை குறைக்க</translation>
+    </message>
+    <message>
+        <source>Increase Indent</source>
+        <translation>உள்தள்ளலை அதிகரிக்க</translation>
+    </message>
+    <message>
+        <source>Blockquote</source>
+        <translation>மேற்கோள்</translation>
+    </message>
+    <message>
+        <source>Divider</source>
+        <translation>பிரிப்பான்</translation>
+    </message>
+    <message>
+        <source>Copy Full Text</source>
+        <translation>முழு உரையை நகலெடு</translation>
+    </message>
+    <message>
+        <source>Print Document</source>
+        <translation>ஆவணத்தை அச்சிடு</translation>
+    </message>
+    <message>
+        <source>Share Document</source>
+        <translation>ஆவணத்தை பகிர்</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>சிறியாக்கு</translation>
+    </message>
+    <message>
+        <source>Full Screen</source>
+        <translation>முழுத்திரை</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>மூடு</translation>
+    </message>
+    <message>
+        <source>Insert Link</source>
+        <translation>இணைப்பை செருகு</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>உரை:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>இணைப்பு:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>சரியான இணைப்பை உள்ளிடவும்</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>இணைப்பு உரை</translation>
+    </message>
+    <message>
+        <source>Please enter the text to be translated first.</source>
+        <translation>முதலில் மொழிபெயர்க்க வேண்டிய உரையை உள்ளிடவும்.</translation>
+    </message>
+    <message>
+        <source>Identifying source language...</source>
+        <translation>மூல மொழியை அடையாளம் காணுகிறது...</translation>
+    </message>
+    <message>
+        <source>My MCP Server</source>
+        <translation>எனது MCP சர்வர்</translation>
+    </message>
+    <message>
+        <source>Add MCP Server</source>
+        <translation>MCP சர்வரைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Delete MCP Server</source>
+        <translation>MCP சர்வரை நீக்கு</translation>
+    </message>
+    <message>
+        <source>Edit MCP Server</source>
+        <translation>MCP சர்வரைத் திருத்து</translation>
+    </message>
+    <message>
+        <source>Built-in Only</source>
+        <translation>உள்ளமைக்கப்பட்டவை மட்டும்</translation>
+    </message>
+    <message>
+        <source>Custom Added Only</source>
+        <translation>தனிப்பயனாக்கப்பட்டவை மட்டும்</translation>
+    </message>
+    <message>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>MCP&amp;Skills பயன்படுத்த, முதலில் App Store இலிருந்து UOS AI Agent நிறுவவும்.</translation>
+    </message>
+    <message>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>AI அறிவுத்தளத்தைப் பயன்படுத்த, App Store இலிருந்து முதலில் Embedding Plugins நிறுவவும்.</translation>
+    </message>
+    <message>
+        <source>Install Now</source>
+        <translation>இப்போது நிறுவு</translation>
+    </message>
+    <message>
+        <source>System Settings</source>
+        <translation>கணினி அமைப்புகள்</translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation>புளூடூத்</translation>
+    </message>
+    <message>
+        <source>Wireless Network</source>
+        <translation>வயர்லெஸ் நெட்வொர்க்</translation>
+    </message>
+    <message>
+        <source>DND Mode</source>
+        <translation>முறையீடு பயன்முறை</translation>
+    </message>
+    <message>
+        <source>Eye Comfort</source>
+        <translation>கண் ஆறுதல்</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>பிரகாசம்</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>ஒலியளவு</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>எழுத்துரு அளவு</translation>
+    </message>
+    <message>
+        <source>App Store</source>
+        <translation>பயன்பாட்டு கடை</translation>
+    </message>
+    <message>
+        <source>Schedule Management</source>
+        <translation>அட்டவணை மேலாண்மை</translation>
+    </message>
+    <message>
+        <source>Click to download</source>
+        <translation>பதிவிறக்க சொடுக்கவும்</translation>
+    </message>
+    <message>
+        <source>&lt;10k downloads</source>
+        <translation>&lt;10k பதிவிறக்கங்கள்</translation>
+    </message>
+    <message>
+        <source>&lt;100k downloads</source>
+        <translation>&lt;100k பதிவிறக்கங்கள்</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100k+ பதிவிறக்கங்கள்</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 நட்சத்திரங்கள்</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>பயன்பாட்டிற்குச் செல்ல சொடுக்கவும்</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>ஞாயிறு</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>திங்கள்</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>செவ்வாய்</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>புதன்கிழமை</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>வியாழக்கிழமை</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>வெள்ளிக்கிழமை</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>சனிக்கிழமை</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>MCP சர்வர்கள்</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>அனைத்து MCP சர்வர்களையும் தேர்வு செய்</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>நீங்கள் MCP சர்வர்களைச் சேர்த்து நிர்வகிக்கலாம்</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>விளக்கு</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>JSON கட்டமைப்பு</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>MCP JSON கட்டமைப்பு குறியீட்டை உள்ளீடு பெட்டியில் ஒட்டவும்.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>விரைவான தேடல் கருவிகளை எளிதாக்க MCP சர்வர் செயல்பாடுகளை விளக்கவும்</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>பின்னால்</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>இலவச கிரெடிட்கள் வழங்கப்பட்டன</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>உங்கள் சோதனை கணக்கிற்கான இலவச உருவாக்க கிரெடிட்களை நீங்கள் ஆட்டேறிவிட்டீர்கள். இந்த மாதம் செல்லுபடியாகும் கூடுதல் 200 இலவச கிரெடிட்களை நாங்கள் உங்களுக்கு வழங்கியுள்ளோம். மேலும் அம்சங்களை ஆராய்ந்து, UOS AI-ன் வரம்பற்ற திறன்களை திறக்கவும்!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>இப்போது இல்லை</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>நான் {{அடையாளம்/பதவியை உள்ளிடவும்}}. எனக்கு {{தலைப்பை உள்ளிடவும்}} பற்றி ஒரு {{அறிக்கை/கட்டுரை/வெளியீடு/வீசாட் பொது கணக்கு இடுகை/அறிவிப்பு/ஆராய்ச்சி அறிக்கை/வேலை சுருக்கம்/பேருரை}} எழுத உதவுங்கள், நீளம் சுமார் {{1000}} சொற்கள். உள்ளடக்கத் தேவைகள் {{தேவைகளை/உள்ளடக்க கவனத்தை/எழுத்து பாணியை உள்ளிடவும் போன்றவை.}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>அரட்டை வரலாற்றை நிர்வகி</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>குரல் அரட்டை</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>விரிவாக்கு</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>சுருக்கு</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>திருத்தப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>உருவாக்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>உங்களுக்கு %1 புதிய பதிலளிக்கப்பட்ட அரட்டைகள் உள்ளன</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>தேடல் வரலாறு</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>இந்த உரையாடலை நீக்குவதை உறுதிப்படுத்தவும்</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>இது UOS AI இலிருந்து அனைத்து தொடர்புடைய உள்ளடக்கங்களையும் அகற்றும்</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>இப்போது பயன்படுத்து</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>எனது திறன்கள்</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>நிறுவல் அடைவினைத் திறக்கவும்</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>புதுப்பிக்கவும்</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>திறனை இறக்குமதி செய்</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>நீங்கள் திறன்களைச் சேர்க்க மற்றும் நிர்வகிக்க முடியும்</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>குரல் அரட்டையிலிருந்து வெளியேறு</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>பின்வரும் %1 கோப்புகள் தவறானவை மற்றும் கிடைக்கவில்லை. தொடரவா?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>பின்வரும் கோப்பு தவறானது மற்றும் கிடைக்கவில்லை. தொடரவா?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>முந்தைய</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: புதிய UI மேம்படுத்தல்</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>புதிய தொடர்பு அனுபவத்திற்கான புதிய சாளர முறை</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>ஒழுங்கமைக்கப்பட்ட அணுகல் மற்றும் எளிதான பயன்பாட்டிற்கான தெளிவான பக்கப்பட்டி வழிசெலுத்தல்</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>பண்பட்ட உள்ளடக்கத்துடன் கூடிய அகலமான, கவனம் செலுத்தப்பட்ட பணிப்பகம்</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>முக்கிய பணிகளை கவனம் செலுத்தவும் ஈர்க்கவும் தெளிவான அடுக்கு முறை</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>உங்கள் மதிப்புமிக்க நேரத்தை சேமிக்க பல்பணி செயல்பாடு</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>அமைதியான பின்னணி பல்பணி: இனி காத்திருக்க வேண்டாம்</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>உங்கள் பணிப்பாய்வை பாதிக்காமல் எப்போதும் பணிகளை ஒதுக்கவும்</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>தொடர்ச்சியான கண்காணிப்பின்றி உடனடி முன்னேற்ற புதுப்பிப்புகளைப் பெறுங்கள்</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>ஈர்க்கும் பிரிக்கப்பட்ட திரை எழுத்து: துல்லியமான, பாதுகாப்பான மற்றும் கண்காணிக்கக்கூடியது</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>பிரிக்கப்பட்ட திரை அரட்டை மற்றும் திருத்தம்: சாளர மாற்றம் இல்லாமல்</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>நன்கு அடிப்படையாகக் கொண்ட உள்ளடக்க உருவாக்கத்திற்கு ஆழமான தரவு &quot;உள்ளீடு&quot;</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>கைமுறை திருத்தத்துடன் முதலில் வெளிக்கோடு மற்றும் ஒரு கிளிக் ஏற்றுமதி</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>சாதனத்தில்/தனிப்பட்ட மாதிரிகள் தரவு தனியுரிமை மற்றும் பாதுகாப்பை உறுதிப்படுத்துகின்றன</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>கணினி கட்டுப்பாடு மற்றும் பரந்த திறன்கள்: அனைத்தும் ஒரே கட்டளையில்</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>காட்சி கணினி கட்டுப்பாடு: எழுத்துருக்களை சரிசெய்தல், வை-ஃபையை மாற்றுதல் மற்றும் பல</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>அதிக அதிர்வெண் அலுவலக திறன்கள்: எழுதுதல், மொழிபெயர்ப்பு மற்றும் இணைத்தல்</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>முடிவற்ற திறன்களைத் திறக்க ஒரு கிளிக் திறன் இறக்குமதி</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>வரலாற்றிற்கான தொகுதி மேலாண்மை மற்றும் துல்லியமான தேடல்</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>உலகளாவிய விரைவு தேடல்: விநாடிகளில் வரலாற்றை அணுகுங்கள்</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>துல்லியமான அரட்டை வரலாறு தேடலுக்கு முகவர் அடிப்படையிலான வடிகட்டல்</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>சுத்தமான மற்றும் ஒழுங்கமைக்கப்பட்ட பணிப்பகத்திற்கு திறமையான தொகுதி மேலாண்மை</translation>
+    </message>
+    <message>
+        <source>Go to configuration</source>
+        <translation>கட்டமைப்பிற்குச் செல்லவும்</translation>
+    </message>
+    <message>
+        <source>No account</source>
+        <translation>கணக்கு இல்லை</translation>
+    </message>
+    <message>
+        <source>Input question</source>
+        <translation>உள்ளீட்டு கேள்வி</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>AI உருவாக்கிய உள்ளடக்கம் குறிப்பிற்காக மட்டுமே, தயவு செய்து தகவலின் துல்லியத்தை கவனிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Welcome to UOS AI</source>
+        <translation>UOS AI க்கு வரவேற்றுகிறது</translation>
+    </message>
+    <message>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation>UOS AI உங்களுக்கு உதவ முடியும் சில விஷயங்கள் இங்கே</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>நிறுத்து</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>இயக்கு</translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation>மறுமுயற்சி</translation>
+    </message>
+    <message>
+        <source>Clear conversation history</source>
+        <translation>உரையாடல் வரலாற்றை அழி</translation>
+    </message>
+    <message>
+        <source>Please connect the microphone and try again</source>
+        <translation>தயவு செய்து மைக்ரோஃபோனை இணைத்து மீண்டும் முயற்சிக்கவும்</translation>
+    </message>
+    <message>
+        <source>Chat history cleared</source>
+        <translation>உரையாடல் வரலாறு அழிக்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Click to start/stop recording</source>
+        <translation>பதிவைத் தொடங்க/நிறுத்த சொடுக்கவும்</translation>
+    </message>
+    <message>
+        <source>Listening</source>
+        <translation>கேட்கிறது</translation>
+    </message>
+    <message>
+        <source>Sleeping</source>
+        <translation>உறங்கிக்கொண்டிருக்கிறது</translation>
+    </message>
+    <message>
+        <source>No microphone detected</source>
+        <translation>மைக்ரோஃபோன் எதுவும் கண்டறியப்படவில்லை</translation>
+    </message>
+    <message>
+        <source>Connection failed, click to try again</source>
+        <translation>இணைப்பு தோல்வியடைந்தது, மீண்டும் முயற்சிக்க சொடுக்கவும்</translation>
+    </message>
+    <message>
+        <source>Click on the animation%1 to activate</source>
+        <translation>செயல்பாட்டைச் செயல்படுத்த அதில் சொடுக்கவும்%1</translation>
+    </message>
+    <message>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation>குரல் உள்ளீடு தற்காலிகமாக கிடைக்கவில்லை, தயவு செய்து பிணையத்தை சரிபார்க்கவும்!</translation>
+    </message>
+    <message>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>சேவையகத்துடன் இணைக்க முடியவில்லை, தயவு செய்து உங்கள் பிணையத்தை சரிபார்க்கவும் அல்லது பிறகு மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Voice conversation</source>
+        <translation>குரல் உரையாடல்</translation>
+    </message>
+    <message>
+        <source>Click the animation or press Enter to send</source>
+        <translation>அனிமேஷனில் சொடுக்கவும் அல்லது அனுப்ப Enter விசையை அழுத்தவும்</translation>
+    </message>
+    <message>
+        <source>Stop recording after %1 seconds</source>
+        <translation>%1 நொடிகளுக்குப் பிறகு பதிவை நிறுத்து</translation>
+    </message>
+    <message>
+        <source>Thinking</source>
+        <translation>சிந்திக்கிறது</translation>
+    </message>
+    <message>
+        <source>Click animation to interrupt</source>
+        <translation>குறுக்கிட அனிமேஷனைச் சொடுக்கவும்</translation>
+    </message>
+    <message>
+        <source>Answering</source>
+        <translation>பதிலளிக்கிறது</translation>
+    </message>
+    <message>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation>உங்கள் இலவச கணக்கு ஒதுக்கீடு தீர்ந்துவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation>உங்கள் இலவச கணக்கு காலாவதியாகிவிட்டது, தொடர்ந்து பயன்படுத்த உங்கள் மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
+    </message>
+    <message>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI பயன்படுத்தப்படுவதற்கு முன்பு AI மாதிரி கணக்கு உள்ளமைக்கப்பட வேண்டும். தயவு செய்து முதலில் ஒரு மாதிரி கணக்கை உள்ளமைக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Activate</source>
+        <translation>செயல்படுத்து</translation>
+    </message>
+    <message>
+        <source>Voice input</source>
+        <translation>குரல் உள்ளீடு</translation>
+    </message>
+    <message>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation>குரல் ஒலிபரப்பு தற்காலிகமாக கிடைக்கவில்லை, தயவு செய்து பிணையத்தைச் சரிபார்க்கவும்!</translation>
+    </message>
+    <message>
+        <source>Turn off voice conversation</source>
+        <translation>குரல் உரையாடலை முடக்கு</translation>
+    </message>
+    <message>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation>படம் உருவாக்கப்பட்டது, அதைப் பார்க்க உரையாடல் இடைமுகத்திற்கு மாறவும்.</translation>
+    </message>
+    <message>
+        <source>No account, please configure an account</source>
+        <translation>கணக்கு இல்லை, ஒரு கணக்கை உள்ளமைக்கவும்</translation>
+    </message>
+    <message>
+        <source>Answer each question up to 5 times</source>
+        <translation>ஒவ்வொரு கேள்விக்கும் 5 முறை வரை பதிலளி</translation>
+    </message>
+    <message>
+        <source>Copied successfully</source>
+        <translation>வெற்றிகரமாக நகலெடுக்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Sound output device not detected</source>
+        <translation>ஒலி வெளியீடு சாதனம் கண்டறியப்படவில்லை</translation>
+    </message>
+    <message>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation>ஒலி வெளியீடு சாதனம் கண்டறியப்படவில்லை, தயவு செய்து சரிபார்த்து மீண்டும் முயற்சிக்கவும்!</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>பயன்முறை</translation>
+    </message>
+    <message>
+        <source>Window Mode</source>
+        <translation>சாளர பயன்முறை</translation>
+    </message>
+    <message>
+        <source>Sidebar Mode</source>
+        <translation>பக்கப்பட்டி பயன்முறை</translation>
+    </message>
+    <message>
+        <source>Assistant List</source>
+        <translation>உதவியாளர் பட்டியல்</translation>
+    </message>
+    <message>
+        <source>Agent List</source>
+        <translation>முகவர் பட்டியல்</translation>
+    </message>
+    <message>
+        <source>UOS System Assistant</source>
+        <translation>UOS கணினி உதவியாளர்</translation>
+    </message>
+    <message>
+        <source>Deepin System Assistant</source>
+        <translation>Deepin கணினி உதவியாளர்</translation>
+    </message>
+    <message>
+        <source>Personal Knowledge Assistant</source>
+        <translation>தனிப்பட்ட அறிவு உதவியாளர்</translation>
+    </message>
+    <message>
+        <source>Please configure the knowledge base</source>
+        <translation>தயவு செய்து அறிவுத்தளத்தை கட்டமைக்கவும்</translation>
+    </message>
+    <message>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>[தனிப்பட்ட அறிவு உதவியாளரை] பயன்படுத்துவதற்கு முன், அறிவுத்தளத்தை கட்டமைப்பது அவசியம். அறிவுத்தளத்தை கட்டமைத்த பிறகு, AI நீங்கள் அறிவுத்தளத்தில் கட்டமைத்த உள்ளடக்கத்தின் அடிப்படையில் கேள்விகளுக்கு பதிலளிக்கும் அல்லது உள்ளடக்கத்தை உருவாக்கும்.</translation>
+    </message>
+    <message>
+        <source>Please configure the large model</source>
+        <translation>தயவு செய்து பெரிய மாதிரியை கட்டமைக்கவும்</translation>
+    </message>
+    <message>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>தனிப்பட்ட அறிவு உதவியாளரை பெரிய மாதிரியை கட்டமைத்த பிறகே பயன்படுத்த முடியும்.</translation>
+    </message>
+    <message>
+        <source>To configure</source>
+        <translation>கட்டமைக்க</translation>
+    </message>
+    <message>
+        <source>To install</source>
+        <translation>நிறுவ</translation>
+    </message>
+    <message>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation>தயவு செய்து [EmbeddingPlugins] ஐ நிறுவவும்</translation>
+    </message>
+    <message>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation>இந்த உதவியாளர் இயங்க பெறுதிகளை (EmbeddingPlugins) நிறுவ வேண்டும்</translation>
+    </message>
+    <message>
+        <source>Drag files here to add them.</source>
+        <translation>கோப்புகளைச் சேர்க்க இங்கே இழுக்கவும்.</translation>
+    </message>
+    <message>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation>நீங்கள் 3 கோப்புகள் வரை மட்டுமே சேர்க்க முடியும், ஆதரிக்கப்படும் கோப்பு வகைகள்: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, குறியீடு கோப்புகள் போன்றவை.</translation>
+    </message>
+    <message>
+        <source>You can only add a maximum of one file.</source>
+        <translation>நீங்கள் அதிகபட்சம் ஒரு கோப்பை மட்டுமே சேர்க்க முடியும்.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>கோப்பு வடிவம் ஆதரிக்கப்படவில்லை.</translation>
+    </message>
+    <message>
+        <source>Summarize the key content of the file.</source>
+        <translation>கோப்பின் முக்கிய உள்ளடக்கத்தை சுருக்கவும்.</translation>
+    </message>
+    <message>
+        <source>File Error</source>
+        <translation>கோப்பு பிழை</translation>
+    </message>
+    <message>
+        <source>File has been deleted.</source>
+        <translation>கோப்பு நீக்கப்பட்டது.</translation>
+    </message>
+    <message>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation>கோப்பின் அளவு 100MB வரம்பை மீறியுள்ளது.</translation>
+    </message>
+    <message>
+        <source>Upload a document</source>
+        <translation>ஒரு ஆக்கம் பதிவேற்றவும்</translation>
+    </message>
+    <message>
+        <source>File deleted</source>
+        <translation>கோப்பு நீக்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>No text was parsed</source>
+        <translation>எந்த உரையும் பாகுபாடு செய்யப்படவில்லை</translation>
+    </message>
+    <message>
+        <source>Reference</source>
+        <translation>குறிப்பு</translation>
+    </message>
+    <message>
+        <source>Instruction</source>
+        <translation>வழிமுறை</translation>
+    </message>
+    <message>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation>செயல்படுத்த உள்ளீடு பெட்டியில் &quot;/&quot; எழுதுக.</translation>
+    </message>
+    <message>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation>தயவு செய்து உள்ளிடவும்; வரியை மாற்ற “Ctrl+Enter”.</translation>
+    </message>
+    <message>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation>உங்கள் கேள்வியை உள்ளிடவும், அல்லது ஒரு கட்டளையைத் தேர்ந்தெடுக்க &quot;/&quot; எழுதுக
+புதிய வரியைத் தொடங்க &quot;Ctrl+Enter&quot;</translation>
+    </message>
+    <message>
+        <source>Search complete.</source>
+        <translation>தேடல் முடிந்தது.</translation>
+    </message>
+    <message>
+        <source>Click to view results</source>
+        <translation>முடிவுகளைக் காண சொடுக்கவும்</translation>
+    </message>
+    <message>
+        <source>edit</source>
+        <translation>தொகு</translation>
+    </message>
+    <message>
+        <source>save</source>
+        <translation>சேமி</translation>
+    </message>
+    <message>
+        <source>copy</source>
+        <translation>நகல்</translation>
+    </message>
+    <message>
+        <source>lines of code collapsed</source>
+        <translation>குறியீடு வரிகள் சுருக்கப்பட்டன</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>வேறு பெயரில் சேமி</translation>
+    </message>
+    <message>
+        <source>Thinking has stopped</source>
+        <translation>சிந்திப்பு நிறுத்தப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation>ஆழமாக சிந்தித்தது (%1 நொடிகள்)</translation>
+    </message>
+    <message>
+        <source>New Conversation</source>
+        <translation>புதிய உரையாடல்</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>வரலாறு</translation>
+    </message>
+    <message>
+        <source>No History Records</source>
+        <translation>வரலாறு பதிவுகள் இல்லை</translation>
+    </message>
+    <message>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation>உரையாடலை நிச்சயமாக நீக்க வேண்டுமா? ஒருமுறை நீக்கினால் அதை மீட்டெடுக்க முடியாது.</translation>
+    </message>
+    <message>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation>இந்த உரையாடலில் பயன்படுத்தப்பட்ட %1 முகவர் நீக்கப்பட்டுள்ளது</translation>
+    </message>
+    <message>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation>இந்த உரையாடலைக் காண முடியாது. அதைக் காண, %1 முகவரை நிறுவி மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation>அசல் உரையாடல் மாதிரி நீக்கப்பட்டுள்ளது. உரையாடலைத் தொடர்வதற்காக உங்களுக்காக ஒரு புதிய மாதிரிக்கு மாற்றியுள்ளோம்.</translation>
+    </message>
+    <message>
+        <source>Recommendations</source>
+        <translation>பரிந்துரைகள்</translation>
+    </message>
+    <message>
+        <source>No Model</source>
+        <translation>மாதிரி இல்லை</translation>
+    </message>
+    <message>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation>மாதிரி எதுவும் இல்லை. தயவு செய்து அமைப்புகளில் ஒரு மாதிரியை நிறுவவும் அல்லது கட்டமைக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation>உங்கள் உருவாக்கத்திற்கான உள்ளடக்கத் தலைப்பு மற்றும் தேவைகளை விவரிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation>நீங்கள் மொழிபெயர்க்க விரும்பும் உள்ளடக்கத்தை உள்ளிடவும் மற்றும் இலக்கு மொழியைக் குறிப்பிடவும். இயல்புநிலை மொழிபெயர்ப்பு சீனம்.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation>நீங்கள் செயலாக்க வேண்டிய உரையை உள்ளிடவும் மற்றும் உங்கள் தேவைகளைக் குறிப்பிடவும்.</translation>
+    </message>
+    <message>
+        <source>New Agent Added</source>
+        <translation>புதிய முகவர் சேர்க்கப்பட்டது</translation>
+    </message>
+    <message>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation>புதிய எழுத்து, உரை செயலாக்கம் மற்றும் மொழிபெயர்ப்பு முகவர்கள் சேர்க்கப்பட்டுள்ளன. இப்போது அவற்றைப் பாருங்கள்.</translation>
+    </message>
+    <message>
+        <source>Try it</source>
+        <translation>முயற்சிக்கவும்</translation>
+    </message>
+    <message>
+        <source>Write an article based on the following document:</source>
+        <translation>பின்வரும் ஆவணத்தின் அடிப்படையில் ஒரு கட்டுரை எழுதுங்கள்:</translation>
+    </message>
+    <message>
+        <source>Translate the following document into English:</source>
+        <translation>பின்வரும் ஆவணத்தை ஆங்கிலத்தில் மொழிபெயர்க்கவும்:</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server</source>
+        <translation>Mcp சர்வரைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Add Server</source>
+        <translation>சர்வரைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Add failed! Error reason:</source>
+        <translation>சேர்க்க தோல்வியடைந்தது! பிழைக் காரணம்:</translation>
+    </message>
+    <message>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation>MCP சூழல் காணவில்லை. தயவு செய்து 【UOS AI Agent】 நிறுவவும்</translation>
+    </message>
+    <message>
+        <source>Calling</source>
+        <translation>அழைக்கிறது</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>முடிந்தது</translation>
+    </message>
+    <message>
+        <source>Call Failed</source>
+        <translation>அழைப்பு தோல்வியடைந்தது</translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation>ரத்து செய்யப்பட்டது</translation>
+    </message>
+    <message>
+        <source>params</source>
+        <translation>அளவுருக்கள்</translation>
+    </message>
+    <message>
+        <source>result</source>
+        <translation>முடிவு</translation>
+    </message>
+    <message>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>MCP சர்வருக்கு, அதிகாரப்பூர்வமாக வெளியிடப்பட்ட மாதிரியான &quot;DeepSeek-Trial Account&quot;-க்கு மாறவும்</translation>
+    </message>
+    <message>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation>MCP சர்வர் கட்டளையை உள்ளிடவும், எ.கா., &quot;எனக்காக கணினியை இருண்ட பயன்முறைக்கு மாற்று&quot;</translation>
+    </message>
+    <message>
+        <source>Agent server is not available</source>
+        <translation>ஏஜென்ட் சர்வர் கிடைக்கவில்லை</translation>
+    </message>
+    <message>
+        <source>Agent server exception</source>
+        <translation>ஏஜென்ட் சர்வர் விதிவிலக்கு</translation>
+    </message>
+    <message>
+        <source>MCP server is not available</source>
+        <translation>MCP சர்வர் கிடைக்கவில்லை</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>உறுதிப்படுத்து</translation>
+    </message>
+    <message>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation>MCP சேவையைப் பயன்படுத்தி ஒரே கட்டளையில் பல கோப்பு மற்றும் பயன்பாடு பணிகளை தானியக்கமாக்கவும். இப்போது முயற்சிக்கவும்!</translation>
+    </message>
+    <message>
+        <source>Use later</source>
+        <translation>பிறகு பயன்படுத்து</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server</source>
+        <translation>MCP சர்வரை இயக்கு</translation>
+    </message>
+    <message>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation>MCP சூழல் &quot;UOS AI Agent&quot; நிறுவப்பட்ட பிறகு, </translation>
+    </message>
+    <message>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation>-ஐ கிளிக் செய்து, MCP சர்வர் பட்டியலில் &quot;uos-mcp&quot;-ஐத் தேர்ந்தெடுக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation>இதைச் சொல்ல முயற்சிக்கவும்: &quot;கணினியை இருண்ட பயன்முறைக்கு மாற்று&quot;.</translation>
+    </message>
+    <message>
+        <source>Try it now</source>
+        <translation>இப்போது முயற்சிக்கவும்</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation>Mcp சர்வரைச் சேர்[வழிகாட்டுதல் பக்கம்]</translation>
+    </message>
+    <message>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation>முதல் முறை பயனர்கள்: பயன்பாட்டு ஸ்டோர் வழியாக MCP சூழல் &quot;UOS AI Agent&quot; ஐ நிறுவவும்.</translation>
+    </message>
+    <message>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation>JSON கோப்பு வடிவம் தவறாக உள்ளது, தயவு செய்து சரிபார்த்து மீண்டும் சமர்ப்பிக்கவும்</translation>
+    </message>
+    <message>
+        <source>Install Now &gt;</source>
+        <translation>இப்போது நிறுவு &gt;</translation>
+    </message>
+    <message>
+        <source>General Chat</source>
+        <translation>பொது அரட்டு</translation>
+    </message>
+    <message>
+        <source>Now in Private Chat</source>
+        <translation>இப்போது தனிப்பட்ட அரட்டில் உள்ளீர்கள்</translation>
+    </message>
+    <message>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation>தனிப்பட்ட அரட்டு செய்திகள் வரலாற்றில் சேமிக்கப்படாது, மேலும் நீங்கள் அரட்டை விட்டு வெளியேறும்போது நிரந்தரமாக நீக்கப்படும்.</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation>ஸ்கிரீன்ஷாட் Q&amp;A    குறுக்குவழி (Ctrl+Alt+Q), அதிகபட்சம் 3 படங்கள் ஆதரிக்கப்படுகின்றன.</translation>
+    </message>
+    <message>
+        <source>Cannot be used during screen recording</source>
+        <translation>திரை பதிவு செய்யும் போது பயன்படுத்த முடியாது</translation>
+    </message>
+    <message>
+        <source>You can upload up to 3 files or image</source>
+        <translation>நீங்கள் அதிகபட்சம் 3 கோப்புகள் அல்லது படத்தை பதிவேற்றலாம்</translation>
+    </message>
+    <message>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation>தயவு செய்து ஒழுங்கற்ற கோப்பை நீக்கி மீண்டும் அனுப்பவும்</translation>
+    </message>
+    <message>
+        <source>Add Private Chat</source>
+        <translation>தனிப்பட்ட அரட்டைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation>[ஸ்கிரீன்ஷாட் Q&amp;A] சேர்</translation>
+    </message>
+    <message>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation>ஒரு ஸ்கிரீன்ஷாட் எடுத்து உள்ளடக்கத்தை UOS AI க்கு அனுப்பவும். நீங்கள் ஒரு படத்தை நேரடியாகவும் பதிவேற்றலாம்.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>சரி</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>அடுத்து</translation>
+    </message>
+    <message>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation>[ தனிப்பட்ட அரட்டு முறை ] சேர் - அரட்டுகள் சேமிக்கப்படாது.</translation>
+    </message>
+    <message>
+        <source>No text extracted</source>
+        <translation>உரை எதுவும் பிரித்தெடுக்கப்படவில்லை</translation>
+    </message>
+    <message>
+        <source>Image size exceeds 15 MB</source>
+        <translation>பட அளவு 15 MB ஐ விட அதிகமாக உள்ளது</translation>
+    </message>
+    <message>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation>அறிவுத்தளத்தைத் திறந்த பிறகு, பதில்கள் அதன் உள்ளடக்கத்தை அடிப்படையாகக் கொண்டிருக்கும். பதிலளிப்பு வேகம் இயந்திரத்தின் செயல்திறன் மற்றும் அறிவுத்தளத்தின் அளவைப் பொறுத்தது.</translation>
+    </message>
+    <message>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation>ஏதேனும் கட்டளை அல்லது MCP தேர்ந்தெடுக்கப்பட்டால் அறிவுத்தளம் கிடைக்காது.</translation>
+    </message>
+    <message>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation>அறிவுத்தளம் செயலில் இருக்கும் போது MCP முடக்கப்பட்டுள்ளது.</translation>
+    </message>
+    <message>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation>அறிவுத்தளம் செயலில் இருக்கும் போது கட்டளைகள் முடக்கப்பட்டுள்ளன.</translation>
+    </message>
+    <message>
+        <source>Copy succeeded.</source>
+        <translation>நகலெடுத்தல் வெற்றி.</translation>
+    </message>
+    <message>
+        <source>Copy failed. Please try again.</source>
+        <translation>நகலெடுத்தல் தோல்வி. தயவு செய்து மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation>தேடுகிறது</translation>
+    </message>
+    <message>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation>%1 குறிப்பு ஆவணங்கள் பெறப்பட்டன (%2s)</translation>
+    </message>
+    <message>
+        <source>Clear History</source>
+        <translation>வரலாற்றை அழி</translation>
+    </message>
+    <message>
+        <source>Delete all records?</source>
+        <translation>அனைத்து பதிவுகளையும் நீக்கவா?</translation>
+    </message>
+    <message>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation>ஒருமுறை நீக்கினால், உள்ளடக்கத்தை மீட்டெடுக்க முடியாது!</translation>
+    </message>
+    <message>
+        <source>Recommend official models</source>
+        <translation>அதிகாரப்பூர்வமான மாதிரிகளை பரிந்துரைக்கிறது</translation>
+    </message>
+    <message>
+        <source>Disable MCP</source>
+        <translation>MCP-ஐ முடக்கு</translation>
+    </message>
+    <message>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>அதிகாரப்பூர்வமான மாதிரியான &quot;DeepSeek-Trial Account&quot;-ஐப் பயன்படுத்துவது பரிந்துரைக்கப்படுகிறது</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>விரைவு திற</translation>
+    </message>
+    <message>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation>MCP சர்வர் தானியங்கி பயன்முறைக்கு மேம்படுத்தப்பட்டது</translation>
+    </message>
+    <message>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation>MCP சர்வர் தானியங்கி பயன்முறைக்கு மேம்படுத்தப்பட்டுள்ளது, இது நீங்கள் ஒரு கிளிக்கில் அனைத்து MCP சர்வரையும் அணுக அனுமதிக்கிறது </translation>
+    </message>
+    <message>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation>. இது கணினி அமைப்பு மற்றும் கோப்பு செயலாக்கம் போன்ற பணிகளை ஒரு கிளிக்கில் தானியங்கிப்பதற்கு உங்களை அனுமதிக்கிறது.</translation>
+    </message>
+    <message>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation>MCP சர்வர் சேர்ப்பது அமைப்புகளுக்கு நகர்த்தப்பட்டது.</translation>
+    </message>
+    <message>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation>மேலும் MCP சர்வரைச் சேர்க்க, அமைப்புகள் &gt; MCP சர்வருக்குச் செல்லவும்.</translation>
+    </message>
+    <message>
+        <source>Got it</source>
+        <translation>புரிந்தது</translation>
+    </message>
+    <message>
+        <source>Complimentary Model Credits</source>
+        <translation>இலவச மாதிரி கிரெடிட்கள்</translation>
+    </message>
+    <message>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation>தற்போதுள்ள கணினி அமைப்பு DeepSeek சோதனை கணக்கு மாதிரியை வழங்குகிறது, இது ஒவ்வொரு மாதத்தின் தொடக்கத்திலும் இலவச ஒதுக்கீட்டை தானாகவே புதுப்பிக்கிறது, இதனால் நீங்கள் கவலைப்படாமல் பயன்படுத்தலாம்.</translation>
+    </message>
+    <message>
+        <source>Claim Credits</source>
+        <translation>கிரெடிட்களைப் பெறு</translation>
+    </message>
+    <message>
+        <source>Get a free account</source>
+        <translation>இலவச கணக்கைப் பெறு</translation>
+    </message>
+    <message>
+        <source>Claim Free Credits</source>
+        <translation>இலவச கிரெடிட்களைப் பெறு</translation>
+    </message>
+    <message>
+        <source>Successfully Claimed</source>
+        <translation>வெற்றிகரமாகப் பெறப்பட்டது</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation>பெறுவதில் தோல்வி. தயவு செய்து மீண்டும் முயற்சிக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server&amp;</source>
+        <translation>MCP சர்வரை இயக்கு(&amp;E)</translation>
+    </message>
+    <message>
+        <source>Disable MCP Server</source>
+        <translation>MCP சர்வரை முடக்கு</translation>
+    </message>
+    <message>
+        <source>Configure MCP Server</source>
+        <translation>MCP சர்வரை கட்டமைக்க</translation>
+    </message>
+    <message>
+        <source>Enabling MCP Server Features</source>
+        <translation>MCP சர்வர் அம்சங்களை இயக்குகிறது</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>சில மூன்றாம் தரப்பு MCP சர்வர் அம்சங்களில் சில ஆபத்துகள் உள்ளன. தயவு செய்து அவற்றை எச்சரிக்கையுடன் பயன்படுத்தவும். இந்த சேவையை இயக்கினால், ஒரு உள்ளமைக்கப்பட்ட கருவி தேவையான சார்புகளைக் கண்டறிந்து தானாகவே பதிவிறக்கம் செய்யும். இந்த பதிவிறக்க செயல்முறை தரவு கட்டணத்தை ஏற்படுத்தும். இந்த ஆபத்துகளை அறிந்து கொண்டு எச்சரிக்கையுடன் முன்னேறவும்.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>நான் புரிந்துகொண்டேன் மற்றும் இந்த சேவையைப் பயன்படுத்த ஒப்புக்கொள்கிறேன்</translation>
+    </message>
+    <message>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation>UOS AI பின்தொடர்தல்/எழுதுதல்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">நீங்கள் தேர்ந்தெடுத்த உரை 5000 எழுத்து வரம்பை மீறிவிட்டது.</translation>
+        <translation>நீங்கள் தேர்ந்தெடுத்த உரை 5000 எழுத்து வரம்பை தாண்டியுள்ளது.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
-        <translation>நீங்கள் தேர்ந்தெடுத்த உரை 2000 எழுத்து வரம்பை மீறிவிட்டது.</translation>
+        <translation>நீங்கள் தேர்ந்தெடுத்த உரை 2000 எழுத்து வரம்பை தாண்டியுள்ளது.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
-        <translation>பிணையம் ஆஃப்லைனில் உள்ளது, உரை-பேச்சு நிறுத்தப்பட்டது</translation>
+        <translation>இணையம் ஆஃப்லைனில் உள்ளது, உரையை பேச்சாக மாற்றுவதை நிறுத்து</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">பிரகாசம் ஏற்கனவே அதிகபட்சத்தில் உள்ளது மேலும் அதிகரிக்க முடியாது.</translation>
+        <translation>பிரகாசம் ஏற்கனவே அதிகபட்சத்தில் உள்ளது, மேலும் அதிகரிக்க முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">பிரகாசம் ஏற்கனவே குறைந்தபட்சத்தில் உள்ளது மேலும் குறைக்க முடியாது.</translation>
+        <translation>பிரகாசம் ஏற்கனவே குறைந்தபட்சத்தில் உள்ளது, மேலும் குறைக்க முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>AI கூட்டம் அட்டவணை</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">உங்கள் கணினி நினைவகம் %0.</translation>
+        <translation>உங்கள் கணினி நினைவகம் %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">மொழி அமைப்பு இடைமுகம் திறக்கப்பட்டது. தயவுசெய்து இந்த இடைமுகத்தில் அதை அமைக்கவும்.</translation>
+        <translation>மொழி அமைப்பு இடைமுடக்கம் திறக்கப்பட்டது. இந்த இடைமுகத்தில் அதை அமைக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">தற்போதைய முறை ஏற்கனவே %1 முறை.</translation>
+        <translation>தற்போதைய பயன்முறை ஏற்கனவே %1 பயன்முறையில் உள்ளது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">மூட முடியவில்லை ஏனெனில் தற்போதைய முறை %1 இலக்கு முறையுடன் பொருந்தவில்லை.</translation>
+        <translation>தற்போதைய பயன்முறை %1 இலக்கு பயன்முறையுடன் பொருந்தவில்லை என்பதால் மூட முடியவில்லை.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">சமநிலை முறையை அணைக்க முடியாது.</translation>
+        <translation>சமநிலை பயன்முறையை முடக்க முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">பூட்டு திரை உங்களுக்காக திறக்கப்பட்டது</translation>
+        <translation>பூட்டுத் திரை உங்களுக்காக திறக்கப்பட்டது</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">திரை ஷாட் அல்லது பதிவு முடிந்தது</translation>
+        <translation>திரைப்பிடிப்பு அல்லது பதிவு முடிந்தது</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">ஒரே ஒரு திரை, திரை முறையை மாற்ற முடியாது.</translation>
+        <translation>ஒரே ஒரு திரை மட்டுமே உள்ளது, திரை பயன்முறையை மாற்ற முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">இது தற்போதைய காட்சி முறைக்கு ஒத்திருக்கிறது. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.</translation>
+        <translation>இது தற்போதைய காட்சி பயன்முறையை போலவே உள்ளது. மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">ஒரே ஒரு திரை, திரையை மாற்ற முடியாது.</translation>
+        <translation>ஒரே ஒரு திரை மட்டுமே உள்ளது, திரையை மாற்ற முடியாது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">உங்கள் கட்டளை வழங்கப்பட்டது.</translation>
+        <translation>உங்கள் கட்டளை வழங்கப்பட்டது.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>கோப்பு %1 ஐ மறுபெயரிடுவதில் தோல்வி</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>தொகுதி மறுபெயரிடுதல் முடிந்தது, %1 கோப்புகள் வெற்றிகரமாக மறுபெயரிடப்பட்டன, %2 கோப்புகள் தோல்வியடைந்தன.
+பிழை விவரங்கள்:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>மின்னஞ்சல் கிளையன்ட் திறக்கப்பட்டது, அனுப்ப உறுதிப்படுத்தவும்</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>பயன்பாட்டு கடை திறக்கப்பட்டது, பயன்பாட்டை நிறுவத் தயாராகிறது: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>பயன்பாட்டு கடை இலக்கு காலியாக உள்ளது</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>பயன்பாட்டு கடை இலக்கைத் திறப்பதில் தோல்வி: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>பயன்பாட்டு கடை இதற்காக திறக்கப்பட்டது: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>கணினி நினைவக பயன்பாட்டைப் பெறுங்கள்</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>கணினி CPU பயன்பாட்டைப் பெறுங்கள்</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>கணினி வட்டு தகவலைப் பெறுங்கள்</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>இருண்ட தீமுக்கு மாறு</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>ஒளிரும் தீமுக்கு மாறு</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>டெஸ்க்டாப் பின்னணியை மாற்று</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>டாக் முறைமையை மாற்று</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>கண் பாதுகாப்பு முறைமையை இயக்கு</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
         <translation>புதுப்பிக்க</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
-        <translation>புதுப்பித்தலை ரத்து செய்</translation>
+        <translation>புதுப்பித்தலை ரத்துசெய்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
-        <translation>UOS AI உதவியாளர் புதுப்பிப்பு பதிவு</translation>
+        <translation>UOS AI உதவியாளர் புதுப்பித்தல் பதிவு</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">UOS AI பயனர் ஒப்பந்தம்</translation>
+        <translation>UOS AI பயனர் ஒப்பந்தம்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">நான் 18 வயதுக்கு மேற்பட்டவன் என்பதை உறுதிப்படுத்துகிறேன். நான் அங்கீகரிக்கிறேன் மற்றும் ஒப்புக்கொள்கிறேன், நான் பயன்பாட்டின் மூலம் அனுப்பி பெறும் உள்ளடக்கங்கள் பெரிய மாதிரி சேவை வழங்குநருடன் நேரடி தரவு பரிமாற்றங்கள் மற்றும் நிறுவனத்துடன் எந்த தொடர்பும் இல்லை.</translation>
+        <translation>நான் 18 வயது நிரம்பியவர் என்பதை உறுதிப்படுத்துகிறேன். நான் இந்த பயன்பாட்டின் மூலம் அனுப்பி மற்றும் பெறும் உள்ளடக்கங்கள் பெரிய மாதிரி சேவை வழங்குநருடன் நேரடி தரவு பரிமாற்றங்கள் என்பதையும், அது நிறுவனத்துடன் எந்தவொரு தொடர்பும் இல்லை என்பதையும் ஒப்புக்கொள்கிறேன்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>நான் இந்த பயன்பாட்டின் பயனர் அனுபவ திட்டத்தில் பங்கேற்பதற்கு ஒப்புக்கொள்கிறேன், மேலும் உங்கள் நிறுவனம் பயன்பாட்டைப் பயன்படும்போது நான் அனுப்பும் உள்ளடக்கங்கள், அனுப்பிய நேரம், கோரப்பட்ட பெரிய மாதிரியின் வகை, குறிப்பிட்ட பயன்பாடு மற்றும் உரை படத்தை வெற்றிகரமாக உருவாக்கியதா என்பதை சேகரிக்க அங்கீகரிக்கிறேன், இது சேவையின் தரத்தை மேம்படுத்தவும் இயக்க அனுபவத்தை மேம்படுத்தவும் உதவும். (நீங்கள் மேலே குறிப்பிட்ட தகவலை வழங்க மறுக்கின்ால், அது உங்கள் பயன்பாட்டின் சாதாரண பயன்பாட்டை பாதிக்காது.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">UOS AI க்கு வரவேற்கிறோம்</translation>
+        <translation>UOS AI க்கு வரவேற்கிறோம்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, உங்கள் ஸ்மார்ட் உதவியாளர், உங்கள் உற்பத்தித்திறனை மேம்படுத்தவும் மற்றும் உயர்தர வேலை அனுபவத்தை அனுபவிக்கவும் வடிவமைக்கப்பட்டுள்ளது.</translation>
+        <translation>UOS AI, உங்கள் புத்திசாலி உதவியாளர், உங்கள் உற்பத்தித்திறனை மேம்படுத்தவும் தரமான வேலை அனுபவத்தை அனுபவிக்கவும் வடிவமைக்கப்பட்டுள்ளது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished"></translation>
+        <translation>இலவச கணக்கைப் பெறு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">மாதிரியைச் சேர்க்கவும்</translation>
+        <translation>மாதிரியைச் சேர்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">பயன்படுத்தத் தொடங்கவும்</translation>
+        <translation>பயன்படுதலைத் தொடங்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">நான் 18 வயதுக்கு மேற்பட்டவன் என்பதை உறுதிப்படுத்துகிறேன். நான் ஒப்புக்கொள்கிறேன் மற்றும் &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI பயனர் ஒப்பந்தம்&quot;&lt;/a&gt; உடன் ஒப்புக்கொள்கிறேன், மற்றும் நான் அனுப்பிய மற்றும் பெறும் உள்ளடக்கங்கள் பெரிய மாதிரி சேவை வழங்குநருடன் நேரடி தரவு பரிமாற்றங்கள் மற்றும் நிறுவனத்துடன் எந்த தொடர்பும் இல்லை.</translation>
+        <translation>நான் 18 வயது நிரம்பியவர் என்பதை உறுதிப்படுத்துகிறேன். நான் &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI பயனர் ஒப்பந்தம்&quot;&lt;/a&gt; ஒப்புக்கொள்கிறேன், மேலும் நான் இந்த பயன்பாட்டின் மூலம் அனுப்பி மற்றும் பெறும் உள்ளடக்கங்கள் பெரிய மாதிரி சேவை வழங்குநருடன் நேரடி தரவு பரிமாற்றங்கள் என்பதையும், அது நிறுவனத்துடன் எந்தவொரு தொடர்பும் இல்லை என்பதையும் ஒப்புக்கொள்கிறேன்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>கணக்கைப் பெறுவது நிகழ்வின் விதிமுறைகளை நீங்கள் புரிந்து கொண்டு ஒப்புக்கொள்கிறீர்கள் என்பதைக் குறிக்கிறது,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;நிகழ்வு விவரங்கள்&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI சோதனை கணக்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>சேமிக்க முடியவில்லை, தயவு செய்து பிறகு மீண்டும் முயற்சிக்கவும்</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>உறுதிப்படுத்து</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை கணக்கு வெற்றிகரமாக பெறப்பட்டது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>சோதனை கணக்கின் பயன்பாட்டு எண்ணிக்கை மற்றும் காலம் குறைவாக உள்ளது, தயவு செய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை சரியான நேரத்தில் கட்டமைக்கவும்! விவரங்களுக்கு நிகழ்வு விவரங்களைப் பார்க்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">சோதனை கணக்குகளுக்கான ஆங்கில ஆதரவு திருப்திகரமாக இல்லை. மேலும் சோதனை கணக்கின் பயன்பாடுகள் மற்றும் கால அளவு கட்டுப்படுத்தப்பட்டுள்ளன. தயவுசெய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை உடனடியாக அமைக்கவும்!</translation>
+        <translation>சோதனை கணக்குகளுக்கான ஆங்கில ஆதரவு திருப்திகரமாக இல்லை. மேலும், சோதனை கணக்கின் பயன்பாட்டு எண்ணிக்கை மற்றும் காலம் குறைவாக உள்ளது. தயவு செய்து உங்கள் தனிப்பட்ட மாதிரி கணக்கை சரியான நேரத்தில் கட்டமைக்கவும்!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>சோதனையைத் தொடங்கு</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>இலவச கணக்கு நடவடிக்கை முடிவடைந்தது.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>சர்வருடன் இணைக்க முடியவில்லை, தயவு செய்து உங்கள் நெட்வொர்க்கை சரிபார்க்கவும் அல்லது பிறகு மீண்டும் முயற்சிக்கவும்.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>நான் பயன்பாட்டின் பயனர் அனுபவ திட்டத்தில் பங்கேற்பதற்கு ஒப்புக்கொள்கிறேன், மேலும் சேவையின் தரத்தை மேம்படுத்தவும், இயக்க அனுபவத்தை மேம்படுத்தவும், பயன்பாட்டைப் பயன்படுத்தும்போது நான் அனுப்பும் உள்ளடக்கங்களை, அனுப்பிய நேரத்தை, கோரப்பட்ட பெரிய மாதிரியின் வகையை, குறிப்பிட்ட பயன்பாட்டை மற்றும் உரை படத்தை வெற்றிகரமாக உருவாக்கியதா என்பதைச் சேகரிக்க உங்கள் நிறுவனத்திற்கு அங்கீகாரம் அளிக்கிறேன். (மேலே குறிப்பிடப்பட்ட தகவலை வழங்க மறுப்பது உங்கள் பயன்பாட்டின் இயல்பான பயன்பாட்டை பாதிக்காது.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
-        <translation>இந்த பயன்பாட்டை மீண்டும் தொடங்கும் வரை மறைக்கவும்</translation>
+        <translation>இந்த பயன்பாட்டை மறுதொடக்கம் செய்யும் வரை மறை</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
-        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>மீண்டும் இயக்க &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;அமைப்புகள்&lt;/a&gt; செல்லவும்.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
-        <source>The added content must be more than 10 words</source>
-        <translation>சேர்க்கப்பட்ட உள்ளடக்கம் 10 சொற்களுக்கு மேல் இருக்க வேண்டும்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
-        <source>Search</source>
-        <translation>தேடு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
-        <source>Explain</source>
-        <translation>விளக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
-        <source>Summary</source>
-        <translation>சுருக்கம்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
-        <source>Translate</source>
-        <translation>மொழிபெயர்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
-        <source>Continue Writing</source>
-        <translation>எழுதுதலைத் தொடர்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
-        <source>Expand</source>
-        <translation>விரிவாக்கு</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
-        <source>Correct</source>
-        <translation>சரி செய்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>AI அறிவுத்தளத்தில் சேர்க்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>இந்த பயன்பாட்டில் முடக்கு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
-        <translation>உலகளவில் முடக்கு</translation>
+        <translation>உலகளாவிய அளவில் முடக்கு</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>தனிப்பயன் அமைப்புகள்</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
+        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
+        <translation>இதை மீண்டும் இயக்க &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;அமைப்புகளுக்கு&lt;/a&gt; செல்லவும்.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>சேர்க்கப்பட்ட உள்ளடக்கம் 10 சொற்களுக்கு மேல் இருக்க வேண்டும்</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>தேடு</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>விளக்கு</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>சுருக்கம்</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>மொழிபெயர்க்க</translation>
+    </message>
+    <message>
+        <source>Continue Writing</source>
+        <translation>எழுதுவதைத் தொடரவும்</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>விரிவாக்கு</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>சரிசெய்</translation>
+    </message>
+    <message>
         <source>Polish</source>
-        <translation>மெருகேற்று</translation>
+        <translation>மெருகூட்டு</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>AI அறிவுத்தளத்தில் சேர்</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI FollowAlong</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>சேர்க்கப்பட்டது</translation>
     </message>
@@ -9082,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI தொடர்ந்து</translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>உரை தேர்ந்தெடுக்கப்பட்டால் UOS AI தொடர்ந்து கருவிப்பட்டியை தானாக காட்டு.</translation>
+        <translation>உரை தேர்ந்தெடுக்கப்படும்போது UOS AI FollowAlong கருவிப்பட்டியை தானாகக் காட்டு.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>மூடிய பிறகும், தேர்ந்தெடுக்கப்பட்ட உரை Super+R குறுக்குவழி பட்டியால் இன்னும் எழுப்ப முடியும்.</translation>
+        <translation>மூடிய பிறகும், தேர்ந்தெடுக்கப்பட்ட உரையை Super+R குறுக்குவழியின் மூலம் மீண்டும் தூண்டலாம்.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>தெரியாத கட்டளை: %1
+கிடைக்கும் கட்டளைகளைக் காண /help ஐ அனுப்பவும்.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>புதிய உரையாடல் தொடங்கப்பட்டது.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>உரையாடல் வரலாறு அழிக்கப்பட்டது.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>கிடைக்கும் கட்டளைகள்:
+  /help   — இந்த உதவிச் செய்தியைக் காட்டு
+  /new    — புதிய உரையாடலைத் தொடங்கு (தற்போதைய சூழலை அழிக்கிறது)
+  /stop   — தற்போதைய செயலில் உள்ள கோரிக்கையை ரத்து செய்
+  /clear  — அனைத்து உரையாடல் வரலாற்றையும் அழி</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>மாதிரி எதுவும் கிடைக்கவில்லை. தயவு செய்து முதலில் ஒரு மாதிரியை கட்டமைக்கவும்.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>AI கோரிக்கை தோல்வியடைந்தது</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>கோரிக்கை நேரம் முடிந்தது, தயவு செய்து மீண்டும் முயற்சிக்கவும்</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>நிறுத்துவதற்கு செயலில் உள்ள கோரிக்கை எதுவும் இல்லை.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>கோரிக்கை ரத்து செய்யப்பட்டது.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>கருவி அழைப்பு: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>கருவி அழைப்பு தோல்வியடைந்தது: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>AI பிழை (குறியீடு: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>தளப் பிழை, கோரிக்கை ரத்து செய்யப்பட்டது: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>சிந்திக்கிறது...</translation>
     </message>
 </context>
 </TS>

@@ -7,11 +7,10 @@
         "node": "^24.15.0"
     },
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host",
         "preview": "vite preview",
         "build": "vite build",
-        "type-check": "vue-tsc --build",
-        "mock": "node mockserver/websocket-server.js"
+        "type-check": "vue-tsc --build"
     },
     "dependencies": {
         "@milkdown/crepe": "~7.20.0",
@@ -36,7 +35,6 @@
         "typescript": "~6.0.3",
         "vite": "~8.0.10",
         "vite-plugin-vue-devtools": "8.1.1",
-        "vue-tsc": "3.2.7",
-        "ws": "8.20.0"
+        "vue-tsc": "3.2.7"
     }
 }

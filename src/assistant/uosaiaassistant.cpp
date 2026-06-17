@@ -6,7 +6,9 @@
 #include "conversation/conversationrecord.h"
 #include "model/builtinprovider.h"
 #include "services/fileservice/fileservice.h"
+#include "network/httpcodetranslation.h"
 
+#include <QNetworkReply>
 #include <QJsonDocument>
 #include <QLoggingCategory>
 
@@ -24,6 +26,7 @@ UOSAIAssistant::~UOSAIAssistant()
 
 void UOSAIAssistant::cancel()
 {
+    canceled = true;
     emit requestCancel();
 }
 
@@ -40,7 +43,6 @@ QVariantHash UOSAIAssistant::run()
     auto modelVendor = ModelVendor::instance();
     ModelAccountPtr account = modelVendor->getModel(m_modelId);
 
-    bool freeAuto = false;
     if (!account.constData()) {
         qCWarning(logAssistant) << "No model found for id: " + m_modelId;
         m_error[STR_KEY_ERROR] = GErrorType::InvalidModel;
@@ -51,61 +53,24 @@ QVariantHash UOSAIAssistant::run()
         if (ModelVendor::isUosProvider(account)) {
             // 是否为智能调度
             if (account->model.id == UOS_FREE_MODEL_AUTO) {
-                freeAuto = true;
                 // 改为使用glm 4.7
                 account->model = BuiltinProvider::instance()->getModelInfo(UOS_FREE_GLM_4_7);
             }
         }
     }
 
-    QScopedPointer<LlmAgent> agent;
-    if (m_parameters.value(STR_KEY_ONLINE).toBool()) {
-        if (freeAuto) {
-            // 使用联网搜索模型
-            account->model = BuiltinProvider::instance()->getModelInfo(UOS_FREE_ONLINE_SEARCH);
-            agent.reset(new OnlineSearchAgent);
-        } else {
-            qCWarning(logAssistant) << "Online search agent is only supported for free account.";
-        }
-    }
-
-    if (agent.isNull())
-        agent.reset(new GenericAgent);
-
-    connect(this, &UOSAIAssistant::requestCancel, agent.data(), &LlmAgent::cancel, Qt::DirectConnection); // must be DirectConnection
-    agent->initialize();
-
-    auto model = modelVendor->createModel(account).dynamicCast<AbstractChatModel>();
-    if (model.isNull()) {
-        m_error[STR_KEY_ERROR] = GErrorType::InvalidModel;
-        m_error[STR_KEY_MESSAGE] = "Failed to create model";
-        qCWarning(logAssistant) << "Failed to create model for account:" << account->id;
-        return result;
-    }
-
-    agent->setModel(model);
-
-    QVariantHash modelParams;
-    modelParams[STR_KEY_STREAM] = true;
-    modelParams[STR_KEY_THINKING] = m_parameters.value(STR_KEY_THINKING);
-    agent->setModelParams(modelParams);
-
+    // 处理消息
     QList<ModelMessage> historyMsg;
     ModelMessage currentMessage;
     processMessage(currentMessage, historyMsg, m_parameters.value(STR_KEY_RETRY, false).toBool());
 
-    connect(agent.data(), &LlmAgent::messageReceived, this, [this](const RenderMessageList &msgs) {
-        for (const auto &msg : msgs) {
-            auto strData = QString::fromUtf8(QJsonDocument(msg.toJson()).toJson(QJsonDocument::Compact));
-            emit pushMessage(strData);
-            qCDebug(logAssistant) << "render: " << strData;
-        }
-    }, Qt::DirectConnection);
+    // 如果开启了在线搜索，先使用 OnlineSearchAgent
+    QString searchContext;
+    if (m_parameters.value(STR_KEY_ONLINE).toBool())
+        searchContext = runOnlineSearch(account, currentMessage, historyMsg);
 
-    QVariantHash response = agent->processRequest(currentMessage, historyMsg);
-    qCDebug(logAssistant) << "LlmAgent processRequest response:" << response;
-
-    m_error = agent->lastError();
+    // 使用 GenericAgent 处理请求
+    QVariantHash response = runGenericAgent(account, currentMessage, historyMsg, searchContext);
 
     if (response.contains(STR_KEY_CONTENT))
         result[STR_KEY_CONTENT] = response.value(STR_KEY_CONTENT);
@@ -156,7 +121,7 @@ void UOSAIAssistant::processMessage(ModelMessage &currentMessage, QList<ModelMes
                     continue;
                 }
 
-                files.append(content);  
+                files.append(content);
             }
         } else if (meta.type == CntText) {
             user.append(meta.data.toString());
@@ -206,4 +171,105 @@ void UOSAIAssistant::processMessage(ModelMessage &currentMessage, QList<ModelMes
         qmsg.append(currentMessage);
         question->setMessage(qmsg);
     }
- }
+}
+
+QString UOSAIAssistant::runOnlineSearch(ModelAccountPtr account, const ModelMessage &currentMessage, const QList<ModelMessage> &historyMsg)
+{
+    auto modelVendor = ModelVendor::instance();
+
+    QScopedPointer<OnlineSearchAgent> searchAgent(new OnlineSearchAgent);
+    connect(this, &UOSAIAssistant::requestCancel, searchAgent.data(), &LlmAgent::cancel, Qt::DirectConnection);
+    searchAgent->initialize();
+
+    if (canceled) {
+        m_error[STR_KEY_ERROR] = GErrorType::HttpError;
+        m_error[STR_KEY_HTTP_ERROR] = QNetworkReply::NetworkError::OperationCanceledError;
+        m_error[STR_KEY_ERROR_MESSAGE] = HttpCodeTranslation::translation(QNetworkReply::NetworkError::OperationCanceledError, "");
+        return QString();
+    }
+
+    auto searchModel = modelVendor->createModel(account).dynamicCast<AbstractChatModel>();
+    if (searchModel.isNull()) {
+        m_error[STR_KEY_ERROR] = GErrorType::InvalidModel;
+        m_error[STR_KEY_MESSAGE] = "Failed to create model";
+        qCWarning(logAssistant) << "Failed to create search model for account:" << account->id;
+        return QString();
+    }
+
+    searchAgent->setModel(searchModel);
+
+    // 设置搜索参数：关闭流式传输，关闭深度思考
+    QVariantHash searchParams;
+    searchParams[STR_KEY_STREAM] = false;
+    searchParams[STR_KEY_THINKING] = false;
+    searchAgent->setModelParams(searchParams);
+
+    connect(searchAgent.data(), &LlmAgent::messageReceived, this, [this](const RenderMessageList &msgs) {
+        for (const auto &msg : msgs) {
+            auto strData = QString::fromUtf8(QJsonDocument(msg.toJson()).toJson(QJsonDocument::Compact));
+            emit pushMessage(strData);
+            qCDebug(logAssistant) << "render: " << strData;
+        }
+    }, Qt::DirectConnection);
+
+    QVariantHash agentParams;
+    if (account->account.provider.compare(STR_KEY_MODELHUB) == 0) {
+        agentParams[STR_KEY_MAX_TOKENS] = 4000;
+    }
+
+    // 执行搜索
+    QVariantHash searchResponse = searchAgent->processRequest(currentMessage, historyMsg, agentParams);
+    qCDebug(logAssistant) << "OnlineSearchAgent processRequest response:" << searchResponse;
+
+    // 提取搜索结果
+    QString searchContext = searchResponse.value("search_content").toString();
+    return searchContext;
+}
+
+QVariantHash UOSAIAssistant::runGenericAgent(ModelAccountPtr account, const ModelMessage &currentMessage, const QList<ModelMessage> &historyMsg, const QString &searchContext)
+{
+    auto modelVendor = ModelVendor::instance();
+
+    QScopedPointer<GenericAgent> agent(new GenericAgent);
+    connect(this, &UOSAIAssistant::requestCancel, agent.data(), &LlmAgent::cancel, Qt::DirectConnection);
+    agent->initialize();
+
+    if (canceled) {
+        m_error[STR_KEY_ERROR] = GErrorType::HttpError;
+        m_error[STR_KEY_HTTP_ERROR] = QNetworkReply::NetworkError::OperationCanceledError;
+        m_error[STR_KEY_ERROR_MESSAGE] = HttpCodeTranslation::translation(QNetworkReply::NetworkError::OperationCanceledError, "");
+        return {};
+    }
+
+    auto model = modelVendor->createModel(account).dynamicCast<AbstractChatModel>();
+    if (model.isNull()) {
+        m_error[STR_KEY_ERROR] = GErrorType::InvalidModel;
+        m_error[STR_KEY_MESSAGE] = "Failed to create model";
+        qCWarning(logAssistant) << "Failed to create model for account:" << account->id;
+        return QVariantHash();
+    }
+
+    agent->setModel(model);
+
+    QVariantHash modelParams;
+    modelParams[STR_KEY_STREAM] = true;
+    modelParams[STR_KEY_THINKING] = m_parameters.value(STR_KEY_THINKING, false).toBool();
+    agent->setModelParams(modelParams);
+
+    agent->setSearchedContent(searchContext);
+
+    connect(agent.data(), &LlmAgent::messageReceived, this, [this](const RenderMessageList &msgs) {
+        for (const auto &msg : msgs) {
+            auto strData = QString::fromUtf8(QJsonDocument(msg.toJson()).toJson(QJsonDocument::Compact));
+            emit pushMessage(strData);
+            qCDebug(logAssistant) << "render: " << strData;
+        }
+    }, Qt::DirectConnection);
+
+    QVariantHash response = agent->processRequest(currentMessage, historyMsg);
+    qCDebug(logAssistant) << "LlmAgent processRequest response:" << response;
+
+    m_error = agent->lastError();
+
+    return response;
+}

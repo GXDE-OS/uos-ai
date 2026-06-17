@@ -11,12 +11,30 @@
         <file>../web/dist/assets/polyfills-legacy.js</file>
         <file>../web/dist/assets/Root.js</file>
         <file>../web/dist/assets/Root-legacy.js</file>
-        <file>../web/dist/assets/pinia.js</file>
-        <file>../web/dist/assets/pinia-legacy.js</file>
         <file>../web/dist/assets/stores.js</file>
         <file>../web/dist/assets/stores-legacy.js</file>
         <file>../web/dist/assets/listen1.png</file>
         <file>../web/dist/assets/listen2.png</file>
+        <file>../web/dist/assets/guide_en_01_dark.png</file>
+        <file>../web/dist/assets/guide_en_01_light.png</file>
+        <file>../web/dist/assets/guide_en_02_dark.png</file>
+        <file>../web/dist/assets/guide_en_02_light.png</file>
+        <file>../web/dist/assets/guide_en_03_dark.png</file>
+        <file>../web/dist/assets/guide_en_03_light.png</file>
+        <file>../web/dist/assets/guide_en_04_dark.png</file>
+        <file>../web/dist/assets/guide_en_04_light.png</file>
+        <file>../web/dist/assets/guide_en_05_dark.png</file>
+        <file>../web/dist/assets/guide_en_05_light.png</file>
+        <file>../web/dist/assets/guide_zh_01_dark.png</file>
+        <file>../web/dist/assets/guide_zh_01_light.png</file>
+        <file>../web/dist/assets/guide_zh_02_dark.png</file>
+        <file>../web/dist/assets/guide_zh_02_light.png</file>
+        <file>../web/dist/assets/guide_zh_03_dark.png</file>
+        <file>../web/dist/assets/guide_zh_03_light.png</file>
+        <file>../web/dist/assets/guide_zh_04_dark.png</file>
+        <file>../web/dist/assets/guide_zh_04_light.png</file>
+        <file>../web/dist/assets/guide_zh_05_dark.png</file>
+        <file>../web/dist/assets/guide_zh_05_light.png</file>
         <file>../web/dist/assets/silence.webm</file>
         <file>../web/dist/assets/listen.webm</file>
         <file>../web/dist/assets/play.webm</file>

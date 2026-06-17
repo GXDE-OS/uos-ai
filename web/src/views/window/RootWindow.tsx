@@ -58,9 +58,15 @@ export default defineComponent({
         onMounted(async () => {
             //初始化翻译
             await backend.loadTranslations();
+            await backend.loadLanguageStatus();
 
             // 初始化是否启用高级 CSS 功能
             await backend.loadAdvancedCssFeaturesStatus();
+
+            // Qt5 WebEngine 兼容：非高级 CSS 环境下标记降级模式，移除 inset 和 0.5px
+            if (!backend.isEnableAdvancedCssFeatures) {
+                document.documentElement.setAttribute("data-legacy-css", "true");
+            }
 
             // 初始化窗口模式。主窗口渲染前先恢复侧边栏状态，避免首次进入时布局闪动。
             const windowMode = (await backend.requestWindow("windowMode")) as WindowMode;
@@ -80,6 +86,7 @@ export default defineComponent({
             await modelInfosStore.loadModelList(assistantId);
 
             await conversationManagerStore.loadConversationIndexList(backend);
+            await conversationManagerStore.loadHistoryConversationIndexList(backend);
 
             console.log("assistant list:", assistantInfosStore.assistantList);
             console.log("model list:", modelInfosStore.modelList);
@@ -98,6 +105,10 @@ export default defineComponent({
 
             // 初始化网络状态
             await networkStore.initNetworkStatus(backend.systemChannel);
+
+            if (windowMode === WindowMode.Main) {
+                await mainWindowStore.openStartupNewUserGuideDialogIfNeeded();
+            }
 
             console.log("init window mode:", windowChannelStore.windowMode);
 

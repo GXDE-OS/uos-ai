@@ -65,6 +65,11 @@ export default defineComponent({
             type: Boolean,
             default: false,
         },
+        // 发送按钮被业务规则拦截时的原因；按钮保持可点击，让上层展示提示。
+        sendBlockedReason: {
+            type: String,
+            default: "",
+        },
         actionMenuItems: {
             type: Array as PropType<MenuItem[]>,
             default: () => [],
@@ -455,10 +460,27 @@ export default defineComponent({
 
         // 处理 input-area 区域内的点击事件
         const handleInputAreaMouseDown = (event: MouseEvent) => {
-            // 点击在 input-area 区域内，设置焦点状态为 true
+            const editorContainer = textareaRef.value?.containerRef;
+            const clickedOnEditor = editorContainer?.contains(event.target as Node);
+
+            if (clickedOnEditor) {
+                // 点击在编辑器上，让浏览器自然处理光标定位
+                if (!isFocused.value) {
+                    isFocused.value = true;
+                }
+                return;
+            }
+
+            // 点击在 input-area 内但编辑器外（如附件区、空白区域）
+            event.preventDefault(); // 阻止浏览器默认的焦点变更
+
             if (!isFocused.value) {
                 isFocused.value = true;
+                if (!props.disabled) {
+                    textareaRef.value?.focus();
+                }
             }
+            // 已聚焦时：preventDefault 阻止焦点丢失，不调用 focus() 避免光标重置
         };
 
         // 处理文档级别的点击事件，检测是否点击在 input-area 外部
@@ -474,11 +496,22 @@ export default defineComponent({
             }
         };
 
+        // 当输入区域聚焦时，在 capture 阶段拦截 Enter，阻止其他全局监听器（如 BashApprove）吞掉事件
+        const handleWindowKeyDownCapture = (e: KeyboardEvent) => {
+            // 仅拦截无修饰键的纯 Enter，带有任意修饰键(ctrl,shift,alt,meta)的组合交由编辑器处理换行
+            const hasModifier = e.ctrlKey || e.shiftKey || e.altKey || e.metaKey;
+            if (e.key === "Enter" && !hasModifier && isFocused.value) {
+                e.stopImmediatePropagation();
+                emit("enter");
+            }
+        };
+
         // 组件挂载时设置事件监听器
         onMounted(() => {
             setupAudioEventListeners();
             // 添加文档级别的点击事件监听
             document.addEventListener("mousedown", handleDocumentMouseDown);
+            window.addEventListener("keydown", handleWindowKeyDownCapture, { capture: true });
         });
 
         // 监听网络状态变化，网络断开时停止录音
@@ -494,6 +527,7 @@ export default defineComponent({
             cleanupAudioEventListeners();
             // 移除文档级别的点击事件监听
             document.removeEventListener("mousedown", handleDocumentMouseDown);
+            window.removeEventListener("keydown", handleWindowKeyDownCapture, true);
             // 如果正在录音，停止它
             if (recording.value) {
                 stopRecording();
@@ -582,6 +616,7 @@ export default defineComponent({
                     isSending={this.$props.isSending}
                     modelValue={this.$props.modelValue}
                     canSend={this.$props.canSend}
+                    sendBlockedReason={this.$props.sendBlockedReason}
                     disabled={this.$props.disabled}
                     actionMenuItems={this.$props.actionMenuItems}
                     recording={this.recording}

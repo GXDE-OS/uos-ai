@@ -199,18 +199,25 @@ export default defineComponent({
         // rAF 节流句柄：同一帧内多次回调合并为一次，避免 collapseState 每帧重算 + Vue re-render
         let roRafId: number | null = null;
         let roTimeRafId: number | null = null;
+        // 累积最新宽度值（避免节流期间丢弃后续 callback）
+        let pendingWidth: number | null = null;
+        let pendingTimeWidth: number | null = null;
 
         onMounted(() => {
             if (!toolbarRef.value) return;
             ro = new ResizeObserver((entries) => {
+                // 记录最新的宽度（取整避免亚像素抖动）
+                const latestWidth = Math.round(entries[entries.length - 1]?.contentRect.width ?? 0);
+                pendingWidth = latestWidth;
+
+                // rAF 节流：同一帧内多次 resize 只触发一次 Vue 更新
                 if (roRafId !== null) return;
                 roRafId = requestAnimationFrame(() => {
                     roRafId = null;
-                    // 取整：亚像素变化不触发 collapseState 重算
-                    const w = Math.round(entries[entries.length - 1]?.contentRect.width ?? 0);
-                    if (w !== availableWidth.value) {
-                        availableWidth.value = w;
+                    if (pendingWidth !== null && pendingWidth !== availableWidth.value) {
+                        availableWidth.value = pendingWidth;
                     }
+                    pendingWidth = null;
                 });
             });
             ro.observe(toolbarRef.value);
@@ -224,15 +231,21 @@ export default defineComponent({
                 cancelAnimationFrame(roTimeRafId);
                 roTimeRafId = null;
             }
+            pendingTimeWidth = null;
             if (!el) return;
             roTime = new ResizeObserver((entries) => {
+                // 记录最新的宽度（取整避免亚像素抖动）
+                const latestWidth = Math.round(entries[entries.length - 1]?.contentRect.width ?? 0);
+                pendingTimeWidth = latestWidth;
+
+                // rAF 节流：同一帧内多次 resize 只触发一次 Vue 更新
                 if (roTimeRafId !== null) return;
                 roTimeRafId = requestAnimationFrame(() => {
                     roTimeRafId = null;
-                    const w = Math.round(entries[entries.length - 1]?.contentRect.width ?? 0);
-                    if (w !== timeWidth.value) {
-                        timeWidth.value = w;
+                    if (pendingTimeWidth !== null && pendingTimeWidth !== timeWidth.value) {
+                        timeWidth.value = pendingTimeWidth;
                     }
+                    pendingTimeWidth = null;
                 });
             });
             roTime.observe(el);
@@ -249,6 +262,8 @@ export default defineComponent({
                 cancelAnimationFrame(roTimeRafId);
                 roTimeRafId = null;
             }
+            pendingWidth = null;
+            pendingTimeWidth = null;
             if (headingHideTimer !== null) {
                 clearTimeout(headingHideTimer);
                 headingHideTimer = null;

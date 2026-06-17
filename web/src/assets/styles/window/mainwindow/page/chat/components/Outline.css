@@ -528,6 +528,12 @@ html.dark {
     padding-right: 16px;
     padding-left: 10px;
 }
+
+/* Qt5 兼容降级：移除 inset */
+html.dark[data-legacy-css] {
+    --outline-button-box-shadow: none;
+}
+
 .outline-quick-input::after {
     content: "";
     position: absolute;

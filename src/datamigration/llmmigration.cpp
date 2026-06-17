@@ -5,6 +5,7 @@
 #include "global_key_define.h"
 #include "model/modelinfo.h"
 #include "builtinprovider.h"
+#include "tas/uosfreeaccounts.h"
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -130,6 +131,25 @@ bool LlmMigration::migrateLlmData()
                 accounts.insert(modelAcc->id, modelAcc);
                 continue;
             } else if (type == 81 || type == 82) {
+                qCInfo(logMigration) << "skip migrating uos free model:" << name << "type:" << type;
+                continue;
+#if 0
+                {
+                    QJsonDocument extDoc = QJsonDocument::fromJson(query.value("ext").toByteArray());
+                    QJsonObject extObj = extDoc.object().value("ext").toObject();
+                    if (extObj.value("freeVersion").toInt() != 83) {
+                        qCWarning(logMigration) << "this free model is not supported, upgrade silent." << type << name;
+                        UosFreeAccount freeAccount;
+                        int status;
+                        QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 83, freeAccount, status);
+                        if (error != QNetworkReply::NoError) {
+                            qCWarning(logMigration) << "error to model " << error << status;
+                            continue;
+                        }
+                        apiKey = freeAccount.appkey;
+                    }
+                }
+
                 // 免费模型只需保留一个
                 ProviderAccount acc;
                 if (!providers.contains(STR_KEY_UOS_AI)) {
@@ -148,6 +168,7 @@ bool LlmMigration::migrateLlmData()
                 modelAcc->model.id = UOS_FREE_MODEL_AUTO;
                 accounts.insert(modelAcc->id, modelAcc);
                 continue;
+#endif
             } else if (type == 2000) {
                 QJsonDocument extDoc = QJsonDocument::fromJson(query.value("ext").toByteArray());
                 QJsonObject extObj = extDoc.object().value("ext").toObject();

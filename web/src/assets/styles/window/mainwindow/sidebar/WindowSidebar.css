@@ -82,7 +82,7 @@ html.dark {
 
 .window-sidebar__sticky-stack {
     position: absolute;
-    top: 0;
+    top: 16px;
     left: 0;
     right: 0;
     z-index: 20;
@@ -99,7 +99,7 @@ html.dark {
     overflow: hidden;
 }
 
-.window-sidebar__list-shell > .window-sidebar__scroll .scroll-bar-content {
+.window-sidebar__list-shell--sticky-enabled > .window-sidebar__scroll .scroll-bar-content {
     clip-path: inset(var(--window-sidebar-sticky-stack-height) 0 0 0);
 }
 
@@ -141,12 +141,36 @@ html.dark {
     height: 8px;
     border-radius: 50%;
     background: rgba(255, 2, 2, 1);
-    box-shadow:
+    box-shadow: var(--unread-dot-shadow,
         0 0 0 0.5px rgba(0, 0, 0, 0.05),
         0 0 0 0.5px rgba(0, 0, 0, 0.05),
         0 0 0 0.5px inset rgba(255, 255, 255, 0.2),
-        0 0 0 0.5px rgba(255, 255, 255, 0.2);
+        0 0 0 0.5px rgba(255, 255, 255, 0.2));
     margin: 4px;
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --unread-dot-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* 待审批标识使用小胶囊，自绘样式与文件变更类型标签保持一致。 */
+.window-sidebar__conversation-status--pending-approval {
+    width: auto;
+    min-width: 28px;
+    height: 16px;
+    padding: 2px 4px;
+    border: 1px solid var(--system-active-color-alpha-40);
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: var(--system-active-color-alpha-10);
+    color: var(--system-active-color);
+    font-size: var(--uosai-font-size-5xs);
+    font-weight: 400;
+    font-style: normal;
+    line-height: var(--uosai-line-height-extra-tight);
+    white-space: nowrap;
 }
 
 @keyframes window-sidebar-conversation-loading {

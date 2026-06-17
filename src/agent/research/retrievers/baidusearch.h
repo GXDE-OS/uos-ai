@@ -14,7 +14,6 @@ public:
     explicit BaiduSearch(QObject *parent = nullptr);
 
     QJsonArray search(const QString &query, int maxResults = 5) override;
-
 private:
     QString getApiKey();
 

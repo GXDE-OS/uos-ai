@@ -4,6 +4,7 @@
 #include "global_define.h"
 #include "conversationrecord.h"
 #include "conversationindex.h"
+#include "conversationsearch.h"
 
 #include <QObject>
 #include <QMap>
@@ -33,6 +34,7 @@ public:
     // 属性访问
     int conversationCount() const;
     QVector<ConversationIndexItem> conversationIndexes() const;
+    QVector<ConversationIndexItem> historyConversationIndexes() const;
 
     // 路径读取
     QString getConversationFilePath(const QString &id) const;
@@ -44,11 +46,15 @@ public:
 
 signals:
     void indexChanged();
+    void indexSearchChanged();
     void changeToConversation(const QString &assistantId, const QString &conversationId);
 
 private:
     explicit ConversationManager(QObject *parent = nullptr);
     ~ConversationManager();
+
+private slots:
+    void onIndexContentLoaded(const SearchIndexMap &contents, int maxLength);
 
 private:
     QMap<QString, ConversationRecordPtr> m_conversations;

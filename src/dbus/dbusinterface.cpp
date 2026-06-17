@@ -63,8 +63,15 @@ QString DBusInterface::cachedFunctions()
 
 void DBusInterface::launchChatPage(int index)
 {
-    qCDebug(logDBus) << "Launching chat page with index:" << index;
-    QMetaObject::invokeMethod(aiApp, "launchChatWindow", Qt::QueuedConnection, Q_ARG(int, index));
+    launchChatPageWithToken(index, QString());
+}
+
+void DBusInterface::launchChatPageWithToken(int index, const QString &token)
+{
+    qCDebug(logDBus) << "Launching chat page with index:" << index
+                     << "has activation token:" << !token.isEmpty();
+    QMetaObject::invokeMethod(aiApp, "launchChatWindowWithToken", Qt::QueuedConnection,
+                              Q_ARG(int, index), Q_ARG(QString, token));
 }
 
 void DBusInterface::launchWordWizard()

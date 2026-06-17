@@ -16,6 +16,7 @@ export const useBackendStore = defineStore("backend", {
         skillsMgr: null,
         reportChannel: null,
         translations: {},
+        isChineseLanguage: false, // 是否为中文环境
         isEnableAdvancedCssFeatures: false, // 是否启用高级 CSS 功能
         themeIconVersion: 0,
     }),
@@ -144,6 +145,10 @@ export const useBackendStore = defineStore("backend", {
 
         async loadAdvancedCssFeaturesStatus() {
             this.isEnableAdvancedCssFeatures = await this.requestSystem("isEnableAdvancedCssFeatures");
+        },
+
+        async loadLanguageStatus() {
+            this.isChineseLanguage = await this.requestSystem("checkChineseLanguage");
         },
 
         async loadTranslations() {

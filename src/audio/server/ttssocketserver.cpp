@@ -119,7 +119,7 @@ void TtsSocketServer::sendServer()
         QJsonObject businessArgs;
         businessArgs.insert("aue", "raw");
         businessArgs.insert("auf", "audio/L16;rate=16000");
-        businessArgs.insert("vcn", "aisjiuxu");
+        businessArgs.insert("vcn", "x4_yezi");
         businessArgs.insert("tte", "utf8");
 
         QJsonObject jsonObject;

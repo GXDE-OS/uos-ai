@@ -70,11 +70,7 @@ export const useNotifyStore = defineStore("notify", {
          * const ok = await notifyStore.confirm("Delete?", "Sure?");
          * if (ok) { ... }
          */
-        async confirm(
-            title: string,
-            content?: string,
-            options?: Pick<NotifyDialogOptions, "icon">,
-        ): Promise<boolean> {
+        async confirm(title: string, content?: string, options?: Pick<NotifyDialogOptions, "icon">): Promise<boolean> {
             const result = await this.showDialog({
                 icon: options?.icon,
                 title,
@@ -95,8 +91,8 @@ export const useNotifyStore = defineStore("notify", {
                 return;
             }
 
-            systemChannel.notificationActionInvoked.connect((notificationId: number, actionKey: string) => {
-                const payload: SystemNotificationActionPayload = { notificationId, actionKey };
+            systemChannel.notificationActionInvoked.connect((actionId: string) => {
+                const payload: SystemNotificationActionPayload = { actionId };
                 _systemNotificationActionListeners.forEach((listener) => listener(payload));
             });
 
@@ -114,15 +110,15 @@ export const useNotifyStore = defineStore("notify", {
         },
 
         /**
-         * 调用后端发送系统通知，返回通知 ID。
+         * 调用后端发送系统通知。
          */
-        async showSystemNotification(options: SystemNotifyOptions): Promise<number> {
+        async showSystemNotification(options: SystemNotifyOptions): Promise<void> {
             const backend = useBackendStore();
             const actionPayload = (options.actions ?? []).map((action) => ({
                 key: action.key,
                 text: action.text,
             }));
-            const result = await backend.requestSystem(
+            await backend.requestSystem(
                 "notify",
                 options.title,
                 options.body,
@@ -130,16 +126,6 @@ export const useNotifyStore = defineStore("notify", {
                 actionPayload,
                 options.timeoutMs ?? -1,
             );
-            return Number(result) || 0;
-        },
-
-        /**
-         * 调用后端关闭指定系统通知。
-         */
-        async closeSystemNotification(notificationId: number): Promise<void> {
-            if (!notificationId) return;
-            const backend = useBackendStore();
-            await backend.requestSystem("closeNotification", notificationId);
         },
 
         // 预留：showToast() — Toast 提示（待后续实现）
@@ -213,6 +199,13 @@ export const useNotifyStore = defineStore("notify", {
             if (idx !== -1) {
                 this.toasts.splice(idx, 1);
             }
+        },
+
+        /**
+         * 关闭指定 Toast 提示
+         */
+        closeToast(id: string): void {
+            this._closeToast(id);
         },
 
         /**

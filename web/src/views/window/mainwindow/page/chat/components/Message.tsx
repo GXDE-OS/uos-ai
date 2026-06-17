@@ -1,4 +1,4 @@
-import { defineComponent, ref, inject, computed, onMounted, onUnmounted, watch } from "vue";
+import { defineComponent, ref, inject, computed, onMounted, onUnmounted, watch, nextTick, Teleport } from "vue";
 import type { PropType } from "vue";
 
 import type {
@@ -12,6 +12,9 @@ import type {
     ErrorMsg,
     RenderData,
     CommandCardData,
+    WebSearchData,
+    BashApproveData,
+    FileChangeApproveData,
 } from "@/types/conversation";
 import { UserType } from "@/types/conversation";
 import { CopyDataType, ContentType } from "@/types/message";
@@ -24,21 +27,25 @@ import { DocParsingFileType, DocFileCategory, FileAlignment, PopoverAlign, Popov
 import { formatFileSize, getFileType } from "@/utils/filehelper";
 
 import { OutlineViewer } from "@/views/window/mainwindow/page/chat/components/outline";
-import { Reasoning, AgentStep } from "@/views/window/mainwindow/page/chat/components/reasoning";
+import { Reasoning, AgentStep, Search } from "@/views/window/mainwindow/page/chat/components/reasoning";
 import { DocCard } from "@/views/window/mainwindow/page/chat/components/docCard";
+import { Avatar } from "@/views/window/mainwindow/page/chat/components/avatar";
 import { CommandCard } from "./commandCard";
+import InteractiveComp from "./interactiveComp/InteractiveComp";
 import MarkdownRenderer from "@/views/window/mainwindow/page/chat/components/MarkdownRenderer";
 import MessageActionButtons from "@/views/window/mainwindow/page/chat/components/MessageActionButtons";
 import LoadingDots from "@/views/window/mainwindow/page/chat/components/LoadingDots";
 import ToolUse from "@/views/window/mainwindow/page/chat/components/toolUse/ToolUse";
 import Error from "@/views/window/mainwindow/page/chat/components/error/error";
 import OperationCanceledHint from "@/views/window/mainwindow/page/chat/components/error/OperationCanceledHint";
+import Menu from "@/components/menu/Menu";
+import type { MenuItem } from "@/types/menu";
 
 import { useBackendStore, useConversationManagerStore, useNetworkStore, useUploadFilesStore } from "@/stores";
 import { AudioEvent } from "@/types/DigitalHuman";
 import { ErrorType } from "@/types/errortype";
 import { cascaderEmits } from "element-plus";
-
+import { getIconByType, type Assistant } from "@/types/assistant";
 export default defineComponent({
     name: "Message",
 
@@ -46,14 +53,18 @@ export default defineComponent({
         FileGroup,
         OutlineViewer,
         Reasoning,
+        Search,
         ToolUse,
         DocCard,
         Error,
         CommandCard,
+        InteractiveComp,
         MarkdownRenderer,
         LoadingDots,
         MessageActionButtons,
         OperationCanceledHint,
+        Menu,
+        Avatar,
     },
 
     props: {
@@ -107,6 +118,16 @@ export default defineComponent({
             type: String as PropType<string | null>,
             default: null,
         },
+        // 当前助手
+        currentAssistant: {
+            type: Object as PropType<Assistant>,
+            default: () => null,
+        },
+        // 是否禁用重试按钮
+        shouldDisableRetry: {
+            type: Boolean,
+            default: false,
+        },
     },
 
     emits: {
@@ -143,6 +164,16 @@ export default defineComponent({
         const isNetworkOnline = computed(() => networkStore.isNetworkOnline); // 是否网络在线
         const isAudioOutputDeviceExists = ref(false); // 是否存在音频输出设备
 
+        const currentAssistantIcon = computed(() => {
+            if (!props.currentAssistant) return "";
+            return getIconByType(props.currentAssistant as Assistant, "color");
+        });
+        const currentAssistantGradientColors = computed(
+            () => (props.currentAssistant as Assistant)?.gradient_colors || [],
+        );
+
+        const currentAssistantId = computed(() => props.currentAssistant?.id);
+
         // 跟踪当前 hover 的消息索引
         const hoveredMessageIndex = ref<number | null>(null);
 
@@ -158,9 +189,9 @@ export default defineComponent({
             return imageExtensions.includes(ext) ? DocParsingFileType.Image : DocParsingFileType.Doc;
         };
 
-        const cachedFiles = computed<UploadFile[]>(() => {
-            // 统一从 extension.uploadedFiles 读取前端元数据
-            const uploadedFiles = props.message.extension?.uploadedFiles;
+        // 从消息中提取上传文件列表（纯函数，可复用于任意 Message）
+        const extractUploadFilesFromMessage = (msg: Message): UploadFile[] => {
+            const uploadedFiles = msg.extension?.uploadedFiles;
             if (Array.isArray(uploadedFiles)) {
                 return uploadedFiles
                     .filter(
@@ -172,8 +203,11 @@ export default defineComponent({
                     )
                     .map((file) => ({ ...file }));
             }
-
             return [];
+        };
+
+        const cachedFiles = computed<UploadFile[]>(() => {
+            return extractUploadFilesFromMessage(props.message);
         });
 
         const cachedDisplayFiles = computed<DisplayFile[]>(() => {
@@ -205,13 +239,208 @@ export default defineComponent({
             hoveredMessageIndex.value = null;
         };
 
+        // 右键菜单相关
+        const isContextMenuVisible = ref(false);
+        const contextMenuItems = ref<MenuItem[]>([]);
+        const currentImageElement = ref<HTMLImageElement | null>(null);
+        const contextMenuPosition = ref<{ x: number; y: number } | null>(null);
+
+        // 滚动时隐藏右键菜单
+        const handleScroll = () => {
+            if (isContextMenuVisible.value) {
+                isContextMenuVisible.value = false;
+                contextMenuPosition.value = null;
+                currentImageElement.value = null;
+            }
+        };
+
+        onMounted(() => {
+            const scrollContent = document.querySelector(".chat-view__messages .scroll-bar-content") as HTMLElement;
+            if (scrollContent) {
+                scrollContent.addEventListener("scroll", handleScroll, { passive: true });
+            }
+        });
+
+        onUnmounted(() => {
+            const scrollContent = document.querySelector(".chat-view__messages .scroll-bar-content") as HTMLElement;
+            if (scrollContent) {
+                scrollContent.removeEventListener("scroll", handleScroll);
+            }
+        });
+
+        // 处理右键菜单
+        const handleContextMenu = async (event: MouseEvent) => {
+            const target = event.target as HTMLElement;
+
+            // 检查是否点击在消息气泡内容区域
+            const bubbleContent = target.closest(".chat-bubbles__bubble");
+            if (!bubbleContent) return;
+
+            const selection = window.getSelection();
+            const hasSelection = selection && selection.toString().trim().length > 0;
+
+            // 如果有选中文本
+            if (hasSelection) {
+                event.preventDefault();
+                currentImageElement.value = null;
+                const pos = { x: event.clientX, y: event.clientY };
+                contextMenuPosition.value = pos;
+                contextMenuItems.value = [
+                    { type: "item", id: "copy-selection", label: backendStore.translate("Copy") },
+                ];
+                await nextTick();
+                isContextMenuVisible.value = true;
+                return;
+            }
+
+            // 检查是否点击图片
+            if (target.tagName === "IMG" && (target as HTMLImageElement).naturalWidth > 0) {
+                event.preventDefault();
+                currentImageElement.value = target as HTMLImageElement;
+                const pos = { x: event.clientX, y: event.clientY };
+                contextMenuPosition.value = pos;
+                contextMenuItems.value = [
+                    { type: "item", id: "copy-image", label: backendStore.translate("Copy") },
+                    { type: "item", id: "save-image-as", label: backendStore.translate("Save As") },
+                ];
+                await nextTick();
+                isContextMenuVisible.value = true;
+                return;
+            }
+        };
+
+        // 处理菜单项选择
+        const handleMenuSelect = async (menuItem: MenuItem) => {
+            if (menuItem.type !== "item") return;
+
+            const selection = window.getSelection();
+
+            switch (menuItem.id) {
+                case "copy-image":
+                    if (currentImageElement.value) {
+                        await copyImage(currentImageElement.value);
+                    } else if (selection) {
+                        const range = selection.getRangeAt(0);
+                        const container = range.cloneContents();
+                        const images = container.querySelectorAll("img");
+                        if (images.length > 0) {
+                            const firstImg = images[0] as HTMLImageElement;
+                            await copyImage(firstImg);
+                        }
+                    }
+                    break;
+                case "save-image-as":
+                    if (currentImageElement.value) {
+                        await saveImageAs(currentImageElement.value);
+                    }
+                    break;
+                case "copy-selection":
+                    if (selection) {
+                        await copySelection(selection);
+                    }
+                    break;
+            }
+        };
+
+        // 处理菜单可见性变化
+        const handleMenuVisibleChange = (visible: boolean) => {
+            isContextMenuVisible.value = visible;
+            if (!visible) {
+                currentImageElement.value = null;
+            }
+        };
+
+        // 复制图片
+        const copyImage = async (img: HTMLImageElement) => {
+            console.info("copyImage start:", new Date().toISOString());
+            // 检查是否是 data URL（base64 图片）
+            if (img.src.startsWith("data:")) {
+                try {
+                    const base64Data = img.src.split(",")[1] || img.src;
+                    backendStore.requestSystem("copyToClipboard", base64Data, CopyDataType.CopyImage);
+                    return;
+                } catch (error) {
+                    console.error("Copy base64 image failed:", error);
+                }
+            }
+
+            // 非 base64 图片直接用 HTML 方式复制，保留原始 src
+            try {
+                const html = `<img src="${img.src}" />`;
+                backendStore.requestSystem("copyToClipboard", html, CopyDataType.CopyHtml);
+                console.info("copyImage end:", new Date().toISOString());
+                return;
+            } catch (error) {
+                console.error("Copy image as HTML failed:", error);
+            }
+
+            // 回退：复制图片 URL
+            try {
+                backendStore.requestSystem("copyToClipboard", img.src, CopyDataType.CopyText);
+            } catch (e) {
+                console.error("Copy image URL failed:", e);
+            }
+            console.info("copyImage end:", new Date().toISOString());
+        };
+
+        // 另存为图片
+        const saveImageAs = async (img: HTMLImageElement) => {
+            let saveData = "";
+
+            // 检查是否是 data URL（base64 图片）
+            if (img.src.startsWith("data:")) {
+                saveData = img.src.split(",")[1] || img.src;
+            } else {
+                // 非 base64 图片直接传 src 给后端，由后端判断是路径还是 URL
+                saveData = img.src;
+            }
+
+            if (saveData) {
+                backendStore.requestSystem("saveImageAs", saveData, true);
+            } else {
+                console.error("Failed to get image data for saving");
+            }
+        };
+
+        // 复制选区内容
+        const copySelection = async (selection: Selection) => {
+            const text = selection.toString();
+
+            try {
+                const range = selection.getRangeAt(0);
+                const fragment = range.cloneContents();
+                const images = fragment.querySelectorAll("img");
+
+                // 将片段转为 HTML 字符串（图片保持原始 src）
+                const div = document.createElement("div");
+                div.appendChild(fragment);
+                const html = div.innerHTML;
+
+                if (images.length > 0) {
+                    // 包含图片，通过后端接口处理（后端会将本地路径转为 base64）
+                    backendStore.requestSystem("copyToClipboard", html, CopyDataType.CopyHtml);
+                } else {
+                    // 无图片，使用 execCommand 或回退纯文本
+                    const success = document.execCommand("copy");
+                    if (!success) {
+                        backendStore.requestSystem("copyToClipboard", text, CopyDataType.CopyText);
+                    }
+                }
+            } catch (error) {
+                console.error("copySelection failed:", error);
+                try {
+                    backendStore.requestSystem("copyToClipboard", text, CopyDataType.CopyText);
+                } catch (e) {
+                    console.error("Copy text failed:", e);
+                }
+            }
+        };
+
         // 判断收到停止的错误消息时，气泡中是否有内容
         const hasContent = computed(() => {
             return props.message.render_message.some((item) => {
                 switch (item.type) {
                     case ContentType.CntOutline:
-                    case ContentType.CntAgentReasoning:
-                    case ContentType.CntAgentAction:
                     case ContentType.CntDocCard:
                         return true;
                     case ContentType.CntText: {
@@ -292,8 +521,11 @@ export default defineComponent({
                 return;
             }
 
+            // 从目标消息中提取文件列表（而非从 props.message 读取）
+            const targetFiles = extractUploadFilesFromMessage(msg);
+
             // 判断文件是否存在
-            const filePaths = cachedFiles.value.map((file) => ({
+            const filePaths = targetFiles.map((file) => ({
                 filePath: file.filePath,
                 imgBase64: file.icon,
                 isExist: false,
@@ -316,7 +548,7 @@ export default defineComponent({
                 }));
 
             // 找出存在的文件
-            const validFiles = cachedFiles.value.filter((file) => {
+            const validFiles = targetFiles.filter((file) => {
                 const found = filePaths.find((fp) => fp.filePath === file.filePath);
                 return found?.isExist === true;
             });
@@ -328,7 +560,7 @@ export default defineComponent({
             }
 
             // 继续执行编辑逻辑
-            proceedWithEdit(msg, cachedFiles.value);
+            proceedWithEdit(msg, targetFiles);
         };
 
         // 执行实际的编辑操作
@@ -596,7 +828,13 @@ export default defineComponent({
                     return backendStore.translate("Voice Read");
                 };
 
-                const actionButtons = [
+                const actionButtons: Array<{
+                    icon: string;
+                    onClick: (event: MouseEvent) => void | Promise<void>;
+                    tooltip: string;
+                    isPlaying?: boolean;
+                    disabled?: boolean;
+                }> = [
                     {
                         icon: "voice-play",
                         onClick: (event: MouseEvent) => handlePlayClick(event, msg),
@@ -614,14 +852,14 @@ export default defineComponent({
                 // 只有最后一条AI消息才添加重试按钮
                 if (props.isLastMessage && showRetry.value) {
                     // 最大重试次数为5，当兄弟消息总数达到5时禁用重试按钮
-                    const isRetryDisabled = siblingMessage.total >= 5;
+                    const isRetryDisabled = siblingMessage.total >= 5 || props.shouldDisableRetry;
                     const retryTooltip = isRetryDisabled
                         ? backendStore.translate("Answer each question up to 5 times")
                         : backendStore.translate("Regenerate");
 
                     actionButtons.push({
                         icon: "retry",
-                        onClick: isRetryDisabled ? () => {} : handleRetryClick,
+                        onClick: isRetryDisabled || props.shouldDisableRetry ? () => {} : handleRetryClick,
                         tooltip: retryTooltip,
                         disabled: isRetryDisabled,
                     });
@@ -742,6 +980,17 @@ export default defineComponent({
             }
         });
 
+        // frontendKey 稳定机制使 AI 消息 ID 切换时不重挂载组件，onMounted 不会再触发。
+        // 此 watch 补足这一路径：当 render_message 中首次出现 outline item 时主动加载大纲。
+        watch(
+            () => props.message.render_message.some((item) => item.type === "outline"),
+            (hasOutline) => {
+                if (hasOutline) {
+                    loadOutlineFromWorkspace();
+                }
+            },
+        );
+
         // 监听过期文件确认事件
         const stopWatchExpiredFiles = watch(
             () => uploadFilesStore.expiredFilesConfirmedVersion,
@@ -778,6 +1027,7 @@ export default defineComponent({
             handleOpenCachedFile,
             handleMessageMouseEnter,
             handleMessageMouseLeave,
+            handleContextMenu,
             getActionButtonsVisibilityClass,
             loadedOutlineData,
             outlineLoading,
@@ -791,6 +1041,15 @@ export default defineComponent({
             previousMessage: computed(() => props.previousMessage), // 将 previousMessage 传递给子组件
             showOperationCanceledHint,
             isFromHistory: computed(() => props.isFromHistory), // 是否从历史记录中加载
+            // 右键菜单相关
+            isContextMenuVisible,
+            contextMenuItems,
+            contextMenuPosition,
+            handleMenuSelect,
+            handleMenuVisibleChange,
+            currentAssistantIcon,
+            currentAssistantId,
+            currentAssistantGradientColors,
         };
     },
 
@@ -800,204 +1059,245 @@ export default defineComponent({
 
         return (
             <div class="message__item" onMouseleave={() => this.handleMessageMouseLeave()}>
-                {/* 消息内容区 */}
-                <div
-                    class={[
-                        "chat-bubbles__item",
-                        msg.role === UserType.USER ? "chat-bubbles__item--user" : "chat-bubbles__item--ai",
-                        msg.role === UserType.USER && this.cachedDisplayFiles.length > 0
-                            ? "chat-bubbles__item--with-files"
-                            : "",
-                        msg.render_message.some(
-                            (item) =>
-                                item.type === ContentType.CntOutline ||
-                                item.type === ContentType.CntReasoning ||
-                                item.type === ContentType.CntAgentStep ||
-                                item.type === ContentType.CntTool ||
-                                (item.type === ContentType.CntText && msg.role === UserType.ASSISTANT),
-                        )
-                            ? "chat-bubbles__item--full-width"
-                            : "",
-                    ]
-                        .filter(Boolean)
-                        .join(" ")}
-                    onClick={() => this.handleMessageClick(msg)}
-                    onMouseenter={() => this.handleMessageMouseEnter(0)}
-                >
-                    {msg.role === UserType.USER && this.cachedDisplayFiles.length > 0 && (
-                        <FileGroup
-                            class="message__file-group"
-                            fileList={this.cachedDisplayFiles}
-                            deletable={false}
-                            align={this.FileAlignment.Right}
-                            popoverPlacement={this.PopoverPlacement.Bottom}
-                            popoverAlign={this.PopoverAlign.Right}
-                            onOpenFile={this.handleOpenCachedFile}
-                        />
+                <div class={`message__content ${msg.role === UserType.USER ? "message__content--user" : ""}`}>
+                    {/* 头像区域 - 仅 AI 消息显示 */}
+                    {msg.role === UserType.ASSISTANT && (
+                        <div class="message__avatar">
+                            <Avatar
+                                icon={this.currentAssistantIcon}
+                                assistantId={this.currentAssistantId}
+                                gradient_colors={this.currentAssistantGradientColors}
+                                loading={this.shouldShowLoading(msg)}
+                            />
+                        </div>
                     )}
-                    <div class="chat-bubbles__bubble">
-                        {msg.render_message.map((item, itemIndex) => {
-                            // 检查表格内容
-                            if (item.type === ContentType.CntText && "content" in item.data) {
-                                const content = item.data.content;
-                                if (typeof content === "string" && content.includes("|")) {
-                                    console.log("[Message] Found table-like content:", {
-                                        hasBar: content.includes("|"),
-                                        hasTableTag: content.includes("<table"),
-                                        preview: content.substring(0, 100),
-                                    });
-                                }
-                            }
-
-                            if (item.type === ContentType.CntText && "content" in item.data) {
-                                // User messages: render as plain text
-                                // AI messages: render with Markdown
-                                if (msg.role === UserType.USER) {
-                                    return (
-                                        <div key={itemIndex} style="white-space: pre-wrap; line-height: 1.5;">
-                                            {item.data.content}
-                                        </div>
-                                    );
-                                } else {
-                                    // Check if this is the last text item and streaming is active
-                                    const isLastItem = itemIndex === msg.render_message.length - 1;
-                                    const onlyTextItems = msg.render_message.filter(
-                                        (item) => item.type === ContentType.CntText,
-                                    );
-                                    const isOnlyEmptyTextItem =
-                                        onlyTextItems &&
-                                        onlyTextItems.length === 1 &&
-                                        (onlyTextItems[0]?.data as RenderData)?.content === "";
-                                    const hasActiveReasoning = msg.render_message.some(
-                                        (ri) =>
-                                            ri.type === ContentType.CntReasoning &&
-                                            (ri.data as ReasoningData).status !== 1,
-                                    );
-                                    const shouldAppendLoading =
-                                        this.shouldShowLoading(msg) && isLastItem && !hasActiveReasoning;
-
-                                    return (
-                                        <MarkdownRenderer
-                                            key={itemIndex}
-                                            content={item.data.content}
-                                            isUser={false}
-                                            showLoading={shouldAppendLoading}
-                                            isOnlyEmptyTextItem={isOnlyEmptyTextItem}
-                                        />
-                                    );
-                                }
-                            } else if (item.type === ContentType.CntOutline) {
-                                // 引用格式：从 workspace 加载完整大纲数据
-                                const outlineData = this.loadedOutlineData;
-                                if (!outlineData) {
-                                    // 正在加载或加载失败，显示标题占位
-                                    const refData = item.data as OutlineRefData;
-                                    return (
-                                        <div key={itemIndex} class="outline-loading">
-                                            {refData.title || "加载大纲中..."}
-                                        </div>
-                                    );
-                                }
-                                const isLastMessage =
-                                    this.$props.isLastMessage && itemIndex === msg.render_message.length - 1;
-                                return (
-                                    <OutlineViewer
-                                        key={itemIndex}
-                                        data={outlineData}
-                                        isLastMessage={isLastMessage}
-                                        editable={isLastMessage}
-                                        onDeleteParagraph={(index) => this.handleOutlineDeleteParagraph(0, index)}
-                                        onDeleteSubsection={(pIndex, sIndex) =>
-                                            this.handleOutlineDeleteSubsection(0, pIndex, sIndex)
+                    <div
+                        class={[
+                            "message__content-wrapper",
+                            msg.role === UserType.USER ? "" : "message__content-wrapper--ai",
+                        ]}
+                    >
+                        {/* 消息内容区 */}
+                        <div
+                            class={[
+                                "chat-bubbles__item",
+                                msg.role === UserType.USER ? "chat-bubbles__item--user" : "chat-bubbles__item--ai",
+                                msg.role === UserType.USER && this.cachedDisplayFiles.length > 0
+                                    ? "chat-bubbles__item--with-files"
+                                    : "",
+                                msg.render_message.some(
+                                    (item) =>
+                                        item.type === ContentType.CntOutline ||
+                                        item.type === ContentType.CntReasoning ||
+                                        item.type === ContentType.CntAgentStep ||
+                                        item.type === ContentType.CntWebSearch ||
+                                        item.type === ContentType.CntTool ||
+                                        item.type === ContentType.CntIComps ||
+                                        (item.type === ContentType.CntText && msg.role === UserType.ASSISTANT),
+                                )
+                                    ? "chat-bubbles__item--full-width"
+                                    : "",
+                            ]
+                                .filter(Boolean)
+                                .join(" ")}
+                            onClick={() => this.handleMessageClick(msg)}
+                            onMouseenter={() => this.handleMessageMouseEnter(0)}
+                        >
+                            {msg.role === UserType.USER && this.cachedDisplayFiles.length > 0 && (
+                                <FileGroup
+                                    class="message__file-group"
+                                    fileList={this.cachedDisplayFiles}
+                                    deletable={false}
+                                    align={this.FileAlignment.Right}
+                                    popoverPlacement={this.PopoverPlacement.Bottom}
+                                    popoverAlign={this.PopoverAlign.Right}
+                                    onOpenFile={this.handleOpenCachedFile}
+                                />
+                            )}
+                            <div class="chat-bubbles__bubble" onContextmenu={this.handleContextMenu}>
+                                {msg.render_message.map((item, itemIndex) => {
+                                    // 检查表格内容
+                                    if (item.type === ContentType.CntText && "content" in item.data) {
+                                        const content = item.data.content;
+                                        if (typeof content === "string" && content.includes("|")) {
+                                            console.log("[Message] Found table-like content:", {
+                                                hasBar: content.includes("|"),
+                                                hasTableTag: content.includes("<table"),
+                                                preview: content.substring(0, 100),
+                                            });
                                         }
-                                        onOutlineChange={(data: OutlineData) => this.handleOutlineChange(msg, data)}
-                                    />
-                                );
-                            } else if (item.type === ContentType.CntReasoning) {
-                                return <Reasoning key={itemIndex} data={item.data as ReasoningData} />;
-                            } else if (item.type === ContentType.CntAgentStep) {
-                                return <AgentStep key={itemIndex} data={item.data as AgentStepData} />;
-                            } else if (item.type === ContentType.CntTool) {
-                                const toolUseData = item.data as ToolUseData;
-                                return <ToolUse key={itemIndex} data={toolUseData} />;
-                            } else if (item.type === ContentType.CntDocCard) {
-                                // doc_card：引用格式，显示文档卡片
-                                const docData = item.data as DocCardData;
-                                return (
-                                    <DocCard
-                                        key={itemIndex}
-                                        data={docData}
-                                        conversationId={this.currentConversationId}
-                                        messageId={msg.id ?? ""}
-                                        isNew={item.isNew === true}
-                                        createdAt={(msg.extension?.created_at as number | string) || ""}
-                                        onCardClick={(data: DocCardData) => {
-                                            console.log("[Message] doc card clicked:", data.id);
-                                        }}
-                                        onCardOpened={() => {
-                                            delete item.isNew;
-                                        }}
-                                    />
-                                );
-                            } else if (item.type === ContentType.CntError) {
-                                const errorData = item.data as ErrorMsg;
-                                return (
-                                    <Error
-                                        isLastMessage={this.$props.isLastMessage}
-                                        hasContent={this.hasContent}
-                                        key={itemIndex}
-                                        data={errorData}
-                                        model={msg.model_id}
-                                        isFromHistory={this.isFromHistory} // 是否从历史记录中加载
-                                        onOperationCanceled={() => {
-                                            // 操作取消状态由父组件控制，这里不需要处理
-                                        }}
-                                    />
-                                );
-                            } else if (item.type === "command_card") {
-                                // command_card：显示指令卡片，用于系统控制功能
-                                const commandData = item.data as CommandCardData;
-                                console.log("[Message] commandData:", commandData);
+                                    }
 
-                                if (!this.$props.isLastMessage) {
+                                    if (item.type === ContentType.CntText && "content" in item.data) {
+                                        // User messages: render as plain text
+                                        // AI messages: render with Markdown
+                                        if (msg.role === UserType.USER) {
+                                            return (
+                                                <div key={itemIndex} style="white-space: pre-wrap; line-height: 1.5;">
+                                                    {item.data.content}
+                                                </div>
+                                            );
+                                        } else {
+                                            // Check if this is the last text item and streaming is active
+                                            const isLastItem = itemIndex === msg.render_message.length - 1;
+                                            const onlyTextItems = msg.render_message.filter(
+                                                (item) => item.type === ContentType.CntText,
+                                            );
+                                            const isOnlyEmptyTextItem =
+                                                onlyTextItems &&
+                                                onlyTextItems.length === 1 &&
+                                                (onlyTextItems[0]?.data as RenderData)?.content === "";
+                                            const hasActiveReasoning = msg.render_message.some(
+                                                (ri) =>
+                                                    ri.type === ContentType.CntReasoning &&
+                                                    (ri.data as ReasoningData).status !== 1,
+                                            );
+                                            const shouldAppendLoading =
+                                                this.shouldShowLoading(msg) && isLastItem && !hasActiveReasoning;
+
+                                            return (
+                                                <MarkdownRenderer
+                                                    key={itemIndex}
+                                                    content={item.data.content}
+                                                    isUser={false}
+                                                    showLoading={shouldAppendLoading}
+                                                    isOnlyEmptyTextItem={false}
+                                                />
+                                            );
+                                        }
+                                    } else if (item.type === ContentType.CntOutline) {
+                                        // 引用格式：从 workspace 加载完整大纲数据
+                                        const outlineData = this.loadedOutlineData;
+                                        if (!outlineData) {
+                                            // 正在加载或加载失败，显示标题占位
+                                            const refData = item.data as OutlineRefData;
+                                            return (
+                                                <div key={itemIndex} class="outline-loading">
+                                                    {refData.title || "加载大纲中..."}
+                                                </div>
+                                            );
+                                        }
+                                        const isLastMessage =
+                                            this.$props.isLastMessage && itemIndex === msg.render_message.length - 1;
+                                        return (
+                                            <OutlineViewer
+                                                key={itemIndex}
+                                                data={outlineData}
+                                                isLastMessage={isLastMessage}
+                                                editable={isLastMessage}
+                                                onDeleteParagraph={(index) =>
+                                                    this.handleOutlineDeleteParagraph(0, index)
+                                                }
+                                                onDeleteSubsection={(pIndex, sIndex) =>
+                                                    this.handleOutlineDeleteSubsection(0, pIndex, sIndex)
+                                                }
+                                                onOutlineChange={(data: OutlineData) =>
+                                                    this.handleOutlineChange(msg, data)
+                                                }
+                                            />
+                                        );
+                                    } else if (item.type === ContentType.CntReasoning) {
+                                        return <Reasoning key={itemIndex} data={item.data as ReasoningData} />;
+                                    } else if (item.type === ContentType.CntAgentStep) {
+                                        return <AgentStep key={itemIndex} data={item.data as AgentStepData} />;
+                                    } else if (item.type === ContentType.CntWebSearch) {
+                                        return <Search key={itemIndex} data={item.data as WebSearchData} />;
+                                    } else if (item.type === ContentType.CntTool) {
+                                        const toolUseData = item.data as ToolUseData;
+                                        return <ToolUse key={itemIndex} data={toolUseData} />;
+                                    } else if (item.type === ContentType.CntDocCard) {
+                                        // doc_card：引用格式，显示文档卡片
+                                        const docData = item.data as DocCardData;
+                                        return (
+                                            <DocCard
+                                                key={itemIndex}
+                                                data={docData}
+                                                conversationId={this.currentConversationId}
+                                                messageId={msg.id ?? ""}
+                                                isNew={item.isNew === true}
+                                                createdAt={(msg.extension?.created_at as number | string) || ""}
+                                                onCardClick={(data: DocCardData) => {
+                                                    console.log("[Message] doc card clicked:", data.id);
+                                                }}
+                                                onCardOpened={() => {
+                                                    delete item.isNew;
+                                                }}
+                                            />
+                                        );
+                                    } else if (item.type === ContentType.CntError) {
+                                        const errorData = item.data as ErrorMsg;
+                                        return (
+                                            <Error
+                                                isLastMessage={this.$props.isLastMessage}
+                                                hasContent={this.hasContent}
+                                                key={itemIndex}
+                                                data={errorData}
+                                                model={msg.model_id}
+                                                isFromHistory={this.isFromHistory} // 是否从历史记录中加载
+                                                onOperationCanceled={() => {
+                                                    // 操作取消状态由父组件控制，这里不需要处理
+                                                }}
+                                            />
+                                        );
+                                    } else if (item.type === ContentType.CntCommandCard) {
+                                        // command_card：显示指令卡片，用于系统控制功能
+                                        const commandData = item.data as CommandCardData;
+                                        console.log("[Message] commandData:", commandData);
+
+                                        if (!this.$props.isLastMessage) {
+                                            return null;
+                                        }
+
+                                        // 检查当前会话的showCards状态
+                                        const conversationRecord = useConversationManagerStore().conversionList.get(
+                                            this.currentConversationId,
+                                        );
+                                        if (!conversationRecord?.showCards) {
+                                            return null;
+                                        }
+
+                                        // 检查命令执行是否成功，如果存在错误则不显示控制卡片
+                                        if (commandData.errorCode && commandData.errorCode !== 0) {
+                                            console.log(
+                                                "[Message] Command execution failed, skipping card for:",
+                                                commandData.toolName,
+                                                "errorCode:",
+                                                commandData.errorCode,
+                                            );
+                                            return null;
+                                        }
+
+                                        return (
+                                            <CommandCard
+                                                key={itemIndex}
+                                                data={commandData}
+                                                onCardClick={(data: CommandCardData) => {
+                                                    console.log("[Message] command card clicked:", data.toolName);
+                                                }}
+                                            />
+                                        );
+                                    } else if (item.type === ContentType.CntIComps) {
+                                        const sessionId = useConversationManagerStore().getSessionIdByConversationId;
+                                        return (
+                                            <InteractiveComp
+                                                key={itemIndex}
+                                                data={item.data as BashApproveData | FileChangeApproveData}
+                                                sessionId={sessionId || ""}
+                                                messageId={msg.id ?? ""}
+                                                isLastMessage={this.$props.isLastMessage}
+                                                isSessionCanceled={this.$props.isOperationCanceled}
+                                            />
+                                        );
+                                    }
                                     return null;
-                                }
-
-                                // 检查当前会话的showCards状态
-                                const conversationRecord = useConversationManagerStore().conversionList.get(
-                                    this.currentConversationId,
-                                );
-                                if (!conversationRecord?.showCards) {
-                                    return null;
-                                }
-
-                                // 检查命令执行是否成功，如果存在错误则不显示控制卡片
-                                if (commandData.errorCode && commandData.errorCode !== 0) {
-                                    console.log(
-                                        "[Message] Command execution failed, skipping card for:",
-                                        commandData.toolName,
-                                        "errorCode:",
-                                        commandData.errorCode,
-                                    );
-                                    return null;
-                                }
-
-                                return (
-                                    <CommandCard
-                                        key={itemIndex}
-                                        data={commandData}
-                                        onCardClick={(data: CommandCardData) => {
-                                            console.log("[Message] command card clicked:", data.toolName);
-                                        }}
-                                    />
-                                );
-                            }
-                            return null;
-                        })}
+                                })}
+                            </div>
+                        </div>
+                        {/* 消息功能按钮区 */}
+                        <MessageActionButtons config={this.actionButtonsConfig} />
                     </div>
                 </div>
-                {/* 消息功能按钮区 */}
-                <MessageActionButtons config={this.actionButtonsConfig} />
+
                 {/* 停止后的提示信息，只有 ASSISTANT且最后一条消息才添加*/}
                 {msg.role === UserType.ASSISTANT &&
                     this.$props.isLastMessage &&
@@ -1011,6 +1311,16 @@ export default defineComponent({
                             }}
                         />
                     )}
+                {/* 右键菜单 - Teleport 到 body 避免 position: fixed 受祖先 transform 影响 */}
+                <Teleport to="body">
+                    <Menu
+                        items={this.contextMenuItems}
+                        visible={this.isContextMenuVisible}
+                        position={this.contextMenuPosition}
+                        onUpdateVisible={this.handleMenuVisibleChange}
+                        onSelectItem={this.handleMenuSelect}
+                    />
+                </Teleport>
             </div>
         );
     },

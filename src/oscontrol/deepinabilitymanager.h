@@ -113,7 +113,7 @@ public:
     OSCallContext doSeek(int offset);
 
     // 系统字号
-    OSCallContext doSystemFontSize(float size);
+    OSCallContext doSystemFontSize(int size);
     OSCallContext getSystemFontSize();
 
     // 文件操作

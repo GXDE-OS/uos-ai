@@ -18,8 +18,20 @@ export default defineComponent({
             type: Number,
             required: true,
         },
+        stickyGroupHeadersEnabled: {
+            type: Boolean,
+            default: false,
+        },
     },
-    emits: ["item-click", "reorder", "rightButtonIconClick", "stickyChange", "rightButtonClick"],
+    emits: [
+        "item-click",
+        "reorder",
+        "rightButtonIconClick",
+        "groupHeaderClick",
+        "stickyChange",
+        "rightButtonClick",
+        "collapse",
+    ],
     setup(props, { emit }) {
         const groupsRef = ref<HTMLElement | null>(null);
         const headerBaseTops = ref<Record<string, number>>({});
@@ -30,30 +42,23 @@ export default defineComponent({
             emit("item-click", item);
         };
 
+        const handleGroupHeaderClick = (params: Record<string, any>) => {
+            emit("groupHeaderClick", params);
+        };
+
         // 常驻数量只由支持常驻/隐藏区跨区拖拽的分组上报，其他分组透传即可。
         const handleReorder = (payload: { groupId: string; newItems: string[]; visibleCount?: number }) => {
             emit("reorder", payload);
         };
 
         const groupsWithHeaders = computed(() => props.groups.filter(shouldShowGroupHeader));
-        const groupHeaderOrderMap = computed(() => {
-            const orderMap: Record<string, number> = {};
-            let headerOrder = 0;
-
-            for (const group of props.groups) {
-                if (!shouldShowGroupHeader(group)) {
-                    continue;
-                }
-
-                orderMap[group.id] = headerOrder;
-                headerOrder += 1;
-            }
-
-            return orderMap;
-        });
 
         const stickyGroups = computed(() => {
-            const nextGroups: SidebarGroup[] = [];
+            if (!props.stickyGroupHeadersEnabled) {
+                return [];
+            }
+
+            let lastStickyGroup: SidebarGroup | undefined;
 
             for (const group of groupsWithHeaders.value) {
                 const headerTop = headerBaseTops.value[group.id];
@@ -61,26 +66,28 @@ export default defineComponent({
                     break;
                 }
 
-                const headerOrder = groupHeaderOrderMap.value[group.id] ?? 0;
-                if (props.scrollTop > headerTop - headerOrder * GROUP_HEADER_HEIGHT) {
-                    nextGroups.push(group);
+                if (props.scrollTop > headerTop) {
+                    lastStickyGroup = group;
                     continue;
                 }
 
                 break;
             }
 
-            return nextGroups;
+            return lastStickyGroup ? [lastStickyGroup] : [];
         });
 
         const stickyStackHeight = computed(() => stickyGroups.value.length * GROUP_HEADER_HEIGHT);
-        const stickyGroupIdMap = computed(() =>
-            Object.fromEntries(stickyGroups.value.map((group) => [group.id, true])) as Record<string, boolean>,
+        const stickyGroupIdMap = computed(
+            () => Object.fromEntries(stickyGroups.value.map((group) => [group.id, true])) as Record<string, boolean>,
         );
 
-        const listLayerStyle = computed(() => ({
-            "--item-list-sticky-stack-height": `${stickyStackHeight.value}px`,
-        }) as Record<string, string>);
+        const listLayerStyle = computed(
+            () =>
+                ({
+                    "--item-list-sticky-stack-height": `${stickyStackHeight.value}px`,
+                }) as Record<string, string>,
+        );
 
         const areHeaderBaseTopsEqual = (nextValue: Record<string, number>, prevValue: Record<string, number>) => {
             const nextKeys = Object.keys(nextValue);
@@ -100,6 +107,13 @@ export default defineComponent({
         };
 
         const measureHeaderBaseTops = () => {
+            if (!props.stickyGroupHeadersEnabled) {
+                if (Object.keys(headerBaseTops.value).length > 0) {
+                    headerBaseTops.value = {};
+                }
+                return;
+            }
+
             const groupsElement = groupsRef.value;
             if (!groupsElement) {
                 return;
@@ -121,6 +135,10 @@ export default defineComponent({
         };
 
         const scheduleMeasurement = () => {
+            if (!props.stickyGroupHeadersEnabled) {
+                return;
+            }
+
             if (measureFrame !== null) {
                 return;
             }
@@ -132,6 +150,11 @@ export default defineComponent({
         };
 
         const syncMeasurements = () => {
+            if (!props.stickyGroupHeadersEnabled) {
+                headerBaseTops.value = {};
+                return;
+            }
+
             nextTick(() => {
                 scheduleMeasurement();
             });
@@ -152,7 +175,9 @@ export default defineComponent({
 
         onMounted(() => {
             resizeObserver = new ResizeObserver(() => {
-                scheduleMeasurement();
+                if (props.stickyGroupHeadersEnabled) {
+                    scheduleMeasurement();
+                }
             });
             if (groupsRef.value) {
                 resizeObserver.observe(groupsRef.value);
@@ -172,9 +197,24 @@ export default defineComponent({
         watch(
             () => props.groups,
             () => {
-                syncMeasurements();
+                if (props.stickyGroupHeadersEnabled) {
+                    syncMeasurements();
+                }
             },
             { deep: true },
+        );
+
+        watch(
+            () => props.stickyGroupHeadersEnabled,
+            (enabled) => {
+                if (enabled) {
+                    syncMeasurements();
+                    return;
+                }
+
+                headerBaseTops.value = {};
+            },
+            { immediate: true },
         );
 
         watch(
@@ -188,12 +228,17 @@ export default defineComponent({
             { immediate: true },
         );
 
+        const handleCollapse = (payload: { groupId: string; collapsed: boolean }) => {
+            emit("collapse", payload);
+        };
+
         return {
-            groupHeaderOrderMap,
             stickyGroupIdMap,
             listLayerStyle,
             handleItemClick,
+            handleGroupHeaderClick,
             handleReorder,
+            handleCollapse,
             setGroupsRef,
         };
     },
@@ -206,19 +251,23 @@ export default defineComponent({
                             <Group
                                 key={group.id}
                                 group={group}
-                                headerOrder={this.groupHeaderOrderMap[group.id] ?? 0}
                                 headerDomId={`inline-group-header-${group.id}`}
                                 headerHidden={Boolean(this.stickyGroupIdMap[group.id])}
                                 onItem-click={this.handleItemClick}
+                                onHeaderClick={this.handleGroupHeaderClick}
                                 onReorder={this.handleReorder}
                                 onRightButtonIconClick={(params: Record<string, any>) =>
                                     this.$emit("rightButtonIconClick", params)
                                 }
-                                onRightButtonClick={(params: { item: SidebarGroup["items"][number]; event: MouseEvent }) =>
-                                    this.$emit("rightButtonClick", params)
-                                }
+                                onRightButtonClick={(params: {
+                                    item: SidebarGroup["items"][number];
+                                    event: MouseEvent;
+                                }) => this.$emit("rightButtonClick", params)}
+                                onCollapse={this.handleCollapse}
                                 v-slots={{
-                                    item: this.$slots.item ? (slotProps: any) => this.$slots.item?.(slotProps) : undefined,
+                                    item: this.$slots.item
+                                        ? (slotProps: any) => this.$slots.item?.(slotProps)
+                                        : undefined,
                                 }}
                             />
                         ))}

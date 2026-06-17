@@ -6,6 +6,7 @@
 #include "global_key_define.h"
 
 #include <QVariantHash>
+#include <QJsonArray>
 
 namespace uos_ai {
 
@@ -30,6 +31,30 @@ inline RenderMessageList makeAgentStep(const QString &title,
     rmsg.type = ContentType::CntAgentStep;
     rmsg.data = data;
     return RenderMessageList{rmsg};
+}
+
+inline RenderMessageList makeSearchStep(const QString &title,
+                                        SearchStatus status = SsSearching,
+                                        const QJsonArray &pages = {}) {
+    QVariantHash data;
+    data[STR_KEY_TITLE] = title;
+    data[STR_KEY_STATUS] = static_cast<int>(status);
+
+    if (!pages.isEmpty()) {
+        QVariantList content;
+        for (const auto &page : pages) {
+            auto hash = page.toObject().toVariantHash();
+            content.append(hash);
+        }
+
+        data[STR_KEY_CONTENT] = content;
+    }
+
+    RenderMessage rmsg;
+    rmsg.type = ContentType::CntWebSearch;
+    rmsg.data = data;
+    return RenderMessageList{rmsg};
+
 }
 
 } // namespace uos_ai

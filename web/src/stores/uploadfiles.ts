@@ -54,7 +54,7 @@ export interface ExpiredFile {
 export const useUploadFilesStore = defineStore("uploadFiles", {
     state: () => ({
         uploadedFiles: ref<UploadFile[]>([]),
-        isScreenshotEnabled: ref(true),
+        isScreenshotVisible: ref(true),
         fileChannelListenerRegistered: ref(false),
         pendingNativeDrop: null as NativeDropPayload | null,
         pendingNativeDropVersion: 0,
@@ -70,10 +70,14 @@ export const useUploadFilesStore = defineStore("uploadFiles", {
         getUploadedFiles: (state) => state.uploadedFiles,
         // Get file count
         getFileCount: (state) => state.uploadedFiles.length,
+        // Check if any uploaded file failed parsing
+        hasUploadFileParseError: (state) => state.uploadedFiles.some((file) => file.parseStatus === "error"),
+        // Check if any uploaded file is parsing
+        hasUploadFileParsing: (state) => state.uploadedFiles.some((file) => file.parseStatus === "parsing"),
         // Check if max files reached
         isMaxFilesReached: (state) => state.uploadedFiles.length >= MAX_UPLOAD_FILES,
-        // Check if screenshot is enabled
-        getIsScreenshotEnabled: (state) => state.isScreenshotEnabled,
+        // Check if screenshot action should be shown
+        getIsScreenshotVisible: (state) => state.isScreenshotVisible,
     },
 
     actions: {
@@ -82,9 +86,8 @@ export const useUploadFilesStore = defineStore("uploadFiles", {
             this.uploadedFiles = files;
         },
 
-        // Set screenshot enabled status
-        setIsScreenshotEnabled(enabled: boolean) {
-            this.isScreenshotEnabled = enabled;
+        setIsScreenshotVisible(visible: boolean) {
+            this.isScreenshotVisible = visible;
         },
 
         // Set file channel listener registered status
@@ -156,7 +159,9 @@ export const useUploadFilesStore = defineStore("uploadFiles", {
                     return paths;
                 }
 
-                return parsedResponse.paths.filter((path): path is string => typeof path === "string" && path.length > 0);
+                return parsedResponse.paths.filter(
+                    (path): path is string => typeof path === "string" && path.length > 0,
+                );
             } catch (error) {
                 console.error("[UploadFiles] Failed to validate incoming paths:", error);
                 return paths;
@@ -220,7 +225,8 @@ export const useUploadFilesStore = defineStore("uploadFiles", {
             const limitedPaths = acceptedPaths.slice(0, this.getRemainingFileSlots());
             return {
                 acceptedPaths: limitedPaths,
-                toastMessageKey: limitedPaths.length < acceptedPaths.length ? MAX_UPLOAD_FILES_MESSAGE_KEY : toastMessageKey,
+                toastMessageKey:
+                    limitedPaths.length < acceptedPaths.length ? MAX_UPLOAD_FILES_MESSAGE_KEY : toastMessageKey,
             };
         },
 
@@ -367,17 +373,16 @@ export const useUploadFilesStore = defineStore("uploadFiles", {
             }
         },
 
-        // Check if screenshot is enabled
-        async checkScreenshotEnabled(): Promise<boolean> {
+        // Check if screenshot should be shown
+        async checkScreenshotVisibility(): Promise<boolean> {
             try {
                 const backend = useBackendStore();
-                const result = await backend.requestFile("isEnableScreenshot");
-                // 0 means enabled
-                const enabled = result === 0;
-                this.setIsScreenshotEnabled(enabled);
-                return enabled;
+                const status = Number(await backend.requestFile("isEnableScreenshot"));
+                const visible = status !== -1;
+                this.setIsScreenshotVisible(visible);
+                return visible;
             } catch (error) {
-                console.error("Failed to check screenshot enabled:", error);
+                console.error("Failed to check screenshot visibility:", error);
                 return false;
             }
         },

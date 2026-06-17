@@ -17,6 +17,7 @@
 #include <QProcess>
 
 #include <unistd.h>
+#include <signal.h>
 
 Q_DECLARE_LOGGING_CATEGORY(logExternalLLM)
 using namespace uos_ai;
@@ -36,7 +37,7 @@ ModelhubWrapper::~ModelhubWrapper()
         // start by me, to kill.
         if (rpid == pid) {
             qCInfo(logExternalLLM) << "Killing modelhub server" << modelName << "with pid" << pid;
-            system(QString("kill -3 %0").arg(pid).toStdString().c_str());
+            kill(pid, SIGQUIT);
         } else {
             qCInfo(logExternalLLM) << "Server" << modelName << pid << "was not launched by this instance";
         }

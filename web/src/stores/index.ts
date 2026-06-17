@@ -20,3 +20,4 @@ export { useWindowChannelStore } from "./windowchannel";
 export { useNetworkStore } from "./NetWork";
 export { useAssistantChannelStore } from "./assistantChannel";
 export { useReportChannelStore } from "./reportchannel";
+export { useAppUpdateStore } from "./appUpdate";

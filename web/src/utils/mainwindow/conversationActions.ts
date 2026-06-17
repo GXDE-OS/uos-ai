@@ -15,7 +15,10 @@ type CreateConversationOptions = {
     scene?: ConversationScene;
 };
 
-export async function createConversation({ assistantId, scene = ConversationScene.Default }: CreateConversationOptions) {
+export async function createConversation({
+    assistantId,
+    scene = ConversationScene.Default,
+}: CreateConversationOptions) {
     // 标题栏和侧边栏都复用这条入口，避免“新建对话”行为在多个地方漂移。
     const assistantInfosStore = useAssistantInfosStore();
     const conversationManagerStore = useConversationManagerStore();
@@ -29,7 +32,6 @@ export async function createConversation({ assistantId, scene = ConversationScen
         return false;
     }
 
-    assistantInfosStore.setCurrentAssistant(targetAssistant);
     await modelInfosStore.loadModelList(targetAssistant.id);
 
     const conversationId = createId();
@@ -37,6 +39,8 @@ export async function createConversation({ assistantId, scene = ConversationScen
 
     // 使用当前助手下的默认模型创建空白会话，并立即切换到该会话。
     conversationManagerStore.createConversation(conversationId, targetAssistant.id, currentModelId, scene);
+
+    assistantInfosStore.setCurrentAssistant(targetAssistant);
 
     extensionPanelStore.closeExtensionPanel();
 

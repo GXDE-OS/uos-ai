@@ -3,6 +3,7 @@
 #include "miniwindow.h"
 #include "sidewindow.h"
 #include "aboutwindow.h"
+#include "gui/upgrade/updatelogdialog.h"
 #include "gui/web/webcontext.h"
 #include "gui/web/appwebpage.h"
 #include "gui/web/filechannel.h"
@@ -11,6 +12,7 @@
 #include "gui/web/reportchannel.h"
 #include "services/screenshot/screenshotservice.h"
 #include "services/fileservice/fileservice.h"
+#include "services/updateservice/appupdatechecker.h"
 #include "database/appdatabase.h"
 
 #include <QWebChannel>
@@ -19,6 +21,7 @@
 #include <QApplication>
 #include <QLoggingCategory>
 #include <QTimer>
+#include <DWidgetUtil>
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 
@@ -75,6 +78,8 @@ void WindowManager::createContext()
 
     ctx->systemCh = new SystemChannel;
     page->webChannel()->registerObject("systemObj", ctx->systemCh);
+    connect(AppUpdateChecker::instance(), &AppUpdateChecker::updateAvailable,
+            ctx->systemCh, &SystemChannel::appUpdateAvailable, Qt::UniqueConnection);
 
     ctx->serviceConfigCh = new ServiceConfigChannel;
     page->webChannel()->registerObject("serviceConfigObj", ctx->serviceConfigCh);
@@ -121,10 +126,11 @@ void WindowManager::showWindow(WindowMode mode)
 
     if (curWindow) {
         if (curWindow->mode() == mode) {
-            if (curWindow->isHidden()) {
-                curWindow->show();
-            } else if(!curWindow->isActiveWindow() || curWindow->isMinimized()){
+            if (!curWindow->isActiveWindow() || curWindow->isMinimized() || curWindow->isHidden()){
                 curWindow->activateWindow();
+                curWindow->show();
+                Dtk::Widget::moveToCenter(curWindow);
+                emit ctx->winCh->windowShown();
             }
             return;
         }
@@ -163,15 +169,13 @@ void WindowManager::showWindow(WindowMode mode)
     }
 
     emit ctx->winCh->windowModeChanged(mode);
+    Dtk::Widget::moveToCenter(curWindow);
+    emit ctx->winCh->windowShown();
 }
 
 void WindowManager::hideWindow()
 {
-#ifdef COMPILE_ON_V25
-    curWindow->hide();
-#else
     curWindow->showMinimized();
-#endif
 }
 
 WindowMode WindowManager::currentMode() const
@@ -217,6 +221,25 @@ void WindowManager::showAboutWindow()
     });
 
     aboutWindow->showDialog();
+}
+
+void WindowManager::showUpdateLogWindow()
+{
+    if (updateLogWindow) {
+        updateLogWindow->show();
+        updateLogWindow->raise();
+        updateLogWindow->activateWindow();
+        return;
+    }
+
+    updateLogWindow = new UpdateLogDialog(curWindow);
+    updateLogWindow->setAttribute(Qt::WA_DeleteOnClose);
+    connect(updateLogWindow, &QObject::destroyed, this, [this](){
+        updateLogWindow = nullptr;
+    });
+
+    updateLogWindow->show();
+    updateLogWindow->activateWindow();
 }
 
 WebContext* WindowManager::context() const

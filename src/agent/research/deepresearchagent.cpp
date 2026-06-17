@@ -232,7 +232,7 @@ QJsonArray DeepResearchAgent::handleWebSearchTool(const QJsonObject &arg)
 
 QJsonArray DeepResearchAgent::webSearch(const QString &query)
 {
-    auto searchEngine = SearchEngineFactory::create(SearchEngineFactory::EngineType::Baidu);
+    auto searchEngine = SearchEngineFactory::create(SearchEngineFactory::EngineType::Volcano);
     if (!searchEngine) {
         qCWarning(logResearch) << "DeepResearchAgent: failed to create search engine";
         return QJsonArray();

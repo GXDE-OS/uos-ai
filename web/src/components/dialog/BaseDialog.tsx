@@ -1,7 +1,7 @@
 import { defineComponent, ref, computed, type PropType, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import type { DialogButton } from "@/types/dialog";
 import SvgIcon from "@/components/SvgIcon";
-import IconButton from "@/components/IconButton";
+import TitleButton from "@/components/TitleButton";
 import { ButtonShape } from "@/types/button";
 import { useBackendStore } from "@/stores/backend";
 import { useThemeIcon } from "@/utils/loadThemeIcon";
@@ -197,11 +197,10 @@ export default defineComponent({
                                 <h3 class={["dialog__title", "dialog__title--header"]}>{this.title}</h3>
                             )}
                         </div>
-                        <IconButton
+                        <TitleButton
                             icon="icon_titlebar_close"
                             iconSize={[16, 16]}
                             size={[40, 40]}
-                            shape={ButtonShape.Rounded}
                             onClick={this.handleCancel}
                         />
                     </div>

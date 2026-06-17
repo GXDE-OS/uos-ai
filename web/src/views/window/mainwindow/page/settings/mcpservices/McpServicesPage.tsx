@@ -1,5 +1,6 @@
 import { computed, defineComponent, onMounted, ref } from "vue";
 import ComboBox from "@/components/combobox/ComboBox";
+import TextButton from "@/components/TextButton";
 import ScrollBar from "@/components/ScrollBar";
 import { useMcpServicesStore, useBackendStore, useNotifyStore } from "@/stores";
 import { ComboBoxDropdownAlign, type ComboboxOption } from "@/types/combobox";
@@ -225,13 +226,7 @@ export default defineComponent({
                             </div>
 
                             <div class="mcp-services-page__actions">
-                                <button
-                                    class="mcp-services-page__add-button"
-                                    onClick={this.handleAddService}
-                                    type="button"
-                                >
-                                    <span class="mcp-services-page__add-button-text">{this.addButtonText}</span>
-                                </button>
+                                <TextButton text={this.addButtonText} onClick={this.handleAddService} />
                                 <ComboBox
                                     dropdownAlign={ComboBoxDropdownAlign.Right}
                                     onClickOption={this.handleFilterOptionClick}

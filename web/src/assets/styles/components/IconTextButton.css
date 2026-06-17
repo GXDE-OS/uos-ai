@@ -143,7 +143,7 @@ html.dark {
 }
 
 .icon-text-button-checked:not(.icon-text-button-disabled)::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
@@ -157,7 +157,7 @@ html.dark .icon-text-button-checked:not(.icon-text-button-disabled)::after {
 
 /* 暗色模式底部阴影线 */
 html.dark .icon-text-button-checked:not(.icon-text-button-disabled)::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
@@ -197,5 +197,21 @@ html.dark .icon-text-button-checked:not(.icon-text-button-disabled)::before {
 .icon-text-button-disabled {
     cursor: default;
     opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Qt5 兼容降级：使用伪元素模拟内描边 */
+html.dark[data-legacy-css] .icon-text-button:hover:not(.icon-text-button-checked):not(.icon-text-button-disabled) {
+    --icon-text-button-hover-shadow: none;
+    position: relative;
+}
+
+html.dark[data-legacy-css] .icon-text-button:hover:not(.icon-text-button-checked):not(.icon-text-button-disabled)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     pointer-events: none;
 }

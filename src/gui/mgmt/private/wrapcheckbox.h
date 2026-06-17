@@ -24,6 +24,7 @@ public:
 
     Qt::TextFormat textFormat() const;
     void setTextFormat(Qt::TextFormat);
+    void setTextFont(const QFont &font);
     void setFontSize(int type, int weight);
 
     bool openExternalLinks() const;

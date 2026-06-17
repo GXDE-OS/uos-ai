@@ -7,7 +7,7 @@
         <location filename="../plugin-tray/uosaiplugin.cpp" line="59"/>
         <location filename="../plugin-tray/uosaiplugin.cpp" line="72"/>
         <source>UOS AI</source>
-        <translation type="unfinished"></translation>
+        <translation>小U同学</translation>
     </message>
 </context>
 </TS>

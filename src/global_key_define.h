@@ -15,6 +15,7 @@ inline constexpr char STR_KEY_ICON_NAME[] = "icon_name";
 inline constexpr char STR_KEY_IMAGE_TYPE[] = "image_type";
 inline constexpr char STR_KEY_PATH[] = "path";
 inline constexpr char STR_KEY_PLACE_HOLDER[] = "place_holder";
+inline constexpr char STR_KEY_GRADIENT_COLORS[] = "gradient_colors";
 inline constexpr char STR_KEY_ROLE[] = "role";
 inline constexpr char STR_KEY_CONTENT[] = "content";
 inline constexpr char STR_KEY_PREVIOUS[] = "previous";
@@ -65,6 +66,7 @@ inline constexpr char STR_KEY_APP_ID[] = "app_id";
 inline constexpr char STR_KEY_ARCH[] = "arch";
 inline constexpr char STR_KEY_ABILITY[] = "ability";
 inline constexpr char STR_KEY_MODEL_ID[] = "model_id";
+inline constexpr char STR_KEY_ALWAYS_APPROVE[] = "always_approve";
 inline constexpr char STR_KEY_VALUE[] = "value";
 inline constexpr char STR_KEY_AUTH[] = "auth";
 inline constexpr char STR_KEY_ADDITIONAL[] = "additional";
@@ -152,5 +154,7 @@ inline constexpr char STR_KEY_IS_PARSING_STATUS_END[] = "is_parsing_status_end";
 inline constexpr char STR_KEY_PARSING_STATUS_TEXT[] = "parsing_status_text";
 inline constexpr char STR_KEY_IS_FILE_PARSING_SUCCESS[] = "is_file_parsing_success";
 inline constexpr char STR_KEY_FILE_SIZE[] = "file_size";
+inline constexpr char STR_KEY_WEB_SEARCH[] = "web_search";
+inline constexpr char STR_KEY_INTERACTIVE_COMPONENTPS[] = "interactive_components";
 }
 #endif // GLOBAL_KEY_DEFINE_H

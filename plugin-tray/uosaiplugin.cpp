@@ -82,7 +82,7 @@ void UosAiPlugin::init(PluginProxyInterface *proxyInter)
 {
     qCInfo(logTray) << "Initializing UosAiPlugin";
     QString applicationName = qApp->applicationName();
-    qApp->setApplicationName("uos-ai");
+    qApp->setApplicationName("uos-ai-tray");
     qApp->loadTranslator();
     qApp->setApplicationName(applicationName);
 
@@ -104,24 +104,14 @@ const QString UosAiPlugin::itemCommand(const QString &itemKey)
     Q_UNUSED(itemKey);
 
     QDBusConnection connection = QDBusConnection::sessionBus();
-    bool isServiceRegistered = connection.interface()->isServiceRegistered("com.deepin.copilot");
-    if (isServiceRegistered) {
-        QDBusInterface notification("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", QDBusConnection::sessionBus());
-        QString error = notification.call(QDBus::Block, "launchChatPage").errorMessage();
-        if (error.isEmpty()) {
-            qCInfo(logTray) << "Launched chat page via DBus";
-            return "";
-        } else {
-            qCWarning(logTray) << "Failed to launch chat page via DBus, error:" << error;
-        }
+    QDBusInterface notification("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", QDBusConnection::sessionBus());
+    QString error = notification.call(QDBus::Block, "launchChatPage").errorMessage();
+    if (error.isEmpty()) {
+        qCInfo(logTray) << "Launched chat page via DBus";
+    } else {
+        qCWarning(logTray) << "Failed to launch chat page via DBus, error:" << error;
     }
-#ifdef COMPILE_ON_V23
-    qCDebug(logTray) << "Returning fallback command: dde-am uos-ai-assistant";
-    return "dde-am uos-ai-assistant";
-#else
-    qCDebug(logTray) << "Returning fallback command: uos-ai-assistant --chat";
-    return "uos-ai-assistant --chat";
-#endif
+    return "";
 }
 
 int UosAiPlugin::itemSortKey(const QString &itemKey)

@@ -1,0 +1,71 @@
+html {
+    --title-button-icon-color: rgba(0, 0, 0, 0.7);
+    --title-button-icon-hover-color: rgba(0, 0, 0, 1);
+    --title-button-icon-active-color: var(--system-active-color);
+    --title-button-hover-bg: rgba(0, 0, 0, 0.1);
+    --title-button-active-bg: rgba(0, 0, 0, 0.15);
+}
+
+html.dark {
+    --title-button-icon-color: rgba(255, 255, 255, 0.7);
+    --title-button-icon-hover-color: rgba(255, 255, 255, 1);
+    --title-button-icon-active-color: var(--system-active-color);
+    --title-button-hover-bg: rgba(255, 255, 255, 0.1);
+    --title-button-active-bg: rgba(255, 255, 255, 0.15);
+}
+
+.title-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: var(--radius-none);
+    background: transparent;
+    color: var(--title-button-icon-color);
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    transition:
+        background var(--transition-normal),
+        color var(--transition-normal),
+        opacity var(--transition-normal);
+}
+
+.title-button:hover:not(.title-button--disabled) {
+    background: var(--title-button-hover-bg);
+    color: var(--title-button-icon-hover-color);
+}
+
+.title-button:active:not(.title-button--disabled) {
+    background: var(--title-button-active-bg);
+    color: var(--title-button-icon-active-color);
+}
+
+.title-button--disabled {
+    cursor: not-allowed;
+    opacity: var(--bg-opacity-disabled);
+}
+
+.title-button--disabled * {
+    pointer-events: none;
+}
+
+.title-button:focus-visible {
+    outline: 2px solid rgba(52, 152, 219, 0.5);
+    outline-offset: -2px;
+}
+
+.title-button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .title-button,
+    .title-button *,
+    .title-button::before,
+    .title-button::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}

@@ -86,7 +86,8 @@ QJsonObject OaiMessageProtocol::params(const QVariantHash &args)
 
     if (args.contains(STR_KEY_STREAM)) {
         ret.insert(STR_KEY_STREAM, args.value(STR_KEY_STREAM).toBool());
-        ret.insert("stream_options", QJsonObject{{"include_usage", true}});
+        if (args.value(STR_KEY_STREAM).toBool())
+            ret.insert("stream_options", QJsonObject{{"include_usage", true}});
     }
 
     if (args.contains(STR_KEY_THINKING)) {
@@ -396,7 +397,7 @@ QJsonObject OaiMessageProtocol::buildMessage(const ModelMessage &msg)
             msgObj[STR_KEY_CONTENT] = contentArray;
 
         if (!msgObj.contains(STR_KEY_CONTENT) && !msgObj.contains(STR_KEY_TOOL_CALLS))
-            msgObj[STR_KEY_CONTENT] = QString();
+            msgObj[STR_KEY_CONTENT] = QString(" ");
     }
 
     return msgObj;

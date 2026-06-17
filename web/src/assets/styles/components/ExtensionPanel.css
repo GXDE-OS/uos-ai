@@ -8,7 +8,7 @@ html.dark {
 .extension-panel {
     height: 100%;
     background: var(--extension-bg-color);
-    border-left: 1px solid var(--color-border);
+    border-left: 1px solid var(--workspace-left-border-color);
     display: flex;
     flex-direction: column;
     /* 推入推出动画：初始宽度为 0，透明；由父级 CSS class 触发展开 */
@@ -16,8 +16,8 @@ html.dark {
     min-width: 0;
     overflow: hidden;
     transition: flex-basis 0.36s cubic-bezier(0.4, 0, 0.2, 1),
-                opacity 0.28s ease,
-                border-left-color 0.2s ease;
+                opacity 0.36s ease,
+                border-left-color 0.36s ease;
 }
 
 /* 面板可见时：展开 */

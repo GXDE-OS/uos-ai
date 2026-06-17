@@ -145,6 +145,7 @@ export default defineComponent({
                     shortcutList={this.shortcutList}
                     onStart={this.handleSendClick}
                     onStop={this.handleStopClick}
+                    onEnter={this.handleStateClick}
                 />
             </div>
         );

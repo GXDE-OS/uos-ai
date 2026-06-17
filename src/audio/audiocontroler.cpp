@@ -81,7 +81,7 @@ void AudioControler::prepare()
     connect(m_audioRecorder.data(), &AudioRecorder::levelUpdated,   this, &AudioControler::levelUpdated, Qt::QueuedConnection);
 
     connect(m_audioRecorder.data(), &AudioRecorder::recordError, this, [this]() {
-        emit recordError(GErrorType::AudioInputDeviceInvalid, tr("Microphone not detected"));
+        emit recordError(GErrorType::AudioInputDeviceInvalid, tr("No microphone detected"));
     }, Qt::QueuedConnection);
 
     m_audioPlayer.reset(new AudioPlayer);
@@ -91,7 +91,7 @@ void AudioControler::prepare()
     connect(m_audioPlayer.data(), &AudioPlayer::playerFileStop,      this, &AudioControler::playTextFinished, Qt::QueuedConnection);
 
     connect(m_audioPlayer.data(), &AudioPlayer::playError, this, [this]() {
-        emit playerError(GErrorType::AudioOutputDeviceInvalid, tr("Microphone not detected"));
+        emit playerError(GErrorType::AudioOutputDeviceInvalid, tr("No speaker detected"));
     }, Qt::QueuedConnection);
 }
 
@@ -180,7 +180,7 @@ bool AudioControler::startRecorder()
 {
     if (!audioInputDeviceValid()) {
         qCWarning(logAudio) << "Invalid audio input device";
-        emit playerError(GErrorType::AudioInputDeviceInvalid, "invalid input device");
+        emit playerError(GErrorType::AudioInputDeviceInvalid, tr("No microphone detected"));
         return false;
     }
 
@@ -227,7 +227,7 @@ bool AudioControler::startAppendPlayText(const QString &id, const QString &text,
     qCDebug(logAudio) << "Starting to play text, ID:" << id << "Length:" << text.length() << "isEnd:" << isEnd;
     
     if (!audioOutputDeviceValid()) {
-        emit playerError(GErrorType::AudioOutputDeviceInvalid, "invalid output device");
+        emit playerError(GErrorType::AudioOutputDeviceInvalid, tr("No speaker detected"));
         return false;
     }
 

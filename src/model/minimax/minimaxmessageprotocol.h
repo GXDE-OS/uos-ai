@@ -10,7 +10,7 @@ class MiniMaxMessageProtocol : public OaiMessageProtocol
 public:
     explicit MiniMaxMessageProtocol();
     ~MiniMaxMessageProtocol() override;
-
+    QJsonArray messages() const override;
     QJsonObject params(const QVariantHash &args) override;
     bool parseChunk(const QByteArray &chunkData, QVariantHash &content) override;
     bool parseResponse(const QByteArray &data, QVariantHash &content) override;

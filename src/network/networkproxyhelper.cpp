@@ -12,9 +12,8 @@
 
 Q_LOGGING_CATEGORY(logProxyHelper, "uos-ai.network.proxy")
 
-namespace {
-
-QString gsettingsString(const char *schemaId, const char *key)
+using namespace uos_ai;
+static QString gsettingsString(const char *schemaId, const char *key)
 {
     GSettingsSchemaSource *source = g_settings_schema_source_get_default();
     if (!source)
@@ -36,7 +35,7 @@ QString gsettingsString(const char *schemaId, const char *key)
     return value;
 }
 
-int gsettingsInt(const char *schemaId, const char *key)
+static int gsettingsInt(const char *schemaId, const char *key)
 {
     GSettingsSchemaSource *source = g_settings_schema_source_get_default();
     if (!source)
@@ -56,15 +55,20 @@ int gsettingsInt(const char *schemaId, const char *key)
     return value;
 }
 
-bool isDesktopProxyEnabled(QString *modeOut = nullptr)
+static ProxySettingsWrapper::ProxyMode desktopProxyMode(QString *modeOut = nullptr)
 {
     const QString mode = gsettingsString("org.gnome.system.proxy", "mode");
     if (modeOut)
         *modeOut = mode;
-    return !mode.isEmpty() && mode != QLatin1String("none");
+    if (mode.compare("manual", Qt::CaseInsensitive) == 0)
+        return ProxySettingsWrapper::ProxyManual;
+    else if (mode.compare("auto", Qt::CaseInsensitive) == 0)
+        return ProxySettingsWrapper::ProxyAuto;
+
+    return ProxySettingsWrapper::ProxyNone;
 }
 
-QNetworkProxy desktopProxyForUrl(const QUrl &targetUrl, QString *source)
+QNetworkProxy static desktopProxyForUrl(const QUrl &targetUrl, QString *source)
 {
     const QString scheme = targetUrl.scheme().toLower();
     QString host;
@@ -76,27 +80,38 @@ QNetworkProxy desktopProxyForUrl(const QUrl &targetUrl, QString *source)
         host = gsettingsString("org.gnome.system.proxy.https", "host");
         port = gsettingsInt("org.gnome.system.proxy.https", "port");
         type = QNetworkProxy::HttpProxy;
-        sourceName = QStringLiteral("system:https");
+        sourceName = QStringLiteral("manual:https");
         if (host.isEmpty() || port <= 0) {
             host = gsettingsString("org.gnome.system.proxy.http", "host");
             port = gsettingsInt("org.gnome.system.proxy.http", "port");
-            sourceName = QStringLiteral("system:http-fallback");
+            sourceName = QStringLiteral("manual:http-fallback");
         }
     } else if (scheme == QLatin1String("http")) {
         host = gsettingsString("org.gnome.system.proxy.http", "host");
         port = gsettingsInt("org.gnome.system.proxy.http", "port");
         type = QNetworkProxy::HttpProxy;
-        sourceName = QStringLiteral("system:http");
-    } else if (scheme == QLatin1String("wss") || scheme == QLatin1String("ws")) {
+        sourceName = QStringLiteral("manual:http");
+    } else if (scheme == QLatin1String("wss")) {
         host = gsettingsString("org.gnome.system.proxy.https", "host");
         port = gsettingsInt("org.gnome.system.proxy.https", "port");
         type = QNetworkProxy::HttpProxy;
-        sourceName = QStringLiteral("system:https-ws");
+        sourceName = QStringLiteral("manual:https-wss");
         if (host.isEmpty() || port <= 0) {
             host = gsettingsString("org.gnome.system.proxy.http", "host");
             port = gsettingsInt("org.gnome.system.proxy.http", "port");
-            sourceName = QStringLiteral("system:http-ws");
+            sourceName = QStringLiteral("system:http-wss");
         }
+        if (host.isEmpty() || port <= 0) {
+            host = gsettingsString("org.gnome.system.proxy.socks", "host");
+            port = gsettingsInt("org.gnome.system.proxy.socks", "port");
+            type = QNetworkProxy::Socks5Proxy;
+            sourceName = QStringLiteral("system:socks-fallback");
+        }
+    } else if (scheme == QLatin1String("ws")) {
+        host = gsettingsString("org.gnome.system.proxy.http", "host");
+        port = gsettingsInt("org.gnome.system.proxy.http", "port");
+        type = QNetworkProxy::HttpProxy;
+        sourceName = QStringLiteral("manual:http-ws");
         if (host.isEmpty() || port <= 0) {
             host = gsettingsString("org.gnome.system.proxy.socks", "host");
             port = gsettingsInt("org.gnome.system.proxy.socks", "port");
@@ -106,7 +121,7 @@ QNetworkProxy desktopProxyForUrl(const QUrl &targetUrl, QString *source)
     }
 
     if (host.isEmpty() || port <= 0)
-        return {};
+        return QNetworkProxy(QNetworkProxy::NoProxy);
 
     QNetworkProxy proxy;
     proxy.setType(type);
@@ -117,7 +132,7 @@ QNetworkProxy desktopProxyForUrl(const QUrl &targetUrl, QString *source)
     return proxy;
 }
 
-QString proxyEnvValue(const QStringList &names)
+static QString proxyEnvValue(const QStringList &names)
 {
     const QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
     for (const QString &name : names) {
@@ -128,7 +143,7 @@ QString proxyEnvValue(const QStringList &names)
     return {};
 }
 
-QUrl normalizeProxyUrl(QString value, const QString &defaultScheme)
+static QUrl normalizeProxyUrl(QString value, const QString &defaultScheme)
 {
     value = value.trimmed();
     if (value.isEmpty())
@@ -140,7 +155,7 @@ QUrl normalizeProxyUrl(QString value, const QString &defaultScheme)
     return QUrl(value);
 }
 
-QNetworkProxy proxyFromUrl(const QUrl &url)
+static QNetworkProxy proxyFromUrl(const QUrl &url)
 {
     if (!url.isValid() || url.host().isEmpty())
         return {};
@@ -162,7 +177,7 @@ QNetworkProxy proxyFromUrl(const QUrl &url)
     return proxy;
 }
 
-QNetworkProxy proxyFromEnvironment(const QUrl &targetUrl, QString *source)
+static QNetworkProxy proxyFromEnvironment(const QUrl &targetUrl, QString *source)
 {
     const QString scheme = targetUrl.scheme().toLower();
     QString value;
@@ -197,10 +212,6 @@ QNetworkProxy proxyFromEnvironment(const QUrl &targetUrl, QString *source)
 
     return {};
 }
-
-} // namespace
-
-namespace uos_ai {
 
 class ProxySettingsWatcherPrivate : public ProxySettingsWatcher
 {
@@ -254,36 +265,40 @@ ProxySettingsWatcher *ProxySettingsWatcher::instance()
     return watcher;
 }
 
-void enableQtSystemProxyConfiguration()
+void ProxySettingsWrapper::enableQtSystemProxyConfiguration()
 {
     QNetworkProxyFactory::setUseSystemConfiguration(true);
 }
 
-QNetworkProxy resolveProxyForUrl(const QUrl &url, QString *source)
+QNetworkProxy ProxySettingsWrapper::resolveProxyForUrl(const QUrl &url, QString *source)
 {
     if (source)
         source->clear();
 
     QString desktopMode;
-    const bool desktopProxyEnabled = isDesktopProxyEnabled(&desktopMode);
+    auto mode = desktopProxyMode(&desktopMode);
     qCInfo(logProxyHelper) << "Resolving proxy for" << url << ", desktop proxy mode:" << desktopMode;
 
-    if (!desktopProxyEnabled) {
+    if (mode == ProxyAuto) {
+        if (source)
+            *source = QStringLiteral("system-auto");
+        return QNetworkProxy(QNetworkProxy::NoProxy);
+    } else if (mode == ProxyManual) {
+        QNetworkProxy desktopProxy = desktopProxyForUrl(url, source);
+        if (desktopProxy.type() != QNetworkProxy::DefaultProxy && desktopProxy.type() != QNetworkProxy::NoProxy)
+            return desktopProxy;
+
+        if (source)
+            *source = QStringLiteral("system-unresolved");
+        return QNetworkProxy(QNetworkProxy::NoProxy);
+    } else {
         if (source)
             *source = QStringLiteral("system-disabled");
         return QNetworkProxy(QNetworkProxy::NoProxy);
     }
-
-    QNetworkProxy desktopProxy = desktopProxyForUrl(url, source);
-    if (desktopProxy.type() != QNetworkProxy::DefaultProxy && desktopProxy.type() != QNetworkProxy::NoProxy)
-        return desktopProxy;
-
-    if (source)
-        *source = QStringLiteral("system-unresolved");
-    return QNetworkProxy(QNetworkProxy::NoProxy);
 }
 
-void applyProxyToNetworkAccessManager(QNetworkAccessManager *manager, const QUrl &url,
+void ProxySettingsWrapper::applyProxyToNetworkAccessManager(QNetworkAccessManager *manager, const QUrl &url,
                                       const QLoggingCategory &category,
                                       const char *context)
 {
@@ -303,7 +318,7 @@ void applyProxyToNetworkAccessManager(QNetworkAccessManager *manager, const QUrl
     qCInfo(category) << context << "proxy disabled, source=" << proxySource << "for" << url;
 }
 
-void applyProxyToWebSocket(QWebSocket *socket, const QUrl &url,
+void ProxySettingsWrapper::applyProxyToWebSocket(QWebSocket *socket, const QUrl &url,
                            const QLoggingCategory &category,
                            const char *context)
 {
@@ -323,7 +338,7 @@ void applyProxyToWebSocket(QWebSocket *socket, const QUrl &url,
     qCInfo(category) << context << "proxy disabled, source=" << proxySource << "for" << url;
 }
 
-QString describeProxy(const QNetworkProxy &proxy)
+QString ProxySettingsWrapper::describeProxy(const QNetworkProxy &proxy)
 {
     QString type;
     switch (proxy.type()) {
@@ -349,5 +364,3 @@ QString describeProxy(const QNetworkProxy &proxy)
 
     return QStringLiteral("%1 %2:%3").arg(type, proxy.hostName()).arg(proxy.port());
 }
-
-} // namespace uos_ai

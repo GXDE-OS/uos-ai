@@ -18,16 +18,39 @@ MiniMaxMessageProtocol::~MiniMaxMessageProtocol()
 {
 }
 
+QJsonArray MiniMaxMessageProtocol::messages() const
+{
+    QJsonArray filteredMsg;
+    for (QJsonValue msg : m_messages) {
+        auto obj = msg.toObject();
+        if (m_reasoning && obj.contains(STR_KEY_REASONING_CONTENT)) {
+            auto thinkMsg = obj.take(STR_KEY_REASONING_CONTENT);
+            if (thinkMsg.isString()) {
+                QJsonObject text;
+                text["text"] = thinkMsg.toString();
+                text["type"] = "reasoning.text";
+                obj.insert("reasoning_details", QJsonArray{text});
+            }
+        } else {
+            obj.remove(STR_KEY_REASONING_CONTENT);
+        }
+        filteredMsg.append(obj);
+    }
+    return filteredMsg;
+}
+
 QJsonObject MiniMaxMessageProtocol::params(const QVariantHash &args)
 {
     QJsonObject ret = OaiMessageProtocol::params(args);
+    ret.remove(STR_KEY_THINKING);
 
     if (args.contains(STR_KEY_THINKING)) {
-        bool thinkingEnabled = args.value(STR_KEY_THINKING).toBool();
-        ret.remove(STR_KEY_THINKING);
-        ret.insert("reasoning_split", thinkingEnabled);
+        QJsonObject thinkingObj;
+        thinkingObj.insert(STR_KEY_TYPE, args.value(STR_KEY_THINKING).toBool() ? "adaptive" : "disabled");
+        ret.insert(STR_KEY_THINKING, thinkingObj);
     }
 
+    ret.insert("reasoning_split", true);
     return ret;
 }
 
@@ -38,7 +61,7 @@ bool MiniMaxMessageProtocol::parseChunk(const QByteArray &chunkData, QVariantHas
         tmp.append(chunkData);
         m_buffer = QString::fromUtf8(tmp);
     }
-    
+
     QRegularExpression regex(R"(data:\s*\{(.*)\})");
     QRegularExpressionMatchIterator it = regex.globalMatch(m_buffer);
 
@@ -155,7 +178,7 @@ bool MiniMaxMessageProtocol::parseChunk(const QByteArray &chunkData, QVariantHas
             auto obj = toolCallMaps[index];
             toolCall.id = obj[STR_KEY_ID].toString();
             auto func = obj[STR_KEY_FUNCTION].toObject();
-            toolCall.name = func.value(STR_KEY_NAME).toString();
+            toolCall.name = restoreToolName(func.value(STR_KEY_NAME).toString());
             toolCall.arguments = QJsonDocument::fromJson(func.value(STR_KEY_ARGUMENTS).toString().toUtf8()).object().toVariantHash();
 
             if (toolCall.isValid()) {
@@ -211,7 +234,7 @@ bool MiniMaxMessageProtocol::parseResponse(const QByteArray &data, QVariantHash 
             ModelToolCall toolCall;
             toolCall.id = toolCallObj[STR_KEY_ID].toString();
             QJsonObject func = toolCallObj[STR_KEY_FUNCTION].toObject();
-            toolCall.name = func.value(STR_KEY_NAME).toString();
+            toolCall.name = restoreToolName(func.value(STR_KEY_NAME).toString());
             toolCall.arguments = QJsonDocument::fromJson(func.value(STR_KEY_ARGUMENTS).toString().toUtf8()).object().toVariantHash();
             if (toolCall.isValid())
                 toolCalls.append(toolCall);

@@ -135,6 +135,10 @@ html.dark {
     min-width: 0;
 }
 
+.base-item--has-right-content {
+    padding-right: 8px;
+}
+
 .base-item__right {
     display: flex;
     align-items: center;

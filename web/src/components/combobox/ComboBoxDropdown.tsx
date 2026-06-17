@@ -33,7 +33,7 @@ export default defineComponent({
     },
     setup(props, { emit }) {
         const dropdownElement = ref<HTMLElement | null>(null);
-        const dropdownStyle = ref<CSSProperties>({});
+        const dropdownStyle = ref<CSSProperties>({ position: "fixed", visibility: "hidden" });
         const backend = useBackendStore();
 
         const updatePosition = () => {
@@ -82,10 +82,11 @@ export default defineComponent({
 
             dropdownStyle.value = {
                 position: "fixed",
+                visibility: "visible",
                 top: `${top}px`,
                 left: `${left}px`,
                 minWidth: `${dropdownWidth}px`,
-                maxWidth: `${workspaceRect.right - workspaceRect.left - 16}px`, // 16 是左右边距
+                maxWidth: `${workspaceRect.right - workspaceRect.left - 16}px`,
             };
         };
 
@@ -93,7 +94,8 @@ export default defineComponent({
             () => props.isOpen,
             (isOpen) => {
                 if (isOpen) {
-                    void nextTick(updatePosition);
+                    dropdownStyle.value = { position: "fixed", visibility: "hidden" };
+                    void nextTick(() => setTimeout(updatePosition, 0));
                 }
             },
         );

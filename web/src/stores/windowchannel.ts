@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { WindowMode } from "@/types/windowinfo";
+import { useAppUpdateStore } from "./appUpdate";
 import { useMainWindowStore } from "./mainwindow";
 import { useNotifyStore } from "./notify";
 import { MAIN_WINDOW_WORKSPACE_PAGES } from "@/types/mainwindow";
@@ -36,6 +37,17 @@ export const useWindowChannelStore = defineStore("windowChannel", {
                 windowChannel["windowModeChanged"].connect((mode: number) => {
                     this.windowMode = mode as WindowMode;
                     console.log("window mode change to:", this.windowMode);
+                });
+            }
+
+            // 监听主窗口被重新拉起，超过后端缓存间隔时由前端再次触发更新检查
+            if (windowChannel["windowShown"]) {
+                windowChannel["windowShown"].connect(() => {
+                    if (this.windowMode !== WindowMode.Main) {
+                        return;
+                    }
+
+                    void useAppUpdateStore().requestAppUpdateCheck();
                 });
             }
 

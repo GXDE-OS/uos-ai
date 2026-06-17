@@ -3,9 +3,11 @@
 
 #include <QFileSystemWatcher>
 #include <QJsonArray>
+#include <QJsonObject>
 #include <QMap>
 #include <QObject>
 #include <QString>
+#include <QStringList>
 
 class QDir;
 
@@ -142,6 +144,7 @@ public:
      * 用户选择文件后自动调用 addSkill 逻辑。
      */
     Q_INVOKABLE QJsonObject addSkillForWeb();
+    Q_INVOKABLE QJsonObject addSkillFromUrlForWeb(const QString &url);
 
     /**
      * @brief 删除指定技能
@@ -161,7 +164,37 @@ public:
      */
     Q_INVOKABLE bool hasSkill(const QString &skillName) const;
 
-    /* ============================================================================== 
+    /**
+     * @brief 获取技能路径上下文（QWebChannel 专用）
+     * @return 包含用户安装目录、配置文件路径和扫描目录列表的 JSON 对象
+     */
+    Q_INVOKABLE QJsonObject skillPathsData() const;
+
+    /**
+     * @brief 获取用户新增技能的标准安装目录
+     * @return 用户级技能安装目录
+     */
+    static QString userSkillInstallPath();
+
+    /**
+     * @brief 获取技能配置文件路径
+     * @return 技能配置文件路径
+     */
+    static QString skillsConfigFilePath();
+
+    /**
+     * @brief 获取当前技能扫描目录列表
+     * @return 按优先级排序的技能扫描目录列表
+     */
+    static QStringList allSkillSearchPaths();
+
+    /**
+     * @brief 获取内置技能目录
+     * @return 内置技能目录
+     */
+    static QString builtinSkillPath();
+
+    /* ==============================================================================
      *   以下接口前端应该不需要
      * ============================================================================== */
 
@@ -185,6 +218,10 @@ public:
      */
     bool addSkill(const QString &path, QString *errorMsg = nullptr,
                   QString *outSkillName = nullptr);
+    bool addSkillFromUrl(const QString &url, QString *errorMsg = nullptr,
+                         QString *outSkillName = nullptr);
+    bool addSkillSource(const QString &source, QString *errorMsg = nullptr,
+                        QString *outSkillName = nullptr);
 
     /**
      * @brief 获取所有已启用的技能信息列表

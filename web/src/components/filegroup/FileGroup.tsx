@@ -2,6 +2,7 @@ import { defineComponent, ref, computed, watch, onMounted, onBeforeUnmount, next
 import FileItem from "@/components/filegroup/FileItem";
 import FilesListPopover from "@/components/filegroup/FilesListPopover";
 import IconButton from "@/components/IconButton";
+import SvgIcon from "@/components/SvgIcon";
 import type { DisplayFile } from "@/types/file";
 import { DocParsingFileType, FileAlignment, PopoverPlacement, PopoverAlign } from "@/types/file";
 import { ButtonShape } from "@/types/button";
@@ -55,8 +56,8 @@ export default defineComponent({
             default: PopoverAlign.Right,
         },
         imageDisplayMode: {
-            type: String as PropType<'large' | 'small'>,
-            default: 'large',
+            type: String as PropType<"large" | "small">,
+            default: "large",
         },
     },
     emits: ["openFile", "deleteFile"],
@@ -87,6 +88,17 @@ export default defineComponent({
                 props.showSingleImage &&
                 orderedFiles.value.length === 1 &&
                 orderedFiles.value[0].type === DocParsingFileType.Image
+            );
+        });
+
+        const isSingleImageError = computed(() => {
+            return isSingleImage.value && orderedFiles.value[0].parseStatus === "error";
+        });
+
+        const isSingleImageLoading = computed(() => {
+            return (
+                isSingleImage.value &&
+                (orderedFiles.value[0].parseStatus === "pending" || orderedFiles.value[0].parseStatus === "parsing")
             );
         });
 
@@ -126,15 +138,13 @@ export default defineComponent({
             return [
                 "file-group__image",
                 alignmentClass.value,
-                props.imageDisplayMode === 'small' && "file-group__image--small"
+                props.imageDisplayMode === "small" && "file-group__image--small",
+                isSingleImageError.value && "file-group__image--error",
             ];
         });
 
         const imageFileClass = computed(() => {
-            return [
-                "file-group__image-file",
-                props.imageDisplayMode === 'small' && "file-group__image-file--small"
-            ];
+            return ["file-group__image-file", props.imageDisplayMode === "small" && "file-group__image-file--small"];
         });
 
         const handleImageClick = (filePath: string) => {
@@ -261,6 +271,8 @@ export default defineComponent({
             hiddenFiles,
             imageClass,
             imageFileClass,
+            isSingleImageError,
+            isSingleImageLoading,
             handleImageClick,
             handleImageDeleteClick,
             handleFileClick,
@@ -275,11 +287,24 @@ export default defineComponent({
         return (
             <div ref="containerRef" class={["file-group", this.alignmentClass]}>
                 {this.isSingleImage ? (
-                    <div
-                        class={this.imageClass}
-                        onClick={() => this.handleImageClick(this.orderedFiles[0].filePath)}
-                    >
+                    <div class={this.imageClass} onClick={() => this.handleImageClick(this.orderedFiles[0].filePath)}>
                         <img class={this.imageFileClass} src={`file://${this.orderedFiles[0].filePath}`} alt="" />
+                        {this.isSingleImageError && (
+                            <>
+                                <div class="file-group__image-mask" />
+                                <div class="file-group__image-warning-icon">
+                                    <SvgIcon icon="warning-red" size={[21, 21]} />
+                                </div>
+                            </>
+                        )}
+                        {this.isSingleImageLoading && (
+                            <>
+                                <div class="file-group__image-mask" />
+                                <div class="file-group__image-loading-icon">
+                                    <SvgIcon icon="loading" size={[21, 21]} />
+                                </div>
+                            </>
+                        )}
                         {this.$props.deletable && (
                             <div class="file-group__image-delete" onClick={this.handleImageDeleteClick}>
                                 <IconButton

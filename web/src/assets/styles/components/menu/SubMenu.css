@@ -97,3 +97,8 @@
         transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
         visibility 0s linear 0s;
 }
+
+/* Qt5 兼容降级：移除 inset */
+html[data-legacy-css] .submenu:hover:not(.submenu--disabled) .submenu__content {
+    box-shadow: none;
+}

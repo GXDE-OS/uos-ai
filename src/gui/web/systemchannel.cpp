@@ -1,9 +1,11 @@
 #include "systemchannel.h"
+#include "notificationactionhandler.h"
 #include "esystemcontext.h"
 #include "dbus/networkmonitor.h"
 #include "deepinabilitymanager.h"
 #include "oscallcontext.h"
 #include "gui/window/windowmanager.h"
+#include "services/updateservice/appupdatechecker.h"
 
 #include <QIcon>
 #include <QPixmap>
@@ -20,8 +22,19 @@
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QDBusReply>
+#include <QDateTime>
+#include <QLocale>
+#include <QStandardPaths>
+#include <QMimeData>
+#include <QTextDocument>
+#include <QRegularExpression>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
+#include <QEventLoop>
 
 #include <DApplication>
+#include <DFileDialog>
 
 Q_DECLARE_LOGGING_CATEGORY(logAIGUI)
 Q_DECLARE_LOGGING_CATEGORY(logAIVUE)
@@ -70,17 +83,11 @@ SystemChannel::SystemChannel(QObject *parent)
         qCWarning(logAIGUI) << "Failed to connect ActionInvoked signal from org.freedesktop.Notifications";
     }
 
-    const bool closedConnected = QDBusConnection::sessionBus().connect(
-        kServiceName,
-        kObjectPath,
-        kInterfaceName,
-        QStringLiteral("NotificationClosed"),
-        this,
-        SLOT(onNotificationClosed(uint,uint))
-    );
-    if (!closedConnected) {
-        qCWarning(logAIGUI) << "Failed to connect NotificationClosed signal from org.freedesktop.Notifications";
-    }
+#ifndef COMPILE_ON_V20
+    // Register DBus service for notification center panel action handling
+    // V20 的 dde-shell 不支持 x-deepin-action 扩展，无需注册此服务
+    new NotificationActionHandler(this);
+#endif
 
     // 初始化查询快捷键
     searchShortCut();
@@ -160,7 +167,13 @@ QJsonObject SystemChannel::loadTranslations()
 
     translations["UOS AI"] = tr("UOS AI");  // 小U
     translations["Ask UOS AI, kiss your worries goodbye."] = tr("Ask UOS AI, kiss your worries goodbye.");  // 问问小U，事事无忧
-    translations["Update History"] = tr("Update History");  // 更新记录
+    translations["Changelog"] = tr("Changelog");  // 更新记录
+    translations["Start Chatting"] = tr("Start Chatting");  // 开始聊天
+    translations["Choose an assistant on the left, then enter a question or instruction to start a new chat."] = tr("Choose an assistant on the left, then enter a question or instruction to start a new chat.");  // 从左侧选择一个助手，直接输入问题或指令，就能开始一次新的对话。
+    translations["Voice Interaction"] = tr("Voice Interaction");  // 语音互动
+    translations["If you prefer voice control, switch quickly from the related entry to reduce repeated operations."] = tr("If you prefer voice control, switch quickly from the related entry to reduce repeated operations.");  // 如果你习惯语音操作，可以在相应入口中快速切换，减少重复操作。
+    translations["Keep Exploring"] = tr("Keep Exploring");  // 继续探索
+    translations["Use history and settings to continue your tasks and adjust models, tools, and appearance."] = tr("Use history and settings to continue your tasks and adjust models, tools, and appearance.");  // 在历史记录和设置里继续处理任务，并按你的习惯调整模型、工具和外观。
     translations["Settings"] = tr("Settings");  // 设置
     translations["Help"] = tr("Help");  // 帮助
     translations["About"] = tr("About");  // 关于
@@ -363,6 +376,8 @@ QJsonObject SystemChannel::loadTranslations()
     translations["You've used up the free generation credits for your trial account. We've given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI's limitless capabilities!"] = tr("You've've used up the free generation credits for your trial account. We've given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI's limitless capabilities!");  // 当前试用账号模型的免费生成额度已用完，我们已为你额外赠送200次免费额度，本月有效。立即体验更多功能，探索UOS AI的无限可能吧！
     translations["Not Now"] = tr("Not Now");  // 暂不领取
     translations["writing_default_prompt"] = tr("I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}");
+    translations["data_analysis_default_prompt"] = tr("Please analyze the {{uploaded file/data}}, focusing on {{data structure/key metrics/trends/anomalies}}, and output {{summary/recommendations/visualizations/report}}.");
+    translations["variable_placeholder"] = tr("Please input");  // 模板变量块占位符
     translations["Manage Chat History"] = tr("Manage Chat History");  //管理历史对话
     translations["Voice Chat"] = tr("Voice Chat");  // 语音对话
     translations["Expand"] = tr("Expand");  // 展开
@@ -371,6 +386,7 @@ QJsonObject SystemChannel::loadTranslations()
     translations["Created"] = tr("Created");  // 创建时间
     translations["You have %1 newly answered chats"] = tr("You have %1 newly answered chats");  // 您有%1个新对话已回答完毕
     translations["Search History"]=tr("Search History");  // 搜索历史会话
+    translations["Search conversation titles or content…"]=tr("Search conversation titles or content…");  // 搜索对话标题或内容…
     translations["Confirm delete this conversation"] = tr("Confirm delete this conversation");  // 确认删除对话
     translations["This will remove all related content from UOS AI"] = tr("This will remove all related content from UOS AI");  // 此操作将从小U同学中删除该对话相关的所有内容
     translations["Use it now"] = tr("Use it now");  // 马上使用
@@ -382,6 +398,56 @@ QJsonObject SystemChannel::loadTranslations()
     translations["Exit Voice Chat"] = tr("Exit Voice Chat");  // 退出语音对话
     translations["The following %1 files are invalid and unavailable. Continue?"] = tr("The following %1 files are invalid and unavailable. Continue?");  // 以下%1个文件已失效，无法使用。是否继续？
     translations["The following file is invalid and unavailable. Continue?"] = tr("The following file is invalid and unavailable. Continue?");  // 以下文件已失效，无法使用。是否继续?
+    translations["Previous"] = tr("Previous");  // 上一个
+    translations["Guide Close"] = qApp->translate("NewUserGuideDialog", "Close");  // 关 闭
+    translations["UOS AI 3.0: All-New UI Upgrade"] = tr("UOS AI 3.0: All-New UI Upgrade");  // 小U同学3.0迎来全面界面升级！
+    translations["New Windowed Mode for a fresh interaction experience"] = tr("New Windowed Mode for a fresh interaction experience");  // 全新的大窗模式，带给您全新的交互体验
+    translations["Clear sidebar navigation for organized access and ease of use"] = tr("Clear sidebar navigation for organized access and ease of use");  // 智能明晰的侧边导航，功能入口井井有条，操作更便捷
+    translations["A wider, focused workspace with richer content"] = tr("A wider, focused workspace with richer content");  // 更宽广、更专注的工作区，内容更丰富
+    translations["Clearer hierarchy to keep core tasks focused and immersive"] = tr("Clearer hierarchy to keep core tasks focused and immersive");  // 层级更分明，核心任务更聚焦，工作更沉浸
+    translations["Multi-tasking to save your valuable time"] = tr("Multi-tasking to save your valuable time");  // 多任务并行处理，彻底释放您的宝贵时间
+    translations["Silent background multi-tasking: No more waiting"] = tr("Silent background multi-tasking: No more waiting");  // 多任务后台静默并行，彻底告别干等
+    translations["Assign tasks anytime without breaking your flow"] = tr("Assign tasks anytime without breaking your flow");  // 随时布置新任务，思路不断流
+    translations["Get instant progress updates without constant monitoring"] = tr("Get instant progress updates without constant monitoring");  // 系统及时通知任务进度，不必一直盯
+    translations["Immersive split-screen writing: Accurate, secure, and traceable"] = tr("Immersive split-screen writing: Accurate, secure, and traceable");  // 分屏沉浸写作，准确安全可查
+    translations["Split-screen chat & edit: No more window switching"] = tr("Split-screen chat & edit: No more window switching");  // 左右分屏边聊边改，告别频繁切窗口
+    translations["Deep data \"feeding\" for well-grounded content creation"] = tr("Deep data \"feeding\" for well-grounded content creation");  // 海量资料深度“投喂”，不再凭空乱编
+    translations["Outline first with manual correction and one-click export"] = tr("Outline first with manual correction and one-click export");  // 大纲先行手动纠偏，一键导出，创作一气呵成
+    translations["On-device/Private models ensure data privacy and security"] = tr("On-device/Private models ensure data privacy and security");  // 端侧/私有模型数据不出域，创作安全有底气
+    translations["System control & vast Skills: All within a single command"] = tr("System control & vast Skills: All within a single command");  // 原生系统控制与海量 Skills，一句话搞定一切
+    translations["Visual system control: Adjust fonts, toggle Wi-Fi, and more"] = tr("Visual system control: Adjust fonts, toggle Wi-Fi, and more");  // 可视化原生系统操控，调字体、开关 WiFi、下载应用
+    translations["High-frequency office skills: Writing, translation, and merging"] = tr("High-frequency office skills: Writing, translation, and merging");  // 解锁高频办公技能，文档编写、翻译、合并等
+    translations["One-click Skill import to unlock endless capabilities"] = tr("One-click Skill import to unlock endless capabilities");  // 海量 Skills 一键导入，创建、查找技能无限解锁
+    translations["Batch management and precise search for history"] = tr("Batch management and precise search for history");  // 历史记忆批量管理与精准搜索
+    translations["Global quick search: Access history in seconds"] = tr("Global quick search: Access history in seconds");  // 全局快捷搜索，历史记录一秒直达
+    translations["Agent-based filtering for precise chat history search"] = tr("Agent-based filtering for precise chat history search");  // 智能体分类筛选，历史对话查找更精准
+    translations["Efficient batch management for a clean and organized workspace"] = tr("Efficient batch management for a clean and organized workspace");  // 高效批量管理，快速清理，清爽有序
+    translations["No historical conversations found."] = tr("No historical conversations found.");  // 未找到历史对话
+    translations["New version available"] = qApp->translate("notify", "New version available");  // 发现新版本
+    translations["View new features"] = qApp->translate("notify", "View new features");  // 查看新特性
+    translations["Upgrade now"] = qApp->translate("notify", "Upgrade now");  // 立刻升级
+    translations["Later"] = qApp->translate("notify", "Later");  // 暂不升级
+    translations["New version features"] = qApp->translate("notify", "New version features");  // 新版本特性
+    translations["Apply"] = tr("Apply");  // 接受
+    translations["Reject"] = tr("Reject");  // 拒绝
+    translations["Applied"] = tr("Applied");  // 已接受
+    translations["Rejected"] = tr("Rejected");  // 已拒绝
+    translations["%1 file changes (%2 added, %3 modified, %4 deleted)"] = tr("%1 file changes (%2 added, %3 modified, %4 deleted)");  // 1个文件已更改，2个文件已添加，3个文件已修改，4个文件已删除
+    translations["Added"] = tr("Added");  // 新增
+    translations["Modified"] = tr("Modified");  // 修改
+    translations["Deleted"] = tr("Deleted");  // 删除
+    translations["Awaiting Approval"] = tr("Awaiting Approval");  // 等待批准
+    translations["Allow Once - This command only"] = tr("Allow Once - This command only");  // 允许一次 - 仅执行当前命令，之后仍会询问
+    translations["Allow Chat - For this chat"] = tr("Allow Chat - For this chat");  // 允许全部 - 当前对话中的后续命令将直接执行，不再询问
+    translations["Reject & Revise - Tell UOS AI what to change"] = tr("Reject & Revise - Tell UOS AI what to change");  // 拒绝并调整 - 取消执行并告诉小U如何调整
+    translations["Skip"] = tr("Skip");  // 跳过
+    translations["Submit"] = tr("Submit");  // 提交
+    translations["Pending"] = tr("Pending");  // 待审批
+    translations["Allow Once"] = tr("Allow Once");  // 允许一次
+    translations["Allow Chat"] = tr("Allow Chat");  // 允许全部
+    translations["Loading history conversations..."] = tr("Loading history conversations...");  // 历史对话加载中…
+    translations["Searching history conversations..."] = tr("Searching history conversations...");  // 历史对话搜索中…
+
     // OLD
     translations["Go to configuration"] = tr("Go to configuration");
     translations["No account"] = tr("No account");
@@ -398,7 +464,7 @@ QJsonObject SystemChannel::loadTranslations()
     translations["Click to start/stop recording"] = tr("Click to start/stop recording");
     translations["Listening"] = tr("Listening");
     translations["Sleeping"] = tr("Sleeping");
-    translations["Microphone not detected"] = tr("Microphone not detected");
+    translations["No microphone detected"] = tr("No microphone detected");
     translations["Connection failed, click to try again"] = tr("Connection failed, click to try again");
     translations["Click on the animation%1 to activate"] = tr("Click on the animation%1 to activate");
     translations["Voice input is temporarily unavailable, please check the network!"] = tr("Voice input is temporarily unavailable, please check the network!");
@@ -471,6 +537,11 @@ QJsonObject SystemChannel::loadTranslations()
     // markdown
     translations["lines of code collapsed"] = tr("lines of code collapsed");
     translations["Expand"] = tr("Expand");
+    translations["Source"] = tr("Source");
+    translations["Preview"] = tr("Preview");
+
+    // 右键菜单
+    translations["Save As"] = tr("Save As");//另存为
 
     // 2.6需求
     translations["Thinking has stopped"] = tr("Thinking has stopped");
@@ -589,6 +660,11 @@ QJsonObject SystemChannel::loadTranslations()
     return translations;
 }
 
+bool SystemChannel::checkChineseLanguage()
+{
+    return Util::checkLanguage();
+}
+
 QString SystemChannel::getActiveColor() const
 {
     return m_activeColor;
@@ -629,7 +705,46 @@ void SystemChannel::copyToClipboard(const QString &data, int type)
         } else {
             qCWarning(logAIGUI) << "Image file not found:" << filePath;
         }
+    } else if (static_cast<CopyDataType>(type) == CopyHtml) {
+        copyHtmlToClipboard(data);
     }
+}
+
+void SystemChannel::copyHtmlToClipboard(const QString &html)
+{
+    qCInfo(logAIGUI) << "copyHtmlToClipboard start:" << QDateTime::currentDateTime().toString("hh:mm:ss.zzz");
+    QString result = html;
+
+    // 将本地图片路径替换为绝对文件路径
+    static QRegularExpression imgSrcRegex("<img[^>]+src=[\"']([^\"']+)[\"'][^>]*>",
+                                          QRegularExpression::CaseInsensitiveOption);
+    QRegularExpressionMatchIterator it = imgSrcRegex.globalMatch(result);
+
+    QStringList replaceSrcs;
+    QStringList replacePaths;
+    while (it.hasNext()) {
+        QRegularExpressionMatch match = it.next();
+        QString src = match.captured(1);
+        if (src.startsWith("file://")) {
+            replaceSrcs.append(src);
+            replacePaths.append(QUrl(src).toLocalFile());
+        }
+    }
+
+    for (int i = 0; i < replaceSrcs.size(); ++i) {
+        result.replace(replaceSrcs[i], replacePaths[i]);
+    }
+
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    QMimeData *mimeData = new QMimeData;
+    mimeData->setHtml(result);
+
+    QTextDocument doc;
+    doc.setHtml(result);
+    mimeData->setText(doc.toPlainText());
+
+    clipboard->setMimeData(mimeData);
+    qCInfo(logAIGUI) << "copyHtmlToClipboard end:" << QDateTime::currentDateTime().toString("hh:mm:ss.zzz");
 }
 
 void SystemChannel::copyReplyText(const QString &reply)
@@ -640,6 +755,125 @@ void SystemChannel::copyReplyText(const QString &reply)
 void SystemChannel::copyImage2Clipboard(const QString &imagePath)
 {
     copyToClipboard(imagePath, CopyImage);
+}
+
+QString SystemChannel::readImageAsBase64(const QString &imagePath)
+{
+    if (imagePath.isEmpty()) {
+        qCWarning(logAIGUI) << "readImageAsBase64: empty path";
+        return QString();
+    }
+
+    QString localPath = imagePath;
+    if (imagePath.startsWith("file://")) {
+        localPath = QUrl(imagePath).toLocalFile();
+    }
+
+    QImageReader reader(localPath);
+    QImage image = reader.read();
+
+    if (image.isNull()) {
+        qCWarning(logAIGUI) << "readImageAsBase64: failed to load image:"
+                             << localPath << "error:" << reader.errorString();
+        return QString();
+    }
+
+    QByteArray byteArray;
+    QBuffer buffer(&byteArray);
+    if (!buffer.open(QIODevice::WriteOnly)) {
+        qCWarning(logAIGUI) << "readImageAsBase64: failed to open buffer";
+        return QString();
+    }
+
+    if (!image.save(&buffer, "PNG")) {
+        qCWarning(logAIGUI) << "readImageAsBase64: failed to encode image to PNG";
+        buffer.close();
+        return QString();
+    }
+    buffer.close();
+
+    return QString::fromLatin1(byteArray.toBase64());
+}
+
+QString SystemChannel::saveImageAs(const QString &imageData, bool saveAs)
+{
+    QString imagePath;
+    if (saveAs) {
+        QString picturesPath = QStandardPaths::writableLocation(
+                                   QStandardPaths::PicturesLocation);
+        QString imageName = QString("/UOS_AI_Image_%1.jpg")
+                            .arg(QDateTime::currentMSecsSinceEpoch());
+        picturesPath += imageName;
+
+        QStringList supportedFormats;
+        supportedFormats << "Jpg(*.jpg)"
+                         << "Jpeg(*.jpeg)"
+                         << "Bitmap(*.bmp)"
+                         << "Png(*.png)";
+
+        QStringList formatSuffix;
+        formatSuffix << "JPG"
+                     << "JPG"
+                     << "BMP"
+                     << "PNG";
+
+        QString filter = supportedFormats.join(";;");
+        QString selectFilter;
+
+        imagePath = DFileDialog::getSaveFileName(
+                                qApp->activeWindow(),
+                                "Export Image As",
+                                picturesPath,
+                                filter,
+                                &selectFilter);
+    } else {
+        QString imageDir = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/TEMP");
+        if (!QDir(imageDir).exists()) {
+            QDir().mkpath(imageDir);
+        }
+        imagePath = imageDir + QString("/UOS_AI_Image_%1.jpg").arg(QDateTime::currentMSecsSinceEpoch());
+    }
+
+    qCInfo(logAIGUI) << "Saving image to:" << imagePath;
+
+    // 判断是本地文件路径、URL 还是 base64 数据
+    QString localPath;
+    if (imageData.startsWith("qrc:") || imageData.startsWith("file://")) {
+        localPath = imageData.startsWith("file://") ? QUrl(imageData).toLocalFile() : imageData;
+    } else if (imageData.startsWith("http://") || imageData.startsWith("https://")) {
+        // 网络图片，通过后端下载
+        QNetworkAccessManager manager;
+        QEventLoop loop;
+        QNetworkReply *reply = manager.get(QNetworkRequest(QUrl(imageData)));
+        QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        loop.exec();
+
+        if (reply->error() == QNetworkReply::NoError) {
+            QFile file(imagePath);
+            if (file.open(QIODevice::WriteOnly)) {
+                file.write(reply->readAll());
+                file.close();
+            }
+        } else {
+            qCWarning(logAIGUI) << "saveImageAs: download failed:" << reply->errorString();
+        }
+        reply->deleteLater();
+        return imagePath;
+    } else if (QFile::exists(imageData)) {
+        localPath = imageData;
+    }
+
+    if (!localPath.isEmpty()) {
+        QFile::copy(localPath, imagePath);
+    } else {
+        QFile file(imagePath);
+        if (file.open(QIODevice::WriteOnly)) {
+            file.write(QByteArray::fromBase64(imageData.toUtf8()));
+            file.close();
+        }
+    }
+
+    return imagePath;
 }
 
 bool SystemChannel::isNetworkAvailable()
@@ -654,9 +888,6 @@ void SystemChannel::openFile(const QString &filePath)
 
 void SystemChannel::openUrl(const QString &url)
 {
-    if (Util::launchUosBrowser(url))
-        return;
-
     qCInfo(logAIGUI) << "Opening URL in default browser:" << url;
     Util::launchDefaultBrowser(url);
 }
@@ -987,7 +1218,7 @@ QStringList SystemChannel::normalizeNotificationActions(const QVariantList &acti
     return normalizedActions;
 }
 
-uint SystemChannel::notify(const QString &title,
+void SystemChannel::notify(const QString &title,
                            const QString &body,
                            const QString &icon,
                            const QVariantList &actions,
@@ -995,7 +1226,7 @@ uint SystemChannel::notify(const QString &title,
 {
     if (!m_notificationProxy || !m_notificationProxy->isValid()) {
         qCWarning(logAIGUI) << "Failed to send notification: invalid notification proxy";
-        return 0;
+        return;
     }
 
     QString appName = qApp ? qApp->applicationDisplayName() : QString();
@@ -1007,6 +1238,8 @@ uint SystemChannel::notify(const QString &title,
     }
 
     const QStringList normalizedActions = normalizeNotificationActions(actions);
+    const QVariantMap hints = buildNotificationHints(normalizedActions);
+
     QDBusReply<uint> reply = m_notificationProxy->call(
         QStringLiteral("Notify"),
         appName,
@@ -1015,55 +1248,74 @@ uint SystemChannel::notify(const QString &title,
         title,
         body,
         normalizedActions,
-        QVariantMap(),
+        hints,
         timeoutMs
     );
     if (!reply.isValid()) {
         qCWarning(logAIGUI) << "Failed to send notification:" << reply.error().message();
-        return 0;
     }
-
-    const uint notificationId = reply.value();
-    if (notificationId > 0) {
-        m_ownedNotificationIds.insert(notificationId);
-    }
-    return notificationId;
 }
 
-void SystemChannel::closeNotification(uint notificationId)
+void SystemChannel::checkAppUpdate()
 {
-    if (notificationId == 0 || !m_notificationProxy || !m_notificationProxy->isValid()) {
-        return;
-    }
-    m_notificationProxy->call(QStringLiteral("CloseNotification"), notificationId);
+    AppUpdateChecker::instance()->checkForUpdate();
+}
+
+void SystemChannel::markAppUpdateReminderConsumed(const QString &availableVersion)
+{
+    AppUpdateChecker::instance()->markUpdateReminderConsumed(availableVersion);
 }
 
 void SystemChannel::onNotificationActionInvoked(uint notificationId, const QString &actionKey)
 {
-    // if (!m_ownedNotificationIds.contains(notificationId)) {
-    //     return;
-    // }
-    if (actionKey == QStringLiteral("remind_later")) {
-        closeNotification(notificationId);
-    }
-    emit notificationActionInvoked(notificationId, actionKey);
+    Q_UNUSED(notificationId)
+    qCDebug(logAIGUI) << "Notification action from bubble:" << actionKey;
+    emit notificationActionInvoked(actionKey);
 }
 
-void SystemChannel::onNotificationClosed(uint notificationId, uint reason)
+void SystemChannel::emitNotificationAction(const QString &actionId)
 {
-    // if (!m_ownedNotificationIds.contains(notificationId)) {
-    //     return;
-    // }
-    m_ownedNotificationIds.remove(notificationId);
-    emit notificationClosed(notificationId, static_cast<int>(reason));
+    emit notificationActionInvoked(actionId);
+}
+
+QVariantMap SystemChannel::buildNotificationHints(const QStringList &normalizedActions) const
+{
+    QVariantMap hints;
+
+#ifdef COMPILE_ON_V20
+    // V20 的 dde-shell 不支持 x-deepin-action 扩展，直接返回空 hints
+    Q_UNUSED(normalizedActions)
+    return hints;
+#else
+    // 使用 NotificationDBus 命名空间中的常量，避免重复定义
+    static const QString kActionPrefix = QStringLiteral("x-deepin-action-");
+    static const QString kDBusSend = QStringLiteral("/usr/bin/dbus-send");
+    static const QString kSession = QStringLiteral("--session");
+    static const QString kPrintReply = QStringLiteral("--print-reply");
+    static const QString kDestPrefix = QStringLiteral("--dest=");
+
+    for (int i = 0; i < normalizedActions.size(); i += 2) {
+        const QString &actionKey = normalizedActions.at(i);
+        if (actionKey.isEmpty()) {
+            continue;
+        }
+        // x-deepin-action-{key} → QStringList for dde-am execution
+        hints[kActionPrefix + actionKey] = QStringList{
+            kDBusSend,
+            kSession,
+            kDestPrefix + NotificationDBus::SERVICE_NAME,
+            kPrintReply,
+            NotificationDBus::OBJECT_PATH,
+            QString(NotificationDBus::INTERFACE_NAME) + "." + NotificationDBus::METHOD_NAME,
+            QString("string:") + actionKey
+        };
+    }
+
+    return hints;
+#endif
 }
 
 void SystemChannel::searchShortCut(){
-    if (ESystemContext::isTreeland()) {
-        qCDebug(logAIGUI) << "Skip shortcut registration in treeland environment";
-        return;
-    }
-
     qCInfo(logAIGUI) << "Initializing application shortcuts";
     ShortcutManager& shortcutMgr = ShortcutManager::getInstance();
 
@@ -1080,12 +1332,22 @@ void SystemChannel::searchShortCut(){
     ShortcutInfo uosAiTalkShortcut;  // 数字人快捷键
 
     for (const ShortcutInfo &shortcut : shortcuts) {
-        if (shortcut.id == "UOS AI") {
-            uosAiShortcut = shortcut;
-        }
+        if (ESystemContext::isTreeland()) {
+            if (shortcut.id == "org.deepin.dde.keybinding.shortcut.app.uos-ai") {
+                uosAiShortcut = shortcut;
+            }
 
-        if (shortcut.id == "UOS AI Talk") {
-            uosAiTalkShortcut = shortcut;
+            if (shortcut.id == "org.deepin.dde.keybinding.shortcut.app.uos-ai-talk") {
+                uosAiTalkShortcut = shortcut;
+            }
+        } else {
+            if (shortcut.id == "UOS AI") {
+                uosAiShortcut = shortcut;
+            }
+
+            if (shortcut.id == "UOS AI Talk") {
+                uosAiTalkShortcut = shortcut;
+            }
         }
     }
     m_uosAiShortcut = uosAiShortcut;

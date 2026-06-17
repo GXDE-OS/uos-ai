@@ -52,12 +52,15 @@ export interface SystemNotifyOptions {
 
 /** 系统通知 action 回调 */
 export interface SystemNotificationActionPayload {
-    notificationId: number;
-    actionKey: string;
+    /** 结构化 actionID，格式: {scene}:{operation}:{params...} */
+    actionId: string;
 }
 
 /** Toast 消息类型 */
 export type ToastType = "info" | "warning" | "error" | "success" | "processing";
+
+/** Toast 操作按钮视觉类型 */
+export type ToastActionType = "default" | "primary";
 
 /** Toast 操作按钮 */
 export interface ToastAction {
@@ -65,6 +68,8 @@ export interface ToastAction {
     key: string;
     /** 按钮文案 */
     text: string;
+    /** 视觉样式类型，默认 default */
+    type?: ToastActionType;
 }
 
 /** showToast 的调用参数 */

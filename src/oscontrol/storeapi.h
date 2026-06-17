@@ -107,6 +107,7 @@ public:
     void setRequestHeader(const RequestHeader &header);
     RequestHeader getRequestHeader() const;
     void searchApps(const QString &keyword, int page = 1, int maxResults = 3);
+    void getAppBriefInfo(const QString &packageName);
     void setServerUrl(const QString &url);
     bool openBusinessUri(const QString &businessUri);
     bool openTargetInAppStore(const QString &target);
@@ -114,13 +115,16 @@ public:
 
 signals:
     void searchFinished(bool success, const QString &error, const QList<SearchResult> &results);
+    void appBriefInfoFinished(bool success, const QString &error, const QJsonObject &appInfo);
 
 private slots:
     void onSearchReply(QNetworkReply *reply);
+    void onAppBriefInfoReply(QNetworkReply *reply);
 
 private:
     void initRequestHeader(QNetworkRequest &request);
     bool parseSearchResult(const QByteArray &data, QList<SearchResult> &results);
+    bool parseAppBriefInfo(const QByteArray &data, QJsonObject &appInfo);
     RequestHeader getStoreRequestHeader() const;
     QString resolveBusinessUri(const QString &target) const;
 

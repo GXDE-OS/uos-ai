@@ -20,10 +20,13 @@ public slots:
     void deleteConversation(const QStringList &ids);
     void releaseConversation(const QStringList &ids);
     void clearAllConversations();
-    void setConversationRender(const QString &conversationId, const QString &msgId, const QString &renderMsgJson);
+    void setConversationRender(const QString &conversationId, const QString &msgId, const QString &renderMsgJson, const QString &extensionJson);
     bool saveConversation(const QString &id);
     QString getConversationIndexes();
+    QString getHistoryConversationIndexes();
+    QString getConversationSearchIndexes(const QString &id);
     bool switchMessageNext(const QString &conversationId, const QString &target, const QString &next);
+    void searchConversations(const QString &keyword);
 
     // ── AI 写作工作区 ────────────────────────────────────────────────────────
     void updateWorkspaceOutline(const QString &conversationId, const QString &outlineJson);
@@ -37,6 +40,7 @@ public slots:
 
 signals:
     void indexChanged();
+    void indexSearchChanged();  // 搜索范围变化
     void changeToConversation(const QString &assistantId, const QString &conversationId);
 
 private:

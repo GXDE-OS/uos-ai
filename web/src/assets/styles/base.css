@@ -72,6 +72,7 @@
     --transition-slow: 0.3s ease;
 
     /* Font size values (base: 14px) */
+    --uosai-font-size-5xs: 0.571rem; /* 8px */
     --uosai-font-size-4xs: 0.643rem; /* 9px */
     --uosai-font-size-3xs: 0.714rem; /* 10px */
     --uosai-font-size-2xs: 0.786rem; /* 11px */

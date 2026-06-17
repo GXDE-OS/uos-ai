@@ -31,14 +31,26 @@ export default defineComponent({
         const filteredConversations = computed(() => historyConversationStore.getFilteredHistoryConversations);
         const { groupedConversations } = useTimeGroup(filteredConversations);
         const isActionsDisabled = computed(() => groupedConversations.value.length === 0);
+        const isLoading = computed(
+            () => historyConversationStore.getIsSearching || historyConversationStore.getIsInitialLoading,
+        );
+        const loadingText = computed(() =>
+            historyConversationStore.getIsInitialLoading
+                ? backendStore.translate("Loading history conversations...")
+                : backendStore.translate("Searching history conversations..."),
+        );
 
         // 翻译文案
         const historyText = computed(() => backendStore.translate("History"));
         const searchText = computed(() => backendStore.translate("Search History"));
         const deleteText = computed(() => backendStore.translate("Delete"));
         const batchManageText = computed(() => backendStore.translate("Batch Manage"));
-        const searchPlaceholderText = computed(() => backendStore.translate("Search History"));
-        const noHistoryText = computed(() => backendStore.translate("No chat history yet"));
+        const searchPlaceholderText = computed(() => backendStore.translate("Search conversation titles or content…"));
+        const noHistoryText = computed(() =>
+            searchKeyword.value
+                ? backendStore.translate("No historical conversations found.")
+                : backendStore.translate("No chat history yet"),
+        );
 
         const handleSearchButtonClick = () => {
             showSearchInput.value = !showSearchInput.value;
@@ -51,11 +63,8 @@ export default defineComponent({
         const isDisabledDeleteButton = computed(() => searchKeyword.value === "");
         const handleDeleteButtonClick = () => {
             searchKeyword.value = "";
+            showSearchInput.value = false;
             historyConversationStore.updateFilterCondition({ searchKeyword: "" });
-            // 清空后重新聚焦输入框
-            nextTick(() => {
-                searchInputRef.value?.focus();
-            });
         };
 
         const handleSearchInput = (value: string) => {
@@ -66,6 +75,12 @@ export default defineComponent({
         const handleSearchInputBlur = () => {
             if (!searchKeyword.value) {
                 showSearchInput.value = false;
+            }
+        };
+
+        const handleSearchInputKeydown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                handleDeleteButtonClick();
             }
         };
 
@@ -125,9 +140,11 @@ export default defineComponent({
             // 可以在这里处理滚动相关的逻辑
         };
 
-        // 阻止 wrapper 内部点击导致输入框失焦
+        // 阻止 wrapper 内部点击导致输入框失焦（但不阻止输入框自身的 focus）
         const handleWrapperMouseDown = (event: MouseEvent) => {
-            event.preventDefault();
+            if (!(event.target instanceof HTMLInputElement)) {
+                event.preventDefault();
+            }
         };
 
         return {
@@ -137,6 +154,8 @@ export default defineComponent({
             searchKeyword,
             isBatchMode,
             isActionsDisabled,
+            isLoading,
+            loadingText,
             groupedConversations,
             isDisabledDeleteButton,
             handleSearchButtonClick,
@@ -155,11 +174,12 @@ export default defineComponent({
             deleteText,
             handleScroll,
             handleWrapperMouseDown,
+            handleSearchInputKeydown,
         };
     },
     render() {
         return (
-            <div class="history-conversation">
+            <div class={["history-conversation", { "history-conversation--loading": this.isLoading }]}>
                 <div class="history-conversation__header-container">
                     <div class="history-conversation__header">
                         <div class="history-conversation__title">{this.historyText}</div>
@@ -175,19 +195,23 @@ export default defineComponent({
                                         modelValue={this.searchKeyword}
                                         onInput={this.handleSearchInput}
                                         onBlur={this.handleSearchInputBlur}
+                                        onKeydown={this.handleSearchInputKeydown}
                                         placeholder={this.searchPlaceholderText}
                                         class="history-conversation__search-input"
                                     />
-                                    <IconButton
-                                        icon="trash"
-                                        iconSize={[16, 16]}
-                                        size={[20, 20]}
-                                        tooltip={this.deleteText}
-                                        onClick={this.handleDeleteButtonClick}
-                                        shape={ButtonShape.Rounded}
-                                        disabled={this.isDisabledDeleteButton}
-                                        class="history-conversation__delete-button"
-                                    />
+                                    {this.searchKeyword && (
+                                        <IconButton
+                                            icon="icon_titlebar_close"
+                                            iconSize={[16, 16]}
+                                            size={[16, 16]}
+                                            colorOnly={true}
+                                            tooltip={this.deleteText}
+                                            onClick={this.handleDeleteButtonClick}
+                                            shape={ButtonShape.Circle}
+                                            disabled={this.isDisabledDeleteButton}
+                                            class="history-conversation__delete-button"
+                                        />
+                                    )}
                                 </div>
                             ) : (
                                 <IconButton
@@ -215,29 +239,35 @@ export default defineComponent({
                         </div>
                     </div>
                 </div>
-                <ScrollBar edgeBounce momentum onScroll={this.handleScroll}>
-                    <div ref="containerRef" class="history-conversation__content-container">
-                        <div class="history-conversation__content">
-                            {this.groupedConversations.length > 0 ? (
-                                this.groupedConversations.map((group) => (
-                                    <TimeGroup
-                                        key={group.type}
-                                        group={group}
-                                        isBatchMode={this.isBatchMode}
-                                        onDelete={this.handleDeleteConversation}
-                                    />
-                                ))
-                            ) : (
-                                <div class="history-conversation__empty">
-                                    <img
-                                        src={this.isDarkMode ? iconEmptyConversationDark : iconEmptyConversationLight}
-                                    />
-                                    <span>{this.noHistoryText}</span>
-                                </div>
-                            )}
+                <div class="history-conversation__content-wrapper">
+                    {this.isLoading ? (
+                        <div class="history-conversation__loading">
+                            <SvgIcon icon="loading" size={[32, 32]} class="history-conversation__loading-icon" />
+                            <span>{this.loadingText}</span>
                         </div>
-                    </div>
-                </ScrollBar>
+                    ) : this.groupedConversations.length > 0 ? (
+                        <ScrollBar edgeBounce momentum onScroll={this.handleScroll}>
+                            <div ref="containerRef" class="history-conversation__content-container">
+                                <div class="history-conversation__content">
+                                    {this.groupedConversations.map((group) => (
+                                        <TimeGroup
+                                            key={group.type}
+                                            group={group}
+                                            isBatchMode={this.isBatchMode}
+                                            onDelete={this.handleDeleteConversation}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </ScrollBar>
+                    ) : (
+                        <div class="history-conversation__empty">
+                            <img src={this.isDarkMode ? iconEmptyConversationDark : iconEmptyConversationLight} />
+                            <span>{this.noHistoryText}</span>
+                        </div>
+                    )}
+                </div>
+
                 <BatchOperateBar onBatchDelete={this.handleBatchDelete} />
             </div>
         );

@@ -1,0 +1,216 @@
+/* BashApprove 主题变量 */
+html {
+    /* 背景色 */
+    --bashapprove-background: rgba(255, 255, 255, 0.8);
+    /* 阴影 */
+    --bashapprove-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+    /* 标题颜色 */
+    --bashapprove-title-color: rgba(0, 0, 0, 1);
+    /* 命令区背景色 */
+    --bashapprove-command-background: rgba(255, 255, 255, 0.6);
+    /* 命令区阴影 */
+    --bashapprove-command-shadow:
+        0 1px 0 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 0 0 inset rgba(255, 255, 255, 0.1);
+    /* 命令文本颜色 */
+    --bashapprove-command-text-color: rgba(0, 0, 0, 0.7);
+    /* 选项 hover 背景 */
+    --bashapprove-option-hover-bg: rgba(0, 0, 0, 0.08);
+    /* 选项点击背景 */
+    --bashapprove-option-active-bg: rgba(0, 0, 0, 0.15);
+    /* 选项选中背景 */
+    --bashapprove-option-selected-bg: rgba(0, 0, 0, 0.1);
+    /* 选项标签颜色 */
+    --bashapprove-option-label-color: rgba(0, 0, 0, 1);
+    /* 选项标签索引颜色 */
+    --bashapprove-option-label-index-color: rgba(0, 0, 0, 0.5);
+}
+
+html.dark {
+    /* 背景色 */
+    --bashapprove-background: rgba(255, 255, 255, 0.05);
+    /* 阴影 */
+    --bashapprove-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
+    /* 标题颜色 */
+    --bashapprove-title-color: rgba(255, 255, 255, 1);
+    /* 命令区背景色 */
+    --bashapprove-command-background: rgba(0, 0, 0, 0.05);
+    /* 命令区阴影 */
+    --bashapprove-command-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.5);
+    /* 命令文本颜色 */
+    --bashapprove-command-text-color: rgba(255, 255, 255, 0.7);
+    /* 选项 hover 背景 */
+    --bashapprove-option-hover-bg: rgba(255, 255, 255, 0.05);
+    /* 选项点击背景 */
+    --bashapprove-option-active-bg: rgba(255, 255, 255, 0.15);
+    /* 选项选中背景 */
+    --bashapprove-option-selected-bg: rgba(255, 255, 255, 0.1);
+    /* 选项标签颜色 */
+    --bashapprove-option-label-color: rgba(255, 255, 255, 1);
+    /* 选项标签索引颜色 */
+    --bashapprove-option-label-index-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Qt5 兼容降级：移除 inset（暗色无 inset，保持原值） */
+html[data-legacy-css] {
+    --bashapprove-command-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+html.dark[data-legacy-css] {
+    --bashapprove-command-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.5);
+    --bashapprove-command-background: rgba(255, 255, 255, 0.05);
+}
+
+.bash-approve {
+    border-radius: var(--radius-large);
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 20px;
+    background: var(--bashapprove-background);
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: var(--bashapprove-shadow);
+}
+
+.bash-approve__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.bash-approve__header-left {
+    display: flex;
+    align-items: center;
+}
+
+.bash-approve__skip-btn {
+    font-size: var(--uosai-font-size-base);
+    color: var(--system-active-color);
+    cursor: pointer;
+}
+
+.bash-approve__skip-btn:hover {
+    opacity: 0.85;
+}
+
+.bash-approve__title {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    color: var(--bashapprove-title-color);
+    margin-left: 8px;
+}
+
+.bash-approve__command-title {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 400;
+    color: var(--bashapprove-title-color);
+    padding-left: 24px;
+}
+
+.bash-approve__command {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background: var(--bashapprove-command-background);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    box-shadow: var(--bashapprove-command-shadow);
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 14px;
+}
+
+.bash-approve__command-text {
+    margin: 0;
+    font-size: var(--uosai-font-size-xs);
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-all;
+    color: var(--bashapprove-command-text-color);
+    height: 70px;
+    padding-right: 10px;
+}
+
+.bash-approve__options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+
+.bash-approve__option {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    height: 34px;
+}
+
+.bash-approve__option:hover {
+    background: var(--bashapprove-option-hover-bg);
+}
+
+.bash-approve__option:active {
+    background: var(--bashapprove-option-active-bg);
+}
+
+.bash-approve__option--selected {
+    background: var(--bashapprove-option-selected-bg);
+}
+
+.bash-approve__option-label {
+    font-size: var(--uosai-font-size-base);
+    color: var(--bashapprove-option-label-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bash-approve__option-index {
+    font-size: var(--uosai-font-size-base);
+    color: var(--bashapprove-option-label-index-color);
+    margin-right: 4px;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.bash-approve__reject-input {
+    margin-bottom: 12px;
+}
+
+.bash-approve__reject-textarea {
+    flex: 1;
+    border-radius: 4px;
+    font-size: var(--uosai-font-size-base);
+    outline: none;
+    background: transparent;
+    color: var(--bashapprove-option-label-color);
+    box-sizing: border-box;
+    border: none;
+}
+
+.bash-approve__reject-textarea::placeholder {
+    color: var(--bashapprove-option-label-color);
+    opacity: 1;
+    /* transition: opacity 0.15s; */
+}
+
+.bash-approve__reject-textarea:focus::placeholder {
+    opacity: 0.4;
+}
+
+.bash-approve__actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bash-approve__submit-btn {
+    margin-left: 10px;
+}

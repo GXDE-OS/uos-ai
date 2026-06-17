@@ -1,10 +1,7 @@
 /* 分组容器 */
 .group {
     margin-top: 16px;
-    --group-header-height: 30px;
-    --group-sticky-order: 0;
     position: relative;
-    scroll-margin-top: calc(var(--group-sticky-order) * var(--group-header-height));
     user-select: none;
 }
 

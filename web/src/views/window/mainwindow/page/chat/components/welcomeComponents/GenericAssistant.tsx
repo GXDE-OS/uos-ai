@@ -8,6 +8,11 @@ import { createConversation } from "@/utils/mainwindow/conversationActions";
 /** 横向最多展示的智能体数量 */
 const MAX_VISIBLE = 5;
 
+type VisibleAssistant = {
+    assistant: Assistant;
+    color: string;
+};
+
 /** 可用的图标颜色数组 */
 const ICON_COLORS = ["#31BC52", "#449FFF", "#678CFC", "#FF9602", "#B167ED", "#06D7DB", "#F15800"];
 
@@ -43,16 +48,16 @@ export default defineComponent({
         const shuffledColors = computed(() => shuffleArray(ICON_COLORS));
 
         /** 可见助手（排除当前助手，最多 MAX_VISIBLE 个）并为每个分配不重复的随机颜色 */
-        const visibleAssistants = computed(() => {
+        const visibleAssistants = computed<VisibleAssistant[]>(() => {
             const assistants = allAssistants.value
                 .filter((assistant) => assistant.id !== currentAssistantId.value)
                 .slice(0, MAX_VISIBLE);
 
-            // 为每个助手分配不重复的颜色
+            // 保留原始助手对象引用，避免 WebChannel/Proxy 对象被展开后丢失非自有可枚举字段。
             const colors = shuffledColors.value;
             return assistants.map((assistant, index) => ({
-                ...assistant,
-                color: colors[index % colors.length],
+                assistant,
+                color: colors[index % colors.length]!,
             }));
         });
 
@@ -69,7 +74,7 @@ export default defineComponent({
         return (
             <div class="generic-assistant">
                 <div class="generic-assistant__agent-row">
-                    {this.visibleAssistants.map((assistant) => {
+                    {this.visibleAssistants.map(({ assistant, color }) => {
                         // 判断是否是三方助手
                         const isThirdPartyAssistant = assistant.path?.startsWith("file://");
                         let iconType = "";
@@ -88,7 +93,7 @@ export default defineComponent({
                             >
                                 <div class="generic-assistant__agent-icon">
                                     {!isThirdPartyAssistant ? (
-                                        <SvgIcon icon={iconSrc} size={[20, 20]} color={assistant.color} />
+                                        <SvgIcon icon={iconSrc} size={[20, 20]} color={color} />
                                     ) : (
                                         <img src={iconSrc} class="generic-assistant__agent-icon-img" />
                                     )}

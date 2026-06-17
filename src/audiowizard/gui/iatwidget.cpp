@@ -7,6 +7,9 @@
 #include "networkmonitor.h"
 #include "audioaiassistant.h"
 #include "oscontrol/deepincontrolcenter.h"
+#include "oscontrol/oscallcontext.h"
+#include "dbus/3rdparty/com_deepin_daemon_audio.h"
+#include "dbus/3rdparty/com_deepin_daemon_audio_source.h"
 
 #include <DPushButton>
 #include <DPaletteHelper>
@@ -17,8 +20,6 @@
 #include <QScreen>
 #include <QPainter>
 #include <QHBoxLayout>
-#include <QDBusInterface>
-#include <QDBusReply>
 #include <QProcess>
 #include <QPalette>
 #include <QDateTime>
@@ -40,63 +41,30 @@ DCORE_USE_NAMESPACE
 using namespace uos_ai;
 
 int IatWidget::getRecoderVolume() {
-    // 获取麦克风设备
-    QDBusInterface interface("com.deepin.daemon.Audio",
-                              "/com/deepin/daemon/Audio",
-                              "org.freedesktop.DBus.Properties");
-    QDBusReply<QDBusVariant> reply = interface.call("Get", "com.deepin.daemon.Audio", "DefaultSource");
-    if (!reply.isValid()) {
-        qCritical() << "dbus call com.deepin.daemon.Audio DefaultSource FAILED:" << reply.error().name();
+    Audio audioInter(osCallDbusAudioService, osCallDbusAudioPath, QDBusConnection::sessionBus());
+    audioInter.setSync(true);
+
+    QString defaultSourcePath = audioInter.defaultSource().path();
+    if (defaultSourcePath.isEmpty()) {
+        qCWarning(logAudioWizard) << "Default source path is empty";
         return -1;
     }
 
-    QString defaultSource = reply.value().variant().value<QDBusObjectPath>().path();
-    qInfo() << "dbus call com.deepin.daemon.Audio DefaultSource:" << defaultSource;
-    if (defaultSource.isEmpty()) {
-        qWarning() << "dbus call com.deepin.daemon.Audio DefaultSource EMPTY";
-        return -1;
-    }
+    uos_ai::audio::Source sourceInter(osCallDbusAudioService, defaultSourcePath, QDBusConnection::sessionBus());
 
-    // 判断是否静音
-    QDBusInterface interface1("com.deepin.daemon.Audio",
-                               defaultSource,
-                               "org.freedesktop.DBus.Properties");
-    reply = interface1.call("Get", "com.deepin.daemon.Audio.Source", "Name");
-    if(!reply.isValid()){
-        qWarning() << "dbus call com.deepin.daemon.Audio Name FAILED:" << reply.error().name();
-        return -1;
-    }
-
-    QString name = reply.value().variant().toString();
+    QString name = sourceInter.name();
     qInfo() << "dbus call com.deepin.daemon.Audio Name:" << name;
     if (name.endsWith("monitor")) {
         qWarning() << "dbus call com.deepin.daemon.Audio Name INVALID";
         return -1;
     }
 
-    reply = interface1.call("Get", "com.deepin.daemon.Audio.Source", "Mute");
-    if(!reply.isValid()){
-        qWarning() << "dbus call com.deepin.daemon.Audio Mute FAILED:" << reply.error().name();
-        return -1;
-    }
-
-    bool isMute = reply.value().variant().toBool();
-    if (isMute) {
+    if (sourceInter.mute()) {
         qInfo() << "the microphone is muted";
         return 0;
     }
 
-    // 获取麦克风音量
-    QDBusInterface interface2("com.deepin.daemon.Audio",
-                               defaultSource,
-                               "org.freedesktop.DBus.Properties");
-    reply = interface2.call("Get", "com.deepin.daemon.Audio.Source", "Volume");
-    if(!reply.isValid()){
-        qWarning() << "dbus call com.deepin.daemon.Audio Volume FAILED:" << reply.error().name();
-        return -1;
-    }
-
-    int volume = int(reply.value().variant().toDouble() * 100);
+    int volume = int(sourceInter.volume() * 100);
     qInfo() << "FINALLY, get the volume value:" << volume;
     return volume;
 }

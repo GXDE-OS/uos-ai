@@ -26,8 +26,8 @@ struct ConversationIndexItem {
     QString introduction;
     
     ConversationIndexItem() = default;
-    ConversationIndexItem(const QString &id, const QString &title, qint64 updateTime, const QString &assistant, const QString &assistantName, const QString &introduction);
-    
+    static ConversationIndexItem fromRecord(const ConversationRecordPtr &record);
+
     QJsonObject toJson() const;
     bool fromJson(const QJsonObject &json);
 };
@@ -43,7 +43,7 @@ public:
     bool addOrUpdateIndex(const ConversationRecordPtr &record);
     bool removeIndex(const QString &id);
     void clearIndex();
-    
+
     // 索引查询
     QVector<ConversationIndexItem> getAllIndexes() const;
     ConversationIndexItem getIndex(const QString &id) const;
@@ -53,15 +53,13 @@ public:
     // 持久化
     bool save();
     bool load();
-    
+
     // 回调设置
     void setSaveCallback(const IndexSaveCallback &callback);
-
 private:
     QString getIndexFilePath() const;
-
 private:
-    QMap<QString, ConversationIndexItem> m_indexes;
+    QMap<QString, ConversationIndexItem> m_indexes;       // 持久化索引（source of truth）
     QString m_storagePath;
     IndexSaveCallback m_saveCallback;
 };

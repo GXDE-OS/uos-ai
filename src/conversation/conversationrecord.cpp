@@ -69,6 +69,18 @@ QString ConversationRecord::currentMessage() const
     return m_currentMsg;
 }
 
+void ConversationRecord::setExtension(const QVariantHash &extension)
+{
+    QWriteLocker locker(&m_lock);
+    m_extension = extension;
+}
+
+QVariantHash ConversationRecord::extension() const
+{
+    QReadLocker locker(&m_lock);
+    return m_extension;
+}
+
 QString ConversationRecord::id() const
 {
     QReadLocker locker(&m_lock);
@@ -195,6 +207,7 @@ QJsonObject ConversationRecord::toJson() const
     rootJson[STR_KEY_CUR_NEXT] = m_root->getCurNext();
     rootJson[STR_KEY_ASSISTANT] = m_assistantId;
     rootJson[STR_KEY_MODEL] = m_modelId;
+    rootJson[STR_KEY_EXTENSION] = QJsonObject::fromVariantHash(m_extension);
     rootJson[STR_KEY_TITLE] = m_title;
     rootJson[STR_KEY_INTRODUCTION] = m_introduction;
     json[STR_KEY_ROOT] = rootJson;
@@ -241,6 +254,9 @@ QSharedPointer<ConversationRecord> ConversationRecord::fromJson(const QJsonObjec
     QString modelId = rootJson.value(STR_KEY_MODEL).toString();
     record->m_modelId = modelId;
 
+    QJsonObject extensionJson = rootJson.value(STR_KEY_EXTENSION).toObject();
+    record->m_extension = extensionJson.toVariantHash();
+
     QString title = rootJson.value(STR_KEY_TITLE).toString();
     record->m_title = title;
 
@@ -270,11 +286,11 @@ bool ConversationRecord::saveToFile(const QString &filePath) const
         qWarning() << "Failed to open file for writing:" << filePath;
         return false;
     }
-    
+
     QJsonDocument doc(toJson());
     file.write(doc.toJson());
     file.close();
-    
+
     return true;
 }
 
@@ -303,6 +319,63 @@ QString ConversationRecord::generateSummary() const
 {
     QReadLocker locker(&m_lock);
     return m_introduction.isEmpty() ? tr("Null") : m_introduction.trimmed();
+}
+
+QStringList ConversationRecord::extractTextContent() const
+{
+    QReadLocker locker(&m_lock);
+    // 收集所有消息中的文本内容
+    QStringList extracted;
+    QString firstMsgId = m_root->getCurNext();
+    for (const auto &node : m_messages) {
+        const auto renderList = node->getRender();
+        for (const auto &msg : renderList) {
+            if (msg.type == CntText) {
+                QString text = msg.data.toString();
+                if (!text.isEmpty())
+                    extracted.append(text);
+            } else if (msg.type == CntDocCard) {
+                // 文档卡片提取标题作为索引内容
+                QVariantMap dataMap = msg.data.toMap();
+                QString title = dataMap.value(STR_KEY_TITLE).toString();
+                if (!title.isEmpty())
+                    extracted.append(title);
+            }
+        }
+    }
+
+    // 提取完成，提前释放锁，后续切片操作仅访问局部变量
+    locker.unlock();
+
+    // 切片参数：每片1024字符，相邻切片重叠50字符以支持跨切片关键词匹配
+    static const int kChunkSize = 1024;
+    static const int kOverlap = 50;
+    static const int kStep = kChunkSize - kOverlap;
+    QStringList contents;
+    for (const QString &text : extracted) {
+        int len = text.length();
+        // 短文本无需切片
+        if (len <= kChunkSize) {
+            contents.append(text + "\n");
+            continue;
+        }
+        int pos = 0;
+        while (pos < len) {
+            int end = qMin(pos + kChunkSize, len);
+            // 避免在UTF-16代理对高位处切割，防止产生孤立surrogate
+            if (end < len && text.at(end - 1).isHighSurrogate())
+                end -= 1;
+            QString chunk = text.mid(pos, end - pos);
+            if (end >= len)
+                chunk.append("\n");
+            contents.append(chunk);
+            pos += kStep;
+            // 步进后若落在代理对中间，跳过低位代理
+            if (pos < len && pos > 0 && text.at(pos - 1).isHighSurrogate())
+                pos += 1;
+        }
+    }
+    return contents;
 }
 
 QList<MessageNodePtr> ConversationRecord::history(const QString &leafId) const

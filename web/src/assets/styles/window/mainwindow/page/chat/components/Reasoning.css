@@ -7,14 +7,23 @@ html {
     --reasoning-icon-done-opacity: 0.5;
     --reasoning-content-color: rgba(0, 0, 0, 0.5);
     --reasoning-scrollbar-thumb: rgba(0, 0, 0, 0.5);
-    --reasoning-scrollbar-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1),
-        0 0 0 0.5px rgba(255, 255, 255, 0.1),
-        0 0 0 0.5px inset rgba(0, 0, 0, 0.05),
-        0 0 0 0.5px rgba(0, 0, 0, 0.05);
+    --reasoning-scrollbar-shadow:
+        0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px inset rgba(0, 0, 0, 0.05), 0 0 0 0.5px rgba(0, 0, 0, 0.05);
     --reasoning-title-shimmer: rgba(0, 0, 0, 0.15);
     --reasoning-header-expanded-bg: rgba(248, 248, 248, 0.95);
     --reasoning-chevron-hover-bg: rgba(0, 0, 0, 0.1);
     --reasoning-chevron-active-bg: rgba(0, 0, 0, 0.2);
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --reasoning-scrollbar-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+html.dark[data-legacy-css] {
+    --reasoning-scrollbar-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 html.dark {
@@ -27,9 +36,8 @@ html.dark {
     --reasoning-icon-color: rgba(151, 151, 151, 1);
     --reasoning-content-color: rgba(255, 255, 255, 0.5);
     --reasoning-scrollbar-thumb: rgba(255, 255, 255, 0.3);
-    --reasoning-scrollbar-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1),
-        0 0 0 0.5px rgba(0, 0, 0, 0.1),
-        0 0 0 0.5px inset rgba(255, 255, 255, 0.05),
+    --reasoning-scrollbar-shadow:
+        0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px inset rgba(255, 255, 255, 0.05),
         0 0 0 0.5px rgba(255, 255, 255, 0.05);
     --reasoning-title-shimmer: rgba(255, 255, 255, 0.15);
     --reasoning-header-expanded-bg: rgba(24, 24, 24, 0.95);
@@ -40,7 +48,7 @@ html.dark {
 /* Reasoning - 深度思考块 */
 
 .reasoning-block {
-    margin: 4px 0 8px;
+    margin: 0px 0 16px;
     border-radius: 10px;
     border: 1px solid var(--reasoning-border);
     background: var(--reasoning-bg);
@@ -118,7 +126,7 @@ html.dark .reasoning-block__chevron {
 }
 
 .reasoning-block--done .reasoning-block__icon {
-    opacity: var(--reasoning-icon-done-opacity);
+    opacity: 1;
 }
 
 /* 标题文字 */
@@ -230,16 +238,12 @@ html.dark .reasoning-block__chevron {
 
 .reasoning-block--expanded.reasoning-block--stuck .reasoning-block__header::before {
     left: -1px;
-    background: radial-gradient(circle at 100% 100%,
-            transparent 10px,
-            var(--reasoning-header-expanded-bg) 10px);
+    background: radial-gradient(circle at 100% 100%, transparent 10px, var(--reasoning-header-expanded-bg) 10px);
 }
 
 .reasoning-block--expanded.reasoning-block--stuck .reasoning-block__header::after {
     right: -1px;
-    background: radial-gradient(circle at 0% 100%,
-            transparent 10px,
-            var(--reasoning-header-expanded-bg) 10px);
+    background: radial-gradient(circle at 0% 100%, transparent 10px, var(--reasoning-header-expanded-bg) 10px);
 }
 
 /* ===== 思考中动画 ===== */
@@ -248,9 +252,15 @@ html.dark .reasoning-block__chevron {
 
 /* 文字流光：0%-40% 流动 */
 @keyframes reasoning-shimmer {
-    0%   { background-position: 100% 0; }
-    40%  { background-position: 0% 0; }
-    100% { background-position: 0% 0; }
+    0% {
+        background-position: 100% 0;
+    }
+    40% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 0% 0;
+    }
 }
 
 .reasoning-block:not(.reasoning-block--done) .reasoning-block__title {
@@ -271,7 +281,6 @@ html.dark .reasoning-block__chevron {
     -webkit-text-fill-color: transparent;
     animation: reasoning-shimmer 2.5s linear infinite;
 }
-
 
 /* 标题收缩后，chevron 靠 auto margin 右对齐 */
 .reasoning-block:not(.reasoning-block--done) .reasoning-block__chevron {

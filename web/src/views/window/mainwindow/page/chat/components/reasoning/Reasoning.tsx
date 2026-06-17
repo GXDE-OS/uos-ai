@@ -192,7 +192,7 @@ export default defineComponent({
                             class="reasoning-block__chevron"
                             icon="mdeditor-fullscreen"
                             iconSize={[16, 16]}
-                            size={24}
+                            size={30}
                             shape={ButtonShape.Rounded}
                         />
                     )}

@@ -24,9 +24,14 @@ AbstractModel* BigModelProvider::createModel(const ModelAccountPtr &acc)
         return nullptr;
     }
 
+    // GLM 都需回传
+    QVariantHash parameters;
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
+
     OaiChatModel *model = new OaiChatModel();
     model->setAccount(acc);
     model->setApiHost(host());
+    model->setParameters(parameters);
 
     return model;
 }

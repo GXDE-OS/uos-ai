@@ -45,7 +45,9 @@ void AssistantManager::initDefaultAssistants()
         
         // Add icons: imageType as key, iconName as value
         uosAiInfo.icons["line"] = "uos-ai";
-        
+        uosAiInfo.icons["color"] = "uos-ai-color";
+        uosAiInfo.gradientColors = QStringList{"#6448FF", "#FF37DF", "#FCA506"};
+
         uosAiInfo.path = "icons/";
         assistantsInfo.insert(uosAiInfo.id, uosAiInfo);
     }
@@ -59,7 +61,8 @@ void AssistantManager::initDefaultAssistants()
         // Add icons: imageType as key, iconName as value
         aiWritingInfo.icons["line"] = "ai-writing";
         aiWritingInfo.icons["color"] = "ai-writing-color";
-        
+        aiWritingInfo.gradientColors = QStringList{"#0090D6", "#04B0F9", "#06CEF3"};
+
         aiWritingInfo.path = "icons/";
         aiWritingInfo.placeHolder = tr("Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.");
         assistantsInfo.insert(aiWritingInfo.id, aiWritingInfo);
@@ -74,7 +77,8 @@ void AssistantManager::initDefaultAssistants()
         // Add icons: imageType as key, iconName as value
         aiTranslationInfo.icons["line"] = "ai-translation";
         aiTranslationInfo.icons["color"] = "ai-translation-color";
-        
+        aiTranslationInfo.gradientColors = QStringList{"#00ADB3", "#00CB7E", "#16E395"};
+
         aiTranslationInfo.path = "icons/";
         aiTranslationInfo.placeHolder = tr("Please enter the content to be translated and specify the target language; the default target language is Chinese.");
         assistantsInfo.insert(aiTranslationInfo.id, aiTranslationInfo);
@@ -91,7 +95,8 @@ void AssistantManager::initDefaultAssistants()
         // Add icons: imageType as key, iconName as value
         knowledgeBaseInfo.icons["line"] = "personal-knowledge-assistant";
         knowledgeBaseInfo.icons["color"] = "personal-knowledge-assistant-color";
-        
+        knowledgeBaseInfo.gradientColors = QStringList{"#4A6DF3", "#6596FF", "#53C7FF"};
+
         knowledgeBaseInfo.path = "icons/";
         knowledgeBaseInfo.placeHolder = tr("Ask questions based on the knowledge base.");
         assistantsInfo.insert(knowledgeBaseInfo.id, knowledgeBaseInfo);
@@ -108,7 +113,8 @@ void AssistantManager::initDefaultAssistants()
         // Add icons: imageType as key, iconName as value
         clawInfo.icons["line"] = "uos-claw";
         clawInfo.icons["color"] = "uos-claw-color";
-        
+        clawInfo.gradientColors = QStringList{"#FC6E79", "#FF7AAC", "#FF8B94"};
+
         clawInfo.path = "icons/";
         clawInfo.placeHolder = tr("Please enter MCP&Skills commands.");
         assistantsInfo.insert(clawInfo.id, clawInfo);

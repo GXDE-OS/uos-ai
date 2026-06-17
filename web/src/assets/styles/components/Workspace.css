@@ -19,6 +19,13 @@ html.dark {
     --workspace-left-border-color: rgba(0, 0, 0, 0.5);
 }
 
+.workspace--history-conversation {
+    --workspace-bg-color: rgba(248, 248, 248, 1);
+}
+html.dark .workspace--history-conversation {
+    --workspace-bg-color: rgba(24, 24, 24, 1);
+}
+
 .workspace {
     flex: 1;
     min-width: var(--workspace-min-width, 120px);
@@ -143,7 +150,7 @@ html.dark {
 .workspace-content--editor-fullscreen .extension-panel {
     flex-basis: 100%;
     opacity: 1;
-    border-left: none; /* 全屏时隐藏左边框 */
+    border-left: 1px solid transparent; /* 全屏时隐藏左边框 */
 }
 
 .workspace__dropzone {

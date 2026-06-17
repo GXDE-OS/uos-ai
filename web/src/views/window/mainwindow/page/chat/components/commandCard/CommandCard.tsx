@@ -5,7 +5,6 @@ import SliderCard from "./SliderCard";
 import FontSizeCard from "./FontSizeCard";
 import AppStoreCard from "./AppStoreCard";
 import ScheduleCard from "./ScheduleCard";
-import "./CommandCard.css";
 
 /**
  * 指令卡片基础组件
@@ -74,10 +73,10 @@ export default defineComponent({
         }
 
         // 其他类型
-        if (title.includes("应用商店") || title.includes("App Store")) {
+        if (title.includes("App Store")) {
             return <AppStoreCard data={data.cardData} onCardClick={(_cardData: any) => this.handleCardClick(data)} />;
         }
-        if (title.includes("日程")) {
+        if (title.includes("Schedule")) {
             return <ScheduleCard data={data.cardData} onCardClick={(_cardData: any) => this.handleCardClick(data)} />;
         }
 

@@ -2,4747 +2,1118 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ml">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">മോഡൽ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">ആവശ്യമാണ്, ദയവായി നൽകുക</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API കീ</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">API രഹസ്യം</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">അക്കൗണ്ട്</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">ആവശ്യമാണ്, ഒന്നിലധികം മോഡലുകൾ വേർതിരിക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">ഓപ്ഷണൽ</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">ഓപ്ഷണൽ. നിറയ്ക്കാത്തപക്ഷം ഡിഫോൾട്ട് വിലാസം ഉപയോഗിക്കും.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">മോഡലുകളുടെ പട്ടിക</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">ഇഷ്ടാനുസൃതം</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">സെർവറുമായി ബന്ധിപ്പിക്കാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">പ്രോക്സി ക്രമീകരണങ്ങൾക്കായി, ദയവായി സിസ്റ്റം പ്രോക്സി ക്രമീകരണങ്ങളിലേക്ക് പോകുക</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">ക്രമീകരണങ്ങളിലേക്ക് പോകുക</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">മോഡൽ പേര്</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">ഡൊമെയ്ൻ</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">സംരക്ഷിക്കുന്നതിൽ പരാജയപ്പെട്ടു, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">അക്കൗണ്ട് പേര് ഇതിനകം നിലവിലുണ്ട്, ദയവായി അത് മാറ്റുക</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">20 അക്ഷരങ്ങളിൽ കൂടുതൽ അല്ല</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">മോഡൽ ലഭ്യമാണോ എന്ന് പരിശോധിക്കാൻ, സിസ്റ്റം വലിയ മോഡലിലേക്ക് പരിശോധനാ വിവരങ്ങൾ അയയ്ക്കുന്നു, ഇത് ഒരു ചെറിയ അളവിൽ ടോക്കണുകൾ ഉപയോഗിക്കും.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">ഈ LLM ഇതിനകം നിലവിലുണ്ട്, ദയവായി അത് വീണ്ടും ചേർക്കരുത്.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">നിലവിൽ വളരെയധികം സന്ദർശകരുണ്ട്, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">ടൈപ്പ്</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">ഉച്ചത്തിൽ വായിക്കുക</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">ഓഡിയോ ഉപകരണം കണ്ടെത്തിയില്ല, ദയവായി പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">AI സൃഷ്ടിച്ച ഉള്ളടക്കം റഫറൻസിന് മാത്രമാണ്, ദയവായി വിവരങ്ങളുടെ കൃത്യതയിൽ ശ്രദ്ധിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">പകർത്തുക</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">ഈ ഖണ്ഡിക എനിക്കായി മിനുസപ്പെടുത്തുക, അധിക ഉള്ളടക്കമൊന്നും കൂടാതെ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്:</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">നിലവിലെ മോഡൽ: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">പുനരുപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">ലളിതമായ ചൈനീസ്</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">പരമ്പരാഗത ചൈനീസ്</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">റഷ്യൻ</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">ഇംഗ്ലീഷ്</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">ജാപ്പനീസ്</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">ജർമ്മൻ</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">സ്പാനിഷ്</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">ഫ്രഞ്ച്</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">ഇറ്റാലിയൻ</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">കൊറിയൻ</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">മലയാളം</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">പോർച്ചുഗീസ്</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">റഷ്യൻ</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">തായ്</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">വിയറ്റ്നാമീസ്</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">സംഭാഷണം തുടരുക</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">യാന്ത്രിക കണ്ടെത്തൽ</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">തിരയുക</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">വിവർത്തനം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">വികസിപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">ശരിയാക്കുക</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">എഐ നോളജ് ബേസിലേക്ക് ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">ചേർത്തു</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">മോഡൽ കോൺഫിഗറേഷൻ</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">പകർത്തി</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">എന്തെങ്കിലും ടെക്സ്റ്റ് തിരിച്ചറിഞ്ഞില്ല.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">ചേർത്ത ഉള്ളടക്കം പത്ത് വാക്കിലധികമാകണം</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">സംഗ്രഹം</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">ടെക്സ്റ്റിലേക്ക് പേസ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">എഴുതുന്നത് തുടരുക</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">പോളിഷ്</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">വിവർത്തന ഫലം മോഡലിന്റെ കഴിവുകളാൽ പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. വിവർത്തനത്തിൽ നിങ്ങൾക്ക് തൃപ്തിയില്ലെങ്കിൽ, UOS AI ഹോം പേജിലെ മറ്റ് മോഡലുകളിലേക്ക് മാറുക.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">ഈ പാസേജ് %1 ലേക്ക് വിവർത്തനം ചെയ്ത് എനിക്ക് വ്യക്തമായ ഫലം നേരിട്ട് തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">ക്ലിക്ക് ചെയ്യാനാവില്ല</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">ഇൻപുട്ട് മെത്തേഡ് പുനരാരംഭിച്ചതിന് ശേഷമേ ഈ ഫംഗ്ഷൻ ഉപയോഗിക്കാൻ കഴിയൂ. ട്യൂട്ടോറിയൽ ഇതാണ്: 1. ടാസ്ക്ബാറിലെ ഇൻപുട്ട് മെത്തേഡ് ഐക്കണിൽ വലത്-ക്ലിക്ക് ചെയ്യുക. 2. &quot;പുനരാരംഭിക്കുക&quot; ക്ലിക്ക് ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">ശരി</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">പൂരിപ്പിക്കൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">ഇൻപുട്ട് ബോക്സ് തിരഞ്ഞെടുത്തിട്ടില്ല, ദയവായി ഇൻപുട്ട് ബോക്സ് തിരഞ്ഞെടുത്ത് വീണ്ടും പൂരിപ്പിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">ശരി</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">ഈ പാസേജ് ലളിതമായ ഭാഷയിൽ വിശദീകരിക്കുക. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">ഈ പാസേജ് സംഗ്രഹിച്ച് മറ്റേതെങ്കിലും അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം നേരിട്ട് തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">ഈ പാസേജ് യോജിച്ച രീതിയിൽ തുടരുക. ധാരാളം വാക്കുകൾ ആവശ്യമില്ല. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">ഈ പാസേജ് യോജിച്ച രീതിയിൽ വികസിപ്പിക്കുക. വളരെ നീണ്ട ടെക്സ്റ്റ് ആവശ്യമില്ല. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">ഈ പാസേജിൽ എന്തെങ്കിലും ടൈപ്പോസ് ഉണ്ടോ എന്ന് പരിശോധിക്കുക. ഉണ്ടെങ്കിൽ, പിശകുകളുടെ സ്ഥാനം സൂചിപ്പിക്കുക. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം നേരിട്ട് തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">നിലവിൽ മോഡൽ ഇല്ല</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">കോൺഫിഗർ ചെയ്യാൻ പോകുക</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">ചാറ്റ് ചരിത്രം മായ്ച്ചു</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">വിജയകരമായി പകർത്തി</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI ഒരു ഡെസ്ക്ടോപ്പ് സ്മാർട്ട് അസിസ്റ്റന്റാണ്, നിങ്ങളുടെ വ്യക്തിഗത സഹായി! നിങ്ങൾക്ക് ടെക്സ്റ്റ് അല്ലെങ്കിൽ വോയ്സ് ഉപയോഗിച്ച് ഇതുമായി ആശയവിനിമയം നടത്താം, ഇത് ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകാനും വിവരങ്ങൾ നൽകാനും നിങ്ങളുടെ വിവരണങ്ങളെ അടിസ്ഥാനമാക്കി ചിത്രങ്ങൾ സൃഷ്ടിക്കാനും സഹായിക്കും.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI ഫോളോ അലോംഗ്/എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">അറിവ് ബേസ് മാനേജ്മെന്റ്</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>സെർവറുമായി ബന്ധിപ്പിക്കാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">ഫംഗ്ഷൻ പാർസിംഗ് പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">ആപ്ലിക്കേഷൻ ഫയൽ നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">വിജയകരമായി ആരംഭിച്ചു</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">ആരംഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished"> എക്സിക്യൂഷൻ ഔട്ട്പുട്ട് ഉള്ളടക്കം </translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">മോഡ്</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">വിൻഡോ മോഡ്</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">സൈഡ്ബാർ മോഡ്</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">ക്രമീകരണങ്ങൾ</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">അപ്ഡേറ്റ് ലോഗ്</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">വോയ്‌സ് സംഭാഷണം</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">ഇല്ലാതാക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">%1 ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">ഇല്ലാതാക്കിയ ശേഷം ഈ സെർവർ ലഭ്യമാകില്ല; ശ്രദ്ധയോടെ മുന്നോട്ട് പോകുക.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="obsolete">അപ്ഡേറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">വെക്ടറൈസ് ചെയ്യാത്ത പ്ലഗിൻ</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">[എഐ നോളജ് ബേസ്] ഉപയോഗിക്കുന്നതിന് മുമ്പ്, വെക്ടറൈസേഷൻ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്; അതിനാൽ എഐ നോളജ് ബേസ് പ്രവർത്തിക്കും.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="obsolete">ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">നോളജ് ബേസ് ശൂന്യമാണ്</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">[എഐ നോളജ് ബേസ്] ഉപയോഗിക്കുന്നതിന് മുമ്പ്, നിങ്ങൾ ആദ്യം നോളജ് ബേസിലേക്ക് ഡോക്യുമെന്റുകൾ ചേർക്കണം. ചേർത്ത ശേഷം, നിങ്ങൾ ചേർത്ത ഉള്ളടക്കത്തിന്റെ അടിസ്ഥാനത്തിൽ എഐ ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകും.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">ഫയലുകൾ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">താഴെക്കാണുന്ന ഫയൽ കാലഹരണപ്പെട്ടു; ഉപയോഗിക്കാനാകില്ല. തുടരണമോ?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">പിന്നീട് ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">MCP എൻവയറൺമെന്റ് ഇല്ല</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">ദയവായി ആപ്പ് സ്റ്റോറിൽ പോയി UOS AI Agent ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">ഇപ്പോൾ അല്ല</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">ക്രെഡിറ്റുകൾ ക്ലെയിം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">സൗജന്യ ക്രെഡിറ്റുകൾ ലഭിച്ചു</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">നിങ്ങളുടെ ട്രയൽ അക്കൗണ്ടിനായുള്ള സൗജന്യ ക്രെഡിറ്റുകൾ നിങ്ങൾ ഉപയോഗിച്ചു. ഈ മാസത്തേക്ക് ഞങ്ങൾ നിങ്ങൾക്ക് അധികമായി 200 സൗജന്യ ക്രെഡിറ്റുകൾ നൽകിയിട്ടുണ്ട്. കൂടുതൽ സവിശേഷതകൾ പര്യവേക്ഷണം ചെയ്ത് UOS AI-യുടെ അപരിമിതമായ കഴിവുകൾ അൺലോക്ക് ചെയ്യുക!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="vanished">ശരി</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">വിജയകരമായി ക്ലെയിം ചെയ്തു</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">ക്ലെയിം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI ഒരു ഡെസ്‌ക്‌ടോപ്പ് സ്മാർട്ട് അസിസ്റ്റന്റ് ആണ്, നിങ്ങളുടെ വ്യക്തിഗത സഹായി! നിങ്ങൾക്ക് ടെക്സ്റ്റ് അല്ലെങ്കിൽ വോയ്‌സ് ഉപയോഗിച്ച് ഇതുമായി ആശയവിനിമയം നടത്താം, ഇത് ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകാനും വിവരങ്ങൾ നൽകാനും നിങ്ങളുടെ വിവരണങ്ങളെ അടിസ്ഥാനമാക്കി ചിത്രങ്ങൾ സൃഷ്ടിക്കാനും സഹായിക്കും.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">ഫയലിംഗ് വിവരം</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">ഓഥെന്റികേഷൻ പരാജയപ്പെട്ടു, ബാലൻസ് പോരാ</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">ഓഥെന്റികേഷൻ പരാജയപ്പെട്ടു, ദിവസേനയുള്ള പരിധി കവിഞ്ഞു</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">നിലവിൽ വളരെയധികം സന്ദർശകരുണ്ട്, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">സേവനം അസാധാരണമാണ്. ട്രബിൾഷൂട്ടിംഗിനായി ദയവായി ഡെവലപ്പ്മെന്റ് ടീമെയ്‌ത് ബന്ധപ്പെടുക.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">പിശക്</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">ശരി</translation>
+        <translation>സെർവറുമായി കണക്ട് ചെയ്യാൻ കഴിഞ്ഞില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
 </context>
 <context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">പ്രത്യേക അറിവ് സഹായിയെ ഉപയോഗിക്കാൻ അറിവ് ബേസ് ക്രമീകരിച്ചതിന് ശേഷം മാത്രമേ സാധ്യമാകൂ.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">പ്രത്യേക അറിവ് സഹായിയെ ഉപയോഗിക്കാൻ മോഡൽ പ്ലഗ് ക്രമീകരിച്ചതിന് ശേഷം മാത്രമേ സാധ്യമാകൂ.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">ഡീപ് സിസ്റ്റം അസിസ്റ്റന്റ് മോഡൽ പ്ലഗ് ക്രമീകരിച്ചതിന് ശേഷം മാത്രമേ ഉപയോഗിക്കാനാകൂ.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">UOS സിസ്റ്റം അസിസ്റ്റന്റ് മോഡൽ പ്ലഗ് ക്രമീകരിച്ചതിന് ശേഷം മാത്രമേ ഉപയോഗിക്കാനാകൂ.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">അറിവ് ബേസ് മാനേജ്മെന്റ്</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">എംസിപി സെർവർ</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI ഉപയോഗിക്കുന്നതിന് മുമ്പ് ഒരു AI മോഡൽ അക്കൗണ്ട് ക്രമീകരിക്കേണ്ടതുണ്ട്. ദയവായി ആദ്യം ഒരു മോഡൽ അക്കൗണ്ട് ക്രമീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">ദയവായി നോളജ് ബേസ് ക്രമീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">ദയവായി മോഡൽ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">ചിത്രം എക്സ്പോർട്ട് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">വിജയകരമായി ക്ലെയിം ചെയ്തു</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">ക്ലെയിം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">നിങ്ങൾക്ക് പരമാവധി 3 ഫയലുകളോ ചിത്രങ്ങളോ അപ്ലോഡ് ചെയ്യാം</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">ഇനിപ്പറയുന്ന ടെക്സ്റ്റ് എനിക്കായി ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">ഇനിപ്പറയുന്ന ഡോക്യുമെന്റ് ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">AI വ്യവസായത്തിൽ “Agent” എന്ന വാക്കിന്റെ അർത്ഥം എന്താണ്?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">ഇനിപ്പറയുന്ന ഉള്ളടക്കം ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക. ആവശ്യകതകൾ: അർത്ഥത്തിൽ കൃത്യത, ഭാഷയിൽ ഔപചാരികതയും പ്രൊഫഷണലിസവും.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">ഇംഗ്ലീഷിൽ ഒരു സുഹൃത്തിനെ സംബോധന ചെയ്യുന്നതിനുള്ള ചില സാമാന്യവാക്കുകൾ എന്തൊക്കെയാണ്?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">ഇനിപ്പറയുന്ന ക്ലാസിക്കൽ ചൈനീസ് ടെക്സ്റ്റ് ആധുനിക ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">ചുരുക്കം</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">തെറ്റുതിരുത്തൽ</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">വികസിപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">തുടരുക</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">മിനുക്കുക</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">ദയവായി ഈ ഡോക്യുമെന്റ് അടിസ്ഥാനമാക്കി ഒരു ജോലി സംഗ്രഹം എഴുതാൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">എനിക്ക് പ്രോജക്റ്റ് A-യ്ക്കായി ഒരു ജോലി സംഗ്രഹം ആവശ്യമാണ്, ദയവായി പ്രധാന പോയിന്റുകൾ ഓർഗനൈസ് ചെയ്യാൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">ദയവായി എന്റെ ഇൻപുട്ട് ടെക്സ്റ്റ് അടിസ്ഥാനമാക്കി ഒരു ചുരുങ്ങിയ ജോലി സംഗ്രഹം സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">ഈ റിപ്പോർട്ട് വിശകലനം ചെയ്ത് ജോലി സംഗ്രഹത്തിനായി പ്രധാന പോയിന്റുകൾ എക്സ്ട്രാക്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">എനിക്ക് ഒരു ജോലി സംഗ്രഹം ആവശ്യമാണ്, ക്വാർട്ടർ ഡാറ്റ ഉൾപ്പെടുത്തി, ദയവായി അറ്റാച്ച്മെന്റ് കാണുക</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">വ്യക്തിപരമായ സംഭാവനകൾ ഹൈലൈറ്റ് ചെയ്തുകൊണ്ട് ഒരു ജോലി സംഗ്രഹം എഴുതാൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">മീറ്റിംഗ് നോട്ടുകളിൽ നിന്ന് ഒരു ജോലി സംഗ്രഹം സൃഷ്ടിക്കുക, ആക്ഷൻ ഇറ്റംസിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">എനിക്ക് ചൈനീസ്, ഇംഗ്ലീഷ് എന്നിവയിൽ ഒരു ബൈലിംഗ്വൽ ജോലി സംഗ്രഹം ആവശ്യമാണ്, ദയവായി നൽകിയിരിക്കുന്ന മെറ്റീരിയലുകൾ കാണുക</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">കഴിഞ്ഞ മാസത്തെ ജോലി ഉള്ളടക്കം ഓർഗനൈസ് ചെയ്യാനും ഒരു സംഗ്രഹം സൃഷ്ടിക്കാനും സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">ഈ ടാസ്ക് ലിസ്റ്റുകൾ അടിസ്ഥാനമാക്കി ഒരു ജോലി സംഗ്രഹം എഴുതുക, പൂർത്തീകരണ സ്റ്റാറ്റസ് ഊന്നിപ്പറയുക</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">ഈ പാസേജിലെ വ്യാകരണ പിശകുകൾ പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">ഈ ആർട്ടിക്കലിലെ സ്പെല്ലിംഗ് തെറ്റുകൾ കണ്ടെത്താൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">ഈ ഡയലോഗിലെ അനുചിതമായ വാക്കുകളുടെ തിരഞ്ഞെടുപ്പ് ശരിയാക്കുക</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">ഈ ഡോക്യുമെന്റിലെ പങ്ക്ചുവേഷൻ പ്രശ്നങ്ങൾ പരിഹരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">ഈ ടെക്സ്റ്റിലെ അസ്പഷ്ടമായ പ്രകടനങ്ങൾ പരിഷ്കരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">ഈ ഇമെയിലിലെ ഭാഷാ പിശകുകൾ എഡിറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">ഈ ടെക്സ്റ്റ് സ്റ്റാൻഡേർഡ് ഇംഗ്ലീഷ് കൺവെൻഷനുകൾ പാലിക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">ഈ റിപ്പോർട്ടിലെ ലോജിക്കൽ ഫ്ലോകൾ ശരിയാക്കുക</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">ഈ കോഡ് കമന്റിലെ ഭാഷാ പിശകുകൾ തിരിച്ചറിയുക</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">ഈ കരാറിലെ അസ്പഷ്ടമായ പ്രസ്താവനകൾ പരിഹരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">ക്വാണ്ടം കമ്പ്യൂട്ടിംഗിന്റെ അടിസ്ഥാന തത്വങ്ങൾ വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">ലളിതമായ പദങ്ങളിൽ ഫോട്ടോസിന്തസിസ് വിവരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">ബ്ലോക്ക്ചെയിൻ ടെക്നോളജി എങ്ങനെ പ്രവർത്തിക്കുന്നുവെന്ന് വിശദമായി വിവരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">ഒരു പ്രൊഫഷണൽ വീക്ഷണകോണിൽ നിന്ന് റിലാറ്റിവിറ്റി വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് എന്താണെന്ന് വിവരിക്കാൻ മെറ്റാഫറുകൾ ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">സാധാരണ മനുഷ്യന്റെ ഭാഷയിൽ കാലാവസ്ഥാ മാറ്റം വിവരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">പ്രാഥമിക വിദ്യാർത്ഥികൾക്ക് സൗരയൂഥത്തിന്റെ ഘടന വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">ഈ ടെക്സ്റ്റ് 300 വാക്കുകളായി വികസിപ്പിക്കുക, സീൻ വിശദാംശങ്ങളിലും കഥാപാത്രങ്ങളുടെ വികാരങ്ങളിലും ശ്രദ്ധ കേന്ദ്രീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">ഈ പാരഗ്രാഫ് 500 വാക്കുകളായി അക്കാദമിക് ശൈലിയിൽ മാറ്റിയെഴുതുക, ഡാറ്റാ പിന്തുണയും ഉദ്ധരണികളും ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">ഈ പാസേജ് കൂടുതൽ രൂപകങ്ങളും റിട്ടോറിക്കൽ ഉപകരണങ്ങളും ഉപയോഗിച്ച് വികസിപ്പിക്കുക, അത് കൂടുതൽ ജീവന്റെ ആവേശം നൽകുന്നതാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">ഈ ചെറിയ ലേഖനം 1000 വാക്കുകളായി വികസിപ്പിക്കുക, പ്രത്യേക കേസുകളും പ്രായോഗിക ഘട്ടങ്ങളും ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">ഈ സംഭാഷണം കഥാപാത്രങ്ങളുടെ മനഃശാസ്ത്രപരമായ പ്രവർത്തനങ്ങളും സംഭാഷണ വിശദാംശങ്ങളും ചേർത്ത് വികസിപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">ഈ ഡോക്യുമെന്റിന്റെ ഉള്ളടക്കം ഒരു റിപ്പോർട്ട് ഫോർമാറ്റിലേക്ക് മാറ്റിയെഴുതുക, അബ്സ്ട്രാക്റ്റ്, ബോഡി, കോൺക്ലൂഷൻ എന്നിവ ഉൾപ്പെടുത്തുക</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">ഈ ടെക്നിക്കൽ വിവരണം 800 വാക്കുകളായി വികസിപ്പിക്കുക, കൂടുതൽ ടെക്നിക്കൽ പാരാമീറ്ററുകളും ഡയഗ്രം വിശദീകരണങ്ങളും ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">ഈ ഇമെയിൽ കൂടുതൽ ഔപചാരികവും പ്രൊഫഷണലുമാക്കി മാറ്റിയെഴുതുക, പ്രസക്തമായ പശ്ചാത്തല വിവരങ്ങൾ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">ഈ കഥ 1500 വാക്കുകളായി വികസിപ്പിക്കുക, കൂടുതൽ പ്ലോട്ട് ട്വിസ്റ്റുകളും കഥാപാത്രങ്ങളുടെ പശ്ചാത്തലങ്ങളും ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">ഈ സംഗ്രഹം വികസിപ്പിക്കുക, പ്രധാന നേട്ടങ്ങളും ഭാവി പദ്ധതികളും ഹൈലൈറ്റ് ചെയ്യുക, വാക്ക് എണ്ണം പരിധിയില്ലാതെ</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">ഭാവി ടെക്നോളജിയെക്കുറിച്ചുള്ള ഈ ചെറിയ പാസേജ് തുടരുക, AI എങ്ങനെ ദൈനംദിന ജീവിതം മാറ്റുന്നു എന്നതിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുക, ഏകദേശം 300 വാക്കുകൾ, പൊതുജന ശാസ്ത്ര ശൈലിയിൽ</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">ഈ ബിസിനസ് പ്ലാനിന്റെ അവസാന പാരഗ്രാഫ് വികസിപ്പിക്കാൻ സഹായിക്കുക, മാർക്കറ്റ് പൊട്ടൻഷ്യലും മത്സരാധികാരങ്ങളും ഊന്നിപ്പറയുക, വാക്ക് പരിധിയില്ല, ഔപചാരിക ശൈലി</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">ഈ ഫെയറി ടെയ്ലിന്റെ അവസാനം തുടരുക, ചൂടും സ്പർശനവും നിറഞ്ഞതാക്കുക, പ്രധാന കഥാപാത്രം അവരുടെ സ്വപ്നം നേടുന്നു, ഏകദേശം 200 വാക്കുകൾ</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">ഈ ഇമെയിലിന്റെ രണ്ടാം പകുതി എഴുതുക, സൗഹൃദവും പ്രൊഫഷണലുമായ ടോൺ, സഹകരണ വിശദാംശങ്ങളിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുക, 150 വാക്കുകൾക്കുള്ളിൽ</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">ഈ ട്രാവലോഗിന്റെ അടുത്ത പാരഗ്രാഫ് വികസിപ്പിക്കുക, താഴ്വരയിലെ ദൃശ്യം വിവരിക്കുക, ജീവന്റെ ആവേശം നൽകുന്നതും സാങ്കൽപ്പികവുമാക്കുക, ഏകദേശം 200 വാക്കുകൾ</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">ഈ മിസ്റ്ററി നോവലിന്റെ അടുത്ത അധ്യായം തുടരുക, ഒരു പ്ലോട്ട് ട്വിസ്റ്റ് ഉപയോഗിച്ച്, സസ്പെൻസ് നിലനിർത്തുക, വാക്ക് പരിധിയില്ല</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">ഈ സ്പീച്ചിന്റെ ഉപസംഹാരം എഴുതാൻ സഹായിക്കുക, പ്രചോദനപരവും ടീം വർക്ക് ഊന്നിപ്പറയുന്നതും, ഏകദേശം 100 വാക്കുകൾ</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">ഈ ഉൽപ്പന്ന മാനുവലിന്റെ പ്രകടന വിവരണ വിഭാഗം വികസിപ്പിക്കുക, വിശദവും കൃത്യവുമാക്കുക, ഏകദേശം 300 വാക്കുകൾ</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">ഈ ലൗ സ്റ്റോറിയുടെ ആരംഭം തുടരുക, മഴയുള്ള പാരീസിൽ സെറ്റ് ചെയ്തിരിക്കുന്നു, റൊമാന്റിക് ശൈലി, 150 വാക്കുകൾ</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">ഈ പേപ്പറിന്റെ ഡിസ്കഷൻ സെക്ഷൻ എഴുതുക, പരീക്ഷണ ഫലത്തിന്റെ പരിമിതികളിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുക, അക്കാദമിക് ശൈലി, വാക്ക് പരിധിയില്ല</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">ഈ ടെക്സ്റ്റ് പോളിഷ് ചെയ്യുക, ഒരു ബിസിനസ് ഇമെയിലിനായി കൂടുതൽ ഔപചാരികവും പ്രൊഫഷണലുമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">ഈ പാസേജ് മാറ്റിയെഴുതുക, സോഷ്യൽ മീഡിയ പോസ്റ്റുകൾക്കായി കൂടുതൽ ജീവനുള്ളതും ആകർഷകവുമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">ഈ അക്കാദമിക് പേപ്പറിന്റെ അബ്സ്ട്രാക്റ്റ് റിഫൈൻ ചെയ്യേണ്ടതുണ്ട്, 200 വാക്കുകൾക്കുള്ളിൽ കൂടുതൽ ചുരുങ്ങിയതും വ്യക്തവുമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">ഈ സംഭാഷണം പോളിഷ് ചെയ്യുക, സ്പോക്കൺ കമ്യൂണിക്കേഷനായി കൂടുതൽ സ്വാഭാവികവും സുഗമവുമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">ഈ ഉൽപ്പന്ന വിവരണം മെച്ചപ്പെടുത്തുക, സാധ്യതയുള്ള ഉപഭോക്താക്കൾക്കായി അതിന്റെ പ്രീമിയം, നൂതന സവിശേഷതകൾ ഹൈലൈറ്റ് ചെയ്യാൻ</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">ഈ കവർ ലെറ്റർ പോളിഷ് ചെയ്യാൻ സഹായിക്കുക, കൂടുതൽ പ്രേരണാത്മകവും വ്യക്തിപരവുമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">ഈ ബ്ലോഗ് പോസ്റ്റ് മാറ്റിയെഴുതുക, യുവ വായനക്കാർക്കായി കൂടുതൽ ഹാസ്യവും ആകർഷകവുമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">ഈ റിപ്പോർട്ടിന്റെ ഓപ്പണിംഗ് സെക്ഷൻ റിഫൈൻ ചെയ്യുക, കൂടുതൽ ആകർഷകമാക്കാൻ</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">വിദഗ്ധരല്ലാത്തവർക്ക് എളുപ്പത്തിൽ മനസ്സിലാക്കാൻ ഈ സാങ്കേതിക രേഖ ഞാൻ മെച്ചപ്പെടുത്തേണ്ടതുണ്ട്</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">ദയവായി ഈ ക്ഷമാപണ ലേഖനം കൂടുതൽ ആത്മാർത്ഥവും ഉചിതവുമാക്കി മാറ്റാൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">ലേഖനങ്ങൾ</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">പ്രസംഗങ്ങൾ</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">രൂപരേഖകൾ</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">അറിയിപ്പുകൾ</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">പോസ്റ്റുകൾ</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">ജോലി റിപ്പോർട്ട്</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">ഗവേഷണ റിപ്പോർട്ട്</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">ദയവായി ഈ രേഖയുടെ പ്രധാന പോയിന്റുകൾ സംഗ്രഹിക്കുക</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">ഈ ഫയലിന്റെ പ്രധാന ആശയങ്ങൾ എനിക്കായി ലിസ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">ഈ ഖണ്ഡികയുടെ കോർ ആശയം സംഗ്രഹിക്കുക</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">ഈ ലേഖനം സംഗ്രഹിക്കാൻ ലാളിത്യമുള്ള ഭാഷ ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">ഈ റിപ്പോർട്ടിന്റെ ഒരു സംഗ്രഹം എനിക്ക് ആവശ്യമാണ്, 200 വാക്കിൽ കൂടരുത്</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">ഈ രേഖയിൽ നിന്ന് പ്രധാന ഡാറ്റയും നിഗമനങ്ങളും എടുക്കുക</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">ഈ നീളമുള്ള ഉള്ളടക്കത്തിന്റെ പ്രധാന വിഭാഗങ്ങളും പോയിന്റുകളും സംഗ്രഹിക്കുക</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">ഈ പേപ്പറിന്റെ ഗവേഷണ രീതികളും കണ്ടെത്തലുകളും സംഗ്രഹിക്കാൻ എന്നെ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">ദയവായി ഈ ലേഖനത്തിന്റെ പ്രധാന പോയിന്റുകൾ ഒരു ടേബിൾ ഫോർമാറ്റിൽ സംഗ്രഹിക്കുക</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">ബുള്ളറ്റ് പോയിന്റുകൾ ഉപയോഗിച്ച് ഈ ഫയലിലെ ഓപ്പറേഷണൽ ഘട്ടങ്ങൾ സംഗ്രഹിക്കുക</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">ഈ കരാറിലെ പ്രധാന ക്ലോസുകൾ ബുള്ളറ്റ് ലിസ്റ്റ് ഫോർമാറ്റിൽ പ്രദർശിപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">ടെക്നോളജി, എത്തിക്സ്, ആപ്ലിക്കേഷനുകൾ എന്നിവ ഉൾക്കൊള്ളുന്ന AI ട്രെൻഡുകളെക്കുറിച്ചുള്ള ഒരു റിപ്പോർട്ടിനായി ഒരു രൂപരേഖ സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">അപ്ലോഡ് ചെയ്ത പേപ്പർ ഒരു ഘടനാപരമായ ഗവേഷണ ഫ്രെയിംവർക്ക് രൂപരേഖയായി ഓർഗനൈസ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">മാർക്കറ്റ് അനാലിസിസ്, പ്രോഡക്റ്റ് ഡിസ്ക്രിപ്ഷൻ, ഫിനാൻഷ്യൽ പ്ലാനിംഗ് എന്നിവ ഉൾക്കൊള്ളുന്ന ഒരു ബിസിനസ് പ്ലാൻ രൂപരേഖ എനിക്ക് ആവശ്യമാണ്</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">ഈ പ്രസംഗം ഓരോ വിഭാഗത്തിനും ബുള്ളറ്റ് പോയിന്റുകളുള്ള ഒരു PowerPoint രൂപരേഖയാക്കി മാറ്റുക</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">പ്രധാന പോയിന്റുകളും എന്റെ വ്യക്തിപരമായ പ്രതിഫലനങ്ങളും ഉൾക്കൊള്ളുന്ന ഒരു പുസ്തക സംഗ്രഹ രൂപരേഖ എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">മീറ്റിംഗ് നോട്ടുകളുടെ ഫയൽ ഒരു പ്രോജക്റ്റ് എക്സിക്യൂഷൻ പ്ലാൻ രൂപരേഖയായി സംഗ്രഹിക്കുക</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">ആമുഖം, സാഹിത്യ അവലോകനം, മെത്തഡോളജി എന്നിവ ഉൾക്കൊള്ളുന്ന ഒരു തീസിസ് ചാപ്റ്റർ രൂപരേഖ എനിക്ക് ആവശ്യമാണ്</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">ഫീച്ചർ ഡിസ്ക്രിപ്ഷനുകളും യൂസർ ഫ്ലോകളും ഉൾക്കൊള്ളുന്ന ഒരു പ്രോഡക്റ്റ് റിക്വയർമെന്റ്സ് ഡോക്യുമെന്റ് (PRD) രൂപരേഖ സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">ഒരു സംഗ്രഹ രൂപരേഖ ഉണ്ടാക്കാൻ ഈ ഇൻഡസ്ട്രി റിപ്പോർട്ടിൽ നിന്ന് പ്രധാന ഡാറ്റ എടുക്കുക</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">ഷെഡ്യൂൾ, ടീം റോളുകൾ, ബജറ്റ് എന്നിവ ഉൾക്കൊള്ളുന്ന ഒരു ഇവന്റ് പ്ലാനിംഗ് രൂപരേഖ എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">ഈ ഡോക്യുമെന്റിൽ നിന്ന് മൂന്ന് ലെവൽ ഔട്ട്ലൈൻ സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">മീറ്റിംഗ് നോട്ടുകളിൽ നിന്ന് കോർ ഫ്രെയിംവർക്ക് എക്സ്ട്രാക്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">ഗവേഷണ റിപ്പോർട്ട് ഘടന ഓർഗനൈസ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">ഉൽപ്പന്ന സവിശേഷതകളുടെ അവലോകനം സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">പരിശീലന കോഴ്സ് സിലബസ് രൂപകൽപ്പന ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">സാഹിത്യ അവലോകന ഫ്രെയിംവർക്ക് വിശകലനം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">ബിസിനസ് പ്ലാനിന്റെ ഉള്ളടക്ക പട്ടിക സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">ഇവന്റ് പ്ലാനിംഗ് ഫ്ലോ പോയിന്റുകൾ എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">പ്രോജക്റ്റ് പുരോഗതി റിപ്പോർട്ടിംഗ് സംബന്ധിച്ച് നാളെ ഉച്ചയ്ക്ക് 3 മണിക്ക് കോൺഫറൻസ് റൂം A-യിൽ ഒരു മീറ്റിംഗ് നോട്ടീസ് എഴുതാൻ എന്നെ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">ഡെഡ്ലൈനും സമർപ്പണ രീതിയും ഹൈലൈറ്റ് ചെയ്തുകൊണ്ട് ഈ ഡോക്യുമെന്റിനെ അടിസ്ഥാനമാക്കി ഒരു ചുരുങ്ങിയ നോട്ടീസ് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">ഫെബ്രുവരി 10 മുതൽ 17 വരെ സ്പ്രിംഗ് ഫെസ്റ്റിവൽ അവധി ആയി ഫെബ്രുവരി 18-ന് ജോലി പുനരാരംഭിക്കുന്നതിനുള്ള ഒരു അവധി നോട്ടീസ് ഡ്രാഫ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">അടുത്ത ബുധനാഴ്ച ദിവസം മുഴുവൻ കമ്പനി ഓഡിറ്റോറിയത്തിൽ സ്റ്റാഫ് പരിശീലനത്തിനായി ഒരു പ്രവർത്തന നോട്ടീസ് എനിക്ക് ആവശ്യമാണ്</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">നൽകിയിരിക്കുന്ന ടെക്സ്റ്റ് മെറ്റീരിയലുകൾ സ്റ്റാൻഡേർഡ് ഫോർമാറ്റിംഗും പ്രൊഫഷണൽ ടോണും ഉള്ള ഒരു ഫോർമൽ നോട്ടീസായി ഫോർമാറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">ഈ ശനിയാഴ്ച രാവിലെ 9 മുതൽ വൈകുന്നേരം 5 വരെ മുഴുവൻ ഓഫീസ് കെട്ടിടത്തെയും ബാധിക്കുന്ന പവർ ഔട്ടേജ് നോട്ടീസ് എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">യഥാർത്ഥ സമയം വെള്ളിയാഴ്ച രാവിലെ 10 ആയി മാറ്റി മറ്റ് വിശദാംശങ്ങൾ അതേപടി നിലനിർത്തി ഒരു മീറ്റിംഗ് മാറ്റം നോട്ടീസ് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">അറ്റാച്ച് ചെയ്ത മീറ്റിംഗ് മിനിറ്റുകളെ അടിസ്ഥാനമാക്കി ഹാജരാകാത്ത പങ്കാളികൾക്കായി ഒരു ചുരുങ്ങിയ നോട്ടീസ് തയ്യാറാക്കുക</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">ഇന്ന് രാത്രി അർദ്ധരാത്രി മുതൽ രാവിലെ 3 വരെ സിസ്റ്റം ഡൗൺടൈം ഉള്ള ഒരു സിസ്റ്റം അപ്ഗ്രേഡ് നോട്ടീസ് ഡ്രാഫ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">ഡ്യൂട്ടിയിലുള്ള സ്റ്റാഫും കോൺടാക്റ്റ് വിവരങ്ങളും ലിസ്റ്റ് ചെയ്തുകൊണ്ട് ഒരു ചുരുങ്ങിയ അവധി ഡ്യൂട്ടി ക്രമീകരണ നോട്ടീസ് എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">പൊതു വായനക്കാർക്കായി ലളിതമായ ഭാഷയിൽ ആരോഗ്യകരമായ ഭക്ഷണത്തെക്കുറിച്ച് ഒരു പബ്ലിക് ഹെൽത്ത് ലേഖനം എഴുതാൻ എന്നെ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">ഈ ഡോക്യുമെന്റിനെ അടിസ്ഥാനമാക്കി ഒരു രസകരവും ആകർഷകവുമായ ടെക് ട്രെൻഡ് പോസ്റ്റ് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">ഡിസ്കൗണ്ടുകളും ഇവന്റ് ഷെഡ്യൂളും ഹൈലൈറ്റ് ചെയ്തുകൊണ്ട് ഒരു അവധി പ്രൊമോഷൻ പോസ്റ്റ് ഡ്രാഫ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">സവിശേഷതകളും ഉപഭോക്തൃ അവലോകനങ്ങളും ശ്രദ്ധിച്ചുകൊണ്ട് ഒരു ഉൽപ്പന്ന ലോഞ്ച് ലേഖനം എനിക്ക് ആവശ്യമാണ്</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">ഈ ഇന്റർവ്യൂ ട്രാൻസ്ക്രിപ്റ്റ് ഒരു കാഷ്വൽ പേഴ്സണാലിറ്റി പ്രൊഫൈൽ പോസ്റ്റാക്കി മാറ്റുക</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">പ്രായോഗിക ടിപ്പുകളുമായി മൂന്ന് ജനപ്രിയ സ്ഥലങ്ങൾ ശുപാർശ ചെയ്യുന്ന ഒരു ട്രാവൽ ഗൈഡ് എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">കമ്പനിയുടെ ചരിത്രം അവലോകനം ചെയ്ത് ഉപഭോക്താക്കൾക്ക് നന്ദി പറഞ്ഞുകൊണ്ട് ഒരു വാർഷിക പോസ്റ്റ് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">ഒരു ഉൾക്കാഴ്ചയുള്ള പോസ്റ്റിനായി വിഷ്വലൈസ്ഡ് ഡാറ്റ ഉപയോഗിച്ച് ഈ ഇൻഡസ്ട്രി റിപ്പോർട്ട് വിശകലനം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">വ്യക്തമായ നിർദ്ദേശങ്ങളോടെ പങ്കാളിത്തം പ്രോത്സാഹിപ്പിക്കുന്ന ഒരു ചാരിറ്റി കാമ്പെയ്ൻ പോസ്റ്റ് ഡ്രാഫ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">അഞ്ച് പ്രായോഗിക ടിപ്പുകളും യഥാർത്ഥ ഉദാഹരണങ്ങളും ഉള്ള ഒരു കരിയർ സ്കിൽസ് ലേഖനം എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">പ്രോജക്റ്റ് പുരോഗതിയും ടീം സഹകരണവും ശ്രദ്ധിച്ചുകൊണ്ട് ഒരു ആഴ്ചതോറും ജോലി സംഗ്രഹം എഴുതാൻ എന്നെ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">ഞാൻ അപ്ലോഡ് ചെയ്ത മീറ്റിംഗ് നോട്ടുകളുടെ ഫയലിനെ അടിസ്ഥാനമാക്കി ഒരു ചുരുങ്ങിയ ജോലി സംഗ്രഹം സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">ഒരു ത്രൈമാസിക ജോലി സംഗ്രഹം വേണം; ഡാറ്റ വിശകലനവും വ്യക്തിഗത വളർച്ചാ ആത്മപരിശോധനയും ഉൾപ്പെടണം</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">താഴെക്കാണുന്ന ടെക്സ്റ്റിന്റെ അടിസ്ഥാനത്തിൽ ഒരു ജോലി സംഗ്രഹം തയ്യാറാക്കുക [ടെക്സ്റ്റ് പേസ്റ്റ് ചെയ്യുക]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">ഈ മാസത്തെ KPI നേട്ടങ്ങളും നേരിട്ട വെല്ലുവിളികളും എടുത്തുപറയുന്ന ഒരു ജോലി സംഗ്രഹം എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">പ്രോജക്ടുകൾ അനുസരിച്ച് കഴിഞ്ഞ ആഴ്ചയിലെ ജോലി സംഗ്രഹിക്കാൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">ഇമെയിൽ ഉള്ളടക്കത്തിൽ നിന്ന്, തീർച്ചപ്പെടേണ്ട ജോലികളും പൂർത്തിയായവയും എടുത്തുപറയുന്ന ഒരു ജോലി സംഗ്രഹം സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">ഒരു വാർഷിക സംഗ്രഹം വേണം; ജോലിയിലെ പ്രധാന നേട്ടങ്ങളും മെച്ചപ്പെടുത്തൽ പദ്ധതികളും ഉൾപ്പെടണം</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">ഞാൻ അപ്ലോഡ് ചെയ്ത ഡാറ്റയിൽ നിന്ന് ഒരു മാസിക ജോലി റിപ്പോർട്ട് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">ചിതറിക്കിടക്കുന്ന ജോലി കുറിപ്പുകൾ ക്രമപ്പെടുത്തി ഘടനാപരമായ ഒരു ജോലി സംഗ്രഹമാക്കാൻ സഹായിക്കുക</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">അപ്ലോഡ് ചെയ്ത ഡാറ്റ വിശകലനം ചെയ്ത് ഒരു വിപണി ട്രെൻഡ് റിപ്പോർട്ട് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">ടെക്സ്റ്റിൽ നിന്ന് പ്രധാന വിവരങ്ങൾ പുറത്തെടുത്ത് ഒരു വ്യവസായ വിശകലന റിപ്പോർട്ട് തയ്യാറാക്കുക</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">ഫയലിന്റെ ഉള്ളടക്കം ചേർത്ത് മത്സരിയായ ഗവേഷണ റിപ്പോർട്ട് എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">നൽകിയ ഇന്റർവ്യൂ രേഖകൾ അടിസ്ഥാനമാക്കി ഉപയോക്തൃ ആവശ്യ ഗവേഷണ സംക്ഷേപം സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">ഈ വിൽപ്പന ഡാറ്റ വിശകലനം ചെയ്ത് ത്രൈമാസ വിപണി പ്രകടന റിപ്പോർട്ട് തയാറാക്കുക</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">നൽകിയ ഉൽപ്പന്ന വിവരണത്തെ അടിസ്ഥാനമാക്കി സാങ്കേതിക ഗവേഷണ റിപ്പോർട്ട് എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">ഈ ഉപയോക്തൃ അഭിപ്രായങ്ങൾ ക്രമീകരിച്ച് ഉൽപ്പന്ന മെച്ചപ്പെടുത്തൽ നിർദ്ദേശ റിപ്പോർട്ട് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">ദയവായി നൽകിയ ഫയലിനെ അടിസ്ഥാനമാക്കി വിപണി അവസര വിശകലന റിപ്പോർട്ട് എഴുതുക</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="obsolete">[%1] എന്ന വിഷയത്തിൽ [വ്യക്തമായ ഘടനയും സമ്പന്നമായ ഉള്ളടക്കവും] ഉള്ള ഒരു ലേഖനം എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="obsolete">[%1] എന്ന വിഷയത്തിൽ [വ്യക്തമായ ഘടന] ഉം [സുഖകരമായ] ശൈലിയും ആവശ്യമുള്ള ഒരു പൊതു ട്വീറ്റ് എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="obsolete">എന്റെ സമീപകാല ജോലിയുടെ ഒരു സംഗ്രഹം എഴുതാൻ എന്നെ സഹായിക്കുക, [%1], [ഫലങ്ങൾ] എന്നിവ ഉൾപ്പെടുത്തി, [ഔപചാരികമായ] ശൈലി ആവശ്യമാണ്.</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="obsolete">[%1] എന്നതിനെക്കുറിച്ച് ഒരു ഗവേഷണ റിപ്പോർട്ട് എഴുതാൻ എന്നെ സഹായിക്കുക, കുറഞ്ഞത് [സ്ഥിതി വിവരണം, പ്രശ്ന വിശകലനം, പ്രതിവിധികളും നിർദ്ദേശങ്ങളും, ഗവേഷണ നിഗമനങ്ങൾ] ഉൾപ്പെടുത്തണം.</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="obsolete">കൃത്രിമബുദ്ധി</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="obsolete">[%1] എന്ന വിഷയത്തിൽ [കമ്പനി നേതാക്കൾക്കായി] [വ്യക്തമായ ഘടനയും ജീവന്റെ ഭാഷയും] ആവശ്യമുള്ള ഒരു പ്രസംഗം എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="obsolete">[%1] എന്ന വിഷയത്തിൽ [PPT നിർമ്മാണത്തിന്] ഉപയോഗിക്കാവുന്ന ഒരു ഔട്ലൈൻ എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="obsolete">[%1] എന്നതിനെക്കുറിച്ച് ഒരു നോട്ടീസ് എഴുതാൻ എന്നെ സഹായിക്കുക, സ്വീകർത്താവ് [എല്ലാ ജീവനക്കാരും], അയച്ചയാൾ [അഡ്മിനിസ്ട്രേഷൻ ഡിപ്പാർട്ട്മെന്റ്].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="obsolete">ദേശീയ ദിന അവധി</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="obsolete">ജോലിയുടെ ഉള്ളടക്കം</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---പങ്ക്---\n\nനിങ്ങൾ പശ്ചാത്തല അറിവിനെക്കുറിച്ചുള്ള ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുന്ന സഹായിയായ സഹായിയാണ്.\n\n---ലക്ഷ്യം---\n\nഉപയോക്താക്കളുടെ ചോദ്യങ്ങൾക്ക് പ്രസക്തമായ സാമാന്യബോധം ചേർത്ത് പ്രതികരിക്കുക. ഉത്തരം അറിയില്ലെങ്കിൽ, അത്രയും പറയുക. നിർമ്മിക്കരുത്.\n\n---അറിവ്---\n\n%1\n\n---ചോദ്യം---\n\n%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">---പങ്ക്---\n\nനിങ്ങൾ വിവിധ എഴുത്ത് ശൈലികളിലും ഫോർമാറ്റുകളിലും വിദഗ്ധനായ പ്രൊഫഷണൽ എഴുത്തുകാരനാണ്.\n\n---ലക്ഷ്യം---\n\nഉപയോക്താവിന്റെ അഭ്യർത്ഥനയെ അടിസ്ഥാനമാക്കി അവരുടെ പ്രത്യേക ആവശ്യങ്ങൾ നിറവേറ്റുന്ന ഉയർന്ന നിലവാരമുള്ള ഉള്ളടക്കം സൃഷ്ടിക്കുക.\n\n---എഴുത്ത് തരങ്ങൾ---\n\n1. ലേഖനം: വ്യക്തമായ വാദങ്ങളും ആകർഷകമായ ഉള്ളടക്കവുമുള്ള നന്നായി ഘടനപ്പെടുത്തിയ ലേഖനങ്ങൾ എഴുതുക\n2. പ്രസംഗങ്ങൾ: ശരിയായ തുടക്കം, ശരീരഭാഗം, ഉപസംഹാരമുള്ള ആകർഷകമായ പ്രസംഗങ്ങൾ സൃഷ്ടിക്കുക\n\n3. ഔട്ട്‌ലൈനുകൾ: നൽകിയ വിഷയത്തിനായി ഘടനാപരമായ ഔട്ട്‌ലൈൻ സൃഷ്ടിക്കുക\n4. അറിയിപ്പുകൾ: ഔദ്യോഗിക അറിയിപ്പുകൾ അല്ലെങ്കിൽ പ്രഖ്യാപനങ്ങൾ എഴുതുക\n5. പോസ്റ്റുകൾ: ആകർഷകമായ സോഷ്യൽ മീഡിയ ഉള്ളടക്കം സൃഷ്ടിക്കുക\n6. ജോലി റിപ്പോർട്ട്: സമഗ്രമായ ജോലി റിപ്പോർട്ടുകൾ എഴുതുക\n7. ഗവേഷണ റിപ്പോർട്ട്: വിശദമായ ഗവേഷണ റിപ്പോർട്ടുകൾ സൃഷ്ടിക്കുക\n---ഇൻപുട്ട്---\n\n%1\n\n---ഔട്ട്പുട്ട് ഫോർമാറ്റ്---\n\nദയവായി താഴെ പറയുന്ന ഫോർമാറ്റിൽ ഉള്ളടക്കം നൽകുക:\nTitle:\nContent:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---പങ്ക്---\n\nനിങ്ങൾ ഭാഷാ വിശകലനം, എഴുത്ത് സാങ്കേതികത, ടെക്സ്റ്റ് ഒപ്റ്റിമൈസേഷൻ എന്നിവയിൽ ആഴമുള്ള വിദഗ്ധതയുള്ള ടെക്സ്റ്റ് പ്രോസസ്സിംഗ് വിദഗ്ധനാണ്.\n\n---ലക്ഷ്യം---\n\nഅതിന്റെ യഥാർത്ഥ അർത്ഥവും ശൈലിയും നിലനിർത്തിക്കൊണ്ട് ഇൻപുട്ട് ടെക്സ്റ്റ് പ്രോസസ്സ് ചെയ്യുകയും മെച്ചപ്പെടുത്തുകയും ചെയ്യുക.\n\n---പ്രോസസ്സിംഗ് തരങ്ങൾ---\n\n1. സംക്ഷേപം: പ്രധാന പോയിന്റുകളുടെ ലഘുവായ സംക്ഷേപം സൃഷ്ടിക്കുക\n2. പ്രൂഫ് റീഡ്: വ്യാകരണപരമായ, വ്യാകരണപരമായ, ശൈലീപരമായ പിശകുകൾ കണ്ടെത്തി പരിഹരിക്കുക\n3. വിശദീകരിക്കുക: സങ്കീർണ്ണമായ ആശയങ്ങളോ ഭാഗങ്ങളോ വിശദമായി വിശദീകരിക്കുക\n4. വികസിപ്പിക്കുക: യഥാർത്ഥ ശൈലി നിലനിർത്തിക്കൊണ്ട് പ്രധാന പോയിന്റുകൾ വിശദമാക്കുക\n5. തുടരുക: ഏകോപിതവും സ്വാഭാവികവുമായ രീതിയിൽ ടെക്സ്റ്റ് തുടരുക\n6. പോളിഷ് ചെയ്യുക: അതിന്റെ അന്തസ്സ് നിലനിർത്തിക്കൊണ്ട് ടെക്സ്റ്റിന്റെ വ്യക്തത, ഒഴുക്ക്, പ്രഭാവം മെച്ചപ്പെടുത്തുക\n\n---ഇൻപുട്ട്---\n\n%1\n\n---ഔട്ട്പുട്ട് ഫോർമാറ്റ്---\n\nദയവായി അധിക ക്യാരക്ടറുകളോ ഫോർമാറ്റിംഗോ ഇല്ലാതെ പ്രോസസ്സ് ചെയ്ത ടെക്സ്റ്റ് നേരിട്ട് നൽകുക.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---പങ്ക്---\n\nനിങ്ങൾ പ്രൊഫഷണൽ പരിഭാഷകനും ഭാഷാ വിദഗ്ധനുമാണ്. നിങ്ങളുടെ ദൗത്യം:\n\n1. അഭ്യർത്ഥിച്ചപോലെ കൃത്യമായി ടെക്സ്റ്റ് പരിഭാഷപ്പെടുത്തുക\n2. ഭാഷാ ബന്ധിതമായ ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുക\n3. പ്രത്യേക പരിഭാഷാ അഭ്യർത്ഥനകൾ തിരിച്ചറിയുകയും കൈകാര്യം ചെയ്യുകയും ചെയ്യുക\n\n---ലക്ഷ്യം---\n\nഉപയോക്താവിന്റെ ഇൻപുട്ട് ശ്രദ്ധാപൂർവ്വം വിശകലനം ചെയ്ത് അവരുടെ ഉദ്ദേശ്യം നിർണ്ണയിക്കുക:\n\n1. ഇൻപുട്ടിൽ &apos;എന്താണ് ഇതിന്റെ അർത്ഥം&apos;, &apos;ഈ വാക്യം വിശദീകരിക്കൂ&apos;, അല്ലെങ്കിൽ സമാനമായ വാക്യങ്ങൾ ഉണ്ടെങ്കിൽ - ഭാഷാ വിശദീകരണം മാത്രം നൽകുക (പരിഭാഷയില്ല)\n2. ഇൻപുട്ട് പ്രത്യേക വാക്യം/അനുച്ഛേദം പരിഭാഷപ്പെടുത്താൻ വ്യക്തമാക്കിയിട്ടുണ്ടെങ്കിൽ (ഉദാ. &apos;ഈ വാക്യം പരിഭാഷപ്പെടുത്തൂ:...&apos;) - വ്യക്തമാക്കിയ ഭാഗം മാത്രം പരിഭാഷപ്പെടുത്തുക (പൂർണ്ണ പരിഭാഷയില്ല)\n3. പ്രത്യേക അഭ്യർത്ഥന കണ്ടെത്താനാകാത്തപ്പോൾ മാത്രം ചൈനീസ്-ഇംഗ്ലീഷ് ഇടയിൽ പൂർണ്ണ പരിഭാഷ നടത്തുക\n\nഎപ്പോഴും യഥാർത്ഥ അർത്ഥം, ടോൺ, ശൈലി എന്നിവ നിലനിർത്തുക. പരിഭാഷകൾക്കായി:\n\n- ചൈനീസ് → ഇംഗ്ലീഷ്\n- ഇംഗ്ലീഷ് → ചൈനീസ്\n\nഭാഷാ ചോദ്യങ്ങൾക്കായി, വ്യക്തവും ലഘുവുമായ വിശദീകരണങ്ങൾ നൽകുക.\n\n---ഇൻപുട്ട്---\n\n%1\n\n---ഔട്ട്പുട്ട് ഫോർമാറ്റ്---\n\n1. പൂർണ്ണ പരിഭാഷകൾക്കായി: അധിക ഫോർമാറ്റിംഗ് ഇല്ലാതെ പരിഭാഷ മാത്രം നൽകുക\n2. ഭാഗിക പരിഭാഷകൾക്കായി: വ്യക്തമാക്കിയ ഭാഗത്തിന്റെ പരിഭാഷ മാത്രം നൽകുക\n3. വിശദീകരണങ്ങൾക്കായി: ചോദ്യത്തിന്റെ അതേ ഭാഷയിൽ വിശദീകരണം മാത്രം നൽകുക\n\nവിശദീകരണവും പരിഭാഷയും ഒരുമിച്ച് നൽകരുത് അല്ലെങ്കിൽ ഭാഗിക പരിഭാഷയ്ക്ക് ശേഷം പൂർണ്ണ പരിഭാഷ നൽകരുത്</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">UOS സ്ക്രീൻ റെക്കോർഡർ 6.6 അല്ലെങ്കിൽ പുതിയ 버ഷനിലേക്ക് അപ്ഡേറ്റ് ചെയ്ത് സ്ക്രീൻഷോട്ട് Q&amp;A പ്രവർത്തനക്ഷമമാക്കാൻ കമ്പ്യൂട്ടർ റീസ്റ്റാർട്ട് ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">നിങ്ങൾക്ക് 3 ഫയലുകൾ മാത്രമേ ചേർക്കാൻ കഴിയൂ, പിന്തുണയുള്ള ഫയൽ തരങ്ങൾ: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, കോഡ് ഫയലുകൾ തുടങ്ങിയവ.</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">MCP സെർവർ</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">മോഡൽ കോൺഫിഗറേഷൻ</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">കോൺഫിഗറേഷനിലേക്ക് പോകുക</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">അക്കൗണ്ട് ഇല്ല</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">ഇൻപുട്ട് ചോദ്യം</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">AI ഉൽപ്പാദിപ്പിച്ച ഉള്ളടക്കം റഫറൻസിന് മാത്രമാണ്, ദയവായി വിവരങ്ങളുടെ കൃത്യതയിൽ ശ്രദ്ധിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">UOS AI-യിലേക്ക് സ്വാഗതം</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">UOS AI നിങ്ങളെ സഹായിക്കാൻ കഴിയുന്ന ചില കാര്യങ്ങൾ ഇതാ</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">നിർത്തുക</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">പുനരുപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">സംഭാഷണ ചരിത്രം മായ്ക്കുക</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">ദയവായി മൈക്രോഫോൺ കണക്റ്റ് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">ചാറ്റ് ചരിത്രം മായ്ച്ചു</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">റെക്കോർഡിംഗ് ആരംഭിക്കാൻ/നിർത്താൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">കേൾക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">ഉറങ്ങുന്നു</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">മൈക്രോഫോൺ കണ്ടെത്തിയില്ല</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">കണക്ഷൻ പരാജയപ്പെട്ടു, വീണ്ടും ശ്രമിക്കാൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">ആക്ടിവേറ്റ് ചെയ്യാൻ ആനിമേഷനിൽ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Ctrl+Super+Space</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">വോയ്സ് ഇൻപുട്ട് താൽക്കാലികമായി ലഭ്യമല്ല, ദയവായി നെറ്റ്വർക്ക് പരിശോധിക്കുക!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">സെർവറിലേക്ക് കണക്റ്റ് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">വോയ്സ് സംഭാഷണം</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">അയയ്ക്കാൻ ആനിമേഷൻ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Enter അമർത്തുക</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">%1 സെക്കൻഡ് കഴിഞ്ഞ് റെക്കോർഡിംഗ് നിർത്തുക</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">ചിന്തിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">ഇന്ററപ്റ്റ് ചെയ്യാൻ ആനിമേഷൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">ഉത്തരം നൽകുന്നു</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ട് ക്വോട്ട ഉപയോഗിച്ചു കഴിഞ്ഞു, ഇത് തുടരുവാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ട് കാലഹരണപ്പെട്ടു, ഇത് തുടരുവാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI ഉപയോഗിക്കുന്നതിന് മുമ്പ് ഒരു AI മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആദ്യം ഒരു മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">സജീവമാക്കുക</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">വോയ്സ് ഇൻപുട്ട്</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">വോയ്സ് ബ്രോഡ്കാസ്റ്റ് താത്കാലികമായി ലഭ്യമല്ല, ദയവായി നെറ്റ്വർക്ക് പരിശോധിക്കുക!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">വോയ്സ് സംഭാഷണം ഓഫ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">ചിത്രം ജനറേറ്റ് ചെയ്തിരിക്കുന്നു, ഇത് കാണുന്നതിന് ദയവായി ചാറ്റ് ഇന്റർഫേസിലേക്ക് മാറുക.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">അക്കൗണ്ട് ഇല്ല, ദയവായി ഒരു അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">ഓരോ ചോദ്യത്തിനും 5 തവണ വരെ ഉത്തരം നൽകുക</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">വിജയകരമായി പകർത്തി</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">ശബ്ദ ഔട്ട്പുട്ട് ഉപകരണം കണ്ടെത്തിയില്ല</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">ശബ്ദ ഔട്ട്പുട്ട് ഉപകരണം കണ്ടെത്തിയില്ല, ദയവായി പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">ക്രമീകരണങ്ങൾ</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">വിവരങ്ങൾ</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">മോഡ്</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">വിൻഡോ മോഡ്</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">സൈഡ്ബാർ മോഡ്</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">അസിസ്റ്റന്റ് ലിസ്റ്റ്</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">ഏജന്റ് ലിസ്റ്റ്</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">ഏജന്റ് സ്റ്റോർ</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">ദയവായി അറിവ് ബേസ് കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">[വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്] ഉപയോഗിക്കുന്നതിന് മുമ്പ് അറിവ് ബേസ് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്. അറിവ് ബേസ് കോൺഫിഗർ ചെയ്ത ശേഷം, AI നിങ്ങൾ അറിവ് ബേസിൽ കോൺഫിഗർ ചെയ്ത ഉള്ളടക്കത്തെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുകയോ ഉള്ളടക്കം ജനറേറ്റ് ചെയ്യുകയോ ചെയ്യും.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">ദയവായി വലിയ മോഡൽ കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">വലിയ മോഡൽ കോൺഫിഗർ ചെയ്ത ശേഷം മാത്രമേ വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ് ഉപയോഗിക്കാൻ കഴിയൂ.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">കോൺഫിഗർ ചെയ്യാൻ</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">ഇൻസ്റ്റാൾ ചെയ്യാൻ</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">ദയവായി [EmbeddingPlugins] ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">ഈ അസിസ്റ്റന്റ് പ്രവർത്തിക്കുന്നതിന് EmbeddingPlugins ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">ഫയലുകൾ ഇവിടെ വലിച്ചിട്ട് ചേർക്കുക.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">MCP സെർവർ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">സെർവർ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">ചേർക്കൽ പരാജയപ്പെട്ടു! പിശക് കാരണം:</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">MCP എൻവയൺമെന്റ് ഇല്ല. ദയവായി 【UOS AI Agent】 ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">കോൾ ചെയ്യുന്നു</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">പൂർത്തിയായി</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">കോൾ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">റദ്ദാക്കി</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">കോള്‍ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">റദ്ദാക്കി</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">പരാമീറ്ററുകള്‍</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">ഫലം</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">MCP സെര്‍വറിനായി, ഔദ്യോഗികമായി പുറത്തിറക്കിയ &quot;DeepSeek-Trial Account&quot; മോഡലിലേക്ക് മാറുക</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">MCP സെര്‍വര്‍ കമാന്‍ഡ് നല്‍കുക, ഉദാ: &quot;എനിക്കായി സിസ്റ്റം ഡാര്‍ക്ക് മോഡിലേക്ക് മാറ്റൂ&quot;</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">ഏജന്റ് സെര്‍വര്‍ ലഭ്യമല്ല</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">ഏജന്റ് സെര്‍വറില്‍ അപവാദം</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">MCP സെര്‍വര്‍ ലഭ്യമല്ല</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="obsolete">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">ഒരു കമാൻഡ് ഉപയോഗിച്ച് മൾട്ടി-ഫയൽ, മൾട്ടി-ആപ്പ് ജോലികൾ MCP സേവനം വഴി ഓട്ടോമേറ്റ് ചെയ്യൂ. ഇപ്പോൾ പരീക്ഷിക്കൂ!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">പിന്നീട് ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">MCP സെർവർ പ്രവർത്തനക്ഷമമാക്കുക</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">MCP എൻവയൺമെന്റ് &quot;UOS AI Agent&quot; ഇൻസ്റ്റാൾ ചെയ്ത ശേഷം, </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished">ക്ലിക്ക് ചെയ്ത് MCP സെർവർ ലിസ്റ്റിൽ &quot;uos-mcp&quot; തിരഞ്ഞെടുക്കുക.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">പറഞ്ഞു നോക്കൂ: &quot;സിസ്റ്റം ഡാർക്ക് മോഡിലേക്ക് മാറ്റുക&quot;.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">ഇപ്പോൾ പരീക്ഷിക്കൂ</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">Mcp സെർവർ ചേർക്കുക [GuidePage]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">ആദ്യമായി ഉപയോഗിക്കുന്നവർ: App Store വഴി MCP എൻവയൺമെന്റ് &quot;UOS AI Agent&quot; ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">JSON ഫയൽ ഫോർമാറ്റ് തെറ്റാണ്, ദയവായി പരിശോധിച്ച് വീണ്ടും സമർപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യുക &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">പൊതു ചാറ്റ്</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">സ്വകാര്യ ചാറ്റ്</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">ഇപ്പോൾ സ്വകാര്യ ചാറ്റിലാണ്</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">സ്വകാര്യ ചാറ്റ് സന്ദേശങ്ങൾ ചരിത്രത്തിൽ സംരക്ഷിക്കില്ല; ചാറ്റ് വിടുമ്പോൾ അവ സ്ഥിരമായി ഇല്ലാതാകും.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">സ്ക്രീൻഷോട്ട് Q&amp;A കുറുക്കുവഴി (Ctrl+Alt+Q), പരമാവധി 3 ചിത്രങ്ങൾ പിന്തുണയ്ക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">സ്ക്രീൻ റെക്കോർഡിംഗ് സമയത്ത് ഉപയോഗിക്കാനാവില്ല</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">നിങ്ങൾക്ക് പരമാവധി 3 ഫയലുകളോ ചിത്രങ്ങളോ അപ്‌ലോഡ് ചെയ്യാം</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">ഫയലുകൾ അപ്‌ലോഡ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">അസാധുവായ ഫയൽ ഇല്ലാതാക്കി വീണ്ടും അയക്കുക</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">സ്വകാര്യ ചാറ്റ് ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">[Screenshot Q&amp;A] ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">ഒരു സ്ക്രീൻഷോട്ട് എടുത്ത് ഉള്ളടക്കം UOS AI-യിലേക്ക് അയക്കുക. നേരിട്ട് ഒരു ചിത്രവും അപ്‌ലോഡ് ചെയ്യാം.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="vanished">ശരി</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">അടുത്തത്</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">[സ്വകാര്യ ചാറ്റ് മോഡ്] ചേർക്കുക - ചാറ്റുകൾ സംരക്ഷിക്കില്ല.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">ടെക്സ്റ്റ് എടുക്കാനായില്ല</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">ചിത്രത്തിന്റെ വലിപ്പം 15 MB കവിഞ്ഞു</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">നോളജ് ബേസ് തുറന്നതിന് ശേഷം, ഉത്തരങ്ങൾ അതിന്റെ ഉള്ളടക്കത്തെ അടിസ്ഥാനമാക്കിയായിരിക്കും. പ്രതികരണ വേഗത മെഷീൻ പ്രകടനവും നോളജ് ബേസിന്റെ വലിപ്പവും അനുസരിച്ചായിരിക്കും.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">ഏതെങ്കിലും കമാൻഡ് അല്ലെങ്കിൽ MCP തിരഞ്ഞെടുക്കുമ്പോൾ നോളജ് ബേസ് ലഭ്യമല്ല.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">നോളജ് ബേസ് സജീവമായിരിക്കുമ്പോൾ MCP പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">നോളജ് ബേസ് സജീവമായിരിക്കുമ്പോൾ കമാൻഡുകൾ പ്രവർത്തനരഹിതമാണ്.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">പകർത്തുക</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">വീണ്ടും എഡിറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">പകർത്തൽ വിജയിച്ചു.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">പകർത്തൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">തിരയുന്നു</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">%1 റഫറൻസ് ഡോക്യുമെന്റുകൾ ലഭിച്ചു (%2s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">ഹിസ്റ്ററി മായ്ക്കുക</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">എല്ലാ റെക്കോർഡുകളും ഇല്ലാതാക്കണമോ?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">ഒരിക്കൽ ഇല്ലാതാക്കിയാൽ, ഉള്ളടക്കം വീണ്ടെടുക്കാൻ കഴിയില്ല!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">ഔദ്യോഗിക മോഡലുകൾ ശുപാർശ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">MCP പ്രവർത്തനരഹിതമാക്കുക</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">ഔദ്യോഗിക മോഡൽ &quot;DeepSeek-Trial Account&quot; ഉപയോഗിക്കാൻ ശുപാർശ ചെയ്യുന്നു</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">പെട്ടെന്ന് തുറക്കുക</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">MCP സെർവർ ഓട്ടോമാറ്റിക് മോഡിലേക്ക് അപ്ഗ്രേഡ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">MCP സെർവർ ഓട്ടോമാറ്റിക് മോഡിലേക്ക് അപ്ഗ്രേഡ് ചെയ്തിരിക്കുന്നു, ഒരു ക്ലിക്കിൽ എല്ലാ MCP സെർവറുകളിലും പ്രവേശിക്കാൻ കഴിയും</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. ഇത് സിസ്റ്റം സെറ്റപ്പ്, ഫയൽ പ്രോസസ്സിംഗ് തുടങ്ങിയ ജോലികൾ ഒരു ക്ലിക്കിൽ ഓട്ടോമേറ്റ് ചെയ്യാൻ അനുവദിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">MCP സെർവർ ചേർക്കൽ സെറ്റിംഗ്സിലേക്ക് മാറ്റിയിരിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">കൂടുതൽ MCP സെർവർ ചേർക്കാൻ, Settings &gt; MCP Server എന്നതിലേക്ക് പോകുക.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">മനസ്സിലായി</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">സൗജന്യ മോഡൽ ക്രെഡിറ്റുകൾ</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">നിലവിലെ സിസ്റ്റം ഡീപ്‌സീക്ക് ട്രയൽ അക്കൗണ്ട് മോഡൽ വാഗ്ദാനം ചെയ്യുന്നു, ഇത് ഓരോ മാസത്തിന്റെയും തുടക്കത്തിൽ സ്വയം ഫ്രീ ക്വോട്ട പുതുക്കുന്നു, ഇത് നിങ്ങളെ ആശങ്കയില്ലാതെ ഉപയോഗിക്കാൻ അനുവദിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">ക്രെഡിറ്റുകൾ ക്ലെയിം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="obsolete">ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">സൗജന്യ ക്രെഡിറ്റുകൾ ക്ലെയിം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">വിജയകരമായി ക്ലെയിം ചെയ്തു</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">ക്ലെയിം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">എംസിപി സെർവർ പ്രവർത്തനക്ഷമമാക്കുക&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">എംസിപി സെർവർ പ്രവർത്തനരഹിതമാക്കുക</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">എംസിപി സെർവർ കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">നിങ്ങൾക്ക് പരമാവധി ഒരു ഫയൽ മാത്രമേ ചേർക്കാൻ കഴിയൂ.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">ഫയൽ ഫോർമാറ്റ് പിന്തുണയ്ക്കുന്നില്ല.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">ഫയലിന്റെ പ്രധാന ഉള്ളടക്കം സംഗ്രഹിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">പാഴ്സിംഗ്...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">ഫയൽ പിശക്</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">ഫയൽ ഇല്ലാതാക്കി.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">ഫയലിന്റെ വലുപ്പം 100MB പരിധി കവിയുന്നു.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">ഒരു ഡോക്യുമെന്റ് അപ്ലോഡ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">ഫയൽ ഇല്ലാതാക്കി</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">ഒരു ടെക്സ്റ്റും പാഴ്സ് ചെയ്തിട്ടില്ല</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">റഫറൻസ്</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">ഇൻസ്ട്രക്ഷൻ</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">ആക്ടിവേറ്റ് ചെയ്യാൻ ഇൻപുട്ട് ബോക്സിൽ &quot;/&quot; ടൈപ്പ് ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">ദയവായി നൽകുക; “Ctrl+Enter” ലൈൻ മാറ്റാൻ.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">നിങ്ങളുടെ ചോദ്യം നൽകുക, അല്ലെങ്കിൽ ഒരു കമാൻഡ് തിരഞ്ഞെടുക്കാൻ &quot;/&quot; നൽകുക
-&quot;Ctrl+Enter&quot; ഒരു പുതിയ ലൈൻ ആരംഭിക്കാൻ</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">തിരയൽ പൂർത്തിയായി.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">ഫലങ്ങൾ കാണാൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">എഡിറ്റ്</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">സേവ്</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">കോപ്പി</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">തിരയുക</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">ഡീപ്പ് ചിങ്ക്(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">ചിന്തനം നിർത്തി</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">താഴേക്ക് തിരികെ</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">ആഴത്തിൽ ചിന്തിച്ചു (%1 സെക്കൻഡ്)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">പുതിയ സംഭാഷണം</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">ചരിത്രം</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">ചരിത്ര റെക്കോർഡുകളൊന്നുമില്ല</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">ഇന്ന്</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">ഇന്നലെ</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">സംഭാഷണം ഇല്ലാതാക്കാൻ ഉറപ്പാണോ? ഇല്ലാതാക്കിയാൽ അത് വീണ്ടെടുക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">ഈ സംഭാഷണത്തിൽ ഉപയോഗിച്ച %1 ഏജന്റ് ഇല്ലാതാക്കി</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">ഈ സംഭാഷണം കാണാൻ കഴിയില്ല. കാണാൻ, %1 ഏജന്റ് ഇൻസ്റ്റാൾ ചെയ്ത് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">യഥാർത്ഥ സംഭാഷണ മോഡൽ ഇല്ലാതാക്കി. സംഭാഷണം തുടരാൻ ഞങ്ങൾ ഒരു പുതിയ മോഡലിലേക്ക് മാറ്റി.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">ശുപാർശകൾ</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">കൂടുതൽ</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">മോഡൽ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">മോഡൽ ഇല്ല</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">മോഡൽ ലഭ്യമല്ല. ക്രമീകരണങ്ങളിൽ ഒരു മോഡൽ ഇൻസ്റ്റാൾ ചെയ്യുക അല്ലെങ്കിൽ ക്രമീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">നിങ്ങളുടെ സൃഷ്ടിക്കായുള്ള ഉള്ളടക്ക തീംയും ആവശ്യകതകളും വിവരിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">വിവർത്തനം ചെയ്യാൻ ആഗ്രഹിക്കുന്ന ഉള്ളടക്കം നൽകുകയും ലക്ഷ്യ ഭാഷ വ്യക്തമാക്കുകയും ചെയ്യുക. സ്ഥിരസ്ഥിതി വിവർത്തനം ചൈനീസിലേക്കാണ്.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">പ്രോസസ്സ് ചെയ്യേണ്ട വാചകം നൽകുകയും നിങ്ങളുടെ ആവശ്യകതകൾ വ്യക്തമാക്കുകയും ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">പുതിയ ഏജന്റ് ചേർത്തു</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">പുതിയ റൈറ്റിംഗ്, ടെക്സ്റ്റ് പ്രോസസ്സിംഗ്, ട്രാൻസ്ലേഷൻ ഏജന്റുകൾ ചേർത്തിട്ടുണ്ട്. ഇപ്പോൾ പരിശോധിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">ഇനിപ്പറയുന്ന ഡോക്യുമെന്റ് അടിസ്ഥാനമാക്കി ഒരു ലേഖനം എഴുതുക:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">ഇനിപ്പറയുന്ന ഡോക്യുമെന്റ് ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">വോയ്സ് സംഭാഷണം ഓഫ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">വോയ്സ് സംഭാഷണം</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">ഇനം എക്സ്പോർട്ട് ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">പിന്തുണയ്ക്കുന്ന ഫയലുകൾ</translation>
+        <translation>രേഖയുടെ ഉള്ളടക്കം അസാധുവാണ് അല്ലെങ്കിൽ ശൂന്യമാണ്.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">ഫംഗ്ഷൻ ലഭ്യമല്ല</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">ഒരു സൗജന്യ ട്രയൽ അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">ഒരു അക്കൗണ്ട് സ്വീകരിക്കുന്നത് ഈ ഇവന്റിന്റെ നിബന്ധനകൾ നിങ്ങൾ മനസ്സിലാക്കിയതും സമ്മതിച്ചതും സൂചിപ്പിക്കുന്നു,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;ഇവന്റ് വിശദാംശങ്ങൾ&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ട്</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">സേവ് പരാജയപ്പെട്ടു, പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ട് വിജയകരമായി ലഭിച്ചു.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗങ്ങളുടെ എണ്ണവും ദൈർഘ്യവും പരിമിതമാണ്, ദയവായി നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് സമയത്തിനുള്ളിൽ കോൺഫിഗർ ചെയ്യുക! കൂടുതൽ വിവരങ്ങൾക്ക് ഇവന്റ് വിശദാംശങ്ങൾ കാണുക.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ടുകളുടെ ഇംഗ്ലീഷ് പിന്തുണ തൃപ്തികരമല്ല. ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗ സംഖ്യയും കാലാവധിയും പരിമിതമാണ്. ദയവായി നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് സമയത്ത് കോൺഫിഗർ ചെയ്യുക!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">ട്രയൽ ആരംഭിക്കുക</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">സൗജന്യ അക്കൗണ്ട് പ്രവർത്തനം അവസാനിച്ചു.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">സെർവറുമായി ബന്ധിപ്പിക്കാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
+        <translation>പിന്തുണയില്ലാത്ത ഫയൽ ഫോർമാറ്റ്</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>appid അധികാരപത്രം പരാജയപ്പെട്ടു</translation>
+        <translation>appid അധികാരപ്പെടുത്തൽ പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>ഒരു പ്രത്യേക പാരാമീറ്റർ ലഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
+        <translation>ഒരു പാരാമീറ്റർ ലഭ്യമാക്കാൻ കഴിഞ്ഞില്ല</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>പാരാമീറ്റർ മൂല്യം അനധികൃതമാണ്</translation>
+        <translation>പാരാമീറ്റർ മൂല്യം നിയമവിരുദ്ധമാണ്</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>എഞ്ചിൻ അധികാരപത്രം പര്യാപ്തമല്ല</translation>
+        <translation>എഞ്ചിൻ അധികാരപ്പെടുത്തൽ മതിയായില്ല</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
         <translation>സെഷൻ സമയം കഴിഞ്ഞു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
         <translation>ഓഡിയോ ഡീകോഡിംഗ് പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
         <translation>എഞ്ചിൻ സെഷൻ അവസാനിച്ചു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>പാരാമീറ്റർ പിശക്</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
-        <source>appid cannot be empty</source>
-        <translation>appid ശൂന്യമായിരിക്കാൻ കഴിയില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
-        <source>Illegal version</source>
-        <translation>അനധികൃത പതിപ്പ്</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
-        <source>permission denied</source>
-        <translation>അനുമതി നിഷേധിച്ചു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
-        <source>Daily flow control exceeds limit</source>
-        <translation>ദിനസഞ്ചയ നിയന്ത്രണം പരിധി കവിഞ്ഞു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
-        <source>The request data format is illegal</source>
-        <translation>അഭ്യർത്ഥന ഡാറ്റ ഫോർമാറ്റ് അനധികൃതമാണ്</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
-        <source>base64 decoding failed</source>
-        <translation>base64 ഡീകോഡിംഗ് പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
-        <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>ആവശ്യമായ പാരാമീറ്ററുകൾ കാണുന്നില്ല അല്ലെങ്കിൽ പാരാമീറ്ററുകൾ അനധികൃതമാണ്</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
-        <source>Invalid handle</source>
-        <translation>അസാധുവായ ഹാൻഡിൽ</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
-        <source>Reading data timeout</source>
-        <translation>ഡാറ്റ വായന സമയം കഴിഞ്ഞു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation>കണക്ഷൻ പരാജയപ്പെട്ടു, ദയവായി നിങ്ങൾ നൽകിയ വിവരങ്ങൾ പരിശോധിക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">പുതിയതായി ചേർത്ത ഫയലുകൾ ഉപയോഗിക്കുന്നതിന് മുൻപ് പ്രീപ്രോസസ്സിംഗ് ആവശ്യമാണ്, കൂടാതെ ഡാറ്റ പ്രോസസ്സിംഗ് പ്രക്രിയയിൽ, ഇത് ഒരു വലിയ അളവിലുള്ള കമ്പ്യൂട്ടിംഗ്, സംഭരണ വിഭവങ്ങൾ ഉപയോഗിച്ചേക്കാം. ഡാറ്റ ഡിലീറ്റ് ചെയ്ത ശേഷം ഡാറ്റ പ്രോസസ്സിംഗ് നിർത്തും.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">ഈ നോളജ് ബേസ് ഫയൽ ഡിലീറ്റ് ചെയ്യാൻ നിങ്ങൾക്ക് തീർച്ചയാണോ?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">ഇല്ലാതാക്കുക</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">ദയവായി ആദ്യം എംബെഡിംഗ് മോഡൽ പ്ലഗിനുകൾ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">അറിവ് ബേസ് മാനേജ്മെന്റ്</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">ഇവിടെ, പേഴ്സണൽ നോളജ് അസിസ്റ്റന്റിന്റെ അറിവ് ബേസ് നിർവചിക്കാം, കൂടാതെ പേഴ്സണൽ നോളജ് അസിസ്റ്റന്റ് താഴെ ചേർത്ത ഫയലുകളെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകും.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">പൂർത്തിയായി</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">ഒന്നുമില്ല</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">ഫയൽ ഇതിനകം നിലവിലുണ്ട്</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">%1 ഫയൽ ഇതിനകം നിലവിലുണ്ട്, വീണ്ടും ചേർക്കാൻ കഴിയില്ല. ദയവായി ഫയലിന്റെ പേര് മാറ്റുക അല്ലെങ്കിൽ നിലവിലുള്ള ഫയൽ ഇല്ലാതാക്കിയ ശേഷം വീണ്ടും ചേർക്കുക.</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">എല്ലാ ഫയലുകളും</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">ഈ ഫീച്ചറിന് ഉയർന്ന ഹാർഡ്‌വെയർ വിഭവങ്ങൾ ആവശ്യമാണ്, റഫറൻസ് ബെഞ്ച്‌മാർക്ക് കോൺഫിഗറേഷൻ ഇതാണ്: CPU ഇന്റൽ 11-ാം തലമുറ i7 അല്ലെങ്കിൽ അതിൽ കൂടുതൽ; മെമ്മറി 16GB അല്ലെങ്കിൽ അതിൽ കൂടുതൽ; NVIDIA ഗ്രാഫിക്സ് കാർഡും 10 സീരീസ് അല്ലെങ്കിൽ അതിൽ കൂടുതലും ഉള്ളതാണ് ഏറ്റവും മികച്ച ഓപ്ഷൻ. കോൺഫിഗറേഷൻ വളരെ കുറവാണെങ്കിൽ, ലാഗ് ചെയ്യൽ, കൃത്യമല്ലാത്ത ഉത്തരങ്ങൾ തുടങ്ങിയ പ്രശ്നങ്ങൾ ഉണ്ടാകാം.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseManager</name>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
-        <source>FollowAlong</source>
-        <translation>ഫോളോഅലോംഗ്</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
-        <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">അറിവ് ബേസ് കപ്പാസിറ്റി പര്യാപ്തമല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
-        <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">അറിവ് ബേസിന്റെ ആകെ കപ്പാസിറ്റി %1M ആണ്, ശേഷിക്കുന്നത് %2. ഈ സമയം ചേർത്ത ഫയലുകളുടെ ആകെ എണ്ണം %3 ആണ്. അറിവ് ബേസിലേക്ക് ചേർക്കുന്ന പ്രവർത്തനം പൂർത്തിയാക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation>ഓക്കേ</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
-        <source>Not enough disk space</source>
-        <translation type="unfinished">ഡിസ്ക് സ്പേസ് പര്യാപ്തമല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
-        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">പുതിയതായി ചേർത്ത ഫയലുകൾ സംഭരിക്കാൻ, കുറഞ്ഞത് %1 ഡിസ്ക് സ്പേസ് ആവശ്യമാണ്. നിലവിലുള്ള ശേഷിക്കുന്ന സ്പേസ് %2 ആണ്. ദയവായി ആവശ്യമായ ഹാർഡ് ഡിസ്ക് സ്പേസ് ക്ലിയർ ചെയ്ത് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">ജ്ഞാനഭണ്ഡാരത്തിലേക്ക് ചേർക്കാൻ വെക്റ്ററൈസേഷൻ മോഡൽ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആപ്പ് സ്റ്റോറിലേക്ക് പോയി ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">ഇൻസ്റ്റാൾ ചെയ്യരുത്</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">ഉടൻ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">വിൻസെന്റ് പിക്ചർ സേവനം പിന്തുണയ്ക്കുന്നില്ല</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5（OpenAI）</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4（OpenAI）</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">സ്പാർക്ക് ബിഗ് മോഡൽ 1.5（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">സ്പാർക്ക് ബിഗ് മോഡൽ 2.0（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">സ്പാർക്ക് ബിഗ് മോഡൽ 3.0（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-Spark</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">ജെമിനി 1.5 ഫ്ലാഷ്</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">ജെമിനി 1.5 പ്രോ</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">ടെക്സ്റ്റ് ടു ഇമേജ് (ലോക്കൽ)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">യു റോംഗ് 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">യു റോംഗ് 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">ഇഷ്ടാനുസൃതം</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">സ്വകാര്യ വിന്യാസ മോഡൽ</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">ഓപ്പൺറൂട്ടർ</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">ഡീപ്സീക്ക്-ആർ1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">ഡീപ്‌സീക്ക്</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">അജ്ഞാത മോഡൽ</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">നിങ്ങളുടെ സിസ്റ്റം പരിസ്ഥിതി Linux ആണ്, ഉപയോക്താവിന്റെ ഹോം പാത്ത്</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">അപ്ഡേറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">ലോക്കൽ മോഡൽ</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">ടെക്സ്റ്റ് ടു ഇമേജ് മോഡൽ</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">ചിത്രങ്ങൾ സൃഷ്ടിക്കാൻ ഒരു ലോക്കൽ മോഡൽ ഉപയോഗിക്കുക. ഇത് ഓണാക്കിയ ശേഷം, ചാറ്റ് ഇന്റർഫേസിലെ മോഡൽ ലിസ്റ്റിൽ നിന്ന് മോഡൽ തിരഞ്ഞെടുക്കാം.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">സ്പീച്ച് മോഡൽ</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">ഓണാക്കുമ്പോൾ, ചാറ്റ് ഇന്റർഫേസിലെ സ്പീച്ച് തിരിച്ചറിയലും സ്പീച്ച് വായനയും ഇന്റർനെറ്റ് കണക്ഷൻ ആവശ്യമില്ലാതെ ലോക്കൽ മോഡൽ ഉപയോഗിക്കും.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">ഡീപ്‌സീക്ക്-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">UOS AI വലിയ മോഡൽ</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">ഒരിക്കൽ ഇൻസ്റ്റാൾ ചെയ്താൽ, UOS AI ഉപയോഗിക്കാൻ ഇന്റർനെറ്റ് കണക്ഷൻ ആവശ്യമില്ല.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">ഓപ്പൺ-സോഴ്‌സ് കമ്മ്യൂണിറ്റിയിൽ നിന്ന് സ്വന്തം ഉത്തരവാദിത്വത്തിൽ ഡൗൺലോഡ് ചെയ്യുക. ഇൻസ്റ്റാൾ ചെയ്തതിന് ശേഷം UOS AI അസിസ്റ്റന്റിൽ ഉപയോഗിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">എംബെഡ്ഡിംഗ് പ്ലഗിനുകൾ</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">മോഡൽ ഇൻസ്റ്റാൾ ചെയ്ത ശേഷം, സിസ്റ്റം അസിസ്റ്റന്റും പേഴ്സണൽ നോളജ് അസിസ്റ്റന്റും പ്രവർത്തിപ്പിക്കാം.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">വിജയകരമായി കണക്റ്റുചെയ്തു</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">ഉപയോക്തൃ ഉടമ്പടി</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">UOS AI ഉപയോക്തൃ ഉടമ്പടി</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">വായിച്ച് സമ്മതിച്ചു</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">പ്രോക്സി ക്രമീകരണങ്ങൾ</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">ക്രമീകരണങ്ങളിലേക്ക് പോകുക</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">മോഡൽ ക്രമീകരണം</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">സൗജന്യ അക്കൗണ്ട് പ്രവർത്തനം അവസാനിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">ജ്ഞാനഭണ്ഡാരത്തിലേക്ക് ചേർക്കാൻ വെക്റ്ററൈസേഷൻ മോഡൽ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആപ്പ് സ്റ്റോറിലേക്ക് പോയി ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="vanished">ഇൻസ്റ്റാൾ ചെയ്യരുത്</translation>
-    </message>
-    <message>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="vanished">ഉടൻ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListItem</name>
-    <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">ഈ മോഡൽ ഇല്ലാതാക്കാൻ നിങ്ങൾക്ക് ഉറപ്പാണോ?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">ഇല്ലാതാക്കുക</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">ഓൺലൈൻ മോഡൽ</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">പൂർത്തിയായി</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">ഒന്നുമില്ല</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">APISecret</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">അക്കൗണ്ട്</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">മോഡൽ പേര്</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">API വിലാസം</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">ആവശ്യമാണ്, ഒന്നിലധികം മോഡലുകൾ വേർതിരിച്ചറിയാൻ</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">ഡൊമെയ്ൻ</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">20 അക്ഷരങ്ങളിൽ കൂടുതൽ അല്ല</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">അക്കൗണ്ട് പേര് ഇതിനകം നിലവിലുണ്ട്, ദയവായി അത് മാറ്റുക</translation>
-    </message>
-</context>
-<context>
-    <name>OcrParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
-        <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
-        <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">ഡാറ്റ പ്രോസസ്സിംഗിൽ</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">ഡാറ്റ പ്രോസസ്സിംഗ് പിശക്</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">ഫയൽ പിശക്, പ്രോസസ്സ് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി ഇല്ലാതാക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI റൈറ്റിംഗ്</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI ടെക്സ്റ്റ് പ്രോസസ്സിംഗ്</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI ട്രാൻസ്ലേഷൻ</translation>
-    </message>
-    <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">സിസ്റ്റത്തിന്റെ സമഗ്രമായ AI അസിസ്റ്റന്റ്.</translation>
-    </message>
-    <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">UOS സിസ്റ്റവുമായി ബന്ധപ്പെട്ട അന്വേഷണങ്ങളിൽ താങ്കളെ സഹായിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">ഡീപിൻ സിസ്റ്റവുമായി ബന്ധപ്പെട്ട അന്വേഷണങ്ങളിൽ താങ്കളെ സഹായിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">താങ്കളുടെ വിഷയവും ആവശ്യകതകളും അടിസ്ഥാനമാക്കി എഴുതുക.</translation>
-    </message>
-    <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">നിങ്ങളുടെ വ്യക്തിഗത അറിവ് ബേസ് അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുന്നു.</translation>
-    </message>
-    <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">സംഗ്രഹിക്കൽ, പ്രൂഫ്‌റീഡിംഗ്, റീറൈറ്റിംഗ് തുടങ്ങിയ ടെക്സ്റ്റ് പ്രോസസ്സിംഗ് ടാസ്ക്കുകൾ കൈകാര്യം ചെയ്യാനുള്ള കഴിവുണ്ട്.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">നിങ്ങളുടെ ട്രാൻസ്ലേഷൻ അസിസ്റ്റന്റ്, ഒന്നിലധികം ഭാഷകൾ പ്രാവീണ്യം പുലർത്തുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation>ശരി</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>തിരയുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>സംഗ്രഹം</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>വിവർത്തനം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>എഴുത്ത് തുടരുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>വികസിപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>പോളിഷ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>ശരിയാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>AI അറിവ് ശേഖരത്തിൽ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
-        <source>{selection}</source>
-        <translation>{selection}</translation>
-    </message>
-    <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
-        <source>Cancel</source>
-        <translation>റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
-        <source>Restart immediately</source>
-        <translation>ഉടൻ തന്നെ പുനരാരംഭിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
-        <source>Simplified Chinese</source>
-        <translation>ലഘു ചൈനീസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
-        <source>Traditional Chinese</source>
-        <translation>പരമ്പരാഗത ചൈനീസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
-        <source>Tibetan</source>
-        <translation type="unfinished">റഷ്യൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
-        <source>English</source>
-        <translation type="unfinished">ഇംഗ്ലീഷ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
-        <source>Japanese</source>
-        <translation>ജാപ്പനീസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
-        <source>German</source>
-        <translation type="unfinished">ജർമ്മൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
-        <source>Spanish</source>
-        <translation type="unfinished">സ്പാനിഷ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
-        <source>French</source>
-        <translation type="unfinished">ഫ്രഞ്ച്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
-        <source>Italian</source>
-        <translation type="unfinished">ഇറ്റാലിയൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
-        <source>Korean</source>
-        <translation type="unfinished">കൊറിയൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
-        <source>Malay</source>
-        <translation type="unfinished">മലയാളം</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
-        <source>Portuguese</source>
-        <translation type="unfinished">പോർച്ചുഗീസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
-        <source>Russian</source>
-        <translation type="unfinished">റഷ്യൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
-        <source>Thai</source>
-        <translation type="unfinished">തായ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
-        <source>Vietnamese</source>
-        <translation type="unfinished">വിയറ്റ്നാമീസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
-        <source>Arabic (SA)</source>
-        <translation>അറബിക് (SA)</translation>
-    </message>
-    <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>സിസ്റ്റം എഐ ഇന്റലിജന്റ് ബട്ലർ ഫംഗ്ഷൻ
-
-ആമുഖം: സങ്കീർണ്ണമായ സിസ്റ്റം പ്രവർത്തനങ്ങൾ നടത്താൻ സിസ്റ്റം ഉപകരണങ്ങളെ ബുദ്ധിപൂർവ്വം ഷെഡ്യൂൾ ചെയ്യുന്നു, സിസ്റ്റം നിയന്ത്രണം, ഫയൽ മാനേജ്മെന്റ്, ആപ്ലിക്കേഷൻ മാനേജ്മെന്റ്, നെറ്റ്വർക്കിംഗ് പ്രോട്ടോക്കോളുകൾ എന്നിവ പിന്തുണയ്ക്കുന്നു.
-
-പ്രോംപ്റ്റ് ഉദാഹരണം: ഡെസ്ക്ടോപ്പിൽ പുതിയതായി സൃഷ്ടിച്ച ഫോൾഡറിലെ എല്ലാ ഫയലുകളെയും പ്രോജക്റ്റ് മെറ്റീരിയലുകൾ എന്ന് പേരിടുകയും സംഖ്യാക്രമത്തിൽ ക്രമീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">ഡീപ്‌സീക്ക്</translation>
-    </message>
-    <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">ഇഷ്ടാനുസൃതം</translation>
-    </message>
-    <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">&apos;mcpServers&apos; ഫീൽഡ് നഷ്ടപ്പെട്ടു.</translation>
-    </message>
-    <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">സാധുവായ mcp സെർവർ ഇല്ല.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">url ഫീൽഡ് ശൂന്യമായിരിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">command ഫീൽഡ് ശൂന്യമായിരിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">&apos;command&apos; അല്ലെങ്കിൽ &apos;url&apos; ഫീൽഡ് നഷ്ടപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished">അറിവ് ബേസ് മാനേജ്മെന്റ്</translation>
-    </message>
-</context>
-<context>
-    <name>ResearchTools</name>
-    <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
-        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
-        <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
-        <source>Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
-        <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">സെർവറിലേക്ക് കണക്റ്റുചെയ്യാൻ കഴിഞ്ഞില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">കണക്ഷൻ പരാജയപ്പെട്ടു, ദയവായി നൽകിയ വിവരങ്ങൾ പരിശോധിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">ക്ഷമിക്കണം, ബന്ധപ്പെട്ട നിയമങ്ങൾ, നിയന്ത്രണങ്ങൾ, നയങ്ങൾ അനുസരിച്ച് ഫലങ്ങൾ താത്കാലികമായി പ്രദർശിപ്പിക്കുന്നില്ല.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">ഓപ്പറേഷൻ റദ്ദാക്കി.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">നിങ്ങളുടെ സ account ജന്യ അക്കൗണ്ട് കാലഹരണപ്പെട്ടിരിക്കുന്നു, ഇത് തുടരാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">നിങ്ങളുടെ സ account ജന്യ അക്കൗണ്ട് ക്വാട്ട തീർന്നിരിക്കുന്നു, ഇത് തുടരാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">ചാറ്റിനായി നിങ്ങളുടെ സ account ജന്യ അക്കൗണ്ട് ക്വാട്ട തീർന്നിരിക്കുന്നു, ഇത് തുടരാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">ടെക്സ്റ്റ് 2 ഇമേജിനായി നിങ്ങളുടെ സ account ജന്യ അക്കൗണ്ട് ക്വാട്ട തീർന്നിരിക്കുന്നു, ഇത് തുടരാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">അസാധുവായ ഇൻപുട്ട് ഉപകരണം</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">അസാധുവായ output ഉപകരണം</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">ക്ഷമിക്കണം, പൊരുത്തപ്പെടുന്ന ഓപ്പറേഷനുകളൊന്നും കണ്ടെത്തിയില്ല.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">സംഭാഷണത്തിലെ മൊത്തം അക്ഷരങ്ങളുടെ എണ്ണം പരിധി കവിഞ്ഞിരിക്കുന്നു, ദയവായി സംഭാഷണ ചരിത്രം മായ്‌ക്കുക, വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>ServiceConfigChannel</name>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">&apos;mcpServers&apos; ഫീൽഡ് നഷ്ടപ്പെട്ടു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
-        <source>no valid mcp server.</source>
-        <translation type="unfinished">സാധുവായ mcp സെർവർ ഇല്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
-        <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
-        <source>url field cannot be empty.</source>
-        <translation type="unfinished">url ഫീൽഡ് ശൂന്യമായിരിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
-        <source>command field cannot be empty.</source>
-        <translation type="unfinished">command ഫീൽഡ് ശൂന്യമായിരിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">&apos;command&apos; അല്ലെങ്കിൽ &apos;url&apos; ഫീൽഡ് നഷ്ടപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
-        <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI റൈറ്റിംഗ്</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI ടെക്സ്റ്റ് പ്രോസസ്സിംഗ്</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI ട്രാൻസ്ലേഷൻ</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI ഉപയോഗിക്കുന്നതിന് മുമ്പ് ഒരു AI മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആദ്യം ഒരു മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">ഏജന്റ് സെർവർ ലഭ്യമല്ല.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">വിജയകരമായി ക്ലെയിം ചെയ്തു</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">അക്കൗണ്ട് കണ്ടെത്തിയില്ല</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">ഡീപ്സീക്ക് അക്കൗണ്ട് മാത്രം പിന്തുണയ്ക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">നിങ്ങൾ ഇതിനകം ഈ ഇവന്റിൽ പങ്കെടുത്തിട്ടുണ്ട്, വീണ്ടും റിവാർഡ് ക്ലെയിം ചെയ്യാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">സെർവർ സിസ്റ്റം പിശക്</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">ക്ലെയിം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>TextParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
-        <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
-        <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
-        <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>TitleBarMenu</name>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
-        <source>Feedback</source>
-        <translation>ഫീഡ്ബാക്ക്</translation>
-    </message>
-</context>
-<context>
-    <name>TtsCodeTranslation</name>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
-        <source>appid authorization failed</source>
-        <translation>appid ഓഥറൈസേഷൻ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
-        <source>Failed to obtain a certain parameter</source>
-        <translation>ഒരു പ്രത്യേക പാരാമീറ്റർ നേടുന്നതിൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
-        <source>Parameter value is illegal</source>
-        <translation>പാരാമീറ്റർ മൂല്യം അസാധുവാണ്</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
-        <source>Insufficient engine authorization</source>
-        <translation>എഞ്ചിൻ ഓഥറൈസേഷൻ പര്യാപ്തമല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
-        <source>Request text length is illegal</source>
-        <translation>അഭ്യർത്ഥിച്ച ടെക്സ്റ്റ് നീളം അസാധുവാണ്</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
-        <source>session timeout</source>
-        <translation>സെഷൻ ടൈം out ട്ട്</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
-        <source>Engine session ended</source>
-        <translation>എഞ്ചിൻ സെഷൻ അവസാനിച്ചു</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
         <translation>appid ശൂന്യമാകാൻ പാടില്ല</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
-        <translation>അസാധുവായ പതിപ്പ്</translation>
+        <translation>നിയമവിരുദ്ധമായ പതിപ്പ്</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
         <translation>അനുമതി നിഷേധിച്ചു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>ദിവസേനയുള്ള ഫ്ലോ നിയന്ത്രണ പരിധി കവിഞ്ഞിരിക്കുന്നു</translation>
+        <translation>ദൈനംദിന ഫ്ലോ നിയന്ത്രണം പരിധി കവിഞ്ഞു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
-        <translation>അഭ്യർത്ഥന ഡാറ്റ ഫോർമാറ്റ് അനുവദനീയമല്ല</translation>
+        <translation>അഭ്യർത്ഥിച്ച ഡാറ്റാ ഫോർമാറ്റ് നിയമവിരുദ്ധമാണ്</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
         <translation>base64 ഡീകോഡിംഗ് പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>ആവശ്യമായ പാരാമീറ്ററുകൾ കാണുന്നില്ല അല്ലെങ്കിൽ പാരാമീറ്ററുകൾ അനുവദനീയമല്ല</translation>
+        <translation>ആവശ്യമായ പാരാമീറ്ററുകൾ കാണുന്നില്ല അല്ലെങ്കിൽ പാരാമീറ്ററുകൾ നിയമവിരുദ്ധമാണ്</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
+        <source>Invalid handle</source>
+        <translation>അസാധുവായ ഹാൻഡിൽ</translation>
+    </message>
+    <message>
         <source>Reading data timeout</source>
-        <translation>ഡാറ്റ വായനയിൽ സമയപരിധി കടന്നുപോയി</translation>
+        <translation>ഡാറ്റാ വായിക്കുന്നതിൽ സമയം കഴിഞ്ഞു</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
-        <source>network anomaly</source>
-        <translation>നെറ്റ്വർക്ക് അസാധാരണത്വം</translation>
-    </message>
-    <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
         <translation>കണക്ഷൻ പരാജയപ്പെട്ടു, ദയവായി നൽകിയ വിവരങ്ങൾ പരിശോധിക്കുക.</translation>
     </message>
 </context>
 <context>
-    <name>TtsCompositeWidget</name>
+    <name>KnowledgeBaseManager</name>
     <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">നിങ്ങൾ തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് 5000 അക്ഷര പരിധി കവിഞ്ഞിരിക്കുന്നു.</translation>
+        <source>FollowAlong</source>
+        <translation>പിന്തുടരുക</translation>
+    </message>
+    <message>
+        <source>Insufficient knowledge base capacity</source>
+        <translation>അപര്യാപ്തമായ അറിവ് ശേഖരണ ശേഷി</translation>
+    </message>
+    <message>
+        <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
+        <translation>അറിവ് ശേഖരണത്തിന്റെ ആകെ ശേഷി %1M ആണ്, ബാക്കിയുള്ളത് %2. ഇത്തവണ ചേർത്ത ആകെ ഫയലുകളുടെ എണ്ണം %3. അറിവ് ശേഖരണത്തിലേക്ക് ചേർക്കുന്ന പ്രവർത്തനം പൂർത്തിയാക്കാൻ കഴിയില്ല.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>ശരി</translation>
+    </message>
+    <message>
+        <source>Not enough disk space</source>
+        <translation>മതിയായ ഡിസ്ക് സ്പേസില്ല</translation>
+    </message>
+    <message>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>പുതുതായി ചേർത്ത ഫയലുകൾ സൂക്ഷിക്കാൻ കുറഞ്ഞത് %1 ഡിസ്ക് സ്പേസ് ആവശ്യമാണ്. നിലവിലുള്ള ബാക്കി സ്പേസ് %2 ആണ്. ദയവായി മതിയായ ഹാർഡ് ഡിസ്ക് സ്പേസ് ഒഴിവാക്കി വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>അറിവ് ശേഖരണത്തിലേക്ക് ചേർക്കുന്നതിന് വെക്ടറൈസേഷൻ മോഡൽ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്. ഡൗൺലോഡ് ചെയ്യാനും ഇൻസ്റ്റാൾ ചെയ്യാനും ദയവായി ആപ്പ് സ്റ്റോറിലേക്ക് പോകുക.</translation>
+    </message>
+    <message>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>ഇൻസ്റ്റാൾ ചെയ്യരുത്</translation>
+    </message>
+    <message>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>ഉടൻ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <source>Outline</source>
+        <translation>ഔട്ട്ലൈൻ</translation>
+    </message>
+    <message>
+        <source>No outline</source>
+        <translation>ഔട്ട്ലൈൻ ഇല്ല</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>റഫറൻസുകൾ</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <source>The image file does not exist: %1</source>
+        <translation>ചിത്ര ഫയൽ നിലവിലില്ല: %1</translation>
+    </message>
+    <message>
+        <source>OCR did not recognize the text content</source>
+        <translation>OCR ടെക്സ്റ്റ് ഉള്ളടക്കം തിരിച്ചറിഞ്ഞില്ല</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>സിസ്റ്റം AI ഇന്റലിജന്റ് ബട്ലർ ഫംഗ്ഷൻ
+ആമുഖം: സിസ്റ്റം ടൂളുകൾ ബുദ്ധിമാനായി ഷെഡ്യൂൾ ചെയ്ത് സങ്കീർണ്ണമായ സിസ്റ്റം പ്രവർത്തനങ്ങൾ നടത്തുന്നു, സിസ്റ്റം നിയന്ത്രണം, ഫയൽ മാനേജ്മെന്റ്, ആപ്ലിക്കേഷൻ മാനേജ്മെന്റ്, നെറ്റ്‌വർക്കിംഗ് പ്രോട്ടോക്കോളുകൾ എന്നിവ പിന്തുണയ്ക്കുന്നു.
+പ്രോംപ്റ്റ് ഉദാഹരണം: ഡെസ്ക്ടോപ്പിൽ പുതുതായി സൃഷ്ടിച്ച ഫോൾഡറിലെ എല്ലാ ഫയലുകളുടെയും പേര് പ്രോജക്ട് മെറ്റീരിയലുകൾ എന്ന് നൽകി അവയെ സംഖ്യാ ക്രമത്തിൽ ക്രമീകരിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>ചോദ്യം ചോദിക്കുക...</translation>
+    </message>
+    <message>
+        <source>Discord gateway error: %1</source>
+        <translation>Discord ഗേറ്റ്‌വേ പിശക്: %1</translation>
+    </message>
+    <message>
+        <source>Missing Discord bot token.</source>
+        <translation>Discord ബോട്ട് ടോക്കൺ കാണുന്നില്ല.</translation>
+    </message>
+    <message>
+        <source>Generating...</source>
+        <translation>ജനറേറ്റ് ചെയ്യുന്നു...</translation>
+    </message>
+    <message>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Discord പ്ലേസ്‌ഹോൾഡർ സന്ദേശത്തിന് id കാണുന്നില്ല.</translation>
+    </message>
+    <message>
+        <source>Discord gateway URL is empty.</source>
+        <translation>Discord ഗേറ്റ്‌വേ URL ശൂന്യമാണ്.</translation>
+    </message>
+    <message>
+        <source>Ask UOS AI a question</source>
+        <translation>UOS AI യോട് ഒരു ചോദ്യം ചോദിക്കുക</translation>
+    </message>
+    <message>
+        <source>Question for UOS AI</source>
+        <translation>UOS AI യ്ക്കുള്ള ചോദ്യം</translation>
+    </message>
+    <message>
+        <source>Missing Telegram bot token.</source>
+        <translation>Telegram ബോട്ട് ടോക്കൺ കാണുന്നില്ല.</translation>
+    </message>
+    <message>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>Telegram പ്ലേസ്‌ഹോൾഡർ സന്ദേശത്തിന് message_id കാണുന്നില്ല.</translation>
+    </message>
+    <message>
+        <source>Telegram API request failed.</source>
+        <translation>Telegram API അഭ്യർത്ഥന പരാജയപ്പെട്ടു.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>ശരി</translation>
+    </message>
+    <message>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
+    </message>
+    <message>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
+    </message>
+    <message>
+        <source>UOS AI Trial Account</source>
+        <translation>UOS AI ട്രയൽ അക്കൗണ്ട്</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>ഇച്ഛാനുസൃതം</translation>
+    </message>
+    <message>
+        <source>Private deployment model</source>
+        <translation>സ്വകാര്യ ഡിപ്ലോയ്‌മെന്റ് മോഡൽ</translation>
+    </message>
+    <message>
+        <source>{selection}</source>
+        <translation>{selection}</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>റദ്ദാക്കുക</translation>
+    </message>
+    <message>
+        <source>Restart immediately</source>
+        <translation>ഉടനെ പുനരാരംഭിക്കുക</translation>
+    </message>
+    <message>
+        <source>Simplified Chinese</source>
+        <translation>ലളിതമായ ചൈനീസ്</translation>
+    </message>
+    <message>
+        <source>Traditional Chinese</source>
+        <translation>പരമ്പരാഗത ചൈനീസ്</translation>
+    </message>
+    <message>
+        <source>Tibetan</source>
+        <translation>ടിബറ്റൻ</translation>
+    </message>
+    <message>
+        <source>English</source>
+        <translation>ഇംഗ്ലീഷ്</translation>
+    </message>
+    <message>
+        <source>Japanese</source>
+        <translation>ജാപ്പനീസ്</translation>
+    </message>
+    <message>
+        <source>German</source>
+        <translation>ജർമ്മൻ</translation>
+    </message>
+    <message>
+        <source>Spanish</source>
+        <translation>സ്പാനിഷ്</translation>
+    </message>
+    <message>
+        <source>French</source>
+        <translation>ഫ്രഞ്ച്</translation>
+    </message>
+    <message>
+        <source>Italian</source>
+        <translation>ഇറ്റാലിയൻ</translation>
+    </message>
+    <message>
+        <source>Korean</source>
+        <translation>കൊറിയൻ</translation>
+    </message>
+    <message>
+        <source>Malay</source>
+        <translation>മലായ്</translation>
+    </message>
+    <message>
+        <source>Portuguese</source>
+        <translation>പോർച്ചുഗീസ്</translation>
+    </message>
+    <message>
+        <source>Russian</source>
+        <translation>റഷ്യൻ</translation>
+    </message>
+    <message>
+        <source>Thai</source>
+        <translation>തായ്</translation>
+    </message>
+    <message>
+        <source>Vietnamese</source>
+        <translation>വിയറ്റ്നാമീസ്</translation>
+    </message>
+    <message>
+        <source>Arabic (SA)</source>
+        <translation>അറബിക് (എസ്എ)</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>തിരയുക</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>വിശദീകരിക്കുക</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>സംഗ്രഹം</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>വിവർത്തനം ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Continue Writing</source>
+        <translation>എഴുത്ത് തുടരുക</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>വിപുലീകരിക്കുക</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>മെരുക്കുക</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>ശരിയാക്കുക</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>AI അറിവ് ശേഖരണത്തിലേക്ക് ചേർക്കുക</translation>
+    </message>
+</context>
+<context>
+    <name>ResearchTools</name>
+    <message>
+        <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
+        <translation>ഡോക്യുമെന്റുകൾ സേവ് ചെയ്യുന്നതിന് uos-ai-agent പ്ലഗിൻ (ഏകദേശം %1) ഇൻസ്റ്റാൾ ചെയ്യണം.</translation>
+    </message>
+    <message>
+        <source>The uos-ai-agent plugin must be installed to save documents.</source>
+        <translation>ഡോക്യുമെന്റുകൾ സേവ് ചെയ്യുന്നതിന് uos-ai-agent പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യണം.</translation>
+    </message>
+    <message>
+        <source>Note</source>
+        <translation>കുറിപ്പ്</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>റദ്ദാക്കുക</translation>
+    </message>
+    <message>
+        <source>Download Now</source>
+        <translation>ഇപ്പോൾ ഡൗൺലോഡ് ചെയ്യുക</translation>
+    </message>
+</context>
+<context>
+    <name>ServiceConfigChannel</name>
+    <message>
+        <source>The &apos;mcpServers&apos; field is missing.</source>
+        <translation>&apos;mcpServers&apos; ഫീൽഡ് കാണുന്നില്ല.</translation>
+    </message>
+    <message>
+        <source>no valid mcp server.</source>
+        <translation>സാധുതയുള്ള mcp സെർവറൊന്നുമില്ല.</translation>
+    </message>
+    <message>
+        <source>Only one MCP service can be edited at a time.</source>
+        <translation>ഒരേ സമയം ഒരു MCP സേവനം മാത്രമേ എഡിറ്റ് ചെയ്യാൻ കഴിയൂ.</translation>
+    </message>
+    <message>
+        <source>url field cannot be empty.</source>
+        <translation>url ഫീൽഡ് ശൂന്യമാകരുത്.</translation>
+    </message>
+    <message>
+        <source>command field cannot be empty.</source>
+        <translation>command ഫീൽഡ് ശൂന്യമാകരുത്.</translation>
+    </message>
+    <message>
+        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
+        <translation>&apos;command&apos; അല്ലെങ്കിൽ &apos;url&apos; ഫീൽഡ് കാണുന്നില്ല</translation>
+    </message>
+    <message>
+        <source>JSON configuration format is invalid.</source>
+        <translation>JSON കോൺഫിഗറേഷൻ ഫോർമാറ്റ് സാധുതയില്ലാത്തതാണ്.</translation>
+    </message>
+</context>
+<context>
+    <name>TextParse</name>
+    <message>
+        <source>Unable to open file: %1</source>
+        <translation>ഫയൽ തുറക്കാൻ കഴിയില്ല: %1</translation>
+    </message>
+    <message>
+        <source>The file content is in binary format</source>
+        <translation>ഫയൽ ഉള്ളടക്കം ബൈനറി ഫോർമാറ്റിലാണ്</translation>
+    </message>
+    <message>
+        <source>Unable to read file: %1</source>
+        <translation>ഫയൽ വായിക്കാൻ കഴിയില്ല: %1</translation>
+    </message>
+</context>
+<context>
+    <name>TitleBarMenu</name>
+    <message>
+        <source>Feedback</source>
+        <translation>അഭിപ്രായം</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>ലൈറ്റ് തീം</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>ഡാർക്ക് തീം</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>സിസ്റ്റം തീം</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>തീം</translation>
+    </message>
+</context>
+<context>
+    <name>TtsCodeTranslation</name>
+    <message>
+        <source>appid authorization failed</source>
+        <translation>appid അധികാരപത്രം പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>Failed to obtain a certain parameter</source>
+        <translation>ഒരു പാരാമീറ്റർ ലഭ്യമാക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>Parameter value is illegal</source>
+        <translation>പാരാമീറ്റർ മൂല്യം അസാധുവാണ്</translation>
+    </message>
+    <message>
+        <source>Insufficient engine authorization</source>
+        <translation>എഞ്ഞിനിന് ആവശ്യമായ അധികാരപത്രം മതിയായില്ല</translation>
+    </message>
+    <message>
+        <source>Request text length is illegal</source>
+        <translation>അപേക്ഷിച്ച ടെക്സ്റ്റിന്റെ നീളം അസാധുവാണ്</translation>
+    </message>
+    <message>
+        <source>session timeout</source>
+        <translation>സെഷൻ സമയം കഴിഞ്ഞു</translation>
+    </message>
+    <message>
+        <source>Engine session ended</source>
+        <translation>എഞ്ചിൻ സെഷൻ അവസാനിച്ചു</translation>
+    </message>
+    <message>
+        <source>appid cannot be empty</source>
+        <translation>appid ശൂന്യമാകരുത്</translation>
+    </message>
+    <message>
+        <source>Illegal version</source>
+        <translation>അസാധുവായ പതിപ്പ്</translation>
+    </message>
+    <message>
+        <source>permission denied</source>
+        <translation>അനുമതി നിഷേധിച്ചു</translation>
+    </message>
+    <message>
+        <source>Daily flow control exceeds limit</source>
+        <translation>ദൈനംദിന നിയന്ത്രണം പരിധി കവിഞ്ഞു</translation>
+    </message>
+    <message>
+        <source>The request data format is illegal</source>
+        <translation>അപേക്ഷിച്ച ഡാറ്റാ ഫോർമാറ്റ് അസാധുവാണ്</translation>
+    </message>
+    <message>
+        <source>base64 decoding failed</source>
+        <translation>base64 ഡീകോഡിംഗ് പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>Required parameters are missing or the parameters are illegal</source>
+        <translation>ആവശ്യമായ പാരാമീറ്ററുകൾ കാണുന്നില്ല അല്ലെങ്കിൽ പാരാമീറ്ററുകൾ അസാധുവാണ്</translation>
+    </message>
+    <message>
+        <source>Reading data timeout</source>
+        <translation>ഡാറ്റാ വായിക്കുമ്പോൾ സമയം കഴിഞ്ഞു</translation>
+    </message>
+    <message>
+        <source>network anomaly</source>
+        <translation>നെറ്റ്‌വർക്ക് പ്രശ്നം</translation>
+    </message>
+    <message>
+        <source>Connection failed, please check the fill in information.</source>
+        <translation>കണക്ഷൻ പരാജയപ്പെട്ടു, ദയവായി നൽകിയ വിവരങ്ങൾ പരിശോധിക്കുക.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
-        <translation>ഞാൻ ഇതുവരെ ഈ സവിശേഷത നടപ്പാക്കിയിട്ടില്ല.</translation>
+        <translation>ഞാൻ ഈ സവിശേഷത ഇതുവരെ നടപ്പാക്കിയിട്ടില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>സേവനം ലഭ്യമല്ല!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>അസാധുവായ പാരാമീറ്റർ!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
-        <translation>ഈ ആപ്പ് കണ്ടെത്താൻ കഴിയുന്നില്ല!</translation>
+        <translation>ഈ ആപ്പ് കണ്ടെത്താനായില്ല!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
-        <translation>ആപ്ലിക്കേഷൻ ആരംഭിക്കുന്നതിൽ പരാജയം!</translation>
-    </message>
-</context>
-<context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">പ്രകാശം ഇതിനകം പരമാവധി ആണ്, കൂടുതൽ വർദ്ധിപ്പിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">പ്രകാശം ഇതിനകം ഏറ്റവും കുറഞ്ഞതാണ്, കൂടുതൽ കുറയ്ക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">നിങ്ങളുടെ സിസ്റ്റം മെമ്മറി %0 ആണ്.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">ഭാഷാ സജ്ജീകരണ ഇന്റർഫേസ് തുറന്നിരിക്കുന്നു. ദയവായി ഈ ഇന്റർഫേസിൽ സജ്ജീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">നിലവിലെ മോഡ് ഇതിനകം %1 മോഡ് ആണ്.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">നിലവിലെ മോഡ് %1 ടാർഗെറ്റ് മോഡുമായി പൊരുത്തപ്പെടാത്തതിനാൽ അടയ്ക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">ബാലൻസ് മോഡ് ഓഫ് ചെയ്യാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">ലോക്ക് സ്ക്രീൻ നിങ്ങൾക്കായി തുറന്നിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">സ്ക്രീൻ ഷോട്ട് എടുക്കൽ അല്ലെങ്കിൽ റെക്കോർഡിംഗ് പൂർത്തിയായി</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">ഒരു സ്ക്രീൻ മാത്രമുണ്ട്, സ്ക്രീൻ മോഡ് മാറ്റാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">ഇത് നിലവിലെ ഡിസ്പ്ലേ മോഡിന് സമാനമാണ്. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">ഒരു സ്ക്രീൻ മാത്രമുണ്ട്, സ്ക്രീൻ മാറ്റാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">നിങ്ങളുടെ കമാൻഡ് ഇഷ്യൂ ചെയ്തിരിക്കുന്നു.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">UOS AI ഉപയോക്തൃ ഉടമ്പടി</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">എനിക്ക് 18 വയസ്സിനു മുകളിലാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. ആപ്ലിക്കേഷൻ വഴി ഞാൻ അയയ്ക്കുന്നതും സ്വീകരിക്കുന്നതുമായ ഉള്ളടക്കങ്ങൾ വലിയ മോഡൽ സേവന ദാതാവുമായുള്ള നേരിട്ടുള്ള ഡാറ്റാ എക്സ്ചേഞ്ചുകളാണെന്നും കമ്പനിയുമായി യാതൊരു ബന്ധവുമില്ലെന്നും ഞാൻ അംഗീകരിക്കുകയും സമ്മതിക്കുകയും ചെയ്യുന്നു.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">ആപ്ലിക്കേഷന്റെ ഉപയോക്തൃ അനുഭവ പദ്ധതിയിൽ പങ്കെടുക്കാൻ ഞാൻ സമ്മതിക്കുന്നു, ആപ്ലിക്കേഷൻ ഉപയോഗിക്കുമ്പോൾ ഞാൻ അയയ്ക്കുന്ന ഉള്ളടക്കങ്ങൾ, അയയ്ക്കുന്ന സമയം, അഭ്യർത്ഥിച്ച വലിയ മോഡലിന്റെ തരം, നിർദ്ദിഷ്ട ആപ്ലിക്കേഷൻ, ടെക്സ്റ്റ് ഇമേജ് വിജയകരമായി സൃഷ്ടിച്ചിട്ടുണ്ടോ എന്നത് ശേഖരിക്കാൻ നിങ്ങളുടെ കമ്പനിയെ ഞാൻ അനുമതിക്കുന്നു, സേവന നിലവാരം മെച്ചപ്പെടുത്തുന്നതിനും പ്രവർത്തന അനുഭവം വർദ്ധിപ്പിക്കുന്നതിനും. (മുകളിൽ പറഞ്ഞ വിവരങ്ങൾ നൽകാൻ നിങ്ങൾ വിസമ്മതിക്കുകയാണെങ്കിൽ, ഇത് ആപ്ലിക്കേഷന്റെ സാധാരണ ഉപയോഗത്തെ ബാധിക്കില്ല.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">സെർവർ ആന്തരിക പിശക്</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">സേവനം താത്കാലികമായി ലഭ്യമല്ല</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">വിളിക്കപ്പെട്ട API നിലവിലില്ല. ദയവായി അഭ്യർത്ഥന URL പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക. സാധാരണയായി, URL-ൽ ഇംഗ്ലീഷ് അല്ലാത്ത അക്ഷരങ്ങൾ ഉണ്ടാകാം, ഉദാഹരണത്തിന് &quot;-&quot;. നിങ്ങൾക്ക് ഇത് കൈമാറി വീണ്ടും ശ്രമിക്കാം.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">ഇന്റർഫേസ് വിളിക്കാനുള്ള അനുമതി ഇല്ല, അപ്ലിക്കേഷൻ സൃഷ്ടിക്കുമ്പോൾ ബന്ധപ്പെട്ട Qianfan ഇന്റർഫേസ് പരിശോധിച്ചിട്ടില്ല</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">മോഡൽ ഇൻവോക്കേഷൻ പിശക്: മോഡൽ അഭ്യർത്ഥന പരിധി എത്തിയിരിക്കുന്നു, അല്ലെങ്കിൽ മോഡൽ ഓഫ്ലൈനാണ്. നിർദ്ദേശങ്ങൾ: മോഡൽ വീണ്ടും ചേർക്കുക, അല്ലെങ്കിൽ ഈ പ്രശ്നം പരിഹരിക്കാൻ വലിയ മോഡൽ സേവന ദാതാവിന്റെ ഉപഭോക്തൃ സേവനത്തെ ബന്ധപ്പെടുക.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">ടോക്കൻ ലഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">IAM പ്രാമാണീകരണം പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">അപ്ലിക്കേഷൻ നിലവിലില്ല അല്ലെങ്കിൽ സൃഷ്ടിക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">പ്രതിദിന അഭ്യർത്ഥനകളുടെ എണ്ണം പരിധി കവിഞ്ഞിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">ആകെ അഭ്യർത്ഥനകളുടെ എണ്ണം പരിധി കവിഞ്ഞിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">അസാധുവായ access_token പാരാമീറ്റർ</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">access_token അസാധുവാണ്</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">access ടോക്കൻ കാലഹരണപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">സേവന പിശക്, ടെംപ്ലേറ്റ് നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">ഒരു സിസ്റ്റം പിശക് സംഭവിച്ചു, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">അറിവ് ബേസ് സെർവറിലേക്ക് പ്രവേശിക്കാൻ കഴിയില്ല</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">അറിവ് ബേസ് ഡാറ്റ ഡൗൺലോഡ് ഒഴിവാക്കൽ</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">പ്രോംപ്റ്റ് വാക്ക് വളരെ നീളമുള്ളതാണ്</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">മോഡൽ നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">അഭ്യർത്ഥന പാരാമീറ്റർ പിശക്</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">ഇമേജ് പ്രോസസ്സിംഗ് പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">സേവന ഹാൻഡ്ലിംഗ് ഒഴിവാക്കൽ പിശക്</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">സേവന ആന്തരിക പിശക്</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">ഇൻപുട്ട് പാരാമീറ്റർ ഫോർമാറ്റ് തെറ്റാണ്, ആവശ്യമായ പാരാമീറ്ററുകൾ കാണുന്നില്ല.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">ഇൻപുട്ട് പാരാമീറ്റർ ബോഡി സ്റ്റാൻഡേർഡ് JSON ഫോർമാറ്റിൽ അല്ല</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">പാരാമീറ്റർ പരിശോധന അനൗപചാരികമാണ്</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">അനുമതി നിയന്ത്രണ പിശക്</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">കസ്റ്റമൈസ്ഡ് മോഡൽ സേവന apiname നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">സേവന ആന്തരിക പിശക്, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">അനൗപചാരിക HTTP മെത്തേഡ്, നിലവിൽ POST അഭ്യർത്ഥനകൾ മാത്രമേ പിന്തുണയ്ക്കുന്നുള്ളൂ</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">അഭ്യർത്ഥിച്ച ഉള്ളടക്കം വലിയ മോഡൽ ആന്തരിക പരിധി കവിയുന്നു</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">ആന്തരിക പിശക്</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">വിൻസെന്റ് ഡയഗ്രം മോഡൽ സേവനം ടൈംഔട്ട്</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">പ്രോംപ്റ്റ്, നെഗറ്റീവ്_പ്രോംപ്റ്റ് എന്നിവയിൽ സുരക്ഷാ പ്രശ്നങ്ങളുണ്ട്</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">ഔട്ട്പുട്ട് ചിത്രങ്ങളിൽ സുരക്ഷാ പ്രശ്നങ്ങളുണ്ട്</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">പാരാമീറ്റർ പിശക്</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">പ്രവേശനമില്ല</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">ചിത്ര വിവരണം 256 അക്ഷര പരിധി കവിയുന്നു</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">UOS AI-യിലേക്ക് സ്വാഗതം</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, നിങ്ങളുടെ സ്മാർട്ട് അസിസ്റ്റന്റ്, നിങ്ങളുടെ ഉൽപാദനക്ഷമത മെച്ചപ്പെടുത്താനും ഉയർന്ന നിലവാരമുള്ള ജോലി അനുഭവം ആസ്വദിക്കാനും രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">ഒരു സ trial ജന്യ ട്രയൽ അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">മോഡൽ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">ഉപയോഗം ആരംഭിക്കുക</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">എനിക്ക് 18 വയസ്സിനു മുകളിലാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. ഞാൻ അംഗീകരിക്കുകയും &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI ഉപയോക്തൃ ഉടമ്പടി&quot;&lt;/a&gt; യോട് യോജിക്കുകയും ചെയ്യുന്നു, ഞാൻ ആപ്ലിക്കേഷൻ വഴി അയയ്ക്കുന്നതും സ്വീകരിക്കുന്നതുമായ ഉള്ളടക്കങ്ങൾ വലിയ മോഡൽ സേവന ദാതാവുമായുള്ള നേരിട്ടുള്ള ഡാറ്റാ കൈമാറ്റങ്ങളാണ്, കമ്പനിയുമായി യാതൊരു ബന്ധവുമില്ല.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">ഒരു അക്കൗണ്ട് സ്വീകരിക്കുന്നത് നിങ്ങൾ ഈ ഇവന്റിന്റെ നിബന്ധനകൾ മനസ്സിലാക്കുകയും അംഗീകരിക്കുകയും ചെയ്യുന്നുവെന്ന് സൂചിപ്പിക്കുന്നു,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;ഇവന്റ് വിശദാംശങ്ങൾ&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ട്</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">സംരക്ഷിക്കുന്നതിൽ പരാജയപ്പെട്ടു, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗങ്ങളുടെ എണ്ണവും ദൈർഘ്യവും പരിമിതമാണ്, ദയവായി സമയത്തിനുള്ളിൽ നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് ക configure ണ്ഫിഗർ ചെയ്യുക! വിശദാംശങ്ങൾക്കായി ഇവന്റ് വിശദാംശങ്ങൾ കാണുക.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ടുകൾക്കുള്ള ഇംഗ്ലീഷ് പിന്തുണ തൃപ്തികരമല്ല. ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗസംഖ്യയും കാലാവധിയും പരിമിതമാണ്. ദയവായി സമയത്ത് താങ്കളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് ക്രമീകരിക്കുക!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">ട്രയൽ ആരംഭിക്കുക</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">സ trial ജന്യ അക്കൗണ്ട് പ്രവർത്തനം അവസാനിച്ചു.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">സെർവറുമായി ബന്ധിപ്പിക്കാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">ആപ്ലിക്കേഷന്റെ ഉപയോക്തൃ അനുഭവ പദ്ധതിയിൽ പങ്കെടുക്കാൻ ഞാൻ സമ്മതിക്കുന്നു, ആപ്ലിക്കേഷൻ ഉപയോഗിക്കുമ്പോൾ ഞാൻ അയയ്ക്കുന്ന ഉള്ളടക്കങ്ങൾ, അയയ്ക്കുന്ന സമയം, അഭ്യർത്ഥിച്ച വലിയ മോഡലിന്റെ തരം, നിർദ്ദിഷ്ട ആപ്ലിക്കേഷൻ, വാചകം ചിത്രം വിജയകരമായി സൃഷ്ടിച്ചിട്ടുണ്ടോ എന്നത് ശേഖരിക്കാൻ നിങ്ങളുടെ കമ്പനിയെ അനുവദിക്കുന്നു, സേവന നിലവാരം മെച്ചപ്പെടുത്താനും പ്രവർത്തന അനുഭവം വർദ്ധിപ്പിക്കാനും. (നിങ്ങൾ മുകളിൽ പറഞ്ഞ വിവരങ്ങൾ നൽകാൻ വിസമ്മതിച്ചാൽ, ഇത് ആപ്ലിക്കേഷന്റെ സാധാരണ ഉപയോഗത്തെ ബാധിക്കില്ല.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ആപ്ലിക്കേഷൻ ആരംഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു!</translation>
     </message>
 </context>
 <context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>കുറിപ്പ്: രേഖയുടെ ഉള്ളടക്കത്തിന്റെ ഒരു ഭാഗം AI ഉപയോഗിച്ച് സൃഷ്ടിച്ചതാവാം</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>റഫറൻസുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>വേഡ് ഫയലുകൾ (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>PDF ഫയലുകൾ (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>മാർക്ക്ഡൗൺ ഫയലുകൾ (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">WebSocket-ലേക്ക് അപ്ഗ്രേഡ് ചെയ്യുമ്പോൾ പിശക്</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">WebSocket വഴി ഉപയോക്താവിന്റെ സന്ദേശം വായിക്കുന്നതിൽ പിശക്</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">WebSocket വഴി ഉപയോക്താവിന് സന്ദേശം അയയ്ക്കുന്നതിൽ പിശക്</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">ഉപയോക്താവിന്റെ സന്ദേശ ഫോർമാറ്റ് തെറ്റാണ്</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">ഉപയോക്തൃ ഡാറ്റയ്ക്കുള്ള സ്കീമ പിശക്</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">ഉപയോക്തൃ പാരാമീറ്റർ മൂല്യം തെറ്റാണ്</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">ഉപയോക്തൃ സമാന്തര പിശക്: നിലവിലെ ഉപയോക്താവ് ഇതിനകം ബന്ധിപ്പിച്ചിരിക്കുന്നു, ഒരേ ഉപയോക്താവിന് ഒരേ സമയം ഒന്നിലധികം സ്ഥലങ്ങളിൽ ബന്ധിപ്പിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">ഉപയോക്തൃ ട്രാഫിക് പരിമിതപ്പെടുത്തിയിരിക്കുന്നു: സേവനം ഉപയോക്താവിന്റെ നിലവിലെ പ്രശ്നം പ്രോസസ്സ് ചെയ്യുന്നു, ഒരു പുതിയ അഭ്യർത്ഥന അയയ്ക്കുന്നതിന് മുമ്പ് പ്രോസസ്സിംഗ് പൂർത്തിയാകാൻ കാത്തിരിക്കേണ്ടതുണ്ട്. (അടുത്ത ചോദ്യം അയയ്ക്കുന്നതിന് മുമ്പ് മോഡലിൽ നിന്ന് ഒരു പൂർണ്ണമായ മറുപടി കാത്തിരിക്കണം)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">സേവന ശേഷി പര്യാപ്തമല്ല, ദയവായി സ്റ്റാഫുമായി ബന്ധപ്പെടുക</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">എഞ്ചിനുമായി കണക്ഷൻ സ്ഥാപിക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">എഞ്ചിൻ ഡാറ്റ സ്വീകരിക്കുന്നതിൽ പിശക്</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">എഞ്ചിനിലേക്ക് ഡാറ്റ അയയ്ക്കുന്നതിൽ പിശക്</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">എഞ്ചിൻ ആന്തരിക പിശക്</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">ഇൻപുട്ട് ഉള്ളടക്കം അവലോകനം പാസാകുന്നില്ല, നിയമങ്ങൾ ലംഘിക്കുന്നതായി സംശയിക്കപ്പെടുന്നു. ദയവായി ഇൻപുട്ട് ഉള്ളടക്കം വീണ്ടും ക്രമീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">ഔട്ട്പുട്ട് ഉള്ളടക്കത്തിൽ സെൻസിറ്റീവ് വിവരങ്ങൾ ഉൾപ്പെടുന്നു, അവലോകനം പരാജയപ്പെട്ടു, തുടർന്നുള്ള ഫലങ്ങൾ ഉപയോക്താവിന് പ്രദർശിപ്പിക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">appid ബ്ലാക്ക്ലിസ്റ്റിലാണ്</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Appid ഓഥറൈസേഷൻ ക്ലാസ് പിശക്. ഉദാഹരണത്തിന്: ഈ ഫംഗ്ഷൻ ആക്ടിവേറ്റ് ചെയ്തിട്ടില്ല, അനുബന്ധ പതിപ്പ് ആക്ടിവേറ്റ് ചെയ്തിട്ടില്ല, ടോക്കൺ പര്യാപ്തമല്ല, സമാന്തരത്വം ഓഥറൈസേഷൻ കവിയുന്നു, മുതലായവ.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">ചരിത്രം മായ്ക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">ഈ സെഷന്റെ ഉള്ളടക്കത്തിൽ നിയമവിരുദ്ധമായ വിവരങ്ങൾ ഉൾപ്പെടാനുള്ള സാധ്യതയുണ്ടെന്ന് സൂചിപ്പിക്കുന്നു; ഈ പിശക് കോഡ് ലഭിച്ച ശേഷം ഡെവലപ്പർമാർ ഉപയോക്താവിന് നിയമവിരുദ്ധമായ വിവരങ്ങൾ ഉൾപ്പെടുത്തുന്നതിന് ഒരു പ്രോംപ്റ്റ് നൽകാൻ ശുപാർശ ചെയ്യുന്നു.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">സേവനം തിരക്കിലാണ്, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">അഭ്യർത്ഥന എഞ്ചിന്റെ പാരാമീറ്ററുകൾ അസാധാരണമാണ്, എഞ്ചിൻ സ്കീമ പരിശോധന പരാജയപ്പെട്ടു.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">എഞ്ചിൻ നെറ്റ്വർക്ക് അസാധാരണത്വം</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">ടോക്കണുകളുടെ എണ്ണം പരമാവധി പരിധി കവിഞ്ഞിരിക്കുന്നു. സംഭാഷണ ചരിത്രത്തിലെയും ചോദ്യത്തിലെയും വാക്കുകളുടെ എണ്ണം വളരെ വലുതാണ്, ലളിതമാക്കേണ്ടതുണ്ട്.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">ഓഥറൈസേഷൻ പിശക്: appId ന് ബന്ധപ്പെട്ട ഫംഗ്ഷനുകൾക്കായി ഓഥറൈസേഷൻ ഇല്ല അല്ലെങ്കിൽ ബിസിനസ് വോളിയം പരിധി കവിഞ്ഞിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">ഓഥറൈസേഷൻ പിശക്: ദിവസേനയുള്ള ഫ്ലോ കൺട്രോൾ പരിധി കവിഞ്ഞിരിക്കുന്നു. ദിവസത്തെ പരമാവധി സന്ദർശനങ്ങളുടെ എണ്ണം കവിഞ്ഞിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">നിലവിൽ വളരെയധികം സന്ദർശകരുണ്ട്, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">കണക്ഷൻ പരാജയപ്പെട്ടു, ദയവായി പൂരിപ്പിച്ച വിവരങ്ങൾ പരിശോധിക്കുക.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">സെർവർ ആന്തരിക പിശക്</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">ഓഥന്റിക്കേഷൻ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">ഹെഡറിൽ ഓഥന്റിക്കേഷൻ പാരാമീറ്റർ ലഭിച്ചില്ല, ഓഥന്റിക്കേഷൻ നടത്താൻ കഴിഞ്ഞില്ല.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">ഓഥന്റിക്കേഷൻ ടോക്കൺ നിയമവിരുദ്ധമാണ്. ഓഥന്റിക്കേഷൻ ടോക്കൺ ശരിയായി ഡെലിവർ ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">ഓഥന്റിക്കേഷൻ ടോക്കൺ കാലഹരണപ്പെട്ടിരിക്കുന്നു, ദയവായി അത് വീണ്ടും ജനറേറ്റ് ചെയ്യുക/ലഭിക്കുക</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">ഓഥന്റിക്കേഷൻ ടോക്കൺ വഴി പരിശോധന പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">അക്കൗണ്ട് വായനയും എഴുത്തും</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">നിങ്ങളുടെ അക്കൗണ്ട് നിലവിൽ നിഷ്ക്രിയമാണ്. ദയവായി അക്കൗണ്ട് വിവരങ്ങൾ പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">നിങ്ങളുടെ അക്കൗണ്ട് നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">നിങ്ങളുടെ അക്കൗണ്ട് ലോക്ക് ചെയ്തിരിക്കുന്നു, അൺലോക്ക് ചെയ്യാൻ ദയവായി ഉപഭോക്തൃ സേവനത്തെ ബന്ധപ്പെടുക</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">നിങ്ങളുടെ അക്കൗണ്ടിൽ പണം ചെലവഴിച്ചിട്ടുണ്ട്, ദയവായി റീചാർജ് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">നിങ്ങളുടെ അക്കൗണ്ടിലേക്ക് വിജയകരമായി ആക്സസ് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">API കോൾ പിശക്</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">API കോൾ പാരാമീറ്ററുകൾ തെറ്റാണ്, ദയവായി ഡോക്യുമെന്റേഷൻ പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">മോഡൽ നിലവിലില്ല, ദയവായി മോഡൽ കോഡ് പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">നിലവിലെ മോഡൽ ${method} കോളിംഗ് രീതി പിന്തുണയ്ക്കുന്നില്ല</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">${field} പാരാമീറ്ററുകൾ സാധാരണയായി ലഭിച്ചിട്ടില്ല</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">${field} പാരാമീറ്റർ നിയമവിരുദ്ധമാണ്. ദയവായി ഡോക്യുമെന്റേഷൻ പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} ഉം ${field2} ഉം ഒരേ സമയം സജ്ജമാക്കാൻ കഴിയില്ല, ദയവായി ഡോക്യുമെന്റേഷൻ പരിശോധിക്കുക</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">നിങ്ങൾക്ക് ${API_name} ലേക്ക് ആക്സസ് ഇല്ല</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">API ${API_name} ഓഫ്ലൈനാണ്</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">API ${API_name} നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">API കോൾ പ്രക്രിയ പിശക്</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">നിങ്ങൾ അഭ്യർത്ഥിച്ചു: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">അസിൻക്രണസ് അഭ്യർത്ഥന ഫലങ്ങൾ ലഭിക്കുമ്പോൾ, ദയവായി task_id ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">ടാസ്ക്: ${task_id} നിലവിലില്ല</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">നെറ്റ്വർക്ക് പിശക്, പിശക് ഐഡി: ${error_id}, ദയവായി ഉപഭോക്തൃ സേവനത്തെ ബന്ധപ്പെടുക</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">API റൺ പിശക്</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">പ്രോംപ്റ്റ് വളരെ നീളമുള്ളതാണ്</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">പോളിസി പ്രകാരം API കോൾ തടയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">സിസ്റ്റം കണ്ടെത്തിയിരിക്കുന്നു, ഇൻപുട്ട് അല്ലെങ്കിൽ ഉത്പാദിപ്പിച്ച ഉള്ളടക്കത്തിൽ അസുഖകരമോ സെൻസിറ്റീവോ ആയ ഉള്ളടക്കം അടങ്ങിയിരിക്കാം. സെൻസിറ്റീവ് ഉള്ളടക്കം എളുപ്പത്തിൽ ഉത്പാദിപ്പിക്കാൻ കഴിയുന്ന പ്രോംപ്റ്റുകൾ നൽകുന്നത് ഒഴിവാക്കുക. നിങ്ങളുടെ സഹകരണത്തിന് നന്ദി.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">നിലവിൽ വളരെയധികം സന്ദർശകരുണ്ട്, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">ഈ API ഇന്നത്തെ കോളുകളുടെ പരിധി എത്തിയിരിക്കുന്നു. നിങ്ങൾക്ക് കൂടുതൽ ആവശ്യമുണ്ടെങ്കിൽ, ദയവായി വാങ്ങാൻ ഉപഭോക്തൃ സേവനത്തെ ബന്ധപ്പെടുക.</translation>
+        <translation>ലേഖനം സൂക്ഷിക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">ഇനിപ്പറയുന്ന ടെക്സ്റ്റ് എനിക്കായി ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന ടെക്സ്റ്റ് എനിക്കായി ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">ഇനിപ്പറയുന്ന ഡോക്യുമെന്റ് ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന രേഖ ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>AI വ്യവസായത്തിൽ &apos;ഏജന്റ്&apos; എന്ന വാക്കിന്റെ അർത്ഥം എന്താണ്?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">ഇനിപ്പറയുന്ന ഉള്ളടക്കം ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക. ആവശ്യകതകൾ: അർത്ഥത്തിൽ കൃത്യത, ഭാഷയിൽ ഔപചാരികതയും പ്രൊഫഷണലിസവും.</translation>
+        <translation>ദയവായി താഴെ നൽകിയിരിക്കുന്ന ഉള്ളടക്കം ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക. ആവശ്യങ്ങൾ: അർത്ഥത്തിൽ കൃത്യമായിരിക്കണം, ഭാഷ ഔപചാരികവും പ്രൊഫഷണലുമായിരിക്കണം.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">ഇംഗ്ലീഷിൽ ഒരു സുഹൃത്തിനെ സംബോധന ചെയ്യുന്നതിനുള്ള ചില സാമാന്യവാക്കുകൾ എന്തൊക്കെയാണ്?</translation>
+        <translation>ഇംഗ്ലീഷിൽ ഒരു സുഹൃത്തിനെ സംബോധന ചെയ്യാനുള്ള ചില സംസാരരീതികൾ എന്തൊക്കെയാണ്?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">ഇനിപ്പറയുന്ന ക്ലാസിക്കൽ ചൈനീസ് ടെക്സ്റ്റ് ആധുനിക ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന പുരാതന ചൈനീസ് ടെക്സ്റ്റ് ആധുനിക ചൈനീസിലേക്ക് വിവർത്തനം ചെയ്യുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>ഇന്ന് </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>ഇന്നലെ </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI ഒരു ഡെസ്ക്ടോപ്പ് സ്മാർട്ട് അസിസ്റ്റന്റാണ്, നിങ്ങളുടെ സ്വകാര്യ അസിസ്റ്റന്റ്! നിങ്ങൾക്ക് ഇതുമായി ടെക്സ്റ്റ് അല്ലെങ്കിൽ ശബ്ദം ഉപയോഗിച്ച് ആശയവിനിമയം നടത്താം, ഇത് ചോദ്യങൾക്ക് ഉത്തരം നൽകാനും, വിവരങ്ങൾ നൽകാനും, നിങ്ങളുടെ വിവരണങ്ങൾ അടിസ്ഥാനമാക്കി ചിത്രങ്ങൾ സൃഷ്ടിക്കാനും സഹായിക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">ഫയലിംഗ് വിവരം</translation>
+        <translation>രേഖാ വിവരങ്ങൾ</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">മോഡൽ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API കീ</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">ആവശ്യമാണ്, ദയവായി നൽകുക</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">അക്കൗണ്ട്</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">ആവശ്യമാണ്, ഒന്നിലധികം മോഡലുകൾ വേർതിരിച്ചറിയാൻ</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">മോഡൽ പേര്</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">ഓപ്ഷണൽ</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">ഡൊമെയ്ൻ</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">മോഡൽ ലഭ്യമാണോ എന്ന് പരിശോധിക്കാൻ, സിസ്റ്റം വലിയ മോഡലിലേക്ക് പരീക്ഷണ വിവരങ്ങൾ അയയ്ക്കുന്നു, ഇത് ഒരു ചെറിയ അളവിൽ ടോക്കണുകൾ ഉപയോഗിക്കും.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">റദ്ദാക്കുക</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">20 അക്ഷരങ്ങൾക്ക് മുകളിൽ അല്ല</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">ഈ LLM ഇതിനകം നിലവിലുണ്ട്, ദയവായി വീണ്ടും ചേർക്കരുത്.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">സംരക്ഷിക്കുന്നതിൽ പരാജയപ്പെട്ടു, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">അക്കൗണ്ട് പേര് ഇതിനകം നിലവിലുണ്ട്, ദയവായി അത് മാറ്റുക</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">പ്രോക്സി സജ്ജീകരണങ്ങൾക്കായി, ദയവായി സിസ്റ്റം പ്രോക്സി സജ്ജീകരണങ്ങളിലേക്ക് പോകുക</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">സജ്ജീകരണങ്ങളിലേക്ക് പോകുക</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI ഉപയോഗിക്കുന്നതിന് മുമ്പ് ഒരു AI മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആദ്യം ഒരു മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>സ്കിൽ ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
-        <translation>സ്കിൽ പേര്</translation>
+        <translation>സ്കില്ലിന്റെ പേര്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
-        <translation>സ്കിൽ പേര് നൽകുക</translation>
+        <translation>സ്കില്ലിന്റെ പേര് നൽകുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>സ്കിൽ കമാൻഡ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
-        <translation>വാക്ക് തിരഞ്ഞെടുപ്പ് വഴി തിരഞ്ഞെടുത്ത ടെക്സ്റ്റിനെ പ്രതിനിധീകരിക്കുന്നു.</translation>
+        <translation>വാക്ക് തിരഞ്ഞെടുക്കൽ വഴി തിരഞ്ഞെടുത്ത ടെക്സ്റ്റിനെ പ്രതിനിധാനം ചെയ്യുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>നിർദ്ദേശങ്ങൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
-        <translation>സംരക്ഷിക്കുക</translation>
+        <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
-        <translation>സ്കിൽ പേര് ശൂന്യമാകാൻ പാടില്ല</translation>
+        <translation>സേവ് ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
+        <translation>സ്കില്ലിന്റെ പേര് ശൂന്യമാകാൻ പാടില്ല</translation>
+    </message>
+    <message>
+        <source>Exceeded character limit</source>
         <translation>അക്ഷര പരിധി കവിഞ്ഞു</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
-        <source>Exceeded character limit</source>
-        <translation>സ്കിൽ പേര് ഇതിനകം നിലവിലുണ്ട്.</translation>
+        <source>The skill name already exists.</source>
+        <translation>സ്കില്ലിന്റെ പേര് ഇതിനകം നിലവിലുണ്ട്.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
-        <source>The skill name already exists.</source>
+        <source>Command Instructions</source>
         <translation>കമാൻഡ് നിർദ്ദേശങ്ങൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
-        <source>Command Instructions</source>
-        <translation>തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് &quot;Hello&quot; വിവർത്തനം ചെയ്യാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെങ്കിൽ, മുകളിൽ കാണിച്ചിരിക്കുന്നതുപോലെ, നിങ്ങൾക്ക് കമാൻഡ് നൽകാം: Translate {selection} into English.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>അഡ്വാൻസ്ഡ് ടിപ്പുകൾ</translation>
+        <translation>മുകളിൽ കാണിച്ചതുപോലെ, തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് &quot;Hello&quot; വിവർത്തനം ചെയ്യാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നെങ്കിൽ, നിങ്ങൾ ഇനിപ്പറയുന്ന കമാൻഡ് നൽകാം: Translate {selection} into English.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
-        <translation>അഡ്വാൻസ്ഡ് ടിപ്പുകൾ</translation>
+        <translation>വിപുലമായ സൂചനകൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>ലേബൽ ക്ലിക്ക് ചെയ്യുന്നതിലൂടെ അത് ഇൻപുട്ട് ഫീൽഡിലേക്ക് ഇൻസേർട്ട് ചെയ്യാം.</translation>
+        <translation>കമാൻഡ് കൂടുതൽ പ്രത്യേകമാണെങ്കിൽ, സൃഷ്ടിച്ച ഉള്ളടക്കം അത്രയേറെ കൃത്യമായിരിക്കും. ഉദാഹരണത്തിന്:
+• {selection} എന്നതിന് 3 അധ്യായങ്ങളും 10 പ്രധാന പോയിന്റുകളുമുള്ള ഒരു PPT രൂപരേഖ സൃഷ്ടിക്കുക.
+• {selection} എന്നതിനെ 100 വാക്കുകൾക്കുള്ളിൽ ടീം വർക്ക് എടുക്കുന്നത് എടുത്തുകാണിച്ചുകൊണ്ട് ഒരു റിക്രൂട്ട്മെന്റ് കോപ്പിയായി മെരുക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
-        <translation>ശരി</translation>
+        <translation>ലേബലിൽ ക്ലിക്ക് ചെയ്യുന്നത് ഇൻപെട്ട് ഫീൽഡിൽ അത് ഇൻസേർട്ട് ചെയ്യാൻ സഹായിക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
-        <translation>DDE ഷെൽ AI ബാർ</translation>
+        <translation>ശരി</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
-        <translation>DDE ഷെൽ AI ബാർ</translation>
+        <translation>DDE Shell AI Bar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
         <translation>ഫയലുകൾ വേഗത്തിൽ വലിച്ചിടുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
-        <translation>ബുദ്ധിപരമായ പ്രോസസ്സിംഗിനായി ഫയലുകൾ AI റിബണിലേക്ക് വലിച്ചിടുക</translation>
+        <translation>ബുദ്ധിമത്തമായ പ്രോസസ്സിംഗിനായി ഫയലുകൾ AI റിബണിലേക്ക് വലിച്ചിടുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">ലളിതമായ ചൈനീസ്</translation>
+        <translation>ലളിതമായ ചൈനീസ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">പരമ്പരാഗത ചൈനീസ്</translation>
+        <translation>പരമ്പരാഗത ചൈനീസ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">റഷ്യൻ</translation>
+        <translation>ടിബറ്റൻ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">ഇംഗ്ലീഷ്</translation>
+        <translation>ഇംഗ്ലീഷ്</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">ജാപ്പനീസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">ജാപ്പനീസ്</translation>
+        <translation>ജാപ്പനീസ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">ജർമ്മൻ</translation>
+        <translation>ജർമ്മൻ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">സ്പാനിഷ്</translation>
+        <translation>സ്പാനിഷ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">ഫ്രഞ്ച്</translation>
+        <translation>ഫ്രഞ്ച്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">ഇറ്റാലിയൻ</translation>
+        <translation>ഇറ്റാലിയൻ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">കൊറിയൻ</translation>
+        <translation>കൊറിയൻ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">മലയാളം</translation>
+        <translation>മലായ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">പോർച്ചുഗീസ്</translation>
+        <translation>പോർച്ചുഗീസ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">റഷ്യൻ</translation>
+        <translation>റഷ്യൻ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">തായ്</translation>
+        <translation>തായ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">വിയറ്റ്നാമീസ്</translation>
+        <translation>വിയറ്റ്നാമീസ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">ടൈപ്പ്</translation>
+        <translation>ടൈപ്പ്</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
-        <source>Read Aloud</source>
-        <translation type="unfinished">ഉച്ചത്തിൽ വായിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished">ടെക്സ്റ്റിലേക്ക് പേസ്റ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">സംഭാഷണം തുടരുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">യാന്ത്രിക കണ്ടെത്തൽ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished">തിരയുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished">വിശദീകരിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished">സംഗ്രഹം</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished">വിവർത്തനം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">എഴുതുന്നത് തുടരുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished">വികസിപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished">ശരിയാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">വിവർത്തന ഫലം മോഡലിന്റെ കഴിവുകളാൽ പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. വിവർത്തനത്തിൽ നിങ്ങൾക്ക് തൃപ്തിയില്ലെങ്കിൽ, UOS AI ഹോം പേജിലെ മറ്റ് മോഡലുകളിലേക്ക് മാറുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">ശരി</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">ഈ പാസേജ് %1 ലേക്ക് വിവർത്തനം ചെയ്ത് എനിക്ക് വ്യക്തമായ ഫലം നേരിട്ട് തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">ക്ലിക്ക് ചെയ്യാനാവില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">ഓഡിയോ ഉപകരണം കണ്ടെത്തിയില്ല, ദയവായി പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">ശരി</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished">ചേർത്തു</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished">പകർത്തി</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">ഈ പാസേജ് ലളിതമായ ഭാഷയിൽ വിശദീകരിക്കുക. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">ഈ പാസേജ് സംഗ്രഹിച്ച് മറ്റേതെങ്കിലും അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം നേരിട്ട് തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">ഈ പാസേജ് യോജിച്ച രീതിയിൽ തുടരുക. ധാരാളം വാക്കുകൾ ആവശ്യമില്ല. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">ഈ പാസേജ് യോജിച്ച രീതിയിൽ വികസിപ്പിക്കുക. വളരെ നീണ്ട ടെക്സ്റ്റ് ആവശ്യമില്ല. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">ഈ പാസേജിൽ എന്തെങ്കിലും ടൈപ്പോസ് ഉണ്ടോ എന്ന് പരിശോധിക്കുക. ഉണ്ടെങ്കിൽ, പിശകുകളുടെ സ്ഥാനം സൂചിപ്പിക്കുക. അനാവശ്യമായ ഉള്ളടക്കം ഇല്ലാതെ വ്യക്തമായ ഫലം നേരിട്ട് തരുക. ടെക്സ്റ്റ്：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">ഈ ഖണ്ഡിക എനിക്കായി മിനുസപ്പെടുത്തുക, അധിക ഉള്ളടക്കമൊന്നും കൂടാതെ ഫലം മാത്രം തരുക. ടെക്സ്റ്റ്:</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">നിലവിലെ മോഡൽ: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished">നിലവിൽ മോഡൽ ഇല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished">കോൺഫിഗർ ചെയ്യാൻ പോകുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">എന്തെങ്കിലും ടെക്സ്റ്റ് തിരിച്ചറിഞ്ഞില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>നിങ്ങൾ സൃഷ്ടിക്കാൻ ആഗ്രഹിക്കുന്നത് നൽകുക (ജനറേറ്റ് ചെയ്യാൻ Enter അമർത്തുക/പുറത്ത് പോകാൻ Esc)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>[%1] എന്ന വിഷയത്തിൽ [വ്യക്തമായ ഘടനയും സമ്പന്നമായ ഉള്ളടക്കവും] ഉള്ള ഒരു ലേഖനം എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>കൃത്രിമബുദ്ധി</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>[%1] എന്ന വിഷയത്തിൽ [PPT നിർമ്മാണത്തിന്] ഉപയോഗിക്കാവുന്ന ഒരു ഔട്ലൈൻ എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>[%1] എന്നതിനെക്കുറിച്ച് ഒരു നോട്ടീസ് എഴുതാൻ എന്നെ സഹായിക്കുക, സ്വീകർത്താവ് [എല്ലാ ജീവനക്കാരും], അയച്ചയാൾ [അഡ്മിനിസ്ട്രേഷൻ ഡിപ്പാർട്ട്മെന്റ്].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>ദേശീയ ദിന അവധി</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>[%1] എന്നതിനെക്കുറിച്ച് ഒരു ഗവേഷണ റിപ്പോർട്ട് എഴുതാൻ എന്നെ സഹായിക്കുക, കുറഞ്ഞത് [സ്ഥിതി വിവരണം, പ്രശ്ന വിശകലനം, പ്രതിവിധികളും നിർദ്ദേശങ്ങളും, ഗവേഷണ നിഗമനങ്ങൾ] ഉൾപ്പെടുത്തണം.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>[%1] എന്ന വിഷയത്തിൽ [കമ്പനി നേതാക്കൾക്കായി] [വ്യക്തമായ ഘടനയും ജീവന്റെ ഭാഷയും] ആവശ്യമുള്ള ഒരു പ്രസംഗം എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>എന്റെ സമീപകാല ജോലിയുടെ ഒരു സംഗ്രഹം എഴുതാൻ എന്നെ സഹായിക്കുക, [%1], [ഫലങ്ങൾ] എന്നിവ ഉൾപ്പെടുത്തി, [ഔപചാരികമായ] ശൈലി ആവശ്യമാണ്.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>ജോലിയുടെ ഉള്ളടക്കം</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>[%1] എന്ന വിഷയത്തിൽ [വ്യക്തമായ ഘടന] ഉം [സുഖകരമായ] ശൈലിയും ആവശ്യമുള്ള ഒരു പൊതു ട്വീറ്റ് എഴുതാൻ എന്നെ സഹായിക്കുക.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">മോഡൽ കോൺഫിഗറേഷൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>കോൺഫിഗർ ചെയ്യാൻ പോകുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>AI റൈറ്റർ</translation>
+        <source>Read Aloud</source>
+        <translation>ഉചിതമായി വായിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>ലേഖനം</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>ഔട്ലൈൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>അറിയിപ്പ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>ഗവേഷണ റിപ്പോർട്ട്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>പ്രസംഗങ്ങൾ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>ജോലി സംഗ്രഹം</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>ട്വീറ്റുകൾ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
-        <translation>ടെക്സ്റ്റിലേക്ക് പേസ്റ്റ് ചെയ്യുക</translation>
+        <translation>ടെക്സ്റ്റിലേക്ക് ഒട്ടിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
-        <translation>പുനർനിർമ്മിക്കുക</translation>
+        <translation>വീണ്ടും ജനറേറ്റ് ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
-        <translation>കോപ്പി ചെയ്യുക</translation>
+        <translation>പകർത്തുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>സംഭാഷണം തുടരുക</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>AI സൃഷ്ടിച്ച ഉള്ളടക്കം റഫറൻസിന് മാത്രമാണ്, വിവരങ്ങളുടെ കൃത്യതയിൽ ശ്രദ്ധിക്കുക.</translation>
+        <translation>AI ജനറേറ്റ് ചെയ്ത ഉള്ളടക്കം പരാമർശത്തിന് മാത്രമാണ്, ദയവായി വിവരങ്ങളുടെ കൃത്യതയിൽ ശ്രദ്ധിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>ഇൻപുട്ട് മെത്തേഡ് പുനരാരംഭിച്ചശേഷം മാത്രമേ ഈ ഫംഗ്ഷൻ ഉപയോഗിക്കാൻ കഴിയൂ. ട്യൂട്ടോറിയൽ ഇപ്രകാരമാണ്:
-
-1. ടാസ്ക്ബാറിലെ ഇൻപുട്ട് മെത്തേഡ് ഐക്കണിൽ വലത്-ക്ലിക്ക് ചെയ്യുക.
-
-2. &quot;പുനരാരംഭിക്കുക&quot; ക്ലിക്ക് ചെയ്യുക.</translation>
+        <source>Automatic Detection</source>
+        <translation>സ്വയമേവ കണ്ടെത്തൽ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>തിരയുക</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>വിശദീകരിക്കുക</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>സംഗ്രഹം</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>വിവർത്തനം ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>എഴുത്ത് തുടരുക</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>വികസിപ്പിക്കുക</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>തിരുത്തുക</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>മെരുക്കുക</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>AI അറിവ് ശേഖരത്തിലേക്ക് ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>വിവർത്തന ഫലം മോഡലിന്റെ കഴിവുകൾ മൂലം പരിമിതപ്പെട്ടിരിക്കുന്നു. നിങ്ങൾക്ക് വിവർത്തനം തൃപ്തികരമല്ലെങ്കിൽ, UOS AI ഹോം പേജിലെ മറ്റ് മോഡലുകളിലേക്ക് മാറുക.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>ശരി</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>ഈ ഭാഗം %1-ലേക്ക് വിവർത്തനം ചെയ്ത് എനിക്ക് നേരിട്ട് വ്യക്തമായ ഫലം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>ക്ലിക്ക് ചെയ്യാൻ കഴിയില്ല</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>ഓഡിയോ ഉപകരണം കണ്ടെത്തിയില്ല, ദയവായി പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>ശരി</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
-        <source>Copied</source>
-        <translation>പകർത്തി</translation>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>ഈ പ്രവർത്തനം ഇൻപുട്ട് രീതി വീണ്ടും ആരംഭിച്ച ശേഷം മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ. നിർദ്ദേശങ്ങൾ താഴെ നൽകുന്നു:
+1. ടാസ്‌ക്ബാറിലെ ഇൻപുട്ട് രീതി ഐക്കണിൽ വലത് ക്ലിക്ക് ചെയ്യുക.
+2. &quot;വീണ്ടും ആരംഭിക്കുക&quot; എന്നതിൽ ക്ലിക്ക് ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
-        <source>Current model: </source>
-        <translation>നിലവിലെ മോഡൽ: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
-        <source>Currently no model</source>
-        <translation>നിലവിൽ മോഡൽ ഇല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
-        <source>Modify the content, change the tone…</source>
-        <translation>ഉള്ളടക്കം പരിഷ്കരിക്കുക, ടോൺ മാറ്റുക…</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>നിറയ്ക്കൽ പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>ഇൻപുട്ട് ബോക്സ് തിരഞ്ഞെടുത്തിട്ടില്ല, ദയവായി ഇൻപുട്ട് ബോക്സ് തിരഞ്ഞെടുത്ത് വീണ്ടും നിറയ്ക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
+        <source>Added</source>
+        <translation>ചേർത്തു</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>പകർത്തി</translation>
+    </message>
+    <message>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>ഈ ഭാഗം ലളിതമായ ഭാഷയിൽ വിശദീകരിക്കുക. അധികമായ ഉള്ളടക്കങ്ങളില്ലാതെ എനിക്ക് വ്യക്തമായ ഫലം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>ഈ ഭാഗം ചുരുക്കിപ്പറയുക, മറ്റെല്ലാം അധികമായ ഉള്ളടക്കങ്ങളില്ലാതെ എനിക്ക് നേരിട്ട് വ്യക്തമായ ഫലം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>ഈ ഭാഗം അനുയോജ്യമായി തുടരുക. ധാരാളം വാക്കുകൾ ആവശ്യകമില്ല. മറ്റെല്ലാം അധികമായ ഉള്ളടക്കങ്ങളില്ലാതെ എനിക്ക് വ്യക്തമായ ഫലം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>ഈ ഭാഗം അനുയോജ്യമായി വിപുലീകരിക്കുക. പ്രത്യേകിച്ച് നീണ്ട വാചകം ആവശ�്യമില്ല. മറ്റെല്ലാം അധികമായ ഉള്ളടക്കങ്ങളില്ലാതെ എനിക്ക് വ്യക്തമായ ഫലം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>ഈ ഭാഗത്തിൽ അക്ഷരത്തെറ്റുകളുണ്ടോ എന്ന് പരിശോധിക്കുക. ഉണ്ടെങ്കിൽ, പിശകുകളുടെ സ്ഥാനം ചൂണ്ടിക്കാട്ടുക. മറ്റെല്ലാം അധികമായ ഉള്ളടക്കങ്ങളില്ലാതെ എനിക്ക് നേരിട്ട് വ്യക്തമായ ഫലം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>ഈ ഭാഗം എനിക്ക് മെച്ചപ്പെടുത്തിത്തരിക്കുക, അധികമായ ഉള്ളടക്കങ്ങളില്ലാതെ ഫലം മാത്രം നൽകുക.
+text：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>നിലവിലുള്ള മോഡൽ: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>നിലവിൽ മോഡലുകളൊന്നുമില്ല</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>ക്രമീകരണത്തിലേക്ക് പോകുക  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>സൗജന്യ ക്രെഡിറ്റുകൾ നേടുക  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>ടെക്സ്റ്റ് തിരിച്ചറിഞ്ഞില്ല.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>ചെർത്ത ഉള്ളടക്കം 10 വാക്കുകളിൽ കൂടുതൽ ആയിരിക്കണം</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>AI റൈറ്റർ</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>നിങ്ങൾ സൃഷ്ടിക്കാൻ ആഗ്രഹിക്കുന്നത് നൽകുക (ജനറേറ്റ് ചെയ്യാൻ Enter അമർത്തുക/പുറത്തുകടക്കാൻ Esc)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>ലേഖനം</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>രൂപരേഖ</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>അറിയിപ്പ്</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>ഗവേഷണ റിപ്പോർട്ട്</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>പ്രസംഗങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>ജോലി സംഗ്രഹം</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>ട്വീറ്റുകൾ</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>റദ്ദാക്കുക</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>ടെക്സ്റ്റിലേക്ക് ഒട്ടിക്കുക</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>വീണ്ടും ജനറേറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>പകർത്തുക</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>AI വഴി സൃഷ്ടിച്ച ഉള്ളടക്കം റഫറൻസിനു മാത്രമാണ്, ദയവായി വിവരങ്ങളുടെ കൃത്യതയിൽ ശ്രദ്ധിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>[%1] വിഷയത്തെക്കുറിച്ച് എനിക്ക് ഒരു ഉപന്യാസം എഴുതാൻ സഹായിക്കുക, [വ്യക്തമായ ഘടനയും സമൃദ്ധമായ ഉള്ളടക്കവും] ഉള്ളതായിരിക്കണം.</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>കൃത്രിമ ബുദ്ധി</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>[%1] വിഷയത്തെക്കുറിച്ച് എനിക്ക് ഒരു രൂപരേഖ എഴുതാൻ സഹായിക്കുക, ഇത് [PPT നിർമ്മാണത്തിന്] ഉപയോഗിക്കും.</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>[%1] സംബന്ധിച്ച് എനിക്ക് ഒരു അറിയിപ്പ് എഴുതാൻ സഹായിക്കുക, സ്വീകർത്താവ് [എല്ലാ ജീവനക്കാരും] അയയ്ക്കുന്നയാൾ [ഭരണ വിഭാഗം] ആണ്.</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>ദേശീയ ദിന അവധി</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>[%1] സംബന്ധിച്ച് എനിക്ക് ഒരു ഗവേഷണ റിപ്പോർട്ട് എഴുതാൻ സഹായിക്കുക, കുറഞ്ഞത് [നിലവിലുള്ള അവസ്ഥ, പ്രശ്ന വിശകലനം, പ്രതിരോധ നടപടികളും നിർദ്ദേശങ്ങളും, ഗവേഷണ നിഗമനങ്ങൾ] എന്നിവ ഉൾപ്പെടെ ഉണ്ടായിരിക്കണം.</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>[%1] വിഷയത്തെക്കുറിച്ച് [കമ്പനി നേതാക്കൾക്ക്] വേണ്ടി എനിക്ക് ഒരു പ്രസംഗം എഴുതാൻ സഹായിക്കുക, [വ്യക്തമായ ഘടനയും തിളങ്ങുന്ന ഭാഷയും] ആവശ്യപ്പെടുന്നു.</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>എന്റെ സമീപകാല പ്രവർത്തനങ്ങളുടെ ഒരു സംഗ്രഹം എഴുതാൻ എന്നെ സഹായിക്കുക, [%1] ഉം [ഫലങ്ങളും] ഉൾപ്പെടുത്തി, [ഔദ്യോഗിക] രീതി ആവശ്യപ്പെടുന്നു.</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>ജോലി ഉള്ളടക്കം</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>[%1] വിഷയത്തെക്കുറിച്ച് ഒരു പൊതു ട്വീറ്റ് എഴുതാൻ എന്നെ സഹായിക്കുക, [വ്യക്തമായ ഘടന] ഉം [അയവ്] രീതിയും ആവശ്യപ്പെടുന്നു.</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>ഈ ഫംഗ്ഷൻ ഉപയോഗിക്കാൻ ഇൻപുട്ട് രീതി വീണ്ടും ആരംഭിച്ച ശേഷം മാത്രമേ സാധിക്കൂ. ട്യൂട്ടോറിയൽ താഴെ നൽകുന്നു:
+1. ടാസ്ക്ബാറിലെ ഇൻപുട്ട് രീതി ഐക്കണിൽ വലത് ക്ലിക്ക് ചെയ്യുക.
+2. &quot;വീണ്ടും ആരംഭിക്കുക&quot; ക്ലിക്ക് ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>ശരി</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>കോപ്പി ചെയ്തു</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>നിലവിലുള്ള മോഡൽ: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>നിലവിൽ മോഡലൊന്നുമില്ല</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>കോൺഫിഗർ ചെയ്യാൻ പോകുക  </translation>
+    </message>
+    <message>
+        <source>Modify the content, change the tone…</source>
+        <translation>ഉള്ളടക്കം പരിഷ്കരിക്കുക, രീതി മാറ്റുക…</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>നിറയ്ക്കൽ പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>ഇൻപുട്ട് ബോക്സ് തിരഞ്ഞെടുത്തിട്ടില്ല, ദയവായി ഇൻപുട്ട് ബോക്സ് തിരഞ്ഞെടുത്ത് വീണ്ടും നിറയ്ക്കുക.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <translation>ശരി</translation>
     </message>
@@ -4750,162 +1121,130 @@ text：</source>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>ഫയൽ മാനേജർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>മെയിൽ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>കലണ്ടർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
         <translation>വെബ് ബ്രൗസർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
         <translation>ടെക്സ്റ്റ് എഡിറ്റർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
         <translation>സ്ക്രീൻഷോട്ട്</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
         <translation>വോയ്സ് നോട്ടുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
         <translation>ഡോക്യുമെന്റ് വ്യൂവർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
         <translation>ആപ്പ് സ്റ്റോർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
         <translation>മാനുവൽ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
         <translation>WPS റൈറ്റർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
         <translation>WPS സ്പ്രെഡ്ഷീറ്റുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
         <translation>WPS പ്രസന്റേഷൻ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
         <translation>Foxit PDF എഡിറ്റർ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo ഡോക്യുമെന്റ് 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
         <translation>Yozo ഓഫീസ് 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
         <translation>Yozo പ്രസന്റേഷൻ 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
         <translation>Yozo ഷീറ്റ് 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
         <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
         <translation>Wechat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
         <translation>WXWork</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -4913,434 +1252,402 @@ text：</source>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI ഒരു ഡെസ്ക്ടോപ്പ് സ്മാർട്ട് അസിസ്റ്റന്റാണ്, നിങ്ങളുടെ വ്യക്തിഗത അസിസ്റ്റന്റ്! നിങ്ങൾക്ക് ഇതുമായി ടെക്സ്റ്റ് അല്ലെങ്കിൽ സ്വരം ഉപയോഗിച്ച് ആശയവിനിമയം നടത്താവുന്നതാണ്, കൂടാതെ ഇത് ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകാനും, വിവരങ്ങൾ നൽകാനും, നിങ്ങളുടെ വിവരണങ്ങളുടെ അടിസ്ഥാനത്തിൽ ചിത്രങ്ങൾ സൃഷ്ടിക്കാനും സഹായിക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI ഫോളോ അലോംഗ്/എഴുതുക</translation>
+        <translation>UOS AI ഫോളോഅലോങ്/റൈറ്റ്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>ശീർഷകമില്ലാത്തത്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>ഹലോ, ഞാൻ UOS AI ആണ്.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">AI റൈറ്റിംഗ്</translation>
+        <translation>AI റൈറ്റിംഗ്</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>അനന്തമായ പ്രചോദനം, ആശങ്കയില്ലാത്ത എഴുത്ത്</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>ദയവായി രേഖയുടെ വിഷയവും ആവശ്യകതകളും നൽകുക, UOS AI നിർമ്മാണം പൂർത്തിയാക്കാൻ നിങ്ങളെ സഹായിക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">AI ട്രാൻസ്ലേഷൻ</translation>
+        <translation>AI വിവർത്തനം</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">നിങ്ങളുടെ ട്രാൻസ്ലേഷൻ അസിസ്റ്റന്റ്, ഒന്നിലധികം ഭാഷകൾ പ്രാവീണ്യം പുലർത്തുന്നു.</translation>
+        <translation>നിങ്ങളുടെ വിവർത്തന അസിസ്റ്റന്റ്, ഒന്നിലധികം ഭാഷകളിൽ പ്രാവീണ്യം നേടിയത്.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>ദയവായി വിവർത്തനം ചെയ്യേണ്ട ഉള്ളടക്കം നൽകുക; സ്വമേധയാ ലക്ഷ്യഭാഷ ചൈനീസ് ആണ്.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്</translation>
+        <source>AI Knowledge Base</source>
+        <translation>AI അറിവ് ശേഖരം</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">നിങ്ങളുടെ വ്യക്തിഗത അറിവ് ബേസ് അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുന്നു.</translation>
+        <translation>നിങ്ങളുടെ വ്യക്തിഗത അറിവ് ശേഖരത്തെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>അറിവ് ശേഖരത്തെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾ ചോദിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished"></translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP&amp;സ്കിൽസ്</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>ബിൽട്ട്-ഇൻ സാധാരണ MCP &amp; സ്കിൽസ്, ഇഷ്ടാനുസൃതമായ ടൂൾ ഇംപോർട്ട് പിന്തുണയ്ക്കുന്നു, സംഭാഷണത്തിനായി ടൂളുകൾ സ്വതന്ത്രമായി തിരഞ്ഞെടുക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>ദയവായി MCP&amp;Skills കമാൻഡുകൾ നൽകുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>മൈക്രോഫോൺ കണ്ടെത്തിയില്ല</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>സ്പീക്കർ കണ്ടെത്തിയില്ല</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>ടെസ്റ്റ്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>ഇന്റലിജന്റ് റൂട്ടിംഗ്</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>ഓൺലൈൻ സെർച്ച്</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">ഇഷ്ടാനുസൃതം</translation>
+        <translation>ഇഷ്ടാനുസൃതം</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>സ്വകാര്യ ഡിപ്ലോയ്‌മെന്റ്</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">ഡീപ്‌സീക്ക്</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Lark Integration Settings</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>DingTalk Integration Settings</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>ടെലിഗ്രാം ഇന്റഗ്രേഷൻ സജ്ജീകരണങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>ഡിസ്കോർഡ് ഇന്റഗ്രേഷൻ സജ്ജീകരണങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>QQ ഇന്റഗ്രേഷൻ സജ്ജീകരണങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>നിർബന്ധമാണ്</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>ഐച്ഛികം</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>റദ്ദാക്കുക</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>സ്ഥിരീകരിക്കുക</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>കോൺഫിഗറേഷൻ ഗൈഡ് &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>IM ഇന്റഗ്രേഷൻ</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>മൂന്നാം-കക്ഷി IM ഇന്റഗ്രേഷൻ</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>സന്ദേശ ഫോർവേഡിംഗ് സേവനം പ്രവർത്തനക്ഷമമാക്കുക</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>പ്രവർത്തനക്ഷമമാക്കിയ ശേഷം, UOS AI കോൺഫിഗർ ചെയ്ത Lark, DingTalk, QQ, Telegram, കൂടാതെ Discord ബോട്ടുകളിൽ നിന്നുള്ള സന്ദേശങ്ങൾ സ്വീകരിക്കും. നിങ്ങൾക്ക് തുടർന്ന് നിങ്ങളുടെ IM ക്ലയന്റിൽ UOS AI-യുമായി നേരിട്ട് ഇടപെടാൻ കഴിയും.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>പ്രവർത്തനക്ഷമമാക്കിയ ശേഷം, UOS AI കോൺഫിഗർ ചെയ്ത Lark, DingTalk, കൂടാതെ QQ ബോട്ടുകളിൽ നിന്നുള്ള സന്ദേശങ്ങൾ സ്വീകരിക്കും. നിങ്ങൾക്ക് തുടർന്ന് നിങ്ങളുടെ IM ക്ലയന്റിൽ UOS AI-യുമായി നേരിട്ട് ഇടപെടാൻ കഴിയും.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
-        <translation>ഇൻപുട്ട് ഫീൽഡിലേക്ക് ഇത് ചേർക്കുക</translation>
+        <translation>ഇൻപുട്ട് ഫീൽഡിൽ ചേർക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">പിശക്</translation>
+        <translation>പിശക്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>ശരി</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">പുതിയ സംഭാഷണം</translation>
+        <translation>പുതിയ സംഭാഷണം</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">ഷെഡ്യൂൾ സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">ഉച്ചയ്ക്ക് 2 മുതൽ വൈകുന്നേരം 5 വരെ മാർക്കറ്റിംഗ് വിഭാഗവുമായി ഒരു മീറ്റിംഗ് ഷെഡ്യൂൾ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">ക്ഷമിക്കണം, പൊരുത്തപ്പെടുന്ന ഓപ്പറേഷനുകൾ ഒന്നും കണ്ടെത്തിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">ഇൻപുട്ട് ഉള്ളടക്കത്തിൽ നിന്ന് അനുബന്ധ പാരാമീറ്ററുകൾ പാർസ് ചെയ്ത് താഴെപ്പറയുന്ന JSON ഫോർമാറ്റിലുള്ള ഷെഡ്യൂൾ ടെംപ്ലേറ്റുമായി പൊരുത്തപ്പെടുത്തുക, അനാവശ്യ വിവരങ്ങൾ ഒഴിവാക്കി JSON ഉള്ളടക്കം മാത്രം ഔട്ട്പുട്ട് ചെയ്യുക.
-
-ഷെഡ്യൂൾ ടെംപ്ലേറ്റ് ഫോർമാറ്റ്:
-json
-{&quot;subject&quot;: &quot;വിഷയം&quot;, &quot;startTime&quot;: &quot;ഷെഡ്യൂൾ ആരംഭ സമയം, ഫോർമാറ്റ്: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;ഷെഡ്യൂൾ അവസാന സമയം, ഫോർമാറ്റ്: yyyy-MM-ddThh:mm:ss&quot;}
-
-ഇൻപുട്ട്: %1
-ഇപ്പോഴത്തെ സമയം: %2</translation>
+        <translation>Null</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>MCP സെർവർ ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>MCP സെർവർ എഡിറ്റ് ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>JSON കോൺഫിഗറേഷൻ:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>ദയവായി MCP JSON കോൺഫിഗറേഷൻ കോഡ് ഇൻപുട്ട് ബോക്സിൽ പേസ്റ്റ് ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>വിവരിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>വേഗത്തിലുള്ള തിരയൽ ഉപകരണങ്ങൾക്കായി MCP സെർവർ ഫംഗ്ഷനുകൾ വിവരിക്കുക</translation>
+        <translation>വേഗത്യേന തിരയാനുള്ള ഉപകരണങ്ങൾ സുഗമമാക്കാൻ MCP സെർവർ ഫംഗ്ഷനുകളെ വിവരിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ദയവായി മോഡൽ ID നൽകുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>ടെസ്റ്റ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>ദയവായി മോഡൽ നാമം നൽകുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
         <translation>ഈ ഫംഗ്ഷൻ പൂർണ്ണമായി ഉപയോഗിക്കുന്നതിന് മുമ്പ് ഉപകരണം പുനരാരംഭിക്കേണ്ടതുണ്ട്.</translation>
     </message>
@@ -5348,416 +1655,296 @@ json
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>ഡാറ്റ ശേഖരിക്കുന്നു കൂടാതെ വിശകലനം ചെയ്യുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>ഡാറ്റ ശേഖരണവും വിശകലനവും പൂർത്തിയായി</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>ഗവേഷണം പൂർത്തിയായി. %1 റഫറൻസുകൾ ശേഖരിച്ചു:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>തിരച്ചിൽ വിജയിച്ചു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>പിശ്കൽ: വിവരങ്ങളൊന്നും കണ്ടെത്തിയില്ല!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>പ്രസക്തമായ രേഖകളൊന്നും കണ്ടെത്തിയില്ല</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">സമ്മാനം ലഭിച്ച ശേഷം, യഥാർത്ഥ Baidu മോഡലും iFlytek മോഡലും DeepSeek ഉപയോഗിച്ച് മാറ്റിസ്ഥാപിക്കും</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">പിന്നീട് കൈകൊണ്ട് ശേഖരിക്കുക</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">ട്രയൽ അക്കൗണ്ട്</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">UOS AI-ൽ പ്രവേശിക്കുക</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">സ്വീകരിക്കുന്നു...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">ഉടൻ ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">അക്കൗണ്ട് സ്റ്റാറ്റസ് പരിശോധിക്കുന്നു...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">DeepSeek അക്കൗണ്ട് ക്ലെയിം പരാജയപ്പെട്ടു!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">നെറ്റ്വർക്ക് പരിശോധിച്ച് പിന്നീട് വീണ്ടും ശ്രമിക്കുക!</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">DeepSeek അക്കൗണ്ട് വിജയകരമായി ക്ലെയിം ചെയ്തു!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">നെറ്റ്വർക്ക് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ പിന്നീട് UOS AI സെറ്റിംഗുകളിൽ കൈകൊണ്ട് ക്ലെയിം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI പൂർണ്ണമായി DeepSeek-ൽ സംയോജിപ്പിച്ചിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">സൗജന്യ അക്കൗണ്ട് പ്രവർത്തനം അവസാനിച്ചിരിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">വന്ന് ഇത് അനുഭവിക്കൂ!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">വന്ന് നിങ്ങളുടെ അക്കൗണ്ട് ക്ലെയിം ചെയ്യൂ!</translation>
+        <translation>പ്രാദേശിക അറിവ് ശേഖരം</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
-        <translation>മുൻകരുതലുകൾ</translation>
+        <translation>മുന്നറിയിപ്പുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>DeepSeek ലോക്കൽ മോഡലിന് കമ്പ്യൂട്ടർ കോൺഫിഗറേഷനിൽ ചില ആവശ്യകതകളുണ്ട്. കോൺഫിഗറേഷൻ ശുപാർശ ചെയ്യുന്നതിനേക്കാൾ കുറവാണെങ്കിൽ, അനുഭവം ബാധിക്കും.</translation>
+        <translation>ഡീപ്സീക്ക് (DeepSeek) ലോക്കൽ മോഡലിന് കമ്പ്യൂട്ടർ കോൺഫിഗറേഷനുമായി ബന്ധപ്പെട്ട ചില ആവശ്യകതകളുണ്ട്. കോൺഫിഗറേഷൻ നിർദ്ദേശിച്ച തലത്തിൽ താഴെയാണെങ്കിൽ, അനുഭവം ബാധിക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
-        <translation>ശുപാർശ ചെയ്യുന്ന കോൺഫിഗറേഷൻ</translation>
+        <translation>നിർദ്ദേശിക്കുന്ന കോൺഫിഗറേഷൻ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation type="unfinished">&lt;b&gt;推荐配置&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU：&lt;/b&gt;高性能多核CPU（如Intel i5/i7或AMD Ryzen 5/7系列），主频3.0 GHz以上&lt;br&gt;&lt;b&gt;GPU：&lt;/b&gt;显存4GB以上&lt;br&gt;&lt;b&gt;内存：&lt;/b&gt;8GB及以上&lt;br&gt;&lt;b&gt;硬盘：&lt;/b&gt;固态硬盘（SSD）并预留5GB以上空间</translation>
+        <translation>&lt;b&gt;നിർദ്ദേശിക്കുന്ന കോൺഫിഗറേഷൻ&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;ഉയർന്ന പ്രകടനമുള്ള മൾട്ടി-കോർ CPU (ഉദാഹരണത്തിന് Intel i5/i7 അല്ലെങ്കിൽ AMD Ryzen 5/7 സീരീസ്), 3.0 GHz മുകളിൽ ക്ലോക്ക് സ്പീഡോടുകൂടി.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;4GB മുകളിൽ വീഡിയോ മെമ്മറിയുള്ളത്.&lt;br&gt;&lt;b&gt;മെമ്മറി: &lt;/b&gt;8GB അല്ലെങ്കിൽ അതിലധികം.&lt;br&gt;&lt;b&gt;ഹാർഡ് ഡ്രൈവ്: &lt;/b&gt;കുറഞ്ഞത് 5GB സ്ഥലം ഒഴിഞ്ഞിരിക്കുന്ന സോളിഡ് സ്റ്റേറ്റ് ഡ്രൈവ് (SSD).</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
         <translation>പിന്നീട് ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
-        <translation>ഇൻസ്റ്റാളേഷൻ സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഇൻസ്റ്റലേഷൻ സ്ഥിരീകരിക്കുക</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (വർഷം-മാസം-തീയതി മണിക്കൂർ:മിനിറ്റ് ആഴ്ച)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
-        <translation>ഇനിപ്പറയുന്ന ആപ്ലിക്കേഷനുകളിൽ FollowAlong മറയ്ക്കുക</translation>
+        <translation>താഴെ പറയുന്ന ആപ്ലിക്കേഷനുകളിൽ ഫോളോഅലോങ് മറയ്ക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
-        <translation>MCP സെർവർ സവിശേഷതകൾ പ്രവർത്തനക്ഷമമാക്കുന്നു</translation>
+        <translation>MCP സെർവർ ഫീച്ചറുകൾ പ്രവർത്തനക്ഷമമാക്കുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>ചില തേഡ്-പാർട്ടി MCP സെർവർ സവിശേഷതകൾക്ക് ചില അപകടങ്ങൾ ഉണ്ടാകാം. ദയവായി അവയെ ശ്രദ്ധയോടെ ഉപയോഗിക്കുക. ഈ സേവനം പ്രവർത്തനക്ഷമമാക്കിയാൽ, ഒരു ബിൽറ്റ്-ഇൻ ഉപകരണം ആവശ്യമായ ഡിപെൻഡൻസികൾ കണ്ടെത്തുകയും ഓട്ടോമാറ്റിക്കായി ഡൗൺലോഡ് ചെയ്യുകയും ചെയ്യും. ഈ ഡൗൺലോഡ് പ്രോസസ്സിന് ഡാറ്റ ചാർജുകൾ ഉണ്ടാകും. ദയവായി ഈ അപകടങ്ങൾ അറിഞ്ഞ് ശ്രദ്ധയോടെ മുന്നോട്ട് പോകുക.</translation>
+        <translation>ചില മൂന്നാം കക്ഷി MCP സെർവർ ഫീിച്ചറുകൾക്ക് നിശ്ചിത അപകടസാധ്യതകളുണ്ട്. ദയവായി ജാഗ്രതയോടെ ഉപയോഗിക്കുക. നിങ്ങൾ ഈ സേവനം പ്രവർത്തനക്ഷമമാക്കിയാൽ, ഒരു അന്തർനിർമിത ടൂൾ ആവശ്യമായ ഡിപൻഡൻസികൾ കണ്ടെത്തി സ്വയം ഡൗൺലോഡ് ചെയ്യും. ഈ ഡൗൺലോഡ് പ്രക്രിയയ്ക്ക് ഡാറ്റാ ചാർജുകൾ ബാധിക്കും. ദയവായി ഈ അപകടസാധ്യതകൾ മനസ്സിലാക്കി ജാഗ്രത പാലിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
-        <translation>എനിക്ക് മനസ്സിലായതായും ഈ സേവനം ഉപയോഗിക്കാൻ സമ്മതമാണെന്നും അറിയിക്കുന്നു</translation>
+        <translation>ഞാൻ മനസ്സിലാക്കി ഈ സേവനം ഉപയോഗിക്കാൻ സമ്മതിക്കുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">പിന്തുണയ്ക്കുന്ന ഫയലുകൾ</translation>
+        <translation>സ്ഥിരീകരിക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">പിന്തുണയ്ക്കുന്ന ഫയലുകൾ</translation>
+        <translation>പിന്തുണയ്ക്കുന്ന ഫയലുകൾ</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>സ്ക്രീൻഷോട്ട് Q&amp;A പ്രവർത്തനക്ഷമമാക്കാൻ, UOS സ്ക്രീൻ റെക്കോർഡർ പതിപ്പ് 6.6 അല്ലെങ്കിൽ അതിനുശേഷമുള്ള പതിപ്പിലേക്ക് അപ്ഡേറ്റ് ചെയ്ത് നിങ്ങളുടെ കമ്പ്യൂട്ടർ പുനരാരംഭിക്കുക.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>ഫയൽ ഫോർമാറ്റിന് പിന്തുണയില്ല.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>ചിത്രത്തിന്റെ വലിപ്പം 15 MB പരിധി കവിഞ്ഞു.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>ഫയലിന്റെ വലിപ്പം 100 MB പരിധി കവിഞ്ഞു.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>നെറ്റ്‌വർക്ക് പിശക്</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ടിന്റെ കാലാവധി അവസാനിച്ചു, തുടരുന്നതിന് ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ട് ക്വോട്ട തീർന്നു, തുടരുന്നതിന് ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">ചാറ്റിനായി നിങ്ങളുടെ സ account ജന്യ അക്കൗണ്ട് ക്വാട്ട തീർന്നിരിക്കുന്നു, ഇത് തുടരാൻ ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
+        <translation>ചാറ്റിനുള്ള നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ട് ക്വോട്ട തീർന്നു, തുടരുന്നതിന് ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">ഇപ്പോൾ അല്ല</translation>
+        <translation>ഇപ്പോഴല്ല</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">ക്രെഡിറ്റുകൾ ക്ലെയിം ചെയ്യുക</translation>
+        <translation>ക്രെഡിറ്റുകൾ നേടുക</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">സൗജന്യ ക്രെഡിറ്റുകൾ ലഭിച്ചു</translation>
+        <translation>സൗജന്യ ക്രെഡിറ്റുകൾ ലഭ്യമാക്കി</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>നിങ്ങളുടെ ട്രയൽ അക്കൗണ്ടിനുള്ള സൗജന്യ ജനറേഷൻ ക്രെഡിറ്റുകൾ നിങ്ങൾ ഉപയോഗിച്ചു കഴിഞ്ഞു. ഈ മാസം സാധുതയുള്ള അധിക 200 സൗജന്യ ക്രെഡിറ്റുകൾ ഞങ്ങൾ നിങ്ങൾക്ക് നൽകിയിട്ടുണ്ട്. കൂടുതൽ സവിശേഷതകൾ പര്യവേക്ഷണം ചെയ്യുക കൂടാതെ UOS AI-യുടെ അനന്തമായ സാധ്യതകൾ അൺലോക്ക് ചെയ്യുക!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">വിജയകരമായി ക്ലെയിം ചെയ്തു</translation>
+        <translation>വിജയകരമായി നേടി</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">അക്കൗണ്ട് കണ്ടെത്തിയില്ല</translation>
+        <translation>അക്കൗണ്ട് കണ്ടെത്തിയില്ല</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ട് മാത്രമേ പിന്തുണയ്ക്കൂ</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">നിങ്ങൾ ഇതിനകം ഈ ഇവന്റിൽ പങ്കെടുത്തിട്ടുണ്ട്, വീണ്ടും റിവാർഡ് ക്ലെയിം ചെയ്യാൻ കഴിയില്ല.</translation>
+        <translation>നിങ്ങൾ ഇതിൽ ഇപ്പോഴേ പങ്കെടുത്തിട്ടുണ്ട്, അതിനാൽ വീണ്ടും പുരസ്കാരം നേടാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">സെർവർ സിസ്റ്റം പിശക്</translation>
+        <translation>സെർവർ സിസ്റ്റം പിശക്</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">ക്ലെയിം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
+        <translation>നേടുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">ഇമേജ് സൃഷ്ടിക്കുക</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">ഇമേജ് ഉള്ളടക്കം വിവരിക്കുക</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (വർഷം-മാസം-തീയതി ആഴ്ച)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>ഒരു സൗജന്യ ട്രയൽ അക്കൗണ്ട് നേടുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">അക്കൗണ്ട് നേടുക</translation>
+        <translation>അക്കൗണ്ട് നേടുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>ഒരു അക്കൗണ്ട് സ്വീകരിക്കുന്നത് നിങ്ങൾ ഇവന്റിന്റെ നിബന്ധനകൾ മനസ്സിലാക്കുകയും അംഗീകരിക്കുകയും ചെയ്യുന്നു എന്ന് സൂചിപ്പിക്കുന്നു,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;ഇവന്റ് വിശദാംശങ്ങൾ&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI ട്രയൽ അക്കൗണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>സേവ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു, ദയവായി പിന്നീട് വീ�ണ്ടും ശ്രമിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ട് വിജയകരമായി ലഭിച്ചു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗ എണ്ണവും കാലയളവും പരിമിതമാണ്, ദയവായി നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് സമയത്തിൽ കോൺഫിഗർ ചെയ്യുക! വിശദാംശങ്ങൾക്ക് ഇവന്റ് വിശദാംശങ്ങൾ കാണുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ടുകൾക്കുള്ള ഇംഗ്ലീഷ് പിന്തുണ തൃപ്തികരമല്ല. കൂടാതെ, ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗ എണ്ണവും കാലയളവും പരിമിതമാണ്. ദയവായി നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് സമയത്തിൽ കോൺഫിഗർ ചെയ്യുക!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">ട്രയൽ ആരംഭിക്കുക</translation>
+        <translation>ട്രയൽ ആരംഭിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>സൗജന്യ അക്കൗണ്ട് ഓഫർ അവിസാരമായി.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>സെർവറുമായി കണക്ട് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>സെർവറുമായി കണക്ട് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>സെർവർ ലോഡ് അല്ലെങ്കിൽ നെറ്റ്‌വർക്ക് പ്രശ്നങ്ങൾ മൂലം അപേക്ഷ ടൈംഔട്ട് ആയി. ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished"></translation>
+        <translation>കണക്ഷൻ പരാജയപ്പെട്ടു, ദയവായി നൽകിയ വിവരങ്ങൾ പരിശോധിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">ഓപ്പറേഷൻ റദ്ദാക്കി.</translation>
+        <translation>പ്രവർത്തനം റദ്ദാക്കി.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
         <translation>ഇപ്പോൾ സംസാരിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
-        <translation>കുറഞ്ഞ ഇൻപുട്ട് വോളിയം</translation>
+        <translation>ഇൻപുട്ട് വോള്യം കുറവാണ്</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
-        <translation>സെറ്റിംഗുകൾ</translation>
+        <translation>സജ്ജീകരണങ്ങൾ</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
-        <translation>നെറ്റ്വർക്ക് ലഭ്യമല്ല</translation>
+        <translation>നെറ്റ്‌വർക്ക് ലഭ്യമല്ല</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">പുതിയതായി ചേർത്ത ഫയലുകൾ ഉപയോഗിക്കുന്നതിന് മുൻപ് പ്രീപ്രോസസ്സിംഗ് ആവശ്യമാണ്, കൂടാതെ ഡാറ്റ പ്രോസസ്സിംഗ് പ്രക്രിയയിൽ, ഇത് ഒരു വലിയ അളവിലുള്ള കമ്പ്യൂട്ടിംഗ്, സംഭരണ വിഭവങ്ങൾ ഉപയോഗിച്ചേക്കാം. ഡാറ്റ ഡിലീറ്റ് ചെയ്ത ശേഷം ഡാറ്റ പ്രോസസ്സിംഗ് നിർത്തും.</translation>
+        <translation>പുതുതായി ചേർത്ത ഫയലുകൾ ഉപയോഗിക്കുന്നതിന് മുമ്പ് പ്രീപ്രൊസസ്സിംഗ് ആവശ്യമാണ്, കൂടാതെ ഡാറ്റാ പ്രോസസ്സിംഗ് പ്രക്വിയിൽ ഇത് ഗണ്യമായ കമ്പ്യൂട്ടിംഗും സ്റ്റോറേജും വിഭവങ്ങൾ ഉപയോഗിക്കും. ഡാറ്റാ ഇല്ലാതാക്കുമ്പോൾ ഡാറ്റാ പ്രോസസ്സിംഗ് നിർത്തും.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>AI-യോട് ചോദിക്കുക</translation>
     </message>
@@ -5765,230 +1952,162 @@ json
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
-        <translation>ഇതിനെക്കുറിച്ച് എന്താണ് ചോദിക്കേണ്ടത്?</translation>
+        <translation>ഇതിനെക്കുറിച്ച് എന്ത് ചോദിക്കണം?</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
-        <translation>ഈ ആപ്പ് വീണ്ടും തുറക്കുന്നതുവരെ മറയ്ക്കുക</translation>
+        <translation>ഈ ആപ്പ് റീസ്റ്റാർട്ട് ചെയ്യുന്നതുവരെ മറയ്ക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">ഈ ആപ്ലിക്കേഷനിൽ അപ്രാപ്യമാക്കുക</translation>
+        <translation>ഈ ആപ്ലിക്കേഷനിൽ പ്രവർത്തനരഹിതമാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">ആഗോളമായി അപ്രാപ്യമാക്കുക</translation>
+        <translation>ആഗോളമായി പ്രവർത്തനരഹിതമാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>ഇത് വീണ്ടും പ്രവർത്തനക്ഷമമാക്കാൻ &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;ക്രമീകരണങ്ങൾ&lt;/a&gt; എന്നതിലേക്ക് പോകുക.</translation>
+        <translation>വീണ്ടും പ്രവർത്തനസജ്ജമാക്കാൻ &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;ക്രമീകരണങ്ങൾ&lt;/a&gt;-ലേക്ക് പോകുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>അറിവ് ശേഖരം തേടുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>തിരച്ചിൽ പൂർത്തിയായി · %1s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>തിരച്ചിൽ പൂർത്തിയായി · %1m%2s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>റഫറൻസുകൾ</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">ഈ നോളജ് ബേസ് ഫയൽ ഡിലീറ്റ് ചെയ്യാൻ നിങ്ങൾക്ക് തീർച്ചയാണോ?</translation>
+        <translation>ഈ അറിവ് ശേഖര ഫയൽ ഇല്ലാതാക്കണമെന്ന് തീർച്ചയാണോ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished">ഇല്ലാതാക്കുക</translation>
+        <translation>ഇല്ലാതാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">ചേർക്കുക</translation>
+        <translation>ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">ദയവായി ആദ്യം എംബെഡിംഗ് മോഡൽ പ്ലഗിനുകൾ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+        <translation>ദയവായി ആദ്യം എംബെഡ്ഡിംഗ് മോഡൽ പ്ലഗിനുകൾ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished">അറിവ് ബേസ് മാനേജ്മെന്റ്</translation>
+        <translation>അറിവ് ശേഖര മാനേജ്മെന്റ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">ഈ ഫീച്ചറിന് ഉയർന്ന ഹാർഡ്‌വെയർ വിഭവങ്ങൾ ആവശ്യമാണ്, റഫറൻസ് ബെഞ്ച്‌മാർക്ക് കോൺഫിഗറേഷൻ ഇതാണ്: CPU ഇന്റൽ 11-ാം തലമുറ i7 അല്ലെങ്കിൽ അതിൽ കൂടുതൽ; മെമ്മറി 16GB അല്ലെങ്കിൽ അതിൽ കൂടുതൽ; NVIDIA ഗ്രാഫിക്സ് കാർഡും 10 സീരീസ് അല്ലെങ്കിൽ അതിൽ കൂടുതലും ഉള്ളതാണ് ഏറ്റവും മികച്ച ഓപ്ഷൻ. കോൺഫിഗറേഷൻ വളരെ കുറവാണെങ്കിൽ, ലാഗ് ചെയ്യൽ, കൃത്യമല്ലാത്ത ഉത്തരങ്ങൾ തുടങ്ങിയ പ്രശ്നങ്ങൾ ഉണ്ടാകാം.</translation>
+        <translation>ഈ ഫീച്ചറിന് ഉയർന്ന ഹാർഡ്‌വെയർ വിഭവങ്ങൾ ആവശ്യമാണ്, റഫറൻസ് ബെഞ്ച്മാർക്ക് കോൺഫിഗറേഷൻ: CPU Intel 11th generation i7 അല്ലെങ്കിൽ അതിന് മുകളിൽ; 16GB അല്ലെങ്കിൽ അതിൽ കൂടുതൽ മെമ്മറി; NVIDIA ഗ്രാഫിക്സ് കാർഡും 10 സീരീസ് അല്ലെങ്കിൽ അതിന് മുകളിലുള്ളതും ഉള്ളതാണ് ഏറ്റവും നല്ല ഓപ്ഷൻ. കോൺഫിഗറേഷൻ വളരെ കുറവെങ്കിൽ, ലാഗും കൃത്യമല്ലാത്ത ഉത്തരങ്ങളും പോലുള്ള പ്രശ്നങ്ങൾ ഉണ്ടാകാംകാം.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">ഇവിടെ, പേഴ്സണൽ നോളജ് അസിസ്റ്റന്റിന്റെ അറിവ് ബേസ് നിർവചിക്കാം, കൂടാതെ പേഴ്സണൽ നോളജ് അസിസ്റ്റന്റ് താഴെ ചേർത്ത ഫയലുകളെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകും.</translation>
+        <translation>ഇവിടെ, പേഴ്‌സണൽ നോളെഡ്ജ് അസിസ്റ്റന്റിന്റെ അറിവ് ശേഖരം നിർവചിക്കാം, പേഴ്‌സണൽ നോളെഡ്ജ് അസിസ്റ്റന്റ് ചുവേടെ ചേർത്ത ഫയലുകളെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകും.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished">പൂർത്തിയായി</translation>
+        <translation>പൂർത്തിയായി</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished">ഒന്നുമില്ല</translation>
+        <translation>ഒന്നുമില്ല</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">ഫയൽ ഇതിനകം നിലവിലുണ്ട്</translation>
+        <translation>ഫയൽ നിലവിലുണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">%1 ഫയൽ ഇതിനകം നിലവിലുണ്ട്, വീണ്ടും ചേർക്കാൻ കഴിയില്ല. ദയവായി ഫയലിന്റെ പേര് മാറ്റുക അല്ലെങ്കിൽ നിലവിലുള്ള ഫയൽ ഇല്ലാതാക്കിയ ശേഷം വീണ്ടും ചേർക്കുക.</translation>
+        <translation>%1 ഫയൽ നിലവിലുണ്ട്, അത് വീണ്ടും ചേർക്കാൻ കഴിയില്ല. വീണ്ടും ചേർക്കുന്നതിന് മുമ്പ് ദയവായി ഫയൽ നാമം പരിഷ്കരിക്കുക അല്ലെങ്കിൽ നിലവിലുള്ള ഫയൽ ഇല്ലാതാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">എല്ലാ ഫയലുകളും</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">ആപ്പ് ലോഞ്ച് ചെയ്യുക അല്ലെങ്കിൽ അടയ്ക്കുക</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, മ്യൂസിക്, ആൽബം, കൺട്രോൾ സെന്റർ, ലോഗ് വ്യൂവർ ...</translation>
+        <translation>എല്ലാ ഫയലുകളും</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished">ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+        <translation>ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished">അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+        <translation>അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished">അപ്ഡേറ്റ് ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+        <translation>അപ്‌ഡേറ്റ് ചെയ്യുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">ലോക്കൽ മോഡൽ</translation>
+        <translation>പ്രാദേശിക മോഡൽ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">ഒരിക്കൽ ഇൻസ്റ്റാൾ ചെയ്താൽ, UOS AI ഉപയോഗിക്കാൻ ഇന്റർനെറ്റ് കണക്ഷൻ ആവശ്യമില്ല.</translation>
+        <translation>ഇൻസ്റ്റാൾ ചെയ്തു കഴിഞ്ഞാൽ, UOS AI ഉപയോഗിക്കാൻ ഇന്റർനെറ്റ് കണക്ഷൻ ആവശ്യമില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">ഡീപ്‌സീക്ക്-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">ഓപ്പൺ-സോഴ്‌സ് കമ്മ്യൂണിറ്റിയിൽ നിന്ന് സ്വന്തം ഉത്തരവാദിത്വത്തിൽ ഡൗൺലോഡ് ചെയ്യുക. ഇൻസ്റ്റാൾ ചെയ്തതിന് ശേഷം UOS AI അസിസ്റ്റന്റിൽ ഉപയോഗിക്കുക.</translation>
+        <translation>സ്വന്തര് സൂക്ഷിതയില് ഓപ്പണ്-സോഴ്സ് കമ്മ്യൂണിറ്റിയില് നിന്ന് ഡൗണ്‍ലോഡ് ചെയ്യുക. ഇൻസ്റ്റാളേഷന് ശേഷം UOS AI അസിസ്റ്റന്റിൽ ഇത് ഉപയോഗിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">UOS AI വലിയ മോഡൽ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">എംബെഡ്ഡിംഗ് പ്ലഗിനുകൾ</translation>
+        <translation>എംബെഡ്ഡിംഗ് പ്ലഗിനുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">മോഡൽ ഇൻസ്റ്റാൾ ചെയ്ത ശേഷം, സിസ്റ്റം അസിസ്റ്റന്റും പേഴ്സണൽ നോളജ് അസിസ്റ്റന്റും പ്രവർത്തിപ്പിക്കാം.</translation>
+        <translation>മോഡൽ ഇൻസ്റ്റാൾ ചെയ്തു കഴിഞ്ഞാൽ, സിസ്റ്റം അസിസ്റ്റന്റും പേഴ്‌സണൽ നോളജ് അസിസ്റ്റന്റും പ്രവർത്തിപ്പിക്കാവുന്നതാണ്.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP സെർവർ ലഭ്യമല്ല</translation>
     </message>
@@ -5996,697 +2115,573 @@ json
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation>&apos;mcpServers&apos; ഫീൽഡ് നഷ്ടപ്പെട്ടു.</translation>
+        <translation>&apos;mcpServers&apos; ഫീൽഡ് കാണുന്നില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
-        <translation>പഴയ കസ്റ്റം സെർവർ കോൺഫിഗറേഷൻ നീക്കംചെയ്യൽ പരാജയപ്പെട്ടു, സെർവർ പേര്: %0</translation>
+        <translation>പഴയ കസ്റ്റം സെർവർ കോൺഫിഗ് നീക്കം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു, സെർവർ നാമം: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
         <translation>സാധുവായ mcp സെർവർ ഇല്ല.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
-        <translation>ഒരേ പേരുള്ള MCP സെർവർ: %0.</translation>
+        <translation>തനിക്കുള്ള MCP സെർവർ നാമം: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation>MCP സെർവർ പേര് &apos;%1&apos; ഇതിനകം നിലവിലുണ്ട്</translation>
+        <translation>MCP സെർവർ നാമം &apos;%1&apos; ഇതിനകം നിലവിലുണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
-        <translation>സെർവർ പേര് &apos;%1&apos; ഇതിനകം നിലവിലുണ്ട്</translation>
+        <translation>സെർവർ നാമം &apos;%1&apos; ഇതിനകം നിലവിലുണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
-        <translation>കസ്റ്റം കോൺഫിഗറേഷൻ ഫയൽ എഴുതാനായി തുറക്കാനായില്ല</translation>
+        <translation>എഴുത്തിനായി കസ്റ്റം കോൺഫിഗ് ഫയൽ തുറക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation>സെർവർ &apos;%1&apos; കസ്റ്റം സെർവറല്ല അല്ലെങ്കിൽ നിലവിലില്ല</translation>
+        <translation>&apos;%1&apos; സെർവർ ഒരു ഇച്ഛാനുസൃത സെർവറല്ല അല്ലെങ്കിൽ നിലവിലില്ല</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
-        <translation>ഒരു കസ്റ്റം സെർവറും കണ്ടെത്താനായില്ല.</translation>
+        <translation>ഇച്ഛാനുസൃത സെർവർ ഒന്നും കണ്ടെത്തിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
-        <translation>സെർവർ &apos;%1&apos; കണ്ടെത്താനായില്ല.</translation>
+        <translation>&apos;%1&apos; സെർവർ കണ്ടെത്തിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
-        <translation>url ഫീൽഡ് ശൂന്യമായിരിക്കാൻ കഴിയില്ല.</translation>
+        <translation>url ഫീൽഡ് ശൂന്യമാകാൻ പാടില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
-        <translation>command ഫീൽഡ് ശൂന്യമായിരിക്കാൻ കഴിയില്ല.</translation>
+        <translation>command ഫീൽഡ് ശൂന്യമാകാൻ പാടില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation>&apos;command&apos; അല്ലെങ്കിൽ &apos;url&apos; ഫീൽഡ് നഷ്ടപ്പെട്ടു</translation>
+        <translation>&apos;command&apos; അല്ലെങ്കിൽ &apos;url&apos; ഫീൽഡ് കാണുന്നില്ല</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
-        <translation type="unfinished">ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+        <translation>ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation type="unfinished">അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+        <translation>അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation type="unfinished">അപ്ഡേറ്റ് ചെയ്യുക</translation>
+        <translation>അപ്‌ഡേറ്റ് ചെയ്യുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
-        <translation>ഇൻബിൽറ്റ്</translation>
+        <translation>ബിൽറ്റ്-ഇൻ</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP സെർവർ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>എല്ലാം</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
-        <translation>ഇൻബിൽറ്റ്</translation>
+        <translation>ബിൽറ്റ്-ഇൻ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">ഇഷ്ടാനുസൃതം</translation>
+        <translation>ഇച്ഛാനുസൃതം</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>MCP സെർവർ ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
-        <translation>%1 ഇല്ലാതാക്കൽ സ്ഥിരീകരിക്കണോ?</translation>
+        <translation>%1 ഇല്ലാതാക്കണോ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>ഇല്ലാതാക്കിയ ശേഷം ഈ സെർവർ ലഭ്യമാകില്ല. ശ്രദ്ധയോടെ മുന്നോട്ട് പോകുക.</translation>
+        <translation>ഇല്ലാതാക്കിയ ശേഷം, ഈ സെർവർ ലഭ്യമാകില്ല. ജാഗ്രതയോടെ മുന്നോട്ട് പോകുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
-        <translation type="unfinished">ഇല്ലാതാക്കുക</translation>
+        <translation>ഇല്ലാതാക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
-        <translation>Mcp പരിസരം</translation>
+        <translation>Mcp എൻവിയോൺമെന്റ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP സെർവർ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>UOS AI ഏജന്റ് ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
-        <translation>ഇൻസ്റ്റാളേഷൻ പൂർത്തിയായ ശേഷം MCP സെർവർ ലഭ്യമാകും.</translation>
+        <translation>ഇൻസ്റ്റലേഷന് ശേഷം, MCP സെർവർ ലഭ്യമാകും.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>മോഡൽ കോൺഫിഗറേഷൻ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished">അറിവ് ബേസ് മാനേജ്മെന്റ്</translation>
+        <translation>അറിവ് ശേഖരണ മാനേജ്മെന്റ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished">UOS AI ഫോളോ അലോംഗ്</translation>
+        <translation>UOS AI ഫോളോഅലോങ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">ഉപയോക്തൃ ഉടമ്പടി</translation>
+        <translation>ഉപയോക്തൃ കരാറ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">UOS AI ഉപയോക്തൃ ഉടമ്പടി</translation>
+        <translation>UOS AI ഉപയോക്തൃ കരാറ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">വായിച്ച് സമ്മതിച്ചു</translation>
+        <translation>വായിച്ചു സമ്മതിച്ചു</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">പ്രോക്സി ക്രമീകരണങ്ങൾ</translation>
+        <translation>പ്രോക്സി സജ്ജീകരണങ്ങൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>സജ്ജീകരണങ്ങളിലേക്ക് പോകുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>സൗജന്യ അക്കൗണ്ടിന്റെ പ്രവർത്തനം അവസാനിച്ചു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">ജ്ഞാനഭണ്ഡാരത്തിലേക്ക് ചേർക്കാൻ വെക്റ്ററൈസേഷൻ മോഡൽ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആപ്പ് സ്റ്റോറിലേക്ക് പോയി ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
+        <translation>അറിവ് ശേഖരണത്തിലേക്ക് ചേർക്കുന്നതിന് വെക്ടറൈസേഷൻ മോഡൽ പ്ലഗിൻ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്. ഡൗൺലോഡ് ചെയ്ത് ഇൻസ്റ്റാൾ ചെയ്യാൻ ദയവായി ആപ്പ് സ്റ്റോറിലേക്ക് പോകുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation type="unfinished">ഇൻസ്റ്റാൾ ചെയ്യരുത്</translation>
+        <translation>ഇൻസ്റ്റാൾ ചെയ്യരുത്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation type="unfinished">ഉടൻ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
+        <translation>ഉടന് ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelHubProvider</name>
     <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
         <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 7B {1.5B?}</translation>
+        <translation>YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
         <source>YouRong 7B</source>
-        <translation type="unfinished"></translation>
+        <translation>YouRong 7B</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
         <source>Get a free account</source>
-        <translation type="unfinished">ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
+        <translation>സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
         <source>Delete</source>
-        <translation type="unfinished">ഇല്ലാതാക്കുക</translation>
+        <translation>ഇല്ലാ�താക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
         <source>Add</source>
-        <translation type="unfinished">ചേർക്കുക</translation>
+        <translation>ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
         <source>Online model</source>
-        <translation type="unfinished">ഓൺലൈൻ മോഡൽ</translation>
+        <translation>ഓൺലൈൻ മോഡൽ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
         <source>Done</source>
-        <translation type="unfinished">പൂർത്തിയായി</translation>
+        <translation>പൂർത്തിയാക്കി</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
         <source>None</source>
-        <translation type="unfinished">ഒന്നുമില്ല</translation>
+        <translation>ഒന്നുമില്ല</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
         <translation>ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>അപ്ഡേറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
         <translation>അൺഇൻസ്റ്റാൾ ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
+        <source>Update</source>
+        <translation>അപ്ഡേറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
         <source>Cancel</source>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
-        <translation>ഏകദേശം %1GB</translation>
+        <translation>%1GB അടുത്ത്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>ഇൻസ്റ്റാൾ ചെയ്യുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>ഈ മോഡൽ ഇല്ലാതാക്കാൻ നിങ്ങൾക്ക് ഉറപ്പാണോ?</translation>
+        <translation>ഈ മോഡൽ ഇല്ലാതാക്കണമെന്ന് തീർച്ചയാണോ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>പരിശോധിക്കുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>ശരി</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>&apos;%0 ഡൗൺലോഡ് പരാജയപ്പെട്ടു, ദയവായി വീണ്ടും ശ്രമിക്കുക!&apos;</translation>
+        <translation>%0 ഡൗൺലോഡ് പരാജയപ്പെട്ടു, ദയവായി വീണ്ടും ശ്രമിക്കുക!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
-        <translation>ഈ മോഡൽ ഇൻസ്റ്റാൾ ചെയ്യുന്നതിന് മുമ്പ് &quot;എംബെഡ്ഡിംഗ് പ്ലഗിനുകൾ&quot; ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
+        <translation>ഈ മോഡൽ ഇൻസ്റ്റാൾ ചെയ്യുന്നതിന് മുമ്പ് &quot;എംബെഡ്ഡിംഗ് പ്ലഗിനുകൾ&quot; ആദ്യം ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>ടാർഗറ്റ് ഫോൾഡർ ട്രാഷ് ചെയ്യൽ പരാജയപ്പെട്ടു, ദയവായി വീണ്ടും ശ്രമിക്കുക!</translation>
+        <translation>ടാർഗെറ്റ് ഫോൾഡർ ട്രാഷ് പരാജയപ്പെട്ടു, ദയവായി വീണ്ടും ശ്രമിക്കുക!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
-        <translation>&apos;%1 സെക്കൻഡ്&apos;</translation>
+        <translation>%1 സെക്കൻഡുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
-        <translation>&apos;%1 മിനിറ്റ്&apos;</translation>
+        <translation>%1 മിനിറ്റുകൾ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
-        <translation>&apos;%1MB/%2GB ഡൗൺലോഡ് ചെയ്തു, %3 ബാക്കി.&apos;</translation>
+        <translation>%1MB/%2GB ഡൗൺലോഡ് ചെയ്തു, %3 ശേഷിക്കുന്നു.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished">ഈ മോഡൽ ഇല്ലാതാക്കാൻ നിങ്ങൾക്ക് ഉറപ്പാണോ?</translation>
+        <translation>നിങ്ങൾക്ക് ഈ മോഡൽ ഇല്ലാതാക്കാൻ ആഗ്രഹമുണ്ടോ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>അസാധുവായ മോഡൽ അക്കൗണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>പിന്തുണയില്ലാത്ത മോഡൽ തരം</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>മോഡലിന് ചാറ്റ് പൂർത്തിയാക്കലിനുള്ള പിന്തുണയില്ല</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>മോഡൽ ലഭ്യമാണ്</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP പിശക്: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>അജ്ഞാതമായ പിശക്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished"></translation>
+        <translation>പ്രോക്സി സജ്ജീകരണങ്ങൾക്ക്, ദയവായി സിസ്റ്റം പ്രോക്സി സജ്ജീകരണങ്ങളിലേക്ക് പോകുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>സജ്ജീകരണങ്ങളിലേക്ക് പോകുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished">ഇല്ലാതാക്കുക</translation>
+        <translation>ഇല്ലാതാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>മോഡൽ എഡിറ്റ് ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">മോഡൽ ചേർക്കുക</translation>
+        <translation>മോഡൽ ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">അക്കൗണ്ട്</translation>
+        <translation>അക്കൗണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished"></translation>
+        <translation>ആവശ്യമാണ്, ഒന്നിലധികം മോഡലുകൾ തിരിച്ചറിയാൻ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>പ്രൊവൈഡർ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished"></translation>
+        <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished">ആവശ്യമാണ്, ദയവായി നൽകുക</translation>
+        <translation>ആവശ്യമാണ്, ദയവായി നൽകുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished">ഡൊമെയ്ൻ</translation>
+        <translation>ഡൊമെയ്ൻ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">പ്രവർത്തനക്ഷമമാക്കുക</translation>
+        <translation>പ്രവർത്തനക്ഷമമാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">ഇഷ്ടാനുസൃതം</translation>
+        <translation>ഇച്ഛാനുസൃതം</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">ചേർക്കുക</translation>
+        <translation>ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished"></translation>
+        <translation>മോഡൽ ലഭ്യമാണോയെന്ന് പരിശോധിക്കുന്നതിന്, സിസ്റ്റം ടെസ്റ്റ് വിവരങ്ങൾ വലിയ മോഡലിലേക്ക് അയയ്ക്കുന്നു, ഇത് കുറച്ച് ടോക്കണുകൾ ഉപയോഗിക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>പേരും മോഡൽ ഐഡിയും നൽകണം.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>സേവ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished">പൂർത്തിയായി</translation>
+        <translation>പൂർത്തിയായി</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>ടെസ്റ്റ് വിജയകരമായി</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>മോഡൽ സേവനം ലഭ്യമാണ്.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">മൾട്ടിമീഡിയ കൺട്രോൾ</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (വർഷ-മാസ-ദിവസം ആഴ്ച)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">മ്യൂസിക് പ്ലേ ചെയ്യുക, സ്റ്റേറ്റ് കൺട്രോൾ, തിരയുക...</translation>
+        <source>Searching for relevant information</source>
+        <translation>പ്രസക്തമായ വിവരങ്ങൾക്കായി തിരയുന്നു</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>%0 സോഴ്‌സുകൾ പരാമർശിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>%0 പേജുകൾ കണ്ടെത്തി</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>%0 ബ്രൗസ് ചെയ്യുന്നു</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>%0 പേജ്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">ഡാറ്റ പ്രോസസ്സിംഗിൽ</translation>
+        <translation>ഡാറ്റാ പ്രോസസ്സിംഗിൽ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">ഡാറ്റ പ്രോസസ്സിംഗ് പിശക്</translation>
+        <translation>ഡാറ്റാ പ്രോസസ്സിംഗ് പിശക്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">ഫയൽ പിശക്, പ്രോസസ്സ് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി ഇല്ലാതാക്കുക.</translation>
+        <translation>ഫയൽ പിശക്, പ്രോസസ്സ് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി ഇല്ലാതാക്കുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>ഔട്ട്ലൈൻ സൃഷ്ടിക്കുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>നിങ്ങൾക്കായി ഔട്ട്ലൈൻ ഉള്ളടക്കം സൃഷ്ടിക്കുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>എഡിറ്റ് ചെയ്യാവുന്ന ഒരു ഔട്ട്ലൈൻ സൃഷ്ടിച്ചു. സ്ഥിരീകരിച്ച ശേഷം, ഡോക്യുമെന്റ് ജനറേഷനിലേക്ക് തുടരാൻ താഴെയുള്ള നീല ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>നിങ്ങൾ ഒരു പ്രാദേശിക ഔട്ട്ലൈൻ അപ്‌ലോഡ് ചെയ്തതായി കണ്ടെത്തി, നിലവിൽ നിങ്ങൾക്കായി ഔട്ട്ലൈൻ ഉള്ളടക്കം പാഴ്‌സ് ചെയ്യുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>അപ്‌ലോഡ് ചെയ്ത പ്രാദേശിക ഔട്ട്ലൈൻ കണ്ടെത്തി, ദയവായി സ്ഥിരീകരിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>അപ്‌ലോഡ് ചെയ്ത ഔട്ട്ലൈൻ ഫയൽ പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു, ദയവായി വീണ്ടും അപ്‌ലോഡ് ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>ഔട്ട്ലൈൻ ഉള്ളടക്കം സൃഷ്ടി�ക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>നിങ്ങളുടെ എഴുത്ത് ടാസ്‌ക്കിനെ അടിസ്ഥാനമാക്കി, ഞാൻ **%1**-നായി ഇനിപ്പറയുന്ന ഔട്ട്ലൈൻ സൃഷ്ടിച്ചു:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>നിങ്ങൾ അപ്‌ലോഡ് ചെയ്ത ഔട്ട്ലൈൻ ഞാൻ പാഴ്‌സ് ചെയ്തു അതിനെ **%1** ആയി ഘടനാപരമാക്കി:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+ഔട്ട്ലൈനിൽ ആകെ %1 വിഭാഗങ്ങളുണ്ട്. ഗവേഷണവും എഴുത്തും തുടരാൻ ദയവായി സ്ഥിരീകരിക്കുക.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">പ്രത്യേക അറിവ് സഹായിയെ ഉപയോഗിക്കാൻ മോഡൽ പ്ലഗ് ക്രമീകരിച്ചതിന് ശേഷം മാത്രമേ സാധ്യമാകൂ.</translation>
+        <translation>പേഴ്‌സണൽ നോളേജ് അസിസ്റ്റന്റ് ഉപയോഗിക്കണമെങ്കിൽ മോഡൽ പ്ലഗ് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">പ്രത്യേക അറിവ് സഹായിയെ ഉപയോഗിക്കാൻ അറിവ് ബേസ് ക്രമീകരിച്ചതിന് ശേഷം മാത്രമേ സാധ്യമാകൂ.</translation>
+        <translation>പേഴ്‌സണൽ നോളേജ് അസിസ്റ്റന്റ് ഉപയോഗിക്കണമെങ്കിൽ നോളേജ് ബേസ് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>ഇല്ലാതാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
-        <translation>പ്രൈവറ്റ് ഡിപ്ലോയ്മെന്റ് മോഡൽ</translation>
+        <translation>സ്വകാര്യ ഡിപ്ലോയ്‌മെന്റ് മോഡൽ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>പൂർത്തിയായി</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>ഒന്നുമില്ല</translation>
     </message>
@@ -6694,2102 +2689,2084 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>ഈ പ്രൊവൈഡർ ഇല്ലാതാക്കണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
         <translation>റഫറൻസ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
         <translation>തുറക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
-        <translation>ഡോക്യുമെന്റുകൾ നിലവിലില്ല!</translation>
+        <translation>രേഖകളൊന്നും നിലവിലില്ല!</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>രേഖ സൃഷ്ടിക്കുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>രേഖ സൃഷ്ടിച്ചു</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>ഔട്ട്ലൈനിന്റെ അടിസ്ഥാനത്തിൽ രേഖ സൃഷ്ടിച്ചു. ഉള്ളടക്കം എഡിറ്റ് ചെയ്യാൻ താഴെയുള്ള കാർഡിൽ ക്ലിക്ക് ചെയ്യുക, അല്ലെങ്കിൽ കൂടുതൽ എഡിറ്റിംഗിനായി പ്രാദേശികമായി സേവ് ചെയ്യാൻ &quot;Save As&quot; ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">ഓൺലൈൻ തിരയുക</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">തിരയൽ ഉള്ളടക്കം നൽകുക</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">മെയിൽ അയയ്ക്കുക</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">[സ്വീകർത്താവിന്റെ പേര്] എന്നതിലേക്ക് ഒരു ഇമെയിൽ അയയ്ക്കാൻ എന്നെ സഹായിക്കുക, ഉള്ളടക്കം: [ഇമെയിൽ ഉള്ളടക്കം].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">ക്ഷമിക്കണം, പൊരുത്തപ്പെടുന്ന ഓപ്പറേഷനുകൾ കണ്ടെത്തിയില്ല.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">അനുബന്ധ പാരാമീറ്ററുകൾ നൽകിയ ഇൻപുട്ടിൽ നിന്ന് താഴെക്കൊടുത്ത JSON ഇമെയിൽ ടെംപ്ലേറ്റ് ഫോർമാറ്റുമായി പൊരുത്തപ്പെടുന്നതായി എടുത്ത്, JSON ഉള്ളടക്കം മാത്രം പുറത്ത് കൊടുക്കുക. യാതൊരു അനാവശ്യ വിവരങ്ങളും ചേർക്കരുത്.
-
-ഇമെയിൽ ടെംപ്ലേറ്റ് ഫോർമാറ്റ്:
-
-json
-
-{&quot;subject&quot;: &quot;ഇമെയിൽ വിഷയം&quot;, &quot;content&quot;: &quot;ഇമെയിൽ ബോഡി&quot;, &quot;to&quot;: &quot;സ്വീകർത്താവ്&quot;, &quot;cc&quot;: &quot;സിസി സ്വീകർത്താവ്&quot;, &quot;bcc&quot;: &quot;ബിസിസി സ്വീകർത്താവ്&quot;}
-
-ഇൻപുട്ട്: %1</translation>
+        <translation>നിങ്ങൾക്ക് അനുബന്ധ ചോദ്യങ്ങൾ ചോദിക്കാനോ ലേഖനം ക്രമീകരിക്കാൻ ആവശ്യപ്പെടാനോ കഴിയും.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>MCP സെർവർ ഇൻസ്റ്റൻസ് ലഭ്യമാക്കുന്നതിൽ പരാജയപ്പെട്ടു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">സെർവർ &apos;%1&apos; കസ്റ്റം സെർവറല്ല അല്ലെങ്കിൽ നിലവിലില്ല</translation>
+        <translation>&apos;%1&apos; സെർവർ ഒരു ഇച്ഛാനുസൃത സെർവറല്ല അല്ലെങ്കിൽ നിലവിലില്ല</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">MCP സെർവർ പേര് &apos;%1&apos; ഇതിനകം നിലവിലുണ്ട്</translation>
+        <translation>MCP സെർവർ പേര് &apos;%1&apos; ഇതിനകം നിലവിലുണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;%1&apos; സെർവർ നിലവിലില്ല</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ഐഡിയുള്ള സെഷൻ ഇതിനകം നിലവിലുണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>സെഷൻ %1 സഹായി %2 സൃഷ്ടിക്കുന്നതിൽ പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>സെഷൻ %1 വിജയകരമായി സൃഷ്ടിച്ചു</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>സെഷൻ %1 കണ്ടെത്തിയില്ല</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">ഷോർട്ട്കട്ട്: [Super + Space]. എല്ലാ AI സവിശേഷതകളും ഒരിടത്ത് ആക്സസ് ചെയ്യാൻ UOS AI വേഗത്തിൽ ഇൻവോക്ക് ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">മനസ്സിലായി</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">ഈ പ്രോംപ്റ്റ് %1 തവണ കൂടി പ്രത്യക്ഷപ്പെടും, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;വീണ്ടും കാണിക്കരുത്&lt;/a&gt;</translation>
+        <translation>സെഷൻ %1 നിഷ്ക്രിയമല്ല</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
-        <translation>&apos;എടുക്കുക &apos;</translation>
+        <translation>എടുക്കുക </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
-        <translation>&apos; ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക&apos;</translation>
+        <translation>ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
-        <translation>പ്രതീക പരിധി കവിഞ്ഞു</translation>
+        <translation>പരമാവധി അക്ഷരങ്ങൾ കടന്നു</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>പ്രവർത്തനക്ഷമമാക്കുക</translation>
+        <source>Disabled</source>
+        <translation>പ്രവർത്തനരഹിതം</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Disabled</source>
-        <translation>പ്രവർത്തനരഹിതമാക്കി</translation>
+        <source>Enable</source>
+        <translation>പ്രവർത്തനക്ഷമമാക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
         <translation>സ്കിൽ മാനേജ്മെന്റ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
         <translation>സ്കിൽ ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
-        <translation>ആദ്യത്തെ 4 സ്കില്ലുകൾ ടൂൾബാറിൽ പ്രദർശിപ്പിക്കും, മറ്റുള്ളവ &apos;കൂടുതൽ&apos; മെനുവിൽ മറയ്ക്കും.</translation>
+        <translation>ആദ്യത്തെ 4 സ്കിലുകൾ ടൂൾബാറിൽ കാണിക്കും, ബാക്കിയുള്ളവ &apos;കൂടുതൽ&apos; മെനുവിൽ മറയ്ക്കും.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
-        <translation>സംരക്ഷിച്ചു</translation>
+        <translation>സേവ് ചെയ്തു</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
-        <translation>നിങ്ങൾക്ക് &quot;%1&quot; എന്ന സ്കിൽ ഇല്ലാതാക്കാൻ ആഗ്രഹമുണ്ടോ?</translation>
+        <translation>&quot;%1&quot; സ്കിൽ ഇല്ലാതാക്കണമെന്ന് തീർച്ചയാണോ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
         <translation>റദ്ദാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>ഇല്ലാതാക്കുക</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemChannel</name>
+    <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <source>The archive file does not exist.</source>
+        <translation>ആർക്കൈവ് ഫയൽ നിലവിലില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
-        <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>എക്‌സ്‌ട്രാക്ഷനായി താൽക്കാലിക ഡയറക്ടറി സൃഷ്‌ടിക്കാൻ കഴിഞ്ഞി�ല്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>ആർക്കൈവ് എക്‌സ്‌ട്രാക്ട് ചെയ്യാൻ കഴിഞ്ഞില്ല. ഫയൽ ദോഷപൂരിതമായിരിക്കാം അല്ലെങ്കിൽ ഫോർമാറ്റ് പിന്തുണയ്ക്കുന്നില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
-        <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>ആർക്കൈവിൽ SKILL.md ഫയൽ കണ്ടെത്തിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
+        <source>The specified path is invalid.</source>
+        <translation>നൽകിയ പാത്ത് അസാധുവാണ്.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
-        <source>About</source>
-        <translation type="unfinished">വിവരങ്ങൾ</translation>
+        <source>Failed to read SKILL.md.</source>
+        <translation>SKILL.md വായിക്കാൻ കഴിഞ്ഞില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
-        <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>SKILL.md-ൽ ആവശ്യമായ &apos;name&apos; ഫീൽഡ് ഇല്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
-        <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <source>The skill directory does not exist.</source>
+        <translation>സ്കിൽ ഡയറക്ടറി നിലവിലില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
-        <source>AI Writing</source>
-        <translation type="unfinished">AI റൈറ്റിംഗ്</translation>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>ഈ പാത്തിൽ നിന്ന് സ്കിൽ ഇംപോർട്ട് ചെയ്യാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
-        <source>AI Translation</source>
-        <translation type="unfinished">AI ട്രാൻസ്ലേഷൻ</translation>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>സ്കിൽ ഡയറക്ടറിയിൽ SKILL.md ഫയൽ കണ്ടെത്തിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
-        <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>സ്കിലിൽ അനുവദനീയമായ പരിധിയിൽ കൂടുതൽ ഫയലുകളുണ്ട് (പരമാവധി %1).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
-        <source>MCP Server</source>
-        <translation type="unfinished"></translation>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>സ്കിലിന്റെ വലിപ്പം പരിധിയിൽ കവിഞ്ഞു (പരമാവധി 10 MB അനുവദനീയം).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <source>The skill folder name is invalid.</source>
+        <translation>സ്കിൽ ഫോൾഡറിന്റെ പേര് അസാധുവാണ്.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
-        <source>Agent Store</source>
-        <translation type="unfinished">ഏജന്റ് സ്റ്റോർ</translation>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>നിലവിലുള്ള സ്കിൽ മാറ്റിയെഴുതാൻ കഴിഞ്ഞില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
-        <source>More</source>
-        <translation type="unfinished">കൂടുതൽ</translation>
+        <source>Failed to create the skills directory.</source>
+        <translation>സ്കിളുകളുടെ ഡയറക്ടറി സൃഷ്ടിക്കുന്നതിൽ പരാജയപ്പെട്ടു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
-        <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to copy the skill files.</source>
+        <translation>സ്കിൽ ഫയലുകൾ പകർത്തുന്നതിൽ പരാജയപ്പെട്ടു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
-        <source>Today</source>
-        <translation type="unfinished">ഇന്ന്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
-        <source>Yesterday</source>
-        <translation type="unfinished">ഇന്നലെ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
-        <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
-        <source>January</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
-        <source>February</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
-        <source>March</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
-        <source>April</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
-        <source>May</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
-        <source>June</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
-        <source>July</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
-        <source>August</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
-        <source>September</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
-        <source>October</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
-        <source>November</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
-        <source>year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
-        <source>Earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
-        <source>Delete</source>
-        <translation type="unfinished">ഇല്ലാതാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
-        <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
-        <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
-        <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
-        <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
-        <source>All</source>
-        <translation type="unfinished">എല്ലാം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
-        <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
-        <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
-        <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
-        <source>DeepThink</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
-        <source>Search</source>
-        <translation type="unfinished">തിരയുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
-        <source>Attachments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
-        <source>Upload Files</source>
-        <translation type="unfinished">ഫയലുകൾ അപ്‌ലോഡ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
-        <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
-        <source>Voice Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
-        <source>Voice Read</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
-        <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
-        <source>Regenerate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
-        <source>Re-edit</source>
-        <translation type="unfinished">വീണ്ടും എഡിറ്റ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
-        <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
-        <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
-        <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
-        <source>Thinking...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
-        <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
-        <source>Parsing...</source>
-        <translation type="unfinished">പാഴ്സിംഗ്...</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
-        <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
-        <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
-        <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
-        <source>Model List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
-        <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
-        <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
-        <source>Local Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
-        <source>Online Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
-        <source>Add Model</source>
-        <translation type="unfinished">മോഡൽ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
-        <source>Official</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
-        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
-        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
-        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
-        <source>View Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
-        <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
-        <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
-        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
-        <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
-        <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
-        <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
-        <source>File Upload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
-        <source>As Material</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
-        <source>As Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
-        <source>Local Materials</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
-        <source>File Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
-        <source>Outline</source>
-        <translation type="unfinished">ഔട്ലൈൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
-        <source>View All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
-        <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
-        <source>Upload File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
-        <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
-        <source>Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
-        <source>Heading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
-        <source>Export Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
-        <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
-        <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
-        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
-        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
-        <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
-        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
-        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
-        <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
-        <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
-        <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
-        <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
-        <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
-        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
-        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
-        <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
-        <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
-        <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
-        <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
-        <source>Add chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
-        <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
-        <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
-        <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
-        <source>Save as Word</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
-        <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
-        <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
-        <source>Saving...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
-        <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
-        <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
-        <source>Body Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
-        <source>Heading %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
-        <source>Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
-        <source>Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
-        <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
-        <source>Link Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
-        <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
-        <source>Numbered List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
-        <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
-        <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
-        <source>Blockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
-        <source>Divider</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
-        <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
-        <source>Print Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
-        <source>Share Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
-        <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
-        <source>Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
-        <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
-        <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
-        <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
-        <source>Add MCP Server</source>
-        <translation type="unfinished">MCP സെർവർ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
-        <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
-        <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
-        <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
-        <source>Install Now</source>
-        <translation type="unfinished">ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
-        <source>System Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
-        <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
-        <source>DND Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
-        <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
-        <source>Brightness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
-        <source>Font Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
-        <source>App Store</source>
-        <translation type="unfinished">ആപ്പ് സ്റ്റോർ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
-        <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
-        <source>Click to download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
-        <source>Go to configuration</source>
-        <translation type="unfinished">കോൺഫിഗറേഷനിലേക്ക് പോകുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
-        <source>No account</source>
-        <translation type="unfinished">അക്കൗണ്ട് ഇല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
-        <source>Input question</source>
-        <translation type="unfinished">ഇൻപുട്ട് ചോദ്യം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
-        <source>Welcome to UOS AI</source>
-        <translation type="unfinished">UOS AI-യിലേക്ക് സ്വാഗതം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">UOS AI നിങ്ങളെ സഹായിക്കാൻ കഴിയുന്ന ചില കാര്യങ്ങൾ ഇതാ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
-        <source>Stop</source>
-        <translation type="unfinished">നിർത്തുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
-        <source>Retry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
-        <source>Clear conversation history</source>
-        <translation type="unfinished">സംഭാഷണ ചരിത്രം മായ്ക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
-        <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">ദയവായി മൈക്രോഫോൺ കണക്റ്റ് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
-        <source>Chat history cleared</source>
-        <translation type="unfinished">ചാറ്റ് ചരിത്രം മായ്ച്ചു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
-        <source>Click to start/stop recording</source>
-        <translation type="unfinished">റെക്കോർഡിംഗ് ആരംഭിക്കാൻ/നിർത്താൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
-        <source>Listening</source>
-        <translation type="unfinished">കേൾക്കുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
-        <source>Sleeping</source>
-        <translation type="unfinished">ഉറങ്ങുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">മൈക്രോഫോൺ കണ്ടെത്തിയില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
-        <source>Connection failed, click to try again</source>
-        <translation type="unfinished">കണക്ഷൻ പരാജയപ്പെട്ടു, വീണ്ടും ശ്രമിക്കാൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">ആക്ടിവേറ്റ് ചെയ്യാൻ ആനിമേഷനിൽ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Ctrl+Super+Space</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">വോയ്സ് ഇൻപുട്ട് താൽക്കാലികമായി ലഭ്യമല്ല, ദയവായി നെറ്റ്വർക്ക് പരിശോധിക്കുക!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
-        <source>Voice conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">അയയ്ക്കാൻ ആനിമേഷൻ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Enter അമർത്തുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">%1 സെക്കൻഡ് കഴിഞ്ഞ് റെക്കോർഡിംഗ് നിർത്തുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
-        <source>Thinking</source>
-        <translation type="unfinished">ചിന്തിക്കുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
-        <source>Click animation to interrupt</source>
-        <translation type="unfinished">ഇന്ററപ്റ്റ് ചെയ്യാൻ ആനിമേഷൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
-        <source>Answering</source>
-        <translation type="unfinished">ഉത്തരം നൽകുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
-        <source>Activate</source>
-        <translation type="unfinished">സജീവമാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
-        <source>Voice input</source>
-        <translation type="unfinished">വോയ്സ് ഇൻപുട്ട്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">വോയ്സ് ബ്രോഡ്കാസ്റ്റ് താത്കാലികമായി ലഭ്യമല്ല, ദയവായി നെറ്റ്വർക്ക് പരിശോധിക്കുക!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
-        <source>Turn off voice conversation</source>
-        <translation type="unfinished">വോയ്സ് സംഭാഷണം ഓഫ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">ചിത്രം ജനറേറ്റ് ചെയ്തിരിക്കുന്നു, ഇത് കാണുന്നതിന് ദയവായി ചാറ്റ് ഇന്റർഫേസിലേക്ക് മാറുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
-        <source>No account, please configure an account</source>
-        <translation type="unfinished">അക്കൗണ്ട് ഇല്ല, ദയവായി ഒരു അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
-        <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">ഓരോ ചോദ്യത്തിനും 5 തവണ വരെ ഉത്തരം നൽകുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
-        <source>Copied successfully</source>
-        <translation type="unfinished">വിജയകരമായി പകർത്തി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
-        <source>Sound output device not detected</source>
-        <translation type="unfinished">ശബ്ദ ഔട്ട്പുട്ട് ഉപകരണം കണ്ടെത്തിയില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">ശബ്ദ ഔട്ട്പുട്ട് ഉപകരണം കണ്ടെത്തിയില്ല, ദയവായി പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
-        <source>Mode</source>
-        <translation type="unfinished">മോഡ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
-        <source>Window Mode</source>
-        <translation type="unfinished">വിൻഡോ മോഡ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
-        <source>Sidebar Mode</source>
-        <translation type="unfinished">സൈഡ്ബാർ മോഡ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
-        <source>Assistant List</source>
-        <translation type="unfinished">അസിസ്റ്റന്റ് ലിസ്റ്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
-        <source>Agent List</source>
-        <translation type="unfinished">ഏജന്റ് ലിസ്റ്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
-        <source>UOS System Assistant</source>
-        <translation type="unfinished">UOS സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
-        <source>Deepin System Assistant</source>
-        <translation type="unfinished">Deepin സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
-        <source>Please configure the knowledge base</source>
-        <translation type="unfinished">ദയവായി അറിവ് ബേസ് കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">[വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്] ഉപയോഗിക്കുന്നതിന് മുമ്പ് അറിവ് ബേസ് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്. അറിവ് ബേസ് കോൺഫിഗർ ചെയ്ത ശേഷം, AI നിങ്ങൾ അറിവ് ബേസിൽ കോൺഫിഗർ ചെയ്ത ഉള്ളടക്കത്തെ അടിസ്ഥാനമാക്കി ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുകയോ ഉള്ളടക്കം ജനറേറ്റ് ചെയ്യുകയോ ചെയ്യും.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
-        <source>Please configure the large model</source>
-        <translation type="unfinished">ദയവായി വലിയ മോഡൽ കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">വലിയ മോഡൽ കോൺഫിഗർ ചെയ്ത ശേഷം മാത്രമേ വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ് ഉപയോഗിക്കാൻ കഴിയൂ.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
-        <source>To configure</source>
-        <translation type="unfinished">കോൺഫിഗർ ചെയ്യാൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <source>To install</source>
-        <translation type="unfinished">ഇൻസ്റ്റാൾ ചെയ്യാൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">ദയവായി [EmbeddingPlugins] ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">ഈ അസിസ്റ്റന്റ് പ്രവർത്തിക്കുന്നതിന് EmbeddingPlugins ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
-        <source>Drag files here to add them.</source>
-        <translation type="unfinished">ഫയലുകൾ ഇവിടെ വലിച്ചിട്ട് ചേർക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">MCP സെർവർ ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">നിങ്ങൾക്ക് പരമാവധി ഒരു ഫയൽ മാത്രമേ ചേർക്കാൻ കഴിയൂ.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
-        <source>The file format is not supported.</source>
-        <translation type="unfinished">ഫയൽ ഫോർമാറ്റ് പിന്തുണയ്ക്കുന്നില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
-        <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">ഫയലിന്റെ പ്രധാന ഉള്ളടക്കം സംഗ്രഹിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
-        <source>File Error</source>
-        <translation type="unfinished">ഫയൽ പിശക്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
-        <source>File has been deleted.</source>
-        <translation type="unfinished">ഫയൽ ഇല്ലാതാക്കി.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">ഫയലിന്റെ വലുപ്പം 100MB പരിധി കവിയുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
-        <source>Upload a document</source>
-        <translation type="unfinished">ഒരു ഡോക്യുമെന്റ് അപ്ലോഡ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
-        <source>File deleted</source>
-        <translation type="unfinished">ഫയൽ ഇല്ലാതാക്കി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
-        <source>No text was parsed</source>
-        <translation type="unfinished">ഒരു ടെക്സ്റ്റും പാഴ്സ് ചെയ്തിട്ടില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
-        <source>Reference</source>
-        <translation type="unfinished">റഫറൻസ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
-        <source>Instruction</source>
-        <translation type="unfinished">ഇൻസ്ട്രക്ഷൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">ആക്ടിവേറ്റ് ചെയ്യാൻ ഇൻപുട്ട് ബോക്സിൽ &quot;/&quot; ടൈപ്പ് ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">ദയവായി നൽകുക; “Ctrl+Enter” ലൈൻ മാറ്റാൻ.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">നിങ്ങളുടെ ചോദ്യം നൽകുക, അല്ലെങ്കിൽ ഒരു കമാൻഡ് തിരഞ്ഞെടുക്കാൻ &quot;/&quot; നൽകുക
-&quot;Ctrl+Enter&quot; ഒരു പുതിയ ലൈൻ ആരംഭിക്കാൻ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
-        <source>Search complete.</source>
-        <translation type="unfinished">തിരയൽ പൂർത്തിയായി.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
-        <source>Click to view results</source>
-        <translation type="unfinished">ഫലങ്ങൾ കാണാൻ ക്ലിക്ക് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
-        <source>edit</source>
-        <translation type="unfinished">എഡിറ്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
-        <source>save</source>
-        <translation type="unfinished">സേവ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
-        <source>copy</source>
-        <translation type="unfinished">കോപ്പി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
-        <source>Thinking has stopped</source>
-        <translation type="unfinished">ചിന്തനം നിർത്തി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">താഴേക്ക് തിരികെ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">ആഴത്തിൽ ചിന്തിച്ചു (%1 സെക്കൻഡ്)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
-        <source>New Conversation</source>
-        <translation type="unfinished">പുതിയ സംഭാഷണം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
-        <source>History</source>
-        <translation type="unfinished">ചരിത്രം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
-        <source>No History Records</source>
-        <translation type="unfinished">ചരിത്ര റെക്കോർഡുകളൊന്നുമില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">സംഭാഷണം ഇല്ലാതാക്കാൻ ഉറപ്പാണോ? ഇല്ലാതാക്കിയാൽ അത് വീണ്ടെടുക്കാൻ കഴിയില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">ഈ സംഭാഷണത്തിൽ ഉപയോഗിച്ച %1 ഏജന്റ് ഇല്ലാതാക്കി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">ഈ സംഭാഷണം കാണാൻ കഴിയില്ല. കാണാൻ, %1 ഏജന്റ് ഇൻസ്റ്റാൾ ചെയ്ത് വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">യഥാർത്ഥ സംഭാഷണ മോഡൽ ഇല്ലാതാക്കി. സംഭാഷണം തുടരാൻ ഞങ്ങൾ ഒരു പുതിയ മോഡലിലേക്ക് മാറ്റി.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
-        <source>Recommendations</source>
-        <translation type="unfinished">ശുപാർശകൾ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
-        <source>No Model</source>
-        <translation type="unfinished">മോഡൽ ഇല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">മോഡൽ ലഭ്യമല്ല. ക്രമീകരണങ്ങളിൽ ഒരു മോഡൽ ഇൻസ്റ്റാൾ ചെയ്യുക അല്ലെങ്കിൽ ക്രമീകരിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">നിങ്ങളുടെ സൃഷ്ടിക്കായുള്ള ഉള്ളടക്ക തീംയും ആവശ്യകതകളും വിവരിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">വിവർത്തനം ചെയ്യാൻ ആഗ്രഹിക്കുന്ന ഉള്ളടക്കം നൽകുകയും ലക്ഷ്യ ഭാഷ വ്യക്തമാക്കുകയും ചെയ്യുക. സ്ഥിരസ്ഥിതി വിവർത്തനം ചൈനീസിലേക്കാണ്.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">പ്രോസസ്സ് ചെയ്യേണ്ട വാചകം നൽകുകയും നിങ്ങളുടെ ആവശ്യകതകൾ വ്യക്തമാക്കുകയും ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
-        <source>New Agent Added</source>
-        <translation type="unfinished">പുതിയ ഏജന്റ് ചേർത്തു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">പുതിയ റൈറ്റിംഗ്, ടെക്സ്റ്റ് പ്രോസസ്സിംഗ്, ട്രാൻസ്ലേഷൻ ഏജന്റുകൾ ചേർത്തിട്ടുണ്ട്. ഇപ്പോൾ പരിശോധിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
-        <source>Try it</source>
-        <translation type="unfinished">ശ്രമിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
-        <source>Write an article based on the following document:</source>
-        <translation type="unfinished">ഇനിപ്പറയുന്ന ഡോക്യുമെന്റ് അടിസ്ഥാനമാക്കി ഒരു ലേഖനം എഴുതുക:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
-        <source>Translate the following document into English:</source>
-        <translation type="unfinished">ഇനിപ്പറയുന്ന ഡോക്യുമെന്റ് ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
-        <source>Add Mcp Server</source>
-        <translation type="unfinished">ചേർക്കൽ പരാജയപ്പെട്ടു! പിശക് കാരണം:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
-        <source>Add Server</source>
-        <translation type="unfinished">MCP എൻവയൺമെന്റ് ഇല്ല. ദയവായി 【UOS AI Agent】 ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
-        <source>Add failed! Error reason:</source>
-        <translation type="unfinished">കോൾ ചെയ്യുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">പൂർത്തിയായി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
-        <source>Calling</source>
-        <translation type="unfinished">കോൾ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
-        <source>Completed</source>
-        <translation type="unfinished">റദ്ദാക്കി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
-        <source>Call Failed</source>
-        <translation type="unfinished">കോള്‍ പരാജയപ്പെട്ടു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
-        <source>Cancelled</source>
-        <translation type="unfinished">റദ്ദാക്കി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
-        <source>params</source>
-        <translation type="unfinished">പരാമീറ്ററുകള്‍</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
-        <source>result</source>
-        <translation type="unfinished">ഫലം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">MCP സെര്‍വറിനായി, ഔദ്യോഗികമായി പുറത്തിറക്കിയ &quot;DeepSeek-Trial Account&quot; മോഡലിലേക്ക് മാറുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">MCP സെര്‍വര്‍ കമാന്‍ഡ് നല്‍കുക, ഉദാ: &quot;എനിക്കായി സിസ്റ്റം ഡാര്‍ക്ക് മോഡിലേക്ക് മാറ്റൂ&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
-        <source>Agent server is not available</source>
-        <translation type="unfinished">ഏജന്റ് സെര്‍വര്‍ ലഭ്യമല്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
-        <source>Agent server exception</source>
-        <translation type="unfinished">ഏജന്റ് സെര്‍വറില്‍ അപവാദം</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
-        <source>MCP server is not available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
-        <source>Confirm</source>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">ഒരു കമാൻഡ് ഉപയോഗിച്ച് മൾട്ടി-ഫയൽ, മൾട്ടി-ആപ്പ് ജോലികൾ MCP സേവനം വഴി ഓട്ടോമേറ്റ് ചെയ്യൂ. ഇപ്പോൾ പരീക്ഷിക്കൂ!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
-        <source>Use later</source>
-        <translation type="unfinished">പിന്നീട് ഉപയോഗിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
-        <source>Enable MCP Server</source>
-        <translation type="unfinished">MCP സെർവർ പ്രവർത്തനക്ഷമമാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">MCP എൻവയൺമെന്റ് &quot;UOS AI Agent&quot; ഇൻസ്റ്റാൾ ചെയ്ത ശേഷം, </translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished">ക്ലിക്ക് ചെയ്ത് MCP സെർവർ ലിസ്റ്റിൽ &quot;uos-mcp&quot; തിരഞ്ഞെടുക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">പറഞ്ഞു നോക്കൂ: &quot;സിസ്റ്റം ഡാർക്ക് മോഡിലേക്ക് മാറ്റുക&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
-        <source>Try it now</source>
-        <translation type="unfinished">ഇപ്പോൾ പരീക്ഷിക്കൂ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">Mcp സെർവർ ചേർക്കുക [GuidePage]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">ആദ്യമായി ഉപയോഗിക്കുന്നവർ: App Store വഴി MCP എൻവയൺമെന്റ് &quot;UOS AI Agent&quot; ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">JSON ഫയൽ ഫോർമാറ്റ് തെറ്റാണ്, ദയവായി പരിശോധിച്ച് വീണ്ടും സമർപ്പിക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
-        <source>Install Now &gt;</source>
-        <translation type="unfinished">ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യുക &gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
-        <source>General Chat</source>
-        <translation type="unfinished">പൊതു ചാറ്റ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
-        <source>Now in Private Chat</source>
-        <translation type="unfinished">ഇപ്പോൾ സ്വകാര്യ ചാറ്റിലാണ്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">സ്വകാര്യ ചാറ്റ് സന്ദേശങ്ങൾ ചരിത്രത്തിൽ സംരക്ഷിക്കില്ല; ചാറ്റ് വിടുമ്പോൾ അവ സ്ഥിരമായി ഇല്ലാതാകും.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">സ്ക്രീൻഷോട്ട് Q&amp;A കുറുക്കുവഴി (Ctrl+Alt+Q), പരമാവധി 3 ചിത്രങ്ങൾ പിന്തുണയ്ക്കുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
-        <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">സ്ക്രീൻ റെക്കോർഡിംഗ് സമയത്ത് ഉപയോഗിക്കാനാവില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">അസാധുവായ ഫയൽ ഇല്ലാതാക്കി വീണ്ടും അയക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
-        <source>Add Private Chat</source>
-        <translation type="unfinished">സ്വകാര്യ ചാറ്റ് ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">[Screenshot Q&amp;A] ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">ഒരു സ്ക്രീൻഷോട്ട് എടുത്ത് ഉള്ളടക്കം UOS AI-യിലേക്ക് അയക്കുക. നേരിട്ട് ഒരു ചിത്രവും അപ്‌ലോഡ് ചെയ്യാം.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
-        <source>OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
-        <source>Next</source>
-        <translation type="unfinished">അടുത്തത്</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">[സ്വകാര്യ ചാറ്റ് മോഡ്] ചേർക്കുക - ചാറ്റുകൾ സംരക്ഷിക്കില്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
-        <source>No text extracted</source>
-        <translation type="unfinished">ടെക്സ്റ്റ് എടുക്കാനായില്ല</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">ചിത്രത്തിന്റെ വലിപ്പം 15 MB കവിഞ്ഞു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">നോളജ് ബേസ് തുറന്നതിന് ശേഷം, ഉത്തരങ്ങൾ അതിന്റെ ഉള്ളടക്കത്തെ അടിസ്ഥാനമാക്കിയായിരിക്കും. പ്രതികരണ വേഗത മെഷീൻ പ്രകടനവും നോളജ് ബേസിന്റെ വലിപ്പവും അനുസരിച്ചായിരിക്കും.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">ഏതെങ്കിലും കമാൻഡ് അല്ലെങ്കിൽ MCP തിരഞ്ഞെടുക്കുമ്പോൾ നോളജ് ബേസ് ലഭ്യമല്ല.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">നോളജ് ബേസ് സജീവമായിരിക്കുമ്പോൾ MCP പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">നോളജ് ബേസ് സജീവമായിരിക്കുമ്പോൾ കമാൻഡുകൾ പ്രവർത്തനരഹിതമാണ്.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
-        <source>Copy succeeded.</source>
-        <translation type="unfinished">പകർത്തൽ വിജയിച്ചു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
-        <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">പകർത്തൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
-        <source>Searching</source>
-        <translation type="unfinished">തിരയുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">%1 റഫറൻസ് ഡോക്യുമെന്റുകൾ ലഭിച്ചു (%2s)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
-        <source>Clear History</source>
-        <translation type="unfinished">ഹിസ്റ്ററി മായ്ക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
-        <source>Delete all records?</source>
-        <translation type="unfinished">എല്ലാ റെക്കോർഡുകളും ഇല്ലാതാക്കണമോ?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">ഒരിക്കൽ ഇല്ലാതാക്കിയാൽ, ഉള്ളടക്കം വീണ്ടെടുക്കാൻ കഴിയില്ല!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
-        <source>Recommend official models</source>
-        <translation type="unfinished">ഔദ്യോഗിക മോഡലുകൾ ശുപാർശ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
-        <source>Disable MCP</source>
-        <translation type="unfinished">MCP പ്രവർത്തനരഹിതമാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">ഔദ്യോഗിക മോഡൽ &quot;DeepSeek-Trial Account&quot; ഉപയോഗിക്കാൻ ശുപാർശ ചെയ്യുന്നു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
-        <source>Quick Open</source>
-        <translation type="unfinished">പെട്ടെന്ന് തുറക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">MCP സെർവർ ഓട്ടോമാറ്റിക് മോഡിലേക്ക് അപ്ഗ്രേഡ് ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">MCP സെർവർ ഓട്ടോമാറ്റിക് മോഡിലേക്ക് അപ്ഗ്രേഡ് ചെയ്തിരിക്കുന്നു, ഒരു ക്ലിക്കിൽ എല്ലാ MCP സെർവറുകളിലും പ്രവേശിക്കാൻ കഴിയും</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. ഇത് സിസ്റ്റം സെറ്റപ്പ്, ഫയൽ പ്രോസസ്സിംഗ് തുടങ്ങിയ ജോലികൾ ഒരു ക്ലിക്കിൽ ഓട്ടോമേറ്റ് ചെയ്യാൻ അനുവദിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">MCP സെർവർ ചേർക്കൽ സെറ്റിംഗ്സിലേക്ക് മാറ്റിയിരിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">കൂടുതൽ MCP സെർവർ ചേർക്കാൻ, Settings &gt; MCP Server എന്നതിലേക്ക് പോകുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
-        <source>Got it</source>
-        <translation type="unfinished">മനസ്സിലായി</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
-        <source>Complimentary Model Credits</source>
-        <translation type="unfinished">സൗജന്യ മോഡൽ ക്രെഡിറ്റുകൾ</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">നിലവിലെ സിസ്റ്റം ഡീപ്‌സീക്ക് ട്രയൽ അക്കൗണ്ട് മോഡൽ വാഗ്ദാനം ചെയ്യുന്നു, ഇത് ഓരോ മാസത്തിന്റെയും തുടക്കത്തിൽ സ്വയം ഫ്രീ ക്വോട്ട പുതുക്കുന്നു, ഇത് നിങ്ങളെ ആശങ്കയില്ലാതെ ഉപയോഗിക്കാൻ അനുവദിക്കുന്നു.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
-        <source>Claim Credits</source>
-        <translation type="unfinished">ക്രെഡിറ്റുകൾ ക്ലെയിം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
-        <source>Claim Free Credits</source>
-        <translation type="unfinished">സൗജന്യ ക്രെഡിറ്റുകൾ ക്ലെയിം ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
-        <source>Successfully Claimed</source>
-        <translation type="unfinished">വിജയകരമായി ക്ലെയിം ചെയ്തു</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">ക്ലെയിം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">എംസിപി സെർവർ പ്രവർത്തനക്ഷമമാക്കുക&amp;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
-        <source>Disable MCP Server</source>
-        <translation type="unfinished">എംസിപി സെർവർ പ്രവർത്തനരഹിതമാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
-        <source>Configure MCP Server</source>
-        <translation type="unfinished">എംസിപി സെർവർ കോൺഫിഗർ ചെയ്യുക</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI ഫോളോ അലോംഗ്/എഴുതുക</translation>
+        <source>Supported files</source>
+        <translation>പിന്തുണയുള്ള ഫയലുകൾ</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemControlInst</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <source>System Control</source>
-        <translation type="vanished">സിസ്റ്റം നിയന്ത്രണം</translation>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">ഒരു പുതിയ വാൾപേപ്പറിലേക്ക് മാറുക. സ്ക്രീൻ തെളിച്ചം 30% ആയി സജ്ജമാക്കുക...</translation>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
+        <translation>UOS AI യോട് ചോദിക്കുക, നിങ്ങളുടെ ആശങ്കകൾ മറക്കുക.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>മാറ്റങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Start Chatting</source>
+        <translation>ചാറ്റിംഗ് ആരംഭിക്കുക</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>ഇടതുവശത്ത് നിന്നും ഒരു അസിസ്റ്റന്റിനെ തിരഞ്ഞെടുത്ത്, പുതിയ ചാറ്റ് ആരംഭിക്കാൻ ഒരു ചോദ്യവും നിർദ്ദേശവും നൽകുക.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>സ്വര ഇന്ററാക്ഷൻ</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>നിങ്ങൾ സ്വര നിയന്ത്രണം ഇഷ്ടപ്പെടുന്നെങ്കിൽ, ആവർത്തിച്ചുള്ള പ്രവർത്തനങ്ങൾ കുറയ്ക്കാൻ ബന്ധപ്പെട്ട എൻട്രിയിൽ നിന്ന് വേഗത്തിൽ മാറുക.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>തുടരുക</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>നിങ്ങളുടെ ടാസ്കുകൾ തുടരാനും മോഡലുകൾ, ടൂളുകൾ, രൂപഭാവം എന്നിവ ക്രമീകരിക്കാനും ചരിത്രവും സജ്ജീകരണങ്ങളും ഉപയോഗിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>സജ്ജീകരണങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>സഹായം</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>സംബന്ധിച്ച്</translation>
+    </message>
+    <message>
+        <source>New Chat</source>
+        <translation>പുതിയ ചാറ്റ്</translation>
+    </message>
+    <message>
+        <source>Temporary Chat</source>
+        <translation>താൽക്കാലിക ചാറ്റ്</translation>
+    </message>
+    <message>
+        <source>AI Writing</source>
+        <translation>AI എഴുത്ത്</translation>
+    </message>
+    <message>
+        <source>AI Translation</source>
+        <translation>AI വിവർത്തനം</translation>
+    </message>
+    <message>
+        <source>AI Knowledge Base</source>
+        <translation>AI അറിവ് ശേഖരം</translation>
+    </message>
+    <message>
+        <source>MCP Server</source>
+        <translation>MCP സെർവർ</translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation>കമാൻഡുകൾ</translation>
+    </message>
+    <message>
+        <source>Agent Store</source>
+        <translation>ഏജന്റ് സ്റ്റോർ</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>കൂടുതൽ</translation>
+    </message>
+    <message>
+        <source>Chat History</source>
+        <translation>ചാറ്റ് ചരിത്രം</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>ഇന്ന്</translation>
+    </message>
+    <message>
+        <source>Yesterday</source>
+        <translation>ഇന്നലെ</translation>
+    </message>
+    <message>
+        <source>Last 7 Days</source>
+        <translation>കഴിഞ്ഞ 7 ദിവസം</translation>
+    </message>
+    <message>
+        <source>Last 30 Days</source>
+        <translation>കഴിഞ്ഞ 30 ദിവസം</translation>
+    </message>
+    <message>
+        <source>January</source>
+        <translation>ജനുവരി</translation>
+    </message>
+    <message>
+        <source>February</source>
+        <translation>ഫെബ്രുവരി</translation>
+    </message>
+    <message>
+        <source>March</source>
+        <translation>മാർച്ച്</translation>
+    </message>
+    <message>
+        <source>April</source>
+        <translation>ഏപ്രിൽ</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>മേയ്</translation>
+    </message>
+    <message>
+        <source>June</source>
+        <translation>ജൂൺ</translation>
+    </message>
+    <message>
+        <source>July</source>
+        <translation>ജൂലൈ</translation>
+    </message>
+    <message>
+        <source>August</source>
+        <translation>ഓഗസ്റ്റ്</translation>
+    </message>
+    <message>
+        <source>September</source>
+        <translation>സെപ്റ്റംബർ</translation>
+    </message>
+    <message>
+        <source>October</source>
+        <translation>ഒക്ടോബർ</translation>
+    </message>
+    <message>
+        <source>November</source>
+        <translation>നവംബർ</translation>
+    </message>
+    <message>
+        <source>year</source>
+        <translation>വർഷം</translation>
+    </message>
+    <message>
+        <source>Earlier</source>
+        <translation>മുമ്പ്</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>ഇല്ലാതാക്കുക</translation>
+    </message>
+    <message>
+        <source>Confirm Deletion</source>
+        <translation>ഇല്ലാതാക്കൽ ഉറപ്പാക്കുക</translation>
+    </message>
+    <message>
+        <source>Confirm deletion</source>
+        <translation>ഇല്ലാതാക്കൽ ഉറപ്പാക്കുക</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>ഇല്ലാതാക്കിയ ശേഷം, ഈ സെർവർ ലഭ്യമാകില്ല. ജാഗ്രത പുലർത്തുക.</translation>
+    </message>
+    <message>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation>ഈ ചാറ്റുമായി ബന്ധപ്പെട്ട എല്ലാ ഉള്ളടക്കവും UOS AI-ൽ നിന്ന് ഇല്ലാതാക്കും.</translation>
+    </message>
+    <message>
+        <source>Confirm Delete</source>
+        <translation>ഇല്ലാതാക്കൽ സ്ഥിരീകരിക്കുക</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>റദ്ദാക്കുക</translation>
+    </message>
+    <message>
+        <source>Batch Manage</source>
+        <translation>ഒരേസമയം നിയന്ത്രിക്കുക</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>എല്ലാം</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>എല്ലാം തിരഞ്ഞെടുക്കുക</translation>
+    </message>
+    <message>
+        <source>%1 conversations selected</source>
+        <translation>%1 സംഭാഷണങ്ങൾ തിരഞ്ഞെടുത്തു</translation>
+    </message>
+    <message>
+        <source>No chat history yet</source>
+        <translation>ഇതുവരെ ചാറ്റ് ചരിത്രമില്ല</translation>
+    </message>
+    <message>
+        <source>Chat content not found</source>
+        <translation>ചാറ്റ് ഉള്ളടക്കം കണ്ടെത്തിയില്ല</translation>
+    </message>
+    <message>
+        <source>DeepThink</source>
+        <translation>ഡീപ്തിങ്ക്</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>തിരയുക</translation>
+    </message>
+    <message>
+        <source>Attachments</source>
+        <translation>അറ്റാച്ച്മെന്റുകൾ</translation>
+    </message>
+    <message>
+        <source>Upload Files</source>
+        <translation>ഫയലുകൾ അപ്‌ലോഡ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A</source>
+        <translation>സ്ക്രീൻഷോട്ട് ചോദ്യോത്തരം</translation>
+    </message>
+    <message>
+        <source>Voice Input</source>
+        <translation>സ്വര ഇൻപുട്ട്</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>അയയ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>ഒരു ചോദ്യം ��ാടി...</translation>
+    </message>
+    <message>
+        <source>Voice Read</source>
+        <translation>സ്വര വായന</translation>
+    </message>
+    <message>
+        <source>Stop Reading</source>
+        <translation>വായന നിർത്തുക</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>പകർത്തുക</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>വീണ്ടും സൃഷ്ടിക്കുക</translation>
+    </message>
+    <message>
+        <source>Re-edit</source>
+        <translation>വീണ്ടും എഡിറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Stop Generating</source>
+        <translation>സൃഷ്ടിക്കുന്നത് നിർത്തുക</translation>
+    </message>
+    <message>
+        <source>Generation stopped</source>
+        <translation>സൃഷ്ടി നിർത്തി</translation>
+    </message>
+    <message>
+        <source>You stopped this answer, </source>
+        <translation>നിങ്ങൾ ഈ ഉത്തരം നിർത്തി, </translation>
+    </message>
+    <message>
+        <source>please re-edit your question</source>
+        <translation>ദയവായി നിങ്ങളുടെ ചോദ്യം വീണ്ടും എഡിറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Back to Bottom</source>
+        <translation>താഴേക്ക് മടങ്ങുക</translation>
+    </message>
+    <message>
+        <source>Thinking...</source>
+        <translation>ചിന്തിക്കുന്നു...</translation>
+    </message>
+    <message>
+        <source>Deep think completed (took %1s)</source>
+        <translation>ഡീപ് തിങ്ക് പൂർത്തിയായി (%1s എടുത്തു)</translation>
+    </message>
+    <message>
+        <source>Parsing...</source>
+        <translation>വിശകലനം ചെയ്യുന്നു...</translation>
+    </message>
+    <message>
+        <source>Parsing failed</source>
+        <translation>വിശകലനം പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>You can add up to 50 files</source>
+        <translation>നിങ്ങൾക്ക് പരമാവധി 50 ഫയലുകൾ ചേർക്കാവുന്നതാണ്</translation>
+    </message>
+    <message>
+        <source>Summarize the core content of the file</source>
+        <translation>ഫയലിന്റെ പ്രധാന ഉള്ളടക്കം ചുരുക്കിപ്പറയുക</translation>
+    </message>
+    <message>
+        <source>Model List</source>
+        <translation>മോഡൽ പട്ടിക</translation>
+    </message>
+    <message>
+        <source>Smart Recommendation</source>
+        <translation>സ്മാർട്ട് ശുപാർശ</translation>
+    </message>
+    <message>
+        <source>Smart switch for best match</source>
+        <translation>ഏറ്റവും അനുയോജ്യമായ മോഡലിലേക്ക് സ്വിച്ച് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Local Model</source>
+        <translation>പ്രാദേശിക മോഡൽ</translation>
+    </message>
+    <message>
+        <source>Online Model</source>
+        <translation>ഓൺലൈൻ മോഡൽ</translation>
+    </message>
+    <message>
+        <source>Add Model</source>
+        <translation>മോഡൽ ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Private Model</source>
+        <translation>സ്വകാര്യ മോഡൽ</translation>
+    </message>
+    <message>
+        <source>Official</source>
+        <translation>ഔദ്യോഗികം</translation>
+    </message>
+    <message>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation>AI സൃഷ്ടിച്ച ഉള്ളടക്കം പരാമർശത്തിനു മാത്രമാണ്. ইദിന്റെ കൃത്യത ദൃശ്യമാക്കുക.</translation>
+    </message>
+    <message>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation>താൽക്കാലിക ചാറ്റുകൾ ചരിത്രത്തിൽ സൂക്ഷിക്കില്ല. പുറത്ത് കടക്കുമ്പോൾ ഉള്ളടക്കം പൂർണ്ണമായും ഇല്ലാതാക്കും.</translation>
+    </message>
+    <message>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation>ഒരേസമയം 10 ചാറ്റുകൾ എന്ന പരിധി പാറ്റി. ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>View Now</source>
+        <translation>ഇപ്പോൾ കാണുക</translation>
+    </message>
+    <message>
+        <source>Remind Me Later</source>
+        <translation>പിന്നീട് ഓർമ്മപ്പെടുത്തുക</translation>
+    </message>
+    <message>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation>അനന്തമായ പ്രചോദനം, ആശങ്കയില്ലാത്ത എഴുത്ത്</translation>
+    </message>
+    <message>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation>കൂടുതൽ റിയൽ-ടൈം, സമഗ്രമായ, കൃത്യമായ പരാമർശങ്ങൾക്കായി വെബ് തിരയുന്നത് പ്രവർത്തനക്ഷമമാക്കുക.</translation>
+    </message>
+    <message>
+        <source>Upload files/images as references</source>
+        <translation>പരാമർശത്തിനായി ഫയലുകൾ/ചിത്രങ്ങൾ അപ്‌ലോഡ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Reference Outline / Local File</source>
+        <translation>റഫറൻസ് ഔട്ട്ലൈൻ / പ്രാദേശിക ഫയൽ</translation>
+    </message>
+    <message>
+        <source>As reference material / As outline file</source>
+        <translation>റഫറൻസ് മെറ്റീരിയൽ / ഔട്ട്ലൈൻ ഫയൽ</translation>
+    </message>
+    <message>
+        <source>File Upload</source>
+        <translation>ഫയൽ അപ്‌ലോഡ്</translation>
+    </message>
+    <message>
+        <source>As Material</source>
+        <translation>മെറ്റീരിയൽ ആയി</translation>
+    </message>
+    <message>
+        <source>As Outline</source>
+        <translation>ഔട്ട്ലൈൻ ആയി</translation>
+    </message>
+    <message>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>ഒരു ഔട്ട്ലൈൻ ഫയൽ മാത്രമേ അപ്‌ലോഡ് ചെയ്യാൻ കഴിയൂ</translation>
+    </message>
+    <message>
+        <source>Local Materials</source>
+        <translation>പ്രാദേശിക മെറ്റീരിയലുകൾ</translation>
+    </message>
+    <message>
+        <source>File Outline</source>
+        <translation>ഫയൽ ഔട്ട്ലൈൻ</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>ഔട്ട്ലൈൻ</translation>
+    </message>
+    <message>
+        <source>View All</source>
+        <translation>എല്ലാം കാണുക</translation>
+    </message>
+    <message>
+        <source>Recent Creations</source>
+        <translation>അടുത്തിടെ സൃഷ്ടിച്ചവ</translation>
+    </message>
+    <message>
+        <source>Upload File</source>
+        <translation>ഫയൽ അപ്‌ലോഡ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Reference Outline</source>
+        <translation>റഫറൻസ് ഔട്ട്ലൈൻ</translation>
+    </message>
+    <message>
+        <source>Local File</source>
+        <translation>പ്രാദേശിക ഫയൽ</translation>
+    </message>
+    <message>
+        <source>Heading</source>
+        <translation>തലക്കെട്ട്</translation>
+    </message>
+    <message>
+        <source>Export Document</source>
+        <translation>രേഖ എക്‌സ്‌പോർട്ട് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Exit Full Screen</source>
+        <translation>പൂർണ്ണ സ്ക്രീനിൽ നിന്ന് പുറത്തുകടുക</translation>
+    </message>
+    <message>
+        <source>Untitled Document</source>
+        <translation>പേരിടാത്ത രേഖ</translation>
+    </message>
+    <message>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation>പ്രാദേശിക മെറ്റീരിയലുകൾ അപ്‌ലോഡ് ചെയ്യാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നില്ലെങ്കിൽ, ഉള്ളടക്കം സൃഷ്ടിക്കുന്നതിന് മുമ്പ് താഴെ പറയുന്നവ ചെയ്യാവുന്നതാണ്:</translation>
+    </message>
+    <message>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation>1. ഒരു പ്രാദേശിക മോഡലിലേക്ക് (ഉദാഹരണത്തിന്, DeepSeek-R1-1.5B) അല്ലെങ്കിൽ സ്വകാര്യമായി ഡിപ്ലോയ് ചെയ്ത മോഡലിലേക്ക് മാറുക</translation>
+    </message>
+    <message>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation>2. &quot;വെബ് തിരയൽ&quot; ഓഫ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation>വിശകലനത്തിനായി മെറ്റീരിയലുകൾ ഓൺലൈൻ മോഡലിലേക്ക് അപ്‌ലോഡ് ചെയ്യും. തുടരും?</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation>വിശകലനത്തിനായി മെറ്റീരിയലുകൾ ഓൺലൈൻ മോഡലിലേക്ക് (%1) അപ്‌ലോഡ് ചെയ്യും. തുടരും?</translation>
+    </message>
+    <message>
+        <source>Enable Privacy Mode</source>
+        <translation>സ്വകാര്യതാ മോഡ് പ്രവർത്തനക്ഷമമാക്കുക</translation>
+    </message>
+    <message>
+        <source>Continue Generating</source>
+        <translation>ജനറേറ്റ് ചെയ്യുന്നത് തുടരുക</translation>
+    </message>
+    <message>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation>ജനറേറ്റ് ചെയ്ത ഉള്ളടക്കം ഒപ്റ്റിമൈസ് ചെയ്യാനോ ക്രമീകരിക്കാനോ നിങ്ങൾക്ക് കൂടുതൽ ആവശ്യങ്ങൾ നൽകാവുന്നതാണ്.</translation>
+    </message>
+    <message>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation>അപ്‌ലോഡ് ചെയ്ത പ്രാദേശിക ഔട്ട്‌ലൈൻ കണ്ടെത്തി. ഔട്ട്‌ലൈൻ ഉള്ളടക്കം വിശകലനം ചെയ്യുന്നു...</translation>
+    </message>
+    <message>
+        <source>Generating outline content...</source>
+        <translation>ഔട്ട്‌ലൈൻ ഉള്ളടക്കം ജനറേറ്റ് ചെയ്യുന്നു...</translation>
+    </message>
+    <message>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>എഡിറ്റ് ചെയ്യാവുന്ന ഒരു ഔട്ട്‌ലൈൻ ജനറേറ്റ് ചെയ്തു. സ്ഥിരീകരിച്ച ശേഷം, ഡോക്യുമെന്റ് ജനറേഷൻ തുടരാൻ താഴെയുള്ള നീല ബട്ടൺ ക്ലിക്ക് ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation>അപ്‌ലോഡ് ചെയ്ത ഔട്ട്‌_ലൈൻ ഫയൽ പാഴ്‌സ് ചെയ്യാൻ കഴിഞ്ഞില്ല. ദയവായി വീണ്ടും അപ്‌ലോഡ് ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Re-upload Outline</source>
+        <translation>ഔട്ട്‌ലൈൻ വീണ്ടും അപ്‌ലോഡ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Directly generate outline using AI</source>
+        <translation>AI ഉപയോഗിച്ച് നേരിട്ട് ഔട്ട്‌ലൈൻ ജനറേറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Add sub-chapter</source>
+        <translation>സബ്-അധ്യായം ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Delete sub-chapter</source>
+        <translation>സബ്-അധ്യായം ഇല്ലാതാക്കുക</translation>
+    </message>
+    <message>
+        <source>Delete chapter</source>
+        <translation>അധ്യായം ഇല്ലാതാക്കുക</translation>
+    </message>
+    <message>
+        <source>Add chapter</source>
+        <translation>അധ്യായം ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Enter chapter title</source>
+        <translation>അധ്യായത്തിന്റെ തലക്കെട്ട് നൽകുക</translation>
+    </message>
+    <message>
+        <source>Delete this heading?</source>
+        <translation>ഈ തലക്കെട്ട് ഇല്ലാതാക്കണോ?</translation>
+    </message>
+    <message>
+        <source>Generate document from outline</source>
+        <translation>ഔട്ട്‌ലൈനിൽ നിന്ന് ഡോക്യുമെന്റ് ജനറേറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Save as Word</source>
+        <translation>Word ആയി സേവ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Save as PDF</source>
+        <translation>PDF ആയി സൂക്ഷിക്കുക</translation>
+    </message>
+    <message>
+        <source>Save as Markdown</source>
+        <translation>Markdown ആയി സൂക്ഷിക്കുക</translation>
+    </message>
+    <message>
+        <source>Saving...</source>
+        <translation>സൂക്ഷിക്കുന്നു...</translation>
+    </message>
+    <message>
+        <source>Saved successfully!</source>
+        <translation>വിജയകരമായി സൂക്ഷിച്ചു!</translation>
+    </message>
+    <message>
+        <source>Failed to save, please try again.</source>
+        <translation>സൂക്ഷിക്കാൻ കഴിഞ്ഞില്ല, ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>ചെയ്തത് തിരികെ എടുക്കുക</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation>വീണ്ടും ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Body Text</source>
+        <translation>ഉള്ളടക്കം</translation>
+    </message>
+    <message>
+        <source>Heading %1</source>
+        <translation>തലക്കെട്ട് %1</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>കട്ട്</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>ചരിച്ചുള്ള</translation>
+    </message>
+    <message>
+        <source>Strikethrough</source>
+        <translation>വെട്ടിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Link Text</source>
+        <translation>ലിങ്ക് ടെക്സ്റ്റ്</translation>
+    </message>
+    <message>
+        <source>Bulleted List</source>
+        <translation>ബുള്ളറ്റ് ലിസ്റ്റ്</translation>
+    </message>
+    <message>
+        <source>Numbered List</source>
+        <translation>നമ്പർ ലിസ്റ്റ്</translation>
+    </message>
+    <message>
+        <source>Decrease Indent</source>
+        <translation>ഇൻഡെന്റ് കുറയ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>Increase Indent</source>
+        <translation>ഇൻഡെന്റ് കൂട്ടുക</translation>
+    </message>
+    <message>
+        <source>Blockquote</source>
+        <translation>ഉദ്ധരണി</translation>
+    </message>
+    <message>
+        <source>Divider</source>
+        <translation>വിഭജകം</translation>
+    </message>
+    <message>
+        <source>Copy Full Text</source>
+        <translation>മുഴുവൻ ടെക്സ്റ്റ് കോപ്പി ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Print Document</source>
+        <translation>രേഖ പ്രിന്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Share Document</source>
+        <translation>രേഖ പങ്കിടുക</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>ചെറുതാക്കുക</translation>
+    </message>
+    <message>
+        <source>Full Screen</source>
+        <translation>മുഴുവൻ സ്ക്രീൻ</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>അടയ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>Insert Link</source>
+        <translation>ലിങ്ക് ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>ടെക്സ്റ്റ്:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>ലിങ്ക്:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>ദയവായി സാധുതയുള്ള ഒരു ലിങ്ക് നൽകുക</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>ലിങ്ക് ടെക്സ്റ്റ്</translation>
+    </message>
+    <message>
+        <source>Please enter the text to be translated first.</source>
+        <translation>ദയവായി ആദ്യം വിവർത്തനം ചെയ്യേണ്ട ടെക്സ്റ്റ് നൽകുക.</translation>
+    </message>
+    <message>
+        <source>Identifying source language...</source>
+        <translation>സോഴ്സ് ഭാഷ തിരിച്ചറിയുന്നു...</translation>
+    </message>
+    <message>
+        <source>My MCP Server</source>
+        <translation>എന്റെ MCP സെർവർ</translation>
+    </message>
+    <message>
+        <source>Add MCP Server</source>
+        <translation>MCP സെർവർ ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Delete MCP Server</source>
+        <translation>MCP സെർവർ ഇല്ലാതാക്കുക</translation>
+    </message>
+    <message>
+        <source>Edit MCP Server</source>
+        <translation>MCP സെർവർ എഡിറ്റ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Built-in Only</source>
+        <translation>ബിൽറ്റ്-ഇൻ മാത്രം</translation>
+    </message>
+    <message>
+        <source>Custom Added Only</source>
+        <translation>ഇഷ്ടപ്രകാരം ചേർത്തത് മാത്രം</translation>
+    </message>
+    <message>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>MCP&amp;Skills ഉപയോഗിക്കാൻ, ആദ്യം ആപ്പ് സ്റ്റോറിൽ നിന്ന് UOS AI ഏജന്റ് ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>AI നോളജ് ബേസ് ഉപയോഗിക്കാൻ, ആപ്പ് സ്റ്റോറിൽ നിന്ന് എംബെഡ്ഡിംഗ് പ്ലഗിനുകൾ ആദ്യം ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Install Now</source>
+        <translation>ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യു</translation>
+    </message>
+    <message>
+        <source>System Settings</source>
+        <translation>സിസ്റ്റം സജ്ജീകരണങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation>ബ്ലൂടൂത്ത്</translation>
+    </message>
+    <message>
+        <source>Wireless Network</source>
+        <translation>വയർലെസ് നെറ്റ്‌വർക്ക്</translation>
+    </message>
+    <message>
+        <source>DND Mode</source>
+        <translation>DND മോഡ്</translation>
+    </message>
+    <message>
+        <source>Eye Comfort</source>
+        <translation>കണ്ണിന് ആശ്വാസം</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>തെളിച്ചം</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>വോള്യം</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>അക്ഷരരൂപ വലിപ്പം</translation>
+    </message>
+    <message>
+        <source>App Store</source>
+        <translation>ആപ്പ് സ്റ്റോർ</translation>
+    </message>
+    <message>
+        <source>Schedule Management</source>
+        <translation>ഷെഡ്യൂൾ മാനേജ്മെന്റ്</translation>
+    </message>
+    <message>
+        <source>Click to download</source>
+        <translation>ഡൗൺലോഡ് ചെയ്യാൻ ക്ലിക്ക് ചെയ്യു</translation>
+    </message>
+    <message>
+        <source>&lt;10k downloads</source>
+        <translation>10k-ന് താഴെ ഡൗൺലോഡുകൾ</translation>
+    </message>
+    <message>
+        <source>&lt;100k downloads</source>
+        <translation>100k-ന് താഴെ ഡൗൺലോഡുകൾ</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100k+ ഡൗൺലോഡുകൾ</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 നക്ഷത്രങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>ആപ്പിലേക്ക് പോകാൻ ക്ലിക്ക് ചെയ്യു</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>ഞായർ</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>തിങ്കൾ</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>ചൊവ്വ</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>ബുധനാഴ്ച</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>വ്യാഴാഴ്ച</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>ശുക്രനാഴ്ച</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>ശനിയാഴ്ച</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>MCP സെർവറുകൾ</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>എല്ലാ MCP സെർവറുകളും തിരഞ്ഞെടുക്കുക</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>നിങ്ങൾക്ക് MCP സെർവറുകൾ ചേർക്കാനും നിയന്ത്രിക്കാനും കഴിയും</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>വിവരിക്കുക</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>JSON കോൺഫിഗറേഷൻ</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>ദയവായി MCP JSON കോൺഫിഗറേഷൻ കോഡ് ഇൻപുട്ട് ബോക്സിൽ പേസ്റ്റ് ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>വേഗത്തിൽ തിരയാൻ സഹായിക്കുന്ന ടൂളുകൾക്കായി MCP സെർവർ ഫംഗ്ഷനുകൾ വിവരിക്കുക</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>തിരികെ</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>സൗജന്യ ക്രെഡിറ്റുകൾ ലഭ്യമായി</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>നിങ്ങളുടെ ട്രയൽ അക്കൗണ്ടിനുള്ള സൗജന്യ ജനറേഷൻ ക്രെഡിറ്റുകൾ നിങ്ങൾ ഉപയോഗിച്ചു തീർത്തു. ഈ മാസം സാധുതയുള്ള അധിക 200 സൗജന്യ ക്രെഡിറ്റുകൾ ഞങ്ങൾ നിങ്ങൾക്ക് നൽകി. കൂടുതൽ ഫീച്ചറുകൾ പര്യവേക്ഷിക്കുക, UOS AI-യുടെ അനന്തമായ സാധ്യതകൾ അൺലോക്ക് ചെയ്യുക!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>ഇപ്പോൾ അല്ല</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>ഞാൻ {{enter identity/position}} ആണ്. {{enter topic}} സംബന്ധിച്ചുള്ള ഒരു {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} എഴുതാൻ എനിക്ക് സഹായിക്കുക, ഏകദേശം {{1000}} വാക്കുകൾ നീളത്തിൽ. ഉള്ളടക്കത്തിന്റെ ആവശ്യങ്ങൾ {{enter requirements/content focus/writing style, etc..}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>ചാറ്റ് ചരിത്രം നിയന്ത്രിക്കുക</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>ശബ്ദ ചാറ്റ്</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>വികസിപ്പിക്കുക</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>ചുരുക്കുക</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>തിരുത്തിയത്</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>സൃഷ്ടിച്ചത്</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>നിങ്ങൾക്ക് %1 പുതിയ ഉത്തരം നൽകിയ ചാറ്റുകളുണ്ട്</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>തിരയൽ ചരിത്രം</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>ഈ സംഭാഷണം ഇല്ലാതാക്കുന്നത് സ്ഥിരീകരിക്കുക</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>ഇത് UOS AI-ൽ നിന്ന് ബന്ധപ്പെട്ട എല്ലാ ഉള്ളടക്കവും �ീക്കം ചെയ്യും</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>ഇപ്പോൾ ഉപയോഗിക്കുക</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>എന്റെ കഴിവുകൾ</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>ഇൻസ്റ്റാളേഷൻ ഡയറക്ടറി തുറക്കുക</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>പുതുക്കുക</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>കഴിവ് ഇറക്കുമതി ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>നിങ്ങൾക്ക് കഴിവുകൾ ചേർക്കാനും നിയന്ത്രിക്കാനും കഴിയും</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>വോയ്സ് ചാറ്റിൽ നിന്ന് പുറത്തുകടക്കുക</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന %1 ഫയലുകൾ അസാധുവാണ്, ലഭ്യമല്ല. തുടരണോ?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന ഫയൽ അസാധുവാണ്, ലഭ്യമല്ല. തുടരണോ?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>മുമ്പത്തെ</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: പൂർണ്ണമായുള്ളപുതിയ UI അപ്ഗ്രേഡ്</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>പുതിയ ഇന്ററാക്ഷൻ അനുഭവത്തിനായി പുതിയ വിൻഡോ മോഡ്</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>സംഘടിത പ്രവേശനത്തിനും എളുപ്പത്തിലുള്ള ഉപയോഗത്തിനുമായി സൈഡ്ബാർ നാവിഗേഷൻ മായ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>കൂടുതൽ ഉള്ളടക്കമുള്ള വിശാലവും കേന്ദ്രീകൃതവുമായ വർക്ക്സ്പേസ്</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>പ്രധാന ടാസ്ക്കുകൾ കേന്ദ്രീകരിക്കാനും ഇമ്മേഴ്സീവ് ആക്കാനും കൂടുതൽ വ്യക്തമായ ഹയറാർക്കി</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>നിങ്ങളുടെ വിലപിടിപ്പുള്ള സമയം ലാഭിക്കാൻ മൾട്ടി-ടാസ്ക്കിംഗ്</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>നിശബ്ദ പശ്ചാത്തല മൾട്ടി-ടാസ്ക്കിംഗ്: ഇനി കാത്തിരിക്കേണ്ട</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>നിങ്ങളുടെ പ്രവർത്തനം തടസ്സപ്പെടുത്താതെ ടാസ്ക്കുകൾ ഏൽപ്പിക്കുക</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>നിരന്തരമായ നിരീക്ഷണമില്ലാതെ തൽസ്വര പുരോഗതി അപ്ഡേറ്റുകൾ ലഭിക്കുക</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>ഇമ്മേഴ്സീവ് സ്പ്ലിറ്റ്-സ്ക്രീൻ റൈറ്റിംഗ്: കൃത്യവും, സുരക്ഷിതവും, ട്രേസബിളും</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>സ്പ്ലിറ്റ്-സ്ക്രീൻ ചാറ്റ് എഡിറ്റ്: ജാലകങ്ങൾ മാറ്റേണ്ട</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>നന്നായി അടിസ്ഥാനപ്പെടുത്തിയ കണ്ടന്റ് സൃഷ്ടിക്കാൻ ആഴത്തിലുള്ള ഡാറ്റ &quot;ഫീഡിംഗ്&quot;</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>മാനുവൽ തിരുത്തലും ഒരു ക്ലിക്കിൽ എക്സ്പോർട്ടുമായി ആദ്യം ഔട്ട്‌ലൈൻ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>ഉപകരണ അല്ലെങ്കിൽ/സ്വകാര്യ മോഡലുകൾ ഡാറ്റ സുരക്ഷയും സുരക്ഷിതത്വവും ഉറപ്പാക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>സിസ്റ്റം നിയന്ത്രണം വിപുലമായ കഴിവുകൾ: ഒരു കമാൻഡിൽ എല്ലാം</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>വിഷ്വൽ സിസ്റ്റം നിയന്ത്രണം: ഫോണ്ടുകൾ ക്രമീകരിക്കുക, വൈ-ഫൈ ടോഗിൾ ചെയ്യുക, തുടങ്ങിയവ</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>ഉയർന്ന ആവൃത്തിയിലുള്ള ഓഫീസ് കഴിവുകൾ: എഴുത്ത്, വിവർത്തനം, ലയനം</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>അനന്തമായ സാധ്യതകൾ തുറക്കാൻ ഒരു ക്ലിക്കിൽ കഴിവ് ഇംപോർട്ട് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>ചരിത്രത്തിനായി ബാച്ച് മാനേജ്മെന്റും കൃത്യമായ തിരയലും</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>ആഗോള ദ്രുത തിരയൽ: സെക്കൻഡുകളിൽ ചരിത്രം ആക്സസ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>കൃത്യമായ ചാറ്റ് ചരിത്ര തിരയലിനായി ഏജന്റ് അടിസ്ഥാനമാക്കിയ ഫിൽട്ടറിംഗ്</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>വൃത്തിയുള്ള സംഘടിത വർക്ക്‌സ്പേസിനായി കാര്യക്ഷമമായ ബാച്ച് മാനേജ്മെന്റ്</translation>
+    </message>
+    <message>
+        <source>Go to configuration</source>
+        <translation>കോൺഫിഗറേഷനിലേക്ക് പോകുക</translation>
+    </message>
+    <message>
+        <source>No account</source>
+        <translation>അക്കൗണ്ട് ഇല്ല</translation>
+    </message>
+    <message>
+        <source>Input question</source>
+        <translation>ചോദ്യം നൽകുക</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>AI സൃഷ്ടിച്ച ഉള്ളടക്കം പരാമർശത്തിനു മാത്രമാണ്, ദയവായി വിവരങ്ങളുടെ കൃത്യതയിൽ ശ്രദ്ധിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Welcome to UOS AI</source>
+        <translation>UOS AI-ലേക്ക് സ്വാഗതം</translation>
+    </message>
+    <message>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation>UOS AI നിങ്ങളെ സഹായിക്കാൻ കഴിയുന്ന ചില കാര്യങ്ങൾ താഴെ നൽകുന്നു</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>നിർത്തുക</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>പ്ലേ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation>വീണ്ടും ശ്രമിക്കുക</translation>
+    </message>
+    <message>
+        <source>Clear conversation history</source>
+        <translation>സംഭാഷണ ചരിത്രം മായ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>Please connect the microphone and try again</source>
+        <translation>ദയവായി മൈക്രോഫോൺ കണക്ട് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക</translation>
+    </message>
+    <message>
+        <source>Chat history cleared</source>
+        <translation>ചാറ്റ് ചരിത്രം മായ്ച്ചു</translation>
+    </message>
+    <message>
+        <source>Click to start/stop recording</source>
+        <translation>റെക്കോർഡിംഗ് ആരംഭിക്കാൻ/നിർത്താൻ ക്ലിക്ക് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Listening</source>
+        <translation>ശ്രദ്ധിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Sleeping</source>
+        <translation>ഉറങ്ങുന്നു</translation>
+    </message>
+    <message>
+        <source>No microphone detected</source>
+        <translation>മൈക്രോഫോൺ കണ്ടെത്തിയില്ല</translation>
+    </message>
+    <message>
+        <source>Connection failed, click to try again</source>
+        <translation>കണക്ഷൻ പരാജയപ്പെട്ടു, വീണ്ടും ശ്രമിക്കാൻ ക്ലിക്ക് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Click on the animation%1 to activate</source>
+        <translation>സജീവമാക്കാൻ ആനിമേഷൻ%1-ൽ ക്ലിക്ക് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation>ശബ്ദ ഇൻപുട്ട് താൽക്കാലികമായി ലഭ്യമല്ല, ദയവായി നെറ്റ്‌വർക്ക് പരിശോധിക്കുക!</translation>
+    </message>
+    <message>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>സെർവറുമായി കണക്ട് ചെയ്യാൻ കഴിഞ്ഞില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Voice conversation</source>
+        <translation>ശബ്ദ സംഭാഷണം</translation>
+    </message>
+    <message>
+        <source>Click the animation or press Enter to send</source>
+        <translation>അയയ്ക്കാൻ ആനിമേഷനിൽ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Enter കീ അമർത്തുക</translation>
+    </message>
+    <message>
+        <source>Stop recording after %1 seconds</source>
+        <translation>%1 സെക്കൻഡിനുള്ളിൽ റെക്കോർഡിംഗ് നിർത്തുക</translation>
+    </message>
+    <message>
+        <source>Thinking</source>
+        <translation>ചിന്തിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Click animation to interrupt</source>
+        <translation>തടസ്സപ്പെടുത്താൻ ആനിമേഷൻ ക്ലിക്ക് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Answering</source>
+        <translation>മറുപടി നൽകുന്നു</translation>
+    </message>
+    <message>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation>നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ട് ക്വോട്ട തീർന്നുപോയി, തുടരുന്നതിന് ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation>നിങ്ങളുടെ സൗജന്യ അക്കൗണ്ടിന്റെ കാലാവധി അവസാനിച്ചു, തുടരുന്നതിന് ദയവായി നിങ്ങളുടെ മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI ഉപയോഗിക്കുന്നതിന് മുമ്പ് ഒരു AI മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യേണ്ടതുണ്ട്. ദയവായി ആദ്യം ഒരു മോഡൽ അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Activate</source>
+        <translation>സജീവമാക്കുക</translation>
+    </message>
+    <message>
+        <source>Voice input</source>
+        <translation>ശബ്ദ ഇൻപുട്ട്</translation>
+    </message>
+    <message>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation>ശബ്ദ പ്രക്ഷേപണം താൽക്കാലികമായി ലഭ്യമല്ല, ദയവായി നെറ്റ്‌വർക്ക് പരിശോധിക്കുക!</translation>
+    </message>
+    <message>
+        <source>Turn off voice conversation</source>
+        <translation>ശബ്ദ സംഭാഷണം ഓഫ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation>ചിത്രം സൃഷ്ടിച്ചുകഴിഞ്ഞു, അത് കാണുന്നതിന് ദയവായി ചാറ്റ് ഇന്റർഫേസിലേക്ക് മാറുക.</translation>
+    </message>
+    <message>
+        <source>No account, please configure an account</source>
+        <translation>അക്കൗണ്ട് ഇല്ല, ദയവായി ഒരു അക്കൗണ്ട് കോൺഫിഗർ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Answer each question up to 5 times</source>
+        <translation>ഓരോ ചോദ്യത്തിനും 5 തവണ വരെ മറുപടി നൽകുക</translation>
+    </message>
+    <message>
+        <source>Copied successfully</source>
+        <translation>വിജയകരമായി കോപ്പി ചെയ്തു</translation>
+    </message>
+    <message>
+        <source>Sound output device not detected</source>
+        <translation>ശബ്ദ ഔട്ട്പുട്ട് ഉപകരണം കണ്ടെത്തിയില്ല</translation>
+    </message>
+    <message>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation>ശബ്ദ ഔട്ട്പുട്ട് ഉപകരണം കണ്ടെത്തിയില്ല, ദയവായി പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക!</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>മോഡ്</translation>
+    </message>
+    <message>
+        <source>Window Mode</source>
+        <translation>വിൻഡോ മോഡ്</translation>
+    </message>
+    <message>
+        <source>Sidebar Mode</source>
+        <translation>സൈഡ്ബാർ മോഡ്</translation>
+    </message>
+    <message>
+        <source>Assistant List</source>
+        <translation>അസിസ്റ്റന്റ് പട്ടിക</translation>
+    </message>
+    <message>
+        <source>Agent List</source>
+        <translation>ഏജന്റ് പട്ടിക</translation>
+    </message>
+    <message>
+        <source>UOS System Assistant</source>
+        <translation>UOS സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
+    </message>
+    <message>
+        <source>Deepin System Assistant</source>
+        <translation>Deepin സിസ്റ്റം അസിസ്റ്റന്റ്</translation>
+    </message>
+    <message>
+        <source>Personal Knowledge Assistant</source>
+        <translation>വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്</translation>
+    </message>
+    <message>
+        <source>Please configure the knowledge base</source>
+        <translation>ദയവായി അറിവ് ശേഖരം കോൺഫിഗർ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>[വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ്] ഉപയോഗിക്കുന്നതിന് മുമ്പ്, അറിവ് ശേഖരം കോൺഫിഗർ ചെയ്യേണ്ടത് ആവശ്യമാണ്. അറിവ് ശേഖരം കോൺഫിഗർ ചെയ്ത ശേഷം, AI നിങ്ങൾ അറിവ് ശേഖരത്തിൽ കോൺഫിഗർ ചെയ്ത ഉള്ളടക്കത്തിന്റെ അടിസ്ഥാനത്തിൽ ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുകയോ ഉള്ളടക്കം സൃഷ്ടിക്കുകയോ ചെയ്യും.</translation>
+    </message>
+    <message>
+        <source>Please configure the large model</source>
+        <translation>ദയവായി വലിയ മോഡൽ കോൺഫിഗർ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>വലിയ മോഡൽ കോൺഫിഗർ ചെയ്തിട്ടേയുള്ളൂ വ്യക്തിഗത അറിവ് അസിസ്റ്റന്റ് ഉപയോഗിക്കാൻ കഴിയൂ.</translation>
+    </message>
+    <message>
+        <source>To configure</source>
+        <translation>കോൺഫിഗർ ചെയ്യാൻ</translation>
+    </message>
+    <message>
+        <source>To install</source>
+        <translation>ഇൻസ്റ്റാൾ ചെയ്യാൻ</translation>
+    </message>
+    <message>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation>ദയവായി [EmbeddingPlugins] ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation>ഈ അസിസ്റ്റന്റ് പ്രവർത്തിക്കാൻ EmbeddingPlugins ഇൻസ്റ്റാൾ ചെയ്യേണ്ടത് ആവശ്യമാണ്</translation>
+    </message>
+    <message>
+        <source>Drag files here to add them.</source>
+        <translation>ഫയലുകൾ ചേർക്കാൻ ഇവിടെ വലിച്ചിടുക.</translation>
+    </message>
+    <message>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation>നിങ്ങൾക്ക് 3 ഫയലുകൾ മാത്രമേ ചേർക്കാൻ കഴിയൂ, പിന്തുണയ്ക്കുന്ന ഫയൽ തരങ്ങൾ: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, കോഡ് ഫയലുകൾ, തുടങ്ങിയവ.</translation>
+    </message>
+    <message>
+        <source>You can only add a maximum of one file.</source>
+        <translation>നിങ്ങൾക്ക് ഒരു ഫയൽ മാത്രമേ ചേർക്കാൻ കഴിയൂ.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>ഫയൽ ഫോർമാറ്റിന് പിന്തുണയില്ല.</translation>
+    </message>
+    <message>
+        <source>Summarize the key content of the file.</source>
+        <translation>ഫയലിലെ പ്രധാന ഉള്ളടക്കം ചുരുക്കിപ്പറയുക.</translation>
+    </message>
+    <message>
+        <source>File Error</source>
+        <translation>ഫയൽ പിശക്</translation>
+    </message>
+    <message>
+        <source>File has been deleted.</source>
+        <translation>ഫയൽ ഇല്ലാതാക്കി.</translation>
+    </message>
+    <message>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation>ഫയലിന്റെ വലിപ്പം 100MB പരിധി കവിഞ്ഞു.</translation>
+    </message>
+    <message>
+        <source>Upload a document</source>
+        <translation>ഒരു രേഖ അപ്‌ലോഡ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>File deleted</source>
+        <translation>ഫയൽ ഇല്ലാതാക്കി</translation>
+    </message>
+    <message>
+        <source>No text was parsed</source>
+        <translation>ടെക്സ്റ്റ് പാഴ്‌സ് ചെയ്തില്ല</translation>
+    </message>
+    <message>
+        <source>Reference</source>
+        <translation>റഫറൻസ്</translation>
+    </message>
+    <message>
+        <source>Instruction</source>
+        <translation>നിർദ്ദേശം</translation>
+    </message>
+    <message>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation>സജീവമാക്കാൻ ഇൻപുട്ട് ബോക്സിൽ &quot;/&quot; ടൈപ്പ് ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation>ദയവായി നൽകുക; വരി മാറ്റാൻ &quot;Ctrl+Enter&quot;.</translation>
+    </message>
+    <message>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation>നിങ്ങളുടെ ചോദ്യം നൽകുക, അല്ലെങ്കിൽ ഒരു കമാൻഡ് തിരഞ്ഞെടുക്കാൻ &quot;/&quot; നൽകുക
+പുതിയ വരി ആരംഭിക്കാൻ &quot;Ctrl+Enter&quot;</translation>
+    </message>
+    <message>
+        <source>Search complete.</source>
+        <translation>തിരയൽ പൂർത്തിയായി.</translation>
+    </message>
+    <message>
+        <source>Click to view results</source>
+        <translation>ഫലങ്ങൾ കാണാൻ ക്ലിക്ക് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>edit</source>
+        <translation>എഡിറ്റ്</translation>
+    </message>
+    <message>
+        <source>save</source>
+        <translation>സേവ്</translation>
+    </message>
+    <message>
+        <source>copy</source>
+        <translation>കോപ്പി</translation>
+    </message>
+    <message>
+        <source>lines of code collapsed</source>
+        <translation>കോഡ് വരികൾ ചുരുക്കി</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>ഇങ്ങനെ സേവ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Thinking has stopped</source>
+        <translation>ചിന്തനം നിർത്തി</translation>
+    </message>
+    <message>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation>ആഴത്തിൽ ചിന്തിച്ചു (%1 സെക്കൻഡ്)</translation>
+    </message>
+    <message>
+        <source>New Conversation</source>
+        <translation>പുതിയ സംഭാഷണം</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ചരിത്രം</translation>
+    </message>
+    <message>
+        <source>No History Records</source>
+        <translation>ചരിത്രരേഖകളൊന്നുമില്ല</translation>
+    </message>
+    <message>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation>നിങ്ങൾക്ക് ഈ സംഭാഷണം ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ? ഇല്ലാതാക്കിയാൽ ഇത് വീണ്ടെടുക്കാൻ സാധിക്കില്ല.</translation>
+    </message>
+    <message>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation>ഈ സംഭാഷണത്തിൽ ഉപയോഗിച്ച %1 ഏജന്റ് ഇല്ലാതാക്കപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation>ഈ സംഭാഷണം കാണാൻ സാധിക്കില്ല. കാണുന്നതിന്, ദയവായി %1 ഏജന്റ് ഇൻസ്റ്റാൾ ചെയ്ത് വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation>യഥാർത്ഥ സംഭാഷണ മോഡൽ ഇല്ലാതാക്കപ്പെട്ടു. സംഭാഷണം തുടരുന്നതിനായി ഞങ്ങൾ നിങ്ങൾക്കായി ഒരു പുതിയ മോഡലിലേക്ക് മാറ്റി.</translation>
+    </message>
+    <message>
+        <source>Recommendations</source>
+        <translation>ശുപാർശകൾ</translation>
+    </message>
+    <message>
+        <source>No Model</source>
+        <translation>മോഡലൊന്നുമില്ല</translation>
+    </message>
+    <message>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation>മോഡലൊന്നും ലഭ്യമല്ല. ദയവായി സെറ്റിംഗ്സിൽ ഒരു മോഡൽ ഇൻസ്റ്റാൾ ചെയ്യുക അല്ലെങ്കിൽ കോൺഫിഗർ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation>ദയവായി നിങ്ങളുടെ സൃഷ്ടിയുടെ ഉള്ളടക്ക വിഷയവും ആവശ്യകതകളും വിവരിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation>ദയവായി നിങ്ങൾ വിവർത്തനം ചെയ്യാൻ ആഗ്രഹിക്കുന്ന ഉള്ളടക്കം നൽകുക കൂടാതെ ലക്ഷ്യ ഭാഷ വ്യക്തമാക്കുക. സ്വമേധയാ ചൈനീസ് ഭാഷയിലേക്ക് വിവർത്തനം ചെയ്യും.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation>ദയവായി നിങ്ങൾക്ക് പ്രോസസ്സ് ചെയ്യേണ്ട ടെക്സ്റ്റ് നൽകുക കൂടാതെ നിങ്ങളുെട ആവശ്യകതകൾ വ്യക്തമാക്കുക.</translation>
+    </message>
+    <message>
+        <source>New Agent Added</source>
+        <translation>പുതിയ ഏജന്റ് ചേർത്തു</translation>
+    </message>
+    <message>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation>പുതിയ എഴുത്ത്, ടെക്സ്റ്റ് പ്രോസസ്സിംഗ്, വിവർത്തന ഏജന്റുകൾ ചേർത്തു. അവ ഇപ്പോൾ പരിശോധിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Try it</source>
+        <translation>ശ്രമിക്കുക</translation>
+    </message>
+    <message>
+        <source>Write an article based on the following document:</source>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന രേഖയെ അടിസ്ഥാനമാക്കി ഒരു ലേഖനം എഴുതുക:</translation>
+    </message>
+    <message>
+        <source>Translate the following document into English:</source>
+        <translation>താഴെ നൽകിയിരിക്കുന്ന രേഖ ഇംഗ്ലീഷിലേക്ക് വിവർത്തനം ചെയ്യുക:</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server</source>
+        <translation>Mcp സെർവർ ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Add Server</source>
+        <translation>സെർവർ ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Add failed! Error reason:</source>
+        <translation>ചേർക്കൽ പരാജയപ്പെട്ടു! പിശക് കാരണം:</translation>
+    </message>
+    <message>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation>MCP എൻവയോൺമെന്റ് കാണുന്നില്ല. ദയവായി 【UOS AI Agent】 ഇൻസ്റ്റാൾ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Calling</source>
+        <translation>വിളിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>പൂർത്തിയായി</translation>
+    </message>
+    <message>
+        <source>Call Failed</source>
+        <translation>വിളി പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation>റദ്ദാക്കി</translation>
+    </message>
+    <message>
+        <source>params</source>
+        <translation>params</translation>
+    </message>
+    <message>
+        <source>result</source>
+        <translation>result</translation>
+    </message>
+    <message>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>MCP സെർവറിന്, ഔദ്യോഗികമായി പുറത്തിറക്കിയ മോഡൽ &quot;DeepSeek-Trial Account&quot;-ലേക്ക് മാറ്റുക</translation>
+    </message>
+    <message>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation>MCP സെർവർ കമാൻഡ് നൽകുക, ഉദാഹരണത്തിന്, &quot;എനിക്ക് സിസ്റ്റം ഡാർക്ക് മോഡിലേക്ക് മാറ്റിത്തരിക&quot;</translation>
+    </message>
+    <message>
+        <source>Agent server is not available</source>
+        <translation>ഏജന്റ് സെർവർ ലഭ്യമല്ല</translation>
+    </message>
+    <message>
+        <source>Agent server exception</source>
+        <translation>ഏജന്റ് സെർവർ അപവാദം</translation>
+    </message>
+    <message>
+        <source>MCP server is not available</source>
+        <translation>MCP സെർവർ ലഭ്യമല്ല</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>ഉറപ്പാക്കുക</translation>
+    </message>
+    <message>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation>MCP സേവനം ഉപയോഗിച്ച് ഒരു കമാൻഡിലൂടെ ഒന്നിലധികം ഫയലുകളും ആപ്ലിക്കേഷനുകളും ഓട്ടോമേറ്റ് ചെയ്യുക. ഇപ്പോൾ പരീക്ഷിച്ചു നോക്കൂ!</translation>
+    </message>
+    <message>
+        <source>Use later</source>
+        <translation>പിന്നീട് ഉപയോഗിക്കുക</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server</source>
+        <translation>MCP സെർവർ പ്രവർത്തനസജ്ജമാക്കുക</translation>
+    </message>
+    <message>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation>MCP എൻവയോൺമെന്റ് &quot;UOS AI Agent&quot; ഇൻസ്റ്റാൾ ചെയ്ത ശേഷം, </translation>
+    </message>
+    <message>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation> ക്ലിക്ക് ചെയ്യുക, MCP സെർവർ ലിസ്റ്റിൽ &quot;uos-mcp&quot; തിരഞ്ഞെടുക്കുക.</translation>
+    </message>
+    <message>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation>പരീക്ഷിക്കുക: &quot;സിസ്റ്റം ഡാർക്ക് മോഡിലേക്ക് മാറ്റുക&quot;.</translation>
+    </message>
+    <message>
+        <source>Try it now</source>
+        <translation>ഇപ്പോൾ പരീക്ഷിക്കുക</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation>Mcp സെർവർ ചേർക്കുക[GuidePage]</translation>
+    </message>
+    <message>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation>ആദ്യമാത്രമായി ഉപയോഗിക്കുന്നവർ: ആപ്പ് സ്റ്റോർ വഴി MCP എൻവയോൺമെന്റ് &quot;UOS AI Agent&quot; ഇൻസ്റ്റാൾ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation>JSON ഫയൽ ഫോർമാറ്റ് തെറ്റാണ്, ദയവായി പരിശോധിച്ച് വീണ്ടും സമർപ്പിക്കുക</translation>
+    </message>
+    <message>
+        <source>Install Now &gt;</source>
+        <translation>ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യുക &gt;</translation>
+    </message>
+    <message>
+        <source>General Chat</source>
+        <translation>പൊതുവായ ചാറ്റ്</translation>
+    </message>
+    <message>
+        <source>Now in Private Chat</source>
+        <translation>ഇപ്പോൾ സ്വകാര്യ ചാറ്റിൽ</translation>
+    </message>
+    <message>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation>സ്വകാര്യ ചാറ്റ് സന്ദേശങ്ങൾ ചരിത്രത്തിൽ സൂക്ഷിക്കില്ല, നിങ്ങൾ ചാറ്റ് വിടുമ്പോൾ അവ സ്ഥിരമായി ഇല്ലാതാക്കപ്പെടും.</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation>സ്ക്രീൻഷോട്ട് Q&amp;A    കുറുക്കുവഴി (Ctrl+Alt+Q), പരമാവധി 3 ചിത്രങ്ങൾ പിന്തുണയ്ക്കുന്നു.</translation>
+    </message>
+    <message>
+        <source>Cannot be used during screen recording</source>
+        <translation>സ്ക്രീൻ റെക്കോർഡിംഗ് സമയത്ത് ഉപയോഗിക്കാൻ കഴിയില്ല</translation>
+    </message>
+    <message>
+        <source>You can upload up to 3 files or image</source>
+        <translation>നിങ്ങൾക്ക് പരമാവധി 3 ഫയലുകൾ അല്ലെങ്കിൽ ചിത്രം അപ്‌ലോഡ് ചെയ്യാം</translation>
+    </message>
+    <message>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation>ദയവായി തകരാറുള്ള ഫയൽ ഇല്ലാതാക്കി വീണ്ടും അയയ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>Add Private Chat</source>
+        <translation>സ്വകാര്യ ചാറ്റ് ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation>[സ്ക്രീൻഷോട്ട് Q&amp;A] ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation>ഒരു സ്ക്രീൻഷോട്ട് എടുത്ത് ഉള്ളടക്കം UOS AI-ലേക്ക് അയയ്ക്കുക. നിങ്ങൾക്ക് നേരിട്ട് ഒരു ചിത്രവും അപ്‌ലോഡ് ചെയ്യാം.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ശരി</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>അടുത്തത്</translation>
+    </message>
+    <message>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation>[ സ്വകാര്യ ചാറ്റ് മോഡ് ] ചേർക്കുക - ചാറ്റുകൾ സൂക്ഷിക്കില്ല.</translation>
+    </message>
+    <message>
+        <source>No text extracted</source>
+        <translation>ടെക്സ്റ്റ് ലഭ്യമായില്ല</translation>
+    </message>
+    <message>
+        <source>Image size exceeds 15 MB</source>
+        <translation>ചിത്രത്തിന്റെ വലിപ്പം 15 MB കവിഞ്ഞു</translation>
+    </message>
+    <message>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation>അറിവ് ശേഖരണം തുറന്നതിനുശേഷം, ഉത്തരങ്ങൾ അതിലെ ഉള്ളടക്കത്തെ അടിസ്ഥാനമാക്കിയിരിക്കും. പ്രതികരണ വേഗത യന്ത്രത്തിന്റെ പ്രവർത്തനത്തെയും അറിവ് ശേഖരണത്തിന്റെ വലിപ്പത്തെയും ആശ്രയിച്ചിരിക്കും.</translation>
+    </message>
+    <message>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation>ഏതെങ്കിലും കമാൻഡോ അല്ലെങ്കിൽ MCP തിരഞ്ഞെടുക്കുമ്പോൾ അറിവ് ശേഖരണം ലഭ്യമല്ല.</translation>
+    </message>
+    <message>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation>നോളജ് ബേസ് സജീവമായിരിക്കുമ്പോൾ MCP പ്രവർത്തനരഹിതമാണ്.</translation>
+    </message>
+    <message>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation>നോളജ് ബേസ് സജീവമായിരിക്കുമ്പോൾ കമാൻഡുകൾ പ്രവർത്തനരഹിതമാണ്.</translation>
+    </message>
+    <message>
+        <source>Copy succeeded.</source>
+        <translation>പകർത്തൽ വിജയിച്ചു.</translation>
+    </message>
+    <message>
+        <source>Copy failed. Please try again.</source>
+        <translation>പകർത്തൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation>തിരയുന്നു</translation>
+    </message>
+    <message>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation>%1 റഫറൻസ് രേഖകൾ ലഭ്യമായി (%2s)</translation>
+    </message>
+    <message>
+        <source>Clear History</source>
+        <translation>ചരിത്രം മായ്ക്കുക</translation>
+    </message>
+    <message>
+        <source>Delete all records?</source>
+        <translation>എല്ലാ റെക്കോർഡുകളും ഇല്ലാതാക്കണോ?</translation>
+    </message>
+    <message>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation>ഒരിക്കൽ ഇല്ലാതാക്കിയാൽ, ഉള്ളടക്കം വീണ്ടെടുക്കാൻ കഴിയില്ല!</translation>
+    </message>
+    <message>
+        <source>Recommend official models</source>
+        <translation>ഔദ്യോഗിക മോഡലുകൾ ശുപാർശ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Disable MCP</source>
+        <translation>MCP പ്രവർത്തനരഹിതമാക്കുക</translation>
+    </message>
+    <message>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>ഔദ്യോഗിക മോഡലായ &quot;DeepSeek-Trial Account&quot; ഉപയോഗിക്കുന്നത് ശുപാർശ ചെയ്യുന്നു</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>വേഗത്തിൽ തുറക്കുക</translation>
+    </message>
+    <message>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation>MCP സെർവർ ഓട്ടോമാറ്റിക് മോഡിലേക്ക് അപ്ഗ്രേഡ് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation>MCP സെർവർ ഓട്ടോമാറ്റിക് മോഡിലേക്ക് അപ്ഗ്രേഡ് ചെയ്തു, ഒരൊറ്റ ക്ലിക്കിലൂടെ നിങ്ങൾക്ക് എല്ലാ MCP സെർവറുകളിലും പ്രവേശിക്കാൻ കഴിയും </translation>
+    </message>
+    <message>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation>. ഇത് സിസ്റ്റം സെറ്റപ്പ്, ഫയൽ പ്രോസസ്സിംഗ് തുടങ്ങിയ ടാസ്കുകൾ ഒരൊറ്റ ക്ലിക്കിലൂടെ ഓട്ടോമാറ്റിക് ആക്കാൻ നിങ്ങളെ സഹായിക്കുന്നു.</translation>
+    </message>
+    <message>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation>MCP സെർവർ ചേർക്കൽ ക്രമീകരണങ്ങളിലേക്ക് മാറ്റി.</translation>
+    </message>
+    <message>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation>കൂടുതൽ MCP സെർവർ ചേർക്കാൻ, ക്രമീകരണങ്ങൾ &gt; MCP സെർവറിലേക്ക് പോകുക.</translation>
+    </message>
+    <message>
+        <source>Got it</source>
+        <translation>മനസ്സിലാക്കി</translation>
+    </message>
+    <message>
+        <source>Complimentary Model Credits</source>
+        <translation>സൗജന്യ മോഡൽ ക്രെഡിറ്റുകൾ</translation>
+    </message>
+    <message>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation>നിലവിലുള്ള സിസ്റ്റം DeepSeek ട്രയൽ അക്കൗണ്ട് മോഡൽ നൽകുന്നു, ഇത് ഓരോ മാസവും ആരംഭത്തിൽ സൗജന്യ ക്വോട്ട സ്വയം പുതുക്കുന്നു, ഇത് നിങ്ങൾക്ക് വിഷമമില്ലാതെ ഉപയോഗിക്കാൻ അനുവദിക്കുന്നു.</translation>
+    </message>
+    <message>
+        <source>Claim Credits</source>
+        <translation>ക്രെഡിറ്റുകൾ നേടുക</translation>
+    </message>
+    <message>
+        <source>Get a free account</source>
+        <translation>സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
+    </message>
+    <message>
+        <source>Claim Free Credits</source>
+        <translation>സൗജന്യ ക്രെഡിറ്റുകൾ നേടുക</translation>
+    </message>
+    <message>
+        <source>Successfully Claimed</source>
+        <translation>വിജയകരമായി നേടി</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation>നേടുന്നതിൽ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server&amp;</source>
+        <translation>MCP സെർവർ പ്രവർത്തനക്ഷമമാക്കുക(&amp;)</translation>
+    </message>
+    <message>
+        <source>Disable MCP Server</source>
+        <translation>MCP സെർവർ പ്രവർത്തനരഹിതമാക്കുക</translation>
+    </message>
+    <message>
+        <source>Configure MCP Server</source>
+        <translation>MCP സെർവർ കോൺഫിഗർ ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Enabling MCP Server Features</source>
+        <translation>MCP സെർവർ ഫീച്ചറുകൾ പ്രവർത്തനക്ഷമമാക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>ചില മൂന്നാം കക്ഷി MCP സെർവർ ഫീച്ചറുകൾക്ക് നിശ്ചിത അപകടസാധ്യതകളുണ്ട്. ദയവായി അവ ജാഗ്രതയോടെ ഉപയോഗിക്കുക. നിങ്ങൾ ഈ സേവനം പ്രവർത്തനക്ഷമമാക്കിയാൽ, ഒരു അന്തർനിർമിത ടൂൾ ആവശ്യമായ ഡിപൻഡൻസികൾ കണ്ടെത്തി സ്വയം ഡൗൺലോഡ് ചെയ്യും. ഈ ഡൗൺലോഡ് പ്രക്രിയയ്ക്ക് ഡാറ്റാ ചാർജുകൾ ബാധിക്കും. ഈ അപകടസാധ്യതകളെക്കുറിച്ച് ബോധവാന്മാരായിരിക്കുകയും ജാഗ്രതയോടെ മുന്നോട്ട് പോകുകയും ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>ഞാൻ മനസ്സിലാക്കുകയും ഈ സേവനം ഉപയോഗിക്കാൻ സമ്മതിക്കുകയും ചെയ്തു</translation>
+    </message>
+    <message>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation>UOS AI ഫോളോഅലോങ്/റൈറ്റ്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">നിങ്ങൾ തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് 5000 അക്ഷര പരിധി കവിഞ്ഞിരിക്കുന്നു.</translation>
+        <translation>നിങ്ങൾ തിരഞ്ഞെടുത്ത ടെക്സ്റ്റിന്റെ ദൈർഘ്യം 5000 പ്രതീകങ്ങളുടെ പരിധി കവിഞ്ഞു.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
-        <translation>നിങ്ങൾ തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് 2000 അക്ഷര പരിധി കവിഞ്ഞിരിക്കുന്നു.</translation>
+        <translation>നിങ്ങൾ തിരഞ്ഞെടുത്ത ടെക്സ്റ്റിന്റെ ദൈർഘ്യം 2000 പ്രതീകങ്ങളുടെ പരിധി കവിഞ്ഞു.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
-        <translation>നെറ്റ്വർക്ക് ഓഫ്ലൈനാണ്, ടെക്സ്റ്റ് ടു സ്പീച്ച് നിർത്തുക</translation>
+        <translation>നെറ്റ്‌വർക്ക് ഓഫ്‌ലൈനിലാണ്, ടെക്സ്റ്റ്-ടു-സ്പീച്ച് നിർത്തുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">പ്രകാശം ഇതിനകം പരമാവധി ആണ്, കൂടുതൽ വർദ്ധിപ്പിക്കാൻ കഴിയില്ല.</translation>
+        <translation>തെളിച്ചം ഏറ്റവും കൂടുതലായിരിക്കുന്നു, കൂടി വർദ്ധിപ്പിക്കാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">പ്രകാശം ഇതിനകം ഏറ്റവും കുറഞ്ഞതാണ്, കൂടുതൽ കുറയ്ക്കാൻ കഴിയില്ല.</translation>
+        <translation>തെളിച്ചം ഏറ്റവും കുറവായിരിക്കുന്നു, കുറച്ചു കൂടുതൽ കുറയ്ക്കാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>AI മീറ്റിംഗ് ഷെഡ്യൂൾ</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">നിങ്ങളുടെ സിസ്റ്റം മെമ്മറി %0 ആണ്.</translation>
+        <translation>നിങ്ങളുടെ സിസ്റ്റം മെമ്മറി %0 ആണ്.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">ഭാഷാ സജ്ജീകരണ ഇന്റർഫേസ് തുറന്നിരിക്കുന്നു. ദയവായി ഈ ഇന്റർഫേസിൽ സജ്ജീകരിക്കുക.</translation>
+        <translation>ഭാഷാ സജ്ജീകരണ ഇന്റർഫേസ് തുറന്നിരിക്കുന്നു. ദയവായി ഈ ഇന്റർഫേസിൽ സജ്ജീകരിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">നിലവിലെ മോഡ് ഇതിനകം %1 മോഡ് ആണ്.</translation>
+        <translation>നിലവിലുള്ള മോഡ് ഇതിനകം %1 മോഡിലാണ്.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">നിലവിലെ മോഡ് %1 ടാർഗെറ്റ് മോഡുമായി പൊരുത്തപ്പെടാത്തതിനാൽ അടയ്ക്കാൻ കഴിയില്ല.</translation>
+        <translation>നിലവിലുള്ള മോഡ് %1 ടാർഗെറ്റ് മോഡുമായി ചേർന്നിരിക്കുന്നില്ലാത്തതിനാൽ അടയ്ക്കാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">ബാലൻസ് മോഡ് ഓഫ് ചെയ്യാൻ കഴിയില്ല.</translation>
+        <translation>ബാലൻസ് മോഡ് ഓഫാക്കാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">ലോക്ക് സ്ക്രീൻ നിങ്ങൾക്കായി തുറന്നിരിക്കുന്നു</translation>
+        <translation>ലോക്ക് സ്ക്രീൻ നിങ്ങൾക്കായി തുറന്നിരിക്കുന്നു</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">സ്ക്രീൻ ഷോട്ട് എടുക്കൽ അല്ലെങ്കിൽ റെക്കോർഡിംഗ് പൂർത്തിയായി</translation>
+        <translation>സ്ക്രീൻഷോട്ട് അല്ലെങ്കിൽ റെക്കോർഡിംഗ് പൂർത്തിയായി</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">ഒരു സ്ക്രീൻ മാത്രമുണ്ട്, സ്ക്രീൻ മോഡ് മാറ്റാൻ കഴിയില്ല.</translation>
+        <translation>ഒരു സ്ക്രീൻ മാത്രമേയുള്ളൂ, സ്ക്രീൻ മോഡ് മാറ്റാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">ഇത് നിലവിലെ ഡിസ്പ്ലേ മോഡിന് സമാനമാണ്. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
+        <translation>ഇത് നിലവിലുള്ള ഡിസ്പ്ലേ മോഡുമായി സമാനമാണ്. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">ഒരു സ്ക്രീൻ മാത്രമുണ്ട്, സ്ക്രീൻ മാറ്റാൻ കഴിയില്ല.</translation>
+        <translation>ഒരു സ്ക്രീൻ മാത്രമേയുള്ളൂ, സ്ക്രീൻ മാറ്റാൻ കഴിയില്ല.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">നിങ്ങളുടെ കമാൻഡ് ഇഷ്യൂ ചെയ്തിരിക്കുന്നു.</translation>
+        <translation>നിങ്ങളുടെ കമാൻഡ് നൽകിയിരിക്കുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>ഫയൽ %1 പുനർനാമകരണം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>ബാച്ച് പുനർനാമകരണം പൂർത്തിയായി, %1 ഫയലുകൾ വിജയകരമായി പുനർനാമകരണം ചെയ്തു, %2 ഫയലുകൾ പരാജയപ്പെട്ടു.
+പിശക് വിവരങ്ങൾ:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>ഇമെയിൽ ക്ലയന്റ് തുറന്നു, അയയ്ക്കാൻ സ്ഥിരീകരിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>ആപ്പ് സ്റ്റോർ തുറന്നു, ആപ്ലിക്കേഷൻ ഇൻസ്റ്റാൾ ചെയ്യാൻ തയ്യാറെടുക്കുന്നു: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>ആപ്പ് സ്റ്റോർ ടാർഗെറ്റ് ശൂന്യമാണ്</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>ആപ്പ് സ്റ്റോർ ടാർഗെറ്റ് തുറക്കുന്നതിൽ പരാജയപ്പെട്ടു: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>ആപ്പ് സ്റ്റോർ തുറന്നിരിക്കുന്നു: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>സിസ്റ്റം മെമ്മറി ഉപയോഗം നേടുക</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>സിസ്റ്റം CPU ഉപയോഗം നേടുക</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>സിസ്റ്റം ഡിസ്ക് വിവരം നേടുക</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>ഇരുണ്ട തീമിലേക്ക് മാറുക</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>ലൈറ്റ് തീമിലേക്ക് മാറുക</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>ഡെസ്ക്ടോപ്പ് പശ്ചാത്തലം മാറ്റുക</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>ഡോക്ക് മോഡ് മാറ്റുക</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>കണ്ണ് സംരക്ഷണ മോഡ് പ്രവർത്തനപ്പെടുത്തുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
-        <translation>അപ്ഡേറ്റ് ചെയ്യുക</translation>
+        <translation>അപ്ഡേറ്റ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
         <translation>അപ്ഡേറ്റ് റദ്ദാക്കുക</translation>
     </message>
@@ -8797,211 +4774,164 @@ Error details:
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
-        <translation>UOS AI അസിസ്റ്റന്റ് അപ്‌ഡേറ്റ് ലോഗ്</translation>
+        <translation>UOS AI അസിസ്റ്റന്റ് അപ്ഡേറ്റ് ലോഗ്</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">UOS AI ഉപയോക്തൃ ഉടമ്പടി</translation>
+        <translation>UOS AI ഉപയോക്തൃ കരാർ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">എനിക്ക് 18 വയസ്സിനു മുകളിലാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. ആപ്ലിക്കേഷൻ വഴി ഞാൻ അയയ്ക്കുന്നതും സ്വീകരിക്കുന്നതുമായ ഉള്ളടക്കങ്ങൾ വലിയ മോഡൽ സേവന ദാതാവുമായുള്ള നേരിട്ടുള്ള ഡാറ്റാ എക്സ്ചേഞ്ചുകളാണെന്നും കമ്പനിയുമായി യാതൊരു ബന്ധവുമില്ലെന്നും ഞാൻ അംഗീകരിക്കുകയും സമ്മതിക്കുകയും ചെയ്യുന്നു.</translation>
+        <translation>ഞാൻ 18 വയസ്സിന് മുകളിലുള്ളയുള്ള ആളാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. ഞാൻ അപ്ലിക്കേഷൻ വഴി അയയ്ക്കുകയും സ്വീകരിക്കുകയും ചെയ്യുന്ന ഉള്ളടക്കങ്ങൾ വലിയ മോഡൽ സേവന ദാതാവുമായി നേരിട്ടുള്ള ഡാറ്റാ കൈമാറ്റങ്ങളാണെന്നും കമ്പനിയുമായി യാതൊരു ബന്ധവുമില്ലെന്നും ഞാൻ അംഗീകരിക്കുകയും സമ്മതിക്കുകയും ചെയ്യുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>ഞാൻ അപ്ലിക്കേഷന്റെ ഉപയോൿതൃ അനുഭവ പദ്ധതിയിൽ പങ്കെടുക്കാൻ സമ്മതിക്കുന്നു, കൂടാതെ സേവന നിലവാരം മെച്ചപ്പെടുത്താനും പ്രവർത്തന അനുഭവം മെച്ചപ്പെടുത്താനും നിങ്ങളുടെ കമ്പനിയെ അപ്ലിക്കേഷൻ ഉപയോഗിക്കുമ്പോൾ ഞാൻ അയയ്ക്കുന്ന ഉള്ളടക്കങ്ങൾ, അയയ്ക്കുന്ന സമയം, അഭ്യർത്ഥിച്ച വലിയ മോഡലിന്റെ തരം, പ്രത്യേക അപ്ലിക്കേഷൻ, ടെക്സ്റ്റ് ചിത്രം വിജയകരമായി സൃഷ്ടിച്ചോ എന്നത് ശേഖരിക്കാൻ അധികാരപ്പെടുത്തുന്നു. (മുകളിൽ പറഞ്ഞ വിവരങ്ങൾ നൽകാൻ നിങ്ങൾ വിസമ്മതിച്ചാൽ, അത് അപ്ലിക്കേഷന്റെ സാധാരണ ഉപയോഗത്തെ ബാധിക്കില്ല.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">UOS AI-യിലേക്ക് സ്വാഗതം</translation>
+        <translation>UOS AI-ലേക്ക് സ്വാഗതം</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, നിങ്ങളുടെ സ്മാർട്ട് അസിസ്റ്റന്റ്, നിങ്ങളുടെ ഉൽപാദനക്ഷമത മെച്ചപ്പെടുത്താനും ഉയർന്ന നിലവാരമുള്ള ജോലി അനുഭവം ആസ്വദിക്കാനും രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു.</translation>
+        <translation>UOS AI, നിങ്ങളുടെ സ്മാർട്ട് അസിസ്റ്റന്റ്, നിങ്ങളുടെ പ്രൊഡക്റ്റിവിറ്റി മെച്ചപ്പെടുത്താനും ഉയർന്ന നിലവാരമുള്ള ജോലി അനുഭവം ആസ്വദിക്കാനും രെപ്പെടുത്തിയിരിക്കുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished">ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
+        <translation>ഒരു സൗജന്യ അക്കൗണ്ട് നേടുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">മോഡൽ ചേർക്കുക</translation>
+        <translation>മോഡൽ ചേർക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">ഉപയോഗം ആരംഭിക്കുക</translation>
+        <translation>ഉപയോഗിക്കാൻ ആരംഭിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">എനിക്ക് 18 വയസ്സിനു മുകളിലാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. ഞാൻ അംഗീകരിക്കുകയും &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI ഉപയോക്തൃ ഉടമ്പടി&quot;&lt;/a&gt; യോട് യോജിക്കുകയും ചെയ്യുന്നു, ഞാൻ ആപ്ലിക്കേഷൻ വഴി അയയ്ക്കുന്നതും സ്വീകരിക്കുന്നതുമായ ഉള്ളടക്കങ്ങൾ വലിയ മോഡൽ സേവന ദാതാവുമായുള്ള നേരിട്ടുള്ള ഡാറ്റാ കൈമാറ്റങ്ങളാണ്, കമ്പനിയുമായി യാതൊരു ബന്ധവുമില്ല.</translation>
+        <translation>ഞാൻ 18 വയസ്സിന് മുകളിലുള്ളയുള്ള ആളാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. ഞാൻ &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;-ലേക്ക് സമ്മതിക്കുകയും അംഗീകരിക്കുകയും ചെയ്യുന്നു, കൂടാതെ ഞാൻ അപ്ലിക്കേഷൻ വഴി അയയ്ക്കുകയും സ്വീകരിക്കുകയും ചെയ്യുന്ന ഉള്ളടക്കങ്ങൾ വലിയ മോഡൽ സേവന ദാതാവുമായി നേരിട്ടുള്ള ഡാറ്റാ കൈമാറ്റങ്ങളാണെന്നും കമ്പനിയുമായി യാതൊരു ബന്ധവുമില്ലെന്നും ഞാൻ അംഗീകരിക്കുന്നു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>ഒരു അക്കൗണ്ട് സ്വീകരിക്കുന്നത് നിങ്ങൾ പരിപാടിയുടെ നിബന്ധനകൾ മനസ്സിലാക്കി അംഗീകരിക്കുന്നു എന്നതിനെ സൂചിപ്പിക്കുന്നു, &lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI ട്രയൽ അക്കൗണ്ട്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>സേവ് ചെയ്യാനായില്ല, ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">സ്ഥിരീകരിക്കുക</translation>
+        <translation>ഉറപ്പാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ട് വിജയകരമായി ലഭിച്ചു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗ എണ്ണവും കാലയളവും പരിമിതമാണ്, ദയവായി സമയത്തിനുള്ളിൽ നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് ക്രമീകരിക്കുക! വിശദാംശങ്ങൾക്ക് ഇവന്റ് വിശദാംശങ്ങൾ കാണുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished"></translation>
+        <translation>ട്രയൽ അക്കൗണ്ടുകൾക്കുള്ള ഇംഗ്ലീഷ് പിന്തുണ തൃപ്തികരമല്ല. കൂടാതെ ട്രയൽ അക്കൗണ്ടിന്റെ ഉപയോഗ എണ്ണവും കാലയളവും പരിമിതമാണ്. ദയവായി സമയത്തിനുള്ളിൽ നിങ്ങളുടെ വ്യക്തിഗത മോഡൽ അക്കൗണ്ട് ക്രമീകരിക്കുക!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">ട്രയൽ ആരംഭിക്കുക</translation>
+        <translation>ട്രയൽ ആരംഭിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>സൗജന്യ അക്കൗണ്ട് പ്രവർത്തനം അവസാനിച്ചു.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>സെർവറുമായി കണക്ട് ചെയ്യാൻ കഴിയുന്നില്ല, ദയവായി നിങ്ങളുടെ നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>ഞാൻ ആപ്ലിക്കേഷനിലെ ഉപയോക്തൃ അനുഭവ പദ്ധതിയിൽ പങ്കെടുക്കാൻ സമ്മതിക്കുന്നു, സേവന നിലവാരം മെച്ചപ്പെടുത്താനും പ്രവർത്തന അനുഭവം മെച്ചപ്പെടുത്താനും നിങ്ങളുടെ കമ്പനിക്ക് ആപ്ലിക്കേഷൻ ഉപയോഗിക്കുമ്പോൾ ഞാൻ അയയ്ക്കുന്ന ഉള്ളടക്കങ്ങൾ, അയയ്ക്കുന്ന സമയം, അഭ്യർത്ഥിച്ച വലുതായ മോഡലിന്റെ തരം, പ്രത്യേക ആപ്ലിക്കേഷൻ, ടെക്സ്റ്റ് ചിത്രം വിജയകരമായി സൃഷ്ടിച്ചോ എന്നിവ ശേഖരിക്കാൻ അധികാരപ്പെടുത്തുന്നു. (മുകതലേക്കുള്ള വിവരങ്ങൾ നൽകാൻ നിങ്ങൾ വിസമ്മതിച്ചാൽ, ആപ്ലിക്കേഷന്റെ സാധാരണ ഉപയോഗത്തെ അത് ബാധിക്കില്ല.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
-        <translation>ഈ ആപ്പ് റീസ്റ്റാർട്ട് ചെയ്യുന്നതുവരെ മറയ്ക്കുക</translation>
+        <translation>ഈ ആപ്പ് വീണ്ടും ആരംഭിക്കുന്നതുവരെ മറയ്ക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
+        <source>Disable in This Application</source>
+        <translation>ഈ ആപ്ലിക്കേഷനിൽ പ്രവർത്തനരഹിതമാക്കുക</translation>
+    </message>
+    <message>
+        <source>Disable Globally</source>
+        <translation>ആഗോളതലത്തിൽ പ്രവർത്തനരഹിതമാക്കുക</translation>
+    </message>
+    <message>
+        <source>Custom Settings</source>
+        <translation>ഇഷ്ടാനുസൃതി സെറ്റിംഗുകൾ</translation>
+    </message>
+    <message>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>ഇത് വീണ്ടും പ്രവർത്തനക്ഷമമാക്കാൻ &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;സെറ്റിംഗ്സ്&lt;/a&gt; ലേക്ക് പോവുക.</translation>
+        <translation>ഇത് വീണ്ടും പ്രവർത്തനക്ഷമമാക്കാൻ &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;സെറ്റിംഗുകളിലേക്ക്&lt;/a&gt; പോകുക.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
         <source>The added content must be more than 10 words</source>
-        <translation>ചേർത്ത ഉള്ളടക്കം പത്ത് വാക്കുകളിൽ കൂടുതലായിരിക്കണം</translation>
+        <translation>ചേർത്ത ഉള്ളടക്കം 10 വാക്കുകളിൽ കൂടുതൽ ആയിരിക്കണം</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
         <source>Search</source>
         <translation>തിരയുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
         <source>Explain</source>
         <translation>വിശദീകരിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
         <source>Summary</source>
         <translation>സംഗ്രഹം</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
         <source>Translate</source>
         <translation>വിവർത്തനം ചെയ്യുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
         <source>Continue Writing</source>
         <translation>എഴുത്ത് തുടരുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
         <source>Expand</source>
         <translation>വികസിപ്പിക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
         <source>Correct</source>
         <translation>ശരിയാക്കുക</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>AI നോളജ് ബേസിലേക്ക് ചേർക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
-        <source>Disable in This Application</source>
-        <translation>ഈ ആപ്ലിക്കേഷനിൽ അപ്രാപ്യമാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
-        <source>Disable Globally</source>
-        <translation>ആഗോളമായി അപ്രാപ്യമാക്കുക</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
-        <source>Custom Settings</source>
-        <translation>ഇഷ്ടാനുസൃത ക്രമീകരണങ്ങൾ</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
         <source>Polish</source>
-        <translation>പോളിഷ്</translation>
+        <translation>മെരുക്കുക</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>AI അറിവ് ശേഖരണത്തിലേക്ക് ചേർക്കുക</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI ഫോളോ അലോംഗ്</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>ചേർത്തു</translation>
     </message>
@@ -9009,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI ഫോളോ അലോംഗ്</translation>
+        <translation>UOS AI ഫോളോഅലോങ്</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ UOS AI ഫോളോ അലോംഗ് ടൂൾബാർ സ്വയം പ്രദർശിപ്പിക്കും.</translation>
+        <translation>ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കുമ്പോൾ UOS AI ഫോളോഅലോങ് ടൂൾബാർ സ്വയമേവ പ്രദർശിപ്പിക്കുക.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>അടച്ചതിന് ശേഷം, തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് ഇപ്പോഴും Super+R ബാറിലെ കുറുക്കുവഴി ഉപയോഗിച്ച് ഉണർത്താം.</translation>
+        <translation>അടയ്ക്കുമ്പോൾ, തിരഞ്ഞെടുത്ത ടെക്സ്റ്റ് Super+R ബാർ ഉപയോഗിച്ച് ഇപ്പോഴും ഉണർത്തിയെടുക്കാം.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>അജ്ഞാത കമാൻഡ്: %1
+ലഭ്യമായ കമാൻഡുകൾ കാണാൻ /help അയയ്ക്കുക.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>പുതിയ സംഭാഷണം ആരംഭിച്ചു.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>സംഭാഷണ ചരിത്രം മായ്ച്ചു.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>ലഭ്യമായ കമാൻഡുകൾ:
+  /help   — ഈ സഹായ സന്ദേശം കാണിക്കുക
+  /new    — പുതിയ സംഭാഷണം ആരംഭിക്കുക (നിലവിലുള്ള സന്ദർഭം മായ്ക്കുന്നു)
+  /stop   — നടന്നുകൊണ്ടിരിക്കുന്ന അപേക്ഷ റദ്ദാക്കുക
+  /clear  — എല്ലാ സംഭാഷണ ചരിത്രവും മായ്ക്കുക</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>മോഡൽ കണ്ടെത്തിയില്ല. ദയവായി ആദ്യം ഒരു മോഡൽ കോൺഫിഗർ ചെയ്യുക.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>AI അപേക്ഷ പരാജയപ്പെട്ടു</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>അപേക്ഷയുടെ സമയം കഴിഞ്ഞു, ദയവായി വീണ്ടും ശ്രമിക്കുക</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>നിർത്തേണ്ട സജീവ അപേക്ഷയൊന്നുമില്ല.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>അപേക്ഷ റദ്ദാക്കി.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>ടൂൾ കോൾ ചെയ്യുന്നു: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>ടൂൾ കോൾ പരാജയപ്പെട്ടു: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>AI പിശക് (കോഡ്: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>പ്ലാറ്റ്ഫോം പിശക്, അപേക്ഷ റദ്ദാക്കി: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>ചിന്തിക്കുന്നു...</translation>
     </message>
 </context>
 </TS>

@@ -1,15 +1,18 @@
 [Desktop Entry]
-Categories=Qt;
-Comment=uos-ai
+Categories=Utility;AI;
 Exec=/usr/bin/uos-ai-assistant --chat
 GenericName=UOS AI
 Icon=@DESKTOP_ICON@
 Name=UOS AI
 StartupNotify=false
 Type=Application
-NoDisplay=true
-X-Deepin-ManualID=uos-ai-assistant
-X-Deepin-TurboType=dtkwidget
-X-Deepin-Vendor=user-custom
-X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
-X-Deepin-AppID=uos-ai
+GenericName[zh_CN]=小U同学
+GenericName[zh_TW]=小U同學
+GenericName[zh_HK]=小U同學
+Name[zh_CN]=小U同学
+Name[zh_TW]=小U同學
+Name[zh_HK]=小U同學
+Comment=All-scenario smart office assistant, your system-level productivity engine.
+Comment[zh_CN]=全场景智能办公助理，您的系统级生产力引擎。
+Comment[zh_HK]=全場景智能辦公助理，您的系統級生產力引擎。
+Comment[zh_TW]=全場景智慧辦公助理，您的系統級生產力引擎。

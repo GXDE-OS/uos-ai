@@ -1,4 +1,5 @@
 #include "conversationmanager.h"
+#include "conversationsearch.h"
 
 #include <QDir>
 #include <QStandardPaths>
@@ -33,13 +34,19 @@ ConversationManager::ConversationManager(QObject *parent)
     }
 
     m_index.reset(new ConversationIndex(m_storagePath));
-    
+
     // 设置索引保存回调
     m_index->setSaveCallback([this]() {
         qCDebug(logConv) << "Conversation index saved, emitting changed signal";
         emit indexChanged();
     });
-    
+
+    connect(ConvSearch(), &ConversationSearch::indexContentLoaded,
+            this, &ConversationManager::onIndexContentLoaded);
+
+    connect(ConvSearch(), &ConversationSearch::indexSearchChanged,
+            this, &ConversationManager::indexSearchChanged);
+
     refresh();
 }
 
@@ -116,6 +123,8 @@ void ConversationManager::deleteConversation(const QStringList &ids)
     // 从索引中删除
     for (const QString &id : ids) {
         m_index->removeIndex(id);
+        ConvSearch()->removeSearchIndex(id);
+        ConvSearch()->removeHistoryIndex(id);
     }
 }
 
@@ -145,6 +154,7 @@ void ConversationManager::clearAllConversations()
 
     // 清空索引
     m_index->clearIndex();
+    ConvSearch()->clearHistoryIndexes();
 }
 
 int ConversationManager::conversationCount() const
@@ -159,6 +169,11 @@ QVector<ConversationIndexItem> ConversationManager::conversationIndexes() const
     return m_index->getAllIndexes();
 }
 
+QVector<ConversationIndexItem> ConversationManager::historyConversationIndexes() const
+{
+    return ConvSearch()->getAllHistoryIndexes();
+}
+
 bool ConversationManager::saveConversation(const QString &id)
 {
     QReadLocker locker(&m_conversationsLock);
@@ -169,7 +184,12 @@ bool ConversationManager::saveConversation(const QString &id)
     }
 
     locker.unlock();
-    return record->saveToFile(getConversationFilePath(id)) && m_index->addOrUpdateIndex(record);
+    bool saved = record->saveToFile(getConversationFilePath(id)) && addOrUpdateIndex(record);
+    if (saved) {
+        ConvSearch()->addOrUpdateHistoryIndex(ConversationIndexItem::fromRecord(record));
+        ConvSearch()->updateSearchIndex(record);
+    }
+    return saved;
 }
 
 bool ConversationManager::loadConversation(const QString &id)
@@ -194,10 +214,30 @@ bool ConversationManager::loadConversation(const QString &id)
 
 bool ConversationManager::addOrUpdateIndex(const ConversationRecordPtr &record)
 {
-    return m_index->addOrUpdateIndex(record);
+    if (!m_index->addOrUpdateIndex(record))
+        return false;
+
+    return true;
 }
 
 QString ConversationManager::getConversationFilePath(const QString &id) const
 {
     return m_storagePath + "/" + id + ".json";
+}
+
+void ConversationManager::onIndexContentLoaded(const SearchIndexMap &contents, int maxLength)
+{
+    QMap<QString, ConversationIndexItem> historyMap;
+    for (auto it = contents.constBegin(); it != contents.constEnd(); ++it) {
+        if (m_index->contains(it.key())) {
+            ConversationIndexItem item = m_index->getIndex(it.key());
+            QString content = it.value().join(QString());
+            if (content.startsWith(item.title)) {
+                content.remove(0, item.title.length());
+            }
+            item.introduction = content.left(maxLength);
+            historyMap[it.key()] = item;
+        }
+    }
+    ConvSearch()->resetHistoryIndexes(historyMap);
 }

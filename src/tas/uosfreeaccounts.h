@@ -65,7 +65,7 @@ public:
     QNetworkReply::NetworkError getFreeAccount(int type, int llm, UosFreeAccount &freeAccount, int &status);
 
     // 判断账号是否可用
-    QNetworkReply::NetworkError getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl, bool &claimAgain);
+    QNetworkReply::NetworkError getDeterAccountLegal(const QString &appkey, int &available, QString &modelUrl, bool &claimAgain, QString *msg = nullptr);
 
     QNetworkReply::NetworkError claimAccountUsage(const QString &appkey, int &result, QString &msg);
 

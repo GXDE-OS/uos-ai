@@ -7,9 +7,12 @@
 #include <DGuiApplicationHelper>
 
 #include <QJsonObject>
+#include <QJsonDocument>
+#include <QJsonParseError>
 #include <QMouseEvent>
 #include <QDebug>
 #include <QApplication>
+#include <QCoreApplication>
 #include <QWebEngineView>
 #include <QStyleHints>
 #include <QLoggingCategory>
@@ -25,6 +28,24 @@ DGUI_USE_NAMESPACE;
 using namespace uos_ai;
 
 inline constexpr int kDefaultMainWindowSidebarWidth = 200;
+
+// 仅在需要显示新的引导页时递增，数据库只保存这个枚举值。
+enum NewUserGuideVersion {
+    Guide_3_0 = 1,
+};
+
+inline constexpr int kCurrentNewUserGuideVersion = Guide_3_0;
+
+static QJsonObject normalizedSidebarGroupCollapsedStates(const QJsonObject &rawStates)
+{
+    QJsonObject normalizedStates;
+    for (auto it = rawStates.constBegin(); it != rawStates.constEnd(); ++it) {
+        if (it.value().isBool()) {
+            normalizedStates.insert(it.key(), it.value().toBool());
+        }
+    }
+    return normalizedStates;
+}
 
 WindowChannel::WindowChannel(QObject *parent)
     : QObject(parent)
@@ -118,17 +139,71 @@ void WindowChannel::saveMainWindowSidebarState(int width, bool expanded)
     AppDatabase::instance()->saveConfigBool(CONFIG_MAIN_WINDOW_SIDEBAR_EXPANDED, expanded);
 }
 
+void WindowChannel::saveMainWindowSidebarGroupCollapsedStates(const QString &groupCollapsedStatesJson)
+{
+    QJsonObject groupCollapsedStates;
+
+    if (!groupCollapsedStatesJson.isEmpty()) {
+        QJsonParseError error;
+        const QJsonDocument doc = QJsonDocument::fromJson(groupCollapsedStatesJson.toUtf8(), &error);
+        if (error.error == QJsonParseError::NoError && doc.isObject()) {
+            groupCollapsedStates = normalizedSidebarGroupCollapsedStates(doc.object());
+        } else {
+            qCWarning(logAIGUI) << "Failed to parse main window sidebar group collapsed states for persistence:"
+                                << error.errorString();
+        }
+    }
+
+    const QString json = QString::fromUtf8(QJsonDocument(groupCollapsedStates).toJson(QJsonDocument::Compact));
+    AppDatabase::instance()->saveConfig(CONFIG_MAIN_WINDOW_SIDEBAR_GROUP_COLLAPSED_STATES, json);
+}
+
 QJsonObject WindowChannel::getMainWindowSidebarState()
 {
     return QJsonObject {
         {"sidebarWidth", persistedMainWindowSidebarWidth()},
         {"sidebarExpanded", persistedMainWindowSidebarExpanded()},
+        {"groupCollapsedStates", persistedMainWindowSidebarGroupCollapsedStates()},
     };
+}
+
+bool WindowChannel::shouldShowNewUserGuideOnStartup()
+{
+    const QString shownVersionText = AppDatabase::instance()
+            ->getConfig(CONFIG_NEW_USER_GUIDE_SHOWN_VERSION)
+            .trimmed();
+
+    if (shownVersionText.isEmpty()) {
+        return true;
+    }
+
+    bool ok = false;
+    const int shownVersion = shownVersionText.toInt(&ok);
+    if (!ok) {
+        AppDatabase::instance()->saveConfigInt(
+                CONFIG_NEW_USER_GUIDE_SHOWN_VERSION,
+                kCurrentNewUserGuideVersion);
+        return false;
+    }
+
+    return shownVersion < kCurrentNewUserGuideVersion;
+}
+
+void WindowChannel::recordNewUserGuideShown()
+{
+    AppDatabase::instance()->saveConfigInt(
+            CONFIG_NEW_USER_GUIDE_SHOWN_VERSION,
+            kCurrentNewUserGuideVersion);
 }
 
 void WindowChannel::showAboutWindow()
 {
     WmIns()->showAboutWindow();
+}
+
+void WindowChannel::showUpdateLogWindow()
+{
+    WmIns()->showUpdateLogWindow();
 }
 
 void WindowChannel::showHelpWindow()
@@ -163,6 +238,24 @@ bool WindowChannel::persistedMainWindowSidebarExpanded()
     }
 
     return expanded.toInt() != 0;
+}
+
+QJsonObject WindowChannel::persistedMainWindowSidebarGroupCollapsedStates()
+{
+    const QString json = AppDatabase::instance()->getConfig(CONFIG_MAIN_WINDOW_SIDEBAR_GROUP_COLLAPSED_STATES);
+    if (json.isEmpty()) {
+        return {};
+    }
+
+    QJsonParseError error;
+    const QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8(), &error);
+    if (error.error != QJsonParseError::NoError || !doc.isObject()) {
+        qCWarning(logAIGUI) << "Failed to parse persisted main window sidebar group collapsed states:"
+                             << error.errorString();
+        return {};
+    }
+
+    return normalizedSidebarGroupCollapsedStates(doc.object());
 }
 
 bool WindowChannel::eventFilter(QObject *watched, QEvent *event)

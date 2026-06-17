@@ -2,6 +2,7 @@
 #define WINDOWCHANNEL_H
 
 #include <QJsonObject>
+#include <QString>
 #include <QWidget>
 
 class QWebEngineView;
@@ -28,6 +29,7 @@ public:
 signals:
     void windowStateChanged(int state);
     void windowModeChanged(int mode);
+    void windowShown();
     void windowAppendPrompt(const QString &question, bool isSend);
     void windowOverrideQuestion(const QString &question);
     void windowChangeToDigitalMode();
@@ -45,8 +47,12 @@ public slots:
     int windowMode() ;
     void ensureMinimumWidth(int width);
     void saveMainWindowSidebarState(int width, bool expanded);
+    void saveMainWindowSidebarGroupCollapsedStates(const QString &groupCollapsedStatesJson);
     QJsonObject getMainWindowSidebarState();
+    bool shouldShowNewUserGuideOnStartup();
+    void recordNewUserGuideShown();
     void showAboutWindow();
+    void showUpdateLogWindow();
     void showHelpWindow();
 
     // 1 - 模型,  2 - 知识库
@@ -67,6 +73,7 @@ protected:
 private:
     int persistedMainWindowSidebarWidth();
     bool persistedMainWindowSidebarExpanded();
+    QJsonObject persistedMainWindowSidebarGroupCollapsedStates();
 
     QWidget *window = nullptr;
     QWebEngineView *webView = nullptr;

@@ -4,8 +4,6 @@ import type { AppStoreCardData } from "@/types/conversation";
 import { useBackendStore } from "@/stores";
 import { useThemeIcon } from "@/utils/loadThemeIcon";
 import CardBase from "./CardBase";
-import "./CardBase.css";
-import "./CommandCard.css";
 
 /**
  * 应用商店卡片组件

@@ -1,51 +1,75 @@
 [
     {
-        "version": "V2.12",
-        "date-for-v20": "2025-12-05",
-        "date-for-v25": "2025-11-25",
+        "version": "V3.0.1",
+        "date-for-v20": "2026-06-16",
+        "date-for-v25": "2026-05-29",
         "items": [
             {
-                "type": "improvement",
-                "description": "Built-in selected MCP Servers, covering practical needs across multiple scenarios including system control, file management, application management, network protocols, and document office."
+                "type": "new",
+                "description": "New Layout: Introduced dual-window modes (Standard and Mini) with collapsible sidebars and adaptive scaling for a cleaner interface."
             },
             {
-                "type": "improvement",
-                "description": "MCP Server is upgraded to auto-mode. Once the MCP Server is activated, it automatically matches appropriate tools, eliminating the need for manual selection."
+                "type": "new",
+                "description": "Multi-task Concurrency: Supports up to 10 background dialogue tasks simultaneously. Receive system notifications upon completion without the need to wait on the page."
             },
             {
-                "type": "improvement",
-                "description": "The MCP Server supports intelligent parsing of dragged files and file paths."
+                "type": "new",
+                "description": "Split-screen AI Writing: Added a side-by-side editing console with local outline parsing and support for up to 50 material uploads. Export content as Word, PDF, or Markdown in one click."
             },
             {
-                "type": "improvement",
-                "description": "The MCP Server supports intelligent parsing of dragged files and file paths."
+                "type": "new",
+                "description": "Native System Control and Extensibility: Adjust brightness/volume or download apps via natural language commands using native control cards. The open MCP and Skills ecosystem supports custom tool imports for workflow automation."
+            },
+            {
+                "type": "new",
+                "description": "Global History Search: Features precise keyword search with highlighting, intelligent grouping by time or tags, and batch management capabilities."
+            },
+            {
+                "type": "new",
+                "description": "Model and Input Upgrades: The title bar integrates Intelligent Scheduling for seamless model switching. The input box now combines Deep Thinking, Web Search, and multimodal file uploads."
+            },
+            {
+                "type": "new",
+                "description": "Privacy Mode: Implements privacy risk alerts when local files are uploaded for public cloud analysis, and offers a no-log \"Temporary Chat\" mode to safeguard data security."
+            },
+            {
+                "type": "new",
+                "description": "Sandbox Isolation: Runs in an isolated sandbox by default to protect system files and the local environment. File changes are written to the system only after confirmation, with \"Trust This Chat\" reducing repeated prompts."
             }
         ]
     },
     {
-        "version": "V2.11",
-        "date-for-v20": "2025-10-16",
-        "date-for-v25": "2025-9-29",
+        "version": "V3.0",
+        "date-for-v20": "2026-06-16",
+        "date-for-v25": "2026-05-15",
         "items": [
             {
                 "type": "new",
-                "description": "Adjustment of personal knowledge base access point: The knowledge base access point has been integrated into the UOS AI agent to facilitate usage."
+                "description": "New Layout: Introduced dual-window modes (Standard and Mini) with collapsible sidebars and adaptive scaling for a cleaner interface."
             },
             {
                 "type": "new",
-                "description": "Increased methods for adding files to the knowledge base: A new \"Add to AI Knowledge Base\" entry has been added in the onboard and right-click menus of files."
+                "description": "Multi-task Concurrency: Supports up to 10 background dialogue tasks simultaneously. Receive system notifications upon completion without the need to wait on the page."
             },
             {
-                "type": "improvement",
-                "description": "New support formats for file upload and knowledge base: Markdown and common code formats have been added."
+                "type": "new",
+                "description": "Split-screen AI Writing: Added a side-by-side editing console with local outline parsing and support for up to 50 material uploads. Export content as Word, PDF, or Markdown in one click."
             },
             {
-                "type": "improvement",
-                "description": "The shortcut for FollowAlong has been changed to [Super+R]."
+                "type": "new",
+                "description": "Native System Control and Extensibility: Adjust brightness/volume or download apps via natural language commands using native control cards. The open MCP and Skills ecosystem supports custom tool imports for workflow automation."
             },
             {
-                "type": "improvement",
-                "description": "FollowAlong toolbar now includes [Ask AI], allowing quick queries about selected content."
+                "type": "new",
+                "description": "Global History Search: Features precise keyword search with highlighting, intelligent grouping by time or tags, and batch management capabilities."
+            },
+            {
+                "type": "new",
+                "description": "Model and Input Upgrades: The title bar integrates Intelligent Scheduling for seamless model switching. The input box now combines Deep Thinking, Web Search, and multimodal file uploads."
+            },
+            {
+                "type": "new",
+                "description": "Privacy Mode: Implements privacy risk alerts when local files are uploaded for public cloud analysis, and offers a no-log \"Temporary Chat\" mode to safeguard data security."
             }
         ]
     }

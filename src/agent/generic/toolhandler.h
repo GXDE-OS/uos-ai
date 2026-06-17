@@ -23,6 +23,11 @@ public:
 
 private:
     /**
+     * @brief 根据OSCallContext填充ToolCallResult的错误码和消息
+     */
+    static void fillToolResult(ToolCallResult &result, const struct OSCallContext &ctx);
+
+    /**
      * @brief 处理系统控制相关工具
      */
     static ToolCallResult handleSystemTool(const QString &toolName, const QJsonObject &params);

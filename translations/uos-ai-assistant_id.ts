@@ -2,4347 +2,709 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="id">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">Tambahkan model</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Wajib, silakan masukkan</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">Kunci API</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">Rahasia API</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Akun</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Wajib, untuk membedakan beberapa model</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Opsional</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">Opsional. Alamat default akan digunakan jika tidak diisi.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">Daftar Model</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Kustom</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Tidak dapat terhubung ke server, silakan periksa jaringan Anda atau coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Untuk pengaturan proxy, silakan buka pengaturan proxy sistem</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Buka pengaturan</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Nama Model</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domain</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Gagal menyimpan, silakan coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Nama akun sudah ada, silakan ubah</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Tidak lebih dari 20 karakter</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Untuk menguji ketersediaan model, sistem mengirim informasi uji ke model besar, yang akan mengonsumsi sejumlah kecil token.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">LLM ini sudah ada, jangan tambahkan lagi.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Saat ini terlalu banyak pengunjung, silakan coba lagi nanti.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">tipe</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">Baca Nyaring</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">Perangkat audio tidak terdeteksi, silakan periksa dan coba lagi.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Konten yang dihasilkan oleh AI hanya sebagai referensi, harap perhatikan keakuratan informasi.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Salin</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">Perbaiki bagian ini untuk saya dan berikan hasilnya tanpa konten tambahan.
-
-teks:</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">Model saat ini: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Hasilkan ulang</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">Bahasa Mandarin Sederhana</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">Bahasa Mandarin Tradisional</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">Bahasa Tibet</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">Bahasa Inggris</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">Bahasa Jepang</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">Bahasa Jerman</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">Bahasa Spanyol</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">Bahasa Prancis</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">Bahasa Italia</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">Bahasa Korea</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">Bahasa Melayu</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">Bahasa Portugis</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">Bahasa Rusia</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">Bahasa Thailand</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">Bahasa Vietnam</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">Lanjutkan Dialog</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">Deteksi Otomatis</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Cari</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Jelaskan</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">Terjemahkan</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Perluas</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">Perbaiki</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">Tambahkan ke basis pengetahuan AI</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">Telah ditambahkan</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurasi Model</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">Tersalin</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">Tidak ada teks yang dikenali.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">Konten yang ditambahkan harus lebih dari 10 kata</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">Ringkasan</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">Tempel ke Teks</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">Lanjutkan menulis</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Perbaiki</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">Hasil terjemahan dibatasi oleh kemampuan model. Jika tidak puas dengan terjemahan, silakan beralih ke model lain di halaman Beranda UOS AI.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">Terjemahkan teks ini ke dalam %1 dan berikan hasil yang jelas langsung.
-teks：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">Tidak dapat diklik</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">Fungsi hanya dapat digunakan setelah merestart metode input. Panduannya sebagai berikut:
-
-1. Klik kanan pada ikon metode input di taskbar.
-
-2. Klik &quot;Restart&quot;.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">Oke</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">Gagal mengisi</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">Tidak ada kotak input yang dipilih, silakan pilih kotak input dan isi kembali.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">Oke</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">Jelaskan teks ini dengan bahasa sederhana. Berikan hasil yang jelas tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Ringkas teks ini dan berikan hasil yang jelas langsung tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Lanjutkan teks ini dengan tepat. Tidak perlu banyak kata. Berikan hasil yang jelas tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Kembangkan teks ini dengan tepat. Tidak perlu teks yang sangat panjang. Berikan hasil yang jelas tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Periksa apakah ada kesalahan ketik dalam teks ini. Jika ada, tunjukkan lokasi kesalahannya. Berikan hasil yang jelas langsung tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">Saat ini tidak ada model</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">Pergi ke konfigurasi</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Riwayat obrolan dihapus</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Berhasil disalin</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI adalah asisten pintar desktop, asisten pribadi Anda! Anda dapat berkomunikasi dengannya menggunakan teks atau suara, dan dapat membantu menjawab pertanyaan, memberikan informasi, serta menghasilkan gambar berdasarkan deskripsi Anda.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI Ikuti/Tulis</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Manajemen Basis Pengetahuan</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
         <translation>Tidak dapat terhubung ke server, silakan periksa jaringan Anda atau coba lagi nanti.</translation>
     </message>
 </context>
 <context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">gagal memparsing fungsi</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">Berkas aplikasi tidak ada</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">Berhasil dimulai</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">Gagal memulai</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished"> Konten output eksekusi adalah </translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Mode</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Mode Jendela</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Mode Bilah Samping</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Pengaturan</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">Log Pembaruan</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Percakapan suara</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Hapus</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">Konfirmasi penghapusan %1?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">Setelah dihapus, server ini tidak akan tersedia. Lakukan dengan hati-hati.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="obsolete">Perbarui</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">Plugin non-tervektorisasi</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">Sebelum menggunakan [Basis Pengetahuan AI], Anda perlu menginstal plugin vektorisasi terlebih dahulu agar fungsi basis pengetahuan AI dapat berjalan dengan baik.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">Instal</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">Basis pengetahuan kosong</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">Sebelum menggunakan [Basis Pengetahuan AI], Anda perlu menambahkan dokumen ke basis pengetahuan terlebih dahulu. Setelah ditambahkan, AI akan menjawab pertanyaan berdasarkan konten yang Anda tambahkan ke basis pengetahuan.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">Tambahkan Berkas</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">Berkas berikut telah kedaluwarsa dan tidak dapat digunakan. Lanjutkan?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Gunakan nanti</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Instal Sekarang</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">Lingkungan MCP tidak ditemukan</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">Silakan buka App Store untuk menginstal UOS AI Agent</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">Nanti Saja</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Klaim Kredit</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">Kredit Gratis Telah Dikirim</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">Anda telah menggunakan semua kredit gratis untuk akun percobaan. Kami memberikan tambahan 200 kredit gratis yang berlaku bulan ini. Jelajahi lebih banyak fitur dan buka potensi tak terbatas UOS AI!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Berhasil Diklaim</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Gagal Mengklaim. Silakan Coba Lagi.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI adalah asisten pintar desktop, asisten pribadi Anda! Anda dapat berkomunikasi dengannya menggunakan teks atau suara, dan dapat membantu menjawab pertanyaan, memberikan informasi, serta menghasilkan gambar berdasarkan deskripsi Anda.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">Informasi Pengarsipan</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">Autentikasi gagal, saldo tidak mencukupi</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">Autentikasi gagal, batas harian terlampaui</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Saat ini terlalu banyak pengunjung, silakan coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">Layanan tidak normal. Silakan hubungi tim pengembang untuk pemecahan masalah.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Kesalahan</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">OK</translation>
-    </message>
-</context>
-<context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">Asisten Pengetahuan Pribadi hanya dapat digunakan setelah mengonfigurasi basis pengetahuan.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Asisten Pengetahuan Pribadi hanya dapat digunakan setelah mengonfigurasi plug model.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Asisten Sistem Dalam hanya dapat digunakan setelah mengonfigurasi plug model.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Asisten Sistem UOS hanya dapat digunakan setelah mengonfigurasi plug model.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Manajemen Basis Pengetahuan</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="obsolete">Server MCP</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI memerlukan akun model AI yang dikonfigurasi sebelum dapat digunakan. Silakan konfigurasi akun model terlebih dahulu.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">Silakan konfigurasikan basis pengetahuan.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">Silakan instal plug model.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">Ekspor Gambar Sebagai</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Berhasil Diklaim</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Gagal Mengklaim. Silakan Coba Lagi.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Anda dapat mengunggah maksimal 3 berkas atau gambar</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">Terjemahkan teks berikut ke dalam bahasa Inggris untuk saya.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">Terjemahkan dokumen berikut ke dalam bahasa Tionghoa.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">Apa arti kata &quot;Agen&quot; dalam industri AI?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">Silakan terjemahkan konten berikut ke dalam bahasa Tionghoa. Persyaratan: Akurat dalam makna, formal dan profesional dalam bahasa.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">Apa saja cara santai untuk menyapa teman dalam bahasa Inggris?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">Terjemahkan teks Tionghoa klasik berikut ke dalam Tionghoa modern.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">Ringkasan</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">Koreksi</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Jelaskan</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Perluas</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">Lanjutkan</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Sempurnakan</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">Tolong bantu saya menulis ringkasan pekerjaan berdasarkan dokumen ini</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">Saya butuh ringkasan pekerjaan untuk Proyek A, tolong bantu saya menyusun poin-poin penting</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">Tolong buatkan ringkasan pekerjaan yang singkat berdasarkan teks yang saya berikan</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">Analisis laporan ini dan ambil poin-poin penting untuk ringkasan pekerjaan</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">Saya butuh ringkasan pekerjaan termasuk data triwulan, tolong lihat lampirannya</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">Bantu saya menulis ringkasan pekerjaan yang menyoroti kontribusi pribadi</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">Buatkan ringkasan pekerjaan dari catatan rapat, fokus pada tindakan yang perlu dilakukan</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">Saya butuh ringkasan pekerjaan bilingual dalam bahasa Mandarin dan Inggris, tolonh merujuk ke materi yang diberikan</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">Bantu saya menyusun konten pekerjaan bulan lalu dan membuat ringkasannya</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">Tulis ringkasan pekerjaan berdasarkan daftar tugas ini, tekankan status penyelesaiannya</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">Periksa kesalahan tata bahasa dalam teks ini</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">Bantu saya menemukan kesalahan ejaan dalam artikel ini</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">Perbaiki pemilihan kata yang tidak tepat dalam dialog ini</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">Perbaiki masalah tanda baca dalam dokumen ini</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">Revisi ungkapan yang tidak jelas dalam teks ini</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">Edit kesalahan bahasa dalam email ini</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">Periksa apakah teks ini mengikuti konvensi bahasa Inggris standar</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">Perbaiki kelemahan logis dalam laporan ini</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">Identifikasi kesalahan bahasa dalam komentar kode ini</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">Perbaiki pernyataan yang ambigu dalam kontrak ini</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">Jelaskan prinsip dasar komputasi kuantum</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">Jelaskan fotosintesis dengan istilah sederhana</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">Jelaskan secara rinci cara kerja teknologi blockchain</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">Jelaskan relativitas dari perspektif profesional</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">Gunakan metafora untuk menjelaskan apa itu kecerdasan buatan</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">Jelaskan perubahan iklim dengan bahasa yang sederhana</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">Jelaskan struktur tata surya kepada siswa sekolah dasar</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">Perluas teks ini menjadi 300 kata, fokus pada detail adegan dan emosi karakter</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">Tulis ulang paragraf ini menjadi 500 kata dengan gaya akademis, tambahkan dukungan data dan kutipan</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">Perluas bagian ini dengan lebih banyak metafora dan perangkat retorika untuk membuatnya lebih hidup</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">Mohon perluas artikel pendek ini menjadi 1000 kata, tambahkan kasus spesifik dan langkah praktis</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">Perluas dialog ini dengan menambahkan aktivitas psikologis karakter dan detail percakapan</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">Tulis ulang isi dokumen ini ke dalam format laporan, termasuk abstrak, isi, dan kesimpulan</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">Perluas deskripsi teknis ini menjadi 800 kata, tambahkan lebih banyak parameter teknis dan penjelasan diagram</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">Tulis ulang email ini agar lebih formal dan profesional, tambahkan informasi latar belakang yang relevan</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">Perluas cerita ini menjadi 1500 kata, tambahkan lebih banyak alur cerita dan latar belakang karakter</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">Mohon perluas ringkasan ini, soroti pencapaian utama dan rencana masa depan, jumlah kata tidak terbatas</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">Mohon lanjutkan tulisan pendek ini tentang teknologi masa depan, fokus pada bagaimana AI mengubah kehidupan sehari-hari, sekitar 300 kata, dengan gaya sains populer</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">Bantu saya memperluas paragraf terakhir dari rencana bisnis ini, tekankan potensi pasar dan keunggulan kompetitif, tidak ada batasan kata, gaya formal</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">Lanjutkan akhir dari dongeng ini, hangat dan menyentuh, protagonis mencapai mimpinya, sekitar 200 kata</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">Mohon tulis bagian kedua dari email ini, nada ramah dan profesional, fokus pada detail kolaborasi, dalam 150 kata</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">Perluas paragraf berikutnya dari catatan perjalanan ini, gambarkan pemandangan di lembah, hidup dan imajinatif, sekitar 200 kata</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">Lanjutkan bab berikutnya dari novel misteri ini, dengan alur cerita yang mengejutkan, pertahankan ketegangan, tidak ada batasan kata</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">Bantu saya menulis kesimpulan dari pidato ini, menginspirasi dan menekankan kerja tim, sekitar 100 kata</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">Perluas bagian deskripsi kinerja dari manual produk ini, detail dan akurat, sekitar 300 kata</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">Lanjutkan awal dari cerita cinta ini, berlatar di Paris yang hujan, gaya romantis, 150 kata</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">Mohon tulis bagian diskusi dari makalah ini, fokus pada keterbatasan hasil eksperimen, gaya akademis, tidak ada batasan kata</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">Mohon perbaiki teks ini agar lebih formal dan profesional untuk email bisnis</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">Tulis ulang bagian ini agar lebih hidup dan menarik untuk posting media sosial</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">Saya perlu menyempurnakan abstrak dari makalah akademis ini agar lebih ringkas dan jelas dalam 200 kata</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">Perbaiki dialog ini agar lebih alami dan lancar untuk komunikasi lisan</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">Tingkatkan deskripsi produk ini untuk menyoroti fitur premium dan inovatifnya bagi calon pelanggan</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">Bantu saya memperbaiki surat lamaran ini agar lebih persuasif dan personal</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">Tulis ulang posting blog ini agar lebih lucu dan menarik bagi pembaca muda</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">Sempurnakan bagian pembukaan dari laporan ini agar lebih menarik</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">Saya perlu memperbaiki dokumen teknis ini agar lebih mudah dipahami oleh non-ahli</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">Tolong bantu saya menulis ulang surat permintaan maaf ini agar terdengar lebih tulus dan pantas</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">Artikel</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">Pidato</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">Garis Besar</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">Notifikasi</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">Postingan</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">Laporan Kerja</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">Laporan Penelitian</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">Tolong rangkum poin-poin penting dari dokumen ini</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">Buatkan daftar ide utama dari file ini untuk saya</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">Rangkum ide inti dari bagian ini</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">Gunakan bahasa yang ringkas untuk merangkum artikel ini</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">Saya butuh ringkasan laporan ini, tidak lebih dari 200 kata</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">Ambil data utama dan kesimpulan dari dokumen ini</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">Rangkum bagian utama dan poin-poin dari konten panjang ini</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">Bantu saya merangkum metode penelitian dan temuan dari makalah ini</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">Tolong rangkum poin-poin penting artikel ini dalam format tabel</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">Rangkum langkah-langkah operasional dalam file ini menggunakan poin-poin</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">Tampilkan klausa utama kontrak ini dalam format daftar poin</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">Buat garis besar untuk laporan tentang tren AI, mencakup teknologi, etika, dan aplikasi</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">Susun makalah yang diunggah ke dalam kerangka penelitian terstruktur</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">Saya butuh garis besar rencana bisnis termasuk analisis pasar, deskripsi produk, dan perencanaan keuangan</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">Ubah pidato ini menjadi garis besar PowerPoint dengan poin-poin untuk setiap bagian</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">Tulis garis besar ringkasan buku yang mencakup poin-poin penting dan refleksi pribadi saya</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">Rangkum catatan rapat menjadi garis besar rencana eksekusi proyek</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">Saya butuh garis besar bab tesis termasuk pendahuluan, tinjauan literatur, dan metodologi</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">Buat garis besar dokumen persyaratan produk (PRD) dengan deskripsi fitur dan alur pengguna</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">Ambil data kunci dari laporan industri ini untuk membuat garis besar ringkasan</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">Tulis garis besar perencanaan acara termasuk jadwal, peran tim, dan anggaran</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">Buat kerangka tiga tingkat dari dokumen ini</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">Ekstrak kerangka inti dari catatan rapat</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">Susun struktur laporan penelitian</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">Buat ikhtisar fitur produk</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">Rancang silabus pelatihan</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">Analisis kerangka tinjauan literatur</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">Buat daftar isi rencana bisnis</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">Tulis poin alur perencanaan acara</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">Bantu saya menulis pemberitahuan rapat besok pukul 3 sore di Ruang Konferensi A tentang pelaporan kemajuan proyek</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">Buat pemberitahuan singkat berdasarkan dokumen ini yang menyoroti tenggat waktu dan metode pengiriman</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">Buat draf pemberitahuan liburan untuk Festival Musim Semi dari 10 hingga 17 Februari dengan kerja kembali pada 18 Februari</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">Saya membutuhkan pemberitahuan aktivitas untuk pelatihan staf sepanjang hari Rabu depan di auditorium perusahaan</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">Format materi teks yang disediakan menjadi pemberitahuan formal dengan format standar dan nada profesional</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">Tulis pemberitahuan pemadaman listrik untuk Sabtu ini dari pukul 9 pagi hingga 5 sore yang memengaruhi seluruh gedung kantor</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">Buat pemberitahuan perubahan rapat menggeser waktu asli ke Jumat pukul 10 pagi dengan detail lainnya tetap sama</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">Siapkan pemberitahuan singkat berdasarkan notulen rapat terlampir untuk peserta yang tidak hadir</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">Buat draf pemberitahuan peningkatan sistem dijadwalkan malam ini dari tengah malam hingga pukul 3 pagi dengan waktu henti sistem</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">Tulis pemberitahuan pengaturan tugas liburan yang singkat mencantumkan staf yang bertugas dan informasi kontak</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">Bantu saya menulis artikel kesehatan masyarakat tentang makan sehat dengan bahasa sederhana untuk pembaca umum</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">Buat postingan tren teknologi yang menyenangkan dan menarik berdasarkan dokumen ini</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">Buat draf posting promosi liburan yang menyoroti diskon dan jadwal acara</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">Saya membutuhkan artikel peluncuran produk yang berfokus pada fitur dan ulasan pelanggan</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">Ubah transkrip wawancara ini menjadi postingan profil kepribadian yang santai</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">Tulis panduan perjalanan yang merekomendasikan tiga tempat populer dengan tips praktis</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">Buat postingan ulang tahun yang meninjau sejarah perusahaan dan berterima kasih kepada pelanggan</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">Analisis laporan industri ini dengan data yang divisualisasikan untuk postingan yang berwawasan</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">Buat draf posting kampanye amal yang mendorong partisipasi dengan instruksi yang jelas</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">Tulis artikel keterampilan karier dengan lima tips yang dapat ditindaklanjuti dan contoh nyata</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">Bantu saya menulis ringkasan kerja mingguan yang berfokus pada kemajuan proyek dan kolaborasi tim</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">Buat ringkasan kerja singkat berdasarkan file notulen rapat yang saya unggah</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">Saya membutuhkan ringkasan kerja triwulan termasuk analisis data dan refleksi pertumbuhan pribadi</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">Buat ringkasan kerja berdasarkan teks berikut [tempel teks]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">Tulis ringkasan kerja yang menyoroti pencapaian KPI bulan ini dan tantangan yang dihadapi</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">Bantu saya merangkum pekerjaan minggu lalu yang dikategorikan berdasarkan proyek</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">Buat ringkasan kerja dari konten email yang menekankan tugas tertunda dan penyelesaian</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">Saya membutuhkan ringkasan tahunan termasuk sorotan kerja dan rencana perbaikan</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">Buat laporan kerja bulanan dari data yang saya unggah</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">Bantu saya mengatur catatan kerja yang tersebar menjadi ringkasan kerja terstruktur</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">Analisis data yang diunggah dan buat laporan tren pasar</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">Ekstrak informasi penting dari teks dan susun laporan analisis industri</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">Gabungkan isi file untuk menulis laporan penelitian pesaing</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">Buat ringkasan penelitian kebutuhan pengguna berdasarkan catatan wawancara yang diberikan</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">Analisis data penjualan ini dan buat laporan kinerja pasar triwulan</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">Tulis laporan penelitian teknis berdasarkan deskripsi produk yang diberikan</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">Atur umpan balik pengguna ini dan buat laporan saran perbaikan produk</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">Tolong tulis laporan analisis peluang pasar berdasarkan file yang diberikan</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="vanished">Bantu saya menulis esai tentang topik [%1] dengan [struktur jelas dan konten kaya].</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="vanished">Bantu saya menulis tweet publik tentang topik [%1], membutuhkan [struktur jelas] dan nada [santai].</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="vanished">Bantu saya menulis ringkasan pekerjaan terakhir saya, termasuk [%1] dan [hasil], membutuhkan nada [formal].</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="vanished">Bantu saya menulis laporan penelitian tentang [%1], setidaknya harus mencakup [deskripsi status, analisis masalah, tindakan dan saran, kesimpulan penelitian].</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="vanished">Kecerdasan Buatan</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="vanished">Bantu saya menulis pidato tentang topik [%1] untuk [Pimpinan Perusahaan], membutuhkan [struktur jelas dan bahasa yang hidup].</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="vanished">Bantu saya menulis kerangka tentang topik [%1], yang akan digunakan untuk [produksi PPT].</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="vanished">Bantu saya menulis pemberitahuan tentang [%1], penerimanya adalah [Semua Karyawan] dan pengirimnya adalah [Departemen Administrasi].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="vanished">Libur Hari Nasional</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="vanished">konten kerja</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---Peran---
-
-Anda adalah asisten yang membantu, menjawab pertanyaan tentang pengetahuan latar belakang yang diberikan.
-
----Tujuan---
-
-Menanggapi pertanyaan pengguna, memasukkan akal sehat yang relevan. Jika Anda tidak tahu jawabannya, katakan saja. Jangan membuatnya.
-
----pengetahuan---
-
-%1
-
----pertanyaan---
-
-%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">Jawaban keluaran dimulai dengan &quot;Tidak ditemukan informasi relevan di basis pengetahuan Anda.&quot;---pertanyaan--
-
-:%1</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---Peran---
-
-Anda adalah asisten yang membantu, menjawab pertanyaan tentang pengetahuan latar belakang yang diberikan.
-
----Tujuan---
-
-Menanggapi pertanyaan pengguna, memasukkan akal sehat yang relevan. Jika Anda tidak tahu jawabannya, katakan saja. Jangan membuatnya.
-
----pengetahuan---
-
-%1
-
----pertanyaan---
-
-%2</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---Peran---
-
-Anda adalah penulis profesional dengan keahlian dalam berbagai gaya dan format penulisan.
-
----Tujuan---
-
-Berdasarkan permintaan pengguna, buat konten berkualitas tinggi yang memenuhi kebutuhan spesifik mereka.
-
----Jenis Penulisan---
-
-1. Artikel: Menulis artikel terstruktur dengan argumen jelas dan konten menarik
-2. Pidato: Membuat pidato yang menarik dengan pembukaan, isi, dan penutup yang tepat
-
-3. Garis Besar: Membuat garis besar terstruktur untuk topik yang diberikan
-4. Pemberitahuan: Menulis pemberitahuan atau pengumuman resmi
-5. Posting: Membuat konten media sosial yang menarik
-6. Laporan Kerja: Menulis laporan kerja komprehensif
-7. Laporan Penelitian: Membuat laporan penelitian rinci
----Masukan---
-
-%1
-
----Format Keluaran---
-
-Harap berikan konten dalam format berikut:
-Judul:
-Konten:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">---Peran---
-
-Anda adalah ahli pemrosesan teks dengan keahlian mendalam dalam analisis bahasa, teknik penulisan, dan optimasi teks.
-
----Tujuan---
-
-Olah dan tingkatkan teks masukan sambil mempertahankan makna dan gaya aslinya.
-
----Jenis Pemrosesan---
-
-1. Ringkasan: Buat ringkasan singkat dari poin utama
-2. Koreksi: Identifikasi dan perbaiki kesalahan tata bahasa, ejaan, dan gaya
-3. Jelaskan: Berikan penjelasan rinci tentang konsep atau bagian yang rumit
-4. Perluas: Jelaskan lebih lanjut poin utama sambil mempertahankan gaya asli
-5. Lanjutkan: Lanjutkan teks dengan cara yang koheren dan alami
-6. Poleakan: Tingkatkan kejelasan, alur, dan dampak teks sambil mempertahankan esensinya
-
----Masukan---
-
-%1
-
----Format Keluaran---
-
-Harap berikan teks yang telah diolah secara langsung tanpa karakter tambahan atau pemformatan.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">---Peran---
-
-Anda adalah penerjemah profesional dan ahli bahasa. Tugas Anda adalah:
-
-1. Menerjemahkan teks secara akurat sesuai permintaan
-2. Menjawab pertanyaan terkait bahasa
-3. Mengidentifikasi dan menangani permintaan terjemahan tertentu
-
----Tujuan---
-
-Analisis masukan pengguna dengan cermat untuk menentukan niat mereka:
-
-1. Jika masukan berisi frasa seperti &apos;apa artinya ini&apos;, &apos;jelaskan frasa ini&apos;, atau serupa - berikan HANYA penjelasan bahasa (tanpa terjemahan)
-2. Jika masukan menentukan kalimat/paragraf tertentu untuk diterjemahkan (mis. &apos;Terjemahkan kalimat ini:...&apos;) - terjemahkan HANYA bagian yang ditentukan (tanpa terjemahan penuh)
-3. Hanya ketika tidak ada permintaan khusus yang terdeteksi, lakukan terjemahan penuh antara bahasa Cina dan Inggris
-
-Selalu pertahankan makna, nada, dan gaya asli. Untuk terjemahan:
-
-- Cina → Inggris
-- Inggris → Cina
-
-Untuk pertanyaan bahasa, berikan penjelasan yang jelas dan ringkas.
-
----Masukan---
-
-%1
-
----Format Keluaran---
-
-1. Untuk terjemahan penuh: Berikan hanya terjemahan tanpa pemformatan tambahan
-2. Untuk terjemahan sebagian: Berikan hanya terjemahan bagian yang ditentukan
-3. Untuk penjelasan: Berikan hanya penjelasan dalam bahasa yang sama dengan pertanyaan
-Jangan pernah menggabungkan penjelasan dengan terjemahan atau memberikan terjemahan penuh setelah terjemahan sebagian</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">Perbarui UOS Screen Recorder ke versi 6.6 atau lebih baru dan mulai ulang komputer Anda untuk mengaktifkan Screenshot Q&amp;A.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurasi Model</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">Pergi ke konfigurasi</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">Tidak ada akun</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">Masukkan pertanyaan</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Konten yang dihasilkan oleh AI hanya untuk referensi, harap perhatikan keakuratan informasi.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Selamat datang di UOS AI</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">Berikut adalah beberapa hal yang dapat dibantu oleh UOS AI</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">Berhenti</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Hasilkan ulang</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">Hapus riwayat percakapan</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">Harap sambungkan mikrofon dan coba lagi</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Riwayat obrolan dihapus</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">Klik untuk mulai/menghentikan rekaman</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">Mendengarkan</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">Tidur</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">Mikrofon tidak terdeteksi</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">Koneksi gagal, klik untuk mencoba lagi</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">Klik pada animasi atau Ctrl+Super+Spasi untuk mengaktifkan</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Input suara sementara tidak tersedia, harap periksa jaringan!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Tidak dapat terhubung ke server, harap periksa jaringan Anda atau coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Percakapan suara</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">Klik animasi atau tekan Enter untuk mengirim</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">Hentikan rekaman setelah %1 detik</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">Berpikir</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">Klik animasi untuk menghentikan</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">Menjawab</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Kuota akun gratis Anda telah habis, harap konfigurasikan akun model Anda untuk terus menggunakannya.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Akun gratis Anda telah kedaluwarsa, harap konfigurasikan akun model Anda untuk terus menggunakannya.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI memerlukan akun model AI untuk dikonfigurasi sebelum dapat digunakan. Harap konfigurasi akun model terlebih dahulu.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">Aktifkan</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">Input suara</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Siaran suara sementara tidak tersedia, harap periksa jaringan!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Matikan percakapan suara</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">Gambar telah dihasilkan, harap beralih ke antarmuka obrolan untuk melihatnya.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">Tidak ada akun, harap konfigurasi akun</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">Jawab setiap pertanyaan hingga 5 kali</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Berhasil disalin</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">Perangkat output suara tidak terdeteksi</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">Perangkat output suara tidak terdeteksi, harap periksa dan coba lagi!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Pengaturan</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">Tentang</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Mode</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Mode Jendela</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Mode Bilah Samping</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">Daftar Asisten</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">Daftar Agen</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">Toko Agen</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Asisten Sistem UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Asisten Sistem Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Asisten Pengetahuan Pribadi</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">Harap konfigurasi basis pengetahuan</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">Sebelum menggunakan [Asisten Pengetahuan Pribadi], perlu mengkonfigurasi basis pengetahuan. Setelah mengkonfigurasi basis pengetahuan, AI akan menjawab pertanyaan atau menghasilkan konten berdasarkan konten yang telah Anda konfigurasi dalam basis pengetahuan.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">Harap konfigurasi model besar</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">Asisten pengetahuan pribadi hanya dapat digunakan setelah mengkonfigurasi model besar.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">Untuk mengkonfigurasi</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">Untuk menginstal</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">Harap instal [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">Asisten ini memerlukan instalasi EmbeddingPlugins untuk berjalan</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">Seret file ke sini untuk menambahkannya.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">Anda hanya dapat menambahkan 3 berkas, jenis berkas yang didukung termasuk: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, berkas kode, dll.</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">Server MCP</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">Tambahkan Server Mcp</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">Tambahkan Server</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">Penambahan gagal! Alasan kesalahan:</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">Lingkungan MCP tidak ditemukan. Silakan pasang 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">Memanggil</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">Selesai</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">Panggilan Gagal</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">Dibatalkan</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">parameter</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">hasil</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Untuk Server MCP, beralih ke model resmi &quot;Akun Uji Coba DeepSeek&quot;</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">Masukkan perintah Server MCP, mis. &quot;Ubah sistem ke mode gelap untuk saya&quot;</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">Server agen tidak tersedia</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">Pengecualian server agen</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">Server MCP tidak tersedia</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Batal</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="obsolete">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">Otomatiskan tugas multi-file dan multi-aplikasi dengan satu perintah menggunakan Layanan MCP. Coba sekarang!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Gunakan nanti</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Pasang Sekarang</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">Aktifkan Server MCP</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">Setelah memasang lingkungan MCP &quot;UOS AI Agent&quot;, klik </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished"> dan pilih &quot;uos-mcp&quot; dalam daftar server MCP.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">Coba katakan: &quot;Ubah sistem ke mode gelap&quot;.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">Coba sekarang</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">Tambahkan Server Mcp[Halaman Panduan]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">Pengguna pertama kali: Pasang lingkungan MCP &quot;UOS AI Agent&quot; melalui App Store.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">Format berkas JSON salah, silakan periksa dan kirim ulang</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">Pasang Sekarang &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">Obrolan Umum</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">Obrolan Pribadi</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">Sekarang dalam Obrolan Pribadi</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">Pesan Chat Pribadi tidak disimpan dalam riwayat dan akan dihapus secara permanen saat Anda meninggalkan obrolan.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">Screenshot Q&amp;A Pintasan (Ctrl+Alt+Q), mendukung hingga 3 gambar.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">Tidak dapat digunakan saat merekam layar</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Anda dapat mengunggah hingga 3 berkas atau gambar</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">Unggah Berkas</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">Harap hapus berkas yang tidak normal dan kirim ulang</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">Tambah Chat Pribadi</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">Tambah [Screenshot Q&amp;A]</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">Ambil tangkapan layar dan kirimkan isinya ke UOS AI. Anda juga dapat mengunggah gambar langsung.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">Selanjutnya</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">Tambah [ Mode Chat Pribadi ] - Obrolan tidak akan disimpan.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">Tidak ada teks yang diekstrak</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">Ukuran gambar melebihi 15 MB</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">Setelah membuka basis pengetahuan, jawaban akan didasarkan pada isinya. Kecepatan respons bergantung pada kinerja mesin dan ukuran basis pengetahuan.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">Basis pengetahuan tidak tersedia saat perintah atau MCP apa pun dipilih.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">MCP dinonaktifkan saat basis pengetahuan aktif.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">Perintah dinonaktifkan saat basis pengetahuan aktif.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="obsolete">Salin</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">Sunting ulang</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">Salin berhasil.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">Salin gagal. Silakan coba lagi.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">Mencari</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">%1 dokumen referensi telah diperoleh (%2s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">Bersihkan Riwayat</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">Hapus semua catatan?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">Setelah dihapus, konten tidak dapat dipulihkan!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">Rekomendasikan model resmi</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">Nonaktifkan MCP</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Disarankan untuk menggunakan model resmi &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">Buka Cepat</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">Peningkatan Server MCP ke Mode Otomatis</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">Server MCP telah ditingkatkan ke mode otomatis, memungkinkan Anda mengakses semua Server MCP hanya dengan sekali klik</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. Ini memungkinkan Anda mengotomasi tugas seperti pengaturan sistem dan pemrosesan file hanya dengan satu klik.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">Penambahan Server MCP telah dipindahkan ke Pengaturan.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">Untuk menambahkan lebih banyak Server MCP, buka Pengaturan &gt; Server MCP.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">Mengerti</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">Kredit Model Gratis</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">Sistem saat ini menawarkan model akun percobaan DeepSeek, yang secara otomatis memperbarui kuota gratis di awal setiap bulan, memungkinkan Anda menggunakannya tanpa khawatir.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Klaim Kredit</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="obsolete">Dapatkan akun gratis</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">Klaim Kredit Gratis</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Berhasil Diklaim</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Gagal Mengklaim. Silakan Coba Lagi.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">Aktifkan Server MCP&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">Nonaktifkan Server MCP</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">Konfigurasi Server MCP</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">Anda hanya dapat menambahkan maksimal satu file.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">Format file tidak didukung.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">Ringkas konten utama file.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">Memproses...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">Kesalahan File</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">File telah dihapus.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">Ukuran file melebihi batas 100MB.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">Unggah dokumen</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">File dihapus</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">Tidak ada teks yang diproses</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">Referensi</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">Instruksi</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">Ketik &quot;/&quot; di kotak input untuk mengaktifkan.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">Silakan masukkan; “Ctrl+Enter” untuk ganti baris.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">Masukkan pertanyaan Anda, atau ketik &quot;/&quot; untuk memilih perintah
-&quot;Ctrl+Enter&quot; untuk membuat baris baru</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">Pencarian selesai.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">Klik untuk melihat hasil</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">edit</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">simpan</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">salin</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Cari</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">DeepThink(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">Pemikiran telah berhenti</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">Kembali ke bawah</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">Dipikirkan mendalam (%1 detik)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">Percakapan Baru</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">Riwayat</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">Tidak Ada Catatan Riwayat</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">Hari ini</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">Kemarin</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">Apakah Anda yakin ingin menghapus percakapan ini? Setelah dihapus, tidak dapat dipulihkan.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">Agen %1 yang digunakan dalam percakapan ini telah dihapus</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">Percakapan ini tidak dapat dilihat. Untuk melihatnya, silakan instal agen %1 dan coba lagi.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">Model percakapan asli telah dihapus. Kami telah beralih ke model baru agar Anda dapat melanjutkan percakapan.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">Rekomendasi</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">Lainnya</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Tambahkan Model</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">Tidak Ada Model</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">Tidak ada model yang tersedia. Silakan instal atau konfigurasi model di pengaturan.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">Silakan Jelaskan Tema Konten dan Persyaratan untuk Karya Anda.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">Silakan Masukkan Konten yang Ingin Anda Terjemahkan dan Tentukan Bahasa Target. Terjemahan Default adalah ke Bahasa Cina.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">Silakan Masukkan Teks yang Perlu Diproses dan Tentukan Persyaratan Anda.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">Agen Baru Ditambahkan</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">Agen Penulisan, Pemrosesan Teks, dan Terjemahan baru telah ditambahkan. Coba sekarang.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">Coba</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">Tulis artikel berdasarkan dokumen berikut:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">Terjemahkan dokumen berikut ke dalam Bahasa Inggris:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Matikan percakapan suara</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Percakapan suara</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">Ekspor Item Sebagai</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">File yang didukung</translation>
+        <translation>Konten dokumen tidak valid atau kosong.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">Fungsi tidak tersedia</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Dapatkan akun percobaan gratis</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">Dapatkan akun</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Menerima akun menunjukkan bahwa Anda memahami dan menyetujui syarat acara,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detail Acara&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Akun Percobaan</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Gagal menyimpan, silakan coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">Akun percobaan berhasil diterima.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Jumlah penggunaan dan durasi akun percobaan terbatas, harap segera konfigurasi akun model pribadi Anda! Lihat detail acara untuk informasi lebih lanjut.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Dukungan bahasa Inggris untuk akun percobaan belum memuaskan. Jumlah penggunaan dan durasi akun percobaan terbatas. Harap segera konfigurasikan akun model pribadi Anda!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Mulai percobaan</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivitas akun gratis telah berakhir.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Tidak dapat terhubung ke server, harap periksa jaringan Anda atau coba lagi nanti.</translation>
+        <translation>Format file tidak didukung</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>Otorisasi appid gagal</translation>
+        <translation>otorisasi appid gagal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
         <translation>Gagal mendapatkan parameter tertentu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>Nilai parameter tidak valid</translation>
+        <translation>Nilai parameter ilegal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
         <translation>Otorisasi mesin tidak mencukupi</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
-        <translation>Sesi habis waktu</translation>
+        <translation>Sesi berakhir karena waktu habis</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
-        <translation>Dekode audio gagal</translation>
+        <translation>Dekoding audio gagal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
         <translation>Sesi mesin berakhir</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>Kesalahan parameter</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
         <source>appid cannot be empty</source>
         <translation>appid tidak boleh kosong</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
         <source>Illegal version</source>
-        <translation>Versi tidak sah</translation>
+        <translation>Versi ilegal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
         <source>permission denied</source>
-        <translation>Izin ditolak</translation>
+        <translation>izin ditolak</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
         <source>Daily flow control exceeds limit</source>
         <translation>Kontrol aliran harian melebihi batas</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
         <source>The request data format is illegal</source>
-        <translation>Format data permintaan tidak sah</translation>
+        <translation>Format data permintaan ilegal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
         <source>base64 decoding failed</source>
-        <translation>Dekode base64 gagal</translation>
+        <translation>dekoding base64 gagal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Parameter yang diperlukan hilang atau parameter tidak sah</translation>
+        <translation>Parameter yang diperlukan hilang atau parameternya ilegal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
         <source>Invalid handle</source>
-        <translation>Handle tidak valid</translation>
+        <translation>Penanganan tidak valid</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
         <source>Reading data timeout</source>
         <translation>Waktu habis saat membaca data</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
         <source>Connection failed, please check the fill in information.</source>
         <translation>Koneksi gagal, harap periksa informasi yang diisi.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">File yang baru ditambahkan memerlukan pra-pemrosesan sebelum dapat digunakan, dan selama proses pemrosesan data, mungkin akan mengonsumsi banyak sumber daya komputasi dan penyimpanan. Pemrosesan data akan berhenti setelah menghapus data.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">Apakah Anda yakin ingin menghapus file basis pengetahuan ini?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Hapus</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Tambah</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">Harap instal plugin model embedding terlebih dahulu</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Manajemen Basis Pengetahuan</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">Di sini, basis pengetahuan Asisten Pengetahuan Pribadi dapat didefinisikan, dan Asisten Pengetahuan Pribadi akan menjawab pertanyaan berdasarkan file yang ditambahkan di bawah ini.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Selesai</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Tidak ada</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">File sudah ada</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">File %1 sudah ada dan tidak dapat ditambahkan lagi. Harap ubah nama file atau hapus file yang sudah ada sebelum menambahkannya lagi</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">Semua file</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">Fitur ini membutuhkan sumber daya perangkat keras yang tinggi, dan konfigurasi referensi benchmark adalah: CPU Intel generasi ke-11 i7 atau lebih tinggi; Memori 16GB atau lebih; Memiliki kartu grafis NVIDIA dan seri 10 atau lebih tinggi adalah pilihan terbaik. Jika konfigurasi terlalu rendah, mungkin ada masalah seperti lag dan jawaban yang tidak akurat.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
-        <translation>Ikuti</translation>
+        <translation>IkutiLangkah</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">Kapasitas basis pengetahuan tidak mencukupi</translation>
+        <translation>Kapasitas basis pengetahuan tidak mencukupi</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">Total kapasitas basis pengetahuan adalah %1M, dengan sisa %2. Jumlah total file yang ditambahkan kali ini adalah %3. Tidak dapat menyelesaikan operasi penambahan ke basis pengetahuan.</translation>
+        <translation>Total kapasitas basis pengetahuan adalah %1M, dengan sisa %2. Total jumlah file yang ditambahkan kali ini adalah %3. Tidak dapat menyelesaikan operasi penambahan ke basis pengetahuan.</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
-        <source>Not enough disk space</source>
-        <translation type="unfinished">Ruang disk tidak cukup</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
-        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">Untuk menyimpan file yang baru ditambahkan, diperlukan setidaknya %1 ruang disk. Ruang yang tersisa saat ini adalah %2. Harap kosongkan cukup ruang hard disk dan coba lagi.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Menambahkan ke basis pengetahuan memerlukan pemasangan plugin model vektorisasi. Silakan pergi ke toko aplikasi untuk mengunduh dan memasang.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Jangan pasang</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Pasang segera</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">Layanan gambar Vincent tidak didukung</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">Model Besar Spark 1.5 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">Model Besar Spark 2.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">Model Besar Spark 3.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-Spark</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">Gemini 1.5 Flash</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">Gemini 1.5 Pro</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">TeksKeGambar(Lokal)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Kustom</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">Model penyebaran pribadi</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">OpenRouter</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">DeepSeek-R1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">DeepSeek</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">model tidak dikenal</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">Lingkungan sistem Anda adalah Linux, dan jalur beranda pengguna adalah</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">Pasang</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">Perbarui</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">Hapus</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">hapus</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">Model lokal</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">Model teks ke gambar</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">Gunakan model lokal untuk menghasilkan gambar. Setelah diaktifkan, Anda dapat memilih model dari daftar model di antarmuka obrolan.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">model ucapan</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">Saat diaktifkan, pengenalan ucapan dan pembacaan ucapan di antarmuka obrolan akan menggunakan model lokal tanpa memerlukan koneksi internet.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">DeepSeek-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">Model besar UOS AI</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">Setelah dipasang, Anda tidak memerlukan koneksi internet untuk menggunakan UOS AI.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">Unduh dari komunitas open-source dengan risiko Anda sendiri. Gunakan di Asisten AI UOS setelah instalasi.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">Plugin Penyemat</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">Setelah model dipasang, Asisten Sistem dan Asisten Pengetahuan Pribadi dapat dijalankan.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">Berhasil terhubung</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">Perjanjian Pengguna</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Perjanjian Pengguna UOS AI</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">Membaca dan menyetujui</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">Pengaturan Proxy</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Pergi ke pengaturan</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurasi Model</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivitas akun gratis berakhir.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">Menambahkan ke basis pengetahuan memerlukan pemasangan plugin model vektorisasi. Silakan pergi ke toko aplikasi untuk mengunduh dan memasang.</translation>
-    </message>
-    <message>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="vanished">Jangan pasang</translation>
-    </message>
-    <message>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="vanished">Pasang segera</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListItem</name>
-    <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">Apakah Anda yakin ingin menghapus model ini?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Dapatkan akun gratis</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Hapus</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Tambah</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">Model online</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Selesai</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Tidak ada</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">APIKey</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">APISecret</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Akun</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Nama Model</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">Alamat API</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Diperlukan, untuk membedakan beberapa model</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domain</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Tidak lebih dari 20 karakter</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Nama akun sudah ada, silakan ubah</translation>
-    </message>
-</context>
-<context>
-    <name>OcrParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
-        <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
-        <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">Sedang memproses data</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">Kesalahan pemrosesan data</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">Kesalahan file, tidak dapat diproses, harap hapus.</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Asisten Sistem UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Asisten Sistem Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Asisten Pengetahuan Pribadi</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">Penulisan AI</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Pemrosesan Teks AI</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">Terjemahan AI</translation>
-    </message>
-    <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">Asisten AI Komprehensif Sistem.</translation>
-    </message>
-    <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">Membantu Anda dengan pertanyaan terkait sistem UOS.</translation>
-    </message>
-    <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">Membantu Anda dengan pertanyaan terkait sistem Deepin.</translation>
-    </message>
-    <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">Tulis Berdasarkan Topik dan Kebutuhan Anda.</translation>
-    </message>
-    <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">Menjawab pertanyaan berdasarkan basis pengetahuan pribadi Anda.</translation>
-    </message>
-    <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">Mampu Menangani Tugas Pemrosesan Teks Seperti Meringkas, Mengoreksi, dan Menulis Ulang.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">Asisten Terjemahan Anda, Menguasai Berbagai Bahasa.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>Cari</translation>
+        <source>Not enough disk space</source>
+        <translation>Ruang disk tidak cukup</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>Jelaskan</translation>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>Untuk menyimpan file yang baru ditambahkan, diperlukan setidaknya %1 ruang disk. Ruang kosong saat ini adalah %2. Harap kosongkan ruang hard disk yang cukup dan coba lagi.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>Ringkasan</translation>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Menambahkan ke basis pengetahuan memerlukan instalasi plugin model vektorisasi. Harap buka toko aplikasi untuk mengunduh dan menginstal.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>Terjemahkan</translation>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Jangan instal</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>Lanjutkan Menulis</translation>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Instal sekarang</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <source>Outline</source>
+        <translation>Garis Besar</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>Perluas</translation>
+        <source>No outline</source>
+        <translation>Tidak ada garis besar</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>Sempurnakan</translation>
+        <source>References</source>
+        <translation>Referensi</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <source>The image file does not exist: %1</source>
+        <translation>File gambar tidak ada: %1</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>Koreksi</translation>
+        <source>OCR did not recognize the text content</source>
+        <translation>OCR tidak mengenali konten teks</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>Sistem AI Butler Cerdas
+Pengantar: Menjadwalkan alat sistem secara cerdas untuk melakukan operasi sistem yang kompleks, mendukung kontrol sistem, manajemen file, manajemen aplikasi, dan protokol jaringan.
+Contoh Perintah: Beri nama semua file di folder baru yang dibuat di desktop sebagai materi proyek dan atur dalam urutan numerik.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Tambahkan ke basis pengetahuan AI</translation>
+        <source>Ask a question...</source>
+        <translation>Tanyakan sesuatu...</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
+        <source>Discord gateway error: %1</source>
+        <translation>Kesalahan gateway Discord: %1</translation>
+    </message>
+    <message>
+        <source>Missing Discord bot token.</source>
+        <translation>Token bot Discord tidak ditemukan.</translation>
+    </message>
+    <message>
+        <source>Generating...</source>
+        <translation>Membuat...</translation>
+    </message>
+    <message>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Pesan placeholder Discord kekurangan id.</translation>
+    </message>
+    <message>
+        <source>Discord gateway URL is empty.</source>
+        <translation>URL gerbang Discord kosong.</translation>
+    </message>
+    <message>
+        <source>Ask UOS AI a question</source>
+        <translation>Tanyakan UOS AI</translation>
+    </message>
+    <message>
+        <source>Question for UOS AI</source>
+        <translation>Pertanyaan untuk UOS AI</translation>
+    </message>
+    <message>
+        <source>Missing Telegram bot token.</source>
+        <translation>Token bot Telegram hilang.</translation>
+    </message>
+    <message>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>Pesan placeholder Telegram kekurangan message_id.</translation>
+    </message>
+    <message>
+        <source>Telegram API request failed.</source>
+        <translation>Permintaan API Telegram gagal.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
+    </message>
+    <message>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
+    </message>
+    <message>
+        <source>UOS AI Trial Account</source>
+        <translation>Akun Uji Coba UOS AI</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>Kustom</translation>
+    </message>
+    <message>
+        <source>Private deployment model</source>
+        <translation>Model penyebaran privat</translation>
+    </message>
+    <message>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
         <source>Cancel</source>
         <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
         <source>Restart immediately</source>
         <translation>Mulai ulang segera</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
         <source>Simplified Chinese</source>
-        <translation>Tionghoa Sederhana</translation>
+        <translation>Tiongkok Sederhana</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
         <source>Traditional Chinese</source>
-        <translation>Tionghoa Tradisional</translation>
+        <translation>Tiongkok Tradisional</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
         <source>Tibetan</source>
-        <translation type="unfinished">Bahasa Tibet</translation>
+        <translation>Tibet</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
         <source>English</source>
-        <translation type="unfinished">Bahasa Inggris</translation>
+        <translation>Inggris</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
         <source>Japanese</source>
         <translation>Jepang</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
         <source>German</source>
-        <translation type="unfinished">Bahasa Jerman</translation>
+        <translation>Jerman</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
         <source>Spanish</source>
-        <translation type="unfinished">Bahasa Spanyol</translation>
+        <translation>Spanyol</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
         <source>French</source>
-        <translation type="unfinished">Bahasa Prancis</translation>
+        <translation>Prancis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
         <source>Italian</source>
-        <translation type="unfinished">Bahasa Italia</translation>
+        <translation>Italia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
         <source>Korean</source>
-        <translation type="unfinished">Bahasa Korea</translation>
+        <translation>Korea</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
         <source>Malay</source>
-        <translation type="unfinished">Bahasa Melayu</translation>
+        <translation>Melayu</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
         <source>Portuguese</source>
-        <translation type="unfinished">Bahasa Portugis</translation>
+        <translation>Portugis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
         <source>Russian</source>
-        <translation type="unfinished">Bahasa Rusia</translation>
+        <translation>Rusia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
         <source>Thai</source>
-        <translation type="unfinished">Bahasa Thailand</translation>
+        <translation>Thai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">Bahasa Vietnam</translation>
+        <translation>Vietnam</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
         <source>Arabic (SA)</source>
         <translation>Arab (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>Sistem AI Asisten Cerdas
-
-Pengantar: Secara cerdas menjadwalkan alat sistem untuk melakukan operasi sistem yang kompleks, mendukung kontrol sistem, manajemen file, manajemen aplikasi, dan protokol jaringan.
-
-Contoh Perintah: Beri nama semua file di folder baru di desktop sebagai bahan proyek dan susun sesuai urutan numerik.</translation>
+        <source>Search</source>
+        <translation>Cari</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <source>Explain</source>
+        <translation>Jelaskan</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <source>Summary</source>
+        <translation>Ringkasan</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <source>Translate</source>
+        <translation>Terjemahkan</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <source>Continue Writing</source>
+        <translation>Lanjutkan Menulis</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">Kustom</translation>
+        <source>Expand</source>
+        <translation>Perluas</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished">Model penyebaran pribadi</translation>
+        <source>Polish</source>
+        <translation>Rapikan</translation>
     </message>
     <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">Bidang &apos;mcpServers&apos; tidak ditemukan.</translation>
+        <source>Correct</source>
+        <translation>Perbaiki</translation>
     </message>
     <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">tidak ada server mcp yang valid.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">bidang url tidak boleh kosong.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">bidang command tidak boleh kosong.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">Bidang &apos;command&apos; atau &apos;url&apos; tidak ditemukan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished">Manajemen Basis Pengetahuan</translation>
+        <source>Add to the AI knowledge base</source>
+        <translation>Tambahkan ke basis pengetahuan AI</translation>
     </message>
 </context>
 <context>
     <name>ResearchTools</name>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
         <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Plugin uos-ai-agent (sekitar %1) harus dipasang untuk menyimpan dokumen.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
         <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Plugin uos-ai-agent harus dipasang untuk menyimpan dokumen.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>Catatan</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
         <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
         <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Tidak dapat terhubung ke server, harap periksa jaringan Anda atau coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Koneksi gagal, harap periksa informasi yang diisi.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">Maaf, sesuai dengan hukum, peraturan, dan kebijakan yang berlaku, hasil tidak ditampilkan untuk sementara waktu.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">Operasi dibatalkan.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Akun gratis Anda telah kedaluwarsa, harap konfigurasi akun model Anda untuk terus menggunakannya.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Kuota akun gratis Anda telah habis, harap konfigurasi akun model Anda untuk terus menggunakannya.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">Kuota akun gratis Anda untuk obrolan telah habis, harap konfigurasi akun model Anda untuk terus menggunakannya.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">Kuota akun gratis Anda untuk text2image telah habis, harap konfigurasi akun model Anda untuk terus menggunakannya.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">Perangkat input tidak valid</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">Perangkat output tidak valid</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Maaf, tidak ditemukan operasi yang sesuai.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">Jumlah total karakter dalam percakapan telah melebihi batas, harap hapus riwayat percakapan dan coba lagi.</translation>
+        <translation>Unduh Sekarang</translation>
     </message>
 </context>
 <context>
     <name>ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">Bidang &apos;mcpServers&apos; tidak ditemukan.</translation>
+        <translation>Bidang &apos;mcpServers&apos; tidak ditemukan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
         <source>no valid mcp server.</source>
-        <translation type="unfinished">tidak ada server mcp yang valid.</translation>
+        <translation>tidak ada server mcp yang valid.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
         <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hanya satu layanan MCP yang dapat diedit dalam satu waktu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
         <source>url field cannot be empty.</source>
-        <translation type="unfinished">bidang url tidak boleh kosong.</translation>
+        <translation>bidang url tidak boleh kosong.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
         <source>command field cannot be empty.</source>
-        <translation type="unfinished">bidang command tidak boleh kosong.</translation>
+        <translation>bidang perintah tidak boleh kosong.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">Bidang &apos;command&apos; atau &apos;url&apos; tidak ditemukan</translation>
+        <translation>Bidang &apos;command&apos; atau &apos;url&apos; tidak ditemukan</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
         <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Asisten Sistem UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Asisten Sistem Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Asisten Pengetahuan Pribadi</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">Penulisan AI</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Pemrosesan Teks AI</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">Terjemahan AI</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI memerlukan akun model AI untuk dikonfigurasi sebelum dapat digunakan. Harap konfigurasi akun model terlebih dahulu.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">Server agen tidak tersedia.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Berhasil Diklaim</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">Akun tidak ditemukan</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">Hanya mendukung akun deepseek</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">Anda sudah berpartisipasi dalam acara ini dan tidak dapat mengklaim hadiah lagi.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">Kesalahan sistem server</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Gagal Mengklaim. Silakan Coba Lagi.</translation>
+        <translation>Format konfigurasi JSON tidak valid.</translation>
     </message>
 </context>
 <context>
     <name>TextParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
         <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat membuka berkas: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
         <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
+        <translation>Konten berkas dalam format biner</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
         <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat membaca berkas: %1</translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Umpan Balik</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Tema Terang</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Tema Gelap</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>Tema Sistem</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>Tema</translation>
     </message>
 </context>
 <context>
     <name>TtsCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>otorisasi appid gagal</translation>
+        <translation>Otorisasi appid gagal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
         <translation>Gagal mendapatkan parameter tertentu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>Nilai parameter tidak valid</translation>
+        <translation>Nilai parameter tidak sah</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
         <translation>Otorisasi mesin tidak cukup</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
         <source>Request text length is illegal</source>
-        <translation>Panjang teks permintaan tidak valid</translation>
+        <translation>Panjang teks permintaan tidak sah</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
         <source>session timeout</source>
-        <translation>sesi berakhir</translation>
+        <translation>sesi berakhir waktu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
         <source>Engine session ended</source>
         <translation>Sesi mesin berakhir</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
         <translation>appid tidak boleh kosong</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
-        <translation>Versi tidak valid</translation>
+        <translation>Versi tidak sah</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
         <translation>izin ditolak</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
         <translation>Kontrol aliran harian melebihi batas</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
-        <translation>Format data permintaan tidak valid</translation>
+        <translation>Format data permintaan tidak sah</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
-        <translation>Dekode base64 gagal</translation>
+        <translation>dekoding base64 gagal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Parameter yang diperlukan hilang atau parameter tidak valid</translation>
+        <translation>Parameter yang diperlukan hilang atau parameter tidak sah</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
         <source>Reading data timeout</source>
         <translation>Waktu habis saat membaca data</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
         <source>network anomaly</source>
         <translation>anomali jaringan</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
         <translation>Koneksi gagal, harap periksa informasi yang diisi.</translation>
     </message>
 </context>
 <context>
-    <name>TtsCompositeWidget</name>
-    <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">Teks yang Anda pilih telah melebihi batas 5000 karakter.</translation>
-    </message>
-</context>
-<context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
-        <translation>Saya belum mengimplementasikan fitur ini.</translation>
+        <translation>Saya belum menerapkan fitur ini.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>layanan tidak tersedia!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Parameter tidak valid!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
-        <translation>Aplikasi ini tidak dapat ditemukan!</translation>
+        <translation>Aplikasi ini tidak ditemukan!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
         <translation>Gagal memulai aplikasi!</translation>
     </message>
 </context>
 <context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">Kecerahan sudah maksimum dan tidak dapat ditingkatkan lagi.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">Kecerahan sudah minimum dan tidak dapat dikurangi lagi.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">Memori sistem Anda adalah %0.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">Antarmuka pengaturan bahasa telah dibuka. Harap atur di antarmuka ini.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">Mode saat ini sudah dalam mode %1.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">Tidak dapat menutup karena mode saat ini %1 tidak sesuai dengan mode target.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">Mode keseimbangan tidak dapat dimatikan.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">Layar kunci telah dibuka untuk Anda</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">Pengambilan tangkapan layar atau perekaman telah selesai</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">Hanya satu layar, tidak dapat mengubah mode layar.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">Ini sama dengan mode tampilan saat ini. Silakan coba lagi.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">Hanya satu layar, tidak dapat mengubah layar.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">Perintah Anda telah dikeluarkan.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Perjanjian Pengguna UOS AI</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Saya mengkonfirmasi bahwa saya berusia di atas 18 tahun. Saya mengakui dan setuju bahwa konten yang saya kirim dan terima melalui Aplikasi adalah pertukaran data langsung dengan penyedia layanan model besar dan tidak ada hubungannya dengan Perusahaan.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Saya setuju untuk berpartisipasi dalam rencana pengalaman pengguna Aplikasi, dan mengizinkan perusahaan Anda untuk mengumpulkan konten yang saya kirim saat menggunakan Aplikasi, waktu pengiriman, jenis model besar yang diminta, aplikasi spesifik dan apakah teks berhasil menghasilkan gambar, untuk meningkatkan kualitas layanan dan meningkatkan pengalaman operasi. (Jika Anda menolak untuk memberikan informasi di atas, itu tidak akan memengaruhi penggunaan normal Anda terhadap Aplikasi.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Kesalahan internal server</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">Layanan sementara tidak tersedia</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">API yang dipanggil tidak ada. Silakan periksa URL permintaan dan coba lagi. Biasanya, ada karakter non-Inggris dalam URL, seperti &quot;-&quot;. Anda dapat memasukkannya secara manual dan mencoba lagi.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">Tidak ada izin pemanggilan antarmuka, antarmuka Qianfan yang relevan tidak dicentang saat membuat aplikasi</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">Kesalahan Pemanggilan Model: Batas permintaan model telah tercapai, atau model sedang offline. Saran: Tambahkan kembali model, atau hubungi layanan pelanggan penyedia layanan model besar untuk menyelesaikan masalah ini.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">Gagal mendapatkan token</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">Autentikasi IAM gagal</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">Aplikasi tidak ada atau gagal dibuat</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">Jumlah permintaan per hari melebihi batas</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">Total jumlah permintaan melebihi batas</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">Parameter access_token tidak valid</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">access_token tidak valid</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">access token kedaluwarsa</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">Kesalahan layanan, template tidak ada</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">Terjadi kesalahan sistem, silakan coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">Server basis pengetahuan tidak dapat diakses</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">Pengecualian unduhan data basis pengetahuan</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">Kata prompt terlalu panjang</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">Model tidak ada</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">Kesalahan parameter permintaan</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">Pemrosesan gambar gagal</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">Kesalahan penanganan layanan</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">Kesalahan internal layanan</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">Format parameter input tidak benar, seperti parameter yang diperlukan tidak ada.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">Badan parameter input tidak dalam format JSON standar</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">Verifikasi parameter tidak sah</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">Kesalahan kontrol izin</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">Nama api layanan model yang disesuaikan tidak ada</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">Kesalahan internal layanan, silakan coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">Metode HTTP tidak sah, saat ini hanya mendukung permintaan POST</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">Konten yang diminta melebihi batas internal model besar</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">kesalahan internal</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">Layanan model diagram Vincent waktu habis</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">Ada masalah keamanan dengan prompt dan negative_prompt</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">Ada masalah keamanan dengan gambar keluaran</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">Kesalahan parameter</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">Tidak ada akses</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">Deskripsi gambar melebihi batas 256 karakter</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Selamat datang di UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, asisten pintar Anda, dirancang untuk meningkatkan produktivitas dan memberikan pengalaman kerja berkualitas tinggi.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Dapatkan akun percobaan gratis</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Tambahkan Model</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">Mulai menggunakan</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Saya mengkonfirmasi bahwa saya berusia di atas 18 tahun. Saya mengakui dan menyetujui &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Perjanjian Pengguna UOS AI&quot;&lt;/a&gt;, dan konten yang saya kirim dan terima melalui Aplikasi adalah pertukaran data langsung dengan penyedia layanan model besar dan tidak ada hubungannya dengan Perusahaan.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Menerima akun menunjukkan bahwa Anda memahami dan menyetujui syarat acara, &lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detail Acara&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Akun Percobaan</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Gagal menyimpan, silakan coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Jumlah penggunaan dan durasi akun percobaan terbatas, harap segera konfigurasi akun model pribadi Anda! Lihat detail acara untuk informasi lebih lanjut.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Dukungan bahasa Inggris untuk akun percobaan belum memuaskan. Jumlah penggunaan dan durasi akun percobaan terbatas. Harap segera konfigurasikan akun model pribadi Anda!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Mulai percobaan</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivitas akun gratis berakhir.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Tidak dapat terhubung ke server, harap periksa jaringan Anda atau coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Saya setuju untuk berpartisipasi dalam rencana pengalaman pengguna Aplikasi, dan mengizinkan perusahaan Anda untuk mengumpulkan konten yang saya kirim saat menggunakan Aplikasi, waktu pengiriman, jenis model besar yang diminta, aplikasi spesifik dan apakah teks berhasil menghasilkan gambar, untuk meningkatkan kualitas layanan dan pengalaman operasi. (Jika Anda menolak memberikan informasi di atas, itu tidak akan mempengaruhi penggunaan normal Aplikasi.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-</context>
-<context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>Catatan: Sebagian konten dokumen mungkin dibuat oleh AI</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Referensi</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>File Word (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>File PDF (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>File Markdown (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">Kesalahan saat meningkatkan ke WebSocket</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">Kesalahan membaca pesan pengguna melalui WebSocket</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">Kesalahan mengirim pesan ke pengguna melalui WebSocket</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">Format pesan pengguna tidak benar</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">Kesalahan skema untuk data pengguna</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">Nilai parameter pengguna salah</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">Kesalahan konkurensi pengguna: Pengguna saat ini sudah terhubung, dan pengguna yang sama tidak dapat terhubung ke beberapa tempat secara bersamaan.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">Lalu lintas pengguna terbatas: Layanan sedang memproses masalah saat ini pengguna dan perlu menunggu pemrosesan selesai sebelum mengirim permintaan baru. (Anda harus menunggu balasan lengkap dari model sebelum mengirim pertanyaan berikutnya)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">Kapasitas layanan tidak mencukupi, harap hubungi staf</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">Gagal membangun koneksi dengan mesin</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">Kesalahan menerima data mesin</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">Kesalahan mengirim data ke mesin</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">Kesalahan internal mesin</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">Konten input tidak lolos peninjauan dan diduga melanggar aturan. Harap sesuaikan kembali konten input.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">Konten output melibatkan informasi sensitif, peninjauan gagal, dan hasil selanjutnya tidak dapat ditampilkan kepada pengguna.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">appid ada dalam daftar hitam</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Kesalahan kelas otorisasi Appid. Contoh: fungsi ini tidak diaktifkan, versi yang sesuai tidak diaktifkan, token tidak mencukupi, konkurensi melebihi otorisasi, dll.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">Gagal membersihkan riwayat</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">Menunjukkan bahwa konten sesi ini cenderung melibatkan informasi ilegal; disarankan agar pengembang memberikan peringatan kepada pengguna setelah menerima kode kesalahan ini untuk memasukkan informasi yang melibatkan informasi ilegal.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">Layanan sedang sibuk, harap coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">Parameter mesin permintaan tidak normal, dan pemeriksaan skema mesin gagal.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">Kelainan jaringan mesin</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">Jumlah token melebihi batas atas. Jumlah kata dalam riwayat percakapan dan pertanyaan terlalu besar dan perlu disederhanakan.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">Kesalahan otorisasi: appId tidak memiliki otorisasi untuk fungsi terkait atau volume bisnis melebihi batas</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">Kesalahan otorisasi: Batas kontrol aliran harian terlampaui. Melebihi jumlah kunjungan maksimum untuk hari itu</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Saat ini terlalu banyak pengunjung, harap coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Koneksi gagal, harap periksa informasi yang diisi.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Kesalahan internal server</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">Autentikasi gagal</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">Parameter Autentikasi tidak diterima di header dan autentikasi tidak dapat dilakukan.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">Token Autentikasi tidak sah. Harap konfirmasi bahwa Token Autentikasi dikirim dengan benar.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">Token Autentikasi telah kedaluwarsa, harap buat ulang/dapatkan kembali</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">Verifikasi melalui Token Autentikasi gagal</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">Membaca dan menulis akun</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">Akun Anda saat ini tidak aktif. Harap periksa informasi akun</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">Akun Anda tidak ada</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">Akun Anda telah dikunci, silakan hubungi layanan pelanggan untuk membukanya</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">Akun Anda memiliki tunggakan, silakan isi ulang dan coba lagi</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">Tidak dapat mengakses akun Anda dengan sukses, silakan coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">Kesalahan panggilan API</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">Parameter panggilan API tidak benar, silakan periksa dokumentasi</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">Model tidak ada, silakan periksa kode model</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">Model saat ini tidak mendukung metode panggilan ${method}</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">Parameter ${field} tidak diterima secara normal</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">Parameter ${field} tidak sah. Silakan periksa dokumentasi</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} dan ${field2} tidak dapat diatur bersamaan, silakan periksa dokumentasi</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">Anda tidak memiliki akses ke ${API_name}</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">API ${API_name} sedang offline</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">API ${API_name} tidak ada</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">Kesalahan proses panggilan API</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">Anda telah meminta: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">Saat mendapatkan hasil permintaan asinkron, silakan gunakan task_id</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">Tugas: ${task_id} tidak ada</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">Kesalahan jaringan, id kesalahan: ${error_id}, silakan hubungi layanan pelanggan</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">Kesalahan menjalankan API</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">Prompt sangat panjang</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">Panggilan API diblokir oleh kebijakan</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">Sistem telah mendeteksi bahwa input atau konten yang dihasilkan mungkin mengandung konten yang tidak aman atau sensitif. Harap hindari memasukkan prompt yang dapat dengan mudah menghasilkan konten sensitif. Terima kasih atas kerja samanya.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Saat ini terlalu banyak pengunjung, silakan coba lagi nanti.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">API ini telah mencapai batas panggilan untuk hari ini. Jika Anda membutuhkan lebih, silakan hubungi layanan pelanggan untuk membeli.</translation>
+        <translation>Simpan Artikel</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">Terjemahkan teks berikut ke dalam bahasa Inggris untuk saya.</translation>
+        <translation>Terjemahkan teks berikut ke dalam Bahasa Inggris untuk saya.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">Terjemahkan dokumen berikut ke dalam bahasa Tionghoa.</translation>
+        <translation>Terjemahkan dokumen berikut ke dalam Bahasa Mandarin.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apa arti kata &quot;Agent&quot; dalam industri AI?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">Silakan terjemahkan konten berikut ke dalam bahasa Tionghoa. Persyaratan: Akurat dalam makna, formal dan profesional dalam bahasa.</translation>
+        <translation>Harap terjemahkan konten berikut ke dalam Bahasa Mandarin. Persyaratan: Akurat dalam makna, bahasa formal dan profesional.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">Apa saja cara santai untuk menyapa teman dalam bahasa Inggris?</translation>
+        <translation>Apa saja cara percakapan untuk menyapa teman dalam Bahasa Inggris?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">Terjemahkan teks Tionghoa klasik berikut ke dalam Tionghoa modern.</translation>
+        <translation>Terjemahkan teks Bahasa Mandarin klasik berikut ke dalam Bahasa Mandarin modern.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>Hari ini </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>Kemarin </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished">UOS AI adalah asisten pintar desktop, asisten pribadi Anda! Anda dapat berkomunikasi dengannya menggunakan teks atau suara, dan dapat membantu menjawab pertanyaan, memberikan informasi, serta menghasilkan gambar berdasarkan deskripsi Anda.</translation>
+        <translation>UOS AI adalah asisten cerdas desktop, asisten pribadi Anda! Anda dapat berkomunikasi dengannya menggunakan teks atau suara, dan ia dapat membantu menjawab pertanyaan, memberikan informasi, dan membuat gambar berdasarkan deskripsi Anda.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">Informasi Pengarsipan</translation>
+        <translation>Informasi Pengarsipan</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">Tambahkan model</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">Kunci API</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Diperlukan, silakan masukkan</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Akun</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Diperlukan, untuk membedakan beberapa model</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Nama Model</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Opsional</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domain</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Untuk menguji ketersediaan model, sistem mengirim informasi uji ke model besar, yang akan mengonsumsi sejumlah kecil token.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Batal</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Konfirmasi</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Tidak lebih dari 20 karakter</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">LLM ini sudah ada, jangan tambahkan lagi.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Gagal menyimpan, coba lagi nanti</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Nama akun sudah ada, silakan ubah</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Untuk pengaturan proxy, silakan buka pengaturan proxy sistem</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Buka pengaturan</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI memerlukan akun model AI untuk dikonfigurasi sebelum dapat digunakan. Silakan konfigurasi akun model terlebih dahulu.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
-        <translation>Tambahkan Skill</translation>
+        <translation>Tambah Keterampilan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
-        <translation>Nama Skill</translation>
+        <translation>Nama Keterampilan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
-        <translation>Masukkan nama skill</translation>
+        <translation>Masukkan nama keterampilan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
-        <translation>Perintah Skill</translation>
+        <translation>Perintah Keterampilan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
-        <translation>mewakili teks yang dipilih oleh pemilihan kata.</translation>
+        <translation>mewakili teks yang dipilih melalui seleksi kata.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Instruksi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Simpan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
-        <translation>Nama skill tidak boleh kosong</translation>
+        <translation>Nama keterampilan tidak boleh kosong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>Melebihi batas karakter</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
-        <translation>Nama skill sudah ada.</translation>
+        <translation>Nama keterampilan sudah ada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Instruksi Perintah</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>Jika ingin menerjemahkan teks yang dipilih &quot;Hello&quot;, seperti di atas, Anda dapat memasukkan perintah: Terjemahkan {selection} ke dalam bahasa Inggris.</translation>
+        <translation>Jika Anda ingin menerjemahkan teks yang dipilih &quot;Hello&quot;, seperti yang ditampilkan di atas, Anda dapat memasukkan perintah: Terjemahkan {selection} ke dalam bahasa Inggris.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Tips Lanjutan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>Semakin spesifik perintah, semakin akurat konten yang dihasilkan. Contoh: • Buat garis besar PPT untuk {selection} dengan 3 bab dan 10 poin penting. • Sempurnakan {selection} menjadi teks rekrutmen dalam 100 kata, soroti kerja tim.</translation>
+        <translation>Semakin spesifik perintahnya, semakin akurat konten yang dihasilkan. Contoh:
+• Buat kerangka PPT untuk {selection} dengan 3 bab dan 10 poin kunci.
+• Sempurnakan {selection} menjadi naskah rekrutmen dalam 100 kata, dengan menonjolkan kerja tim.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
-        <translation>Mengklik label masih bisa memasukkannya ke dalam bidang input.</translation>
+        <translation>Mengklik label tetap dapat memasukkannya ke dalam kolom input.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -4350,540 +712,408 @@ Contoh Perintah: Beri nama semua file di folder baru di desktop sebagai bahan pr
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
-        <translation>Bilah AI DDE Shell</translation>
+        <translation>Bilah AI Shell DDE</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
-        <translation>Seret file dengan cepat</translation>
+        <translation>Seret berkas dengan cepat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
-        <translation>Seret file ke pita AI untuk pemrosesan cerdas</translation>
+        <translation>Seret berkas ke pita AI untuk pemrosesan cerdas</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">Bahasa Mandarin Sederhana</translation>
+        <translation>Tiongkok Sederhana</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">Bahasa Mandarin Tradisional</translation>
+        <translation>Tiongkok Tradisional</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">Bahasa Tibet</translation>
+        <translation>Tibet</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">Bahasa Inggris</translation>
+        <translation>Inggris</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">Bahasa Jepang</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">Jepang</translation>
+        <translation>Jepang</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">Bahasa Jerman</translation>
+        <translation>Jerman</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">Bahasa Spanyol</translation>
+        <translation>Spanyol</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">Bahasa Prancis</translation>
+        <translation>Prancis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">Bahasa Italia</translation>
+        <translation>Italia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">Bahasa Korea</translation>
+        <translation>Korea</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">Bahasa Melayu</translation>
+        <translation>Melayu</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">Bahasa Portugis</translation>
+        <translation>Portugis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">Bahasa Rusia</translation>
+        <translation>Rusia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">Bahasa Thailand</translation>
+        <translation>Thailand</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">Bahasa Vietnam</translation>
+        <translation>Vietnam</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">tipe</translation>
+        <translation>ketik</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
-        <source>Read Aloud</source>
-        <translation type="unfinished">Baca Nyaring</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished">Tempel ke Teks</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished">Salin</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">Lanjutkan Dialog</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">Deteksi Otomatis</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished">Cari</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished">Jelaskan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished">Ringkasan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished">Terjemahkan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">Lanjutkan menulis</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished">Perluas</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished">Tambahkan ke basis pengetahuan AI</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">Hasil terjemahan dibatasi oleh kemampuan model. Jika tidak puas dengan terjemahan, silakan beralih ke model lain di halaman Beranda UOS AI.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">Oke</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">Terjemahkan teks ini ke dalam %1 dan berikan hasil yang jelas langsung.
-teks：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">Tidak dapat diklik</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">Perangkat audio tidak terdeteksi, silakan periksa dan coba lagi.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">Oke</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">Jelaskan teks ini dengan bahasa sederhana. Berikan hasil yang jelas tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Ringkas teks ini dan berikan hasil yang jelas langsung tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Lanjutkan teks ini dengan tepat. Tidak perlu banyak kata. Berikan hasil yang jelas tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Kembangkan teks ini dengan tepat. Tidak perlu teks yang sangat panjang. Berikan hasil yang jelas tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Periksa apakah ada kesalahan ketik dalam teks ini. Jika ada, tunjukkan lokasi kesalahannya. Berikan hasil yang jelas langsung tanpa konten berlebihan.
-
-teks：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">Perbaiki bagian ini untuk saya dan berikan hasilnya tanpa konten tambahan.
-
-teks:</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished"> &quot;%1&quot; </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">Model saat ini: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished">Saat ini tidak ada model</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished">Pergi ke konfigurasi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">Tidak ada teks yang dikenali.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished">Konten yang ditambahkan harus lebih dari 10 kata</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>Masukkan apa yang ingin Anda buat (tekan Enter untuk menghasilkan/Esc untuk keluar)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Bantu saya menulis esai tentang topik [%1] dengan [struktur jelas dan konten yang kaya].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>Kecerdasan Buatan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Bantu saya menulis kerangka tentang topik [%1], yang akan digunakan untuk [pembuatan PPT].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Bantu saya menulis pemberitahuan tentang [%1], penerima adalah [Semua Karyawan] dan pengirim adalah [Departemen Administrasi].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>Libur Hari Nasional</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Bantu saya menulis laporan penelitian tentang [%1], setidaknya harus mencakup [deskripsi status, analisis masalah, tindakan penanggulangan dan saran, kesimpulan penelitian].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Bantu saya menulis pidato tentang topik [%1] untuk [Pimpinan Perusahaan], membutuhkan [struktur jelas dan bahasa yang hidup].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Bantu saya menulis ringkasan pekerjaan terbaru saya, termasuk [%1] dan [hasil], membutuhkan nada [formal].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>konten pekerjaan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Bantu saya menulis tweet publik tentang topik [%1], membutuhkan [struktur jelas] dan nada [santai].</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurasi Model</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>Pergi ke konfigurasi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>Penulis AI</translation>
+        <source>Read Aloud</source>
+        <translation>Baca Suara</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>Artikel</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>Kerangka</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>Pemberitahuan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>Laporan Penelitian</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>Pidato</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>Ringkasan Pekerjaan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>Tweet</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
         <translation>Tempel ke Teks</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Hasilkan Ulang</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Salin</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>Lanjutkan Dialog</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Konten yang dihasilkan oleh AI hanya sebagai referensi, harap perhatikan keakuratan informasi.</translation>
+        <translation>Konten yang dihasilkan oleh AI hanya untuk referensi, harap perhatikan keakuratan informasinya.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>Fungsi dapat digunakan hanya setelah merestart metode input. Tutorialnya adalah sebagai berikut:
-
-1. Klik kanan pada ikon metode input di taskbar.
-
-2. Klik &quot;Restart&quot;.</translation>
+        <source>Automatic Detection</source>
+        <translation>Deteksi Otomatis</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>Cari</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Jelaskan</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Ringkasan</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Terjemahkan</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>Lanjutkan menulis</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Perluas</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Koreksi</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>Semirip</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Tambahkan ke basis pengetahuan AI</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>Hasil terjemahan dibatasi oleh kemampuan model. Jika Anda tidak puas dengan terjemahan, silakan beralih ke model lain di halaman Beranda UOS AI.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>Oke</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>Terjemahkan paragraf ini ke dalam %1 dan berikan saya hasil yang jelas secara langsung.
+teks：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>Tidak dapat diklik</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>Perangkat audio tidak terdeteksi, harap periksa dan coba lagi.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Oke</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
-        <source>Copied</source>
-        <translation>Disalin</translation>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Fungsi ini hanya dapat digunakan setelah merestart metode input. Tutorialnya sebagai berikut:
+1. Klik kanan pada ikon metode input di bilah tugas.
+2. Klik &quot;Restart&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
-        <source>Current model: </source>
-        <translation>Model saat ini: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
-        <source>Currently no model</source>
-        <translation>Saat ini tidak ada model</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
-        <source>Modify the content, change the tone…</source>
-        <translation>Ubah konten, ubah nada…</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
-        <translation>Pengisian gagal</translation>
+        <translation>Isi gagal</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>Tidak ada kotak input yang dipilih, silakan pilih kotak input dan isi ulang.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
+        <source>Added</source>
+        <translation>Ditambahkan</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Disalin</translation>
+    </message>
+    <message>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>Jelaskan bagian ini dengan bahasa yang sederhana. Berikan saya hasil yang jelas tanpa konten yang berlebihan.
+teks：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Ringkas bagian ini dan berikan saya hasil yang jelas secara langsung tanpa konten berlebihan lainnya.
+teks：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Lanjutkan bagian ini dengan tepat. Tidak perlu banyak kata. Berikan saya hasil yang jelas tanpa konten berlebihan lainnya.
+teks：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Kembangkan bagian ini dengan tepat. Tidak perlu teks yang terlalu panjang. Berikan saya hasil yang jelas tanpa konten berlebihan lainnya.
+teks：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Periksa apakah ada kesalahan ketik pada bagian ini. Jika ada, tunjukkan lokasi kesalahannya. Berikan saya hasil yang jelas secara langsung tanpa konten berlebihan lainnya.
+teks：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>Poles bagian ini untuk saya dan berikan saja hasilnya tanpa konten tambahan.
+teks：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Model saat ini: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Saat ini tidak ada model</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Pergi ke konfigurasi  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>Klaim Kredit Gratis  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>Tidak ada teks yang dikenali.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Konten yang ditambahkan harus lebih dari 10 kata</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>Penulis AI</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>Masukkan apa yang ingin Anda buat (tekan Enter untuk membuat/Esc untuk keluar)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>Artikel</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Kerangka</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>Pemberitahuan</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>Laporan Penelitian</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>Pidato</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>Ringkasan Kerja</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>Kicauan</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>Tempel ke Teks</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Buat Ulang</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Konten yang dihasilkan oleh AI hanya untuk referensi, harap perhatikan keakuratan informasinya.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>Bantu saya menulis esai dengan topik [%1] dengan [struktur yang jelas dan konten yang kaya].</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>Kecerdasan Buatan</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>Bantu saya menulis kerangka dengan topik [%1], yang akan digunakan untuk [pembuatan PPT].</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>Bantu saya menulis pemberitahuan tentang [%1], penerimanya [Semua Karyawan] dan pengirimnya [Departemen Administrasi].</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>Hari Libur Nasional</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>Bantu saya menulis laporan penelitian tentang [%1], setidaknya perlu menyertakan [deskripsi status, analisis masalah, tindakan balasan dan saran, kesimpulan penelitian].</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>Bantu saya menulis pidato dengan topik [%1] untuk [Pemimpin Perusahaan], mengharuskan [struktur yang jelas dan bahasa yang hidup].</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>Bantu saya menulis ringkasan pekerjaan terbaru saya, termasuk [%1] dan [hasil], dengan membutuhkan nada [formal].</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>konten kerja</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>Bantu saya menulis kicauan publik dengan topik [%1], membutuhkan [struktur yang jelas] dan nada [santai].</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Fungsi ini hanya dapat digunakan setelah memulai ulang metode input. Tutorialnya sebagai berikut:
+1. Klik kanan pada ikon metode input di bilah tugas.
+2. Klik &quot;Mulai Ulang&quot;.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>Oke</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Disalin</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Model saat ini: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Saat ini tidak ada model</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Pergi ke konfigurasi  </translation>
+    </message>
+    <message>
+        <source>Modify the content, change the tone…</source>
+        <translation>Ubah konten, ganti nada...</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>Pengisian gagal</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>Tidak ada kotak input yang dipilih, silakan pilih kotak input dan isi ulang.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <translation>Oke</translation>
     </message>
@@ -4891,162 +1121,130 @@ teks:</translation>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>Manajer Berkas</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>Surel</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>Kalender</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
         <translation>Peramban Web</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
-        <translation>Editor Teks</translation>
+        <translation>Penyunting Teks</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
         <translation>Tangkapan Layar</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
         <translation>Catatan Suara</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
         <translation>Penampil Dokumen</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
         <translation>Toko Aplikasi</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
-        <translation>Panduan</translation>
+        <translation>Manual</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
         <translation>WPS Writer</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
         <translation>WPS Spreadsheets</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
         <translation>WPS Presentation</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
         <translation>Foxit PDF Editor</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo Document 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
         <translation>Yozo Office 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
         <translation>Yozo Presentation 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
         <translation>Yozo Sheet 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
         <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
         <translation>Wechat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
         <translation>WXWork</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -5054,590 +1252,476 @@ teks:</translation>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished">UOS AI adalah asisten pintar desktop, asisten pribadi Anda! Anda dapat berkomunikasi dengannya menggunakan teks atau suara, dan dapat membantu menjawab pertanyaan, memberikan informasi, serta menghasilkan gambar berdasarkan deskripsi Anda.</translation>
+        <translation>UOS AI adalah asisten cerdas desktop, asisten pribadi Anda! Anda dapat berkomunikasi dengannya menggunakan teks atau suara, dan ia dapat membantu menjawab pertanyaan, menyediakan informasi, dan menghasilkan gambar berdasarkan deskripsi Anda.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI Ikuti/Tulis</translation>
+        <translation>UOS AI FollowAlong/Write</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanpa Judul</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Halo, saya UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">Penulisan AI</translation>
+        <translation>Tulisan AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspirasi tak terbatas, menulis tanpa cemas</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan masukkan topik dan persyaratan dokumen, dan UOS AI akan membantu Anda menyelesaikan pembuatannya.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">Terjemahan AI</translation>
+        <translation>Terjemahan AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">Asisten Terjemahan Anda, Menguasai Berbagai Bahasa.</translation>
+        <translation>Asisten Terjemahan Anda, Menguasai Beberapa Bahasa.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan masukkan konten yang akan diterjemahkan dan tentukan bahasa target; bahasa target bawaan adalah Bahasa Mandarin.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Asisten Pengetahuan Pribadi</translation>
+        <source>AI Knowledge Base</source>
+        <translation>Basis Pengetahuan AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">Menjawab pertanyaan berdasarkan basis pengetahuan pribadi Anda.</translation>
+        <translation>Menjawab pertanyaan berdasarkan basis pengetahuan pribadi Anda.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajukan pertanyaan berdasarkan basis pengetahuan.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">Server MCP</translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP&amp;Keterampilan</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>MCP &amp; Keterampilan umum bawaan, mendukung impor alat kustom, pilih alat secara bebas untuk percakapan.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>Silakan masukkan perintah MCP&amp;Keterampilan.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>Tidak ada mikrofon terdeteksi</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>Tidak ada speaker terdeteksi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Uji</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>Perutean Cerdas</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencarian Online</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">Kustom</translation>
+        <translation>Kustom</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyebaran pribadi</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Pengaturan Integrasi Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>Pengaturan Integrasi DingTalk</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>Pengaturan Integrasi Telegram</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>Pengaturan Integrasi Discord</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>Pengaturan Integrasi QQ</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>Wajib</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>Opsional</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Konfirmasi</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>Panduan Konfigurasi &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>Integrasi IM</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>Integrasi IM Pihak Ketiga</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>Aktifkan Layanan Penerusan Pesan</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Setelah diaktifkan, UOS AI akan menerima pesan dari bot Lark, DingTalk, QQ, Telegram, dan Discord yang dikonfigurasi. Anda kemudian dapat berinteraksi langsung dengan UOS AI di klien IM Anda.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Setelah diaktifkan, UOS AI akan menerima pesan dari bot Lark, DingTalk, dan QQ yang dikonfigurasi. Anda kemudian dapat berinteraksi langsung dengan UOS AI di klien IM Anda.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
-        <translation>Masukkan ke dalam kolom input</translation>
+        <translation>Sisipkan ke dalam kolom input</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">Kesalahan</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">Percakapan Baru</translation>
+        <translation>Percakapan Baru</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">Buat Jadwal</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">Jadwalkan rapat dengan Departemen Pemasaran dari jam 2 siang hingga jam 5 sore.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Maaf, tidak ditemukan operasi yang sesuai.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">Harap parsing parameter yang sesuai dari konten input untuk cocok dengan templat jadwal dalam format JSON berikut, dan keluarkan hanya konten JSON, tanpa informasi lainnya.
-
-Format templat jadwal:
-
-json
-{&quot;subject&quot;: &quot;Subjek&quot;, &quot;startTime&quot;: &quot;Waktu Mulai Jadwal, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Waktu Selesai Jadwal, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-
-Waktu saat ini: %2</translation>
+        <translation>Null</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
-        <translation>Tambahkan Server MCP</translation>
+        <translation>Tambah Server MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>Edit Server MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>Konfigurasi JSON:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
-        <translation>Harap tempel kode konfigurasi JSON MCP ke dalam kotak input.</translation>
+        <translation>Silakan tempel kode konfigurasi JSON MCP ke dalam kotak input.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
-        <translation>Deskripsikan</translation>
+        <translation>Deskripsi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>Jelaskan fungsi server MCP untuk memudahkan alat pencarian cepat</translation>
+        <translation>Deskripsikan fungsi server MCP untuk memfasilitasi alat pencarian cepat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan masukkan ID model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Uji</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan masukkan nama model</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
-        <translation>Perangkat perlu di-restart sebelum fungsi ini dapat digunakan sepenuhnya.</translation>
+        <translation>Perangkat perlu dimulai ulang sebelum fungsi ini dapat digunakan sepenuhnya.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengumpulkan dan menganalisis data</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengumpulan dan analisis data selesai</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Penelitian selesai. %1 referensi dikumpulkan:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>Pencarian berhasil</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>ERROR: Tidak ada informasi yang ditemukan!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>Tidak ada dokumen relevan yang ditemukan</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">Setelah menerima hadiah, model Baidu asli dan model iFlytek akan diganti dengan DeepSeek</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">Kumpulkan secara manual nanti</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Akun Percobaan</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Dapatkan akun gratis</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">Coba lagi</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">Masuk ke UOS AI</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">Menerima...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">Gunakan segera</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">Memeriksa status akun...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">Klaim akun DeepSeek gagal!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">Harap periksa jaringan dan coba lagi nanti！</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">Akun DeepSeek berhasil diklaim!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">Harap periksa jaringan dan coba lagi atau klaim secara manual di pengaturan UOS AI nanti</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI telah sepenuhnya terintegrasi ke dalam DeepSeek</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">Aktivitas akun gratis telah berakhir.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">Datang dan coba sekarang!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">Datang dan klaim akun Anda!</translation>
+        <translation>Basis Pengetahuan Lokal</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
-        <translation>Tindakan Pencegahan</translation>
+        <translation>Peringatan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>Model lokal DeepSeek memiliki persyaratan tertentu untuk konfigurasi komputer. Jika konfigurasi lebih rendah dari yang direkomendasikan, pengalaman akan terpengaruh.</translation>
+        <translation>Model lokal DeepSeek memiliki persyaratan tertentu untuk konfigurasi komputer. Jika konfigurasi lebih rendah dari yang direkomendasikan, pengalaman pengguna akan terpengaruh.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
-        <translation>Konfigurasi yang Direkomendasikan</translation>
+        <translation>Konfigurasi yang direkomendasikan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation type="unfinished">&lt;b&gt;推荐配置&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU：&lt;/b&gt;高性能多核CPU（如Intel i5/i7或AMD Ryzen 5/7系列），主频3.0 GHz以上&lt;br&gt;&lt;b&gt;GPU：&lt;/b&gt;显存4GB以上&lt;br&gt;&lt;b&gt;内存：&lt;/b&gt;8GB及以上&lt;br&gt;&lt;b&gt;硬盘：&lt;/b&gt;固态硬盘（SSD）并预留5GB以上空间</translation>
+        <translation>&lt;b&gt;Konfigurasi yang Direkomendasikan&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;CPU multi-core berkinerja tinggi (seperti Intel i5/i7 atau AMD Ryzen 5/7 seri), dengan kecepatan di atas 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;Dengan memori video di atas 4GB.&lt;br&gt;&lt;b&gt;Memori: &lt;/b&gt;8GB atau lebih.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) dengan ruang kosong minimal 5GB.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
         <translation>Instal nanti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
         <translation>Konfirmasi instalasi</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (tahun-bulan-hari jam:menit minggu)</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
         <translation>Sembunyikan FollowAlong di aplikasi berikut</translation>
     </message>
@@ -5645,245 +1729,208 @@ Waktu saat ini: %2</translation>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
         <translation>Mengaktifkan Fitur Server MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>Beberapa fitur server MCP pihak ketiga mengandung risiko tertentu. Harap gunakan dengan hati-hati. Jika Anda mengaktifkan layanan ini, alat bawaan akan mendeteksi dan mengunduh dependensi yang diperlukan secara otomatis. Proses unduhan ini akan menimbulkan biaya data. Harap perhatikan risiko ini dan lanjutkan dengan hati-hati.</translation>
+        <translation>Beberapa fitur server MCP pihak ketiga memiliki risiko tertentu. Harap gunakan dengan hati-hati. Jika Anda mengaktifkan layanan ini, alat bawaan akan mendeteksi dan secara otomatis mengunduh dependensi yang diperlukan. Proses pengunduhan ini akan memakan kuota data. Harap sadari akan risiko ini dan lanjutkan dengan hati-hati.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
-        <translation>Saya telah memahami dan menyetujui untuk menggunakan layanan ini</translation>
+        <translation>Saya telah mengerti dan setuju untuk menggunakan layanan ini</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
-        <translation type="unfinished">Konfirmasi</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">File yang didukung</translation>
+        <translation>Konfirmasi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">File yang didukung</translation>
+        <translation>File yang didukung</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>Perbarui UOS Screen Recorder ke versi 6.6 atau yang lebih baru dan mulai ulang komputer Anda untuk mengaktifkan Screenshot Q&amp;A.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Format file tidak didukung.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>Gambar melebihi batas ukuran 15 MB.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>File melebihi batas ukuran 100 MB.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan jaringan</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun gratis Anda telah kedaluwarsa, silakan konfigurasi akun model Anda untuk terus menggunakannya.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuota akun gratis Anda telah habis, silakan konfigurasi akun model Anda untuk terus menggunakannya.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Kuota akun gratis Anda untuk obrolan telah habis, harap konfigurasi akun model Anda untuk terus menggunakannya.</translation>
+        <translation>Kuota akun gratis Anda untuk obrolan telah habis, silakan konfigurasi akun model Anda untuk terus menggunakannya.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">Nanti Saja</translation>
+        <translation>Jangan Sekarang</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">Klaim Kredit</translation>
+        <translation>Klaim Kredit</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">Kredit Gratis Telah Dikirim</translation>
+        <translation>Kredit Gratis Dikirim</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Anda telah menggunakan kredit pembuatan gratis untuk akun uji coba Anda. Kami telah memberi Anda 200 kredit gratis tambahan yang berlaku untuk bulan ini. Jelajahi fitur lebih lanjut dan buka kemampuan tanpa batas dari UOS AI!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Berhasil Diklaim</translation>
+        <translation>Berhasil Diklaim</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">Akun tidak ditemukan</translation>
+        <translation>Akun tidak ditemukan</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>Hanya mendukung akun uji coba</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">Anda sudah berpartisipasi dalam acara ini dan tidak dapat mengklaim hadiah lagi.</translation>
+        <translation>Anda sudah berpartisipasi dalam acara ini dan tidak dapat mengklaim hadiah lagi.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">Kesalahan sistem server</translation>
+        <translation>Kesalahan sistem server</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Gagal Mengklaim. Silakan Coba Lagi.</translation>
+        <translation>Gagal Mengklaim. Silakan Coba Lagi.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">Hasilkan Gambar</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">Jelaskan Konten Gambar</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (tahun-bulan-hari minggu)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished">Dapatkan akun percobaan gratis</translation>
+        <translation>Dapatkan akun uji coba gratis</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">Dapatkan akun</translation>
+        <translation>Dapatkan akun</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Menerima akun menandakan bahwa Anda memahami dan menyetujui syarat dan ketentuan acara,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detail Acara&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun Uji Coba UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal menyimpan, silakan coba lagi nanti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun percobaan berhasil diterima.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished">Jumlah penggunaan dan durasi akun percobaan terbatas, harap segera konfigurasi akun model pribadi Anda! Lihat detail acara untuk informasi lebih lanjut.</translation>
+        <translation>Jumlah penggunaan dan durasi akun percobaan terbatas, silakan konfigurasi akun model pribadi Anda tepat waktu! Lihat detail acara untuk informasi lebih lanjut.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Dukungan bahasa Inggris untuk akun percobaan belum memuaskan. Jumlah penggunaan dan durasi akun percobaan terbatas. Harap segera konfigurasikan akun model pribadi Anda!</translation>
+        <translation>Dukungan Bahasa Inggris untuk akun percobaan belum memuaskan. Selain itu, jumlah penggunaan dan durasi akun percobaan terbatas. Silakan konfigurasi akun model pribadi Anda tepat waktu!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">Mulai percobaan</translation>
+        <translation>Mulai percobaan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivitas akun gratis berakhir.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat terhubung ke server, silakan periksa jaringan Anda atau coba lagi nanti.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat terhubung ke server, silakan periksa jaringan Anda atau coba lagi nanti.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>Permintaan waktu habis karena beban server atau masalah jaringan. Silakan coba lagi nanti.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished">Koneksi gagal, harap periksa informasi yang diisi.</translation>
+        <translation>Koneksi gagal, silakan periksa informasi yang diisi.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">Operasi dibatalkan.</translation>
+        <translation>Operasi dibatalkan.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
-        <translation>Bicaralah sekarang</translation>
+        <translation>Berbicara sekarang</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
         <translation>Volume input rendah</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
         <translation>Pengaturan</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>Jaringan tidak tersedia</translation>
     </message>
@@ -5891,16 +1938,13 @@ Waktu saat ini: %2</translation>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">File yang baru ditambahkan memerlukan pra-pemrosesan sebelum dapat digunakan, dan selama proses pemrosesan data, mungkin akan mengonsumsi banyak sumber daya komputasi dan penyimpanan. Pemrosesan data akan berhenti setelah menghapus data.</translation>
+        <translation>File yang baru ditambahkan memerlukan pra-pemrosesan sebelum dapat digunakan, dan selama proses pemrosesan data, mungkin akan mengonsumsi sumber daya komputasi dan penyimpanan yang signifikan. Pemrosesan data akan berhenti setelah menghapus data.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>Tanya AI</translation>
     </message>
@@ -5908,28 +1952,22 @@ Waktu saat ini: %2</translation>
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
         <translation>Apa yang ingin ditanyakan tentang ini?</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
-        <translation>Sembunyikan hingga aplikasi ini dijalankan ulang</translation>
+        <translation>Sembunyikan sampai aplikasi ini dimulai ulang</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">Nonaktifkan di Aplikasi Ini</translation>
+        <translation>Matikan di Aplikasi Ini</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">Nonaktifkan Secara Global</translation>
+        <translation>Matikan Secara Global</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
         <translation>Buka &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Pengaturan&lt;/a&gt; untuk mengaktifkannya kembali.</translation>
     </message>
@@ -5937,201 +1975,139 @@ Waktu saat ini: %2</translation>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>Mencari basis pengetahuan</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencarian selesai · %1d</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencarian selesai · %1m%2d</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Referensi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">Apakah Anda yakin ingin menghapus file basis pengetahuan ini?</translation>
+        <translation>Apakah Anda yakin ingin menghapus file basis pengetahuan ini?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished">Hapus</translation>
+        <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">Tambah</translation>
+        <translation>Tambah</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">Harap instal plugin model embedding terlebih dahulu</translation>
+        <translation>Silakan instal plugin model embedding terlebih dahulu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished">Manajemen Basis Pengetahuan</translation>
+        <translation>Manajemen Basis Pengetahuan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">Fitur ini membutuhkan sumber daya perangkat keras yang tinggi, dan konfigurasi referensi benchmark adalah: CPU Intel generasi ke-11 i7 atau lebih tinggi; Memori 16GB atau lebih; Memiliki kartu grafis NVIDIA dan seri 10 atau lebih tinggi adalah pilihan terbaik. Jika konfigurasi terlalu rendah, mungkin ada masalah seperti lag dan jawaban yang tidak akurat.</translation>
+        <translation>Fitur ini membutuhkan sumber daya perangkat keras yang tinggi, dan konfigurasi referensi standarnya adalah: CPU Intel generasi ke-11 i7 atau lebih baru; Memori 16GB atau lebih; Memiliki kartu grafis NVIDIA seri 10 atau lebih tinggi adalah opsi terbaik. Jika konfigurasi terlalu rendah, mungkin akan terjadi masalah seperti lag dan jawaban yang tidak akurat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">Di sini, basis pengetahuan Asisten Pengetahuan Pribadi dapat didefinisikan, dan Asisten Pengetahuan Pribadi akan menjawab pertanyaan berdasarkan file yang ditambahkan di bawah ini.</translation>
+        <translation>Di sini, basis pengetahuan Asisten Pengetahuan Pribadi dapat ditentukan, dan Asisten Pengetahuan Pribadi akan menjawab pertanyaan berdasarkan file yang ditambahkan di bawah ini.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished">Selesai</translation>
+        <translation>Selesai</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished">Tidak ada</translation>
+        <translation>Tidak Ada</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">File sudah ada</translation>
+        <translation>File sudah ada</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">File %1 sudah ada dan tidak dapat ditambahkan lagi. Harap ubah nama file atau hapus file yang sudah ada sebelum menambahkannya lagi</translation>
+        <translation>File %1 sudah ada dan tidak dapat ditambahkan lagi. Silakan ubah nama file atau hapus file yang sudah ada sebelum menambahkannya kembali</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">Semua file</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">Luncurkan atau Tutup Aplikasi</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, Musik, Album, Pusat Kontrol, Penampil Log ...</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasang</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus pemasangan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished">Perbarui</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">hapus</translation>
+        <translation>Pembaruan</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">Model lokal</translation>
+        <translation>Model lokal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">Setelah dipasang, Anda tidak memerlukan koneksi internet untuk menggunakan UOS AI.</translation>
+        <translation>Setelah dipasang, Anda tidak memerlukan koneksi internet untuk menggunakan UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">Unduh dari komunitas open-source dengan risiko Anda sendiri. Gunakan di Asisten AI UOS setelah instalasi.</translation>
+        <translation>Unduh dari komunitas sumber terbuka dengan risiko Anda sendiri. Gunakan di Asisten UOS AI setelah pemasangan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">Model besar UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">Plugin Penyemat</translation>
+        <translation>Plugin Penanaman</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">Setelah model dipasang, Asisten Sistem dan Asisten Pengetahuan Pribadi dapat dijalankan.</translation>
+        <translation>Setelah model dipasang, Asisten Sistem dan Asisten Pengetahuan Pribadi dapat dijalankan.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>Server MCP tidak tersedia</translation>
     </message>
@@ -6139,96 +2115,76 @@ Waktu saat ini: %2</translation>
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation>Bidang &apos;mcpServers&apos; tidak ditemukan.</translation>
+        <translation>Bidang &apos;mcpServers&apos; hilang.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
-        <translation>Gagal menghapus konfigurasi server kustom lama, nama server: %0</translation>
+        <translation>Gagal menghapus konfigurasi server lama kustom, nama server: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
         <translation>tidak ada server mcp yang valid.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
         <translation>Nama server MCP duplikat: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
         <translation>Nama server MCP &apos;%1&apos; sudah ada</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
         <translation>Nama server &apos;%1&apos; sudah ada</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
-        <translation>Gagal membuka berkas konfigurasi kustom untuk ditulis</translation>
+        <translation>Gagal membuka file konfigurasi kustom untuk penulisan</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
         <translation>Server &apos;%1&apos; bukan server kustom atau tidak ada</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
-        <translation>Tidak ditemukan server kustom.</translation>
+        <translation>Tidak ada server kustom yang ditemukan.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
         <translation>Server &apos;%1&apos; tidak ditemukan.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
         <translation>bidang url tidak boleh kosong.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
-        <translation>bidang command tidak boleh kosong.</translation>
+        <translation>bidang perintah tidak boleh kosong.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation>Bidang &apos;command&apos; atau &apos;url&apos; tidak ditemukan</translation>
+        <translation>Bidang &apos;command&apos; atau &apos;url&apos; hilang</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
         <translation>Pasang</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation>Copot</translation>
+        <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation type="unfinished">Perbarui</translation>
+        <translation>Perbarui</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>bawaan</translation>
     </message>
@@ -6236,600 +2192,496 @@ Waktu saat ini: %2</translation>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>Server MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Semua</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>Bawaan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">Kustom</translation>
+        <translation>Kustom</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
-        <translation>Tambahkan Server MCP</translation>
+        <translation>Tambah Server MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>Konfirmasi penghapusan %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Setelah dihapus, server ini tidak akan tersedia. Harap berhati-hati.</translation>
+        <translation>Setelah dihapus, server ini tidak akan tersedia. Lanjutkan dengan hati-hati.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
-        <translation type="unfinished">Hapus</translation>
+        <translation>Hapus</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>Lingkungan Mcp</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>Server MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
         <translation>Pasang Agen UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
-        <translation>Setelah terpasang, Server MCP akan tersedia.</translation>
+        <translation>Setelah pemasangan, Server MCP akan tersedia.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished">Konfigurasi Model</translation>
+        <translation>Konfigurasi Model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished">Manajemen Basis Pengetahuan</translation>
+        <translation>Manajemen Basis Pengetahuan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">Perjanjian Pengguna</translation>
+        <translation>Perjanjian Pengguna</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">Perjanjian Pengguna UOS AI</translation>
+        <translation>Perjanjian Pengguna UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">Membaca dan menyetujui</translation>
+        <translation>Baca dan setuju</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">Pengaturan Proxy</translation>
+        <translation>Pengaturan Proxy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka pengaturan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivitas akun gratis berakhir.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Menambahkan ke basis pengetahuan memerlukan pemasangan plugin model vektorisasi. Silakan pergi ke toko aplikasi untuk mengunduh dan memasang.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Jangan pasang</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Pasang segera</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubProvider</name>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
-        <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
-        <source>YouRong 7B</source>
-        <translation type="unfinished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Dapatkan akun gratis</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Delete</source>
-        <translation type="unfinished">Hapus</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
-        <source>Add</source>
-        <translation type="unfinished">Tambah</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
-        <source>Online model</source>
-        <translation type="unfinished">Model online</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Done</source>
-        <translation type="unfinished">Selesai</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
-        <source>None</source>
-        <translation type="unfinished">Tidak ada</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelScopeItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
-        <source>Install</source>
-        <translation>Instal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>Perbarui</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
-        <source>Uninstall</source>
-        <translation>Hapus Instalasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
-        <source>Cancel</source>
-        <translation>Batal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
-        <source>About %1GB</source>
-        <translation>Sekitar %1GB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
-        <source>Installing</source>
-        <translation>Menginstal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
-        <source>Are you sure you want to delete this model?</source>
-        <translation>Apakah Anda yakin ingin menghapus model ini?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation>Batal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Konfirmasi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Menambahkan ke basis pengetahuan memerlukan pemasangan plugin model vektorisasi. Silakan buka toko aplikasi untuk mengunduh dan memasang.</translation>
+    </message>
+    <message>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Jangan pasang</translation>
+    </message>
+    <message>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Pasang sekarang</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation>YouRong 1.5B</translation>
+    </message>
+    <message>
+        <source>YouRong 7B</source>
+        <translation>YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <source>Get a free account</source>
+        <translation>Dapatkan akun gratis</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>Tambah</translation>
+    </message>
+    <message>
+        <source>Online model</source>
+        <translation>Model daring</translation>
+    </message>
+    <message>
+        <source>Done</source>
+        <translation>Selesai</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Tidak ada</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelScopeItem</name>
+    <message>
+        <source>Install</source>
+        <translation>Pasang</translation>
+    </message>
+    <message>
+        <source>Uninstall</source>
+        <translation>Hapus pemasangan</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Pembaruan</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>About %1GB</source>
+        <translation>Sekitar %1GB</translation>
+    </message>
+    <message>
+        <source>Installing</source>
+        <translation>Memasang</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete this model?</source>
+        <translation>Apakah Anda yakin ingin menghapus model ini?</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation>Konfirmasi</translation>
+    </message>
+    <message>
         <source>Checking</source>
         <translation>Memeriksa</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>Oke</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>&apos;%0 gagal diunduh, silakan coba lagi!&apos;</translation>
+        <translation>%0 pengunduhan gagal, silakan coba lagi!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
-        <translation>Harap instal &quot;Embedding Plugins&quot; terlebih dahulu sebelum menginstal model ini.</translation>
+        <translation>Silakan pasang &quot;Embedding Plugins&quot; terlebih dahulu sebelum memasang model ini.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>gagal membuang folder target, silakan coba lagi!</translation>
+        <translation>gagal memindahkan ke folder sampah, silakan coba lagi!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
-        <translation>&apos;%1 detik&apos;</translation>
+        <translation>%1 detik</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
-        <translation>&apos;%1 menit&apos;</translation>
+        <translation>%1 menit</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
-        <translation>&apos;%1MB/%2GB telah diunduh, tersisa %3.&apos;</translation>
+        <translation>%1MB/%2GB diunduh, %3 tersisa.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished">Apakah Anda yakin ingin menghapus model ini?</translation>
+        <translation>Apakah Anda yakin ingin menghapus model ini?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun model tidak valid</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe model tidak didukung</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>Model tidak mendukung pelengkapan obrolan</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>Model tersedia</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan HTTP: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished">Untuk pengaturan proxy, silakan buka pengaturan proxy sistem</translation>
+        <translation>Untuk pengaturan proksi, silakan buka pengaturan proksi sistem</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka pengaturan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished">Hapus</translation>
+        <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Edit Model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">Tambahkan Model</translation>
+        <translation>Tambah Model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">Akun</translation>
+        <translation>Akun</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished"></translation>
+        <translation>Wajib, untuk membedakan beberapa model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyedia</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished"></translation>
+        <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished"></translation>
+        <translation>Wajib, silakan masukkan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished">Domain</translation>
+        <translation>Domain</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">Aktifkan</translation>
+        <translation>Aktifkan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">Kustom</translation>
+        <translation>Kustom</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">Tambah</translation>
+        <translation>Tambah</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished">Untuk menguji ketersediaan model, sistem mengirim informasi uji ke model besar, yang akan mengonsumsi sejumlah kecil token.</translation>
+        <translation>Untuk menguji ketersediaan model, sistem mengirim informasi uji ke model besar, yang akan mengonsumsi sedikit token.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama dan ID Model harus diisi.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal menyimpan, silakan coba lagi nanti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished">Selesai</translation>
+        <translation>Selesai</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>Uji lulus</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Layanan model tersedia.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">Kontrol Multimedia</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (tahun-bulan-hari minggu)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">Memutar musik, kontrol status, pencarian...</translation>
+        <source>Searching for relevant information</source>
+        <translation>Mencari informasi relevan</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>Mengacu pada %0 sumber</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>%0 halaman ditemukan</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>Menelusuri %0</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>halaman %0</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">Sedang memproses data</translation>
+        <translation>Dalam pemrosesan data</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">Kesalahan pemrosesan data</translation>
+        <translation>Kesalahan pemrosesan data</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">Kesalahan file, tidak dapat diproses, harap hapus.</translation>
+        <translation>Kesalahan file, tidak dapat memproses, harap hapus.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Membuat kerangka</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Membuat konten kerangka untuk Anda.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Kerangka yang dapat diedit telah dibuat. Setelah mengonfirmasi, klik tombol biru di bawah untuk melanjutkan ke pembuatan dokumen.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Terdeteksi bahwa Anda telah mengunggah kerangka lokal, Saat ini mengurai konten kerangka untuk Anda.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kerangka lokal yang diunggah terdeteksi, harap konfirmasi.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal mengurai file kerangka yang diunggah, harap unggah ulang</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal membuat konten kerangka</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Berdasarkan tugas penulisan Anda, saya telah membuat kerangka berikut untuk **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Saya telah mengurai kerangka yang Anda unggah dan menyusunnya sebagai **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Kerangka berisi total %1 bagian. Harap konfirmasi untuk melanjutkan dengan penelitian dan penulisan.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">Asisten Pengetahuan Pribadi hanya dapat digunakan setelah mengonfigurasi plug model.</translation>
+        <translation>Asisten Pengetahuan Pribadi hanya dapat digunakan setelah mengonfigurasi pengaya model.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">Asisten Pengetahuan Pribadi hanya dapat digunakan setelah mengonfigurasi basis pengetahuan.</translation>
+        <translation>Asisten Pengetahuan Pribadi hanya dapat digunakan setelah mengonfigurasi basis pengetahuan.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Tambah</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Model penyebaran pribadi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Selesai</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>Tidak ada</translation>
     </message>
@@ -6837,37 +2689,31 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda yakin ingin menghapus penyedia ini?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Batal</translation>
+        <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
         <translation>Referensi</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
         <translation>Buka</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
         <translation>Dokumen tidak ada!</translation>
     </message>
@@ -6875,163 +2721,79 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Membuat Dokumen</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>gagal</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumen Dibuat</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumen telah dibuat berdasarkan kerangka. Anda dapat mengklik kartu di bawah ini untuk mengedit konten, atau mengklik tombol &quot;Simpan Sebagai&quot; untuk menyimpannya secara lokal untuk pengeditan lebih lanjut.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">Cari Online</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">Masukkan Konten Pencarian</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">Kirim Email</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">Bantu saya mengirim email ke [Nama Penerima], dengan konten: [Konten Email].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Maaf, tidak ditemukan operasi yang cocok.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">Ekstrak parameter yang relevan dari masukan yang diberikan agar sesuai dengan format templat email JSON berikut, dan keluarkan hanya konten JSON. Jangan sertakan informasi tambahan apa pun.
-
-Format templat email:
-
-json
-{&quot;subject&quot;: &quot;Subjek Email&quot;, &quot;content&quot;: &quot;Isi Email&quot;, &quot;to&quot;: &quot;Penerima&quot;, &quot;cc&quot;: &quot;CC Penerima&quot;, &quot;bcc&quot;: &quot;BCC Penerima&quot;}
-
-Masukan: %1</translation>
+        <translation>Anda dapat mengajukan pertanyaan lanjutan atau meminta penyesuaian artikel.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal mendapatkan instans server MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">Server &apos;%1&apos; bukan server kustom atau tidak ada</translation>
+        <translation>Server &apos;%1&apos; bukan server kustom atau tidak ada</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">Nama server MCP &apos;%1&apos; sudah ada</translation>
+        <translation>Nama server MCP &apos;%1&apos; sudah ada</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>Server &apos;%1&apos; tidak ada</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi dengan ID %1 sudah ada</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi %1 membuat asisten %2 gagal</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi %1 berhasil dibuat</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi %1 tidak ditemukan</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">Pintasan: [Super + Spasi]. Cepat panggil UOS AI untuk mengakses semua fitur AI di satu tempat.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">Mengerti</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">Prompt ini akan muncul %1 kali lagi, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Jangan tampilkan lagi&lt;/a&gt;</translation>
+        <translation>Sesi %1 tidak dalam keadaan menganggur</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
-        <translation>&apos;Ambil &apos;</translation>
+        <translation>Ambil </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
-        <translation>&apos; terjemahkan ke dalam Bahasa Inggris&apos;</translation>
+        <translation> terjemahkan ke bahasa Inggris</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>Melebihi batas karakter</translation>
     </message>
@@ -7039,1791 +2801,1835 @@ Masukan: %1</translation>
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>Aktifkan</translation>
+        <source>Disabled</source>
+        <translation>Dinonaktifkan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Disabled</source>
-        <translation>Nonaktif</translation>
+        <source>Enable</source>
+        <translation>Aktifkan</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
-        <translation>Manajemen Keterampilan</translation>
+        <translation>Manajemen Skill</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
-        <translation>Tambahkan Skill</translation>
+        <translation>Tambah Skill</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
-        <translation>4 skill pertama akan ditampilkan di toolbar, dan lainnya akan disembunyikan di menu Lainnya.</translation>
+        <translation>4 skill pertama akan ditampilkan di bilah alat, dan lainnya akan disembunyikan di menu Lainnya.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
         <translation>Disimpan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
         <translation>Apakah Anda yakin ingin menghapus skill &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
         <translation>Batal</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>Hapus</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemChannel</name>
+    <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <source>The archive file does not exist.</source>
+        <translation>File arsip tidak ada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
-        <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>Gagal membuat direktori sementara untuk ekstraksi.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>Gagal mengekstrak arsip. File mungkin rusak atau formatnya tidak didukung.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
-        <source>Settings</source>
-        <translation type="unfinished">Pengaturan</translation>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>File SKILL.md tidak ditemukan dalam arsip.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
+        <source>The specified path is invalid.</source>
+        <translation>Jalur yang ditentukan tidak valid.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
-        <source>About</source>
-        <translation type="unfinished">Tentang</translation>
+        <source>Failed to read SKILL.md.</source>
+        <translation>Gagal membaca SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
-        <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>SKILL.md kehilangan bidang &apos;name&apos; yang diperlukan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
-        <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <source>The skill directory does not exist.</source>
+        <translation>Direktori skill tidak ada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
-        <source>AI Writing</source>
-        <translation type="unfinished">Penulisan AI</translation>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>Skill tidak dapat diimpor dari jalur ini.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
-        <source>AI Translation</source>
-        <translation type="unfinished">Terjemahan AI</translation>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>File SKILL.md tidak ditemukan di direktori skill.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
-        <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>Skill berisi terlalu banyak file (maksimum %1 diizinkan).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">Server MCP</translation>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>Ukuran skill melebihi batas (maksimum 10 MB diizinkan).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <source>The skill folder name is invalid.</source>
+        <translation>Nama folder skill tidak valid.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
-        <source>Agent Store</source>
-        <translation type="unfinished">Toko Agen</translation>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>Gagal menimpa skill yang sudah ada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
-        <source>More</source>
-        <translation type="unfinished">Lainnya</translation>
+        <source>Failed to create the skills directory.</source>
+        <translation>Gagal membuat direktori skills.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
-        <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to copy the skill files.</source>
+        <translation>Gagal menyalin file skill.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
-        <source>Today</source>
-        <translation type="unfinished">Hari ini</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
-        <source>Yesterday</source>
-        <translation type="unfinished">Kemarin</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
-        <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
-        <source>January</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
-        <source>February</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
-        <source>March</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
-        <source>April</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
-        <source>May</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
-        <source>June</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
-        <source>July</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
-        <source>August</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
-        <source>September</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
-        <source>October</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
-        <source>November</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
-        <source>year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
-        <source>Earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
-        <source>Delete</source>
-        <translation type="unfinished">Hapus</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
-        <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
-        <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
-        <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Batal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
-        <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
-        <source>All</source>
-        <translation type="unfinished">Semua</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
-        <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
-        <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
-        <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
-        <source>DeepThink</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
-        <source>Search</source>
-        <translation type="unfinished">Cari</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
-        <source>Attachments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
-        <source>Upload Files</source>
-        <translation type="unfinished">Unggah Berkas</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
-        <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
-        <source>Voice Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
-        <source>Voice Read</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
-        <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
-        <source>Copy</source>
-        <translation type="unfinished">Salin</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
-        <source>Regenerate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
-        <source>Re-edit</source>
-        <translation type="unfinished">Sunting ulang</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
-        <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
-        <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
-        <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
-        <source>Thinking...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
-        <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
-        <source>Parsing...</source>
-        <translation type="unfinished">Memproses...</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
-        <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
-        <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
-        <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
-        <source>Model List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
-        <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
-        <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
-        <source>Local Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
-        <source>Online Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
-        <source>Add Model</source>
-        <translation type="unfinished">Tambahkan Model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
-        <source>Official</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
-        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
-        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
-        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
-        <source>View Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
-        <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
-        <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
-        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
-        <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
-        <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
-        <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
-        <source>File Upload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
-        <source>As Material</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
-        <source>As Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
-        <source>Local Materials</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
-        <source>File Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
-        <source>Outline</source>
-        <translation type="unfinished">Kerangka</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
-        <source>View All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
-        <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
-        <source>Upload File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
-        <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
-        <source>Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
-        <source>Heading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
-        <source>Export Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
-        <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
-        <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
-        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
-        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
-        <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
-        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
-        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
-        <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
-        <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
-        <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
-        <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
-        <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
-        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
-        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
-        <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
-        <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
-        <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
-        <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
-        <source>Add chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
-        <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
-        <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
-        <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
-        <source>Save as Word</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
-        <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
-        <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
-        <source>Saving...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
-        <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
-        <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
-        <source>Body Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
-        <source>Heading %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
-        <source>Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
-        <source>Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
-        <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
-        <source>Link Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
-        <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
-        <source>Numbered List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
-        <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
-        <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
-        <source>Blockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
-        <source>Divider</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
-        <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
-        <source>Print Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
-        <source>Share Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
-        <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
-        <source>Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
-        <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
-        <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
-        <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
-        <source>Add MCP Server</source>
-        <translation type="unfinished">Tambahkan Server MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
-        <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
-        <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
-        <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
-        <source>Install Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
-        <source>System Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
-        <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
-        <source>DND Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
-        <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
-        <source>Brightness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
-        <source>Font Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
-        <source>App Store</source>
-        <translation type="unfinished">Toko Aplikasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
-        <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
-        <source>Click to download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
-        <source>Go to configuration</source>
-        <translation type="unfinished">Pergi ke konfigurasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
-        <source>No account</source>
-        <translation type="unfinished">Tidak ada akun</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
-        <source>Input question</source>
-        <translation type="unfinished">Masukkan pertanyaan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
-        <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Selamat datang di UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">Berikut adalah beberapa hal yang dapat dibantu oleh UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
-        <source>Stop</source>
-        <translation type="unfinished">Berhenti</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
-        <source>Retry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
-        <source>Clear conversation history</source>
-        <translation type="unfinished">Hapus riwayat percakapan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
-        <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">Harap sambungkan mikrofon dan coba lagi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
-        <source>Chat history cleared</source>
-        <translation type="unfinished">Riwayat obrolan dihapus</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
-        <source>Click to start/stop recording</source>
-        <translation type="unfinished">Klik untuk mulai/menghentikan rekaman</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
-        <source>Listening</source>
-        <translation type="unfinished">Mendengarkan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
-        <source>Sleeping</source>
-        <translation type="unfinished">Tidur</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">Mikrofon tidak terdeteksi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
-        <source>Connection failed, click to try again</source>
-        <translation type="unfinished">Koneksi gagal, klik untuk mencoba lagi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">Klik pada animasi atau Ctrl+Super+Spasi untuk mengaktifkan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Input suara sementara tidak tersedia, harap periksa jaringan!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
-        <source>Voice conversation</source>
-        <translation type="unfinished">Percakapan suara</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">Klik animasi atau tekan Enter untuk mengirim</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">Hentikan rekaman setelah %1 detik</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
-        <source>Thinking</source>
-        <translation type="unfinished">Berpikir</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
-        <source>Click animation to interrupt</source>
-        <translation type="unfinished">Klik animasi untuk menghentikan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
-        <source>Answering</source>
-        <translation type="unfinished">Menjawab</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
-        <source>Activate</source>
-        <translation type="unfinished">Aktifkan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
-        <source>Voice input</source>
-        <translation type="unfinished">Input suara</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Siaran suara sementara tidak tersedia, harap periksa jaringan!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
-        <source>Turn off voice conversation</source>
-        <translation type="unfinished">Matikan percakapan suara</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">Gambar telah dihasilkan, harap beralih ke antarmuka obrolan untuk melihatnya.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
-        <source>No account, please configure an account</source>
-        <translation type="unfinished">Tidak ada akun, harap konfigurasi akun</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
-        <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">Jawab setiap pertanyaan hingga 5 kali</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
-        <source>Copied successfully</source>
-        <translation type="unfinished">Berhasil disalin</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
-        <source>Sound output device not detected</source>
-        <translation type="unfinished">Perangkat output suara tidak terdeteksi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">Perangkat output suara tidak terdeteksi, harap periksa dan coba lagi!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
-        <source>Mode</source>
-        <translation type="unfinished">Mode</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
-        <source>Window Mode</source>
-        <translation type="unfinished">Mode Jendela</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
-        <source>Sidebar Mode</source>
-        <translation type="unfinished">Mode Bilah Samping</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
-        <source>Assistant List</source>
-        <translation type="unfinished">Daftar Asisten</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
-        <source>Agent List</source>
-        <translation type="unfinished">Daftar Agen</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
-        <source>UOS System Assistant</source>
-        <translation type="unfinished">Asisten Sistem UOS</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
-        <source>Deepin System Assistant</source>
-        <translation type="unfinished">Asisten Sistem Deepin</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Asisten Pengetahuan Pribadi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
-        <source>Please configure the knowledge base</source>
-        <translation type="unfinished">Harap konfigurasi basis pengetahuan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">Sebelum menggunakan [Asisten Pengetahuan Pribadi], perlu mengkonfigurasi basis pengetahuan. Setelah mengkonfigurasi basis pengetahuan, AI akan menjawab pertanyaan atau menghasilkan konten berdasarkan konten yang telah Anda konfigurasi dalam basis pengetahuan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
-        <source>Please configure the large model</source>
-        <translation type="unfinished">Harap konfigurasi model besar</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">Asisten pengetahuan pribadi hanya dapat digunakan setelah mengkonfigurasi model besar.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
-        <source>To configure</source>
-        <translation type="unfinished">Untuk mengkonfigurasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <source>To install</source>
-        <translation type="unfinished">Untuk menginstal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">Harap instal [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">Asisten ini memerlukan instalasi EmbeddingPlugins untuk berjalan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
-        <source>Drag files here to add them.</source>
-        <translation type="unfinished">Seret file ke sini untuk menambahkannya.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">Anda hanya dapat menambahkan 3 berkas, jenis berkas yang didukung termasuk: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, berkas kode, dll.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">Anda hanya dapat menambahkan maksimal satu file.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
-        <source>The file format is not supported.</source>
-        <translation type="unfinished">Format file tidak didukung.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
-        <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">Ringkas konten utama file.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
-        <source>File Error</source>
-        <translation type="unfinished">Kesalahan File</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
-        <source>File has been deleted.</source>
-        <translation type="unfinished">File telah dihapus.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">Ukuran file melebihi batas 100MB.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
-        <source>Upload a document</source>
-        <translation type="unfinished">Unggah dokumen</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
-        <source>File deleted</source>
-        <translation type="unfinished">File dihapus</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
-        <source>No text was parsed</source>
-        <translation type="unfinished">Tidak ada teks yang diproses</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
-        <source>Reference</source>
-        <translation type="unfinished">Referensi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
-        <source>Instruction</source>
-        <translation type="unfinished">Instruksi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">Ketik &quot;/&quot; di kotak input untuk mengaktifkan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">Silakan masukkan; “Ctrl+Enter” untuk ganti baris.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">Masukkan pertanyaan Anda, atau ketik &quot;/&quot; untuk memilih perintah
-&quot;Ctrl+Enter&quot; untuk membuat baris baru</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
-        <source>Search complete.</source>
-        <translation type="unfinished">Pencarian selesai.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
-        <source>Click to view results</source>
-        <translation type="unfinished">Klik untuk melihat hasil</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
-        <source>edit</source>
-        <translation type="unfinished">edit</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
-        <source>save</source>
-        <translation type="unfinished">simpan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
-        <source>copy</source>
-        <translation type="unfinished">salin</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
-        <source>Thinking has stopped</source>
-        <translation type="unfinished">Pemikiran telah berhenti</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">Kembali ke bawah</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">Dipikirkan mendalam (%1 detik)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
-        <source>New Conversation</source>
-        <translation type="unfinished">Percakapan Baru</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
-        <source>History</source>
-        <translation type="unfinished">Riwayat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
-        <source>No History Records</source>
-        <translation type="unfinished">Tidak Ada Catatan Riwayat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">Apakah Anda yakin ingin menghapus percakapan ini? Setelah dihapus, tidak dapat dipulihkan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">Agen %1 yang digunakan dalam percakapan ini telah dihapus</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">Percakapan ini tidak dapat dilihat. Untuk melihatnya, silakan instal agen %1 dan coba lagi.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">Model percakapan asli telah dihapus. Kami telah beralih ke model baru agar Anda dapat melanjutkan percakapan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
-        <source>Recommendations</source>
-        <translation type="unfinished">Rekomendasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
-        <source>No Model</source>
-        <translation type="unfinished">Tidak Ada Model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">Tidak ada model yang tersedia. Silakan instal atau konfigurasi model di pengaturan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">Silakan Jelaskan Tema Konten dan Persyaratan untuk Karya Anda.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">Silakan Masukkan Konten yang Ingin Anda Terjemahkan dan Tentukan Bahasa Target. Terjemahan Default adalah ke Bahasa Cina.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">Silakan Masukkan Teks yang Perlu Diproses dan Tentukan Persyaratan Anda.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
-        <source>New Agent Added</source>
-        <translation type="unfinished">Agen Baru Ditambahkan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">Agen Penulisan, Pemrosesan Teks, dan Terjemahan baru telah ditambahkan. Coba sekarang.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
-        <source>Try it</source>
-        <translation type="unfinished">Coba</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
-        <source>Write an article based on the following document:</source>
-        <translation type="unfinished">Tulis artikel berdasarkan dokumen berikut:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
-        <source>Translate the following document into English:</source>
-        <translation type="unfinished">Terjemahkan dokumen berikut ke dalam Bahasa Inggris:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
-        <source>Add Mcp Server</source>
-        <translation type="unfinished">Tambahkan Server Mcp</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
-        <source>Add Server</source>
-        <translation type="unfinished">Tambahkan Server</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
-        <source>Add failed! Error reason:</source>
-        <translation type="unfinished">Penambahan gagal! Alasan kesalahan:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">Lingkungan MCP tidak ditemukan. Silakan pasang 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
-        <source>Calling</source>
-        <translation type="unfinished">Memanggil</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
-        <source>Completed</source>
-        <translation type="unfinished">Selesai</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
-        <source>Call Failed</source>
-        <translation type="unfinished">Panggilan Gagal</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
-        <source>Cancelled</source>
-        <translation type="unfinished">Dibatalkan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
-        <source>params</source>
-        <translation type="unfinished">parameter</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
-        <source>result</source>
-        <translation type="unfinished">hasil</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Untuk Server MCP, beralih ke model resmi &quot;Akun Uji Coba DeepSeek&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">Masukkan perintah Server MCP, mis. &quot;Ubah sistem ke mode gelap untuk saya&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
-        <source>Agent server is not available</source>
-        <translation type="unfinished">Server agen tidak tersedia</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
-        <source>Agent server exception</source>
-        <translation type="unfinished">Pengecualian server agen</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
-        <source>MCP server is not available</source>
-        <translation type="unfinished">Server MCP tidak tersedia</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
-        <source>Confirm</source>
-        <translation type="unfinished">Konfirmasi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">Otomatiskan tugas multi-file dan multi-aplikasi dengan satu perintah menggunakan Layanan MCP. Coba sekarang!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
-        <source>Use later</source>
-        <translation type="unfinished">Gunakan nanti</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
-        <source>Enable MCP Server</source>
-        <translation type="unfinished">Aktifkan Server MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">Setelah memasang lingkungan MCP &quot;UOS AI Agent&quot;, klik </translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished"> dan pilih &quot;uos-mcp&quot; dalam daftar server MCP.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">Coba katakan: &quot;Ubah sistem ke mode gelap&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
-        <source>Try it now</source>
-        <translation type="unfinished">Coba sekarang</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">Tambahkan Server Mcp[Halaman Panduan]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">Pengguna pertama kali: Pasang lingkungan MCP &quot;UOS AI Agent&quot; melalui App Store.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">Format berkas JSON salah, silakan periksa dan kirim ulang</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
-        <source>Install Now &gt;</source>
-        <translation type="unfinished">Pasang Sekarang &gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
-        <source>General Chat</source>
-        <translation type="unfinished">Obrolan Umum</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
-        <source>Now in Private Chat</source>
-        <translation type="unfinished">Sekarang dalam Obrolan Pribadi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">Pesan Chat Pribadi tidak disimpan dalam riwayat dan akan dihapus secara permanen saat Anda meninggalkan obrolan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">Screenshot Q&amp;A Pintasan (Ctrl+Alt+Q), mendukung hingga 3 gambar.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
-        <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">Tidak dapat digunakan saat merekam layar</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">Harap hapus berkas yang tidak normal dan kirim ulang</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
-        <source>Add Private Chat</source>
-        <translation type="unfinished">Tambah Chat Pribadi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">Tambah [Screenshot Q&amp;A]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">Ambil tangkapan layar dan kirimkan isinya ke UOS AI. Anda juga dapat mengunggah gambar langsung.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
-        <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
-        <source>Next</source>
-        <translation type="unfinished">Selanjutnya</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">Tambah [ Mode Chat Pribadi ] - Obrolan tidak akan disimpan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
-        <source>No text extracted</source>
-        <translation type="unfinished">Tidak ada teks yang diekstrak</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">Ukuran gambar melebihi 15 MB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">Setelah membuka basis pengetahuan, jawaban akan didasarkan pada isinya. Kecepatan respons bergantung pada kinerja mesin dan ukuran basis pengetahuan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">Basis pengetahuan tidak tersedia saat perintah atau MCP apa pun dipilih.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">MCP dinonaktifkan saat basis pengetahuan aktif.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">Perintah dinonaktifkan saat basis pengetahuan aktif.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
-        <source>Copy succeeded.</source>
-        <translation type="unfinished">Salin berhasil.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
-        <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">Salin gagal. Silakan coba lagi.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
-        <source>Searching</source>
-        <translation type="unfinished">Mencari</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">%1 dokumen referensi telah diperoleh (%2s)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
-        <source>Clear History</source>
-        <translation type="unfinished">Bersihkan Riwayat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
-        <source>Delete all records?</source>
-        <translation type="unfinished">Hapus semua catatan?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">Setelah dihapus, konten tidak dapat dipulihkan!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
-        <source>Recommend official models</source>
-        <translation type="unfinished">Rekomendasikan model resmi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
-        <source>Disable MCP</source>
-        <translation type="unfinished">Nonaktifkan MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Disarankan untuk menggunakan model resmi &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
-        <source>Quick Open</source>
-        <translation type="unfinished">Buka Cepat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">Peningkatan Server MCP ke Mode Otomatis</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">Server MCP telah ditingkatkan ke mode otomatis, memungkinkan Anda mengakses semua Server MCP hanya dengan sekali klik</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. Ini memungkinkan Anda mengotomasi tugas seperti pengaturan sistem dan pemrosesan file hanya dengan satu klik.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">Penambahan Server MCP telah dipindahkan ke Pengaturan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">Untuk menambahkan lebih banyak Server MCP, buka Pengaturan &gt; Server MCP.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
-        <source>Got it</source>
-        <translation type="unfinished">Mengerti</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
-        <source>Complimentary Model Credits</source>
-        <translation type="unfinished">Kredit Model Gratis</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">Sistem saat ini menawarkan model akun percobaan DeepSeek, yang secara otomatis memperbarui kuota gratis di awal setiap bulan, memungkinkan Anda menggunakannya tanpa khawatir.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
-        <source>Claim Credits</source>
-        <translation type="unfinished">Klaim Kredit</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Dapatkan akun gratis</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
-        <source>Claim Free Credits</source>
-        <translation type="unfinished">Klaim Kredit Gratis</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
-        <source>Successfully Claimed</source>
-        <translation type="unfinished">Berhasil Diklaim</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Gagal Mengklaim. Silakan Coba Lagi.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">Aktifkan Server MCP&amp;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
-        <source>Disable MCP Server</source>
-        <translation type="unfinished">Nonaktifkan Server MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
-        <source>Configure MCP Server</source>
-        <translation type="unfinished">Konfigurasi Server MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI Ikuti/Tulis</translation>
+        <source>Supported files</source>
+        <translation>File yang didukung</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemControlInst</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <source>System Control</source>
-        <translation type="vanished">Kontrol Sistem</translation>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">Beralih ke wallpaper baru. atur kecerahan layar ke 30%...</translation>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
+        <translation>Tanya UOS AI, ucapkan selamat tinggal pada kekhawatiran Anda.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>Log Perubahan</translation>
+    </message>
+    <message>
+        <source>Start Chatting</source>
+        <translation>Mulai Mengobrol</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>Pilih asisten di sebelah kiri, lalu masukkan pertanyaan atau instruksi untuk memulai obrolan baru.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>Interaksi Suara</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>Jika Anda lebih memilih kontrol suara, beralihlah dengan cepat dari entri terkait untuk mengurangi operasi berulang.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>Terus Eksplorasi</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>Gunakan riwayat dan pengaturan untuk melanjutkan tugas Anda dan menyesuaikan model, alat, serta tampilan.</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Pengaturan</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Bantuan</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>Tentang</translation>
+    </message>
+    <message>
+        <source>New Chat</source>
+        <translation>Obrolan Baru</translation>
+    </message>
+    <message>
+        <source>Temporary Chat</source>
+        <translation>Obrolan Sementara</translation>
+    </message>
+    <message>
+        <source>AI Writing</source>
+        <translation>Tulisan AI</translation>
+    </message>
+    <message>
+        <source>AI Translation</source>
+        <translation>Terjemahan AI</translation>
+    </message>
+    <message>
+        <source>AI Knowledge Base</source>
+        <translation>Basis Pengetahuan AI</translation>
+    </message>
+    <message>
+        <source>MCP Server</source>
+        <translation>Server MCP</translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation>Perintah</translation>
+    </message>
+    <message>
+        <source>Agent Store</source>
+        <translation>Toko Agen</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Lainnya</translation>
+    </message>
+    <message>
+        <source>Chat History</source>
+        <translation>Riwayat Obrolan</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hari Ini</translation>
+    </message>
+    <message>
+        <source>Yesterday</source>
+        <translation>Kemarin</translation>
+    </message>
+    <message>
+        <source>Last 7 Days</source>
+        <translation>7 Hari Terakhir</translation>
+    </message>
+    <message>
+        <source>Last 30 Days</source>
+        <translation>30 Hari Terakhir</translation>
+    </message>
+    <message>
+        <source>January</source>
+        <translation>Januari</translation>
+    </message>
+    <message>
+        <source>February</source>
+        <translation>Februari</translation>
+    </message>
+    <message>
+        <source>March</source>
+        <translation>Maret</translation>
+    </message>
+    <message>
+        <source>April</source>
+        <translation>April</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>Mei</translation>
+    </message>
+    <message>
+        <source>June</source>
+        <translation>Juni</translation>
+    </message>
+    <message>
+        <source>July</source>
+        <translation>Juli</translation>
+    </message>
+    <message>
+        <source>August</source>
+        <translation>Agustus</translation>
+    </message>
+    <message>
+        <source>September</source>
+        <translation>September</translation>
+    </message>
+    <message>
+        <source>October</source>
+        <translation>Oktober</translation>
+    </message>
+    <message>
+        <source>November</source>
+        <translation>November</translation>
+    </message>
+    <message>
+        <source>year</source>
+        <translation>tahun</translation>
+    </message>
+    <message>
+        <source>Earlier</source>
+        <translation>Sebelumnya</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>Confirm Deletion</source>
+        <translation>Konfirmasi Penghapusan</translation>
+    </message>
+    <message>
+        <source>Confirm deletion</source>
+        <translation>Konfirmasi penghapusan</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>Setelah dihapus, server ini tidak akan tersedia. Lanjutkan dengan hati-hati.</translation>
+    </message>
+    <message>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation>Tindakan ini akan menghapus semua konten terkait dengan obrolan ini dari UOS AI.</translation>
+    </message>
+    <message>
+        <source>Confirm Delete</source>
+        <translation>Konfirmasi Hapus</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>Batch Manage</source>
+        <translation>Kelola Massal</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Semua</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Pilih Semua</translation>
+    </message>
+    <message>
+        <source>%1 conversations selected</source>
+        <translation>%1 percakapan dipilih</translation>
+    </message>
+    <message>
+        <source>No chat history yet</source>
+        <translation>Belum ada riwayat obrolan</translation>
+    </message>
+    <message>
+        <source>Chat content not found</source>
+        <translation>Konten obrolan tidak ditemukan</translation>
+    </message>
+    <message>
+        <source>DeepThink</source>
+        <translation>DeepThink</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Cari</translation>
+    </message>
+    <message>
+        <source>Attachments</source>
+        <translation>Lampiran</translation>
+    </message>
+    <message>
+        <source>Upload Files</source>
+        <translation>Unggah Berkas</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A</source>
+        <translation>Tanya Jawab Tangkapan Layar</translation>
+    </message>
+    <message>
+        <source>Voice Input</source>
+        <translation>Input Suara</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Kirim</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>Ajukan pertanyaan...</translation>
+    </message>
+    <message>
+        <source>Voice Read</source>
+        <translation>Baca Suara</translation>
+    </message>
+    <message>
+        <source>Stop Reading</source>
+        <translation>Hentikan Membaca</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Buat Ulang</translation>
+    </message>
+    <message>
+        <source>Re-edit</source>
+        <translation>Edit Ulang</translation>
+    </message>
+    <message>
+        <source>Stop Generating</source>
+        <translation>Hentikan Pembuatan</translation>
+    </message>
+    <message>
+        <source>Generation stopped</source>
+        <translation>Pembuatan dihentikan</translation>
+    </message>
+    <message>
+        <source>You stopped this answer, </source>
+        <translation>Anda menghentikan jawaban ini, </translation>
+    </message>
+    <message>
+        <source>please re-edit your question</source>
+        <translation>silakan edit ulang pertanyaan Anda</translation>
+    </message>
+    <message>
+        <source>Back to Bottom</source>
+        <translation>Kembali ke Bawah</translation>
+    </message>
+    <message>
+        <source>Thinking...</source>
+        <translation>Berpikir...</translation>
+    </message>
+    <message>
+        <source>Deep think completed (took %1s)</source>
+        <translation>Pemikiran mendalam selesai (memakan waktu %1d)</translation>
+    </message>
+    <message>
+        <source>Parsing...</source>
+        <translation>Mengurai...</translation>
+    </message>
+    <message>
+        <source>Parsing failed</source>
+        <translation>Penguraian gagal</translation>
+    </message>
+    <message>
+        <source>You can add up to 50 files</source>
+        <translation>Anda dapat menambahkan hingga 50 berkas</translation>
+    </message>
+    <message>
+        <source>Summarize the core content of the file</source>
+        <translation>Ringkas inti konten berkas</translation>
+    </message>
+    <message>
+        <source>Model List</source>
+        <translation>Daftar Model</translation>
+    </message>
+    <message>
+        <source>Smart Recommendation</source>
+        <translation>Rekomendasi Cerdas</translation>
+    </message>
+    <message>
+        <source>Smart switch for best match</source>
+        <translation>Pengalihan cerdas untuk kecocokan terbaik</translation>
+    </message>
+    <message>
+        <source>Local Model</source>
+        <translation>Model Lokal</translation>
+    </message>
+    <message>
+        <source>Online Model</source>
+        <translation>Model Daring</translation>
+    </message>
+    <message>
+        <source>Add Model</source>
+        <translation>Tambah Model</translation>
+    </message>
+    <message>
+        <source>Private Model</source>
+        <translation>Model Pribadi</translation>
+    </message>
+    <message>
+        <source>Official</source>
+        <translation>Resmi</translation>
+    </message>
+    <message>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation>Konten yang dihasilkan AI hanya untuk referensi. Harap verifikasi keakuratannya.</translation>
+    </message>
+    <message>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation>Obrolan sementara tidak disimpan dalam riwayat. Konten akan dihapus sepenuhnya saat keluar.</translation>
+    </message>
+    <message>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation>Mencapai maksimum 10 obrolan bersamaan. Silakan coba lagi nanti.</translation>
+    </message>
+    <message>
+        <source>View Now</source>
+        <translation>Lihat Sekarang</translation>
+    </message>
+    <message>
+        <source>Remind Me Later</source>
+        <translation>Ingatkan Saya Nanti</translation>
+    </message>
+    <message>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation>Inspirasi tak terbatas, menulis tanpa cemas</translation>
+    </message>
+    <message>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation>Aktifkan untuk mencari web guna mendapatkan referensi yang lebih real-time, komprehensif, dan akurat.</translation>
+    </message>
+    <message>
+        <source>Upload files/images as references</source>
+        <translation>Unggah berkas/gambar sebagai referensi</translation>
+    </message>
+    <message>
+        <source>Reference Outline / Local File</source>
+        <translation>Garis Besar Referensi / File Lokal</translation>
+    </message>
+    <message>
+        <source>As reference material / As outline file</source>
+        <translation>Sebagai bahan referensi / Sebagai file garis besar</translation>
+    </message>
+    <message>
+        <source>File Upload</source>
+        <translation>Unggah File</translation>
+    </message>
+    <message>
+        <source>As Material</source>
+        <translation>Sebagai Bahan</translation>
+    </message>
+    <message>
+        <source>As Outline</source>
+        <translation>Sebagai Garis Besar</translation>
+    </message>
+    <message>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>Hanya mendukung pengunggahan 1 file garis besar</translation>
+    </message>
+    <message>
+        <source>Local Materials</source>
+        <translation>Bahan Lokal</translation>
+    </message>
+    <message>
+        <source>File Outline</source>
+        <translation>Garis Besar File</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Garis Besar</translation>
+    </message>
+    <message>
+        <source>View All</source>
+        <translation>Lihat Semua</translation>
+    </message>
+    <message>
+        <source>Recent Creations</source>
+        <translation>Pembuatan Terbaru</translation>
+    </message>
+    <message>
+        <source>Upload File</source>
+        <translation>Unggah File</translation>
+    </message>
+    <message>
+        <source>Reference Outline</source>
+        <translation>Garis Besar Referensi</translation>
+    </message>
+    <message>
+        <source>Local File</source>
+        <translation>File Lokal</translation>
+    </message>
+    <message>
+        <source>Heading</source>
+        <translation>Judul</translation>
+    </message>
+    <message>
+        <source>Export Document</source>
+        <translation>Ekspor Dokumen</translation>
+    </message>
+    <message>
+        <source>Exit Full Screen</source>
+        <translation>Keluar dari Layar Penuh</translation>
+    </message>
+    <message>
+        <source>Untitled Document</source>
+        <translation>Dokumen Tanpa Judul</translation>
+    </message>
+    <message>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation>Jika Anda tidak ingin bahan lokal diunggah, Anda dapat melakukan hal berikut sebelum membuat konten:</translation>
+    </message>
+    <message>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation>1. Beralih ke model lokal (misalnya, DeepSeek-R1-1.5B) atau model yang disebarkan secara pribadi</translation>
+    </message>
+    <message>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation>2. Matikan &quot;Pencarian Web&quot;</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation>Materi akan diunggah ke model online untuk dianalisis. Lanjutkan pembuatan?</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation>Materi akan diunggah ke model online (%1) untuk dianalisis. Lanjutkan pembuatan?</translation>
+    </message>
+    <message>
+        <source>Enable Privacy Mode</source>
+        <translation>Aktifkan Mode Privasi</translation>
+    </message>
+    <message>
+        <source>Continue Generating</source>
+        <translation>Lanjutkan Pembuatan</translation>
+    </message>
+    <message>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation>Anda dapat memasukkan persyaratan lebih lanjut untuk mengoptimalkan atau menyesuaikan konten yang dibuat.</translation>
+    </message>
+    <message>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation>Terdeteksi kerangka lokal diunggah. Menganalisis konten kerangka...</translation>
+    </message>
+    <message>
+        <source>Generating outline content...</source>
+        <translation>Membuat konten kerangka...</translation>
+    </message>
+    <message>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Kerangka yang dapat diedit telah dibuat. Setelah mengonfirmasi, klik tombol biru di bawah untuk melanjutkan ke pembuatan dokumen.</translation>
+    </message>
+    <message>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation>Tidak dapat mengurai file kerangka yang diunggah. Silakan unggah ulang.</translation>
+    </message>
+    <message>
+        <source>Re-upload Outline</source>
+        <translation>Unggah Ulang Kerangka</translation>
+    </message>
+    <message>
+        <source>Directly generate outline using AI</source>
+        <translation>Buat kerangka langsung menggunakan AI</translation>
+    </message>
+    <message>
+        <source>Add sub-chapter</source>
+        <translation>Tambah sub-bab</translation>
+    </message>
+    <message>
+        <source>Delete sub-chapter</source>
+        <translation>Hapus sub-bab</translation>
+    </message>
+    <message>
+        <source>Delete chapter</source>
+        <translation>Hapus bab</translation>
+    </message>
+    <message>
+        <source>Add chapter</source>
+        <translation>Tambah bab</translation>
+    </message>
+    <message>
+        <source>Enter chapter title</source>
+        <translation>Masukkan judul bab</translation>
+    </message>
+    <message>
+        <source>Delete this heading?</source>
+        <translation>Hapus heading ini?</translation>
+    </message>
+    <message>
+        <source>Generate document from outline</source>
+        <translation>Buat dokumen dari kerangka</translation>
+    </message>
+    <message>
+        <source>Save as Word</source>
+        <translation>Simpan sebagai Word</translation>
+    </message>
+    <message>
+        <source>Save as PDF</source>
+        <translation>Simpan sebagai PDF</translation>
+    </message>
+    <message>
+        <source>Save as Markdown</source>
+        <translation>Simpan sebagai Markdown</translation>
+    </message>
+    <message>
+        <source>Saving...</source>
+        <translation>Menyimpan...</translation>
+    </message>
+    <message>
+        <source>Saved successfully!</source>
+        <translation>Berhasil disimpan!</translation>
+    </message>
+    <message>
+        <source>Failed to save, please try again.</source>
+        <translation>Gagal menyimpan, silakan coba lagi.</translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Urungkan</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation>Ulangi</translation>
+    </message>
+    <message>
+        <source>Body Text</source>
+        <translation>Teks Isi</translation>
+    </message>
+    <message>
+        <source>Heading %1</source>
+        <translation>Judul %1</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>Tebal</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>Miring</translation>
+    </message>
+    <message>
+        <source>Strikethrough</source>
+        <translation>Coret</translation>
+    </message>
+    <message>
+        <source>Link Text</source>
+        <translation>Teks Tautan</translation>
+    </message>
+    <message>
+        <source>Bulleted List</source>
+        <translation>Daftar Bullet</translation>
+    </message>
+    <message>
+        <source>Numbered List</source>
+        <translation>Daftar Bernomor</translation>
+    </message>
+    <message>
+        <source>Decrease Indent</source>
+        <translation>Kurangi Indentasi</translation>
+    </message>
+    <message>
+        <source>Increase Indent</source>
+        <translation>Tambah Indentasi</translation>
+    </message>
+    <message>
+        <source>Blockquote</source>
+        <translation>Kutipan Blok</translation>
+    </message>
+    <message>
+        <source>Divider</source>
+        <translation>Pemisah</translation>
+    </message>
+    <message>
+        <source>Copy Full Text</source>
+        <translation>Salin Teks Penuh</translation>
+    </message>
+    <message>
+        <source>Print Document</source>
+        <translation>Cetak Dokumen</translation>
+    </message>
+    <message>
+        <source>Share Document</source>
+        <translation>Bagikan Dokumen</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>Perkecil Tampilan</translation>
+    </message>
+    <message>
+        <source>Full Screen</source>
+        <translation>Layar Penuh</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Tutup</translation>
+    </message>
+    <message>
+        <source>Insert Link</source>
+        <translation>Sisipkan Tautan</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>Teks:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>Tautan:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>Silakan masukkan tautan yang valid</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>Teks tautan</translation>
+    </message>
+    <message>
+        <source>Please enter the text to be translated first.</source>
+        <translation>Silakan masukkan teks yang akan diterjemahkan terlebih dahulu.</translation>
+    </message>
+    <message>
+        <source>Identifying source language...</source>
+        <translation>Mengidentifikasi bahasa sumber...</translation>
+    </message>
+    <message>
+        <source>My MCP Server</source>
+        <translation>Server MCP Saya</translation>
+    </message>
+    <message>
+        <source>Add MCP Server</source>
+        <translation>Tambah Server MCP</translation>
+    </message>
+    <message>
+        <source>Delete MCP Server</source>
+        <translation>Hapus Server MCP</translation>
+    </message>
+    <message>
+        <source>Edit MCP Server</source>
+        <translation>Edit Server MCP</translation>
+    </message>
+    <message>
+        <source>Built-in Only</source>
+        <translation>Hanya Bawaan</translation>
+    </message>
+    <message>
+        <source>Custom Added Only</source>
+        <translation>Hanya Tambahan Kustom</translation>
+    </message>
+    <message>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>Untuk menggunakan MCP&amp;Skills, instal UOS AI Agent dari App Store terlebih dahulu.</translation>
+    </message>
+    <message>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>Untuk menggunakan Basis Pengetahuan AI, instal Plugin Embedding dari App Store terlebih dahulu.</translation>
+    </message>
+    <message>
+        <source>Install Now</source>
+        <translation>Pasang Sekarang</translation>
+    </message>
+    <message>
+        <source>System Settings</source>
+        <translation>Pengaturan Sistem</translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation>Bluetooth</translation>
+    </message>
+    <message>
+        <source>Wireless Network</source>
+        <translation>Jaringan Nirkabel</translation>
+    </message>
+    <message>
+        <source>DND Mode</source>
+        <translation>Mode Jangan Ganggu</translation>
+    </message>
+    <message>
+        <source>Eye Comfort</source>
+        <translation>Kenyamanan Mata</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>Kecerahan</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>Volume</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>Ukuran Font</translation>
+    </message>
+    <message>
+        <source>App Store</source>
+        <translation>Toko Aplikasi</translation>
+    </message>
+    <message>
+        <source>Schedule Management</source>
+        <translation>Manajemen Jadwal</translation>
+    </message>
+    <message>
+        <source>Click to download</source>
+        <translation>Klik untuk mengunduh</translation>
+    </message>
+    <message>
+        <source>&lt;10k downloads</source>
+        <translation>&lt;10k unduhan</translation>
+    </message>
+    <message>
+        <source>&lt;100k downloads</source>
+        <translation>&lt;100k unduhan</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100k+ unduhan</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 bintang</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>Klik untuk buka aplikasi</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>Minggu</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>Senin</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>Selasa</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>Rabu</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>Kamis</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>Jumat</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>Sabtu</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>Server MCP</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>Pilih Semua Server MCP</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>Anda dapat menambah dan mengelola server MCP</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>Deskripsikan</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>Konfigurasi JSON</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>Silakan tempel kode konfigurasi JSON MCP ke dalam kotak input.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>Deskripsikan fungsi server MCP untuk memfasilitasi alat pencarian cepat</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Kembali</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>Kredit Gratis Dikirim</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Anda telah menggunakan kredit generasi gratis untuk akun uji coba Anda. Kami telah memberikan 200 kredit gratis tambahan yang berlaku bulan ini. Jelajahi lebih banyak fitur dan buka kemampuan tak terbatas UOS AI!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>Tidak Sekarang</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>Saya adalah {{masukkan identitas/jabatan}}. Bantu saya menulis {{laporan/artikel/garis besar/artikel akun publik WeChat/pemberitahuan/laporan penelitian/ringkasan kerja/pidato}} tentang {{masukkan topik}}, dengan panjang sekitar {{1000}} kata. Persyaratan kontennya adalah {{masukkan persyaratan/fokus konten/gaya penulisan, dll..}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>Kelola Riwayat Chat</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>Chat Suara</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Perluas</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>Ciutkan</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>Diedit pada</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Dibuat</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>Anda memiliki %1 obrolan yang baru dijawab</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>Riwayat Pencarian</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>Konfirmasi hapus percakapan ini</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>Ini akan menghapus semua konten terkait dari UOS AI</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>Gunakan sekarang</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>Keahlian Saya</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>Buka direktori instalasi</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Segarkan</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>Impor Keahlian</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>Anda dapat menambah dan mengelola Keahlian</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>Keluar dari Obrolan Suara</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>File %1 berikut tidak valid dan tidak tersedia. Lanjutkan?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>File berikut tidak valid dan tidak tersedia. Lanjutkan?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>Sebelumnya</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: Peningkatan UI Sepenuhnya Baru</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>Mode Jendela Baru untuk pengalaman interaksi yang segar</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>Navigasi bilah sisi yang jelas untuk akses terorganisir dan kemudahan penggunaan</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>Ruang kerja yang lebih luas dan terfokus dengan konten yang lebih kaya</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>Hierarki yang lebih jelas untuk menjaga tugas inti tetap fokus dan imersif</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>Multi-tugas untuk menghemat waktu berharga Anda</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>Multi-tugas latar belakang yang hening: Tidak perlu menunggu lagi</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>Tetapkan tugas kapan saja tanpa mengganggu alur kerja Anda</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>Dapatkan pembaruan progres instan tanpa pemantauan konstan</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>Menulis layar terpisah yang imersif: Akurat, aman, dan dapat dilacak</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>Obrolan &amp; edit layar terpisah: Tidak perlu lagi berpindah jendela</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>&quot;Pemberian makan&quot; data mendalam untuk pembuatan konten yang terukur</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>Buat kerangka terlebih dahulu dengan koreksi manual dan ekspor satu klik</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>Model di perangkat/Pribadi menjamin privasi dan keamanan data</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>Kontrol sistem &amp; Keterampilan luas: Semua dalam satu perintah</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>Kontrol sistem visual: Sesuaikan font, aktifkan Wi-Fi, dan lainnya</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>Keterampilan kantor frekuensi tinggi: Menulis, menerjemahkan, dan menggabungkan</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>Impor Keterampilan satu klik untuk membuka kemungkinan tak terbatas</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>Manajemen batch dan pencarian presisi untuk riwayat</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>Pencarian cepat global: Akses riwayat dalam hitungan detik</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>Filtering berbasis Agen untuk pencarian riwayat obrolan yang presisi</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>Manajemen batch yang efisien untuk ruang kerja yang bersih dan terorganisir</translation>
+    </message>
+    <message>
+        <source>Go to configuration</source>
+        <translation>Pergi ke konfigurasi</translation>
+    </message>
+    <message>
+        <source>No account</source>
+        <translation>Tidak ada akun</translation>
+    </message>
+    <message>
+        <source>Input question</source>
+        <translation>Pertanyaan input</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Konten yang dihasilkan oleh AI hanya untuk referensi, harap perhatikan keakuratan informasi.</translation>
+    </message>
+    <message>
+        <source>Welcome to UOS AI</source>
+        <translation>Selamat datang di UOS AI</translation>
+    </message>
+    <message>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation>Berikut adalah beberapa hal yang dapat dilakukan UOS AI untuk Anda</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Berhenti</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>Putar</translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation>Coba lagi</translation>
+    </message>
+    <message>
+        <source>Clear conversation history</source>
+        <translation>Hapus riwayat percakapan</translation>
+    </message>
+    <message>
+        <source>Please connect the microphone and try again</source>
+        <translation>Harap hubungkan mikrofon dan coba lagi</translation>
+    </message>
+    <message>
+        <source>Chat history cleared</source>
+        <translation>Riwayat percakapan dihapus</translation>
+    </message>
+    <message>
+        <source>Click to start/stop recording</source>
+        <translation>Klik untuk memulai/menghentikan perekaman</translation>
+    </message>
+    <message>
+        <source>Listening</source>
+        <translation>Mendengarkan</translation>
+    </message>
+    <message>
+        <source>Sleeping</source>
+        <translation>Tidur</translation>
+    </message>
+    <message>
+        <source>No microphone detected</source>
+        <translation>Mikrofon tidak terdeteksi</translation>
+    </message>
+    <message>
+        <source>Connection failed, click to try again</source>
+        <translation>Koneksi gagal, klik untuk mencoba lagi</translation>
+    </message>
+    <message>
+        <source>Click on the animation%1 to activate</source>
+        <translation>Klik pada animasi%1 untuk mengaktifkan</translation>
+    </message>
+    <message>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation>Input suara tidak tersedia sementara, harap periksa jaringan!</translation>
+    </message>
+    <message>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>Tidak dapat terhubung ke server, harap periksa jaringan Anda atau coba lagi nanti.</translation>
+    </message>
+    <message>
+        <source>Voice conversation</source>
+        <translation>Percakapan suara</translation>
+    </message>
+    <message>
+        <source>Click the animation or press Enter to send</source>
+        <translation>Klik animasi atau tekan Enter untuk mengirim</translation>
+    </message>
+    <message>
+        <source>Stop recording after %1 seconds</source>
+        <translation>Berhenti merekam setelah %1 detik</translation>
+    </message>
+    <message>
+        <source>Thinking</source>
+        <translation>Berpikir</translation>
+    </message>
+    <message>
+        <source>Click animation to interrupt</source>
+        <translation>Klik animasi untuk mengganggu</translation>
+    </message>
+    <message>
+        <source>Answering</source>
+        <translation>Menjawab</translation>
+    </message>
+    <message>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation>Kuota akun gratis Anda telah habis, silakan konfigurasi akun model Anda untuk terus menggunakannya.</translation>
+    </message>
+    <message>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation>Akun gratis Anda telah kedaluwarsa, silakan konfigurasi akun model Anda untuk terus menggunakannya.</translation>
+    </message>
+    <message>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI memerlukan akun model AI untuk dikonfigurasi sebelum dapat digunakan. Silakan konfigurasi akun model terlebih dahulu.</translation>
+    </message>
+    <message>
+        <source>Activate</source>
+        <translation>Aktifkan</translation>
+    </message>
+    <message>
+        <source>Voice input</source>
+        <translation>Input suara</translation>
+    </message>
+    <message>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation>Siaran suara tidak tersedia sementara, silakan periksa jaringan!</translation>
+    </message>
+    <message>
+        <source>Turn off voice conversation</source>
+        <translation>Matikan percakapan suara</translation>
+    </message>
+    <message>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation>Gambar telah dibuat, silakan beralih ke antarmuka obrolan untuk melihatnya.</translation>
+    </message>
+    <message>
+        <source>No account, please configure an account</source>
+        <translation>Tidak ada akun, silakan konfigurasi akun</translation>
+    </message>
+    <message>
+        <source>Answer each question up to 5 times</source>
+        <translation>Jawab setiap pertanyaan hingga 5 kali</translation>
+    </message>
+    <message>
+        <source>Copied successfully</source>
+        <translation>Berhasil disalin</translation>
+    </message>
+    <message>
+        <source>Sound output device not detected</source>
+        <translation>Perangkat output suara tidak terdeteksi</translation>
+    </message>
+    <message>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation>Perangkat output suara tidak terdeteksi, silakan periksa dan coba lagi!</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>Mode</translation>
+    </message>
+    <message>
+        <source>Window Mode</source>
+        <translation>Mode Jendela</translation>
+    </message>
+    <message>
+        <source>Sidebar Mode</source>
+        <translation>Mode Bilah Sisi</translation>
+    </message>
+    <message>
+        <source>Assistant List</source>
+        <translation>Daftar Asisten</translation>
+    </message>
+    <message>
+        <source>Agent List</source>
+        <translation>Daftar Agen</translation>
+    </message>
+    <message>
+        <source>UOS System Assistant</source>
+        <translation>Asisten Sistem UOS</translation>
+    </message>
+    <message>
+        <source>Deepin System Assistant</source>
+        <translation>Asisten Sistem Deepin</translation>
+    </message>
+    <message>
+        <source>Personal Knowledge Assistant</source>
+        <translation>Asisten Pengetahuan Pribadi</translation>
+    </message>
+    <message>
+        <source>Please configure the knowledge base</source>
+        <translation>Silakan konfigurasi basis pengetahuan</translation>
+    </message>
+    <message>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>Sebelum menggunakan [Asisten Pengetahuan Pribadi], Anda perlu mengonfigurasi basis pengetahuan. Setelah mengonfigurasi basis pengetahuan, AI akan menjawab pertanyaan atau menghasilkan konten berdasarkan konten yang telah Anda konfigurasi di basis pengetahuan.</translation>
+    </message>
+    <message>
+        <source>Please configure the large model</source>
+        <translation>Silakan konfigurasi model besar</translation>
+    </message>
+    <message>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>Asisten pengetahuan pribadi hanya dapat digunakan setelah mengonfigurasi model besar.</translation>
+    </message>
+    <message>
+        <source>To configure</source>
+        <translation>Untuk mengonfigurasi</translation>
+    </message>
+    <message>
+        <source>To install</source>
+        <translation>Untuk memasang</translation>
+    </message>
+    <message>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation>Silakan pasang [EmbeddingPlugins]</translation>
+    </message>
+    <message>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation>Asisten ini memerlukan pemasangan EmbeddingPlugins untuk dapat dijalankan</translation>
+    </message>
+    <message>
+        <source>Drag files here to add them.</source>
+        <translation>Seret file ke sini untuk menambahkannya.</translation>
+    </message>
+    <message>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation>Anda hanya dapat menambahkan 3 file, jenis file yang didukung meliputi: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, file kode, dll.</translation>
+    </message>
+    <message>
+        <source>You can only add a maximum of one file.</source>
+        <translation>Anda hanya dapat menambahkan maksimal satu file.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Format file tidak didukung.</translation>
+    </message>
+    <message>
+        <source>Summarize the key content of the file.</source>
+        <translation>Ringkas konten utama file.</translation>
+    </message>
+    <message>
+        <source>File Error</source>
+        <translation>Kesalahan File</translation>
+    </message>
+    <message>
+        <source>File has been deleted.</source>
+        <translation>File telah dihapus.</translation>
+    </message>
+    <message>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation>Ukuran file melebihi batas 100MB.</translation>
+    </message>
+    <message>
+        <source>Upload a document</source>
+        <translation>Unggah dokumen</translation>
+    </message>
+    <message>
+        <source>File deleted</source>
+        <translation>File dihapus</translation>
+    </message>
+    <message>
+        <source>No text was parsed</source>
+        <translation>Tidak ada teks yang diuraikan</translation>
+    </message>
+    <message>
+        <source>Reference</source>
+        <translation>Referensi</translation>
+    </message>
+    <message>
+        <source>Instruction</source>
+        <translation>Instruksi</translation>
+    </message>
+    <message>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation>Ketik &quot;/&quot; di kotak input untuk mengaktifkan.</translation>
+    </message>
+    <message>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation>Silakan masukkan; “Ctrl+Enter” untuk mengganti baris.</translation>
+    </message>
+    <message>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation>Masukkan pertanyaan Anda, atau ketik &quot;/&quot; untuk memilih perintah
+&quot;Ctrl+Enter&quot; untuk memulai baris baru</translation>
+    </message>
+    <message>
+        <source>Search complete.</source>
+        <translation>Pencarian selesai.</translation>
+    </message>
+    <message>
+        <source>Click to view results</source>
+        <translation>Klik untuk melihat hasil</translation>
+    </message>
+    <message>
+        <source>edit</source>
+        <translation>edit</translation>
+    </message>
+    <message>
+        <source>save</source>
+        <translation>simpan</translation>
+    </message>
+    <message>
+        <source>copy</source>
+        <translation>salin</translation>
+    </message>
+    <message>
+        <source>lines of code collapsed</source>
+        <translation>baris kode dilipat</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>Simpan Sebagai</translation>
+    </message>
+    <message>
+        <source>Thinking has stopped</source>
+        <translation>Berpikir telah berhenti</translation>
+    </message>
+    <message>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation>Berpikir mendalam (%1 detik)</translation>
+    </message>
+    <message>
+        <source>New Conversation</source>
+        <translation>Percakapan Baru</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Riwayat</translation>
+    </message>
+    <message>
+        <source>No History Records</source>
+        <translation>Tidak Ada Riwayat</translation>
+    </message>
+    <message>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation>Apakah Anda yakin ingin menghapus percakapan ini? Percakapan tidak dapat dipulihkan setelah dihapus.</translation>
+    </message>
+    <message>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation>Agen %1 yang digunakan dalam percakapan ini telah dihapus</translation>
+    </message>
+    <message>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation>Percakapan ini tidak dapat dilihat. Untuk melihatnya, silakan instal agen %1 dan coba lagi.</translation>
+    </message>
+    <message>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation>Model percakapan asli telah dihapus. Kami telah beralih ke model baru agar Anda dapat melanjutkan percakapan.</translation>
+    </message>
+    <message>
+        <source>Recommendations</source>
+        <translation>Rekomendasi</translation>
+    </message>
+    <message>
+        <source>No Model</source>
+        <translation>Tidak Ada Model</translation>
+    </message>
+    <message>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation>Tidak ada model yang tersedia. Silakan instal atau konfigurasi model di pengaturan.</translation>
+    </message>
+    <message>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation>Silakan Jelaskan Tema Konten dan Persyaratan untuk Kreasi Anda.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation>Silakan Masukkan Konten yang Ingin Anda Terjemahkan dan Tentukan Bahasa Tujuan. Terjemahan default adalah ke Bahasa Mandarin.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation>Silakan Masukkan Teks yang Perlu Anda Proses dan Tentukan Persyaratan Anda.</translation>
+    </message>
+    <message>
+        <source>New Agent Added</source>
+        <translation>Agen Baru Ditambahkan</translation>
+    </message>
+    <message>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation>Agen Penulisan, Pemrosesan Teks, dan Terjemahan baru telah ditambahkan. Lihat sekarang.</translation>
+    </message>
+    <message>
+        <source>Try it</source>
+        <translation>Coba</translation>
+    </message>
+    <message>
+        <source>Write an article based on the following document:</source>
+        <translation>Tulis artikel berdasarkan dokumen berikut:</translation>
+    </message>
+    <message>
+        <source>Translate the following document into English:</source>
+        <translation>Terjemahkan dokumen berikut ke dalam Bahasa Inggris:</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server</source>
+        <translation>Tambah Server Mcp</translation>
+    </message>
+    <message>
+        <source>Add Server</source>
+        <translation>Tambah Server</translation>
+    </message>
+    <message>
+        <source>Add failed! Error reason:</source>
+        <translation>Penambahan gagal! Alasan kesalahan:</translation>
+    </message>
+    <message>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation>Lingkungan MCP hilang. Silakan instal 【UOS AI Agent】</translation>
+    </message>
+    <message>
+        <source>Calling</source>
+        <translation>Memanggil</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>Selesai</translation>
+    </message>
+    <message>
+        <source>Call Failed</source>
+        <translation>Panggilan Gagal</translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation>Dibatalkan</translation>
+    </message>
+    <message>
+        <source>params</source>
+        <translation>parameter</translation>
+    </message>
+    <message>
+        <source>result</source>
+        <translation>hasil</translation>
+    </message>
+    <message>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Untuk Server MCP, beralih ke model resmi yang dirilis &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation>Masukkan perintah Server MCP, misalnya, &quot;Ubah sistem ke mode gelap untuk saya&quot;</translation>
+    </message>
+    <message>
+        <source>Agent server is not available</source>
+        <translation>Server Agen tidak tersedia</translation>
+    </message>
+    <message>
+        <source>Agent server exception</source>
+        <translation>Pengecualian server Agen</translation>
+    </message>
+    <message>
+        <source>MCP server is not available</source>
+        <translation>Server MCP tidak tersedia</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Konfirmasi</translation>
+    </message>
+    <message>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation>Otomatiskan tugas multi-file dan multi-aplikasi dengan satu perintah menggunakan Layanan MCP. Coba sekarang!</translation>
+    </message>
+    <message>
+        <source>Use later</source>
+        <translation>Gunakan nanti</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server</source>
+        <translation>Aktifkan Server MCP</translation>
+    </message>
+    <message>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation>Setelah menginstal lingkungan MCP &quot;UOS AI Agent&quot;, klik </translation>
+    </message>
+    <message>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation> dan pilih &quot;uos-mcp&quot; dalam daftar server MCP.</translation>
+    </message>
+    <message>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation>Coba katakan: &quot;Ubah sistem ke mode gelap&quot;.</translation>
+    </message>
+    <message>
+        <source>Try it now</source>
+        <translation>Coba sekarang</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation>Tambahkan Server MCP[GuidePage]</translation>
+    </message>
+    <message>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation>Pengguna baru: Pasang lingkungan MCP &quot;UOS AI Agent&quot; melalui App Store.</translation>
+    </message>
+    <message>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation>Format file JSON salah, silakan periksa dan kirim ulang</translation>
+    </message>
+    <message>
+        <source>Install Now &gt;</source>
+        <translation>Pasang Sekarang &gt;</translation>
+    </message>
+    <message>
+        <source>General Chat</source>
+        <translation>Obrolan Umum</translation>
+    </message>
+    <message>
+        <source>Now in Private Chat</source>
+        <translation>Sekarang dalam Obrolan Pribadi</translation>
+    </message>
+    <message>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation>Pesan Obrolan Pribadi tidak disimpan dalam riwayat dan akan dihapus secara permanen saat Anda meninggalkan obrolan.</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation>Tanya Jawab Tangkapan Layar    Pintasan (Ctrl+Alt+Q), mendukung hingga 3 gambar.</translation>
+    </message>
+    <message>
+        <source>Cannot be used during screen recording</source>
+        <translation>Tidak dapat digunakan saat perekaman layar</translation>
+    </message>
+    <message>
+        <source>You can upload up to 3 files or image</source>
+        <translation>Anda dapat mengunggah hingga 3 file atau gambar</translation>
+    </message>
+    <message>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation>Silakan hapus file yang tidak normal dan kirim ulang</translation>
+    </message>
+    <message>
+        <source>Add Private Chat</source>
+        <translation>Tambah Obrolan Pribadi</translation>
+    </message>
+    <message>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation>Tambah [Tanya Jawab Tangkapan Layar]</translation>
+    </message>
+    <message>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation>Ambil tangkapan layar dan kirim isinya ke UOS AI. Anda juga dapat mengunggah gambar secara langsung.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Berikutnya</translation>
+    </message>
+    <message>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation>Tambah [Mode Obrolan Pribadi] - Obrolan tidak akan disimpan.</translation>
+    </message>
+    <message>
+        <source>No text extracted</source>
+        <translation>Tidak ada teks yang diekstrak</translation>
+    </message>
+    <message>
+        <source>Image size exceeds 15 MB</source>
+        <translation>Ukuran gambar melebihi 15 MB</translation>
+    </message>
+    <message>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation>Setelah membuka basis pengetahuan, jawaban akan berdasarkan pada isinya. Kecepatan respons bergantung pada performa mesin dan ukuran basis pengetahuan.</translation>
+    </message>
+    <message>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation>Basis pengetahuan tidak tersedia saat perintah atau MCP apa pun dipilih.</translation>
+    </message>
+    <message>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation>MCP dinonaktifkan saat basis pengetahuan aktif.</translation>
+    </message>
+    <message>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation>Perintah dinonaktifkan saat basis pengetahuan aktif.</translation>
+    </message>
+    <message>
+        <source>Copy succeeded.</source>
+        <translation>Penyalinan berhasil.</translation>
+    </message>
+    <message>
+        <source>Copy failed. Please try again.</source>
+        <translation>Penyalinan gagal. Silakan coba lagi.</translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation>Mencari</translation>
+    </message>
+    <message>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation>%1 dokumen referensi telah diperoleh (%2s)</translation>
+    </message>
+    <message>
+        <source>Clear History</source>
+        <translation>Hapus Riwayat</translation>
+    </message>
+    <message>
+        <source>Delete all records?</source>
+        <translation>Hapus semua catatan?</translation>
+    </message>
+    <message>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation>Setelah dihapus, konten tidak dapat dipulihkan!</translation>
+    </message>
+    <message>
+        <source>Recommend official models</source>
+        <translation>Rekomendasikan model resmi</translation>
+    </message>
+    <message>
+        <source>Disable MCP</source>
+        <translation>Nonaktifkan MCP</translation>
+    </message>
+    <message>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Disarankan untuk menggunakan model resmi &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>Buka Cepat</translation>
+    </message>
+    <message>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation>Peningkatan Server MCP ke Mode Otomatis</translation>
+    </message>
+    <message>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation>Server MCP telah ditingkatkan ke mode otomatis, memungkinkan Anda mengakses semua Server MCP hanya dengan satu klik </translation>
+    </message>
+    <message>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation>. Ini memungkinkan Anda mengotomatisasi tugas seperti pengaturan sistem dan pemrosesan file hanya dengan satu klik.</translation>
+    </message>
+    <message>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation>Menambahkan Server Server telah dipindahkan ke Pengaturan.</translation>
+    </message>
+    <message>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation>Untuk menambahkan lebih banyak Server MCP, buka Pengaturan &gt; Server MCP.</translation>
+    </message>
+    <message>
+        <source>Got it</source>
+        <translation>Mengerti</translation>
+    </message>
+    <message>
+        <source>Complimentary Model Credits</source>
+        <translation>Kredit Model Gratis</translation>
+    </message>
+    <message>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation>Sistem saat ini menawarkan model akun uji coba DeepSeek, yang secara otomatis memperbarui kuota gratis di awal setiap bulan, memungkinkan Anda menggunakannya tanpa khawatir.</translation>
+    </message>
+    <message>
+        <source>Claim Credits</source>
+        <translation>Klaim Kredit</translation>
+    </message>
+    <message>
+        <source>Get a free account</source>
+        <translation>Dapatkan akun gratis</translation>
+    </message>
+    <message>
+        <source>Claim Free Credits</source>
+        <translation>Klaim Kredit Gratis</translation>
+    </message>
+    <message>
+        <source>Successfully Claimed</source>
+        <translation>Berhasil Diklaim</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation>Gagal Mengklaim. Silakan Coba Lagi.</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server&amp;</source>
+        <translation>Aktifkan Server MCP</translation>
+    </message>
+    <message>
+        <source>Disable MCP Server</source>
+        <translation>Nonaktifkan Server MCP</translation>
+    </message>
+    <message>
+        <source>Configure MCP Server</source>
+        <translation>Konfigurasi Server MCP</translation>
+    </message>
+    <message>
+        <source>Enabling MCP Server Features</source>
+        <translation>Mengaktifkan Fitur Server MCP</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>Beberapa fitur server MCP pihak ketiga memiliki risiko tertentu. Harap gunakan dengan hati-hati. Jika Anda mengaktifkan layanan ini, alat bawaan akan mendeteksi dan secara otomatis mengunduh dependensi yang diperlukan. Proses pengunduhan ini akan membebankan biaya data. Harap sadari risiko ini dan lanjutkan dengan hati-hati.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>Saya telah mengerti dan setuju untuk menggunakan layanan ini</translation>
+    </message>
+    <message>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation>UOS AI FollowAlong/Tulis</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">Teks yang Anda pilih telah melebihi batas 5000 karakter.</translation>
+        <translation>Teks yang Anda pilih telah melebihi batas 5000 karakter.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
         <translation>Teks yang Anda pilih telah melebihi batas 2000 karakter.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
         <translation>Jaringan offline, hentikan teks ke suara</translation>
     </message>
@@ -8831,107 +4637,136 @@ Masukan: %1</translation>
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">Kecerahan sudah maksimum dan tidak dapat ditingkatkan lagi.</translation>
+        <translation>Kecerahan sudah maksimal dan tidak dapat ditingkatkan lagi.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">Kecerahan sudah minimum dan tidak dapat dikurangi lagi.</translation>
+        <translation>Kecerahan sudah minimum dan tidak dapat diturunkan lagi.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Jadwal Rapat AI</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">Memori sistem Anda adalah %0.</translation>
+        <translation>Memori sistem Anda adalah %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">Antarmuka pengaturan bahasa telah dibuka. Harap atur di antarmuka ini.</translation>
+        <translation>Antarmuka pengaturan bahasa telah dibuka. Silakan atur di antarmuka ini.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">Mode saat ini sudah dalam mode %1.</translation>
+        <translation>Mode saat ini sudah merupakan mode %1.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">Tidak dapat menutup karena mode saat ini %1 tidak sesuai dengan mode target.</translation>
+        <translation>Tidak dapat menutup karena mode saat ini %1 tidak sesuai dengan mode target.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">Mode keseimbangan tidak dapat dimatikan.</translation>
+        <translation>Mode keseimbangan tidak dapat dimatikan.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">Layar kunci telah dibuka untuk Anda</translation>
+        <translation>Layar kunci telah dibuka untuk Anda</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">Pengambilan tangkapan layar atau perekaman telah selesai</translation>
+        <translation>Tangkapan layar atau perekaman telah selesai</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">Hanya satu layar, tidak dapat mengubah mode layar.</translation>
+        <translation>Hanya ada satu layar, mode layar tidak dapat diganti.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">Ini sama dengan mode tampilan saat ini. Silakan coba lagi.</translation>
+        <translation>Sama dengan mode tampilan saat ini. Silakan coba lagi.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">Hanya satu layar, tidak dapat mengubah layar.</translation>
+        <translation>Hanya ada satu layar, layar tidak dapat diganti.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">Perintah Anda telah dikeluarkan.</translation>
+        <translation>Perintah Anda telah diterbitkan.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal mengubah nama file %1</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah nama massal selesai, %1 file berhasil diubah nama, %2 file gagal.
+Detail kesalahan:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>Klien email telah dibuka, silakan konfirmasi untuk mengirim</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Toko aplikasi telah dibuka, menyiapkan untuk menginstal aplikasi: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>Target toko aplikasi kosong</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>Gagal membuka target Toko Aplikasi: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>Toko aplikasi telah dibuka untuk: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>Dapatkan penggunaan memori sistem</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>Dapatkan penggunaan CPU sistem</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>Dapatkan informasi disk sistem</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>Beralih ke tema gelap</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>Beralih ke tema terang</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>Ubah latar belakang desktop</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>Beralih mode dock</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>Aktifkan mode pelindung mata</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
         <translation>Perbarui</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
         <translation>Batalkan Pembaruan</translation>
     </message>
@@ -8939,7 +4774,6 @@ Error details:
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
         <translation>Log Pembaruan Asisten UOS AI</translation>
     </message>
@@ -8947,203 +4781,157 @@ Error details:
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">Perjanjian Pengguna UOS AI</translation>
+        <translation>Perjanjian Pengguna UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Saya mengkonfirmasi bahwa saya berusia di atas 18 tahun. Saya mengakui dan setuju bahwa konten yang saya kirim dan terima melalui Aplikasi adalah pertukaran data langsung dengan penyedia layanan model besar dan tidak ada hubungannya dengan Perusahaan.</translation>
+        <translation>Saya mengonfirmasi bahwa saya berusia di atas 18 tahun. Saya mengakui dan menyetujui bahwa konten yang saya kirim dan terima melalui Aplikasi adalah pertukaran data langsung dengan penyedia layanan model besar dan tidak ada hubungannya dengan Perusahaan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Saya setuju untuk berpartisipasi dalam rencana pengalaman pengguna Aplikasi, dan mengizinkan perusahaan Anda untuk mengumpulkan konten yang saya kirim saat menggunakan Aplikasi, waktu pengiriman, jenis model besar yang diminta, aplikasi spesifik, dan apakah teks berhasil menghasilkan gambar, untuk meningkatkan kualitas layanan dan meningkatkan pengalaman operasi. (Jika Anda menolak untuk memberikan informasi di atas, itu tidak akan mempengaruhi penggunaan normal Anda terhadap Aplikasi.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Selamat datang di UOS AI</translation>
+        <translation>Selamat datang di UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, asisten pintar Anda, dirancang untuk meningkatkan produktivitas dan memberikan pengalaman kerja berkualitas tinggi.</translation>
+        <translation>UOS AI, asisten cerdas Anda, dirancang untuk meningkatkan produktivitas Anda dan menikmati pengalaman kerja berkualitas tinggi.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Dapatkan akun gratis</translation>
+        <translation>Dapatkan akun gratis</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">Tambahkan Model</translation>
+        <translation>Tambah Model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">Mulai menggunakan</translation>
+        <translation>Mulai gunakan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Saya mengkonfirmasi bahwa saya berusia di atas 18 tahun. Saya mengakui dan menyetujui &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Perjanjian Pengguna UOS AI&quot;&lt;/a&gt;, dan konten yang saya kirim dan terima melalui Aplikasi adalah pertukaran data langsung dengan penyedia layanan model besar dan tidak ada hubungannya dengan Perusahaan.</translation>
+        <translation>Saya mengonfirmasi bahwa saya berusia di atas 18 tahun. Saya mengakui dan menyetujui &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Perjanjian Pengguna UOS AI&quot;&lt;/a&gt;, dan konten yang saya kirim dan terima melalui Aplikasi adalah pertukaran data langsung dengan penyedia layanan model besar dan tidak ada hubungannya dengan Perusahaan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Menerima akun menunjukkan bahwa Anda memahami dan menyetujui ketentuan acara, &lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detail Acara&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun Percobaan UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal menyimpan, silakan coba lagi nanti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Konfirmasi</translation>
+        <translation>Konfirmasi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun percobaan berhasil diterima.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished">Jumlah penggunaan dan durasi akun percobaan terbatas, harap segera konfigurasi akun model pribadi Anda! Lihat detail acara untuk informasi lebih lanjut.</translation>
+        <translation>Jumlah penggunaan dan durasi akun percobaan terbatas, harap konfigurasi akun model pribadi Anda tepat waktu! Lihat detail acara untuk informasi lebih lanjut.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Dukungan bahasa Inggris untuk akun percobaan belum memuaskan. Jumlah penggunaan dan durasi akun percobaan terbatas. Harap segera konfigurasikan akun model pribadi Anda!</translation>
+        <translation>Dukungan bahasa Inggris untuk akun percobaan belum memuaskan. Selain itu, jumlah penggunaan dan durasi akun percobaan terbatas. Harap konfigurasi akun model pribadi Anda tepat waktu!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">Mulai percobaan</translation>
+        <translation>Mulai percobaan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivitas akun gratis berakhir.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat terhubung ke server, harap periksa jaringan Anda atau coba lagi nanti.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Saya setuju untuk berpartisipasi dalam rencana pengalaman pengguna Aplikasi, dan mengesahkan perusahaan Anda untuk mengumpulkan konten yang saya kirim saat menggunakan Aplikasi, waktu pengiriman, jenis model besar yang diminta, aplikasi spesifik, dan apakah teks berhasil menghasilkan gambar, untuk meningkatkan kualitas layanan dan meningkatkan pengalaman operasi. (Jika Anda menolak memberikan informasi di atas, hal itu tidak akan mempengaruhi penggunaan normal Anda terhadap Aplikasi.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
-        <translation>Sembunyikan hingga aplikasi ini dimulai ulang</translation>
+        <translation>Sembunyikan hingga memulai ulang aplikasi ini</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
-        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Buka &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Pengaturan&lt;/a&gt; untuk mengaktifkannya kembali.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
-        <source>The added content must be more than 10 words</source>
-        <translation>Konten yang ditambahkan harus lebih dari 10 kata</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
-        <source>Search</source>
-        <translation>Cari</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
-        <source>Explain</source>
-        <translation>Jelaskan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
-        <source>Summary</source>
-        <translation>Ringkasan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
-        <source>Translate</source>
-        <translation>Terjemahkan</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
-        <source>Continue Writing</source>
-        <translation>Lanjutkan Menulis</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
-        <source>Expand</source>
-        <translation>Perluas</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
-        <source>Correct</source>
-        <translation>Perbaiki</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Tambahkan ke basis pengetahuan AI</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>Nonaktifkan di Aplikasi Ini</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>Nonaktifkan Secara Global</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Pengaturan Kustom</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
+        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
+        <translation>Buka &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Pengaturan&lt;/a&gt; untuk mengaktifkannya kembali.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Konten yang ditambahkan harus lebih dari 10 kata</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Cari</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Jelaskan</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Ringkasan</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Terjemahkan</translation>
+    </message>
+    <message>
+        <source>Continue Writing</source>
+        <translation>Lanjutkan Menulis</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Perluas</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Koreksi</translation>
+    </message>
+    <message>
         <source>Polish</source>
-        <translation>Sempurnakan</translation>
+        <translation>Poles</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Tambahkan ke basis pengetahuan AI</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI FollowAlong</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Ditambahkan</translation>
     </message>
@@ -9151,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI Ikuti</translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>Secara otomatis menampilkan toolbar UOS AI Ikuti saat teks dipilih.</translation>
+        <translation>Tampilkan bilah alat UOS AI FollowAlong secara otomatis saat teks dipilih.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>Setelah ditutup, teks yang dipilih masih bisa dipanggil melalui pintasan bilah Super+R.</translation>
+        <translation>Setelah ditutup, teks yang dipilih masih dapat dibangunkan dengan pintasan Super+R.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>Perintah tidak dikenal: %1
+Kirim /help untuk melihat perintah yang tersedia.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>Percakapan baru dimulai.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>Riwayat percakapan telah dihapus.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>Perintah yang tersedia:
+  /help   — Tampilkan pesan bantuan ini
+  /new    — Mulai percakapan baru (menghapus konteks saat ini)
+  /stop   — Batalkan permintaan yang sedang berlangsung
+  /clear  — Hapus semua riwayat percakapan</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>Model tidak ditemukan. Harap konfigurasi model terlebih dahulu.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>Permintaan AI gagal</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>Permintaan habis waktu, silakan coba lagi</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>Tidak ada permintaan aktif untuk dihentikan.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>Permintaan dibatalkan.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>Memanggil alat: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>Pemanggilan alat gagal: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>Kesalahan AI (kode: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>Kesalahan platform, permintaan dibatalkan: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>Berpikir...</translation>
     </message>
 </context>
 </TS>

@@ -25,18 +25,6 @@ inline constexpr char osCallDbusWmService[] = "com.deepin.wm";
 inline constexpr char osCallDbusWmPath[] = "/com/deepin/wm";
 inline constexpr char osCallDbusWmInterface[] = "com.deepin.wm";
 
-inline constexpr char osCallDbusBtService[] = "com.deepin.daemon.Bluetooth";
-inline constexpr char osCallDbusBtPath[] = "/com/deepin/daemon/Bluetooth";
-inline constexpr char osCallDbusBtInterface[] = "com.deepin.daemon.Bluetooth";
-
-inline constexpr char osCallDbusPowerService[] = "com.deepin.system.Power";
-inline constexpr char osCallDbusPowerPath[] = "/com/deepin/system/Power";
-inline constexpr char osCallDbusPowerInterface[] = "com.deepin.system.Power";
-
-inline constexpr char osCallDbusShutDownService[] = "com.deepin.dde.shutdownFront";
-inline constexpr char osCallDbusShutDownPath[] = "/com/deepin/dde/shutdownFront";
-inline constexpr char osCallDbusShutDownInterface[] = "com.deepin.dde.shutdownFront";
-
 inline constexpr char osCallDbusScreenshotService[] = "com.deepin.Screenshot";
 inline constexpr char osCallDbusScreenshotPath[] = "/com/deepin/Screenshot";
 inline constexpr char osCallDbusScreenshotInterface[] = "com.deepin.Screenshot";
@@ -86,6 +74,18 @@ inline constexpr char osCallDbusAudioInterface[] = "org.deepin.dde.Audio1";
 inline constexpr char osCallDbusNetworkService[] = "org.deepin.dde.Network1";
 inline constexpr char osCallDbusNetworkPath[] = "/org/deepin/dde/Network1";
 inline constexpr char osCallDbusNetworkInterface[] = "org.deepin.dde.Network1";
+
+inline constexpr char osCallDbusPowerService[] = "org.deepin.dde.Power1";
+inline constexpr char osCallDbusPowerPath[] = "/org/deepin/dde/Power1";
+inline constexpr char osCallDbusPowerInterface[] = "org.deepin.dde.Power1";
+
+inline constexpr char osCallDbusBtService[] = "org.deepin.dde.Bluetooth1";
+inline constexpr char osCallDbusBtPath[] = "/org/deepin/dde/Bluetooth1";
+inline constexpr char osCallDbusBtInterface[] = "org.deepin.dde.Bluetooth1";
+
+inline constexpr char osCallDbusShutDownService[] = "org.deepin.dde.ShutdownFront1";
+inline constexpr char osCallDbusShutDownPath[] = "/org/deepin/dde/ShutdownFront1";
+inline constexpr char osCallDbusShutDownInterface[] = "org.deepin.dde.ShutdownFront1";
 #else
 inline constexpr char osCallDbusDockService[] = "com.deepin.dde.daemon.Dock";
 inline constexpr char osCallDbusDockPath[] = "/com/deepin/dde/daemon/Dock";
@@ -126,6 +126,18 @@ inline constexpr char osCallDbusAudioInterface[] = "com.deepin.daemon.Audio";
 inline constexpr char osCallDbusNetworkService[] = "com.deepin.daemon.Network";
 inline constexpr char osCallDbusNetworkPath[] = "/com/deepin/daemon/Network";
 inline constexpr char osCallDbusNetworkInterface[] = "com.deepin.daemon.Network";
+
+inline constexpr char osCallDbusPowerService[] = "com.deepin.system.Power";
+inline constexpr char osCallDbusPowerPath[] = "/com/deepin/system/Power";
+inline constexpr char osCallDbusPowerInterface[] = "com.deepin.system.Power";
+
+inline constexpr char osCallDbusBtService[] = "com.deepin.daemon.Bluetooth";
+inline constexpr char osCallDbusBtPath[] = "/com/deepin/daemon/Bluetooth";
+inline constexpr char osCallDbusBtInterface[] = "com.deepin.daemon.Bluetooth";
+
+inline constexpr char osCallDbusShutDownService[] = "com.deepin.dde.shutdownFront";
+inline constexpr char osCallDbusShutDownPath[] = "/com/deepin/dde/shutdownFront";
+inline constexpr char osCallDbusShutDownInterface[] = "com.deepin.dde.shutdownFront";
 #endif
 
 }
